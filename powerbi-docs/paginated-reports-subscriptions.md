@@ -1,6 +1,6 @@
 ---
-title: Abonnieren Sie paginierte Berichte in Power BI-Dienst
-description: In diesem Artikel erfahren Sie, Dinge zu bedenken zum Abonnieren von paginierten Berichten im Power BI-Dienst.
+title: Abonnieren von paginierten Berichten im Power BI-Dienst
+description: In diesem Artikel erhalten Sie wichtige Informationen zum Abonnieren von paginierten Berichten im Power BI-Dienst.
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
@@ -9,37 +9,37 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 05/24/2019
-ms.openlocfilehash: ccec6658808d94728f2a4f14de67c36da0f51def
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 472606fcb3b823cdcb722c9d8d6421d0ec652d24
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66222202"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839546"
 ---
-# <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Abonnieren von sich selbst und andere paginierte Berichte in Power BI-Dienst 
+# <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Abonnieren von paginierten Berichten für sich selbst und andere im Power BI-Dienst 
 
-Sie können jetzt e-Mail-Abonnements für sich selbst und andere für paginierte Berichte im Power BI-Dienst einrichten. Im Allgemeinen der Prozess ist identisch mit [Abonnieren von Berichten und Dashboards in Power BI-Dienst](service-report-subscribe.md). Dieser Artikel beschreibt die Unterschiede und Überlegungen. 
+Sie können jetzt im Power BI-Dienst E-Mail-Abonnements für paginierte Berichte für sich selbst und andere einrichten. Im Allgemeinen ist dieser Vorgang identisch mit dem [Abonnieren von Berichten und Dashboards im Power BI-Dienst](service-report-subscribe.md). In diesem Artikel werden Unterschiede und Überlegungen aufgeführt. 
 
-Einrichten von Abonnements, Sie wählen Sie im wie oft soll die e-Mail-Nachrichten: täglich, wöchentlich oder stündlich. Wenn Sie täglich oder wöchentlich durchgeführt wird, Sie die Zeit können möchten Sie die Ausführung des Abonnements. In allen können Sie bis zu 24 verschiedenen Abonnements pro Tag für jeden Bericht festlegen. 
+Durch das Einrichten von Abonnements können Sie entscheiden, ob Sie die E-Mails täglich, wöchentlich oder stündlich erhalten möchten. Wenn Sie täglich oder wöchentlich auswählen, können Sie die Zeit(en) bestimmen, wann das Abonnement ausgeführt werden soll. Insgesamt können Sie für jeden Bericht bis zu 24 verschiedene Abonnements pro Tag einrichten. 
 
-## <a name="considerations-for-paginated-report-subscriptions"></a>Überlegungen für Abonnements von paginierten Berichts 
+## <a name="considerations-for-paginated-report-subscriptions"></a>Überlegungen zu Abonnements von paginierten Berichten 
 
-- Im Gegensatz zu Abonnements für Dashboards oder Power BI-Berichten enthält das Abonnement eine Anlage von der gesamten Berichtsausgabe.  Die folgende Anlagetypen werden unterstützt: PDF-Datei, PowerPoint-Präsentation (PPTX), Excel-Arbeitsmappe (XLSX), Word-Dokument (DOCX), CSV-Datei und XML.
+- Im Gegensatz zu Dashboards oder Power BI-Berichten enthält Ihr Abonnement eine Anlage mit der gesamten Berichtsausgabe.  Die folgenden Anlagetypen werden unterstützt: PDF, PowerPoint-Präsentation (.pptx), Excel-Arbeitsmappe (.xlsx), Word-Dokument (.docx), CSV-Datei und XML.
 
-- Es ist kein Vorschaubild des Berichts in der e-Mail-Text.  Es ist geplant, um das Bild der ersten Seite des Berichts als optionale Element zu erhalten. 
+- Im E-Mail-Text wird kein Vorschaubild des Berichts angezeigt.  Es ist geplant, das Bild der ersten Seite des Berichts als optionales Element zur Verfügung zu stellen. 
 
-- Die maximale Größe der Anlage ist 25 MB. 
+- Die maximale Größe der Anlage eines Berichts beträgt 25 MB. 
 
-- Sie können andere Benutzer für paginierte Berichte abonnieren, die alle derzeit unterstützten Datenquellen, einschließlich Azure Analysis Services oder Power BI-Datasets herstellen. Bedenken Sie die Anlage des Berichts die Daten basierend auf Ihren Berechtigungen können spiegelt wider, wie SQL Server Reporting Services noch heute. 
+- Sie können paginierte Berichte für andere Benutzer abonnieren, die eine Verbindung mit irgendwelchen derzeit unterstützten Datenquellen herstellt (einschließlich Azure Analysis Services oder Power BI-Datasets). Bedenken Sie, dass die Anlage des Berichts die Daten basierend auf Ihren Berechtigungen widerspiegelt (wie SQL Server Reporting Services heute). 
 
-- Abonnements sind auf den Namen des Berichts gebunden.  
+- Abonnements von Berichtseiten sind mit dem Namen des Berichts verknüpft.  
 
-- E-Mail-Abonnements werden mit Standardwerte des Berichts gesendet. 
+- E-Mail-Abonnements werden mit Standardparameterwerten des Berichts gesendet. 
 
-- Es gibt keine **nach Daten zu aktualisieren** Option für die Häufigkeit, mit paginierten Berichten. Sie erhalten immer die aktuellen Werte aus der zugrunde liegenden Datenquelle. 
+- Die Option **After Data Refresh** (Nach der Datenaktualisierung) steht für die Häufigkeit mit paginierten Berichten nicht zur Verfügung. Sie erhalten immer die aktuellen Werte der zugrunde liegenden Datenquelle. 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Abonnieren von sich selbst und andere Berichte und Dashboards in Power BI-Dienst](service-report-subscribe.md)
+[Subscribe yourself and others to reports and dashboards in the Power BI service (Abonnieren von Berichten und Dashboards im Power BI-Dienst für sich selbst und andere)](service-report-subscribe.md)
 
-[Was sind paginierte Berichte in Power BI Premium (Vorschau)?](paginated-reports-report-builder-power-bi.md)
+[Was sind paginierte Berichte in Power BI Premium? (Vorschau)](paginated-reports-report-builder-power-bi.md)

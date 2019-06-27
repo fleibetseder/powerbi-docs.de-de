@@ -1,5 +1,5 @@
 ---
-title: Direktes Eingeben von Daten in paginierte Berichte im Berichts-Generator (Vorschau)
+title: Direktes Eingeben von Daten in paginierte Berichte im Berichts-Generator
 description: In diesem Artikel erfahren Sie, wie Sie im Berichts-Generator Daten direkt in paginierte Berichte eingeben können.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/19/2018
-ms.openlocfilehash: 3237f4751083f374ac00a959f226429b17757b50
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/06/2019
+ms.openlocfilehash: fd000ffd0d47935f36e72f6d0000d548623edf0a
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61424470"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839090"
 ---
-# <a name="enter-data-directly-in-a-paginated-report-in-report-builder-preview---power-bi"></a>Direktes Eingeben von Daten in paginierte Berichte im Berichts-Generator (Vorschau): Power BI
+# <a name="enter-data-directly-in-a-paginated-report-in-report-builder---power-bi"></a>Direktes Eingeben von Daten in paginierte Berichte im Berichts-Generator: Power BI
 
 In diesem Artikel erhalten Sie Informationen zu einem Feature in der neuen Version des Berichts-Generators in SQL Server 2016, das es Ihnen ermöglicht, Daten direkt als eingebettetes Dataset in einen RDL-Bericht einzugeben.  Dieses Feature ist Power BI Desktop ähnlich. Sie können die Daten direkt in das Dataset in Ihrem Bericht eingeben oder sie aus einem anderen Programm wie Microsoft Excel einfügen. Wenn Sie durch die Eingabe von Daten ein Dataset erstellen, können Sie dieses genauso wie jedes andere von Ihnen erstellte eingebettete Dataset verwenden. Außerdem können Sie mehre Tabellen hinzufügen und diese als Filter verwenden. Dieses Feature eignet sich besonders für kleine, statische Datasets, die Sie möglicherweise in Ihrem Bericht verwenden müssen (z. B. Berichtsparameter).
  
@@ -76,7 +76,7 @@ Sie können Ihr Dataset als Basis für Datenvisualisierungen in Ihrem Bericht ve
 
 ## <a name="upload-the-paginated-report-to-the-power-bi-service"></a>Hochladen eines paginierten Berichts im Power BI-Dienst
 
-Da jetzt paginierte Berichte in der Vorschau im Power BI-Dienst unterstützt werden, können Sie Ihren paginierten Bericht für eine Premium-Kapazität hochladen. Weitere Informationen finden Sie unter [Hochladen eines paginierten Berichts](paginated-reports-save-to-power-bi-service.md#upload-a-paginated-report).
+Da jetzt paginierte Berichte im Power BI-Dienst unterstützt werden, können Sie Ihren paginierten Bericht für eine Premium-Kapazität hochladen. Weitere Informationen finden Sie unter [Hochladen eines paginierten Berichts](paginated-reports-save-to-power-bi-service.md#upload-a-paginated-report).
 
 ## <a name="upload-the-paginated-report-to-a-report-server"></a>Hochladen des paginierten Berichts in einen Berichtsserver
 
@@ -98,5 +98,5 @@ Jetzt können Sie Berichte für Ihren Berichtsserver veröffentlichen, die diese
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Was sind paginierte Berichte in Power BI Premium (Vorschau)?](paginated-reports-report-builder-power-bi.md)
+- [Was sind paginierte Berichte in Power BI Premium? (Vorschau)](paginated-reports-report-builder-power-bi.md)
 - [Was ist der Power BI-Berichtsserver?](report-server/get-started.md)

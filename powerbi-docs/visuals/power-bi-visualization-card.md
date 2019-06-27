@@ -1,5 +1,5 @@
 ---
-title: Kartenvisualisierungen (auch als Kacheln für große Zahlen bezeichnet)
+title: Kartenvisualisierungen (Kacheln für große Zahlen)
 description: Erstellen von Kartenvisualisierungen in Power BI
 author: mihart
 manager: kvivek
@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/26/2018
+ms.date: 06/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 164385fc232774999a21e1870b02fcb59b74ad50
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b3b773d7c28cb4528edb59a92e07874b53fc9c20
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61153129"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66840016"
 ---
 # <a name="card-visualizations"></a>Kartenvisualisierungen
 Manchmal ist eine einzelne Zahl das Wichtigste, das Sie in Ihrem Power BI-Dashboard oder Bericht nachverfolgen möchten, wie z.B. der Gesamtumsatz, der Marktanteil im Jahresverlauf oder die Gesamtverkaufschancen. Eine solche Visualisierung wird als *Karte* bezeichnet. Wie fast alle nativen Power BI-Visualisierungen können Karten im Berichts-Editor oder in Q&A erstellt werden.
 
-![Kartenvisualisierung](media/power-bi-visualization-card/pbi_opptuntiescard.png)
+![Kartenvisualisierung](media/power-bi-visualization-card/pbi-opptuntiescard.png)
 
 ## <a name="create-a-card-using-the-report-editor"></a>Erstellen einer Karte im Berichts-Editor
 In dieser Anleitung wird das Analysebeispiel für den Einzelhandel verwendet. Wenn Sie diese Schritte selbst ausführen möchten, [laden Sie das Beispiel für den Power BI-Dienst („app.powerbi.com“) oder Power BI Desktop herunter](../sample-datasets.md).   
@@ -29,11 +29,11 @@ In dieser Anleitung wird das Analysebeispiel für den Einzelhandel verwendet. We
 
     Power BI erstellt ein Säulendiagramm mit dieser einen Zahl.
 
-   ![](media/power-bi-visualization-card/pbi_rptnumbertilechart.png)
+   ![](media/power-bi-visualization-card/pbi-rptnumbertilechart.png)
 2. Wählen Sie im Bereich „Visualisierungen“ das Kartensymbol aus.
 
    ![](media/power-bi-visualization-card/power-bi-templates.png)
-6. Zeigen Sie auf die Karte, und wählen Sie das Anheftsymbol ![](media/power-bi-visualization-card/pbi_pintile.png) aus, um die Visualisierung dem Dashboard hinzuzufügen.
+6. Zeigen Sie auf die Karte, und wählen Sie das Anheftsymbol ![](media/power-bi-visualization-card/pbi-pintile.png) aus, um die Visualisierung dem Dashboard hinzuzufügen.
 
    ![](media/power-bi-visualization-card/power-bi-pin-icon.png)
 7. Heften Sie die Kachel an ein vorhandenes oder neues Dashboard an.
@@ -49,9 +49,9 @@ In dieser Anleitung wird das Analysebeispiel für den Einzelhandel verwendet. We
 
 
 ## <a name="create-a-card-from-the-qa-question-box"></a>Erstellen einer Karte aus dem Q&A-Fragefeld
-Das Q&A-Fragefeld bietet die einfachste Möglichkeit, eine Karte zu erstellen. Das Q&A-Fragefeld ist im Power BI-Dienst in Dashboards oder Berichten und in der Desktopberichtsansicht verfügbar. Die folgenden Schritte beschreiben das Erstellen einer Karte aus einem Dashboard im Power BI-Dienst. Wenn Sie in Power BI Desktop eine Karte mit Q&A erstellen möchten, [folgen Sie diesen Anweisungen](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#QandA) für die Q&A-Vorschau von Desktop-Berichten.
+Das Q&A-Fragefeld bietet die einfachste Möglichkeit, eine Karte zu erstellen. Das Q&A-Fragefeld ist im Power BI-Dienst in Dashboards oder Berichten und in der Desktopberichtsansicht verfügbar. Die folgenden Schritte beschreiben das Erstellen einer Karte aus einem Dashboard im Power BI-Dienst. [Folgen Sie diesen Anweisungen](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#QandA) für die Verwendung von Q&A für Desktop-Berichte, wenn Sie in Power BI Desktop eine Karte mit Q&A erstellen möchten.
 
-1. Erstellen Sie ein [Dashboard](../service-dashboards.md) und [rufen Sie Daten ab](../service-get-data.md). Hier wird das [Beispiel zur Opportunityanalyse](../sample-opportunity-analysis.md) verwendet.
+Hier wird das [Beispiel zur Opportunityanalyse](../sample-opportunity-analysis.md) verwendet.
 
 1. Geben Sie oben auf Ihrem Dashboard im Fragefeld ein, was Sie über Ihre Daten wissen möchten. 
 
@@ -60,12 +60,12 @@ Das Q&A-Fragefeld bietet die einfachste Möglichkeit, eine Karte zu erstellen. D
 > [!TIP]
 > Wählen Sie in einem Bericht im Power BI-Dienst in der Bearbeitungsansicht in der oberen Menüleiste **Frage stellen** aus. Suchen Sie in einem Power BI Desktop-Bericht eine freie Stelle, und doppelklicken Sie, um ein Fragefeld anzuzeigen.
 
-3. Geben Sie z. B. „Anzahl Verkaufschancen“ in das Fragefeld ein.
+2. Geben Sie z. B. „Anzahl Verkaufschancen“ in das Fragefeld ein.
 
    ![](media/power-bi-visualization-card/power-bi-q-and-a.png)
 
    Im Fragefeld werden Vorschläge und Formulierungsalternativen angezeigt. Schließlich sehen Sie hier die Gesamtanzahl.  
-4. Wählen Sie das Anheftsymbol ![](media/power-bi-visualization-card/pbi_pintile.png) rechts oben aus, um die Karte zum Dashboard hinzuzufügen.
+4. Wählen Sie das Anheftsymbol ![](media/power-bi-visualization-card/pbi-pintile.png) rechts oben aus, um die Karte zum Dashboard hinzuzufügen.
 
    ![](media/power-bi-visualization-card/power-bi-pin.png)
 5. Heften Sie die Karte als Kachel an ein vorhandenes oder neues Dashboard an.
@@ -79,31 +79,36 @@ Das Q&A-Fragefeld bietet die einfachste Möglichkeit, eine Karte zu erstellen. D
    ![](media/power-bi-visualization-card/power-bi-success2.png)
 7. Wählen Sie **Zum Dashboard wechseln**, um die neue Kachel anzuzeigen. Dort können Sie es u.a. [umbenennen, die Größe ändern, einen Link hinzufügen und die Kachel auf dem Dashboard verschieben](../service-dashboard-edit-tile.md).
 
-   ![](media/power-bi-visualization-card/power-bi-pinned.png)
+   ![](media/power-bi-visualization-card/power-bi-pinned-2.png)
 
-## <a name="considerations-and-troubleshooting"></a>Zu beachtende Aspekte und Problembehandlung
-- Wenn kein Fragefeld angezeigt wird, wenden Sie sich an den System- oder Mandantenadministrator.    
-- Wenn Sie die Desktop-Version verwenden und beim Klicken an eine leere Stelle im Bericht Q&A nicht geöffnet wird, müssen Sie diese Funktion möglicherweise aktivieren.  Wählen Sie **Datei > Optionen und Einstellungen > Optionen > Vorschaufeatures > Q&A** aus, und starten Sie Power BI Desktop neu.
+
+
 
 ## <a name="format-a-card"></a>Formatieren einer Karte
 Sie haben viele Möglichkeiten, Beschriftungen, Text, Farben usw. zu ändern. Der einfachste Weg, um dies zu lernen, ist eine Karten zu erstellen und dann den Formatierungsbereich zu erkunden. Hier sehen Sie ein paar Beispiele der verfügbaren Formatierungsoptionen. 
 
-1. Öffnen Sie den Formatierungsbereich, indem Sie das Farbrollersymbol auswählen. 
+Der Bereich „Formatierung“ ist bei der Interaktion mit der Karte in einem Bericht verfügbar. Wenn Sie Änderungen an einer Karte in einem Bericht vornehmen, müssen Sie diese nochmals anheften, damit die Änderungen auf dem Dashboard angezeigt werden. 
 
-    ![Karte mit hervorgehobenem Farbrollersymbol](media/power-bi-visualization-card/power-bi-format-card.png)
-2. Erweitern Sie **Datenbeschriftung**, und verändern Sie die Farbe, die Größe und die Schriftfamilie. Wenn Sie Tausende Filialen haben, können Sie **Anzeigeeinheiten** verwenden, um die Anzahl der Filialen in Tausenderschritten anzeigen und die Dezimalstellen ebenso zu steuern. Beispielsweise 125,8k anstatt 125.832,00.
+1. Öffnen Sie den Bereich „Formatierung“, indem Sie zuerst das Farbrollersymbol auswählen. 
+
+    ![Karte mit hervorgehobenem Farbrollersymbol](media/power-bi-visualization-card/power-bi-format-card-2.png)
+2. Erweitern Sie **Datenbeschriftung**, wenn die Karte ausgewählt ist, und verändern Sie die Farbe, die Größe und die Schriftfamilie. Wenn Sie Tausende Filialen haben, können Sie **Anzeigeeinheiten** verwenden, um die Anzahl der Filialen in Tausenderschritten anzeigen und die Dezimalstellen ebenso zu steuern. Beispielsweise 125,8k anstatt 125.832,00.
 
 3.  Erweitern Sie die **Kategoriebeschriftung**, und ändern Sie Farbe und Größe.
 
-    ![Farbe dunkelblau ausgewählt](media/power-bi-visualization-card/power-bi-card-format.png)
+    ![Farbe dunkelblau ausgewählt](media/power-bi-visualization-card/power-bi-card-format-2.png)
 
 4. Erweitern Sie den **Hintergrund**, und verschieben Sie den Regler auf „On“ (Ein).  Sie können nun die Hintergrundfarbe und -transparenz ändern.
 
-    ![Regler auf „ON“ (Ein) festgelegt](media/power-bi-visualization-card/power-bi-format-color.png)
+    ![Regler auf „ON“ (Ein) festgelegt](media/power-bi-visualization-card/power-bi-format-color-2.png)
 
 5. Machen Sie sich weiter mit den Formatoptionen vertraut, bis Ihre Karte so aussieht, wie Sie es sich vorstellen. 
 
-    ![Karte, nachdem die Formatierung abgeschlossen ist](media/power-bi-visualization-card/power-bi-formatted.png)
+    ![Karte, nachdem die Formatierung abgeschlossen ist](media/power-bi-visualization-card/power-bi-formatted-2.png)
+
+
+## <a name="considerations-and-troubleshooting"></a>Zu beachtende Aspekte und Problembehandlung
+Wenn kein Fragefeld angezeigt wird, wenden Sie sich an den System- oder Mandantenadministrator.    
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Kombinationsdiagramm in Power BI](power-bi-visualization-combo-chart.md)

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: e24218e2a465619fdfbfc279d3cc45370202dd6e
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66814778"
+---
 ## <a name="sign-in-account"></a>Das Anmeldekonto
 
 Benutzer melden sich mit einem Geschäfts-, Schul- oder Unikonto an. Dieses Konto ist Ihr **Organisationskonto**. Wenn Sie sich für ein Office 365-Angebot registriert haben und nicht Ihre tatsächliche geschäftliche E-Mail-Adresse angegeben haben, könnte es wie „nancy@contoso.onmicrosoft.com“ aussehen. Ihr Konto wird in einem Mandanten in Azure Active Directory (AAD) gespeichert. In den meisten Fällen entspricht der UPN Ihres AAD-Kontos der E-Mail-Adresse.
@@ -15,33 +23,40 @@ Wenn bei der Authentifizierung Ihres Proxyservers Probleme auftreten, ändern Si
 
 Das Gateway stellt eine ausgehende Verbindung mit Azure Service Bus her. Die Kommunikation erfolgt über diese ausgehenden Ports: TCP 443 (Standard), 5671, 5672, 9350 bis 9354.  Das Gateway benötigt keine eingehenden Ports.
 
-Es wird empfohlen, in der Firewall die Blockierung der IP-Adressen für Ihren Datenbereich aufzuheben. Sie können die [IP-Liste des Microsoft Azure-Rechenzentrums](https://www.microsoft.com/download/details.aspx?id=41653) herunterladen, die wöchentlich aktualisiert wird. Das Gateway verwendet für die Kommunikation mit Azure Service Bus die IP-Adresse zusammen mit dem vollständig qualifizierten Domänennamen (Fully Qualified Domain Name, FQDN). Wenn Sie für das Gateway Kommunikation per HTTPS erzwingen, verwendet das Gateway ausschließlich den FQDN, und es erfolgt keine Kommunikation mithilfe von IP-Adressen.
+Es wird empfohlen, die IP-Adressen der Liste zugelassener IP-Adressen für Ihren Datenbereich in Ihrer Firewall hinzuzufügen. Sie können die [IP-Liste des Microsoft Azure-Rechenzentrums](https://www.microsoft.com/download/details.aspx?id=41653) herunterladen, die wöchentlich aktualisiert wird. Alternativ können Sie die Liste der erforderlichen Ports abrufen, indem Sie den [Network port test (Netzwerkporttests)](../service-gateway-onprem-tshoot.md#network-ports-test) in der lokalen Datengatewayanwendung ausführen. Das Gateway verwendet für die Kommunikation mit Azure Service Bus die IP-Adresse zusammen mit dem vollständig qualifizierten Domänennamen (Fully Qualified Domain Name, FQDN). Wenn Sie für das Gateway Kommunikation per HTTPS erzwingen, verwendet das Gateway ausschließlich den FQDN, und es erfolgt keine Kommunikation mithilfe von IP-Adressen.
+
 
 > [!NOTE]
 > Die IP-Adressen in der Liste der Azure-Datacenter-IP-Adressen sind in CIDR-Notation angegeben. Beispielsweise bedeutet „10.0.0.0/24“ nicht „10.0.0.0 bis 10.0.0.24“. Erfahren Sie mehr zur [CIDR-Notation](http://whatismyipaddress.com/cidr).
 
 Es folgt eine Liste der vollqualifizierten Domänennamen, die vom Gateway verwendet werden.
 
-| Domänennamen | Ausgehende Ports | Beschreibung |
-| --- | --- | --- |
-| *.download.microsoft.com |80 |Zum Herunterladen des Installationsprogramms wird HTTP verwendet. |
-| *.powerbi.com |443 |HTTPS |
-| *.analysis.windows.net |443 |HTTPS |
-| *.login.windows.net |443 |HTTPS |
-| *.servicebus.windows.net |5671-5672 |Advanced Message Queuing Protocol (AMQP) |
-| *.servicebus.windows.net |443, 9350-9354 |Listener an Service Bus Relay über TCP (erfordert 443 für Bezug des Access Control-Tokens) |
-| *.frontend.clouddatahub.net |443 |HTTPS |
-| *.core.windows.net |443 |HTTPS |
-| login.microsoftonline.com |443 |HTTPS |
-| *. msftncsi.com |443 |Wird zum Testen der Internetverbindung verwendet, wenn der Power BI-Dienst das Gateway nicht erreichen kann. |
-| *.microsoftonline-p.com |443 |Wird abhängig von der Konfiguration für die Authentifizierung verwendet. |
+| Domänennamen | Ausgehende Ports | Beschreibung |  |
+|-----------------------------|----------------|--------------------------------------------------------------------------------------------------------------------|---|
+| *.download.microsoft.com | 80 | Wird zum Herunterladen des Installationsprogramms verwendet. Diese Domäne wird auch von der Datengateway-App zur Überprüfung der Version und der Region des Gateways verwendet. |  |
+| *.powerbi.com | 443 | Wird zum Identifizieren des entsprechenden Power BI-Clusters verwendet. |  |
+| *.analysis.windows.net | 443 | Wird zum Identifizieren des entsprechenden Power BI-Clusters verwendet. |  |
+| *.login.windows.net | 443 | Wird zum Authentifizieren der Datengateway-App mit Azure Active Directory/OAuth2 verwendet. |  |
+| *.servicebus.windows.net | 5671-5672 | Wird für das Advance Message Queueing Protocol (AMQP) verwendet. |  |
+| *.servicebus.windows.net | 443, 9350-9354 | Wird von Listenern an Service Bus Relay über TCP verwendet (erfordert 443 für die Zugriffssteuerung auf den Tokenabruf). |  |
+| *.frontend.clouddatahub.net | 443 | Veraltet – nicht mehr erforderlich. Wird in Zukunft aus der Dokumentation entfernt. |  |
+| *.core.windows.net | 443 | Wird von Dataflows in Power BI verwendet, um Daten in Azure Data Lake zu schreiben. |  |
+| login.microsoftonline.com | 443 | Wird zum Authentifizieren der Datengateway-App mit Azure Active Directory/OAuth2 verwendet. |  |
+| *. msftncsi.com | 443 | Wird vom Power BI-Dienst zum Testen der Internetverbindung und der Erreichbarkeit des Gateways verwendet. |  |
+| *.microsoftonline-p.com | 443 | Wird zum Authentifizieren der Datengateway-App mit Azure Active Directory/OAuth2 verwendet. |  |
+| | |
 
 > [!NOTE]
-> Datenverkehr von „visualstudio.com“ oder „visualstudioonline.com“ wird für Einblicke in die App benötigt und ist für die Funktion des Gateways nicht erforderlich.
+> Sobald das Gateway installiert und registriert ist, sind nur die von Azure Service Bus benötigten Ports/IPs erforderlich (servicebus.windows.net). Sie können die Liste der erforderlichen Ports abrufen, indem Sie den [Network port test (Netzwerkporttests)](../service-gateway-onprem-tshoot.md#network-ports-test) in der lokalen Datengatewayanwendung ausführen.
 
 ## <a name="forcing-https-communication-with-azure-service-bus"></a>Erzwingen der HTTPS-Kommunikation mit Azure Service Bus
 
-Sie können erzwingen, dass das Gateway zur Kommunikation mit Azure Service Bus anstelle von TCP das HTTPS-Protokoll verwendet. Dies kann allerdings die Leistung beeinträchtigen. Ändern Sie zu diesem Zweck die Datei *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*, indem Sie den Wert von `AutoDetect` in `Https` ändern, wie im Codeausschnitt direkt nach diesem Abschnitt gezeigt. Diese Datei befindet sich (standardmäßig) unter *C:\Programme\Lokales Datengateway*.
+Sie können erzwingen, dass das Gateway zur Kommunikation mit Azure Service Bus anstelle von TCP das HTTPS-Protokoll verwendet.
+
+> [!NOTE]
+> Auf Empfehlung von Azure Service Bus wird ab dem Release von Juni 2019 bei neuen Installationen (nicht Updates) standardmäßig das HTTPS-Protokoll anstelle von TCP verwendet.
+
+Ändern Sie die Datei *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*, indem Sie den Wert wie im Codeausschnitt des folgenden Paragrafen von `AutoDetect` zu `Https` ändern, um die Kommunikation über HTTPS zu erzwingen. Diese Datei befindet sich (standardmäßig) unter *C:\Programme\Lokales Datengateway*.
 
 ```xml
 <setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">

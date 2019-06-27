@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/26/2019
 ms.author: maggies
-ms.openlocfilehash: 0ea8f19fa36bf1f9ceb5f8f0b92bd53ebdfa2a01
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 600e2ed603773cada415f603202cc72f22e0d25b
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64578526"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751110"
 ---
 # <a name="what-are-power-bi-template-apps-preview"></a>Was sind Power BI-Vorlagen-Apps? (Vorschau)
 
@@ -24,10 +24,10 @@ Vorlagen-Apps sind ein Ersatz für die aktuellen Dienstinhaltspakete. Als Power 
 
 Sie können Vorlagen-Apps erstellen, mit denen Ihre Kunden eine Verbindung mit ihren eigenen Konten herstellen und diese instanziieren können. Als Domänenexperten können sie die Daten so freigeben, dass diese von ihren Geschäftskunden mühelos genutzt werden können.  
 
-Sie übermitteln Ihre Vorlage apps zu Cloud-Partnerportal. Die Apps werden dann im Power BI-App-Katalog (app.powerbi.com/getdata/services) und in Microsoft AppSource (appsource.microsoft.com) öffentlich zur Verfügung gestellt. So sieht ein allgemeinen Überblick über die Umgebung für die Erstellung der app die public-Vorlage aus.  
+Sie übermitteln Ihre Vorlagen-Apps an das Cloud-Partnerportal. Die Apps werden dann im Power BI-App-Katalog (app.powerbi.com/getdata/services) und in Microsoft AppSource (appsource.microsoft.com) öffentlich zur Verfügung gestellt. Hier erhalten Sie einen Überblick über die Erstellung von öffentlichen Vorlagen-Apps.  
 
 ## <a name="process"></a>Verfahren
-Der allgemeine Prozess zum Entwickeln und übermitteln die Vorlagen-app umfasst mehrere Phasen. Einige Phasen können mehr als eine Aktivität zur gleichen Zeit enthalten.
+Der allgemeine Prozess zum Entwickeln und Übermitteln einer Vorlagen-App umfasst mehrere Phasen. Manche Phasen umfassen mehr als eine Aktivität zur gleichen Zeit.
 
 
 | Phase | Power BI Desktop |  |Power BI-Dienst  |  |Cloud-Partnerportal  |

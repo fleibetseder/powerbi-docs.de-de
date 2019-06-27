@@ -6,15 +6,15 @@ ms.custom: seodec18
 author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: resource
+ms.topic: conceptual
 ms.date: 05/14/2019
 ms.author: mihart
-ms.openlocfilehash: 4a67e7ef8171b3f342530d187590e9e018f584df
-ms.sourcegitcommit: d88cc6a87d4ba82ad2c4d496a3634f927e4ac529
-ms.translationtype: MT
+ms.openlocfilehash: 6a66d134a3399fed3ee03eddd7059265b5cf7c13
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412900"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751005"
 ---
 # <a name="glossary-for-power-bi-service"></a>Glossar für den Power BI-Dienst
 Der Power BI-Dienst führt möglicherweise Terminologie ein, die nicht vertraut oder zunächst verwirrend ist. Das Glossar ist der ideale Ort, um Begriffe nachzuschlagen – vielleicht sollten Sie ein Lesezeichen setzen? Eine weitere hervorragende Ressource, mehr über die Bausteine zu erfahren, aus denen sich der Power BI-Dienst zusammensetzt, sind die [Grundkonzepte](end-user-basic-concepts.md). Grundkonzepte bietet einen allgemeinen Überblick über die Power BI-*Bestandteile* und die Art ihrer Verbindung.
@@ -142,7 +142,7 @@ In Dokumentation kann „Power BI-Umgebung (Mandant)“ verwendet werden; hier k
 ## <a name="h"></a>H
 **high-density visuals (Visuelle Elemente mit hoher Dichte)** Visuelle Elemente mit mehr Datenpunkten als Power BI darstellen kann. Power BI nimmt Stichproblem der Daten, um die Form und Ausreißer darzustellen.
 
-**Startseite** die standardmäßige landing Age für Benutzer von Power BI-Dienst. Alles nicht geändert werden. Kann Powerbi Home oder einfach Start aufgerufen werden.
+**Home** Die standardmäßige Landing Page für Benutzer des Power BI-Diensts. Diese wird nicht geändert. Sie wird Power BI Home oder einfach nur Home genannt.
 
 ## <a name="i"></a>I
 

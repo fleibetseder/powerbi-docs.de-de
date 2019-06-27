@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: e3092c320008df760ef72408c93f601dde26cdef
-ms.sourcegitcommit: ec5b6a9f87bc098a85c0f4607ca7f6e2287df1f5
-ms.translationtype: MT
+ms.openlocfilehash: f06632e80bad8796ded3e3616836832967435b24
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66051155"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66809247"
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Leitfaden zum Bereitstellen eines Datengateways für Power BI
 
@@ -42,7 +42,7 @@ Es existiert eine Einschränkung in **Power BI**, die nur *ein* Gateway pro *Ber
 ### <a name="connection-type"></a>Verbindungstyp
 **Power BI** bietet zwei Arten von Verbindungen: **DirectQuery** und **Import**. Nicht alle Datenquellen unterstützen beide Verbindungstypen, und viele verschiedene Gründe tragen möglicherweise dazu bei, dass jeweils ein Typ bevorzugt wird, z.B. Sicherheitsanforderungen, Leistung, Datenlimits und Datenmodellgrößen. Weitere Informationen zum Verbindungstyp und unterstützten Datenquellen finden Sie in der *Liste der verfügbaren Datenquellentypen* im Artikel [Lokales Datengateway](service-gateway-onprem.md).
 
-Je nachdem, welche Art von Verbindung verwendet wird kann die Auslastung des Gateways unterschiedlich sein. Sie sollten beispielsweise versuchen, wenn möglich **DirectQuery**-Datenquellen von **ScheduledRefresh**-Datenquellen zu trennen (vorausgesetzt, sie befinden sich in unterschiedlichen Berichten und können getrennt werden). Auf diese Weise wird verhindert, dass das Gateway Tausende **DirectQuery** Anforderungen in einer Warteschlange und gleichzeitig die morgendlich geplante Aktualisierung eines großen Datenmodells, die für das Hauptdashboard des Unternehmens verwendet wird. Berücksichtigen Sie deshalb Folgendes:
+Je nachdem, welcher Verbindungstyp verwendet wird, kann die Gatewaynutzung variieren. Sie sollten beispielsweise versuchen, wenn möglich **DirectQuery**-Datenquellen von **ScheduledRefresh**-Datenquellen zu trennen (vorausgesetzt, sie befinden sich in unterschiedlichen Berichten und können getrennt werden). Dadurch wird verhindert, dass sich im Gateway tausende **DirectQuery**-Anforderungen in der Warteschlange befinden, wenn gleichzeitig die morgendlich geplante Aktualisierung eines großen Datenmodells stattfindet,das für das Hauptdashboard des Unternehmens verwendet wird. Berücksichtigen Sie deshalb Folgendes:
 
 * Für die **geplante Aktualisierung**: Je nach Abfragegröße und Anzahl der pro Tag auftretenden Aktualisierungen können Sie sich zwischen den empfohlenen Mindestanforderungen für die Hardware und das Upgrade auf einen Computer mit höherer Leistung entscheiden. Wenn eine bestimmte Abfrage nicht reduziert ist, treten Transformationen auf dem Gatewaycomputer auf, und daher profitiert der Gatewaycomputer von mehr verfügbarem RAM.
 * Für **DirectQuery**: Jedes Mal, wenn ein Benutzer den Bericht öffnet oder Daten ansieht, wird eine Abfrage gesendet. Wenn also mehr als 1.000 Benutzer gleichzeitig auf die Daten zugreifen, müssen Sie sicherstellen, dass Ihr Computer über robuste und leistungsfähige Hardwarekomponenten verfügt. Mehr CPU-Kerne führen zu einem besseren Durchsatz für eine **DirectQuery**-Verbindung.
@@ -104,14 +104,34 @@ Das Gateway stellt eine ausgehende Verbindung mit **Azure Service Bus** her. Das
 
 Das Gateway benötigt *keine* eingehenden Ports. Alle erforderlichen Ports sind in der Liste oben aufgeführt.
 
-Es wird empfohlen, in der Firewall die Blockierung der IP-Adressen für Ihren Datenbereich aufzuheben. Sie können die Liste der IP-Adressen herunterladen, die Sie in der [Liste der Microsoft Azure Datacenter IP-Adressen](https://www.microsoft.com/download/details.aspx?id=41653) finden. Diese Liste wird wöchentlich aktualisiert. Das Gateway verwendet für die Kommunikation mit **Azure Service Bus** die angegebenen IP-Adresse zusammen mit dem vollständig qualifizierten Domänennamen (Fully Qualified Domain Name, FQDN). Wenn Sie für das Gateway Kommunikation per HTTPS erzwingen, verwendet das Gateway ausschließlich den FQDN, und es erfolgt keine Kommunikation mithilfe von IP-Adressen.
+Es wird empfohlen, die IP-Adressen der Liste zugelassener IP-Adressen für Ihren Datenbereich in Ihrer Firewall hinzuzufügen. Sie können die Liste der IP-Adressen herunterladen, die Sie in der [Liste der Microsoft Azure Datacenter IP-Adressen](https://www.microsoft.com/download/details.aspx?id=41653) finden. Diese Liste wird wöchentlich aktualisiert. Das Gateway verwendet für die Kommunikation mit **Azure Service Bus** die angegebenen IP-Adresse zusammen mit dem vollständig qualifizierten Domänennamen (Fully Qualified Domain Name, FQDN). Wenn Sie für das Gateway Kommunikation per HTTPS erzwingen, verwendet das Gateway ausschließlich den FQDN, und es erfolgt keine Kommunikation mithilfe von IP-Adressen.
 
 #### <a name="forcing-https-communication-with-azure-service-bus"></a>Erzwingen der HTTPS-Kommunikation mit Azure Service Bus
-Sie können erzwingen, dass das Gateway zur Kommunikation mit **Azure Service Bus** anstelle von TCP das HTTPS-Protokoll verwendet. Auf diese Weise wird die Leistung geringfügig verringert. Sie können auch das Gateway zwingen, mit **Azure Service Bus** zu kommunizieren, indem Sie HTTPS durch Verwendung der Benutzerschnittstelle des Gateways verwenden (ab der im März 2017 veröffentlichten Version des Gateway).
 
-Wählen Sie im Gateway **Netzwerk** aus, und wählen Sie dann für **Azure Service Bus connectivity mode** (Azure Service Bus-Verbindungsmodus) die Option **Ein** aus.
+Sie können erzwingen, dass das Gateway zur Kommunikation mit Azure Service Bus anstelle von TCP das HTTPS-Protokoll verwendet.
 
-![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_04.png)
+> [!NOTE]
+> Auf Empfehlung von Azure Service Bus wird ab dem Release von Juni 2019 bei neuen Installationen (nicht Updates) standardmäßig das HTTPS-Protokoll anstelle von TCP verwendet.
+
+Ändern Sie die Datei *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*, indem Sie den Wert wie im Codeausschnitt des folgenden Paragrafen von `AutoDetect` zu `Https` ändern, um die Kommunikation über HTTPS zu erzwingen. Diese Datei befindet sich (standardmäßig) unter *C:\Programme\Lokales Datengateway*.
+
+```xml
+<setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">
+    <value>Https</value>
+</setting>
+```
+
+Beim Wert des *ServiceBusSystemConnectivityModeString*-Parameters muss die Groß-/Kleinschreibung beachtet werden. Gültige Werte sind *AutoDetect* und *Https*.
+
+Alternativ können Sie mithilfe der Gatewaybenutzeroberfläche dieses Verhalten des Gateways erzwingen. Wählen Sie auf der Gateway-Benutzeroberfläche **Netzwerk** aus, und wählen Sie dann für **Azure Service Bus-Konnektivitätsmodus** die Option **Ein** aus.
+
+![](./includes/media/gateway-onprem-accounts-ports-more/gw-onprem_01.png)
+
+Wenn Sie nach dem Durchführen der Änderung **Übernehmen** (eine Schaltfläche, die nur angezeigt wird, wenn Sie eine Änderung vornehmen) auswählen, wird der *Windows-Dienst Gateway* automatisch neu gestartet, damit die Änderung wirksam werden kann.
+
+In ähnlichen Situationen in der Zukunft können Sie den *Windows-Dienst Gateway* über das Dialogfeld neu starten, indem Sie **Diensteinstellungen** und dann *Jetzt neu starten* auswählen.
+
+![](./includes/media/gateway-onprem-accounts-ports-more/gw-onprem_02.png)
 
 ### <a name="additional-guidance"></a>Zusätzlicher Leitfaden
 Dieser Abschnitt enthält weitere Anleitungen zum Bereitstellen und Verwalten des Gateways.

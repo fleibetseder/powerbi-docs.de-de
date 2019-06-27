@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Erstellen eines paginierten Berichts und Hochladen in den Power BI-Dienst (Vorschau)'
+title: 'Tutorial: Erstellen und Hochladen eines paginierten Berichts in den Power BI-Dienst'
 description: In diesem Tutorial stellen Sie eine Verbindung mit einer Beispielinstanz von Azure SQL-Datenbank her. Anschließend erstellen Sie mithilfe eines Assistenten im Berichts-Generator einen paginierten Bericht. Dann laden Sie den paginierten Bericht in einen Arbeitsbereich in einer Premium-Kapazität im Power BI-Dienst hoch.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: e7baff9a6427578266e08e7bde91be664e46edb9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 44af74b722e5d21c7475a382f8097f453854230d
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60989907"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839732"
 ---
-# <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service-preview"></a>Tutorial: Erstellen eines paginierten Berichts und Hochladen in den Power BI-Dienst (Vorschau)
+# <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Tutorial: Erstellen und Hochladen eines paginierten Berichts in den Power BI-Dienst
 
-In diesem Tutorial stellen Sie eine Verbindung mit einer Beispielinstanz von Azure SQL-Datenbank her. Anschließend verwenden Sie einen Assistenten im Power BI-Berichts-Generator, um einen paginierten Bericht mit einer Tabelle zu erstellen, die in mehrere Seiten umgebrochen wird. Dann laden Sie den paginierten Bericht in einen Arbeitsbereich in einer Premium-Kapazität im Power BI-Dienst hoch. Paginierte Berichte im Power BI-Dienst befinden sich derzeit in der Vorschauphase.
+In diesem Tutorial stellen Sie eine Verbindung mit einer Beispielinstanz von Azure SQL-Datenbank her. Anschließend erstellen Sie mithilfe eines Assistenten im Power BI-Berichts-Generator einen paginierten Bericht mit einer Tabelle, die sich über mehrere Seiten erstreckt. Dann laden Sie den paginierten Bericht in einen Arbeitsbereich in einer Premium-Kapazität im Power BI-Dienst hoch.
 
 ![Paginierter Bericht im Power BI-Dienst](media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png)
 
@@ -26,7 +26,7 @@ Im Folgenden werden die Schritte beschrieben, die Sie in diesem Tutorial ausfüh
 
 > [!div class="checklist"]
 > * Erstellen einer Azure-Beispieldatenbank
-> * Erstellen Sie eine Matrix im Power BI-Berichts-Generator mithilfe eines Assistenten.
+> * Erstellen Sie im Power BI-Berichts-Generator mithilfe eines Assistenten eine Matrix.
 > * Formatieren des Berichts mit Titel, Seitenzahlen und Spaltenüberschriften auf jeder Seite
 > * Formatieren der Währung
 > * Hochladen des Berichts in den Power BI-Dienst
@@ -37,7 +37,7 @@ Wenn Sie kein Azure-Abonnement haben, erstellen Sie ein [kostenloses Konto](http
 
 Im Folgenden werden die Voraussetzungen für die Erstellung eines paginierten Berichts aufgeführt:
 
-- Installieren Sie [Power BI-Berichts-Generator aus dem Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513). 
+- Installieren Sie den [Power BI-Berichts-Generator aus dem Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513). 
 
 - Führen Sie die Schritte im [Schnellstart: Erstellen einer Beispielinstanz von Azure SQL-Datenbank im Azure-Portal](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal) durch. Kopieren und speichern Sie den Wert im Feld **Servername** auf der Registerkarte **Übersicht**. Merken Sie sich den Benutzernamen und das Kennwort, die Sie in Azure erstellt haben.
 
@@ -48,7 +48,7 @@ Im Folgenden werden die Voraussetzungen zum Hochladen Ihres paginierten Berichts
 
 ## <a name="create-the-matrix-with-a-wizard"></a>Erstellen der Matrix mit einem Assistenten
   
-1.  Starten Sie Power BI-Berichts-Generator von Ihrem Computer.  
+1.  Starten Sie den Power BI-Berichts-Generator auf Ihrem Computer.  
   
      Das Dialogfeld **Erste Schritte** wird geöffnet.  
   
@@ -329,5 +329,5 @@ Nachdem Sie diesen paginierten Bericht erstellt haben, können Sie ihn in den Po
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Was sind paginierte Berichte in Power BI Premium (Vorschau)?](paginated-reports-report-builder-power-bi.md)
+[Was sind paginierte Berichte in Power BI Premium? (Vorschau)](paginated-reports-report-builder-power-bi.md)
 

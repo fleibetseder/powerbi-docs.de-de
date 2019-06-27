@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/24/2018
+ms.date: 06/11/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 02d81a4ebb92ec199887109c7f2d9afcb6449eda
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: fe1d2a6f086831a4ae6bd78d8669dce9459bffad
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61393250"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839865"
 ---
 # <a name="basic-area-chart"></a>Grundlegendes Flächendiagramm
-Das grundlegende Flächendiagramm (d.h. überlappendes Flächendiagramm) basiert auf dem Liniendiagramm. Der Bereich zwischen der Achse und der Zeile ist mit Farben gefüllt, um Volumen anzuzeigen. 
+Das grundlegende Flächendiagramm (auch bekannt als überlappendes Flächendiagramm) basiert auf dem Liniendiagramm. Der Bereich zwischen der Achse und der Zeile ist mit Farben gefüllt, um Volumen anzuzeigen. 
 
 Flächendiagramme betonen das Ausmaß von Veränderungen im Laufe der Zeit und können dazu genutzt werden, um den gesamten Wert über einen Trend hinweg hervorzuheben. Beispielsweise können Daten, die den Gewinn im Zeitverlauf darstellen, in ein Flächendiagramm gezeichnet werden, um den Gesamtgewinn zu verdeutlichen.
 
@@ -40,11 +40,11 @@ Melden Sie sich bei Power BI an, wählen Sie **Daten abrufen\> Beispiele \> Anal
  
 
 1. Wählen Sie im Dashboard „Analysebeispiel für Einzelhandel“ die Kachel **Läden gesamt** aus, um den Bericht „Analysebeispiel für Einzelhandel“ zu öffnen.
-2. Wählen Sie **Bericht bearbeiten** , um den Bericht in der Bearbeitungsansicht zu öffnen.
+2. Klicken Sie auf **Bearbeiten**, um den Bericht in der Bearbeitungsansicht zu öffnen.
 3. Fügen Sie eine neue Berichtsseite hinzu, indem Sie auf das gelbe Pluszeichen (+) am unteren Rand des Berichts klicken.
 4. Erstellen Sie ein Flächendiagramm, das den Absatz des laufenden Jahres und den des Vorjahres pro Monat anzeigt.
    
-   a. Wählen Sie im Bereich „FELDER“ die Option **Verkäufe \> Verkäufe im Vorjahr** und **Verkäufe in diesem Jahr > Wert** aus.
+   a. Wählen Sie im Bereich „Felder“ die Option **Sales \> Last Year Sales** (Verkäufe > Verkäufe im Vorjahr) und **This Year Sales > Wert** (Verkäufe in diesem Jahr) aus.
 
    ![](media/power-bi-visualization-basic-area-chart/power-bi-bar-chart.png)
 

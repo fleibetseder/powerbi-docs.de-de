@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/15/2019
+ms.date: 06/10/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: d2a4e168b49ef0d9c3b656c91001ae9306dfe42d
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: cc2c9cbc15240e3dc4d46c7f02ef0b0d82bb36f8
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375030"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823430"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Vorherige monatliche Updates für Power BI Desktop
 
@@ -34,10 +34,9 @@ Sie können das Video **Neueste Updates** auch direkt aus diesem Artikel von Beg
 
 In den folgenden Abschnitten werden die Updates von **Power BI Desktop** der vorherigen Monate beschrieben.
 
+## <a name="may-2019-update-26954671251"></a>Update Mai 2019 (2.69.5467.1251)
 
-## <a name="april-2019-update-2685432361"></a>Aktualisieren Sie April 2019 (2.68.5432.361)
-
-Unsere Aktualisierungen für April wurden Updates voller gepackt, die Spring in Ihre Schritt regnerischen ablegen. 
+Mit unserem Maiupdate erhalten Sie neue Berichte, dazu interessante neue Features und eine ganze Reihe ansprechender Visuals. 
 
 Sie können jetzt [die neueste Version von Power BI Desktop herunterladen](https://powerbi.microsoft.com/desktop). Wenn Sie Windows 10 verwenden, erhalten Sie **Power BI Desktop** auch aus dem Windows Store. Die monatlichen Versionen sind identisch, auch wenn die Versionsnummerierung zwischen zwei Versionen abweichen kann, unabhängig davon, wie Sie **Power BI Desktop** installieren. Weitere Informationen finden Sie in [diesem Artikel](desktop-get-the-desktop.md). 
 
@@ -53,43 +52,121 @@ Sie können das Video **Neueste Updates** auch direkt aus diesem Artikel von Beg
 In diesem Monat bietet **Power BI Desktop** die folgenden Updates:
 
 ### <a name="reporting"></a>Berichterstellung
-* Filtern von Verbesserungen im [[video]](https://youtu.be/vih35kSrEHU?t=9)[[Artikel]](power-bi-report-filter-preview.md)[[Blog]    ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#filterPane) 
-* Bedingte Formatierung für den Titel von visuellen Elementen [[video]](https://youtu.be/vih35kSrEHU?t=254)[[Artikel]](desktop-conditional-format-visual-titles.md)[[Blog]    ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dynamicTitles)
-* Bedingte Formatierung für die web-URL-Aktionen für Schaltflächen, Formen und Bilder [[video]](https://youtu.be/vih35kSrEHU?t=439)[[Blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dynamicURLs)
+* Bereich „Performance Analyzer“ [[Video]](https://youtu.be/O8GlHDz8xUQ?t=10)  [[Artikel]](desktop-performance-analyzer.md)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#perfAnalyzer) 
+* Verbesserungen des Filterbereichs (Vorschauversion) [[Video]](https://youtu.be/O8GlHDz8xUQ?t=377)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#filterPane)
+* Tastaturnavigation durch die Tabelle und Matrix [[Video]](https://youtu.be/O8GlHDz8xUQ?t=518)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#accessibility)
+* Positionssteuerelement für Datenbeschriftungen auf Zeilenebene [[Video]](https://youtu.be/O8GlHDz8xUQ?t=572)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#dataLabels)
+* Steuerelement für die Textgröße der visuellen KPI-Anzeige [[Video]](https://youtu.be/O8GlHDz8xUQ?t=664)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#kpi)
 
 
 ### <a name="analytics"></a>Analyse
-* Drillthrough für alle Berichte [[video]](https://youtu.be/vih35kSrEHU?t=567)[[Artikel]](desktop-cross-report-drill-through.md)[[Blog]    ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#drillthrough) 
-* Wichtige Einflussfaktoren visual unterstützt jetzt die fortlaufende Analyse für numerische Ziele [[video]](https://youtu.be/vih35kSrEHU?t=753)[[Blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#keyInfluencers) 
-* Python-Unterstützung nicht allgemein verfügbar [[video]](https://youtu.be/vih35kSrEHU?t=889)[[Blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#python) 
-* Teilweise übereinstimmenden für Begriffe in f & A Synonym [[video]](https://youtu.be/vih35kSrEHU?t=912)[[Blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#partialMatching) 
+* Verbesserungen am Visual „Wichtige Einflussfaktoren“ (Vorschauversion) [[Video]](https://youtu.be/O8GlHDz8xUQ?t=717) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#keyInfluencers) 
+    * Quantisierungsunterstützung 
+    * Formatierungsoptionen
+    * Mobile Unterstützung
 
 
 ### <a name="modeling"></a>Modellierung
-* Neue DAX-Funktion - ALLCROSSFILTERED [[video]](https://youtu.be/vih35kSrEHU?t=970)[[Blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dax) 
+* Deaktivieren von Tabellen „Autom. Datum/Uhrzeit“ für neue Berichte [[Video]](https://youtu.be/O8GlHDz8xUQ?t=984)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#autoDate) 
+* Aktualisieren auf die ALLSELECTED DAX-Funktion [[Video]](https://youtu.be/O8GlHDz8xUQ?t=1080)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#dax) 
 
-### <a name="custom-visuals"></a>Benutzerdefinierte visuelle Elemente
-* Ein neues benutzerdefiniertes Visual [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#rainbowGauge) 
+
+### <a name="visuals"></a>Visuals
+* Updates für ArcGIS Maps for Power BI [[Video]](https://youtu.be/O8GlHDz8xUQ?t=1093)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#esri) 
+* Sechs neue benutzerdefinierte Visuals sowie Updates    [[Video]](https://youtu.be/O8GlHDz8xUQ?t=1199)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#mapbox) 
 
 
 ### <a name="data-connectivity"></a>Datenkonnektivität
-* Power BI-Datenflüsse Connector jetzt allgemein verfügbar [[video]](https://youtu.be/vih35kSrEHU?t=983)[[Blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dataflows) 
-* Connector für Oracle Essbase nun DirectQuery unterstützt und ist allgemein verfügbar [[video]](https://youtu.be/vih35kSrEHU?t=1011)[[Blog]   ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#oracleEssbase) 
-* PDF-Datei-Connector ist jetzt allgemein verfügbar [[video]](https://youtu.be/vih35kSrEHU?t=1042)[[Blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#pdf) 
-* Web-By-Example-Connector: Automatische Tabelle Typrückschluss [[video]](https://youtu.be/vih35kSrEHU?t=1089)[[Blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#webByExample) 
-* IRIS-Connector InterSystems [[video]](https://youtu.be/vih35kSrEHU?t=1186)[[Blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#intersystemsIRIS) 
-* Indexima Connector [[video]](https://youtu.be/vih35kSrEHU?t=1215)[[Blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#indexima) 
-* Luminis InformationGrid Connector [[video]](https://youtu.be/vih35kSrEHU?t=1236)[[Blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#luminisInformationGrid) 
-* Solver BI360 Connector [[video]](https://youtu.be/vih35kSrEHU?t=1255)[[Blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#solverBI360) 
-* PREP von Paxata Connector [[video]](https://youtu.be/vih35kSrEHU?t=1268)[[Blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#paxata) 
+* Essbase-Connector: Unterstützung für native Abfrage (MDX) [[Video]](https://youtu.be/O8GlHDz8xUQ?t=2518)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#essbase) 
+* Intune Data Warehouse-Connector [[Video]](https://youtu.be/O8GlHDz8xUQ?t=2538)   [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#intune) 
+* Tenforce-Connector [[Video]](https://youtu.be/O8GlHDz8xUQ?t=2560)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#tenforce) 
+* Roamler-Connector [[Video]](https://youtu.be/O8GlHDz8xUQ?t=2596)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#roamler) 
 
-### <a name="data-preparation"></a>Datenvorbereitung
-* Data Profiling-Erweiterungen "und" general Availability [[video]](https://youtu.be/vih35kSrEHU?t=1299)[[Blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#profiling) 
-* Erweiterungen für Fuzzysuche Merge und general Availability [[video]](https://youtu.be/vih35kSrEHU?t=1447)[[Blog]   ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#fuzzyMerge) 
-* M Intellisense in der Bearbeitungsleiste und benutzerdefinierte Spalte Dialogfeld unterstützt und ist allgemein verfügbar [[video]](https://youtu.be/vih35kSrEHU?t=1491)[[Blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#intellisense) 
 
 ### <a name="other"></a>Sonstige
-* Power BI paginierten Berichts-Generator [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#paginatedReports) 
+* Automatischer Abbruch von Abfragen für Power BI Desktop [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#queryCancellation) 
+
+> [!NOTE]
+> Sie können sich auch [alle für Power BI Desktop verfügbaren Datenquellen ansehen](desktop-data-sources.md). Die Liste wird ständig erweitert, daher sollten Sie sie in regelmäßigen Abständen konsultieren.
+
+Wünschen Sie weitere Informationen zu diesen Updates? Sehen Sie sich [diesen Blogbeitrag](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/) (in englischer Sprache) an, in dem Sie ausführliche Informationen zu den neuen Features finden (dies ist der gleiche Blogbeitrag, auf den in der obigen Liste verwiesen wird).
+
+
+Das folgende Video beschreibt und zeigt die einzelnen Updates. Sie finden das Video auch im Blogbeitrag.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O8GlHDz8xUQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [!NOTE]
+> Weitere Informationen finden Sie auch unter [Neuheiten bei Power BI](service-whats-new.md) und [Neuigkeiten bei den mobilen Apps für Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+Sie können auch frühere Versionen von Power BI Desktop herunterladen, wenn Ihre Organisation sie benötigt. Sie sollten stets die neueste Version von Power BI Desktop statt einer früheren Version verwenden. Alle früheren Versionen weisen die folgenden Einschränkungen auf:
+
+* Für frühere Versionen von Power BI Desktop wird kein Service geboten – Sie sollten immer die neueste Version verwenden, um die neuesten Features und Updates zu nutzen.
+* Möglicherweise können Sie in neueren Releases von Power BI Desktop erstellte oder gespeicherte Dateien mit früheren Versionen von Power BI Desktop nicht öffnen. 
+* Wenn Sie beim Laden eines Berichts, der in einer neueren Version von Power BI Desktop gespeichert wurde, eine Warnmeldung erhalten, und den Bericht dann in der vorherigen Version speichern, verlieren Sie alle mit den neuen Features in Zusammenhang stehenden Informationen.
+* Wir archivieren nur die englischen Versionen von Power BI Desktop.
+
+Wählen Sie die folgenden Links zum Herunterladen dieser früheren Version aus: 
+
+* [Version Mai 2019 von Power BI Desktop – 32-Bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-05.msi)
+* [Version Mai 2019 von Power BI Desktop – 64-Bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-05_x64.msi)
+
+
+## <a name="april-2019-update-2685432361"></a>Update April 2019 (2.68.5432.361)
+
+Unsere Aprilupdates enthalten Updates, die Ihnen bei nahezu allen Problemen weiterhelfen können. 
+
+Sie können jetzt [die neueste Version von Power BI Desktop herunterladen](https://powerbi.microsoft.com/desktop). Wenn Sie Windows 10 verwenden, erhalten Sie **Power BI Desktop** auch aus dem Windows Store. Die monatlichen Versionen sind identisch, auch wenn die Versionsnummerierung zwischen zwei Versionen abweichen kann, unabhängig davon, wie Sie **Power BI Desktop** installieren. Weitere Informationen finden Sie in [diesem Artikel](desktop-get-the-desktop.md). 
+
+Bedeutung der Links neben den einzelnen Updates:
+
+* **[Video]** -Ausschnitte werden auf einer neuen Browserregisterkarte wiedergegeben, wenn das Feature erläutert wird.
+* Einige Features werden in einem **[Artikel]** ausführlich erläutert.
+* Die meisten Features werden im **[Blog]** -Beitrag zum monatlichen Update erläutert.
+* Und schließlich sind einige der Features selbsterklärend, sodass sie keinen Artikel und kein Video erfordern.
+
+Sie können das Video **Neueste Updates** auch direkt aus diesem Artikel von Beginn an ansehen. Hierzu klicken Sie einfach auf das Symbol **Wiedergeben** auf dem Videobild unter der Liste mit den Updates.
+
+In diesem Monat bietet **Power BI Desktop** die folgenden Updates:
+
+### <a name="reporting"></a>Berichterstellung
+* Verbesserungen für den Filterbereich [[Video]](https://youtu.be/vih35kSrEHU?t=9) [[Artikel]](power-bi-report-filter-preview.md) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#filterPane) 
+* Bedingte Formatierung für visuelle Titel [[Video]](https://youtu.be/vih35kSrEHU?t=254) [[Artikel]](desktop-conditional-format-visual-titles.md) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dynamicTitles)
+* Bedingte Formatierung für Web-URL-Aktionen für Schaltflächen, Formen und Bilder [[Video]](https://youtu.be/vih35kSrEHU?t=439)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dynamicURLs)
+
+
+### <a name="analytics"></a>Analyse
+* Drillthrough für alle Berichte [[Video]](https://youtu.be/vih35kSrEHU?t=567)  [[Artikel]](desktop-cross-report-drill-through.md)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#drillthrough) 
+* Visual „Wichtige Einflussfaktoren“ unterstützt nun die fortlaufende Analyse für numerische Ziele [[Video]](https://youtu.be/vih35kSrEHU?t=753)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#keyInfluencers) 
+* Die Unterstützung für Python ist allgemein verfügbar [[Video]](https://youtu.be/vih35kSrEHU?t=889)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#python) 
+* Teilweise Synonymübereinstimmung für Begriffe in Q&A [[Video]](https://youtu.be/vih35kSrEHU?t=912)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#partialMatching) 
+
+
+### <a name="modeling"></a>Modellierung
+* Neue DAX-Funktion: ALLCROSSFILTERED [[Video]](https://youtu.be/vih35kSrEHU?t=970)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dax) 
+
+### <a name="custom-visuals"></a>Benutzerdefinierte Visuals
+* Ein neues benutzerdefiniertes Visual  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#rainbowGauge) 
+
+
+### <a name="data-connectivity"></a>Datenkonnektivität
+* Der Connector für Power BI-Dataflows ist jetzt allgemein verfügbar [[Video]](https://youtu.be/vih35kSrEHU?t=983) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dataflows) 
+* Der Oracle Essbase-Connector unterstützt nun DirectQuery und ist allgemein verfügbar  [[Video]](https://youtu.be/vih35kSrEHU?t=1011)   [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#oracleEssbase) 
+* Der PDF-Connector ist jetzt allgemein verfügbar [[Video]](https://youtu.be/vih35kSrEHU?t=1042) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#pdf) 
+* „Web by Example“-Connector: automatischer Tabellenrückschluss [[Video]](https://youtu.be/vih35kSrEHU?t=1089)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#webByExample) 
+* InterSystems IRIS-Connector [[Video]](https://youtu.be/vih35kSrEHU?t=1186)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#intersystemsIRIS) 
+* Indexima-Connector [[Video]](https://youtu.be/vih35kSrEHU?t=1215)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#indexima) 
+* Luminis InformationGrid-Connector [[Video]](https://youtu.be/vih35kSrEHU?t=1236)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#luminisInformationGrid) 
+* Solver BI360-Connector [[Video]](https://youtu.be/vih35kSrEHU?t=1255)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#solverBI360) 
+* Paxata-Connector [[Video]](https://youtu.be/vih35kSrEHU?t=1268)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#paxata) 
+
+### <a name="data-preparation"></a>Datenvorbereitung
+* Verbesserungen für die Datenprofilerstellung und allgemeine Verfügbarkeit [[Video]](https://youtu.be/vih35kSrEHU?t=1299)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#profiling) 
+* Verbesserungen für die Fuzzyzusammenführungsleistung und allgemeine Verfügbarkeit [[Video]](https://youtu.be/vih35kSrEHU?t=1447)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#fuzzyMerge) 
+* M Intellisense wird in der Bearbeitungsleiste sowie im benutzerdefinierten Spaltendialog unterstützt und ist allgemein verfügbar [[Video]](https://youtu.be/vih35kSrEHU?t=1491)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#intellisense) 
+
+### <a name="other"></a>Sonstige
+* Paginierter Berichts-Generator in Power BI [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#paginatedReports) 
 
 
 
@@ -116,13 +193,13 @@ Sie können auch frühere Versionen von Power BI Desktop herunterladen, wenn Ihr
 
 Wählen Sie die folgenden Links zum Herunterladen dieser früheren Version aus: 
 
-* [Power BI Desktop - 32-Bit-Version April 2019](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-04.msi)
-* [Power BI Desktop - 64-Bit-Version April 2019](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-04_x64.msi)
+* [Version April 2019 von Power BI Desktop – 32-Bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-04.msi)
+* [Version April 2019 von Power BI Desktop – 64-Bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-04_x64.msi)
 
 
-## <a name="march-2019-update-2675404581"></a>2019 der März-Update (2.67.5404.581)
+## <a name="march-2019-update-2675404581"></a>Update März 2019 (2.67.5404.581)
 
-Unsere Aktualisierungen für März wurden viele überzeugende und hilfreicher Updates, und wir hoffen, dass diese Verbesserungen machen, Sie wie Glück haben, als eine vier – Blatt Clover suchen können. 
+In unseren Updates für März waren viele überzeugende und hilfreiche Updates enthalten, und wir hoffen, dass diese Ihnen weitergeholfen haben. 
 
 Sie können jetzt [die neueste Version von Power BI Desktop herunterladen](https://powerbi.microsoft.com/desktop). Wenn Sie Windows 10 verwenden, erhalten Sie **Power BI Desktop** auch aus dem Windows Store. Die monatlichen Versionen sind identisch, auch wenn die Versionsnummerierung zwischen zwei Versionen abweichen kann, unabhängig davon, wie Sie **Power BI Desktop** installieren. Weitere Informationen finden Sie in [diesem Artikel](desktop-get-the-desktop.md). 
 
@@ -156,10 +233,10 @@ Im März wurden folgende Updates für **Power BI Desktop** veröffentlicht:
 
 
 ### <a name="modeling"></a>Modellierung
-* Modellieren von neue Ansicht, die jetzt allgemein verfügbar [[video]](https://youtu.be/rBPGH6eYlT0?t=417)[[Blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#modellingView) 
+* Neue Modellierungsansicht jetzt allgemein verfügbar [[Video]](https://youtu.be/rBPGH6eYlT0?t=417)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#modellingView) 
 * Neue DAX-Funktionen [[Video]](https://youtu.be/rBPGH6eYlT0?t=560)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#DAX) 
 
-### <a name="custom-visuals"></a>Benutzerdefinierte visuelle Elemente
+### <a name="custom-visuals"></a>Benutzerdefinierte Visuals
 * Neue zertifizierte benutzerdefinierte visuelle Einstellungen im Verwaltungsportal [[Video]](https://youtu.be/rBPGH6eYlT0?t=624)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#certifiedAdminSetting) 
 * Zwei neue benutzerdefinierte Visuals [[Video]](https://youtu.be/rBPGH6eYlT0?t=693) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#customVisuals) 
 
@@ -195,11 +272,11 @@ Sie können auch frühere Versionen von Power BI Desktop herunterladen, wenn Ihr
 
 Wählen Sie die folgenden Links zum Herunterladen dieser früheren Version aus: 
 
-* [Power BI Desktop - 32-Bit-Version März 2019](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-03.msi)
-* [Power BI Desktop - 64-Bit-Version März 2019](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-03_x64.msi)
+* [Version März 2019 von Power BI Desktop – 32-Bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-03.msi)
+* [Version März 2019 von Power BI Desktop – 64-Bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-03_x64.msi)
 
 
-## <a name="february-2019-update-26653761681"></a>Aktualisieren Sie Februar 2019 (2.66.5376.1681)
+## <a name="february-2019-update-26653761681"></a>Update Februar 2019 (2.66.5376.1681)
 
 Unsere Februarupdates begeisterten unsere Kunden, und sie lieben unsere neuen Datenkonnektoren, Features und Analyseerweiterungen. Es ist wie mit einer Schachtel Pralinen – man weiß nie, was man kriegt... Bei diesem Februarupdate können Sie jedoch sicher sein: Alle Änderungen sind zuckersüß und einfach nur köstlich. 
 
@@ -231,7 +308,7 @@ In diesem Monat bietet **Power BI Desktop** die folgenden Updates:
 * Automatisch generierte vorgeschlagene Fragen für Q&A-Explorer [[Video]](https://youtu.be/dMD25wfElLg?t=1121) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#autoSuggestions) 
 * Verbesserter Python- und R-Skript-Editor [[Video]](https://youtu.be/dMD25wfElLg?t=1282) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#scriptEditor) 
 
-### <a name="custom-visuals"></a>Benutzerdefinierte visuelle Elemente
+### <a name="custom-visuals"></a>Benutzerdefinierte Visuals
 * Zehn neue benutzerdefinierte Visuals, neues Feature für benutzerdefinierte Visuals [[Video]](https://youtu.be/dMD25wfElLg?t=1324) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#customVisuals) 
 
 ### <a name="data-connectivity"></a>Datenkonnektivität
@@ -281,7 +358,7 @@ Wählen Sie die folgenden Links zum Herunterladen dieser früheren Version aus:
 Es gab kein Release von Power BI Desktop im Januar 2019 – wir genossen unsere freie Zeit mit Freunden und Familie. 
 
 
-## <a name="december-2018-update-2655313621"></a>Aktualisieren Sie Dezember 2018 (2.65.5313.621)
+## <a name="december-2018-update-2655313621"></a>Update Dezember 2018 (2.65.5313.621)
 
 Die Updates im Dezember sind auf große Resonanz gestoßen und ermöglichen es Kunden, überzeugende datengesteuerte Visuals zu erstellen. 
 
@@ -320,7 +397,7 @@ In diesem Monat bietet **Power BI Desktop** die folgenden Updates:
 * Unterstützung von Barrierefreiheit bei der Datenansicht [[Video]](https://youtu.be/AHNlkjRFdYI?t=1253) [[Artikel]](desktop-composite-models.md) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#dataView) 
 
 
-### <a name="custom-visuals"></a>Benutzerdefinierte visuelle Elemente
+### <a name="custom-visuals"></a>Benutzerdefinierte Visuals
 
 * Ein neues benutzerdefiniertes Visual [[Video]](https://youtu.be/AHNlkjRFdYI?t=1370) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#customVisuals) 
 
@@ -368,7 +445,7 @@ Wählen Sie die folgenden Links zum Herunterladen dieser früheren Version aus:
 * [Version Dezember 2018 von Power BI Desktop – 64-Bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-12_x64.msi)
 
 
-## <a name="november-2018-update-2645285582"></a>Aktualisieren Sie November 2018 (2.64.5285.582)
+## <a name="november-2018-update-2645285582"></a>Update November 2018 (2.64.5285.582)
 
 Das November-Update enthielt eine Vielzahl an neuen Features und Funktionen. Sie konnten also gespannt sein und sich von den zahlreichen neuen Aktualisierungen begeistern lassen. 
 
@@ -394,13 +471,13 @@ Die folgenden Updates für wurden für **Power BI Desktop** im November erstmals
 * Verbesserte Barrierefreiheit bei der Modellierung [[Video]](https://youtu.be/1xsXXoyTxfk?t=2023)  [[Artikel]](desktop-accessibility.md)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23modellingAccessibility) 
 * Neue DAX-Funktionen [[Video]](https://youtu.be/1xsXXoyTxfk?t=2066)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23dax) 
 
-### <a name="custom-visuals"></a>Benutzerdefinierte visuelle Elemente
+### <a name="custom-visuals"></a>Benutzerdefinierte Visuals
 
 * Fünf neue benutzerdefinierte Visuals [[Video]](https://youtu.be/1xsXXoyTxfk?t=2108) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23customVisuals) 
 
 ### <a name="data-connectivity"></a>Datenkonnektivität
 
-* Azure Developer Operations-Server-Connector [[video]](https://youtu.be/1xsXXoyTxfk?t=2641)[[Blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23devOps) 
+* Azure Developer Operations Server-Connector [[Video]](https://youtu.be/1xsXXoyTxfk?t=2641)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23devOps) 
 * PDF-Connector unterstützt Parameter für Start- und Endseite [[Video]](https://youtu.be/1xsXXoyTxfk?t=2667)  [[Artikel]](desktop-connect-pdf.md)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23pdf) 
 * Verbesserter Azure Consumption Insights-Connector [[Video]](https://youtu.be/1xsXXoyTxfk?t=2704)  [[Artikel]](desktop-connect-azure-consumption-insights.md)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23consumptionInsights) 
 
@@ -455,7 +532,7 @@ Im Oktober wurden die folgenden Aktualisierungen für **Power BI Desktop** verö
 * Unterstützung für zusammengesetzte Modelle und Aggregation im Power BI-Dienst (Vorschau) [[Video]](https://youtu.be/8E6UokaDtc0) [[Artikel – Aggregationen]](desktop-aggregations.md) [[Artikel – zusammengesetzte Modelle]](desktop-composite-models.md) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23compositeModels) 
 * Erläutern des Anstiegs für nicht additive Measures [[Video]](https://youtu.be/8E6UokaDtc0?t=107) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23Insights) 
 
-### <a name="custom-visuals"></a>Benutzerdefinierte visuelle Elemente
+### <a name="custom-visuals"></a>Benutzerdefinierte Visuals
 
 * Fünf neue benutzerdefinierte Visuals [[Video]](https://youtu.be/ZfJSSG17SEY) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23customVisuals) 
 
@@ -525,7 +602,7 @@ In diesem Monat bietet **Power BI Desktop** die folgenden Updates:
 
 * Aggregationen (Vorschauversion) [[Video]](https://youtu.be/Rzw2WyI09kY?t=11m37s) [[Artikel]](desktop-aggregations.md) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#aggregations) 
 
-### <a name="custom-visuals"></a>Benutzerdefinierte visuelle Elemente
+### <a name="custom-visuals"></a>Benutzerdefinierte Visuals
 
 * Fünf neue benutzerdefinierte Visuals [[Video]](https://youtu.be/Rzw2WyI09kY?t=23m8s) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#customVisuals) 
 
@@ -594,7 +671,7 @@ Im April wurden folgende Updates für **Power BI Desktop** veröffentlicht:
 * Integration von Python [[Video]](https://youtu.be/dgv5HhHxxe8?t=11m14s) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#python) 
 * Q&A-Verbesserungen [[Video]](https://youtu.be/dgv5HhHxxe8?t=13m1s) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#Q&A) 
 
-### <a name="custom-visuals"></a>Benutzerdefinierte visuelle Elemente
+### <a name="custom-visuals"></a>Benutzerdefinierte Visuals
 
 * Fünf neue benutzerdefinierte Visuals [[Video]](https://youtu.be/dgv5HhHxxe8?t=19m48s) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#customVisuals) 
 
@@ -663,7 +740,7 @@ Im Juli wurden die folgenden Updates für **Power BI Desktop** veröffentlicht:
 
 * Erkenntnisse zu Verteilungsfaktoren [[Video]](https://youtu.be/Mtig3rmIUe0?t=37m) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#distributionFactor) 
 
-### <a name="custom-visuals"></a>Benutzerdefinierte visuelle Elemente
+### <a name="custom-visuals"></a>Benutzerdefinierte Visuals
 
 * Power BI-zertifizierte Kategorie [[Video]](https://youtu.be/Mtig3rmIUe0?t=41m13s) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#certifiedVisuals) 
 * Deaktivieren von spezifischen Organisationsvisuals [[Video]](https://youtu.be/Mtig3rmIUe0?t=42m32s) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#orgCustomVisuals) 
@@ -705,7 +782,7 @@ Im Juni wurden die folgenden Updates für **Power BI Desktop** veröffentlicht:
 * Separate Formatierung von Datenbeschriftungen für jedes Measure in Kombinationsdiagrammen [[Video]](https://youtu.be/4VpGtWSrssE?t=9m29s) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#comboLabels) 
 * Längere Telefonberichte [[Video]](https://youtu.be/4VpGtWSrssE?t=11m26s) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#phoneReports) 
 
-### <a name="custom-visuals"></a>Benutzerdefinierte visuelle Elemente
+### <a name="custom-visuals"></a>Benutzerdefinierte Visuals
 
 * Zwei neue benutzerdefinierte Visuals [[Video]](https://youtu.be/4VpGtWSrssE?t=17m42s) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#customVisuals) 
 
@@ -760,7 +837,7 @@ Im Mai wurden die folgenden Updates für **Power BI Desktop** veröffentlicht:
 
 * Inkrementelle Aktualisierung (Vorschau) [[Video]](https://youtu.be/-_GMCE1TLvQ?t=7m42s) [[Artikel]](service-premium-incremental-refresh.md) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#incrementalRefresh) 
 
-### <a name="custom-visuals"></a>Benutzerdefinierte visuelle Elemente
+### <a name="custom-visuals"></a>Benutzerdefinierte Visuals
 
 * Viele neue benutzerdefinierte Visuals [[Video]](https://youtu.be/-_GMCE1TLvQ?t=9m44s) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#customVisuals) 
 
@@ -812,7 +889,7 @@ Die folgenden Updates wurden im April für **Power BI Desktop** veröffentlicht:
 * Aktualisieren Ihres linguistischen Schemas [[Video]](https://youtu.be/W_Nb73Od_AI?t=22m) [[Artikel]](power-bi-custom-visuals-organization.md) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#linguisticSchema) 
 * Neue DAX-Funktion: COMBINEVALUES() [[Video]](https://youtu.be/W_Nb73Od_AI?t=23m37s) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#combineValues) 
 
-### <a name="custom-visuals"></a>Benutzerdefinierte visuelle Elemente
+### <a name="custom-visuals"></a>Benutzerdefinierte Visuals
 
 * Visualisierungen für Organisationen sind jetzt allgemein verfügbar [[Video]](https://youtu.be/W_Nb73Od_AI?t=26m11s) [[Artikel]](power-bi-custom-visuals-organization.md) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#organizationalVisuals) 
 * Viele neue benutzerdefinierte Visuals [[Video]](https://youtu.be/W_Nb73Od_AI?t=28m8s) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#overviewByCloudScope) 
@@ -852,7 +929,7 @@ Wir haben uns gefreut, die Updates für März für **Power BI Desktop** veröffe
 * Deaktivieren des visuellen Headers im Lesemodus für einen Bericht [[Video]](https://youtu.be/kuI6MMzDh34?t=12m25s) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#visualHeader) 
 * Verbesserte Standardplatzierung visueller Elemente [[Video]](https://youtu.be/kuI6MMzDh34?t=14m45s) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#visualPlacement) 
 
-### <a name="custom-visuals"></a>Benutzerdefinierte visuelle Elemente
+### <a name="custom-visuals"></a>Benutzerdefinierte Visuals
 
 * Viele neue benutzerdefinierte visuelle Elemente [[Video]](https://youtu.be/kuI6MMzDh34?t=15m43s) [[Artikel]](power-bi-custom-visuals-organization.md) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#customVisuals) 
 
@@ -911,7 +988,7 @@ Im Februar 2018 wurden folgende Updates für **Power BI Desktop** veröffentlich
 * Durchsuchen der Bereiche „Formatierung“ und „Analyse“ [[Video]](https://youtu.be/KeVB5RwMzJo?t=14m46s) [[Artikel]](desktop-analytics-pane.md) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#search) 
 
 
-### <a name="custom-visuals"></a>Benutzerdefinierte visuelle Elemente
+### <a name="custom-visuals"></a>Benutzerdefinierte Visuals
 
 * Benutzerdefinierte Visuals für Organisationen (Vorschau) [[Video]](https://youtu.be/KeVB5RwMzJo?t=19m23s) [[Artikel]](power-bi-custom-visuals-organization.md) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#organizationalVisuals) 
 
@@ -1710,7 +1787,7 @@ Im September wurden die folgenden Updates von Power BI Desktop veröffentlicht:
 -   Funktionsaufruf in „Spalte hinzufügen“[[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
 -   Spalten erweitern und aggregieren: Unterstützung für das *Laden weiterer Werte*[[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
 -   Neue Transformation: Umwandeln einer Tabellenspalte in eine Liste [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
--   Onboarding Schlüssel: Unterstützung für *intelligente Eingabe* im Dropdown-Menüs [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+-   Tastatureingabe: Unterstützung für die *intelligente Eingabe* in Dropdownmenüs [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
 
 
 ### <a name="other-improvements"></a>Sonstige Verbesserungen
@@ -2554,7 +2631,7 @@ Dieses Update wurde um die folgenden Features erweitert:
   -   Erweitern/Reduzieren von Tabellen
   -   Einblenden/Ausblenden von Feldern
   -   Optimiertes Layout (Abstände, Ränder und Schriftarten)
-- Navigation in Berichtsseiten – Bestände Key-Unterstützung
+- Navigation in Berichtsseiten – Keyboardunterstützung
 - Viele Programmfehlerbehebungen
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/-bZFeS1S1wU" frameborder="0" allowfullscreen></iframe>

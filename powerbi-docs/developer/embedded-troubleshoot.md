@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 43cb59853e884b1e3e6a49c328aa3385e88b62fc
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 6e28af5a03fd799f088d428f16621358c2a4f7c5
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770478"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823316"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Problembehandlung bei Embedded-Anwendungen
 
@@ -80,6 +80,7 @@ Zur genaueren Prüfung muss möglicherweise eine Fiddler-Überwachung ausgeführ
 * Das Azure AD-Auth-Token ist abgelaufen.
 * Der authentifizierte Benutzer ist kein Mitglied der Gruppe (App-Arbeitsbereich).
 * Der authentifizierte Benutzer ist kein Administrator der Gruppe (App-Arbeitsbereich).
+* Der authentifizierte Benutzer verfügt über keine Berechtigungen. Berechtigungen können mithilfe der [refreshUserPermissions-API](https://docs.microsoft.com/en-us/rest/api/power-bi/users/refreshuserpermissions) aktualisiert werden.
 * Der Autorisierungsheader wird möglicherweise nicht ordnungsgemäß aufgeführt. Stellen Sie sicher, dass keine Rechtschreibfehler enthalten sind.
 
 Das Back-End der Anwendung muss das Auth-Token möglicherweise vor dem Aufrufen von GenerateToken aktualisieren.
@@ -185,9 +186,9 @@ Das Einwilligen des Benutzers ist für den Mandanten deaktiviert.
 
 *Erteilen Sie Berechtigungen* für die Anwendung durch einen Administrator, entweder für den gesamten Mandanten oder für einen bestimmten Benutzer.
 
-### <a name="cs1061-error"></a>CS1061-Fehler
+### <a name="cs1061-error"></a>Fehler „CS1061“
 
-Herunterladen [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) bei einem ""AuthenticationContext"enthält keine Definition für"AcquireToken"und nicht zugegriffen werden kann 'AcquireToken" akzeptiert ein erstes Argument vom Typ " AuthenticationContext "gefunden (fehlt eine using-Direktive oder ein Assemblyverweis?)" Fehler.
+Laden Sie [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) herunter, wenn die Fehlermeldung "'AuthenticationContext' does not contain a definition for 'AcquireToken' and no accessible 'AcquireToken' accepting a first argument of type 'AuthenticationContext' could be found (are you missing a using directive or an assembly reference?)" (‚AuthenticationContext‘ enthält keine Definition für ‚AcquireToken‘, und es konnte kein zugängliches ‚AcquireToken‘ gefunden werden, das das erste Argument des Typs ‚AuthenticationContext‘ akzeptiert (Fehlt möglicherweise eine using-Direktive oder ein Assemblyverweis?)) angezeigt wird.
 
 ## <a name="data-sources"></a>Datenquellen
 

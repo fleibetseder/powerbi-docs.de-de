@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/11/2018
+ms.date: 06/10/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 163fc60052c4124e7c6cbac60f1486a185c35f17
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0789d7e77e3ae501cc2aec92c366c9c2608edd52
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61394789"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839383"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Flächenkartogramme in Power BI Desktop (Vorschau)
 Erstellen Sie ein Visual für die **Formenzuordnung**, um Regionen auf einer Karte voneinander abzutrennen. Im Gegensatz zum Visual **Karte** kann das Visual **Formenzuordnung** keine genauen geografischen Standorte von Datenpunkten auf einer Karte anzeigen. Stattdessen soll es vor allem Regionen auf einer Karte in Beziehung zueinander setzen, indem diese unterschiedliche Farben erhalten.
@@ -27,15 +27,15 @@ Sie können das Steuerelement **Flächenkartogramm** mit den Karten testen, die 
 
 Die Visualisierung **Flächenkartogramm** befindet sich in der Vorschauversion und muss in Power BI Desktop aktiviert werden. Wählen Sie **Datei > Optionen und Einstellungen > Optionen > Vorschaufeatures** aus, und aktivieren Sie anschließend das Kontrollkästchen bei **Visuelles Formzuordnungselement**, um **Formzuordnung** zu aktivieren. Sie müssen Power BI Desktop neu starten, nachdem Sie die Auswahl vorgenommen haben.
 
-![](media/desktop-shape-map/shape-map_1a.png)
+![Aktivieren der Previewfunktion für das Flächenkartogramm](media/desktop-shape-map/power-bi-preview-features.png)
 
-Sobald **Flächenkartogramm** aktiviert ist, klicken Sie auf das Steuerelement **Flächenkartogramm** im Bereich **Visualisierungen**.
+Sobald das **Flächenkartogramm** aktiviert ist, wählen Sie das Steuerelement **Flächenkartogramm** im Bereich **Visualisierungen** aus.
 
-![](media/desktop-shape-map/shape-map_2.png)
+![Auswählen der Vorlage für das Flächenkartogramm](media/desktop-shape-map/power-bi-shape-map-template2.png)
 
 Power BI Desktop erstellt einen leeren Entwurfszeichenbereich für die Visualisierung **Flächenkartogramm**.
 
-![](media/desktop-shape-map/shape-map_3.png)
+![Leeres Flächenkartogramm, das im Zeichenbereich angezeigt wird](media/desktop-shape-map/shape-map-3.png)
 
 Führen Sie die folgenden Schritte aus, um ein **Flächenkartogramm** zu erstellen:
 
@@ -46,26 +46,23 @@ Führen Sie die folgenden Schritte aus, um ein **Flächenkartogramm** zu erstell
    > 
    > 
 
-   ![](media/desktop-shape-map/shape-map_3a.png)
+   ![Erstellen des Flächenkartogramms](media/desktop-shape-map/shape-map-3a.png)
 2. Erweitern Sie im Bereich **Formateinstellungen** **Form**, und wählen Sie aus der Dropdownliste **Standardkarten** aus, um Ihre Daten anzuzeigen. Zu diesem Zeitpunkt erfolgt das Rendering wie in folgender Abbildung dargestellt.
 
-   ![](media/desktop-shape-map/shape-map_3b.png)
+   ![Öffnen des Bereichs „Formatierung“ und Auswählen der Form](media/desktop-shape-map/shape-map-3b-new.png)
 
    > [!NOTE]
    > Im Abschnitt **Regionsschlüssel** am Ende dieses Artikels finden Sie eine Sammlung von Tabellen, die Regionsschlüssel für Karten enthalten, die Sie zum Testen des Visuals **Flächenkartogramm** verwenden können.
    > 
    > 
-3. Anschließend können Sie im Bereich **Formateinstellungen** die Einstellungen für die Kartenprojektion und den Zoom sowie die Farben der Datenpunkte ändern. Sie können auch die Zoomeinstellungen ändern. Sie können z.B. Farben ändern, Mindest- und Höchstwerte festlegen usw.
-
-   ![](media/desktop-shape-map/shape-map_3d.png)
-4. Sie können dem Bucket **Legende** auch eine Spalte „Datenkategorie“ hinzufügen und die Kartenregionen basierend auf Kategorien klassifizieren.
+3. Mithilfe von Formatierungsoptionen wie **Standardfarbe**, **Zoom** etc. können Sie die Karte ändern. Außerdem können Sie dem Bucket **Legende** auch eine Spalte „Datenkategorie“ hinzufügen und die Kartenregionen basierend auf Kategorien klassifizieren.
 
 ## <a name="use-custom-maps"></a>Verwenden benutzerdefinierter Karten
 Sie können benutzerdefinierte Karten für das **Flächenkartogramm** verwenden, sofern sie das **TopoJSON**-Format aufweisen. Wenn die Karte in einem anderen Format vorliegt, können Sie mit Onlinetools, z.B. [**Map Shaper**](http://mapshaper.org/), die *Shape-Dateien* oder *GeoJSON*-Karten in das **TopoJSON**-Format konvertieren.
 
 Um die **TopoJSON**-Kartendatei zu verwenden, fügen Sie dem Bericht ein visuelles ShapeMap-Element hinzu, und fügen Sie den Buckets *Standort* und *Farbsättigung* Daten hinzu. Erweitern Sie dann im Bereich **Visualisierungen**, in dem der Abschnitt **Format** (in der folgenden Abbildung als (1) dargestellt) ausgewählt ist, den Abschnitt **Form**, und wählen Sie **+ Karte hinzufügen** aus.
 
-![](media/desktop-shape-map/shape-map_6.png)
+![Öffnen des Bereichs „Formatierung“ und Auswählen der Option „Karte hinzufügen“](media/desktop-shape-map/shape-map-6-new.png)
 
 ## <a name="sample-custom-map"></a>Benutzerdefinierte Beispielkarte
 Die *Büros der United States Attorneys* (Anwälte der Vereinigten Staaten) veröffentlichen einen jährlichen Finanzbericht über ihre Daten von Gerichtsverfahren und der Anzahl von Fällen.  Alle Berichte finden Sie unter folgendem Link:
@@ -74,11 +71,11 @@ https://www.justice.gov/usao/resources/annual-statistical-reports
 
 Da Staaten in mehrere Bezirke unterteilt werden können, müssen wir ein benutzerdefiniertes Flächenkartogramm verwenden.  Durch Importieren der **TopoJSON**-Karte der US-Gerichtsbezirke in **Power BI Desktop** können wir die jährlichen Finanzdaten der Bezirksanwälte anzeigen.  Das nachfolgende Bild stellt ein Beispiel dieser Karte dar.
 
-![](media/desktop-shape-map/shape-map_7a.png)
+![Benutzerdefiniertes Flächenkartogramm](media/desktop-shape-map/shape-map-7a.png)
 
 Sie können mit den einzelnen Karten der US-Staaten auch interessante Vorgänge durchführen und weitere Details auf Grundlage der auf der Karte enthaltenen Bezirke anzeigen. 
 
-![](media/desktop-shape-map/shape-map_7b.png)
+![Flächenkartogramm von Texas](media/desktop-shape-map/shape-map-7b.png)
 
 Wenn Sie gerne mit diesem Dataset und der Visualisierung experimentieren möchten, können Sie die PBIX-Originaldatei herunterladen, die zur Generierung dieses Berichts verwendet wurde. Sie finden sie unter folgendem Link:
 
@@ -87,11 +84,11 @@ Wenn Sie gerne mit diesem Dataset und der Visualisierung experimentieren möchte
 ## <a name="getting-map-data"></a>Abrufen von Kartendaten
 Um schnell Daten in ein Modell abzurufen, um **Flächenkartogramm** zu testen, können Sie eine der Tabellen am Ende dieses Artikels kopieren und anschließend auf dem Menüband **Start** **Daten eingeben** auswählen.
 
-![](media/desktop-shape-map/shape-map_4.png)
+![Auswählen von „Daten eingeben“ in Power BI Desktop](media/desktop-shape-map/shape-map-4-new.png)
 
 Wenn Ihre Daten mehrere Spalten haben, müssen Sie zum Einfügen der Daten einen Editor wie Excel verwenden und dann jede Datenspalte einzeln kopieren. Sie können die Daten anschließend in Power BI Desktop einfügen. Die oberste Zeile wird automatisch als Überschrift identifiziert.
 
-![](media/desktop-shape-map/shape-map_5.png)
+![Bereich „Tabelle erstellen“](media/desktop-shape-map/shape-map-5.png)
 
 Sie können eine neue Spalte einfach hinzufügen, indem Sie einen neuen Spaltennamen (in die leere Spalte auf der rechten Seite) eingeben und anschließend wie in Excel jeder Zelle Werte hinzufügen. Wenn Sie damit fertig sind, wählen Sie **Laden** aus, und die Tabelle wird dem Datenmodell von Power BI Desktop hinzugefügt.
 

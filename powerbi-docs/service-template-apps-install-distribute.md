@@ -5,24 +5,24 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/19/2019
 ms.author: maggies
-ms.openlocfilehash: 2b7b2630e665fca9013920718ff58dd973f01392
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0671dfb324b3d66a9dee9585f94d3cb6825fb5eb
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64578562"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751235"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization---power-bi-preview"></a>Power BI (Vorschau): Installieren und Verteilen von Vorlagen-Apps in Ihrer Organisation
 
-Sind Sie ein Power BI-Analyst? Wenn also in diesem Artikel wird erläutert, wie Sie installieren *Vorlage apps* für die Verbindung viele Dienste Sie verwenden, um Ihre Geschäfte, z. B. Salesforce, Microsoft Dynamics und Google Analytics. Sie können die Dashboards und Berichte für die Bedürfnisse Ihrer Organisation zu ändern und sie dann an Ihre Kollegen als Verteilen einer *app*. 
+Sind Sie Power BI-Analyst? Wenn dies der Fall ist, erfahren Sie in diesem Artikel, wie Sie *Vorlagen-Apps* installieren, um eine Verbindung mit den von Ihnen im Geschäftsalltag verwendeten Diensten wie Salesforce, Microsoft Dynamics und Google Analytics herzustellen. Sie können das Dashboard und Berichte gemäß den Anforderungen Ihrer Organisation ändern und als *App* an Ihre Kollegen verteilen. 
 
 ![Installierte Power BI-Apps](media/service-template-apps-install-distribute/power-bi-get-apps.png)
 
-Wenn Sie daran interessiert sind, Ihre eigenen Vorlagen-Apps zu erstellen und zu verteilen, finden Sie Informationen dazu unter [Create a template app in Power BI (Erstellen einer Vorlagen-App in Power BI)](service-template-apps-create.md). Power BI-Partner können Power BI-apps mit nur wenig oder gar keinen Code erstellen und diese in Power BI-Kunden bereitstellen. 
+Wenn Sie daran interessiert sind, Ihre eigenen Vorlagen-Apps zu erstellen und zu verteilen, finden Sie Informationen dazu unter [Create a template app in Power BI (Erstellen einer Vorlagen-App in Power BI)](service-template-apps-create.md). Power BI-Partner können Power BI-Apps ohne oder mit nur wenig Code erstellen, und diese dann für Power BI-Kunden bereitstellen. 
 
 ## <a name="prerequisites"></a>Voraussetzungen  
 

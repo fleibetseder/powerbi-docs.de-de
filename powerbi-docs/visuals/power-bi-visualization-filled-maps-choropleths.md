@@ -8,20 +8,20 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 06/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ef03a562351b8f4487e4822ef28b89009ee5cbb4
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 2fa8fa5248ee1e4330804205b2cedb64021b1913
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61145417"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839756"
 ---
 # <a name="filled-maps-choropleths-in-power-bi"></a>Flächenkartogramme (Choroplethenkarten) in Power BI
 In einem Flächenkartogramm wird mithilfe von Schattierungen, Farben oder Mustern angezeigt, in welchem Verhältnis Werte innerhalb eines geografischen Gebiets stehen.  Diese relativen Unterschiede werden mithilfe von Schattierungen angezeigt, wobei hell eine geringe Menge/Häufigkeit und dunkel eine große Menge/Häufigkeit anzeigt.    
 
-![Karte der USA](media/power-bi-visualization-filled-maps-choropleths/large_map.png)
+![Karte der USA](media/power-bi-visualization-filled-maps-choropleths/large-map.png)
 
 ## <a name="what-is-sent-to-bing"></a>An Bing gesendete Informationen
 Power BI arbeitet mit Bing zusammen, um Standardkartenkoordinaten bereitzustellen (ein Prozess, der als Geocodierung bezeichnet wird). Wenn Sie im Power BI-Dienst oder in Power BI Desktop eine Kartenvisualisierung erstellen, werden die Daten in den Buckets **Standort**, **Breitengrad** und **Längengrad** (die dazu verwendet werden, diese Visualisierung zu erstellen) an Bing gesendet.
@@ -55,10 +55,11 @@ In diesem Video wird eine einfache Karte erstellt und in ein Flächenkartogramm 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
 
 ### <a name="get-data-and-add-a-new-blank-page-to-the-report"></a>Abrufen von Daten und Hinzufügen einer neuen leeren Seite zu dem Bericht
-1. Um ein eigenes Flächenkartogramm zu erstellen, [laden Sie das Beispiel für Vertrieb und Marketing herunter](../sample-datasets.md). Melden Sie sich zu diesem Zweck bei Power BI an, und wählen Sie **Daten abrufen \> Beispiele \> Vertrieb und Marketing\> Verbinden** aus.
-2. Wenn die Erfolgsmeldung angezeigt wird, schließen Sie diese, und klicken Sie auf die Registerkarte **Berichte**. Klicken Sie auf das **Beispiel für Vertrieb und Marketing**, um den Bericht zu öffnen.
+1. Um ein eigenes Flächenkartogramm zu erstellen, [laden Sie das Beispiel für Vertrieb und Marketing herunter](../sample-datasets.md). Melden Sie sich zu diesem Zweck bei Power BI an, und wählen Sie **Daten abrufen \> Beispiele \> Vertrieb und Marketing\> Verbinden** aus. Sie können die **Power BI Sales and Marketing**-App auch auf appsource.com abrufen. 
 
-   ![Inhaltsliste „Berichte“](media/power-bi-visualization-filled-maps-choropleths/power-bi-content-reports2.png)
+2. Öffnen Sie den Bericht „Sales and Marketing“.
+
+   ![Der Bericht „Sales and Marketing“ wird geöffnet.](media/power-bi-visualization-filled-maps-choropleths/power-bi-report-canvas.png)
 3. Power BI öffnet den Bericht. Klicken Sie auf **Bericht bearbeiten**, um den Bericht in der [Bearbeitungsansicht](../service-interact-with-a-report-in-editing-view.md) zu öffnen.
 
 4. Fügen Sie eine neue Seite hinzu, indem Sie auf das gelbe Pluszeichen am unteren Rand des Zeichenbereichs klicken.
@@ -89,7 +90,7 @@ In diesem Video wird eine einfache Karte erstellt und in ein Flächenkartogramm 
 9. [Speichern Sie den Bericht](../service-report-save.md).
 ##    <a name="adjust-the-color-formatting"></a>Anpassen der Farbformatierung
 Mithilfe von Power BI können Sie die Darstellung Ihres Flächenkartogramms umfassend steuern.
-1. Wählen Sie das Farbrollersymbol aus, um den Formatierungsbereich zu öffnen.
+1. Wählen Sie das Farbrollersymbol aus, um den Bereich „Formatierung“ zu öffnen.
 
     ![Formatierungsbereich](media/power-bi-visualization-filled-maps-choropleths/power-bi-data-colors.png)
 
@@ -123,13 +124,13 @@ Das Markieren eines Orts in einem Flächenkartogramm ermöglicht das Kreuzfilter
 ## <a name="considerations-and-troubleshooting"></a>Zu beachtende Aspekte und Problembehandlung
 Kartendaten sind unter Umständen nicht eindeutig.  Neben Paris in Frankreich gibt es auch noch ein Paris in Texas. Ihre geografischen Daten sind wahrscheinlich in separaten Spalten gespeichert – eine Spalte für den Ortsnamen, eine Spalte für den Namen des Bundeslands oder des Landkreises usw. Für Bing ist es daher nicht eindeutig, welches Paris gemeint ist. Wenn das Dataset bereits Daten für die Breiten- und Längengrade enthält, umfasst Power BI spezielle Felder, mithilfe derer die Kartendaten eindeutig zugeordnet werden können. Ziehen Sie das Feld mit den Breitengraddaten in den Bereich „Visualisierungen \> Breitengrad“.  Führen Sie für den Längengrad die gleichen Schritte aus.    
 
-![Bereiche für Visualisierungen und Felder](media/power-bi-visualization-filled-maps-choropleths/pbi_latitude.png)
+![Bereiche für Visualisierungen und Felder](media/power-bi-visualization-filled-maps-choropleths/pbi-latitude.png)
 
 Wenn Sie zum Bearbeiten des Datasets in Power BI Desktop berechtigt sind, erfahren Sie in diesem Video, wie Sie Mehrdeutigkeiten in Karten beheben.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Co2z9b-s_yM" frameborder="0" allowfullscreen></iframe>
 
-Wenn Sie keinen Zugriff auf die Breiten- und Längengraddaten haben, [befolgen Sie diese Anleitung, um Ihr Dataset zu aktualisieren](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
+[Führen Sie zum Aktualisieren des Datasets diese Anweisungen aus](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7), wenn Sie zwar über Bearbeitungszugriff für das Dataset, aber nicht über Zugriff auf die Breiten- und Längengraddaten verfügen.
 
 Weitere Hilfe zu Kartenvisualisierungen finden Sie unter [Tipps und Tricks für Kartenvisualisierungen](../power-bi-map-tips-and-tricks.md).
 

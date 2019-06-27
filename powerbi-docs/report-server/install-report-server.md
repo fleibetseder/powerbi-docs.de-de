@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/22/2019
-ms.openlocfilehash: 02104acdbff6e6a1a4e785553b689a3e74183a4d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c0e3666a5838ae8e3849f5defd3858c9ea205a42
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187729"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839450"
 ---
 # <a name="install-power-bi-report-server"></a>Installieren von Power BI-Berichtsserver
 
@@ -22,9 +22,9 @@ Erfahren Sie, wie Power BI-Berichtsserver installiert wird.
 
 ## <a name="download-power-bi-report-server"></a>Power BI-Berichtsserver herunterladen
 
-[Herunterladen von Power BI-Berichtsserver](https://www.microsoft.com/download/details.aspx?id=56722) aus dem Microsoft Download Center.
+Laden Sie [Power BI-Berichtsserver](https://www.microsoft.com/download/details.aspx?id=56722) aus dem Microsoft Download Center herunter.
 
-Es ist auch eine kostenlose Testversion. Auf der [lokale berichterstellung mit Power BI-Berichtsserver](https://powerbi.microsoft.com/report-server/) Seite **kostenlose Testversion herunterladen**.
+Es ist auch eine kostenlose Testversion verfügbar. Klicken Sie auf der Seite [Lokale Berichterstellung mit Power BI-Berichtsserver](https://powerbi.microsoft.com/report-server/) auf **Kostenlose Testversion herunterladen**.
 
 ## <a name="before-you-install"></a>Vor der Installation
 
@@ -40,7 +40,7 @@ Sie können den Product Key für Power BI-Berichtsserver aus zwei verschiedenen 
 - Power BI Premium
 - SQL Server Enterprise Software Assurance (SA)
 
-Erhalten Sie ausführliche.
+Weitere Details erhalten Sie im Verlauf dieses Artikels.
 
 #### <a name="power-bi-premium"></a>Power BI Premium
 
@@ -75,8 +75,8 @@ Zum Zeitpunkt der Installation ist kein Server mit der SQL Server-Datenbank-Engi
 
     ![Edition 2](media/install-report-server/pbireportserver-choose-edition2.png)
 
-    Andernfalls geben Sie den Product Key ein, dem Sie entweder aus dem Power BI-Dienst oder das Volume Licensing Service Center abgerufen haben. Weitere Informationen dazu, wie Sie Ihren Product Key zu erhalten, finden Sie die [vor der Installation](#before-you-install) weiter oben.
-4. Gelesen und stimme den Lizenzbedingungen und die Bedingungen, und wählen Sie dann **Weiter**.
+    Andernfalls geben Sie den Product Key ein, den Sie entweder durch den Power BI-Dienst oder das Volume Licensing Service Center erhalten haben. Weitere Informationen zum Abrufen Ihres Product Keys finden Sie oben im Abschnitt [Before you install](#before-you-install) (Vor der Installation).
+4. Lesen und akzeptieren Sie die Lizenz- und Geschäftsbedingungen, und klicken Sie dann auf **Weiter**.
 
     ![Lizenzbedingungen](media/install-report-server/pbireportserver-eula.png)
 5. Es muss eine Datenbank-Engine zum Speichern der Berichtsserver-Datenbank zur Verfügung stehen. Klicken Sie auf **Weiter**, um nur den Berichtsserver zu installieren.
@@ -92,7 +92,7 @@ Zum Zeitpunkt der Installation ist kein Server mit der SQL Server-Datenbank-Engi
 
     ![Konfigurieren des Berichtsservers](media/install-report-server/pbireportserver-configure.png)
 
-## <a name="configure-your-report-server"></a>Konfigurieren Sie Ihres Berichtsservers
+## <a name="configure-your-report-server"></a>Konfigurieren des Berichtsservers
 
 Nach Auswahl von **Berichtsserver konfigurieren** beim Setup wird der Konfigurations-Manager für Reporting Services angezeigt. Weitere Informationen finden Sie unter [Konfigurations-Manager für Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode).
 
@@ -153,7 +153,7 @@ Sie müssen den TCP-Port öffnen, den Sie für Ihre Webdienst-URL und die Webpor
 [Administratorübersicht](admin-handbook-overview.md)  
 [Ermitteln des Product Key für den Berichtsserver](find-product-key.md)  
 [Installieren von für Power BI-Berichtsserver optimiertem Power BI Desktop](install-powerbi-desktop.md)  
-[Überprüfen einer Reporting Services-Installation](https://docs.microsoft.com/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
+[Verify a Reporting Services installation (Überprüfen einer Reporting Services-Installation)](https://docs.microsoft.com/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
 [Konfigurieren des Dienstkontos für den Berichtsserver](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
 [Konfigurieren von Berichtsserver-URLs](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  
 [Konfigurieren einer Verbindung mit der Berichtsserver-Datenbank](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager)  

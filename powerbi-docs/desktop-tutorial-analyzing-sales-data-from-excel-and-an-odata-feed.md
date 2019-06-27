@@ -7,26 +7,31 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 05/21/2018
-ms.author: v-thepet
+ms.date: 05/31/2019
+ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 94e40681d065591db008f8a9062d851e0bd83f61
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 757a2ca5a88e8ee98aa1c460c30e001f14bc6789
+ms.sourcegitcommit: 88e2a80b95b3e735689e75da7c35d84e24772e13
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61368558"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66814343"
 ---
 # <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Tutorial: Kombinieren von Umsatzdaten aus Excel und einem OData-Feed
 
-Daten sind üblicherweise auf mehrere Datenquellen verteilt, z.B. Produktinformationen in einer und Umsatzinformationen in einer anderen Datenbank. Mit **Power BI Desktop** können Sie Daten aus verschiedenen Quellen kombinieren, um aufschlussreiche, überzeugende Datenanalysen und Visualisierungen zu erstellen. 
+Es ist üblich, dass sich Daten an mehreren Datenquellen befinden. Es kann z. B. sein, dass Sie über zwei Datenbanken verfügen, eine für Produktinformationen und eine für Vertriebsinformationen. Mit **Power BI Desktop** können Sie Daten aus verschiedenen Quellen kombinieren, um aufschlussreiche, überzeugende Datenanalysen und Visualisierungen zu erstellen. 
 
-In diesem Tutorial lernen Sie, wie Sie Daten aus zwei Datenquellen kombinieren: einer Excel-Arbeitsmappe mit Produktinformationen und einem OData-Feed mit Auftragsdaten. Nachdem Sie die einzelnen Datasets importiert und die Schritte zur Transformation und Aggregation durchgeführt haben, verwenden Sie Daten aus beiden Quellen zum Erstellen eines Umsatzanalyseberichts mit interaktiven Visualisierungen. Diese Verfahren können auch auf SQL Server-Abfragen, CSV-Dateien und alle anderen Datenquellen in Power BI Desktop angewendet werden.
+In diesem Tutorial kombinieren Sie Daten aus zwei Datenquellen: 
+
+1. Daten aus einer Excel-Arbeitsmappe mit Produktinformationen
+2. Daten aus einem OData-Feed mit Bestelldaten
+
+Sie importieren beide Datasets und führen Transformationen und Aggregationen durch. Dann verwenden Sie die Daten aus beiden Datenquellen, um einen Verkaufsanalysebericht mit interaktiven Visualisierungen zu erstellen. Später können Sie diese Verfahren auch auf SQL Server-Abfragen, CSV-Dateien und andere Datenquellen in Power BI Desktop anwenden.
 
 >[!NOTE]
->In Power BI Desktop gibt es oft mehrere Möglichkeiten zum Ausführen einer Aufgabe. Beispielsweise stehen viele Optionen des Menübands auch per Rechtsklick oder über das Menü **Weitere Optionen** für eine Spalte oder Zelle zur Verfügung. In den folgenden Schritten werden mehrere alternative Methoden beschrieben. 
+>In Power BI Desktop gibt es oft mehrere Möglichkeiten zum Ausführen einer Aufgabe. Sie können z. B. mit der rechten Maustaste auf **Weitere Optionen** in einer Spalte oder Zelle klicken, um weitere Auswahlmöglichkeiten im Menüband anzuzeigen. In den folgenden Schritten werden mehrere alternative Methoden beschrieben. 
 
-## <a name="import-the-product-data-from-excel"></a>Importieren der Produktdaten aus Excel
+## <a name="import-excel-product-data"></a>Importieren von Produktdaten aus Excel
 
 Importieren Sie zunächst die Produktdaten aus der Excel-Arbeitsmappe „Products.xlsx“ in Power BI Desktop.
 
@@ -45,7 +50,7 @@ Importieren Sie zunächst die Produktdaten aus der Excel-Arbeitsmappe „Product
    
    ![Navigatorbereich für Excel](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_2.png)
    
-Eine Vorschau der Tabelle wird im **Power Query-Editor** geöffnet, in dem Sie Transformationen zum Bereinigen der Daten anwenden können. 
+Eine Vorschau der Tabelle wird im **Power Query-Editor** geöffnet, in dem Sie Transformationen zum Bereinigen der Daten anwenden können.
    
 ![Power Query-Editor](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_3.png)
    
@@ -56,22 +61,22 @@ Eine Vorschau der Tabelle wird im **Power Query-Editor** geöffnet, in dem Sie T
 
 Ihr kombinierter Bericht verwendet nur die Spalten **ProductID**, **ProductName**, **QuantityPerUnit** und **UnitsInStock** aus der Excel-Arbeitsmappe. Die übrigen Spalten können Sie daher entfernen. 
 
-1. Wählen Sie im **Power Query-Editor** die Spalten **ProductID**, **ProductName**, **QuantityPerUnit** und **UnitsInStock** aus. (Verwenden Sie **STRG**+**Klicken**, um mehrere Spalten auszuwählen, bzw. **UMSCHALT**+**Klicken**, um Spalten auszuwählen, die nebeneinander liegen.)
+1. Wählen Sie im **Power Query-Editor** die Spalten **ProductID**, **ProductName**, **QuantityPerUnit** und **UnitsInStock** aus. Sie können mit **STRG**+**Klick** mehrere Spalten auswählen oder mit **UMSCHALT**+**Klick** aneinander angrenzende Spalten auswählen.
    
-2. Klicken Sie mit der rechten Maustaste auf eine der ausgewählten Überschriften, und wählen Sie **Andere Spalten entfernen** aus der Dropdownliste aus, um alle außer den ausgewählten Spalten aus der Tabelle zu entfernen. 
+2. Klicken Sie mit der rechten Maustaste auf einen der ausgewählten Header. Wählen Sie **Andere Spalten entfernen** aus dem Dropdownmenü aus. 
    Sie können auch im Menüband auf der Registerkarte **Start** in der Gruppe **Spalten verwalten** auf **Spalten entfernen** > **Andere Spalten entfernen** klicken. 
    
    ![Andere Spalten entfernen](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/analyzingsalesdata_removeothercolumns.png)
 
-## <a name="import-the-order-data-from-an-odata-feed"></a>Importieren der Auftragsdaten aus einem OData-Feed
+## <a name="import-the-odata-feeds-order-data"></a>Importieren der Bestelldaten aus dem OData-Feed
 
 Importieren Sie als Nächstes die Auftragsdaten aus dem OData-Feed des Northwind-Beispielvertriebssystems. 
 
-1. Klicken Sie im **Power Query-Editor** auf **Neue Quelle**, und wählen Sie dann **OData-Feed** aus der Dropdownliste **Am häufigsten verwendet**. 
+1. Klicken Sie im **Power Query-Editor** auf **Neue Quelle**, und wählen Sie dann **OData-Feed** aus der Dropdownliste **Am häufigsten verwendet** aus. 
    
    ![Abrufen von OData](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata.png)
    
-2. Fügen Sie im Dialogfeld **OData-Feed** die URL für den Northwind-OData-Feed ein (`http://services.odata.org/V3/Northwind/Northwind.svc/`), und wählen Sie **OK**.
+2. Fügen Sie im Dialogfeld **OData-Feed** die URL für den Northwind-OData-Feed `http://services.odata.org/V3/Northwind/Northwind.svc/` ein. Wählen Sie **OK**aus.
    
    ![Dialogfeld „OData-Feed“](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata2.png)
    
@@ -84,9 +89,9 @@ Importieren Sie als Nächstes die Auftragsdaten aus dem OData-Feed des Northwind
 
 ## <a name="expand-the-order-data"></a>Erweitern der Auftragsdaten
 
-Beim Herstellen einer Verbindung mit Datenquellen, die mehrere Tabellen enthalten (z.B. relationale Datenbanken oder der Northwind-OData-Feed), können Sie Verweise zwischen Tabellen verwenden, um Ihre Abfragen zu erstellen. Die Tabelle **Orders** enthält Verweise auf mehrere verknüpfte Tabellen. Sie können die Spalten **ProductID**, **UnitPrice** und **Quantity** aus der verknüpften Tabelle **Order_Details** über den Vorgang **Erweitern** der Betrefftabelle (**Orders**) hinzufügen. 
+Beim Herstellen einer Verbindung mit Datenquellen, die mehrere Tabellen enthalten (z.B. relationale Datenbanken oder der Northwind-OData-Feed), können Sie Verweise zwischen Tabellen verwenden, um Ihre Abfragen zu erstellen. Die Tabelle **Orders** enthält Verweise auf mehrere verknüpfte Tabellen. Sie können die Spalten **ProductID**, **UnitPrice** und **Quantity** aus der verknüpften Tabelle **Order_Details** über **Erweitern** der betreffenden Tabelle (**Orders**) hinzufügen. 
 
-1. Scrollen Sie in der Tabelle **Orders** nach rechts, bis Sie die Spalte **Order_Details** sehen. Beachten Sie, dass sie anstelle von Daten Verweise auf eine andere Tabelle enthält.
+1. Scrollen Sie in der Tabelle **Orders** nach rechts, bis Sie die Spalte **Order_Details** sehen. Sie enthält anstelle von Daten Verweise auf eine andere Tabelle.
    
    ![Spalte „Order_Details“](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/7.png)
    
@@ -100,7 +105,7 @@ Beim Herstellen einer Verbindung mit Datenquellen, die mehrere Tabellen enthalte
       
       ![Dialogfeld „Erweitern“](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/8.png)
 
-Nach dem Erweitern der Tabelle **Order_Details** wird die Spalte **Order_Details** durch die drei neuen Spalten aus der geschachtelten Tabelle ersetzt, und die Tabelle enthält neue Zeilen für die hinzugefügten Daten aus den einzelnen Aufträgen. 
+Wenn Sie die Tabelle **Order_Details** erweitert haben, ersetzen drei neue geschachtelte Tabellenspalten die Spalte **Order_Details**. Die Tabelle enthält neue Zeilen für die hinzugefügten Daten jeder Bestellung. 
 
 ![Erweiterte Spalten](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/9.png)
 
@@ -114,18 +119,19 @@ Im Power Query-Editor können Sie Berechnungen und benutzerdefinierte Felder ers
    
 2. Geben Sie im Dialogfeld **Benutzerdefinierte Spalte** im Feld **Neuer Spaltenname** den Text **LineTotal** ein.
 
-3. Geben Sie im Feld **Benutzerdefinierte Spaltenformel** nach dem **=** Folgendes ein: **[Order_Details.UnitPrice]** \* **[Order_Details.Quantity]** . (Sie können die Feldnamen auch aus dem Scrollfeld **Verfügbare Spalten** auswählen und auf **<< Einfügen** klicken, statt sie einzugeben.) 
-3. Wählen Sie **OK**aus.
+3. Geben Sie im Feld **Benutzerdefinierte Spaltenformel** nach den **=, Folgendes ein: **[Order_Details.UnitPrice]** \* **[Order_Details.Quantity]** . (Sie können die Feldnamen auch aus dem Scrollfeld **Verfügbare Spalten** auswählen und auf **<< Einfügen** klicken, statt sie einzugeben.) 
+
+4. Wählen Sie **OK**aus.
    
    ![Dialogfeld „Benutzerdefinierte Spalte“](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/11.png)
 
-Das neue Feld **LineTotal** wird als letzte Spalte in der Tabelle **Orders** angezeigt.
+   Das neue Feld **LineTotal** wird als letzte Spalte in der Tabelle **Orders** angezeigt.
 
-## <a name="set-the-data-type-for-the-new-field"></a>Festlegen des Datentyps für das neue Feld
+## <a name="set-the-new-fields-data-type"></a>Festlegen des Datentyps für das neue Feld
 
-Wenn der Power Query-Editor eine Verbindung mit Daten herstellt, legt er für jedes Feld den idealen Datentyp fest und zeigt die Daten entsprechend an. Die den Feldern zugewiesenen Datentypen erkennen Sie an den Symbolen in den Überschriften, oder Sie finden sie unter **Datentyp** in der Gruppe **Transformieren** im Menüband auf der Registerkarte **Start**. 
+Wenn der Power Query-Editor eine Verbindung mit Daten herstellt, gibt er eine Schätzung des Datentyps jedes Feld zum Anzeigen ab. Ein Headersymbol gibt den zugewiesenen Datentyp jedes Felds an. Auf der Registerkarte **Start** in der Gruppe **Transformieren** können Sie auch unter **Datentyp** weitere Informationen erhalten. 
 
-Die neue Spalte **LineTotal** weist den Datentyp **Beliebig** auf, die Werte sind jedoch vom Typ „Währung“. Klicken Sie zum Zuweisen eines Datentyps mit der rechten Maustaste auf die Spaltenüberschrift **LineTotal**, wählen Sie in der Dropdownliste den Eintrag **Datentyp ändern**, und klicken Sie dann auf **Feste Dezimalzahl**. 
+Die neue Spalte **LineTotal** hat den Datentyp **Any**, enthält aber Währungswerte. Klicken Sie zum Zuweisen eines Datentyps mit der rechten Maustaste auf die Spaltenüberschrift **LineTotal**, wählen Sie in der Dropdownliste **Typ ändern** aus, und klicken Sie dann auf **Feste Dezimalzahl**. 
 
 ![Ändern des Datentyps](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/12.png)
 
@@ -134,14 +140,25 @@ Die neue Spalte **LineTotal** weist den Datentyp **Beliebig** auf, die Werte sin
 
 ## <a name="clean-up-the-orders-columns"></a>Bereinigen der Auftragsspalten
 
-Um das Modell für die Bearbeitung in Berichten zu vereinfachen, können Sie einige der Spalten löschen, umbenennen und neu anordnen.
+Sie können einige der Spalten löschen, umbenennen und neu anordnen, um die Bearbeitung des Modells in Berichten zu vereinfachen.
 
-Ihr Bericht verwendet nur die Spalten **OrderDate**, **ShipCity**, **ShipCountry**, **Order_Details.ProductID**, **Order_Details.UnitPrice** und **Order_Details.Quantity**. Wie bei den Excel-Daten können Sie diese Spalten auswählen und **Andere Spalten entfernen** wählen, oder Sie können alle Spalten mit Ausnahme der aufgelisteten Spalten auswählen, mit der rechten Maustaste auf eine der ausgewählten Spalten klicken und **Spalten entfernen** wählen, um die Spalten zu entfernen. 
+In Ihrem Bericht werden die folgenden Spalten verwendet:
 
-Die Spalten **Order_Details.ProductID**, **Order_Details.UnitPrice** und **Order_Details.Quantity** sind leichter zu identifizieren, wenn Sie das Präfix *Order_Details.* aus den Spaltennamen entfernen. So benennen Sie die Spalten in **ProductID**, **UnitPrice** bzw. **Quantity** um:
+* **OrderDate**
+* **ShipCity**
+* **ShipCountry**
+* **Order_Details.ProductID**
+* **Order_Details.UnitPrice**
+* **Order_Details.Quantity**
+* **LineTotal**
 
-1. Doppelklicken Sie auf die einzelnen Spaltenüberschriften, oder halten Sie sie gedrückt, oder klicken Sie mit der rechten Maustaste auf die Spaltenüberschrift, und klicken Sie in der Dropdownliste auf **Umbenennen**. 
-2. Löschen Sie das Präfix *Order_Details.* aus den einzelnen Namen, und drücken Sie dann die **EINGABETASTE**.
+Wählen Sie diese Spalten aus, und verwenden Sie **Andere Spalten entfernen** wie bei den Excel-Daten. Alternativ können Sie die nicht aufgeführten Spalten verwenden, auf eine davon mit der rechten Maustaste klicken und **Spalten entfernen** auswählen. 
+
+Sie können die Spalten mit dem Präfix **Order_Details** umbenennen, damit diese besser gelesen werden können:
+
+1. Doppelklicken oder tippen Sie auf die einzelnen Spaltenüberschriften, oder klicken Sie mit der rechten Maustaste auf die Spaltenüberschrift, und klicken Sie in der Dropdownliste auf **Umbenennen**. 
+
+2. Löschen Sie das Präfix **Order_Details.** aus den einzelnen Namen, und drücken Sie dann die **EINGABETASTE**.
 
 Um schließlich den Zugriff auf die Spalte **LineTotal** zu vereinfachen, ziehen Sie sie nach links, und legen Sie sie rechts neben der Spalte **ShipCountry** ab.
 
@@ -149,18 +166,18 @@ Um schließlich den Zugriff auf die Spalte **LineTotal** zu vereinfachen, ziehen
 
 ## <a name="review-the-query-steps"></a>Überprüfen der Abfrageschritte
 
-Während Sie Daten im Power Query-Editor strukturiert und transformiert haben, wurde jeder Schritt auf der rechten Seite des Power Query-Editors im Bereich **Abfrageeinstellungen** im Abschnitt **Angewendete Schritte** aufgezeichnet. Sie können durch die angewendeten Schritte zurückgehen, um die vorgenommenen Änderungen zu überprüfen, und sie bei Bedarf bearbeiten, löschen oder neu anordnen (obwohl dies riskant sein kann, da das Ändern vorhergehender Schritte spätere Schritte beeinträchtigen kann). 
+Die Aktionen, die Sie im Power Query-Editor zum Formen und Transformieren von Daten durchführen, werden erfasst. Jeder Schritt wird rechts in den **Abfrageeinstellungen** unter **Angewendete Schritte** angezeigt. Sie können sich die **angewendeten Schritte** noch mal ansehen und diese bearbeiten, löschen oder neu anordnen (falls erforderlich). Wenn Sie vorhergehende Schritte ändern, kann es jedoch sein, dass sich dies negativ auf folgende Schritte auswirkt.
 
-Wählen Sie die einzelnen Abfragen in der Liste **Abfragen** auf der linken Seite des Power Query-Editors aus, und überprüfen Sie die Schritte unter **Angewendete Schritte** in den **Abfrageeinstellungen**. Nach dem Anwenden der vorherigen Datentransformationen sollte der Abschnitt „Angewendete Schritte“ für Ihre beiden Abfragen wie folgt aussehen:
+Wählen Sie die einzelnen Abfragen in der Liste **Abfragen** auf der linken Seite des Power Query-Editors aus, und überprüfen Sie die Schritte unter **Angewendete Schritte** in den **Abfrageeinstellungen**. Nach dem Anwenden der vorherigen Datentransformationen sollte der Abschnitt **Angewendete Schritte** für Ihre beiden Abfragen wie folgt aussehen:
 
 ![Produktabfrage: angewendete Schritte](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/15.png) &nbsp;&nbsp; ![Auftragsabfrage: angewendete Schritte](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/17.png)
 
 >[!TIP]
->Den angewendeten Schritten liegen Formeln zugrunde, die in der **Power Query-Sprache**, auch bekannt als **M**-Sprache, geschrieben sind. Zum Anzeigen und Bearbeiten der Formeln wählen Sie in der Registerkarte „Start“ des Menübands in die Gruppe **Abfrage** die Option **Erweiterter Editor**. 
+>Den angewendeten Schritten liegen Formeln zugrunde, die in der **Power Query-Sprache**, auch bekannt als [**M**-Sprache](https://docs.microsoft.com/powerquery-m/power-query-m-reference), geschrieben sind. Zum Anzeigen und Bearbeiten der Formeln wählen Sie in der Registerkarte „Start“ des Menübands in die Gruppe **Abfrage** die Option **Erweiterter Editor**. 
 
 ## <a name="import-the-transformed-queries"></a>Importieren der transformierten Abfragen
 
-Wenn Sie mit den transformierten Daten zufrieden sind, klicken Sie auf der Registerkarte **Start** des Menübands in der Gruppe **Schließen** auf **Schließen und übernehmen** > **Schließen und übernehmen**, um die Daten in die Berichtsansicht von Power BI Desktop zu importieren. 
+Wenn Sie mit den transformierten Daten zufrieden sind und diese in Ihre Power BI Desktop-Berichtsansicht importieren möchten, klicken Sie auf der Registerkarte **Start** auf dem Menüband in der Gruppe **Schließen** auf **Schließen und übernehmen** > **Schließen und übernehmen**. 
 
 ![Schließen und übernehmen](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_4.png)
 
@@ -170,11 +187,11 @@ Sobald die Daten geladen wurden, werden die Abfragen in der Liste **Felder** in 
 
 ## <a name="manage-the-relationship-between-the-datasets"></a>Verwalten der Beziehung zwischen den Datasets
 
-Sie müssen in Power BI Desktop keine Abfragen kombinieren, um für diese einen Bericht zu erstellen. Allerdings können Sie die Beziehungen zwischen Datasets, die auf gemeinsamen Feldern beruhen, zum Erweitern und Anreichern Ihre Berichte nutzen. Power BI Desktop kann Beziehungen automatisch erkennen, oder Sie können diese im Power BI Desktop-Dialogfeld **Beziehungen verwalten** erstellen. Weitere Informationen über Beziehungen in Power BI Desktop finden Sie unter [Erstellen und Verwalten von Beziehungen](desktop-create-and-manage-relationships.md).
+Sie müssen in Power BI Desktop keine Abfragen kombinieren, um für diese einen Bericht zu erstellen. Allerdings können Sie die Beziehungen zwischen Datasets, die auf gemeinsamen Feldern beruhen, zum Erweitern und Anreichern Ihre Berichte nutzen. Power BI Desktop kann Beziehungen automatisch erkennen, oder Sie können diese im Power BI Desktop-Dialogfeld **Beziehungen verwalten** erstellen. Weitere Informationen finden Sie unter [Erstellen und Verwalten von Beziehungen in Power BI Desktop](desktop-create-and-manage-relationships.md).
 
-Die Datasets „Orders“ und „Products“ in diesem Tutorial verwenden ein gemeinsames Feld *ProductID*, daher liegt zwischen ihnen eine Beziehung vor, die auf dieser Spalte beruht. 
+Das Feld **ProductID** erstellt eine Beziehung zwischen den Datasets „Orders“ und „Products“, die wir in diesem Tutorial verwenden. 
 
-1. Klicken Sie in der Berichtsansicht von Power BI Desktop im Menüband auf der Registerkarte **Start** im Bereich **Beziehungen** auf **Beziehungen verwalten**.
+1. Klicken Sie in der Berichtsansicht von Power BI Desktop auf der Registerkarte **Start** auf dem Menüband im Bereich **Beziehungen** auf **Beziehungen verwalten**.
    
    ![Menüband „Beziehungen verwalten“](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_5.png)
    
@@ -186,19 +203,19 @@ Die Datasets „Orders“ und „Products“ in diesem Tutorial verwenden ein ge
    
    ![Dialogfeld „Beziehung bearbeiten“](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_7.png)
    
-3. Power BI Desktop hat die Beziehung automatisch richtig erkannt, daher können Sie auf **Abbrechen** und dann auf **Schließen** klicken, um die Beziehungsdialogfelder zu beenden.
+3. Power BI Desktop hat die Beziehung automatisch richtig erkannt, daher können Sie auf **Abbrechen** und dann auf **Schließen** klicken.
 
-Sie können auch die Beziehungen zwischen Ihren Abfragen anzeigen und verwalten, indem Sie die Ansicht **Beziehung** auf der linken Seite des Power BI Desktop-Fensters auswählen. Doppelklicken Sie auf den Pfeil auf der Verbindungslinie zwischen den beiden Abfragen, um das Dialogfeld **Beziehung bearbeiten** zu öffnen und die Beziehung anzuzeigen oder zu ändern. 
+Klicken Sie in Power BI Desktop auf der linken Seite auf **Modell**, um Abfragebeziehungen anzuzeigen und zu verwalten. Doppelklicken Sie auf den Pfeil auf der Verbindungslinie zwischen den beiden Abfragen, um das Dialogfeld **Beziehung bearbeiten** zu öffnen und die Beziehung anzuzeigen oder zu ändern. 
 
 ![Beziehungsansicht](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_8.png)
 
-Um von der Beziehungsansicht wieder zur Berichtsansicht zu wechseln, klicken Sie auf das Symbol **Berichtsansicht**. 
+Klicken Sie auf das **Berichtssymbol**, um von der Beziehungsansicht wieder zur Berichtsansicht zu wechseln. 
 
 ![Symbol für Berichtsansicht](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_9.png)
 
 ## <a name="create-visualizations-using-your-data"></a>Erstellen von Visualisierungen mithilfe Ihrer Daten
 
-In der Berichtsansicht von Power BI Desktop können Sie eine Vielzahl von Visualisierungen erstellen, um Erkenntnisse aus Ihren Daten zu gewinnen. Sie können Berichte mit mehreren Seiten erstellen, und jede Seite kann mehrere Visuals enthalten. Sie und andere können mit den Visualisierungen interagieren, um die Daten einfacher zu analysieren und zu verstehen. Weitere Informationen über das Anzeigen und Bearbeiten von Berichten im Power BI-Dienst (Ihrer Website) finden Sie unter [Bearbeiten eines Berichts](service-interact-with-a-report-in-editing-view.md).
+Sie können in der Ansicht „Überprüfen“ in Power BI Desktop verschiedene Visualisierungen erstellen, um Erkenntnisse aus den Daten zu gewinnen. Berichte können über mehrere Seiten verfügen, und jede Seite kann mehrere Visuals enthalten. Sie und andere Benutzer können mit den Visualisierungen interagieren, um die Daten einfacher zu analysieren und zu verstehen. Weitere Informationen finden Sie unter [Interagieren mit einem Bericht in der Bearbeitungsansicht des Power BI-Diensts](service-interact-with-a-report-in-editing-view.md).
 
 Sie können beide Datasets und die Beziehung zwischen ihnen verwenden, um Ihre Vertriebsdaten zu visualisieren und zu analysieren. 
 
@@ -208,7 +225,7 @@ Erstellen Sie zunächst ein gestapeltes Säulendiagramm, das Felder aus beiden A
    
 2. Klicken Sie im Bereich **Felder** unter **Products** auf **ProductName**, oder ziehen Sie das Element auf das Diagramm, um die Menge der einzelnen bestellten Produkte anzuzeigen. 
    
-3. Um die Produkte von den meistbestellten bis zu den am wenigsten bestellten zu sortieren, wählen Sie oben rechts in der Visualisierung die Auslassungspunkte **Weitere Optionen** ( **...** ), und klicken Sie dann auf **Sortieren nach „Quantity“** .
+3. Klicken Sie oben rechts in der Visualisierung auf die Auslassungspunkte **Weitere Optionen** ( **...** ), und klicken Sie dann auf **Sortieren nach „Quantity“** , um die Produkte von den meistbestellten bis zu den am wenigsten bestellten zu sortieren.
    
 4. Verwenden Sie die Handles an den Ecken des Diagramms, um es zu vergrößern, sodass weitere Produktnamen angezeigt werden. 
    
@@ -218,9 +235,9 @@ Als Nächstes erstellen Sie ein Diagramm mit den Geldbeträgen der Aufträge (**
 
 1. Während in der Canvas nichts ausgewählt ist, klicken Sie im Bereich **Felder** unter **Orders** auf **LineTotal**, oder ziehen Sie das Element in einen leeren Bereich der Canvas. Das gestapelte Säulendiagramm zeigt den Gesamtbetrag aller Aufträge an. 
    
-2. Während das Diagramm ausgewählt ist, klicken Sie unter **Orders** auf **OrderDate**, oder ziehen Sie das Element auf das Diagramm. Das Diagramm zeigt jetzt Zeilengesamtwerte für jedes Auftragsdatum an. 
+2. Klicken Sie auf das gestapelte Diagramm und unter **Orders** auf **OrderDate**, oder ziehen Sie das Element auf das Diagramm. Das Diagramm zeigt jetzt Zeilengesamtwerte für jedes Auftragsdatum an. 
    
-3. Ändern Sie die Größe der Visualisierung durch Ziehen der Ecken, um weitere Daten anzuzeigen. 
+3. Sie können die Größe der Visualisierung durch Ziehen der Ecken anpassen, um weitere Daten anzuzeigen. 
    
    ![Liniendiagramm „LineTotals nach OrderDate“](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/20.png)
    
@@ -229,23 +246,23 @@ Als Nächstes erstellen Sie ein Diagramm mit den Geldbeträgen der Aufträge (**
 
 Erstellen Sie abschließend eine Kartenvisualisierung, die die Auftragsmengen aus den einzelnen Ländern zeigt. 
 
-1. Während in der Canvas nichts ausgewählt ist, klicken Sie im Bereich **Felder** unter **Orders** auf **ShipCountry**, oder ziehen Sie das Element in einen leeren Bereich der Canvas. Power BI Desktop erkennt, dass es sich bei den Daten um Ländernamen handelt, und erstellt automatisch eine Kartenvisualisierung mit einem Datenpunkt für jedes Land, in dem Aufträge erteilt wurden. 
+1. Während in der Canvas nichts ausgewählt ist, klicken Sie im Bereich **Felder** unter **Orders** auf **ShipCountry**, oder ziehen Sie das Element in einen leeren Bereich der Canvas. Power BI Desktop erkennt, dass es sich bei den Daten um Ländernamen handelt. Dann erstellt es automatisch eine Kartenvisualisierung mit einem Datenpunkt für jedes Land mit den entsprechenden Bestellungen. 
    
-2. Damit die Größe der Datenpunkte die Auftragsmengen für die einzelnen Länder widerspiegelt, ziehen Sie das Feld **LineTotal** auf die Karte (oder ziehen Sie es auf **Datenfelder hierher ziehen** unter **Größe** in der unteren Hälfte des Bereichs **Visualisierungen**). Die Größen der Kreise auf der Karte geben jetzt die Geldbeträge der Aufträge aus den einzelnen Länder wieder. 
+2. Wenn Sie möchten, dass die Größe jedes Datenpunkts die Bestellmenge in jedem Land widerspiegelt, können Sie das Feld **LineTotal** auf die Karte ziehen. Sie können es auch im Bereich **Visualisierungen** unter **Größe** zu **Datenfelder hierher ziehen** ziehen. Die Größen der Kreise auf der Karte geben jetzt die Geldbeträge der Aufträge aus den einzelnen Länder wieder. 
    
    ![Kartenvisualisierung „LineTotals nach ShipCountry“](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/21.png)
 
 ## <a name="interact-with-your-report-visuals-to-analyze-further"></a>Interagieren mit Berichtsvisuals zur weiteren Analyse
 
-Mithilfe von Power BI Desktop können Sie mit Visuals interagieren, die sich gegenseitig hervorheben und filtern, um so weitere Trends zu erkennen. Weitere Informationen finden Sie unter [Filtern und Hervorheben in Berichten](power-bi-reports-filters-and-highlighting.md) 
+Sie können in Power BI Desktop mit Visuals interagieren, die sich gegenseitig hervorheben und filtern, um weitere Trends zu bestimmen. Weitere Informationen finden Sie unter [Filtern und Hervorhebungen in Power BI-Berichten](power-bi-reports-filters-and-highlighting.md). 
 
 Aufgrund der Beziehung zwischen Ihren Abfragen wirken sich Interaktionen mit einer Visualisierung auf alle anderen Visualisierungen auf der Seite aus. 
 
-Wählen Sie auf der Kartenvisualisierung den Kreis aus, der mitten in **Kanada** liegt. Beachten Sie, dass die beiden anderen Visualisierungen so gefiltert werden, dass sie die Zeilengesamtwerte und Auftragsmengen ausschließlich für Kanada anzeigen.
+Wählen Sie auf der Kartenvisualisierung den Kreis aus, der mitten in **Kanada** liegt. Die beiden anderen Visualisierungen werden so gefiltert, dass sie die Zeilengesamtwerte und Auftragsmengen ausschließlich für Kanada anzeigen.
 
 ![Für Kanada gefilterte Vertriebsdaten](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/22.png)
 
-Bei Auswahl eines der Produkte im Diagramm **Quantity nach ProductName** werden die Karte und das Datumsdiagramm so gefiltert, dass sie die Daten für das jeweilige Produkt darstellen. Bei Auswahl eines der Datumswerte im Diagramm **LineTotal nach OrderDate** werden die Karte und das Produktdiagramm so gefiltert, dass sie die Daten für das jeweilige Datum anzeigen. 
+Wählen Sie ein Produkt im Diagramm **Quantity by ProductName** aus, damit die Karte und der Datumsfilter die Daten dieses Produkts anzeigen. Wählen Sie ein Datum im Diagramm **LineTotal by OrderDate** aus, damit die Karte und der Produktfilter die Daten dieses Datums anzeigen. 
 >[!TIP]
 >Um eine Auswahl aufzuheben, wählen Sie sie erneut aus, oder wählen Sie eine der anderen Visualisierungen. 
 

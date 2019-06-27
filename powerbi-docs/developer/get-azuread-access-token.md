@@ -8,27 +8,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/05/2019
-ms.openlocfilehash: a38547807fbbcf3c76366f32caa46945e57ca8bc
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/04/2019
+ms.openlocfilehash: f0e8a9931248860e11f783d04fead6172559afc1
+ms.sourcegitcommit: 88e2a80b95b3e735689e75da7c35d84e24772e13
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710320"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66814261"
 ---
 # <a name="get-an-azure-ad-access-token-for-your-power-bi-application"></a>Abrufen eines Azure AD-Zugriffstokens für Ihre Power BI-Anwendung
 
-Hier erfahren Sie, wie Sie Benutzer in Ihrer Power BI-Anwendung authentifizieren und ein Zugriffstoken für die Verwendung mit der REST-API abrufen.
+In diesem Artikel erfahren Sie, wie Sie Benutzer in Ihrer Power BI-Anwendung authentifizieren und ein Zugriffstoken für die Verwendung mit der [Power BI-REST-API](https://docs.microsoft.com/rest/api/power-bi/) abrufen.
 
-Bevor Sie die Power BI-REST-API aufrufen können, müssen Sie ein Azure Active Directory-**Authentifizierungszugriffstoken** (Azure AD-Zugriffstoken) abrufen. Über ein **Zugriffstoken** erhält Ihre App Zugriff auf **Power BI**-Dashboards, -Kacheln und -Berichte. Weitere Informationen zum Azure Active Directory-Flow (Azure AD) für **Zugriffstoken** finden Sie unter [Authorization Code Grant-Flow](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code).
+Bevor Ihre App die REST-API abruft, müssen Sie ein Azure Active Directory-**Authentifizierungszugriffstoken** (Azure AD) abrufen. Ihre App verwendet ein Token für den Zugriff auf Power BI-Dashboards, Kacheln und Bericht. Weitere Informationen finden Sie unter [Authorize access to Azure Active Directory web applications using the OAuth 2.0 code grant flow (Autorisieren des Zugriffs auf Azure Active Directory-Webanwendungen mit )](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code).
 
-Je nachdem, wie Sie Inhalte einbetten, wird das Zugriffstoken auf andere Weise abgerufen. In diesem Artikel werden zwei unterschiedliche Ansätze erläutert.
+Je nachdem, wie Sie Inhalte einbetten, wird das Zugriffstoken auf andere Weise abgerufen. In diesem Artikel werden zwei verschiedene Ansätze erläutert.
 
 ## <a name="access-token-for-power-bi-users-user-owns-data"></a>Zugriffstoken für Power BI-Benutzer (Benutzer ist Besitzer der Daten)
 
-Dieses Beispiel ist auf eine Situation ausgelegt, in der sich Ihre Benutzer mit ihren Organisationsanmeldeinformationen manuell bei Azure AD anmelden. Diese Aufgabe wird verwendet, wenn Inhalte für Power BI-Benutzer eingebettet werden, die innerhalb des Power BI-Dienstes auf Inhalte zugreifen, für die sie über die entsprechenden Zugriffsberechtigungen verfügen.
+Dieses Beispiel ist auf eine Situation ausgelegt, in der sich Ihre Benutzer mit ihren Organisationsanmeldeinformationen manuell bei Azure AD anmelden. Diese Aufgabe wird zum Einbetten von Inhalten für Benutzer verwendet, die auf den Power BI-Dienst zugreifen können.
 
-### <a name="get-an-authorization-code-from-azure-ad"></a>Abrufen eines Autorisierungscodes von Azure AD
+### <a name="get-an-azure-ad-authorization-code"></a>Abrufen eines Azure AD-Autorisierungscodes
 
 Der erste Schritt beim Abrufen eines **Zugriffstokens** ist das Abrufen eines Autorisierungscodes von **Azure AD**. Erstellen Sie eine Abfragezeichenfolge mit den folgenden Eigenschaften und leiten diese an **Azure AD** weiter.
 
@@ -54,7 +54,7 @@ var @params = new NameValueCollection
 };
 ```
 
-Nachdem Sie eine Abfragezeichenfolge erstellt haben, leiten Sie diese weiter an **Azure AD**, um einen **Autorisierungscode** abzurufen.  Im Folgenden finden Sie eine vollständige C#-Methode zum Erstellen einer Abfragezeichenfolge für den **Autorisierungscode** und leiten diese an **Azure AD** weiter. Wenn Sie über den Autorisierungscode verfügen, erhalten Sie ein **Zugriffstoken** mithilfe des **Autorisierungscodes**.
+Nachdem Sie eine Abfragezeichenfolge erstellt haben, leiten Sie diese weiter an **Azure AD**, um einen **Autorisierungscode** abzurufen.  Im Folgenden finden Sie eine vollständige C#-Methode zum Erstellen einer Abfragezeichenfolge für den **Autorisierungscode** und leiten diese an **Azure AD** weiter. Verwenden Sie dann den **Autorisierungscode**, um ein **Zugriffstoken** abzurufen.
 
 In „redirect.aspx.cs“ wird [AuthenticationContext.AcquireTokenByAuthorizationCode](https://docs.microsoft.com/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenbyauthorizationcodeasync?view=azure-dotnet#Microsoft_IdentityModel_Clients_ActiveDirectory_AuthenticationContext_AcquireTokenByAuthorizationCodeAsync_System_String_System_Uri_Microsoft_IdentityModel_Clients_ActiveDirectory_ClientCredential_System_String_) aufgerufen, um das Token zu generieren.
 
@@ -98,9 +98,9 @@ protected void signInButton_Click(object sender, EventArgs e)
 
 ### <a name="get-an-access-token-from-authorization-code"></a>Abrufen eines Zugriffstokens aus dem Autorisierungscode
 
-Sie verfügen nun über einen Autorisierungscode von Azure AD. Nach der Weiterleitung durch **Azure AD** mit einem **Autorisierungscode** an Ihre Web-App verwenden Sie den **Autorisierungscode**, um ein Zugriffstoken abzurufen. Unten finden Sie ein C#-Beispiel, das Sie auf Ihrer Umleitungsseite verwenden können, sowie das Page_Load-Ereignis für Ihre Seite „default.aspx“.
+Nach der Weiterleitung durch **Azure AD** mit einem **Autorisierungscode** an Ihre Web-App können Sie es zum Abrufen eines Zugriffstokens verwenden. Unten finden Sie ein C#-Beispiel, das Sie für Ihre Umleitungsseite und das `Page_Load`-Ereignis von „default.aspx“ verwenden können.
 
-Der Namespace **Microsoft.IdentityModel.Clients.ActiveDirectory** kann aus dem NuGet-Paket [Active Directory Authentication Library](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/) abgerufen werden.
+Sie können den Namespace **Microsoft.IdentityModel.Clients.ActiveDirectory** aus dem NuGet-Paket der [Active Directory-Authentifizierungsbibliothek](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/) abrufen.
 
 ```powershell
 Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory
@@ -165,11 +165,11 @@ protected void Page_Load(object sender, EventArgs e)
 
 ## <a name="access-token-for-non-power-bi-users-app-owns-data"></a>Zugriffstoken für Benutzer, die kein Power BI verwenden (App ist Besitzer der Daten)
 
-Dieser Ansatz wird normalerweise für Anwendungen vom Typ ISV verwendet, bei denen die App Besitzer des Zugriffs auf die Daten ist. Bei den Benutzern handelt es sich nicht unbedingt um Power BI-Benutzer, und die Anwendung steuert die Authentifizierung und den Zugriff für die Endbenutzer.
+Dieser Ansatz wird normalerweise für Anwendungen des Typs „unabhängiger Softwarehersteller“ (Independent Software Vendor, ISV) verwendet, bei denen die App Zugriff auf die Daten hat. Bei den Benutzern handelt es sich nicht unbedingt um Power BI-Benutzer, und die Anwendung steuert die Benutzerauthentifizierung und den Zugriff.
 
 ### <a name="access-token-with-a-master-account"></a>Zugriffstoken mit einem Masterkonto
 
-Bei diesem Ansatz verwenden Sie ein einziges *Masterkonto*, das einen Power BI Pro-Benutzer darstellt. Die Anmeldeinformationen für dieses Konto werden zusammen mit der Anwendung gespeichert. Die Anwendung authentifiziert sich mit diesen gespeicherten Anmeldeinformationen bei Azure AD. Der Beispielcode unten stammt aus dem [Beispiel zu Daten im Besitz der App](https://github.com/guyinacube/PowerBI-Developer-Samples)
+Bei diesem Ansatz verwenden Sie ein einziges *Masterkonto*, das einen Power BI Pro-Benutzer darstellt. Die Kontoanmeldeinformationen werden zusammen mit der Anwendung gespeichert. Die Anwendung authentifiziert sich mit diesen gespeicherten Anmeldeinformationen bei Azure AD. Der Beispielcode unten stammt aus dem [Beispiel zu Daten im Besitz der App](https://github.com/guyinacube/PowerBI-Developer-Samples)
 
 ### <a name="access-token-with-service-principal"></a>Zugriffstoken mit Dienstprinzipal
 
@@ -199,10 +199,12 @@ m_tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bea
 
 ## <a name="troubleshoot"></a>Problembehandlung
 
-* Herunterladen [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) bei einem ""AuthenticationContext"enthält keine Definition für"AcquireToken"und nicht zugegriffen werden kann 'AcquireToken" akzeptiert ein erstes Argument vom Typ " AuthenticationContext "gefunden (fehlt eine using-Direktive oder ein Assemblyverweis?)" Fehler.
+Fehlermeldung: "'AuthenticationContext' doesn't contain a definition for 'AcquireToken' and no accessible 'AcquireToken' accepting a first argument of type 'AuthenticationContext' could be found (are you missing a using directive or an assembly reference?)" (‚AuthenticationContext‘ enthält keine Definition für ‚AcquireToken‘, und es konnte kein zugängliches ‚AcquireToken‘ gefunden werden, das das erste Argument des Typs ‚AuthenticationContext‘ akzeptiert (Fehlt möglicherweise eine using-Direktive oder ein Assemblyverweis?)).
+
+   Laden Sie [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) herunter, wenn dieser Fehler angezeigt wird.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nun verfügen Sie über das Zugriffstoken und können die Power BI-REST-API aufrufen, um Inhalte einzubetten. Weitere Informationen zum Einbetten von Inhalten finden Sie unter [Einbetten von Power BI-Inhalten](embed-sample-for-customers.md#embed-content-within-your-application).
+Nun verfügen Sie über das Zugriffstoken und können die Power BI-REST-API aufrufen, um Inhalte einzubetten. Weitere Informationen finden Sie unter [Einbetten von Power BI-Inhalt](embed-sample-for-customers.md#embed-content-within-your-application).
 
 Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)

@@ -1,5 +1,5 @@
 ---
-title: Cognitive Services in Power BI (Vorschau)
+title: Cognitive Services in Power BI
 description: Informationen zum Verwenden von Cognitive Services mit Power BI
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 06/10/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 63de805b357fd5b4d15aeea2231dc952ec9e7077
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 267534198d40b91a5550321162b42ecd45500673
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61182016"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823492"
 ---
-# <a name="cognitive-services-in-power-bi-preview"></a>Cognitive Services in Power BI (Vorschau)
+# <a name="cognitive-services-in-power-bi"></a>Cognitive Services in Power BI 
 
 Sie können mit Cognitive Services in Power BI verschiedene Algorithmen der [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) anwenden, um Ihre Daten in der Self-Service-Datenvorbereitung für Datenflüsse zu erweitern.
 
@@ -25,7 +25,7 @@ Die derzeit unterstützten Dienste sind [Standpunktanalyse](https://docs.microso
 
 ## <a name="enabling-ai-features"></a>**Aktivieren von KI-Funktionen**
 
-Cognitive Services werden für Premium-Kapazitätsknoten EM2, A2 oder P1 und höher unterstützt. Eine separate KI-Workload auf der Kapazität wird zum Ausführen von Cognitive Services verwendet. Während der Vorschauphase ist diese Workload standardmäßig deaktiviert. Bevor Cognitive Services in Power BI verwendet werden können, muss die KI-Workload in den Einstellungen für die Kapazität des Verwaltungsportals aktiviert werden. Sie können die KI-Workload im Workloadsabschnitt aktivieren und die Höchstmenge an Arbeitsspeicher definieren, die diese Workload nutzen soll. Die empfohlene Arbeitsspeichergrenze beträgt 20%. Die Überschreitung dieser Grenze führt zur Verlangsamung der Abfrage.
+Cognitive Services werden für Premium-Kapazitätsknoten EM2, A2 oder P1 und höher unterstützt. Eine separate KI-Workload auf der Kapazität wird zum Ausführen von Cognitive Services verwendet. Während der Vorschauversion (vor Juni 2019) war diese Workload standardmäßig deaktiviert. Bevor Cognitive Services in Power BI verwendet werden können, muss die KI-Workload in den Einstellungen für die Kapazität des Verwaltungsportals aktiviert werden. Sie können die KI-Workload im Workloadsabschnitt aktivieren und die Höchstmenge an Arbeitsspeicher definieren, die diese Workload nutzen soll. Die empfohlene Arbeitsspeichergrenze beträgt 20%. Die Überschreitung dieser Grenze führt zur Verlangsamung der Abfrage.
 
 ![Cognitive Services in Power BI](media/service-cognitive-services/cognitive-services_01.png)
 
@@ -95,14 +95,14 @@ Diese Funktion setzt eine Bild-URL oder ein Base-64-Feld als Eingabe voraus. Zur
 
 Dieser Artikel enthält eine Übersicht über die Verwendung von Cognitive Services mit dem Power BI-Dienst. Die folgenden Artikel könnten für Sie ebenfalls interessant und nützlich sein. 
 
-* [Tutorial: Aufrufen eines Machine Learning Studio-Modells in Power BI (Vorschau)](service-tutorial-invoke-machine-learning-model.md)
-* [Integration von Azure Machine Learning in Power BI (Vorschau)](service-machine-learning-integration.md)
+* [Tutorial: Invoke a Machine Learning Studio model in Power BI (Aufrufen eines Machine Learning Studio-Modells in Power BI)](service-tutorial-invoke-machine-learning-model.md)
+* [Azure Machine Learning integration in Power BI (Azure Machine Learning-Integration in Power BI)](service-machine-learning-integration.md)
 * [Tutorial: Verwenden von Cognitive Services in Power BI](service-tutorial-use-cognitive-services.md)
 
 
 Weitere Informationen zu Datenflüssen finden Sie in den folgenden Artikeln:
 * [Erstellen und Verwenden von Dataflows in Power BI](service-dataflows-create-use.md)
-* [Verwenden berechnete Elemente in Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [Verwenden Datenflüsse mit lokalen Datenquellen](service-dataflows-on-premises-gateways.md)
-* [Entwicklerressourcen für Power BI-Datenflüsse](service-dataflows-developer-resources.md)
+* [Using computed entities on Power BI Premium (Verwenden berechneter Entitäten in Power BI Premium)](service-dataflows-computed-entities-premium.md)
+* [Using dataflows with on-premises data sources (Verwenden von Datenflüssen mit lokalen Datenquellen)](service-dataflows-on-premises-gateways.md)
+* [Developer resources for Power BI dataflows (Entwicklerressourcen für Power BI-Datenflüsse)](service-dataflows-developer-resources.md)
 * [Dataflows und Integration in Azure Data Lake (Vorschauversion)](service-dataflows-azure-data-lake-integration.md)

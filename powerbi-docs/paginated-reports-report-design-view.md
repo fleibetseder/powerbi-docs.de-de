@@ -1,5 +1,5 @@
 ---
-title: Tour durch die Berichtsentwurfsansicht für paginierte Berichte (Vorschau)
+title: Tour durch die Berichtsentwurfsansicht für paginierte Berichte
 description: Die Berichtsentwurfsansicht im Berichts-Generator ist der Entwurfsbereich zur Erstellung paginierter Berichte, die Sie im Power BI-Dienst veröffentlichen können.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
-ms.openlocfilehash: 2e9c402c09bc6f504729b8d6057ef5052f489f41
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 76c12cf411f49fda9f9fe042a6d1aafa457bf914
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61423342"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839541"
 ---
-# <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Tour durch die Berichtsentwurfsansicht für paginierte Berichte (Vorschau)
+# <a name="getting-around-in-report-design-view-for-paginated-reports"></a>Tour durch die Berichtsentwurfsansicht für paginierte Berichte
 
-Entwurfsansicht des Berichts im Power BI-Berichts-Generator ist der Platz für den Entwurf für das Erstellen von paginierter Berichten, die Sie in Power BI-Dienst veröffentlichen können. Die Entwurfsfläche befindet sich im Zentrum des Berichts-Generators, und das Menüband und die Bereiche sind rundherum angeordnet. Auf der Entwurfsfläche können Sie Berichtselemente hinzufügen und organisieren. Dieser Artikel erläutert die Bereiche zum Hinzufügen, Auswählen und Anordnen von Berichtsressourcen sowie zum Ändern der Eigenschaften von Berichtselementen.  
+Die Berichtsentwurfsansicht im Berichts-Generator von Power BI ist der Entwurfsbereich zum Erstellen von paginierten Berichten, die Sie im Power BI-Dienst veröffentlichen können. Die Entwurfsfläche befindet sich im Zentrum des Berichts-Generators, und das Menüband und die Bereiche sind rundherum angeordnet. Auf der Entwurfsfläche können Sie Berichtselemente hinzufügen und organisieren. Dieser Artikel erläutert die Bereiche zum Hinzufügen, Auswählen und Anordnen von Berichtsressourcen sowie zum Ändern der Eigenschaften von Berichtselementen.  
 
 ![Berichtsentwurfsansicht des Berichts-Generators](media/paginated-reports-report-design-view/power-bi-paginated-report-design-view.png)
 
@@ -44,7 +44,7 @@ Entwurfsansicht des Berichts im Power BI-Berichts-Generator ist der Platz für d
 > [!NOTE]  
 >  Über die Schaltfläche **Neu** können Sie dem Berichtsdatenbereich ein neues Element hinzufügen. Sie können dem Bericht mehrere Datasets aus derselben Datenquelle oder aus anderen Datenquellen hinzufügen. Um ein neues Dataset aus derselben Datenquelle hinzuzufügen, klicken Sie mit der rechten Maustaste auf eine Datenquelle, und wählen Sie **Dataset hinzufügen**.  
   
-## <a name="2-report-design-surface"></a>2. Berichtsentwurfsfläche  
+## <a name="2-report-design-surface"></a>2\. Berichtsentwurfsfläche  
  Die Berichtsentwurfsfläche des Berichts-Generators ist der Hauptarbeitsbereich zum Entwerfen Ihrer Berichte. Um Berichtselemente wie Datenbereiche, Unterberichte, Textfelder, Bilder, Rechtecke und Linien in Ihrem Bericht zu platzieren, fügen Sie sie der Entwurfsfläche aus dem Menüband oder dem Berichtsteilkatalog hinzu. Dort können Sie Ihren Berichtselementen Gruppen, Ausdrücke, Parameter, Filter, Aktionen, Sichtbarkeit und Formatierung hinzufügen.  
   
  Zudem können Sie Folgendes ändern:  
@@ -109,7 +109,7 @@ Die Statusleiste für den aktuellen Bericht zeigt den Namen des Servers, mit dem
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Was sind paginierte Berichte in Power BI Premium (Vorschau)?](paginated-reports-report-builder-power-bi.md) 
+[Was sind paginierte Berichte in Power BI Premium? (Vorschau)](paginated-reports-report-builder-power-bi.md) 
 
   
   

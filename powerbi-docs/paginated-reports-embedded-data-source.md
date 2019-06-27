@@ -1,5 +1,5 @@
 ---
-title: Eingebettete Datenquellen für paginierte Berichte im Power BI-Dienst (Vorschau)
+title: Eingebettete Datenquellen für paginierte Berichte im Power BI-Dienst
 description: In diesem Artikel erfahren Sie, wie eine eingebettete Datenquelle in einem paginierten Bericht im Power BI-Dienst erstellt und geändert wird.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 05/16/2019
-ms.openlocfilehash: 4dd9ad935a9f7b286aa64d977a78364f2aed0e0f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/06/2019
+ms.openlocfilehash: 7b687fd67f844e000811ae00a53772ab9403ab90
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65853376"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66838942"
 ---
-# <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service-preview"></a>Erstellen einer eingebetteten Datenquelle für paginierte Berichte im Power BI-Dienst (Vorschau)
+# <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Erstellen einer eingebetteten Datenquelle für paginierte Berichte im Power BI-Dienst
 
 In diesem Artikel erfahren Sie, wie eine eingebettete Datenquelle für einen paginierten Bericht im Power BI-Dienst erstellt und geändert wird. Sie definieren eine eingebettete Datenquelle in einem einzelnen Bericht und verwenden sie nur in diesem Bericht. Derzeit sind für paginierte Berichte, die im Power BI-Dienst veröffentlicht werden, eingebettete Datasets und eingebettete Datenquellen erforderlich. Sie können eine Verbindung mit folgenden Datenquellen herstellen:
 
@@ -26,16 +26,18 @@ In diesem Artikel erfahren Sie, wie eine eingebettete Datenquelle für einen pag
 - Oracle 
 - Teradata 
 
-Verwenden Sie für diese Datenquellen, die [SQL Server Analysis Services-Verbindung](service-premium-connect-tools.md) Option:
+Verwenden Sie für folgende Datenquellen die Option der [SQL Server Analysis Services-Verbindung](service-premium-connect-tools.md):
 
 - Azure Analysis Services
-- Power BI Premium-datasets
+- Power BI Premium-Datasets
 
-Paginierte Berichte stellen eine Verbindung mit lokalen Datenquellen über ein Gateway her. Sie richten Sie das Gateway ein, nachdem Sie den Bericht im Power BI-Dienst veröffentlicht haben. Weitere Informationen zu [Power BI-Gateways](service-gateway-getting-started.md). 
+Paginierte Berichte stellen über ein [Power BI-Gateway](service-gateway-getting-started.md) eine Verbindung mit lokalen Datenquellen her. Sie richten Sie das Gateway ein, nachdem Sie den Bericht im Power BI-Dienst veröffentlicht haben.
+
+Ausführlichere Informationen finden Sie unter [Berichtsdaten im Power BI-Berichts-Generator](report-builder-data.md).
 
 ## <a name="create-an-embedded-data-source"></a>Erstellen einer eingebetteten Datenquelle
   
-1. Öffnen Sie Power BI-Berichts-Generator.
+1. Öffnen Sie den Power BI-Berichts-Generator.
 
 1. Wählen Sie auf der Symbolleiste im Berichtsdatenbereich **Neu** > **Datenquelle**. Das Dialogfeld **Datenquelleneigenschaften** wird geöffnet.
 
@@ -68,4 +70,4 @@ Paginierte Berichte stellen eine Verbindung mit lokalen Datenquellen über ein G
 ## <a name="next-steps"></a>Nächste Schritte
 
 - [Erstellen eines eingebetteten Datasets für einen paginierten Bericht im Power BI-Dienst](paginated-reports-create-embedded-dataset.md)
-- [Was sind paginierte Berichte in Power BI Premium? (Vorschau)?](paginated-reports-report-builder-power-bi.md)
+- [Was sind paginierte Berichte in Power BI Premium? (Vorschau)](paginated-reports-report-builder-power-bi.md)

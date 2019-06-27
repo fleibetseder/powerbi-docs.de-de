@@ -1,43 +1,43 @@
 ---
-title: Automatische Installation Power BI-apps aus, wenn das Einbetten für Ihre Organisation
-description: Informationen Sie zum Installieren von Powerbi-apps automatisch, wenn das Einbetten für Ihre Organisation.
+title: Automatisches Installieren von Power BI-Apps bei der Einbettung für Ihre Organisation
+description: Hier erfahren Sie, wie Sie Power BI-Apps automatisch installieren, wenn Sie für Ihre Organisation Einbettungen vornehmen.
 ms.subservice: powerbi-developer
 author: rkarlin
 ms.author: rkarlin
 manager: kfile
-ms.topic: how-to
+ms.topic: conceptual
 ms.service: powerbi
 ms.custom: ''
 ms.date: 04/16/2019
-ms.openlocfilehash: bb9ba5531c2a23f15ccbf98261e246ab7080aecb
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 50040731ec5602dc38d9d323fe916e4e2e239d27
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61376202"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751045"
 ---
-# <a name="auto-install-power-bi-apps-when-embedding-for-your-organization"></a>Power BI-apps automatisch installieren, wenn das Einbetten für Ihre Organisation
+# <a name="auto-install-power-bi-apps-when-embedding-for-your-organization"></a>Automatisches Installieren von Power BI-Apps bei der Einbettung für Ihre Organisation
 
-Zum Einbetten von Inhalten aus einer app, muss der Benutzer, das Einbetten ist haben [Zugriff auf die app](../service-create-distribute-apps.md). Wenn die app für den Benutzer installiert ist, arbeitet das Einbetten von klicken Sie dann nahtlos. Weitere Informationen finden Sie unter [Einbetten von Berichten oder Dashboards aus der app](embed-from-apps.md). Es ist möglich, definiert in "powerbi.com" alle apps werden [automatisch installiert,](https://powerbi.microsoft.com/blog/automatically-install-apps/). Allerdings wird diese Aktion erfolgt auf Mandantenebene und gilt für alle apps.
+Wenn Inhalte aus einer App eingebettet werden sollen, muss der Benutzer, der die Einbettung vornimmt, [Zugriff auf die App](../service-create-distribute-apps.md) haben. Wenn die App für den Benutzer installiert ist, funktioniert das Einbetten reibungslos. Weitere Informationen finden Sie unter [Einbetten von Berichten oder Dashboards aus Apps](embed-from-apps.md). Unter PowerBI.com lässt sich festlegen, dass alle Apps [automatisch installiert](https://powerbi.microsoft.com/blog/automatically-install-apps/) werden können. Diese Aktion erfolgt jedoch auf Mandantenebene und gilt für alle Apps.
 
-## <a name="auto-install-app-on-embedding"></a>Automatische Installation der app zum Einbetten
+## <a name="auto-install-app-on-embedding"></a>Automatisches Installieren einer App bei der Einbettung
 
-Wenn ein Benutzer Zugriff auf eine app hat, aber die app nicht installiert ist, dann einbetten ein Fehler auftritt. Damit Sie diese Fehler vermeiden, können Sie beim Einbetten von einer app können Sie die automatische Installation der app beim Einbetten von erlauben. Diese Aktion bedeutet, wenn die app, die der Benutzer versucht, betten Sie nicht installiert ist, es automatisch für Sie installiert ist. Der gewünschte Inhalt ruft also sofort, führt der Benutzer einer reibungslos funktionierende Umgebung eingebettet.
+Wenn ein Benutzer Zugriff auf eine App hat, die App jedoch nicht installiert ist, schlägt die Einbettung fehl. Dies können Sie jedoch bei der Einbettung von Inhalten aus einer App umgehen. Bei der Einbettung können Sie das automatische Installieren der App erlauben. Diese Aktion bedeutet, dass die App automatisch installiert wird, wenn der Benutzer versucht, eine App einzubetten, die nicht installiert ist. Die gewünschten Inhalte werden also sofort eingebettet, was zu einem reibungslosen Prozess für den Benutzer führt.
 
-## <a name="embed-for-power-bi-users-user-owns-data"></a>Betten Sie für Power BI-Benutzer (Benutzer ist Besitzer der Daten ein)
+## <a name="embed-for-power-bi-users-user-owns-data"></a>Einbettungen für Power BI-Benutzer (Benutzer ist Besitzer der Daten)
 
-Um die automatische Installation von apps für Ihre Benutzer zu ermöglichen, müssen Sie Ihre Anwendung die Berechtigung "Inhalts erstellen" erteilen beim [Registrierung Ihrer Anwendung](register-app.md#register-with-the-power-bi-application-registration-tool), oder fügen Sie es hinzu, wenn Sie Ihre app bereits registriert.
+Damit Apps für Ihre Benutzer automatisch installiert werden können, müssen Sie Ihrer Anwendung die Berechtigung zum Erstellen von Inhalten erteilen, wenn Sie [Ihre Anwendung registrieren](register-app.md#register-with-the-power-bi-application-registration-tool) oder hinzufügen, wenn Sie Ihre App bereits registriert haben.
 
-![App registrieren erstellt Inhalte](media/embed-auto-install-app/register-app-create-content.png)
+![Registrieren einer App mit der Berechtigung zum Erstellen von Inhalten](media/embed-auto-install-app/register-app-create-content.png)
 
-Als Nächstes müssen Sie die app-ID in die einbettungs-URL angeben. Zum Bereitstellen der app-ID den Ersteller der app zuerst muss die app installieren und verwenden Sie eine der unterstützten [Power BI-Rest-API](https://docs.microsoft.com/rest/api/power-bi/) Aufrufe - [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) oder [Get Dashboards](https://docs.microsoft.com/rest/api/power-bi/dashboards/getdashboards). Klicken Sie dann muss den Ersteller der app die einbettungs-URL aus der REST-API-Antwort. Die app-ID wird in der URL angezeigt, wenn der Inhalt aus einer app ist.  Nachdem Sie die einbettungs-URL haben, können Sie es verwenden, regelmäßig einbetten.
+Als nächsten Schritt müssen Sie die App-ID in der Einbettungs-URL bereitstellen. Damit die App-ID bereitgestellt werden kann, muss der App-Ersteller zuerst die App installieren und dann eine der unterstützten [Power BI REST-API-Aufrufe](https://docs.microsoft.com/rest/api/power-bi/) verwenden: [Berichte abrufen](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) oder [Dashboards abrufen](https://docs.microsoft.com/rest/api/power-bi/dashboards/getdashboards). Der App-Ersteller muss dann die Einbettungs-URL aus der REST-API-Antwort abrufen. Die App-ID wird in der URL angezeigt, wenn der Inhalt aus einer App stammt.  Nachdem Sie die Einbettungs-URL abgerufen haben, können Sie sie regelmäßig verwenden.
 
-## <a name="secure-embed"></a>Sichere einbetten
+## <a name="secure-embed"></a>Secure embed
 
-Um die automatische Installation von apps zu verwenden, muss den Ersteller der app zunächst die app installieren und dann wechseln an die app auf "powerbi.com", navigieren Sie zum Bericht, und rufen Sie den Link auf übliche Weise. Alle anderen Benutzer mit Zugriff auf die app, die den Link verwenden können, können den Bericht einbetten.
+Wenn die automatische Installation von Apps verwendet werden soll, muss der App-Ersteller zunächst die App installieren, dann die App unter PowerBI.com aufrufen, zum Bericht navigieren und den Link auf gewohnte Weise abrufen. Alle anderen Benutzer mit Zugriff auf die App, die den Link verwenden können, können den Bericht einbetten.
 
 ## <a name="considerations-and-limitations"></a>Überlegungen und Einschränkungen
 
-* Sie können nur Berichte und Dashboards für dieses Szenario einbetten.
+* In diesem Szenario lassen sich nur Berichte und Dashboards einbetten.
 
-* Dieses Feature wird derzeit nicht unterstützt, für die app ist Besitzer der Daten und SharePoint einbetten Szenarien.
+* Dieses Feature wird momentan nicht für Szenarios unterstützt, in denen die App Besitzer der Daten ist, und für SharePoint-Einbettungsszenarios.

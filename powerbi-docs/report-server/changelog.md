@@ -1,7 +1,7 @@
 ---
 title: Änderungsprotokoll für Power BI-Berichtsserver
 description: Dieses Änderungsprotokoll bezieht sich auf Power BI-Berichtsserver und enthält neue Elemente sowie Fehlerkorrekturen für jeden veröffentlichten Build.
-ms.author: jtarquino
+ms.author: jaimeta
 author: jtarquino
 manager: kfile
 ms.reviewer: maggies
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: bb25bfb9b3278ef5eccfd54436a6de430d17677d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d7d3bf85661284835271b68c476ee53ec2c474bc
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65990620"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751114"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Änderungsprotokoll für Power BI-Berichtsserver
 
@@ -25,31 +25,31 @@ Ausführliche Informationen zu neuen Funktionen finden Sie unter [Neuerungen in 
 ## <a name="may-2019"></a>Mai 2019
 
 - **Power BI-Berichtsserver**          
-    - *Version 1.5.7074.36177 (Build 15.0.1102.371), Released: 21 Mai 2019*
+    - *Version 1.5.7074.36177 (Build 15.0.1102.371), Veröffentlichung: 21. Mai 2019*
         - Fehlerkorrekturen
             - Paginated Reports
-                - Die Lösung für die Pdf-schriftarteinbettung immer zu aktivieren.
-                - Beheben Sie über "Https" Secure gesendeten Cookies festlegen
-                - Beheben Sie Probleme mit Pop USV aufgrund von Fehlern
-                - Fehlerbehebung für Probleme bei der Anzeige mit der mobilen App auf Android-Smartphones
-                - Korrektur für Mobile Bericht Zeitnavigation, zeigen die richtige Wochennummern unabhängig vom Beginn des Geschäftsjahrs
-                - Hinzugefügte "RestrictedResourceMimeTypeForUpload" konfigurierbare Eigenschaft für Administratoren an gesperrt MIME-Typen
+                - Korrigiert: Dauerhaftes Aktivieren der Schriftarteinbettung in PDFs
+                - Korrigiert: Festlegen von über https gesendeten Cookies als „Sicher“
+                - Korrigiert: Probleme mit Popups aufgrund von Skriptfehlern
+                - Korrigiert: Anzeigeprobleme bei mobilen Apps auf Android-Geräten
+                - Korrigiert: Zeitnavigation des Mobilgeräteberichts zeigt die richtigen Wochennummern unabhängig vom Geschäftsjahr an
+                - Hinzufügen der konfigurierbaren Eigenschaft „RestrictedResourceMimeTypeForUpload“, mit der Administratoren gesperrte MIME-Typen angeben können
          - Features
-            - Hinzufügen von Unterstützung für vertrauenswürdige visuelle Elemente zu PBIRS
+            - Hinzufügen des Supports für vertrauenswürdige Visuals zu PBIRS
 
 - **Power BI Desktop (optimiert für Power BI-Berichtsserver)**
-    - *Version: 2.69.5467.1801 (Mai 2019), Veröffentlichung: 21 Mai 2019*
+    - *Version: 2.69.5467.1801 (Mai 2019), Veröffentlichung: 21. Mai 2019*
         - Fehlerkorrekturen
-            - Korrektur für-Nutzern Anmeldeinformationen während des Uploads von pbix-Datei zu PBIRS zu vermeiden.
-            - Öffnen von Dokumenten mit # im Dateinamen Korrekturen
-            - Einfacher Link für die Rückwärtsnavigation auf PBIRS Auswahlfenster hinzugefügt
-            - Um den Modus für hohe Kontraste in PBIRS zum Anzeigen der Schaltfläche "zurück", zeigen visual Warnmeldungen beheben.
-            - UI-Korrekturen für von Bereichs "Auswahl", canvas-Skalierung.
+            - Korrektur, dass Anmeldeinformationen während des Uploads von PBIX zu PBIRS nicht noch mal eingegeben werden müssen.
+            - Korrigiert: Öffnen von Dokumenten mit „#“ im Dateinamen
+            - Hinzufügen eines einfachen Links für die Rückwärtsnavigation im PBIRS-Auswahlfenster
+            - Korrigiert: Anzeigen der Schaltfläche „Zurück“ im Modus „Hohe Kontraste“ in PBIRS, Anzeigen von Warnmeldungen für Visuals
+            - Korrigiert: Benutzeroberfläche des Auswahlbereichs (Canvasskalierung)
 
 ## <a name="january-2019"></a>Januar 2019
 
 - **Power BI-Berichtsserver**          
-    - *Version 1.4.7024.16477 (Build 15.0.1102.299), Released: 28. März 2019*
+    - *Version 1.4.7024.16477 (Build 15.0.1102.299), Veröffentlichung: 28. März 2019*
         - Fehlerkorrekturen
             - Power BI-Berichte
                 - Korrigiert: Ein Problem mit Standardanmeldeinformationen bei direkter Abfrage für SAP HANA und SAP BW

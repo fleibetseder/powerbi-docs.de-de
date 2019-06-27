@@ -8,13 +8,13 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/27/2019
-ms.openlocfilehash: 4fc35b88496674206437507ae866e9eb8cb5dd39
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/10/2019
+ms.openlocfilehash: 6aebc45f2341f098f0f54dad66652967077c2a08
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61353812"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823417"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sicherheit auf Zeilenebene mit Power BI Embedded
 
@@ -215,7 +215,7 @@ Im Folgenden finden Sie die Schritte, mit denen Sie mit der Einrichtung der Cust
 
 7. Verwenden Sie die Power BI-APIs, um das CustomData-Feature in Ihrer Anwendung zu verwenden.  Wenn ein Token mit dem CustomData-Feature generiert wird, müssen Sie einen Benutzernamen besitzen. Der Benutzername muss dem UPN des Hauptbenutzers entsprechen. Der Hauptbenutzer muss Mitglied der von Ihnen erstellten Rollen sein. Wenn keine Rollen angegeben werden, werden alle Rollen, in denen der Hauptbenutzer Mitglied ist, für die RLS-Auswertung verwendet.
 
-    Bei der Arbeit mit einem [Dienstprinzipal](embed-service-principal.md), müssen Sie auch die oben aufgeführten Schritte anstelle mit einem master-Konto. Wenn AAD-Token generieren, verwenden Sie die [principal-Objekt-ID des](embed-service-principal.md#how-to-get-the-service-principal-object-id) als Benutzername.
+    Führen Sie bei der Arbeit mit einem [Dienstprinzipal](embed-service-principal.md) die oben aufgeführten Schritte aus, und verwenden Sie kein Masterkonto. Verwenden Sie beim Generieren eines Einbettungstokens die [ID des Dienstprinzipalobjekts](embed-service-principal.md#how-to-get-the-service-principal-object-id) als Benutzernamen.
 
     > [!Note]
     > Wenn Sie zum Bereitstellen Ihrer Anwendung in der Produktion bereit sind, darf das Feld bzw. die Option für das Hauptbenutzerkonto für die Endbenutzer nicht sichtbar sein.
@@ -310,7 +310,7 @@ Der im Identitätsblob angegebene Wert muss ein gültiges Zugriffstoken für Azu
 
    ![App-Registrierung](media/embedded-row-level-security/token-based-app-reg-azure-portal.png)
 
-## <a name="on-premises-data-gateway-with-service-principal-preview"></a>Lokales Datengateway mit Dienstprinzipal (Vorschau)
+## <a name="on-premises-data-gateway-with-service-principal"></a>Lokales Datengateway mit Dienstprinzipal
 
 Benutzer, die RLS mithilfe einer lokalen Datenquelle mit Liveverbindung von SQL Server Analysis Services (SSAS) konfigurieren, können Sie die neue [Dienstprinzipalfunktion](embed-service-principal.md) zunutze machen, um Benutzer und deren Zugriff auf Daten in SSAS bei der Integration in **Power BI Embedded** zu verwalten.
 

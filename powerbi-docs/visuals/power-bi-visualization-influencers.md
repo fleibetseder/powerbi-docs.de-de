@@ -1,340 +1,340 @@
 ---
 title: Tutorial zum Visual „Wichtige Einflussfaktoren“
-description: 'Tutorial: Erstellen Sie eine wichtige Einflussfaktoren Visualisierung in Power BI'
+description: 'Tutorial: Erstellen eines Visuals für wichtige Einflussfaktoren in Power BI'
 author: mihart
 manager: kvivek
 ms.reviewer: juluczni
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8d2d6755d01a8ea9d5dad9813fcd7f4b4c1f8232
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: cf07318b5866d3f893d745fc8a8bba85cc9680d9
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66051623"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751253"
 ---
 # <a name="key-influencers-visualization"></a>Visual „Wichtige Einflussfaktoren“
-Die wichtigen Einflussfaktoren visual lernen Sie den Faktoren, Laufwerk eine Metrik, die Sie interessiert sind. Es analysiert die Daten, erstellt eine Rangfolge für wichtige Faktoren und stellt diese dar. Nehmen wir beispielsweise an, dass Sie möchten, um zu ermitteln, welche Umsatz pro Mitarbeiter, die ist auch bekannt als codeänderung beeinflusst. Ein Faktor möglicherweise Beschäftigung Vertragslänge und ein weiterer Faktor ist möglicherweise Alter Mitarbeiters. 
+Mithilfe des Visuals „Wichtige Einflussfaktoren“ können Sie die wichtigen Faktoren einer für Sie relevanten Metrik besser nachvollziehen. Es analysiert die Daten, erstellt eine Rangfolge für wichtige Faktoren und stellt diese dar. Angenommen, Sie möchten beispielsweise ermitteln, wodurch die Personalfluktuation oder Abwanderung beeinflusst wird. Dabei können z. B. die Länge des Anstellungsvertrags oder das Alter des Mitarbeiters wichtige Faktoren darstellen. 
  
-## <a name="when-to-use-key-influencers"></a>Verwenden der wichtige Einflussfaktoren 
-Die wichtigen Einflussfaktoren-Visualisierung ist eine gute Wahl, wenn Sie möchten: 
-- Sehen Sie, welche Faktoren beeinflussen die die Metrik, die analysiert wird.
-- Vergleichen Sie die relative Wichtigkeit dieser Faktoren. z.B. bei der Frage, ob Kurzzeitverträge sich stärker als Langzeitverträge auf die Fluktuation auswirken. 
+## <a name="when-to-use-key-influencers"></a>Wann empfiehlt sich die Verwendung des Visuals „Wichtige Einflussfaktoren“? 
+Sie können das Visual in folgenden Fällen erfolgreich verwenden: 
+- Zur Übersicht über die Faktoren, die sich auf die analysierte Metrik auswirken.
+- Zum Vergleich der relativen Wichtigkeit dieser Faktoren, z.B. bei der Frage, ob Kurzzeitverträge sich stärker als Langzeitverträge auf die Fluktuation auswirken. 
 
 ## <a name="key-influencer-requirements"></a>Voraussetzungen für das Visual „Wichtige Einflussfaktoren“ 
-Die Metrik, die Sie analysieren, muss die Kategorie- oder numerischen Feld (Aggregate und Measures werden noch nicht unterstützt).
+Bei der Metrik, die Sie analysieren, muss es sich um ein Kategoriefeld oder um ein numerisches Feld handeln (Aggregate und Measures werden nicht unterstützt).
 
-## <a name="features-of-the-key-influencers-visual"></a>Funktionen des die wichtigen Einflussfaktoren visual
+## <a name="features-of-the-key-influencers-visual"></a>Features des Visuals „Wichtige Einflussfaktoren“
 
-![Funktionen, die nummerierte](media/power-bi-visualization-influencers/power-bi-ki-numbers-new.png)
+![Mit Nummern gekennzeichnete Features](media/power-bi-visualization-influencers/power-bi-ki-numbers-new.png)
 
-1. **Tabs**: Wählen Sie eine Registerkarte, um zwischen Ansichten zu wechseln. **Wichtige Einflussfaktoren** zeigt Ihnen die wichtigsten Mitwirkenden auf den Wert der ausgewählten Metrik. **Top-Segmente** erfahren Sie, die Top-Segmente, die auf den Wert der ausgewählten Metrik beitragen. Ein *Segment* besteht aus einer Kombination mehrerer Werte. Beispielsweise kann ein Segment Consumer sein, die Kunden mindestens 20 Jahren wurden und befinden sich in der Region West. 
+1. **Registerkarten**: Klicken Sie auf eine Registerkarte, um die Ansicht zu wechseln. Auf der Registerkarte **Wichtige Einflussfaktoren** wird dargestellt, wodurch der ausgewählte Metrikwert beeinflusst wird. Auf der Registerkarte **Wichtigste Segmente** werden die Segmente dargestellt, die den größten Einfluss auf den ausgewählten Metrikwert haben. Ein *Segment* besteht aus einer Kombination mehrerer Werte. Beispielsweise könnte ein Segment sich aus den Verbrauchern zusammensetzen, die seit mindestens 20 Jahren zur Kundschaft zählen und im Westen des Landes leben. 
 
-2. **Dropdown-Listenfeld**: Der Wert der Metrik geprüft werden soll. In diesem Beispiel sehen Sie sich die Metrik **Bewertung**. Der ausgewählte Wert ist **niedrig**.
+2. **Dropdown-Listenfeld**: Der Wert der Metrik, die untersucht werden soll. In diesem Beispiel geht es um die Metrik **Bewertung**. Der ausgewählte Wert lautet **Niedrig**.
 
-3. **Anpassung**: Damit können Sie das visuelle Element im linken Bereich zu interpretieren.
+3. **Neudarstellung**: Diese Ansicht unterstützt Sie beim Interpretieren des Visuals im linken Bereich.
 
-4. **Im linken Bereich**: Der linke Bereich enthält ein visuelles. In diesem Fall wird im linken Bereich eine Liste mit den oberen wichtigen Einflussfaktoren.
+4. **Linker Bereich**: Im linken Bereich wird ein Visual dargestellt. In diesem Beispiel handelt es sich um eine Liste der wichtigsten Einflussfaktoren.
 
-5. **Anpassung**: Damit können Sie das visuelle Element im rechten Bereich zu interpretieren.
+5. **Neudarstellung**: Diese Ansicht unterstützt Sie beim Interpretieren des Visuals im rechten Bereich.
 
-6. **Rechten Bereich**: Der rechte Bereich enthält ein visuelles. In diesem Fall das Säulendiagramm zeigt alle Werte für die wichtigsten Schlüsselperson **Design** , die im linken Bereich ausgewählt wurde. Dem spezifischen Wert **benutzerfreundlichkeit** im linken Bereich wird in grün angezeigt. Alle anderen Werte für **Design** in Schwarz angezeigt werden.
+6. **Rechter Bereich**: Im rechten Bereich wird ein Visual dargestellt. In diesem Fall werden im Säulendiagramm alle Werte für den links ausgewählten Faktor **Theme** (Thema) des Visuals „Wichtige Einflussfaktoren“ dargestellt. Der spezifische Wert **Usability** (Benutzerfreundlichkeit) im linken Bereich wird in Grün angezeigt. Alle anderen Werte für **Theme** (Thema) werden in Schwarz angezeigt.
 
-7. **Durchschnittslinie**: Der Durchschnitt berechnet wird, für alle anderen möglichen Werte für **Design** außer **benutzerfreundlichkeit**. Die Berechnung setzt sich also aus allen schwarz dargestellten Werten zusammen. Sie erfahren, wie viel Prozent der anderen **Designs** konnten Sie eine niedrige Bewertung. Das heißt, wenn eine Bewertung von einem Kunden übergeben wird, beschreibt dieses Kunden auch den Grund oder Design für die Bewertung. Bei einigen Designs sind benutzerfreundlichkeit, Geschwindigkeit und Sicherheit. 
+7. **Durchschnittslinie**: Der Durchschnitt, der aus allen Werten von **Theme** (Thema) mit Ausnahme von **Usability** (Benutzerfreundlichkeit) berechnet wurde. Die Berechnung setzt sich also aus allen schwarz dargestellten Werten zusammen. Dadurch wird ersichtlich, welcher Prozentsatz der sonstigen **Themen** eine niedrige Bewertung verursacht hat. Das heißt, dass ein Kunde, der eine Bewertung abgibt, auch den Grund bzw. das „Thema“ der Bewertung angegeben hat. Zu den Themen zählen unter anderem Benutzerfreundlichkeit, Geschwindigkeit und Sicherheit. 
 
-   **Design ist die benutzerfreundlichkeit** für eine niedrige Bewertung, gemäß der Visualisierung im linken Bereich die zweithöchste Key Schlüsselperson ist. Wenn Sie alle anderen Designs und ihren Beitrag zu einer Bewertung von durchschnittliche **niedrig**, erhalten Sie das Ergebnis in Rot dargestellt. Alle anderen Designs angegeben, sind nur 11.35 % höher als **benutzerfreundlichkeit**.
+   **Theme is Usability** (Thema ist gleich Benutzerfreundlichkeit) ist dem Visual auf der linken Seite nach der zweitgrößte Einflussfaktor für eine niedrige Bewertung. Die Berechnung des Durchschnitts aus dem Einfluss aller anderen Themen auf die **niedrige** Bewertung führt zu dem rot dargestellten Ergebnis. Von allen anderen genannten Themen sind nur 11,35 % höher als **Usability** (Benutzerfreundlichkeit).
 
-8. **Aktivieren Sie das Kontrollkästchen**: **Nur die Werte, die Einflussfaktoren anzeigen**.
+8. **Kontrollkästchen**: **Nur Werte anzeigen, die Einflussfaktoren sind**.
 
 ## <a name="create-a-key-influencers-visual"></a>Erstellen eines Visuals für wichtige Einflussfaktoren 
  
-Sehen Sie sich in diesem Video erfahren, wie Sie einen wichtigen Einflussfaktoren visual erstellen. Klicken Sie dann folgendermaßen Sie vor, um eine zu erstellen. 
+Sehen Sie sich dieses Video an, um zu erfahren, wie ein Visual für wichtige Einflussfaktoren erstellt wird. Führen Sie anschließend die folgenden Schritte aus, um ein Visual zu erstellen. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Ihr Produkt-Manager möchte zu ermitteln, die Faktoren, die Lead-Kunden, um negative Bewertungen zu Ihrem Clouddienst zu verlassen. Öffnen Sie die Datei [customerfeedback.pbix](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) in Power BI Desktop, um diesem Tutorial zu folgen. Sie können auch Herunterladen der [Kunden-Feedback-Excel-Datei für Power BI-Dienst oder Power BI Desktop](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). 
+Ihr Produkt-Manager möchte, dass Sie ermitteln, welche Faktoren dazu führen, dass Kunden negative Bewertungen zu Ihrem Clouddienst abgeben. Öffnen Sie die Datei [customerfeedback.pbix](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) in Power BI Desktop, um diesem Tutorial zu folgen. Sie können außerdem die Excel-Datei [customerfeedback.xlsx](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx) für den Power BI-Dienst oder Power BI Desktop herunterladen. 
 
 > [!NOTE]
-> Das Feedback unserer Kunden-DataSet ist basierend auf [Moro Et Al., 2014] s Moro, P. Cortez und P. Rita. "Einen datengesteuerten Ansatz, den Erfolg der Bank Telemarketing vorherzusagen." *Decision Support-Systeme*, Elsevier, 62:22-31, Juni 2014. 
+> Das Customer Feedback-Dataset basiert auf dem Werk [Moro et al., 2014] S. Moro, P. Cortez und P. Rita. „A Data-Driven Approach to Predict the Success of Bank Telemarketing“. *Decision Support Systems*, Elsevier, 62:22-31, Juni 2014. 
 
-1. Öffnen Sie den Bericht aus, und wählen die **wichtige Einflussfaktoren** Symbol. 
+1. Öffnen Sie den Bericht, und klicken Sie auf das Symbol **Wichtige Einflussfaktoren**. 
 
     ![Auswahl der Vorlage „Wichtige Einflussfaktoren“ im Bereich „Visualisierungen“](media/power-bi-visualization-influencers/power-bi-template-new.png)
 
-2. Verschieben Sie die Metrik, die Sie in untersuchen möchten, die **analysieren** Feld. Die **analysieren** Feld unterstützt nur Kategoriewerte oder noncontinuous, Variablen. Anzeigen des worauf gründet sich die Kunden wählen Sie die Bewertung des Diensts so niedrig, **Customer-Tabelle** > **Bewertung**. 
-3. Move-Felder, die Sie denken möglicherweise beeinflussen **Bewertung** in die **Erläutern von** Feld. Sie können so viele Felder, die Sie beliebig verschieben. In diesem Fall beginnen Sie mit:
+2. Verschieben Sie die Metrik, die Sie analysieren möchten, in das Feld **Analyse**. Im Feld **Analyse** werden nur kategorische, also nicht kontinuierliche Variablen unterstützt. Um festzustellen, warum Kunden den Service niedrig bewerten, wählen Sie **Customer Table (Kundentabelle)**  > **Bewertung** aus. 
+3. Verschieben Sie die Felder, von denen Sie vermuten, dass sie sich auf die **Bewertung** auswirken, in das Feld **Erläuterung nach**. Sie können beliebig viele Felder verschieben. Beginnen Sie in diesem Beispiel mit den folgenden Feldern:
     - Country-Region 
     - Role in Org (Rolle in der Organisation) 
     - Subscription Type (Abonnementtyp) 
     - Company Size (Unternehmensgröße) 
     - Theme 
-1. Um die negative Bewertungen zu konzentrieren, wählen Sie **niedrig** in die **was Bewertung sein beeinflusst** Dropdown-Listenfeld.  
+1. Um den Fokus auf die negativen Bewertungen zu richten, wählen Sie im Dropdownfeld **What influences Rating to be** (Welche Faktoren zu einer Bewertung im Bereich) den Eintrag **Niedrig** aus.  
 
-    ![Wählen Sie aus der Dropdown-Listenfeld niedrig](media/power-bi-visualization-influencers/power-bi-key-influencers.png)
+    ![Auswahl von „Niedrig“ im Dropdownmenü](media/power-bi-visualization-influencers/power-bi-key-influencers.png)
 
-Die Analyse wird ausgeführt, auf der Tabelle das Feld, das analysiert wird. In diesem Fall hat der **Bewertung** Metrik. Mit dieser Metrik wird auf einer Kundenebene definiert. Jeder Kunde erhält entweder ein hohes Ergebnis oder eine niedrige Bewertung. Alle erläuternden Faktoren müssen definiert werden, auf der Customer-Ebene für das visuelle Element zu verwenden, die von ihnen. 
+Die Analyse wird auf Tabellenebene des entsprechenden Felds ausgeführt. In diesem Beispiel wird die Metrik **Bewertung** verwendet. Diese Metrik wird auf Kundenebene definiert. Jeder Kunde hat entweder eine hohe oder eine niedrige Bewertung abgegeben. Alle erläuternden Faktoren für das Visual müssen auf Kundenebene definiert werden, damit sie verwendet werden können. 
 
-Im vorherigen Beispiel haben alle erläuternden Faktoren ein 1: 1- oder eine viele-zu-eins-Beziehung mit der Metrik an. In diesem Fall wurde jedes Ergebnis genau ein Design zugeordnet. Dieses Design ist das wichtigste Thema der Prüfung durch die Kunden. Ebenso stammen Kunden aus einem Land verfügen über eine mitgliedschaftstyp und eine Rolle in ihrer Organisation. Der erläuternden Faktoren sind bereits Eigenschaften eines Kunden und keine Transformationen erforderlich sind. Das visuelle Element kann sofort diese nutzen. 
+Im obigen Beispiel weisen alle erläuternden Faktoren eine 1:1- oder eine n:1-Beziehung zur Metrik auf. In diesem Beispiel wurde jeder Bewertung ein Thema zugeordnet. Dieses Thema war das Hauptthema der Kundenbewertung. Entsprechend stammen die Kunden aus einem Land, weisen einen Mitgliedschaftstyp auf und haben eine Rolle in der Organisation inne. Bei den erläuternden Faktoren handelt es sich um bereits vorhandenen Attribute eines Kunden, sodass keine Transformation nötig ist. Das Visual kann die Attribute direkt verwenden. 
 
-Weiter unten in diesem Tutorial betrachten Sie komplexere Beispiele, die 1: n Beziehungen verfügen. In diesen Fällen haben die Spalten zuerst auf die Customer-Ebene aggregiert werden, vor dem Ausführen der Analysis aus. 
+Im Verlauf des Tutorials werden komplexere Beispiele mit 1:n-Beziehungen behandelt. In solchen Fällen müssen Spalten zunächst auf Kundenebene aggregiert werden, bevor die Analyse ausgeführt werden kann. 
 
-Measures und Aggregate verwendet, wie erläuternde Faktoren auch auf der Tabellenebene ausgewertet werden die **analysieren** Metrik. Einige Beispiele sind weiter unten in diesem Artikel gezeigt. 
+Measures und Aggregate, die als erläuternde Faktoren verwendet werden, werden in der Metrik **Analyse** ebenfalls auf Tabellenebene ausgewertet. Im weiteren Verlauf des Artikels finden Sie hierfür Beispiele. 
 
 ## <a name="interpret-categorical-key-influencers"></a>Interpretieren von kategorischen wichtigen Einflussfaktoren 
-Werfen wir einen Blick auf die wichtigen Einflussfaktoren für niedrige Bewertungen. 
+Nun sehen wir uns die wichtigsten Einflussfaktoren für niedrige Bewertungen genauer an. 
 
-### <a name="top-single-factor-that-influences-the-likelihood-of-a-low-rating"></a>Top Faktor, der die Wahrscheinlichkeit, dass eine niedrige Bewertung beeinflusst.
+### <a name="top-single-factor-that-influences-the-likelihood-of-a-low-rating"></a>Faktor, der am wahrscheinlichsten zu einer niedrigen Bewertung führt
 
-Die Organisation in diesem Beispiel verfügt über drei Rollen: Consumer, Administrator und Verleger. Als Consumer ist der oberste Faktor, der das eine niedrige Bewertung unterstützt. 
+In der Organisation in diesem Beispiel gibt es drei Rollen: Consumer (Verbraucher), Administrator (Administrator) und Publisher (Herausgeber). Die Rolle des Verbrauchers führt dabei am wahrscheinlichsten zu einer niedrigen Bewertung. 
 
-![Rolle auswählen, in der Organisation ist consumer](media/power-bi-visualization-influencers/power-bi-role-consumer.png)
+![Auswahl der Option „Role in Org is consumer“ (Rolle in der Organisation ist Verbraucher)](media/power-bi-visualization-influencers/power-bi-role-consumer.png)
 
 
-Genauer gesagt, sind Ihre Kunden 2,57 Zeiten eher Geben Sie dem Dienst ein negatives Ergebnis gewertet. Die wichtigen Einflussfaktoren Diagramm Listen **Rolle in der Organisation ist Consumer** zuerst in der Liste auf der linken Seite. Durch Auswahl **Rolle in der Organisation ist Consumer**, Power BI zeigt weitere Details im rechten Bereich. Die komparative Auswirkungen der einzelnen Rollen auf die Wahrscheinlichkeit, dass eine niedrige Bewertung wird angezeigt.
+Genauer gesagt ist es 2,57-mal wahrscheinlicher, dass ein Verbraucher eine negative Bewertung zu Ihrem Dienst abgibt. Im Diagramm „Wichtige Einflussfaktoren“ wird **Role in Org is consumer** (Rolle in der Organisation ist Verbraucher) auf der linken Seite ganz oben aufgeführt. Wenn Sie **Role in Org is consumer** (Rolle in der Organisation ist Verbraucher) auswählen, werden im rechten Bereich von Power BI weitere Details angezeigt. Die vergleichende Wirkung der einzelnen Rollen auf die Wahrscheinlichkeit einer niedrigen Bewertung wird angezeigt.
   
-- 14.93 % der Verbraucher bieten eine niedrige Bewertung. 
-- Die durchschnittliche, bieten alle anderen Rollen eine niedrige Bewertung 5.78 % der Zeit.
-- Kunden werden 2,57 Zeiten eher eine niedrige Bewertung, die im Vergleich zu allen anderen Rollen gewähren. Dies kann durch Dividieren der grüne Leiste durch die rote gestrichelte Linie. 
+- 14,93 % der Verbraucher geben eine niedrige Bewertung ab. 
+- Im Durchschnitt geben nur 5,78 % aller anderen Rollen eine niedrige Bewertung ab.
+- Die Wahrscheinlichkeit, dass Verbraucher eine im Vergleich zu anderen Rollen niedrigere Bewertung abgeben, ist 2,57-mal höher. Diesen Wert können Sie ermitteln, indem Sie die grüne Leiste durch die rot gestrichelte Linie dividieren. 
 
-### <a name="second-single-factor-that-influences-the-likelihood-of-a-low-rating"></a>Zweiten Faktor, der die Wahrscheinlichkeit, dass eine niedrige Bewertung beeinflusst.
+### <a name="second-single-factor-that-influences-the-likelihood-of-a-low-rating"></a>Faktor, der am zweitwahrscheinlichsten zu einer niedrigen Bewertung führt
 
-Die wichtigen Einflussfaktoren visual vergleicht und Faktoren, die über viele verschiedene Variablen wird die Rangfolge bestimmt. Die zweite Schlüsselperson hat nichts mit **Rolle in der Organisation**. Wählen Sie in der Liste, die ist die zweite Schlüsselperson **Design ist die benutzerfreundlichkeit**. 
+Mit dem Visual „Wichtige Einflussfaktoren“ können die Faktoren aus vielen verschiedenen Variablen verglichen und nach Rangfolge sortiert werden. Der zweitgrößte Einflussfaktor unterscheidet sich sehr von **Role in Org** (Rolle in der Organisation). Wählen Sie in der Liste den zweitgrößten Einflussfaktor aus: **Theme is usability** (Thema ist gleich Benutzerfreundlichkeit). 
 
-![Wählen Sie Designs ist die benutzerfreundlichkeit](media/power-bi-visualization-influencers/power-bi-theme.png)
+![Auswahl von „Theme is usability“ (Thema ist gleich Benutzerfreundlichkeit)](media/power-bi-visualization-influencers/power-bi-theme.png)
 
-Der zweitwichtigste Faktor bezieht sich auf das Design des Kunden überprüfen. Kunden, die über die benutzerfreundlichkeit des Produkts kommentiert waren 2,55 Zeiten eher bieten eine niedrige Bewertung, die im Vergleich zu Kunden, die auf anderen Designs, z.B. die Zuverlässigkeit, Design oder Geschwindigkeit kommentiert. 
+Der zweitwichtigste Faktor bezieht sich auf das Thema der Kundenbewertung. Verbraucher, die Feedback zur Benutzerfreundlichkeit des Produkts abgegeben haben, haben 2,55-mal wahrscheinlicher eine schlechte Bewertung abgegeben als Kunden, die Feedback zu den Themen Zuverlässigkeit, Design oder Geschwindigkeit abgegeben haben. 
 
-Der Durchschnitt, der durch die rote gestrichelte Linie angezeigt wird, werden von 5.78 Prozent 11.34 % geändert, zwischen den visuellen Elementen. Der Durchschnitt ist dynamisch, da sie mit der Durchschnittswert für alle anderen Werte basiert. Für die erste Schlüsselperson ausgeschlossen, der Mittelwert die Customer-Rolle. Für die zweite Schlüsselperson ausgeschlossen es das Design der Nutzbarkeit. 
+Der durch die rot gestrichelte Linie dargestellte Durchschnitt hat sich im Vergleich zum vorherigen Visual von 5,78 % auf 11,34 % geändert. Der Durchschnittswert ist dynamisch, da er auf dem Durchschnitt aus allen anderen Werten basiert. Beim ersten Einflussfaktor wurde die Verbraucherrolle aus dem Durchschnitt ausgeschlossen. Beim zweiten Einflussfaktor wurde das Thema Benutzerfreundlichkeit ausgeschlossen. 
  
-Wählen Sie die **zeigen nur Werte, die Einflussfaktoren** Kontrollkästchen, um zu filtern, indem Sie nur die herausragende Werte. In diesem Fall sind die Rollen, die eine niedrige Bewertung zu steuern. Zwölf Designs werden auf vier reduziert, die Power BI als die Designs zu identifiziert, die niedrige Bewertungen zu steuern. 
+Aktivieren Sie das Kontrollkästchen **Nur Werte anzeigen, die Einflussfaktoren sind**, um nur mithilfe der beeinflussenden Werte zu filtern. In diesem Beispiel sind sie die Rollen, die für eine niedrige Bewertung verantwortlich sind. Die zwölf Themen werden auf die vier begrenzt, die von Power BI als die Themen identifiziert wurden, die für niedrige Bewertungen verantwortlich sind. 
 
-![Aktivieren Sie das Kontrollkästchen](media/power-bi-visualization-influencers/power-bi-only-show.png)
+![Aktivieren des Kontrollkästchens](media/power-bi-visualization-influencers/power-bi-only-show.png)
 
-## <a name="interact-with-other-visuals"></a>Mit anderen visuellen Elementen interagieren 
+## <a name="interact-with-other-visuals"></a>Interaktion mit anderen Visuals 
  
-Jedes Mal, wenn Sie einen Slicer, Filter oder andere Visualisierung im Zeichenbereich auswählen, die wichtigen Einflussfaktoren visual erneutes Ausführen die Analyse auf dem neuen Daten. Sie können z. B. verschieben **Unternehmensgröße** in den Bericht und als einen Slicer verwenden. Verwenden Sie sie an, um festzustellen, ob die wichtigen Einflussfaktoren für Ihre Enterprise-Kunden die allgemeine Population unterscheiden. Eine Enterprise-Unternehmens-Größe ist größer als 50.000 Mitarbeiter.
+Immer, wenn Sie auf einen Slicer, einen Filter oder ein anderes Visual im Zeichenbereich klickt, führt das Visual für wichtige Einflussfaktoren die Analyse für die neu ausgewählten Daten nochmals aus. Sie können beispielsweise **Company Size** (Unternehmensgröße) in den Bericht verschieben und als Slicer verwenden. Verwenden Sie es, um festzustellen, ob sich die wichtigen Einflussfaktoren für Unternehmenskunden von denen der restlichen Kunden unterscheiden. Ein Unternehmen definiert sich hierbei über eine Größe von mehr als 50.000 Mitarbeitern.
  
-Auswählen von **> 50.000** einem erneutem ausführen, die die Analyse, und Sie sehen, dass sich die Einflussfaktoren geändert. Für große Unternehmenskunden hat die obere Schlüsselperson für niedrige Bewertungen ein Designs, die im Zusammenhang mit Sicherheit. Sie möchten anzeigen zu untersuchen, wenn bestimmte Sicherheitsfeatures, mit denen Ihre große Kunden unglücklich sind vorhanden sind. 
+Wenn Sie **> 50.000** auswählen, wird die Analyse noch mal ausgeführt, und Sie werden feststellen, dass sich auch die Einflussfaktoren geändert haben. Bei großen Unternehmenskunden ist das Thema Sicherheit der wichtigste Einflussfaktor für eine niedrige Bewertung. Sie sollten nun weiter untersuchen, ob es bestimmte Sicherheitsfeatures gibt, mit denen große Kunden nicht zufrieden sind. 
 
-![Slice von der Größe des Unternehmens](media/power-bi-visualization-influencers/power-bi-filter.png)
+![Slice nach Unternehmensgröße](media/power-bi-visualization-influencers/power-bi-filter.png)
 
 ## <a name="interpret-continuous-key-influencers"></a>Interpretieren von kontinuierlichen wichtigen Einflussfaktoren 
  
-Bisher haben Sie gesehen, wie das visuelle Element zu verwenden, um verschiedenen Kategoriefelder zu untersuchen. niedrige Bewertungen zu beeinflussen. Es ist auch möglich, damit der fortlaufende Faktoren wie Alter, Größe und Preis in der **Erläutern von** Feld. Sehen wir uns, was geschieht, wenn **Anstellung** verschoben wird, aus der Customer-Tabelle in **wird erläutert, durch**. Haben sich zeigt, wie lange ein Kunde hat der Dienst verwendet. 
+Bisher haben wir das Visual verwendet, um zu ermitteln, wie sich unterschiedliche Kategoriefelder auf niedrige Bewertungen auswirken. Im Feld **Erläuterung nach** können jedoch auch kontinuierliche Faktoren wie Alter, Höhe und Preis verwendet werden. Beobachten Sie, was geschieht, wenn **Tenure** (Verwendungsdauer) aus „Customer Table“ (Kundentabelle) in **Erläuterung nach** verschoben wird. Die Verwendungsdauer gibt an, wie lange der Kunde den Dienst bereits verwendet. 
  
-Mit zunehmender Anstellung erhöht die Wahrscheinlichkeit, dass eine niedrigere Bewertung auch. Dieser Trend schlägt vor, dass die längerfristigen Kunden wahrscheinlich ein negatives Ergebnis zu erhalten. Diese Information ist interessant, und eine, die Sie später nachverfolgen möchten. 
+Bei einem höheren Wert für „Tenure“ (Verwendungsdauer) steigt die Wahrscheinlichkeit, dass eine niedrige Bewertung abgegeben wird. Dieser Trend lässt darauf schließen, dass Langzeitkunden häufiger eine negative Bewertung abgeben. Diese Information ist interessant. Sie sollten sie später weiterverfolgen. 
  
-Die Visualisierung zeigt, dass jedes Mal, wenn Beschäftigungsdauer von 13.44 Monate steigt, durchschnittlich die Wahrscheinlichkeit von eine niedrige Bewertung von 1,23 Zeiten erhöht. In diesem Fall stellen 13,44 Monate die Standardabweichung der Verwendungsdauer dar. Daher, wie die Einblicke, die Sie erhalten untersucht haben sich zu erhöhen, indem eine standard-Menge, die die Standardabweichung der Anstellung ist, wirkt sich auf die Wahrscheinlichkeit, dass eine niedrige Bewertung. 
+Aus dem Visual ist ersichtlich, dass sich die Wahrscheinlichkeit einer niedrigen Bewertung um das 1,23-Fache erhöht, wenn die Verwendungsdauer um 13,44 Monate erweitert wird. In diesem Fall stellen 13,44 Monate die Standardabweichung der Verwendungsdauer dar. Sie ziehen also Erkenntnisse daraus, wie sich die Erweiterung der Verwendungsdauer um eine Standardmenge, d. h. die Standardabweichung der Verwendungsdauer auf die Wahrscheinlichkeit einer niedrigen Bewertung auswirkt. 
  
-Das Punktdiagramm im rechten Bereich sind die durchschnittliche prozentuale niedrige Bewertungen für jeden Wert von mitarbeiten. Es werden die Steigung mit einer Trendlinie hervorgehoben.
+Im Punktdiagramm im rechten Bereich wird durchschnittliche Prozentsatz der niedrigen Bewertungen für die einzelnen Werte der Verwendungsdauer dargestellt. Die Steigung wird mit einer Trendlinie hervorgehoben.
 
 
-![Punktdiagramm für Beschäftigungsdauer](media/power-bi-visualization-influencers/power-bi-tenure.png)
+![Punktdiagramm für Verwendungsdauer](media/power-bi-visualization-influencers/power-bi-tenure.png)
 
-## <a name="interpret-measures-and-aggregates-as-key-influencers"></a>Interpretieren von Measures und Aggregate wie wichtigen Einflussfaktoren 
+## <a name="interpret-measures-and-aggregates-as-key-influencers"></a>Interpretieren von Measures und Aggregaten als wichtige Einflussfaktoren 
  
-Sie können Measures und Aggregate als erläuternde Faktoren in der Analyse verwenden. Beispielsweise empfiehlt es sich um festzustellen, welche Auswirkungen die Anzahl der Kunden Support-Tickets oder die durchschnittliche Dauer der ein open-Ticket für die Bewertung hat Sie erhalten. 
+Sie können Measures und Aggregate als erläuternde Faktoren in Ihren Analysen verwenden. Angenommen, Sie möchten herausfinden, welche Auswirkung die Anzahl der Supporttickets oder die Öffnungsdauer eines Tickets auf die abgegebene Bewertung hat. 
  
-In diesem Fall möchten Sie überprüfen, ob die Anzahl der Support-Tickets, die ein Kunde verfügt über das Ergebnis wirkt sich darauf aus, die Sie geben. Nachdem Sie importieren **Ticket-ID unterstützen** aus der Support-Ticket-Tabelle. Da ein Kunde mehrere Support-Tickets enthalten kann, aggregieren Sie die ID, die die Stufe anpassen. Aggregation ist wichtig, da die Analyse auf der Kundenebene wird ausgeführt, sodass alle Treiber, die auf dieser Ebene der Granularität definiert werden müssen. 
+In diesem Fall müssen Sie ermitteln, ob die Anzahl der Supporttickets, die ein Kunde erstellt, sich auf die Bewertung auswirkt. Hierfür beziehen Sie die **Supportticket-ID** aus der Tabelle „Support Ticket“ (Supportticket) ein. Da ein Kunde mehrere Supporttickets öffnen kann, aggregieren Sie die ID auf die Kundenebene. Die Aggregation ist wichtig, da die Analyse auf Kundenebene ausgeführt wird, weshalb alle Treiber auf dieser Ebene definiert werden müssen. 
  
-Betrachten Sie die Anzahl der IDs ein. Jede Kundenzeile verfügt über eine Anzahl von Support-Tickets zugeordnet. In diesem Fall als die Anzahl der Support-Tickets zunimmt, steigt die Wahrscheinlichkeit, dass der Bewertung, niedrige 5.51 Zeiten. Das visuelle Element auf der rechten Seite zeigt die durchschnittliche Anzahl von Support-Tickets von anderen **Bewertung** auf Kundenebene ausgewertet. 
+Betrachten wir nun die Anzahl der IDs. Jeder Kundenzeile ist eine Anzahl Supporttickets zugeordnet. In diesem Fall geht daraus hervor, dass mit dem Anstieg der Supporttickets auch die Wahrscheinlichkeit einer niedrigen Bewertung um das 5,51-Fache steigt. Mit dem Visual im rechten Bereich wird die durchschnittliche Anzahl von Supporttickets nach unterschiedlichen **Rating-Werten** gemäß Auswertung auf Kundenebene dargestellt. 
 
-![Einfluss der Support-Ticket-ID](media/power-bi-visualization-influencers/power-bi-support-ticket.png)
+![Einfluss der Supportticket-ID](media/power-bi-visualization-influencers/power-bi-support-ticket.png)
 
 
-## <a name="interpret-the-results-top-segments"></a>Interpretieren der Ergebnisse: Wichtigste Segmente 
+## <a name="interpret-the-results-top-segments"></a>Interpretation der Ergebnisse: Wichtigste Segmente 
  
-Sie können die **wichtige Einflussfaktoren** Tab, um die einzelnen Faktoren einzeln zu bewerten. Außerdem können Sie die **wichtigsten Segmente** Registerkarte, um anzuzeigen, wie eine Kombination von Faktoren für die Metrik auswirkt, die Sie analysieren. 
+Mithilfe der Registerkarte **Wichtige Einflussfaktoren** können Sie die jeweiligen Faktoren einzeln bewerten. Sie können auch die Registerkarte **Wichtigste Segmente** verwenden, um zu ermitteln, wie sich eine Kombination aus verschiedenen Faktoren auf die Metrik auswirkt, die Sie analysieren. 
  
-Top-Segmente zeigen Anfangs, einen Überblick über alle Segmente, die Power BI ermittelt. Das folgende Beispiel zeigt, dass sechs Segmente gefunden wurden. Diese Segmente werden anhand des Prozentsatzes der niedrige Bewertungen innerhalb des Segments geordnet. 1-Segment hat z. B. 74.3 % Kunden Bewertungen zusammengefasst, die niedrig sind. Je höher der Kreis positioniert ist, desto größer ist der Anteil der niedrigen Bewertungen. Die Größe der Blase stellt dar, wie viele Kunden innerhalb des Segments sind. 
+Auf der Registerkarte „Wichtigste Segmente“ wird zunächst eine Übersicht über alle von Power BI ermittelten Segmente angezeigt. Das folgende Beispiel zeigt, dass sechs Segmente gefunden wurden. Diese Segmente wurden nach dem Prozentsatz der niedrigen Bewertung innerhalb der einzelnen Segmente angeordnet. Daraus geht beispielsweise hervor, dass 74,3 % aller Kundenbewertungen in Segment 1 niedrig sind. Je höher der Kreis positioniert ist, desto größer ist der Anteil der niedrigen Bewertungen. Die Größe des Kreises gibt an, wie viele Kunden in einem Segment vorhanden sind. 
 
-![Wählen Sie die Registerkarte der obersten Segmente](media/power-bi-visualization-influencers/power-bi-top-segments-tab.png)
+![Auswahl der Registerkarte „Wichtigste Segmente“](media/power-bi-visualization-influencers/power-bi-top-segments-tab.png)
 
-Wenn Sie auf einen Kreis klicken, werden die Details zu diesem Segment angezeigt. Wenn Sie Segment 1 auswählen, z. B. finden Sie, dass es relativ etablierte Kunden besteht. Sie haben bereits Kunden mehr als 29 Monate und haben mehr als vier Support-Tickets. Schließlich sind nicht Herausgeber, sodass sie entweder Benutzer oder Administratoren sind. 
+Wenn Sie auf einen Kreis klicken, werden die Details zu diesem Segment angezeigt. Wenn Sie beispielsweise „Segment 1“ auswählen, werden Sie feststellen, dass es sich mehr oder weniger aus Stammkunden zusammensetzt. Sie sind seit mehr als 29 Monaten Kunden und haben mehr als vier Supporttickets. Außerdem handelt es sich bei diesen Benutzern nicht um Herausgeber. Daher muss es sich also um Verbraucher oder Administratoren handeln. 
  
-In dieser Gruppe haben 74.3 % der Kunden eine niedrige Bewertung. Der durchschnittliche Kunde hat einen niedrigen Bewertung von 11,7 % der Zeit, sodass dieses Segment einen größeren Anteil niedrige Bewertungen hat. 63 Prozentpunkten höher ist. 1-Segment enthält auch etwa 2.2 % der Daten, damit einen adressierbaren Teil der Auffüllung darstellt. 
+In dieser Gruppe haben 74,3 % der Kunden eine niedrige Bewertung abgegeben. Im Durschnitt gaben 11,7 % aller Benutzer eine negative Bewertung ab. Somit ist der Anteil der niedrigen Bewertung in diesem Segment also größer. Er ist 63 Prozent größer. Segment 1 enthält zudem 2,2 % aller Daten und stellt damit einen adressierbaren Anteil aller Benutzer dar. 
 
-![Wählen Sie die erste oben segment](media/power-bi-visualization-influencers/power-bi-top-segments2.png)
+![Auswählen des ersten Segments unter „Wichtigste Segmente“](media/power-bi-visualization-influencers/power-bi-top-segments2.png)
 
-## <a name="working-with-numerical-data"></a>Arbeiten mit numerischen Daten
+## <a name="working-with-numerical-data"></a>Verwenden von numerischen Daten
 
-Wenn Sie ein numerisches Feld in Verschieben der **analysieren** Feld, Sie haben die Wahl dieses Szenario zu behandeln. Sie können das Verhalten des visuellen Elements ändern, indem Sie in der **Formatierung im Bereich** und zum Wechsel zwischen **Kategorietyp Analysis** und **fortlaufende Analysetyp**.
+Wenn Sie ein numerisches Feld in das Feld **Analyse** verschieben, können Sie den Umgang mit diesem Szenario wählen. Sie können das Verhalten des Visuals ändern, indem Sie den **Formatierungsbereich** aufrufen und zwischen dem **Analysetyp „Kategorisch“** und dem **Analysetyp „Kontinuierlich“** wechseln.
 
-![Ändern von kategorischen kontinuierliche](media/power-bi-visualization-influencers/power-bi-ki-formatting.png)
+![Wechseln von kategorisch zu kontinuierlich](media/power-bi-visualization-influencers/power-bi-ki-formatting.png)
 
-Ein **Kategorietyp Analysis** wie oben beschrieben verhält. Z. B. Wenn Sie an der Umfrage-Bewertungen im Bereich von 1 bis 10 suchen, Fragen Sie "Was Umfrage Bewertungen 1 wirkt sich darauf aus?"
+Der **Analysetyp „Kategorisch“** verhält sich wie oben beschrieben. Wenn Sie beispielsweise nach Umfragebewertungen zwischen 1 und 10 suchen würden, könnten Sie die Frage stellen: „Welche Faktoren bewirken, dass Umfragebewertungen den Wert 1 ergeben?“
 
-Ein **fortlaufende Analysetyp** ändert sich die Frage zu einem kontinuierlichen. Im obigen Beispiel wäre unsere neue Frage "Was Umfrage Bewertungen zu erhöhen oder verringern, wirkt sich darauf aus?"
+Beim **Analysetyp „Kontinuierlich“** ändert sich die Fragestellung in eine kontinuierliche Frage. Im obigen Beispiel würde die neue Frage lauten: „Welche Faktoren bewirken, dass der Wert der Umfragebewertung ansteigt/abfällt?“
 
-Diese Unterscheidung ist sehr hilfreich, wenn Sie viele der eindeutigen Werte im Feld verfügen, das Sie analysieren. Im folgenden Beispiel betrachten wir die Preise für Haus ein. Es ist nicht sehr sinnvoll zu Fragen "Was Haus Preis 156,214 sein wirkt sich darauf aus?" wie geht das sehr sind spezifisch, und wir wahrscheinlich nicht genügend Daten für ein Muster abzuleiten.
+Diese Unterscheidung ist sehr hilfreich, wenn im zu analysierenden Feld zahlreiche Einzelwerte vorhanden sind. Im folgenden Beispiel betrachten wir Immobilienpreise. Es ist nicht besonders sinnvoll zu fragen, welche Faktoren bewirken, dass der Immobilienpreis bei 156.214 liegt, da dies eine sehr spezifische Fragestellung ist und sehr wahrscheinlich nicht genügend Daten vorliegen, um ein Muster ableiten zu können.
 
-Stattdessen könnten wir Fragen: "Was beeinflusst Haus Preis erhöhen"? die uns ermöglicht, House Preise als eine Reihe unterschiedlicher Werte behandelt werden sollen.
+Stattdessen sollten wir fragen, welche Faktoren einen Anstieg der Immobilienpreise bewirken. Dadurch ist es möglich, Immobilienpreise als Bereich statt als Einzelwerte zu behandeln.
 
 ![Numerische Frage](media/power-bi-visualization-influencers/power-bi-ki-numeric-question.png)
 
-## <a name="interpret-the-results-key-influencers"></a>Interpretieren der Ergebnisse: Wichtigste Einflussfaktoren 
+## <a name="interpret-the-results-key-influencers"></a>Interpretation der Ergebnisse: Wichtigste Einflussfaktoren 
 
-In diesem Szenario betrachten wir "Was Haus Preis erhöhen wirkt sich auf". Wir möchten eine Reihe von erklärendem Faktoren, die einen Haus Preis wie auswirken können **Jahr erstellt** (Jahr das Haus erstellt wurde), **KitchenQual** (Küche Qualität) und **YearRemodAdd** (Jahr, die das Haus überarbeitet wurde). 
+In diesem Szenario untersuchen wir, welche Faktoren einen Anstieg der Immobilienpreise bewirken. Wir betrachten eine Reihe von erläuternden Faktoren, die sich auf den Immobilienpreis auswirken können, wie **YearBuilt** (das Jahr, in dem die Immobilie gebaut wurde), **KitchenQual** (Qualität der Küche) und **YearRemodAdd** (Jahr, in dem das Haus modernisiert wurde). 
 
-Im folgenden Beispiel betrachten wir unsere oberste Schlüsselperson die Küche Qualität wird sehr gut ist. Die Ergebnisse sind sehr ähnlich jenen, die wir gesehen haben, wenn wir nach Kategorien sortierte Metriken mit ein paar wichtige Unterschiede analysiert wurden:
+Im folgenden Beispiel untersuchen wir den wichtigsten Einflussfaktor, nämlich eine sehr gute Küchenqualität. Die Ergebnisse sind sehr ähnlich wie bei der Analyse kategorischer Metriken. Es gibt jedoch einige wichtige Unterschiede:
 
-- Die Durchschnittswerte anstelle von Prozentsätzen ist das Säulendiagramm auf der rechten Seite betrachten. Es wird daher der uns was die durchschnittliche Haus Preis eines Hauses mit einem hervorragenden Küche (Leiste Grün) ist im Vergleich zu den durchschnittlichen Haus Preis eines Hauses ohne eine ausgezeichnete Küche (gepunkteten Linie)
-- Die Anzahl der im Blasendiagramm ist der Unterschied zwischen der rote gepunktete Linie und Balken bzw. hellgrünes Band, aber als Zahl ausgedrückt wird ($158. 49K) anstatt eine Wahrscheinlichkeit (1.93 X). Durchschnittliche usw., enthält mit hervorragenden Küchen fast $160 KB teurer als Häuser ohne ausgezeichnete Küchen.
+- Mit dem Säulendiagramm im rechten Bereich werden anstelle der Prozentsätze die Durchschnittswerte untersucht. Es stellt den durchschnittlichen Immobilienpreis für ein Haus mit einer sehr guten Küchenqualität (grüne Säule) im Vergleich zum durchschnittlichen Immobilienpreis für ein Haus ohne sehr gute Küchenqualität (gestrichelte Linie) dar.
+- Im Kreis wird auch hier die Differenz zwischen der rot gestrichelten Linie und der grünen Säule angegeben, jedoch als Zahl (USD 158.000,49) und nicht als Wahrscheinlichkeit (1,93-fach). Häuser mit einer sehr guten Küchenqualität sind im Durchschnitt also nahezu 160.000 USD teurer als Häuser ohne sehr gute Küchenqualität.
 
-![Numerische Ziel kategorische Einflussfaktoren](media/power-bi-visualization-influencers/power-bi-ki-numeric-categorical.png)
+![Numerische Zielvorgabe für kategorische Einflussfaktoren](media/power-bi-visualization-influencers/power-bi-ki-numeric-categorical.png)
 
-Im folgenden Beispiel, das wir die Auswirkungen betrachten, ist ein kontinuierliche Faktor (Jahr, die Haus überarbeitet wurde) auf Preis des Hauses. Die Unterschiede im Vergleich zu wie analysieren wir die fortlaufende Einflussfaktoren für kategorische Metriken lauten wie folgt aus:
+Im folgenden Beispiel untersuchen wir die Auswirkungen eines kontinuierlichen Faktors (Jahr, in dem das Haus modernisiert wurde) auf den Immobilienpreis. Im Vergleich zur Analyse von kontinuierlichen Einflussfaktoren gibt es bei kategorischen Metriken folgende Unterschiede:
 
--   Das Punktdiagramm im rechten Bereich sind die durchschnittliche Haus Preis für jeden eindeutigen Wert des Jahres überarbeitet. 
--   Der Wert in der Blase angezeigt wird, um wie viel durchschnittliche Haus Preis erhöht wird (in diesem Fall 2 USD. 87-k) Wenn das Jahr das Haus war erhöht überarbeitet, durch die Standardabweichung (in diesem Fall 20 Jahre)
+-   Im Punktdiagramm im rechten Bereich wird der durchschnittliche Immobilienpreis für jeden einzelnen Wert für das Jahr dargestellt, in dem das Haus modernisiert wurde. 
+-   Der Wert im Kreis gibt an, um wie viel der durchschnittliche Immobilienpreis ansteigt (hier 2.870 USD), wenn der Wert für das Jahr, in dem das Haus modernisiert wurde, um die Standardabweichung (hier 20 Jahre) zunimmt.
 
-![Kontinuierliche numerische Ziel-Einflussfaktoren](media/power-bi-visualization-influencers/power-bi-ki-numeric-continuous.png)
+![Numerische Zielvorgabe für kontinuierliche Einflussfaktoren](media/power-bi-visualization-influencers/power-bi-ki-numeric-continuous.png)
 
-Im Fall von Measures, die wir das durchschnittliche Jahr betrachten wurde schließlich ein Haus erstellt. Die Analyse hier lautet wie folgt aus:
+Abschließend betrachten wir bei Measures den Durchschnittswert für das Jahr, in dem das Haus gebaut wurde. Die Analyse hier sieht wie folgt aus:
 
--   Punktdiagramm im rechten Bereich stellt die durchschnittliche Haus Preis für jeden eindeutigen Wert in der Tabelle
--   Der Wert in der Blase angezeigt wird, um wie viel durchschnittliche Haus Preis erhöht wird (in diesem Fall 1 USD. 35K) Wenn die durchschnittliche Jahr erhöht, die Standardabweichung (in diesem Fall 30 Jahre)
+-   Im Punktdiagramm im rechten Bereich wird der durchschnittliche Immobilienpreis für jeden einzelnen Wert dargestellt.
+-   Der Wert im Kreis gibt an, um wie viel der durchschnittliche Immobilienpreis ansteigt (hier 1.350 USD), wenn der durchschnittliche Wert für das Jahr um die Standardabweichung (hier 30 Jahre) zunimmt.
 
-![Numerische Ziel misst Einflussfaktoren](media/power-bi-visualization-influencers/power-bi-ki-numeric-measures.png)
+![Numerische Zielsetzung für Measures als Einflussfaktoren](media/power-bi-visualization-influencers/power-bi-ki-numeric-measures.png)
 
-## <a name="interpret-the-results-top-segments"></a>Interpretieren der Ergebnisse: Top-Segmente
+## <a name="interpret-the-results-top-segments"></a>Interpretation der Ergebnisse: Wichtigste Segmente
 
-Top-Segmente sind für numerische Ziele Gruppen angezeigt, in dem das Haus durchschnittlich Preise höher als für das gesamte Dataset. Z. B. im folgenden sehen wir, dass **Segment 1** Häuser bestehen, in denen **GarageCars** (Anzahl der Autos, die die Garage passt) ist größer als 2 und die **RoofStyle** Hip ist. Häusern mit diesen Eigenschaften verfügen über einen Durchschnittspreis von 355 Dollar im Vergleich zu den allgemeinen Durchschnitt in die Daten, die 180 $K.
+In den wichtigsten Segmenten für numerische Zielsetzungen werden Gruppen angegeben, bei denen die Immobilienpreise im Durchschnitt höher sind als im Dataset insgesamt. Im Folgenden ist beispielsweise zu sehen, dass sich **Segment 1** aus Häusern zusammensetzt, bei denen **GarageCars** (Anzahl der Kraftfahrzeuge, die in der Garage untergebracht werden können) größer als 2 und für **RoofStyle** die Option „Hip“ (Walmdach) festgelegt ist. Bei Häusern mit diesen Merkmalen liegt der Durchschnittspreis bei 355.000 USD. Im Vergleich dazu liegt der allgemeine Durchschnittspreis der Daten bei 180.000 USD.
 
-![Numerische Ziel misst Einflussfaktoren](media/power-bi-visualization-influencers/power-bi-ki-numeric-segments.png)
+![Numerische Zielsetzung für Measures als Einflussfaktoren](media/power-bi-visualization-influencers/power-bi-ki-numeric-segments.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Zu beachtende Aspekte und Problembehandlung 
  
-**Was sind die Einschränkungen für die Vorschauversion?** 
+**Welche Einschränkungen sind in der Vorschauversion vorhanden?** 
  
-Die wichtigen Einflussfaktoren visual befindet sich derzeit in der öffentlichen Vorschau, und es gelten einige Einschränkungen. Enthält von Funktionen, die zurzeit nicht verfügbar ist: 
-- Analyse von Metriken, die Aggregate oder Measures sind.
-- Nutzen die Visualisierung in Power BI Embedded.
-- Nutzen die Visualisierung für Power BI-mobile-apps.
-- RLS unterstützt.
-- Direkten Sie Unterstützung von Abfragen.
-- Live-Verbindung unterstützt.
+Das Visual „Wichtige Einflussfaktoren“ ist derzeit als öffentliche Vorschauversion verfügbar und weist einige Einschränkungen auf. Derzeit sind folgende Funktionen nicht verfügbar: 
+- Das Analysieren von Metriken, bei denen es sich um Aggregate oder Measures handelt
+- Das Verwenden des Visuals in Power BI Embedded
+- Das Verwenden des Visuals in mobilen Power BI-Apps
+- Unterstützung von RLS
+- Unterstützung von DirectQuery
+- Unterstützung für Liveverbindung
 
 ![Numerische Frage](media/power-bi-visualization-influencers/power-bi-ki-numeric-question.png)
 
-**Wird ein Fehler angezeigt, den keine Einflussfaktoren oder Segmente gefunden wurden. Wieso?** 
+**Es wird ein Fehler angezeigt, dass keine Einflussfaktoren oder Segmente gefunden wurden. Wieso?** 
 
-![Keine Einflussfaktoren gefunden](media/power-bi-visualization-influencers/power-bi-error1.png)
+![Fehler, dass keine Einflussfaktoren gefunden wurden](media/power-bi-visualization-influencers/power-bi-error1.png)
 
 
-Dieser Fehler tritt auf, wenn Sie Felder in enthalten **Erläutern von** , aber keine Einflussfaktoren gefunden wurden. 
-- Sie enthalten die Metrik, die Sie analysieren wurden in beiden **analysieren** und **Erläutern von**. Entfernen Sie sie aus **Erläutern von**. 
-- Die erläuternden Felder enthalten zu viele Kategorien, in denen nur wenige Beobachtungen vorhanden sind. Diese Situation wird es schwierig, für die Visualisierung, um zu bestimmen, welche Faktoren Einflussfaktoren sind. Es ist schwierig, um basierend auf nur einige Beobachtungen zu generalisieren. Wenn Sie ein numerisches Feld analysieren möchten von wechseln **kategorische Analysis** zu **fortlaufende Analyse** in die **Formatierung im Bereich** unter der  **Analyse** Karte.
-- Ihre erläuternden Faktoren haben genug Beobachtungen zu verallgemeinern, aber die Visualisierung haben sinnvollen Korrelationen zu Bericht nicht gefunden.
+Dieser Fehler tritt auf, wenn Sie Felder in **Erläuterung nach** eingeschlossen haben, aber keine Einflussfaktoren gefunden wurden. 
+- Sie haben die analysierte Metrik in **Analysieren** und **Erläuterung nach** eingeschlossen. Entfernen Sie sie aus **Erläuterung nach**. 
+- Die erläuternden Felder enthalten zu viele Kategorien, in denen nur wenige Beobachtungen vorhanden sind. In dieser Situation ist es für das Visual schwierig zu erkennen, welche Faktoren Einflussfaktoren sind. Eine Generalisierung auf Basis weniger Beobachtungen ist schwierig. Bei der Analyse eines numerischen Felds sollten Sie im **Formatierungsbereich** auf der Karte **Analyse** von der **kategorischen Analyse** zur **kontinuierlichen Analyse** wechseln.
+- Die erläuternden Faktoren enthalten zwar ausreichend Beobachtungen für eine Generalisierung, aber das Visual konnte keine sinnvollen Korrelationen ermitteln, aus denen ein Bericht erstellt werden kann.
  
-**Wird ein Fehler angezeigt, dass genügend Daten für die Analyse führen Sie auf die Metrik, die analysieren, ich bin, nicht. Wieso?** 
+**Es wird ein Fehler angezeigt, dass die zu analysierende Metrik nicht genügend Daten für eine Analyse enthält. Wieso?** 
 
-![Nicht genügend Datenfehler](media/power-bi-visualization-influencers/power-bi-not-enough-data.png)
+![Fehler, dass nicht genügend Daten vorhanden sind](media/power-bi-visualization-influencers/power-bi-not-enough-data.png)
 
-Die Visualisierung funktioniert, indem Muster in den Daten für eine Gruppe, die im Vergleich zu anderen Gruppen. Beispielsweise sieht es für Kunden, die niedrige Bewertungen, die im Vergleich Kunden gegeben haben, die hohe Bewertungen gegeben haben. Wenn die Daten in Ihrem Modell nur einige Beobachtungen verfügt, sind Muster schwer zu finden. Wenn die Visualisierung genügend Daten für aussagekräftige Einflussfaktoren gefunden hat, bedeutet dies, dass es sich bei mehr Daten benötigt werden, um die Analyse auszuführen. 
+Das Visual funktioniert so, dass in den Daten für eine Gruppe nach Mustern gesucht und mit anderen Gruppen verglichen wird. So wird beispielsweise nach Kunden gesucht, die im Vergleich zu anderen Kunden, die hohe Bewertungen abgegeben haben, niedrige Bewertungen abgegeben haben. Wenn die Daten in Ihrem Modell nur wenige Beobachtungen enthalten, können Muster nur schwer ermittelt werden. Wenn im Visual nicht genügend Daten enthalten sind, um aussagekräftige Einflussfaktoren zu ermitteln, wird angezeigt, dass mehr Daten benötigt werden, um die Analyse durchzuführen. 
 
-Es wird empfohlen, dass Sie über mindestens 100 Vorkommen für den ausgewählten Status haben. In diesem Fall ist der Zustand, Kunden, die codeänderung. Außerdem benötigen Sie mindestens 10 Beobachtungen, für die Zustände, die Sie für den Vergleich verwenden. In diesem Fall ist der Vergleich Kunden, die codeänderung nicht.
+Für den ausgewählten Zustand sollten mindestens 100 Beobachtungen vorhanden sein. In diesem Beispiel steht der Zustand für Kunden, die abwandern. Ferner benötigen Sie mindestens 10 Beobachtungen für die Zustände, die Sie für den Vergleich verwenden. In diesem Beispiel steht der Vergleichszustand für Kunden, die nicht abwandern.
 
-Wenn Sie ein numerisches Feld analysieren möchten von wechseln **kategorische Analysis** zu **fortlaufende Analyse** in die **Formatierung im Bereich** unter der  **Analyse** Karte.
+Bei der Analyse eines numerischen Felds sollten Sie im **Formatierungsbereich** auf der Karte **Analyse** von der **kategorischen Analyse** zur **kontinuierlichen Analyse** wechseln.
 
-**Tritt ein Fehler, die ein Feld in *Erläutern von* ist nicht eindeutig im Zusammenhang mit der die Tabelle, die Metrik enthält, ich bin analysieren. Wieso?**
+**Es wird ein Fehler angezeigt, dass ein Feld in *Erläuterung nach* keine eindeutige Beziehung zu der Tabelle aufweist, die die analysierte Metrik enthält. Wieso?**
  
-Die Analyse wird ausgeführt, auf der Tabelle das Feld, das analysiert wird. Z. B. Wenn Sie für Ihren Dienst Feedback von Kunden analysieren, müssen Sie eine Tabelle möglicherweise, die anzeigt, ob ein Kunde eine hohe Bewertung oder eine niedrige Bewertung gegeben haben. In diesem Fall wird die Analyse auf der Ebene der Customer-Tabelle ausgeführt. 
+Die Analyse wird auf Tabellenebene des entsprechenden Felds ausgeführt. Wenn Sie beispielsweise Kundenfeedback für Ihren Dienst analysieren, besitzen Sie möglicherweise eine Tabelle, aus der hervorgeht, ob ein Kunde eine hohe oder eine niedrige Bewertung abgegeben hat. In diesem Fall wird die Analyse auf Ebene der Kundentabelle durchgeführt. 
 
-Wenn Sie eine verknüpfte Tabelle, die definiert, wird auf einer präziseren Ebene als die Tabelle, die Ihre Metrik enthält verfügen, wird dieser Fehler angezeigt. Es folgt ein Beispiel aus: 
+Wenn Sie eine verknüpfte Tabelle besitzen, die auf einer präziseren Ebene als die Tabelle, die Ihre Metrik enthält, definiert ist, wird dieser Fehler angezeigt. Beispiel: 
  
-- Sie analysieren, worauf gründet sich die Kunden gerne niedrige Bewertungen Ihres Diensts.
-- Um festzustellen, ob das Gerät, auf dem der Kunde den Dienst nutzt, die Überprüfungen wirkt sich darauf aus, die sie erhalten, werden sollen.
-- Ein Kunde kann den Dienst auf mehrere Arten nutzen.
-- Im folgenden Beispiel verwendet Kunden 10000000 sowohl einen Browser und einem Tablet liegen, um mit dem Dienst interagieren.
+- Sie analysieren, was Kunden dazu bewegt, eine niedrige Bewertung für Ihren Dienst abzugeben.
+- Sie möchten wissen, ob sich das Gerät, auf dem Ihre Kunden den Dienst verwenden, auf die Bewertung auswirkt.
+- Kunden können den Dienst auf unterschiedlichen Geräten verwenden.
+- Im folgenden Beispiel verwendet Kunde 10000000 sowohl einen Browser als auch ein Tablet, um auf den Dienst zuzugreifen.
 
-![Eine verknüpfte Tabelle auf einer präziseren Ebene als die Tabelle mit die Metrik definiert](media/power-bi-visualization-influencers/power-bi-error2.png)
+![Eine verknüpfte Tabelle ist auf einer präziseren Ebene als die Tabelle, die Ihre Metrik enthält, definiert](media/power-bi-visualization-influencers/power-bi-error2.png)
 
-Wenn Sie versuchen, die Gerätespalte als eine erläuternde Faktor zu verwenden, der folgende Fehler angezeigt: 
+Wenn Sie versuchen, die Spalte „device“ als erläuternden Faktor zu verwenden, wird folgender Fehler angezeigt: 
 
-![Falsche Spalte-Fehler](media/power-bi-visualization-influencers/power-bi-error3.png)
+![Fehler: falsche Spalte](media/power-bi-visualization-influencers/power-bi-error3.png)
 
-Dieser Fehler wird angezeigt, da das Gerät nicht auf der Kundenebene definiert ist. Ein Kunde kann den Dienst auf mehreren Geräten zu nutzen. Für die Visualisierung, um Muster zu finden muss das Gerät ein Attribut des Kunden sein. Es gibt mehrere Lösungen, die von Ihr Verständnis des Unternehmens abhängen: 
+Dieser Fehler wird angezeigt, da das Gerät nicht auf Kundenebene definiert wurde. Kunden können den Dienst auf mehreren Geräten verwenden. Damit das Visual Muster ermitteln kann, muss „device“ ein Attribut von „customer“ sein. Es gibt verschiedene Lösungen, die von Ihren Kenntnissen des Geschäfts abhängen: 
  
-- Sie können die Zusammenfassung der Geräte, die zu zählenden ändern. Verwenden Sie z. B. die Anzahl auf, wenn die Anzahl der Geräte das Ergebnis beeinflussen kann, die ein Kunden bietet. 
-- Sie können die Gerätespalte, um festzustellen, ob die Nutzung des Diensts auf einem bestimmten Gerät eines Kunden Bewertung wirkt sich darauf aus pivotieren.
+- Sie können die Zusammenfassung von zu zählenden Geräten ändern. Verwenden Sie beispielsweise „count“, wenn sich die Anzahl von Geräten möglicherweise auf die Bewertung auswirkt, die ein Kunde abgibt. 
+- Sie können die Spalte „device“ pivotieren, um festzustellen, ob sich die Verwendung des Diensts auf einem bestimmten Gerät auf die Kundenbewertung auswirkt.
  
-In diesem Beispiel wurde dem Anwenden der Pivotierung zum Erstellen neuer Spalten für Browser, mobile und tablet. Nun können Sie diese Geräte in **Erläutern von**. Alle Geräte erweisen sich Einflussfaktoren werden, und der Browser hat die größten Auswirkungen auf Kunden-Bewertung.
+In diesem Beispiel wurden die Daten pivotiert, sodass die neuen Spalten „browser“, „mobile“ und „tablet“ erstellt wurden. Nun können Sie diese Geräte in **Erläuterung nach** verwenden. Daraus ergibt sich, dass alle Geräte Einflussfaktoren sind, wobei der Browser jedoch die größte Auswirkung auf die Kundenbewertung hat.
 
-Genauer gesagt, sind Kunden, die den Browser verwenden, um den Dienst zu nutzen 3,79 Zeiten eher eine niedrige Bewertung als die Kunden zu erhalten, die. Weiter unten in der Liste für mobile Geräte das Gegenteil gilt. Kunden, die die mobile app verwenden, sind eher eine niedrige Bewertung als Kunden weitergeben können, die nicht. 
+Genauer gesagt ist die Wahrscheinlichkeit, dass Kunden eine niedrige Bewertung abgeben, 3,79-mal höher, wenn sie den Dienst nicht über den Browser verwenden. Für mobile Geräte weiter unten in der Liste gilt das Gegenteil. Die Wahrscheinlichkeit, dass Kunden eine niedrige Bewertung abgeben, ist höher, wenn sie die mobile App verwenden. 
 
 ![Gelöst](media/power-bi-visualization-influencers/power-bi-error3-solution.png)
 
-**Ich sehe es sich um eine Warnung, dass Maßnahmen in Meine Analyse berücksichtigt wurden. Wieso?** 
+**Es wird ein Fehler angezeigt, dass die Measures nicht in die Analyse einbezogen wurden. Wieso?** 
 
-![Measures enthalten keine Fehler](media/power-bi-visualization-influencers/power-bi-measures-not-included.png)
+![Fehler, dass Measures nicht einbezogen wurden](media/power-bi-visualization-influencers/power-bi-measures-not-included.png)
 
 
-Die Analyse wird ausgeführt, auf der Tabelle das Feld, das analysiert wird. Wenn Sie kundenabwanderung zu analysieren, müssen Sie möglicherweise eine Tabelle, die anzeigt, ob ein Kunde oder nicht verarbeiteten. In diesem Fall führt die Analyse auf der Ebene der Customer-Tabelle ein.
+Die Analyse wird auf Tabellenebene des entsprechenden Felds ausgeführt. Wenn Sie die Abwanderung von Kunden analysieren, haben Sie möglicherweise eine Tabelle erstellt, die aussagt, ob ein Kunde den Anbieter gewechselt hat. In diesem Fall wird die Analyse auf Ebene der Kundentabelle durchgeführt.
  
-Measures und Aggregate sind standardmäßig auf Tabellenebene analysiert. Würde ein Maß für die durchschnittliche monatlichen Ausgaben, würden sie auf der Ebene der Customer-Tabelle analysiert werden. 
+Measures und Aggregate werden standardmäßig auf Tabellenebene analysiert. Wenn Sie ein Measure für die durchschnittlichen monatlichen Ausgaben erstellt hätten, würde dieses auf Ebene der Kundentabelle analysiert werden. 
 
-Wenn die Customer-Tabelle nicht über einen eindeutigen Bezeichner verfügt, wird Sie das Measure können nicht ausgewertet werden, und es wird von der Analyse ignoriert. Um diese Situation zu vermeiden, stellen Sie sicher, dass die Tabelle mit die Metrik einen eindeutigen Bezeichner verfügt. In diesem Fall ist der Customer-Tabelle und der eindeutige Bezeichner ist die Kunden-ID. Es ist auch einfach eine Indexspalte hinzufügen, indem Sie mithilfe von Power Query.
+Wenn die Kundentabelle keinen eindeutigen Bezeichner aufweist, können deren Measures nicht ausgewertet werden, und die Tabelle wird aus der Analyse ausgeschlossen. Sorgen Sie zur Vermeidung dieser Situation dafür, dass die Tabelle in Ihrer Metrik einen eindeutigen Bezeichner enthält. In diesem Fall ist es die Kundentabelle, und der eindeutige Bezeichner ist die Kunden-ID. Mithilfe von Power Query können Sie zudem einfach eine Indexspalte hinzufügen.
  
-**Ich sehe es sich um eine Warnung, dass die Metrik, die ich analysieren bin, mehr als 10 eindeutige Werte verfügt und diese Menge die Qualität der meine Analyse beeinflussen kann. Wieso?** 
+**Es wird eine Warnung angezeigt, dass die analysierte Metrik mehr als 10 Einzelwerte aufweist und somit die Qualität der Analyse beeinträchtigen kann. Wieso?** 
 
-Die KI-Visualisierung kann Kategoriefelder und numerischen Feldern analysieren. Im Fall von Kategoriefelder, ein Beispiel ist möglicherweise Abwanderung ist Ja oder Nein und Kundenzufriedenheit ist hoch, Mittel oder niedrig. Erhöhen der Anzahl von Kategorien zum Analysieren von bedeutet, dass es weniger Vorkommen pro Kategorie. Dies erschwert es für die Visualisierung, um Muster in den Daten zu finden. 
+Mit dem KI-Visual können Kategoriefelder und numerische Felder analysiert werden. Beispiele für Kategoriefelder: „Abwanderung“ ist „Ja“ oder „Nein“ und „Kundenzufriedenheit“ ist „Hoch“, „Mittel“ oder „Niedrig“. Wenn Sie die Anzahl der zu analysierenden Kategorien erhöhen, gibt es weniger Beobachtungen pro Kategorie. Dann ist es für das Visual schwierig, in den Daten Muster zu erkennen. 
 
-Bei der Analyse von numerischer Feldern haben Sie die Wahl zwischen behandeln die numerischen Felder wie Text in diesem Fall die gleiche Analyse ausgeführt wird, wie für kategorische Daten (**kategorische Analysis**). Wenn Sie viele unterschiedliche haben wechseln Werte, die wir Ihnen empfehlen die Analyse **fortlaufende Analyse** wie also können wir ableiten, Muster, wenn Zahlen erhöhen oder verringern, sondern behandelt sie als unterschiedliche Werte aus. Sie können von wechseln **kategorische Analysis** zu **fortlaufende Analyse** in die **Formatierung im Bereich** unter der **Analysis** Karte.
+Bei der Analyse von numerischen Feldern können Sie die numerischen Felder wie Text behandeln. Dann wird dieselbe Analyse ausgeführt wie für kategorische Daten (**kategorische Analyse**). Wenn viele Einzelwerte vorliegen sollten Sie jedoch eine **kontinuierliche Analyse** ausführen, da damit die Zahlen nicht einzeln betrachtet, sondern Muster abgeleitet werden, wenn sich Zahlen erhöhen oder verringern. Sie können im **Formatierungsbereich** auf der Karte **Analyse** von der **kategorischen Analyse** zur **kontinuierlichen Analyse** wechseln.
 
-Um eine stärkere Einflussfaktoren zu suchen, empfehlen wir die Gruppierung von ähnlichen Werten in einer einzelnen Einheit. Wenn Sie eine Metrik für Preis haben, können Sie beispielsweise wahrscheinlich bessere Ergebnisse zu erzielen, indem ähnliche Preise zu hoch, Mittel und niedrig Kategorien und der einzelnen Tarife gruppiert. 
+Es wird empfohlen, ähnliche Werte in einer einzigen Einheit zu gruppieren, um aussagekräftigere Einflussfaktoren zu ermitteln. Bei einer Metrik für den Preis erhalten Sie beispielsweise bessere Ergebnisse, wenn Sie ähnliche Preise in Kategorien wie „Hoch“, „Mittel“ oder „Niedrig“ gruppieren, anstatt einzelne Preispositionen zu verwenden. 
 
-![Mehr als 10 spezielle Faktoren, die Warnung](media/power-bi-visualization-influencers/power-bi-error4.png)
+![Warnung zu mehr als 10 Einzelfaktoren](media/power-bi-visualization-influencers/power-bi-error4.png)
 
 
-**Es gibt Faktoren in meinen Daten, die aussehen, wie sie die wichtigen Einflussfaktoren sein soll, aber es sind keine. Wie kann es dazu kommen?**
+**In den Daten sind Faktoren vorhanden, bei denen es sich nicht um wichtige Einflussfaktoren handelt, obwohl sie es sein sollten. Wie kann es dazu kommen?**
 
-Im folgenden Beispiel das Laufwerk Kunden, die Kunden sind niedriger Bewertungen, mit dem 14.93 % von Bewertungen, die mit niedriger sind. Die Rolle "Administrator" verfügt auch über ein hoher Anteil von niedrige Bewertungen, bei 13.42 % aus, aber es ist kein Schlüsselperson angesehen. 
+Im folgenden Beispiel geben Kunden, die Verbraucher sind, niedrige Bewertungen ab. Dabei sind 14,93 % der Bewertungen niedrig. Der Anteil der niedrigen Bewertungen ist bei Benutzern mit der Rolle Administrator ebenfalls hoch (13,42 %), aber diese werden nicht als Einflussfaktoren gewertet. 
 
-Der Grund für diese Entscheidung ist, dass die Visualisierung auch die Anzahl der Datenpunkte, berücksichtigt Wenn Einflussfaktoren gefunden. Das folgende Beispiel enthält 29.000 Consumer und 10 Mal weniger Administratoren, etwa 2,900. Nur 390 davon hat eine niedrige Bewertung. Das visuelle Element verfügt nicht über genügend Daten, um zu bestimmen, ob es sich um ein Muster mit Administrator-Bewertungen gefunden oder ist dies nur eine Chance suchen. 
+Der Grund dafür ist, dass vom Visual beim Auffinden von Einflussfaktoren auch die Anzahl der Datenpunkte berücksichtigt werden. Im folgenden Beispiel geht es um mehr als 29.000 Verbraucher und 10-mal weniger Administratoren, also etwa 2.900. Nur 390 Administratoren haben eine niedrige Bewertung abgegeben. Das Visual verfügt nicht über genügend Daten, um zu ermitteln, ob bei den Administratoren ein Muster vorliegt oder ob es sich um einen Zufall handelt. 
 
-![Wie werden Einflussfaktoren bestimmt.](media/power-bi-visualization-influencers/power-bi-error5.png)
+![Bestimmen der Einflussfaktoren](media/power-bi-visualization-influencers/power-bi-error5.png)
 
-**Wie berechnet Sie die wichtige Einflussfaktoren für kategorische Analysis?**
+**Wie werden wichtige Einflussfaktoren für die kategorische Analyse ermittelt?**
 
-Hinter den Kulissen wird die AI-Visualisierung verwendet [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) zum Ausführen einer logistischen Regression, um die wichtigen Einflussfaktoren zu berechnen. Bei einer logistischen Regression handelt es sich um ein Statistikmodell, das verschiedene Gruppen miteinander vergleicht. 
+Das KI-Visual verwendet [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) im Hintergrund, um eine logistische Regression zum Ermitteln der wichtigen Einflussfaktoren auszuführen. Bei einer logistischen Regression handelt es sich um ein Statistikmodell, das verschiedene Gruppen miteinander vergleicht. 
 
-Wenn Sie möchten sehen, worauf gründet sich die niedrige Bewertungen, untersucht die logistische Regression von Kunden wie Kunden, die eine niedrige Bewertung gegeben haben sich unterscheiden, die eine hohe Bewertung gegeben haben. Wenn Sie mehrere Kategorien, z. B. Höchst-, neutral und niedrige Bewertung haben, die Sie von Kunden wie die Kunden, die eine niedrige Bewertung gegeben haben zu unterscheiden, die eine niedrige Bewertung geben nicht betrachten. In diesem Fall wie die Kunden, die eine niedrige Bewertung gegeben haben Kunden unterscheiden sich von, die eine hohe Bewertung oder eine neutrale Bewertung gegeben haben? 
+Während Sie sich darauf konzentrieren, was Benutzer zu niedrigen Bewertungen bewegt, ermittelt die logistische Regression, was der Unterschied zwischen den Kunden ist, die eine niedrige oder eine hohe Bewertung abgegeben haben. Bei Verwendung mehrerer Kategorien wie „Hoch“, „Neutral“ und „Niedrig“ können Sie untersuchen, wie sich die Kunden, die eine niedrige Bewertung abgegeben haben, von denjenigen Kunden unterscheiden, die keine niedrige Bewertung abgegeben haben. In diesem Fall untersuchen Sie, wie sich Kunden, die eine niedrige Bewertung abgegeben haben, von denjenigen Kunden, die eine hohe oder neutrale Bewertung abgegeben haben. 
  
-Die logistische Regression sucht nach Mustern in den Daten und sucht, wie Kunden, die eine niedrige Bewertung gegeben haben von Kunden, die eine hohe Bewertung gegeben haben, unterscheiden können. Es kann, z. B. feststellen, dass Kunden mit mehr supporttickets auf einen höheren Prozentsatz der niedrige Bewertungen als Kunden mit wenigen oder gar keinen Support-Tickets gewähren.
+Im Rahmen der logistischen Regression wird in den Daten nach Mustern gesucht, um zu ermitteln, wie sich die Kunden, die eine niedrige abgegeben haben, von denjenigen Kunden unterscheiden, die eine hohe Bewertung abgegeben haben. So lässt sich möglicherweise feststellen, dass Kunden mit vielen Supporttickets einen höheren prozentualen Anteil an den niedrigen Bewertungen ausmachen als die Kunden mit wenigen oder keinen Supporttickets.
  
-Die logistische Regression wird auch berücksichtigt, wie viele Datenpunkte vorhanden sind. Beispielsweise ist nicht Wenn Kunden, die eine Administratorrolle spielen proportional mehr negative Bewertungen bieten, aber es nur wenige Administratoren gibt, dieser Faktor fahrradkäufen betrachtet. Diese Ermittlung erfolgt, da es nicht genügend Datenpunkte verfügbar sind, um ein Muster abzuleiten. Ein statistischer Test, bekannt als Test Wald, wird verwendet, um festzustellen, ob ein Faktor eine Schlüsselperson betrachtet wird. Im Visual wird ein p-Wert von 0,05 verwendet, um den Schwellenwert zu berechnen. 
+Bei der logistischen Regression wird auch die Anzahl der Datenpunkte berücksichtigt. Wenn Kunden mit Administratorrolle beispielsweise anteilig mehr negative Bewertungen abgeben, aber es nur sehr wenige Administratoren gibt, wird dieser Faktor nicht als Einflussfaktor gewertet, da zum Ableiten eines Musters nicht genügend Datenpunkte vorhanden sind. Es wird ein statistischer Test (Wald-Test) verwendet, um zu bestimmen, ob ein Faktor als Einflussfaktor gewertet werden kann. Im Visual wird ein p-Wert von 0,05 verwendet, um den Schwellenwert zu berechnen. 
 
-**Wie berechnet Sie die wichtige Einflussfaktoren für numerische Analyse?**
+**Wie werden wichtige Einflussfaktoren für die numerische Analyse ermittelt?**
 
-Hinter den Kulissen wird die AI-Visualisierung verwendet [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) auszuführende eine lineare Regression, um die wichtigen Einflussfaktoren zu berechnen. Eine lineare Regression ist ein statistikmodell, die untersucht, wie das Ergebnis des Felds, das Sie analysieren, werden Änderungen auf Ihre erläuternden Faktoren basieren.
+Das KI-Visual verwendet [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) im Hintergrund, um eine lineare Regression zum Ermitteln der wichtigen Einflussfaktoren auszuführen. Bei der linearen Regression handelt es sich um ein Statistikmodell, mit dem untersucht wird, wie sich das Ergebnis des Felds, das Sie analysieren, basierend auf den erläuternden Faktoren ändert.
 
-Wenn wir Haus Preise analysieren, wird z. B. eine lineare Regression sehen Sie sich die Auswirkungen müssen eine ausgezeichnete Küche auf den Preis des Hauses haben. Haben Häusern mit hervorragenden Küchen in der Regel niedrigere oder höhere Haus Preise im Vergleich zu Häuser ohne ausgezeichnete Küchen?
+Bei der Analyse von Immobilienpreisen kann mit einer linearen Regression beispielsweise untersucht werden, welche Auswirkungen eine sehr gute Küchenqualität auf den Immobilienpreis hat. Lassen sich mit Häusern mit einer sehr guten Küchenqualität generell niedrigere oder höhere Immobilienpreise erzielen als mit Häusern ohne sehr gute Küchenqualität?
 
-Die lineare Regression berücksichtigt auch die Anzahl der Datenpunkte an. Z. B. wenn Häusern mit Tennis Gerichtsstand der höheren Gerichtsinstanz höhere Preise haben, aber wir haben nur sehr wenige enthält, die ein Gericht geht, dieser Faktor fahrradkäufen gilt nicht. Diese Ermittlung erfolgt, da es nicht genügend Datenpunkte verfügbar sind, um ein Muster abzuleiten. Ein statistischer Test, bekannt als Test Wald, wird verwendet, um festzustellen, ob ein Faktor eine Schlüsselperson betrachtet wird. Im Visual wird ein p-Wert von 0,05 verwendet, um den Schwellenwert zu berechnen. 
+Bei der linearen Regression wird auch die Anzahl der Datenpunkte berücksichtigt. Wenn sich mit Häusern mit einem Tennisplatz höhere Preise erzielen lassen, jedoch nur sehr wenige Häuser mit einem Tennisplatz im Angebot sind, wird dieser Faktor nicht als Einflussfaktor gewertet, da zum Ableiten eines Musters nicht genügend Datenpunkte vorhanden sind. Es wird ein statistischer Test (Wald-Test) verwendet, um zu bestimmen, ob ein Faktor als Einflussfaktor gewertet werden kann. Im Visual wird ein p-Wert von 0,05 verwendet, um den Schwellenwert zu berechnen. 
 
 **Wie werden Segmente berechnet?**
 
-Hinter den Kulissen wird die AI-Visualisierung verwendet [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) eine Entscheidungsstruktur finden Sie interessante Untergruppen ausgeführt. Das Ziel der Entscheidungsstruktur wird mit einer Untergruppe von Datenpunkten, die in der Metrik relativ hoch ist, die Sie interessiert sind. Kunden mit niedrige Bewertungen oder Häusern mit hohe Preise besitzen möglicherweise.
+Das KI-Visual verwendet [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) im Hintergrund, um eine Entscheidungsstruktur zum Ermitteln interessanter Untergruppen auszuführen. Das Ziel der Entscheidungsstruktur besteht darin, eine Untergruppe von Datenpunkten zu ermitteln, die in der relevanten Metrik relativ stark vertreten ist. Das können Kunden sein, die niedrige Bewertungen abgegeben haben, oder Häuser, mit denen sich hohe Preise erzielen lassen.
 
-Die Entscheidungsstruktur erläuternde jeder dieser Faktoren und versucht, welcher Faktor sie das beste erhalten, Grund *teilen*. Z. B. Wenn Sie die Daten, um nur große Enterprise-Kunden filtern, werden, die Kunden zu trennen, die eine hohe Bewertung und eine niedrige Bewertung gegeben haben? Oder ist es möglicherweise besser, Filtern die Daten, um nur Kunden zählen, die kommentiert, über die Sicherheit? 
+Anhand der Entscheidungsstruktur wird jeder erläuternde Faktor analysiert und versucht zu ermitteln, welcher die beste *Aufteilung* bietet. Wenn die Daten z. B. so gefiltert werden, dass nur große Unternehmenskunden berücksichtigt werden, stellt sich beispielsweise die Frage, ob Kunden aussortiert werden, die eine hohe bzw. niedrige Bewertung abgegeben haben. Weiterhin stellt sich die Frage, ob es sich als besser erweist, die Daten so zu filtern, dass nur Kunden berücksichtigt werden, die eine Bewertung zum Thema Sicherheit abgegeben haben. 
 
-Nachdem Sie die Entscheidungsstruktur eine Teilung der Fall ist, wird die Untergruppe von Daten und bestimmt die nächste beste Teilung für diese Daten. In diesem Fall wird die Untergruppe "Kunden, die zur Sicherheit kommentiert. Nach jeder Aufteilung betrachtet sie als auch, ob genügend Datenpunkte für diese Gruppe ausreichend Vertreter abzuleiten, ein Muster aus oder gibt an, ob es sich um eine Anomalie in der Daten und nicht auf einem echten Segment ist sein kann. Einen anderen statistischer Test wird angewendet, um die statistische Bedeutung der teilungsbedingung mit p-Wert von 0,05 zu finden. 
+Nachdem im Rahmen der Entscheidungsstruktur eine Aufteilung vorgenommen wurde, wird für die Untergruppe von Daten die nächstbeste Aufteilung für diese Daten ermittelt. In diesem Beispiel besteht die Untergruppe aus Kunden, die eine Bewertung zum Thema Sicherheit abgegeben haben. Nach jeder Aufteilung wird ebenfalls analysiert, ob in dieser Gruppe genügend Datenpunkte vorliegen und diese somit als repräsentative Gruppe in Frage kommt, von der ein Muster abgeleitet werden kann. Es könnte sich aber auch um eine Anomalie in den Daten und somit nicht um ein zu berücksichtigendes Segment handeln. Ein weiterer statistischer Test mit dem p-Wert 0,05 wird durchgeführt, um die statistische Relevanz der Aufteilungsbedingung zu überprüfen. 
 
-Klicken Sie nach die Entscheidungsstruktur akzeptiert alle die Teilungen zusammen, wie z. B. Sicherheit Kommentare und großen Unternehmen, und erstellt Power BI-Filter. Diese Filter werden im Visual zu einem Segment kombiniert. 
+Nach der Ausführung der Entscheidungsstruktur werden aus allen Aufteilungen wie Feedback zum Thema Sicherheit und große Unternehmen Power BI-Filter erstellt. Diese Filter werden im Visual zu einem Segment kombiniert. 
  
-**Warum bestimmte Faktoren Einflussfaktoren bzw. Beenden Einflussfaktoren wird, wenn ich weitere Felder in Bewegen der *Erläutern von* Feld?**
+**Warum werden bestimmte zu Einflussfaktoren bzw. aus den Einflussfaktoren entfernt, wenn mehr Felder in das Feld *Erläuterung nach* verschoben werden?**
 
-Das Visual wertet alle erläuternden Faktoren zusammen aus. Ein Faktor ist möglicherweise ein Schlüsselperson selbst, aber wenn er mit anderen Faktoren gilt es ist u. u. nicht. Angenommen, Sie möchten zum Analysieren des worauf gründet sich einen Haus Preis hoch sein, mit Schlafzimmern und einer Größe von Haus als erläuternde Faktoren wird:
+Das Visual wertet alle erläuternden Faktoren zusammen aus. So kann ein Faktor für sich genommen ein Einflussfaktor sein, unter Berücksichtigung anderer Faktoren ist er es jedoch möglicherweise nicht. Angenommen, Sie möchten analysieren, wodurch der Preis eines Hauses steigt und verwenden dabei die erläuternden Faktoren „Schlafzimmer“ und „Fläche“:
 
-- Selbst möglicherweise weitere Schlafzimmer einen Treiber für Haus Preise hoch ist.
-- Einschließlich House-Größe in der Analyse bedeutet, dass Sie jetzt sehen Sie sich, was geschieht mit Schlafzimmer, während die Größe des Hauses konstant bleibt.
-- Wenn Haus Größe am 1.500 Quadratfuß festgelegt ist, ist es unwahrscheinlich, dass eine kontinuierliche Anstieg der Anzahl von Schlafzimmern – den Preis des Hauses erheblich erhöht wird. 
-- Schlafzimmern sind möglicherweise nicht in der einen Faktor so wichtig wie vor Haus Größe betrachtet wurde. 
+- Als einzelner Faktor kann die Anzahl der Schlafzimmer den Preis eines Hauses erhöhen.
+- Unter Einbeziehung der Fläche in die Analyse wird untersucht, wie sich die Anzahl der Schlafzimmer bei konstanter Fläche des Hauses auswirkt.
+- Bei einer festen Hausgröße von 1.500 Quadratfuß ist es unwahrscheinlich, dass eine kontinuierliche Zunahme bei der Anzahl der Schlafzimmer eine deutliche Erhöhung des Immobilienpreises zur Folge hat. 
+- Die Anzahl der Schlafzimmer stellt somit kein so wichtiger Faktor mehr dar wie vor der Berücksichtigung der Hausgröße. 
 
 
 
