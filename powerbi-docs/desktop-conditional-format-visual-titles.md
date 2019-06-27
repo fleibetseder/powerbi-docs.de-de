@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: b90ef66d2c118a70f1b18ed4fe302ce1db23e45c
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "64769746"
@@ -57,7 +57,7 @@ Nachdem Sie den DAX-Ausdruck für das Feld, die Sie in Ihrem Modell erstellen er
 
 Wählen Sie das Feld, und wenden Sie es, wechseln Sie zu der **Visualisierungen** Bereich. In der **Format** wählen Sie im Bereich **Titel** um die Optionen für das visuelle Element anzuzeigen. 
 
-Wenn Sie mit der rechten Maustaste **Titeltext**, ein Kontextmenü angezeigt, die Sie auswählen können ***fx * bedingte Formatierung**. Wenn Sie das Menüelement im Auswählen einer **Titeltext** Dialogfeld wird angezeigt. 
+Wenn Sie mit der rechten Maustaste **Titeltext**, ein Kontextmenü angezeigt, die Sie auswählen können ***fx* bedingte Formatierung**. Wenn Sie das Menüelement im Auswählen einer **Titeltext** Dialogfeld wird angezeigt. 
 
 ![Screenshot des Dialogfeld titeltextfeld](media/desktop-conditional-formatting-visual-titles/expression-based-title-02b.png)
 
