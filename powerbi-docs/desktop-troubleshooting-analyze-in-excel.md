@@ -10,14 +10,15 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 083d78552c124c3a53d669357678fb473dfcd5f2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0a80a75765d6e25f42163953e28b544171e8fdb2
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514555"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408333"
 ---
 # <a name="troubleshooting-analyze-in-excel"></a>Problembehandlung bei „In Excel analysieren“
+
 Es kann bei der Verwendung von „In Excel analysieren“ vorkommen, dass ein unerwartetes Ergebnis auftritt oder eine Funktion nicht wie erwartet funktioniert. Diese Seite enthält Lösungen für häufige Probleme bei der Verwendung von „In Excel analysieren“.
 
 > [!NOTE]
@@ -57,8 +58,6 @@ Sie können die neueste Version der Excel-OLE DB-Anbieter-Bibliotheken über die
 Falls die Clientbibliotheken Ihres Excel-OLE DB-Anbieters auf dem aktuellen Stand sind, wird ein Dialogfeld angezeigt, das wie folgt aussieht:
 
 ![](media/desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_3.png)
-
-C:\Users\davidi\Desktop\powerbi-content-pr\articles\media\powerbi-desktop-troubleshooting-analyze-in-excel
 
 Falls jedoch die zu installierende Version neuer ist als die auf dem Computer, wird folgendes Dialogfeld angezeigt:
 

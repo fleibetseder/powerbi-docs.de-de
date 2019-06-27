@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: d62ad0624a19666e4ac1e59927df9eade6e4df33
-ms.sourcegitcommit: 8054aa9622d97b196ef6cd087fd9e1d8dad3d9de
+ms.openlocfilehash: 3465d9280af84a97ebf2ea5ec90ff60daf9e96fa
+ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67144932"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389552"
 ---
 # <a name="power-bi-webinars"></a>Power BI-Webinare
 
@@ -23,10 +23,6 @@ Registrieren Sie sich für unsere nächsten Livewebinare, oder sehen Sie sich un
 ## <a name="upcoming-webinars"></a>Kommende Webinare
 
 Registrieren Sie sich, um sich von Power BI-Experten informieren zu lassen und an Live-Q&A-Sitzungen teilzunehmen.
-
-**Microsoft Runs on Power BI: Using Power BI in Modern Treasury**
-<br>Referenten: Pankaj Gudimella und Guru Kirthigavasan
-<br>[Registrieren Sie sich für die Teilnahme am 25. Juni, 10:00 Uhr – 11:00 Uhr PST.](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html?LCID=EN-US)
 
 **Power BI: How to Get Insights from Your Workday HR Data**
 <br>Referenten: Iman Eftekhari, Julia Paton von Agile Analytics und Shahram Karimi von QBE Insurance
@@ -61,6 +57,10 @@ Machen Sie sich mithilfe dieser beliebten On-Demand-Webinare mit Power BI vertra
 **Microsoft Runs on Power BI – Financial Planning & Analysis Made Easy** (Microsoft und Power BI: Finanzielle Planung und Analyse leichtgemacht)
 <br>von Cory Hrncirik und Miguel Martinez
 <br>[Jetzt registrieren und ansehen](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)
+
+**Microsoft Runs on Power BI: Using Power BI in Modern Treasury**
+<br>Referenten: Pankaj Gudimella und Guru Kirthigavasan
+<br>[Jetzt registrieren und ansehen](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html?LCID=EN-US)
 
 **Supercharge Your Applications Using the Power BI JavaScript API** (Steigern der Leistung Ihrer Anwendungen mithilfe der Power BI-JavaScript-API)
 <br>von Nimrod Shalit
