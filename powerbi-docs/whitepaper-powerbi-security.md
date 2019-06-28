@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/02/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: e75810d18b39619d249c3acd9a9140b3d19d5f35
-ms.sourcegitcommit: ec5b6a9f87bc098a85c0f4607ca7f6e2287df1f5
+ms.openlocfilehash: 9aa80c336fa7918632b71b25f8f57b2798fa52e5
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66051347"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418700"
 ---
 # <a name="power-bi-security-whitepaper"></a>Whitepaper zur Sicherheit in Power BI
 
@@ -46,7 +46,7 @@ Jede Power BI-Bereitstellung umfasst zwei Cluster – ein Web-Front-End (**WFE**
 
 ![Das Web-Front-End und das -Back-End](media/whitepaper-powerbi-security/powerbi-security-whitepaper_01.png)
 
-Power BI verwendet Azure Active Directory (**AAD**) zur Kontoauthentifizierung und -verwaltung. Für den Authentifizierungsvorgang und zum Herunterladen von statischen Inhalten und Dateien verwendet Power BI außerdem den **Azure Traffic Manager (ATM)**, um den Benutzerverkehr an das nächstgelegene Rechenzentrum weiterzuleiten, das durch den DNS-Eintrag des Clients bestimmt wird, der eine Verbindung herstellen möchte. Powerbi verwendet dem geografisch am nächsten WFE-Server für die effiziente Verteilung der erforderlichen statischen Inhalte und Dateien an Benutzer, mit Ausnahme von benutzerdefinierten Visuals, die übermittelt werden, mithilfe der **Azure Content Delivery Network (CDN)**.
+Power BI verwendet Azure Active Directory (**AAD**) zur Kontoauthentifizierung und -verwaltung. Für den Authentifizierungsvorgang und zum Herunterladen von statischen Inhalten und Dateien verwendet Power BI außerdem den **Azure Traffic Manager (ATM)** , um den Benutzerverkehr an das nächstgelegene Rechenzentrum weiterzuleiten, das durch den DNS-Eintrag des Clients bestimmt wird, der eine Verbindung herstellen möchte. Powerbi verwendet dem geografisch am nächsten WFE-Server für die effiziente Verteilung der erforderlichen statischen Inhalte und Dateien an Benutzer, mit Ausnahme von benutzerdefinierten Visuals, die übermittelt werden, mithilfe der **Azure Content Delivery Network (CDN)** .
 
 ### <a name="the-wfe-cluster"></a>Der WFE-Cluster
 
@@ -225,7 +225,7 @@ Bei cloudbasierten Datenquellen verschlüsselt die Datenverschiebungsrolle die V
         - Wenn das Dataset für die Aktualisierung festgelegt ist, werden die Anmeldeinformationen verschlüsselt in der Azure SQL-Datenbank-Instanz der Datenverschiebung gespeichert. Der Verschlüsselungsschlüssel wird auf dem Computer gespeichert, der das Gateway für die Infrastruktur des Kunden ausführt.
         - Wenn das Dataset nicht für die Aktualisierung festgelegt ist, werden keine Anmeldeinformationen für die Datenquellen gespeichert.
 
-1. Data
+1. Daten
 
     a. Analysis Services (lokal) und DirectQuery: Im Power BI-Dienst werden keine Datasets gespeichert.
 
@@ -302,7 +302,7 @@ Non-Volatile-Geräte sind Geräte, die Arbeitsspeicher verfügen, die ohne Konst
     c. Push-Daten: keine (nicht zulässig)
 
     d. ETL: keine (wie im Abschnitt **Ruhende Daten** oben beschrieben werden weder Anmeldeinformationen noch anderes im Computeknoten gespeichert)
-4. Data
+4. Daten
 
     Einige Datenartefakte können für einen begrenzten Zeitraum auf dem Datenträger der Computeknoten gespeichert werden.
 
@@ -380,11 +380,11 @@ Im Folgenden finden Sie häufige Sicherheitsfragen und dazugehörige Antworten f
 
 **Wie verbinden sich Benutzer während der Verwendung von Power BI mit Datenquellen und erhalten Zugriff auf diese?**
 
-* **Power BI-Anmeldeinformationen und Domainanmeldeinformationen:** Benutzer melden sich in Power BI mit einer E-Mail-Adresse an. Wenn ein Benutzer versucht, sich mit einer Datenressource zu verbinden, übergibt Power BI die E-Mail-Adresse der Power BI-Anmeldung als Anmeldeinformationen. Für mit Domänen verbundene Ressourcen (entweder lokal oder cloudbasiert) wird die Anmelde-E-Mail-Adresse vom Verzeichnisdienst mit einem _Benutzerprinzipalname_  ([User Principal Name, UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) abgeglichen, um zu bestimmen, ob ausreichende Anmeldeinformationen vorliegen, um den Zugriff zu ermöglichen. Für Organisationen, die zur Anmeldung in Power BI geschäftliche E-Mail-Adressen verwenden (dieselbe E-Mail-Adresse wird verwendet, um sich bei Arbeitsressourcen anzumelden, z. B. _david@contoso.com_), erfolgt die Zuordnung in der Regel ohne weitere Schritte. Für Organisationen, die keine geschäftlichen E-Mail-Adressen verwendet haben (z. B. _david@contoso.onmicrosoft.com_), muss die Verzeichniszuordnung zuerst erstellt werden, um den Zugriff auf lokale Ressourcen über Anmeldeinformationen der Power BI-Anmeldung zu ermöglichen.
+* **Power BI-Anmeldeinformationen und Domainanmeldeinformationen:** Benutzer melden sich in Power BI mit einer E-Mail-Adresse an. Wenn ein Benutzer versucht, sich mit einer Datenressource zu verbinden, übergibt Power BI die E-Mail-Adresse der Power BI-Anmeldung als Anmeldeinformationen. Für mit Domänen verbundene Ressourcen (entweder lokal oder cloudbasiert) wird die Anmelde-E-Mail-Adresse vom Verzeichnisdienst mit einem _Benutzerprinzipalname_  ([User Principal Name, UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) abgeglichen, um zu bestimmen, ob ausreichende Anmeldeinformationen vorliegen, um den Zugriff zu ermöglichen. Für Organisationen, die zur Anmeldung in Power BI geschäftliche E-Mail-Adressen verwenden (dieselbe E-Mail-Adresse wird verwendet, um sich bei Arbeitsressourcen anzumelden, z. B. _david@contoso.com_ ), erfolgt die Zuordnung in der Regel ohne weitere Schritte. Für Organisationen, die keine geschäftlichen E-Mail-Adressen verwendet haben (z. B. _david@contoso.onmicrosoft.com_ ), muss die Verzeichniszuordnung zuerst erstellt werden, um den Zugriff auf lokale Ressourcen über Anmeldeinformationen der Power BI-Anmeldung zu ermöglichen.
 
 * **SQL Server Analysis Services und Power BI:** Für Unternehmen, die lokale SQL Server Analysis Services verwenden, bietet Power BI das lokale Power BI-Datengateway. Dieses ist ein **Gateway**, wie das, auf das im vorherigen Abschnitt bereits verwiesen wurde.  Das lokale Power BI-Datengateway kann Sicherheit auf Rollenebene (role-level security, RLS) in Datenquellen erzwingen. Weitere Informationen zu RLS finden Sie weiter oben in diesem Artikel im Abschnitt **Benutzerauthentifizierung in Datenquellen**. Noch detailliertere Informationen finden Sie im Artikel [Lokales Datengateway](service-gateway-manage.md).
 
-  Zusätzlich können Organisationen Kerberos für **einmaliges Anmelden** (single sign-on, SSO) verwenden und sich nahtlos von Power BI aus mit lokalen Datenquellen, z.B. SQL Server, SAP HANA und Teradata, verbinden. Weitere Informationen und die genauen Konfigurationsanforderungen finden Sie unter [**Use Kerberos for SSO from Power BI to on-premises data sources (Verwenden von Kerberos für einmaliges Anmelden bei lokalen Daten über Power BI)**](https://docs.microsoft.com/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data).
+  Zusätzlich können Organisationen Kerberos für **einmaliges Anmelden** (single sign-on, SSO) verwenden und sich nahtlos von Power BI aus mit lokalen Datenquellen, z.B. SQL Server, SAP HANA und Teradata, verbinden. Weitere Informationen und die genauen Konfigurationsanforderungen finden Sie unter [**Use Kerberos for SSO from Power BI to on-premises data sources (Verwenden von Kerberos für einmaliges Anmelden bei lokalen Daten über Power BI)** ](https://docs.microsoft.com/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data).
 
 * **Nicht mit Domänen verknüpfte Verbindungen:** Für Datenverbindungen, die nicht mit einer Domäne verknüpft und nicht zu Sicherheit auf Rollenebene (Role Level Security, RLS) fähig sind, muss der Benutzer während der Verbindungssequenz Anmeldeinformationen bereitstellen. Diese werden dann von Power BI an die Datenquelle übergeben, um die Verbindung herzustellen. Wenn die Berechtigungen ausreichend sind, werden Daten aus der Datenquelle in den Power BI-Dienst geladen.
 
@@ -426,14 +426,11 @@ Im Folgenden finden Sie häufige Sicherheitsfragen und dazugehörige Antworten f
 
 **Wie werden Wiederherstellungsschlüssel verwendet und wo werden sie gespeichert, wenn mit dem lokalen Datengateway gearbeitet wird? Wie sieht es mit sicherer Anmeldeinformationsverwaltung aus?**
 
-* Während der Installation und Konfiguration eines Gateway gibt der Administrator einen **Wiederherstellungsschlüssel** für das Gateway ein. Dieser **Wiederherstellungsschlüssel** wird verwendet, um zwei Sätze noch stärkerer Schlüssel zu generieren:
+* Während der Installation und Konfiguration eines Gateway gibt der Administrator einen **Wiederherstellungsschlüssel** für das Gateway ein. Dass **Wiederherstellungsschlüssel** wird verwendet, um ein sicheres generieren **AES** symmetrischen Schlüssel. Ein **RSA** asymmetrischen Schlüssels wird auch zur gleichen Zeit erstellt.
 
-  - Ein asymmetrischer **RSA**-Schlüssel
-  - Ein symmetrischer **AES**-Schlüssel
+    Diese generierten Schlüssel (**RSA** und **AES**) werden in einer Datei gespeichert, die sich auf dem lokalen Computer befindet. Diese Datei ist ebenfalls verschlüsselt. Die Inhalte dieser Datei können nur von einem speziellen Windows-Computer entschlüsselt werden, und auch nur von diesem speziellen Gatewaydienstkonto.
 
-  Diese generierten Schlüssel (**RSA** und **AES**) werden in einer Datei gespeichert, die sich auf dem lokalen Computer befindet. Diese Datei ist ebenfalls verschlüsselt. Die Inhalte dieser Datei können nur von einem speziellen Windows-Computer entschlüsselt werden, und auch nur von diesem speziellen Gatewaydienstkonto.
-
-  Wenn ein Benutzer in der Power BI-Benutzeroberfläche Datenquellenanmeldeinformationen eingibt, werden die Anmeldeinformationen mit dem öffentlichen Schlüssel im Browser verschlüsselt. Das Gateway verschlüsselt dann die (bereits verschlüsselten) Anmeldeinformationen noch einmal mit einem symmetrischen AES-Schlüssel, bevor die Daten in Power BI gespeichert werden. Durch diesen Prozess ist sichergestellt, dass der Power BI-Dienst niemals auf die nicht verschlüsselten Daten zugreifen kann.
+    Wenn ein Benutzer in der Power BI-Benutzeroberfläche Datenquellenanmeldeinformationen eingibt, werden die Anmeldeinformationen mit dem öffentlichen Schlüssel im Browser verschlüsselt. Das Gateway entschlüsselt die Anmeldeinformationen, die mit dem privaten RSA-Schlüssel und verschlüsselt sie erneut mit einem symmetrischen AES-Schlüssel, bevor die Daten in Power BI-Dienst gespeichert werden. Durch diesen Prozess ist sichergestellt, dass der Power BI-Dienst niemals auf die nicht verschlüsselten Daten zugreifen kann.
 
 **Welche Kommunikationsprotokolle werden vom lokalen Datengateway verwendet, und wie werden sie geschützt?**
 
