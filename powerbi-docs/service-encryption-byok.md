@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 06/18/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 7adcfeec771796aa9fe322512f8ca8584559cea0
-ms.sourcegitcommit: c122c1a8c9f502a78ccecd32d2708ab2342409f0
+ms.openlocfilehash: 5c93a50ce481c5fad899c1911b30100dca7cb841
+ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66829386"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67264486"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Bring Your Own Key für Verschlüsselungsschlüssel in Power BI (Vorschauversion)
 
@@ -27,18 +27,17 @@ Durch BYOK können Complianceanforderungen leichter erfüllt werden, in denen Sc
 
 ## <a name="data-source-and-storage-considerations"></a>Was bei Datenquellen und Speicher zu beachten ist
 
-Wenn Sie BYOK verwenden möchten, müssen Sie Daten aus einer PBIX-Datei (Power BI Desktop) in den Power BI-Dienst hochladen. Wenn Sie eine Verbindung mit den Datenquellen in Power BI Desktop herstellen, müssen Sie für den Import einen Speichermodus angeben. Sie können BYOK nicht in den folgenden Szenarios verwenden:
+Wenn Sie BYOK verwenden möchten, müssen Sie Daten aus einer PBIX-Datei (Power BI Desktop) in den Power BI-Dienst hochladen. Sie können BYOK nicht in den folgenden Szenarios verwenden:
 
-- DirectQuery
 - Analysis Services-Liveverbindungen
 - Excel-Arbeitsmappen (es sei denn, die Daten werden zuerst in Power BI Desktop importiert)
 - Pushdatasets
 
-Im nächsten Abschnitt erfahren Sie, wie Sie den Azure Key Vault konfigurieren. Dort speichern Sie Ihre Verschlüsselungsschlüssel für BYOK.
+BYOK gilt nur für das der PBIX-Datei zugeordnete Dataset und nicht für die Abfrageergebniscaches für Kacheln und Visuals.
 
 ## <a name="configure-azure-key-vault"></a>Konfigurieren des Azure Key Vault
 
-Der Azure Key Vault ist ein Tool zum sicheren Speichern von und Zugreifen auf Geheimnisse, z. B. Verschlüsselungsschlüssel. Sie können einen vorhandenen Schlüsseltresor verwenden, um Ihre Verschlüsselungsschlüssel zu speichern, oder Sie können einen neuen speziell für Power BI erstellen.
+In diesem Abschnitt erfahren Sie, wie der Azure Key Vault, ein Tool zum sicheren Speichern von und Zugreifen auf Geheimnisse, z. B. Verschlüsselungsschlüssel, konfiguriert wird. Sie können einen vorhandenen Schlüsseltresor verwenden, um Ihre Verschlüsselungsschlüssel zu speichern, oder Sie können einen neuen speziell für Power BI erstellen.
 
 Die Anweisungen in diesem Abschnitt setzen grundlegende Kenntnisse des Azure Key Vault voraus. Weitere Informationen finden Sie unter [What is Azure Key Vault? (Was ist der Azure Key Vault?)](/azure/key-vault/key-vault-whatis). Sie können Ihren Schlüsseltresor folgendermaßen konfigurieren:
 
@@ -86,7 +85,7 @@ Wenn der Azure Key Vault ordnungsgemäß konfiguriert wurde, können Sie BYOK f�
 
 ## <a name="enable-byok-on-your-tenant"></a>Aktivieren von BYOK in Ihrem Mandanten
 
-Sie können BYOK mit PowerShell auf Mandantenebene aktivieren, indem Sie zunächst die Verschlüsselungsschlüssel in Ihrem Power BI-Mandanten hinzufügen, die Sie erstellt und im Azure Key Vault gespeichert haben. Anschließend weisen Sie diese Verschlüsselungsschlüssel je einer Premium-Kapazität zu, um den Inhalt in dieser Kapazität zu verschlüsseln.
+Sie können BYOK mit [PowerShell](https://www.powershellgallery.com/packages/MicrosoftPowerBIMgmt.Admin) auf Mandantenebene aktivieren, indem Sie zunächst die Verschlüsselungsschlüssel in Ihrem Power BI-Mandanten hinzufügen, die Sie erstellt und im Azure Key Vault gespeichert haben. Anschließend weisen Sie diese Verschlüsselungsschlüssel je einer Premium-Kapazität zu, um den Inhalt in dieser Kapazität zu verschlüsseln.
 
 ### <a name="important-considerations"></a>Wichtige Hinweise
 
@@ -98,35 +97,39 @@ Beachten Sie folgende Punkte, bevor Sie BYOK aktivieren:
 
 ### <a name="enable-byok"></a>Aktivieren von BYOK
 
-Sie müssen Mandantenadministrator im Power BI-Dienst und mit dem Cmdlet `Connect-PowerBIServiceAccount` angemeldet sein, um BYOK aktivieren zu können. Verwenden Sie dann `Add-PowerBIEncryptionKey`, um BYOK. Dies wird im folgenden Beispiel veranschaulicht:
+Sie müssen Mandantenadministrator im Power BI-Dienst und mit dem Cmdlet `Connect-PowerBIServiceAccount` angemeldet sein, um BYOK aktivieren zu können. Verwenden Sie dann [`Add-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/Add-PowerBIEncryptionKey), um BYOK zu aktivieren. Dies wird im folgenden Beispiel veranschaulicht:
 
 ```powershell
 Add-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'
 ```
 
-Das Cmdlet akzeptiert drei Parameter, die sich auf die Verschlüsselung für vorhandene und zukünftige Kapazitäten auswirken. Standardmäßig ist keiner der Parameter festgelegt:
+Das Cmdlet akzeptiert zwei Parameter, die sich auf die Verschlüsselung für vorhandene und zukünftige Kapazitäten auswirken. Standardmäßig ist keiner der Parameter festgelegt:
 
 - `-Activate`: Gibt an, dass dieser Schlüssel für alle vorhandenen Kapazitäten im Mandanten verwendet wird.
 
 - `-Default`: Gibt an, dass dieser Schlüssel jetzt der Standardschlüssel für den gesamten Mandanten ist. Wenn Sie eine neue Kapazität erstellen, erbt die Kapazität den Schlüssel.
 
-- `-DefaultAndActivate`: Gibt an, dass dieser Schlüssel für alle vorhandenen Kapazitäten im Mandanten und alle neu erstellten Kapazitäten verwendet wird.
+Wenn Sie `-Default` angeben, werden alle Kapazitäten, die nachfolgend in diesem Mandanten erstellt werden, mit dem angegebenen Schlüssel (oder dem neuen Standardschlüssel) verschlüsselt. Sie können den Standardvorgang nicht rückgängig machen. D. h., Sie können keine Premium-Kapazität in Ihrem Mandanten mehr erstellen, die nicht BYOK verwendet.
 
-Wenn Sie `-Default` oder `-DefaultAndActivate` angeben, werden alle Kapazitäten, die nachfolgend in diesem Mandanten erstellt werden, mit dem angegebenen Schlüssel (oder dem neuen Standardschlüssel) verschlüsselt. Sie können den Standardvorgang nicht rückgängig machen. D. h., Sie können keine Premium-Kapazität in Ihrem Mandanten mehr erstellen, die nicht BYOK verwendet.
-
-Sie können festlegen, wie BYOK in Ihrem Mandanten verwendet wird. Rufen Sie z. B. `Add-PowerBIEncryptionKey` ohne `-Activate`, `-Default` oder `-DefaultAndActivate` auf, um eine einzelne Kapazität zu verschlüsseln. Rufen Sie anschließend `Set-PowerBICapacityEncryptionKey` für die Kapazität auf, in der Sie BYOK aktivieren möchten.
+Sie können festlegen, wie BYOK in Ihrem Mandanten verwendet wird. Rufen Sie z. B. `Add-PowerBIEncryptionKey` ohne `-Activate` oder `-Default` auf, um eine einzelne Kapazität zu verschlüsseln. Rufen Sie anschließend `Set-PowerBICapacityEncryptionKey` für die Kapazität auf, in der Sie BYOK aktivieren möchten.
 
 ## <a name="manage-byok"></a>Verwalten von BYOK
 
 Power BI stellt zusätzliche Cmdlets zum Verwalten von BYOK in Ihrem Mandanten zur Verfügung:
 
-- Verwenden Sie `Get-PowerBIEncryptionKey`, um den Schlüssel abzurufen, den Ihr Mandant aktuell verwendet:
+- Verwenden Sie [`Get-PowerBICapacity`](/powershell/module/microsoftpowerbimgmt.capacities/get-powerbicapacity), um den Schlüssel abzurufen, der von einer Kapazität aktuell verwendet wird:
+
+    ```powershell
+    Get-PowerBICapacity -Scope Organization -ShowEncryptionKey
+    ```
+
+- Verwenden Sie [`Get-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiencryptionkey), um den Schlüssel abzurufen, den Ihr Mandant aktuell verwendet:
 
     ```powershell
     Get-PowerBIEncryptionKey
     ```
 
-- Verwenden Sie `Get-PowerBIWorkspaceEncryptionStatus`, um zu überprüfen, ob die Datasets in einem Arbeitsbereich verschlüsselt sind und ob ihr Verschlüsselungsstatus mit dem Arbeitsbereich synchron ist:
+- Verwenden Sie [`Get-PowerBIWorkspaceEncryptionStatus`](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiworkspaceencryptionstatus), um zu überprüfen, ob die Datasets in einem Arbeitsbereich verschlüsselt sind und ob ihr Verschlüsselungsstatus mit dem Arbeitsbereich synchron ist:
 
     ```powershell
     Get-PowerBIWorkspaceEncryptionStatus -Name'Contoso Sales'
@@ -134,13 +137,13 @@ Power BI stellt zusätzliche Cmdlets zum Verwalten von BYOK in Ihrem Mandanten z
 
     Beachten Sie, dass die Verschlüsselung auf Kapazitätsebene aktiviert wird, Sie den Verschlüsselungsstatus aber auf Datasetebene für den angegebenen Arbeitsbereich abrufen.
 
-- Verwenden Sie `Set-PowerBICapacityEncryptionKey`, um den Verschlüsselungsschlüssel für die Power BI-Kapazität zu aktualisieren:
+- Verwenden Sie [`Set-PowerBICapacityEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/set-powerbicapacityencryptionkey), um den Verschlüsselungsschlüssel für die Power BI-Kapazität zu aktualisieren:
 
     ```powershell
     Set-PowerBICapacityEncryptionKey-CapacityId 08d57fce-9e79-49ac-afac-d61765f97f6f -KeyName 'Contoso Sales'
     ```
 
-- Verwenden Sie `Use Switch-PowerBIEncryptionKey`, um den aktuell verwendeten Verschlüsselungsschlüssel zu wechseln (oder zu _rotieren_). Das Cmdlet aktualisiert `-KeyVaultKeyUri` für `-Name` des Schlüssels:
+- Verwenden Sie [`Switch-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/switch-powerbiencryptionkey), um die Version des Schlüssels, der für die Verschlüsselung verwendet wird, zu wechseln (oder zu _rotieren_). Das Cmdlet aktualisiert `-KeyVaultKeyUri` für `-Name` des Schlüssels:
 
     ```powershell
     Switch-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'

@@ -7,13 +7,13 @@ ms.service: powerbi
 ms.author: maggies
 author: maggiesMSFT
 ms.topic: hub-page
-ms:date: 05/10/2019
-ms.openlocfilehash: cebaf83edd2fab39502c7b2953922dec0446c8bc
-ms.sourcegitcommit: af2b2238fe77eaa1b2392a19a143a0250b8665cf
+ms:date: 06/10/2019
+ms.openlocfilehash: e1a6700f2f266cffb788f4d8b0f10be88f79e643
+ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "65533649"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67264449"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -38,7 +38,7 @@ ms.locfileid: "65533649"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Power BI für Verbraucher</h3>
-                                                    <p>Erste Schritte mit Power BI? Lernen Sie die verschiedenen Produkte und Dienste kennen, aus denen Power BI besteht, und erfahren Sie, welche Möglichkeiten diese Ihnen bieten.</p>
+                                                    <p>Verwenden Sie Berichte und Dashboards, die von anderen erstellt wurden, um Geschäftsentscheidungen zu treffen? Lernen Sie den Power BI-Dienst für Kunden kennen.</p>
                                                 </div>
                                             </div>
                                         </div>

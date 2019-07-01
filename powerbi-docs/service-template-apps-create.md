@@ -1,22 +1,22 @@
 ---
-title: Erstellen von Vorlagen-Apps in Power BI (Vorschauversion)
+title: Erstellen von Vorlagen-Apps in Power BI
 description: Wie Sie Vorlagen-Apps in Power BI erstellen, die Sie an jeden beliebigen Power BI-Kunden verteilen können.
-author: maggiesMSFT
+author: teddybercovitz
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/22/2019
-ms.author: maggies
-ms.openlocfilehash: 2dc9ae7eb7ecd82cdd6c9ea7ddbc6aa1fc70ca8b
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.date: 06/10/2019
+ms.author: tebercov
+ms.openlocfilehash: 8e08557c475f06c8a32cebb0b7ca0fe1054cf266
+ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751188"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67264546"
 ---
-# <a name="create-a-template-app-in-power-bi-preview"></a>Erstellen einer Vorlagen-App in Power BI (Vorschauversion)
+# <a name="create-a-template-app-in-power-bi"></a>Erstellen einer Vorlagen-App in Power BI
 
 Mit den neuen *Vorlagen-Apps* von Power BI können Power BI-Partner Power BI-Apps ohne oder mit nur wenig Code erstellen und für Power BI-Kunden bereitstellen.  In diesem Artikel finden Sie detaillierte Anweisungen für das Erstellen einer Power BI-Vorlagen-App.
 
@@ -31,20 +31,7 @@ Zum Erstellen einer Vorlagen-App ist Folgendes erforderlich:
 - [Power BI Pro-Lizenz](service-self-service-signup-for-power-bi.md)
 - [Installation von Power BI Desktop](desktop-get-the-desktop.md) (optional)
 - Vertrautheit mit den [grundlegenden Konzepten von Power BI](service-basic-concepts.md)
-- Berechtigungen zum Erstellen einer Vorlagen-App Details finden Sie unter Power BI-[Verwaltungsportal > Vorlagen-App-Einstellungen](service-admin-portal.md#template-apps-settings-preview).
-
-## <a name="enable-app-developer-mode"></a>Aktivieren des App-Entwicklermodus
-
-Um eine Vorlagen-App zu erstellen, die Sie an andere Power BI-Mandanten verteilen können, müssen Sie sich im App-Entwicklermodus befinden. Andernfalls erstellen Sie nur eine App für Power BI-Anwender in Ihrer eigenen Organisation.
-
-1. Öffnen Sie den Power BI-Dienst in einem Browser.
-2. Navigieren Sie zu **Settings** > **General** > **Developer** > **Enable template app development mode** (Einstellungen > Allgemein > Entwickler > Entwicklermodus für Vorlagen-Apps aktivieren).
-
-    ![Aktivieren von Vorlagen-Apps](media/service-template-apps-create/power-bi-dev-template-app.png)
-
-    Wenn diese Option nicht angezeigt wird, kontaktieren Sie Ihren Power BI-Administrator, damit er Ihnen im Verwaltungsportal [Berechtigungen für die Entwicklung von Vorlagen-Apps](service-admin-portal.md#template-apps-settings-preview) gewährt.
-
-3. Klicken Sie auf **Übernehmen**.
+- Berechtigungen, um eine Vorlagen-App öffentlich freizugeben. Details finden Sie unter Power BI-[Verwaltungsportal > Vorlagen-App-Einstellungen](service-admin-portal.md#template-apps-settings).
 
 ## <a name="create-the-template-app-workspace"></a>Erstellen des Arbeitsbereichs für eine Vorlagen-App
 
@@ -54,9 +41,9 @@ Um eine Vorlagen-App zu erstellen, die Sie an andere Power BI-Mandanten verteile
 
     ![App-Arbeitsbereich erstellen](media/service-template-apps-create/power-bi-new-workspace.png)
 
-2. Klicken Sie unter **App-Arbeitsbereich erstellen** in **Vorschau der verbesserten Arbeitsbereiche** auf **Jetzt ausprobieren**.
+2. Wählen Sie unter **App-Arbeitsbereich erstellen** die Option **Upgrade auf neue Version durchführen** aus.
 
-    ![Ausprobieren neuer Arbeitsbereiche](media/service-template-apps-create/power-bi-try-now-new-workspace.png)
+    ![Ausprobieren neuer Arbeitsbereiche](media/service-template-apps-create/power-bi-upgrade-new.png)
 
 3. Geben Sie einen Namen und für Ihren App-Arbeitsbereich ein und fügen Sie optional eine Beschreibung und ein Bild des Logos hinzu.
 
@@ -70,13 +57,13 @@ Um eine Vorlagen-App zu erstellen, die Sie an andere Power BI-Mandanten verteile
 
 ## <a name="create-the-content-in-your-template-app"></a>Erstellen des Inhalts in Ihrer Vorlagen-App
 
-Wie in einem regulären Power BI-Arbeitsbereich, müssen Sie im nächsten Schritt die Inhalte im Arbeitsbereich erstellen.  In dieser Vorschauversion der Vorlagen-Apps unterstützen wir nur eine App pro Typ: ein Dataset, einen Bericht und ein Dashboard.
+Wie in einem regulären Power BI-Arbeitsbereich, müssen Sie im nächsten Schritt die Inhalte im Arbeitsbereich erstellen.  
 
 - [Erstellen Sie Ihren Power BI-Inhalt](power-bi-creator-landing.md) in Ihrem Arbeitsbereich.
 
 Wenn Sie Parameter in Power Query verwenden, stellen Sie sicher, dass diese einen klar definierten Typ aufweisen (z.B. Text). Die Typen „Any“ und „Binary“ werden nicht unterstützt.
 
-Unter [Tips for authoring template apps in Power BI (preview) (Tipps für die Erstellung von Vorlagen-Apps (Vorschauversion))](service-template-apps-tips.md) finden Sie Vorschläge, die Sie beim Erstellen von Berichten und Dashboards für Ihre Vorlagen-App beachten können.
+Unter [Tips for authoring template apps in Power BI (Tipps für die Erstellung von Vorlagen-Apps)](service-template-apps-tips.md) finden Sie Vorschläge, die Sie beim Erstellen von Berichten und Dashboards für Ihre Vorlagen-App beachten können.
 
 ## <a name="create-the-test-template-app"></a>Erstellen der Test-Vorlagen-App
 
@@ -174,10 +161,10 @@ Betrachten wir die einzelnen Phasen nun etwas genauer:
 10. Wenn Sie bereit sind, Ihre App in die Präproduktionsphase höherzustufen, um Tests außerhalb Ihres Mandanten durchzuführen, wechseln Sie zurück in den **Release Management**-Bereich, und wählen Sie **Promote app** (App höher stufen) aus. 
 
     ![App in die Präproduktionsphase hochstufen](media/service-template-apps-create/power-bi-template-app-promote.png)
-
     >[!NOTE]
     > Wenn die App höher gestuft wird, wird Sie außerhalb Ihrer Organisation öffentlich verfügbar.
 
+    Wenn diese Option nicht angezeigt wird, kontaktieren Sie Ihren Power BI-Administrator, damit er Ihnen im Verwaltungsportal [Berechtigungen für die Entwicklung von Vorlagen-Apps](service-admin-portal.md#template-apps-settings) gewährt.
 11. Klicken Sie auf **Promote** (Höher stufen), um Ihre Auswahl zu bestätigen.
 12. Kopieren Sie diese neue URL, um sie zum Testen außerhalb Ihres Mandanten freizugeben. Diesen Link können Sie auch senden, um mit dem Verteilen Ihrer App auf AppSource zu beginnen. Erstellen Sie hierzu ein [neues Cloud-Partnerportal-Angebot](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). Übermitteln Sie nur Links für die Produktion an das Cloud-Partnerportal. Sobald die App genehmigt wurde und Sie die Benachrichtigung erhalten haben, dass sie in AppSource bereitgestellt wird, können Sie dieses Paket in die Produktionsphase in Power BI höher stufen.
 13. Wenn Ihre App bereit ist für die Produktion oder für die Freigabe über AppSource, wechseln Sie zurück in den **Release Management**-Bereich, und wählen Sie **Promote app** (App höher stufen) neben **Pre-production** (Präproduktion) aus.
@@ -188,25 +175,6 @@ Betrachten wir die einzelnen Phasen nun etwas genauer:
     ![App in der Produktionsphase](media/service-template-apps-create/power-bi-template-app-production.png)
 
 Um Ihre App für tausende von Power BI-Benutzern weltweit verfügbar zu machen, empfehlen wir Ihnen die Freigabe über AppSource. Weitere Informationen darüber finden Sie unter [Power BI Application offer (Angebot für Power BI-Anwendungen)](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
-
-## <a name="update-your-app"></a>Aktualisieren Ihrer App
-
-Da sich Ihre App nun in der Produktionsphase befindet, können Sie in die Testphase zurückkehren, ohne den Status der App in der Produktionsphase ändern zu müssen.
-
-1. Klicken Sie im **Release Management**-Bereich auf **Create app** (App erstellen).
-2. Wechseln Sie zurück in den App-Erstellungsprozess.
-3. Nachdem Sie die Kategorien **Branding**, **Content** (Inhalt), **Control** (Steuerung) und **Access** (Zugriff) eingestellt haben, klicken Sie erneut auf **Create app** (App erstellen).
-4. Wählen Sie **Close** (Schließen) aus, und wechseln Sie zurück zu **Release Management**.
-
-   Wie Sie sehen, haben Sie nun zwei Versionen: Die Version in der Produktionsphase und zusätzlich eine neue Version in der Testphase.
-
-    ![Zwei Versionen einer Vorlagen-App](media/service-template-apps-create/power-bi-template-app-2-versions.png)
-
-5. Wenn Sie bereit sind, Ihre App in die Präproduktionsphase höherzustufen, um Tests außerhalb Ihres Mandanten durchzuführen, wechseln Sie zurück in den Release Management-Bereich, und wählen Sie **Promote app** (App höher stufen) neben **Testing** (Tests) aus.
-6. Ihr Link ist nun live geschaltet. Senden Sie ihn noch mal an das Cloud-Partnerportal, indem Sie die Schritte unter [Aktualisieren eines Power BI-App-Angebots](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer) befolgen.
-
->[!NOTE]
->Stufen Sie Ihre App nur höher in die Produktionsphase, nachdem sie vom Cloud-Partnerportal genehmigt wurde und Sie sie veröffentlicht haben.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -1,22 +1,22 @@
 ---
-title: 'Power BI (Vorschau): Verteilen von Vorlagen-Apps in Ihrer Organisation'
+title: 'Verteilen von Vorlagen-Apps in Ihrer Organisation: Power BI'
 description: Erfahren Sie mehr über das Installieren, Anpassen und Verteilen von Vorlagen-Apps in Ihrer Organisation mit Power BI.
-author: maggiesMSFT
+author: teddybercovitz
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/19/2019
-ms.author: maggies
-ms.openlocfilehash: 0671dfb324b3d66a9dee9585f94d3cb6825fb5eb
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.date: 06/10/2019
+ms.author: tebercov
+ms.openlocfilehash: 158345c44f8801a98e19dcd9b4c7dde14aa6126b
+ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751235"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67264535"
 ---
-# <a name="install-and-distribute-template-apps-in-your-organization---power-bi-preview"></a>Power BI (Vorschau): Installieren und Verteilen von Vorlagen-Apps in Ihrer Organisation
+# <a name="install-and-distribute-template-apps-in-your-organization---power-bi"></a>Installieren und Verteilen von Vorlagen-Apps in Ihrer Organisation: Power BI
 
 Sind Sie Power BI-Analyst? Wenn dies der Fall ist, erfahren Sie in diesem Artikel, wie Sie *Vorlagen-Apps* installieren, um eine Verbindung mit den von Ihnen im Geschäftsalltag verwendeten Diensten wie Salesforce, Microsoft Dynamics und Google Analytics herzustellen. Sie können das Dashboard und Berichte gemäß den Anforderungen Ihrer Organisation ändern und als *App* an Ihre Kollegen verteilen. 
 
@@ -55,14 +55,13 @@ Klicken Sie im Browser auf den folgenden Link, um AppSource mit einem Filter fü
 
 3. Suchen Sie nach einer App, und klicken Sie dann auf **Jetzt holen**.
 
-2. Klicken Sie im Dialogfeld auf **Installieren**.
+4. Klicken Sie im Dialogfeld auf **Installieren**.
 
-    Wenn Sie über eine Power BI Pro-Lizenz verfügen, wird die App mit dem zugehörigen App-Arbeitsbereich installiert. Sie können die App im zugehörigen Arbeitsbereich anpassen.
+    ![App installieren:](media/service-template-apps-install-distribute/power-install-dialog.png) Wenn Sie über eine Power BI Pro-Lizenz verfügen, wird die App mit dem zugehörigen App-Arbeitsbereich installiert. Sie können die App im zugehörigen Arbeitsbereich anpassen.
 
-    Nach der Installation wird eine Benachrichtigung angezeigt, die angibt, dass Ihre App bereit ist. 
-
-3. Klicken Sie auf **Zu App wechseln**.
-4. Wählen Sie unter **Erste Schritte mit Ihrer neuen App** eine der drei Optionen aus:
+    Nach der Installation wird eine Benachrichtigung angezeigt, die angibt, dass Ihre App bereit ist.
+4. Klicken Sie auf **Zu App wechseln**.
+5. Wählen Sie unter **Erste Schritte mit Ihrer neuen App** eine der drei Optionen aus:
 
     ![Erste Schritte mit Ihrer neuen App](media/service-template-apps-create/power-bi-template-app-get-started.png)
 
@@ -70,13 +69,22 @@ Klicken Sie im Browser auf den folgenden Link, um AppSource mit einem Filter fü
     - **Daten verbinden:** Hiermit können Sie die Datenquelle für die Beispieldaten in Ihre eigene Datenquelle ändern. Sie können die Datasetparameter und die Anmeldeinformationen für die Datenquelle neu definieren. Weitere Informationen finden Sie im Abschnitt [Known limitations (Bekannte Einschränkungen)](service-template-apps-tips.md#known-limitations) im Artikel mit Tipps zu Vorlagen-Apps. 
     - **Zu Arbeitsbereich wechseln** (die umfangreichste Option): Sie können beliebige Änderungen vornehmen, die vom App-Ersteller erlaubt werden.
 
-    Alternativ können Sie dieses Dialogfeld überspringen und direkt über **Arbeitsbereiche** im linken Navigationsbereich auf den zugehörigen Arbeitsbereich zugreifen.   
+    Alternativ können Sie dieses Dialogfeld überspringen und direkt über **Arbeitsbereiche** im linken Navigationsbereich auf den zugehörigen Arbeitsbereich zugreifen.
+    >[!NOTE]
+    >Durch das Installieren einer App wurden jeweils eine *Organisations-App* sowie ein *App-Arbeitsbereich* erstellt. Hier finden Sie weitere Informationen zum [Verteilen von Apps in Power BI](service-create-distribute-apps.md).
  
-5. Bevor Sie die App für Ihre Kollegen freigeben, sollten Sie sie mit Ihren eigenen Daten verbinden. Möglicherweise sollten Sie den Bericht oder das Dashboard für Ihre Organisation anpassen. Zu diesem Zeitpunkt können Sie außerdem andere Berichte oder Dashboards hinzufügen.
+6. Bevor Sie die App für Ihre Kollegen freigeben, sollten Sie sie mit Ihren eigenen Daten verbinden. Möglicherweise sollten Sie den Bericht oder das Dashboard für Ihre Organisation anpassen. Zu diesem Zeitpunkt können Sie außerdem andere Berichte oder Dashboards hinzufügen.
+
+   Wenn Sie einen Installationslink für eine App auswählen, die nicht in AppSource aufgeführt ist, müssen Sie in einem daraufhin angezeigten Dialogfeld Ihre Auswahl bestätigen.
+
+   ![Installieren der App](media/service-template-apps-install-distribute/power-install-unvalidated-dialog.png)
+
+   >[!NOTE]
+   >Damit Sie Vorlagen-Apps installieren können, die nicht in AppSource aufgeführt sind, müssen Sie diese mithilfe Ihrer Administratorberechtigungen anfordern. Details finden Sie unter Power BI-[Verwaltungsportal > Vorlagen-App-Einstellungen](service-admin-portal.md#template-apps-settings).
 
 ## <a name="update-and-distribute-the-app"></a>Aktualisieren und Verteilen der App
 
-Nachdem Sie die App für Ihre Organisation aktualisiert haben, können Sie sie veröffentlichen. Die Schritte gleichen dem Veröffentlichen jeder anderen App. 
+Nachdem Sie die App für Ihre Organisation aktualisiert haben, können Sie sie veröffentlichen. Die Schritte gleichen dem Veröffentlichen jeder anderen App.
 
 1. Wenn Sie die Anpassung abgeschlossen haben, klicken Sie in oberen rechten Ecke der Arbeitsbereichslistenansicht auf **App aktualisieren**.  
 
@@ -106,6 +114,6 @@ Nachdem Sie die App für Ihre Organisation aktualisiert haben, können Sie sie v
 
 
 
-￼ 
+. 
 
  

@@ -1,22 +1,22 @@
 ---
-title: Was sind Power BI-Vorlagen-Apps? (Vorschau)
+title: Was sind Power BI-Vorlagen-Apps?
 description: Dieser Artikel enthält eine Übersicht über Vorlagen-Apps in Power BI. Erfahren Sie, wie Sie Power BI-Apps ohne oder mit nur wenig Code erstellen, und diese dann für Power BI-Kunden bereitstellen.
-author: maggiesMSFT
+author: teddybercovitz
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/26/2019
-ms.author: maggies
-ms.openlocfilehash: 600e2ed603773cada415f603202cc72f22e0d25b
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.date: 06/24/2019
+ms.author: tebercov
+ms.openlocfilehash: c05b53a5fd61d348b6d304b17123d5f2497ab647
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751110"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408210"
 ---
-# <a name="what-are-power-bi-template-apps-preview"></a>Was sind Power BI-Vorlagen-Apps? (Vorschau)
+# <a name="what-are-power-bi-template-apps"></a>Was sind Power BI-Vorlagen-Apps?
 
 Mit den neuen *Vorlagen-Apps* von Power BI können Power BI-Partner Power BI-Apps ohne oder mit nur wenig Code erstellen und für Power BI-Kunden bereitstellen.  Dieser Artikel enthält eine Übersicht über Vorlagen-Apps in Power BI.
 
@@ -37,7 +37,7 @@ Der allgemeine Prozess zum Entwickeln und Übermitteln einer Vorlagen-App umfass
 | **Drei** | |  | Stufen Sie das Testpaket auf die Präproduktion für die Validierung außerhalb Ihres Power BI-Mandanten auf, und übermitteln Sie es an AppSource.  |  | Erstellen Sie ein Angebot für Ihre Power BI-Vorlagen-App mit Ihrem Präproduktionspaket, und starten Sie den Validierungsprozess. |
 | **Vier** | |  | Stufen Sie das Präproduktionspaket zur Produktion auf. |  | Schalten Sie die App „Live“. |
 
-## <a name="requirements"></a>Anforderungen
+## <a name="before-you-begin"></a>Vorbereitung
 
 Zum Erstellen der Vorlagen-App benötigen Sie zunächst die erforderlichen Berechtigungen. Informationen dazu finden Sie in den Vorlagen-App-Einstellungen im Power BI-Verwaltungsportal. 
 
@@ -57,7 +57,7 @@ Im Folgenden werden die allgemeinen Schritte aufgeführt.
 
 1. Erstellen Sie ein Testpaket, um die Vorlagen-App innerhalb Ihrer Organisation selbst zu testen. 
 
-1. Stufen Sie die Test-App zur Präproduktion auf, um die App für die Validierung an AppSource zu übermitteln und sie außerhalb Ihres eigenen Mandanten zu testen. 
+1. Stufen Sie die Test-App zur Präproduktion hinauf, um die App für die Validierung an AppSource zu übermitteln und sie außerhalb Ihres eigenen Mandanten zu testen. 
 
 1. Übermitteln Sie den Inhalt zur Veröffentlichung an das Cloud-Partnerportal. 
 
@@ -66,9 +66,11 @@ Im Folgenden werden die allgemeinen Schritte aufgeführt.
 
 ## <a name="requirements"></a>Anforderungen
 
-Zum Erstellen der Vorlagen-App benötigen Sie zunächst die erforderlichen Berechtigungen. Details finden Sie unter Power BI-[Verwaltungsportal > Vorlagen-App-Einstellungen](service-admin-portal.md#template-apps-settings-preview). 
+Zum Erstellen der Vorlagen-App benötigen Sie zunächst die erforderlichen Berechtigungen. Details finden Sie unter Power BI-[Verwaltungsportal > Vorlagen-App-Einstellungen](service-admin-portal.md#template-apps-settings). 
 
 Zum Veröffentlichen einer Vorlagen-App im Power BI-Dienst und in AppSource müssen Sie die Anforderungen unter [Weg zum Cloud Marketplace-Herausgeber](https://docs.microsoft.com/azure/marketplace/become-publisher) erfüllen.
+ > [!NOTE] 
+ > Übermittelte Vorlagen-Apps werden im [Cloud-Partnerportal](https://cloudpartner.azure.com) verwaltet. Verwenden Sie für die Anmeldung dasselbe Microsoft Developer Center-Registrierungskonto. Sie sollten nur über ein Microsoft-Konto für Ihre AppSource-Angebote verfügen. Konten sollten nicht speziell für einzelne Dienste oder Angebote geführt werden.
 
 ## <a name="tips"></a>Tipps 
 
@@ -78,7 +80,7 @@ Zum Veröffentlichen einer Vorlagen-App im Power BI-Dienst und in AppSource müs
 - Erwägen Sie die Bereitstellung mehrerer Vorlagen-Apps für verschiedene spezifische Szenarios. 
 - Aktivieren Sie die Datenanpassung, um beispielsweise benutzerdefinierte Verbindungs- und Parameterkonfiguration durch den Installer zu unterstützen.
 
-Weitere Vorschläge finden Sie unter [Tips for authoring template apps in Power BI (preview) (Tipps für die Erstellung von Vorlagen-Apps in Power BI (Vorschau))](service-template-apps-tips.md).
+Weitere Vorschläge finden Sie unter [Tips for authoring template apps in Power BI (Tipps für die Erstellung von Vorlagen-Apps in Power BI)](service-template-apps-tips.md).
 
 ## <a name="support"></a>Support
 Unterstützung während der Entwicklung finden Sie unter [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Diese Website wird aktiv überwacht und verwaltet. Kundenanfragen werden schnell an das entsprechende Team weitergeleitet.

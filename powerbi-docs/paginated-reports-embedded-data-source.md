@@ -9,18 +9,20 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.openlocfilehash: 7b687fd67f844e000811ae00a53772ab9403ab90
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 3dcc8211f6752d272d550dfaff343374866187c9
+ms.sourcegitcommit: a42c6758aa255c21ece6366a3257b0dd82f3606b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66838942"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67345498"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Erstellen einer eingebetteten Datenquelle für paginierte Berichte im Power BI-Dienst
 
 In diesem Artikel erfahren Sie, wie eine eingebettete Datenquelle für einen paginierten Bericht im Power BI-Dienst erstellt und geändert wird. Sie definieren eine eingebettete Datenquelle in einem einzelnen Bericht und verwenden sie nur in diesem Bericht. Derzeit sind für paginierte Berichte, die im Power BI-Dienst veröffentlicht werden, eingebettete Datasets und eingebettete Datenquellen erforderlich. Sie können eine Verbindung mit folgenden Datenquellen herstellen:
 
-- Azure SQL-Datenbank und Data Warehouse
+- Azure Analysis Services
+- Azure SQL-Datenbank 
+- Azure SQL Data Warehouse
 - SQL Server
 - SQL Server Analysis Services
 - Oracle 
@@ -28,7 +30,6 @@ In diesem Artikel erfahren Sie, wie eine eingebettete Datenquelle für einen pag
 
 Verwenden Sie für folgende Datenquellen die Option der [SQL Server Analysis Services-Verbindung](service-premium-connect-tools.md):
 
-- Azure Analysis Services
 - Power BI Premium-Datasets
 
 Paginierte Berichte stellen über ein [Power BI-Gateway](service-gateway-getting-started.md) eine Verbindung mit lokalen Datenquellen her. Sie richten Sie das Gateway ein, nachdem Sie den Bericht im Power BI-Dienst veröffentlicht haben.
@@ -66,6 +67,30 @@ Ausführlichere Informationen finden Sie unter [Berichtsdaten im Power BI-Berich
 5.  Wählen Sie **OK**aus.  
   
      Die Datenquelle wird im Berichtsdatenbereich angezeigt.  
+     
+## <a name="limitations-and-considerations"></a>Einschränkungen und Überlegungen
+
+Für paginierte Berichte, die eine Verbindung mit Power BI-Datasets herstellen, gelten die Regeln für freigegebene Datasets in Power BI mit geringen Änderungen.  Halten Sie sich an folgende Regeln, um Benutzern paginierte Berichte mit Power BI-Datasets richtig anzuzeigen und sicherzustellen, dass die Sicherheit auf Zeilenebene (Row Level Security, RLS) aktiviert ist und für Ihre Besucher erzwungen wird:
+
+### <a name="classic-apps-and-app-workspaces"></a>Klassische Apps und App-Arbeitsbereiche
+
+- RDL-Datei im selben Arbeitsbereich wie das Dataset (derselbe Besitzer): Unterstützt
+- RDL-Datei in einem anderen Arbeitsbereich als das Dataset (derselbe Besitzer): Unterstützt
+- Freigegebene RDL-Datei: Jedem Benutzer, dem der Bericht angezeigt wird, müssen auf Datasetebene Erstellungsberechtigungen zugewiesen sein
+- Freigegebene App: Jedem Benutzer, dem der Bericht angezeigt wird, müssen auf Datasetebene Erstellungsberechtigungen zugewiesen sein
+- RDL-Datei im selben Arbeitsbereich wie das Dataset (anderer Benutzer): Unterstützt
+- RDL-Datei in einem anderen Arbeitsbereich als das Dataset (anderer Benutzer): Jedem Benutzer, dem der Bericht angezeigt wird, müssen auf Datasetebene Erstellungsberechtigungen zugewiesen sein
+- Sicherheit auf Rollenebene: Jedem Benutzer, dem der Bericht angezeigt wird, müssen auf Datasetebene Erstellungsberechtigungen zugewiesen sein, um diese zu erzwingen
+
+### <a name="new-experience-apps-and-app-workspaces"></a>Neue Apps und App-Arbeitsbereiche
+
+- RDL-Datei im selben Arbeitsbereich wie das Dataset: Unterstützt
+- RDL-Datei in einem anderen Arbeitsbereich als das Dataset (derselbe Besitzer): Unterstützt
+- Freigegebene RDL-Datei: Jedem Benutzer, dem der Bericht angezeigt wird, müssen auf Datasetebene Erstellungsberechtigungen zugewiesen sein
+- Freigegebene App: Jedem Benutzer, dem der Bericht angezeigt wird, müssen auf Datasetebene Erstellungsberechtigungen zugewiesen sein
+- RDL-Datei im selben Arbeitsbereich wie das Dataset (anderer Benutzer) – Unterstützt
+- RDL-Datei in einem anderen Arbeitsbereich als das Dataset (anderer Benutzer): Jedem Benutzer, dem der Bericht angezeigt wird, müssen auf Datasetebene Erstellungsberechtigungen zugewiesen sein
+- Sicherheit auf Rollenebene: Jedem Benutzer, dem der Bericht angezeigt wird, müssen auf Datasetebene Erstellungsberechtigungen zugewiesen sein, um diese zu erzwingen
 
 ## <a name="next-steps"></a>Nächste Schritte
 

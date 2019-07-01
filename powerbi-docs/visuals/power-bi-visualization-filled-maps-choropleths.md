@@ -8,15 +8,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/12/2019
+ms.date: 06/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2fa8fa5248ee1e4330804205b2cedb64021b1913
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 0123d8123170cfa78b3d13a55ed2f367af0447ae
+ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839756"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67299381"
 ---
 # <a name="filled-maps-choropleths-in-power-bi"></a>Flächenkartogramme (Choroplethenkarten) in Power BI
 In einem Flächenkartogramm wird mithilfe von Schattierungen, Farben oder Mustern angezeigt, in welchem Verhältnis Werte innerhalb eines geografischen Gebiets stehen.  Diese relativen Unterschiede werden mithilfe von Schattierungen angezeigt, wobei hell eine geringe Menge/Häufigkeit und dunkel eine große Menge/Häufigkeit anzeigt.    
@@ -70,10 +70,10 @@ In diesem Video wird eine einfache Karte erstellt und in ein Flächenkartogramm 
 1. Wählen Sie im Bereich „Felder“ das Feld **Geo** \> **Bundesstaat** aus.    
 
    ![Häkchen im gelben Kontrollkästchen neben „State“](media/power-bi-visualization-filled-maps-choropleths/power-bi-state.png)
-5. [Wandeln Sie das Diagramm](power-bi-report-change-visualization-type.md) in ein Flächenkartogramm um. Beachten Sie, dass sich **Bundesstaat** jetzt im Bereich **Standort** befindet. Bing Maps verwendet das Feld unter **Standort**bereich, um die Karte zu erstellen.  Gültige Orte umfassen z. B. Länder, Bundesländer, Landkreise, Städte, Postleitzahlen usw. Bing Maps bietet verschiedene Formen für Orte auf der ganzen Welt. Ohne einen gültigen Wert im Bereich „Ort“ kann Power BI kein Flächenkartogramm erstellen.  
+2. [Wandeln Sie das Diagramm](power-bi-report-change-visualization-type.md) in ein Flächenkartogramm um. Beachten Sie, dass sich **Bundesstaat** jetzt im Bereich **Standort** befindet. Bing Maps verwendet das Feld unter **Standort**bereich, um die Karte zu erstellen.  Gültige Orte umfassen z. B. Länder, Bundesländer, Landkreise, Städte, Postleitzahlen usw. Bing Maps bietet verschiedene Formen für Orte auf der ganzen Welt. Ohne einen gültigen Wert im Bereich „Ort“ kann Power BI kein Flächenkartogramm erstellen.  
 
    ![Vorlagen mit dem hervorgehobenen Symbol für Flächenkartogramme](media/power-bi-visualization-filled-maps-choropleths/img003.png)
-6. Filtern Sie die Karte, um nur die kontinentalen USA anzuzeigen.
+3. Filtern Sie die Karte, um nur die kontinentalen USA anzuzeigen.
 
    a.  Suchen Sie im unteren Teil des Visualisierungsbereichs nach **Filter** .
 
@@ -83,21 +83,24 @@ In diesem Video wird eine einfache Karte erstellt und in ein Flächenkartogramm 
    c.  Aktivieren Sie das Kontrollkästchen **Alle**, und deaktivieren Sie das Kontrollkästchen **AK**.
 
    ![Dropdownliste für State, in der die Optionen „All“ und „AK“ nicht ausgewählt ist](media/power-bi-visualization-filled-maps-choropleths/img005.png)
-7. Wählen Sie **SalesFact** \> **Stimmung**, um diese Option zum Bereich **Farbsättigung** hinzuzufügen. Das Feld im Bereich **Farbsättigung** steuert die Schattierung der Karte.  
-   ![Sentiment im Feld für die Farbsättigung](media/power-bi-visualization-filled-maps-choropleths/power-bi-filled-map.png)
-8. Das Flächenkartogramm ist grün und rot schattiert. Rot steht dabei für schlechtere und grün für bessere (d.h. positive) Stimmungsdaten.  Wenn Sie Wyoming (WY) markieren, sehen Sie, dass dieser Bundesstaat über einen positiven Stimmungswert (74) verfügt.  
-   ![Schwarzes Dialogfeld zeigt „State“ und „Sentiment“](media/power-bi-visualization-filled-maps-choropleths/power-bi-wy.png)
-9. [Speichern Sie den Bericht](../service-report-save.md).
-##    <a name="adjust-the-color-formatting"></a>Anpassen der Farbformatierung
-Mithilfe von Power BI können Sie die Darstellung Ihres Flächenkartogramms umfassend steuern.
-1. Wählen Sie das Farbrollersymbol aus, um den Bereich „Formatierung“ zu öffnen.
+4. Wählen Sie das Farbrollersymbol aus, um den Bereich „Formatierung“ zu öffnen, und wählen Sie **Datenfarben** aus.
 
-    ![Formatierungsbereich](media/power-bi-visualization-filled-maps-choropleths/power-bi-data-colors.png)
+    ![Bereich „Formatierung“ mit der Option „Datenfarben“](media/power-bi-visualization-filled-maps-choropleths/power-bi-data-color.png)
 
-2. Klicken Sie auf **Datenfarben**, um die Farboptionen anzuzeigen.
-3. Legen Sie die Mindest- und Maximalfarben auf gelb und blau fest. Fügen Sie anschließend basierend auf Ihren Daten die Mindest- und Maximalfarben hinzu. Verschieben Sie die Steuerelemente, bis Ihnen das Ergebnis gefällt. 
+5. Klicken Sie auf die drei vertikalen Punkte, und wählen Sie **Bedingte Formatierung** aus.
 
-    ![Abweichende Farben](media/power-bi-visualization-filled-maps-choropleths/power-bi-color.png)
+    ![„Datenfarben“, Schaltfläche „Bedingte Formatierung“](media/power-bi-visualization-filled-maps-choropleths/power-bi-conditional-formatting.png)
+
+6. Verwenden Sie die Anzeige **Standardfarbe – Datenfarben**, um festzulegen, wie das Flächenkartogramm schattiert wird. Die verfügbaren Optionen umfassen, auf welchem Feld die Schattierung basiert und wie sie angewendet wird. In diesem Beispiel verwenden wir das Feld **SalesFact** > **Sentiment** (SalesFact > Stimmung) und legen für den niedrigsten Stimmungswert Rot und für den höchsten Wert Grün fest. Werte zwischen dem Maximum und dem Minimum sind Schattierungen von Rot und Grün. Die Abbildung am unteren Rand der Anzeige stellt den Bereich der Farben dar, die verwendet werden. 
+
+    ![Bereich „Standardfarbe“ mit ausgewählter Option „Sentiment“ (Stimmung)](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment.png)
+
+7. Das Flächenkartogramm ist grün und rot schattiert. Rot steht dabei für schlechtere und grün für bessere (d.h. positive) Stimmungsdaten.  Ziehen Sie ein Feld in den QuickInfo-Bereich, um weitere Details anzuzeigen.  Hier wurde **Sentiment gap** (Stimmungslücke) hinzugefügt und der Staat Idaho (ID) hervorgehoben. Die Stimmungslücke ist niedrig und liegt bei 6.
+   ![Flächenkartogramm mit QuickInfos zu Idaho](media/power-bi-visualization-filled-maps-choropleths/power-bi-filled-map-idaho.png)
+
+10. [Speichern Sie den Bericht](../service-report-save.md).
+
+Mit Power BI haben Sie viel Kontrolle über die Darstellung Ihres Flächenkartogramms. Probieren Sie diese Steuerelemente für Datenfarben so lange aus, bis Sie das gewünschte Erscheinungsbild erhalten. 
 
 ## <a name="highlighting-and-cross-filtering"></a>Hervorheben und Kreuzfiltern
 Informationen zur Verwendung des Filterbereichs finden Sie unter [Hinzufügen eines Filters zu einem Bericht in Power BI](../power-bi-report-add-filter.md).
