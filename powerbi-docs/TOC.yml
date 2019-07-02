@@ -231,6 +231,8 @@
               href: desktop-bookmarks.md
             - name: Verwenden von Berichtdesigns
               href: desktop-report-themes.md
+            - name: Filtertypen
+              href: power-bi-report-filter-types.md
             - name: Testen der neuen Filteroberfläche
               href: power-bi-report-filter-preview.md
             - name: Verwenden von Schnellmeasures
@@ -521,10 +523,8 @@
               href: refresh-excel-file-onedrive.md
             - name: Aktualisieren eines aus einer CSV-Datei erstellten Datasets in OneDrive
               href: refresh-csv-file-onedrive.md
-            - name: Zwischenspeichern von Abfragen in Power BI Premium
+            - name: Zwischenspeicherung von Abfragen in Power BI Premium
               href: power-bi-query-caching.md
-            - name: Problembehandlung bei Aktualisierungsszenarios
-              href: refresh-troubleshooting-refresh-scenarios.md
         - name: Dashboards
           items:
             - name: Einführung in Dashboards
@@ -705,6 +705,8 @@
           items:
             - name: Sie haben Ihr Kennwort für Power BI vergessen?
               href: service-admin-forgot-your-password.md
+            - name: Anmeldung nicht möglich
+              href: power-bi-cannot-sign-in.md
             - name: Erfassen von zusätzlichen Diagnoseinformationen für Power BI
               href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
             - name: Alternative E-Mail-Adresse für Power BI
@@ -713,26 +715,26 @@
               href: service-admin-how-to-use-the-same-account-as-azure.md
             - name: Office 365 dediziert – bekannte Probleme
               href: service-admin-office-365-dedicated-known-issues.md
-            - name: Behandeln von Problemen bei Cortana
-              href: service-cortana-troubleshoot.md
-            - name: Problembehandlung bei „In Excel analysieren“
-              href: desktop-troubleshooting-analyze-in-excel.md
-            - name: Problembehandlung beim lokalen Datengateway
-              href: service-gateway-onprem-tshoot.md
-            - name: Problembehandlung bei Power BI Gateway – Personal
-              href: service-admin-troubleshooting-power-bi-personal-gateway.md
+            - name: Problembehandlung bei Aktualisierungsszenarios
+              href: refresh-troubleshooting-refresh-scenarios.md
             - name: Problembehandlung bei nicht unterstützter Datenquelle für die Aktualisierung
               href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
             - name: Problembehandlung bei der planmäßigen Aktualisierung für Azure SQL-Datenbanken
               href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
-            - name: 'Fehler: Wir haben in Ihrer Excel-Arbeitsmappe keine Daten gefunden'
-              href: service-admin-troubleshoot-excel-workbook-data.md
             - name: Problembehandlung für Kachelfehler
               href: refresh-troubleshooting-tile-errors.md
+            - name: Problembehandlung für das lokale Datengateway
+              href: service-gateway-onprem-tshoot.md
+            - name: Problembehandlung für Power BI Gateway – Personal
+              href: service-admin-troubleshooting-power-bi-personal-gateway.md
+            - name: Problembehandlung bei „In Excel analysieren“
+              href: desktop-troubleshooting-analyze-in-excel.md
+            - name: 'Fehler: Wir haben in Ihrer Excel-Arbeitsmappe keine Daten gefunden'
+              href: service-admin-troubleshoot-excel-workbook-data.md
+            - name: Behandeln von Problemen bei Cortana
+              href: service-cortana-troubleshoot.md
             - name: Aktualisieren der Anmeldeinformationen für das Xero-Inhaltspaket nach einem Aktualisierungsfehler
               href: service-refresh-xero-credentials.md
-            - name: Anmeldung nicht möglich
-              href: power-bi-cannot-sign-in.md
         - name: Weitere Aufgaben
           items:
             - name: Umbenennen von Inhalten in Power BI
@@ -855,9 +857,9 @@
                   href: service-organizational-content-pack-manage-update-delete.md
                 - name: Entfernen einer Verbindung mit einem Inhaltspaket
                   href: service-organizational-content-pack-disconnect.md
-        - name: Referenz
-          items:
-            - name: Unterstützte Sprachen und Länder/Regionen
+    - name: Referenz
+      items:
+        - name: Unterstützte Sprachen und Länder/Regionen
           href: supported-languages-countries-regions.md
     - name: Ressourcen
       items:
@@ -1331,7 +1333,7 @@
           href: service-gateway-personal-mode.md
         - name: Benutzerdefinierte Connectors
           href: service-gateway-custom-connectors.md
-        - name: Problembehandlung beim lokalen Datengateway
+        - name: Problembehandlung für das lokale Datengateway
           href: service-gateway-onprem-tshoot.md
     - name: Ressourcen
       items:
