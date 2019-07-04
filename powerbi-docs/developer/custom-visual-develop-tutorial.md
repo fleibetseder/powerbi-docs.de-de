@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 03/15/2019
-ms.openlocfilehash: e7afdddc6d87b9494fa9264bdd253a3f93de6192
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d21a0ab1bada981a563e04ba26815f661664f51a
+ms.sourcegitcommit: 4ae1257c5d7b33aa2fafd91caf8b353a985c6771
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61383614"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67161217"
 ---
 # <a name="tutorial-developing-a-power-bi-custom-visual"></a>Tutorial: Entwickeln eines benutzerdefinierten Visuals für Power BI
 
@@ -73,21 +73,15 @@ Jetzt müssen Sie das **pbiviz**-Paket installieren.
 
 #### <a name="windows"></a>Windows
 
-1. Geben Sie zum Erstellen eines Zertifikats den folgenden Befehl ein.
-
-    ```powershell
-    pbiviz --create-cert
-    ```
-
-  Als Ergebnis wird eine *Passphrase* zurückgegeben. In diesem Fall lautet die *Passphrase* **_15105661266553327_** .
-
-  ![Über PowerShell erstelltes Zertifikat](media/custom-visual-develop-tutorial/cert-create.png)
-
-2. Jetzt müssen wir das Zertifikat installieren. Geben Sie zum Installieren des Zertifikats den folgenden Befehl ein.
+1. Geben Sie zum Erstellen und Installieren eines Zertifikats den folgenden Befehl ein.
 
     ```powershell
     pbiviz --install-cert
     ```
+
+  Als Ergebnis wird eine *Passphrase* zurückgegeben. In diesem Fall startet die *Passphrase* **_15105661266553327_** den Zertifikatimport-Assistenten.
+
+  ![Über PowerShell erstelltes Zertifikat](media/custom-visual-develop-tutorial/cert-create.png)
 
 3. Überprüfen Sie im Assistenten für den Zertifikatsimport, ob der Speicherort auf „Aktueller Benutzer“ eingestellt ist. Wählen Sie dann *Weiter*aus.
 
@@ -559,14 +553,14 @@ Definieren Sie die Datenrollen und Datenansichtsmappings, und ändern Sie dann d
 
     Diese Anweisung weist *dataView* einer Variablen für einen einfachen Zugriff zu und deklariert die Variable, um auf das Objekt *dataView* zu verweisen.
 
-2. In der **aktualisieren** -Methode ersetzen **.text("Value")** durch Folgendes.
+2. Ersetzen Sie **.text("Value")** in der **update**-Methode durch das Folgende.
 
     ```typescript
     .text(dataView.single.value as string)
     ```
     ![„textValue“ ersetzen](media/custom-visual-develop-tutorial/text-value-replace.png)
 
-3. In der **aktualisieren** -Methode ersetzen **.text("Label")** durch Folgendes.
+3. Ersetzen Sie **.text("Label")** in der **update**-Methode durch das Folgende.
 
     ```typescript
     .text(dataView.metadata.columns[0].displayName)

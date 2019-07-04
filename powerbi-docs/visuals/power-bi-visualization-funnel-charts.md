@@ -8,15 +8,15 @@ featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/24/2018
+ms.date: 06/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 071b45a4ad9cbd9c753c44de5c55a352767bccbf
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b12b2035d7686667535dfdddba42b4b8ca014d96
+ms.sourcegitcommit: 4ae1257c5d7b33aa2fafd91caf8b353a985c6771
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61068021"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67161123"
 ---
 # <a name="funnel-charts"></a>Trichterdiagramme
 Mit einem Trichterdiagramm kann ein linearer Prozess mit aufeinanderfolgenden und miteinander verbundenen Phasen visuell dargestellt werden. Ein Beispiel ist etwa ein Trichterdiagramm für den Verkauf, das die von den Kunden durchlaufenen Phasen nachverfolgt: Lead \> Qualifizierter Lead \> Potenzieller Kunde \> Vertrag \> Abschluss.  Die Form des Trichterdiagramms zeigt auf einen Blick den Zustand des nachverfolgten Prozesses an.
@@ -53,7 +53,7 @@ In diesem Video sehen Sie, wie ein Trichterdiagramm anhand des Beispiels für Ve
 
 Erstellen Sie jetzt ein eigenes Trichterdiagramm, das die Anzahl der Verkaufschancen in jeder der Verkaufsphasen anzeigt.
 
-In dieser Anleitung wird das Beispiel zur Opportunityanalyse verwendet. Wenn Sie diese Schritte selbst ausführen möchten, [laden Sie das Beispiel für den Power BI-Dienst („app.powerbi.com“) oder Power BI Desktop herunter](../sample-datasets.md).   
+In dieser Anleitung wird das Beispiel zur Opportunityanalyse verwendet. Wenn Sie diese Schritte selbst ausführen möchten, [laden Sie das Beispiel](../sample-datasets.md) für den Power BI-Dienst („app.powerbi.com“) oder Power BI Desktop herunter.   
 
 1. Beginnen Sie auf einer leeren Berichtsseite, und wählen Sie **SalesStage** \> **Vertriebsphase** aus. Wenn Sie den Power BI-Dienst verwenden, achten Sie darauf, den Bericht in der [Bearbeitungsansicht](../service-interact-with-a-report-in-editing-view.md) zu öffnen.
    
@@ -61,7 +61,7 @@ In dieser Anleitung wird das Beispiel zur Opportunityanalyse verwendet. Wenn Sie
 2. [Wandeln Sie das Diagramm](power-bi-report-change-visualization-type.md) in ein Trichterdiagramm um. Beachten Sie, dass sich **Vertriebsphase** im Bereich der **Gruppe** befindet. 
 3. Wählen Sie im Bereich **Felder** die Option **Fakt** \> **Anzahl an Verkaufschancen** aus.
    
-    ![Erstellen des Trichterdiagramms](media/power-bi-visualization-funnel-charts/power-bi-funnel.png)
+    ![Erstellen des Trichterdiagramms](media/power-bi-visualization-funnel-charts/power-bi-funnel-2.png)
 4. Wenn Sie mit dem Mauszeiger auf einen Balken zeigen, werden zahlreiche Informationen angezeigt.
    
    * Name der Phase

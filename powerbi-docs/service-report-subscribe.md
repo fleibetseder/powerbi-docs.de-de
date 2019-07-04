@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/20/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: b1d0914f146ea56697ada2a64c59744690595054
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: e7b2f03d561faa7df582b4ad5a975d09d617f98f
+ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66498056"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67264621"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Abonnieren von Berichten und Dashboards im Power BI-Dienst für sich selbst und andere
 
@@ -28,8 +28,12 @@ Sie können Abonnements nur im Power BI-Dienst erstellen. Sie erhalten eine E-Ma
 
 ## <a name="requirements"></a>Anforderungen
 
-- Das **Erstellen** eines Abonnements ist ein Feature von Power BI Pro.
-- Sie müssen nicht über Berechtigungen zum Bearbeiten des Inhalts (Dashboard oder Bericht) verfügen, um ein Abonnement für sich selbst zu erstellen. Sie müssen jedoch über Berechtigungen zum Bearbeiten verfügen, um ein Abonnement für eine andere Person zu erstellen. 
+Das **Erstellen** eines Abonnements kann erfolgen durch:
+
+- Benutzer mit einer Power BI Pro-Lizenz
+- Benutzer, die Inhalte in einem Premium-Arbeitsbereich oder einer Premium-App anzeigen, können auch ohne Power BI Pro-Lizenz dort befindliche Inhalte abonnieren.
+
+Sie müssen nicht über Berechtigungen zum Bearbeiten des Inhalts (Dashboard oder Bericht) verfügen, um ein Abonnement für sich selbst zu erstellen. Sie müssen jedoch über Berechtigungen zum Bearbeiten verfügen, um ein Abonnement für eine andere Person zu erstellen. 
 
 ## <a name="subscribe-to-a-dashboard-report-page-or-paginated-report"></a>Abonnieren eines Dashboards, einer Berichtsseite oder eines paginierten Berichts
 
@@ -87,7 +91,6 @@ Ein Abonnement wird beendet, wenn die Pro-Lizenz abläuft, der Besitzer das Dash
 ## <a name="considerations-and-troubleshooting"></a>Zu beachtende Aspekte und Problembehandlung
 
 * Dashboards mit mehr als 25 angehefteten Kacheln oder vier angehefteten Berichtsseiten werden in an Benutzer gesendeten Abonnement-E-Mails möglicherweise nicht vollständig dargestellt.  Abonnements von Dashboards mit mehr als dieser Anzahl Kacheln werden nicht blockiert. Sie werden jedoch beim Auftreten von Problemen als nicht unterstützt angesehen. Erwägen Sie, sie entsprechend zu ändern, damit sie in einen unterstützten Bereich fallen.
-* Dieser Zeitpunkt bezeichnet den Anfang des Abonnementauftrags. Möglicherweise dauert es in bestimmten Szenarien einige Minuten, bis die E-Mail-Nachricht an Ihren Posteingang übermittelt wird.
 * In seltenen Fällen kann es länger als 15 Minuten dauern, bis E-Mail-Abonnements an ihre Empfänger übermittelt werden. In diesem Fall empfehlen wir, Ihre Datenaktualisierung und Ihr E-Mail-Abonnement zu verschiedenen Zeiten auszuführen, um eine zeitnahe Übermittlung sicherzustellen. Wenn das Problem weiterhin besteht, wenden Sie sich an den Power BI-Support.
 * Wenn auf Kacheln Sicherheit auf Zeilenebene (Row Level Security, RLS) angewendet wurde, werden diese Kacheln bei Dashboard-E-Mail-Abonnements nicht angezeigt.  
 * Wenn das Dataset RLS verwendet, können Sie ein Berichts-E-Mail-Abonnement für sich erstellen. Sie können aber einen Bericht, auf den Sicherheit auf Zeilenebene angewendet wird, nicht für andere abonnieren.

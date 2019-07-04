@@ -10,16 +10,15 @@ ms.topic: conceptual
 ms.date: 06/20/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 3fc93f255d6645ffa6f15676b9a70f24326fcfdc
-ms.sourcegitcommit: a2c4f912af1729fdfdf20369bf3eff67c3927eec
+ms.openlocfilehash: eea93888cf3a8ea5c7ca7b6eb9389cbabc79dc9c
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67349232"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418723"
 ---
 # <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>Analysebeispiel für IT-Investitionen für Power BI: Übersicht
 
-## <a name="overview-of-the-it-spend-analysis-sample"></a>Übersicht über das Analysebeispiel für IT-Ausgaben
 Das Beispielinhaltspaket für die IT-Investitionsanalyse (Dashboard, Bericht und Dataset) analysiert die geplanten gegenüber den tatsächlichen Kosten einer IT-Abteilung. Dieser Vergleich hilft uns, zu verstehen, wie gut das Unternehmen auf Jahressicht geplant hat und welche Bereiche große Abweichungen gegenüber dem Plan aufwiesen. Das Unternehmen aus dem Beispiel durchläuft einen jährlichen Planungszyklus und erstellt dann quartalsweise eine neueste Schätzung (Latest Estimate, LE), um die Änderungen an den IT-Ausgaben im Verlauf des Geschäftsjahrs zu analysieren.
 
 ![Dashboard zum Analysebeispiel für IT-Ausgaben](media/sample-it-spend/it1.png)
@@ -124,7 +123,7 @@ Wählen Sie in der oberen linken Ecke **Bericht bearbeiten** aus, und führen Si
 * Ändern Sie für jedes Diagramm den Visualisierungstyp.
 * Heften Sie Diagramme Ihres Interesses an Ihr Dashboard.
 
+## <a name="next-steps-connect-to-your-data"></a>Nächste Schritte: Herstellen einer Verbindung mit den Daten
 In dieser Umgebung können Sie sicher experimentieren, da Sie die Änderungen nicht speichern müssen. Wenn Sie sie speichern, können Sie jederzeit wieder auf **Daten abrufen** klicken, um ein neues Exemplar dieses Beispiels herunterzuladen.
 
-## <a name="next-steps-connect-to-your-data"></a>Nächste Schritte: Herstellen einer Verbindung mit den Daten
 Wir hoffen, diese Tour hat Ihnen gezeigt, wie Power BI-Dashboards, das Fragen und Antworten-Modul und Berichte Ihnen Einblicke in Daten zu IT-Investitionen geben können. Jetzt liegt es an Ihnen – stellen Sie Verbindungen mit Ihren eigenen Daten her. Mit Power BI können Sie Verbindungen mit einer Vielzahl von Datenquellen herstellen. Weitere Informationen finden Sie unter [Erste Schritte mit dem Power BI-Dienst](service-get-started.md).

@@ -10,16 +10,15 @@ ms.topic: conceptual
 ms.date: 06/20/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: ae2e4dcfe1fdcd88c3e6ff9e4942afdedf9d126b
-ms.sourcegitcommit: a2c4f912af1729fdfdf20369bf3eff67c3927eec
+ms.openlocfilehash: 762a28d2340a691316b1aaf26b7ce62d45cc7496
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67349486"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418747"
 ---
 # <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Beispiel für Personalwesen für Power BI: Übersicht
 
-## <a name="overview-of-the-human-resources-sample"></a>Übersicht über das Beispiel für das Personalwesen
 Das Beispielinhaltspaket Personalwesen enthält ein Dashboard, einen Bericht und ein Dataset für eine Personalabteilung. In diesem Beispiel verwendet die Personalabteilung dasselbe Berichtsmodell für unterschiedliche Unternehmen, auch wenn diese sich nach Branche oder Größe unterscheiden. Die Untersuchungen in diesem Beispiel betreffen Neueinstellungen, aktive Mitarbeiter und ehemalige Mitarbeiter. Es zielt darauf ab, Trends in der Einstellungsstrategie aufzudecken. Hauptsächlich sollen folgende Erkenntnisse gewonnen werden:
 
 * Wen wir einstellen
@@ -159,7 +158,7 @@ Im Dashboard können Sie im [Q&A-Fragenfeld](power-bi-tutorial-q-and-a.md) eine 
 
    Beachten Sie, dass die meisten der weiblichen Fehleinstellungen jünger als 30 Jahre sind.
 
+## <a name="next-steps-connect-to-your-data"></a>Nächste Schritte: Herstellen einer Verbindung mit den Daten
 In dieser Umgebung können Sie sicher experimentieren, da Sie die Änderungen nicht speichern müssen. Wenn Sie sie speichern, können Sie jederzeit wieder auf **Daten abrufen** klicken, um ein neues Exemplar dieses Beispiels herunterzuladen.
 
-## <a name="next-steps-connect-to-your-data"></a>Nächste Schritte: Herstellen einer Verbindung mit den Daten
 Wir hoffen, diese Tour hat Ihnen gezeigt, wie Power BI-Dashboards, das Fragen und Antworten-Modul und Berichte Ihnen Einblicke in Personaldaten geben können. Jetzt liegt es an Ihnen – stellen Sie Verbindungen mit Ihren eigenen Daten her. Mit Power BI können Sie Verbindungen mit einer Vielzahl von Datenquellen herstellen. Weitere Informationen finden Sie unter [Erste Schritte mit dem Power BI-Dienst](service-get-started.md).
