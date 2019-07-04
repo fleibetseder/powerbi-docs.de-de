@@ -3,72 +3,87 @@ title: Liniendiagramme in Power BI
 description: Liniendiagramme in Power BI
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 06/26/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0654dccf55b1e13f26d8ecaabee0349f0e56afc6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4b2c7c237393fd0a8e76b7ca27987c479b5c411d
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65535788"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408617"
 ---
 # <a name="line-charts-in-power-bi"></a>Liniendiagramme in Power BI
-Ein Liniendiagramm ist eine Reihe von Datenpunkten, die durch Punkte dargestellt und durch gerade Linien verbunden sind. Ein Liniendiagramm möglicherweise eine oder mehrere Zeilen. Liniendiagramme haben ein "X" und eine y-Achse. 
+Ein Liniendiagramm ist eine Reihe von Datenpunkten, die durch Punkte dargestellt und durch gerade Linien verbunden sind. Ein Liniendiagramm kann aus einer oder mehreren Linien bestehen. Liniendiagramme haben eine X- und eine Y-Achse. 
 
 ![einfaches Liniendiagramm](media/power-bi-line-charts/power-bi-line.png)
 
-## <a name="create-a-line-chart"></a>Erstellen Sie ein Liniendiagramm
-Diese Anweisungen verwenden die Verkäufe und die Marketing-Beispiel-app für die ein Liniendiagramm zu erstellen, die den diesjährigen Umsatz nach Kategorie anzeigt. Um folgen zu können, müssen rufen Sie die Beispiel-app aus appsource.com ab.
+## <a name="create-a-line-chart"></a>Erstellen eines Liniendiagramms
+Mit dieser Anleitung erstellen Sie anhand der Beispiel-App für Vertrieb und Marketing ein Liniendiagramm, das den Absatz des laufenden Jahres nach Kategorie anzeigt. Rufen Sie hierfür die Beispiel-App aus appsource.com ab.
 
 1. Beginnen Sie auf einer leeren Berichtsseite. Wenn Sie den Power BI-Dienst verwenden, achten Sie darauf, den Bericht in der [Bearbeitungsansicht](../service-interact-with-a-report-in-editing-view.md) zu öffnen.
 
-2. Wählen Sie aus dem Bereich "Felder" **SalesFact** \> **Gesamteinheiten**, und wählen Sie **Datum** > **Monat**.  Powerbi erstellt ein Säulendiagramm Zeichenbereich des Berichts an.
+2. Wählen Sie im Bereich „Felder“ **SalesFact** \> **Gesamtanzahl der Einheiten** aus, und wählen Sie dann **Datum** > **Monat** aus.  Power BI erstellt ein Säulendiagramm im Zeichenbereich des Berichts.
 
-    ![Wählen Sie aus dem Bereich "Felder"](media/power-bi-line-charts/power-bi-step1.png)
+    ![Auswählen im Bereich „Felder“](media/power-bi-line-charts/power-bi-step1.png)
 
-4. Konvertieren Sie in ein Liniendiagramm, durch Auswählen der Vorlage für die Zeile aus dem Bereich "Visualisierungen". 
+4. Konvertieren Sie es in ein Liniendiagramm, indem Sie die Vorlage für Liniendiagramme im Bereich „Visualisierungen“ auswählen. 
 
-    ![Konvertieren in Liniendiagramm](media/power-bi-line-charts/power-bi-convert-to-line.png)
+    ![Konvertieren in ein Liniendiagramm](media/power-bi-line-charts/power-bi-convert-to-line.png)
    
 
-4. Filtern Sie Ihre Liniendiagramm, um Daten in den Jahren 2012-2014 anzuzeigen. Wenn der Bereich "Filter" reduziert ist, erweitern Sie ihn jetzt an. Wählen Sie aus dem Bereich "Felder" **Datum** \> **Jahr** und ziehen Sie es in den Bereich "Filter". Legen Sie es unter der Überschrift **Filter für diese Visualisierung**. 
+4. Filtern Sie Ihr Liniendiagramm zur Anzeige der Daten aus den Jahren 2012-2014. Wenn der Bereich „Filter“ reduziert ist, erweitern Sie ihn jetzt. Wählen Sie im Bereich „Felder“ **Datum** \> **Jahr** aus, und ziehen Sie es in den Bereich „Filter“. Legen Sie es unter der Überschrift **Filter für dieses Visual**  ab. 
      
-    ![Zeile neben dem Bereich "Felder"](media/power-bi-line-charts/power-bi-year-filter.png)
+    ![Linie neben dem Bereich „Felder“](media/power-bi-line-charts/power-bi-year-filter.png)
 
-    Änderung **erweiterter Filter** zu **Standardfiltern** , und wählen Sie **2012**, **2013** und **2014**.
+    Ändern Sie **Erweiterte Filter** zu **Basisfilter**, und wählen Sie **2012**, **2013** und **2014** aus.
 
-    ![Filter für Year](media/power-bi-line-charts/power-bi-filter-year.png)
+    ![Filter für Jahr](media/power-bi-line-charts/power-bi-filter-year.png)
 
 6. Optional können Sie [die Textgröße und -farbe des Diagramms anpassen](power-bi-visualization-customize-title-background-and-legend.md). 
 
-    ![Vergrößern Sie Schriftgrad und ändern Sie die Y-axisfont](media/power-bi-line-charts/power-bi-line-3years.png)
+    ![Vergrößern des Schriftgrads und Ändern der Schriftart für die Y-Achse](media/power-bi-line-charts/power-bi-line-3years.png)
 
-## <a name="add-additional-lines-to-the-chart"></a>Fügen Sie zusätzliche Zeilen für das Diagramm
-Liniendiagramme können viele unterschiedliche Zeilen haben. Und in einigen Fällen können die Werte in den Zeilen also voneinander abweichende, dass sie gut zusammen anzeigen nicht sein. Wir sehen uns das Hinzufügen zusätzliche Zeilen mit unseren aktuellen "Diagrammeigenschaften", und erfahren Sie, wie unser Diagramm zu formatieren, wenn die Werte durch die Linien dargestellt sehr unterschiedlich sind. 
+## <a name="add-additional-lines-to-the-chart"></a>Hinzufügen weiterer Linien zum Diagramm
+Liniendiagramme können viele verschiedene Linien haben. In einigen Fällen können die Werte in den Linien so voneinander abweichen, dass sie nicht gut zusammen angezeigt werden können. Sie lernen, wie Sie unserem aktuellen Diagramm zusätzliche Linien hinzufügen, und erfahren dann, wie Sie das Diagramm formatieren, wenn die durch die Linien dargestellten Werte sehr unterschiedlich sind. 
 
-### <a name="add-additional-lines"></a>Fügen Sie zusätzliche Zeilen
-Anstatt Gesamtanzahl der Einheiten für alle Regionen als einzelne Zeile im Diagramm, unterteilen Sie gesamte Einheiten nach Region. Fügen Sie zusätzliche Zeilen durch Ziehen von **geografische** > **Region** auf die Legende gut.
+### <a name="add-additional-lines"></a>Hinzufügen zusätzlicher Linien
+Anstatt die Gesamtanzahl der Einheiten für alle Regionen als einzelne Linie im Diagramm darzustellen, unterteilen wir die Gesamtanzahl der Einheiten nach Regionen. Fügen Sie zusätzliche Linien hinzu, indem Sie **Geografischer Raum** > **Region** in den Bereich „Legende“ ziehen.
 
-   ![Eine Zeile für jede region](media/power-bi-line-charts/power-bi-line-regions.png)
+   ![Eine Linie für jede Region](media/power-bi-line-charts/power-bi-line-regions.png)
 
 
-### <a name="use-two-y-axes"></a>Verwenden Sie zwei y-Achsen
-Was geschieht, wenn Sie möchten den Gesamtumsatz und die Gesamtanzahl der Einheiten in einem Diagramm ansehen? Verkaufszahlen sind also sehr viel höher als Einheit Zahlen, wodurch das Liniendiagramm kann nicht verwendet werden. Tatsächlich scheint die rote Linie für die Gesamtanzahl der Einheiten 0 (null) sein.
+### <a name="use-two-y-axes"></a>Verwenden von zwei Y-Achsen
+Was ist, wenn Sie den Gesamtumsatz und die Gesamtanzahl der Einheiten im gleichen Diagramm betrachten möchten? Verkaufszahlen sind sehr viel höher als Einheitenzahlen, sodass das Liniendiagramm nicht verwendet werden kann. Tatsächlich scheint die rote Linie für die Gesamtanzahl der Einheiten bei 0 (null) zu liegen.
 
-   ![hoch Auseinanderlaufende Werte](media/power-bi-line-charts/power-bi-diverging.png)
+   ![stark abweichende Werte](media/power-bi-line-charts/power-bi-diverging.png)
 
-Verwenden Sie ein Kombinationsdiagramm, um stark abweichende Werte in einem Diagramm anzuzeigen. Erfahren Sie alles über Kombinationsdiagramme lesen [Kombinationsdiagramme in Power BI](power-bi-visualization-combo-chart.md). Im folgenden Beispiel können wir sales und gesamte Einheiten zusammen in einem Diagramm anzeigen, indem eine zweite y-Achse hinzufügen. 
+Um stark abweichende Werte im gleichen Diagramm anzuzeigen, verwenden Sie ein Kombinationsdiagramm. Unter [Kombinationsdiagramm in Power BI](power-bi-visualization-combo-chart.md) erfahren Sie alles über Kombinationsdiagramme. In unserem Beispiel unten können wir Verkäufe und Gesamtanzahl der Einheiten zusammen in einem Diagramm darstellen, indem wir eine zweite Y-Achse hinzufügen. 
 
-   ![hoch Auseinanderlaufende Werte](media/power-bi-line-charts/power-bi-dual-axes.png)
+   ![stark abweichende Werte](media/power-bi-line-charts/power-bi-dual-axes.png)
+
+## <a name="highlighting-and-cross-filtering"></a>Hervorheben und Kreuzfiltern
+Informationen zur Verwendung des Filterbereichs finden Sie unter [Hinzufügen eines Filters zu einem Bericht in Power BI](../power-bi-report-add-filter.md).
+
+Die Auswahl eines Datenpunkts auf einem Liniendiagramm ermöglicht das Kreuzhervorheben und Kreuzfiltern anderer Visualisierungen auf der Berichtsseite und umgekehrt. Öffnen Sie hierfür die Registerkarte **Marktanteil**.  
+
+In einem Liniendiagramm ist ein einzelner Datenpunkt der Schnittpunkt eines X- und Y-Achsenwerts. Wenn Sie einen Datenpunkt auswählen, fügt Power BI Markierungen hinzu, die anzeigen, welcher Punkt (für eine einzelne Linie) oder welche Punkte (bei zwei oder mehr Linien) die Quelle für Kreuzhervorheben und Kreuzfiltern der anderen Visualisierungen auf der Berichtsseite ist bzw. sind. Wenn Ihre Visualisierung sehr dicht ist, wählt Power BI den Punkt aus, der am nächsten an der Stelle liegt, wo Sie auf das visuelle Element klicken.
+
+In diesem Beispiel haben wir einen Datenpunkt ausgewählt, der Folgendes umfasst: Juli 2014, Marktanteil der Einheiten R12 33,16 Prozent und Marktanteil der Einheiten 34,74 Prozent.
+
+![Auswählen eines einzelnen Datenpunkts in einem Liniendiagramm](media/power-bi-line-charts/power-bi-single-select.png)
+
+Beachten Sie, dass das Säulendiagramm kreuzhervorgehoben und das Messgerät kreuzgefiltert ist.
+
+Informationen zum Steuern der Kreuzhervorhebung und Kreuzfilterung von Diagrammen finden Sie unter [Interaktionen mit Visualisierungen in einem Power BI-Bericht](../service-reports-visual-interactions.md).
 
 ## <a name="considerations-and-troubleshooting"></a>Zu beachtende Aspekte und Problembehandlung
-* Ein Liniendiagramm kann nicht mit zwei y-Achsen haben.  Sie müssen stattdessen ein Kombinationsdiagramm.
-* In den obigen Beispielen wurden die Diagramme so formatiert, Schriftgrad vergrößern, Ändern von Schriftfarbe, Hinzufügen von Achsentiteln, zentrieren Sie den Diagrammtitel und die Legende, starten beide Achsen auf 0 (null) und vieles mehr. Der Formatierungsbereich (farbrollen-Symbol) verfügt über eine endlose Reihe von Optionen für das Herstellen von des Layout der Diagramme die gewünschte Weise zu. Die beste Möglichkeit, erfahren, werden von den Formatierungsbereich zu öffnen und zu durchsuchen.
+* Ein Liniendiagramm kann keine zwei Y-Achsen haben.  Sie müssen stattdessen ein Kombinationsdiagramm verwenden.
+* In den obigen Beispielen wurden die Diagramme so formatiert, dass der Schriftgrad vergrößert, die Schriftfarbe geändert, Achsentitel hinzugefügt, Diagrammtitel und Legende zentriert, der Ausgangspunkt beider Achsen auf 0 (null) gesetzt und vieles mehr durchgeführt wurde. Der Bereich „Formatierung“ (Farbrollensymbol) bietet zahlreiche Optionen, mit denen Sie Ihre Diagramme nach Wunsch gestalten können. Sie lernen diese Möglichkeit am besten kenn, indem Sie den Bereich „Formatierung“ öffnen und erforschen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

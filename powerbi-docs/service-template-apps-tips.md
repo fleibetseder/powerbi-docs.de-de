@@ -1,22 +1,22 @@
 ---
-title: Tipps für die Erstellung von Vorlagen-Apps in Power BI (Vorschau)
+title: Tipps für die Erstellung von Vorlagen-Apps in Power BI
 description: Tipps für die Erstellung von Abfragen, Datenmodellen, Berichten und Dashboards für gute Vorlagen-Apps
-author: maggiesMSFT
+author: teddybercovitz
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/19/2019
-ms.author: maggies
-ms.openlocfilehash: 83049a16ecd42b41375da57a5a99a374596a9846
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/26/2019
+ms.author: tebercov
+ms.openlocfilehash: 59d581697091df68df827ec699c8999a6993daef
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514864"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408361"
 ---
-# <a name="tips-for-authoring-template-apps-in-power-bi-preview"></a>Tipps für die Erstellung von Vorlagen-Apps in Power BI (Vorschau)
+# <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tipps für die Erstellung von Vorlagen-Apps in Power BI
 
 Wenn Sie in Power BI [Ihre Vorlagen-App erstellen](service-template-apps-create.md), besteht ein Teil des Erstellungsprozesses in der Logistik für die Erstellung eines Arbeitsbereichs, für Tests und für die Produktionsphase. Der andere wichtige Teil besteht ganz klar in der Erstellung des Berichts und des Dashboards. Wir können den Erstellungsprozess in vier Hauptkomponenten unterteilen. Das Arbeiten mit diesen Komponenten hilft Ihnen dabei, die Vorlagen-App bestmöglich zu erstellen:
 
@@ -24,7 +24,7 @@ Wenn Sie in Power BI [Ihre Vorlagen-App erstellen](service-template-apps-create.
 * In dem **Datenmodell** können Sie [Beziehungen](desktop-create-and-manage-relationships.md), [Measures](desktop-measures.md) und Q&A-Verbesserungen erstellen.  
 * **[Berichtseiten](desktop-report-view.md)** enthalten Visuals und Filter für Einblicke in Ihre Daten.  
 * **[Dashboards](consumer/end-user-dashboards.md)** und [Kacheln](service-dashboard-create.md) bieten eine Übersicht über die enthaltenen Einblicke.
-* Beispieldaten werden unmittelbar nach der Installation der app gefunden.
+* Dank der Beispieldaten kann Ihre App unmittelbar nach der Installation gefunden werden.
 
 Möglicherweise sind Sie mit den einzelnen verfügbaren Power BI-Features vertraut. Beim Erstellen einer Vorlagen-App sind weitere Punkte für jedes Element zu beachten. Weitere Informationen finden Sie in den einzelnen Abschnitten unten.
 
@@ -36,12 +36,10 @@ Bei Vorlagen-Apps werden die in Power BI Desktop entwickelten Abfragen zum Herst
 ### <a name="connect-to-your-api"></a>Herstellen einer Verbindung mit der API
 Zunächst müssen Sie eine Verbindung mit der API aus Power BI Desktop herstellen, um Abfragen zu erstellen.
 
-Sie können die in Power BI Desktop verfügbaren Datenconnectors direkt verwenden, um eine Verbindung mit der API herzustellen. Sie können mit dem Web-Datenconnector („Daten abrufen“ > „Web“) eine Verbindung mit Ihrer Rest-API oder mit dem OData-Connector („Daten abrufen“ > „OData-Feed“) eine Verbindung mit dem OData-Feed herstellen. Diese Connectors können nur ohne Anpassung verwendet werden, wenn die API die Standardauthentifizierung unterstützt.
+Sie können die in Power BI Desktop verfügbaren Datenconnectors verwenden, um eine Verbindung mit der API herzustellen. Sie können mit dem Web-Datenconnector („Daten abrufen“ > „Web“) eine Verbindung mit Ihrer Rest-API oder mit dem OData-Connector („Daten abrufen“ > „OData-Feed“) eine Verbindung mit dem OData-Feed herstellen.
 
 > [!NOTE]
-> Wenn Ihre API andere Authentifizierungstypen wie OAuth 2.0 oder einen Web-API-Schlüssel verwendet, müssen Sie einen eigenen Datenconnector entwickeln, damit Power BI Desktop erfolgreich eine Verbindung mit der API herstellen und die Authentifizierung darüber durchführen kann. PBI-Dienst für die sie für den Zugriff durch die Vorlage app-Installer muss Ihr benutzerdefinierte Connector hinzugefügt werden. <br> Informationen zum Entwickeln eines eigenen Datenconnectors für Ihre Vorlagen-App finden Sie in der [Dokumentation zu Datenconnectors](https://aka.ms/DataConnectors). 
->
->
+> Da Vorlagen-Apps derzeit keine benutzerdefinierten Connectors unterstützen, sollten Sie untersuchen, ob Sie Odatafeed Auth 2.0 als Ausgleich für einige der Verbindungsanwendungsfälle oder zum Übermitteln Ihres Connectors zur Zertifizierung verwenden können. Informationen zum Entwickeln eines Connectors und seiner Zertifizierung finden Sie in der [Dokumentation zu Datenconnectors](https://aka.ms/DataConnectors).
 
 ### <a name="consider-the-source"></a>Überlegungen zur Quelle
 Die Abfragen definieren die Daten, die im Datenmodell enthalten sind. Abhängig von der Größe Ihres Systems sollten diese Abfragen auch Filter enthalten, um sicherzustellen, dass Ihre Kunden mit einer überschaubaren Größe arbeiten, die für Ihr Geschäftsszenario geeignet ist.
@@ -116,40 +114,40 @@ Zum Erstellen eines Dashboards für Ihre Vorlagen-App laden Sie einfach Ihre PBI
 * Ziehen Sie für verschiedene Szenarios vertikale oder horizontale Gruppierungen im Dashboard in Betracht.  
 
 ## <a name="sample-data"></a>Beispieldaten
-Vorlage-apps als Teil der Phase der Clustererstellung app dient als Wrapper für die Daten im Cache im Rahmen der app-Arbeitsbereich:
+Vorlagen-Apps umschließen als Teil der Erstellungsphase der App die Cachedaten im Arbeitsbereich als Teil der App:
 
-* Können Sie das Installationsprogramm die Funktionen und den Zweck der app zu verstehen, bevor die Daten verbinden.
-* Erstellt eine Erfahrung, die das Installationsprogramm, Erkunden Sie die app-Funktionen, steuert die führt zum Verbinden der app-Datasets.
+* Dies ermöglicht der installierenden Person, Funktionalität und Zweck der App zu verstehen, bevor die Verbindung mit den Daten hergestellt wird.
+* Dies schafft eine Erfahrung, die die installierende Person dazu veranlasst, die App-Funktionen weiter zu erforschen, was zum Herstellen der Verbindung mit dem App-Dataset führt.
 
-Es wird empfohlen, müssen vor dem Erstellen der app Qualität Beispieldaten. Stellen Sie sicher, den Bericht zum app- und -Dashboards werden mit Daten gefüllt.
+Wir empfehlen Ihnen, vor dem Erstellen der App für qualitativ hochwertige Beispieldaten zu sorgen. Stellen Sie sicher, dass App-Bericht und Dashboards mit Daten gefüllt sind.
 
 ## <a name="publishing-on-appsource"></a>Veröffentlichen auf AppSource
-Vorlage-apps auf AppSource veröffentlicht werden können, befolgen Sie diese Richtlinien vor dem übermitteln der app in AppSource:
+Vorlagen-Apps können auf AppSource veröffentlicht werden – befolgen Sie diese Richtlinien, bevor Sie Ihre App an AppSource übermitteln:
 
-* Stellen Sie sicher, erstellen Sie eine Vorlage-app mit Beispieldaten, die helfen können Sie das Installationsprogramm zu verstehen, was die app tun kann ansprechende (leerer Bericht und Dashboard sind nicht genehmigt).
-Vorlage-apps unterstützen nur Daten beispielapps, stellen Sie sicher, dass das Kontrollkästchen für die statischen app aktivieren. [Weitere Informationen](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Haben Sie die Anweisungen für das Team Überprüfung ausführen, darunter Anmeldeinformationen und Parametern, die erforderlich sind, zu Daten herstellen.
-* Anwendung muss die App-Symbol in Power BI und in Ihrem Angebot CPP enthalten. [Weitere Informationen](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Zielseite, die konfiguriert werden. [Weitere Informationen](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Stellen Sie sicher, dass die Dokumentation, führen auf [Power BI-App-Angebot](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
-* Falls ein Dashboard Teil Ihrer app ist, stellen Sie sicher, dass er nicht leer ist.
-* Installieren Sie die app über den app-Link vor der Übermittlung, stellen Sie sicher, Sie können das Dataset eine Verbindung herstellen und die app-Testbenutzeroberfläche ist, wie Sie geplant.
-* Stellen Sie vor dem Hochladen Bpix in der Vorlage app-Arbeitsbereich an, Sie sicher, dass keine unnötigen Verbindungen zu entladen.
-* Führen Sie die Power BI [Bewährte Entwurfsmethoden für Berichte und Visualisierungen](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) um maximale Auswirkungen auf Ihre Benutzer und erhalten der Genehmigung für die Verteilung zu erzielen.
+* Achten Sie darauf, eine Vorlagen-App mit ansprechenden Beispieldaten zu erstellen, die der installierenden Person helfen zu verstehen, was die App kann (leerer Bericht und leeres Dashboard sind nicht erwünscht).
+Vorlagen-Apps unterstützen Apps, die nur Beispieldaten enthalten; achten Sie darauf, das Kontrollkästchen „Statisch“ zu aktivieren. [Weitere Informationen](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Halten Sie Anweisungen für das Validierungsteam bereit, die Anmeldeinformationen und Parameter enthalten, die für das Herstellen der Verbindung mit Daten erforderlich sind.
+* Die Anwendung muss in Power BI und in Ihrem CPP-Angebot ein App-Symbol enthalten. [Weitere Informationen](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Landing Page muss konfiguriert sein. [Weitere Informationen](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Befolgen Sie die Dokumentation [Power BI-App-Angebot](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
+* Falls ein Dashboard Teil Ihrer App ist, stellen Sie sicher, dass es nicht leer ist.
+* Installieren Sie die App über den App-Link, bevor Sie sie übermitteln, stellen Sie sicher, dass Sie die Verbindung mit dem Dataset herstellen können und die App wie geplant funktioniert.
+* Entladen Sie vor dem Hochladen der BPIX-Datei in den Vorlagen-App-Arbeitsbereich unbedingt alle unnötigen Verbindungen.
+* Befolgen Sie [Bewährte Entwurfsmethoden für Berichte und Visualisierungen](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) für Power BI, um den besten Eindruck bei Ihren Benutzern zu machen und die Genehmigung für die Verteilung zu erhalten.
 
 ## <a name="known-limitations"></a>Bekannte Einschränkungen
 
 | Feature | Bekannte Einschränkung |
 |---------|---------|
 |Inhalt:  Datasets   | Genau ein Dataset sollte vorhanden sein. Nur Datasets, die in Power BI Desktop erstellt wurden (.pbix-Dateien), sind zulässig. <br>Nicht unterstützt: Datasets aus anderen Vorlagen-Apps, arbeitsbereichübergreifende Datasets, paginierte Berichte (.rdl-Dateien), Excel-Arbeitsmappen |
-|Inhalt: Dashboards | Real-Time-Kacheln sind nicht zulässig (also keine Unterstützung für Push- oder streamingdatasets) |
+|Inhalt: Dashboards | Echtzeitkacheln sind nicht zulässig (d.h. Push- oder Streamingdatasets werden nicht unterstützt). |
 |Inhalt: Dataflows | Nicht unterstützt: Dataflows |
 |Inhalte aus Dateien | Nur PBIX-Dateien sind zulässig. <br>Nicht unterstützt: .rdl-Dateien (paginierte Berichte), Excel-Arbeitsmappen   |
-| Datenquellen | Datenquellen, die für geplante Datenaktualisierungen in der Cloud unterstützt werden, sind zulässig. <br>Nicht unterstützt: <li> DirectQuery</li><li>Liveverbindungen (ausgenommen Azure Analysis Services)</li> <li>Lokale Datenquellen (Personal- und Enterprise-Gateways werden nicht unterstützt)</li> <li>Real-Time (keine Unterstützung für Push-Dataset)</li> <li>Zusammengesetzte Modelle</li></ul> |
+| Datenquellen | Datenquellen, die für geplante Datenaktualisierungen in der Cloud unterstützt werden, sind zulässig. <br>Nicht unterstützt: <li> DirectQuery</li><li>Liveverbindungen (ausgenommen Azure Analysis Services)</li> <li>Lokale Datenquellen (persönliche Gateways und Enterprise-Gateways werden nicht unterstützt)</li> <li>Echtzeit (Pushdataset wird nicht unterstützt)</li> <li>Zusammengesetzte Modelle</li></ul> |
 | Dataset: arbeitsbereichübergreifend | Arbeitsbereichübergreifende Datasets sind nicht zulässig.  |
 | Abfrageparameter | Nicht unterstützt: Parameter vom Typ „Any“ oder „Binary“ blockieren den Aktualisierungsvorgang für Datasets. |
-| Benutzerdefinierte visuelle Elemente | Es werden nur öffentlich verfügbare benutzerdefinierte Visuals unterstützt. [Benutzerdefinierte Visuals für Organisationen](power-bi-custom-visuals-organization.md) werden nicht unterstützt. |
+| Benutzerdefinierte Visuals | Es werden nur öffentlich verfügbare benutzerdefinierte Visuals unterstützt. [Benutzerdefinierte Visuals für Organisationen](power-bi-custom-visuals-organization.md) werden nicht unterstützt. |
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[What are Power BI template apps? (preview) (Was sind Power BI-Vorlagen-Apps? (Vorschauversion))](service-template-apps-overview.md)
+[Was sind Power BI-Vorlagen-Apps?](service-template-apps-overview.md)

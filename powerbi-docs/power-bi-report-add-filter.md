@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen eines Filters zu einem Bericht in der Bearbeitungsansicht
+title: Hinzufügen eines Filters zu einem Bericht in Power BI
 description: Hinzufügen eines Seiten-, Visualisierungs- oder Berichtsfilters zu einem Bericht in Power BI
 author: maggiesMSFT
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/22/2019
+ms.date: 06/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 3666335394222d32bc13ce86d8d0a4ed421b5f73
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 7cd2c7acbec9b8d21aeb78cbb159df2a46b12564
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187631"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67409787"
 ---
-# <a name="add-a-filter-to-a-report-in-editing-view"></a>Hinzufügen eines Filters zu einem Bericht in der Bearbeitungsansicht
+# <a name="add-a-filter-to-a-report-in-power-bi"></a>Hinzufügen eines Filters zu einem Bericht in Power BI
 
 Dieser Artikel erläutert, wie Sie einem Bericht in Power BI einen Seiten-, Visualisierungs-, Berichts- oder Drillthroughfilter hinzufügen. Die Beispiele in diesem Artikel stammen aus dem Power BI-Dienst. Die dargestellten Schritte sind fast identisch mit denen in Power BI Desktop.
 
@@ -25,24 +25,26 @@ Dieser Artikel erläutert, wie Sie einem Bericht in Power BI einen Seiten-, Visu
 
 ![Neue Filteroberfläche](media/power-bi-report-add-filter/power-bi-filter-reading.png)
 
+Power BI bietet eine Reihe verschiedener Arten von Filtern, von manuellen und automatischen Filtern bis hin zu Drillthrough und Pass-through. Erfahren Sie mehr über die [verschiedenen Arten von Filtern](power-bi-report-filter-types.md).
+
 ## <a name="filters-in-editing-view-or-reading-view"></a>Filter in der Bearbeitungs- und Leseansicht
 Sie können mit Berichten in zwei verschiedenen Ansichten interagieren: in der Leseansicht und in der Bearbeitungsansicht. Die verfügbaren Filterfunktionen hängen von der verwendeten Ansicht ab. Mehr erfahren Sie unter [Informationen zu Filtern und Hervorhebungen in Power BI-Berichten](power-bi-reports-filters-and-highlighting.md).
 
 Dieser Artikel beschreibt, wie Sie Filter im Bericht **Bearbeitungsansicht** erstellen.  Weitere Informationen zu Filtern in der Leseansicht finden Sie unter [Interagieren mit Filtern in der Leseansicht von Berichten](consumer/end-user-report-filter.md).
 
-## <a name="filter-types-in-the-filters-pane"></a>Filtertypen im Bereich „Filter“
-Der Bereich „Filter“ wird auf der rechten Seite des Zeichenbereichs für den Bericht angezeigt, egal ob Sie den Desktop- oder Power BI-Dienst verwenden. Wenn der Filterbereich nicht angezeigt wird, wählen Sie das Symbol „>“ in der oberen rechten Ecke aus, um ihn zu erweitern.
-
-Es gibt vier Arten von Filtern: **Seitenfilter**, **Visualfilter**, **Drillthroughfilter** und **Berichtsfilter**.
-
-![Der Bereich „Filter“ in der Leseansicht](media/power-bi-report-add-filter/power-bi-add-filter-reading-view.png)
-
 Da Filter *beibehalten werden*, wenn Sie den Bericht verlassen, behält Power BI Ihre Filter, Slicer und andere vorgenommene Änderungen an der Datenansicht bei. Wenn Sie zum Bericht zurückkehren, können Sie also dort weitermachen, wo Sie aufgehört haben. Wenn Sie Ihre Filteränderungen nicht übernehmen möchten, wählen Sie in der oberen Menüleiste **Auf Standardwert zurücksetzen** aus.
 
 ![Schaltfläche „Permanente Filter“](media/power-bi-report-add-filter/power-bi-reset-to-default.png)
 
+## <a name="levels-of-filters-in-the-filters-pane"></a>Filterebenen im Bereich „Filter“
+Der Bereich „Filter“ wird auf der rechten Seite des Zeichenbereichs für den Bericht angezeigt, egal ob Sie den Desktop- oder Power BI-Dienst verwenden. Wenn der Filterbereich nicht angezeigt wird, wählen Sie das Symbol „>“ in der oberen rechten Ecke aus, um ihn zu erweitern.
+
+Sie können Filter auf drei verschiedenen Ebenen für den Bericht festlegen: Visual-, Seiten- und Berichtsebene. Sie können auch Drillthroughfilter einrichten. Dieser Artikel beschreibt die verschiedenen Ebenen.
+
+![Der Bereich „Filter“ in der Leseansicht](media/power-bi-report-add-filter/power-bi-add-filter-reading-view.png)
+
 ## <a name="add-a-filter-to-a-visual"></a>Hinzufügen eines Filters zu einem Visual
-Sie können zu einer bestimmten Visualisierung auf zwei unterschiedliche Arten, einen Filter auf visueller Ebene hinzufügen. 
+Sie haben zwei Möglichkeiten, einem bestimmten Visual einen Filter auf Visualebene hinzuzufügen. 
 
 * Filtern Sie ein Feld, das bereits von der Visualisierung verwendet wird.
 * Identifizieren Sie ein Feld, das noch nicht von der Visualisierung verwendet wird, und fügen Sie dieses Feld direkt dem Bucket **Filter auf visueller Ebene** hinzu.
@@ -51,30 +53,29 @@ Dieses Verfahren verwendet übrigens ein Analysebeispiel für den Einzelhandel, 
 
 ### <a name="filter-the-fields-in-the-visual"></a>Filtern von Feldern im Visual
 
-
-1. Wählen Sie **Bericht bearbeiten** zum Öffnen des Berichts in der Bearbeitungsansicht.
+1. Wählen Sie **Bericht bearbeiten** aus, um den Bericht in der Bearbeitungsansicht zu öffnen.
    
    ![Schaltfläche „ Bericht bearbeiten“](media/power-bi-report-add-filter/power-bi-edit-view.png)
 
 2. Öffnen Sie den Bereich für die Visualisierungen und Filter und den Bereich für die Felder (falls nicht bereits geöffnet).
    
-   ![Visualisierungen, Filter und Felder Bereiche](media/power-bi-report-add-filter/power-bi-display-panes.png)
+   ![Visualisierungen-, Filter- und Felderbereich](media/power-bi-report-add-filter/power-bi-display-panes.png)
 3. Wählen Sie eine Visualisierung aus, um ihn zu aktivieren. Alle Felder, die vom Visual verwendet werden, sind im Bereich **Felder** angegeben und auch im Bereich **Filter** unter der Überschrift **Filter auf visueller Ebene** aufgeführt.
    
-   ![Wählen Sie Filter auf visueller Ebene](media/power-bi-report-add-filter/power-bi-default-visual-filter.png)
+   ![Auswählen von Filtern auf Visualebene](media/power-bi-report-add-filter/power-bi-default-visual-filter.png)
 4. Jetzt wird einem Feld, das bereits von der Visualisierung verwendet wird, ein Filter hinzugefügt. 
    
     Scrollen Sie zum Bereich **Filter auf visueller Ebene**, und wählen Sie den Pfeil aus, um das Feld zu erweitern, das Sie filtern möchten. In diesem Beispiel wird nach **StoreNumberName** gefiltert.
      
-    ![Der Pfeil wird den Filter erweitert](media/power-bi-report-add-filter/power-bi-visual-level-filter.png) 
+    ![Der Pfeil erweitert den Filter.](media/power-bi-report-add-filter/power-bi-visual-level-filter.png) 
     
     Legen Sie für die Filtersteuerelemente **Einfaches Filtern**, **Erweiterte Filterung** oder **Top N-Filter** fest. Suchen Sie für dieses Beispiel unter „Einfaches Filtern“ nach **cha**, und wählen Sie diese fünf Geschäfte aus.
      
-    ![Im einfachen Filtermodus suchen](media/power-bi-report-add-filter/power-bi-search-filter.png) 
+    ![Suche bei einfachem Filtern](media/power-bi-report-add-filter/power-bi-search-filter.png) 
    
     Die Visualisierung ändert sich und spiegelt den neuen Filter wider. Wenn Sie Ihren Bericht mit dem Filter speichern, sehen Berichtsleser das Visual zunächst mit dem angewendeten Filter. Diesen können sie in der Leseansicht ändern und Werte auswählen oder löschen.
      
-    ![Der gefilterte-Visualisierung](media/power-bi-report-add-filter/power-bi-search-visual-filter-results.png)
+    ![Das gefilterte Visual](media/power-bi-report-add-filter/power-bi-search-visual-filter-results.png)
 
 ### <a name="filter-with-a-field-thats-not-in-the-visual"></a>Filtern mit Feldern, die sich nicht im Visual befindet
 
@@ -82,23 +83,23 @@ Fügen Sie der Visualisierung nun ein neues Feld als Filter auf visueller Ebene 
    
 1. Wählen Sie im Bereich „Felder“ das Feld aus, das Sie als neuen Filter auf visueller Ebene hinzufügen möchten, und ziehen Sie es in den Bereich **Filter auf visueller Ebene**.  In diesem Beispiel wird **District Manager** in den Bucket **Filter auf visueller Ebene** gezogen und **an** in das Suchfeld eingegeben. Dann werden diese drei Manager ausgewählt. 
      
-    ![Der Bereich "Filter" ein Feld hinzufügen](media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png)
+    ![Hinzufügen eines Felds zum Bereich „Filter“](media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png)
 
     Beachten Sie, dass **District Manager** der Visualisierung selbst *nicht* hinzugefügt wird. Die Visualisierung besteht weiterhin aus **StoreNumberName** als Achse und aus **This Year Sales** als Wert.  
      
-    ![Das Feld nicht in der Visualisierung](media/power-bi-report-add-filter/power-bi-visualization.png)
+    ![Das Feld ist nicht im Visual](media/power-bi-report-add-filter/power-bi-visualization.png)
 
     Die Visualisierung selbst wird nun gefiltert, um nur die diesjährigen Umsätze der ausgewählten Manager für die angegebenen Geschäfte anzuzeigen.
      
-    ![Der gefilterte-Visualisierung](media/power-bi-report-add-filter/power-bi-search-visual-filter-results-2.png)
+    ![Das gefilterte Visual](media/power-bi-report-add-filter/power-bi-search-visual-filter-results-2.png)
 
     Wenn Sie Ihren Bericht mit dem Filter speichern, können Berichtsleser den Filter **District Manager** in der Leseansicht bearbeiten und Werte auswählen oder löschen.
 
 ## <a name="add-a-filter-to-an-entire-page"></a>Hinzufügen eines Filters zu einer kompletten Seite
 
-Sie können auch einer Seite-Ebene zu Filtern eine gesamte Seite hinzufügen.
+Sie können auch einen Filter auf Seitenebene hinzufügen, um eine komplette Seite zu filtern.
 
-1. Wählen Sie **Bericht bearbeiten** zum Öffnen des Berichts in der Bearbeitungsansicht.
+1. Wählen Sie **Bericht bearbeiten** aus, um den Bericht in der Bearbeitungsansicht zu öffnen.
    
    ![Schaltfläche „ Bericht bearbeiten“](media/power-bi-report-add-filter/power-bi-edit-view.png)
 2. Öffnen Sie den Bereich für die Visualisierungen und Filter und den Bereich für die Felder (falls nicht bereits geöffnet).
@@ -107,7 +108,7 @@ Sie können auch einer Seite-Ebene zu Filtern eine gesamte Seite hinzufügen.
    
    Alle Visualisierungen auf der Seite werden neu gezeichnet, um die Änderung zu übernehmen.
    
-   ![Fügen Sie einen Filter hinzu, und wählen Sie Werte](media/power-bi-report-add-filter/filterpage.gif)
+   ![Hinzufügen eines Filters und Auswählen von Werten](media/power-bi-report-add-filter/filterpage.gif)
 
     Wenn Sie Ihren Bericht mit dem Filter speichern, können Berichtsleser den Filter in der Leseansicht bearbeiten und Werte auswählen oder löschen.
 
@@ -115,7 +116,7 @@ Sie können auch einer Seite-Ebene zu Filtern eine gesamte Seite hinzufügen.
 Mit Drillthrough im Power BI-Dienst und Power BI Desktop können Sie eine *Ziel*-Berichtseite erstellen, die auf eine bestimmte Entität fokussiert ist, z.B. einen Lieferanten, Kunden oder Hersteller. Nun können Benutzer auf den anderen Berichtseiten mit der rechten Maustaste auf einen Datenpunkt für die Entität klicken und einen Drillthrough für die fokussierte Seite ausführen.
 
 ### <a name="create-a-drillthrough-filter"></a>Erstellen eines Drillthroughfilters
-Um folgen zu können, laden die [Beispiel zur Kundenrentabilität](sample-customer-profitability.md). Angenommen, Sie benötigen eine Seite, die auf Managementgeschäftsbereiche fokussiert ist.
+Laden Sie hierfür das [Kundenrentabilitätsbeispiel](sample-customer-profitability.md) herunter. Angenommen, Sie benötigen eine Seite, die auf Managementgeschäftsbereiche fokussiert ist.
 
 1. Wählen Sie **Bericht bearbeiten** aus, um den Bericht in der Bearbeitungsansicht zu öffnen.
    
@@ -125,11 +126,11 @@ Um folgen zu können, laden die [Beispiel zur Kundenrentabilität](sample-custom
 2. Fügen Sie Visualisierungen zum Verfolgen von Schlüsselmetriken für die Geschäftsbereiche der Teammanager hinzu.    
 3. Fügen Sie dem Bereich „Drillthroughfilter“ **Executive > Executive Name** (Führungskraft > Name der Führungskraft) hinzu.    
    
-    ![Hinzufügen eines Werts zu Drillthroughfilter](media/power-bi-report-add-filter/power-bi-drillthrough-filter.png)
+    ![Hinzufügen eines Werts zu Drillthroughfiltern](media/power-bi-report-add-filter/power-bi-drillthrough-filter.png)
    
     Beachten Sie, dass Power BI der Berichtseite einen Zurück-Pfeil hinzufügt.  Wenn der Benutzer auf den Zurück-Pfeil klickt, kehrt er zur *Ausgangs*berichtseite zurück – zu der Seite, auf der er den Drillthrough ausgewählt hat. Der Zurück-Pfeil kann nur in der Leseansicht verwendet werden.
    
-     ![Den zurück-Pfeil](media/power-bi-report-add-filter/power-bi-back-arrow.png)
+     ![Der Zurück-Pfeil](media/power-bi-report-add-filter/power-bi-back-arrow.png)
 
 ### <a name="use-the-drillthrough-filter"></a>Verwenden des Drillthroughfilters
 Im Folgenden wird beschrieben, wie der Drillthroughfilter funktioniert.
@@ -137,18 +138,18 @@ Im Folgenden wird beschrieben, wie der Drillthroughfilter funktioniert.
 1. Starten Sie auf der Berichtseite **Team-Scorecard**.    
 2. Angenommen, Sie sind Andrew Ma und möchten die „Team Executive“-Berichtseite so gefiltert anzeigen, dass nur Ihre Daten enthalten sind.  Klicken Sie im Flächendiagramm oben rechts auf einen grünen Datenpunkt, um die Menüoption „Drillthrough“ zu öffnen.
    
-    ![Starten Sie die Drillthroughaktion](media/power-bi-report-add-filter/power-bi-drillthrough.png)
+    ![Starten der Drillthroughaktion](media/power-bi-report-add-filter/power-bi-drillthrough.png)
 3. Wählen Sie **Drillthrough > Team Executive** aus, um einen Drillthrough zur Berichtseite **Team Executive** (Teammanager) durchzuführen. Die Seite wird so gefiltert, dass Informationen zum Datenpunkt angezeigt werden, auf den Sie mit der rechten Maustaste geklickt haben; in diesem Fall „Andrew Ma“. An die Drillthroughberichtseite wird nur das Feld übergeben, das sich im Bereich „Drillthroughfilter“ befindet.  
    
-    ![Wählen Sie die Drillthroughaktion](media/power-bi-report-add-filter/power-bi-drillthrough-executive.png)
+    ![Auswählen der Drillthroughaktion](media/power-bi-report-add-filter/power-bi-drillthrough-executive.png)
 
-## <a name="add-a-report-level-filter-to-filter-an-entire-report"></a>Hinzufügen einer Berichtebene filtert einen gesamten Bericht
+## <a name="add-a-report-level-filter-to-filter-an-entire-report"></a>Hinzufügen eines Filters auf Berichtsebene zum Filtern eines gesamten Berichts
 
 1. Wählen Sie **Bericht bearbeiten** aus, um den Bericht in der Bearbeitungsansicht zu öffnen.
    
    ![Schaltfläche „ Bericht bearbeiten“](media/power-bi-report-add-filter/power-bi-edit-view.png)
 
-2. Öffnen Sie im Bereich für Visualisierungen und Filter und den Bereich "Felder" aus, wenn sie nicht bereits geöffnet sind.
+2. Öffnen Sie den Bereich für die Visualisierungen und Filter und den Bereich für die Felder, falls sie nicht bereits geöffnet sind.
 3. Wählen Sie im Bereich „Felder“ das Feld aus, das Sie als neuen Filter auf Berichtsebene hinzufügen möchten, und ziehen Sie es in den Bereich **Berichtsstufenfilter**.  
 4. Wählen Sie die zu filternden Werte aus.
 
@@ -170,9 +171,7 @@ Im Folgenden wird beschrieben, wie der Drillthroughfilter funktioniert.
 
 [Filter und Hervorhebungen in Berichten](power-bi-reports-filters-and-highlighting.md)
 
-[Interagieren mit Filtern und Hervorhebungen in der Leseansicht von Berichten](consumer/end-user-reading-view.md)
-
-[Ändern der Kreuzfilterung und -hervorhebung von Berichtsvisualisierungen](consumer/end-user-interactions.md)
+[Filtertypen in Power BI-Berichten](power-bi-report-filter-types.md)
 
 Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
 

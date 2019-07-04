@@ -7,38 +7,38 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/16/2019
+ms.date: 06/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 0a9e4986ae2f686eb8a8fd2d9fa07b169661ce60
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 6a95ddd8f13be2407736c126b087723ceb5d9f31
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65853474"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67409163"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports-preview"></a>Die neue Filteroberfläche in Power BI-Berichten (Vorschau)
 
-Filter in Power BI wurden neue Funktionen und ein neues Design. Wenn Sie sich auf die neue Filter-Benutzeroberfläche entscheiden, können Sie den Bereich "Filter", der Rest des Berichts aussehen formatieren. Sie können Sperren und sogar Filter ausblenden. Wenn Sie den Bericht zu entwerfen, sehen Sie nicht mehr die alte Bereich "Filter" in den Bereich "Visualisierungen". Sie werden alle Filter bearbeiten und die Formatierung in einem einzelnen Bereich "Filter". 
+Filter in Power BI haben eine neue Funktionalität und ein neues Design. Wenn Sie sich für die neue Filterbenutzeroberfläche entscheiden, können Sie den Filterbereich so formatieren, dass er wie der Rest des Berichts aussieht. Sie können Filter sperren und sogar ausblenden. Wenn Sie den Bericht entwerfen, sehen Sie nicht mehr den alten Filterbereich im Bereich „Visualisierungen“. Ihre gesamte Filterbearbeitung und -formatierung führen Sie in einem einzelnen Filterbereich durch. 
 
 ![Neue Filteroberfläche](media/power-bi-report-filter-preview/power-bi-filter-reading.png)
 
 > [!NOTE]
 > Die neue Filterfunktion befindet sich in der Vorschau. Neue Builds überschreiben möglicherweise Ihre festgelegte Formatierung.
 
-Als einen Berichts-Designer ist hier was Sie tun können, in der neuen einzelnen Bereich "Filter":
+Als Berichts-Designer haben Sie im neuen einzelnen Filterbereich folgende Möglichkeiten:
 
-- Hinzufügen und Entfernen von Feldern zu filtern. 
-- Ändern Sie den Zustand des Filters.
-- Formatieren Sie und passen Sie den Bereich "Filter" so an, dass das Gefühl, Teil des Berichts.
+- Hinzufügen und Entfernen zu filternder Felder. 
+- Ändern des Filterstatus.
+- Formatieren und Anpassen des Filterbereichs, damit er zu Ihrem Bericht passt.
 - Sie können festlegen, ob der Filterbereich beim Öffnen des Berichts durch den Nutzer standardmäßig geöffnet oder ausgeblendet werden soll.
-- Ausblenden der gesamte Bereich "Filter" oder bestimmte Filter, die Sie nicht, dass Nutzern des Berichts angezeigt möchten.
-- Steuern Sie und sogar Lesezeichen Sie die Sichtbarkeit, öffnen, und dem reduzierten Zustand, der der neue Bereich "Filter".
+- Sie können den gesamten Filterbereich oder bestimmte Filter ausblenden, die den Berichtnutzern nicht angezeigt werden sollen.
+- Sie können die Sichtbarkeit und den Zustand (geöffnet/ausgeblendet) des neuen Filterbereichs steuern und sogar als Lesezeichen festlegen.
 - Sie können Filter sperren, die die Nutzer nicht bearbeiten sollen.
 
-Mit der neuen Oberfläche Filter können Benutzer von Berichten über jedes visuelle Element, um eine schreibgeschützte Liste aller Filter oder Slicer, die Auswirkungen auf das visuelle auch zeigen.
+Mit der neuen Filterbenutzeroberfläche können Berichtnutzer auch mit der Maus auf ein beliebiges Visual zeigen, um eine schreibgeschützte Liste aller Filter oder Datenschnitte zu sehen, die dieses Visual beeinflussen.
 
-![Liste der Filter für ein visual](media/power-bi-report-filter-preview/power-bi-filter-visual.png)
+![Liste der Filter für ein Visual](media/power-bi-report-filter-preview/power-bi-filter-visual.png)
 
 ## <a name="turn-on-the-new-filter-experience"></a>Aktivieren der neuen Filteroberfläche 
 
@@ -56,12 +56,12 @@ Nachdem Sie Power BI Desktop neu gestartet haben, wird die neue Filteroberfläch
 Sie können die Filter auch für vorhandene Berichte aktivieren.
 
 1. Wählen Sie in Power BI Desktop in einem vorhandenen Bericht **Datei** > **Optionen und Einstellungen** > **Optionen** aus.
-2. In der linken Navigationsleiste unter **aktuelle Datei**Option **Berichtseinstellungen**.
-3. Unter **Filtern Erfahrung**Option **aktivieren Sie den aktualisierten Filterbereich, und Filter in der visual-Header für diesen Bericht anzeigen**.
+2. Wählen Sie in der linken Navigationsleiste unter **Aktuelle Datei** die Option **Berichtseinstellungen** aus.
+3. Wählen Sie unter **Benutzeroberfläche zur Filterung** die Option **Aktualisierten Filterbereich aktivieren und Filter im Visualheader für diesen Bericht anzeigen** aus.
 
 ## <a name="view-filters-for-a-visual-in-reading-mode"></a>Anzeigen von Filtern für ein Visual im Lesemodus
 
-Bewegen Sie im Lesemodus den Mauszeiger über das Filtersymbol, um für ein Visual ein Popup mit allen Filtern, Slicern usw. anzuzeigen, die sich auf das Visual auswirken. Die Formatierung des im Popupfenster ist identisch mit der Filter-Bereich-Formatierung. 
+Bewegen Sie im Lesemodus den Mauszeiger über das Filtersymbol, um für ein Visual ein Popup mit allen Filtern, Slicern usw. anzuzeigen, die sich auf das Visual auswirken. Die Formatierung des Popups entspricht der des Filterbereichs. 
 
 ![Filter, die sich auf ein Visual auswirken](media/power-bi-report-filter-preview/power-bi-filter-per-visual.png)
 
@@ -77,39 +77,39 @@ Diese Filtertypen werden in der Ansicht angezeigt:
 - Einschluss-/Ausschlussfilter
 - Per URL übergebene Filter
 
-## <a name="build-the-new-filters-pane"></a>Erstellen Sie den neuen Bereich "Filter"
+## <a name="build-the-new-filters-pane"></a>Erstellen des neuen Filterbereichs
 
-Nach der Aktivierung der neuen Bereich "Filter" sehen Sie es rechts neben der Berichtsseite, die standardmäßig basierend auf Ihrer aktuellen Einstellungen formatiert. Sie verwenden den neuen Bereich "Filter" So konfigurieren Sie die Filter enthalten, und Aktualisieren von vorhandenen Filter im neuen Bereich an. Der neue Bereich "Filter" zeigt an, welche Ihrer Nutzern des Berichts angezeigt werden, wenn Sie Ihren Bericht veröffentlichen. 
+Nachdem Sie den neuen Filterbereich aktiviert haben, wird dieser rechts neben der Berichtseite angezeigt und ist standardmäßig basierend auf Ihren aktuellen Berichteinstellungen formatiert. Sie verwenden den neuen Filterbereich, um die einzuschließenden Filter zu konfigurieren und vorhandene Filter im neuen Bereich zu aktualisieren. Der neue Filterbereich zeigt an, wie der Bericht nach dem Veröffentlichen für Ihre Berichtnutzer angezeigt wird. 
 
-1. Standardmäßig sehen Ihre Nutzern des Berichts den Bereich "Filter" aus. Wenn Sie nicht, dass sie zum anzeigen möchten, aktivieren Sie das Augensymbol neben **Filter**.
+1. Standardmäßig können Ihre Berichtnutzer den Filterbereich sehen. Wenn der Filterbereich nicht sichtbar sein soll, klicken Sie auf das Augensymbol neben **Filter**.
 
-    ![Filter-Augen-Symbol für Power BI](media/power-bi-report-filter-preview/power-bi-filter-eye.png)
+    ![Filteraugensymbol in Power BI](media/power-bi-report-filter-preview/power-bi-filter-eye.png)
 
-2. Um zu beginnen, erstellen Ihre neue Bereich "Filter", entweder als Seite der Visualisierung ziehen Sie relevante Felder in der neue Bereich "Filter", oder auf Berichtsebene.
+2. Um mit der Erstellung Ihres neuen Filterbereichs zu beginnen, ziehen Sie für Sie relevante Felder als Filter auf Visual-, Seiten- oder Berichtsebene in den neuen Bereich „Filter“.
 
-Wenn Sie eine Visualisierung auf einem Zeichenbereich des Berichts hinzufügen, fügt Power BI automatisch einen Filter auf den Bereich "Filter" für jedes Feld im visuellen Element. 
+Wenn Sie dem Zeichenbereich für einen Bericht ein Visual hinzufügen, fügt Power BI automatisch für jedes Feld im Visual dem Bereich „Filter“ einen Filter hinzu. 
 
 ## <a name="lock-or-hide-filters"></a>Sperren oder Ausblenden von Filtern
 
 Sie können einzelne Filterkarten sperren oder ausblenden. Wenn Sie einen Filter sperren, können Ihre Berichtnutzer den Filter sehen, aber nicht ändern. Wenn Sie einen Filter ausblenden, können die Berichtnutzer den Filter nicht einmal sehen. Das Ausblenden von Filterkarten kann insbesondere dann nützlich sein, wenn Sie Datenbereinigungsfilter ausblenden möchten, die NULL-Werte oder unerwartete Werte ausschließen. 
 
-- Wählen Sie in der neue Bereich "Filter", oder deaktivieren Sie die **Zamknout filtr** oder **ausblenden Filter** Symbole in einer Filterkarte.
+- Aktivieren oder deaktivieren Sie im neuen Bereich „Filter“ die Symbole **Filter sperren** oder **Filter ausblenden** auf einer Filterkarte.
 
    ![Ausblenden oder Sperren von Filtern](media/power-bi-report-filter-preview/power-bi-filter-lock-hide.png)
 
-Wie Sie diese Einstellungen ein- und ausschalten in der neue Bereich "Filter" aktiviert haben, sehen Sie die Änderungen in den Bericht an. Ausgeblendete Filter werden im Filterpopup für ein Visual nicht angezeigt.
+Wenn Sie diese Einstellungen im neuen Bereich „Filter“ aktivieren oder deaktivieren, werden die Änderungen im Bericht reflektiert. Ausgeblendete Filter werden im Filterpopup für ein Visual nicht angezeigt.
 
-Sie können auch den neuen Zustand der Filter-Bereich zur Übertragung mit Ihrem Bericht Lesezeichen konfigurieren. Der Zustand (geöffnet/geschlossen) und der Sichtbarkeitsstatus können als Lesezeichen festgelegt werden.
+Sie können den neuen Bereich „Filter“ auch so konfigurieren, dass er ihren Berichtslesezeichen folgt. Der Zustand (geöffnet/geschlossen) und der Sichtbarkeitsstatus können als Lesezeichen festgelegt werden.
  
 ## <a name="format-the-new-filters-pane"></a>Formatieren des neuen Filterbereichs
 
-Ein großer Teil dieser neuen Oberfläche ist, dass Sie den Bereich "Filter", das Erscheinungsbild des Berichts entsprechend formatieren können. Sie können den Bereich "Filter" für jede Seite im Bericht unterschiedlich formatieren. Diese Elemente können formatiert werden: 
+Ein wichtiger Aspekt der neuen Benutzeroberfläche ist, dass Sie den Bereich „Filter“ so formatieren können, dass er dem Erscheinungsbild Ihres Berichts entspricht. Sie können den Filterbereich für jede Seite im Bericht anders formatieren. Diese Elemente können formatiert werden: 
 
 - Hintergrundfarbe
 - Hintergrundtransparenz
-- Rahmen, ein- oder ausschalten
+- Rahmen ein oder aus
 - Rahmenfarbe
-- Titel und Header Schriftart, Farbe und Größe
+- Schriftart, Farbe und Textgröße für Titel und Header
 
 Für Filterkarten können Sie außerdem diese Elemente formatieren – je nachdem, ob sie angewendet wurden (auf einen Wert festgelegt) oder verfügbar (deaktiviert) sind: 
 
@@ -120,10 +120,10 @@ Für Filterkarten können Sie außerdem diese Elemente formatieren – je nachde
 - Schriftart, Farbe und Textgröße
 - Farbe für Eingabefeld
 
-### <a name="format-the-filters-pane-and-cards"></a>Formatieren Sie den Bereich "Filter" und Karten
+### <a name="format-the-filters-pane-and-cards"></a>Formatieren von Filterbereich und -karten
 
 1. Klicken Sie im Bericht auf den Bericht selbst oder den Hintergrund (*Hintergrundbild*), und wählen Sie dann im Bereich **Visualisierungen** die Einstellung **Format** aus. 
-    Optionen für die Formatierung der Berichtsseite, des Hintergrundbilds an, und auch den Bereich "Filter" und Filter Karten angezeigt.
+    Es werden Optionen zum Formatieren der Berichtseite, des Hintergrundbilds sowie Filterbereichs und der Filterkarten angezeigt.
 
     ![Formatierungssymbol auswählen](media/power-bi-report-filter-preview/power-bi-filter-format.png)    
 
@@ -135,8 +135,8 @@ Für Filterkarten können Sie außerdem diese Elemente formatieren – je nachde
   
     ![Filterkarte erweitern](media/power-bi-report-filter-preview/power-bi-filter-format-card-font.png)
 
-## <a name="theming-for-filter-pane"></a>Design für den Bereich "Filter"
-Sie können die Standardeinstellung für den Filterbereich jetzt mit der Designdatei ändern. Hier ist ein Codeausschnitt als Beispiel Design für Ihre ersten Schritte:
+## <a name="theming-for-filter-pane"></a>Design für den Bereich „Filter“
+Sie können jetzt die Standardeinstellungen für den Filterbereich mit der Designdatei ändern. Hier ist ein Codeausschnitt eines Beispieldesigns für Ihre ersten Schritte:
 
  
 ```
@@ -207,41 +207,42 @@ Sie können die Standardeinstellung für den Filterbereich jetzt mit der Designd
 }] 
 ```
 
-## <a name="sort-the-filter-pane"></a>Sortieren Sie den Bereich "Filter"
+## <a name="sort-the-filter-pane"></a>Sortieren des Filterbereichs
 
-Benutzerdefinierte Sortierung-Funktionalität ist Teil der neuen Oberfläche des Filter-Bereich. Berichtersteller Drag & drop können Filter, um sie in der Reihenfolge neu anzuordnen, die sie wünschen.
+Benutzerdefinierte Sortierfunktionalität ist Teil der neuen Benutzeroberfläche zur Filterung. Berichtersteller können Filter mit Drag & Drop in der gewünschten Reihenfolge neu anordnen.
 
-![Ordnen Sie die Sortierreihenfolge für filter](media/power-bi-report-filter-preview/power-bi-filter-sort.gif)
+![Neuanordnen der Sortierreihenfolge für Filter](media/power-bi-report-filter-preview/power-bi-filter-sort.gif)
 
-Die Standardsortierreihenfolge ist für Filter alphabetisch. Um benutzerdefinierte Sortiermodus starten möchten, ziehen Sie einfach alle Filter zu einer neuen Position. Sie können nur Filter innerhalb der Ebene sortieren, die für die Sie – z. B. einen Filter auf visueller Ebene, Seitenebene oder Berichtsebene geltende.
+Die Standardsortierreihenfolge für Filter ist alphabetisch. Um mit dem benutzerdefinierten Sortiermodus zu beginnen, ziehen Sie einfach einen beliebigen Filter an eine neue Position. Sie können Filter nur innerhalb der Ebene sortieren, auf die sie angewandt werden – z.B. Visual-, Seiten- oder Berichtsebene.
 
-## <a name="filters-pane-scaling"></a>Filtert Skalierung im Bereich
+## <a name="filters-pane-scaling"></a>Skalierung des Bereichs „Filter“
 
-Der neue Bereich "Filter" skaliert mit der Berichtsseite und visuellen Elementen, sodass die Berichtsseite und filtert im Bereich bleiben im Verhältnis miteinander.
+Der neue Bereich „Filter“ wird mit der Berichtsseite und visuellen Elementen skaliert, sodass die Berichtsseite und der Bereich „Filter“ stets proportional zueinander sind.
 
-## <a name="improved-filters-pane-accessibility"></a>Verbesserte Barrierefreiheit der Filter-Bereich
+## <a name="improved-filters-pane-accessibility"></a>Verbesserte Barrierefreiheit des Bereichs „Filter“
 
-Wir haben die Navigation per Tastatur für den neuen Bereich "Filter" verbessert. Sie können die TAB-Taste in jeden Teil der Bereich "Filter" und verwenden den Kontextschlüssel auf Ihrer Tastatur oder UMSCHALT + F10, um das Kontextmenü zu öffnen.
+Wir haben die Navigation per Tastatur für den neuen Bereich „Filter“ verbessert. Sie können mit der TAB-Taste in jeden Teil des Bereichs „Filter“ gelangen und mit der Kontexttaste oder UMSCHALT+F10 das Kontextmenü öffnen.
 
-![Barrierefreiheit der Filter-Bereich](media/power-bi-report-filter-preview/power-bi-filter-accessible.png)
+![Barrierefreiheit des Bereichs „Filter“](media/power-bi-report-filter-preview/power-bi-filter-accessible.png)
 
-## <a name="rename-filters"></a>Benennen Sie Filter
-Wenn Sie den Bereich "Filter" Bearbeiten, können Sie den Titel aus, um ihn zu bearbeiten doppelklicken. Das Umbenennen ist nützlich, wenn Sie die Filterkarte, um mehr Sinn für die Endbenutzer aktualisieren möchten. Denken Sie daran, die Umbenennen der Filterkarte ist *nicht* benennen Sie den Anzeigenamen des Felds in der Feldliste. Es ändert nur den Anzeigenamen, die in der Filterkarte verwendet.
+## <a name="rename-filters"></a>Umbenennen von Filtern
+Wenn Sie den Bereich „Filter“ bearbeiten, können Sie auf den Titel doppelklicken, um ihn zu bearbeiten. Das Umbenennen ist nützlich, wenn Sie die Filterkarte aktualisieren möchten, um die Verständlichkeit für Endbenutzer zu verbessern. Denken Sie daran, dass mit dem Umbenennen der Filterkarte *keine* Umbenennung des Anzeigenamens des Felds in der Felderliste verbunden ist. Es wird nur der in der Filterkarte verwendete Anzeigename geändert.
 
-![Benennen Sie einen filter](media/power-bi-report-filter-preview/power-bi-filter-rename.png)
+![Umbenennen eines Filters](media/power-bi-report-filter-preview/power-bi-filter-rename.png)
 
-## <a name="restrict-changes-to-filter-type"></a>Einschränken von Änderungen am Typ filtern
+## <a name="restrict-changes-to-filter-type"></a>Einschränken von Änderungen des Filtertyps
 
-Klicken Sie unter den Filtern treten Sie auf, Teil der Berichtseinstellungen, die Sie haben die Möglichkeit, die steuern, wenn Benutzer den Filtertyp ändern können.
+Im Abschnitt „Benutzeroberfläche zur Filterung“ der Berichtseinstellungen haben Sie die Möglichkeit, zu steuern, ob Benutzer den Filtertyp ändern können.
 
-![Einschränken der Filtertyp ändern](media/power-bi-report-filter-preview/power-bi-filter-restrict-change.png)
+![Einschränken von Änderungen des Filtertyps](media/power-bi-report-filter-preview/power-bi-filter-restrict-change.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Probieren Sie die neue Filteroberfläche aus! Geben Sie uns Feedback für diese Funktion und wie wir weiter, verbessern können auf die [Power BI Ideas Site](https://ideas.powerbi.com/forums/265200-power-bi). 
+Probieren Sie die neue Filteroberfläche aus! Senden Sie uns auf der [Power BI Ideas-Website](https://ideas.powerbi.com/forums/265200-power-bi) Feedback zu diesem Feature, und lassen Sie uns wissen, wie wir es weiter verbessern können. 
 
 - [Verwenden von Berichtsfiltern](consumer/end-user-report-filter.md)
 - [Filter und Hervorhebungen in Berichten](power-bi-reports-filters-and-highlighting.md)
+- [Verschiedene Filtertypen in Power BI-Berichten](power-bi-report-filter-types.md)
 
 Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
 

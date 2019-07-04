@@ -1,6 +1,6 @@
 ---
-title: Abonnieren von Berichten und Dashboards für sich selbst und andere
-description: Erfahren Sie, wie Sie ein E-Mail-Abonnement einer Momentaufnahme eines Power BI-Berichts oder Dashboards für sich und Ihre Kollegen einrichten.
+title: Abonnieren von Berichten und Dashboards
+description: Erfahren Sie, wie Sie eine Momentaufnahme eines Power BI-Berichts oder -Dashboards per E-Mail abonnieren.
 author: mihart
 ms.author: mihart
 manager: kvivek
@@ -9,16 +9,16 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/11/2019
+ms.date: 06/26/2019
 LocalizationGroup: Common tasks
-ms.openlocfilehash: d452b036c7890d59e27df328ae12ad7f5b3b8dbb
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: 85976d191fba627b75f8b415acc312817d11ed34
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66497942"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408529"
 ---
-# <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service"></a>Abonnieren eines Berichts oder Dashboards im Power BI-Dienst 
+# <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Abonnieren eines Berichts oder Dashboards im Power BI-Dienst 
 Es war noch nie so einfach, bei den wichtigsten Dashboards und Berichten auf dem aktuellen Stand zu bleiben. Wenn Sie die Berichtsseiten und Dashboards abonnieren, die für Sie am wichtigsten sind, erhalten Sie von Power BI per E-Mail eine Momentaufnahme. Sie geben an, wie oft Sie E-Mails von Power BI erhalten möchten: täglich, wöchentlich oder wenn die Daten aktualisiert werden. Sie können sogar eine spezifische Uhrzeit festlegen, zu der Power BI die E-Mails sendet, oder die Ausführung sofort starten.  
 
 Für E-Mails und Momentaufnahmen wird die Sprache verwendet, die in den Power BI-Einstellungen festgelegt ist. Weitere Informationen finden Sie unter [Unterstützte Sprachen und Länder/Regionen für Power BI](../supported-languages-countries-regions.md). Wenn keine Sprache definiert ist, verwendet Power BI die Sprache, die der Gebietsschemaeinstellung Ihres aktuellen Browsers entspricht. Sie können die Spracheinstellung anzeigen bzw. festlegen, indem Sie zuerst auf das Zahnradsymbol ![Zahnradsymbol](./media/end-user-subscribe/power-bi-settings-icon.png) >  **und dann auf Einstellungen > Allgemein > Sprache** klicken. 
@@ -29,7 +29,7 @@ Die E-Mail, die Sie erhalten, enthält einen Link, mit dem Sie zum Bericht/Dashb
 
 
 ## <a name="requirements"></a>Anforderungen
-Das **Erstellen** eines Abonnements ist ein Feature von Power BI Pro.   
+Zum **Erstellen** eines Abonnements für Sie selbst ist eine Power BI Pro-Lizenz erforderlich. Benutzer, die Inhalte in einem Premium-Arbeitsbereich oder einer Premium-App anzeigen, können auch ohne Power BI Pro-Lizenz dort befindliche Inhalte abonnieren. **Abonnieren für andere** ist nur für den Besitzer des Dashboards verfügbar. 
 
 ## <a name="subscribe-to-a-dashboard-or-a-report-page"></a>Abonnieren eines Berichts oder Dashboards
 Egal, ob Sie ein Dashboard oder einen Bericht abonnieren – der Vorgang ist ähnlich. Sie können Dashboards und Berichte im Power BI-Dienst über dieselbe Schaltfläche abonnieren.
@@ -41,15 +41,13 @@ Egal, ob Sie ein Dashboard oder einen Bericht abonnieren – der Vorgang ist äh
    
    ![Symbol „Abonnieren“](./media/end-user-subscribe/power-bi-subscribe-icon.png)
 
-   ![Fenster „Abonnieren“](./media/end-user-subscribe/power-bi-emails-newer.png)
+   ![Fenster „Abonnieren“](./media/end-user-subscribe/power-bi-emails-newest.png)
     
     Die linke Anzeige wird angezeigt, wenn Sie in einem Dashboard auf **Abonnieren** klicken. Die rechte Anzeige wird angezeigt, wenn Sie auf einer Berichtsseite auf **Abonnieren** klicken. Klicken Sie auf **Weiteres Abonnement hinzufügen**, und wählen Sie die gewünschten Seiten aus, um mehrere Seiten in einem Bericht zu abonnieren. 
 
 4. Mithilfe des gelben Schiebereglers können Sie das Abonnement aktivieren und deaktivieren.  Wenn Sie den Schieberegler auf „Aus“ stellen, wird das Abonnement nicht gelöscht. Verwenden Sie zum Löschen des Abonnements das Papierkorbsymbol.
 
-4. Ihre E-Mail-Adresse wird automatisch in das Feld **Abonnieren** eingesetzt. Um für andere in Ihrer Organisation zu abonnieren, fügen Sie deren E-Mail-Adressen hier ebenfalls hinzu. 
-
-5. Fügen Sie optional E-Mail-Adressinformationen hinzu. 
+5. Fügen Sie optional einen Betreff und E-Mail-Adressinformationen hinzu. 
 
 5. Wählen Sie eine Option für **Häufigkeit** für Ihr Abonnement aus.  Ihnen stehen folgende Optionen zur Verfügung: Täglich, Wöchentlich und Nach Datenaktualisierung (einmal täglich).  Wenn Sie die E-Mail des Abonnements nur an bestimmten Tagen erhalten möchten, können Sie **Wöchentlich** und dann die konkreten Tage auswählen.  Wenn Sie die E-Mail des Abonnements zum Beispiel nur an Werktagen erhalten möchten, können Sie **Wöchentlich** für die Häufigkeit auswählen und die Kontrollkästchen bei „Sa“ und „So“ deaktivieren.   
 
@@ -59,7 +57,7 @@ Egal, ob Sie ein Dashboard oder einen Bericht abonnieren – der Vorgang ist äh
 
 8. Klicken Sie auf **Jetzt ausführen**, um Ihr Abonnement zu überprüfen und auszuprobieren.  Dadurch wird Ihnen die E-Mail sofort gesendet. 
 
-8. Wenn alles in Ordnung ist, klicken Sie auf **Speichern und schließen**, um das Abonnement zu speichern. Sie und Ihre abonnierten Kollegen erhalten eine E-Mail und eine Momentaufnahme des Dashboards oder Berichts gemäß dem festgelegten Zeitplan. Für alle Abonnements, für die die Häufigkeit **Nach Datenaktualisierung** festgelegt ist, werden E-Mails erst nach der ersten geplanten Aktualisierung des Tages versendet.
+8. Wenn alles in Ordnung ist, klicken Sie auf **Speichern und schließen**, um das Abonnement zu speichern. Sie erhalten eine E-Mail und eine Momentaufnahme des Dashboards oder Berichts gemäß des festgelegten Zeitplans. Für alle Abonnements, für die die Häufigkeit **Nach Datenaktualisierung** festgelegt ist, werden E-Mails erst nach der ersten geplanten Aktualisierung des Tages versendet.
    
    ![E-Mail mit einer Momentaufnahme des Dashboards](media/end-user-subscribe/power-bi-subscribe-email.png)
    
