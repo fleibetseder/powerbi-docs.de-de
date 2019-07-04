@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 3465d9280af84a97ebf2ea5ec90ff60daf9e96fa
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: ec50369715efdd7bcb9ab764a3240acceb72508e
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389552"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418649"
 ---
 # <a name="power-bi-webinars"></a>Power BI-Webinare
 
@@ -22,11 +22,7 @@ Registrieren Sie sich für unsere nächsten Livewebinare, oder sehen Sie sich un
 
 ## <a name="upcoming-webinars"></a>Kommende Webinare
 
-Registrieren Sie sich, um sich von Power BI-Experten informieren zu lassen und an Live-Q&A-Sitzungen teilzunehmen.
-
-**Power BI: How to Get Insights from Your Workday HR Data**
-<br>Referenten: Iman Eftekhari, Julia Paton von Agile Analytics und Shahram Karimi von QBE Insurance
-<br>[Registrieren Sie sich für die Teilnahme am 27. Juni, 13:30 Uhr – 14:30 Uhr PST.](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
+Es sind noch keine Webinare geplant. Besuchen Sie diese Website regelmäßig, um sich über neue Veranstaltungen zu informieren.
 
 >[Bevorstehende Webinare der Power BI-Community](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
@@ -128,6 +124,10 @@ Sehen Sie sich zu einem beliebigen Zeitpunkt aufgezeichnete Sitzungen an.
 
 ### <a name="partner-solutions-series"></a>Partner Solutions-Reihe ###
 [Diese Reihe ansehen](https://info.microsoft.com/ww-landing-PartnerWebinarSeriesPage.html)
+
+**Power BI: How to Get Insights from Your Workday HR Data**
+<br>Referenten: Iman Eftekhari, Julia Paton von Agile Analytics und Shahram Karimi von QBE Insurance
+<br>[Jetzt registrieren und ansehen](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
 
 **Achieving a Win-Win for Consumer Product Goods Manufacturers and Retailers** (Erzielen einer Win-Win-Situation für Hersteller und Händler von Verbrauchsgütern)
 <br>von Liz McCreesh von Thorogood

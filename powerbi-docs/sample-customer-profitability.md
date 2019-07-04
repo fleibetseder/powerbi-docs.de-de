@@ -10,16 +10,15 @@ ms.topic: conceptual
 ms.date: 06/20/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 70f47e4885b3abeb6ee17bea23dec35a230d57ec
-ms.sourcegitcommit: a2c4f912af1729fdfdf20369bf3eff67c3927eec
+ms.openlocfilehash: af20d5842664311a0d543ee189ef671f7865058b
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67349400"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418759"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Beispiel zur Kundenrentabilität für Power BI: Übersicht
 
-## <a name="overview-of-the-customer-profitability-sample"></a>Tour durch das Beispiel zur Kundenrentabilität
 Das Inhaltspaket „Beispiel zur Kundenrentabilität“ enthält ein Dashboard, einen Bericht und ein Dataset für ein Unternehmen, das Marketingmaterial erstellt. Dieses Dashboard wurde von einer Finanzdirektorin (CFO) erstellt, um die Metriken für ihre fünf Business Unit Manager (Führungskräfte), Produkte, Kunden und den Bruttogewinn verfolgen zu können. Auf einen Blick kann ermittelt werden, welche Faktoren die Rentabilität beeinflussen.
 
 ![Dashboard für das Beispiel zur Kundenrentabilität](media/sample-customer-profitability/power-bi-dash.png)
@@ -203,9 +202,8 @@ Wir sehen uns die Branche „Distribution“ an.
 
     Auf ähnliche Weise können wir andere Branchen untersuchen und den visuellen Elementen sogar Kunden hinzufügen, um nach Gründen für die Leistung von Valery zu suchen.
 
+## <a name="next-steps-connect-to-your-data"></a>Nächste Schritte: Herstellen einer Verbindung mit den Daten
 In dieser Umgebung können Sie sicher experimentieren, da Sie die Änderungen nicht speichern müssen. Wenn Sie sie speichern, können Sie jederzeit wieder auf **Daten abrufen** klicken, um ein neues Exemplar dieses Beispiels herunterzuladen.
 
-## <a name="next-steps-connect-to-your-data"></a>Nächste Schritte: Herstellen einer Verbindung mit den Daten
 Wir hoffen, diese Tour hat Ihnen gezeigt, wie Power BI-Dashboards, Q&A und Berichte Ihnen Einblicke in Kundendaten geben können. Jetzt liegt es an Ihnen – stellen Sie Verbindungen mit Ihren eigenen Daten her. Mit Power BI können Sie Verbindungen mit einer Vielzahl von Datenquellen herstellen. Weitere Informationen finden Sie unter [Erste Schritte mit dem Power BI-Dienst](service-get-started.md).
 
-[Beispiele für Power BI](sample-datasets.md)  
