@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 24a559fe35291c5256a5280b3c7d63d110868f4a
-ms.sourcegitcommit: 69a0e340b1bff5cbe42293eed5daaccfff16d40a
+ms.openlocfilehash: 2760731e7be1216c4ec8755884467eca9d7eb4c4
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67039207"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418783"
 ---
 # <a name="data-refresh-in-power-bi"></a>Aktualisieren von Daten in Power BI
 
@@ -34,7 +34,7 @@ Um zu verstehen, wie Power BI Ihre Datasets, Berichte und Dashboards aktualisier
 
 ### <a name="storage-modes-and-dataset-types"></a>Speichermodi und Datasettypen
 
-Ein Power BI-Dataset kann in einem der folgenden Modi für den Zugriff auf Daten aus einer Vielzahl von Datenquellen eingesetzt werden. Weitere Informationen finden Sie im Artikel [Speichermodus in Power BI Desktop](desktop-storage-mode.md).
+Ein Power BI-Dataset kann in einem der folgenden Modi für den Zugriff auf Daten aus einer Vielzahl von Datenquellen eingesetzt werden. Weitere Informationen erhalten Sie unter [Storage mode in Power BI Desktop (Speichermodus in Power BI Desktop)](desktop-storage-mode.md).
 
 - Import-Modus
 - DirectQuery-Modus
@@ -234,7 +234,7 @@ Es gibt zwei Möglichkeiten, ein Datengateway zur Unterstützung des Zusammenfü
 
 ![Aktualisieren über Gatewaycluster](media/refresh-data/refresh-gateway-cluster.png)
 
-Wenn Sie das Kontrollkästchen **Aktualisierung der Clouddatenquellen des Benutzers über diesen Gatewaycluster in der Gatewaykonfiguration zulassen** wie im obigen Screenshot aktivieren, kann Power BI die Konfiguration verwenden, die der Benutzer unter **Datenquellen-Anmeldeinformationen** in den Dataseteinstellungen für die Cloudquelle definiert hat. Dies kann dazu beitragen, den Aufwand für die Gatewaykonfiguration zu reduzieren. Wenn Sie hingegen eine größere Kontrolle über die Verbindungen haben möchten, die Ihr Gateway herstellt, sollten Sie dieses Kontrollkästchen nicht aktivieren. In diesem Fall müssen Sie Ihrem Gateway für jede Cloudquelle, die Sie unterstützen möchten, eine explizite Datenquellendefinition hinzufügen. Sie können auch das Kontrollkästchen aktivieren und einem Gateway explizite Datenquellendefinitionen für Ihre Cloudquellen hinzufügen. In diesem Fall verwendet das Gateway die Datenquellendefinitionen für alle übereinstimmenden Quellen.
+Wenn Sie das Kontrollkästchen **Allow user's cloud data sources to refresh through this gateway cluster in the gateway configuration** (Aktualisierung der Clouddatenquellen des Benutzers über diesen Gatewaycluster in der Gatewaykonfiguration zulassen) wie im obigen Screenshot aktivieren, kann Power BI die Konfiguration verwenden, die der Benutzer unter **Datenquellen-Anmeldeinformationen** in den Dataseteinstellungen für die Cloudquelle definiert hat. Dies kann dazu beitragen, den Aufwand für die Gatewaykonfiguration zu reduzieren. Wenn Sie hingegen eine größere Kontrolle über die Verbindungen haben möchten, die Ihr Gateway herstellt, sollten Sie dieses Kontrollkästchen nicht aktivieren. In diesem Fall müssen Sie Ihrem Gateway für jede Cloudquelle, die Sie unterstützen möchten, eine explizite Datenquellendefinition hinzufügen. Sie können auch das Kontrollkästchen aktivieren und einem Gateway explizite Datenquellendefinitionen für Ihre Cloudquellen hinzufügen. In diesem Fall verwendet das Gateway die Datenquellendefinitionen für alle übereinstimmenden Quellen.
 
 ### <a name="configuring-query-parameters"></a>Konfigurieren der Abfrageparameter
 
@@ -272,7 +272,7 @@ In dem Bereich **geplante Aktualisierung** definieren Sie das Aktualisierungsint
 
 ![Konfigurieren von geplanten Aktualisierungen](media/refresh-data/configure-scheduled-refresh.png)
 
-Nachdem Sie einen Aktualisierungszeitplan konfiguriert haben, werden Sie auf der Seite mit den Dataseteinstellungen über die nächste Aktualisierungszeit informiert, wie im obigen Screenshot dargestellt. Wenn Sie die Daten früher aktualisieren möchten, z.B. um Ihr Gateway und Ihre Datenquellenkonfiguration zu testen, führen Sie eine bedarfsgesteuerte Aktualisierung durch, indem Sie die Option „Jetzt aktualisieren“ im Datasetmenü im linken Navigationsbereich verwenden. Bedarfsgesteuerte Aktualisierungen haben keinen Einfluss auf die nächste geplante Aktualisierungszeit, aber sie zählen bei der Beschränkung der täglichen Aktualisierungen, wie bereits früher in diesem Artikel erläutert.
+Nachdem Sie einen Aktualisierungszeitplan konfiguriert haben, werden Sie auf der Seite mit den Dataseteinstellungen über die nächste Aktualisierungszeit informiert, wie im obigen Screenshot dargestellt. Wenn Sie die Daten früher aktualisieren möchten, z. B. um Ihr Gateway und Ihre Datenquellenkonfiguration zu testen, führen Sie eine bedarfsgesteuerte Aktualisierung durch, indem Sie die Option **Jetzt aktualisieren** im Datasetmenü im linken Navigationsbereich verwenden. Bedarfsgesteuerte Aktualisierungen haben keinen Einfluss auf die nächste geplante Aktualisierungszeit, aber sie zählen bei der Beschränkung der täglichen Aktualisierungen, wie bereits früher in diesem Artikel erläutert.
 
 Beachten Sie auch, dass die konfigurierte Aktualisierungszeit möglicherweise nicht genau der Zeitpunkt ist, zu dem Power BI den nächsten geplanten Prozess startet. Power BI startet geplante Aktualisierungen auf bestmögliche Weise. Das Ziel ist, die Aktualisierung innerhalb von 15 Minuten des geplanten Zeitfensters zu starten, aber es kann zu einer Verzögerung von bis zu einer Stunde kommen, wenn der Dienst die benötigten Ressourcen nicht früher zuweisen kann.
 
@@ -283,7 +283,7 @@ Beachten Sie auch, dass die konfigurierte Aktualisierungszeit möglicherweise ni
 
 Standardmäßig sendet Power BI Benachrichtigungen über Aktualisierungsfehler per E-Mail an den Datasetbesitzer, sodass der Besitzer rechtzeitig handeln kann, wenn Aktualisierungsprobleme auftreten. Power BI sendet Ihnen auch eine Benachrichtigung, wenn der Dienst Ihren Zeitplan aufgrund aufeinander folgender Fehler deaktiviert. Microsoft empfiehlt Ihnen, das Kontrollkästchen **Benachrichtigungs-E-Mails zu Aktualisierungsfehlern an mich senden** aktiviert zu lassen.
 
-Beachten Sie, dass Power BI Benachrichtigungen nicht nur zu Aktualisierungsfehlern sendet, sondern auch, wenn der Dienst eine geplante Aktualisierung aufgrund von Inaktivität stoppt. Wenn zwei Monate lang kein Benutzer ein auf dem Dataset basierendes Dashboard oder einen Bericht aufgerufen hat, betrachtet Power BI das Dataset als inaktiv. In dieser Situation sendet Power BI eine E-Mail an den Datasetbesitzer, um mitzuteilen, dass der Dienst den Aktualisierungszeitplan für das Dataset deaktiviert hat. Der folgende Screenshot enthält ein Beispiel für eine solche Benachrichtigung.
+Beachten Sie, dass Power BI Benachrichtigungen nicht nur zu Aktualisierungsfehlern sendet, sondern auch, wenn der Dienst eine geplante Aktualisierung aufgrund von Inaktivität stoppt. Wenn zwei Monate lang kein Benutzer ein auf dem Dataset basierendes Dashboard oder einen Bericht aufgerufen hat, betrachtet Power BI das Dataset als inaktiv. In dieser Situation sendet Power BI eine E-Mail an den Datasetbesitzer, um mitzuteilen, dass der Dienst den Aktualisierungszeitplan für das Dataset angehalten hat. Der folgende Screenshot enthält ein Beispiel für eine solche Benachrichtigung.
 
 ![E-Mail für angehaltene Aktualisierung](media/refresh-data/email-paused-refresh.png)
 

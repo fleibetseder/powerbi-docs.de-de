@@ -1,5 +1,5 @@
 ---
-title: 'Power BI: Organisieren der Arbeit in den neuen Arbeitsbereichen'
+title: Organisieren der Arbeit in den neuen Power BI-Arbeitsbereichen
 description: Lernen Sie die neuen Arbeitsbereiche kennen, die Sammlungen von Dashboards und Berichten sind, die konzipiert wurden, um Schlüsselmetriken für Ihre Organisation bereitzustellen.
 author: maggiesMSFT
 manager: kfile
@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/18/2019
+ms.date: 06/26/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 419cd2137b8924f153009843d6f60db594219059
-ms.sourcegitcommit: a42c6758aa255c21ece6366a3257b0dd82f3606b
+ms.openlocfilehash: a3982716ac2eb64f7512ba6ef606af299f1c5f46
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67345539"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418676"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organisieren der Arbeit in den neuen Power BI-Arbeitsbereichen
 
@@ -135,7 +135,7 @@ Einige Features funktionieren in den neuen Arbeitsbereichen anders als in den ak
 - Mitglieder, die eine erneute Freigabe durchführen oder nicht durchführen können: ersetzt durch die Rolle „Mitwirkender“.
 - Schreibgeschützte Arbeitsbereiche: Anstatt Benutzern schreibgeschützten Zugriff auf einen Arbeitsbereich zu gewähren, weisen Sie Benutzern die Rolle „Anzeigender Benutzer“ zu, die einen ähnlichen schreibgeschützten Zugriff auf den Inhalt eines Arbeitsbereichs umfasst.
 - Wenn sich der Arbeitsbereich in einer Power BI Premium-Kapazität befindet, können Benutzer ohne Power BI Pro-Lizenz auch dann auf den Arbeitsbereich zugreifen, wenn sie die Rolle „Anzeigender Benutzer“ haben.
-- Um Benutzern mit der Rolle „Anzeigender Benutzer“ den Export von Daten zu ermöglichen, stellen Sie sicher, dass sie die Berechtigung zum Erstellen für die Datasets im Arbeitsbereich haben.
+- Um Benutzern mit der Rolle „Anzeigender Benutzer“ den Export von Daten zu ermöglichen, stellen Sie sicher, dass sie die Berechtigung zum Erstellen für die Datasets im Arbeitsbereich haben. Erfahren Sie mehr über die [Erstellungsberechtigung für Datasets](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
 - Es gibt keine Schaltfläche **Arbeitsbereich verlassen**.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
