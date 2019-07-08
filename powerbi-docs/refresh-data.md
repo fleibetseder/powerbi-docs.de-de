@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 2760731e7be1216c4ec8755884467eca9d7eb4c4
-ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.openlocfilehash: 0013080f3640c4c4d3d717104dcc069ccce3923a
+ms.sourcegitcommit: 952afd75fe8ddcf9350bd9aae88e1a4c438d0f3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418783"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67561823"
 ---
 # <a name="data-refresh-in-power-bi"></a>Aktualisieren von Daten in Power BI
 
@@ -177,6 +177,8 @@ Microsoft empfiehlt, anstelle eines persönlichen Gateways ein Enterprisedatenga
 Das Herstellen einer Verbindung eines Datasets mit einem Enterprisegateway ist relativ unkompliziert, wenn Sie ein Gatewayadministrator sind. Mit Administratorberechtigungen können Sie das Gateway sofort aktualisieren und ggf. fehlende Datenquellen hinzufügen. In der Tat können Sie eine fehlende Datenquelle Ihrem Gateway direkt auf der Seite mit den Dataseteinstellungen hinzufügen. Erweitern Sie die Umschaltfläche, um die Datenquellen anzuzeigen, und wählen Sie den Link **Zu Gateway hinzufügen** aus, wie im folgenden Screenshot gezeigt. Wenn Sie kein Gatewayadministrator sind, verwenden Sie dagegen die angezeigten Kontaktinformationen, um eine Anfrage zum Hinzufügen der erforderlichen Datenquellendefinition an einen Gatewayadministrator zu senden.
 
 ![Zu Gateway hinzufügen](media/refresh-data/add-to-gateway.png)
+
+Achten Sie darauf, dass Sie Ihrer Datenquelle die richtige Datenquellendefinition zuordnen. Wie Sie im obigen Screenshot sehen, können Gatewayadministratoren mehrere Definitionen für ein Gateway erstellen, das mit derselben Datenquelle verbunden ist, jeweils mit anderen Anmeldeinformation. Im gezeigten Beispiel würde ein Datasetbesitzer in der Vertriebsabteilung z. B. die Datenquellendefinition AdventureWorksProducts-Sales auswählen, und ein Datasetbesitzer in der Supportabteilung würde das Dataset der Datenquellendefinition AdventureWorksProducts-Support zuordnen. Wenn die Namen der Datenquellendefinitionen nicht intuitiv sind, wenden Sie sich an den Gatewayadministrator, um herauszufinden, welche Definition Sie wählen sollten.
 
 > [!NOTE]
 > Ein Dataset kann nur eine einzelne Gatewayverbindung verwenden. D.h., es ist nicht möglich, über mehrere Gatewayverbindungen auf lokale Datenquellen zuzugreifen. Daher müssen Sie alle erforderlichen Datenquellendefinitionen dem gleichen Gateway hinzufügen.
