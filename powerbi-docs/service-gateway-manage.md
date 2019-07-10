@@ -11,12 +11,12 @@ ms.date: 04/18/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5d9e468ecf3bf1fdc2e138ac06202820bbd96bcf
-ms.sourcegitcommit: 57a12aa42c8549debc60ff1c8e78533dc42e1b86
-ms.translationtype: MT
+ms.openlocfilehash: 8acc0e403c983de79657cd01a7aa7f458bfb01ad
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66469802"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559047"
 ---
 # <a name="manage-a-power-bi-on-premises-gateway"></a>Verwalten eines lokalen Power BI-Gateways
 
@@ -31,6 +31,8 @@ Wenn Sie bereits ein Gateway installiert haben, sollten Sie als Nächstes [eine 
 
 Power BI unterstützt viele lokale Datenquellen, von denen jede eigene Anforderungen aufweist. Ein Gateway kann für eine oder mehrere Datenquellen verwendet werden. In diesem Beispiel zeigen wir Ihnen, wie Sie SQL Server als Datenquelle hinzufügen, die Schritte sind für andere Datenquellen aber die gleichen.
 
+> [!NOTE]
+> Gatewayadministratoren können jetzt mehrere Datenquellen mit Verbindung zur gleichen Quelle und unterschiedlichen Anmeldeinformationen erstellen und den Datenquellen Benutzer abhängig von deren Zugriffsebene hinzufügen.
 
 ### <a name="add-a-data-source"></a>Hinzufügen einer Datenquelle
 
@@ -53,6 +55,11 @@ Power BI unterstützt viele lokale Datenquellen, von denen jede eigene Anforderu
 
 1. Für SQL Server wählen Sie eine **Authentifizierungsmethode** aus: **Windows** oder **Standard** (SQL-Authentifizierung).  Wenn Sie **Standard** auswählen, geben Sie die Anmeldeinformationen für Ihre Datenquelle ein.
 
+1. Klicken Sie auf **Skip Test Connection** (Testverbindung überspringen), wenn diese Datenquelle derzeit nicht verfügbar oder langsam ist. Andernfalls schlägt das Erstellen der Datenquelle fehl.
+
+    > [!NOTE]
+    > Das Überspringen der Testverbindung wird für Analysis Services nicht unterstützt.
+
 1. Konfigurieren Sie optional unter **Erweiterte Einstellungen** die [Datenschutzebene](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) für Ihre Datenquelle (gilt nicht für [DirectQuery](desktop-directquery-about.md)).
 
     ![Erweiterte Einstellungen](media/service-gateway-manage/advanced-settings.png)
@@ -74,7 +81,7 @@ Um eine Datenquelle zu entfernen, wechseln Sie zu der Datenquelle, und klicken S
 
 ## <a name="manage-users-and-administrators"></a>Verwalten von Benutzern und Administratoren
 
-Nachdem Sie eine Datenquelle zu einem Gateway hinzugefügt haben, gewähren Sie Benutzern und Sicherheitsgruppen Zugriff auf die spezifische Datenquelle (nicht auf das gesamte Gateway). Die Datenquellen-Benutzerliste steuert nur, wer Berichte veröffentlichen darf, die Daten aus der Datenquelle enthalten. Besitzer eines Berichts können Dashboards, Inhaltspakete und Apps erstellen und diese dann für andere Benutzer freigeben.
+Nachdem Sie eine Datenquelle zu einem Gateway hinzugefügt haben, gewähren Sie Benutzern und E-Mail-fähigen Sicherheitsgruppen Zugriff auf die spezifische Datenquelle (nicht auf das gesamte Gateway). Die Datenquellen-Benutzerliste steuert nur, wer Berichte veröffentlichen darf, die Daten aus der Datenquelle enthalten. Besitzer eines Berichts können Dashboards, Inhaltspakete und Apps erstellen und diese dann für andere Benutzer freigeben.
 
 Sie können Benutzern und Sicherheitsgruppen auch Verwaltungszugriff auf das Gateway gewähren.
 
@@ -91,21 +98,21 @@ Sie können Benutzern und Sicherheitsgruppen auch Verwaltungszugriff auf das Gat
 
 4. Klicken Sie auf **Hinzufügen**, und das hinzugefügte Mitglied wird im Feld angezeigt.
 
-    ![Fügen Sie Benutzer hinzu](media/service-gateway-manage/add-user.png)
+    ![Hinzufügen von Benutzern](media/service-gateway-manage/add-user.png)
 
 Das war schon alles. Denken Sie daran, dass Sie jeder Datenquelle, für die Sie den Zugriff gewähren möchten, Benutzer hinzufügen müssen. Jede Datenquelle verfügt über eine eigene Liste von Benutzern, und Sie müssen jeder Datenquelle separat Benutzer hinzufügen.
 
 
 ### <a name="remove-users-from-a-data-source"></a>Entfernen von Benutzern aus einer Datenquelle
 
-Auf der Registerkarte **Benutzer** für die Datenquelle können Sie Benutzer und Sicherheitsgruppen entfernen, die diese Datenquelle verwenden.
+Auf der Registerkarte **Benutzer** für die Datenquelle können Sie Benutzer und E-Mail-fähige Sicherheitsgruppen entfernen, die diese Datenquelle verwenden.
 
 ![Benutzer entfernen](media/service-gateway-manage/remove-user.png)
 
 
 ### <a name="add-and-remove-administrators"></a>Hinzufügen und Entfernen von Administratoren
 
-Auf der Registerkarte **Administratoren** für das Gateway können Sie Benutzer (oder Sicherheitsgruppen) hinzufügen und entfernen, die das Gateway verwalten dürfen.
+Auf der Registerkarte **Administratoren** für das Gateway können Sie Benutzer (oder E-Mail-fähige Sicherheitsgruppen) hinzufügen und entfernen, die das Gateway verwalten dürfen.
 
 ![Registerkarte „Administratoren“](media/service-gateway-manage/administrators-tab.png)
 

@@ -9,14 +9,14 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.custom: ''
-ms.date: 06/20/2018
+ms.date: 06/13/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 5365c076b75d0989df8db15c1dc16f4e11bc3f09
-ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.openlocfilehash: 2363b9da3ac46ce9fd49f19a00950a4a3cf23502
+ms.sourcegitcommit: 30ee81f8c54fd7e4d47d7e3ffcf0e6c3bb68f6c2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448401"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "67468093"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Azure SQL-Datenbank mit DirectQuery
 
@@ -26,10 +26,10 @@ Durch DirectQuery werden Abfragen zurück zur Azure SQL-Datenbank gesendet, wäh
 
 **Hinweise:**
 
-* Geben Sie beim Herstellen der Verbindung den vollqualifizierten Servernamen an (weitere Informationen folgen später im Abschnitt)
+* Geben Sie beim Herstellen der Verbindung den vollqualifizierten Servernamen an (weitere Informationen folgen später im Abschnitt).
 * Stellen Sie sicher, dass die Firewallregeln für die Datenbank so konfiguriert sind, dass sie den „[Zugriff auf Azure-Dienste erlauben](https://msdn.microsoft.com/library/azure/ee621782.aspx)“.
-* Durch jede Aktion, z. B. beim Auswählen einer Spalte oder dem Hinzufügen eines Filters, wird eine Abfrage zurück an die Datenbank gesendet.
-* Die Kacheln werden stündlich aktualisiert (die Aktualisierung muss nicht geplant werden). Dies kann in den erweiterten Einstellungen angepasst werden, wenn Sie eine Verbindung herstellen.
+* Durch jede Aktion, z. B. beim Auswählen einer Spalte oder dem Hinzufügen eines Filters, wird eine Abfrage zurück an die Datenbank gesendet.
+* Die Kacheln werden stündlich aktualisiert (die Aktualisierung muss nicht geplant werden). Beim Herstellen einer Verbindung können Sie unter „Erweiterte Einstellungen“ festlegen, wie oft aktualisiert werden soll.
 * Q&A steht für DirectQuery-Datasets nicht zur Verfügung.
 * Schemaänderungen werden nicht automatisch übernommen.
 
@@ -40,13 +40,13 @@ Diese Einschränkungen und Hinweise können sich ändern, da wir die Benutzerobe
 
 ## <a name="power-bi-desktop-and-directquery"></a>Power BI Desktop und DirectQuery
 
-Zum Herstellen einer Verbindung mit der Azure SQL-Datenbank über DirectQuery müssen Sie Power BI Desktop verwenden. Dieser Ansatz bietet zusätzliche Flexibilität und Funktionalität. Mit Power BI Desktop erstellte Berichte können dann im Power BI-Dienst veröffentlicht werden. [Hier](desktop-use-directquery.md) erhalten Sie weitere Informationen zum Herstellen einer Verbindung mit der Azure SQL-Datenbank über DirectQuery in Power BI Desktop.
+Verwenden Sie Power BI Desktop zum Herstellen einer Verbindung mit der Azure SQL-Datenbank über DirectQuery. Dieser Ansatz bietet zusätzliche Flexibilität und Funktionalität. Mit Power BI Desktop erstellte Berichte können dann im Power BI-Dienst veröffentlicht werden. [Hier](desktop-use-directquery.md) erhalten Sie weitere Informationen zum Herstellen einer Verbindung mit der Azure SQL-Datenbank über DirectQuery in Power BI Desktop.
 
-## <a name="finding-parameter-values"></a>Suchen von Parameterwerten
+## <a name="find-parameter-values"></a>Suchen von Parameterwerten
 
-Ihren vollqualifizierten Servernamen und den Datenbanknamen finden Sie im Azure-Portal.
+Sie finden Ihren vollqualifizierten Servernamen und den Datenbanknamen im Azure-Portal.
 
-![Neues Azure Port-Update](media/service-azure-sql-database-with-direct-connect/azureportnew_update.png)
+![Neues Azure Portal-Update](media/service-azure-sql-database-with-direct-connect/azureportnew_update.png)
 
 ![Azure Portal-Update](media/service-azure-sql-database-with-direct-connect/azureportal_update.png)
 

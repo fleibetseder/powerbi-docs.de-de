@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/27/2018
 ms.author: mshenhav
-ms.openlocfilehash: b0de20cc32c32360f4f37c70e673dba01740a860
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 2de1b866a237a0193c33c552078ca70bd5e632ce
+ms.sourcegitcommit: 63a697c67e1ee37e47b21047e17206e85db64586
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61137438"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67498987"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>Erste Schritte mit der mobilen Power BI-App auf iOS-Geräten
 Die iOS-App für Microsoft Power BI auf dem iPhone, iPad oder iPod Touch bietet Ihnen die mobile BI-Umgebung für Power BI, Power BI-Berichtsserver und Reporting Services. Mit dem touchfähigen, mobilen Livezugriff auf lokale Server und die Cloud können Sie Ihre Unternehmensdashboards überall anzeigen und mit ihnen interagieren. Untersuchen Sie die Daten in Dashboards, und geben Sie diese dann über eine E-Mail oder SMS für Kollegen frei. Bleiben Sie auf dem neuesten Stand mit den aktuellsten Daten auf Ihrer [Apple Watch](mobile-apple-watch.md).  
@@ -33,7 +33,7 @@ Machen Sie sich [mit den Neuerungen bei den Power BI-Mobile Apps](mobile-whats-n
 ## <a name="download-the-app"></a>Herunterladen der App
 [Laden Sie die iOS-App herunter](http://go.microsoft.com/fwlink/?LinkId=522062 "Download the iOS app") aus dem Apple App Store auf Ihr iPhone, iPad oder den iPod Touch herunter.
 
-Sie können die Power BI für iOS-App auf iPhone 5 und höher mit iOS 10 oder höher ausführen. Sie können die App auch auf einem iPad oder iPod Touch mit iOS 10 oder höher ausführen. 
+Sie können die Power BI für iOS-App für iOS auf jedem iOS 11-Gerät oder höher ausführen. 
 
 ## <a name="sign-up-for-the-power-bi-service"></a>Registrieren beim Power BI-Dienst
 Wenn Sie sich noch nicht registriert haben, wechseln Sie zu [powerbi.com](https://powerbi.microsoft.com/get-started/), und klicken Sie unter **Power BI - Cloud collaboration and sharing** (Power BI – Zusammenarbeit und Freigabe in der Cloud) auf **Kostenlos testen**.

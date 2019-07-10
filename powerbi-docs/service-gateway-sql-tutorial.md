@@ -3,206 +3,205 @@ title: 'Tutorial: Herstellen einer Verbindung mit lokalen Daten in SQL Server'
 description: Erfahren Sie, wie Sie SQL Server als Gatewaydatenquelle verwenden und Daten aktualisieren.
 author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: tutorial
 ms.date: 05/03/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 96ea117ff0ba28a158eb9f0eaf748d66b25f90d5
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: d73d2ea5e21196d4856d2906805e6dec1f7e60b7
+ms.sourcegitcommit: 30ee81f8c54fd7e4d47d7e3ffcf0e6c3bb68f6c2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54278927"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "67468183"
 ---
-# <a name="tutorial-connect-to-on-premises-data-in-sql-server"></a>Tutorial: Herstellen einer Verbindung mit lokalen Daten in SQL Server
+# <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Aktualisieren von Daten aus einer lokalen SQL Server-Datenbank
 
-Ein lokales Datengateway ist eine Softwareanwendung, die Sie in einem lokalen Netzwerk installieren. Es ermöglicht Zugriff auf Daten in diesem Netzwerk. In diesem Tutorial erstellen Sie einen Bericht in Power BI Desktop basierend auf Beispieldaten, die aus SQL Server importiert wurden. Danach veröffentlichen Sie den Bericht im Power BI-Dienst und konfigurieren ein Gateway, sodass der Dienst auf die lokalen Daten zugreifen kann. Dieser Zugriff bedeutet, dass der Dienst die Daten aktualisieren kann, um den Bericht auf dem neuesten Stand zu halten.
+In diesem Tutorial erfahren Sie, wie Sie ein Power BI-Dataset aus einer relationalen Datenbank aktualisieren, die sich lokal in Ihrem Netzwerk befindet. Hierfür wird in diesem Tutorial insbesondere eine SQL Server-Beispieldatenbank verwendet, auf die Power BI über ein lokales Datengateway zugreifen muss.
 
-In diesem Tutorial erhalten Sie Informationen zu den folgenden Vorgängen:
+In diesem Tutorial führen Sie die folgenden Schritte aus:
+
 > [!div class="checklist"]
-> * Erstellen eines Berichts aus Daten in SQL Server
-> * Veröffentlichen des Berichts im Power BI-Dienst
-> * Hinzufügen von SQL Server als Gatewaydatenquelle
-> * Aktualisieren der Daten im Bericht
-
-Wenn Sie noch nicht bei Power BI registriert sind, müssen Sie sich zuerst für eine [kostenlose Testversion registrieren](https://app.powerbi.com/signupredirect?pbi_source=web).
-
+> * Erstellen und Veröffentlichen einer Power BI Desktop-Datei (PBIX), die Daten aus einer lokalen SQL Server-Datenbank importiert
+> * Konfigurieren der Datenquellen- und Dataseteinstellungen in Power BI für die SQL Server-Konnektivität über ein Datengateway
+> * Konfigurieren eines Aktualisierungszeitplans, um sicherzustellen, dass Ihr Power BI-Dataset über aktuelle Daten verfügt
+> * Durchführen einer bedarfsgesteuerten Aktualisierung Ihres Datasets
+> * Überprüfen des Aktualisierungsverlaufs zur Analyse der Ergebnisse vergangener Aktualisierungszyklen
+> * Bereinigen von Ressourcen durch Löschen der Artefakte, die in diesem Tutorial erstellt werden
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-* [Installieren von Power BI Desktop](https://powerbi.microsoft.com/desktop/)
-* [Installieren von SQL Server](https://docs.microsoft.com/sql/database-engine/install-windows/install-sql-server) auf einem lokalen Computer 
-* [Installieren eines lokalen Datengateways](service-gateway-install.md) auf demselben lokalen Computer (in Produktionsumgebung würde es sich in der Regel um einen anderen Computer handeln)
+- Wenn Sie nicht bereits über ein Power BI-Abonnement verfügen, registrieren Sie sich zunächst für die [kostenlose Power BI-Testversion](https://app.powerbi.com/signupredirect?pbi_source=web).
+- [Installieren Sie Power BI Desktop](https://powerbi.microsoft.com/desktop/) auf einem lokalen Computer.
+- [Installieren Sie SQL Server](/sql/database-engine/install-windows/install-sql-server) auf einem lokalen Computer, und stellen Sie die [Beispieldatenbank aus einer Sicherung]((https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2017.bak)) wieder her. Weitere Informationen zu AdventureWorks finden Sie unter [AdventureWorks installation and configuration (AdventureWorks-Installation und -Konfiguration)](/sql/samples/adventureworks-install-configure).
+- [Installieren Sie ein lokales Datengateway](service-gateway-install.md) auf demselben lokalen Computer, auf dem auch SQL Server installiert wurde (in der Produktionsumgebung würde es sich in der Regel um einen anderen Computer handeln).
 
+> [!NOTE]
+> Wenn Sie kein Gatewayadministrator sind und ein Gateway nicht selbst installieren möchten, kontaktieren Sie einen Gatewayadministrator in Ihrem Unternehmen. Dieser kann die Datenquellendefinition erstellen, die für die Verbindung Ihres Datasets mit Ihrer SQL Server-Datenbank erforderlich ist.
 
-## <a name="set-up-sample-data"></a>Einrichten von Beispieldaten
+## <a name="create-and-publish-a-power-bi-desktop-file"></a>Erstellen und Veröffentlichen einer Power BI Desktop-Datei
 
-Als Erstes fügen Sie Beispieldaten zu SQL Server hinzu, um diese im Rest des Tutorials verwenden zu können.
+Gehen Sie folgendermaßen vor, um mithilfe der AdventureWorksDW-Beispieldatenbank einen grundlegenden Power BI-Bericht zu erstellen. Veröffentlichen Sie den Bericht im Power BI-Dienst, um ein Dataset in Power BI zu erhalten, das Sie anschließend konfigurieren und aktualisieren können.
 
-1. Stellen Sie in SQL Server Management Studio (SSMS) eine Verbindung mit Ihrer SQL Server-Instanz her, und erstellen Sie eine Testdatenbank.
+1. Klicken Sie in Power BI Desktop auf der Registerkarte **Start** auf **Daten abrufen** \> **SQL Server**.
 
-    ```sql
-    CREATE DATABASE TestGatewayDocs
-    ```
+2. Geben Sie im Dialogfeld **SQL Server-Datenbank** die Namen von **Server** und **Datenbank (optional)** ein, stellen Sie sicher, dass als **Datenkonnektivitätsmodus** die Option **Import** ausgewählt ist, und klicken Sie dann auf **OK**.
 
-2. Fügen Sie in der erstellten Datenbank eine Tabelle hinzu, und fügen Sie Daten ein.
+    ![SQL Server-Datenbank](./media/service-gateway-sql-tutorial/sql-server-database.png)
 
-    ```sql
-    USE TestGatewayDocs
+3. Überprüfen Sie Ihre **Anmeldeinformationen**, und klicken Sie auf **Verbinden**.
 
-    CREATE TABLE Product (
-        SalesDate DATE,
-        Category  VARCHAR(100),
-        Product VARCHAR(100),
-        Sales MONEY,
-        Quantity INT
-    )
+    > [!NOTE]
+    > Wenn die Authentifizierung nicht möglich ist, stellen Sie sicher, dass Sie die richtige Authentifizierungsmethode ausgewählt haben und ein Konto mit Datenbankzugriff verwenden. In Testumgebungen verwenden Sie möglicherweise die Datenbankauthentifizierung mit einem bestimmten Benutzernamen und Kennwort. In Produktionsumgebungen verwenden Sie in der Regel die Windows-Authentifizierung. Weitere Unterstützung erhalten Sie unter [Problembehandlung bei Aktualisierungsszenarios](refresh-troubleshooting-refresh-scenarios.md) oder von Ihrem Datenbankadministrator.
 
-    INSERT INTO Product VALUES('2018-05-05','Accessories','Carrying Case',9924.60,68)
-    INSERT INTO Product VALUES('2018-05-06','Accessories','Tripod',1350.00,18)
-    INSERT INTO Product VALUES('2018-05-11','Accessories','Lens Adapter',1147.50,17)
-    INSERT INTO Product VALUES('2018-05-05','Accessories','Mini Battery Charger',1056.00,44)
-    INSERT INTO Product VALUES('2018-05-06','Accessories','Telephoto Conversion Lens',1380.00,18)
-    INSERT INTO Product VALUES('2018-05-06','Accessories','USB Cable',780.00,26)
-    INSERT INTO Product VALUES('2018-05-08','Accessories','Budget Movie-Maker',3798.00,9)
-    INSERT INTO Product VALUES('2018-05-09','Digital video recorder','Business Videographer',10400.00,13)
-    INSERT INTO Product VALUES('2018-05-10','Digital video recorder','Social Videographer',3000.00,60)
-    INSERT INTO Product VALUES('2018-05-11','Digital','Advanced Digital',7234.50,39)
-    INSERT INTO Product VALUES('2018-05-07','Digital','Compact Digital',10836.00,84)
-    INSERT INTO Product VALUES('2018-05-08','Digital','Consumer Digital',2550.00,17)
-    INSERT INTO Product VALUES('2018-05-05','Digital','Slim Digital',8357.80,44)
-    INSERT INTO Product VALUES('2018-05-09','Digital SLR','SLR Camera 35mm',18530.00,34)
-    INSERT INTO Product VALUES('2018-05-07','Digital SLR','SLR Camera',26576.00,88)
-    ```
+1. Wenn das Dialogfeld **Encryption Support** (Verschlüsselungsunterstützung) angezeigt wird, klicken Sie auf **OK**.
 
-3. Wählen Sie die Daten in der Tabelle aus, um sie zu überprüfen.
+2. Klicken Sie im Dialogfeld **Navigator** auf die Tabelle **DimProduct** und anschließend auf **Laden**.
 
-    ```sql
-    SELECT * FROM Product
-    ```
+    ![Datenquellennavigator](./media/service-gateway-sql-tutorial/data-source-navigator.png)
 
-    ![Abfrageergebnisse](media/service-gateway-sql-tutorial/query-results.png)
+3. Wählen Sie in der Power BI Desktop-Ansicht **Bericht** im Bereich **Visualisierungen** die Option **Gestapeltes Säulendiagramm** aus.
 
+    ![Gestapeltes Säulendiagramm](./media/service-gateway-sql-tutorial/stacked-column-chart.png)
 
-## <a name="build-and-publish-a-report"></a>Erstellen und Veröffentlichen eines Berichts
+4. Wenn im Berichtszeichenbereich das Säulendiagramm ausgewählt ist, wählen Sie im Bereich **Felder** die Felder **EnglishProductName** und **ListPrice** aus.
 
-Nachdem Sie jetzt über Beispieldaten verfügen, mit denen Sie arbeiten können, stellen Sie als Nächstes in Power BI Desktop eine Verbindung mit SQL Server her und erstellen einen Bericht basierend auf diesen Daten. Dann veröffentlichen Sie den Bericht im Power BI-Dienst.
+    ![Bereich „Felder“](./media/service-gateway-sql-tutorial/fields-pane.png)
 
-1. Klicken Sie in Power BI Desktop auf der Registerkarte **Start** auf **Daten abrufen** > **SQL Server**.
+5. Ziehen Sie **EndDate** auf **Report level filters** (Filter auf Berichtsebene), und aktivieren Sie unter **Basic filtering** (Standardfilter) nur das Kontrollkästchen für **(Blank)** (Leer).
 
-2. Geben Sie unter **Server** den Namen Ihres Servers und unter **Datenbank** den Namen „TestGatewayDocs“ ein. Wählen Sie **OK**aus. 
-
-    ![Server und Datenbank eingeben](media/service-gateway-sql-tutorial/server-database.png)
-
-3. Überprüfen Sie Ihre Anmeldeinformationen, und klicken Sie auf **Verbinden**.
-
-4. Wählen Sie im **Navigator** die Tabelle **Product** aus, und klicken Sie auf **Laden**.
-
-    ![Tabelle „Product“ auswählen](media/service-gateway-sql-tutorial/select-product-table.png)
-
-5. Wählen Sie in der Power BI Desktop-Ansicht **Bericht** im Bereich **Visualisierungen** die Option **Gestapeltes Säulendiagramm** aus.
-
-    ![Gestapeltes Säulendiagramm](media/service-gateway-sql-tutorial/column-chart.png)    
-
-6. Wenn im Berichtszeichenbereich das Säulendiagramm ausgewählt ist, wählen Sie im Bereich **Felder** die Felder **Product** und **Sales** aus.  
-
-    ![Felder auswählen](media/service-gateway-sql-tutorial/select-fields.png)
+    ![Berichtsstufenfilter](./media/service-gateway-sql-tutorial/report-level-filters.png)
 
     Das Diagramm sollte nun wie folgt aussehen.
 
-    ![Tabelle „Product“ auswählen](media/service-gateway-sql-tutorial/finished-chart.png)
+    ![Fertiges Säulendiagramm](./media/service-gateway-sql-tutorial/finished-column-chart.png)
 
-    Beachten Sie, dass **SLR Camera** aktuell die höchsten Verkaufszahlen aufweist. Das wird sich ändern, wenn Sie die Daten und den Bericht später in diesem Tutorial aktualisieren.
+    Beachten Sie, dass die fünf **Road-250**-Produkte mit dem höchsten Listenpreis aufgeführt sind. Dies wird sich ändern, wenn Sie später die Daten und den Bericht in diesem Tutorial aktualisieren.
 
-7. Speichern Sie den Bericht mit dem Namen „TestGatewayDocs.pbix“.
+6. Speichern Sie den Bericht unter dem Namen „AdventureWorksProducts.pbix“.
 
-8. Klicken Sie auf der Registerkarte **Start** nacheinander auf **Veröffentlichen** > **Mein Arbeitsbereich** > **Auswählen**. Melden Sie sich beim Power BI-Dienst an, wenn Sie dazu aufgefordert werden. 
+7. Klicken Sie auf der Registerkarte **Start** nacheinander auf **Veröffentlichen** \> **Mein Arbeitsbereich** \> **Auswählen**. Melden Sie sich beim Power BI-Dienst an, wenn Sie dazu aufgefordert werden.
 
-    ![Bericht veröffentlichen](media/service-gateway-sql-tutorial/publish-report.png)
+8. Wählen Sie auf dem Bildschirm **Success** (Vorgang erfolgreich) die Option **Open 'AdventureWorksProducts.pbix' in Power BI** („AdventureWorksProducts.pbix“ in Power BI öffnen) aus.
 
-9. Wählen Sie auf dem Bildschirm **Erfolg** die Option **„TestGatewayDocs.pbix“ in Power BI öffnen** aus.
+    [Veröffentlichen in Power BI](./media/service-gateway-sql-tutorial/publish-to-power-bi.png)
 
+## <a name="connect-a-dataset-to-a-sql-server-database"></a>Verbinden eines Datasets mit einer SQL Server-Datenbank
 
-## <a name="add-sql-server-as-a-gateway-data-source"></a>Hinzufügen von SQL Server als Gatewaydatenquelle
+Sie haben in Power BI Desktop eine direkte Verbindung mit Ihrer lokalen SQL Server-Datenbank hergestellt. Der Power BI-Dienst benötigt jedoch ein Datengateway, um als Brücke zwischen der Cloud und Ihrem lokalen Netzwerk zu agieren. Führen Sie die folgenden Schritte aus, um Ihre lokale SQL Server-Datenbank als Datenquelle zu einem Gateway hinzuzufügen und dann eine Verbindung zwischen Ihrem Dataset und dieser Datenquelle herzustellen.
 
-In Power BI Desktop stellen Sie eine direkte Verbindung mit SQL Server her, aber der Power BI-Dienst erfordert ein Gateway, das als Brücke fungiert. Jetzt fügen Sie Ihre SQL Server-Instanz als Datenquelle für das Gateway hinzu, das Sie in einem früheren Artikel (siehe [Voraussetzungen](#prerequisites)) erstellt haben. 
+1. Melden Sie sich bei Power BI an. Klicken Sie in der rechten oberen Ecke auf das Zahnradsymbol (Einstellungen) und anschließend auf **Einstellungen**.
 
-1. Klicken Sie in der oberen rechten Ecke des Power BI-Diensts auf das Zahnradsymbol ![Zahnradsymbol für Einstellungen](media/service-gateway-sql-tutorial/icon-gear.png) und dann auf **Gateways verwalten**.
+    ![Power BI-Einstellungen](./media/service-gateway-sql-tutorial/power-bi-settings.png)
 
-    ![Gateways verwalten](media/service-gateway-sql-tutorial/manage-gateways.png)
+2. Wählen Sie auf der Registerkarte **Datasets** das Dataset **AdventureWorksProducts** aus, um über ein Datengateway eine Verbindung mit Ihrer lokalen SQL Server-Datenbank herzustellen.
 
-2. Wählen Sie **Datenquelle hinzufügen** aus, und geben Sie „test-sql-source“ als **Datenquellennamen** ein.
+3. Erweitern Sie **Gatewayverbindung**, und stellen Sie sicher, dass mindestens ein Gateway aufgeführt ist. Wenn Sie über kein Gateway verfügen, erfahren Sie über den Link zur Produktdokumentation im Abschnitt [Voraussetzungen](#prerequisites) oben, wie Sie ein Gateway installieren und konfigurieren können.
 
-    ![Datenquelle hinzufügen](media/service-gateway-sql-tutorial/add-data-source.png)
+    ![Gatewayverbindung](./media/service-gateway-sql-tutorial/gateway-connection.png)
 
-3. Wählen Sie **SQL Server** als **Datenquellentyp** aus, und geben Sie weitere Werte ein, wie hier gezeigt.
+4. Erweitern Sie unter **Aktionen** die Umschaltfläche, um die Datenquellen anzuzeigen, und wählen Sie den Link **Zu Gateway hinzufügen** aus.
 
-    ![Datenquelleneinstellungen eingeben](media/service-gateway-sql-tutorial/data-source-settings.png)
+    ![Hinzufügen einer Datenquelle zum Gateway](./media/service-gateway-sql-tutorial/add-data-source-gateway.png)
 
+    > [!NOTE]
+    > Wenn Sie kein Gatewayadministrator sind und ein Gateway nicht selbst installieren möchten, kontaktieren Sie einen Gatewayadministrator in Ihrem Unternehmen. Dieser kann die Datenquellendefinition erstellen, die für die Verbindung Ihres Datasets mit Ihrer SQL Server-Datenbank erforderlich ist.
 
-   |          Option           |                                               Wert                                                |
-   |---------------------------|----------------------------------------------------------------------------------------------------|
-   |   **Datenquellenname**    |                                          test-sql-source                                           |
-   |   **Datenquellentyp**    |                                             SQL Server                                             |
-   |        **Server**         | Der Name Ihrer SQL Server-Instanz (muss mit der Angabe in Power BI Desktop identisch sein) |
-   |       **Datenbank**        |                                          TestGatewayDocs                                           |
-   | **Authentifizierungsmethode** |                                              Windows                                               |
-   |       **Benutzername**        |             Das Konto zum Herstellen der Verbindung mit SQL Server, z.B. michael@contoso.com             |
-   |       **Kennwort**        |                   Das Kennwort für das Konto zum Herstellen der Verbindung mit SQL Server                    |
+5. Geben Sie auf der Seite zur Verwaltung von **Gateways** auf der Registerkarte **Datenquelleneinstellungen** die folgenden Informationen ein, überprüfen Sie diese, und wählen Sie **Hinzufügen** aus.
 
+    | Option | Wert |
+    | --- | --- |
+    | Datenquellenname | AdventureWorksProducts |
+    | Datenquellentyp | SQL Server |
+    | Server | Der Name Ihrer SQL Server-Instanz, z. B. SQLServer01 (muss mit der Angabe in Power BI Desktop übereinstimmen) |
+    | Datenbank | Der Name Ihrer SQL Server-Datenbank, z. B. AdventureWorksDW (muss mit der Angabe in Power BI Desktop übereinstimmen) |
+    | Authentifizierungsmethode | Windows oder Standard (in der Regel Windows) |
+    | Benutzername | Das Benutzerkonto zum Herstellen der Verbindung mit SQL Server |
+    | Kennwort | Das Kennwort für das Konto zum Herstellen der Verbindung mit SQL Server |
 
-4. Wählen Sie **Hinzufügen**. Bei erfolgreicher Ausführung wird *Die Verbindung wurde hergestellt.* angezeigt.
+    ![Datenquelleneinstellungen](./media/service-gateway-sql-tutorial/data-source-settings.png)
 
-    ![Verbindung erfolgreich](media/service-gateway-sql-tutorial/connection-successful.png)
+6. Erweitern Sie auf der Registerkarte **Datasets** nochmals den Bereich **Gatewayverbindung**. Wählen Sie das Datengateway aus, das Sie konfiguriert haben und dessen **Status** angibt, dass es auf dem Computer ausgeführt wird, auf dem Sie es erstellt haben. Klicken Sie anschließend auf **Apply** (Übernehmen).
 
-    Sie können diese Datenquelle jetzt verwenden, um Daten aus SQL Server in Ihre Power BI-Dashboards und -Berichte einzubinden.
+    ![Aktualisieren der Gatewayverbindung](./media/service-gateway-sql-tutorial/update-gateway-connection.png)
 
+## <a name="configure-a-refresh-schedule"></a>Konfigurieren eines Aktualisierungszeitplans
 
-## <a name="configure-and-use-data-refresh"></a>Konfigurieren und Verwenden der Datenaktualisierung
+Nachdem Sie in Power BI nun lokal über ein Datengateway eine Verbindung zwischen Ihrem Dataset und Ihrer SQL Server-Datenbank hergestellt haben, konfigurieren Sie mithilfe der folgenden Schritte einen Aktualisierungszeitplan. Durch die Aktualisierung Ihres Datasets nach einem Zeitplan können Sie sicherstellen, dass Ihre Berichte und Dashboards über die aktuellen Daten verfügen.
 
-Sie haben einen Bericht im Power BI-Dienst veröffentlicht und die SQL Server-Datenquelle konfiguriert. Jetzt nehmen Sie eine Änderung an der Tabelle „Product“ vor. Diese Änderung wird über das Gateway an den veröffentlichten Bericht geleitet. Sie konfigurieren auch geplante Aktualisierungen, um zukünftige Änderungen zu verarbeiten.
+1. Öffnen Sie im linken Navigationsbereich **Mein Arbeitsbereich** \> **Datasets**. Wählen Sie die Auslassungspunkte ( **. . .** ) für das Dataset **AdventureWorksProducts** aus, und klicken Sie dann auf **Zeitplanaktualisierung**.
 
-1. Aktualisieren Sie in SSMS die Daten in der Tabelle „Product“.
+    > [!NOTE]
+    > Stellen Sie sicher, dass Sie die Auslassungspunkte für das Dataset **AdventureWorksProducts** und nicht die Auslassungspunkte für den Bericht mit dem gleichen Namen auswählen. Das Kontextmenü des Berichts **AdventureWorksProducts** umfasst nicht die Option **Zeitplanaktualisierung**.
 
-    ```sql
-    UPDATE Product
-    SET Sales = 32508, Quantity = 252
-    WHERE Product='Compact Digital'     
+2. Legen Sie im Bereich **Geplante Aktualisierung** unter **Halten Sie Ihre Daten aktuell** die Aktualisierung auf **On** (An) fest.
 
-    ```
+3. Wählen Sie ein geeignetes **Aktualisierungsintervall** aus (für dieses Beispiel **Täglich**), und klicken Sie dann unter **Uhrzeit** auf **Andere Uhrzeit hinzufügen**, um die gewünschte Aktualisierungszeit anzugeben (6:30 Uhr und 18:30 Uhr für dieses Beispiel).
 
-2. Wählen Sie im Power BI-Dienst im linken Navigationsbereich die Option **Mein Arbeitsbereich** aus.
+    ![Konfigurieren von geplanten Aktualisierungen](./media/service-gateway-sql-tutorial/configure-scheduled-refresh.png)
 
-3. Klicken Sie unter **Datasets** für das Dataset **TestGatewayDocs** auf **Mehr** (**...**) > **Jetzt aktualisieren**.
+    > [!NOTE]
+    > Sie können bis zu acht tägliche Zeitfenster konfigurieren, wenn sich Ihr Dataset auf gemeinsam genutzter Kapazität befindet, oder 48 Zeitfenster in Power BI Premium.
 
-    ![Jetzt aktualisieren](media/service-gateway-sql-tutorial/refresh-now.png)
+4. Lassen Sie das Kontrollkästchen **Send refresh failure notification emails to me** (Benachrichtigungs-E-Mails zu Aktualisierungsfehlern an mich senden) aktiviert, und wählen Sie **Apply** (Übernehmen) aus.
 
-4. Wählen Sie **Mein Arbeitsbereich** > **Berichte** > **TestGatewayDocs** aus. Sie sehen, dass die Aktualisierung übertragen wurde und jetzt **Compact Digital** die Verkaufszahlen anführt. 
+## <a name="perform-an-on-demand-refresh"></a>Durchführen einer bedarfsgesteuerten Aktualisierung
 
-    ![Aktualisierte Daten](media/service-gateway-sql-tutorial/updated-data.png)
+Da Sie nun einen Aktualisierungszeitplan konfiguriert haben, aktualisiert Power BI Ihr Dataset zum nächsten geplanten Zeitpunkt (in einem Zeitfenster von 15 Minuten). Wenn Sie die Daten früher aktualisieren möchten, z. B. um Ihr Gateway und Ihre Datenquellenkonfiguration zu testen, führen Sie eine bedarfsgesteuerte Aktualisierung durch, indem Sie die Option **Jetzt aktualisieren** im Datasetmenü im linken Navigationsbereich verwenden. Bedarfsgesteuerte Aktualisierungen haben keinen Einfluss auf die nächste geplante Aktualisierungszeit, aber sie zählen bei der Beschränkung der täglichen Aktualisierungen, wie bereits im vorherigen Abschnitt erwähnt.
 
-5. Wählen Sie **Mein Arbeitsbereich** > **Berichte** > **TestGatewayDocs** aus. Klicken Sie auf **Mehr** (**...**) > **Aktualisierung planen**.
+Simulieren Sie zur Veranschaulichung eine Änderung an den Beispieldaten, indem Sie die Tabelle „DimProduct“ in der Datenbank „AdventureWorksDW“ mithilfe von SQL Server Management Studio (SSMS) aktualisieren.
 
-6. Legen Sie unter **Aktualisierung planen** die Aktualisierung auf **Ein** fest, und klicken Sie dann auf **Anwenden**. Das Dataset wird standardmäßig täglich aktualisiert.
+```sql
 
-    ![Zeitplanaktualisierung](media/service-gateway-sql-tutorial/schedule-refresh.png)
+UPDATE [AdventureWorksDW].[dbo].[DimProduct]
+SET ListPrice = 5000
+WHERE EnglishProductName ='Road-250 Red, 58'
+
+```
+
+Führen Sie nun die folgenden Schritte aus, damit die aktualisierten Daten über die Gatewayverbindung zum Dataset gelangen und in den Berichten in Power BI erscheinen.
+
+1. Wählen Sie im Power BI-Dienst im linken Navigationsbereich die Option **Mein Arbeitsbereich** aus, und erweitern Sie diese.
+
+2. Wählen Sie unter **Datasets** die Auslassungspunkte ( **. . .** ) für das Dataset **AdventureWorksProducts** aus, und klicken Sie dann auf **Jetzt aktualisieren**.
+
+    ![Jetzt aktualisieren](./media/service-gateway-sql-tutorial/refresh-now.png)
+
+    Beachten Sie in der rechten oberen Ecke, dass sich Power BI darauf vorbereitet, die angeforderte Aktualisierung durchzuführen.
+
+3. Klicken Sie auf **Mein Arbeitsbereich \> Berichte \> AdventureWorksProducts**. Die aktualisierten Daten wurden übertragen, und das Produkt mit dem höchsten Listenpreis ist nun **Road-250 Red, 58**.
+
+    ![Aktualisiertes Säulendiagramm](./media/service-gateway-sql-tutorial/updated-column-chart.png)
+
+## <a name="review-the-refresh-history"></a>Überprüfen des Aktualisierungsverlaufs
+
+Sie sollten die Ergebnisse vergangener Aktualisierungszyklen im Aktualisierungsverlauf regelmäßig überprüfen. Datenbankanmeldeinformationen könnten abgelaufen sein, oder das ausgewählte Gateway könnte zum Zeitpunkt der geplanten Aktualisierung offline gewesen sein. Mithilfe der folgenden Schritte können Sie den Aktualisierungsverlauf untersuchen und auf Fehler überprüfen.
+
+1. Klicken Sie in der Power BI-Benutzeroberfläche in der rechten oberen Ecke auf das Zahnradsymbol (Einstellungen) und anschließend auf **Einstellungen**.
+
+2. Wechseln Sie zu **Datasets**, und wählen Sie das Dataset (z. B. **AdventureWorksProducts**) aus, das Sie untersuchen möchten.
+
+3. Klicken Sie auf **Aktualisierungsverlauf**, um das Dialogfeld zum **Aktualisierungsverlauf** zu öffnen.
+
+    ![Link „Aktualisierungsverlauf“](./media/service-gateway-sql-tutorial/refresh-history-link.png)
+
+4. Beachten Sie auf der Registerkarte **Geplant** die vergangenen geplanten und bedarfsgesteuerten Aktualisierungen mit **Start-** und **Endzeiten** sowie dem **Status** **Abgeschlossen**, der angibt, dass Power BI diese Aktualisierungen erfolgreich durchgeführt hat. Bei fehlerhaften Aktualisierungen wird Ihnen die Fehlermeldung angezeigt, wodurch Sie die Fehlerdetails untersuchen können.
+
+    ![Details des Aktualisierungsverlaufs](./media/service-gateway-sql-tutorial/refresh-history-details.png)
+
+    > [!NOTE]
+    > Die Registerkarte OneDrive ist nur für Datasets relevant, die mit Power BI Desktop-Dateien, Excel-Arbeitsmappen oder CSV-Dateien in OneDrive oder SharePoint Online verbunden sind. Weitere Informationen hierzu finden Sie unter [Aktualisieren von Daten in Power BI](refresh-data.md).
 
 ## <a name="clean-up-resources"></a>Bereinigen von Ressourcen
-Wenn Sie die Beispieldaten nicht mehr verwenden möchten, führen Sie `DROP DATABASE TestGatewayDocs` in SSMS aus. Wenn Sie die SQL Server-Datenquelle nicht mehr verwenden möchten, [entfernen Sie die Datenquelle](service-gateway-manage.md#remove-a-data-source). 
 
+Wenn Sie die Beispieldaten nicht mehr verwenden möchten, löschen Sie die Datenbank in SQL Server Management Studio (SSMS). Wenn Sie die SQL Server-Datenquelle nicht mehr verwenden möchten, entfernen Sie die Datenquelle von Ihrem Datengateway. Erwägen Sie auch die Deinstallation des Datengateways, falls Sie es nur für dieses Tutorial installiert haben. Sie sollten ebenfalls das Dataset „AdventureWorksProducts“ und den Bericht „AdventureWorksProducts“ löschen, die von Power BI beim Hochladen der Datei „AdventureWorksProducts.pbix“ erstellt wurden.
 
 ## <a name="next-steps"></a>Nächste Schritte
-In diesem Tutorial haben Sie Informationen zu den folgenden Vorgängen erhalten:
-> [!div class="checklist"]
-> * Erstellen eines Berichts aus Daten in SQL Server
-> * Veröffentlichen des Berichts im Power BI-Dienst
-> * Hinzufügen von SQL Server als Gatewaydatenquelle
-> * Aktualisieren der Daten im Bericht
 
-Fahren Sie mit dem nächsten Artikel fort, um mehr zu erfahren.
-> [!div class="nextstepaction"]
-> [Verwalten eines Power BI-Gateways](service-gateway-manage.md)
+In diesem Tutorial haben Sie erfahren, wie Sie Daten aus einer lokalen SQL Server-Datenbank in ein Power BI-Dataset importieren und wie Sie dieses Dataset nach einem Zeitplan bzw. bedarfsgesteuert aktualisieren, um die Berichte und Dashboards, die dieses Dataset verwenden, in Power BI auf dem neusten Stand zu halten. Nun können Sie mehr über das Verwalten von Datengateways und Datenquellen in Power BI erfahren. Sie sollten auch den konzeptionellen Artikel „Aktualisieren von Daten in Power BI“ lesen.
 
+- [Verwalten eines lokalen Power BI-Gateways](service-gateway-manage.md)
+- [Verwalten der Datenquelle – Import/Geplante Aktualisierung](service-gateway-enterprise-manage-scheduled-refresh.md)
+- [Aktualisieren von Daten in Power BI](refresh-data.md)

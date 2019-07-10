@@ -7,81 +7,102 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/28/2019
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 3d8057c4d35294dd5e83638b721169e4d54d2adf
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: c039b00ced1bf62c8be72d218177d04a9fd3accf
+ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374467"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67532743"
 ---
-# <a name="use-a-relative-date-slicer-and-filter-in-power-bi"></a>Verwenden eines relativen Datenschnitt mit Datum und relativen Datumsfilters in Power BI
-Mit dem **relativen Datenschnitt mit Datum** oder **relativem Datumsfilter** können Sie zeitbasierte Filter auf beliebige Datumsspalten in Ihrem Datenmodell anwenden. Ein Beispiel: Sie können mit dem **relativen Datenschnitt mit Datum** nur Daten zu Verkäufen anzeigen lassen, die innerhalb der letzten dreißig Tage (des letzten Monats, des Kalendermonats usw.) aufgetreten sind. Wenn Sie die Daten aktualisieren, wendet der relative Zeitraum automatisch die entsprechende relative Datumseinschränkung an.
+# <a name="use-a-relative-date-slicer-and-filter-in-power-bi-desktop"></a>Verwenden eines relativen Datenschnitts mit Datum und relativen Datumsfilters in Power BI Desktop
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-01.png)
+Mit dem **relativen Datenschnitt mit Datum** oder **relativem Datumsfilter** können Sie zeitbasierte Filter auf beliebige Datumsspalten in Ihrem Datenmodell anwenden. Zum Beispiel können Sie mit dem **relativen Datenschnitt mit Datum** nur Daten zu Verkäufen anzeigen lassen, die innerhalb der letzten 30 Tage (des letzten Monats, des Kalendermonats usw.) aufgetreten sind. Wenn Sie die Daten aktualisieren, wendet der relative Zeitraum automatisch die entsprechende relative Datumseinschränkung an.
 
-## <a name="using-the-relative-date-range-slicer"></a>Verwenden des relativen Datenschnitts mit Datumsbereich
-Der relative Datenschnitt mit Datum funktioniert wie jeder andere Datenschnitt. Erstellen Sie einfach ein Visual vom Typ **Datenschnitt** für Ihren Bericht, und wählen Sie dann für **Feld** einen Datumswert aus. In der folgenden Abbildung ist das Feld *OrderDate* ausgewählt.
+![Screenshot: Bericht mit einem Pfeil, der auf einen relativen Datenschnitt mit Datum zeigt](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-01.png)
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-02.png)
+## <a name="use-the-relative-date-range-slicer"></a>Verwenden des relativen Datenschnitts mit Datumsbereich
 
-Wählen Sie den Slicer aus, auf dem Canvas, und klicken Sie dann das Caretzeichen in der oberen rechten Ecke des slicers visual. Wenn das visuelle Element Daten enthält, zeigt das Menü die Option für **Relative**. 
+Der relative Datenschnitt mit Datum funktioniert wie jeder andere Datenschnitt. Erstellen Sie ein Visual vom Typ **Datenschnitt** für Ihren Bericht, und wählen Sie dann für **Feld** einen Datumswert aus. In der folgenden Abbildung wurde das Feld *OrderDate* ausgewählt.
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-03.png)
+![Screenshot: Visualisierungsbereich mit Pfeilen, die auf das Datenschnittvisual und das Feld zeigen](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-02.png)
+
+Wählen Sie den Datenschnitt für Ihre Canvas aus, und klicken Sie dann auf das Caretzeichen in der oberen rechten Ecke des Datenschnittvisuals. Wenn das Visual Datumsdaten enthält, wird im Menü die Option **Relativ** angezeigt.
+
+![Screenshot: Datenschnittvisual mit hervorgehobenem Caretzeichen und einem Pfeil, der auf die Option „Relativ“ zeigt](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-03.png)
 
 Wählen Sie für den relativen Datenschnitt mit Datum die Option *Relativ* aus.
 
-Anschließend können Sie die Einstellungen auswählen. Für die erste Dropdownliste im *relativen Datenschnitt mit Datum* stehen folgende Auswahlmöglichkeiten zur Verfügung:
+Anschließend können Sie die Einstellungen auswählen.
 
-* Letzte
+Für die erste Einstellung im *relativen Datenschnitt mit Datum* stehen folgende Auswahlmöglichkeiten zur Verfügung:
+
+![Screenshot: Konfigurationsoption „Relative“ mit der ersten Einstellung hervorgehoben](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04.png)
+
+* Last
+
 * Weiter
+
 * Diese
 
-Diese Auswahlmöglichkeiten werden in der folgenden Abbildung gezeigt.
+Mit der zweiten (mittleren) Einstellung im *relativen Datenschnitt mit Datum* können Sie eine Zahl eingeben, um den relativen Datumsbereich zu definieren.
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04.png)
-
-Mit der nächsten (mittleren) Einstellung im *relativen Datenschnitt mit Datum* können Sie eine Zahl eingeben, um den relativen Datumsbereich zu definieren.
+![Screenshot: relative Konfigurationsoptionen mit der zweiten Einstellung hervorgehoben](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04a.png)
 
 Mit der dritten Einstellung können Sie den Datumswert auswählen. Die folgenden Auswahlmöglichkeiten stehen zur Verfügung:
 
+![Screenshot: Konfigurationsoption „Relative“ mit der dritten Einstellung hervorgehoben](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-05.png)
+
 * Tage
+
 * Wochen
+
 * Wochen (Kalender)
+
 * Monate
+
 * Monate (Kalender)
+
 * Jahre
-* Jahre (Kalender)
 
-Diese Auswahlmöglichkeiten werden in der folgenden Abbildung gezeigt.
+* Years (Calendar)
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-05.png)
+Wenn Sie in dieser Liste **Monate** auswählen und *2* in der mittleren Einstellung eingeben, geschieht Folgendes:
 
-Folgendes geschieht, wenn Sie in dieser Liste *Monate* auswählen und für die mittlere Einstellung „2“ eingeben: Wenn heute der 20. Juli ist, werden in den vom Datenschnitt eingeschränkten Visuals Daten für die vorhergehenden zwei Monate angezeigt, vom 20. Mai bis zum 20. Juli (dem heutigen Datum).
+* Wenn heute der 20. Juli ist,
 
-Wenn Sie hingegen *Monate (Kalender)* auswählen, zeigen die eingeschränkten Visuals Daten vom 1. Mai bis zum 30. Juni (die letzten zwei kompletten Kalendermonate).
+* werden die in den Visuals enthaltenen Daten vom Datenschnitt auf die letzten zwei Monate beschränkt,
+
+* also vom 20. Mai bis zum 20. Juli (das heutige Datum).
+
+Wenn Sie hingegen *Monate (Kalender)* auswählen, zeigen die eingeschränkten Visuals Daten vom 1. Mai bis zum 30. Juni (die letzten zwei vollständigen Kalendermonate).
 
 ## <a name="using-the-relative-date-range-filter"></a>Verwenden des relativen Datumsbereichsfilters
-Sie können auch einen relativen Datumsbereichsfilter für Ihre Berichtsseite oder für den gesamten Bericht erstellen. Ziehen Sie hierfür einfach ein Datumsfeld in den Abschnitt **Filter auf Seitenebene** oder **Berichtsstufenfilter** im Bereich **Feld**, wie in der folgenden Abbildung veranschaulicht.
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-06.png)
+Sie können auch einen relativen Datumsbereichsfilter für Ihre Berichtsseite oder für den gesamten Bericht erstellen. Hierzu ziehen Sie ein Datumsfeld in die **Filter auf Seitenebene** oder die **Berichtsstufenfilter** im Bereich **Feld**:
 
-Dort können Sie den relativen Datumsbereich ähnlich wie den **relativen Datenschnitt mit Datum** anpassen. Wählen Sie in der Dropdownliste **Filtertyp** den Eintrag **Relative Datumsfilterung** aus.
+![Screenshot: Ziehen des OrderDate-Felds in die Filter auf Seitenebene](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-06.png)
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-07.png)
+Anschließend können Sie den relativen Datumsbereich ändern. Dazu gehen Sie ähnlich der Anpassung des **relativen Datenschnitts mit Datum** vor. Wählen Sie in der Dropdownliste **Filtertyp** den Eintrag **Relative Datumsfilterung** aus.
 
-Nach Auswahl von **Relative Datumsfilterung** sehen Sie drei zu ändernde Abschnitte, einschließlich eines numerischen Feldes in der Mitte (wie beim Datenschnitt).
+![Screenshot: Dropdownmenü für den Filtertyp mit Mauszeiger auf „Relative Datumsfilterung“](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-07.png)
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-08.png)
+Sobald Sie die **Relative Datumsfilterung** ausgewählt haben, werden Ihnen wie beim Datenschnitt drei zu ändernde Abschnitte, einschließlich eines numerischen Felds in der Mitte, angezeigt.
 
-Mehr muss zum Verwenden dieser relativen Datumseinschränkungen in Ihren Berichten nicht erklärt werden.
+![Screenshot: Berichtsstufenfilter mit Pfeilen, die auf die Optionen für „Elemente anzeigen, deren Wert gilt:“ zeigen](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-08.png)
 
 ## <a name="limitations-and-considerations"></a>Einschränkungen und Überlegungen
+
 Die folgenden Überlegungen und Einschränkungen betreffen derzeit den **relativen Datenschnitt mit Datum** und den relativen Datumsfilter.
 
 * Datenmodelle in **Power BI** enthalten keine Zeitzoneninformationen. In Modellen können Zeitangaben gespeichert werden, es gibt jedoch keinerlei Hinweise auf die entsprechende Zeitzone.
-* Der Datenschnitt und der Filter basieren immer auf der Uhrzeit in UTC. Wenn Sie also einen Filter in einem Bericht konfigurieren und den Bericht an einen Kollegen in einer anderen Zeitzone senden, sehen Sie beide die gleichen Daten. Befinden Sie sich jedoch nicht in der UTC-Zeitzone, entsprechen die Daten möglicherweise nicht dem erwarteten Zeitzonenversatz.
-* In einer lokalen Zeitzone erfasste Daten können mit dem **Abfrage-Editor** in UTC konvertiert werden.
 
+* Die Datenschnitte und Filter basieren immer auf der Zeit in UTC. Wenn Sie einen Filter in einem Bericht einrichten und an einen Kollegen in einer anderen Zeitzone senden, sehen Sie beide die gleichen Daten. Wenn Sie sich nicht in der UTC-Zeitzone befinden, müssen Sie und Ihr Kollege den Zeitversatz berücksichtigen.
+
+* Sie können Daten, die in einer lokalen Zeitzone erfasst wurden, mithilfe des **Abfrage-Editors** in UTC konvertieren.
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Erfahren Sie, wie Sie [Gruppierung und Quantisierung in Power BI Desktop verwenden](../desktop-grouping-and-binning.md).

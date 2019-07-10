@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/07/2018
-ms.openlocfilehash: ae56a27393ba476828ff87d7f458815318ea79c1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 9673217cfd7c5af70bdd293e8d5df51e5e7dee07
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770372"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559071"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Verwenden von OAuth zum Herstellen einer Verbindung mit dem Power BI-Berichtsserver und SSRS
 
@@ -25,7 +25,7 @@ In diesem Artikel erfahren Sie, wie Sie Ihre Umgebung für die Unterstützung de
 Mit OAuth können Sie eine Verbindung zum Power BI-Berichtsserver und Reporting Services herstellen, um mobile Berichte oder KPIs anzuzeigen. Windows Server 2016 enthält einige Verbesserungen der Rolle „Webanwendungsproxy“ (WAP), um diese Art der Authentifizierung zu ermöglichen.
 
    > [!NOTE]
-   > Anzeigen von Power BI-Berichte in Power BI-Berichtsserver gehostet wird mit WAP Authentifizierung derzeit nur in iOS-app unterstützt. Android-app wird zu diesem Zeitpunkt nicht offiziell unterstützt.
+   > Das Anzeigen von Power BI-Berichten, die im Power BI-Berichtsserver mit WAP zur Authentifizierung gehostet werden, wird jetzt von iOS- und Android-Apps unterstützt.
 
 ## <a name="requirements"></a>Anforderungen
 
@@ -63,7 +63,7 @@ Informationen zum Konfigurieren des richtigen Dienstprinzipalnamens (Service Pri
 
 ### <a name="enabling-negotiate-authentication"></a>Aktivieren der Aushandlungsauthentifizierung
 
-Damit ein Berichtsserver die Kerberos-Authentifizierung verwenden kann, müssen Sie den Authentifizierungstyp des Berichtsservers als „RSWindowsNegotiate“ konfigurieren. Dies erfolgt in der Datei „rsreportserver.config“.
+Damit ein Berichtsserver die Kerberos-Authentifizierung verwenden kann, müssen Sie den Authentifizierungstyp des Berichtsservers als „RSWindowsNegotiate“ konfigurieren. Sie tun dies in der Datei „rsreportserver.config“.
 
 ```xml
 <AuthenticationTypes>  
@@ -81,7 +81,7 @@ Sie müssen AD FS auf einem Windows-2016-Server in Ihrer Umgebung konfigurieren.
 
 ### <a name="create-an-application-group"></a>Erstellen einer Anwendungsgruppe
 
-Auf dem Bildschirm „AD FS-Verwaltung“ erstellen Sie eine Anwendungsgruppe für Reporting Services, die Informationen für die Power BI Mobile-Apps enthält.
+Auf dem Bildschirm „AD FS Management“ (AD FS-Verwaltung) erstellen Sie eine Anwendungsgruppe für Reporting Services, die Informationen für die Power BI Mobile-Apps enthält.
 
 Hierzu führen Sie die folgenden Schritten aus.
 
@@ -113,12 +113,12 @@ Hierzu führen Sie die folgenden Schritten aus.
    ![Assistent zum Hinzufügen von Anwendungsgruppen in ADFS (2)](media/mobile-oauth-ssrs/adfs-application-group-wizard2.png)
 7. Wählen Sie **Weiter**aus.
 
-8. Geben Sie die URL für den Berichtsserver ein. Dies ist die externe URL, die auf den Webanwendungsproxy verweist. Das Format sollte wie folgt lauten.
+8. Geben Sie die URL für den Berichtsserver ein. Bei dieser URL handelt es sich um die externe URL, die auf den Webanwendungsproxy verweist. Das Format sollte wie folgt lauten.
 
    > [!NOTE]
    > Bei der URL wird die Groß- und Kleinschreibung beachtet.
 
-   *https://< Berichtsserver-Url > / reports*
+   *https://< report server url >/reports*
 
    ![Assistent zum Hinzufügen von Anwendungsgruppen in ADFS (3)](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
 9. Wählen Sie **Weiter**aus.
@@ -239,7 +239,7 @@ Sie können die Multi-Factor Authentication aktivieren, um die Sicherheit für I
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
-### <a name="you-receive-the-error-failed-to-login-to-ssrs-server-please-verify-server-configuration"></a>Folgender Fehler wird angezeigt: „Fehler beim Anmelden beim SSRS-Server. Überprüfen Sie die Serverkonfiguration.
+### <a name="you-receive-the-error-failed-to-login-to-ssrs-server-verify-server-configuration"></a>Folgender Fehler wird angezeigt: „Fehler beim Anmelden beim SSRS-Server. Überprüfen Sie die Serverkonfiguration.
 
 ![](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 

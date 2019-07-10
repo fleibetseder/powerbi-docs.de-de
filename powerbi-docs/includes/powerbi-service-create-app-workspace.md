@@ -1,16 +1,37 @@
+---
+title: 'Erstellen eines Arbeitsbereichs: Power BI'
+description: 'Erstellen eines Arbeitsbereichs: Hinzufügen'
+services: powerbi
+author: maggiesMSFT
+ms.service: powerbi
+ms.topic: include
+ms.date: 04/04/2019
+ms.author: maggies
+ms.custom: include file
+ms.openlocfilehash: bbd1f47b2d798e662f84f009b3260a11d39cb23d
+ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67534637"
+---
 1. Erstellen Sie zunächst den Arbeitsbereich. Wählen Sie **Arbeitsbereiche** > **App-Arbeitsbereich erstellen** aus. 
    
      ![App-Arbeitsbereich erstellen](media/powerbi-service-create-app-workspace/power-bi-create-app-workspace.png)
    
-    Hier legen Sie Inhalte ab, die Sie gemeinsam mit Kollegen bearbeiten.
+    Hier legen Sie Inhalte ab, die Sie und Ihre Kollegen bearbeiten.
 
-2. Benennen Sie den Arbeitsbereich. Wenn die entsprechende **Arbeitsbereichs-ID** nicht verfügbar ist, geben Sie eine eindeutige ID ein.
+2. Klicken Sie auf dem Banner **Sie erstellen einen aktualisierten Arbeitsbereich** auf **Auf klassische Version zurücksetzen**. 
+
+    ![Arbeitsbereichoption „Auf klassische Version zurücksetzen“](media/powerbi-service-create-app-workspace/power-bi-revert-classic-workspace.png)
+
+3. Benennen Sie den Arbeitsbereich. Wenn die entsprechende **Arbeitsbereichs-ID** nicht verfügbar ist, geben Sie eine eindeutige ID ein.
    
-     Diese wird der Name der App sein.
+     Die App wird den gleichen Namen haben.
    
      ![Benennen des Arbeitsbereichs](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-name.png)
 
-3. Sie können einige Optionen festlegen. Wenn Sie **Öffentlich** auswählen, können die Inhalte des Arbeitsbereichs von jedem Benutzer in der Organisation angezeigt werden. **Privat** bedeutet hingegen, dass die Inhalte des Arbeitsbereichs nur von dessen Mitgliedern angezeigt werden können.
+3. Sie können einige Optionen festlegen. Wenn Sie **Öffentlich** auswählen, können die Inhalte des Arbeitsbereichs von jedem Benutzer in der Organisation angezeigt werden. **Privat** bedeutet, dass die Inhalte des Arbeitsbereichs nur von dessen Mitgliedern angezeigt werden können.
    
      ![Festlegen als „Privat“ oder „Öffentlich“](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-private-public.png)
    

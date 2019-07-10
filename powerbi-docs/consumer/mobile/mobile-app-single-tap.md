@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren von interaktionsmöglichkeiten für Berichte zu einzelnen tap
-description: Erfahren Sie, wie berichtsinteraktion einfache oder doppelte Tippen Sie auf konfigurieren.
+title: Konfigurieren von Berichtsinteraktionen für einfaches Tippen
+description: Erfahren Sie, wie Sie Berichtsinteraktionen für einfaches oder doppeltes Tippen konfigurieren.
 author: mshenhav
 manager: kfile
 ms.reviewer: ''
@@ -9,14 +9,14 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: c7f5476ed9d47cc42f275d51801a44c4ee3482ca
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c553b921ebeb30b8fb8ec7ba9f7bce74f6c31dee
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61340633"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558953"
 ---
-# <a name="configure-report-interaction-to-single-tap-or-double-tap-preview"></a>Konfigurieren von interaktionsmöglichkeiten für Berichte zum einzigen fingertipp oder doppeltippen (Vorschau)
+# <a name="configure-report-interaction-to-single-tap-or-double-tap"></a>Konfigurieren von Berichtsinteraktionen für einfaches oder doppeltes Tippen
 Gilt für:
 
 | ![iPhone](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![Android-Smartphone](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | 
@@ -25,24 +25,24 @@ Gilt für:
 
 Ein Power BI-Bericht ist eine interaktive Ansicht Ihrer Daten, und mit den darin enthaltenen Visuals werden unterschiedliche Ergebnisse und Erkenntnisse zu diesen Daten dargestellt.
 
-Sie können für die Interaktion mit Ihren Daten konfigurieren. Sie können entscheiden, ob einzelne tippeninteraktion oder tippen Sie doppelt auf die Interaktion.
+Sie können die Interaktion mit Ihren Daten konfigurieren. Sie können entscheiden, ob Sie Interaktionen mit einfachem oder doppeltem Tippen haben möchten.
 
-* Doppeltippen Interaktion Ihre erste Tippen auf ein visuelles Element wird ausgewählt, und nur das zweite Tap in einem visuellen Objekt führt die Aktion selbst, wie die Auswahl in einem Slicer, die übergreifende Hervorhebung, oder klicken Sie auf einen Link, Schaltfläche, und So weiter.
+* Bei Interaktionen mit doppeltem Tippen wird mit dem ersten Tippen auf ein Visual eben dieses ausgewählt, und durch das zweite Tippen werden Aktionen ausgeführt wie z. B. das Auswählen von Datenschnittelementen, die übergreifende Hervorhebung oder das Klicken auf einen Link, eine Schaltfläche etc.
 
-* Mit einzelnen tippeninteraktion per fingertipp ist beides – wählt das visuelle Element aus und führt die Aktion.
-![Power BI mobile einzigen fingertipp](./media/mobile-app-single-tap/single-tap-2.gif)
+* Bei Interaktionen mit einfachem Tippen werden beide Vorgänge ausgeführt: Das Visual wird ausgewählt und die Aktion ausgeführt.
+![Einfaches Tippen in der mobilen Power BI-App](./media/mobile-app-single-tap/single-tap-2.gif)
 
 
-Beginnend mit Power BI-app Version 18.0 für iOS und 112540 für Android, werden alle neue Installationen mit einzelnen Tippen als ein Standardverhalten konfiguriert werden.
-Benutzer, die bereits Power BI auf dem Telefon installiert haben, und führen ein upgrade auf diesen neuen Versionen werden angeboten, um zu einer einzigen fingertipp zu wechseln.
+Ab Power BI-App-Version 18.0 für iOS und Version 112540 für Android werden alle neuen Installationen mit einfachem Tippen als Standardverhalten konfiguriert.
+Benutzern, die Power BI bereits auf ihrem Smartphone installiert haben und ein Upgrade auf diese neue Version durchführen, wird angeboten, zum Interaktionsverhalten mit einfachem Tippen zu wechseln.
 
-## <a name="change-interaction-behavior"></a>Interaktionsverhalten ändern
+## <a name="change-interaction-behavior"></a>Ändern des Interaktionsverhaltens
 
-Um das Interaktionsverhalten zu ändern, können Sie rufen Sie die Appeinstellungen, und aktivieren bzw. Deaktivieren der einzelnen tippeninteraktion.
+Navigieren Sie zu den App-Einstellungen, und aktivieren/deaktivieren Sie die Interaktionen für einfaches Tippen, um das Interaktionsverhalten zu ändern.
 
-![Powerbi mobile ändern interaktionsmöglichkeiten für Berichte](./media/mobile-app-single-tap/configure-single-tap.png)
+![Ändern der Berichtsinteraktionen in der mobilen Power BI-App](./media/mobile-app-single-tap/configure-single-tap.png)
 
-Dieser Artikel gilt für beide Querformat und smartphoneberichten wird durch.
+Dieser Artikel gilt für Berichte im Querformat und Smartphoneberichte.
 
 ## <a name="next-steps"></a>Nächste Schritte
 * [Anzeigen von und Interagieren mit Power BI-Berichten, die für das Smartphone optimiert sind](mobile-apps-view-phone-report.md)

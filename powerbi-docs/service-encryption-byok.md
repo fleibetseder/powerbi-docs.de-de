@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/18/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 5c93a50ce481c5fad899c1911b30100dca7cb841
-ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
+ms.openlocfilehash: 96939c3ad29418ad868175dfd8093847ab427187
+ms.sourcegitcommit: 63a697c67e1ee37e47b21047e17206e85db64586
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67264486"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67498970"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Bring Your Own Key für Verschlüsselungsschlüssel in Power BI (Vorschauversion)
 
@@ -103,13 +103,22 @@ Sie müssen Mandantenadministrator im Power BI-Dienst und mit dem Cmdlet `Connec
 Add-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'
 ```
 
+Führen Sie `Add-PowerBIEncryptionKey` mit unterschiedlichen Werten für –`-Name` und `-KeyVaultKeyUri` aus, um mehrere Schlüssel hinzuzufügen. 
+
 Das Cmdlet akzeptiert zwei Parameter, die sich auf die Verschlüsselung für vorhandene und zukünftige Kapazitäten auswirken. Standardmäßig ist keiner der Parameter festgelegt:
 
-- `-Activate`: Gibt an, dass dieser Schlüssel für alle vorhandenen Kapazitäten im Mandanten verwendet wird.
+- `-Activate`: Gibt an, dass dieser Schlüssel für alle noch nicht verschlüsselten Kapazitäten im Mandanten verwendet wird.
 
 - `-Default`: Gibt an, dass dieser Schlüssel jetzt der Standardschlüssel für den gesamten Mandanten ist. Wenn Sie eine neue Kapazität erstellen, erbt die Kapazität den Schlüssel.
 
-Wenn Sie `-Default` angeben, werden alle Kapazitäten, die nachfolgend in diesem Mandanten erstellt werden, mit dem angegebenen Schlüssel (oder dem neuen Standardschlüssel) verschlüsselt. Sie können den Standardvorgang nicht rückgängig machen. D. h., Sie können keine Premium-Kapazität in Ihrem Mandanten mehr erstellen, die nicht BYOK verwendet.
+> [!IMPORTANT]
+> Wenn Sie `-Default` angeben, werden alle Kapazitäten, die nachfolgend in Ihrem Mandanten erstellt werden, mit dem angegebenen Schlüssel (oder dem neuen Standardschlüssel) verschlüsselt. Sie können den Standardvorgang nicht rückgängig machen und daher in Ihrem Mandanten keine Premium-Kapazität mehr erstellen, die nicht BYOK verwendet.
+
+Verwenden Sie [`Set-PowerBICapacityEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/set-powerbicapacityencryptionkey) zum Festlegen des Verschlüsselungsschlüssel für eine oder mehrere Power BI-Kapazitäten, nachdem Sie BYOK in Ihrem Mandanten aktiviert haben:
+
+```powershell
+Set-PowerBICapacityEncryptionKey-CapacityId 08d57fce-9e79-49ac-afac-d61765f97f6f -KeyName 'Contoso Sales'
+```
 
 Sie können festlegen, wie BYOK in Ihrem Mandanten verwendet wird. Rufen Sie z. B. `Add-PowerBIEncryptionKey` ohne `-Activate` oder `-Default` auf, um eine einzelne Kapazität zu verschlüsseln. Rufen Sie anschließend `Set-PowerBICapacityEncryptionKey` für die Kapazität auf, in der Sie BYOK aktivieren möchten.
 
@@ -136,12 +145,6 @@ Power BI stellt zusätzliche Cmdlets zum Verwalten von BYOK in Ihrem Mandanten z
     ```
 
     Beachten Sie, dass die Verschlüsselung auf Kapazitätsebene aktiviert wird, Sie den Verschlüsselungsstatus aber auf Datasetebene für den angegebenen Arbeitsbereich abrufen.
-
-- Verwenden Sie [`Set-PowerBICapacityEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/set-powerbicapacityencryptionkey), um den Verschlüsselungsschlüssel für die Power BI-Kapazität zu aktualisieren:
-
-    ```powershell
-    Set-PowerBICapacityEncryptionKey-CapacityId 08d57fce-9e79-49ac-afac-d61765f97f6f -KeyName 'Contoso Sales'
-    ```
 
 - Verwenden Sie [`Switch-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/switch-powerbiencryptionkey), um die Version des Schlüssels, der für die Verschlüsselung verwendet wird, zu wechseln (oder zu _rotieren_). Das Cmdlet aktualisiert `-KeyVaultKeyUri` für `-Name` des Schlüssels:
 

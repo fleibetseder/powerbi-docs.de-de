@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Flächenkartogrammen in Power BI Desktop (Vorschau)
+title: Verwenden von Flächenkartogrammen in Power BI Desktop (Vorschauversion)
 description: Erstellen von relativen Vergleichen von Regionen mithilfe von Flächenkartogrammen in Power BI Desktop
 author: mihart
 manager: kvivek
@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 0789d7e77e3ae501cc2aec92c366c9c2608edd52
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 2e0fc8ae6a6d2b01121ffb1c52c29652af21f21e
+ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839383"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67533082"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Flächenkartogramme in Power BI Desktop (Vorschau)
 Erstellen Sie ein Visual für die **Formenzuordnung**, um Regionen auf einer Karte voneinander abzutrennen. Im Gegensatz zum Visual **Karte** kann das Visual **Formenzuordnung** keine genauen geografischen Standorte von Datenpunkten auf einer Karte anzeigen. Stattdessen soll es vor allem Regionen auf einer Karte in Beziehung zueinander setzen, indem diese unterschiedliche Farben erhalten.
@@ -108,11 +108,12 @@ Für dieses Vorschaurelease von **Flächenkartogramm** gibt es einige Bedingunge
 * Das visuelle Element **Flächenkartogramm** kann maximal 1.000 Datenpunkte zeichnen.
 
 ## <a name="region-keys"></a>Regionsschlüssel
-Verwenden Sie die folgenden **Regionsschlüssel** in diesem Vorschaurelease, um **Flächenkartogramm** zu testen.
 
-### <a name="australia-states"></a>Australien: Bundesstaaten
+Verwenden Sie in dieser Vorschauversion die folgenden **Regionsschlüssel**, um **Flächenkartogramm** zu testen.
 
-| `id` | `abbr` | `iso` | `name` | `postal` |
+### <a name="australia-states"></a>Australien: Staaten
+
+| ID | abbr | iso | name | postal |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Western Australia |WA |
 | au-vic |Vic |AU-VIC |Victoria |VIC |
@@ -123,9 +124,9 @@ Verwenden Sie die folgenden **Regionsschlüssel** in diesem Vorschaurelease, um 
 | au-nsw |NSW |AU-NSW |New South Wales |NSW |
 | au-act |ACT |AU-ACT |Australian Capital Territory |ACT |
 
-### <a name="austria-states"></a>Österreich: Bundesländer
+### <a name="austria-states"></a>Österreich: Staaten
 
-| `id` | `iso` | `name` | `name-en` | `postal` |
+| ID | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Vienna |WI |
 | at-vo |AT-8 |Vorarlberg |Vorarlberg |VO |
@@ -137,9 +138,9 @@ Verwenden Sie die folgenden **Regionsschlüssel** in diesem Vorschaurelease, um 
 | at-ka |AT-2 |Kärnten |Carinthia |KA |
 | at-bu |AT-1 |Burgenland |Burgenland |BU |
 
-### <a name="brazil-states"></a>Brasilien: Bundesstaaten
+### <a name="brazil-states"></a>Brasilien: Staaten
 
-| `id` |
+| ID |
 | --- |
 | Tocantins |
 | Pernambuco |
@@ -175,7 +176,7 @@ Verwenden Sie die folgenden **Regionsschlüssel** in diesem Vorschaurelease, um 
 
 ### <a name="canada-provinces"></a>Kanada: Provinzen
 
-| `id` | `iso` | `name` | `postal` |
+| ID | iso | name | postal |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
 | ca-nt |CA-NT |Northwest Territories |NT |
@@ -193,7 +194,7 @@ Verwenden Sie die folgenden **Regionsschlüssel** in diesem Vorschaurelease, um 
 
 ### <a name="france-regions"></a>Frankreich: Regionen
 
-| `id` | `name` | `name-en` |
+| ID | name | name-en |
 | --- | --- | --- |
 | Alsace |Alsace |Alsace |
 | Rhone-Alpes |Rhône-Alpes |Rhone-Alpes |
@@ -218,9 +219,9 @@ Verwenden Sie die folgenden **Regionsschlüssel** in diesem Vorschaurelease, um 
 | Auvergne |Auvergne |Auvergne |
 | Aquitaine |Aquitaine |Aquitaine |
 
-### <a name="germany-states"></a>Deutschland: Bundesländer
+### <a name="germany-states"></a>Deutschland: Staaten
 
-| `id` | `iso` | `name` | `name-en` | `postal` |
+| ID | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
 | de-th |DE-TH |Thüringen |Thuringia |TH |
@@ -241,7 +242,7 @@ Verwenden Sie die folgenden **Regionsschlüssel** in diesem Vorschaurelease, um 
 
 ### <a name="ireland-counties"></a>Irland: Grafschaften
 
-| `id` |
+| ID |
 | --- |
 | Wicklow |
 | Wexford |
@@ -272,7 +273,7 @@ Verwenden Sie die folgenden **Regionsschlüssel** in diesem Vorschaurelease, um 
 
 ### <a name="italy-regions"></a>Italien: Regionen
 
-| `id` | `iso` | `name` | `name-en` | `postal` |
+| ID | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
 | it-vd |IT-23 |Valle d'Aosta |Aosta Valley |VD |
@@ -297,7 +298,7 @@ Verwenden Sie die folgenden **Regionsschlüssel** in diesem Vorschaurelease, um 
 
 ### <a name="mexico-states"></a>Mexiko: Staaten
 
-| `id` | `abreviatura` | `iso` | `name` | `name-en` | `postal` |
+| ID | abreviatura | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
 | mx-yuc |Yuc. |MX-YUC |Yucatán |Yucatan |YU |
@@ -334,7 +335,7 @@ Verwenden Sie die folgenden **Regionsschlüssel** in diesem Vorschaurelease, um 
 
 ### <a name="netherlands-provinces"></a>Niederlande: Provinzen
 
-| `id` | `iso` | `name` | `name-en` |
+| ID | iso | name | name-en |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |South Holland |
 | nl-ze |NL-ZE |Zeeland |Zeeland |
@@ -351,7 +352,7 @@ Verwenden Sie die folgenden **Regionsschlüssel** in diesem Vorschaurelease, um 
 
 ### <a name="uk-countries"></a>Vereinigtes Königreich: Länder
 
-| `id` | `iso` | `name` |
+| ID | iso | name |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
 | gb-sct |GB-SCT |Scotland |
@@ -360,7 +361,7 @@ Verwenden Sie die folgenden **Regionsschlüssel** in diesem Vorschaurelease, um 
 
 ### <a name="usa-states"></a>USA: Staaten
 
-| `id` | `name` | `postal` |
+| ID | name | postal |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alaska |AK |
@@ -415,6 +416,7 @@ Verwenden Sie die folgenden **Regionsschlüssel** in diesem Vorschaurelease, um 
 | us-wa |Washington |WA |
 
 ## <a name="next-steps"></a>Nächste Schritte
-[Matrixvisuals in Power BI](desktop-matrix-visual.md)
 
-[Visualisierungstypen in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Matrixvisuals in Power BI](desktop-matrix-visual.md)
+
+* [Visualisierungstypen in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

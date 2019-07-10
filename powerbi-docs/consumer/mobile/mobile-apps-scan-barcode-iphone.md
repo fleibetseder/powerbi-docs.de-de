@@ -1,5 +1,5 @@
 ---
-title: Scannen eines Barcodes mit einem iPhone aus der mobilen Power BI-App
+title: Scannen eines Barcodes aus der mobilen Power BI-App
 description: Scannen Sie reale Barcodes, um direkt zu gefilterten BI-Informationen in der mobilen Power BI-App zu gelangen.
 author: mshenhav
 manager: kfile
@@ -9,21 +9,28 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: mshenhav
-ms.openlocfilehash: 3fd2d4888f76490a01c0742e68e6820c7055326e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 432b65f8d7f461ac1942cf8996f9cc67e756fc7f
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61137236"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559006"
 ---
-# <a name="scan-a-barcode-with-your-iphone-from-the-power-bi-mobile-app"></a>Scannen eines Barcodes mit Ihrem iPhone aus der mobilen Power BI-App
+# <a name="scan-a-barcode-with-your-device-from-the-power-bi-mobile-app"></a>Scannen eines Barcodes aus der mobilen Power BI-App mit Ihrem Gerät
 Scannen Sie reale Barcodes, um direkt zu gefilterten BI-Informationen in der mobilen Power BI-App zu gelangen.
 
-![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-scanner.png)
+
+Gilt für:
+
+| ![iPhone](./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![Android-](./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) | 
+|:--- |:--- |
+| iPhone | Android (Smartphone, Tablet) | 
 
 Angenommen, ein Kollege hat [ein Barcodefeld in einem Bericht in Power BI Desktop markiert](../../desktop-mobile-barcodes.md) und den Bericht für Sie freigegeben. 
 
-Wenn Sie einen Produkt-Barcode mit dem Scanner in der Power BI-App auf Ihrem iPhone scannen, wird Ihnen der Bericht (oder eine Liste der Berichte) mit diesem Barcode angezeigt. Sie können den Bericht, der mit diesem Barcode herausgefiltert wurde, auf Ihrem iPhone öffnen.
+![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-scanner.png)
+
+Wenn Sie den Barcode eines Produkts mit dem Scanner in der Power BI-App auf Ihrem Gerät scannen, wird Ihnen der Bericht (oder eine Liste der Berichte) mit diesem Barcode angezeigt. Sie können den Bericht öffnen, der mit diesem Barcode herausgefiltert wurde.
 
 ## <a name="scan-a-barcode-with-the-power-bi-scanner"></a>Scannen eines Barcodes mit dem Power BI-Scanner
 1. Öffnen Sie in der mobilen Power BI-Anwendung das Navigationsmenü im Hauptbereich ![](media/mobile-apps-scan-barcode-iphone/pbi_iph_navmenu.png) oben links. 
@@ -34,10 +41,10 @@ Wenn Sie einen Produkt-Barcode mit dem Scanner in der Power BI-App auf Ihrem iPh
 4. Richten Sie den Scanner auf einen Barcode auf einem Produkt. 
    
     Sie sehen eine Liste der Berichte, die diesem Barcode zugeordnet sind.
-5. Tippen Sie auf den Namen des Berichts, der automatisch zu diesem Barcode herausgefiltert wurde, um ihn auf Ihrem iPhone zu öffnen.
+5. Tippen Sie auf den Namen des Berichts, der automatisch zu diesem Barcode herausgefiltert wurde, um ihn auf Ihrem Gerät zu öffnen.
 
 ## <a name="filter-by-other-barcodes-while-in-a-report"></a>Nach anderen Barcodes in einem Bericht filtern
-Während ein Bericht angezeigt wird, der von einem Barcode auf Ihrem iPhone herausgefiltert wurde, möchten Sie möglicherweise denselben Bericht mit einem anderen Barcode herausfiltern.
+Während ein Bericht angezeigt wird, der von einem Barcode auf Ihrem Gerät herausgefiltert wurde, sollten Sie denselben Bericht mit einem anderen Barcode herausfiltern.
 
 * Wenn das Symbol „Barcode“ über einen Filter verfügt ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png), ist der Filter aktiv, und der Bericht wird bereits von einem Barcode herausgefiltert. 
 * Wenn das Symbol nicht über einen Filter verfügt ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-unfiltered-icon.png), ist der Filter nicht aktiv, und der Bericht wird von keinem Barcode herausgefiltert. 
