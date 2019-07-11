@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 31c1cd7a8455232fdaa3bb3d391fb93e87ad5062
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: e0b2036192ace4404816f5ba64ad07569949452e
+ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61404400"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67596588"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-model-in-power-bi-preview"></a>Tutorial: Aufrufen eines Machine Learning Studio-Modells in Power BI (Vorschau)
 
@@ -62,7 +62,7 @@ Melden Sie sich beim Power BI-Dienst mit den Anmeldeinformationen des Benutzers 
 
 Dieser Schritt setzt voraus, dass Sie über die Daten, die Sie mit Ihrem Azure ML-Modell bewerten, im CSV-Format verfügen.  Wenn Sie das **Automobilpreisexperiment** zum Erstellen des Modells in Machine Learning Studio verwendet haben, wird das Dataset dafür in folgendem Link freigegeben:
 
-* [Azure Machine Learning Studio-Beispielmodell](https://raw.githubusercontent.com/santoshc1/PowerBI‑AI‑samples/master/Tutorial\_MLStudio\_model\_integration/Automobile%20price%20data%20\_Raw\_.csv)
+* [Azure Machine Learning Studio-Beispielmodell](https://github.com/santoshc1/PowerBI-AI-samples/blob/master/Tutorial_MLStudio_model_integration/Automobile%20price%20data%20_Raw_.csv)
 
 ### <a name="create-a-dataflow"></a>Erstellen eines Dataflows
 
