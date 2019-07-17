@@ -7,21 +7,21 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/29/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 366f80ccb1db2d226a80528da610b15082c44ed6
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: 681cd9f65713738e2b842bfa3404511f9e3a98f4
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461371"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567355"
 ---
 # <a name="promote-your-dataset-preview"></a>Höher Stufen Ihres Datasets (Vorschau)
 
 Ihre Power BI-Berichtersteller haben aktuell möglicherweise Zugriff auf viele verschiedene Datasets, sodass die Unternehmen sie zu den verlässlichen Datasets von hoher Qualität führen müssen. Power BI stellt zwei Verfahren bereit, um Datasets zu *empfehlen*:
 
-- **Werbung**: Als Datasetbesitzer können Sie Ihre eigenen Datasets höher stufen, wenn sie zur breit gestreuten Verwendung bereit sind. Die Werbung unterstützt die Verteilung von Datasets bei der Zusammenarbeit in Organisationen. Dieser Artikel befasst sich mit dem Bewerben Ihres Datasets.
+- **Werbung**: Als Datasetbesitzer können Sie Ihre eigenen Datasets höher stufen, wenn sie zur breit gestreuten Verwendung bereit sind. Alle Arbeitsbereichsmitglieder mit Schreibberechtigungen können ein Dataset höher stufen. Es gibt keine Einschränkungen dazu, wer ein Dataset höher stufen kann. Die Werbung unterstützt die Verteilung von Datasets bei der Zusammenarbeit in Organisationen. Dieser Artikel befasst sich mit dem Bewerben Ihres Datasets.
 - **Zertifizierung**: Sie können die Zertifizierung eines höher gestuften Datasets anfordern. Eine ausgewählte Gruppe von Benutzern, die in der Einstellung **Dataset-Zertifizierung** für Mandantenadministratoren definiert ist, entscheidet, welche Datasets zertifiziert werden. Details finden Sie unter [Zertifizieren von Datasets (Vorschau)](service-datasets-certify.md).
 
 ## <a name="promote-a-dataset"></a>Höher Stufen eines Datasets

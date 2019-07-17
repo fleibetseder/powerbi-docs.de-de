@@ -7,21 +7,19 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 507af4de9d57d2d54fe3e28bca8b1aff7da5cf30
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: 2db4c23b50071e387913ed79b4d01daeafb928a4
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461463"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567385"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Kopieren von Berichten aus anderen Arbeitsbereichen (Vorschau)
 
-Erfahren Sie, wie Sie einen Bericht aus einem Arbeitsbereich kopieren und in einem anderen Arbeitsbereich speichern können. Anschließend können Sie diesen Bericht ändern, Visuals und andere Elemente hinzufügen oder löschen.
-
-Wenn Sie in einem Arbeitsbereich oder einer App einen Bericht gefunden haben, der Ihnen gefällt, können Sie eine Kopie davon erstellen und ihn anschließend nach Ihrem Bedarf anpassen. Sie brauchen sich nicht mit der Erstellung des Datenmodells abzugeben. Das wurde bereits für Sie erstellt. Und es ist viel einfacher, einen vorhandenen Bericht zu ändern, als einen von Grund auf neuen zu erstellen.
+Wenn Sie in einem Arbeitsbereich oder einer App einen Bericht gefunden haben, der Ihnen gefällt, können Sie eine Kopie davon erstellen und sie in einem anderen Arbeitsbereich speichern. Anschließend können Sie diesen Bericht ändern, Visuals und andere Elemente hinzufügen oder löschen. Sie brauchen sich nicht mit der Erstellung des Datenmodells abzugeben. Das wurde bereits für Sie erstellt. Und es ist viel einfacher, einen vorhandenen Bericht zu ändern, als einen von Grund auf neuen zu erstellen. Jedoch können Sie Ihre Kopie des Berichts nicht vom neuen Arbeitsbereich aus in einer App veröffentlichen. Mehr dazu finden Sie in der Liste der weiteren [Überlegungen und Einschränkungen](service-datasets-across-workspaces.md#considerations-and-limitations) im Artikel „Verwenden von Datasets in mehreren Arbeitsbereichen“.
 
 ## <a name="save-a-copy-of-a-report"></a>Speichern einer Kopie eines Berichts
 
@@ -61,6 +59,21 @@ Wenn Sie über einen Bericht in Ihrem Arbeitsbereich verfügen, müssen Sie mög
 1. Im Dialogfeld **Verwandte Inhalte** werden alle verwandten Elemente angezeigt. In dieser Liste sieht das Dataset aus wie jedes andere. Es lässt sich nicht feststellen, dass es in einem anderen Arbeitsbereich gespeichert ist. Dieses Problem ist bekannt.
  
     ![Verwandte Inhalte (Dialogfeld)](media/service-datasets-copy-reports/power-bi-dataset-related.png)
+
+## <a name="delete-a-report-and-its-shared-dataset"></a>Löschen eines Berichts und seines freigegebenen Datasets
+
+Sie können sich entscheiden, dass Sie den Bericht und sein zugehöriges freigegebenes Dataset nicht mehr im Arbeitsbereich benötigen.
+
+1. Löschen Sie den Bericht. Wählen Sie in der Liste der Berichte im Arbeitsbereich das Symbol **Löschen** aus.
+
+    ![Symbol „Bericht löschen“](media/service-datasets-across-workspaces/power-bi-datasets-delete-report.png)
+
+2. In der Liste der Datasets können Sie sehen, dass es für die freigegebenen Datasets kein Symbol **Löschen** gibt. Aktualisieren Sie die Seite, oder wechseln Sie zu einer anderen Seite, und kehren Sie dann zurück. Das Dataset ist nicht mehr vorhanden. Überprüfen Sie andernfalls **Verwandte Inhalte anzeigen**. Es hat möglicherweise einen Bezug zu einer anderen Tabelle in Ihrem Arbeitsbereich.
+
+    ![„Verwandte Inhalte anzeigen“](media/service-datasets-across-workspaces/power-bi-dataset-view-related-icon.png)
+
+    > [!NOTE]
+    > Durch das Löschen des freigegebenen Datasets in diesem Arbeitsbereich wird das Dataset nicht gelöscht. Es löscht nur den Verweis darauf.
 
 
 ## <a name="next-steps"></a>Nächste Schritte

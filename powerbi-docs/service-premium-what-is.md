@@ -8,28 +8,29 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/22/2019
+ms.date: 07/06/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1c2f867140c5a717c80d39db75b3a54e40bd1e34
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 21518d2c5160c8e5a696c193d3d6f4d352a02271
+ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721047"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67596552"
 ---
 # <a name="what-is-power-bi-premium"></a>Was ist Power BI Premium?
 
 Power BI Premium bietet dedizierte und erweiterte Ressourcen für die Ausführung des Power BI-Diensts für Ihre Organisation. Beispiel:
 
-- Größere Skalierung und Leistung
-- Flexibilität bei der Lizenzierung nach Kapazität
-- Vereinheitlichung von Self-Service- und Unternehmens-BI
-- Erweitern der lokalen BI mit Power BI-Berichtsserver
-- Unterstützung für Datenresidenz nach Region (Multi-Geo)
-- Teilen von Daten mit beliebigen Personen ohne Erwerb einer Benutzerlizenz
+> [!div class="checklist"]
+> * Größere Skalierung und Leistung
+> * Flexibilität bei der Lizenzierung nach Kapazität
+> * Vereinheitlichung von Self-Service- und Unternehmens-BI
+> * Erweitern der lokalen BI mit Power BI-Berichtsserver
+> * Unterstützung für Datenresidenz nach Region (Multi-Geo)
+> * Teilen von Daten mit beliebigen Personen ohne Erwerb einer Benutzerlizenz
 
-Dieser Artikel bietet keine tiefgreifenden Details zu allen Funktionen von Power BI Premium – er berührt gerade einmal die Oberfläche. Wo es erforderlich ist, bieten Links zu weiteren Artikeln ausführlichere Informationen.
+Dieser Artikel stellt wichtige Funktionen in Power BI Premium vor. Wo es erforderlich ist, bieten Links zu weiteren Artikeln ausführlichere Informationen.
 
 ## <a name="subscriptions-and-licensing"></a>Abonnements und Lizenzierung
 
@@ -52,7 +53,7 @@ Power BI-Premium-Abonnements werden von Administratoren im Microsoft 365 Admin C
 
 Mit Power BI Premium erhalten Sie *dedizierte Kapazitäten*. Im Gegensatz zu einer gemeinsam genutzten Kapazität, bei der die Workloads auf gemeinsam mit anderen Kunden genutzten Computerressourcen ausgeführt werden, ist eine dedizierte Kapazität für die ausschließliche Verwendung durch eine Organisation bestimmt. Sie ist isoliert und verfügt über dedizierte Computeressourcen, die verlässliche und konsistente Leistung für die gehosteten Inhalte zur Verfügung stellt. 
 
-Arbeitsbereiche befinden sich innerhalb von Kapazitäten. Jeder Power BI-Benutzer verfügt über einen persönlichen Arbeitsbereich, der als **Mein Arbeitsbereich** bezeichnet wird. Zusätzliche Arbeitsbereiche können erstellt werden, um die Zusammenarbeit und die Bereitstellung zu ermöglichen, und diese werden als **App-Arbeitsbereiche** bezeichnet. Standardmäßig werden Arbeitsbereiche, einschließlich persönlicher Arbeitsbereiche, in der gemeinsam genutzten Kapazität erstellt. Wenn Sie über Premium-Kapazitäten verfügen, können sowohl zu „Meine Arbeitsbereiche“ als auch zu App-Arbeitsbereichen Premium-Kapazitäten zugewiesen werden.
+Arbeitsbereiche befinden sich innerhalb von Kapazitäten. Jeder Power BI-Benutzer verfügt über einen persönlichen Arbeitsbereich, der als **Mein Arbeitsbereich** bezeichnet wird. Zusätzliche Arbeitsbereiche, auch als **App-Arbeitsbereiche** bezeichnet, können erstellt werden, um die Zusammenarbeit zu ermöglichen. Standardmäßig werden Arbeitsbereiche, einschließlich persönlicher Arbeitsbereiche, in der gemeinsam genutzten Kapazität erstellt. Wenn Sie über Premium-Kapazitäten verfügen, können sowohl zu „Meine Arbeitsbereiche“ als auch zu App-Arbeitsbereichen Premium-Kapazitäten zugewiesen werden.
 
 ### <a name="capacity-nodes"></a>Kapazitätsknoten
 
@@ -102,7 +103,7 @@ Importmodelle werden aus diesem Grund nach Bedarf in den Arbeitsspeicher geladen
 
 Das Entfernen eines Modells aus dem Arbeitsspeicher wird als *Entfernung* bezeichnet. Dies ist ein Vorgang, den Power BI – je nach Größe der Modelle – schnell ausführen kann. Wenn die Kapazität keinen Engpass beim Arbeitsspeicher erlebt, werden Modelle einfach in den Arbeitsspeicher geladen und verbleiben dort. Wenn jedoch nicht genügend Arbeitsspeicher zum Laden eines Modells zur Verfügung steht, muss der Power BI-Dienst zuerst Arbeitsspeicher freigeben. Er gibt Arbeitsspeicher frei, indem er inaktive Modelle erkennt; dazu sucht er Modelle, die innerhalb der letzten drei Minuten \[[1](#endnote-1)\] nicht verwendet wurden, und entfernt diese dann. Wenn keine inaktiven Modelle zum Entfernen vorhanden sind, versucht der Power BI-Dienst, Modelle zu entfernen, die für Hintergrundoperationen geladen wurden. Als letztes Mittel lässt er nach 30 Sekunden erfolgloser Versuche \[[1](#endnote-1)\] den interaktiven Vorgang fehlschlagen. In diesem Fall wird der Berichtsbenutzer über den Fehlschlag informiert und gleichzeitig ermutigt, es in Kürze noch einmal zu versuchen. In einigen Fällen können Modelle aufgrund von Dienstvorgängen aus dem Arbeitsspeicher entladen werden.
 
-Es muss unbedingt betont werden, dass die Entfernung von Datasets ein normales und erwartetes Verhalten darstellt. Es zielt darauf ab, die Speicherauslastung durch Laden und Entladen von Modellen zu maximieren, deren kombinierte Größe den verfügbaren Arbeitsspeicher überschreiten kann. Dies ist beabsichtigt und für Benutzer des Berichts vollständig transparent. Hohe Entfernungsraten bedeuten nicht zwangsläufig, dass die Kapazität unzureichend mit Ressourcen ausgestattet ist. Dies kann jedoch zu einem Problem werden, wenn die Reaktionsfähigkeit auf Abfragen oder Aktualisierungen aufgrund hoher Entfernungsraten leidet.
+Es muss unbedingt betont werden, dass die Entfernung von Datasets ein normales und erwartetes Verhalten darstellt. Es zielt darauf ab, die Speicherauslastung durch Laden und Entladen von Modellen zu maximieren, deren kombinierte Größe den verfügbaren Arbeitsspeicher überschreiten kann. Dies ist beabsichtigt und für Benutzer des Berichts transparent. Hohe Entfernungsraten bedeuten nicht zwangsläufig, dass die Kapazität unzureichend mit Ressourcen ausgestattet ist. Dies kann jedoch zu einem Problem werden, wenn die Reaktionsfähigkeit auf Abfragen oder Aktualisierungen aufgrund hoher Entfernungsraten leidet.
 
 Aktualisierungen von Importmodellen sind immer speicherintensiv, da die Modelle in den Arbeitsspeicher geladen werden müssen. Weiterer Speicher ist für die Verarbeitung erforderlich. Eine vollständige Aktualisierung kann ungefähr doppelt so viel Arbeitsspeicher in Anspruch nehmen, wie für das Modell erforderlich ist. Dadurch wird sichergestellt, dass das Modell auch während der Verarbeitung abgefragt werden kann, da Abfragen an das vorhandene Modell gesendet werden, bis die Aktualisierung abgeschlossen ist und die Daten des neuen Modells verfügbar sind. Inkrementelle Aktualisierungen erfordern weniger Arbeitsspeicher und können schneller abgeschlossen werden und so den Druck auf Kapazitätsressourcen deutlich verringern. Aktualisierungen von Modellen können außerdem CPU-intensiv sein, insbesondere solche mit komplexen Power Query-Transformationen oder berechneten Tabellen/Spalten, die komplex sind oder auf umfangreichen Tabelle basieren.
 
@@ -175,7 +176,7 @@ In der folgenden Tabelle werden die empfohlenen SKUs für verschiedene PBIX-Grö
    |P2    | < 6 GB        |
    |P3, P4, P5    | bis zu 10 GB   |
 
-Die A4-SKU für Power BI Embedded entspricht der P1-SKU, A5 entspricht P2 und A6 entspricht P3. Beachten Sie, dass beim Veröffentlichen von großen Modellen in A- und EM-SKUs möglicherweise Fehler zurückgegeben werden, die sich nicht auf den Fehler zur Begrenzung der Modellgröße in der gemeinsam genutzten Kapazität beziehen. Aktualisierungsfehler bei großen Modellen in A- und EM-SKUs verweisen häufig auf Timeouts. 
+Die A4-SKU für Power BI Embedded entspricht der P1-SKU, A5 entspricht P2 und A6 entspricht P3. Beim Veröffentlichen von großen Modellen in A- und EM-SKUs werden möglicherweise Fehler zurückgegeben, die sich nicht auf den Fehler zur Begrenzung der Modellgröße in der gemeinsam genutzten Kapazität beziehen. Aktualisierungsfehler bei großen Modellen in A- und EM-SKUs verweisen häufig auf Timeouts. 
 
 Ihre PBIX-Dateien stellen Daten in einem *stark komprimierten Zustand* dar. Die Daten werden in den meisten Fällen beim Laden in den Speicher mehrmals größer, ebenso wie anschließend bei jeder Datenaktualisierung.
 

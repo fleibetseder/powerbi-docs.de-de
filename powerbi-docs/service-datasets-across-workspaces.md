@@ -7,29 +7,29 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/07/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d893088978d7a412d0e005ca7b3280824974c76c
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: 17a8e1c9e0d46a56d6b6ff3e46c0fda6da8ffe12
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816675"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567844"
 ---
 # <a name="use-datasets-across-workspaces-preview"></a>Verwenden von Datasets in mehreren Arbeitsbereichen (Vorschau)
 
-Business Intelligence ist eine gemeinschaftliche Aktivität. Es ist wichtig, standardisierte Datasets einzurichten, die als „eindeutig wahre Quelle“ fungieren können. Das Entdecken und Wiederverwenden solcher standardisierten Datasets ist von entscheidender Bedeutung. Wenn Experten für Datenmodellierung in Ihrer Organisation optimierte Datasets erstellen und teilen, können Berichtersteller von diesen Datasets ausgehen, um präzise Berichte zu erstellen. Dann verfügt Ihre Organisation über konsistente Daten für die Entscheidungsfindung und ist auf dem Weg zu einer gesunden Datenkultur.
+Business Intelligence ist eine gemeinschaftliche Aktivität. Es ist wichtig, standardisierte Datasets einzurichten, die als „eindeutig wahre Quelle“ fungieren können. Dann sind das Entdecken und Wiederverwenden solcher standardisierten Datasets ist von entscheidender Bedeutung. Wenn Experten für Datenmodellierung in Ihrer Organisation optimierte Datasets erstellen und teilen, können Berichtersteller von diesen Datasets ausgehen, um präzise Berichte zu erstellen. Dann verfügt Ihre Organisation über konsistente Daten für die Entscheidungsfindung und ist auf dem Weg zu einer gesunden Datenkultur.
 
 ![Freigegebenes Dataset auswählen](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
-Mit Power BI wird es für Datasetersteller einfach, Datasets zu zertifizieren oder höher zu stufen, damit sie von anderen entdeckt werden können. Dann finden Berichtautoren qualitätvolle, offizielle Datasets, die sie überall in Power BI verwenden können. Datasetbesitzer können die Kontrolle über die zum Zugriff auf ihre Daten berechtigten Personen behalten, indem Sie die [Erstellungsberechtigung](service-datasets-build-permissions.md#build-permissions-for-shared-datasets) verwenden. Mandantenadministratoren verfügen über eine neue Mandanteneinstellung zum [Steuern der Arbeitsbereiche übergreifenden Verwendung von Datasets](service-datasets-admin-across-workspaces.md).
+In Power BI können Datasetersteller Datasets *zertifizieren* oder *höher stufen*, damit sie von anderen entdeckt werden können. Auf diese Weise können Berichtsautoren erkennen, welche Datasets hohe Qualität aufweisen und offiziell sind, und können diese Datasets für das Erstellen in Power BI verwenden. Datasetbesitzer können die Kontrolle über die zum Zugriff auf ihre Daten berechtigten Personen behalten, indem Sie die [Erstellungsberechtigung](service-datasets-build-permissions.md#build-permissions-for-shared-datasets) verwenden. Mandantenadministratoren verfügen über eine neue Mandanteneinstellung zum [Steuern der Arbeitsbereiche übergreifenden Verwendung von Datasets](service-datasets-admin-across-workspaces.md).
 
 ## <a name="dataset-sharing-and-the-new-workspace-experience"></a>Freigeben von Datasets und die neue Arbeitsbereichsoberfläche
 
 Das Erstellen von Berichten auf der Grundlage von Datasets in verschiedenen Arbeitsbereichen und das Kopieren von Berichten in verschiedene Arbeitsbereiche sind eng mit der [neuen Arbeitsbereichsoberfläche](service-create-the-new-workspaces.md) verknüpft:
 
-- Wenn Sie im Dienst den Datasetkatalog aus einer neuen Arbeitsbereichsoberfläche öffnen, zeigt der Datasetkatalog Datsets an, die sich in Ihren Arbeitsbereichen „Mein Arbeitsbereich“ und in Arbeitsbereichen mit der neuen Arbeitsbereichsoberfläche befinden. 
+- Wenn Sie im Dienst den Datasetkatalog aus einer neuen Arbeitsbereichsoberfläche öffnen, zeigt der Datasetkatalog Datsets an, die sich in Ihren Arbeitsbereichen „Mein Arbeitsbereich“ und in anderen Arbeitsbereichen mit der neuen Arbeitsbereichsoberfläche befinden. 
 - Wenn Sie den Datasetkatalog aus einem klassischen Arbeitsbereich öffnen, sehen Sie nur die Datasets aus dem betreffenden Arbeitsbereich, keine in anderen Arbeitsbereichen.
 - Auf dem Desktop können Sie Live Connect-Berichte in verschiedenen Arbeitsbereichen veröffentlichen, sofern ihre Datasets sich in Arbeitsbereichen mit der neuen Benutzeroberfläche befinden.
 - Beim übergreifenden Kopieren von Berichten über Arbeitsbereiche hinweg muss es sich bei dem Zielarbeitsbereich um einen Arbeitsbereich mit der neuen Benutzeroberfläche handeln.

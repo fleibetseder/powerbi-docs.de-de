@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: c0a70339e8336f3e7b93b40ad8a99dcb87715812
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: f7dc84c9c6c84a30417d97f37d984b5f01ec9cd7
+ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710248"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67596472"
 ---
 # <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>Schritt 4: Abrufen eines Datasets, um einer Power BI-Tabelle Zeilen hinzuzufügen
 
@@ -22,7 +22,7 @@ Dieser Artikel ist Teil einer Anleitung zum [Übertragen von Daten in ein Datase
 
 In **Schritt 3** von „Übertragen von Daten in ein Dataset per Push“ haben Sie unter [Erstellen eines Datasets in Power BI](walkthrough-push-data-create-dataset.md) den Vorgang [Dataset erstellen](https://docs.microsoft.com/rest/api/power-bi/datasets) zum Erstellen eines Datasets in Power BI aufgerufen. In diesem Schritt verwenden Sie den Vorgang [Datasets abrufen](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) und „Newtonsoft.Json“, um eine Dataset-ID abzurufen. Sie verwenden die Dataset-ID in Schritt 4, um einem Dataset Zeilen hinzufügen. 
 
-Um Daten per Push in ein Power BI-Dataset zu übertragen, müssen Sie auf die Tabelle im Dataset verweisen. Um auf eine Tabelle in einem Dataset zu verweisen, müssen Sie zuerst eine **Dataset-ID**abrufen. Sie rufen eine **Dataset-ID** mithilfe des Vorgangs [Get Dataset By ID](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasetbyid) ab. Der Vorgang **Get Dataset By ID** gibt eine JSON-Zeichenfolge mit einer Liste aller Datasets in Power BI zurück. Die empfohlene Methode zum Deserialisieren einer JSON-Zeichenfolge ist das Verwenden von [Newtonsoft.Json](http://www.newtonsoft.com/json).
+Um Daten per Push in ein Power BI-Dataset zu übertragen, müssen Sie auf die Tabelle im Dataset verweisen. Um auf eine Tabelle in einem Dataset zu verweisen, müssen Sie zuerst eine **Dataset-ID**abrufen. Mithilfe des Vorgangs [Datasets abrufen](/rest/api/power-bi/datasets/getdatasets) rufen Sie eine **Dataset-ID** ab. Der Vorgang **Datasets abrufen** gibt eine JSON-Zeichenfolge mit einer Liste aller Datasets in Power BI zurück. Die empfohlene Methode zum Deserialisieren einer JSON-Zeichenfolge ist das Verwenden von [Newtonsoft.Json](http://www.newtonsoft.com/json).
 
 Nachstehen erfahren Sie, wie Sie ein Dataset abrufen.
 

@@ -7,15 +7,15 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e790afee5b57b73a756ca3c1afd564b00e778186
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: 915fb9d10b69142621554f29a7fd77e7a41932e5
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461325"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567340"
 ---
 # <a name="certify-datasets-preview"></a>Zertifizieren von Datasets (Vorschau)
 
@@ -23,8 +23,8 @@ Ihre Organisation kann Datasets zertifizieren, die die autoritative Quelle für 
 
 Power BI-Benutzer haben aktuell möglicherweise Zugriff auf viele verschiedene Datasets, sodass die Unternehmen sie zu den verlässlichen Datasets von hoher Qualität führen müssen. Power BI stellt zwei Verfahren bereit, um Datasets zu *empfehlen*:
 
-- **Werbung**: Datasetbesitzer können ihre eigenen Datasets höher stufen, wenn sie zur breit gestreuten Verwendung bereit sind. Details finden Sie unter [Höher Stufen Ihres Datasets](service-datasets-promote.md). 
-- **Zertifizierung**: Datasetbesitzer können die Zertifizierung eines höher gestuften Datasets anfordern. Eine ausgewählte Gruppe von Benutzern, die in der Einstellung **Dataset-Zertifizierung** für Mandantenadministratoren definiert ist, entscheidet darüber, welche Datasets zertifiziert werden.
+- **Werbung**: Datasetbesitzer und andere Benutzer in einem Arbeitsbereich können ihre eigenen Datasets höher stufen, wenn sie zur breit gestreuten Verwendung bereit sind. Details finden Sie unter [Höher Stufen Ihres Datasets](service-datasets-promote.md). 
+- **Zertifizierung**: Datasetbesitzer können die Zertifizierung eines höher gestuften Datasets anfordern. Eine ausgewählte Gruppe von Benutzern, die in der Einstellung **Dataset-Zertifizierung** für Mandantenadministratoren definiert ist, entscheidet, welche Datasets zertifiziert werden. Der Name der Person, die ein Dataset zertifiziert hat, wird während der Datasetermittlung in einer QuickInfo angezeigt; zeigen Sie mit der Maus auf die Bezeichnung **Zertifiziert**, dann sehen Sie den Namen.
 
 ## <a name="certify-a-dataset"></a>Zertifizieren eines Datasets
 

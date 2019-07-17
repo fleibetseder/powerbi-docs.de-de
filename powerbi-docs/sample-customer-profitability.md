@@ -7,15 +7,15 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/20/2019
+ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: af20d5842664311a0d543ee189ef671f7865058b
-ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.openlocfilehash: 333403ca74c5c5a13c94cbd41100915c7260e304
+ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418759"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67792010"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Beispiel zur Kundenrentabilität für Power BI: Übersicht
 
@@ -23,17 +23,21 @@ Das Inhaltspaket „Beispiel zur Kundenrentabilität“ enthält ein Dashboard, 
 
 ![Dashboard für das Beispiel zur Kundenrentabilität](media/sample-customer-profitability/power-bi-dash.png)
 
-Dieses Beispiel ist Teil einer Reihe, die Ihnen die Verwendung von Power BI anhand geschäftsbezogener Daten, Berichte und Dashboards zeigt. Es wurde mit echten Daten von [obviEnce](http://www.obvience.com/) erstellt, die anonymisiert wurden. Die Daten sind in verschiedenen Formaten verfügbar: Inhaltspaket/-App, Power BI Desktop-PBIX-Datei oder Excel-Arbeitsmappe. Weitere Informationen finden Sie unter [Welche Beispieldaten sind für die Verwendung mit Power BI verfügbar?](sample-datasets.md). 
+Dieses Beispiel ist Teil einer Reihe, die Ihnen die Verwendung von Power BI anhand geschäftsbezogener Daten, Berichte und Dashboards zeigt. Es wurde mit echten Daten von [obviEnce](http://www.obvience.com/) erstellt, die anonymisiert wurden. Die Daten sind in verschiedenen Formaten verfügbar: Inhaltspaket, Power BI Desktop-PBIX-Datei oder Excel-Arbeitsmappe. Weitere Informationen finden Sie unter [Welche Beispieldaten sind für die Verwendung mit Power BI verfügbar?](sample-datasets.md). 
 
-In diesem Tutorial werden der Power BI-Dienst und das Inhaltspaket „Beispiel zur Kundenrentabilität“ verwendet. Da die Benutzeroberflächen sich sehr ähneln, können Sie das Tutorial auch mit Power BI Desktop und der PBIX-Beispieldatei durchführen. 
+Dieses Tutorial erkundet das Inhaltspaket „Beispiel zur Kundenrentabilität“ im Power BI-Dienst. Da die Berichtsoberfläche in Power BI Desktop und im Dienst ähnlich sind, können Sie das Tutorial auch anhand der PBIX-Beispieldatei in Power BI Desktop nachvollziehen. 
 
-## <a name="prerequisites"></a>Voraussetzungen
+Sie benötigen keine Power BI-Lizenz, um die Beispiele in Power BI Desktop kennenzulernen. Wenn Sie nicht über eine Power BI Pro-Lizenz verfügen, können Sie das Beispiel im Power BI-Dienst in Ihrem Arbeitsbereich speichern. 
+
+## <a name="get-the-sample"></a>Abrufen des Beispiels
 
 Bevor Sie das Beispiel verwenden können, müssen Sie es zunächst als [Inhaltspaket](#get-the-content-pack-for-this-sample), [PBIX-Datei](#get-the-pbix-file-for-this-sample) oder [Excel-Arbeitsmappe](#get-the-excel-workbook-for-this-sample) herunterladen.
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Abrufen des Inhaltspakets für dieses Beispiel
 
 1. Öffnen Sie den Power BI-Dienst (app.powerbi.com), melden Sie sich an, und öffnen Sie den Arbeitsbereich, in dem Sie das Beispiel speichern möchten.
+
+   Wenn Sie nicht über eine Power BI Pro-Lizenz verfügen, können Sie das Beispiel in Ihrem Arbeitsbereich speichern.
 
 2. Wählen Sie in der linken unteren Ecke **Daten abrufen** aus.
 
@@ -135,8 +139,8 @@ Wir sehen uns nun zwei Teammitglieder genauer an und ermitteln, welche Erkenntni
 1. Wählen Sie links unter **Executive** Andrews Namen aus, um die Berichtsseite zu filtern und nur Daten für Andrew anzuzeigen:
 
    * Werfen Sie einen Blick auf den KPI, indem Sie Andrews **Revenue Status (Total Year)** (Umsatzstatus (gesamtes Jahr)) ansehen: Dieser ist grün, er erzielt also gute Ergebnisse.
-   * Im Diagramm **Revenue % Variance to Budget by Month and Executive** (Umsatzabweichung in Prozent vom Budget nach Monat und Führungskraft) ist zu sehen, dass Andrew bis auf einen Einbruch im Februar insgesamt gute Ergebnisse erzielt. Seine wichtigste Region ist „East“ (Osten), und er bearbeitet 49 Kunden und fünf von sieben Produkten. Sein Bruttogewinn in Prozent ist weder der höchste noch der niedrigste.
-   * Aus dem Diagramm **RevenueTY and Revenue % Var to Budget by Month** (Jahresumsatz und Umsatzabweichung in Prozent vom Budget nach Monat) ist ein stetiger, gleichmäßiger Gewinn zu erkennen. Wenn Sie jedoch nach dem Rechteck für **Central** in der Struktur für die Region filtern, stellen Sie fest, dass Andrew nur im März und nur in Indiana Umsatz macht. Ist das Absicht, oder sollten Sie das näher untersuchen?
+   * Im Diagramm **Revenue % Variance to Budget by Month and Executive** (Umsatzabweichung in Prozent vom Budget nach Monat und Führungskraft) ist zu sehen, dass Andrew bis auf einen Einbruch im Februar gute Ergebnisse erzielt. Seine wichtigste Region ist „East“ (Osten), und er bearbeitet 49 Kunden und fünf von sieben Produkten. Sein Bruttogewinn in Prozent ist weder der höchste noch der niedrigste.
+   * Aus dem Diagramm **RevenueTY and Revenue % Var to Budget by Month** (Jahresumsatz und Umsatzabweichung in Prozent vom Budget nach Monat) ist ein stetiger, gleichmäßiger Gewinn zu erkennen. Wenn Sie jedoch nach dem Rechteck für **Central** in der Struktur für die Region filtern, stellen Sie fest, dass Andrew nur im März und nur in Indiana Umsatz macht. Ist dieser Trend beabsichtigt, oder sollten Sie das näher untersuchen?
 
 2. Jetzt machen wir mit Valery weiter. Wählen Sie unter **Executive** Valerys Namen aus, um die Berichtsseite zu filtern und nur Daten für Valery anzuzeigen. 
 
@@ -205,5 +209,5 @@ Wir sehen uns die Branche „Distribution“ an.
 ## <a name="next-steps-connect-to-your-data"></a>Nächste Schritte: Herstellen einer Verbindung mit den Daten
 In dieser Umgebung können Sie sicher experimentieren, da Sie die Änderungen nicht speichern müssen. Wenn Sie sie speichern, können Sie jederzeit wieder auf **Daten abrufen** klicken, um ein neues Exemplar dieses Beispiels herunterzuladen.
 
-Wir hoffen, diese Tour hat Ihnen gezeigt, wie Power BI-Dashboards, Q&A und Berichte Ihnen Einblicke in Kundendaten geben können. Jetzt liegt es an Ihnen – stellen Sie Verbindungen mit Ihren eigenen Daten her. Mit Power BI können Sie Verbindungen mit einer Vielzahl von Datenquellen herstellen. Weitere Informationen finden Sie unter [Erste Schritte mit dem Power BI-Dienst](service-get-started.md).
+Wir hoffen, diese Tour hat Ihnen gezeigt, wie Power BI-Dashboards, das Fragen- und Antwortenmodul und Berichte Ihnen Einblicke in Beispieldaten geben können. Jetzt liegt es an Ihnen – stellen Sie Verbindungen mit Ihren eigenen Daten her. Mit Power BI können Sie Verbindungen mit einer Vielzahl von Datenquellen herstellen. Weitere Informationen finden Sie unter [Erste Schritte mit dem Power BI-Dienst](service-get-started.md).
 

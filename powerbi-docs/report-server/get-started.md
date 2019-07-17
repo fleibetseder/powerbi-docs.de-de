@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: 37751117853c8bca686585992108c006c6c76b70
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 59913e5d17d15dad8729cd5c96582d09f708c30a
+ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187486"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791828"
 ---
 # <a name="what-is-power-bi-report-server"></a>Was ist der Power BI-Berichtsserver?
 
@@ -24,7 +24,7 @@ Der Power BI-Berichtsserver ist ein lokaler Berichtsserver mit einem Webportal, 
 ![Webportal von Power BI-Berichtsserver](media/get-started/power-bi-report-server-overview.png)
 
 ## <a name="comparing-power-bi-report-server"></a>Vergleichen im Power BI-Berichtsserver 
-Zwischen dem Power BI-Berichtsserver sowie SQL Server Reporting Services und Power BI-Onlinedienst gibt es Parallelen. Wie Power BI-Dienst, Power BI-Berichtsserver hostet den Power BI-Berichte (. Pbix-Datei) paginierte Berichte und Excel-Dateien (. BERICHTSDEFINITIONSSPRACHE, RDL). Wie Reporting Services ist Power BI-Berichtsserver lokal aus. Power BI Report Server-Funktionen stellen eine Obermenge der Reporting Services: alles, was im Reporting Services, Möglichkeiten mit Power BI-Berichtsserver, zusammen mit der Unterstützung für Power BI-Berichte. Weitere Informationen finden Sie unter [Vergleich zwischen Power BI-Berichtsserver und Power BI-Dienst](compare-report-server-service.md).
+Zwischen dem Power BI-Berichtsserver sowie SQL Server Reporting Services und Power BI-Onlinedienst gibt es Parallelen. Wie der Power BI-Dienst hostet der Power BI-Berichtsserver Power BI-Berichte (PBIX), Excel-Dateien und paginierte Berichte (RDL). Wie Reporting Services ist der Power BI-Berichtsserver lokal. Der Power BI-Berichtsserver ist Reporting Services übergeordnet: Sie können mit dem Power BI-Berichtsserver alle Aktionen durchführen, die Sie auch mit Reporting Services durchführen können. Außerdem unterstützt er Power BI-Berichte. Weitere Informationen finden Sie unter [Vergleich zwischen Power BI-Berichtsserver und Power BI-Dienst](compare-report-server-service.md).
 
 ## <a name="licensing-power-bi-report-server"></a>Lizenzieren des Power BI-Berichtsservers
 Der Power BI-Berichtsserver ist über zwei verschiedene Lizenzen verfügbar: [Power BI Premium](../service-premium-what-is.md) und [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions) mit Software Assurance. Mit einer Power BI Premium-Lizenz können Sie eine hybride, gemischte Cloud/Lokal-Bereitstellung erstellen.  
@@ -48,14 +48,14 @@ Sie erstellen Power BI-Berichte (PBIX) mit der für den Berichtsserver optimiert
 
 Ein Power BI-Bericht stellt eine Ansicht eines Datenmodells aus verschiedenen Perspektiven dar, wobei die aus dem Datenmodell gewonnenen verschiedenen Ergebnisse und Erkenntnisse als Visualisierungen angezeigt werden.  Ein Bericht kann eine einzelne Visualisierung, aber auch mehrere mit Visualisierungen gefüllte Seiten enthalten. Je nach Ihrer Rolle können Sie Berichte lesen und durchsuchen oder sie für andere Benutzer erstellen.
 
-Erfahren Sie mehr über [installieren Microsoft Power BI Desktop](install-powerbi-desktop.md).
+Hier finden Sie weitere Informationen zum [Installieren von Microsoft Power BI Desktop](install-powerbi-desktop.md).
 
 ## <a name="paginated-reports"></a>Paginierte Berichte
 Paginierte Berichte (RDL) sind Berichte im Dokumentstil mit Visualisierungen, in denen Tabellen horizontal und vertikal erweitert werden, um alle darin enthaltenen Daten anzuzeigen, nach Bedarf von Seite zu Seite. Diese sind ideal zum Generieren von zu druckenden Dokumenten mit festem Layout und perfektem Aussehen, wie z.B. PDF- und Word-Dateien. 
 
 ![Paginierte Berichte im Power BI-Berichtsserver](media/get-started/paginated-reports.png)
 
-Sie können paginierte Berichte mit erstellen [Berichts-Generator](https://docs.microsoft.com/sql/reporting-services/report-builder/report-builder-in-sql-server-2016) oder Berichts-Designer in [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt).
+Sie können mit dem [Berichts-Generator](https://docs.microsoft.com/sql/reporting-services/report-builder/report-builder-in-sql-server-2016) oder Berichts-Designer in [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt) paginierte Berichte erstellen.
 
 ## <a name="reporting-services-mobile-reports"></a>Mobile Reporting Services-Berichte
 Mobile Berichte stellen eine Verbindung mit lokalen Daten her und haben ein dynamisches Layout, das sich an verschiedene Geräte und die verschiedenen Möglichkeiten anpasst, diese zu halten. Sie erstellen Sie mit dem Publisher für mobile Berichte von Microsoft SQL Server.

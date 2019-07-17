@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 06/27/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 992524d3467ebe9bb130b3c61476301ab2bc563c
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: a871a7475dd8282f9ce63646c371182548504357
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67409187"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67568135"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Verwalten von Power BI im Verwaltungsportal
 
@@ -50,7 +50,7 @@ Das Portal umfasst neun Registerkarten. In den verbleibenden Abschnitten dieses 
 
 ## <a name="usage-metrics"></a>Nutzungsmetriken
 
-Mithilfe der **Nutzungsmetriken** können Sie die Power BI-Nutzung für Ihre Organisation überwachen. Außerdem können Sie darüber feststellen, welche Benutzer und Gruppen in Power BI für Ihre Organisation am aktivsten sind.
+Mithilfe der **Nutzungsmetriken** können Sie die Power BI-Nutzung für Ihre Organisation überwachen. Außerdem können Sie darüber feststellen, welche Benutzer und Gruppen in Power BI für Ihre Organisation am aktivsten sind. 
 
 > [!NOTE]
 > Beim ersten Zugriff auf das Dashboard oder beim Anzeigen des Dashboards nach einem längeren Zeitraum wird zunächst wahrscheinlich ein Ladebildschirm angezeigt, während das Dashboard geladen wird.
@@ -82,6 +82,40 @@ Im Folgenden sehen Sie, was in den einzelnen Kacheln angezeigt wird:
 Der zweite Abschnitt zeigt dieselben Informationen basierend auf Gruppen an. So können Sie sehen, welche Gruppen in Ihrer Organisation besonders aktiv sind und welche Art von Inhalten sie verwenden.
 
 Anhand dieser Informationen gewinnen Sie wichtige Erkenntnisse zur Verwendung von Power BI in Ihrer Organisation. Außerdem können Sie ermitteln, welche Benutzer und Gruppen in Ihrer Organisation besonders aktiv sind.
+
+## <a name="control-usage-metrics"></a>Steuern von Nutzungsmetriken
+
+Berichte zu Nutzungsmetriken sind ein Feature, das Power BI- oder Office 365-Administratoren aktivieren oder deaktivieren können. Administratoren können präzise steuern, welche ihrer Benutzer Zugriff auf Nutzungsmetriken haben. Sie sind standardmäßig für alle Benutzer in der Organisation **eingeschaltet**.
+
+Die Administratoren können außerdem entscheiden, ob Inhaltsautoren benutzerspezifische Daten in den Nutzungsmetriken sehen können. 
+
+Details zu den eigentlichen Berichten finden Sie unter [Überwachen von Nutzungsmetriken für Power BI-Dashboards und Berichte](service-usage-metrics.md).
+
+### <a name="usage-metrics-for-content-creators"></a>Nutzungsmetriken für Inhaltsersteller
+
+1. Wählen Sie im Verwaltungsportal **Mandanteneinstellungen** > **Nutzungsmetriken für Inhaltsersteller** aus.
+
+    ![Mandanteneinstellungen für Nutzungsmetriken im Verwaltungsportal](media/service-admin-portal/power-bi-admin-usage-metrics.png)
+
+1. Nutzungsmetriken aktivieren (oder deaktivieren) > **Übernehmen**.
+
+    ![Nutzungsmetriken aktiviert](media/service-usage-metrics/power-bi-tenant-settings-updated.png)
+
+
+### <a name="per-user-data-in-usage-metrics"></a>Benutzerspezifische Daten in Nutzungsmetriken
+
+Die benutzerspezifischen Daten sind standardmäßig für die Nutzungsmetriken aktiviert, und die Kontoinformationen des Inhaltsnutzers sind im Bericht zu den Nutzungsmetriken enthalten. Wenn Sie diese Informationen für einige oder alle Benutzer nicht miteinbeziehen möchten, deaktivieren Sie das Feature für angegebene Sicherheitsgruppen oder eine gesamte Organisation. Die Kontoinformationen werden im Bericht dann als *Unnamed* (Unbenannt) angezeigt.
+
+![Benutzerspezifische Nutzungsdaten](media/service-admin-portal/power-bi-admin-per-user-usage-data.png)
+
+### <a name="delete-all-existing-usage-metrics-content"></a>Löschen aller vorhandenen Inhalte von Nutzungsmetriken
+
+Beim Deaktivieren von Nutzungsmetriken für die gesamte Organisation können Administratoren darüber hinaus eine oder beide Optionen auswählen:
+
+- **Alle vorhandenen Inhalte von Nutzungsmetriken löschen**, um alle vorhandenen Berichte und Dashboardkacheln zu löschen, die mit den Berichten und Datasets der Nutzungsmetriken erstellt wurden. Durch diese Option wird jeglicher Zugriff auf Nutzungsmetriken für alle Benutzer der Organisation entfernt, die diese möglicherweise bereits nutzen. 
+- **Alle vorhandenen benutzerbezogenen Daten im aktuellen Inhalt von Nutzungsmetriken löschen**: Diese Option entfernt den Zugriff auf benutzerspezifische Daten für alle Benutzer in der Organisation, die bereits mit diesen arbeiten. 
+
+Gehen Sie umsichtig vor, da das Löschen vorhandener Nutzungsmetriken und benutzerspezifischen Metriken nicht rückgängig gemacht werden kann.
 
 ## <a name="users"></a>Benutzer
 

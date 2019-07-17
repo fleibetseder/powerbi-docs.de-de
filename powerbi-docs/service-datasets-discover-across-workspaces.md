@@ -7,15 +7,15 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 99769b78060756c557223dd366da550ad3e11056
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: f8229c74a233d8bc44370380bf635527506194f0
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461279"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567456"
 ---
 # <a name="create-reports-based-on-datasets-from-different-workspaces-preview"></a>Erstellen von Berichten auf Grundlage von Datasets aus anderen Arbeitsbereichen (Vorschau)
 
@@ -51,7 +51,7 @@ Auf diese Weise können Mitglieder des Arbeitsbereichs erkennen, welche Berichte
 
 ## <a name="find-an-endorsed-dataset"></a>Suchen eines empfohlenen Datasets
 
-Es gibt zwei Arten von empfohlenen Datasets. Datasetbesitzer können ein Dataset, das sie Ihnen empfehlen möchten, *höher stufen*. Der Power BI-Mandantenadministrator kann Experten in Ihrer Organisation benennen, die Datasets für die allgemeine Verwendung *zertifizieren* können. Sowohl für höher gestufte als auch für zertifizierte Datasets werden *Badges* angezeigt, die Sie bei der Suche nach einem Dataset und in der Liste der Datasets in einem Arbeitsbereich sehen können. 
+Es gibt zwei Arten von empfohlenen Datasets. Datasetbesitzer können ein Dataset, das sie Ihnen empfehlen möchten, *höher stufen*. Außerdem kann der Power BI-Mandantenadministrator Experten in Ihrer Organisation benennen, die Datasets für die allgemeine Verwendung *zertifizieren* können. Sowohl für höher gestufte als auch für zertifizierte Datasets werden *Badges* angezeigt, die Sie bei der Suche nach einem Dataset und in der Liste der Datasets in einem Arbeitsbereich sehen können. Der Name der Person, die ein Dataset zertifiziert hat, wird während der Datasetermittlung in einer QuickInfo angezeigt; zeigen Sie mit der Maus auf die Bezeichnung **Zertifiziert**, dann sehen Sie den Namen.
 
 - Im Power BI-Dienst: **Daten abrufen** > **Veröffentlichte Datasets**.
 - In Power BI Desktop: **Daten abrufen** > **Power BI-Datasets**.

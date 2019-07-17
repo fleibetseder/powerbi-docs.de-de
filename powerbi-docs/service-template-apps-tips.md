@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/26/2019
 ms.author: tebercov
-ms.openlocfilehash: 59d581697091df68df827ec699c8999a6993daef
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: 5e34601c3ebacb3cfd8a4a5ddeb282756d0f700b
+ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67408361"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791825"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tipps für die Erstellung von Vorlagen-Apps in Power BI
 
@@ -126,6 +126,7 @@ Vorlagen-Apps können auf AppSource veröffentlicht werden – befolgen Sie dies
 
 * Achten Sie darauf, eine Vorlagen-App mit ansprechenden Beispieldaten zu erstellen, die der installierenden Person helfen zu verstehen, was die App kann (leerer Bericht und leeres Dashboard sind nicht erwünscht).
 Vorlagen-Apps unterstützen Apps, die nur Beispieldaten enthalten; achten Sie darauf, das Kontrollkästchen „Statisch“ zu aktivieren. [Weitere Informationen](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Im Allgemeinen können nur Anwendungen mit nützlichen Funktionen zur allgemeinen Verwendung in AppSource genehmigt werden. Anwendungen mit Daten als Beispielinhalt müssen entweder einen Wert als Anleitung oder einen statistischen Wert besitzen.
 * Halten Sie Anweisungen für das Validierungsteam bereit, die Anmeldeinformationen und Parameter enthalten, die für das Herstellen der Verbindung mit Daten erforderlich sind.
 * Die Anwendung muss in Power BI und in Ihrem CPP-Angebot ein App-Symbol enthalten. [Weitere Informationen](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
 * Landing Page muss konfiguriert sein. [Weitere Informationen](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
