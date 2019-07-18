@@ -1289,8 +1289,6 @@
           href: service-gateway-onprem-indepth.md
         - name: Lokales Datengateway (persönlicher Modus)
           href: service-gateway-personal-mode.md
-        - name: Verwalten von Benutzern und Administratoren
-          href: service-gateway-manage-admins.md
         - name: Verwalten von Datenquellen
           items:
             - name: Verwalten von Datenquellen
