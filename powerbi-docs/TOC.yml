@@ -723,10 +723,6 @@
               href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
             - name: Problembehandlung für Kachelfehler
               href: refresh-troubleshooting-tile-errors.md
-            - name: Problembehandlung für das lokale Datengateway
-              href: service-gateway-onprem-tshoot.md
-            - name: Problembehandlung für Power BI Gateway – Personal
-              href: service-admin-troubleshooting-power-bi-personal-gateway.md
             - name: Problembehandlung bei „In Excel analysieren“
               href: desktop-troubleshooting-analyze-in-excel.md
             - name: 'Fehler: Wir haben in Ihrer Excel-Arbeitsmappe keine Daten gefunden'
@@ -1279,38 +1275,38 @@
   items:
     - name: Übersicht
       items:
-        - name: Was sind Power BI-Gateways?
-          href: service-gateway-getting-started.md
-    - name: Lernprogramme
-      items:
-        - name: Herstellen einer Verbindung mit SQL Server-Daten
-          href: service-gateway-sql-tutorial.md
+        - name: Was ist ein lokales Datengateway?
+          href: service-gateway-onprem.md
     - name: Konzepte
       items:
         - name: Leitfaden zur Bereitstellung eines Datengateways
           href: service-gateway-deployment-guidance.md
         - name: On-premises data gateway – Häufig gestellte Fragen
-          href: service-gateway-onprem-faq.md
+          href: service-gateway-power-bi-faq.md
     - name: Vorgehensweise
       items:
-        - name: Installieren von Gateways
-          href: service-gateway-install.md
-        - name: Gateways verwalten
-          href: service-gateway-manage.md
-        - name: Überwachen der Gatewayleistung
-          href: service-gateway-performance-monitoring.md
-        - name: Verwalten der Enterprisedatenquelle – Analysis Services
-          href: service-gateway-enterprise-manage-ssas.md
-        - name: Verwalten der Enterprisedatenquelle – SAP HANA
-          href: service-gateway-enterprise-manage-sap.md
-        - name: Verwalten der Enterprisedatenquelle – SQL
-          href: service-gateway-enterprise-manage-sql.md
-        - name: Verwalten der Datenquelle – Oracle
-          href: service-gateway-onprem-manage-oracle.md
-        - name: Verwalten der Enterprisedatenquelle – Import/Geplante Aktualisierung
-          href: service-gateway-enterprise-manage-scheduled-refresh.md
-        - name: Zusammenführen von lokalen und Clouddatenquellen
-          href: service-gateway-mashup-on-premises-cloud.md
+        - name: Ausführliche Informationen zum lokalen Datengateway
+          href: service-gateway-onprem-indepth.md
+        - name: Lokales Datengateway (persönlicher Modus)
+          href: service-gateway-personal-mode.md
+        - name: Verwalten von Benutzern und Administratoren
+          href: service-gateway-manage-admins.md
+        - name: Verwalten von Datenquellen
+          items:
+            - name: Verwalten von Datenquellen
+              href: service-gateway-data-sources.md
+            - name: Verwalten der Enterprisedatenquelle – Analysis Services
+              href: service-gateway-enterprise-manage-ssas.md
+            - name: Verwalten der Enterprisedatenquelle – SAP HANA
+              href: service-gateway-enterprise-manage-sap.md
+            - name: Verwalten der Enterprisedatenquelle – SQL
+              href: service-gateway-enterprise-manage-sql.md
+            - name: Verwalten der Datenquelle – Oracle
+              href: service-gateway-onprem-manage-oracle.md
+            - name: Verwalten der Enterprisedatenquelle – Import/Geplante Aktualisierung
+              href: service-gateway-enterprise-manage-scheduled-refresh.md
+            - name: Zusammenführen von lokalen und Clouddatenquellen
+              href: service-gateway-mashup-on-premises-cloud.md
         - name: Einmaliges Anmelden aktivieren (SSO)
           items:
             - name: 'Einmaliges Anmelden (SSO): Übersicht'
@@ -1321,24 +1317,16 @@
               href: service-gateway-sso-kerberos-resource.md
             - name: 'Einmaliges Anmelden (SSO): SAML'
               href: service-gateway-sso-saml.md
-        - name: Konfigurierung von Proxyeinstellungen
-          href: service-gateway-proxy.md
-        - name: Hochverfügbarkeitscluster für lokale Datengateways
-          href: service-gateway-high-availability-clusters.md
-        - name: Lokales Datengateway
-          href: service-gateway-onprem.md
-        - name: Ausführliche Informationen zum lokalen Datengateway
-          href: service-gateway-onprem-indepth.md
-        - name: Lokales Datengateway (persönlicher Modus)
-          href: service-gateway-personal-mode.md
-        - name: Benutzerdefinierte Connectors
-          href: service-gateway-custom-connectors.md
-        - name: Problembehandlung für das lokale Datengateway
+        - name: Problembehandlung für das Gateway
           href: service-gateway-onprem-tshoot.md
+        - name: Problembehandlung für das Gateway (persönlicher Modus)
+          href: service-admin-troubleshooting-power-bi-personal-gateway.md
+        - name: Verwenden benutzerdefinierter Connectors
+          href: service-gateway-custom-connectors.md
     - name: Ressourcen
       items:
         - name: Monatliche Gatewayupdates
-          href: service-gateway-monthly-updates.md
+          href: 'https://review.docs.microsoft.com/data-integration/gateway/service-gateway-monthly-updates?branch=master'
 - name: Verwaltung
   items:
     - name: Übersicht
