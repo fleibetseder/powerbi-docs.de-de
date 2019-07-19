@@ -110,7 +110,7 @@ Dieses Problem können Sie beheben, indem Sie „oauth2/authorize/“ aus der Au
 
 ### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>Authentifizierung schlägt mit AADSTS70002 oder AADSTS50053 fehl
 
-** _(AADSTS70002: Fehler beim Überprüfen der Anmeldeinformationen. AADSTS50053: Sie haben zu oft versucht, sich mit einem falschen Benutzernamen oder Kennwort anzumelden.)_ **
+** _(AADSTS70002: Fehler beim Überprüfen der Anmeldeinformationen. AADSTS50053: Sie haben zu oft versucht, sich mit einem falschen Benutzernamen oder Kennwort anzumelden.)_**
 
 Wenn Sie Power BI Embedded verwenden und die direkte Authentifizierung mit Azure AD einsetzen, erhalten Sie beim Anmelden Meldungen wie die folgende: ***error:unauthorized_client,error_description:AADSTS70002: Fehler beim Überprüfen der Anmeldeinformationen. AADSTS50053: Sie haben zu oft versucht, sich mit einer falschen Benutzer-ID oder einem falschen Kennwort anzumelden***. Dies liegt daran, dass die direkte Authentifizierung seit dem 14 Juni 2018 nicht mehr verwendet wird.
 
@@ -162,7 +162,7 @@ Um den Fehler zu ermitteln, führen Sie die Schritte unten aus.
 
 ### <a name="aadsts90094-the-grant-requires-admin-permission"></a>AADSTS90094: Die Erteilung erfordert eine Administratorberechtigung.
 
-**_Symptome:_ **<br>
+**_Symptome:_**<br>
 Wenn ein Benutzer ohne Administratorrechte versucht, sich zum ersten Mal bei einer Anwendung anzumelden und seine Einwilligung zu erteilen, erhält er einen der folgenden Fehler:
 
 * ConsentTest benötigt Berechtigung zum Zugriff auf Ressourcen in Ihrer Organisation, die nur ein Administrator gewähren kann. Bitten Sie einen Administrator, Berechtigungen für diese App zu erteilen, bevor Sie sie verwenden.
@@ -172,10 +172,10 @@ Wenn ein Benutzer ohne Administratorrechte versucht, sich zum ersten Mal bei ein
 
 Ein Administrator kann sich anmelden und die Einwilligung gewähren.
 
-**_Grundursache:_ **<br>
+**_Grundursache:_**<br>
 Das Einwilligen des Benutzers ist für den Mandanten deaktiviert.
 
-**_Es gibt mehrere Lösungen:_ **
+**_Es gibt mehrere Lösungen:_**
 
 *Aktivieren Sie die Benutzereinwilligung für den gesamten Mandanten (alle Benutzer, alle Anwendung)*
 
