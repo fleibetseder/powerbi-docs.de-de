@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/31/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 68e21e14227aff538c56951249edbddc249d68eb
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: 0ef74a776e7220477a36d652ce1a48ebbf60c267
+ms.sourcegitcommit: 850e7883e21190151684e32f4d957beecd08e959
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66497972"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "68362710"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Überwachen von Premium-Kapazitäten über die App
 
@@ -41,7 +41,7 @@ Warten Sie einen Augenblick. Das Installieren und Aktualisieren der Metriken dau
 
 Klicken Sie auf **Einstellungen** > **Datasets** > **Power BI Premium-Kapazitätsmetriken** > **Aktualisierungsverlauf**. 
 
-![Aktualisierungsverlauf in den Einstellungen](media/settings-refresh-history.png)
+![Aktualisierungsverlauf in den Einstellungen](media/service-admin-premium-monitor-capacity/settings-refresh-history.png)
 
 Die letzte Aktualisierung wird angezeigt. Wenn Sie auf **Aktualisierungsverlauf** klicken, werden geplante und abrufbare Aktualisierungen angezeigt.
 

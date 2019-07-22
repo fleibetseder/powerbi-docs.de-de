@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 06/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 7cd2c7acbec9b8d21aeb78cbb159df2a46b12564
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: 903883290def07ee6467dbebab1c7b31dec80b74
+ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67409787"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68342180"
 ---
 # <a name="add-a-filter-to-a-report-in-power-bi"></a>Hinzufügen eines Filters zu einem Bericht in Power BI
 
 Dieser Artikel erläutert, wie Sie einem Bericht in Power BI einen Seiten-, Visualisierungs-, Berichts- oder Drillthroughfilter hinzufügen. Die Beispiele in diesem Artikel stammen aus dem Power BI-Dienst. Die dargestellten Schritte sind fast identisch mit denen in Power BI Desktop.
 
-**Wussten Sie schon?** Power BI umfasst eine neue Filteroberfläche, die sich zurzeit in der Vorschau befindet. Erfahren Sie mehr über die [neue Filteroberfläche in Power BI-Berichten](power-bi-report-filter-preview.md).
+**Wussten Sie schon?** Power BI umfasst eine neue Filteroberfläche, die sich zurzeit in der Vorschau befindet. Erfahren Sie mehr über die [neue Filteroberfläche in Power BI-Berichten](power-bi-report-filter.md).
 
 ![Neue Filteroberfläche](media/power-bi-report-add-filter/power-bi-filter-reading.png)
 
@@ -171,7 +171,7 @@ Im Folgenden wird beschrieben, wie der Drillthroughfilter funktioniert.
 
 [Filter und Hervorhebungen in Berichten](power-bi-reports-filters-and-highlighting.md)
 
-[Filtertypen in Power BI-Berichten](power-bi-report-filter-types.md)
+[Verschiedene Filtertypen in Power BI-Berichten](power-bi-report-filter-types.md)
 
 Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
 

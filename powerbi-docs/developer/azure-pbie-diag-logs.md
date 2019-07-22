@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
-ms.openlocfilehash: 695d1f219b3438f07125447db04aad3ba971683a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: dc1a034a062ca07fd9f31a847378913fd7ee4002
+ms.sourcegitcommit: 76fadf20c1e19ec43aa8f9c5a5e909b567419ef6
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61385381"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68289844"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Diagnoseprotokollierung für Power BI Embedded in Azure
 
@@ -22,7 +22,6 @@ Mit [Diagnoseprotokollen für Azure-Ressourcen](https://docs.microsoft.com/azure
 Die Diagnose ermöglicht einige Szenarien wie etwa Folgende:
 
 * Erkennung von Abfragen mit langer Ausführungszeit oder problematische Abfragen
-* Erkennung von Fehlern, wenn der Grenzwert der Kapazität erreicht wird
 * Ableitung von [Kapazitätsmetriken](https://powerbi.microsoft.com/blog/power-bi-developer-community-april-update/)
 * Nachverfolgen der Nutzung von bestimmten Datasets
 
@@ -127,9 +126,6 @@ Die Kategorie „Engine“ weist die Ressource an, die folgenden Ereignisse zu p
 | JobID | 0 | Auftrags-ID für den Status. |
 | ObjectID | 464 | Objekt-ID |
 | ObjectType | 802012 | ObjectType |
-| ObjectName | SalesLT-Kunde | ObjectName |
-| ObjectPath | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527.Model.SalesLT Customer | Objektpfad. Eine durch Trennzeichen getrennte Liste übergeordneter Elemente, beginnend mit dem übergeordneten Element des Objekts. |
-| ObjectReference | <Object><Table>SalesLT-Kunde</Table><Model>Model</Model><Database>5eaa550e-06ac-4adf-aba9-dbf0e8fd1527</Database></Object> | Objektverweis. Für alle übergeordneten Elemente als XML kodiert, mit Tags zur Beschreibung des Objekts. |
 | EndTime | 2018-04-06T18:30:11.9137358Z | Der Zeitpunkt, zu dem das Ereignis beendet wurde. |
 | Dauer | 0 | Die für das Ereignis benötigte Zeit (in Millisekunden). |
 | SessionType | Benutzer | Sitzungstyp (welche Entität hat den Vorgang verursacht). |
@@ -138,7 +134,6 @@ Die Kategorie „Engine“ weist die Ressource an, die folgenden Ereignisse zu p
 | Severity | 0 | Schweregrad einer Ausnahme. |
 | Vorgang erfolgreich | 1 | 1 = Erfolgreiche Ausführung 0 = Fehlerhafte Ausführung (z.B. gibt der Wert „1“ die erfolgreiche Ausführung einer Berechtigungsüberprüfung und „0“ einen Fehler bei dieser Überprüfung an). |
 | Fehler (Error) | 0 | Fehlernummer eines bestimmten Ereignisses. |
-| TextData | SET DC_KIND=\"AUTO\";  SELECT  [SalesLT Customer (464)].[rowguid (606)] AS [SalesLT Customer (464)$rowguid (606)]  FROM [SalesLT Customer (464)]; [Estimated size (volume marshalling bytes): 850 6800] | Dem Ereignis zugeordnete Textdaten. |
 | ConnectionID | 3 | Eindeutige Verbindungs-ID. |
 | DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | ID des Datasets, in dem die Anweisung des Benutzers ausgeführt wird. |
 | SessionID | 3D063F66-A111-48EE-B960-141DEBDA8951 | Sitzungs-GUID. |
@@ -146,8 +141,7 @@ Die Kategorie „Engine“ weist die Ressource an, die folgenden Ereignisse zu p
 | ClientProcessID | NULL | Die Prozess-ID der Clientanwendung. |
 | ApplicationName | NULL | Der Name der Clientanwendung, die die Verbindung mit dem Server erstellt hat. |
 | CapacityName | pbi641fb41260f84aa2b778a85891ae2d97 | Der Name der Power BI Embedded-Kapazitätsressource. |
-| RequestParameters |  |  |
-| RequestProperties |  |  |
+
 
 ### <a name="allmetrics"></a>AllMetrics
 

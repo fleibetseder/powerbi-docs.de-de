@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/27/2019
-ms.openlocfilehash: 1bee1b31b5e264ec8cd092a90484fc20866db0b3
-ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.openlocfilehash: af3c22197e4d6783787bd72c9cf010bf6db64bc1
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66823372"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270974"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Häufig gestellte Fragen zu Power BI Embedded
 
@@ -95,7 +95,7 @@ Im Folgenden finden Sie eine unvollständige Liste der Unterschiede zwischen den
 
 * Verwenden Sie dazu das [Power BI Admin-Portal](../service-admin-portal.md#power-bi-embedded).
 
-* Herunterladen der [Metrik-App](https://review.docs.microsoft.com/power-bi/service-admin-premium-monitor-capacity) in Power BI.
+* Herunterladen der [Metrik-App](https://docs.microsoft.com/power-bi/service-admin-premium-monitor-capacity) in Power BI.
 
 * Mithilfe von [Azure-Diagnoseprotokollierung](azure-pbie-diag-logs.md).
 
