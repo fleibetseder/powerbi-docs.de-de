@@ -1,6 +1,6 @@
 ---
-title: Bereitstellen und Verwalten von Power BI Premium-Kapazitäten
-description: Verstehen Sie das volle Potenzial von Power BI Premium, und erfahren Sie, wie entwerfen, bereitstellen, überwachen und Behandeln von skalierbaren Lösungen.
+title: Bereitstellen und Verwalten von Power BI Premium Kapazitäten
+description: Machen Sie sich mit den möglichen Power BI Premium vertraut, und erfahren Sie, wie Sie skalierbare Lösungen entwerfen, bereitstellen, überwachen und beheben.
 author: mgblythe
 ms.author: mblythe
 manager: kfile
@@ -10,55 +10,55 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/06/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: fbae2a8b577c52ae597d44bd6ea9913510c4c65c
-ms.sourcegitcommit: dc73e932c9982a4aa0b0ec5297fb9f94c6156bc5
+ms.openlocfilehash: 783f82ecd5c6dea5c26b096b8b1bfcffe388864b
+ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66518562"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68391451"
 ---
-# <a name="deploying-and-managing-power-bi-premium-capacities"></a>Bereitstellen und Verwalten von Power BI Premium-Kapazitäten
+# <a name="deploying-and-managing-power-bi-premium-capacities"></a>Bereitstellen und Verwalten von Power BI Premium Kapazitäten
 
-**Zusammenfassung:** Power BI Premium bietet eine einheitlichere Leistung, Unterstützung für große Datenmengen und die Flexibilität, eine einheitliche Self-Service- und Enterprise-BI-Plattform für alle Benutzer in Ihrer Organisation. Diese Stufe 300 technischen Whitepaper wurde speziell für Power BI-Administratoren und Autoren von Inhalten und Herausgeber geschrieben. Es zielt darauf ab, um diese das volle Potenzial von Power BI Premium besser zu verstehen und zu entwerfen, bereitstellen, überwachen und Behandeln von skalierbaren Lösungen erläutert.
+**Zusammenfassung:** Power BI Premium bietet eine konsistente Leistung, Unterstützung für große Datenvolumes und die Flexibilität einer einheitlichen Self-Service-und Enterprise-BI-Plattform für alle Personen in Ihrer Organisation. Dieses technische Whitepaper der Ebene 300 wurde speziell für Power BI-Administratoren und Inhaltsautoren und-Herausgeber geschrieben. Es soll Ihnen helfen, das Potenzial von Power BI Premium zu verstehen und zu erläutern, wie Sie skalierbare Lösungen entwerfen, bereitstellen, überwachen und beheben können.
 
-**Autor:** [Peter Myers](https://www.linkedin.com/in/peterjsmyers) (Data Platform MVP und unabhängige BI-Experte mit bitweise Lösungen)
+**Schrift** [Peter Myers](https://www.linkedin.com/in/peterjsmyers) (Data Platform MVP und unabhängiger BI-Experte mit bitweisen Lösungen)
 
-**Technische Reviewer:** Adam Saxton, Akshai Mirchandani, Bhavik Merchant, David Magar, Josh Caplan, Michael Blythe, Nimrod Shalit, Olivier Matrat, Swati Gupta
+**Technische Reviewer:** Adam Saxton, akshai spiechandani, bhavik Händler, David Magar, Josh Caplan, Michael Blythe, Nimrod Shalit, Olivier matrat, Swati Gupta
 
-**Gilt für:** Power BI-Dienst, Power BI Premium und Azure Power BI Embedded-Kapazitäten
+**Gilt für:** Power BI-Dienst, Power BI Premium und Azure-Power BI Embedded Kapazität
 
 > [!NOTE]
 > Sie können dieses Whitepaper speichern oder ausdrucken, indem Sie in Ihrem Browser erst auf **Drucken** und dann auf **Als PDF speichern** klicken.
 
 ## <a name="introducing-power-bi"></a>Einführung in Power BI
 
-Powerbi ist eine Business Analytics-Dienst entwickelt, um Einblicke zu bieten, die schnelle und fundierte Entscheidungen zu ermöglichen. Seit seiner Veröffentlichung 2015 schnell geworden häufig genutzte Dienste verwendet, um Lösungen für Unternehmen auf die größten Unternehmen.
+Power BI ist ein Business Analytics-Dienst, der für die Bereitstellung von Erkenntnissen konzipiert ist, die schnelle, fundierte Entscheidungen ermöglichen Seit seiner Veröffentlichung in 2015 ist es schnell ein beliebter Dienst, der zum Bereitstellung von Lösungen für die kleinsten Organisationen der größten Unternehmen genutzt wird.
 
-Es wird auf zwei Arten verfügbar gemacht: Als Cloud-Dienst sowie eine lokale berichterstellung mit dem Namen **Power BI-Berichtsserver**. \[[1](#endnote-01)\]
+Sie wird auf zwei Arten verfügbar gemacht: Als clouddienst und als lokale Berichterstattungs Lösung mit dem Namen **Power BI-Berichtsserver**. \[[1](#endnote-01)\]
 
-Power BI, wie ein Cloud-Dienst-Software-as-a-Service (SaaS) \[ [2](#endnote-02)\]. Es stellt einen Satz von Diensten und Anwendungen, mit denen Unternehmen entwickeln, bereitstellen, verwalten, Lösungen zum Überwachen ihres Unternehmens dar.
+Power BI als clouddienst ist Software-as-a-Service (SaaS) \[ [2](#endnote-02)\]. Es stellt eine Reihe von Diensten und Anwendungen dar, die es Organisationen ermöglichen, Lösungen zum Überwachen Ihres Geschäfts zu entwickeln, bereitzustellen, zu verwalten und freizugeben.
 
-Es ist nicht die Absicht dieses Whitepaper, um eine umfassende Beschreibung der Power BI-Dienst bereitzustellen. Stattdessen konzentriert Sie sich auf Themen mit Relevanz für den Antragsteller des Power BI Premium. Allgemeine Informationen zu Power BI, finden Sie in der umfassenden [Power BI-Dokumentation](service-admin-premium-multi-geo.md). Eine ausführlichere Erläuterung von Power BI-Dienst mit dem Schwerpunkt auf das gut funktionierenden unternehmensbereitstellungen zu erreichen, finden Sie in der umfassenden [Planen einer Unternehmensbereitstellung von Power BI](https://aka.ms/pbienterprisedeploy) Whitepaper.
+Dieses Whitepaper ist nicht in der Absicht, eine umfassende Beschreibung des Power BI-Dienst bereitzustellen. Er konzentriert sich stattdessen auf Themen, die für den Betreff von Power BI Premium relevant sind. Allgemeine Informationen zu Power BI finden Sie in der Dokumentation zu umfassenden [Power BI](service-admin-premium-multi-geo.md). Eine ausführlichere Erläuterung der Power BI-Dienst, die sich auf das erreichen von leistungsstarken Unternehmens Bereitstellungen konzentriert, finden Sie im Whitepaper zur umfassenden [Planung einer Power BI Unternehmens Bereitstellung](https://aka.ms/pbienterprisedeploy) .
 
-Im Rahmen dieses Whitepapers des Antragstellers in diesem Abschnitt führt und beschreibt die Kapazitäten, Power BI-Inhaltstypen, Modell Speichermodi und Lizenzierung. Ein Überblick über diese Themen ist wichtig, erfolgreich bereitstellen und Verwalten von Power BI Premium.
+Im Rahmen des Themas dieses Whitepaper werden in diesem Abschnitt Kapazitäten, Power BI von Inhaltstypen, Modell Speicher Modi und Lizenzierung vorgestellt und beschrieben. Ein Verständnis dieser Themen ist für die erfolgreiche Bereitstellung und Verwaltung von Power BI Premium von entscheidender Bedeutung.
 
 ### <a name="capacities"></a>Funktionen
 
-**Kapazitäten** sind ein Power BI-Kernkonzept, die einem Satz von Ressourcen (Speicher, Prozessor und Arbeitsspeicher), die zum Hosten und Bereitstellen von Power BI Content. Kapazitäten werden entweder freigegeben oder dediziert. Ein **gemeinsam genutzte Kapazität** ist zwar mit anderen Microsoft-Kunden freigegeben, eine **Dedicated-Kapazität** wird vollständig auf einen einzelnen Kunden ein Commit ausgeführt. Dedizierte Kapazitäten entstehen in der [Premium-Kapazitäten](#premium-capacities) Thema.
+**Kapazitäten** sind ein Kern Power BI Konzept, das einen Satz von Ressourcen (Speicher, Prozessor und Arbeitsspeicher) darstellt, die zum Hosten und Bereitstellen Power BI Inhalts verwendet werden. Kapazitäten sind entweder freigegeben oder dediziert. Eine frei **gegebene Kapazität** wird für andere Microsoft-Kunden freigegeben, während eine **Dedizierte Kapazität** für einen einzelnen Kunden vollständig ausgeführt wird. Dedizierte Kapazitäten werden im Thema [Premium-Kapazitäten](#premium-capacities) eingeführt.
 
-Führen gemeinsam genutzte Kapazität Workloads auf Computerressourcen mit anderen Kunden freigegeben. Wie die Kapazität Ressourcen freigeben muss, werden Einschränkungen auferlegt, um sicherzustellen, dass "Fair Play", z. B. die maximale Modellgröße (1 GB) und die maximale aktualisierungshäufigkeit pro Tag (acht Mal pro Tag).
+Unter freigegebene Kapazität werden Workloads auf computeressourcen ausgeführt, die gemeinsam mit anderen Kunden verwendet werden. Da die Kapazität Ressourcen gemeinsam nutzen muss, werden Einschränkungen auferlegt, um "Fairplay" zu gewährleisten, z. b. die maximale Modell Größe (1 GB) und die maximale tägliche Aktualisierungshäufigkeit (acht Mal pro Tag).
 
 ### <a name="workspaces"></a>Arbeitsbereiche
 
-Power BI-Arbeitsbereiche in Kapazitäten befinden, und bilden sie Sicherheit, Zusammenarbeit und der Bereitstellung. Jeder Power BI-Benutzer hat einen persönlichen Arbeitsbereich, bekannt als **Arbeitsbereich**. Zusätzliche Arbeitsbereiche können erstellt werden, um die Zusammenarbeit und die Bereitstellung zu ermöglichen, und diese werden als bezeichnet **App-Arbeitsbereiche**. Standardmäßig werden – einschließlich der persönlichen Arbeitsbereiche - Arbeitsbereiche in gemeinsam genutzten Kapazität erstellt.
+Power BI Arbeitsbereiche befinden sich innerhalb von Kapazitäten und stellen Sicherheits-, Zusammenarbeits-und Bereitstellungs Container dar. Jeder Power BI-Benutzer verfügt über einen persönlichen Arbeitsbereich, der als **Mein Arbeitsbereich** bezeichnet wird. Zusätzliche Arbeitsbereiche können erstellt werden, um die Zusammenarbeit und die Bereitstellung zu ermöglichen, und diese werden als **App-Arbeitsbereiche** bezeichnet. Arbeitsbereiche, einschließlich persönlicher Arbeitsbereiche, werden standardmäßig in der gemeinsam genutzten Kapazität erstellt.
 
-### <a name="power-bi-content-types"></a>Power BI-Inhaltstypen
+### <a name="power-bi-content-types"></a>Power BI von Inhaltstypen
 
-Zur Einführung von Power BI Premium Themen ist es wichtig, um eine umfassende Erläuterung der Power BI-Architektur sowie grundlegende Inhaltstypen zu starten.
+Um Power BI Premium Themen einzuführen, ist es wichtig, mit einer umfassenden Erörterung der Power BI Architektur zu beginnen, einschließlich grundlegender Inhaltstypen.
 
-Alle Power BI-Inhalte gespeichert und verwaltet Arbeitsbereiche sind Container für Power BI-Inhalten. Jeder Power BI-Benutzer hat ihre eigenen persönlichen Arbeitsbereich, aber die allgemeine bewährte Methode ist die Erstellung von app-Arbeitsbereiche. App-Arbeitsbereiche ermöglichen Co-ownership von Inhalt und die Möglichkeit, Inhalte gemeinsam bearbeiten. Sie bieten auch die Möglichkeit zum Bereitstellen und Verteilen von Inhalten für große Zielgruppen wie apps.
+Alle Power BI Inhalt werden innerhalb von Arbeitsbereichen gespeichert und verwaltet, die Container für Power BI Inhalte sind. Jeder Power BI Benutzer verfügt über einen eigenen persönlichen Arbeitsbereich, aber die allgemeine bewährte Vorgehensweise besteht darin, App-Arbeitsbereiche zu erstellen. App-Arbeitsbereiche ermöglichen den gemeinsamen Besitz von Inhalten sowie die Möglichkeit, an Inhalten zusammenzuarbeiten. Außerdem haben Sie die Möglichkeit, Inhalte als apps bereitzustellen und an große Zielgruppen zu verteilen.
 
-Die folgende Power BI-Inhalt wird in Arbeitsbereichen gespeichert:
+Der folgende Power BI Inhalt wird in Arbeitsbereichen gespeichert:
 
 - Dataflows
 - Datasets
@@ -68,810 +68,812 @@ Die folgende Power BI-Inhalt wird in Arbeitsbereichen gespeichert:
 
 #### <a name="dataflows"></a>Dataflows
 
-Power BI-Datenflüsse können Unternehmen die Vereinheitlichung von Daten aus unterschiedlichen Quellen. Sie können betrachtet werden als Daten vorbereitet und für die Verwendung in Modellen bereitgestellt werden, aber sie können nicht direkt als Quelle für die berichterstellung verwendet werden. Nutzen sie die umfassende Sammlung von datenconnectors für Microsoft, aktivieren die Erfassung von Daten aus lokalen und cloudbasierten Datenquellen.
+Power BI Datenflüsse helfen Organisationen dabei, Daten aus unterschiedlichen Quellen zu vereinheitlichen. Sie können als Daten vorbereitet und bereitgestellt werden, die für die Verwendung in Modellen bereitgestellt werden. Sie können jedoch nicht direkt als Quelle für die Berichterstellung verwendet werden. Sie nutzen die umfangreiche Sammlung von Microsoft-datenconnectors und ermöglichen so die Erfassung von Daten aus lokalen und cloudbasierten Datenquellen.
 
-Datenflüsse können nur erstellt und in der app-Arbeitsbereiche verwaltet werden, und sie werden als Entitäten in Common Data Model (CDM) in Azure Data Lake-Speicher Gen2 gespeichert. In der Regel sind sie mit geplanter Aktualisierung regelmäßig um aktuelle Daten zu speichern.
+Dataflows können nur in App-Arbeitsbereichen erstellt und verwaltet werden, und Sie werden als Entitäten im Common Data Model (CDM) in Azure Data Lake Storage Gen2 gespeichert. In der Regel werden Sie so geplant, dass Sie regelmäßig aktualisiert werden, um aktuelle Daten zu speichern.
 
-Weitere Informationen finden Sie in der [in Power BI (Vorschau) für die Vorbereitung von Self-service-](service-dataflows-overview.md) Dokument.
+Weitere Informationen finden Sie [im Dokument Self-Service-Daten Vorbereitung in Power BI (Vorschau)](service-dataflows-overview.md) .
 
 #### <a name="datasets"></a>Datasets
 
-Power BI-Datasets darstellen, eine Datenquelle für berichterstellungs- und Visualisierungstools bereit. Es gibt viele Arten von Datasets, die von erstellt:
+Power BI Datasets stellen eine Datenquelle dar, die für die Berichterstellung und Visualisierung bereit ist. Es gibt viele Arten von Datasets, die von erstellt werden:
 
-- Herstellen einer Verbindung zu einem vorhandenen Datenmodell, die nicht in einer Power BI-Kapazität gehostet wird
-- Hochladen einer Power BI Desktop-Datei, die ein Modell enthält.
-- Hochladen einer Excel-Arbeitsmappe (mit einer oder mehreren Excel-Tabellen und/oder Datenmodellen Arbeitsmappe) oder das Hochladen einer Datei (COMMA-Separated Value)
-- Mithilfe von Power BI-Dienst zum Erstellen einer Push-streaming oder Hybrid-streamingdataset
+- Herstellen einer Verbindung mit einem vorhandenen Datenmodell, das nicht in einer Power BI Kapazität gehostet wird
+- Hochladen einer Power BI Desktop-Datei, die ein Modell enthält
+- Hochladen einer Excel-Arbeitsmappe (mit einer oder mehreren Excel-Tabellen und/oder einem arbeitsmappendatenmodell) oder Hochladen einer CSV-Datei (Comma-Separated Value)
+- Verwenden des Power BI-Dienst zum Erstellen eines Push-, Streaming-oder Hybrid Streaming-Datasets
 
-Mit Ausnahme von streamingdatasets \[ [3](#endnote-03)\], das Dataset stellt ein Datenmodell nutzt die ausgereifte-modellierungstechnologien von Analysis Services dar.
+Mit Ausnahme der streamingdatasets \[ [3](#endnote-03)\]stellt das Dataset ein Datenmodell dar, das die ausgereiften Modellierungs Technologien von Analysis Services nutzt.
 
-Beachten Sie, dass in der Dokumentation manchmal die Terminologie von Datasets und Modelle austauschbar sind. Im Allgemeinen vom Standpunkt der Power BI-Dienst wird bezeichnet als eine **Dataset** , und aus Sicht der Entwicklung wird es als bezeichnet ein **Modell**. Im Rahmen dieses Whitepapers bedeutet, dass sie dieselbe Sache.
+Beachten Sie, dass die Terminologien-Datasets und-Modelle in der-Dokumentation manchmal austauschbar sind. Im Allgemeinen wird Sie aus einer Power BI-Dienst Perspektive als **DataSet** bezeichnet, und aus Sicht der Entwicklung wird Sie als **Modell**bezeichnet. Im Zusammenhang mit diesem Whitepaper haben Sie viel zu tun.
 
-##### <a name="externally-hosted-models"></a>Extern gehosteten Modellen
+##### <a name="externally-hosted-models"></a>Extern gehostete Modelle
 
-Herstellen einer Verbindung mit einem extern gehostete Modell umfasst die Installation der [On-Premises Data Gateway](service-gateway-onprem.md) zur Verbindung mit SQL Server Analysis Services, lokal oder VM-gehostete Infrastructure-as-a-Service (IaaS). Azure Analysis Services ist einen Gateway nicht erforderlich. Dieses Szenario ist häufig sinnvoll, wenn Investitionen Modell vorhanden sind, in der Regel, die Teil von Enterprise Data Warehouse (EDW) bilden. Dadurch, dass Power BI zum Ausführen einer **Live-Verbindung** (LC) mit Analysis Services und führt Sie dies durch das Erzwingen von Berechtigungen mithilfe der Identität des Benutzers der Power BI-Bericht. Für SQL Server Analysis Services werden sowohl für mehrdimensionale Modelle (Cubes) als auch für tabellarische Modelle unterstützt. Wie in der folgenden Abbildung gezeigt wird, übergibt ein Live-Verbindung-Dataset Abfragen, der extern gehosteten Modellen.
+Zum Herstellen einer Verbindung mit einem extern gehosteten Modell müssen Sie das [lokale Daten Gateway](service-gateway-onprem.md) installieren, um eine Verbindung mit SQL Server Analysis Services herzustellen, unabhängig davon, ob es sich um eine lokale oder eine VM-gehostete Infrastructure-as-a-Service (IaaS) handelt. Azure Analysis Services erfordert kein Gateway. Dieses Szenario ist häufig sinnvoll, wenn vorhandene Modell Investitionen vorhanden sind, die in der Regel einen Teil des Enterprise Data Warehouse (EDW) bilden. Sie ermöglicht es Power BI, eine **Live Verbindung** (LC) auszuführen, um zu Analysis Services. Dies geschieht durch Erzwingen von Daten Berechtigungen mithilfe der Identität des Power BI Berichts Benutzers. Für SQL Server Analysis Services werden sowohl mehrdimensionale Modelle (Cubes) als auch tabellarische Modelle unterstützt. Wie in der folgenden Abbildung gezeigt, übergibt ein Live Connection-DataSet Abfragen an extern gehostete Modelle.
 
-![Ein Dataset für die Live-Verbindung übergibt Abfragen, der extern gehosteten Modellen](media/whitepaper-premium-deployment/live-connection-dataset.png)
+![Ein Live Connection-DataSet übergibt Abfragen an extern gehostete Modelle.](media/whitepaper-premium-deployment/live-connection-dataset.png)
 
-##### <a name="power-bi-desktop-developed-models"></a>Power BI Desktop entwickelten Modelle
+##### <a name="power-bi-desktop-developed-models"></a>Power BI Desktop entwickelte Modelle
 
-Power BI Desktop - einer Clientanwendung vorgesehen, die für die Entwicklung von Power BI - können Sie ein Modell zu entwickeln, die effektiv ist von einem tabellarischen Modell von Analysis Services verwendet werden. Modelle können entwickelt werden, durch das Importieren von Daten aus der Datenflüsse, die dann mit anderen Datenquellen integriert werden können. Während die Angaben darüber, wie die Modellierung erreicht werden kann außerhalb des Bereichs dieses Whitepaper, es ist wichtig zu verstehen, dass es gibt drei verschiedene Typen – oder Modi – von Modellen, die mithilfe von Power BI Desktop entwickelt werden können. Diese Modi bestimmen, ob die Daten in das Modell importiert werden oder ob sie in der Datenquelle bleibt. Die drei Modi sind: Importieren, DirectQuery und zusammengesetzte. Eine vollständige Erläuterung der einzelnen Modi wird in behandelt die [Modell Speichermodi](#model-storage-modes) Thema.
+Power BI Desktop: eine Client Anwendung, die für die Power BI Entwicklung vorgesehen ist, kann verwendet werden, um ein Modell zu entwickeln, das tatsächlich ein Analysis Services tabellarisches Modell ist. Modelle können durch Importieren von Daten aus Daten Flüssen entwickelt werden, die anschließend in andere Datenquellen integriert werden können. Obwohl die Besonderheiten, wie die Modellierung erreicht werden kann, den Rahmen dieses Whitepaper sprengen, ist es wichtig zu verstehen, dass es drei verschiedene Typen oder Modi gibt, die mithilfe von Power BI Desktop entwickelt werden können. Diese Modi bestimmen, ob Daten in das Modell importiert werden oder ob Sie in der Datenquelle verbleiben. Die drei Modi sind: Import, directquery und Composite. Eine vollständige Erläuterung der einzelnen Modi finden Sie im Thema [Modell Speicher Modi](#model-storage-modes) .
 
-Extern gehostete Ansichtsmodelle und Modelle, die in Power BI Desktop entwickelten können erzwingen, Row-Level Security (RLS), um Daten zu beschränken, die für einen bestimmten Benutzer abgerufen werden können. Beispielsweise können Benutzer, die zur Sicherheitsgruppe Vertriebsmitarbeiter zugewiesen nur als Berichtsdaten für den Verkauf Regionen anzeigen, die sie zugewiesen sind. RLS-Rollen können dynamisch oder statisch sein. **Dynamische Rollen** Filter durch den Benutzer des Berichts, während **statische Rollen** gelten die gleichen Filter für alle Benutzer der Rolle zugewiesen.
+Extern gehostete Modelle und Modelle, die in Power BI Desktop entwickelt wurden, können Sicherheit auf Zeilenebene (Row-Level Security, RLS) erzwingen, um die Daten einzuschränken, die für einen bestimmten Benutzer abgerufen werden können. Beispielsweise können Benutzer, denen die Sicherheitsgruppe "Salespeople" zugewiesen ist, nur Berichtsdaten für die Verkaufs Regionen anzeigen, denen Sie zugewiesen sind. RLS-Rollen können dynamisch oder statisch sein. **Dynamische Rollen** Filtern nach dem Berichts Benutzer, während **statische Rollen** dieselben Filter für alle Benutzer anwenden, die der Rolle zugewiesen sind.
 
-##### <a name="excel-workbook-models"></a>Excel-Arbeitsmappe Datenmodelle
+##### <a name="excel-workbook-models"></a>Excel-arbeitsmappenmodelle
 
-Erstellen von Datasets basierend auf der Excel-Arbeitsmappen oder CSV-führt Dateien die automatische Erstellung eines Modells. Excel-Tabellen und CSV-Daten werden importiert werden, um Tabellen im Modell zu erstellen, während ein Datenmodell von Excel-Arbeitsmappe ausgetauscht werden wird, um ein Power BI-Modell erstellen. In allen Fällen werden die Dateidaten in ein Modell importiert.
+Das Erstellen von Datasets auf der Grundlage von Excel-Arbeitsmappen oder CSV-Dateien führt zur automatischen Erstellung eines Modells. Excel-Tabellen und CSV-Daten werden importiert, um Modell Tabellen zu erstellen, während ein Excel-arbeitsmappendatenmodell zum Erstellen eines Power BI Modells übertragen wird. In allen Fällen werden Datei Daten in ein Modell importiert.
 
-Unterscheidungen können dann über Power BI-Datasets bereitgestellt werden, die Modelle darstellen:
+Unterschiede können dann über Power BI Datasets, die Modelle darstellen, vorgenommen werden:
 
-- Sie werden entweder im Power BI-Dienst gehostet oder extern von Analysis Services gehostet werden
-- Sie können die importierte Daten speichern oder sie können Pass-Through-Abfrage-Anforderungen ausgeben, zugrunde liegenden Datenquellen oder eine Kombination beider
+- Sie werden entweder in der Power BI-Dienst gehostet oder extern von Analysis Services
+- Sie können importierte Daten speichern oder Pass-Through-Abfrage Anforderungen an zugrunde liegende Datenquellen oder eine Kombination aus beidem ausgeben.
 
-Hier ist eine Zusammenfassung der wichtige Fakten zur Power BI-Datasets, die Modelle darstellen:
+Im folgenden finden Sie eine Zusammenfassung wichtiger Fakten zu Power BI Datasets, die Modelle darstellen:
 
-- SQL Server Analysis Services gehosteten Modelle erfordern ein Gateway zum Ausführen von LC-Abfragen
-- Power BI-gehosteten Modelle, die Daten importieren
-  - Muss vollständig in den Arbeitsspeicher geladen sein, sodass sie abgefragt werden können
-  - Erfordert die Aktualisierung durch, um die Daten aktuell zu halten und Gateways müssen einbezogen werden, wenn Daten nicht direkt über das Internet zugänglich ist
-- Power BI-gehosteten Modelle, die DirectQuery (DQ)-Speichermodus verwenden erfordern Konnektivität zu den Quelldaten an. Wenn das Modell abgefragt wird, gibt Power BI Abfragen an den Quelldaten um aktuelle Daten abzurufen. In diesem Modus muss Gateways umfassen, wenn Daten nicht direkt über das Internet zugänglich ist.
-- Modelle können RLS-Regeln, erzwingen die Filter zum Einschränken des Datenzugriffs für bestimmte Benutzer erzwingen.
+- SQL Server Analysis Services gehosteten Modellen erfordert ein Gateway zum Ausführen von LC-Abfragen.
+- Power BI gehostete Modelle, mit denen Daten importiert werden
+  - Muss vollständig in den Arbeitsspeicher geladen werden, damit Sie abgefragt werden können.
+  - Aktualisierung erforderlich, um Daten aktuell zu halten, und muss Gateways umfassen, wenn nicht direkt über das Internet auf Quelldaten zugegriffen werden kann
+- In Power BI gehosteten Modellen, die den directquery-Speicher Modus (DQ) verwenden, ist eine Verbindung mit den Quelldaten erforderlich. Wenn das Modell abgefragt wird, gibt Power BI Abfragen an die Quelldaten aus, um die aktuellen Daten abzurufen. Dieser Modus muss Gateways umfassen, wenn nicht direkt über das Internet auf Quelldaten zugegriffen werden kann.
+- Modelle können RLS-Regeln erzwingen und Filter erzwingen, um den Datenzugriff auf bestimmte Benutzer einzuschränken.
 
-Wenn erfolgreich bereitstellen und Verwalten von Power BI Premium, ist es wichtig, zu verstehen, wo die Modelle gehostet werden, deren Speichermodus, alle Abhängigkeiten von Gateways, die Größe des importierten Daten, Typ und die Häufigkeit zu aktualisieren. Diese können alle einen erheblichen Einfluss auf den Power BI Premium-Ressourcen. Darüber hinaus kann der Mischung der Aspekte des Modellentwurfs selbst einschließlich der Vorbereitung von Datenabfragen und Berechnungen hinzufügen.
+Um Power BI Premium erfolgreich bereitzustellen und zu verwalten, ist es wichtig, zu verstehen, wo Modelle gehostet werden, welchen Speicher Modus, welche Abhängigkeiten von Gateways, die Größe der importierten Daten und den Aktualisierungstyp und die Häufigkeit haben. Diese können alle Power BI Premium Ressourcen erheblich beeinträchtigen. Darüber hinaus kann der Modellentwurf selbst einschließlich der Daten Vorbereitungs Abfragen und-Berechnungen der Mischung der Überlegungen hinzugefügt werden.
 
-Es ist auch wichtig zu verstehen, dass es sich bei Power BI-gehosteten Import Modelle können gemäß Zeitplan aktualisieren oder auf Anforderung von einem Benutzer in Power BI-Dienst ausgelöst.
+Es ist auch wichtig zu verstehen, dass Power BI von gehosteten Import Modellen nach Zeitplan aktualisiert oder bei Bedarf von einem Benutzer im Power BI-Dienst ausgelöst werden können.
 
-Entwerfen von optimierten Modellen wird weiter unten in diesem technischen Artikel in erläutert die [Modelle optimieren](#optimizing-models) Thema.
+Das Entwerfen optimierter Modelle wird weiter unten in diesem technischen Artikel des Themas [Optimierungsmodelle](#optimizing-models) erläutert.
 
 #### <a name="workbooks"></a>Arbeitsmappen
 
-Power BI Arbeitsmappen sind ein Power BI Content \[ [4](#endnote-04)\]. Sie sind Excel-Arbeitsmappen, die in Power BI-Dienst hochgeladen wurden, und sollte nicht mit der hochgeladenen Excel-Arbeitsmappen, die Erstellen von Datasets (Modelle) verwechselt werden. Der Inhaltstyp für die Arbeitsmappe darstellt, eine Verbindung mit einer Arbeitsmappe, die kann entweder in Power BI-Dienst hochgeladen werden oder in einem cloudspeicher auf OneDrive oder SharePoint Online bleiben.
+Power BI Arbeitsmappen sind Power BI Inhaltstyp \[ [4](#endnote-04)\]. Dabei handelt es sich um Excel-Arbeitsmappen, die in den Power BI-Dienst hochgeladen wurden und nicht mit hochgeladenen Excel-Arbeitsmappen verwechselt werden sollten, die Datasets (Modelle) erstellen. Der Inhaltstyp der Arbeitsmappe stellt eine Verbindung mit einer-Arbeitsmappe dar, die entweder in den Power BI-Dienst hochgeladen oder im cloudspeicher auf onedrive oder SharePoint Online verbleiben kann.
 
-Es ist wichtig zu verstehen, dass dieser Inhaltstyp nicht als Datenquelle für Power BI-datenvisualisierungen verfügbar ist. Stattdessen können sie als eine Arbeitsmappe in Power BI-Dienst geöffnet werden mithilfe von Excel Online. Die wichtigsten Absicht dieses Inhaltstyps ist älteren Excel-Arbeitsmappe Berichte im Power BI-Dienst aus zugänglich sein, und seine datenvisualisierungen, Power BI-Dashboards angeheftet werden können.
+Es ist wichtig zu wissen, dass dieser Inhaltstyp nicht als Datenquelle für die Power BI von Datenvisualisierungen verfügbar ist. Stattdessen kann Sie mithilfe von Excel Online als Arbeitsmappe in der Power BI-Dienst geöffnet werden. Der Hauptzweck dieses Inhaltstyps besteht darin, den Zugriff auf ältere Excel-arbeitsmappenberichte innerhalb des Power BI-Dienst zuzulassen und die Datenvisualisierungen an Power BI Dashboards zu binden.
 
-Weitere Informationen finden Sie in der [Abrufen von Daten aus Excel-Arbeitsmappendateien](service-excel-workbook-files.md) Dokument.
+Weitere Informationen finden Sie im Dokument [Get Data from Excel Arbeitsmappendateien](service-excel-workbook-files.md) .
 
 #### <a name="reports"></a>Berichte
 
-Es gibt zwei Arten von Berichten: Power BI-Berichten und paginierten Berichte.
+Es gibt zwei Arten von Berichten: Power BI Berichte und paginierte Berichte.
 
-**Power BI-Berichte** bieten eine interaktive datenvisualisierung Erfahrungen, das mit nur einem einzelnen Dataset verbunden wird. Berichte werden häufig zur Förderung der Benutzereingriffe, sodass sie für die Interaktion mit einem außergewöhnlichen Array von Funktionen, einschließlich Filterung, segmentieren, Filtern und hervorheben, Drillup, Drilldown, Drillthrough, Fragen und Antworten eine natürliche überschreiten Sprache zu hinterfragen, konzentrieren, Seitennavigation, das hervorheben, Anzeigen von Lesezeichen und mehr.
+**Power BI Berichte** bieten eine interaktive Oberfläche für die Datenvisualisierung, die nur eine Verbindung mit einem einzelnen Dataset herstellt. Berichte sind häufig darauf ausgelegt, die Benutzer Teilnahme zu fördern, sodass Sie mit einem außergewöhnlichen Funktionsumfang interagieren können, darunter Filterung, Slicing, Kreuz Filterung und Hervorhebung, Drilldown, Drilldown, Drillthrough, Q & eine natürliche Sprachfrage, Fokus, Seitennavigation, Spotbeleuchtung, Anzeige von Lesezeichen usw.
 
-Im Rahmen dieses Whitepapers, es ist wichtig zu verstehen, wie der Power BI-Architektur, Design und berichtsinteraktionen des Powerbi alle für die Power BI-Dienst-Ressourcen auswirken können:
+Im Zusammenhang mit diesem Whitepaper ist es wichtig zu verstehen, wie sich die Power BI Architektur, Power BI Berichtsentwurf und Benutzerinteraktionen, auf die Power BI-Dienst Ressourcen auswirken können:
 
-- Zum Laden und interagieren mit Berichten, die basierend auf Modellen der importieren, muss das Modell vollständig in den Arbeitsspeicher geladen, (ob in Power BI-Dienst gehostet oder extern gehostet)
-- Jeder Bericht visual gibt eine Abfrage zum Abrufen von Daten durch Abfragen des Modells
-- Filter und Slicer Interaktionen umfassen im Allgemeinen das Abfragen des Modells. Z. B. Ändern der Auswahl der Slicer wird – standardmäßig - erfordern das erneute Laden jedes visuelle Element auf der Seite \[ [5](#endnote-05)\]
-- Power BI-Berichte mit aktuelle Daten können nicht garantiert werden, und möglicherweise muss der Benutzer zum Aktualisieren des Berichts der Berichtsseite und seine Visuals neu laden
-- Benutzer erreichen das Q & ermöglicht sie die eine natürliche Sprache-Funktion, den Entwurf der Power BI-Bericht bereitstellen, Fragen zu stellen und das Dataset stellt dar, ein Modell des Power BI-gehosteten Daten importieren oder ein LC-Dataset, das so konfiguriert, dass Q & A
+- Zum Laden von und interagieren mit Berichten auf der Grundlage von Import Modellen muss das Modell vollständig in den Arbeitsspeicher geladen werden (unabhängig davon, ob es im Power BI-Dienst gehostet oder extern gehostet wird).
+- Jede Berichts Visualisierung gibt eine Abfrage aus, um Daten abzurufen, indem das Modell abgefragt wird.
+- Im Allgemeinen umfassen Filter-und slicerinteraktionen das Abfragen des Modells. Wenn Sie z. b. eine slicerauswahl ändern, muss jedes visuelle Element auf der Seite \[ [5](#endnote-05) erneut geladen werden.\]
+- Power BI Berichte gewährleisten nicht, dass aktuelle Daten angezeigt werden. möglicherweise muss der Benutzer den Bericht aktualisieren, um die Berichtsseite und seine visuellen Elemente neu zu laden.
+- Benutzer können mit der Q & eine Funktion in natürlicher Sprache zusammenarbeiten, um Fragen zu stellen. Sie können die Power BI Berichtsentwürfe bereitstellen, und das DataSet stellt ein Power BI gehostete Datenimport Modell oder ein LC-DataSet dar, das zum Aktivieren von Q & A konfiguriert ist.
 
-**Paginierte Berichte** ermöglicht die Veröffentlichung und das Rendern von Berichten für SQL Server Reporting Services (SSRS) (\*RDL-Format). Wie ihre Namen bereits vermuten lässt, werden die paginierte Berichte häufig verwendet, wenn Anforderungen müssen für den Druck auf einer festen Seitengröße diktieren, oder Variablen Listen mit Daten, die vollständig erweitert werden müssen. Angenommen, eine Rechnung, die für mit mehreren Seiten (anstatt einen Bildlauf in einem visuellen) entwickelt und drucken.
+**Paginierte Berichte** , die das Veröffentlichen und Rendering von SQL Server Reporting Services (SSRS)-\*Berichten (RDL-Format) ermöglichen. Wie der Name bereits vermuten lässt, werden paginierte Berichte häufig verwendet, wenn Anforderungen für das Drucken in eine festgelegte Seitengröße erforderlich sind oder wenn Variablen Listen mit Daten vorhanden sind, die vollständig erweitert werden müssen. Beispielsweise eine Rechnung, die für das Rendering mehrerer Seiten (statt eines Bildlaufs innerhalb eines visuellen Elements) und zum Drucken entworfen wurde.
 
-Geben Sie die beiden unterstützten Typen Wahl für Berichtsautoren, sodass sie den Typ aus, basierend auf Anforderungen, und vorgesehene Verwendung. Im Allgemeinen sind die Power BI-Berichten ideal für interaktive Funktionen, damit der Benutzer kennen lernen und entdecken Erkenntnisse aus Daten, während Sie paginierte Berichte parametergesteuerten Seitenlayouts besser geeignet sind.
+Die beiden unterstützten Berichts Typen bieten die Wahl für Berichts Autoren, sodass Sie den Typ basierend auf den Anforderungen und der vorgesehenen Verwendung auswählen können. Im Allgemeinen sind Power BI Berichte ideal für interaktive Benutzeroberflächen, die es dem Benutzer ermöglichen, Einblicke in Daten zu untersuchen und zu ermitteln, während paginierte Berichte für Parameter gesteuerte Seitenlayouts besser geeignet sind.
 
-Unabhängig vom Berichtstyp ist es zwingend erforderlich, für die Bereitstellung einer zuverlässige und leistungsfähige benutzererfahrung, erreichen reaktionsfähig berichtsupdates Daten laden und (wenn der Filter oder Parameter geändert werden).
+Unabhängig vom Berichtstyp ist das erzielen von reaktionsfähigen Berichts Lade-und Datenaktualisierungen (wenn Filter oder Parameter geändert werden) zwingend erforderlich, um eine zuverlässige und leistungsfähige Benutzerfunktion bereitzustellen.
 
 #### <a name="dashboards"></a>Dashboards
 
-Power BI-Dashboards dienen zur Überwachung unterstützt und sind Konzept sehr unterscheidet sich von Power BI-Berichten. Dashboards dienen für die Anzeige auf einem einzelnen Bereich zusammengefasst, Werte und datenvisualisierungen in Kacheln auszudrücken. Im Allgemeinen bieten Dashboards weniger Interaktion als Power BI-Berichten mit einigen Dashboard-Designs, die keine Interaktion erwartet. Beispiel: ein für die unbeaufsichtigte-Dashboard auf einem Bildschirm ohne Fingereingabe in einem Serverraum angezeigt. Ein weiterer wichtiger Unterschied ist, dass es sich bei Dashboards Kacheln vorhanden sein können, die Daten aus mehreren Datasets, während ein Power BI melden immer nur auf einem einzelnen Dataset basieren können.
+Power BI Dashboards sind für die Bereitstellung von Überwachungsumgebungen gedacht und unterscheiden sich konzeptionell stark von Power BI Berichten. Dashboards sind für die Anzeige in einem einzelnen Glasbereich konzipiert, um Werte und Datenvisualisierungen in Kacheln auszudrücken. Im Allgemeinen bieten Dashboards weniger Interaktionen als Power BI Berichte, wobei einige dashboardentwürfe keine Interaktion erwarten. Beispielsweise ein unbeaufsichtigtes Dashboard, das auf einem nicht-Touchscreen in einem Serverraum angezeigt wird. Ein weiterer bedeutender Unterschied besteht darin, dass Dashboards Kacheln darstellen können, die Daten aus mehreren Datasets Quellen, während ein Power BI Bericht immer nur auf einem einzelnen Dataset basieren kann.
 
-Es ist wichtig zu verstehen, dass ein Dashboard schnell geladen werden soll, und um die aktuellen Daten (mit dem Power BI-Dienst bezeichnet) auf allen express ein Timeout. Er erreicht dies durch die Zwischenspeicherung von Abfrageergebnissen Kachel, und dies ist für jedes Dashboard. In der Tat müssen sie für jeden Benutzer dazu, die an ein Dashboard zugreifen, die auf Modellen basieren, die dynamische Sicherheit auf Zeilenebene zu erzwingen.
+Es ist wichtig zu verstehen, dass ein Dashboard so konzipiert ist, dass es schnell geladen wird und die aktuellsten Daten (die Power BI-Dienst) jederzeit ausgedrückt werden. Dies wird erreicht, indem Kachel Abfrageergebnisse zwischengespeichert werden, und dies erfolgt für jedes Dashboard. Tatsächlich muss dies für jeden Benutzer durchzuführen sein, der Zugriff auf ein Dashboard hat, das auf Modellen basiert, die dynamische RLS erzwingen.
 
-Power BI-Dienst wird automatisch Dashboard Abfrage Caches aktualisiert, sobald Power BI-gehosteten importmodelle aktualisiert werden. Im Fall von LC und DQ-Modelle hat der Besitzer des Datasets ein Maß an Steuerung, wie oft Power BI-Dienst für den Cache aktualisiert die häufig als alle 15 Minuten oder eher selten, z.B. als einmal pro Woche konfiguriert werden können. Beachten Sie, dass LC Abfrage Cacheupdates zuerst Modellmetadaten, um zu bestimmen, ob eine Aktualisierung des Modells seit der letzten cacheaktualisierung stattgefunden hat, und es nicht fortgesetzt wird, den Cache zu aktualisieren, wenn eine Aktualisierung nicht da aufgetreten abfragt. Diese Überprüfung ist nicht möglich, dass DQ-Modelle, und daher Cacheupdates erfolgt, ob die Daten oder nicht geändert wurden.
+Der Power BI-Dienst aktualisiert dashboardabfragecaches sofort nach der Aktualisierung von Power BI gehosteten Import Modellen. Im Fall von LC-und DQ-Modellen hat der Besitzer des Datasets einen gewissen Grad an Kontrolle darüber, wie oft das Power BI-Dienst den Cache aktualisiert, der so häufig als alle 15 Minuten konfiguriert werden kann oder so selten wie einmal pro Woche. Beachten Sie, dass LC-Abfragecache Updates zuerst Modell Metadaten Abfragen, um zu bestimmen, ob eine Modell Aktualisierung seit dem letzten Cache Update stattgefunden hat, und dass der Cache nicht mehr aktualisiert wird, wenn eine Aktualisierung nicht durchgeführt wurde. Diese Überprüfung ist für DQ-Modelle nicht möglich, sodass Cache Aktualisierungen unabhängig davon erfolgen, ob sich die Quelldaten geändert haben.
 
-Dashboard Abfragecache aktualisiert basierend auf DQ und LC-Modelle können auf Power BI-Dienst-Ressourcen und Daten aus externen Quellen deutlich beeinträchtigen. Erwägen Sie ein Dashboard mit 20 Kacheln, die alle basierend auf einem Azure Analysis Services-Modell erzwingt, dass die dynamische Sicherheit auf Zeilenebene, einmal pro Stunde aktualisiert wird und, die dieses Dashboard ist mit 100 Benutzern geteilt werden soll. Wenn der Dataset konfiguriert ist, um einmal pro Stunde zu aktualisieren, würde dies mindestens 2000 (20 x 100) LC Abfragen führen. Dies kann das Laden einer riesigen platzieren, auf dem Power BI-Dienst und die Daten aus externen Quellen, und es kann auch Grenzwerte für die verfügbaren Ressourcen überschreiten. Capacity-Ressourcen und Einschränkungen gelten der [Kapazitätsknoten](#capacity-nodes) Thema.
+Dashboard-Abfragecache Updates, die auf DQ-und LC-Modellen basieren, können sich erheblich auf Power BI-Dienst Ressourcen und externe Datenquellen auswirken. Angenommen, ein Dashboard mit 20 Kacheln basiert auf einem Azure Analysis Services Modell, das dynamische RLS erzwingt und jede Stunde aktualisiert wird, und dass dieses Dashboard für 100 Benutzer freigegeben wird. Wenn das DataSet stündlich für die Aktualisierung konfiguriert ist, führt dies zu mindestens 2000 (20 x 100) LC-Abfragen. Dies kann zu einer enormen Belastung der Power BI-Dienst und der externen Datenquellen und auch zu den Grenzwerten für die verfügbaren Ressourcen werden. Kapazitäts Ressourcen und-Grenzwerte werden im Thema [Kapazitäts Knoten](#capacity-nodes) beschrieben.
 
-Benutzer können mit einem Dashboard auf verschiedene Weise interagieren, die Power BI-Dienst-Ressourcen erforderlich sind. Genauer gesagt können sie:
+Benutzer können auf verschiedene Weise mit einem Dashboard interagieren, das Power BI-Dienst Ressourcen erfordert. Sie haben insbesondere folgende Möglichkeiten:
 
-- Auslösen einer Aktualisierung von dashboardkacheln,, was eine bedarfsgesteuerte Aktualisierung alle zugehörigen gehostete Power BI-Import-Datenmodellen führen kann
-- Diskutieren Sie mit Q & A natürlicher Sprache-Feature, Sie (mit der Dashboardentwurf ermöglicht es, und das Dataset ist ein Modell des Power BI-gehosteten Daten importieren oder ein LC-Dataset, das so konfiguriert, dass Q & A) Fragen
-- Verwenden Sie das Feature "Schnelleinblicke" Power BI haben Erkenntnisse aus einer zugrunde liegenden Dataset und Antworten mit visuellen Elementen, die anzeigen und beschrieben werden (vorausgesetzt, dass die Kachel basiert auf einem Dataset, das Modell für Power BI-gehosteten Daten importieren)
-- Konfigurieren von Warnungen für dashboardkacheln, dass Power BI-Dienst zum Vergleichen von Schwellenwerten, die als Werte sind möglich: möglicherweise so häufig wie stündlichen - Kacheln und Benutzer zu benachrichtigen, wenn Schwellenwerte überschritten werden (vorausgesetzt, dass die Kachel einen einzelnen numerischen Wert zeigt und basiert auf einer DataSet, das Modell für Power BI-gehosteten Daten importieren)
+- Löst eine Aktualisierung von dashboardkacheln aus. Dies kann zu einer bedarfsgesteuerten Aktualisierung aller zugehörigen Power BI-gehosteten Datenimport Modelle führen.
+- Wenden Sie sich an das Q & eine Funktion in natürlicher Sprache, um Fragen zu stellen. (die Bereitstellung des dashboardentwurfs ermöglicht es, und das DataSet ist ein Power BI gehostetes Datenimport Modell oder ein LC-DataSet, das zum Aktivieren von Q & A
+- Verwenden Sie die Quick Insights Funktion, um Power BI Einblicke aus einem zugrunde liegenden DataSet zu erhalten und mit visuellen Elementen zu antworten, in denen Sie angezeigt und beschrieben werden (vorausgesetzt, die Kachel basiert auf einem DataSet, das Power BI-gehosteten Datenimport Modell ist).
+- Konfigurieren Sie Warnungen auf dashboardkacheln, die erfordern, dass der Power BI-Dienst Schwellenwerte mit Kachel Werten vergleicht (möglicherweise so oft wie stündlich) und Benutzer benachrichtigt werden, wenn Schwellenwerte überschritten werden (vorausgesetzt, die Kachel zeigt einen einzelnen numerischen Wert an und basiert auf einem DataSet, das Power BI-gehosteten Datenimport Modell ist)
 
-### <a name="model-storage-modes"></a>Modell-Speichermodi
+### <a name="model-storage-modes"></a>Modell Speicher Modi
 
-Denken Sie daran, dass es sich bei Power BI Desktop ermöglicht die Entwicklung eines Modells in einem von drei Modi. Es ist wichtig zu verstehen, die Gründe für die einzelnen datenspeichermodus des Modells und mögliche Auswirkungen auf Power BI-Dienst-Ressourcen. In diesem Abschnitt werden alle drei Modi eingeführt. Diese werden noch ausführlicher weiter unten in diesem Whitepaper unter dem Thema Optimieren von Modellen erläutert.
+Denken Sie daran, dass Power BI Desktop das Entwickeln eines Modells in einem von drei Modi ermöglicht. Es ist wichtig, die Gründe für die einzelnen Datenmodell-Speicher Modi und mögliche Auswirkungen auf Power BI-Dienst Ressourcen zu verstehen. In diesem Abschnitt werden alle drei Modi vorgestellt. Diese werden weiter unten in diesem Whitepaper des Themas Optimierungsmodelle ausführlich erläutert.
 
-#### <a name="import-mode"></a>Importmodus
+#### <a name="import-mode"></a>Import Modus
 
-Importmodus ist der am häufigsten verwendete Modus, die zum Entwickeln von Modellen aufgrund der extrem schnellen Leistung mit in-Memory-Abfragen, die Entwurfsflexibilität Modellierer, zur Verfügung und Unterstützung für bestimmte Power BI-Dienst-Funktionen (Q & A, Quick Insights usw..). Es ist der Standardmodus, wenn Sie eine neue Power BI Desktop-Lösung zu erstellen.
+Der Import Modus ist der am häufigsten verwendete Modus zum Entwickeln von Modellen aufgrund der extrem schnellen Leistung im Zusammenhang mit in-Memory-Abfragen, der für Modeller verfügbaren Entwurfs Flexibilität und der Unterstützung spezifischer Power BI-Dienst Funktionen (Q & A, Quick Insights , usw.). Dies ist der Standardmodus beim Erstellen einer neuen Power BI Desktop Lösung.
 
-Es ist wichtig zu verstehen, dass die importierte Daten immer gespeichert ist und die vollständig geladen ist, in den Arbeitsspeicher abgefragt oder aktualisiert werden muss. Im Arbeitsspeicher erzielen einmal importmodelle ultraschnellem Abfrageergebnisse an. Es ist auch wichtig zu verstehen, dass es kein Konzept für ein Modell importieren, die teilweise in den Arbeitsspeicher geladen wird.
+Es ist wichtig zu verstehen, dass importierte Daten immer auf einem Datenträger gespeichert werden und vollständig in den Arbeitsspeicher geladen werden müssen, um abgefragt oder aktualisiert werden zu können. Im Arbeitsspeicher erzielen importmodelle blitzschnelle Abfrageergebnisse. Es ist auch wichtig zu verstehen, dass es kein Konzept für ein Import Modell gibt, das teilweise in den Arbeitsspeicher geladen wird.
 
-Aktualisiert, Daten komprimiert und optimiert, und klicken Sie dann auf dem Datenträger gespeichert, von der VertiPaq-Speicher-Engine. Wenn vom Datenträger in den Arbeitsspeicher geladen wird, ist es möglich, 10 X Komprimierung finden Sie unter, und daher ist es sinnvoll, Sie davon ausgehen, dass ungefähr 1 GB Größe 10 GB an Daten komprimieren kann. Größe des Speichers auf dem Datenträger kann einer Reduzierung der 20 % nach oben dies erreichen. \[[6](#endnote-06)\]
+Bei der Aktualisierung werden die Daten komprimiert und optimiert und dann von der vertibloq-Speicher-Engine auf einem Datenträger gespeichert. Beim Laden von einem Datenträger in den Arbeitsspeicher ist es möglich, die Zehnfache-Komprimierung anzuzeigen. es ist daher sinnvoll zu erwarten, dass 10 GB Quelldaten auf ungefähr 1 GB komprimiert werden können. Die Speichergröße auf dem Datenträger kann eine Verringerung von 20% erreichen. \[[6](#endnote-06)\]
 
-Entwurfsflexibilität kann auf drei verschiedene Arten erreicht werden. Datenmodellierer können Aktionen ausführen:
+Die Entwurfs Flexibilität kann auf drei Arten erreicht werden. Daten Modeller können folgende Aktionen ausführen:
 
-- Integrieren von Daten durch das Zwischenspeichern von Daten aus mehreren Datenquellen – unabhängig vom Typ der Datenquelle und des Formats
-- Nutzen Sie den gesamten Satz von Funktionen von Power Query-Formelsprache (informell als M bezeichnet), beim Erstellen von Abfragen für Daten vorbereiten
-- Den gesamten Satz von Data Analysis Expressions (DAX)-Funktionen zu nutzen, wenn das Modell mit Geschäftslogik, die mit berechneten Spalten, berechnete Tabellen und Maßnahmen erreicht verbessern
+- Integrieren von Daten durch Zwischenspeichern von Daten aus mehreren Datenquellen (unabhängig vom Typ und Format der Datenquelle)
+- Nutzen Sie beim Erstellen von Daten Vorbereitungs Abfragen den gesamten Satz Power Query Formelsprache (als M bezeichnet).
+- Nutzen Sie den gesamten Satz von Data Analysis Expressions (DAX)-Funktionen, wenn Sie das Modell mit Geschäftslogik verbessern, die mit berechneten Spalten, berechneten Tabellen und Measures erzielt wurde.
 
-Wie in der folgenden Abbildung gezeigt, kann ein Modell importieren Daten aus einer beliebigen Anzahl von unterstützten Datenquellentypen integrieren.
+Wie in der folgenden Abbildung gezeigt, kann ein Import Modelldaten aus einer beliebigen Anzahl unterstützter Datenquellen Typen integrieren.
 
-![Ein Modell importieren kann Daten aus einer beliebigen Anzahl von unterstützten Datenquellentypen integrieren.](media/whitepaper-premium-deployment/import-model.png)
+![Ein Import Modell kann Daten aus einer beliebigen Anzahl unterstützter Datenquellen Typen integrieren.](media/whitepaper-premium-deployment/import-model.png)
 
-Zwar gibt es überzeugende Vorteile, die Import-Modellen zugeordnet sind, gibt es jedoch Nachteile zu:
+Obwohl es überzeugende Vorteile im Zusammenhang mit Import Modellen gibt, gibt es auch Nachteile:
 
-- Das gesamte Modell muss auf den Speicher geladen werden, bevor der Power BI das Modell Abfragen können, mit das Druck auf verfügbare Ressourcen platzieren können, wenn Anzahl und Größe von Modellen wachsen
-- Modellieren von Daten ist nur so aktuell wie der neuesten Aktualisierung und daher importmodelle vorzugsweise auf Basis eines Zeitplans aktualisiert werden müssen
-- Eine vollständige Aktualisierung entfernt alle Daten aus allen Tabellen und neu geladen wird, aus der Datenquelle. Dies kann sehr viel Zeit und Ressourcen für Power BI-Dienst und der bzw. den Datenquelle(n) sein. Powerbi verfügt über Unterstützung für die inkrementelle Aktualisierung die Kürzung und Neuladen ganze Tabellen vermeiden kann, und dies wird im behandelt die [Optimizing Power BI-Hosted Modelle](#optimizing-power-bi-hosted-models) Thema.
+- Das gesamte Modell muss in den Arbeitsspeicher geladen werden, bevor Power BI das Modell Abfragen kann. Dadurch kann der Druck auf verfügbare Ressourcen bei Anwachsen der Anzahl und Größe von Modellen entstehen.
+- Modelldaten sind nur so aktuell wie die aktuellste Aktualisierung, weshalb importmodelle aktualisiert werden müssen, vorzugsweise auf der Grundlage eines Zeitplans.
+- Bei einer vollständigen Aktualisierung werden alle Daten aus allen Tabellen entfernt und aus der Datenquelle erneut geladen. Dies kann in Bezug auf die Zeit und die Ressourcen für die Power BI-Dienst und die Datenquellen sehr teuer sein. Power BI bietet Unterstützung für die inkrementelle Aktualisierung, die das Abschneiden und erneute Laden ganzer Tabellen vermeiden kann. Dies wird im Thema [optimieren Power BI gehosteter Modelle](#optimizing-power-bi-hosted-models) beschrieben.
 
-Erfordern importmodelle hinsichtlich Ressource Power BI-Dienst:
+Aus Sicht der Power BI-Dienst Ressource ist für importmodelle Folgendes erforderlich:
 
-- Genügend Arbeitsspeicher zum Laden des Modells bei einer Abfrage oder aktualisiert wird
-- Verarbeiten von Ressourcen und zusätzliche Speicherressourcen zum Aktualisieren von Daten
+- Genügend Arbeitsspeicher zum Laden des Modells, wenn es abgefragt oder aktualisiert wird
+- Verarbeiten von Ressourcen und zusätzlichen Speicherressourcen zum Aktualisieren von Daten
 
-#### <a name="directquery-mode"></a>DirectQuery Mode
+#### <a name="directquery-mode"></a>Directquery-Modus
 
-Im Modus für DirectQuery (DQ) entwickelten Modelle importieren Sie Daten nicht. Stattdessen diese bestehen nur aus Metadaten, die bei abgefragt Probleme native Abfragen an die zugrunde liegenden Datenquelle.
+Modelle, die im directquery-Modus (DQ) entwickelt wurden, importieren keine Daten. Stattdessen bestehen Sie nur aus Metadaten, die beim Abfragen von systemeigenen Abfragen an die zugrunde liegende Datenquelle ausgegeben werden.
 
-![Ein DirectQuery-Modell gibt native Abfragen an die zugrunde liegende Datenquelle](media/whitepaper-premium-deployment/direct-query-model.png)
+![Ein directquery-Modell gibt Native Abfragen an die zugrunde liegende Datenquelle aus.](media/whitepaper-premium-deployment/direct-query-model.png)
 
-Es gibt zwei wesentliche Gründe dafür, erwägen die Entwicklung eines DQ-Modells. Der erste Grund ist, wenn die Datenvolumes zu groß sind – auch, wenn die Verringerung der Methoden angewendet werden – in ein Datenmodell zu laden oder aktualisieren Sie praktisch. Der zweite Grund ist, wenn Berichte und Dashboards müssen das "nahezu in Echtzeit" von Daten, über welche innerhalb der Grenzwerte für die geplante Aktualisierung (48 Mal pro Tag für eine dedizierte Kapazität) erreicht werden kann.
+Es gibt zwei Hauptgründe, ein DQ-Modell zu entwickeln. Der erste Grund ist, dass Datenvolumes zu groß sind, auch wenn Daten Reduzierungs Methoden angewendet werden, um Sie in ein Modell zu laden oder praktisch zu aktualisieren. Der zweite Grund ist, wenn Berichte und Dashboards "Near Real-Time"-Daten liefern müssen, die über die möglichen Anforderungen innerhalb geplanter Aktualisierungs Limits hinausgehen (48 mal pro Tag für eine dedizierte Kapazität).
 
-Es gibt mehrere Vorteile, die DQ-Modellen zugeordnet sind:
+Es gibt mehrere Vorteile, die mit DQ-Modellen verbunden sind:
 
-- Größenbeschränkungen für den Import-Modell werden nicht angewendet.
-- Modelle erfordern keine Aktualisierung
-- Benutzer des Berichts werden die neuesten Daten angezeigt, bei der Interaktion mit dem Berichtsfilter und Slicer, den gesamten Bericht zum Abrufen von aktueller Daten aktualisiert
-- Dashboardkacheln, die bei basierend auf den DQ-Modelle können so häufig wie alle 15 Minuten automatisch aktualisiert.
+- Die Größenbeschränkungen für das Importieren von Modellen gelten nicht.
+- Für Modelle ist keine Aktualisierung erforderlich.
+- Berichts Benutzer sehen die neuesten Daten bei der Interaktion mit Berichts Filtern und Slicern und können den gesamten Bericht aktualisieren, um aktuelle Daten abzurufen.
+- Dashboardkacheln, die auf DQ-Modellen basieren, können automatisch so oft wie alle 15 Minuten aktualisiert werden.
 
-Es gibt jedoch zahlreiche Nachteile und Einschränkungen DQ-Modellen zugeordnet sind:
+Es gibt jedoch zahlreiche Nachteile und Einschränkungen im Zusammenhang mit DQ-Modellen:
 
-- Das Modell muss auf eine unterstützte Datenquelle basieren, und daher eine Datenintegration bereits in der Datenquelle erreicht werden muss. Unterstützte Datenquellen werden relationale und analytische Systeme, mit Unterstützung für viele beliebte Data-Speicher \[ [7](#endnote-07)\].
-- Leistung kann langsam sein, möglicherweise negative Auswirkungen auf, auf dem Power BI-Dienst (Abfragen können sehr CPU-intensiv sein) und für die Datenquelle (die nicht für analytische Abfragen optimiert werden kann)
-- Power Query-Abfragen nicht übermäßig kompliziert, und sind auf M-Ausdrücke und Funktionen, die in nativen Abfragen, die von der Datenquelle verstanden umgesetzt werden können
-- DAX-Funktionen auf diejenigen beschränkt werden, die in nativen Abfragen, die von der Datenquelle verstanden umgesetzt werden können, und es gibt keine Unterstützung für berechnete Tabellen oder integrierten Time Intelligence-Funktionen
-- Standardmäßig fehl Modell Abfragen, die Abrufen von mehr als eine Million Zeilen erforderlich
-- Berichte und Dashboards mit mehreren Visualisierungen können inkonsistente Ergebnisse angezeigt, insbesondere, wenn die Datenquelle "volatile" ist
-- F & A und Schnelleinblicke werden nicht unterstützt.
+- Das Modell muss auf einer einzelnen unterstützten Datenquelle basieren. Daher muss die Datenintegration bereits in der Datenquelle erfolgen. Unterstützte Datenquellen sind relationale und analytische Systeme mit Unterstützung für viele beliebte \[Datenspeicher [7](#endnote-07)\].
+- Die Leistung kann langsam sein und sich möglicherweise negativ auf die Power BI-Dienst auswirken (Abfragen können sehr CPU-intensiv sind) und auf der Datenquelle (die möglicherweise nicht für Analyse Abfragen optimiert ist).
+- Power Query Abfragen können nicht übermäßig komplex sein und sind auf M-Ausdrücke und-Funktionen beschränkt, die in Native Abfragen, die von der Datenquelle gelesen werden, übertragen werden können.
+- DAX-Funktionen sind auf jene beschränkt, die in systemeigene Abfragen, die von der Datenquelle verstanden werden, übertragen werden können. berechnete Tabellen oder integrierte Zeit Intelligenz Funktionen werden nicht unterstützt.
+- Standardmäßig können Modell Abfragen, die mehr als 1 Million Zeilen abrufen müssen, nicht ausgeführt werden.
+- Berichte und Dashboards mit mehreren visuellen Elementen können inkonsistente Ergebnisse anzeigen, insbesondere wenn die Datenquelle flüchtig ist.
+- F & A und Quick Insights werden nicht unterstützt.
 
-Erfordern DQ-Modelle im Hinblick auf Power BI-Dienst-Ressource:
+Aus Sicht der Power BI-Dienst Ressource ist für DQ-Modelle Folgendes erforderlich:
 
-- Minimaler Arbeitsspeicher zum Laden des Modells (nur Metadaten) Wenn sie abgefragt wird
-- Manchmal signifikante Prozessor--Ressourcen, zum Generieren und Verarbeiten von Abfragen an die Datenquelle gesendet
+- Minimaler Arbeitsspeicher zum Laden des Modells (nur Metadaten), wenn es abgefragt wird
+- Manchmal bedeutende Prozessorressourcen zum Generieren und Verarbeiten von Abfragen, die an die Datenquelle gesendet werden
 
-Weitere Informationen finden Sie in der [Verwendung von DirectQuery in Power BI Desktop](desktop-use-directquery.md) Dokument.
+Weitere Informationen finden Sie im Dokument verwenden von directquery [in Power BI Desktop](desktop-use-directquery.md) .
 
-#### <a name="composite-mode"></a>Composite-Modus
+#### <a name="composite-mode"></a>Zusammengesetzter Modus
 
-Die im zusammengesetzten Modus entwickelten Modelle können konfiguriert werden, des Speichern von Modus für die einzelnen Modelltabellen. Aus diesem Grund unterstützt eine Mischung von Import und DQ-Tabellen. Es unterstützt auch berechnete Tabellen (mit DAX definiert) und mehrere DQ-Datenquellen.
+Modelle, die im zusammengesetzten Modus entwickelt wurden, ermöglichen das Konfigurieren des Speicherungs Modus für einzelne Modell Tabellen. Daher wird eine Mischung aus Import-und DQ-Tabellen unterstützt. Sie unterstützt auch berechnete Tabellen (die mit DAX definiert sind) und mehrere DQ-Datenquellen.
 
-Speichermodus für die Tabelle kann als importieren "," DirectQuery "oder" Dual konfiguriert werden. Eine Tabelle als duale Speicherung-Modus konfiguriert ist, den Import und DirectQuery, und dadurch die Power BI-Dienst, um zu bestimmen, die effizientesten Modus auf Grundlage von Abfragen verwenden können.
+Der Tabellen Speicher Modus kann als "Import", "directquery" oder "Dual" konfiguriert werden. Eine als Dual Storage-Modus konfigurierte Tabelle ist sowohl Import als auch directquery. Dies ermöglicht es dem Power BI-Dienst, den effizientesten Modus zu bestimmen, der für eine Abfrage auf Abfrage Basis verwendet werden soll.
 
-![Eine zusammengesetzte Modell ist eine Kombination von Import- und DQ-Speichermodi auf Tabellenebene konfiguriert](media/whitepaper-premium-deployment/composite-model.png)
+![Ein zusammengesetztes Modell ist eine Kombination aus Import-und DQ-Speicher Modi, die auf Tabellenebene konfiguriert sind](media/whitepaper-premium-deployment/composite-model.png)
 
-Zusammengesetzte Modelle bemühen uns um das beste aus den Import und DirectQuery-Modus bereitstellen. Bei entsprechender Konfiguration können sie hohe abfrageleistung von in-Memory-Modellen die Möglichkeit, Daten in Echtzeit aus Datenquellen abrufen kombinieren.
+Zusammengesetzte Modelle sind bestrebt, das Beste aus den Import-und directquery-Modi zu liefern. Bei entsprechender Konfiguration kann eine hohe Abfrageleistung von in-Memory-Modellen mit der Möglichkeit kombiniert werden, Daten aus Datenquellen nahezu in Echtzeit abzurufen.
 
-Datenmodellierer, die zusammengesetzte Modelle zu entwickeln, sind wahrscheinlich Dimensionstyp Tabellen in der Import "oder" Dual-Modus und Faktentyp Speichertabellen im DirectQuery-Modus zu konfigurieren. Betrachten Sie beispielsweise ein Modell mit einer Product-Dimension-Type-Tabelle im Dual-Modus und eine Sales Faktentyp Tabelle im DirectQuery-Modus. Die Product-Tabelle konnte von in-Memory-Rendern Sie den Datenschnitt eines Berichts schnell und effizient abgefragt werden. Die Sales-Tabelle kann dann im DirectQuery-Modus mit der zugehörigen Product-Tabelle verknüpft abgefragt werden. Die zweite Abfrage konnte die Generierung einer einzelnen effizient native Abfrage verknüpfen der Tabellen "Product" und "Sales" und "nach den Werten der Slicer Filtern aktiviert werden.
+Daten modelzierer, die zusammengesetzte Modelle entwickeln, konfigurieren wahrscheinlich Dimensions Typen Tabellen im Import-oder Dual-Speicher Modus und Fakten Typen Tabellen im directquery-Modus. Nehmen Sie beispielsweise ein Modell mit einer Tabelle vom Typ "Product Dimension" im Dual-Modus und eine Tabelle "Sales Fact-Type" im directquery-Modus. Die Product-Tabelle kann effizient und schnell aus dem Speicher internen Speicher abgefragt werden, um einen Berichts Slicer zu erzeugen. Die Sales-Tabelle kann dann im directquery-Modus abgefragt werden, der mit der verknüpften Product-Tabelle verknüpft ist. Die zweite Abfrage kann die Generierung einer einzelnen effizienten nativen Abfrage ermöglichen, um die Tabellen "Product" und "Sales" zu verknüpfen und die slicerwerte zu filtern.
 
-Im Allgemeinen können die vor- und Nachteile, die mit jedem Modellmodus verknüpften Tabelle Speichermodus zusammengesetzten Modelle zuweisen betrachtet werden.
+Im Allgemeinen können die vor-und Nachteile, die jedem Modell Modus zugeordnet sind, für den Tabellen Speicher Modus in zusammengesetzten Modellen gelten.
 
-Weitere Informationen finden Sie in der [Verwenden von zusammengesetzten Modellen in Power BI Desktop](desktop-composite-models.md) Dokument.
+Weitere Informationen finden Sie im Dokument verwenden von zusammen [gesetzten Modellen in Power BI Desktop](desktop-composite-models.md) .
 
 ### <a name="licensing"></a>Lizenzierung
 
-Powerbi verfügt über drei Lizenzen:
+Power BI verfügt über drei Lizenzen:
 
 - Power BI Free
 - Power BI Pro
 - Power BI Premium
 
-Die **Power BI Free** Lizenz ermöglicht eine Einzelperson, melden Sie sich beim Power BI-Dienst und in ihrem persönlichen Arbeitsbereich durch die Veröffentlichung von Datenmodellen und Berichten arbeiten. Es ist wichtig zu verstehen, dass es nicht möglich, Power BI-Inhalte freigeben, indem Sie die Verwendung dieser Lizenz. Dieser Lizenz, ist wie der Name schon sagt, kostenlos.
+Mit der **Power BI Free** -Lizenz kann eine Person sich beim Power BI-Dienst anmelden und in Ihrem persönlichen Arbeitsbereich arbeiten, indem Modelle und Berichte veröffentlicht werden. Es ist wichtig zu wissen, dass es nicht möglich ist, Power BI Inhalt mithilfe dieser Lizenzfrei zugeben. Diese Lizenz ist, wie der Name vermuten lässt, kostenlos.
 
-Die **Power BI Pro** Lizenz Einzelperson erstellen und Zusammenarbeit innerhalb der app-Arbeitsbereiche und freigeben und Verteilen von Power BI-Inhalte ermöglicht. Sie können auch die Aktualisierung für ihre Datasets für automatisch Daten aktuell sind, einschließlich aus lokalen Datenquellen konfigurieren. Darüber hinaus können sie überwachen und steuern, wie die Daten zugegriffen und verwendet werden. Diese Lizenz ist erforderlich, um freigegebene Inhalte, die von anderen Benutzern zu erhalten, wenn der Benutzer eine dedizierte Power BI Premium-Kapazität zugeordnet ist.
+Mit der **Power BI pro** -Lizenz kann eine Person App-Arbeitsbereiche erstellen und zusammenarbeiten sowie Power BI Inhalt freigeben und verteilen. Sie können auch die Aktualisierung für Ihre Datasets so konfigurieren, dass Daten automatisch aktuell gehalten werden, einschließlich aus lokalen Datenquellen. Darüber hinaus können Sie überwachen und Steuern, wie auf Daten zugegriffen und welche verwendet werden. Diese Lizenz ist erforderlich, um freigegebenen Inhalt von anderen zu empfangen, es sei denn, der Benutzer ist einer Power BI Premium dedizierten Kapazität zugeordnet.
 
-Die **Power BI Premium** Lizenz ist eine auf Mandantenebene, und es wird erläutert, der [Einführung in Power BI Premium](#introducing-power-bi-premium) Abschnitt.
+Die **Power BI Premium** -Lizenz ist eine Lizenz auf Mandanten Ebene, die im Abschnitt [Einführung Power BI Premium](#introducing-power-bi-premium) erläutert wird.
 
-Weitere Informationen zur Lizenzierung von Power BI finden Sie in der [Power BI-Preise](https://powerbi.microsoft.com/pricing/) Seite.
+Weitere Informationen zur Power BI Lizenzierung finden Sie auf der Seite [Power BI Preise](https://powerbi.microsoft.com/pricing/) .
 
 ## <a name="introducing-power-bi-premium"></a>Einführung in Power BI Premium
 
-Power BI Premium bietet eine einheitliche Self-Service- und Enterprise BI-Plattform, mit der Skalierung, zuverlässige Leistung und Kosten. Er erreicht dies in erster Linie durch die Bereitstellung dedizierter Ressourcen zum Ausführen von Power BI-Dienst für Ihre Organisation.
+Power BI Premium bietet eine einheitliche Self-Service-und Enterprise-BI-Plattform mit Skalierbarkeit, zuverlässiger Leistung und vorhersagbaren Kosten. Dies wird in erster Linie durch Bereitstellen dedizierter Ressourcen zum Ausführen der Power BI-Dienst für Ihre Organisation erreicht.
 
-Power BI Premium bietet außerdem viele Enterprise-Features:
+Außerdem bietet Power BI Premium viele Enterprise-Features:
 
-- Kostengünstige Verteilung von Inhalten, ermöglichen die gemeinsame Nutzung von Power BI-Inhalt für unbegrenzte Power BI Free-Benutzer, einschließlich externer Benutzer
-- Unterstützung für größere Datasets \[ [8](#endnote-08)\]
-- Höhere Aktualisierungsraten Datenflüsse und Datasets (bis zu 48-Mal pro Tag)
-- Die inkrementelle Aktualisierung Datenflüsse und datasets
-- Datenfluss verknüpft, Entitäten und parallele Ausführung von Transformationen
+- Kosteneffektive Inhalts Verteilung, die die Freigabe von Power BI Inhalt für unbegrenzte Power BI kostenlose Benutzer, einschließlich externer Benutzer, ermöglicht
+- Unterstützung für größere datasetgrößen \[ [8](#endnote-08)\]
+- Höhere Aktualisierungs Raten von Daten Flüssen und Datasets (bis zu 48-mal pro Tag)
+- Inkrementelle Aktualisierung von Daten Flüssen und Datasets
+- Verknüpfte Datenfluss Entitäten und parallele Ausführung von Transformationen
 - Paginierte Berichte
-- Power BI-Berichtsserver, für die lokale berichterstellung
-- Möglichkeit zum Einbetten von Inhalten in apps für app-Benutzer (PaaS)
+- Power BI-Berichtsserver für die lokale Berichterstellung
+- Möglichkeit zum Einbetten von Inhalten in apps im Namen von App-Benutzern (PAS)
 
-Viele dieser Features genutzt werden kann, um effiziente und skalierbare unternehmenslösungen bereitzustellen, und finden Sie unter den [Optimieren von Premium-Kapazitäten](#optimizing-premium-capacities) Abschnitt.
+Viele dieser Features können genutzt werden, um effiziente und skalierbare Enterprise-Lösungen bereitzustellen, die im Abschnitt [Optimieren von Premium-Kapazitäten](#optimizing-premium-capacities) beschrieben werden.
 
-### <a name="subscriptions-and-licensing"></a>Abonnements und Lizenzen
+### <a name="subscriptions-and-licensing"></a>Abonnements und Lizenzierung
 
-Power BI Premium ist ein auf Mandantenebene Office 365-Abonnement in zwei SKU (Stock Keeping Unit)-Familien verfügbar:
+Power BI Premium ist ein Office 365-Abonnement auf Mandantenebene, das in zwei SKU-Familien (Stock Keeping Unit) erhältlich ist:
 
-- **EM** SKUs (EM1-EM3) für das einbetten, müssen eine jährliche Verpflichtung, monatliche Abrechnung
-- **P** SKUs (P1-P3) einbetten und Enterprise-Funktionen erfordern eine monatliche oder jährliche Verpflichtung monatlich in Rechnung gestellt, und enthält eine Lizenz für Power BI-Berichtsserver lokal installieren
+- **EM** SKUs (EM1-EM3) zum Einbetten, erfordert eine jährliche Verpflichtung, monatlich abgerechnet
+- **P** -SKUs (P1-P3) für Einbettungs-und Unternehmens Features, die eine monatliche oder jährliche Verpflichtung erfordern, monatlich abgerechnet werden und eine Lizenz zur Installation von Power BI-Berichtsserver lokal enthalten.
 
-Ein alternativer Ansatz ist ein Azure Power BI Embedded-Abonnement erwerben, die über eine einzelne SKU-Familie verfügt: **Ein** SKUs (A1-A6) für die Einbettung und Kapazität, die ausschließlich zu Testzwecken.
+Ein alternativer Ansatz ist das erwerben eines Azure Power BI Embedded-Abonnements, das über eine einzige SKU-Familie verfügt: **Eine** SKUs (a1-a6) zum Einbetten und zum Zweck der Kapazitätsprüfung.
 
-Alle SKUs bieten V-Kerne zum Erstellen von Kapazitäten \[ [9](#endnote-09)\], aber die EM-SKUs sind für Einbetten von kleineren Skalierung eingeschränkt. Während der Schwerpunkt in diesem Whitepaper zu den P-SKUs ist, ist viel der diskutierten ist auch auch A-SKUs.
+Alle SKUs bieten v-Kerne zum Erstellen von \[Kapazitäten [9](#endnote-09)\], aber die EM-SKUs sind auf kleinere Einbettungen beschränkt. Während der Schwerpunkt dieses Whitepaper auf den P-SKUs liegt, ist der Großteil der erörterten Informationen auch für die SKUs von Bedeutung.
 
-Im Gegensatz zu den Premium-Abonnement können Sie SKUs, die Azure-SKUs erfordern keine Zeitaufwand und abgerechnet wird. Sie bieten vollständige Skalierung aktivieren, um Flexibilität, zentral Herunterskalieren, Pause-, fortsetzen- und löschen.
+Im Gegensatz zu den Premium-Abonnement-SKUs, erfordern Azure-SKUs keine zeitliche Verpflichtung und werden stundenweise abgerechnet. Sie bieten uneingeschränkte Elastizität, die zentrales Hochskalieren, Herunterskalieren, Anhalten, Fortsetzen und Löschen ermöglicht.
 
-Azure Power BI Embedded ist größtenteils nicht Gegenstand dieses Whitepapers, aber es wird erläutert, unter dem Thema testen Ansätze als praktische und wirtschaftliche-Option von Tests und Messungen Workloads.
+Azure-Power BI Embedded ist für dieses Whitepaper größtenteils nicht geeignet, wird aber im Thema Testen von Ansätzen als praktische und wirtschaftliche Option zum Testen und Messen von Workloads behandelt.
 
 Weitere Informationen zu den Azure-SKUs finden Sie in der [Dokumentation zu Azure Power BI Embedded](/azure/power-bi-embedded/).
 
-Power BI-Premium-Abonnements werden von Administratoren im Microsoft 365 Administrationscenter gekauft. Insbesondere können nur globale Administratoren von Office 365 oder Administratoren Abrechnung SKUs erwerben.
+Power BI-Premium-Abonnements werden von Administratoren im Microsoft 365 Admin Center gekauft. Insbesondere können nur globale Administratoren von Office 365 oder Abrechnungs Administratoren SKUs erwerben.
 
-Nach dem Erwerb der Mandant erhält keine entsprechende Anzahl von V-Kerne zum Zuweisen von Kapazitäten – Dies bezeichnet man als **V-Kern-pooling**. Beispielsweise stellt der Erwerb einer P3-SKU des Mandanten mit 32 V-Kerne.
+Nach dem Erwerb erhält der Mandant eine entsprechende Anzahl von v-Kernen, die Kapazitäten zugewiesen werden. Dies wird als **v-Core-Pooling**bezeichnet. Beispielsweise erhält der Mandant durch den Erwerb einer P3-SKU 32 V-Kerne.
 
-Weitere Informationen finden Sie in der [zum Erwerb von Power BI Premium](service-admin-premium-purchase.md) Dokument.
+Weitere Informationen finden Sie im Dokument [How to purchase Power BI Premium](service-admin-premium-purchase.md) .
 
 ### <a name="premium-capacities"></a>Premium-Kapazitäten
 
-Im Gegensatz zu einer gemeinsam genutzten Kapazität Ausführungsort der Workloads auf Computerressourcen gemeinsam mit anderen Kunden, eine **dedizierte Kapazität** ist für die ausschließliche Verwendung von einer anderen Organisation. Es wird isoliert mit dedizierten Compute-Ressourcen die zuverlässige und konsistente Leistung für gehosteten Inhalt zu bieten.
+Im Gegensatz zu einer gemeinsam genutzten Kapazität, bei der Workloads auf Rechenressourcen ausgeführt werden, die mit anderen Kunden gemeinsam genutzt werden, ist eine **Dedizierte Kapazität** für die ausschließliche Verwendung durch eine Organisation vorgesehen Es ist mit dedizierten Rechenressourcen isoliert, die eine zuverlässige und konsistente Leistung für gehostete Inhalte bereitstellen.
 
-Der Schwerpunkt dieses Whitepapers liegt **Premium-Kapazität** , d. h. es EM oder P-SKUs zugeordnet ist.
+Der Schwerpunkt dieses Whitepaper ist die **Premium-Kapazität** , d. h., Sie ist mit einer der EM-oder P-SKUs verknüpft.
 
-#### <a name="capacity-nodes"></a>Kapazität von Knoten
+#### <a name="capacity-nodes"></a>Kapazitätsknoten
 
-Wie beschrieben in den Abonnements und Lizenzen, Thema gibt es zwei Power BI Premium-SKU-Familien: EM und P. Alle Power BI Premium-SKUs stehen als kapazitätsknoten, mit jeweils darstellen eines festgelegten Zeitraums Prozessor, Arbeitsspeicher und Speicher mit Ressourcen zur Verfügung. Zusätzlich zu den Ressourcen jede SKU hat funktionsbegrenzungen, auf die Anzahl der Verbindungen von DirectQuery (DQ) und Live-Verbindung (LC) pro Sekunde, und die Anzahl der parallelen Modells wird aktualisiert.
+Wie im Thema Abonnements und Lizenzierung beschrieben, gibt es zwei Power BI Premium SKU-Familien: EM und P. Alle Power BI Premium-SKUs sind als Kapazitäts Knoten verfügbar, wobei jede eine Menge von Ressourcen darstellt, die aus Prozessor, Arbeitsspeicher und Speicher bestehen. Zusätzlich zu den Ressourcen sind für jede SKU Betriebsbeschränkungen hinsichtlich der Anzahl von directquery (DQ)-und Live Connection (LC)-Verbindungen pro Sekunde und der Anzahl paralleler Modell Aktualisierungen fest.
 
-Verarbeitung erfolgt durch eine festgelegte Anzahl von V-Kerne, gleichmäßig zwischen Back-End- und Front-End unterteilt.
+Die Verarbeitung erfolgt mithilfe einer festgelegten Anzahl V-Kerne, die zu gleichen Teilen zwischen Back-End und Front-End aufgeteilt werden.
 
-**Back-End-V-Kerne** sind verantwortlich für die Core-Power BI-Funktionen, einschließlich der abfrageverarbeitung, cacheverwaltung, Ausführen von R Services, Aktualisierung des Modells, die Verarbeitung natürlicher Sprache (Q & A) und serverseitiges Rendering von Berichten und Bildern. Back-End-V-Kerne sind eine feste Menge an Arbeitsspeicher zugewiesen, die primären verwendet, um den Host-Modelle, die auch als aktiver Datasets bezeichnet werden.
+**Back-End-V-Kerne** sind für die Power BI-Kernfunktionalität zuständig, einschließlich Abfrageverarbeitung, Cacheverwaltung, das Ausführen von R-Diensten, die Verarbeitung natürlicher Sprache (Q&A) und das serverseitige Rendern von Berichten und Bildern. Back-End-v-Kernen wird eine festgelegte Menge an Arbeitsspeicher zugewiesen, die zum Hosten von Modellen verwendet wird, die auch als aktive Datasets bezeichnet werden.
 
-**Front-End-V-Kerne** sind verantwortlich für die Web Service, Dashboard und Bericht dokumentverwaltung, zugriffsrechteverwaltung, zeitplanung, APIs, lädt und downloads und Allgemein für alles, was im Zusammenhang mit der Benutzer hat.
+Front **-End-v-Kerne** sind für den Webdienst, die Verwaltung von Dashboards und Berichts Dokumenten, die Zugriffsrechte Verwaltung, die Planung, APIs, Uploads und Downloads und in der Regel für alles, was die Benutzererfahrung betrifft, verantwortlich.
 
-Speicher wird auf 100 TB pro kapazitätsknoten festgelegt.
+Der Speicher wird auf 100 TB pro Kapazitäts Knoten festgelegt.
 
-Die Ressourcen und die Grenzen der einzelnen Premium-SKU (und gleichermaßen Größe ein SKU) werden in der folgenden Tabelle beschrieben.
+In der folgenden Tabelle werden die Ressourcen und die Grenzwerte für die einzelnen Premium-SKU (und die gleichwertig formatierte SKU) beschrieben.
 
-| Kapazität von Knoten | Gesamtzahl an V-Kernen | Back-End-V-Kerne | RAM (GB) | Front-End-V-Kerne | DQ/LC (pro Sekunde) | Modell aktualisieren Parallelität |
+| Kapazitätsknoten | Gesamtzahl an V-Kernen | Back-End-V-Kerne | RAM (GB) | Front-End-V-Kerne | DQ/LC (pro Sekunde) | Modell-Aktualisierungsparallelität |
 | --- | --- | --- | --- | --- | --- | --- |
-| EM1/A1 | 1 | 0,5 | 2.5 | 0,5 | 3.75 | 1 |
-| EM2/A2 | 2 | 1 | 5 | 1 | 7.5 | 2 |
+| EM1/A1 | 1 | 0,5 | 2.5 | 0,5 | 3,75 | 1 |
+| EM2/A2 | 2 | 1 | 5 | 1 | 7,5 | 2 |
 | EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
 | | | | | | | |
 
-#### <a name="capacity-workloads"></a>Capacity-Workloads
+#### <a name="capacity-workloads"></a>Kapazitäts Arbeits Auslastungen
 
-Capacity-Workloads sind Dienste, die Benutzern zur Verfügung gestellt. Premium und Azure-Kapazitäten Unterstützung standardmäßig nur eine Dataset-Workload, die mit der Ausführung von Power BI-Abfragen, die nicht deaktiviert werden können.
+Kapazitätsworkloads sind Dienste, die Benutzern zur Verfügung gestellt werden. Standardmäßig unterstützen Premium-und Azure-Kapazitäten nur eine dataseworkloads, die mit der Ausführung Power BI Abfragen verknüpft sind, die nicht deaktiviert werden können.
 
-Zusätzlicher Workloads können für paginierte Berichte, Datenflüsse und AI aktiviert werden. Jede zusätzliche arbeitsauslastung erforderlich ist, konfigurieren den maximalen Arbeitsspeicher (als Prozentsatz des gesamten verfügbaren Arbeitsspeichers), der von der arbeitsauslastung verwendet werden kann.
+Zusätzliche Workloads können für paginierte Berichte, Datenflüsse und Ki aktiviert werden. Jede zusätzliche Arbeitsauslastung erfordert die Konfiguration des maximalen Arbeitsspeichers (als Prozentsatz des gesamten verfügbaren Speichers), der von der Arbeitsauslastung verwendet werden kann.
 
-#### <a name="how-capacities-function"></a>Wie funktionieren Kapazitäten
+#### <a name="how-capacities-function"></a>Funktionsweise von Kapazitäts Funktionen
 
-Immer zielt darauf ab Power BI-Dienst vornehmen kapazitätsressourcen optimal nutzen, während die Kapazität nicht überschreiten von Grenzwerten für auferlegt werden.
+Der Power BI-Dienst versucht, Kapazitäts Ressourcen immer optimal zu nutzen, ohne die Grenzwerte für die Kapazität zu überschreiten.
 
-Capacity-Vorgänge werden entweder als klassifiziert interaktive oder Hintergrund. Interaktive Vorgänge enthalten, Rendern von Anforderungen und die Reaktion auf Benutzerinteraktionen (filtern, Q & A-Abfragen usw.). Im Allgemeinen ist die Import-Modell abgefragt Arbeitsspeicher ressourcenintensiv, während Abfragen LC/DQ-Modellen CPU-intensiv ist. Hintergrundvorgänge Datenfluss einschließen, und importieren Sie Modell aktualisiert und das Dashboard Abfrage Zwischenspeichern.
+Kapazitäts Vorgänge werden entweder interaktiv oder im Hintergrund klassifiziert. Zu den interaktiven Vorgängen gehören Renderinganforderungen und das Reagieren auf Benutzerinteraktionen (Filtern, Q&A-Abfragen usw.). Im Allgemeinen ist das Importieren von Modell Abfragen Speicherressourcen intensiv, während die Abfrage von LC/DQ-Modellen CPU-intensiv ist. Zu den Hintergrundvorgängen gehören die Aktualisierung von Datenflüssen und Importmodellen sowie das Cachen von Dashboardabfragen.
 
-Es ist wichtig zu verstehen, dass interaktive Vorgänge immer über die Hintergrundvorgänge ausgeführt, um sicherzustellen, dass die bestmögliche benutzerumgebung priorisiert werden. Wenn nicht genügend Ressourcen vorhanden sind, werden die Hintergrundvorgänge hinzugefügt, an eine Warteschlange zur Verarbeitung, wenn Ressourcen frei. Hintergrundvorgänge, z. B. das Dataset-Aktualisierungen und KI-Funktionen, können beendet mitten von Power BI-Dienst und einer Warteschlange hinzugefügt.
+Es ist wichtig zu verstehen, dass interaktive Vorgänge immer Vorrang vor Hintergrund Vorgängen sind, um eine bestmögliche Benutzererfahrung zu gewährleisten. Wenn nicht ausreichend Ressourcen vorhanden sind, werden Hintergrundvorgänge einer Warteschlange hinzugefügt, um bei freiwerdenden Ressourcen verarbeitet zu werden. Hintergrund Vorgänge, wie z. b. DataSet-Aktualisierungen und Ki-Funktionen, können während des Power BI-Dienst beendet und einer Warteschlange hinzugefügt werden.
 
-Importmodelle müssen vollständig in den Arbeitsspeicher geladen werden, damit diese abgefragt oder aktualisiert werden können. Power BI-Dienst verwaltet Speicher der Nutzung von anspruchsvolle Algorithmen, um sicherzustellen, dass maximal verfügbaren Arbeitsspeicher nutzen, und erreichen die Überbelastung der Kapazitätsbedarfs: Es ist zwar möglich, für die Modelle einer Kapazität zum Speichern von vielen importieren (bis zu 100 TB pro Premium-Kapazität), wenn die kombinierte Datenträgerspeicher überschreitet den unterstützten Speicher (zusätzlicher Speicher ist erforderlich, zum Abfragen und aktualisieren), klicken Sie dann sie nicht alle geladen werden in den Arbeitsspeicher an gleichzeitig.
+Import Modelle müssen vollständig in den Arbeitsspeicher geladen werden, damit Sie abgefragt oder aktualisiert werden können. Der Power BI-Dienst verwaltet die Speicherauslastung mithilfe von ausgereiften Algorithmen, um die maximale Verwendung des verfügbaren Arbeitsspeichers sicherzustellen, und kann eine Überladung der Kapazität erreichen: Obwohl es möglich ist, dass eine Kapazität viele importmodelle (bis zu 100 TB pro Premium-Kapazität) speichert, wenn der kombinierte Datenträger Speicher den unterstützten Speicher überschreitet (und zusätzlicher Arbeitsspeicher für die Abfrage und Aktualisierung erforderlich ist), können diese nicht alle in den Arbeitsspeicher geladen werden. gleichzeitig.
 
-Importmodelle werden aus diesem Grund in - geladen und aus dem - Speicher entsprechend der Verwendung entfernt. Ein Modell importieren wird geladen, wenn es sich um abgefragten (interaktive Vorgang) ist und noch nicht im Arbeitsspeicher oder wenn sie aktualisiert werden soll (Vorgang im Hintergrund).
+Import Modelle werden aus diesem Grund entsprechend der Verwendung in geladen und aus dem Arbeitsspeicher entfernt. Ein Import Modell wird geladen, wenn es abgefragt wird (interaktiver Vorgang), noch nicht im Arbeitsspeicher oder wenn es aktualisiert werden soll (Hintergrund Vorgang).
 
-Das Entfernen eines Modells aus dem Arbeitsspeicher wird als bezeichnet **Entfernung** , und es ist ein Vorgang, der Power BI abhängig von der Größe der Modelle schnell ausführen können. Wenn die Kapazität jeder ungenügendem Arbeitsspeicher nicht auftreten, werden Modelle sind einfach in den Arbeitsspeicher geladen und bleiben dort. \[[10](#endnote-10) \] jedoch, wenn nicht genügend Arbeitsspeicher zum Laden eines Modells verfügbar ist, im Power BI-Dienst müssen zunächst, um Arbeitsspeicher freizugeben. Durch das Erkennen von Modellen, die inaktiv haben durch Suchvorgänge Modelle, die nicht in den letzten drei Minuten verwendet wurden Speicherplatz freigegeben \[ [11](#endnote-11)\], und klicken Sie dann entfernen sie. Wenn es keine inaktiven Modelle gibt zu entfernen, versucht Power BI-Dienst für Hintergrundoperationen geladene Modelle zu entfernen. Dies kann das Entfernen von Hintergrund-Workloads wie die KI-Workloads umfassen. Letzte Möglichkeit, nach 30 Sekunden nicht erfolgreicher Versuche \[ [11](#endnote-11)\], besteht darin, das interaktive fehl. In diesem Fall wird der Benutzer des Berichts ordnungsgemäß bildschirmaufnahmedatei eine Empfehlung, versuchen es in Kürze informiert.
+Das Entfernen eines Modells aus dem Arbeitsspeicher **wird als** Entfernungs Vorgang bezeichnet und ist ein Vorgang, der Power BI je nach Größe der Modelle schnell ausführen kann. Wenn die Kapazität keinen Engpass beim Arbeitsspeicher erlebt, werden Modelle einfach in den Arbeitsspeicher geladen und verbleiben dort. \[[10 Wenn jedoch](#endnote-10) nicht genügend Arbeitsspeicher zum Laden eines Modells verfügbar ist, muss der Power BI-Dienst zuerst Arbeitsspeicher freigeben.\] Dadurch wird Arbeitsspeicher freigegeben, indem Modelle erkannt werden, die durch das Suchen von Modellen, die in den letzten drei \[Minuten [11](#endnote-11)\]nicht verwendet wurden, nicht mehr verwendet wurden. Wenn keine inaktiven Modelle zum Entfernen vorhanden sind, versucht der Power BI-Dienst, Modelle zu entfernen, die für Hintergrundoperationen geladen wurden. Dies kann die Entfernung von hintergrundworkloads wie der AI-Arbeitsauslastung einschließen. Eine letzte Möglichkeit besteht nach 30 Sekunden fehlgeschlagener Versuche \[ [11](#endnote-11)\]darin, den interaktiven Vorgang fehlschlagen zu lassen. In diesem Fall wird der Berichts Benutzer ordnungsgemäß benachrichtigt, wenn ein Fehler aufgetreten ist. versuchen Sie es in Kürze erneut.
 
-Es ist wichtig zu betonen, dass das Dataset Entfernung ein normales und erwartetes Verhalten ist. Es zielt darauf ab, zum Maximieren der speicherauslastung durch Laden und Entladen von Modellen, die zusammen mit verfügbaren Arbeitsspeicher überschreiten können. Dies ist beabsichtigt, und für Benutzer des Berichts vollständig transparent. Hohe entfernungsraten bedeuten nicht unbedingt, dass die Kapazität unzureichend Ressourcen zugewiesen ist. Sie können jedoch einem Problem werden, wenn die Abfrage oder Aktualisierung Reaktionsfähigkeit aufgrund hoher entfernungsraten warnungskontext.
+Es ist wichtig zu betonen, dass das Entfernen von Datasets ein normales und erwartetes Verhalten ist. Es zielt darauf ab, die Speicherauslastung durch Laden und Entladen von Modellen zu maximieren, deren kombinierte Größe den verfügbaren Arbeitsspeicher überschreiten kann. Dies ist beabsichtigt und für Benutzer des Berichts vollständig transparent. Hohe Entfernungsraten bedeuten nicht zwangsläufig, dass die Kapazität unzureichend mit Ressourcen ausgestattet ist. Dies kann jedoch zu einem Problem werden, wenn die Reaktionsfähigkeit auf Abfragen oder Aktualisierungen aufgrund hoher Entfernungsraten leidet.
 
-Aktualisierungen von importmodelle sind immer Arbeitsspeicheraufwand hoch, wie Modelle in den Arbeitsspeicher geladen werden müssen und zusätzlicher Arbeitsspeicher für die Verarbeitung erforderlich ist. Eine vollständige Aktualisierung kann ungefähr doppelt so viel Arbeitsspeicher, die das Modell benötigte eingabedatenschema verwenden. Dadurch wird sichergestellt, dass das Modell abgefragt werden kann, selbst wenn verarbeitet werden (Abfragen gesendet werden, das vorhandene Modell, bis die Aktualisierung abgeschlossen wurde, und die neue Modelldaten zur Verfügung steht). Beachten Sie, inkrementeller Aktualisierung erfordert weniger Arbeitsspeicher und kann schneller ausgeführt werden kann und daher nicht genügend kapazitätsressourcen erheblich reduzieren. Aktualisierungen können auch die CPU-intensiv sein für Modelle, vor allem solche mit komplexen Power Query-Transformationen oder berechneten Tabellen/Spalten, die komplex sind oder für große Tabellen basieren.
+Aktualisierungen von Import Modellen sind immer Arbeitsspeicher intensiv, da Modelle in den Arbeitsspeicher geladen werden müssen und für die Verarbeitung zusätzlicher Arbeitsspeicher erforderlich ist. Eine vollständige Aktualisierung kann ungefähr doppelt so viel Arbeitsspeicher in Anspruch nehmen, wie für das Modell erforderlich ist. Dadurch wird sichergestellt, dass das Modell auch dann abgefragt werden kann, wenn es verarbeitet wird (Abfragen werden an das vorhandene Modell gesendet, bis die Aktualisierung abgeschlossen ist und die neuen Modelldaten verfügbar sind). Beachten Sie, dass die inkrementelle Aktualisierung weniger Arbeitsspeicher erfordert und schneller ausgeführt werden kann. Dadurch kann der Druck auf Kapazitäts Ressourcen erheblich reduziert werden. Aktualisierungen von Modellen können außerdem CPU-intensiv sein, insbesondere solche mit komplexen Power Query-Transformationen oder berechneten Tabellen/Spalten, die komplex sind oder auf umfangreichen Tabelle basieren.
 
-Aktualisiert – wie bei Abfragen - erforderlich, dass das Modell in den Arbeitsspeicher geladen werden. Wenn nicht genügend Arbeitsspeicher verfügbar ist, versucht Power BI-Dienst zum Löschen der inaktiv Modelle, und wenn dies nicht möglich ist (wie alle Modelle aktiv sind), der Aktualisierungsauftrag in die Warteschlange eingereiht. Aktualisierungen werden in der Regel sehr CPU-intensiv, mehr dennoch als Abfragen. Aus diesem Grund stehen Kapazitätsgrenzen für die Anzahl der gleichzeitigen Aktualisierungen, legen Sie auf 1,5 Mal die Anzahl der Back-End-V-Kerne, die aufgerundet. Wenn zu viele gleichzeitige Aktualisierungen sind, wird eine geplante Aktualisierung in die Warteschlange eingereiht werden. Wenn diese Situationen auftreten, dauert es länger, bis die Aktualisierung abzuschließen. Beachten Sie, dass bei Bedarf aktualisiert, die (von einer benutzeranforderung oder API-Aufruf ausgelöst) drei Wiederholungsversuche ausgeführt \[ [11](#endnote-11)\], und klicken Sie dann fehl, wenn noch nicht genügend Ressourcen vorhanden sind.
+Aktualisierungen-ähnliche Abfragen: erfordern, dass das Modell in den Arbeitsspeicher geladen wird. Bei unzureichendem Arbeitsspeicher versucht der Power BI-Dienst, inaktive Modelle zu entfernen, und wenn das nicht möglich ist (weil alle Modelle aktiv sind), wird der Aktualisierungsauftrag in die Warteschlange eingestellt. Aktualisierungen sind in der Regel sehr CPU-intensiv und sogar mehr als Abfragen. Aus diesem Grund bestehen Kapazitätsgrenzen für die Anzahl der gleichzeitigen Aktualisierungen, die auf das 1,5-fache der Anzahl der V-Kerne im Back-End festgelegt ist (aufgerundet). Bei zu vielen gleichzeitigen Aktualisierungen wird eine geplante Aktualisierung in die Warteschlange eingestellt. Wenn diese Situationen eintreten, benötigt die Aktualisierung mehr Zeit bis zum Abschluss. Beachten Sie, dass bei Bedarf-Aktualisierungen (ausgelöst durch eine Benutzer Anforderung oder einen API-Aufruf) dreimal \[[11](#endnote-11)\]eine Wiederholung durchführt, wenn noch nicht genügend Ressourcen verfügbar sind.
 
 ## <a name="managing-power-bi-premium"></a>Verwalten von Power BI Premium
 
-Verwalten von Power BI Premium umfasst, Erwerb von Abonnements, und erstellen, verwalten und Überwachen von Premium-Kapazitäten.
+Das Verwalten von Power BI Premium umfasst das erwerben von Abonnements sowie das Erstellen, verwalten und Überwachen von Premium-Kapazitäten.
 
 ### <a name="creating-and-managing-capacities"></a>Erstellen und Verwalten von Kapazitäten
 
-Die **Kapazitätseinstellungen** auf der Seite die **Power BI-Administrator** -Portal zeigt die Anzahl von V-Kerne erworben und verfügbar (d. h. noch zu einer Kapazität zugewiesen werden) und Premium-Kapazitäten aufgeführt. Die Seite ermöglicht globale Office 365-Administratoren oder Power BI-Dienstadministratoren zu Premium-Kapazitäten verfügbaren V-Kerne erstellen oder vorhandene Premium-Kapazitäten zu ändern.
+Auf der Seite " **Kapazitäts Einstellungen** " des **Power BI admin** -Portals wird die Anzahl der erworbenen und verfügbaren v-Kerne angezeigt (d. h., Sie werden einer Kapazität zugewiesen), und es werden Premium-Kapazitäten aufgeführt. Auf der Seite können globale Administratoren von Office 365 oder Power BI-Dienst Administratoren Premium-Kapazitäten von verfügbaren v-Kernen erstellen oder vorhandene Premium-Kapazitäten ändern.
 
-Beim Erstellen einer Premium-Kapazität ist der Administrator erforderlich, um zu definieren:
+Beim Erstellen einer Premium-Kapazität muss der Administrator Folgendes definieren:
 
-- Kapazitätsname (eindeutig innerhalb des Mandanten)
-- Kapazität admin(s)
+- Kapazitäts Name (innerhalb des Mandanten eindeutig)
+- Kapazitäts Administrator (en)
 - Kapazitätsumfang
-- Region für datenresidenz \[ [12](#endnote-12)\]
+- Region für die Daten \[Residenz [12](#endnote-12)\]
 
-Es muss mindestens ein Kapazitätsadministrator zugewiesen werden. Sie können Benutzer, die als Kapazitätsadministratoren zugewiesen:
+Mindestens ein Kapazitäts Administrator muss zugewiesen werden. Als Kapazitäts Administratoren zugewiesene Benutzer können folgende Aktionen ausführen:
 
-- Die Kapazität Arbeitsbereiche zuweisen
-- Verwalten von Benutzerberechtigungen, die zusätzliche Kapazitätsadministratoren oder Benutzer mit Zuweisungsberechtigungen (zur Aktivierung der sie die Kapazität Arbeitsbereiche zuweisen) hinzufügen.
-- Verwalten von Workloads, um die maximale speicherauslastung für paginierte Berichte und Datenflüsse Workloads konfigurieren
-- Starten Sie die Kapazität, um alle Vorgänge bei einem System Überladung zurückzusetzen neu \[ [13](#endnote-13)\]
+- Arbeitsbereiche der Kapazität zuweisen
+- Verwalten von Benutzerberechtigungen zum Hinzufügen von zusätzlichen Kapazitäts Administratoren oder Benutzern mit Zuweisungs Berechtigungen (damit Sie Arbeitsbereiche der Kapazität zuweisen können)
+- Verwalten von Arbeits Auslastungen, um die maximale Speicherauslastung für paginierte Berichte und Datenfluss Arbeits Auslastungen zu konfigurieren
+- Neustarten der Kapazität, um alle Vorgänge im Fall der System Überladung \[ [13](#endnote-13) zurückzusetzen\]
 
-Kapazitätsadministratoren können nicht auf Arbeitsbereich Inhalte zuzugreifen, (sofern nicht explizit um arbeitsbereichsberechtigungen zugewiesen), und sie haben keinen Zugriff auf alle Power BI-administrationsbereiche (sofern nicht explizit zugewiesen ist) wie z. B. nutzungsmetriken, Überwachungsprotokolle oder mandanteneinstellungen. Vor allem Kapazitätsadministratoren keine Berechtigungen, um neue Kapazitäten zu erstellen oder vorhandene Kapazitäten skalieren. Sie werden außerdem zugewiesen, auf einer pro Kapazität –, um sicherzustellen, dass sie nur können anzeigen und Verwalten von Kapazitäten, denen sie zugewiesen sind.
+Kapazitäts Administratoren können nicht auf Arbeitsbereichs Inhalte zugreifen (es sei denn, Sie haben explizit zugewiesene Arbeitsbereichs Berechtigungen) und haben keinen Zugriff auf alle Power BI Administrator Bereiche (sofern nicht explizit zugewiesen) wie nutzungsmetriken, Überwachungs Protokolle oder Mandanten Einstellungen. Wichtig: Kapazitäts Administratoren haben keine Berechtigungen zum Erstellen neuer Kapazitäten oder zum Skalieren vorhandener Kapazitäten. Außerdem werden Sie pro Kapazität zugewiesen, um sicherzustellen, dass Sie nur Kapazitäten anzeigen und verwalten können, denen Sie zugewiesen sind.
 
-Größe der Kapazität muss über eine Liste der verfügbaren Optionen für die SKU der eingeschränkt wird durch die Anzahl der verfügbaren V-Kerne im Pool ausgewählt werden. Es ist möglich, mehrere Kapazitäten aus dem Pool zu erstellen, die von einem erstellt werden konnte, oder mehrere SKUs erworben. Beispielsweise eine P3-SKU (32 V-Kerne) verwendet werden, um drei Kapazitäten zu erstellen: eine P2 (16 virtuelle Kerne), und zwei P1 (2 x 8 virtuelle Kerne). Verbesserte Leistung und Skalierbarkeit durch das Erstellen von kleineren Größe Kapazitäten erreicht werden können, und in diesem Thema wird erläutert, der [Optimieren von Premium-Kapazitäten](#optimizing-premium-capacities) Abschnitt. Die folgende Abbildung zeigt ein Beispiel-Setup für die fiktive Contoso-Organisation bestehend aus fünf Premium-Kapazitäten (3 x P1 "und" 2 x P3) mit einzelnen enthaltenden app-Arbeitsbereiche und mehrere Arbeitsbereiche in gemeinsam genutzten Kapazität.
+Die Kapazitäts Größe muss in einer verfügbaren Liste mit SKU-Optionen ausgewählt werden, die durch die Anzahl der verfügbaren v-Kerne im Pool eingeschränkt wird. Es ist möglich, mehrere Kapazitäten aus dem Pool zu erstellen, die aus einer oder mehreren erworbenen SKUs stammen können. Beispielsweise könnte eine P3-SKU (32 v-Kerne) zum Erstellen von drei Kapazitäten verwendet werden: eine P2 (16 v-Kerne) und zwei P1 (2 x 8 v-Kerne). Verbesserte Leistung und Skalierbarkeit können durch die Erstellung von kleineren Kapazitäten erreicht werden. dieses Thema wird im Abschnitt [Optimieren von Premium-Kapazitäten](#optimizing-premium-capacities) erläutert. In der folgenden Abbildung ist ein Beispiel für das Setup für die fiktive Organisation "mso" dargestellt, bestehend aus fünf Premium-Kapazitäten (3 x P1 und 2 x P3), die jeweils App-Arbeitsbereiche enthalten, und mehreren Arbeitsbereichen in gemeinsam genutzter Kapazität.
 
-![Ein Beispiel-Setup für die fiktive Contoso-Organisation](media/whitepaper-premium-deployment/contoso-organization-example.png)
+![Ein Beispiel für die Einrichtung der fiktiven Organisation "Unternehmen"](media/whitepaper-premium-deployment/contoso-organization-example.png)
 
-Eine Premium-Kapazität kann zu einer anderen Region als der Startbereich des Power BI-Mandanten, administrative Kontrolle über die Rechenzentren (in definierten geografischen Regionen) Power BI-Inhalt befindet sich zugewiesen werden. \[[12](#endnote-12)\]
+Eine Premium-Kapazität kann einer anderen Region als der Start Region des Power BI Mandanten zugewiesen werden. Dadurch wird die administrative Kontrolle über die Rechenzentren (innerhalb definierter geografischer Regionen) Power BI Inhalts bereitgestellt. \[[12.12.2016](#endnote-12)\]
 
-Power BI-Dienstadministratoren und globale Office 365-Administratoren können Premium-Kapazitäten ändern. Genauer gesagt können sie:
+Power BI-Dienst Administratoren und Office 365 globale Administratoren können Premium-Kapazitäten ändern. Sie haben insbesondere folgende Möglichkeiten:
 
-- Ändern Sie die Größe der Kapazität um zentral hoch- oder Herunterskalieren von Ressourcen. Allerdings ist es nicht möglich, ein downgrade von einer P-SKU auf eine SKU "EM", oder umgekehrt zu aktualisieren.
-- Hinzufügen oder Entfernen von Kapazitätsadministratoren
-- Fügen Sie hinzu oder entfernen Sie Benutzer mit Zuweisungsberechtigungen
-- Hinzufügen oder Entfernen von zusätzlichen workloads
-- Ändern von Regionen
+- Ändern Sie die Kapazitäts Größe, um Ressourcen zentral hoch-oder Herunterskalieren. Es ist jedoch nicht möglich, ein Downgrade für eine P-SKU auf eine EM-SKU durchzuführen oder umgekehrt.
+- Kapazitäts Administratoren hinzufügen oder entfernen
+- Hinzufügen oder Entfernen von Benutzern mit Zuweisungs Berechtigungen
+- Hinzufügen oder Entfernen zusätzlicher Workloads
+- Bereiche ändern
 
-Berechtigung zur kapazitätszuweisung sind erforderlich, eine bestimmte Premium-Kapazität einen Arbeitsbereich zuweisen. Die gesamte Organisation, bestimmte Benutzer oder Gruppen können die Berechtigungen gewährt werden.
+Zuweisungs Berechtigungen sind erforderlich, um einer bestimmten Premium-Kapazität einen Arbeitsbereich zuzuweisen. Die Berechtigungen können für die gesamte Organisation, bestimmte Benutzer oder Gruppen gewährt werden.
 
-Standardmäßig unterstützen Premium-Kapazitäten für Workloads, die mit der Ausführung von Abfragen mit Power BI. Es unterstützt auch drei zusätzliche arbeitsauslastungen: **Paginierte Berichte**, **Datenflüsse**, und **AI**. Jede arbeitsauslastung erforderlich ist, konfigurieren den maximalen Arbeitsspeicher (als Prozentsatz des gesamten verfügbaren Arbeitsspeichers), der von der arbeitsauslastung verwendet werden kann. Es ist wichtig zu verstehen, dass das Erhöhen der maximalen speicherbelegung auf die Anzahl der aktiven Modelle, die gehostet werden können, und der Durchsatz von Aktualisierungen auswirken kann.
+Standardmäßig unterstützen Premium-Kapazitäten Workloads, die mit der Ausführung von Power BI Abfragen verknüpft sind. Außerdem werden drei zusätzliche Workloads unterstützt: **Paginierte Berichte**, **Daten**Flüsse und **Ki**. Jede Arbeitsauslastung erfordert die Konfiguration des maximalen Arbeitsspeichers (als Prozentsatz des gesamten verfügbaren Speichers), der von der Arbeitsauslastung verwendet werden kann. Es ist wichtig zu verstehen, dass sich das Erhöhen der maximalen Speicher Belegungen auf die Anzahl der aktiven Modelle, die gehostet werden können, und den Durchsatz von Aktualisierungen auswirkt.
 
-Der Arbeitsspeicher wird Dataflows dynamisch zugeordnet, ist paginierten Berichten jedoch statisch zugeordnet. Der Grund für die Zuweisung von statisch der maximale Arbeitsspeicher ist, dass paginierte Berichte in einem gesicherten enthaltenen Raum für die Kapazität ausgeführt. Wenn die Einstellung paginierten Berichte Speicher, da hierdurch von verfügbarem Speicher für das Laden von Modellen, sollte vorsichtig vorgenommen werden.
+Der Arbeitsspeicher wird Dataflows dynamisch zugeordnet, ist paginierten Berichten jedoch statisch zugeordnet. Der Grund für die statische Zuordnung des maximalen Arbeitsspeichers besteht darin, dass paginierte Berichte innerhalb eines gesicherten, enthaltenen Raums der Kapazität ausgeführt werden. Beim Festlegen des Arbeitsspeichers für paginierte Berichte ist Vorsicht geboten, da der verfügbare Arbeitsspeicher für das Laden von Modellen reduziert wird.
 
 |                     | EM3                      | P1                       | P2                      | P3                       |
 |---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
 | Paginierte Berichte | N/V | 20 % Standard, mindestens 10 % | 20 % Standard, mindestens 5 % | 20 % Standard, mindestens 2,5 % |
 | Dataflows | 20 % Standard, mindestens 8 %  | 20 % Standard, mindestens 4 %  | 20 % Standard, mindestens 2 % | 20 % Standard, mindestens 1 %  |
-| AI | N/V | Standardwert 20 % 20 % minimale  | 20 % Standard, mindestens 10 % | 20 % Standard, mindestens 5 %  |
+| KI | N/V | Standardwert 20%; mindestens 20%  | 20 % Standard, mindestens 10 % | 20 % Standard, mindestens 5 %  |
 | | | | | |
 
-Löschen einer Premium-Kapazität ist möglich, und führen nicht das Löschen der Arbeitsbereiche und Inhalt. Stattdessen wird es keine zugewiesenen Arbeitsbereiche in gemeinsam genutzten Kapazität verschoben. Bei der Premium-Kapazität in einer anderen Region erstellt wurde, wird der Arbeitsbereich in gemeinsam genutzte Kapazität der home-Region verschoben werden.
+Das Löschen einer Premium-Kapazität ist möglich und führt nicht zum Löschen der Arbeitsbereiche und Inhalte. Stattdessen werden alle zugewiesenen Arbeitsbereiche in freigegebene Kapazität verschoben. Wenn die Premium-Kapazität in einer anderen Region erstellt wurde, wird der Arbeitsbereich in die freigegebene Kapazität der Start Region verschoben.
 
-### <a name="assigning-workspaces-to-capacities"></a>Kapazität Arbeitsbereiche zuweisen
+### <a name="assigning-workspaces-to-capacities"></a>Zuweisen von Arbeitsbereichen zu Kapazitäten
 
-Arbeitsbereiche können in einer Premium-Kapazität zugewiesen werden die **Power BI-Administrator** **Portal** "oder" - app-Arbeitsbereichs – klicken Sie im der **Arbeitsbereich** Bereich.
+Arbeitsbereiche können einer Premium-Kapazität im **Power BI admin**-**Portal** oder-für einen app-Arbeitsbereich im **Arbeitsbereich** zugewiesen werden.
 
-Kapazitätsadministratoren, sowie globale Office 365-Administratoren oder Power BI-Dienstadministratoren, können Sie Arbeitsbereiche zuweisen, in einen Massenimport der **Power BI-Administrator** **Portal**. BULK zugewiesen, kann auf anwenden:
+Kapazitäts Administratoren und globale Administratoren von Office 365 oder Power BI-Dienst Administratoren können Arbeitsbereiche im **Power BI Verwaltungs**  **Portal**Massen zuweisen. Die Massen Zuweisung kann auf Folgendes angewendet werden:
 
-- **Arbeitsbereiche nach Benutzern** : Alle Arbeitsbereiche, die im Besitz dieser Benutzer ab, einschließlich der persönlichen Arbeitsbereiche, werden die Premium-Kapazität zugewiesen. Dazu gehören die erneute Zuweisung von Arbeitsbereichen, wenn sie bereits einer anderen Premium-Kapazität zugewiesen werden. Darüber hinaus werden die Benutzer auch Berechtigungen für arbeitsbereichszuweisungen erteilt zugewiesen.
+- **Arbeitsbereiche nach Benutzern** : Alle Arbeitsbereiche im Besitz dieser Benutzer, einschließlich persönlicher Arbeitsbereiche, werden der Premium-Kapazität zugewiesen. Dies schließt die erneute Zuweisung von Arbeitsbereichen ein, wenn Sie bereits einer anderen Premium-Kapazität zugewiesen sind. Außerdem werden den Benutzern auch arbeitsbereichzuweisungs-Berechtigungen zugewiesen.
 
 - **Bestimmte Arbeitsbereiche**
-- **Arbeitsbereiche der gesamten Organisation** : Alle Arbeitsbereiche, einschließlich der persönlichen Arbeitsbereiche, werden die Premium-Kapazität zugewiesen. Darüber hinaus werden alle aktuellen und zukünftigen Benutzer die Berechtigungen für arbeitsbereichszuweisungen erteilt zugewiesen. \[[14](#endnote-14)\]
+- **Die Arbeitsbereiche der gesamten Organisation** : Alle Arbeitsbereiche, einschließlich persönlicher Arbeitsbereiche, werden der Premium-Kapazität zugewiesen. Außerdem werden allen aktuellen und zukünftigen Benutzern Arbeitsbereichs Zuweisungs Berechtigungen zugewiesen. \[[14](#endnote-14)\]
 
-Kann ein Arbeitsbereich einer Premium-Kapazität hinzugefügt werden, mithilfe der **Arbeitsbereich** Bereich, sodass der Benutzer ist sowohl ein arbeitsbereichsadministrator und Zuweisungsberechtigungen hat.
+Ein Arbeitsbereich kann einer Premium-Kapazität hinzugefügt werden, indem der **Arbeitsbereichs Bereich** verwendet wird, in dem der Benutzer sowohl als Arbeitsbereichs Administrator dient als auch als Zuweisungs Berechtigung
 
-![Verwenden im Arbeitsbereich einer Premium-Kapazität einen Arbeitsbereich zuweisen](media/whitepaper-premium-deployment/assign-workspace-capacity.png)
+![Verwenden des Arbeitsbereichs zum Zuweisen eines Arbeitsbereichs zu einer Premium-Kapazität](media/whitepaper-premium-deployment/assign-workspace-capacity.png)
 
-Arbeitsbereichsadministratoren können einen Arbeitsbereich zu einer Kapazität (für gemeinsam genutzte Kapazität) entfernen, ohne erforderliche Zuweisung-Berechtigung. Entfernen von Arbeitsbereichen aus dedizierten Kapazitäten effektiv verschiebt den Arbeitsbereich auf gemeinsam genutzte Kapazität. Beachten Sie, dass einen Arbeitsbereich aus einer Premium-Kapazität entfernen negative Folgen, dies führt z. B. freigegebene Inhalte, die nicht verfügbar für Power BI Free kann lizenzierte Benutzer oder die Unterbrechung der geplanten Aktualisierung, wenn sie die zulässige Anzahl unterstützt überschreiten von gemeinsam genutzten Kapazitäten.
+Arbeitsbereichs Administratoren können einen Arbeitsbereich aus einer Kapazität (freigegebene Kapazität) entfernen, ohne dass eine Zuweisungs Berechtigung erforderlich ist. Durch das Entfernen von Arbeitsbereichen aus dedizierten Kapazitäten wird der Arbeitsbereich effektiv in freigegebene Kapazität verlagert. Beachten Sie, dass das Entfernen eines Arbeitsbereichs aus einer Premium-Kapazität zu negativen Konsequenzen führen kann, die beispielsweise dazu führen, dass freigegebene Inhalte nicht mehr für Power BI kostenlose lizenzierte Benutzer verfügbar sind oder wenn die geplante Aktualisierung angehalten wird, wenn Sie die unterstützten durch freigegebene Kapazitäten.
 
-Im Power BI-Dienst wird ein Arbeitsbereich einer Premium-Kapazität zugewiesen ganz einfach durch das Rautensymbol identifiziert, der den Namen des Arbeitsbereichs erweitert.
+Im Power BI-Dienst wird ein Arbeitsbereich, der einer Premium-Kapazität zugewiesen ist, leicht durch das Diamant Symbol identifiziert, das den Namen des Arbeitsbereichs ähnelt.
 
-![Der Identifizierung eines Arbeitsbereichs zu einer Premium-Kapazität zugewiesen](media/whitepaper-premium-deployment/premium-diamond-icon.png)
+![Identifizieren eines Arbeitsbereichs, der einer Premium-Kapazität zugewiesen ist](media/whitepaper-premium-deployment/premium-diamond-icon.png)
 
 ### <a name="monitoring-capacities"></a>Überwachen von Kapazitäten
 
-Überwachen von Premium-Kapazitäten bietet Administratoren einen Überblick über die Leistung von Kapazitäten. Kapazitäten können überwacht werden, mithilfe der [Kapazitätsmetriken für Power BI Premium-app](service-admin-premium-monitor-capacity.md) oder [Power BI-Verwaltungsportal](service-admin-premium-monitor-portal.md).
+Das Überwachen von Premium-Kapazitäten bietet Administratoren ein Verständnis für die Leistung der Kapazitäten. Kapazitäten können mithilfe der [Power BI Premium kapazitätsmetriken-App](service-admin-premium-monitor-capacity.md) oder des [Power BI admin-Portals](service-admin-premium-monitor-portal.md)überwacht werden.
 
 #### <a name="interpreting-metrics"></a>Interpretieren von Metriken
 
-Metriken sollten überwacht werden, um einen Überblick über Baseline-Nutzung und Workload-ressourcenaktivität herzustellen. Wenn die Kapazität langsam ist, es ist wichtig zu verstehen, welche Metriken überwacht werden, und die Schlussfolgerungen, die Sie vornehmen können.
+Metriken sollten überwacht werden, um ein grundlegendes Verständnis der Ressourcenverwendung und der workloadaktivität zu erstellen. Wenn die Kapazität langsam wird, ist es wichtig zu wissen, welche Metriken überwacht werden müssen und welche Konsequenzen Sie treffen können.
 
-Im Idealfall sollten Abfragen führen Sie innerhalb einer Sekunde reaktionsfähige Benutzeroberflächen für die benutzerberichterstattung bereitzustellen und höhere abfragedurchsatz zu aktivieren. Es ist in der Regel weniger von Belang, wenn Hintergrundprozesse – einschließlich Aktualisierungen - längere Zeiträume abgeschlossen werden.
+Im Idealfall sollten Abfragen innerhalb einer Sekunde durchgeführt werden, um Benutzer reaktionsfähige Funktionen für Berichts Benutzer bereitzustellen und einen höheren Abfrage Durchsatz zu ermöglichen. Es ist in der Regel weniger von Bedeutung, wenn Hintergrundprozesse, einschließlich Aktualisierungen, längere Zeit zum Abschluss benötigen.
 
-Im Allgemeinen können langsam Berichte ein Anzeichen für eine Überhitzung Kapazität sein. Wenn Berichte nicht geladen werden, ist dies ein Hinweis auf eine übermäßige auseinandersetzungen Kapazität. In beiden Situationen kann die Hauptursache auf vielen Faktoren ab, einschließlich zurückzuführen sein:
+Im Allgemeinen können langsame Berichte ein Hinweis auf eine über-Heiz-Kapazität sein. Wenn Berichte nicht geladen werden können, ist dies ein Hinweis auf eine über-beheizte Kapazität. In beiden Situationen könnte die Ursache zahlreiche Faktoren sein, darunter:
 
-- **Abfragen mit Fehlern** sicherlich angeben arbeitsspeicherauslastung und, die ein Modell konnte nicht in den Arbeitsspeicher geladen werden. Power BI-Dienst versucht, die Laden eines Modells für 30 Sekunden, bevor ein Fehler auftritt.
+- **Fehlgeschlagene Abfragen** weisen auf hohe Speicherauslastung hin, und ein Modell konnte nicht in den Arbeitsspeicher geladen werden. Der Power BI-Dienst versucht, ein Modell 30 Sekunden lang zu laden, bevor ein Fehler auftritt.
 
-- **Eine übermäßige Abfrage Wartezeiten** kann verschiedene Ursachen sein:
-  - Die Notwendigkeit von Power BI-Dienst zum ersten Modelle entfernen, und Laden Sie das Modell bei-werden abgefragt (Beachten Sie, dass entfernungsraten mit höhere Dataset nur einen Überblick über die Kapazität Belastung nicht sind, es sei denn, begleitet durch lange Wartezeiten der Abfrage, die angeben, arbeitsspeicherüberlastung)
-  - Laden des Modells Zeiten (vor allem die Wartezeit ein großen Modells in den Arbeitsspeicher zu laden)
-  - Abfragen mit langer
-  - Zu viele LC\DQ-Verbindungen (überschreiten von Grenzwerten für die Kapazität)
-  - Die CPU-Auslastung
-  - Komplexe Berichtsentwürfe mit einer übermäßigen Anzahl von visuellen Elementen auf einer Seite (Beachten Sie, dass jedes visuelle Element um eine Abfrage handelt)
-- **Lange Abfragen dauern** kann bedeuten, dass das Modell Entwürfe nicht optimiert sind, insbesondere, wenn mehrere Datasets in einer Kapazität aktiv sind, und nur ein Dataset lange abfragedauern erzeugt,. Dies deutet darauf hin, dass die Kapazität ausreichend Ressourcen zugewiesen ist und das Dataset in Frage suboptimale oder nur langsam ist. Abfragen mit langer kann problematisch sein, wie sie den Zugriff auf Ressourcen, die erforderlich sind, durch andere Prozesse blockieren können.
-- **Aktualisieren Sie lange Wartezeiten oder KI-Aufruf Wartezeiten** ein Hinweis auf nicht genügend Arbeitsspeicher aufgrund von vielen active Modelle Arbeitsspeicher belegen oder, dass eine Aktualisierung der problematische andere blockiert werden aktualisiert (größer als parallele Aktualisierung Grenzwerte).
+- **Übermäßige Abfrage Wartezeiten** können aus verschiedenen Gründen auftreten:
+  - Der Power BI-Dienst zuerst das Modell (en) entfernen und dann das auf die Abfrage abgefragte Modell laden (denken Sie daran, dass höhere Entfernungs Raten für Datasets allein keine Anzeichen für Kapazitäts Belastung sind, es sei denn, es werden lange Abfrage Wartezeiten begleitet, die eine Speicher Überlastung angeben).
+  - Ladezeiten von Modellen (insbesondere das warten auf das Laden eines großen Modells in den Speicher)
+  - Abfragen mit langer Ausführungszeit
+  - Zu viele lc\dq-Verbindungen (überschreiten der Kapazitäts Limits)
+  - CPU-Sättigung
+  - Komplexe Berichtsentwürfe mit einer übermäßigen Anzahl von visuellen Elementen auf einer Seite (denken Sie daran, dass jede Visualisierung eine Abfrage ist)
+- **Lange Abfrage dauern** kann darauf hindeuten, dass modellentwürfe nicht optimiert werden, insbesondere dann, wenn mehrere Datasets in einer Kapazität aktiv sind und nur ein DataSet lange Abfrage dauern erzeugt. Dies deutet darauf hin, dass die Kapazität ausreichend beschafft ist und dass das Dataset im Frage Bereich suboptimal ist oder nur langsam ist. Abfragen mit langer Ausführungszeit können problematisch sein, da Sie den Zugriff auf Ressourcen blockieren können, die von anderen Prozessen benötigt werden.
+- **Lange Aktualisierungs Wartezeiten oder AI-Anrufe** weisen auf unzureichenden Arbeitsspeicher hin, weil viele aktive Modelle Arbeitsspeicher belegen, oder dass eine problematische Aktualisierung andere Aktualisierungen blockiert (überschreitet parallele Aktualisierungs Limits).
 
-Eine ausführlichere Erläuterung zur Verwendung der Metriken als Nächstes finden Sie in der [Optimieren von Premium-Kapazitäten](#optimizing-premium-capacities) Abschnitt.
+Eine ausführlichere Erläuterung der Verwendung der Metriken finden Sie im Abschnitt Optimieren von [Premium-Kapazitäten](#optimizing-premium-capacities) .
 
-## <a name="optimizing-premium-capacities"></a>Optimieren der Premium-Kapazitäten
+## <a name="optimizing-premium-capacities"></a>Optimieren von Premium-Kapazitäten
 
-Beim Premium-Kapazität Leistungsprobleme auftreten, werden eine gängige Methode für die erste Optimierung oder bereits bereitgestellte Lösungen zum Wiederherstellen von zulässigen Antwortzeiten zu optimieren. Der überschreibende Grund ist, um zu vermeiden, erwerben zusätzlichen Premium-Kapazität, es sei denn, es gerechtfertigt werden kann.
+Wenn Leistungsprobleme bei der Premium-Kapazität auftreten, besteht der erste Ansatz darin, bereits bereitgestellte Lösungen zu optimieren oder zu optimieren, um akzeptable Antwortzeiten wiederherzustellen. Die über schreibende Begründung besteht darin, den Erwerb zusätzlicher Premium-Kapazität zu vermeiden, es sei denn, Sie
 
-Wenn zusätzlicher Premium-Kapazität erforderlich ist, stehen Ihnen zwei Optionen, die weiter unten in diesem Abschnitt erläutert werden:
+Wenn zusätzliche Premium-Kapazität erforderlich ist, gibt es zwei Optionen, die später in diesem Abschnitt erläutert werden:
 
 - Zentrales hochskalieren der Premium-Kapazität
-- Hinzufügen einer neuen Premium-Kapazität
+- Neue Premium-Kapazität hinzufügen
 
-Schließlich beendet testen, Ansätze und Premium-Kapazitäten in diesem Abschnitt.
+Schließlich wird in diesem Abschnitt der Test Ansatz und die Premium-Kapazitäts Größe abgeschlossen.
 
-### <a name="general-best-practices"></a>Allgemein empfohlene Vorgehensweisen
+### <a name="general-best-practices"></a>Allgemeine bewährte Methoden
 
-Wenn am besten erreichen wollen sind Auslastung und Leistung gibt es einige bewährten Methoden, die in Form allgemeiner Empfehlungen an Bord ergriffen werden können. Dazu gehören:
+Beim Erreichen der optimalen Nutzung und Leistung gibt es einige bewährte Methoden, die im Allgemeinen als allgemeine Empfehlungen angesehen werden können. Dazu gehören:
 
-- Verwendung von app-Arbeitsbereiche anstelle der persönlichen Arbeitsbereiche
-- Trennen geschäftskritische und Self-Service-BI (SSBI) direkt in verschiedenen Kapazitäten
+- Verwenden von App-Arbeitsbereichen anstelle persönlicher Arbeitsbereiche
+- Trennen von geschäftskritischen und Self-Service-BI (ssbi) in unterschiedliche Kapazitäten
 
-  ![Aufteilen von unternehmenskritisch und Self-Service-BI in verschiedenen Kapazitäten](media/whitepaper-premium-deployment/separate-capacities.png)
+  ![Aufteilen von geschäftskritischen und Self-Service-BI in verschiedene Kapazitäten](media/whitepaper-premium-deployment/separate-capacities.png)
 
-- Wenn für die Freigabe von Inhalten nur mit Power BI Pro-Benutzer möglicherweise keine Notwendigkeit zum Speichern des Inhalts in einer dedizierten Kapazität
-- Verwenden Sie dedizierte Kapazität bei der Suche um eine bestimmte Aktualisierungszeit zu erreichen, oder wenn bestimmte Funktionen sind erforderlich, z. B. große Datasets oder paginierten reporting
+- Wenn Inhalte nur für Power BI pro Benutzer freigegeben werden, ist es möglicherweise nicht erforderlich, den Inhalt in einer dedizierten Kapazität zu speichern.
+- Verwenden Sie dedizierte Kapazitäten, wenn Sie eine bestimmte Aktualisierungszeit erreichen möchten oder wenn bestimmte Features erforderlich sind, z. b. große Datasets oder paginierte Berichte.
 
-### <a name="addressing-common-questions"></a>Allgemeine Fragen
+### <a name="addressing-common-questions"></a>Umgang mit häufig gestellten Fragen
 
-Optimieren der Power BI Premium-Bereitstellungen ist ein komplexes Thema, die einen Überblick über die arbeitsauslastungsanforderungen, verfügbaren Ressourcen und deren effektive Verwendung betreffen.
+Die Optimierung von Power BI Premium Bereitstellungen ist ein komplexes Thema, das ein Verständnis der workloadanforderungen, der verfügbaren Ressourcen und ihrer effektiven Verwendung umfasst.
 
-Dieses Thema behandelt die sieben häufig gestellte Fragen, beschreiben mögliche Probleme und Beschreibungen und Informationen zum Identifizieren und beheben Sie diese.
+In diesem Thema werden sieben häufige Supportfragen behandelt, die mögliche Probleme und Erläuterungen beschrieben werden, sowie Informationen dazu, wie Sie identifiziert und aufgelöst werden.
 
-#### <a name="why-is-the-capacity-slow-and-what-can-i-do"></a>Warum ist die Kapazität, die langsam, und was kann ich tun?
+#### <a name="why-is-the-capacity-slow-and-what-can-i-do"></a>Warum ist die Kapazität langsam, und was kann ich tun?
 
-Es gibt viele Gründe, die zu einer langsamen Premium-Kapazität beitragen können. Diese Frage erfordert Weitere Informationen zu verstehen, was mit langsamen gemeint ist. Sind Berichte langsam geladen? Oder werden sie nicht geladen werden? Sind Sie berichtsvisuals langsam geladen oder aktualisiert werden, wenn der Benutzer mit dem Bericht interagieren? Werden Aktualisierungen dauert länger als erwartet wird, oder bereits aufgetreten ist?
+Es gibt viele Gründe, die zu einer langsamen Premium-Kapazität beitragen können. Diese Frage erfordert weitere Informationen, um zu verstehen, was durch langsam gemeint ist. Werden Berichte langsam geladen? Oder werden Sie nicht geladen? Können Berichts Visualisierungen langsam geladen oder aktualisiert werden, wenn Benutzer mit dem Bericht interagieren? Dauert das Fertigstellen von Aktualisierungen länger als erwartet oder bereits.
 
-Müssen erhielten einen Überblick über den Grund, können Sie anschließend beginnen, zu untersuchen. Antworten auf die folgenden sechs Fragen helfen Ihnen, mehr zu adressieren bestimmter Probleme.
+Nachdem Sie sich mit den Grundlagen vertraut gemacht haben, können Sie mit der Untersuchung beginnen. Antworten auf die folgenden sechs Fragen helfen Ihnen, spezifischere Probleme zu beheben.
 
-#### <a name="what-content-is-using-up-my-capacity"></a>Welche Inhalte wird meine Kapazität verwenden?
+#### <a name="what-content-is-using-up-my-capacity"></a>Welche Inhalte werden von meiner Kapazität verwendet?
 
-Sie können der **Kapazitätsmetriken für Power BI Premium** app zum Filtern von Kapazität und überprüfen die Leistungsmetriken für den Inhalt des Arbeitsbereichs. Es ist möglich, überprüfen die Leistung Metriken und die ressourcennutzung pro Stunde für die letzten sieben Tage für den gesamten Inhalt in einer Premium-Kapazität gespeichert. Dies ist häufig der erste Schritt bei der Problembehandlung für eine allgemeine Angelegenheiten handelt, zur Leistung für Premium-Kapazität.
+Mithilfe der **Power BI Premium Capacity Metrics** -App können Sie nach Kapazität Filtern und Leistungsmetriken für Arbeitsbereichs Inhalte überprüfen. Es ist möglich, die Leistungsmetriken und die Ressourcennutzung in den letzten sieben Tagen für alle in einer Premium-Kapazität gespeicherten Inhalte stündlich zu überprüfen. Dies ist häufig der erste Schritt bei der Problembehandlung eines allgemeinen Problems in Bezug auf die Premium-Kapazitäts Leistung.
 
-Wichtige zu überwachende Metriken umfassen:
+Zu überwachende Schlüsselmetriken sind:
 
-- Durchschnittliche CPU-Nutzung und die hohe Auslastung-Anzahl
-- Durchschnittliche, Arbeitsspeicher und Anzahl der hohe Auslastung und speicherauslastung für bestimmte Datasets, Datenflüsse und paginierte Berichte
-- Aktiver Datasets, die in den Arbeitsspeicher geladen
-- Durchschnittliche und maximale abfragedauern
-- Durchschnittliche abfragewartezeiten
-- Durchschnittliche Dataset und den Datenfluss aktualisieren Zeiten
-- Durchschnittliche AI zweimal aufrufen, und der Wartezeiten
+- Durchschnittliche CPU-und hohe Auslastung
+- Durchschnittlicher Arbeitsspeicher und hohe Auslastung und Arbeitsspeicher Auslastung für bestimmte Datasets, Datenflüsse und paginierte Berichte
+- Aktive Datasets geladen in den Arbeitsspeicher
+- Durchschnittliche und maximale Abfrage Dauer
+- Durchschnittliche Abfrage Wartezeit
+- Durchschnittliches DataSet und Datenfluss Aktualisierungszeiten
+- Durchschnittliche Ki-Anrufzeiten und Wartezeiten
 
-Darüber hinaus zeigt aktiven Arbeitsspeichers in der Power BI Premium-Kapazität Metriken-App, die Gesamtmenge des Arbeitsspeichers für einen Bericht, der nicht entfernt werden kann, da es in den letzten drei Minuten verwendet wird. Eine hohe Spitze in der Wartezeit für die Aktualisierung konnte mit einem großen und/oder sehr aktiven Dataset korreliert werden.
+Außerdem zeigt der aktive Arbeitsspeicher in der APP für die Power BI Premium kapazitätsmetriken die Gesamtmenge des Arbeitsspeichers an, die einem Bericht zugeordnet ist, der nicht entfernt werden kann, da er in den letzten drei Minuten verwendet wird. Eine hohe Spitze bei der Aktualisierungs Wartezeit könnte mit einem großen und/oder aktiven DataSet korreliert werden.
 
-Das Diagramm "Top 5 von Durchschnittsdauer" hebt hervor, die fünf Datasets, paginierte Berichte, Datenflüsse und AI-Aufrufe, die kapazitätsressourcen verbrauchen. Inhalte in der Top-fünf-Listen, sind Kandidaten für die Untersuchung und mögliche Optimierung.
+Im Diagramm "Top 5 by Average Duration" werden die fünf wichtigsten Datasets, paginierten Berichte, Datenflüsse und Ki-Aufrufe hervorgehoben, die Kapazitäts Ressourcen belegen. Der Inhalt in den fünf wichtigsten Listen ist Kandidaten für die Untersuchung und mögliche Optimierung.
 
-#### <a name="why-are-reports-slow"></a>Warum Berichte sind langsam?
+#### <a name="why-are-reports-slow"></a>Warum sind Berichte langsam?
 
-Die folgenden Tabellen zeigen mögliche Probleme sowie Möglichkeiten zu identifizieren und behandeln.
+Die folgenden Tabellen enthalten mögliche Probleme und Möglichkeiten, Sie zu identifizieren und zu behandeln.
 
-##### <a name="insufficient-capacity-resources"></a>Nicht genügend Kapazität-Ressourcen
+##### <a name="insufficient-capacity-resources"></a>Unzureichende Kapazitäts Ressourcen
 
-| Mögliche Erklärungen | Identifizieren von | Gewusst wie: Auflösen |
+| Mögliche Erläuterungen | Identifizieren | Auflösen |
 | --- | --- | --- |
-| Hohe active Gesamtspeicher (Modell kann nicht entfernt werden, weil es in den letzten drei Minuten verwendet wird)<br><br> Mehrere hohe Datenverkehrsspitzen abfragewartezeiten<br><br> Mehrere hohe Spitzen bei der Aktualisierung von Wartezeiten | Überwachen von Metriken zum Arbeitsspeicher \[ [18](#endnote-18)\], und der Anzahl der Entfernung \[ [19](#endnote-19)\] | Verringern Sie die Modellgröße, oder konvertieren Sie in den DirectQuery-Modus – finden Sie unter den [Modelle optimieren](#optimizing-models) Thema in diesem Abschnitt<br><br> Zentrales hochskalieren der Kapazität<br><br> Zuweisen des Inhalts zu einer anderen Kapazität |
+| Hoher gesamter aktiver Arbeitsspeicher (das Modell kann nicht entfernt werden, weil es in den letzten drei Minuten verwendet wird)<br><br> Mehrere hohe Spitzen in den Abfrage Wartezeiten<br><br> Mehrere hohe Spitzen in den Aktualisierungs Wartezeiten | Überwachen von \[arbeitsspeichermetriken [18](#endnote-18)\]und Entfernungs Anzahl [19](#endnote-19) \[\] | Verringern der Modell Größe oder konvertieren in den directquery-Modus: Weitere Informationen finden Sie im Thema [Optimieren von Modellen](#optimizing-models) in diesem Abschnitt.<br><br> Zentrales hochskalieren der Kapazität<br><br> Zuweisen des Inhalts zu einer anderen Kapazität |
 
 ##### <a name="inefficient-report-designs"></a>Ineffiziente Berichtsentwürfe
 
-| Mögliche Erklärungen | Identifizieren von | Gewusst wie: Auflösen |
+| Mögliche Erläuterungen | Identifizieren | Auflösen |
 | --- | --- | --- |
-| Seiten des Berichts enthalten zahlreiche visuelle Elemente, die (interaktive Filterung kann mindestens eine Abfrage pro visuellem auszulösen).<br><br> Visuelle Elemente abgerufen werden mehr Daten als nötig | Überprüfen Sie die Berichtsentwürfe<br><br> Benutzer des Berichts Interview zu verstehen, wie sie mit den Berichten interagieren.<br><br> Überwachen von Dataset-abfragemetriken \[ [20](#endnote-20)\] | Neuentwurf von Berichten mit weniger Visualisierungen pro Seite |
+| Berichts Seiten enthalten zahlreiche visuelle Elemente (interaktive Filterung kann mindestens eine Abfrage pro Visualisierung auslöst)<br><br> Visuelle Elemente rufen mehr Daten als notwendig ab | Berichtsentwürfe überprüfen<br><br> Überprüfen der Berichts Benutzer, um zu verstehen, wie Sie mit den Berichten interagieren<br><br> Überwachen von DataSet \[-Abfrage Metriken [20](#endnote-20)\] | Umgestalten von Berichten mit weniger visuellen Elementen pro Seite |
 
-##### <a name="dataset-slow-especially-when-reports-have-previously-performed-well"></a>DataSet verlangsamen (insbesondere wenn Berichte vorher auch ausgeführt haben)
+##### <a name="dataset-slow-especially-when-reports-have-previously-performed-well"></a>Das DataSet ist langsam (vor allem, wenn Berichte bereits erfolgreich ausgeführt wurden).
 
-| Mögliche Erklärungen | Identifizieren von | Gewusst wie: Auflösen |
+| Mögliche Erläuterungen | Identifizieren | Auflösen |
 | --- | --- | --- |
-| Zunehmend große Mengen an Daten importieren<br><br> Komplexen oder ineffizienten Berechnungslogik, einschließlich der RLS-Rollen<br><br> Modell, die nicht vollständig optimiert.<br><br> (DQ/LC) Gateway-Latenz<br><br> Langsame Antwortzeiten für DQ Quelle Abfragen | Überprüfen Sie die Modell-Entwürfe<br><br> Überwachen von Leistungsindikatoren für gateway | Finden Sie unter den [Modelle optimieren](#optimizing-models) Thema in diesem Abschnitt |
+| Zunehmend große Mengen von Import Daten<br><br> Komplexe oder ineffiziente Berechnungs Logik, einschließlich RLS-Rollen<br><br> Modell nicht vollständig optimiert<br><br> (DQ/LC) Gatewaylatenz<br><br> Langsame Antwortzeiten der DQ-Quell Abfrage | Überprüfen von Modell Entwürfen<br><br> Überwachen von Gateway-Leistungsindikatoren | Weitere Informationen finden Sie im Thema [Optimierungsmodelle](#optimizing-models) in diesem Abschnitt. |
 
-##### <a name="high-concurrent-report-usage"></a>Hohe gleichzeitige Berichte zur Nutzung
+##### <a name="high-concurrent-report-usage"></a>Hohe gleichzeitige Bericht Verwendung
 
-| Mögliche Erklärungen | Identifizieren von | Gewusst wie: Auflösen |
+| Mögliche Erläuterungen | Identifizieren | Auflösen |
 | --- | --- | --- |
-| Hohe abfragewartezeiten<br><br> Die CPU-Auslastung<br><br> DQ/LC verbindungsbeschränkungen überschritten | Überwachen der CPU-Auslastung \[ [21](#endnote-21)\], abfragewartezeiten und DQ/LC Auslastung \[ [22](#endnote-22) \] Metriken + abfragedauern – Wenn schwankt kann Angeben von Parallelitätsproblemen | Zentrales hochskalieren der Kapazitätsbedarfs oder den Inhalt einer anderen Kapazität zuzuweisen.<br><br> Neuentwurf von Berichten mit weniger Visualisierungen pro Seite |
+| Hohe Abfrage Wartezeiten<br><br> CPU-Sättigung<br><br> DQ/LC-Verbindungs Limits überschritten | Überwachen der \[CPU-Auslastung [21](#endnote-21)\], Abfrage Wartezeiten und DQ \[/LC-Auslastung [22](#endnote-22) \] Metriken + Abfrage Dauer – Wenn die Fluktuation auf Parallelitäts Probleme hindeuten kann | Zentrales hochskalieren der Kapazität oder Zuweisen des Inhalts zu einer anderen Kapazität<br><br> Umgestalten von Berichten mit weniger visuellen Elementen pro Seite |
 
-#### <a name="why-are-reports-not-loading"></a>Warum Berichte werden nicht geladen?
+#### <a name="why-are-reports-not-loading"></a>Warum werden Berichte nicht geladen?
 
-Wenn Berichte nicht zum Laden der Daten ist ein Worst-Case-Szenario, und ein sicheres Zeichen, dass die Kapazität nicht genügend Arbeitsspeicher hat und zu auseinandersetzungen. Dies kann auftreten, wenn alle geladenen Modelle sind aktiv, die abgefragt wird, und können nicht entfernt werden, und alle Aktualisierungsvorgänge wurde angehalten oder verzögert wird. Power BI-Dienst versucht, laden das Dataset für 30 Sekunden, und der Benutzer ist der Fehler mit der eine Empfehlung, versuchen es in Kürze ordnungsgemäß benachrichtigt.
+Wenn Berichte nicht geladen werden können, handelt es sich um ein ungünstigste Szenario und ein sicheres Vorzeichen, dass die Kapazität nicht über genügend Arbeitsspeicher verfügt. Dies kann vorkommen, wenn alle geladenen Modelle aktiv abgefragt werden und daher nicht entfernt werden können und alle Aktualisierungs Vorgänge angehalten oder verzögert wurden. Der Power BI-Dienst versucht, das DataSet 30 Sekunden lang zu laden, und der Benutzer wird ordnungsgemäß über den Fehler benachrichtigt, und es wird versucht, den Vorgang in Kürze erneut auszuführen.
 
-Es gibt derzeit keine Metrik für den Bericht von Ladefehlern überwachen. Sie können das Potenzial für dieses Problem durch Überwachung Systemspeicher, insbesondere der höchsten Auslastung und die Uhrzeit der höchsten Auslastung ermitteln. Hohe Dataset entfernungen und lange Dataset Aktualisierung durchschnittliche Wartezeit konnte wird empfohlen, dieses Problem auftritt.
+Zurzeit gibt es keine zu überwachende Metrik für Fehler beim Laden des Berichts. Sie können das Potenzial für dieses Problem erkennen, indem Sie den Systemspeicher überwachen, insbesondere die höchste Auslastung und die höchste Auslastung der höchsten Auslastung. Das Löschen großer Datasets und die durchschnittliche Wartezeit von Datasets können darauf hindeuten, dass dieses Problem auftritt.
 
-In diesem nur sehr selten der Fall ist, kann dies nicht Prioritäten betrachtet werden. Benutzer des Berichts werden darüber informiert, dass der Dienst ausgelastet ist und, dass sie nach kurzer Zeit wiederholt werden soll. In diesem zu häufig der Fall ist, kann das Problem durch zentrale Skalierung der Premium-Kapazität oder durch Zuweisen des Inhalts einer anderen Kapazität aufgelöst werden.
+Wenn dies nur sehr selten auftritt, wird dies möglicherweise nicht als Prioritäts Problem betrachtet. Berichts Benutzer werden darüber informiert, dass der Dienst ausgelastet ist und dass Sie nach kurzer Zeit wiederholt werden sollten. Wenn dies zu häufig auftritt, kann das Problem behoben werden, indem die Premium-Kapazität zentral hochskaliert oder der Inhalt einer anderen Kapazität zugewiesen wird.
 
-Capacity Admins (und Power BI-Dienstadministratoren) können überwachen, die **Abfragefehlern** Metrik, um zu bestimmen, wenn dies geschieht. Sie können auch die Kapazität, die alle Vorgänge bei einem System Überladung zurücksetzen neu starten.
+Kapazitäts Administratoren (und Power BI-Dienst Administratoren) können die Metrik " **Abfrage Fehler** " überwachen, um zu bestimmen, wann dies geschieht. Sie können auch die Kapazität neu starten und alle Vorgänge im Fall der Systemüberlastung zurücksetzen.
 
-#### <a name="why-are-refreshes-not-starting-on-schedule"></a>Warum werden die Aktualisierungen nicht nach Zeitplan gestartet?
+#### <a name="why-are-refreshes-not-starting-on-schedule"></a>Warum werden Aktualisierungen nicht nach Zeitplan gestartet?
 
-Startzeiten der geplanten Aktualisierung sind nicht garantiert. Denken Sie daran, dass es sich bei Power BI-Dienst immer interaktive Vorgänge über Hintergrundvorgänge priorisieren wird. Datenaktualisierung ist eine Hintergrundoperation, die auftreten können, wenn zwei Bedingungen erfüllt sind:
+Die Startzeiten für die geplante Aktualisierung sind nicht garantiert. Beachten Sie, dass die Power BI-Dienst immer interaktive Vorgänge im Hintergrund Vorgängen priorisieren wird. Die Aktualisierung ist ein Hintergrund Vorgang, der auftreten kann, wenn zwei Bedingungen erfüllt sind:
 
-- Ausreichend Arbeitsspeicher ist verfügbar
-- Die Anzahl der unterstützten gleichzeitige Aktualisierungen für die Premium-Kapazität wurde nicht überschritten.
+- Der Arbeitsspeicher ist ausreichend.
+- Die Anzahl der unterstützten gleichzeitigen Aktualisierungen für die Premium-Kapazität wird nicht überschritten.
 
-Wenn die Bedingungen nicht erfüllt sind, wird die Aktualisierung in die Warteschlange, bis die Bedingungen günstig sind.
+Wenn die Bedingungen nicht erfüllt sind, wird die Aktualisierung in die Warteschlange eingereiht, bis die Bedingungen günstig sind.
 
-Eine vollständige Aktualisierung Denken Sie daran, dass mindestens doppelt die aktuellen Dataset Arbeitsspeichergröße erforderlich ist. Wenn nicht genügend Arbeitsspeicher verfügbar ist, kann nicht die Aktualisierung beginnen, bis Modell Entfernung gibt Speicherplatz frei – Dies verzögert, bedeutet bis ein oder mehrere Datasets inaktiv und entfernt werden kann.
+Beachten Sie bei einer vollständigen Aktualisierung, dass mindestens die doppelte Speichergröße des aktuellen Datasets erforderlich ist. Wenn nicht genügend Arbeitsspeicher verfügbar ist, kann die Aktualisierung erst beginnen, wenn das Entfernen des Modells den Arbeitsspeicher freigibt. Dies bedeutet Verzögerungen, bis ein oder mehrere Datasets inaktiv werden und entfernt werden können.
 
-Denken Sie daran, dass die unterstützte Anzahl von maximalen gleichzeitigen Aktualisierungen 1,5 Mal die Back-End-V-Kerne, aufgerundet festgelegt ist.
+Beachten Sie, dass die unterstützte maximale Anzahl von gleichzeitigen Aktualisierungen auf das 1,5-fache des Back-End-v-Kerne festgelegt ist.
 
-Eine geplante Aktualisierung schlägt fehl, wenn er beginnen kann nicht vor die nächste geplante Aktualisierung aufgrund von zu beginnen. Eine bedarfsgesteuerte Aktualisierung manuell ausgelöst werden, über die Benutzeroberfläche versucht, die bis zu drei Mal ausführen, bevor ein Fehler auftritt.
+Eine geplante Aktualisierung schlägt fehl, wenn Sie nicht begonnen werden kann, bevor die nächste geplante Aktualisierung beginnt. Wenn eine Bedarfs gesteuerte Aktualisierung manuell von der Benutzeroberfläche aus ausgelöst wird, wird versucht, bis zu drei Mal auszuführen, bevor ein Fehler auftritt.
 
-Capacity Admins (und Power BI-Dienstadministratoren) können überwachen, die **durchschnittliche aktualisieren Wartezeit (Minuten)** Metrik für die durchschnittliche Verzögerung zwischen dem geplanten Zeitpunkt und dem Beginn des Vorgangs zu ermitteln.
+Kapazitäts Administratoren (und Power BI-Dienst Administratoren) können die Metrik " **durchschnittliche Aktualisierungs Wartezeit (Minuten)** " überwachen, um die durchschnittliche Verzögerung zwischen der geplanten Zeit und dem Start des Vorgangs zu bestimmen.
 
-Während eine administrative Priorität für die beeinflussen, in-Time-Daten in der Regel nicht aktualisiert werden soll, stellen Sie sicher, dass genügend Arbeitsspeicher verfügbar ist. Dies kann beinhalten, Datasets, auf die Kapazitäten, die mit bekannten genügend Ressourcen zu isolieren. Es ist auch möglich, dass Administratoren mit dem Besitzer von Datasets koordinieren konnte können staffeln, oder verringern Sie die geplante Aktualisierungen auf Zeiten, Konflikte zu minimieren. Beachten Sie, dass es nicht möglich, dass ein Administrator die Warteschlange für die Aktualisierung anzeigen oder zum Abrufen von Datasets plant.
+Obwohl es sich in der Regel nicht um eine administrative Priorität handelt, müssen Sie sicherstellen, dass genügend Arbeitsspeicher verfügbar ist Dies kann das Isolieren von Datasets auf Kapazitäten mit bekannten ausreichenden Ressourcen beinhalten. Es ist auch möglich, dass Administratoren sich mit DataSet-Besitzern koordinieren, um geplante Daten Aktualisierungszeiten zu verkürzen oder zu reduzieren, um Konflikte zu minimieren. Beachten Sie, dass es nicht möglich ist, dass ein Administrator die Aktualisierungs Warteschlange anzeigen oder datasetzeitpläne abrufen kann.
 
-#### <a name="why-are-refreshes-slow"></a>Warum werden aktualisiert, die langsam?
+#### <a name="why-are-refreshes-slow"></a>Warum sind Aktualisierungen langsam?
 
-Aktualisierungen kann slow- oder wahrgenommene langsam ist (wie die vorherige Frage Adressen allgemeine) sein.
+Aktualisierungen können langsam sein oder als langsam angesehen werden (als vorherige häufige Frage Adressen).
 
-Wenn die Aktualisierung in der Tat langsam ist, kann es verschiedene Ursachen sein:
+Wenn die Aktualisierung tatsächlich langsam ist, kann dies mehrere Ursachen haben:
 
-- Unzureichende CPU (Aktualisierung kann sehr CPU-intensiv sein)
-- Nicht genügend Arbeitsspeicher, sodass Aktualisierung anhalten (erfordert die Aktualisierung beginnen, wenn Bedingungen neu beginnen müssen günstig sind)
-- Nicht-Kapazitätsgründen, z. B. Data Source Reaktionsfähigkeit des Systems, Netzwerklatenz, ungültige Berechtigungen oder Gateway-Durchsatz
-- Datenvolume – ein guter Grund so konfigurieren Sie inkrementelle zu aktualisieren, wie im folgenden erläutert
+- Unzureichende CPU (die Aktualisierung kann sehr CPU-intensiv sein)
+- Nicht genügend Arbeitsspeicher, was zu einer Aktualisierung führt (die Aktualisierung muss gestartet werden, wenn die Bedingungen für die Empfehlungs Ausführung günstig sind).
+- Gründe für nicht Kapazität, einschließlich der Reaktionsfähigkeit von Datenquellen System, Netzwerk Latenz, ungültige Berechtigungen oder gatewaydurchsatz
+- Datenvolumen: ein guter Grund für die Konfiguration der inkrementellen Aktualisierung, wie unten erläutert.
 
-Capacity Admins (und Power BI-Dienstadministratoren) können überwachen, die **durchschnittliche aktualisieren Dauer (Minuten)** Metrik, um zu bestimmen, eine Benchmark für den Vergleich im Laufe der Zeit und die **durchschnittliche aktualisieren Wartezeit (Minuten)** Metriken, um zu bestimmen, Durchschnittliche Verzögerung zwischen den Durchschnittliche Verzögerung zwischen dem geplanten Zeitpunkt und dem Beginn des Vorgangs.
+Kapazitäts Administratoren (und Power BI-Dienst Administratoren) können die Metrik " **durchschnittliche Aktualisierungs Dauer (Minuten)** " überwachen, um einen Benchmark für den Vergleich im Zeitverlauf und die Metriken für die **durchschnittliche Aktualisierungs Wartezeit (Minuten)** zu bestimmen, um die durchschnittliche Verzögerung zu ermitteln der durchschnittliche Rückstand zwischen der geplanten Zeit und dem Start des Vorgangs.
 
-Die inkrementelle Aktualisierung kann die Dauer des Daten aktualisieren, insbesondere bei großen Modelltabellen deutlich reduzieren. Es gibt vier Vorteile, die inkrementelle Aktualisierung zugeordnet:
+Die inkrementelle Aktualisierung kann die Dauer der Datenaktualisierung erheblich verkürzen, insbesondere bei großen Modell Tabellen. Mit der inkrementellen Aktualisierung sind vier Vorteile verbunden:
 
-- **Aktualisierungen sind schneller** : Nur eine Teilmenge einer Tabelle benötigt, laden, verringern Auslastung von CPU und Arbeitsspeicher und Parallelität kann höher sein, wenn mehrere Partitionen zu aktualisieren.
-- **Aktualisierungen auftreten, nur im Bedarfsfall** : Die inkrementelle Aktualisierung Richtlinien können so konfiguriert werden, um Laden nur, wenn Daten geändert haben
-- **Aktualisierungen sind zuverlässiger** : Kürzere ausgeführte Verbindungen mit Quellsystemen flüchtige Daten sind weniger anfällig für die Trennung der Verbindung
-- **Modelle bleiben trim** : Die inkrementelle Aktualisierung Richtlinien können so konfiguriert werden, um Verlauf über ein gleitendes Fenster Zeit automatisch zu entfernen.
+- Aktualisierungen **sind schneller** : Nur eine Teilmenge einer Tabelle muss geladen werden, die CPU-und Speicherauslastung wird reduziert, und die Parallelität kann bei der Aktualisierung mehrerer Partitionen höher sein.
+- Aktualisierungen **erfolgen nur, wenn dies erforderlich** ist: Richtlinien für die inkrementelle Aktualisierung können so konfiguriert werden, dass Sie nur geladen werden
+- Aktualisierungen **sind zuverlässiger** : Kürzere Verbindungen mit flüchtigen Datenquellen Systemen sind weniger anfällig für die Verbindungs Trennung
+- **Modelle bleiben erhalten** : Richtlinien für die inkrementelle Aktualisierung können so konfiguriert werden, dass der Verlauf über ein gleitender Zeitfenster
 
-Weitere Informationen finden Sie in der [inkrementell zu aktualisieren, klicken Sie in Power BI Premium](service-premium-incremental-refresh.md) Dokument.
+Weitere Informationen finden Sie unter [inkrementelle Aktualisierung in Power BI Premium](service-premium-incremental-refresh.md) Dokument.
 
-#### <a name="why-are-data-refreshes-not-completing"></a>Warum Daten werden aktualisiert, nicht abgeschlossen?
+#### <a name="why-are-data-refreshes-not-completing"></a>Warum werden Datenaktualisierungen nicht abgeschlossen?
 
-Wenn die datenaktualisierung beginnt, aber es kann nicht abgeschlossen werden, kann es verschiedene Ursachen sein:
+Wenn die Datenaktualisierung beginnt, aber nicht fertiggestellt wird, kann dies mehrere Ursachen haben:
 
-- Unzureichender Arbeitsspeicher, auch wenn es nur ein Modell in der Premium-Kapazität ist z. B. die Größe des Datenbankmodells sehr groß
-- Nicht-Kapazitätsgründen, einschließlich Daten source System trennen "," Ungültige Berechtigungen "oder" Gatewayfehler
+- Nicht genügend Arbeitsspeicher, auch wenn nur ein Modell in der Premium-Kapazität vorhanden ist, d. h. die Modell Größe ist sehr groß.
+- Gründe für nicht Kapazität, einschließlich Trennung von Datenquellen System, ungültige Berechtigungen oder Gatewayfehler
 
-Capacity Admins (und Power BI-Dienstadministratoren) können überwachen, die **Aktualisieren von Fehlern aufgrund von nicht genügend Arbeitsspeicher** Metrik.
+Kapazitäts Administratoren (und Power BI-Dienst Administratoren) können die Aktualisierungs **Fehler aufgrund der** Metrik "nicht genügend Arbeitsspeicher" überwachen.
 
-#### <a name="why-are-ai-calls-failing"></a>Warum werden von KI-Aufrufe fehlschlagen?
+#### <a name="why-are-ai-calls-failing"></a>Warum treten bei Ki-aufrufen Fehler auf?
 
-AI-Aufrufe können aus mehreren Gründen fehlschlagen. Der erforderliche Mindestarbeitsspeicher zu der AI-Workloads beträgt 5 GB, aber dies reicht möglicherweise nicht für einige Eingabedatasets. Beispielsweise erfordert die automatisierte für maschinelles lernen Trainieren des Modells mindestens zweimal und manchmal mehrere Male die Eingabe-Dataset-Größe. Darüber hinaus wird ein KI-Aufruf beendet, es dauert länger als zwei Stunden in Anspruch. Für automatisierte Computer wird die learning-Modell trainieren Aufrufe, die in zwei Stunden, das beste Modell finden Sie in diesen zwei Stunden abgeschlossen werden nicht zurückgegeben.  AI-Aufrufe können auch durch interaktive Anforderungen unterbrochen werden, die Vorrang hat.
+Ki-Aufrufe können aus mehreren Gründen fehlschlagen. Der zum Starten der Ki-Arbeitsauslastung erforderliche Mindestarbeitsspeicher beträgt 5 GB, aber dies ist für einige Eingabe Datasets möglicherweise nicht ausreichend. Beispielsweise erfordert das automatisierte Machine Learning-Modell Training mindestens zweimal und manchmal mehrmals die Größe des Eingabe Datasets. Außerdem wird ein AI-Befehl beendet, wenn er länger als zwei Stunden dauert. Bei automatisierten Machine Learning-Modell Trainings aufrufen, die nicht innerhalb von zwei Stunden ausgeführt werden, wird das beste Modell in diesen zwei Stunden zurückgegeben.  Ki-Aufrufe können auch durch interaktive Anforderungen unterbrochen werden, die Vorrang haben.
 
-Administratoren sollten die AI-Wartezeiten auf Anzeichen von anderen Anforderungen vor überwachen. Administratoren können auch sicherstellen, dass ausreichend Arbeitsspeicher für die KI-arbeitsauslastung relativ zur Größe der Eingabedaten verfügbar ist. Dies kann beinhalten, Isolieren von KI-Workloads auf die Kapazitäten, die bekannt, dass Sie über ausreichende Ressourcen verfügen. Es ist auch möglich, dass Administratoren mit Besitzern von Datenfluss zur Hilfe bei der staffeln, oder Verringern der Datenfluss Aktualisierungszeiten bereit koordinieren können, um Konflikte zu minimieren. Beachten Sie, dass es nicht möglich, dass ein Administrator ist, an die Warteschlange der AI-Aufruf.
+Administratoren sollten AI-Wartezeiten auf Anzeichen anderer Anforderungen überwachen, die Vorrang haben. Administratoren können auch sicherstellen, dass genügend Arbeitsspeicher für die AI-Arbeitsauslastung in Bezug auf die Größe der Eingabedaten verfügbar ist. Dies kann dazu führen, dass AI-Workloads auf Kapazitäten isoliert werden, die bekanntermaßen über ausreichende Ressourcen verfügen. Es ist auch möglich, dass Administratoren sich mit Datenfluss Besitzern koordinieren, um Datenfluss Aktualisierungszeiten zu verkürzen oder zu reduzieren, um Konflikte zu minimieren. Beachten Sie, dass ein Administrator die AI-Ansichts Warteschlange nicht anzeigen kann.
 
 ### <a name="optimizing-models"></a>Optimieren von Modellen
 
-Optimale Modellentwurf ist entscheidend für die Bereitstellung einer effizienten und skalierbare Lösung. Es ist jedoch über den Rahmen dieses Whitepapers hinaus um eine vollständige Erläuterung bereitzustellen. Stattdessen wird in diesem Abschnitt wichtige Bereiche berücksichtigt bereitstellen, der beim Optimieren der Modelle.
+Ein optimaler Modellentwurf ist entscheidend für eine effiziente und skalierbare Lösung. Es geht jedoch über den Rahmen dieses Whitepapers hinaus, um eine umfassende Erörterung zu bieten. Stattdessen werden in diesem Abschnitt wichtige Bereiche bereitgestellt, die beim Optimieren von Modellen berücksichtigt werden müssen.
 
-#### <a name="optimizing-power-bi-hosted-models"></a>Optimieren der Power BI-gehosteten Modelle
+#### <a name="optimizing-power-bi-hosted-models"></a>Optimieren von Power BI gehosteten Modellen
 
-Optimieren von Modellen, die in einer Premium-Kapazität gehostet, können auf Daten Quellen und Modell erreicht werden.
+Die Optimierung von Modellen, die in einer Premium-Kapazität gehostet werden, kann auf den Datenquellen und Modell Schichten erreicht werden.
 
-Beachten Sie die optimierungsmöglichkeiten für ein Modell importieren:
+Beachten Sie die Optimierungsmöglichkeiten für ein Import Modell:
 
-![Optimierungsmöglichkeiten für ein Modell importieren](media/whitepaper-premium-deployment/import-model-optimizations.png)
+![Optimierungsmöglichkeiten für ein Import Modell](media/whitepaper-premium-deployment/import-model-optimizations.png)
 
-Klicken Sie auf der Datenschicht für die Quelle:
+Auf der Datenquellen Ebene:
 
-- Relationale Datenquellen um sicherzustellen, dass die schnellste Möglichkeit Aktualisierung mithilfe der vorab Integrieren von Daten, Anwenden der geeigneten Indizes, Tabellenpartitionen, die ausgerichtet sind für die inkrementelle Aktualisierung Zeiträume definieren und Umsetzung von Berechnungen optimiert werden können (anstelle von berechnet Model-Tabellen und Spalten) oder zum Hinzufügen von Berechnungslogik zu Ansichten
-- Nicht relationale Datenquellen können in relationale Speicher vorab integriert werden
-- Sicherstellen Sie, dass Gateways ausreichende Ressourcen, vorzugsweise auf dedizierten Computern, die mit genügend Netzwerkbandbreite und in der Nähe zu den Datenquellen verfügen.
+- Relationale Datenquellen können optimiert werden, um die schnellste Aktualisierung sicherzustellen, indem Sie Daten vorab integrieren, geeignete Indizes anwenden, Tabellen Partitionen definieren, die sich auf inkrementelle Aktualisierungs Zeiträume ausrichten, und Berechnungen materialisieren (anstelle von berechneten Modell Tabellen und-Spalten) oder Hinzufügen von Berechnungs Logik zu Sichten
+- Nicht relationale Datenquellen können in relationale Speicher integriert werden.
+- Stellen Sie sicher, dass Gateways über ausreichend Ressourcen verfügen, vorzugsweise auf dedizierten Computern mit ausreichender Netzwerkbandbreite und Naher Nähe der Datenquellen.
 
-Auf der Modellebene:
+Auf der Modell Ebene:
 
-- Power Query-Abfrage Entwürfe minimieren oder entfernen Sie komplexe Transformationen und insbesondere über diejenigen, die verschiedene Datenquellen (Datawarehouses dies erreichen, während ihre extrahieren-transformieren-laden-Phase) zusammenführen können. Darüber hinaus kann sicherstellen, dass die entsprechenden datenschutzebenen der Datenquellen festgelegt werden, dies vermeiden, dass Power BI beim Laden der vollständigen Ergebnisse, um ein kombiniertes Ergebnis über mehrere Abfragen zu erstellen.
-- Die Modellstruktur bestimmt die zu ladenden Daten und wirkt sich direkt auf die Größe des Datenbankmodells. Es kann entworfen werden, um zu vermeiden, laden überflüssige Daten durch Entfernen von Spalten, und Entfernen von Zeilen (vor allem historischen Daten) oder durch das Laden von zusammengefasster Daten (auf Kosten der detaillierte Daten wird geladen). Erhebliche Reduzierung kann erreicht werden, durch das Entfernen von Spalten mit hoher Kardinalität (insbesondere Textspalten), die nicht speichern oder sehr effizient komprimieren.
-- Modell die abfrageleistung kann verbessert werden, durch Konfigurieren von Richtung Beziehungen, es sei denn, es gibt ein zwingenden Grund bidirektionales filtern können. Erwägen Sie auch die CROSSFILTER-Funktion anstelle von bidirektionalen Filterns.
-- Aggregationstabellen können schnelle Abfragen, dass Antworten durch das Laden von Daten zusammengefasst, die vor erreichen, aber dies das Modell und das Ergebnis in längeren Aktualisierungszeiten vergrößert wird. Im Allgemeinen sollten Aggregationstabellen für sehr große Modelle oder zusammengesetzten Modells Entwürfe reserviert werden.
-- Berechnete Tabellen und Spalten erhöhen Sie die Modellgröße aus, und führen mehr Aktualisierungszeiten bereit. Im Allgemeinen können eine geringere Datenspeichergröße und eine schnellere Aktualisierung erreicht werden, wenn die Daten materialisiert oder in der Datenquelle berechnet werden. Wenn dies nicht möglich ist, kann die mithilfe von Power Query, benutzerdefinierte Spalten verbesserte speicherkomprimierung anbieten.
-- Es gibt möglicherweise Gelegenheit zum Optimieren von DAX-Ausdrücken für Measures und RLS-Regeln, die vielleicht umschreibungslogik zu formulieren um teure Formeln zu vermeiden.
-- Die inkrementelle Aktualisierung kann erheblich Aktualisierungszeit reduzieren und Einsparen von Arbeitsspeicher und CPU. Die inkrementelle Aktualisierung kann auch konfiguriert werden, um Modelle trim behalten Verlaufsdaten zu entfernen.
-- Ein Modell kann als zwei Modelle überarbeitet werden, bei anderen und in Konflikt stehende Abfragemuster. Für andere Berichte vorhanden allgemeine Aggregate über alle Verlauf, und es wird z. B. Wartezeit von 24 Stunden tolerieren. Andere Berichte sind mit Daten und differenzierten Zugriff auf einzelne Transaktionen benötigen. Anstatt Entwurf ein einzelnes Modell, um alle Berichte zu erfüllen erstellen Sie zwei Modelle, die für die einzelnen Anforderungen optimiert.
+- Power Query Abfrage Entwürfe können komplexe Transformationen minimieren oder entfernen, insbesondere solche, die unterschiedliche Datenquellen zusammenführen (Data Warehouse erreichen dies während ihrer Extract-Transform-Load-Phase). Dadurch wird sichergestellt, dass die entsprechenden Datenschutz Ebenen der Datenquelle festgelegt werden. Dies kann dazu führen, dass Power BI keine vollständigen Ergebnisse laden muss, um ein kombiniertes Ergebnis über Abfragen
+- Die Modellstruktur bestimmt die zu ladenden Daten und wirkt sich direkt auf die Modell Größe aus. Es kann so entworfen werden, dass es nicht benötigte Daten durch Entfernen von Spalten, Entfernen von Zeilen (insbesondere historische Daten) oder durch das Laden von zusammengefassten Daten (auf Kosten des Ladens ausführlicher Daten) lädt. Eine drastische Verringerung der Größe kann erreicht werden, indem Sie große kardinalitätsspalten (insbesondere Textspalten) entfernen, die nicht sehr effizient gespeichert oder komprimiert werden.
+- Die Modell Abfrageleistung kann verbessert werden, indem Einzel Richtung-Beziehungen konfiguriert werden, es sei denn, es gibt einen überzeugenden Grund für die bidirektionale Filterung Sie sollten auch die crossfilter-Funktion anstelle der bidirektionalen Filterung verwenden.
+- Aggregations Tabellen können schnelle Abfrage Antworten erzielen, indem Sie vorab zusammengefasste Daten laden. Dadurch wird jedoch die Größe des Modells vergrößert, und es werden längere Aktualisierungszeiten erzielt. Im Allgemeinen sollten Aggregations Tabellen für sehr große Modelle oder zusammengesetzte modellentwürfe reserviert werden.
+- Berechnete Tabellen und Spalten erhöhen die Modell Größe und führen zu längeren Aktualisierungszeiten. Im Allgemeinen kann eine geringere Speichergröße und eine schnellere Aktualisierungszeit erreicht werden, wenn die Daten in der Datenquelle materialisiert oder berechnet werden. Wenn dies nicht möglich ist, kann die Verwendung Power Query benutzerdefinierten Spalten eine verbesserte Speicher Komprimierung bieten.
+- Möglicherweise gibt es Gelegenheit, DAX-Ausdrücke für Measures und RLS-Regeln zu optimieren, vielleicht Umschreiben von Logik zur Vermeidung kostspieliger Formeln.
+- Die inkrementelle Aktualisierung kann die Aktualisierungszeit drastisch verkürzen und Speicher und CPU einsparen. Die inkrementelle Aktualisierung kann auch so konfiguriert werden, dass Verlaufs Daten entfernt werden.
+- Ein Modell kann als zwei Modelle umgestaltet werden, wenn verschiedene und widersprüchliche Abfrage Muster vorhanden sind. Beispielsweise stellen einige Berichte allgemeine Aggregate im gesamten Verlauf dar und können die Latenz von 24 Stunden tolerieren. Andere Berichte betreffen die aktuellen Daten und benötigen einen präzisen Zugriff auf einzelne Transaktionen. Anstatt ein einzelnes Modell zum erfüllen aller Berichte zu entwerfen, erstellen Sie zwei Modelle, die für jede Anforderung optimiert sind.
 
-Erwägen Sie die optimierungsmöglichkeiten für ein DirectQuery-Modell. Wie das Modell abfrageanforderungen an die zugrunde liegende Datenquelle ausgibt, ist die Quelle datenoptimierung zur Bereitstellung von reaktionsfähigen Modell Abfragen wichtig.
+Beachten Sie die Optimierungsmöglichkeiten für ein directquery-Modell. Wenn das Modell Abfrage Anforderungen an die zugrunde liegende Datenquelle ausgibt, ist die Datenquellen Optimierung wichtig für die Bereitstellung von reaktionsfähigen Modell Abfragen.
 
- ![Optimierungsmöglichkeiten für ein DirectQuery-Modell](media/whitepaper-premium-deployment/direct-query-model-optimizations.png)
+ ![Optimierungsmöglichkeiten für ein directquery-Modell](media/whitepaper-premium-deployment/direct-query-model-optimizations.png)
 
-Klicken Sie auf der Datenschicht für die Quelle:
+Auf der Datenquellen Ebene:
 
-- Die Datenquelle kann optimiert werden um sicherzustellen, dass die schnellste Möglichkeit Abfragen nach vorab Integrieren von Daten (die nicht auf der Ebene des möglich ist), Anwenden der geeigneten Indizes, Definieren von Tabellenpartitionen, die durch das materialisieren zusammengefasste Daten (mit indizierten Sichten), und Minimieren den Betrag, der Berechnung an. Optimale Ergebnisse wird erreicht, bei der Pass-Through-Abfragen müssen, nur filtern und Ausführen innerer Verknüpfungen zwischen indizierten Tabellen oder Sichten.
-- Sicherstellen Sie, dass Gateways genügend Ressourcen, vorzugsweise auf dedizierten Computern, die mit genügend Netzwerkbandbreite und in der Nähe zur Datenquelle verfügen.
+- Die Datenquelle kann optimiert werden, um die schnellstmögliche Abfrage zu gewährleisten, indem Sie Daten vorab integrieren (was auf der Modell Ebene nicht möglich ist), geeignete Indizes anwenden, Tabellen Partitionen definieren, zusammengefasste Daten (mit indizierten Sichten) materialisieren und Minimierung der Berechnungs Menge. Die beste Vorgehensweise wird erzielt, wenn Passthrough-Abfragen nur Filter filtern und interne Joins zwischen indizierten Tabellen oder Sichten ausführen müssen.
+- Stellen Sie sicher, dass Gateways über ausreichend Ressourcen verfügen, vorzugsweise auf dedizierten Computern mit ausreichender Netzwerkbandbreite und unmittelbarer Nähe der Datenquelle.
 
-Auf der Modellebene:
+Auf der Modell Ebene:
 
-- Power Query-Abfrage, die Entwürfe sollte vorzugsweise gelten keine Transformationen – andernfalls versucht, die Transformationen auf ein absolutes minimum zu beschränken
-- Modell die abfrageleistung kann verbessert werden, durch Konfigurieren von Richtung Beziehungen, es sei denn, es gibt ein zwingenden Grund bidirektionales filtern können. Darüber hinaus sollte Modellieren von Beziehungen konfiguriert werden, um wird davon ausgegangen wird referenzielle Integrität erzwungen (Wenn dies der Fall ist) und führt zu Datenquellenabfragen effizienter innere Joins (anstelle von äußeren Joins) verwenden.
-- Erstellen benutzerdefinierter Spalten von Power Query-Abfrage oder eine berechnete modellspalte vermeiden – materialisieren in der Datenquelle, wenn möglich
-- Es gibt möglicherweise Gelegenheit zum Optimieren von DAX-Ausdrücken für Measures und RLS-Regeln, die vielleicht umschreibungslogik zu formulieren um teure Formeln zu vermeiden.
+- Power Query Abfrage Entwürfe sollten vorzugsweise keine Transformationen anwenden. versuchen Sie andernfalls, die Transformationen auf einem absoluten Minimal Stand zu halten.
+- Die Modell Abfrageleistung kann verbessert werden, indem Einzel Richtung-Beziehungen konfiguriert werden, es sei denn, es gibt einen überzeugenden Grund für die bidirektionale Filterung Modell Beziehungen sollten außerdem so konfiguriert werden, dass die referenzielle Integrität erzwungen wird (in diesem Fall), und es werden Datenquellen Abfragen mit effizienteren inneren Joins (anstelle von äußeren Joins) durchgeführt.
+- Vermeiden Sie das Erstellen Power Query Abfragen benutzerdefinierter Spalten oder der berechneten Spalte des Modells. materialisieren Sie diese in der Datenquelle, wenn möglich.
+- Möglicherweise gibt es Gelegenheit, DAX-Ausdrücke für Measures und RLS-Regeln zu optimieren, vielleicht Umschreiben von Logik zur Vermeidung kostspieliger Formeln.
 
-Erwägen Sie die optimierungsmöglichkeiten für eine zusammengesetzte Modell ein. Denken Sie daran, dass eine kombinierte Modell eine Mischung von Import und DirectQuery-Tabellen ermöglicht.
+Beachten Sie die Optimierungsmöglichkeiten für ein zusammengesetztes Modell. Denken Sie daran, dass ein zusammengesetztes Modell eine Mischung aus Import-und directquery-Tabellen ermöglicht.
 
-![Optimierungsmöglichkeiten für eine zusammengesetzte Modell](media/whitepaper-premium-deployment/composite-model-optimizations.png)
+![Optimierungsmöglichkeiten für ein zusammengesetztes Modell](media/whitepaper-premium-deployment/composite-model-optimizations.png)
 
-- Wenden Sie in der Regel die Themen "Optimierung" für Import- und DirectQuery-Modelle, auf zusammengesetzten Modells-Tabellen, die diese Speichermodi verwenden.
-- In der Regel sich bemühen Sie, einen Entwurf mit Lastenausgleich zu erzielen, indem Sie Konfigurieren von Dimensionstyp Tabellen (für Geschäftseinheiten) als Dual-Modus und Faktentyp Speichertabellen (häufig große Tabellen, die betriebliche Fakten darstellt) als DirectQuery-Speichermodus. Dual-Speichermodus bedeutet, dass beide zu importieren und DirectQuery-Speichermodi und dadurch können die Power BI-Dienst, um zu bestimmen, die effizientesten-Speichermodus verwendet zur Erstellung einer systemeigenen Abfrage für Pass-Through.
-- Sicherstellen Sie, dass Gateways ausreichende Ressourcen, vorzugsweise auf dedizierten Computern, die mit genügend Netzwerkbandbreite und in der Nähe zu den Datenquellen verfügen.
-- Aggregationen Tabellen wird konfiguriert, wie Speicher Importmodus eindrucksvolle Abfrage leistungsverbesserungen bei der mit dem DirectQuery-Modus Faktentyp Speichertabellen zusammengefasst, liefern kann. In diesem Fall Aggregationstabellen werden die Größe des Modells sowie erhöhen Aktualisierungszeit, und dies ist häufig ein akzeptabler Kompromiss zu schnelleren Abfragen.
+- Im Allgemeinen gelten die Optimierungs Themen für Import-und directquery-Modelle für zusammengesetzte Modell Tabellen, die diese Speicher Modi verwenden.
+- In der Regel sollten Sie einen ausgeglichenen Entwurf erzielen, indem Sie Dimensions Typen Tabellen (die Geschäfts Entitäten darstellen) als Dual-Speicher Modus und Fakten Typen Tabellen (häufig große Tabellen, die operative Fakten darstellen) als directquery-Speicher Modus konfigurieren. Der Dual-Speicher Modus bedeutet, dass sowohl der Import-als auch der directquery-Speicher Modus verwendet werden. Dadurch kann der Power BI-Dienst den effizientesten Speicher Modus ermitteln, der beim Erstellen einer systemeigenen Abfrage für Passthrough verwendet wird.
+- Stellen Sie sicher, dass Gateways über ausreichend Ressourcen verfügen, vorzugsweise auf dedizierten Computern mit ausreichender Netzwerkbandbreite und Naher Nähe der Datenquellen.
+- Aggregations Tabellen, die als Import-Speicher Modus konfiguriert sind, können bei Verwendung zum Zusammenfassen von Fakten Typen Tabellen im directquery-Speicher Modus zu Leistungsverbesserungen führen. In diesem Fall erhöhen Aggregations Tabellen die Größe des Modells und erhöhen die Aktualisierungszeit. häufig ist dies ein akzeptabler Kompromiss für schnellere Abfragen.
 
 #### <a name="optimizing-externally-hosted-models"></a>Optimieren von extern gehosteten Modellen
 
-Viele optimierungsmöglichkeiten beschrieben, der [Optimizing Power BI-Hosted Modelle](#optimizing-power-bi-hosted-models) Thema gelten auch für Modelle, die mit Azure Analysis Services und SQL Server Analysis Services entwickelt. Löschen von Ausnahmen sind bestimmte Features, die derzeit nicht einschließlich zusammengesetzten Modelle und Aggregationstabellen unterstützt werden.
+Viele Optimierungsmöglichkeiten, die im Thema [optimieren Power BI gehosteter Modelle](#optimizing-power-bi-hosted-models) erläutert werden, gelten auch für Modelle, die mit Azure Analysis Services und SQL Server Analysis Services entwickelt wurden. Clear Exceptions sind bestimmte Features, die derzeit nicht unterstützt werden, einschließlich zusammengesetzter Modelle und Aggregations Tabellen.
 
-Eine weitere Überlegungen für extern gehostete Datasets ist eine Datenbank in Bezug auf Power BI-Dienst hostet. Für Azure Analysis Services bedeutet dies, erstellen die Azure-Ressource in der gleichen Region wie das Power BI-Mandant (home-Region). Für SQL Server Analysis Services für IaaS Dies bedeutet, dass den virtuelle Computer in derselben Region gehostet, und für lokale, es bedeutet, dass eine effiziente gatewaysetup sichergestellt.
+Eine weitere Überlegung bei extern gehosteten Datasets ist die Datenbank, die im Zusammenhang mit der Power BI-Dienst hostet. Bei Azure Analysis Services bedeutet dies, dass die Azure-Ressource in der gleichen Region wie der Power BI Mandanten (Home Region) erstellt wird. Bei der SQL Server Analysis Services für IaaS bedeutet dies, dass der virtuelle Computer in der gleichen Region gehostet wird, und für lokale Anwendungen bedeutet dies, dass eine effiziente gatewayeinrichtung gewährleistet ist.
 
-Übrigens kann es sein, von Interesse sind, beachten Sie, dass Azure Analysis Services-Datenbanken und tabellarische SQL Server Analysis Services-Datenbanken erfordern, dass ihre Modelle vollständig in den Arbeitsspeicher geladen werden, dass sie es überhaupt bleiben Male auf, um Abfragen zu unterstützen. Wie im Power BI-Dienst muss es über ausreichend Arbeitsspeicher für aktualisiert, wenn es bei der Aktualisierung des Modells online bleiben muss. Im Gegensatz zu den Power BI-Dienst ist keine vorhanden, dass die Modelle in den Arbeitsspeicher gemäß Nutzung automatisch ersetzt werden. Power BI Premium bietet daher einen effizienteren Ansatz zur Maximierung des Modells Erstellen von Abfragen mit niedriger Auslastung des Speichers.
+Außerdem ist es möglicherweise von Interesse, dass Azure Analysis Services Datenbanken und SQL Server Analysis Services tabellarischen Datenbanken ihre Modelle vollständig in den Arbeitsspeicher laden müssen, und dass Sie jederzeit vorhanden sind, um Abfragen zu unterstützen. Wie beim Power BI-Dienst muss ausreichend Arbeitsspeicher für die Aktualisierung vorhanden sein, wenn das Modell während der Aktualisierung online bleiben muss. Im Gegensatz zum Power BI-Dienst gibt es kein Konzept, bei dem Modelle entsprechend der Verwendung automatisch in den und aus dem Arbeitsspeicher entfernt werden. Power BI Premium ist daher ein effizienterer Ansatz, um die Modell Abfrage mit geringerer Speicherauslastung zu maximieren.
 
-### <a name="capacity-planning"></a>Planen der Kapazität
+### <a name="capacity-planning"></a>Kapazitätsplanung
 
-Die Größe von einer Premium-Kapazität wird bestimmt, die Speicherplatz und Prozessorressourcen und Grenzwerte für die Kapazität. Die Anzahl der Premium-Kapazitäten wird auch berücksichtigt, wie das Erstellen mehrerer Premium Kapazitäten können Workloads voneinander zu isolieren. Beachten Sie, dass Speicher 100 TB pro kapazitätsknoten beträgt, und dies ist meist mehr als ausreichend für alle Workloads.
+Durch die Größe einer Premium-Kapazität werden die verfügbaren Arbeitsspeicher-und Prozessorressourcen und-Grenzwerte für die Kapazität bestimmt. Die Anzahl der Premium-Kapazitäten ist ebenfalls zu berücksichtigen, da das Erstellen mehrerer Premium-Kapazitäten dabei helfen kann, Arbeits Auslastungen voneinander zu isolieren. Beachten Sie, dass der Speicher 100 TB pro Kapazitäts Knoten beträgt, und dieser Wert ist für alle Arbeits Auslastungen wahrscheinlich mehr als ausreichend.
 
-Ermitteln der Größe und Anzahl der Premium-Kapazitäten kann, insbesondere für die anfängliche Kapazitäten schwierig sein, die Sie erstellen. Der erste Schritt, wenn die erforderlichen Kapazitäten, die durchschnittlichen Workload, die Darstellung der erwartete täglichen Verwendung zu verstehen ist. Es ist wichtig zu verstehen, dass nicht alle arbeitsauslastungen gleich sind. Beispiel: an einem Ende einer Bandbreite - 100 gleichzeitige Benutzer, die Zugriff auf eine einzelne Berichtsseite, die ein einzelnes visuelles enthält ist einfach erreichbares. Noch - am anderen Ende des Spektrums - 100 gleichzeitige Benutzer, die Zugriff auf 100 verschiedene Berichte, jeweils mit 100 Visuals auf der Berichtsseite wird sehr unterschiedliche Anforderungen von kapazitätsressourcen stellen.
+Die Ermittlung der Größe und der Anzahl von Premium-Kapazitäten kann eine Herausforderung darstellen, insbesondere für die anfänglichen Kapazitäten, die Sie erstellen. Der erste Schritt bei der Kapazitäts Größenanpassung besteht darin, die durchschnittliche Arbeitsauslastung zu verstehen, die die erwartete tägliche Nutzung darstellt. Es ist wichtig zu wissen, dass nicht alle Arbeits Auslastungen gleich sind. Beispielsweise kann an einem Ende eines Spektrums von 100 gleichzeitigen Benutzern, die auf eine einzelne Berichtsseite zugreifen, die ein einzelnes visuelles Element enthält, problemlos erreicht werden. Am anderen Ende des Spektrums: 100 gleichzeitige Benutzer, die auf 100 verschiedene Berichte zugreifen, von denen jedes mit 100 visuellen Elementen auf der Berichtsseite verfügt, werden jedoch unterschiedliche Anforderungen an Kapazitäts Ressourcen stellen.
 
-Kapazitätsadministratoren müssen daher viele Faktoren zu berücksichtigen, die spezifisch für Ihre Umgebung, die Inhalte und die erwartete Nutzung. Das Überschreiben wird, zugleich konsistente Abfragezeiten akzeptablen Wartezeiten und entfernungsraten Ausnutzung der Speicherkapazität zu maximieren. Zu berücksichtigende Faktoren können umfassen:
+Kapazitäts Administratoren müssen daher viele Faktoren berücksichtigen, die für Ihre Umgebung, den Inhalt und die erwartete Nutzung spezifisch sind. Das über schreibende Ziel besteht darin, die Kapazitätsauslastung zu maximieren und gleichzeitig konsistente Abfrage Zeiten, akzeptable Wartezeit und Entfernungs Raten bereitzustellen. Folgende Faktoren sind zu berücksichtigen:
 
-- **Modellieren Sie Größe und Merkmale** : Importmodelle muss vollständig geladen ist, in den Arbeitsspeicher können Abfragen oder aktualisieren. LC/DQ-Datasets können erhebliche Prozessorzeit und möglicherweise erheblichen Speicherplatz zum Auswerten von komplexen Measures oder RLS-Regeln erforderlich. Arbeitsspeicher und Prozessorgröße und abfragedurchsatz LC/DQ werden durch die Größe der Kapazität beschränkt.
-- **Gleichzeitige aktive Modelle** : Das gleichzeitige Abfragen der verschiedenen importmodelle liefert beste Reaktionsfähigkeit und Leistung, wenn sie im Speicher verbleiben. Es sollte genügend Arbeitsspeicher, um alle häufig abgefragte Modelle mit zusätzlichen Arbeitsspeicher für die datenaktualisierung zu hosten.
-- **Aktualisierung des Modells Import** : Der Aktualisierungstyp (vollständig oder inkrementell), die Dauer und Komplexität von Power Query-Abfragen und berechnete Tabelle/Spalte-Logik können an Arbeitsspeicher und insbesondere die prozessorauslastung auswirken. Gleichzeitige Aktualisierungen werden durch die Größe der Kapazität (1,5 X backend V-Kerne, aufgerundet) beschränkt.
-- **Gleichzeitige Abfragen** : Viele gleichzeitige Abfragen können dazu führen in nicht reagiert wird berichtet, wenn Prozessor oder LC/DQ-Verbindungen überschreitet den Grenzwert von Kapazität. Dies gilt insbesondere für Berichtsseiten, die viele visuelle Elemente enthalten.
-- **Datenflüsse, paginierte Berichte und KI-Funktionen** : Die Kapazität kann konfiguriert werden, um Datenflüsse, paginierte Berichte und KI-Funktionen, mit jeder erfordert einen konfigurierbaren maximalen Prozentsatz der Speicherkapazität zu unterstützen. Arbeitsspeicher wird dynamisch zugewiesen, um Datenflüsse, jedoch ist er statisch zugeordnet, paginierte Berichte und die AI-arbeitsauslastung.
+- **Modell Größe und Daten Merkmale** : Import Modelle müssen vollständig in den Arbeitsspeicher geladen werden, um Abfragen oder aktualisieren zu ermöglichen. Für LC/DQ-Datasets kann eine beträchtliche Prozessorzeit und möglicherweise erheblicher Arbeitsspeicher erforderlich sein, um komplexe Measures oder RLS-Regeln auszuwerten. Arbeitsspeicher-und Prozessor Größe und der LC/DQ-Abfrage Durchsatz werden durch die Kapazitäts Größe eingeschränkt.
+- **Gleichzeitige aktive Modelle** : Die gleichzeitige Abfrage von unterschiedlichen Import Modellen liefert optimale Reaktionsfähigkeit und Leistung, wenn Sie im Arbeitsspeicher verbleiben. Es muss genügend Arbeitsspeicher zum Hosten aller stark abgefragten Modelle vorhanden sein, mit zusätzlichem Arbeitsspeicher, um die Aktualisierung zu ermöglichen.
+- **Modell Aktualisierung importieren** : Der Aktualisierungstyp (vollständig oder inkrementell), die Dauer und die Komplexität von Power Query Abfragen und die berechnete Tabellen-/spaltenlogik können sich auf den Arbeitsspeicher und Gleichzeitige Aktualisierungen werden durch die Kapazitäts Größe eingeschränkt (1,5 x-Back-End-v-Kerne, aufgerundet).
+- **Gleichzeitige Abfragen** : Viele gleichzeitige Abfragen können zu nicht reagierenden Berichten führen, wenn Prozessor-oder LC/DQ-Verbindungen das Kapazitäts Limit überschreiten. Dies ist insbesondere bei Berichts Seiten der Fall, die viele visuelle Elemente enthalten.
+- **Dataflows, paginierte Berichte und Ki-Funktionen** : Die Kapazität kann für die Unterstützung von Daten Flüssen, paginierten Berichten und Ki-Funktionen konfiguriert werden, wobei jeder einen konfigurierbaren maximalen Prozentsatz des Kapazitäts Speichers erfordert. Der Arbeitsspeicher wird dynamisch Daten Flüssen zugeordnet, aber er wird den paginierten Berichten und der AI-Arbeitsauslastung statisch zugeordnet.
 
-Zusätzlich zu dieser Faktoren kann Kapazitätsadministratoren erwägen, mehrere Kapazitäten zu erstellen. Mehrere Kapazitäten ermöglichen die Isolierung von Workloads und können konfiguriert werden, um sicherzustellen, dass Kritischer arbeitsauslastungen garantiert, dass Ressourcen haben. Beispielsweise können zwei Kapazitäten erstellt werden, um geschäftskritische Workloads vom Self-service-BI (SSBI)-Workloads zu trennen. Die unternehmenskritischen Kapazität kann verwendet werden, um große Unternehmen Modelle bereit, mit garantierten Ressourcen, mit der Erstellung der Zugriff gewährt, die nur für die IT-Abteilung zu isolieren. Die Kapazität SSBI kann zu einem host eine wachsende Anzahl von kleineren Modellen mit Zugriff erteilt für Wirtschaftsanalytiker verwendet werden. Die Kapazität SSBI treten möglicherweise gelegentlich Abfrage oder Aktualisierung Wartevorgänge, die akzeptiert werden.
+Zusätzlich zu diesen Faktoren können Kapazitäts Administratoren das Erstellen mehrerer Kapazitäten in Erwägung gezogen. Mehrere Kapazitäten ermöglichen die Isolation von Arbeits Auslastungen und können konfiguriert werden, um sicherzustellen, dass Prioritäts-Workloads garantierte Ressourcen haben. Beispielsweise können zwei Kapazitäten erstellt werden, um geschäftskritische Workloads von Self-Service BI (ssbi)-Workloads zu trennen. Die unternehmenskritische Kapazität kann verwendet werden, um große Unternehmensmodelle zu isolieren, um Ihnen garantierte Ressourcen mit dem Erstellungs Zugriff zu bieten, die nur für die IT-Abteilung erteilt wurden. Die ssbi-Kapazität kann verwendet werden, um eine wachsende Anzahl kleinerer Modelle zu hosten, wobei der Zugriff auf Wirtschafts Analytiker gewährt wird. Die ssbi-Kapazität kann vorkommen, dass Abfrage-oder Aktualisierungs Wartezeiten tolerierbar sind.
 
-Im Laufe der Zeit kann Kapazitätsadministratoren Arbeitsbereiche auf Kapazitäten durch das Verschieben von Inhalten zwischen Arbeitsbereichen oder zwischen Kapazitäten-Arbeitsbereiche und skalieren Kapazitäten, oben oder unten zu verteilen. Im Allgemeinen zum Hosten von größeren skalieren Modelle, die Sie eingerichtet ist und für höhere Parallelität zu erzielen Sie Skalierung horizontal.
+Mit der Zeit können Kapazitäts Administratoren Arbeitsbereiche Überkapazitäten hinweg ausgleichen, indem Sie Inhalte zwischen Arbeitsbereichen oder Arbeitsbereichen zwischen Kapazitäten verschieben und Kapazitäten zentral hoch-oder Herunterskalieren. Im Allgemeinen können Sie zum Hosten größerer Modelle zentral hochskalieren und für eine höhere Parallelität skalieren.
 
-Denken Sie daran, dass Erwerb einer Lizenz des Mandanten mit der V-Kerne zur Verfügung. Der Kauf von einer **P3** -Abonnement verwendet werden kann, erstellen, oder bis zu vier Premium-Kapazitäten, d. h. 1 x P3 oder 2 x P2 oder 4 x P1. Darüber hinaus können vor dem Upsizing eine P2-Kapazität P3 Kapazität berücksichtigt werden, um die V-Kerne aufteilen zwei P1-Kapazitäten zu erstellen.
+Denken Sie daran, dass der Erwerb einer Lizenz dem Mandanten v-Kerne bereitstellt. Der Erwerb eines **P3** -Abonnements kann verwendet werden, um eine oder bis zu vier Premium-Kapazitäten zu erstellen, d. h. 1 x P3 oder 2 x P2 oder 4 x P1. Vor dem Upsizing der Kapazität einer P2-Kapazität auf eine P3-Kapazität ist es auch möglich, die v-Kerne für die Erstellung von zwei P1-Kapazitäten aufzuteilen.
 
-### <a name="testing-approaches"></a>Testen von Vorgehensweisen
+### <a name="testing-approaches"></a>Testen von Ansätzen
 
-Sobald eine Kapazitätsgröße entschieden wird, kann Tests ausgeführt werden, durch das Erstellen einer kontrollierten Umgebung. Eine praktische und eine wirtschaftliche Option ist die Erstellung einer Kapazitäten in Azure (A-SKUs), beachten Sie, dass eine P1-Kapazität auf die gleiche Größe wie eine A4-Kapazität, mit dem P2 ist und P3-Kapazitäten die gleiche Größe wie die Kapazitäten A5 und A6 jeweils. Azure-Kapazitäten können schnell erstellt werden und werden auf Stundenbasis in Rechnung gestellt. Also nach Tests abgeschlossen wurden, können sie problemlos gelöscht werden, um verwendungsgebühren Kosten.
+Nachdem eine Kapazitäts Größe festgelegt wurde, können Tests durch Erstellen einer kontrollierten Umgebung durchgeführt werden. Eine praktische und wirtschaftliche Option besteht darin, eine Azure-Kapazität (A-SKUs) zu erstellen, die darauf hinweist, dass die Kapazität einer P1-Kapazität der Größe A4 entspricht, wobei P2 und P3 die gleiche Größe wie die A5-und A6-Kapazitäten haben. Azure-Kapazitäten können schnell erstellt und stündlich abgerechnet werden. Nachdem die Tests fertiggestellt wurden, können Sie einfach gelöscht werden, um die Kosten zu senken.
 
-Der Testinhalt auf der Azure-Kapazität erstellten Arbeitsbereiche im Rahmen hinzugefügt werden kann, und klicken Sie dann als einen einzelnen Benutzer kann Berichte ausführen, um eine realistische und repräsentativen arbeitsauslastung mit Abfragen zu generieren. Wenn importmodelle vorhanden sind, sollte auch eine Aktualisierung für jedes Modell ausgeführt werden. Überwachungstools kann dann verwendet werden, überprüfen Sie alle Metriken, um die Ressourcenverwendung zu verstehen.
+Der Test Inhalt kann den Arbeitsbereichen hinzugefügt werden, die in der Azure-Kapazität erstellt wurden, und dann kann ein einzelner Benutzer Berichte ausführen, um eine realistische und repräsentative Arbeitsauslastung von Abfragen zu generieren. Wenn importmodelle vorhanden sind, sollte auch eine Aktualisierung für jedes Modell durchgeführt werden. Überwachungstools können dann zum Überprüfen aller Metriken verwendet werden, um die Ressourcennutzung zu verstehen.
 
-Es ist wichtig, dass die Tests wiederholt werden: Tests sollten mehrere Male ausgeführt werden, und sie sollten jedes Mal, etwa das gleiche Ergebnis liefern. Durchschnittlich diese Ergebnisse kann dann extrapolieren können und schätzen die Workload unter Produktionsbedingungen "true" verwendet werden.
+Es ist wichtig, dass die Tests wiederholbar sind: Tests sollten mehrmals ausgeführt werden, und Sie sollten jedes Mal ungefähr dasselbe Ergebnis liefern. Der Durchschnitt dieser Ergebnisse kann verwendet werden, um eine Arbeitsauslastung unter echten Produktionsbedingungen zu extrazieren und zu schätzen.
 
-Erwägen Sie die Entwicklung eines Auslastungstests, die Anwendung zur Simulation einer realistischen arbeitsauslastung, um einen Belastungstest zu generieren. Einzelheiten hierzu werden über den Rahmen dieses Whitepapers. Weitere Informationen einschließlich ein Codebeispiel finden Sie in der [Load Tests von Power BI Anwendungen mit Visual Studio-Auslastungstests](https://blogs.msdn.microsoft.com/charles_sterling/2018/04/04/webinar-load-testing-power-bi-applications-with-visual-studio-load-test/) Webinar.
+Wenn Sie bereits über eine Kapazität und die Berichte verfügen, für die Sie einen Auslastungs Test durchführen möchten, verwenden Sie das [PowerShell-Tool](https://aka.ms/PowerBILoadTestingTool) für die Auslastungs Generierung, um schnell einen Mit dem Tool können Sie einschätzen, wie viele Instanzen der einzelnen Berichte ihre Kapazität innerhalb einer Stunde ausführen können. Sie können das Tool verwenden, um die Fähigkeit der Kapazität für einzelne Berichts Rendering zu evaluieren oder mehrere verschiedene Berichte parallel zu rendern. Weitere Informationen finden Sie im Video [Microsoft Power BI: Premium-](https://www.youtube.com/watch?time_continue=1860&v=C6vk6wk9dcw)Kapazität.
 
-## <a name="exploring-real-world-scenarios"></a>Untersuchen der Praxis – Szenarien
+Um einen komplexeren Test zu generieren, sollten Sie eine Auslastungs Testanwendung entwickeln, die eine realistische Arbeitsauslastung simuliert. Weitere Informationen finden Sie im Webinar Auslastungs [Tests Power BI Anwendungen mit Visual Studio](https://blogs.msdn.microsoft.com/charles_sterling/2018/04/04/webinar-load-testing-power-bi-applications-with-visual-studio-load-test/)-Auslastungs Test.
 
-In diesem Abschnitt werden einige reale Szenarien eingeführt werden, um häufig auftretende Probleme oder Herausforderungen, wie Sie sie zu identifizieren und wie Sie zu deren Behebung zu beschreiben:
+## <a name="exploring-real-world-scenarios"></a>Erkunden realer Szenarios
 
-- [Datasets auf dem neuesten Stand halten](#keeping-datasets-up-to-date)
-- [Identifizieren langsame Reaktion datasets](#identifying-slow-responding-datasets)
-- [Identifizieren von Ursachen für sporadisch langsam reagieren Datasets](#identifying-causes-for-sporadically-slow-responding-datasets)
-- [Bestimmt, ob genügend Arbeitsspeicher](#determining-whether-there-is-enough-memory)
-- [Bestimmt, ob genügend CPU](#determining-whether-there-is-enough-cpu)
+In diesem Abschnitt werden verschiedene reale Szenarien eingeführt, um häufige Probleme oder Herausforderungen zu beschreiben, Sie zu identifizieren und zu beheben, wie Sie gelöst werden können:
 
-Die Schritte, anhand von Beispielen, Diagramm und Tabelle stammen aus der **Power BI Premium-Kapazität Metriken App** (app), dass ein Power BI-Administrator Zugriff zu erhalten.
+- [Beibehalten von Datasets auf dem neuesten Stand](#keeping-datasets-up-to-date)
+- [Identifizieren von Datensätzen mit langsamer Reaktion](#identifying-slow-responding-datasets)
+- [Identifizieren von Gründen für sporadisch langsam reagierende Datasets](#identifying-causes-for-sporadically-slow-responding-datasets)
+- [Bestimmen, ob genügend Arbeitsspeicher vorhanden ist](#determining-whether-there-is-enough-memory)
+- [Bestimmen, ob genügend CPU vorhanden ist](#determining-whether-there-is-enough-cpu)
 
-### <a name="keeping-datasets-up-to-date"></a>Beibehalten von Datasets bis Datum
+Die Schritte sowie Diagramm-und Tabellen Beispiele stammen aus der **Power BI Premium Capacity Metrics-App** (app), auf die ein Power BI Administrator zugreifen kann.
 
-In diesem Szenario wurde eine Untersuchung ausgelöst, wenn Benutzer sich darüber beschwert, dass Berichtsdaten wird manchmal "veraltete" werden angezeigt.
+### <a name="keeping-datasets-up-to-date"></a>Beibehalten von Datasets auf dem neuesten Stand
 
-In der app interagiert der Administrator die **aktualisiert** visuelle Element, und Sortieren von Datasets durch die **Max. Wartezeit** Statistiken in absteigender Reihenfolge. Auf diese Weise kann anzuzeigen, dass die Datasets, die die längste haben, gruppiert nach dem Namen des Arbeitsbereichs Wartezeiten.
+In diesem Szenario wurde eine Untersuchung ausgelöst, wenn sich Benutzer darüber beschweren, dass die Berichtsdaten manchmal alt oder "veraltet" waren.
 
-![DataSet-Aktualisierungen, die maximale Wartezeit, gruppiert nach Arbeitsbereich absteigend sortiert](media/whitepaper-premium-deployment/dataset-refreshes.png)
+In der APP interagiert der Administrator mit dem visuellen Element **Aktualisieren** und sortiert Datasets nach der **maximalen Wartezeit** in absteigender Reihenfolge. Dadurch können die Datasets, die die längsten Wartezeiten aufweisen, nach Arbeitsbereichs Namen gruppiert angezeigt werden.
 
-Darüber hinaus werden in der **stündlichen durchschnittliche aktualisieren warten Sie, wie oft** visual, sie feststellen, dass die Aktualisierung Wartezeiten konsistent rund um 16 Uhr täglich spitzenauslastung.
+![DataSet-Aktualisierungen sortiert nach absteigender maximaler Wartezeit, gruppiert nach Arbeitsbereich](media/whitepaper-premium-deployment/dataset-refreshes.png)
 
-![Aktualisieren Sie wartet Spitze in regelmäßigen Abständen um 16 Uhr](media/whitepaper-premium-deployment/peak-refresh-waits.png)
+Außerdem bemerken Sie, dass bei der Visualisierung der **stündlichen durchschnittlichen Aktualisierungs Wartezeit** die Wartezeit um jeden Tag konstant um 4 Uhr liegt.
+
+![Spitzenzeiten beim Aktualisieren von warte Vorgängen um 16 Uhr](media/whitepaper-premium-deployment/peak-refresh-waits.png)
 
 Es gibt mehrere mögliche Erklärungen für diese Ergebnisse:
 
-- Zu viele Aktualisierungsversuchen können zur gleichen Zeit, durchgeführt werden überschreitet die Grenzwerte der Kapazität-Knoten (sechs gleichzeitige Aktualisierungen auf eine P1 mit Standard-speicherbelegung)
+- Es können zu viele Aktualisierungs versuche gleichzeitig stattfinden, die die durch den Kapazitäts Knoten festgelegten Grenzwerte überschreiten (sechs gleichzeitige Aktualisierungen bei P1 mit Standard Speicher Belegung).
 
-- Datasets aktualisiert werden möglicherweise zu groß für verfügbare Speicher (und erfordert mindestens 2 x den erforderlichen Speicher für die vollständige Aktualisierung)
-- Ineffiziente Power Query-Logik kann in eine Auslastungsspitze von Arbeitsspeicher während der Datasetaktualisierung resultierende sein. Für eine ausgelastete Kapazität kann dadurch gelegentlich die physische Grenze, die Aktualisierung fehlschlägt, und möglicherweise Auswirkungen auf andere Vorgänge Bericht anzeigen, auf die Kapazität erreichen.
-- Häufig abgefragte Datasets, die im Speicher verbleiben müssen, beeinträchtigen die Fähigkeit eines anderen Datasets, die aufgrund von begrenzt verfügbaren Arbeitsspeicher aktualisieren
+- Die zu aktualisierenden Datasets sind möglicherweise zu groß, um in den verfügbaren Arbeitsspeicher zu passen (für die vollständige Aktualisierung ist mindestens 2 x erforderlich).
+- Ineffizient Power Query Logik kann zu einer Speicher Auslastungs Spitze während der Aktualisierung des Datasets führen. Bei einer ausgelasteten Kapazität kann dies gelegentlich die physische Grenze erreichen, die Aktualisierung nicht durchgehen und möglicherweise andere Berichts Ansichts Vorgänge für die Kapazität beeinträchtigen.
+- Häufig abgefragte Datasets, die im Arbeitsspeicher bleiben müssen, können die Fähigkeit anderer Datasets aufgrund von eingeschränktem verfügbarem Speicher beeinträchtigen.
 
-Damit können dies untersuchen, sehen die Power BI-Administrator für:
+Um dies zu untersuchen, kann der Power BI-Administrator Folgendes suchen:
 
-- Unzureichender Arbeitsspeicher zum Zeitpunkt der datenaktualisierung, wenn Speicherplatz weniger als 2 x die Größe des Datasets aktualisiert werden müssen ist
-- Datasets, wurden nicht aktualisiert werden und wurden nicht im Arbeitsspeicher vor der Aktualisierung, aber der begonnen hat, um interaktive Datenverkehr während hohe Aktualisierungszeiten anzuzeigen. Um festzustellen, welche Datasets in den Arbeitsspeicher zu jedem Zeitpunkt einer Power BI geladen wurden sehen sich Administratoren im Bereich "Datasets" des **Datasets** Registerkarte in der app und Cross-Filter zu einem bestimmten Zeitpunkt durch Klicken auf einen Balken in den **pro Stunde Laden von Dataset-Anzahl**. Eine lokale Spitze (in der folgenden Abbildung dargestellt) gibt an, eine Stunde, wenn mehrere Datasets in den Arbeitsspeicher geladen wurden dem Start der geplanten Aktualisierungen verzögern kann
-- Erhöhte Dataset entfernungen dauert platzieren, wenn es sich bei datenaktualisierungen geplant sind, gestartet wurde, der angibt, gab es hoher arbeitsspeicherauslastung durch zu viele verschiedene interaktive Berichte vor dem Zeitpunkt der Aktualisierung verarbeitet verursacht. Die **stündlichen Dataset Entfernungen und Arbeitsspeichernutzung** Visual kann Spitzen in der entfernungen eindeutig anzugeben.
+- Wenig verfügbarer Speicher zum Zeitpunkt der Datenaktualisierung, wenn der verfügbare Arbeitsspeicher kleiner als das 2-fache der Größe des Datasets ist, das aktualisiert werden soll.
+- Datasets, die nicht aktualisiert wurden und vor einer Aktualisierung nicht im Arbeitsspeicher waren, aber mit der Anzeige von interaktivem Datenverkehr während hoher Aktualisierungszeiten begannen. Um zu sehen, welche Datasets zu einem beliebigen Zeitpunkt in den Arbeitsspeicher geladen wurden, kann ein Power BI Administrator den Bereich Datasets der Registerkarte **DataSets** in der App anzeigen und den Kreuz Filter zu einem bestimmten Zeitpunkt durch Klicken auf eine der Balken in der **Anzahl der stündlichen geladenen Datasets**durch klicken. Eine lokale Spitze (in der Abbildung unten dargestellt) gibt eine Stunde an, in der mehrere Datasets in den Arbeitsspeicher geladen wurden, was den Start geplanter Aktualisierungen verzögern kann.
+- Vermehrte datasetentfernungen, die ausgeführt werden, wenn Datenaktualisierungen geplant sind. Dies deutet darauf hin, dass eine hohe Arbeitsspeicher Auslastung verursacht wurde, indem zu viele verschiedene interaktive Berichte vor dem Zeitpunkt der Aktualisierung bedient wurden. Die Visualisierung **stündliches DataSet und** die Arbeitsspeicher Nutzung können deutlich zu Spitzen in Entfernungen hindeuten.
 
-Die folgende Abbildung zeigt eine lokale Spitze in der geladenen Datasets, das bedeutet, dass interaktive Abfragen verzögert Anfang aktualisiert. Wählen einen Zeitraum auf die **stündlichen geladen Dataset zählt** Visual kreuzt Filter die **Größe des Datasets beseitigt** visual.
+Die folgende Abbildung zeigt eine lokale Spitze in geladenen Datasets, die eine interaktive Abfrage für den verzögerten Start von Aktualisierungen vorschlägt. Durch die Auswahl eines Zeitraums im visuellen Element für **stündliche geladene Datasets** wird die Visualisierung der **Größe des Datasets** Kreuz gefiltert.
 
-![Eine lokale Spitze in der geladenen Datasets vorgeschlagen, interaktive Abfragen verzögerten Start von Aktualisierungen](media/whitepaper-premium-deployment/hourly-loaded-dataset-counts.png)
+![Eine lokale Spitze in geladenen Datasets schlägt den verzögerten Start von Aktualisierungen vor.](media/whitepaper-premium-deployment/hourly-loaded-dataset-counts.png)
 
-Power BI-Administrator versuchen, das Problem zu beheben, indem Sie Schritte ausführen, um sicherzustellen, dass ausreichend Arbeitsspeicher für datenaktualisierungen zunächst verfügbar ist:
+Der Power BI-Administrator kann versuchen, das Problem zu beheben, indem er die folgenden Schritte durchführt, um sicherzustellen, dass ausreichend Arbeitsspeicher für die Datenaktualisierung zur Verfügung steht:
 
-- Kontaktaufnahme mit dem Dataset datenaktualisierung Besitzer und aufgefordert, zu staffeln Daten trennen Zeitpläne
-- Verkleinern Datasets Kacheln durch Abfragen verursachte Last durch das Entfernen unnötiger Dashboards oder Dashboard, besonders solche, die Sicherheit auf Zeilenebene zu erzwingen.
-- Beschleunigen der datenaktualisierungen durch Optimieren der Power Query-Logik, Modell berechnete Spalten oder Tabellen, Reduzieren der Größe des Datasets beseitigt und die Konfigurierung von größeren Datasets zum Durchführen von inkrementeller Daten aktualisieren
+- Kontaktieren von DataSet-Besitzern und Abfragen von Zeitplänen zur Datenaktualisierung
+- Reduzieren der Auslastung von Datasetabfragen durch Entfernen unnötiger Dashboards oder dashboardkacheln, insbesondere bei der Durchsetzung der Sicherheit auf Zeilenebene
+- Beschleunigung von Datenaktualisierungen durch Optimieren der Power Query Logik, berechnen von berechneten Spalten oder Tabellen, verringern von datasetgrößen oder konfigurieren größerer Datasets zum Durchführen einer inkrementellen Datenaktualisierung
 
-### <a name="identifying-slow-responding-datasets"></a>Identifizieren langsame Reaktion Datasets
+### <a name="identifying-slow-responding-datasets"></a>Identifizieren von Datensätzen mit langsamer Reaktion
 
-In diesem Szenario wurde eine Untersuchung ausgelöst, wenn Benutzer sich darüber beschwert, dass bestimmte Berichte öffnen, lange dauerte und zuweilen mehr reagierte.
+In diesem Szenario wurde eine Untersuchung ausgelöst, wenn sich Benutzer darüber beschweren, dass bestimmte Berichte lange Zeit in Anspruch genommen haben.
 
-In der app kann der Power BI-Administrator mithilfe der **Abfragedauern** das visuelle Element an die schlechteste Leistung Datasets zu bestimmen, indem Sie das Sortieren von Datasets nach absteigender **Durchschnittsdauer**. Dieses visuelle Element wird auch Dataset Anzahl von Abfragen, damit Sie sehen, wie oft die Datasets abgefragt werden.
+In der APP kann der Power BI Administrator mithilfe des visuellen Elements " **Abfrage** dauern" die ungünstigsten Datasets ermitteln, indem Datasets nach absteigender **durchschnittlicher Dauer**sortiert werden. Diese Visualisierung zeigt auch datasetabfragezählungen an, sodass Sie sehen können, wie oft die Datasets abgefragt werden.
 
-![Aufschlussreiche schlechteste Leistung datasets](media/whitepaper-premium-deployment/worst-performing-datasets.png)
+![Aufdecken der schlechtesten leistungsstarken Datasets](media/whitepaper-premium-deployment/worst-performing-datasets.png)
 
-Power BI-Administrator kann, finden Sie in der **Abfrage Dauerverteilung** Visualisierung zeigt ein gesamtverteilung von Buckets abfrageleistung (< = 30ms, 0 – 100 ms, usw.) für den gefilterten Zeitraum. Im Allgemeinen Abfragen akzeptieren einer Sekunde oder weniger werden von den meisten Benutzern reaktionsfähig berücksichtigt Abfragen, die länger dauern tendenziell eine Vorstellung von schlechte Leistung erstellen.
+Der Power BI-Administrator kann auf das visuelle Element für die **Abfrage Dauer Verteilung** verweisen, das für den gefilterten Zeitraum eine Gesamtverteilung der abgesenkten Abfrageleistung (< = 30ms, 0-100 MS usw.) anzeigt. Im Allgemeinen werden Abfragen, die eine Sekunde oder weniger benötigen, von den meisten Benutzern als reaktionsfähig angesehen. Abfragen, die mehr Zeit in Anspruch nehmen, erzeugen eine schlechte Leistung.
 
-Die **Verteilung der Dauer für die stündliche Abfrage** Visual kann der Administrator Power BI ein-Stunden-Zeiträume zu identifizieren, wenn die Leistung der Kapazität kann haben wurde erkannt, die als schlechter. Je größer Segmente die Leiste der Abfrage darstellen Dauer von mehr als einer Sekunde, je größer das Risiko, dass Benutzer eine schlechte Leistung wahrgenommen werden.
+Mit der visuellen Visualisierung für die **stündliche Abfrage Dauer** kann der Power BI-Administrator einstündige Zeiträume ermitteln, wenn die Kapazitäts Leistung als unzureichend empfunden werden könnte. Je größer die Balken Segmente, die die Abfrage Dauer über eine Sekunde darstellen, desto größer ist das Risiko, dass Benutzer eine schlechte Leistung erkennen.
 
-Das visuelle Element ist interaktiv, und wenn ein Segment des Balkens aktiviert ist, den entsprechenden **Abfragedauern** tabellenvisual auf der Berichtsseite ist kreuzgefiltert Datasets angezeigt, dar. Power BI-Administrator auf einfache Weise identifizieren, die diese kreuzfilterung ermöglicht die Datasets langsam reagiert.
+Das visuelle Element ist interaktiv, und wenn ein Segment der Leiste ausgewählt ist, wird die entsprechende Tabellen Visualisierung der **Abfrage Dauer** auf der Berichtsseite Kreuz gefiltert und zeigt die Datasets an, die Sie repräsentiert. Mit dieser Kreuz Filterung kann der Power BI Administrator leicht erkennen, welche Datasets langsam reagieren.
 
-Die folgende Abbildung zeigt eine Visualisierung gefiltert nach **stündlichen Abfrage Dauer Verteilungen**die schlechteste Leistung Datasets in einer Stunde Buckets Schwerpunkt. 
+Die folgende Abbildung zeigt eine Visualisierung, die nach **stündlichen Distributionen der Abfrage Dauer**gefiltert wird und sich auf die schlechtesten leistungsstarken Datasets in einem einstündigen Bucket konzentriert. 
 
-![Gefilterte stündlichen Abfrage Dauer Verteilungen visual zeigt schlechteren zu kennzeichnen, die Datasets ausführen](media/whitepaper-premium-deployment/hourly-query-duration-distributions.png)
+![Gefilterte, stündliche Abfrage Dauer Verteilungen Visualisierung zeigt die leistungsfähigsten Datasets an](media/whitepaper-premium-deployment/hourly-query-duration-distributions.png)
 
-Nachdem das schlechtere Leistung-Dataset in einen bestimmten Zeitraum von 1 Stunde identifiziert wurde, kann Power BI-Administrator überprüfen Sie, ob eine schlechte Leistung, wenn eine überladene Kapazität verursacht wird oder aufgrund einer fehlerhaft, Dataset oder Bericht entwickelt. Um dies zu erreichen, können sie verweisen auf die **Abfrage warten Sie, wie oft** Visual und Sortieren von Datasets nach absteigender Durchschnittliche Abfragewartezeit. Wenn ein großer Prozentsatz der Abfragen warten, ist für das Dataset ein hoher Bedarf an wahrscheinlich die Ursache für die vielen Abfrage wartet. Die durchschnittliche Zeit "Abfragewartezeit" ist eine wesentliche (> 100 ms), könnte nicht Schaden überprüfen das Dataset und den Bericht, um festzustellen, ob Optimierungen vorgenommen werden können. Vielleicht weniger Visualisierungen auf angenommen, Seiten des Berichts oder einer DAX-Ausdruck-Optimierung.
+Sobald das DataSet mit schlechter Leistung in einer bestimmten Zeitspanne von 1 Stunde identifiziert wurde, kann der Power BI Administrator prüfen, ob eine schlechte Leistung durch eine überladene Kapazität verursacht wird, oder aufgrund eines unzureichend entworfenen Datasets oder Berichts. Um dies zu erreichen, können Sie auf die Visualisierung der **Abfrage Wartezeit** verweisen und Datasets nach absteigender durchschnittlicher Abfrage Wartezeit sortieren. Wenn ein großer Prozentsatz an Abfragen wartet, ist wahrscheinlich eine hohe Nachfrage nach dem DataSet die Ursache für die vielen Abfrage Wartezeiten. Wenn die durchschnittliche Abfrage Wartezeit beträchtlich (> 100 ms) ist, ist es möglicherweise sinnvoll, das DataSet und den Bericht zu überprüfen, um festzustellen, ob Optimierungen vorgenommen werden können. Beispielsweise werden möglicherweise weniger visuelle Elemente auf den angegebenen Berichts Seiten oder eine DAX-Ausdrucks Optimierung angezeigt.
 
-![Die Abfrage warten Sie, wie oft Visualisierung hilft zu schlechter Leistung Datasets anzeigen](media/whitepaper-premium-deployment/query-wait-times.png)
+![Das visuelle Element für die Abfrage Wartezeit hilft, leistungsstarke Datasets anzuzeigen.](media/whitepaper-premium-deployment/query-wait-times.png)
 
-Es gibt mehrere mögliche Gründe für Query Wait Time erstellen in Datasets:
+Es gibt mehrere mögliche Gründe für die Erstellung von Abfrage Wartezeiten in Datasets:
 
-- Ein nicht optimaler Modellentwurf, Measureausdrücke oder sogar den Berichtsentwurf - alle Umstände, die über mitwirkungsrechte lang andauernde Abfragen, die hohe CPU nutzen. Dies erzwingt, dass neue Abfragen warten, bis die CPU-Threads verfügbar, und erstellen einen Konvoi-Effekt (Stellen Sie sich datenverkehrsstau), während der Hauptgeschäftszeiten häufig gesehen. Die **Abfragewartevorgänge** Seite werden die Haupt-Ressourcenskriptdatei zu bestimmen, ob die Datasets hohe durchschnittliche abfragewartezeiten enthalten.
-- Eine hohe Anzahl von gleichzeitigen Kapazität Benutzer (Hunderte oder Tausende) nutzen, den gleichen Bericht oder Dataset. Sogar ausgereifte Datasets können einen Schwellenwert für die Parallelität ausführen. Dies wird in der Regel durch ein einzelnes Dataset einen deutlich höheren Wert angezeigt, für die Abfrage als andere Datasets anzeigen zählt angegeben (d. h. 300 KB Abfragen für ein Dataset gegenüber < 30 KB-Abfragen für alle anderen Datasets). An einem bestimmten Punkt, der die Abfrage wartet, für dieses Dataset gestartet wird, um staffeln, und dies Sie in finden wird der **Abfragedauern** visual.
-- Viele verschiedene Datasets gleichzeitig abgefragt speicherüberlastung verursachen, da Datasets häufig in den Arbeitsspeicher durchlaufen. Dies führt dazu, dass Benutzer, die Leistungseinbußen auftreten, wenn das Dataset in den Arbeitsspeicher geladen wird. Um dies zu bestätigen, Power BI-Administrator kann finden Sie unter den **stündlichen Dataset Entfernungen und Arbeitsspeichernutzung** visual, die möglicherweise eine große Anzahl von Datasets in den Arbeitsspeicher geladen wird wiederholt entfernt werden.
+- Ein suboptimaler Modellentwurf, Measure-Ausdrücke oder sogar Berichtsentwurf: alle Umstände, die zu Abfragen mit langer Ausführungszeit beitragen können, die ein hohes Maß an CPU beanspruchen. Dadurch wird erzwungen, dass neue Abfragen gewartet werden, bis die CPU-Threads verfügbar sind, und Sie können einen konvoinffekt (Datenverkehrs Stau) erstellen, der häufig in Spitzenzeiten Die Seite **Abfrage** Wartezeiten ist die wichtigste Ressource, um zu bestimmen, ob Datasets hohe durchschnittliche Abfrage Wartezeit aufweisen.
+- Eine große Anzahl gleichzeitiger Kapazitäts Benutzer (Hunderte bis Tausende), die denselben Bericht oder dasselbe Dataset verwenden. Selbst gut entworfene Datasets können über einen Parallelitäts Schwellenwert hinausgehen. Dies wird in der Regel durch ein einzelnes Dataset angegeben, das einen deutlich höheren Wert für die Abfrage Anzahl anzeigt als andere Datasets (d. h. 300 KB für ein DataSet im Vergleich zu < 30K-Abfragen für alle anderen Datasets). Zu einem späteren Zeitpunkt wartet die Abfrage darauf, dass das DataSet gestaffelt wird. Dies wird im visuellen Element für die **Abfrage Dauer** angezeigt.
+- Viele unterschiedliche DataSets, die gleichzeitig abgefragt werden, führen zu einer Überlastung als Datasets, die häufig in den Arbeitsspeicher verschoben werden. Dies führt dazu, dass Benutzer beim Laden des Datasets in den Arbeitsspeicher eine langsame Leistung aufweisen. Um dies zu bestätigen, kann der Power BI Administrator auf das **stündliche DataSet-Entfernungs-und Arbeitsspeicher Verbrauch-** Element verweisen, das angibt, dass eine große Anzahl von Datasets, die in den Arbeitsspeicher geladen werden, wiederholt entfernt werden.
 
-### <a name="identifying-causes-for-sporadically-slow-responding-datasets"></a>Identifizieren von Ursachen für sporadisch langsam reagieren Datasets
+### <a name="identifying-causes-for-sporadically-slow-responding-datasets"></a>Identifizieren von Gründen für sporadisch langsam reagierende Datasets
 
-In diesem Szenario wurde eine Untersuchung ausgelöst, wenn Benutzer beschrieben, dass der Bericht, den visuellen Elementen in einigen Fällen sind der Ansicht, die erst langsam reagieren oder konnte nicht mehr reagiert, aber in anderen Fällen diese Auswirkung in akzeptabler Weise reagiert wurden.
+In diesem Szenario wurde eine Untersuchung ausgelöst, wenn Benutzer beschreiben, dass berichtsvisuals manchmal langsam waren oder nicht mehr reaktionsfähig waren, aber zu anderen Zeiten, in denen Sie nicht mehr reagiert haben.
 
-Innerhalb der app die **Abfragedauern** Abschnitt wurde verwendet, um die Ursache Dataset wie folgt suchen:
+In der App wurde der Abschnitt " **Abfrage Dauer** " verwendet, um das DataSet "-behalte" auf folgende Weise zu finden:
 
-- In der **Abfragedauern** visual der Administrator gefilterte Dataset von Dataset (beginnend mit dem obersten abgefragte Datasets) und untersucht die übergreifende gefilterte Balken in den **stündlichen Abfrage Verteilungen** visual.
-- Wenn ein einstündigen Balken bedeutende Änderungen des Verhältnisses zwischen allen Abfragegruppen Dauer im Vergleich zu anderen Balken, eine Stunde für dieses Dataset wurde (d. h. das Verhältnis zwischen der Farben, ändert sich erheblich), es bedeutet, dass dieses Dataset veranschaulicht eine sporadische Änderung die Leistung.
-- Zeigt einen unregelmäßigen Teil der Abfragen mit schlechter Leistung, eine Stunde Balken angezeigt ein TimeSpan-Objekt, in denen das Dataset durch einen konkurrierenden Effekt, durch andere Datasets Aktivitäten verursacht betroffen war.
+- Im visuellen Element für die **Abfrage Dauer** hat der admin ein Dataset nach DataSet gefiltert (beginnend bei den ersten abgefragten Datasets) und die Kreuz gefilterten Balken im visuellen Element der **stündlichen Abfrage Verteilung** untersucht.
+- Wenn ein einzelner einstündiger Balken signifikante Änderungen im Verhältnis zwischen allen Abfrage Dauer Gruppen und anderen einstündigen Balken für das Dataset anzeigt (d.h. die Verhältnisse zwischen den Farben werden drastisch geändert), bedeutet dies, dass dieses DataSet eine sporadische Änderung in Leistungs.
+- Der einstündige Balken, der einen unregelmäßigen Anteil von Abfragen mit schlechter Leistung anzeigt, gibt eine Zeitspanne an, bei der das Dataset durch einen Noisy Neighbor-Effekt beeinträchtigt wurde, der durch andere Datasets verursacht wurde.
 
-Die folgende Abbildung zeigt eine Stunde am 30. Januar mit erheblichen preisgünstiger leistungsregression eines Datasets Fehler, angegeben durch die Größe des "(3,10s]"Ausführung Dauer Buckets. Klicken Sie auf diese Leiste einstündigen zeigt alle Datasets in den Arbeitsspeicher geladen werden, während dieser Zeit stellt daher die Candidate Ursache-Datasets den noisy-Neighbor-Effekt verursachen.
+Die Abbildung unten zeigt eine Stunde am 30. Januar, bei der ein erheblicher Rückschlag in der Leistung eines Datasets aufgetreten ist, was durch die Größe des Bucket "(3, 10S]" Ausführungsdauer angezeigt wird. Wenn Sie auf diese einstündige Leiste klicken, werden alle Datasets, die während dieser Zeit in den Arbeitsspeicher geladen werden, angezeigt
 
-![Leiste mit der schlechtesten Leistung durch einen großen Teil](media/whitepaper-premium-deployment/worst-performing-queries.png)
+![Balken mit der schlechtesten Leistung durch einen großen Teil](media/whitepaper-premium-deployment/worst-performing-queries.png)
 
-Nachdem ein problematisch TimeSpan-Objekt (d. h. während Jan 30 in der Abbildung oben) identifiziert wurde kann Power BI-Administrator entfernen Sie alle datasetfilter anschließend filtern Sie nur nach dieser Zeitspanne, um zu bestimmen, welche Datasets während dieser Zeit aktiv abgefragt wurden. Das Dataset Ursache für den Effekt noisy-Neighbor ist normalerweise auf, des oberen abgefragte Datasets oder die Woche mit die längste durchschnittliche Abfragedauer.
+Sobald eine problematische Zeitspanne identifiziert ist (d. h. während des 30. Januar in der obigen Abbildung), kann der Power BI Administrator alle Datasetfilter entfernen und dann nur nach diesem Zeitraum filtern, um zu bestimmen, welche Datasets während dieser Zeit aktiv abgefragt wurden. Das behaltene Dataset für den "noisy Neighbor"-Effekt ist in der Regel entweder das erste abgefragte DataSet oder das DataSet mit der längsten durchschnittlichen Abfrage Dauer.
 
-Eine Lösung für dieses Problem könnte sein, um die Ursache zu verteilen, die Datasets, die über unterschiedliche Arbeitsbereiche auf verschiedenen Premium-Kapazitäten oder gemeinsam genutzte Kapazität, wenn der Datasetgröße, Verbrauch Anforderungen und Daten aktualisieren Muster unterstützt werden.
+Eine Lösung für dieses Problem könnte darin bestehen, die problematischen Datasets über verschiedene Arbeitsbereiche auf unterschiedlichen Premium-Kapazitäten zu verteilen, oder auf freigegebene Kapazität, wenn die Größe des Datasets, die Verbrauchsanforderungen und die Daten Aktualisierungs Muster unterstützt werden.
 
-Das Gegenteil könnte auch "true" sein. Power BI-Administrator konnte identifizieren Mal, wenn ein Dataset-abfrageleistung erheblich verbessert, und suchen Sie nach, was nicht mehr vorhanden. Wenn bestimmte Informationen an diesem Punkt fehlt, können, die um auf das Problem zu verweisen.
+Das Gegenteil könnte auch der Fall sein. Der Power BI-Administrator könnte Zeiten erkennen, in denen sich die Abfrageleistung eines Datasets drastisch verbessert, und dann nach dem Verschwinden suchen. Wenn an diesem Punkt bestimmte Informationen fehlen, kann dies dazu führen, dass Sie auf das verursachmögliche Problem zeigen.
 
-### <a name="determining-whether-there-is-enough-memory"></a>Bestimmen, ob genug Speicher steht
+### <a name="determining-whether-there-is-enough-memory"></a>Bestimmen, ob genügend Arbeitsspeicher vorhanden ist
 
-Bestimmt, ob genügend für die Kapazität Arbeitsspeicher um seine Workloads abzuschließen, Power BI-Administrator kann finden Sie unter den **Arbeitsspeicherprozentsätze verbraucht** in visual die **Datasets** Registerkarte der app. **Alle** (gesamt) Arbeitsspeicher darstellt, die speicherbelegungen, die durch Datasets, die in den Arbeitsspeicher, unabhängig davon, ob diese aktiv abgefragt oder verarbeitet werden geladen. **Aktive** Arbeitsspeicher darstellt, die speicherbelegungen, die durch Datasets, die aktiv verarbeitet werden.
+Um zu ermitteln, ob genügend Arbeitsspeicher zur Verfügung steht, um die Arbeits Auslastungen abzuschließen, kann der Power BI Administrator auf der Registerkarte **DataSets** der APP auf den visuellen Wert des **verbrauchten Arbeitsspeichers** verweisen. **Alle** (Gesamt) der Arbeitsspeicher steht für den Arbeitsspeicher, der von in den Arbeitsspeicher geladenen Datasets beansprucht wird, unabhängig davon, ob diese aktiv abgefragt oder verarbeitet werden. Der **aktive** Arbeitsspeicher stellt den Arbeitsspeicher dar, der von Datasets beansprucht wird, die aktiv verarbeitet werden.
 
-In einer fehlerfreien Kapazität das visuelle Element aussehen wird, zeigt eine Lücke zwischen allen (gesamt) und den aktiven Arbeitsspeicher:
+In einer fehlerfreien Kapazität sieht das visuelle Element wie folgt aus und zeigt eine Lücke zwischen allen (Gesamt) und aktivem Speicher an:
 
-![Eine fehlerfreie Kapazität wird eine Lücke zwischen allen (gesamt) angezeigt und aktiven Arbeitsspeichers](media/whitepaper-premium-deployment/memory-healthy-capacity.png)
+![Eine fehlerfreie Kapazität zeigt eine Lücke zwischen allen (Gesamt) und aktivem Arbeitsspeicher.](media/whitepaper-premium-deployment/memory-healthy-capacity.png)
 
-In einer Kapazität arbeitsspeicherauslastung auftritt zeigt dasselbe visuelle deutlich aktiven Arbeitsspeicher und Gesamtarbeitsspeicher konvergieren, was bedeutet, dass es nicht möglich, weitere Datasets zu diesem Zeitpunkt in den Arbeitsspeicher geladen ist. In diesem Fall kann die Power BI-Administrator klicken **Kapazität neu starten** (in **erweiterte Optionen** der Bereich "Kapazität Einstellungen" des Verwaltungsportals). Neu starten die Ergebnisse für die Kapazität wird für alle Datasets aus dem Speicher geleert und ermöglicht ihnen, in den Arbeitsspeicher gemäß der Vorgabe (Abfrage- oder datenaktualisierungsanforderungen) neu zu laden.
+In einer Kapazität mit unzureichendem Arbeitsspeicher zeigt das gleiche visuelle Element deutlich den aktiven Arbeitsspeicher und die gesamte Arbeitsspeicher konvergieren an, was bedeutet, dass es unmöglich ist, zu diesem Zeitpunkt weitere Datasets in den Arbeitsspeicher zu laden. In diesem Fall kann der Power BI Administrator auf **Kapazitäts Neustart** klicken (unter **Erweiterte Optionen** des Bereichs Kapazitäts Einstellungen des Verwaltungs Portals). Durch einen Neustart der Kapazität werden alle Datasets aus dem Arbeitsspeicher geleert, sodass Sie nach Bedarf in den Arbeitsspeicher geladen werden können (durch Abfragen oder die Datenaktualisierung).
 
-![** Aktiv ** Arbeitsspeicher mit konvergieren ** alle ** Arbeitsspeicher](media/whitepaper-premium-deployment/memory-unhealthy-capacity.png)
+![\* * Aktiv * * Arbeitsspeicher konvergieren mit * * alle * * Arbeitsspeicher](media/whitepaper-premium-deployment/memory-unhealthy-capacity.png)
 
-### <a name="determining-whether-there-is-enough-cpu"></a>Bestimmen, ob es ist ausreichend CPU
+### <a name="determining-whether-there-is-enough-cpu"></a>Bestimmen, ob genügend CPU vorhanden ist
 
-Im Allgemeinen sollte eine Kapazität für die durchschnittliche CPU-Auslastung unter 80 % bleiben. Diesen Wert überschreiten, bedeutet, dass die Kapazität annähert, die die CPU-Auslastung ist.
+Im Allgemeinen sollte die durchschnittliche CPU-Auslastung einer Kapazität unter 80% liegen. Wenn dieser Wert überschritten wird, bedeutet dies, dass die Kapazität der CPU-
 
-Auswirkungen der CPU-Auslastung wird durch Vorgänge dauert länger, als sie aufgrund der Kapazität, die viele CPU-Kontextwechsel durchführen sollten, da es versucht, alle Vorgänge zu verarbeiten. Warten Sie Zeiten, in einer Premium-Kapazität mit einer hohen Anzahl gleichzeitiger Abfragen, die dies durch hohe Abfrage angegeben ist. Eine Folge von hohem Wartezeiten ist langsamer Reaktionsfähigkeit als üblich. Power BI-Administrator kann ganz einfach ermitteln, wenn die CPU Kapazität, anhand erschöpft ist der **stündlichen Abfrage warten Zeit Verteilungen** visual. Periodische Spitzen der Abfrage die Wartezeit Anzahl potenzieller die CPU-Auslastung angeben.
+Die Auswirkungen der CPU-Sättigung werden durch Vorgänge ausgedrückt, die länger dauern als aufgrund der Kapazität, die viele CPU-Kontextwechsel durchführt, wenn versucht wird, alle Vorgänge zu verarbeiten. In einer Premium-Kapazität mit einer hohen Anzahl gleichzeitiger Abfragen wird dies durch hohe Abfrage Wartezeiten angegeben. Eine Folge hoher Abfrage Wartezeiten ist langsamer als üblich. Der Power BI-Administrator kann leicht erkennen, wann die CPU ausgelastet ist, indem er das visuelle Element für die **stündliche Abfrage Wartezeit** ansieht. Periodische Spitzenwerte der Abfrage Wartezeit zeigen auf eine potenzielle CPU-Sättigung hin.
 
-![Periodische Spitzen Abfrage Wartezeit Anzahl potenzieller die CPU-Auslastung angeben](media/whitepaper-premium-deployment/peak-query-wait-times.png)
+![Regelmäßig auftretende Spitzen bei den Indikatoren der Abfragewartezeit weisen auf eine potenzielle CPU-Sättigung hin](media/whitepaper-premium-deployment/peak-query-wait-times.png)
 
-Ein ähnliches Muster kann manchmal in Hintergrundvorgänge erkannt werden, wenn sie auf die CPU-Auslastung beitragen. Ein Power BI-Administrator finden für ein periodischer Anstieg der Aktualisierungen auf Zeiten für ein bestimmtes Dataset, in der angeben kann, dass Sie die CPU-Auslastung, die zum Zeitpunkt (möglicherweise aufgrund eines anderen laufenden Dataset aktualisiert und/oder interaktive Abfragen). In diesem Fall auf die **System** Ansicht der app nicht unbedingt ergibt möglicherweise, dass die CPU bei 100 % liegt. Die **System** zeigt stündlichen Durchschnittswerte, jedoch die CPU kann werden ausgelastet mehrere Minuten lang, der intensive Vorgänge, die wird als Spitzen im Wartezeiten.
+Ein ähnliches Muster kann manchmal bei Hintergrund Vorgängen erkannt werden, wenn Sie zur CPU-Sättigung beitragen. Ein Power BI-Administrator kann eine periodische Spitze der Aktualisierungszeiten für ein bestimmtes Dataset suchen, was zu einem bestimmten Zeitpunkt die CPU-Sättigung angeben kann (wahrscheinlich aufgrund anderer fortlaufender Datasetaktualisierungen und/oder interaktiver Abfragen). In diesem Fall kann das verweisen auf die **System** Sicht in der APP nicht notwendigerweise anzeigen, dass die CPU 100% beträgt. In der **System** Ansicht werden stündliche Durchschnittswerte angezeigt, aber die CPU kann für einige Minuten hoher Vorgänge, die als Spitzenwerte in Wartezeiten angezeigt werden, ausgelastet werden.
 
-Es gibt weitere Details in Bezug auf die Auswirkungen der CPU-Auslastung anzeigen. Während die Anzahl der Abfragen, die warten wichtig ist, wird Abfragewartezeit immer zu einem gewissen Grad ausgeführt, ohne dass eine Verringerung der wahrnehmbaren Leistung. Einige Datasets (mit längere Durchschnittliche Abfragezeit, der angibt, Komplexität oder Größe), sind anfälliger für die Auswirkungen der CPU-Auslastung als andere. Um diese Datasets ganz einfach identifizieren zu können, sehen sich Power BI-Administrator für die Änderungen in der Zusammensetzung der Farbe der Balken in den **pro Stunde warten Verteilung** visual. Nach dem Ermitteln einer Leiste Ausreißer, können sie die Datasets, die Abfrage wartet, während dieser Zeit musste suchen und betrachten Sie auch die Durchschnittliche Abfragewartezeit verglichen, um die durchschnittliche Abfragedauer. Wenn diese beiden Metriken von der gleichen Größe werden und die abfragearbeitsauslastung für das Dataset nicht trivial ist, ist es wahrscheinlich, dass das Dataset nicht genügend CPU-Nutzung beeinträchtigt wird.
+Es gibt weitere Nuancen, um die Auswirkung der CPU-Sättigung zu erkennen. Obwohl die Anzahl der Abfragen, die warten, wichtig ist, wird die Abfrage Wartezeit immer in gewissem Umfang durchgeführt, ohne dass eine erkennbare Leistungsminderung auftreten kann. Einige Datasets (mit längerer durchschnittlicher Abfragezeit, die die Komplexität oder Größe angeben) sind anfälliger für die Auswirkungen der CPU-Sättigung als andere. Um diese Datasets leicht zu identifizieren, kann der Power BI Administrator nach Änderungen in der Farbkomposition der Balken im visuellen Element für die **stündliche Wartezeit** suchen. Nachdem Sie eine ausreißerleiste entdeckt haben, können Sie nach den Datasets suchen, die während dieser Zeit Abfrage warte Vorgänge enthielten, und sich die durchschnittliche Abfrage Wartezeit im Vergleich zur durchschnittlichen Abfrage Dauer ansehen. Wenn diese beiden Metriken dieselbe Größe haben und die Abfrage Arbeitsauslastung für das DataSet nicht trivial ist, ist es wahrscheinlich, dass das Dataset durch unzureichende CPU beeinträchtigt wird.
 
-Dieser Effekt kann besonders offensichtlich sein, wenn ein Dataset in kurze Bursts sehr häufig Abfragen von mehreren Benutzern (z. B. in einer Schulung), wodurch die CPU-Auslastung während jeder Burst-genutzt wird. In diesem Fall können erhebliche abfragewartezeiten für dieses Dataset auftreten können, sowie für andere Datasets in der Kapazität (Auswirkung noisy-Neighbor) beeinträchtigt wird.
+Dieser Effekt kann besonders offensichtlich sein, wenn ein Dataset in kurzen Spitzen von Abfragen mit hoher Häufigkeit von mehreren Benutzern (d. h. in einer Trainings Sitzung) genutzt wird, was zu einer CPU-Sättigung bei jedem Burst führt. In diesem Fall können bedeutende Abfrage Wartezeiten für dieses Dataset auftreten und sich auf andere Datasets in der Kapazität auswirken (Noisy Neighbor-Effekt).
 
-In einigen Fällen können Power BI-Administratoren fordern Sie die Besitzer von Datasets einen weniger Erstellung flüchtige abfragearbeitsauslastung durch Erstellen eines Dashboards (welche Abfragen regelmäßig mit der ein Dataset aktualisieren für zwischengespeicherte Kacheln) anstelle eines Berichts. Dies kann helfen, Spitzen zu verhindern, wenn das Dashboard geladen wird. Diese Lösung möglicherweise immer möglich, dass die angegebene geschäftsanforderungen, nicht jedoch eine effektive Möglichkeit, um die CPU-Auslastung zu vermeiden, ohne dass auf das Dataset ändern können.
+In einigen Fällen können Power BI Administratoren anfordern, dass DataSet-Besitzer eine geringere Abfrage Arbeitsauslastung erstellen, indem Sie ein Dashboard erstellen (das in regelmäßigen Abständen eine beliebige datasetaktualisierung für zwischengespeicherte Kacheln abfragt) statt eines Berichts. Dadurch können Spitzen beim Laden des Dashboards vermieden werden. Diese Lösung ist für bestimmte Geschäftsanforderungen möglicherweise nicht immer möglich. es kann jedoch eine effektive Möglichkeit sein, CPU-Sättigung zu vermeiden, ohne Änderungen am DataSet vorzunehmen.
 
-## <a name="conclusion"></a>Fazit
+## <a name="conclusion"></a>Schlussbemerkung
 
-Power BI Premium bietet eine einheitlichere Leistung, Unterstützung für große Datenmengen und die Flexibilität, eine einheitliche Self-Service- und Enterprise-BI-Plattform für alle Benutzer in Ihrer Organisation. Diese Stufe 300 technischen Whitepaper wurde speziell für Power BI-Administratoren und Autoren von Inhalten und Herausgeber geschrieben. Es zielt darauf ab, um diese das volle Potenzial von Power BI Premium besser zu verstehen und zu entwerfen, bereitstellen, überwachen und Behandeln von skalierbaren Lösungen erläutert.
+Power BI Premium bietet eine konsistente Leistung, Unterstützung für große Datenvolumes und die Flexibilität einer einheitlichen Self-Service-und Enterprise-BI-Plattform für alle Personen in Ihrer Organisation. Dieses technische Whitepaper der Ebene 300 wurde speziell für Power BI-Administratoren und Inhaltsautoren und-Herausgeber geschrieben. Es soll Ihnen helfen, das Potenzial von Power BI Premium zu verstehen und zu erläutern, wie Sie skalierbare Lösungen entwerfen, bereitstellen, überwachen und beheben können.
 
-Zum Bereitstellen und Verwalten von Power BI Premium-Kapazitäten, Administratoren und Entwickler benötigen ein sehr gutes Verständnis der Funktionsweise Kapazitäten-Funktion, wie sie verwaltet und überwacht werden können und wie Modelle optimiert werden können, um angemessen zu reagieren, Leistungsprobleme und Engpässe sollten diese auftreten.
+Zum Bereitstellen und Verwalten von Power BI Premium Kapazitäten benötigen Administratoren und Modell Entwickler ein sehr gutes Verständnis der Funktionsweise, der Art und Weise, wie Sie verwaltet und überwacht werden können, und der Optimierung von Modellen, damit Sie entsprechend reagieren können. Leistungsprobleme und Engpässe sollten auftreten.
 
-## <a name="end-notes"></a>End-Hinweise
+## <a name="end-notes"></a>Notizen beenden
 
-<a name="endnote-01"></a>\[1\] technischen Artikel betrifft das Power BI Premium die nur vom Power BI-Cloud-Dienst unterstützt werden und Power BI-Berichtsserver ist mit einigen enthalten, damit Power BI-Berichtsserver nicht im Bereich, mit Ausnahme von Zustand, die die Lizenz erforderlich befindet, um die Installation Power BI Premium-SKUs.
+<a name="endnote-01"></a>\[1\] dieses technische Whitepaper befasst sich mit der Power BI Premium, die nur vom Power BI Cloud-Dienst unterstützt wird, und Power BI-Berichtsserver ist nicht im Bereich, es sei denn, dass die für die Installation von Power BI-Berichtsserver erforderliche Lizenz in einigen Power BI Premium SKUs.
 
-<a name="endnote-02"></a>\[2\] Power BI als Cloud-Dienst bei der zum Einbetten von Inhalten für Anwendungsbenutzer verwendet wird, Platform-as-a-Service (PaaS). Diese Art von Einbettung kann mit anderen Produkten, erreicht werden, von denen Power BI Premium ist.
+<a name="endnote-02"></a>\[2\] Power BI als clouddienst, wenn er zum Einbetten von Inhalten im Auftrag von Anwendungs Benutzern verwendet wird, ist Platform-as-a-Service (PAS). Diese Art der Einbettung kann mit unterschiedlichen beiden Produkten erreicht werden, von denen eine Power BI Premium ist.
 
-<a name="endnote-03"></a>\[3\] per Push übertragen, streaming und Hybrid-Datasets werden nicht im Premium-Kapazitäten gespeichert und sind daher keine wichtige Überlegung beim Bereitstellen, verwalten und Überwachen von Premium-Kapazitäten.
+<a name="endnote-03"></a>\[3\] Push-, Streaming-und Hybrid Datasets werden nicht in Premium-Kapazitäten gespeichert und sind daher bei der Bereitstellung, Verwaltung und Überwachung von Premium-Kapazitäten nicht zu berücksichtigen.
 
-<a name="endnote-04"></a>\[4\] Excel-Arbeitsmappen als einen Inhaltstyp mit Power BI werden nicht im Premium-Kapazitäten gespeichert und sind daher nicht berücksichtigt bei der Bereitstellung, Verwaltung oder Überwachung der Premium-Kapazitäten.
+<a name="endnote-04"></a>\[4\] Excel-Arbeitsmappen als Power BI Inhaltstyp werden nicht in Premium-Kapazitäten gespeichert und sind daher bei der Bereitstellung, Verwaltung und Überwachung von Premium-Kapazitäten nicht zu berücksichtigen.
 
-<a name="endnote-05"></a>\[5\] Visuals können so konfiguriert werden, dass um Datenschnitt-Interaktionen zu ignorieren. Weitere Informationen finden Sie in der [Interaktionen mit Visualisierungen in Power BI-Berichten](service-reports-visual-interactions.md) Dokument.
+<a name="endnote-05"></a>\[5\] visuelle Elemente können so konfiguriert werden, dass slicerinteraktionen ignoriert werden. Weitere Informationen finden Sie unter Interaktionen mit [Visualisierungen in einem Power BI-Berichts](service-reports-visual-interactions.md) Dokument.
 
-<a name="endnote-06"></a>\[6\] der Unterschied in der Größe bestimmt werden kann, indem Sie die Größe des Power BI Desktop-Datei mit dem Task-Manager Speicher unter Verwendung der Datei vergleichen.
+<a name="endnote-06"></a>\[6\] der Unterschied in der Größe kann ermittelt werden, indem die Power BI Desktop Dateigröße mit dem Task-Manager-Arbeitsspeicher verglichen wird, der für die Datei verwendet.
 
-<a name="endnote-07"></a>\[7\] Unterstützung für Microsoft-Datenquellen gehören SQL Server, Azure der databricks-Instanz, Azure HDInsight Spark (Beta), Azure SQL-Datenbank und Azure SQL Data Warehouse. Informationen zu zusätzlichen Quellen, finden Sie in der [von DirectQuery in Power BI unterstützte Datenquellen](desktop-directquery-data-sources.md) Dokument.
+<a name="endnote-07"></a>\[7\] Unterstützung für Microsoft-Datenquellen sind SQL Server, Azure Data Bricks Azure HDInsight Spark (Beta), Azure SQL-Datenbank und Azure SQL Data Warehouse. Weitere Informationen zu zusätzlichen Quellen finden Sie unter [Datenquellen, die von direkter Abfrage in Power BI Dokument unterstützt](desktop-directquery-data-sources.md) werden.
 
-<a name="endnote-08"></a>\[8\] Power BI Premium unterstützt das Hochladen einer Datei Power BI Desktop (.pbix) bis zu einem Maximum von 10 GB groß. Nach dem hochladen kann ein Datasets bis zu 12 GB Größe als Ergebnis der Aktualisierung anwachsen. Maximale Uploadgröße variiert je nach SKU. Weitere Informationen finden Sie in der [Power BI Premium-Unterstützung für große Datasets](service-premium-large-datasets.md) Dokument.
+<a name="endnote-08"></a>\[8\] Power BI Premium unterstützt das Hochladen einer Power BI Desktop Datei (. pbix) bis zu einer Größe von maximal 10 GB. Nach dem Hochladen kann ein DataSet im Ergebnis der Aktualisierung bis zu 12 GB groß werden. Die maximale Uploadgröße variiert je nach SKU. Weitere Informationen finden Sie im Dokument [Power BI Premium-Unterstützung für große Datasets](service-premium-large-datasets.md) .
 
-<a name="endnote-09"></a>\[9\] SKUs mit weniger als vier V-Kerne nicht auf dedizierte Infrastruktur ausgeführt werden. Dies schließt die EM1, EM2, A1 und A2-SKUs.
+<a name="endnote-09"></a>\[9\] SKUs mit weniger als vier v-Kernen können nicht in einer dedizierten Infrastruktur ausgeführt werden. Hierzu gehören die SKUs EM1, EM2, a1 und a2.
 
-<a name="endnote-10"></a>\[10\] zwar selten, können Modelle aus dem Arbeitsspeicher aufgrund von Dienstvorgängen entladen werden.
+<a name="endnote-10"></a>\[10\] in seltenen Fällen können Modelle aufgrund von Dienst Vorgängen aus dem Arbeitsspeicher entladen werden.
 
-<a name="endnote-11"></a>\[11\] diese Zeitangaben jederzeit geändert werden.
+<a name="endnote-11"></a>\[11\] diese Zeitangaben können jederzeit geändert werden.
 
-<a name="endnote-12"></a>\[12\] Dies wird als Multi-Geo Capabilities, gegenwärtig im vorschaustadium bezeichnet. Der Grund für eine Multi-Geo Capabilities-Bereitstellung ist in der Regel für Unternehmen oder Government-Compliance, anstatt der Leistung und Skalierung. Bericht und das Dashboard laden umfasst weiterhin Anforderungen an den Startbereich für Metadaten an. Weitere Informationen finden Sie in der [Multi-Geo-Unterstützung für Power BI Premium (Vorschau)](service-admin-premium-multi-geo.md) Dokument.
+<a name="endnote-12"></a>\[12\] Dies wird als "multigeoredunziert" bezeichnet, derzeit als Vorschauversion. Der Grund für eine Bereitstellung mit mehreren georedunkten liegt in der Regel in der Unternehmens-oder behördlichen Konformität, nicht bei der Leistung und Das Laden von Berichten und Dashboards umfasst weiterhin Anforderungen an den Startbereich für Metadaten. Weitere Informationen finden Sie im Dokument [Unterstützung für mehrere georedunkte für Power BI Premium (Vorschau)](service-admin-premium-multi-geo.md) .
 
-<a name="endnote-13"></a>\[13\] es ist möglich, dass Benutzer durch Überladen von Power BI-Dienst mit Aufträgen, übermäßig komplexe Abfragen zu schreiben, Erstellen von Zirkelverweisen usw. zu Leistungsproblemen führen können.
+<a name="endnote-13"></a>\[13\] es ist möglich, dass Benutzer Leistungsprobleme verursachen können, indem Sie die Power BI-Dienst mit Aufträgen überschreiben, übermäßig komplexe Abfragen schreiben, Zirkel Verweise erstellen usw.
 
-<a name="endnote-14"></a>\[14\] die Option zum Zuweisen der Arbeitsbereiche der gesamten Organisation wird nicht empfohlen, und es wird ein gezielterer Ansatz bevorzugt. Im Allgemeinen ist es nicht empfohlen, persönlichen Arbeitsbereiche für Produktions-Inhalt verwenden.
+<a name="endnote-14"></a>\[14\] die Möglichkeit, die Arbeitsbereiche der gesamten Organisation zuzuweisen, wird nicht empfohlen, und ein gezielteres Konzept wird bevorzugt. Im Allgemeinen ist es nicht empfehlenswert, persönliche Arbeitsbereiche für Produktions Inhalte zu verwenden.
 
-<a name="endnote-15"></a>\[15\] es ist möglich, A-SKUs in der app oder im Azure-Portal, aber nicht in der Power BI-Verwaltungsportal überwachen. Um A-SKUs zu überwachen, schlägt die Aktualisierung des Berichts, wenn die app nicht die Rolle "Leser" der Ressource hinzugefügt wurde. Weitere Informationen finden Sie in der [Monitor Power BI Premium und Power BI Embedded-Kapazitäten](service-admin-premium-monitor-capacity.md) Dokument.
+<a name="endnote-15"></a>\[15\] es ist möglich, SKUs in der APP oder im Azure-Portal zu überwachen, jedoch nicht im Power BI Admin-Portal. Zum Überwachen von SKUs tritt bei der Aktualisierung des Berichts ein Fehler auf, wenn die APP nicht der Rolle "Leser" der Ressource hinzugefügt wurde. Weitere Informationen finden Sie im Dokument [überwachen Power BI Premium und Power BI Embedded Kapazitäten](service-admin-premium-monitor-capacity.md) .
 
-<a name="endnote-16"></a>\[16\] Aktualisierungen können warten, wenn nicht genügend CPU- oder Arbeitsspeicherressourcen, um zu starten.
+<a name="endnote-16"></a>\[16\] Aktualisierungen können warten, wenn nicht genügend CPU oder Arbeitsspeicher verfügbar ist.
 
-<a name="endnote-17"></a>\[17\] die Größe des Datasets im Arbeitsspeicher kann größer sein als die Größe auf dem Datenträger von bis zu 20 %.
+<a name="endnote-17"></a>\[17\] die Größe des Datasets im Arbeitsspeicher kann größer als die Größe auf dem Datenträger sein, um bis zu 20%.
 
-<a name="endnote-18"></a>\[18\] durchschnittliche Speicherauslastung (GB) und höchste Arbeitsspeichernutzung (GB)
+<a name="endnote-18"></a>\[18\] durchschnittliche Speicherauslastung (GB) und höchste Arbeitsspeicher Nutzung (GB)
 
-<a name="endnote-19"></a>\[19\] Dataset entfernungen
+<a name="endnote-19"></a>\[19\] DataSet-Entfernungen
 
-<a name="endnote-20"></a>\[20\] Datasetabfragen, Dataset durchschnittliche Abfragedauer (ms), Datasets zu warten, Anzahl und Durchschnitt von Dataset-Wartezeit (ms)
+<a name="endnote-20"></a>\[20\] Datasetabfragen, durchschnittliche Abfrage Dauer für Datasets (MS), Wartezeit von Datasets und durchschnittliche Wartezeit für Datasets (MS)
 
-<a name="endnote-21"></a>\[21\] Anzahl von hoher CPU-Auslastung und CPU-Zeit der höchsten Auslastung (in den letzten sieben Tage)
+<a name="endnote-21"></a>\[21\] hohe Auslastung der CPU-Auslastung und CPU-Zeit der höchsten Auslastung (in den letzten sieben Tagen)
 
-<a name="endnote-22"></a>\[22\] DQ/LC hohe Auslastung Anzahl und den DQ/LC-Zeitpunkt der höchsten Auslastung (in den letzten sieben Tage)
+<a name="endnote-22"></a>\[22\] DQ/LC: hohe Auslastung und DQ/LC-Zeit der höchsten Auslastung (in den letzten sieben Tagen)
