@@ -21,7 +21,8 @@ ms.locfileid: "61312494"
 Wenn Sie mehrere Tabellen importieren, werden Sie mit großer Wahrscheinlichkeit einige Analysen mit Daten aus allen diesen Tabellen durchführen. Beziehungen zwischen diesen Tabellen sind erforderlich, um die Ergebnisse genau zu berechnen und die richtigen Informationen in Ihren Berichten anzuzeigen. Mit Power BI Desktop können diese Beziehungen ganz leicht erstellt werden. Tatsächlich müssen Sie in den meisten Fällen keine weiteren Schritte unternehmen, da die AutoErmittlungsfunktion dies für Sie übernimmt. In einigen Fällen müssen Sie die Beziehungen jedoch möglicherweise selbst erstellen oder Änderungen an einer Beziehung vornehmen. In beiden Fällen ist es wichtig zu verstehen, wie Beziehungen in Power BI funktionieren und wie sie erstellt und bearbeitet werden.
 
 ## <a name="autodetect-during-load"></a>AutoErmittlung beim Laden
-Wenn Sie zwei oder mehr Tabellen gleichzeitig, Abfragen, wenn die Daten geladen wird, versucht Power BI Desktop suchen und Erstellen von Beziehungen für Sie. Kardinalität, Kreuzfilterrichtung und aktive Eigenschaften werden automatisch festgelegt. Power BI Desktop untersucht die Spaltennamen in den abgefragten Tabellen, um festzustellen, ob mögliche Beziehungen vorhanden sind. Wenn Beziehungen vorhanden sind, werden sie automatisch erstellt. Wenn Power BI Desktop nicht ermitteln kann mit einem hohen Maß an Zuverlässigkeit eine Übereinstimmung vorliegt, es wird die Beziehung nicht automatisch erstellt. Sie können das Dialogfeld "Beziehungen verwalten" weiterhin dazu verwenden, Beziehungen zu erstellen oder zu bearbeiten.
+Wenn Sie zwei oder mehrere Tabellen gleichzeitig abfragen und die Daten geladen werden, sucht Power BI Desktop nach Beziehungen und erstellt diese. Die Kardinalität, Kreuzfilterrichtungen und aktive Eigenschaften werden automatisch festgelegt. Power BI Desktop untersucht die Spaltennamen in den abgefragten Tabellen, um darüber festzustellen ob mögliche Beziehungen vorhanden sind. Wenn Beziehungen vorhanden sind, werden diese automatisch erstellt. 
+Wenn Power BI Desktop nicht zuverlässig ermitteln kann ob eine Übereinstimmung vorliegt, wird die Beziehung nicht automatisch erstellt. Über das Dialogfeld "Beziehungen verwalten" können Sie dann Beziehungen erstellen oder bearbeiten.
 
 ## <a name="create-a-relationship-by-using-autodetect"></a>Erstellen einer Beziehung mit AutoErmittlung
 Klicken Sie auf der Registerkarte **Start** auf **Beziehungen verwalten**\>**AutoErmittlung**.
@@ -30,14 +31,14 @@ Klicken Sie auf der Registerkarte **Start** auf **Beziehungen verwalten**\>**Aut
 
 ## <a name="create-a-relationship-manually"></a>Manuelles Erstellen einer Beziehung
 1. Klicken Sie auf der Registerkarte **Start** auf **Beziehungen verwalten**\>**Neu**.
-2. In der **Beziehung erstellen** Dialogfeld, in der ersten Tabelle Dropdown-Liste, wählen Sie eine Tabelle aus, und wählen Sie dann auf die Spalte, die Sie in der Beziehung verwenden möchten.
-3. In der zweiten Tabelle Dropdown-Liste, wählen Sie in der Beziehung die anderen Tabelle, die Sie möchten, und wählen Sie dann die andere Spalte, die Sie verwenden möchten, und klicken Sie dann auf **OK**.
+2. In dem **Beziehung erstellen** Dialogfeld, in der Dropdown-Liste der ersten Tabelle, wählen Sie eine Tabelle und dann die Spalte, die Sie in der Beziehung verwenden möchten.
+3. In der Dropdown-Liste der zweiten Tabelle wählen Sie die andere Tabelle der Beziehung, die Sie erstellen möchten. Wählen Sie dann die andere Spalte aus und klicken Sie dann auf **OK**.
 
 ![](media/desktop-create-and-manage-relationships/manualrelationship2.gif)
 
-Standardmäßig konfiguriert Power BI Desktop automatisch die Kardinalität (Richtung), plattformübergreifende filterrichtung und aktiven Eigenschaften für die neue Beziehung; Allerdings können Sie die Einstellungen bei Bedarf ändern. Weitere Informationen finden Sie im Abschnitt „Informationen zu zusätzlichen Optionen“ im Verlauf dieses Artikels.
+Standardmäßig konfiguriert Power BI Desktop die Kardinalität (Richtung), plattformübergreifende Filterrichtung und aktiven Eigenschaften für die neue Beziehung automatisch; Bei Bedarf können Sie die Einstellungen allerdings ändern. Weitere Informationen finden Sie im Abschnitt „Informationen zu zusätzlichen Optionen“ im Verlauf dieses Artikels.
 
-Sie sehen eine Fehlermeldung mit *muss eine der Spalten eindeutige Werte* Wenn keiner der für die Beziehung ausgewählten Tabellen eindeutige Werte enthält. Mindestens eine Tabelle in einer Beziehung *muss* eine eindeutige Liste von Schlüsselwerten aufweisen. Dies ist eine häufige Anforderung für alle relationalen Datenbanktechnologien. 
+Sie sehen die Fehlermeldung *Eine der Spalten muss eindeutige Werte besitzen* wenn keine der für die Beziehung ausgewählten Tabellen eindeutige Werte enthält. Mindestens eine Tabelle in einer Beziehung *muss* eine eindeutige Liste von Schlüsselwerten aufweisen. Dies ist eine häufige Anforderung für alle relationalen Datenbanktechnologien. 
 
 Wenn dieser Fehler auftritt, haben Sie mehrere Möglichkeiten, ihn zu beheben:
 
@@ -76,9 +77,9 @@ Wenn dieses Kontrollkästchen aktiviert ist, bedeutet dies, dass die Beziehung a
 Weitere Informationen zum geeigneten Zeitpunkt zum Aktivieren einer bestimmten Beziehung finden Sie im Abschnitt „Informationen zu zusätzlichen Optionen“ im Verlauf dieses Artikels.
 
 ## <a name="understanding-relationships"></a>Informationen zu Beziehungen
-Nachdem Sie zwei Tabellen mit einer Beziehung verbunden haben, können Sie mit den Daten in beiden Tabellen arbeiten, als würde es sich um eine einzelne Tabelle handeln. Dadurch brauchen Sie sich nicht um Details der Beziehung kümmern oder diese Tabellen vor dem Importieren auf eine einzelne Tabelle reduzieren. In vielen Situationen kann Power BI Desktop automatisch Beziehungen erstellen, sodass es möglicherweise für Sie nicht erforderlich ist, dies selbst zu tun. Jedoch wenn Power BI Desktop mit hoher Zuverlässigkeit ermitteln kann, dass eine Beziehung zwischen zwei Tabellen vorhanden sein sollte, ist es nicht automatisch die Beziehung erstellt. In diesem Fall müssen Sie die Beziehung erstellen. 
+Nachdem Sie zwei Tabellen mit einer Beziehung verbunden haben, können Sie mit den Daten in beiden Tabellen arbeiten, als würde es sich um eine einzelne Tabelle handeln. Dadurch brauchen Sie sich nicht um Details der Beziehung kümmern oder diese Tabellen vor dem Importieren auf eine einzelne Tabelle reduzieren. In vielen Situationen kann Power BI Desktop automatisch Beziehungen erstellen, sodass es möglicherweise für Sie nicht erforderlich ist, dies selbst zu tun. Wenn Power BI Desktop jedoch mit hoher Zuverlässigkeit ermitteln kann, dass eine Beziehung zwischen zwei Tabellen vorhanden sein sollte, wird nicht automatisch die Beziehung erstellt. In diesem Fall müssen Sie die Beziehung erstellen. 
 
-Schauen Sie wir ein kurzes Lernprogramm, besser veranschaulicht werden, wie Beziehungen in Power BI Desktop funktionieren.
+Im Folgenden eine kurze Lektion, in der veranschaulicht wird wie Beziehungen in Power BI Desktop funktionieren.
 
 >[!TIP]
 >Sie können diese Lektion selbst durchführen. Kopieren Sie die nachfolgende Tabelle „Projektstunden“ in ein Excel-Arbeitsblatt, wählen Sie alle Zellen aus, und klicken Sie auf **EINFÜGEN**\>**Tabelle**. Klicken Sie im Dialogfeld **Tabelle erstellen** einfach auf **OK**. Nehmen Sie dann im Feld **Tabellenname**die Eingabe **Projektstunden**vor. Gehen Sie für die Tabelle „UnternehmenProjekt“ auf dieselbe Weise vor. Sie können die Daten dann mithilfe der Option **Daten abrufen** in Power BI-Desktop importieren. Wählen Sie die Arbeitsmappe und Tabellen als Datenquelle aus.
@@ -114,7 +115,7 @@ Diese zweite Tabelle, „UnternehmenProjekt“, stellt eine Liste von Projekten 
 | Violett |B |
 | Orange |C |
 
-Beachten Sie, dass jede Tabelle eine Projektspalte besitzt. Die Benennung ist etwas unterschiedlich, aber die Werte scheinen gleich zu sein. Das ist wichtig, und wir melden uns, die sie in Kürze verfügbar.
+Beachten Sie, dass jede Tabelle eine Projektspalte besitzt. Die Benennung ist etwas unterschiedlich, aber die Werte scheinen gleich zu sein. Das ist wichtig, hierauf kommen wir später zurück.
 
 Nachdem wir die beiden Tabellen in ein Modell importiert haben, erstellen wir einen Bericht. Zuerst möchten wir die Anzahl der nach Projektpriorität übermittelten Stunden erhalten. Daher wählen wir unter „Felder“ **Priorität** und **Stunden** aus.
 
@@ -126,20 +127,20 @@ Erstellen wir daher eine Beziehung zwischen diesen beiden Tabellen.
 
 Erinnern Sie sich an die Spalten, die in beiden Tabellen mit einem Projektnamen vorhanden waren, jedoch mit anscheinend gleichen Werten? Wir werden diese beiden Spalten verwenden, um eine Beziehung zwischen den Tabellen zu erstellen.
 
-Warum diese Spalten? Wenn wir die Spalte „Projekt“ in der Tabelle „Projektstunden“ betrachten, sehen wir Werte wie „Blau“, „Rot“, „Gelb“, „Orange“ usw. Tatsächlich sehen wir mehrere Zeilen, die denselben Wert enthalten. Tatsächlich liegen viele Farbwerte für „Projekt“ vor.
+Warum diese Spalten? Wenn wir die Spalte „Projekt“ in der Tabelle „Projektstunden“ betrachten, sehen wir Werte wie „Blau“, „Rot“, „Gelb“, „Orange“ usw. Tatsächlich sehen wir mehrere Zeilen, die denselben Wert enthalten. Es liegen viele Farbwerte für „Projekt“ vor.
 
 Wenn wir die Spalte „Projektname“ in der Tabelle „UnternehmenProjekt“ betrachten, ist dort nur einer der einzelnen Farbwerte für „Projekt“ vorhanden. Jeder Farbwert in dieser Tabelle ist eindeutig, und das ist wichtig, da zwischen diesen beiden Tabellen eine Beziehung erstellt werden kann. In diesem Fall eine n:1-Beziehung. In einer n:1-Beziehung muss mindestens eine Spalte in einer der Tabellen eindeutige Werte enthalten. Es gibt für einige Beziehungen zusätzliche Optionen, die später erläutert werden. Zunächst wird jedoch eine Beziehung zwischen den Spalten „Projekt“ in den beiden Tabellen erstellt.
 
 ### <a name="to-create-the-new-relationship"></a>So erstellen Sie eine neue Beziehung
 1. Klicken Sie auf **Beziehungen verwalten**.
-2. In **Beziehungen verwalten**, klicken Sie auf **neu** zum Öffnen der **Beziehung erstellen** Dialogfeld, in dem wir die Tabellen, Spalten und alle zusätzlichen Einstellungen, die für gewünschten auswählen können unsere die Beziehung.
-3. Wählen Sie in der ersten Tabelle **Projektstunden**und dann die Spalte **Projekt** aus. Das ist die n-Seite („viele“) unserer Beziehung.
-4. Wählen Sie in der zweiten Tabelle **UnternehmenProjekt**und dann die Spalte **Projektname** aus. Dies ist die 1-Seite unserer Beziehung. 
+2. In **Beziehungen verwalten**, klicken Sie auf **neu** zum Öffnen des **Beziehung erstellen** Dialogfeldes, in dem wir die Tabellen, Spalten und alle zusätzlichen Einstellungen, für die gewünschten Beziehung auswählen können.
+3. Wählen Sie in der ersten Tabelle **Projektstunden** und dann die Spalte **Projekt** aus. Das ist die n-Seite („viele“) unserer Beziehung.
+4. Wählen Sie in der zweiten Tabelle **UnternehmenProjekt** und dann die Spalte **Projektname** aus. Dies ist die 1-Seite unserer Beziehung. 
 5. Fahren Sie fort, und klicken Sie sowohl im Dialogfeld **Beziehung erstellen** als auch im Dialogfeld **Beziehungen verwalten** auf **OK** .
 
 ![](media/desktop-create-and-manage-relationships/candmrel_create_compproj.png)
 
-Aus Gründen der vollständigen Offenlegung Sie haben soeben erstellt diese Beziehung die harte Art. Sie können nur auf die Schaltfläche "AutoErmittlung" im Dialogfeld "Beziehungen verwalten" geklickt haben. Die automatische Erkennung erledigt dies bereits beim Laden der Daten für Sie, wenn beide Spalten den gleichen Namen haben. Aber wo bleibt da die Herausforderung?
+Zu Lernzwecken haben Sie diese Beziehung manuell erstellt. Sie könnten auch auf die Schaltfläche "AutoErmittlung" im Dialogfeld "Beziehungen verwalten" geklickt haben und durch die automatische Erkennung der gleichen Spaltennamen wird die Beziehung durch Power BI erstellt. Aber wo ist hier die Herausforderung?
 
 Betrachten wir die Tabelle jetzt erneut im Berichtszeichenbereich.
 
@@ -147,12 +148,12 @@ Betrachten wir die Tabelle jetzt erneut im Berichtszeichenbereich.
 
 Das sieht doch schon viel besser aus, oder?
 
-Wenn wir die Stunden nach Priorität addieren, Power BI Desktop sucht für jede Instanz der eindeutigen Farbwerte in der Nachschlagetabelle "unternehmenprojekt", und suchen Sie nach jeder Instanz dieser Werte in der Tabelle "unternehmenprojekt" und eine Gesamtsumme für jeden eindeutigen Wert zu berechnen .
+Wenn wir die Stunden nach Priorität addieren, sucht Power BI Desktop für jede Instanz eindeutige Farbwerte in der Nachschlagetabelle "Unternehmenprojekt". Suchen Sie nach jeder Instanz dieser Werte in der Tabelle "Unternehmenprojekt" um eine Gesamtsumme für jeden eindeutigen Wert zu berechnen.
 
-Das war einfach, in der Tat mithilfe der AutoErmittlung wäre, Sie nicht noch einfacher gewesen.
+Das war einfach und mithilfe der AutoErmittlung wäre es nicht noch einfacher gewesen.
 
 ## <a name="understanding-additional-options"></a>Informationen zu zusätzlichen Optionen
-Wenn eine Beziehung entweder mithilfe der AutoErmittlung oder manuell erstellt wird, konfiguriert Power BI Desktop automatisch zusätzliche Optionen, die basierend auf den Daten in Ihren Tabellen. Sie können die zusätzlichen Beziehungseigenschaften konfigurieren, die sich im untersten Bereich des Dialogfelds „Beziehung erstellen/bearbeiten“ befinden.
+Wenn eine Beziehung entweder mithilfe der AutoErmittlung oder manuell erstellt wird, konfiguriert Power BI Desktop automatisch zusätzliche Optionen, die auf den Daten in Ihren Tabellen basieren. Sie können die zusätzlichen Beziehungseigenschaften konfigurieren, die sich im untersten Bereich des Dialogfelds „Beziehung erstellen/bearbeiten“ befinden.
 
  ![](media/desktop-create-and-manage-relationships/candmrel_advancedoptions2.png)
 
@@ -160,26 +161,27 @@ Wie bereits erwähnt, werden diese in der Regel automatisch festgelegt, und Sie 
 
 ## <a name="automatic-relationship-updates"></a>Beziehung von Automatische updates
 
-Sie können verwalten, wie Power BI behandelt und automatisch angepasst wird, Beziehungen in Ihren Berichten und Modellen. Wählen Sie zum angeben, wie Power BI Beziehungen Optionen behandelt, **Datei > Optionen und Einstellungen > Optionen** aus Power BI Desktop, und wählen Sie dann **Laden von Daten** im linken Bereich. Sie sehen dann Optionen für die **Beziehungen**.
+Sie können verwalten, wie Power BI Beziehungen in Ihren Berichten und Modellen behandelt und automatisch anpasst. Wählen Sie wie Power BI Beziehungsoptionen behandelt über **Datei > Optionen und Einstellungen > Optionen** in Power BI Desktop, und wählen Sie dann **Laden von Daten** im linken Bereich. Sie sehen dann die Optionen für die **Beziehungen**.
 
  ![Optionen für Beziehungen](media/desktop-create-and-manage-relationships/relationships-options-01.png)
 
 Es gibt drei Optionen, die ausgewählt und aktiviert werden können. 
 
-Die erste Option ist *Beziehungen aus Datenquellen importieren*, und es ist standardmäßig aktiviert. Wenn aktiviert, sucht Power BI Beziehungen definiert, in der Datenquelle, z. B. Fremdschlüssel / primary key-Beziehungen in Ihrem Datawarehouse. Solcher Beziehungen vorhanden sind, werden in das Power BI-Datenmodell gespiegelt, wenn Sie zunächst die Daten laden. Diese Option ermöglicht Ihnen, schnell mit Ihrem Modell starten, anstatt suchen oder die Beziehungen selbst definieren müssen.
+Die erste Option ist *Beziehungen aus Datenquellen importieren*, und ist standardmäßig aktiviert. Wenn aktiviert, sucht Power BI nach bereits definierten Beziehungen in der Datenquelle, z. B. Fremdschlüssel / primary key-Beziehungen in Ihrem Datawarehouse. Wenn solche Beziehungen vorhanden sind, werden diese in das Power BI-Datenmodell übernommen, wenn Sie die Daten laden. Diese Option ermöglicht es Ihnen, schnell mit Ihrem Modell zu starten, anstatt Beziehungen zu suchen oder selbst definieren zu müssen.
 
-Die zweite Option ist *aktualisieren oder Löschen von Beziehungen beim Aktualisieren von Daten*, und es ist standardmäßig deaktiviert. Wenn aktiviert (durch Aktivieren des Kontrollkästchens neben der Option aktiviert), Power BI überprüft auf Änderungen in der Quelle von datenbeziehungen auf, wenn Ihr Dataset aktualisiert wird. Wenn diese Beziehungen geändert oder entfernt werden, spiegelt Power BI diese Änderungen in ein eigenes Datenmodell aktualisieren oder löschen Sie die Werte auf.
+Die zweite Option ist *aktualisieren oder Löschen von Beziehungen beim Aktualisieren von Daten*, und ist standardmäßig deaktiviert. Wenn diese aktiviert wird (durch Aktivieren des Kontrollkästchens neben der Option aktiviert), prüft Power BI ob Änderungen in der Quelle von Datenbeziehungen auftreten, wenn ihr Dataset aktualisiert wird.
+Wenn diese Beziehungen geändert oder entfernt werden, spiegelt Power BI diese Änderungen im Datenmodell. Je nach Änderung werden Beziehungen aktualisiert oder gelöscht.
 
 > [!WARNING]
-> Wenn Sie Sicherheit auf Zeilenebene, die auf die definierten Beziehungen basieren verwenden, wir empfehlen nicht die zweite Option auswählen *aktualisieren oder Löschen von Beziehungen beim Aktualisieren von Daten*. Wenn eine Beziehung, dass die RLS-Einstellungen auf beruhen entfernt wird, kann das Modell weniger sicher werden. 
+> Wenn Sie Sicherheit auf Zeilenebene, die auf definierten Beziehungen basiert, verwenden, empfehlen wir nicht die zweite Option auszuwählen *aktualisieren oder Löschen von Beziehungen beim Aktualisieren von Daten*. Wenn eine Beziehung, auf dem die RLS-Einstellungen beruhen, entfernt wird, kann das Modell weniger sicher werden. 
 
-Die dritte Option ist *neue Beziehungen automatisch erkennen, nachdem Daten geladen wurden*, die beschrieben wird, der [AutoErmittlung beim Laden](#autodetect-during-load) Abschnitt finden Sie weiter oben in diesem Artikel. 
+Die dritte Option ist *neue Beziehungen automatisch erkennen, nachdem Daten geladen wurden*, diese wird im Abschnitt [AutoErmittlung beim Laden](#autodetect-during-load) näher beschrieben, diesen finden Sie weiter oben in diesem Artikel. 
 
 
 ## <a name="future-updates-to-the-data-require-a-different-cardinality"></a>Zukünftige Updates für die Daten erfordern eine andere Kardinalität
 Normalerweise kann Power BI Desktop automatisch die beste Kardinalität für die Beziehung bestimmen. Wenn Sie jedoch die automatische Einstellung außer Kraft setzen müssen, weil Sie wissen, dass sich die Daten in der Zukunft ändern, können Sie die Auswahl über das Steuerelement „Kardinalität“ vornehmen. Betrachten wir ein Beispiel, in dem wir eine andere Kardinalität auswählen müssen.
 
-Die nachfolgende Tabelle „UnternehmenPriorität“ stellt eine Liste aller UnternehmenProjekte und deren Priorität dar. Die Tabelle „Projektbudget“ umfasst die Projekte, deren Budget genehmigt wurde.
+Die nachfolgende Tabelle „UnternehmenPriorität“ stellt eine Liste aller Unternehmensprojekte und deren Priorität dar. Die Tabelle „Projektbudget“ umfasst die Projekte, deren Budget genehmigt wurde.
 
 **Projektbudget**
 
@@ -217,7 +219,7 @@ wird für die Kardinalität automatisch Eins-zu-Eins („1: 1“) und für die K
 
 Zwischen den beiden Tabellen besteht eine 1:1-Beziehung, da in der Spalte „Projekt“ der kombinierten Tabelle keine sich wiederholenden Werte enthalten sind. Die Spalte „Projekt“ ist eindeutig, da jeder Wert nur einmal auftritt. Daher können die Zeilen der beiden Tabellen ohne Duplizierung direkt kombiniert werden.
 
-Aber angenommen, Sie wissen, dass die Daten bei der nächsten Aktualisierung geändert werden. Eine aktualisierte Version der Tabelle „Projektbudgeet“ weist jetzt zusätzliche Zeilen für „Blau“ und „Rot“ auf:
+Aber angenommen, Sie wissen, dass die Daten bei der nächsten Aktualisierung geändert werden. Eine aktualisierte Version der Tabelle „Projektbudget“ weist jetzt zusätzliche Zeilen für „Blau“ und „Rot“ auf:
 
 **Projektbudget**
 
@@ -257,7 +259,7 @@ Bei der Kreuzfilterungsrichtung „Einfach“ können Sie einen Bericht erstelle
 
  ![](media/desktop-create-and-manage-relationships/candmrel_repcrossfiltersingle.png)
 
-Filterspezifikation verläuft von "unternehmenprojekt" zu "UnternehmenMitarbeiter" (wie in der folgenden Abbildung gezeigt), aber es wird nicht hinauf zu "UnternehmenMitarbeiter". Dies funktioniert jedoch, wenn Sie für die Kreuzfilterrichtung „Beide“ festlegen. Die Einstellung „Beide“ ermöglicht es der Filterspezifikation, zu „Mitarbeiter“ zu gelangen.
+Die Filterspezifikation verläuft von "Unternehmensprojekt" zu "UnternehmenMitarbeiter" (wie in der folgenden Abbildung gezeigt), aber nicht hinauf zu "UnternehmenMitarbeiter". Dies funktioniert jedoch, wenn Sie für die Kreuzfilterrichtung „Beide“ festlegen. Die Einstellung „Beide“ ermöglicht es der Filterspezifikation zu „Mitarbeiter“ zu gelangen.
 
  ![](media/desktop-create-and-manage-relationships/candmrel_bidircrossfiltering.png)
 
@@ -275,10 +277,10 @@ Die Kreuzfilterrichtung ist nicht für allgemeinere Strukturen geeignet, die sic
 
 Wenn eine solche Tabellenstruktur mit Schleifen vorliegt, kann die Kreuzfilterung zu mehrdeutigen Beziehungssätzen führen. Wenn Sie z. B. ein Feld aus Tabelle „X“ zusammenfassen und anschließend nach einem Feld in Tabelle „Y“ filtern, dann ist nicht eindeutig, wie der Filter verlaufen soll, denn er kann die obere oder untere Tabelle durchqueren. Ein allgemeines Beispiel für diese Art von Struktur ist „TableX“ als Umsatztabelle mit tatsächlichen Daten und „TableY“ mit Budgetdaten. Die Tabellen in der Mitte sind dann Nachschlagetabellen, die von beiden Tabellen genutzt werden, wie z. B. Division oder Region. 
 
-Wie bei aktiven/inaktiven Beziehungen gestattet es Power BI Desktop nicht, für eine Beziehung „Beide“ festzulegen, wenn dies im Bericht zur Uneindeutigkeit führt. Es gibt verschiedene andere Möglichkeiten, dies durchzuführen. Im Folgenden werden die beiden am häufigsten verwendeten Methoden erläutert:
+Wie bei aktiven/inaktiven Beziehungen erlaubt es Power BI Desktop nicht, für eine Beziehung „Beide“ festzulegen, wenn dies im Bericht zur Uneindeutigkeit führt. Es gibt verschiedene andere Möglichkeiten, dies durchzuführen. Im Folgenden werden die beiden am häufigsten verwendeten Methoden erläutert:
 
 * Löschen Sie Beziehungen, oder markieren Sie sie als „inaktiv“, um die Mehrdeutigkeit zu reduzieren. Dann können Sie für die Kreuzfilterrichtung einer Beziehung möglicherweise die Option „Beide“ festlegen.
-* Führen Sie die Tabelle zweimal zu (beim zweiten Mal unter anderem Namen), um Schleifen zu beseitigen. Dadurch erhält die Struktur der Beziehungen ein Sternschema. Bei einem Sternschema kann für alle Beziehungen die Option „Beide“ festgelegt werden.
+* Laden Sie die Tabelle zweimal (beim zweiten Mal unter einem anderem Namen), um Schleifen zu beseitigen. Dadurch erhält die Struktur der Beziehungen ein Sternschema. Bei einem Sternschema kann für alle Beziehungen die Option „Beide“ festgelegt werden.
 
 ## <a name="wrong-active-relationship"></a>Falsche aktive Beziehung
 Bei der automatischen Erstellung von Beziehungen stellt Power BI Desktop manchmal fest, dass zwischen zwei Tabellen mehrere Beziehungen vorliegen. In diesem Fall wird nur eine der Beziehungen als „aktiv“ festgelegt. Die aktive Beziehung dient als Standardbeziehung, sodass Power BI Desktop automatisch eine Visualisierung für Sie erstellen kann, wenn Sie Felder aus zwei verschiedenen Tabellen auswählen. In einigen Fällen kann die automatisch ausgewählte Beziehung jedoch auch falsch sein. Über das Dialogfeld „Beziehungen verwalten“ können Sie eine Beziehung als „aktiv“ oder „inaktiv“ festlegen. Sie können die aktive Beziehung auch im Dialogfeld „Beziehung bearbeiten“ festlegen. 
@@ -325,7 +327,7 @@ Wenn beide Beziehungen zum Modell hinzugefügt werden (zuerst „GeöffnetVon“
 
  ![](media/desktop-create-and-manage-relationships/candmrel_managerelactive.png)
 
-Nun, wenn es sich um einen Bericht, der Rolle "und" Mitarbeiter "Felder" mitarbeiterfunktion "und dem Feld" Stunden "aus" projekttickets "in einer tabellenvisualisierung im berichtszeichenbereich verwendet erstellen, werden wir sehen, dass ausschließlich Projektträger, weil sie die einzigen Personen sind, die ein projektticket geöffnet.
+Nun, wenn es sich um einen Bericht, der die Felder Rolle und Mitarbeiter von der Tabelle "MitarbeiterFunktion" und dem Feld Stunden aus "projekttickets" in einer Tabellenvisualisierung verwendet, werden wir sehen, dass ausschließlich Projektträger ausgegeben werden. Sie sind die einzigen Personen, die ein Projektticket geöffnet haben.
 
  ![](media/desktop-create-and-manage-relationships/candmrel_repcrossfilteractive.png)
 
@@ -334,5 +336,5 @@ Die aktive Beziehung kann geändert und „Absender“ anstelle von „Geöffnet
 ![](media/desktop-create-and-manage-relationships/candmrel_managerelactivesubmittedby.png)
 
 ## <a name="see-all-of-your-relationships-in-relationship-view"></a>Anzeigen aller Beziehungen in der Beziehungsansicht
-Ihr Modell umfasst manchmal mehrere Tabellen und komplexe Beziehungen zwischen ihnen. In der Beziehungsansicht in Power BI Desktop werden alle Beziehungen in Ihrem Modell sowie ihre Richtung und Kardinalität in einem leicht verständlichen und anpassbaren Diagramm angezeigt. Weitere Informationen finden Sie unter [Beziehungsansicht in Power BI Desktop](desktop-relationship-view.md).
+Ihr Modell umfasst manchmal mehrere Tabellen und komplexe Beziehungen zwischen diesen. In der Beziehungsansicht in Power BI Desktop werden alle Beziehungen in Ihrem Modell sowie ihre Richtung und Kardinalität in einem leicht verständlichen und anpassbaren Diagramm angezeigt. Weitere Informationen finden Sie unter [Beziehungsansicht in Power BI Desktop](desktop-relationship-view.md).
 
