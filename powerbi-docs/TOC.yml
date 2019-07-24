@@ -73,7 +73,7 @@
           href: desktop-data-source-prerequisites.md
         - name: "Standardelement in mehrdimensionalen Modellen in Power\_BI"
           href: desktop-default-member-multidimensional-models.md
-        - name: Häufig gestellte Fragen zu benutzerdefinierten Visuals
+        - name: Häufig gestellte Fragen zu Visuals
           href: power-bi-custom-visuals-faq.md
     - name: Vorgehensweise
       items:
@@ -1067,48 +1067,70 @@
       items:
         - name: Übersicht
           items:
-            - name: "Benutzerdefinierte Visualisierungen in Power\_BI"
+            - name: Visuals in Power BI
               href: power-bi-custom-visuals.md
         - name: Lernprogramme
           items:
-            - name: Entwickeln eines benutzerdefinierten Visuals für Power BI
+            - name: Entwickeln eines Power BI-Visuals
               href: developer/custom-visual-develop-tutorial.md
             - name: Hinzufügen von Formatierungsoptionen
               href: developer/custom-visual-develop-tutorial-format-options.md
+            - name: Hinzufügen von Komponententests für Visualprojekte
+              href: developer/visuals/unit-tests-introduction.md
         - name: Konzepte
           items:
-            - name: Benutzerdefinierte Visuals für Organisationen in Power BI
+            - name: Visuals für Organisationen in Power BI
               href: power-bi-custom-visuals-organization.md
             - name: Richtlinien für Power BI-Visuals
               href: developer/guidelines-powerbi-visuals.md
-            - name: Häufig gestellte Fragen zu benutzerdefinierten Visuals
+            - name: Häufig gestellte Fragen zu Visuals
               href: power-bi-custom-visuals-faq.md
-            - name: Using-Funktionen
-              href: 'https://microsoft.github.io/PowerBI-visuals/docs/concepts/capabilities/'
-            - name: Zuordnungen der Datenansicht
-              href: 'https://microsoft.github.io/PowerBI-visuals/docs/concepts/dataviewmappings/'
+            - name: Verwenden von Funktionen
+              href: developer/visuals/capabilities.md
+            - name: Zuordnungen von Datenansichten
+              href: developer/visuals/dataview-mappings.md
             - name: Objekte und Eigenschaften
-              href: 'https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/'
+              href: developer/visuals/objects-properties.md
             - name: Modus „Erweiterte Bearbeitung“
-              href: 'https://microsoft.github.io/PowerBI-visuals/docs/concepts/advanced-edit-mode/'
-            - name: Leitfaden zur Migration zur API mit Versionsverwaltung
-              href: 'https://microsoft.github.io/PowerBI-visuals/docs/concepts/migrating-to-versioned-api-guide/'
+              href: developer/visuals/advanced-edit-mode.md
         - name: Vorgehensweise
           items:
-            - name: Zertifizierung von benutzerdefinierten Visuals
+            - name: Zertifizierung von Visuals
               href: power-bi-custom-visuals-certified.md
             - name: Veröffentlichen von benutzerdefinierten Visuals in AppSource
               href: developer/office-store.md
             - name: 'Verwenden von R-gestützten, benutzerdefinierten Visualisierungen in Power BI'
               href: desktop-r-powered-custom-visuals.md
-            - name: Problembehandlung
-              items:
-                - name: Problembehandlung beim Entwickeln benutzerdefinierter Visuals
-                  href: power-bi-custom-visuals-troubleshoot.md
+            - name: Visualinteraktionen
+              href: developer/visuals/visuals-interactions.md
+            - name: Hinzufügen von QuickInfos zu Visuals
+              href: developer/visuals/add-tooltips.md
+            - name: Hinzufügen eines Analysebereichs
+              href: developer/visuals/analytics-pane.md
+            - name: Filtern von Visuals
+              href: developer/visuals/filter-api.md
+            - name: Abrufen zusätzlicher Daten
+              href: developer/visuals/fetch-more-data.md
+            - name: Unterstützung von Lesezeichen
+              href: developer/visuals/bookmarks-support.md
+            - name: Hervorheben von Daten in Visuals
+              href: developer/visuals/highlight.md
+            - name: Unterstützung des Modus für hohen Kontrast
+              href: developer/visuals/high-contrast-support.md
+            - name: Synchronisierung von Slicern
+              href: developer/visuals/enable-sync-slicers.md
+            - name: Problembehandlung bei Power BI-Visuals
+              href: power-bi-custom-visuals-troubleshoot.md
         - name: Referenz
           items:
-            - name: APIs
-              href: 'https://microsoft.github.io/PowerBI-visuals/api/references/ivisualhost/'
+            - name: Startseite
+              href: developer/visuals/landing-page.md
+            - name: Start-URL
+              href: developer/visuals/launch-url.md
+            - name: Rendern von Ereignissen
+              href: developer/visuals/event-service.md
+            - name: Sortierung
+              href: developer/visuals/sort-options.md
         - name: Ressourcen
           items:
             - name: Dev Center
@@ -1117,6 +1139,8 @@
               href: 'https://microsoft.github.io/PowerBI-visuals/samples/'
             - name: Git-Repository für benutzerdefinierte Visuals
               href: 'https://go.microsoft.com/fwlink/?linkid=848277'
+            - name: Erstellen eines SSL-Zertifikats
+              href: developer/visuals/create-ssl-certificate.md
     - name: Automatisierung
       items:
         - name: Übersicht

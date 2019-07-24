@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: f2102ad654a056832f7890dc506acc99eb5ef26f
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61312494"
@@ -171,7 +171,7 @@ Die erste Option ist *Beziehungen aus Datenquellen importieren*, und es ist stan
 Die zweite Option ist *aktualisieren oder Löschen von Beziehungen beim Aktualisieren von Daten*, und es ist standardmäßig deaktiviert. Wenn aktiviert (durch Aktivieren des Kontrollkästchens neben der Option aktiviert), Power BI überprüft auf Änderungen in der Quelle von datenbeziehungen auf, wenn Ihr Dataset aktualisiert wird. Wenn diese Beziehungen geändert oder entfernt werden, spiegelt Power BI diese Änderungen in ein eigenes Datenmodell aktualisieren oder löschen Sie die Werte auf.
 
 > [!WARNING]
-> Wenn Sie Sicherheit auf Zeilenebene, die auf die definierten Beziehungen basieren verwenden, wir empfehlen nicht die zweite Option auswählen *aktualisieren oder Löschen von Beziehungen beim Aktualisieren von Daten*. Wenn eine Beziehung, dass die RLS-Einstellungen auf beruhen entfernt wird, kann das Modell weniger sicher werden. 
+> Wenn Sie Sicherheit auf Zeilenebene verwenden, die auf definierten Beziehungen basiert, wird empfohlen, nicht die zweite Option auszuwählen, die lautet: *Beim Aktualisieren von Daten Beziehungen aktualisieren oder löschen*. Wenn eine Beziehung entfernt wird, auf der die RLS-Einstellungen beruhen, kann Ihr Modell unsicherer werden. 
 
 Die dritte Option ist *neue Beziehungen automatisch erkennen, nachdem Daten geladen wurden*, die beschrieben wird, der [AutoErmittlung beim Laden](#autodetect-during-load) Abschnitt finden Sie weiter oben in diesem Artikel. 
 
@@ -217,7 +217,7 @@ wird für die Kardinalität automatisch Eins-zu-Eins („1: 1“) und für die K
 
 Zwischen den beiden Tabellen besteht eine 1:1-Beziehung, da in der Spalte „Projekt“ der kombinierten Tabelle keine sich wiederholenden Werte enthalten sind. Die Spalte „Projekt“ ist eindeutig, da jeder Wert nur einmal auftritt. Daher können die Zeilen der beiden Tabellen ohne Duplizierung direkt kombiniert werden.
 
-Aber angenommen, Sie wissen, dass die Daten bei der nächsten Aktualisierung geändert werden. Eine aktualisierte Version der Tabelle „Projektbudgeet“ weist jetzt zusätzliche Zeilen für „Blau“ und „Rot“ auf:
+Aber angenommen, Sie wissen, dass die Daten bei der nächsten Aktualisierung geändert werden. Eine aktualisierte Version der Tabelle „ProjectBudget“ (Projektbudget) weist jetzt zusätzliche Zeilen für „Blue“ (Blau) und „Red“ (Rot) auf:
 
 **Projektbudget**
 
@@ -278,7 +278,7 @@ Wenn eine solche Tabellenstruktur mit Schleifen vorliegt, kann die Kreuzfilterun
 Wie bei aktiven/inaktiven Beziehungen gestattet es Power BI Desktop nicht, für eine Beziehung „Beide“ festzulegen, wenn dies im Bericht zur Uneindeutigkeit führt. Es gibt verschiedene andere Möglichkeiten, dies durchzuführen. Im Folgenden werden die beiden am häufigsten verwendeten Methoden erläutert:
 
 * Löschen Sie Beziehungen, oder markieren Sie sie als „inaktiv“, um die Mehrdeutigkeit zu reduzieren. Dann können Sie für die Kreuzfilterrichtung einer Beziehung möglicherweise die Option „Beide“ festlegen.
-* Führen Sie die Tabelle zweimal zu (beim zweiten Mal unter anderem Namen), um Schleifen zu beseitigen. Dadurch erhält die Struktur der Beziehungen ein Sternschema. Bei einem Sternschema kann für alle Beziehungen die Option „Beide“ festgelegt werden.
+* Laden Sie die Tabelle zweimal (beim zweiten Mal unter einem anderem Namen), um Schleifen zu beseitigen. Dadurch erhält die Struktur der Beziehungen ein Sternschema. Bei einem Sternschema kann für alle Beziehungen die Option „Beide“ festgelegt werden.
 
 ## <a name="wrong-active-relationship"></a>Falsche aktive Beziehung
 Bei der automatischen Erstellung von Beziehungen stellt Power BI Desktop manchmal fest, dass zwischen zwei Tabellen mehrere Beziehungen vorliegen. In diesem Fall wird nur eine der Beziehungen als „aktiv“ festgelegt. Die aktive Beziehung dient als Standardbeziehung, sodass Power BI Desktop automatisch eine Visualisierung für Sie erstellen kann, wenn Sie Felder aus zwei verschiedenen Tabellen auswählen. In einigen Fällen kann die automatisch ausgewählte Beziehung jedoch auch falsch sein. Über das Dialogfeld „Beziehungen verwalten“ können Sie eine Beziehung als „aktiv“ oder „inaktiv“ festlegen. Sie können die aktive Beziehung auch im Dialogfeld „Beziehung bearbeiten“ festlegen. 
@@ -334,5 +334,5 @@ Die aktive Beziehung kann geändert und „Absender“ anstelle von „Geöffnet
 ![](media/desktop-create-and-manage-relationships/candmrel_managerelactivesubmittedby.png)
 
 ## <a name="see-all-of-your-relationships-in-relationship-view"></a>Anzeigen aller Beziehungen in der Beziehungsansicht
-Ihr Modell umfasst manchmal mehrere Tabellen und komplexe Beziehungen zwischen ihnen. In der Beziehungsansicht in Power BI Desktop werden alle Beziehungen in Ihrem Modell sowie ihre Richtung und Kardinalität in einem leicht verständlichen und anpassbaren Diagramm angezeigt. Weitere Informationen finden Sie unter [Beziehungsansicht in Power BI Desktop](desktop-relationship-view.md).
+Ihr Modell umfasst manchmal mehrere Tabellen und komplexe Beziehungen zwischen diesen. In der Beziehungsansicht in Power BI Desktop werden alle Beziehungen in Ihrem Modell sowie ihre Richtung und Kardinalität in einem leicht verständlichen und anpassbaren Diagramm angezeigt. Weitere Informationen finden Sie unter [Beziehungsansicht in Power BI Desktop](desktop-relationship-view.md).
 
