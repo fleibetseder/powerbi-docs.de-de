@@ -35,9 +35,9 @@ Klicken Sie auf der Registerkarte **Start** auf **Beziehungen verwalten**\>**Aut
 
 ![](media/desktop-create-and-manage-relationships/manualrelationship2.gif)
 
-Standardmäßig konfiguriert Power BI Desktop automatisch die Kardinalität (Richtung), plattformübergreifende filterrichtung und aktiven Eigenschaften für die neue Beziehung; Allerdings können Sie die Einstellungen bei Bedarf ändern. Weitere Informationen finden Sie im Abschnitt „Informationen zu zusätzlichen Optionen“ im Verlauf dieses Artikels.
+Standardmäßig konfiguriert Power BI Desktop die Kardinalität (Richtung), plattformübergreifende Filterrichtung und aktiven Eigenschaften für die neue Beziehung automatisch; Bei Bedarf können Sie die Einstellungen allerdings ändern. Weitere Informationen finden Sie im Abschnitt „Informationen zu zusätzlichen Optionen“ im Verlauf dieses Artikels.
 
-Sie sehen eine Fehlermeldung mit *muss eine der Spalten eindeutige Werte* Wenn keiner der für die Beziehung ausgewählten Tabellen eindeutige Werte enthält. Mindestens eine Tabelle in einer Beziehung *muss* eine eindeutige Liste von Schlüsselwerten aufweisen. Dies ist eine häufige Anforderung für alle relationalen Datenbanktechnologien. 
+Es wird die Fehlermeldung *One of the columns must have unique values* (Eine der Spalten muss eindeutige Werte besitzen) angezeigt, wenn keine der für die Beziehung ausgewählten Tabellen eindeutige Werte enthält. Mindestens eine Tabelle in einer Beziehung *muss* eine eindeutige Liste von Schlüsselwerten aufweisen. Dies ist eine häufige Anforderung für alle relationalen Datenbanktechnologien. 
 
 Wenn dieser Fehler auftritt, haben Sie mehrere Möglichkeiten, ihn zu beheben:
 
@@ -78,7 +78,7 @@ Weitere Informationen zum geeigneten Zeitpunkt zum Aktivieren einer bestimmten B
 ## <a name="understanding-relationships"></a>Informationen zu Beziehungen
 Nachdem Sie zwei Tabellen mit einer Beziehung verbunden haben, können Sie mit den Daten in beiden Tabellen arbeiten, als würde es sich um eine einzelne Tabelle handeln. Dadurch brauchen Sie sich nicht um Details der Beziehung kümmern oder diese Tabellen vor dem Importieren auf eine einzelne Tabelle reduzieren. In vielen Situationen kann Power BI Desktop automatisch Beziehungen erstellen, sodass es möglicherweise für Sie nicht erforderlich ist, dies selbst zu tun. Jedoch wenn Power BI Desktop mit hoher Zuverlässigkeit ermitteln kann, dass eine Beziehung zwischen zwei Tabellen vorhanden sein sollte, ist es nicht automatisch die Beziehung erstellt. In diesem Fall müssen Sie die Beziehung erstellen. 
 
-Schauen Sie wir ein kurzes Lernprogramm, besser veranschaulicht werden, wie Beziehungen in Power BI Desktop funktionieren.
+In einem kurzen Tutorial erfahren Sie, wie Beziehungen in Power BI Desktop funktionieren.
 
 >[!TIP]
 >Sie können diese Lektion selbst durchführen. Kopieren Sie die nachfolgende Tabelle „Projektstunden“ in ein Excel-Arbeitsblatt, wählen Sie alle Zellen aus, und klicken Sie auf **EINFÜGEN**\>**Tabelle**. Klicken Sie im Dialogfeld **Tabelle erstellen** einfach auf **OK**. Nehmen Sie dann im Feld **Tabellenname**die Eingabe **Projektstunden**vor. Gehen Sie für die Tabelle „UnternehmenProjekt“ auf dieselbe Weise vor. Sie können die Daten dann mithilfe der Option **Daten abrufen** in Power BI-Desktop importieren. Wählen Sie die Arbeitsmappe und Tabellen als Datenquelle aus.
@@ -114,7 +114,7 @@ Diese zweite Tabelle, „UnternehmenProjekt“, stellt eine Liste von Projekten 
 | Violett |B |
 | Orange |C |
 
-Beachten Sie, dass jede Tabelle eine Projektspalte besitzt. Die Benennung ist etwas unterschiedlich, aber die Werte scheinen gleich zu sein. Das ist wichtig, und wir melden uns, die sie in Kürze verfügbar.
+Beachten Sie, dass jede Tabelle eine Projektspalte besitzt. Die Benennung ist etwas unterschiedlich, aber die Werte scheinen gleich zu sein. Das ist wichtig, hierauf kommen wir später zurück.
 
 Nachdem wir die beiden Tabellen in ein Modell importiert haben, erstellen wir einen Bericht. Zuerst möchten wir die Anzahl der nach Projektpriorität übermittelten Stunden erhalten. Daher wählen wir unter „Felder“ **Priorität** und **Stunden** aus.
 
@@ -126,7 +126,7 @@ Erstellen wir daher eine Beziehung zwischen diesen beiden Tabellen.
 
 Erinnern Sie sich an die Spalten, die in beiden Tabellen mit einem Projektnamen vorhanden waren, jedoch mit anscheinend gleichen Werten? Wir werden diese beiden Spalten verwenden, um eine Beziehung zwischen den Tabellen zu erstellen.
 
-Warum diese Spalten? Wenn wir die Spalte „Projekt“ in der Tabelle „Projektstunden“ betrachten, sehen wir Werte wie „Blau“, „Rot“, „Gelb“, „Orange“ usw. Tatsächlich sehen wir mehrere Zeilen, die denselben Wert enthalten. Tatsächlich liegen viele Farbwerte für „Projekt“ vor.
+Warum diese Spalten? Wenn wir die Spalte „Project“ (Projekt) in der Tabelle „ProjectHours“ (Projektstunden) betrachten, sehen wir Werte wie „Blue“ (Blau), „Red“ (Rot), „Yellow“ (Gelb), „Orange“ usw. Tatsächlich sehen wir mehrere Zeilen, die denselben Wert enthalten. Es liegen viele Farbwerte für „Project“ vor.
 
 Wenn wir die Spalte „Projektname“ in der Tabelle „UnternehmenProjekt“ betrachten, ist dort nur einer der einzelnen Farbwerte für „Projekt“ vorhanden. Jeder Farbwert in dieser Tabelle ist eindeutig, und das ist wichtig, da zwischen diesen beiden Tabellen eine Beziehung erstellt werden kann. In diesem Fall eine n:1-Beziehung. In einer n:1-Beziehung muss mindestens eine Spalte in einer der Tabellen eindeutige Werte enthalten. Es gibt für einige Beziehungen zusätzliche Optionen, die später erläutert werden. Zunächst wird jedoch eine Beziehung zwischen den Spalten „Projekt“ in den beiden Tabellen erstellt.
 
