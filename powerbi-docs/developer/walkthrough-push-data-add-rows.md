@@ -311,7 +311,7 @@ Nachstehend finden Sie die [vollständige Codeliste](#code).
     }
 ```
 
-Obwohl angeben ist, dass wir im oben stehenden Code die erste ID abrufen ( ** _//Get the first id_** ), ist die korrekte Vorgehensweise, das Dataset nach Namen zu durchsuchen.
+Obwohl angeben ist, dass wir im oben stehenden Code die erste ID abrufen ( **_//Get the first id_** ), ist die korrekte Vorgehensweise, das Dataset nach Namen zu durchsuchen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Übertragung von Daten in ein Power BI-Dashboard per Push](walkthrough-push-data.md)  
