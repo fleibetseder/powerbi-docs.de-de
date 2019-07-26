@@ -44,13 +44,13 @@ Wenn Sie einen Bericht mit Parametern anzeigen, zeigt die Symbolleiste der Beric
   
 1. **Bereich „Parameter“** : In der Symbolleiste der Berichtanzeige wird eine Eingabeaufforderung und der Standardwert jedes Parameters angezeigt. Im Bereich „Parameter“ können Sie das Layout von Parametern anpassen.  
   
-2. **@SalesDate-Parameter**: Der Parameter @SalesDate weist den Datentyp **DateTime** auf. Neben dem Textfeld wird die Eingabeaufforderung „Select the Date“ (Wählen Sie das Datum aus) angezeigt. Wenn Sie das Datum ändern möchten, geben Sie ein neues Datum in das Textfeld ein, oder verwenden Sie das Kalendersteuerelement.  
+2. **@SalesDate Parameter** Parameters @SalesDate Datentyp **"DateTime"** . Neben dem Textfeld wird die Eingabeaufforderung „Select the Date“ (Wählen Sie das Datum aus) angezeigt. Wenn Sie das Datum ändern möchten, geben Sie ein neues Datum in das Textfeld ein, oder verwenden Sie das Kalendersteuerelement.  
   
-3. **@ShowAll-Parameter**: Der Parameter @ShowAll weist den Datentyp **Boolean** auf. Verwenden Sie die Optionsfelder, um **True** oder **False** anzugeben.  
+3. **@ShowAll Parameter** Parameters @ShowAll Datentyp **booleschen**. Verwenden Sie die Optionsfelder, um **True** oder **False** anzugeben.  
   
 4. **Ein- oder Ausblenden des Handles für Parameterbereich**: Klicken Sie in der Symbolleiste der Berichtanzeige auf diesen Pfeil, um den Parameterbereich ein- oder auszublenden.  
   
-5. **@CategoryQuota-Parameter**: Der Parameter @CategoryQuota weist den Datentyp **Float** auf, d. h. er nimmt einen numerischen Wert an.  @CategoryQuota wird so festgelegt, dass mehrere Werte zulässig sind.  
+5. **@CategoryQuota Parameter** Parameters @CategoryQuota Datentyp **"float"** , sodass sie einen numerischen Wert akzeptiert.  @CategoryQuota wird so festgelegt, dass mehrere Werte zulässig sind.  
   
 6. **Bericht anzeigen**: Nachdem Sie die Parameterwerte eingegeben haben, klicken Sie auf **Bericht anzeigen**, um den Bericht auszuführen. Wenn alle Parameter Standardwerte aufweisen, wird der Bericht beim ersten Anzeigen automatisch ausgeführt.  
   
