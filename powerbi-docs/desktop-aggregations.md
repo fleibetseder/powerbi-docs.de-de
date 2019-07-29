@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Aggregationen in Power BI Desktop (Vorschauversion)
+title: Verwenden von Aggregationen in Power BI Desktop
 description: Durchführen interaktiver Analysen von Big Data in Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: f14b6878d44510631822dd26458bdaa17c1fe3a0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 54264a645160542d7bda6a964164af65bfa45dfd
+ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239599"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68325218"
 ---
-# <a name="aggregations-in-power-bi-desktop-preview"></a>Aggregationen in Power BI Desktop (Vorschauversion)
+# <a name="aggregations-in-power-bi-desktop"></a>Aggregationen in Power BI Desktop
 
 Durch **Aggregationen** können Sie interaktive Analysen von Big Data in Power BI wie nie zuvor durchführen. **Aggregationen** können die Kosten zum Nutzen großer Datasets zur Entscheidungsfindung drastisch senken.
 
@@ -37,16 +37,6 @@ Aggregationen werden mit Datenquellen verwendet, die dimensionale Modelle darste
 
 Alle Power BI-Import- und DirectQuery-Quellen (mit einer Dimension) funktionieren mit Aggregationen.
 
-## <a name="enabling-the-aggregations-preview-feature"></a>Aktivieren der Previewfunktion für Aggregationen
-
-Das Feature **Aggregationen** befindet sich in der Vorschauphase und muss in **Power BI Desktop** aktiviert werden. Um **Aggregationen** zu aktivieren, wählen Sie **Datei > Optionen und Einstellungen > Optionen > Vorschaufeatures** aus, wählen Sie die **zusammengesetzten Modelle**, und aktivieren Sie anschließend das Kontrollkästchen **Manage aggregations** (Aggregationen verwalten). 
-
-![Aktivieren der Vorschaufeatures](media/desktop-aggregations/aggregations_01.jpg)
-
-Sie müssen **Power BI Desktop** neu starten, damit das Feature aktiviert wird.
-
-![Meldung, dass zur Anwendung der Änderungen ein Neustart erforderlich ist](media/desktop-composite-models/composite-models_03.png)
-
 ## <a name="aggregations-based-on-relationships"></a>Aggregationen basierend auf Beziehungen
 
 **Aggregationen**, die auf Beziehungen basieren, werden normalerweise mit dimensionalen Modellen verwendet. Power BI-Datasets, die ihre Daten aus Data Warehouses und Data Marts beziehen, weisen ein Stern- oder Schneeflockenschema auf, bei dem Beziehungen zwischen Dimensionstabellen und Faktentabellen bestehen.
@@ -59,8 +49,8 @@ Stattdessen erstellen wir die Tabelle **Sales Agg** als Aggregationstabelle. Die
 
 Gehen wir davon aus, dass die folgenden Dimensionstabellen am häufigsten für Abfragen mit hohem Unternehmenswert verwendet werden. Dabei handelt es sich um Tabellen, die **Sales Agg** mit *1:n*-Beziehungen (oder *n:1*-Beziehungen) filtern können.
 
-* Geografie
-* Kunde
+* Geography
+* Customer
 * Datum
 * Product Subcategory
 * Product Category
@@ -103,8 +93,10 @@ Der einzige Fall, bei der eine *quellenübergreifende* Beziehung als stark einge
 
 Informationen zu *quellenübergreifenden* Aggregationstreffern, die nicht von Beziehungen abhängen, finden Sie weiter unten im Abschnitt zu Aggregationen basierend auf gruppierten Spalten.
 
-### <a name="aggregation-table-is-hidden"></a>Aggregationstabelle ist ausgeblendet
-Die Tabelle **Sales Agg** ist ausgeblendet. Aggregationstabellen sollten für Benutzer des Datasets immer ausgeblendet werden. Benutzer und Abfragen verwenden die Detailtabelle, nicht die Aggregationstabelle. Sie müssen nicht wissen, dass es die Aggregationstabelle gibt.
+### <a name="aggregation-tables-are-not-addressable"></a>Aggregationstabellen sind nicht adressierbar
+Benutzer mit schreibgeschütztem Zugriff auf das Dataset können keine Aggregationstabellen abfragen. So können bei der Verwendung mit der RLS Sicherheitsbedenken vermieden werden. Benutzer und Abfragen verwenden die Detailtabelle, nicht die Aggregationstabelle. Sie müssen nicht wissen, dass es die Aggregationstabelle gibt.
+
+Aus diesem Grund sollte die Tabelle **Sales Agg** ausgeblendet werden. Wenn das nicht der Fall ist, wird sie vom Dialogfeld „Aggregationen verwalten“ ausgeblendet, wenn Sie auf „Alle übernehmen“ klicken.
 
 ### <a name="manage-aggregations-dialog"></a>Dialogfeld „Manage aggregations“ (Aggregationen verwalten)
 Als Nächstes definieren wir die Aggregationen. Klicken Sie mit der rechten Maustaste auf die Tabelle **Sales Agg**, um das Kontextmenü zu öffnen, und wählen Sie **Manage aggregations** (Aggregationen verwalten).
@@ -136,11 +128,7 @@ Die folgenden relevanten Überprüfungen werden vom Dialogfeld erzwungen:
 * Die ausgewählte Detailspalte muss den gleichen Datentyp wie die Aggregationsspalte aufweisen. Ausgenommen sind die Zusammenfassungsfunktionen „Count“ und „Count table rows“. „Count“ und „Count table rows“ sind nur für Integeraggregationsspalten verfügbar und erfordern keinen übereinstimmenden Datentyp.
 * Verkettete Aggregationen über drei oder mehr Tabellen sind nicht zulässig. Es ist beispielsweise nicht möglich, Aggregationen für **Tabelle A** einzurichten, wenn diese auf **Tabelle B** verweist, deren Aggregationen wiederum auf **Tabelle C** verweisen.
 * Doppelte Aggregationen, bei denen zwei Einträge die gleiche Zusammenfassungsfunktion verwenden und auf die gleiche Detailtabelle bzw. -spalte verweisen, sind nicht zulässig.
-
-Während dieser Phase der öffentlichen Vorschau für **Aggregationen** werden zudem die folgenden Überprüfungen erzwungen. Mit allgemeiner Verfügbarkeit sollen diese Überprüfungen entfernt werden.
-
-* Aggregationen könne nicht mit der Sicherheit auf Zeilenebene verwendet werden. *Einschränkung der öffentlichen Vorschauversion.*
-* Die Detailtabelle muss den Modus „DirectQuery“ aufweisen (und nicht „Import“). *Einschränkung der öffentlichen Vorschauversion.*
+* Die Detailtabelle muss den Modus „DirectQuery“ aufweisen (und nicht „Import“).
 
 Die meisten dieser Überprüfungen werden durch das Deaktivieren von Dropdownwerten und das Anzeigen einer Erklärung in einer QuickInfo erzwungen. Dies wird im folgenden Bild veranschaulicht.
 
@@ -149,6 +137,9 @@ Die meisten dieser Überprüfungen werden durch das Deaktivieren von Dropdownwer
 ### <a name="group-by-columns"></a>Gruppierte Spalten
 
 In diesem Beispiel sind die drei GroupBy-Einträge optional. Sie wirken sich nicht auf das Aggregationsverhalten aus (ausgenommen ist die Beispielabfrage DISTINCTCOUNT, die in einem der folgenden Bilder veranschaulicht wird). Sie werden der Lesbarkeit halber einbezogen. Ohne diese GroupBy-Einträge würden die Aggregationen immer noch basierend auf den Beziehungen gefunden werden. Dieses Verhalten unterscheidet sich vom Verhalten von Aggregationen ohne Beziehungen. Dieses wird im Big Data-Beispiel weiter unten in diesem Artikel veranschaulicht.
+
+### <a name="inactive-relationships"></a>Inaktive Beziehungen
+Das Gruppieren nach einer Fremdschlüsselspalte, die von einer inaktiven Beziehung verwendet wird, und die Verwendung der USERELATIONSHIP-Funktion für Aggregationstreffer werden nicht unterstützt.
 
 ### <a name="detecting-whether-aggregations-are-hit-or-missed-by-queries"></a>Erkennen, ob Aggregationen von Abfragen gefunden werden
 
@@ -191,6 +182,17 @@ In einigen Fällen kann die Funktion DISTINCTCOUNT von Aggregationen profitieren
 
 ![Beispielabfrage](media/desktop-aggregations/aggregations-code_07.jpg)
 
+### <a name="rls"></a>RLS
+RLS-Ausdrücke (Row Level Security, Sicherheit auf Zeilenebene) sollten die Aggregationstabelle und die Detailtabelle filtern, damit sie ordnungsgemäß funktionieren. Danach funktioniert der RLS-Ausdruck für die Tabelle **Geography**, da in den Beziehungen zu den Tabellen **Sales** und **Sales Agg** nach „Geography“ gefiltert wird. Auf Abfragen für die Aggregationstabelle und andere Abfragen wurde die Sicherheit auf Zeilenebene erfolgreich angewendet.
+
+![Aggregationen unter „Rollen verwalten“](media/desktop-aggregations/manage-roles.jpg)
+
+Ein RLS-Ausdruck in der Tabelle **Product** würde nur die Tabelle **Sales** filtern, nicht die Tabelle **Sales Agg**. Diese Vorgehensweise wird nicht empfohlen. Abfragen, die von Benutzern übermittelt werden, die über diese Rolle auf das Dataset zugreifen, profitieren nicht von Aggregationstreffern. Da die Aggregationstabelle eine weitere Darstellung derselben Daten in der Detailtabelle ist, wäre es nicht sicher, Abfragen aus der Aggregationstabelle zu beantworten, da der RLS-Filter nicht angewendet werden kann.
+
+Ein RLS-Ausdruck für Tabelle **die Sales Agg** filtert nur die Aggregationstabelle, nicht die Detailtabelle. Diese Vorgehensweise ist nicht zulässig.
+
+![Aggregationen unter „Rollen verwalten“](media/desktop-aggregations/filter-agg-error.jpg)
+
 ## <a name="aggregations-based-on-group-by-columns"></a>Aggregationen basierend auf gruppierten Spalten 
 
 Hadoop-basierte Big Data-Modelle unterscheiden sich von dimensionalen Modellen. Sie verlassen sich zumeist nicht auf Beziehungen, um Joins zwischen großen Tabellen zu vermeiden. Stattdessen werden Dimensionsattribute oft zu Faktentabellen denormalisiert. Derartige Big Data-Modelle können für interaktive Analysen mit **Aggregationen** basierend auf gruppierten Spalten eingesetzt werden.
@@ -225,6 +227,10 @@ Besonders für Modelle, die Filterattribute in Faktentabellen enthalten, kann es
 
 ![Dialogfeld „Filter“](media/desktop-aggregations/aggregations_12.jpg)
 
+### <a name="rls"></a>RLS
+
+Die oben beschriebenen RLS-Regeln für auf Beziehungen basierende Aggregationen (d. h. ob ein RLS-Ausdruck die Aggregationstabelle, die Detailtabelle oder beide filtern kann) gelten auch für Aggregationen, die auf GroupBy-Spalten basieren. Im Beispiel kann ein RLS-Ausdruck, der auf die Tabelle **Driver Activity** angewendet wird, verwendet werden, um die Tabelle **Driver Activity Agg** zu filtern, da alle GroupBy-Spalten in der Aggregationstabelle auch in der Detailtabelle vorhanden sind. Ein RLS-Filter für die Tabelle **Driver Activity Agg** kann jedoch nicht auf die Tabelle **Driver Activity** angewendet werden.
+
 ## <a name="aggregation-precedence"></a>Aggregationsrangfolge
 
 Durch eine Aggregationsrangfolge können mehrere Aggregationstabellen von einer einzelnen Unterabfrage berücksichtigt werden.
@@ -232,8 +238,11 @@ Durch eine Aggregationsrangfolge können mehrere Aggregationstabellen von einer 
 Sehen Sie sich das folgende Beispiel an. Dies ist ein [zusammengesetztes Modell](desktop-composite-models.md), das mehrere DirectQuery-Quellen enthält.
 
 * Die Import-Tabelle **Driver Activity Agg2** weist eine hohe Granularität auf, weil es nur wenige GroupBy-Attribute gibt und die Kardinalität gering ist. Die Anzahl der Zeilen kann nur wenige Tausend betragen, sodass sie problemlos in einen In-Memory-Cache passt. Diese Attribute werden von einem Dashboard einer wichtigen Führungsperson verwendet, weshalb darauf verweisende Abfragen so schnell wie möglich ausgeführt werden sollen.
-* Die Tabelle **Driver Activity Agg** ist eine Zwischenaggregationstabelle im DirectQuery-Modus. Sie enthält über eine Milliarde Zeilen und wird an der Quelle mit Columnstore-Indizes optimiert.
+* Die Tabelle **Driver Activity Agg** ist eine Zwischenaggregationstabelle im DirectQuery-Modus. Sie enthält über eine Milliarde Zeilen in Azure SQL Data Warehouse und wird an der Quelle mit Columnstore-Indizes optimiert.
 * Die Tabelle **Driver Activity** befindet sich im DirectQuery-Modus und enthält über eine Billion Zeilen mit IoT-Daten, die aus einem Big Data-System stammen. Sie verarbeitet Drillthroughabfragen zum Anzeigen einzelner IoT-Lesevorgänge in kontrollierten Filterkontexten.
+
+> [!NOTE]
+> DirectQuery-Aggregationstabellen, die eine andere Datenquelle für die Detailtabelle verwenden, werden nur unterstützt, wenn die Aggregationstabelle von einer SQL Server-, Azure SQL-oder Azure SQL Data Warehouse-Quelle stammt.
 
 Der Speicherbedarf dieses Modells ist relativ gering, obwohl es ein großes Dataset verfügbar macht. Es stellt eine ausgeglichene Architektur dar, weil es die Abfragelast auf alle Komponenten der Architektur verteilt und diese abhängig von ihren Stärken einsetzt.
 
@@ -261,8 +270,6 @@ In der folgenden Tabelle werden die Einträge angezeigt, die Sie im Dialogfeld *
 
 ![Aggregationstabelle „Sales Agg“](media/desktop-aggregations/aggregations-table_04.jpg)
 
-> Hinweis: Dieses Modell erfordert, dass sich die **Date**-Tabelle im DirectQuery-Modus befindet, damit das Dialogfeld zum Verwalten von Aggregationen ausgefüllt werden kann. Dies liegt daran, dass die Tabelle eine Detailtabelle ist. Diese Einschränkung gilt nur für die Vorschauversion. Sie soll bei allgemeiner Verfügbarkeit nicht mehr bestehen.
-
 ### <a name="query-examples"></a>Beispielabfragen
 
 Die folgende Abfrage findet die Aggregation, weil CalendarMonth von der Aggregation abgedeckt wird und weil auf CategoryName über eine 1:n-Beziehung zugegriffen werden kann. Die Aggregation „Sum“ für **SalesAmount** wird verwendet.
@@ -285,9 +292,9 @@ Die folgende Zeitintelligenzabfrage findet die Aggregation nicht, weil die Funkt
 
 Die folgenden Artikeln enthalten weitere Informationen über zusammengesetzte Modelle sowie Details zu DirectQuery.
 
-* [Zusammengesetzte Modelle in Power BI Desktop (Vorschauversion)](desktop-composite-models.md)
-* [m:n-Beziehungen in Power BI Desktop (Vorschauversion)](desktop-many-to-many-relationships.md)
-* [Speichermodus in Power BI Desktop (Vorschauversion)](desktop-storage-mode.md)
+* [Verwenden zusammengesetzter Modelle in Power BI Desktop](desktop-composite-models.md)
+* [Beziehungen mit einer m:n-Kardinalität in Power BI Desktop](desktop-many-to-many-relationships.md)
+* [Speichermodus in Power BI Desktop](desktop-storage-mode.md)
 
 Artikel zu DirectQuery:
 

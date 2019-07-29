@@ -1,5 +1,5 @@
 ---
-title: Benutzerdefinierte Visualisierungen in Power BI
+title: Visuals in Power BI
 description: Benutzerdefinierte Visualisierungen in Power BI
 author: sranins
 ms.author: rasala
@@ -10,14 +10,14 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/15/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 23436fb8e21e1be3a863986a773d7d969da65122
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: 68048968bf6a3f85f2bc24e55fd1288073be1d56
+ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66498039"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415413"
 ---
-# <a name="custom-visuals-in-power-bi"></a>Benutzerdefinierte Visualisierungen in Power BI
+# <a name="visuals-in-power-bi"></a>Visuals in Power BI
 
 Beim Erstellen oder Bearbeiten eines Power BI-Berichts stehen Ihnen viele verschiedene Typen von Visuals zur Verfügung. Die Symbole für diese Visuals werden im Bereich **Visualisierungen** angezeigt. Diese Visuals sind vorkonfiguriert, wenn Sie [Power BI Desktop](https://powerbi.microsoft.com/desktop/) herunterladen oder den [Power BI-Dienst](https://app.powerbi.com) öffnen.
 

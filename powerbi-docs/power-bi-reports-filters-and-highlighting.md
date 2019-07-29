@@ -1,5 +1,5 @@
 ---
-title: Filtern und Hervorhebungen in Power BI-Berichten
+title: Filter und Hervorhebungen in Power BI-Berichten
 description: Informationen zu Filtern und Hervorhebungen in Power BI-Berichten
 author: maggiesMSFT
 manager: kfile
@@ -10,25 +10,25 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 8084b8dbbc27c856633d84c6628727dcd426964d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4584ad0f8c083a765b1a1a9943496b40a3ed4bdf
+ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187546"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68342165"
 ---
-# <a name="filters-and-highlighting-in-power-bi-reports"></a>Filtern und Hervorhebungen in Power BI-Berichten
- Dieser Artikel informiert Sie filtern und Hervorhebungen in Power BI-Dienst. Die Benutzeroberfläche ist nahezu identisch mit der von Power BI Desktop. *Filter* entfernen alles bis auf die Daten, auf die Sie sich konzentrieren möchten. *Hervorhebung* ist nicht zu filtern. Entfernen Sie keine Daten, sondern werden stattdessen eine Teilmenge der sichtbaren Daten hervorgehoben; die Daten, die nicht markiert bleibt sichtbar, sind jedoch abgeblendet.
+# <a name="filters-and-highlighting-in-power-bi-reports"></a>Filter und Hervorhebungen in Power BI-Berichten
+ Dieser Artikel informiert Sie über das Filtern und Hervorheben im Power BI-Dienst. Die Benutzeroberfläche ist nahezu identisch mit der von Power BI Desktop. *Filter* entfernen alles bis auf die Daten, auf die Sie sich konzentrieren möchten. *Hervorheben* ist nicht dasselbe wie Filtern. Dieser Vorgang entfernt keine Daten, sondern hebt eine Teilmenge der sichtbaren Daten hervor. Die nicht hervorgehobenen Daten bleiben sichtbar, sind jedoch abgeblendet.
 
 Zum Zuweisen von Filtern und Hervorhebungen zu Berichten haben Sie in Power BI verschiedene Möglichkeiten. Diese eingehend zu beschreiben, würde den Rahmen dieses Artikels sprengen. Wir haben die Informationen also auf folgende Abschnitte aufgeteilt:
 
-* Einführung in Filter und Hervorhebungen, Artikel, sind Sie nun bereit.
-* Wie Sie [erstellen und verwenden Sie Filter in der Bearbeitungsansicht](power-bi-report-add-filter.md) in Berichten in Power BI Desktop und Power BI-Dienst. Wenn Sie über Berechtigungen zum Bearbeiten von Berichten verfügen, können Sie Filter in Berichten erstellen, ändern und löschen.
-* Wie Visuals [filtern und hervorheben in einem Bericht für Sie freigegeben](consumer/end-user-interactions.md)im Leseansicht von Power BI-Dienst zu melden. Hier bestehen Einschränkungen, Ihnen stehen aber in jedem Fall eine Vielzahl von Optionen für Filter und Hervorhebungen zur Verfügung.  
-* Einen ausführlichen Überblick über die [filtern und Hervorheben von Steuerelementen in der Bearbeitungsansicht verfügbar](power-bi-report-add-filter.md) in Power BI Desktop und Power BI-Dienst. Der Artikel bietet einen detaillierten Einblick in die Arten von Filtern, z. B. Datum und Uhrzeit, numerischen und Text. Dazu gehört auch die Unterschiede zwischen grundlegenden und erweiterten Optionen.
+* Einführung in Filter und Hervorhebungen (dieser Artikel).
+* [Erstellen und Verwenden von Filtern in der Bearbeitungsansicht](power-bi-report-add-filter.md) in Berichten in Power BI Desktop und dem Power BI-Dienst. Wenn Sie über Berechtigungen zum Bearbeiten von Berichten verfügen, können Sie Filter in Berichten erstellen, ändern und löschen.
+* [Verwenden von Filtern und Hervorhebungen bei Visuals in einem für Sie freigegebenen Bericht](consumer/end-user-interactions.md) in der Leseansicht im Power BI-Dienst. Hier bestehen Einschränkungen, Ihnen stehen aber in jedem Fall eine Vielzahl von Optionen für Filter und Hervorhebungen zur Verfügung.  
+* Ausführliche Einführung in die [in der Bearbeitungsansicht verfügbaren Steuerelemente zum Filtern und Hervorheben](power-bi-report-add-filter.md) in Power BI Desktop und dem Power BI-Dienst. Der Artikel befasst sich ausführlich mit Filtertypen wie Datum und Uhrzeit, numerischen Filtern sowie Textfiltern. Außerdem werden die Unterschiede zwischen den grundlegenden und den erweiterten Optionen behandelt.
 * Wenn Sie das Standardverfahren für die Verwendung von Filtern und Hervorhebungen kennengelernt haben, erfahren Sie, [wie Sie die Art und Weise ändern, in der verschiedene Visualisierungen auf einer Seite einander durch Filter und Hervorhebungen beeinflussen](service-reports-visual-interactions.md).
 
-**Wussten Sie schon?** Power BI umfasst eine neue Filteroberfläche, die sich zurzeit in der Vorschau befindet. Erfahren Sie mehr über die [neue Filteroberfläche in Power BI-Berichten](power-bi-report-filter-preview.md).
+**Wussten Sie schon?** Power BI umfasst eine neue Filteroberfläche, die sich zurzeit in der Vorschau befindet. Erfahren Sie mehr über die [neue Filteroberfläche in Power BI-Berichten](power-bi-report-filter.md).
 
 ![Neue Filteroberfläche](media/power-bi-reports-filters-and-highlighting/power-bi-filter-reading.png)
 
@@ -67,32 +67,32 @@ Diese Berichtsseite verfügt also über sechs Filter auf Seitenebene und einen F
 
 Jedes Visual kann Filter für alle Felder im Visual enthalten, und ein Berichtsautor kann weitere hinzufügen. Im Bild unten weist das Blasendiagramm sechs Filter auf.
 
-![-Filter auf visueller Ebene](media/power-bi-reports-filters-and-highlighting/power-bi-filter-visual-level.png)
+![Filter auf Visualebene](media/power-bi-reports-filters-and-highlighting/power-bi-filter-visual-level.png)
 
 In der Leseansicht können Sie die Daten untersuchen, indem Sie die bestehenden Filter modifizieren. Selbst wenn Sie den Bericht in einer mobilen App öffnen, werden die von Ihnen vorgenommenen Veränderungen zusammen mit dem Bericht gespeichert. Mehr dazu erfahren Sie im [Überblick über den Berichtsbereich „Filter“](consumer/end-user-report-filter.md).
 
 Wenn Sie den Bericht verlassen, werden Ihre Filter gespeichert. Um die Filterung aufzuheben und zu den Standardwerten für Filter, Slicing, Detailgenauigkeit und Sortierung zurückzukehren, die jeweils vom Berichtsautor festgelegt wurden, wählen Sie aus der Menüleiste oben **Auf Standardwert zurücksetzen** aus.
 
-![Zurücksetzen auf die Standardsymbol](media/power-bi-reports-filters-and-highlighting/power-bi-reset-to-default.png)
+![Symbol „Auf Standardwert zurücksetzen“](media/power-bi-reports-filters-and-highlighting/power-bi-reset-to-default.png)
 
 ### <a name="filters-in-editing-view"></a>Filter in der Bearbeitungsansicht
 Wenn Sie über Besitzerberechtigungen für einen Bericht verfügen und diesen in der Bearbeitungsansicht öffnen, sehen Sie, dass der Bereich **Filter** nur einer von verschiedenen verfügbaren Bearbeitungsbereichen ist.
 
-![Bereich "Filter" in der Bearbeitungsansicht](media/power-bi-reports-filters-and-highlighting/power-bi-add-filter-editing-view.png)
+![Bereich „Filter“ in der Bearbeitungsansicht](media/power-bi-reports-filters-and-highlighting/power-bi-add-filter-editing-view.png)
 
 Wie in der Leseansicht verfügt diese Berichtsseite über sechs Filter auf Seitenebene und einen Filter auf Berichtsebene. Durch Auswahl des Blasendiagramms erfahren wir, dass sechs Filter auf Visualebene angewendet wurden.
 
 In der Bearbeitungsansicht bieten Filter und Hervorhebungen mehr Möglichkeiten. In erster Linie können Sie Filter hinzufügen. Erfahren Sie, wie Sie [einen Filter zu einem Bericht hinzufügen](power-bi-report-add-filter.md), und vieles mehr.
 
-## <a name="ad-hoc-highlighting"></a>Ad-hoc-Hervorhebung.
-Wählen Sie eine Wert oder eine Achse Bezeichnung in einem visuellen Element, um die anderen Visualisierungen auf der Seite hervorzuheben. Um die Hervorhebung zu entfernen, wählen Sie den Wert erneut aus, oder wählen Sie einen leeren Bereich in der gleichen Visualisierung. Hervorhebung ist eine Möglichkeit zum Einfluss von Daten schnell zu durchsuchen. Wie Sie das Verhalten dieser Art von übergreifenden Hervorhebungen anpassen können, erfahren Sie unter [Interaktionen mit Visuals](service-reports-visual-interactions.md).
+## <a name="ad-hoc-highlighting"></a>Ad-hoc-Hervorhebung
+Wählen Sie einen Wert oder eine Achsenbezeichnung in einem Visual aus, um die anderen Visuals auf der Seite hervorzuheben. Wählen Sie den Wert erneut aus, oder wählen Sie einen leeren Bereich im gleichen Visual aus, um die Hervorhebung zu entfernen. Mithilfe von Hervorhebungen können Sie die Auswirkungen von Daten schnell untersuchen. Wie Sie das Verhalten dieser Art von übergreifenden Hervorhebungen anpassen können, erfahren Sie unter [Interaktionen mit Visuals](service-reports-visual-interactions.md).
 
 ![Übergreifende Hervorhebung](media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif)
 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Die neue Filter-Benutzeroberfläche in Power BI-Berichten](power-bi-report-filter-preview.md)
+[The new filter experience in Power BI reports (Neue Filteroberfläche in Power BI-Berichten)](power-bi-report-filter.md)
 
 [Hinzufügen eines Filters zu einem Bericht (in der Bearbeitungsansicht)](power-bi-report-add-filter.md)
 

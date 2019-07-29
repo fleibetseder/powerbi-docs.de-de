@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 0013080f3640c4c4d3d717104dcc069ccce3923a
-ms.sourcegitcommit: 952afd75fe8ddcf9350bd9aae88e1a4c438d0f3e
+ms.openlocfilehash: 7492651d2b5be8a63c97594fce3f3399b1122cc3
+ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67561823"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68325033"
 ---
 # <a name="data-refresh-in-power-bi"></a>Aktualisieren von Daten in Power BI
 
@@ -55,7 +55,7 @@ Da Power BI die Daten zwischenspeichert, können die Größen der Datasets im Im
 | --- | --- |
 | Gemeinsam genutzt, A1, A2 oder A3 | 1 GB |
 | A4 oder P1 | 3GB |
-| A4 oder P2 | 6GB |
+| A5 oder P2 | 6GB |
 | A6 oder P3 | 10 GB |
 | | |
 
@@ -160,7 +160,7 @@ Unabhängig von den Speichermodi kann keine Datenaktualisierung erfolgreich sein
 
 ### <a name="connecting-to-on-premises-data-sources"></a>Herstellen der Verbindung mit lokalen Datenquellen
 
-Wenn Ihr Dataset eine Datenquelle verwendet, auf die Power BI nicht über eine direkte Netzwerkverbindung zugreifen kann, müssen Sie eine Gatewayverbindung für dieses Dataset konfigurieren, bevor Sie einen Aktualisierungszeitplan aktivieren oder eine bedarfsgesteuerte Datenaktualisierung durchführen können. Weitere Informationen zu Datengateways und deren Funktionsweise finden Sie unter [Was sind lokale Datengateways?](service-gateway-getting-started.md).
+Wenn Ihr Dataset eine Datenquelle verwendet, auf die Power BI nicht über eine direkte Netzwerkverbindung zugreifen kann, müssen Sie eine Gatewayverbindung für dieses Dataset konfigurieren, bevor Sie einen Aktualisierungszeitplan aktivieren oder eine bedarfsgesteuerte Datenaktualisierung durchführen können. Weitere Informationen zu Datengateways und deren Funktionsweise finden Sie unter [Was sind lokale Datengateways?](service-gateway-onprem.md).
 
 Sie haben folgende Optionen:
 
@@ -174,7 +174,10 @@ Sie haben folgende Optionen:
 
 Microsoft empfiehlt, anstelle eines persönlichen Gateways ein Enterprisedatengateway zu verwenden, um ein Dataset mit einer lokalen Datenquelle zu verbinden. Stellen Sie sicher, dass das Gateway ordnungsgemäß konfiguriert ist, was bedeutet, dass das Gateway über die neuesten Updates und alle erforderlichen Datenquellendefinitionen verfügt. Eine Datenquellendefinition stellt Power BI die Verbindungsinformationen für eine bestimmte Quelle zur Verfügung, einschließlich Verbindungsendpunkten, Authentifizierungsmodus und Anmeldeinformationen. Weitere Informationen zum Verwalten von Datenquellen auf einem Gateway finden Sie unter [Verwalten der Datenquelle – Import/Geplante Aktualisierung](service-gateway-enterprise-manage-scheduled-refresh.md).
 
-Das Herstellen einer Verbindung eines Datasets mit einem Enterprisegateway ist relativ unkompliziert, wenn Sie ein Gatewayadministrator sind. Mit Administratorberechtigungen können Sie das Gateway sofort aktualisieren und ggf. fehlende Datenquellen hinzufügen. In der Tat können Sie eine fehlende Datenquelle Ihrem Gateway direkt auf der Seite mit den Dataseteinstellungen hinzufügen. Erweitern Sie die Umschaltfläche, um die Datenquellen anzuzeigen, und wählen Sie den Link **Zu Gateway hinzufügen** aus, wie im folgenden Screenshot gezeigt. Wenn Sie kein Gatewayadministrator sind, verwenden Sie dagegen die angezeigten Kontaktinformationen, um eine Anfrage zum Hinzufügen der erforderlichen Datenquellendefinition an einen Gatewayadministrator zu senden.
+Das Herstellen einer Verbindung eines Datasets mit einem Enterprisegateway ist relativ unkompliziert, wenn Sie ein Gatewayadministrator sind. Mit Administratorberechtigungen können Sie das Gateway sofort aktualisieren und ggf. fehlende Datenquellen hinzufügen. In der Tat können Sie eine fehlende Datenquelle Ihrem Gateway direkt auf der Seite mit den Dataseteinstellungen hinzufügen. Erweitern Sie die Umschaltfläche, um die Datenquellen anzuzeigen, und wählen Sie den Link **Zu Gateway hinzufügen** aus, wie im folgenden Screenshot gezeigt. Wenn Sie kein Gatewayadministrator sind, müssen Sie sich an einen Gatewayadministrator wenden, um die erforderliche Datenquellendefinition hinzuzufügen.
+
+> [!NOTE]
+> Nur Gatewayadministratoren können Datenquellen zu Gateways hinzufügen. Stellen Sie auch sicher, dass Ihr Gatewayadministrator Ihr Benutzerkonto zur Liste der Benutzer mit Berechtigungen für die Verwendung der Datenquelle hinzufügt. Auf der Seite mit Dataseteinstellungen können Sie nur ein Enterprise-Gateway mit einer entsprechenden Datenquelle verwenden, für die Sie über Berechtigungen verfügen.
 
 ![Zu Gateway hinzufügen](media/refresh-data/add-to-gateway.png)
 
@@ -284,6 +287,8 @@ Beachten Sie auch, dass die konfigurierte Aktualisierungszeit möglicherweise ni
 ### <a name="getting-refresh-failure-notifications"></a>Abrufen von Benachrichtigungen bei Aktualisierungsfehlern
 
 Standardmäßig sendet Power BI Benachrichtigungen über Aktualisierungsfehler per E-Mail an den Datasetbesitzer, sodass der Besitzer rechtzeitig handeln kann, wenn Aktualisierungsprobleme auftreten. Power BI sendet Ihnen auch eine Benachrichtigung, wenn der Dienst Ihren Zeitplan aufgrund aufeinander folgender Fehler deaktiviert. Microsoft empfiehlt Ihnen, das Kontrollkästchen **Benachrichtigungs-E-Mails zu Aktualisierungsfehlern an mich senden** aktiviert zu lassen.
+
+Außerdem empfiehlt es sich, mithilfe des Textfelds **Email these users when the refresh fails** (Diese Benutzer bei Aktualisierungsfehlern per E-Mail benachrichtigen) weitere Empfänger anzugeben. Zusätzlich zum Besitzer des Datasets erhalten auch die angegebenen Empfänger Benachrichtigungen über Aktualisierungsfehler. Dabei kann es sich um einen Kollegen handeln, der während Ihres Urlaubs Ihre Datasets verwaltet. Es kann sich auch um den E-Mail-Alias Ihres Supportteams handeln, das sich für Ihre Abteilung oder Organisation um Probleme bei der Aktualisierung kümmert. Das Senden von Benachrichtigungen bezüglich Aktualisierungsfehler an den Besitzer des Datasets und an weitere Personen hilft dabei, dass Probleme rechtzeitig bemerkt und behoben werden können.
 
 Beachten Sie, dass Power BI Benachrichtigungen nicht nur zu Aktualisierungsfehlern sendet, sondern auch, wenn der Dienst eine geplante Aktualisierung aufgrund von Inaktivität stoppt. Wenn zwei Monate lang kein Benutzer ein auf dem Dataset basierendes Dashboard oder einen Bericht aufgerufen hat, betrachtet Power BI das Dataset als inaktiv. In dieser Situation sendet Power BI eine E-Mail an den Datasetbesitzer, um mitzuteilen, dass der Dienst den Aktualisierungszeitplan für das Dataset angehalten hat. Der folgende Screenshot enthält ein Beispiel für eine solche Benachrichtigung.
 

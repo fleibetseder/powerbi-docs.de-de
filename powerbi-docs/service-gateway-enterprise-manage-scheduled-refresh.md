@@ -1,123 +1,78 @@
 ---
 title: Verwalten der Datenquelle – Import/Geplante Aktualisierung
-description: So verwalten Sie das lokale Datengateway und die zu diesem Gateway gehörigen Datenquellen. Dieser Artikel bezieht sich auf Datenquellen, die mit Import/Geplante Aktualisierung verwendet werden können.
+description: So verwalten Sie On-premises data gateway und die zu diesem Gateway gehörigen Datenquellen. Dieser Artikel bezieht sich auf Datenquellen, die mit Import/Geplante Aktualisierung verwendet werden können.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 12/06/2017
+ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 8f45fbed0b2c4e5de62f8ef18ee9a552bf05486b
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 2a3cdc3e6c4fc4f18613994a919f8ab733df5e14
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54293770"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271700"
 ---
 # <a name="manage-your-data-source---importscheduled-refresh"></a>Verwalten der Datenquelle – Import/Geplante Aktualisierung
-Nach der Installation des lokalen Datengateways müssen Datenquellen hinzugefügt werden, die mit dem Gateway verwendet werden können. In diesem Artikel wird untersucht, wie mit Gateways und Datenquellen gearbeitet wird, die für die geplante Aktualisierung im Gegensatz zu DirectQuery oder Live-Verbindungen verwendet werden.
 
-## <a name="download-and-install-the-gateway"></a>Herunterladen und Installieren eines Gateways
-Sie können das Gateway vom Power BI-Dienst herunterladen. Wählen Sie **Herunterladen** > **Datengateway**, oder gehen Sie auf die [Gateway-Downloadseite](https://go.microsoft.com/fwlink/?LinkId=698861).
+[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-![](media/service-gateway-enterprise-manage-scheduled-refresh/powerbi-download-data-gateway.png)
-
-## <a name="add-a-gateway"></a>Hinzufügen eines Gateways
-Zum Hinzufügen eines Gateways können Sie einfach das Enterprise-Gateway [herunterladen](https://go.microsoft.com/fwlink/?LinkId=698863) und auf einem Server in Ihrer Umgebung installieren. Nach der Installation das Gateway in der Gatewayliste unter **Gateways verwalten**angezeigt.
-
-> [!NOTE]
-> **Gateways verwalten** wird nur angezeigt, wenn Sie Administrator auf mindestens einem Gateway sind. Dies kann erfolgen, indem Sie als Administrator hinzugefügt werden oder indem Sie selbst ein Gateway installieren und konfigurieren.
-> 
-> 
-
-## <a name="remove-a-gateway"></a>Entfernen eines Gateways
-Beim Entfernen eines Gateways werden auch alle Datenquellen unter diesem Gateway gelöscht.  Dadurch verlieren auch alle Dashboards und Berichte, die auf diesen Datenquellen beruhen, ihre Funktionsfähigkeit.
-
-1. Wählen Sie rechts oben das Zahnradsymbol ![](media/service-gateway-enterprise-manage-scheduled-refresh/pbi_gearicon.png) > **Gateways verwalten**.
-2. Gateway > **Entfernen**.
-   
-   ![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings7.png)
+Nach der [Installation des lokalen Datengateways](/data-integration/gateway/service-gateway-install) müssen Sie [Datenquellen hinzufügen](service-gateway-data-sources.md#add-a-data-source), die mit dem Gateway verwendet werden können. In diesem Artikel wird untersucht, wie mit Gateways und Datenquellen gearbeitet wird, die für die geplante Aktualisierung im Gegensatz zu DirectQuery oder Live-Verbindungen verwendet werden.
 
 ## <a name="add-a-data-source"></a>Hinzufügen einer Datenquelle
-Sie können eine Datenquelle hinzufügen, indem Sie ein Gateway auswählen und auf **Datenquelle hinzufügen** klicken oder „Gateway“ > **Datenquelle hinzufügen** auswählen.
 
-![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings1.png)
+Weitere Informationen zum Hinzufügen einer Datenquelle finden Sie unter [Add a data source (Hinzufügen einer Datenquelle)](service-gateway-data-sources.md#add-a-data-source).
 
-Sie können anschließend den **Datenquellentyp** in der Liste auswählen. Alle aufgeführten Datenquellen können für die geplante Aktualisierung mit dem Enterprise-Gateway verwendet werden. Analysis Services, SQL Server und SAP HANA können für die geplante Aktualisierung oder DirectQuery/Live-Verbindungen verwendet werden.
+Alle aufgeführten Datenquellentypen können für die geplante Aktualisierung mit dem lokalen Datengateway verwendet werden. Analysis Services, SQL Server und SAP HANA können für die geplante Aktualisierung oder DirectQuery/Live-Verbindungen verwendet werden.
 
-![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings2.png)
+![Datenquelle auswählen](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings2.png)
 
 Sie sollten dann die Angaben für die Datenquelle vervollständigen, zu denen die Quell- und Anmeldeinformationen gehören, die für den Zugriff auf die Datenquelle verwendet werden.
 
 > [!NOTE]
-> Alle Abfragen der Datenquelle werden mithilfe dieser Anmeldeinformationen durchgeführt. Weitere Informationen darüber, wie [Anmeldeinformationen](service-gateway-onprem.md#credentials) gespeichert werden, finden Sie im Hauptartikel zum lokalen Datengateway.
-> 
-> 
+> Alle Abfragen der Datenquelle werden mithilfe dieser Anmeldeinformationen durchgeführt. Weitere Informationen zum Speichern von Anmeldeinformationen finden Sie unter [Storing encrypted credentials in the cloud (Speichern verschlüsselter Anmeldeinformationen in der Cloud)](service-gateway-data-sources.md#storing-encrypted-credentials-in-the-cloud).
 
-![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings3-oracle.png)
+![Auffüllen der Datenquelleneinstellungen](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings3-oracle.png)
 
-Klicken Sie auf **Hinzufügen** , nachdem alle Angaben eingetragen wurden.  Sie können jetzt diese Datenquelle für die geplante Aktualisierung mit Ihren lokalen Daten verwenden. Bei erfolgreicher Ausführung wird *Verbindung hergestellt* angezeigt.
+Eine Liste der Datenquellentypen, die mit geplanten Aktualisierungen verwendet werden können, finden Sie unter [Liste der verfügbaren Datenquellentypen](service-gateway-data-sources.md#list-of-available-data-source-types).
 
-![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings4.png)
+Klicken Sie auf **Hinzufügen**, nachdem Sie alle Angaben eingetragen haben. Sie können jetzt diese Datenquelle für die geplante Aktualisierung mit Ihren lokalen Daten verwenden. Bei erfolgreicher Ausführung wird *Verbindung erfolgreich* angezeigt.
 
-<!-- Shared Install steps Include -->
-[!INCLUDE [gateway-onprem-datasources-include](./includes/gateway-onprem-datasources-include.md)]
+![Anzeigen des Verbindungsstatus](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings4.png)
 
 ### <a name="advanced-settings"></a>Erweiterte Einstellungen
-Sie können die Datenschutzebene für die Datenquelle konfigurieren, die steuert, wie Daten kombiniert werden können. Diese wird nur für die geplante Aktualisierung verwendet und [Weitere Informationen](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)
 
-![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings9.png)
+Optional können Sie die Datenschutzebene für die Datenquelle konfigurieren. Diese steuert, wie Daten kombiniert werden können. Diese wird nur für die geplante Aktualisierung verwendet Weitere Informationen zu Datenschutzebenen für Ihre Datenquelle finden Sie unter [Privacy levels (Power Query) (Datenschutzebenen (Power Query))](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
 
-## <a name="remove-a-data-source"></a>Entfernen einer Datenquelle
-Durch Entfernen einer Datenquelle geht die Funktionsfähigkeit aller Dashboards und Berichte verloren, die auf der betreffenden Datenquelle beruhen.  
-
-Um eine Datenquelle zu entfernen, verwenden Sie „Datenquelle“ > **Entfernen**.
-
-![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings6.png)
-
-## <a name="manage-administrators"></a>Verwalten von Administratoren
-Sie können auf der Registerkarte „Administratoren“ für das Gateway Benutzer hinzufügen und entfernen, die das Gateway verwalten dürfen. Derzeit können nur Benutzer hinzugefügt werden. Sicherheitsgruppen lassen sich nicht hinzufügen.
-
-![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings8.png)
-
-## <a name="manage-users"></a>Verwalten von Benutzern
-Sie können auf der Registerkarte „Benutzer“ für die Datenquelle Benutzer oder Sicherheitsgruppen hinzufügen und entfernen, die diese Datenquelle verwenden dürfen.
-
-> [!NOTE]
-> Über die Benutzerliste wird nur gesteuert, wer Berichte veröffentlichen darf. Besitzer eines Berichts können Dashboards und Inhaltspakete erstellen und für andere Benutzer freigeben.
-> 
-> 
-
-![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings5.png)
+![Festlegen der Datenschutzebene](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings9.png)
 
 ## <a name="using-the-data-source-for-scheduled-refresh"></a>Verwenden der Datenquelle für geplanten Aktualisierungen
+
 Nachdem Sie die Datenquelle erstellt haben, kann diese mit DirectQuery-Verbindungen oder durch eine geplante Aktualisierung verwendet werden.
 
 > [!NOTE]
-> Der Name des Servers und der Datenbank müssen in Power BI Desktop und in der Datenquelle auf dem lokalen Datengateway übereinstimmen.
-> 
-> 
+> Die Namen des Servers und der Datenbank müssen in Power BI Desktop und der Datenquelle innerhalb des lokalen Datengateways übereinstimmen.
 
-Der Link zwischen Ihrem Dataset und der Datenquelle innerhalb des Gateways basiert auf dem Namen Ihres Servers und Ihrer Datenbank. Diese müssen übereinstimmen. Wenn Sie z.B. eine IP-Adresse für den Servernamen angeben, müssen Sie die IP-Adresse in Power BI Desktop für die Datenquelle innerhalb der Gatewaykonfiguration verwenden. Wenn Sie *SERVER\INSTANZ* verwenden, müssen Sie in Power BI Desktop dieselbe Instanz verwenden, die auch in der für das Gateway konfigurierten Datenquelle verwendet wird.
+Der Link zwischen Ihrem Dataset und der Datenquelle innerhalb des Gateways basiert auf dem Namen Ihres Servers und Ihrer Datenbank. Diese müssen übereinstimmen. Wenn Sie z. B. eine IP-Adresse für den Servernamen in Power BI Desktop angeben, müssen Sie die IP-Adresse für die Datenquelle innerhalb der Gatewaykonfiguration verwenden. Wenn Sie *SERVER\INSTANZ* verwenden, müssen Sie in Power BI Desktop dieselbe Instanz verwenden, die auch in der für das Gateway konfigurierten Datenquelle verwendet wird.
 
-Wenn Sie auf der Registerkarte **Benutzer** der im Gateway konfigurierten Datenquelle aufgeführt sind und der Name des Servers und der Datenbank übereinstimmen, wird das Gateway als Option für geplante Aktualisierungen angezeigt.
+Wenn Sie auf der Registerkarte **Benutzer** der im Gateway konfigurierten Datenquelle aufgeführt sind und die Namen des Servers und der Datenbank übereinstimmen, wird das Gateway als Option für geplante Aktualisierungen angezeigt.
 
-![](media/service-gateway-enterprise-manage-scheduled-refresh/powerbi-gateway-enterprise-schedule-refresh.png)
+![Anzeigen der Benutzer](media/service-gateway-enterprise-manage-scheduled-refresh/powerbi-gateway-enterprise-schedule-refresh.png)
 
 > [!WARNING]
 > Wenn Ihr Dataset mehrere Datenquellen enthält, muss jede dieser Datenquellen dem Gateway hinzugefügt werden. Wenn eine oder mehrere Datenquellen dem Gateway nicht hinzugefügt werden, wird das Gateway nicht als für die geplante Aktualisierung verfügbar angezeigt.
-> 
-> 
 
 ## <a name="limitations"></a>Einschränkungen
-* Für das lokale Datengateway wird das Authentifizierungsschema OAuth nicht unterstützt. Datenquellen, die OAuth erfordern, können nicht hinzugefügt werden. Wenn Ihr Dataset über eine Datenquelle, die OAuth erfordert, verfügt, kann das Gateway nicht für die geplante Aktualisierung verwendet werden.
+
+Für das lokale Datengateway wird das Authentifizierungsschema OAuth nicht unterstützt. Datenquellen, die OAuth erfordern, können nicht hinzugefügt werden. Wenn Ihr Dataset über eine Datenquelle verfügt, die OAuth erfordert, kann das Gateway nicht für die geplante Aktualisierung verwendet werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
-[Lokales Datengateway](service-gateway-onprem.md)  
-[Ausführliche Informationen zum lokalen Datengateway](service-gateway-onprem-indepth.md)  
-[Problembehandlung beim lokalen Datengateway](service-gateway-onprem-tshoot.md)  
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
 
+* [Problembehandlung beim lokalen Datengateway](/data-integration/gateway/service-gateway-tshoot)
+* [Lokales Datengateway – Problembehandlung](service-gateway-onprem-tshoot.md)
+
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
