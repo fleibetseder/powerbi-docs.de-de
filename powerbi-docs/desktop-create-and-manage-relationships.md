@@ -173,13 +173,13 @@ Die zweite Option ist *aktualisieren oder Löschen von Beziehungen beim Aktualis
 > [!WARNING]
 > Wenn Sie Sicherheit auf Zeilenebene verwenden, die auf definierten Beziehungen basiert, wird empfohlen, nicht die zweite Option auszuwählen, die lautet: *Beim Aktualisieren von Daten Beziehungen aktualisieren oder löschen*. Wenn eine Beziehung entfernt wird, auf der die RLS-Einstellungen beruhen, kann Ihr Modell unsicherer werden. 
 
-Die dritte Option ist *neue Beziehungen automatisch erkennen, nachdem Daten geladen wurden*, die beschrieben wird, der [AutoErmittlung beim Laden](#autodetect-during-load) Abschnitt finden Sie weiter oben in diesem Artikel. 
+Die dritte Option ist *Neue Beziehungen nach dem Laden der Daten automatisch erkennen*. Diese wird im Abschnitt [AutoErmittlung beim Laden](#autodetect-during-load) näher beschrieben, den Sie weiter oben in diesem Artikel finden. 
 
 
 ## <a name="future-updates-to-the-data-require-a-different-cardinality"></a>Zukünftige Updates für die Daten erfordern eine andere Kardinalität
 Normalerweise kann Power BI Desktop automatisch die beste Kardinalität für die Beziehung bestimmen. Wenn Sie jedoch die automatische Einstellung außer Kraft setzen müssen, weil Sie wissen, dass sich die Daten in der Zukunft ändern, können Sie die Auswahl über das Steuerelement „Kardinalität“ vornehmen. Betrachten wir ein Beispiel, in dem wir eine andere Kardinalität auswählen müssen.
 
-Die nachfolgende Tabelle „UnternehmenPriorität“ stellt eine Liste aller UnternehmenProjekte und deren Priorität dar. Die Tabelle „Projektbudget“ umfasst die Projekte, deren Budget genehmigt wurde.
+Die nachfolgende Tabelle „CompanyPriority" (UnternehmenPriorität) stellt eine Liste aller Unternehmensprojekte und deren Priorität dar. Die Tabelle „ProjectBudget“ (Projektbudget) umfasst die Projekte, deren Budget genehmigt wurde.
 
 **Projektbudget**
 
@@ -257,7 +257,7 @@ Bei der Kreuzfilterungsrichtung „Einfach“ können Sie einen Bericht erstelle
 
  ![](media/desktop-create-and-manage-relationships/candmrel_repcrossfiltersingle.png)
 
-Filterspezifikation verläuft von "unternehmenprojekt" zu "UnternehmenMitarbeiter" (wie in der folgenden Abbildung gezeigt), aber es wird nicht hinauf zu "UnternehmenMitarbeiter". Dies funktioniert jedoch, wenn Sie für die Kreuzfilterrichtung „Beide“ festlegen. Die Einstellung „Beide“ ermöglicht es der Filterspezifikation, zu „Mitarbeiter“ zu gelangen.
+Die Filterspezifikation verläuft von "CompanyProject" (Unternehmensprojekt) zu "CompanyEmployee" (UnternehmenMitarbeiter) (wie in der folgenden Abbildung gezeigt), aber nicht hinauf zu "CompanyEmployee". Dies funktioniert jedoch, wenn Sie für die Kreuzfilterrichtung „Beide“ festlegen. Die Einstellung „Beide“ ermöglicht es der Filterspezifikation, zu „Eployee“ (Mitarbeiter) zu gelangen.
 
  ![](media/desktop-create-and-manage-relationships/candmrel_bidircrossfiltering.png)
 
@@ -325,7 +325,7 @@ Wenn beide Beziehungen zum Modell hinzugefügt werden (zuerst „GeöffnetVon“
 
  ![](media/desktop-create-and-manage-relationships/candmrel_managerelactive.png)
 
-Nun, wenn es sich um einen Bericht, der Rolle "und" Mitarbeiter "Felder" mitarbeiterfunktion "und dem Feld" Stunden "aus" projekttickets "in einer tabellenvisualisierung im berichtszeichenbereich verwendet erstellen, werden wir sehen, dass ausschließlich Projektträger, weil sie die einzigen Personen sind, die ein projektticket geöffnet.
+Wenn wir nun einen Bericht erstellen, der die Felder "Role" (Rolle) und "Employee" (Mitarbeiter) aus der Tabelle "EmployeeRole" sowie das Feld "Hours" (Stunden) aus der Tabelle "ProjectTickets" in einer Tabellenvisualisierung im Berichtscanvas verwendet, werden nur Projektträger angezeigt, da diese die einzigen Personen sind, die ein Projektticket geöffnet haben.
 
  ![](media/desktop-create-and-manage-relationships/candmrel_repcrossfilteractive.png)
 
