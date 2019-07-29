@@ -1,20 +1,20 @@
 ---
 title: Unterstützte Datenquellen für paginierte Power BI-Berichte
 description: In diesem Artikel erfahren Sie mehr über unterstützte Datenquellen für paginierte Berichte im Power BI-Dienst und dazu, wie Sie eine Verbindung zu Datenquellen der Azure SQL-Datenbank herstellen.
-author: maggiesMSFT
-ms.author: maggies
+author: onegoodsausage
+ms.author: andremi
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 07/19/2019
-ms.openlocfilehash: 91ddcfca56ac7c08736c35c7232df04082e4e921
-ms.sourcegitcommit: a58461fe7dfa65c751490b52de5fc73f8e69a17f
+ms.openlocfilehash: f055cd27f25af399b63336e66aaad526ed740de2
+ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68352974"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68462315"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Unterstützte Datenquellen für paginierte Power BI-Berichte
 
@@ -30,7 +30,7 @@ Paginierte Berichte unterstützen nativ die folgende Liste von Datenquellen:
 | Azure Analysis Services | SSO, OAuth2 |   |
 | Power BI-Dataset | SSO | Premium-und Nicht-Premium-Power BI Datasets |
 | Premium-Power BI-Dataset (XMLA) | SSO |   |
-| Daten eingeben | N/V | Daten sind in Bericht eingebettet. |
+| Daten eingeben | – | Daten sind in Bericht eingebettet. |
 
 Mit Ausnahme von Azure SQL-Datenbank können alle Datenquellen verwendet werden, nachdem Sie den Bericht in den Power BI-Dienst hochgeladen haben. Bei den Datenquellen wird standardmäßig einmaliges Anmelden (Single Sign-on, SSO) verwendet, sofern zutreffend. Für Azure Analysis Services können Sie den Authentifizierungstyp in „OAuth2“ ändern.
 
