@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 05/24/2019
-ms.openlocfilehash: 472606fcb3b823cdcb722c9d8d6421d0ec652d24
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.date: 07/15/2019
+ms.openlocfilehash: 2d48892450bbf6ab09a4bc88cd2be9a58bbdc863
+ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839546"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68307080"
 ---
 # <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Abonnieren von paginierten Berichten für sich selbst und andere im Power BI-Dienst 
 
@@ -26,15 +26,15 @@ Durch das Einrichten von Abonnements können Sie entscheiden, ob Sie die E-Mails
 
 - Im Gegensatz zu Dashboards oder Power BI-Berichten enthält Ihr Abonnement eine Anlage mit der gesamten Berichtsausgabe.  Die folgenden Anlagetypen werden unterstützt: PDF, PowerPoint-Präsentation (.pptx), Excel-Arbeitsmappe (.xlsx), Word-Dokument (.docx), CSV-Datei und XML.
 
-- Im E-Mail-Text wird kein Vorschaubild des Berichts angezeigt.  Es ist geplant, das Bild der ersten Seite des Berichts als optionales Element zur Verfügung zu stellen. 
+- Sie können im E-Mail-Text ein Vorschaubild des Berichts anzeigen.  Dies ist optional und kann sich je nach gewähltem Anhangformat leicht von der ersten Seite Ihres angehängten Berichtsdokuments unterscheiden. 
 
 - Die maximale Größe der Anlage eines Berichts beträgt 25 MB. 
 
 - Sie können paginierte Berichte für andere Benutzer abonnieren, die eine Verbindung mit irgendwelchen derzeit unterstützten Datenquellen herstellt (einschließlich Azure Analysis Services oder Power BI-Datasets). Bedenken Sie, dass die Anlage des Berichts die Daten basierend auf Ihren Berechtigungen widerspiegelt (wie SQL Server Reporting Services heute). 
 
-- Abonnements von Berichtseiten sind mit dem Namen des Berichts verknüpft.  
+- E-Mail-Abonnements können entweder mit den aktuell ausgewählten oder den Standardparametern für Ihren Bericht gesendet werden.  Sie können für jedes Abonnement, das Sie für Ihren Bericht erstellen, unterschiedliche Parameterwerte festlegen. 
 
-- E-Mail-Abonnements werden mit Standardparameterwerten des Berichts gesendet. 
+- Wenn der Autor Ihres Berichts ausdrucksbasierte Parameter festgelegt hat (z.B. der Standardwert ist immer das heutige Datum), verwendet das Abonnement diesen als Standardwert. Sie können andere Parameterwerte ändern und die Verwendung aktueller Werte wählen. Wenn Sie diesen Wert jedoch nicht explizit ändern, verwendet das Abonnement den ausdrucksbasierten Parameter.
 
 - Die Option **After Data Refresh** (Nach der Datenaktualisierung) steht für die Häufigkeit mit paginierten Berichten nicht zur Verfügung. Sie erhalten immer die aktuellen Werte der zugrunde liegenden Datenquelle. 
 

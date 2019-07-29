@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 07/15/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 8833f9f4cc4bea23d2070ce19fe34f9400d6bac4
-ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.openlocfilehash: 33b14b8e89a1ba4433896634b7f48a1fcfb6f80e
+ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66823239"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68324597"
 ---
 # <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Welche Neuheiten enthält das aktuellste Update für Power BI Desktop? 
 
-## <a name="june-2019-update-2705494561"></a>Update Juni 2019 (2.70.5494.561)
+## <a name="july-2019-update-2715523641"></a>Update Juli 2019 (2.71.5523.641)
 
-Das Juni-Update für Power BI Desktop bietet viele Verbesserungen. Dank des neuen Farbschemas können Sie Ihre Berichte jetzt mit schönen satten Farben noch kreativer gestalten. 
+Unsere Updates für den Juli bieten Ihnen Vielzahl neuer Features und Funktionen für Ihren Power BI Desktop. 
 
 Sie können jetzt [die neueste Version von Power BI Desktop herunterladen](https://powerbi.microsoft.com/desktop). Wenn Sie Windows 10 verwenden, erhalten Sie **Power BI Desktop** auch aus dem Windows Store. Die monatlichen Versionen sind identisch, auch wenn die Versionsnummerierung zwischen zwei Versionen abweichen kann, unabhängig davon, wie Sie **Power BI Desktop** installieren. Weitere Informationen finden Sie in [diesem Artikel](desktop-get-the-desktop.md). 
 
@@ -37,54 +37,41 @@ Sie können das Video **Neueste Updates** auch direkt aus diesem Artikel von Beg
 In diesem Monat bietet **Power BI Desktop** die folgenden Updates:
 
 ### <a name="reporting"></a>Berichterstellung
-* Aktualisiertes Bereichsdesign [[Video]](https://youtu.be/7k-nP38uHyQ?t=8) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#panes) 
-* Filter auf Visualebene für Slicer [[Video]](https://youtu.be/7k-nP38uHyQ?t=116) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#slicerFilters)
-* Sortieren nach dem Bereich „Performance Analyzer“ [[Video]](https://youtu.be/7k-nP38uHyQ?t=237) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#perfAnalyzer)
-* Aktualisieren der Formatierungsoptionen für die bedingte Formatierung [[Video]](https://youtu.be/7k-nP38uHyQ?t=311) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#conditionalFormatting)
-* QuickInfos zu Visualheadern [[Video]](https://youtu.be/7k-nP38uHyQ?t=530) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#headerTooltips)
-* Anpassung der Bezeichnung von Tabellen- und Matrixvisuals [[Video]](https://youtu.be/7k-nP38uHyQ?t=722) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#totalLabels)
-* Synchronisieren der Slicerunterstützung für Hierarchieslicer [[Video]](https://youtu.be/7k-nP38uHyQ?t=859) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#syncSlicer)
-* Konsistente Schriftgrade für Visuals [[Video]](https://youtu.be/7k-nP38uHyQ?t=962) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#fontSizes)
+* Symbolsätze für Tabellen und Matrizen [[Video]](https://youtu.be/l7OMRUF9UYg?t=11) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#iconSets) 
+* Prozentuale Unterstützung für bedingte Formatierung nach Regeln [[Video]](https://youtu.be/l7OMRUF9UYg?t=445)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#percentRules)
+* Der neue Filterbereich ist jetzt allgemein verfügbar [[Video]](https://youtu.be/l7OMRUF9UYg?t=543) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#filterPane)
+* Unterstützung für Datenfarben bei der Verwendung der Wiedergabeachse für Punktdiagramme [[Video]](https://youtu.be/l7OMRUF9UYg?t=610)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#playAxis)
+* Leistungsverbesserungen bei der Verwendung relativer Datums-und Dropdown-Slicer [[Video]](https://youtu.be/l7OMRUF9UYg?t=669) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#slicers)
 
 
 ### <a name="analytics"></a>Analyse
-* Aktualisieren des Visuals „Wichtige Einflussfaktoren“ (Vorschauversion) [[Video]](https://youtu.be/7k-nP38uHyQ?t=1064) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#keyInfluencers) 
-    * Wichtige Einflussfaktoren mit Liveverbindung zu Power BI-Datasets
-    * Barrierefreiheit in Bezug auf wichtige Einflussfaktoren
-    * Unterstützung für Cloud-RLS
-* Barrierefreiheit in Bezug auf das Dialogfeld „Manage aggregations“ (Aggregationen verwalten) [[Video]](https://youtu.be/7k-nP38uHyQ?t=1213) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#aggregationsAccessibility) 
-
-### <a name="modeling"></a>Modellierung
-* Neue DAX-Vergleichsoperatoren: „==“ [[Video]](https://youtu.be/7k-nP38uHyQ?t=1267) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#dax) 
+* Anzahl für Visual „Wichtige Einflussfaktoren“ (Vorschau) [[Video]](https://youtu.be/l7OMRUF9UYg?t=760) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#keyInfluencers) 
+* Verbesserungen für Aggregationen  [[Video]](https://youtu.be/l7OMRUF9UYg?t=870) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#aggregations) 
 
 
 ### <a name="visuals"></a>Visuals
-* Personalisierter Visualisierungsbereich (Vorschauversion) [[Video]](https://youtu.be/7k-nP38uHyQ?t=1349) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#personalizedVizPane) 
-* Drei neue benutzerdefinierte Visuals und Updates [[Video]](https://youtu.be/7k-nP38uHyQ?t=1391) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#synopticVisual) 
+* PowerApps-Visualisierung ist nun zertifiziert [[Video]](https://youtu.be/l7OMRUF9UYg?t=894) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#powerapps) 
+* Drei neue benutzerdefinierte Visuals und Updates [[Video]](https://youtu.be/l7OMRUF9UYg?t=932) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#infocard) 
 
 
 ### <a name="data-connectivity"></a>Datenkonnektivität
-* Herstellen einer Verbindung mit freigegebenen und zertifizierten Datasets [[Video]](https://youtu.be/7k-nP38uHyQ?t=1739) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#sharedCertifiedDatasets) 
-* Der Common Data Service-Connector ist jetzt allgemein verfügbar [[Video]](https://youtu.be/7k-nP38uHyQ?t=1807) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#cds) 
-* Der Azure Data Explorer-Connector ist jetzt allgemein verfügbar [[Video]](https://youtu.be/7k-nP38uHyQ?t=1823) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#azureDataExplorer) 
-* Verbesserungen des Cosmos DB-Connectors [[Video]](https://youtu.be/7k-nP38uHyQ?t=1835) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#cosmosDB)
-* Entersoft-Datenconnector [[Video]](https://youtu.be/7k-nP38uHyQ?t=1851) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#entersoft) 
+* Azure Data Lake Storage Gen2-Connector (Beta) [[Video]](https://youtu.be/l7OMRUF9UYg?t=1203)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#azureDataLake) 
+* Dynamics 365 Customer Insights-Connector [[Video]](https://youtu.be/l7OMRUF9UYg?t=1250)   [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#customerInsights) 
 
 
 ### <a name="data-preparation"></a>Datenvorbereitung
-* Verbesserung von M Intellisense [[Video]](https://youtu.be/7k-nP38uHyQ?t=1866) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#intellisense) 
+* Neue Transformation: Spalte nach Position teilen [[Video]](https://youtu.be/l7OMRUF9UYg?t=1321)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#splitColumn) 
 
 
 > [!NOTE]
 > Sie können sich auch [alle für Power BI Desktop verfügbaren Datenquellen ansehen](desktop-data-sources.md). Die Liste wird ständig erweitert, daher sollten Sie sie in regelmäßigen Abständen konsultieren.
 
-Wünschen Sie weitere Informationen zu diesen Updates? Sehen Sie sich [diesen Blogbeitrag](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/) (in englischer Sprache) an, in dem Sie ausführliche Informationen zu den neuen Features finden (dies ist der gleiche Blogbeitrag, auf den in der obigen Liste verwiesen wird).
+Wünschen Sie weitere Informationen zu diesen Updates? Sehen Sie sich [diesen Blogbeitrag](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/) (in englischer Sprache) an, in dem Sie ausführliche Informationen zu den neuen Features finden (dies ist der gleiche Blogbeitrag, auf den in der obigen Liste verwiesen wird).
 
 
 Das folgende Video beschreibt und zeigt die einzelnen Updates. Sie finden das Video auch im Blogbeitrag.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7k-nP38uHyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/l7OMRUF9UYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!NOTE]
 > Weitere Informationen finden Sie auch unter [Neuheiten bei Power BI](service-whats-new.md) und [Neuigkeiten bei den mobilen Apps für Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).

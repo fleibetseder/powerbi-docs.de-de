@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/21/2019
 ms.author: mshenhav
-ms.openlocfilehash: bee60dd6f3254b049f2445e6e985c625933caf5b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 49ee06d544e409cadc6728d286cb841f5f4adec4
+ms.sourcegitcommit: acd9f8212c9b0c6d3d8c4d56bba3c285246f3122
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65565598"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68230258"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Durchsuchen von Berichten in den mobilen Power BI-Apps
 Gilt für:
@@ -32,78 +32,85 @@ Ein Power BI-Bericht ist eine interaktive Ansicht Ihrer Daten, und mit den darin
 ## <a name="open-a-power-bi-report-in-the-mobile-app"></a>Öffnen eines Power BI-Berichts in der mobilen App
 Power BI-Berichte werden abhängig von ihrer Herkunft an verschiedenen Stellen in der mobilen App gespeichert. Sie können sich in „Apps“, „Für mich freigegeben“, „Arbeitsbereiche“ (einschließlich „Mein Arbeitsbereich“) oder auf einem Berichtsserver befinden. Manchmal müssen Sie einen Bericht in einem entsprechenden Dashboard suchen, und manchmal sind Berichte aufgelistet.
 
-In Listen und Menüs finden Sie ein Symbol neben dem Berichtsnamen, hilft Ihnen zu verstehen, dass dieses Element aus einem Bericht ist. 
+In Listen und Menüs finden Sie ein Symbol neben einem Berichtsnamen, an dem Sie erkennen können, dass es sich bei diesem Element um einen Bericht handelt. 
 
-![Berichte im Arbeitsbereich](./media/mobile-reports-in-the-mobile-apps/reports-my-workspace.png) 
+![Berichte in meinem Arbeitsbereich](./media/mobile-reports-in-the-mobile-apps/reports-my-workspace.png) 
 
-Es gibt zwei Symbole für Berichte in Power BI Mobile apps:
+Es gibt zwei Symbole für Berichte in mobilen Power BI-Apps:
 
-* ![Berichtssymbol](./media/mobile-reports-in-the-mobile-apps/report-default-icon.png) Gibt an, einen Bericht, der wird im Querformat in der app angezeigt werden und wird genauso aussehen, wie sie im Browser dargestellt wird.
+* ![Berichtssymbol](./media/mobile-reports-in-the-mobile-apps/report-default-icon.png) Gibt einen Bericht an, der in der App in Querformat dargestellt wird und genauso aussieht, wie im Browser.
 
-* ![Symbol für smartphonebericht](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) Gibt an, einen Bericht, der mindestens ein Telefon optimierte Berichtsseite enthält, die im Hochformat angezeigt werden. 
+* ![Symbol für Smartphonebericht](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) Gibt einen Bericht an, der mindestens eine für Smartphones optimierte Berichtsseite enthält, die im Hochformat dargestellt wird. 
 
-Hinweis: Halten Sie Ihr Telefon im Querformat, erhalten immer das Layout mit Querformat, Sie auch, wenn die Berichtsseite smartphonelayout aufweist. 
+Hinweis: Wenn Sie Ihr Telefon im Querformat halten, wird immer das Querformat angezeigt, auch wenn die Berichtsseite ein Layout für Smartphones hat. 
 
-Um zu einem Bericht aus einem Dashboard erhalten möchten, tippen Sie auf die Auslassungspunkte (...) in der oberen rechten Ecke einer Kachel > **Bericht öffnen**.
+Um den Bericht von einem Dashboard abzurufen, tippen Sie auf die Auslassungspunkte (...) in der rechten oberen Ecke einer Kachel, und wählen Sie dann **Bericht öffnen** aus.
   
   ![Bericht öffnen](./media/mobile-reports-in-the-mobile-apps/power-bi-android-open-report-tile.png)
   
   Nicht alle Kacheln verfügen über eine Option zum Öffnen als Bericht. Beispielsweise werden für Kacheln, die durch Stellen einer Frage im Q&A-Feld erstellt wurden, keine Berichte geöffnet, wenn Sie auf die Kachel tippen. 
   
 ## <a name="interacting-with-reports"></a>Interagieren mit Berichten
-Nachdem Sie einen Bericht in der app geöffnet haben, können Sie damit arbeiten. Es gibt viele Dinge, die Sie mit dem Bericht und die Daten ausführen können. In der Fußzeile des Berichts finden Sie Aktionen, die Sie ausführen können, für den Bericht, und klicken Sie auf der und lang Tippen auf die Daten in den Bericht auch slice und den Daten arbeiten können.
+Nachdem Sie einen Bericht in der App geöffnet haben, können Sie mit diesem arbeiten. Mit Ihrem Bericht und den darin enthaltenen Daten haben Sie viele Möglichkeiten. In der Fußzeile des Berichts finden Sie Aktionen, die Sie mit dem Bericht durchführen können. Durch Antippen und langes Antippen der im Bericht angezeigten Daten können Sie die Daten auch aufteilen.
 
-### <a name="using-tap-and-long-tap"></a>Tippen Sie auf verwenden, und tippen Sie lang auf
-Tippen Sie auf eine Maus gleich klicken Sie auf. Daher sollten Sie den Bericht basierend auf einen Datenpunkt Hervorhebung, tippen Sie auf diesem Datenpunkt.
-Tippen auf einen Slicer-Wert, wird dieser Wert ausgewählt und der Rest des Berichts aufteilen, um diesen Wert. Tippen auf einen Link, werden Schaltfläche oder ein Lesezeichen basierend auf die vom Autor definierte Aktion aktiviert.
+### <a name="using-tap-and-long-tap"></a>Verwenden von Antippen und langem Antippen
+Tippen entspricht einem Mausklick. Wenn Sie den Bericht auf Grundlage eines Datenpunkts übergreifend hervorheben möchten, tippen Sie auf den Datenpunkt.
+Wenn Sie auf einen Datenschnittwert tippen, wird der Wert ausgewählt und für die restlichen Daten im Bericht wird anhand dieses Werts der Datenschnitt durchgeführt. Wenn Sie auf einen Link, eine Schaltfläche oder ein Lesezeichen tippen, wird dieser auf der Grundlage der vom Autor definierten Aktion aktiviert.
 
-Wahrscheinlich haben Sie bemerkt, dass wenn Sie auf ein visuelles Element tippen, wird ein Rahmen angezeigt. Auf der oberen rechten Ecke des Rahmens steht es mit den Auslassungspunkten (...). Tippen, wird ein Menü mit Aktionen angezeigt, die Sie auf das visuelle ausführen können.
+Wahrscheinlich haben Sie bemerkt, dass ein Rahmen angezeigt wird, wenn Sie auf ein Visual tippen. In der rechten oberen Ecke des Rahmens finden Sie Auslassungspunkte (...). Wenn Sie darauf tippen, wird ein Menü mit Aktionen angezeigt, die Sie in diesem Visual ausführen können.
 
-![berichtsvisuals und Menü](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
+![Berichtsvisual und Menü](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
-### <a name="tooltip-and-drill-actions"></a>QuickInfo und Drilldown-Aktionen
+### <a name="tooltip-and-drill-actions"></a>QuickInfo-und Drillaktionen
 
-Wenn Sie lange Tippen Sie auf (tippen und halten) einen Datenpunkt, eine QuickInfo wird angezeigt, präsentieren die Werte, die diesen Datenpunkt darstellt. 
+Wenn Sie einen Datenpunkt lange antippen (tippen und halten), erscheint eine QuickInfo mit den Werten, die dieser Datenpunkt repräsentiert. 
 
-![QuickInfo für Berichte](./media/mobile-reports-in-the-mobile-apps/report-tooltip.png)
+![QuickInfo im Bericht](./media/mobile-reports-in-the-mobile-apps/report-tooltip.png)
 
-Berichtsautoren können Hierarchien in den Daten und die Beziehungen zwischen den Seiten des Berichts definieren. Hierarchie können Drilldowns, einen Drilldown nach oben, und zeigen Sie Details zu einer anderen Berichtsseite aus einem visuellen Element und einen Wert. Wenn Sie lange auf einen Wert neben QuickInfo tippen werden also der relevanten drilloptionen zur Verfügung in der Fußzeile angezeigt. 
+Wenn der Berichtsautor die QuickInfo der Berichtsseite konfiguriert hat, wird die standardmäßige QuickInfo durch die QuickInfo der Berichtsseite ersetzt.
 
-![Drill berichtsaktionen](./media/mobile-reports-in-the-mobile-apps/report-drill-actions.png)
+![QuickInfo der Berichtsseite](./media/mobile-reports-in-the-mobile-apps/report-page-tooltip.png)
 
-Wenn Sie beim *Drillthrough* auf einen bestimmten Teil eines Visual tippen, gelangen Sie zu einer anderen Berichtsseite, die nach dem Wert gefiltert ist, auf den Sie getippt haben.  Der Autor eines Berichts kann mindestens eine Drillthroughoption festlegen, durch die Sie auf eine andere Seite weitergeleitet werden. In diesem Fall können Sie entscheiden, auf welche Seite Sie einen Drillthrough durchführen möchten. Schaltfläche "zurück" gelangen Sie zurück zur vorherigen Berichtseite.
+> [!NOTE]
+> Berichts-QuickInfos werden für Geräte mit einer Größe von mehr als 640 Pixel und 320 Viewports unterstützt. Wenn Ihr Gerät kleiner ist, verwendet die APP standardmäßig QuickInfos.
+
+Berichtsautoren können Hierarchien in den Daten und Beziehungen zwischen den Berichtsseiten definieren. Die Hierarchie ermöglicht den Drilldown, Drillup und Drillthrough durch eine andere Berichtsseite aus einem Visual und einem Wert. Wenn Sie also zusätzlich zur QuickInfo lange auf einen Wert tippen, werden in der Fußzeile die entsprechenden Drilloptionen angezeigt. 
+
+![Drillaktionen für Bericht](./media/mobile-reports-in-the-mobile-apps/report-drill-actions.png)
+
+Wenn Sie beim *Drillthrough* auf einen bestimmten Teil eines Visual tippen, gelangen Sie zu einer anderen Berichtsseite, die nach dem Wert gefiltert ist, auf den Sie getippt haben.  Der Autor eines Berichts kann mindestens eine Drillthroughoption festlegen, durch die Sie auf eine andere Seite weitergeleitet werden. In diesem Fall können Sie entscheiden, auf welche Seite Sie einen Drillthrough durchführen möchten. Über die Schaltfläche „Zurück“ gelangen Sie auf die vorherige Berichtsseite.
 
 Erfahren Sie, wie Sie [Drillthrough in Power BI Desktop verwenden](../../desktop-drillthrough.md).
    
    > [!IMPORTANT]
-   > In Power BI Mobile-app ist die Matrix- und tabellenvisuals Details über nur einen Zellenwert, und nicht von Spalten- und Zeilenüberschriften aktiviert.
+   > In der mobilen Power BI-App wird die Drillaktion in Matrix- und Tabellenvisuals nur durch einen Zellenwert und nicht durch Spalten- und Zeilenkopfzeilen aktiviert.
    
    
    
-### <a name="using-the-actions-in-the-report-footer"></a>Verwenden die Aktionen in der Fußzeile des Berichts
-Die Fußzeile des Berichts hat die Aktionen, die Sie ausführen können, auf die aktuelle Berichtsseite oder auf den gesamten Bericht. Die Fußzeile hat schnellen Zugriff auf die nützlichsten Aktionen aus, und alle Aktionen können über die Auslassungspunkte (...) zugegriffen werden.
+### <a name="using-the-actions-in-the-report-footer"></a>Verwenden der Aktionen in der Fußzeile des Berichts
+Die Berichtsfußzeile enthält Aktionen, die Sie auf der aktuellen Berichtsseite oder im gesamten Bericht ausführen können. Über die Fußzeile haben Sie schnellen Zugriff auf die nützlichsten Aktionen, und alle Aktionen können über die Auslassungspunkte (...) abgerufen werden.
 
-![Fußzeile des Berichts](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
+![Berichtsfußzeile](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
 
-Sind die Aktionen, die Sie anhand der Fußzeile ausführen können:
-1) Berichtsfilter zurücksetzen und übergreifende hervorheben Auswahl wieder auf den ursprünglichen Zustand.
-2) Öffnen Sie die Konversation Bereich zum Anzeigen oder Hinzufügen von Kommentaren für diesen Bericht.
-3) Öffnen Sie den Bereich "Filter" zum Anzeigen und ändern Sie den Filter, die derzeit für den Bericht angewendet.
-4) Listen Sie alle Seiten in diesem Bericht. Tippen Sie auf den Namen lädt und präsentieren dieser Seite.
-Verschieben zwischen den Berichtseiten kann durch Wischen von der Rand des Bildschirms, das Center erfolgen.
-5) Zeigen Sie alle Aktionen für den Bericht an.
+Folgende Aktionen können Sie in der Fußzeile ausführen:
+1) Zurücksetzen des Berichtsfilters und der übergreifenden Hervorhebungsauswahl in den ursprünglichen Zustand.
+2) Öffnen des Kommentarbereichs zum Anzeigen oder Hinzufügen von Berichten zu diesem Bericht.
+3) Öffnen des Filterbereich, um den derzeit auf den Bericht angewendeten Filter anzuzeigen und zu ändern.
+4) Auflisten aller Seiten in diesem Bericht. Wenn Sie auf den Seitennamen tippen, wird diese Seite geladen und angezeigt.
+Um zwischen den Berichtsseiten zu wechseln, können Sie vom Rand des Bildschirms in die Mitte wischen.
+5) Anzeigen aller Berichtsaktionen.
 
-#### <a name="all-report-actions"></a>Alle Aktionen für den Bericht
-Tippen auf der... Option in der Fußzeile des Berichts, gelangen alle Aktionen, die Sie für einen Bericht ausführen können. 
+#### <a name="all-report-actions"></a>Alle Berichtsaktionen
+Wenn Sie auf die Option .... in der Fußzeile des Berichts tippen, werden alle Aktionen angezeigt, die Sie für einen Bericht ausführen können. 
 
-![Alle berichtsaktionen](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)
+![Bericht Alle Aktionen](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)
 
-Einige der Aktionen kann deaktiviert werden, da sie bestimmte Berichtsfunktionen abhängig sind.
+Einige der Aktionen können deaktiviert sein, da sie von den spezifischen Berichtsfunktionen abhängig sind.
 Beispiel:
-1) **Nach dem aktuellen Standort filtern** ist aktiviert, wenn die Daten im Bericht vom Autor mit geografischen Daten kategorisiert wurde. [Erfahren Sie, wie zum Identifizieren von geografischer Daten in Ihrem Bericht](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
-2) **Überprüfung, um den Bericht von Barcode filtern** ist nur aktiviert, wenn das Dataset im Bericht als Barcode markiert wurde. [Wie Markieren von Barcodes in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes). 
-3) **Laden Sie** ist nur aktiviert, wenn Sie diesen Bericht für andere Benutzer freigeben dürfen. Sie haben eine Berechtigung nur dann, wenn Sie der Besitzer des Berichts sind, oder wenn Sie erneut freigeben Berechtigung vom Besitzer gegeben wurden.
-4) **Kommentieren und freigeben** möglicherweise deaktivieren, wenn es steht eine [-Schutzrichtlinie für Intune](https://docs.microsoft.com/intune/app-protection-policies) in Ihrer Organisation, die nicht zulässig in mobilen Power BI-app freigeben. 
+1) **Nach aktuellem Speicherort filtern** ist aktiviert, wenn die Daten in Ihrem Bericht vom Autor anhand geografischer Daten kategorisiert wurden. [In diesem Artikel erfahren Sie mehr darüber, wie Sie geografische Daten in Ihrem Bericht identifizieren](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
+2) **Der Scan zum Filtern des Berichts nach Barcode** ist nur aktiviert, wenn das Dataset in Ihrem Bericht als Barcode gekennzeichnet wurde. [Markieren eines Tags in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes). 
+3) **Einladen** ist nur aktiviert, wenn Sie über die Berechtigung verfügen, diesen Bericht für andere Benutzer freizugeben. Sie verfügen nur über diese Berechtigung, wenn Sie der Besitzer des Berichts sind oder wenn Sie vom Besitzer die Berechtigung zum erneuten Freigeben erhalten haben.
+4) **Kommentieren und freigeben** kann deaktiviert sein, wenn in Ihrer Organisation eine [Intune-Schutzrichtlinie](https://docs.microsoft.com/intune/app-protection-policies) vorhanden ist, die die Freigabe über eine mobile Power BI-App untersagt. 
 
 ## <a name="next-steps"></a>Nächste Schritte
 * [Anzeigen von und Interagieren mit Power BI-Berichten, die für das Smartphone optimiert sind](mobile-apps-view-phone-report.md)

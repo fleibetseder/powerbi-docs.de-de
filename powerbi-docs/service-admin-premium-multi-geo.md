@@ -10,14 +10,14 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 7735ce3d6d28f51ca95efbe12394c2e0cb2cba29
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: fcef4b7bc9feaee0912a8e0e9ea8098d52c66e3a
+ms.sourcegitcommit: 76fadf20c1e19ec43aa8f9c5a5e909b567419ef6
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65564942"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68289827"
 ---
-# <a name="configure-multi-geo-support-for-power-bi-premium"></a>Konfigurieren der Multi-Geo-Unterstützung für Power BI Premium
+# <a name="configure-multi-geo-support-for-power-bi-premium"></a>Konfigurieren von Multi-Geo-Unterstützung für Power BI Premium
 
 Multi-Geo ist ein Power BI Premium-Feature, das multinationale Kunden bei der Erfüllung von regionalen, branchenspezifischen oder organisationsbezogenen Data Residency-Anforderungen unterstützt. Als Power BI Premium-Kunde können Sie Inhalte für Rechenzentren in anderen Regionen als der ursprünglichen Region des Power BI-Mandanten bereitstellen. Eine geografische Region (Geografie) kann mehr als eine Region umfassen. Die USA sind z.B. eine geografische Region und „USA, Westen-Mitte“ und „USA, Süden-Mitte“ Regionen innerhalb der USA. Außerdem können Sie Inhalte für eine der folgenden geografischen Regionen bereitstellen:
 
@@ -68,7 +68,7 @@ Diese Elemente bleiben in der ursprünglichen Region des Mandanten:
 - Berechtigungen
 - Datasetanmeldeinformationen
 
-## <a name="view-capacity-regions"></a>Die Kapazität Regionen anzeigen
+## <a name="view-capacity-regions"></a>Anzeigen von Kapazitätsregionen
 
 Im Verwaltungsportal können Sie alle Kapazitäten für Ihren Power BI-Mandanten und die Regionen anzeigen, in denen sie sich aktuell befinden.
 
@@ -94,7 +94,7 @@ Sie haben zwei Möglichkeiten, Arbeitsbereiche aus der Multi-Geo-Kapazität zu e
 - Eine zwischengespeicherte Abfrage, die sich in einer weit entfernten Region befindet, verbleibt in dieser Region im Ruhezustand. Allerdings werden andere in Übertragung begriffene Daten möglicherweise zwischen mehreren geografischen Regionen hin und her verschoben.
 - Beim Verschieben von Daten aus einer Region in eine andere in einer Multi-Geo-Umgebung können die Quelldaten bis zu 30 Tage lang in der Region verbleiben, von der aus die Daten verschoben wurden. In diesem Zeitraum haben Benutzer keinen Zugriff auf diese. Nach Ablauf der 30 Tage werden sie aus dieser Region entfernt und gelöscht.
 - Multi-Geo führt in der Regel nicht zur Leistungssteigerung. Für das Laden von Berichten und Dashboards sind weiterhin Anforderungen an die ursprüngliche Region für Metadaten erforderlich.
-- Das [Dataflows](service-dataflows-overview.md)-Feature (Vorschauversion) wird aktuell für Multi-Geo nicht unterstützt.
+- Das [Dataflows](service-dataflows-overview.md)-Feature wird aktuell für Multi-Geo nicht unterstützt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

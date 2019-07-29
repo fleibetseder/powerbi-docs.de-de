@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 07/15/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: cc2c9cbc15240e3dc4d46c7f02ef0b0d82bb36f8
-ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.openlocfilehash: 55ffc166d5a42e850bc4e2dedf80de1c6b9f8634
+ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66823430"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68342144"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Vorherige monatliche Updates für Power BI Desktop
 
@@ -33,6 +33,90 @@ Bedeutung der Links neben den einzelnen Updates:
 Sie können das Video **Neueste Updates** auch direkt aus diesem Artikel von Beginn an ansehen. Hierzu klicken Sie einfach auf das Symbol **Wiedergeben** auf dem Videobild unter der Liste mit den Updates.
 
 In den folgenden Abschnitten werden die Updates von **Power BI Desktop** der vorherigen Monate beschrieben.
+
+
+## <a name="june-2019-update-2705494561"></a>Update Juni 2019 (2.70.5494.561)
+
+Das Juni-Update für Power BI Desktop bietet viele Verbesserungen. Dank des neuen Farbschemas können Sie Ihre Berichte jetzt mit schönen satten Farben noch kreativer gestalten. 
+
+Sie können jetzt [die neueste Version von Power BI Desktop herunterladen](https://powerbi.microsoft.com/desktop). Wenn Sie Windows 10 verwenden, erhalten Sie **Power BI Desktop** auch aus dem Windows Store. Die monatlichen Versionen sind identisch, auch wenn die Versionsnummerierung zwischen zwei Versionen abweichen kann, unabhängig davon, wie Sie **Power BI Desktop** installieren. Weitere Informationen finden Sie in [diesem Artikel](desktop-get-the-desktop.md). 
+
+Bedeutung der Links neben den einzelnen Updates:
+
+* **[Video]** -Ausschnitte werden auf einer neuen Browserregisterkarte wiedergegeben, wenn das Feature erläutert wird.
+* Einige Features werden in einem **[Artikel]** ausführlich erläutert.
+* Die meisten Features werden im **[Blog]** -Beitrag zum monatlichen Update erläutert.
+* Und schließlich sind einige der Features selbsterklärend, sodass sie keinen Artikel und kein Video erfordern.
+
+Sie können das Video **Neueste Updates** auch direkt aus diesem Artikel von Beginn an ansehen. Hierzu klicken Sie einfach auf das Symbol **Wiedergeben** auf dem Videobild unter der Liste mit den Updates.
+
+In diesem Monat bietet **Power BI Desktop** die folgenden Updates:
+
+### <a name="reporting"></a>Berichterstellung
+* Aktualisiertes Bereichsdesign [[Video]](https://youtu.be/7k-nP38uHyQ?t=8) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#panes) 
+* Filter auf Visualebene für Slicer [[Video]](https://youtu.be/7k-nP38uHyQ?t=116) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#slicerFilters)
+* Sortieren nach dem Bereich „Performance Analyzer“ [[Video]](https://youtu.be/7k-nP38uHyQ?t=237) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#perfAnalyzer)
+* Aktualisieren der Formatierungsoptionen für die bedingte Formatierung [[Video]](https://youtu.be/7k-nP38uHyQ?t=311) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#conditionalFormatting)
+* QuickInfos zu Visualheadern [[Video]](https://youtu.be/7k-nP38uHyQ?t=530) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#headerTooltips)
+* Anpassung der Bezeichnung von Tabellen- und Matrixvisuals [[Video]](https://youtu.be/7k-nP38uHyQ?t=722) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#totalLabels)
+* Synchronisieren der Slicerunterstützung für Hierarchieslicer [[Video]](https://youtu.be/7k-nP38uHyQ?t=859) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#syncSlicer)
+* Konsistente Schriftgrade für Visuals [[Video]](https://youtu.be/7k-nP38uHyQ?t=962) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#fontSizes)
+
+
+### <a name="analytics"></a>Analyse
+* Aktualisieren des Visuals „Wichtige Einflussfaktoren“ (Vorschauversion) [[Video]](https://youtu.be/7k-nP38uHyQ?t=1064) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#keyInfluencers) 
+    * Wichtige Einflussfaktoren mit Liveverbindung zu Power BI-Datasets
+    * Barrierefreiheit in Bezug auf wichtige Einflussfaktoren
+    * Unterstützung für Cloud-RLS
+* Barrierefreiheit in Bezug auf das Dialogfeld „Manage aggregations“ (Aggregationen verwalten) [[Video]](https://youtu.be/7k-nP38uHyQ?t=1213) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#aggregationsAccessibility) 
+
+### <a name="modeling"></a>Modellierung
+* Neue DAX-Vergleichsoperatoren: „==“ [[Video]](https://youtu.be/7k-nP38uHyQ?t=1267) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#dax) 
+
+
+### <a name="visuals"></a>Visuals
+* Personalisierter Visualisierungsbereich (Vorschauversion) [[Video]](https://youtu.be/7k-nP38uHyQ?t=1349) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#personalizedVizPane) 
+* Drei neue benutzerdefinierte Visuals und Updates [[Video]](https://youtu.be/7k-nP38uHyQ?t=1391) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#synopticVisual) 
+
+
+### <a name="data-connectivity"></a>Datenkonnektivität
+* Herstellen einer Verbindung mit freigegebenen und zertifizierten Datasets [[Video]](https://youtu.be/7k-nP38uHyQ?t=1739) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#sharedCertifiedDatasets) 
+* Der Common Data Service-Connector ist jetzt allgemein verfügbar [[Video]](https://youtu.be/7k-nP38uHyQ?t=1807) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#cds) 
+* Der Azure Data Explorer-Connector ist jetzt allgemein verfügbar [[Video]](https://youtu.be/7k-nP38uHyQ?t=1823) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#azureDataExplorer) 
+* Verbesserungen des Cosmos DB-Connectors [[Video]](https://youtu.be/7k-nP38uHyQ?t=1835) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#cosmosDB)
+* Entersoft-Datenconnector [[Video]](https://youtu.be/7k-nP38uHyQ?t=1851) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#entersoft) 
+
+
+### <a name="data-preparation"></a>Datenvorbereitung
+* Verbesserung von M Intellisense [[Video]](https://youtu.be/7k-nP38uHyQ?t=1866) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#intellisense) 
+
+
+> [!NOTE]
+> Sie können sich auch [alle für Power BI Desktop verfügbaren Datenquellen ansehen](desktop-data-sources.md). Die Liste wird ständig erweitert, daher sollten Sie sie in regelmäßigen Abständen konsultieren.
+
+Wünschen Sie weitere Informationen zu diesen Updates? Sehen Sie sich [diesen Blogbeitrag](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/) (in englischer Sprache) an, in dem Sie ausführliche Informationen zu den neuen Features finden (dies ist der gleiche Blogbeitrag, auf den in der obigen Liste verwiesen wird).
+
+
+Das folgende Video beschreibt und zeigt die einzelnen Updates. Sie finden das Video auch im Blogbeitrag.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7k-nP38uHyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+> [!NOTE]
+> Weitere Informationen finden Sie auch unter [Neuheiten bei Power BI](service-whats-new.md) und [Neuigkeiten bei den mobilen Apps für Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+Sie können auch frühere Versionen von Power BI Desktop herunterladen, wenn Ihre Organisation sie benötigt. Sie sollten stets die neueste Version von Power BI Desktop statt einer früheren Version verwenden. Alle früheren Versionen weisen die folgenden Einschränkungen auf:
+
+* Für frühere Versionen von Power BI Desktop wird kein Service geboten – Sie sollten immer die neueste Version verwenden, um die neuesten Features und Updates zu nutzen.
+* Möglicherweise können Sie in neueren Releases von Power BI Desktop erstellte oder gespeicherte Dateien mit früheren Versionen von Power BI Desktop nicht öffnen. 
+* Wenn Sie beim Laden eines Berichts, der in einer neueren Version von Power BI Desktop gespeichert wurde, eine Warnmeldung erhalten, und den Bericht dann in der vorherigen Version speichern, verlieren Sie alle mit den neuen Features in Zusammenhang stehenden Informationen.
+* Wir archivieren nur die englischen Versionen von Power BI Desktop.
+
+Wählen Sie die folgenden Links zum Herunterladen dieser früheren Version aus: 
+
+* [Version Mai 2019 von Power BI Desktop – 32-Bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-06.msi)
+* [Version Mai 2019 von Power BI Desktop – 64-Bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-06_x64.msi)
+
 
 ## <a name="may-2019-update-26954671251"></a>Update Mai 2019 (2.69.5467.1251)
 
@@ -130,7 +214,7 @@ Sie können das Video **Neueste Updates** auch direkt aus diesem Artikel von Beg
 In diesem Monat bietet **Power BI Desktop** die folgenden Updates:
 
 ### <a name="reporting"></a>Berichterstellung
-* Verbesserungen für den Filterbereich [[Video]](https://youtu.be/vih35kSrEHU?t=9) [[Artikel]](power-bi-report-filter-preview.md) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#filterPane) 
+* Verbesserungen für den Filterbereich [[Video]](https://youtu.be/vih35kSrEHU?t=9) [[Artikel]](power-bi-report-filter.md) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#filterPane) 
 * Bedingte Formatierung für visuelle Titel [[Video]](https://youtu.be/vih35kSrEHU?t=254) [[Artikel]](desktop-conditional-format-visual-titles.md) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dynamicTitles)
 * Bedingte Formatierung für Web-URL-Aktionen für Schaltflächen, Formen und Bilder [[Video]](https://youtu.be/vih35kSrEHU?t=439)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dynamicURLs)
 

@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 01/08/2018
+ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 6da5d89ae1ad3b98a879e4d99a10aa69224e1c46
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
+ms.openlocfilehash: 6dc530305634b44415ddccb9c42952c0bfbe2e5f
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383358"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271920"
 ---
 # <a name="use-resource-based-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Verwenden von Kerberos (ressourcenbasiert) für einmaliges Anmelden (SSO) über Power BI bei lokalen Datenquellen
 
@@ -23,7 +23,7 @@ Verwenden Sie die [ressourcenbasierte eingeschränkte Kerberos-Delegierung](/win
 
 ## <a name="preparing-for-resource-based-kerberos-constrained-delegation"></a>Vorbereiten für die ressourcenbasierte eingeschränkte Kerberos-Delegierung
 
-Für die ordnungsgemäße Funktion der eingeschränkten Kerberos-Delegierung müssen verschiedene Elemente konfiguriert werden, u.a. _Dienstprinzipalnamen_ (SPN) und Delegierungseinstellungen für Dienstkonten. 
+Für die ordnungsgemäße Funktion der eingeschränkten Kerberos-Delegierung müssen verschiedene Elemente konfiguriert werden, u.a. _Dienstprinzipalnamen_ (SPN) und Delegierungseinstellungen für Dienstkonten.
 
 ### <a name="prerequisite-1-operating-system-requirements"></a>Voraussetzung 1: Betriebssystemanforderungen
 
@@ -31,7 +31,7 @@ Die ressourcenbasierte eingeschränkte Delegierung kann nur auf einem Domänenco
 
 ### <a name="prerequisite-2-install-and-configure-the-on-premises-data-gateway"></a>Voraussetzung 2: Installieren und Konfigurieren des lokalen Datengateways
 
-Diese Version des lokalen Datengateways unterstützt das direkte Upgrade sowie die _Übernahme der Einstellungen_ von vorhandenen Gateways.
+Dieses lokale Datengateway unterstützt das direkte Upgrade sowie die _Übernahme der Einstellungen_ von vorhandenen Gateways.
 
 ### <a name="prerequisite-3-run-the-gateway-windows-service-as-a-domain-account"></a>Voraussetzung 3: Ausführen des Gateway-Windows-Diensts als Domänenkonto
 
@@ -39,7 +39,7 @@ In einer Standardinstallation wird das Gateway als Dienstkonto des lokalen Compu
 
 ![Domänenkonto](media/service-gateway-sso-kerberos-resource/domain-account.png)
 
-Zum Aktivieren der eingeschränkten Kerberos-Delegierung muss das Gateway als Domänenkonto ausgeführt werden, es sei denn, Ihr Azure AD ist bereits mit dem lokalen Active Directory synchronisiert (mit Azure AD DirSync/Connect). Wenn Sie das Konto auf ein Domänenkonto umstellen müssen, finden Sie weitere Informationen unter [Verwenden von Kerberos für SSO (Single Sign-On, Einmaliges Anmelden) von Power BI bei lokalen Datenquellen](service-gateway-sso-kerberos.md).
+Zum Aktivieren der eingeschränkten Kerberos-Delegierung muss das Gateway als Domänenkonto ausgeführt werden, es sei denn, Ihr Azure AD ist bereits mit dem lokalen Active Directory synchronisiert (mit Azure AD DirSync/Connect). Wenn Sie das Konto auf ein Domänenkonto umstellen müssen, finden Sie weitere Informationen unter [Ändern des Gatewaydienstkontos](/data-integration/gateway/service-gateway-service-account).
 
 Wenn Azure AD DirSync/Connect konfiguriert ist und Benutzerkonten synchronisiert werden, muss der Gatewaydienst zur Laufzeit keine lokalen AD-Suchvorgänge ausführen. Sie können die lokale Dienst-SID für den Gatewaydienst verwenden (statt ein Domänenkonto zu verlangen). Die in diesem Artikel beschriebenen Schritte für die Konfiguration der eingeschränkten Kerberos-Delegierung sind identisch mit den Schritten dieser Konfiguration (sie werden lediglich auf das Computerobjekt des Gateways in Active Directory angewendet und nicht auf das Domänenkonto).
 
@@ -51,9 +51,9 @@ Der Domänenadministrator kann anderen Personen zwar vorübergehend oder dauerha
 
 Um das System ordnungsgemäß zu konfigurieren, müssen die folgenden zwei Elemente konfiguriert bzw. überprüft werden:
 
-1. Konfigurieren Sie ggf. einen SPN für das Domänenkonto des Gatewaydiensts.
+* Konfigurieren Sie ggf. einen SPN für das Domänenkonto des Gatewaydiensts.
 
-1. Konfigurieren Sie Delegierungseinstellungen für das Domänenkonto des Gatewaydiensts.
+* Konfigurieren Sie Delegierungseinstellungen für das Domänenkonto des Gatewaydiensts.
 
 Beachten Sie, dass Sie zum Ausführen dieser beiden Konfigurationsschritte Domänenadministrator sein müssen.
 
@@ -69,7 +69,7 @@ Bestimmen Sie zunächst, ob bereits ein SPN für das Domänenkonto erstellt wurd
 
 1. Klicken Sie im Suchergebnis mit der rechten Maustaste auf das Gatewaydienstkonto, und wählen Sie **Eigenschaften** aus.
 
-1. Wenn im Dialogfeld **Eigenschaften** die Registerkarte **Delegierung** angezeigt wird, wurde bereits ein SPN erstellt, und Sie können mit dem nächsten Unterabschnitt zum Konfigurieren der Delegierungseinstellungen fortfahren.
+1. Wenn im Dialogfeld **Eigenschaften** die Registerkarte **Delegierung** angezeigt wird, wurde bereits ein SPN erstellt, und Sie können mit dem nächsten Unterabschnitt zum [Konfigurieren der Delegierungseinstellungen](#configure-delegation-settings) fortfahren.
 
     Ist im Dialogfeld **Eigenschaften** keine Registerkarte **Delegierung** vorhanden, können Sie manuell einen SPN für das Konto erstellen, wodurch die Registerkarte **Delegierung** hinzugefügt wird (mit dieser können Sie Delegierungseinstellungen am einfachsten konfigurieren). Sie können einen SPN mit dem [setspn-Tool](https://technet.microsoft.com/library/cc731241.aspx) von Windows erstellen (Sie benötigen Domänenadministratorrechte, um den SPN zu erstellen).
 
@@ -83,10 +83,10 @@ Bestimmen Sie zunächst, ob bereits ein SPN für das Domänenkonto erstellt wurd
 
 In den folgenden Schritten wird davon ausgegangen, dass Sie eine lokale Umgebung mit zwei Computern in verschiedenen Domänen besitzen: einem Gatewaycomputer und einem Datenbankserver, der SQL Server ausführt. In diesem Beispiel wird außerdem von folgenden Einstellungen und Namen ausgegangen:
 
-- Name des Gatewaycomputers: **PBIEgwTestGW**
-- Gatewaydienstkonto: **PBIEgwTestFrontEnd\GatewaySvc** (Kontoanzeigename: Gatewayconnector)
-- Computername der SQL Server-Datenquelle: **PBIEgwTestSQL**
-- Dienstkonto der SQL Server-Datenquelle: **PBIEgwTestBackEnd\SQLService**
+* Name des Gatewaycomputers: **PBIEgwTestGW**
+* Gatewaydienstkonto: **PBIEgwTestFrontEnd\GatewaySvc** (Kontoanzeigename: Gatewayconnector)
+* Computername der SQL Server-Datenquelle: **PBIEgwTestSQL**
+* Dienstkonto der SQL Server-Datenquelle: **PBIEgwTestBackEnd\SQLService**
 
 Für diese Beispielnamen und -einstellungen sind folgende Konfigurationsschritte auszuführen:
 
@@ -139,10 +139,10 @@ Diese Konfiguration funktioniert in den meisten Fällen. Bei Kerberos können je
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Weitere Informationen zum **lokalen Datengateway** und **DirectQuery** finden Sie in den folgenden Ressourcen:
+Weitere Informationen zum **lokalen Datengateway** und zu **DirectQuery** finden Sie in den folgenden Ressourcen:
 
-- [Lokales Datengateway](service-gateway-onprem.md)
-- [DirectQuery in Power BI](desktop-directquery-about.md)
-- [Von DirectQuery unterstützte Datenquellen](desktop-directquery-data-sources.md)
-- [DirectQuery und SAP BW](desktop-directquery-sap-bw.md)
-- [DirectQuery und SAP HANA](desktop-directquery-sap-hana.md)
+* [Was ist ein lokales Datengateway?](/data-integration/gateway/service-gateway-onprem.md)
+* [DirectQuery in Power BI](desktop-directquery-about.md)
+* [Von DirectQuery unterstützte Datenquellen](desktop-directquery-data-sources.md)
+* [DirectQuery und SAP BW](desktop-directquery-sap-bw.md)
+* [DirectQuery und SAP HANA](desktop-directquery-sap-hana.md)

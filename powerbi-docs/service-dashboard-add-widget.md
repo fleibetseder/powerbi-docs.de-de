@@ -119,7 +119,7 @@ Fügen oder geben Sie HTML-Inhalte ein.  Power BI fügt diese als Kachel Ihrem D
   src="https://www.youtube.com/embed/Cle_rKBpZ28" frameborder="0"
    allowfullscreen></iframe>
   ```
-* Dieser Code bindet einen Tweet ein und behält (separat auf dem Dashboard) Links zum **AFK**-Podcast, der **\@Twitter-Seite von @GuyInACube**, **Follow**, **#analytics**, **Reply**, **Retweet** und **Like** bei.  Wenn Sie die Kachel selbst auswählen, gelangen Sie zum Podcast auf Twitter.
+* Dieser Code bindet einen Tweet ein und behält (separat auf dem Dashboard) Links zum **AFK**-Podcast, der **\@Twitter-Seite von \@GuyInACube**, **Follow**, **#analytics**, **Reply**, **Retweet** und **Like** bei.  Wenn Sie die Kachel selbst auswählen, gelangen Sie zum Podcast auf Twitter.
   
   ```html
   <blockquote class="twitter-tweet" data-partner="tweetdeck">

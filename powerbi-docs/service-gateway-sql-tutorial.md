@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: tutorial
-ms.date: 05/03/2018
+ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 1c77c272bf5c03ce7df0a5173d194a4c0583ccf2
-ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
+ms.openlocfilehash: 54ef11b51fb02b6913b4d591967a140c5affc1b8
+ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67596635"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68307399"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Aktualisieren von Daten aus einer lokalen SQL Server-Datenbank
 
@@ -36,7 +36,7 @@ In diesem Tutorial führen Sie die folgenden Schritte aus:
 - Wenn Sie nicht bereits über ein Power BI-Abonnement verfügen, registrieren Sie sich zunächst für die [kostenlose Power BI-Testversion](https://app.powerbi.com/signupredirect?pbi_source=web).
 - [Installieren Sie Power BI Desktop](https://powerbi.microsoft.com/desktop/) auf einem lokalen Computer.
 - [Installieren Sie SQL Server](/sql/database-engine/install-windows/install-sql-server) auf einem lokalen Computer, und stellen Sie die [Beispieldatenbank aus einer Sicherung](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2017.bak) wieder her. Weitere Informationen zu AdventureWorks finden Sie unter [AdventureWorks installation and configuration (AdventureWorks-Installation und -Konfiguration)](/sql/samples/adventureworks-install-configure).
-- [Installieren Sie ein lokales Datengateway](service-gateway-install.md) auf demselben lokalen Computer, auf dem auch SQL Server installiert wurde (in der Produktionsumgebung würde es sich in der Regel um einen anderen Computer handeln).
+- [Installieren Sie ein lokales Datengateway](service-gateway-onprem.md) auf demselben lokalen Computer, auf dem auch SQL Server installiert wurde (in der Produktionsumgebung würde es sich in der Regel um einen anderen Computer handeln).
 
 > [!NOTE]
 > Wenn Sie kein Gatewayadministrator sind und ein Gateway nicht selbst installieren möchten, kontaktieren Sie einen Gatewayadministrator in Ihrem Unternehmen. Dieser kann die Datenquellendefinition erstellen, die für die Verbindung Ihres Datasets mit Ihrer SQL Server-Datenbank erforderlich ist.
@@ -202,6 +202,6 @@ Wenn Sie die Beispieldaten nicht mehr verwenden möchten, löschen Sie die Daten
 
 In diesem Tutorial haben Sie erfahren, wie Sie Daten aus einer lokalen SQL Server-Datenbank in ein Power BI-Dataset importieren und wie Sie dieses Dataset nach einem Zeitplan bzw. bedarfsgesteuert aktualisieren, um die Berichte und Dashboards, die dieses Dataset verwenden, in Power BI auf dem neusten Stand zu halten. Nun können Sie mehr über das Verwalten von Datengateways und Datenquellen in Power BI erfahren. Sie sollten auch den konzeptionellen Artikel „Aktualisieren von Daten in Power BI“ lesen.
 
-- [Verwalten eines lokalen Power BI-Gateways](service-gateway-manage.md)
+- [Verwalten eines lokalen Datengateways](/data-integration/gateway/service-gateway-manage)
 - [Verwalten der Datenquelle – Import/Geplante Aktualisierung](service-gateway-enterprise-manage-scheduled-refresh.md)
 - [Aktualisieren von Daten in Power BI](refresh-data.md)

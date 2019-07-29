@@ -7,23 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/02/2019
+ms.date: 06/19/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 68467894850248d6acb841dc2ed651f595f19b95
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: fa1311f93cd6b543d552070b990f1bada551a699
+ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61363673"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68306953"
 ---
 # <a name="use-the-numeric-range-slicer-in-power-bi-desktop"></a>Verwenden der Funktion „Datenschnitt für numerischen Bereich“ in Power BI Desktop
-Mit dem Feature **Datenschnitt für numerischen Bereich** können Sie numerischen Spalten eine Reihe an Filtern zuweisen. Sie können numerische Daten filtern, die **zwischen** Zahlen liegen oder deren Wert **kleiner als oder gleich** oder **größer als oder gleich** eine Zahl ist. Diese Filtermethode ist unkompliziert, aber leistungsstark.
+Mit dem Feature „Datenschnitt für numerischen Bereich“ können Sie numerischen Spalten eine Reihe an Filtern zuweisen. Sie haben drei Optionen zum Filtern von numerischen Daten: Daten, die zwischen Zahlen liegen oder deren Wert kleiner als oder gleich oder größer als oder gleich eine Zahl ist. Das mag einfach klingen, ist aber eine effiziente Möglichkeit, Ihre Daten zu filtern.
 
 ![Visual mit dem Datenschnitt für numerischen Bereich](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-0.png)
 
-## <a name="using-the-numeric-range-slicer"></a>Verwenden der Funktion „Datenschnitt für numerischen Bereich“
-Der Datenschnitt für numerische Bereiche funktioniert wie jeder andere Datenschnitt. Erstellen Sie einfach eine **Datenschnitt**-Visualisierung für einen Bericht, und legen Sie dann für **Feld** einen Wert fest. In der folgenden Abbildung ist das Feld *LineTotal* ausgewählt.
+## <a name="use-the-numeric-range-slicer"></a>Verwenden der Funktion „Datenschnitt für numerischen Bereich“
+Der Datenschnitt für numerische Bereiche funktioniert wie jeder andere Datenschnitt. Erstellen Sie einfach eine **Datenschnitt**-Visualisierung für einen Bericht, und legen Sie dann für **Feld** einen Wert fest. In der folgenden Abbildung ist das Feld **LineTotal** ausgewählt.
 
 ![Erstellen der Funktion „Datenschnitt für numerischen Bereich“](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-1-create.png)
 
@@ -31,15 +31,15 @@ Wählen Sie rechts oben im **Datenschnitt für numerischen Bereich** die Verknü
 
 ![Menü „Datenschnitt für numerischen Bereich“](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-2-between.png)
 
-Der numerische Bereich kann mithilfe von drei Bedingungen eingegrenzt werden:
+Für den numerischen Bereich können Sie eine der folgenden drei Optionen auswählen:
 
-* Zwischen
-* Kleiner als oder gleich
-* Größer als oder gleich
+* **Zwischen**
+* **Kleiner als oder gleich**
+* **Größer als oder gleich**
 
-Wenn Sie **zwischen** auswählen, wird ein Schieberegler angezeigt, mit dem Sie die Ober- und Untergrenze des Filters einstellen können. Statt den Schieberegler zu verwenden, können Sie die Werte auch über die Eingabefelder festlegen. Das ist besonders nützlich, wenn Sie den Datenschnitt bei bestimmten Zahlen ansetzen möchten, die sich mit dem Schieberegler nicht genau einstellen lassen.
+Wenn Sie im Menü **Zwischen** auswählen, wird ein Schieberegler angezeigt. Mit dem Schieberegler können Sie numerische Werte auswählen, die zwischen den Zahlen liegen. Manchmal ist es aufgrund der Granularität beim Bewegen der Datenschnittleiste schwierig, genau diese Zahl zu treffen. Sie können auch den Schieberegler verwenden und ein beliebiges Feld auswählen, um die gewünschten Werte einzugeben. Diese Option ist praktisch, wenn Sie den Datenschnitt für bestimmte Zahlen ausführen möchten. 
 
-In der folgenden Abbildung wird die Berichtsseite nach Werten zwischen 2500,00 und 6000,00 in der Spalte *LineTotal* gefiltert.
+In der folgenden Abbildung wird die Berichtsseite nach Werten zwischen 2500,00 und 6000,00 in der Spalte **LineTotal** gefiltert.
 
 ![Datenschnitt für numerischen Bereich mit Zwischenwerten](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-3-between-range.png)
 
@@ -47,26 +47,25 @@ Wenn Sie **Kleiner als oder gleich** auswählen, verschwindet der linke Ziehpunk
 
 ![Datenschnitt für numerischen Bereich mit „Kleiner als“](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-4-less-than.png)
 
-Wenn Sie **Größer als oder gleich** auswählen, verschwindet der rechte Ziehpunkt (für den höheren Wert), und der niedrigere Wert kann angepasst werden. Das sehen Sie in der nächsten Abbildung. Jetzt werden nur Elemente mit einem *LineTotal* größer als oder gleich 4902,99 in den Visuals auf der Berichtsseite angezeigt.
+Wenn Sie schließlich **Größer als oder gleich** auswählen, wird der rechte Schieberegler (höherer Wert) ausgeblendet. Anschließend können Sie den niedrigeren Wert anpassen, wie in der folgenden Abbildung dargestellt. Jetzt werden nur Elemente mit einem **LineTotal** größer als oder gleich 4902,99 in den Visuals auf der Berichtsseite angezeigt.
 
 ![Datenschnitt für numerischen Bereich mit „Größer als“](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-5-greater-than.png)
 
 ## <a name="snap-to-whole-numbers-with-the-numeric-range-slicer"></a>Ausrichten an ganzen Zahlen mit dem Datenschnitt für numerische Bereiche
 
-Ein Datenschnitt für den numerischen Bereich richtet sich an ganzen Zahlen aus, wenn der Datentyp des zugrunde liegenden Felds **Ganze Zahl** ist. Dadurch kann der Slicer ordnungsgemäß an ganzen Zahlen ausgerichtet werden. In Feldern vom Typ **Dezimalzahl** können Sie Bruchzahlen eingeben oder diese darin auswählen. Die im Textfeld angewendete Formatierung entspricht der im Feld festgelegten Formatierung, auch wenn Sie genauere Zahlen eingeben oder auswählen können.
+Ein Datenschnitt für den numerischen Bereich richtet sich an ganzen Zahlen aus, wenn der Datentyp des zugrunde liegenden Felds **Ganze Zahl** ist. Durch dieses Feature kann der Datenschnitt ordnungsgemäß an ganzen Zahlen ausgerichtet werden. In Feldern vom Typ **Dezimalzahl** können Sie Bruchzahlen eingeben oder diese darin auswählen. Die im Textfeld angewendete Formatierung entspricht der im Feld festgelegten Formatierung, auch wenn Sie genauere Zahlen eingeben oder auswählen können.
 
 ## <a name="display-formatting-with-the-date-range-slicer"></a>Anzeigen der Formatierung mit dem Datenschnitt für den Datumsbereich
 
-Bei Verwendung eines Datenschnitts zum Anzeigen oder Festlegen eines Datumsbereich, wird das Format des Datums basierend auf dem Gebietsschema des Browsers oder Betriebssystems des Benutzers immer im Format **Kurzes Datum** angezeigt. Dies ist das Anzeigeformat, und zwar unabhängig von der Einstellungen des Datentyps für die zugrunde liegenden Daten oder das zugrunde liegende Modell. 
+Wenn Sie einen Datenschnitt verwenden, um einen Datumsbereich anzuzeigen oder einzustellen, werden die Daten im Format **Kurzes Datum** angezeigt. Das Datumsformat wird durch den Browser oder das Gebietsschema des Betriebssystems des Benutzers festgelegt. Somit ist es das Anzeigeformat, unabhängig davon, welche Einstellungen der Datentyp für die zugrunde liegenden Daten oder das Modell vorgenommen hat. 
 
-Sie könnten beispielsweise für den zugrunde liegenden Datentyp über das Format „Langes Datum“ verfügen (wie z. B. *dddd, MMMM d, yyyy*, bei dem ein Datum in anderen Visuals oder unter anderen Bedingungen wie folgt formatiert würde: *Mittwoch, 14. März 2001*), im Datenschnitt für den Datumsbereich würde dieses Datum jedoch wie folgt dargestellt: *03/14/2001*.
+Sie könnten z.B. ein langes Datumsformat für den zugrunde liegenden Datentyp verwenden. In diesem Fall würde ein Datumsformat wie *dddddd, MMMM d, yyyyy* ein Datum in anderen Grafiken oder Umständen wie *Mittwoch, 14. März 2001* formatieren. Im Datenschnitt für Datumsbereiche wird dieses Datum im Datenschnitt als *03/14/2001* angezeigt.
 
 Durch das Anzeigen des Formats **Kurzes Datum** im Datenschnitt wird sichergestellt, dass die Länge der Zeichenfolge innerhalb des Datenschnitts konsistent und kompakt bleibt. 
 
-
 ## <a name="limitations-and-considerations"></a>Einschränkungen und Überlegungen
-Die folgenden Überlegungen und Einschränkungen betreffen derzeit das Feature **Datenschnitt für numerischen Bereich**:
+Die folgenden Überlegungen und Einschränkungen betreffen das Feature **Datenschnitt für numerischen Bereich**:
 
-* Die Funktion **Datenschnitt für numerischen Bereich** filtert derzeit jede zugrunde liegende Zeile in den Daten, keine aggregierten Werte. Beispiel: Wenn Sie das Feld *SalesAmount* verwenden, wird der Filter auf jede Transaktion angewandt, die auf *SalesAmount* basiert, nicht auf die *SalesAmount*-Summe für jeden Datenpunkt der Visualisierung.
+* Die Funktion **Datenschnitt für numerischen Bereich** filtert jede zugrunde liegende Zeile in den Daten, keine aggregierten Werte. Nehmen wir beispielsweise an, Sie verwenden das Feld *Betrag der Verkäufe*. Der Datenschnitt filtert dann jede Transaktion basierend auf dem Betrag der Verkäufe, nicht nach der Summe des Verkaufsbetrags für jeden Datenpunkt eines Visuals.
 * Das Feature funktioniert derzeit nicht bei Measures.
-* Sie können eine beliebige Zahl in die Textfelder eines numerischen Datenschnitts eingeben, auch wenn sie außerhalb des Wertebereichs der zugrunde liegenden Spalte liegt. So können Sie Filter einrichten, wenn Sie wissen, dass sich die Daten in Zukunft ändern können.
+* Sie können eine beliebige Zahl in die Textfelder eines numerischen Datenschnitts eingeben, auch wenn sie außerhalb des Wertebereichs der zugrunde liegenden Spalte liegt. Mit dieser Option können Sie Filter einrichten, wenn Sie wissen, dass sich die Daten in Zukunft ändern können.

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/30/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: a5f3f5003eb1d22b0667698691471150f04553d8
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b3fa7fd07a4c7f1992623871ed408b959582a125
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61196909"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270603"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Power BI-FAQ zur Hochverfügbarkeit und Notfallwiederherstellung sowie zu Failovers
 
@@ -65,7 +65,7 @@ Power BI-Dienstinstanzen werden wieder in der ursprünglichen Region ausgeführt
 Wenn die in Ihrer Organisation verwendete Power BI-Lösung eins der folgenden Elemente umfasst, müssen Sie Maßnahmen ergreifen, um die Hochverfügbarkeit der Lösung zu gewährleisten:
 
 - Wenn Ihre Organisation Power BI Premium verwendet, müssen Sie sicherstellen, dass die Premium-Kapazität an den Ladungsbedarf Ihrer Bereitstellung angepasst ist.  Das [Whitepaper zur Planung und Bereitstellung von Power BI Premium](https://aka.ms/Premium-Capacity-Planning-Deployment) und die [Power BI Premium Capacity Metrics-App](service-admin-premium-monitor-capacity.md) können Ihnen bei der Planung und beim Erfüllen der Anforderungen helfen. Es werden regelmäßig neue Hilfefeatures zur Metrics-Apps und dem Administratorportal in Power BI hinzugefügt.
-- Wenn Ihre Organisation über das lokale Power BI-Gateway auf lokale Datenquellen zugreift, müssen Sie dieses [wie in diesem Artikel beschrieben](service-gateway-high-availability-clusters.md) einrichten, um die Hochverfügbarkeit zu unterstützen. Egal, ob Sie Berichte im Importmodus aktualisieren oder über DirectQuery oder Live Connect auf Daten(modelle) zugreifen: Beachten Sie die in diesem Artikel aufgeführten Anweisungen.
+- Wenn Ihre Organisation über das lokale Datengateway auf lokale Datenquellen zugreift, müssen Sie dieses [wie in diesem Artikel beschrieben](/data-integration/gateway/service-gateway-high-availability-clusters) einrichten, um die Hochverfügbarkeit zu unterstützen. Egal, ob Sie Berichte im Importmodus aktualisieren oder über DirectQuery oder Live Connect auf Daten(modelle) zugreifen: Beachten Sie die in diesem Artikel aufgeführten Anweisungen.
 
 ## <a name="will-gateways-function-when-in-failover-mode"></a>Funktionieren Gateways im Failovermodus?
 
