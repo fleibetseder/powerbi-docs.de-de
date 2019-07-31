@@ -21,7 +21,7 @@ ms.locfileid: "61312494"
 Wenn Sie mehrere Tabellen importieren, werden Sie mit großer Wahrscheinlichkeit einige Analysen mit Daten aus allen diesen Tabellen durchführen. Beziehungen zwischen diesen Tabellen sind erforderlich, um die Ergebnisse genau zu berechnen und die richtigen Informationen in Ihren Berichten anzuzeigen. Mit Power BI Desktop können diese Beziehungen ganz leicht erstellt werden. Tatsächlich müssen Sie in den meisten Fällen keine weiteren Schritte unternehmen, da die AutoErmittlungsfunktion dies für Sie übernimmt. In einigen Fällen müssen Sie die Beziehungen jedoch möglicherweise selbst erstellen oder Änderungen an einer Beziehung vornehmen. In beiden Fällen ist es wichtig zu verstehen, wie Beziehungen in Power BI funktionieren und wie sie erstellt und bearbeitet werden.
 
 ## <a name="autodetect-during-load"></a>AutoErmittlung beim Laden
-Wenn Sie zwei oder mehrere Tabellen gleichzeitig abfragen und die Daten geladen werden, sucht Power BI Desktop nach Beziehungen und erstellt diese. Die Kardinalität, Kreuzfilterrichtungen und aktive Eigenschaften werden automatisch festgelegt. Power BI Desktop untersucht die Spaltennamen in den abgefragten Tabellen, um festzustellen, ob mögliche Beziehungen vorhanden sind. Wenn Beziehungen vorhanden sind, werden diese automatisch erstellt. Wenn Power BI Desktop nicht zuverlässig ermitteln kann, ob eine Übereinstimmung vorliegt, wird die Beziehung nicht automatisch erstellt. Über das Dialogfeld "Beziehungen verwalten" können Sie dann Beziehungen erstellen oder bearbeiten.	
+Wenn Sie zwei oder mehrere Tabellen gleichzeitig abfragen und die Daten geladen werden, sucht Power BI Desktop nach Beziehungen und erstellt diese. Die Kardinalität, Kreuzfilterrichtungen und aktive Eigenschaften werden automatisch festgelegt. Power BI Desktop untersucht die Spaltennamen in den abgefragten Tabellen, um festzustellen, ob mögliche Beziehungen vorhanden sind. Wenn Beziehungen vorhanden sind, werden diese automatisch erstellt. Wenn Power BI Desktop nicht zuverlässig ermitteln kann, ob eine Übereinstimmung vorliegt, wird die Beziehung nicht automatisch erstellt. Über das Dialogfeld "Beziehungen verwalten" können Sie dann Beziehungen erstellen oder bearbeiten.
 
 ## <a name="create-a-relationship-by-using-autodetect"></a>Erstellen einer Beziehung mit AutoErmittlung
 Klicken Sie auf der Registerkarte **Start** auf **Beziehungen verwalten**\>**AutoErmittlung**.
@@ -30,7 +30,6 @@ Klicken Sie auf der Registerkarte **Start** auf **Beziehungen verwalten**\>**Aut
 
 ## <a name="create-a-relationship-manually"></a>Manuelles Erstellen einer Beziehung
 1. Klicken Sie auf der Registerkarte **Start** auf **Beziehungen verwalten**\>**Neu**.
-2. In dem **Beziehung erstellen** Dialogfeld, in der Dropdown-Liste der ersten Tabelle, wählen Sie eine Tabelle und dann die Spalte, die Sie in der Beziehung verwenden möchten.
 2. Wählen Sie im Dialogfeld **Beziehung erstellen** in der ersten Tabelle der Dropdownliste eine Tabelle aus, und wählen Sie anschließend die Spalte aus, die Sie in der Beziehung verwenden möchten.
 3. Wählen Sie in der Dropdownliste der zweiten Tabelle die andere Tabelle aus, die in der Beziehung vorhanden sein soll, und wählen Sie die andere Spalte aus, die Sie verwenden möchten. Klicken Sie dann auf **OK**.
 
@@ -133,9 +132,9 @@ Wenn wir die Spalte „Projektname“ in der Tabelle „UnternehmenProjekt“ be
 
 ### <a name="to-create-the-new-relationship"></a>So erstellen Sie eine neue Beziehung
 1. Klicken Sie auf **Beziehungen verwalten**.
-2. Klicken Sie unter **Beziehungen verwalten** auf **Neu**, um das Dialogfeld **Beziehung erstellen** zu öffnen. Dort können wir die Tabellen, Spalten und alle zusätzlichen Einstellungen für die gewünschten Beziehung auswählen.
-3. Wählen Sie in der ersten Tabelle **ProjectHours** (Projektstunden) und dann die Spalte **Project** (Projekt) aus. Das ist die n-Seite („viele“) unserer Beziehung.
-4. Wählen Sie in der zweiten Tabelle **CompanyProject** (UnternehmenProjekt) und dann die Spalte **ProjName** (Projektname) aus. Dies ist die 1-Seite unserer Beziehung. 
+2. In **Beziehungen verwalten**, klicken Sie auf **neu** zum Öffnen der **Beziehung erstellen** Dialogfeld, in dem wir die Tabellen, Spalten und alle zusätzlichen Einstellungen, die für gewünschten auswählen können unsere die Beziehung.
+3. Wählen Sie in der ersten Tabelle **Projektstunden**und dann die Spalte **Projekt** aus. Das ist die n-Seite („viele“) unserer Beziehung.
+4. Wählen Sie in der zweiten Tabelle **UnternehmenProjekt**und dann die Spalte **Projektname** aus. Dies ist die 1-Seite unserer Beziehung. 
 5. Fahren Sie fort, und klicken Sie sowohl im Dialogfeld **Beziehung erstellen** als auch im Dialogfeld **Beziehungen verwalten** auf **OK** .
 
 ![](media/desktop-create-and-manage-relationships/candmrel_create_compproj.png)
