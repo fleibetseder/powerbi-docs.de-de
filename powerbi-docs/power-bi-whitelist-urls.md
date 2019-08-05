@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/22/2018
 ms.custom: seodec18
-ms.openlocfilehash: 07441bd0446e37353984efe97e435ac83d2c355d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 5b8cce3c62811509b5a2fa80bdde683c6278c7b2
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60978371"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68624165"
 ---
 # <a name="power-bi-urls-for-whitelisting"></a>Power BI-URLs zur Aufnahme in die Whitelist
 
@@ -38,7 +38,7 @@ Power BI ist auf die verschiedenen Endpunkte in den Office 365-Abschnitten zur A
 
 | Zeile | Zweck | Ziel(e) | Port(s) |
 | --- | --- | --- | --- |
-| 1 | **Erforderlich:** Authentifizierung und Identität | In der Office 365-Dokumentation finden Sie [allgemeine und Office Online-URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online).  | N/V |
+| 1 | **Erforderlich:** Authentifizierung und Identität | In der Office 365-Dokumentation finden Sie [allgemeine und Office Online-URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office).  | N/V |
 
 ## <a name="general-site-usage"></a>Allgemeine Verwendung der Website
 
@@ -47,7 +47,7 @@ Für die allgemeine Verwendung von Power BI müssen Sie eine Verbindung zu den i
 | Zeile | Zweck | Ziel(e) | Port(s) |
 | --- | --- | --- | --- |
 | 1 | **Erforderlich:** Back-End-APIs | *.analysis.windows.net | TCP 443 |
-| 2 | **Erforderlich:** Office 365-Integration | In der Office 365-Dokumentation finden Sie [allgemeine und Office Online-URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online). | N/V |
+| 2 | **Erforderlich:** Office 365-Integration | In der Office 365-Dokumentation finden Sie [allgemeine und Office Online-URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office). | N/V |
 | 3 | **Erforderlich:** Portal | app.powerbi.com | TCP 443 |
 | 4 | **Erforderlich:** Diensttelemetrie | dc.services.visualstudio.com | TCP 443 |
 | 5 | **Optional:** Informationsmeldungen | dynmsg.modpim.com | TCP 443 |
@@ -60,7 +60,7 @@ Zum Ausführen administrativer Funktionen in Power BI müssen Sie eine Verbindun
 
 | Zeile | Zweck | Ziel(e) | Port(s) |
 | --- | --- | --- | --- |
-| 1 | **Erforderlich:** Zum Verwalten von Benutzern und Anzeigen von Überwachungsprotokollen | In der Office 365-Dokumentation finden Sie [allgemeine und Office Online-URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online). | N/V |
+| 1 | **Erforderlich:** Zum Verwalten von Benutzern und Anzeigen von Überwachungsprotokollen | In der Office 365-Dokumentation finden Sie [allgemeine und Office Online-URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office). | N/V |
 | | | |
 
 ## <a name="getting-data"></a>Abrufen von Daten
@@ -82,10 +82,10 @@ Zur Unterstützung von Dashboards und Berichten ist Power BI auf bestimmte Endpu
 
 | Zeile | Zweck | Ziel(e) | Port(s) |
 | --- | --- | --- | --- |
-| 1 | **Erforderlich:** Excel-Integration | In der Office 365-Dokumentation finden Sie [allgemeine und Office Online-URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online). | N/V |
+| 1 | **Erforderlich:** Excel-Integration | In der Office 365-Dokumentation finden Sie [allgemeine und Office Online-URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office). | N/V |
 | | | |
 
-## <a name="custom-visuals"></a>Benutzerdefinierte visuelle Elemente
+## <a name="custom-visuals"></a>Benutzerdefinierte Visuals
 
 Power BI ist auf bestimmte Endpunkte angewiesen, um benutzerdefinierte Visuals anzeigen und darauf zugreifen zu können. Sie müssen eine Verbindung zu den Endpunkten in der Tabelle und den unten verknüpften Websites herstellen können.
 
@@ -94,7 +94,7 @@ Power BI ist auf bestimmte Endpunkte angewiesen, um benutzerdefinierte Visuals a
 | 1 | **Erforderlich:** Importieren eines benutzerdefinierten Visuals über die Marketplace-Schnittstelle oder aus einer Datei | *.azureedge.net <br> *.blob.core.windows.net <br> store.office.com | TCP 443 |
 | 2 | **Optional:** Bing Maps | bing.com <br> platform.bing.com <br> *.virtualearth.net | TCP 443 |
 | 3 | **Optional:** PowerApps | Weitere Informationen finden Sie im Abschnitt [Erforderliche Dienste](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) auf der Website mit den PowerApps-Systemanforderungen. | N/V |
-| 4 | **Optional:** Visio | In der Office 365-Dokumentation finden Sie [allgemeine und Office Online-URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) sowie [URLs von SharePoint Online und OneDrive for Business](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business). | N/V |
+| 4 | **Optional:** Visio | In der Office 365-Dokumentation finden Sie [allgemeine und Office Online-URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office) sowie [URLs von SharePoint Online und OneDrive for Business](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business). | N/V |
 | | | |
 
 ## <a name="related-external-sites"></a>Verwandte externe Websites

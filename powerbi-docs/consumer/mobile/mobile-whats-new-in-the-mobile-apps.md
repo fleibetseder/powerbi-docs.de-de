@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: 8600dce5012abb41c37b202dcc8eb204da11fa33
-ms.sourcegitcommit: acd9f8212c9b0c6d3d8c4d56bba3c285246f3122
+ms.openlocfilehash: a7e26fd96066ce35e7d61443a8d7c32c64011d5e
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68230209"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665437"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Neuigkeiten bei den mobilen Apps für Power BI
 Informationen zu verwandten Neuigkeiten finden Sie unter:
@@ -649,8 +649,6 @@ Lesen Sie den [Power BI-Mobile Apps-Blog für März 2016](https://powerbi.micros
 Zeigen Sie Dashboards [auf Android-Smartphones im Querformat an](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-phone). 
 
 #### <a name="power-bi-app-for-windows-10-devices"></a>Power BI-App für Windows 10-Geräte
-Zeigen Sie Dashboards [auf Windows 10 Smartphones im Querformat an](mobile-apps-view-dashboard.md#view-dashboards-on-your-windows-10-device).
-
 Zeigen Sie [Berichte auf Ihrem Windows 10 Smartphone an](mobile-reports-in-the-mobile-apps.md).
 
 Schnellere [Erkenntnisse zu Ihren Windows 10 Mobile-Dashboards](mobile-tiles-in-the-mobile-apps.md): Geben Sie eine Kachelmomentaufnahme frei, oder öffnen Sie einen Bericht direkt aus dem Dashboard.
