@@ -11,12 +11,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/24/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: cf640be131e1bffb571ad3c2ae2713dee1c4c0ca
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1d1371fa63af51f50a631739e4b2eed5550dc7ee
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66051289"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523318"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtern eines Berichts mithilfe von Abfragezeichenfolgenparametern in der URL
 
@@ -43,11 +43,11 @@ URL?filter=***Tabelle***/***Feld*** eq '***Wert***'
 
 ### <a name="reports-in-apps"></a>Berichte in Apps
 
-Wenn Sie einem Bericht in einer App einen URL-Filter hinzufügen möchten, sieht die Formatierung etwas anders aus. Für Links zu Berichten in einer App gibt es einen Abfrageparameter (ctid), der der URL hinzugefügt wird. Trennen Sie die Abfrageparameter durch ein kaufmännisches und-Zeichen (&). Behalten Sie "? Filter =" und verschiebt den Ctid-Parameter an das Ende der URL durch ein kaufmännisches und-Zeichen (&). 
+Wenn Sie einem Bericht in einer App einen URL-Filter hinzufügen möchten, sieht die Formatierung etwas anders aus. Für Links zu Berichten in einer App gibt es einen Abfrageparameter (ctid), der der URL hinzugefügt wird. Trennen Sie die Abfrageparameter durch ein kaufmännisches Und-Zeichen (&). Behalten Sie „?Filter=“ bei, und verschieben Sie den ctid-Parameter an das Ende der URL mit vorangestelltem kaufmännischen Und-Zeichen (&). 
 
 Sehen Sie sich dazu das folgende Beispiel an:
 
-App.powerbi.com/Groups/Me/Apps/*Anwendungs-Id*/reports/*Bericht-Id*/ReportSection? Filter =*Tabelle*/*Feld* EQ '*Wert*&'Ctid =*Ctid*
+app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter=*Table*/*Field* eq '*value*&'ctid=*ctid*
 
 ### <a name="field-types"></a>Feldtypen
 
@@ -83,7 +83,7 @@ Wenn Sie den Bericht filtern möchten, sodass nur Daten für Filialen in „NC�
 
 Der Bericht wird nach North Carolina gefiltert, und alle Visualisierungen auf der Berichtsseite zeigen nur noch Daten für North Carolina.
 
-![Bericht für North Carolina gefiltert](media/service-url-filters/power-bi-report4.png)
+![Bericht gefiltert nach North Carolina](media/service-url-filters/power-bi-report4.png)
 
 ## <a name="filter-on-multiple-fields"></a>Filtern nach mehreren Feldern
 
@@ -133,9 +133,9 @@ Ein Filter für Power BI-URLs kann Zahlen in den folgenden Formaten enthalten:
 
 ### <a name="date-data-types"></a>Date-Datentypen
 
-Power BI unterstützt OData V3 and V4 für **Date**- und **DateTimeOffset**-Datentypen.  Datumsangaben werden dargestellt, mit dem EDM-Format (2019-02-12T00:00:00), wenn Sie ein Datum als 'YYYY-MM-DD' angeben, Power BI als interpretiert ' YYYY-MM-DDT00:00:00 ".
+Power BI unterstützt OData V3 and V4 für **Date**- und **DateTimeOffset**-Datentypen.  Datumsangaben werden im EDM-Format (2019-02-12T00:00:00:00) dargestellt. Das heißt, wenn Sie ein Datum im Format „YYYYY-MM-DD“ angeben, interpretiert Power BI es als „YYYY-MM-DDT00:00:00“.
 
-Warum ist diese Unterscheidung wichtig? Angenommen, Sie erstellen einen Abfragezeichenfolgen-Parameter **Tabelle Datum/Gt "2018-08-03'** .  Ist der 3. August 2018 in den Ergebnissen enthalten oder wird mit dem 4. August 2018 begonnen? Da es sich bei Power BI die Abfrage übersetzt **Tabelle Datum/Gt "2018-08-03T00:00:00"** , umfassen Ihre Ergebnisse, die eine gewisse Zeitangabenteil aufweisen, da diese Datumsangaben größer wäre Datumsangaben **"2018-08-03T00:00:00"** .
+Warum ist diese Unterscheidung wichtig? Angenommen, Sie erstellen den Abfragezeichenfolgenparameter **Table/Date gt '2018-08-03'** .  Ist der 3. August 2018 in den Ergebnissen enthalten oder wird mit dem 4. August 2018 begonnen? Da Power BI Ihre Abfrage in **Table/Date gt '2018-08-03T00:00:00'** übersetzt, enthält Ihr Ergebnis alle Datumsangaben, die einen Uhrzeitteil enthalten, der größer als 0 ist, da diese dann größer als **'2018-08-03T00:00:00'** wären.
 
 ## <a name="special-characters-in-url-filters"></a>Sonderzeichen in URL-Filtern
 
@@ -177,7 +177,7 @@ Im Zusammenhang mit Abfragezeichenfolgenparametern müssen ein paar Dinge beacht
 
 * Wenn Sie den *in*-Operator verwenden, müssen die Werte auf der rechten Seite von *in* einer durch Trennzeichen getrennten Liste entsprechen, die in Klammern eingeschlossen ist.    
 * Sie können in Power BI-Berichtsserver [Berichtsparameter übergeben](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md), indem Sie sie in eine Berichts-URL einschließen. Diese URL-Parameter haben kein Präfix, da sie direkt an die Berichtsverarbeitungs-Engine übergeben werden.
-* Filtern mittels Abfragezeichenfolge funktioniert nicht mit [im Web veröffentlichen](service-publish-to-web.md) oder [PDF-Format exportieren](consumer/end-user-pdf.md).
+* Das Filtern mittels Abfragezeichenfolge kann nicht für [Im Web veröffentlichen](service-publish-to-web.md) oder [In PDF exportieren](consumer/end-user-pdf.md) verwendet werden.
 * Das [Einbetten mit dem Berichts-Webpart in SharePoint Online](service-embed-report-spo.md) unterstützt keine URL-Filter.
 * Der Datentyp „long“ ist aufgrund von Beschränkungen bei JavaScript (2^53–1).
 * Berichts-URL-Filter verfügen über eine Einschränkung von zehn Ausdrücken (zehn Filter die per AND verbunden sind).

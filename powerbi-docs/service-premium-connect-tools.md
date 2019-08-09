@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/18/2019
+ms.date: 07/24/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 48513ea163847ee3bf1df07151e9985c5bce9656
-ms.sourcegitcommit: 5f22dcda8885d840b7da344d38e89329d02b14fb
+ms.openlocfilehash: 4c39cf5a60786f7cc1748155ce7004254d40ad00
+ms.sourcegitcommit: ebac79f8c2871d4a7e54c1e99ce6d2409345b060
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67235075"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68475631"
 ---
 # <a name="connect-to-datasets-with-client-applications-and-tools-preview"></a>Herstellen einer Verbindung zu Datasets mit Clientanwendungen und Tools (Vorschau)
 
-Power BI Premium-Arbeitsbereiche und Datasets unterstützen *schreibgeschützte* Verbindungen von Clientanwendungen und Tools von Microsoft und Drittanbietern. 
+Power BI Premium-Arbeitsbereiche und Datasets unterstützen *schreibgeschützte* Verbindungen von Clientanwendungen und Tools von Microsoft und Drittanbietern. Verbindungen sind standardmäßig aktiviert.
 
 > [!NOTE]
 > Dieser Artikel verfolgt nur das Ziel einer Einführung in schreibgeschützte Verbindungen mit Power BI Premium-Arbeitsbereichen und Datasets. Er verfolgt *nicht* die Absicht, tiefgreifende Informationen zu Programmierbarkeit, spezifischen Tools und Anwendungen, Architektur und zur Verwaltung von Arbeitsbereichen und Datasets zur Verfügung zu stellen. Die hier beschriebenen Themen erfordern eine solide Kenntnis in Architektur und Verwaltung der Analysis Services-Tabellenmodelldatenbank.
@@ -104,6 +104,10 @@ Die folgenden Datasets werden im Power BI-Dienst nicht unterstützt:
 ### <a name="roles-and-role-memberships"></a>Rollen und Rollenmitgliedschaften
 
 Derzeit sind Modellrollen und Rollenmitgliedschaften durch die Verwendung von XMLA-Endpunkten nicht erkennbar oder sichtbar.
+
+## <a name="disable-connectivity"></a>Deaktivieren der Konnektivität
+
+Die XMLA-Endpunktkonnektivität ist für die Datasets-Workload standardmäßig aktiviert. Sie können die Konnektivität unter den [Workloadeinstellungen](service-admin-premium-workloads.md#workload-settings) deaktivieren.
 
 ## <a name="audit-logs"></a>Überwachungsprotokolle 
 

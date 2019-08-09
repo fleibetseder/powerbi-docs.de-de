@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: da5a36454e52891df7906b444b29b4df2db44d7f
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: b9c308e0593ac207e323df5b78619f0279f95594
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721192"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523435"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Einführung in organisationsbezogene Inhaltspakete in Power BI
 > [!NOTE]
@@ -50,24 +50,24 @@ Der Lebenszyklus sieht etwa wie folgt aus:
 1. Nate erstellt in Power BI Pro ein Inhaltspaket und veröffentlicht es für die Verteilergruppe „Marketing“. Die Einstellungen für die Aktualisierung werden mit dem Dataset geerbt und können nur von Nate geändert werden.
    
    > [!NOTE]
-   > Hinweis: Wenn Nate das Inhaltspaket von einem [Power BI-App-Arbeitsbereich](service-create-distribute-apps.md) aus erstellt, dem er angehört, können andere Mitglieder dieses Power BI-Arbeitsbereichs Besitzer des Inhaltspakets werden, wenn Nate den Arbeitsbereich verlässt.
+   > Wenn Nate das Inhaltspaket von einem [Power BI-App-Arbeitsbereich](service-create-distribute-apps.md) aus erstellt, dem Nate angehört, können andere Mitglieder dieses Power BI-Arbeitsbereichs auch dann Besitzer des Inhaltspakets werden, wenn Nate den Arbeitsbereich verlässt.
    > 
    > 
 2. Nate sendet eine E-Mail an die Verteilergruppe, in der er Informationen über das neue Inhaltspaket mitteilt.
-3. In Power BI Pro sucht Jane, ein Mitglied der Verteilergruppe „Marketing“, nach diesem Inhaltspaket und stellt eine Verbindung mit dem Inhaltspaket in AppSource her. Sie verfügt jetzt über eine schreibgeschützte Kopie.  Sie weiß, dass es sich um eine schreibgeschützte Kopie handelt, da im linken Navigationsbereich links neben dem Dashboard- und Berichtsnamen ein Freigabesymbol angezeigt wird. Und wenn Jana das Dashboard auswählt, weist ein Schlosssymbol darauf hin, dass sie sich das Dashboard eines Inhaltspakets ansieht. 
-4. Angenommen, sie entschließt sich, es anzupassen. Sie verfügt jetzt über ihre eigene Kopie des Dashboards und der Berichte. Ihre Arbeit wirkt sich nicht auf die Quelle, das ursprüngliche Inhaltspaket oder auf andere Mitglieder der Verteilergruppe aus. Sie arbeitet jetzt an ihrer eigenen Kopie von Dashboard und Bericht.
+3. In Power BI Pro sucht Jane, ein Mitglied der Verteilergruppe „Marketing“, nach einem Inhaltspaket und stellt eine Verbindung mit dem Inhaltspaket in AppSource her. Jane verfügt jetzt über eine schreibgeschützte Kopie. Jane weiß, dass es sich um eine schreibgeschützte Kopie handelt, da im linken Navigationsbereich links neben dem Dashboard- und Berichtsnamen ein Freigabesymbol angezeigt wird. Und wenn Jane das Dashboard auswählt, weist ein Schlosssymbol darauf hin, dass sie sich das Dashboard eines Inhaltspakets ansieht. 
+4. Angenommen, Jane entschließt sich, es anzupassen. Jane verfügt jetzt über ihre eigene Kopie des Dashboards und der Berichte. Janes Arbeit wirkt sich nicht auf die Quelle, das ursprüngliche Inhaltspaket oder auf andere Mitglieder der Verteilergruppe aus. Sie arbeiten jetzt jeweils an ihrer eigenen Kopie von Dashboard und Bericht.
 5. Nate nimmt Aktualisierungen am Dashboard vor. Sobald es fertig ist, veröffentlicht er eine neue Version des Inhaltspakets.
    
-   * Julio, Mitglied einer anderen Verteilergruppe, hat das ursprüngliche Inhaltspaket nicht angepasst. Die neuen Änderungen werden automatisch auf seine Version des Inhaltspakets angewendet.  
-   * Jane hat das Inhaltspaket angepasst. Sie erhält eine Benachrichtigung, dass es eine neue Version gibt.  Sie kann zu AppSource navigieren und das aktualisierte Inhaltspaket abrufen, ohne dass ihre personalisierte Version verloren geht. Sie verfügt jetzt über zwei Versionen: ihre personalisierte Version und das aktualisierte Inhaltspaket.
+   * Julio, Mitglied einer anderen Verteilergruppe, hat das ursprüngliche Inhaltspaket nicht angepasst. Die neuen Änderungen werden automatisch auf Janes Version des Inhaltspakets angewendet.  
+   * Jane hat das Inhaltspaket angepasst. Jane erhält dann eine Benachrichtigung, dass es eine neue Version gibt.  Jane kann zu AppSource navigieren und das aktualisierte Inhaltspaket abrufen, ohne dass ihre personalisierte Version verloren geht. Jane verfügen jetzt über zwei Versionen: die personalisierte Version und das aktualisierte Inhaltspaket.
 6. Angenommen, Nate ändert die Sicherheitseinstellungen. Julio und Jane haben keinen Zugriff mehr auf den Inhalt. Oder sie wurden aus der Verteilergruppe „Marketing“ entfernt.
    
    * Julio hat das ursprüngliche Inhaltspaket nicht angepasst, weshalb der Inhalt automatisch entfernt wird. 
-   * Jane hat das Inhaltspaket angepasst. Wenn sie das Dashboard das nächste Mal öffnet, sind alle Kacheln aus dem ursprünglichen Inhaltspaket nicht mehr da, doch die Kacheln, die sie aus anderen Berichten (die sie weiter verwenden darf) angeheftet hat, werden weiterhin angezeigt. Die zugehörigen Berichte und das Dataset sind nicht mehr verfügbar (und werden nicht in ihrem linken Navigationsbereich angezeigt).
+   * Jane hat das Inhaltspaket angepasst. Wenn Jane das Dashboard das nächste Mal öffnet, sind alle Kacheln aus dem ursprünglichen Inhaltspaket nicht mehr da, doch die Kacheln, die sie aus anderen Berichten (die Jane weiter verwenden darf) angeheftet hat, werden weiterhin angezeigt. Die zugehörigen Berichte und das Dataset sind nicht mehr verfügbar (und werden nicht in ihrem linken Navigationsbereich angezeigt).
 7. Oder Nate löscht das Inhaltspaket.
    
    * Julio hat das ursprüngliche Inhaltspaket nicht angepasst, weshalb der Inhalt automatisch entfernt wird. 
-   * Jane hat das Inhaltspaket angepasst. Wenn sie das Dashboard das nächste Mal öffnet, sind alle Kacheln aus dem ursprünglichen Inhaltspaket nicht mehr da, doch die Kacheln, die sie aus anderen Berichten angeheftet hat, werden weiterhin angezeigt. Die zugehörigen Berichte und das Dataset sind nicht mehr verfügbar (und werden nicht in ihrem linken Navigationsbereich angezeigt).
+   * Jane hat das Inhaltspaket angepasst. Wenn Jane das Dashboard das nächste Mal öffnet, sind alle Kacheln aus dem ursprünglichen Inhaltspaket nicht mehr da, doch die Kacheln, die sie aus anderen Berichten angeheftet hat, werden weiterhin angezeigt. Die zugehörigen Berichte und das Dataset sind nicht mehr verfügbar (und werden nicht in ihrem linken Navigationsbereich angezeigt).
 
 ## <a name="data-security"></a>Datensicherheit
 Alle Mitglieder der Verteilergruppe verfügen über dieselben Berechtigungen für die Daten wie der Ersteller des Inhaltspakets. Die einzige Ausnahme hierbei sind lokale tabellarische SSAS (SQL Server Analysis Services)-Datasets. Da die Berichte und Dashboards eine Liveverbindung mit dem lokalen SSAS-Modell herstellen, wird anhand der Anmeldeinformationen der einzelnen Verteilergruppenmitglieder bestimmt, auf welche Daten das jeweilige Mitglied zugreifen darf.

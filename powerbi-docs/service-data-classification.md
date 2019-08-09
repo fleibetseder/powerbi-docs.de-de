@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: amac
 LocalizationGroup: Dashboards
-ms.openlocfilehash: b7d9bdf0982ea7ad4f57225e5a1eaf8c9da90b50
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: e687c72ae058f56ca4f528783c5e2326d82db6bb
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61139608"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523152"
 ---
 # <a name="dashboard-data-classification"></a>Datenklassifizierung für Dashboards
 Für jedes Dashboard bestehen andere Anforderungen. Je nach der Datenquelle, mit der Sie eine Verbindung herstellen, werden Sie wahrscheinlich feststellen, dass Sie und die Kollegen, für die Sie das Dashboard freigeben, abhängig von der Vertraulichkeit der Daten verschiedene Vorsichtsmaßnahmen treffen müssen. Einige Dashboards sollten niemals außerhalb Ihres Unternehmens freigegeben oder gedruckt werden, während andere ohne Bedenken freigegeben werden können. Mithilfe der Datenklassifizierung für Dashboards können Sie den Personen, von denen die Dashboards angezeigt werden, die Bestimmung der zu verwendenden Sicherheitsstufe erleichtern. Sie können die Dashboards mit Klassifizierungstags versehen, die von der IT-Abteilung Ihres Unternehmens definiert wurden, damit jede Person, die den Inhalt anzeigt, den gleichen Kenntnisstand hinsichtlich der Vertraulichkeit der Daten hat.
@@ -45,7 +45,7 @@ Administratoren können auch eine URL für ein Tag festlegen, um zusätzliche In
 ## <a name="setting-a-dashboards-classification"></a>Festlegen der Klassifizierung eines Dashboards
 Wenn Datenklassifizierung für Ihr Unternehmen aktiviert ist, verfügen alle Dashboards zunächst über einen Standardklassifizierungstyp. Als Eigentümer eines Dashboards können Sie jedoch die Klassifizierung ändern, damit sie mit der Sicherheitsstufe des Dashboards übereinstimmt.
 
-Gehen Sie wie folgt vor, um den Klassifizierungstyp zu ändern.
+Gehen Sie wie folgt vor, um den Klassifizierungstyp zu ändern:
 
 1. Klicken Sie auf die **Auslassungspunkte** neben dem Dashboardnamen, und wählen Sie **Einstellungen** aus, um die Dashboardeinstellungen zu öffnen.
    
@@ -58,7 +58,7 @@ Gehen Sie wie folgt vor, um den Klassifizierungstyp zu ändern.
 Nachdem Sie die Änderung angewendet haben, wird die Aktualisierung für jede Person, für die Sie das Dashboard freigegeben haben, beim nächsten Laden des Dashboards angezeigt.
 
 ## <a name="working-with-data-classification-tags-as-an-admin"></a>Arbeiten als Administrator mit Datenklassifizierungstags
-Die Datenklassifizierung wird vom globalen Administrator für die Organisation eingerichtet. Gehen Sie wie folgt vor, um die Datenklassifizierung zu aktivieren.
+Die Datenklassifizierung wird vom globalen Administrator für die Organisation eingerichtet. Gehen Sie wie folgt vor, um die Datenklassifizierung zu aktivieren:
 
 1. Klicke Sie auf das Zahnradsymbol für die Einstellungen, und wählen Sie **Verwaltungsportal** aus.
    
@@ -79,7 +79,7 @@ Nachdem Sie im Formular die Klassifizierungstypen festgelegt haben, wählen Sie 
 
 ![](media/service-data-classification/filled_in_classification_form.png)
 
-Jetzt wird allen Dashboards die Standardklassifizierung zugewiesen, und Eigentümer von Dashboards können den Klassifizierungstyp auf den für den Inhalt geeigneten Klassifizierungstyp aktualisieren. Sie können in Zukunft an diese Stelle zurückkehren, um Klassifizierungstypen hinzuzufügen oder zu entfernen oder den Standardtyp zu ändern.  
+An diesem Punkt wird allen Dashboards die Standardklassifizierung zugewiesen. Dashboardbesitzer können nun den Klassifizierungstyp auf den für ihren Inhalt geeigneten Klassifizierungstyp aktualisieren. Sie können in Zukunft an diese Stelle zurückkehren, um Klassifizierungstypen hinzuzufügen oder zu entfernen oder den Standardtyp zu ändern.  
 
 > [!NOTE]
 > Wenn Sie zurückkehren, um Änderungen vorzunehmen, sind einige wichtige Punkte zu beachten:

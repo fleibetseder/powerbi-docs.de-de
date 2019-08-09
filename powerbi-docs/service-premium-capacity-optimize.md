@@ -1,6 +1,6 @@
 ---
 title: Optimieren von Microsoft Power BI Premium-Kapazitäten
-description: Beschreibt Optimierungsstrategien für die für Power BI Premium-Kapazitäten.
+description: Beschreibt Optimierungsstrategien für Power BI Premium-Kapazitäten.
 author: mgblythe
 ms.author: mblythe
 manager: kfile
@@ -11,260 +11,262 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 06712b6bcf57ca84ec03d2c7b99b32ea61ad8c71
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 9f5357056c27d6461ad7f7d7fba1daa27a508868
+ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65565329"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68391143"
 ---
-# <a name="optimizing-premium-capacities"></a>Optimieren der Premium-Kapazitäten
+# <a name="optimizing-premium-capacities"></a>Optimieren von Premium-Kapazitäten
 
-Beim Premium-Kapazität Leistungsprobleme auftreten, werden eine gängige Methode für die erste Optimierung oder optimieren Ihre Lösungen zum Wiederherstellen von zulässigen Antwortzeiten. Der Grund, um zu vermeiden, erwerben zusätzlichen Premium-Kapazität, es sei denn, im Blocksatz ausgerichtet werden.
+Wenn Leistungsprobleme bei Premium-Kapazitäten auftreten, ist der erste Ansatz häufig, Ihre Lösungen zu optimieren oder anzupassen, um wieder akzeptable Reaktionszeiten zu erzielen. Der Grund dafür ist, dass ein Erwerb zusätzlicher Premium-Kapazität zunächst vermieden werden soll, solange dies nicht gerechtfertigt ist.
 
-Wenn zusätzlicher Premium-Kapazität erforderlich ist, stehen Ihnen zwei Optionen, die in diesem Artikel beschrieben:
+Wenn zusätzliche Premium-Kapazität benötigt wird, gibt es zwei Möglichkeiten, die in diesem Artikel beschrieben werden:
 
-- Zentrales hochskalieren einer vorhandenen Premium-Kapazität
-- Hinzufügen einer neuen Premium-Kapazität
+- Zentrales Hochskalieren vorhandener Premium-Kapazität
+- Hinzufügen neuer Premium-Kapazität
 
-Schließlich testen Ansätze und Premium-Kapazitäten, schließen Sie in diesem Artikel.
+Am Ende dieses Artikels werden noch Testansätze und die Dimensionierung der Premium-Kapazität beschrieben.
 
 ## <a name="best-practices"></a>Bewährte Methoden
 
-Beim Versuch, die optimale Auslastung und Leistung zu erhalten, gibt es einige empfohlenen bewährten Methoden, einschließlich:
+Für Ihr Vorhaben, die bestmögliche Nutzung und Leistung zu erzielen, werden einige bewährte Methoden empfohlen. Dazu gehören:
 
-- Verwenden app-Arbeitsbereiche, anstelle der persönlichen Arbeitsbereiche.
-- Trennen geschäftskritische und Self-Service-BI (SSBI) direkt in verschiedenen Kapazitäten an.
+- Verwenden von App-Arbeitsbereichen anstelle persönlicher Arbeitsbereiche
+- Trennen von unternehmenskritischer und Self-Service-BI (SSBI) in verschiedene Kapazitäten
 
-  ![Aufteilen von unternehmenskritisch und Self-Service-BI in verschiedenen Kapazitäten](media/service-premium-capacity-optimize/separate-capacities.png)
+  ![Trennen von unternehmenskritischer und Self-Service-BI in verschiedene Kapazitäten](media/service-premium-capacity-optimize/separate-capacities.png)
 
-- Wenn die Freigabe von Inhalten nur mit Power BI Pro-Benutzer möglicherweise nicht erforderlich, um den Inhalt in einer dedizierten Kapazität zu speichern.
-- Verwenden Sie dedizierte Kapazität, bei der Suche um eine bestimmte Aktualisierungszeit zu erreichen, oder wenn bestimmte Features erforderlich sind. Z. B. mit großen Datasets oder paginierten reporting.
+- Wenn Inhalte nur für Power BI Pro-Benutzer freigegeben werden, ist es möglicherweise nicht erforderlich, den Inhalt in einer dedizierten Kapazität zu speichern.
+- Verwenden Sie dedizierte Kapazitäten, wenn Sie eine bestimmte Aktualisierungszeit erreichen möchten oder wenn bestimmte Features erforderlich sind, z.B. bei großen Datasets oder paginierten Berichten.
 
-### <a name="addressing-common-questions"></a>Allgemeine Fragen
+### <a name="addressing-common-questions"></a>Häufig gestellte Fragen
 
-Optimieren der Power BI Premium-Bereitstellungen ist ein komplexes Thema, die einen Überblick über die für die arbeitsauslastung verfügbaren Ressourcen und deren effektive Verwendung betreffen.
+Die Optimierung von Power BI Premium-Bereitstellungen ist ein komplexes Thema, das Kenntnisse über Workloadanforderungen, verfügbare Ressourcen und deren effektive Nutzung umfasst.
 
-Dieser Artikel enthält sieben häufig gestellte Fragen, beschreiben mögliche Probleme und Beschreibungen und Informationen zum Identifizieren und beheben Sie diese.
+In diesem Artikel werden sieben häufig gestellte Supportfragen behandelt, wobei mögliche Probleme und Erklärungen genannt sowie Informationen zu deren Erkennung und Lösung gegeben werden.
 
-### <a name="why-is-the-capacity-slow-and-what-can-i-do"></a>Warum ist die Kapazität, die langsam, und was kann ich tun?
+### <a name="why-is-the-capacity-slow-and-what-can-i-do"></a>Warum ist die Kapazität langsam, und was kann ich tun?
 
-Es gibt viele Gründe, die zu einer langsamen Premium-Kapazität beitragen können. Diese Frage erfordert Weitere Informationen zu verstehen, was mit langsamen gemeint ist. Sind Berichte langsam geladen? Oder werden sie nicht geladen werden? Sind Sie berichtsvisuals langsam geladen oder aktualisiert werden, wenn der Benutzer mit dem Bericht interagieren? Werden aktualisiert, dauert länger als erwartet wird, oder bereits aufgetreten ist?
+Es gibt viele Ursachen, die zu einer langsamen Premium-Kapazität beitragen können. Diese Frage erfordert weitere Informationen, um zu verstehen, was mit langsam gemeint ist. Werden Berichte langsam geladen? Oder werden Sie gar nicht geladen? Werden visuelle Elemente in Berichten langsam geladen oder aktualisiert, wenn Benutzer mit dem Bericht interagieren? Dauern Aktualisierungen länger als erwartet oder als es zuvor der Fall war?
 
-Müssen erhielten einen Überblick über den Grund, können Sie anschließend beginnen, zu untersuchen. Antworten auf die folgenden sechs Fragen helfen Ihnen, mehr zu adressieren bestimmter Probleme.
+Nachdem Sie die Ursache verstanden haben, können Sie mit der Untersuchung beginnen. Die Antworten auf die folgenden sechs Fragen helfen Ihnen bei spezifischeren Problemen.
 
-### <a name="what-content-is-using-up-my-capacity"></a>Welche Inhalte wird meine Kapazität verwenden?
+### <a name="what-content-is-using-up-my-capacity"></a>Welche Inhalte verbrauchen meine Kapazität?
 
-Sie können der **Kapazitätsmetriken für Power BI Premium** app zum Filtern von Kapazität und überprüfen die Leistungsmetriken für den Inhalt des Arbeitsbereichs. Es ist möglich, überprüfen die Leistung Metriken und die ressourcennutzung pro Stunde für die letzten sieben Tage für den gesamten Inhalt in einer Premium-Kapazität gespeichert. Überwachung ist häufig der erste Schritt bei der Problembehandlung für eine allgemeine Angelegenheiten handelt, zur Leistung für Premium-Kapazität.
+Mithilfe der App **Power BI Premium-Kapazitätsmetriken** können Sie nach Kapazität filtern und Leistungsmetriken für Arbeitsbereichsinhalte überprüfen. Sie können für alle in einer Premium-Kapazität gespeicherten Inhalte die Leistungsmetriken und die Ressourcennutzung nach Stunden in den letzten sieben Tagen überprüfen. Die Überwachung ist häufig der erste Schritt, wenn es darum geht, ein allgemeines Problem in Bezug auf die Premium-Kapazitätsleistung zu beheben.
 
-Wichtige zu überwachende Metriken umfassen:
+Zu überwachende Schlüsselmetriken sind:
 
-- Durchschnittliche CPU-Nutzung und hohe Auslastung Anzahl.
-- Die durchschnittliche Arbeitsspeicher und Anzahl der hohe Auslastung und speicherauslastung für bestimmte Datasets, Datenflüsse und paginierten Berichte.
-- Aktiver Datasets, die in den Arbeitsspeicher geladen werden.
-- Durchschnittliche und maximale abfragedauern.
-- Durchschnittliche abfragewartezeiten.
-- Durchschnittliche Dataset und den Datenfluss aktualisieren Zeiten auf.
+- Durchschnittliche CPU-Auslastung und Anzahl hohe Auslastung
+- Durchschnittliche Speicherauslastung und Anzahl hohe Auslastung sowie Speicherauslastung für bestimmte Datasets, Dataflows und paginierte Berichte
+- Aktive, im Arbeitsspeicher geladene Datasets
+- Durchschnittliche und maximale Abfragedauer
+- Durchschnittliche Abfragewartezeiten
+- Durchschnittliche Aktualisierungszeiten für Datasets und Dataflows
 
-In der Kapazitätsmetriken für Power BI Premium-app zeigt aktiven Arbeitsspeichers den gesamten Arbeitsspeicher für einen Bericht, der innerhalb der letzten drei Minuten wurde nicht entfernt werden kann. Eine hohe Spitze in der Wartezeit für die Aktualisierung konnte mit einem großen und/oder sehr aktiven Dataset korreliert werden.
+In der Power BI Premium-Kapazitätsmetriken-App zeigt der aktive Arbeitsspeicher die Gesamtmenge an Speicher, die einem Bericht zugewiesen ist, der nicht entfernt werden kann, da er innerhalb der letzten drei Minuten verwendet wurde. Ein hoher Anstieg der Aktualisierungswartezeit kann mit einem großen und/oder aktiven Dataset in Zusammenhang stehen.
 
-Die **Top 5 nach Durchschnittlicher Dauer** Diagramm hervorgehoben, die fünf wichtigsten Datasets, paginierte Berichte und Datenflüsse kapazitätsressourcen verbrauchen. Inhalte in den oberen fünf Listen ist die Kandidaten für die Untersuchung und mögliche Optimierung.
+Das Diagramm **Top 5 nach durchschnittlicher Dauer** zeigt die fünf wichtigsten Datasets, paginierten Berichte und Dataflows, die Kapazitätsressourcen verbrauchen. Der Inhalt der Top 5-Listen stellt Kandidaten für die Untersuchung und mögliche Optimierung dar.
 
-### <a name="why-are-reports-slow"></a>Warum Berichte sind langsam?
+### <a name="why-are-reports-slow"></a>Warum sind Berichte langsam?
 
-Die folgenden Tabellen zeigen mögliche Probleme sowie Möglichkeiten zu identifizieren und behandeln.
+In den folgenden Tabellen sind mögliche Probleme und Möglichkeiten aufgeführt, diese zu erkennen und zu behandeln.
 
-#### <a name="insufficient-capacity-resources"></a>Nicht genügend Kapazität-Ressourcen
+#### <a name="insufficient-capacity-resources"></a>Unzureichende Kapazitätsressourcen
 
-| Mögliche Erklärungen | Identifizieren von | Gewusst wie: Auflösen |
+| Mögliche Erklärungen | Erkennung | Behebung |
 | --- | --- | --- |
-| Hohe active Gesamtspeicher (Modell kann nicht entfernt werden, weil es innerhalb der letzten drei Minuten verwendet wird).<br><br> Mehrere hohe Spitzen in der Abfrage Wartezeiten.<br><br> Mehrere hohe Spitzen bei der Aktualisierung Wartezeiten. | Überwachen von Metriken zum Arbeitsspeicher \[ [1](#endnote-1)\], und der Anzahl der Entfernung \[ [2](#endnote-2)\]. | Verringern der Größe des Datenbankmodells oder DirectQuery-Modus konvertieren. Finden Sie unter den [optimieren Datenmodellen](#optimizing-models) Abschnitt in diesem Artikel.<br><br> Zentrales hochskalieren der Kapazitätsbedarfs.<br><br> Weisen Sie den Inhalt einer anderen Kapazität. |
+| Hoher aktiver Gesamtspeicher (das Modell kann nicht entfernt werden, da es innerhalb der letzten drei Minuten verwendet wurde)<br><br> Mehrere hohe Spitzen in Abfragewartezeiten<br><br> Mehrere hohe Spitzen in Aktualisierungswartezeiten | Überwachen Sie die Arbeitsspeichermetriken \[[1](#endnote-1)\] und die Anzahl von Entfernungen \[[2](#endnote-2)\]. | Verringern Sie die Modellgröße, oder wechseln Sie in den DirectQuery-Modus. Weitere Informationen finden Sie im Abschnitt [Optimieren von Modellen](#optimizing-models) in diesem Artikel.<br><br> Skalieren Sie die Kapazität zentral hoch.<br><br> Weisen Sie den Inhalt einer anderen Kapazität zu. |
 
 #### <a name="inefficient-report-designs"></a>Ineffiziente Berichtsentwürfe
 
-| Mögliche Erklärungen | Identifizieren von | Gewusst wie: Auflösen |
+| Mögliche Erklärungen | Erkennung | Behebung |
 | --- | --- | --- |
-| Seiten des Berichts enthält zu viele Visualisierungen, die (interaktive Filterung kann mindestens eine Abfrage pro visuellem auszulösen).<br><br> Visuelle Elemente abgerufen werden mehr Daten als nötig. | Überprüfen Sie die Berichtsentwürfe.<br><br> Befragen Sie berichtsbenutzer, um zu verstehen, wie sie mit den Berichten interagieren.<br><br> Überwachen von Dataset-abfragemetriken \[ [3](#endnote-3)\]. | Neuentwurf von Berichten mit weniger Visualisierungen pro Seite. |
+| Berichtsseiten enthalten zu viele visuelle Elemente (interaktives Filtern kann mindestens eine Abfrage pro visuellem Element auslösen)<br><br> Visuelle Elemente rufen mehr Daten als notwendig ab | Überprüfen Sie die Berichtsentwürfe.<br><br> Befragen Sie Berichtsbenutzer, um zu verstehen, wie diese mit den Berichten interagieren.<br><br> Überwachen Sie die Metriken für Datasetabfragen \[[3](#endnote-3)\]. | Gestalten Sie Berichte mit weniger visuellen Elementen pro Seite. |
 
-#### <a name="dataset-is-slow-especially-when-reports-have-previously-performed-well"></a>DataSet ist langsam, insbesondere, wenn Berichte auch zuvor ausgeführt haben
+#### <a name="dataset-is-slow-especially-when-reports-have-previously-performed-well"></a>Dataset ist langsam, insbesondere wenn Berichte zuvor eine gute Leistung aufwiesen
 
-| Mögliche Erklärungen | Identifizieren von | Gewusst wie: Auflösen |
+| Mögliche Erklärungen | Erkennung | Behebung |
 | --- | --- | --- |
-| Zunehmend große Mengen an Daten importieren.<br><br> Komplexen oder ineffizienten Berechnungslogik, einschließlich der RLS-Rollen.<br><br> Das Modell nicht vollständig optimiert.<br><br> (DQ/LC) Gateway-Latenz.<br><br> Langsame DQ Quelle Antwortzeiten für Abfragen. | Überprüfen Sie die Modell-Entwürfe.<br><br> Überwachen Sie die Gateway-Leistungsindikatoren. | Finden Sie unter den [optimieren Datenmodellen](#optimizing-models) Abschnitt in diesem Artikel. |
+| Zunehmend große Mengen an Importdaten<br><br> Komplexe oder ineffiziente Berechnungslogik, einschließlich RLS-Rollen<br><br> Modell nicht vollständig optimiert<br><br> (DQ/LC) Gatewaylatenz<br><br> Langsame Antwortzeiten der DQ-Quellabfrage | Überprüfen Sie die Modellentwürfe.<br><br> Überwachen Sie die Gateway-Leistungsindikatoren. | Weitere Informationen finden Sie im Abschnitt [Optimieren von Modellen](#optimizing-models) in diesem Artikel. |
 
-#### <a name="high-concurrent-report-usage"></a>Hohe gleichzeitige Berichte zur Nutzung
+#### <a name="high-concurrent-report-usage"></a>Hohe gleichzeitige Berichtsnutzung
 
-| Mögliche Erklärungen | Identifizieren von | Gewusst wie: Auflösen |
+| Mögliche Erklärungen | Erkennung | Behebung |
 | --- | --- | --- |
-| Hohe abfragewartezeiten.<br><br> Die CPU-Auslastung.<br><br> DQ/LC verbindungsbeschränkungen überschritten. | Überwachen der CPU-Auslastung \[ [4](#endnote-4)\], abfragewartezeiten und DQ/LC Auslastung \[ [5](#endnote-5) \] Metriken + Dauer der Abfrage. Wenn schwankt, kann von Parallelitätsproblemen angeben. | Zentrales hochskalieren der Kapazitätsbedarfs, oder weisen Sie den Inhalt einer anderen Kapazität.<br><br> Neuentwurf von Berichten mit weniger Visualisierungen pro Seite. |
+| Hohe Abfragewartezeiten<br><br> CPU-Sättigung<br><br> DQ/LC-Verbindungslimits überschritten | Überwachen Sie die Metriken für CPU-Auslastung \[[4](#endnote-4)\], Abfragewartezeiten und DQ/LC-Auslastung \[[5](#endnote-5)\] und die Abfragedauer. Schwankungen können auf Parallelitätsprobleme hindeuten. | Skalieren Sie die Kapazität zentral hoch, oder weisen Sie den Inhalt einer anderen Kapazität zu.<br><br> Gestalten Sie Berichte mit weniger visuellen Elementen pro Seite. |
 
-**Anmerkungen zu dieser Version:**    
-<a name="endnote-1"></a>\[1\] durchschnittliche Speicherauslastung (GB) und höchste Arbeitsspeichernutzung (GB).   
-<a name="endnote-2"></a>\[2\] Dataset entfernungen.   
-<a name="endnote-3"></a>\[3\] Datasetabfragen, Dataset durchschnittliche Abfragedauer (ms), Datasets zu warten, Anzahl und Durchschnitt von Dataset-Wartezeit (ms).   
-<a name="endnote-4"></a>\[4\] Anzahl von hoher CPU-Auslastung und CPU-Zeit der höchsten Auslastung (in den letzten sieben Tage).   
-<a name="endnote-5"></a>\[5\] DQ/LC hohe Auslastung Anzahl und den DQ/LC-Zeitpunkt der höchsten Auslastung (in den letzten sieben Tage).   
+**Hinweise:**    
+<a name="endnote-1"></a>\[1\] Durchschnittliche Arbeitsspeicherauslastung (GB) und höchster Arbeitsspeicherverbrauch (GB)   
+<a name="endnote-2"></a>\[2\] Entfernte Datasets   
+<a name="endnote-3"></a>\[3\] Datasetabfragen, durchschnittliche Abfragedauer für Datasets (ms), Anzahl der Wartevorgänge für Datasets und durchschnittliche Wartezeit für Datasets (ms)   
+<a name="endnote-4"></a>\[4\] Anzahl hohe CPU-Auslastung und CPU-Zeit der höchsten Auslastung (letzte sieben Tage)   
+<a name="endnote-5"></a>\[5\] Anzahl hohe DQ/LC-Auslastung und DQ/LC-Zeit der höchsten Auslastung (letzte sieben Tage)   
 
-### <a name="why-are-reports-not-loading"></a>Warum Berichte werden nicht geladen?
+### <a name="why-are-reports-not-loading"></a>Warum werden Berichte nicht geladen?
 
-Wenn Berichte nicht geladen werden, ist es ein sicheres Zeichen, die Kapazität hat nicht genügend Arbeitsspeicher und zu auseinandersetzungen ist. Dies kann auftreten, wenn alle geladenen Modelle sind aktiv, die abgefragt wird, und können nicht entfernt werden, und alle Aktualisierungsvorgänge wurde angehalten oder verzögert wird. Power BI-Dienst versucht, laden das Dataset für 30 Sekunden, und der Benutzer ist der Fehler mit der eine Empfehlung, versuchen es in Kürze ordnungsgemäß benachrichtigt.
+Wenn Berichte nicht geladen werden können, ist das ein sicheres Zeichen dafür, dass die Kapazität über unzureichenden Arbeitsspeicher verfügt und überbeansprucht ist. Dies kann vorkommen, wenn alle geladenen Modelle aktiv abgefragt werden und daher nicht entfernt werden können und Aktualisierungsvorgänge angehalten oder verzögert wurden. Der Power BI-Dienst versucht 30 Sekunden lang, das Dataset zu laden, und der Benutzer wird ordnungsgemäß über den Fehler informiert mit dem Vorschlag, es in Kürze erneut zu versuchen.
 
-Es gibt derzeit keine Metrik für den Bericht von Ladefehlern überwachen. Sie können das Potenzial für dieses Problem durch Überwachung Systemspeicher, insbesondere der höchsten Auslastung und die Uhrzeit der höchsten Auslastung ermitteln. Hohe Dataset entfernungen und lange Dataset Aktualisierung durchschnittliche Wartezeit konnte wird empfohlen, dieses Problem auftritt.
+Derzeit gibt es keine Metrik, die auf Fehler beim Laden von Berichten überwacht werden kann. Sie können das Potenzial für dieses Problem erkennen, indem Sie den Systemspeicher überwachen, insbesondere die höchste Auslastung und die Zeit der höchsten Auslastung. Viele entfernte Datasets und eine lange durchschnittliche Wartezeit für Datasetaktualisierungen können darauf hindeuten, dass dieses Problem auftritt.
 
-In diesem nur sehr selten der Fall ist, kann dies nicht Prioritäten betrachtet werden. Benutzer des Berichts werden darüber informiert, dass der Dienst ausgelastet ist und, dass sie nach kurzer Zeit wiederholt werden soll. In diesem zu häufig der Fall ist, kann das Problem durch zentrale Skalierung der Premium-Kapazität oder durch Zuweisen des Inhalts einer anderen Kapazität aufgelöst werden.
+Wenn dies nur sehr selten vorkommt, wird es möglicherweise nicht als vorrangiges Problem betrachtet. Berichtsbenutzer werden darüber informiert, dass der Dienst ausgelastet ist und sie es nach kurzer Zeit noch einmal versuchen sollen. Wenn dies zu häufig vorkommt, kann das Problem durch zentrales Hochskalieren der Premium-Kapazität oder Zuweisen des Inhalts zu einer anderen Kapazität behoben werden.
 
-Capacity Admins (und Power BI-Dienstadministratoren) können überwachen, die **Abfragefehlern** Metrik, um zu bestimmen, wenn dies geschieht. Sie können auch die Kapazität, die alle Vorgänge bei einem System Überladung zurücksetzen neu starten.
+Kapazitätsadministratoren (und Power BI-Dienstadministratoren) können die Metrik **Abfragefehler** überwachen, um festzustellen, wann dies geschieht. Sie können auch die Kapazität neu starten und bei Überlastung des Systems alle Vorgänge zurücksetzen.
 
-### <a name="why-are-refreshes-not-starting-on-schedule"></a>Warum werden die Aktualisierungen nicht nach Zeitplan gestartet?
+### <a name="why-are-refreshes-not-starting-on-schedule"></a>Warum werden Aktualisierungen nicht nach Zeitplan gestartet?
 
-Startzeiten der geplanten Aktualisierung sind nicht garantiert. Denken Sie daran, dass es sich bei Power BI-Dienst immer interaktive Vorgänge über Hintergrundvorgänge priorisieren wird. Datenaktualisierung ist eine Hintergrundoperation, die auftreten können, wenn zwei Bedingungen erfüllt sind:
+Startzeiten für geplante Aktualisierungen sind nicht garantiert. Für den Power BI-Dienst haben interaktive Vorgänge immer höhere Priorität als Hintergrundvorgänge. Die Aktualisierung ist ein Hintergrundvorgang, der stattfinden kann, wenn zwei Bedingungen erfüllt sind:
 
-- Ausreichend Arbeitsspeicher ist verfügbar
-- Die Anzahl der unterstützten gleichzeitige Aktualisierungen für die Premium-Kapazität wurde nicht überschritten.
+- Es ist genügend Arbeitsspeicher vorhanden.
+- Die Anzahl der unterstützten gleichzeitigen Aktualisierungen für die Premium-Kapazität wird nicht überschritten.
 
-Wenn die Bedingungen nicht erfüllt sind, wird die Aktualisierung in die Warteschlange, bis die Bedingungen günstig sind.
+Wenn die Bedingungen nicht erfüllt sind, wird die Aktualisierung in die Warteschlange gestellt, bis die Bedingungen günstig sind.
 
-Eine vollständige Aktualisierung Denken Sie daran, dass mindestens doppelt die aktuellen Dataset Arbeitsspeichergröße erforderlich ist. Wenn nicht genügend Arbeitsspeicher verfügbar ist, kann nicht die Aktualisierung beginnen, bis Modell Entfernung gibt Speicherplatz frei – Dies verzögert, bedeutet bis ein oder mehrere Datasets inaktiv und entfernt werden kann.
+Beachten Sie bei einer vollständigen Aktualisierung, dass mindestens das Doppelte der aktuellen Arbeitsspeichergröße des Datasets erforderlich ist. Ist nicht genügend Arbeitsspeicher verfügbar, kann die Aktualisierung erst beginnen, wenn durch das Entfernen des Modells Arbeitsspeicher freigegeben wird. Dies bedeutet Verzögerungen, bis ein oder mehrere Datasets inaktiv werden und entfernt werden können.
 
-Denken Sie daran, dass die unterstützte Anzahl von maximalen gleichzeitigen Aktualisierungen 1,5 Mal die Back-End-V-Kerne, aufgerundet festgelegt ist.
+Die unterstützte maximale Anzahl gleichzeitiger Aktualisierungen ist auf das 1,5-fache der Back-End-V-Kerne (aufgerundet) festgelegt.
 
-Eine geplante Aktualisierung schlägt fehl, wenn er beginnen kann nicht vor die nächste geplante Aktualisierung aufgrund von zu beginnen. Eine bedarfsgesteuerte Aktualisierung manuell ausgelöst werden, über die Benutzeroberfläche versucht, die bis zu drei Mal ausführen, bevor ein Fehler auftritt.
+Eine geplante Aktualisierung schlägt fehl, wenn sie nicht vor dem Beginn der nächsten geplanten Aktualisierung begonnen werden kann. Bei einer bedarfsgesteuerten Aktualisierung, die manuell über die Benutzeroberfläche ausgelöst wird, werden bis zu drei Ausführungsversuche unternommen, bevor sie fehlschlägt.
 
-Capacity Admins (und Power BI-Dienstadministratoren) können überwachen, die **durchschnittliche aktualisieren Wartezeit (Minuten)** Metrik für die durchschnittliche Verzögerung zwischen dem geplanten Zeitpunkt und dem Beginn des Vorgangs zu ermitteln.
+Kapazitätsadministratoren (und Power BI-Dienstadministratoren) können die Metrik **Durchschnittliche Aktualisierungswartezeit (Minuten)** überwachen, um die durchschnittliche Verzögerung zwischen der geplanten Zeit und dem Start des Vorgangs zu ermitteln.
 
-Während eine administrative Priorität für die beeinflussen, in-Time-Daten in der Regel nicht aktualisiert werden soll, stellen Sie sicher, dass genügend Arbeitsspeicher verfügbar ist. Dies kann beinhalten, Datasets, auf die Kapazitäten, die mit bekannten genügend Ressourcen zu isolieren. Es ist auch möglich, dass Administratoren mit dem Besitzer von Datasets koordinieren konnte können staffeln, oder verringern Sie die geplante Aktualisierungen auf Zeiten, Konflikte zu minimieren. Beachten Sie, dass es nicht möglich, dass ein Administrator die Warteschlange für die Aktualisierung anzeigen oder zum Abrufen von Datasets plant.
+In der Regel hat es keine administrative Priorität, pünktliche Aktualisierungen der Daten zu erwirken, doch stellen Sie sicher, dass genügend Arbeitsspeicher verfügbar ist. Dies kann das Isolieren von Datasets in Kapazitäten mit bekanntermaßen ausreichenden Ressourcen umfassen. Es ist auch möglich, dass sich Administratoren mit Datasetbesitzern abstimmen, um die geplanten Datenaktualisierungszeiten zu verschieben oder zu verkürzen und so Konflikte zu minimieren. Beachten Sie, dass es einem Administrator nicht möglich ist, die Aktualisierungswarteschlange anzuzeigen oder Zeitpläne für Datasets abzurufen.
 
-### <a name="why-are-refreshes-slow"></a>Warum werden aktualisiert, die langsam?
+### <a name="why-are-refreshes-slow"></a>Warum sind Aktualisierungen langsam?
 
-Aktualisierungen kann slow- oder wahrgenommene langsam ist (wie die vorherige Frage Adressen allgemeine) sein.
+Aktualisierungen können langsam sein – oder als langsam empfunden werden (wie bei der vorherigen häufig gestellten Frage angesprochen).
 
-Wenn die Aktualisierung in der Tat langsam ist, kann es verschiedene Ursachen sein:
+Wenn die Aktualisierung tatsächlich langsam ist, kann dies mehrere Ursachen haben:
 
-- Unzureichende CPU (Aktualisierung kann sehr CPU-intensiv sein).
-- Nicht genügend Arbeitsspeicher, sodass Aktualisierung anhalten (erfordert die Aktualisierung beginnen, wenn Bedingungen neu beginnen müssen günstig sind).
-- Nicht-Kapazität Gründe, z. B. Datasource Reaktionsfähigkeit des Systems, Netzwerklatenz, ungültige Berechtigungen oder Gateway-Durchsatz.
-- Datenvolume – ein guter Grund so konfigurieren Sie inkrementelle zu aktualisieren, wie im folgenden erläutert.
+- Unzureichende CPU (eine Aktualisierung kann sehr CPU-intensiv sein)
+- Nicht genügend Arbeitsspeicher, was zum Anhalten der Aktualisierung führt (wodurch die Aktualisierung neu gestartet werden muss, wenn die Bedingungen günstig dafür sind)
+- Nicht kapazitätsbedingte Ursachen, einschließlich Reaktionsfähigkeit des Datenquellsystems, Netzwerklatenz, ungültige Berechtigungen oder Gatewaydurchsatz
+- Datenvolumen – ein guter Grund für das Konfigurieren einer inkrementellen Aktualisierung wie unten erläutert
 
-Capacity Admins (und Power BI-Dienstadministratoren) können überwachen, die **durchschnittliche aktualisieren Dauer (Minuten)** Metrik, um zu bestimmen, eine Benchmark für den Vergleich im Laufe der Zeit und die **durchschnittliche aktualisieren Wartezeit (Minuten)** Metriken, um zu bestimmen, Durchschnittliche Verzögerung zwischen den Durchschnittliche Verzögerung zwischen dem geplanten Zeitpunkt und dem Beginn des Vorgangs.
+Kapazitätsadministratoren (und Power BI-Dienstadministratoren) können die Metrik **Durchschnittliche Aktualisierungsdauer (Minuten)** überwachen, um einen Benchmark für den Vergleich im zeitlichen Verlauf zu ermitteln, und die Metrik **Durchschnittliche Aktualisierungswartezeit (Minuten)** überwachen, um die durchschnittliche Verzögerung zwischen der geplanten Zeit und dem Start des Vorgangs zu ermitteln.
 
-Die inkrementelle Aktualisierung kann die Dauer des Daten aktualisieren, insbesondere bei großen Modelltabellen deutlich reduzieren. Es gibt vier Vorteile, die inkrementelle Aktualisierung zugeordnet:
+Die inkrementelle Aktualisierung kann die Dauer der Datenaktualisierung erheblich verkürzen, insbesondere bei großen Modelltabellen. Die inkrementelle Aktualisierung bietet vier Vorteile:
 
-- **Aktualisierungen sind schneller** – nur eine Teilmenge einer Tabelle benötigt, laden, verringern Auslastung von CPU und Arbeitsspeicher und Parallelität kann höher sein, wenn Sie mehrere Partitionen zu aktualisieren.
-- **Aktualisierungen auftreten, nur im Bedarfsfall** -Richtlinien für die inkrementelle Aktualisierung können so konfiguriert werden, dass Laden nur, wenn Daten geändert haben.
-- **Aktualisierungen sind zuverlässiger** -kürzere ausgeführte Verbindungen mit flüchtigen Datasource-Systeme sind weniger anfällig für die Trennung der Verbindung.
-- **Modelle bleiben trim** -Richtlinien für die inkrementelle Aktualisierung können konfiguriert werden, um automatisch Verlauf über ein gleitendes Fenster von Zeit zu entfernen.
+- **Aktualisierungen sind schneller**: Es muss nur eine Teilmenge einer Tabelle geladen werden, wodurch sich die CPU- und Arbeitsspeicherauslastung reduziert, und bei der Aktualisierung mehrerer Partitionen kann die Parallelität höher sein.
+- **Aktualisierungen erfolgen nur bei Bedarf**: Richtlinien für die inkrementelle Aktualisierung können so konfiguriert werden, dass Daten nur dann geladen werden, wenn sie geändert wurden.
+- **Aktualisierungen sind zuverlässiger**: Kürzere aktive Verbindungen mit flüchtigen Datenquellsystemen sind weniger anfällig für ein Trennen der Verbindung.
+- **Modelle bleiben klein**: Richtlinien für die inkrementelle Aktualisierung können so konfiguriert werden, dass der Verlauf über ein verschiebbares Zeitfenster hinaus automatisch entfernt wird.
 
-Weitere Informationen finden Sie unter [inkrementell zu aktualisieren, klicken Sie in Power BI Premium](service-premium-incremental-refresh.md).
+Weitere Informationen finden Sie unter [Inkrementelle Aktualisierung in Power BI Premium](service-premium-incremental-refresh.md).
 
-### <a name="why-are-data-refreshes-not-completing"></a>Warum Daten werden aktualisiert, nicht abgeschlossen?
+### <a name="why-are-data-refreshes-not-completing"></a>Warum werden Datenaktualisierungen nicht abgeschlossen?
 
-Wenn die datenaktualisierung beginnt, aber es kann nicht abgeschlossen werden, kann es verschiedene Ursachen sein:
+Wenn die Datenaktualisierung beginnt, aber nicht abgeschlossen wird, kann dies mehrere Ursachen haben:
 
-- Unzureichender Arbeitsspeicher, auch wenn es nur ein Modell in der Premium-Kapazität ist z. B. die Größe des Datenbankmodells sehr groß.
-- Nicht-Kapazitätsgründen, z. B. Datasource System trennen, ungültige Berechtigungen oder Gatewayfehler.
+- Nicht genügend Arbeitsspeicher, auch wenn nur ein Modell in der Premium-Kapazität vorhanden ist, d.h. das Modell ist sehr groß
+- Nicht kapazitätsbedingte Ursachen, einschließlich Verbindungstrennung vom Datenquellsystem, ungültige Berechtigungen oder Gatewayfehler
 
-Capacity Admins (und Power BI-Dienstadministratoren) können überwachen, die **Aktualisieren von Fehlern aufgrund von nicht genügend Arbeitsspeicher** Metrik.
+Kapazitätsadministratoren (und Power BI-Dienstadministratoren) können die Metrik **Aktualisierungsfehler aufgrund von Arbeitsspeichermangel** überwachen.
 
 ## <a name="optimizing-models"></a>Optimieren von Modellen
 
-Optimale Modellentwurf ist entscheidend für die Bereitstellung einer effizienten und skalierbare Lösung. Es ist jedoch Gegenstand dieser Artikel soll Ihnen eine detaillierte Erläuterung zu. Stattdessen wird in diesem Abschnitt wichtige Bereiche berücksichtigt bereitstellen, der beim Optimieren der Modelle.
+Ein optimaler Modellentwurf ist entscheidend für die Bereitstellung einer effizienten und skalierbaren Lösung. Eine umfassende Erläuterung geht jedoch über den Rahmen dieses Artikels hinaus. Stattdessen werden in diesem Abschnitt wichtige Bereiche genannt, die beim Optimieren von Modellen zu berücksichtigen sind.
 
-### <a name="optimizing-power-bi-hosted-models"></a>Optimieren von Power BI gehosteten Modelle
+### <a name="optimizing-power-bi-hosted-models"></a>Optimieren von Power BI-gehosteten Modellen
 
-Optimieren von Modellen, die in einer Premium-Kapazität gehostet, kann auf Datenquellen und Modell erreicht werden.
+Eine Optimierung von Modellen, die in einer Premium-Kapazität gehostet werden, kann auf Datenquellen- und Modellebene erzielt werden.
 
-Beachten Sie die optimierungsmöglichkeiten für ein Modell importieren:
+Sehen Sie sich die Optimierungsmöglichkeiten für ein Importmodell an:
 
-![Optimierungsmöglichkeiten für ein Modell importieren](media/service-premium-capacity-optimize/import-model-optimizations.png)
+![Optimierungsmöglichkeiten für ein Importmodell](media/service-premium-capacity-optimize/import-model-optimizations.png)
 
-Auf der Datasource-Ebene:
+Auf Datenquellenebene:
 
-- Relationale Datenquellen um sicherzustellen, dass die schnellste Möglichkeit Aktualisierung mithilfe der vorab Integrieren von Daten, Anwenden der geeigneten Indizes, Tabellenpartitionen, die ausgerichtet sind für die inkrementelle Aktualisierung Zeiträume definieren und Umsetzung von Berechnungen optimiert werden können (anstelle von berechnet Model-Tabellen und Spalten) oder zum Hinzufügen von Berechnungslogik zu Sichten.
-- Nicht relationale Datenquellen können in relationale Speicher integriert werden.
-- Sicherstellen Sie, dass Gateways ausreichende Ressourcen, vorzugsweise auf dedizierten Computern, die mit genügend Netzwerkbandbreite und in der Nähe zu den Datenquellen.
+- Relationale Datenquellen können optimiert werden, um eine schnellstmögliche Aktualisierung sicherzustellen. Dazu werden Daten vorab integriert, geeignete Indizes angewendet, Tabellenpartitionen definiert, die sich an Zeiträumen für die inkrementelle Aktualisierung orientieren, und Berechnungen materialisiert (anstelle von berechneten Modelltabellen und -spalten) oder eine Berechnungslogik zu Sichten hinzugefügt.
+- Nicht relationale Datenquellen können vorab in relationale Speicher integriert werden.
+- Stellen Sie sicher, dass Gateways über ausreichende Ressourcen verfügen, vorzugsweise auf dedizierten Computern, mit ausreichender Netzwerkbandbreite und in unmittelbarer Nähe der Datenquellen.
 
-Auf der Modellebene:
+Auf Modellebene:
 
-- Power Query-Abfrage Entwürfe minimieren oder entfernen Sie komplexe Transformationen und insbesondere über diejenigen, die verschiedene Datenquellen (Datawarehouses dies erreichen, während ihre extrahieren-transformieren-laden-Phase) zusammenführen können. Darüber hinaus sicherstellen, entsprechende Datasource datenschutzebenen festgelegt werden, dies kann vermeiden, dass Power BI beim Laden der vollständigen Ergebnisse, um ein kombiniertes Ergebnis über mehrere Abfragen zu erstellen.
-- Die Modellstruktur bestimmt die zu ladenden Daten und wirkt sich direkt auf die Größe des Datenbankmodells. Es kann entworfen werden, um zu vermeiden, laden überflüssige Daten durch Entfernen von Spalten, und Entfernen von Zeilen (vor allem historischen Daten) oder durch das Laden von zusammengefasster Daten (auf Kosten der detaillierte Daten wird geladen). Erhebliche Reduzierung kann erreicht werden, durch das Entfernen von Spalten mit hoher Kardinalität (insbesondere Textspalten), die nicht speichern oder sehr effizient komprimieren.
-- Modell die abfrageleistung kann verbessert werden, durch Konfigurieren von Richtung Beziehungen, es sei denn, es gibt ein zwingenden Grund bidirektionales filtern können. Berücksichtigen Sie auch mithilfe der [CROSSFILTER](https://docs.microsoft.com/dax/crossfilter-function) Funktion statt bidirektionales filtern.
-- Aggregationstabellen können schnelle Abfragen, dass Antworten durch das Laden von Daten zusammengefasst, die vor erreichen, aber dies das Modell und das Ergebnis in längeren Aktualisierungszeiten vergrößert wird. Im Allgemeinen sollten Aggregationstabellen für sehr große Modelle oder zusammengesetzten Modells Entwürfe reserviert werden.
-- Berechnete Tabellen und Spalten erhöhen Sie die Modellgröße aus, und führen mehr Aktualisierungszeiten bereit. Im Allgemeinen können eine geringere Datenspeichergröße und eine schnellere Aktualisierung erreicht werden, wenn die Daten materialisiert oder in der Datenquelle berechnet werden. Wenn dies nicht möglich ist, kann die mithilfe von Power Query, benutzerdefinierte Spalten verbesserte speicherkomprimierung anbieten.
-- Es gibt möglicherweise Gelegenheit zum Optimieren von DAX-Ausdrücken für Measures und RLS-Regeln, die vielleicht umschreibungslogik zu formulieren um teure Formeln zu vermeiden.
-- Die inkrementelle Aktualisierung kann erheblich Aktualisierungszeit reduzieren und Einsparen von Arbeitsspeicher und CPU. Die inkrementelle Aktualisierung kann auch konfiguriert werden, um Modelle trim behalten Verlaufsdaten zu entfernen.
-- Ein Modell kann als zwei Modelle überarbeitet werden, bei anderen und in Konflikt stehende Abfragemuster. Für andere Berichte vorhanden allgemeine Aggregate über alle Verlauf, und es wird z. B. Wartezeit von 24 Stunden tolerieren. Andere Berichte sind mit Daten und differenzierten Zugriff auf einzelne Transaktionen benötigen. Anstatt Entwurf ein einzelnes Modell, um alle Berichte zu erfüllen erstellen Sie zwei Modelle, die für die einzelnen Anforderungen optimiert.
+- Mit Power Query-Abfrageentwürfen können komplexe Transformationen minimiert oder entfernt werden, insbesondere solche, bei denen verschiedene Datenquellen zusammengeführt werden (Data Warehouses können dies während ihrer ETL-Phase (Extract-Transform-Load) erreichen). Außerdem kann sichergestellt werden, dass geeignete Datenschutzebenen für die Datenquellen festgelegt sind, sodass Power BI keine vollständigen Ergebnisse laden muss, um ein abfragenübergreifendes kombiniertes Ergebnis zu erstellen.
+- Die Modellstruktur bestimmt die zu ladenden Daten und wirkt sich direkt auf die Modellgröße aus. Es kann so entworfen werden, dass ein Laden nicht benötigter Daten vermieden wird, indem Spalten entfernt, Zeilen (insbesondere Verlaufsdaten) entfernt oder zusammengefasste Daten geladen werden (auf Kosten des Ladens von Detaildaten). Eine drastische Verringerung der Größe kann erreicht werden, indem Sie Spalten mit hoher Kardinalität (insbesondere Textspalten) entfernen, die nicht sehr effizient gespeichert oder komprimiert werden.
+- Die Abfrageleistung des Modells kann durch Konfigurieren von Beziehungen mit nur einer Richtung verbessert werden, es sei denn, es gibt einen zwingenden Grund für eine bidirektionale Filterung. Ziehen Sie auch eine Verwendung der [CROSSFILTER](https://docs.microsoft.com/dax/crossfilter-function)-Funktion anstelle der bidirektionalen Filterung in Betracht.
+- Aggregationstabellen können durch das Laden vorab zusammengefasster Daten schnelle Abfrageantworten erzielen, was jedoch zu einem größeren Modell und längeren Aktualisierungszeiten führt. Generell sollten Aggregationstabellen sehr großen Modellen oder Entwürfen mit zusammengesetzten Modellen vorbehalten sein.
+- Berechnete Tabellen und Spalten erhöhen die Modellgröße und führen zu längeren Aktualisierungszeiten. Im Allgemeinen können eine geringere Speichergröße und eine schnellere Aktualisierungszeit erreicht werden, wenn die Daten in der Datenquelle materialisiert oder berechnet werden. Wenn das nicht möglich ist, kann die Verwendung benutzerdefinierter Power Query-Spalten eine verbesserte Speicherkomprimierung bieten.
+- Vielleicht besteht die Möglichkeit, DAX-Ausdrücke für Measures und RLS-Regeln zu optimieren, und eventuell die Logik neu zu schreiben, um kostspielige Formeln zu vermeiden.
+- Die inkrementelle Aktualisierung kann die Aktualisierungszeit drastisch verkürzen sowie die Arbeitsspeicher- und CPU-Auslastung verringern. Die inkrementelle Aktualisierung kann auch so konfiguriert werden, dass Verlaufsdaten entfernt und somit Modellgrößen gering gehalten werden.
+- Ein Modell kann als zwei Modelle umgestaltet werden, wenn unterschiedliche und widersprüchliche Abfragemuster vorhanden sind. Beispielsweise stellen einige Berichte allgemeine Aggregate im gesamten Verlauf dar und können eine Latenz von 24 Stunden tolerieren. Andere Berichte betreffen die aktuellen Daten und benötigen einen präzisen Zugriff auf einzelne Transaktionen. Anstatt ein einzelnes Modell für alle Berichte zu entwerfen, erstellen Sie zwei Modelle, die für die jeweilige Anforderung optimiert sind.
 
-Erwägen Sie die optimierungsmöglichkeiten für ein DirectQuery-Modell. Wie das Modell abfrageanforderungen an die zugrunde liegenden Datenquelle ausgibt, ist die Datasource-Optimierung wichtig für die Bereitstellung von reaktionsfähigen Modell Abfragen.
+Sehen Sie sich die Optimierungsmöglichkeiten für ein DirectQuery-Modell an. Da das Modell Abfrageanforderungen an die zugrunde liegende Datenquelle ausgibt, ist die Optimierung der Datenquelle für die Bereitstellung reaktionsfähiger Modellabfragen von ausschlaggebender Bedeutung.
 
  ![Optimierungsmöglichkeiten für ein DirectQuery-Modell](media/service-premium-capacity-optimize/direct-query-model-optimizations.png)
 
-Auf der Datasource-Ebene:
+Auf Datenquellenebene:
 
-- Die Datenquelle kann optimiert werden um sicherzustellen, dass die schnellste Möglichkeit Abfragen nach vorab Integrieren von Daten (die nicht auf der Ebene des möglich ist), Anwenden der geeigneten Indizes, Definieren von Tabellenpartitionen, die durch das materialisieren zusammengefasste Daten (mit indizierten Sichten), und Minimieren den Betrag, der Berechnung an. Optimale Ergebnisse wird erreicht, bei der Pass-Through-Abfragen müssen, nur filtern und Ausführen innerer Verknüpfungen zwischen indizierten Tabellen oder Sichten.
-- Sicherstellen Sie, dass Gateways ausreichende Ressourcen, vorzugsweise auf dedizierten Computern, die mit genügend Netzwerkbandbreite und in der Nähe der Datenquelle.
+- Die Datenquelle kann optimiert werden, um eine schnellstmögliche Abfrage zu gewährleisten. Dazu werden Daten vorab integriert (was auf Modellebene nicht möglich ist), geeignete Indizes angewendet, Tabellenpartitionen definiert, zusammengefasste Daten materialisiert (mit indizierten Sichten) und die Berechnungsmenge minimiert. Das beste Ergebnis wird erzielt, wenn Pass-Through-Abfragen nur innere Joins zwischen indizierten Tabellen oder Sichten filtern und ausführen müssen.
+- Stellen Sie sicher, dass Gateways über ausreichende Ressourcen verfügen, vorzugsweise auf dedizierten Computern, mit ausreichender Netzwerkbandbreite und in unmittelbarer Nähe der Datenquelle.
 
-Auf der Modellebene:
+Auf Modellebene:
 
-- Power Query-Abfrage, die Entwürfe sollte vorzugsweise gelten keine Transformationen – andernfalls versucht, die Transformationen auf ein absolutes minimum zu beschränken.
-- Modell die abfrageleistung kann verbessert werden, durch Konfigurieren von Richtung Beziehungen, es sei denn, es gibt ein zwingenden Grund bidirektionales filtern können. Darüber hinaus sollte Modellieren von Beziehungen konfiguriert werden, um wird davon ausgegangen wird referenzielle Integrität erzwungen (Wenn dies der Fall ist) und führt zu einer Datenquelle Abfragen effizienter innere Joins (anstelle von äußeren Joins).
-- Erstellen benutzerdefinierter Spalten von Power Query-Abfrage oder eine berechnete modellspalte vermeiden – materialisieren in der Datenquelle, wenn möglich.
-- Es gibt möglicherweise Gelegenheit zum Optimieren von DAX-Ausdrücken für Measures und RLS-Regeln, z. B. umschreibungslogik zu formulieren um teure Formeln zu vermeiden.
+- Power Query-Abfrageentwürfe sollten vorzugsweise keine Transformationen anwenden. Versuchen Sie andernfalls, Transformationen auf ein absolutes Minimum zu beschränken.
+- Die Abfrageleistung des Modells kann durch Konfigurieren von Beziehungen mit nur einer Richtung verbessert werden, es sei denn, es gibt einen zwingenden Grund für eine bidirektionale Filterung. Außerdem sollten Modellbeziehungen unter der Annahme konfiguriert werden, dass referenzielle Integrität erzwungen wird (wenn das der Fall ist), was dazu führt, dass Datenquellenabfragen effizientere innere Joins (anstelle von äußeren Joins) verwenden.
+- Vermeiden Sie es, benutzerdefinierte Power Query-Spalten oder vom Modell berechnete Spalten zu erstellen, sondern materialisieren Sie diese nach Möglichkeit in der Datenquelle.
+- Vielleicht besteht die Möglichkeit, DAX-Ausdrücke für Measures und RLS-Regeln zu optimieren, und eventuell die Logik neu zu schreiben, um kostspielige Formeln zu vermeiden.
 
-Erwägen Sie die optimierungsmöglichkeiten für eine zusammengesetzte Modell ein. Denken Sie daran, dass eine kombinierte Modell eine Mischung von Import und DirectQuery-Tabellen ermöglicht.
+Sehen Sie sich die Optimierungsmöglichkeiten für ein zusammengesetztes Modell an. Ein zusammengesetztes Modell ermöglicht eine Mischung aus Import- und DirectQuery-Tabellen.
 
-![Optimierungsmöglichkeiten für eine zusammengesetzte Modell](media/service-premium-capacity-optimize/composite-model-optimizations.png)
+![Optimierungsmöglichkeiten für ein zusammengesetztes Modell](media/service-premium-capacity-optimize/composite-model-optimizations.png)
 
-- Im Allgemeinen die Optimierung für Import- und DirectQuery-Modelle mit dem gelten für zusammengesetzten Modells-Tabellen, die diese Speichermodi verwenden.
-- In der Regel sich bemühen Sie, einen Entwurf mit Lastenausgleich zu erzielen, indem Sie Konfigurieren von Dimensionstyp Tabellen (für Geschäftseinheiten) als Dual-Modus und Faktentyp Speichertabellen (häufig große Tabellen, die betriebliche Fakten darstellt) als DirectQuery-Speichermodus. Dual-Speichermodus bedeutet, dass beide zu importieren und DirectQuery-Speichermodi und dadurch können die Power BI-Dienst, um zu bestimmen, die effizientesten-Speichermodus verwendet zur Erstellung einer systemeigenen Abfrage für die Passthrough.
-- Sicherstellen Sie, dass Gateways ausreichende Ressourcen, vorzugsweise auf dedizierten Computern, die mit genügend Netzwerkbandbreite und in der Nähe zu den Datenquellen verfügen.
-- Aggregationen Tabellen wird konfiguriert, wie Speicher Importmodus eindrucksvolle Abfrage leistungsverbesserungen bei der mit dem DirectQuery-Modus Faktentyp Speichertabellen zusammengefasst, liefern kann. In diesem Fall Aggregationstabellen werden die Größe des Modells sowie erhöhen Aktualisierungszeit, und dies ist häufig ein akzeptabler Kompromiss zu schnelleren Abfragen.
+- Im Allgemeinen trifft die Optimierung für Import- und DirectQuery-Modelle auf Tabellen des zusammengesetzten Modells zu, die diese Speichermodi verwenden.
+- In der Regel sollten Sie einen ausgeglichenen Entwurf anstreben, indem Sie Tabellen des Dimensionstyps (die Geschäftsentitäten darstellen) als Speichermodus „Dual“ und Tabellen des Faktentyps (häufig große Tabellen, die operative Fakten darstellen) als Speichermodus „DirectQuery“ konfigurieren. Der Speichermodus „Dual“ bedeutet, dass sowohl der Speichermodus „Import“ als auch „DirectQuery“ verwendet werden. Dadurch kann der Power BI-Dienst den effizientesten Speichermodus ermitteln, der beim Generieren einer systemeigenen Abfrage für Pass-Through verwendet werden soll.
+- Stellen Sie sicher, dass Gateways über ausreichende Ressourcen verfügen, vorzugsweise auf dedizierten Computern, mit ausreichender Netzwerkbandbreite und in unmittelbarer Nähe der Datenquellen.
+- Aggregationstabellen, die als Speichermodus „Import“ konfiguriert sind, können drastische Verbesserungen der Abfrageleistung bewirken, wenn sie zur Zusammenfassung von Tabellen des Faktentyps im Speichermodus „DirectQuery“ verwendet werden. In diesem Fall führen Aggregationstabellen zu einem größeren Modell und längeren Aktualisierungszeiten, doch ist dies häufig ein akzeptabler Kompromiss für schnellere Abfragen.
 
-### <a name="optimizing-externally-hosted-models"></a>Optimieren der extern gehosteten Modellen
+### <a name="optimizing-externally-hosted-models"></a>Optimieren von extern gehosteten Modellen
 
-Viele optimierungsmöglichkeiten beschrieben, der [Optimieren von Power BI gehosteten Modelle](#optimizing-power-bi-hosted-models) Abschnitt gelten auch für Modelle, die mit Azure Analysis Services und SQL Server Analysis Services entwickelt. Löschen von Ausnahmen sind bestimmte Features, die derzeit nicht einschließlich zusammengesetzten Modelle und Aggregationstabellen unterstützt werden.
+Viele Optimierungsmöglichkeiten, die im Abschnitt [Optimieren von Power BI-gehosteten Modellen](#optimizing-power-bi-hosted-models) erläutert werden, gelten auch für Modelle, die mit Azure Analysis Services und SQL Server Analysis Services entwickelt wurden. Eindeutige Ausnahmen sind bestimmte Features, die derzeit nicht unterstützt werden, einschließlich zusammengesetzter Modelle und Aggregationstabellen.
 
-Eine weitere Überlegungen für extern gehostete Datasets ist eine Datenbank in Bezug auf Power BI-Dienst hostet. Für Azure Analysis Services bedeutet dies, erstellen die Azure-Ressource in der gleichen Region wie das Power BI-Mandant (home-Region). Für SQL Server Analysis Services für IaaS Dies bedeutet, dass den virtuelle Computer in derselben Region gehostet, und für lokale, es bedeutet, dass eine effiziente gatewaysetup sichergestellt.
+Eine zusätzliche Überlegung bei extern gehosteten Datasets betrifft das Datenbankhosting in Bezug auf den Power BI-Dienst. Bei Azure Analysis Services bedeutet dies, dass die Azure-Ressource in derselben Region wie der Power BI-Mandant (ursprüngliche Region) erstellt wird. Bei SQL Server Analysis Services für IaaS bedeutet dies, dass der virtuelle Computer in derselben Region gehostet wird, und für die lokale Umgebung bedeutet es die Sicherstellung einer effizienten Gatewayeinrichtung.
 
-Übrigens kann es sein, von Interesse sind, beachten Sie, dass Azure Analysis Services-Datenbanken und tabellarische SQL Server Analysis Services-Datenbanken erfordern, dass ihre Modelle vollständig in den Arbeitsspeicher geladen werden, dass sie es überhaupt bleiben Male auf, um Abfragen zu unterstützen. Wie im Power BI-Dienst muss es über ausreichend Arbeitsspeicher für aktualisiert, wenn es bei der Aktualisierung des Modells online bleiben muss. Im Gegensatz zu den Power BI-Dienst ist keine vorhanden, dass die Modelle in den Arbeitsspeicher gemäß Nutzung automatisch ersetzt werden. Power BI Premium bietet daher einen effizienteren Ansatz zur Maximierung des Modells Erstellen von Abfragen mit niedriger Auslastung des Speichers.
+Außerdem kann es von Interesse sein, dass Azure Analysis Services-Datenbanken und tabellarische SQL Server Analysis Services-Datenbanken es erforderlich machen, dass ihre Modelle vollständig in den Arbeitsspeicher geladen werden und dort die ganze Zeit verbleiben, um Abfragen zu unterstützen. Wie beim Power BI-Dienst muss ausreichend Arbeitsspeicher für die Aktualisierung vorhanden sein, wenn das Modell während der Aktualisierung online bleiben muss. Im Gegensatz zum Power BI-Dienst gibt es kein Konzept, dass Modelle je nach Nutzung automatisch in den Arbeitsspeicher eingebunden und daraus entfernt werden. Power BI Premium bietet daher einen effizienteren Ansatz zur Maximierung von Modellabfragen bei geringerer Arbeitsspeicherauslastung.
 
-## <a name="capacity-planning"></a>Planen der Kapazität
+## <a name="capacity-planning"></a>Kapazitätsplanung
 
-Die Größe von einer Premium-Kapazität wird bestimmt, die Speicherplatz und Prozessorressourcen und Grenzwerte für die Kapazität. Die Anzahl der Premium-Kapazitäten wird auch berücksichtigt, wie das Erstellen mehrerer Premium Kapazitäten können Workloads voneinander zu isolieren. Beachten Sie, dass Speicher 100 TB pro kapazitätsknoten beträgt, und dies ist meist mehr als ausreichend für alle Workloads.
+Die Größe einer Premium-Kapazität bestimmt die verfügbaren Arbeitsspeicher- und Prozessorressourcen sowie die für die Kapazität zutreffenden Grenzwerte. Die Anzahl der Premium-Kapazitäten ist ebenfalls zu berücksichtigen, da das Erstellen mehrerer Premium-Kapazitäten dazu beitragen kann, Workloads voneinander zu isolieren. Der Speicher beträgt 100 TB pro Kapazitätsknoten, und dies ist wahrscheinlich für alle Workloads mehr als ausreichend.
 
-Ermitteln der Größe und Anzahl der Premium-Kapazitäten kann, insbesondere für die anfängliche Kapazitäten schwierig sein, die Sie erstellen. Der erste Schritt, wenn die erforderlichen Kapazitäten, die durchschnittlichen Workload, die Darstellung der erwartete täglichen Verwendung zu verstehen ist. Es ist wichtig zu verstehen, dass nicht alle arbeitsauslastungen gleich sind. Beispiel: an einem Ende einer Bandbreite - 100 gleichzeitige Benutzer, die Zugriff auf eine einzelne Berichtsseite, die ein einzelnes visuelles enthält ist einfach erreichbares. Noch - am anderen Ende des Spektrums - 100 gleichzeitige Benutzer, die Zugriff auf 100 verschiedene Berichte, jeweils mit 100 Visuals auf der Berichtsseite wird sehr unterschiedliche Anforderungen von kapazitätsressourcen stellen.
+Die Festlegung der Größe und Anzahl von Premium-Kapazitäten kann eine Herausforderung darstellen, insbesondere bei den anfänglichen Kapazitäten, die von Ihnen erstellt werden. Der erste Schritt bei der Dimensionierung der Kapazität besteht darin, die durchschnittliche Workload zu verstehen, die die erwartete tägliche Nutzung darstellt. Es ist wichtig zu erkennen, dass nicht alle Workloads gleich sind. Beispielsweise kann an einem Ende des Spektrums problemlos eine Anzahl von 100 gleichzeitigen Benutzern erreicht werden, die auf eine einzelne Berichtsseite zugreifen, die wiederum ein einzelnes visuelles Element enthält. Doch kann am anderen Ende des Spektrums eine Anzahl von 100 gleichzeitigen Benutzern, die auf 100 verschiedene Berichte mit jeweils 100 visuellen Elementen auf der Berichtsseite zugreifen, ganz andere Anforderungen an die Kapazitätsressourcen stellen.
 
-Kapazitätsadministratoren müssen daher viele Faktoren zu berücksichtigen, die spezifisch für Ihre Umgebung, die Inhalte und die erwartete Nutzung. Das Überschreiben wird, zugleich konsistente Abfragezeiten akzeptablen Wartezeiten und entfernungsraten Ausnutzung der Speicherkapazität zu maximieren. Zu berücksichtigende Faktoren können umfassen:
+Kapazitätsadministratoren müssen daher viele Faktoren berücksichtigen, die für Ihre Umgebung, die Inhalte und die erwartete Nutzung spezifisch sind. Das übergeordnete Ziel ist es, die Kapazitätsauslastung zu maximieren und gleichzeitig konsistente Abfragezeiten, akzeptable Wartezeiten und Entfernungsraten bereitzustellen. Dabei sind unter anderem die folgenden Faktoren zu berücksichtigen:
 
-- **Modellieren Sie Größe und Merkmale** -importmodelle muss vollständig geladen ist, in den Arbeitsspeicher können Abfragen oder aktualisieren. LC/DQ-Datasets können erhebliche Prozessorzeit und möglicherweise erheblichen Speicherplatz zum Auswerten von komplexen Measures oder RLS-Regeln erforderlich. Arbeitsspeicher und Prozessorgröße und abfragedurchsatz LC/DQ werden durch die Größe der Kapazität beschränkt.
-- **Gleichzeitige aktive Modelle** -das gleichzeitige Abfragen der verschiedenen importmodelle liefert beste Reaktionsfähigkeit und Leistung, wenn sie im Speicher verbleiben. Es sollte genügend Arbeitsspeicher, um alle häufig abgefragte Modelle mit zusätzlichen Arbeitsspeicher für die datenaktualisierung zu hosten.
-- **Aktualisierung des Modells Import** -der Aktualisierungstyp (vollständig oder inkrementell), die Dauer und Komplexität von Power Query-Abfragen und berechnete Tabelle/Spalte-Logik können an Arbeitsspeicher und insbesondere CPU-Leistung beeinträchtigen. Gleichzeitige Aktualisierungen werden durch die Größe der Kapazität (1,5 X backend V-Kerne, aufgerundet) beschränkt.
-- **Gleichzeitige Abfragen** -können viele gleichzeitige Abfragen führen in nicht reagiert wird berichtet, wenn Prozessor oder LC/DQ-Verbindungen überschreitet den Grenzwert von Kapazität. Dies gilt insbesondere für Berichtsseiten, die viele visuelle Elemente enthalten.
-- **Datenflüsse und paginierten Berichten** – die Kapazität kann so konfiguriert werden, dass die um Datenflüsse und paginierte Berichte, mit jeder erfordert einen konfigurierbaren maximalen Prozentsatz der Speicherkapazität zu unterstützen. Arbeitsspeicher wird dynamisch zugewiesen, um Datenflüsse, aber Sie paginierte Berichte statisch zugeordnet.
+- **Modellgröße und Datenmerkmale**: Importmodelle müssen vollständig in den Arbeitsspeicher geladen werden, um Abfragen oder Aktualisierungen zu ermöglichen. Für LC/DQ-Datasets kann eine beträchtliche Prozessorzeit und möglicherweise erheblicher Arbeitsspeicher erforderlich sein, um komplexe Measures oder RLS-Regeln auszuwerten. Arbeitsspeicher- und Prozessorgröße sowie der LC/DQ-Abfragedurchsatz werden durch die Kapazitätsgröße eingeschränkt.
+- **Gleichzeitige aktive Modelle**: Die gleichzeitige Abfrage verschiedener Importmodelle bietet optimale Reaktionsfähigkeit und Leistung, wenn diese im Arbeitsspeicher verbleiben. Es muss genügend Arbeitsspeicher zum Hosten aller stark abgefragten Modelle vorhanden sein sowie zusätzlicher Arbeitsspeicher, um deren Aktualisierung zu ermöglichen.
+- **Aktualisierung des Importmodells**: Der Aktualisierungstyp (vollständig oder inkrementell), die Dauer und Komplexität von Power Query-Abfragen und die Logik berechneter Tabellen/Spalten können sich auf den Arbeitsspeicher und insbesondere die Prozessorauslastung auswirken. Gleichzeitige Aktualisierungen werden durch die Kapazitätsgröße eingeschränkt (1,5 x Back-End-V-Kerne, aufgerundet).
+- **Gleichzeitige Abfragen**: Viele gleichzeitige Abfragen können zu nicht reagierenden Berichten führen, wenn Prozessor- oder LC/DQ-Verbindungen die Kapazitätsgrenze überschreiten. Dies gilt insbesondere für Berichtsseiten, die viele visuelle Elemente enthalten.
+- **Dataflows und paginierte Berichte**: Die Kapazität kann so konfiguriert werden, dass Dataflows und paginierte Berichte unterstützt werden, wobei jeder einen konfigurierbaren maximalen Prozentsatz des Kapazitätsspeichers erfordert. Der Arbeitsspeicher wird Dataflows dynamisch zugeordnet, ist paginierten Berichten jedoch statisch zugeordnet.
 
-Zusätzlich zu dieser Faktoren kann Kapazitätsadministratoren erwägen, mehrere Kapazitäten zu erstellen. Mehrere Kapazitäten ermöglichen die Isolierung von Workloads und können konfiguriert werden, um sicherzustellen, dass Kritischer arbeitsauslastungen garantiert, dass Ressourcen haben. Beispielsweise können zwei Kapazitäten erstellt werden, um geschäftskritische Workloads vom Self-service-BI (SSBI)-Workloads zu trennen. Die unternehmenskritischen Kapazität kann verwendet werden, um große Unternehmen Modelle bereit, mit garantierten Ressourcen, mit der Erstellung der Zugriff gewährt, die nur für die IT-Abteilung zu isolieren. Die Kapazität SSBI kann zu einem host eine wachsende Anzahl von kleineren Modellen mit Zugriff erteilt für Wirtschaftsanalytiker verwendet werden. Die Kapazität SSBI treten möglicherweise gelegentlich Abfrage oder Aktualisierung Wartevorgänge, die akzeptiert werden.
+Zusätzlich zu diesen Faktoren können Kapazitätsadministratoren das Erstellen mehrerer Kapazitäten in Betracht ziehen. Mehrere Kapazitäten ermöglichen das Isolieren von Workloads und können so konfiguriert werden, dass Workloads mit Priorität garantierte Ressourcen zur Verfügung stehen. Es können beispielsweise zwei Kapazitäten erstellt werden, um unternehmenskritische Workloads von SSBI-Workloads (Self-Service-BI) zu trennen. Die unternehmenskritische Kapazität kann verwendet werden, um große Unternehmensmodelle zu isolieren und ihnen garantierte Ressourcen bereitzustellen, wobei der Erstellungszugriff nur der IT-Abteilung erteilt wird. Die SSBI-Kapazität kann verwendet werden, um eine wachsende Anzahl kleinerer Modelle zu hosten, wobei der Zugriff den Business Analysts gewährt wird. Bei der SSBI-Kapazität kann es gelegentlich zu tolerierbaren Wartezeiten bei der Abfrage oder Aktualisierung kommen.
 
-Im Laufe der Zeit kann Kapazitätsadministratoren Arbeitsbereiche auf Kapazitäten durch das Verschieben von Inhalten zwischen Arbeitsbereichen oder zwischen Kapazitäten-Arbeitsbereiche und skalieren Kapazitäten, oben oder unten zu verteilen. Im Allgemeinen Skalieren für Host größere Modelle, die Sie skalieren, und höhere Parallelität zu erzielen Sie.
+Im Laufe der Zeit können Kapazitätsadministratoren Arbeitsbereiche kapazitätsübergreifend ausgleichen, indem sie Inhalte zwischen Arbeitsbereichen oder Arbeitsbereiche zwischen Kapazitäten verschieben und Kapazitäten zentral hoch- oder herunterskalieren. Im Allgemeinen wird zum Hosten größerer Modelle eine zentrale Hochskalierung und für höhere Parallelität eine horizontale Hochskalierung vorgenommen.
 
-Denken Sie daran, dass Erwerb einer Lizenz des Mandanten mit der V-Kerne zur Verfügung. Der Kauf von einer **P3** -Abonnement verwendet werden kann, erstellen, oder bis zu vier Premium-Kapazitäten, d. h. 1 x P3 oder 2 x P2 oder 4 x P1. Darüber hinaus können vor dem Upsizing eine P2-Kapazität P3 Kapazität berücksichtigt werden, um die V-Kerne aufteilen zwei P1-Kapazitäten zu erstellen.
+Durch den Erwerb einer Lizenz werden dem Mandanten V-Kerne bereitgestellt. Bei Erwerb eines **P3**-Abonnements können eine oder bis zu vier Premium-Kapazitäten erstellt werden, d.h. 1 x P3 oder 2 x P2 oder 4 x P1. Außerdem kann vor der Erweiterung einer P2-Kapazität auf eine P3-Kapazität die Aufteilung der V-Kerne in zwei P1-Kapazitäten in Betracht gezogen werden.
 
-## <a name="testing-approaches"></a>Testen von Vorgehensweisen
+## <a name="testing-approaches"></a>Testansätze
 
-Sobald eine Kapazitätsgröße entschieden wird, kann Tests ausgeführt werden, durch das Erstellen einer kontrollierten Umgebung. Eine praktische und eine wirtschaftliche Option ist die Erstellung einer Kapazitäten in Azure (A-SKUs), beachten Sie, dass eine P1-Kapazität auf die gleiche Größe wie eine A4-Kapazität, mit dem P2 ist und P3-Kapazitäten die gleiche Größe wie die Kapazitäten A5 und A6 jeweils. Azure-Kapazitäten können schnell erstellt werden und werden auf Stundenbasis in Rechnung gestellt. Also nach Tests abgeschlossen wurden, können sie problemlos gelöscht werden, um verwendungsgebühren Kosten.
+Nachdem eine Kapazitätsgröße festgelegt wurde, können Tests durchgeführt werden, indem eine kontrollierte Umgebung erstellt wird. Eine praktische und wirtschaftliche Möglichkeit besteht darin, eine Azure-Kapazität (A-SKUs) zu erstellen, wobei darauf zu achten ist, dass eine P1-Kapazität dieselbe Größe wie eine A4-Kapazität und die P2- und P3-Kapazität die gleiche Größe wie die A5- bzw. A6-Kapazität hat. Azure-Kapazitäten können schnell erstellt und auf Stundenbasis abgerechnet werden. So können sie nach Abschluss der Tests einfach gelöscht werden, um anfallende Kosten zu vermeiden.
 
-Der Testinhalt auf der Azure-Kapazität erstellten Arbeitsbereiche im Rahmen hinzugefügt werden kann, und klicken Sie dann als einen einzelnen Benutzer kann Berichte ausführen, um eine realistische und repräsentativen arbeitsauslastung mit Abfragen zu generieren. Wenn importmodelle vorhanden sind, sollte auch eine Aktualisierung für jedes Modell ausgeführt werden. Überwachungstools kann dann verwendet werden, überprüfen Sie alle Metriken, um die Ressourcenverwendung zu verstehen.
+Der Testinhalt kann zu den Arbeitsbereichen hinzugefügt werden, die in der Azure-Kapazität erstellt wurden, und dann kann ein einzelner Benutzer Berichte ausführen, um eine realistische und repräsentative Workload von Abfragen zu generieren. Wenn Importmodelle vorhanden sind, sollte auch eine Aktualisierung für jedes Modell durchgeführt werden. Überwachungstools können dann zum Überprüfen aller Metriken verwendet werden, um die Ressourcennutzung zu verstehen.
 
-Es ist wichtig, dass die Tests wiederholt werden. Tests sollten mehrere Male ausgeführt werden, und sie sollten jedes Mal, etwa das gleiche Ergebnis liefern. Durchschnittlich diese Ergebnisse kann dann extrapolieren können und schätzen die Workload unter Produktionsbedingungen "true" verwendet werden.
+Es ist wichtig, dass die Tests wiederholbar sind. Tests sollten mehrmals ausgeführt werden und jedes Mal ungefähr dasselbe Ergebnis liefern. Der Durchschnitt dieser Ergebnisse kann verwendet werden, um eine Workload unter echten Produktionsbedingungen zu extrapolieren und abzuschätzen.
 
-Erwägen Sie die Entwicklung eines Auslastungstests, die Anwendung zur Simulation einer realistischen arbeitsauslastung, um einen Belastungstest zu generieren. Einzelheiten hierzu werden außerhalb des Bereichs der in diesem Artikel. Weitere Informationen einschließlich ein Codebeispiel finden Sie in der [Auslastungstests in Power BI-Anwendungen mit Visual Studio-Auslastungstests](https://blogs.msdn.microsoft.com/charles_sterling/2018/04/04/webinar-load-testing-power-bi-applications-with-visual-studio-load-test/) Webinar.
+Wenn Sie bereits über eine Kapazität und die Berichte verfügen, für die Sie einen Auslastungstest durchführen möchten, verwenden Sie das [PowerShell-Tool zum Generieren einer Auslastung](https://aka.ms/PowerBILoadTestingTool), um schnell einen Auslastungstest zu erzeugen. Mit dem Tool können Sie abschätzen, wie viele Instanzen jedes Berichts ihre Kapazität innerhalb einer Stunde ausführen kann. Sie können das Tool verwenden, um die Fähigkeit der Kapazität zum Rendern einzelner Berichte oder zum parallelen Rendern mehrerer verschiedener Berichte abzuschätzen. Weitere Informationen erhalten Sie im Video [Microsoft Power BI: Premium-Kapazität](https://www.youtube.com/watch?time_continue=1860&v=C6vk6wk9dcw).
 
-## <a name="acknowledgements"></a>Bestätigungen
+Zum Generieren eines komplexeren Tests sollten Sie die Entwicklung einer Auslastungstestanwendung in Betracht ziehen, die eine realistische Workload simuliert. Weitere Informationen erhalten Sie im Webinar zum Thema [Testen von Power BI-Anwendungen mit dem Visual Studio-Auslastungstest](https://blogs.msdn.microsoft.com/charles_sterling/2018/04/04/webinar-load-testing-power-bi-applications-with-visual-studio-load-test/).
 
-Dieser Artikel geschrieben wurde, indem Peter Myers, Data Platform MVP und unabhängige BI-Experte mit [bitweise Lösungen](https://www.bitwisesolutions.com.au/).
+## <a name="acknowledgements"></a>Danksagungen
+
+Dieser Artikel wurde von Peter Myers, Data Platform MVP und unabhängiger BI-Experte bei [Bitwise Solutions](https://www.bitwisesolutions.com.au/), verfasst.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 > [!div class="nextstepaction"]
-> [Szenarien für Premium-Kapazität](service-premium-capacity-scenarios.md)   
+> [Szenarios mit Premium-Kapazitäten](service-premium-capacity-scenarios.md)   
   
 Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
 

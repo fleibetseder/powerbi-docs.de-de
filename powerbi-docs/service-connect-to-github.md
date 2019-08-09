@@ -7,38 +7,38 @@ ms.reviewer: sarinas
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 04/26/2019
+ms.date: 07/21/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b0f2bd53f1d8b82b70072446723c2ca3723eeacd
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: f8091892f38f498c8072720ad1a93b0c4b07442b
+ms.sourcegitcommit: 390dc3716d5c83385bedde63dd152431a77020e2
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65608435"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68380242"
 ---
 # <a name="connect-to-github-with-power-bi"></a>Herstellen einer Verbindung mit GitHub mithilfe von Power BI
-Dieser Artikel führt Sie durch Abrufen von Daten aus Ihrem GitHub-Konto mit einer Power BI-app-Vorlage. Der vorlagenanwendung generiert einen Arbeitsbereich mit einem Dashboard, eine Reihe von Berichten und ein Dataset, damit Sie Ihre GitHub-Daten analysieren können. Die GitHub-app für Power BI erfahren Sie, Einblicke in Ihr GitHub-Repository, auch bekannt als Repository mit Daten zu Beiträgen, Problemen, pullanforderungen und aktive Benutzer.
+In diesem Artikel wird Schritt für Schritt erläutert, wie Sie Ihre Daten aus Ihrem GitHub-Konto mit einer Power BI-Vorlagen-App abrufen. Die Vorlagen-App generiert einen Arbeitsbereich mit einem Dashboard, einer Reihe von Berichten und einem Dataset, mit deren Hilfe Sie Ihre GitHub-Daten untersuchen können. Die GitHub-App für Power BI bietet Ihnen Einblicke in Ihr GitHub-Repository mit Daten zu Beiträgen, Problemen, Pullanforderungen und aktiven Benutzern.
 
-Nachdem Sie die Vorlagen-app installiert haben, können Sie auf dem Dashboard und Bericht ändern. Anschließend können Sie sie als app an Kollegen in Ihrer Organisation verteilen.
+Nachdem Sie die Vorlagen-App installiert haben, können Sie das Dashboard und den Bericht ändern. Anschließend können Sie sie als App an Kollegen in Ihrer Organisation verteilen.
 
-Herstellen einer Verbindung mit der [GitHub vorlagenanwendung](https://app.powerbi.com/getdata/services/github) oder erfahren Sie mehr über die [GitHub-Integration](https://powerbi.microsoft.com/integrations/github) mit Power BI.
+Stellen Sie eine Verbindung mit der [GitHub-Vorlagen-App](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github) her, oder erfahren Sie mehr über die [GitHub-Integration](https://powerbi.microsoft.com/integrations/github) in Power BI.
 
-Sie können auch versuchen, den [GitHub Tutorial](service-tutorial-connect-to-github.md). Real-GitHub-Daten über das öffentliche Repository für Power BI-Dokumentation wird installiert.
+Sie können auch das [GitHub-Tutorial](service-tutorial-connect-to-github.md) verwenden. Es installiert echte GitHub-Daten zum öffentlichen Repository für die Power BI-Dokumentation.
 
 >[!NOTE]
->Die Vorlagen-app erfordert das GitHub-Konto, um Zugriff auf das Repository zu erhalten. Es folgen weitere Informationen zu den Anforderungen.
+>Die Vorlagen-App erfordert, dass das GitHub-Konto auf das Repository zugreifen kann. Es folgen weitere Informationen zu den Anforderungen.
 
 ## <a name="how-to-connect"></a>Herstellen der Verbindung
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
    
-3. Wählen Sie **GitHub** \> **jetzt**.
-4. In **dieses Power BI-App installieren?** wählen **installieren**.
-4. In der **Apps** wählen Sie im Bereich der **GitHub** Kachel.
+3. Wählen Sie **GitHub** \> **Jetzt anfordern** aus.
+4. Wählen Sie unter **Diese Power BI-App installieren?** die Option **Installieren** aus.
+4. Wählen Sie im Bereich **Apps** die Kachel **GitHub** aus.
 
     ![Power BI: GitHub-Kachel](media/service-connect-to-github/power-bi-github-tile.png)
 
-6. In **beginnen Sie mit der neuen app**Option **Verbindungsdaten**.
+6. Wählen Sie unter **Erste Schritte mit Ihrer neuen App** die Option **Daten verbinden** aus.
 
     ![Erste Schritte mit Ihrer neuen App](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect-data.png)
 
@@ -46,48 +46,48 @@ Sie können auch versuchen, den [GitHub Tutorial](service-tutorial-connect-to-gi
    
     ![Power BI: Name des GitHub-Repositorys](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect.png)
 
-5. Geben Sie Ihre GitHub-Anmeldeinformationen (dieser Schritt kann übersprungen werden, wenn Sie bereits mit Ihrem Browser angemeldet sind). 
+5. Geben Sie Ihre GitHub-Anmeldeinformationen ein (dieser Schritt kann übersprungen werden, wenn Sie bereits mit Ihrem Browser angemeldet sind). 
 6. Wählen Sie als **Authentifizierungsmethode** die Option **oAuth2** \> **Anmelden** aus. 
-7. Führen Sie den Bildschirmen der GitHub-Authentifizierung. Gewähren Sie GitHub für Power BI-Vorlage app-Berechtigung für die GitHub-Daten.
+7. Befolgen Sie die Anweisungen auf den Bildschirmen der GitHub-Authentifizierung. Gewähren Sie der GitHub-Vorlagen-App für Power BI die Berechtigung für den Zugriff auf die GitHub-Daten.
    
-   ![Autorisieren von GitHub für Power BI](media/service-connect-to-github/github_authorize.png)
+   ![Power BI: GitHub autorisieren](media/service-connect-to-github/github_authorize.png)
    
-    Powerbi verbindet sich mit GitHub und Ihre Daten.  Die Daten werden einmal täglich aktualisiert. Nachdem Power BI die Daten importiert wurden, sehen Sie den Inhalt des neuen GitHub-Arbeitsbereichs.
+    Power BI stellt eine Verbindung mit GitHub und Ihren Daten her.  Die Daten werden einmal täglich aktualisiert. Nachdem Power BI die Daten importiert hat, werden die Inhalte Ihres neuen GitHub-Arbeitsbereichs angezeigt.
 
-## <a name="modify-and-distribute-your-app"></a>Ändern Sie und verteilen Sie Ihre app
+## <a name="modify-and-distribute-your-app"></a>Ändern und Verteilen der App
 
-Sie haben die GitHub-app-Vorlage installiert. Das bedeutet, dass Sie auch den GitHub-app-Arbeitsbereich erstellt haben. Im Arbeitsbereich können Sie den Bericht und das Dashboard zu ändern und verteilen Sie es als ein *app* an Kollegen in Ihrer Organisation. 
+Sie haben die GitHub-Vorlagen-App installiert. Das bedeutet, dass Sie auch den Arbeitsbereich der GitHub-App erstellt haben. Im Arbeitsbereich können Sie den Bericht und das Dashboard ändern und dann als *App* an Kollegen in Ihrer Organisation verteilen. 
 
-1. Wählen Sie in der linken Navigationsleiste auf den Pfeil neben der Name des Arbeitsbereichs. Sie sehen, dass der Arbeitsbereich ein Dashboard und einen Bericht enthält.
+1. Klicken Sie in der linken Navigationsleiste auf den Pfeil neben dem Namen des Arbeitsbereichs. Sie sehen, dass der Arbeitsbereich ein Dashboard und einen Bericht enthält.
 
     ![App im linken Navigationsbereich](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
 
-8. Wählen Sie die neue [GitHub-Dashboard](https://powerbi.microsoft.com/integrations/github).    
-    ![GitHub-Dashboards in Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-new-dashboard.png)
+8. Wählen Sie das neue [GitHub-Dashboard](https://powerbi.microsoft.com/integrations/github) aus.    
+    ![GitHub-Dashboard in Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-new-dashboard.png)
 
-3. Wählen Sie zum Anzeigen der gesamte Inhalt des dem neuen GitHub-Arbeitsbereich, in der linken Navigationsleiste **Arbeitsbereiche** > **GitHub**.
+3. Klicken Sie in der linken Navigationsleiste auf **Arbeitsbereiche** > **GitHub**, um den gesamten Inhalt Ihres neuen GitHub-Arbeitsbereichs anzuzeigen.
  
-   ![Arbeitsbereich "GitHub" im linken Navigationsbereich](media/service-connect-to-github/power-bi-github-left-nav.png)
+   ![GitHub-Arbeitsbereich im linken Navigationsbereich](media/service-connect-to-github/power-bi-github-left-nav.png)
 
-    Diese Ansicht ist die Liste mit den Inhalten für den Arbeitsbereich. In der oberen rechten Ecke finden Sie **app aktualisieren**. Wenn Sie Ihre app an Ihre Kollegen verteilen möchten, ist, in dem Sie beginnen. 
+    Diese Ansicht ist die Inhaltsliste für den Arbeitsbereich. In der oberen rechten Ecke wird **App aktualisieren** angezeigt. Wenn Sie bereit sind, die App an Ihre Kollegen zu verteilen, beginnen Sie hier damit. 
 
-    ![GitHub content list](media/service-connect-to-github/power-bi-github-content-list.png)
+    ![GitHub-Inhaltsliste](media/service-connect-to-github/power-bi-github-content-list.png)
 
-2. Wählen Sie **Berichte** und **Datasets** die anderen Elementen im Arbeitsbereich angezeigt.
+2. Wählen Sie **Berichte** und **Datasets** aus, um die anderen Elemente im Arbeitsbereich anzuzeigen.
 
-    Erfahren Sie mehr über [Verteilen von apps](service-create-distribute-apps.md) an Ihre Kollegen.
+    Informieren Sie sich über das [Verteilen von Apps](service-create-distribute-apps.md) an Ihre Kollegen.
 
-## <a name="whats-included-in-the-app"></a>Was ist in der app enthalten.
+## <a name="whats-included-in-the-app"></a>Was ist in der App enthalten?
 Die folgenden Daten sind über GitHub in Power BI verfügbar:     
 
 | Tabellenname | Beschreibung |
 | --- | --- |
-| Beiträge |Die Beiträge-Tabelle enthält die gesamten Zugänge, löschungen und Commits, die von den Mitwirkenden, die wöchentlich aggregiert erstellt wurde. Die Top 100-Mitwirkenden sind inklusive. |
+| Beiträge |Die Tabelle für „Beiträge“ bietet die vom Mitwirkenden erstellten gesamten Zugänge, Abgänge und Commits, die wöchentlich aggregiert werden. Die Top 100-Mitwirkenden sind inklusive. |
 | Probleme |Listet alle Probleme für das ausgewählte Repository auf und enthält Berechnungen wie die gesamte und durchschnittliche Zeit zum Schließen eines Problems, die Gesamtzahl offener Probleme sowie die Gesamtzahl geschlossener Probleme. Diese Tabelle ist leer, wenn im Repository keine Probleme vorliegen. |
-| Pullanforderungen |Diese Tabelle enthält alle Pullanforderungen für das Repository und die Information, welcher Benutzer den Pullvorgang für die Anforderung ausgeführt hat. Es enthält auch Berechnungen dazu, wie viele geöffnete, geschlossene und insgesamt pullanforderungen, wie lange es gedauert hat die pullanforderungen und wie lange die durchschnittliche pullanforderung gedauert hat. Diese Tabelle ist leer, wenn im Repository keine Probleme vorliegen. |
-| Benutzer |Diese Tabelle enthält eine Liste der GitHub-Benutzern oder Mitwirkenden, die Beiträge geleistet, Probleme gemeldet oder pullanforderungen für das ausgewählte Repository gelöst haben. |
+| Pullanforderungen |Diese Tabelle enthält alle Pullanforderungen für das Repository und die Information, welcher Benutzer den Pullvorgang für die Anforderung ausgeführt hat. Sie enthält auch Berechnungen dazu, wie viele geöffnete, geschlossene und insgesamt verfügbare Pullanforderungen vorliegen, und wie lange die Pullanforderungen und die durchschnittliche Pullanforderung gedauert haben. Diese Tabelle ist leer, wenn im Repository keine Probleme vorliegen. |
+| Benutzer |Diese Tabelle enthält eine Liste von GitHub-Benutzern oder Mitwirkenden, die Beiträge geleistet, Probleme gemeldet oder Pullanforderungen für das ausgewählte Repository gelöst haben. |
 | Meilensteine |Diese Tabelle enthält alle Meilensteine für das ausgewählte Repository. |
-| DateTable |Diese Tabelle enthält die Datumsangaben von heute und für vergangene Jahre, die Ihnen ermöglichen, Ihre GitHub-Daten nach Datum zu analysieren. |
+| DateTable |Diese Tabelle enthält Datumsangaben von heute und für vergangene Jahre, die es Ihnen ermöglichen, Ihre GitHub-Daten nach Datum zu analysieren. |
 | ContributionPunchCard |Diese Tabelle kann als Lochkarte für Beiträge für das ausgewählte Repository verwendet werden. Es zeigt die Commits nach Wochentag und Tagesstunde an. Diese Tabelle ist nicht mit anderen Tabellen im Modell verbunden. |
 | RepoDetails |Diese Tabelle enthält die Details für das ausgewählte Repository. |
 
@@ -97,13 +97,13 @@ Die folgenden Daten sind über GitHub in Power BI verfügbar:
 * Ausreichende Anzahl verfügbarer API-Aufrufe zum Abrufen und Aktualisieren der Daten  
 
 ### <a name="de-authorize-power-bi"></a>Aufheben der Autorisierung von Power BI
-Um die Power BI Autorisierung zur mit Ihrem GitHub-Repository verbunden wird, können Sie den Zugriff in GitHub widerrufen. Finden Sie in diesem [Hilfe zu GitHub](https://help.github.com/articles/keeping-your-ssh-keys-and-application-access-tokens-safe/#reviewing-your-authorized-applications-oauth) Informationen.
+Sie können den Zugriff in GitHub widerrufen, um die Autorisierung von Power BI zur Verbindung mit Ihrem GitHub-Repository aufzuheben. Weitere Informationen finden Sie unter diesem [GitHub-Hilfethema](https://help.github.com/articles/keeping-your-ssh-keys-and-application-access-tokens-safe/#reviewing-your-authorized-applications-oauth).
 
 <a name="FindingParams"></a>
 ## <a name="finding-parameters"></a>Suchen von Parametern
 Sie können den Besitzer und das Repository ermitteln, indem Sie das Repository in GitHub betrachten:
 
-![Repository-Namen und Besitzer](media/service-connect-to-github/github_ownerrepo.png)
+![Name und Besitzer des Repositorys](media/service-connect-to-github/github_ownerrepo.png)
 
 Der erste Teil „Azure“ ist der Besitzer und der zweite Teil „azure-sdk-for-php“ ist das Repository selbst.  Dieselben beiden Elemente werden in der URL des Repositorys angezeigt:
 
@@ -112,15 +112,15 @@ Der erste Teil „Azure“ ist der Besitzer und der zweite Teil „azure-sdk-for
 ## <a name="troubleshooting"></a>Problembehandlung
 Bei Bedarf können Sie Ihre GitHub-Anmeldeinformationen überprüfen.  
 
-1. In einem anderen Browserfenster wechseln Sie zur GitHub-Website, und melden Sie sich bei GitHub. Sie können in der oberen rechten Ecke der GitHub-Website sehen, dass Sie angemeldet sind.    
+1. Navigieren Sie in einem anderen Browserfenster zur GitHub-Website, und melden Sie sich bei GitHub an. Sie können in der oberen rechten Ecke der GitHub-Website sehen, dass Sie angemeldet sind.    
 2. Navigieren Sie in GitHub zur URL des Repositorys, auf das Sie in Power BI zugreifen möchten. Beispiel: https://github.com/dotnet/corefx  
 3. Versuchen Sie anschließend in Power BI, die Verbindung zu GitHub herzustellen. Verwenden Sie im Dialogfeld zum Konfigurieren von GitHub den Namen und Besitzer des Repositorys für dasselbe Repository.  
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-* [Tutorial: Verbinden Sie mit einem GitHub-Repository mit Power BI](service-tutorial-connect-to-github.md)
-* [Erstellen Sie die neue Arbeitsbereiche in Power BI](service-create-the-new-workspaces.md)
+* [Tutorial: Herstellen einer Verbindung mit einem GitHub-Repository mit Power BI](service-tutorial-connect-to-github.md)
+* [Erstellen der neuen Arbeitsbereiche in Power BI](service-create-the-new-workspaces.md)
 * [Installieren und Verwenden von Apps in Power BI](consumer/end-user-apps.md)
-* [Verbinden Sie mit Power BI-apps für externe Dienste](service-connect-to-services.md)
+* [Herstellen einer Verbindung mit Power BI-Apps für externe Dienste](service-connect-to-services.md)
 * Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
 

@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/18/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 96939c3ad29418ad868175dfd8093847ab427187
-ms.sourcegitcommit: 63a697c67e1ee37e47b21047e17206e85db64586
+ms.openlocfilehash: d1a057f56237a0609f3330d4728c7dfcded84a71
+ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67498970"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68391122"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Bring Your Own Key für Verschlüsselungsschlüssel in Power BI (Vorschauversion)
 
@@ -45,6 +45,9 @@ Die Anweisungen in diesem Abschnitt setzen grundlegende Kenntnisse des Azure Key
 
 1. Erstellen sie einen RSA-Schlüssel mit einer Länge von 4096 Bit (oder verwenden Sie einen vorhandenen Schlüssel dieses Typs) mit Berechtigungen zum Packen und Entpacken.
 
+    > [!IMPORTANT]
+    > Power BI BYOK unterstützt nur RSA-Schlüssel mit einer Länge von 4096 Bit.
+
 1. Empfohlen: Achten Sie darauf, dass die Option _Vorläufiges Löschen_ für den Schlüsseltresor aktiviert ist.
 
 ### <a name="add-the-service-principal"></a>Hinzufügen des Dienstprinzipals
@@ -52,6 +55,9 @@ Die Anweisungen in diesem Abschnitt setzen grundlegende Kenntnisse des Azure Key
 1. Klicken Sie im Azure-Portal in Ihrem Schlüsseltresor unter **Access policies** (Zugriffsrichtlinien) auf **Add New** (Neue hinzufügen).
 
 1. Suchen Sie unter **Select principal** (Prinzipal auswählen) nach Microsoft.Azure.AnalysisServices, und wählen Sie dieses aus.
+
+    > [!NOTE]
+    > Wenn Sie „Microsoft. Azure.AnalysisServices“ nicht finden können, ist wahrscheinlich dem Azure-Abonnement, das Ihrem Azure Key Vault zugeordnet ist, nie eine Power BI-Ressource zugeordnet worden. Suchen Sie stattdessen nach der folgenden Zeichenfolge: 00000009-0000-0000-c000-000000000000.
 
 1. Aktivieren Sie unter **Key permissions** (Schlüsselberechtigungen) **Unwrap key** (Schlüssel entpacken) und **Wrap key** (Schlüssel packen).
 

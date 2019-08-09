@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/06/2019
+ms.date: 07/26/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 554a5de238af650ab4009669d55a2fadedd4a29f
-ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.openlocfilehash: 531cb34379c984a26e983db7acfc9b4deebf68b9
+ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66809142"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590434"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI für Angehörige von US-Behörden
 Für den **Power BI-Dienst** ist im Rahmen von **Office 365 US Government Community**-Abonnements eine Version für Kunden verfügbar, die Angehörige von US-Behörden sind. Die in diesem Artikel vorgestellte Version des **Power BI-Diensts** ist speziell für Angehörige von US-Behörden konzipiert. Es handelt sich hierbei um ein separates und von der kommerziellen Version des **Power BI-Diensts** abweichendes Produkt.
@@ -48,8 +48,7 @@ Azure ist auf mehrere Clouds verteilt. Standardmäßig dürfen Mandanten Firewal
 * USGov Texas
 * USGov Arizona
 
-In der öffentlichen Cloud sind die IP-Adressbereiche verfügbar, für die Government Cloud müssen Sie jedoch ein Azure-Supportticket öffnen, um die IP-Adressbereiche für die oben aufgeführten Datencenter anzufordern. 
-
+In der öffentlichen Cloud sind die IP-Adressbereiche verfügbar. Die neusten Informationen zur Government Cloud finden Sie in der herunterladbaren [Dokumentation zum Azure Government-Dienst](https://www.microsoft.com/download/details.aspx?id=57063).
 
 ## <a name="limitations-of-power-bi-us-government"></a>Einschränkungen von Power BI US Government
 Einige Funktionen, die in der kommerziellen Version des **Power BI-Diensts** verfügbar sind, stehen im **Power BI-Dienst** für Angehörige von US-Behörden *nicht* zur Verfügung. Das Power BI-Team arbeitet derzeit daran, diese Funktionen auch für Kunden bei US-Behörden zur Verfügung zu stellen. Dieser Artikel wird aktualisiert, sobald diese Funktionen verfügbar sind.

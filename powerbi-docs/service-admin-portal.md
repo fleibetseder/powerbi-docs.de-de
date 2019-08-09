@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/27/2019
+ms.date: 07/25/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: a871a7475dd8282f9ce63646c371182548504357
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: 751bcb5ee3b383853f0087bab406d59a2271b588
+ms.sourcegitcommit: 4595a6231615d253aead315cb3f85472e2f189e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67568135"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68501788"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Verwalten von Power BI im Verwaltungsportal
 
@@ -133,7 +133,7 @@ Um Überwachungsprotokolle zu verwenden, stellen Sie sicher, dass die Einstellun
 
 Die Registerkarte **Mandanteneinstellungen** ermöglicht eine fein abgestufte Steuerung der Features, die für Ihre Organisation zur Verfügung stehen. Wenn Sie über vertrauliche Daten verfügen, die besonders geschützt werden müssen, sind einige der Features möglicherweise nicht für Ihre Organisation geeignet bzw. bestimmte Funktionen sollten nur für eine bestimme Gruppe bereitgestellt werden.
 
-Die folgende Abbildung zeigt die ersten beiden Abschnitte der Registerkarte **Mandanteneinstellungen**.
+Die folgende Abbildung zeigt mehrere Einstellungen auf der Registerkarte **Mandanteneinstellungen**.
 
 ![Mandanteneinstellungen](media/service-admin-portal/powerbi-admin-tenant-settings.png)
 
@@ -169,6 +169,10 @@ Die nächsten Abschnitte bieten einen Überblick über die verschiedenen Arten v
 Benutzer in der Organisation können über das Hilfemenü von Power BI zur internen Hilfe und zu Supportressourcen gelangen. Insbesondere ändern diese Parameter das Verhalten der Menüelemente „Weitere Informationen“, „Community“ und „Hilfe erhalten“.
 
 Es ist auch möglich, eine URL anzugeben, um Benutzer zu einer benutzerdefinierten Lösung für Lizenzierungsanforderungen zu leiten. Dieser Parameter passt die Ziel-URL der Schaltfläche „Upgrade für Konto ausführen“ an, die ein Benutzer ohne Power BI Pro-Lizenz im Dialogfeld „Aktualisieren auf Power BI Pro“ sowie auf der Seite „Persönlichen Speicher verwalten“ finden kann.
+
+### <a name="receive-email-notifications-for-service-outages-or-incidents"></a>E-Mail-Benachrichtigungen bei Dienstausfällen oder Incidents
+
+E-Mail-aktivierte Sicherheitsgruppen erhalten E-Mail-Benachrichtigungen, wenn dieser Mandant von einem Dienstausfall oder einem Incident betroffen ist. Weitere Informationen finden Sie unter [Dienstunterbrechungsbenachrichtigungen](service-interruption-notifications.md).
 
 ## <a name="workspace-settings"></a>Arbeitsbereichseinstellungen
 

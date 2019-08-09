@@ -10,21 +10,21 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 39f5a01a396e45207777b1a5e58e73808ddf3f88
-ms.sourcegitcommit: a58461fe7dfa65c751490b52de5fc73f8e69a17f
+ms.openlocfilehash: 1a2415ba840a1b88f4c7a215a520d0cc88f70e49
+ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68352173"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68462218"
 ---
 # <a name="merge-or-append-on-premises-and-cloud-data-sources"></a>Zusammenführen oder Anfügen von lokalen und Clouddatenquellen
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Mit dem lokalen Datengateway können Sie lokale und Clouddatenquellen in derselben Abfrage zusammenführen oder daran anfügen. Dies ist hilfreich, wenn Sie Daten aus mehreren Quellen in derselben Abfrage kombinieren möchten.
+Sie können das lokale Datengateway verwenden, um lokale und Clouddatenquellen in derselben Abfrage zusammenzuführen oder daran anzufügen. Diese Lösung ist hilfreich, wenn Sie Daten aus mehreren Quellen in derselben Abfrage kombinieren möchten.
 
 >[!NOTE]
->Dieser Artikel gilt nur für Datensätze, bei denen Cloud- und lokale Datenquellen in einer einzigen Abfrage zusammengefasst oder hinzugefügt wurden. Für Datensätze, die getrennte Abfragen beinhalten – eine Verbindung zu einer lokalen und eine Verbindung zu einer Clouddatenquelle – wird die Abfrage anhand der Clouddatenquelle nicht über das Gateway ausgeführt.
+>Dieser Artikel gilt nur für Datensätze, bei denen Cloud- und lokale Datenquellen in einer einzigen Abfrage zusammengefasst oder hinzugefügt wurden. Bei Datasets, die getrennte Abfragen beinhalten – eine mit einer Verbindung zu einer lokalen Datenquelle und eine mit einer Verbindung zu einer Clouddatenquelle –, führt das Gateway die Abfrage für die Clouddatenquelle nicht aus.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -51,14 +51,13 @@ Mit dem lokalen Datengateway können Sie lokale und Clouddatenquellen in derselb
 6. Gehen Sie auf der Seite **Dataseteinstellungen** für das neue Dataset folgendermaßen vor:
 
    - Wählen Sie für die lokale Quelle das Gateway aus, das dieser Datenquelle zugeordnet ist.
-
    - Bearbeiten Sie unter **Datenquellen-Anmeldeinformationen** die Clouddatenquellen-Anmeldeinformationen nach Bedarf.
 
     Stellen Sie sicher, dass die Datenschutzebenen sowohl für Cloud- als auch für lokale Datenquellen entsprechend eingestellt sind, um sicherzustellen, dass die Joins sicher verarbeitet werden.
 
      ![Dataseteinstellungen](media/service-gateway-mashup-on-premises-cloud/dataset-settings.png)
 
-7. Wenn Sie die Cloudanmeldeinformationen festgelegt haben, können Sie das Dataset mithilfe der Option **Jetzt aktualisieren** aktualisieren oder eine Aktualisierung in regelmäßigen Abständen planen.
+7. Wenn Sie die Cloudanmeldeinformationen festgelegt haben, können Sie eine Aktualisierung des Datasets mithilfe der Option **Jetzt aktualisieren** vornehmen. Sie können aber auch eine Aktualisierung in regelmäßigen Abständen planen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/19/2019
+ms.date: 07/25/2019
 ms.author: mblythe
-ms.openlocfilehash: 0bb78e29cc3e9b9792d5916050179703281aa01a
-ms.sourcegitcommit: 850e7883e21190151684e32f4d957beecd08e959
+ms.openlocfilehash: a33ace000917311cbd060c853e0122034a396ae2
+ms.sourcegitcommit: 4595a6231615d253aead315cb3f85472e2f189e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "68366747"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68501725"
 ---
 # <a name="service-interruption-notifications"></a>Dienstunterbrechungsbenachrichtigungen
 
@@ -28,10 +28,10 @@ Derzeit senden wir E-Mails zu folgenden _Zuverlässigkeitsszenarios_:
 - Zuverlässigkeit der Aktualisierung eines Modells
 - Zuverlässigkeit der Aktualisierung einer Abfrage
 
-Nachdem ein Incident aufgelöst wurde, erhalten Sie erneut eine E-Mail.
+Beispiele für diese Benachrichtigungen sind, wenn Benutzer eine längere Verzögerung bei Vorgängen wie dem Öffnen von Berichten, dem Aktualisieren von Datasets oder dem Ausführen von Abfragen feststellen. Nachdem ein Incident aufgelöst wurde, erhalten Sie erneut eine E-Mail.
 
 > [!NOTE]
-> Diese Funktion ist zurzeit nur für dedizierte Kapazitäten in Power BI Premium verfügbar. Sie ist nicht für gemeinsam genutzte Kapazität verfügbar.
+> Diese Funktion ist zurzeit nur für dedizierte Kapazitäten in Power BI Premium verfügbar. Sie ist nicht für gemeinsam genutzte oder eingebettete Kapazität verfügbar.
 
 ## <a name="enable-notifications"></a>Aktivieren von Benachrichtigungen
 

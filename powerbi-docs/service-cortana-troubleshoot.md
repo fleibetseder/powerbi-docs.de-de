@@ -11,20 +11,20 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 449d47606829c8555e0b64e7f07d1b414b99fea7
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: cb0870bf6f1cdca3cb1f95dc516f5f9124422327
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375228"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523363"
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>Behandeln von Problemen bei Cortana für Power BI
 Dieser Artikel ist Teil einer Serie. 
 
 > [!IMPORTANT]
-> Cortana-Integration ist in Power BI veraltet. Gestartet am 11. Juni, funktioniert Cortana nicht mehr für alle Dashboards und Berichte.
+> Die Cortana-Integration in Power BI wird eingestellt. Ab dem 11. Juni funktioniert Cortana nicht mehr für Dashboards und Berichte.
 
-Wenn Sie beim Abrufen von Cortana in Power BI integrieren Probleme auftreten, sind Sie an die richtige Stelle gekommen. Führen Sie die folgenden Schritte zum Diagnostizieren und Beheben des Problems aus.
+Wenn Probleme beim Integrieren von Cortana in Power BI auftreten, finden Sie hier entsprechende Lösungsvorschläge. Führen Sie die folgenden Schritte zum Diagnostizieren und Beheben des Problems aus.
 
 ## <a name="why-doesnt-cortana-find-answers-from-my-power-bi-reports-or-dashboards"></a>Warum findet Cortana keine Antworten in meinen Power BI-Berichten oder -Dashboards?
 1. Haben Sie ein Power BI-Konto?  Wenn nicht, [Registrieren Sie sich für eine kostenlose Testversion](https://powerbi.microsoft.com/get-started/).
