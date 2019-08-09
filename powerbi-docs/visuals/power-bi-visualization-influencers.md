@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: cf07318b5866d3f893d745fc8a8bba85cc9680d9
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: d41fc5991a95b51f71d0db522d4de84454de4ca2
+ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751253"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590601"
 ---
 # <a name="key-influencers-visualization"></a>Visual „Wichtige Einflussfaktoren“
 Mithilfe des Visuals „Wichtige Einflussfaktoren“ können Sie die wichtigen Faktoren einer für Sie relevanten Metrik besser nachvollziehen. Es analysiert die Daten, erstellt eine Rangfolge für wichtige Faktoren und stellt diese dar. Angenommen, Sie möchten beispielsweise ermitteln, wodurch die Personalfluktuation oder Abwanderung beeinflusst wird. Dabei können z. B. die Länge des Anstellungsvertrags oder das Alter des Mitarbeiters wichtige Faktoren darstellen. 
@@ -132,8 +132,13 @@ Aus dem Visual ist ersichtlich, dass sich die Wahrscheinlichkeit einer niedrigen
  
 Im Punktdiagramm im rechten Bereich wird durchschnittliche Prozentsatz der niedrigen Bewertungen für die einzelnen Werte der Verwendungsdauer dargestellt. Die Steigung wird mit einer Trendlinie hervorgehoben.
 
-
 ![Punktdiagramm für Verwendungsdauer](media/power-bi-visualization-influencers/power-bi-tenure.png)
+
+## <a name="binned-continuous-key-influencers"></a>Klassifizierte kontinuierliche wichtige Einflussfaktoren
+
+In einigen Fällen stellen Sie möglicherweise fest, dass ihre kontinuierlichen Faktoren automatisch in kategorische Faktoren umgewandelt wurden. Ursache hierfür ist die Feststellung, dass die Beziehung zwischen den Variablen nicht linear ist, weshalb die Beziehung nicht als einfach größer oder kleiner werdend beschrieben werden kann (wie dies im obigen Beispiel der Fall ist).
+
+Es werden Korrelationstests ausgeführt, um zu bestimmen, wie linear der Einflussfaktor in Bezug auf das Ziel ist. Ist das Ziel kontinuierlich, werden Pearson-Korrelationstests ausgeführt, und ist das Ziel kategorisch, werden punktbiseriale Korrelationstests ausgeführt. Wird festgestellt, dass die Beziehung nicht ausreichend linear ist, wird eine überwachte Klassifizierung ausgeführt und werden maximal fünf Klassen generiert. Um herauszufinden, welche Klassen am sinnvollsten sind, wird eine überwachte Klassifizierungsmethode verwendet, in der die Beziehung zwischen dem erläuternden Faktor und dem analysierten Ziel untersucht wird.
 
 ## <a name="interpret-measures-and-aggregates-as-key-influencers"></a>Interpretieren von Measures und Aggregaten als wichtige Einflussfaktoren 
  
@@ -209,15 +214,14 @@ In den wichtigsten Segmenten für numerische Zielsetzungen werden Gruppen angege
 
 ## <a name="considerations-and-troubleshooting"></a>Zu beachtende Aspekte und Problembehandlung 
  
-**Welche Einschränkungen sind in der Vorschauversion vorhanden?** 
+**Welche Einschränkungen gibt es für das Visual?** 
  
-Das Visual „Wichtige Einflussfaktoren“ ist derzeit als öffentliche Vorschauversion verfügbar und weist einige Einschränkungen auf. Derzeit sind folgende Funktionen nicht verfügbar: 
-- Das Analysieren von Metriken, bei denen es sich um Aggregate oder Measures handelt
-- Das Verwenden des Visuals in Power BI Embedded
-- Das Verwenden des Visuals in mobilen Power BI-Apps
-- Unterstützung von RLS
-- Unterstützung von DirectQuery
-- Unterstützung für Liveverbindung
+Für das Visual „Wichtige Einflussfaktoren“ gibt es einige Einschränkungen:
+
+- Direkte Abfrage wird nicht unterstützt.
+- Liveverbindung mit Azure Analysis Services und SQL Server Analysis Services wird nicht unterstützt.
+- Webveröffentlichung wird nicht unterstützt.
+- .NET Framework 4.6 oder höher ist erforderlich.
 
 ![Numerische Frage](media/power-bi-visualization-influencers/power-bi-ki-numeric-question.png)
 
@@ -263,7 +267,7 @@ Dieser Fehler wird angezeigt, da das Gerät nicht auf Kundenebene definiert wurd
 - Sie können die Zusammenfassung von zu zählenden Geräten ändern. Verwenden Sie beispielsweise „count“, wenn sich die Anzahl von Geräten möglicherweise auf die Bewertung auswirkt, die ein Kunde abgibt. 
 - Sie können die Spalte „device“ pivotieren, um festzustellen, ob sich die Verwendung des Diensts auf einem bestimmten Gerät auf die Kundenbewertung auswirkt.
  
-In diesem Beispiel wurden die Daten pivotiert, sodass die neuen Spalten „browser“, „mobile“ und „tablet“ erstellt wurden. Nun können Sie diese Geräte in **Erläuterung nach** verwenden. Daraus ergibt sich, dass alle Geräte Einflussfaktoren sind, wobei der Browser jedoch die größte Auswirkung auf die Kundenbewertung hat.
+In diesem Beispiel wurden die Daten pivotiert, um neue Spalten für Browser, Mobilgeräte und Tablets zu erstellen (Sie dürfen nicht vergessen, die Beziehungen in der Modellierungsansicht zu löschen und neu zu erstellen, nachdem Sie die Daten pivotiert haben). Nun können Sie diese Geräte in **Erläuterung nach** verwenden. Daraus ergibt sich, dass alle Geräte Einflussfaktoren sind, wobei der Browser jedoch die größte Auswirkung auf die Kundenbewertung hat.
 
 Genauer gesagt ist die Wahrscheinlichkeit, dass Kunden eine niedrige Bewertung abgeben, 3,79-mal höher, wenn sie den Dienst nicht über den Browser verwenden. Für mobile Geräte weiter unten in der Liste gilt das Gegenteil. Die Wahrscheinlichkeit, dass Kunden eine niedrige Bewertung abgeben, ist höher, wenn sie die mobile App verwenden. 
 

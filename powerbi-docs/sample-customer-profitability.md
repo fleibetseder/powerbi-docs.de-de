@@ -10,20 +10,20 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 333403ca74c5c5a13c94cbd41100915c7260e304
-ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.openlocfilehash: ddda7d6aaacbcde2d71371b316d14a9cd411bd43
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67792010"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523420"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Beispiel zur Kundenrentabilität für Power BI: Übersicht
 
-Das Inhaltspaket „Beispiel zur Kundenrentabilität“ enthält ein Dashboard, einen Bericht und ein Dataset für ein Unternehmen, das Marketingmaterial erstellt. Dieses Dashboard wurde von einer Finanzdirektorin (CFO) erstellt, um die Metriken für ihre fünf Business Unit Manager (Führungskräfte), Produkte, Kunden und den Bruttogewinn verfolgen zu können. Auf einen Blick kann ermittelt werden, welche Faktoren die Rentabilität beeinflussen.
+Das Inhaltspaket „Beispiel zur Kundenrentabilität“ enthält ein Dashboard, einen Bericht und ein Dataset für ein Unternehmen, das Marketingmaterial erstellt. Dieses Dashboard wurde von einer Finanzdirektorin (CFO) erstellt, um die Metriken für ihre fünf Business Unit Manager (Führungskräfte), Produkte, Kunden und den Bruttogewinn verfolgen zu können. Auf einen Blick kann die Finanzdirektorin sehen, welche Faktoren die Rentabilität beeinflussen.
 
 ![Dashboard für das Beispiel zur Kundenrentabilität](media/sample-customer-profitability/power-bi-dash.png)
 
-Dieses Beispiel ist Teil einer Reihe, die Ihnen die Verwendung von Power BI anhand geschäftsbezogener Daten, Berichte und Dashboards zeigt. Es wurde mit echten Daten von [obviEnce](http://www.obvience.com/) erstellt, die anonymisiert wurden. Die Daten sind in verschiedenen Formaten verfügbar: Inhaltspaket, Power BI Desktop-PBIX-Datei oder Excel-Arbeitsmappe. Weitere Informationen finden Sie unter [Welche Beispieldaten sind für die Verwendung mit Power BI verfügbar?](sample-datasets.md). 
+Dieses Beispiel ist Teil einer Reihe, die Ihnen die Verwendung von Power BI anhand geschäftsbezogener Daten, Berichte und Dashboards zeigt. Es wurde von [obviEnce](http://www.obvience.com/) mit echten Daten erstellt, die anonymisiert wurden. Die Daten sind in verschiedenen Formaten verfügbar: Inhaltspaket, Power BI Desktop-PBIX-Datei oder Excel-Arbeitsmappe. Weitere Informationen finden Sie unter [Welche Beispieldaten sind für die Verwendung mit Power BI verfügbar?](sample-datasets.md). 
 
 Dieses Tutorial erkundet das Inhaltspaket „Beispiel zur Kundenrentabilität“ im Power BI-Dienst. Da die Berichtsoberfläche in Power BI Desktop und im Dienst ähnlich sind, können Sie das Tutorial auch anhand der PBIX-Beispieldatei in Power BI Desktop nachvollziehen. 
 
@@ -81,7 +81,7 @@ Suchen Sie in dem Arbeitsbereich, in dem Sie das Beispiel gespeichert haben, das
    - Der Gesamtumsatz für das Jahr liegt nahe an der Budgetvorgabe.
 
 ### <a name="manager-specific-dashboard-tiles"></a>Managerspezifische Dashboardkacheln
-Die Kacheln auf der rechten Seite des Dashboard zeigen eine Scorecard für das Team an. Die Finanzdirektorin muss die Aktivitäten ihrer Manager verfolgen können, und über diese Kacheln erhält sie einen ersten Überblick über den Gewinn (unter Verwendung des Bruttogewinns in Prozent). Falls der Trend für den Bruttogewinn in % für einen Manager ungewöhnlich ist, kann sie dies näher untersuchen.
+Die Kacheln auf der rechten Seite des Dashboard zeigen eine Scorecard für das Team an. Die Finanzdirektorin muss die Aktivitäten ihrer Manager verfolgen können, und über diese Kacheln erhält sie einen ersten Überblick über den Gewinn (durch Verwenden des Bruttogewinns in Prozent). Falls der Trend für den Bruttogewinn in % für einen Manager ungewöhnlich ist, kann sie dies näher untersuchen.
 
 ![Bruttogewinn in % für Manager](media/sample-customer-profitability/power-bi-manager2.png)
 
@@ -106,7 +106,7 @@ Zwei Kacheln auf dem Dashboard, **Target vs Actual** und **Year Over Year Revenu
 
     a. Wählen Sie aus der Liste **Executive** den Eintrag **Carlos Grilo** aus.   
 
-    b. Die erste PivotTable-Ansicht informiert darüber, dass das Umsatzwachstum von Carlos für sein Top-Produkt Primus 152 % geringer als im letzten Jahr ist. Das Diagramm **YoY Revenue Variance** (Umsatzabweichung im Jahresvergleich) zeigt, dass er in den meisten Monaten das Budget unterschreitet.  
+    b. Die erste PivotTable-Ansicht informiert darüber, dass das Umsatzwachstum von Carlos für das Top-Produkt Primus 152 % geringer als im letzten Jahr ist. Das Diagramm **YoY Revenue Variance** (Umsatzabweichung im Jahresvergleich) zeigt, dass Carlos in den meisten Monaten das Budget unterschritten hat.  
 
     ![PivotTable](media/sample-customer-profitability/power-bi-pivotchart.png)
 
@@ -139,7 +139,7 @@ Wir sehen uns nun zwei Teammitglieder genauer an und ermitteln, welche Erkenntni
 1. Wählen Sie links unter **Executive** Andrews Namen aus, um die Berichtsseite zu filtern und nur Daten für Andrew anzuzeigen:
 
    * Werfen Sie einen Blick auf den KPI, indem Sie Andrews **Revenue Status (Total Year)** (Umsatzstatus (gesamtes Jahr)) ansehen: Dieser ist grün, er erzielt also gute Ergebnisse.
-   * Im Diagramm **Revenue % Variance to Budget by Month and Executive** (Umsatzabweichung in Prozent vom Budget nach Monat und Führungskraft) ist zu sehen, dass Andrew bis auf einen Einbruch im Februar gute Ergebnisse erzielt. Seine wichtigste Region ist „East“ (Osten), und er bearbeitet 49 Kunden und fünf von sieben Produkten. Sein Bruttogewinn in Prozent ist weder der höchste noch der niedrigste.
+   * Im Diagramm **Revenue % Variance to Budget by Month and Executive** (Umsatzabweichung in Prozent vom Budget nach Monat und Führungskraft) ist zu sehen, dass Andrew bis auf einen Einbruch im Februar gute Ergebnisse erzielt. Andrews wichtigste Region ist „East“ (Osten), zu der 49 Kunden und fünf von sieben Produkten gehören. Andrews Bruttogewinn in Prozent ist weder der höchste noch der niedrigste.
    * Aus dem Diagramm **RevenueTY and Revenue % Var to Budget by Month** (Jahresumsatz und Umsatzabweichung in Prozent vom Budget nach Monat) ist ein stetiger, gleichmäßiger Gewinn zu erkennen. Wenn Sie jedoch nach dem Rechteck für **Central** in der Struktur für die Region filtern, stellen Sie fest, dass Andrew nur im März und nur in Indiana Umsatz macht. Ist dieser Trend beabsichtigt, oder sollten Sie das näher untersuchen?
 
 2. Jetzt machen wir mit Valery weiter. Wählen Sie unter **Executive** Valerys Namen aus, um die Berichtsseite zu filtern und nur Daten für Valery anzuzeigen. 
@@ -147,10 +147,10 @@ Wir sehen uns nun zwei Teammitglieder genauer an und ermitteln, welche Erkenntni
    ![Valerys Daten](media/sample-customer-profitability/customer3.png)
 
    * Beachten Sie den roten KPI-Hinweis für **Revenue Status (Total Year)** . Dieses Element sollte auf jeden Fall näher untersucht werden.
-   * Die Umsatzabweichung gibt ebenfalls Anlass zur Sorge, denn sie erfüllt ihre Umsatzmargen nicht.
-   * Valery hat nur neun Kunden, bearbeitet nur zwei Produkte und arbeitet fast ausschließlich mit Kunden im Norden zusammen. Diese Art der Spezialisierung könnte eine Erklärung für die großen Schwankungen in ihren Metriken sein.
-   * Wenn Sie das Rechteck **Norden** im Diagramm auswählen, erkennen Sie, dass der Bruttogewinn von Valery im Norden mit ihrer Gesamtmarge übereinstimmt.
-   * Wenn Sie die anderen Rechtecke unter **Total Revenue by Region** (Gesamtumsatz nach Region) auswählen, erhalten Sie interessante Erkenntnisse: Valerys Bruttogewinn in Prozent liegt zwischen 23 % und 79 %. Ihre Umsatzzahlen sind in allen Regionen außer dem Norden stark von der Saison abhängig.
+   * Valerys Umsatzabweichung gibt ebenfalls Anlass zur Sorge, denn Valery erfüllt nicht die festgelegten Umsatzmargen.
+   * Valery hat nur neun Kunden, bearbeitet nur zwei Produkte und arbeitet fast ausschließlich mit Kunden im Norden zusammen. Diese Spezialisierung könnte eine Erklärung für die großen Schwankungen in ihren Metriken sein.
+   * Wenn Sie das Rechteck **North** in der Strukturkarte auswählen, ist zu erkennen, dass der Bruttogewinn von Valery im Norden mit der Gesamtmarge konsistent ist.
+   * Wenn Sie die anderen Rechtecke unter **Total Revenue by Region** (Gesamtumsatz nach Region) auswählen, erhalten Sie interessante Erkenntnisse: Valerys Bruttogewinn in Prozent liegt zwischen 23 % und 79 %. Valerys Umsatzzahlen sind in allen Regionen außer dem Norden stark von der Saison abhängig.
 
 3. Untersuchen Sie die Daten weiter, um herauszufinden, warum in Valerys Zuständigkeitsbereich keine gute Leistung erzielt wird. Sehen Sie sich die Regionen, die anderen Geschäftseinheiten und die nächste Seite des folgenden Berichts an: **Industry Margin Analysis** (Analyse der Branchenmarge).
 
@@ -165,10 +165,10 @@ Auf dieser Berichtsseite wird ein anderes Segment der Daten bereitgestellt. Es g
 
 3. Beachten Sie Folgendes, wenn Sie die Manager nacheinander im Diagramm auswählen:
    * Der Einflussbereich von Andrew reicht über viele verschiedene Branchensegmente und weist starke Abweichungen beim Bruttogewinn in % (meist positiv) und bei der Abweichung in % auf.
-   * Das Diagramm von Annelie ist ähnlich. Sie deckt allerdings nur wenige Branchensegmente ab, und ihr Schwerpunkt liegt auf dem Segment „Federal“ (Behörden) und dem Produkt „Gladius“.
-   * Bei Carlos liegt der Schwerpunkt eindeutig auf dem Segment „Services“ (Dienstleistungen), und der Gewinn ist gut. Er hat die Abweichung in Prozent für das Segment „High Tech“ (Hightech) stark verbessert und im neuen Segment „Industrial“ (Industrie) gegenüber dem Budget ein hervorragendes Ergebnis erzielt.
-   * Tina bearbeitet eine Handvoll Segmente und verfügt über den höchsten Bruttogewinn in %, aber an den zumeist kleinen Blasen ist erkennbar, dass ihr Beitrag zum Gesamtergebnis des Unternehmens sehr gering ist.
-   * Valery, die nur für ein Produkt verantwortlich ist, bearbeitet nur fünf Branchensegmente. Ihr Brancheneinfluss ist saisonabhängig, aber es ergibt sich immer eine große Blase. Dies deutet auf einen signifikanten Beitrag zum Gesamtergebnis des Unternehmens hin. Kann ihre negative Leistung anhand der Segmente für die Branche erklärt werden?
+   * Das Diagramm von Annelie ist ähnlich. Annelie deckt allerdings nur wenige Branchensegmente ab, und ihr Schwerpunkt liegt auf dem Segment „Federal“ (Behörden) und dem Produkt „Gladius“.
+   * Bei Carlos liegt der Schwerpunkt eindeutig auf dem Segment „Services“ (Dienstleistungen), und der Gewinn ist gut. Carlos hat außerdem die Abweichung in Prozent für das Segment „High Tech“ (Hightech) stark verbessert und im neuen Segment „Industrial“ (Industrie) gegenüber dem Budget ein hervorragendes Ergebnis erzielt.
+   * Tina bearbeitet eine Handvoll Segmente und verfügt über den höchsten Bruttogewinn in %, aber an den zumeist kleinen Blasen ist erkennbar, dass Tinas Beitrag zum Gesamtergebnis des Unternehmens sehr gering ist.
+   * Valery, die nur für ein Produkt verantwortlich ist, bearbeitet nur fünf Branchensegmente. Valerys Brancheneinfluss ist saisonabhängig, aber es ergibt sich immer eine große Blase. Dies deutet auf einen signifikanten Beitrag zum Gesamtergebnis des Unternehmens hin. Kann ihre negative Leistung anhand der Segmente für die Branche erklärt werden?
 
 ### <a name="executive-scorecard"></a>Executive Scorecard
 Diese Seite wird als Cortana-Antwortseite formatiert. Weitere Informationen finden Sie unter [Verwenden des Power BI-Diensts oder von Power BI Desktop zum Erstellen einer benutzerdefinierten Antwortseite für Cortana](service-cortana-answer-cards.md).

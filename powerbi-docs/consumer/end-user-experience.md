@@ -12,12 +12,12 @@ ms.topic: quickstart
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 86c8297c9a55f2b59e7c01390ff15bb3b2d4bf2e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: af7f2f0ca5407694b13f0b053ff347f883c8c983
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61049043"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523042"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Schnellstart: Sich mit dem Power BI-Dienst vertraut machen
 
@@ -61,7 +61,7 @@ Einem neuen Benutzer wird nur ein Arbeitsbereich (**Mein Arbeitsbereich**) angez
 
 ![Kurzvideo vom Arbeitsbereich](./media/end-user-experience/nav.gif)
 
-Auf diesen Registerkarten (bzw. in diesen *Inhaltsansichten*) sehen Sie Informationen zum Inhalt sowie Aktionen, die Sie auf diesen Inhalt anwenden können.  Auf der Registerkarte „Dashboards“ können Sie beispielsweise ein Dashboard öffnen, durchsuchen oder sortieren.
+Auf diesen Registerkarten (auch als *Inhaltsansichten* bezeichnet) sehen Sie Informationen zum Inhalt sowie Aktionen, die Sie auf diesen Inhalt anwenden können.  Auf der Registerkarte „Dashboards“ können Sie beispielsweise ein Dashboard öffnen, durchsuchen oder sortieren.
 
 ![Registerkarte „Dashboards“](./media/end-user-experience/power-bi-dashboard-tab.png)
 

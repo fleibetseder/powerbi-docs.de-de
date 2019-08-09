@@ -1,6 +1,6 @@
 ---
-title: Auf Ausdrücken beruhende Titel in Power BI Desktop
-description: Erstellen Sie dynamische Titel in Power BI Desktop, die geändert werden basierend auf den programmatischen Ausdrücken, bedingte programmgesteuerte Formatierung verwenden
+title: Ausdrucksbasierte Titel in Power BI Desktop
+description: Erstellen Sie dynamische Titel in Power BI Desktop, die sich basierend auf programmgesteuerten Ausdrücken ändern, wozu bedingte programmgesteuerte Formatierung verwendet wird.
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -10,32 +10,32 @@ ms.topic: reference
 ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b90ef66d2c118a70f1b18ed4fe302ce1db23e45c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 1b4e134ef6f8da43a1856c8a5458c8c09b2c42b5
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769746"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68522173"
 ---
-# <a name="expression-based-titles-in-power-bi-desktop"></a>Auf Ausdrücken beruhende Titel in Power BI Desktop
+# <a name="expression-based-titles-in-power-bi-desktop"></a>Ausdrucksbasierte Titel in Power BI Desktop
 
-Sie können dynamisch erstellen Titel für Ihre Power BI-Visualisierungen angepasst. Erstellen Sie die Data Analysis Expressions (DAX) basierend auf Feldern, Variablen und andere Programmierelemente, können Ihre Visualisierung Titel automatisch anpassen, je nach Bedarf. Diese Änderungen basieren auf Filtern, Auswahl, oder andere Benutzerinteraktionen und Konfigurationen.
+Sie können dynamische angepasste Titel für Ihre visuellen Power BI-Elemente erstellen. Durch Erstellen von DAX-Ausdrücken (Data Analysis Expressions), die auf Feldern, Variablen oder anderen programmgesteuerten Elementen basieren, können die Titel ihrer visuellen Elemente nach Bedarf automatisch angepasst werden. Diese Änderungen basieren auf Filtern, ausgewählten Elementen oder anderen Benutzerinteraktionen und Konfigurationen.
 
-![Screenshot von Power BI Desktop bedingte Formatierung-option](media/desktop-conditional-formatting-visual-titles/expression-based-title-01.png)
+![Screenshot der Power BI Desktop-Option für bedingte Formatierung](media/desktop-conditional-formatting-visual-titles/expression-based-title-01.png)
 
-Erstellen dynamische Titel, bezeichnet *Titel auf Ausdrücken beruhende*, ist einfach. 
+Das Erstellen eines dynamischen Titels (manchmal als *ausdrucksbasierter Titel* bezeichnet) ist einfach. 
 
-## <a name="create-a-field-for-your-title"></a>Erstellen Sie ein Feld für den Titel
+## <a name="create-a-field-for-your-title"></a>Erstellen eines Felds für Ihren Titel
 
-Der erste Schritt beim Erstellen eines Titels auf Ausdrücken beruhende ist zum Erstellen eines Felds in Ihrem Modell für den Titel zu verwenden. 
+Der erste Schritt beim Erstellen eines ausdrucksbasierten Titels besteht darin, ein Feld in Ihrem Modell zu erstellen, das für den Titel verwendet werden soll. 
 
-Es gibt diverse kreative Möglichkeiten, Ihre visual Titel widerspiegeln, was Sie sagen soll, oder was express werden soll. Werfen wir einen Blick auf einige Beispiele.
+Es gibt viele verschiedene Arten von kreativen Möglichkeiten, wie Ihr visueller Titel das zum Ausdruck bringt, was Sie mitteilen oder ausdrücken möchten. Sehen Sie sich einige Beispiele an.
 
-Sie können einen Ausdruck erstellen, den Änderungen anhand der Filterkontext, die das visuelle Element für den Namen des Produkts Marke empfängt. Die folgende Abbildung zeigt die DAX-Formel für ein solches Feld.
+Sie können einen Ausdruck erstellen, der sich entsprechend dem Filterkontext ändert, den das visuelle Element für den Markennamen des Produkts empfängt. Die folgende Abbildung zeigt die DAX-Formel für ein solches Feld.
 
 ![Screenshot der DAX-Formel](media/desktop-conditional-formatting-visual-titles/expression-based-title-02.png)
 
-Ein weiteres Beispiel ist einen dynamische Titel verwenden, den Änderungen auf die Sprache oder Kultur des Benutzers basieren. Sie können sprachspezifische Titel in einem DAX-Measure erstellen, mit der `USERCULTURE()` Funktion. Diese Funktion gibt den Kulturcode für den Benutzer basierend auf deren Betriebssystem oder Browsereinstellungen. Sie können die folgende DAX-Switch-Anweisung verwenden, auf den richtigen Wert für die übersetzten. 
+Ein weiteres Beispiel ist das Verwenden eines dynamischen Titels, der sich entsprechend der Sprache oder Kultur des Benutzers ändert. Sie können sprachspezifische Titel in einem DAX-Measure erstellen, indem Sie die `USERCULTURE()`-Funktion verwenden. Diese Funktion gibt den Kulturcode für den Benutzer anhand dessen Betriebssystem oder Browsereinstellungen zurück. Sie können die folgende DAX-SWITCH-Anweisung verwenden, um den richtigen übersetzten Wert auszuwählen. 
 
 ```
 SWITCH (
@@ -46,33 +46,35 @@ SWITCH (
 )
 ```
 
-Oder rufen Sie die Zeichenfolge aus einer Nachschlagetabelle, die alle die Übersetzungen enthält. Platzieren Sie diese Tabelle im Modell. 
+Alternativ können Sie die Zeichenfolge aus einer Nachschlagetabelle abrufen, die alle Übersetzungen enthält. Sie platzieren diese Tabelle in Ihrem Modell. 
 
-Dies sind nur einige Beispiele, die Sie verwenden können, um dynamische, auf Ausdrücken beruhende Titel für Ihre Visualisierungen in Power BI Desktop zu erstellen. Was Sie tun können, mit Ihrem Titel werden nur durch Ihre Vorstellungskraft und Ihr Modell beschränkt.
+Dies sind nur einige Beispiele dazu, wie Sie dynamische ausdrucksbasierte Titel für Ihre visuellen Elemente in Power BI Desktop erstellen können. Die Ausdrucksmöglichkeiten für Ihre Titel sind nur durch Ihre Phantasie und Ihr Modell eingeschränkt.
 
 
-## <a name="select-your-field-for-your-title"></a>Wählen Sie das Feld für den Titel
+## <a name="select-your-field-for-your-title"></a>Auswählen eines Felds für Ihren Titel
 
-Nachdem Sie den DAX-Ausdruck für das Feld, die Sie in Ihrem Modell erstellen erstellt haben, müssen Sie sie auf den Titel des Visuals anwenden.
+Nachdem Sie den DAX-Ausdruck für das Feld erstellt haben, das Sie in Ihrem Modell erstellt haben, müssen Sie es auf den Titel Ihres visuellen Elements anwenden.
 
-Wählen Sie das Feld, und wenden Sie es, wechseln Sie zu der **Visualisierungen** Bereich. In der **Format** wählen Sie im Bereich **Titel** um die Optionen für das visuelle Element anzuzeigen. 
+Um das Feld auszuwählen und anzuwenden, wechseln Sie zum Bereich **Visualisierungen**. Wählen Sie im Abschnitt **Format** die Option **Titel** aus, um die Titeloptionen für das visuelle Element anzuzeigen. 
 
-Wenn Sie mit der rechten Maustaste **Titeltext**, ein Kontextmenü angezeigt, die Sie auswählen können ***fx* bedingte Formatierung**. Wenn Sie das Menüelement im Auswählen einer **Titeltext** Dialogfeld wird angezeigt. 
+Wenn Sie mit der rechten Maustaste auf **Titeltext** klicken, wird ein Kontextmenü angezeigt, in dem Sie ***fx*Bedingte Formatierung** auswählen können. Wenn Sie dieses Menüelement auswählen, wird das Dialogfeld **Titeltext** angezeigt. 
 
-![Screenshot des Dialogfeld titeltextfeld](media/desktop-conditional-formatting-visual-titles/expression-based-title-02b.png)
+![Screenshot des Dialogfelds „Titeltext“](media/desktop-conditional-formatting-visual-titles/expression-based-title-02b.png)
 
-Aus diesem Fenster können Sie das Feld auswählen, das Sie erstellt haben, um für den Titel zu verwenden.
+In diesem Fenster können Sie das Feld auswählen, das Sie für Ihren Titel verwenden möchten.
 
 ## <a name="limitations-and-considerations"></a>Einschränkungen und Überlegungen
 
-Es gibt einige Einschränkungen bei der die aktuelle Implementierung von auf Ausdrücken beruhende Titel für visuelle Elemente:
+Es gibt einige Einschränkungen bei der aktuellen Implementierung von ausdrucksbasierten Titeln für visuelle Elemente:
 
-* Auf Ausdrücken beruhende Formatierung wird derzeit auf Python-Visualisierungen, R-Visualisierungen oder die wichtigen Einflussfaktoren Visual nicht unterstützt.
-* Das Feld für den Titel erstellten muss es sich um einen Zeichenfolgen-Datentyp sein. Measures, die Zahlen oder Datum/Uhrzeit (oder einen anderen Datentyp) zurückgeben werden derzeit nicht unterstützt.
+* Ausdrucksbasierte Formatierung wird derzeit nicht für visuelle Python-, R- oder „Wichtigste Einflussfaktoren“-Elemente unterstützt.
+* Das Feld, das Sie für den Titel erstellen, muss einen Zeichenfolgendatentyp (String-Datentyp) haben. Measures, die Zahlen oder Datum/Uhrzeit-Werte (oder einen beliebigen anderen Datentyp) zurückgeben, werden zurzeit nicht unterstützt.
+* Ausdrucksbasierte Titel werden nicht übertragen, wenn Sie ein visuelles Element an ein Dashboard anheften.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Artikel wurde beschrieben, wie DAX-Ausdrücke zu erstellen, die die Titel Ihrer Visuals in dynamischen Felder zu, die sich ändern können aktivieren, während Benutzer mit Ihren Berichten interagieren. In den folgenden Artikeln hilfreich auch sein.
+In diesem Artikel ist beschrieben, wie Sie DAX-Ausdrücke erstellen, mit denen die Titel ihrer visuellen Elemente in dynamische Felder umgewandelt werden, die sich ändern können, wenn Benutzer mit ihren Berichten interagieren. Möglicherweise sind auch die folgenden Artikel für Sie nützlich.
 
-* [Verwenden von Cross-Report-Drillthrough im Power BI Desktop](desktop-cross-report-drill-through.md)
+* [Bedingte Formatierung in Tabellen](desktop-conditional-table-formatting.md)
+* [Use cross-report drillthrough in Power BI Desktop](desktop-cross-report-drill-through.md) (Verwenden der berichtsübergreifenden Drillthroughfunktion in Power BI Desktop)
 * [Verwenden der Drillthroughfunktion in Power BI Desktop](desktop-drillthrough.md)

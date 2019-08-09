@@ -1,5 +1,5 @@
 ---
-title: Häufig gestellte Fragen zu benutzerdefinierten Visuals in Power BI
+title: Häufig gestellte Fragen zu Power BI-Visuals
 description: Durchsuchen Sie die Liste der häufig gestellten Fragen und Antworten zu benutzerdefinierten Visuals in Power BI.
 author: sranins
 ms.author: rasala
@@ -10,16 +10,18 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: 0fcb3451249c121281790dca77bd6008c39deaef
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: 58fa65abfa2d2cff5e02b34fe8db8aa10b36ee14
+ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66497924"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415382"
 ---
-# <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Häufig gestellte Fragen zu benutzerdefinierten Visuals in Power BI
+# <a name="frequently-asked-questions-about-power-bi-visuals"></a>Häufig gestellte Fragen zu Power BI-Visuals
 
 ## <a name="organizational-custom-visuals"></a>Benutzerdefinierte Visuals für Organisationen
+
+Mit dem Verwaltungsportal können Sie Power BI-Visuals für Ihre Organisation verwalten.
 
 ### <a name="how-can-the-admin-manage-the-organizational-custom-visuals"></a>Wie kann der Administrator die benutzerdefinierten Visuals für Organisationen verwalten?
 

@@ -1,5 +1,5 @@
 ---
-title: Entwickeln eines benutzerdefinierten Visuals für Power BI
+title: Entwickeln eines Power BI-Visuals
 description: Tutorial zum Entwickeln eines benutzerdefinierten Visuals für Power BI
 author: sranins
 ms.author: rasala
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 03/15/2019
-ms.openlocfilehash: d21a0ab1bada981a563e04ba26815f661664f51a
-ms.sourcegitcommit: 4ae1257c5d7b33aa2fafd91caf8b353a985c6771
+ms.openlocfilehash: 2dc1d0a316319867513dc9f25a195c3f2d1140b9
+ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67161217"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415437"
 ---
-# <a name="tutorial-developing-a-power-bi-custom-visual"></a>Tutorial: Entwickeln eines benutzerdefinierten Visuals für Power BI
+# <a name="tutorial-developing-a-power-bi-visual"></a>Tutorial: Entwickeln eines Power BI-Visuals
 
 Wir machen es für Entwickler einfach, ihre benutzerdefinierten Visuals in Power BI hinzuzufügen, um diese in Dashboards und Berichten zu verwenden. Wir haben den Code für alle unsere Visualisierungen auf GitHub veröffentlicht, um Ihnen den Einstieg zu erleichtern.
 
@@ -79,35 +79,35 @@ Jetzt müssen Sie das **pbiviz**-Paket installieren.
     pbiviz --install-cert
     ```
 
-  Als Ergebnis wird eine *Passphrase* zurückgegeben. In diesem Fall startet die *Passphrase* **_15105661266553327_** den Zertifikatimport-Assistenten.
+    Als Ergebnis wird eine *Passphrase* zurückgegeben. In diesem Fall lautet die *Passphrase* **_15105661266553327_** . Der Befehl startet auch den Zertifikatimport-Assistenten.
 
-  ![Über PowerShell erstelltes Zertifikat](media/custom-visual-develop-tutorial/cert-create.png)
+    ![Über PowerShell erstelltes Zertifikat](media/custom-visual-develop-tutorial/cert-create.png)
 
-3. Überprüfen Sie im Assistenten für den Zertifikatsimport, ob der Speicherort auf „Aktueller Benutzer“ eingestellt ist. Wählen Sie dann *Weiter*aus.
+2. Überprüfen Sie im Assistenten für den Zertifikatsimport, ob der Speicherort auf „Aktueller Benutzer“ eingestellt ist. Wählen Sie dann *Weiter*aus.
 
       ![Zertifikat installieren](media/custom-visual-develop-tutorial/install-cert-PowerShell.png)
 
-4. Wählen Sie im Schritt **Zu importierende Datei** *Weiter* aus.
+3. Wählen Sie im Schritt **Zu importierende Datei** *Weiter* aus.
 
-5. Fügen Sie im Schritt **Privater Schlüsselschutz** im Feld „Passwort“ die Passphrase ein, die Sie beim Erstellen des Zertifikats erhalten haben.  In diesem Fall wieder **_15105661266553327_** .
+4. Fügen Sie im Schritt **Privater Schlüsselschutz** im Feld „Passwort“ die Passphrase ein, die Sie beim Erstellen des Zertifikats erhalten haben.  In diesem Fall wieder **_15105661266553327_** .
 
       ![Passphrase kopieren](media/custom-visual-develop-tutorial/cert-install-wizard-show-passphrase.png)
 
-6. Wählen Sie im Schritt **Zertifikatspeicher** die Option **AAlle Zertifikate in folgendem Speicher speichern**. Wählen Sie anschließend *Durchsuchen*.
+5. Wählen Sie im Schritt **Zertifikatspeicher** die Option **AAlle Zertifikate in folgendem Speicher speichern**. Wählen Sie anschließend *Durchsuchen*.
 
       ![Alle Zertifikate in folgendem Speicher speichern](media/custom-visual-develop-tutorial/all-certs-in-the-following-store.png)
 
-7. Wählen Sie im Fenster **Zertifikatspeicher auswählen** **Vertrauenswürdige Stammzertifizierungsstellen** und dann *OK* aus. Wählen Sie dann im Bildschirm *Zertifikatspeicher* **Weiter**.
+6. Wählen Sie im Fenster **Zertifikatspeicher auswählen** **Vertrauenswürdige Stammzertifizierungsstellen** und dann *OK* aus. Wählen Sie dann im Bildschirm *Zertifikatspeicher* **Weiter**.
 
       ![Vertrauenswürdiges Stammzertifikat](media/custom-visual-develop-tutorial/trusted-root-cert.png)
 
-8. Um den Import abzuschließen, wählen Sie **Fertig stellen** aus.
+7. Um den Import abzuschließen, wählen Sie **Fertig stellen** aus.
 
-9. Wenn eine Sicherheitswarnung angezeigt wird, wählen Sie **Ja** aus.
+8. Wenn eine Sicherheitswarnung angezeigt wird, wählen Sie **Ja** aus.
 
     ![Sicherheitswarnung](media/custom-visual-develop-tutorial/cert-security-warning.png)
 
-10. Wenn Sie benachrichtigt werden, dass der Import erfolgreich war, wählen Sie **OK** aus.
+9. Wenn Sie benachrichtigt werden, dass der Import erfolgreich war, wählen Sie **OK** aus.
 
     ![Zertifikatimport erfolgreich](media/custom-visual-develop-tutorial/cert-import-successful.png)
 

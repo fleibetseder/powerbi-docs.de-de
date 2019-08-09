@@ -1,6 +1,6 @@
 ---
-title: Benutzerdefinierte Visuals für Organisationen in Power BI
-description: Verwenden, Verwalten und Erstellen von benutzerdefinierten Visuals für Organisationen in Power BI
+title: Visuals für Organisationen in Power BI
+description: Verwenden, Verwalten und Erstellen von Visuals für Organisationen in Power BI
 author: sranins
 ms.author: rasala
 manager: kfile
@@ -10,14 +10,14 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/11/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 157b20107a5be106ac97e0cb927b1e496e1ba115
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 9775b7cd1eb936019051ae952bc270924061daaa
+ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61421886"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415339"
 ---
-# <a name="organizational-custom-visuals-in-power-bi"></a>Benutzerdefinierte Visuals für Organisationen in Power BI
+# <a name="organizational-visuals-in-power-bi"></a>Visuals für Organisationen in Power BI
 
 Sie können benutzerdefinierte Visuals in Power BI verwenden, um einen einzigartigen Typ von Visual zu erstellen, der auf Ihre Zwecke zugeschnitten ist. Benutzerdefinierte Visuals werden von Entwicklern erstellt. Der Grund dafür ist oft, dass die Visuals, die in Power BI enthalten sind, deren Anforderungen nicht ganz erfüllen.
 

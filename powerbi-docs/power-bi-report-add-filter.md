@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 903883290def07ee6467dbebab1c7b31dec80b74
-ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
+ms.openlocfilehash: dcc273dd6bf356d9149086b38b9126e721fe63a2
+ms.sourcegitcommit: 390dc3716d5c83385bedde63dd152431a77020e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68342180"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68380274"
 ---
 # <a name="add-a-filter-to-a-report-in-power-bi"></a>Hinzufügen eines Filters zu einem Bericht in Power BI
 
@@ -76,6 +76,8 @@ Dieses Verfahren verwendet übrigens ein Analysebeispiel für den Einzelhandel, 
     Die Visualisierung ändert sich und spiegelt den neuen Filter wider. Wenn Sie Ihren Bericht mit dem Filter speichern, sehen Berichtsleser das Visual zunächst mit dem angewendeten Filter. Diesen können sie in der Leseansicht ändern und Werte auswählen oder löschen.
      
     ![Das gefilterte Visual](media/power-bi-report-add-filter/power-bi-search-visual-filter-results.png)
+    
+    Wenn Sie den Filter für ein Feld verwenden, das in dem Visual verwendet wird, in dem das Feld aggregiert ist (z. B. eine Summe, ein Durchschnitt oder eine Anzahl), filtern Sie nach dem *aggregierten* Wert in jedem Datenpunkt. Daher führt ein Filtern des obigen Visuals nach **This Year Sales > 500000** dazu, dass im Ergebnis nur der Datenpunkt **13 - Charleston Fashion Direct** angezeigt wird. Filter für [Modellmeasures](desktop-measures.md) gelten immer für den aggregierten Wert des Datenpunkts.
 
 ### <a name="filter-with-a-field-thats-not-in-the-visual"></a>Filtern mit Feldern, die sich nicht im Visual befindet
 
@@ -94,6 +96,8 @@ Fügen Sie der Visualisierung nun ein neues Feld als Filter auf visueller Ebene 
     ![Das gefilterte Visual](media/power-bi-report-add-filter/power-bi-search-visual-filter-results-2.png)
 
     Wenn Sie Ihren Bericht mit dem Filter speichern, können Berichtsleser den Filter **District Manager** in der Leseansicht bearbeiten und Werte auswählen oder löschen.
+    
+    Wenn Sie eine *numerische Spalte* in den Filterbereich ziehen, um einen Filter auf visueller Ebene zu erstellen, wird der Filter auf *die zugrunde liegenden Datenzeilen* angewendet. Wenn Sie beispielsweise einen Filter für das **UnitCost**-Feld hinzufügen und für diesen Filter **UnitCost** > 20 festlegen, werden nur Daten für die Produktzeilen angezeigt, in denen die Stückkosten (UnitCost) größer als 20 sind, unabhängig von den Gesamtstückkosten für die Datenpunkte, die im Visual angezeigt werden.
 
 ## <a name="add-a-filter-to-an-entire-page"></a>Hinzufügen eines Filters zu einer kompletten Seite
 
@@ -158,10 +162,6 @@ Im Folgenden wird beschrieben, wie der Drillthroughfilter funktioniert.
 1. Wählen Sie den Zurück-Pfeil aus, um zur vorherigen Berichtseite zurückzukehren.
 
 ## <a name="considerations-and-troubleshooting"></a>Zu beachtende Aspekte und Problembehandlung
-
-- Es kann vorkommen, dass Filter auf visueller Ebene und Filter auf Seitenebene unterschiedliche Ergebnisse zurückgeben.  Wenn Sie beispielsweise einen Filter auf visueller Ebene hinzufügen, filtert Power BI die aggregierten Ergebnisse.  Die standardmäßige Aggregatfunktion ist „Summe“, Sie können jedoch den [Aggregattyp ändern](service-aggregates.md).  
-
-    Wenn Sie dann einen Filter auf Seitenebene hinzufügen, filtert Power BI ohne Aggregation.  Dies liegt daran, dass eine Seite viele Visuals umfassen kann, die jeweils unterschiedliche Aggregationstypen verwenden.  Daher wird der Filter auf jede Datenzeile angewendet.
 
 - Wenn der Bereich „Felder“ nicht angezeigt wird, stellen Sie sicher, dass Sie die [Bearbeitungsansicht](service-interact-with-a-report-in-editing-view.md) des Berichts geöffnet haben.    
 - Wenn Sie viele Änderungen an den Filtern vorgenommen haben und zu den Standardeinstellungen des Berichtsautors zurückkehren möchten, wählen Sie auf der oberen Menüleiste **Auf Standardwert zurücksetzen** aus.

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 4395884dfbc7ef5ebfb0df34e416d69ee553ebd3
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d46fa8be055186d2430ca4d3c387fae93b91acc3
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514158"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523216"
 ---
 # <a name="measures-in-power-bi-desktop"></a>Measures in Power BI Desktop
 
@@ -41,21 +41,21 @@ Measures berechnen ein Ergebnis mithilfe einer Ausdrucksformel. Zum Erstellen ei
 DAX-Formeln sind Excel-Formeln ziemlich ähnlich. DAX weist sogar viele der gleichen Funktionen auf wie Excel, z.B. DATUM, SUMME und LINKS. Aber die DAX-Funktionen sind für relationale Daten ausgelegt, wie wir sie in Power BI Desktop verwenden.
 
 ## <a name="lets-look-at-an-example"></a>Betrachten wir dazu ein Beispiel.
-Lea ist Vertriebsmanagerin bei Contoso. Sie wird gebeten, Umsatzprognosen für Handelspartner für das nächste Geschäftsjahr zu erstellen. Lea entscheidet sich, ihren Schätzungen die Umsatzbeträge des letzten Jahres zugrunde zu legen und geht von einer jährlichen Steigerung von sechs Prozent aus, die sich aus verschiedenen Werbeaktionen ergeben, die für das nächste halbe Jahr geplant sind.
+Lea ist Vertriebsmanagerin bei Contoso. Lea wird gebeten, Umsatzprognosen für Handelspartner für das nächste Geschäftsjahr zu erstellen. Lea entscheidet sich, ihren Schätzungen die Umsatzbeträge des letzten Jahres zugrunde zu legen und geht von einer jährlichen Steigerung von sechs Prozent aus, die sich aus verschiedenen Werbeaktionen ergeben, die für das nächste halbe Jahr geplant sind.
 
-Um die Schätzungen zu melden, importiert Lea die Umsatzdaten des letzten Jahres in Power BI Desktop. Sie sucht das Feld „Umsatzbetrag“ in der Tabelle „Umsätze von Handelspartnern“. Da die importierten Daten nur die Umsätze des letzten Jahres enthalten, benennt Lea das Feld „SalesAmount“ (Umsatzbetrag) in „Last Years Sales“ (Umsätze Vorjahr) um. Anschließend zieht sie „Last Years Sales“ auf die Berichtszeichenfläche. Das Feld wird im visualisierten Diagramm als Einzelwert dargestellt, bei dem es sich um die Summe aller Umsätze von Handelspartnern aus dem letzten Jahr handelt.
+Um die Schätzungen zu melden, importiert Lea die Umsatzdaten des letzten Jahres in Power BI Desktop. Lea findet das Feld „SalesAmount“ (Umsatzbetrag) in der Tabelle „Reseller Sales“ (Umsätze von Handelspartnern). Da die importierten Daten nur die Umsätze des letzten Jahres enthalten, benennt Lea das Feld „SalesAmount“ (Umsatzbetrag) in „Last Years Sales“ (Umsätze Vorjahr) um. Anschließend zieht Lea „Last Years Sales“ auf den Berichtszeichenbereich. Das Feld wird im visualisierten Diagramm als Einzelwert dargestellt, bei dem es sich um die Summe aller Umsätze von Handelspartnern aus dem letzten Jahr handelt.
 
 Lea fällt auf, dass eine Berechnung automatisch durchgeführt wurde, obwohl sie selbst keine Berechnung angegeben hat. Power BI Desktop hat ein eigenes Measure erstellt, indem er alle Werte aus „Umsätze letztes Jahr“ addiert hat.
 
-Lea benötigt jedoch ein Measure zum Berechnen der Prognosen für das nächste Jahr, das auf den Umsätzen des letzten Jahres basiert, multipliziert mit 1,06, um dem erwarteten Wachstum der Geschäftsaktivitäten von 6 Prozent Rechnung zu tragen. Für diese Berechnung erstellt sie ein eigenes Measure. Mithilfe des Features „Neues Measure“ erstellt sie ein neues Measure und gibt dann die folgende DAX-Formel ein:
+Lea benötigt jedoch ein Measure zum Berechnen der Prognosen für das nächste Jahr, das auf den Umsätzen des letzten Jahres basiert, multipliziert mit 1,06, um dem erwarteten Wachstum der Geschäftsaktivitäten von 6 Prozent Rechnung zu tragen. Für diese Berechnung erstellt Lea ihr eigenes Measure. Mithilfe des Features „Neues Measure“ erstellt sie ein neues Measure und gibt dann die folgende DAX-Formel ein:
 
     Projected Sales = SUM('Sales'[Last Years Sales])*1.06
 
-Lea zieht dann ihr neues Measure „Projizierte Umsätze“ auf das Diagramm.
+Lea zieht dann ihr neues Measure „Projected Sales“ (Projizierte Umsätze) auf das Diagramm.
 
 ![](media/desktop-measures/measuresinpbid_lastyearsales.png)
 
-Sehr schnell und mit minimalem Aufwand hat Lea nun ein Measure zum Berechnen der geplanten Umsatzzahlen erstellt. Sie kann ihre Schätzung noch genauer analysieren, indem sie nach bestimmten Handelspartnern filtert oder dem Bericht andere Felder hinzufügt.
+Sehr schnell und mit minimalem Aufwand hat Lea nun ein Measure zum Berechnen der geplanten Umsatzzahlen erstellt. Sie kann ihre Prognosen (Schätzung) noch genauer analysieren, indem sie nach bestimmten Handelspartnern filtert oder dem Bericht andere Felder hinzufügt.
 
 ## <a name="data-categories-for-measures"></a>Datenkategorien für Measures
 

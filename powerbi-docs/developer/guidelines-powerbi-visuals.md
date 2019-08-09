@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 07/16/2019
-ms.openlocfilehash: ea1ae18f877793da9ac47023c236ba8a24f78ccf
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 6a2fce59171ec36241cd5de03d41f6a27f54c664
+ms.sourcegitcommit: 390dc3716d5c83385bedde63dd152431a77020e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271182"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68380216"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Richtlinien für Power BI-Visuals
 Bevor Sie Ihr Visual in AppSource [veröffentlichen](https://docs.microsoft.com/power-bi/developer/office-store), damit andere es verwenden können, stellen Sie sicher, dass Sie die Richtlinien befolgen, um Ihren Benutzern eine hohe Benutzerfreundlichkeit zu bieten. 
@@ -26,7 +26,7 @@ Alle Power BI-Visuals sollten das Kontextmenü für eine einheitliche Darstellun
 
 ## <a name="logo-guidelines"></a>Richtlinien für Logos
 
-In diesem Abschnitt werden die Spezifikationen für das Hinzufügen von Logos und Logotypen in Visuals erläutert.
+In diesem Abschnitt werden die Spezifikationen für das Hinzufügen von Logos und Logotypen in Visuals erläutert. Logos sind nicht obligatorisch. Wenn sie hinzugefügt werden, müssen Sie diesen Richtlinien entsprechen. 
 
 > [!IMPORTANT]
 > Logos sind *nur im Bearbeitungsmodus* zulässig. Logos können im Anzeigemodus *nicht* dargestellt werden.

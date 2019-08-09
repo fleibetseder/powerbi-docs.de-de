@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 7c7d3b04b8c954ae220fb8b157b183f615abd39c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 641d1ac2c1bbcb9d143afdc04652b4c12b6e775f
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239465"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68522235"
 ---
 # <a name="using-calculated-tables-in-power-bi-desktop"></a>Verwenden von berechneten Tabellen in Power BI Desktop
 Mit berechneten Tabellen können Sie dem Modell eine neue Tabelle hinzufügen. Aber anstatt Werte abzufragen und aus einer Datenquelle in die Spalten Ihrer neuen Tabelle zu laden, erstellen Sie eine DAX-Formel, die die Werte der Spalte definiert. In Power BI Desktop werden berechnete Spalten mithilfe der Funktion "Neue Tabelle" in der Berichtsansicht oder der Datenansicht erstellt.
@@ -39,7 +39,7 @@ Jan, Projektmanager bei Contoso, verfügt über eine Tabelle mit Mitarbeitern im
 
  ![](media/desktop-calculated-tables/calctables_swempl.png)
 
-Diese beiden Tabellen mithilfe einer berechneten Tabelle zusammenzufügen, ist ziemlich einfach. Jan kann eine berechnete Tabelle in der Berichtsansicht oder in der Datenansicht erstellen. In der Datenansicht ist dies jedoch etwas einfacher, da er seine neue berechnete Tabelle sofort anzeigen kann.
+Diese beiden Tabellen mithilfe einer berechneten Tabelle zusammenzufügen, ist ziemlich einfach. Jan kann eine berechnete Tabelle in der Berichtsansicht oder in der Datenansicht erstellen. In der Datenansicht ist dies jedoch etwas einfacher, da Jan die neue berechnete Tabelle dann sofort sehen kann.
 
 In der **Datenansicht**auf der Registerkarte **Modellierung** klickt Jan auf **Neue Tabelle**. Eine Bearbeitungsleiste wird angezeigt.
 
@@ -53,7 +53,7 @@ Eine neue Tabelle mit dem Namen "Mitarbeiter Westliche Region" wird erstellt.
 
  ![](media/desktop-calculated-tables/calctables_westregionempl.png)
 
-Die neue Tabelle von Jan, mit Mitarbeitern der westlichen Region, wird genau wie alle anderen Tabellen in der Liste der Felder angezeigt. Jan kann Beziehungen zu anderen Tabellen erstellen, berechnete Spalten und Maße hinzufügen sowie beliebige Tabellenfelder Berichten hinzufügen, genau wie bei jeder anderen Tabelle auch.
+Die neue Tabelle von Jan, mit Mitarbeitern der westlichen Region, wird genau wie alle anderen Tabellen in der Liste der Felder angezeigt. Jan kann sogar Beziehungen mit anderen Tabellen erstellen, berechnete Spalten und Maße hinzufügen sowie beliebige Tabellenfelder Berichten hinzufügen, genau wie bei jeder anderen Tabelle auch.
 
  ![](media/desktop-calculated-tables/calctables_fieldlist.png)
 

@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 05/28/2019
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 28fe39788dab6f22845d3ffcb7115fb1da5cb268
-ms.sourcegitcommit: c122c1a8c9f502a78ccecd32d2708ab2342409f0
+ms.openlocfilehash: 6bfcb218f92c2b6e8a3349261e15e6b71b9512b2
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66826653"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523235"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dynamische Sicherheit auf Zeilenebene mit dem tabellarischen Modell von Analysis Services
 
@@ -144,7 +144,7 @@ Sobald das tabellarische Modell bereitgestellt und für die Verwendung bereit is
    
    In seiner Rolle als **Vertriebsleiter** kann Sumit Daten von allen verschiedenen Vertriebsregionen anzeigen. Er erstellt also diesen Bericht (der Bericht, der in den vorherigen Schritten erstellt wurde) und veröffentlicht ihn im Power BI-Dienst.
    
-   Wenn er den Bericht veröffentlicht hat, erstellt er basierend auf diesem Bericht ein Dashboard im Power BI-Dienst namens **TabularDynamicSec**. Beachten Sie in der folgenden Abbildung, dass Sumit die Daten aus allen Vertriebsregionen anzeigen kann.
+   Nachdem Sumit den Bericht veröffentlicht hat, besteht sein nächster Schritt darin, basierend auf diesem Bericht im Power BI-Dienst ein Dashboard namens **TabularDynamicSec** zu erstellen. Beachten Sie in der folgenden Abbildung, dass Sumit die Daten aus allen Vertriebsregionen anzeigen kann.
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/donut_chart_1.png)
 
@@ -154,7 +154,7 @@ Sobald das tabellarische Modell bereitgestellt und für die Verwendung bereit is
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/pbi_dashboard.png)
 
-3. Wenn Jon Doe sich im **Power BI-Dienst** anmeldet und das freigegebene Dashboard anzeigt, dass Sumit erstellt hat, sollte er **nur** den Vertrieb für seine Region sehen. 
+3. Wenn Jon Doe sich im **Power BI-Dienst** anmeldet und das freigegebene Dashboard anzeigt, das Sumit erstellt hat, sollten **nur** Umsätze aus seiner Region zu sehen sein. 
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/dashboard_jon_doe.png)
 

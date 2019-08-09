@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/17/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7d716c79146a0d53d261dba514aacb8787ca2fa3
-ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
+ms.openlocfilehash: 53a8847f96d6aa3143e91cab07029a8e0f6afc85
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67299728"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523743"
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Bewährte Entwurfsmethoden für Berichte und Visualisierungen
 
@@ -1007,7 +1007,7 @@ Weitere Informationen zu Treemaps:
 
 Im Allgemeinen reichen Balken-, Säulen- und Liniendiagramme für die meisten Zwecke aus. Es ist bekannt, dass Kreis- und Ringdiagramme von Menschen nur schwer richtig interpretiert werden können. In der Tat können sie die Daten häufig verzerren. Vermeiden Sie es nach Möglichkeit, diese Diagramme zu verwenden. Stephen Few hat einen hervorragenden Artikel zur Geschichte und zu den Gefahren verfasst: [Save the Pies for Dessert](https://www.perceptualedge.com/articles/08-21-07.pdf) (Sparen Sie sich die Torte für das Dessert auf).
 
-Er beschreibt einen Fall, in dem Kreisdiagramme nützlich sein können: beim Vergleichen der Beziehungen von Teilen zum Ganzen. Es ist kaum besser als ein 100-prozentiges gestapeltes Balkendiagramm.
+Stephen beschreibt einen Fall, in dem Kreisdiagramme nützlich sein können: beim Vergleichen der Beziehungen von Teilen zum Ganzen. Es ist kaum besser als ein 100-prozentiges gestapeltes Balkendiagramm.
 
 Einen weiteren interessanten Artikel (und eine Animation) zu Kreisdiagrammen finden Sie auf der [Darkhorse Analytics-Website](http://www.darkhorseanalytics.com/blog/salvaging-the-pie).
 
@@ -1037,4 +1037,4 @@ Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.pow
 
 ### <a name="book-recommendations"></a>Buchempfehlungen
 
-Es sind viele gute Bücher erhältlich, mit denen Teams ihre Kenntnisse über Entwurfstechniken für visuelle Elemente auffrischen können. Ein wichtiges Buch ist *Information Dashboard Design* (Entwurf eines Informationsdashboards) von Stephen Few. In zwei anderen Büchern geht er näher ins Detail: *Show Me the Numbers* (Zeigen Sie mir die Zahlen) und *Now You See It* (Jetzt erkennen Sie es). Stephen Few und andere haben sich von Edward R. Tufte inspirieren lassen, dessen Buch *The Visual Display of Quantitative Information* als Klassiker in diesem Bereich angesehen wird. Weitere Bücher von Edward R. Tufte sind *Visual Explanations*, *Envisioning Information* und *Beautiful Evidence*. Das neue Buch von Andy Kirk, *Data Visualization: A Handbook for Data Driven Design* ist eine weitere hervorragende Option. Weitere empfehlenswerte Autoren sind: Lachlan James, William McKnight und Boris Evelson (Forrester), Darkhorse Analytics.
+Es sind viele gute Bücher erhältlich, mit denen Teams ihre Kenntnisse über Entwurfstechniken für visuelle Elemente auffrischen können. Ein wichtiges Buch ist *Information Dashboard Design* (Entwurf eines Informationsdashboards) von Stephen Few. In zwei weiteren Büchern geht er näher ins Detail: *Show Me the Numbers* (Zeigen Sie mir die Zahlen) und *Now You See It* (Jetzt erkennen Sie es). Stephen Few und andere haben sich von Edward R. Tufte inspirieren lassen, dessen Buch *The Visual Display of Quantitative Information* als Klassiker in diesem Bereich angesehen wird. Weitere Bücher von Edward R. Tufte sind *Visual Explanations*, *Envisioning Information* und *Beautiful Evidence*. Das neue Buch von Andy Kirk, *Data Visualization: A Handbook for Data Driven Design* ist eine weitere hervorragende Option. Weitere empfehlenswerte Autoren sind: Lachlan James, William McKnight und Boris Evelson (Forrester), Darkhorse Analytics.

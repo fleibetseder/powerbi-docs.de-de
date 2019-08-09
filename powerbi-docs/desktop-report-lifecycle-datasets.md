@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8b68f6ee5e475c1b53f914c84372a0875fe87b5d
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: cccbfb6bbe43e70ebcea94322923f7600d58aca8
+ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839148"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590507"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Herstellen einer Verbindung mit Datasets im Power BI-Dienst über Power BI Desktop
 Sie können eine Liveverbindung mit einem gemeinsam genutzten Dataset im Power BI-Dienst herstellen und auf Grundlage des gleichen Datasets viele verschiedene Berichte erstellen. Das bedeutet, dass Sie in Power BI Desktop Ihr perfektes Datenmodell erstellen und im Power BI-Dienst veröffentlichen können. Dann können Sie und andere Benutzer aus diesem einen, gemeinsam verwendeten Datenmodell mehrere unterschiedliche Berichte (als separate PBIX-Dateien) erstellen und in unterschiedlichen Arbeitsbereichen speichern. Das Feature heißt **Liveverbindung mit Power BI-Dienst**.
@@ -28,20 +28,20 @@ Dieser Artikel geht auf die zahlreichen Vorteile des Features sowie auf bewährt
 Eine der Herausforderungen im Zusammenhang mit der Beliebtheit von Power BI liegt in der Verbreitung von Berichten, Dashboards und den jeweils zugrunde liegenden Datenmodellen. Der Grund: Sie können ganz einfach eindrucksvolle Berichte in **Power BI Desktop** erstellen, im **Power BI-Dienst** freigeben ([veröffentlichen](desktop-upload-desktop-files.md)) und anschließend auf der Grundlage dieser Datasets erstklassige Dashboards erstellen. Da diese Vorgehensweise von so vielen genutzt wird und dabei häufig die gleichen (oder zumindest sehr ähnliche) Datasets verwendet werden, lässt sich nicht mehr so einfach nachvollziehen, welcher Bericht denn nun auf welchem Dataset basiert – und wie aktuell das jeweilige Dataset ist. Das Feature **Liveverbindung mit Power BI-Dienst** ist die Antwort auf dieses Problem und macht das Erstellen, Freigeben und Erweitern von Berichten und Dashboards mit einem gemeinsamen Dataset einfacher und konsistenter.
 
 ### <a name="create-a-dataset-everyone-can-use-then-share-it"></a>Erstellen und Freigeben eines von allen nutzbaren Datasets
-Ein Beispiel: Anna ist Business Analyst in Ihrem Team und kann sehr gute Datenmodelle (auch Datasets genannt) erstellen. Dank ihres Know-hows kann Anna ein Dataset und einen Bericht erstellen und diesen anschließend über den **Power BI-Dienst** freigeben.
+Ein Beispiel: Anna ist Business Analyst in Ihrem Team und hat die entsprechenden Kenntnisse, um sehr gute Datenmodelle (häufig als Datasets bezeichnet) zu erstellen. Dank ihres Know-hows kann Anna ein Dataset und einen Bericht erstellen und diesen Bericht anschließend über den **Power BI-Dienst** freigeben.
 
 ![Veröffentlichen im Power BI-Dienst](media/desktop-report-lifecycle-datasets/report-lifecycle_02a.png)
 
-Alle sind von ihrem Bericht und von ihrem Dataset begeistert – und genau da beginnen die Probleme: Jeder in ihrem Team versucht, eine *eigene Version* dieses Datasets zu erstellen und anschließend seine eigenen Berichte für das Team freizugeben. Plötzlich enthält der Arbeitsbereich Ihres Teams im **Power BI-Dienst** zahlreiche verschiedene Berichte, die jeweils auf unterschiedlichen Datasets basieren. Welches davon ist auf dem neuesten Stand? Waren die Datasets identisch, oder doch nur annähernd gleich? Wo lagen die Unterschiede? Mit dem Feature **Liveverbindung mit Power BI-Dienst** lässt sich all das vermeiden. Im nächsten Abschnitt erfahren Sie, wie andere Benutzer das von Anna veröffentlichte Dataset für ihre eigenen Berichte in Ihren eigenen Arbeitsbereichen verwenden können und wie Sie es allen Benutzern ermöglichen, ihre individuellen Berichte auf der Grundlage des gleichen fundierten, geprüften und veröffentlichten Datasets zu erstellen.
+Alle sind von Annas Bericht und Dataset begeistert – und genau da beginnen die Probleme: Jeder in Annas Team versucht, eine *eigene Version* dieses Datasets zu erstellen und anschließend seine eigenen Berichte für das Team freizugeben. Plötzlich enthält der Arbeitsbereich Ihres Teams im **Power BI-Dienst** zahlreiche verschiedene Berichte, die jeweils auf unterschiedlichen Datasets basieren. Welches davon ist auf dem neuesten Stand? Waren die Datasets identisch, oder doch nur annähernd gleich? Wo lagen die Unterschiede? Mit dem Feature **Liveverbindung mit Power BI-Dienst** lässt sich all das vermeiden. Im nächsten Abschnitt erfahren Sie, wie andere Benutzer das von Anna veröffentlichte Dataset für ihre eigenen Berichte in Ihren eigenen Arbeitsbereichen verwenden können und wie Sie es allen Benutzern ermöglichen, ihre individuellen Berichte auf der Grundlage des gleichen fundierten, geprüften und veröffentlichten Datasets zu erstellen.
 
 ### <a name="connect-to-a-power-bi-service-dataset-using-a-live-connection"></a>Herstellen einer Liveverbindung mit einem Dataset des Power BI-Diensts
-Nachdem Anna ihren Bericht (und das zugrunde liegende Dataset) erstellt hat, veröffentlicht sie ihn für den **Power BI-Dienst**, woraufhin er dort im Arbeitsbereich ihres Teams angezeigt wird. Wenn sie den Bericht in einem *neuen Arbeitsbereich* speichert, kann sie Berechtigungen zum Erstellen festlegen, um den Bericht für jeden Benutzer innerhalb und außerhalb ihres Arbeitsbereichs verfügbar und verwendbar zu machen.
+Anna erstellt einen Bericht (und das zugrunde liegende Dataset) und veröffentlicht diesen dann im **Power BI-Dienst**, woraufhin er dort im Power BI-Dienst-Arbeitsbereich ihres Teams angezeigt wird. Wenn Anna den Bericht in einem *neuen Arbeitsbereich* speichert, kann sie die Berechtigung zum Erstellen festlegen, um den Bericht für jeden Benutzer innerhalb und außerhalb ihres Arbeitsbereichs verfügbar und verwendbar zu machen.
 
 Weitere Informationen zu den neuen Arbeitsbereichen finden Sie unter [App-Arbeitsbereiche](service-new-workspaces.md).
 
-Andere Benutzer innerhalb und außerhalb ihres Arbeitsbereichs können nun mithilfe des Features **Liveverbindung mit Power BI-Dienst** eine Liveverbindung mit dem von Anna freigegebenen Datenmodell herstellen und eigene Berichte auf der Grundlage von *Annas ursprünglichem Dataset* in *ihren eigenen neuen Arbeitsbereichen* erstellen.
+Andere Benutzer innerhalb und außerhalb des Arbeitsbereichs von Anna können nun mithilfe des Features **Liveverbindung mit Power BI-Dienst** eine Liveverbindung mit dem von Anna freigegebenen Datenmodell herstellen und eigene Berichte auf der Grundlage von *Annas ursprünglichem Dataset* in *ihren eigenen neuen Arbeitsbereichen* erstellen.
 
-In der folgenden Abbildung sehen Sie, wie Anna einen **Power BI Desktop-Bericht** erstellt und ihn (einschließlich seines Datenmodells) für den **Power BI-Dienst** veröffentlicht. Daraufhin können andere Benutzer mithilfe des Features **Liveverbindung mit Power BI-Dienst** eine Verbindung mit ihrem Datenmodell herstellen und eigene Berichte in ihren eigenen Arbeitsbereichen auf der Grundlage von Annas Dataset erstellen.
+In der folgenden Abbildung sehen Sie, wie Anna einen **Power BI Desktop-Bericht** erstellt und ihn (einschließlich seines Datenmodells) für den **Power BI-Dienst** veröffentlicht. Daraufhin können andere Benutzer mithilfe des Features **Liveverbindung mit Power BI-Dienst** eine Verbindung mit Annas Datenmodell herstellen und eigene Berichte in ihren eigenen Arbeitsbereichen auf der Grundlage von Annas Dataset erstellen.
 
 ![Mehrere Berichte auf Grundlage eines Datasets](media/desktop-report-lifecycle-datasets/report-lifecycle_03.png)
 
@@ -54,15 +54,15 @@ In der folgenden Abbildung sehen Sie, wie Anna einen **Power BI Desktop-Bericht*
 Nachdem Sie nun wissen, wie praktisch das Feature **Liveverbindung mit Power BI-Dienst** ist und wie Sie es als Best Practice für die Verwaltung des Berichtslebenszyklus verwenden können, erfahren Sie als Nächstes, welche Schritte erforderlich sind, um von Annas Bericht (und Dataset) zu einem freigegebenen Dataset zu gelangen, das von ihren Teamkollegen in ihrem Power BI-Arbeitsbereich verwendet werden kann.
 
 ### <a name="publish-a-power-bi-report-and-dataset"></a>Veröffentlichen eines Power BI-Berichts und eines Datasets
-Für die Berichtslebenszyklusverwaltung mithilfe des Features **Liveverbindung mit Power BI-Dienst** wird zunächst ein für die Teamkollegen interessanter Bericht (und ein Dataset) benötigt. Anna muss ihren Bericht also zunächst über **Power BI Desktop** **veröffentlichen**. Hierzu wählt sie in Power BI Desktop auf dem Menüband **Start** die Option **Veröffentlichen** aus.
+Für die Berichtslebenszyklusverwaltung mithilfe des Features **Liveverbindung mit Power BI-Dienst** wird zunächst ein für die Teamkollegen interessanter Bericht (und ein Dataset) benötigt. Anna muss den Bericht also zunächst aus **Power BI Desktop** **veröffentlichen**. Dazu wählt Anna in Power BI Desktop auf dem Menüband **Home** die Option **Veröffentlichen** aus.
 
 ![Veröffentlichen eines Berichts](media/desktop-report-lifecycle-datasets/report-lifecycle_02a.png)
 
-Falls sie nicht bei ihrem Power BI-Dienstkonto angemeldet ist, erscheint eine Anmeldeaufforderung.
+Ist Anna nicht bei dem Power BI-Dienst-Konto angemeldet, wird sie in einem Popupfenster dazu aufgefordert, sich anzumelden.
 
 ![Anmelden bei Power BI Desktop](media/desktop-report-lifecycle-datasets/report-lifecycle_04.png)
 
-Hier kann sie den gewünschten Zielarbeitsbereich für die Veröffentlichung des Berichts und des Datasets auswählen. Denken Sie daran: Wenn Anna das Dataset in einem neuen Arbeitsbereich speichert, kann jeder mit Erstellberechtigungen darauf zugreifen. Erstellberechtigungen werden im Power BI-Dienst nach der Veröffentlichung festgelegt. Wenn Anna das Dataset in einem klassischen Arbeitsbereich speichert, können nur Mitglieder mit Zugriff auf den Arbeitsbereich, in dem ein Bericht veröffentlicht wird, über das Feature **Liveverbindung mit Power BI-Dienst** auf das entsprechende Dataset zugreifen.
+Hier kann Anna den gewünschten Zielarbeitsbereich für die Veröffentlichung des Berichts und des Datasets auswählen. Denken Sie daran: Wenn Anna das Dataset in einem neuen Arbeitsbereich speichert, kann jeder mit Berechtigung zum Erstellen auf das Dataset zugreifen. Erstellberechtigungen werden im Power BI-Dienst nach der Veröffentlichung festgelegt. Wird Arbeit in einem klassischen Arbeitsbereich gespeichert, können nur Mitglieder mit Zugriff auf den Arbeitsbereich, in dem ein Bericht veröffentlicht wird, über das Feature **Liveverbindung mit Power BI-Dienst** auf das entsprechende Dataset zugreifen.
 
 ![Veröffentlichen im Power BI-Dienst](media/desktop-report-lifecycle-datasets/report-lifecycle_05.png)
 
@@ -100,8 +100,8 @@ Beim Verwenden des Features **Liveverbindung mit Power BI-Dienst** sind einige E
 
 * Nur Benutzer mit Erstellberechtigungen für ein Dataset können mithilfe des Features **Liveverbindung mit Power BI-Dienst** eine Verbindung mit einem veröffentlichten Dataset herstellen. 
 * Benutzer der kostenlosen Version sehen nur Datasets aus „Mein Arbeitsbereich“ und aus Premium-Arbeitsbereichen.
-* Da es sich hierbei um eine Liveverbindung handelt, sind die Navigation nach links sowie die Modellierung deaktiviert – ähnlich wie bei einer Verbindung mit **SQL Server Analysis Services**.
-* Da es sich hierbei um eine Liveverbindung handelt, werden RLS (Row- and Role-Level Security; Sicherheit auf Zeilen- und Rollenebene), OneDrive for Business und ähnliche Verbindungsmerkmale erzwungen – genau wie bei einer Verbindung mit **SQL Server Analysis Services**.
+* Da es sich hierbei um eine Liveverbindung handelt, sind die Navigation nach links sowie die Modellierung deaktiviert, ähnlich dem Verhalten bei einer Verbindung mit **SQL Server Analysis Services**, und Sie können nur eine Verbindung mit einem Dataset in jedem Bericht herstellen.
+* Da es sich hierbei um eine Liveverbindung handelt, werden RLS (Row- and Role-Level Security; Sicherheit auf Zeilen- und Rollenebene) und weitere solcher Verbindungsmerkmale erzwungen – genau wie bei einer Verbindung mit **SQL Server Analysis Services**.
 * Wenn der Besitzer die freigegebene PBIX-Originaldatei ändert, werden das Dataset und der im **Power BI-Dienst** freigegebene Bericht überschrieben. Berichte, die auf diesem Dataset basieren, werden nicht überschrieben. Änderungen des Datasets werden jedoch im Bericht widergespiegelt.
 * Die Mitglieder eines Arbeitsbereichs können den ursprünglich freigegebenen Bericht nicht ersetzen. Wenn Sie es dennoch versuchen, wird eine Warnung angezeigt, in der Sie zum Umbenennen der Datei und Veröffentlichen des Berichts aufgefordert werden.
 * Wenn Sie das freigegebene Dataset im **Power BI-Dienst** löschen, funktionieren andere Berichte, die darauf basieren, nicht mehr ordnungsgemäß oder zeigen keine Visuals mehr an.
