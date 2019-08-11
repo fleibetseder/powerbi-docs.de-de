@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: d7d3bf85661284835271b68c476ee53ec2c474bc
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: 031274f4f35ef1e36ec17648c2cbf967f5436020
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751114"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68729808"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Änderungsprotokoll für Power BI-Berichtsserver
 
@@ -45,6 +45,10 @@ Ausführliche Informationen zu neuen Funktionen finden Sie unter [Neuerungen in 
             - Hinzufügen eines einfachen Links für die Rückwärtsnavigation im PBIRS-Auswahlfenster
             - Korrigiert: Anzeigen der Schaltfläche „Zurück“ im Modus „Hohe Kontraste“ in PBIRS, Anzeigen von Warnmeldungen für Visuals
             - Korrigiert: Benutzeroberfläche des Auswahlbereichs (Canvasskalierung)
+
+    - *Version: 2.69.5467.5201 (Mai 2019), Veröffentlichung: 30. Juli 2019*
+        - Fehlerkorrekturen
+            - Korrektur für falsche Telemetrieprotokollierung
 
 ## <a name="january-2019"></a>Januar 2019
 
@@ -93,8 +97,11 @@ Ausführliche Informationen zu neuen Funktionen finden Sie unter [Neuerungen in 
         - Verknüpfungen und angeheftete Symbole bleiben auch nach der Deinstallation des Power BI-Berichtsservers erhalten
         - Korrigiert: Anheften des Power BI-Berichtsservers an das Startmenü führte zu einem schwarzen Symbol mit schwarzer Schrift
 
-    - *Version: 2.65.5313.1421 (Januar 2019), Veröffentlichung: 22. Januar 2019*
-        - Enthält Änderungen, die für die Verbindung mit dem Power BI-Berichtsserver (Januar 2019) erforderlich sind  
+    - *Version: 2.65.5313.1421 (Januar 2019), Veröffentlichung: 22. Januar 2019* (neuer Build und neue Version)
+        - Enthält Änderungen, die für die Verbindung mit dem Power BI-Berichtsserver (Januar 2019) erforderlich sind 
+    - *Version: 2.65.5313.5141 (Januar 2019), Veröffentlichung: 31. Juli 2019* (neuer Build und neue Version)
+        - Fehlerkorrekturen
+            - Korrektur für falsche Telemetrieprotokollierung
 
 ## <a name="august-2018"></a>August 2018
 

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 07/15/2019
-ms.openlocfilehash: 10135e0fa725cd4093802cd1416cab302174e21d
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 2e59499b93f4d1b4879cdec5b807f863a80718aa
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270794"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665366"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Paginierte Berichte in Power BI: HÄUFIG GESTELLTE FRAGEN 
 
@@ -162,7 +162,7 @@ Ja, das Ausführen von Code in Berichten wird – wie in SSRS – unterstützt.
 
 ### <a name="can-i-use-power-bi-embedded-to-embed-my-paginated-reports-into-an-app-im-hosting"></a>Kann ich mit Power BI Embedded meine paginierten Berichte in eine App einbetten, die ich hoste?
 
-Einbetten von SaaS wird im Laufe des Junis unterstützt.  Die Unterstützung des Einbettens von SaaS mit den vorhandenen Power BI-APIs ist auch geplant. Allerdings liegt dafür noch kein konkreter Zeitplan vor.
+Das Einbetten von Saas wird bereits unterstützt. Das Einbetten von Paas wird zurzeit nicht unterstützt.
 
 ### <a name="can-i-drill-through-from-a-power-bi-report-to-a-paginated-report"></a>Kann ich einen Drillthrough von einem Power BI-Bericht zu einem paginierten Bericht ausführen?
 

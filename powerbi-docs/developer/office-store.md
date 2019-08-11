@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 3/27/2019
-ms.openlocfilehash: cf9b3335b10b7a2cd3abcc3f02c651ed4416184e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: cb21d3baf9523a90b0446b44704587b5af73904f
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61269812"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68623818"
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Veröffentlichen von benutzerdefinierten Visuals in AppSource
 
@@ -22,7 +22,7 @@ Erfahren Sie, wie Sie ein benutzerdefiniertes Visual in AppSource veröffentlich
 
 Nachdem Sie ein benutzerdefiniertes Visual erstellt haben, empfiehlt es sich, es in AppSource zu veröffentlichen, damit es von anderen Personen gefunden und verwendet werden kann. Zuvor sind jedoch einige vorbereitende Schritte erforderlich. Weitere Informationen zum Erstellen eines benutzerdefinierten Visuals finden Sie im Tutorial [Entwickeln eines benutzerdefinierten Power BI-Visuals](custom-visual-develop-tutorial.md).
 
-   ![Office Store](media/office-store/AppSource_01.jpg)
+   ![Office Store](media/office-store/appsource-01.png)
 
 ## <a name="what-is-appsource"></a>Was ist AppSource?
 
@@ -30,7 +30,7 @@ Nachdem Sie ein benutzerdefiniertes Visual erstellt haben, empfiehlt es sich, es
 
 ## <a name="preparing-to-submit-your-custom-visual"></a>Vorbereiten der Übermittlung Ihrer benutzerdefinierten Visualisierung
 
-Sobald Sie fertig sind lesen unsere [Power BI-Visuals-Richtlinien](guidelines-powerbi-visuals.md), Codierung und [Testen Ihrer benutzerdefinierten Visualisierung](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md) und haben verpackt es in eine Pbiviz-Datei, außerdem müssen Sie folgende Angaben bereit für die Übermittlung.
+Nachdem Sie unsere [Richtlinien für Power BI-Visuals](guidelines-powerbi-visuals.md) gelesen, [Ihr benutzerdefiniertes Visual programmiert, getestet](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md) und als PBIVIZ-Datei gepackt haben, sollten Sie außerdem die folgenden Elemente für die Übermittlung bereit halten.
 
 | Artikel | Erforderlich | Beschreibung |
 | --- | --- | --- |

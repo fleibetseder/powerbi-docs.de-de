@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: b1d84e9de9ae6d6fd8306fce4865977a8d273652
-ms.sourcegitcommit: 76fadf20c1e19ec43aa8f9c5a5e909b567419ef6
+ms.openlocfilehash: a240d84b20f63542c33bb7cbbb9a9c97af7db2f7
+ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68289946"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68757673"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Verwenden von SAML (Security Assertion Markup Language) für SSO (Single Sign-On, Einmaliges Anmelden) von Power BI bei lokalen Datenquellen
 
@@ -33,7 +33,7 @@ Für HANA wird **dringend** die Aktivierung der Verschlüsselung empfohlen, bevo
 
 Wenn Sie SAML verwenden möchten, müssen Sie eine Vertrauensstellung zwischen den HANA-Servern, für die Sie SSO aktivieren möchten, und dem Gateway herstellen, das in diesem Szenario als SAML-Identitätsanbieter (IdP) dient. Es gibt verschiedene Möglichkeiten, diese Vertrauensstellung herzustellen. Sie können beispielsweise das X.509-Zertifikat des Gateway-IdP in den Zertifikatspeicher der HANA-Server importieren oder die X.509-Zertifikate des Gateways von einer Stammzertifizierungsstelle signieren lassen, die von den HANA-Servern als vertrauenswürdig eingestuft wird. In diesem Leitfaden wird der zweite Ansatz beschrieben. Sie können jedoch bei Bedarf auch einen anderen verwenden.
 
-Beachten Sie außerdem, dass in dieser Anleitung OpenSSL als Kryptografieanbieter des HANA-Servers verwendet wird. Stattdessen kann aber auch die SAP Cryptographic Library (auch unter dem Namen CommonCryptoLib oder sapcrypto bekannt) verwendet werden, um die Einrichtungsschritte für die Vertrauensstellung abzuschließen. Weitere Informationen finden Sie in der offiziellen SAP-Dokumentation.
+Beachten Sie außerdem, dass in dieser Anleitung OpenSSL als Kryptografieanbieter des HANA-Servers verwendet wird. Von SAP wird empfohlen, stattdessen die SAP Cryptographic Library (auch unter dem Namen CommonCryptoLib oder sapcrypto bekannt) zu verwenden, um die Einrichtungsschritte für die Vertrauensstellung abzuschließen. Weitere Informationen finden Sie in der offiziellen SAP-Dokumentation.
 
 In den folgenden Schritten wird beschrieben, wie Sie mithilfe einer Stammzertifizierungsstelle, die vom HANA-Server als vertrauenswürdig eingestuft wird, das X.509-Zertifikat des Gateway-IdP signieren und auf diese Weise eine Vertrauensstellung zwischen dem HANA-Server und dem Gateway-IdP herstellen.
 
@@ -180,7 +180,7 @@ In den Authentifizierungsablaufverfolgungen finden sich detaillierte Information
 
 Weitere Informationen zum **lokalen Datengateway** und zu **DirectQuery** finden Sie in den folgenden Ressourcen:
 
-* [What is an on-premises data gateway? (Was ist ein lokales Datengateway?)](/data-integration/gateway/service-gateway-getting-started)
+* [What is an on-premises data gateway? (Was ist ein lokales Datengateway?)](/data-integration/gateway/service-gateway-onprem)
 * [DirectQuery in Power BI](desktop-directquery-about.md)
 * [Von DirectQuery unterstützte Datenquellen](desktop-directquery-data-sources.md)
 * [DirectQuery und SAP BW](desktop-directquery-sap-bw.md)

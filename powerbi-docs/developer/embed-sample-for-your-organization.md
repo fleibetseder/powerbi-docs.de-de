@@ -1,6 +1,6 @@
 ---
 title: Embedded Analytics für das Einbetten von Power BI-Inhalten in eine Anwendung für Ihre Organisation
-description: Hier erfahren Sie, wie Sie mit den Power BI-APIs einen Bericht, ein Dashboard oder eine Kachel für Embedded Analytics für Ihre Organisation in eine Anwendung integrieren bzw. einbetten. In diesem Artikel erfahren Sie, wie Sie Power BI mit Embedded Analytics-Software, Embedded Analytics-Tools oder eingebetteten Business Intelligence-Tools in Ihre Anwendung integrieren.
+description: Hier erfahren Sie, wie Sie mit den Power BI-APIs einen Bericht (Power BI oder paginiert), ein Dashboard oder eine Kachel für Embedded Analytics für Ihre Organisation in eine Anwendung integrieren bzw. einbetten. In diesem Artikel erfahren Sie, wie Sie Power BI mit Embedded Analytics-Software, Embedded Analytics-Tools oder eingebetteten Business Intelligence-Tools in Ihre Anwendung integrieren.
 author: rkarlin
 ms.author: rkarlin
 manager: kfile
@@ -9,24 +9,24 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 04/02/2019
-ms.openlocfilehash: 53311929aa6277efd621fb2b944ea062ab99999d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 07/29/2019
+ms.openlocfilehash: 02e11e167d859d3ef23124fed4f9f699766db8fe
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61355023"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665558"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Tutorial: Einbetten von Power BI-Inhalten in eine Anwendung für Ihre Organisation
 
-In **Power BI** können Sie mit User Owns Data (Benutzer ist Besitzer der Daten) Berichte, Dashboards oder Kacheln in eine Anwendung einbetten. Mit **User Owns Data** (Benutzer ist Besitzer der Daten) kann Ihre Anwendung den Power BI-Dienst erweitern, um Embedded Analytics zu nutzen. Dieses Tutorial veranschaulicht die Vorgehensweise beim Integrieren eines Berichts in eine Anwendung. Verwenden Sie das Power BI .NET SDK mit der Power BI-JavaScript-API, um Power BI für Ihre Organisation in eine Anwendung einzubetten.
+In **Power BI** können Sie mit User Owns Data (Benutzer ist Besitzer der Daten) Berichte (Power BI oder paginiert), Dashboards oder Kacheln in eine Anwendung einbetten. Mit **User Owns Data** (Benutzer ist Besitzer der Daten) kann Ihre Anwendung den Power BI-Dienst erweitern, um Embedded Analytics zu nutzen. Dieses Tutorial veranschaulicht die Vorgehensweise beim Integrieren eines Berichts (Power BI oder paginiert) in eine Anwendung. Verwenden Sie das Power BI .NET SDK mit der Power BI-JavaScript-API, um Power BI für Ihre Organisation in eine Anwendung einzubetten.
 
 ![Power BI Embed Report](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
 In diesem Tutorial lernen Sie Folgendes:
 > [!div class="checklist"]
 > * Registrieren einer Anwendung in Azure
-> * Einbetten eines Power BI-Berichts in eine Anwendung mithilfe Ihres Power BI-Mandanten
+> * Einbetten eines Power BI- oder paginierten Berichts in eine Anwendung mithilfe Ihres Power BI-Mandanten
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -35,6 +35,7 @@ Sie benötigen Folgendes, um direkt mit dem Tutorial loslegen zu können:
 * Ein [Power BI Pro-Konto](../service-self-service-signup-for-power-bi.md)
 * Ein [Microsoft Azure](https://azure.microsoft.com/)-Abonnement
 * Einen individuell eingerichteten [Azure Active Directory-Mandanten](create-an-azure-active-directory-tenant.md)
+* Zum Einbetten von paginierten Berichten benötigen Sie mindestens eine A4/P1-Kapazität. Weitere Informationen finden Sie unter [Welche Premium-Kapazitätsgröße benötige ich für paginierte Berichte?](../paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports).
 
 Wenn Sie noch nicht bei **Power BI Pro** registriert sind, [registrieren Sie sich für eine kostenlose Testversion](https://powerbi.microsoft.com/pricing/), bevor Sie beginnen.
 
@@ -44,7 +45,7 @@ Wenn Sie kein Azure-Abonnement besitzen, erstellen Sie ein [kostenloses Konto](h
 
 Bevor Sie mit dem Einbetten von Dashboards, Berichten und Kacheln in Ihre Anwendung beginnen, müssen Sie sicherstellen, dass Ihre Umgebung Einbettungen mit Power BI zulässt.
 
-Sie können sich mit dem [Setuptool für die Einbettung](https://aka.ms/embedsetup/UserOwnsData) vertraut machen, damit Sie schnell beginnen und eine Beispielanwendung herunterladen können. In dieser wird schrittweise erläutert, wie Sie eine Umgebung erstellen und einen Bericht einbetten können.
+Sie können sich mit dem [Setuptool für die Einbettung](https://aka.ms/embedsetup/UserOwnsData) vertraut machen, damit Sie schnell beginnen und eine Beispielanwendung herunterladen können. In dieser wird schrittweise erläutert, wie Sie eine Umgebung erstellen und einen Bericht einbetten können. Wenn Sie einen paginierten-Bericht einbetten, müssen Sie dem erstellten App-Arbeitsbereich mindestens eine A4/P1-Kapazität zuweisen.
 
 Wenn Sie jedoch die Umgebung manuell einrichten möchten, können Sie weiter unten fortfahren.
 
@@ -60,7 +61,7 @@ Um fortzufahren, ist die Registrierung einer **serverseitigen Webanwendung** erf
 
 Wenn Sie Berichte, Dashboards oder Kacheln für Ihre Kunden einbetten, müssen Sie Ihre Inhalte in einem App-Arbeitsbereich platzieren. Zur Einrichtung stehen verschiedene Arten von Arbeitsbereichen zur Auswahl: der [traditionelle Arbeitsbereich](../service-create-workspaces.md) oder [neue Arbeitsbereiche](../service-create-the-new-workspaces.md).
 
-### <a name="create-and-publish-your-reports"></a>Erstellen und Veröffentlichen von Berichten
+### <a name="create-and-publish-your-power-bi-reports"></a>Erstellen und Veröffentlichen Ihrer Power BI-Berichte
 
 Sie können Ihre Berichte und Datasets mit Power BI Desktop erstellen. Anschließend können Sie diese Berichte in einem App-Arbeitsbereich veröffentlichen. Der Benutzer, der die Berichte veröffentlicht, muss über eine Power BI Pro-Lizenz verfügen, damit er einen App-Arbeitsbereich veröffentlichen kann.
 
@@ -79,7 +80,11 @@ Sie können Ihre Berichte und Datasets mit Power BI Desktop erstellen. Anschlie�
     Jetzt können Sie den Bericht online im Power BI-Dienst anzeigen.
 
    ![Anzeigen eines Power BI Desktop-Berichts](media/embed-sample-for-your-organization/embed-sample-for-your-organization-029.png)
+   
+### <a name="create-and-publish-your-paginated-reports"></a>Erstellen und Veröffentlichen Ihrer paginierten Berichte
 
+Sie können Ihre paginierten Berichte mithilfe des [Power BI-Berichts-Generators](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder) erstellen. Anschließend können Sie [den Bericht in einen App-Arbeitsbereich hochladen](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service), dem mindestens die A4/P1-Kapazität zugewiesen ist. Der Endbenutzer, der den Bericht hochlädt, muss eine Power BI Pro-Lizenz besitzen, um in einem App-Arbeitsbereich veröffentlichen zu können.
+   
 ## <a name="embed-your-content-by-using-the-sample-application"></a>Einbetten von Inhalt mit der Beispielanwendung
 
 Dieses Beispiel ist zur besseren Anschaulichkeit bewusst einfach gestaltet.
@@ -124,30 +129,6 @@ Führen Sie die folgenden Schritte aus, um **applicationId** abzurufen:
 
     ![applicationId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-043.png)
 
-### <a name="application-secret"></a>Anwendungsgeheimnis
-
-Dieses Attribut wird nur für den Authentifizierungstyp [Dienstprinzipal](embed-service-principal.md) benötigt.
-
-Geben Sie für **ApplicationSecret** die Informationen aus dem Abschnitt **Schlüssel** Ihres Abschnitts für **App-Registrierungen** in **Azure** ein.  Dieses Attribut ist geeignet, wenn ein [Dienstprinzipal](embed-service-principal.md) verwendet wird.
-
-Führen Sie die folgenden Schritte aus, um **ApplicationSecret** abzurufen:
-
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-
-2. Klicken Sie im Navigationsbereich auf der linken Seite auf **Alle Dienste** und dann auf **App-Registrierungen**.
-
-3. Wählen Sie die Anwendung aus, die **ApplicationSecret** verwenden muss.
-
-    ![App auswählen](media/embed-sample-for-your-organization/embed-sample-for-your-organization-042.png)
-
-4. Wählen Sie **Zertifikaten und geheimen Schlüsseln** unter **verwalten**.
-
-5. Wählen Sie **neuer geheimer Clientschlüssel**.
-
-6. Geben Sie in das Feld **Beschreibung** einen Namen ein, und wählen Sie eine Dauer aus. Klicken Sie anschließend auf **Speichern**, um den **Wert** für Ihre Anwendung abzurufen. Wenn Sie den Bereich **Schlüssel** nach dem Speichern des Schlüsselwerts schließen, wird das Wertfeld nur als ausgeblendet angezeigt. An diesem Punkt können Sie den Schlüsselwert nicht abrufen. Wenn Sie den Schlüsselwert verlieren, müssen Sie im Azure-Portal einen neuen erstellen.
-
-    ![Schlüsselwert](media/embed-sample-for-your-organization/embed-sample-for-your-organization-046.png)
-
 ### <a name="workspace-id"></a>Arbeitsbereichs-ID
 
 Geben Sie für **workspaceId** die Anwendungsarbeitsbereichs-GUID (Gruppen-GUID) aus Power BI an. Die benötigten Informationen erhalten Sie entweder aus der URL, wenn Sie im Power BI-Dienst angemeldet sind, oder über PowerShell.
@@ -168,9 +149,17 @@ Get-PowerBIworkspace -name "User Owns Embed Test"
 
 Geben Sie als **reportId** die Berichts-GUID aus Power BI an. Die benötigten Informationen erhalten Sie entweder aus der URL, wenn Sie im Power BI-Dienst angemeldet sind, oder über PowerShell.
 
-URL <br>
+Power BI-Berichts-URL <br>
 
-![reportId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041.png)
+![PBI reportId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041.png)
+
+Paginierte Berichts-URL <br>
+
+
+
+Paginierte Berichts-URL<br>
+
+![Paginierte reportId](media/embed-sample-for-your-organization/paginated-reports-url.png)
 
 PowerShell <br>
 
@@ -214,7 +203,7 @@ In der Anwendung müssen Sie ein Zugriffstoken aus Azure AD abrufen, bevor Sie d
 
 ### <a name="get-a-report"></a>Abrufen eines Berichts
 
-Zum Abrufen eines Power BI-Berichts müssen Sie den Vorgang [Berichte abrufen](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) verwenden, um eine Liste der Power BI-Berichte abzurufen. Aus der Liste der Berichte können Sie eine Berichts-ID abrufen.
+Zum Abrufen eines Power BI- oder paginierten Berichts müssen Sie den Vorgang [Berichte abrufen](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) verwenden, um eine Liste der Power BI- und paginierten Berichte abzurufen. Aus der Liste der Berichte können Sie eine Berichts-ID abrufen.
 
 ### <a name="get-reports-by-using-an-access-token"></a>Abrufen von Berichten mithilfe eines Zugriffstokens
 
@@ -275,6 +264,7 @@ public class PBIReports
 public class PBIReport
 {
     public string id { get; set; }
+    public string reportType { get; set }
     public string name { get; set; }
     public string webUrl { get; set; }
     public string embedUrl { get; set; }
@@ -394,7 +384,7 @@ Wenn Sie mit dem Entwickeln Ihrer Anwendung fertig sind, sollten Sie Ihren App-A
 
 ### <a name="create-a-dedicated-capacity"></a>Erstellen einer dedizierten Kapazität
 
-Indem Sie eine dedizierte Kapazität erstellen, können Sie die dazugehörigen Vorteile für den Inhalt in Ihrem App-Arbeitsbereich verwenden. Sie können mit [Power BI Premium](../service-premium-what-is.md) eine dedizierte Kapazität erstellen.
+Indem Sie eine dedizierte Kapazität erstellen, können Sie die dazugehörigen Vorteile für den Inhalt in Ihrem App-Arbeitsbereich verwenden. Bei paginierten Berichten müssen Sie Ihren App-Arbeitsbereich mindestens mit einer A4/P1-Kapazität sichern. Sie können eine dedizierte Kapazität erstellen, indem Sie [Power BI Premium](../service-premium-what-is.md) verwenden.
 
 In der folgenden Tabelle werden die verfügbaren Power BI Premium-SKUs in [Microsoft Office 365](../service-admin-premium-purchase.md) aufgelistet:
 
@@ -435,7 +425,7 @@ Globale Administratoren oder Power BI-Dienstadministratoren können die Möglich
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Tutorial haben Sie gelernt, wie Sie Power BI-Inhalte mithilfe Ihres Power BI-Organisationskontos in eine Anwendung einbetten. Sie können jetzt versuchen, Power BI-Inhalte mithilfe von Apps in eine Anwendung einzubetten. Sie können auch versuchen, Power BI-Inhalte für Ihre Kunden einzubetten:
+In diesem Tutorial haben Sie gelernt, wie Sie Power BI-Inhalte mithilfe Ihres Power BI-Organisationskontos in eine Anwendung einbetten. Sie können jetzt versuchen, Power BI-Inhalte mithilfe von Apps in eine Anwendung einzubetten. Sie können auch versuchen, Power BI-Inhalte für Ihre Kunden einzubetten (noch nicht unterstützt für das Einbetten paginierter Berichte):
 
 > [!div class="nextstepaction"]
 > [Embed from apps (Einbetten aus Apps)](embed-from-apps.md)

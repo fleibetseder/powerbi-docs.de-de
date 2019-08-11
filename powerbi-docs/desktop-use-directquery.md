@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/18/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 775abf014f571b508832c5cb9a52a62aad455a7b
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: fcad10a77ad531562443470296c9d712b2aa9724
+ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68324791"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68757611"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Verwenden von DirectQuery in Power BI Desktop
 Wenn Sie mit **Power BI Desktop** eine Verbindung zu Ihrer Datenquelle herstellen, ist es immer möglich, eine Kopie der Daten in **Power BI Desktop** zu importieren. Für einige Datenquellen steht ein alternativer Ansatz zur Verfügung: das Herstellen einer direkten Verbindung zur Datenquelle mit **DirectQuery**.
@@ -62,10 +62,9 @@ Die folgenden drei Punkte sollten Sie bei der Verwendung von **DirectQuery** ber
   
   Auch sollte die Auslastung der Quelldatenbank basierend auf der Anzahl der Power BI-Benutzer berücksichtigt werden, die den veröffentlichten Bericht verwenden werden. Die Verwendung von *Sicherheit auf Zeilenebene* (Row Level Security, RLS) kann ebenfalls erhebliche Auswirkungen haben. Eine Nicht-RLS-Dashboardkachel, die von mehreren Benutzern gemeinsam verwendet wird, führt zu einer einzelnen Datenbankabfrage, doch die Verwendung von RLS für eine Dashboardkachel bedeutet in der Regel, dass für die Aktualisierung einer Kachel eine Abfrage *pro Benutzer* erforderlich ist. Hierdurch wird die Auslastung der Quelldatenbank deutlich erhöht und die Leistung möglicherweise beeinträchtigt.
   
-  Power BI erstellt Abfragen, die so effizient wie möglich sind. In bestimmten Situationen jedoch ist die generierte Abfrage möglicherweise nicht effizient genug, um Aktualisierungsfehler zu verhindern. Ein Beispiel für eine solche Situation ist eine generierte Abfrage, die eine übermäßig große Anzahl von Zeilen (mehr als 1 Million) aus der Back-End-Datenquelle abruft. In diesem Fall tritt der folgende Fehler auf:
+  Power BI erstellt Abfragen, die so effizient wie möglich sind. In bestimmten Situationen jedoch ist die generierte Abfrage möglicherweise nicht effizient genug, um Aktualisierungsfehler zu verhindern. Ein Beispiel für eine solche Situation ist eine generierte Abfrage, die eine übermäßig große Anzahl von Zeilen aus der Back-End-Datenquelle abruft. In diesem Fall tritt der folgende Fehler auf:
   
       The resultset of a query to external data source has exceeded
-      the maximum allowed size of '1000000' rows.
   
   Diese Situation kann bei einem einfachen Diagramm auftreten, das eine sehr hohe Kardinalitätsspalte enthält und für das die Aggregationsoption auf *Nicht zusammenfassen* festgelegt ist. Das visuelle Element darf nur Spalten mit einer Kardinalität unter 1 Million enthalten, oder es müssen entsprechenden Filter angewendet werden.
 * **Sicherheit** – Alle Benutzer, die einen veröffentlichten Bericht verwenden, stellen die Verbindung mit der Back-End-Datenquelle mit den Anmeldeinformationen her, die nach der Veröffentlichung im Power BI-Dienst eingegeben wurden. Dies ist dieselbe Ausgangssituation wie bei importierten Daten: Für alle Benutzer werden dieselben Daten angezeigt, unabhängig von den in der Back-End-Datenquelle definierten Sicherheitsregeln. Kunden, die mit DirectQuery-Quellen benutzerspezifische Sicherheit implementieren möchten, sollten RLS verwenden. [Erfahren Sie mehr zu RLS](service-admin-rls.md).

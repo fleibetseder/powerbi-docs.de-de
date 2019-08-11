@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: db0ea02237a2279c26f2c47cecd3bae794a5cba4
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 9f3131749a484380a1352d39ae35ea409f6dc697
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840301"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68624152"
 ---
 # <a name="expression-examples-in-power-bi-report-builder"></a>Beispiele für Ausdrücke im Power BI-Berichts-Generator
 Ausdrücke werden häufig in paginierten Berichten des paginierten Power BI-Berichts-Generators verwendet, um den Inhalt und die Darstellung der Berichte zu steuern. Ausdrücke werden in Microsoft Visual Basic geschrieben und können integrierte Funktionen, benutzerdefinierten Code, Berichts- und Gruppenvariablen sowie benutzerdefinierte Variablen verwenden. Ausdrücke beginnen mit einem Gleichheitszeichen (=).   
@@ -40,7 +40,7 @@ Weitere Informationen über einfache und komplexe Ausdrücke, über die Anwendun
 ##  <a name="VisualBasicFunctions"></a> Visual Basic-Funktionen  
  Mit Visual Basic-Funktionen können Sie die Daten bearbeiten, die in Textfeldern angezeigt werden, oder die für Parameter, Eigenschaften oder andere Bereichen des Berichts verwendet werden. Dieser Abschnitt enthält Beispiele zur Veranschaulichung einiger dieser Funktionen. Weitere Informationen finden Sie unter [Member der Visual Basic-Laufzeitbibliothek](https://go.microsoft.com/fwlink/?LinkId=198941) auf MSDN.  
   
- Das .NET Framework bietet viele benutzerdefinierte Formatoptionen, z.B. für bestimmte Datumsformate. Weitere Informationen finden Sie unter [Formatierung von Typen](https://go.microsoft.com/fwlink/?LinkId=112024) auf MSDN.  
+ Das .NET Framework bietet viele benutzerdefinierte Formatoptionen, z.B. für bestimmte Datumsformate. Weitere Informationen finden Sie unter [Formatierung von Typen](/dotnet/standard/base-types/formatting-types).  
   
 ### <a name="math-functions"></a>Mathematische Funktionen  
   
@@ -154,7 +154,7 @@ Weitere Informationen über einfache und komplexe Ausdrücke, über die Anwendun
   
 |Beispielbeschreibung|Beispiel|  
 |-------------------------|-------------|  
-|Gestern|`=DateSerial(Year(Parameters!TodaysDate.Value),Month(Parameters!TodaysDate.Value),Day(Parameters!TodaysDate.Value)-1)`|  
+|Yesterday|`=DateSerial(Year(Parameters!TodaysDate.Value),Month(Parameters!TodaysDate.Value),Day(Parameters!TodaysDate.Value)-1)`|  
 |Vor zwei Tagen|`=DateSerial(Year(Parameters!TodaysDate.Value),Month(Parameters!TodaysDate.Value),Day(Parameters!TodaysDate.Value)-2)`|  
 |Vor einem Monat|`=DateSerial(Year(Parameters!TodaysDate.Value),Month(Parameters!TodaysDate.Value)-1,Day(Parameters!TodaysDate.Value))`|  
 |Vor zwei Monaten|`=DateSerial(Year(Parameters!TodaysDate.Value),Month(Parameters!TodaysDate.Value)-2,Day(Parameters!TodaysDate.Value))`|  
