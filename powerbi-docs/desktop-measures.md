@@ -7,25 +7,25 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 07/29/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: d46fa8be055186d2430ca4d3c387fae93b91acc3
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 431c1738a5d2e975fd96a8209ca8245cd4414d40
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523216"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730130"
 ---
 # <a name="measures-in-power-bi-desktop"></a>Measures in Power BI Desktop
 
 **Power BI Desktop** hilft Ihnen, Einblicke in Ihre Daten mit nur ein paar Mausklicks zu gewinnen. Manchmal enthalten diese Daten aber einfach nicht alles, was Sie für die Antwort auf Ihre drängendsten Fragen benötigen. Measures können Ihnen in dieser Situation weiterhelfen.
 
-Measures werden in einigen der am häufigsten verwendeten Datenanalysen verwendet. Beispiele sind Summen, Mittelwerte, Minimal- oder Maximalwerte, Anzahlen oder komplexere Berechnungen, die Sie selbst mithilfe einer DAX-Formel erstellen. Die berechneten Ergebnisse von Measures ändern sich ständig in Reaktion auf Ihre Interaktion mit Berichten und ermöglichen so eine schnelle und dynamische Untersuchung von Daten ohne Vorlauf. Sehen wir uns das einmal näher an.
+Measures werden in einigen der am häufigsten verwendeten Datenanalysen verwendet. Einfache Zusammenfassungen wie Summen, Mittelwerte, Mindest- und Höchstwerte sowie eine Anzahl können wie im Video zur [Zusammenfassung und Kategorie](https://docs.microsoft.com/power-bi/guided-learning/visualizations?tutorial-step=16) erläutert über den Bereich „Felder“ festgelegt werden. Mithilfe einer DAX-Formel können Sie erweiterte Berechnungen selbst erstellen. Die berechneten Ergebnisse von Measures ändern sich ständig in Reaktion auf Ihre Interaktion mit Berichten und ermöglichen so eine schnelle und dynamische Untersuchung von Daten ohne Vorlauf. Sehen wir uns das einmal näher an.
 
 ## <a name="understanding-measures"></a>Grundlegendes zu Measures
 
-In **Power BI Desktop** werden Measures in der **Berichtsansicht** oder in der **Datenansicht** verwendet. Von Ihnen selbst erstellte Measures werden in der Feldliste mit einem Rechnersymbol angezeigt. Sie können Measures nach Belieben benennen und sie einer neuen oder vorhandenen Visualisierung ganz wie jedes andere Feld hinzufügen.
+In **Power BI Desktop** werden Measures in der **Berichtsansicht** oder in der **Datenansicht** angezeigt. Von Ihnen selbst erstellte Measures werden in der Feldliste mit einem Rechnersymbol angezeigt. Sie können Measures nach Belieben benennen und sie einer neuen oder vorhandenen Visualisierung ganz wie jedes andere Feld hinzufügen.
 
 ![](media/desktop-measures/measuresinpbid_measinfieldlist.png)
 
@@ -64,6 +64,25 @@ Sie können auch die Datenkategorien für Measures auswählen.
 Dadurch können Sie unter anderem Measures zum dynamischen Erstellen von URLs verwenden und die Datenkategorie als Web-URL markieren. 
 
 Sie können Tabellen erstellen, die die Measures als Web-URLs anzeigen, und Sie können auf die URL klicken, die basierend auf Ihrer Auswahl erstellt wird. Dies ist insbesondere dann nützlich, wenn Sie eine Verknüpfung mit anderen Power BI-Berichten mithilfe von [URL-Filterparametern](service-url-filters.md) erstellen möchten.
+
+
+## <a name="organizing-your-measures"></a>Organisieren Ihrer Measures
+
+Measures verfügen über eine *Hometabelle*, in der definiert wird, wo sie in der Feldliste zu finden sind. Sie können deren Position ändern, indem Sie eine Position aus den Tabellen in Ihrem Modell auswählen.
+
+![Auswählen einer Tabelle für Ihr Measure](media/desktop-measures/measures-03.png)
+
+Sie können Felder in einer Tabelle auch in *Anzeigeordnern* organisieren. Wählen auf der linken Seite des Power BI Desktop-Fensters **Modellansicht** aus, wählen Sie anschließend das zu verschiebende Feld aus, das sich auf dem Zeichenbereich in der Liste befindet. Im Eigenschaftenbereich wird ein Textfeld für **Anzeigeordner** angezeigt. Wenn ein Name in das Feld **Anzeigeordner** eingegeben wird, wird der Ordner erstellt, und das ausgewählte Feld wird in diesen Ordner verschoben.
+
+![Erstellen eines Felds für Measures](media/desktop-measures/measures-04.gif)
+
+Sie können Unterordner erstellen, indem Sie einen umgekehrten Schrägstrich verwenden. Beispielsweise erstellt *Finance\Currencies* (Finanzen/Währungen) einen Ordner *Finance* (Finanzen) und darin einen Ordner *Currencies* (Währungen).
+
+Sie können einstellen, dass ein Feld in mehreren Ordnern angezeigt wird, indem Sie ein Semikolon verwenden, um die Ordnernamen zu trennen. Zum Beispiel führt die Aufteilung *Products\Names;Departments* (Produkte\Namen;Abteilungen) dazu, dass das Feld im Ordner *Departments* (Abteilungen) und im Ordner *Names* (Namen) innerhalb eines *Products*-Ordners (Produkte) angezeigt wird.
+
+Schließlich können Sie eine spezielle Tabelle erstellen, die nur Measures enthält, die grundsätzlich oben in der **Feldliste** angezeigt werden. Erstellen Sie hierzu eine Tabelle mit nur einer Spalte. Sie können **Daten eingeben** nutzen, um die Tabelle zu erstellen. Verschieben Sie dann die Measures in diese Tabelle. Blenden Sie schließlich die Spalte (nicht die Tabelle) aus, die Sie erstellt haben. Sie müssen die **Feldliste** schließen und erneut öffnen, damit Power BI Desktop sie richtig anzeigen kann. Klicken Sie dazu auf das Chevron am oberen Rand der **Feldliste**.
+
+![Organisieren von Measures und diese oben in der Feldliste beibehalten](media/desktop-measures/measures-05.png)
 
 ## <a name="learn-more"></a>Weitere Informationen
 Wir haben Ihnen hier nur eine kurze Einführung in Measures vorgestellt, aber es gibt noch viel mehr, das Ihnen hilft, das Erstellen eigener Measures zu lernen. Sehen sich unbedingt das [Tutorial: Erstellen eigener Measures in Power BI Desktop](desktop-tutorial-create-measures.md) an, für das Sie eine Beispieldatei herunterladen und schrittweise Lektionen zum Erstellen weiterer Measures abrufen können.  

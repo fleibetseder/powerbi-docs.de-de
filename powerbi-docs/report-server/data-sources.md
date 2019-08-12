@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/17/2018
 ms.author: maggies
-ms.openlocfilehash: 6e3bed0cf8dda765722c0076086f59a91f1f380d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: fe8ad0b951fedb17a97007e48808d2bfd7467e88
+ms.sourcegitcommit: 6c2c7a090b0826e3cfc3a897566e802857bbacc8
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770812"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68808220"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Datenquellen für Power BI-Berichte in Power BI-Berichtsserver
 Power BI-Berichte können Verbindungen mit einer Reihe von Datenquellen herstellen. Je nach Verwendung der Daten sind verschiedene Datenquellen verfügbar. Daten können importiert werden, oder Daten können direkt mit DirectQuery oder über eine Liveverbindung mit SQL Server Analysis Services abgefragt werden.
@@ -202,7 +202,7 @@ Microsoft Power BI-Berichtsserver unterstützt keine auf OAuth basierende Authen
 | Azure SQL-Datenbank |Nein |Nein |Ja |Nein |Nein |
 | Azure SQL Data Warehouse |Nein |Nein |Ja |Nein |Nein |
 | Oracle-Datenbank |Nein |Nein |Ja |Ja |Ja |
-| SAP Business Warehouse-Server |Nein |Nein |Ja |Nein |Ja |
+| SAP Business Warehouse-Server |Nein |Nein |Ja |Nein |Nein |
 | SAP HANA-Datenbank |Nein |Nein |Ja |Ja |Nein |
 | Teradata-Datenbank |Nein |Nein |Ja |Ja |Ja |
 

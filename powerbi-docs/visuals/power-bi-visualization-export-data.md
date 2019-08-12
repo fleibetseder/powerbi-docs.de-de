@@ -8,15 +8,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/19/2019
+ms.date: 07/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 86a3faf2095ff5100bc372a68b7d56861eb94806
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 21fa3c5c3907e8c1aa4d40bd3e6332c77ff62b98
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523353"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730078"
 ---
 # <a name="export-data-from-visualizations"></a>Exportieren von Daten aus Visualisierungen
 
@@ -79,6 +79,8 @@ Sehen Sie zu, wie Will Daten aus einer der Visualisierungen in seinem Bericht ex
     ![Screenshot „Daten exportieren“ mit den hervorgehobenen Optionen „Zusammengefasste Daten“, „.xlsx (Excel)“ und „Exportieren“.](media/power-bi-visualization-export-data/power-bi-export-data5.png)
 
     Wenn Sie Filter auf die Visualisierung angewendet haben, werden die Daten entsprechend den Filtereinstellungen exportiert. Wenn Sie **Exportieren** auswählen, werden Sie in Ihrem Browser zum Speichern aufgefordert. Öffnen Sie die Datei nach dem Speichern in Excel.
+    
+    Alle Daten, die von der Hierarchie verwendet werden, werden exportiert, nicht nur die Daten, die für die aktuelle Drillebene für das Visual verwendet werden. Wenn z. B. für die Visualisierung noch kein Drilldown von der obersten Ebene ausgeführt wurde, enthalten die exportierten Daten alle Daten in der Hierarchie und nicht nur die Daten, die zum Erstellen des Visuals auf dessen aktueller Ebene, für die ein Drilldown ausgeführt wurde, verwendet wurden.
 
     **Zusammengefasste Daten**: Wählen Sie diese Option aus, wenn Sie die im visuellen Element angezeigten Daten exportieren möchten.  Diese Exportart zeigt nur die Daten (Spalten und Measures) an, die Sie zum Erstellen des Visuals ausgewählt haben.  Wenn das Visual über ein Aggregat verfügt, exportieren Sie aggregierte Daten. Wenn Sie beispielsweise über ein Balkendiagramm mit vier Balken verfügen, erhalten Sie vier Datenzeilen. Zusammengefasste Daten sind im *XLSX*- und *CSV*-Format verfügbar.
 
@@ -92,6 +94,8 @@ Sehen Sie zu, wie Will Daten aus einer der Visualisierungen in seinem Bericht ex
     > Abhängig von den Berichtseinstellungen steht Ihnen möglicherweise die Option zum Exportieren zugrunde liegender Daten zur Verfügung.
 
     Wenn Sie Filter auf die Visualisierung angewendet haben, werden die Daten entsprechend den Filtereinstellungen exportiert. Wenn Sie **Exportieren** auswählen, werden Sie in Ihrem Browser zum Speichern aufgefordert. Öffnen Sie die Datei nach dem Speichern in Excel.
+    
+    Alle Daten, die von der Hierarchie verwendet werden, werden exportiert, nicht nur die Daten, die für die aktuelle Drillebene für das Visual verwendet werden. Wenn z. B. für die Visualisierung noch kein Drilldown von der obersten Ebene ausgeführt wurde, enthalten die exportierten Daten alle Daten in der Hierarchie und nicht nur die Daten, die zum Erstellen des Visuals auf dessen aktueller Ebene, für die ein Drilldown ausgeführt wurde, verwendet wurden.
 
     >[!WARNING]
     >Wenn die zugrunde liegenden Daten exportiert werden, sind alle detaillierten Daten – jede Spalte in den Daten – für die Benutzer sichtbar. Power BI-Dienst-Administratoren können dies für ihre Organisation deaktivieren. Wenn Sie Datasetbesitzer sind, können Sie proprietäre Spalten auf **Ausgeblendet** festlegen, sodass diese weder in Desktop noch im Power BI-Dienst in der **Feldliste** angezeigt werden.
