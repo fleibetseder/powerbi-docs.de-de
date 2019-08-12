@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: af3ebd421a82448ce8a3f13661801ffc1d0051e0
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 3e3e51bf13a904e46552529d9131dbbb4665cb7d
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271480"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730233"
 ---
 # <a name="manage-your-data-source---oracle"></a>Verwalten der Datenquelle – Oracle
 
@@ -73,7 +73,7 @@ Sobald Sie den Datenquellentyp „Oracle“ ausgewählt haben, vervollständigen
 Zudem müssen Sie eine **Authentifizierungsmethode** festlegen.  Dabei kann es sich um **Windows** oder **Basic**handeln.  Wählen Sie **Basic** (Standard) aus, wenn Sie ein in Oracle erstelltes Konto statt der Windows-Authentifizierung verwenden möchten. Geben Sie dann die Anmeldeinformationen ein, die für diese Datenquelle verwendet werden sollen.
 
 > [!NOTE]
-> Alle Abfragen der Datenquelle werden mithilfe dieser Anmeldeinformationen durchgeführt. Weitere Informationen zum Speichern von Anmeldeinformationen finden Sie unter [Storing encrypted credentials in the cloud (Speichern verschlüsselter Anmeldeinformationen in der Cloud)](service-gateway-data-sources.md#storing-encrypted-credentials-in-the-cloud).
+> Alle Abfragen der Datenquelle werden mithilfe dieser Anmeldeinformationen durchgeführt. Weitere Informationen zum Speichern von Anmeldeinformationen finden Sie unter [Speichern verschlüsselter Anmeldeinformationen in der Cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
 
 ![Auffüllen der Datenquelleneinstellungen](media/service-gateway-onprem-manage-oracle/data-source-oracle2.png)
 

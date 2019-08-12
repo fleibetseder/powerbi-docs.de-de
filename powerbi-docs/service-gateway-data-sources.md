@@ -11,32 +11,28 @@ ms.date: 07/15/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 3a4b343894f23d6f5720d95eb6c92436259befaa
-ms.sourcegitcommit: a58461fe7dfa65c751490b52de5fc73f8e69a17f
+ms.openlocfilehash: c46a5c419c242ae25ecca74428362ec27f234afd
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68352197"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730226"
 ---
 # <a name="manage-data-sources"></a>Verwalten von Datenquellen
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Power BI unterstützt viele lokale Datenquellen, von denen jede eigene Anforderungen aufweist. Ein Gateway kann für eine oder mehrere Datenquellen verwendet werden. In diesem Beispiel zeigen wir Ihnen, wie Sie SQL Server als Datenquelle hinzufügen, die Schritte sind für andere Datenquellen aber die gleichen.
+Power BI unterstützt viele lokale Datenquellen, von denen jede eigene Anforderungen aufweist. Ein Gateway kann für eine oder mehrere Datenquellen verwendet werden. In diesem Beispiel erfahren Sie, wie Sie SQL Server als Datenquelle hinzufügen. Die Schritte ähneln denen für andere Datenquellen.
 
->[!NOTE]
->Die meisten Verwaltungsvorgänge für Datenquellen können auch mit APIs ausgeführt werden. Weitere Informationen finden Sie unter [REST-APIs (Gateways)](/rest/api/power-bi/gateways).
+Die meisten Verwaltungsvorgänge für Datenquellen können auch mit APIs ausgeführt werden. Weitere Informationen finden Sie unter [REST-APIs (Gateways)](/rest/api/power-bi/gateways).
 
 ## <a name="add-a-data-source"></a>Hinzufügen einer Datenquelle
-
->[!NOTE]
->Gruppen ohne E-Mail-Adresse können nicht hinzugefügt werden.
 
 1. Klicken Sie in der oberen rechten Ecke des Power BI-Diensts auf das Zahnradsymbol ![Zahnradsymbol für Einstellungen](media/service-gateway-data-sources/icon-gear.png) >  und dann auf **Gateways verwalten**.
 
     ![Gateways verwalten](media/service-gateway-data-sources/manage-gateways.png)
 
-2. Wählen Sie ein Gateway aus und klicken auf **Datenquelle hinzufügen**, oder wechseln Sie zu „Gateways“ und klicken Sie auf **Datenquelle hinzufügen**.
+2. Wählen Sie ein Gateway und dann **Datenquelle hinzufügen** aus. Oder wechseln Sie zu **Gateways** > **Datenquelle hinzufügen**.
 
     ![Datenquelle hinzufügen](media/service-gateway-data-sources/add-data-source.png)
 
@@ -44,11 +40,11 @@ Power BI unterstützt viele lokale Datenquellen, von denen jede eigene Anforderu
 
     ![SQL Server auswählen](media/service-gateway-data-sources/select-sql-server.png)
 
-4. Geben Sie Informationen zur Datenquelle ein. In diesem Beispiel: **Server**, **Datenbank** und weitere Informationen.  
+4. Geben Sie Informationen zur Datenquelle ein. In diesem Beispiel: **Server**, **Datenbank** und weitere Informationen. 
 
     ![Datenquelleneinstellungen](media/service-gateway-data-sources/data-source-settings.png)
 
-5. Für SQL Server wählen Sie die **Authentifizierungsmethode** **Windows** oder **Standard** (SQL-Authentifizierung) aus. Wenn Sie **Standard** auswählen, geben Sie die Anmeldeinformationen für Ihre Datenquelle ein.
+5. Für SQL Server wählen Sie als **Authentifizierungsmethode** entweder **Windows** oder **Standard** (SQL-Authentifizierung) aus. Wenn Sie **Standard** auswählen, geben Sie die Anmeldeinformationen für Ihre Datenquelle ein.
 
 6. Konfigurieren Sie optional unter **Erweiterte Einstellungen** die [Datenschutzebene](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) für Ihre Datenquelle (gilt nicht für [DirectQuery](desktop-directquery-about.md)).
 
@@ -62,18 +58,18 @@ Sie können diese Datenquelle jetzt verwenden, um Daten aus SQL Server in Ihre P
 
 ## <a name="remove-a-data-source"></a>Entfernen einer Datenquelle
 
-Sie können eine Datenquelle entfernen, wenn Sie sie nicht mehr verwenden. Vorsicht: Durch Entfernen einer Datenquelle geht die Funktionsfähigkeit aller Dashboards und Berichte verloren, die auf der betreffenden Datenquelle beruhen.
+Sie können eine Datenquelle entfernen, wenn Sie sie nicht mehr benötigen. Durch Entfernen einer Datenquelle geht die Funktionsfähigkeit aller Dashboards und Berichte verloren, die auf der betreffenden Datenquelle beruhen.
 
-Um eine Datenquelle zu entfernen, wechseln Sie zu der Datenquelle, und klicken Sie auf **Entfernen**.
+Um eine Datenquelle zu entfernen, wechseln Sie zur Datenquelle und klicken auf **Entfernen**.
 
 ![Entfernen einer Datenquelle](media/service-gateway-data-sources/remove-data-source.png)
 
-## <a name="using-the-data-source-for-scheduled-refresh-or-directquery"></a>Verwenden der Datenquelle für geplanten Aktualisierungen oder DirectQuery
+## <a name="use-the-data-source-for-scheduled-refresh-or-directquery"></a>Verwenden der Datenquelle für geplanten Aktualisierungen oder DirectQuery
 
 Nachdem Sie die Datenquelle erstellt haben, kann diese mit DirectQuery-Verbindungen oder durch eine geplante Aktualisierung verwendet werden.
 
 > [!NOTE]
->Der Name des Servers und der Datenbank müssen in Power BI Desktop und in der Datenquelle auf dem lokalen Datengateway übereinstimmen.
+>Server- und Datenbanknamen müssen in Power BI Desktop und der Datenquelle innerhalb des lokalen Datengateways übereinstimmen.
 
 Der Link zwischen Ihrem Dataset und der Datenquelle im Gateway basiert auf dem Namen Ihres Servers und Ihrer Datenbank. Diese Namen müssen übereinstimmen. Wenn Sie z. B. eine IP-Adresse für den Servernamen angeben, müssen Sie in Power BI Desktop die IP-Adresse für die Datenquelle in der Gatewaykonfiguration verwenden. Wenn Sie *SERVER\INSTANZ* verwenden, müssen Sie in Power BI Desktop dieselbe Instanz verwenden, die auch in der für das Gateway konfigurierten Datenquelle verwendet wird.
 
@@ -100,15 +96,15 @@ Sie können Benutzern und Sicherheitsgruppen auch Verwaltungszugriff auf das Gat
 
 2. Wählen Sie die Datenquelle aus, der Sie Benutzer hinzufügen möchten.
 
-3. Wählen Sie **Benutzer** aus, und geben Sie einen Benutzer aus Ihrer Organisation ein, dem Sie Zugriff auf die ausgewählte Datenquelle gewähren möchten. Auf dem folgenden Bildschirm fügen Sie z. B. Maggie und Adam hinzu.
+3. Wählen Sie **Benutzer** aus, und geben Sie einen Benutzer aus Ihrer Organisation ein, dem Sie Zugriff auf die ausgewählte Datenquelle gewähren möchten. Auf dem folgenden Bildschirm fügen Sie z.B. Maggie und Adam hinzu.
 
     ![Registerkarte „Benutzer“](media/service-gateway-data-sources/users-tab.png)
 
-4. Klicken Sie auf **Hinzufügen**, und das hinzugefügte Mitglied wird im Feld angezeigt.
+4. Klicken Sie auf **Hinzufügen**, woraufhin das hinzugefügte Mitglied im Feld angezeigt wird.
 
     ![Hinzufügen von Benutzern](media/service-gateway-data-sources/add-user.png)
 
-Das war schon alles. Denken Sie daran, dass Sie jeder Datenquelle, für die Sie den Zugriff gewähren möchten, Benutzer hinzufügen müssen. Jede Datenquelle verfügt über eine eigene Liste von Benutzern, und Sie müssen jeder Datenquelle separat Benutzer hinzufügen.
+Denken Sie daran, dass Sie jeder Datenquelle, für die Sie den Zugriff gewähren möchten, Benutzer hinzufügen müssen. Jede Datenquelle verfügt über eine separate Liste von Benutzern. Fügen Sie Benutzer jeder Datenquelle separat hinzu.
 
 ### <a name="remove-users-from-a-data-source"></a>Entfernen von Benutzern aus einer Datenquelle
 
@@ -116,20 +112,20 @@ Auf der Registerkarte **Benutzer** für die Datenquelle können Sie Benutzer und
 
 ![Benutzer entfernen](media/service-gateway-data-sources/remove-user.png)
 
-## <a name="storing-encrypted-credentials-in-the-cloud"></a>Speichern von verschlüsselten Anmeldeinformationen in der Cloud
+## <a name="store-encrypted-credentials-in-the-cloud"></a>Speichern von verschlüsselten Anmeldeinformationen in der Cloud
 
-Beim Hinzufügen einer Datenquelle für das Gateway müssen Sie für diese Datenquelle Anmeldeinformationen angeben. Alle Abfragen der Datenquelle werden mithilfe dieser Anmeldeinformationen durchgeführt. Die Anmeldeinformationen werden mithilfe einer asymmetrischen Verschlüsselung vor der Speicherung in der Cloud sicher verschlüsselt, sodass sie in der Cloud nicht entschlüsselt werden können. Die Anmeldeinformationen werden an den lokalen Computer gesendet, der das Gateway ausführt, und auf diesem beim Zugriff auf die Daten entschlüsselt.
+Beim Hinzufügen einer Datenquelle für das Gateway müssen Sie für diese Datenquelle Anmeldeinformationen angeben. Alle Abfragen der Datenquelle erfolgen mithilfe dieser Anmeldeinformationen. Die Anmeldeinformationen werden sicher verschlüsselt. Dazu wird eine symmetrische Verschlüsselung, verwendet, damit sie nicht in der Cloud entschlüsselt werden können, bevor sie dort gespeichert werden. Die Anmeldeinformationen werden an den lokalen Computer gesendet, auf dem das Gateway ausgeführt wird, und auf diesem beim Zugriff auf die Daten entschlüsselt.
 
 ## <a name="list-of-available-data-source-types"></a>Liste der verfügbaren Datenquellentypen
 
 Das lokale Datengateway unterstützt die folgenden Datenquellen für Power BI. Zusätzlich zu lokalen Datenquellen ist für Quellen mit einer Firewall, einem VPN oder einem virtuellen Netzwerk möglicherweise auch ein Datengateway erforderlich.
 
-| **Datenquelle** | **Live/DirectQuery** | **Benutzerdefinierte manuelle oder geplante Aktualisierung** |
+| **Datenquelle** | **Live/DirectQuery** | **(Vom Benutzer konfigurierte) manuelle oder geplante Aktualisierung** |
 | --- | --- | --- |
-| ActiveDirectory |Nein |Ja |
 | Amazon Redshift |Ja |Ja |
-| Analysis Services |Ja |Ja |
 | AtScale-Cubes |Ja |Ja |
+| Azure Active Directory |Nein |Ja |
+| Azure Analysis Services |Ja |Ja |
 | Azure Blob Storage |Nein |Ja |
 | Azure DevOps Server |Nein |Ja |
 | Azure Table Storage |Nein |Ja |
@@ -179,7 +175,7 @@ Das lokale Datengateway unterstützt die folgenden Datenquellen für Power BI. Z
 * [Verwalten Ihrer Datenquelle –SAP HANA](service-gateway-enterprise-manage-sap.md)
 * [Verwalten Ihrer Datenquelle – SQL Server](service-gateway-enterprise-manage-sql.md)
 * [Verwalten der Datenquelle – Oracle](service-gateway-onprem-manage-oracle.md)
-* [Verwalten der Datenquelle – Import/Geplante Aktualisierung](service-gateway-enterprise-manage-scheduled-refresh.md)
+* [Verwalten der Datenquelle: Import/Geplante Aktualisierung](service-gateway-enterprise-manage-scheduled-refresh.md)
 * [Leitfaden zum Bereitstellen eines Datengateways](service-gateway-deployment-guidance.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? Wenden Sie sich an die [Power BI-Community](http://community.powerbi.com/).

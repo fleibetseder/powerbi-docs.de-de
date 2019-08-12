@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 7d9e670d2567181a0dc99c23997ac3bc2d35f3c9
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 2c21792f97445b336709038f7ec2ec39d041312b
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271595"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730051"
 ---
 # <a name="manage-your-data-source---sql-server"></a>Verwalten Ihrer Datenquelle – SQL Server
 
@@ -37,7 +37,7 @@ Sie sollten die Angaben für die Datenquelle vervollständigen, insbesondere fü
 Zudem müssen Sie eine **Authentifizierungsmethode** festlegen. Dabei kann es sich um **Windows** oder **Basic**handeln. Wählen Sie **Basic** aus, wenn die SQL-Authentifizierung statt der Windows-Authentifizierung verwendet werden soll. Geben Sie dann die Anmeldeinformationen ein, die für diese Datenquelle verwendet werden sollen.
 
 > [!NOTE]
-> Alle Abfragen der Datenquelle werden mit diesen Anmeldeinformationen ausgeführt, es sei denn, für die Datenquelle ist einmaliges Anmelden (Single Sign-On, SSO) mit Kerberos-Authentifizierung konfiguriert und aktiviert. Bei Verwendung von SSO werden für Importdatasets die gespeicherten Anmeldeinformationen verwendet. Für DirectQuery-Datasets wird jedoch der aktuelle Power BI-Benutzer zum Ausführen der Abfragen mit SSO verwendet. Weitere Informationen zum Speichern von Anmeldeinformationen finden Sie unter [Storing encrypted credentials in the cloud (Speichern verschlüsselter Anmeldeinformationen in der Cloud)](service-gateway-data-sources.md#storing-encrypted-credentials-in-the-cloud) oder [Verwenden von Kerberos für SSO (Single Sign-On, Einmaliges Anmelden) von Power BI bei lokalen Datenquellen](service-gateway-sso-kerberos.md).
+> Alle Abfragen der Datenquelle werden mit diesen Anmeldeinformationen ausgeführt, es sei denn, für die Datenquelle ist einmaliges Anmelden (Single Sign-On, SSO) mit Kerberos-Authentifizierung konfiguriert und aktiviert. Bei Verwendung von SSO werden für Importdatasets die gespeicherten Anmeldeinformationen verwendet. Für DirectQuery-Datasets wird jedoch der aktuelle Power BI-Benutzer zum Ausführen der Abfragen mit SSO verwendet. Weitere Informationen zum Speichern von Anmeldeinformationen finden Sie unter [Speichern von verschlüsselten Anmeldeinformationen in der Cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud) oder [Verwenden von Kerberos für SSO (Single Sign-On, Einmaliges Anmelden) von Power BI bei lokalen Datenquellen](service-gateway-sso-kerberos.md).
 
 ![Auffüllen der Datenquelleneinstellungen](media/service-gateway-enterprise-manage-sql/datasourcesettings3.png)
 
