@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/24/2019
+ms.date: 07/25/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: 1d1371fa63af51f50a631739e4b2eed5550dc7ee
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 9e2b1132e48e824b70ddb0e0d86bfed4efedff2f
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523318"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68623892"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtern eines Berichts mithilfe von Abfragezeichenfolgenparametern in der URL
 
@@ -53,9 +53,9 @@ app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter
 
 Feldtypen können eine Zahl, ein datetime-Wert oder eine Zeichenfolge sein und müssen dem Typ entsprechen, der im Dataset festgelegt ist.  Das Festlegen einer Tabellenspalte auf „Zeichenfolge“ funktioniert beispielsweise nicht, wenn Sie nach einem Datums-/Uhrzeitwert oder einem numerischen Wert in einer Datasetspalte suchen, die auf „Datum“ festgelegt ist (z.B. Table/StringColumn eq 1).
 
-* **Zeichenfolgen** müssen mit einfachen Anführungszeichen umschlossen werden ('Managername').
-* Für **Zahlen** ist keine besondere Formatierung erforderlich.
-* **Datums- und Zeitangaben** müssen in einfachen Anführungszeichen stehen. In OData V3 muss ihnen das Word „datetime“ vorangestellt sein. In OData V4 ist dies nicht notwendig.
+* **Zeichenfolgen** müssen mit einfachen Anführungszeichen umschlossen werden, z. B. 'Managername'.
+* Für **Zahlen** ist keine besondere Formatierung erforderlich. Weitere Details finden Sie in diesem Artikel unter [Numerische Datentypen](#numeric-data-types).
+* **Datumsangaben und Uhrzeiten** finden Sie in diesem Artikel. unter [Date-Datentypen](#date-data-types). 
 
 Auf all das gehen wir im weiteren Verlauf dieses Artikels noch näher ein.  
 
@@ -133,9 +133,17 @@ Ein Filter für Power BI-URLs kann Zahlen in den folgenden Formaten enthalten:
 
 ### <a name="date-data-types"></a>Date-Datentypen
 
-Power BI unterstützt OData V3 and V4 für **Date**- und **DateTimeOffset**-Datentypen.  Datumsangaben werden im EDM-Format (2019-02-12T00:00:00:00) dargestellt. Das heißt, wenn Sie ein Datum im Format „YYYYY-MM-DD“ angeben, interpretiert Power BI es als „YYYY-MM-DDT00:00:00“.
+Power BI unterstützt OData V3 and V4 für **Date**- und **DateTimeOffset**-Datentypen. Für OData V3 müssen Daten mit einfachen Anführungszeichen umschlossen werden. Außerdem muss „datetime“ vorangestellt werden. Einfache Anführungszeichen und das Wort „datetime“ sind in OData V4 nicht erforderlich. 
+  
+Datumsangaben werden im EDM-Format (2019-02-12T00:00:00) dargestellt: Wenn Sie also ein Datum im Format YYYY-MM-DD angeben, interpretiert Power BI dieses als YYYY-MM-DDT00:00:00. Stellen Sie sicher, dass Sie Monate und Tage mit zwei Ziffern angeben, also MM und DD.
 
-Warum ist diese Unterscheidung wichtig? Angenommen, Sie erstellen den Abfragezeichenfolgenparameter **Table/Date gt '2018-08-03'** .  Ist der 3. August 2018 in den Ergebnissen enthalten oder wird mit dem 4. August 2018 begonnen? Da Power BI Ihre Abfrage in **Table/Date gt '2018-08-03T00:00:00'** übersetzt, enthält Ihr Ergebnis alle Datumsangaben, die einen Uhrzeitteil enthalten, der größer als 0 ist, da diese dann größer als **'2018-08-03T00:00:00'** wären.
+Warum ist diese Unterscheidung wichtig? Angenommen, Sie erstellen den Abfragezeichenfolgenparameter **Table/Date gt '2018-08-03'** .  Ist der 3. August 2018 in den Ergebnissen enthalten oder wird mit dem 4. August 2018 begonnen? Power BI übersetzt die Abfrage in **Table/Date gt '2018-08-03T00:00:00'** . Daher enthalten die Ergebnisse alle Datumsangaben, die einen Zeitabschnitt ungleich 0 aufweisen, da diese Datumsangaben größer als **'2018-08-03T00:00:00'** sind.
+
+Es gibt weitere Unterschiede zwischen V3 und V4. OData V3 unterstützt keine Datumsangaben, sondern nur DateTime-Werte. Wenn Sie also das V3-Format verwenden, müssen Sie es mit dem vollständigen DateTime-Wert qualifizieren. Datumsliterale wie „datetime'2019-05-20'“ werden in der V3-Notation nicht unterstützt. Sie können sie jedoch in der V4-Notation einfach als „2019-05-20“ schreiben. Nachfolgend sehen Sie zwei äquivalente Filterabfragen in V3 und V4:
+
+- OData V4-Format: filter=Table/Date gt 2019-05-20
+- OData V3-Format: filter=Table/Date gt datetime'2019-05-20T00:00:00'
+
 
 ## <a name="special-characters-in-url-filters"></a>Sonderzeichen in URL-Filtern
 
