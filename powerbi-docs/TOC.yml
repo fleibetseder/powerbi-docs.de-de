@@ -53,6 +53,8 @@
       items:
         - name: Welche Neuheiten enthält das aktuellste Update für Power BI Desktop?
           href: desktop-latest-update.md
+        - name: Gruppieren von Visuals in Power BI Desktop
+          href: desktop-grouping-visuals.md
         - name: Modellierungsansicht in Power BI Desktop
           href: desktop-modeling-view.md
         - name: Aggregationen in Power BI Desktop
@@ -487,9 +489,9 @@
               href: reduce-the-size-of-an-excel-workbook.md
         - name: Abrufen von Daten aus freigegebenen Datasets
           items:
-            - name: Verwenden von Datasets in mehreren Arbeitsbereichen
+            - name: Datasets arbeitsbereichsübergreifend verwenden
               href: service-datasets-across-workspaces.md
-            - name: Erstellen und Freigeben von Datasets (Vorschau)
+            - name: Freigeben von Datasets (Vorschau)
               href: service-datasets-build-permissions.md
             - name: Erstellen von Berichten auf Grundlage von Datasets
               href: service-datasets-discover-across-workspaces.md
@@ -1430,3 +1432,5 @@
   items:
     - name: Was ist ein Sternschema?
       href: guidance/star-schema.md
+    - name: Reduzieren der Größe des Datenmodells
+      href: guidance/import-modeling-data-reduction.md

@@ -19,7 +19,7 @@ ms.locfileid: "67596493"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Verteilen von Power BI-Inhalten an externe Gastbenutzer mit Azure AD B2B
 
-Power BI ist in Azure Active Directory Business-to-Business (Azure AD B2B) integriert, um die sichere Verteilung von Power BI-Inhalten an Gastbenutzer außerhalb Ihrer Organisation zu ermöglichen, während Sie weiterhin die Kontrolle über die internen Daten zu behalten.  
+Power BI ist in Azure Active Directory Business-to-Business (Azure AD B2B) integriert, um die sichere Verteilung von Power BI-Inhalten an Gastbenutzer außerhalb Ihrer Organisation zu ermöglichen, während Sie weiterhin die Kontrolle über die internen Daten behalten.  
 
 Des Weiteren können Sie Gastbenutzern außerhalb Ihrer Organisation das Bearbeiten und Verwalten von Inhalten in Ihrer Organisation ermöglichen.
 
@@ -27,7 +27,7 @@ Des Weiteren können Sie Gastbenutzern außerhalb Ihrer Organisation das Bearbei
 
 Achten Sie darauf, das Feature [Inhalte für externe Benutzer freigeben](service-admin-portal.md#export-and-sharing-settings) im Power BI-Verwaltungsportal zu aktivieren, bevor Sie Gastbenutzer einladen.
 
-Sie können auch das Feature [Externen Gastbenutzern das Bearbeiten und Verwalten von Inhalten in der Organisation erlauben](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) verwenden. Damit können Sie auswählen, welcher Gastbenutzer Inhalte in Arbeitsbereichen sehen und erstellen kann, einschließlich des Durchsuchens des Power BIs Ihrer Organisation.
+Sie können auch das Feature [Externen Gastbenutzern das Bearbeiten und Verwalten von Inhalten in der Organisation erlauben](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) verwenden. Hiermit können Sie auswählen, welcher Gastbenutzer Inhalte in Arbeitsbereichen sehen und erstellen kann. Dies schließt auch das Durchsuchen der Power BI-Instanz in Ihrer Organisation ein.
 
 ## <a name="who-can-you-invite"></a>Wen können Sie einladen?
 
@@ -113,7 +113,7 @@ Damit sich diese Benutzer bei Power BI anmelden können, stellen Sie ihnen die M
 
 * Standardmäßig schränkt Azure AD B2B externe Gäste auf die reine Nutzung von Inhalten ein. Externe Azure AD B2B-Gäste können Apps, Dashboards und Berichte anzeigen, Daten exportieren und E-Mail-Abonnements für Dashboards und Berichte erstellen. Der Zugriff auf Arbeitsbereiche und die Veröffentlichung eigener Inhalte sind hingegen nicht möglich. Diese Einschränkungen gelten jedoch nicht für Gastbenutzer, die über das Feature [Externen Gastbenutzern das Bearbeiten und Verwalten von Inhalten in der Organisation erlauben](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) Zugriff erhalten.
 
-* Für Gastbenutzer, die durch das Feature [Externen Gastbenutzern das Bearbeiten und Verwalten von Inhalten in der Organisation erlauben](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) aktiviert sind, ist die Nutzung einiger Benutzeroberflächen nicht möglich. Zum Aktualisieren oder Veröffentlichen von Berichten müssen sie die Webbenutzeroberfläche des Power BI-Diensts verwenden, einschließlich des Befehls „Daten abrufen“ zum Hochladen von Power BI Desktop-Dateien.  Die folgenden Funktionen werden nicht unterstützt:
+* Auch Gastbenutzer, für die die Option [Externen Gastbenutzern das Bearbeiten und Verwalten von Inhalten in der Organisation erlauben](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) aktiviert ist, können bestimmte Funktionen nicht nutzen. Zum Aktualisieren oder Veröffentlichen von Berichten müssen sie die Webbenutzeroberfläche des Power BI-Diensts verwenden, einschließlich des Befehls „Daten abrufen“ zum Hochladen von Power BI Desktop-Dateien.  Die folgenden Funktionen werden nicht unterstützt:
     * Direktes Veröffentlichen aus Power BI Desktop im Power BI-Dienst
     * Gastbenutzer können Power BI Desktop nicht dazu verwenden, eine Verbindung mit Dienstdatasets im Power BI-Dienst herzustellen.
     * Klassische Arbeitsbereiche, die mit Office 365-Gruppen verknüpft sind:
