@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: d6961007c3f7185b954188fa7bd7866d80a7f85a
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 6d0c4a2dba1dee1c8c40da8fd3371767915729da
+ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523404"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490329"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Verwalten von Power BI – häufig gestellte Fragen (FAQ)
 
@@ -38,7 +38,6 @@ Dieser Artikel behandelt häufig gestellte Fragen zur Power BI-Verwaltung. Einen
 
 * [Wie ändert sich dadurch die Art und Weise, in der ich die Identitäten für Benutzer in meiner Organisation heute verwalte?](#how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today)
 * [Wie verwalte ich Power BI?](#how-do-we-manage-power-bi)
-* [Was ist der Prozess zum Verwalten eines Mandanten, der von Microsoft für meine Benutzer erstellt wurde?](#what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users)
 * [Wenn ich mehrere Domänen habe, kann ich den Office 365-Mandanten steuern, dem Benutzer hinzugefügt werden?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to)
 * [Wie entferne ich Power BI für Benutzer, die sich bereits registriert haben?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [Wie erfahre ich, wenn meinem Mandanten neue Benutzer beigetreten sind?](#how-do-i-know-when-new-users-have-joined-my-tenant)
@@ -173,18 +172,6 @@ Es gibt drei Szenarien, die ggf. für die Benutzer in Ihrer Organisation in Betr
 Power BI stellt ein Verwaltungsportal bereit, in dem Sie Nutzungsstatistiken anzeigen können. Es enthält auch einen Link zum Microsoft 365 Admin Center zum Verwalten von Benutzern und Gruppen und die Möglichkeit zum Steuern von Einstellungen, die für den gesamten Mandanten gelten.
 
 Damit Sie das Power BI-Verwaltungsportal verwenden können, müssen Sie Ihr Konto in Office 365 oder Azure Active Directory als **Globaler Administrator** kennzeichnen oder Ihrem Benutzerkonto muss die Power BI-Dienstadministratorrolle zugewiesen werden. Weitere Informationen finden Sie unter [Grundlegendes zur Power BI-Administratorrolle](service-admin-role.md) und [Power BI-Verwaltungsportal](service-admin-portal.md).
-
-### <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>Was ist der Prozess zum Verwalten eines Mandanten, der von Microsoft für meine Benutzer erstellt wurde?
-
-Wenn sich ein Self-Service-Benutzer für einen Clouddienst mit Azure AD registriert, fügt ihn der Dienst basierend auf seiner E-Mail-Domäne einem nicht verwalteten Azure AD-Verzeichnis hinzu. Sie können den von einem anderen Benutzer erstellten Mandanten über einen Prozess mit der Bezeichnung *Administratorübernahme* beanspruchen und verwalten. Die Art der Übernahme hängt davon ab, ob es einen bestehenden verwalteten Mandanten gibt, der mit Ihrer Domäne verbunden ist:
-
-* Verwenden Sie eine *interne Übernahme*, um einen neuen verwalteten Mandanten für die Domäne zu erstellen.
-
-* Verwenden Sie eine *externe Übernahme*, um die Domäne zu einem vorhandenen verwalteten Mandanten zu verschieben.
-
-Weitere Informationen finden Sie unter [Übernehmen eines nicht verwalteten Verzeichnisses als Administrator in Azure Active Directory](/azure/active-directory/users-groups-roles/domains-admin-takeover).
-
-Beim Ausführen einer externen Übernahme verschiebt der Dienst Power BI-Inhalte, die vor der Übernahme erstellt wurden, in einen [archivierten Arbeitsbereich in Power BI](service-admin-power-bi-archived-workspace.md). Sie müssen alle Inhalte, die Sie im neuen Mandanten verwenden möchten, manuell migrieren.
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to"></a>Wenn ich mehrere Domänen habe, kann ich den Office 365-Mandanten steuern, dem Benutzer hinzugefügt werden?
 
