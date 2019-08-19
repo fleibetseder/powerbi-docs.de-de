@@ -10,16 +10,16 @@ ms.topic: conceptual
 ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 02fbe26fc4d0c8be0439ca656151ef7712d201b6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1c4a16d0dbe22a154dacfd296bfedab8acb97e81
+ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61398993"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68867122"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Unterstützte Sprachen und Länder/Regionen für Power BI
 
-Dieser Artikel listet die unterstützten Sprachen und Länder/Regionen für die Power BI-Dienst, Power BI Desktop und Power BI-Dokumentation.
+Dieser Artikel enthält eine der Liste der unterstützten Sprachen und Länder/Regionen für den Power BI-Dienst, Power BI Desktop und die Power BI-Dokumentation.
 
 ## <a name="countries-and-regions-where-power-bi-is-available"></a>Länder und Regionen, in denen Power BI erhältlich ist
 Eine Liste der Länder und Regionen, in denen Power BI verfügbar ist, finden Sie unter [Internationale Verfügbarkeit](https://products.office.com/business/international-availability). 
@@ -73,11 +73,11 @@ Der Power BI-Dienst (im Browser) ist in den folgenden 44 Sprachen verfügbar:
 * Vietnamesisch – Tiếng Việt
 
 ### <a name="whats-translated"></a>Was ist übersetzt?
-Powerbi übersetzt, Menüs, Schaltflächen, Meldungen und andere Elemente der Benutzeroberfläche in Ihrer Sprache verfügbar.
+Power BI übersetzt Menüs, Schaltflächen, Meldungen und andere Benutzeroberflächenelemente der in Ihre Sprache. Berichtsinhalte wie automatisch generierte Titel, Filter und QuickInfos werden zwar übersetzt, aber Ihre Daten werden nicht automatisch übersetzt. In den Berichten ändert sich das Layout der Visuals nicht, wenn Sie eine Sprache verwenden, die von rechts nach links gelesen wird (z. B. Hebräisch).
 
 Einige Features sind derzeit nur auf Englisch verfügbar:
 
-* Dashboards und Berichte, die Power BI erstellt, bei der Herstellung einer Verbindung mit Diensten wie Microsoft Dynamics CRM, Salesforce und Google Analytics. Sie können weiterhin Ihre eigenen Dashboards und Berichte in Ihrer Sprache erstellen.
+* Dashboards und Berichte, die Power BI beim Herstellen einer Verbindung mit Diensten wie Microsoft Dynamics CRM, Google Analytics und Salesforce erstellt Sie können jederzeit eigene Dashboards und Berichte in Ihrer Sprache erstellen.
 * Einblicke in Ihre Daten mit Q&A
 
 Wir arbeiten derzeit daran, zusätzliche Features für andere Sprachen verfügbar zu machen. 
@@ -134,15 +134,20 @@ Es gibt zwei Möglichkeiten, Power BI Desktop zu erhalten: Sie können es herunt
    
      Beim nächsten Start von Power BI Desktop wird die festgelegte Sprache als Standard verwendet. 
 
+Gehen Sie folgendermaßen vor, um die Standardeinstellung zu überschreiben und Power BI Desktop in einer anderen Sprache als der Windows-Sprache zu verwenden.
+1. Öffnen Sie in Power BI Desktop **Datei** > **Optionen und Einstellungen** > **Optionen**.
+2. Wählen Sie unter **Globale Einstellungen** die Option **Regionale Einstellungen** aus.
+3. Wählen Sie im Feld **Anwendungssprache** ein anderes Gebietsschema aus. 
+
+In Power BI Desktop können nur die Sprachen ausgewählt werden, die in der Dropdownliste „Anwendungssprache“ angezeigt werden.
+
 ### <a name="choose-a-language-when-you-download-power-bi-desktop"></a>Auswählen der Sprache beim Herunterladen von Power BI Desktop
-Die für Power BI Desktop ausgewählte Sprache wirkt sich auf das Anzeigeformat von Zahlen und Datumsangaben in Berichten aus. 
+Wenn Sie die MSI-Version des Installers für Power BI Desktop verwenden, wird die Sprache beim Download festgelegt. Sie können die Sprache auf der Seite [Power BI Desktop herunterladen](https://www.microsoft.com/en-us/download/details.aspx?id=45331) auswählen. 
 
-* Wählen Sie eine Sprache aus, wenn Sie [Power BI Desktop herunterladen](https://powerbi.microsoft.com/desktop). 
-
-Wenn Sie die Sprache in Power BI Desktop ändern möchten, besuchen Sie erneut die Downloadseite, und laden Sie Power BI Desktop in einer anderen Sprache herunter.
+Bei dieser Art von Installation können Sie die Sprache in Power BI Desktop nur ändern, indem Sie die Downloadseite erneut aufrufen und Power BI Desktop in einer anderen Sprache herunterladen.
 
 ### <a name="choose-the-locale-for-importing-data-into-power-bi-desktop"></a>Auswählen des Gebietsschemas für den Import von Daten in Power BI Desktop
-Egal, ob Sie Power BI Desktop herunterladen oder aus dem Windows Store installieren, Sie können für einen bestimmten Bericht ein anderes Gebietsschema als das in Ihrer Version von Power BI Desktop geltende Gebietsschema auswählen. Die Gebietsschema-Änderungen, die die Gruppierung von Daten beim Import aus Ihren Daten interpretiert werden Datenquellen, z. B. ob "3/4/2017" als 3 April oder als 4. März interpretiert wird. 
+Egal, ob Sie Power BI Desktop herunterladen oder aus dem Windows Store installieren, Sie können für einen bestimmten Bericht ein anderes Gebietsschema als das in Ihrer Version von Power BI Desktop geltende Gebietsschema auswählen. Das Gebietsschema ändert die Interpretationsweise der Daten beim Import aus der Datenquelle. Dabei wird z. B. festgelegt, ob „3/4/2017“ als 3. April oder als 4. März interpretiert wird. 
 
 1. Öffnen Sie in Power BI Desktop **Datei** > **Optionen und Einstellungen** > **Optionen**.
 2. Wählen Sie unter **Aktuelle Datei** die Option **Regionale Einstellungen** aus.

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: 031274f4f35ef1e36ec17648c2cbf967f5436020
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: 0aa1d964485297c5e0dae3f4a309cc0dd15b92b2
+ms.sourcegitcommit: 90ad0572a92f640684cdc32c9a6478d299de9dc0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68729808"
+ms.lasthandoff: 08/10/2019
+ms.locfileid: "68940902"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Änderungsprotokoll für Power BI-Berichtsserver
 
@@ -124,7 +124,10 @@ Ausführliche Informationen zu neuen Funktionen finden Sie unter [Neuerungen in 
 - **Power BI Desktop (optimiert für Power BI-Berichtsserver)**
     - *Version: 2.61.5192.641 (August 2018), Veröffentlichung: 15. August 2018*
         - Enthält Änderungen, die für die Verbindung mit dem Power BI-Berichtsserver (August 2018) erforderlich sind         
-        
+    - *Version: 2.61.5192.7701 (August 2018), Veröffentlichung: 8. August 2019* (neuer Build und neue Version)
+        - Fehlerkorrekturen
+            - Korrektur für falsche Telemetrieprotokollierung
+            
 ## <a name="march-2018"></a>März 2018
 
 - **Power BI-Berichtsserver**

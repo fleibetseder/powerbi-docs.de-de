@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 3a5b6b89984064101b683532cbfb77ae5540c307
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: cd3afd0ed3ba1f5b734aab2106cbd70f65f29006
+ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68730263"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68867069"
 ---
 # <a name="on-premises-data-gateway-faq---power-bi"></a>Häufig gestellte Fragen zum lokalen Datengateway – Power BI
 
@@ -23,9 +23,9 @@ ms.locfileid: "68730263"
 
 ## <a name="power-bi"></a>Power BI
 
-**Frage:** Muss ich das persönliche Gateway upgraden? 
+**Frage:** Muss ich ein Upgrade für das lokales Datengateway (persönlicher Modus) durchführen?
 
-**Antwort:** Nein, Sie können weiterhin das persönliche Gateway für Power BI verwenden.
+**Antwort:** Nein, Sie können weiterhin das Datengateway im persönlichen Modus für Power BI verwenden.
 
 **Frage:** Sind besondere Berechtigungen erforderlich, um das Gateway zu installieren und im Power BI-Dienst zu verwalten?
 
@@ -41,7 +41,7 @@ ms.locfileid: "68730263"
 
 **Frage:** Warum kann ich keine Verbindung mit meinem Oracle-Server aufbauen? 
 
-**Antwort:** Möglicherweise müssen Sie den Oracle-Client installieren und in der Datei „tnsnames.ora“ die benötigten Serverdaten eintragen, um die Verbindung mit dem Oracle-Server herzustellen. Diese Installation erfolgt separat außerhalb des Gateways. Weitere Informationen finden Sie unter [Installieren des Oracle-Clients](service-gateway-onprem-manage-oracle.md#installing-the-oracle-client).
+**Antwort:** Möglicherweise müssen Sie den Oracle-Client installieren und in der Datei „tnsnames.ora“ die benötigten Serverdaten eintragen, um die Verbindung mit dem Oracle-Server herzustellen. Diese Installation erfolgt separat außerhalb des Gateways. Weitere Informationen finden Sie unter [Installieren des Oracle-Clients](service-gateway-onprem-manage-oracle.md#install-the-oracle-client).
 
 **Frage:** Kann das Gateway mit ExpressRoute verwendet werden? 
 

@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 07/29/2019
-ms.openlocfilehash: 02e11e167d859d3ef23124fed4f9f699766db8fe
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.openlocfilehash: ce13b161f0a9bf5291f2c0d127106b0db2c6fa29
+ms.sourcegitcommit: 6c2c7a090b0826e3cfc3a897566e802857bbacc8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665558"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68808243"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Tutorial: Einbetten von Power BI-Inhalten in eine Anwendung für Ihre Organisation
 
@@ -83,7 +83,7 @@ Sie können Ihre Berichte und Datasets mit Power BI Desktop erstellen. Anschlie�
    
 ### <a name="create-and-publish-your-paginated-reports"></a>Erstellen und Veröffentlichen Ihrer paginierten Berichte
 
-Sie können Ihre paginierten Berichte mithilfe des [Power BI-Berichts-Generators](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder) erstellen. Anschließend können Sie [den Bericht in einen App-Arbeitsbereich hochladen](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service), dem mindestens die A4/P1-Kapazität zugewiesen ist. Der Endbenutzer, der den Bericht hochlädt, muss eine Power BI Pro-Lizenz besitzen, um in einem App-Arbeitsbereich veröffentlichen zu können.
+Sie können Ihre paginierten Berichte mithilfe des [Power BI-Berichts-Generators](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder) erstellen. Anschließend können Sie [den Bericht in einen App-Arbeitsbereich hochladen](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service), dem mindestens die A4/P1-Kapazität zugewiesen ist. Der Endbenutzer, der den Bericht hochlädt, muss über eine Power BI Pro-Lizenz verfügen, um in einem App-Arbeitsbereich veröffentlichen zu können.
    
 ## <a name="embed-your-content-by-using-the-sample-application"></a>Einbetten von Inhalt mit der Beispielanwendung
 
@@ -173,9 +173,9 @@ Get-PowerBIworkspace -name "User Owns Embed Test" | Get-PowerBIReport
 
 Geben Sie die **AADAuthorityUrl**-Informationen mit der URL an, die Ihnen entweder das Einbetten in Ihrem Organisationsmandanten oder mit einem Gastbenutzer erlaubt.
 
-Zum Einbetten mit Ihrem Organisationsmandanten verwenden Sie die folgende URL: *https://login.microsoftonline.com/common/oauth2/authorize* .
+Zum Einbetten mit Ihrem Organisationsmandanten verwenden Sie die folgende URL: *https://login.microsoftonline.com/common/oauth2/authorize*.
 
-Zum Einbetten mit einem Gastbenutzer verwenden Sie die folgende URL: *https://login.microsoftonline.com/report-owner-tenant-id* . Fügen Sie auf dieser Seite die Mandanten-ID des Besitzers des Berichts hinzu, welche *report-owner-tenant-id* (Mandanten-ID des Berichtsbesitzers) ersetzt.
+Zum Einbetten mit einem Gastbenutzer verwenden Sie die folgende URL: *https://login.microsoftonline.com/report-owner-tenant-id*. Fügen Sie auf dieser Seite die Mandanten-ID des Besitzers des Berichts hinzu, welche *report-owner-tenant-id* (Mandanten-ID des Berichtsbesitzers) ersetzt.
 
 ### <a name="run-the-application"></a>Ausführen der Anwendung
 

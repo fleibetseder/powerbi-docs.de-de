@@ -1,6 +1,6 @@
 ---
 title: Einbetten eines Berichts in ein sicheres Portal oder eine sichere Website
-description: Der Power BI kann der Benutzer problemlos eingebettet und betten Sie Berichte sicher in internen-Webportal.
+description: Mit dem Power BI-Feature zum Einbetten können Benutzer Berichte mühelos in interne Webportale sicher einbetten.
 author: rkarlin
 ms.author: rkarlin
 manager: kfile
@@ -10,18 +10,18 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/20/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: bf9d7bcdf6ddaf7d0063843a5314233989b2dadd
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3c6dc26ee1cf806ff85a9452c024e7ccbd210a25
+ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66222233"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68867110"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Einbetten eines Berichts in ein sicheres Portal oder eine sichere Website
 
-Mit dem neuen **einbetten** Option für Power BI meldet, die Sie ganz einfach und sicher Berichte Einbetten in internen Webportale. Diese Portale möglich **cloudbasierte** oder **auf lokal gehostete**, z. B. SharePoint 2019. Eingebettete Berichte berücksichtigt alle Element Berechtigungen und datensicherheit durch [zeilenbasierte Sicherheit (RLS)](service-admin-rls.md). Sie bieten, ohne Code in einem Portal, die akzeptiert eine URL oder einen iFrame einbetten. 
+Mit der neuen Option **Einbetten** für Power BI-Berichte können Sie Berichte ohne großen Aufwand und sicher in interne Webportale einbetten. Diese Portale können **cloudbasiert** sein oder **lokal gehostet** werden (z. B. SharePoint 2019). Bei eingebetteten Berichten werden alle Elementberechtigungen und Anforderungen an die Datensicherheit über [Sicherheit auf Zeilenebene](service-admin-rls.md) berücksichtigt. Diese Option ermöglicht das Einbetten in beliebige Portale, die URL oder iFrame akzeptieren, ohne Programmieraufwand. 
 
-Die **einbetten** option unterstützt [URL-Filter](service-url-filters.md) und URL-Einstellungen. Sie können für die Integration, Portale, die mit einem geringen codeanpassungen Ansatz erfordert nur grundlegende HTML und JavaScript-Kenntnisse.
+Die Option **Einbetten** unterstützt [URL-Filter](service-url-filters.md) und URL-Einstellungen. Sie ermöglicht eine Integration in Portale mit geringem Programmieraufwand, für die nur grundlegende HTML- und JavaScript-Kenntnisse benötigt werden.
 
 ## <a name="how-to-embed-power-bi-reports-into-portals"></a>**Einbetten** von Power BI-Berichten in Portale
 
@@ -29,46 +29,46 @@ Die **einbetten** option unterstützt [URL-Filter](service-url-filters.md) und U
 
     ![Dropdownoption für das sichere Einbetten](media/service-embed-secure/secure-embed-drop-down-menu.png)
 
-2. Wählen Sie die **einbetten** Option aus, um ein Dialogfeld zu öffnen, die einen Link und eines IFRAMEs Sie den Bericht einbetten, sichere können bereitstellt.
+2. Klicken Sie auf die Option **Einbetten**, um ein Dialogfeld mit einem Link und einem iFrame zu öffnen, die Sie zum sicheren Einbetten des Berichts verwenden können.
 
     ![Dialogfeld für die Option „Einbetten“](media/service-embed-secure/secure-embed-code-dialog.png)
 
-3. Ob ein Benutzer eine Berichts-URL direkt öffnet, oder eine in einem Webportal eingebettete, erfordert Zugriff auf den Berichts-Authentifizierung. Der folgende Bildschirm wird angezeigt, wenn ein Benutzer nicht in Power BI in ihrer Browsersitzung angemeldet hat. Wenn sie die Option **Anmeldung**, ein neues Browserfenster oder einer Registerkarte konnte geöffnet werden. Lassen Sie ihn für die Popup-Blocker überprüfen Sie, ob sie nicht aufgefordert erhalten, sich anzumelden.
+3. Unabhängig davon, ob ein Benutzer eine Berichts-URL direkt öffnet oder einen eingebetteten Bericht in einem Webportal öffnet, ist eine Authentifizierung für den Zugriff auf den Bericht erforderlich. Die folgende Anzeige wird angezeigt, wenn ein Benutzer sich in seiner Browsersitzung nicht bei Power BI angemeldet hat. Wenn dieser Benutzer auf **Anmelden** klickt, kann ein neues Browserfenster oder eine Registerkarte geöffnet werden. Weisen Sie die Benutzer an, Popupblocker zu überprüfen, wenn ihnen keine Anmeldeaufforderung angezeigt wird.
 
     ![Anmelden, um den Bericht anzuzeigen](media/service-embed-secure/secure-embed-sign-in.png)
 
-4. Nachdem der Benutzer angemeldet hat, wird der Bericht geöffnet, zeigt die Daten an und ermöglicht, Seitennavigation und filtern. Nur Benutzer, die View-Berechtigung verfügen, können den Bericht in Power BI sehen. Alle [zeilenbasierte Sicherheit (RLS)](service-admin-rls.md) Regeln werden ebenfalls angewendet. Schließlich muss der Benutzer ordnungsgemäß lizenziert sein, d.h., er benötigt eine Power BI Pro-Lizenz oder der Bericht muss sich in einem Arbeitsbereich in einer Power BI Premium-Kapazität befinden. Der Benutzer muss sich jedes Mal erneut anmelden müssen sie ein neues Browserfenster geöffnet. Aber wenn Sie angemeldet sind, andere Berichte werden automatisch geladen.
+4. Nachdem sich der Benutzer angemeldet hat, wird der Bericht mit den Daten geöffnet. Anschließend kann er zwischen den Seiten navigieren und Filter festlegen. Nur Benutzer mit Leseberechtigung können den Bericht in Power BI anzeigen. Alle Regeln der [Sicherheit auf Zeilenebene](service-admin-rls.md) werden ebenfalls angewendet. Schließlich muss der Benutzer ordnungsgemäß lizenziert sein, d.h., er benötigt eine Power BI Pro-Lizenz oder der Bericht muss sich in einem Arbeitsbereich in einer Power BI Premium-Kapazität befinden. Jedes Mal, wenn der Benutzer ein neues Browserfenster öffnet, muss er sich neu anmelden. Sobald er jedoch ein mal angemeldet ist, werden andere Berichte automatisch geladen.
 
     ![Einbetten des Berichts](media/service-embed-secure/secure-embed-report.png)
 
-5. Wenn Sie einen iFrame verwenden zu können, müssen Sie möglicherweise Bearbeiten der **Höhe** und **Breite** eine Web-Seite des Portals anpassen.
+5. Wenn ein iFrame verwendet wird, müssen Sie möglicherweise die **Höhe** und **Breite** anpassen, damit es auf die Webseite Ihres Portals passt.
 
     ![Festlegen von Höhe und Breite](media/service-embed-secure/secure-embed-size.png)
 
-## <a name="granting-report-access"></a>Gewähren den Zugriff auf Berichte
+## <a name="granting-report-access"></a>Gewähren des Zugriffs auf einen Bericht
 
-Die **einbetten** Option nicht automatisch ermöglichen es Benutzern, um den Bericht anzuzeigen. Anzeigen der Berechtigungen werden in Power BI-Dienst festgelegt.
+Wenn Sie die Option **Einbetten** verwenden, erhalten Benutzer nicht automatisch die Berechtigung zum Anzeigen des Berichts. Die Leseberechtigungen werden im Power BI-Dienst festgelegt.
 
-Im Power BI-Dienst können Sie eingebettete Berichte für Benutzer, die Zugriff freigeben. Wenn Sie eine Office 365-Gruppe verwenden, können Sie den Benutzer als app-Arbeitsbereichsmitglied auflisten. Weitere Informationen finden Sie unter Vorgehensweise [Verwalten Ihres app-Arbeitsbereichs in Power BI und Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
+Im Power BI-Dienst können Sie eingebettete Berichte für Benutzer freigeben, die Zugriff benötigen. Wenn Sie eine Office 365-Gruppe verwenden, können Sie Benutzer als Mitglieder des App-Arbeitsbereichs aufführen. Weitere Informationen dazu finden Sie unter [Verwalten Ihres App-Arbeitsbereichs in Power BI und Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## <a name="licensing"></a>Lizenzierung
 
-Zum Anzeigen des eingebetteten Berichts benötigen Benutzer entweder eine Power BI Pro-Lizenz, oder der Inhalt muss in einem Arbeitsbereich zu sein, die in einem [Power BI Premium-Kapazität (EM oder P-SKU)](service-admin-premium-purchase.md).
+Benutzer, die den eingebetteten Bericht anzeigen möchten, benötigen entweder eine Power BI Pro-Lizenz, oder der Inhalt muss sich in einem Arbeitsbereich in einer [Power BI Premium-Kapazität (EM oder P SKU)](service-admin-premium-purchase.md) befinden.
 
 ## <a name="customize-your-embed-experience-using-url-settings"></a>Anpassen der Darstellung des eingebetteten Berichts über URL-Einstellungen
 
-Sie können die benutzererfahrung mit der Eingabe die einbettungs-URL-Einstellungen anpassen. Im bereitgestellten iFrame können Sie die URL des aktualisieren **Src** Einstellungen.
+Sie können die Benutzeroberfläche mithilfe der Eingabeeinstellungen der Einbettungs-URL anpassen. Im bereitgestellten iFrame können Sie die **src**-Einstellungen der URL aktualisieren.
 
 | Eigenschaft  | Beschreibung  |  |  |  |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|---|
-| pageName  | Sie können die **PageName** Abfragezeichenfolgen-Parameter zum Festlegen der Berichtsseite zu öffnen. Dieser Wert finden am Ende der Berichts-URL Sie beim Anzeigen eines Berichts im Power BI-Dienst, wie unten dargestellt. |  |  |  |
-| URL-Filter  | Sie können [URL-Filter](service-url-filters.md) in die einbettungs-URL, die Sie von der Power BI-Benutzeroberfläche zum Filtern der Inhalte einbetten erhalten. Auf diese Weise lassen sich Integrationen mit geringem Programmieraufwand erstellen, für die nur grundlegende Kenntnisse in HTML und JavaScript erforderlich sind.  |  |  |  |
+| pageName  | Sie können den Abfragezeichenfolgenparameter **pageName** verwenden, um festzulegen, welche Berichtsseite geöffnet werden soll. Diesen Wert finden Sie am Ende der Berichts-URL, wenn Sie einen Bericht wie im Folgenden gezeigt im Power BI-Dienst anzeigen. |  |  |  |
+| URL-Filter  | Sie können [URL-Filter](service-url-filters.md) in der Einbettungs-URL verwenden, die Sie aus der Benutzeroberfläche von Power BI abgerufen haben, um die eingebetteten Inhalte zu filtern. Auf diese Weise lassen sich Integrationen mit geringem Programmieraufwand erstellen, für die nur grundlegende Kenntnisse in HTML und JavaScript erforderlich sind.  |  |  |  |
 
-## <a name="set-which-page-opens-for-an-embedded-report"></a>Gruppe, die die Seite für einen eingebetteten Bericht wird geöffnet. 
+## <a name="set-which-page-opens-for-an-embedded-report"></a>Festlegen der geöffneten Seite für einen eingebetteten Bericht 
 
-Sie finden die **PageName** Wert am Ende der Berichts-URL, beim Anzeigen eines Berichts im Power BI-Dienst.
+Den Wert **pageName** finden Sie am Ende der Berichts-URL, wenn Sie einen Bericht im Power BI-Dienst anzeigen.
 
-1. Öffnen Sie den Bericht aus Power BI-Dienst in Ihrem Webbrowser, und kopieren Sie den URL-Leiste.
+1. Öffnen Sie den Bericht über den Power BI-Dienst in Ihrem Webbrowser, und kopieren Sie dann die URL aus der Adressleiste.
 
     ![Berichtsabschnitt](media/service-embed-secure/secure-embed-report-section.png)
 
@@ -78,17 +78,17 @@ Sie finden die **PageName** Wert am Ende der Berichts-URL, beim Anzeigen eines B
 
 ## <a name="filter-report-content-using-url-filters"></a>Filtern der Berichtsinhalte mit URL-Filtern 
 
-Sie können [URL-Filter](service-url-filters.md) um andere Berichtsansichten bereitzustellen. Beispielsweise wird der Bericht mit der unten aufgeführten URL so gefiltert, dass Daten für die Energiebranche angezeigt werden.
+Sie können [URL-Filter](service-url-filters.md) verwenden, um verschiedene Berichtsansichten bereitzustellen. Beispielsweise wird der Bericht mit der unten aufgeführten URL so gefiltert, dass Daten für die Energiebranche angezeigt werden.
 
 Die Kombination von **pageName** und [URL-Filter](service-url-filters.md) erlaubt besonders ausgefeilte Funktionen. Mit einfachem HTML und JavaScript lassen sich verschiedene Benutzeroberflächen gestalten.
 
-Hier ist z. B. eine Schaltfläche, die Sie eine HTML-Seite hinzufügen können:
+Beispielsweise sehen Sie hier eine Schaltfläche, die Sie zu einer HTML-Seite hinzufügen können:
 
 ```html
 <button class="textLarge" onclick='show("ReportSection", "Energy");' style="display: inline-block;">Show Energy</button>
 ```
 
-Wenn aktiviert, ruft die Schaltfläche eine Funktion, um den iFrame mit einer aktualisierten-URL, zu aktualisieren, die Energie Branche Filter enthält.
+Wenn auf diese Schaltfläche geklickt wird, wird eine Funktion aufgerufen, durch die das iFrame mit einer aktualisierten URL versehen wird, die den Filter für Energiebranchen enthält.
 
 ```javascript
 function show(pageName, filterValue)
@@ -124,20 +124,22 @@ Sie können beliebig viele Schaltflächen hinzufügen, um mit geringem Programmi
 
 * Das sichere Einbetten kann für Berichte verwendet werden, die im Power BI-Dienst veröffentlicht wurden.
 
-* Der Benutzer muss sich anmelden, um den Bericht anzuzeigen, wenn sie ein neuen Browserfenster öffnen.
+* Der Benutzer muss sich anmelden, um den Bericht anzuzeigen, wenn er ein neues Browserfenster öffnet.
 
-* Einige Browser müssen Sie die Seite nach der Anmeldung zu aktualisieren, insbesondere bei Verwendung von InPrivate- oder Inkognito-Modus.
+* Bei einigen Browsern müssen Sie die Seite nach der Anmeldung aktualisieren, insbesondere bei Verwendung des InPrivate- oder Inkognitomodus.
 
-* Eine einmalige Anmeldung zu erzielen, verwenden die Einbettung in SharePoint Online-Option oder Erstellen eines benutzerdefinierten-Integration mit der [Benutzer ist Besitzer der Daten](developer/embed-sample-for-your-organization.md) Methode einbetten. 
+* Einmaliges Anmelden wird unterstützt, wenn Sie die Option „Einbetten“ in SharePoint Online verwenden oder über die Einbettungsmethode [Benutzer ist Besitzer der Daten](developer/embed-sample-for-your-organization.md) eine benutzerdefinierte Integration erstellen. 
 
-* Die Funktion zur automatischen Authentifizierung, die von der Option **Einbetten** unterstützt wird, kann nicht mit der Power BI-JavaScript-API verwendet werden. Verwenden Sie die Power BI JavaScript-API, die [Benutzer ist Besitzer der Daten](developer/embed-sample-for-your-organization.md) Methode einbetten. 
+* Die Funktion zur automatischen Authentifizierung, die von der Option **Einbetten** unterstützt wird, kann nicht mit der Power BI-JavaScript-API verwendet werden. Verwenden Sie zum Einbetten mit der Power BI-JavaScript-API die Einbettungsmethode [Benutzer ist Besitzer der Daten](developer/embed-sample-for-your-organization.md). 
+
+* Die Lebensdauer des Authentifizierungstokens wird basierend auf Ihren AAD-Einstellungen gesteuert. Wenn das Authentifizierungstoken abläuft, muss der Benutzer seinen Browser aktualisieren, um ein aktualisiertes Authentifizierungstoken zu erhalten. Die Standardlebensdauer beträgt eine Stunde. Sie kann in Ihrer Organisation aber auch kürzer oder länger sein.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-* [Möglichkeiten zum Freigeben Ihrer Arbeit in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
+* [Freigeben Ihrer Arbeit in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
 
-* [Filtern eines Berichts mithilfe von Abfragezeichenfolgen-Parameter in der URL](service-url-filters.md)
+* [Filtern eines Berichts mithilfe von Abfragezeichenfolgenparametern in der URL](service-url-filters.md)
 
-* [Betten Sie mit Berichts-Webpart in SharePoint Online ein](service-embed-report-spo.md)
+* [Einbetten mit dem Berichts-Webpart in SharePoint Online](service-embed-report-spo.md)
 
-* [Webveröffentlichung von Powerbi](service-publish-to-web.md)
+* [Veröffentlichen im Web aus Power BI](service-publish-to-web.md)
