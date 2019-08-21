@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 07/29/2019
-ms.openlocfilehash: ce13b161f0a9bf5291f2c0d127106b0db2c6fa29
-ms.sourcegitcommit: 6c2c7a090b0826e3cfc3a897566e802857bbacc8
+ms.openlocfilehash: 1c110022c27cf0e213484619a750140a63a7d0dc
+ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68808243"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490390"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Tutorial: Einbetten von Power BI-Inhalten in eine Anwendung für Ihre Organisation
 
@@ -35,7 +35,7 @@ Sie benötigen Folgendes, um direkt mit dem Tutorial loslegen zu können:
 * Ein [Power BI Pro-Konto](../service-self-service-signup-for-power-bi.md)
 * Ein [Microsoft Azure](https://azure.microsoft.com/)-Abonnement
 * Einen individuell eingerichteten [Azure Active Directory-Mandanten](create-an-azure-active-directory-tenant.md)
-* Zum Einbetten von paginierten Berichten benötigen Sie mindestens eine A4/P1-Kapazität. Weitere Informationen finden Sie unter [Welche Premium-Kapazitätsgröße benötige ich für paginierte Berichte?](../paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports).
+* Zum Einbetten von paginierten Berichten benötigen Sie mindestens eine P1-Kapazität. Weitere Informationen finden Sie unter [Welche Premium-Kapazitätsgröße benötige ich für paginierte Berichte?](../paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports).
 
 Wenn Sie noch nicht bei **Power BI Pro** registriert sind, [registrieren Sie sich für eine kostenlose Testversion](https://powerbi.microsoft.com/pricing/), bevor Sie beginnen.
 
@@ -45,7 +45,7 @@ Wenn Sie kein Azure-Abonnement besitzen, erstellen Sie ein [kostenloses Konto](h
 
 Bevor Sie mit dem Einbetten von Dashboards, Berichten und Kacheln in Ihre Anwendung beginnen, müssen Sie sicherstellen, dass Ihre Umgebung Einbettungen mit Power BI zulässt.
 
-Sie können sich mit dem [Setuptool für die Einbettung](https://aka.ms/embedsetup/UserOwnsData) vertraut machen, damit Sie schnell beginnen und eine Beispielanwendung herunterladen können. In dieser wird schrittweise erläutert, wie Sie eine Umgebung erstellen und einen Bericht einbetten können. Wenn Sie einen paginierten-Bericht einbetten, müssen Sie dem erstellten App-Arbeitsbereich mindestens eine A4/P1-Kapazität zuweisen.
+Sie können sich mit dem [Setuptool für die Einbettung](https://aka.ms/embedsetup/UserOwnsData) vertraut machen, damit Sie schnell beginnen und eine Beispielanwendung herunterladen können. In dieser wird schrittweise erläutert, wie Sie eine Umgebung erstellen und einen Bericht einbetten können. Wenn Sie einen paginierten-Bericht einbetten, müssen Sie dem erstellten App-Arbeitsbereich mindestens eine P1-Kapazität zuweisen.
 
 Wenn Sie jedoch die Umgebung manuell einrichten möchten, können Sie weiter unten fortfahren.
 
@@ -83,7 +83,7 @@ Sie können Ihre Berichte und Datasets mit Power BI Desktop erstellen. Anschlie�
    
 ### <a name="create-and-publish-your-paginated-reports"></a>Erstellen und Veröffentlichen Ihrer paginierten Berichte
 
-Sie können Ihre paginierten Berichte mithilfe des [Power BI-Berichts-Generators](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder) erstellen. Anschließend können Sie [den Bericht in einen App-Arbeitsbereich hochladen](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service), dem mindestens die A4/P1-Kapazität zugewiesen ist. Der Endbenutzer, der den Bericht hochlädt, muss über eine Power BI Pro-Lizenz verfügen, um in einem App-Arbeitsbereich veröffentlichen zu können.
+Sie können paginierte Berichte mithilfe des [Berichts-Generators von Power BI](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder) erstellen. Anschließend können Sie den Bericht in einen App-Arbeitsbereich [hochladen](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service), dem mindestens einer P1-Kapazität zugewiesen ist. Der Endbenutzer, der den Bericht hochlädt, muss über eine Power BI Pro-Lizenz verfügen, um in einem App-Arbeitsbereich veröffentlichen zu können.
    
 ## <a name="embed-your-content-by-using-the-sample-application"></a>Einbetten von Inhalt mit der Beispielanwendung
 
@@ -153,9 +153,6 @@ Power BI-Berichts-URL <br>
 
 ![PBI reportId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041.png)
 
-Paginierte Berichts-URL <br>
-
-
 
 Paginierte Berichts-URL<br>
 
@@ -173,9 +170,9 @@ Get-PowerBIworkspace -name "User Owns Embed Test" | Get-PowerBIReport
 
 Geben Sie die **AADAuthorityUrl**-Informationen mit der URL an, die Ihnen entweder das Einbetten in Ihrem Organisationsmandanten oder mit einem Gastbenutzer erlaubt.
 
-Zum Einbetten mit Ihrem Organisationsmandanten verwenden Sie die folgende URL: *https://login.microsoftonline.com/common/oauth2/authorize*.
+Zum Einbetten mit Ihrem Organisationsmandanten verwenden Sie die folgende URL: *https://login.microsoftonline.com/common/oauth2/authorize* .
 
-Zum Einbetten mit einem Gastbenutzer verwenden Sie die folgende URL: *https://login.microsoftonline.com/report-owner-tenant-id*. Fügen Sie auf dieser Seite die Mandanten-ID des Besitzers des Berichts hinzu, welche *report-owner-tenant-id* (Mandanten-ID des Berichtsbesitzers) ersetzt.
+Zum Einbetten mit einem Gastbenutzer verwenden Sie die folgende URL: *https://login.microsoftonline.com/report-owner-tenant-id* . Fügen Sie auf dieser Seite die Mandanten-ID des Besitzers des Berichts hinzu, welche *report-owner-tenant-id* (Mandanten-ID des Berichtsbesitzers) ersetzt.
 
 ### <a name="run-the-application"></a>Ausführen der Anwendung
 
@@ -384,7 +381,7 @@ Wenn Sie mit dem Entwickeln Ihrer Anwendung fertig sind, sollten Sie Ihren App-A
 
 ### <a name="create-a-dedicated-capacity"></a>Erstellen einer dedizierten Kapazität
 
-Indem Sie eine dedizierte Kapazität erstellen, können Sie die dazugehörigen Vorteile für den Inhalt in Ihrem App-Arbeitsbereich verwenden. Bei paginierten Berichten müssen Sie Ihren App-Arbeitsbereich mindestens mit einer A4/P1-Kapazität sichern. Sie können eine dedizierte Kapazität erstellen, indem Sie [Power BI Premium](../service-premium-what-is.md) verwenden.
+Indem Sie eine dedizierte Kapazität erstellen, können Sie die dazugehörigen Vorteile für den Inhalt in Ihrem App-Arbeitsbereich verwenden. Bei paginierten Berichten müssen Sie Ihren App-Arbeitsbereich mit mindestens einer P1-Kapazität sichern. Sie können mit [Power BI Premium](../service-premium-what-is.md) eine dedizierte Kapazität erstellen.
 
 In der folgenden Tabelle werden die verfügbaren Power BI Premium-SKUs in [Microsoft Office 365](../service-admin-premium-purchase.md) aufgelistet:
 

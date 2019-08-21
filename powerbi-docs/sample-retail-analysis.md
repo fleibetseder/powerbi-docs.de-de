@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 5391fee3c5a05d1c34cac4f3a097a0577ce5d191
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: b3adcf3ba97e83875187a11116fdb7b642e5560b
+ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68462390"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68962239"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Analysebeispiel für Einzelhandel für Power BI: Übersicht
 
@@ -92,10 +92,10 @@ Wenn Sie sich die Datenquelle für dieses Beispiel ansehen möchten, dieses steh
 ## <a name="review-a-tile-created-with-power-bi-qa"></a>Überprüfen einer Kachel, die über Fragen und Antworten in Power BI erstellt wurde
 Gehen wir mehr ins Detail.
 
-1. Ändern Sie die Frage in *Umsätze dieses Jahr**nach Bezirk***. Beobachten Sie das Ergebnis: Q&A platziert die Antwort automatisch in einem Balkendiagramm, und es werden andere Formulierungen vorgeschlagen:
+1. Ändern Sie die Frage in _this year sales **by district**_ . Beobachten Sie das Ergebnis: Q&A platziert die Antwort automatisch in einem Balkendiagramm, und es werden andere Formulierungen vorgeschlagen:
 
    ![Verkäufe in diesem Jahr nach Bezirk in Q&A](media/sample-retail-analysis/retail8.png)
-2. Ändern Sie jetzt die Frage in *Umsätze dieses Jahr**nach Postleitzahl und Kette***.
+2. Ändern Sie jetzt die Frage in _this year sales **by zip and chain**_ .
 
    Beachten Sie, wie Power BI die Frage während Ihrer Eingabe beantwortet und das passende Diagramm anzeigt.
 3. Experimentieren Sie ein bisschen mit weiteren Fragen, und sehen Sie sich die erzielten Ergebnisse an.

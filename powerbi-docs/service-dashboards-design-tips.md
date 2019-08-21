@@ -7,45 +7,48 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 0e523707caa38c808c777eb29bb8dcbdc6af5ebf
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 2083fa0d197010ca770422f11c7f1e4b83d0184b
+ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721217"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69023749"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Tipps zum Gestalten von Power BI-Dashboards
-Nachdem Sie ein Dashboard erstellt und einige Kacheln hinzugefügt haben, können Sie Ihr Dashboard ansprechend und funktionell gestalten. In der Regel bedeutet das, dass die wichtigsten Informationen hervorgehoben werden, sodass das Dashboard ordentlich und übersichtlich ist.
+Nachdem Sie ein Dashboard erstellt und einige Kacheln hinzugefügt haben, können Sie Ihr Dashboard ansprechend und funktionell gestalten. In der Regel bedeutet dies, dass die wichtigsten Informationen hervorgehoben werden, sodass das Dashboard ordentlich und übersichtlich ist.
 
-Nachfolgend finden Sie einige Tipps.
+![Beispieldashboard für Marketing und Vertrieb](media/service-dashboards-design-tips/power-bi-marketing-sample-dashboard.png)
 
 > [!TIP]
-> Viele der Entwurfsgrundlagen für Berichte gelten auch für Dashboards.  Lesen Sie unser Whitepaper [Bewährte Entwurfsmethoden für Berichte und Visualisierungen](visuals/power-bi-visualization-best-practices.md).
->
->
+> Gefällt Ihnen dieses Dashboard? Sie können dieses Dashboard und zugehörige Berichte von AppSource herunterladen. Navigieren Sie zu **Daten abrufen** > **Dienste**. Suchen Sie nach **Microsoft Sample - Sales & Marketing** > **Jetzt abrufen**.
 
-## <a name="watch-the-dashboard-makeover-webinarhttpsinfomicrosoftcomco-powerbi-wbnr-fy16-05may-12-dashboard-makeover-registrationhtml"></a>Sehen Sie sich das [Webinar zur Dashboard-Überarbeitung](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-12-Dashboard-Makeover-Registration.html) an.
-Sehen Sie, wie Marc Reguera, leitender Programm-Manager und Power BI-Dashboard-Experte bei Microsoft [Dashboard-Überarbeitungen durchführt](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-12-Dashboard-Makeover-Registration.html).
+Viele der Entwurfsgrundlagen für Berichte gelten auch für Dashboards. Lesen Sie unser Whitepaper [Bewährte Entwurfsmethoden für Berichte und Visualisierungen](visuals/power-bi-visualization-best-practices.md), um weitere Informationen zu erhalten.
+
+Hier finden Sie einige Tipps für Dashboards.
+
+## <a name="dashboard-design-best-practices-video"></a>Video zu den bewährten Methoden für den Dashboardentwurf
+
+Sehen Sie sich dieses Video zu den [bewährten Methoden für den Dashboardentwurf in Power BI](https://www.youtube.com/watch?v=-tdkUYrzrio) an, um Entwurfstipps von Marco Russo (SQLBI.com) zu erhalten.
 
 ## <a name="consider-your-audience"></a>Zielgruppe berücksichtigen
 Wie lauten die wichtigsten Kennzahlen, um Entscheidungen zu treffen? Wie wird das Dashboard verwendet? Welche erlernten oder kulturellen Annahmen wirken sich möglicherweise auf die Gestaltung aus? Welche Informationen benötigt Ihre Zielgruppe, um erfolgreich zu sein?
 
-Bedenken Sie, dass das Dashboard eine Übersicht ist, mit der Sie den aktuellen Status der Daten prüfen können. Das Dashboard basiert auf zugrunde liegenden Berichten und Datasets, die möglicherweise unzählige Details enthalten. Die Leser können die Berichte über Ihr Dashboard aufrufen. Nehmen Sie daher nur die Details in das Dashboard auf, die Ihre Leser prüfen sollen.
+Bedenken Sie, dass das Dashboard eine Übersicht ist, mit der Sie den aktuellen Status der Daten prüfen können. Das Dashboard basiert auf zugrunde liegenden Berichten und Datasets, und diese Elemente enthalten möglicherweise unzählige Details. Die Leser können die Berichte über Ihr Dashboard aufrufen. Nehmen Sie daher die Details nicht in das Dashboard auf, es sei denn, Ihre Leser müssen diese Details überwachen.
 
-Wo wird das Dashboard angezeigt? Wird es auf einem großen Monitor angezeigt, können Sie mehr Inhalt einfügen. Wird es von Lesern auf Tablets angezeigt, ist es mit weniger Kacheln besser lesbar.
+Wo wird das Dashboard angezeigt? Wenn die Anzeige auf einem großen Monitor erfolgt, können Sie mehr Inhalte einfügen. Wenn Leser den Inhalt jedoch auf Ihren Tablets anzeigen, ist ein Dashboard mit weniger Kacheln besser lesbar.
 
-## <a name="tell-a-story-and-keep-it-to-one-screen"></a>Alle Informationen auf einen Blick
+## <a name="tell-a-story-on-one-screen"></a>Erzählen Sie eine Geschichte auf einem Bildschirm
 Dashboards sind dafür vorgesehen, auf einen Blick wichtige Informationen anzuzeigen. Idealerweise sollten daher alle Kacheln auf einem Bildschirm erscheinen. Können Sie Bildlaufleisten auf Ihrem Dashboard vermeiden?
 
 Ist das Dashboard unübersichtlich?  Entfernen Sie alles bis auf die wesentlichen Informationen, die leicht gelesen und interpretiert werden können.
 
 ## <a name="make-use-of-full-screen-mode"></a>Nutzen des Vollbildmodus
-Zeigen Sie das Dashboard im [Vollbildmodus](consumer/end-user-focus.md) ohne störende Elemente an.
+Wenn Sie ein Dashboard bereitstellen, zeigen Sie es im [Vollbildmodus](consumer/end-user-focus.md) ohne Ablenkungen an.
 
-## <a name="make-the-most-important-information-biggest"></a>Die wichtigsten Informationen in der größten Schrift anzeigen
+## <a name="accent-the-most-important-information"></a>Betonen der wichtigsten Informationen
 Wenn die Texte und Visualisierungen auf Ihrem Dashboard alle gleich groß sind, haben die Leser Schwierigkeiten, sich auf das Wesentliche zu konzentrieren. So sind z. B. Kartenvisualisierungen eine gute Möglichkeit, wichtige Informationen anschaulich zu präsentieren:  
 ![Kartenvisualisierung](media/service-dashboards-design-tips/pbi_card.png)
 
@@ -53,25 +56,25 @@ Stellen Sie jedoch unbedingt Kontext bereit.
 
 Erfahren Sie, wie Sie [eine Kachel mit nur einer Nummer erstellen](visuals/power-bi-visualization-card.md).
 
-## <a name="put-the-most-important-information-in-the-upper-corner"></a>Die wichtigsten Informationen in der oberen Ecke platzieren
-Die meisten Personen lesen von oben nach unten. Daher sollten die wichtigsten Details oben angezeigt werden und weitere Einzelheiten in der Leserichtung Ihrer Zielgruppe eingefügt werden (von links nach rechts, von rechts nach links)
+## <a name="place-the-most-important-information"></a>Platzieren der wichtigsten Informationen
+Die meisten Personen lesen von oben nach unten. Daher sollten die wichtigsten Details oben links angezeigt und weitere Einzelheiten in der Leserichtung Ihrer Zielgruppe eingefügt werden (von links nach rechts, von oben nach unten).
 
-## <a name="use-the-right-visualization-for-the-data-and-format-it-for-easy-reading"></a>Die richtigen Visualisierungen für die Daten verwenden und diese in ein übersichtliches Format bringen
+## <a name="use-the-right-visualization-for-the-data"></a>Die richtigen Visualisierungen für die Daten verwenden
 Vermeiden Sie zahlreiche Visualisierungen auf Kosten der Vielfalt.  Visualisierungen sollten ein Bild vermitteln und leicht zu „lesen“ und interpretieren sein.  Für einige Daten und Visualisierungen reicht eine einfache grafische Visualisierung aus. Möglicherweise erfordern andere Daten eine komplexere Visualisierung – verwenden Sie Titel und Beschriftungen sowie andere Anpassungen, um das Lesen zu erleichtern.  
 
-* [Wählen Sie die entsprechenden Datenvisualisierungen](https://www.youtube.com/watch?v=-tdkUYrzrio). Seien Sie vorsichtig mit Diagrammen, die die Realität verzerren, z. B. 3D-Diagramme. Bedenken Sie, dass das Interpretieren bestimmter Kreisformen für das menschliche Gehirn schwierig ist. Kreisdiagramme, Ringdiagramme, Messgerätdiagramme und andere Arten von Kreisdiagrammen mögen nett aussehen, sind aber nicht die optimale Lösung für die Datenvisualisierung.
-* Achten Sie auf Einheitlichkeit bei den Diagrammskalen auf Achsen, der Reihenfolge der Diagrammdimensionen und den Farben der Dimensionswerte in Diagrammen.
-* Stellen Sie sicher, dass quantitative Daten ansprechend verschlüsselt sind. Zeigen Sie in Telefonnummern maximal drei oder vier Ziffern am Stück an. Runden Sie Maßangaben auf eine oder zwei Stellen nach dem Dezimalkomma und unterteilen Sie Tausender oder Millionen, d. h. 3,4 Millionen anstatt 3.400.000.
-* Achten Sie auf eine Trennung von Genauigkeit und Zeit. Sorgen Sie für verständliche Zeitangaben.  Zeigen Sie ein Diagramm vom letzten Monat nicht neben gefilterten Diagrammen von einem bestimmten Monat an.
-* Wechseln Sie auf Skalen, z. B. auf einem Linien- oder Balkendiagramm, nicht zwischen großen und kleinen Maßeinheiten.  Beispiel: Eine Maßeinheit wird in Millionen, die andere in Tausenden angegeben.  Hier wäre es schwierig, die Differenz der Maßeinheit in Millionen und der Maßeinheit in Tausenden zu ermitteln.  Müssen Sie beide angegeben, wählen Sie eine Visualisierung, bei der eine zweite Achse möglich ist.
-* Überladen Sie Ihre Diagramme nicht mit unnötigen Datenbeschriftungen. Werte in Balkendiagrammen sind in der Regel auch ohne Anzeige der tatsächlichen Zahl gut verständlich.
-* Achten Sie darauf, wie die [Diagramme sortiert werden](consumer/end-user-change-sort.md).  Wenn Sie den höchsten oder niedrigsten Wert hervorheben möchten, sortieren Sie nach der Maßeinheit.  Sollen Benutzer eine bestimmte Kategorie in vielen anderen Kategorien schnell finden können, sortieren Sie nach der Achse.  
-* Kreisdiagramme sind mit weniger als acht Kategorien am übersichtlichsten. Da Sie Werte nicht nebeneinander vergleichen können, sind Werte in einem Kreisdiagramm schwieriger zu vergleichen als in Balken- und Säulendiagrammen. Kreisdiagramme eignen sich besser zum Anzeigen von Teil-Ganzes-Beziehungen als zum Vergleichen der Teile. Und Messgerätdiagramme eignen sich ideal, um den aktuellen Status im Kontext eines Ziels anzuzeigen.
+* Seien Sie vorsichtig, wenn Sie visuelle Elemente verwenden, die zwar ansprechend aussehen, aber schwer zu lesen sind, z.B. 3D-Diagramme. 
+* Leider sind Kreisdiagramme, Ringdiagramme, Messdiagramme und andere Arten von Kreisdiagrammen nicht die optimale Lösung für die Datenvisualisierung. Kreisdiagramme sind mit weniger als acht Kategorien am übersichtlichsten. Da Menschen Werte nicht nebeneinander vergleichen können, ist es schwieriger, Werte in einem Kreisdiagramm zu vergleichen als in Balken- und Säulendiagrammen. Kreisdiagramme eignen sich besser zum Anzeigen von Teil-Ganzes-Beziehungen als zum Vergleichen der Teile. Und Messdiagramme eignen sich ideal, um den aktuellen Status im Kontext eines Ziels anzuzeigen.
+* Seien Sie konsistent in Bezug auf Diagrammskalen auf Achsen, die Reihenfolge der Diagrammdimensionen und auch die Farben, die für Dimensionswerte innerhalb von Diagrammen verwendet werden.
+* Stellen Sie sicher, dass quantitative Daten ansprechend verschlüsselt sind. Zeigen Sie in Telefonnummern maximal drei oder vier Ziffern am Stück an. Runden Sie Maßangaben auf eine oder zwei Stellen nach dem Dezimalkomma, und unterteilen Sie Tausender oder Millionen, d.h. 3,4 Millionen anstatt 3.400.000.
+* Achten Sie auf eine Trennung von Genauigkeit und Zeit. Sorgen Sie für verständliche Zeitangaben. Zeigen Sie ein Diagramm vom letzten Monat nicht neben gefilterten Diagrammen von einem bestimmten Monat an.
+* Mischen Sie nicht große und kleine Maße in der gleichen Größenordnung, z.B. für ein Linien- oder Balkendiagramm. Beispiel: Eine Maßeinheit wird in Millionen, die andere in Tausenden angegeben. Hier wäre es schwierig, die Differenz der Maßeinheit in Millionen und der Maßeinheit in Tausenden zu ermitteln. Müssen Sie beide angegeben, wählen Sie eine Visualisierung, bei der eine zweite Achse möglich ist.
+* Überladen Sie Ihre Diagramme nicht mit unnötigen Datenbeschriftungen. Werte in Balkendiagrammen sind in der Regel auch ohne Anzeige der tatsächlichen Zahl verständlich.
+* Achten Sie darauf, wie die [Diagramme sortiert werden](consumer/end-user-change-sort.md). Wenn Sie den höchsten oder niedrigsten Wert hervorheben möchten, sortieren Sie nach der Maßeinheit. Sollen Benutzer eine bestimmte Kategorie in vielen anderen Kategorien schnell finden können, sortieren Sie nach der Achse.  
 
 Weitere Informationen zur Visualisierung finden Sie unter [Visualisierungstypen in Power BI](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
 
-## <a name="learning-more-about-best-practice-dashboard-design"></a>Weitere Informationen zu Best Practices bei der Gestaltung von Dashboards
-Wenn Sie die Gestaltung erstklassiger Dashboards perfektionieren möchten, informieren Sie sich über die Gestaltgesetze der visuellen Wahrnehmung und die Kommunikation umsetzbarer Informationen im Kontext. Glücklicherweise finden Sie in vielen unserer Blogs bereits zahlreiche Informationen zu diesem Thema. Zu unseren Lieblingsbüchern (in englischer Sprache) zählen:
+## <a name="learn-more-about-dashboard-design"></a>Weitere Informationen zum Dashboardentwurf
+Wenn Sie die Gestaltung erstklassiger Dashboards perfektionieren möchten, informieren Sie sich über die Gestaltgesetze der visuellen Wahrnehmung und die Kommunikation umsetzbarer Informationen im Kontext. Glücklicherweise finden sich in vielen unserer Blogs bereits zahlreiche Informationen zu diesem Thema. Zu unseren Lieblingsbüchern (in englischer Sprache) zählen:
 
 * *Information Dashboard Design* von Stephen Few  
 * *Show Me the Numbers* von Stephen Few  

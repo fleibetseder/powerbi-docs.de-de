@@ -1,6 +1,6 @@
 ---
-title: Anzeigen von Power BI-Inhalt als eine externe Gastbenutzer (Azure AD B2B)
-description: Verwenden Sie Power BI-mobile-apps, um externen Organisation mit Ihnen geteilten Inhalte anzuzeigen.
+title: Anzeigen Power BI-Inhalten als externer Gastbenutzer (Azure AD B2B)
+description: Verwenden von mobilen Power BI-Apps, um Inhalte anzuzeigen, die für Sie aus einer externen Organisation freigegeben wurden.
 author: mshenhav
 manager: kfile
 ms.reviewer: ''
@@ -9,16 +9,16 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/27/2019
 ms.author: mshenhav
-ms.openlocfilehash: a15da4349ce97e34c8321909abc862e424b2839c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 900c7b57c2b6283c44e4a1923dd223d7dfd40ef7
+ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61338701"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490369"
 ---
-# <a name="view-power-bi-content-shared-with-you-from-an-external-organization"></a>Power BI-Inhalte anzeigen, die aus einer externen Organisation für Sie freigegeben
+# <a name="view-power-bi-content-shared-with-you-from-an-external-organization"></a>Anzeigen von Power BI-Inhalten, die von einer externen Organisation für Sie freigegeben wurden
 
-Powerbi arbeitet mit Azure Active Directory Business-to-Business (Azure AD B2B), um sichere Verteilung von Power BI-Inhalten an Gastbenutzer außerhalb Ihrer Organisation zu ermöglichen. Und externe Gastbenutzer die mobile Power BI-app verwenden können, den Zugriff auf diese Power BI-Inhalte, die für sie freigegeben. 
+Power BI ist in Azure Active Directory Business-to-Business (Azure AD B2B) integriert, um die sichere Verteilung von Power BI-Inhalten an Gastbenutzer außerhalb Ihrer Organisation zu ermöglichen. Externe Gastbenutzer können außerdem die mobile Power BI-App verwenden, um auf diese Power BI-Inhalte zuzugreifen, die für sie freigegeben wurden. 
 
 
 Gilt für:
@@ -27,28 +27,30 @@ Gilt für:
 |:--- |:--- |:--- |:--- |
 | iPhones |iPads |Android-Telefone |Android-Tablets |
 
-## <a name="accessing-shared-content"></a>Zugreifen auf freigegebenen Inhalt
+## <a name="accessing-shared-content"></a>Zugreifen auf freigegebene Inhalte
 
-**Zunächst benötigen Sie eine Person aus einer externen Organisation auf ein Element mit Ihnen teilen.** Wenn sich jemand [ein Element mit Ihnen gemeinsam](../../service-share-dashboards.md), entweder aus derselben Organisation oder einer externen Organisation erhalten Sie eine e-Mail mit einem Link zu, die des freigegebenen Elements. Folgen diesen Link auf Ihrem Mobilgerät, wird die mobile Power BI-app geöffnet. Wenn die app erkennt, dass das Element aus einer externen Organisation freigegeben wurde, mit dem die app in der Organisation mit Ihrer Identität verbindet. Die app lädt dann alle Elemente, die aus dieser Organisation für Sie freigegeben wurden.
+**Zunächst benötigen Sie eine Person aus einer externen Organisation, die ein Element für Sie freigibt.** Wenn jemand [ein Element für Sie freigibt](../../service-share-dashboards.md) (aus derselben Organisation oder aus einer externen Organisation), erhalten Sie eine E-Mail mit einem Link zu diesem freigegebenen Element. Wenn Sie diesen Link auf Ihrem mobilen Gerät folgen, wird der mobile Power BI-App geöffnet. Wenn die APP erkennt, dass das Element von einer externen Organisation freigegeben wurde, stellt die App erneut eine Verbindung mit dieser Organisation mit ihrer Identität her. Anschließend lädt die APP alle Elemente, die für Sie von dieser Organisation freigegeben wurden.
 
-![Powerbi öffnen freigegebenen Element per e-Mail ](./media/mobile-apps-b2b/mobile-b2b-open-item-email.png)
+![Öffnen eines freigegebenen Elements über E-Mail in Power BI ](./media/mobile-apps-b2b/mobile-b2b-open-item-email.png)
 
 > [!NOTE]
-> Wenn dies das erste Element, das Sie als eine externe Gastbenutzer freigegeben ist, müssen Sie die Einladung in einem Browser in Anspruch nehmen. Sie können anfordern, die Einladung in Power BI-app nicht möglich.
+> Wenn dies das erste Element ist, das als externer Gastbenutzer für Sie freigegeben wurde, müssen Sie die Einladung in einem Browser beanspruchen. Die Einladung kann nicht in der Power BI-App beansprucht werden.
 
-Solange Sie zu einer externen Organisation verbunden sind, wird ein schwarzer Header in der app angezeigt. Dieser Header gibt an, dass Sie nicht mit Ihrer eigenen Organisation verbunden sind. Beenden Sie den Gastmodus zum Verbinden mit Ihrer eigenen Organisation zurück.
+Solange Sie mit einer externen Organisation verbunden sind, wird in der APP ein schwarzer Header angezeigt. Dieser Header gibt an, dass Sie nicht mit ihrer eigenen Organisation verbunden sind. Um erneut eine Verbindung mit ihrer eigenen Organisation herzustellen, beenden Sie den Gastmodus.
 
-![Power BI-Gast-User-header](./media/mobile-apps-b2b/mobile-b2b-exit-home.png)
+![Power BI-Header für Gastbenutzer](./media/mobile-apps-b2b/mobile-b2b-exit-home.png)
 
-Obwohl Sie eine Power BI-Artefaktlink zur Verbindung mit einer externen Organisation benötigen, sobald Ihre app wechselt, können Sie alle Elemente, die für Sie freigegeben (nicht nur das Element, die Sie aus der die e-Mail-Adresse geöffnet) zugreifen. Um alle Elemente, die Sie zugreifen können in der externen Organisation anzuzeigen, wechseln Sie zu der app-Menü, und wählen Sie **für mich freigegeben**. Klicken Sie unter **Apps** finden Sie apps, die Sie ebenfalls verwenden können.
+Obwohl Sie über einen Power BI-Artefaktlink verfügen müssen, um eine Verbindung mit einer externen Organisation herzustellen, können Sie nach dem Umschalten Ihrer App auf alle Elemente zugreifen, die für Sie freigegeben wurden (nicht nur auf das Element, das Sie über die E-Mail-Nachricht geöffnet haben). Um alle Elemente anzuzeigen, auf die Sie in der externen Organisation zugreifen können, navigieren Sie zum App-Menü und wählen **Für mich freigegeben** aus. Unter **Apps** finden Sie auch Apps, die Sie ebenfalls verwenden können.
 
-![Power BI-app-Menü als externe Gastbenutzer](./media/mobile-apps-b2b/mobile-b2b-menu.png)
+![App-Menü von Power BI als externer Gastbenutzer](./media/mobile-apps-b2b/mobile-b2b-menu.png)
 
 ## <a name="limitations"></a>Einschränkungen
 
-- Für den bedingten Zugriff und anderen Intune-Richtlinien werden in Azure AD B2B und in Power BI mobile nicht unterstützt. Das bedeutet, dass es sich bei die app nur Richtlinien von der eigenen Organisation, erzwingt, wenn sie vorhanden sind.
-- Erste Schritte mit Pushbenachrichtigungen empfangen werden, von der eigenen Organisation-Website (auch wenn der Benutzer als Gast zu einer externen Organisation verbunden ist). Öffnen die Benachrichtigung die Verbindung der app, die eigene Organisation Standort des Benutzers.
-- Wenn die app des Benutzers heruntergefahren beim erneut geöffnet, die app verbindet sich automatisch mit der eigenen Organisation des Benutzers.
-- Einige Aktionen sind deaktiviert, wenn die Verbindung mit einer externen Organisation hergestellt,: Favoriten Elemente, datenwarnungen, Kommentieren und freigeben.
-- Offline-Daten ist nicht verfügbar, während der Verbindung mit einer externen Organisation.
-- Wenn Sie die Unternehmensportal-app auf Ihrem Gerät installiert haben, muss Ihr Gerät registriert werden.
+- Benutzer müssen über ein aktives Power BI-Konto und einen Basismandanten verfügen.
+- Benutzer müssen bei Ihrem Power BI-Basismandanten angemeldet sein, bevor Sie auf die Inhalte zugreifen können, die für Sie von einem externen Mandanten freigegeben wurden.
+- Bedingter Zugriff und andere Intune-Richtlinien werden in Azure AD B2B und Power BI Mobile nicht unterstützt. Dies bedeutet, dass die App nur die Richtlinien der eigenen Organisation erzwingt, sofern diese vorhanden sind.
+- Pushbenachrichtigungen werden nur von der Website der eigenen Organisation empfangen (selbst wenn der Benutzer als Gast mit einer externen Organisation verbunden ist). Durch das Öffnen der Benachrichtigung wird die App erneut mit der Website der eigenen Organisation des Benutzers verbunden.
+- Wenn der Benutzer die App herunterfährt, stellt die App beim erneuten Öffnen automatisch eine Verbindung mit der eigenen Organisation des Benutzers her.
+- Wenn eine Verbindung mit einer externen Organisation besteht, sind einige Aktionen deaktiviert: Favoriten, Datenwarnungen, Kommentare und Freigabe.
+- Offlinedaten sind während der Verbindung mit einer externen Organisation nicht verfügbar.
+- Wenn Sie die Unternehmensportal-App auf Ihrem Gerät installiert haben, muss Ihr Gerät registriert sein.

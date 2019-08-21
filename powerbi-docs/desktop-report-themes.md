@@ -7,24 +7,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/15/2019
+ms.date: 08/12/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5f0f09c3f64795ca0530bbe5ec5cec09de6c7b53
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0c098baa42e4fdc45b23519856eed824dbab5cad
+ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60989203"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69023383"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Verwenden von Berichtdesigns in Power BI Desktop
-Mit **Berichtsdesigns** können Sie ein Farbdesign für Ihren gesamten Bericht übernehmen (Unternehmensfarben, saisonbedingte Farben oder andere Farbdesigns). Wenn Sie ein **Berichtsdesign** anwenden, verwenden alle Visuals im Bericht die Farben des ausgewählten Designs. Es gibt einige Ausnahmen, die später in diesem Artikel beschrieben werden.
+Mit **Berichtsdesigns** können Sie ein Farbdesign für Ihren gesamten Bericht übernehmen (Unternehmensfarben, saisonbedingte Farben, Symbolsätze oder andere Farbdesigns). Wenn Sie ein **Berichtsdesign** anwenden, verwenden alle Visuals im Bericht die Farben des ausgewählten Designs. Es gibt einige Ausnahmen, die später in diesem Artikel beschrieben werden.
 
 ![Report themes](media/desktop-report-themes/report-themes_1.png)
 
 Wenn Sie ein **Berichtsdesign** anwenden, benötigen Sie eine JSON-Datei mit einer Grundstruktur. Sie können diese JSON-Datei dann in Power BI Desktop importieren und auf Ihren Bericht anwenden. Die Struktur der JSON-Datei ist leicht zu verstehen, und ihr Import erfordert nur wenige Klicks.
 
-Sie können auch fast alle Elemente anpassen und standardisieren. Verwenden Sie zum Anpassen die JSON-Datei, die Sie im Bereich **Formatierung** manuell anpassen. Ziel ist es, Sie erhalten die vollständige Kontrolle darüber, wie Sie Ihre Berichte zum Suchen und den Eindruck haben, klicken Sie auf granularer Ebene.
+Sie können auch fast alle Elemente anpassen und standardisieren. Verwenden Sie zum Anpassen die JSON-Datei, die Sie im Bereich **Formatierung** manuell anpassen. Das Ziel besteht darin, Ihnen eine umfassende und genaue Kontrolle über das Erscheinungsbild Ihrer Berichte zu bieten.
 
 ## <a name="how-report-themes-work"></a>Funktionsweise von Berichtdesigns
 Um ein Berichtsdesign auf einen Power BI Desktop-Bericht anzuwenden, wählen Sie ein verfügbares integriertes Design aus, oder importieren Sie ein benutzerdefiniertes Design.

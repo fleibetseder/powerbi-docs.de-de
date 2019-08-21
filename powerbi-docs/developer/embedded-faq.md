@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/27/2019
-ms.openlocfilehash: af3c22197e4d6783787bd72c9cf010bf6db64bc1
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 62b5498558b2c89a23e2ed2caf3dacdf343d3a79
+ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270974"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490349"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Häufig gestellte Fragen zu Power BI Embedded
 
@@ -66,9 +66,10 @@ Im Folgenden finden Sie eine unvollständige Liste der Unterschiede zwischen den
 
 | Feature | Power BI Embedded | Power BI Premium-Kapazität | Power BI Premium-Kapazität |
 |----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
-|   | (A-SKUs) | (EM-SKUs) | (P-SKUs) |
-| Einbetten von Artefakten aus dem Power BI-App-Arbeitsbereich | Azure-Kapazität | Office 365-Kapazität | Office 365-Kapazität |
-| Power BI-Berichte in einer Embedded-Anwendung nutzen | Ja | Ja | Ja |
+|   | Eine SKUs-Azure-Kapazität | EM SKUs-O365-Kapazität | P SKUs-O365-Kapazität |
+| Einbetten von Artefakten aus dem Power BI-App-Arbeitsbereich | Ja | Ja | Ja |
+| Nutzen von Power BI-Berichten in einer eingebetteten Anwendung nutzen: SaaS | Nein | Ja | Ja |
+| Nutzen von Power BI-Berichten in einer eingebetteten Anwendung nutzen: PaaS | Ja | Ja | Ja |
 | Power BI-Berichte in SharePoint nutzen | Nein | Ja | Ja |
 | Power BI-Berichte in Dynamics nutzen | Nein | Ja | Ja |
 | Power BI-Berichte in Teams nutzen (keine mobile App) | Nein | Ja | Ja |

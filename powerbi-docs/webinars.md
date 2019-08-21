@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: ec50369715efdd7bcb9ab764a3240acceb72508e
-ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.openlocfilehash: 5a5dca5c3fb4b3b375d3fbb603703e8aaaf91c6c
+ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418649"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69023436"
 ---
 # <a name="power-bi-webinars"></a>Power BI-Webinare
 
@@ -22,7 +22,9 @@ Registrieren Sie sich für unsere nächsten Livewebinare, oder sehen Sie sich un
 
 ## <a name="upcoming-webinars"></a>Kommende Webinare
 
-Es sind noch keine Webinare geplant. Besuchen Sie diese Website regelmäßig, um sich über neue Veranstaltungen zu informieren.
+**Verwenden von Power BI mit Dynamics 365 Finance and Operations**
+<br>von Kevin Horlock
+<br>[Für die Übertragung am 11. September registrieren](https://info.microsoft.com/ww-landing-Using-Power-BI-with-Dynamics-365-Finance-and-Operations.html?LCID=EN-US)
 
 >[Bevorstehende Webinare der Power BI-Community](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
