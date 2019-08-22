@@ -132,9 +132,9 @@ Wenn wir die Spalte „Projektname“ in der Tabelle „UnternehmenProjekt“ be
 
 ### <a name="to-create-the-new-relationship"></a>So erstellen Sie eine neue Beziehung
 1. Klicken Sie auf **Beziehungen verwalten**.
-2. In **Beziehungen verwalten**, klicken Sie auf **neu** zum Öffnen der **Beziehung erstellen** Dialogfeld, in dem wir die Tabellen, Spalten und alle zusätzlichen Einstellungen, die für gewünschten auswählen können unsere die Beziehung.
-3. Wählen Sie in der ersten Tabelle **Projektstunden**und dann die Spalte **Projekt** aus. Das ist die n-Seite („viele“) unserer Beziehung.
-4. Wählen Sie in der zweiten Tabelle **UnternehmenProjekt**und dann die Spalte **Projektname** aus. Dies ist die 1-Seite unserer Beziehung. 
+2. Klicken Sie unter**Beziehungen verwalten** auf **neu**, um das Dialogfeld **Beziehung erstellen** zu öffnen. Dort können wir die Tabellen, Spalten und alle zusätzlichen Einstellungen für die gewünschten Beziehung auswählen.
+3. Wählen Sie in der ersten Tabelle **ProjectHours** (Projektstunden) und dann die Spalte **Project** (Projekt) aus. Das ist die n-Seite („viele“) unserer Beziehung.
+4. Wählen Sie in der zweiten Tabelle **CompanyProject** (UnternehmenProjekt) und dann die Spalte **ProjName** (Projektname) aus. Dies ist die 1-Seite unserer Beziehung. 
 5. Fahren Sie fort, und klicken Sie sowohl im Dialogfeld **Beziehung erstellen** als auch im Dialogfeld **Beziehungen verwalten** auf **OK** .
 
 ![](media/desktop-create-and-manage-relationships/candmrel_create_compproj.png)
