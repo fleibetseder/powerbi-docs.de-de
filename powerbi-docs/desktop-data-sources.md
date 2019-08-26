@@ -7,29 +7,31 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/15/2019
+ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8d8e77d8fe4ebea5b457ba282014bb8dc738191a
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: 5004b55fa48cdf98aedd019749b738352d68c4cd
+ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68324838"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69560871"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datenquellen in Power BI Desktop
 Mit Power BI Desktop können Sie Verbindungen mit Daten aus vielen verschiedenen Quellen herstellen. Eine vollständige Liste der verfügbaren Datenquellen wird am unteren Rand dieser Seite angezeigt.
 
 Wählen Sie zum Herstellen einer Verbindung mit Daten im Menüband **Start** den Eintrag **Daten abrufen** aus. Wenn Sie den Pfeil nach unten oder den Text **Daten abrufen** auf der Schaltfläche auswählen, wird das Datentypmenü **Am häufigsten verwendet** angezeigt, das in der folgenden Abbildung veranschaulicht wird:
 
-![Abrufen von Daten in Power BI Desktop](media/desktop-data-sources/data-sources_01.png)
+![Abrufen von Daten in Power BI Desktop](media/desktop-data-sources/data-sources-01.png)
 
 Wenn Sie die Option **Mehr...** im Menü **Am häufigsten verwendet** auswählen, wird das Fenster **Daten abrufen** angezeigt. Sie können das Fenster **Daten abrufen** auch durch direktes Auswählen der **Symbolschaltfläche** **Daten abrufen** öffnen (und das Menü **Am häufigsten verwendet** umgehen).
 
-![Schaltfläche „Daten abrufen“](media/desktop-data-sources/data-sources_02.png)
+![Schaltfläche „Daten abrufen“](media/desktop-data-sources/data-sources-02.png)
 
 > [!NOTE]
-> Das Power BI-Team erweitert laufend die Datenquellen, die für **Power BI Desktop** und den **Power BI-Dienst** verfügbar sind. Daher finden Sie häufig Vorabversionen von noch nicht in der Endversion vorliegenden Datenquellen, die als *Beta* oder *Vorschau* gekennzeichnet sind. Für alle als *Beta* oder *Vorschau* markierten Datenquellen stehen nur eingeschränkter Support und weniger Funktionen zur Verfügung, und sie sollten nicht in Produktionsumgebungen verwendet werden.
+> Das Power BI-Team erweitert laufend die Datenquellen, die für **Power BI Desktop** und den **Power BI-Dienst** verfügbar sind. Daher finden Sie häufig Vorabversionen von noch nicht in der Endversion vorliegenden Datenquellen, die als *Beta* oder *Vorschau* gekennzeichnet sind. Für alle als *Beta* oder *Vorschau* markierten Datenquellen stehen nur eingeschränkter Support und weniger Funktionen zur Verfügung, und sie sollten nicht in Produktionsumgebungen verwendet werden. 
+
+> Zudem sind alle Datenquellen, die als *Beta* oder *Vorschau* für **Power BI Desktop** gekennzeichnet sind, möglicherweise nicht für die Verwendung im **Power BI-Dienst** oder in anderen Microsoft-Diensten verfügbar, bis die Datenquelle allgemein verfügbar wird (GA).
 
 ## <a name="data-sources"></a>Datenquellen
 Datentypen werden in die folgenden Kategorien unterteilt:
@@ -56,7 +58,7 @@ Die Kategorie **Datei** bietet die folgenden Datenverbindungen:
 
 Die folgende Abbildung zeigt das Fenster **Daten abrufen** für **Datei**.
 
-![Daten abrufen > Datei](media/desktop-data-sources/data-sources_03.png)
+![Daten abrufen > Datei](media/desktop-data-sources/data-sources-03.png)
 
 Die Kategorie **Datenbank** bietet die folgenden Datenverbindungen:
 
@@ -95,16 +97,18 @@ Die Kategorie **Datenbank** bietet die folgenden Datenverbindungen:
 
 Die folgende Abbildung zeigt das Fenster **Daten abrufen** für **Datenbank**.
 
-![Daten abrufen > Datenbanken](media/desktop-data-sources/data-sources_04.png)
+![Daten abrufen > Datenbanken](media/desktop-data-sources/data-sources-04.png)
 
-Die Kategorie **Power BI** bietet die folgenden Datenverbindungen:
+Die Kategorie **Power Platform** bietet die folgenden Datenverbindungen:
 
 * Power BI-Datasets
 * Power BI-Dataflows
+* Common Data Service
+* Power Platform-Dataflows (Beta)
 
-Die folgende Abbildung zeigt das Fenster **Daten abrufen** für **Power BI**.
+Die folgende Abbildung zeigt das Fenster **Daten abrufen** für **Power Platform**.
 
-![Daten abrufen > Power BI](media/desktop-data-sources/data-sources_05.png)
+![Daten abrufen > Power BI](media/desktop-data-sources/data-sources-05.png)
 
 Die Kategorie **Azure** bietet die folgenden Datenverbindungen:
 
@@ -113,7 +117,7 @@ Die Kategorie **Azure** bietet die folgenden Datenverbindungen:
 * Azure Analysis Services-Datenbank
 * Azure Blob Storage
 * Azure Table Storage
-* Azure Cosmos DB (Beta)
+* Azure Cosmos DB
 * Azure Data Lake Storage Gen2 (Beta)
 * Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
@@ -124,7 +128,7 @@ Die Kategorie **Azure** bietet die folgenden Datenverbindungen:
 
 Die folgende Abbildung zeigt das Fenster **Daten abrufen** für **Azure**.
 
-![Daten abrufen > Azure](media/desktop-data-sources/data-sources_06.png)
+![Daten abrufen > Azure](media/desktop-data-sources/data-sources-06.png)
 
 Die Kategorie **Online Services** bietet die folgenden Datenverbindungen:
 
@@ -134,7 +138,6 @@ Die Kategorie **Online Services** bietet die folgenden Datenverbindungen:
 * Dynamics NAV
 * Dynamics 365 Business Central
 * Dynamics 365 Business Central (lokal)
-* Common Data Service
 * Microsoft Azure Consumption Insights (Beta)
 * Azure DevOps (Beta)
 * Azure DevOps Server (Beta)
@@ -161,6 +164,7 @@ Die Kategorie **Online Services** bietet die folgenden Datenverbindungen:
 * tyGraph (Beta)
 * Webtrends (Beta)
 * Zendesk (Beta)
+* Dynamics 365 Customer Insights (Beta)
 * Emigo Data Source (Beta)
 * Entersoft Business Suite (Beta)
 * Industrial App Store
@@ -168,11 +172,11 @@ Die Kategorie **Online Services** bietet die folgenden Datenverbindungen:
 * Microsoft Graph-Sicherheit (Beta)
 * Quick Base
 * TeamDesk (Beta)
-* Dynamics 365 Customer Insights (Beta)
+
 
 Die folgende Abbildung zeigt das Fenster **Daten abrufen** für **Onlinedienste** an.
 
-![Daten abrufen > Onlinedienste](media/desktop-data-sources/data-sources_07.png)
+![Daten abrufen > Onlinedienste](media/desktop-data-sources/data-sources-07.png)
 
 Die Kategorie **Sonstige** bietet die folgenden Datenverbindungen:
 
@@ -200,7 +204,7 @@ Die Kategorie **Sonstige** bietet die folgenden Datenverbindungen:
 
 Die folgende Abbildung zeigt das Fenster **Daten abrufen** für **Sonstige**.
 
-![Daten abrufen > Sonstige](media/desktop-data-sources/data-sources_08.png)
+![Daten abrufen > Sonstige](media/desktop-data-sources/data-sources-08.png)
 
 > [!NOTE]
 > Zurzeit ist es nicht möglich, eine Verbindung mit benutzerdefinierten Datenquellen herzustellen, die mit Azure Active Directory gesichert wurden.
@@ -208,15 +212,15 @@ Die folgende Abbildung zeigt das Fenster **Daten abrufen** für **Sonstige**.
 ## <a name="connecting-to-a-data-source"></a>Herstellen der Verbindung mit einer Datenquelle
 Wenn Sie die Verbindung mit einer Datenquelle herstellen möchten, wählen Sie die Datenquelle im Fenster **Daten abrufen** und dann **Verbinden**aus. In der folgenden Abbildung ist **Web** aus der Datenverbindungskategorie **Sonstige** ausgewählt.
 
-![Mit Web verbinden](media/desktop-data-sources/data-sources_08.png)
+![Mit Web verbinden](media/desktop-data-sources/data-sources-08.png)
 
 Es wird ein für den Typ der Datenverbindung spezifisches Verbindungsfenster angezeigt. Wenn Anmeldeinformationen erforderlich sind, werden Sie aufgefordert, diese bereitzustellen. Die folgende Abbildung zeigt eine URL, die eingegeben wird, um die Verbindung mit einer Webdatenquelle herzustellen.
 
-![Eingabe-Web-URL](media/desktop-data-sources/datasources_fromwebbox.png)
+![Eingabe-Web-URL](media/desktop-data-sources/datasources-fromwebbox.png)
 
 Wählen Sie bei der Eingabe der URL oder Ressourcenverbindungsinformationen **OK**aus. Power BI Desktop stellt die Verbindung mit der Datenquelle her und zeigt die verfügbaren Datenquellen im **Navigator**an.
 
-![Navigator-Bildschirm](media/desktop-data-sources/datasources_fromnavigatordialog.png)
+![Navigator-Bildschirm](media/desktop-data-sources/datasources-fromnavigatordialog.png)
 
 Sie können die Daten entweder durch Auswählen der Schaltfläche **Laden** laden, die sich am unteren Rand des Bereichs **Navigator** befindet, oder Sie bearbeiten die Abfrage vor dem Laden der Daten, indem Sie die Schaltfläche **Bearbeiten** auswählen.
 

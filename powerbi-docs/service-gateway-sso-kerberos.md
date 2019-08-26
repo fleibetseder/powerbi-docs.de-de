@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/25/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: bea8b954cb1c0743745ef6d3bf9d48aa8513f2fe
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 436040f11534ede9d2e42e4f939d24a19e3d1c24
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624045"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69655169"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Verwenden von Kerberos für SSO (Single Sign-On, Einmaliges Anmelden) von Power BI bei lokalen Datenquellen
 
@@ -192,7 +192,7 @@ Da Sie nun wissen, wie Kerberos mit einem Gateway funktioniert, können Sie SSO 
 1. Laden Sie CommonCryptoLib (sapcrypto.dll), Version **8.5.25 oder höher**, aus dem SAP Launchpad herunter, und kopieren Sie es in einen Ordner auf Ihrem Gatewaycomputer. Erstellen Sie in demselben Verzeichnis, in das Sie „sapcrypto.dll“ kopiert haben, eine Datei mit dem Namen „sapcrypto.ini“ und dem folgenden Inhalt:
 
     ```
-    ccl/snc/enable\_kerberos\_in\_client\_role = 1
+    ccl/snc/enable_kerberos_in_client_role = 1
     ```
 
     Die INI-Datei enthält Konfigurationsinformationen, die von CommonCryptoLib zum Aktivieren von SSO im Gatewayszenario benötigt werden.
@@ -242,7 +242,7 @@ Wenn der Bericht im Power BI-Dienst nicht aktualisiert werden kann, können Sie 
 
     ```
     ccl/trace/level=5
-    ccl/trace/directory=\\<drive\\>:\logs\sectrace
+    ccl/trace/directory=<drive>:\logs\sectrace
     ```
 
     Stellen Sie sicher, dass Sie die Option _ccl/trace/directory_ in einen Speicherort ändern, in den Mitglieder der Gruppe „Authentifizierte Benutzer“ schreiben können. Erstellen Sie alternativ eine neue INI-Datei, um dieses Verhalten zu ändern. Erstellen Sie in demselben Verzeichnis, in dem sich „sapcrypto.ini“ und „sapcrypto.dll“ befinden, eine Datei mit dem Namen „sectrace.ini“ und dem folgenden Inhalt.  Ersetzen Sie die DIRECTORY-Option durch einen Speicherort auf Ihrem Computer, in den die Gruppe „Authentifizierte Benutzer“ schreiben kann:
@@ -250,7 +250,7 @@ Wenn der Bericht im Power BI-Dienst nicht aktualisiert werden kann, können Sie 
     ```
     LEVEL = 5
     
-    DIRECTORY = \\<drive\\>:\logs\sectrace
+    DIRECTORY = <drive>:\logs\sectrace
     ```
 
     Reproduzieren Sie nun das Problem, und prüfen Sie, ob der Speicherort, auf den durch DIRECTORY verwiesen wird, Ablaufverfolgungsdateien enthält. Stellen Sie sicher, dass Sie die CPIC- und CCL-Ablaufverfolgung deaktivieren, wenn Sie fertig sind.

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e23fd2aca90ee14c2376b0175c7c8b5132cf9a9f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 35f60c0e41a06c8f13931d158fe092184da8838d
+ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66222264"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69561063"
 ---
 # <a name="conditional-formatting-in-tables"></a>Bedingte Formatierung in Tabellen 
 Mithilfe der bedingten Formatierung für Tabellen können Sie benutzerdefinierte Zellenfarben basierend auf Zellwerten oder auf anderen Werten oder Feldern festlegen und Verlaufsfarben verwenden. Sie können auch Zellwerte mit Datenbalken darstellen. 
@@ -130,11 +130,17 @@ Dadurch werden beispielsweise Ergebnisse wie die folgende Matrix angezeigt.
 
 Mithilfe von DAX und etwas Kreativität können Sie viele weitere Varianten erstellen.
 
-Können Sie die Werte aufgeführt, die in der Spezifikation für CSS-Farbe am [ https://www.w3.org/TR/css-color-3/ ](https://www.w3.org/TR/css-color-3/) , auf die Farbe der visuellen Elemente:
-* 3, 6 oder 8 Ziffern hexadezimal-codes z. B. #3E4AFF. Stellen Sie sicher, dass Sie das Symbol "#" am Anfang des Codes enthalten. "3E4AFF" wird nicht akzeptiert. 
-* RGB- oder RGBA-Werte z. B. RGBA ("234", "234", "234", "0.5")
-* HSL- oder HSLA-Werte z. B. HSLA (123, 75 %, 75 %, 0.5)
-* Farbe Namen, z. B. grün SkyBlue, PeachPuff 
+Sie können einen beliebigen der in der CSS-Farbspezifikation unter [https://www.w3.org/TR/css-color-3/](https://www.w3.org/TR/css-color-3/) aufgeführten Werte verwenden, um Ihre Visuals in einer bestimmten Farbe anzuzeigen:
+* Hexadezimalcodes mit 3, 6 oder 8 Ziffern, z. B. #3E4AFF. Vergessen Sie nicht, das #-Symbol am Anfang des Codes einzuschließen. „3E4AFF“ wird nicht akzeptiert. 
+* RGB- oder RGBA-Werte, z. B. RGBA(234, 234, 234, 0.5)
+* HSL- oder HSLA-Werte, z. B. HSLA(123, 75%, 75%, 0.5)
+* Farbnamen, z. B. Green, SkyBlue, PeachPuff (Grün, Himmelblau, Pfirsichhauch) 
+
+## <a name="considerations-and-limitations"></a>Überlegungen und Einschränkungen
+Bei der Anwendung von bedingter Formatierung auf Tabellen sollten Sie folgende Überlegungen berücksichtigen:
+
+* Bedingte Formatierung wird nur auf die Werte eines **Matrix**-Visuals angewendet und gilt nicht für Teilergebnisse oder Gesamtergebnisse. 
+
 
 ## <a name="next-steps"></a>Nächste Schritte
 Weitere Informationen finden Sie im folgenden Artikel:  

@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d41fc5991a95b51f71d0db522d4de84454de4ca2
-ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
+ms.openlocfilehash: a3e88d853f59a0e9a188d6d6796559ad2d9059a9
+ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590601"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68995291"
 ---
 # <a name="key-influencers-visualization"></a>Visual „Wichtige Einflussfaktoren“
 Mithilfe des Visuals „Wichtige Einflussfaktoren“ können Sie die wichtigen Faktoren einer für Sie relevanten Metrik besser nachvollziehen. Es analysiert die Daten, erstellt eine Rangfolge für wichtige Faktoren und stellt diese dar. Angenommen, Sie möchten beispielsweise ermitteln, wodurch die Personalfluktuation oder Abwanderung beeinflusst wird. Dabei können z. B. die Länge des Anstellungsvertrags oder das Alter des Mitarbeiters wichtige Faktoren darstellen. 
@@ -24,9 +24,6 @@ Mithilfe des Visuals „Wichtige Einflussfaktoren“ können Sie die wichtigen F
 Sie können das Visual in folgenden Fällen erfolgreich verwenden: 
 - Zur Übersicht über die Faktoren, die sich auf die analysierte Metrik auswirken.
 - Zum Vergleich der relativen Wichtigkeit dieser Faktoren, z.B. bei der Frage, ob Kurzzeitverträge sich stärker als Langzeitverträge auf die Fluktuation auswirken. 
-
-## <a name="key-influencer-requirements"></a>Voraussetzungen für das Visual „Wichtige Einflussfaktoren“ 
-Bei der Metrik, die Sie analysieren, muss es sich um ein Kategoriefeld oder um ein numerisches Feld handeln (Aggregate und Measures werden nicht unterstützt).
 
 ## <a name="features-of-the-key-influencers-visual"></a>Features des Visuals „Wichtige Einflussfaktoren“
 
@@ -44,15 +41,13 @@ Bei der Metrik, die Sie analysieren, muss es sich um ein Kategoriefeld oder um e
 
 6. **Rechter Bereich**: Im rechten Bereich wird ein Visual dargestellt. In diesem Fall werden im Säulendiagramm alle Werte für den links ausgewählten Faktor **Theme** (Thema) des Visuals „Wichtige Einflussfaktoren“ dargestellt. Der spezifische Wert **Usability** (Benutzerfreundlichkeit) im linken Bereich wird in Grün angezeigt. Alle anderen Werte für **Theme** (Thema) werden in Schwarz angezeigt.
 
-7. **Durchschnittslinie**: Der Durchschnitt, der aus allen Werten von **Theme** (Thema) mit Ausnahme von **Usability** (Benutzerfreundlichkeit) berechnet wurde. Die Berechnung setzt sich also aus allen schwarz dargestellten Werten zusammen. Dadurch wird ersichtlich, welcher Prozentsatz der sonstigen **Themen** eine niedrige Bewertung verursacht hat. Das heißt, dass ein Kunde, der eine Bewertung abgibt, auch den Grund bzw. das „Thema“ der Bewertung angegeben hat. Zu den Themen zählen unter anderem Benutzerfreundlichkeit, Geschwindigkeit und Sicherheit. 
+7. **Durchschnittslinie**: Der Durchschnitt wird für alle möglichen Werte für **Theme** (Design) berechnet, außer für **Usability** (Benutzerfreundlichkeit) (dies ist der ausgewählte Einflussfaktor). Die Berechnung setzt sich also aus allen schwarz dargestellten Werten zusammen. Daraus wird ersichtlich, welcher Prozentsatz der anderen **Designs** eine niedrige Bewertung hatte. In diesem Fall hatte 11,35 % eine niedrige Bewertung (angezeigt durch die gepunktete Linie).
 
-   **Theme is Usability** (Thema ist gleich Benutzerfreundlichkeit) ist dem Visual auf der linken Seite nach der zweitgrößte Einflussfaktor für eine niedrige Bewertung. Die Berechnung des Durchschnitts aus dem Einfluss aller anderen Themen auf die **niedrige** Bewertung führt zu dem rot dargestellten Ergebnis. Von allen anderen genannten Themen sind nur 11,35 % höher als **Usability** (Benutzerfreundlichkeit).
+8. **Kontrollkästchen**: Filtert das Visual im rechten Bereich heraus, sodass nur Werte angezeigt werden, die Einflussfaktoren für dieses Feld sind. In diesem Beispiel würde es das Visual nach Benutzerfreundlichkeit, Sicherheit und Navigation filtern.
 
-8. **Kontrollkästchen**: **Nur Werte anzeigen, die Einflussfaktoren sind**.
-
-## <a name="create-a-key-influencers-visual"></a>Erstellen eines Visuals für wichtige Einflussfaktoren 
+## <a name="analyze-a-metric-that-is-categorical"></a>Analysieren einer kategorischen Metrik
  
-Sehen Sie sich dieses Video an, um zu erfahren, wie ein Visual für wichtige Einflussfaktoren erstellt wird. Führen Sie anschließend die folgenden Schritte aus, um ein Visual zu erstellen. 
+Sehen Sie sich dieses Video an, um zu erfahren, wie ein Visual für wichtige Einflussfaktoren mit einer kategorischen Metrik erstellt wird. Führen Sie anschließend die folgenden Schritte aus, um ein Visual zu erstellen. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -65,20 +60,24 @@ Ihr Produkt-Manager möchte, dass Sie ermitteln, welche Faktoren dazu führen, d
 
     ![Auswahl der Vorlage „Wichtige Einflussfaktoren“ im Bereich „Visualisierungen“](media/power-bi-visualization-influencers/power-bi-template-new.png)
 
-2. Verschieben Sie die Metrik, die Sie analysieren möchten, in das Feld **Analyse**. Im Feld **Analyse** werden nur kategorische, also nicht kontinuierliche Variablen unterstützt. Um festzustellen, warum Kunden den Service niedrig bewerten, wählen Sie **Customer Table (Kundentabelle)**  > **Bewertung** aus. 
+2. Verschieben Sie die Metrik, die Sie analysieren möchten, in das Feld **Analyse**. Um festzustellen, warum Kunden den Service niedrig bewerten, wählen Sie **Customer Table (Kundentabelle)**  > **Bewertung** aus.
+
 3. Verschieben Sie die Felder, von denen Sie vermuten, dass sie sich auf die **Bewertung** auswirken, in das Feld **Erläuterung nach**. Sie können beliebig viele Felder verschieben. Beginnen Sie in diesem Beispiel mit den folgenden Feldern:
     - Country-Region 
     - Role in Org (Rolle in der Organisation) 
     - Subscription Type (Abonnementtyp) 
     - Company Size (Unternehmensgröße) 
-    - Theme 
-1. Um den Fokus auf die negativen Bewertungen zu richten, wählen Sie im Dropdownfeld **What influences Rating to be** (Welche Faktoren zu einer Bewertung im Bereich) den Eintrag **Niedrig** aus.  
+    - Theme
+    
+4. Lassen Sie das Feld **Erweitern um** leer. Dieses Feld wird nur beim Analysieren eines Measures oder eines zusammengefassten Felds verwendet. 
+
+5. Um den Fokus auf die negativen Bewertungen zu richten, wählen Sie im Dropdownfeld **What influences Rating to be** (Welche Faktoren zu einer Bewertung im Bereich) den Eintrag **Niedrig** aus.  
 
     ![Auswahl von „Niedrig“ im Dropdownmenü](media/power-bi-visualization-influencers/power-bi-key-influencers.png)
 
 Die Analyse wird auf Tabellenebene des entsprechenden Felds ausgeführt. In diesem Beispiel wird die Metrik **Bewertung** verwendet. Diese Metrik wird auf Kundenebene definiert. Jeder Kunde hat entweder eine hohe oder eine niedrige Bewertung abgegeben. Alle erläuternden Faktoren für das Visual müssen auf Kundenebene definiert werden, damit sie verwendet werden können. 
 
-Im obigen Beispiel weisen alle erläuternden Faktoren eine 1:1- oder eine n:1-Beziehung zur Metrik auf. In diesem Beispiel wurde jeder Bewertung ein Thema zugeordnet. Dieses Thema war das Hauptthema der Kundenbewertung. Entsprechend stammen die Kunden aus einem Land, weisen einen Mitgliedschaftstyp auf und haben eine Rolle in der Organisation inne. Bei den erläuternden Faktoren handelt es sich um bereits vorhandenen Attribute eines Kunden, sodass keine Transformation nötig ist. Das Visual kann die Attribute direkt verwenden. 
+Im obigen Beispiel weisen alle erläuternden Faktoren eine 1:1- oder eine n:1-Beziehung zur Metrik auf. In diesem Fall hat jeder Kunde seiner Bewertung ein einzelnes Design zugewiesen. Entsprechend stammen die Kunden aus einem Land, weisen einen Mitgliedschaftstyp auf und haben eine Rolle in der Organisation inne. Bei den erläuternden Faktoren handelt es sich um bereits vorhandenen Attribute eines Kunden, sodass keine Transformation nötig ist. Das Visual kann die Attribute direkt verwenden. 
 
 Im Verlauf des Tutorials werden komplexere Beispiele mit 1:n-Beziehungen behandelt. In solchen Fällen müssen Spalten zunächst auf Kundenebene aggregiert werden, bevor die Analyse ausgeführt werden kann. 
 
@@ -89,7 +88,7 @@ Nun sehen wir uns die wichtigsten Einflussfaktoren für niedrige Bewertungen gen
 
 ### <a name="top-single-factor-that-influences-the-likelihood-of-a-low-rating"></a>Faktor, der am wahrscheinlichsten zu einer niedrigen Bewertung führt
 
-In der Organisation in diesem Beispiel gibt es drei Rollen: Consumer (Verbraucher), Administrator (Administrator) und Publisher (Herausgeber). Die Rolle des Verbrauchers führt dabei am wahrscheinlichsten zu einer niedrigen Bewertung. 
+Der Kunde in diesem Beispiel kann drei Rollen haben: Verbraucher, Administrator und Verleger. Die Rolle des Verbrauchers führt dabei am wahrscheinlichsten zu einer niedrigen Bewertung. 
 
 ![Auswahl der Option „Role in Org is consumer“ (Rolle in der Organisation ist Verbraucher)](media/power-bi-visualization-influencers/power-bi-role-consumer.png)
 
@@ -165,9 +164,29 @@ In dieser Gruppe haben 74,3 % der Kunden eine niedrige Bewertung abgegeben. Im 
 
 ![Auswählen des ersten Segments unter „Wichtigste Segmente“](media/power-bi-visualization-influencers/power-bi-top-segments2.png)
 
-## <a name="working-with-numerical-data"></a>Verwenden von numerischen Daten
+## <a name="adding-counts"></a>Hinzufügen von Zählungen
 
-Wenn Sie ein numerisches Feld in das Feld **Analyse** verschieben, können Sie den Umgang mit diesem Szenario wählen. Sie können das Verhalten des Visuals ändern, indem Sie den **Formatierungsbereich** aufrufen und zwischen dem **Analysetyp „Kategorisch“** und dem **Analysetyp „Kontinuierlich“** wechseln.
+Manchmal kann ein Einflussfaktor eine große Auswirkung haben, aber nur sehr wenig Daten darstellen. Beispielsweise ist „**Theme** is **usability**“ der zweitgrößte Einflussfaktor für niedrige Bewertungen. Es gibt jedoch möglicherweise nur wenige Kunden, die sich über die Nutzbarkeit beschwert haben. Mit Zählungen können Sie priorisieren, auf welche Einflussfaktoren Sie sich konzentrieren möchten.
+
+Sie können die Zählung über die **Analysekarte** im Formatierungsbereich aktivieren.
+
+![Hinzufügen von Zählungen](media/power-bi-visualization-influencers/power-bi-ki-counts-toggle.png)
+
+Wenn Zählungen aktiviert sind, wird ein Ring um die Blase der einzelnen Einflussfaktoren angezeigt, der den ungefähren Prozentsatz der Daten darstellt, die der Einflussfaktor enthält. Je mehr die Blase von dem Ring eingeschlossen ist, desto mehr Daten sind in ihr enthalten. Wir sehen, dass „**Theme** is **usability**“ einen sehr kleinen Teil der Daten enthält.
+
+![Anzeigen von Zählungen](media/power-bi-visualization-influencers/power-bi-ki-counts-ring.png)
+
+Sie können auch die Option „Sortieren nach“ unten links im Visual verwenden, um die Blasen zuerst nach Zählung anstelle von Auswirkung zu sortieren. „**Subscription Type** is **Premier**“ ist der wichtigste Einflussfaktor, der auf Zählung basiert.
+
+![Sortieren nach Zählungen](media/power-bi-visualization-influencers/power-bi-ki-counts-sort.png)
+
+Wenn Sie einen vollständigen Ring um den Kreis sehen, bedeutet dies, dass der Einflussfaktor 100 % der Daten enthält. Sie können den Zählungstyp so ändern, dass er relativ zum maximalen Einflussfaktor ist, indem Sie die Dropdownliste **Zählungstyp** in der **Analysekarte** des Formatierungsbereichs verwenden. Nun wird der Einflussfaktor mit der größten Menge an Daten durch einen vollständigen Ring dargestellt, und alle anderen Zählungen in Relation zu diesem.
+
+![Anzeigen von relativen Zählungen](media/power-bi-visualization-influencers/power-bi-ki-counts-type.png)
+
+## <a name="analyze-a-metric-that-is-numeric"></a>Analysieren einer numerischen Metrik
+
+Wenn Sie ein nicht numerisches Feld in das Feld **Analyse** verschieben, können Sie entscheiden, wie dieses Szenario behandelt wird. Sie können das Verhalten des Visuals ändern, indem Sie den **Formatierungsbereich** aufrufen und zwischen dem **Analysetyp „Kategorisch“** und dem **Analysetyp „Kontinuierlich“** wechseln.
 
 ![Wechseln von kategorisch zu kontinuierlich](media/power-bi-visualization-influencers/power-bi-ki-formatting.png)
 
@@ -212,6 +231,30 @@ In den wichtigsten Segmenten für numerische Zielsetzungen werden Gruppen angege
 
 ![Numerische Zielsetzung für Measures als Einflussfaktoren](media/power-bi-visualization-influencers/power-bi-ki-numeric-segments.png)
 
+## <a name="analyze-a-metric-that-is-a-measure-or-a-summarized-column"></a>Analysieren einer Metrik, die ein Measure oder eine zusammengefasste Spalte ist
+
+Im Fall eines Measures oder einer zusammengefassten Spalte wird die Analyse standardmäßig auf den [oben](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric) beschriebenen **Continuous Analysis Type** (kontinuierlichen Analysetyp) festgelegt. Dies kann nicht geändert werden. Der größte Unterschied zwischen der Analyse eines Measures oder einer zusammengefassten Spalte und einer nicht zusammengefassten numerischen Spalte ist die Ebene, auf der die Analyse ausgeführt wird.
+
+Im Fall von nicht zusammengefassten Spalten wird die Analyse immer auf Tabellenebene ausgeführt. Im obigen Beispiel des Immobilienpreises haben wir die Metrik **House Price** (Hauspreis) analysiert, um zu sehen, was den Preis für ein Haus steigen oder sinken lässt. Die Analyse wird automatisch auf Tabellenebene ausgeführt. Unsere Tabelle verfügt über eine eindeutige ID für jedes Haus, damit die Analyse auf Hausebene ausgeführt wird.
+
+![Measures-Tabelle](media/power-bi-visualization-influencers/power-bi-ki-measures-table.png)
+
+Bei Measures und zusammengefassten Spalten wissen wir nicht sofort, auf welcher Ebene Sie analysiert werden. Wenn **House Price** (Hauspreis) als **Average** (Mittelwert) zusammengefasst würde, müssten wir festlegen, auf welcher Ebene dieser Durchschnittspreis für das Haus berechnet werden soll. Handelt es sich um den Durchschnittshauspreis auf Nachbarschaftsebene? Oder vielleicht auf regionaler Ebene?
+
+Measures und zusammengefasste Spalten werden automatisch auf der Ebene der verwendeten **Erläuterung nach**-Felder analysiert. Angenommen, Sie haben drei **Erläuterung nach**-Felder, an denen wir interessiert sind: **Kitchen Quality** (Qualität der Küche), **Building Type** (Gebäudetyp) und **Air Conditioning** (Klimaanlage). Der Wert **Average House Price** (durchschnittlicher Hauspreis) würde für jede eindeutige Kombination dieser drei Felder berechnet werden. Häufig ist es hilfreich, zu einer Tabellenansicht zu wechseln, um zu sehen, wie die auszuwertenden Daten aussehen.
+
+![Measures-Tabelle](media/power-bi-visualization-influencers/power-bi-ki-measures-table2.png)
+
+Diese Analyse ist extrem zusammengefasst, sodass es für das Regressionsmodell schwierig ist, in den Daten Muster zu finden, aus denen es lernen kann. Wir sollten die Analyse detaillierter ausführen, um bessere Ergebnisse zu erzielen. Wenn wir den Hauspreis auf der Hausebene analysieren möchten, müssen wir das **ID**-Feld der Analyse explizit hinzufügen. Trotzdem möchten wir nicht, dass die Haus-ID als Einflussfaktor angesehen wird. Es hilft uns nicht, zu erfahren, dass der Preis für ein Haus steigt, wenn die Haus-ID sich erhöht. An dieser Stelle ist die Feldoption **Erweitern durch** praktisch. Mithilfe der Feldoption **Erweitern durch** können Sie Felder hinzufügen, die Sie verwenden möchten, um die Ebene der Analyse festzulegen, ohne nach neuen Einflussfaktoren suchen zu müssen.
+
+Sehen Sie sich an, wie die Visualisierung aussieht, nachdem Sie die **ID** für die Feldoption **Erweitern durch** hinzugefügt haben. Nachdem Sie die Ebene definiert haben, auf der das Measure ausgewertet werden soll, erfolgt das Interpretieren von Einflussfaktoren genau gleich wie bei [nicht zusammengefassten numerischen Spalten](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric).
+
+![Measures-Tabelle](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
+
+Wenn Sie mehr darüber erfahren möchten, wie Sie Measures mit der Visualisierung der wichtigen Einflussfaktoren analysieren können, sehen Sie sich das folgende Tutorial an.
+
+<iframe width="1167" height="631" src="https://www.youtube.com/embed/2X1cW8oPtc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## <a name="considerations-and-troubleshooting"></a>Zu beachtende Aspekte und Problembehandlung 
  
 **Welche Einschränkungen gibt es für das Visual?** 
@@ -244,6 +287,12 @@ Das Visual funktioniert so, dass in den Daten für eine Gruppe nach Mustern gesu
 Für den ausgewählten Zustand sollten mindestens 100 Beobachtungen vorhanden sein. In diesem Beispiel steht der Zustand für Kunden, die abwandern. Ferner benötigen Sie mindestens 10 Beobachtungen für die Zustände, die Sie für den Vergleich verwenden. In diesem Beispiel steht der Vergleichszustand für Kunden, die nicht abwandern.
 
 Bei der Analyse eines numerischen Felds sollten Sie im **Formatierungsbereich** auf der Karte **Analyse** von der **kategorischen Analyse** zur **kontinuierlichen Analyse** wechseln.
+
+**Es wird eine Fehlermeldung angezeigt, dass die Analyse immer auf Zeilenebene der übergeordneten Tabelle ausgeführt wird, wenn „Analysieren“ nicht zusammengefasst ist. Das Ändern dieser Ebene über die „Erweitern durch“-Felder ist nicht zulässig. Wieso?**
+
+Wenn eine numerische Spalte oder eine kategorische Spalte analysiert wird, wird die Analyse immer auf der Tabellenebene ausgeführt. Wenn Sie z. B. Hauspreise analysieren und Ihre Tabelle eine ID-Spalte enthält, wird die Analyse automatisch auf der Haus-ID-Ebene ausgeführt. 
+
+Wenn Sie ein Measure oder eine zusammengefasste Spalte analysieren, müssen Sie explizit angeben, auf welcher Ebene die Analyse ausgeführt werden soll. Mithilfe der Feldoption **Erweitern durch** können Sie die Ebene der Analyse für Measures und zusammengefasste Spalten ändern, ohne neue Einflussfaktoren hinzuzufügen. Wenn **House Price** (Hauspreis) als Measure definiert wurde, können Sie die Spalte „House ID“ der Feldoption **Erweitern durch** hinzufügen, um die Analyseebene zu ändern.
 
 **Es wird ein Fehler angezeigt, dass ein Feld in *Erläuterung nach* keine eindeutige Beziehung zu der Tabelle aufweist, die die analysierte Metrik enthält. Wieso?**
  

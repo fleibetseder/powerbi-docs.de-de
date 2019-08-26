@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/18/2019
+ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fcad10a77ad531562443470296c9d712b2aa9724
-ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
+ms.openlocfilehash: 6664924a10b89e057765d70499208aede2d7fdad
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68757611"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654783"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Verwenden von DirectQuery in Power BI Desktop
 Wenn Sie mit **Power BI Desktop** eine Verbindung zu Ihrer Datenquelle herstellen, ist es immer möglich, eine Kopie der Daten in **Power BI Desktop** zu importieren. Für einige Datenquellen steht ein alternativer Ansatz zur Verfügung: das Herstellen einer direkten Verbindung zur Datenquelle mit **DirectQuery**.
@@ -49,10 +49,13 @@ Einige Vorteile sprechen für die Verwendung von **DirectQuery**:
 Derzeit bestehen einige Einschränkungen bei der Verwendung von **DirectQuery**:
 
 * Alle Tabellen müssen aus einer einzelnen Datenbank kommen, es sei denn, es werden [zusammengesetzte Modelle](desktop-composite-models.md) verwendet.
+
 * Wenn die Abfrage im **Abfrage-Editor** übermäßig komplex ist, tritt ein Fehler auf. Um den Fehler zu beheben, müssen Sie wie folgt vorgehen: Löschen Sie den fraglichen Schritt im **Abfrage-Editor**, oder *importieren* Sie die Daten, statt **DirectQuery** zu verwenden. Bei mehrdimensionalen Datenquellen wie SAP Business Warehouse ist kein **Abfrage-Editor** vorhanden.
-* Beim Filtern von Beziehungen steht nur eine Richtung anstelle beider Richtungen zur Verfügung (es ist aber möglich, Kreuzfilterung in beide Richtungen für **DirectQuery** zu aktivieren). Für mehrdimensionale Datenquellen wie SAP Business Warehouse sind im Modell keine Beziehungen definiert.
+
 * Zeitintelligenzfunktionen sind in **DirectQuery** nicht verfügbar. Beispielsweise wird die spezifische Behandlung von Datumsspalten (Jahr, Quartal, Monat, Tag usw.) im **DirectQuery**-Modus nicht unterstützt.
+
 * Um sicherzustellen, dass Abfragen, die an die zugrundeliegende Datenquelle gesendet werden, eine akzeptable Leistung aufweisen, werden für Measures standardmäßig DAX-Einschränkungen angewendet.
+
 * Bei Verwendung von **DirectQuery** können maximal 1 Million Zeilen mit Daten zurückgegeben werden. Dies betrifft nicht Aggregationen oder Berechnungen, die zum Erstellen des mit **DirectQuery** zurückgegebenen Datasets verwendet wurden, sondern nur die zurückgegebenen Zeilen. Sie können beispielsweise 10 Millionen Zeilen mit der Abfrage aggregieren, die für die Datenquelle ausgeführt wird, und die Ergebnisse dieser Aggregation mithilfe von **DirectQuery** präzise an Power BI zurückgeben, solange weniger als 1 Million Zeilen mit Daten an Power BI zurückgegeben werden. Wenn mehr als 1 Million Zeilen von **DirectQuery** zurückgegeben werden, gibt Power BI einen Fehler aus.
 
 ## <a name="important-considerations-when-using-directquery"></a>Wichtige Überlegungen bei der Verwendung von DirectQuery

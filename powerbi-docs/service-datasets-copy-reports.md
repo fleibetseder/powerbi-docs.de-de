@@ -7,19 +7,22 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/03/2019
+ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2db4c23b50071e387913ed79b4d01daeafb928a4
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: af0ffa5a879a2249c34ac73895103dfdf63e4d27
+ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67567385"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69530614"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Kopieren von Berichten aus anderen Arbeitsbereichen (Vorschau)
 
-Wenn Sie in einem Arbeitsbereich oder einer App einen Bericht gefunden haben, der Ihnen gefällt, können Sie eine Kopie davon erstellen und sie in einem anderen Arbeitsbereich speichern. Anschließend können Sie diesen Bericht ändern, Visuals und andere Elemente hinzufügen oder löschen. Sie brauchen sich nicht mit der Erstellung des Datenmodells abzugeben. Das wurde bereits für Sie erstellt. Und es ist viel einfacher, einen vorhandenen Bericht zu ändern, als einen von Grund auf neuen zu erstellen. Jedoch können Sie Ihre Kopie des Berichts nicht vom neuen Arbeitsbereich aus in einer App veröffentlichen. Mehr dazu finden Sie in der Liste der weiteren [Überlegungen und Einschränkungen](service-datasets-across-workspaces.md#considerations-and-limitations) im Artikel „Verwenden von Datasets in mehreren Arbeitsbereichen“.
+Wenn Sie in einem Arbeitsbereich oder einer App einen Bericht gefunden haben, der Ihnen gefällt, können Sie eine Kopie davon erstellen und sie in einem anderen Arbeitsbereich speichern. Anschließend können Sie Ihre Kopie des Berichts ändern und Visuals und andere Elemente hinzufügen oder löschen. Sie brauchen sich nicht mit der Erstellung des Datenmodells abzugeben. Das wurde bereits für Sie erstellt. Und es ist viel einfacher, einen vorhandenen Bericht zu ändern, als einen von Grund auf neuen zu erstellen. Wenn Sie jedoch eine App aus dem neuen Arbeitsbereich erstellen, können Sie Ihre Kopie des Berichts in der App manchmal nicht veröffentlichen. Weitere Informationen finden Sie im Abschnitt [„Überlegungen und Einschränkungen“ im Artikel „Verwenden von Datasets in mehreren Arbeitsbereichen“](service-datasets-across-workspaces.md#considerations-and-limitations).
+
+> [!NOTE]
+> Selbst wenn sich der ursprüngliche Bericht in einem Arbeitsbereich in einer Premium-Kapazität befindet, benötigen Sie eine Pro-Lizenz, um eine Kopie zu erstellen.
 
 ## <a name="save-a-copy-of-a-report"></a>Speichern einer Kopie eines Berichts
 

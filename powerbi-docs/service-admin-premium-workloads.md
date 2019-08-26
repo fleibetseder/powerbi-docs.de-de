@@ -10,26 +10,26 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 04/15/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: c84bebef5589ec391e3640ff3be674b1fb5a0ebd
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 49a1f02e5aa327c2704b6c2d789934a43b760ad0
+ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65564880"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68962029"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurieren von Workloads in einer Premium-Kapazität
 
-In diesem Artikel erfahren Sie, wie Sie Workloads für Power BI Premium-Kapazitäten aktivieren und konfigurieren. Kapazitäten unterstützen standardmäßig nur die Workload für die Ausführung von Power BI-Abfragen. Sie können auch zusätzliche Workloads für **[KI (Cognitive Services)](service-cognitive-services.md)** , **[Dataflows](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)** und **[Paginierte Berichte](paginated-reports-save-to-power-bi-service.md)** aktivieren und konfigurieren.
+In diesem Artikel erfahren Sie, wie Sie Workloads für Power BI Premium-Kapazitäten aktivieren und konfigurieren. Kapazitäten unterstützen standardmäßig nur die Workload für die Ausführung von Power BI-Abfragen. Sie können auch zusätzliche Workloads für **[KI (Cognitive Services)](service-cognitive-services.md)**, **[Dataflows](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)** und **[Paginierte Berichte](paginated-reports-save-to-power-bi-service.md)** aktivieren und konfigurieren.
 
 ## <a name="default-memory-settings"></a>Standardeinstellungen für den Arbeitsspeicher
 
-Abfrageworkloads sind für Ressourcen optimiert und durch Ressourcen beschränkt, die durch Ihre Premium-Kapazitäts-SKU bestimmt werden. Premium-Kapazitäten unterstützen auch zusätzliche Workloads, die Ihre Kapazitätsressourcen nutzen können. Arbeitsspeicher-Standardwerte für diese Workloads basieren auf den Kapazitätsknoten, die für Ihre SKU zur Verfügung stehen. Die Einstellungen für maximalen Arbeitsspeicher sind nicht kumulativ. Für KI und Dataflows wird Arbeitsspeicher dynamisch bis zum angegebenen Maximalwert zugeordnet. Für paginierte Berichte ist die Zuordnung dagegen statisch. 
+Abfrageworkloads sind für Ressourcen optimiert und durch Ressourcen beschränkt, die durch Ihre Premium-Kapazitäts-SKU bestimmt werden. Premium-Kapazitäten unterstützen auch zusätzliche Workloads, die Ihre Kapazitätsressourcen nutzen können. Arbeitsspeicher-Standardwerte für diese Workloads basieren auf den Kapazitätsknoten, die für Ihre SKU zur Verfügung stehen. Die Einstellungen für maximalen Arbeitsspeicher sind nicht kumulativ. Für KI und Dataflows wird Arbeitsspeicher dynamisch bis zum angegebenen Maximalwert zugeordnet. Für paginierte Berichte ist die Zuordnung dagegen statisch.
 
 ### <a name="microsoft-office-skus-for-software-as-a-service-saas-scenarios"></a>Microsoft Office-SKUs für Software-as-a-Service-Szenarios (SaaS)
 
 |                     | EM2                      | EM3                       | P1                      | P2                       | P3                       |
 |---------------------|--------------------------|--------------------------|-------------------------|--------------------------|--------------------------|
-| AI | N/V | N/V | Standardwert 20 % 20 % minimale | 20 % Standard, mindestens 10 % | 20 % Standard, mindestens 5 % |
+| KI | N/V | N/V | 20 % Standard; mindestens 20 % | 20 % Standard, mindestens 10 % | 20 % Standard, mindestens 5 % |
 | Dataflows | N/V |20% Standard; mindestens 12%  | 20 % Standard, mindestens 5 %  | 20% Standard; mindestens 3% | 20 % Standard, mindestens 2 %  |
 | Paginierte Berichte | N/V |N/V | 20 % Standard, mindestens 10 % | 20 % Standard, mindestens 5 % | 20 % Standard, mindestens 2,5 % |
 | | | | | | |
@@ -38,45 +38,56 @@ Abfrageworkloads sind für Ressourcen optimiert und durch Ressourcen beschränkt
 
 |                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
 |-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
-| AI | N/V                      | Standardwert 20 % 100 % minimale                     | Standardwert 20 % 50 % minimale                     | Standardwert 20 % 20 % minimale | 20 % Standard, mindestens 10 % | 20 % Standard, mindestens 5 % |
+| KI | N/V                      | 20 % Standard; mindestens 100 %                     | 20 % Standard; mindestens 50 %                     | 20 % Standard; mindestens 20 % | 20 % Standard, mindestens 10 % | 20 % Standard, mindestens 5 % |
 | Dataflows         | 40% Standard; mindestens 40% | 24% Standard; mindestens 24% | 20% Standard; mindestens 12% | 20 % Standard, mindestens 5 %  | 20% Standard; mindestens 3% | 20 % Standard, mindestens 2 %   |
 | Paginierte Berichte | N/V                      | N/V                      | N/V                     | 20 % Standard, mindestens 10 % | 20 % Standard, mindestens 5 % | 20 % Standard, mindestens 2,5 % |
 | | | | | | |
 
-## <a name="workload-settings"></a>Workload-Einstellungen
+## <a name="workload-settings"></a>Workloadeinstellungen
 
-### <a name="ai-preview"></a>AI (Vorschauversion)
+### <a name="ai-preview"></a>KI (Vorschauversion)
 
-Zusätzlich zu den **Max Memory** festlegen, die KI-Workload hat mit der zusätzlichen Einstellung **Nutzung von Power BI Desktop zulassen**. Der Standardwert ist **aus**. Diese Einstellung ist für die zukünftige Verwendung reserviert und kann nicht in allen Mandanten angezeigt.
+Zusätzlich zur Einstellung **Max. Arbeitsspeicher** verfügt die KI-Workload über die Einstellung **Verwendung über Power BI Desktop zulassen**. Der Standardwert ist **Off** (Deaktiviert). Diese Einstellung ist für die zukünftige Verwendung reserviert und wird möglicherweise nicht auf allen Mandanten angezeigt.
 
-### <a name="datasets-preview"></a>Datasets (Vorschau)
+### <a name="datasets-preview"></a>Datasets (Vorschauversion)
 
-In der Standardeinstellung die Datasets-arbeitsauslastung ist aktiviert und kann nicht deaktiviert werden. Diese arbeitsauslastung enthält, mit der zusätzlichen Einstellung **XMLA-Endpunkt**. Der Standardwert ist **1**, Bedeutung aktiviert. Diese Einstellung gibt an, dass Verbindungen von Clientanwendungen die Mitgliedschaft in Sicherheitsgruppen festlegen, die auf den Arbeitsbereich und das app-Ebenen berücksichtigt. Weitere Informationen finden Sie unter [Herstellen einer Verbindung mit Datasets mit Clientanwendungen und Tools](service-premium-connect-tools.md).
+Standardmäßig ist die Workload für Datasets aktiviert und kann nicht deaktiviert werden. Diese Workload enthält eine zusätzliche Einstellung für den _XMLA-Endpunkt_ und mehrere leistungsbezogene Einstellungen. Mit der Einstellung **XMLA-Endpunkt** wird festgelegt, dass Verbindungen von Clientanwendungen die Sicherheitsgruppenmitgliedschaft berücksichtigen, die auf den Ebenen des Arbeitsbereichs und der Apps festgelegt wird. Weitere Informationen finden Sie unter [Herstellen einer Verbindung zu Datasets mit Clientanwendungen und Tools](service-premium-connect-tools.md).
+
+Die leistungsbezogenen Einstellungen werden in der folgenden Tabelle beschrieben.
+
+| Einstellungsname | Beschreibung | Verwendung |
+|---------------------------------|----------------------------------------|----------------------------------------|
+| **Max Intermediate Row Set Count** (Maximale Anzahl von Zwischenrowsets) | Die maximale Anzahl von Zwischenzeilen, die von DirectQuery zurückgegeben werden. Der Standardwert ist auf 1.000.000 festgelegt. Der zulässige Bereich liegt zwischen 100.000 und 2.147.483.647. | Mit dieser Einstellung schränken Sie die Auswirkungen ressourcenintensiver oder schlecht konzipierter Berichte ein. |
+| **Maximale Größe für Offlinedataset (GB)** | Die maximale Größe des Offlinedatasets im Arbeitsspeicher. Dies ist die komprimierte Größe auf dem Datenträger. Der Standardwert wird durch die SKU festgelegt. Der zulässige Bereich liegt zwischen 0,1 und 10 GB. | Mit dieser Einstellung hindern Sie Ersteller von Berichten daran, ein großes Dataset zu veröffentlichen, das sich negativ auf die Kapazität auswirken könnte. |
+| **Max Result Row Set Count** (Maximale Anzahl von Ergebnisrowsets) | Die maximale Anzahl von Zeilen, die in einer DAX-Abfrage zurückgegeben werden. Der Standardwert ist auf −1 (kein Limit) festgelegt. Der zulässige Bereich liegt zwischen 100.000 und 2.147.483.647. | Mit dieser Einstellung schränken Sie die Auswirkungen ressourcenintensiver oder schlecht konzipierter Berichte ein. |
+| **Query Memory Limit (%)** (Arbeitsspeicherlimit für Abfragen (%)) | Gilt nur für DAX-Measures und-Abfragen. Der Wert wird in Prozent angegeben legt fest, wie viel Arbeitsspeicher maximal während einer Abfrage von temporären Ergebnissen verwendet werden kann. | Mit dieser Einstellung schränken Sie die Auswirkungen ressourcenintensiver oder schlecht konzipierter Berichte ein. |
+| **Query Timeout (seconds)** (Abfragetimeout (Sekunden)) | Eine ganze Zahl, die den Timeout für Abfragen in Sekunden festlegt. Der Standardwert ist 3600 Sekunden (60 Minuten). Null (0) gibt an, dass für Abfragen kein Timeout auftritt. | Mit dieser Einstellung erhalten Sie mehr Kontrolle über zeitintensive Abfragen. |
+|  |  |  |
 
 ### <a name="dataflows"></a>Dataflows
 
-Zusätzlich zu den **Max Memory** festlegen, die Datenflüsse Workload hat mit der zusätzlichen Einstellung **Containergröße**. Mit dieser Einstellung können Sie zur Optimierung der Leistung der Datenfluss-Workload für die Verarbeitung komplexer, Compute-intensiven Datenflüsse.
+Zusätzlich zur Einstellung **Max. Arbeitsspeicher** verfügt die Workload für Dataflows über die Einstellung **Containergröße**. Mit dieser können Sie die Leistung von Workloads für Dataflows optimieren, um komplexere, rechenintensive Dataflows zu verarbeiten.
 
-Wenn Sie einen Datenfluss zu aktualisieren, erzeugt die Datenfluss-arbeitsauslastung einen Container für jede Entität in den Datenfluss. Jeder Container kann Arbeitsspeicher bis zu dem Volume in dauern in der Einstellung für den Container angegeben. Der Standardwert für alle SKUs ist **700 MB**. Möglicherweise möchten diese Einstellung zu ändern, wenn:
+Beim Aktualisieren eines Dataflows erzeugt die Workload für Dataflows einen Container für jede Entität im Dataflow. Die Größe des Containerspeichers wird durch den Wert der Einstellung „Containergröße“ festgelegt. Der Standardwert für alle SKUs ist **700 MB**. Sie sollten diese Einstellung in den folgenden Situationen ändern:
 
-- Datenflüsse aktualisieren sehr lange dauert oder Aktualisierung der Datenfluss schlägt fehl, auf ein Timeout.
-- Datenfluss-Entitäten zu Berechnungsschritte, z. B. einen Join verwenden.  
+- Die Aktualisierung der Dataflows dauert zu lange oder schlägt bei einem Timeout fehl.
+- Dataflowentitäten enthalten Berechnungsschritte wie Joins.  
 
-Es handelt sich um empfohlen, die Sie verwenden die [Kapazitätsmetriken für Power BI Premium](service-admin-premium-monitor-capacity.md) app zum Analysieren der Leistung der Datenfluss-arbeitsauslastung. 
+Es wird empfohlen, die App [Power BI Premium Capacity Metrics](service-admin-premium-monitor-capacity.md) zu verwenden, um die Leistung der Workload für Dataflows zu analysieren. 
 
-In einigen Fällen kann die Containergröße erhöhen Leistung nicht verbessern. Wenn der Datenfluss Daten nur von einer Quelle erhält ohne erhebliche Berechnungen durchgeführt werden, wird nicht wahrscheinlich Ändern der Größe der Container unterstützen. Containergröße erhöhen kann helfen, wenn die Datenfluss-arbeitsauslastung zum Zuweisen von mehr Arbeitsspeicher für die Entität Aktualisierungsvorgänge aktiviert. Wenn mehr Arbeitsspeicher belegt, können sie die Zeit reduzieren, dauert es um stark berechnete Entitäten zu aktualisieren. 
+In einigen Fällen führt das Erhöhen der Containergröße möglicherweise nicht zu einer Verbesserung der Leistung. Wenn z. B. der Dataflow Daten aus einer Quelle ausschließlich abruft, ohne wesentliche Berechnungen durchzuführen, hat eine Anpassung der Containergröße vermutlich keine positiven Auswirkungen. Die Erhöhung der Containergröße kann hilfreich sein, wenn die Workload für Dataflows mehr Speicher für Entitätsaktualisierungen belegen kann. Dadurch kann die Aktualisierungszeit für Entitäten verkürzt werden, für die rechenintensive Vorgänge ausgeführt werden.
 
-Der Wert für die Größe der Container darf den maximalen Arbeitsspeicher für die arbeitsauslastung Datenflüsse nicht überschreiten. Eine P1-Kapazität hat beispielsweise 25GB Arbeitsspeicher. Wenn die Datenfluss-arbeitsauslastung Max Memory (%) festgelegt auf 20 %, Container-Größe (MB) nicht überschreiten 5000. In allen Fällen darf die Größe des Containers die Max Memory, nicht überschreiten, auch wenn Sie einen höheren Wert festlegen. 
+Der Wert für „Containergröße“ darf die maximale Größe des Arbeitsspeichers für die Workload der Dataflows nicht überschreiten. Eine P1-Kapazität verfügt beispielsweise über 25 GB Arbeitsspeicher. Wenn für die Einstellung „Max. Arbeitsspeicher“ ein Wert von 20 % für die Workload der Dataflows festgelegt ist, kann der Wert von „Containergröße“ 5000 MB nicht überschreiten. In keinem Fall kann der Wert von „Containergröße“ den von „Max. Arbeitsspeicher“ überschreiten, und zwar auch dann nicht, wenn Sie einen höheren Wert festlegen.
 
-### <a name="paginated-reports-preview"></a>Paginierte Berichte (Vorschau)
+### <a name="paginated-reports-preview"></a>Paginierte Berichte (Vorschauversion)
 
-Paginierte Berichte können benutzerdefinierten Code ausgeführt wird, beim Rendern eines Berichts an. Beispielsweise kann dynamisch ändern Textfarben basierend auf Inhalte, die zusätzlichen Arbeitsspeicher dauern. Power BI Premium führt paginierte Berichte in einem Bereich innerhalb der Kapazität aus. Die Max Memory angegeben verwendet *davon, ob* die Workload aktiv ist. Wenn das Ändern der Einstellung Max. Serverarbeitsspeicher Standardeinstellung, stellen Sie sicher, dass Sie es mit niedriger festlegen auswirken nicht genug, dass die It negativ auf andere arbeitsauslastungen.
+Mit paginierten Berichten kann benutzerdefinierter Code beim Rendern eines Berichts ausgeführt werden. Das ist beispielsweise sinnvoll, wenn sich die Textfarbe auf Grundlage der Inhalte dynamisch ändert, wodurch zusätzlicher Arbeitsspeicher belegt werden kann. Power BI Premium führt paginierte Berichte in einem Bereich innerhalb der Kapazität aus. Der festgelegte Wert für „Max. Arbeitsspeicher“ wird *unabhängig* davon verwendet, ob die Workload aktiv ist. Wenn Sie für die Einstellung „Max. Arbeitsspeicher“ einen Wert festlegen, der sich von der Standardeinstellung unterscheidet, müssen Sie einen ausreichend niedrigen Wert festlegen, damit dieser sich nicht negativ auf die anderen Workloads auswirkt.
 
-In einigen Fällen kann die arbeitsauslastung für paginierte Berichte nicht mehr verfügbar sind. In diesem Fall die arbeitsauslastung zeigt den Status "Fehler" im Verwaltungsportal, und Benutzer sehen die Timeouts für das Rendern von Berichten. Um dieses Problem zu beheben, deaktivieren Sie die Workload, und klicken Sie dann wieder aktivieren.
+Teilweise kann es vorkommen, dass die Workload für paginierte Berichte nicht verfügbar ist. In diesem Fall zeigt die Workload einen Fehlerstatus im Verwaltungsportal an, und den Benutzern werden Timeouts beim Rendern von Berichten angezeigt. Deaktivieren Sie die Workload, und aktivieren Sie sie dann erneut, um dieses Problem zu beheben.
 
 ## <a name="configure-workloads"></a>Konfigurieren von Workloads
 
-Maximieren Sie die Kapazität der verfügbaren Ressourcen, indem Sie Workloads nur dann ermöglichen, wenn sie verwendet werden. Ändern Sie Arbeitsspeichereinstellungen nur dann, wenn Sie Standardeinstellungen ermittelt haben, die Ihre Anforderungen an Kapazitätsressourcen nicht erfüllen.  
+Maximieren Sie die Kapazität der verfügbaren Ressourcen, indem Sie Workloads nur dann ermöglichen, wenn sie verwendet werden. Ändern Sie Arbeitsspeichereinstellungen und andere Einstellungen nur dann, wenn Sie Standardeinstellungen festgelegt haben, die Ihre Anforderungen an Kapazitätsressourcen nicht erfüllen.
 
 ### <a name="to-configure-workloads-in-the-power-bi-admin-portal"></a>So konfigurieren Sie Workloads im Power BI-Verwaltungsportal
 
@@ -84,10 +95,7 @@ Maximieren Sie die Kapazität der verfügbaren Ressourcen, indem Sie Workloads n
 
 1. Erweitern Sie unter **Weitere Optionen** **Workloads**.
 
-1. Aktivieren Sie mindestens eine Workload, und legen Sie einen Wert für **Maximaler Arbeitsspeicher** fest.   
-
-    
-    ![Aktivieren von Workloads](media/service-admin-premium-workloads/admin-portal-workloads.png)
+1. Aktivieren Sie mindestens eine Workload, und legen Sie einen Wert für **Max. Arbeitsspeicher** und die anderen Einstellungen fest.
 
 1. Klicken Sie auf **Übernehmen**.
 
@@ -101,7 +109,7 @@ Die [Power BI Premium-Kapazitätsmetriken-App](service-admin-premium-monitor-c
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Optimieren der Power BI Premium-Kapazitäten](service-premium-capacity-optimize.md)     
+[Optimieren von Power BI Premium-Kapazitäten](service-premium-capacity-optimize.md)     
 [Self-Service-Datenaufbereitung in Power BI (Vorschau)](service-dataflows-overview.md)   
 [Was sind paginierte Berichte in Power BI Premium? (Vorschau)](paginated-reports-report-builder-power-bi.md)   
 

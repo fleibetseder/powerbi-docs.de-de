@@ -1,103 +1,144 @@
 ---
-title: Im Handumdrehen von einer Excel-Arbeitsmappe zum eindrucksvollen Bericht
-description: Im Handumdrehen von einer Excel-Arbeitsmappe zum eindrucksvollen Bericht
+title: Erstellen von ansprechenden Berichten aus Excel-Arbeitsmappen im Power BI-Dienst
+description: In diesem Artikel wird beschrieben, wie Sie unkompliziert ansprechende Berichte aus einer Excel-Arbeitsmappe erstellen.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/28/2018
+ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: d613085e47477500390ac6111887df89a802ea0b
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: ed4bc9d10e3e1512aba559d77ba8729a39cb8a84
+ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68522876"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68995072"
 ---
-# <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Im Handumdrehen von einer Excel-Arbeitsmappe zum eindrucksvollen Bericht
-Ihre Vorgesetzte möchte bis zum Ende des Arbeitstages von Ihnen einen Bericht über die aktuellen Verkaufszahlen in Verbindung mit den Eindrücken der letzten Kampagne angefertigt bekommen. Die neuesten Daten befinden sich jedoch in verschiedenen Systemen von Drittanbietern und in Dateien auf Ihrem Laptop. Bisher hat es Stunden gedauert, Visualisierungen zu erstellen und einen Bericht zu formatieren. Sie werden langsam unruhig.
+# <a name="from-excel-workbook-to-stunning-report-in-the-power-bi-service"></a>Erstellen von ansprechenden Berichten aus Excel-Arbeitsmappen im Power BI-Dienst
+Ihr Vorgesetzter möchte bis zum Ende des Arbeitstages von Ihnen einen Bericht über die aktuellen Verkaufszahlen in Verbindung mit den Eindrücken der letzten Kampagne angefertigt bekommen. Die neuesten Daten befinden sich jedoch auf verschiedenen Systemen von Drittanbietern und in Dateien auf Ihrem Laptop. In der Vergangenheit hat es Stunden gedauert, Visuals zu erstellen und einen Bericht zu formatieren, weshalb Sie nervös werden.
 
 Kein Problem. Mit Power BI können Sie in kürzester Zeit einen beeindruckenden Bericht erstellen.
 
-In diesem Beispiel laden eine Excel-Datei von einem lokalen System hoch, erstellen einen neuen Bericht und geben diesen für Kollegen frei – alles innerhalb von Power BI.
+In diesem Beispiel laden Sie eine Excel-Datei von einem lokalen System hoch, erstellen einen neuen Bericht und geben diesen für Kollegen frei. Alle diese Schritte führen Sie in Power BI aus.
 
 ## <a name="prepare-your-data"></a>Bereiten Sie die Daten vor.
-Nehmen wir eine einfache Excel-Datei als Beispiel. Bevor Sie Ihre Excel-Datei in Power BI laden können, müssen Sie Ihre Daten in einer flachen Tabelle anordnen. Dies bedeutet, dass jede Spalte den gleichen Datentyp enthält – z. B. Text, Datum, Anzahl oder Währung. Sie sollten eine Kopfzeile haben, es sollte jedoch keine Spalte oder Zeile vorhanden sein, die Gesamtsummen anzeigt.
+Nehmen wir eine einfache Excel-Datei als Beispiel. 
 
-![In Excel organisierte Daten](media/service-from-excel-to-stunning-report/pbi_excel_file.png)
+1. Bevor Sie Ihre Excel-Datei in Power BI laden können, müssen Sie Ihre Daten in einer flachen Tabelle anordnen. In dieser enthält jede Spalte den gleichen Datentyp, z. B. für einen Text, ein Datum, eine Zahl oder eine Währung. Die Tabelle sollte eine Kopfzeile, jedoch keine Spalten oder Zeilen enthalten, in denen Summen angezeigt werden.
 
-Formatieren Sie dann die Daten als Tabelle. Wählen Sie in Excel auf der Registerkarte „Start“ in der Gruppe „Formatvorlagen“ die Option **Als Tabelle formatieren**aus. Wählen Sie ein Tabellenformat, das auf das Arbeitsblatt angewendet wird. Das Excel-Arbeitsblatt kann jetzt in Power BI geladen werden.
+   ![In Excel strukturierte Daten](media/service-from-excel-to-stunning-report/pbi_excel_file.png)
 
-![Als Tabelle formatierte Daten](media/service-from-excel-to-stunning-report/pbi_excel_table.png)
+2. Formatieren Sie dann die Daten als Tabelle. Klicken Sie in Excel auf der Registerkarte **Start** in der Gruppe **Formatvorlagen** auf **Als Tabelle formatieren**. 
 
-## <a name="upload-your-excel-file-into-power-bi"></a>Laden Sie die Excel-Datei in Power BI hoch.
-Power BI stellt Verbindungen mit vielen Datenquellen her, einschließlich Excel-Dateien auf Ihrem Computer. Melden Sie sich zunächst beim Power BI-Dienst an. Wenn Sie sich noch nicht registriert haben, [können Sie dies kostenlos tun](https://powerbi.com).
+3. Wählen Sie ein Tabellenformat, das auf das Arbeitsblatt angewendet wird. 
 
-Erstellen Sie ein neues Dashboard. Öffnen Sie **Mein Arbeitsbereich**, und wählen Sie das Symbol **+ Erstellen** aus.
+   Das Excel-Arbeitsblatt kann jetzt in Power BI geladen werden.
 
-![Symbol „Erstellen“](media/service-from-excel-to-stunning-report/power-bi-new-dash.png)
+   ![Als Tabelle formatierte Daten](media/service-from-excel-to-stunning-report/pbi_excel_table.png)
 
-Wählen Sie **Dashboard**, geben Sie einen Namen ein, und wählen Sie **Erstellen** aus. Das neue Dashboard wird angezeigt – ohne Daten.
+## <a name="upload-your-excel-file-to-the-power-bi-service"></a>Hochladen der Excel-Datei in den Power BI-Dienst
+Der Power BI-Dienst stellt Verbindungen mit vielen Datenquellen her, einschließlich Excel-Dateien auf Ihrem Computer. 
 
-![Dropdownliste „Erstellen“](media/service-from-excel-to-stunning-report/power-bi-create-dash.png)
+ > [!NOTE] 
+ > Verwenden Sie die [Arbeitsmappe mit den Finanzbeispieldaten](sample-financial-download.md), um die verbleibenden Schritte in diesem Tutorial auszuführen.
 
-Wählen Sie unten im linken Navigationsbereich **Daten abrufen** aus. Wählen Sie auf der Seite „Daten abrufen“ unter „Mit Daten verbinden“ im Feld „Dateien“ die Option **Abrufen**aus.
+1. Melden Sie sich zuerst beim Power BI-Dienst an. Wenn Sie sich noch nicht registriert haben, [können Sie dies kostenlos tun](https://powerbi.com).
 
-![Abrufen von Daten aus Dateien](media/service-from-excel-to-stunning-report/pbi_get_files.png)
+2. Erstellen Sie ein neues Dashboard. Öffnen Sie **Mein Arbeitsbereich**, und klicken Sie auf **+ Erstellen**.
 
-Wählen Sie auf der Seite „Dateien“ die Option **Lokale Datei**aus. Navigieren Sie zu der Excel-Arbeitsmappendatei auf Ihrem Computer, und wählen Sie sie zum Laden in Power BI aus. Wählen Sie **Importieren** aus.
+   ![Symbol „Erstellen“](media/service-from-excel-to-stunning-report/power-bi-new-dash.png)
 
-> **HINWEIS**: Um dem Tutorial weiter folgen zu können, verwenden Sie die [Arbeitsmappe mit Finanzbeispiel](sample-financial-download.md).
-> 
-> 
+3. Klicken Sie auf **Dashboard**, geben Sie einen Namen ein, und klicken Sie auf **Erstellen**. 
 
-![Fenster „Daten abrufen > Dateien“](media/service-from-excel-to-stunning-report/pbi_local_file.png)
+   Das neue Dashboard wird angezeigt. Es enthält noch keine Daten.
+
+   ![Dropdownliste „Erstellen“](media/service-from-excel-to-stunning-report/power-bi-create-dash.png)
+
+4. Klicken Sie unten im linken Navigationsbereich auf **Daten abrufen**. 
+
+5. Klicken Sie auf der Seite **Daten abrufen** im Feld **Dateien** unter **Neuen Inhalt erstellen** auf **Abrufen**.
+
+   ![Abrufen von Daten aus Dateien](media/service-from-excel-to-stunning-report/pbi_get_files.png)
+
+6. Klicken Sie auf der Seite **Dateien** auf **Lokale Datei**. Navigieren Sie zur Excel-Arbeitsmappendatei auf Ihrem Computer, und klicken Sie auf **Öffnen**, um sie in den Power BI-Dienst zu laden. 
+
+   ![Fenster „Daten abrufen > Dateien“](media/service-from-excel-to-stunning-report/pbi_local_file.png)
+
+7. Klicken Sie auf der Seite **Lokale Datei** auf **Importieren**.
+
 
 ## <a name="build-your-report"></a>Erstellen Sie den Bericht.
-Nachdem Power BI Ihre Excel-Datei importiert hat, können Sie mit dem Erstellen des Berichts beginnen. Wenn die Meldung **Ihr Dataset steht bereit** angezeigt wird, wählen Sie **Dataset anzeigen** aus.  Power BI wird in der Bearbeitungsansicht geöffnet und zeigt den Berichtszeichenbereich an. Auf der rechten Seite werden die Bereiche „Visualisierungen“, „Filter“ und „Felder“ angezeigt.
+Nachdem die Excel-Datei vom Power BI-Dienst importiert wurde, können Sie mit der Erstellung des Berichts beginnen. 
 
-Beachten Sie, dass die Daten der Excel-Arbeitsmappe im Bereich „Felder“ angezeigt werden. Unter dem Namen der Tabelle listet Power BI die Spaltenüberschriften als einzelne Felder auf.
+1. Wenn die Meldung **Ihr Dataset steht bereit** angezeigt wird, wählen Sie **Dataset anzeigen** aus.  
 
-![Excel-Daten im Bereich „Felder“](media/service-from-excel-to-stunning-report/pbi_report_fields.png)
+   Power BI wird in der Bearbeitungsansicht geöffnet und zeigt den Berichtszeichenbereich an. Auf der rechten Seite werden die Bereiche **Visualisierungen**, **Filter** und **Felder** angezeigt. Beachten Sie, dass die Tabellendaten der Excel-Arbeitsmappe im Bereich **Felder** angezeigt werden. Unter dem Namen der Tabelle listet Power BI die Spaltenüberschriften als einzelne Felder auf.
 
-Nun können Sie Visualisierungen erstellen. Ihr Vorgesetzter möchte den Gewinn über die Zeit sehen. Ziehen Sie im Bereich „Felder“ den **Gewinn** auf den Zeichenbereich des Berichts. Power BI stellt standardmäßig ein Balkendiagramm dar. Ziehen Sie jetzt das **Datum** auf den Zeichenbereich des Berichts. Power BI aktualisiert das Balkendiagramm, um Gewinne nach Datum anzuzeigen.
+   ![Excel-Daten im Bereich „Felder“](media/service-from-excel-to-stunning-report/pbi_report_fields.png)
 
-![Säulendiagramm im Berichts-Editor](media/service-from-excel-to-stunning-report/pbi_report_pin-new.png)
+2. Nun können Sie Visualisierungen erstellen. Angenommen, Ihr Vorgesetzter möchte sich die Gewinne in einem bestimmten Zeitraum ansehen. Ziehen Sie im Bereich **Felder** das Element **Gewinn** auf den Zeichenbereich des Berichts. 
 
-> **TIPP**: Wenn das Diagramm nicht wie erwartet aussieht, überprüfen Sie die Aggregationen. Klicken Sie beispielsweise im Bereich **Wert** mit der rechten Maustaste auf das Feld, das Sie gerade hinzugefügt haben, und stellen Sie sicher, dass die Daten auf die von Ihnen gewünschte Weise aggregiert werden.  In diesem Beispiel verwenden wir **Summe**.
-> 
-> 
+   In Power BI wird standardmäßig ein Balkendiagramm angezeigt. 
 
-Ihre Vorgesetzte möchte wissen, welche Länder die meisten Gewinne erzeugen. Beeindrucken Sie sie mit einer Kartenvisualisierung. Wählen Sie einen leeren Bereich im Zeichenbereich aus, und ziehen Sie die Felder **Land** und **Profit** einfach aus dem Felderbereich herüber. Power BI erstellt eine Kartenvisualisierung mit Blasendiagramm, die den relativen Gewinn jedes Standorts darstellt.
+3. Ziehen Sie jetzt **Datum** auf den Zeichenbereich des Berichts. 
 
-![Kartenvisual im Berichts-Editor](media/service-from-excel-to-stunning-report/pbi_report_map-new.png)
+   Power BI aktualisiert das Balkendiagramm, um Gewinne nach Datum anzuzeigen.
 
-Wie sieht es mit der Anzeige einer Visualisierung der Verkäufe nach Produkt- und Marktsegment aus? Kein Problem. Aktivieren Sie im Bereich „Felder“ die Kontrollkästchen neben den Feldern „Verkäufe“, „Produkt“ und „Segment“. Power BI erstellt sofort ein Balkendiagramm. Ändern Sie den Typ des Diagramms durch Auswahl eines der Symbole im Menü „Visualisierungen“. Ändern Sie ihn z. B. in ein gestapeltes Balkendiagramm.  Wählen Sie zum Sortieren des Diagramms die Auslassungspunkte (...) und dann **Sortieren nach** aus.
+   ![Säulendiagramm im Berichts-Editor](media/service-from-excel-to-stunning-report/pbi_report_pin-new.png)
 
-![Stapelsäulendiagramm im Berichts-Editor](media/service-from-excel-to-stunning-report/pbi_barchart-new.png)
+   > [!TIP]
+   > Wenn das Diagramm nicht wie erwartet aussieht, überprüfen Sie die Aggregationen. Klicken Sie beispielsweise im Bereich **Wert** mit der rechten Maustaste auf das Feld, das Sie gerade hinzugefügt haben, und stellen Sie sicher, dass die Daten auf die von Ihnen gewünschte Weise aggregiert werden. In diesem Beispiel verwenden wir **Summe**.
+   > 
 
-Heften Sie alle Visualisierungen an Ihr Dashboard. Jetzt können Sie sie mit Ihren Kollegen gemeinsam nutzen.
+Ihre Vorgesetzte möchte wissen, welche Länder die meisten Gewinne erzeugen. Beeindrucken Sie sie mit einer Kartenvisualisierung. 
 
-![Dashboard mit drei angehefteten Visuals](media/service-from-excel-to-stunning-report/pbi_report.png)
+1. Klicken Sie auf eine leere Fläche im Zeichenbereich Ihres Berichts. 
+
+2. Ziehen Sie aus dem Bereich **Felder** die Elemente **Land** und **Gewinn** auf den Zeichenbereich Ihres Berichts.
+
+   Power BI erstellt eine Kartenvisualisierung mit Blasendiagramm, die den relativen Gewinn jedes Standorts darstellt.
+
+   ![Kartenvisual im Berichts-Editor](media/service-from-excel-to-stunning-report/pbi_report_map-new.png)
+
+Wie sieht es mit der Anzeige einer Visualisierung der Verkäufe nach Produkt- und Marktsegment aus? Kein Problem. 
+
+1. Wählen Sie im Bereich **Felder** die Elemente **Verkäufe**, **Produkt** und **Segment** aus. 
+   
+   Power BI erstellt sofort ein Balkendiagramm. 
+
+2. Klicken Sie auf eines der Symbole im Menü **Visualisierungen**, um den Typ des Diagramms zu ändern. Ändern Sie ihn z. B. in **Gestapeltes Säulendiagramm**. 
+
+3. Klicken Sie zum Sortieren des Diagramms auf die Auslassungspunkte (...) und dann auf **Sortieren nach**.
+
+   ![Gestapeltes Säulendiagramm im Berichts-Editor](media/service-from-excel-to-stunning-report/pbi_barchart-new.png)
+
+Heften Sie alle Visuals Ihrem Dashboard an. Dieses können Sie jetzt für Ihre Kollegen freigeben.
+
+   ![Dashboard mit den drei angehefteten Visuals](media/service-from-excel-to-stunning-report/pbi_report.png)
 
 ## <a name="share-your-dashboard"></a>Geben Sie das Dashboard frei.
-Sie möchten Ihr Dashboard für Ihre Vorgesetzte, Paula, freigeben. Sie können Ihr Dashboard und den zugrunde liegenden Bericht für alle Kollegen freigeben, die über ein Power BI-Konto verfügen. Sie können mit dem Bericht interagieren, jedoch keine Änderungen speichern.
+Angenommen, Sie möchten Ihr Dashboard für Ihren Vorgesetzten freigeben. Sie können Ihr Dashboard und den zugrunde liegenden Bericht für alle Kollegen freigeben, die über ein Power BI-Konto verfügen. Diese können mit Ihrem Bericht interagieren, jedoch keine Änderungen speichern.
 
-Zum Freigeben des Berichts wählen Sie am oberen Rand des Dashboards die Option **Freigeben**aus.
+1. Zum Freigeben des Berichts wählen Sie am oberen Rand des Dashboards die Option **Freigeben**aus.
 
-![Symbol „Freigeben“](media/service-from-excel-to-stunning-report/power-bi-share.png)
+   ![Symbol „Freigeben“](media/service-from-excel-to-stunning-report/power-bi-share.png)
 
-Power BI zeigt die Seite „Dashboard freigeben“ an. Geben Sie im oberen Bereich die E-Mail-Adressen der Empfänger ein. Fügen Sie eine Nachricht im Feld darunter hinzu. Um den Empfängern die Freigabe Ihres Dashboards für Dritte zu ermöglichen, wählen Sie **Empfängern das Freigeben Ihres Dashboards erlauben**aus. Wählen Sie **Freigeben**aus.
+   In Power BI wird die Seite **Dashboard freigeben** angezeigt. 
 
-![Fenster „Dashboard freigeben“](media/service-from-excel-to-stunning-report/power-bi-share-dash-new.png)
+2. Geben Sie im Feld **E-Mail-Adresse eingeben** die E-Mail-Adressen der Empfänger ein, und fügen Sie eine Nachricht in das Feld darunter ein. 
 
-Nächste Schritte
+3. Um den Empfängern die Freigabe Ihres Dashboards für Dritte zu ermöglichen, wählen Sie **Empfängern das Freigeben Ihres Dashboards erlauben**aus. Wählen Sie **Freigeben**aus.
 
-* [Erste Schritte mit dem Power BI-Dienst](service-get-started.md)
+   ![Fenster „Dashboard freigeben“](media/service-from-excel-to-stunning-report/power-bi-share-dash-new.png)
+
+## <a name="next-steps"></a>Nächste Schritte
+
+* [Erste Schritte mit Power BI](service-get-started.md)
 * [Erste Schritte mit Power BI Desktop](desktop-getting-started.md)
 * [Grundlegende Konzepte für Designer im Power BI-Dienst](service-basic-concepts.md)
-* Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/).
 

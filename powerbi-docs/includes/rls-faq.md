@@ -1,14 +1,14 @@
 ---
-ms.openlocfilehash: b05b5b0b5212f39b9b47cb63e2fc8522fff2f8e3
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0592cb7ef076f8094aca565d955cc238b2181068
+ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61193807"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69560950"
 ---
 ## <a name="faq"></a>HÄUFIG GESTELLTE FRAGEN
-**Frage:** Was geschieht, wenn ich zuvor Rollen und Regeln für ein Dataset in Power BI-Dienst erstellt habe? Werden sie weiterhin funktionieren, wenn ich sie so belasse?  
-**Antwort:** Nein. Visualisierungen werden nicht ordnungsgemäß gerendert. Sie müssen die Rollen und Regeln in Power BI Desktop neu erstellen und anschließend im Power BI-Dienst veröffentlichen.
+**Frage:** Was passiert, wenn ich im Power BI-Dienst bereits Rollen und Regeln für ein Dataset erstellt habe? Werden sie weiterhin funktionieren, wenn ich sie so belasse?  
+**Antwort:** Nein. Visuals werden nicht richtig gerendert. Sie müssen die Rollen und Regeln in Power BI Desktop neu erstellen und anschließend im Power BI-Dienst veröffentlichen.
 
 **Frage:** Kann ich solche Rollen für Analysis Services-Datenquellen erstellen?  
 **Antwort:** Das ist möglich, wenn Sie die Daten in Power BI Desktop importiert haben. Wenn Sie eine Liveverbindung verwenden, werden Sie RLS nicht im Power BI-Dienst konfigurieren können. Dies wird im lokalen Analysis Services-Modell definiert.

@@ -8,43 +8,76 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 57f95a35ff12d546d4fd03202d14212e0df9c78e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: e2a970ecbf7b341d4feaba4e90a862841ba8bb17
+ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513643"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69560931"
 ---
-# <a name="using-r-in-query-editor"></a>Verwenden von R im Abfrage-Editor
-Sie können **R**, eine häufig von Statistikern, Business Analysten und Datenanalysten verwendete Programmiersprache, im **Abfrage-Editor** von Power BI Desktop verwenden. Dank der Integration von R in den **Abfrage-Editor** können Sie mithilfe von R Daten bereinigen, erweiterte Datenstrukturierung und Analysen in Datasets ausführen, einschließlich der Ergänzung fehlender Daten, Prognosen und Clustering, um nur einige der Möglichkeiten zu nennen. **R** ist eine leistungsfähige Sprache, die im **Abfrage-Editor** zum Erstellen des Datenmodells und Erzeugen von Berichten verwendet werden kann.
+# <a name="use-r-in-query-editor"></a>Verwenden von R im Abfrage-Editor
 
-## <a name="installing-r"></a>Installieren von R
-Damit Sie **R** im **Abfrage-Editor** von Power BI Desktop verwenden können, müssen Sie **R** auf dem lokalen Computer installieren. **R** können Sie an vielen Stellen im Internet kostenlos herunterladen und installieren, u.a. von der [Revolution R Open-Downloadseite](https://mran.revolutionanalytics.com/download/) und aus dem [CRAN-Repository](https://cran.r-project.org/bin/windows/base/).
+[**R**](https://mran.microsoft.com/documents/what-is-r) ist eine leistungsfähige Programmiersprache, die von vielen Statistikern, Data Scientists und Data Analysts verwendet wird. Mit **R** können Sie im **Abfrage-Editor** von Power BI Desktop folgende Aufgaben durchführen:
 
-## <a name="using-r-in-query-editor"></a>Verwenden von R im Abfrage-Editor
-Um die Verwendung von **R** im **Abfrage-Editor** zu veranschaulichen, wird dieses Beispiel aus einem Aktiendataset verwendet. Dieses basiert auf einer CSV-Datei, die Sie [hier herunterladen](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv) können, um die Vorgehensweise nachzuvollziehen. Dieses Beispiel umfasst die folgenden Schritte:
+* Vorbereiten von Datenmodellen
 
-1. Laden Sie zunächst die Daten in **Power BI Desktop**. Laden Sie in diesem Beispiel die Datei *EuStockMarkets_NA.csv*, und wählen Sie in **Power BI Desktop** aus dem Menüband **Home** die Option **Daten abrufen > CSV** aus.
+* Erstellen von Berichten
+
+* Bereinigen von Daten, Strukturieren von Daten mit modernen Methoden und Analysieren von Datasets, was auch die Vervollständigung fehlender Daten, Vorhersagen, Clustering und vieles mehr einschließt  
+
+## <a name="install-r"></a>Installieren von R
+
+Sie können **R** kostenlos über die [Downloadseite von Revolution Open](https://mran.revolutionanalytics.com/download/) und aus dem [CRAN-Repository](https://cran.r-project.org/bin/windows/base/) herunterladen.
+
+### <a name="install-mice"></a>Installieren von „mice“
+
+Die [**mice**-Bibliothek](https://www.rdocumentation.org/packages/mice/versions/3.5.0/topics/mice) muss in Ihrer R-Umgebung installiert sein. Ohne **mice** wird der Code im Beispielskript nicht richtig ausgeführt. Im **mice**-Paket ist eine Methode zum Umgang mit fehlenden Daten implementiert.
+
+So installieren Sie **mice**:
+
+1. Starten Sie das Programm „R. exe“ (z. B. unter C:\Programme\Microsoft\R Open\R-3.5.3\bin\R.exe).  
+
+2. Führen Sie den Installationsbefehl aus:
+
+   ``` 
+   >  install.packages('mice') 
+   ```
+
+## <a name="use-r-in-query-editor"></a>Verwenden von R im Abfrage-Editor
+
+Im Folgenden wird demonstriert, wie Sie **R** im **Abfrage-Editor** verwenden können. Dazu nutzen Sie ein Beispieldataset, das sich in einer CSV-Datei befindet und Börsendaten enthält, und führen die folgenden Schritte aus:
+
+1. [Laden Sie die Datei **EuStockMarkets_NA.csv** herunter](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). Merken Sie sich, wo Sie sie gespeichert haben.
+
+1. Laden Sie die Datei in **Power BI Desktop**. Klicken Sie dazu im Menüband **Start** auf **Daten abrufen > Text/CSV**.
 
    ![](media/desktop-r-in-query-editor/r-in-query-editor_1.png)
-2. Wählen Sie die Datei aus und dann **Öffnen** aus. Anschließend wird die CSV-Datei im Dialogfeld **CSV-Datei** angezeigt.
+
+1. Wählen Sie die Datei aus, und klicken Sie dann auf **Öffnen**. Die CSV-Daten werden im Dialogfeld **Text/CSV file** (Text/CSV-Datei) angezeigt.
 
    ![](media/desktop-r-in-query-editor/r-in-query-editor_2.png)
-3. Nachdem die Daten geladen wurden, werden sie in Power BI Desktop im Bereich **Felder** angezeigt.
+
+1. Nachdem die Daten geladen wurden, werden sie im Bereich **Felder** angezeigt.
 
    ![](media/desktop-r-in-query-editor/r-in-query-editor_3.png)
-4. Öffnen Sie den **Abfrage-Editor**, indem Sie in **Power BI Desktop** auf der Registerkarte **Start** die Option **Abfragen bearbeiten** auswählen.
+
+1. Klicken Sie im Menüband **Start** auf **Abfragen bearbeiten**, um den **Abfrage-Editor** zu öffnen.
 
    ![](media/desktop-r-in-query-editor/r-in-query-editor_4.png)
-5. Wählen Sie auf der Registerkarte **Transformieren** die Option **R-Skript ausführen** aus. Der Editor **R-Skript ausführen** wird angezeigt (im nächsten Schritt dargestellt). Beachten Sie, dass in Zeile 15 und 20 Daten fehlen. Dies trifft auch für andere Zeilen zu, die in der folgenden Abbildung nicht dargestellt sind. In den folgenden Schritten wird gezeigt, wie R diese Zeilen für Sie ausfüllt.
+
+1. Klicken Sie im Menüband **Transformieren** auf **R-Skript ausführen**. Der Editor **R-Skript ausführen** wird angezeigt.  
+
+   In den Zeilen 15 und 20 sowie in weiteren Zeilen, die nicht auf dem Screenshot zu sehen sind, fehlen Daten. Die unten aufgeführten Schritte verdeutlichen, wie R diese Zeilen automatisch vervollständigt.
 
    ![](media/desktop-r-in-query-editor/r-in-query-editor_5d.png)
-6. Geben Sie für dieses Beispiel folgenden Skriptcode ein:
+
+1. Geben Sie für dieses Beispiel den unten stehenden Skriptcode ein. Ersetzen Sie „&lt;Your File Path&gt;“ durch den Pfad zu **EuStockMarkets_NA.csv** auf Ihrem lokalen Dateisystem. Dieser könnte z. B. wie folgt aussehen: C:/Benutzer/John Doe/Dokumente/Microsoft/EuStockMarkets_NA.csv.
 
     ```r
+       dataset <- read.csv(file="<Your File Path>/EuStockMarkets_NA.csv", header=TRUE, sep=",")
        library(mice)
        tempData <- mice(dataset,m=1,maxit=50,meth='pmm',seed=100)
        completedData <- complete(tempData,1)
@@ -52,52 +85,55 @@ Um die Verwendung von **R** im **Abfrage-Editor** zu veranschaulichen, wird dies
        output$completedValues <- completedData$"SMI missing values"
     ```
 
-   > [!NOTE]
-   > In der R-Umgebung muss das Paket *mice* installiert sein, damit der oben gezeigte Skriptcode ordnungsgemäß ausgeführt wird. Führen Sie zum Installieren des Pakets „mice“ in der R-Installation den folgenden Befehl aus: |      > install.packages('mice')
-   > 
-   > 
-
-   Wenn der Code in das Dialogfeld **R-Skript ausführen** eingefügt wird, sieht er folgendermaßen aus:
-
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_5b.png)
 7. Nach dem Klicken auf **OK** wird im **Abfrage-Editor** ein Hinweis zum Datenschutz angezeigt.
 
    ![](media/desktop-r-in-query-editor/r-in-query-editor_6.png)
-8. Für die ordnungsgemäße Ausführung von R-Skripts im Power BI-Dienst müssen alle Datenquellen auf *Öffentlich* festgelegt werden. Weitere Informationen zu den Datenschutzeinstellungen und deren Bedeutung finden Sie unter [Sicherheitsstufen](desktop-privacy-levels.md).
+8. Legen Sie für alle Datenquellen die Einstellung **Öffentlich** fest, damit R-Skripts im Power BI-Dienst richtig ausgeführt werden. Weitere Informationen zu den Datenschutzeinstellungen und deren Bedeutung finden Sie unter [Sicherheitsstufen](desktop-privacy-levels.md).
 
    ![](media/desktop-r-in-query-editor/r-in-query-editor_7.png)
 
-   Im Bereich **Felder** wird eine neue Spalte mit dem Namen *completedValues* angezeigt. Beachten Sie, dass einige Datenelemente fehlen, z.B. in Zeile 15 und 18. Im nächsten Abschnitt sehen Sie, wie dies von R behandelt wird.
+   Klicken Sie auf **Speichern**, um das Skript auszuführen. Im Bereich **Felder** wird eine neue Spalte mit dem Namen **completedValues** angezeigt. Beachten Sie, dass einige Datenelemente fehlen, z.B. in Zeile 15 und 18. Im nächsten Abschnitt sehen Sie, wie dies von R behandelt wird.
 
+   Mit einigen wenigen Zeilen R-Skript konnte der **Abfrage-Editor** die fehlenden Werte anhand eines Vorhersagemodells einfügen.
 
-Mit einigen wenigen Zeilen R-Skript konnte der **Abfrage-Editor** die fehlenden Werte anhand eines Vorhersagemodells einfügen.
+## <a name="create-visuals-from-r-script-data"></a>Erstellen von Visuals aus Daten in R-Skripts
 
-## <a name="creating-visuals-from-r-script-data"></a>Erstellen von visuellen Elementen aus R-Skript-Daten
-Wir können jetzt ein visuelles Element erstellen, um zu sehen, wie der R-Skript-Code mithilfe des Pakets *mice* die fehlenden Werte eingefügt hat, wie in der folgenden Abbildung dargestellt:
+Wir können jetzt ein visuelles Element erstellen, um zu sehen, wie der R-Skript-Code mithilfe des Pakets **mice** die fehlenden Werte eingefügt hat, wie in der folgenden Abbildung dargestellt:
 
 ![](media/desktop-r-in-query-editor/r-in-query-editor_8a.png)
 
-Wenn das visuelle Element und alle weiteren visuellen Elemente, die Sie möglicherweise mit **Power BI Desktop** erstellen möchten, vollständig erstellt wurden, können Sie die **Power BI Desktop**-Datei (eine PBIX-Datei) speichern und anschließend das Datenmodell, einschließlich der in ihm enthaltenen R-Skripts, im Power BI-Dienst verwenden.
+Sie können die vollständigen Visuals in einer **Power BI Desktop**-Datei im PBIX-Format speichern und das Datenmodell sowie die zugehörigen R-Skripts im Power BI-Dienst verwenden.
 
 > [!NOTE]
-> Möchten Sie eine fertige PBIX-Datei nach Abschluss dieser Schritte sehen? Dann können Sie die vollständige **Power BI Desktop**-Datei, die in diesen Beispielen verwendet wurde, [hier](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/Complete%20Values%20with%20R%20in%20PQ.pbix) herunterladen.
+> Sie können eine [PBIX-Datei herunterladen](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/Complete%20Values%20with%20R%20in%20PQ.pbix), in der diese Schritte bereits ausgeführt wurden.
 
-Nachdem Sie die PBIX-Datei in den Power BI-Dienst hochgeladen haben, sind einige zusätzliche Schritte erforderlich, um die Datenaktualisierung (im Dienst) und das Aktualisieren der visuellen Elemente im Dienst zu aktivieren (zum Aktualisieren der visuellen Elemente erfordern die Daten Zugriff auf R). Die zusätzlichen Schritte lauten wie folgt:
+Nachdem Sie die PBIX-Datei in den Power BI-Dienst hochgeladen haben, müssen Sie zusätzliche Schritte ausführen, um die Aktualisierung der Dienstdaten und die aktualisierten Visuals zu aktivieren:  
 
-* **Aktivieren geplanter Aktualisierungen für das Dataset** – Informationen zum Aktivieren geplanter Aktualisierungen für die Arbeitsmappe, die das Dataset mit R-Skripts enthält, finden Sie unter [Konfigurieren geplanter Aktualisierungen](refresh-scheduled-refresh.md). Dort finden Sie auch Informationen über **Personal Gateway**.
-* **Installieren von Personal Gateway** – Auf dem Computer, auf dem sich die Datei befindet und auf dem R installiert ist, muss **Personal Gateway** installiert sein. Der Power BI-Dienst benötigt Zugriff auf die Arbeitsmappe und muss alle aktualisierten visuellen Elemente erneut rendern. Weitere Informationen zum [Installieren und Konfigurieren von Personal Gateway](service-gateway-personal-mode.md)
+* **Aktivieren geplanter Aktualisierungen für das Dataset:** Informationen zum Aktivieren geplanter Aktualisierungen für die Arbeitsmappe, die das Dataset mit R-Skripts enthält, finden Sie unter [Konfigurieren geplanter Aktualisierungen](refresh-scheduled-refresh.md). Dort finden Sie auch Informationen zu **persönlichen Gateways**.
+
+* **Installieren des persönlichen Gateways:** Auf dem Computer, auf dem sich die Datei und **R** befinden, muss ein **persönliches Gateway** installiert sein. Der Power BI-Dienst greift auf diese Arbeitsmappe zu und rendert alle aktualisierten Visuals neu. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von persönlichen Gateways](service-gateway-personal-mode.md).
 
 ## <a name="limitations"></a>Einschränkungen
+
 Für Abfragen, die im **Abfrage-Editor** erstellte R-Skripts enthalten, gelten einige Einschränkungen:
 
-* Alle R-Datenquelleneinstellungen müssen auf *Öffentlich* festgelegt sein, und alle anderen Schritte einer im **Abfrage-Editor** erstellten Abfrage müssen ebenfalls öffentlich sein. Um zu den Datenquelleneinstellungen zu gelangen, wählen Sie in **Power BI Desktop** die Option **Datei > Optionen und Einstellungen > Datenquelleneinstellungen** aus.
+* Für alle R-Datenquellen muss die Einstellung **Öffentlich** festgelegt werden. Dasselbe gilt auch für alle anderen Schritte einer Abfrage im **Abfrage-Editor**. Klicken Sie in **Power BI Desktop** auf **Datei > Optionen und Einstellungen > Datenquelleneinstellungen**.
 
   ![](media/desktop-r-in-query-editor/r-in-query-editor_9.png)
 
-  Wählen Sie im Dialogfeld **Datenquelleneinstellungen** die Datenquelle(n) aus. Wählen Sie anschließend **Berechtigungen bearbeiten** aus, und stellen Sie sicher, dass die **Datenschutzebene** auf *Öffentlich* festgelegt ist.
+  Wählen Sie im Dialogfeld **Datenquelleneinstellungen** die Datenquellen aus, und klicken Sie dann auf **Berechtigungen bearbeiten...** .  Legen Sie für **Sicherheitsstufe** die Einstellung **Öffentlich** fest.
 
   ![](media/desktop-r-in-query-editor/r-in-query-editor_10.png)    
-* Um geplante Aktualisierungen der visuellen R-Elemente oder des Datasets zu ermöglichen, müssen Sie **Geplante Aktualisierung** aktivieren, und auf dem Computer, auf dem sich die Arbeitsmappe und die R-Installation befinden, muss **Personal Gateway** installiert sein. Weitere Informationen zu beiden Features finden Sie im vorherigen Abschnitt dieses Artikels, der Links zu weiteren Informationen über jedes dieser Features enthält.
+* Wenn Sie geplante Aktualisierungen der R-Visuals oder des Datasets zulassen möchten, müssen Sie **Geplante Aktualisierung** aktivieren. Auf dem Computer, auf dem sich die Arbeitsmappe und die **R**-Installation befinden, muss außerdem ein **persönliches Gateway** installiert sein. Weitere Informationen zu beiden Features finden Sie im vorherigen Abschnitt dieses Artikels, der Links zu weiteren Informationen über jedes dieser Features enthält.
 
 R und benutzerdefinierte Abfragen bieten Ihnen unzählige Möglichkeiten – Sie können Daten analysieren und genau so strukturieren, wie sie dargestellt werden sollen.
 
+## <a name="next-steps"></a>Nächste Schritte
+
+* [Einführung in R](https://mran.microsoft.com/documents/what-is-r) 
+
+* [Ausführen von R-Skripts in Power BI Desktop](desktop-r-scripts.md) 
+
+* [Verwenden einer externen R-IDE mit Power BI](desktop-r-ide.md) 
+
+* [R-Pakete im Power BI-Dienst](service-r-packages-support.md)

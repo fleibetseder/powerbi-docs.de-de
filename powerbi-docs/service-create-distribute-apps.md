@@ -6,23 +6,23 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: eccda071b6c6abc92640024c3587bafa71038dee
-ms.sourcegitcommit: c122c1a8c9f502a78ccecd32d2708ab2342409f0
+ms.openlocfilehash: ed3a65e25694c23e1852a554742e0f8a6e6ff668
+ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66826615"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69530587"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Veröffentlichen von Apps in Power BI
 
-In Power BI können Sie offiziellen verpackten Inhalt erstellen und dann als *App* an eine breite Zielgruppe verteilen. Sie können Apps in *App-Arbeitsbereichen* erstellen, in denen Sie mit Ihren Kollegen zusammen an Power BI-Inhalten arbeiten können. Anschließend können Sie die fertigen Apps für große Personengruppen in Ihrer Organisation veröffentlichen. 
+In Power BI können Sie offiziellen verpackten Inhalt erstellen und dann als *App* an eine breite Zielgruppe verteilen. Sie können Apps in *Arbeitsbereichen* erstellen, in denen Sie mit Ihren Kollegen zusammen an Power BI-Inhalten arbeiten können. Anschließend können Sie die fertigen Apps für große Personengruppen in Ihrer Organisation veröffentlichen. 
 
 ![Power BI-Apps](media/service-create-distribute-apps/power-bi-new-apps.png)
 
-Ihre Geschäftskunden benötigen für den Betrieb ihres Unternehmens häufig mehrere Power BI-Dashboards und -Berichte. Mit Power BI-Apps können Sie Sammlungen von Dashboards und Berichten erstellen und diese Apps in Ihrer gesamten Organisation oder für bestimmte Personen oder Gruppen veröffentlichen. Apps vereinfachen das Verwalten von Berechtigungen für derartige Sammlungen für Berichtersteller und Administratoren.
+Ihre Geschäftskunden benötigen für den Betrieb ihres Unternehmens häufig mehrere Power BI-Dashboards und -Berichte. Mit Power BI-Apps können Sie Sammlungen von Dashboards und Berichten erstellen und diese Sammlungen als Apps in Ihrer gesamten Organisation oder für bestimmte Personen oder Gruppen veröffentlichen. Apps vereinfachen das Verwalten von Berechtigungen für derartige Sammlungen für Berichtersteller und Administratoren.
 
 Geschäftskunden erhalten Ihre Apps mit unterschiedlichen Methoden:
 
@@ -30,13 +30,13 @@ Geschäftskunden erhalten Ihre Apps mit unterschiedlichen Methoden:
 - Sie können Ihnen einen direkten Link senden.
 - Sie können sie automatisch in den Power BI-Konten Ihrer Kollegen installieren, wenn Ihr Power BI-Administrator Ihnen die Berechtigung dazu erteilt.
 
-Sie können die App mit einer eigenen integrierten Navigation erstellen, sodass Ihre Benutzer mühelos den Weg zu Ihren Inhalten finden. Den Inhalt der App können sie nicht ändern. Sie können mit ihr im Power BI-Dienst oder in einer der mobilen Apps interagieren, indem sie die Daten selbst filtern, hervorheben und sortieren. Sie erhalten Updates automatisch, und Sie können steuern, wie oft die Daten aktualisiert werden. Erfahren Sie mehr über die [Nutzung von Apps durch Geschäftskunden](consumer/end-user-apps.md).
+Sie können die App mit einer eigenen integrierten Navigation erstellen, sodass Ihre Benutzer mühelos den Weg zu Ihren Inhalten finden. Den Inhalt der App können sie nicht ändern. Sie können mit ihr im Power BI-Dienst oder in einer der mobilen Apps interagieren, indem sie die Daten selbst filtern, hervorheben und sortieren. Sie erhalten Updates automatisch, und Sie können steuern, wie oft die Daten aktualisiert werden. Sie können ihnen auch Erstellungsberechtigungen erteilen, damit sie eine Verbindung mit den zugrunde liegenden Datasets herstellen und Kopien der Berichte in der App erstellen können. Weitere Informationen zur [Erstellungsberechtigung](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
 
 ## <a name="licenses-for-apps"></a>Lizenzen für Apps
 Zum Erstellen oder Aktualisieren einer App benötigen Sie eine Power BI Pro-Lizenz. App-*Benutzern* stehen zwei Optionen zur Verfügung.
 
-* Option 1: Alle Geschäftsbenutzer benötigen **Power BI Pro**-Lizenzen, um Ihre App anzeigen zu können. 
-* Option 2: Benutzer von Power BI Free in Ihrer Organisation können App-Inhalte anzeigen, wenn sich Ihr App-Arbeitsbereich in einer Power BI Premium-Kapazität befindet. Details finden Sie unter [Was ist Power BI Premium?](service-premium.md).
+* **Option 1:** Der Arbeitsbereich für diese App befindet sich *nicht* in einer Power BI Premium-Kapazität: Alle Geschäftsbenutzer benötigen Power BI Pro-Lizenzen, um sich Ihre App anzeigen zu lassen. 
+* **Option 2:** Der Arbeitsbereich für diese App *befindet sich* in einer Power BI Premium-Kapazität: Geschäftsbenutzer ohne Power BI Pro-Lizenzen in Ihrer Organisation können sich App-Inhalte anzeigen lassen. Diese Personen können die Berichte allerdings nicht kopieren oder Berichte mithilfe der zugrunde liegenden Datasets erstellen. Details finden Sie unter [Was ist Power BI Premium?](service-premium.md).
 
 ## <a name="publish-your-app"></a>Veröffentlichen der App
 Wenn die Dashboards und Berichte in Ihrem Arbeitsbereich bereit sind, wählen Sie aus, welche Dashboards und Berichte Sie veröffentlichen möchten. Anschließend veröffentlichen Sie diese als App. 
@@ -57,21 +57,19 @@ Wenn die Dashboards und Berichte in Ihrem Arbeitsbereich bereit sind, wählen Si
    
      ![Erstellen Sie Ihre App](media/service-create-distribute-apps/power-bi-apps-build-your-apps.png)
 
-4. Wählen Sie in der **Navigation** den zu veröffentlichenden Inhalt als Teil der App aus. Dann fügen Sie die App-Navigation hinzu, um den Inhalt in Abschnitten zu organisieren. Weitere Informationen finden Sie in diesem Artikel unter [Entwerfen der Navigation für Ihre App](#design-the-navigation-experience-for-your-app).
+4. Wählen Sie in der **Navigation** den zu veröffentlichenden Inhalt als Teil der App aus. Dann fügen Sie die App-Navigation hinzu, um den Inhalt in Abschnitten zu organisieren. Weitere Informationen finden Sie in diesem Artikel unter [Entwerfen der Navigation für Ihre App](#design-the-navigation-experience).
    
      ![App-Navigation](media/service-create-distribute-apps/power-bi-apps-navigation.png)
 
 5. Entscheiden Sie unter **Berechtigungen**, wer Zugriff auf die App erhält und wie diese Benutzer die App verwenden können. 
     - In [klassischen Arbeitsbereichen](service-create-workspaces.md): alle Benutzer in Ihrer Organisation, bestimmte Personen oder Azure Active Directory (AAD)-Sicherheitsgruppen.
     - In der [Arbeitsbereichen der neuen Oberfläche ](service-create-the-new-workspaces.md): bestimmte Personen, AAD-Sicherheitsgruppen und Verteilerlisten und Office 365-Gruppen. Alle Arbeitsbereichsbenutzer erhalten automatisch Zugriff auf die App für den Arbeitsbereich.
-    - Mithilfe der Erstellungsberechtigung können Sie App-Benutzern das Herstellen einer Verbindung mit den zugrunde liegenden Datasets der App erlauben. Diese Datasets werden in Dataset-Suchoberflächen angezeigt.
-    - Sie können erlauben, dass App-Benutzer eine Kopie von Berichten in dieser App unter „Mein Arbeitsbereich“ erstellen. 
+    - Sie können App-Benutzern eine Erstellungsberechtigung erteilen, damit sie eine Verbindung mit den zugrunde liegenden App-Datasets herstellen können. Die Datasets werden diesen Benutzern angezeigt, wenn sie nach freigegebenen Datasets suchen. Weitere Informationen finden Sie unter [Erteilen einer Benutzerberechtigung zum Herstellen einer Verbindung mit App-Datasets](#allow-users-to-connect-to-datasets).
+    - Benutzer mit der Erstellungsberechtigung können auch über die Berechtigung verfügen, Berichte aus dieser App in einen anderen Arbeitsbereich zu kopieren. Weitere Informationen finden Sie unter [Erteilen einer Benutzerberechtigung zum Kopieren von Berichten in der App](#allow-users-to-copy-reports).
     
     >[!IMPORTANT]
     >Wenn Ihre App auf Datasets aus anderen Arbeitsbereichen basiert, müssen Sie sicherstellen, dass alle App-Benutzer Zugriff auf die zugrunde liegenden Datasets haben.
-> 
->     
-
+    >
 
 6. Sie können die App automatisch für die Empfänger installieren, wenn Ihr Power BI-Administrator diese Einstellung für Sie im Power BI-Verwaltungsportal aktiviert hat. In diesem Artikel erfahren Sie mehr über das [automatische Installieren einer App](#automatically-install-apps-for-end-users).
 
@@ -84,26 +82,26 @@ Wenn die Dashboards und Berichte in Ihrem Arbeitsbereich bereit sind, wählen Si
 Diesen direkten Link können Sie an die Personen senden, für die Sie die App freigeben möchten. Alternativ können diese Personen zu **Mehr Apps aus AppSource herunterladen und kennenlernen** navigieren, um Ihre App auf der Registerkarte „Apps“ zu finden. Erfahren Sie mehr über die [Nutzung von Apps durch Geschäftskunden](consumer/end-user-apps.md).
 
 ## <a name="change-your-published-app"></a>Ändern der veröffentlichten App
-Nachdem Sie Ihre App veröffentlicht haben, möchten Sie sie eventuell ändern oder aktualisieren. Sie lässt sich einfach aktualisieren, wenn Sie Administrator oder Mitglied des neuen App-Arbeitsbereichs sind. 
+Nachdem Sie Ihre App veröffentlicht haben, möchten Sie sie eventuell ändern oder aktualisieren. Sie lässt sich einfach aktualisieren, wenn Sie Administrator oder Mitglied des neuen Arbeitsbereichs sind. 
 
-1. Öffnen Sie den App-Arbeitsbereich, der der App entspricht. 
+1. Öffnen Sie den Arbeitsbereich, der der App entspricht. 
    
      ![Öffnen des Arbeitsbereichs](media/service-create-distribute-apps/power-bi-apps-open-workspace.png)
 
 2. Nehmen Sie alle gewünschten Änderungen an den Dashboards oder Berichten vor.
  
-     Der App-Arbeitsbereich ist der Stagingbereich. Deshalb werden Ihre Änderungen nicht in Echtzeit in der App angezeigt, bis Sie die App erneut veröffentlichen. So können Sie Änderungen vornehmen, ohne dass sich diese auf die veröffentlichten Apps auswirken.  
+     Der Arbeitsbereich ist der Stagingbereich. Ihre Änderungen werden daher nicht in Echtzeit in der App angezeigt, bis Sie die App erneut veröffentlichen. So können Sie Änderungen vornehmen, ohne dass sich diese auf die veröffentlichten Apps auswirken.  
  
     > [!IMPORTANT]
     > Wenn Sie einen Bericht entfernen und die App aktualisieren, verlieren Ihre App-Benutzer alle Anpassungen wie Lesezeichen, Kommentare usw., selbst wenn Sie den Bericht anschließend wieder zur App hinzufügen.  
  
-3. Kehren Sie zur App-Arbeitsbereichsliste zurück, und wählen Sie in der oberen rechten Ecke **App aktualisieren** aus.
+3. Kehren Sie zur Liste der Inhalte im Arbeitsbereich zurück, und klicken Sie oben rechts auf **App aktualisieren**.
    
 1. Aktualisieren Sie bei Bedarf **Setup**, **Navigation** und **Berechtigungen**, und wählen Sie dann **App aktualisieren** aus.
    
 Den Personen, für die Sie die App veröffentlicht haben, wird automatisch die aktualisierte Version der App angezeigt. 
 
-## <a name="design-the-navigation-experience-for-your-app"></a>Entwerfen der Navigation für Ihre App
+## <a name="design-the-navigation-experience"></a>Entwerfen der Navigation
 Mit der Option **Neuer Navigations-Generator** können Sie eine benutzerdefinierte Navigation für Ihre App erstellen. Die benutzerdefinierte Navigation erleichtert Ihren Benutzer das Suchen und Verwenden von Inhalten in der App. In vorhandenen Apps ist diese Option deaktiviert, in neuen Apps ist die Option standardmäßig aktiviert.
 
 Ist die Option deaktiviert, können Sie für die **Landing Page der App** zwischen **Bestimmte Inhalte**, z.B. einem Dashboard oder Bericht, und **Keine** auswählen, wodurch dem Benutzer eine einfache Liste mit Inhalten angezeigt wird.
@@ -160,27 +158,32 @@ Beachten Sie bei der Übertragung von Apps mithilfe von Push an Benutzer folgend
 
 * Für Gastbenutzer, die keine Einladung angenommen haben, werden keine Apps automatisch installiert.  
 
-## <a name="allowing-users-to-connect-to-the-apps-underlying-datasets"></a>Benutzern das Herstellen einer Verbindung mit den zugrunde liegenden Datasets der App erlauben
-Wenn Sie die Option aktivieren, dass alle Benutzer eine Verbindung mit den zugrunde liegenden Datasets der App herstellen können, erhalten die App-Benutzer die Erstellungsberechtigung für das zugrunde liegende Dataset. So können Benutzer [die App-Datasets arbeitsbereichübergreifend verwenden](service-datasets-across-workspaces.md), um in Power BI Desktop und beim Abrufen von Daten im Dienst nach diesen Datasets zu suchen und damit Berichte und Dashboards zu erstellen. 
+## <a name="allow-users-to-connect-to-datasets"></a>Erteilen einer Benutzerberechtigung zum Herstellen einer Verbindung mit App-Datasets
 
-Wenn Sie diese Option deaktivieren, erhalten neue Benutzer, die Sie der App hinzufügen, keine Erstellungsberechtigung mehr. Bestehende Berechtigungen für die zugrunde liegenden Datasets bleiben jedoch unverändert. Sie können die bereitgestellte Benutzeroberfläche verwenden, um die Erstellungsberechtigung manuell von App-Benutzern zu entfernen, die nicht länger darüber verfügen sollen. Weitere Informationen zur [Erstellungsberechtigung](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+Wenn Sie die Option **Allow users to connect to the app's underlying datasets** (Benutzern erlauben, eine Verbindung mit den zugrunde liegenden Datasets der App herzustellen) aktivieren, erteilen Sie App-Benutzern die *Erstellungsberechtigung* für diese Datasets. Mit dieser Berechtigung können sie mehrere wichtige Aktionen ausführen:
 
-## <a name="allowing-users-to-make-a-copy-of-the-reports-in-the-app"></a>Benutzern das Erstellen einer Kopie der Berichte in der App erlauben
-Indem Sie die Option **Allow users to make a copy of the reports in this app** (Hiermit wird Benutzern gestattet, eine Kopie der Berichte in dieser App zu erstellen) aktivieren, erlauben Sie Benutzern, jeden der Berichte in der App unter „Mein Arbeitsbereich“ zu speichern. Sie können die Berichte dann an ihre individuellen Anforderungen anpassen. Für diese Option muss **Allow all users to connect to the app's underlying datasets using the Build permission** (Hiermit gestatten Sie allen Benutzern das Herstellen einer Verbindung mit den der App zugrunde liegenden Datasets über die Erstellungsberechtigung) aktiviert sein. Diese Funktion verhält sich wie die neue Funktion zum [Kopieren von Berichten aus anderen Arbeitsbereichen](service-datasets-copy-reports.md).
+- Sie können die [App-Datasets als Grundlage für ihre Berichte verwenden](service-datasets-across-workspaces.md).
+- Sie können in Power BI Desktop und mit dem Feature „Daten abrufen“ im Power BI-Dienst nach diesen Datasets suchen.
+- Sie können Berichte und Dashboards auf Grundlage dieser Datasets erstellen.
+
+Wenn Sie diese Option deaktivieren, erhalten neue Benutzer, die Sie der App hinzufügen, nicht die Erstellungsberechtigung. Die Berechtigungen der vorhandenen App-Benutzer für die zugrunde liegenden Datasets bleiben jedoch unverändert. Sie können App-Benutzern bei Bedarf die Erstellungsberechtigung manuell entziehen. Weitere Informationen zur [Erstellungsberechtigung](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+
+## <a name="allow-users-to-copy-reports"></a>Erteilen einer Benutzerberechtigung zum Kopieren von Berichten
+
+Wenn Sie die Option **Allow users to make a copy of the reports in this app** (Benutzern erlauben, eine Kopie der Berichte in dieser App zu erstellen) aktivieren, können Benutzer alle Berichte in der App in „Mein Arbeitsbereich“ oder in einem anderen Arbeitsbereich speichern. Selbst wenn sich der ursprüngliche Bericht in einem Arbeitsbereich in einer Premium-Kapazität befindet, benötigen Benutzer eine Pro-Lizenz, um eine Kopie zu erstellen. Diese Personen können die Berichte dann an ihre individuellen Anforderungen anpassen. Sie müssen zuerst die Option **Allow all users to connect to the app's underlying datasets using the Build permission** (Allen Benutzern mithilfe der Erstellungsberechtigung erlauben, eine Verbindung mit den zugrunde liegenden Datasets der App herzustellen) aktivieren. Durch die Auswahl dieser Optionen aktivieren Sie das neue Feature zum [Kopieren von Berichten aus anderen Arbeitsbereichen](service-datasets-copy-reports.md).
 
 ## <a name="unpublish-an-app"></a>Aufheben der Veröffentlichung einer App
-Jedes Mitglied eines App-Arbeitsbereichs kann die Veröffentlichung der App aufheben.
+Jedes Mitglied eines Arbeitsbereichs kann die Veröffentlichung der App aufheben.
 
 >[!IMPORTANT]
 >Wenn Sie die Veröffentlichung einer App aufheben, gehen die Anpassungen der App-Benutzer verloren. Persönliche Lesezeichen, Kommentare oder Abonnements, die Inhalten der App zugeordnet sind, gehen verloren. Heben Sie die Veröffentlichung einer App nur dann auf, wenn Sie sie entfernen müssen.
 > 
-> 
 
-* Klicken Sie im App-Arbeitsbereich rechts oben auf die Auslassungspunkte ( **...** ), und wählen Sie **Veröffentlichung der App aufheben** aus.
+* Klicken Sie im Arbeitsbereich rechts oben auf die Auslassungspunkte ( **...** ) und anschließend auf **Veröffentlichung der App aufheben**.
   
      ![Veröffentlichung der App aufheben](media/service-create-distribute-apps/power-bi-app-unpublish.png)
 
-Dadurch wird die App für alle Benutzer, für die sie veröffentlicht wurde, deinstalliert, sodass diese keinen Zugriff mehr darauf haben. Der App-Arbeitsbereich oder sein Inhalt wird dadurch nicht gelöscht.
+Dadurch wird die App für alle Benutzer, für die sie veröffentlicht wurde, deinstalliert, sodass diese keinen Zugriff mehr darauf haben. Weder der Arbeitsbereich noch dessen Inhalt werden dadurch gelöscht.
 
 ## <a name="view-your-published-app"></a>Anzeigen der veröffentlichten App
 
@@ -189,7 +192,7 @@ Wenn Ihre App-Benutzer die App öffnen, wird anstelle des standardmäßigen link
 ![App mit Navigation](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
-* [Erstellen eines App-Arbeitsbereichs](service-create-workspaces.md)
+* [Erstellen eines Arbeitsbereichs](service-create-workspaces.md)
 * [Installieren und Verwenden von Apps in Power BI](consumer/end-user-apps.md)
 * [Power BI-Apps für externe Dienste](service-connect-to-services.md)
 * [Power BI-Verwaltungsportal](https://docs.microsoft.com/power-bi/service-admin-portal)

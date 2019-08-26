@@ -34,10 +34,10 @@ Mit den Erweiterungen für die Barrierefreiheit können Sie einen Power BI-Beric
 
 Sie können den Fokus zwischen den Seitenregisterkarten von Berichten oder den Objekten auf einer bestimmten Berichtsseite mithilfe von **STRG + F6** wechseln.
 
-* Verwenden der **TABULATORTASTE** oder der **PFEILTASTEN** zum Bewegen des Fokus von einer Berichtsseite zur nächsten, wenn sich der Fokus auf Seitenregisterkarten des Berichts befindet. Der Titel der Berichtsseite und ihr aktueller Auswahlstatus werden von der Sprachausgabe vorgelesen. Um die Berichtsseite zu laden, die aktuell den Fokus hat, können die **EINGABETASTE** oder die Leertaste verwendet werden.
-* Wenn der Fokus auf einer geladenen Berichtsseite liegt, verwenden Sie die **TABULATORTASTE**, um den Fokus auf die einzelnen Objekte auf der Seite zu bewegen. Zu diesen zählen alle Textfelder, Bilder, Formen und Diagramme. Die Sprachausgabe liest den Objekttyp und den Titel des Objekts (sofern vorhanden). Die Sprachausgabe liest auch eine Beschreibung dieses Objekts, wenn diese vom Berichtsautor bereitgestellt wird. 
+* Verwenden der **TABULATORTASTE** oder der **PFEILTASTEN** zum Bewegen des Fokus von einer Berichtsseite zur nächsten, wenn sich der Fokus auf Seitenregisterkarten des Berichts befindet. Der Titel der Berichtsseite und ihr aktueller Auswahlstatus werden von der Sprachausgabe vorgelesen. Um die Berichtsseite zu laden, die aktuell den Fokus hat, können die **EINGABETASTE** oder die LEERTASTE verwendet werden.
+* Wenn der Fokus auf einer geladenen Berichtsseite liegt, verwenden Sie die **TABULATORTASTE**, um den Fokus auf die einzelnen Objekte auf der Seite zu bewegen. Zu diesen zählen alle Textfelder, Bilder, Formen und Diagramme. Die Sprachausgabe liest den Objekttyp und ggf. den Titel des Objekts vor. Die Sprachausgabe liest auch eine Beschreibung dieses Objekts, wenn diese vom Berichtsautor bereitgestellt wird. 
 
-Wenn Sie zwischen Visuals navigieren, können Sie **ALT + UMSCHALT + F10** drücken, um den Fokus die Kopfzeile des Visuals zu verschieben. Die Kopfzeile des Visuals enthält verschiedene Optionen, wie das Sortieren und Exportieren der Daten hinter das Diagramm und den Fokusmodus. 
+Wenn Sie zwischen Visuals navigieren, können Sie **ALT + UMSCHALT + F10** drücken, um den Fokus zur Kopfzeile des Visuals zu verschieben. Die Kopfzeile des Visuals enthält verschiedene Optionen, wie das Sortieren und Exportieren der Daten hinter das Diagramm und den Fokusmodus. 
 
 ![Drücken Sie in Power BI Desktop ALT + UMSCHALT + F10, um den Fokus auf die Kopfzeile des Visuals zu verschieben.](media/desktop-accessibility/accessibility-08.png)
 
@@ -46,7 +46,7 @@ Sie können **ALT + UMSCHALT + F11** drücken, um eine barrierefreie Version des
 ![Drücken Sie in Power BI Desktop ALT+UMSCHALT+F11, um eine barrierefreie Version des Fensters „Daten anzeigen“ für ein Visual zu öffnen.](media/desktop-accessibility/accessibility-04.png)
 
 > [!NOTE]
-> Das Feature **Daten anzeigen** ist nur über diese Tastenkombination für die Sprachausgabe verfügbar. Wenn Sie das Fenster **Daten anzeigen** über die Option in der Kopfzeile des Visuals öffnen, kann die Sprachausgabe nicht darauf zugreifen. Aktivieren Sie den Überprüfungsmodus, wenn Sie **Daten anzeigen** verwenden, um von allen heißen Schlüsseln zu profitieren, die von Ihrer Bildschirmsprachausgabe bereitgestellt werden.
+> Das Feature **Daten anzeigen** ist nur über diese Tastenkombination für die Sprachausgabe verfügbar. Wenn Sie das Fenster **Daten anzeigen** über die Option in der Kopfzeile des Visuals öffnen, kann die Sprachausgabe nicht darauf zugreifen. Wenn Sie **Daten anzeigen** verwenden, aktivieren Sie den Scanmodus, um die in Ihrer Sprachausgabe verfügbaren Hotkeys nutzen zu können.
 
 Ab dem **Power BI Desktop**-Release von Juli 2018 verfügen Slicer auch über integrierte Barrierefreiheitsfunktionen. Wenn Sie einen Slicer auswählen, verwenden Sie zum Anpassen des Werts die **STRG- und die NACH-RECHTS-TASTE,** um die verschiedenen Steuerelemente im Slicer zu durchlaufen. Wenn Sie z.B. zuerst **STRG + NACH-RECHTS-TASTE** drücken, liegt der Fokus auf dem Radierer. Das Drücken auf die Leertaste entspricht dem Klicken auf die Radierer-Schaltfläche. Dadurch werden alle Werte im Slicer gelöscht. 
 
@@ -63,7 +63,7 @@ Die folgenden Tipps können Ihnen beim Erstellen von **Power BI Desktop**-Berich
 
 * Aktivieren Sie für **Liniendiagramm**-, **Flächendiagramm**- und **Kombinationsdiagramm**-Visuals sowie für **Punktdiagramm**- und **Blasendiagramm**-Visuals den Umschalter **Marker anzeigen**, und verwenden Sie für jede Linie eine andere **Markerform**.
   
-  * Um den Umschalter **Marker anzeigen** zu aktivieren, wählen Sie den Abschnitt **Format** im Bereich **Visualisierungen**, und erweitern Sie den Abschnitt **Formen**. Scrollen Sie nach zum Umschalter **Marker anzeigen** und **aktivieren** Sie ihn.
+  * Um den Umschalter **Marker anzeigen** zu aktivieren, wählen Sie den Abschnitt **Format** im Bereich **Visualisierungen**, und erweitern Sie den Abschnitt **Formen**. Scrollen Sie nach unten zum Umschalter **Marker anzeigen**, und **aktivieren** Sie ihn.
   * Um einzelne Zeilen anzupassen, suchen Sie nach dem Umschalter **Serie anpassen**, und **aktivieren** Sie ihn. Wählen Sie anschließend im Dropdownfeld im Abschnitt **Formen** den Namen jeder Linie (oder Fläche bei einem **Flächendiagramm**) aus. Unterhalb des Dropdownfelds können Sie anschließend viele Aspekte des für die ausgewählte Linie verwendeten Markers anpassen, einschließlich dessen Form, Farbe und Größe.
   
     ![Verwenden Sie für Linien- und Flächendiagramme verschiedene Marker, um die Barrierefreiheit zu verbessern](media/desktop-accessibility/accessibility-format-section.png)
@@ -71,7 +71,7 @@ Die folgenden Tipps können Ihnen beim Erstellen von **Power BI Desktop**-Berich
   * Die Verwendung einer anderen **Markierungsform** für jede Linie macht es den Nutzern des Berichts leichter, die Linien (oder Flächen) voneinander zu unterscheiden.
 * Verwenden Sie zum Übermitteln von Informationen nicht nur Farbmarkierungen. Bei der Verwendung von Formen in Linien- und Punktdiagrammen sollten Sie sich nicht auf die bedingte Formatierung verlassen, um Einblicke in Tabellen und Matrizen zu gewähren. 
 * Wählen Sie eine Sortierreihenfolge für jedes Visual in Ihrem Bericht mit Bedacht aus. Wenn Benutzer der Sprachausgabe zu den Daten hinter dem Diagramm navigieren, wird die gleiche Sortierreihenfolge wie beim Visual verwendet.
-* Wählen Sie im Designkatalog ein Design mit hohem Kontrast aus, das für Farbenblinde geeignet ist. Importieren Sie es anschließen mithilfe der [**Design**-Previewfunktion](desktop-report-themes.md).
+* Wählen Sie im Designkatalog ein Design mit hohem Kontrast aus, das für Farbenblinde geeignet ist. Importieren Sie es anschließend mithilfe der [Previewfunktion **Design**](desktop-report-themes.md).
 * Geben Sie zu jedem Objekt in einem Bericht Alternativtext an. Dadurch wird sichergestellt, dass die Benutzer des Berichts wissen, was Sie mit dem Visual ausdrücken möchten. Dies ist sogar hilfreich, wenn sie das Visual, das Bild, die Form oder das Textfeld nicht sehen können. Sie können zu jedem Objekt in einem **Power BI Desktop**-Bericht Alternativtext angeben, indem Sie das Objekt (wie etwa ein Visual, eine Form usw.) auswählen und im Bereich **Visualisierungen** den Bereich **Format auswählen**. Erweitern Sie dann das Feld **Allgemein**, scrollen Sie nach unten, und füllen Sie das Textfeld **Alternativtext** aus.
   
   ![Alternativtext kann für jedes Objekt in einem Bericht im Feld „Visualisierungen > Format > Allgemein > Alternativtext“ hinzugefügt werden.](media/desktop-accessibility/accessibility-02.png)
@@ -82,7 +82,7 @@ Die folgenden Tipps können Ihnen beim Erstellen von **Power BI Desktop**-Berich
 * Vermeiden Sie, wenn möglich, die Verwendung dekorativer Formen und Bilder im Bericht, da diese in der Registerkartenreihenfolge des Berichts enthalten sind. Wenn Sie dekorative Objekte in Ihren Bericht einfügen müssen, aktualisieren Sie den alternativen Text des Objekts, um Benutzer der Sprachausgabe wissen zu lassen, dass es zur Dekoration dient.
 
 ### <a name="arranging-items-in-field-buckets"></a>Anordnen von Elementen in Feld-Buckets
-Ab der Oktober 2018-Version von **Power BI Desktop** kann mit der Tastatur im **Felder**-Bereich navigiert werden, und der Bereich interagiert auch mit Sprachausgaben. 
+Beginnend mit der im Oktober 2018 erschienenen Version von **Power BI Desktop** kann mit der Tastatur im **Felder**-Bereich navigiert werden, und der Bereich interagiert auch mit Sprachausgaben. 
 
 Um das Erstellen von Berichten mit Sprachausgabe zu verbessern, ist jetzt ein Kontextmenü verfügbar. Das Menü ermöglicht das Verschieben von Feldern im Bereich in der Liste **Felder**. Das Menü ermöglicht auch das Verschieben des Felds in andere Bereiche, z.B. **Legende** oder **Wert** oder andere.
 
@@ -109,7 +109,7 @@ Es gibt einige bekannte Probleme und Einschränkungen in Bezug auf die Barrieref
 * Wenn Sie die Sprachausgabe von Microsoft verwenden, gibt es einige Einschränkungen beim **Anzeigen von Daten** als HTML-Tabelle.
 
 ## <a name="keyboard-shortcuts"></a>Tastenkombinationen
-Tastenkombinationen sind hilfreich, um sich in Power BI-Berichten mithilfe einer Tastatur zu bewegen. Die folgende Tabelle beschreibt die Tastenkombinationen, die in einem Power BI-Bericht zur Verfügung stehen. Zusätzlich zur Verwendung dieser Tastenkombinationen in **Power BI Desktop** funktionieren diese Tastenkombinationen auch in diesen Benutzeroberflächenelementen:
+Tastenkombinationen sind hilfreich, um sich in Power BI-Berichten mithilfe einer Tastatur zu bewegen. Die folgende Tabelle beschreibt die Tastenkombinationen, die in einem Power BI-Bericht zur Verfügung stehen. Die folgenden Tastenkombinationen funktionieren nicht nur in **Power BI Desktop**, sondern auch bei den folgenden Funktionen:
 
 * Dialogfeld **Q&A-Explorer**
 * Dialogfeld **Erste Schritte**

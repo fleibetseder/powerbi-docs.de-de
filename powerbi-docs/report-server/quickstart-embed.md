@@ -1,38 +1,39 @@
 ---
-title: Einbetten eines Berichts mithilfe eines iFrames
-description: Einbetten eines Power BI-Berichtsserver-Berichts in einen iFrame in SharePoint Server
+title: Einbetten eines Power BI-Berichtsserver-Berichts in einen iFrame in SharePoint Server
+description: In diesem Artikel wird beschrieben, wie Sie einen Bericht des Power BI-Berichtsservers in einen iFrame in SharePoint Server einbetten.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 05/04/2018
-ms.topic: quickstart
+ms.date: 08/12/2019
+ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: ca26770c652c12573bf28e24b218b214bf1196fa
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: e1787863d2b5db50cdb9a8d09907fbee6623972f
+ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769866"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68995001"
 ---
-# <a name="quickstart-embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Schnellstart: Einbetten eines Power BI-Berichtsserver-Berichts in einen iFrame in SharePoint Server
+# <a name="embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Einbetten eines Power BI-Berichtsserver-Berichts in einen iFrame in SharePoint Server
 
-In diesem Schnellstart erfahren Sie, wie Sie einen Power BI-Berichtsserver-Bericht mithilfe eines iFrames in eine SharePoint-Seite einbetten. Wenn Sie mit SharePoint Online arbeiten, muss der öffentliche Zugriff auf den Power BI-Berichtsserver möglich sein. In SharePoint Online funktioniert der Power BI-Webpart, der mit dem Power BI-Dienst funktioniert, nicht mit dem Power BI-Berichtsserver. 
+In diesem Artikel erfahren Sie, wie Sie einen Bericht des Power BI-Berichtsservers mithilfe eines iFrames in eine SharePoint-Seite einbetten. Wenn Sie mit SharePoint Online arbeiten, muss der öffentliche Zugriff auf den Power BI-Berichtsserver möglich sein. In SharePoint Online kann der Power BI-Webpart, der mit dem Power BI-Dienst eingesetzt wird, nicht mit dem Power BI-Berichtsserver verwendet werden.  
 
 ![iFrame-Beispiel](media/quickstart-embed/quickstart_embed_01.png)
+
 ## <a name="prerequisites"></a>Voraussetzungen
-* Der [Power BI-Berichtsserver](https://powerbi.microsoft.com/report-server/) muss installiert und konfiguriert sein.
-* [Für den Power BI-Berichtsserver optimiertes Power BI Desktop](install-powerbi-desktop.md) muss installiert sein.
-* Eine installierte und konfigurierte [SharePoint](https://docs.microsoft.com/sharepoint/install/install)-Umgebung ist erforderlich.
+* Der [Power BI-Berichtsserver](https://powerbi.microsoft.com/report-server/) ist installiert und konfiguriert.
+* Die [für den Power BI-Berichtsserver optimierte Version von Power BI Desktop](install-powerbi-desktop.md) ist installiert.
+* Eine [SharePoint-Umgebung](https://docs.microsoft.com/sharepoint/install/install) ist installiert und konfiguriert.
 
-## <a name="creating-the-power-bi-report-server-report-url"></a>Erstellen der Berichts-URL für den Power BI-Berichtsserver
+## <a name="create-the-power-bi-report-url"></a>Erstellen der Power BI-Berichts-URL
 
-1. Laden Sie das Beispiel von GitHub herunter – [Blog-Demo](https://github.com/Microsoft/powerbi-desktop-samples).
+1. Laden Sie das Beispiel [Blogdemo](https://github.com/Microsoft/powerbi-desktop-samples) von GitHub herunter. Klicken Sie auf **Clone or download** (Klonen oder herunterladen) und anschließend auf **Download ZIP** (ZIP herunterladen).
 
-    ![PBIX-Beispieldatei herunterladen](media/quickstart-embed/quickstart_embed_14.png)
+    ![Herunterladen der PBIX-Beispieldatei](media/quickstart-embed/quickstart_embed_14.png)
 
-2. Öffnen Sie die PBIX-Beispieldatei über GitHub in **für den Power BI-Berichtsserver optimiertem Power BI Desktop**.
+2. Entzippen Sie die Datei, und öffnen Sie die PBIX-Beispieldatei in der für den Power BI-Berichtsserver optimierten Version von Power BI Desktop.
 
     ![Power BI-Berichtsserver-Desktop-Tool](media/quickstart-embed/quickstart_embed_02.png)
 
@@ -40,49 +41,45 @@ In diesem Schnellstart erfahren Sie, wie Sie einen Power BI-Berichtsserver-Beric
 
     ![Speichern auf dem Power BI-Berichtsserver](media/quickstart-embed/quickstart_embed_03.png)
 
-4. Zeigen Sie den Bericht im **Webportal** an.
+4. Lassen Sie sich den Bericht im Webportal des Power BI-Berichtsservers anzeigen.
 
     ![Webportal](media/quickstart-embed/quickstart_embed_04.png)
 
-### <a name="capturing-the-url-parameter"></a>Erfassen des URL-Parameters
+### <a name="capture-the-url-parameter"></a>Erfassen des URL-Parameters
 
-Sobald Sie die URL haben, können Sie einen iFrame auf einer SharePoint-Seite erstellen, in dem der Bericht gehostet wird. Sie können für jede Power BI-Berichtsserver-Berichts-URL einen querystring-Parameter von `?rs:embed=true` hinzufügen, um Ihren Bericht in einen iFrame einzubetten. 
+Sobald die URL verfügbar ist, können Sie auf einer SharePoint-Seite einen iFrame erstellen, in dem der Bericht gehostet wird. Fügen Sie einer beliebigen URL eines Berichts des Power BI-Berichtsservers den Abfragezeichenfolgenparameter `?rs:embed=true` hinzu, um den Bericht in einen SharePoint-iFrame einzubetten.
 
    Beispiel:
     ``` 
     http://myserver/reports/powerbi/Sales?rs:embed=true
     ```
-## <a name="embedding-a-power-bi-report-server-report-in-a-sharepoint-iframe"></a>Einbetten eines Power BI-Berichtsserver-Berichts in einen SharePoint-iFrame
+## <a name="embed-the-report-in-a-sharepoint-iframe"></a>Einbetten des Berichts in einen SharePoint-iFrame
 
 1. Navigieren Sie zu einer **Websiteinhalte**-Seite in SharePoint.
 
-    ![Websiteinhalte-Seite](media/quickstart-embed/quickstart_embed_05.png)
+    ![Seite mit Websiteinhalten](media/quickstart-embed/quickstart_embed_05.png)
 
 2. Wählen Sie die Seite aus, auf der Sie Ihren Bericht hinzufügen möchten.
 
-    ![Websiteinhalte-Seite-App](media/quickstart-embed/quickstart_embed_06.png)
+    ![App für Seite mit Websiteinhalten](media/quickstart-embed/quickstart_embed_06.png)
 
-3. Wählen Sie das Zahnrad oben rechts und dann **Seite bearbeiten** aus.
+3. Klicken Sie auf das Zahnradsymbol oben rechts und dann auf **Seite bearbeiten**.
 
     ![Option „Seite bearbeiten“](media/quickstart-embed/quickstart_embed_07.png)
 
-4. Wählen Sie **Webpart hinzufügen** aus.
+4. Klicken Sie auf **Webpart hinzufügen**.
 
-    ![„Webpart hinzufügen“](media/quickstart-embed/quickstart_embed_08.png)
+5. Klicken Sie unter **Kategorien** auf **Medien und Inhalt**. Klicken Sie unter **Webparts** auf **Inhalts-Editor** und anschließend auf **Hinzufügen**.
 
-5. Wählen Sie unter **Kategorien** die Option **Medien und Inhalt** aus, unter **Teile** die Option **Inhalts-Editor**, und wählen Sie dann **Hinzufügen** aus.
-
-    ![Inhalts-Editor-Webpart auswählen](media/quickstart-embed/quickstart_embed_09.png) ![„Hinzufügen“ auswählen](media/quickstart-embed/quickstart_embed_091.png)
+    ![Klicken auf „Webparts“ und „Inhalts-Editor“](media/quickstart-embed/quickstart_embed_09.png)
 
 6. Wählen Sie **Hier klicken, um neue Inhalte hinzuzufügen** aus.
 
-    ![Neue Inhalte hinzufügen](media/quickstart-embed/quickstart_embed_10.png)
+7. Klicken Sie im oberen Menü auf **Text formatieren** und anschließend auf **Quelle bearbeiten**.
 
-7. Wählen Sie im Menüband die Registerkarte **Text formatieren** aus und dann **Quelle bearbeiten**.
+     ![Quelle bearbeiten](media/quickstart-embed/quickstart_embed_11.png)
 
-     ![„Quelle bearbeiten“](media/quickstart-embed/quickstart_embed_11.png)
-
-8. Fügen Sie im Fenster „Quelle bearbeiten“ Ihren iFrame-Code ein, und wählen Sie „OK“ aus.
+8. Fügen Sie im Fenster **Quelle bearbeiten** den iFrame-Code in **HTML-Quelle** ein, und klicken Sie auf **OK**.
 
     ![iFrame-Code](media/quickstart-embed/quickstart_embed_12.png)
 
@@ -91,17 +88,17 @@ Sobald Sie die URL haben, können Sie einen iFrame auf einer SharePoint-Seite er
      <iframe width="800" height="600" src="http://myserver/reports/powerbi/Sales?rs:embed=true" frameborder="0" allowFullScreen="true"></iframe>
      ```
 
-9. Wählen Sie im Menüband die Registerkarte **Seite** aus und dann **Bearbeitung beenden**.
+9. Klicken Sie im oberen Menü auf **Seite** und anschließend auf **Bearbeitung beenden**.
 
-    ![„Bearbeitung beenden“](media/quickstart-embed/quickstart_embed_13.png)
+    ![Bearbeitung beenden](media/quickstart-embed/quickstart_embed_13.png)
 
-10. Jetzt sollte der Bericht auf der Seite angezeigt werden.
+    Der Bericht wird auf der Seite angezeigt.
 
     ![iFrame-Beispiel](media/quickstart-embed/quickstart_embed_01.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Schnellstart: Erstellen eines Power BI-Berichts für Power BI-Berichtsserver](quickstart-create-powerbi-report.md)  
-[Schnellstart: Erstellen eines paginierten Berichts für Power BI-Berichtsserver](quickstart-create-paginated-report.md)  
+- [Erstellen eines Power BI-Berichts für den Power BI-Berichtsserver](quickstart-create-powerbi-report.md)  
+- [Erstellen eines paginierten Berichts für den Power BI-Berichtsserver](quickstart-create-paginated-report.md)  
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/) 
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/). 

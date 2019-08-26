@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/26/2019
+ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: a3982716ac2eb64f7512ba6ef606af299f1c5f46
-ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.openlocfilehash: e25a004098c5bfe5cf607f5ee4b26dfda09d792d
+ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418676"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69530503"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organisieren der Arbeit in den neuen Power BI-Arbeitsbereichen
 
@@ -36,7 +36,7 @@ Mit den neuen Arbeitsbereichen können Sie Folgendes durchführen:
 Wenn Sie einen der neuen Arbeitsbereiche erstellen, erstellen Sie keine zugrunde liegende, zugehörige Office 365-Gruppe. Die gesamte Arbeitsbereichsverwaltung findet in Power BI statt, nicht in Office 365. In der neuen Benutzeroberfläche für Arbeitsbereiche können Sie jetzt eine Office 365-Gruppe der Arbeitsbereich-Zugriffsliste hinzufügen, um den Benutzerzugriff auf Inhalte weiterhin über Office 365-Gruppen zu verwalten.
 
 ## <a name="administering-new-workspace-experience-workspaces"></a>Verwalten von Arbeitsbereichen der neuen Benutzeroberfläche für Arbeitsbereiche
-Die Verwaltung von Arbeitsbereichen der neuen Benutzeroberfläche für Arbeitsbereiche erfolgt jetzt in Power BI; Power BI-Administratoren entscheiden, welche Benutzer in einer Organisation Arbeitsbereiche erstellen dürfen. Sie können auch Arbeitsbereiche verwalten und wiederherstellen. Zu diesem Zweck müssen sie das Power BI-Verwaltungsportal oder die PowerShell-CmdLets verwenden. Für klassische Arbeitsbereiche auf Grundlage von Office 365-Gruppen wird die Verwaltung weiterhin im Office 365-Verwaltungsportal und Azure Active Directory durchgeführt.
+Die Verwaltung von Arbeitsbereichen der neuen Benutzeroberfläche für Arbeitsbereiche erfolgt jetzt in Power BI; Power BI-Administratoren entscheiden, welche Benutzer in einer Organisation Arbeitsbereiche erstellen dürfen. Sie können Arbeitsbereiche auch mithilfe des Power BI-Verwaltungsportals oder mithilfe von PowerShell-Cmdlets verwalten und wiederherstellen. Für klassische Arbeitsbereiche auf Grundlage von Office 365-Gruppen wird die Verwaltung weiterhin im Office 365-Verwaltungsportal und Azure Active Directory durchgeführt.
 
 Im Verwaltungsportal können Administratoren in **Arbeitsbereichseinstellungen** mit der Einstellung „Arbeitsbereiche erstellen (neue Benutzeroberfläche für Arbeitsbereiche)“ jedem oder niemand in einer Organisation das Erstellen neuer Arbeitsbereiche der neuen Benutzeroberfläche für Arbeitsbereiche ermöglichen. Sie können auch die Erstellung von Mitgliedern bestimmter Sicherheitsgruppen beschränken.
 
@@ -59,9 +59,9 @@ Um Zugriff auf einen neuen Arbeitsbereich zu gewähren, fügen Sie Benutzergrupp
 
 Mit Rollen können Sie verwalten, wer welche Aktionen in einem Arbeitsbereich durchführen kann. So können Teams zusammenarbeiten. Mithilfe der neuen Arbeitsbereiche können Sie Einzelpersonen und Benutzergruppen Rollen zuweisen: Sicherheitsgruppen, Office 365-Gruppen und Verteilerlisten. 
 
-Wenn Sie einer Benutzergruppe Rollen zuweisen, verfügen die Personen in der Gruppe über Zugriffsberechtigungen für Inhalte. Wenn Sie Benutzergruppen schachteln, verfügen alle Benutzer über die Berechtigung. Ein Benutzer, der in mehreren Benutzergruppen mit verschiedenen Rollen Mitglied ist, erhält die höchsten ihm zugewiesenen Berechtigungen. 
+Wenn Sie einer Benutzergruppe Rollen zuweisen, verfügen die Personen in der Gruppe über Zugriffsberechtigungen für Inhalte. Wenn Sie Benutzergruppen schachteln, verfügen alle Benutzer über die Berechtigung.
 
-Die neuen Arbeitsbereiche bieten vier Rollen: Administratoren, Mitglieder, Mitwirkende und anzeigende Benutzer.
+Folgende Rollen sind verfügbar: Administrator, Mitglied, Mitwirkender und Betrachter.
 
 |Funktion   | Administrator  | Mitglied  | Mitwirkender  | Anzeigender Benutzer |
 |---|---|---|---|---|
@@ -74,23 +74,26 @@ Die neuen Arbeitsbereiche bieten vier Rollen: Administratoren, Mitglieder, Mitwi
 | Inhalte im Arbeitsbereich erstellen, bearbeiten und löschen.  |  X | X  | X  |   |
 | Berichte im Arbeitsbereich veröffentlichen und Inhalt löschen.  |  X | X  | X  |   |
 | Anzeigen eines Elements. |  X | X  | X  | X  |
- 
+| Erstellen Sie einen Bericht in einem anderen Arbeitsbereich basierend auf einem Dataset in diesem Arbeitsbereich. |  X | X  | X  | X <sup>1</sup>  |
+| Kopieren Sie einen Bericht. | X | X | X | X <sup>1</sup> |
+
+**1** erfordert eine Power BI Pro-Lizenz und eine [Erstellungsberechtigung für Datasets](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). 
  
 ## <a name="licensing"></a>Lizenzierung
 Alle Benutzer, die Sie einem Arbeitsbereich in der gemeinsam genutzten Kapazität hinzufügen, benötigen eine Power BI Pro-Lizenz. Im Arbeitsbereich ist die Zusammenarbeit aller Beteiligten beim Erstellen von Dashboards und Berichten möglich, die Sie für eine größere Zielgruppe oder sogar die gesamte Organisation veröffentlichen möchten. 
 
 Wenn Sie Inhalte an andere Personen in Ihrer Organisation verteilen möchten, können Sie diesen Benutzern Power BI Pro-Lizenzen zuweisen oder den Arbeitsbereich in einer Power BI Premium-Kapazität hinzufügen.
 
-Wenn sich der Arbeitsbereich in einer Power BI Premium-Kapazität befindet, können Benutzer mit der Rolle „Anzeigender Benutzer“ auch dann auf den Arbeitsbereich zugreifen, wenn sie keine Power BI Pro-Lizenz besitzen. Wenn Sie diesen Benutzern jedoch eine höhere Rolle wie Administrator, Mitglied oder Mitwirkender zuweisen, haben sie keinen Zugriff auf den Arbeitsbereich. Sie werden aufgefordert, eine Pro-Testversion zu starten, wenn sie versuchen, auf den Arbeitsbereich zugreifen. Damit Benutzer ohne Pro-Lizenzen als anzeigende Benutzer agieren können, stellen Sie sicher, dass sich die Benutzer in der Rolle „Anzeigender Benutzer“ nicht in anderen Arbeitsbereichsrollen befinden, weder einzeln noch über eine Benutzergruppe. 
+Wenn sich der Arbeitsbereich in einer Power BI Premium-Kapazität befindet, können Benutzer mit der Rolle „Anzeigender Benutzer“ auch dann auf den Arbeitsbereich zugreifen, wenn sie keine Power BI Pro-Lizenz besitzen. Wenn Sie diesen Benutzern jedoch eine höhere Rolle wie Administrator, Mitglied oder Mitwirkender zuweisen, werden diese aufgefordert, eine Pro-Testversion zu starten, wenn sie versuchen, auf den Arbeitsbereich zuzugreifen. Damit Benutzer ohne Pro-Lizenzen als anzeigende Benutzer agieren können, stellen Sie sicher, dass sich die Benutzer in der Rolle „Anzeigender Benutzer“ nicht in anderen Arbeitsbereichsrollen befinden, weder einzeln noch über eine Benutzergruppe. 
 
 > [!NOTE]
-> Die Veröffentlichung von Berichten in der neuen Benutzeroberfläche für Arbeitsbereiche ist mit einer strengeren Durchsetzung der bestehenden Lizenzregeln verbunden. Benutzern, die versuchen, ohne Pro-Lizenz mittels Power BI Desktop oder anderer Clienttools zu veröffentlichen, wird die Fehlermeldung „Nur Benutzer mit Power BI Pro-Lizenzen können in diesem Arbeitsbereich veröffentlichen“ angezeigt.
+> Die Veröffentlichung von Berichten in der neuen Benutzeroberfläche für Arbeitsbereiche ist mit einer strengeren Durchsetzung der bestehenden Lizenzregeln verbunden. Benutzern, die versuchen, ohne Pro-Lizenz aus Power BI Desktop oder anderen Clienttools zu veröffentlichen, wird der Fehler „Nur Benutzer mit Power BI Pro-Lizenzen können in diesem Arbeitsbereich veröffentlichen“ angezeigt.
 
-## <a name="how-are-the-new-workspaces-different-from-current-workspaces"></a>Inwiefern unterscheiden sich die neuen Arbeitsbereiche von den aktuellen Arbeitsbereichen?
+## <a name="how-the-new-workspaces-are-different"></a>Unterschiede zwischen den neuen Arbeitsbereichen
 
-Mit den neuen Arbeitsbereichen werden einige Features neu gestaltet. Im Folgenden werden die Änderungen aufgeführt, die dauerhaft Bestand haben werden. 
+Mit den neuen Arbeitsbereichen wurden einige Features neu gestaltet. Im Folgenden werden die Änderungen aufgeführt, die dauerhaft Bestand haben werden. 
 
-* Das Erstellen dieser Arbeitsbereiche erzeugt keine Office 365-Gruppen wie bei klassischen Arbeitsbereichen. Sie können jedoch jetzt eine Office 365-Gruppe verwenden, um Benutzern Zugriff auf Ihren Arbeitsbereich zu gewähren, indem Sie ihm eine Rolle zuweisen. 
+* Durch das Erstellen dieser Arbeitsbereiche werden, anders als bei klassischen Arbeitsbereichen, keine Office 365-Gruppen erstellt. Sie können jedoch jetzt eine Office 365-Gruppe verwenden, um Benutzern Zugriff auf Ihren Arbeitsbereich zu gewähren, indem Sie ihm eine Rolle zuweisen. 
 * In den klassischen Arbeitsbereichen können Sie den Listen der Mitglieder und Administratoren nur Einzelpersonen hinzufügen. In den neuen Arbeitsbereichen können Sie zu diesen Listen mehrere AD-Sicherheitsgruppen, Verteilerlisten oder Office 365-Gruppen hinzufügen, um die Benutzerverwaltung zu vereinfachen. 
 - Sie können ein organisationsbezogenes Inhaltspaket über einen klassischen Arbeitsbereich erstellen. Über den neuen Arbeitsbereich können Sie diese nicht erstellen.
 - Sie können ein organisationsbezogenes Inhaltspaket über einen klassischen Arbeitsbereich nutzen. Über den neuen Arbeitsbereich können Sie dieses nicht nutzen.

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/03/2019
+ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: a687e42ef2963ce5e85bd1e0be72c2562afa5b6c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 637a6476af6368fae2bcfed8d89aeb9f43276a6b
+ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61370464"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69560829"
 ---
 # <a name="show-items-with-no-data-in-power-bi"></a>Elemente ohne Daten in Power BI anzeigen
 
@@ -25,7 +25,7 @@ Mithilfe von Power BI können Sie alle Arten von Daten aus verschiedenen Quellen
 
 ## <a name="determining-relevant-data"></a>Bestimmen relevanter Daten
 
-Um das Konzept zu verstehen, nach dem Power BI bestimmt, welche Daten für die Anzeige relevant sind, sehen wir uns eine Tabelle als einfaches Beispiel an. Stellen Sie sich auf der Grundlage des Modells im Abschnitt mit den Beispielen am Ende dieses Artikels vor, Sie erstellen eine Tabelle mit den folgenden Einstellungen:
+Um das Konzept zu verstehen, nach dem Power BI bestimmt, welche Daten für die Anzeige relevant sind, sehen wir uns eine Tabelle als einfaches Beispiel an. Erstellen Sie auf der Grundlage des Modells im Abschnitt [Beispieldatenmodell](#example-data-model) am Ende dieses Artikels eine Tabelle mit den folgenden Einstellungen:
 
 **1. Gruppen aus der gleichen Tabelle:** *Produkt[Farbe] - Produkt[Größe]*
 
@@ -130,7 +130,7 @@ So wird es mit aktivierter Funktion **Elemente ohne Daten anzeigen** angezeigt:
 |Glänzend     |Blue         |10         |
 |Glänzend     |Red         |         |
 |Matt     |Blue         |15         |
-|Keine     |         |         |
+|Keiner     |         |         |
 
 Beachten Sie, dass *(Glänzend-Rot)* und *(Ohne, leer)* als Kombinationen angezeigt wurden. Dies ist der Grund, warum sie angezeigt wurden:
 * Power BI zog zuerst ProduktStil[Finish] in Betracht und wählte alle anzuzeigenden Werte aus – dies ergab Glänzend, Matt, Ohne.
@@ -152,6 +152,25 @@ So wird es mit aktivierter Funktion **Elemente ohne Daten anzeigen** angezeigt:
 |Red     |Glänzend         |         |
 
 Beachten Sie, dass in diesem Fall *ProduktStil[Finish]=Ohne* nicht in der Tabelle angezeigt wird. Das hat den Grund, dass in diesem Fall Power BI zuerst alle Werte *Farbe* in der Tabelle *Produkt* auswählte. Anschließend wählte Power BI für jede Farbe die entsprechenden *Finish*-Werte aus, die Daten enthielten. Da *Ohne* in keiner Kombination von *Farbe* vorkommt, wird es nicht ausgewählt.
+
+
+## <a name="power-bi-visual-behavior"></a>Verhalten von Power BI-Visuals
+
+Wenn **Elemente ohne Daten anzeigen** für ein Feld eines Visuals aktiviert ist, wird das Feature automatisch für alle anderen Felder aktiviert, die sich in demselben *Visualbucket* oder in derselben Hierarchie befinden. Ein Visualbucket oder eine Hierarchie kann zu einer **Achse**, **Legende**, **Kategorie** oder zu **Zeilen** oder **Spalten** gehören.
+
+![Felder für „Achse“ und „Legende“](media/desktop-show-items-no-data/show-items-no-data-04.png)
+
+Wenn sich z. B auf einem Matrixvisual vier Felder im Bucket **Zeilen** befinden, werden alle Elemente der Matrix aktiviert, falls für ein Feld **Elemente ohne Daten anzeigen** aktiviert wird. Auf dem folgenden Screenshot ist **Elemente ohne Daten anzeigen** nur für das erste Feld, nämlich *SupplierID* (Lieferanten-ID), im Bucket **Zeilen** aktiviert. Für die anderen Felder im Bucket **Zeilen** wurde das Feature automatisch aktiviert.
+
+![Für Felder innerhalb desselben Visuals wird automatisch „Elemente ohne Daten anzeigen“ aktiviert.](media/desktop-show-items-no-data/show-items-no-data-05.png)
+
+Im Gegensatz dazu wird für das Feld *Kontinent* im Bucket **Spalten** das Feature **Elemente ohne Daten anzeigen** *nicht* automatisch aktiviert. 
+
+Dieses Visualverhalten tritt oft dann auf, wenn ein Visual in einen anderen Typ konvertiert wird. Ein Beispiel ist die Konvertierung eines Matrixvisuals in ein Tabellenvisual. Bei solchen Konvertierungen wird **Elemente ohne Daten anzeigen** automatisch für Felder aktiviert, wenn diese in ein Bucket verschoben werden, in dem sich bereits ein Feld befindet, für das dieses Feature aktiviert ist. Wenn im vorherigen Beispiel für *SupplierID* das Feature **Elemente ohne Daten anzeigen** aktiviert ist und das Visual in eine Tabelle konvertiert wird, wird das Feld *Continent* (Kontinent) aus dem Bucket **Spalten** zusammen mit den Feldern im Bucket **Zeilen** in den einzigen Bucket verschoben, der in einem Tabellenvisual verwendet wird. Dabei handelt es sich um den Bucket **Werte**. Daher ist für alle Felder im Bucket **Werte** das Feature **Elemente ohne Daten anzeigen** aktiviert.
+
+### <a name="exporting-data"></a>Exportieren von Daten
+
+Wenn Sie das Feature **Export summarized data** (Zusammengefasste Daten exportieren) verwenden, entspricht das Verhalten des Features **Elemente ohne Daten anzeigen** dem des Vorgangs, bei dem ein Export in ein Tabellenvisual konvertiert wird. Wenn Sie daher ein Visual wie ein Diagrammmatrixvisual exportieren, werden die exportierten Daten möglicherweise anders als auf dem Visual angezeigt. Dies liegt daran, dass bei der Konvertierung in ein Tabellenvisual während des Exportvorgangs **Elemente ohne Daten anzeigen** für alle zu exportierenden Felder aktiviert wird. 
 
 ## <a name="example-data-model"></a>Beispieldatenmodell
 
@@ -181,7 +200,7 @@ Dieser Abschnitt zeigt das Beispieldatenmodell, das in den Beispielen in diesem 
 |---------|---------|---------|
 |1  |Glänzend  |Ja |
 |2  |Matt  |Nein |
-|3  |Keine   |Nein |
+|3  |Keiner   |Nein |
 
 
 |Umsatz[UmsatzID]| Umsatz[ProduktID]|   Umsatz[Datum]|    Umsatz[Menge]|

@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/28/2019
+ms.date: 08/15/2019
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 30552ee407460856fd1548073f0b3046ab508115
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: e77bfdf771e84afbc87335aa77993640d10282b0
+ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67567505"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69530552"
 ---
 # <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Überwachen von Nutzungsmetriken für Power BI-Dashboards und Berichte
 
@@ -41,20 +41,7 @@ Sie können im Power BI-Dienst nur Berichte zu Nutzungsmetriken ausführen. Wenn
 - Um Zugriff auf die Nutzungsmetriken für ein bestimmtes Dashboard oder einen bestimmten Bericht zu erhalten, benötigen Sie Bearbeitungszugriff auf das entsprechende Dashboard bzw. den entsprechenden Bericht.
 - Ihr Power BI-Administrator muss dafür Nutzungsmetriken für Inhaltsersteller aktiviert haben. Möglicherweise hat Ihr Power BI-Administrator darüber hinaus das Erfassen von Daten pro Benutzer in den Nutzungsmetriken aktiviert. Erfahren Sie mehr über das [Aktivieren dieser Optionen im Verwaltungsportal](service-admin-portal.md#control-usage-metrics). 
 
-## <a name="about-the-usage-metrics-report"></a>Informationen zum Bericht „Nutzungsmetriken“
-
-Wenn Sie auf **Nutzungsmetriken** oder das Symbol ![Symbol „Nutzungsmetriken“](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png) neben einem Dashboard oder Bericht klicken, generiert Power BI einen vorgefertigten Bericht mit Nutzungsmetriken für den jeweiligen Inhalt für die letzten 90 Tage.  Dieser Bericht sieht ganz ähnlich aus wie die Power BI-Berichte, die Sie bereits kennen. Je nachdem, wie Ihre Endbenutzer Zugriff erhalten haben, über das Web, eine mobile App usw., können Sie Datenschnitte anlegen. So wie sich Ihre Dashboards und Berichte entwickeln, wird sich auch der Bericht zu Nutzungsmetriken entwickeln, der jeden Tag mit neuen Daten aktualisiert wird.  
-
-Berichte zu Nutzungsmetriken werden nicht unter **Zuletzt verwendet**, **Arbeitsbereiche**, **Favoriten** oder in anderen Inhaltslisten angezeigt. Sie können nicht zu Apps hinzugefügt werden. Wenn Sie eine Kachel aus einem Nutzungsmetrikbericht an ein Dashboard anheften, können Sie dieses Dashboard nicht zu einer App hinzufügen.
-
-Um tiefer in die Berichtsdaten einzusteigen oder auf der Grundlage des zugrunde liegenden Datasets eigene Berichte zu erstellen, bieten sich Ihnen zwei Optionen: 
-
-- Erstellen einer Kopie des Berichts im Power BI-Dienst. Details finden Sie weiter unten in diesem Artikel unter [Speichern einer Kopie des Nutzungsmetrikberichts](#save-a-copy-of-the-usage-metrics-report).
-- Herstellen einer Verbindung mit dem Dataset aus Power BI Desktop. Details finden Sie unter [Herstellen einer Verbindung mit einem veröffentlichten Dataset](desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset).
-
-    ![Herstellen einer Verbindung mit dem Dataset eines Nutzungsberichts](media/service-usage-metrics/power-bi-usage-dataset.png)
-
-## <a name="open-a-usage-metrics-report-for-a-dashboard-or-report"></a>Öffnen des Berichts „Nutzungsmetriken“ für ein Dashboard oder einen Bericht
+## <a name="view-a-usage-metrics-report"></a>Anzeigen eines Berichts zu Nutzungsmetriken
 
 1. Starten Sie im Arbeitsbereich, der das Dashboard oder den Bericht enthält.
 2. Klicken Sie entweder in der Inhaltsliste im Arbeitsbereich oder im Dashboard bzw. im Bericht selbst auf das Symbol für **Nutzungsmetriken** ![Symbol „Nutzungsmetriken“](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png).
@@ -82,6 +69,18 @@ Um tiefer in die Berichtsdaten einzusteigen oder auf der Grundlage des zugrunde 
 
 ![Bericht „Nutzungsmetriken“ für Berichte](media/service-usage-metrics/power-bi-report-usage-metrics-update.png)
 
+## <a name="about-the-usage-metrics-report"></a>Informationen zum Bericht „Nutzungsmetriken“
+
+Wenn Sie auf **Nutzungsmetriken** oder das Symbol ![Symbol „Nutzungsmetriken“](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png) neben einem Dashboard oder Bericht klicken, generiert Power BI einen vorgefertigten Bericht mit Nutzungsmetriken für den jeweiligen Inhalt für die letzten 90 Tage.  Dieser Bericht sieht ganz ähnlich aus wie die Power BI-Berichte, die Sie bereits kennen. Je nachdem, wie Ihre Endbenutzer Zugriff erhalten haben, über das Web, eine mobile App usw., können Sie Datenschnitte anlegen. So wie sich Ihre Dashboards und Berichte entwickeln, wird sich auch der Bericht zu Nutzungsmetriken entwickeln, der jeden Tag mit neuen Daten aktualisiert wird.  
+
+Berichte zu Nutzungsmetriken werden nicht unter **Zuletzt verwendet**, **Arbeitsbereiche**, **Favoriten** oder in anderen Inhaltslisten angezeigt. Sie können nicht zu Apps hinzugefügt werden. Wenn Sie eine Kachel aus einem Nutzungsmetrikbericht an ein Dashboard anheften, können Sie dieses Dashboard nicht zu einer App hinzufügen.
+
+Um tiefer in die Berichtsdaten einzusteigen oder auf der Grundlage des zugrunde liegenden Datasets eigene Berichte zu erstellen, bieten sich Ihnen zwei Optionen: 
+
+- Erstellen einer Kopie des Berichts im Power BI-Dienst. Details finden Sie weiter unten in diesem Artikel unter [Speichern einer Kopie des Nutzungsmetrikberichts](#save-a-copy-of-the-usage-metrics-report).
+- Herstellen einer Verbindung mit dem Dataset aus Power BI Desktop. Für jeden Arbeitsbereich ist als Namen des Datasets „Report Usage Metrics Model“ (Modell für Bericht zu Nutzungsmetriken) festgelegt. Details finden Sie unter [Herstellen einer Verbindung mit einem veröffentlichten Dataset](desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset).
+
+    ![Herstellen einer Verbindung mit dem Dataset eines Nutzungsberichts](media/service-usage-metrics/power-bi-usage-dataset.png)
 
 ## <a name="which-metrics-are-reported"></a>Welche Metriken werden gemeldet?
 
@@ -105,7 +104,7 @@ Um tiefer in die Berichtsdaten einzusteigen oder auf der Grundlage des zugrunde 
 
 Verwenden Sie **Speichern unter**, um den Nutzungsmetrikbericht in einen gewöhnlichen Power BI-Bericht umzuwandeln, den Sie nach Ihren spezifischen Bedürfnissen anpassen können. Sie können Power BI Desktop ebenfalls zum Erstellen von benutzerdefinierten Nutzungsmetrikberichten auf dem zugrunde liegenden Dataset verwenden. Details finden Sie unter [Herstellen einer Verbindung mit einem veröffentlichten Dataset](desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset).
 
-Das zugrunde liegende Dataset enthält sogar die Nutzungsdetails für alle Dashboards oder Berichte im Arbeitsbereich. Dadurch öffnen sich weitere Möglichkeiten. Sie könnten z.B. einen Bericht erstellen, der alle Dashboards in Ihrem Arbeitsbereich basierend auf der Nutzung vergleicht. Oder Sie erstellen ein Dashboard „Nutzungsmetriken“ für Ihre Power BI-App, indem Sie Nutzungsdaten für alle Inhalte, die innerhalb dieser App verteilt sind, aggregieren.  Mehr dazu finden Sie unter [Entfernen des Filters auf Seitenebene](#remove-the-filter-to-see-all-workspace-usage-metrics) weiter unten in diesem Artikel.
+Das zugrunde liegende Dataset enthält sogar die Nutzungsdetails für alle Dashboards oder Berichte im Arbeitsbereich. Dadurch öffnen sich weitere Möglichkeiten. Sie könnten z.B. einen Bericht erstellen, der alle Dashboards in Ihrem Arbeitsbereich basierend auf der Nutzung vergleicht. Oder Sie erstellen ein Dashboard „Nutzungsmetriken“ für Ihre Power BI-App, indem Sie Nutzungsdaten für alle Inhalte, die innerhalb dieser App verteilt sind, aggregieren.  Wie Sie den Filter entfernen und [sich alle Nutzungsmetriken für den Arbeitsbereich anzeigen lassen](#see-all-workspace-usage-metrics), erfahren Sie weiter unten in diesem Artikel.
 
 ### <a name="create-a-copy-of-the-usage-report"></a>Erstellen einer Kopie des Nutzungsberichts
 
@@ -121,7 +120,7 @@ Wenn Sie eine Kopie des schreibgeschützten, vordefinierten Nutzungsberichts ers
 
     ![Registerkarte „Berichte“](media/service-usage-metrics/power-bi-new-report.png)
 
-## <a name="remove-the-filter-to-see-all-workspace-usage-metrics"></a>Entfernen Sie den Filter, um *alle* Nutzungsmetriken im Arbeitsbereich anzuzeigen.
+## <a name="see-all-workspace-usage-metrics"></a>Anzeigen *aller* Nutzungsmetriken im Arbeitsbereich
 
 Um die Metriken für alle Dashboards oder für alle Berichte im Arbeitsbereich angezeigt zu bekommen, müssen Sie einen Filter entfernen. Der Bericht wird standardmäßig gefiltert, um nur Metriken für das Dashboard oder den Bericht anzuzeigen, das bzw. den Sie für die Erstellung verwendet haben.
 
@@ -169,7 +168,7 @@ Neben dem Verständnis der möglichen Unterschiede zwischen Nutzungsmetriken und
 
 **F:**    Verzeichnen Nutzungsmetriken Ansichten aus eingebetteten Dashboards und Berichten?
 
-**A:**    Nutzungsmetriken unterstützen derzeit nicht das Aufzeichnen der Nutzung eingebetteter Dashboards und Berichte, einschließlich des Flows [Im Web veröffentlichen](service-publish-to-web.md).          In diesen Fällen wird empfohlen, zum Nachverfolgen der Nutzung für die Host-App oder das Hostportal Webanalyseplattformen zu verwenden.
+**A:**    Mit Nutzungsmetriken kann derzeit nicht erfasst werden, wie eingebettete Dashboards und Berichte sowie der Flow [Im Web veröffentlichen](service-publish-to-web.md) genutzt werden. In diesen Fällen wird empfohlen, zum Nachverfolgen der Nutzung für die Host-App oder das Hostportal Webanalyseplattformen zu verwenden.
 
 **F:**    Ich kann für keine Inhalte Nutzungsmetriken erfassen.
 

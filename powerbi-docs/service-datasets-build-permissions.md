@@ -1,5 +1,5 @@
 ---
-title: 'Erstellen und Freigeben von Datasets (Vorschau): Power BI'
+title: Freigeben eines Datasets (Vorschau)
 description: Als Datasetbesitzer können Sie Ihre Datasets erstellen und teilen, damit andere sie verwenden können. Erfahren Sie, wie Sie die Kontrolle über die zum Zugriff auf ihre Daten berechtigten Personen behalten, indem Sie die Erstellungsberechtigung verwenden.
 author: maggiesMSFT
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 22339b3d5062c01b3795086eede24ed6a8e7d7e7
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: 17c3322ed5f24d106412bafb9c4235ee15a626aa
+ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461762"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69530509"
 ---
-# <a name="create-and-share-datasets-preview"></a>Erstellen und Freigeben von Datasets (Vorschau)
+# <a name="share-a-dataset-preview"></a>Freigeben eines Datasets (Vorschau)
 
 Als Ersteller von *Datenmodellen* in Power BI Desktop können Sie sie als *Datasets* im Power BI-Dienst freigeben. Anschließend können Berichtersteller die von Ihnen freigegebenen Datasets auf einfache Weise finden und wiederverwenden. Erfahren Sie, wie Sie sie teilen, und wie Sie mithilfe der Erstellungsberechtigung steuern, wer Zugriff auf die Daten hat.
 
@@ -31,7 +31,7 @@ Als Ersteller von *Datenmodellen* in Power BI Desktop können Sie sie als *Datas
     
     Damit können andere Mitglieder dieses Arbeitsbereichs bereits Berichte auf der Grundlage dieses Datasets in anderen Arbeitsbereichen erstellen.
 
-1. Jetzt können Sie aus diesem Arbeitsbereich [eine App erstellen](service-create-distribute-apps.md). Geben Sie in diesem Fall auf der Seite **Berechtigungen** an, wer über Berechtigungen verfügt und was er bzw. sie damit tun kann.
+1. Sie können aus diesem Arbeitsbereich auch eine [App veröffentlichen](service-create-distribute-apps.md). Geben Sie in diesem Fall auf der Seite **Berechtigungen** an, wer über Berechtigungen verfügt und was er bzw. sie damit tun kann.
 
     > [!NOTE]
     > Wenn Sie **Gesamte Organisation** auswählen, hat niemand in der Organisation Erstellungsberechtigungen. Dieses Problem ist bereits bekannt. Geben Sie vielmehr E-Mail-Adressen in **Bestimmte Benutzer oder Gruppen** an.  Wenn Sie Erstellungsberechtigungen für Ihre gesamte Organisation festlegen möchten, geben Sie einen E-Mail-Alias für die gesamte Organisation an.
@@ -46,6 +46,8 @@ Der Erstellen-Berechtigungstyp ist nur für Datasets relevant. Mit ihm können B
 
 Benutzer erhalten die Erstellungsberechtigung auf unterschiedliche Weise:
 
+- Wenn Sie mindestens in der Rolle „Mitwirkender“ Mitglied eines Arbeitsbereichs sind, haben Sie automatisch die Berechtigung zum Erstellen eines Datasets und die Berechtigung zum Kopieren eines Berichts.
+ 
 - Ein Mitglied des Arbeitsbereichs, in dem sich das Dataset befindet, kann die Berechtigung im Berechtigungscenter bestimmten Benutzern oder Sicherheitsgruppen zuweisen. Wählen Sie die Auslassungspunkte (…) neben einem Dataset > **Berechtigungen verwalten** aus.
 
     ![Auswählen der Auslassungspunkte](media/service-datasets-build-permissions/power-bi-dataset-manage-permissions.png)
@@ -54,13 +56,13 @@ Benutzer erhalten die Erstellungsberechtigung auf unterschiedliche Weise:
 
     ![Berechtigungscenter](media/service-datasets-build-permissions/power-bi-dataset-permissions.png)
 
-- Ein Administrator oder Mitglied des Arbeitsbereichs, in dem das Dataset gespeichert ist, kann während des Veröffentlichens einer App entscheiden, dass Benutzer mit Berechtigung für die App außerdem die Erstellungsberechtigung für die zugrundeliegenden Datasets erhalten. Details finden Sie unter [Schritte zum Freigeben Ihres Datasets](#steps-to-sharing-your-dataset).
+- Ein Administrator oder Mitglied des Arbeitsbereichs, in dem das Dataset gespeichert ist, kann während des Veröffentlichens einer App entscheiden, dass Benutzer mit Berechtigung für die App außerdem die Erstellungsberechtigung für die zugrundeliegenden Datasets erhalten. Weitere Informationen finden Sie unter [Schritte zum Freigeben Ihres Datasets](#steps-to-sharing-your-dataset) in diesem Artikel.
 
 - Angenommen, Sie besitzen die Berechtigungen „Erneut freigeben“ und „Erstellen“ für ein Dataset. Beim Freigeben eines Berichts oder eines Dashboards, das auf der Grundlage dieses Datasets erstellt wurde, können Sie angeben, dass die Empfänger außerdem die Erstellungsberechtigung für das zugrundeliegende Dataset erhalten sollen.
 
     ![Erstellungsberechtigungen](media/service-datasets-build-permissions/power-bi-share-report-allow-users.png)
 
-Sie können die Erstellungsberechtigungen von Personen für ein Dataset entfernen. Wenn Sie dies tun, können die betroffenen Personen immer noch den auf dem freigegebenen Dataset erstellten Bericht anzeigen, sie können ihn aber nicht mehr ändern.
+Sie können die Erstellungsberechtigungen einer Person für ein Dataset entfernen. Wenn Sie dies tun, können die betroffenen Personen immer noch den auf dem freigegebenen Dataset erstellten Bericht anzeigen, sie können ihn aber nicht mehr ändern.
 
 ## <a name="more-granular-permissions"></a>Feiner abgestimmte Berechtigungen
 
