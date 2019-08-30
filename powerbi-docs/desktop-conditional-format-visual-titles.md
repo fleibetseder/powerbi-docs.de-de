@@ -10,12 +10,12 @@ ms.topic: reference
 ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1b4e134ef6f8da43a1856c8a5458c8c09b2c42b5
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 7917edc17bd93d96c22641b14c4c70bfe3222e10
+ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68522173"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69621280"
 ---
 # <a name="expression-based-titles-in-power-bi-desktop"></a>Ausdrucksbasierte Titel in Power BI Desktop
 
@@ -57,7 +57,7 @@ Nachdem Sie den DAX-Ausdruck für das Feld erstellt haben, das Sie in Ihrem Mode
 
 Um das Feld auszuwählen und anzuwenden, wechseln Sie zum Bereich **Visualisierungen**. Wählen Sie im Abschnitt **Format** die Option **Titel** aus, um die Titeloptionen für das visuelle Element anzuzeigen. 
 
-Wenn Sie mit der rechten Maustaste auf **Titeltext** klicken, wird ein Kontextmenü angezeigt, in dem Sie ***fx*Bedingte Formatierung** auswählen können. Wenn Sie dieses Menüelement auswählen, wird das Dialogfeld **Titeltext** angezeigt. 
+Wenn Sie mit der rechten Maustaste auf **Titeltext** klicken, wird ein Kontextmenü angezeigt, in dem Sie **<em>fx</em>Bedingte Formatierung** auswählen können. Wenn Sie dieses Menüelement auswählen, wird das Dialogfeld **Titeltext** angezeigt. 
 
 ![Screenshot des Dialogfelds „Titeltext“](media/desktop-conditional-formatting-visual-titles/expression-based-title-02b.png)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/28/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 06ba5835a568b7158a204ea6676e92844d40414d
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: 7d45b63d3cd97185ce9be9e0592565a491cf195f
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375260"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69655034"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Neuigkeiten bei Power BI
 Auf dieser Seite finden Sie Informationen zu bekannten Problemen und kürzlich veröffentlichen Features im **Power BI-Dienst**. Informationen zu verwandten Neuigkeiten finden Sie unter:
@@ -32,30 +32,30 @@ Sehen Sie sich auch die YouTube-Kanäle an, um Informationen zu Neuerungen und F
 
 ## <a name="may-2019"></a>Mai 2019
 * [Benutzerdefinierte Navigation](service-create-distribute-apps.md) für Power BI-Apps.
-* Zusätzliche (PPTX, XLSX, DOCX, CSV, XML) verfügbaren Anlagentypen für e-Mail-Abonnements in paginierten Berichten.
+* Weitere Anlagentypen wurden für E-Mail-Abonnements in paginierten Berichten zur Verfügung gestellt (PPTX, XLSX, DOCX, CSV, XML).
 
 ## <a name="previous-months-2019"></a>Vorherige Monate (2019)
 ### <a name="april-2019"></a>April 2019
-* Allgemeine Verfügbarkeit von Power BI [Datenflüsse](service-dataflows-overview.md).
-* Allgemeine Verfügbarkeit der neuen Arbeitsbereichen.
-* Neue Power BI-Regionen in Frankreich und Korea.
-* Aktualisierte f & A für Dashboards.
-* Unterstützung für Azure Analysis Services in [paginierte Berichte](paginated-reports-report-builder-power-bi.md).
-* Paginierte Berichte in Power BI-Apps unterstützt.
-* [E-Mail-Abonnements](https://powerbi.microsoft.com/en-us/blog/e-mail-subscriptions-for-paginated-reports-is-now-available/) mit PDF-Anlagen für paginierte Berichte.
-* Power BI Premium-Zusammenfassung und Workload-Metriken im Admin-Portal unterstützt
-* [Abfrage-Cache](power-bi-query-caching.md) in Power BI Premium verfügbar.
-* Allgemeine Verfügbarkeit von [Power BI Startseite](https://powerbi.microsoft.com/en-us/blog/announcing-power-bi-home-general-availability-ga-roadmap/).
+* Power BI-[Dataflows](service-dataflows-overview.md) ist nun allgemein verfügbar.
+* Die neuen Arbeitsbereiche sind nun allgemein verfügbar.
+* Neue Power BI-Regionen für Frankreich und Korea.
+* Die Q&A-Funktion für Dashboards wurde aktualisiert.
+* Azure Analysis Services wird nun in [paginierten Berichten](paginated-reports-report-builder-power-bi.md) unterstützt.
+* Paginierte Berichte werden nun in Power BI-Apps unterstützt.
+* [E-Mail-Abonnements](https://powerbi.microsoft.com/en-us/blog/e-mail-subscriptions-for-paginated-reports-is-now-available/) mit PDF-Anlagen werden nun für paginierte Berichte unterstützt.
+* Die Zusammenfassungs- und Workloadmetriken von Power BI Premium werden nun im Verwaltungsportal unterstützt.
+* Die [Zwischenspeicherung von Abfragen](power-bi-query-caching.md) ist nun in Power BI Premium verfügbar.
+* [Power BI Home](https://powerbi.microsoft.com/en-us/blog/announcing-power-bi-home-general-availability-ga-roadmap/) ist nun allgemein verfügbar.
 
 ### <a name="march-2019"></a>März 2019
 * Allgemeine Verfügbarkeit von Multi-Geo für Power BI Premium.
 * Unterstützung für die Bearbeitung und Verwaltung von Power BI-Inhalten für Azure B2B.
-* Öffentliche Vorschau von nur-Lese [XMLA-Endpunkt](https://powerbi.microsoft.com/en-us/blog/power-bi-open-platform-connectivity-with-xmla-endpoints-public-preview/).
+* Öffentliche Vorschau von schreibgeschützten [XMLA-Endpunkten](https://powerbi.microsoft.com/en-us/blog/power-bi-open-platform-connectivity-with-xmla-endpoints-public-preview/).
 
 ### <a name="february-2019"></a>Februar 2019
 * Workloads und aktive Metrik für Datasetgrößen in der [App zum Überwachen der Kapazität](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 * Exportieren nach PDF für Power BI-Berichte.
-* [Bei Bedarf e-Mail-Abonnements](service-report-subscribe.md).
+* [E-Mail-Abonnements bei Bedarf](service-report-subscribe.md).
 * Massenvorgänge im Verwaltungsportal.
 * Gefilterter Export für PPT und PDF.
 * [Hilfe- und Supporteinstellungen](https://powerbi.microsoft.com/en-us/blog/tailoring-help-and-support-for-power-bi-users/) im Verwaltungsportal.
@@ -87,8 +87,8 @@ Sehen Sie sich auch die YouTube-Kanäle an, um Informationen zu Neuerungen und F
 
 ### <a name="september-2018"></a>September 2018
 * [Dashboardkommentare](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/) im Power BI-Dienst.
-* Öffentliche Vorschau von [Startseite Power BI und globale Suche](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search/).
-* Möglichkeit zum [überwachen Abfragen](https://powerbi.microsoft.com/en-us/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) in die [Kapazität Überwachungs-app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+* Öffentliche Vorschau von [Power BI Home und der globalen Suche](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search/).
+* Das [Überwachen von Abfragen](https://powerbi.microsoft.com/en-us/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) ist nun in der [Kapazitätsüberwachungs-App](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/) verfügbar.
 
 ### <a name="august-2018"></a>August 2018
 * [Kapazitätsüberwachungs-App](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/) für Power BI Premium.
@@ -257,7 +257,7 @@ Alle Details finden Sie im [Blog des Power BI-Teams](https://powerbi.microsoft.c
 
 ***Dashboards***
 
-* Dashboardfavoriten: Sie können jetzt auf Dashboards zugreifen, die Sie dringend benötigen, indem Sie sie als Favoriten markieren und in all Ihren Arbeitsbereichen zugänglich machen.
+* Dashboardfavoriten: Sie können jetzt auf Dashboards zugreifen, die Sie dringend benötigen, indem Sie sie als Favoriten markieren und in allen Ihren Arbeitsbereichen zugänglich machen.
 
 ***In Excel analysieren***
 
@@ -350,7 +350,7 @@ In diesem Monat wurden einige Updates bei Dashboards, Schnelleinblicken und Q&A 
 
 ***Quick Insights (Schnelle Einblicke)***
 
-* Der Trend und die Korrelation Insights haben jetzt Trendlinien, um Muster in den Daten finden Sie unter erleichtern.
+* Die Erkenntnisse „Trend“ und „Korrelation“ enthalten jetzt Trendlinien, um das Erkennen von Mustern in den Daten zu erleichtern.
 
 ***Q&A***
 
@@ -513,7 +513,7 @@ Im [Power BI-Blog](http://blogs.msdn.com/b/powerbi/archive/2015/12/16/more-power
 * Laden von lokalen Berichten verbessert
 * Dashboards können direkt mit dem Arbeitsbereich eines anderen Benutzers geteilt werden
 * Benutzeroberfläche für den Google Analytics-Connector verbessert
-* Ihr Power BI-Konto schließen
+* Schließen des Power BI-Kontos möglich
 
 Alle Details finden Sie im [Power BI-Blog](http://blogs.msdn.com/b/powerbi/archive/2015/11/24/power-bi-weekly-service-update-1124.aspx).
 
@@ -623,10 +623,6 @@ Weitere Informationen finden Sie in unserem [Blog](http://blogs.msdn.com/b/power
 * Der dynamische Zeichenbereich passt standardmäßig alle Berichtselemente in ein optimales Verhältnis zur Größe des Browserfensters an. Wenn Sie das Seitenverhältnis sperren oder den Bericht anderweitig anpassen möchten, bieten wir Ihnen nun drei weitere Optionen: An Seite anpassen, An Breite anpassen und Tatsächliche Größe.
 * Zudem können Sie jetzt mehr Datasets und Berichte speichern. Jetzt sind bis zu 200 Datasets und 200 Berichte für jedes Dataset in Ihrem Power BI-Konto möglich.
 
-**25. August 2015**
-
-* Sie können Power BI jetzt zum Überwachen, Untersuchen und [Visualisieren Ihrer Adobe Analytics-Daten](http://blogs.msdn.com/b/powerbi/archive/2015/08/25/exploring-your-adobe-analytics-data-in-power-bi.aspx) verwenden. Mit dem sofort einsetzbaren Inhaltspaket können Sie umgehend Verbindungen herstellen und Erkenntnisse aus Ihren Daten gewinnen. Weitere Informationen finden Sie auf der [Hilfeseite zum Adobe Analytics-Inhaltspaket für Power BI](service-connect-to-adobe-analytics.md).
-
 **18. August 2015**
 
 * Azure Mobile Engagement ist ein App-Analyse-Dienst, mit dem Entwickler die Leistung ihrer Anwendung prüfen und dadurch die Benutzerbindung und App-Nutzung verbessern können. Mit dem [Azure Mobile Engagement-Inhaltspaket für Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/08/17/monitor-and-analyze-your-azure-mobile-engagement-data-in-power-bi.aspx) können Sie schnell ein sofort einsetzbares Dashboard, diverse Berichte und ein umfassendes Dataset aufrufen, um unmittelbar Einblicke in die Leistung Ihrer App zu erhalten. Weitere Informationen finden auf der [Hilfeseite zum Azure Mobile Engagement-Inhaltspaket für Power BI](service-connect-to-azure-mobile.md).
@@ -682,10 +678,6 @@ Weitere Informationen finden Sie in unserem [Blog](http://blogs.msdn.com/b/power
 
 * Mit SweetIQ können Sie durch Standortangabe einfach Ihre lokalen Angebote verfolgen und Daten aus Ihrem lokalen Suchökosystem überprüfen. Power BI ermöglicht Ihnen, diese Daten mit [sofort verwendbaren Inhalten](http://blogs.msdn.com/b/powerbi/archive/2015/06/16/analyze-and-monitor-your-sweetiq-data-with-power-bi.aspx) aus Ihren SweetIQ-Daten zu analysieren und zu überwachen. Weitere Informationen zu den ersten Schritten erhalten Sie auf der [Hilfeseite zum SweetIQ-Inhaltspaket für Power BI](service-connect-to-sweetiq.md).
 
-**9. Juni 2015**
-
-* Power BI ermöglicht das Überwachen und Durchsuchen dieser Daten mithilfe der [MailChimp-APIs](http://blogs.msdn.com/b/powerbi/archive/2015/06/09/user-power-bi-to-monitor-and-visualize-your-mailchimp-data.aspx) und bietet sofort verwendbare Inhalte für Ihre Analysen. Dashboards, Berichte und Datasets, die für das MailChimp-Szenario erstellt wurden, ermöglichen den einfachen Zugriff auf Daten, z. B. die besten Kampagnen der gesamten Aufrufe nach Wochentag. Weitere Informationen zu den ersten Schritten erhalten Sie in der [Dokumentation zum MailChimp-Inhaltspaket für Power BI](service-connect-to-mailchimp.md).
-
 **2. Juni 2015**
 
 * Die Nachverfolgung wichtiger statistischer Daten zu Ihren Apps ist mit Power BI und dem [appFigures-Inhaltspaket](http://blogs.msdn.com/b/powerbi/archive/2015/06/02/explore-and-analyze-your-appfigures-data-with-power-bi.aspx) ein Kinderspiel. Weitere Informationen zum Verbinden und den ersten Schritten erhalten Sie in der [Dokumentation zum appFigures-Inhaltspaket für Power BI](service-connect-to-appfigures.md).
@@ -697,7 +689,6 @@ Weitere Informationen finden Sie in unserem [Blog](http://blogs.msdn.com/b/power
 
 **13. Mai 2015**
 
-* Mit dem aktuellen Update in Power BI können Sie mit einem Satz von Berichten und einem angepassten Dashboard eine Verbindung zu den von der **SQL-Datenbanküberwachung** protokollierten Daten herstellen. Dieses Inhaltspaket erleichtert das Aufdecken verdächtiger Ereignisse, ungewöhnlicher Aktivitäten und Trends basierend auf einem Dataset, das für die Berichte erstellt wurde. Weitere Informationen erhalten Sie im [Blogbeitrag](http://blogs.msdn.com/b/powerbi/archive/2015/05/14/monitor-your-azure-sql-database-auditing-activity-with-power-bi.aspx) und in der [Dokumentation](service-connect-to-azure-sql-database-auditing.md).
 * Sie können eine direkte Verbindung zu den in Ihrer **Azure SQL-Datenbank**gespeicherten Daten herstellen. Wir können Abfragen dynamisch generieren und Abfragen an die Quelle senden, sodass Sie interaktive Berichte direkt über Ihre Datenbank erstellen. Weitere Informationen finden Sie im [Blogbeitrag](http://blogs.msdn.com/b/powerbi/archive/2015/05/13/using-power-bi-to-visualize-and-explore-azure-sql-databases.aspx) und in der [Dokumentation](service-azure-sql-database-with-direct-connect.md).
 
 **7. Mai 2015**
@@ -714,7 +705,7 @@ Weitere Informationen finden Sie in unserem [Blog](http://blogs.msdn.com/b/power
 
 **15. April 2015**
 
-* Sie können Ihre **Google Analytics** -Daten jetzt mit unserem neuen Inhaltspaket visualisieren und entdecken! Mit dem Google Analytics-Inhaltspaket erhalten Sie ein Dashboard, Berichte und Datasets, mit denen Sie Erkenntnisse über die Nutzung Ihrer Website in den letzten 6 Monaten erhalten. Sie können lesen [Blogbeitrag](http://blogs.msdn.com/b/powerbi/archive/2015/04/15/visualize-and-explore-your-google-analytics-data-with-power-bi.aspx).
+* Sie können Ihre **Google Analytics** -Daten jetzt mit unserem neuen Inhaltspaket visualisieren und entdecken! Mit dem Google Analytics-Inhaltspaket erhalten Sie ein Dashboard, Berichte und Datasets, mit denen Sie Erkenntnisse über die Nutzung Ihrer Website in den letzten 6 Monaten erhalten. Weitere Informationen finden Sie in [diesem Blogbeitrag](http://blogs.msdn.com/b/powerbi/archive/2015/04/15/visualize-and-explore-your-google-analytics-data-with-power-bi.aspx).
 * Sie können jetzt **alle Karten anheften** (außer diejenigen, die KPIs und Bilder von Q&A und Berichten enthalten).
 * Nun können Sie **Karten in Q&A verwenden**, indem Sie der Abfrage den Ausdruck „Als Karte“ hinzufügen.
 
@@ -732,7 +723,7 @@ Weitere Informationen finden Sie in unserem [Blog](http://blogs.msdn.com/b/power
 
 **26. Januar 2015**
 
-* Nutzbarkeit und Zuverlässigkeit des Dienstes wurden in verschiedenen Bugfixes verbessert.
+* Nutzbarkeit und Zuverlässigkeit des Dienstes wurden mit verschiedenen Fehlerbehebungen verbessert.
 
 ## <a name="2014"></a>2014
 **11. Dezember 2014**

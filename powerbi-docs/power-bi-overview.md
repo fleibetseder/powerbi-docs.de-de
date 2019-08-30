@@ -6,15 +6,15 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: overview
-ms.date: 05/30/2019
+ms.date: 08/19/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: d6c9eb47d5f88a2d835c1ba6835e871b0c64bf1c
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: 0e12d110708c955e0c63e11f7578523222375448
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68324766"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654997"
 ---
 # <a name="what-is-power-bi"></a>Was ist Power BI?
 **Power BI** ist eine Sammlung von Softwarediensten, Apps und Connectors, die zusammenwirken, um Ihre nicht verbundenen Datenquellen in kohärente, visuell überzeugende und interaktive Einblicke umzuwandeln. Ihre Daten können als Excel-Kalkulationstabelle oder als eine hybride Sammlung von cloudbasierten und lokalen Data Warehouse-Instanzen vorliegen. Mit Power BI können Sie komfortabel Verbindungen zwischen Ihren Datenquellen herstellen, die wichtigen Punkte entdecken und visualisieren und die Ergebnisse mit den gewünschten Personen teilen.
@@ -27,9 +27,9 @@ Power BI kann einfach und schnell sein – und Schnelleinblicke aus einem Excel-
 Power BI besteht aus Folgendem: 
 - Windows-Desktopanwendung namens **Power BI Desktop**
 - Online-SaaS-Dienst (*Software-as-a-Service*) namens **Power BI-Dienst** 
-- **Mobile Power BI-Apps** für Windows-, iOS- oder Android-Geräte
+- **Mobile Power BI-Apps** für Windows-, iOS- und Android-Geräte
 
-![Power BI Desktop, Dienst, mobil](media/power-bi-overview/power-bi-blocks.png)
+![Power BI Desktop, Dienst, mobil](media/power-bi-overview/power-bi-overview-blocks.png)
 
 Diese drei Komponenten – &mdash;Power BI Desktop, der Dienst und die mobilen Apps&mdash; – wurden entwickelt, damit Benutzer ihren Anforderungen oder ihrer Rolle entsprechend Geschäftseinblicke möglichst effektiv erstellen, freigeben und nutzen können.
 
@@ -70,6 +70,6 @@ Power BI-Berichtsserver ist eine Lösung, die Sie hinter Ihrer Firewall bereitst
 Informieren Sie sich umfassender über den [Power BI-Berichtsserver](report-server/get-started.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
-- [Quickstart: Learn your way around the Power BI service (Schnellstart: Kennenlernen des Power BI-Diensts)](service-the-new-power-bi-experience.md)   
+- [Schnellstart: Learn your way around the Power BI service (Schnellstart: Kennenlernen des Power BI-Diensts)](service-the-new-power-bi-experience.md)   
 - [Tutorial: Erste Schritte mit dem Power BI-Dienst](service-get-started.md)
 - [Schnellstart: Herstellen einer Verbindung mit Daten in Power BI Desktop](desktop-quickstart-connect-to-data.md)

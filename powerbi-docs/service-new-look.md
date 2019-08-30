@@ -1,5 +1,5 @@
 ---
-title: Navigieren durch das neue Design des Power BI-Diensts
+title: Das neue Design des Power BI-Diensts
 description: Der Power BI-Dienst (app.powerbi.com) hat ein neues Design. In diesem Artikel wird beschrieben, wie Sie mit dem neuen Design in Berichten navigieren.
 author: maggiesMSFT
 manager: kfile
@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/24/2019
+ms.date: 08/19/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: aa7de324e77b8f2b1c58e558c0814df97d997631
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: 6c752b6083d2f3baecf7e1a9ce20f77e8c5a46d0
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68471305"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654948"
 ---
-# <a name="navigate-the-new-look-of-the-power-bi-service"></a>Navigieren durch das neue Design des Power BI-Diensts
+# <a name="the-new-look-of-the-power-bi-service"></a>Das neue Design des Power BI-Diensts
 
-Der Power BI-Dienst hat ein neues Design. Sie können Berichte nun einfacher anzeigen. Das neue Design bietet eine moderne Oberfläche, die einfacher aufgebaut ist und auf dem vertrauten Aussehen anderer Microsoft-Produkte basiert. Innerhalb des gesamten Power BI-Diensts bilden nun Berichtsinhalte den wesentlichen Schwerpunkt. Dazu wurde zu einem helleren Farbdesign und aktualisierten Symbolen gewechselt. Hier sehen Sie eine Übersicht über die Änderungen beim neuen Design. Ausführlichere Informationen finden Sie in den nummerierten Abschnitten:
+Der Power BI-Dienst (app.powerbi.com) verfügt über ein neues Design, das das Anzeigen und Interagieren mit Ihren Berichten vereinfacht. Das neue Design bietet eine moderne Oberfläche, die einfacher aufgebaut ist und auf dem vertrauten Aussehen anderer Microsoft-Produkte basiert. Innerhalb des gesamten Power BI-Diensts bilden nun Berichtsinhalte den wesentlichen Schwerpunkt. Dazu wurde zu einem helleren Farbdesign und aktualisierten Symbolen gewechselt. Hier sehen Sie eine Übersicht über die Änderungen beim neuen Design. Ausführlichere Informationen finden Sie in den nummerierten Abschnitten:
 
 ![Übersicht über die Änderungen beim neuen Design](media/service-new-look/power-bi-new-look-changes.png)
 
@@ -35,7 +35,7 @@ Jeder Benutzer des Power BI-Diensts kann das neue Design auswählen. Verschieben
 
 ![Auswählen des neuen Designs](media/service-new-look/power-bi-new-look-off.png)
 
-Wenn Sie zum alten Design zurückkehren müssen, wählen Sie das Menü mit den Auslassungspunkten in der oberen rechten Ecke aus.
+Wenn Sie das alte Design benötigen, können Sie die Option ![Neues Design ein](media/service-new-look/power-bi-new-look-toggle-on.png) einfach wieder in **aus** ändern. Wenn die Schaltfläche nicht angezeigt wird, klicken Sie auf das Dreipunktmenü in der oberen rechten Ecke.
 
 ![Abwählen des neuen Designs](media/service-new-look/power-bi-new-look-on.png)
 
@@ -82,7 +82,7 @@ Auch Dashboards verfügen wie Berichte und Apps über eine vereinfachte Aktionsl
 
 ## <a name="no-changes-to-edit-mode"></a>Keine Änderungen am Bearbeitungsmodus 
 
-Die Erstellungsoberfläche ähnelt weiterhin der in Desktop. Die Änderungen durch das neue Design betreffen ausschließlich die Leseansicht.
+Die Erstellungsoberfläche ähnelt weiterhin der Oberfläche in Power BI Desktop. Die Änderungen durch das neue Design betreffen ausschließlich die Leseansicht.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

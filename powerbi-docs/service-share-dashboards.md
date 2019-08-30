@@ -8,26 +8,26 @@ featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/24/2019
+ms.date: 08/19/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d82b03325991276924f25da5511baadfe53127e1
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: da7b8999dfb6185b044960dde7795008d7e716f7
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523002"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69655084"
 ---
 # <a name="share-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Freigeben von Power BI-Dashboards und -Berichten für Kollegen und andere
 *Freigeben* ist eine gute Möglichkeit, einigen Personen Zugriff auf Ihre Dashboards und Berichte zu gewähren. Zudem bietet Power BI [verschiedene Möglichkeiten zum gemeinsamen Bearbeiten und Verteilen von Dashboards und Berichten](service-how-to-collaborate-distribute-dashboards-reports.md).
 
-![Symbol „Freigeben“ in einer Liste von Favoritendashboards](media/service-share-dashboards/power-bi-share-dash-report-favorites.png)
+![Symbol „Freigeben“ in einer Liste von Dashboards](media/service-share-dashboards/power-bi-share-new-look.png)
 
 Zum Freigeben benötigen Sie eine [Power BI Pro-Lizenz](service-features-license-type.md), egal, ob Sie Inhalte innerhalb oder außerhalb Ihrer Organisation freigeben. Auch Ihre Empfänger benötigen Power BI Pro-Lizenzen, sofern sich die Inhalte nicht in einer [Premium-Kapazität](service-premium-what-is.md) befinden. 
 
-Sie können Dashboards und Berichte von den meisten Stellen im Power BI-Dienst aus freigeben: „Favoriten“, „Zuletzt verwendet“, „Für mich freigegeben“ (wenn der Besitzer es erlaubt), „Mein Arbeitsbereich“ oder andere Arbeitsbereiche. Wenn Sie Dashboards oder Berichts freigeben, können diejenigen, für die Sie sie freigeben, diese anzeigen und damit interagieren, aber nicht bearbeiten. Sie sehen die gleichen Daten wie Sie im Dashboard oder Bericht, es sei denn, die [Sicherheit auf Zeilenebene (RLS)](service-admin-rls.md) ist aktiviert. Die Kollegen, für die Sie Inhalte freigeben, können diese auch für ihre Kollegen freigeben, wenn Sie dies zulassen. Die Personen außerhalb Ihrer Organisation können ebenfalls das Dashboard oder den Bericht anzeigen und damit interagieren, aber diese nicht freigeben. 
+Sie können Dashboards und Berichte von den meisten Stellen im Power BI-Dienst aus freigeben: „Favoriten“, „Zuletzt verwendet“, „Für mich freigegeben“ (wenn der Besitzer es erlaubt), „Mein Arbeitsbereich“ oder andere Arbeitsbereiche. Wenn Sie Dashboards oder Berichte freigeben, können diejenigen, für die Sie sie freigeben, diese anzeigen und damit interagieren, aber nicht bearbeiten. Sie sehen die gleichen Daten wie Sie im Dashboard oder Bericht, es sei denn, die [Sicherheit auf Zeilenebene (RLS)](service-admin-rls.md) ist aktiviert. Die Kollegen, für die Sie Inhalte freigeben, können diese auch für ihre Kollegen freigeben, wenn Sie dies zulassen. Die Personen außerhalb Ihrer Organisation können ebenfalls das Dashboard oder den Bericht anzeigen und damit interagieren, aber diese nicht freigeben. 
 
-Sie können [ein Dashboard auch aus einer beliebigen mobilen Power BI-App freigeben](consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md). Sie können jedoch keine Dashboards aus Power BI Desktop freigeben.
+Sie können keine Dashboards aus Power BI Desktop freigeben. Jedoch können Sie [ein Dashboard aus einer beliebigen mobilen Power BI-App freigeben](consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md).  
 
 ## <a name="video-share-a-dashboard"></a>Video: Freigeben eines Dashboards
 Sehen Sie sich an, wie Amanda ihr Dashboard für Kollegen im eigenen Unternehmen und externe Personen freigibt. Befolgen Sie dann die schrittweisen Anleitungen unter dem Video, um es selbst ausprobieren.
@@ -55,7 +55,9 @@ Sehen Sie sich an, wie Amanda ihr Dashboard für Kollegen im eigenen Unternehmen
    
    Wenn Sie anderen Personen das Freigeben gestatten, wird dies als *erneutes Freigeben* bezeichnet. In diesem Fall können die anderen Personen die Inhalte über den Power BI-Dienst und die mobilen Apps erneut freigeben oder die E-Mail-Einladung an andere Personen in der Organisation weiterleiten. Nach einem Monat läuft die Einladung ab. Für Personen außerhalb Ihrer Organisation ist die erneute Freigabe nicht möglich. Als Besitzer des Inhalts können Sie die erneute Freigabe deaktivieren oder individuell widerrufen. Informationen finden Sie unter [Aufheben der Freigabe oder Aufheben der Freigabe durch andere](#stop-sharing-or-stop-others-from-sharing).
 
-5. Wählen Sie **Freigeben** aus.
+5. Wenn Sie **Benutzern das Erstellen neuer Inhalte anhand der zugrunde liegenden Datasets erlauben** aktivieren, können Benutzer ihre eigenen Berichte in anderen Arbeitsbereichen erstellen, die auf dem Dataset für dieses Dashboard basieren.
+
+1. Wählen Sie **Freigeben** aus.
    
    ![Schaltfläche „Freigeben“ auswählen](media/service-share-dashboards/power-bi-share-dialog-share.png)  
    
@@ -63,11 +65,11 @@ Sehen Sie sich an, wie Amanda ihr Dashboard für Kollegen im eigenen Unternehmen
    
    Wenn Empfänger in Ihrer Organisation auf den Link klicken, wird das Dashboard bzw. der Bericht in Power BI ihrer Listenseite **Für mich freigegeben** hinzugefügt. Die Empfänger können Ihren Namen auswählen, um alle von Ihnen für sie freigegebenen Inhalte anzuzeigen. 
    
-   ![Listenseite „Für mich freigegeben“](media/service-share-dashboards/power-bi-shared-with-me-dashboards-reports.png)
+   ![Listenseite „Für mich freigegeben“](media/service-share-dashboards/power-bi-shared-with-me-new-look.png)
    
-   Wenn Empfänger außerhalb der Organisation auf den Link klicken, wird das Dashboard bzw. der Bericht angezeigt, jedoch nicht im üblichen Power BI-Portal. Weitere Informationen finden Sie unter [Freigeben eines Dashboards bzw. eines Berichts für Personen außerhalb Ihrer Organisation](#share-a-dashboard-or-report-with-people-outside-your-organization).
+   Wenn Empfänger außerhalb der Organisation auf den Link klicken, wird das Dashboard bzw. der Bericht angezeigt, jedoch nicht im üblichen Power BI-Portal. Weitere Informationen finden Sie unter [Freigeben eines Dashboards bzw. eines Berichts für Personen außerhalb Ihrer Organisation](#share-a-dashboard-or-report-outside-your-organization).
 
-## <a name="who-has-access-to-a-dashboard-or-report-you-shared"></a>Wer hat Zugriff auf von Ihnen freigegebene Dashboards und Berichte?
+## <a name="see-who-has-access-to-a-dashboard-or-report"></a>Anzeigen der Benutzer mit Zugriff auf ein Dashboard oder Bericht
 In einigen Fällen müssen Sie sehen können, für welche Personen Sie Inhalte freigegeben haben, und für welche Personen diese die Inhalte freigegeben haben:
 
 1. Wählen Sie in der Liste der Dashboards und Berichte oder im Dashboard bzw. Bericht selbst **Freigeben** ![Symbol „Freigeben“](media/service-share-dashboards/power-bi-share-icon.png) aus. 
@@ -99,7 +101,7 @@ Nur der Dashboard- bzw. Berichtbesitzer kann die erneute Freigabe aktivieren
 
     ![Power BI-Warnung im Dialogfeld für die Freigabe](media/service-share-dashboards/power-bi-sharing-warning-dialog.png)
 
-## <a name="share-a-dashboard-or-report-with-people-outside-your-organization"></a>Freigeben eines Dashboards bzw. eines Berichts für Personen außerhalb Ihrer Organisation
+## <a name="share-a-dashboard-or-report-outside-your-organization"></a>Freigeben eines Dashboards oder Berichts außerhalb Ihrer Organisation
 Bei einer Freigabe für Personen außerhalb Ihrer Organisation erhalten diese eine E-Mail mit einem Link zum freigegebenen Dashboard bzw. Bericht und müssen sich bei Power BI anmelden, um den Inhalt anzuzeigen. Wenn sie keine Power BI Pro-Lizenz haben, können sie sich nach Klicken auf den Link für eine Lizenz registrieren.
 
 Nachdem sie sich angemeldet haben, sehen sie das freigegebene Dashboard bzw. den freigegebenen Bericht in einem eigenen Browserfenster und nicht in ihrem üblichen Power BI-Portal. Wenn Sie später auf dieses Dashboard oder diesen Bericht zugreifen möchten, müssen sie den Link als Favoriten speichern.

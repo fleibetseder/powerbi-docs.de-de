@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/18/2019
+ms.date: 08/19/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 148f4881f78b5bba9b6936f5688ba6aaea3a0145
-ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
+ms.openlocfilehash: 73db8f9741685549042dbaf1172e57a55a26ab36
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68346475"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654434"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports"></a>Neue Filteroberfläche in Power BI-Berichten
 
@@ -48,6 +48,10 @@ Die neue Filteroberfläche ist für neue Berichte standardmäßig aktiviert. Sie
 3. Wählen Sie unter **Benutzeroberfläche zur Filterung** die Option **Aktualisierten Filterbereich aktivieren und Filter im Visualheader für diesen Bericht anzeigen** aus.
 
 ### <a name="turn-on-new-filters-for-an-existing-report-in-the-service"></a>Aktivieren von neuen Filtern für einen vorhandenen Bericht im Power BI-Dienst
+
+Wenn Sie das **neue Design** im Power BI-Dienst aktiviert haben ![Neues Design ein](media/power-bi-report-filter/power-bi-new-look-on.png), wird die neue Filteroberfläche automatisch aktiviert. Erfahren Sie mehr über das [neue Design im Power BI-Dienst](service-new-look.md).
+
+Wenn Sie das neue Design nicht aktiviert haben, können Sie die neue Filteroberfläche mithilfe der folgenden Schritte dennoch anzeigen:
 
 1. Klicken Sie in der Inhaltsliste für einen Arbeitsbereich im Power BI-Dienst auf die Registerkarte **Berichte**.
 2. Suchen Sie den zu aktivierenden Bericht, und klicken Sie für diesen Bericht auf das **Einstellungssymbol** ![Berichteinstellungssymbol](media/power-bi-report-filter/power-bi-settings-icon.png).
@@ -121,15 +125,13 @@ Für Filterkarten können Sie außerdem diese Elemente formatieren – je nachde
 1. Klicken Sie im Bericht auf den Bericht selbst oder den Hintergrund (*Hintergrundbild*), und wählen Sie dann im Bereich **Visualisierungen** die Einstellung **Format** aus. 
     Es werden Optionen zum Formatieren der Berichtseite, des Hintergrundbilds sowie Filterbereichs und der Filterkarten angezeigt.
 
-    ![Formatierungssymbol auswählen](media/power-bi-report-filter/power-bi-filter-format.png)    
-
 1. Erweitern Sie den **Filterbereich**, um die Farbe für den Hintergrund, das Symbol und den linken Rahmen festzulegen und die Berichtseite zu vervollständigen.
 
-    ![Filterbereich erweitern](media/power-bi-report-filter/power-bi-filter-format-pane-font.png)
+    ![Filterbereich erweitern](media/power-bi-report-filter/power-bi-format-filter-pane.png)
 
 1. Erweitern Sie **Filterkarten**, um Farbe und Rahmen für **Verfügbar** und **Angewendet** festzulegen. Wenn Sie unterschiedliche Farben für verfügbare und angewendete Karten festlegen, ist offensichtlich, welche Filter angewendet wurden. 
   
-    ![Filterkarte erweitern](media/power-bi-report-filter/power-bi-filter-format-card-font.png)
+    ![Filterkarte erweitern](media/power-bi-report-filter/power-bi-format-filter-cards.png)
 
 ## <a name="theming-for-filter-pane"></a>Design für den Bereich „Filter“
 Sie können jetzt die Standardeinstellungen für den Filterbereich mit der Designdatei ändern. Hier ist ein Codeausschnitt eines Beispieldesigns für Ihre ersten Schritte:
@@ -224,7 +226,7 @@ Wenn Sie den Bereich „Filter“ bearbeiten, können Sie auf den Titel doppelkl
 
 ## <a name="restrict-changes-to-filter-type"></a>Einschränken von Änderungen des Filtertyps
 
-Im Abschnitt „Benutzeroberfläche zur Filterung“ der Berichtseinstellungen haben Sie die Möglichkeit, zu steuern, ob Benutzer den Filtertyp ändern können.
+Im Abschnitt „Benutzeroberfläche zur Filterung“ der Berichtseinstellungen finden Sie eine Option, mit der Sie steuern können, ob Benutzer den Filtertyp ändern können.
 
 ![Einschränken von Änderungen des Filtertyps](media/power-bi-report-filter/power-bi-filter-restrict-change.png)
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 6a1ce47d7af41df51b7c439240f3e9db0dd28397
-ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
+ms.openlocfilehash: 260860ba1ac875b097b12a1ac32ef09e983fe08d
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68757720"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69655154"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Verwalten von Power BI im Verwaltungsportal
 
@@ -186,9 +186,9 @@ Im Verwaltungsportal steuern Sie auch, welche Benutzer über Berechtigungen zum 
 
 ## <a name="export-and-sharing-settings"></a>Einstellungen für Export und Freigabe
 
-### <a name="share-content-with-external-users"></a>Inhalten für externe Benutzer freigeben
+### <a name="share-content-with-external-users"></a>Inhalt für externe Benutzer freigeben
 
-Benutzer in der Organisation können Dashboards für Benutzer außerhalb der Organisation freigeben. [Weitere Informationen](service-share-dashboards.md#share-a-dashboard-or-report-with-people-outside-your-organization)
+Benutzer in der Organisation können Dashboards für Benutzer außerhalb der Organisation freigeben. Erfahren Sie mehr über die [externe Freigabe](service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
 
 ![Einstellung für externe Benutzer](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 

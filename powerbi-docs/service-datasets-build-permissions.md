@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 17c3322ed5f24d106412bafb9c4235ee15a626aa
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: c5b880132255fbdf37996273dc6c70029e548df6
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530509"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654890"
 ---
 # <a name="share-a-dataset-preview"></a>Freigeben eines Datasets (Vorschau)
 
@@ -42,7 +42,7 @@ Als Ersteller von *Datenmodellen* in Power BI Desktop können Sie sie als *Datas
 
 ## <a name="build-permissions-for-shared-datasets"></a>Erstellungsberechtigungen für freigegebene Datasets
 
-Der Erstellen-Berechtigungstyp ist nur für Datasets relevant. Mit ihm können Benutzer neue Inhalte auf einem Dataset aufbauen, beispielsweise Berichte, Dashboards, angeheftete Kacheln aus Q&A und Insights-Ermittlung. Sie können darüber hinaus außerhalb von Power BI neue Inhalte auf dem Dataset aufbauen, beispielsweise Excel-Datenblätter mithilfe von „In Excel analysieren“, von XMLA und durch Exportieren.
+Der Erstellen-Berechtigungstyp ist nur für Datasets relevant. Mit ihm können Benutzer neue Inhalte auf einem Dataset aufbauen, beispielsweise Berichte, Dashboards, angeheftete Kacheln aus Q&A und Insights-Ermittlung. Sie können darüber hinaus außerhalb von Power BI neue Inhalte auf dem Dataset aufbauen, beispielsweise Excel-Datenblätter mithilfe von „In Excel analysieren“, XMLA und durch Exportieren zugrunde liegender Daten.
 
 Benutzer erhalten die Erstellungsberechtigung auf unterschiedliche Weise:
 
@@ -72,7 +72,7 @@ Mit dieser feiner abgestimmten Erstellungsberechtigung können Sie jetzt wählen
 
 Wenn Ihr Dataset von einem Bericht außerhalb des Arbeitsbereichs des Datasets verwendet wird, können Sie das Dataset nicht löschen. Stattdessen wird eine Fehlermeldung angezeigt.
 
-Sie können Buildberechtigungen entfernen. In diesem Fall können die Personen, deren Berechtigungen Sie widerrufen haben, den Bericht immer noch anzeigen, ihn aber nicht mehr bearbeiten.
+Sie können Buildberechtigungen entfernen. In diesem Fall können die Personen, deren Berechtigungen Sie widerrufen haben, den Bericht immer noch anzeigen, ihn aber nicht mehr bearbeiten oder dessen zugrunde liegenden Daten exportieren. Benutzer, die nur über Leseberechtigung verfügen, können zusammengefasste Daten weiterhin exportieren. 
 
 ## <a name="track-your-dataset-usage"></a>Nachverfolgen der Verwendung Ihres Datasets
 

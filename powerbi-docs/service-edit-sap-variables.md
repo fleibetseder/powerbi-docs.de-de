@@ -1,8 +1,8 @@
 ---
 title: Bearbeiten von SAP-Variablen im Power BI-Dienst (Vorschau)
 description: Azure und Power BI
-author: maggiesMSFT
-ms.author: maggies
+author: Sujata994
+ms.author: sunaraya
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/12/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: aff72d8efed716af2e7f4c881b22af12e248c207
-ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.openlocfilehash: db1d4a8a9734c910514b4952b664bf7ebce324c1
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68962893"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654877"
 ---
 # <a name="edit-sap-variables-in-the-power-bi-service-preview"></a>Bearbeiten von SAP-Variablen im Power BI-Dienst (Vorschau)
 
@@ -32,7 +32,7 @@ Damit Sie das Feature „SAP edit variables“ (SAP-Variablen bearbeiten) verwen
 **Neue Filteroberfläche erforderlich:** für den Bericht muss die [Neue Filteroberfläche](power-bi-report-filter.md) aktiviert sein. Gehen Sie wie folgt vor, um diese für Ihren Bericht in Power BI Desktop zu aktivieren:
 - Klicken Sie in Power BI Desktop auf **Datei** > **Optionen und Einstellungen** > **Optionen**.
 - Wählen Sie in der linken Navigationsleiste unter **Aktuelle Datei** die Option **Berichtseinstellungen** aus.
-- Klicken Sie unter **Benutzeroberfläche zur Filterung** auf die Option **Enable the updated filter pane (Aktualisierten Filterbereich aktivieren)**.
+- Klicken Sie unter **Benutzeroberfläche zur Filterung** auf die Option **Enable the updated filter pane (Aktualisierten Filterbereich aktivieren)** .
 
 **DirectQuery-Verbindungen erforderlich:** Sie müssen mithilfe von DirectQuery eine Verbindung mit der SAP-Datenquelle herstellen. Importverbindungen werden nicht unterstützt.
 

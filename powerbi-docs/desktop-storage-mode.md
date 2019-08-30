@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/26/2019
+ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: f84e2f95c8ae209828eb1c21f34253015e07aefa
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 67cd57a981f7c1fcab118652dc5424fa935ecd13
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61363704"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654730"
 ---
 # <a name="storage-mode-in-power-bi-desktop"></a>Speichermodus in Power BI Desktop
 
@@ -62,6 +62,10 @@ Es gibt drei Werte für den Speichermodus:
 * **Dual**: Dual-Tabellen können entweder zwischengespeichert oder nicht zwischengespeichert werden, abhängig vom Kontext der an das Power BI-Dataset gesendeten Abfrage. In einigen Fällen werden Abfragen über zwischengespeicherte Daten ausgeführt. In anderen Fällen werden Abfragen durch das Ausführen einer bedarfsgesteuerten Abfrage an die Datenquelle ausgeführt.
 
 Das Ändern einer Tabelle in **Import** kann *nicht rückgängig gemacht werden*. Diese Eigenschaft kann nicht in „DirectQuery“ oder „Dual“ zurück geändert werden.
+
+> [!NOTE]
+> Sie können den Speichermodus *Dual* in Power BI Desktop und im Power BI-Dienst verwenden.
+
 
 ## <a name="constraints-on-directquery-and-dual-tables"></a>Einschränkungen für DirectQuery- und Dual-Tabellen
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 75e5a6387574c6cc4a9620955a3e7c15479830c2
-ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
+ms.openlocfilehash: 76e053d34dcd7f1f199f4cbf9f02196e8efc6232
+ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68391239"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69621310"
 ---
 # <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Analysebeispiel für Lieferantenqualität für Power BI: Übersicht
 
@@ -144,7 +144,7 @@ Der am besten verwaltete Materialtyp ist unabhängig von der Anzahl der Mängel 
     2014 lagen mehr Mängel bei Rohmaterialien vor als 2013.  
 
     ![Q&A-Frage: Anzeigen von Materialtypen, Jahr und Gesamtanzahl der Mängel](media/sample-supplier-quality/supplier12.png)  
-6. Ändern Sie nun die Frage in: *Anzeigen von Materialtypen, Jahr und Gesamtdauer der **Downtime in Minuten*** (*show material types, year, and total **downtime minutes***).  
+6. Ändern Sie nun die Frage in: _show material types, year, and total **downtime minutes**_ (Anzeigen von Materialtypen, Jahr und Gesamtdauer der Downtime in Minuten).  
 
    ![Q&A-Frage: Anzeigen von Materialtypen, Jahr und Gesamtdauer der Downtime in Minuten](media/sample-supplier-quality/supplier13.png)
 

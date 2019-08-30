@@ -10,26 +10,26 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/31/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 0ef74a776e7220477a36d652ce1a48ebbf60c267
-ms.sourcegitcommit: 850e7883e21190151684e32f4d957beecd08e959
+ms.openlocfilehash: b57f444f11c9592d80ffccf7a80be5fa9c7dcf3b
+ms.sourcegitcommit: c2197c3ad1d747b4ad490ab75771a0d32d0ae208
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "68362710"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70008113"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Überwachen von Premium-Kapazitäten über die App
 
 Die Überwachung Ihrer Kapazitäten ist entscheidend für das Treffen fundierter Entscheidungen zur optimalen Nutzung Ihrer Premium-Kapazitäten. Sie können die Kapazitäten im Verwaltungsportal oder mithilfe der App **Power BI Premium-Kapazitätsmetriken** überwachen. In diesem Artikel wird die Verwendung der Premium-Kapazitätsmetriken-App erläutert. Die App stellt ausführliche Informationen zur Leistung Ihrer Kapazitäten bereit. Einen allgemeineren Überblick durchschnittlicher Nutzungsmetriken der letzten sieben Tage finden Sie im Verwaltungsportal. Weitere Informationen zur Überwachung im Portal finden Sie unter [Monitor Premium capacities in the Admin portal (Überwachung von Premium-Kapazitäten im Verwaltungsportal)](service-admin-premium-monitor-portal.md).
 
-Die App erhält regelmäßige Updates mit neuen Features und Funktionalitäten. Stellen Sie sicher, dass Sie die neueste Version verwenden. Wenn Sie bereits eine ältere Version installiert haben, löschen Sie sie aus Ihren Apps, und drücken Sie das STRG+F5 zum Aktualisieren. 
+Die App erhält regelmäßige Updates mit neuen Features und Funktionalitäten. Stellen Sie sicher, dass Sie die neueste Version verwenden. Wenn Sie bereits eine ältere Version installiert haben, löschen Sie sie aus Ihren Apps, und drücken Sie das STRG+F5 zum Aktualisieren.
 
 ## <a name="install-the-app"></a>Installieren der App
 
 Sie können direkt zur [Premium-Kapazitätsmetriken-App](https://app.powerbi.com/groups/me/getapps/services/capacitymetrics) navigieren, oder Sie installieren sie wie jede andere App in Power BI.
 
+1. Klicken Sie in Power BI auf **Apps**.
 
-1. Klicken Sie in Power BI auf **Apps**.   
-    ![Zu Apps navigieren](media/service-admin-premium-monitor-capacity/apps.png)
+    ![Wechsel zu „Apps“](media/service-admin-premium-monitor-capacity/apps.png)
 
 2. Klicken Sie auf der rechten Seite auf **Apps abrufen**.
 3. Suchen Sie in der Kategorie **Apps** nach der **Power BI Premium Capacity Metrics-App**.
@@ -245,7 +245,7 @@ Die Seite „Datasets“ weist verschiedene *Bereiche* auf: **Aktualisierungen**
 | **Berichtsabschnitt** | **Metriken** |
 | --- | --- |
 | CPU-Verbrauch |  Auslastung nach Arbeitsauslastung als Prozentsatz der gesamten CPU-Kapazität. Angabe in Stunden für die letzten sieben Tage. |
-| Arbeitsspeicherverbrauch |  Arbeitsspeicherverbrauch in GB nach Arbeitsauslastung (durchgezogene Linien) im Vergleich zu Arbeitsauslastungsgrenzen (gepunktete Linie). Angabe in Stunden für die letzten sieben Tage. |
+| Arbeitsspeicherverbrauch |  Der maximale Arbeitsspeicherverbrauch in GB pro Stunde nach Arbeitsauslastung (durchgezogene Linien) im Vergleich zu Arbeitsauslastungsgrenzen (gepunktete Linie). Angabe in Stunden für die letzten sieben Tage. |
 |  |  |
 
 ### <a name="ids-and-info"></a>IDs und Info

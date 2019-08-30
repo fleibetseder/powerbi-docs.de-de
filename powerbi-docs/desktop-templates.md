@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7965751740384c5a5f1cc663389a559e0c1bd1c0
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: e28306532714369830df46304aa4a1ebff67bd8f
+ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69563664"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69985647"
 ---
 # <a name="using-templates-in-power-bi-desktop"></a>Verwenden von Vorlagen in Power BI Desktop
 
@@ -70,7 +70,10 @@ Sobald Parameter und Daten angegeben wurden, wird ein Bericht erstellt, der alle
 Fertig! Es ist ganz einfach,Berichtsvorlagen in Power BI Desktop zu erstellen und zu verwenden, sodass Sie problemlos überzeugende Layouts und andere Berichtsaspekte reproduzieren und für andere Benutzer freigeben können.
 
 ## <a name="next-steps"></a>Nächste Schritte
-Mit Power BI Desktop können Sie viele Aufgaben ausführen. Weitere Informationen zu den Funktionen und Möglichkeiten finden Sie in den folgenden Ressourcen:
+Lernen Sie beispielsweise mehr über **Abfrageparameter**:
+* [Verwenden von Abfrageparametern in Power BI Desktop](https://docs.microsoft.com/power-query/power-query-query-parameters)
+
+Darüber hinaus gibt es noch viele weitere Anwendungsmöglichkeiten für Power BI Desktop. Weitere Informationen zu den Funktionen und Möglichkeiten finden Sie in den folgenden Ressourcen:
 
 * [Was ist Power BI Desktop?](desktop-what-is-desktop.md)
 * [Übersicht zu Abfragen mit Power BI Desktop](desktop-query-overview.md)

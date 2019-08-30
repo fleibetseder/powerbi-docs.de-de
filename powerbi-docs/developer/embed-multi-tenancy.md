@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: 56b417cb60f7c149b926f4307be0a50b33c278d6
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: 3940f677cadc5844cfac9c32781a5586bde0607a
+ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751026"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69621296"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Verwalten der Mehrinstanzenfähigkeit mit Power BI Embedded Analytics
 
@@ -241,7 +241,7 @@ Während Endbenutzer Berichte bearbeiten oder erstellen, können sie das mehrins
 * Die Anzahl von Arbeitsbereichen V2 (Ordner), für die ein einzelner Benutzer/eine einzelne Anwendung als Mitglied/Administrator fungieren kann, beträgt 1000.
 * Die Anzahl von Datasets in einem einzelnen Arbeitsbereich beträgt 1000.
 * Die Anzahl von Berichten/Dashboards, die mit einem einzelnen Dataset verbunden sein können, beträgt 1000.
-* Die Größenbeschränkung für den Datasetarbeitsspeicher beim Hochladen einer *PBIX*-Datei beträgt 10 GB.
+* Die Größenbeschränkung für den Datasetarbeitsspeicher beim Hochladen einer *PBIX*-Datei beträgt 10 GB.
 
 **Aspekte und Einschränkungen der Power BI-Kapazität:**
 

@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 08/19/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 92b515cfa9c4d3ca796d48ac90415cc0d1d5d5a9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 747ff7788ce30f5d4f61c48cc70a737bc74cd612
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65565384"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654287"
 ---
 # <a name="power-bi-premium-faq"></a>Power BI Premium – Häufig gestellte Fragen
 
@@ -76,7 +76,7 @@ Power BI Premium ist als ein Add-On von Power BI Pro verfügbar. Office 365 E5 e
 
 **Was ist Power BI-Berichtsserver? Bedeutet dies, dass Sie Power BI lokal verfügbar machen?**
 
-Power BI-Berichtsserver ist ein lokaler Server, der die Bereitstellung und Verteilung von interaktiven Power BI-Berichten und paginierten Berichten vollständig innerhalb der Grenzen der Firewall der Organisation ermöglicht. Der Power BI-Berichtsserver ist über Power BI Premium oder als Bonus für Kunden mit SQL Server Enterprise Edition mit Software Assurance verfügbar. Für weitere Informationen wenden Sie sich an den zuständigen Vertreter von Microsoft.
+Power BI-Berichtsserver ist ein lokaler Server, der die Bereitstellung und Verteilung von interaktiven Power BI-Berichten und paginierten Berichten vollständig innerhalb der Grenzen der Firewall der Organisation ermöglicht. Der Power BI-Berichtsserver ist über Power BI Premium oder als Bonus für Kunden mit SQL Server Enterprise Edition mit Software Assurance verfügbar. Informationen zur Lizenzierung finden Sie unter [Lizenzieren des Power BI-Berichtsservers](report-server/get-started.md#licensing-power-bi-report-server). Wenden Sie sich für ausführliche Informationen an den zuständigen Vertreter von Microsoft.
 
 Mit Power BI Premium kann die gleiche Anzahl virtueller Kerne, die eine Organisation in der Cloud bereitstellt, auch lokal über Power BI-Berichtsserver bereitgestellt werden. Die Kapazität muss nicht aufgeteilt werden. Organisationen können Power BI in der Cloud auswählen oder sich dazu entscheiden, Berichte lokal auf dem Power BI-Berichtsserver aufzubewahren und in der Cloud in ihrem eigenen Tempo zu verschieben.
 

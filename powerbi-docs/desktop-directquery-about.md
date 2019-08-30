@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/22/2019
+ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 591a837bb085ba901316e672112b568923995718
-ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
+ms.openlocfilehash: 11de32b8119e8b6922dcc1a971750e4256812932
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590556"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654750"
 ---
 # <a name="using-directquery-in-power-bi"></a>Verwenden von DirectQuery mit Power BI
 Sie können eine Verbindung mit allen möglichen verschiedenen Datenquellen herstellen, wenn Sie  **Power BI Desktop** oder den **Power BI-Dienst** verwenden, und es gibt unterschiedliche Möglichkeiten, diese Datenverbindungen herzustellen. Sie können Daten in Power BI *importieren*, was die gängigste Methode ist, um Daten abzurufen. Alternativ können Sie eine Direktverbindung zu Daten im ursprünglichen Quellrepository herstellen, was als **DirectQuery** bekannt ist. Dieser Artikel beschreibt **DirectQuery** und die zugehörigen Funktionen:
@@ -140,11 +140,8 @@ Wenn Sie **DirectQuery** verwenden, können viele dieser Modellanreicherungen no
 * **Einschränkungen in berechneten Spalten:** Berechnete Spalten sind darauf beschränkt, dass sie zeilenintern sind. Das bedeutet, dass sie sich nur auf Werte anderer Spalten derselben Tabelle beziehen können, ohne Aggregatfunktionen zu verwenden. Darüber hinaus werden die zugelassenen DAX-Skalarfunktionen (wie etwa LEFT()) auf diejenigen eingeschränkt, die an die darunter liegende Quelle übertragen werden können. Ergebnisse können je nach genauen Funktionen der Quelle variieren. Funktionen, die nicht unterstützt werden, werden nicht in AutoVervollständigen aufgelistet, wenn DAX für eine berechnete Tabelle erstellt wird, und würden bei Benutzung einen Fehler auslösen.
 * **Keine Unterstützung für über- und untergeordnete DAX-Funktionen:** Wenn Sie sich im DirectQuery-Modell befinden, ist die Verwendung der DAX PATH()-Funktionsfamilie nicht möglich, die normalerweise die Strukturen der über- und untergeordneten Funktionen behandeln (etwa als Kontenplan oder Mitarbeiterhierarchien).
 * **Berechnete Tabellen werden nicht unterstützt:** Die Möglichkeit zum Definieren einer berechneten Tabelle mithilfe eines DAX-Ausdrucks wird im DirectQuery-Modus nicht unterstützt.
-* **Das Filtern von Beziehungen ist auf nur eine Richtung beschränkt:** Bei Verwendung von DirectQuery ist es nicht möglich, die Kreuzfilterrichtung in einer Beziehung auf „Beide“ festzulegen. Beispielsweise würde es mit den drei Tabellen nicht möglich sein, ein visuelles Element zu erstellen, das jeden Kunden[Geschlecht] und die Anzahl der Produkte[Kategorie] zeigt, die von jedem Kunden gekauft werden. Die Verwendung des bidirektionalen Filterns ist in [diesem ausführlichen Whitepaper](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) beschrieben (darin sind Beispiele im Kontext von SQL Server Analysis Services dargestellt, jedoch gelten die grundlegenden Punkte auch gleichermaßen für Power BI).
-  
-  ![](media/desktop-directquery-about/directquery-about_01.png)
-  
-  Erneut wird die Einschränkung aufgrund der Leistungsauswirkungen angewendet. Eine besonders wichtige Anwendung davon ist, wenn die Sicherheit auf Zeilenebene als Teil des Berichts definiert wird. Und es ist ein verbreitetes Muster, eine m:n-Beziehung zwischen den Benutzern und den Entitäten zu besitzen, auf die zugegriffen werden kann. Die Verwendung des bidirektionalen Filterns ist nötig, um dies zu erzwingen. Allerdings sollte bidirektionales Filtern für DirectQuery-Modelle sinnvoll eingesetzt werden, mit sorgfältiger Beachtung jedes schädlichen Einflusses auf die Leistung.  
+* **Filtern von Beziehungen:** Die Verwendung des bidirektionalen Filterns ist [in diesem ausführlichen Whitepaper](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) beschrieben (darin sind Beispiele im Kontext von SQL Server Analysis Services dargestellt, jedoch gelten die grundlegenden Punkte auch gleichermaßen für Power BI).
+
 * **Kein Clustering:** Bei Verwendung von DirectQuery ist es nicht möglich, die Clusteringfunktion zu verwenden, um Gruppen automatisch zu suchen.
 
 ### <a name="reporting-limitations"></a>Einschränkungen bei der Berichterstattung
