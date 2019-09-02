@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 152b8f3bffa25a66d08af4806f9c7f1fe9bc90f7
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4e9efa729b9dc4ac645bc8d3ff7df92cafc929e4
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514330"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70200965"
 ---
 # <a name="power-bi-publisher-for-excel"></a>Power BI Publisher für Excel
 Mit Microsoft **Power BI Publisher für Excel** können Sie Momentaufnahmen Ihrer wichtigsten in Excel in PivotTables, Diagrammen und Bereichen gewonnenen Einblicke erstellen und diese an Dashboards in Power BI anheften.
@@ -32,7 +32,7 @@ Wenn Sie ein Element aus Excel anheften, wird einem neuen oder vorhandenen Dashb
 ## <a name="download-and-install"></a>Herunterladen und installieren
 Power BI Publisher für Excel ist ein Add-In, das Sie für Desktopversionen ab Microsoft Excel 2007 herunterladen und installieren können.
 
-[Power BI Publisher für Excel herunterladen](http://go.microsoft.com/fwlink/?LinkId=715729)
+[Power BI Publisher für Excel herunterladen](https://www.microsoft.com/download/details.aspx?id=50729)
 
 Sobald Sie den Publisher installiert haben, wird in Excel ein neues **Power BI**-Menüband angezeigt, über das Sie sich bei Power BI an- und abmelden, Elemente an Dashboards anheften und bereits angeheftete Elemente verwalten können.
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 3919d869c696617fa97351f352084e5a57e6b06e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 861a1d43f023e3ceba17fba90bcbc703e3195c84
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239514"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160175"
 ---
 # <a name="using-the-analytics-pane-in-power-bi-desktop"></a>Verwenden des Analysebereichs in Power BI Desktop
 Mit dem Bereich **Analyse** in **Power BI Desktop** können Sie dynamische *Bezugslinien* zu Visualisierungen hinzufügen und wichtige Trends und Erkenntnisse identifizieren. Der Bereich **Analyse** befindet sich in Power BI Desktop unter **Visualisierungen**.
@@ -84,7 +84,6 @@ Dynamische Linien sind für die folgenden visuellen Elemente in vollem Umfang ve
 * Flächendiagramm
 * Liniendiagramm
 * Punktdiagramm
-* Gruppiertes Säulendiagramm
 * Gruppiertes Balkendiagramm
 
 Für die folgenden visuellen Elemente kann nur eine *Bezugslinie* aus dem Bereich **Analyse** verwendet werden:

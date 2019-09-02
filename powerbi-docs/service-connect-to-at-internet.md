@@ -7,18 +7,20 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 41b390190f8ce3c071f790edcdf86f0e3bd4a0c2
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: c24a508652b147b6fc684039d2965f9935b624c0
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721303"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70186033"
 ---
 # <a name="connect-to-at-internet-bridge-with-power-bi"></a>Herstellen einer Verbindung mit AT Internet Bridge mithilfe von Power BI
 AT Internet ermöglicht Ihnen mithilfe seiner Analytics Suite, einer vereinheitlichten digitalen Analyseplattform, einen unmittelbaren Nutzen aus Ihren Daten zu ziehen. Das AT Internet Bridge-Inhaltspaket für Power BI enthält Daten zu Seitenaufrufen, Datenquellen, Lokalisierung und Geräten für Ihre Website.
+
+[!INCLUDE [include-short-name](./includes/service-deprecate-content-packs.md)]
 
 Stellen Sie die Verbindung zum [AT Internet Bridge-Inhaltspaket](https://app.powerbi.com/getdata/services/at-internet-bridge) für Power BI her.
 

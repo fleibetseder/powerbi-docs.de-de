@@ -7,18 +7,20 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: aec463a4ce72f89f0cbbcf1bd42737605657a43c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d2ee7a338f34e4c29fdbefae6518bede9e94badb
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61181156"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70186143"
 ---
 # <a name="connect-to-acumatica-with-power-bi"></a>Herstellen einer Verbindung mit Acumatica mithilfe von Power BI
 Mit dem Power BI-Acumatica-Inhaltspaket können Sie schnell Erkenntnisse aus Ihren Verkaufschancendaten gewinnen. Power BI ruft Ihre Daten ab, einschließlich Verkaufschancen, Konten und Kunden, und erstellt dann auf der Grundlage dieser Daten ein Standarddashboard und zugehörige Berichte.
+
+[!INCLUDE [include-short-name](./includes/service-deprecate-content-packs.md)]
 
 Stellen Sie eine Verbindung mit dem [Acumatica- Inhaltspaket](https://app.powerbi.com/getdata/services/acumatica) her, oder erfahren Sie mehr über die [Integration von Acumatica](https://powerbi.microsoft.com/integrations/acumatica) in Power BI.
 

@@ -7,18 +7,20 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: efea81ab0a65b336e01c7a69af2189e31ae5d9f8
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 7440fb6dfcd181b6b1164260626cd0bfa7cda991
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721172"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70185431"
 ---
 # <a name="connect-to-mandrill-with-power-bi"></a>Herstellen einer Verbindung mit Mandrill mithilfe von Power BI
 Das Power BI-Inhaltspaket ruft Daten aus Ihrem Mandrill-Konto ab und generiert ein Dashboard, eine Reihe von Berichten sowie ein Dataset, damit Sie Ihre Daten analysieren können. Verwenden Sie die Analysefunktionen von Mandrill, um schnell Erkenntnisse aus Ihrer Newsletter- oder Marketingkampagne zu gewinnen. Die Daten werden täglich aktualisiert, um sicherzustellen, dass sie auf dem neuesten Stand sind.
+
+[!INCLUDE [include-short-name](./includes/service-deprecate-content-packs.md)]
 
 Stellen Sie eine Verbindung mit dem [Mandrill-Inhaltspaket für Power BI](http://app.powerbi.com/getdata/services/mandrill) her.
 
