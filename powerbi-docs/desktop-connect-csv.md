@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f1e02197f36da66a64fac95209fe8fabaa67b6c0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 8eecbfdaa948163ab6d0623a70f237d479fcdb88
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514175"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70200931"
 ---
 # <a name="connect-to-csv-files-in-power-bi-desktop"></a>Verbinden mit CSV-Dateien in Power BI Desktop
 Das Verbinden mit einer *CSV*-Datei (durch Trennzeichen getrennte Datei) von Power BI Desktop aus hat große Ähnlichkeit mit dem Verbinden mit einer Excel-Arbeitsmappe. Beides ist einfach, und dieser Artikel führt Sie Schritt für Schritt durch das Verbinden mit einer beliebigen CSV-Datei, auf die Sie Zugriff haben.
@@ -44,6 +44,10 @@ Nachdem Sie die Daten in Power BI Desktop geladen haben, finden Sie die Tabelle 
 Das ist alles, was Sie tun müssen: Die Daten aus Ihrer CSV-Datei befinden sich nun in Power BI Desktop.
 
 Sie können diese Daten in Power BI Desktop verwenden, um Visualisierungen oder Berichte zu erstellen und um mit anderen Daten zu interagieren, mit denen Sie möglicherweise eine Verbindung herstellen bzw. die Sie möglicherweise importieren möchten, wie z.B. Excel-Arbeitsmappen, Datenbanken oder beliebige andere Datenquellen.
+
+> [!IMPORTANT]
+> Wenn Sie eine CSV-Datei importieren, generiert Power BI Desktop *columns=x* (wobei *x* für die Anzahl der Spalten in der CSV-Datei während des anfänglichen Importvorgangs steht) als Schritt in Power Query-Editor. Wenn Sie anschließend weitere Spalten hinzufügen und die Aktualisierung der Datenquelle festgelegt ist, werden alle Spalten nach der anfänglichen *x*-Anzahl von Spalten nicht aktualisiert. 
+
 
 ## <a name="next-steps"></a>Nächste Schritte
 Sie können mithilfe von Power BI Desktop eine Verbindung mit Daten jeglicher Art herstellen. Weitere Informationen zu Datenquellen finden Sie in folgenden Ressourcen:

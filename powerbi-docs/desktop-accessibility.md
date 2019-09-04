@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/17/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d67ca5a4c8014dc295f3ffc458eca3dc5496282a
-ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
+ms.openlocfilehash: 14e57f5b19fe4dccea9aa47d21c959eaf93a45ae
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68307326"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70185701"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Barrierefreiheit in Power BI Desktop-Berichten
 Power BI verfügt über Features, die von Personen mit Behinderungen für die leichtere Nutzung von und Interaktion mit Power BI-Berichten verwendet werden können. Zu diesen Funktionen gehört die Möglichkeit, einen Bericht mithilfe der Tastatur oder einer Sprachausgabe zu verwenden, den Fokus per TAB-Taste auf die verschiedenen Objekte auf einer Seite zu verlagern und Marker in Visualisierungen sinnvoll einzusetzen.
@@ -75,6 +75,9 @@ Die folgenden Tipps können Ihnen beim Erstellen von **Power BI Desktop**-Berich
 * Geben Sie zu jedem Objekt in einem Bericht Alternativtext an. Dadurch wird sichergestellt, dass die Benutzer des Berichts wissen, was Sie mit dem Visual ausdrücken möchten. Dies ist sogar hilfreich, wenn sie das Visual, das Bild, die Form oder das Textfeld nicht sehen können. Sie können zu jedem Objekt in einem **Power BI Desktop**-Bericht Alternativtext angeben, indem Sie das Objekt (wie etwa ein Visual, eine Form usw.) auswählen und im Bereich **Visualisierungen** den Bereich **Format auswählen**. Erweitern Sie dann das Feld **Allgemein**, scrollen Sie nach unten, und füllen Sie das Textfeld **Alternativtext** aus.
   
   ![Alternativtext kann für jedes Objekt in einem Bericht im Feld „Visualisierungen > Format > Allgemein > Alternativtext“ hinzugefügt werden.](media/desktop-accessibility/accessibility-02.png)
+  
+  Alternativer Text kann auch mit einem Ausdruck dynamisch geändert werden. Beispielsweise können Filter widergespiegelt werden, die auf ein visuelles Element angewendet wurden. Sie legen einen Ausdruck genauso fest wie für den Titel eines visuellen Elements. [Bedingte Formatierung für Titel von visuellen Elementen](desktop-conditional-format-visual-titles.md)
+  
 * Stellen Sie sicher, dass in Ihren Berichten ein ausreichender Kontrast zwischen Text- und Hintergrundfarben vorhanden ist. Es gibt verschiedene Tools, die Sie zum Überprüfen der Farben in Ihrem Bericht verwenden können, z.B. [Colour Contrast Analyser](https://developer.paciellogroup.com/resources/contrastanalyser/). 
 * Verwenden Sie Textgrößen und -schriftarten, die leicht lesbar sind. Kleine Textgrößen oder -schriftarten, die schwierig zu lesen sind, verringern die Barrierefreiheit.
 * Schließen Sie in alle Visuals einen Titel, Achsenbezeichnungen und Datenbezeichnungen ein.

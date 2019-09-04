@@ -1,29 +1,29 @@
 ---
 title: Herstellen einer Verbindung mit Office365Mon mithilfe von Power BI
 description: Office365Mon für Power BI
-author: SarinaJoan
+author: teddybercovitz
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
-ms.author: sarinas
+ms.date: 8/29/2019
+ms.author: tebercov
 LocalizationGroup: Connect to services
-ms.openlocfilehash: cce886edbed00075efaa43bae9c8a712929e8b9a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 364220d5d900004252e51184fc9cbd7e03b45b2d
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61170232"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70159910"
 ---
 # <a name="connect-to-office365mon-with-power-bi"></a>Herstellen einer Verbindung mit Office365Mon mithilfe von Power BI
-Die Analyse von Ausfällen und Integritätsdaten von Office 365 ist mit Power BI und dem Office365Mon-Inhaltspaket ein Kinderspiel. Power BI ruft Ihre Daten ab – Stichprobendaten zu Ausfällen und Integrität eingeschlossen –, und erstellt basierend auf diesen Daten ein Dashboard und Berichte.
+Die Analyse von Ausfällen und Integritätsdaten von Office 365 ist mit Power BI und der Office365Mon-Vorlagen-App ein Kinderspiel. Power BI ruft Ihre Daten ab – Stichprobendaten zu Ausfällen und Integrität eingeschlossen –, und erstellt basierend auf diesen Daten ein Dashboard und Berichte.
 
-Stellen Sie eine Verbindung mit dem [Office365Mon-Inhaltspaket](https://app.powerbi.com/groups/me/getdata/services/office365mon) für Power BI her.
+Stellen Sie eine Verbindung mit der [Office365Mon-Vorlagen-App](https://app.powerbi.com/groups/me/getdata/services/office365mon) für Power BI her.
 
 >[!NOTE]
->Zum Herstellen der Verbindung und Laden des Power BI-Inhaltspakets ist ein Office365Mon-Administratorkonto erforderlich.
+>Zum Herstellen der Verbindung und Laden der Power BI-Vorlagen-App ist ein Office365Mon-Administratorkonto erforderlich.
 
 ## <a name="how-to-connect"></a>Herstellen der Verbindung
 1. Wählen Sie unten im linken Navigationsbereich **Daten abrufen** aus.

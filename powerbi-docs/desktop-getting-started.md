@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: d1739d97b0741c67e29ed7ab9a35a70bf4fdc484
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 2049d996c9f6130718e203a8f6d27a2a7fac911f
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654851"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70201013"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Erste Schritte mit Power BI Desktop
 Willkommen beim Handbuch **Erste Schritte mit Power BI Desktop**. Dieser kurze Überblick über Power BI Desktop soll Sie mit der Funktionsweise vertraut machen und die Möglichkeiten aufzeigen, die Ihnen in Power BI Desktop zur Verfügung stehen. Dadurch sind Sie rasch in der Lage, neben ansprechenden Berichten auch robuste Datenmodelle zu erstellen, die Ihr Business Intelligence-Potenzial erweitern. 
@@ -105,6 +105,9 @@ Bei der Auswahl von **Bearbeiten** wird im Abfrage-Editor eine repräsentative A
  ![](media/desktop-getting-started/designer_gsg_editquery.png)
 
 Weitere Informationen zum Herstellen einer Verbindung mit Daten finden Sie unter [Verbinden mit Daten in Power BI Desktop](desktop-connect-to-data.md).
+
+> [!NOTE]
+> Die Tabellendaten, auf die in diesem Artikel verwiesen wird, können sich mit der Zeit ändern. Somit können auch die durchzuführenden Schritte von den folgenden abweichen, sodass Sie als Teil des Lernspaßes kreativ werden und die Schritte und Ergebnisse anpassen müssen. 
 
 Im nächsten Abschnitt werden die Daten angepasst, damit sie unseren Anforderungen entsprechen. Der Vorgang, bei dem verbundene Daten angepasst werden, wird als *Strukturieren* der Daten bezeichnet.
 

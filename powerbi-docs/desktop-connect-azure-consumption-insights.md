@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/14/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 80eb366015de3822b9c8c455f1ee386a34e1f457
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: 0474bc4182f77e7084ca8cb78062ba0f2063e7ae
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69560989"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160200"
 ---
 # <a name="analyze-azure-cost-and-usage-data-in-power-bi-desktop"></a>Analysieren von Kosten- und Nutzungsdaten für Azure in Power BI Desktop
 
@@ -27,6 +27,10 @@ Power BI unterstützt aktuell die Verbindungsherstellung mit Abrechnungskonten 
 * **Enterprise Agreement**-Benutzer müssen für die Verbindungsherstellung den **Azure Consumption Insights-Connector** (unten) verwenden.
 
 * Benutzer mit **Kundenvertragskonto** müssen für die Verbindungsherstellung den [**Azure Cost Management-Connector**](#connect-with-azure-cost-management) verwenden.
+
+> [!NOTE]
+> Wenn Sie ein Enterprise Agreement-Kunde sind, den Azure Cost Management-Connector verwenden und Ihnen die *ID des Abrechnungsprofils* auf dem Blatt „Kostenverwaltung“ nicht angezeigt wird, befinden Sie sich nicht auf der Modern Commerce Platform. Verwenden Sie in einem solchen Fall den Azure Consumption Insights-Connector, der die EA-Registrierungsnummer anstatt der *ID des Abrechnungsprofils* anfordert.
+
 
 ## <a name="connect-with-azure-consumption-insights"></a>Herstellen einer Verbindung mit Azure Consumption Insights
 

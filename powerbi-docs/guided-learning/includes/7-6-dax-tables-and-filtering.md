@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: d7f30dd43fe875380939520f3dc54fcbbe2f4c9c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 629c53358f757002f2b3dcda468641bbaaa2f4d4
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61273410"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70166716"
 ---
 Ein wesentlicher Unterschied zwischen **DAX** und der Excel-Formelsprache ist der, dass Sie mit DAX *komplette Tabellen* in Ausdrücken berechnen können, ohne dass Sie auf einen einzigen Wert beschränkt sind. Ein signifikanter Effekt ist, dass DAX Ihnen erlaubt, Tabellen in deren Ausdrücken zu filtern und anschließend mit dem gefilterten Wertesatz zu arbeiten.
 
@@ -36,7 +36,7 @@ Eine häufig gestellte Frage beim Erstellen von Berichten in Power BI ist die fo
 
 * „Wie viele Werte sind für diese Spalte vorhanden?“
 
-Diese Frage kann schnell beantwortet werden, wenn eine Tabelle vor Ihnen angezeigt wird, DAX bietet jedoch einen anderen Ansatz, insbesondere dann, wenn eine Beziehung zwischen Tabellen vorhanden ist.
+Diese Frage kann schnell beantwortet werden, wenn Ihnen eine Tabelle angezeigt wird, DAX bietet jedoch einen anderen Ansatz, insbesondere dann, wenn eine Beziehung zwischen Tabellen besteht.
 
 Power BI und DAX schließen z.B. Werte ein, die nicht ordnungsgemäß untereinander indiziert werden. Wenn die eingehende Beziehung getrennt wird, fügt DAX eine neue Zeile zur verknüpften Tabelle hinzu, deren Felder leer sind, und verknüpft diese neue Zeile mit der nicht indizierten Zeile, um die referenzielle Integrität zu gewährleisten. Wenn die Funktion leere Zeilen einschließt, was z.B oft der Fall ist, wenn **ALL** verwendet wird, werden diese leeren Zeilen in die Anzahl der Werte eingeschlossen, die für diese Spalte zurückgegeben werden.
 

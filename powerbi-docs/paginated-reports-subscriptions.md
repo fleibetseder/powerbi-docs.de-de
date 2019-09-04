@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/15/2019
-ms.openlocfilehash: 2d48892450bbf6ab09a4bc88cd2be9a58bbdc863
-ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
+ms.date: 08/29/2019
+ms.openlocfilehash: 4b0ead5697dc94497609ac925a0a46142584f0ba
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68307080"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70185611"
 ---
 # <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Abonnieren von paginierten Berichten für sich selbst und andere im Power BI-Dienst 
 
 Sie können jetzt im Power BI-Dienst E-Mail-Abonnements für paginierte Berichte für sich selbst und andere einrichten. Im Allgemeinen ist dieser Vorgang identisch mit dem [Abonnieren von Berichten und Dashboards im Power BI-Dienst](service-report-subscribe.md). In diesem Artikel werden Unterschiede und Überlegungen aufgeführt. 
 
-Durch das Einrichten von Abonnements können Sie entscheiden, ob Sie die E-Mails täglich, wöchentlich oder stündlich erhalten möchten. Wenn Sie täglich oder wöchentlich auswählen, können Sie die Zeit(en) bestimmen, wann das Abonnement ausgeführt werden soll. Insgesamt können Sie für jeden Bericht bis zu 24 verschiedene Abonnements pro Tag einrichten. 
+Durch das Einrichten von Abonnements können Sie entscheiden, ob Sie die E-Mails täglich, wöchentlich, monatlich oder stündlich erhalten möchten. Sie können auch die Zeiten auswählen, zu denen das Abonnement ausgeführt werden soll. Insgesamt können Sie für jeden Bericht bis zu 24 verschiedene Abonnements einrichten. 
 
 ## <a name="considerations-for-paginated-report-subscriptions"></a>Überlegungen zu Abonnements von paginierten Berichten 
 

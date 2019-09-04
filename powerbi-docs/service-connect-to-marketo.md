@@ -7,18 +7,21 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 4131758dad29b28de56e3ac450bed22d64c25e46
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 66dcbd76d76de04675204674626c2942aef515fa
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61172817"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70201005"
 ---
 # <a name="connect-to-marketo-with-power-bi"></a>Herstellen einer Verbindung mit Marketo mithilfe von Power BI
 Mit dem Power BI-Inhaltspaket für Marketo erhalten Sie Einblicke in Ihr Marketo-Konto mit Daten zu Leads und ihren Aktivitäten.Durch das Herstellen dieser Verbindung werden Ihre Daten abgerufen. Auf Basis dieser Daten werden dann ein Dashboard und zugehörige Berichte automatisch bereitgestellt.
+
+>[!IMPORTANT]
+>Am 4. September 2019 werden wir dieses Inhaltspaket als veraltet kennzeichnen. Wenn Sie dieses Inhaltspaket vorher installiert haben, funktioniert es weiterhin. Sie können danach jedoch kein neues mehr installieren. Vorlagen-Apps dienen als Ersatz für Dienstinhaltspakete.
 
 Stellen Sie eine Verbindung mit dem [Marketo-Inhaltspaket](https://app.powerbi.com/getdata/services/marketo) für Power BI her.
 
@@ -79,10 +82,10 @@ Die Anzahl der API-Aufrufe die Power BI an Marketo sendet, hängen von der Menge
 | Datentyp | Anzahl Zeilen | API-Aufrufe |
 | --- | --- | --- |
 | Leadsinformationen |15.000 |50 |
-| E-Mail-Aktivitäten |150.000 |1.000 |
+| E-Mail-Aktivitäten |150.000 |1\.000 |
 | Programmaktivitäten |15.000 |100 |
-| Webaktivitäten |150.000 |1.000 |
-| Programmänderungen |7.500 |50 |
+| Webaktivitäten |150.000 |1\.000 |
+| Programmänderungen |7\.500 |50 |
 | **API-Aufrufe insgesamt** | |**2.200** |
 
 ## <a name="next-steps"></a>Nächste Schritte

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/07/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: cccbfb6bbe43e70ebcea94322923f7600d58aca8
-ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
+ms.openlocfilehash: 5477d7772681f0dd5ac4426335521f6ab1a7844e
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590507"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160346"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Herstellen einer Verbindung mit Datasets im Power BI-Dienst über Power BI Desktop
 Sie können eine Liveverbindung mit einem gemeinsam genutzten Dataset im Power BI-Dienst herstellen und auf Grundlage des gleichen Datasets viele verschiedene Berichte erstellen. Das bedeutet, dass Sie in Power BI Desktop Ihr perfektes Datenmodell erstellen und im Power BI-Dienst veröffentlichen können. Dann können Sie und andere Benutzer aus diesem einen, gemeinsam verwendeten Datenmodell mehrere unterschiedliche Berichte (als separate PBIX-Dateien) erstellen und in unterschiedlichen Arbeitsbereichen speichern. Das Feature heißt **Liveverbindung mit Power BI-Dienst**.
@@ -108,4 +108,5 @@ Beim Verwenden des Features **Liveverbindung mit Power BI-Dienst** sind einige E
 * Bei Verwendung von Inhaltspaketen müssen Sie zunächst eine Kopie des Inhaltspakets erstellen, bevor Sie es als Grundlage für die Freigabe eines PBIX-Berichts und Datasets für den **Power BI-Dienst** verwenden.
 * Wenn Inhaltspakete aus *Meine Organisation* kopiert wurden, können Sie den im Dienst erstellten Bericht und/oder einen Bericht, der beim Kopieren eines Inhaltspakets mit einer Liveverbindung erstellt wurde, nicht ersetzen. Wenn Sie es dennoch versuchen, wird eine Warnung angezeigt, in der Sie zum Umbenennen der Datei und Veröffentlichen des Berichts aufgefordert werden. In diesem Fall können Sie nur veröffentlichte Berichte mit Liveverbindung ersetzen.
 * Nach dem Löschen eines freigegebenen Datasets im **Power BI-Dienst** kann niemand mehr über **Power BI Desktop** auf dieses Dataset zugreifen.
+* Berichte, die ein Dataset im Power BI-Dienst freigeben, unterstützen keine automatisierten Bereitstellungen mithilfe der REST-API von Power BI.
 

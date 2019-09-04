@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7a25a9cc220dcb9f4620b7fb77e6bac264a47256
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 848019a020e4a91e80caf342acb15c0d9b7e3121
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514741"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160237"
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Herstellen einer Verbindung zu mehrdimensionalen SSAS-Modellen in Power BI Desktop
 Mit Power BI Desktop können Sie auf **mehrdimensionale SSAS-Modelle**(häufig als **SSAS MD**bezeichnet) zugreifen.
@@ -36,7 +36,7 @@ Die folgende Tabelle beschreibt die Beziehungen zwischen mehrdimensionalen Objek
 | --- | --- |
 | Cube |Modell |
 | Cubedimension |Tabelle |
-| Dimensionsattribute (Schlüssel), Name |entfernen |
+| Dimensionsattribute (Schlüssel), Name |Spalten |
 | Measuregruppe |Tabelle |
 | Measure |Measure |
 | Measures ohne zugeordnete Measuregruppe |Innerhalb einer Tabelle mit dem Namen *Measures* |
@@ -78,7 +78,8 @@ Mehrdimensionale Modelle unterstützen die Sicherheit auf Dimensions- und Zellen
 ## <a name="considerations-and-limitations"></a>Überlegungen und Einschränkungen
 Die Verwendung von **SSAS MD**unterliegt bestimmten Einschränkungen:
 
-* Auf einem Server muss SQL Server 2012 SP1 CU4 oder eine höhere Version von Analysis Services ausgeführt werden, damit der SSAS MD-Connector für Power BI Desktop ordnungsgemäß funktioniert.
+* Auf einem Server muss SQL Server 2012 SP1 CU4 oder eine höhere Version von Analysis Services ausgeführt werden, damit der SSAS MD-Connector für Power BI Desktop ordnungsgemäß funktioniert.
+* Nur die Enterprise-und BI-Editionen von SQL Server 2012 und SQL Server 2014 unterstützen Liveverbindungen. Bei der Standardversion von SQL Server ist SQL Server 2016 oder höher für Liveverbindungen erforderlich.
 * *Aktionen* und *benannte Mengen* werden nicht für Power BI verfügbar gemacht. Dennoch können Sie eine Verbindung mit Cubes herstellen, die auch *Aktionen* oder *benannte Mengen* enthalten, und Sie können entsprechende Visualisierungen und Berichte erstellen.
 * Möglicherweise tritt ein Fehler auf, bei dem Power BI Metadaten für ein SSAS-Modell anzeigt, Sie aber keine Modelldaten abrufen können. Dieser Fall kann eintreten, wenn Sie die 32-Bit-Version des MSOLAP-Anbieters auf Ihrem System installiert haben und nicht über die 64-Bit-Version verfügen. Die Installation der 64-Bit-Version kann dieses Problem beheben.
 * Sie können keine Measures auf Berichtsebene erstellen, wenn Sie einen Bericht erstellen, der über eine Liveverbindung mit einem mehrdimensionalen SSAS-Modell verbunden ist. Es stehen nur die im MD-Modell definierten Measures zur Verfügung.

@@ -8,19 +8,19 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 92dd8d7221c9c60fa4ffcd3e3ceefeda319d8670
-ms.sourcegitcommit: 90ad0572a92f640684cdc32c9a6478d299de9dc0
+ms.openlocfilehash: 38e393a07defcf572d06f00c14ff8e4efa3081cc
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2019
-ms.locfileid: "68940930"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70185713"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Abonnieren von Berichten und Dashboards im Power BI-Dienst für sich selbst und andere
 
-Sie können für sich und Ihre Kollegen Berichtsseiten, Dashboards und paginierte Berichte, die Sie besonders interessieren, abonnieren. Power BI sendet per E-Mail eine Momentaufnahme an Ihren Posteingang. Sie geben an, wie oft Sie E-Mails von Power BI erhalten möchten: täglich, wöchentlich oder einmal am Tag nach der anfänglichen Datenaktualisierung.  Wenn Sie täglich oder wöchentlich auswählen, können Sie die Zeit(en) bestimmen, wann das Abonnement ausgeführt werden soll.  Insgesamt können Sie für jede Berichtseite und jedes Dashboard bis zu 24 verschiedene Abonnements pro Tag einrichten.
+Sie können für sich und Ihre Kollegen Berichtsseiten, Dashboards und paginierte Berichte, die Sie besonders interessieren, abonnieren. Power BI sendet per E-Mail eine Momentaufnahme an Ihren Posteingang. Sie geben an, wie oft Sie E-Mails von Power BI erhalten möchten: täglich, wöchentlich, monatlich oder einmal am Tag nach der anfänglichen Datenaktualisierung.  Wenn Sie täglich, wöchentlich, stündlich oder monatlich auswählen, können Sie die Zeit(en) bestimmen, wann das Abonnement ausgeführt werden soll.  Insgesamt können Sie für jede Berichtseite und jedes Dashboard bis zu 24 verschiedene Abonnements pro Tag einrichten.
 
 ![E-Mail mit einer Momentaufnahme des Dashboards](media/service-report-subscribe/power-bi-dashboard-email-new.jpg) 
 
@@ -54,9 +54,9 @@ Das Abonnieren von paginierten Berichten unterscheidet sich etwas. Details finde
 
 5. Füllen Sie **Subject** (Betreff) und **Nachricht** der E-Mail aus. 
 
-5. Wählen Sie eine Option für **Frequency** (Häufigkeit) für Ihr Abonnement aus: **Täglich**, **Stündlich**, **Wöchentlich** oder **Nach Datenaktualisierung (einmal täglich)** .  Wenn Sie die Abonnement-E-Mail nur an bestimmten Tagen erhalten möchten, können Sie erst die Optionen **Stündlich** oder **Wöchentlich** und dann die konkreten Tage auswählen.  Wenn Sie die E-Mail des Abonnements zum Beispiel nur an Werktagen erhalten möchten, können Sie **Weekly** (Wöchentlich) auswählen und die Kontrollkästchen bei **Sat** (Sa) und **Sun** (So) deaktivieren.  
+5. Wählen Sie eine Option für **Frequency** (Häufigkeit) für Ihr Abonnement aus: **Daily** (Täglich), **Hourly** (Stündlich), **Weekly** (Wöchentlich), **Monthly** (Monatlich) oder **After Data Refresh (Daily)** (Nach der Datenaktualisierung (täglich)).  Wenn Sie die Abonnement-E-Mail nur an bestimmten Tagen erhalten möchten, können Sie erst die Optionen **Stündlich** oder **Wöchentlich** und dann die konkreten Tage auswählen.  Wenn Sie die E-Mail des Abonnements zum Beispiel nur an Werktagen erhalten möchten, können Sie **Weekly** (Wöchentlich) auswählen und die Kontrollkästchen bei **Sat** (Sa.) und **Sun** (So.) deaktivieren.  Wenn Sie **Monthly** (Monatlich) auswählen, geben Sie den Tag oder die Tage des Monats ein, an dem oder denen Sie die E-Mail des Abonnements erhalten möchten.  
 
-6. Wenn Sie **Daily** (Täglich) oder **Weekly** (Wöchentlich) auswählen, können Sie auch die Option **Scheduled Time** (Geplante Zeit) für das Abonnement angeben.  Sie müssen es zur vollen Stunde oder zur Minute 15, 30 oder 45 ausführen.  Wählen Sie Vormittag (AM) oder Nachmittag/Abend (PM) aus. Sie können auch die Zeitzone angeben.  Wenn Sie **Stündlich** auswählen, müssen Sie auch den **Geplanten Zeitpunkt** festlegen, zu dem das Abonnement gestartet werden soll. Danach erhalten Sie stündlich eine E-Mail.
+6. Wenn Sie **Daily** (Täglich), **Hourly (Stündlich), **Monthly** (Monatlich) oder **Weekly** (Wöchentlich) auswählen, können Sie auch die Option **Geplanter Zeitpunkt** für das Abonnement angeben.  Sie müssen es zur vollen Stunde oder zur Minute 15, 30 oder 45 ausführen.  Wählen Sie Vormittag (AM) oder Nachmittag/Abend (PM) aus. Sie können auch die Zeitzone angeben.  Wenn Sie **Hourly** (Stündlich) auswählen, müssen Sie auch den **Geplanten Zeitpunkt** festlegen, zu dem das Abonnement gestartet werden soll. Anschließend wird es stündlich ausgeführt.
 
 7. Standardmäßig ist das Startdatum für Ihr Abonnement das Datum, an dem Sie es erstellen. Sie haben die Möglichkeit, ein Enddatum auszuwählen. Wenn Sie kein Enddatum festlegen, ist das Enddatum automatisch ein Jahr nach dem Startdatum. Sie können es zu einem beliebigen Zeitpunkt vor dem Ablauf des Abonnements in ein beliebiges Datum in der Zukunft (bis zum Jahr 9999) ändern. Wenn ein Abonnement ein Enddatum erreicht, wird es deaktiviert, bis Sie es erneut aktivieren. Vor dem geplanten Enddatum werden Sie per Benachrichtigung(en) gefragt, ob Sie das Abonnement verlängern möchten.    
 
@@ -67,7 +67,7 @@ Das Abonnieren von paginierten Berichten unterscheidet sich etwas. Details finde
 7. Klicken Sie auf **Speichern und schließen**. Die Abonnenten erhalten eine E-Mail und eine Momentaufnahme des Dashboards oder der Berichtseite mit der Häufigkeit und zu der Uhrzeit, die Sie ausgewählt haben. Insgesamt können Sie bis zu 24 Abonnements pro Bericht oder Dashboard erstellen und für jedes Abonnement eigene Empfänger, Uhrzeiten und Häufigkeiten angeben.  Für alle Abonnements, für die **After Data Refresh** (Nach der Datenaktualisierung) für das Dashboard oder den Bericht festgelegt wurde, wird dennoch nur nach der ersten geplanten Aktualisierung eine E-Mail versendet.   
       
    > [!TIP]
-   > Möchten Sie die E-Mail zu einem Abonnement sofort oder zu einem beliebigen Zeitpunkt senden? Klicken Sie bei den Abonnements für das Dashboard oder den Bericht, für die Sie eine E-Mail senden möchten, auf **Jetzt ausführen**. Es wird eine Benachrichtigung angezeigt, die angibt, dass alle Benutzer dieses Abonnements eine E-Mail erhalten.  Sie können diesen Vorgang so oft durchführen, wie Sie möchten. Dies zählt nicht für das tägliche Limit von 24 geplanten Ausführungen von Abonnements pro Bericht oder Dashboard. Dies löst KEINE Datenaktualisierung für das zugrunde liegende Dataset aus. 
+   > Möchten Sie die E-Mail zu einem Abonnement sofort oder zu einem beliebigen Zeitpunkt senden? Klicken Sie bei den Abonnements für das Dashboard oder den Bericht, für die Sie eine E-Mail senden möchten, auf **Jetzt ausführen**. Es wird eine Benachrichtigung angezeigt, die angibt, dass alle Benutzer dieses Abonnements eine E-Mail erhalten.  Diese Aktion zählt nicht zum täglichen Limit von 24 geplanten Ausführungen von Abonnements pro Bericht oder Dashboard. Dies löst KEINE Datenaktualisierung für das zugrunde liegende Dataset aus. 
    > 
    > 
    
@@ -103,7 +103,7 @@ Ein Abonnement wird beendet, wenn die Pro-Lizenz abläuft, der Besitzer das Dash
 * Für Abonnements von Dashboards werden bestimmte Typen von Kacheln noch nicht unterstützt.  Dazu zählen Streamingkacheln, Videokacheln und benutzerdefinierte Kacheln mit Webinhalten.     
 * Wenn Sie ein Dashboard für einen Kollegen außerhalb Ihres Mandanten freigeben, können Sie zusätzlich kein Abonnement für diesen Kollegen erstellen. Wenn Sie aaron@xyz.com sind, können Sie es für anyone@ABC.com freigeben, aber es kann dafür derzeit kein Abonnement für anyone@ABC.com abgeschlossen werden.      
 * Die Aktualisierung von Datasets, die mit Dashboards und Berichten verknüpft sind und seit mehr als zwei Monaten nicht besucht wurden, wird von Power BI automatisch ausgesetzt.  Wenn Sie jedoch einem Dashboard oder Bericht ein Abonnement hinzufügen, wird die Aktualisierung nicht ausgesetzt, auch wenn das Dashboard oder der Bericht längere Zeit nicht besucht wurde.    
-* Wenn Sie die E-Mails des Abonnements nicht erhalten, vergewissern Sie sich, dass Ihr Benutzerprinzipalname (User Principal Name, UPN) E-Mails empfangen kann. [Das Power BI-Team arbeitet daran, diese Anforderung zu lockern](https://community.powerbi.com/t5/Issues/No-Mail-from-Cloud-Service/idc-p/205918#M10163) – schauen Sie also wieder vorbei. 
+* Wenn Sie die E-Mails des Abonnements nicht erhalten, vergewissern Sie sich, dass Ihr Benutzerprinzipalname (User Principal Name, UPN) E-Mails empfangen kann. 
 * Wenn Ihr Dashboard oder Bericht sich in einer Premium-Kapazität befindet, können Sie E-Mail-Aliase von Gruppen für Abonnements verwenden, statt für jeden Kollegen einzeln mit dessen E-Mail-Adresse ein Abonnement abschließen zu müssen. Die Aliase basieren auf dem aktuellen Verzeichnis der aktiven Benutzer. 
 
 ## <a name="next-steps"></a>Nächste Schritte

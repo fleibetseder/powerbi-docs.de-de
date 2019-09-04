@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/29/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: d6d6ca0b9a1a2ec312a9168aad7a7cc93981e396
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: 21a7bf05330373febe1e9f121f07df6de0779c69
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816690"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70200946"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Datenquellen für den Power BI-Dienst
 Daten sind der Kern von Power BI. Nehmen wir an, dass Sie Daten untersuchen. Hierfür können Sie Diagramme und Dashboards erstellen oder über die **Q&A**-Funktion Fragen stellen. Die angezeigten Visualisierungen und Antworten rufen die zugrunde liegenden Daten aus einem Dataset ab. Doch woher stammt das Dataset? Es stammt aus einer Datenquelle.
@@ -46,7 +46,7 @@ Im Abschnitt **Neuen Inhalt erstellen** finden Sie Optionen für das Erstellen u
 ### <a name="files"></a>Dateien
 ![](media/service-get-data/pbi_getdata_files.png)
 
-**Excel** ( *.xlsx*, *.xlsm*): Im Folgenden erhalten Sie einige Informationen zu Excel. Eine Excel-Arbeitsmappe kann unterschiedliche Datentypen enthalten. Dazu zählen beispielsweise Daten, die Sie selbst in das Arbeitsblatt eingetragen haben. Sie kann auch Daten enthalten, die Sie abgefragt und mithilfe von Power Query aus externen Datenquellen geladen haben. Power Query ist in Excel 2016 oder Power Pivot über die Funktionen zum **Abrufen und Transformieren** verfügbar. Sie können Daten aus Tabellen in Arbeitsblättern oder aus einem Datenmodell importieren. Weitere Informationen finden Sie unter [Abrufen von Daten aus Dateien für Power BI](service-get-data-from-files.md).
+**Excel** ( *.xlsx*, *.xlsm*): Eine Excel-Arbeitsmappe kann unterschiedliche Datentypen enthalten. Dazu zählen beispielsweise Daten, die Sie selbst in das Arbeitsblatt eingetragen haben. Sie kann auch Daten enthalten, die Sie abgefragt und mithilfe von Power Query aus externen Datenquellen geladen haben. Power Query ist in Excel 2016 oder Power Pivot über die Funktionen zum **Abrufen und Transformieren** verfügbar. Sie können Daten aus Tabellen in Arbeitsblättern oder aus einem Datenmodell importieren. Weitere Informationen finden Sie unter [Abrufen von Daten aus Dateien für Power BI](service-get-data-from-files.md).
 
 **Power BI Desktop** ( *.pbix*): Sie können mithilfe von Power BI Desktop Daten aus externen Datenquellen abfragen und laden und Berichte erstellen. Sie können Ihr Datenmodell zudem mit Measures und Beziehungen erweitern oder Ihre Power BI Desktop-Datei auf Ihre Power BI-Website importieren. Power BI Desktop ist für erfahrene Benutzer am besten geeignet. Diese Benutzer haben in der Regel gute Kenntnisse über Datenquellen. Sie sind auch mit der Abfrage und Transformation von Daten und mit den Konzepten zur Datenmodellierung vertraut. Weitere Informationen finden Sie unter [Verbinden mit Daten in Power BI Desktop](desktop-connect-to-data.md).
 
@@ -104,7 +104,7 @@ Inhaltspakete aus Diensten werden automatisch aktualisiert. In den meisten Fäll
 
 Bei Azure SQL-Datenbank, Azure SQL Data Warehouse und Spark on Azure HDInsight handelt es sich um Datenquellen in der Cloud. Da sich der Power BI-Dienst ebenfalls in der Cloud befindet, kann Power BI mithilfe von **DirectQuery** eine Liveverbindung mit diesen Datenquellen herstellen. Die Daten in Power BI werden immer synchronisiert, und Sie müssen keine geplante Aktualisierung einrichten.
 
-Bei SQL Server Analysis Services gibt es einen Unterschied. Wenn Sie eine Verbindung von Power BI aus herstellen, handelt es sich wie bei einer Azure-Datenbank in der Cloud um eine Liveverbindung. Der Unterschied besteht darin, dass sich die Datenbank auf einem Organisationsserver befindet. Für diese Verbindungsart ist ein Power BI-Gateway erforderlich, das von der IT-Abteilung konfiguriert werden muss.
+Wenn Sie von Power BI aus eine Verbindung mit SQL Server Analysis Services herstellen, handelt es sich wie bei einer Azure-Datenbank in der Cloud um eine Liveverbindung. Der Unterschied besteht darin, dass sich die Datenbank auf einem Organisationsserver befindet. Für diese Verbindungsart ist ein Power BI-Gateway erforderlich, das von der IT-Abteilung konfiguriert werden muss.
 
 Die Datenaktualisierung ist ein äußerst wichtiger Aspekt von Power BI und zu komplex, um an dieser Stelle umfassend behandelt zu werden. Wenn Sie gründliche Kenntnisse zu diesem Aspekt erwerben möchten, lesen Sie [Aktualisieren von Daten in Power BI](refresh-data.md).
 

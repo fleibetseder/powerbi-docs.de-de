@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/15/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 8000397e5d8f26847349c35b541aa82c5907292e
-ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
+ms.openlocfilehash: 1e4d589702bb471a2abc6af9448a6846825adbfe
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69621252"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160369"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Verbinden von Azure Data Lake Storage Gen2 zur Dataflowspeicherung (Vorschauversion)
 
@@ -115,19 +115,19 @@ Führen Sie die folgenden Schritte aus, um Anwendungen in Ihrem Mandanten zu fin
 
     ![Suchen nach Power-Anwendungen](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07.jpg)
 
-5. Wählen Sie in den Ergebnissen Ihrer Suche die Objekt-IDs für den Power BI-Dienst sowie für Power Query Online aus, und kopieren Sie sie. Halten Sie sich für das Einfügen dieser Werte in den nachfolgenden Schritten bereit.
+5. Wählen Sie in den Ergebnissen Ihrer Suche die Objekt-IDs für den Power BI Premium-Dienst sowie für Power Query Online aus, und kopieren Sie diese. Halten Sie sich für das Einfügen dieser Werte in den nachfolgenden Schritten bereit.
 
-7. Navigieren Sie als nächstes mithilfe des **Azure Storage-Explorers** zum *powerbi*-Dateisystem, das Sie im vorherigen Abschnitt erstellt haben. Führen Sie die Anweisungen im Abschnitt [Managing access (Verwalten des Zugriffs)](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) des Artikels [Set file and directory level permissions using Azure Storage explorer (Festlegen von Datei- und Verzeichnisebenenberechtigungen mithilfe des Azure Storage-Explorers)](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer) aus.
+6. Navigieren Sie als nächstes mithilfe des **Azure Storage-Explorers** zum *powerbi*-Dateisystem, das Sie im vorherigen Abschnitt erstellt haben. Führen Sie die Anweisungen im Abschnitt [Managing access (Verwalten des Zugriffs)](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) des Artikels [Set file and directory level permissions using Azure Storage explorer (Festlegen von Datei- und Verzeichnisebenenberechtigungen mithilfe des Azure Storage-Explorers)](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer) aus.
 
-8. Weisen Sie für jede der beiden in Schritt fünf gesammelten Power BI-Objekt-IDs Ihrem *powerbi*-Dateisystem Zugriff für **Read** (Lesen), **Write** (Schreiben), **Execute** (Ausführen) und Standard-ACLs zu.
+7. Weisen Sie Ihrem *powerbi*-Dateisystem für jede der beiden in Schritt 5 gesammelten Power BI Premium-Objekt-IDs Zugriff für **Read** (Lesen), **Write** (Schreiben), **Execute** (Ausführen) sowie Standard-ACLs zu.
 
    ![Weisen Sie für beide alle drei zu.](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07a.jpg)
 
-9. Weisen Sie für die in Schritt vier gesammelte Objekt-ID von Power Query Online Ihrem *powerbi*-Dateisystem Zugriff für **Write** (Schreiben) und **Execute** (Ausführen) sowie Standard-ACLs zu.
+8. Weisen Sie für die in Schritt vier gesammelte Objekt-ID von Power Query Online Ihrem *powerbi*-Dateisystem Zugriff für **Write** (Schreiben) und **Execute** (Ausführen) sowie Standard-ACLs zu.
 
    ![Weisen Sie dann „Write“ (Schreiben) und „Execute“ (Ausführen) zu.](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07b.jpg)
 
-10. Weisen Sie außerdem auch für **Other** (Andere) Zugriff für **Execute** (Ausführen) und Standard-ACLs zu.
+9. Weisen Sie außerdem auch für **Other** (Andere) Zugriff für **Execute** (Ausführen) und Standard-ACLs zu.
 
     ![Weisen Sie für „Other“ schließlich noch „Execute“ zu](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07c.jpg)
 

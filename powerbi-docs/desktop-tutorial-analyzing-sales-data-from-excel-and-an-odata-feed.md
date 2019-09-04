@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 757a2ca5a88e8ee98aa1c460c30e001f14bc6789
-ms.sourcegitcommit: 88e2a80b95b3e735689e75da7c35d84e24772e13
+ms.openlocfilehash: f18dae9ecd0eff0b7f62a3152fc59c81f1292ba4
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66814343"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160382"
 ---
 # <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Tutorial: Kombinieren von Umsatzdaten aus Excel und einem OData-Feed
 
@@ -119,7 +119,7 @@ Im Power Query-Editor können Sie Berechnungen und benutzerdefinierte Felder ers
    
 2. Geben Sie im Dialogfeld **Benutzerdefinierte Spalte** im Feld **Neuer Spaltenname** den Text **LineTotal** ein.
 
-3. Geben Sie im Feld **Benutzerdefinierte Spaltenformel** nach den **=, Folgendes ein: **[Order_Details.UnitPrice]** \* **[Order_Details.Quantity]** . (Sie können die Feldnamen auch aus dem Scrollfeld **Verfügbare Spalten** auswählen und auf **<< Einfügen** klicken, statt sie einzugeben.) 
+3. Geben Sie im Feld **Benutzerdefinierte Spaltenformel** nach *=* Folgendes ein: **[Order_Details.UnitPrice]** \* **[Order_Details.Quantity]** . (Sie können die Feldnamen auch aus dem Scrollfeld **Verfügbare Spalten** auswählen und auf **<< Einfügen** klicken, statt sie einzugeben.) 
 
 4. Wählen Sie **OK**aus.
    
