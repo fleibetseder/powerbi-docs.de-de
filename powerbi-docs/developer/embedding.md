@@ -1,9 +1,9 @@
 ---
 title: Embedded Analytics mit Power BI
 description: Power BI bietet APIs zum Verwenden von Embedded Analytics für Ihre Dashboards und Berichte in Anwendungen. In diesem Artikel erfahren Sie mehr über das Einbetten mit Power BI in einer PaaS-Umgebung und in einer SaaS-Umgebung unter Verwendung von Embedded Analytics-Software, Embedded Analytics-Tools oder eingebetteten Business Intelligence-Tools.
-author: rkarlin
-ms.author: rkarlin
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -17,12 +17,12 @@ helpviewer_keywords:
 - Power BI APIs
 ms.custom: seodec18
 ms.date: 05/15/2019
-ms.openlocfilehash: 8154370a78f418148381c201ba0c2bd50d8ae021
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: d2e52ff986bb2bba0caf5168c5038bb55011144a
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66497913"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391531"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Embedded Analytics mit Power BI
 

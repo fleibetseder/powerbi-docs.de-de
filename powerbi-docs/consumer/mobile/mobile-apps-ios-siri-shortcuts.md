@@ -1,7 +1,7 @@
 ---
 title: Integration der mobilen Power BI-App mit Siri-Kurzbefehlen
 description: Hier erfahren Sie, wie Siri-Verknüpfungen verwendet werden können, um direkt auf gewünschte Power BI-Inhalte zuzugreifen.
-author: michalfo
+author: KesemSharabi
 manager: mshenhav
 ms.reviewer: ''
 ms.service: powerbi
@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/03/2019
 ms.author: michalfo
-ms.openlocfilehash: 0fd94e7e8f1ea54dd6544eb5c0da13c90808d7e2
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: 3f1e02c880d737998afd7c84c4259e4de8582da9
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816798"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391496"
 ---
 # <a name="using-siri-shortcuts-in-power-bi-mobile-ios-app-preview"></a>Verwenden von Siri-Verknüpfungen in der Power BI Mobile-App für iOS (Vorschauphase)
 
@@ -64,7 +64,7 @@ Wenn Sie eine Verknüpfung löschen möchten, navigieren Sie zum Element, und ti
 > 
 
 ## <a name="next-steps"></a>Nächste Schritte
-Wenn Sie mehr über die mobile Power BI-App herausfinden möchten, haben Sie die folgenden Möglichkeiten: 
+Führen Sie folgende Schritte aus, um mehr über die mobile Power BI-App zu erfahren: 
 
 * Laden Sie die [mobile Power BI-App für iPhone](http://go.microsoft.com/fwlink/?LinkId=522062) herunter.
 * Folgen Sie [@MSPowerBI auf Twitter](https://twitter.com/MSPowerBI).
