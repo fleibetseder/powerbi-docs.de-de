@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: ed3a65e25694c23e1852a554742e0f8a6e6ff668
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: 5d0ace5c2986b30436838d33037ae3019bd8bdce
+ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530587"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70751573"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Veröffentlichen von Apps in Power BI
 
@@ -127,7 +127,7 @@ Hier finden Sie allgemeine Dinge, die Sie berücksichtigen sollten, wenn den neu
 Wenn Sie Links zu Ihrer App-Navigation hinzufügen und die Option „Inhaltsbereich“ auswählen:
 * Stellen Sie sicher, dass der Link eingebettet werden kann. Einige Dienste blockieren das Einbetten ihrer Inhalte in Drittanbieterwebsites wie Power BI.
 * Das Einbetten von Inhalten wie Berichten oder Dashboards des Power BI-Diensts in andere Arbeitsbereiche wird nicht unterstützt. 
-* Betten Sie Power BI-Berichtsserver-Inhalt unter Verwendung seines nativen eingebetteten URL-Inhalts aus einer lokalen Bereitstellung ein. Verwenden Sie die Schritte unter [Erstellen der Berichts-URL für den Power BI-Berichtsserver](https://docs.microsoft.com/power-bi/report-server/quickstart-embed#creating-the-power-bi-report-server-report-url), um die URL abzurufen. Denken Sie daran, dass die regulären Authentifizierungsregeln gelten. Zum Anzeigen des Inhalts ist daher eine VPN-Verbindung mit dem lokalen Server erforderlich. 
+* Betten Sie Power BI-Berichtsserver-Inhalt unter Verwendung seines nativen eingebetteten URL-Inhalts aus einer lokalen Bereitstellung ein. Verwenden Sie die Schritte unter [Erstellen der Berichts-URL für den Power BI-Berichtsserver](https://docs.microsoft.com/power-bi/report-server/quickstart-embed#create-the-power-bi-report-url), um die URL abzurufen. Denken Sie daran, dass die regulären Authentifizierungsregeln gelten. Zum Anzeigen des Inhalts ist daher eine VPN-Verbindung mit dem lokalen Server erforderlich. 
 * Am oberen Rand der eingebetteten Inhalte wird mit einer Sicherheitswarnung darauf hingewiesen, dass sich der Inhalt außerhalb von Power BI befindet.
 
 
@@ -170,7 +170,7 @@ Wenn Sie diese Option deaktivieren, erhalten neue Benutzer, die Sie der App hinz
 
 ## <a name="allow-users-to-copy-reports"></a>Erteilen einer Benutzerberechtigung zum Kopieren von Berichten
 
-Wenn Sie die Option **Allow users to make a copy of the reports in this app** (Benutzern erlauben, eine Kopie der Berichte in dieser App zu erstellen) aktivieren, können Benutzer alle Berichte in der App in „Mein Arbeitsbereich“ oder in einem anderen Arbeitsbereich speichern. Selbst wenn sich der ursprüngliche Bericht in einem Arbeitsbereich in einer Premium-Kapazität befindet, benötigen Benutzer eine Pro-Lizenz, um eine Kopie zu erstellen. Diese Personen können die Berichte dann an ihre individuellen Anforderungen anpassen. Sie müssen zuerst die Option **Allow all users to connect to the app's underlying datasets using the Build permission** (Allen Benutzern mithilfe der Erstellungsberechtigung erlauben, eine Verbindung mit den zugrunde liegenden Datasets der App herzustellen) aktivieren. Durch die Auswahl dieser Optionen aktivieren Sie das neue Feature zum [Kopieren von Berichten aus anderen Arbeitsbereichen](service-datasets-copy-reports.md).
+Wenn Sie die Option **Allow users to make a copy of the reports in this app** (Benutzern erlauben, eine Kopie der Berichte in dieser App zu erstellen) aktivieren, können Benutzer alle Berichte in der App in „Mein Arbeitsbereich“ oder in einem anderen Arbeitsbereich speichern. Selbst wenn sich der ursprüngliche Bericht in einem Arbeitsbereich in einer Premium-Kapazität befindet, benötigen Benutzer eine Pro-Lizenz, um eine Kopie zu erstellen. Sie können die Berichte dann an ihre individuellen Anforderungen anpassen. Sie müssen zuerst die Option **Allow all users to connect to the app's underlying datasets using the Build permission** (Allen Benutzern mithilfe der Erstellungsberechtigung erlauben, eine Verbindung mit den zugrunde liegenden Datasets der App herzustellen) aktivieren. Durch die Auswahl dieser Optionen aktivieren Sie das neue Feature zum [Kopieren von Berichten aus anderen Arbeitsbereichen](service-datasets-copy-reports.md).
 
 ## <a name="unpublish-an-app"></a>Aufheben der Veröffentlichung einer App
 Jedes Mitglied eines Arbeitsbereichs kann die Veröffentlichung der App aufheben.

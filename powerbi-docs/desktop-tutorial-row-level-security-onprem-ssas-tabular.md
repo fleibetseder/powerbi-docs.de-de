@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 05/28/2019
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6bfcb218f92c2b6e8a3349261e15e6b71b9512b2
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: bbd40173bd10abf312ff382a9452f7636234bc95
+ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523235"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70751671"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dynamische Sicherheit auf Zeilenebene mit dem tabellarischen Modell von Analysis Services
 
@@ -35,7 +35,7 @@ Für dieses Tutorial ist die [**AdventureworksDW2012**-Datenbank](https://github
 
 ## <a name="task-1-create-the-user-security-table-and-define-data-relationship"></a>Aufgabe 1: Erstellen einer Benutzersicherheitstabelle und Definieren der Datenbeziehung
 
-Es gibt viele Artikel, in denen das Definieren der dynamischen Sicherheit auf Zeilenebene mit dem **SQL Server Analysis Services-Tabellenmodell** beschrieben wird. In unserem Beispiel folgen wir dem Artikel [Implement Dynamic Security by Using Row Filters (Implementieren dynamischer Sicherheit mithilfe von Zeilenfiltern)](https://msdn.microsoft.com/library/hh479759.aspx). 
+Es gibt viele Artikel, in denen das Definieren der dynamischen Sicherheit auf Zeilenebene mit dem **SQL Server Analysis Services-Tabellenmodell** beschrieben wird. In unserem Beispiel folgen wir dem Artikel [Implement Dynamic Security by Using Row Filters (Implementieren dynamischer Sicherheit mithilfe von Zeilenfiltern)](https://docs.microsoft.com/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters). 
 
 Für die hier aufgeführten Schritte ist die relationale Datenbank **AdventureworksDW2012** erforderlich.
 
