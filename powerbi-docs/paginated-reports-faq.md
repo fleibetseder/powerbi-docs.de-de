@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 07/15/2019
-ms.openlocfilehash: 2e59499b93f4d1b4879cdec5b807f863a80718aa
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.date: 09/04/2019
+ms.openlocfilehash: 2be953c31ba3090e83e58f8e5626bb83e249556e
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665366"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302689"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Paginierte Berichte in Power BI: HÄUFIG GESTELLTE FRAGEN 
 
@@ -26,11 +26,11 @@ In diesem Artikel werden viele häufig gestellte Fragen zu paginierten Berichten
 
 ### <a name="what-size-premium-capacity-do-i-need-for-paginated-reports"></a>Welche Premium-Kapazitätsgröße benötige ich für paginierte Berichte?
 
-Die Workload der paginierten Berichte ist für die SKUs P1–P3 verfügbar.  Sie können sie auch mit den SKUs A4–A6 für SaaS-Einbettungsszenarios verwenden.
+Die Workload der paginierten Berichte ist für die SKUs P1–P3 verfügbar.  Sie können sie auch mit den SKUs A4–A6 für Einbettungs- oder Entwicklungs-/Testszenarien verwenden.
 
 ### <a name="what-is-the-maximum-memory-threshold-i-can-put-for-paginated-reports-in-my-capacity"></a>Was ist der Maximalwert für den Arbeitsspeicher, den ich in meiner Kapazität für paginierte Berichte festlegen kann?
 
-Sie können bis zu 100% des Arbeitsspeichers für diese Workload Ende Juni 2019 verwenden. 
+Sie können bis zu 100 % des Arbeitsspeichers für diese Workload verwenden.
 
 ### <a name="how-does-user-access-work-for-paginated-reports"></a>Wie funktioniert der Benutzerzugriff auf paginierte Berichte?
 
@@ -152,7 +152,7 @@ Sie können in Microsoft Excel, Microsoft Word, Microsoft PowerPoint sowie in di
 
 Ja, Drucken steht für paginierte Berichte zur Verfügung, einschließlich einer neuen, verbesserten Seitenansichts-Benutzeroberfläche. 
 
-### <a name="are-e-mail-subscriptions-available-yet-for-paginated-reports"></a>Sind E-Mail-Abonnements für paginierte Berichte bereits verfügbar?
+### <a name="are-e-mail-subscriptions-available-for-paginated-reports"></a>Sind E-Mail-Abonnements für paginierte Berichte verfügbar?
 
 Ja, E-Mail-Abonnements werden für paginierte Berichte vollständig unterstützt, und dies beinhaltet Unterstützung für sechs verschiedene Dateiformate und Parameterwerte.
 
@@ -166,7 +166,7 @@ Das Einbetten von Saas wird bereits unterstützt. Das Einbetten von Paas wird zu
 
 ### <a name="can-i-drill-through-from-a-power-bi-report-to-a-paginated-report"></a>Kann ich einen Drillthrough von einem Power BI-Bericht zu einem paginierten Bericht ausführen?
 
-Noch nicht, doch die Einführung dieser Funktion ist geplant.
+Ja, dies kann erreicht werden, indem Sie URL-Parameter für Ihre paginierten Berichte benutzen.
 
 ### <a name="can-i-share-my-paginated-report-content-through-a-power-bi-app"></a>Kann ich Inhalte meines paginierten Berichts mit einer Power BI-App freigeben?
 
