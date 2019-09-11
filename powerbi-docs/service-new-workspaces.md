@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e25a004098c5bfe5cf607f5ee4b26dfda09d792d
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: 9add7ce3c5caf675fde15fd15eea03d9d9b49d9b
+ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530503"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70750899"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organisieren der Arbeit in den neuen Power BI-Arbeitsbereichen
 
@@ -61,7 +61,7 @@ Mit Rollen können Sie verwalten, wer welche Aktionen in einem Arbeitsbereich du
 
 Wenn Sie einer Benutzergruppe Rollen zuweisen, verfügen die Personen in der Gruppe über Zugriffsberechtigungen für Inhalte. Wenn Sie Benutzergruppen schachteln, verfügen alle Benutzer über die Berechtigung.
 
-Folgende Rollen sind verfügbar: Administrator, Mitglied, Mitwirkender und Betrachter.
+Folgende Rollen sind verfügbar: Administrator, Mitglied, Mitwirkender und Betrachter. Für alle diese Funktionen außer der letzten ist eine Power BI Pro-Lizenz erforderlich.
 
 |Funktion   | Administrator  | Mitglied  | Mitwirkender  | Anzeigender Benutzer |
 |---|---|---|---|---|
@@ -73,9 +73,9 @@ Folgende Rollen sind verfügbar: Administrator, Mitglied, Mitwirkender und Betra
 | Anderen erlauben, Elemente erneut freizugeben. |  X | X  |   |   |
 | Inhalte im Arbeitsbereich erstellen, bearbeiten und löschen.  |  X | X  | X  |   |
 | Berichte im Arbeitsbereich veröffentlichen und Inhalt löschen.  |  X | X  | X  |   |
-| Anzeigen eines Elements. |  X | X  | X  | X  |
 | Erstellen Sie einen Bericht in einem anderen Arbeitsbereich basierend auf einem Dataset in diesem Arbeitsbereich. |  X | X  | X  | X <sup>1</sup>  |
 | Kopieren Sie einen Bericht. | X | X | X | X <sup>1</sup> |
+| Anzeigen eines Elements und Interagieren mit einem Element. |  X | X  | X  | X  |
 
 **1** erfordert eine Power BI Pro-Lizenz und eine [Erstellungsberechtigung für Datasets](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). 
  
@@ -134,7 +134,7 @@ Zu beachtende Einschränkungen:
 
 Einige Features funktionieren in den neuen Arbeitsbereichen anders als in den aktuellen Arbeitsbereichen. Diese Unterschiede sind beabsichtigt und basieren auf Feedback, das von Kunden gesammelt wurde. Mit diesen Änderungen wird ein flexiblerer Ansatz für die Zusammenarbeit in Arbeitsbereichen geboten:
 
-- Lizenzierungserzwingung: Die Veröffentlichung von Berichten für die neue Benutzeroberfläche für Arbeitsbereiche setzt bestehende Lizenzregeln durch, die eine Power BI Pro-Lizenz für Benutzer erfordern, die in Arbeitsbereichen zusammenarbeiten oder Inhalte für andere im Power BI-Dienst freigeben. Benutzern ohne Pro-Lizenz wird die Fehlermeldung „Nur Benutzer mit Power BI Pro-Lizenzen können in diesem Arbeitsbereich veröffentlichen" angezeigt.
+- Lizenzierungserzwingung: Die Veröffentlichung von Berichten für die neue Benutzeroberfläche für Arbeitsbereiche setzt bestehende Lizenzregeln durch, die eine Power BI Pro-Lizenz für Benutzer erfordern, die in Arbeitsbereichen zusammenarbeiten oder Inhalte für andere im Power BI-Dienst freigeben. Benutzern ohne Pro-Lizenz wird die Fehlermeldung „Nur Benutzer mit Power BI Pro-Lizenzen können in diesem Arbeitsbereich veröffentlichen“ angezeigt.
 - Mitglieder, die eine erneute Freigabe durchführen oder nicht durchführen können: ersetzt durch die Rolle „Mitwirkender“.
 - Schreibgeschützte Arbeitsbereiche: Anstatt Benutzern schreibgeschützten Zugriff auf einen Arbeitsbereich zu gewähren, weisen Sie Benutzern die Rolle „Anzeigender Benutzer“ zu, die einen ähnlichen schreibgeschützten Zugriff auf den Inhalt eines Arbeitsbereichs umfasst.
 - Wenn sich der Arbeitsbereich in einer Power BI Premium-Kapazität befindet, können Benutzer ohne Power BI Pro-Lizenz auch dann auf den Arbeitsbereich zugreifen, wenn sie die Rolle „Anzeigender Benutzer“ haben.
