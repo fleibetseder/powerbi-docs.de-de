@@ -7,37 +7,75 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/18/2018
+ms.date: 08/16/2019
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fcfbf4fb7be34739364fba176b28ea42934d5562
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 25970d09feac02a0b45e83ab1b348e800efc022d
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61283897"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302853"
 ---
 # <a name="run-python-scripts-in-power-bi-desktop"></a>Ausführen von Python-Skripts in Power BI Desktop
+
 Sie können Python-Skripts direkt in **Power BI Desktop** ausführen und die resultierenden Datasets in ein Power BI Desktop-Datenmodell importieren.
 
 ## <a name="install-python"></a>Python installieren
-Damit Sie Python-Skripts in Power BI Desktop ausführen können, müssen Sie **Python** auf dem lokalen Computer installieren. **Python** können Sie an vielen Stellen im Internet kostenlos herunterladen und installieren, u.a. von der [Offiziellen Python-Downloadseite](https://www.python.org/) und aus [Anaconda](https://anaconda.org/anaconda/python/). Die aktuelle Version der Python-Skripterstellung in Power BI Desktop unterstützt Unicode-Zeichen ebenso wie Leerzeichen (leere Zeichen) im Installationspfad.
+
+Damit Sie Python-Skripts in Power BI Desktop ausführen können, müssen Sie **Python** auf dem lokalen Computer installieren. Sie können **Python** über die [offizielle Python-Downloadseite](https://www.python.org/) herunterladen. Das aktuelle Release für die Python-Skripterstellung unterstützt Unicode-Zeichen und Leerzeichen im Installationspfad.
 
 ### <a name="install-required-python-packages"></a>Installieren erforderlicher Python-Pakete
-Für die Power BI-Python-Integration müssen zwei Python-Pakete installiert werden (Pandas und Matplotlib).  Installieren Sie mithilfe des pip-Befehlszeilentools die folgenden zwei Pakete:
 
-```
+Für die Python-Integration in Power BI sind zwei Python-Pakete erforderlich:
+
+- [Pandas:](https://pandas.pydata.org/) Eine Softwarebibliothek für die Datenbearbeitung und -analyse. Sie stellt Datenstrukturen und Vorgänge zum Bearbeiten numerischer Tabellen und Zeitreihen bereit. Ihre importierten Daten müssen einen [Pandas-Datenrahmen](https://www.tutorialspoint.com/python_pandas/python_pandas_dataframe.htm) aufweisen. Ein Datenrahmen ist eine zweidimensionale Datenstruktur. Daten werden beispielsweise tabellarisch in Zeilen und Spalten angeordnet.
+- [Matplotlib:](https://matplotlib.org/) Eine Zeichnungsbibliothek für Python und ihre numerische Mathematikerweiterung [NumPy](https://www.numpy.org/). Sie stellt eine objektorientierte API zum Einbetten von Plots in Anwendungen mithilfe allgemeiner GUI-Toolkits (z. B. Tkinter, wxPython, Qt oder GTK+) bereit.
+
+1. Verwenden Sie das Befehlszeilentool [PIP](https://pip.pypa.io/en/stable/) in einer Konsole oder Shell, um die zwei Pakete zu installieren. Das PIP-Tool ist in den neueren Python-Versionen standardmäßig enthalten.
+
+```CMD
 pip install pandas
 pip install matplotlib
 ```
 
+## <a name="enable-python-scripting"></a>Aktivieren der Python-Skripterstellung
+
+So aktivieren Sie die Python-Skripterstellung:
+
+1. Klicken Sie in Power BI Desktop auf **Datei** > **Optionen und Einstellungen** > **Optionen** > **Python-Skripterstellung**. Daraufhin wird die Seite „Optionen für Python-Skripts“ angezeigt.
+
+   ![](media/desktop-python-scripts/python-scripts-7.png)
+
+1. Geben Sie bei Bedarf Ihren lokalen Python-Installationspfad im Textfeld **Erkannte Python-Basisverzeichnisse:** ein. 
+
+   In der obigen Abbildung lautet der lokale Installationspfad von Python **C:\Python**. Stellen Sie sicher, dass der Pfad für die lokale Python-Installation ist, die von Power BI Desktop verwendet werden soll.
+
+1. Wählen Sie **OK**aus.
+
+Sobald Sie Ihre Python-Installation angegeben haben, können Sie Python-Skripts in Power BI Desktop ausführen.
+
 ## <a name="run-python-scripts"></a>Ausführen von Python-Skripts
-Mit nur wenigen Schritten in Power BI Desktop können Sie Python-Skripts ausführen und ein Datenmodell erstellen, auf Basis dessen Sie Berichte erstellen und im Power BI-Dienst freigeben können.
+
+Sie können Python-Skripts in nur wenigen Schritten ausführen und ein Datenmodell erstellen. Mit diesem Modell können Sie Berichte erstellen und diese im Power BI-Dienst freigeben.
 
 ### <a name="prepare-a-python-script"></a>Vorbereiten eines Python-Skripts
-Wenn Sie ein Python-Skript in Power BI Desktop ausführen möchten, erstellen Sie das Skript in Ihrer lokalen Python-Entwicklungsumgebung, und vergewissern Sie sich, dass es erfolgreich ausgeführt wird.
+Erstellen Sie zunächst ein Skript in Ihrer lokalen Python-Entwicklungsumgebung, und stellen Sie sicher, dass es erfolgreich ausgeführt wird. Es folgt ein einfaches Python-Beispielskript, das Pandas importiert und einen Datenrahmen verwendet:
 
-Zum Ausführen des Skripts in Power BI Desktop stellen Sie sicher, dass das Skript in einem neuen und unveränderten Arbeitsbereich erfolgreich ausgeführt wird. Dies bedeutet, dass alle Pakete und Abhängigkeiten explizit geladen und ausgeführt werden müssen.
+```python
+import pandas as pd
+data = [['Alex',10],['Bob',12],['Clarke',13]]
+df = pd.DataFrame(data,columns=['Name','Age'],dtype=float)
+print (df)
+```
+Wenn es ausgeführt wird, wird die folgende Ausgabe zurückgegeben:
+
+```python
+     Name   Age
+0    Alex  10.0
+1     Bob  12.0
+2  Clarke  13.0
+```
 
 Beim Vorbereiten und Ausführen eines Python-Skripts in Power BI Desktop müssen Sie einige Einschränkungen beachten:
 
@@ -45,28 +83,38 @@ Beim Vorbereiten und Ausführen eines Python-Skripts in Power BI Desktop müss
 * Wenn die Ausführung eines Python-Skripts länger als 30 Minuten dauert, wird sie mit einem Timeout abgebrochen.
 * Bei interaktiven Aufrufen in einem Python-Skript, z. B. beim Warten auf eine Benutzereingabe, wird die Ausführung des Skripts angehalten.
 * Wenn Sie das Arbeitsverzeichnis im Python-Skript angeben, *müssen* Sie den vollständigen Pfad zu diesem Verzeichnis angeben – der relative Pfad genügt nicht.
-* Geschachtelte Tabellen (Tabellen von Tabellen) werden derzeit nicht unterstützt. 
+* Geschachtelte Tabellen werden derzeit nicht unterstützt. 
 
 ### <a name="run-your-python-script-and-import-data"></a>Ausführen des Python-Skripts und Importieren der Daten
-1. In Power BI Desktop befindet sich das Python-Skript-Datenconnector unter **Daten abrufen**. Wählen Sie zum Ausführen Ihres Python-Skripts **Daten abrufen &gt; Mehr...** und anschließend **Sonstige &gt; Python-Skript** aus, wie in der folgenden Abbildung dargestellt:
+
+So führen Sie Ihr Python-Skript in Power BI Desktop aus:
+
+1. Klicken Sie im Menüband „Start“ auf **Daten abrufen** > **Mehr...** .
    
+1. Wählen Sie dann wie im folgenden Bild gezeigt **Sonstige** > **Python-Skript** aus:
+
    ![](media/desktop-python-scripts/python-scripts-1.png)
-2. Wenn Python auf dem lokalen Computer installiert ist, wird die neueste installierte Version als Python-Engine ausgewählt. Kopieren Sie Ihr Skript einfach in das Skriptfenster, und wählen Sie **OK**aus.
    
-   ![](media/desktop-python-scripts/python-scripts-2.png)
-3. Wenn Python nicht installiert ist, nicht erkannt wird oder auf Ihrem lokalen Computer mehrere Installationen vorhanden sind, wird eine Warnung angezeigt.
-   
-   ![](media/desktop-python-scripts/python-scripts-3.png)
-   
-   Die Python-Installationseinstellungen befinden sich zentral im Abschnitt „Python-Skripterstellung“ des Dialogfelds „Optionen“. Wählen Sie zum Festlegen Ihrer Python-Installationseinstellungen **Datei > Optionen und Einstellungen** und anschließend **Optionen > Python-Skripterstellung** aus. Wenn mehrere Installationen von Python verfügbar sind, wird ein Dropdownmenü angezeigt, das Ihnen die Auswahl der gewünschten Installation ermöglicht. Sie können auch **Andere** auswählen und einen benutzerdefinierten Pfad eingeben.
-   
-   ![](media/desktop-python-scripts/python-scripts-4.png)
-4. Wählen Sie **OK** aus, um das Python-Skript auszuführen. Wenn das Skript erfolgreich ausgeführt wird, können Sie die resultierenden Datenrahmen auswählen, die Sie dem Power BI-Modell hinzufügen möchten.
+1. Wählen Sie **Verbinden** aus. Die neueste auf Ihrem lokalen Computer installierte Python-Version wird als Ihre Python-Engine ausgewählt. Kopieren Sie Ihr Skript in das angezeigte Python-Skriptdialogfeld. Hier geben Sie das zuvor gezeigte einfache Python-Skript ein.
+
+   ![](media/desktop-python-scripts/python-scripts-6.png)
+
+1. Wählen Sie **OK**aus. Wenn das Skript erfolgreich ausgeführt wird, wird das Dialogfeld „Navigator“ angezeigt, und Sie können die Daten laden und verwenden. Aktivieren Sie beispielsweise wie im folgenden Bild gezeigt das Kontrollkästchen **df**, und klicken Sie dann auf **Laden**.
+
+   ![](media/desktop-python-scripts/python-scripts-5.png) 
+
+### <a name="troubleshooting"></a>Problembehandlung
+
+Wenn Python nicht installiert ist oder nicht erkannt wird, wird eine Warnung angezeigt. Es wird auch eine Warnung angezeigt, wenn Sie über mehrere Installationen auf dem lokalen Computer verfügen. In diesem Fall sollten Sie sich die Abschnitte „Installieren von Python“ und „Aktivieren der Python-Skripterstellung“ noch mal ansehen.
+
+![](media/desktop-python-scripts/python-scripts-3.png)
 
 ### <a name="refresh"></a>Aktualisieren
-Sie können ein Python-Skript in Power BI Desktop aktualisieren. Wenn Sie ein Python-Skript aktualisieren, führt Power BI Desktop das Python-Skript in der Power BI Desktop-Umgebung erneut aus.
+
+Sie können ein Python-Skript in Power BI Desktop aktualisieren. Navigieren Sie zum Aktualisieren zum Menüband **Start**, und klicken Sie dann auf **Aktualisieren**. Wenn Sie ein Python-Skript aktualisieren, führt Power BI Desktop das Python-Skript noch mal aus.
 
 ## <a name="next-steps"></a>Nächste Schritte
+
 Betrachten Sie die folgenden zusätzlichen Informationen über Python in Power BI.
 
 * [Erstellen von visuellen Python-Elementen in Power BI Desktop](desktop-python-visuals.md)

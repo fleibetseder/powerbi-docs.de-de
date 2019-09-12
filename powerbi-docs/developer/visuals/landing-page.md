@@ -1,6 +1,6 @@
 ---
-title: Landing Page
-description: Hinzufügen einer Landing Page zu Power BI-Visuals
+title: Hinzufügen einer Landing Page zu Ihren Power BI-Visuals
+description: In diesem Artikel wird beschrieben, wie eine Landing Page zu Power BI-Visuals hinzugefügt werden kann.
 author: sranins
 ms.author: rasala
 manager: rkarlin
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 44cc9314b31803c97d3203d4aab846685d8f88fa
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: d15c52134fe3c8638625e50a1374867a4abed3c1
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424882"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236692"
 ---
-# <a name="landing-page"></a>Landing Page
+# <a name="add-a-landing-page-to-your-power-bi-visuals"></a>Hinzufügen einer Landing Page zu Ihren Power BI-Visuals
 
-Mit API 2.3.0 können Sie dem Visual eine Landing Page hinzufügen. Dazu fügen Sie den Funktionen `supportsLandingPage` hinzu und legen dafür „true“ fest. Dadurch wird das Visual sogar initialisiert und aktualisiert, bevor Sie ihm Daten hinzufügen (d. h., es wird kein Wasserzeichen mehr angezeigt). So können Sie Ihre eigene Landing Page entwerfen und im Visual anzeigen lassen, solange es keine Daten enthält.
+Mit API 2.3.0 können Sie eine Landing Page zu Ihren Power BI-Visuals hinzufügen. Fügen Sie dazu `supportsLandingPage` den Funktionen hinzu, und legen Sie sie auf „true“ fest. Durch diese Aktion wird Ihr Visual initialisiert und aktualisiert, bevor Sie Daten hinzufügen. Da das Visual kein Wasserzeichen mehr anzeigt, können Sie Ihre eigene Landing Page so gestalten, dass Sie im Visual angezeigt wird, solange Sie keine Daten enthält.
 
 ```typescript
 export class BarChart implements IVisual {
@@ -57,6 +57,6 @@ export class BarChart implements IVisual {
     }
 ```
 
-Beispiel
+Ein Beispiel für eine Landing Page ist in der folgenden Abbildung dargestellt:
 
 ![Screenshot einer Landing Page](./media/landing-page.png)

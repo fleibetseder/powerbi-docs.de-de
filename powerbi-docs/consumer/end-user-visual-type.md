@@ -1,32 +1,32 @@
 ---
-title: Visualisierungstypen in Power BI für Kunden
-description: Visualisierungstypen in Power BI-Dienst
+title: Visualtypen in Power BI für Benutzer
+description: Visualtypen im Power BI-Dienst
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/14/2019
+ms.date: 08/21/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: acee7e78a19986a0f83e13836ba6d77f7c35fdce
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 875e154dbac063c0e4b9d5dc4208387e6d529a93
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65711103"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302506"
 ---
-# <a name="visual-types-in-power-bi"></a>Visualisierungstypen in Power BI
-Finden Sie Visualisierungen in Berichten, Dashboards, apps und f & a Einige der folgenden Arten von visuellen Elementen in Power BI verpackt sind und einige sind *benutzerdefinierte Visuals*. Benutzerdefinierte Visuals werden außerhalb von Power BI erstellt, damit *Berichts-Designer* sie zu Power BI-Berichten, -Dashboards und -Apps hinzufügen können. 
+# <a name="visual-types-in-power-bi"></a>Visualtypen in Power BI
+Sie finden Visuals in Berichten, Dashboards und Q&A. Einige der Visualtypen sind in Power BI enthalten, und einige andere sind *benutzerdefinierte Visuals*. Benutzerdefinierte Visuals werden außerhalb von Power BI erstellt, damit *Berichts-Designer* sie zu Power BI-Berichten und -Dashboards hinzufügen können. 
 
-Dieser Artikel ist eine Übersicht über die visuellen Elemente, die mit Power BI gepackt werden.  Hierbei handelt es sich um die visuellen Elemente, die meisten Fällen erledigt werden müssen. 
+Dieser Artikel bietet eine Übersicht über die im Power BI-Dienst enthaltenen Visuals.  Dies sind die Visuals, denen Sie am häufigsten begegnen werden. Ausführliche Informationen zu diesen Visuals finden Sie in der Dokumentation des [Power BI-Berichts-*Designers* zu Visualtypen](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
 > [!NOTE]
 > Erkunden Sie den Abschnitt **Power BI-Visuals** von [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), um mehr über benutzerdefinierte Visuals zu erfahren. Zu jedem Visual finden Sie eine Beschreibung, Informationen zum Ersteller und Screenshots oder ein Video. 
 
-## <a name="list-of-visuals-available-in-power-bi"></a>Liste der Visuals in Power BI verfügbar
-Alle diese Visuals finden Sie in Power BI-apps, Dashboards, Berichte und [in f & A angegebenen](end-user-q-and-a.md). Um zu erfahren, wie Sie mit visuellen Elementen interagieren, finden Sie unter [interagieren mit Visualisierungen in Berichten, Dashboards und apps](end-user-visualizations.md)
+## <a name="list-of-visuals-available-in-power-bi"></a>Liste der in Power BI verfügbaren Visuals
+Alle hier genannten Visuals finden Sie in Power BI-Dashboards und -Berichten sowie [Q&A](end-user-q-and-a.md). Informationen zum Interagieren mit Visuals finden Sie unter [Interagieren mit Visuals in Berichten, Dashboards und Apps](end-user-visualizations.md)
 
 ### <a name="area-charts-basic-layered-and-stacked"></a>Flächendiagramme: einfach (überlappend) und gestapelt
 ![area chart](media/end-user-visual-type/basic-area-map-small.png)
@@ -59,7 +59,7 @@ Ein Kombinationsdiagramm vereinigt ein Säulendiagramm und ein Liniendiagramm. D
 Kombinationsdiagramme sind gut für folgende Zwecke geeignet:
 - Bei einem Liniendiagramm und ein Säulendiagramm mit der gleichen X-Achse
 - Zum Vergleichen mehrerer Measures mit verschiedenen Wertebereichen
-- um die Korrelation zwischen zwei Measures in einem visuellen zu veranschaulichen.
+- Zum Verdeutlichen der Zusammenhänge zweier Measures in einem Visual
 - Zum Prüfen, ob eine Kennzahl das durch eine andere Kennzahl vorgegebene Ziel erfüllt
 - Zur Platzersparnis im Zeichenbereich
 
@@ -76,14 +76,6 @@ Trichter unterstützen die Visualisierung von Prozessen mit Phasen, bei denen El
 Ein Beispiel ist etwa ein Trichterdiagramm für den Verkauf, das die von den Kunden durchlaufenen Phasen nachverfolgt: Lead > Qualifizierter Lead > Potenzieller Kunde > Vertrag > Abschluss. Die Form des Trichterdiagramms zeigt auf einen Blick den Zustand des nachverfolgten Prozesses an.
 Jede Phase des Diagramms stellt einen prozentualen Anteil am Gesamtwert dar. Daher hat ein Trichterdiagramm in den meisten Fällen die Form eines Trichters, wobei die erste Phase am größten und jede nachfolgende Phase etwas kleiner ist. Ein birnenförmiges Diagramm ist hilfreich, um ein Problem im Prozess zu identifizieren. In der Regel ist jedoch die erste Phase (die „Trichteröffnung“) am größten.
 
-Trichterdiagramme sind gut für folgende Zwecke geeignet:
-- Bei fortlaufenden Daten über mindestens vier Phasen hinweg
-- Bei einer voraussichtlich größeren Anzahl an „Elementen“ in der ersten Phase im Vergleich zur letzten Phase
-- Zum Berechnen potenzieller Werte (Umsatz/Verkäufe/Aufträge usw.) nach Phasen
-- Zum Berechnen und Nachverfolgen der Konvertierungs- und Kundenbindungsrate
-- Zum Erkennen von Engpässen in einem linearen Prozess
-- Zum Nachverfolgen des Workflows in Bezug auf den Warenkorb
-- Zum Nachverfolgen des Fortschritts und Erfolgs von Click-Through-Werbe-/Marketingkampagnen
 
 ### <a name="gauge-charts"></a>Messgerätdiagramme
 ![Messgerätdiagramm](media/end-user-visual-type/gauge-m.png)
@@ -127,7 +119,7 @@ Verwenden Sie eine einfache Karte, um kategorische und quantitative Informatione
 ### <a name="maps-arcgis-maps"></a>Karten: ArcGIS-Karten
 ![ArcGIS-Karte](media/end-user-visual-type/power-bi-esri-map-theme2.png)
 
-Die Kombination von ArcGIS Maps und Power BI bietet völlig neue Möglichkeiten der Kartendarstellung, die über die Darstellung von Punkten auf einer Karte weit hinausgeht. Die verfügbaren Optionen für basiskarten, Standorttypen, Designs, symbolstile und Referenzebenen erstellt symbolstile aussagekräftigen kartenvisualisierungen. Die Kombination von autoritativen Datenebenen (z.B. Volkszählungsdaten) auf einer Karte mit räumlicher Analyse vermittelt ein tieferes Verständnis der Daten in der Visualisierung.
+Die Kombination von ArcGIS Maps und Power BI bietet völlig neue Möglichkeiten der Kartendarstellung, die über die Darstellung von Punkten auf einer Karte weit hinausgeht. Die verfügbaren Optionen für Basiskarten, Standorttypen, Designs, Symbolstile und Referenzebenen ermöglichen das Erstellen von beeindruckenden, aussagekräftigen Kartenvisuals. Die Kombination von autoritativen Datenebenen (z. B. Volkszählungsdaten) auf einer Karte mit räumlicher Analyse vermittelt ein tieferes Verständnis der Daten im Visual.
 
 ### <a name="maps-filled-maps-choropleth"></a>Karten: gefüllte Karten (Choropleth)
 ![Flächenkartogramm](media/end-user-visual-type/pbi-nancy-viz-filledmap.png)
@@ -137,7 +129,7 @@ In einem Flächenkartogramm wird mithilfe von Schattierungen, Farben oder Muster
 ### <a name="maps-shape-maps"></a>Karten: Flächenkartogramme
 ![Flächenkartogramm](media/end-user-visual-type/power-bi-shape-map2.png)
 
-Flächenkartogramme vergleichen Regionen auf einer Karte mithilfe von Farben. Im Gegensatz zum Visual „Karte“ kann das Visual „Flächenkartogramm“ keine genauen geografischen Standorte von Datenpunkten auf einer Karte anzeigen. Stattdessen soll es vor allem Regionen auf einer Karte in Beziehung zueinander setzen, indem diese unterschiedliche Farben erhalten.
+Flächenkartogramme vergleichen Regionen auf einer Karte mithilfe von Farben. Eine Formenzuordnung kann keine genauen geografischen Standorte von Datenpunkten auf einer Karte anzeigen. Stattdessen soll es vor allem Regionen auf einer Karte in Beziehung zueinander setzen, indem diese unterschiedliche Farben erhalten.
 
 ### <a name="matrix"></a>Matrix
 ![Matrix](media/end-user-visual-type/matrix.png)
@@ -163,12 +155,16 @@ Ein Punktdiagramm weist immer zwei Wertachsen auf, sodass ein Satz von numerisch
 
 In einem Blasendiagramm werden Datenpunkte durch Blasen ersetzt. Hierbei repräsentiert die Größe der Blase eine zusätzliche Dimension der Daten.
 
-Punktplotdiagramme ähneln Blasen- und Punktdiagrammen mit der Ausnahme, dass numerische oder Kategoriedaten entlang der X-Achse dargestellt werden können.
+
+
+Punktplotdiagramme ähneln Blasen- und Punktdiagrammen mit der Ausnahme, dass numerische oder Kategoriedaten entlang der X-Achse dargestellt werden können. In diesem Beispiel werden Quadrate anstelle von Kreisen verwendet, und es werden die Umsätze entlang der X-Achse dargestellt.
+
+![Punktplotdiagramm](media/end-user-visual-type/power-bi-dot-plot-squares.png)
 
 ### <a name="scatter-high-density"></a>Punktdiagramme mit hoher Dichte
 ![Punktdiagramm mit hoher Dichte](media/end-user-visual-type/density-scatter.png)
 
-Definitionsgemäß ist Daten mit hoher Dichte entnommen, um Visualisierungen zu erstellen, schnelles, die auf Interaktivität reagieren. Die Stichprobenentnahme mit hoher Dichte nutzt einen Algorithmus, der überlappende Punkte ausschließt und sicherstellt, dass alle Punkte im Dataset im Visual dargestellt werden. Es wird nicht lediglich eine Stichprobe der Daten dargestellt.  
+Definitionsgemäß werden Stichproben von Daten mit hoher Dichte entnommen, um schnell Visuals zu erstellen, die auf Interaktivität reagieren. Die Stichprobenentnahme mit hoher Dichte nutzt einen Algorithmus, der überlappende Punkte ausschließt und sicherstellt, dass alle Punkte im Dataset im Visual dargestellt werden. Es wird nicht lediglich eine Stichprobe der Daten dargestellt.  
 
 Damit werden Reaktionsfähigkeit, Darstellung und die Erhaltung von wichtigen Punkten im gesamten Dataset optimal miteinander vereint.
 
@@ -226,8 +222,8 @@ Wasserfalldiagramme sind gut für folgende Zwecke geeignet:
 - Zum Illustrieren der Mitarbeiterzahl Ihres Unternehmens zu Jahresbeginn und -ende
 - Zum Visualisieren Ihrer Einnahmen und Ausgaben pro Monat und des laufenden Kontostands für Ihr Konto
 
-## <a name="qna"></a>Teilen Sie F & A welches visuelle Element verwenden
-Bei der Eingabe von Abfragen in natürlicher Sprache mit Power BI Q & A können Sie den Typ des Visuals in der Abfrage angeben.  Beispiel:
+## <a name="qna"></a>Angeben der verwendeten Visuals für Q&A
+Bei der Eingabe von Abfragen in natürlicher Sprache über den Bereich für Fragen und Antworten in Power BI können Sie den Visualtyp in der Abfrage angeben.  Beispiel:
 
 
 ***Umsätze nach Bundesland als Treemap***
@@ -235,5 +231,5 @@ Bei der Eingabe von Abfragen in natürlicher Sprache mit Power BI Q & A können 
 ![Q&A-Sitzung](media/end-user-visual-type/qa-treemap.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
-[Interagieren Sie mit Visualisierungen in Berichten, Dashboards und apps](end-user-visualizations.md)    
+[Interagieren mit Visuals in Berichten, Dashboards und Apps](end-user-visualizations.md)    
 [„The right visual reference“ von sqlbi.com](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)

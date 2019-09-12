@@ -1,6 +1,6 @@
 ---
-title: QuickInfos für Visuals
-description: Power BI-Visuals unterstützt die Anzeige von QuickInfos.
+title: QuickInfos in Power BI-Visuals
+description: In diesem Artikel wird erläutert, wie Sie QuickInfos in Power BI-Visuals anzeigen können.
 author: AviSander
 ms.author: asander
 manager: rkarlin
@@ -9,32 +9,32 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 286c5eef2c341ad77c351008b321992597bef292
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 5ad14c632955c42607206dd09a16a8fdb3670e92
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425641"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237372"
 ---
-# <a name="power-bi-visuals-tooltips"></a>QuickInfos in Power BI-Visuals
+# <a name="tooltips-in-power-bi-visuals"></a>QuickInfos in Power BI-Visuals
 
-Jetzt profitieren auch Visuals von der QuickInfo-Unterstützung in Power BI. Interaktionen für QuickInfos in Power BI:
+In Visuals können jetzt auch Power BI-QuickInfos verwendet werden. Interaktionen für QuickInfos in Power BI:
 
-Anzeigen einer QuickInfo
-Ausblenden einer QuickInfo
-Verschieben einer QuickInfo
+* Anzeigen einer QuickInfo
+* Ausblenden einer QuickInfo
+* Verschieben einer QuickInfo
 
-Eine QuickInfo kann als Textelement mit einem Titel, einem Wert für eine bestimmte Farbe und Deckkraft und einer Gruppe von Koordinaten angezeigt werden. Die Daten werden für die API bereitgestellt. Anschließend werden sie vom Power BI-Host auf dieselbe Weise gerendert wie QuickInfos für native Visuals.
+Eine QuickInfo kann als Textelement mit einem Titel, einem Wert in einer bestimmten Farbe und Deckkraft und einer Gruppe von Koordinaten angezeigt werden. Diese Daten werden anschließend der API zur Verfügung gestellt und vom Power BI-Host auf dieselbe Weise gerendert wie QuickInfos für native Visuals.
 
-Ein Beispiel dafür ist die QuickInfo im folgenden BarChart-Beispiel.
+Auf dem folgenden Screenshot ist eine QuickInfo in einem beispielhaften Balkendiagramm zu sehen:
 
-![QuickInfo im BarChart-Beispiel](./media/tooltips-in-samplebarchart.png)
+![QuickInfo in beispielhaftem Balkendiagramm](./media/tooltips-in-samplebarchart.png)
 
-In der oben dargestellten QuickInfo werden eine Kategorie und ein Wert für einen einzelnen Balken angezeigt. Die Anzeige kann erweitert werden, um mehrere Werte innerhalb einer QuickInfo zu sehen.
+Auf dem obigen Screenshot mit der QuickInfo wird eine einzelne Kategorie und ein einzelner Wert für ein Balkendiagramm veranschaulicht. Sie können eine einzelne QuickInfo so erweitern, dass mehrere Werte angezeigt werden.
 
-## <a name="handling-tooltips"></a>Arbeiten mit QuickInfos
+## <a name="manage-tooltips"></a>Verwalten von QuickInfos
 
-Die Schnittstelle für die Verwaltung von QuickInfos heißt ITooltipService. Über diese Schnittstelle wird der Host darüber benachrichtigt, dass eine QuickInfo angezeigt, entfernt oder verschoben werden muss.
+Die Schnittstelle für die Verwaltung von QuickInfos heißt ITooltipService. Über diese wird der Host darüber benachrichtigt, dass eine QuickInfo angezeigt, entfernt oder verschoben werden muss.
 
 ```typescript
     interface ITooltipService {
@@ -47,19 +47,21 @@ Die Schnittstelle für die Verwaltung von QuickInfos heißt ITooltipService. Üb
 
 Das Visual muss die eigenen Mausereignisse überwachen und bei Bedarf den Delegaten `show()`, `move()` oder `hide()` mit dem Inhalt aufrufen, der in den `Tooltip****Options`-Objekten enthalten ist.
 Durch `TooltipShowOptions` und `TooltipHideOptions` wird wiederum definiert, was bei Auftreten dieser Ereignisse angezeigt wird und wie sich die QuickInfo verhält.
-Da beim Aufrufen dieser Methoden auch Benutzerereignisse wie Mausbewegungen oder Touchereignisse eine Rolle spielen, empfiehlt es sich, Listener für diese Ereignisse zu erstellen. Dadurch werden dann die `TooltipService`-Elemente aufgerufen.
+
+Da beim Aufrufen dieser Methoden auch Benutzerereignisse wie Mausbewegungen und Touchereignisse eine Rolle spielen, empfiehlt es sich, Listener für diese Ereignisse zu erstellen. Dadurch werden dann die `TooltipService`-Member aufgerufen.
 In unserem Beispiel werden Daten in der `TooltipServiceWrapper`-Klasse aggregiert.
 
-### <a name="tooltipservicewrapper-class"></a>TooltipServiceWrapper-Klasse
+### <a name="the-tooltipservicewrapper-class"></a>Die TooltipServiceWrapper-Klasse
 
-Die Grundidee dieser Klasse ist, dass sie die Instanz von `TooltipService` enthält, D3-Mausereignisse in relevanten Elementen überwacht und dann bei Bedarf `show()` oder `hide()` aufruft.
-Die Klasse enthält und verwaltet relevante Zustands- und Logikinformationen für diese Ereignisse, die hauptsächlich auf die Verknüpfung mit dem zugrunde liegenden D3-Code ausgerichtet sind. Die Verknüpfung und Konvertierung von D3-Code wird in diesem Dokument nicht behandelt.
+Diese Klasse ist dafür verantwortlich, die Instanz von `TooltipService` aufzunehmen, D3-Mausereignisse oder relevante Elemente zu überwachen und dann bei Bedarf `show()` oder `hide()` für die Elemente aufzurufen.
+
+Die Klasse enthält und verwaltet relevante Zustands- und Logikinformationen für diese Ereignisse, die hauptsächlich auf die Verknüpfung mit dem zugrunde liegenden D3-Code ausgerichtet sind. Die Verknüpfung und Konvertierung von D3-Code wird in diesem Artikel nicht behandelt.
 
 Den vollständigen Beispielcode finden Sie im [SampleBarChart-Visualrepository](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14).
 
-### <a name="creating-tooltipservicewrapper"></a>Erstellen von TooltipServiceWrapper
+### <a name="create-tooltipservicewrapper"></a>Erstellen einer TooltipServiceWrapper-Instanz
 
-Der BarChart-Konstruktor verfügt jetzt über ein `tooltipServiceWrapper`-Element, das im Konstruktor mit der `tooltipService`-Hostinstanz instanziiert wird.
+Der Konstruktor des Balkendiagramms verfügt jetzt über einen `TooltipServiceWrapper`-Member, der im Konstruktor mit der `tooltipService`-Hostinstanz instanziiert wird.
 
 ```typescript
         private tooltipServiceWrapper: ITooltipServiceWrapper;
@@ -89,7 +91,7 @@ Die `TooltipServiceWrapper`-Klasse enthält die `tooltipService`-Instanz zusätz
 
 Der einzige Einstiegspunkt, über den diese Klasse Ereignislistener registrieren kann, ist die `addTooltip`-Methode.
 
-### <a name="addtooltip-method"></a>addTooltip-Methode
+### <a name="the-addtooltip-method"></a>Die addTooltip-Methode
 
 ```typescript
         public addTooltip<T>(
@@ -106,20 +108,19 @@ Der einzige Einstiegspunkt, über den diese Klasse Ereignislistener registrieren
         }
 ```
 
-* **selection: d3.Selection<Element>**
-* Die D3-Elemente, über die QuickInfos verarbeitet werden
-* **getTooltipInfoDelegate: (args: TooltipEventArgs<T>) => VisualTooltipDataItem[]**
-* Der Delegat zum Auffüllen des QuickInfo-Inhalts (was angezeigt werden soll) pro Kontext
-* **getDataPointIdentity: (args: TooltipEventArgs<T>) => ISelectionId**
-* Der Delegat zum Abrufen der Datenpunkt-ID (in diesem Beispiel nicht verwendet) 
-* **reloadTooltipDataOnMouseMove?: boolean**
-* Ein boolescher Wert, der angibt, ob die QuickInfo-Daten während eines mouseMove-Ereignisses aktualisiert werden (in diesem Beispiel nicht verwendet)
+* **selection: d3.Selection:<Element>** die D3-Elemente, über die QuickInfos verarbeitet werden.
 
-Wie Sie sehen, wird `addTooltip` ohne Aktion beendet, wenn `tooltipService` deaktiviert ist oder keine wirkliche Auswahl vorliegt.
+* **getTooltipInfoDelegate: (args: TooltipEventArgs<T>) => VisualTooltipDataItem[]:** der Delegat zum Auffüllen des anzuzeigenden QuickInfo-Inhalts für einen Kontext.
 
-### <a name="call-of-show-method-to-display-a-tooltip"></a>Aufrufen der show-Methode zum Anzeigen einer QuickInfo
+* **getDataPointIdentity: (args: TooltipEventArgs<T>) => ISelectionId:** der Delegat zum Abrufen der Datenpunkt-ID (in diesem Beispiel nicht verwendet). 
 
-`addTooltip` überwacht als Nächstes das `mouseover`-Ereignis im D3-Code.
+* **reloadTooltipDataOnMouseMove? boolean:** ein boolescher Wert, der angibt, ob die QuickInfo-Daten während eines MouseMove-Ereignisses aktualisiert werden (in diesem Beispiel nicht verwendet).
+
+Wie Sie sehen, wird `addTooltip` ohne Aktion beendet, wenn `tooltipService` deaktiviert ist oder keine Auswahl vorliegt.
+
+### <a name="call-the-show-method-to-display-a-tooltip"></a>Aufrufen der show-Methode zum Anzeigen einer QuickInfo
+
+Die `addTooltip`-Methode überwacht, ob ein D3-`mouseover`-Ereignis auftritt. Dies wird im folgenden Code gezeigt:
 
 ```typescript
         ...
@@ -148,22 +149,21 @@ Wie Sie sehen, wird `addTooltip` ohne Aktion beendet, wenn `tooltipService` deak
         });
 ```
 
-* **makeTooltipEventArgs**
-* Extrahiert den Kontext aus den ausgewählten D3-Elementen in tooltipEventArg. Dadurch werden auch die Koordinaten berechnet.
-* **getTooltipInfoDelegate**
-* Anschließend wird der QuickInfo-Inhalt auf der Basis von tooltipEventArgs erstellt. Dies ist ein Rückruf an die BarChart-Klasse, da es sich hier um die Logikinformationen des Visuals handelt. Daraufhin wird der tatsächliche Textinhalt in der QuickInfo angezeigt.
-* **getDataPointIdentity**
-* In diesem Beispiel nicht verwendet
-* **this.visualHostTooltipService.show**
-* Der Aufruf zur Anzeige der QuickInfo  
+* **makeTooltipEventArgs:** extrahiert den Kontext aus den ausgewählten D3-Elementen in tooltipEventArg. Die Koordinaten werden ebenfalls berechnet.
+
+* **getTooltipInfoDelegate:** Anschließend wird der QuickInfo-Inhalt auf der Basis von tooltipEventArgs erstellt. Dies ist ein Rückruf an die BarChart-Klasse, da es sich hier um die Logikinformationen des Visuals handelt. Dies ist der tatsächliche Textinhalt, der in der QuickInfo angezeigt wird.
+
+* **getDataPointIdentity:** in diesem Beispiel nicht verwendet.
+
+* **this.visualHostTooltipService.show:** der Aufruf zur Anzeige der QuickInfo.  
 
 Weitere praktische Informationen finden Sie in den Beispielen für das `mouseout`-Ereignis und das `mousemove`-Ereignis.
 
 Weitere Informationen finden Sie im [SampleBarChart-Visualrepository](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14).
 
-### <a name="populating-the-tooltip-content-by-gettooltipdata-method"></a>Auffüllen des QuickInfo-Inhalts durch die getTooltipData-Methode
+### <a name="populate-the-tooltip-content-by-the-gettooltipdata-method"></a>Auffüllen des QuickInfo-Inhalts durch die getTooltipData-Methode
 
-`BarChart` wurde mit einem `getTooltipData`-Element hinzugefügt, durch das die Kategorie, der Wert und die Farbe des Datenpunkts einfach in ein VisualTooltipDataItem[]-Element extrahiert wird.
+Die BarChart-Klasse wurde mit einem `getTooltipData`-Member hinzugefügt, durch den `category`, `value` und `color` des Datenpunkts einfach in ein VisualTooltipDataItem[]-Element extrahiert wird.
 
 ```typescript
         private static getTooltipData(value: any): VisualTooltipDataItem[] {
@@ -176,11 +176,11 @@ Weitere Informationen finden Sie im [SampleBarChart-Visualrepository](https://gi
         }
 ```
 
-In der vorangehenden Implementierung ist das `header`-Element konstant. Es kann jedoch auch für komplexere Implementierungen verwendet werden, die dynamische Werte erfordern. Sie können `VisualTooltipDataItem[]` mit mehreren Elementen auffüllen, um der QuickInfo mehrere Zeilen hinzuzufügen. Dies kann in Visuals wie gestapelten Balkendiagrammen nützlich sein, in denen QuickInfos Daten aus mehreren Datenpunkten enthalten können.
+In der vorangehenden Implementierung ist der `header`-Member eine Konstante. Er kann jedoch auch für komplexere Implementierungen verwendet werden, die dynamische Werte erfordern. Sie können `VisualTooltipDataItem[]` mit mehreren Elementen auffüllen, um der QuickInfo mehrere Zeilen hinzuzufügen. Dies kann in Visuals wie gestapelten Balkendiagrammen nützlich sein, in denen QuickInfos Daten aus mehreren Datenpunkten enthalten können.
 
-### <a name="calling-addtooltip-method"></a>Aufrufen der addTooltip-Methode
+### <a name="call-the-addtooltip-method"></a>Aufrufen der addTooltip-Methode
 
-Als letzter Schritt wird `addTooltip` aufgerufen, wenn sich Daten tatsächlich ändern. Dieser Aufruf erfolgt in der `BarChart.update()`-Methode. Durch den Aufruf wird die Auswahl aller bar-Elemente überwacht und wie oben erwähnt nur `BarChart.getTooltipData()` übergeben.
+Der letzte Schritt besteht darin, die `addTooltip`-Methode aufzurufen, wenn sich die Daten ändern. Dieser Aufruf findet in der `BarChart.update()`-Methode statt. Durch den Aufruf wird die Auswahl aller bar-Elemente überwacht und wie oben erwähnt nur `BarChart.getTooltipData()` übergeben.
 
 ```typescript
         this.tooltipServiceWrapper.addTooltip(this.barContainer.selectAll('.bar'),
@@ -188,9 +188,9 @@ Als letzter Schritt wird `addTooltip` aufgerufen, wenn sich Daten tatsächlich �
             (tooltipEvent: TooltipEventArgs<number>) => null);
 ```
 
-## <a name="adding-report-page-tooltips"></a>Hinzufügen von QuickInfos zur Berichtsseite
+## <a name="add-report-page-tooltips"></a>Hinzufügen von QuickInfos für Berichtsseiten
 
-Um QuickInfo-Unterstützung für Berichtsseiten hinzuzufügen, nehmen Sie vorwiegend Änderungen in der Datei „capabilities.json“ vor.
+Wenn Sie QuickInfos für Berichtsseiten hinzufügen möchten, finden Sie die meisten erforderlichen Änderungen in der Datei *capabilities.json*.
 
 Ein Beispielschema:
 
@@ -208,19 +208,21 @@ Ein Beispielschema:
 }
 ```
 
-QuickInfos für Berichtsseiten können im Formatbereich definiert werden.
+QuickInfos für Berichtseiten können Sie im Bereich **Format** definieren.
 
 ![QuickInfo für Berichtsseiten](media/report-page-tooltip.png)
 
-`supportedTypes` ist die QuickInfo-Konfiguration, die vom Visual unterstützt und auch in das Feld übernommen wird. `default` gibt an, ob die „automatische“ Bindung von QuickInfos über das Datenfeld unterstützt wird. „canvas“ gibt an, ob QuickInfos für Berichtsseiten unterstützt werden.
+* `supportedTypes`: die QuickInfo-Konfiguration, die vom Visual unterstützt wird und im Bereich „Felder“ angezeigt wird. 
+   * `default`: gibt an, ob die „automatische“ Bindung von QuickInfos über das Datenfeld unterstützt wird. 
+   * `canvas`: gibt an, ob QuickInfos für Berichtsseiten unterstützt werden.
 
-`roles` ist optional. Nach der Definition gibt dieses Element vor, welche Datenrollen an die ausgewählte QuickInfo-Option gebunden werden (auch in Feldern).
+* `roles`: optionale Einstellung, mit der festgelegt wird, welche Datenrollen an die ausgewählte QuickInfo-Option im Bereich „Felder“ gebunden werden sollen.
 
-Weitere Informationen finden Sie in den Nutzungsrichtlinien, die sich auf QuickInfos für Berichtsseiten beziehen: [QuickInfos für Berichtsseiten](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips).
+Weitere Informationen finden Sie unter [Richtlinien zur Nutzung von QuickInfos für Berichtsseiten](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips).
 
-Um die QuickInfo für Berichtsseiten anzuzeigen, verwendet der Power BI-Host beim Aufruf von `ITooltipService.Show(options: TooltipShowOptions)` oder `ITooltipService.Move(options: TooltipMoveOptions)` die selectionId (`identities`-Eigenschaft des oben erwähnten `options`-Arguments). Die SelectionId stellt die ausgewählten Daten (Kategorie, Reihe usw.) des Elements (auf das Sie oben gezeigt haben) dar, die von der QuickInfo abgerufen werden sollen.
+Der Power BI-Host ruft zuerst `ITooltipService.Show(options: TooltipShowOptions)` oder `ITooltipService.Move(options: TooltipMoveOptions)` auf, um das QuickInfo für die Berichtsseite anzuzeigen. Anschließend wird die selectionId genutzt (`identities`-Eigenschaft des vorangehenden `options`-Arguments). Die selectionId sollte die ausgewählten Daten (Kategorie, Reihe usw.) des Elements darstellen, auf das Sie gezeigt haben, damit die selectionId vom QuickInfo abgerufen werden kann.
 
-Das Beispiel zeigt, wie selectionId an Aufrufe zum Anzeigen einer QuickInfo gesendet wird:
+Wie die selectionId an die QuickInfo-Anzeigeaufrufe gesendet werden kann, sehen Sie im folgenden Codebeispiel:
 
 ```typescript
     this.tooltipServiceWrapper.addTooltip(this.barContainer.selectAll('.bar'),

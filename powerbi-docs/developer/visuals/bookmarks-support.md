@@ -1,6 +1,6 @@
 ---
-title: Lesezeichen
-description: Power BI-Visuals unterstützt das Wechseln des Lesezeichenstatus.
+title: Hinzufügen der Unterstützung von Lesezeichen für Power BI-Visuals
+description: Power BI-Visuals unterstützen das Wechseln zwischen Lesezeichen.
 author: zBritva
 ms.author: v-ilgali
 manager: rkarlin
@@ -9,57 +9,54 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 90e3fc73cd49a5c84a5c2acc68a8cf5e0e4aa42b
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: c7fb8fa6fcf8c07f0d8f466892fff8d03a492a79
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425503"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237283"
 ---
-# <a name="add-bookmarks-support-for-power-bi-visuals"></a>Hinzufügen von Lesezeichenunterstützung für Power BI-Visuals
+# <a name="add-bookmark-support-for-power-bi-visuals"></a>Hinzufügen der Unterstützung von Lesezeichen für Power BI-Visuals
 
-Über Lesezeichen in Power BI-Berichten lassen sich konfigurierte Ansichten einer Berichtsseite sowie der Auswahl- und Filterzustand des Visuals erfassen. Allerdings sind zusätzliche Aktionen vonseiten benutzerdefinierter Visuals nötig, damit Lesezeichen unterstützt werden und angemessen auf Änderungen reagiert werden kann.
+Mithilfe von Lesezeichen in Power BI-Berichten lassen sich konfigurierte Ansichten einer Berichtsseite sowie der Auswahl- und Filterzustand des Visuals erfassen. Allerdings sind zusätzliche Aktionen vonseiten benutzerdefinierter Visuals nötig, damit Lesezeichen unterstützt werden und angemessen auf Änderungen reagiert werden kann.
 
-Weitere Informationen zu Lesezeichen erhalten Sie in dieser [Dokumentation](https://docs.microsoft.com/power-bi/desktop-bookmarks).
+Weitere Informationen zu Lesezeichen finden Sie unter [Verwenden von Lesezeichen zum Teilen von Erkenntnissen und Erstellen von Präsentationen in Power BI](https://docs.microsoft.com/power-bi/desktop-bookmarks).
 
 ## <a name="report-bookmarks-support-in-your-visual"></a>Unterstützung von Berichtslesezeichen in Visuals
 
-Wenn Ihr Visual mit anderen Visuals interagiert, Datenpunkte auswählt oder andere Visuals filtert, müssen Sie den Zustand mithilfe der Eigenschaften wiederherstellen.
+Wenn Ihr Visual mit anderen Visuals interagiert, Datenpunkte auswählt oder andere Visuals filtert, müssen Sie den Zustand mithilfe von Eigenschaften wiederherstellen.
 
-## <a name="how-to-add-report-bookmarks-support"></a>Hinzufügen von Unterstützung für Berichtslesezeichen
+## <a name="add-report-bookmarks-support"></a>Hinzufügen von Unterstützung für Berichtslesezeichen
 
-1. Installieren (oder aktualisieren) Sie das erforderliche Hilfsprogramm: `powerbi-visuals-utils-interactivityutils`: https://github.com/Microsoft/PowerBI-visuals-utils-interactivityutils/) (Version 3.0.0 oder höher). Es enthält zusätzliche Klassen für die Bearbeitung der Zustands- oder Filterauswahl. Das Hilfsprogramm wird zudem für filterbezogene Visuals und alle Visuals vorausgesetzt, die `InteractivityService` verwenden.
+1. Installieren (oder aktualisieren) Sie das erforderliche Hilfsprogramm [powerbi-visuals-utils-interactivityutils](https://github.com/Microsoft/PowerBI-visuals-utils-interactivityutils/), Version 3.0.0 oder höher. Es enthält zusätzliche Klassen für die Bearbeitung der Zustands- oder Filterauswahl. Das Hilfsprogramm wird zudem für filterbezogene Visuals und alle Visuals vorausgesetzt, die `InteractivityService` verwenden.
 
-2. Aktualisieren Sie die Visual-API auf 1.11.0, um `registerOnSelectCallback` in der Instanz von `SelectionManager` zu verwenden. Das Hilfsprogramm wird für nicht filterbezogene Visuals vorausgesetzt, die den normalen `SelectionManager` anstelle von `InteractivityService` verwenden.
+2. Aktualisieren Sie die Visual-API auf Version 1.11.0, damit Sie `registerOnSelectCallback` in einer Instanz von `SelectionManager` verwenden können. Das Hilfsprogramm wird für nicht filterbezogene Visuals vorausgesetzt, die den normalen `SelectionManager` anstelle des `InteractivityService` verwenden.
 
-### <a name="how-custom-visuals-interact-with-power-bi-in-the-report-bookmarks-scenario"></a>Interaktion zwischen benutzerdefinierten Visuals und Power BI im Berichtslesezeichen-Szenario
+### <a name="how-custom-visuals-interact-with-power-bi-in-report-bookmarks"></a>So interagieren benutzerdefinierte Visuals mit Power BI im Berichtslesezeichen
 
-Sehen wir uns nun das folgende Beispiel an: Ein Benutzer legt mehrere Lesezeichen auf der Berichtsseite an, die jeweils einen anderen Auswahlzustand aufweisen.
+Betrachten wir das folgende Szenario: Sie möchten mehrere Lesezeichen auf der Berichtsseite mit einem anderen Auswahlzustand in jedem Lesezeichen erstellen.
 
-Zuerst wählt der Benutzer einen Datenpunkt im Visual aus. Das Visual interagiert mit Power BI und anderen Visuals, indem es die Auswahl an den Host übergibt. Anschließend wählt der Benutzer „Hinzufügen“ in `Bookmark panel` aus, woraufhin Power BI die aktuelle Auswahl für das neue Lesezeichen speichert.
+Wählen Sie zunächst einen Datenpunkt in Ihrem Visual aus. Das Visual interagiert mit Power BI und anderen Visuals, indem es die Auswahl an den Host übergibt. Klicken Sie anschließend im Bereich **Lesezeichen** auf **Hinzufügen**, woraufhin Power BI die aktuelle Auswahl für das neue Lesezeichen speichert.
 
-Dieser Vorgang wird wiederholt, wenn der Benutzer die Auswahl verändert und neue Lesezeichen hinzufügt.
-Nach der Erstellung kann der Benutzer zwischen den Lesezeichen wechseln.
+Dieser Vorgang wird wiederholt, wenn Sie die Auswahl ändern und neue Lesezeichen hinzufügen. Nachdem Sie die Lesezeichen erstellt haben, können Sie zwischen diesen wechseln.
 
-Wenn Benutzer ein Lesezeichen auswählen, stellt Power BI den gespeicherten Filter- oder Auswahlzustand wieder her und übergibt ihn an die Visuals. Andere Visuals werden hervorgehoben oder gemäß dem Zustand gefiltert, der im Lesezeichen gespeichert ist. Der Power BI-Host führt die erforderlichen Aktionen aus. Das Visual hat die Aufgabe, den neuen Auswahlzustand (z. B. Farbänderung der gerenderten Datenpunkte) korrekt wiederzugeben.
+Wenn Sie ein Lesezeichen auswählen, stellt Power BI den gespeicherten Filter- oder Auswahlzustand wieder her und übergibt ihn an die Visuals. Andere Visuals werden hervorgehoben oder gemäß dem Zustand gefiltert, der im Lesezeichen gespeichert ist. Der Power BI-Host ist für die Aktionen verantwortlich. Ihr Visual hat die Aufgabe, den neuen Auswahlzustand (z. B. Änderungen der Farben der gerenderten Datenpunkte) korrekt wiederzugeben.
 
-Der neue Auswahlzustand wird dem Visual über die `update`-Methode mitgeteilt. Das `options`-Argument enthält die besondere Eigenschaft `options.jsonFilters`. Die JSONFilter-Eigenschaft kann `Advanced Filter` und `Tuple Filter` enthalten.
+Der neue Auswahlzustand wird dem Visual über die `update`-Methode mitgeteilt. Das Argument `options` enthält die besondere Eigenschaft `options.jsonFilters`. Die JSONFilter-Eigenschaft kann `Advanced Filter` und `Tuple Filter` enthalten.
 
-Das Visual muss Filterwerte wiederherstellen, um den entsprechenden Zustand des Visuals für das ausgewählte Lesezeichen anzuzeigen.
+Das Visual muss die Filterwerte wiederherstellen, um den entsprechenden Zustand des Visuals für das ausgewählte Lesezeichen anzuzeigen. Wenn das Visual nur die Auswahl verwendet, können Sie alternativ auch die vom besonderen Aufruf der Rückruffunktion registrierte Methode `registerOnSelectCallback` des ISelectionManager verwenden.
 
-Alternativ können Sie die vom Aufruf der Rückruffunktion registrierte `registerOnSelectCallback`-Methode namens ISelectionManager verwenden, wenn das Visual nur die Auswahl verwendet.
+### <a name="visuals-with-selection"></a>Visuals mit einer Auswahl
 
-### <a name="visuals-with-selections"></a>Visuals mit einer Auswahl
+Wenn das Visual durch eine [Auswahl](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/Selection.md) mit anderen Visuals interagiert, haben Sie zwei Möglichkeiten, Lesezeichen hinzuzufügen:
 
-Wenn Ihre Visuals über die [Auswahl](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/Selection.md) mit anderen Visuals interagieren, können Sie Lesezeichen auf zwei Weisen hinzufügen.
+* Wenn das Visual nicht bereits [InteractivityService](https://github.com/Microsoft/powerbi-visuals-utils-interactivityutils/blob/master/docs/api/interactivityService.md) verwendet hat, können Sie die Methode `FilterManager.restoreSelectionIds` verwenden.
 
-* Sie können die `FilterManager.restoreSelectionIds`-Methode verwenden, falls Sie zuvor noch **kein [`InteractivityService`](https://github.com/Microsoft/powerbi-visuals-utils-interactivityutils/blob/master/docs/api/interactivityService.md)** -Element im Visual verwendet haben.
+* Wenn das Visual bereits [InteractivityService](https://github.com/Microsoft/powerbi-visuals-utils-interactivityutils/blob/master/docs/api/interactivityService.md) verwendet, um die Auswahl zu verwalten, sollten Sie die Methode `applySelectionFromFilter` in der Instanz von `InteractivityService` verwenden.
 
-* Wenn Ihr Visual bereits **[`InteractivityService`](https://github.com/Microsoft/powerbi-visuals-utils-interactivityutils/blob/master/docs/api/interactivityService.md)** verwendet, um die Auswahl zu verwalten, müssen Sie die `applySelectionFromFilter`-Methode in einer Instanz von `InteractivityService` verwenden.
+#### <a name="use-iselectionmanagerregisteronselectcallback"></a>Verwenden von ISelectionManager.registerOnSelectCallback
 
-#### <a name="using-iselectionmanagerregisteronselectcallback"></a>Verwenden von `ISelectionManager.registerOnSelectCallback`
-
-Wenn ein Benutzer auf ein Lesezeichen klickt, ruft Power BI die `callback`-Methode des Visuals mit der entsprechenden Auswahl auf. 
+Wenn Sie auf ein Lesezeichen klicken, ruft Power BI die Methode `callback` des Visuals mit der entsprechenden Auswahl auf. 
 
 ```typescript
 this.selectionManager.registerOnSelectCallback(
@@ -69,7 +66,7 @@ this.selectionManager.registerOnSelectCallback(
 );
 ```
 
-Angenommen, das mit der [`'visualTransform'`](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts#L74)-Methode erstellte Visual verfügt über einen Datenpunkt.
+Angenommen, Sie verfügen über einen Datenpunkt in Ihrem Visual, der in der Methode [visualTransform](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts#L74) erstellt wurde.
 
 Dabei sieht `datapoints` wie folgt aus:
 
@@ -84,9 +81,9 @@ visualDataPoints.push({
 });
 ```
 
-In diesem Fall steht `visualDataPoints` für Ihre Datenpunkte, und das `ids`-Array wird an die `callback`-Funktion übergeben.
+Sie verfügen jetzt über `visualDataPoints` als Datenpunkte, und das Array `ids` wurde an die Funktion `callback` übergeben.
 
-An diesem Punkt sollte das Visual das `ISelectionId[]`-Array mit der Auswahl im `visualDataPoints`-Array vergleichen und die entsprechenden Datenpunkte als ausgewählt markieren.
+An diesem Punkt sollte das Visual das Array `ISelectionId[]` mit der Auswahl im Array `visualDataPoints` vergleichen und die entsprechenden Datenpunkte als ausgewählt markieren.
 
 ```typescript
 this.selectionManager.registerOnSelectCallback(
@@ -102,19 +99,21 @@ this.selectionManager.registerOnSelectCallback(
 );
 ```
 
-Nach dem Aktualisieren der Datenpunkte wird der aktuelle Auswahlzustand angezeigt, der im `filter`-Objekt gespeichert ist. Wenn die Datenpunkte anschließend gerendert werden, entspricht der Auswahlzustand des benutzerdefinierten Visuals dem Zustand des Lesezeichens.
+Nach dem Aktualisieren der Datenpunkte wird der aktuelle Auswahlzustand angezeigt, der im Objekt `filter` gespeichert ist. Wenn die Datenpunkte anschließend gerendert werden, entspricht der Auswahlzustand des benutzerdefinierten Visuals dem Zustand des Lesezeichens.
 
-### <a name="using-interactivityservice-for-control-selections-in-the-visual"></a>Verwenden von `InteractivityService` zur Steuerelementauswahl im Visual
+### <a name="use-interactivityservice-for-control-selections-in-the-visual"></a>Verwenden von InteractivityService zur Steuerelementauswahl im Visual
 
-Wenn Ihr Visual `InteractivityService` verwendet, sind keine Aktionen erforderlich, um Lesezeichen in Visuals zu unterstützen.
+Wenn Ihr Visual `InteractivityService` verwendet, sind keine weiteren Aktionen erforderlich, damit Lesezeichen in Ihren Visuals unterstützt werden.
 
-Der Auswahlzustand des Visuals wird durch das Hilfsprogramm verarbeitet, wenn der Benutzer Lesezeichen auswählt.
+Wenn Sie Lesezeichen auswählen, verarbeitet das Hilfsprogramm den Auswahlzustand des Visuals.
 
-### <a name="visuals-with-filter"></a>Visuals mit Filter
+### <a name="visuals-with-a-filter"></a>Visuals mit einem Filter
 
-Nehmen wir an, dass vom Visual ein Datenfilter nach Datumsbereich erstellt wird. Somit verfügen wir über `startDate` und `endDate` als Start- bzw. Enddatum des Bereichs.
-Durch das Visual wird ein erweiterter Filter erstellt und die Hostmethode `applyJsonFilter` aufgerufen, um Daten nach relevanten Bedingungen zu filtern.
-`target` ist die Tabelle, die gefiltert wird.
+Nehmen wir an, dass vom Visual ein Datenfilter nach Datumsbereich erstellt wird. `startDate` und `endDate` dienen jeweils als Anfangs- und Enddatum.
+
+Durch das Visual wird ein erweiterter Filter erstellt, und die Hostmethode `applyJsonFilter` wird aufgerufen, um Daten nach relevanten Bedingungen zu filtern.
+
+Das Ziel ist die Tabelle, die zum Filtern verwendet wird.
 
 ```typescript
 import { AdvancedFilter } from "powerbi-models";
@@ -156,7 +155,7 @@ const filter: IAdvancedFilter = FilterManager.restoreFilter(
 ) as IAdvancedFilter;
 ```
 
-Wenn das `filter`-Objekt nicht NULL ist, muss das Visual Filterbedingungen vom Objekt wiederherstellen:
+Wenn das Objekt `filter` nicht NULL ist, muss das Visual Filterbedingungen des Objekts wiederherstellen:
 
 ```typescript
 const jsonFilters: AdvancedFilter = this.options.jsonFilters as AdvancedFilter[];
@@ -176,21 +175,21 @@ if (jsonFilters
 }
 ```
 
-Anschließend muss der interne Zustand des Visuals wie Datenpunkte und Visualisierungsobjekte (Linien, Rechtecke usw.) geändert werden, um die aktuellen Bedingungen widerzuspiegeln.
+Danach sollte das Visual seinen internen Zustand ändern, um die aktuellen Bedingungen widerzuspiegeln. Der interne Zustand umfasst die Datenpunkte und Visualisierungsobjekte (Linien, Rechtecke usw.).
 
 > [!IMPORTANT]
-> Im Berichtslesezeichen-Szenario muss `applyJsonFilter` vom Visual nicht aufgerufen werden, um weitere Visuals zu filtern. Dies wird bereits von Power BI erledigt.
+> Im Szenario mit den Berichtslesezeichen sollte das Visual nicht `applyJsonFilter` aufrufen, um die anderen Visuals zu filtern. Diese werden bereits von Power BI gefiltert.
 
-Durch das Zeitachsenslicer-Visual wird die Bereichsauswahl gemäß den Datenbereichen geändert.
+Das Visual für den Zeitachsenslicer ändert die Bereichsauswahl gemäß den jeweiligen Datenbereichen.
 
 Weitere Informationen finden Sie im [Zeitachsenslicer-Repository](https://github.com/Microsoft/powerbi-visuals-timeline/commit/606f1152f59f82b5b5a367ff3b117372d129e597?diff=unified#diff-b6ef9a9ac3a3225f8bd0de84bee0a0df).
 
-### <a name="filter-state-to-save-visual-properties-in-bookmarks"></a>Filterzustand zum Speichern von Visualeigenschaften in Lesezeichen
+### <a name="filter-the-state-to-save-visual-properties-in-bookmarks"></a>Filtern des Zustands, um Visualeigenschaften in Lesezeichen zu speichern
 
 Durch die `filterState`-Eigenschaft wird eine Eigenschaft zum Bestandteil der Filterung. Das Visual ist in der Lage, verschiedene Werte in Lesezeichen zu speichern.
 
-Um den Eigenschaftswert als Filterzustand zu speichern, muss die Objekteigenschaft in `capabilities.json` als `"filterState": true` gekennzeichnet werden.
+Wenn Sie den Eigenschaftswert als Filterzustand speichern möchten, markieren Sie die Objekteigenschaft in der Datei *capabilities.json* als `"filterState": true`.
 
-Beispiel: Durch `Timeline Slicer` werden `Granularity`-Eigenschaftswerte im Filter gespeichert. Außerdem kann dadurch die aktuelle Granularität geändert werden, sobald ein Benutzer ein Lesezeichen ändert.
+Beispielsweise speichert der Zeitachsenslicer die Eigenschaftswerte für `Granularity` in einem Filter. Dadurch kann sich die aktuelle Granularität ändern, während Sie die Lesezeichen ändern.
 
-Weitere Informationen finden Sie im [Zeitachsenslicer-Repository](https://github.com/microsoft/powerbi-visuals-timeline/commit/8b7d82dd23cd2bd71817f1bc5d1e1732347a185e#diff-290828b604cfa62f1cb310f2e90c52fdR334);
+Weitere Informationen finden Sie im [Zeitachsenslicer-Repository](https://github.com/microsoft/powerbi-visuals-timeline/commit/8b7d82dd23cd2bd71817f1bc5d1e1732347a185e#diff-290828b604cfa62f1cb310f2e90c52fdR334).

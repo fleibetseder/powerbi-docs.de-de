@@ -4,20 +4,19 @@ description: In diesem Artikel wird das Öffnen und Anzeigen eines Berichts für
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 8/28/2018
+ms.date: 08/28/2018
 ms.author: mihart
-ms.openlocfilehash: 0896d397c7cc78ce36109cf1c975b34d081169a1
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: e02d7bfa295b3bd18b0b6b9c64c688ed668c8389
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70184662"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391750"
 ---
-# <a name="view-a-report-in-power-bi-service-for-consumers"></a>Anzeigen eines Berichts im Power BI-Dienst für *Kunden*
+# <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Anzeigen eines Berichts im Power BI-Dienst für *Kunden*
 Ein Bericht besteht aus einer oder mehreren Seiten mit visuellen Elementen. Berichte werden von *Power BI-Designern* erstellt und entweder [direkt für *Benutzer* freigegeben](end-user-shared-with-me.md), oder als Teil einer [App](end-user-apps.md). 
 
 Es gibt viele verschiedene Möglichkeiten zum Öffnen eines Berichts, und wir zeigen Ihnen zwei davon: Öffnen über die Seite „Home“ und Öffnen aus einem Dashboard. 
@@ -31,7 +30,7 @@ Lassen Sie uns zuerst einen Bericht öffnen, der direkt mit Ihnen geteilt wurde,
    ![Startseite](./media/end-user-report-open/power-bi-home-canvas.png)
 
 ### <a name="open-a-report-that-has-been-shared-with-you"></a>Öffnen eines Berichts, der mit Ihnen geteilt wurde
-*Power BI-Designer* können einen Bericht direkt für Sie freigeben. Auf diese Weise geteilte Inhalte werden im Container **Für mich freigegeben** in der Navigationsleiste und im Abschnitt **Für mich freigegeben** auf der Seite „Home“ angezeigt.
+Power BI *Designer* können einen einzelnen Bericht direkt über einen Link in einer E-Mail freigeben oder indem Sie ihn Ihrer Power BI-Startseite hinzufügen. Auf diese Weise geteilte Inhalte werden im Container **Für mich freigegeben** in der Navigationsleiste und im Abschnitt **Für mich freigegeben** auf der Seite „Home“ angezeigt.
 
 1. Öffnen Sie den Power BI-Dienst („app.powerbi.com“).
 
@@ -45,13 +44,13 @@ Lassen Sie uns zuerst einen Bericht öffnen, der direkt mit Ihnen geteilt wurde,
 
 4. Wählen Sie einfach die *Berichtskarte* aus, um den Bericht zu öffnen.
 
-   ![Berichtseite](./media/end-user-report-open/power-bi-report-open.png)
+   ![Berichtseite](./media/end-user-report-open/power-bi-open.png)
 
 5. Beachten Sie die Registerkarten auf der linken Seite.  Jede Registerkarte stellt eine *Seite* des Berichts dar. Momentan ist die Seite *Growth Opportunity* geöffnet. Klicken Sie auf die Registerkarte *YTD Category*, um stattdessen diese Berichtsseite zu öffnen. 
 
    ![Berichtsseiten-Registerkarten](./media/end-user-report-open/power-bi-ytd.png)
 
-6. Momentan wird die gesamte Berichtsseite angezeigt. Wählen Sie das Dropdownmenü „Ansicht“ oben rechts aus ( **>** ), und klicken Sie auf **Tatsächliche Größe**, um die Anzeige (den Zoom) der Seite zu ändern.
+6. Momentan wird die gesamte Berichtsseite angezeigt. Wählen Sie das Dropdownmenü „Ansicht“ oben rechts aus, und klicken Sie auf **Tatsächliche Größe**, um die Anzeige (den Zoom) der Seite zu ändern.
 
    ![Zoom ändern](./media/end-user-report-open/power-bi-fit-new.png)
 
@@ -66,7 +65,7 @@ Wenn Sie von Kollegen oder aus AppSource Apps erhalten haben, sind diese Apps ü
 
    ![Startseite](./media/end-user-report-open/power-bi-my-apps.png)
 
-8. Wählen Sie eine der Apps aus, um sie zu öffnen. Abhängig von den Optionen, die vom *Designer* der App festgelegt wurden, öffnet die App entweder ein Dashboard, einen Bericht oder eine App-Inhaltsliste. Wenn durch das Auswählen der App:
+8. Wählen Sie eine der Apps aus, um sie zu öffnen. Abhängig von den Optionen, die vom App-*Designer* festgelegt wurden, öffnet die App entweder ein Dashboard oder einen Bericht. Wenn durch das Auswählen der App:
     - der Bericht geöffnet wird, sind Sie startklar.
     - ein Dashboard geöffnet wird, siehe ***Öffnen eines Berichts aus einem Dashboard***.
 
@@ -95,5 +94,5 @@ Wie Sie mit der Navigation im Power BI-Dienst besser vertraut sind, werden Sie f
 - usw.
 
 ## <a name="next-steps"></a>Nächste Schritte
-Es gibt [viele verschiedene Möglichkeiten zur Interaktion mit einem Bericht](end-user-reading-view.md).  Beginnen Sie damit, diese zu erkunden, indem Sie die einzelnen Registerkarten auf der linken Seite des Berichtszeichenbereichs auswählen.
+[Öffnen und Anzeigen eines Dashboards](end-user-dashboard-open.md)
 

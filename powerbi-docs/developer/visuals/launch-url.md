@@ -1,6 +1,6 @@
 ---
-title: Start-URL
-description: Mit Power BI-Visuals können Sie eine URL auf einer neuen Registerkarte öffnen.
+title: Erstellen einer Start-URL
+description: In diesem Artikel wird beschrieben, wie die URL mithilfe von Power BI-Visuals auf der neuen Registerkarte geöffnet werden kann.
 author: Guy-Moses
 ms.author: guymos
 manager: rkarlin
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 1a7002c3b45f341c0cbc0db683bc4f8a113e21f9
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 3ef6be9383b606ce865b4bcd3ccda397e471301b
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424859"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236660"
 ---
-# <a name="launch-url"></a>Start-URL
+# <a name="create-a-launch-url"></a>Erstellen einer Start-URL
 
-Mit der Start-URL können Sie eine neue Browserregisterkarte (oder ein Fenster) öffnen, indem Sie tatsächliche Arbeit an Power BI delegieren.
+Durch das Erstellen einer Start-URL können Sie eine neue Browserregisterkarte (oder ein Fenster) öffnen, indem Sie tatsächliche Arbeit an Power BI delegieren.
 
 ## <a name="sample"></a>Beispiel
 
@@ -36,18 +36,21 @@ this.host.launchUrl('http://some.link.net');
 
 ## <a name="restrictions"></a>Einschränkungen
 
-* Verwenden Sie nur absolute, aber keine relativen Pfade. `http://some.link.net/subfolder/page.html` ist ein korrekter Pfad, während `/page.html` nicht geöffnet wird.
-* Derzeit werden nur das `http`-Protokoll und das `https`-Protokoll unterstützt. Vermeiden Sie `ftp`, `mailto` usw.
+* Verwenden Sie nur absolute, aber keine relativen Pfade. Verwenden Sie beispielsweise einen absoluten Pfad wie `http://some.link.net/subfolder/page.html`. Der relative Pfad `/page.html` wird nicht geöffnet.
+
+* Derzeit werden nur *HTTP*- und *HTTPS*-Protokolle unterstützt. Vermeiden Sie *FTP*, *MAILTO* usw.
 
 ## <a name="best-practices"></a>Bewährte Methoden
 
-1. In den meisten Fällen empfiehlt es sich, einen Link nur als Reaktion auf die explizite Aktion eines Benutzers zu öffnen. Für den Benutzer sollte leicht erkennbar sein, dass durch das Klicken auf den Link oder die Schaltfläche eine neue Registerkarte geöffnet wird. Wenn ein `launchUrl()`-Aufruf ohne Benutzeraktion oder als Nebeneffekt einer anderen Aktion ausgelöst wird, kann dies verwirrend oder frustrierend für den Benutzer sein.
-2. Wenn der Link für die ordnungsgemäße Funktionsweise des Visuals nicht wichtig ist, wird empfohlen, dem Berichtsautor eine Möglichkeit zum Deaktivieren und Ausblenden des Links anzubieten. Dies gilt besonders für bestimmte Power BI-Anwendungsfälle wie das Einbetten eines Berichts in eine Drittanbieteranwendung oder dessen Veröffentlichung im Web.
-3. Vermeiden Sie es, einen `launchUrl()`-Aufruf aus einer Schleife, der `update`-Funktion des Visuals oder sonstigem häufig wiederkehrenden Code heraus aufzurufen.
+* In der Regel empfiehlt es sich, einen Link nur als Reaktion auf die explizite Aktion eines Benutzers zu öffnen. Für den Benutzer sollte leicht erkennbar sein, dass durch das Klicken auf den Link oder die Schaltfläche eine neue Registerkarte geöffnet wird. Wenn ein `launchUrl()`-Aufruf ohne Benutzeraktion oder als Nebeneffekt einer anderen Aktion ausgelöst wird, kann dies verwirrend oder frustrierend für den Benutzer sein.
 
-## <a name="step-by-step-example"></a>Schritt-für-Schritt-Beispiel
+* Wenn der Link für die ordnungsgemäße Funktionsweise des Visuals nicht wichtig ist, wird empfohlen, dem Berichtsautor eine Möglichkeit zum Deaktivieren und Ausblenden des Links anzubieten. Diese Empfehlung gilt besonders für bestimmte Power BI-Anwendungsfälle wie das Einbetten eines Berichts in eine Drittanbieteranwendung oder dessen Veröffentlichung im Web.
 
-### <a name="adding-a-link-launching-element"></a>Hinzufügen eines „Start-Link“-Elements
+* Vermeiden Sie es, einen `launchUrl()`-Aufruf aus einer Schleife, der `update`-Funktion des Visuals oder sonstigem häufig wiederkehrenden Code heraus aufzurufen.
+
+## <a name="a-step-by-step-example"></a>Ausführliches Beispiel
+
+### <a name="add-a-link-launching-element"></a>Hinzufügen eines „Start-Link“-Elements
 
 Die folgenden Zeilen wurden der `constructor`-Funktion des Visuals hinzugefügt:
 
@@ -56,7 +59,7 @@ Die folgenden Zeilen wurden der `constructor`-Funktion des Visuals hinzugefügt:
     options.element.appendChild(this.helpLinkElement);
 ```
 
-Außerdem wurde eine private Funktion zum Erstellen und Anfügen des Anchor-Elements hinzugefügt:
+Es wurde eine private Funktion zum Erstellen und Anfügen des Anchor-Elements hinzugefügt:
 
 ```typescript
 private createHelpLinkElement(): Element {
@@ -71,7 +74,7 @@ private createHelpLinkElement(): Element {
 };
 ```
 
-Zuletzt wird der Stil des Link-Elements durch einen Eintrag in der Datei „visual.less“ definiert:
+Zuletzt wird der Stil des Link-Elements durch einen Eintrag in der Datei *visual.less* definiert:
 
 ```less
 .helpLink {
@@ -103,10 +106,11 @@ Zuletzt wird der Stil des Link-Elements durch einen Eintrag in der Datei „visu
 }
 ```
 
-### <a name="adding-a-toggling-mechanism"></a>Hinzufügen eines Mechanismus zum Ein-/Ausblenden
+### <a name="add-a-toggling-mechanism"></a>Hinzufügen eines Mechanismus zum Ein-/Ausblenden
 
-Zu diesem Zweck muss ein statisches Objekt (siehe das [Tutorial für statische Objekte](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties)) hinzugefügt werden, damit der Berichtsautor die Sichtbarkeit des Link-Elements ein- bzw. ausschalten kann (standardmäßig ist das Element ausgeblendet).
-Ein `showHelpLink` statisches Bool-Objekt wurde dem `capabilities.json`-Objekteintrag hinzugefügt:
+Zum Hinzufügen eines Mechanismus zum Ein-/Ausblenden müssen Sie ein statisches Objekt hinzufügen, damit der Autor des Berichts die Sichtbatkeit des Link-Elements umstellen kann. (Die Standardeinstellung ist auf *hidden* festgelegt.) Weitere Informationen finden Sie im [Tutorial zu statischen Objekten](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties).
+
+Wie im folgenden Code veranschaulicht wurde dem Objekteintrag der *capabilities.json*-Datei das statische boolesche Objekt `showHelpLink` hinzugefügt:
 
 ```typescript
 "objects": {
@@ -136,4 +140,4 @@ if (settings.generalView.showHelpLink) {
 }
 ```
 
-Die `hidden`-Klasse wurde in „visual.less“ definiert, um die Anzeige des Elements zu steuern.
+Die Klasse *hidden* wurde in der *visual.less*-Datei definiert, um die Anzeige des Elements zu steuern.

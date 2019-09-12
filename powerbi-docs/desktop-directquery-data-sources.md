@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 09/04/2019
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5455a5f3b4bda6cf6d63825222822c4acfa5f03a
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: 59c55d2e9322b0b7d76a35f4eec0863efe4959e0
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70159945"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302655"
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>Von DirectQuery in Power BI unterstützte Datenquellen
 
@@ -29,14 +29,16 @@ Die folgenden Datenquellen unterstützen DirectQuery in Power BI:
 * Azure HDInsight Spark
 * [Azure SQL-Datenbank](service-azure-sql-database-with-direct-connect.md)
 * [Azure SQL Data Warehouse](service-azure-sql-data-warehouse-with-direct-connect.md)
+* Denodo
 * Google BigQuery
 * HDInsight Interactive Query
-* IBM DB2-Datenbank
+* IBM DB2 (Microsoft-Anbieter))
 * IBM Netezza
 * Impala (Version 2.x)
 * MarkLogic
 * Oracle-Datenbank (Version 12 und höher)
 * Oracle Essbase
+* PostgreSQL
 * SAP Business Warehouse-Anwendungsserver
 * SAP Business Warehouse-Nachrichtenserver
 * SAP HANA
@@ -65,15 +67,24 @@ Die folgende Tabelle gibt an, ob für das Herstellen von Verbindungen mit der an
 | Azure SQL Data Warehouse |Nein |
 | Google BigQuery |Nein |
 | IBM Netezza |Ja |
+| IBM DB2 (IBM-Anbieter) |Ja |
+| IBM DB2 (Microsoft-Anbieter) |Nein |
+| IBM Informix-Datenbank |Nein |
 | Impala (Version 2.x) |Ja |
+| MySQL |Ja |
+| ODBC |Ja |
 | Oracle-Datenbank |Ja |
+| PostgreSQL |Ja |
 | SAP Business Warehouse-Anwendungsserver |Ja |
 | SAP Business Warehouse-Nachrichtenserver |Im **Power BI-Dienst** noch nicht unterstützt |
 | SAP HANA |Ja |
 | Snowflake |Ja |
 | Spark (Beta) (Version 0.9 und höher) |Ja |
 | SQL Server |Ja |
+| Sybase |Ja |
 | Teradata-Datenbank |Ja |
+| Vertica |Ja |
+
 
 ## <a name="single-sign-on-sso-for-directquery-sources"></a>Einmaliges Anmelden (SSO) für DirectQuery-Quellen
 

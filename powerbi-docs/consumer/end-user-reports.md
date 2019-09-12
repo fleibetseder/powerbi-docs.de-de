@@ -1,30 +1,29 @@
 ---
-title: Anzeigen eines Berichts in Power BI
-description: Berichte in Power BI
+title: Berichte im Power BI-Dienst
+description: Berichte im Power BI-Dienst (für Kunden)
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 08/24/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 9a844ff813435328df63240aa46aff3430117f6e
-ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.openlocfilehash: c13398ff08722c54a9f0c373a1c103e4d684c9bb
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67532183"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391354"
 ---
 # <a name="reports-in-power-bi"></a>Berichte in Power BI
 
 Ein Power BI-Bericht stellt eine Ansicht eines Datasets aus verschiedenen Perspektiven dar, wobei die aus dem Dataset gewonnenen verschiedenen Ergebnisse und Erkenntnisse als Visuals angezeigt werden.  Ein Bericht kann ein einzelnes Visual, aber auch mehrere mit Visuals gefüllte Seiten enthalten. Abhängig von Ihrem Aufgabengebiet sind Sie möglicherweise jemand, der Berichte *entwirft*. Sie können auch jemand sein, der Berichte *nutzt* oder verwendet.
 
-![Screenshot: Berichtsseite](./media/end-user-reports/power-bi-report.png)
+![Screenshot: Berichtsseite](./media/end-user-reports/power-bi-reports.png)
 
-Dieser Bericht umfasst vier Seiten (bzw. Registerkarten). Sie sehen hier die Seite **Sentiment** (Stimmung). Diese Seite enthält fünf verschiedene Visuals und einen Seitentitel.
+Dieser Bericht umfasst sechs Seiten (bzw. Registerkarten). Sie sehen hier die Seite **Stimmung**. Diese Seite enthält fünf verschiedene Visuals und einen Seitentitel. Im Bereich *Filter* wird ein Filter angezeigt, der auf alle Berichtseiten angewendet wird. Klicken Sie auf den Pfeil ( **>** ), um den Filterbereich zu reduzieren.
 
 Wenn Sie noch nicht mit Power BI vertraut sind, können Sie sich mithilfe des Artikels [Basic concepts for the Power BI service consumers (Grundkonzepte für Benutzer des Power BI-Diensts)](end-user-basic-concepts.md) eine gute Grundlage schaffen. Berichte können auf mobilen Geräten angezeigt, freigegeben und kommentiert werden. Weitere Informationen finden Sie unter [Explore reports in the Power BI mobile apps (Untersuchen von Berichten in mobilen Power BI-Apps)](mobile/mobile-reports-in-the-mobile-apps.md).
 
@@ -42,6 +41,8 @@ Während Sie mit den Inhalten interagieren und sie durchsuchen, indem Sie sie fi
 ### <a name="save-your-changes-or-revert-to-the-default-settings"></a>Speichern Ihrer Änderungen oder Wiederherstellen der Standardeinstellungen
 
 Das bedeutet nicht, dass Sie Ihre Änderungen nicht speichern können. Das können Sie, jedoch wirken sich die gespeicherten Änderungen nur auf Ihre Ansicht des Inhalts aus. Klicken Sie auf **Auf Standardwert zurücksetzen**, um die ursprüngliche Standardansicht wiederherzustellen.
+
+![Screenshot des Symbols „Auf Standardwert zurücksetzen“.](./media/end-user-reports/power-bi-reset.png)
 
 ## <a name="dashboards-versus-reports"></a>Vergleich: Dashboards und Berichte
 
@@ -76,6 +77,5 @@ Oder Sie sind ein *Berichtsnutzer*, der Berichte von anderen erhält. Dann sollt
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Was ist Power BI?](../power-bi-overview.md)
-
-[Basic concepts for the Power BI service consumers (Grundkonzepte für Benutzer des Power BI-Diensts)](end-user-basic-concepts.md)
+[Öffnen und Anzeigen eines Berichts](end-user-report-open.md)    
+[Dashboards im Power BI-Dienst](end-user-dashboards.md)

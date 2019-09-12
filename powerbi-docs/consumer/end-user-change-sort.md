@@ -4,19 +4,18 @@ description: Ändern der Sortierung eines Diagramms in einem Power BI-Bericht
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/12/2019
+ms.date: 08/21/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: aa6193045ba1c399eaae1b48bf813738edba99f1
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: 98a91b0651e7a357f0ba0462f6ba8734c64ab162
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66750847"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302747"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Ändern der Sortierung eines Diagramms in einem Power BI-Bericht
 In einem Power BI-Bericht können Sie die meisten Visualisierungen alphabetisch nach den Namen der Kategorien im Diagramm oder nach den numerischen Werten jeder Kategorie sortieren. In diesem Diagramm wird z.B. nach der Kategorie **Geschäftsname** sortiert.
@@ -31,12 +30,12 @@ Sie können ganz einfach statt nach einer Kategorie (Geschäftsname) nach einem 
    ![Video: Auswählen von „Sortieren nach“ und dann „Aufsteigend sortieren“, „Absteigend sortieren“](media/end-user-change-sort/sort.gif)
 
 > [!NOTE]
-> Nicht alle Visuals können sortiert werden. Beispielsweise können die folgenden Visuals nicht sortiert werden: Treemaps, Karten, Flächenkartogramme, Punktdiagramme, Tachometerdiagramme, Kartendiagramme, mehrzeilige Kartendiagramme, Wasserfalldiagramme.
+> Nicht alle Visuals können sortiert werden. Beispielsweise können die folgenden Visuals nicht sortiert werden: Treemaps, Karten, Flächenkartogramme, Punktdiagramme, Tachometerdiagramme, Kartendiagramme, Wasserfalldiagramme.
 
 ## <a name="saving-changes-you-make-to-sort-order"></a>Speichern der Änderungen an der Sortierreihenfolge
 Power BI-Berichte behalten die von Ihnen vorgenommenen Änderungen am Filter, Slicer, der Sortierung und anderen Datenansichten, bei. Wenn Sie also den Bericht verlassen und später zurückkehren, sind Ihre Änderungen gespeichert.  Wenn Sie Ihre Änderungen auf die Einstellungen des Berichts-Designers zurücksetzen möchten, wählen Sie aus der oberen Menüleiste **Auf Standardwert zurücksetzen** aus. 
 
-![Sortierung beibehalten](media/end-user-change-sort/power-bi-reset-to-default.png)
+![Sortierung beibehalten](media/end-user-change-sort/power-bi-reset.png)
 
 Ist die Schaltfläche **Auf Standardwert zurücksetzen** jedoch ausgegraut, bedeutet das, dass der Berichts-Designer die Option zum Speichern (Beibehalten) der Änderungen deaktiviert hat.
 

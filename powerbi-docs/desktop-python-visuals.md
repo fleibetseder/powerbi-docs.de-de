@@ -7,121 +7,175 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/18/2018
+ms.date: 08/20/2018
 ms.author: otarb
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7390f029144e5cb37830921071ad5c2c678b2d4d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b41a50ae7c4aaf8f70c9d7745ea4767b7644a62f
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61285576"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70303128"
 ---
 # <a name="create-power-bi-visuals-using-python"></a>Erstellen von Power BI-Visualisierungen mithilfe von Python
 Mit **Power BI Desktop** können Sie **Python** zum Visualisieren Ihrer Daten verwenden.
 
-## <a name="install-python"></a>Python installieren
-**Power BI Desktop** enthält die **Python**-Engine nicht und stellt sie weder bereit noch installiert es sie. Um Python-Skripts in **Power BI Desktop** auszuführen, müssen Sie **Python** separat auf Ihrem lokalen Computer installieren. **Python** können Sie an vielen Stellen im Internet kostenlos herunterladen und installieren, u.a. von der [Offiziellen Python-Downloadseite](https://www.python.org/) und aus [Anaconda](https://anaconda.org/anaconda/python/). Die aktuelle Version der Python-Skripterstellung in Power BI Desktop unterstützt Unicode-Zeichen ebenso wie Leerzeichen (leere Zeichen) im Installationspfad.
+## <a name="prerequisites"></a>Voraussetzungen
 
-## <a name="enable-python-visuals"></a>Aktivieren von visuellen Python-Elementen
-Zum Aktivieren von Python-Visualisierungen wählen Sie **Datei > Optionen und Einstellungen > Optionen** aus. Stellen Sie anschließend sicher, dass auf der Seite **Optionen** im Abschnitt **Python-Skripterstellung** des Fensters **Optionen** die lokale Installation von Python angegeben ist, wie in der folgenden Abbildung dargestellt. In der folgenden Abbildung lautet der lokale Installationspfad von Python **C:\Python27**. Dieser Pfad ist im Textfeld explizit angegeben. Achten Sie darauf, dass der dort angezeigte Pfad die lokale Installation von Python, die von **Power BI Desktop** verwendet werden soll, richtig wiedergibt.
-   
-   ![](media/desktop-python-visuals/python-visuals-1.png)
+Bearbeiten Sie das Tutorial [Ausführen von Python-Skripts in Power BI Desktop](desktop-python-scripts.md). Verwenden Sie dafür das folgende Python-Skript:
 
-Nachdem Sie Ihre Installation von Python angegeben haben, können Sie mit dem Erstellen von Python-Visualisierungen beginnen.
+```python
+import pandas as pd 
+df = pd.DataFrame({ 
+    'Fname':['Harry','Sally','Paul','Abe','June','Mike','Tom'], 
+    'Age':[21,34,42,18,24,80,22], 
+    'Weight': [180, 130, 200, 140, 176, 142, 210], 
+    'Gender':['M','F','M','M','F','M','M'], 
+    'State':['Washington','Oregon','California','Washington','Nevada','Texas','Nevada'],
+    'Children':[4,1,2,3,0,2,0],
+    'Pets':[3,2,2,5,0,1,5] 
+}) 
+print (df) 
+```
+Im Artikel [Ausführen von Python-Skripts in Power BI Desktop](desktop-python-scripts.md) wird erläutert, wie Sie Python auf Ihrem lokalen Computer installieren und für die Python-Skripterstellung in **Power BI Desktop** aktivieren können. In diesem Tutorial werden Daten aus dem obigen Skript verwendet, um die Erstellung von Python-Visuals zu veranschaulichen.
 
 ## <a name="create-python-visuals-in-power-bi-desktop"></a>Erstellen von visuellen Python-Elementen in Power BI Desktop
-1. Wählen Sie zum Hinzufügen eines visuellen Python-Elements das Symbol **visuelle Python-Elemente** im Bereich **Visualisierung** aus, wie im folgenden Bild dargestellt.
+1. Klicken Sie im Bereich **Visualisierung** auf das Symbol **Python-Visual**.
    
    ![](media/desktop-python-visuals/python-visuals-2.png)
 
-   Wenn Sie einem Bericht ein visuelles Python-Element hinzufügen, führt **Power BI Desktop** Folgendes aus:
-   
-   - Auf der Berichtzeichnungsfläche wird ein Platzhalterbild für ein visuelles Python-Element angezeigt.
-   
-   - Am unteren Rand des mittleren Bereichs wird der **Python-Skript-Editor** angezeigt.
-   
-   ![](media/desktop-python-visuals/python-visuals-3.png)
+1.  Klicken Sie im daraufhin angezeigten Dialogfeld **Visuelle Skriptelemente aktivieren** auf **Aktivieren**. 
 
-2. Fügen Sie anschließend wie in jeder anderen **Power BI Desktop**-Visualisierung dem Abschnitt **Werte** im Bereich **Felder** Felder hinzu, die im Python-Skript verwendet werden sollen. 
-    
-    Für Ihr Python-Skript sind nur Felder verfügbar, die dem Bereich **Felder** hinzugefügt wurden. Sie können im Bereich **Felder** neue Felder hinzufügen und nicht benötigte Felder entfernen, während Sie das Python-Skript im **Python-Skript-Editor von Power BI Desktop** bearbeiten. **Power BI Desktop** erkennt automatisch, welche Felder hinzugefügt oder entfernt wurden.
+    Wenn Sie einem Bericht ein Python-Visual hinzufügen, führt **Power BI Desktop** die folgenden Aktionen aus:
+   
+     - Auf der Berichtzeichnungsfläche wird ein Platzhalterbild für ein visuelles Python-Element angezeigt.
+   
+     - Am unteren Rand des mittleren Bereichs wird der **Python-Skript-Editor** angezeigt.
+   
+    ![](media/desktop-python-visuals/python-visuals-3.png)
+
+1. Ziehen Sie als nächstes die Felder **Alter**, **Children** (Kinder), **Fname**, **Geschlecht**, **Pets** (Haustiere), **State** (Staat) und **Weight** (Gewicht) in den Abschnitt **Werte**, in dem die Meldung **Hier Datenfelder hinzufügen** angezeigt wird. 
+
+    ![](media/desktop-python-visuals/python-visuals-15.png)
+
+   Ihr Python-Skript kann nur Felder verwenden, die dem Abschnitt **Werte** hinzugefügt wurden. Während Sie an Ihrem Python-Skript arbeiten, können Sie Felder zum Abschnitt **Werte** hinzufügen oder aus diesem entfernen. **Power BI Desktop** erkennt automatisch, wenn Änderungen an Feldern vorgenommen werden.
    
    > [!NOTE]
    > Der Standardaggregationstyp für visuelle Python-Elemente lautet *Nicht zusammenfassen*.
    > 
    > 
    
-3. Jetzt können Sie die Daten verwenden, die Sie zum Erstellen einer Zeichnung ausgewählt haben. 
+1. Jetzt können Sie die Daten verwenden, die Sie zum Erstellen einer Zeichnung ausgewählt haben. 
 
-    Während Sie Felder auswählen, generiert der **Python-Skript-Editor** unterstützenden Python-Skript-Bindungscode, ausgehend von Ihrer Auswahl im grauen Abschnitt im oberen Bereich des Editors. Wenn Sie zusätzliche Felder auswählen oder entfernen, wird im Python-Skript-Editor automatisch Unterstützungscode entsprechend generiert bzw. entfernt.
-   
-   Im Beispiel in der folgenden Abbildung wurden drei Felder ausgewählt: „hp“, „gear“ und „drat“. Aufgrund dieser Auswahl generiert der Python-Skript-Editor den folgenden Bindungscode:
-   
-   * Ein Datenrahmen mit dem Namen **dataset** wurde erstellt.
-     * Dieser Datenrahmen besteht aus den vom Benutzer ausgewählten Feldern.
-   * Die Standardaggregation lautet *Nicht zusammenfassen*.
-   * Ähnlich wie bei Tabellenvisualisierungen werden Felder gruppiert, und doppelte Zeilen werden nur einmal angezeigt.
-   
-   ![](media/desktop-python-visuals/python-visuals-4.png)
-   
-   > [!TIP]
-   > In bestimmten Fällen sind Gruppierungen möglicherweise nicht erwünscht, oder es sollen alle Zeilen, einschließlich doppelter Zeilen, angezeigt werden. In diesem Fall können Sie dem Dataset ein Indexfeld hinzufügen, sodass alle Zeilen als eindeutig betrachtet werden und keine Gruppierung erfolgt.
-   > 
-   > 
-   
-   Der generierte Datensatz wird als **Dataset** bezeichnet, und Sie können auf die ausgewählten Spalten über ihre Namen zugreifen. Greifen Sie beispielsweise auf das Feld „gear“ zu, indem Sie *dataset["gear"]* in Ihr Python-Skript schreiben.
+    Wenn Sie Felder auswählen oder entfernen, wird im Python-Skript-Editor automatisch Unterstützungscode generiert bzw. aus diesem entfernt. 
+    
+    Basierend auf Ihrer Auswahl generiert der Python-Skript-Editor den folgenden Bindungscode.
 
-4. Mit dem Datenrahmen, der automatisch anhand der von Ihnen ausgewählten Felder generiert wurde, können Sie ein Python-Skript zum Erzeugen von Zeichnungen auf dem Python-Standardgerät schreiben. Wenn das Skript abgeschlossen ist, wählen Sie **Ausführen** auf der Titelleiste des **Python-Skript-Editors** aus (**Ausführen** befindet sich auf der rechten Seite der Titelleiste).
+    * Der Editor hat mit den von Ihnen hinzugefügten Feldern einen **Dataset**-Datenrahmen erstellt. 
+    * Die Standardaggregation lautet *Nicht zusammenfassen*.
+    * Ähnlich wie bei Tabellenvisualisierungen werden Felder gruppiert und doppelte Zeilen nur einmal angezeigt.
+
+        ![](media/desktop-python-visuals/python-visuals-10.png)
    
-    Bei Auswahl von **Ausführen** identifiziert **Power BI Desktop** die Zeichnung und stellt sie im Zeichenbereich dar. Da der Vorgang in der lokalen Python-Installation ausgeführt wird, stellen Sie sicher, dass die erforderlichen Pakete installiert sind.
+     > [!TIP] 
+     > In bestimmten Fällen sind Gruppierungen möglicherweise nicht erwünscht, oder es sollen alle Zeilen angezeigt werden, einschließlich doppelter Zeilen. Dann können Sie Ihrem Dataset ein Indexfeld hinzufügen, sodass alle Zeilen als eindeutig betrachtet werden und keine Gruppierung erfolgt.
    
-   **Power BI Desktop** zeichnet die Visualisierung neu, wenn eines der folgenden Ereignisse eintritt:
+   Sie können auf Spalten im Dataset zugreifen, indem Sie deren Namen verwenden. Beispielsweise können Sie das Dataset „Age“ (Alter) in Ihrem Python-Skript für den Zugriff auf das Feld „Alter“ codieren.
+
+1. Mit dem Datenrahmen, der automatisch anhand der von Ihnen ausgewählten Felder generiert wurde, können Sie ein Python-Skript zum Erzeugen von Zeichnungen auf dem Python-Standardgerät schreiben. Sobald das Skript vollständig ist, sollten Sie auf der Titelleiste des **Python-Skript-Editors** auf **Ausführen** klicken.
+
+   **Power BI Desktop** zeichnet das Visual neu, wenn eines der folgenden Ereignisse eintritt:
    
    * Wenn Sie auf der Titelleiste des **Python-Skript-Editors** **Ausführen** auswählen.
    * Bei jedem Ändern der Daten durch Aktualisieren, Filtern oder Hervorheben von Daten.
+   
+   Wenn Sie ein Python-Skript ausführen, das einen Fehler auslöst, wird das Python-Visual nicht gezeichnet, und es wird eine Fehlermeldung in der Canvas angezeigt. Sie können Fehlerdetails abrufen, indem Sie in der Meldung auf **Details anzeigen** klicken.
 
-    Die folgende Abbildung zeigt ein Beispiel für den Korrelationszeichnungscode, wobei die Korrelationen zwischen Attributen verschiedener Autotypen gezeichnet werden.
+   Um eine größere Ansicht der Visualisierungen zu erhalten, können Sie den **Python-Skript-Editor**minimieren.
 
-    ![](media/desktop-python-visuals/python-visuals-5.png)
+Im Folgenden erfahren Sie, wie Sie Visuals erstellen können.
 
-5. Um eine größere Ansicht der Visualisierungen zu erhalten, können Sie den **Python-Skript-Editor**minimieren. Selbstverständlich können Sie die Korrelationszeichnung wie andere Visuals in **Power BI Desktop** kreuzfiltern, indem Sie im Ringdiagrammvisual (im obigen Beispielbild die runden Visuals auf der rechten Seite) nur Sportwagen auswählen.
+## <a name="create-a-scatter-plot"></a>Erstellen eines Punktdiagramms
 
-    ![](media/desktop-python-visuals/python-visuals-6.png)
+Wir wollen nun ein Punktdiagramm erstellen, um zu überprüfen, ob eine Korrelation zwischen dem Alter und dem Gewicht besteht. 
 
-6. Sie können auch das Python-Skript ändern, um die Visualisierung anzupassen, und die Funktionsvielfalt von Python nutzen, indem Sie dem Zeichenbefehl Parameter hinzufügen.
+1. Geben Sie unter **Paste or type your script code here** (Hier Ihren Skriptcode einfügen oder eingeben) den folgenden Code ein:
 
-    Der ursprüngliche Zeichenbefehl lautete wie folgt:
+   ```python
+   import matplotlib.pyplot as plt 
+   dataset.plot(kind='scatter', x='Age', y='Weight', color='red')
+   plt.show() 
+   ```  
+   Der Bereich des Python-Skript-Editors sollte nun wie folgt aussehen:
 
-    plt.matshow(dataset.corr('pearson'))
+   ![](media/desktop-python-visuals/python-visuals-11.png)
 
-    Mit einigen Änderungen im Python-Skript lautet der Befehl jetzt folgendermaßen:
+   Die Bibliothek **Matplotlib** wird importiert, um die Visuals zu zeichnen und zu erstellen.
 
-    plt.matshow(dataset.corr('kendall'))
+1. Wenn Sie auf die Schaltfläche **Skript ausführen** klicken, wird der Platzhalter für das Python-Visual durch das folgende Punktdiagramm ersetzt.
 
-    Das führt dazu, dass das visuelle Python-Element jetzt mithilfe des Kendall Tau-Rangkorrelationskoeffizienten gezeichnet wird, wie in der folgenden Abbildung dargestellt.
+   ![](media/desktop-python-visuals/python-visuals-12.png)
 
-    ![](media/desktop-python-visuals/python-visuals-7.png)
+## <a name="create-a-line-plot-with-multiple-columns"></a>Erstellen eines Liniendiagramms mit mehreren Spalten
 
-    Wenn ein Python-Skript ausgeführt wird, das einen Fehler verursacht, wird das visuelle Python-Element nicht gezeichnet, und im Zeichenbereich wird eine Fehlermeldung angezeigt. Um Informationen zu dem Fehler zu erhalten, wählen Sie in der Fehlermeldung des visuellen Python-Elements **Details anzeigen** aus.
+ Im Folgenden wird erläutert, wie Sie ein Liniendiagramm zu jeder Person erstellen, an dem die Anzahl der Kinder und Haustiere abgelesen werden können. Entfernen Sie den Code unter **Paste or type your script code here** (Hier Ihren Skriptcode einfügen oder eingeben), oder kommentieren Sie ihn aus, und geben Sie den folgenden Python-Code ein:
 
-    ![](media/desktop-python-visuals/python-visuals-8.png)
+ ```python
+ import matplotlib.pyplot as plt 
+ax = plt.gca() 
+dataset.plot(kind='line',x='Fname',y='Children',ax=ax) 
+dataset.plot(kind='line',x='Fname',y='Pets', color='red', ax=ax) 
+plt.show() 
+```
+Wenn Sie auf die Schaltfläche **Skript ausführen** klicken, wird das folgende Liniendiagramm mit mehreren Spalten generiert.
 
-    > **Sicherheit von Python-Skripts:** Visuelle Python-Elemente werden aus Python-Skripts erstellt, die Code mit Sicherheits- oder Datenschutzrisiken enthalten können. Wenn ein Benutzer ein visuelles Python-Element zum ersten Mal aufruft oder damit interagiert, wird eine Sicherheitswarnmeldung angezeigt. Aktivieren Sie visuelle Python-Elemente nur dann, wenn Sie dem Autor und der Quelle vertrauen, oder wenn Sie die zugehörigen Python-Skripts überprüft und nachvollzogen haben.
-    > 
-    > 
+![](media/desktop-python-visuals/python-visuals-13.png) 
+
+## <a name="create-a-bar-plot"></a>Erstellen eines Balkendiagramms
+
+Zuletzt wollen wir ein Balkendiagramm zum Alter jeder Person erstellen. Entfernen Sie den Code unter **Paste or type your script code here** (Hier Ihren Skriptcode einfügen oder eingeben), oder kommentieren Sie ihn aus, und geben Sie den folgenden Python-Code ein:
+
+```python
+import matplotlib.pyplot as plt 
+dataset.plot(kind='bar',x='Fname',y='Age') 
+plt.show() 
+```
+
+Wenn Sie auf die Schaltfläche **Skript ausführen** klicken, wird das folgende Balkendiagramm erstellt:
+
+![](media/desktop-python-visuals/python-visuals-14.png) 
+
+## <a name="security"></a>Sicherheit
+
+> [!IMPORTANT] 
+  > **Sicherheit von Python-Skripts:** Visuelle Python-Elemente werden aus Python-Skripts erstellt, die Code mit Sicherheits- oder Datenschutzrisiken enthalten können. Wenn ein Benutzer ein visuelles Python-Element zum ersten Mal aufruft oder damit interagiert, wird eine Sicherheitswarnmeldung angezeigt. Aktivieren Sie visuelle Python-Elemente nur dann, wenn Sie dem Autor und der Quelle vertrauen, oder wenn Sie die zugehörigen Python-Skripts überprüft und nachvollzogen haben. 
+  >  
+
+## <a name="more-information-about-plotting-with-matprolib-pandas-and-python"></a>Weitere Informationen zum Zeichnen mit Matprolib, Pandas und Python
+
+Dieses Tutorial soll Ihnen den Einstieg in die Erstellung von Visuals mit Python in **Power BI Desktop** erleichtern. Die vielen Optionen und Funktionen zum Erstellen von visuellen Berichten mithilfe von Python und den Bibliotheken Pandas und Matprolib können in diesem Rahmen nur grob vorgestellt werden. Es gibt noch viele weitere Informationen. Hier finden Sie einige Links, die Ihnen beim Start helfen:
+
+* Dokumentation auf der [Matplotlib](https://matplotlib.org/)-Website. 
+* [Matplotlib Tutorial: A Basic Guide to Use Matplotlib with Python (Matplotlib-Tutorial: Basisanleitung zur Verwendung von Matplotlib mit Python)](https://www.datasciencelearner.com/matplotlib-tutorial-complete-guide-to-use-matplotlib-with-python/) 
+* [Matplotlib Tutorial – Python Matplotlib Library with Examples (Matplotlib-Tutorial: Matplotlib-Bibliothek für Python mit Beispielen)](https://www.edureka.co/blog/python-matplotlib-tutorial/) 
+* [Pandas API Reference (API-Referenz für Pandas)](http://pandas.pydata.org/pandas-docs/stable/reference/index.html) 
+* [Python-Visualisierungen im Power BI-Dienst](https://powerbi.microsoft.com/blog/python-visualizations-in-power-bi-service/) 
+* [Erstellen von Python-Visuals in Power BI](https://www.absentdata.com/how-to-user-python-and-power-bi/)
+
 
 ## <a name="known-limitations"></a>Bekannte Einschränkungen
-Für visuelle Python-Elemente in **Power BI Desktop** ergeben sich einige Einschränkungen:
+
+Für Python-Visuals in **Power BI Desktop** gelten einige Einschränkungen:
 
 * Beschränkungen der Datengröße – die vom visuellen Python-Element zum Zeichnen verwendeten Daten sind auf 150.000 Zeilen beschränkt. Bei Auswahl von mehr als 150.000 Zeilen werden nur die oberen 150.000 Zeilen verwendet, und im Bild wird eine Meldung angezeigt.
 * Beschränkung der Berechnungszeit: Wenn die Berechnung des visuellen Python-Elements 5 Minuten überschreitet, wird die Ausführung aufgrund der Zeitüberschreitung abgebrochen und eine Fehlermeldung angezeigt.
 * Beziehungen – wie bei anderen Power BI Desktop-Visualisierungen tritt ein Fehler auf, wenn Datenfelder aus unterschiedlichen Tabellen ausgewählt werden, zwischen denen keine Beziehung definiert ist.
 * Visuelle Python-Elemente werden aktualisiert, wenn Daten aktualisiert, gefiltert oder hervorgehoben werden. Das Bild selbst ist jedoch nicht interaktiv und kann nicht als Quelle für die Kreuzfilterung verwendet werden.
-* Visuelle Python-Elemente reagieren auf das Hervorheben anderer Visualisierungen. Sie können jedoch nicht auf visuelle Python-Elemente klicken, um eine Kreuzfilterung anderer Elemente auszuführen.
+* Python-Visuals reagieren auf das Hervorheben anderer Visuals. Sie können jedoch nicht auf Elemente in den Python-Visuals klicken, um eine Kreuzfilterung für andere Elemente durchzuführen.
 * Nur auf dem Python-Standardanzeigegerät erzeugte Zeichnungen werden im Zeichenbereich ordnungsgemäß angezeigt. Verwenden Sie nicht explizit ein anderes Python-Anzeigegerät.
 
 ## <a name="next-steps"></a>Nächste Schritte
+
 Betrachten Sie die folgenden zusätzlichen Informationen über Python in Power BI.
 
 * [Ausführen von Python-Skripts in Power BI Desktop](desktop-python-scripts.md)

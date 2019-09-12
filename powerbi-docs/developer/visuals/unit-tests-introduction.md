@@ -1,6 +1,6 @@
 ---
-title: Einführung in Komponententests
-description: Schreiben von Komponententests für Power BI-Visualprojekte
+title: Einführung in Komponententests für Power BI-Visualprojekte
+description: In diesem Artikel wird beschrieben, wie Sie Komponententests für Power BI-Visualprojekte erstellen.
 author: zBritva
 ms.author: v-ilgali
 manager: rkarlin
@@ -9,31 +9,29 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: 4b16eaad9b541bf6e5d8df49ffda99d9bbd5bbf2
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: f0040ef53fbbce8c7133e5f645bcbddb0bbfadea
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424537"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236720"
 ---
 # <a name="tutorial-add-unit-tests-for-power-bi-visual-projects"></a>Tutorial: Hinzufügen von Komponententests zu Power BI-Visualprojekten
 
-In diesem Tutorial werden die Grundlagen zum Schreiben von Komponententests für Power BI-Visuals beschrieben.
+In diesem Artikel werden die Grundlagen zur Erstellung von Komponententests für Power BI-Visualprojekte beschrieben. Dabei wird u. a. Folgendes thematisiert:
 
-Die Themen in diesem Tutorial:
-
-* Verwenden von Test Runner „karma.js“ und Testframework „jasmine.js“
-* Verwenden des powerbi-visuals-utils-testutils-Pakets
-* Festlegen von Simulationen für einfachere Komponententests in Power BI-Visuals
+* Einrichten des Testframeworks Jasmine und des Test Runners Karma für JavaScript-Code
+* Verwenden des Pakets „powerbi-visuals-utils-testutils“
+* Verwenden von Pseudo- und Fakeobjekten, um Komponententests für Power BI-Visuals zu vereinfachen
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-* Sie verfügen über ein Power BI-Visualprojekt.
-* Die Node.us-Umgebung wurde konfiguriert.
+* Ein installiertes Power BI-Visualprojekt
+* Eine konfigurierte Node.js-Umgebung
 
-## <a name="install-and-configure-karmajs-and-jasmine"></a>„karma.js“ und „jasmine.js“ wurden installiert und konfiguriert.
+## <a name="install-and-configure-the-karma-javascript-test-runner-and-jasmine"></a>Installieren und Konfigurieren des Jasmine-Testframeworks und des Test Runners Karma für JavaScript-Code
 
-Fügen Sie „package.json“ die erforderlichen Bibliotheken im `devDependencies`-Abschnitt hinzu:
+Fügen Sie der Datei *package.json* im Abschnitt `devDependencies` die erforderlichen Bibliotheken hinzu:
 
 ```json
 "@babel/polyfill": "^7.2.5",
@@ -67,19 +65,19 @@ Fügen Sie „package.json“ die erforderlichen Bibliotheken im `devDependencie
 "webpack": "4.26.0"
 ```
 
-In der folgenden Beschreibung erhalten Sie weitere Informationen zum Paket.
+Weitere Informationen zum Paket finden Sie unter:
 
-Speichern Sie `package.json`, und führen Sie das Element an der Befehlszeile in `package.json` aus:
+Speichern Sie die Datei *package.json*. Führen Sie anschließend am Speicherort von `package.json` den folgenden Befehl aus:
 
 ```cmd
 npm install
 ```
 
-Vom Paket-Manager werden alle neuen Pakete installiert, die `package.json` hinzugefügt wurden.
+Der Paket-Manager installiert alle neuen Pakete, die *package.json* hinzugefügt wurden.
 
-Zum Ausführen der Komponententests müssen Sie den Test Runner und `webpack`.config konfigurieren. Beispiel der CONFIG-Datei
+Konfigurieren Sie den Test Runner und die `webpack`-Konfiguration, um Komponententests auszuführen.
 
-Beispiel von `test.webpack.config.js`:
+Der folgende Code ist ein Beispiel aus der Datei *test.webpack.config.js*:
 
 ```typescript
 const path = require('path');
@@ -147,7 +145,7 @@ module.exports = {
 };
 ```
 
-Beispiel von `karma.conf.ts`
+Der folgende Code ist ein Beispiel aus der Datei *karma.conf.ts*:
 
 ```typescript
 "use strict";
@@ -252,31 +250,29 @@ module.exports = (config: Config) => {
 
 Sie können diese Konfiguration bei Bedarf ändern.
 
-Einige Einstellungen von `karma.conf.js`:
+Der Code in *karma.conf.js* enthält die folgende Variablen:
 
-* Durch die `recursivePathToTests`-Variable wird der Speicherort von Testcode ermittelt.
+* `recursivePathToTests`: der Speicherort des Testcodes.
 
-* Durch die `srcRecursivePath`-Variable wird der JS-Ausgabecode nach der Kompilierung ermittelt.
+* `srcRecursivePath`: der Speicherort des JavaScript-Ausgabecodes nach dem Kompilieren.
 
-* Durch die `srcCssRecursivePath`-Variable wird der CSS-Ausgabecode nach der Kompilierung ermittelt (ohne Formatdatei).
+* `srcCssRecursivePath`: der Speicherort der CSS-Ausgabe nach dem Kompilieren der LESS-Datei mit Formatangaben.
 
-* Durch die `srcOriginalRecursivePath`-Variable wird der Quellcode des Visuals ermittelt.
+* `srcOriginalRecursivePath`: der Speicherort des Visualquellcodes.
 
-* Durch die `coverageFolder`-Variable wird der Ort ermittelt, an dem der Code Coverage-Bericht erstellt wird.
+* `coverageFolder`: der Speicherort, an dem der Bericht zur Code Coverage erstellt werden soll.
 
-Einige Eigenschaften der CONFIG-Datei:
+Die Konfigurationsdatei enthält die folgenden Eigenschaften:
 
-* `singleRun: true` – Der Test wird für das CI-System ausgeführt. Ein einzelner Durchgang genügt.
-Sie können zu `false` wechseln, um die Tests zu debuggen. Der Browser wird von Karma weiterhin ausgeführt, sodass Sie die Konsole zum Debuggen verwenden können.
+* `singleRun: true`: Tests lassen sich entweder einmalig oder auf einem CI-System (Continuous Integration) ausführen. Sie können für das Debuggen von Tests die Einstellung *false* festlegen. Der Browser wird von Karma weiterhin ausgeführt, damit Sie die Konsole zum Debuggen verwenden können.
 
-* `files: [...]` – In diesem Array können Sie Dateien festlegen, die in den Browser geladen werden.
-Normalerweise handelt es sich um Quelldateien, Testfälle, Bibliotheken (Jasmine, Testhilfsprogramme). Sie können der Liste bei Bedarf weitere Dateien hinzufügen.
+* `files: [...]`: In diesem Array können Sie die Dateien festlegen, die in den Browser geladen werden sollen. Normalerweise handelt es sich um Quelldateien, Testfälle und Bibliotheken (für Jasmine und Testhilfsprogramme). Sie können die Liste bei Bedarf um weitere Dateien ergänzen.
 
-* `preprocessors` – In diesem Abschnitt der CONFIG-Datei konfigurieren Sie Aktionen, die vor den Komponententests ausgeführt werden. Dazu gehören die Vorkompilierung von TypeScript in JS, die Vorbereitung von Quellzuordnungsdateien und die Generierung des Code Coverage-Berichts. Sie können `coverage` deaktivieren, um die Tests zu debuggen. Durch „coverage“ wird zusätzlicher Coverage-Testcode generiert, wodurch das Debuggen von Tests erschwert wird.
+* `preprocessors`: In diesem Abschnitt konfigurieren Sie die Aktionen, die vor den Komponententests ausgeführt werden. Die Aktionen kompilieren TypeScript vorab zu JavaScript, bereiten Quellzuordnungsdateien vor und generieren den Bericht zur Code Coverage. Sie können `coverage` deaktivieren, wenn Sie Tests debuggen. Durch „coverage“ wird zusätzlicher Testcode generiert, der bei der Code Coverage für Tests berücksichtigt wird. Dies erschwert das Debuggen von Tests.
 
-**Beschreibung aller Konfigurationen, die Sie in der [Dokumentation](https://karma-runner.github.io/1.0/config/configuration-file.html) zu „Karma.js“ finden**
+Eine Beschreibung aller Karma-Konfigurationen finden Sie auf der Seite [Karma-Konfigurationsdatei](https://karma-runner.github.io/1.0/config/configuration-file.html).
 
-Zur Vereinfachung können Sie `scripts` den Testbefehl hinzufügen:
+Sie können `scripts` praktischerweise einen Testbefehl hinzufügen:
 
 ```json
 {
@@ -292,15 +288,15 @@ Zur Vereinfachung können Sie `scripts` den Testbefehl hinzufügen:
 }
 ```
 
-Nun können Sie mit dem Schreiben von Komponententests beginnen.
+Nun können Sie mit dem Erstellen von Komponententests beginnen.
 
-## <a name="simple-unit-test-for-check-dom-element-of-the-visual"></a>Einfacher Komponententest zur Überprüfung des DOM-Elements des Visuals
+## <a name="check-the-dom-element-of-the-visual"></a>Überprüfen des DOM-Elements des Visuals
 
-Zu Testzwecken muss eine Instanz des Visuals erstellt werden.
+Erstellen Sie zunächst eine Instanz des Visuals, um dieses zu testen.
 
-### <a name="creating-visual-instance-builder"></a>Erstellen des Visualinstanz-Builders
+### <a name="create-a-visual-instance-builder"></a>Erstellen des Visualinstanz-Generators
 
-Fügen Sie die Datei `visualBuilder.ts` dem Ordner `test` mit folgendem Code hinzu:
+Fügen Sie dem Ordner *test* die Datei *visualBuilder.ts* hinzu, indem Sie folgenden Code verwenden:
 
 ```typescript
 import {
@@ -329,13 +325,13 @@ export class BarChartBuilder extends VisualBuilderBase<VisualClass> {
 }
 ```
 
-Es gibt eine `build`-Methode, mit der Sie eine Instanz des Visuals erstellen können. `mainElement` ist eine get-Methode, die eine Instanz des DOM-Stammelements im Visual zurückgibt. Der Getter ist optional, erleichtert jedoch das Schreiben von Komponententests.
+Es gibt eine `build`-Methode, mit der Sie eine Instanz des Visuals erstellen können. `mainElement` ist eine get-Methode, die eine Instanz des DOM-Stammelements im Visual zurückgibt. Der Getter ist optional, erleichtert jedoch das Erstellen von Komponententests.
 
-Der Builder für die Visualinstanz ist nun erstellt. Als Nächstes schreiben Sie den Testfall. Durch den Testfall werden die SVG-Elemente überprüft, die bei der Anzeige des Visuals erstellt werden.
+Sie verfügen nun über eine Instanz des Visuals. Als Nächstes schreiben Sie den Testfall. Mit dem Testfall werden die SVG-Elemente überprüft, die beim Anzeigen des Visuals erstellt werden.
 
-### <a name="creating-typescript-file-to-write-test-cases"></a>Erstellen einer TypeScript-Datei zum Schreiben von Testfällen
+### <a name="create-a-typescript-file-to-write-test-cases"></a>Erstellen einer TypeScript-Datei zum Schreiben von Testfällen
 
-Fügen Sie die Datei `visualTest.ts` für Testfälle mit folgendem Code hinzu:
+Fügen Sie den Testfällen die Datei *visualTest.ts* hinzu, indem Sie folgenden Code verwenden:
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -362,40 +358,36 @@ describe("BarChart", () => {
 });
 ```
 
-Es werden mehrere Methoden aufgerufen.
+Mehrere Methoden werden aufgerufen:
 
-* Durch die [`describe`](https://jasmine.github.io/api/2.6/global.html#describe)-Methode wird der Testfall beschrieben. Im Kontext eines Jasmine-Frameworks wird häufig eine Gruppe von Spezifikationen aufgerufen.
+* [`describe`](https://jasmine.github.io/api/2.6/global.html#describe): beschreibt einen Testfall. Im Kontext des Jasmine-Frameworks wird damit häufig eine Sammlung oder eine Gruppe von Spezifikationen beschrieben.
 
-* Die `beforeEach`-Methode wird jeweils vor dem Aufruf der `it`-Methode aufgerufen, die innerhalb der [`describe`](https://jasmine.github.io/api/2.6/global.html#beforeEach)-Methode definiert ist.
+* `beforeEach`: wird vor jedem Aufruf der `it`-Methode aufgerufen, die in der Methode [`describe`](https://jasmine.github.io/api/2.6/global.html#beforeEach) definiert ist.
 
-* Durch `it` wird eine einzelne Spezifikation definiert. Die [`it`](https://jasmine.github.io/api/2.6/global.html#it)-Methode sollte mindestens ein `expectations`-Element enthalten.
+* [`it`](https://jasmine.github.io/api/2.6/global.html#it): definiert eine einzelne Spezifikation. Die `it`-Methode sollte eine oder mehrere `expectations` enthalten.
 
-* Durch die [`expect`](https://jasmine.github.io/api/2.6/global.html#expect)-Methode wird eine Erwartung für eine Spezifikation erstellt. Eine Spezifikation ist erfolgreich, wenn alle Erwartungen ohne Fehler erfüllt sind.
+* [`expect`](https://jasmine.github.io/api/2.6/global.html#expect): erstellt eine Erwartung für eine Spezifikation. Eine Spezifikation ist erfolgreich, wenn alle Erwartungen ohne Fehler erfüllt werden.
 
-* `toBeInDOM` ist eine der Matcher-Methoden. Weitere Informationen zu vorhandenen Matcher-Methoden finden Sie in der [Dokumentation](https://jasmine.github.io/api/2.6/matchers.html) zum Jasmine-Framework.
+* `toBeInDOM`: eine der *matchers*-Methoden. Weitere Informationen zu Matchern finden Sie unter [Jasmine-Namespace: matchers](https://jasmine.github.io/api/2.6/matchers.html).
 
-**Weitere Informationen zum Jasmine-Framework finden Sie in der offiziellen [Dokumentation](https://jasmine.github.io/).**
-
-Anschließend können Sie den Komponententest ausführen, indem Sie einen Befehl in das Befehlszeilentool eingeben.
-
-Mit diesem Test wird überprüft, ob das SVG-Stammelement der Visuals erstellt wird.
+Weitere Informationen zu Jasmine finden Sie auf der Seite [Dokumentation zum Jasmine-Framework](https://jasmine.github.io/).
 
 ### <a name="launch-unit-tests"></a>Starten von Komponententests
 
-Zum Ausführen des Komponententests können Sie den folgenden Befehl im Befehlszeilentool eingeben.
+Mit diesem Test wird überprüft, ob das SVG-Stammelement der Visuals erstellt wird. Geben Sie den folgenden Befehl im Befehlszeilentool ein, um den Komponententest auszuführen:
 
 ```cmd
 npm run test
 ```
 
-Durch `karma.js` wird der Testfall im Chrome-Browser ausgeführt.
+`karma.js` führt den Testfall im Chrome-Browser aus.
 
-![„Karma.js“ wurde in Chrome gestartet.](./media/karmajs-chrome.png)
+![In Chrome geöffnetes Karma-JavaScript](./media/karmajs-chrome.png)
 
 > [!NOTE]
-> Google Chrome muss lokal installiert sein.
+> Sie müssen Google Chrome lokal installieren.
 
-In der Befehlszeile erhalten Sie folgende Ausgabe:
+Im Befehlszeilenfenster wird die folgende Ausgabe angezeigt:
 
 ```cmd
 > karma start
@@ -418,7 +410,7 @@ Lines        : 20.85% ( 44/211 )
 
 ### <a name="how-to-add-static-data-for-unit-tests"></a>Hinzufügen statischer Daten zu Komponententests
 
-Erstellen Sie die Datei `visualData.ts` im Ordner `test` mit folgendem Code:
+Erstellen Sie die Datei *visualData.ts* im Ordner *test*, indem Sie folgenden Code verwenden:
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -458,17 +450,17 @@ export class SampleBarChartDataBuilder extends TestDataViewBuilder {
 }
 ```
 
-Durch die `SampleBarChartDataBuilder`-Klasse wird `TestDataViewBuilder` erweitert und die abstrakte Methode `getDataView` implementiert.
+Die `SampleBarChartDataBuilder`-Klasse erbt von `TestDataViewBuilder` und implementiert die abstrakte Methode `getDataView`.
 
-Wenn Sie Daten in Datenfeldbuckets eingeben, generiert Power BI ein `dataview`-Kategorieobjekt auf Grundlage der Daten.
+Wenn Sie Daten in Datenfeldbuckets eingeben, generiert Power BI ein `dataview`-Kategorieobjekt, das auf den Daten basiert.
 
-![Feldbuckets](./media/fields-buckets.png)
+![Datenfeldbuckets](./media/fields-buckets.png)
 
-In Komponententests stehen keine Power BI-Kernfunktionen für die Reproduktion zur Verfügung. Da Sie die statischen Daten jedoch dem `dataview`-Kategorieobjekt zuordnen müssen, werden Sie von der `TestDataViewBuilder`-Klasse dabei unterstützt.
+In Komponententests stehen keine Power BI-Kernfunktionen zur Verfügung, mit denen sich die Daten kopieren lassen. Sie müssen die statischen Daten jedoch dem `dataview`-Kategorieobjekt zuordnen. Dabei unterstützt Sie die `TestDataViewBuilder`-Klasse.
 
-[Weitere Informationen zu DataViewMapping](https://github.com/Microsoft/PowerBI-visuals/blob/master/Capabilities/DataViewMappings.md)
+Weitere Informationen zur Zuordnung von Datenansichten finden Sie unter [DataViewMappings](https://github.com/Microsoft/PowerBI-visuals/blob/master/Capabilities/DataViewMappings.md).
 
-In der `getDataView`-Methode rufen Sie einfach die `createCategoricalDataViewBuilder`-Methode mit Ihren Daten auf.
+In der `getDataView`-Methode rufen Sie die `createCategoricalDataViewBuilder`-Methode mit Ihren Daten auf.
 
 Die Datei [capabilities.json](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/capabilities.json#L2) des `sampleBarChart`-Visuals enthält das dataRoles-Objekt und das dataViewMapping-Objekt:
 
@@ -549,13 +541,13 @@ Um die gleiche Zuordnung zu generieren, müssen Sie die folgenden Parameter auf 
 ], columnNames)
 ```
 
-Kategorien des `this.valuesCategory`-Arrays:
+Dabei ist `this.valuesCategory` ein Array von Kategorien:
 
 ```ts
 public valuesCategory: string[] = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 ```
 
-Messwerte des `this.valuesMeasure`-Arrays für jede Kategorie. Beispiel:
+`this.valuesMeasure` ist ein Array von Measures für jede Kategorie:
 
 ```ts
 public valuesMeasure: number[] = [742731.43, 162066.43, 283085.78, 300263.49, 376074.57, 814724.34, 570921.34];
@@ -563,9 +555,9 @@ public valuesMeasure: number[] = [742731.43, 162066.43, 283085.78, 300263.49, 37
 
 Jetzt können Sie die `SampleBarChartDataBuilder`-Klasse im Komponententest verwenden.
 
-Die `ValueType`-Klasse wird im `powerbi-visuals-utils-testutils`-Paket definiert. Darüber hinaus wird die `lodash`-Bibliothek von der `createCategoricalDataViewBuilder`-Methode benötigt.
+Die `ValueType`-Klasse ist im Paket „powerbi-visuals-utils-testutils“ definiert. Für die `createCategoricalDataViewBuilder`-Methode ist die `lodash`-Bibliothek erforderlich.
 
-Fügen Sie diese Pakete den Abhängigkeiten hinzu.
+Fügen Sie die folgenden Pakete den Abhängigkeiten hinzu.
 
 In `package.json` im Abschnitt `devDependencies`
 
@@ -582,7 +574,7 @@ npm install
 
 zur Installation der `lodash-es`-Bibliothek
 
-Nun können Sie den Komponententest erneut ausführen. Dabei müssen die die folgende Ausgabe erhalten:
+Nun können Sie den Komponententest erneut ausführen. Folgende Ausgabe muss angezeigt werden:
 
 ```cmd
 > karma start
@@ -603,27 +595,25 @@ Lines        : 52.83% ( 112/212 )
 ================================================================================
 ```
 
-Außerdem muss der Chrome-Browser mit Ihrem Visual gestartet werden.
+Das Visual wird im Chrome-Browser geöffnet und wie folgt dargestellt:
 
 ![Komponententest wird in Chrome gestartet.](./media/karmajs-chrome-ut-runned.png)
 
-Beachten Sie die höhere Code Coverage in der Zusammenfassung. Öffnen Sie `coverage\index.html`, um mehr über die aktuelle Code Coverage zu erfahren.
+Aus der Zusammenfassung geht hervor, dass sich die Code Coverage erhöht hat. Weitere Informationen zur aktuellen Code Coverage finden Sie in der Datei `coverage\index.html`.
 
 ![Code Coverage-Index des Komponententests](./media/code-coverage-index.png)
 
-Oder im Ordner `src`:
+Sie können sich auch die Code Coverage für den Ordner `src` ansehen:
 
-![Code Coverage im src-Ordner](./media/code-coverage-src-folder.png)
+![Code Coverage für Ordner „src“](./media/code-coverage-src-folder.png)
 
-Auf der Ebene einzelner Dateien können Sie den Quellcode überprüfen. Durch die `Coverage`-Hilfsprogramme wird der Zeilenhintergrund rot hervorgehoben, falls der betreffende Code während der Komponententests nicht ausgeführt wurde.
+Sie können sich für jede Datei den Quellcode anzeigen lassen. Die `Coverage`-Hilfsprogramme heben Zeilen rot hervor, wenn bestimmter Code während der Komponententests nicht ausgeführt wird.
 
-![Code Coverage in der Datei „visual.ts“](./media/code-coverage-visual-src.png)
+![Code Coverage der Datei „visual.ts“](./media/code-coverage-visual-src.png)
 
 > [!IMPORTANT]
-> Code Coverage sagt jedoch noch nichts über eine gute Funktionsabdeckung des Visuals aus. Ein einfacher Komponententest ergab in `src\visual.ts` eine Abdeckung von über 96 %.
+> Die Code Coverage sagt nichts darüber aus, ob ein Großteil der Visualfunktionen getestet wurde. Ein einfacher Komponententest führt zu einer Code Coverage von über 96 % in `src\visual.ts`.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Sobald Ihr Visual fertig ist, können Sie es zur Veröffentlichung übermitteln.
-
-[Weitere Informationen zur Veröffentlichung von Visuals in AppSource](../office-store.md)
+Sobald Ihr Visual bereit ist, können Sie es zur Veröffentlichung übermitteln. Weitere Informationen finden Sie unter [Veröffentlichen von benutzerdefinierten Visuals in AppSource](../office-store.md).

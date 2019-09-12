@@ -1,6 +1,6 @@
 ---
-title: Synchronisierung von Slicern
-description: Hinzufügen der Funktion „Slicer synchronisieren“ für Power BI-Visuals
+title: Aktivieren der Funktion „Slicer synchronisieren“ in Power BI-Visuals
+description: In diesem Artikel wird beschrieben, wie die Funktion „Slicer synchronisieren“ zu Power BI-Visuals hinzugefügt werden kann.
 author: EugeneElkin
 ms.author: v-evelk
 manager: rkarlin
@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 9966475e8bcaccad2090451b47ef09ef0a9af125
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 4d7b73a5d06f34fd197464d4444d0e19d6c1c026
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425020"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237210"
 ---
-# <a name="sync-slicers"></a>Slicer synchronisieren
+# <a name="sync-slicers-in-power-bi-visuals"></a>Synchronisieren von Slicern in Power BI-Visuals
 
-Zur Unterstützung von [Slicer synchronisieren](https://docs.microsoft.com/power-bi/desktop-slicers) muss für das benutzerdefinierte Slicervisual API 1.13 oder höher verwendet werden.
+Zur Unterstützung der Funktion [Slicer synchronisieren](https://docs.microsoft.com/power-bi/desktop-slicers) muss die benutzerdefinierte Slicer-Visual API-Version 1.13 oder höher verwenden werden.
 
-Die zweite wichtige Voraussetzung besteht darin, dass die Option in `capabilities.json` aktiviert sein muss (siehe Beispiel unten).
+Außerdem müssen Sie wie im folgenden Code veranschaulicht die Option in der Datei *capabilities.json* aktivieren:
 
 ```json
 {
@@ -34,11 +34,11 @@ Die zweite wichtige Voraussetzung besteht darin, dass die Option in `capabilitie
 }
 ```
 
-Nachdem Sie die Änderungen in `capabilities.json` vorgenommen haben, wird der Bereich „Slicer synchronisieren“ mit Optionen eingeblendet, wenn Sie auf das benutzerdefinierte Slicervisual klicken.
+Nachdem Sie die Datei *capabilities.json* aktualisiert haben, können Sie den Optionsbereich **Slicers synchronisieren** anzeigen, wenn Sie Ihr benutzerdefiniertes Slicer-Visual auswählen.
 
 > [!NOTE]
-> Wenn der Slicer mehr als ein Feld (Kategorie oder Measure) aufweist, wird die Funktion deaktiviert, da mehrere Felder von „Slicer synchronisieren“ nicht unterstützt werden.
+> Die Funktion „Slicer synchronisieren“ unterstützt nicht mehr als ein Feld. Wenn Ihr Slicer mehr als ein Feld (**Kategorie** oder **Measure**) aufweist, ist die Funktion deaktiviert.
 
-![Bereich „Slicer synchronisieren“](./media/sync-slicers-panel.png)
+![Der Bereich „Slicer synchronisieren“](./media/sync-slicers-panel.png)
 
-Im Bereich sehen Sie, dass die Sichtbarkeit und Filterung des Slicers auf mehrere Berichtsseiten angewendet werden können.
+Im Bereich **Slicer synchronisieren** sehen Sie, dass die Sichtbarkeit und Filterung des Slicers auf mehrere Berichtsseiten angewendet werden können.

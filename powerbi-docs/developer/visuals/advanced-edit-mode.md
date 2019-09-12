@@ -1,6 +1,6 @@
 ---
-title: Modus „Erweiterte Bearbeitung“
-description: Power BI-Visuals mit erweiterten UI-Steuerelementen
+title: Erweiterter Bearbeitungsmodus in Power BI-Visuals
+description: In diesem Artikel wird erläutert, wie Sie in Power BI-Visuals erweiterte UI-Steuerelemente festlegen.
 author: shaym83
 ms.author: shaym
 manager: rkarlin
@@ -9,51 +9,46 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 625105aed773bce5cf70932f092faf60ea001c2c
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 54cd9d106132979e5ace71a2617a9e2520363176
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425549"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237341"
 ---
-# <a name="advanced-edit-mode"></a>Modus „Erweiterte Bearbeitung“
+# <a name="advanced-edit-mode-in-power-bi-visuals"></a>Erweiterter Bearbeitungsmodus in Power BI-Visuals
 
-Für Visuals, die erweiterte UI-Steuerelemente erfordern, kann die Unterstützung des Modus „Erweiterte Bearbeitung“ deklariert werden.
-Sofern unterstützt, wird im Berichtsbearbeitungsmodus im Menü des Visuals eine Schaltfläche „`Edit`“ angezeigt.
-Beim Klicken auf die Schaltfläche „`Edit`“ wird EditMode auf `Advanced` festgelegt.
-Das Visual kann anhand des EditMode-Flags bestimmen, ob diese UI-Steuerelemente anzeigt werden sollen.
+Wenn Sie in Ihrem Power BI-Visual erweiterte UI-Steuerelemente benötigen, können Sie den Modus „Erweiterte Bearbeitung“ nutzen. Wenn Sie sich im Bearbeitungsmodus des Berichts befinden, können Sie auf die Schaltfläche **Bearbeiten** klicken, um den Bearbeitungsmodus auf **Erweitert** festzulegen. Das Visual kann anhand des `EditMode`-Flags bestimmen, ob diese UI-Steuerelemente anzeigt werden sollen.
 
-Der Modus „Erweiterte Bearbeitung“ wird vom Visual standardmäßig nicht unterstützt.
-Falls ein anderes Verhalten gewünscht ist, sollten Sie dieses in der Datei „`capabilities.json`“ des Visuals explizit angeben, indem Sie die `advancedEditModeSupport`-Eigenschaft festlegen.
+Der Modus „Erweiterte Bearbeitung“ wird vom Visual standardmäßig nicht unterstützt. Falls ein anderes Verhalten gewünscht ist, können Sie dies explizit in der *capabilities.json*-Datei des Visuals angeben, indem Sie die `advancedEditModeSupport`-Eigenschaft festlegen.
 
 Mögliche Werte:
 
-- 0: NotSupported
+- `0`: NotSupported
 
-- 1: SupportedNoAction
+- `1`: SupportedNoAction
 
-- 2: SupportedInFocus
+- `2`: SupportedInFocus
 
-## <a name="entering-advanced-edit-mode"></a>Aktivieren des Modus „Erweiterte Bearbeitung“
+## <a name="enter-advanced-edit-mode"></a>Wechseln zum Modus „Erweiterte Bearbeitung“
 
-Die Schaltfläche „`Edit`“ wird unter folgenden Voraussetzungen angezeigt:
+In den folgenden Fällen wird die Schaltfläche **Bearbeiten** angezeigt:
 
- 1\. Die `advancedEditModeSupport`-Eigenschaft wurde in „capabilities.json“ entweder auf `SupportedNoAction` oder `SupportedInFocus` festgelegt.
+* Die Eigenschaft `advancedEditModeSupport` ist in der *capabilities.json*-Datei entweder auf `SupportedNoAction` oder auf `SupportedInFocus` festgelegt.
 
- 2\. Das Visual wird im Berichtsbearbeitungsmodus angezeigt.
+* Das Visual wird im Berichtsbearbeitungsmodus angezeigt.
 
-Wenn die `advancedEditModeSupport`-Eigenschaft in „capabilities.json“ fehlt oder auf `NotSupported` festgelegt ist, wird die Schaltfläche „Edit“ ausgeblendet.
+Wenn die Eigenschaft `advancedEditModeSupport` in der *capabilities.json*-Datei fehlt oder auf `NotSupported` festgelegt ist, wird die Schaltfläche **Bearbeiten** nicht angezeigt.
 
 ![Aktivieren des Bearbeitungsmodus](./media/edit-mode.png)
 
-Wenn der Benutzer auf `Edit` klickt, empfängt das Visual einen update()-Aufruf, bei dem EditMode auf `Advanced` festgelegt ist.
-Gemäß dem in den Funktionen festgelegten Wert werden folgende Aktionen ausgeführt:
+Wenn Sie auf **Bearbeiten** klicken, empfängt das Visual einen update()-Aufruf, bei dem EditMode auf `Advanced` festgelegt ist. Abhängig von dem Wert, der in der *capabilities.json*-Datei festgelegt wird, treten die folgenden Aktionen auf:
 
-* `SupportedNoAction`: Keine weitere Aktion durch den Host.
+* `SupportedNoAction`: Es ist keine weitere Aktion durch den Host erforderlich.
 * `SupportedInFocus`: Der Host öffnet das Visual im Fokusmodus.
 
-## <a name="exiting-advanced-edit-mode"></a>Beenden des Modus „Erweiterte Bearbeitung“
+## <a name="exit-advanced-edit-mode"></a>Beenden des Modus „Erweiterte Bearbeitung“
 
-Die Schaltfläche „`Back to report`“ wird unter folgenden Voraussetzungen angezeigt:
+Die Schaltfläche **Zurück zum Bericht** wird im folgenden Fall angezeigt:
 
-1\. Die `advancedEditModeSupport`-Eigenschaft wurde in „capabilities.json“ auf `SupportedInFocus` festgelegt.
+* Die `advancedEditModeSupport`-Eigenschaft in der *capabilities.json*-Datei ist auf `SupportedInFocus` festgelegt.

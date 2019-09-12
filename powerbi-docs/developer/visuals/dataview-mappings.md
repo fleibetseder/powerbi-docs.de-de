@@ -1,6 +1,6 @@
 ---
-title: Zuordnungen von Datenansichten
-description: Power BI – Transformieren von Daten vor der Übergabe an Visuals
+title: Grundlegendes zur Zuordnung von Datenansichten in Power BI-Visuals
+description: In diesem Artikel wird beschrieben, wie Power BI Daten transformiert, bevor diese an Visuals übergeben werden.
 author: asander
 ms.author: asander
 manager: rkarlin
@@ -9,19 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: ff70b2f12921694617a736164484df1326471eea
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 07989183688045f34d78e71cdaad5045d080f436
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425181"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237226"
 ---
-# <a name="data-view-mappings-in-power-bi-visuals"></a>Zuordnungen von Datenansichten in Power BI-Visuals
+# <a name="understand-data-view-mapping-in-power-bi-visuals"></a>Grundlegendes zur Zuordnung von Datenansichten in Power BI-Visuals
 
-`dataViewMappings` beschreibt die Beziehung zwischen den Datenrollen und ermöglicht es Ihnen, bedingte Anforderungen dafür festzulegen.
-Jede der einzelnen `dataMappings` wird in einem eigenen Abschnitt erläutert.
+In diesem Artikel wird erläutert, wie Datenansichten zugeordnet werden. Außerdem wird beschrieben, wie Datenrollen zusammenhängen und wie Sie für sie Bedingungen festlegen. Darüber hinaus werden die einzelnen `dataMappings`-Typen behandelt.
 
-Jede gültige Zuordnung erzeugt eine `DataView`. Derzeit wird jedoch nur die Ausführung einer Abfrage pro Visual unterstützt. Daher erhalten Sie in den meisten Fällen nur eine `DataView`. Allerdings können Sie mehrere Datenzuordnungen mit unterschiedlichen Bedingungen bereitstellen, die folgende Möglichkeiten bieten:
+Jede gültige Zuordnung erzeugt eine Datenansicht. Aktuell wird jedoch nur eine Abfrage pro Visual unterstützt. Üblicherweise ist daher nur eine Datensicht verfügbar. Sie können allerdings mehrere Datenzuordnungen mit unterschiedlichen Bedingungen bereitstellen, die folgende Möglichkeiten bieten:
 
 ```json
 "dataViewMappings": [
@@ -35,10 +34,10 @@ Jede gültige Zuordnung erzeugt eine `DataView`. Derzeit wird jedoch nur die Aus
 ]
 ```
 
-> [!NOTE]
-> Wichtig: Power BI erstellt ausschließlich eine Zuordnung zu einer DataView, wenn die gültige Zuordnung in `dataViewMappings` angegeben ist.
+Power BI erstellt nur dann eine Zuordnung zu einer Datenansicht, wenn die gültige Zuordnung in `dataViewMappings` angegeben ist.
 
-Anders ausgedrückt: Wenn `categorical` in `dataViewMappings` definiert ist, andere Zuordnungen wie `table`, `single` usw. aber nicht, wie im folgenden Beispiel,
+Anders ausgedrückt: `categorical` kann in `dataViewMappings` definiert werden, andere Zuordnungen wie `table` oder `single` jedoch möglicherweise nicht. Beispiel:
+
 ```json
 "dataViewMappings": [
     {
@@ -47,7 +46,8 @@ Anders ausgedrückt: Wenn `categorical` in `dataViewMappings` definiert ist, and
 ]
 ```
 
-erzeugt Power BI eine `DataView` mit einer einzelnen `categorical`-Zuordnung (wobei `table` und andere Zuordnungen `undefined` sind):
+Power BI erzeugt eine Datenansicht mit einer einzelnen `categorical`-Zuordnung. `table` und andere Zuordnungen sind nicht definiert:
+
 ```javascript
 {
     "categorical": {
@@ -58,18 +58,18 @@ erzeugt Power BI eine `DataView` mit einer einzelnen `categorical`-Zuordnung (wo
 }
 ```
 
-## <a name="conditions"></a>„conditions“
+## <a name="conditions"></a>Bedingungen
 
-Beschreibt Bedingungen für eine bestimmte Datenzuordnung. Sie können mehrere Gruppen von Bedingungen bereitstellen. Wenn die Daten mit einer der beschriebenen Bedingungsgruppen übereinstimmen, werden die Daten vom Visual als gültig akzeptiert.
+In diesem Abschnitt werden Bedingungen für eine bestimmte Datenzuordnung beschrieben. Sie können mehrere Gruppen von Bedingungen bereitstellen. Wenn die Daten mit einer der beschriebenen Bedingungsgruppen übereinstimmen, werden die Daten vom Visual als gültig betrachtet.
 
-Derzeit können Sie für jedes Feld einen minimalen und maximalen Wert angeben. Er stellt die Anzahl von Feldern dar, die an die Datenrolle gebunden werden können. 
+Derzeit können Sie für jedes Feld einen minimalen und einen maximalen Wert angeben. Diese Werte stellen die Anzahl von Feldern dar, die an die Datenrolle gebunden werden können. 
 
 > [!NOTE]
 > Wenn eine Datenrolle in der Bedingung ausgelassen wird, kann sie über eine beliebige Anzahl von Feldern verfügen.
 
 ### <a name="example-1"></a>Beispiel 1
 
-Sie können mehrere Felder in jede Datenrolle ziehen. In diesem Beispiel beschränken wir die Kategorie auf ein Datenfeld und das Measure auf zwei Datenfelder.
+Sie können mehrere Felder in jede Datenrolle ziehen. In diesem Beispiel beschränken Sie die Kategorie auf ein Datenfeld und das Measure auf zwei Datenfelder.
 
 ```json
 "conditions": [
@@ -79,7 +79,9 @@ Sie können mehrere Felder in jede Datenrolle ziehen. In diesem Beispiel beschr�
 
 ### <a name="example-2"></a>Beispiel 2
 
-In diesem Beispiel ist eine von zwei Bedingungen erforderlich. Entweder genau ein Kategoriedatenfeld und genau zwei Measures oder genau zwei Kategorien und genau ein Measure.
+In diesem Beispiel ist eine von zwei Bedingungen erforderlich:
+* Genau ein category-Datenfeld und genau zwei Measures
+* Genau zwei Kategorien und genau ein Measure
 
 ```json
 "conditions": [
@@ -90,9 +92,9 @@ In diesem Beispiel ist eine von zwei Bedingungen erforderlich. Entweder genau ei
 
 ## <a name="single-data-mapping"></a>Einzelne Datenzuordnung
 
-Die einzelne Datenzuordnung ist die einfachste Form der Datenzuordnung. Sie akzeptiert ein einzelnes Measurefeld und gibt die Summe zurück. Bei einem numerischen Feld erhalten Sie die Summe. Andernfalls erhalten Sie die Anzahl der eindeutigen Werte.
+Die einzelne Datenzuordnung ist die einfachste Form der Datenzuordnung. Sie akzeptiert ein einzelnes Measurefeld und gibt die Summe zurück. Bei einem numerischen Feld wird die Summe zurückgegeben. Andernfalls wird die Anzahl der eindeutigen Werte ermittelt.
 
-Wenn Sie eine einzelne Datenzuordnung verwenden möchten, müssen Sie den Namen der Datenrolle definieren, die Sie zuordnen möchten. Diese Zuordnung funktioniert nur mit einem einzelnen Measurefeld. Wenn ein zweites Feld zugewiesen ist, wird keine Datenansicht generiert. Daher empfiehlt es sich auch, eine Bedingung zu verwenden, durch die die Daten auf ein einzelnes Feld beschränkt werden.
+Wenn Sie eine einzelne Datenzuordnung verwenden möchten, müssen Sie den Namen der Datenrolle festlegen, die Sie zuordnen möchten. Diese Zuordnung funktioniert nur mit einem einzelnen Measurefeld. Wenn ein zweites Feld zugewiesen ist, wird keine Datenansicht generiert. Es wird daher zusätzlich empfohlen, eine Bedingung bereitzustellen, die die Daten auf ein einzelnes Feld beschränkt.
 
 > [!NOTE]
 > Diese Datenzuordnung kann nicht in Verbindung mit einer anderen Datenzuordnung verwendet werden. Sie soll Daten auf einen einzelnen numerischen Wert reduzieren.
@@ -110,7 +112,7 @@ Wenn Sie eine einzelne Datenzuordnung verwenden möchten, müssen Sie den Namen 
 }  
 ```
 
-Die resultierende Datenansicht enthält immer noch die anderen Typen („table“, „categorical“ usw.), allerdings enthält jede Zuordnung nur den einzelnen Wert. Die bewährte Vorgehensweise besteht darin, nur auf den Wert in „single“ zuzugreifen.
+Die resultierende Datenansicht enthält immer noch die anderen Typen („table“, „categorical“ usw.). Jede Zuordnung enthält jedoch nur den einzelnen Wert. Es empfiehlt sich, nur auf den Wert in „single“ zuzugreifen.
 
 ```JSON
 {
@@ -135,7 +137,7 @@ Die kategorische Datenzuordnung wird verwendet, um eine oder zwei unabhängige D
 
 ### <a name="example-4"></a>Beispiel 4
 
-Hier ist die Definition aus dem vorherigen Beispiel zu DataRoles.
+Die Datenrollen aus dem vorherigen Beispiel sind wie folgt definiert:
 
 ```json
 "dataRole":[
@@ -152,7 +154,7 @@ Hier ist die Definition aus dem vorherigen Beispiel zu DataRoles.
 ]
 ```
 
-Jetzt zur Zuordnung:
+Die Zuordnung sieht so aus:
 
 ```json
 "dataViewMappings": {
@@ -169,14 +171,14 @@ Jetzt zur Zuordnung:
 }
 ```
 
-Es ist ein einfaches Beispiel und bedeutet im Klartext: „Ordne meine `category`-DataRole zu, damit die Daten jedes Felds, das ich in `category` ziehe, `categorical.categories` zugeordnet werden. Ordne auch meine `measure`-DataRole `categorical.values` zu.“
+Dies ist ein einfaches Beispiel. Es kann wie folgt interpretiert werden: Die `category`-Datenrolle wird so zugeordnet, dass für jedes Feld, das in `category` gezogen wird, die Daten `categorical.categories` zugeordnet werden. Außerdem wird die `measure`-Datenrolle `categorical.values` zugeordnet.
 
-* **for...in**: Fügt alle Elemente in dieser Datenrolle in die Datenabfrage ein.
-* **bind...to**: Erzeugt dasselbe Ergebnis wie „for...in“, erwartet jedoch, dass die DataRole über eine Bedingung verfügt, die sie auf ein einzelnes Feld beschränkt.
+* **for...in:** fügt alle Elemente dieser Datenrolle in die Datenabfrage ein.
+* **bind...to:** erzeugt dasselbe Ergebnis wie *for...in*, erwartet jedoch, dass die Datenrolle über eine Bedingung verfügt, die sie auf ein einzelnes Feld beschränkt.
 
 ### <a name="example-5"></a>Beispiel 5
 
-In diesem Beispiel verwenden wir die ersten beiden DataRoles aus dem vorherigen Beispiel und definieren zusätzlich `grouping` und `measure2`.
+Im folgenden Beispiel werden die ersten beiden Datenrollen aus dem vorherigen Beispiel verwendet. Zusätzlich werden `grouping` und `measure2` definiert.
 
 ```json
 "dataRole":[
@@ -203,7 +205,7 @@ In diesem Beispiel verwenden wir die ersten beiden DataRoles aus dem vorherigen 
 ]
 ```
 
-Jetzt zur Zuordnung:
+Die Zuordnung sieht so aus:
 
 ```json
 "dataViewMappings":{
@@ -224,11 +226,11 @@ Jetzt zur Zuordnung:
 }
 ```
 
-Hier liegt der Unterschied in der Zuordnung von „categorical.values“. Hier sollen die `measure`-Datenrolle und `measure2`-Datenrolle zugeordnet und von der `grouping`-Datenrolle gruppiert werden.
+Hier liegt der Unterschied in der Zuordnung von „categorical.values“. Das Beispiel kann wie folgt interpretiert werden: Die Datenrollen `measure` und `measure2` werden so zugeordnet, dass diese von der Datenrolle `grouping` gruppiert werden.
 
 ### <a name="example-6"></a>Beispiel 6
 
-Hier sind die dataRoles.
+Die Datenrollen sehen wie folgt aus:
 
 ```json
 "dataRoles": [
@@ -250,7 +252,7 @@ Hier sind die dataRoles.
 ]
 ```
 
-Hier ist die dataViewMapping.
+Die Zuordnung der Datensicht sieht wie folgt aus:
 
 ```json
 "dataViewMappings": [
@@ -277,7 +279,7 @@ Hier ist die dataViewMapping.
 ]
 ```
 
-Die kategorische `dataview` könnte wie folgt visualisiert werden:
+Die kategorische Datensicht kann beispielsweise wie folgt visualisiert werden:
 
 | Kategorisch |  |  | | | |
 |-----|-----|------|------|------|------|
@@ -286,9 +288,9 @@ Die kategorische `dataview` könnte wie folgt visualisiert werden:
 | USA | | x | x | 125 | 100 |
 | Kanada | | x | 50 | 200 | x |
 | Mexiko | | 300 | x | x | x |
-| Vereinigtes Königreich | | x | x | 75 | x |
+| VEREINIGTES KÖNIGREICH | | x | x | 75 | x |
 
-Power BI erzeugt diese als kategorische Datenansicht. Dabei handelt es sich um die Gruppe von Kategorien.
+Power BI erstellt sie als kategorische Datenansicht. Dabei handelt es sich um die Gruppe von Kategorien.
 
 ```JSON
 {
@@ -310,7 +312,7 @@ Power BI erzeugt diese als kategorische Datenansicht. Dabei handelt es sich um d
 }
 ```
 
-Jede Kategorie wird auch einer Gruppe von Werten zugeordnet. Jeder dieser Werte ist nach einer Reihe gruppiert, d. h. nach Jahren.
+Jede Kategorie wird auch einer Gruppe von Werten zugeordnet. Zur Gruppierung der einzelnen Werte wird eine Reihe verwendet, die auf Jahren basiert.
 
 Beispielsweise belaufen sich die Verkaufszahlen in Kanada im Jahr 2013 auf 0 und im Jahr 2014 auf 50.
 
@@ -367,7 +369,7 @@ Die Tabellendatenansicht ist eine einfache Datenzuordnung. Im Wesentlichen hande
 
 ### <a name="example-7"></a>Beispiel 7
 
-Mit den angegebenen Funktionen
+Folgende Datenrollen und -zuordnungen sind gegeben:
 
 ```json
 "dataRoles": [
@@ -393,19 +395,19 @@ Mit den angegebenen Funktionen
 ]
 ```
 
-könnte die Tabellen-`dataview` wie folgt visualisiert werden:  
+Mit diesen können Sie die Tabellendatenansicht wie folgt visualisieren:  
 
-| Land| Jahr | Verkauf |
+| Land| Jahr | Sales |
 |-----|-----|------|
 | USA | 2016 | 100 |
 | USA | 2015 | 50 |
 | Kanada | 2015 | 200 |
 | Kanada | 2015 | 50 |
 | Mexiko | 2013 | 300 |
-| Vereinigtes Königreich | 2014 | 150 |
+| VEREINIGTES KÖNIGREICH | 2014 | 150 |
 | USA | 2015 | 75 |
 
-Power BI erzeugt diese als Tabellendatenansicht. Sie sollten nicht von einer Reihenfolge ausgehen.
+In Power BI werden die Daten als Tabellendatenansicht angezeigt. Sie sollten nicht davon ausgehen, dass die Daten sortiert wurden.
 
 ```JSON
 {
@@ -452,13 +454,13 @@ Power BI erzeugt diese als Tabellendatenansicht. Sie sollten nicht von einer Rei
 }
 ```
 
-Die Daten können aggregiert werden, indem Sie das gewünschte Feld auswählen und auf „Summe“ klicken.  
+Sie können die Daten aggregieren, indem Sie das gewünschte Feld auswählen und dann „Summe“ auswählen.  
 
 ![Datenaggregation](./media/data-aggregation.png)
 
 ## <a name="matrix-data-mapping"></a>Matrixdatenzuordnung
 
-Die Matrixdatenzuordnung ist mit der Tabellendatenzuordnung vergleichbar, allerdings werden Zeilen hierarchisch dargestellt. Außerdem kann einer der `dataRole`-Werte als Spaltenüberschrift verwendet werden.
+Die Matrixdatenzuordnung ist mit der Tabellendatenzuordnung vergleichbar, allerdings werden Zeilen hierarchisch dargestellt. Alle Datenrollenwerte können als Werte für die Spaltenkopfzeile verwendet werden.
 
 ```json
 {
@@ -510,11 +512,11 @@ Die Matrixdatenzuordnung ist mit der Tabellendatenzuordnung vergleichbar, allerd
 }
 ```
 
-Power BI erzeugt eine hierarchische Datenstruktur. Der Strukturstamm umfasst die Daten aus der ersten Spalte der `Category`-Datenrolle mit untergeordneten Elementen aus der zweiten Spalte der Datenrolle.
+Power BI erzeugt eine hierarchische Datenstruktur. Das Stammelement dieser Struktur enthält die Daten aus der Spalte **Parents** (Eltern) der `Category`-Datenrolle und die Daten aus der Spalte **Children** (Kinder) aus der Datenrollentabelle.
 
 Dataset:
 
-| Übergeordnete Elemente | Untergeordnete Elemente | Zwei Ebenen untergeordnete Elemente | Spalten | Werte |
+| Parents (Eltern) | Children (Kinder) | Grandchildren (Enkelkinder) | Spalten | Werte |
 |-----|-----|------|-------|-------|
 | Parent1 | Child1 | Grand child1 | Col1 | 5 |
 | Parent1 | Child1 | Grand child1 | Col2 | 6 |
@@ -533,11 +535,11 @@ Dataset:
 | Parent2 | Child3 | Grand child8 | Col1 | 10 |
 | Parent2 | Child3 | Grand child8 | Col2 | 13 |
 
-Im Hauptmatrixvisual von Power BI werden die Daten als Tabelle gerendert.
+Das Hauptmatrixvisual von Power BI rendert die Daten als Tabelle.
 
 ![Matrixvisual](./media/matrix-visual-smaple.png)
 
-Das Visual ruft die Datenstruktur wie nachfolgend beschrieben ab (es werden nur die ersten beiden Zeilen dargestellt):
+Die Datenstruktur für das Visual wird wie im folgenden Code definiert. Nur die ersten beiden Tabellenzeilen werden hier aufgeführt:
 
 ```json
 {
@@ -614,9 +616,9 @@ Das Visual ruft die Datenstruktur wie nachfolgend beschrieben ab (es werden nur 
 
 ## <a name="data-reduction-algorithm"></a>Datenverringerungsalgorithmus
 
-Ein `DataReductionAlgorithm` kann angewendet werden, wenn Sie die von der DataView empfangene Datenmenge kontrollieren möchten.
+Sie können einen Datenverringerungsalgorithmus verwenden, um festzulegen, wie viele Daten für die Datenansicht verwendet werden.
 
-Auf alle benutzerdefinierten Visuals wird standardmäßig der DataReductionAlgorithm „top“ angewendet, wobei „count“ auf 1.000 DataPoints festgelegt ist. Das Festlegen der folgenden Eigenschaften in „capabilities.json“ hat dieselben Auswirkungen:
+Auf alle benutzerdefinierten Visuals wird standardmäßig der Datenverringerungsalgorithmus „top“ angewendet, wobei *count* auf 1000 Datenpunkte festgelegt ist. Das Festlegen der folgenden Eigenschaften in *capabilities.json* hat dieselben Auswirkungen:
 
 ```json
 "dataReductionAlgorithm": {
@@ -626,23 +628,23 @@ Auf alle benutzerdefinierten Visuals wird standardmäßig der DataReductionAlgor
 }
 ```
 
-Sie können den Wert für „count“ in einen beliebigen ganzzahligen Wert bis 30.000 ändern. R-basierte benutzerdefinierte Visuals können bis zu 150.000 Zeilen unterstützen.
+Sie können für *count* einen anderen Integerwert bis 30.000 festlegen. R-basierte benutzerdefinierte Visuals können bis zu 150.000 Zeilen unterstützen.
 
 ## <a name="data-reduction-algorithm-types"></a>Typen von Datenverringerungsalgorithmen
 
-Es gibt vier Typen von `DataReductionAlgorithm`-Einstellungen:
+Für den Datenverringerungsalgorithmus sind vier Einstellungstypen verfügbar:
 
-* `top`: Wenn Sie die Daten auf Werte beschränken möchten, die vom Anfang des Datasets abgerufen wurden. Die ersten „count“-Werte werden aus dem Dataset entnommen.
-* `bottom`: Wenn Sie die Daten auf Werte beschränken möchten, die vom Ende des Datasets abgerufen wurden. Die letzten „count“-Werte werden aus dem Dataset entnommen.
-* `sample`: Reduziert das Dataset durch einen einfachen Algorithmus für die Stichprobenentnahme auf eine durch „count“ vorgegebene Anzahl von Elementen. Dies bedeutet, dass das erste und das letzte Element einbezogen werden und dass zwischen einer durch „count“ vorgegebenen Anzahl von Elementen dieselben Intervalle bestehen.
-Wenn Sie beispielsweise über das Dataset [0, 1, 2, ... 100] verfügen und `count: 9` lautet, erhalten Sie die folgenden Werte [0, 10, 20 ... 100]
-* `window`: Lädt jeweils ein Fenster („window“) von Datenpunkten mit der durch „count“ angegebenen Anzahl von Elementen. `top` und `window` sind derzeit gleichwertig. Derzeit wird an der vollständigen Unterstützung einer Windowingeinstellung gearbeitet.
+* `top`: Hiermit beschränken Sie die Daten auf Werte, die vom Anfang des Datasets abgerufen wurden. Die ersten Werte, deren Anzahl durch *count* vorgegeben wird, werden aus dem Dataset abgerufen.
+* `bottom`: Hiermit beschränken Sie die Daten auf Werte, die vom Ende des Datasets abgerufen werden. Die letzten Werte, deren Anzahl durch „count“ vorgegeben wird, werden aus dem Dataset abgerufen.
+* `sample`: Hiermit beschränken Sie das Dataset durch einen einfachen Algorithmus für die Stichprobenentnahme auf eine durch *count* vorgegebene Anzahl von Elementen. Dies bedeutet, dass das erste und das letzte Element einbezogen werden und dass zwischen einer durch *count* vorgegebenen Anzahl von Elementen dieselben Intervalle bestehen.
+Wenn z. B. das Dataset [0, 1, 2, ... 100] vorliegt und *count* 9 beträgt, ergeben sich daraus die Werte [0, 10, 20 ... 100].
+* `window`: Hiermit wird jeweils ein Segment (*window*) mit Datenpunkten mit der durch *count* angegebenen Anzahl von Elementen geladen. `top` und `window` sind derzeit gleichwertig. An der vollständigen Unterstützung der Segmentierungseinstellung wird aktuell gearbeitet.
 
-## <a name="data-reduction-algorithm-usage"></a>Syntax des Datenverringerungsalgorithmus
+## <a name="data-reduction-algorithm-usage"></a>Verwenden des Datenverringerungsalgorithmus
 
-`DataReductionAlgorithm` kann in `dataview`-Zuordnungen des Typs „categorical“, „table“ oder „matrix“ verwendet werden.
+Der Datenverringerungsalgorithmus kann für Datenansichtszuordnungen der Typen „categorical“, „table“ oder „matrix“ genutzt werden.
 
-Für die kategorische Datenzuordnung kann er in `categories` und/oder im group-Abschnitt von `values` festgelegt werden.
+Sie können den Algorithmus in `categories` und/oder im Gruppenabschnitt von `values` für kategorische Datenzuordnungen verwenden.
 
 ### <a name="example-8"></a>Beispiel 8
 
@@ -677,7 +679,7 @@ Für die kategorische Datenzuordnung kann er in `categories` und/oder im group-A
 }
 ```
 
-Der Datenverringerungsalgorithmus kann auf den `rows`-Abschnitt der `dataview`-Tabellenzuordnung angewendet werden.
+Sie können den Datenverringerungsalgorithmus auf den `rows`-Abschnitt der Zuordnungstabelle für Datenansichten anwenden.
 
 ### <a name="example-9"></a>Beispiel 9
 
@@ -700,4 +702,4 @@ Der Datenverringerungsalgorithmus kann auf den `rows`-Abschnitt der `dataview`-T
 ]
 ```
 
-Der Datenverringerungsalgorithmus kann auf den `rows`- und/oder `columns`-Abschnitt der `matrix` `dataview`-Zuordnung angewendet werden.
+Sie können den Datenverringerungsalgorithmus auf die Abschnitte `rows` und `columns` der Zuordnungsmatrix für Datenansichten anwenden.

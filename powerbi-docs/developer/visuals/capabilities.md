@@ -1,6 +1,6 @@
 ---
-title: Funktionen
-description: Funktionen und Eigenschaften von Power BI-Visuals
+title: Funktionen und Eigenschaften von Power BI-Visuals
+description: In diesem Artikel werden die Funktionen und Eigenschaften von Power BI-Visuals beschrieben.
 author: asander
 ms.author: asander
 manager: rkarlin
@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: f6bb4293a44f98f2f8098fb197c7b406b618d211
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 5c32a1679f09e05d134da7f27ffa0cee90d75fab
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425457"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237291"
 ---
-# <a name="power-bi-visual-capabilities"></a>Funktionen von Power BI-Visuals
+# <a name="capabilities-and-properties-of-power-bi-visuals"></a>Funktionen und Eigenschaften von Power BI-Visuals 
 
-Funktionen stellen dem Host Informationen zum Visual zur Verfügung. Alle Eigenschaften im Funktionsmodell sind `optional`.
+Sie verwenden Funktionen, um dem Host Informationen zum Visual zur Verfügung zu stellen. Alle Eigenschaften im Funktionsmodell sind `optional`.
 
-Stammobjekte der Visualfunktionen sind `dataRoles`, `dataViewMappings` usw.
+Die Stammobjekte einer Visualfunktion sind `dataRoles`, `dataViewMappings` usw.
 
 ```json
 {
@@ -34,25 +34,25 @@ Stammobjekte der Visualfunktionen sind `dataRoles`, `dataViewMappings` usw.
 
 ```
 
-## <a name="define-the-data-fields-your-visual-expects---dataroles"></a>Definieren der vom Visual erwarteten Datenfelder – `dataRoles`
+## <a name="define-the-data-fields-that-your-visual-expects-dataroles"></a>Definieren der vom Visual erwarteten Datenfelder: dataRoles
 
-Wir verwenden `dataRoles`, um Felder zu definieren, die an Daten gebunden werden können. Die Funktion verwendet ein Array von `DataViewRole`-Objekten, das alle erforderlichen Eigenschaften definiert.
+Verwenden Sie `dataRoles` zum Definieren von Feldern, die an Daten gebunden werden können. `dataRoles` nimmt ein Array von `DataViewRole`-Objekten an, das alle erforderlichen Eigenschaften definiert.
 
 ### <a name="properties"></a>Eigenschaften
 
 * **name**: Der interne Name dieses Datenfelds (muss eindeutig sein)
-* **kind**: Die Art des Felds –
-    * `Grouping`: Diskrete Werte für das Gruppieren von Measurefeldern
+* **kind**: Die Art des Felds:
+    * `Grouping`: Diskrete Werte, die zum Gruppieren von Measurefeldern verwendet werden
     * `Measure`: Numerische Datenwerte
-    * `GroupingOrMeasure`: Kann als Gruppierung oder Measure verwendet werden
-* **displayName**: Der Name, den der Benutzer im Eigenschaftenbereich sieht.
+    * `GroupingOrMeasure`: Werte, die als Gruppierung oder Measure verwendet werden können
+* **displayName**: Der Name, den der Benutzer im Bereich **Eigenschaften** sieht.
 * **description**: Eine kurze Beschreibung des Felds (optional)
-* **requiredTypes**: Der für diese Datenrolle erforderliche Datentyp Alle nicht übereinstimmenden Werte werden auf „null“ festgelegt (optional).
+* **requiredTypes**: Der für diese Datenrolle erforderliche Datentyp. Werte, die nicht übereinstimmen, werden auf NULL festgelegt (optional)
 * **preferredTypes**: Der bevorzugte Datentyp für diese Datenrolle (optional)
 
 ### <a name="valid-data-types-in-requiredtypes-and-preferredtypes"></a>Gültige Datentypen in requiredTypes und preferredTypes
 
-* **bool**: Ein boolescher Wert
+* **bool**: Boolescher Wert
 * **integer**: Ein Wert in Form einer ganzen Zahl
 * **numeric**: Ein numerischer Wert
 * **text**: Ein Textwert
@@ -157,15 +157,15 @@ Wir verwenden `dataRoles`, um Felder zu definieren, die an Daten gebunden werden
 ]
 ```
 
-Durch die oben genannten Datenrollen würden die folgenden Felder erstellt:
+Die vorangehenden Datenrollen erstellen die Felder, die in der folgenden Abbildung angezeigt werden:
 
-![Anzeigen von Datenrollen](./media/data-role-display.png)
+![Datenrollenfelder](./media/data-role-display.png)
 
-## <a name="define-how-you-want-the-data-mapped---dataviewmappings"></a>Definieren, wie die Daten zugeordnet werden sollen – `dataViewMappings`
+## <a name="define-how-you-want-the-data-mapped-dataviewmappings"></a>Definieren, wie die Daten zugeordnet werden sollen: dataViewMappings
 
-DataViewMapping beschreibt die Beziehung zwischen den Datenrollen und ermöglicht es Ihnen, bedingte Anforderungen dafür festzulegen.
+Die Eigenschaft „DataViewMapping“ beschreibt die Beziehung zwischen den Datenrollen und ermöglicht es Ihnen, bedingte Anforderungen dafür festzulegen.
 
-Die meisten Visuals verfügen über eine einzelne Zuordnung. Sie können aber auch mehrere dataViewMappings angeben. Durch jede gültige Zuordnung wird eine DataView erzeugt. 
+Die meisten Visuals verfügen über eine einzelne Zuordnung. Sie können aber auch mehrere dataViewMappings angeben. Jede gültige Zuordnung erzeugt eine Datenansicht. 
 
 ```json
 "dataViewMappings": [
@@ -179,13 +179,11 @@ Die meisten Visuals verfügen über eine einzelne Zuordnung. Sie können aber au
 ]
 ```
 
-[Weitere Informationen zu DataViewMappings](dataview-mappings.md)
+Weitere Informationen finden Sie unter [Grundlegendes zur Zuordnung von Datenansichten in Power BI-Visuals](dataview-mappings.md).
 
-## <a name="define-property-pane-options---objects"></a>Definieren von Optionen für den Eigenschaftenbereich – `objects`
+## <a name="define-property-pane-options-objects"></a>Definieren von Optionen für den Eigenschaftenbereich: Objekte
 
-Objekte beschreiben anpassbare Eigenschaften, die dem Visual zugeordnet sind.
-Jedes Objekt kann über mehrere Eigenschaften verfügen, und jeder Eigenschaft ist ein Typ zugeordnet.
-Mit Typen wird die Eigenschaft näher bestimmt. Weitere Informationen zu Typen finden Sie unten.
+Objekte beschreiben anpassbare Eigenschaften, die dem Visual zugeordnet sind. Jedes Objekt kann über mehrere Eigenschaften verfügen, und jeder Eigenschaft ist ein Typ zugeordnet. Mit Typen wird die Eigenschaft näher bestimmt. 
 
 ```json
 "objects": {
@@ -196,24 +194,22 @@ Mit Typen wird die Eigenschaft näher bestimmt. Weitere Informationen zu Typen f
 }
 ```
 
-[Weitere Informationen zu Objekten](objects-properties.md)
+Weitere Informationen finden Sie unter [Objekte und Eigenschaften von Power BI-Visuals](objects-properties.md).
 
-## <a name="handle-partial-highlighting---supportshighlight"></a>Behandeln teilweiser Hervorhebungen – `supportsHighlight`
+## <a name="handle-partial-highlighting-supportshighlight"></a>Behandeln teilweiser Hervorhebungen: supportsHighlight
 
-Dieser Wert ist standardmäßig auf „false“ festgelegt. Das bedeutet, dass Ihre „Werte“ automatisch gefiltert werden, wenn auf der Seite etwas ausgewählt wird. Gleichzeitig wird das Visual aktualisiert, damit nur der ausgewählte Wert angezeigt wird. Wenn Sie die vollständigen Daten anzeigen möchten, aber nur die ausgewählten Elemente hervorheben, müssen Sie `supportsHighlight` in „capabilities.json“ auf „true“ festlegen.
+Standardmäßig ist dieser Wert auf `false` festgelegt. Dies bedeutet, dass Ihre Werte automatisch gefiltert werden, wenn etwas auf der Seite ausgewählt ist. Diese automatische Filterung aktualisiert wiederum Ihr Visual, sodass nur der ausgewählte Wert angezeigt wird. Wenn Sie die vollständigen Daten anzeigen möchten, aber nur die ausgewählten Elemente hervorheben, müssen Sie `supportsHighlight` in der *capabilities.json*-Datei auf `true` festlegen.
 
-[Weitere Informationen zur Hervorhebung](highlight.md)
+Weitere Informationen finden Sie unter [Hervorheben von Datenpunkten in Power BI-Visuals](highlight.md).
 
-## <a name="handle-advanced-edit-mode---advancededitmodesupport"></a>Behandeln des Modus „Erweiterte Bearbeitung“ – `advancedEditModeSupport`
+## <a name="handle-advanced-edit-mode-advancededitmodesupport"></a>Behandeln des erweiterten Bearbeitungsmodus: advancedEditModeSupport
 
-Für ein Visual kann deklariert werden, dass es den Modus „Erweiterte Bearbeitung“ unterstützt.
-Ein Visual bietet standardmäßig keine Unterstützung für den Modus „Erweiterte Bearbeitung“, es sei denn, dies wurde in „capabilities.json“ explizit angegeben.
+Für ein Visual kann deklariert werden, dass es den Modus „Erweiterte Bearbeitung“ unterstützt. Ein Visual bietet standardmäßig keine Unterstützung für den Modus „Erweiterte Bearbeitung“, es sei denn, dies wurde explizit in der *capabilities.json*-Datei angegeben.
 
-[Weitere Informationen zu advancedEditModeSupport](advanced-edit-mode.md)
+Weitere Informationen erhalten Sie unter [Modus „Erweiterte Bearbeitung“ in Power BI-Visuals](advanced-edit-mode.md).
 
-## <a name="data-sorting-options-for-visual---sorting"></a>Datensortieroptionen für Visuals – `sorting`
+## <a name="data-sorting-options-for-visual-sorting"></a>Datensortieroptionen für Visuals: Sortierung
 
-Das Sortierverhalten eines Visuals kann in dessen Funktionen definiert werden.
-Die Änderung der Sortierreihenfolge wird von einem Visual standardmäßig nicht unterstützt, es sei denn, dies wurde in „capabilities.json“ explizit angegeben.
+Das Sortierverhalten eines Visuals kann in dessen Funktionen definiert werden. Die Änderung der Sortierreihenfolge wird von einem Visual standardmäßig nicht unterstützt, es sei denn, dies wurde explizit in der *capabilities.json*-Datei angegeben.
 
-[Weitere Informationen zur Sortierung](sort-options.md)
+Weitere Informationen finden Sie unter [Sortieroptionen für Power BI-Visuals](sort-options.md).

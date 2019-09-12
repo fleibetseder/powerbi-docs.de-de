@@ -1,6 +1,6 @@
 ---
-title: Analysebereich
-description: Erstellen dynamischer Bezugslinien in Power BI-Visuals
+title: Der Bereich „Analyse“ in Power BI-Visuals
+description: In diesem Artikel wird beschrieben, wie Sie dynamische Bezugslinien in Power BI-Visuals erstellen können.
 author: Guy-Moses
 ms.author: guymos
 manager: rkarlin
@@ -9,34 +9,36 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: b3b50f8dbcf40a3923e86422e24f8ed020894445
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 208c6cbbd4cd8cdabde039c53aab536ee989bc7d
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425526"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237323"
 ---
-# <a name="analytics-pane-in-power-bi-visuals"></a>Analysebereich in Power BI-Visuals
+# <a name="the-analytics-pane-in-power-bi-visuals"></a>Der Bereich „Analyse“ in Power BI-Visuals
 
-Der **Analysebereich** wurde im November 2018 für [native Visuals eingeführt](https://docs.microsoft.com/power-bi/desktop-analytics-pane).
-Für benutzerdefinierte, mit API 2.5.0 erstellte Visuals können Eigenschaften im **Analysebereich** dargestellt und verwaltet werden.
+Der Bereich **Analyse** wurde im November 2018 für [native Visuals](https://docs.microsoft.com/power-bi/desktop-analytics-pane) eingeführt.
+In diesem Artikel wird erläutert, wie Power BI-Visuals mithilfe von Version 2.5.0 der API ihre Eigenschaften im Bereich **Analyse** präsentieren und verwalten können.
 
-![Analysebereich](./media/visualization-pane-analytics-tab.png)
+![Der Bereich „Analyse“](./media/visualization-pane-analytics-tab.png)
 
-Die Vorgehensweise ähnelt dem [Verwalten von Eigenschaften im Formatbereich](https://docs.microsoft.com/power-bi/developer/custom-visual-develop-tutorial-format-options), da ein Objekt in der Datei „capabilities.json“ des Visuals definiert wird. 
+## <a name="manage-the-analytics-pane"></a>Verwalten des Bereichs „Analyse“
 
-Es gibt folgende Unterschiede:
+Genauso wie Sie Eigenschaften im [Bereich **Format**](https://docs.microsoft.com/power-bi/developer/custom-visual-develop-tutorial-format-options) verwalten können, können Sie auch den Bereich **Analyse** verwalten, indem Sie ein Objekt in der Datei *capabilities.json* des Visuals definieren. 
 
-1. Fügen Sie unter der Definition von `object` ein `objectCategory`-Feld mit dem Wert 2 hinzu.
+Es gelten die folgenden Unterschiede für den Bereich **Analyse**:
+
+* Fügen Sie unter der Objektdefinition ein **objectCategory**-Feld mit dem Wert 2 hinzu.
 
     > [!NOTE]
-    > `objectCategory` ist ein optionales Feld, das mit API 2.5.0 eingeführt wurde. Damit wird der Aspekt des Visuals definiert, der durch das Objekt gesteuert wird (1 = Formatierung, 2 = Analytics). „Formatierung“ wird für Erscheinungsbild, Farben, Achsen, Beschriftungen usw. und „Analytics“ für Vorhersagen, Trendlinien, Bezugslinien, Formen usw. verwendet.
+    > Das optionale Feld `objectCategory` wurde im Rahmen der Version 2.5.0 der API eingeführt. Damit wird der Aspekt des Visuals definiert, der durch das Objekt gesteuert wird (1 = Formatierung, 2 = Analytics). `Formatting` wird für Elemente wie das Erscheinungsbild, Farben, Achsen und Bezeichnungen verwendet. `Analytics` wird für Elemente wie Vorhersagen, Trendlinien, Bezugslinien und Formen verwendet.
     >
-    > Wenn `objectCategory` nicht festgelegt ist, wird der Standardwert „Formatierung“ verwendet.
+    > Wenn der Wert nicht angegeben wird, hat `objectCategory` standardmäßig den Wert „Formatierung“.
 
-2. Das Objekt muss die beiden folgenden Eigenschaften aufweisen:
-    1. `show` mit dem Typ „bool“ und dem Standardwert „false“.
-    2. `displayName` mit dem Typ „text“. Der von Ihnen ausgewählte Standardwert wird zum ursprünglichen Anzeigenamen der Instanz.
+* Das Objekt muss die beiden folgenden Eigenschaften aufweisen:
+    * `show` vom Typ `bool` mit dem Standardwert `false`.
+    * `displayName` vom Typ `text`. Der von Ihnen ausgewählte Standardwert wird zum ursprünglichen Anzeigenamen der Instanz.
 
 ```json
 {
@@ -63,13 +65,13 @@ Es gibt folgende Unterschiede:
 }
 ```
 
-Alle anderen Eigenschaften können auf dieselbe Weise wie für Format-Objekte definiert werden. Die Objektenumeration erfolgt auf exakt die gleiche Weise wie im **Formatbereich**.
+Sie können andere Eigenschaften auf die gleiche Weise wie bei **Formatobjekten** definieren. Außerdem können Sie Objekte genauso wie im Bereich **Format** auflisten.
 
-***Bekannte Einschränkungen und Probleme***
+## <a name="known-limitations-and-issues-of-the-analytics-pane"></a>Bekannte Einschränkungen und Probleme des Bereichs „Analyse“
 
-  1. Bisher gibt es keine Unterstützung für mehrere Instanzen. Objekte können keinen anderen [Selektor](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/#selector) als statisch haben (d. h. Selektor: NULL), und benutzerdefinierte Visuals können nicht mehrere benutzerdefinierte Instanzen einer Karte aufweisen.
-  2. Eigenschaften des Typs `integer` werden nicht korrekt angezeigt. Verwenden Sie als Problemumgehung den Typ `numeric`.
+* Die Verwendung von mehreren Instanzen werden im Bereich **Analyse** noch nicht unterstützt. Objekte können nur den [Selektor](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/#selector) „static“ (d. h. Selektor: NULL) haben, und Power BI-Visuals können nicht mehrere benutzerdefinierte Instanzen einer Karte aufweisen.
+* Eigenschaften des Typs `integer` werden nicht korrekt angezeigt. Verwenden Sie als Problemumgehung den Typ `numeric`.
 
 > [!NOTE]
-> Verwenden Sie den Analysebereich nur für Objekte, durch die neue Informationen hinzugefügt bzw. die dargestellten Informationen in einem neuen Blickwickel betrachtet werden. Durch dynamische Bezugslinien werden beispielsweise wichtige Trends veranschaulicht.
-> Alle Optionen, die das Erscheinungsbild des Visuals bestimmen (d. h. Formatierungen), sollten im Formatierungsbereich verbleiben.
+> * Verwenden Sie den Bereich **Analyse** nur für Objekte, durch die neue Informationen hinzugefügt bzw. die dargestellten Informationen in einem neuen Blickwickel betrachtet werden (z. B. dynamische Bezugslinien, die wichtige Trends darstellen).
+> * Alle Optionen, die das Erscheinungsbild des Visuals bestimmen (d. h. Formatierungen), sollten auf den Bereich **Formatierung** beschränkt werden.
