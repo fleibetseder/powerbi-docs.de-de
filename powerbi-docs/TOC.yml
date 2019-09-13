@@ -283,6 +283,8 @@
               href: service-add-hyperlink-to-text-box.md
             - name: Links in Tabellen
               href: power-bi-hyperlinks-in-tables.md
+            - name: Benutzerdefinierte Zeichenfolgen
+              href: desktop-custom-format-strings.md
             - name: Bedingte Tabellenformatierung
               href: desktop-conditional-table-formatting.md
             - name: Formatierung von Titeln auf Basis bedingter Ausdrücke
@@ -675,6 +677,8 @@
               href: service-dataflows-linked-entities.md
             - name: Verwenden der inkrementellen Aktualisierung mit Dataflows
               href: service-dataflows-incremental-refresh.md
+            - name: Bewährte Methoden für Dataflows
+              href: service-dataflows-best-practices.md
             - name: Entwicklerressourcen für Dataflows
               href: service-dataflows-developer-resources.md
             - name: Herstellen einer Verbindung mit Dataflows in Power BI Desktop
@@ -715,6 +719,8 @@
               href: service-template-apps-install-distribute.md
             - name: 'Aktualisieren, Löschen und Extrahieren einer Power BI-Vorlagen-App'
               href: service-template-update-delete-extract.md
+            - name: Beispiele für Vorlagen-Apps
+              href: service-template-apps-samples.md
         - name: Problembehandlung
           items:
             - name: Sie haben Ihr Kennwort für Power BI vergessen?
