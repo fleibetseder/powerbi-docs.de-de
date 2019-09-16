@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/16/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: d18e61343496eef63dee29afae0a9e95fb382848
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: 86fc2f8d13cdcd006c01dfff0114c13cc78f5e65
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66498005"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987020"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Veröffentlichen im Web aus Power BI
 
@@ -119,7 +119,7 @@ Nachdem Sie einen **Im Web veröffentlichen**-Einbindungscode erstellt und getei
 
 Datenaktualisierungen werden in Ihrem eingebetteten Bericht oder in Ihrer Virtualisierung automatisch wiedergegeben. Es kann ungefähr eine Stunde dauern, bis aktualisierte Daten über Einbindungscodes widergespiegelt werden. Um die automatische Aktualisierung zu deaktivieren, wählen Sie im Zeitplan für das vom Bericht verwendete Dataset **nicht aktualisieren** aus.  
 
-## <a name="custom-visuals"></a>Benutzerdefinierte visuelle Elemente
+## <a name="custom-visuals"></a>Benutzerdefinierte Visuals
 
 Benutzerdefinierte visuelle Elemente werden von **Im Web veröffentlichen**unterstützt. Wenn Sie **Im Web veröffentlichen** verwenden, brauchen Benutzer, mit denen Sie Ihr veröffentlichtes Visual teilen, benutzerdefinierte Visuals nicht zu aktivieren, um den Bericht anzuzeigen.
 
@@ -137,7 +137,7 @@ Benutzerdefinierte visuelle Elemente werden von **Im Web veröffentlichen**unter
 - Berichte, die DAX-Measures auf Berichtebene enthalten
 - SSO-Datenabfragemodelle
 - [Geschützte vertrauliche oder proprietäre Informationen](#publish-to-web-from-power-bi)
-- Die Funktion zur automatischen Authentifizierung, die von der Option **Einbetten** unterstützt wird, kann nicht mit der Power BI-JavaScript-API verwendet werden. Verwenden Sie zum Einbetten mit der Power BI-JavaScript-API die Methode [Benutzer ist Besitzer der Daten](developer/embed-sample-for-your-organization.md). Weitere Informationen zu [Benutzer ist Besitzer der Daten](developer/embed-sample-for-your-organization.md)
+- Die Funktion zur automatischen Authentifizierung, die von der Option **Einbetten** unterstützt wird, kann nicht mit der Power BI-JavaScript-API verwendet werden. Verwenden Sie zum Einbetten mit der Power BI-JavaScript-API die Methode [Benutzer ist Besitzer der Daten](developer/embed-sample-for-your-organization.md).
 
 ## <a name="tenant-setting"></a>Mandanteneinstellung
 

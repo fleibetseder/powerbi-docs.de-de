@@ -1,20 +1,20 @@
 ---
-title: Was ist ein Sternschema, und warum benötige ich eines für Power BI?
+title: Informationen zum Sternschema und der Wichtigkeit für Power BI
 description: Informationen zum Sternschema und der Relevanz für die Entwicklung von Power BI-Datenmodellen, die für Leistung und Benutzerfreundlichkeit optimiert sind.
-author: guyinacube
+author: peter-myers
 manager: asaxton
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/05/2019
+ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: bb8c0582e08d8e1e05c78c30df0b59bd89aafbd0
-ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
+ms.openlocfilehash: f44c83613f874aec84a389ac5034ebde193467c2
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69985800"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70840605"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Informationen zum Sternschema und der Wichtigkeit für Power BI
 

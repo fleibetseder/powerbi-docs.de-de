@@ -11,12 +11,12 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/13/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 2363b9da3ac46ce9fd49f19a00950a4a3cf23502
-ms.sourcegitcommit: 30ee81f8c54fd7e4d47d7e3ffcf0e6c3bb68f6c2
+ms.openlocfilehash: 96bf1a8d95f26014be09a32c1e83fb2af90f9fc0
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "67468093"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70986985"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Azure SQL-Datenbank mit DirectQuery
 
@@ -27,7 +27,7 @@ Durch DirectQuery werden Abfragen zurück zur Azure SQL-Datenbank gesendet, wäh
 **Hinweise:**
 
 * Geben Sie beim Herstellen der Verbindung den vollqualifizierten Servernamen an (weitere Informationen folgen später im Abschnitt).
-* Stellen Sie sicher, dass die Firewallregeln für die Datenbank so konfiguriert sind, dass sie den „[Zugriff auf Azure-Dienste erlauben](https://msdn.microsoft.com/library/azure/ee621782.aspx)“.
+* Stellen Sie sicher, dass die Firewallregeln für die Datenbank so konfiguriert sind, dass sie den „[Zugriff auf Azure-Dienste erlauben](https://docs.microsoft.com/azure/sql-database/sql-database-networkaccess-overview#allow-azure-services)“.
 * Durch jede Aktion, z. B. beim Auswählen einer Spalte oder dem Hinzufügen eines Filters, wird eine Abfrage zurück an die Datenbank gesendet.
 * Die Kacheln werden stündlich aktualisiert (die Aktualisierung muss nicht geplant werden). Beim Herstellen einer Verbindung können Sie unter „Erweiterte Einstellungen“ festlegen, wie oft aktualisiert werden soll.
 * Q&A steht für DirectQuery-Datasets nicht zur Verfügung.

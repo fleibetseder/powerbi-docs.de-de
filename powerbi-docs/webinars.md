@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 5a5dca5c3fb4b3b375d3fbb603703e8aaaf91c6c
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: e02d50a7990eb90405d6a864fe294fee8e946e10
+ms.sourcegitcommit: ba085b248c54e8fb1fd8eb2bb23a814e3fdd7ff6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023436"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70936265"
 ---
 # <a name="power-bi-webinars"></a>Power BI-Webinare
 
@@ -22,9 +22,7 @@ Registrieren Sie sich für unsere nächsten Livewebinare, oder sehen Sie sich un
 
 ## <a name="upcoming-webinars"></a>Kommende Webinare
 
-**Verwenden von Power BI mit Dynamics 365 Finance and Operations**
-<br>von Kevin Horlock
-<br>[Für die Übertragung am 11. September registrieren](https://info.microsoft.com/ww-landing-Using-Power-BI-with-Dynamics-365-Finance-and-Operations.html?LCID=EN-US)
+Es sind noch keine Webinare geplant. Besuchen Sie diese Website regelmäßig, um sich über neue Veranstaltungen zu informieren.
 
 >[Bevorstehende Webinare der Power BI-Community](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
@@ -51,6 +49,10 @@ Machen Sie sich mithilfe dieser beliebten On-Demand-Webinare mit Power BI vertra
 **Strengthen Your Data Modeling Skills with Power BI** (Stärken Ihrer Datenmodellierungsfähigkeiten mit Power BI)
 <br>von Kasper de Jonge
 <br>[Jetzt registrieren und ansehen](https://info.microsoft.com/Strengthen-Your-Data-Modeling-Skills-with-PowerBI-Registration.html?Is=Website)
+
+**Verwenden von Power BI mit Dynamics 365 Finance and Operations**
+<br>von Kevin Horlock
+<br>[Jetzt registrieren und ansehen](https://info.microsoft.com/ww-landing-Using-Power-BI-with-Dynamics-365-Finance-and-Operations.html?LCID=EN-US)
 
 **Microsoft Runs on Power BI – Financial Planning & Analysis Made Easy** (Microsoft und Power BI: Finanzielle Planung und Analyse leichtgemacht)
 <br>von Cory Hrncirik und Miguel Martinez

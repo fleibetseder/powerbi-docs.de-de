@@ -283,6 +283,8 @@
               href: service-add-hyperlink-to-text-box.md
             - name: Links in Tabellen
               href: power-bi-hyperlinks-in-tables.md
+            - name: Anzeigen von Bildern in Tabellen
+              href: power-bi-images-tables.md
             - name: Benutzerdefinierte Zeichenfolgen
               href: desktop-custom-format-strings.md
             - name: Bedingte Tabellenformatierung
@@ -569,8 +571,6 @@
               href: service-create-dashboard-mobile-phone-view.md
             - name: Erstellen eines QR-Codes für eine Kachel
               href: service-create-qr-code-for-tile.md
-            - name: Hinzufügen eines Bilds zu einem Dashboard
-              href: service-dashboard-add-image.md
             - name: Datenklassifizierung für Dashboards
               href: service-data-classification.md
             - name: Dashboarddesigns
@@ -677,8 +677,6 @@
               href: service-dataflows-linked-entities.md
             - name: Verwenden der inkrementellen Aktualisierung mit Dataflows
               href: service-dataflows-incremental-refresh.md
-            - name: Bewährte Methoden für Dataflows
-              href: service-dataflows-best-practices.md
             - name: Entwicklerressourcen für Dataflows
               href: service-dataflows-developer-resources.md
             - name: Herstellen einer Verbindung mit Dataflows in Power BI Desktop
@@ -1432,6 +1430,8 @@
           href: service-admin-power-bi-security.md
 - name: Leitfaden
   items:
+    - name: Bewährte Methoden für Dataflows
+      href: service-dataflows-best-practices.md
     - name: Was ist ein Sternschema?
       href: guidance/star-schema.md
     - name: Reduzieren der Größe des Datenmodells

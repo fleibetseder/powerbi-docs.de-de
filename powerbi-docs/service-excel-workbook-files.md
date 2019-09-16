@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 54108b8d4fd02730cb1aa027d2fefbad2bbfd9fb
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: a98ccf3477a6e8e996efb0b8cb1ccf2c6728c594
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513124"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70840966"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Abrufen von Daten aus Excel-Arbeitsmappendateien
 ![](media/service-excel-workbook-files/excel_icon.png)
@@ -77,8 +77,6 @@ In Excel 2016 können Sie auch „Veröffentlichen > Exportieren“ verwenden. B
 Wenn Sie **Verknüpfen** wählen, wird die Arbeitsmappe in Power BI genauso angezeigt wie in Excel Online. Allerdings haben Sie im Gegensatz zu Excel Online einige hervorragende Funktionen zur Hand, mit denen Sie Elemente aus Arbeitsblättern direkt an Ihre Dashboards anheften können.
 
 Sie können Ihre Arbeitsmappe in Power BI nicht bearbeiten. Wenn Sie aber Änderungen vornehmen müssen, können Sie auf „Bearbeiten“ klicken und die Arbeitsmappe in Excel online oder lokal bearbeiten. Alle vorgenommenen Änderungen werden in der Arbeitsmappe in OneDrive gespeichert.
-
-Wenn Sie sich für diese Methode entscheiden, erstellt Power BI für die verbundene Arbeitsmappe ein entsprechendes Dataset. Bei Bedarf können Sie dieses Dataset verwenden, um einen Power BI-Bericht zu erstellen. Ihre Arbeitsmappe wird auch im Navigationsbereich Ihres Power BI-Arbeitsbereichs unter „Berichte“ angezeigt. Verknüpfte Arbeitsmappen verfügen über ein besonderes Excel-Symbol.
 
 Wählen Sie diese Option, wenn Ihre Daten ausschließlich in Arbeitsblättern angelegt sind oder Sie Bereiche, PivotTables und Diagramme an Dashboards anheften möchten.
 
