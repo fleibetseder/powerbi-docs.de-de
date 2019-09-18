@@ -12,10 +12,10 @@ ms.date: 06/26/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: 4f6dc7167d64385182ecbd448b6c400fa7f829df
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "67408190"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Tipps zum Stellen von Fragen mit Power BI Q&A
@@ -29,7 +29,7 @@ In der nachstehenden Liste wird Präsens verwendet, jedoch werden in den meisten
 >  
 
 
-|Kategorie  |Schlüsselwörter  |Column3  |
+|Category  |Schlüsselwörter  |Column3  |
 |---------|---------|---------|
 |**Aggregate**     | total, sum, amount, number, quantity, count, average, most, least, fewest, largest, smallest, highest, biggest, maximum, max, greatest, lowest, littlest, minimum, min          |
 |     |         |         
