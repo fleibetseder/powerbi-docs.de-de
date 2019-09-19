@@ -1,6 +1,6 @@
 - name: Power BI für Verbraucher
   href: power-bi-consumer-landing.md
-- name: Power BI-Dienst für Kunden
+- name: Der Power BI-Dienst für Verbraucher
   items:
     - name: Übersicht
       items:
@@ -8,6 +8,8 @@
           href: end-user-consumer.md
         - name: Grundkonzepte und Terminologie für Power BI-Kunden
           href: end-user-basic-concepts.md
+        - name: Suchen von Inhalten über die Startseite
+          href: end-user-home.md
         - name: Navigieren durch das neue Design
           href: ../service-new-look.md
     - name: Schnellstartanleitungen
