@@ -1347,13 +1347,21 @@
               href: service-gateway-mashup-on-premises-cloud.md
         - name: Einmaliges Anmelden aktivieren (SSO)
           items:
-            - name: 'Einmaliges Anmelden (SSO): Übersicht'
+            - name: Übersicht über Single Sign-On
               href: service-gateway-sso-overview.md
-            - name: 'Einmaliges Anmelden (SSO): Kerberos'
-              href: service-gateway-sso-kerberos.md
-            - name: 'Einmaliges Anmelden (SSO): Kerberos (ressourcenbasiert)'
-              href: service-gateway-sso-kerberos-resource.md
-            - name: 'Einmaliges Anmelden (SSO): SAML'
+            - name: Kerberos-basiertes Single Sign-On
+              items:
+                - name: Konfigurieren von Kerberos-basiertem Single Sign-On
+                  href: service-gateway-sso-kerberos.md
+                - name: Datenquellenspezifische Konfiguration
+                  items:
+                    - name: SAP HANA
+                      href: service-gateway-sso-kerberos-sap-hana.md
+                    - name: SAP BW – „sapcrypto.dll“ (Common Crypto-Bibliothek)
+                      href: service-gateway-sso-kerberos-sap-bw-commoncryptolib.md
+                    - name: SAP BW – „gx64krb5.dll“ und „gsskrb5.dll“
+                      href: service-gateway-sso-kerberos-sap-bw-gx64krb.md
+            - name: SAML-basiertes Single Sign-On
               href: service-gateway-sso-saml.md
         - name: Problembehandlung für das Gateway
           href: service-gateway-onprem-tshoot.md
