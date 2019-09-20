@@ -269,6 +269,8 @@
               href: desktop-inline-hierarchy-labels.md
             - name: Verwenden der Funktion „Datenschnitt für numerischen Bereich“
               href: desktop-slicer-numeric-range.md
+            - name: Verwenden eines relativen Datenschnitts mit Datum
+              href: desktop-slicer-filter-date-range.md
             - name: Erstellen eines Slicers mit der Möglichkeit zur Größenanpassung
               href: power-bi-slicer-filter-responsive.md
             - name: Erstellen benutzerdefinierter Antwortkarten für Cortana
