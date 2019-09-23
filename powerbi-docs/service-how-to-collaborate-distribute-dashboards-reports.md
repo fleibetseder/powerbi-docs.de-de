@@ -8,14 +8,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/07/2019
+ms.date: 09/06/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 00574228fbfa8954b8cfb9cb026a9230eb1bd73e
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: 31310900b91924e639ce10a13aef3da996598502
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816543"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841749"
 ---
 # <a name="ways-to-share-your-work-in-power-bi"></a>Freigeben Ihrer Arbeit in Power BI
 
@@ -31,7 +31,7 @@ Sie haben Dashboards und Berichte erstellt. Zusätzlich kann es der Fall sein, d
 
 Unabhängig von der ausgewählten Option benötigen Sie zum Freigeben von Inhalten eine [Power BI Pro-Lizenz](service-features-license-type.md), oder es muss sich um Inhalte in einer [Premium-Kapazität](service-premium-what-is.md) handeln. Die Lizenzanforderungen für die Kollegen, die Ihre Inhalte anzeigen, sind von der ausgewählten Option abhängig. In den folgenden Abschnitten werden die Einzelheiten erläutert. 
 
-![Apps im Power BI-Dienst](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-home-blog.png)
+![Apps im Power BI-Dienst](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-new-look.png)
 
 *Apps im Power BI-Dienst*
 
@@ -41,7 +41,7 @@ Bei der Arbeit im Team ist der Zugriff auf die gleichen Dokumente erforderlich, 
 
 Arbeitsbereiche enthalten Rollen, die bestimmen, welche Berechtigungen Ihre Kollegen haben. Sie können über diese Rollen festlegen, wer den gesamten Arbeitsbereich verwalten oder die Inhalte bearbeiten und verteilen kann.
 
-![Arbeitsbereiche](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-workspaces.png)
+![Arbeitsbereiche](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-workspace.png)
 
 Sie können Inhalte unter „Mein Arbeitsbereich“ speichern und diese von dort aus teilen. Arbeitsbereiche sind für die Zusammenarbeit jedoch besser als „Mein Arbeitsbereich“ geeignet, da sie den gemeinsamen Besitz von Inhalten ermöglichen. Sie und Ihr gesamtes Team können Änderungen ganz unkompliziert vornehmen oder anderen Zugriff erteilen. „Mein Arbeitsbereich“ ist am besten für einmalige oder persönliche Inhalte von einzelnen Benutzern geeignet.
 
@@ -55,21 +55,23 @@ Die Arbeitsbereiche in Power BI wurden überarbeitet. Unter [Create the new work
 
 ## <a name="distribute-insights-in-an-app"></a>Verteilen von Informationen in einer App
 
-Nehmen Sie an, dass Sie Ihr Dashboard an eine größere Gruppe von Benutzern in Ihrer Organisation verteilen möchten. Sie und Ihre Kollegen haben einen *Arbeitsbereich* erstellt und anschließend Dashboards, Berichte und Datasets im Arbeitsbereich erstellt und verfeinert. Jetzt wählen Sie die gewünschten Dashboards und Berichte aus, und veröffentlichen Sie diese als App für eine Gruppe oder Ihre gesamte Organisation.
+Nehmen Sie an, dass Sie Ihr Dashboard an eine größere Gruppe von Benutzern in Ihrer Organisation verteilen möchten. Sie und Ihre Kollegen haben einen *Arbeitsbereich* erstellt und anschließend Dashboards, Berichte und Datasets im Arbeitsbereich erstellt und verfeinert. Jetzt wählen Sie die gewünschten Dashboards und Berichte aus und veröffentlichen diese als App für eine Gruppe oder Ihre gesamte Organisation.
 
-![Symbol „App veröffentlichen“](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
+![Symbol „App veröffentlichen“](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-publish-app.png)
 
-Apps lassen sich im Power BI-Dienst ([https://powerbi.com](https://powerbi.com)) einfach finden und installieren. Sie können geschäftlichen Benutzern einen direkten Link zu der App senden, oder die Benutzer suchen sie in AppSource. Wenn der Power BI-Administrator Ihnen die entsprechenden Berechtigungen gewährt, können Sie eine App automatisch in den Power BI-Konten Ihrer Kollegen installieren lassen. Hier finden Sie [weitere Informationen zum Veröffentlichen von Apps](service-create-distribute-apps.md).
+Apps lassen sich im Power BI-Dienst ([https://app.powerbi.com](https://app.powerbi.com)) einfach finden und installieren. Sie können geschäftlichen Benutzern einen direkten Link zu der App senden, oder die Benutzer suchen sie in AppSource. Wenn der Power BI-Administrator Ihnen die entsprechenden Berechtigungen gewährt, können Sie eine App automatisch in den Power BI-Konten Ihrer Kollegen installieren lassen. Hier finden Sie [weitere Informationen zum Veröffentlichen von Apps](service-create-distribute-apps.md).
 
 Nachdem die Benutzer eine App installiert haben, können sie diese in ihren Browsern oder mobilen Geräten anzeigen.
 
 Damit die Benutzer Ihre App anzeigen können, müssen sie eine Power BI Pro-Lizenz haben, oder die App muss in einer Power BI-Premium-Kapazität gespeichert sein. Details finden Sie unter [Was ist Power BI Premium?](service-premium-what-is.md).
 
-Sie können Apps auch für Benutzer außerhalb Ihrer Organisation veröffentlichen. Diese können den App-Inhalt anzeigen und damit interagieren, ihn jedoch nicht freigeben. Sie können nun *Vorlagen-Apps* erstellen und diese für jeden Power BI-Kunden bereitstellen.
+Sie können Apps auch für Personen außerhalb Ihrer Organisation veröffentlichen. Diese können den App-Inhalt anzeigen und damit interagieren, ihn jedoch nicht freigeben. Sie können nun *Vorlagen-Apps* erstellen und diese für jeden Power BI-Kunden bereitstellen.
 
 ## <a name="share-a-dataset"></a>Freigeben eines Datasets
 
 Ihnen ist bestimmt bewusst, dass manche Personen hochwertigere, besser gestaltete Datenmodelle als andere in ihren Berichten erstellen. Zählen Sie zu diesen Personen? Falls ja, kann Ihre gesamte Organisation davon profitieren, Ihre Datenmodelle zu verwenden. Hierfür können Sie *Datasets freigeben*. Wenn Sie einen Bericht mit einem Datenmodell erstellen, das alle Benutzer in Ihrer Organisation verwenden können sollen, können Sie den Bericht im Power BI-Dienst speichern und den entsprechenden Personen die Nutzungsberechtigung erteilen. Diese können dann Ihr Dataset als Grundlage für eigene Berichte verwenden. Dadurch basieren alle Berichte auf denselben Daten, sodass alle Benutzer einheitliche Ergebnisse erhalten.
+
+![Suchen eines freigegebenen Datasets](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-shared-datasets.png)
 
 Weitere Informationen zu diesem Thema finden Sie unter [Erstellen und Freigeben von Datasets](service-datasets-across-workspaces.md).
 
@@ -77,9 +79,9 @@ Weitere Informationen zu diesem Thema finden Sie unter [Erstellen und Freigeben 
 
 Angenommen, Sie haben ein Dashboard und einen Bericht in Ihrem eigenen „Mein Arbeitsbereich“ oder in einem Arbeitsbereich fertig gestellt, und Sie möchten einigen anderen Personen Zugriff auf das Dashboard gewähren. Dazu können Sie es *freigeben*. 
 
-![Symbol „Freigeben“](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-in-situ.png)
+![Freigeben eines Berichts](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-report.png)
 
-Zum Freigeben von Inhalten müssen diese in einem Arbeitsbereich in einer [Premium-Kapazität](service-premium-what-is.md) enthalten sein, oder Sie und die Empfänger der Inhalte benötigen eine Power BI Pro-Lizenz. Wenn Sie ein Dashboard oder einen Bericht freigeben, können Empfänger das Dashboard anzeigen und mit ihm interagieren, es aber nicht bearbeiten. Sie sehen die gleichen Daten wie im Dashboard und in den Berichten, es sei denn, auf das zugrundeliegende Dataset ist die Sicherheit auf Zeilenebene (RLS) angewendet. Die Kollegen, für die Sie Inhalte freigeben, können diese für ihre Kollegen freigeben, wenn Sie dies zulassen. 
+Zum Freigeben Ihrer Inhalte benötigen Sie und die Empfänger der Inhalte eine Power BI Pro-Lizenz, oder die Inhalte müssen sich in einem Arbeitsbereich in einer [Premium-Kapazität](service-premium-what-is.md) befinden. Wenn Sie ein Dashboard oder einen Bericht freigeben, können Empfänger das Dashboard anzeigen und mit ihm interagieren, es aber nicht bearbeiten. Sie sehen die gleichen Daten wie im Dashboard und in den Berichten, es sei denn, auf das zugrundeliegende Dataset ist die Sicherheit auf Zeilenebene (RLS) angewendet. Die Kollegen, für die Sie Inhalte freigeben, können diese für ihre Kollegen freigeben, wenn Sie dies zulassen. 
 
 Sie können das Dashboard auch für Personen außerhalb Ihrer Organisation freigeben. Diese können das Dashboard oder den Bericht anzeigen und auch damit interagieren, es jedoch nicht freigeben. 
 
