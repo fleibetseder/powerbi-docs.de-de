@@ -13,10 +13,10 @@ ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
 ms.openlocfilehash: 4bb69c8ead92bf69671107fdd5bfa0eef0ae5c0d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "61054866"
 ---
 # <a name="recent-content-in-power-bi-service"></a>**Zuletzt verwendete** Inhalte im Power BI-Dienst
@@ -37,7 +37,7 @@ Wenn mehr als fünf zuletzt besuchte Elemente vorhanden sind, wählen Sie **Alle
 
 ![Alle zuletzt verwendeten Inhalte anzeigen](./media/end-user-recent/power-bi-recent-list.png)
 
-Von hier aus können Sie mit interagieren den Inhalt wie auf den einzelnen [ **Dashboards**](end-user-dashboards.md), [ **Berichte**](end-user-reports.md), und  **Arbeitsmappen** Registerkarten, und klicken Sie auf die apps <!--[**Apps**](end-user-apps.md)--> der Bildschirm.
+Von hier aus können Sie mit dem Inhalt wie auf den einzelnen Registerkarten [**Dashboards**](end-user-dashboards.md), [**Berichte**](end-user-reports.md) und **Arbeitsmappen** sowie auf dem <!--[**Apps**](end-user-apps.md)--> Bildschirm „Apps“ interagieren.
 
 ## <a name="next-steps"></a>Nächste Schritte
 <!--[Power BI service Apps](end-user-apps.md)-->

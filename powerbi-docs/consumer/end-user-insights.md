@@ -13,10 +13,10 @@ ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: fcfb16de53b4e6c67b7c46fec87ab614d07cb9b1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "61049247"
 ---
 # <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Anzeigen von Einblicken auf Dashboardkacheldaten mit Power BI
@@ -59,7 +59,7 @@ Um zum ursprünglichen Bereich für Einblicke zurückzukehren, wählen Sie in de
 
 ## <a name="considerations-and-troubleshooting"></a>Zu beachtende Aspekte und Problembehandlung
 - **Einblicke anzeigen** funktioniert nicht mit DirectQuery. Das Feature kann nur für in Power BI hochgeladene Daten verwendet werden.
-- **Einblicke anzeigen** funktioniert nicht mit allen Arten von Dashboardkacheln. Beispielsweise ist es nicht für benutzerdefinierte visuelle Elemente verfügbar.<!--[custom visuals](end-user-custom-visuals.md)-->
+- **Einblicke anzeigen** funktioniert nicht mit allen Arten von Dashboardkacheln. Beispielsweise ist es nicht für benutzerdefinierte Visuals verfügbar.<!--[custom visuals](end-user-custom-visuals.md)-->
 
 
 ## <a name="next-steps"></a>Nächste Schritte

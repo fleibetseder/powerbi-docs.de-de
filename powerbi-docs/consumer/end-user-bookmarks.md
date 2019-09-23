@@ -1,5 +1,5 @@
 ---
-title: Übersicht über die Lesezeichen in Power BI-Dienst-Berichten
+title: Übersicht über Lesezeichen in Berichten im Power BI-Dienst
 description: Thema mit der Dokumentationsübersicht für Power BI Q&A zum Stellen von Fragen in natürlicher Sprache.
 author: mihart
 manager: kvivek
@@ -12,33 +12,33 @@ ms.date: 05/10/2019
 ms.author: mihart
 LocalizationGroup: Create reports
 ms.openlocfilehash: 55fafb00135908dc4f82151b96ed04d2cf2568da
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "65608307"
 ---
 # <a name="what-are-bookmarks"></a>Was sind Lesezeichen?
-Lesezeichen erfassen, die derzeit konfigurierte Ansicht einer Berichtsseite, einschließlich Filter, Slicer und des Status von Visuals. Wenn Sie ein Lesezeichen auswählen, wird Power BI wieder diese Ansicht. Es gibt zwei Arten von Lesezeichen – von Ihnen erstellte, sich selbst und jene, die vom Bericht *Designer*.
+Lesezeichen erfassen die aktuell konfigurierte Ansicht einer Berichtseite, einschließlich Filtern, Datenschnitten und dem Zustand von Visuals. Beim Klicken auf ein Lesezeichen gelangen Sie in Power BI dann wieder zu dieser Ansicht. Es gibt zwei Arten von Lesezeichen: von Ihnen selbst erstellte und von *Berichts-Designern* erstellte.
 
 ## <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Verwenden von Lesezeichen zum Teilen von Erkenntnissen und zum Erstellen von Präsentationen in Power BI 
-Es gibt viele Verwendungsmöglichkeiten für Lesezeichen. Angenommen Sie, Sie interessante Einblicke zu ermitteln, und möchten beibehalten – erstellen ein Lesezeichen, damit Sie später zurückkehren können. Möchten Sie verlassen und Ihre Arbeit zu erhalten, ein Lesezeichen erstellen möchten. Sie können auch festlegen, dass ein Lesezeichen, die Standardansicht für den Bericht ein, damit jedes Mal, wenn Sie zurück, dass die Ansicht einer Berichtsseite zuerst geöffnet wird. 
+Lesezeichen besitzen viele unterschiedliche Verwendungsmöglichkeiten. Angenommen Sie entdecken eine interessante Information und möchten später darauf zurückkommen können – mit einem Lesezeichen ist dies jederzeit möglich. Wenn Sie Ihre Arbeit unterbrechen müssen, den aktuellen Stand aber beibehalten möchten – erstellen Sie ein Lesezeichen. Sie können ein Lesezeichen sogar als Standardansicht des Berichts festlegen, damit bei jedem Öffnen zunächst diese Ansicht der Berichtseite angezeigt wird. 
 
-Sie können auch eine Auflistung erstellen von Lesezeichen, ordnen Sie sie in der Reihenfolge, Sie möchten, und durchlaufen anschließend jedem Lesezeichen in einer Präsentation, um eine Reihe von Einsichten hervorzuheben, die eine Geschichte zu erzählen.  
+Sie können auch eine Sammlung von Lesezeichen erstellen, sie in der gewünschten Reihenfolge anordnen und dann die einzelnen Lesezeichen in einer Präsentation durchlaufen, um eine Reihe von zusammenhängenden Einsichten hervorzuheben.  
 
-![Zeigen Sie Lesezeichen-Bereich an, indem Sie ihn aus dem Menüband auswählen.](media/end-user-bookmarks/power-bi-bookmarks-pane.png)
+![Anzeigen des Bereichs „Lesezeichen“ durch Auswählen aus dem Menüband](media/end-user-bookmarks/power-bi-bookmarks-pane.png)
 
 ## <a name="using-bookmarks"></a>Verwenden von Lesezeichen
-Wählen Sie zum Öffnen des Lesezeichen-Bereichs **Lesezeichen** in der Menüleiste. Um zum ursprünglichen veröffentlichten Sicht des Berichts zurückzukehren, wählen Sie **auf Standardwert zurücksetzen**.
+Klicken Sie in der Menüleiste auf **Lesezeichen**, um den Lesezeichenbereich zu öffnen. Klicken Sie auf die Option **Auf Standardwert zurücksetzen**, um zur ursprünglich veröffentlichten Ansicht zurückzukehren.
 
 ### <a name="report-bookmarks"></a>Berichtlesezeichen
-Wenn der Bericht *Designer* enthalten der Bericht Lesezeichen finden sie unter den **Bericht Lesezeichen** Überschrift. 
+Wurden vom *Berichts-Designer* Berichtlesezeichen hinzugefügt, finden Sie diese unter der Überschrift **Berichtlesezeichen**. 
 
-![Bericht-Lesezeichen anzeigen.](media/end-user-bookmarks/power-bi-report-bookmark.png)
+![Anzeigen von Berichtlesezeichen](media/end-user-bookmarks/power-bi-report-bookmark.png)
 
-Wählen Sie ein Lesezeichen, um in dieser Ansicht zu ändern. 
+Klicken Sie auf ein Lesezeichen, um zu dieser Berichtsansicht zu wechseln. 
 
-![Video mit den Bericht als Lesezeichen festlegt, wird ausgewählt.](media/end-user-bookmarks/power-bi-bookmarks.gif)
+![Video zur Auswahl von Berichtlesezeichen](media/end-user-bookmarks/power-bi-bookmarks.gif)
 
 ### <a name="personal-bookmarks"></a>Persönliche Lesezeichen
 
@@ -53,15 +53,15 @@ Wenn Sie ein Lesezeichen erstellen, werden die folgenden Elemente mit dem Leseze
 * Sichtbarkeit (eines Objekts, im Bereich **Auswahl** festgelegt)
 * Der Fokus- oder **Spotlightmodus** jedes angezeigten Objekts
 
-Konfigurieren Sie eine Berichtsseite so, wie sie im Lesezeichen angezeigt werden soll. Sobald die Berichtsseite und die Visuals wie gewünscht angeordnet sind, wählen Sie im Bereich **Lesezeichen** die Option **Hinzufügen** aus, um ein Lesezeichen hinzufügen. In diesem Beispiel haben wir einige Filter für Datum und die Region hinzugefügt. 
+Konfigurieren Sie eine Berichtsseite so, wie sie im Lesezeichen angezeigt werden soll. Sobald die Berichtsseite und die Visuals wie gewünscht angeordnet sind, wählen Sie im Bereich **Lesezeichen** die Option **Hinzufügen** aus, um ein Lesezeichen hinzufügen. In diesem Beispiel wurden Filter nach Region und Datum hinzugefügt. 
 
-![Fügen Sie persönliche Lesezeichen hinzu.](media/end-user-bookmarks/power-bi-add-personal.png)
+![Hinzufügen von persönlichen Lesezeichen](media/end-user-bookmarks/power-bi-add-personal.png)
 
-**Power BI** erstellt ein Lesezeichen, und erhalten einen allgemeinen Namen oder einen Namen, die Sie eingeben. Sie können *umbenennen*, *löschen*, oder *aktualisieren* ein Lesezeichen, indem Sie auf die Auslassungspunkte neben dem Namen des Lesezeichens aus, und klicken Sie dann im angezeigten Menü eine Aktion auswählen.
+**Power BI** erstellt ein Lesezeichen und benennt es mit einem generischen oder einem von Ihnen eingegebenen Namen. Lesezeichen können *umbenannt*, *gelöscht* oder *aktualisiert* werden. Klicken Sie hierzu auf die Auslassungspunkte neben dem Namen des Lesezeichens, und wählen Sie im daraufhin angezeigten Menü eine Aktion aus.
 
-Nachdem Sie ein Lesezeichen erstellt wurde, anzeigen Wählen Sie einfach das Lesezeichen in der **Lesezeichen** Bereich. 
+Sobald ein Lesezeichen erstellt wurde, können Sie es einfach durch Klicken im Bereich **Lesezeichen** anzeigen. 
 
-![Fügen Sie persönliche Lesezeichen hinzu.](media/end-user-bookmarks/power-bi-personal-bookmark.png)
+![Hinzufügen von persönlichen Lesezeichen](media/end-user-bookmarks/power-bi-personal-bookmark.png)
 
 
 <!--
@@ -77,7 +77,7 @@ The order of your bookmarks can become important when you use the **View** featu
 -->
 
 ## <a name="bookmarks-as-a-slide-show"></a>Lesezeichen als Bildschirmpräsentation
-Wählen Sie zum darstellen, oder zeigen Sie Lesezeichen in Reihenfolge, **Ansicht** aus der **Lesezeichen** Bereich, um eine Bildschirmpräsentation zu starten.
+Wenn Sie Lesezeichen in einer bestimmten Reihenfolge präsentieren oder anzeigen möchten, klicken Sie im Bereich **Lesezeichen** auf **Ansicht**, um die Diashow zu starten.
 
 Im Modus **Ansicht** sind einige Features zu beachten:
 
@@ -85,7 +85,7 @@ Im Modus **Ansicht** sind einige Features zu beachten:
 2. Die Lesezeichen-Titelleiste verfügt über Pfeile, mit denen Sie zum nächsten oder vorherigen Lesezeichen wechseln können.
 3. Sie können den Modus **Ansicht** beenden, indem Sie im Bereich **Lesezeichen** die Option **Beenden** oder das **X** auf der Lesezeichen-Titelleiste auswählen. 
 
-![Lesezeichen-Bildschirmpräsentation](media/end-user-bookmarks/power-bi-bookmark-slideshow.png)
+![Lesezeichen-Diashow](media/end-user-bookmarks/power-bi-bookmark-slideshow.png)
 
 Im Modus **Ansicht** können Sie den Bereich **Lesezeichen** schließen (durch Klicken auf das „X“ in diesem Bereich), um mehr Platz für die Präsentation zu erhalten. Und im Modus **Ansicht** sind alle Visuals interaktiv und für die übergreifende Hervorhebung verfügbar, so wie bei der Interaktion mit ihnen. 
 
@@ -155,7 +155,7 @@ Für dieses Release von **Lesezeichen** gelten einige Einschränkungen und Über
 * Die meisten benutzerdefinierten Visualisierungen sollten mit Lesezeichen gut funktionieren. Wenn bei einem Lesezeichen Probleme in Zusammenhang mit einem benutzerdefinierten Visual auftreten sollten, bitten Sie den Ersteller des benutzerdefinierten Visuals, dafür zu sorgen, dass sein Visual Lesezeichen unterstützt. 
 * Wenn Sie einer Berichtsseite nach dem Erstellen eines Lesezeichens ein Visual hinzufügen, wird das Visual in seinem Standardstatus angezeigt. Dies bedeutet auch, dass beim Anwenden eines Datenschnitts auf einer Seite, auf der Sie zuvor Lesezeichen erstellt haben, das Verhalten des Datenschnitts seinem Standardstatus entspricht.
 * Das Verschieben von Visuals nach dem Erstellen des Lesezeichens wird im Lesezeichen wiedergegeben. 
-* Im Allgemeinen werden Ihre Lesezeichen davon nicht betroffen, wenn der Bericht *Designer* aktualisiert oder den Bericht veröffentlicht. Allerdings, wenn der Designer wesentliche Änderungen für den Bericht, wie z. B. das Entfernen von Feldern ein, die ein Lesezeichen, macht erhalten klicken Sie dann eine Fehlermeldung an das nächste Mal Sie, das Sie versuchen, dieses Lesezeichen zu öffnen. 
+* Im Allgemeinen sind Lesezeichen nicht davon betroffen, wenn der *Berichts-Designer* den Bericht aktualisiert oder noch mal veröffentlicht. Bei wesentlichen Änderungen am Bericht, wie etwa dem Entfernen eines Felds, das von einem Lesezeichen verwendet wird, wird jedoch beim nächsten Versuch, das Lesezeichen zu öffnen, eine Fehlermeldung angezeigt. 
 
 <!--
 ## Next steps

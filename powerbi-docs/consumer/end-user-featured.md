@@ -13,10 +13,10 @@ ms.date: 05/14/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 7222f13d5ee4f25d7d55655bb5a7e5f2f28c77d4
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "65608688"
 ---
 # <a name="featured-dashboards-in-power-bi-service"></a>Ausgewählte Dashboards im Power BI-Dienst
@@ -25,11 +25,11 @@ Viele Benutzer haben ein bevorzugtes Dashboard.  Dies kann das Dashboard sein, m
 
 ![Symbol „Als ausgewählt festlegen“](./media/end-user-featured/power-bi-dropdown.png)
 
-Wenn Sie ein Dashboard als auswählen *wichtige*, jedes Mal, Sie Power BI-Dienst öffnen, wird mit diesem Dashboard angezeigten geöffnet.  
+Wenn Sie ein Dashboard als *ausgewählt* festlegen, wird bei jedem Öffnen des Power BI-Diensts dieses Dashboard angezeigt.  
 
 Sie können auch mehrere Dashboards als *Favoriten* auswählen. Siehe [Dashboardfavoriten](end-user-favorite.md).
 
-Wenn Sie noch kein ausgewähltes Dashboard festgelegt haben, wird Power BI geöffnet, um die zuletzt verwendeten Dashboard oder Power BI Startseite.  
+Wenn Sie noch kein Dashboard als ausgewählt festgelegt haben, öffnet Power BI das zuletzt verwendete Dashboard oder Power BI Home.  
 
 ### <a name="to-set-a-dashboard-as-featured"></a>So legen Sie ein **ausgewähltes Dashboard** fest
 Sehen Sie, wie ein ausgewähltes Dashboard erstellt wird, und befolgen Sie anschließend die Anleitung unter dem Video, um es selbst auszuprobieren.
@@ -39,7 +39,7 @@ Sehen Sie, wie ein ausgewähltes Dashboard erstellt wird, und befolgen Sie ansch
 
 
 1. Öffnen Sie das Dashboard, das Sie als *Ausgewählt* festlegen möchten. 
-2. Klicken Sie in der oberen Menüleiste, wählen Sie die Auslassungspunkte (...), und wählen Sie **als ausgewähltes festlegen**.  
+2. Klicken Sie in der oberen Menüleiste auf die Auslassungspunkte (...), und wählen Sie die Option **Als ausgewählt festlegen** aus.  
    
     ![Symbol „Als ausgewählt festlegen“](./media/end-user-featured/power-bi-dropdown.png)
 3. Bestätigen Sie Ihre Auswahl.
@@ -60,9 +60,9 @@ Selbstverständlich können Sie später jederzeit ein neues Dashboard als ausgew
 Wenn kein Dashboard als ausgewähltes Dashboard festgelegt sein soll, können Sie diese Festlegung aufheben.
 
 1. Öffnen Sie das zurzeit ausgewählte Dashboard.
-2. Klicken Sie in der oberen Menüleiste, wählen Sie die Auslassungspunkte (...), und wählen Sie **ausgewähltes deaktivieren**.
+2. Klicken Sie in der oberen Menüleiste auf die Auslassungspunkte (...), und wählen Sie die Option **Ausgewähltes deaktivieren** aus.
 
-    ![Deaktivieren Sie ausgewähltes Dashboard ausgewählte](./media/end-user-featured/power-bi-unfeature-newer.png)
+    ![Option „Ausgewähltes Dashboard deaktivieren“ auswählen](./media/end-user-featured/power-bi-unfeature-newer.png)
    
 ## <a name="next-steps"></a>Nächste Schritte
 [Hinzufügen von Dashboards als „Favoriten“](end-user-favorite.md)

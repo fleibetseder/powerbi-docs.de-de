@@ -10,107 +10,107 @@ ms.topic: conceptual
 ms.date: 04/24/2019
 ms.author: mshenhav
 ms.openlocfilehash: 4e09b10e38b018f8e5572343b343a243ace3bf81
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "64906531"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>Erstellen eines Links zu einer bestimmten Stelle in den mobilen Power BI-Apps
-Sie können Links verwenden, auf bestimmte Elemente in Power BI direkt zugreifen: Berichte, Dashboards und Kacheln.
+Mithilfe von Links können Sie direkt auf bestimmte Elemente in Power BI zugreifen. Dabei kann es sich um Berichte, Dashboards oder Kacheln handeln.
 
-Es sind hauptsächlich zwei Szenarien für die Verwendung von Links in Power BI von Mobilgeräten: 
+Es gibt im Wesentlichen zwei Szenarios für die Verwendung von Links in Power BI Mobile: 
 
-* Öffnen Sie Power BI aus **außerhalb der app**, und Speichern der bestimmter Inhalte (Bericht/Dashboard/app). Dies ist ein Integrationsszenario, in der Regel auf, wenn Sie Power BI Mobile von anderen app öffnen möchten. 
-* Um **navigieren** in Power BI. Dies ist in der Regel, wenn Sie eine benutzerdefinierte Navigation im Power BI erstellen möchten.
+* Zum Öffnen von Power BI von **außerhalb der App**, um zu einem bestimmten Inhalt zu gelangen (einem Bericht/einem Dashboard/einer App). Dabei handelt es sich in der Regel um ein Integrationsszenario, bei dem Power BI Mobile von einer anderen App aus geöffnet werden soll. 
+* Zum **Navigieren innerhalb** von Power BI. Dies ist normalerweise der Fall, wenn Sie eine benutzerdefinierte Navigation in Power BI erstellen möchten.
 
 
-## <a name="use-links-from-outside-of-power-bi"></a>Verwenden Sie die Links von außerhalb von Power BI
-Wenn Sie eine Verknüpfung von außerhalb von Power BI-app verwenden, möchten Sie sicherstellen, dass es von der Anwendung geöffnet wird und wenn die app nicht auf dem Gerät aus, und klicken Sie dann den Benutzer Informationen zur Installation angeboten installiert ist. Wir haben einen speziellen Link-Format erstellt, um genau diesen Zweck, zu unterstützen. Dieses LinkFormat stellt sicher, dass das Gerät der app beim Öffnen des Links mithilfe wird, und wenn die app nicht auf dem Gerät installiert ist, es den Benutzer bietet, wechseln in den Store, um sie zu erhalten.
+## <a name="use-links-from-outside-of-power-bi"></a>Verwenden von Links außerhalb von Power BI
+Wenn Sie einen Link von außerhalb der Power BI-App verwenden, muss sichergestellt sein, dass die App ihn öffnet. Ist die App noch nicht auf dem Gerät installiert, sollte der Benutzer die Möglichkeit erhalten, sie zu installieren. Genau für diesen Zweck haben wir ein spezielles Linkformat erstellt. Damit wird sichergestellt, dass das Gerät zum Öffnen des Links die App verwendet. Sollte die App noch nicht auf dem Gerät installiert sein, wird dem Benutzer angeboten, sie im Store herunterzuladen.
 
-Der Link sollte mit folgendem beginnen.  
+Der Link sollte folgendermaßen beginnen:  
 ```html
 https://app.powerbi.com/Redirect?[**QUERYPARAMS**]
 ```
 
 > [!IMPORTANT]
-> Wenn Ihr Inhalt in speziellen Datencenter wie Regierung, China usw. gehostet wird. Der Link sollte mit der richtigen Adresse für Power BI beginnen, z. B. `app.powerbigov.us` oder `app.powerbi.cn`.   
+> Werden Ihre Inhalte in bestimmten Rechenzentren gehostet, wie z. B. Government, China usw., sollte der Link mit der korrekten Power BI-Adresse beginnen, wie z. B. `app.powerbigov.us` oder `app.powerbi.cn`.   
 >
 
 
-Die **Abfrage PARAMS** sind:
-* **Aktion** (obligatorisch) = OpenApp / OpenDashboard / OpenTile / OpenReport
-* **AppId** = sollten Sie Öffnen eines Berichts oder Dashboards, die Teil einer App 
-* **GroupObjectId** = sollten Sie Öffnen eines Berichts oder Dashboards, die Teil des Arbeitsbereichs (aber nicht Mein Arbeitsbereich)
-* **DashboardObjectId** Dashboardobjekt-ID =, (wenn es sich um eine Aktion OpenDashboard oder OpenTile ist.)
-* **ReportObjectId** Berichtsobjekt-ID =, (wenn es sich um eine Aktion OpenReport ist.)
-* **TileObjectId** Kachel-Objekt-ID =, (wenn es sich um eine Aktion OpenTile ist.)
-* **ReportPage** = sollten Sie bestimmte Berichtsabschnitt öffnen (falls es sich um eine Aktion OpenReport ist.)
-* **CtId** = Element Organisations-ID (für B2B-Szenario relevant. Dies kann ausgelassen werden, wenn das Element zur Organisation des Benutzers gehört).
+Die Abfrageparameter **QUERY PARAMS** lauten:
+* **action** (obligatorisch): OpenApp/OpenDashboard/OpenTile/OpenReport
+* **appId**: Beim Öffnen eines Berichts oder eines Dashboards, die Teil einer App sind. 
+* **groupObjectId**: Beim Öffnen eines Berichts oder eines Dashboards, die Teil eines Arbeitsbereichs sind (ausgenommen „Mein Arbeitsbereich“).
+* **dashboardObjectId**: Objekt-ID eines Dashboards (wenn es sich bei „action“ um „OpenDashboard“ oder „OpenTile“ handelt).
+* **reportObjectId**: Objekt-ID eines Berichts (wenn es sich bei „action“ um „OpenReport“ handelt).
+* **tileObjectId**: Objekt-ID einer Kachel (wenn es sich bei „action“ um „OpenTile“ handelt).
+* **reportPage**: Beim Öffnen eines bestimmten Berichtsabschnitts (wenn es sich bei „action“ um „OpenReport“ handelt).
+* **ctid**: ID der Elementorganisation (nur für B2B-Szenarios relevant, kann weggelassen werden, wenn das Element zur Organisation des Benutzers gehört).
 
 **Beispiele:**
 
-* Öffnen der app-link 
+* Öffnen eines App-Links 
   ```html
   https://app.powerbi.com/Redirect?action=OpenApp&appId=appidguid&ctid=organizationid
   ```
 
-* Dashboard öffnen, die Teil einer App 
+* Öffnen eines Dashboards, das Teil einer App ist 
   ```html
   https://app.powerbi.com/Redirect?action=OpenDashboard&appId=**appidguid**&dashboardObjectId=**dashboardidguid**&ctid=**organizationid**
   ```
 
-* Bericht öffnen, die Teil eines Arbeitsbereichs
+* Öffnen eines Berichts, der Teil eines Arbeitsbereichs ist
   ```html
   https://app.powerbi.com/Redirect?Action=OpenReport&reportObjectId=**reportidguid**&groupObjectId=**groupidguid**&reportPage=**ReportSectionName**
   ```
 
-### <a name="how-to-get-the-right-link-format"></a>Das LinkFormat der richtige abrufen
+### <a name="how-to-get-the-right-link-format"></a>Abrufen des korrekten Linkformats
 
-#### <a name="links-of-apps-and-items-in-app"></a>Links von apps und Elemente in der app
+#### <a name="links-of-apps-and-items-in-app"></a>Links von Apps und Elementen innerhalb einer App
 
-Für **apps und Berichte und Dashboards, die Teil einer app**, wechseln zu den app-Arbeitsbereich, und wählen "App aktualisieren" ist die einfachste Möglichkeit, den Link. Dadurch wird die Benutzeroberfläche "App veröffentlichen" geöffnet, und finden Sie in der Registerkarte "Datenzugriff" einen **Links** Abschnitt. Erweitern im Abschnitt, und Sie die Liste der app sehen und seinen gesamten Inhalt verknüpft ist, kann verwendet werden, darauf direkt zugreifen.
+Bei **Apps, Berichten und Dashboards, die Teil einer App sind**, können Sie den Link am einfachsten über den Arbeitsbereich der App und die Option „App aktualisieren“ abrufen. Es wird die Oberfläche „App veröffentlichen“ geöffnet. Wechseln Sie zur Registerkarte „Zugriff“, auf der der Abschnitt **Links** angezeigt wird. Erweitern Sie diesen Abschnitt. Dort wird eine Liste der App und der Links zu allen Inhalten angezeigt, über die Sie direkt auf die Links zugreifen können.
 
-![Powerbi Veröffentlichen der app-links ](./media/mobile-apps-links/mobile-link-copy-app-links.png)
+![Links unter „App veröffentlichen“ in Power BI ](./media/mobile-apps-links/mobile-link-copy-app-links.png)
 
-#### <a name="links-of-items-not-in-app"></a>Links von Elementen, die nicht in-app 
+#### <a name="links-of-items-not-in-app"></a>Links von Elementen außerhalb einer App 
 
-Für Berichte und Dashboards, die nicht Teil einer app sind, müssen Sie die IDs von der Element-URL zu extrahieren.
+Bei Berichten und Dashboards, die nicht Teil einer App sind, müssen Sie die ID aus der URL des Elements extrahieren.
 
-Um beispielsweise die 36 Zeichen suchen **Dashboard** Objekt-ID, navigieren Sie zum betreffenden Dashboard im Power BI-Dienst 
+Um z. B. die aus 36 Zeichen bestehende Objekt-ID eines **Dashboards** zu erhalten, navigieren Sie im Power BI-Dienst zum betreffenden Dashboard. 
 
 ```html
 https://app.powerbi.com/groups/me/dashboards/**dashboard guid comes here**?ctid=**organization id comes here**`
 ```
 
-Um die 36 Zeichen lange finden **Bericht** Objekt-ID, navigieren Sie zu den Bericht im Power BI-Dienst.
-Dies ist ein Beispiel für Bericht über "Mein Arbeitsbereich"
+Um die aus 36 Zeichen bestehende Objekt-ID eines **Berichts** zu erhalten, navigieren Sie im Power BI-Dienst zum betreffenden Bericht.
+In diesem Beispiel befindet sich der Bericht in „Mein Arbeitsbereich“.
 
 ```html
 https://app.powerbi.com/groups/me/reports/**report guid comes here**/ReportSection3?ctid=**organization id comes here**`
 ```
-Die obige URL enthält auch bestimmte Berichtsseite **"ReportSection3"** .
+Die obige URL enthält auch eine bestimmte Berichtseite **„ReportSection3“** .
 
-Dies ist ein Beispiel eines Berichts aus einem Arbeitsbereich (nicht Mein Arbeitsbereich)
+In diesem Beispiel befindet sich der Bericht in einem Arbeitsbereich (nicht „Mein Arbeitsbereich“).
 
 ```html
 https://app.powerbi.com/groups/**groupid comes here**/reports/**reportid comes here**/ReportSection1?ctid=**organizationid comes here**
 ```
 
-## <a name="use-links-inside-power-bi"></a>Verwenden Sie die Links in Power BI
+## <a name="use-links-inside-power-bi"></a>Verwenden von Links innerhalb von Power BI
 
-Links in Power BI arbeiten in den mobilen apps genau wie in Power BI-Dienst.
+Links innerhalb von Power BI funktionieren in mobilen Apps genauso wie im Power BI-Dienst.
 
-Wenn Sie möchten die Verknüpfung zum Bericht hinzufügen, die auf einem anderen Power BI-Element verweist, können Sie nur diese Element-URL aus der Adressleiste des Browsers kopieren. Erfahren Sie mehr über [wie Sie einen Link zu einem Textfeld in einem Bericht hinzufügen](https://docs.microsoft.com/power-bi/service-add-hyperlink-to-text-box).
+Wenn Sie Ihrem Bericht einen Link zu einem anderen Power BI-Element hinzufügen möchten, kopieren Sie einfach die URL dieses Elements aus der Adressleiste des Browsers. Weitere Informationen zum Hinzufügen eines Links in ein Textfeld eines Berichts finden Sie unter [Filtern eines Berichts mithilfe von Abfragezeichenfolgenparametern in der URL](https://docs.microsoft.com/power-bi/service-add-hyperlink-to-text-box).
 
-## <a name="use-report-url-with-filter"></a>Verwenden Sie Berichts-URL mit filter
-Wie Power BI-Dienst, unterstützt Power BI Mobile apps auch Berichts-URL, die eine Filter-Abfrage Parameter enthält. Sie können die Öffnen eines Berichts in Power BI Mobile-app und in bestimmten Status filtern. Beispielsweise diese URL wird der Sales-Bericht geöffnet, und Filtern sie nach Gebiet
+## <a name="use-report-url-with-filter"></a>Verwenden von Berichts-URLs mit Filter
+Wie der Power BI-Dienst unterstützen auch die mobilen Power BI-Apps Berichts-URLs, die einen Filterabfrageparameter enthalten. Sie können in einer mobilen Power BI-App einen Bericht öffnen und ihn nach einem bestimmten Zustand filtern. Mit dieser URL wird beispielsweise ein Verkaufsbericht geöffnet und nach „Territory“ gefiltert:
 
 ```html
 https://app.powerbi.com/groups/me/reports/**report guid comes here**/ReportSection3?ctid=**organization id comes here**&filter=Store/Territory eq 'NC'
 ```
 
-Weitere Informationen zum [erstellen Sie die Abfrage Parameter zum Filtern von Berichten](https://docs.microsoft.com/power-bi/service-url-filters).
+Weitere Informationen zum Erstellen von Abfrageparametern zum Filtern von Berichten finden Sie unter [Filtern eines Berichts mithilfe von Abfragezeichenfolgenparametern in der URL](https://docs.microsoft.com/power-bi/service-url-filters).
 
 ## <a name="next-steps"></a>Nächste Schritte
 Ihr Feedback hilft uns zu entscheiden, welche Features wir künftig realisieren. Geben Sie deshalb Ihr Votum ab, welche Features Sie sich in den mobilen Power BI-Apps wünschen. 

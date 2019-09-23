@@ -12,10 +12,10 @@ ms.date: 05/29/2019
 ms.author: mihart
 LocalizationGroup: Reports
 ms.openlocfilehash: 7148a52d7c7475fbe685f83b1e1cc325521460db
-ms.sourcegitcommit: d88cc6a87d4ba82ad2c4d496a3634f927e4ac529
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "66413173"
 ---
 # <a name="how-visuals-cross-filter-each-other-in-a-power-bi-report"></a>Gegenseitige Kreuzfilterung von Visuals in einem Power BI-Bericht
@@ -23,11 +23,11 @@ Eines der herausragenden Features von Power BI ist die Art, auf die alle visuell
 
 ![Video von interagierenden visuellen Elementen](media/end-user-interactions/interactions.gif)
 
-Standard, wählen einen Datenpunkt in einer Visualisierung auf einer Berichtsseite wird kreuzfiltern, hervorheben, und zeigen Sie die anderen Visualisierungen auf der Seite. 
+Standardmäßig führt die Auswahl eines Datenpunkts in einer Visualisierung auf einer Berichtseite zu Kreuzfilterung und -hervorhebung sowie zu Drillvorgängen der anderen Visualisierungen auf der Seite. 
 
-Dies kann nützlich sein, wie ein Wert in den Daten identifizieren trägt zu einem anderen. Z. B. das Moderation Segment im Ringdiagramm auswählen die einzelnen Spalten in die Gesamtzahl der Einheiten nach Monat Diagramm die Beteiligung dieses Segment hervorgehoben, und es wurde gefiltert, dass das Liniendiagramm auf der rechten Seite.
+Dadurch lässt sich erkennen, wie die einzelnen Werte in Ihren Daten zusammenhängen. Wenn Sie beispielsweise den Abschnitt „Moderation“ des Ringdiagramms auswählen, wird der Beitrag dieses Abschnitts zu jeder Spalte des Diagramms „Total Units by Month“ hervorgehoben und das Liniendiagramm auf der rechten Seite entsprechend gefiltert.
 
-![Bild von visuellen Elementen interagieren](media/end-user-interactions/power-bi-interactions.png)
+![Darstellung von interagierenden Visuals](media/end-user-interactions/power-bi-interactions.png)
 
 Siehe [Informationen zum Filtern und Hervorheben](../power-bi-reports-filters-and-highlighting.md). 
 
@@ -37,8 +37,8 @@ Wie visuelle Elemente auf einer Seite genau miteinander interagieren, wird vom *
 > Die Begriffe *Kreuzfilterung* und *Kreuzhervorhebung* werden verwendet, um das hier beschriebene Verhalten davon zu unterscheiden, was geschieht, wenn Sie den Bereich **Filter** zum Filtern und Hervorheben von Visualisierungen verwenden.  
 
 ## <a name="considerations-and-troubleshooting"></a>Zu beachtende Aspekte und Problembehandlung
-- Wenn Ihr Bericht eine Visualisierung verfügt, unterstützt [Drilldown](../power-bi-visualization-drill-down.md), in der Standardeinstellung drilling einer Visualisierung hat keine Auswirkungen auf die anderen Visualisierungen auf der Berichtsseite.     
-- Wenn Sie VisualA für die Interaktion mit VisualB verwenden, werden Filter auf visueller Ebene, von VisualA auf VisualB angewendet werden.
+- Verfügt der Bericht über eine Visualisierung, die [Drilling](../power-bi-visualization-drill-down.md) unterstützt, hat das Drilling einer Visualisierung standardmäßig keinen Einfluss auf die anderen Visualisierungen auf der Berichtseite.     
+- Interagiert Visual A mit Visual B, werden die Filter auf Visualebene von Visual A auch auf Visual B angewendet.
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Verwenden von Berichtsfiltern](../power-bi-how-to-report-filter.md)

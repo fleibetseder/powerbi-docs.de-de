@@ -12,14 +12,14 @@ ms.date: 05/12/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: cd0b680265d526ecf7adbf4db8c54b77535eadf8
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "65608486"
 ---
 # <a name="view-a-dashboard"></a>Anzeigen eines Dashboards
-Power BI *Consumer* verbringen viel Zeit anzeigen von Dashboards. Dashboards sind darauf ausgelegt, spezifische Informationen aus den zugrunde liegenden Berichten und Datasets hervorzuheben. Und Power BI-Benutzer verwenden diese Informationen zum Nachverfolgen, Überwachen, Beantworten von Fragen, zu Testzwecken und mehr – um datenbasierte Geschäftsentscheidungen zu treffen.
+*Benutzer* von Power BI verbringen viel Zeit damit, Dashboards anzuzeigen. Dashboards sind darauf ausgelegt, spezifische Informationen aus den zugrunde liegenden Berichten und Datasets hervorzuheben. Und Power BI-Benutzer verwenden diese Informationen zum Nachverfolgen, Überwachen, Beantworten von Fragen, zu Testzwecken und mehr – um datenbasierte Geschäftsentscheidungen zu treffen.
 
 ![Dashboard](media/end-user-dashboard-open/power-bi-new-dash-new.png)
 
@@ -32,7 +32,7 @@ Power BI Pro ist sowohl für Freigeben eines Dashboards als auch Anzeigen eines 
 
 |              |         |
 |------------|--------------------------------|
-|![Dashboard-Symbol](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Dashboards können von zahlreichen Standorten in Power BI-Dienst geöffnet werden. <br> Suchen Sie nach diesem Dashboardsymbol. Sobald Sie ein Dashboard <br>gefunden haben, ist das Öffnen einfach. Klicken Sie darauf, und das Dashboard <br>füllt Ihren Power BI-Zeichenbereich. |
+|![Dashboard-Symbol](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Dashboards lassen sich von zahlreichen Orten im Power BI-Dienst öffnen. <br> Suchen Sie nach diesem Dashboardsymbol. Sobald Sie ein Dashboard <br>gefunden haben, ist das Öffnen einfach. Klicken Sie darauf, und das Dashboard <br>füllt Ihren Power BI-Zeichenbereich. |
 |                    |          |
 
 

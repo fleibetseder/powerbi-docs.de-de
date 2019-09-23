@@ -9,15 +9,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 04/30/2019
+ms.date: 09/16/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 2796b29ee553ece77846f5edc8af4b2523fd48c6
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: d09ada0d3309a9cb2b93a8cd4fa3d6740e69ba77
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68522790"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073552"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>Hinzufügen von Kommentaren zu einem Dashboard oder Bericht
 Sie können einem Dashboard oder Bericht einen persönlichen Kommentar hinzufügen oder über ein Dashboard oder einen Bericht eine Unterhaltung mit Ihren Kollegen beginnen. Das Feature **Kommentare** ist nur eine der Möglichkeiten, wie ein *Endbenutzer* mit anderen Personen interagieren kann. 
@@ -25,16 +25,18 @@ Sie können einem Dashboard oder Bericht einen persönlichen Kommentar hinzufüg
 ![Video zu Kommentaren](media/end-user-comment/comment.gif)
 
 ## <a name="how-to-use-the-comments-feature"></a>Verwenden des Features „Kommentare“
-Kommentare können einem gesamten Dashboard, einzelnen Visuals auf einem Dashboard, einer Berichtsseite und einzelnen Visuals auf einer Berichtsseite hinzugefügt werden. Sie können einen allgemeinen Kommentar oder einen Kommentar hinzufügen, der sich an bestimmte Kollegen richtet.  
+Kommentare können einem gesamten Dashboard, einzelnen Visuals auf einem Dashboard, einer Berichtseite, einem paginierten Bericht und einzelnen Visuals auf einer Berichtseite hinzugefügt werden. Sie können einen allgemeinen Kommentar oder einen Kommentar hinzufügen, der sich an bestimmte Kollegen richtet.  
 
 Wenn Sie einem Bericht einen Kommentar hinzufügen, erfasst Power BI die aktuellen Filter- und Slicerwerte. Das bedeutet, dass sich beim Auswählen oder Beantworten eines Kommentars die Berichtsseite oder das Berichtsvisual ändern kann, um Ihnen die Filter- und Slicerwerte anzuzeigen, die beim ersten Hinzufügen des Kommentars aktiv waren.  
 
 ![Video über Bericht mit Filtern](media/end-user-comment/comment-reports-with-filters/comment-reports-with-filters.gif)
 
-Warum ist dies wichtig? Nehmen wir an, eine Kollegin hat einen Filter angewendet, der einen interessanten Einblick gewährt, den sie mit dem Team teilen möchte. Ohne dass dieser Filter ausgewählt ist, ergibt der Kommentar möglicherweise keinen Sinn. 
+Warum ist dies wichtig? Nehmen wir an, eine Kollegin hat einen Filter angewendet, der einen interessanten Einblick gewährt, den sie mit dem Team teilen möchte. Ohne dass dieser Filter ausgewählt ist, ergibt der Kommentar möglicherweise keinen Sinn.
+
+Wenn Sie einen paginierten Bericht verwenden, können Sie nur einen allgemeinen Kommentar zu Ihrem Bericht hinterlassen.  Das Hinterlassen von Kommentaren in einzelnen Berichtsvisuals wird nicht unterstützt.
 
 ### <a name="add-a-general-comment-to-a-dashboard-or-report"></a>Hinzufügen eines allgemeinen Kommentars zu einem Dashboard oder Bericht
-Die Vorgehensweisen zum Hinzufügen von Kommentaren zu einem Dashboard oder Bericht sind ähnlich. In diesem Beispiel wird ein Dashboard verwendet. 
+Die Vorgehensweisen zum Hinzufügen von Kommentaren zu einem Dashboard oder Bericht sind ähnlich.  In diesem Beispiel wird ein Dashboard verwendet. 
 
 1. Öffnen Sie ein Power BI-Dashboard oder einen Power BI-Bericht, und klicken Sie auf das Symbol **Kommentare**. Daraufhin wird das Dialogfeld „Kommentare“ geöffnet.
 

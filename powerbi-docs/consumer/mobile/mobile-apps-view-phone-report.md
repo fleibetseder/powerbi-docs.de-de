@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 04/22/2019
 ms.author: mshenhav
 ms.openlocfilehash: 79ca47f83bb39ab9d6df141b5a26dcb54e00c72c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "65101000"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Anzeigen von Power BI-Berichten, die für das Smartphone optimiert sind
@@ -24,7 +24,7 @@ Gilt für:
 |:--- |:--- |
 | iPhones |Android-Telefone |
 
-Wenn Sie Power BI-Berichten auf Ihrem Telefon anzeigen, überprüft Power BI, um festzustellen, ob der Bericht für Smartphones optimiert wurde. Falls Ja, wird von Power BI automatisch den optimierten Bericht im Hochformat geöffnet.
+Beim Anzeigen eines Power BI-Berichts auf einem Smartphone überprüft Power BI, ob der Bericht für Smartphones optimiert wurde. Ist dies der Fall, öffnet Power BI automatisch den optimierten Bericht im Hochformat.
 
 ![Bericht im Hochformat](./media/mobile-apps-view-phone-report/07-power-bi-phone-report-portrait.png)
 
@@ -38,7 +38,7 @@ In für das Smartphone optimierten Berichten werden alle anderen Features von Po
 * [Berichte auf Android-Smartphones](mobile-reports-in-the-mobile-apps.md).
 
 ## <a name="filter-the-report-page-on-a-phone"></a>Filtern der Berichtsseite auf einem Smartphone
-Wenn bei einem für das Smartphone optimierten Bericht Filter definiert wurden, können Sie diese Filter beim Anzeigen des Berichts auf einem Smartphone verwenden. Der Bericht wird auf Ihrem Smartphone, in dem Bericht im Web gefilterten Werte geöffnet. Es wird eine Meldung angezeigt, dass die Seite aktive Filter enthält. Sie können die Filtereinstellungen auf Ihrem Smartphone ändern.
+Wenn bei einem für das Smartphone optimierten Bericht Filter definiert wurden, können Sie diese Filter beim Anzeigen des Berichts auf einem Smartphone verwenden. Der Bericht wird auf Ihrem Smartphone geöffnet, und es werden die im Web für den Bericht gefilterten Werte angezeigt. Es wird eine Meldung angezeigt, dass die Seite aktive Filter enthält. Sie können die Filtereinstellungen auf Ihrem Smartphone ändern.
 
 1. Tippen Sie auf das Symbol „Filter“ ![Symbol „Filter“ für Smartphone](./media/mobile-apps-view-phone-report/power-bi-phone-filter-icon.png) am unteren Rand der Seite. 
 2. Verwenden Sie die grundlegenden oder erweiterten Filter, um die Ergebnisse anzuzeigen, an denen Sie interessiert sind.
@@ -46,7 +46,7 @@ Wenn bei einem für das Smartphone optimierten Bericht Filter definiert wurden, 
     ![Erweiterter Filter für Power BI-Smartphonebericht](./media/mobile-apps-view-phone-report/power-bi-iphone-advanced-filter-toronto.gif)
 
 ## <a name="cross-highlight-visuals"></a>Kreuzhervorhebung visuelle Objekte
-Kreuzhervorhebung visueller Elemente im Hochformat Ansicht nach Ihren vorstellungen dies der Fall ist in Power BI-Dienst und auf Smartphones im Querformat anzeigen: Wenn Sie Daten in einem Visual auswählen, werden die verknüpften Daten in den anderen Visuals auf der jeweiligen Seite hervorgehoben.
+Die Kreuzhervorhebung von Visuals im Hochformat funktioniert genauso wie im Power BI-Dienst und bei Smartphones im Querformat: Wenn Sie Daten in einem Visual auswählen, werden die verknüpften Daten in den anderen Visuals auf der jeweiligen Seite hervorgehoben.
 
 Erfahren Sie mehr über das [Filtern und Hervorheben in Power BI](../../power-bi-reports-filters-and-highlighting.md).
 
@@ -56,13 +56,13 @@ Wenn Sie in Smartphoneberichten ein visuelles Element auswählen, wird dieses he
 Sobald das visuelle Element ausgewählt ist, können Sie Aktionen in ihm ausführen, z. B. in ihm scrollen. Um die Auswahl eines visuellen Elements aufzuheben, tippen Sie auf eine beliebige Position außerhalb des visuellen Elements.
 
 ## <a name="open-visuals-in-focus-mode"></a>Öffnen visueller Elemente im Fokusmodus
-Smartphoneberichte bieten zudem einen fokusmodus: Sie erhalten eine größere Ansicht eines einzelnen visual und untersuchen es noch einfacher.
+Telefonberichte bieten zudem einen Fokusmodus: Dabei können Sie ein einzelnes Visual in einer größeren Ansicht anzeigen und es so leichter analysieren.
 
 * Tippen Sie in einem Smartphonebericht auf die Auslassungspunkte ( **...** ) in der oberen rechten Ecke eines visuellen Elements und dann auf **Auf Fokusmodus erweitern**.
   
     ![Auf Fokusmodus erweitern](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
 
-Was Sie im fokusmodus tun übernommen werden, in den Zeichenbereich des Berichts und umgekehrt. Wenn Sie einen Wert in einem visuellen Element hervorheben und anschließend zurück zu den gesamten Bericht gilt, wird der Bericht z. B. mit dem Wert gefiltert, die Sie im visuellen Element hervorgehoben.
+Ihre Aktionen im Fokusmodus werden im Berichtszeichenbereich übernommen und umgekehrt. Wenn Sie z. B. einen Wert in einem Visual hervorheben und dann zum gesamten Bericht zurückkehren, wird der Bericht nach dem Wert gefiltert, den Sie im Visual hervorgehoben haben.
 
 Aufgrund der Einschränkungen durch die Bildschirmgröße können manche Aktionen nur im Fokusmodus ausgeführt werden:
 
@@ -74,29 +74,29 @@ Aufgrund der Einschränkungen durch die Bildschirmgröße können manche Aktione
   
     ![Zurücksetzen](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
   
-    Zurücksetzen steht auf Berichtsebene, Löschen der Untersuchungsschritte aus alle Visualisierungen auf der visuellen Ebene, das Löschen der Untersuchungsschritte aus der ausgewählten Visualisierung.   
+    Die Option zum Zurücksetzen ist sowohl auf der Berichts- als auch auf der Visualebene verfügbar. Auf der Berichtsebene werden die Untersuchungsschritte aus sämtlichen Visuals gelöscht, auf der Visualebene nur aus dem ausgewählten Visual.   
 
 ## <a name="drill-down-in-a-visual"></a>Durchführen von Drilldown in einem visuellen Element
 Wenn in einem visuellen Element Hierarchieebenen definiert sind, können Sie einen Drilldown auf die Detailinformationen im visuellen Element durchführen und dann wieder zur höheren Ebene zurückkehren. Sie können im Power BI-Dienst und in Power BI Desktop [Drilldowns in einem Visual](../end-user-drill.md) ausführen.
 
-Es gibt einige Typen von Drilldown:
+Die folgenden Drilldown-Typen sind verfügbar:
 
-### <a name="drill-down-on-a-value"></a>Drilldown auf einen Wert
-1. Tippen Sie lang (tippen und halten), auf einen Datenpunkt in einem visuellen Element.
-2. QuickInfo angezeigt wird, und wenn Hierarchie definiert ist, klicken Sie dann die QuickInfo-Fußzeile zeigt Drilldown- und Pfeil nach oben.
-3. Tippen Sie auf den Pfeil nach unten für den Drilldown
+### <a name="drill-down-on-a-value"></a>Drilldown für einen Wert
+1. Tippen Sie in einem Visual auf einen Datenpunkt, und halten Sie ihn gedrückt.
+2. Daraufhin wird eine QuickInfo angezeigt. Wurde eine Hierarchie definiert, werden in der Fußzeile der QuickInfo Pfeile für den Drilldown und Drillup angezeigt.
+3. Tippen Sie für einen Drilldown auf den Pfeil nach unten.
 
-    ![Tippen Sie auf einen Drilldown nach unten](././media/mobile-apps-view-phone-report/report-drill-down.png)
+    ![Tippen auf Drilldown-Pfeil](././media/mobile-apps-view-phone-report/report-drill-down.png)
     
-4. Tippen Sie auf den Pfeil nach oben für Drillup.
+4. Tippen Sie für einen Drillup auf den Pfeil nach oben.
 
-### <a name="drill-to-next-level"></a>Auf nächste Ebene einen Drilldown
+### <a name="drill-to-next-level"></a>Drilldown zur nächsten Ebene
 1. Tippen Sie in einem Bericht auf einem Smartphone auf die Auslassungspunkte ( **...** ) in der oberen rechten Ecke und dann auf **Auf Fokusmodus erweitern**.
    
     ![Auf Fokusmodus erweitern](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
    
     In diesem Beispiel zeigen die Balken die Werte für Bundesländer an.
-2. Tippen Sie auf das Symbol „Durchsuchen“ ![Symbol „Durchsuchen“](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-icon.png) unten links.
+2. Tippen Sie auf das Symbol „Durchsuchen“ ![Symbol „Durchsuchen“](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-icon.png) in der unteren linken Ecke.
    
     ![Modus „Durchsuchen“](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-mode.png)
 3. Tippen Sie auf **Nächste Ebene anzeigen** oder **Auf nächste Ebene erweitern**.
@@ -113,21 +113,21 @@ Es gibt einige Typen von Drilldown:
    
     ![Zurücksetzen](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
 
-## <a name="drill-through-from-a-value"></a>Ein Wert von Drillthrough
-Drillthrough verbindet Werte auf der Seite einen Bericht mit anderen Seiten des Berichts. Wenn Sie einen Drillthrough von einem Datenpunkt zu einer anderen Berichtsseite durchführen, werden die Datenpunktwerte werden verwendet, um die Seite die drilled filtern, oder sie werden im Kontext der ausgewählten Daten.
-Berichtsautoren können [definieren Drillthrough](https://docs.microsoft.com/power-bi/desktop-drillthrough) beim Erstellen des Berichts.
+## <a name="drill-through-from-a-value"></a>Drillthrough von einem Wert
+Bei einem Drillthrough werden Werte auf einer Berichtseite mit anderen Berichtseiten verknüpft. Wenn Sie einen Drillthrough von einem Datenpunkt zu einer anderen Berichtseite ausführen, werden die Datenpunktwerte zum Filtern der anderen Seite verwendet oder in Kontext zu den ausgewählten Daten gesetzt.
+Berichtsautoren können beim Erstellen eines Berichts einen [Drillthrough definieren](https://docs.microsoft.com/power-bi/desktop-drillthrough).
 
-1. Tippen Sie lang (tippen und halten), auf einen Datenpunkt in einem visuellen Element.
-2. QuickInfo wird angezeigt, und wenn Drillthrough definiert ist, klicken Sie dann die QuickInfo-Fußzeile zeigt Drillthrough-Pfeil.
-3. Tippen Sie auf den Pfeil für Drillthrough
+1. Tippen Sie in einem Visual auf einen Datenpunkt, und halten Sie ihn gedrückt.
+2. Daraufhin wird eine QuickInfo angezeigt. Wurde ein Drillthrough definiert, wird in der Fußzeile der QuickInfo ein Pfeil nach rechts für den Drillthrough angezeigt.
+3. Tippen Sie für einen Drillthrough auf den Pfeil nach rechts.
 
-    ![Tippen Sie auf Drillthrough](././media/mobile-apps-view-phone-report/report-drill-through1.png)
+    ![Tippen auf Drillthrough-Pfeil](././media/mobile-apps-view-phone-report/report-drill-through1.png)
 
-4. Wählen Sie die Berichtsseite zum Ausführen eines Drillthroughs
+4. Wählen Sie die Berichtseite aus, für die der Drillthrough ausgeführt werden soll.
 
-    ![Wählen Sie die Berichtsseite](././media/mobile-apps-view-phone-report/report-drill-through2.png)
+    ![Berichtseite auswählen](././media/mobile-apps-view-phone-report/report-drill-through2.png)
 
-5. Verwenden Sie die Schaltfläche "zurück", der app-Header, um zur Seite zurückzukehren, die Sie aus gestartet.
+5. Über die Schaltfläche „Zurück“ im App-Header gelangen Sie zurück auf die ursprüngliche Seite.
 
 
 ## <a name="next-steps"></a>Nächste Schritte
