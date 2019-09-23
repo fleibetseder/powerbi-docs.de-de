@@ -11,7 +11,7 @@ ms.date: 03/26/2019
 ms.author: mblythe
 ms.openlocfilehash: d33abaeff1f7996859e203a3b28ae99ba8d9bf2e
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61402322"
@@ -53,6 +53,6 @@ Power BI-Kunden können außerdem auch von den folgenden Angeboten für proaktiv
   - **WorkshopPLUS – Data AI: Business Analytics mit Power BI:** Im Rahmen dieses Workshops, der in der Regel von einem Microsoft Premier Field Engineer abgehalten wird, erhalten Sie einen Einstieg in Power BI. So erhalten Sie die Möglichkeit, Power BI in Ihrem Unternehmen einzuführen und Ihre Mitarbeiter darin zu schulen.
 Sie erhalten eine vollständige Übersicht über die Power BI-Funktionen. Es werden sowohl Power BI Desktop als auch die Online-Tools besprochen. Sie erfahren im Detail, wie Sie Daten transformieren, ein Modell erstellen, und Berechnungen und Berichte aufbauen. Anschließend werden bewährte Methoden zum Teilen und Regulieren dieser Inhalte im Clouddienst vorgestellt. Außerdem umfasst der Workshop einige Präsentationen und Labs, im Rahmen derer Sie experimentieren und die Technologien in der Praxis anwenden können.
 
-  - **WorkshopPLUS – Data AI: erweiterte Datenanalyse mit Power BI:** Im Rahmen dieses Kurses erfahren Sie, wie Sie die wichtigsten Prinzipien der einzelnen Aspekte des Modellierens von Daten verstehen und implementieren können. Dabei verwenden Sie Tools wie Power BI Desktop und arbeiten mit dem Clouddienst zum Veröffentlichen und Verarbeiten von Power BI-Objekten. Außerdem werden die Grundlagen für die Entwicklung von Berichten, von Embedded Analytics in Power BI zum Einbetten von Inhalten in benutzerdefinierte Anwendungen, für das Erstellen von Dashboards sowie erweiterte Analysen zu Data Science und der Entwicklung in Power BI erläutert.
+  - **WorkshopPLUS – Data A: erweiterte Datenanalyse mit Power BI:** Im Rahmen dieses Kurses erfahren Sie, wie Sie die wichtigsten Prinzipien der einzelnen Aspekte des Modellierens von Daten verstehen und implementieren können. Dabei verwenden Sie Tools wie Power BI Desktop und arbeiten mit dem Clouddienst zum Veröffentlichen und Verarbeiten von Power BI-Objekten. Außerdem werden die Grundlagen für die Entwicklung von Berichten, von Embedded Analytics in Power BI zum Einbetten von Inhalten in benutzerdefinierte Anwendungen, für das Erstellen von Dashboards sowie erweiterte Analysen zu Data Science und der Entwicklung in Power BI erläutert.
 
 Kontaktieren Sie Ihren Microsoft Technical Account Manager, wenn Sie weitere Informationen benötigen. Wenn Sie noch keinen Supportvertrag für Microsoft Premier abgeschlossen haben, erhalten Sie weitere Informationen unter [Premier Support](https://support.microsoft.com/en-us/premier).

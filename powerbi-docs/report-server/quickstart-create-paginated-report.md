@@ -11,7 +11,7 @@ ms.date: 10/22/2018
 ms.author: maggies
 ms.openlocfilehash: 9e3a45e7648fd38413c2d45582981bac5e91cd2a
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "64770514"
@@ -46,7 +46,7 @@ Möglicherweise haben Sie den Berichts-Generator bereits zum Erstellen von Beric
    
     Der Diagramm-Assistent führt Sie durch die Schritte zum Erstellen eines einfachen Diagramms in einem Bericht. Anschließend können Sie den Bericht auf nahezu unbegrenzte Weisen anpassen.
 
-## <a name="step-2-go-through-the-chart-wizard"></a>Schritt 2: Durchlaufen des Diagramm-Assistenten
+## <a name="step-2-go-through-the-chart-wizard"></a>Schritt 2: Durchlaufen des Diagramm-Assistenten
 Der Diagramm-Assistent begleitet Sie durch die grundlegenden Schritte zum Erstellen einer Visualisierung in einem Bericht.
 
 Paginierte Berichte können mit einer Vielzahl von Datenquellen verbunden werden, z. B. Microsoft SQL Server, Microsoft Azure SQL-Datenbank, Oracle, Hyperion u.v.m. Erfahren Sie mehr zu [für paginierte Berichte unterstützten Datenquellen](connect-data-sources.md).
@@ -63,7 +63,7 @@ Auf der ersten Seite des Diagramm-Assistenten, **Dataset auswählen**, können S
     ![Diagramm-Assistent: Diagrammtyp](media/quickstart-create-paginated-report/reportserver-paginated-choose-chart-type.png)
 3. Ordnen Sie die Felder durch Ziehen zu den Feldern **Kategorien**, **Reihe** und **Werte** an.
    
-    ![Diagramm-Assistent: Anordnen von Feldern](media/quickstart-create-paginated-report/reportserver-paginated-arrange-fields.png)
+    ![Diagramm-Assistent: Felder anordnen](media/quickstart-create-paginated-report/reportserver-paginated-arrange-fields.png)
 4. Wählen Sie **Weiter** > **Fertig stellen** aus.
 
 ## <a name="step-3-design-your-report"></a>Schritt 3: Entwerfen des Berichts

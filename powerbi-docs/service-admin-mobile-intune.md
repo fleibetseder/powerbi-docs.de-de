@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/01/2018
+ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: d28a27d69d6e8799f08ddaa05e734ded62150c8f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b1af8c58e24ff1d95b28ea8a024c29ccdcac56b3
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710936"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71075613"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Konfigurieren mobiler Apps mit Microsoft Intune
 
@@ -56,7 +56,7 @@ Die URL sollte ungefähr wie folgt aussehen: *https://itunes.apple.com/us/app/mi
 
 Sie können die URL zu Google Play von der [Website von Power BI Mobile](https://powerbi.microsoft.com/mobile/) abrufen. Klicken Sie auf **Von Google Play herunterladen**, um zur Seite der App zu gelangen. Kopieren Sie die URL aus der Adressleiste des Browsers. Die URL sollte ungefähr wie folgt aussehen: *https://play.google.com/store/apps/details?id=com.microsoft.powerbim* .
 
-## <a name="step-2-create-a-mobile-application-management-policy"></a>Schritt 2: Erstellen einer Richtlinie für die Verwaltung mobiler Anwendungen
+## <a name="step-2-create-a-mobile-application-management-policy"></a>Schritt 2: Erstellen einer Richtlinie für die Verwaltung mobiler Anwendungen
 
 Die Richtlinie für die Verwaltung mobiler Anwendungen ermöglicht Ihnen das Erzwingen von Einstellungen, z. B. einer Zugriffs-PIN. Sie können eine im Intune-Portal erstellen.
 

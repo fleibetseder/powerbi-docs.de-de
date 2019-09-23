@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 06/30/2018
 ms.openlocfilehash: 9344a1a3dc4f682925da900cde8accfead783f88
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61272028"
@@ -148,7 +148,7 @@ Sie können mit der rechten Maustaste auf eine Gruppe klicken und die Gruppe inn
 > [!NOTE]
 > Der Name der *Gruppe* darf keine Leerzeichen oder ungültige Zeichen enthalten.
 
-## <a name="step-2-download"></a>Schritt 2: Herunterladen
+## <a name="step-2-download"></a>Schritt 2: Herunterladen
 
 Auf der Registerkarte **Herunterladen** sehen Sie die Liste der Berichte und die zugeordneten Metadaten. Sie können sowohl den Exportstatus, als auch den vorherige Exportstatus sehen.
 

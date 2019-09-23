@@ -3,20 +3,19 @@ title: Anzeigen eines Power BI-Dashboards
 description: Dashboards sind ein wichtiges Feature des Power BI-Diensts, erfahren Sie, wie Sie sie öffnen und ein Dashboard anzuzeigen.
 author: mihart
 manager: kvivek
-ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/12/2019
+ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: cd0b680265d526ecf7adbf4db8c54b77535eadf8
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: b8d604b8872bae14bc2ffeeb16b56b1b3a98e056
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65608486"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141387"
 ---
 # <a name="view-a-dashboard"></a>Anzeigen eines Dashboards
 *Benutzer* von Power BI verbringen viel Zeit damit, Dashboards anzuzeigen. Dashboards sind darauf ausgelegt, spezifische Informationen aus den zugrunde liegenden Berichten und Datasets hervorzuheben. Und Power BI-Benutzer verwenden diese Informationen zum Nachverfolgen, Überwachen, Beantworten von Fragen, zu Testzwecken und mehr – um datenbasierte Geschäftsentscheidungen zu treffen.
@@ -39,7 +38,7 @@ Power BI Pro ist sowohl für Freigeben eines Dashboards als auch Anzeigen eines 
 
 Sie können Dashboards in allen in der linken Navigationsleiste vorhandenen Containern finden. 
 
-![Dashboard-Symbol](media/end-user-dashboard-open/opendash.gif)
+![Dashboard-Symbol](media/end-user-dashboard-open/power-bi-open-dashboards.gif)
 
 - **Home** 
 - **Favoriten** – falls Sie [ein Dashboard als Favorit festgelegt haben](end-user-favorite.md).

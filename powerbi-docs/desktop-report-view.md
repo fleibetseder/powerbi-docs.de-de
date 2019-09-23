@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 153a77cdc7d4749ac450378723d04c82ef938de6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c76dfc45437fdc2406c89e41a4a076d9ef4e7a44
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514605"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71142177"
 ---
 # <a name="report-view-in-power-bi-desktop"></a>Berichtsansicht in Power BI Desktop
 Wenn Sie bereits mit Power BI gearbeitet haben, wissen Sie, wie einfach Berichte erstellt werden können, die dynamische Perspektiven und Einblicke in Ihre Daten bereitstellen. Power BI verfügt in Power BI Desktop zudem über weitere komplexe Funktionen. Mit Power BI Desktop können Sie komplexe Abfragen erstellen, Daten aus mehreren Quellen kombinieren, Beziehungen zwischen Tabellen erstellen usw.
@@ -61,9 +61,11 @@ Sie können ein Visual in einem Power BI Desktop-Bericht auf einfache Weise kopi
 
 Die Möglichkeit zum Kopieren und Einfügen ist nützlich für Benutzer, die häufig mehrere Berichte erstellen und aktualisieren müssen. Bei Kopiervorgängen zwischen Dateien werden alle explizit im Formatierungsbereich festgelegten Einstellungen und Formatierungen für das Ziel übernommen. Visuelle Elemente hingegen, die auf einem Design oder den Standardeinstellungen basieren, werden automatisch an das Thema des Zielberichts angepasst. Wenn Sie also über ein Visual verfügen, dass in Formatierung und Aussehen genau Ihren Anforderungen entspricht, können Sie dieses Visual einfach kopieren und in neue Berichte einfügen. Die gesamte Formatierungsarbeit bleibt erhalten.
 
-![Fehler beim Kopieren/Einfügen eines Visuals: kein Datenfeld](media/desktop-report-view/report-view_05.png)
+Wenn sich die Felder in Ihrem Modell unterscheiden, wird ein Fehler zum Visual angezeigt, und Sie werden in einer Warnung darüber informiert, welche Felder nicht vorhanden sind. Der Fehler ähnelt der Meldung, die beim Löschen eines Felds im Modell für ein Visual angezeigt wird. 
 
-Wenn sich die Felder in Ihrem Modell unterscheiden, wird ein Fehler zum Visual angezeigt, und Sie werden in einer Warnung darüber informiert, welche Felder nicht vorhanden sind. Der Fehler ähnelt der Meldung, die beim Löschen eines Felds im Modell für ein Visual angezeigt wird. Um den Fehler zu beheben, ersetzen Sie einfach die fehlerhaften Felder durch Felder aus dem Modell des Berichts, in den Sie das Visual eingefügt haben. Wenn Sie ein benutzerdefiniertes Visual verwenden, müssen Sie auch dieses benutzerdefinierte Visual in den Zielbericht importieren.
+![Fehler beim Kopieren/Einfügen eines Visuals: kein Datenfeld](media/desktop-report-view/report-view_07.png)
+
+Um den Fehler zu beheben, ersetzen Sie einfach die fehlerhaften Felder durch Felder aus dem Modell des Berichts, in den Sie das Visual eingefügt haben. Wenn Sie ein benutzerdefiniertes Visual verwenden, müssen Sie auch dieses benutzerdefinierte Visual in den Zielbericht importieren.
 
 
 

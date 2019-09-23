@@ -13,7 +13,7 @@ ms.author: davidi
 LocalizationGroup: Connect to services
 ms.openlocfilehash: c0c1ea450a4b386644fd1c83e9831e993c2b8e5a
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61403866"
@@ -83,7 +83,7 @@ Sobald Sie die Transformationen abgeschlossen haben, ändern Sie den Namen der A
 
 Sobald der Dataflow gespeichert und aktualisiert ist, können Sie ihn in einem Power BI-Bericht verwenden.
 
-### <a name="step-2-connect-from-power-bi-desktop"></a>Schritt 2: Herstellen einer Verbindung von Power BI Desktop aus
+### <a name="step-2-connect-from-power-bi-desktop"></a>Schritt 2: Herstellen einer Verbindung von Power BI Desktop aus
 
 Öffnen Sie Power BI Desktop. Wählen Sie im Menüband „Start“ den Befehl **Daten abrufen** aus.
 

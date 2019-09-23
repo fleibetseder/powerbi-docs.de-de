@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 06/08/2018
 ms.openlocfilehash: 6699167cecebea5085eff4621c077096fd4c6c2e
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61385141"
@@ -23,13 +23,13 @@ ms.locfileid: "61385141"
 * Max. 75 Spalten
 * Max. 75 Tabellen
 * Max. 10.000 Zeilen pro einzelner POST-Zeilenanforderung  
-* 1.000.000 Zeilen pro Stunde und Dataset hinzugefügt  
+* 1\.000.000 Zeilen pro Stunde und Dataset hinzugefügt  
 * Max. 5 ausstehende POST-Zeilenanforderungen pro Dataset  
 * 120 POST-Zeilenanforderungen pro Minute und Dataset
 * 120 POST-Zeilenanforderungen pro Stunde und Dataset, wenn die Tabelle aus mindestens 250.000 Zeilen besteht
 * Max. 200.000 Zeilen pro Tabelle im FIFO-Dataset gespeichert
 * Max. 5.000.000 Zeilen pro Tabelle in einem Dataset ohne Aufbewahrungsrichtlinie gespeichert  
-* 4.000 Zeichen pro Wert für Zeichenfolgenspalten in POST-Zeilenvorgängen
+* 4\.000 Zeichen pro Wert für Zeichenfolgenspalten in POST-Zeilenvorgängen
   
 ## <a name="see-also"></a>Siehe auch
 
