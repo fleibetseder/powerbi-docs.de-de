@@ -7,23 +7,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/24/2019
+ms.date: 09/05/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: c13398ff08722c54a9f0c373a1c103e4d684c9bb
-ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.openlocfilehash: 21a77d585707b19cd8a3d06ad44471fac45d7178
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70391354"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70903724"
 ---
 # <a name="reports-in-power-bi"></a>Berichte in Power BI
 
-Ein Power BI-Bericht stellt eine Ansicht eines Datasets aus verschiedenen Perspektiven dar, wobei die aus dem Dataset gewonnenen verschiedenen Ergebnisse und Erkenntnisse als Visuals angezeigt werden.  Ein Bericht kann ein einzelnes Visual, aber auch mehrere mit Visuals gefüllte Seiten enthalten. Abhängig von Ihrem Aufgabengebiet sind Sie möglicherweise jemand, der Berichte *entwirft*. Sie können auch jemand sein, der Berichte *nutzt* oder verwendet.
+Ein Power BI-Bericht stellt eine Ansicht eines Datasets aus verschiedenen Perspektiven dar, wobei die aus dem Dataset gewonnenen verschiedenen Ergebnisse und Erkenntnisse als Visuals angezeigt werden.  Ein Bericht kann ein einzelnes Visual, aber auch mehrere mit Visuals gefüllte Seiten enthalten. Abhängig von Ihrem Aufgabengebiet sind Sie möglicherweise jemand, der Berichte *entwirft*. Sie können auch jemand sein, der Berichte *nutzt* oder verwendet. Dieser Artikel richtet sich an *Consumer*.
 
-![Screenshot: Berichtsseite](./media/end-user-reports/power-bi-reports.png)
+![Screenshot: Berichtsseite](./media/end-user-reports/power-bi-report.png)
 
-Dieser Bericht umfasst sechs Seiten (bzw. Registerkarten). Sie sehen hier die Seite **Stimmung**. Diese Seite enthält fünf verschiedene Visuals und einen Seitentitel. Im Bereich *Filter* wird ein Filter angezeigt, der auf alle Berichtseiten angewendet wird. Klicken Sie auf den Pfeil ( **>** ), um den Filterbereich zu reduzieren.
+A. Dieser Bericht umfasst sechs Seiten (bzw. Registerkarten). Sie sehen hier die Seite **Stimmung**.    
+B. Diese Seite enthält fünf verschiedene Visuals und einen Seitentitel.    
+C. Im Bereich *Filter* wird ein Filter angezeigt, der auf alle Berichtseiten angewendet wird. Klicken Sie auf den Pfeil ( **>** ), um den Filterbereich zu reduzieren.    
+D. Das Power BI-Banner zeigt den Namen des Berichts und das Datum der letzten Aktualisierung an. Wählen Sie den Pfeil aus, um ein Menü zu öffnen, in dem auch der Name des Berichtsbesitzers angezeigt wird.    
+E. Die Aktionsleiste enthält Aktionen, die Sie für diesen Bericht ausführen können.  Beispielsweise können Sie einen Kommentar hinzufügen, ein Lesezeichen anzeigen oder Daten aus dem Bericht exportieren.  Wählen Sie die Auslassungspunkte (...) aus, um eine Liste der zusätzlichen Berichtsfunktionen anzuzeigen.    
 
 Wenn Sie noch nicht mit Power BI vertraut sind, können Sie sich mithilfe des Artikels [Basic concepts for the Power BI service consumers (Grundkonzepte für Benutzer des Power BI-Diensts)](end-user-basic-concepts.md) eine gute Grundlage schaffen. Berichte können auf mobilen Geräten angezeigt, freigegeben und kommentiert werden. Weitere Informationen finden Sie unter [Explore reports in the Power BI mobile apps (Untersuchen von Berichten in mobilen Power BI-Apps)](mobile/mobile-reports-in-the-mobile-apps.md).
 
@@ -68,9 +72,9 @@ Abhängig von Ihrem Aufgabengebiet sind Sie möglicherweise ein *Designer*, der 
 Oder Sie sind ein *Berichtsnutzer*, der Berichte von anderen erhält. Dann sollten Sie wissen, wie Sie mit Berichten interagieren können, und sie verstehen. Wenn Sie *Berichtsnutzer* sind, sollten Sie den folgenden Links folgen:
 
 * Beginnen Sie mit einer [Tour des Power BI-Diensts](end-user-basic-concepts.md), um zu erfahren, wo Sie Berichte und Berichtstools finden.
-* Erfahren Sie, wie Sie [einen Bericht öffnen](end-user-report-open.md), und lernen Sie alle verfügbaren Interaktionen in der [Leseansicht](end-user-reading-view.md) kennen.
+* Erfahren Sie, wie Sie [einen Bericht öffnen](end-user-report-open.md), und lernen Sie alle [für Consumer verfügbaren Interaktionen](end-user-reading-view.md) kennen.
 * Machen Sie sich mit Berichten vertraut, indem Sie sich eine Tour durch eines unserer [Beispiele](../sample-tutorial-connect-to-the-samples.md) ansehen.  
-* Informationen dazu, welches Dataset ein Bericht verwendet und welche Dashboards Kacheln aus dem Bericht angeheftet haben, finden Sie unter [View related content in the Power BI service (Anzeigen verwandter Inhalte im Power BI-Dienst)](end-user-related.md).
+* Informationen dazu, welches Dataset ein Bericht verwendet und welche Dashboards Visuals aus dem Bericht anzeigen (*Pins*), finden Sie unter [Anzeigen verwandter Inhalte im Power BI-Dienst](end-user-related.md).
 
 > [!TIP]
 > Wenn Sie die gesuchten Informationen hier nicht finden, verwenden Sie das Inhaltsverzeichnis auf der linken Seite, um alle Artikel zu *Berichten* zu durchsuchen.

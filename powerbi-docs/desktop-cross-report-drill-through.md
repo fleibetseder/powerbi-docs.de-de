@@ -1,119 +1,124 @@
 ---
-title: Verwenden von Cross-Report-Drillthrough im Power BI Desktop
-description: Erfahren Sie, wie Sie einen Bericht in eine andere in Power BI Desktop einen Drillthrough von
+title: Verwenden der berichtsübergreifenden Drillthroughfunktion in Power BI Desktop
+description: Erfahren Sie, wie Sie einen Drillthrough von einem Bericht zu einem anderen in Power BI Desktop durchführen.
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/08/2019
+ms.date: 09/10/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 45a7cdd3c7b5324f3d618eaba4bdb3968a9549a5
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: e735d45a7a49c4a0365e35d5bb95957c6145f934
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375187"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70903754"
 ---
-# <a name="use-cross-report-drillthrough-in-power-bi-desktop"></a>Verwenden von Cross-Report-Drillthrough im Power BI Desktop
+# <a name="use-cross-report-drillthrough-in-power-bi-desktop"></a>Verwenden der berichtsübergreifenden Drillthroughfunktion in Power BI Desktop
 
-Mit der Drillthroughfunktion Cross-Bericht in Power BI Desktop können Sie je nach Kontext aus einem Bericht mit einem anderen Bericht springen. Dies gilt, solange die Berichte innerhalb des gleichen Arbeitsbereich oder in Microsoft Power BI-Dienst-app sind. Verwenden von Drillthrough für Cross-Report-Verbindung von zwei oder mehr Berichte, die Inhalt verknüpft haben, und den Filterkontext zusammen mit der Verbindung mit der Cross-Berichtsserver zu übergeben. In diesem Artikel erfahren Sie, wie zum Einrichten eines Drillthroughberichts Cross-Bericht für Power BI-Berichten und was auftreten, wenn sie den Drillthrough Cross-Bericht für sich selbst verwenden.
+Mit der berichtsübergreifenden Drillthroughfunktion in Power BI Desktop können Sie kontextbezogen von einem Bericht zu einem anderen Bericht wechseln. Dies trifft zu, solange sich die Berichte im Power BI-Dienst im gleichen Arbeitsbereich oder der gleichen App befinden. Verwenden Sie die berichtsübergreifende Drillthroughfunktion zum Verbinden von zwei oder mehr Berichten mit verwandten Inhalten, und um den Filterkontext zusammen mit der berichtsübergreifenden Verbindung zu übergeben. In diesem Artikel erfahren Sie, wie Sie einen berichtsübergreifenden Drillthrough für Power BI-Berichte einrichten und welche Erfahrungen Benutzer mit der Verwendung des berichtsübergreifenden Drillthroughs machen.
 
-![Screenshot von Power BI Desktop-Drillthrough-option](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
+![Screenshot der Drillthroughoption von Power BI Desktop](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
 
-Die folgenden Definitionen sind wichtig, zu verstehen, bevor wir beginnen das Einrichten und Verwenden von Cross-Bericht Drillthrough:
+Sie müssen die folgenden Definitionen verstehen, bevor wir mit dem Einrichten und Verwenden eines berichtsübergreifenden Drillthroughs beginnen:
 
-* **Quellvisual:** Das visuelle Element, das die Drillthrough-Aktion mit dem visuellen Kontext-Menü aufruft.
-* **Der Quellbericht:** Der Bericht, der das visuelle Quellelement für den Drillthrough für Cross-Bericht enthält.
-* **Zielseite:** Die Seite, die ein Benutzer zu gelangt, nach dem Initiieren einer Drillthroughaktion.
-* **Zielbericht:** Der Bericht, der die Zielseite für den Drillthrough für Cross-Bericht enthält.
+* **Quellvisual:** Das Visual, das die Drillthroughaktion über das Visualkontextmenü aufruft.
+* **Quellbericht:** Der Bericht, der das Quellvisual für den berichtsübergreifenden Drillthrough enthält.
+* **Zielseite:** Die Seite, auf die ein Benutzer nach Initiieren einer Drillthroughaktion gelangt.
+* **Zielbericht:** Der Bericht, der die Zielseite für den berichtsübergreifenden Drillthrough enthält.
 
-## <a name="enable-cross-report-drillthrough"></a>Aktivieren von Drillthrough für Cross-Bericht
-
-Um einen Bericht auf das Ziel eines Drillthroughberichts Cross-Bericht zu aktivieren, müssen Sie die Funktion für diesen Bericht in Aktivieren der **Optionen** Fenster. Wechseln Sie zu **Datei** > **Optionen und Einstellungen** > **Optionen**, und navigieren Sie zu **Berichtseinstellungen** in der Nähe der unten auf der Seite auf der linken Seite.
-
-Wählen Sie die **können Sie visuelle Elemente in diesem Bericht für die Verwendung von Drillthrough-Ziele, die von anderen Berichten** Kontrollkästchen, wie in der folgenden Abbildung dargestellt.
-
-![Screenshot der Optionen angezeigt, klicken Sie mit Einstellungen für den hervorgehoben](media/desktop-cross-report-drill-through/cross-report-drill-through-02.png)
-
-Drillthrough für Cross-Bericht ist jetzt aktiviert.
-
-## <a name="set-up-cross-report-drillthrough"></a>Einrichten von Drillthrough für Cross-Bericht
-
-Einrichten von Drillthrough für Cross-Bericht ähnelt das Einrichten von Drillthrough in einem Bericht. Drillthrough ist auf der Zielseite aktiviert, sodass andere Visualisierungen auf der Seite "aktiviert" für den Drillthrough abzielen. Die Schritte zum Erstellen von Drillthrough in einem einzelnen Bericht finden Sie unter [verwenden der Drillthroughfunktion in Power BI Desktop](desktop-drillthrough.md).
-
-Um den Installationsvorgang zu starten, müssen Sie einige erste-Schritte ausführen:
-
-* Richten Sie einen Drillthrough-Zielseite, die dann von anderen Berichten im Arbeitsbereich oder app zugegriffen werden kann.
-* Können Sie einen Bericht, um Drillthrough-Seiten von außerhalb der eigenen Berichts anzuzeigen.
-
-Suchoptionen Drillthrough in die **Felder** Teil der **Visualisierungen** Bereich, der in der folgenden Abbildung dargestellt.
-
-![Screenshot des Bereichs "Visualisierungen", mit hervorgehobenen Drillthrough-Optionen](media/desktop-cross-report-drill-through/cross-report-drill-through-03.png)
-
-Der erste Schritt beim Aktivieren von Drillthrough für eine Seite ist die Datenmodelle für die Quell- und Berichte zu überprüfen. Stellen Sie sicher, dass: 
-
-* Felder, die Sie übergeben möchten, die in Datenmodellen vorhanden sind.
-* Die Namen der Felder und die Namen der Tabellen, denen sie angehören, sind identisch (die Zeichenfolgen müssen ebenfalls übereinstimmen und Groß-/Kleinschreibung beachtet werden).
-
-Wenn Sie einen Filter auf das Feld übergeben möchten z. B. *Land* in Tabelle *Geography*, beider Modelle müssen eine *Geography* Tabelle und eine *Land* Feld in der Tabelle. Wenn dies nicht der Fall ist, müssen Sie den Feldnamen oder den Tabellennamen in der zugrunde liegenden Modell aktualisieren. Aktualisieren einfach den Anzeigenamen der Felder funktioniert ordnungsgemäß für Cross-Report-Drillthrough nicht. (Beachten Sie, dass die Schemas in jedem Bericht nicht identisch sein.)
-
-Um mit dem Setup beginnen, müssen Sie auf der Seite "Ziel" vorzubereiten. Klicken Sie in Power BI Desktop öffnen Sie die Seite, und stellen Sie sicher die **Cross-Bericht** Drillthrough ein-/ausschalten nastaven NA hodnotu **auf**. 
-
-![Screenshot des Cross-Bericht ein-/ausschalten, die auf On festgelegt](media/desktop-cross-report-drill-through/cross-report-drill-through-03.png)
-
-Ziehen Sie anschließend die Felder, die Sie als Ziel für Drillthrough auf die Canvas verwenden möchten. Wählen Sie, ob das Feld als eine Kategorie verwendet werden soll, oder zusammengefasst, wie ein Measure werden sollen. An diesem Punkt können Sie auswählen, ob Sie deaktivieren möchten die **alle Filter beibehalten** ein/aus, für das visuelle Element. Wenn Sie keine andere angewendete Filter aus der Quelle visual an Ihr Ziel-Drillthrough visual übergeben möchten, wählen Sie **aus**.
 
 > [!NOTE]
-> Wenn Sie die Seite für Cross-Report-Drillthrough nur verwenden, sollten Sie löschen die **wieder** Schaltfläche, die automatisch hinzugefügt wird. Die **wieder** Schaltfläche funktioniert nur für Nagivation in einem einzelnen Bericht. 
+> Auf einzeln freigegebene Berichte in *Mein Arbeitsbereich*, bei denen es sich um Berichte handelt, die als *[Für mich freigegeben](service-share-dashboards.md#share-a-dashboard-or-report)* angezeigt werden, kann nur in dem Arbeitsbereich zugegriffen werden, von dem aus sie ursprünglich freigegeben wurden. 
 
-Nachdem Sie das visuelle Element konfiguriert haben, stellen Sie sicher, dass Sie den Bericht speichern, wenn Sie im Power BI-Dienst sind, oder speichern, und veröffentlichen Sie den Bericht aus, wenn Sie Power BI Desktop verwenden.
 
-Im vorherigen Abschnitt beschrieben, wie Sie Drillthrough für Cross-Bericht für Power BI Desktop zu aktivieren (in der **Optionen** Fenster). Wenn Sie zum Erstellen von eines Ziels-Drillthrough für Cross-Bericht, um Cross-Report-Drillthrough zu aktivieren, Sie müssen, Power BI-Dienst verwenden: 
+## <a name="enable-cross-report-drillthrough"></a>Aktivieren des berichtsübergreifenden Drillthroughs
 
-1. Wählen Sie den Arbeitsbereich, in dem sich Ihre Ziel und Quellbericht befinden.
-2. Wählen Sie **Berichte**.
-3. Wählen Sie die **Einstellungen** Symbol für Quellbericht einen Fehler verursacht.
-4. Stellen Sie sicher, dass die Umschaltfläche Cross-Report-Drillthrough **auf**.
-5. Speichern Sie den Bericht an.
+Um einen Bericht als Ziel eines berichtsübergreifenden Drillthroughs zu aktivieren, müssen Sie die Funktion für diesen Bericht im Fenster **Optionen** aktivieren. Wechseln Sie zu **Datei** > **Optionen und Einstellungen** > **Optionen**, und navigieren Sie dann zu **Berichtseinstellungen** in der Nähe des unteren Seitenrandes links.
 
-Fertig! Ihr Bericht ist für die Cross-Report-Drillthrough-Oberfläche bereit. 
+Aktivieren Sie das Kontrollkästchen **Erlauben Sie, dass Visuals in diesem Bericht Drillthroughziele aus anderen Berichten verwenden**, wie in der folgenden Abbildung dargestellt.
 
-Im nächsten Abschnitt sehen wir, wie die aus Sicht des Benutzers.
+![Screenshot des Fensters „Optionen“ mit hervorgehobenen „Berichtseinstellungen“](media/desktop-cross-report-drill-through/cross-report-drill-through-02.png)
 
-## <a name="cross-report-drillthrough-experience"></a>Cross-Report-Drillthrough-Erfahrung
+Berichtsübergreifender Drillthrough ist jetzt aktiviert.
 
-Wenn Sie die Cross-Report-Drillthrough-Erfahrung für einen Bericht konfigurieren, können Sie die Funktion zur einfügen.
+## <a name="set-up-cross-report-drillthrough"></a>Einrichten des berichtsübergreifenden Drillthroughs
 
-Wählen Sie den Quellbericht in Power BI-Dienst, und wählen Sie dann auf eine Visualisierung, die verwendet werden, das Feld oder Felder in die Möglichkeit, die Sie beim Einrichten der Seite "Ziel" angegeben haben. Als Nächstes Maustaste einen Datenpunkt, um die visuellen Kontext-Menü zu öffnen, und wählen **Drillthrough**.
+Das Einrichten des berichtsübergreifenden Drillthroughs ähnelt dem Einrichten eines Drillthroughs innerhalb eines Berichts. Der Drillthrough wird auf der Zielseite aktiviert, sodass andere Visuals für den Drillthrough auf die aktivierte Seite zugreifen können. Die Schritte zum Erstellen eines Drillthroughs innerhalb eines einzelnen Berichts finden Sie unter [Verwenden der Drillthroughfunktion in Power BI Desktop](desktop-drillthrough.md).
 
-![Screenshot der Quellbericht in Power BI-Dienst, mit Drillthrough hervorgehoben](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
+Um den Setupvorgang zu starten, müssen Sie zuerst folgende Schritte ausführen:
 
-Klicken Sie dann sehen die Ergebnisse in der Ziel-Cross-Report-drillthroughseite Sie genau, wie Sie sie richten Sie beim Erstellen des Ziels. Die Ergebnisse werden nach der Drillthrougheinstellungen gefiltert.
+* Richten Sie eine Drillthroughzielseite ein, auf die andere Berichte im Arbeitsbereich oder in der App zugreifen können.
+* Ermöglichen Sie, dass ein Bericht Drillthroughseiten erkennen kann, die sich außerhalb des Berichts befinden.
+
+Im Abschnitt **Felder** des Bereichs **Visualisierungen** finden Sie Drillthroughoptionen, wie in der folgenden Abbildung dargestellt.
+
+![Screenshot des Bereichs „Visualisierungen“ mit hervorgehobenen Drillthroughoptionen](media/desktop-cross-report-drill-through/cross-report-drill-through-03.png)
+
+Der erste Schritt beim Aktivieren des Drillthroughs für eine Seite besteht darin, die Datenmodelle für Quell- und Zielberichte zu validieren. Stellen Sie Folgendes sicher: 
+
+* Felder, die Sie übergeben möchten, sind in beiden Datenmodellen vorhanden.
+* Die Namen der Felder und die Namen der Tabellen, zu denen sie gehören, sind identisch (die Zeichenfolgen müssen ebenfalls unter Berücksichtigung der Groß-/Kleinschreibung übereinstimmen).
+
+Wenn Sie z. B. einen Filter für das Feld *Land* innerhalb der Tabelle *Geografie* übergeben möchten, müssen beide Modelle über eine Tabelle *Geografie* verfügen, die ein Feld *Land* enthält. Andernfalls müssen Sie den Feld- oder Tabellennamen im zugrunde liegenden Modell aktualisieren. Das einfache Aktualisieren des Anzeigennamens der Felder funktioniert für berichtsübergreifende Drillthroughs nicht ordnungsgemäß. (Beachten Sie, dass die Schemas in den einzelnen Berichten nicht identisch sein müssen.)
+
+Zum Einstieg in das Setup müssen Sie die Zielseite vorbereiten. Wechseln Sie in Power BI Desktop zu der Seite, und stellen Sie sicher, dass der Drillthrougschalter **Berichtsübergreifend** auf **Ein** festgelegt ist. 
+
+![Screenshot: Schalter „Berichtsübergreifend“ auf „Ein“ festgelegt](media/desktop-cross-report-drill-through/cross-report-drill-through-03.png)
+
+Ziehen Sie als nächstes die Felder, die Sie als Drillthroughziel verwenden möchten, in den Zeichenbereich. Wählen Sie aus, ob das Feld als Kategorie oder zusammengefasst wie ein Measure verwendet werden soll. An diesem Punkt können Sie auswählen, ob Sie den Schalter **Alle Filter beibehalten** für das Visual deaktivieren möchten. Wenn Sie keine anderen angewendeten Filter vom Quellvisual an das Zieldrillthroughvisual übergeben möchten, wählen Sie **Aus** aus.
+
+> [!NOTE]
+> Wenn Sie die Seite nur für den berichtsübergreifenden Drillthrough verwenden, sollten Sie die Schaltfläche **Zurück** löschen, die automatisch hinzugefügt wird. Die Schaltfläche **Zurück** funktioniert nur für die Navigation innerhalb eines einzelnen Berichts. 
+
+Nachdem Sie das Visual konfiguriert haben, stellen Sie sicher, dass Sie den Bericht speichern, wenn Sie sich im Power BI-Dienst befinden, oder speichern und veröffentlichen Sie den Bericht, wenn Sie Power BI Desktop verwenden.
+
+Im vorherigen Abschnitt wurde das Aktivieren eines berichtsübergreifenden Drillthroughs für Power BI Desktop beschrieben (im Fenster **Optionen**). Wenn Sie den Power BI-Dienst zum Erstellen eines berichtsübergreifenden Drillthroughziels verwenden, müssen Sie Folgendes tun, um den berichtsübergreifenden Drillthrough zu aktivieren: 
+
+1. Wählen Sie den Arbeitsbereich aus, in dem sich Zielbericht und Quellbericht befinden.
+2. Wählen Sie **Berichte** aus.
+3. Wählen Sie das **Einstellungen**-Symbol für den Quellbericht aus.
+4. Stellen Sie sicher, dass der Schalter für den berichtsübergreifenden Drillthrough auf **Ein** gesetzt ist.
+5. Speichern Sie den Bericht.
+
+Fertig! Der Bericht ist für die berichtsübergreifende Drillthroughfunktion bereit. 
+
+Im nächsten Abschnitt betrachten wir die Benutzeroberfläche aus der Perspektive des Benutzers.
+
+## <a name="cross-report-drillthrough-experience"></a>Benutzeroberfläche für berichtsübergreifenden Drillthrough
+
+Wenn Sie die Benutzeroberfläche für den berichtsübergreifenden Drillthrough für einen Bericht konfigurieren, können Sie die Funktion einsatzbereit machen.
+
+Wählen Sie den Quellbericht im Power BI-Dienst aus, und wählen Sie dann eine Visualisierung aus, die das Feld bzw. die Felder so verwendet, wie Sie es beim Einrichten der Zielseite angegeben haben. Klicken Sie dann mit der rechten Maustaste auf einen Datenpunkt, um das Visualkontextmenü zu öffnen, und wählen Sie **Drillthrough** aus.
+
+![Screenshot des Quellberichts im Power BI-Dienst, wobei „Drillthrough“ hervorgehoben ist](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
+
+Dann sehen Sie die Ergebnisse auf der Zielseite des berichtsübergreifenden Drillthroughs, so wie Sie sie beim Erstellen des Ziels eingerichtet haben. Die Ergebnisse werden den Drillthrougheinstellungen gemäß gefiltert.
 
 > [!IMPORTANT]
-> Powerbi speichert Cross-Report-Drillthrough-Ziele. Wenn Sie Änderungen vornehmen, sollten Sie darauf achten Sie, dass Sie Ihren Browser aktualisieren, wenn Sie nicht die Drillthrough-Ziele wie erwartet angezeigt. 
+> Power BI speichert Ziele des berichtsübergreifenden Drillthroughs zwischen. Wenn Sie Änderungen vornehmen, achten Sie darauf, dass Sie Ihren Browser aktualisieren, wenn nicht die erwarteten Drillthroughziele angezeigt werden. 
 
-Cross-Report-Ziele werden wie folgt formatiert: 
+Berichtsübergreifende Ziele werden wie folgt formatiert: 
 
 `Target Page Name [Target Report Name]`
 
-Nachdem Sie auf der Seite "Ziel" auswählen, zum Ausführen eines Drillthroughs werden soll, wird Power BI zu dieser Seite. Filterkontext auf Grundlage der Einstellungen von der Seite "Ziel" übergibt. 
+Nachdem Sie die Zielseite ausgewählt haben, für die Sie einen Drillthrough durchführen möchten, wird Power BI zu dieser Seite weitergeleitet. Der Filterkontext wird auf der Grundlage der Einstellungen der Zielseite übergeben. 
 
-Filterkontext aus dem quellvisual kann Folgendes umfassen: 
+Der Filterkontext aus dem Quellvisual kann Folgendes umfassen: 
 
-* Bericht, Seiten- und Filter auf visueller Ebene Auswirkungen auf das visuelle Quellelement. 
-* Kreuzfiltern und übergreifende Hervorhebung, die Auswirkungen auf das visuelle Quellelement aus. 
-* Datenschnitte auf der Seite und der Slicer synchronisieren.
+* Filter auf Berichts-, Seiten- und Visualebene, die sich auf das Quellvisual auswirken. 
+* Kreuzfilterung und übergreifende Hervorhebung, die sich auf das Quellvisual auswirken. 
+* Slicer auf der Seite und Synchronisierungsslicer.
 * URL-Parameter.
 
-Wenn Sie auf dem Zielbericht für den Drillthrough zu verschieben, gilt die Power BI nur Filter für Felder, die für die festgestellt wird, entspricht genau der Zeichenfolge für das Feld und Tabellennamen. Powerbi anwenden nicht persistente Filter aus den Zielbericht. Der Fall ist, gelten diese Ihrer persönlichen Standardverzeichnis für Lesezeichen jedoch ggf. vorhandenen eigenschaftennamenparameter. Wenn Ihre persönliche Standardverzeichnis für Lesezeichen einen Filter auf Berichtsebene für enthält z. B. *Country = US*, Power BI wendet zunächst, dass der Filter vor dem Anwenden des filterkontexts aus dem quellvisual. 
+Wenn Sie zu dem Zielbericht für den Drillthrough gelangen, wendet Power BI nur Filter für Felder an, für die genaue Zeichenfolgenübereinstimmungen für Feldname und Tabellenname gefunden werden. Power BI wendet keine Kurzfilter aus dem Zielbericht an. Es wird jedoch Ihr standardmäßiges persönliches Lesezeichen angewendet, sofern vorhanden. Wenn Ihr standardmäßiges persönliches Lesezeichen z. B. einen Filter auf Berichtsebene für *Country = US* enthält, wendet Power BI diesen Filter an, bevor der Filterkontext aus dem Quellvisual angewendet wird. 
 
-Für den Drillthrough für Cross-Bericht übergibt Power BI den Filterkontext für alle standard-Seiten im Zielbericht an. Filterkontext für QuickInfo-Seiten, kann von Powerbi nicht übergeben werden, da der QuickInfo-Seiten basierend auf dem visual Source gefiltert werden, die die QuickInfo aufruft.
+Für den berichtsübergreifenden Drillthrough übergibt Power BI den Filterkontext an alle Standardseiten des Zielberichts. Power BI übergibt den Filterkontext nicht für QuickInfo-Seiten, da QuickInfo-Seiten auf Basis des Quellvisuals gefiltert werden, das die QuickInfo aufruft.
 
-Wenn Sie nach dem die Cross-Report-Drillthrough-Aktion an den Quellbericht zurückkehren möchten, verwenden Sie im Browsers auf die **wieder** Schaltfläche. 
+Wenn Sie nach der berichtsübergreifenden Drillthroughaktion zum Quellbericht zurückkehren möchten, verwenden Sie die Schaltfläche **Zurück** des Browsers. 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
