@@ -11,7 +11,7 @@ ms.date: 3/5/2018
 ms.author: pashah
 ms.openlocfilehash: c479b2600dad31756101c57ba2b1c5fc7fa19b2f
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "60976745"
@@ -29,8 +29,8 @@ In der folgenden Tabelle wird die maximale Anzahl von Benutzern angegeben, die P
 
 | Arbeitsauslastung | 8 Kerne/32 GB RAM | 16 Kerne/64 GB RAM |
 | --- | --- | --- |
-| **Power BI-Bericht – stark** (> 60 %) |1.000 Benutzer |3.000 Benutzer |
-| **Paginierter Bericht (RDL) – stark** (> 60 %) |2.000 Benutzer |3.200 Benutzer |
+| **Power BI-Bericht – stark** (> 60 %) |1\.000 Benutzer |3\.000 Benutzer |
+| **Paginierter Bericht (RDL) – stark** (> 60 %) |2\.000 Benutzer |3\.200 Benutzer |
 
 Bei jeder Ausführung war die CPU die am stärksten belastete Ressource. Aus diesem Grund führt eine höhere Anzahl von Kernen für Power BI-Berichtsserver zu einer höheren Zuverlässigkeit des Systems als die Erhöhung des Arbeitsspeichers oder Festplattenspeichers. 
 
@@ -86,8 +86,8 @@ Wir haben bei Microsoft eine Produktionsbereitstellung von Power BI-Berichtsserv
 
 | Arbeitsauslastung | 8 Kerne/32 GB | 16 Kerne/64 GB |
 | --- | --- | --- |
-| **Power BI-Bericht – stark** |1.000 Benutzer |3.000 Benutzer |
-| **Paginierter Bericht – stark** |2.000 Benutzer |3.200 Benutzer |
+| **Power BI-Bericht – stark** |1\.000 Benutzer |3\.000 Benutzer |
+| **Paginierter Bericht – stark** |2\.000 Benutzer |3\.200 Benutzer |
 
 ### <a name="view-results"></a>Anzeigen der Ergebnisse
 Wählen Sie einen Bericht aus, um die Ergebnisse des Auslastungstests anzuzeigen.

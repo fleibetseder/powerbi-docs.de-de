@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 4507490fc2986ec7934af4c9e7417585523c7a05
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61143932"
@@ -153,7 +153,7 @@ Es kann vorkommen, dass beim Verbinden von Dataflows mit Datenquellen Probleme a
 
 * **SharePoint-Connector**: Achten Sie darauf, dass Sie die Stammadresse der SharePoint-Website angeben – ohne Unterordner oder Dokumente. Verwenden Sie z.B. einen Link wie den folgenden: https://microsoft.sharepoint.com/teams/ObjectModel/. 
 
-* **JSON-Datei-Connector:** Derzeit können Sie eine Verbindung mit einer JSON-Datei nur über die Standardauthentifizierung herstellen.  Die Verbindung zu einer JSON-Datei durch Bereitstellen der Anmeldeinformationen innerhalb der URL (z.B. https://XXXXX.blob.core.windows.net/path/file.json?sv=2019-01-01&si=something&sr=c&sig=123456abcdefg..) wird derzeit **nicht** unterstützt.  
+* **JSON-Datei-Connector:** Derzeit können Sie eine Verbindung mit einer JSON-Datei nur über die Standardauthentifizierung herstellen.  Die Verbindung zu einer JSON-Datei durch Bereitstellen der Anmeldeinformationen innerhalb der URL (z.B. https://XXXXX.blob.core.windows.net/path/file.json?sv=2019-01-01&si=something&sr=c&sig=123456abcdefg.. ) wird derzeit **nicht** unterstützt.  
 
 * **Azure SQL Data Warehouse:** Dataflows unterstützen derzeit nicht die Azure Active Directory-Authentifizierung (AAD) für Azure SQL Data Warehouse. Verwenden Sie für dieses Szenario die Standardauthentifizierung.
 
@@ -162,9 +162,9 @@ Es kann vorkommen, dass beim Verbinden von Dataflows mit Datenquellen Probleme a
 Dieser Artikel beschreibt, wie Sie Ihren eigenen **Dataflow** und in **Power BI Desktop** ein Dataset und einen Bericht erstellen, um diesen zu nutzen. Die folgenden Artikel enthalten nützliche Informationen und Szenarien zur Verwendung von Dataflows:
 
 * [Self-Service-Datenaufbereitung mit Dataflows](service-dataflows-overview.md)
-* [Verwenden berechnete Elemente in Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [Verwenden Datenflüsse mit lokalen Datenquellen](service-dataflows-on-premises-gateways.md)
-* [Entwicklerressourcen für Power BI-Datenflüsse](service-dataflows-developer-resources.md)
+* [Using computed entities on Power BI Premium (Verwenden berechneter Entitäten in Power BI Premium)](service-dataflows-computed-entities-premium.md)
+* [Using dataflows with on-premises data sources (Verwenden von Datenflüssen mit lokalen Datenquellen)](service-dataflows-on-premises-gateways.md)
+* [Developer resources for Power BI dataflows (Entwicklerressourcen für Power BI-Datenflüsse)](service-dataflows-developer-resources.md)
 * [Dataflows und Integration in Azure Data Lake (Vorschauversion)](service-dataflows-azure-data-lake-integration.md)
 
 Weitere Informationen zum Common Data Model finden Sie im folgenden Übersichtsartikel:

@@ -9,13 +9,13 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.date: 08/29/2019
-ms.openlocfilehash: 0755b41fbeef1f62d2722e3529007dc4f8773634
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.date: 09/13/2019
+ms.openlocfilehash: d2c0ab82a3b262a975c461a4414ed7fd3b1bc060
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70186086"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71075902"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Vergleich zwischen Power BI-Berichtsserver und Power BI-Dienst
 
@@ -44,7 +44,7 @@ Der Power BI-Berichtsserver und der Power BI-Dienst weisen viele Ähnlichkeiten,
 | Paginierte Berichte | Ja | Ja | [Paginierte Berichte sind mit der Premium-Kapazität in der Vorschauversion im Power BI-Dienst verfügbar](../paginated-reports-report-builder-power-bi.md) |
 | Mobile Power BI-Apps | Ja | Ja | [Übersicht über mobile Power BI-Apps](../consumer/mobile/mobile-apps-for-mobile-devices.md) |
 | ArcGIS-Karten | Nein | Ja | [ArcGIS Maps von ESRI im Power BI-Dienst und in Power BI Desktop](../visuals/power-bi-visualization-arcgis.md) |
-| E-Mail-Abonnements für Power BI-Berichte | Ja | Ja | [Abonnieren eines Berichts oder Dashboards im Power BI-Dienst für sich selbst und andere](../service-report-subscribe.md) im Power BI-Dienst |
+| E-Mail-Abonnements für Power BI-Berichte | Nein | Ja | [Abonnieren eines Berichts oder Dashboards im Power BI-Dienst für sich selbst und andere](../service-report-subscribe.md) im Power BI-Dienst |
 | E-Mail-Abonnements für paginierte Berichte | Ja | Ja | [Abonnieren von paginierten Berichten für sich selbst und andere im Power BI-Dienst](../paginated-reports-subscriptions.md)<br><br>[E-Mail-Übermittlung in Reporting Services](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  |
 | Datenwarnungen | Nein | Ja | [Datenwarnungen](../service-set-data-alerts.md) im Power BI-Dienst
 | Sicherheit auf Zeilenebene (row-level security; RLS) | Ja | Ja | Verfügbar im DirectQuery-Modus (Datenquelle) und im Importmodus <br><br>Sicherheit auf Zeilenebene (row-level security; RLS) im [Power BI-Dienst](../service-admin-rls.md) <br><br>Sicherheit auf Zeilenebene auf dem [Power BI-Berichtsserver](row-level-security-report-server.md) |
@@ -57,4 +57,4 @@ Der Power BI-Berichtsserver und der Power BI-Dienst weisen viele Ähnlichkeiten,
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Installieren von Power BI-Berichtsserver](install-report-server.md)  
+[Installieren von Power BI-Berichtsserver](install-report-server.md)

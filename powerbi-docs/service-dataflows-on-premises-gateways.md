@@ -10,22 +10,19 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 82c8bbb5361730b306cacd14dc9598ca12035027
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 81dfc6961ff0c00b609f98e50da3532a230cf26d
+ms.sourcegitcommit: 244d110b28d4978f360cbece3a7c896e1a645258
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61136171"
 ---
-# <a name="using-dataflows-with-on-premises-data-sources-preview"></a>Verwenden von Dataflows mit lokalen Datenquellen (Vorschau)
+# <a name="using-dataflows-with-on-premises-data-sources"></a>Verwenden von Dataflows mit lokalen Datenquellen
 
 Mit **Dataflows** können Sie eine Sammlung von Daten aus verschiedenen Quellen erstellen, bereinigen, transformieren und anschließend im Power BI-Speicher laden. Beim Erstellen von Dataflows sollten Sie lokale Datenquellen verwenden. In diesem Artikel werden die Anforderung zum Erstellen von Dataflows und die Erfordernis erläutert, dass Ihr **Enterprise-Gateway** konfiguriert werden muss, um diese Verbindungen zu aktivieren.
 
 ![Dataflows und Gateways](media/service-dataflows-onpremises-gateways/onpremises-gateways_01.png)
 
-> [!NOTE]
-> Die Dataflowfunktionalität befindet sich in der Vorschau und unterliegt vor der allgemeinen Verfügbarkeit Änderungen und Updates.
- 
 ## <a name="configuring-an-enterprise-gateway-for-use-with-dataflows"></a>Konfigurieren eines Enterprise-Gateways für die Verwendung mit Dataflows
 
 Um eine lokale Datenquelle in einem Datenfluss verwenden zu können, müssen Benutzer, die den Dataflow erstellen, ein **Enterprise-Gateway** installiert und konfiguriert haben. Der Benutzer, der den Dataflow erstellt, muss auch der Enterprise-Gateway-Administrator sein, um dieses Gateway für einen Dataflow verwenden zu können.
@@ -80,8 +77,8 @@ Dieser Artikel enthält Informationen zur Verwendung einer lokalen Datenquelle f
 
 * [Self-Service-Datenaufbereitung in Power BI (Vorschau)](service-dataflows-overview.md)
 * [Erstellen und Verwenden von Dataflows in Power BI](service-dataflows-create-use.md)
-* [Verwenden berechneter Entitäten in Power BI Premium (Vorschau)](service-dataflows-computed-entities-premium.md)
-* [Entwicklerressourcen für Power BI-Dataflows (Vorschau)](service-dataflows-developer-resources.md)
+* [Using computed entities on Power BI Premium (Verwenden berechneter Entitäten in Power BI Premium)](service-dataflows-computed-entities-premium.md)
+* [Developer resources for Power BI dataflows (Entwicklerressourcen für Power BI-Datenflüsse)](service-dataflows-developer-resources.md)
 
 Weitere Informationen zu Power Query und zur geplanten Aktualisierung finden Sie in den folgenden Artikeln:
 * [Abfrageübersicht in Power BI Desktop](desktop-query-overview.md)

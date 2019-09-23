@@ -12,7 +12,7 @@ ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 6b5f2fa44a45cca06f90474d8c76fd6f06cae3ce
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61276421"
@@ -75,7 +75,7 @@ Siehe [Funktionsweise der Stichprobenentnahme für Linienelemente](../desktop-hi
 ### <a name="combo-chart"></a>Kombinationsdiagramm
  Verwendet die gleichen Strategien wie Säulendiagramme Beachten Sie, dass die Zeile im **Kombinationsdiagramm** nicht den Algorithmus für hohe Dichte verwendet, den **Liniendiagramme** verwenden.
 
-### <a name="custom-visuals"></a>Benutzerdefinierte visuelle Elemente
+### <a name="custom-visuals"></a>Benutzerdefinierte Visuals
 Kann bis zu 30.000 Datenpunkte abrufen. Die Entscheidung, welche Strategien angewandt werden sollen, liegt jedoch beim Autor des Visuals.
 
 ### <a name="doughnut"></a>Ringdiagramm
