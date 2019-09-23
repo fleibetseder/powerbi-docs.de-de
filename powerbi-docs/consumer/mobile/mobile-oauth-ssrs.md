@@ -9,47 +9,49 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/03/2019
-ms.openlocfilehash: 7067d4c7fdc3fc328db417e5d6733569ecc7be01
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: 59c376afd384812473d3175df992c628ae5049ca
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67567802"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70903635"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Verwenden von OAuth zum Herstellen einer Verbindung mit dem Power BI-Berichtsserver und SSRS
 
-In diesem Artikel erfahren Sie, wie Sie Ihre Umgebung für die Unterstützung der OAuth-Authentifizierung mit der mobilen Power BI-App konfigurieren, um eine Verbindung mit dem Power BI-Berichtsserver und SQL Server Reporting Services 2016 oder höher herzustellen.
+Mit OAuth können Sie eine Verbindung zum Power BI-Berichtsserver und Reporting Services herstellen, um mobile Berichte oder KPIs anzuzeigen. In diesem Artikel erfahren Sie, wie Sie Ihre Umgebung für die Unterstützung der OAuth-Authentifizierung mit der mobilen Power BI-App konfigurieren, um eine Verbindung mit dem Power BI-Berichtsserver und SQL Server Reporting Services 2016 oder höher herzustellen.
 
-![Herstellen einer Verbindung mit einem Server](media/mobile-oauth-ssrs/powerbi-mobile-oauth.png)
+So stellt Adam mithilfe von OAuth von Power BI Mobile aus eine Verbindung mit SSRS her:
 
-Mit OAuth können Sie eine Verbindung zum Power BI-Berichtsserver und Reporting Services herstellen, um mobile Berichte oder KPIs anzuzeigen. Windows Server 2016 enthält einige Verbesserungen der Rolle „Webanwendungsproxy“ (WAP), um diese Art der Authentifizierung zu ermöglichen.
 
-   > [!NOTE]
-   > Das Anzeigen von Power BI-Berichten, die im Power BI-Berichtsserver mit WAP zur Authentifizierung gehostet werden, wird jetzt von iOS- und Android-Apps unterstützt.
+<iframe width="560" height="350" src="https://www.youtube.com/embed/okzPAI2uUek" frameborder="0" allowfullscreen></iframe>
+
+
+> [!NOTE]
+> Das Anzeigen von Power BI-Berichten, die im Power BI-Berichtsserver mit WAP zur Authentifizierung gehostet werden, wird jetzt von iOS- und Android-Apps unterstützt.
 
 ## <a name="requirements"></a>Anforderungen
 
-Für den WAP-Server (Web Application Proxy, Webanwendungsproxy) und ADFS-Server (Active Directory Federation Services, Active Directory-Verbunddienste) ist Windows Server 2016 erforderlich. Sie benötigen keine Windows 2016-Domänenfunktionsebene.
+Für den WAP-Server (Web Application Proxy, Webanwendungsproxy) und ADFS-Server (Active Directory Federation Services, Active Directory-Verbunddienste) ist Windows Server 2016 erforderlich. Sie benötigen keine Windows 2016-Domänenfunktionsebene.
 
 ## <a name="domain-name-services-dns-configuration"></a>DNS-Konfiguration (Domain Name Service)
 
-Sie müssen die öffentliche URL ermitteln, mit der die mobile Power BI-App eine Verbindung herstellt. Dies könnte z.B. wie folgt lauten.
+Mit der öffentlichen URL stellt die Power BI Mobile-App eine Verbindung her. Dies könnte z.B. wie folgt lauten.
 
 ```https
 https://reports.contoso.com
 ```
 
-Der DNS-Eintrag für **Berichte** muss auf die öffentliche IP-Adresse des WAP-Servers (Web Application Proxy, Webanwendungsproxy) verweisen. Außerdem müssen Sie einen öffentlichen DNS-Datensatz für den AD FS-Server konfigurieren. Angenommen, Sie haben den AD FS-Server mit der folgenden URL konfiguriert.
+Ihr DNS-Eintrag für **Berichte** an die öffentliche IP-Adresse des WAP-Servers (Web Application Proxy, Webanwendungsproxy). Außerdem müssen Sie einen öffentlichen DNS-Datensatz für den AD FS-Server konfigurieren. Angenommen, Sie haben den AD FS-Server mit der folgenden URL konfiguriert.
 
 ```https
 https://fs.contoso.com
 ```
 
-Der DNS-Eintrag für **fs** muss auf die öffentliche IP-Adresse des WAP-Servers (Web Application Proxy, Webanwendungsproxy) verweisen, da er als Teil der WAP-Anwendung veröffentlicht wird.
+Ihr DNS-Eintrag für **fs** an die öffentliche IP-Adresse des WAP-Servers (Web Application Proxy, Webanwendungsproxy), wie er als Teil der WAP-Anwendung veröffentlicht wird.
 
 ## <a name="certificates"></a>Zertifikate
 
-Sie müssen Zertifikate für die WAP-Anwendung und den AD FS-Server konfigurieren. Beide Zertifikate müssen Teil einer gültigen Zertifizierungsstelle sein, die Ihre mobilen Geräte erkennen.
+Sie müssen Zertifikate für die WAP-Anwendung und den AD FS-Server konfigurieren. Beide Zertifikate müssen Teil einer gültigen Zertifizierungsstelle sein, die Ihre mobilen Geräte erkennen.
 
 ## <a name="reporting-services-configuration"></a>Reporting Services-Konfiguration
 
@@ -77,15 +79,15 @@ Weitere Informationen finden Sie unter [Ändern einer Reporting Services-Konfigu
 
 ## <a name="active-directory-federation-services-adfs-configuration"></a>AD FS-Konfiguration (Active Directory Federation Services, Active Directory-Verbunddienste)
 
-Sie müssen AD FS auf einem Windows-2016-Server in Ihrer Umgebung konfigurieren. Hierzu können Sie im Server-Manager unter „Verwalten“ die Option „Rollen und Features hinzufügen“ auswählen. Weitere Informationen finden Sie unter [Active Directory-Verbunddienste](https://technet.microsoft.com/windows-server-docs/identity/active-directory-federation-services).
+Sie müssen AD FS auf einem Windows 2016-Server in Ihrer Umgebung konfigurieren. Die Konfiguration kann im Server-Manager unter „Verwalten“ mit Auswahl von „Rollen und Features hinzufügen“ erfolgen. Weitere Informationen finden Sie unter [Active Directory-Verbunddienste](https://technet.microsoft.com/windows-server-docs/identity/active-directory-federation-services).
 
 ### <a name="create-an-application-group"></a>Erstellen einer Anwendungsgruppe
 
-Auf dem Bildschirm „AD FS Management“ (AD FS-Verwaltung) erstellen Sie eine Anwendungsgruppe für Reporting Services, die Informationen für die Power BI Mobile-Apps enthält.
+Auf dem Bildschirm „AD FS Management“ (AD FS-Verwaltung) erstellen Sie eine Anwendungsgruppe für Reporting Services, die Informationen für die Power BI Mobile-Apps enthält.
 
 Hierzu führen Sie die folgenden Schritten aus.
 
-1. Klicken Sie in der App „AD FS-Verwaltung“ mit der rechten Maustaste auf **Anwendungsgruppen**, und wählen Sie **Anwendungsgruppe hinzufügen** aus.
+1. Klicken Sie in der App „AD FS-Verwaltung“ mit der rechten Maustaste auf **Anwendungsgruppen**, und wählen Sie **Anwendungsgruppe hinzufügen** aus.
 
    ![„Anwendung hinzufügen“ in ADFS](media/mobile-oauth-ssrs/adfs-add-application-group.png)
 
@@ -107,7 +109,7 @@ Hierzu führen Sie die folgenden Schritten aus.
    mspbi-adal://com.microsoft.powerbimobile  
    mspbi-adalms://com.microsoft.powerbimobilems
 
-   **Für Android-Apps wird nur Folgendes angegeben:**  
+   **Für Android-Apps sind nur folgende Schritte erforderlich:**  
    urn:ietf:wg:oauth:2.0:oob
 
    ![Assistent zum Hinzufügen von Anwendungsgruppen in ADFS (2)](media/mobile-oauth-ssrs/adfs-application-group-wizard2.png)
@@ -149,13 +151,13 @@ Um von der OAuth-Authentifizierung zur Windows-Authentifizierung zu wechseln, mu
 
 Nun muss die eingeschränkte Delegierung im Computerkonto des WAP-Servers in Active Directory konfiguriert werden. Möglicherweise müssen Sie einen Domänenadministrator hinzuziehen, wenn Sie nicht über Berechtigungen für Active Directory verfügen.
 
-Gehen Sie zum Konfigurieren der eingeschränkten Delegierung wie folgt vor.
+Führen Sie zum Konfigurieren der eingeschränkten Delegierung die folgenden Schritte aus.
 
 1. Starten Sie auf einem Computer mit Active Directory-Tools **Active Directory-Benutzer und -Computer**.
 
 2. Suchen Sie das Computerkonto für den WAP-Server. Standardmäßig befindet sich dies im Computercontainer.
 
-3. Klicken Sie mit der rechten Maustaste auf dem WAP-Server, und wechseln Sie zu **Eigenschaften**.
+3. Klicken Sie mit der rechten Maustaste auf den WAP-Server, und wechseln Sie zu **Eigenschaften**.
 
 4. Wählen Sie die Registerkarte **Delegierung** aus.
 
@@ -196,14 +198,14 @@ Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentic
 
 | Parameter | Kommentare |
 | --- | --- |
-| **ADFSRelyingPartyName** |Dies ist der Name der Web-API, die Sie als Teil der Anwendungsgruppe in AD FS erstellt haben. |
-| **ExternalCertificateThumbprint** |Dies ist das Zertifikat, das für externe Benutzer verwendet werden soll. Es ist wichtig, dass das Zertifikat auf mobilen Geräten gültig ist und von einer vertrauenswürdigen Zertifizierungsstelle stammt. |
-| **BackendServerUrl** |Dies ist die URL zum Berichtsserver vom WAP-Server aus. Wenn sich der WAP-Server in einem Umkreisnetzwerk befindet, müssen Sie möglicherweise einen vollqualifizierten Domänennamen verwenden. Stellen Sie sicher, dass Sie diese URL im Webbrowser auf dem WAP-Server aufrufen können. |
-| **BackendServerAuthenticationSPN** |Dies ist der SPN, den Sie bei der Reporting Services-Konfiguration erstellt haben. |
+| **ADFSRelyingPartyName** |Der Name der Web-API, die Sie als Teil der Anwendungsgruppe in AD FS erstellt haben. |
+| **ExternalCertificateThumbprint** |Das Zertifikat, das für externe Benutzer verwendet werden soll. Es ist wichtig, dass das Zertifikat auf mobilen Geräten gültig ist und von einer vertrauenswürdigen Zertifizierungsstelle stammt. |
+| **BackendServerUrl** |Die URL zum Berichtsserver vom WAP-Server aus. Wenn sich der WAP-Server in einem Umkreisnetzwerk befindet, müssen Sie möglicherweise einen vollqualifizierten Domänennamen verwenden. Stellen Sie sicher, dass Sie diese URL im Webbrowser auf dem WAP-Server aufrufen können. |
+| **BackendServerAuthenticationSPN** |Der SPN, den Sie bei der Reporting Services-Konfiguration erstellt haben. |
 
 ### <a name="setting-integrated-authentication-for-the-wap-application"></a>Festlegen der integrierten Authentifizierung für die WAP-Anwendung
 
-Nachdem Sie die WAP-Anwendung hinzugefügt haben, müssen Sie „BackendServerAuthenticationMode“ auf die Verwendung von „IntegratedWindowsAuthentication“ festlegen. Hierfür benötigen Sie die ID aus der WAP-Anwendung.
+Nachdem Sie die WAP-Anwendung hinzugefügt haben, müssen Sie „BackendServerAuthenticationMode“ auf die Verwendung von „IntegratedWindowsAuthentication“ festlegen. Sie benötigen die ID aus der WAP-Anwendung, um dies festzulegen.
 
 ```powershell
 Get-WebApplicationProxyApplication “Contoso Reports” | fl
@@ -225,9 +227,9 @@ Innerhalb der mobilen Power BI-App erstellen Sie eine Verbindung mit der Reporti
 
 ![Eingeben der Serveradresse](media/mobile-oauth-ssrs/powerbi-mobile-app1.png)
 
-Wenn Sie **Verbinden** auswählen, werden Sie auf die AD FS-Anmeldeseite weitergeleitet. Geben Sie gültige Anmeldeinformationen für Ihre Domäne ein.
+Wenn Sie **Verbinden** auswählen, werden Sie auf die AD FS-Anmeldeseite weitergeleitet. Geben Sie gültige Anmeldeinformationen für Ihre Domäne ein.
 
-![Anmelden bei ADFS](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
+![Anmelden bei AD FS](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
 
 Nachdem Sie **Anmelden** ausgewählt haben, werden die Elemente vom Reporting Services-Server angezeigt.
 
@@ -241,9 +243,9 @@ Sie können die Multi-Factor Authentication aktivieren, um die Sicherheit für I
 
 ![Fehler „Fehler beim Anmelden beim SSRS-Server“](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 
-Sie können [Fiddler](http://www.telerik.com/fiddler) als Proxy für Ihre mobilen Geräte einrichten, um zu überprüfen, wie weit die Anforderung gesendet wurde. Wenn Sie einen Fiddler-Proxy für ein Smartphone aktivieren möchten, müssen Sie [CertMaker für iOS und Android](http://www.telerik.com/fiddler/add-ons) auf dem Computer mit Fiddler einrichten. Dabei handelt es sich um ein Add-On von Telerik für Fiddler.
+Sie können [Fiddler](http://www.telerik.com/fiddler) als Proxy für Ihre mobilen Geräte einrichten, um zu überprüfen, wie weit die Anforderung gesendet wurde. Wenn Sie einen Fiddler-Proxy für ein Smartphone aktivieren möchten, müssen Sie [CertMaker für iOS und Android](http://www.telerik.com/fiddler/add-ons) auf dem Computer mit Fiddler einrichten. Das Add-On wird von Telerik für Fiddler bereitgestellt.
 
-Wenn die Anmeldung bei Verwendung von Fiddler erfolgreich ist, liegt möglicherweise ein Zertifikatsproblem mit der WAP-Anwendung oder dem ADFS-Server vor. Sie können dann mit einem Tool wie [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226) überprüfen, ob die Zertifikate gültig sind.
+Wenn die Anmeldung bei Verwendung von Fiddler erfolgreich ist, liegt möglicherweise ein Zertifikatsproblem mit der WAP-Anwendung oder dem AD FS-Server vor. Sie können dann mit einem Tool wie [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226) überprüfen, ob die Zertifikate gültig sind.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

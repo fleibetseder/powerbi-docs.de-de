@@ -1,8 +1,8 @@
 ---
 title: Bewährte Methoden für die Power BI-Leistung
 description: Dieser Artikel enthält Informationen zum Erstellen schneller und zuverlässiger Berichte in Power BI.
-author: MarkMcGeeAtAquent
-ms.author: kfile
+author: Bhavik-MSFT
+ms.author: bhmerc
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,16 +10,20 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/30/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: bddd653b5ac8b49a38a69ae79baf2f96824444ed
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.openlocfilehash: 736c1ee1b1998ec7f991167352313a05061b3f3c
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665338"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841482"
 ---
 # <a name="power-bi-performance-best-practices"></a>Bewährte Methoden für die Power BI-Leistung
 
 Dieser Artikel enthält Informationen zum Erstellen schneller und zuverlässiger Berichte in Power BI.  
+
+## <a name="choose-an-appropriate-storage-mode-import-directquery"></a>Wählen Sie einen geeigneten Speichermodus aus: Import, DirectQuery
+
+In den meisten Fällen ist der Import-Modus die beste Wahl, da er die höchste Geschwindigkeit bietet, indem lokal zwischengespeicherte Daten im Arbeitsspeicher genutzt werden, die mithilfe von einspaltigem Speicher komprimiert werden. Der Import-Modus ermöglicht außerdem die vollständige DAX-Funktion. Berücksichtigen Sie DirectQuery (und Composite-Modelle), wenn das Quelldatenvolumen für Ihre Power BI-Kapazität zu groß ist. DirectQuery ist auch nützlich, wenn Sie bei jedem Laden eines Berichts die neuesten Daten aus der Quelle abrufen müssen. Wenn Sie nicht über diese Anforderungen verfügen und die Benutzer nur Daten anzeigen müssen, die höchstens wenige Male täglich aktualisiert werden (z. B. von einem Unternehmens-Data Warehouse), wird Import dringend empfohlen. Im DirectQuery-Modus können Benutzer versuchen, den Bericht zu aktualisieren, ohne zu erkennen, dass sie genau die gleichen Daten aus der Quelle abrufen.      
 
 ## <a name="use-filters-to-limit-report-visuals-to-display-only-whats-needed"></a>Verwenden vom Filtern zum Einschränken von Berichtsvisuals auf die benötigten Informationen 
 
@@ -57,7 +61,7 @@ Beim Bereitstellen von Power BI-Berichten, die basierend auf DirectQuery und Liv
 ## <a name="directquery-best-practices"></a>Bewährte Methoden für DirectQuery
 
 Im folgenden Abschnitt werden allgemeine bewährte Methoden für die Herstellung einer Verbindung über DirectQuery beschrieben.
-  
+
 ### <a name="db-design-guidance"></a>Leitfaden zum Datenbankentwurf
 
 - Verschieben Sie berechnete Spalten und Measures in Richtung Quelle, soweit dies möglich ist. Je näher die Quelle ist, desto höher ist die Wahrscheinlichkeit optimaler Leistung.

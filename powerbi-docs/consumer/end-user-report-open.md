@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/28/2018
+ms.date: 09/04/2018
 ms.author: mihart
-ms.openlocfilehash: e02d7bfa295b3bd18b0b6b9c64c688ed668c8389
-ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.openlocfilehash: 2a4c9044f661d9d5b822ba366c3a88c572136b35
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70391750"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70903837"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Anzeigen eines Berichts im Power BI-Dienst für *Kunden*
 Ein Bericht besteht aus einer oder mehreren Seiten mit visuellen Elementen. Berichte werden von *Power BI-Designern* erstellt und entweder [direkt für *Benutzer* freigegeben](end-user-shared-with-me.md), oder als Teil einer [App](end-user-apps.md). 
@@ -30,7 +30,7 @@ Lassen Sie uns zuerst einen Bericht öffnen, der direkt mit Ihnen geteilt wurde,
    ![Startseite](./media/end-user-report-open/power-bi-home-canvas.png)
 
 ### <a name="open-a-report-that-has-been-shared-with-you"></a>Öffnen eines Berichts, der mit Ihnen geteilt wurde
-Power BI *Designer* können einen einzelnen Bericht direkt über einen Link in einer E-Mail freigeben oder indem Sie ihn Ihrer Power BI-Startseite hinzufügen. Auf diese Weise geteilte Inhalte werden im Container **Für mich freigegeben** in der Navigationsleiste und im Abschnitt **Für mich freigegeben** auf der Seite „Home“ angezeigt.
+Power BI-*Designer* können einen einzelnen Bericht direkt über einen Link in einer E-Mail freigeben, oder indem sie ihn automatisch hinzufügen. Auf diese Weise geteilte Inhalte werden im Container **Für mich freigegeben** in der Navigationsleiste und im Abschnitt **Für mich freigegeben** auf der Seite „Home“ angezeigt.
 
 1. Öffnen Sie den Power BI-Dienst („app.powerbi.com“).
 
@@ -50,6 +50,12 @@ Power BI *Designer* können einen einzelnen Bericht direkt über einen Link in e
 
    ![Berichtsseiten-Registerkarten](./media/end-user-report-open/power-bi-ytd.png)
 
+6. Beachten Sie den Bereich **Filter** auf der rechten Seite. Filter, die auf diese Berichtsseite oder den gesamten Bericht angewendet wurden, werden hier angezeigt.
+
+7. Wenn Sie mit dem Mauszeiger auf ein Berichtsvisual zeigen, werden mehrere Symbole und ein Auslassungszeichen (...) angezeigt. Um die auf ein bestimmtes Visual angewendeten Filter anzuzeigen, wählen Sie das Filtersymbol aus. Hier haben wir das Filtersymbol für das Liniendiagramm *Gesamtanzahl der Einheiten nach laufendem Zeitraum und Region* ausgewählt.
+
+   ![Berichtsseiten-Registerkarten](./media/end-user-report-open/power-bi-visual-filters.png)
+
 6. Momentan wird die gesamte Berichtsseite angezeigt. Wählen Sie das Dropdownmenü „Ansicht“ oben rechts aus, und klicken Sie auf **Tatsächliche Größe**, um die Anzeige (den Zoom) der Seite zu ändern.
 
    ![Zoom ändern](./media/end-user-report-open/power-bi-fit-new.png)
@@ -59,21 +65,26 @@ Power BI *Designer* können einen einzelnen Bericht direkt über einen Link in e
 ### <a name="open-a-report-that-is-part-of-an-app"></a>Öffnen eines Bericht, der Teil einer App ist
 Wenn Sie von Kollegen oder aus AppSource Apps erhalten haben, sind diese Apps über die Seite „Home“ und den **Apps**-Container in der Navigationsleiste verfügbar. Eine [App](end-user-apps.md) ist ein Paket aus Dashboards und Berichten.
 
+### <a name="prerequisites"></a>Voraussetzungen
+Um teilzunehmen, laden Sie die „Sales and Marketing“-App herunter.
+1. Navigieren Sie in Ihrem Browser zu „appsource.microsoft.com“.
+1. Suchen Sie nach „Sales and Marketing“, und wählen Sie **Microsoft sample – Sales & Marketing** aus.
+1. Wählen Sie **Jetzt anfordern** > **Fortfahren** > **Installieren** aus, um die App in Ihrem Apps-Container zu installieren. 
+
+Sie können die App von Ihrem Apps-Container oder von der Startseite aus öffnen.
 1. Wechseln Sie zurück zur Seite „Home“, indem Sie in der Navigationsleiste auf **Home** klicken.
 
 7. Scrollen Sie nach unten, bis Sie **Meine Apps** sehen.
 
-   ![Startseite](./media/end-user-report-open/power-bi-my-apps.png)
+   ![Startseite](./media/end-user-report-open/power-bi-app.png)
 
-8. Wählen Sie eine der Apps aus, um sie zu öffnen. Abhängig von den Optionen, die vom App-*Designer* festgelegt wurden, öffnet die App entweder ein Dashboard oder einen Bericht. Wenn durch das Auswählen der App:
-    - der Bericht geöffnet wird, sind Sie startklar.
-    - ein Dashboard geöffnet wird, siehe ***Öffnen eines Berichts aus einem Dashboard***.
+8. Wählen Sie Ihre neue „Sales and Marketing“-App aus, um sie zu öffnen. Abhängig von den Optionen, die vom App-*Designer* festgelegt wurden, öffnet die App entweder ein Dashboard oder einen Bericht. Diese App öffnet ein Dashboard.  
 
 
 ## <a name="open-a-report-from-a-dashboard"></a>Öffnen eines Berichts aus einem Dashboard
 Berichte können aus einem Dashboard geöffnet werden. Die meisten [Dashboardkacheln](end-user-tiles.md) sind aus Berichten *angeheftet*. Das Auswählen einer Kachel öffnet den Bericht, mit dem diese Kachel erstellt wurde. 
 
-1. Wählen Sie in einem Dashboard eine Kachel aus. In diesem Beispiel wurde die Kachel „Total Units YTD...“ ausgewählt.
+1. Wählen Sie im Dashboard eine Kachel aus. In diesem Beispiel wurde die Kachel „Total Units YTD...“ ausgewählt.
 
     ![Dashboard mit ausgewählter Kachel](./media/end-user-report-open/power-bi-dashboard.png)
 
@@ -94,5 +105,6 @@ Wie Sie mit der Navigation im Power BI-Dienst besser vertraut sind, werden Sie f
 - usw.
 
 ## <a name="next-steps"></a>Nächste Schritte
-[Öffnen und Anzeigen eines Dashboards](end-user-dashboard-open.md)
+[Öffnen und Anzeigen eines Dashboards](end-user-dashboard-open.md)    
+[Berichtsfilter](end-user-report-filter.md)
 

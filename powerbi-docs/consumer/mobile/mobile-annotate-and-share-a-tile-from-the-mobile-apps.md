@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: mshenhav
-ms.openlocfilehash: 8d48f7c42ac88f5a3b659bf4aff2ece65a2010e5
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1f7911007d9629c8990fc15ddf7453bafe0e78f5
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61342841"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70841461"
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Kommentieren und Freigeben von Kacheln, Berichten oder Visuals in den mobilen Power BI-Apps
 Gilt für:
@@ -29,7 +29,7 @@ Sie können eine Momentaufnahme einer Kachel, eines Berichts oder einer Visualis
 
 *Ein Bericht mit Anmerkungen*
 
-Die E-Mail mit der Momentaufnahme der Kachel, des Berichts oder der Visualisierung enthält auch einen Link zu dem tatsächlichen Objekt im Power BI-Dienst ([https://powerbi.com](https://powerbi.com)). Die Empfänger können auf den Link klicken und direkt zu dieser Kachel, diesem Bericht oder diesem Visual gelangen, wenn Sie das Element für die Empfänger freigegeben haben und sowohl Sie als auch die Empfänger Power BI Pro-Lizenzen haben oder wenn es sich um Inhalte in einer [Premium-Kapazität](../../service-premium-what-is.md) handelt. 
+Die E-Mail mit der Momentaufnahme der Kachel, des Berichts oder der Visualisierung enthält auch einen Link zu dem tatsächlichen Objekt im Power BI-Dienst ([https://powerbi.com](https://powerbi.com)). Die Empfänger können auf den Link klicken und direkt zu dieser Kachel, diesem Bericht oder diesem Visual gelangen, wenn Sie das Element für die Empfänger freigegeben haben, und sowohl Sie als auch die Empfänger über Power BI Pro-Lizenzen verfügen, oder wenn es sich um Inhalte in einer [Premium-Kapazität](../../service-premium-what-is.md) handelt. 
 
 Sie können auch [eine Kachel in der mobilen Power BI-App für Windows 10-Geräte freigeben](mobile-windows-10-phone-app-get-started.md), können diese aber nicht kommentieren.
 

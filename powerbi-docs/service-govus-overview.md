@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/26/2019
+ms.date: 09/09/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 531cb34379c984a26e983db7acfc9b4deebf68b9
-ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
+ms.openlocfilehash: d491ca460d8393e9da308c826e69aad454d0e766
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590434"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841633"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI für Angehörige von US-Behörden
 Für den **Power BI-Dienst** ist im Rahmen von **Office 365 US Government Community**-Abonnements eine Version für Kunden verfügbar, die Angehörige von US-Behörden sind. Die in diesem Artikel vorgestellte Version des **Power BI-Diensts** ist speziell für Angehörige von US-Behörden konzipiert. Es handelt sich hierbei um ein separates und von der kommerziellen Version des **Power BI-Diensts** abweichendes Produkt.
@@ -48,7 +48,7 @@ Azure ist auf mehrere Clouds verteilt. Standardmäßig dürfen Mandanten Firewal
 * USGov Texas
 * USGov Arizona
 
-In der öffentlichen Cloud sind die IP-Adressbereiche verfügbar. Die neusten Informationen zur Government Cloud finden Sie in der herunterladbaren [Dokumentation zum Azure Government-Dienst](https://www.microsoft.com/download/details.aspx?id=57063).
+In der öffentlichen Cloud sind die IP-Adressbereiche verfügbar. Die neuesten Informationen zur Government Cloud finden Sie in der herunterladbaren [Dokumentation zum Azure Government-Dienst](https://www.microsoft.com/download/details.aspx?id=57063).
 
 ## <a name="limitations-of-power-bi-us-government"></a>Einschränkungen von Power BI US Government
 Einige Funktionen, die in der kommerziellen Version des **Power BI-Diensts** verfügbar sind, stehen im **Power BI-Dienst** für Angehörige von US-Behörden *nicht* zur Verfügung. Das Power BI-Team arbeitet derzeit daran, diese Funktionen auch für Kunden bei US-Behörden zur Verfügung zu stellen. Dieser Artikel wird aktualisiert, sobald diese Funktionen verfügbar sind.
@@ -85,13 +85,13 @@ Anhand der folgenden Fragen (und Antworten) finden Sie schnell die benötigten I
 
 **Antwort:** Die Registrierungsschritte (auch als *Onboarding* bezeichnet) unterscheiden sich je nach vorhandener Lizenz und Abonnement. Im Artikel zur [Registrierung bei Power BI US Government](service-govus-signup.md) finden Sie weitere Informationen.
 
-**Frage:** Lautet die URL für die Verbindung mit **Power BI** für US-Behörden anders als die URL für die kommerzielle Version von **Power BI**?
+**Frage:** Lautet die URL für die Verbindung mit **Power BI** für US-Behörden anders als die URL für die kommerzielle Version von **Power BI**? Gibt es eine andere URL für Kunden der Government Community Cloud High (GCC High)?
 
 **Antwort:** Ja, die URLs unterscheiden sich. Die folgende Tabelle enthält die verschiedenen URLs:
 
-| URL der kommerziellen Version | URL der Version für US-Behörden |
-| --- | --- |
-| https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) |
+| URL der kommerziellen Version | URL der Version für US-Behörden | GCC High-URL für US-Behörden |
+| --- | --- | --- |
+| https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) | [https://app.high.powerbigov.us](https://app.high.powerbigov.us) |
 
 **Frage:** Mein Konto wird in mehreren nationalen Clouds bereitgestellt. Wie wähle ich in **Power BI Desktop** aus, mit welcher Cloud eine Verbindung hergestellt werden soll?
 

@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/18/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 1e836dd9fe4be1c0267a0ba4008c2455cf59e2e2
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.openlocfilehash: 39c6dc8a60be67f8f9e99e01ae1c7249166c5ddb
+ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665376"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70877733"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Bring Your Own Key für Verschlüsselungsschlüssel in Power BI (Vorschauversion)
 
@@ -123,11 +123,31 @@ Das Cmdlet akzeptiert zwei Parameter, die sich auf die Verschlüsselung für vor
 > [!IMPORTANT]
 > Wenn Sie `-Default` angeben, werden alle Kapazitäten, die nachfolgend in Ihrem Mandanten erstellt werden, mit dem angegebenen Schlüssel (oder dem neuen Standardschlüssel) verschlüsselt. Sie können den Standardvorgang nicht rückgängig machen und daher in Ihrem Mandanten keine Premium-Kapazität mehr erstellen, die nicht BYOK verwendet.
 
-Verwenden Sie [`Set-PowerBICapacityEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/set-powerbicapacityencryptionkey) zum Festlegen des Verschlüsselungsschlüssel für eine oder mehrere Power BI-Kapazitäten, nachdem Sie BYOK in Ihrem Mandanten aktiviert haben:
+Legen Sie den Verschlüsselungsschlüssel für eine oder mehrere Power BI-Kapazitäten fest, nachdem Sie BYOK in Ihrem Mandanten aktiviert haben:
 
-```powershell
-Set-PowerBICapacityEncryptionKey-CapacityId 08d57fce-9e79-49ac-afac-d61765f97f6f -KeyName 'Contoso Sales'
-```
+1. Rufen Sie mit [`Get-PowerBICapacity`](/powershell/module/microsoftpowerbimgmt.capacities/get-powerbicapacity) die Kapazitäts-ID ab, die für den nächsten Schritt erforderlich ist.
+
+    ```powershell
+    Get-PowerBICapacity -Scope Individual
+    ```
+
+    Das Cmdlet gibt eine Ausgabe ähnlich der folgenden zurück:
+
+    ```
+    Id              : xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+    DisplayName     : Test Capacity
+    Admins          : adam@sometestdomain.com
+    Sku             : P1
+    State           : Active
+    UserAccessRight : Admin
+    Region          : North Central US
+    ```
+
+1. Legen Sie mit [`Set-PowerBICapacityEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/set-powerbicapacityencryptionkey) den Verschlüsselungsschlüssel fest:
+
+    ```powershell
+    Set-PowerBICapacityEncryptionKey-CapacityId xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -KeyName 'Contoso Sales'
+    ```
 
 Sie können festlegen, wie BYOK in Ihrem Mandanten verwendet wird. Rufen Sie z. B. `Add-PowerBIEncryptionKey` ohne `-Activate` oder `-Default` auf, um eine einzelne Kapazität zu verschlüsseln. Rufen Sie anschließend `Set-PowerBICapacityEncryptionKey` für die Kapazität auf, in der Sie BYOK aktivieren möchten.
 

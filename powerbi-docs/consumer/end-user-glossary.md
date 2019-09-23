@@ -7,14 +7,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/14/2019
+ms.date: 09/04/2019
 ms.author: mihart
-ms.openlocfilehash: 6a66d134a3399fed3ee03eddd7059265b5cf7c13
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: b9622a08506c6f5ade900296d91b449c64dc374c
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751005"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70903655"
 ---
 # <a name="glossary-for-power-bi-service"></a>Glossar für den Power BI-Dienst
 Der Power BI-Dienst führt möglicherweise Terminologie ein, die nicht vertraut oder zunächst verwirrend ist. Das Glossar ist der ideale Ort, um Begriffe nachzuschlagen – vielleicht sollten Sie ein Lesezeichen setzen? Eine weitere hervorragende Ressource, mehr über die Bausteine zu erfahren, aus denen sich der Power BI-Dienst zusammensetzt, sind die [Grundkonzepte](end-user-basic-concepts.md). Grundkonzepte bietet einen allgemeinen Überblick über die Power BI-*Bestandteile* und die Art ihrer Verbindung.
@@ -60,14 +60,19 @@ Dieses Glossar ist eine Communityinitiative.  Fehlt hier ein Begriff? Bitten Sie
 
 **calculation (Berechnung)** Eine mathematische Bestimmung der Größe oder Anzahl von etwas.
 
+**card (Karte)** Ein [visueller Typ](end-user-visual-type.md) in Power BI.
+
+**card (Karte)** Power BI Home zeigt rechteckige und quadratische Bilder an, die Dashboards, Berichte, Apps usw. darstellen. Diese Bilder werden als *Karten* bezeichnet.
+
 **certified custom visual (Zertifiziertes benutzerdefiniertes visuelles Element)** Ein benutzerdefiniertes visuelles Element von Power BI hat verschiedene Anforderungen erfüllt und strenge Sicherheitstests bestanden.
 
 **classification (Klassifizierung)** Auch als Datenklassifizierung bezeichnet. Diese Option kann von Power BI-Administratoren aktiviert werden, um das Bewusstsein für die Sicherheitsstufe zu stärken, die für ein Dashboard erforderlich ist. Die Klassifizierungstypen können von Organisationen angepasst werden.
 
 **connect live (Live verbinden)** Eine Methode zum Herstellen einer Verbindung mit SQL Server Analysis Services-Datenmodellen. Auch als „Liveverbindung“ bezeichnet.
 
-**content (Inhalt)**
+**Container** Die Bereiche auf der Navigationsleiste sind *Container*. In der Navigationsleiste finden Sie Container für Folgendes: „Favoriten“, „Zuletzt verwendet“, „Apps“, „Für mich freigegeben“ und „Startseite“. 
 
+**content (Inhalt)** Inhalte für den Power BI-Dienst sind im allgemeinen Dashboards, Berichte und Apps. Sie können auch Arbeitsmappen und Datasets sein.
 
 **content list (Inhaltsliste)** Der Inhaltsindex für eine App.
 
@@ -109,7 +114,8 @@ Dieses Glossar ist eine Communityinitiative.  Fehlt hier ein Begriff? Bitten Sie
 
 **Editing View (Bearbeitungsansicht)** Der Modus, in dem *Berichtsdesigner* einen Bericht durchsuchen, entwerfen, erstellen und teilen können.
 
-**ellipsis (Auslassungspunkte)** ...
+**ellipsis (Auslassungspunkte)** ...    
+Wenn Sie Auslassungspunkte auswählen, werden zusätzliche Menüoptionen angezeigt.
 
 **embed code (Einbindungscode)** Ein gemeinsamer Standard im gesamten Internet. In Power BI kann der Kunde einen Einbindungscode generieren und ihn kopieren, um Inhalte, z.B. ein visuelles Element aus einem Bericht, auf einer Website oder in einem Blog zu platzieren.
 
@@ -158,7 +164,8 @@ In Dokumentation kann „Power BI-Umgebung (Mandant)“ verwendet werden; hier k
 
 ## <a name="l"></a>L
 
-**left navigation (left nav) (Linke Navigationsleiste (Linker Navigationsbereich))** Die Steuerelemente am linken Rand des Power BI-Diensts.
+**left navigation (linker Navigationsbereich)** Dieser wurde durch die **Navigationsleiste** ersetzt, wird aber möglicherweise trotzdem in einer Dokumentation angezeigt.    
+Die Steuerelemente am linken Rand des Power BI-Diensts.
 
 Erste Nennung: linker Navigationsbereich. In späteren Nennungen oder wenig Platz: linke Navigation.
 
@@ -176,7 +183,11 @@ Erste Nennung: linker Navigationsbereich. In späteren Nennungen oder wenig Plat
 
 **native (Nativ)** Im Lieferumfang des Produkts enthalten. Beispielsweise enthält Power BI einen Satz von *native (nativen)* Visualisierungstypen. Sie können aber auch andere Typen importieren, z.B. benutzerdefinierte visuelle Elemente.
 
-**navigation pane (Navigationsbereich)** Siehe **Linker Navigationsbereich**
+**navigation bar** oder **nav bar** (Navigationsleiste) Die Steuerelemente am linken Rand des Power BI-Diensts.
+
+Erste Nennung: Navigationsleiste. In späteren Nennungen oder bei Platzmangel: nav bar.
+
+**navigation pane (Navigationsbereich)** Siehe **Navigationsleiste**
 
 **notification (Benachrichtigung)** Nachrichten, die von der und an die Power BI-Mitteilungszentrale gesendet werden.  
 

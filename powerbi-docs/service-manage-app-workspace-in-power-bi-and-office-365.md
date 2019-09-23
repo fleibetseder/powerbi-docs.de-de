@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/08/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 278d631e755c4d484db0788b6c58fca9cfce4616
-ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.openlocfilehash: 218124542570d313c3d5893a6f1d69c75594f33c
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68961957"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70903780"
 ---
 # <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Verwalten Ihres App-Arbeitsbereichs in Power BI und Office 365
 
@@ -72,7 +72,7 @@ Sie können bestimmte Aspekte eines App-Arbeitsbereichs auch direkt in Outlook f
 
 ### <a name="add-an-image-and-set-other-workspace-properties"></a>Hinzufügen eines Bilds und Festlegen anderer Eigenschaften des Arbeitsbereichs
 
-Wenn Sie Ihre App über den App-Arbeitsbereich verteilen, ist das Bild, das Sie hier hinzufügen, das Bild für Ihre App. Weitere Informationen finden Sie im Abschnitt [Hinzufügen eines Bilds zu Ihrem Office 365-App-Arbeitsbereich](service-create-workspaces.md#add-an-image-to-your-office-365-app-workspace-optional) im Artikel **Erstellen der neuen Arbeitsbereiche**.
+Wenn Sie Ihre App über den App-Arbeitsbereich verteilen, ist das Bild, das Sie hier hinzufügen, das Bild für Ihre App. Weitere Informationen finden Sie unter [Hinzufügen eines Bilds zu Ihrem Office 365-App-Arbeitsbereich](service-create-workspaces.md#add-an-image-to-your-office-365-workspace-optional) im Artikel **Erstellen der neuen Arbeitsbereiche**.
 
 1. Navigieren Sie in der Outlook für Office 365-Ansicht Ihres App-Arbeitsbereichs zur Registerkarte **Info**, und wählen Sie **Bearbeiten** aus.
 

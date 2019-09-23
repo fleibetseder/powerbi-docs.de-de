@@ -1,6 +1,6 @@
 ---
-title: Hinzufügen von Links zu einer Tabelle
-description: Verwenden Sie Power BI Desktop, um Hyperlinks zu erstellen. Verwenden Sie dann entweder Power BI Desktop oder den Power BI-Dienst, um diese Links Ihren Berichtstabellen und Matrizen hinzuzufügen.
+title: Hinzufügen von Hyperlinks (URLs) zu einer Tabelle
+description: In diesem Thema erfahren Sie, wie Sie Hyperlinks (URLs) einer Tabelle hinzufügen. Mit Power BI Desktop fügen Sie einer Tabelle oder Matrix Hyperlinks (URLs) hinzu. Dann können Sie entweder in Power BI Desktop oder dem Power BI-Dienst diese Hyperlinks Ihren Berichtstabellen und Matrizen hinzuzufügen.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -8,23 +8,23 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/09/2019
+ms.date: 08/30/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 386c52908d54833e350a7b1a6d846f78c7b88c6d
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 58cb009e29c05ce318c5931fb418617e1ef63f4f
+ms.sourcegitcommit: ba085b248c54e8fb1fd8eb2bb23a814e3fdd7ff6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721382"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70937067"
 ---
-# <a name="add-hyperlinks-to-a-table"></a>Hinzufügen von Links zu einer Tabelle
-In diesem Thema wird erläutert, wie in Power BI Desktop Hyperlinks erstellt werden. Verwenden Sie dann entweder Desktop oder den Power BI-Dienst, um diese Links Ihren Berichtstabellen und Matrizen hinzuzufügen. 
+# <a name="add-hyperlinks-urls-to-a-table"></a>Hinzufügen von Hyperlinks (URLs) zu einer Tabelle
+In diesem Thema erfahren Sie, wie Sie Hyperlinks (URLs) einer Tabelle hinzufügen. Mit Power BI Desktop fügen Sie einer Tabelle oder Matrix Hyperlinks (URLs) hinzu. Dann können Sie entweder in Power BI Desktop oder dem Power BI-Dienst diese Hyperlinks Ihren Berichtstabellen und Matrizen hinzuzufügen. 
 
 ![Tabelle mit Links](media/power-bi-hyperlinks-in-tables/hyperlinkedtable.png)
 
 > [!NOTE]
-> Hyperlinks in [Kacheln in Dashboards](service-dashboard-edit-tile.md) und [Textfeldern in Dashboards](service-dashboard-add-widget.md) können dynamisch mit dem Power BI-Dienst erstellt werden. Sie können Hyperlinks in [Textfeldern in Berichten](service-add-hyperlink-to-text-box.md) dynamisch mit dem Power BI-Dienst und Power BI Desktop erstellen.
+> Sie können Hyperlinks in [Kacheln in Dashboards](service-dashboard-edit-tile.md) und [Textfeldern in Dashboards](service-dashboard-add-widget.md) dynamisch mit dem Power BI-Dienst erstellen. Sie können Hyperlinks in [Textfeldern in Berichten](service-add-hyperlink-to-text-box.md) dynamisch mit dem Power BI-Dienst und Power BI Desktop erstellen.
 > 
 
 ## <a name="to-create-a-hyperlink-in-a-table-or-matrix-using-power-bi-desktop"></a>So erstellen Sie mithilfe von Power BI Desktop einen Hyperlink in einer Tabelle oder Matrix
@@ -34,7 +34,7 @@ Sie können Hyperlinks in Tabellen und Matrizen in Power BI Desktop, jedoch nich
 Das Verfahren zum Hinzufügen eines Hyperlinks hängt davon ab, ob Sie die Daten importiert oder über DirectQuery eine Verbindung mit ihnen hergestellt haben. Beide Szenarien werden nachfolgend beschrieben.
 
 ### <a name="for-data-imported-into-power-bi"></a>Für in Power BI importierte Daten
-1. Wenn der Hyperlink nicht bereits als Feld im Dataset vorhanden ist, fügen Sie ihn über die Desktopversion als [benutzerdefinierte Spalte](desktop-common-query-tasks.md) hinzu.
+1. Wenn der Hyperlink nicht bereits als Feld im Dataset vorhanden ist, fügen Sie ihn mit Power BI Desktop als [benutzerdefinierte Spalte](desktop-common-query-tasks.md) hinzu.
 2. Wählen Sie in der Datenansicht die Spalte aus, und wählen Sie auf der Registerkarte **Modellierung** das Dropdownmenü für **Datenkategorie** aus.
    
     ![Dropdownliste „Datenkategorie“](media/power-bi-hyperlinks-in-tables/pbi_data_category.png)
@@ -57,7 +57,7 @@ Das Verfahren zum Hinzufügen eines Hyperlinks hängt davon ab, ob Sie die Daten
 
     ![URL-Symbol aktivieren](media/power-bi-hyperlinks-in-tables/power-bi-url-icon-on.png)
 
-1. (Optional) [Veröffentlichen Sie den Bericht aus der Desktopversion im Power BI-Dienst](guided-learning/publishingandsharing.yml?tutorial-step=2), und öffnen Sie den Bericht im Power BI-Dienst. Die Hyperlinks werden hier ebenfalls geöffnet.
+1. (Optional) [Veröffentlichen Sie den Bericht aus Power BI Desktop im Power BI-Dienst](guided-learning/publishingandsharing.yml?tutorial-step=2), und öffnen Sie den Bericht im Power BI-Dienst. Die Hyperlinks werden hier ebenfalls geöffnet.
 
 ### <a name="for-data-connected-with-directquery"></a>Für über DirectQuery verbundene Daten
 Im DirectQuery-Modus kann keine neue Spalte erstellt werden.  Wenn die Daten jedoch bereits URLs enthalten, können Sie diese in Hyperlinks umwandeln.
@@ -65,7 +65,7 @@ Im DirectQuery-Modus kann keine neue Spalte erstellt werden.  Wenn die Daten jed
 1. Erstellen Sie in der Berichtsansicht eine Tabelle mit einem Feld, das URLs enthält.
 2. Wählen Sie die Spalte aus, und wählen Sie anschließend auf der Registerkarte **Modellierung** das Dropdownmenü für **Datenkategorie** aus.
 3. Wählen Sie **Web-URL**aus. Die Hyperlinks werden blau und unterstrichen angezeigt.
-4. (Optional) [Veröffentlichen Sie den Bericht aus der Desktopversion im Power BI-Dienst](guided-learning/publishingandsharing.yml?tutorial-step=2), und öffnen Sie den Bericht im Power BI-Dienst. Die Hyperlinks werden hier ebenfalls geöffnet.
+4. (Optional) [Veröffentlichen Sie den Bericht aus Power BI Desktop im Power BI-Dienst](guided-learning/publishingandsharing.yml?tutorial-step=2), und öffnen Sie den Bericht im Power BI-Dienst. Die Hyperlinks werden hier ebenfalls geöffnet.
 
 ## <a name="create-a-table-or-matrix-hyperlink-in-excel-power-pivot"></a>Erstellen eines Tabellen- oder Matrix-Hyperlinks in Power Pivot für Excel
 Sie können Ihren Power BI-Tabellen und -Matrizen auch Hyperlinks hinzufügen, indem Sie die Hyperlinks im Dataset erstellen, bevor Sie das betreffende Dataset aus Power BI importieren bzw. eine Verbindung damit herstellen. In diesem Beispiel wird eine Excel-Arbeitsmappe verwendet.

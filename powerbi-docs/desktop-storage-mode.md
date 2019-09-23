@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 67cd57a981f7c1fcab118652dc5424fa935ecd13
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: e77e61d00ac555c907a6d87ab0ffdeb8e21a5bd8
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654730"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841309"
 ---
 # <a name="storage-mode-in-power-bi-desktop"></a>Speichermodus in Power BI Desktop
 
@@ -42,6 +42,9 @@ Die Einstellung „Speichermodus“ in Power BI Desktop ist eines von drei in Be
 * **m:n-Beziehungen**: Mithilfe *zusammengesetzter Modelle* können Sie *m:n-Beziehungen* zwischen Tabellen einrichten. Durch *m:n-Beziehungen* entfallen die Anforderungen für eindeutige Werte in Tabellen. Zudem sind vorherige Problemumgehungen hinfällig, wie z.B. die Einführung neuer Tabellen zum Einrichten von Beziehungen. Weitere Informationen finden Sie unter [Beziehungen mit einer m:n-Kardinalität in Power BI Desktop](desktop-many-to-many-relationships.md).
 
 * **Speichermodus**: Sie können nun angeben, welche Visuals eine Abfrage in Back-End-Datenquellen erfordern. Visuals, für die keine Abfrage nötig ist, werden importiert, auch wenn diese auf DirectQuery basieren. Mit diesem Feature kann die Leistung verbessert und die Auslastung des Back-Ends verringert werden. Zuvor initiierten sogar einfache Visuals wie Slicer Abfragen, die an Back-End-Quellen gesendet wurden. Im vorliegenden Artikel wird der Speichermodus ausführlich erläutert.
+
+> [!NOTE]
+> Zum Anzeigen des aktuellen Speichermodus wählen Sie die Ansicht **Modell** aus, wählen die gewünschte Tabelle aus und zeigen dann im Abschnitt **Erweitert** des Bereichs **Eigenschaften** den Wert des **Speichermodus** an.
 
 ## <a name="use-the-storage-mode-property"></a>Verwenden der Speichermoduseigenschaft
 

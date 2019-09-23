@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 09/10/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0bb8d796af5139cd89f4bdfa0a8da10603acb2ed
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: 5385512e534d866a2474fd4e3def10f45d52a1a0
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530560"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70903879"
 ---
 # <a name="create-classic-workspaces-in-power-bi"></a>Erstellen von klassischen Arbeitsbereichen in Power BI
 
@@ -23,53 +23,49 @@ In Power BI können Sie *Arbeitsbereiche* erstellen, um in Zusammenarbeit mit Ko
 
 **Wussten Sie schon?** Power BI bietet einen neuen Arbeitsbereich, der nun standardmäßig eingestellt ist. Weitere Informationen zu den neuen Arbeitsbereichen finden Sie unter [Organisieren Ihrer Arbeit in den neuen Arbeitsbereichen](service-new-workspaces.md). 
 
-Wenn Sie einen klassischen Arbeitsbereich erstellen, erstellen Sie eine zugrunde liegende, zugehörige Office 365-Gruppe. Die gesamte Arbeitsbereichsverwaltung findet in Office 365 statt. Sie können diesen Arbeitsbereichen Kollegen als Mitglieder oder Administratoren hinzufügen. Im Arbeitsbereich können Sie alle beim Erstellen von Dashboards, Berichten und anderen Artikeln zusammenarbeiten, die Sie für eine größere Zielgruppe veröffentlichen möchten. Alle Benutzer, die Sie einem App-Arbeitsbereich hinzufügen, benötigen eine Power BI Pro-Lizenz. 
+Wenn Sie einen klassischen Arbeitsbereich erstellen, erstellen Sie eine zugrunde liegende, zugehörige Office 365-Gruppe. Die gesamte Arbeitsbereichsverwaltung findet in Office 365 statt. Sie können diesen Arbeitsbereichen Kollegen als Mitglieder oder Administratoren hinzufügen. Im Arbeitsbereich können Sie alle beim Erstellen von Dashboards, Berichten und anderen Artikeln zusammenarbeiten, die Sie für eine größere Zielgruppe veröffentlichen möchten. Alle Benutzer, die Sie einem Arbeitsbereich hinzufügen, benötigen eine Power BI Pro-Lizenz. 
 
-## <a name="video-apps-and-app-workspaces"></a>Video: Apps und App-Arbeitsbereiche
+## <a name="video-apps-and-workspaces"></a>Video: Apps und Arbeitsbereiche
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-## <a name="create-a-classic-app-workspace-based-on-an-office-365-group"></a>Erstellen eines klassischen App-Arbeitsbereichs auf Grundlage einer Office 365-Gruppe
+## <a name="create-a-classic-workspace-based-on-an-office-365-group"></a>Erstellen eines klassischen Arbeitsbereichs auf Grundlage einer Office 365-Gruppe
 
-Wenn Sie einen App-Arbeitsbereich erstellen, basiert dieser auf einer Office 365-Gruppe.
+Wenn Sie einen Arbeitsbereich erstellen, basiert dieser auf einer Office 365-Gruppe.
 
 [!INCLUDE [powerbi-service-create-app-workspace](./includes/powerbi-service-create-app-workspace.md)]
 
 Wenn Sie diesen erstellen, müssen Sie möglicherweise etwa eine Stunde warten, bis der Arbeitsbereich an Office 365 weitergeleitet wurde. 
 
-### <a name="add-an-image-to-your-office-365-app-workspace-optional"></a>Hinzufügen eines Bilds im Office 365-App-Arbeitsbereich (optional)
+### <a name="add-an-image-to-your-office-365-workspace-optional"></a>Hinzufügen eines Bilds im Office 365-Arbeitsbereich (optional)
 Standardmäßig wird für die App in Power BI ein kleiner farbiger Kreis mit den Initialen der App erstellt. Sie können dies jedoch mit einem Bild anpassen. Sie benötigen eine Exchange Online-Lizenz, um ein Bild hinzuzufügen.
 
 1. Wählen Sie **Arbeitsbereiche**, wählen Sie die Auslassungspunkte (...) neben dem Namen des Arbeitsbereichs, und wählen Sie dann **Mitglieder** aus. 
    
-     ![Auswählen von Mitgliedern des Arbeitsbereichs](media/service-create-distribute-apps/power-bi-apps-workspace-members.png)
+     ![Auswählen von Mitgliedern des Arbeitsbereichs](media/service-create-workspaces/power-bi-workspace-old-members.png)
    
     Das Office 365 Outlook-Konto für den Arbeitsbereich wird in einem neuen Browserfenster geöffnet.
-2. Wenn Sie auf den farbigen Kreis in der oberen linken Ecke zeigen, ändert er sich in ein Stiftsymbol. Wählen Sie sie aus.
+2. Wählen Sie den **Bearbeitungsstift** aus.
    
-     ![Office 365-Stiftsymbol](media/service-create-distribute-apps/power-bi-apps-workspace-edit-image.png)
-3. Wählen Sie das Stiftsymbol erneut aus, und suchen Sie das Bild, das Sie verwenden möchten.
+     ![Office 365-Stiftsymbol](media/service-create-workspaces/power-bi-workspace-old-edit-group.png)
+3. Wählen Sie das Kamerabild aus, und suchen Sie das Bild, das Sie verwenden möchten.
    
-     ![Erneutes Auswählen des Stifts](media/service-create-distribute-apps/power-bi-apps-workspace-edit-group.png)
+     ![Auswählen des Kamerabilds](media/service-create-workspaces/power-bi-workspace-old-camera.png)
 
      Die Bilder können PNG-, JPG- oder BMP-Dateien sein. Die Dateien können groß sein (bis zu 3 MB). 
 
-4. Wählen Sie **Speichern**.
-   
-     ![Auswählen von „Speichern“](media/service-create-distribute-apps/power-bi-apps-workspace-save-image.png)
+4. Wählen Sie **OK** und anschließend **Speichern** aus.
    
     Das Bild ersetzt den farbigen Kreis im Office 365 Outlook-Fenster. 
    
-     ![Benutzerdefiniertes Bild](media/service-create-distribute-apps/power-bi-apps-workspace-image-in-office-365.png)
+     ![Benutzerdefiniertes Bild](media/service-create-workspaces/power-bi-workspace-old-new-image.png)
    
     In einigen Minuten wird es auch in der App in Power BI angezeigt.
-   
-     ![Benutzerdefiniertes Bild](media/service-create-distribute-apps/power-bi-apps-image.png)
 
-## <a name="add-content-to-your-app-workspace"></a>Hinzufügen von Inhalt zum App-Arbeitsbereich
+## <a name="add-content-to-your-workspace"></a>Hinzufügen von Inhalt zu Ihrem Arbeitsbereich
 
-Nachdem Sie einen App-Arbeitsbereich erstellt haben, ist es Zeit, diesem Inhalte hinzuzufügen. Sie fügen Inhalte auf die gleiche Weise hinzu, wie Sie in „Mein Arbeitsbereich“ Inhalt hinzufügen, mit dem Unterschied, dass andere Personen im Arbeitsbereich ebenfalls den Inhalt anzeigen und bearbeiten können. Ein großer Unterschied ist, dass Sie nach Abschluss der Bearbeitung den Inhalt als App veröffentlichen können. Wenn Sie Inhalte in der Inhaltsliste eines App-Arbeitsbereichs anzeigen, wird der Name des Arbeitsbereichs als Besitzer aufgeführt.
+Nachdem Sie einen Arbeitsbereich erstellt haben, ist es Zeit, diesem Inhalte hinzuzufügen. Sie fügen Inhalte auf die gleiche Weise hinzu, wie Sie in „Mein Arbeitsbereich“ Inhalt hinzufügen, mit dem Unterschied, dass andere Personen im Arbeitsbereich ebenfalls den Inhalt anzeigen und bearbeiten können. Ein großer Unterschied ist, dass Sie nach Abschluss der Bearbeitung den Inhalt als App veröffentlichen können. Wenn Sie Inhalte in der Inhaltsliste eines Arbeitsbereichs anzeigen, wird der Name des Arbeitsbereichs als Besitzer aufgeführt.
 
-### <a name="connect-to-third-party-services-in-app-workspaces"></a>Herstellen einer Verbindung mit Drittanbieterdiensten in App-Arbeitsbereichen
+### <a name="connect-to-third-party-services-in-workspaces"></a>Herstellen einer Verbindung mit Drittanbieterdiensten in Arbeitsbereichen
 
 Apps werden für alle Drittanbieterdienste bereitgestellt, die Power BI unterstützt, was Ihnen erleichtert, Daten von den Diensten abzurufen, die Sie verwenden, z.B. Microsoft Dynamics CRM, Salesforce oder Google Analytics. Sie können organisationsbezogene Apps veröffentlichen, um Ihren Benutzern die Daten bereitzustellen, die sie benötigen.
 
@@ -96,7 +92,7 @@ Apps sind die Weiterentwicklung von organisationsbezogenen Inhaltspaketen. Wenn 
 * Wir planen, im Verlauf der Zeit die Unterstützung organisationsbezogener Inhaltspakete einzustellen, daher wird empfohlen, von nun an Apps zu erstellen.  
 * Die Veröffentlichung der Vorschauversion stellt den Beginn des Endes der Unterstützung organisationsbezogener Inhaltspakete dar. Sie können diese nicht in der Vorschauversion für Arbeitsbereiche nutzen oder erstellen.
 
-Einen Vergleich der beiden Arbeitsbereiche finden Sie unter [Unterschiede zwischen den neuen und den alten App-Arbeitsbereichen](service-new-workspaces.md#how-the-new-workspaces-are-different). 
+Einen Vergleich der beiden Arbeitsbereiche finden Sie unter [Unterschiede zwischen den neuen und den alten Arbeitsbereichen](service-new-workspaces.md#how-the-new-workspaces-are-different). 
 
 ## <a name="next-steps"></a>Nächste Schritte
 * [Installieren und Verwenden von Apps in Power BI](service-create-distribute-apps.md)

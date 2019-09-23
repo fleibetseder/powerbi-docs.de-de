@@ -7,42 +7,53 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 09/10/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0c098baa42e4fdc45b23519856eed824dbab5cad
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: 37304f9d23c514c7223b3eca481bf3b7b2258ac4
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023383"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70904240"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Verwenden von Berichtdesigns in Power BI Desktop
-Mit **Berichtsdesigns** können Sie ein Farbdesign für Ihren gesamten Bericht übernehmen (Unternehmensfarben, saisonbedingte Farben, Symbolsätze oder andere Farbdesigns). Wenn Sie ein **Berichtsdesign** anwenden, verwenden alle Visuals im Bericht die Farben des ausgewählten Designs. Es gibt einige Ausnahmen, die später in diesem Artikel beschrieben werden.
+Mit **Berichtsdesigns** können Sie Entwurfsänderungen auf den gesamten Bericht anwenden, z. B. die Verwendung von Unternehmensfarben, das Ändern von Symbolsätzen oder das Anwenden der neuen Standardformatierung für Visuals. Wenn Sie ein **Berichtsdesign** anwenden, verwenden alle Visuals im Bericht Farben und Formatierung des ausgewählten Designs. Es gibt einige Ausnahmen, die später in diesem Artikel beschrieben werden.
 
-![Report themes](media/desktop-report-themes/report-themes_1.png)
+![Report themes](media/desktop-report-themes/report-themes-1a.png)
 
-Wenn Sie ein **Berichtsdesign** anwenden, benötigen Sie eine JSON-Datei mit einer Grundstruktur. Sie können diese JSON-Datei dann in Power BI Desktop importieren und auf Ihren Bericht anwenden. Die Struktur der JSON-Datei ist leicht zu verstehen, und ihr Import erfordert nur wenige Klicks.
+Wenn Sie ein benutzerdefiniertes **Berichtsdesign** anwenden, benötigen Sie eine JSON-Datei mit einer Grundstruktur. Sie können diese JSON-Datei dann in Power BI Desktop importieren und auf Ihren Bericht anwenden.
 
-Sie können auch fast alle Elemente anpassen und standardisieren. Verwenden Sie zum Anpassen die JSON-Datei, die Sie im Bereich **Formatierung** manuell anpassen. Das Ziel besteht darin, Ihnen eine umfassende und genaue Kontrolle über das Erscheinungsbild Ihrer Berichte zu bieten.
+Sie können auch nahezu alle Elemente, die im Bereich **Formatierung** angezeigt werden, mithilfe der Design-JSON-Datei anpassen und standardisieren. Das Ziel besteht darin, Ihnen eine umfassende und genaue Kontrolle über das Erscheinungsbild Ihrer Berichte zu bieten.
 
 ## <a name="how-report-themes-work"></a>Funktionsweise von Berichtdesigns
 Um ein Berichtsdesign auf einen Power BI Desktop-Bericht anzuwenden, wählen Sie ein verfügbares integriertes Design aus, oder importieren Sie ein benutzerdefiniertes Design.
 
 | Integriertes Berichtsdesign | Standardfarbsequenz    |
 |------ |---------- |
-| Standard   | ![#01B8AA](https://placehold.it/20/01B8AA/000000?text=+) ![#374649](https://placehold.it/20/374649/000000?text=+) ![#FD625E](https://placehold.it/20/FD625E/000000?text=+) ![#F2C80F](https://placehold.it/20/F2C80F/000000?text=+) ![#5F6B6D](https://placehold.it/20/5F6B6D/000000?text=+) ![#8AD4EB](https://placehold.it/20/8AD4EB/000000?text=+) ![#FE9666](https://placehold.it/20/FE9666/000000?text=+) ![#A66999](https://placehold.it/20/A66999/000000?text=+)|
-| Stadtpark     | ![#73B761](https://placehold.it/20/73B761/000000?text=+) ![#4A588A](https://placehold.it/20/4A588A/000000?text=+) ![#ECC846](https://placehold.it/20/ECC846/000000?text=+) ![#CD4C46](https://placehold.it/20/CD4C46/000000?text=+) ![#71AFE2](https://placehold.it/20/71AFE2/000000?text=+) ![#8D6FD1](https://placehold.it/20/8D6FD1/000000?text=+) ![#EE9E64](https://placehold.it/20/EE9E64/000000?text=+) ![#95DABB](https://placehold.it/20/95DABB/000000?text=+)|
-| Klassenzimmer     | ![#4A8DDC](https://placehold.it/20/4A8DDC/000000?text=+) ![#4C5D8A](https://placehold.it/20/4C5D8A/000000?text=+) ![#F3C911](https://placehold.it/20/F3C911/000000?text=+) ![#DC5B57](https://placehold.it/20/DC5B57/000000?text=+) ![#33AE81](https://placehold.it/20/33AE81/000000?text=+) ![#95C8F0](https://placehold.it/20/95C8F0/000000?text=+) ![#DD915F](https://placehold.it/20/DD915F/000000?text=+) ![#9A64A0](https://placehold.it/20/9A64A0/000000?text=+)|
-| Geeignet bei Farbenblindheit   | ![#074650](https://placehold.it/20/074650/000000?text=+) ![#009292](https://placehold.it/20/009292/000000?text=+) ![#FE6DB6](https://placehold.it/20/FE6DB6/000000?text=+) ![#FEB5DA](https://placehold.it/20/FEB5DA/000000?text=+) ![#480091](https://placehold.it/20/480091/000000?text=+) ![#B66DFF](https://placehold.it/20/B66DFF/000000?text=+) ![#B5DAFE](https://placehold.it/20/B5DAFE/000000?text=+) ![#6DB6FF](https://placehold.it/20/6DB6FF/000000?text=+)|
-| Elektrisch  | ![#118DFF](https://placehold.it/20/118DFF/000000?text=+) ![#750985](https://placehold.it/20/750985/000000?text=+) ![#C83D95](https://placehold.it/20/C83D95/000000?text=+) ![#FF985E](https://placehold.it/20/FF985E/000000?text=+) ![#1DD5EE](https://placehold.it/20/1DD5EE/000000?text=+) ![#42F7C0](https://placehold.it/20/42F7C0/000000?text=+) ![#3049AD](https://placehold.it/20/3049AD/000000?text=+) ![#F64F5C](https://placehold.it/20/F64F5C/000000?text=+)|
-| Hoher Kontrast     | ![#107C10](https://placehold.it/20/107C10/000000?text=+) ![#002050](https://placehold.it/20/002050/000000?text=+) ![#A80000](https://placehold.it/20/A80000/000000?text=+) ![#5C2D91](https://placehold.it/20/5C2D91/000000?text=+) ![#004B50](https://placehold.it/20/004B50/000000?text=+) ![#0078D7](https://placehold.it/20/0078D7/000000?text=+) ![#D83B01](https://placehold.it/20/D83B01/000000?text=+) ![#B4009E](https://placehold.it/20/B4009E/000000?text=+)|
-| Sonnenuntergang    | ![#B6B0FF](https://placehold.it/20/B6B0FF/000000?text=+) ![#3049AD](https://placehold.it/20/3049AD/000000?text=+) ![#FF994E](https://placehold.it/20/FF994E/000000?text=+) ![#C83D95](https://placehold.it/20/C83D95/000000?text=+) ![#FFBBED](https://placehold.it/20/FFBBED/000000?text=+) ![#42F9F9](https://placehold.it/20/42F9F9/000000?text=+) ![#00B2D9](https://placehold.it/20/00B2D9/000000?text=+) ![#FFD86C](https://placehold.it/20/FFD86C/000000?text=+)|
-| Dämmerung  | ![#F17925](https://placehold.it/20/F17925/000000?text=+) ![#004753](https://placehold.it/20/004753/000000?text=+) ![#CCAA14](https://placehold.it/20/CCAA14/000000?text=+) ![#4B4C4E](https://placehold.it/20/4B4C4E/000000?text=+) ![#D82C20](https://placehold.it/20/D82C20/000000?text=+) ![#A3D0D4](https://placehold.it/20/A3D0D4/000000?text=+) ![#536F18](https://placehold.it/20/536F18/000000?text=+) ![#46ABB0](https://placehold.it/20/46ABB0/000000?text=+)|
+| Standard   | ![Standard](media/desktop-report-themes/report-themes-color-scheme-default.png)|
+| Hochhaus  | ![Hochhaus](media/desktop-report-themes/report-themes-color-scheme-highrise.png)|
+| Executive     | ![Geschäftlich](media/desktop-report-themes/report-themes-color-scheme-executive.png)|
+| Grenze  | ![Grenze](media/desktop-report-themes/report-themes-color-scheme-frontier.png)|
+| Innovativ    | ![Innovativ](media/desktop-report-themes/report-themes-color-scheme-innovative.png)|
+| Blüte     | ![Blüte](media/desktop-report-themes/report-themes-color-scheme-bloom.png)|
+| Gezeiten | ![Gezeiten](media/desktop-report-themes/report-themes-color-scheme-tidal.png)|
+| Temperatur   | ![Temperatur](media/desktop-report-themes/report-themes-color-scheme-temperature.png)|
+| Solar | ![Solar](media/desktop-report-themes/report-themes-color-scheme-solar.png)|
+| Divergent     | ![Divergent](media/desktop-report-themes/report-themes-color-scheme-divergent.png)|
+| Sturm     | ![Sturm](media/desktop-report-themes/report-themes-color-scheme-storm.png)|
+| Klassisch   | ![Klassisch](media/desktop-report-themes/report-themes-color-scheme-classic.png)|
+| Stadtpark     | ![Stadtpark](media/desktop-report-themes/report-themes-color-scheme-city-park.png)|
+| Klassenzimmer     | ![Klassenzimmer](media/desktop-report-themes/report-themes-color-scheme-classroom.png)|
+| Geeignet bei Farbenblindheit   | ![Geeignet bei Farbenblindheit](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
+| Elektrisch  | ![Elektrisch](media/desktop-report-themes/report-themes-color-scheme-electric.png)|
+| Hoher Kontrast     | ![Hoher Kontrast](media/desktop-report-themes/report-themes-color-scheme-high-contrast.png)|
+| Sonnenuntergang    | ![Sonnenuntergang](media/desktop-report-themes/report-themes-color-scheme-sunset.png)|
+| Dämmerung  | ![Dämmerung](media/desktop-report-themes/report-themes-color-scheme-twilight.png)|
 
 Wenn Sie eines der verfügbaren integrierten Berichtsdesigns auswählen möchten, klicken Sie im Menüband **Start** auf die Schaltfläche **Design wechseln**, und wählen Sie eines der Designs aus dem Dropdownmenü aus.
 
-![Auswählen eines Berichtsdesigns](media/desktop-report-themes/report-themes_2a.png)
+![Auswählen eines Berichtsdesigns](media/desktop-report-themes/report-themes-2a.png)
 
 Ihr Berichtsdesign wird auf den Bericht angewendet, und Sie sind startbereit.
 
@@ -50,7 +61,7 @@ Ihr Berichtsdesign wird auf den Bericht angewendet, und Sie sind startbereit.
 
 Wenn Sie ein benutzerdefiniertes Berichtsdesign importieren möchten, wählen Sie im Menüband **Start** die Schaltfläche **Design wechseln** aus. Wählen Sie dann im Dropdownmenü **Design importieren** aus.
 
-![Importieren des Designs](media/desktop-report-themes/report-themes_3.png)
+![Importieren des Designs](media/desktop-report-themes/report-themes-3a.png)
 
 Navigieren Sie im neu angezeigten Fenster zum Speicherort der JSON-Datei mit dem Design. Power BI Desktop sucht nach JSON-Dateien, da JSON der Dateityp für Power BI-Berichtsdesigns ist. In der folgenden Abbildung sehen Sie einige Dateien mit Feiertagsdesigns. Wir wählen ein Feiertagsdesign für März aus.
 
@@ -60,7 +71,7 @@ Wenn die Designdatei in Power BI Desktop erfolgreich geladen wurde, erhalten Sie
 
 ![Erfolgreicher Import des Designs](media/desktop-report-themes/report-themes_5.png)
 
-Werfen wir jetzt einen Blick auf die unkomplizierte Struktur der importierten JSON-Designdatei.
+Werfen wir jetzt einen Blick auf die Struktur der importierten JSON-Designdatei.
 
 ## <a name="structure-of-a-report-theme-json-file"></a>Struktur einer JSON-Berichtdesigndatei
  Beim Öffnen in einem Editor sieht die JSON-Basisdatei, die im vorherigen Abschnitt ausgewählt wurde (*St Patricks Day.json*), wie in diesem Screenshot aus:
@@ -73,17 +84,7 @@ Die JSON-Datei muss die folgenden Zeilen enthalten:
 
 * **dataColors**: Eine Liste von Farben (im Hexadezimalcode) für Daten in Power BI Desktop-Visuals. Die Liste kann beliebig viele oder wenige Farben umfassen.
 
-* **background**, **foreground** und **tableAccent**: Die Farben, die für verschiedene Visualtypen angewendet werden sollen. 
-  - **foreground** gilt für den Text des Textfelds, den KPI-Zieltext, den mehrzeiligen Text auf der Karte, den Text des Kartenwerts, den Legendentext des Messgeräts, den Text des vertikalen Datenschnittelements sowie den Text der Gesamtzahl und der Werte von der **Tabelle** und **Matrix**. 
-  - **background** gilt für die Füllung der Schaltfläche und den Hintergrund der Kombinationsdiagrammbezeichnung. Wie diese Farben verwendet werden, hängt vom Format des angewendeten Visuals ab. 
-  - Die Visuals **Tabelle** und **Matrix** wenden diese Formate standardmäßig an.
-
-Um einen Stil auf ein Visual vom Typ **Tabelle** oder **Matrix** anzuwenden, führen Sie die folgenden Schritte aus: 
-1. Wählen Sie das Visual aus. 
-2. Wählen Sie im Bereich **Visualisierungen** den Abschnitt **Format** aus.
-3. Erweitern Sie die Option **Matrixformat**, und wählen Sie einen Stil aus der Dropdownliste **Stil** aus.
-
-![Dropdownmenü „Stil“](media/desktop-report-themes/report-themes_7.png)
+* **background**, **foreground** und **tableAccent**: Mehrere Farbklassen. Weiter unten in diesem Artikel werden die Details der Farbklassen erläutert. Sie wissen jedoch, dass die Farbklassen Ihnen ermöglichen, viele Farben in Ihrem Bericht gleichzeitig festzulegen.
 
 Das ist der Text der Datei *St Patricks Day.json*, mit dem Sie eine eigene JSON-Datei erstellen können:
 
@@ -97,7 +98,7 @@ Das ist der Text der Datei *St Patricks Day.json*, mit dem Sie eine eigene JSON-
     }
 ```
 
-Jetzt ist es ganz leicht, eigene Farben (als Hexadezimalcode) einzugeben.
+Wenn Sie nur die grundlegenden Farben Ihres Berichts anpassen möchten, können Sie einfach den Namen und die hexadezimalen Codes dieser Datei ändern, um eine eigene persönliche JSON-Datei zum Importieren zu erhalten.
 
 In der JSON-Datei definieren Sie nur die Formatierung, die Sie anpassen möchten. Für alle Formatierungselemente, die *nicht* in der JSON-Datei angegeben werden, werden die Standardeinstellungen von Power BI verwendet.
 
@@ -116,10 +117,12 @@ Der Abschnitt **Datenfarben** im Bereich **Format** spiegelt Ihr Berichtsdesign 
 
 Also alles im grünen Bereich. Das liegt daran, dass diese Farben Teil des **Berichtsdesigns** sind, das Sie importiert und angewendet haben.
 
-### <a name="situations-when-report-theme-colors-wont-stick-to-your-reports"></a>Situationen, in denen Berichtdesignfarben in Berichten nicht dargestellt werden
-Angenommen, Sie wenden eine benutzerdefinierte Farbpalette (oder eine einzelne Farbe) auf einen bestimmten Datenpunkt in einem Visual an. Wenn Sie ein Berichtsdesign anwenden, überschreibt es *nicht* die angepasste Datenpunktfarbe.
+Farben in der Farbpalette sind auch relativ zum aktuellen Design. Wenn Sie also beispielsweise die dritte Farbe der obersten Zeile für einen Datenpunkt auswählen und später zu dem anderen Design wechseln, wird die Farbe des Datenpunkts automatisch auf die dritte Farbe der obersten Zeile im neuen Design aktualisiert – wie beim Ändern von Designs in Microsoft Office.
 
-Sie haben auch die Möglichkeit, die Farbe eines Datenpunkts im Abschnitt „Designfarben“ manuell festzulegen. Die Farben werden *nicht* aktualisiert, wenn Sie ein neues Berichtsdesign anwenden. Wenn Sie Farben auf ihre Standardwerte zurücksetzen möchten, damit sie bei Anwenden eines neuen Berichtsdesigns aktualisiert werden, wählen Sie in der Palette **Designfarben** **Auf Standardwert zurücksetzen** aus.
+### <a name="situations-when-report-theme-colors-wont-stick-to-your-reports"></a>Situationen, in denen Berichtdesignfarben in Berichten nicht dargestellt werden
+Angenommen, Sie wenden eine benutzerdefinierte Farbpalette (oder eine einzelne Farbe) unter Verwendung der Option „Benutzerdefinierte Farbe“ in der Farbauswahl auf einen bestimmten Datenpunkt in einem Visual an. Wenn Sie ein Berichtsdesign anwenden, überschreibt es *nicht* die angepasste Datenpunktfarbe.
+
+Sie haben auch die Möglichkeit, die Farbe eines Datenpunkts im Abschnitt „Designfarben“ manuell festzulegen. Die Farben werden *nicht* aktualisiert, wenn Sie ein neues Berichtsdesign anwenden. Wenn Sie Farben auf ihre Standardwerte zurücksetzen möchten, damit sie bei Anwenden eines neuen Berichtsdesigns aktualisiert werden, wählen Sie **Auf Standardwert zurücksetzen** aus, oder wählen Sie in der Farbauswahl eine Farbe in der Palette **Designfarben** aus.
 
 ![Auf Standardwert zurücksetzen](media/desktop-report-themes/report-themes_9.png)
 
@@ -166,13 +169,139 @@ Hier sind einige weitere Berichtsdesigns, die Sie als Ausgangspunkt verwenden k�
 * [Color Blind Friendly](https://community.powerbi.com/t5/Themes-Gallery/Color-Blind-Friendly/m-p/140597) (Für Farbenblinde)
 
 ## <a name="report-theme-json-file-format"></a>Format der JSON-Datei für Berichtsdesigns
-Die grundlegende JSON-Datei enthält fünf erforderliche Zeilen:
+Auf der grundlegendsten Ebene benötigt die Design-JSON-Datei nur eine Zeile: den **Namen**. 
 
-* **name**: Der Name des Designs ist die einzige Pflichtangabe.
-* **dataColors**: Eine Liste von Farben (im Hexadezimalcode) für Daten in Power BI Desktop-Visuals. Die Liste kann beliebig viele oder wenige Farben umfassen.
-* **background**, **foreground** und **tableAccent**: Die Farben, die für verschiedene Visualtypen angewendet werden sollen. **foreground** (Vordergrund) gilt für den Text des Textfelds, den KPI-Zieltext, den mehrzeiligen Text auf der Karte, den Text des Kartenwerts, den Legendentext des Messgeräts, den Text des vertikalen Datenschnittelements sowie für den Text der Gesamtzahl und der Werte von **table** und **matrix**. **background** gilt für die Füllung der Schaltfläche und den Hintergrund der Kombinationsdiagrammbezeichnung. Wie diese Farben verwendet werden, hängt vom Format des angewendeten Visuals ab. Die Visuals **Tabelle** und **Matrix** werden standardmäßig auf diese Formate angewendet.
+```json
+    {
+        "name": "Custom Theme",
+    }
+```
 
-Um eine JSON-Datei in einem erweiterten Format zu erstellen, die eine detailliertere und präzisere Steuerung der Formatierung ermöglicht, müssen Sie der JSON-Datei den Abschnitt **visualStyles** hinzufügen. Die Formatierungsangaben im Abschnitt **visualStyles** müssen Sie schachteln. Der Abschnitt **visualStyles** hat etwa das folgende Format:
+Alles andere als der *Name* ist optional. Dies bedeutet, dass Sie die Freiheit haben, nur die Eigenschaften hinzuzufügen, die Sie speziell für die Designdatei formatieren möchten, und für den Rest weiterhin die Standardwerte von Power BI verwenden können. 
+
+Unter dem Namen können Sie einige grundlegende Eigenschaften von Datenfarben hinzufügen. 
+
+
+* **dataColors**: Eine Liste von Farben (im Hexadezimalcode) für Daten in Power BI Desktop-Visuals. Die Liste kann beliebig viele oder wenige Farben umfassen. Wenn alle Farben aus dieser Liste verwendet worden sind und das Visual noch weitere Farben benötigt, erfolgt die Zurücksetzung auf die Verwendung der Standardfarbpalette von Power BI. 
+* **good, neutral, bad**: Hiermit werden die vom Wasserfalldiagramm und dem KPI-Visual verwendeten Statusfarben festgelegt.
+* **maximum, center, minimum, null**: Mit diesen Farben werden die verschiedenen Farbverlaufsfarben im Dialogfeld für die bedingte Formatierung festgelegt.  
+
+Ein grundlegendes Design, das diese Farben definiert, würde wie folgt aussehen:
+
+```json
+    {
+        "name": "Custom Theme",
+          "dataColors": [
+                "#118DFF",
+                "#12239E", 
+                "#E66C37", 
+                "#6B007B", 
+                "#E044A7",
+                "#744EC2", 
+                "#D9B300", 
+                "#D64550",
+                "#197278", 
+                "#1AAB40"
+    ],
+        "good": "#1AAB40",
+        "neutral": "#D9B300",
+        "bad": "#D64554",
+        "maximum": "#118DFF",
+        "center": "#D9B300",
+        "minimum": "#DEEFFF",
+        "null": "#FF7F48"
+    }
+```
+
+Als nächstes können Sie verschiedene Farbklassen hinzufügen. Mit Farbklassen können Sie im gesamten Bericht viele Farben in einer Zeile festlegen, indem Sie ähnliche visuelle Eigenschaften gruppieren, die in der Regel die gleiche Farbe aufweisen. 
+
+Die sechs Farbklassen, die Sie in der folgenden Tabelle formatieren können, werden angezeigt.
+
+
+|Farbklasse  |Formatiert Folgendes  |
+|---------|---------|
+|Vordergrund | Hintergrundfarbe für Beschriftungen (außerhalb von Datenpunkten) <br> Trendlinienfarbe <br>  Textfeld-Standardfarbe <br> Schriftfarbe für Tabellen- und Matrixwerte und Summen Datenbalken-Achsenfarbe <br> Kartendatenbeschriftungen <br> Farbe für Messgerätlegendenwert <br> KPI-Zielfarbe <br>  KPI-Textfarbe <br> Slicerelementfarbe (im Fokusmodus)  <br> Schriftfarbe für Slicerdropdownelement <br> Schriftfarbe für numerische Slicereingabe <br> Schriftfarbe für Slicerkopfzeile <br> Punktdiagramm-Verhältnislinienfarbe <br> Farbe für Liniendiagramm-Vorhersagelinie <br> Kartenführungslinien-Farbe <br> Farbe für Filterbereich und Kartentext|
+|foregroundNeutralSecondary |Beschriftungsfarben  <br> Farbe für Legendenbeschriftungen <br> Farbe für Achsenbeschriftungen <br> Schriftfarbe für Tabellen- und Matrixkopfzeile <br> Farbe für Messgerätziel und Zielführungslinie <br>  KPI-Trendachsenfarbe <br> Farbe für Slicerschieberegler <br> Schriftfarbe für Slicerelement <br> Farbe für Slicerkontur <br> Farbe beim Zeigen auf Liniendiagramm <br> Titelfarbe für mehrzeilige Karte <br> Strichfarbe für Menübanddiagramm <br> Rahmenfarbe für Formenzuordnung <br> Schriftfarbe für Schaltflächentext <br> Linienfarbe für Schaltflächensymbol <br> Schaltflächen-Konturfarbe |
+| foregroundNeutralTertiary | abgeblendete Legendenfarbe <br> Farbe für Kartenkategoriebeschriftung <br> Farbe für Kategoriebeschriftungen für mehrzeilige Karte <br> Balkenfarbe für mehrzeilige Karte <br> Strichfarbe für Trichterdiagramm-Konvertierungsrate 
+| backgroundLight | Achsengitternetzlinien-Farbe <br> Tabellen- und Matrixrasterfarbe <br> Hintergrundfarbe für Slicerkopfzeile (im Fokusmodus)  <br> Konturfarbe für mehrzeilige Karte  <br> Formfüllfarbe <br> Hintergrundfarbe für Messgerätbogen <br> Hintergrundfarbe für angewendete Filterkarte <br> |
+backgroundNeutral | Tabellen- und Matrixraster-Konturenfarbe <br> Standardfarbe für Formenzuordnung <br> Menübanddiagramm-Füllfarbe (wenn Option „Serienfarbe abgleichen“ deaktiviert ist) |
+Hintergrund | Hintergrundfarbe für Beschriftungen (innerhalb von Datenpunkten) <br> Hintergrundfarbe für Slicerdropdownelemente  <br> Ringdiagramm-Strichfarbe <br> Treemapstrichfarbe <br> Hintergrundfarbe des Kombinationsdiagramms <br> Füllfarbe für Schaltflächen <br> Farbe für Filterbereich und Hintergrund verfügbarer Filterkarten |
+tableAccent | Überschreibt die Tabellen- und Matrixraster-Konturfarbe, wenn vorhanden |
+
+
+Hier sehen Sie das Beispiel einer Designeinstellung der Farbklassen:
+
+```json
+    {
+        "name": "Custom Theme",
+        "foreground": "#252423",
+          "foregroundNeutralSecondary": "#605E5C",
+          "foregroundNeutralTertiary": "#B3B0AD",
+        "background": "#FFFFFF",
+          "backgroundLight": "#F3F2F1",
+          "backgroundNeutral": "#C8C6C4",
+        "tableAccent": "#118DFF"
+    }
+```
+
+Als nächstes können Sie Ihrer JSON-Datei Textklassen hinzufügen, die Farbklassen ähneln, aber so konzipiert sind, dass Sie Schriftgrad, Farbe und Familie für Textgruppen im gesamten Bericht aktualisieren können. Es gibt 12 Textklassen, aber Sie müssen eigentlich nur vier Klassen festlegen, die als *primäre Klassen* bezeichnet werden, um die gesamte Textformatierung im Bericht zu ändern. Andere Textklassen, die als *sekundäre Klassen* angesehen werden, erben ihre Eigenschaften automatisch von ihren zugeordneten primären Klassen oder leiten sie davon ab. Häufig leitet eine sekundäre Klasse einen im Vergleich zur primären Klasse helleren Ton der Textfarbe ab oder eine Textgröße, die um einen bestimmten Prozentsatz größer oder kleiner ist. 
+
+Nehmen wir die Klasse *label* als Beispiel. Die Standardformatierung für die label-Klasse ist Segoe UI, 252423 (ein Dunkelgrau) und 12 Punkte, und diese Klasse wird verwendet, um die Werte in der Tabelle und der Matrix zu formatieren. In der Regel verfügen die Summen in einer Tabelle oder Matrix über eine ähnliche Formatierung, aber sie werden fett formatiert, sodass sie sich besser hervorheben, also wird für sie die Klasse für die fette Beschriftungsformatierung verwendet. Sie müssen dies jedoch nie selbst im Design-JSON-Code angeben. Power BI legt dies automatisch für Sie fest. Wenn Sie zu einem späteren Zeitpunkt entscheiden, dass die Beschriftungen in Ihrem Design in einer 14-Punkt-Schrift angezeigt werden sollen, müssen Sie nicht auch die Klasse für die fette Beschriftungsformatierung aktualisieren, da sie die gesamte Textformatierung von der label-Klasse erbt und einfach für die Schriftfamilie die Fettformatierung festgelegt wird. 
+
+Die Tabellenliste zeigt Folgendes an:
+* Die vier primären Textklassen, was sie formatieren, und die Standardeinstellungen
+* Jede sekundäre Klasse, was sie formatiert, und ihre Standardeinstellung, die im Vergleich zur primären Klasse eindeutig ist
+
+
+|Primäre Klasse  |Sekundäre Klasse  |Klassenname in JSON  |Einstellungen  |Zugeordnete visuelle Objekte  |
+|---------|---------|---------|---------|---------|
+| Legende   | N/V   | callout | DIN <br> 252423 <br> 45 pt |Kartendatenbeschriftungen <br> KPI-Indikatoren|
+|Header|N/V|header|Segoe UI Semibold <br> 252423 <br> 12 pt |Kopfzeile für die wichtigsten Einflussfaktoren |
+| Titel || title    |DIN <br> 252423 <br> 12 pt |Titel der Kategorieachse <br> Titel der Wertachse <br> Titel der mehrzeiligen Karte * <br> Slicerkopfzeile|
+|-| Großer Titel | largeTitle    |14 pt   |Visualtitel |
+|Beschriftung ||label |Segoe UI<br>252423<br>10 pt |Tabellen- und Matrixspalten-Kopfzeile <br> Matrixzeilen-Kopfzeile<br>Tabellen- und Matrixraster<br>Tabellen- und Matrixwerte |
+|-|Halbfett |semiboldLabel| Segoe UI Semibold   | Profiltext für wichtige Einflussfaktoren
+|-|Large    |largeLabel |12 pt   | Datenbeschriftungen für mehrzeilige Karte |
+|-|Small    |smallLabel |9 pt    |Bezugslinienbeschriftungen * <br>Slicerdatumsbereichs-Beschriftungen<br> Textstil für numerische Slicereingabe<br>Slicersuchfeld<br>Text wichtiger Einflussfaktoren|
+|-|Hell    |lightLabel |605E5C    |Legendentext<br>Schaltflächentext<br>Kategorieachsenbeschriftung<br>Trichterdiagramm-Datenbeschriftungen<br>Beschriftungen für Trichterdiagramm-Konvertierungsraten<br>Messgerätziel<br>Punktdiagramm-Kategoriebeschriftung<br>Slicerelemente|
+|-|Fett |boldLabel  |Segoe UI Bold  |Matrixzwischensummen<br>Matrixgesamtsummen<br>Tabellensummen |
+|-|Groß und dünn  |largeLightLabel    |605E5C<br>12 pt    |Kartenkategoriebeschriftungen<br>Messgerätbeschriftungen<br>Kategoriebeschriftungen für mehrzeilige Karte |
+|-|Klein und dünn  |smallLightLabel    |605E5C<br>9 pt |Datenbeschriftungen<br>Wertachsenbeschriftungen|
+
+
+Sie müssen die sekundären Klassen zwar nicht in der Designdatei festlegen, da sie von den primären Klassen erben, aber wenn Sie die Vererbungsregeln nicht mögen (weil Sie z. B. nicht möchten, dass Ihre Summenwerte in einer Tabelle fett formatiert sind), können Sie die sekundären Klassen explizit in der Designdatei formatieren, so wie Sie die primären Klassen formatieren können.
+
+Im folgenden Beispieldesign werden nur die primären Textklassen festlegt: 
+
+```json
+    {
+            "name": "Custom Theme",
+          "textClasses": {
+                "callout": {
+                    "fontSize": 45,
+                    "fontFace": "wf_standard-font",
+                    "color": "#252423"
+                },
+                "title": {
+                    "fontSize": 12,
+                    "fontFace": "wf_standard-font",
+                    "color": "#252423"
+                },
+                "header": {
+                    "fontSize": 12,
+                    "fontFace": "Segoe UI Semibold",
+                    "color": "#252423"
+                },
+                "label": {
+                    "fontSize": 10,
+                    "fontFace": "Segoe UI",
+                    "color": "#252423"
+                }
+        }    
+    }
+```
+
+Um eine JSON-Datei in einem erweiterten Format zu erstellen, die eine detailliertere und präzisere Steuerung der gesamten Visualformatierung ermöglicht, können Sie der JSON-Datei schließlich den Abschnitt **visualStyles** hinzufügen. Die Formatierungsangaben im Abschnitt **visualStyles** müssen Sie schachteln. Der Abschnitt **visualStyles** hat etwa das folgende Format:
 
     visualStyles: {
         visualName: {
@@ -184,7 +313,52 @@ Um eine JSON-Datei in einem erweiterten Format zu erstellen, die eine detaillier
         }
     }
 
-Verwenden Sie genaue Angaben in den Abschnitten **visualName** und **cardName**. Verwenden Sie ein Sternchen („\*“), wenn die Einstellung für alle Visuals oder Karten gelten soll, die eine Eigenschaft für ein bestimmtes Visual haben. Sie können das Sternchen („\*“) auch verwenden, wenn Sie eine Einstellung global im Bericht anwenden möchten, z.B. einen Schriftgrad oder eine bestimmte Schriftfamilie für die Visuals.
+Verwenden Sie für die Abschnitte **visualName** und **cardName** einen spezifischen Visual- und Kartennamen. Derzeit ist der **styleName** immer ein Sternchen („*“), aber in einem zukünftigen Release können Sie unterschiedliche Formatvorlagen für Ihre Visuals erstellen und Ihnen Namen geben (ähnlich wie beim Tabellen- und Matrixformatvorlagen-Feature). **propertyName** ist der Name der spezifischen Formatierungsoption, und unter **propertyValue** definieren Sie die Formatierungsoption.  
+
+Für **visualName** und **cardName** können Sie ein Sternchen („\*“) statt eines spezifischen Visual- oder Kartennamens verwenden, wenn die Einstellung für alle Visuals oder Karten gelten soll, die eine Eigenschaft haben. Wenn Sie das Sternchen („\*“) sowohl für den Visual- als auch für den Kartennamen verwenden, wenden Sie eine Einstellung global in Ihrem Bericht an, z. B. einen Schriftgrad oder eine bestimmte Schriftfamilie für alle Texte aller Visuals.
+
+Im folgenden Beispiel werden einige Eigenschaften für alle visuellen Stile festgelegt. 
+
+```json
+{  
+   "name":"Custom Theme",
+   "visualStyles":{  
+      "*":{  
+         "*":{  
+            "*":[{  
+                  "wordWrap":true
+            }],
+            "categoryAxis":[{
+                  "gridlineStyle":"dotted"
+            }],
+            "filterCard":[{  
+                  "$id":"Applied",
+                  "foregroundColor":{"solid":{"color":"#252423"}}
+               },
+               {  
+                  "$id":"Available",
+                  "border":true
+            }]
+         }
+      },
+      "scatterChart":{  
+         "*":{  
+            "bubbles":[{  
+                  "bubbleSize":-10
+            }]
+         }
+      }
+   }
+}
+```
+
+Dieses Beispiel zeigt Folgendes:
+
+* Aktivieren des Zeilenumbruchs überall
+* Festlegen des Gitternetzlinien-Stils auf gepunktet für alle Visuals mit einer Kategorieachse
+* Festlegen einiger Formatierungen für die verfügbaren und angewendeten Filterkarten (beachten Sie, dass „$id“ verwendet wird, um die verschiedenen Versionen der Filterkarten festzulegen)
+* Festlegen der Blasengröße für Punktdiagramme auf-10.
+
 
 > [!NOTE]
 > Sie müssen nur die Formatierungselemente angeben, die Sie anpassen möchten. Für alle Formatierungselemente, die nicht in der JSON-Datei enthalten sind, werden die Standardwerte und -einstellungen verwendet.
@@ -193,12 +367,6 @@ Verwenden Sie genaue Angaben in den Abschnitten **visualName** und **cardName**.
 
 ### <a name="json-file-element-definitions"></a>Definitionen der Elemente in der JSON-Datei
 In den Tabellen in diesem Abschnitt werden Visualnamen (*visualName*), Kartennamen (*cardName*) und die zum Erstellen der JSON-Datei erforderlichen Enumerationen definiert.
-
-Wenn Sie *dateTime* verwenden, muss das Datum ein ISO-Datum in einfachen Anführungszeichen sein, dem „datetime“ vorangestellt ist. Beispiel:
-
-    “datetime’2011-10-05T14:48:00.000Z’”
-
-Boolesche Werte sind entweder *true* oder *false*. Zeichenfolgen müssen in doppelte Anführungszeichen eingeschlossen werden, wie in "dies ist eine Zeichenfolge".
 
 | **visualName** |
 | --- |
@@ -291,7 +459,20 @@ In der folgenden Tabelle sind die Werte von *cardName* definiert. Der erste Wert
 | zoom: Zoom |
 
 ### <a name="properties-within-each-card"></a>Eigenschaften in jeder Karte
-Im folgenden Abschnitt werden die Eigenschaften in jeder Karte definiert.
+Im folgenden Abschnitt werden die Eigenschaften in jeder Karte definiert. Auf den Kartennamen folgt jeder Eigenschaftsname. Für jede Eigenschaft der Name, der angezeigt wird, wenn der Formatierungsbereich angezeigt wird, eine Beschreibung der Funktionsweise der Formatierungsoption und der Typ der Formatierungsoption. Mit diesem Ansatz erfahren Sie, welche Art von Werten Sie in der Designdatei verwenden können. 
+
+Wenn Sie **dateTime** verwenden, muss das Datum ein ISO-Datum in einfachen Anführungszeichen sein, dem „datetime“ vorangestellt ist. Beispiel:
+
+    “datetime’2011-10-05T14:48:00.000Z’”
+
+Boolesche Werte sind entweder „true“ oder „false“. Zeichenfolgen müssen in doppelte Anführungszeichen eingeschlossen werden, wie in "dies ist eine Zeichenfolge". Zahlen stehen für den Wert selbst, nicht in Anführungszeichen.
+
+Für Farben sollte das folgende Format verwendet werden, wobei „FFFFFF“ im folgenden Beispiel den Platz Ihres benutzerdefinierten Hexadezimalcodes einnimmt.  
+
+    { "solid": { "color": "#FFFFFF" } }
+
+Für eine Enumeration, die am häufigsten für Dropdownformatierungsoptionen verwendet wird, kann jede der im Bereich angezeigten Optionen festgelegt werden, z. B. „RightCenter“ für die Legendenposition oder „Datenwert, Prozent des Gesamtwerts“ für die Kreisdiagramm-Datenbeschriftung. Die Enumerationsoptionen werden unterhalb der Eigenschaftenliste angezeigt.
+
 
 ```json
       "general":

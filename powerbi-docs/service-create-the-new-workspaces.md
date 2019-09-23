@@ -1,64 +1,64 @@
 ---
-title: Erstellen Sie die neue Arbeitsbereiche - Power BI
-description: Erfahren Sie, wie Sie die neue Arbeitsbereiche, Sammlungen von Dashboards, Berichten und paginierten Berichten erstellt, um die Bereitstellung wichtiger Metriken für Ihre Organisation erstellen.
+title: Erstellen der neuen Arbeitsbereiche – Power BI
+description: Informationen zum Erstellen der neuen Arbeitsbereiche, Sammlungen von Dashboards, Berichten und paginierten Berichten, die zum Bereitstellen von Schlüsselmetriken für Ihre Organisation konzipiert wurden.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/18/2019
+ms.date: 09/10/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d0c0781ea5d3864f1cf3627cd42d53cca632102d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: a2de6d79971e59879e65d2e3cf652caf156d80cf
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61141945"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70904072"
 ---
-# <a name="create-the-new-workspaces-in-power-bi"></a>Erstellen Sie die neue Arbeitsbereiche in Power BI
+# <a name="create-the-new-workspaces-in-power-bi"></a>Erstellen der neuen Arbeitsbereiche in Power BI
 
-Powerbi ist eine neue Benutzeroberfläche für den Arbeitsbereich eingeführt. Arbeitsbereiche können Sie weiterhin für die Zusammenarbeit mit Kollegen zum Erstellen von Sammlungen von Dashboards, Berichten und paginierten Berichten. Anschließend können Sie diese Sammlung in bündeln ein *app* und für die gesamte Organisation oder an bestimmte Personen oder Gruppen verteilen. 
+In Power BI werden neue Arbeitsbereiche eingeführt. Arbeitsbereiche sind immer noch Orte für die Zusammenarbeit mit Kollegen, um Sammlungen von Dashboards, Berichten und paginierten Berichten zu erstellen. Anschließend können Sie diese Sammlung in einer *App* bündeln, die Sie an die gesamte Organisation oder an bestimmte Personen oder Gruppen verteilen können. 
 
-Hier ist unterschiedlich ist. In der neue Arbeitsbereiche können Sie folgende Aktionen ausführen:
+Hier liegt der Unterschied. In den neuen Arbeitsbereichen können Sie Folgendes durchführen:
 
 - Arbeitsbereichsrollen Benutzergruppen zuweisen: Sicherheitsgruppen, Verteilerlisten, Office 365-Gruppen und Einzelpersonen.
 - Einen Arbeitsbereich in Power BI erstellen, ohne eine Office 365-Gruppe zu erstellen.
 - Genauere Arbeitsbereichsrollen für flexiblere Verwaltung von Berechtigungen in einem Arbeitsbereich verwenden.
 
 > [!NOTE]
-> Um die Sicherheit auf Zeilenebene (RLS) für Power BI Pro-Benutzer Durchsuchen des Inhalts in einem Arbeitsbereich zu erzwingen, verwenden Sie weiterhin [klassischen Arbeitsbereiche](service-create-workspaces.md). Wählen Sie die **Mitglieder können Power BI-Inhalte nur anzeigen** Option. Sie können auch Veröffentlichen einer Power BI-app für diese Benutzer, oder verwenden freigeben, um Inhalt zu verteilen. Die bevorstehende-Viewer-Rolle ermöglicht dieses Szenario in Zukunft neue Arbeitsbereich Erfahrung Arbeitsbereiche.
+> Zum Erzwingen der Sicherheit auf Zeilenebene (Row-Level Security, RLS) für Power BI Pro-Benutzer, die Inhalte in einem Arbeitsbereich durchsuchen, verwenden Sie weiterhin [klassische Arbeitsbereiche](service-create-workspaces.md). Wählen Sie die Option **Mitglieder können Power BI-Inhalt nur anzeigen** aus. Alternativ können Sie eine Power BI-App für diese Benutzer veröffentlichen oder die Freigabe zur Verteilung von Inhalten verwenden. Die in Kürze verfügbare Viewerrolle wird dieses Szenario künftig in neuen Arbeitsbereichen ermöglichen.
 
-Weitere Informationen finden Sie unter den [neue Arbeitsbereiche](service-new-workspaces.md) Artikel.
+Weitere Informationen finden Sie im Artikel [Neue Arbeitsbereiche](service-new-workspaces.md).
 
-## <a name="create-one-of-the-new-app-workspaces"></a>Erstellen eines neuen App-Arbeitsbereichs
+## <a name="create-one-of-the-new-workspaces"></a>Erstellen eines der neuen Arbeitsbereiche
 
-1. Erstellen Sie zunächst den App-Arbeitsbereich. Wählen Sie **Arbeitsbereiche** > **App-Arbeitsbereich erstellen** aus.
+1. Erstellen Sie zunächst den Arbeitsbereich. Wählen Sie **Arbeitsbereiche** > **Arbeitsbereich erstellen** aus.
    
-     ![App-Arbeitsbereich erstellen](media/service-create-the-new-workspaces/power-bi-create-app-workspace.png)
+     ![Erstellen des Arbeitsbereichs](media/service-create-the-new-workspaces/power-bi-workspace-create.png)
 
-2. Sie können einen aktualisierten Arbeitsbereich automatisch erstellen, es sei denn, Sie zu entscheiden **Klassisch wiederherstellen**.
+2. Sie erstellen automatisch einen aktualisierten Arbeitsbereich, es sei denn, Sie wählen die Option **Auf klassische Version zurücksetzen**.
    
-     ![Neuen Arbeitsbereich-Benutzeroberfläche](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
+     ![Neuer Arbeitsbereich](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
      
-     Bei Auswahl von **Klassisch wiederherstellen**, Sie einen Arbeitsbereich basierend auf einer Office 365-Gruppe erstellen. Verwenden Sie diese Option aus, wenn Sie müssen die **Mitglieder können Power BI-Inhalte nur anzeigen** Option zum Erzwingen von Sicherheit auf Zeilenebene (RLS) für die Mitglieder des Arbeitsbereichs.
+     Wenn Sie **Auf klassische Version zurücksetzen** wählen, erstellen Sie einen Arbeitsbereich, der auf einer Office 365-Gruppe basiert. Verwenden Sie diese Option, wenn Sie die Option **Mitglieder können Power BI-Inhalt nur anzeigen** benötigen, um die Sicherheit auf Zeilenebene (Row-Level Security, RLS) für Arbeitsbereichsmitglieder zu erzwingen.
 
-2. Benennen Sie den Arbeitsbereich. Wenn der Name nicht verfügbar ist, bearbeiten Sie, um einen eindeutigen Namen ausdenken.
+2. Benennen Sie den Arbeitsbereich. Wenn der Name nicht verfügbar ist, geben Sie einen eindeutigen Namen ein.
    
-     Die app für den Arbeitsbereich müssen den gleichen Namen und Symbol wie der Arbeitsbereich.
+     Die App für den Arbeitsbereich hat denselben Namen und dasselbe Symbol wie der Arbeitsbereich.
    
-1. Hier sind einige optionale Elemente, die Sie für Ihren Arbeitsbereich festlegen können:
+1. Die folgenden optionalen Elemente können Sie für Ihren Arbeitsbereich festlegen:
 
-    Hochladen einer **Bild**. Dateien können PNG oder JPG-Format sein. Dateigröße muss weniger als 45 KB sein.
+    Laden Sie ein **Arbeitsbereichbild** hoch. Die Dateien können das PNG- oder JPG-Format aufweisen. Die Dateigröße darf 45 KB nicht überschreiten.
     
-    [Hinzufügen einer **Kontaktliste**](#workspace-contact-list). Standardmäßig sind die arbeitsbereichsadministratoren Kontakte. 
+    [Fügen Sie eine **Kontaktliste**](#workspace-contact-list) hinzu. Standardmäßig sind die Arbeitsbereichsadministratoren die Kontakte. 
     
-    [Geben Sie einen **Arbeitsbereich OneDrive** ](#workspace-onedrive) nur der Name einer vorhandenen Office 365-Gruppe nicht in der URL eingeben. Dieses Arbeitsbereichs kann nun den Speicherort der Protokolldatei, Office 365-Gruppe verwenden. 
+    [Geben Sie **OneDrive für Arbeitsbereich**](#workspace-onedrive) an, indem Sie nur den Namen einer vorhandenen Office 365-Gruppe eingeben, nicht die URL. Dieser Arbeitsbereich kann nun den Dateispeicherort der Office 365-Gruppe verwenden. 
 
-    ![Geben Sie einen OneDrive-Speicherort](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
+    ![Angeben eines OneDrive-Speicherorts](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
 
-    Um den Arbeitsbereich Zuweisen einer **dedizierte Kapazität**auf die **Premium** wählen Sie Registerkarte **dedizierte Kapazität**.
+    Um den Arbeitsbereich einer **Dedizierten Kapazität** zuzuweisen, wählen Sie auf der Registerkarte **Premium** die Option **Dedizierte Kapazität** aus.
      
     ![Dedizierte Kapazität](media/service-create-the-new-workspaces/power-bi-workspace-premium.png)
 
@@ -66,101 +66,101 @@ Weitere Informationen finden Sie unter den [neue Arbeitsbereiche](service-new-wo
 
     Der Arbeitsbereich wird in Power BI erstellt und geöffnet. Er wird Ihnen in der Liste der Arbeitsbereiche angezeigt, deren Mitglied Sie sind. 
 
-## <a name="workspace-contact-list"></a>Arbeitsbereich-Kontaktliste
+## <a name="workspace-contact-list"></a>Arbeitsbereichs-Kontaktliste
 
-Die neue Arbeitsbereich-Kontaktliste können Sie angeben, welche Benutzer eine Benachrichtigung zu Problemen, die im Arbeitsbereich erhalten. Angegeben wird standardmäßig alle Benutzer oder Gruppen als Arbeitsbereich Administrator benachrichtigt wird, aber Sie können die Liste anpassen. Benutzer oder Gruppen in der Kontaktliste werden in der Benutzeroberfläche (UI) können angezeigt, dass Benutzer die Hilfe im Zusammenhang mit dem Arbeitsbereich abrufen.
+Mit der neuen Arbeitsbereich-Kontaktliste können Sie festlegen, welche Benutzer Benachrichtigungen über Probleme im Arbeitsbereich erhalten. Standardmäßig wird jeder Benutzer oder jede Gruppe benachrichtigt, der/die als Arbeitsbereichsadministrator angegeben ist, aber Sie können die Liste anpassen. Benutzer oder Gruppen, die in der Kontaktliste aufgeführt sind, werden in der Benutzeroberfläche (UI) angezeigt, um Benutzern Hilfe zum Arbeitsbereich bieten zu können.
 
-1. Zugriff auf die neue **Kontaktliste** auf zwei Arten festlegen:
+1. Greifen Sie auf eine von zwei Arten auf die neue Einstellung **Kontaktliste** zu:
 
-    In der **erstellen Sie einen Arbeitsbereich** Bereich beim ersten erstellen.
+    Im Bereich **Arbeitsbereich erstellen**, wenn Sie sie neu erstellen.
 
-    Wählen Sie im linken Navigationsbereich den Pfeil neben **Arbeitsbereiche**, wählen Sie die Auslassungspunkte (...) neben dem Namen des Arbeitsbereichs > **arbeitsbereichseinstellungen**. Die **Einstellungen** Bereich wird geöffnet.
+    Wählen Sie im linken Navigationsbereich den Pfeil neben **Arbeitsbereiche** aus, wählen Sie die Auslassungspunkte (...) neben dem Arbeitsbereichsnamen aus, und wählen Sie dann **Arbeitsbereichseinstellungen** aus. Der Bereich **Einstellungen** wird geöffnet.
 
-    ![Arbeitsbereichseinstellungen](media/service-create-the-new-workspaces/power-bi-workspace-settings.png)
+    ![Arbeitsbereichseinstellungen](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
-2. Unter **erweitert** > **Kontaktliste**, übernehmen Sie den Standardnamen **arbeitsbereichsadministratoren**, oder fügen Sie eine eigene Liste **bestimmte Benutzer oder Gruppen**. 
+2. Akzeptieren Sie unter **Erweitert** > **Kontaktliste** den Standard, **Arbeitsbereichsadministratoren**, oder fügen Sie eine eigene Liste **Bestimmter Benutzer oder Gruppen** hinzu. 
 3. Wählen Sie **Speichern**.
 
-## <a name="workspace-onedrive"></a>Arbeitsbereich OneDrive
+## <a name="workspace-onedrive"></a>OneDrive für Arbeitsbereich
 
-Die Arbeitsbereich OneDrive-Funktion können Sie eine Office 365-Gruppe konfigurieren, dessen SharePoint-Dokumentbibliothek Dateispeicher Workspace-Benutzern zur Verfügung steht. Zuerst erstellen Sie die Gruppe außerhalb von Power BI. 
+Mit dem Feature OneDrive für Arbeitsbereich können Sie eine Office 365-Gruppe konfigurieren, deren SharePoint-Dokumentbibliothek-Speicher für Arbeitsbereichsbenutzer verfügbar ist. Sie erstellen die Gruppe zuerst außerhalb von Power BI. 
 
-Nicht synchronisiert Powerbi Berechtigungen von Benutzern oder Gruppen, die konfiguriert sind, mit der Office 365-Gruppe Mitgliedschaft Arbeitsbereich zugreifen. Die bewährte Methode ist der gleiche Office 365-Gruppe, deren Dateispeicher, die Sie in dieser Office 365-Einstellungsgruppe konfigurieren, geben Sie [Zugriff auf den Arbeitsbereich](#give-access-to-your-workspace). Klicken Sie dann verwalten Sie arbeitsbereichszugriff, indem Sie die Verwaltung der Mitgliedschaft bei der Office 365-Gruppe. 
+Power BI synchronisiert keine Berechtigungen von Benutzern oder Gruppen, für die der Arbeitsbereichszugriff mit der Office 365-Gruppenmitgliedschaft konfiguriert ist. Am besten gewähren Sie derselben Office 365-Gruppe, deren Dateispeicher Sie in dieser Einstellung konfigurieren, den [Zugriff auf den Arbeitsbereich](#give-access-to-your-workspace). Verwalten Sie dann den Zugriff auf den Arbeitsbereich durch Verwalten der Mitgliedschaft in der Office 365-Gruppe. 
 
-1. Zugriff auf die neue **Arbeitsbereich OneDrive** auf zwei Arten festlegen:
+1. Greifen Sie auf eine von zwei Arten auf die neue **OneDrive für Arbeitsbereich**-Einstellung zu:
 
-    In der **erstellen Sie einen Arbeitsbereich** Bereich beim ersten erstellen.
+    Im Bereich **Arbeitsbereich erstellen**, wenn Sie sie neu erstellen.
 
-    Wählen Sie im linken Navigationsbereich den Pfeil neben **Arbeitsbereiche**, wählen Sie die Auslassungspunkte (...) neben dem Namen des Arbeitsbereichs > **arbeitsbereichseinstellungen**. Die **Einstellungen** Bereich wird geöffnet.
+    Wählen Sie im linken Navigationsbereich den Pfeil neben **Arbeitsbereiche** aus, wählen Sie die Auslassungspunkte (...) neben dem Arbeitsbereichsnamen aus, und wählen Sie dann **Arbeitsbereichseinstellungen** aus. Der Bereich **Einstellungen** wird geöffnet.
 
-    ![Arbeitsbereichseinstellungen](media/service-create-the-new-workspaces/power-bi-workspace-settings.png)
+    ![Arbeitsbereichseinstellungen](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
-2. Klicken Sie unter **erweitert** > **Arbeitsbereich OneDrive**, geben Sie den Namen des Office 365-Gruppe, die Sie zuvor erstellt haben. Powerbi übernimmt automatisch die OneDrive für die Gruppe ab.
+2. Geben Sie unter **Erweitert** > **OneDrive für Arbeitsbereich** den Namen der Office 365-Gruppe ein, die Sie zuvor erstellt haben. Power BI wählt automatisch die OneDrive-Instanz für die Gruppe aus.
 
-    ![Geben Sie einen OneDrive-Speicherort](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
+    ![Angeben eines OneDrive-Speicherorts](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
 
 3. Wählen Sie **Speichern**.
 
-### <a name="access-the-workspace-onedrive-location"></a>Zugriff auf den Arbeitsbereich OneDrive-Speicherort
+### <a name="access-the-workspace-onedrive-location"></a>Zugreifen auf den „OneDrive für Arbeitsbereich“-Speicherort
 
-Nachdem Sie den OneDrive-Speicherort konfiguriert haben, können Sie es aus einigen verschiedenen Stellen im Arbeitsbereich abrufen:
+Nachdem Sie den OneDrive-Speicherort konfiguriert haben, können Sie von einigen unterschiedlichen Stellen im Arbeitsbereich darauf zugreifen:
 
-- Wählen Sie **Arbeitsbereiche** > *Arbeitsbereichsname* > mit den Auslassungspunkten ( **...** ) im Menü > **Dateien**. 
+- Wählen Sie **Arbeitsbereiche** > *Arbeitsbereichsname*, das Auslassungspunktemenü ( **...** ) und **Dateien** aus. 
 
-    ![Speicherort des Dateien](media/service-new-workspaces/power-bi-new-workspace-files.png)
+    ![Speicherort der Arbeitsbereichsdateien](media/service-new-workspaces/power-bi-new-workspace-files.png)
 
-- Wählen Sie die Auslassungspunkte ( **...** ) im Menü in der oberen rechten Ecke des Arbeitsbereichs > **Dateien**.
+- Wählen Sie das Auslassungspunktemenü ( **...** ) in der rechten oberen Ecke des Arbeitsbereichs und **Dateien** aus.
 
-    ![Speicherort des Dateien](media/service-new-workspaces/power-bi-new-workspace-files-2.png)
+    ![Speicherort der Arbeitsbereichsdateien](media/service-create-the-new-workspaces/power-bi-new-workspace-files-ellipsis.png)
     
-- In der **Datenabruf** > **Dateien** auftreten. Die **OneDrive – geschäftlich** Eintrag ist Ihre eigene OneDrive for Business. Die zweite OneDrive ist diejenige aus, die Sie hinzugefügt haben.
+- In der Benutzeroberfläche **Daten abrufen** > **Dateien**. Der Eintrag **OneDrive – Business** ist Ihre eigene „OneDrive for Business“-Instanz. Die zweite OneDrive-Instanz ist die, die Sie hinzugefügt haben.
 
-    ![Speicherort des Dateien – abrufen von Daten](media/service-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
+    ![Speicherort der Arbeitsbereichsdateien – Daten abrufen](media/service-create-the-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
 
-## <a name="add-content-to-your-app-workspace"></a>Hinzufügen von Inhalt zum App-Arbeitsbereich
+## <a name="add-content-to-your-workspace"></a>Hinzufügen von Inhalt zu Ihrem Arbeitsbereich
 
-Nachdem Sie einen neuen Arbeitsbereich Erfahrung Arbeitsbereich erstellt haben, ist es Zeit, die Inhalte hinzufügen. Hinzufügen von Inhalten ist in den Arbeitsbereichen der neuen und klassischen ähnlich. Verwenden Sie die Schaltfläche "erstellen" aus, oder verwenden Sie Daten abrufen, um Inhalte zu Ihrem Arbeitsbereich hinzuzufügen.
+Nachdem Sie einen neuen Arbeitsbereich erstellt haben, ist es Zeit, diesem Inhalte hinzuzufügen. Das Hinzufügen von Inhalt ist in den neuen und klassischen Arbeitsbereichen ähnlich. Verwenden Sie die Schaltfläche „Erstellen“, oder verwenden Sie „Daten abrufen“, um dem Arbeitsbereich Inhalte hinzuzufügen.
 
-1. In der **Willkommen** Bildschirm für Ihren neuen Arbeitsbereich können Sie Inhalte hinzufügen. 
+1. Auf der **Willkommensseite** Ihres neuen Arbeitsbereichs können Sie Inhalte hinzufügen. 
 
-    ![Willkommensseite des neuen Arbeitsbereichs](media/service-create-the-new-workspaces/power-bi-workspace-welcome-screen.png)
+    ![Willkommensseite des neuen Arbeitsbereichs](media/service-create-the-new-workspaces/power-bi-workspace-get-data.png)
 
 1. Klicken Sie beispielsweise auf **Beispiele** > **Customer Profitability Sample**.
 
 > [!NOTE]
-> In den neuen Arbeitsbereichen können nicht Sie organisationsbezogene Inhaltspakete und Inhaltspakete von Drittanbietern nutzen. Apps sind verfügbar, für alle Inhalte von Drittanbietern packs bereits verwendet. Klassischen Arbeitsbereiche verwenden, wenn Sie weiterhin den Inhaltspaketen verwenden möchten. Inhaltspakete sind veraltet, daher wird empfohlen, apps zu verwenden.
+> Sie können den neuen Arbeitsbereichen keine organisationsbezogenen Inhaltspakete oder Inhaltspakete von Drittanbietern hinzufügen. Apps sind für viele Inhaltspakete von Drittanbietern verfügbar, die Sie zuvor verwendet haben. Verwenden Sie klassische Arbeitsbereiche, wenn Sie weiterhin Inhaltspakete verwenden müssen. Inhaltspakete sind veraltet, darum ist es das Beste, stattdessen Apps zu verwenden.
 
-Wenn Sie Inhalte in der Inhaltsliste eines App-Arbeitsbereichs anzeigen, wird der Name des Arbeitsbereichs als Besitzer aufgeführt.
+Wenn Sie Inhalte in der Inhaltsliste eines Arbeitsbereichs anzeigen, wird der Name des Arbeitsbereichs als Besitzer aufgeführt.
 
-### <a name="connecting-to-third-party-services-in-new-workspaces"></a>Herstellen einer Verbindung mit Diensten von Drittanbietern in neuen Arbeitsbereichen
+### <a name="connecting-to-third-party-services-in-new-workspaces"></a>Herstellen einer Verbindung mit Drittanbieterdiensten in neuen Arbeitsbereichen
 
 In den neuen Arbeitsbereichen rücken *Apps* in den Vordergrund. Apps für Drittanbieterdienste erleichtern es Benutzern, Daten von den Diensten abzurufen, die sie verwenden, z. B. Microsoft Dynamics CRM, Salesforce oder Google Analytics.
 
-In der neuen Oberfläche Arbeitsbereich kann nicht erstellen oder nutzen von organisationsbezogenen Inhaltspaketen. Stattdessen können Sie die Apps verwenden, die zum Herstellen einer Verbindung mit Drittanbieterdiensten bereitgestellt werden, oder fordern Sie Ihre internen Teams dazu auf, Apps für Inhaltspakete bereitzustellen, die Sie derzeit verwenden. 
+In den neuen Arbeitsbereichen können Sie keine organisationsbezogenen Inhaltspakete erstellen oder nutzen. Stattdessen können Sie die Apps verwenden, die zum Herstellen einer Verbindung mit Drittanbieterdiensten bereitgestellt werden, oder fordern Sie Ihre internen Teams dazu auf, Apps für Inhaltspakete bereitzustellen, die Sie derzeit verwenden. 
 
-## <a name="give-access-to-your-workspace"></a>Geben Sie den Zugriff zu Ihrem Arbeitsbereich
+## <a name="give-access-to-your-workspace"></a>Erteilen von Zugriff auf Ihren Arbeitsbereich
 
-1. In der Inhaltsliste im Arbeitsbereich, da Sie Administrator sind Sie sehen neue Aktion **Zugriff**.
+1. Weil Sie ein Administrator sind, sehen Sie in der Inhaltsliste des Arbeitsbereichs die neue Aktion **Zugriff**.
 
-    ![Liste der Arbeitsbereiche-Inhalten](media/service-create-the-new-workspaces/power-bi-workspace-content-list.png)
+    ![Inhaltsliste der Arbeitsbereiche](media/service-create-the-new-workspaces/power-bi-new-workspace-files-ellipsis.png)
 
 1. Klicken Sie auf **Zugriff**.
 
 1. Fügen Sie diesen Arbeitsbereichen Sicherheitsgruppen, Verteilerlisten, Office 365-Gruppen oder Einzelpersonen als Mitglieder, Mitwirkende oder Administratoren hinzu. Eine Erläuterung der verschiedenen Rollen finden Sie unter [Rollen in den neuen Arbeitsbereichen](service-new-workspaces.md#roles-in-the-new-workspaces).
 
-    ![Arbeitsbereiche: Hinzufügen von Mitgliedern, Administratoren und Mitwirkenden](media/service-create-the-new-workspaces/power-bi-access-add-members.png)
+    ![Arbeitsbereiche: Hinzufügen von Mitgliedern, Administratoren und Mitwirkenden](media/service-create-the-new-workspaces/power-bi-workspace-add-members.png)
 
 9. Klicken Sie auf **Hinzufügen** > **Schließen**.
 
 
 ## <a name="distribute-an-app"></a>Verteilen einer App
 
-Wenn Sie die offizielle Inhalte für eine große Zielgruppe in Ihrer Organisation verteilen möchten, können Sie eine app aus dem Arbeitsbereich veröffentlichen.  Wenn der Inhalt fertig ist, Sie wählen, welche Dashboards und Berichte, die Sie veröffentlichen möchten, und veröffentlichen Sie sie als ein *app*. Sie können über jeden Arbeitsbereich eine App erstellen.
+Wenn Sie offizielle Inhalte an eine große Zielgruppe innerhalb Ihrer Organisation verteilen möchten, können Sie eine App aus Ihrem Arbeitsbereich veröffentlichen.  Wenn der Inhalt bereit ist, wählen Sie aus, welche Dashboards und Berichte Sie veröffentlichen möchten, und veröffentlichen Sie diese dann als *App*. Sie können über jeden Arbeitsbereich eine App erstellen.
 
-Erfahren Sie mehr über [Veröffentlichen einer app in der neuen Arbeitsbereichen](service-create-distribute-apps.md)
+Informieren Sie sich über das [Veröffentlichen einer App aus den neuen Arbeitsbereichen](service-create-distribute-apps.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
-* Erfahren Sie mehr über [Organisation bei der Arbeit auf der neuen Oberfläche von Arbeitsbereichen in Power BI](service-new-workspaces.md)
-* [Klassische Arbeitsbereiche erstellen](service-create-workspaces.md)
-* [Veröffentlichen einer app über die neue Arbeitsbereiche in Power BI](service-create-distribute-apps.md)
+* Weitere Informationen zum [Organisieren von Arbeit in den neuen Arbeitsbereichen in Power BI](service-new-workspaces.md)
+* [Erstellen klassischer Arbeitsbereiche](service-create-workspaces.md)
+* [Veröffentlichen einer App aus den neuen Arbeitsbereichen in Power BI](service-create-distribute-apps.md)
 * Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)

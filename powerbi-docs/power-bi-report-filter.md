@@ -7,23 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 09/06/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 73db8f9741685549042dbaf1172e57a55a26ab36
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: e5e67863888e5bd6d611ded7a58254fe693f4bb6
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654434"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841269"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports"></a>Neue Filteroberfläche in Power BI-Berichten
 
 Filter in Power BI haben eine neue Funktionalität und ein neues Design. Wenn Sie sich für die neue Filterbenutzeroberfläche entscheiden, können Sie den Filterbereich so formatieren, dass er wie der Rest des Berichts aussieht. Sie können Filter sperren und sogar ausblenden. Wenn Sie den Bericht entwerfen, sehen Sie nicht mehr den alten Filterbereich im Bereich „Visualisierungen“. Ihre gesamte Filterbearbeitung und -formatierung führen Sie in einem einzelnen Filterbereich durch. 
 
-![Neue Filteroberfläche](media/power-bi-report-filter/power-bi-filter-reading.png)
+![Neue Filteroberfläche](media/power-bi-report-filter/power-bi-filter-new-look.png)
 
-Als Berichts-Designer haben Sie im neuen einzelnen Filterbereich folgende Möglichkeiten:
+Als Berichts-Designer können Sie z. B. folgende Aufgaben im neuen Filterbereich ausführen:
 
 - Hinzufügen und Entfernen zu filternder Felder. 
 - Ändern des Filterstatus.
@@ -207,7 +207,7 @@ Sie können jetzt die Standardeinstellungen für den Filterbereich mit der Desig
 
 ## <a name="sort-the-filter-pane"></a>Sortieren des Filterbereichs
 
-Benutzerdefinierte Sortierfunktionalität ist Teil der neuen Benutzeroberfläche zur Filterung. Berichtersteller können Filter mit Drag & Drop in der gewünschten Reihenfolge neu anordnen.
+Benutzerdefinierte Sortierfunktionalität ist Teil der neuen Benutzeroberfläche zur Filterung. Berichtersteller können Filter mit Drag & Drop in beliebiger Reihenfolge neu anordnen.
 
 ![Neuanordnen der Sortierreihenfolge für Filter](media/power-bi-report-filter/power-bi-filter-sort.gif)
 

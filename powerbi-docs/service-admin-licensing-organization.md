@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/23/2019
+ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 003d179902ad3eeb5dc6dea841936a217a292d0c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 24cc798814e0c19de4f1dd4d0d6907fc7a0074a6
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65099830"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71075425"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Power BI-Lizenzierung in Ihrem Unternehmen
 
@@ -31,11 +31,11 @@ Als Administrator können Sie Power BI Pro-Lizenzen erwerben und zuweisen, und S
 
 Sie können Power BI Pro-Lizenzen über Microsoft Office 365 oder einen zertifizierten Microsoft-Partner erwerben. Nach dem Erwerb weisen Sie die Lizenzen einzelnen Benutzern zu. Weitere Informationen finden Sie unter [Purchase and assign Power BI Pro licenses](service-admin-purchasing-power-bi-pro.md) (Erwerben und Zuweisen von Power BI Pro-Lizenzen).
 
-### <a name="power-bi-pro-license-expiration"></a>Ablaufdatum der Power BI Pro-Lizenz
+### <a name="power-bi-pro-license-expiration"></a>Ablauf der Power BI Pro-Lizenz
 
 Nach Ablauf einer Power BI Pro-Lizenz gibt es eine Karenzzeit. Bei Lizenzen, die Teil einer Volumenlizenz sind, beträgt die Karenzzeit 90 Tage. Bei direkt erworbenen Lizenzen beträgt die Karenzzeit 30 Tage.
 
-Für Power BI Pro gilt der gleiche Abonnementslebenszyklus wie für Office 365. Weitere Informationen finden Sie unter [was geschieht mit meinen Daten und den Zugriff, wenn mein Office 365 Business-Abonnement endet?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
+Für Power BI Pro gilt der gleiche Abonnementslebenszyklus wie für Office 365. Weitere Informationen finden Sie unter [Was geschieht mit meinen Daten und dem Zugriff darauf, wenn mein Office 365 Business-Abonnement endet?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
 
 ### <a name="power-bi-pro-trial-for-individuals"></a>Power BI Pro-Testversion für Einzelpersonen
 
@@ -125,7 +125,7 @@ Wenn der unbeschränkte Power BI Free-Lizenzblock nicht verfügbar ist und Sie e
 
 Als Administrator können Sie die individuelle Registrierung der Benutzer mithilfe von Azure Active Directory (AAD) aktivieren oder deaktivieren. In diesem Abschnitt des Artikels erfahren Sie, wie Sie Registrierungen mithilfe von PowerShell-Befehlen verwalten. Weitere Informationen zu Azure PowerShell finden Sie unter [Übersicht zu Azure PowerShell](/powershell/azure/overview).
 
-Die AAD-Einstellung, die die Registrierung steuert, heißt **AllowAdHocSubscriptions**. Bei den meisten Mandanten ist diese Einstellung auf *true* festgelegt. Das bedeutet, dass sie aktiviert ist. Wenn Sie Power BI über einen Partner erworben haben, kann die Einstellung jedoch auf *false* festgelegt sein, was bedeutet, dass sie deaktiviert ist. Wenn Sie die Einstellung von *"true"* zu *"false"* ändern, können sich neue Benutzer in Ihrer Organisation nicht mehr individuell registrieren. Benutzer, die sich vor dem Ändern der Einstellung für Power BI registriert haben, behalten ihre Lizenzen.
+Die Azure AD-Einstellung, die die Registrierung steuert, heißt **AllowAdHocSubscriptions**. Bei den meisten Mandanten ist diese Einstellung auf *true* festgelegt. Das bedeutet, dass sie aktiviert ist. Wenn Sie Power BI über einen Partner erworben haben, kann die Einstellung jedoch auf *false* festgelegt sein, was bedeutet, dass sie deaktiviert ist. Wenn Sie die Einstellung von *"true"* zu *"false"* ändern, können sich neue Benutzer in Ihrer Organisation nicht mehr individuell registrieren. Benutzer, die sich vor dem Ändern der Einstellung für Power BI registriert haben, behalten ihre Lizenzen. Beachten Sie, dass sich Benutzer mit der Einstellung *false* weiterhin für eine Pro-Testversion registrieren können.
 
 1. Melden Sie sich mithilfe Ihrer Office 365-Anmeldeinformationen bei Azure Active Directory an. In der ersten Zeile des folgenden PowerShell-Skripts werden Sie aufgefordert, Ihre Anmeldeinformationen einzugeben. Die zweite Zeile stellt die Verbindung mit Azure Active Directory her.
 
@@ -136,7 +136,7 @@ Die AAD-Einstellung, die die Registrierung steuert, heißt **AllowAdHocSubscript
 
    ![Azure Active Directory-Registrierung](media/service-admin-licensing-organization/azure-ad-sign-in.png)
 
-1. Nachdem Sie sich angemeldet haben, führen Sie den folgenden Befehl aus, um festzustellen, wie Ihr Mandant derzeit konfiguriert ist. (Beachten Sie, dass "fl" der Buchstabe "l", nicht die Zahl 1 verwendet.)
+1. Nachdem Sie sich angemeldet haben, führen Sie den folgenden Befehl aus, um festzustellen, wie Ihr Mandant derzeit konfiguriert ist. (Beachten Sie, dass in „fl“ unten der Buchstabe „l“ und nicht die Zahl 1 verwendet wird.)
 
     ```powershell
      Get-MsolCompanyInformation | fl AllowAdHocSubscriptions 

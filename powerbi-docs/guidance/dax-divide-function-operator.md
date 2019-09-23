@@ -1,20 +1,20 @@
 ---
 title: 'DAX: Vergleich zwischen der DIVIDE-Funktion und dem Divisionsoperator (/)'
 description: Leitfaden zur Verwendung der DAX-Funktion DIVIDE
-author: guyinacube
+author: peter-myers
 manager: asaxton
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/05/2019
+ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: d22491ee314ebcebd4479c4e57dbfdf7a6a1ffdb
-ms.sourcegitcommit: c2197c3ad1d747b4ad490ab75771a0d32d0ae208
+ms.openlocfilehash: 7516aaedb886e7b9e0f57ed76f0a7c5e40efbd6d
+ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70010435"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70877857"
 ---
 # <a name="dax-divide-function-vs-divide-operator-"></a>DAX: Vergleich zwischen der DIVIDE-Funktion und dem Divisionsoperator (/)
 
@@ -34,15 +34,15 @@ DIVIDE(<numerator>, <denominator> [,<alternateresult>])
 
 Die DIVIDE-Funktion wurde dazu konzipiert, Fälle mit Division durch 0 (null) automatisch zu behandeln. Wenn kein alternatives Ergebnis übergeben wird, und der Nenner 0 (null) oder BLANK (leer) ist, gibt die Funktion BLANK (leer) zurück. Wenn ein alternatives Ergebnis übergeben wird, wird dieses anstelle von BLANK zurückgegeben.
 
-Die DIVIDE-Funktion ist praktisch, da Ihr Ausdruck den Nennerwert nicht testen muss. Die Funktion ist außerdem besser für das Testen des Nennerwerts geeignet als die [IF](/dax/if-function-dax)-Funktion. Darüber hinaus resultiert die Verwendung von DIVIDE in einem präziseren und schöneren Ausdruck.
+Die DIVIDE-Funktion ist praktisch, da Ihr Ausdruck den Nennerwert nicht testen muss. Die Funktion ist außerdem besser für das Testen des Nennerwerts geeignet als die [IF](/dax/if-function-dax)-Funktion. Der Leistungsgewinn ist wichtig, da das Überprüfen der Division durch Null (0) ressourcenintensiv ist. Darüber hinaus resultiert die Verwendung von DIVIDE in einem präziseren und schöneren Ausdruck.
 
 ## <a name="example"></a>Beispiel
 
-Der folgende Measureausdruck erzeugt eine sichere Division, erfordert jedoch drei DAX-Funktionen.
+Der folgende Measureausdruck erzeugt eine sichere Division, erfordert jedoch vier DAX-Funktionen.
 
 ```dax
 
-=IF(ISBLANK([Sales]) || [Sales] = 0, BLANK(), [Profit] / [Sales])
+=IF(OR(ISBLANK([Sales]), [Sales] == 0), BLANK(), [Profit] / [Sales])
 
 ```
 

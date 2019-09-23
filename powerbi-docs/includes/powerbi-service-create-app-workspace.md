@@ -5,19 +5,19 @@ services: powerbi
 author: maggiesMSFT
 ms.service: powerbi
 ms.topic: include
-ms.date: 04/04/2019
+ms.date: 09/10/2019
 ms.author: maggies
 ms.custom: include file
-ms.openlocfilehash: bbd1f47b2d798e662f84f009b3260a11d39cb23d
-ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.openlocfilehash: 1e64237490e45cfcf9a9a0102f3e03ecab138ce2
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67534637"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70903947"
 ---
-1. Erstellen Sie zunächst den Arbeitsbereich. Wählen Sie **Arbeitsbereiche** > **App-Arbeitsbereich erstellen** aus. 
+1. Erstellen Sie zunächst den Arbeitsbereich. Wählen Sie **Arbeitsbereiche** > **Arbeitsbereich erstellen** aus. 
    
-     ![App-Arbeitsbereich erstellen](media/powerbi-service-create-app-workspace/power-bi-create-app-workspace.png)
+     ![Erstellen des Arbeitsbereichs](media/powerbi-service-create-app-workspace/power-bi-workspace-create.png)
    
     Hier legen Sie Inhalte ab, die Sie und Ihre Kollegen bearbeiten.
 
@@ -41,7 +41,7 @@ ms.locfileid: "67534637"
    
      ![Festlegen als bearbeitbar oder schreibgeschützt](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-members-edit.png)
    
-     Fügen Sie Personen dem App-Arbeitsbereich nur hinzu, damit sie Inhalte bearbeiten können. Wenn das Mitglied den Inhalt nur anzeigen kann, fügen Sie es nicht dem Arbeitsbereich hinzu. Sie können das Mitglied berücksichtigen, wenn Sie die App veröffentlichen.
+     Fügen Sie Personen dem Arbeitsbereich nur hinzu, damit sie Inhalte bearbeiten können. Wenn das Mitglied den Inhalt nur anzeigen kann, fügen Sie es nicht dem Arbeitsbereich hinzu. Sie können das Mitglied berücksichtigen, wenn Sie die App veröffentlichen.
 
 5. Fügen Sie E-Mail-Adressen von Personen hinzu, die Zugriff auf den Arbeitsbereich haben sollen, und wählen Sie **Hinzufügen** aus. Sie können keine Gruppenaliase, sondern nur einzelne Personen hinzufügen.
 
@@ -55,5 +55,5 @@ ms.locfileid: "67534637"
 
 Der Arbeitsbereich wird in Power BI erstellt und geöffnet. Er wird in der Liste der Arbeitsbereiche angezeigt, deren Mitglied Sie sind. Da Sie Administrator sind, können Sie die Auslassungspunkte (...) auswählen, um zurückzukehren, und Änderungen vornehmen, neue Mitglieder hinzufügen oder deren Berechtigungen ändern.
 
-![Arbeitsbereich bearbeiten](media/powerbi-service-create-app-workspace/power-bi-apps-edit-workspace-ellipsis.png)
+![Arbeitsbereich bearbeiten](media/powerbi-service-create-app-workspace/power-bi-workspace-old-settings.png)
 
