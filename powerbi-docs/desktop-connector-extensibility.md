@@ -19,7 +19,7 @@ ms.locfileid: "68702110"
 ---
 # <a name="connector-extensibility-in-power-bi"></a>Connectorerweiterbarkeit in Power BI
 
-In Power BI können Kunden und Entwickler die Datenquellen, mit denen Sie Verbindungen herstellen, auf viele Weisen erweitern. Sie verwenden vorhandene Connectors und generische Datenquellen (z. B. ODBC, OData, Oledb, Web, CSV, XML, JSON). Oder Entwickler erstellen Datenerweiterungen, sogenannte **Benutzerdefinierte Connectors**, und wandeln sie in **Zertifizierte Connectors** um.
+In Power BI können Kunden und Entwickler die Datenquellen, mit denen Sie Verbindungen herstellen, auf viele Weisen erweitern. Sie verwenden vorhandene Connectors und generische Datenquellen (z. B. ODBC, OData, Oledb, Web, CSV, XML, JSON). Ferner können Entwickler Datenerweiterungen, die **benutzerdefinierte Connectors** genannt werden, erstellen und in **zertifizierte Connectors** umwandeln.
 
 Derzeit aktivieren Sie **Benutzerdefinierte Connectors** mithilfe eines Menüs, in dem Sie die Ebene des benutzerdefinierten Codes, dem Sie die Ausführung auf Ihrem System gestatten möchten, sicher steuern können. Sie können im Dialogfeld **Daten abrufen** alle benutzerdefinierten Connectors oder nur Connectors auswählen, die von Microsoft zertifiziert sind und verteilt werden.
 
@@ -42,7 +42,7 @@ Unter **Datenerweiterungen** können Sie zwischen zwei Sicherheitsstufen wählen
 * (Empfohlen) Nur zertifizierte Erweiterungen laden
 * (Nicht empfohlen) Alle Erweiterungen ohne Überprüfung oder Warnung laden
 
-Wenn Sie **benutzerdefinierte Connectors** oder von Ihnen bzw. von einem Drittanbieter entwickelte Connectors verwenden möchten, müssen Sie folgende Option auswählen: **„(Not Recommended) Allow any extension to load without warning“** ((Nicht empfohlen) Alle Erweiterungen ohne Überprüfung oder Warnung laden). Diese Sicherheitseinstellung wird nur empfohlen, wenn Sie Ihren benutzerdefinierten Connectors absolut vertrauen. Der Grund hierfür ist, dass der darin enthaltene Code Anmeldeinformationen verarbeiten, einschließlich des Sendens über HTTP, und Datenschutzebenen ignorieren kann.
+Wenn Sie **benutzerdefinierte Connectors** oder von Ihnen bzw. von einem Drittanbieter entwickelte Connectors verwenden möchten, müssen Sie folgende Option auswählen: **„(Not Recommended) Allow any extension to load without warning“** ((Nicht empfohlen) Alle Erweiterungen ohne Überprüfung oder Warnung laden). Diese Sicherheitseinstellung wird nur empfohlen, wenn Sie Ihren benutzerdefinierten Connectors absolut vertrauen. Der Grund hierfür besteht darin, dass der darin enthaltene Code Anmeldeinformationen verarbeiten kann (was etwa das Versenden der Anmeldeinformationen über HTTP einschließt) und Datenschutzebenen ignorieren kann.
 
 Bei der Sicherheitseinstellung **„(Empfohlen)“** erhalten Sie, wenn benutzerdefinierte Connectors auf Ihrem System vorhanden sind, die Fehlermeldung „Der folgende Connector wurde nicht zertifiziert, und wir können nicht überprüfen, ob seine Verwendung sicher ist.“, gefolgt von einer Liste mit Connectors, die nicht sicher geladen werden können.
 
