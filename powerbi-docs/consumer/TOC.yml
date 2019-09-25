@@ -92,6 +92,8 @@
               href: end-user-insights.md
             - name: Aktivieren von Previewfunktionen
               href: end-user-preview-features.md
+            - name: Abrufen von Benachrichtigungen im Power BI-Dienst
+              href: end-user-notification-center.md
         - name: Daten abrufen
           items:
             - name: Apps in Power BI
