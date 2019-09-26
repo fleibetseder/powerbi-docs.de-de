@@ -12,14 +12,14 @@ ms.subservice: powerbi-custom-visuals
 ms.date: 05/9/2019
 ms.openlocfilehash: 8c806f0de021c3857039649876864f47e1fffdb2
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454561"
 ---
 # <a name="certified-custom-visuals"></a>Zertifizierte benutzerdefinierte Visuals
 
-## <a name="what-are-certified-custom-visuals"></a>Was sind **_zertifizierte_** benutzerdefinierte Visuals?
+## <a name="what-are-_certified_-custom-visuals"></a>Was sind **_zertifizierte_** benutzerdefinierte Visuals?
 
 Zertifizierte benutzerdefinierte Visuals sind Visuals im **Marketplace**, die bestimmte **angegebene** Codeanforderungen erfüllen, die vom **Microsoft Power BI-Team** getestet und genehmigt wurden. Sobald ein benutzerdefiniertes Visual zertifiziert wurde, bietet es mehr Funktionen. Beispielsweise können Sie [PowerPoint exportieren](consumer/end-user-powerpoint.md) und das Visual in E-Mails anzeigen, die Sie erhalten, wenn ein Benutzer [Berichtsseiten abonniert](consumer/end-user-subscribe.md).
 
@@ -44,34 +44,34 @@ Microsoft kann nach eigenem Ermessen ein Visual aus der Liste [zertifizierter Vi
 Stellen Sie sicher, dass Ihr benutzerdefiniertes Visual folgenden Anforderungen entspricht, damit es [zertifiziert](#certified-custom-visuals) werden kann:  
 
 * Es muss von Microsoft AppSource genehmigt sein. Ihr benutzerdefiniertes Visual sollte sich in unserem [Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) befinden.
-* Benutzerdefiniertes visual richtet mit Versionsangabe **API v2. 5** oder höher.
-* Coderepository steht zur Überprüfung von Power BI-Team (für die Instanz, Source Code (JavaScript oder TypeScript) in der vom Menschen lesbaren Format! Teilen Sie uns über GitHub verfügbar ist).
+* Das benutzerdefinierte visuelle Element wurde mit der **API-Version 2.5** oder höher geschrieben.
+* Das Coderepository muss dem Power BI-Team zur Überprüfung zur Verfügung stehen (z.B. Quellcode – JavaScript oder TypeScript – in einem uns verfügbaren Format in GitHub, das für Menschen lesbar ist).
 
     >[!Note]
     > Sie müssen Ihren Code nicht öffentlich in GitHub freigeben.
-* Code-Repository-Anforderungen:
-   * Muss den minimalen erforderlichen Satz von Dateien enthalten:
+* Coderepository-Anforderungen:
+   * Der minimal erforderliche Satz von Dateien muss enthalten sein:
       * .gitignore
       * capabilities.json
       * pbiviz.json
       * package.json
       * package-lock.json
       * tsconfig.json
-   * Dürfen keine Ordner "Node_modules" (Hinzufügen von "node_modules".gitingore-Datei)
-   * **Installieren Sie Npm** Befehl muss keine Fehler zurück.
-   * **Npm-Audit** Befehl muss keine Warnungen mit hoher oder mittleren Ebene zurück.
-   * **Pbiviz-Paket** Befehl muss keine Fehler zurück.
-   * Muss enthalten [TSlint von Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) ohne außer Kraft gesetzte Konfiguration, und dieser Befehl muss keine Lint-Fehler zurückgeben.
-   * Das kompilierte Paket über die benutzerdefinierte Visualisierung muss gesendeten Pakets entsprechen (md5-Hash von Dateien sollte gleich sein).
-* Anforderungen an die Source-Code:
-   * Das visuelle Element muss unterstützen [rendern, Ereignis-API](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/).
-   * Stellen Sie sicher, ohne Code beliebige oder dynamisch ausgeführt wird (ungültige: eval(), die unsichere Verwendung von settimeout(), requestAnimationFrame(), Setinterval (eine Funktion mit der Benutzereingabe), ausgeführte Eingabe-/Benutzerdaten).
-   * Stellen Sie sicher, DOM bearbeitet wird, sicher (ungültige: InnerHTML, D3.html (< einige Benutzerdaten/Input >), verwenden Sie Bereinigung für die Eingabe/Daten für Benutzer vor dem Hinzufügen zu DOM
-   * Stellen Sie sicher, dass keine Javascript-Fehler/Ausnahmen in der Browserkonsole für alle eingegebenen Daten vorhanden sind. Benutzer können Ihre Visualisierung mit einem anderen Bereich der unerwartete Daten so, dass das visuelle Element nicht durchgeführt werden muss. Sie können [dieses Beispielberichts](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) als ein testdataset.
+   * Der Ordner „node_modules“ darf nicht enthalten sein (fügen Sie „node_modules“ der GITIGNORE-Datei hinzu)
+   * Der **npm install**-Befehl darf keine Fehler zurückgeben.
+   * Der **npm audit**-Befehl darf keine Warnungen mit hoher oder mittlerer Stufe zurückgeben.
+   * Der **pbiviz package**-Befehl darf keine Fehler zurückgeben.
+   * [TSlint from Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) muss ohne außer Kraft gesetzte Konfigurationen enthalten sein, und dieser Befehl darf keine lint-Fehler zurückgeben.
+   * Das kompilierte Paket des benutzerdefinierten visuellen Elements muss mit dem gesendeten Paket übereinstimmen (die md5-Hashwerte beider Dateien sollten gleich sein).
+* Quellcode-Anforderungen:
+   * Das visuelle Element muss die [Rendering Events-API](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/) unterstützen.
+   * Stellen Sie sicher, dass kein beliebiger/dynamischer Code ausgeführt wird (bad: eval(), unsafe to use of settimeout(), requestAnimationFrame(), setinterval(eine Funktion mit Benutzereingaben), Ausführen von Benutzereingaben/-daten).
+   * Stellen Sie sicher, dass DOM sicher bearbeitet wird (bad: innerHTML, D3.html(<Benutzer-/Dateneingabe>), Bereinigung für Benutzereingaben/Daten vor dem Hinzufügen zum DOM verwenden).
+   * Stellen Sie sicher, dass es in der Browserkonsole keine JavaScript-Fehler/-Ausnahmen für Eingabedaten gibt. Benutzer verwenden Ihr visuelles Element möglicherweise mit einem anderen, unerwarteten Datenbereich, dabei darf das visuelle Element nicht versagen. Sie können [diesen Beispielbericht](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) als Testdataset verwenden.
 
-* Stellen Sie alle Eigenschaften in capabilities.json geändert werden, sicher, dass sie die vorhandenen der Berichte eines Benutzers nicht beeinträchtigt werden.
+* Wenn Eigenschaften in „capabilities.json“ geändert werden, stellen Sie sicher, dass sie nicht zu Störungen bei vorhandenen Benutzerberichten führen.
 
-* Stellen Sie sicher, dass das visuelle Element entspricht, mit der [Richtlinien für die Power BI-Visualisierungen](https://docs.microsoft.com/en-us/power-bi/developer/guidelines-powerbi-visuals#guidelines-for-power-bi-visuals-with-additional-purchases). **Es dürfen keine Wasserzeichen**.
+* Achten Sie darauf, dass das visuelle Element die [Richtlinien für Power BI-Visuals](https://docs.microsoft.com/en-us/power-bi/developer/guidelines-powerbi-visuals#guidelines-for-power-bi-visuals-with-additional-purchases) einhält. **Wasserzeichen sind nicht zulässig**.
 
 * Ihr Visual darf nur öffentlich überprüfbare OSS-Komponenten besitzen (öffentliche JS-Bibliotheken oder TypeScript. Der Quellcode ist für die Überprüfung verfügbar und besitzt keine bekannten Sicherheitsrisiken). Wir können überprüfen, ob ein benutzerdefiniertes Visual eine kommerzielle Komponente verwendet.
 

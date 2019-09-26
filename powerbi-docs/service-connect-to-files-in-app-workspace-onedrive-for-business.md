@@ -11,16 +11,16 @@ ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 52b7748b6b634caf87de01ddc965576339a04b8b
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61174988"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-app-workspace"></a>Herstellen einer Verbindung mit in OneDrive gespeicherten Dateien für Ihren Power BI-App-Arbeitsbereich
-Nachdem Sie einen [App-Arbeitsbereich in Power BI erstellt haben](service-create-distribute-apps.md), können Sie Ihre Excel-, CSV- und Power BI Desktop-Dateien in OneDrive for Business für Ihren Power BI-App-Arbeitsbereich speichern. Sie können weiterhin, in OneDrive gespeicherte, Dateien aktualisieren. Diese Updates werden automatisch in den Power BI-Berichten und Dashboards, die auf diesen Dateien basierenden wiedergegeben. 
+Nachdem Sie einen [App-Arbeitsbereich in Power BI erstellt haben](service-create-distribute-apps.md), können Sie Ihre Excel-, CSV- und Power BI Desktop-Dateien in OneDrive for Business für Ihren Power BI-App-Arbeitsbereich speichern. Sie können die Dateien, die Sie auf OneDrive speichern, weiterhin aktualisieren. Diese Aktualisierungen werden automatisch in den auf diesen Dateien basierenden Power BI-Berichten und -Dashboards widergespiegelt. 
 
 > [!NOTE]
-> Die neue Oberfläche für den Arbeitsbereich ändert sich die Beziehung zwischen Power BI-Arbeitsbereiche und Office 365-Gruppen. Sie können eine Office 365-Gruppe nicht automatisch erstellen, jedes Mal, wenn Sie eine der neuen Arbeitsbereiche erstellen. Erfahren Sie mehr über [neue Arbeitsbereiche erstellen](service-create-the-new-workspaces.md)
+> Die Funktionsweise der neuen Arbeitsbereiche ändert die Beziehung zwischen Power BI-Arbeitsbereichen und Office 365-Gruppen. Office 365-Gruppen werden nicht jedes Mal automatisch erstellt, wenn Sie einen dieser neuen Arbeitsbereiche erstellen. Erfahren Sie mehr über das [Erstellen der neuen Arbeitsbereiche](service-create-the-new-workspaces.md).
 
 Das Hinzufügen von Dateien zu Ihrem Power BI-App-Arbeitsbereich erfolgt in zwei Schritten: 
 
@@ -31,7 +31,7 @@ Das Hinzufügen von Dateien zu Ihrem Power BI-App-Arbeitsbereich erfolgt in zwei
 > App-Arbeitsbereiche sind nur in [Power BI Pro](service-features-license-type.md) verfügbar.
 > 
 
-## <a name="1-upload-files-to-the-onedrive-for-business-for-your-app-workspace"></a>1. Hochladen von Dateien in OneDrive for Business für Ihren App-Arbeitsbereich
+## <a name="1-upload-files-to-the-onedrive-for-business-for-your-app-workspace"></a>1\. Hochladen von Dateien in OneDrive for Business für Ihren App-Arbeitsbereich
 1. Wählen Sie im Power BI-Dienst den Pfeil neben „Arbeitsbereiche“ aus, und wählen Sie dann die Auslassungspunkte ( **...** ) neben dem Namen Ihres Arbeitsbereichs aus. 
    
    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-ellipsis.png)
@@ -45,10 +45,10 @@ Das Hinzufügen von Dateien zu Ihrem Power BI-App-Arbeitsbereich erfolgt in zwei
    
    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grpfilesonedrive.png)
 
-## <a name="2-import-excel-files-as-datasets-or-as-excel-online-workbooks"></a>2. Importieren von Excel-Dateien als Datasets oder Excel Online-Arbeitsmappen
+## <a name="2-import-excel-files-as-datasets-or-as-excel-online-workbooks"></a>2\. Importieren von Excel-Dateien als Datasets oder Excel Online-Arbeitsmappen
 Jetzt, da sich die Dateien im OneDrive for Business Ihres App-Arbeitsbereichs befinden, haben Sie zwei Möglichkeiten. Sie können: 
 
-* [Importieren Sie die Daten aus Excel-Arbeitsmappe als Dataset](service-get-data-from-files.md). Verwenden Sie dann die Daten zum Erstellen von Berichten und Dashboards, die Sie in einem Webbrowser und auf mobilen Geräten anzeigen können.
+* [Die Daten aus der Excel-Arbeitsmappe als DataSet importieren](service-get-data-from-files.md). Anschließend verwenden Sie die Daten zum Erstellen von Berichten und Dashboards, die Sie in einem Webbrowser und auf mobilen Geräten anzeigen können.
 * Oder [eine Verbindung mit einer kompletten Excel-Arbeitsmappe in Power BI herstellen](service-excel-workbook-files.md) und sie genauso anzeigen, wie sie in Excel Online dargestellt wird.
 
 ### <a name="import-or-connect-to-the-files-in-your-app-workspace"></a>Importieren von Dateien in Ihrem App-Arbeitsbereich oder Herstellen einer Verbindung mit diesen Dateien
@@ -64,7 +64,7 @@ Jetzt, da sich die Dateien im OneDrive for Business Ihres App-Arbeitsbereichs be
     ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grp_one_drive_shrpt.png)
 5. Wählen Sie die gewünschte Datei und dann **Verbinden** aus.
    
-    An diesem Punkt möchten, ob [importieren Sie die Daten aus Excel-Arbeitsmappe](service-get-data-from-files.md), oder [Verbinden mit gesamten Excel-Arbeitsmappen](service-excel-workbook-files.md).
+    An diesem Punkt entscheiden Sie, ob Sie die [Daten aus der Excel-Arbeitsmappe importieren](service-get-data-from-files.md) oder [eine Verbindung mit den kompletten Excel-Arbeitsmappen herstellen](service-excel-workbook-files.md).
 6. Wählen Sie **Importieren** oder **Verbinden**aus.
    
     ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_importexceldataorwholecrop.png)

@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 9d7c5415d084ea7ca9b6a6dd4da3e84662fc6349
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61303799"
@@ -20,17 +20,17 @@ ms.locfileid: "61303799"
 # <a name="directquery-and-sap-hana"></a>DirectQuery und SAP HANA
 Sie können sich mit **SAP HANA**-Datenquellen direkt über **DirectQuery** verbinden. Beim Verbinden mit SAP HANA stehen zwei Optionen zur Verfügung:
 
-* **SAP HANA als mehrdimensionale Quelle behandeln (Standard):**  Bei Auswahl dieser Option ist das Verhalten mit dem vergleichbar, das bei einer Verbindung von Power BI mit anderen mehrdimensionalen Quellen wie SAP Business Warehouse oder Analysis Services besteht. Beim Herstellen einer Verbindung mit SAP HANA, die mit dieser Einstellung, eine einzelne analytische oder Berechnung, die Ansicht ausgewählt ist und alle Measures, stehen Hierarchien und Attribute dieser Ansicht in der Feldliste. Beim Erstellen von Visuals werden die Aggregatdaten immer von SAP HANA abgerufen. Dies ist die empfohlene Vorgehensweise und stellt auch die Standardeinstellung für neue DirectQuery-Berichte über SAP HANA dar.
+* **SAP HANA als mehrdimensionale Quelle behandeln (Standard):**  Bei Auswahl dieser Option ist das Verhalten mit dem vergleichbar, das bei einer Verbindung von Power BI mit anderen mehrdimensionalen Quellen wie SAP Business Warehouse oder Analysis Services besteht. Wenn mit dieser Einstellung eine Verbindung mit SAP HANA hergestellt wird, wird eine Analyse- oder Berechnungsansicht ausgewählt. Alle Measures, Hierarchien und Attribute dieser Ansicht sind in diesem Fall in der Feldliste verfügbar. Beim Erstellen von Visuals werden die Aggregatdaten immer von SAP HANA abgerufen. Dies ist die empfohlene Vorgehensweise und stellt auch die Standardeinstellung für neue DirectQuery-Berichte über SAP HANA dar.
 
-* **SAP HANA als relationale Quelle behandeln:** Mit dieser Option behandelt Power BI SAP HANA als relationale Quelle. Dies bietet mehr Flexibilität. Muss darauf geachtet werden bei diesem Ansatz um sicherzustellen, dass Measures wie erwartet aggregiert und Leistungsprobleme zu vermeiden.
+* **SAP HANA als relationale Quelle behandeln:** Mit dieser Option behandelt Power BI SAP HANA als relationale Quelle. Dies bietet mehr Flexibilität. Es muss jedoch darauf geachtet werden, dass Measures wie erwartet aggregiert und Leistungsprobleme vermieden werden.
 
-Der Ansatz für die Verbindung wird durch eine globale Tooloption festlegen bestimmt **Datei > Optionen und Einstellungen** und dann **Optionen > DirectQuery**, und klicken Sie dann das Kontrollkästchen neben  **SAP HANA als relationale Quelle behandeln**, wie in der folgenden Abbildung dargestellt. 
+Die Verbindungsmethode können Sie durch eine globale Tooloption festlegen. Wählen Sie dazu **Datei > Optionen und Einstellungen** und anschließend **Optionen > DirectQuery** aus. Klicken Sie dann wie in der folgenden Abbildung dargestellt auf das Kontrollkästchen neben **SAP HANA als relationale Quelle behandeln**. 
 
 ![](media/desktop-directquery-sap-hana/directquery-sap-hana_01a.png)
 
-Nachdem Sie angegeben haben, dass SAP HANA als relationale Quelle behandelt werden soll, wird diese Option auf alle *neu erstellten* Berichte angewendet, die DirectQuery über SAP HANA verwenden. Sie hat weder Auswirkungen auf vorhandene SAP HANA-Verbindungen im aktuellen Bericht noch auf Verbindungen in anderen Berichten, die geöffnet werden. Wenn die Option nicht aktiviert ist, wird beim Herstellen einer neuen Verbindung mit SAP HANA über **Daten abrufen** SAP HANA als mehrdimensionale Datenquelle für die Verbindung verwendet. Jedoch, wenn ein anderer Bericht geöffnet ist, die eine Verbindung mit SAP HANA und dieser Bericht ist weiterhin der Option orientieren, die festgelegt wurde *die zum Zeitpunkt der Erstellung*, was bedeutet, dass alle Berichte, die eine Verbindung mit SAP HANA ist und wurden erstellt vor Februar 2018 weiterhin SAP HANA als relationale Quelle behandelt werden soll. 
+Nachdem Sie angegeben haben, dass SAP HANA als relationale Quelle behandelt werden soll, wird diese Option auf alle *neu erstellten* Berichte angewendet, die DirectQuery über SAP HANA verwenden. Sie hat weder Auswirkungen auf vorhandene SAP HANA-Verbindungen im aktuellen Bericht noch auf Verbindungen in anderen Berichten, die geöffnet werden. Wenn die Option nicht aktiviert ist, wird beim Herstellen einer neuen Verbindung mit SAP HANA über **Daten abrufen** SAP HANA als mehrdimensionale Datenquelle für die Verbindung verwendet. Wenn jedoch ein anderer Bericht geöffnet wird, der ebenfalls eine Verbindung mit SAP HANA herstellt, verhält sich dieser Bericht weiterhin entsprechend der Option, die zum Zeitpunkt *seiner Erstellung* festgelegt war. Dies bedeutet, dass alle Berichte, die Verbindungen mit SAP HANA herstellen und vor Februar 2018 erstellt wurden, SAP HANA weiterhin als relationale Quelle behandeln. 
 
-Die beiden Ansätze bilden anderes Verhalten, und es ist nicht möglich, einen vorhandenen Bericht ein Ansatz zum anderen wechseln. 
+Die beiden Ansätze weisen unterschiedliches Verhalten auf, weswegen es nicht möglich ist, für einen vorhandenen Bericht die jeweils andere Vorgehensweise auszuwählen. 
 
 Die beiden Ansätze werden im Folgenden genauer beschrieben.
 
@@ -38,9 +38,9 @@ Die beiden Ansätze werden im Folgenden genauer beschrieben.
 
 Beim Herstellen einer neuen Verbindung mit SAP HANA wird standardmäßig diese Verbindungsmethode verwendet, bei der SAP HANA als mehrdimensionale Datenquelle behandelt wird. Wenn SAP HANA als relationale Datenquelle behandelt werden soll, sind folgende Schritte notwendig: Rufen Sie zuerst **Datei > Optionen und Einstellungen > Optionen** auf, und aktivieren Sie anschließend unter **DirectQuery** das Kontrollkästchen neben „SAP HANA als relationale Quelle behandeln“. Obwohl dieses Feature in der **Vorschauversion** verfügbar ist, können Berichte, die mit dem mehrdimensionalen Ansatz erstellt wurden, *nicht* im Power BI-Dienst veröffentlicht werden. Wenn das Feature dennoch verwendet wird, führt dies beim Öffnen des Berichts im Power BI-Dienst zu Fehlern.  
 
-Bei der Verbindung mit SAP HANA als mehrdimensionale Quelle gelten die folgenden Überlegungen:
+Wenn SAP HANA bei einer Verbindung als mehrdimensionale Datenquelle behandelt wird, ist Folgendes zu beachten:
 
-* Im Navigator **Daten abrufen** kann eine einzelne SAP HANA-Ansicht ausgewählt werden. Individuelle Measures oder Attribute lassen sich nicht auswählen. Bei der Verbindungsherstellung wird im Gegensatz zum Datenimport keine Abfrage definiert. Dasselbe gilt, wenn DirectQuery zum Behandeln von SAP HANA als relationale Datenquelle verwendet wird. Dies bedeutet auch, dass es nicht möglich, eine SAP HANA SQL-Abfrage direkt zu verwenden, bei Auswahl dieser Verbindungsmethode.
+* Im Navigator **Daten abrufen** kann eine einzelne SAP HANA-Ansicht ausgewählt werden. Individuelle Measures oder Attribute lassen sich nicht auswählen. Bei der Verbindungsherstellung wird im Gegensatz zum Datenimport keine Abfrage definiert. Dasselbe gilt, wenn DirectQuery zum Behandeln von SAP HANA als relationale Datenquelle verwendet wird. Dies hat außerdem zur Folge, dass bei Auswahl dieser Verbindungsmethode eine SAP HANA SQL-Abfrage nicht direkt ausgeführt werden kann.
 
 * Alle Measures, Hierarchien und Attribute der ausgewählten Ansicht werden in der Feldliste angezeigt. 
 
@@ -54,13 +54,13 @@ Die Liste **Felder** umfasst alle Measures, Attribute und Hierarchien der SAP HA
 
 * Alle Attribute, die in mindestens einer Hierarchie enthalten sind, werden standardmäßig ausgeblendet. Sie können sie sich allerdings bei Bedarf anzeigen lassen, indem Sie aus dem Kontextmenü der Feldliste den Eintrag **Ausgeblendete anzeigen** auswählen. Über dasselbe Kontextmenü lässt sich ggf. der Sichtbarkeitsstatus ändern.
 
-* In SAP HANA kann ein Attribut so definiert werden, dass ein anderes Attribut als dessen Bezeichnung verwendet wird. Z. B. **Produkt** (mit Werten 1,2,3, und So weiter) können **ProductName** (mit Werten, Fahrrad, "Shirt", Handschuhe und So weiter) als dessen Bezeichnung. In diesem Fall wird das Feld **Produkt** in der Feldliste angezeigt, deren Werte die Bezeichnungen „Fahrrad“, „Shirt“, „Handschuhe“ usw. sind. Die Bezeichnungen werden allerdings über die eindeutigen Schlüsselwerte 1, 2 und 3 identifiziert und nach diesen sortiert. Außerdem wird die ausgeblendete Spalte **Produkt.Schlüssel** erstellt, über die bei Bedarf auf die entsprechenden Schlüsselwerte zugegriffen werden kann. 
+* In SAP HANA kann ein Attribut so definiert werden, dass ein anderes Attribut als dessen Bezeichnung verwendet wird. Beispielsweise könnte ein Feld **Produkt** (mit den Werten 1, 2, 3 usw.) den **Produktnamen** (mit den Werten „Fahrrad“, „Hemd“, „Handschuhe“ usw.) als Bezeichnung verwenden. In diesem Fall wird das Feld **Produkt** in der Feldliste angezeigt, deren Werte die Bezeichnungen „Fahrrad“, „Shirt“, „Handschuhe“ usw. sind. Die Bezeichnungen werden allerdings über die eindeutigen Schlüsselwerte 1, 2 und 3 identifiziert und nach diesen sortiert. Außerdem wird die ausgeblendete Spalte **Produkt.Schlüssel** erstellt, über die bei Bedarf auf die entsprechenden Schlüsselwerte zugegriffen werden kann. 
 
-Alle in der zugrunde liegenden SAP HANA-Ansicht definierten Variablen werden zum Verbindungszeitpunkt angezeigt. Dabei können die erforderlichen Werte eingegeben werden. Diese Werte können später ändern, indem Sie auswählen **Abfragen bearbeiten** aus dem Menüband, und klicken Sie dann **Parameter verwalten** im Dropdown-Menü angezeigt. 
+Alle in der zugrunde liegenden SAP HANA-Ansicht definierten Variablen werden zum Verbindungszeitpunkt angezeigt. Dabei können die erforderlichen Werte eingegeben werden. Sie können diese Werte später ändern, indem Sie im Menüband auf **Abfragen bearbeiten** klicken und anschließend im Dropdownmenü den Eintrag **Parameter verwalten** auswählen. 
 
 Die zulässigen Modellierungsvorgänge sind restriktiver als bei der Verwendung von DirectQuery, da sichergestellt werden muss, dass die richtigen Aggregatdaten immer von SAP HANA abgerufen werden können. Allerdings ist es weiterhin möglich, viele Ergänzungen und Änderungen vorzunehmen und beispielsweise Measures zu definieren, Felder umzubenennen und auszublenden sowie Anzeigeformate zu definieren. Alle Änderungen werden bei einer Aktualisierung beibehalten. Außerdem werden alle an der SAP HANA-Ansicht vorgenommenen Änderungen übernommen, die zu keinen Konflikten führen. 
 
-### <a name="additional-modeling-restrictions"></a>Zusätzliche modellierungseinschränkungen
+### <a name="additional-modeling-restrictions"></a>Zusätzliche Modellierungseinschränkungen
 
 Wenn über DirectQuery eine Verbindung mit SAP HANA hergestellt und SAP HANA als mehrdimensionale Quelle verwendet wird, sind v.a. die folgenden zusätzlichen Modellierungseinschränkungen zu berücksichtigen: 
 
@@ -71,7 +71,7 @@ Wenn über DirectQuery eine Verbindung mit SAP HANA hergestellt und SAP HANA als
 * **Details von Spalten und Measures sind unveränderlich:** Die in der Feldliste anzeigte Listen von Spalten und Measures sind in der zugrunde liegenden Quelle festgelegt und können nicht verändert werden. Es ist z.B. nicht möglich, eine Spalte oder deren Datentyp zu löschen. Sie können sie allerdings umbenennen.
 * **Zusätzliche Einschränkungen in DAX:** Es gibt zusätzliche Einschränkungen für die DAX-Bibliothek, die in Measuredefinitionen verwendet werden kann, damit die Einschränkungen in der Quelle übernommen werden. Es ist z.B. nicht möglich, eine Aggregatfunktion für eine Tabelle zu verwenden.
 
-### <a name="additional-visualization-restrictions"></a>Zusätzliche visualisierungseinschränkungen
+### <a name="additional-visualization-restrictions"></a>Zusätzliche Visualisierungseinschränkungen
 
 Wenn über DirectQuery eine Verbindung mit SAP HANA hergestellt und SAP HANA als mehrdimensionale Quelle verwendet wird, sind Einschränkungen bei Visuals zu beachten: 
 * **Keine Spaltenaggregation:** Es ist nicht möglich, die Aggregation einer Spalte für ein Visual zu ändern. Die Einstellung lautet immer *Nicht zusammenfassen*.
@@ -90,7 +90,7 @@ Es ist zunächst sinnvoll, sich mit dem Verhalten einer relationalen Quelle wie 
 Wenn die Daten in Power BI importiert werden (im Vergleich zur Verwendung von DirectQuery), würde sich das Folgende ergeben:
 
 * Die Daten werden auf der Ebene der Aggregation importiert, die von der im **Abfrage-Editor** erstellten Abfrage definiert ist. Beispielsweise der Durchschnittspreis nach Produkt. Dies führt zu einer Tabelle mit den beiden Spalten *ProductID* und *AveragePrice*, die in visuellen Elementen verwendet werden können.
-* In einem visuellen Element erfolgt jede nachträgliche Aggregation (z.B. *Summe*, *Durchschnitt*, *Min*, oder andere) über die importierten Daten. Wenn Sie beispielsweise *AveragePrice* aus einem Visual einbeziehen, wird das Aggregat *Sum* standardmäßig verwendet. So würde die Summe über den *AveragePrice*-Wert jeder *ProductID* zurückgegeben werden. In diesem Beispiel würde sie 13,67 betragen. Das gleiche gilt für andere Aggregatfunktionen (z.B. *Min*, *Average*, usw.), die in dem visuellen Element verwendet werden. Z. B. *durchschnittliche* von *AveragePrice* gibt den Durchschnitt von 6,66, 4 und 3, was 4,56 ergibt, und nicht den Durchschnitt von *Preis* in den sechs Datensätzen in der zugrunde liegenden Tabelle handelt es sich 5,17 ergibt.
+* In einem visuellen Element erfolgt jede nachträgliche Aggregation (z.B. *Summe*, *Durchschnitt*, *Min*, oder andere) über die importierten Daten. Wenn Sie beispielsweise *AveragePrice* aus einem Visual einbeziehen, wird das Aggregat *Sum* standardmäßig verwendet. So würde die Summe über den *AveragePrice*-Wert jeder *ProductID* zurückgegeben werden. In diesem Beispiel würde sie 13,67 betragen. Das gleiche gilt für andere Aggregatfunktionen (z.B. *Min*, *Average*, usw.), die in dem visuellen Element verwendet werden. *Average* von *AveragePrice* gibt z.B. den Durchschnitt von 6,66, 4 und 3 zurück, was 4,56 ergibt, und nicht den Durchschnitt von *Price* in den sechs Datensätzen in der zugrunde liegenden Tabelle, der 5,17 ergibt.
   
 Wenn für dieselbe relationale Quelle **DirectQuery** anstelle der Option „Import“ (Importieren) verwendet wird, ist die gleiche Semantik anzuwenden, und die Ergebnisse wären identisch:  
 
@@ -103,15 +103,15 @@ Angesichts der Beschaffenheit von SAP HANA ist die im ersten Dialogfeld **Daten 
 
 Die Entsprechung des SQL Servers im oben angeführten Beispiel ist, dass eine SAP HANA-Sicht vorhanden ist, die *ID*, *ProductID*, *DepotID* und Measures, einschließlich *AveragePrice* enthält, was in der Ansicht als *Durchschnittspreis* definiert ist.  
     
-Sofern es sich um die **Get Data** Erfahrung, die Auswahl vorgenommen wurden, für **"ProductID"** und **AveragePrice** Measures, die eine Abfrage über die Ansicht angefordert wird, der definiert wird Aggregieren von Daten (im vorherigen Beispiel, aus Gründen der Einfachheit Pseudo-SQL wird verwendet, die nicht die genaue Syntax für SAP HANA SQL entspricht). Dann aggregieren alle weiteren Aggregationen, die in einem visuellen Element definiert sind, die Ergebnisse für eine solche Abfrage weiter. Wie oben bereits für SQL Server beschrieben, gilt dies sowohl für die Option „Import“ (Importieren) als auch für DirectQuery. In den DirectQuery-Fall die Abfrage von **Datenabruf** oder **Abfrage-Editor** wird in einer untergeordneten SELECT-Anweisung innerhalb einer einzelnen Abfrage an SAP HANA gesendet wird, und daher nicht tatsächlich der Fall, in dem alle Daten vor der gelesen werden sollen Um weiteren aggregieren.  
+Wenn unter **Daten abrufen** die Auswahl für die Measures **ProductID** und **AveragePrice** getroffen wurde, wird dadurch eine Abfrage über die Ansicht definiert, die die Aggregatdaten anfordert (im oben stehenden Beispiel wird der Einfachheit halber Pseudo-SQL verwendet, das nicht genau der Syntax von SAP HANA-SQL entspricht). Dann aggregieren alle weiteren Aggregationen, die in einem visuellen Element definiert sind, die Ergebnisse für eine solche Abfrage weiter. Wie oben bereits für SQL Server beschrieben, gilt dies sowohl für die Option „Import“ (Importieren) als auch für DirectQuery. Im DirectQuery-Fall wird die Abfrage von **Daten abrufen** oder vom **Abfrage-Editor** in einer untergeordneten SELECT-Anweisung innerhalb einer einzelnen Abfrage verwendet, die an SAP HANA gesendet wird. Daher handelt es sich nicht tatsächlich um den Fall, in dem alle Daten vor dem weiteren Aggregieren gelesen werden.  
 
 Wenn DirectQuery für SAP HANA verwendet wird, müssen daher die folgenden Überlegungen und Verhalten unbedingt beachtet werden:  
 
 * Berücksichtigt werden müssen alle weiteren Aggregationen, die in Visuals ausgeführt werden, wenn das Measure in SAP HANA nicht additiv ist (z.B. keine einfache *Summe*, *Min* oder *Max*).
 
-* In **Daten abrufen** oder im **Abfrage-Editor** werden nur die zum Abrufen der Daten erforderlichen Spalten einbezogen. Dies zeigt, dass das Ergebnis eine sinnvolle Abfrage sein muss, die an SAP HANA gesendet werden kann. Z. B. wenn Dutzende von Spalten, mit der Gedanke ausgewählt wurden, dass sie möglicherweise auf nachfolgende Visualisierungen benötigt werden bedeutet dann selbst für DirectQuery ein einfaches visuelles, dass die Aggregatabfrage, die in der Unterauswahl verwendet diese Dutzenden Spalten enthält, was die in der Regel wird Führen Sie schlecht.
+* In **Daten abrufen** oder im **Abfrage-Editor** werden nur die zum Abrufen der Daten erforderlichen Spalten einbezogen. Dies zeigt, dass das Ergebnis eine sinnvolle Abfrage sein muss, die an SAP HANA gesendet werden kann. Wenn z.B. dutzende Spalten ausgewählt wurden, um herauszufinden, ob sie möglicherweise in nachfolgenden visuellen Elementen benötigt werden, dann bedeutet ein einfaches visuelles Element selbst für DirectQuery, dass die Aggregatabfrage, die in der Unterauswahl verwendet wurde, diese dutzende Spalten enthält, was allgemein zu keiner guten Leistung führt.
   
-Betrachten wir dazu ein Beispiel. Wenn Sie im folgenden Beispiel fünf Spalten (**CalendarQuarter**, **Color**, **LastName**, **ProductLine** und **SalesOrderNumber**) im Dialogfeld **Daten abrufen** zusammen mit dem Measure *OrderQuantity* auswählen, bedeutet dies, dass das Erstellen eines einfachen Visuals, das die Mindestbestellmenge (OrderQuantity) enthält, später zu der folgenden SQL-Abfrage an SAP HANA führt. Der schattierte Bereich ist die untergeordnete SELECT-Anweisung, die die Abfrage von **Daten abrufen** / **Abfrage-Editor** enthält. Wenn diese untergeordnete SELECT-Anweisung bietet ein hohes kardinalitätsergebnis ergibt, wird die resultierende SAP HANA-Leistung wahrscheinlich schlechter sein.  
+Betrachten wir dazu ein Beispiel. Wenn Sie im folgenden Beispiel fünf Spalten (**CalendarQuarter**, **Color**, **LastName**, **ProductLine** und **SalesOrderNumber**) im Dialogfeld **Daten abrufen** zusammen mit dem Measure *OrderQuantity* auswählen, bedeutet dies, dass das Erstellen eines einfachen Visuals, das die Mindestbestellmenge (OrderQuantity) enthält, später zu der folgenden SQL-Abfrage an SAP HANA führt. Der schattierte Bereich ist die untergeordnete SELECT-Anweisung, die die Abfrage von **Daten abrufen** / **Abfrage-Editor** enthält. Wenn aus dieser untergeordneten SELECT-Anweisung ein Ergebnis mit hoher Kardinalität resultiert, führt dies wahrscheinlich zu einer schlechteren SAP HANA-Leistung.  
 
 ![](media/desktop-directquery-sap-hana/directquery-sap-hana_03.png)
 
@@ -130,7 +130,7 @@ In der folgenden Liste werden alle Features von SAP HANA aufgelistet, die nicht 
 Dies liegt daran, dass Power BI über die SQL-Schnittstelle auf SAP HANA zugreift. Mit SQL ist ein vollständiger Zugriff auf über-/untergeordnete Hierarchien jedoch nicht möglich.
 * **Andere Hierarchiemetadaten**: Die grundlegende Struktur von Hierarchien wird in Power BI angezeigt. Einige Hierarchiemetadaten (z.B. die Steuerung des Verhaltens unregelmäßiger Hierarchien) haben jedoch keine Auswirkung.
 Auch dies ist auf die Einschränkungen zurückzuführen, die die SQL-Schnittstelle mit sich bringt.
-* **Verbindung über SSL** – Sie können eine Verbindung mit den Import herstellen und mehrdimensional, mit SSL verwendet wird, kaufen kann keine Verbindung mit SAP HANA-Instanzen, die für die Verwendung von SSL für den relationalen-Connector konfiguriert.
+* **Verbindung mit SSL**: Sie können mit SSL eine Verbindung herstellen, die Import und mehrdimensionale Quellen verwendet, jedoch keine Verbindung mit SAP HANA-Instanzen, die dafür konfiguriert sind, SSL für den relationalen Connector zu verwenden.
 * **Unterstützung für Attributansichten:** Power BI kann eine Verbindung mit den Ansichten „Analyse“ und „Berechnung“ herstellen. Eine direkte Verbindung mit Ansicht „Attribut“ ist hingegen nicht möglich.
 * **Unterstützung für Katalogobjekte**: Power BI kann keine Verbindung mit Katalogobjekten herstellen.
 * **Änderungen an Variablen nach der Veröffentlichung**: Nachdem der Bericht veröffentlicht wurde, können Sie die Werte der SAP HANA-Variablen nicht mehr direkt im Power BI-Dienst ändern. 

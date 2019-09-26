@@ -12,7 +12,7 @@ ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: a34de25af7febf63b34d7608ff7ef40e8b653fc4
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61284822"
@@ -23,9 +23,9 @@ Indem Sie gängige Ausdrücke und natürliche Sprache verwenden, können Sie Ihr
 Damit Q&A die Vielzahl von Fragen, die vom Programm beantwortet werden können, erfolgreich interpretieren kann, muss Q&A Annahmen über das Modell machen. Wenn die Struktur des Modells nicht mindestens einer dieser Annahmen entspricht, müssen Sie das Modell anpassen. Diese Anpassungen für Q&A sind die gleichen Optimierungen, die als bewährte Methoden für jedes Modell in Power BI vorgenommen werden, unabhängig davon, ob Sie Q&A verwenden. 
 
 > [!NOTE]
-> F & A ist nur verfügbar, wenn mit einem Modell arbeiten, die enthält **nicht importiert** Daten und Live-Verbindungen mit SSAS. DirectQuery-Modelle werden nicht unterstützt.
+> Q&A ist nur verfügbar, wenn Sie mit einem Modell arbeiten, das **importierte** Daten oder Liveverbindungen mit SSAS enthält. DirectQuery-Modelle werden nicht unterstützt.
 >
-> Q&A erfordert das folgende C-Runtime-Update, wenn Sie eine Windows-Version vor Windows 10 verwenden. Sie können wichtige Updates über Windows Update installieren oder die erforderliche Komponente über das Microsoft-Update KB2999226 manuell installieren. [https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows](https://support.microsoft.com/help/2999226/update-for-universal-c-runtime-in-windows)
+> Q&A erfordert das folgende C-Runtime-Update, wenn Sie eine Windows-Version vor Windows 10 verwenden. Sie können wichtige Updates über Windows Update installieren oder die erforderliche Komponente über das Microsoft-Update KB2999226 manuell installieren. [https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows](https://support.microsoft.com/help/2999226/update-for-universal-c-runtime-in-windows )
 >
 >
 

@@ -11,18 +11,18 @@ ms.topic: conceptual
 ms.date: 6/4/2019
 ms.author: gepopell
 LocalizationGroup: Reports
-ms.openlocfilehash: e30a79796fd4d5538406a85a3297a23b2c09a61a
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: d21199d8960df4db5027115704533bd3d5d8097c
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751407"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71142261"
 ---
 # <a name="troubleshooting-nested-values-returned-as-text-in-power-bi-service"></a>Problembehandlung bei geschachtelten Werten im Power BI-Dienst, die als Text zurückgegeben werden
 
 ## <a name="cause"></a>Ursache
 
-Bisher kam es vor, dass ein Power BI-Bericht auf dem Desktop problemlos aktualisiert werden konnte, es im Power BI-Dienst aber zu Problemen kam, und eine Fehlermeldung wie „Der Wert „[Table]“ kann nicht in den Typ „Table“ konvertiert werden.“ ausgegeben wurde. Einer der Gründe für diesen Fehler ist der, dass geschachtelte, nicht-skalare Werte (z. B. Tabellen, Datensätze, Listen und Funktionen) automatisch in Textwerte konvertiert werden (z. B. „[Table]“ oder „[Record]“), wenn die Datenschutzfirewall eine Datenquelle puffert.
+Bisher kam es vor, dass ein Power BI-Bericht auf dem Desktop problemlos aktualisiert werden konnte, es im Power BI-Dienst aber zu Problemen kam, und eine Fehlermeldung wie „Der Wert „[Table]“ kann nicht in den Typ „Table“ konvertiert werden.“ ausgegeben wurde. Einer der Gründe für diesen Fehler ist der, dass geschachtelte, nicht-skalare Werte (z.B. Tabellen, Datensätze, Listen und Funktionen) automatisch in Textwerte konvertiert werden (z.B. „[Table]“ oder „[Record]“), wenn die Datenschutzfirewall eine Datenquelle puffert.
 
 Da der Power BI-Dienst es nun unterstützt, Datenschutzebenen festzulegen (oder die Firewall komplett zu deaktivieren), können solche Fehler vermieden werden, indem die [Datenschutzeinstellungen für die Datenquelle im Power BI-Dienst als nicht privat konfiguriert](https://powerbi.microsoft.com/en-us/blog/privacy-levels-for-cloud-data-sources/) werden.
 

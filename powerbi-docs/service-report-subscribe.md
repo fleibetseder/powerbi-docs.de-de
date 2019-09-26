@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 38e393a07defcf572d06f00c14ff8e4efa3081cc
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: 2c08736e23568675af87e7de63092fff3a6a86c5
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70185713"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073417"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Abonnieren von Berichten und Dashboards im Power BI-Dienst für sich selbst und andere
 
@@ -56,7 +56,7 @@ Das Abonnieren von paginierten Berichten unterscheidet sich etwas. Details finde
 
 5. Wählen Sie eine Option für **Frequency** (Häufigkeit) für Ihr Abonnement aus: **Daily** (Täglich), **Hourly** (Stündlich), **Weekly** (Wöchentlich), **Monthly** (Monatlich) oder **After Data Refresh (Daily)** (Nach der Datenaktualisierung (täglich)).  Wenn Sie die Abonnement-E-Mail nur an bestimmten Tagen erhalten möchten, können Sie erst die Optionen **Stündlich** oder **Wöchentlich** und dann die konkreten Tage auswählen.  Wenn Sie die E-Mail des Abonnements zum Beispiel nur an Werktagen erhalten möchten, können Sie **Weekly** (Wöchentlich) auswählen und die Kontrollkästchen bei **Sat** (Sa.) und **Sun** (So.) deaktivieren.  Wenn Sie **Monthly** (Monatlich) auswählen, geben Sie den Tag oder die Tage des Monats ein, an dem oder denen Sie die E-Mail des Abonnements erhalten möchten.  
 
-6. Wenn Sie **Daily** (Täglich), **Hourly (Stündlich), **Monthly** (Monatlich) oder **Weekly** (Wöchentlich) auswählen, können Sie auch die Option **Geplanter Zeitpunkt** für das Abonnement angeben.  Sie müssen es zur vollen Stunde oder zur Minute 15, 30 oder 45 ausführen.  Wählen Sie Vormittag (AM) oder Nachmittag/Abend (PM) aus. Sie können auch die Zeitzone angeben.  Wenn Sie **Hourly** (Stündlich) auswählen, müssen Sie auch den **Geplanten Zeitpunkt** festlegen, zu dem das Abonnement gestartet werden soll. Anschließend wird es stündlich ausgeführt.
+6. Wenn Sie **Daily** (Täglich), **Hourly** (Stündlich), **Monthly** (Monatlich) oder **Weekly** (Wöchentlich) auswählen, können Sie auch die Option **Geplanter Zeitpunkt** für das Abonnement angeben.  Sie müssen es zur vollen Stunde oder zur Minute 15, 30 oder 45 ausführen.  Wählen Sie Vormittag (AM) oder Nachmittag/Abend (PM) aus. Sie können auch die Zeitzone angeben.  Wenn Sie **Hourly** (Stündlich) auswählen, müssen Sie auch den **Geplanten Zeitpunkt** festlegen, zu dem das Abonnement gestartet werden soll. Anschließend wird es stündlich ausgeführt.
 
 7. Standardmäßig ist das Startdatum für Ihr Abonnement das Datum, an dem Sie es erstellen. Sie haben die Möglichkeit, ein Enddatum auszuwählen. Wenn Sie kein Enddatum festlegen, ist das Enddatum automatisch ein Jahr nach dem Startdatum. Sie können es zu einem beliebigen Zeitpunkt vor dem Ablauf des Abonnements in ein beliebiges Datum in der Zukunft (bis zum Jahr 9999) ändern. Wenn ein Abonnement ein Enddatum erreicht, wird es deaktiviert, bis Sie es erneut aktivieren. Vor dem geplanten Enddatum werden Sie per Benachrichtigung(en) gefragt, ob Sie das Abonnement verlängern möchten.    
 

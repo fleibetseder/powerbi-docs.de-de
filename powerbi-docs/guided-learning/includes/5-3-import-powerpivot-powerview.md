@@ -1,7 +1,7 @@
 ---
 ms.openlocfilehash: e87ea8470464e458c1da2037f25adfcee857361e
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61271390"
@@ -16,5 +16,5 @@ Wenn die Arbeitsmappe **Power View-Blätter** enthält, ist das kein Problem. Po
 
 ![](media/5-3-import-powerpivot-powerview/5-3_2.png)
 
-Und hier ist eines der herausragenden Features von Power BI: Wenn Sie Power Query oder Power Pivot verwenden, um eine Verbindung herstellen, Abfragen und Laden von Daten aus einer externen Datenquelle, nachdem Sie die Arbeitsmappe in Power BI importiert haben, können Sie einrichten **geplante Aktualisierung**. Bei der geplanten Aktualisierung verwendet Power BI die Verbindungsinformationen aus der Arbeitsmappe, um direkt eine Verbindung mit der Datenquelle herzustellen und alle geänderten Daten abzufragen und zu laden. Alle Visualisierungen in Berichten werden automatisch ebenfalls aktualisiert.
+Und hier ist noch eine großartige Funktion von Power BI: Wenn Sie Power Query oder Power Pivot verwenden, um eine Verbindung mit Daten in einer externen Datenquelle herzustellen, sie abzufragen und zu laden, können Sie eine **geplante Aktualisierung** einrichten, sobald Sie Ihre Arbeitsmappe in Power BI importiert haben. Bei der geplanten Aktualisierung verwendet Power BI die Verbindungsinformationen aus der Arbeitsmappe, um direkt eine Verbindung mit der Datenquelle herzustellen und alle geänderten Daten abzufragen und zu laden. Alle Visualisierungen in Berichten werden automatisch ebenfalls aktualisiert.
 

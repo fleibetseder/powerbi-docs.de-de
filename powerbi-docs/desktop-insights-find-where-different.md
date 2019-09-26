@@ -13,7 +13,7 @@ ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 99ad06b84b01ce94b3433952cdd031a81c336e04
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454148"
@@ -48,7 +48,7 @@ Um mit Einblicken Verteilungsunterschiede in Diagrammen zu ermitteln, klicken Si
 
 Die Werte mit dem ausgewählten Filter werden mit der normalen Standardfarbe angezeigt. Die Gesamtwerte, wie auf dem ursprünglichen Visual zu sehen, werden zur besseren Vergleichbarkeit grau dargestellt. Bis zu drei verschiedene Filter sind möglich (in diesem Beispiel *Tourenräder*, *Mountainbikes*, *Rennräder*). Filter können durch Anklicken ausgewählt werden (bzw. mehrere Filter durch STRG + Klick).
 
-Bei einfachen additiven Measures (in diesem Beispiel *Gesamtumsatz*) basiert der Vergleich auf den relativen – statt absoluten – Werten. Daher die Umsätze für Touringräder über Gesamtumsatz für alle Kategorien kleiner sind, wird standardmäßig verwendet das visuelle Element eine duale Achse um den Vergleich zwischen den Anteil der Umsatz in verschiedenen Ländern, bei Touring Bikes im Vergleich zu allen Kategorien von Fahrrädern zu ermöglichen.  Durch Aktivieren des Umschalters unter dem Visual können die beiden Werte in der gleichen Achse angezeigt werden, sodass sich die absoluten Werte leicht vergleichen lassen (siehe folgendes Bild).    
+Bei einfachen additiven Measures (in diesem Beispiel *Gesamtumsatz*) basiert der Vergleich auf den relativen – statt absoluten – Werten. Während die Verkäufe für Tourenräder niedriger sind als die Gesamtverkäufe für alle Kategorien, verwendet das Visual standardmäßig eine Doppelachse, um den Umsatzanteil in verschiedenen Ländern vergleichen zu können – für Tourenräder im Vergleich zu allen Fahrradkategorien.  Durch Aktivieren des Umschalters unter dem Visual können die beiden Werte in der gleichen Achse angezeigt werden, sodass sich die absoluten Werte leicht vergleichen lassen (siehe folgendes Bild).    
 
 ![Angezeigte Visuals beim Verwenden von Einblicken](media/desktop-insights-find-where-different/find-where-different_04.png)
 
@@ -63,7 +63,7 @@ Sie können Einblicke verwenden, wenn sich der Bericht im Lese- oder Bearbeitung
 ## <a name="details-of-the-returned-results"></a>Details zu zurückgegebenen Ergebnissen
 Der Algorithmus berücksichtigt im Grunde alle anderen Modellspalten, wendet sie auf alle Werte dieser Spalten als Filter für das ursprüngliche Visual an und ermittelt, welche dieser Filterwerte den größten *Unterschied* im Vergleich zum Original aufweisen.
 
-Sie wahrscheinlich Fragen, was *verschiedene* bedeutet. Angenommen, dass die Gesamtaufteilung der Umsätze zwischen den USA und Kanada folgendermaßen aussieht:
+Doch was genau bedeutet *unterschiedlich*? Angenommen, dass die Gesamtaufteilung der Umsätze zwischen den USA und Kanada folgendermaßen aussieht:
 
 |Land  |Umsatz (Mio. $)|
 |---------|----------|
@@ -97,7 +97,7 @@ Solche Measures weisen einen interessanten *Unterschied* auf. Für nicht additiv
 
 Die angezeigten Visuals sollen somit die Unterschiede zwischen der Gesamtverteilung (wie im ursprünglichen Visual zu sehen) und dem Wert unter Anwendung des jeweiligen Filters veranschaulichen.  
 
-Für additive Measures, wie *Umsatz* im vorherigen Beispiel, wird ein Säulen- und Liniendiagramm verwendet. Eine Doppelachse mit entsprechender Skalierung vereinfacht den Vergleich relativer Werte. Die Säulen zeigen den Wert mit dem angewandten Filter und die Linie den Gesamtwert an (wobei die Achse des Säulendiagramms links und die des Liniendiagramms rechts ist, wie üblich). Die Linie wird angezeigt, mit einem *abgestuften* Format mit einer gestrichelten Linie, gefüllt mit grau angezeigt. Für das vorherige Beispiel wenn die Spalte Diagrammachsen-Höchstwert 4 ist und die Zeile Diagrammachsen-Höchstwert 20 ist, kann es einfach Vergleich, der die relativen Werte zwischen den USA und Kanada für die gefilterten und allgemeine Werte dann. 
+Für additive Measures, wie *Umsatz* im vorherigen Beispiel, wird ein Säulen- und Liniendiagramm verwendet. Eine Doppelachse mit entsprechender Skalierung vereinfacht den Vergleich relativer Werte. Die Säulen zeigen den Wert mit dem angewandten Filter und die Linie den Gesamtwert an (wobei die Achse des Säulendiagramms links und die des Liniendiagramms rechts ist, wie üblich). Die angezeigte Linie verwendet ein *abgestuftes* Format mit einer gestrichelten Linie mit grauer Füllung. Wenn im vorherigen Beispiel der Maximalwert der Säulendiagrammachse 4 und der der Liniendiagrammachse 20 ist, können die relativen Werte für die USA und Kanada einfach für die gefilterten und die Gesamtwerte verglichen werden. 
 
 Für nicht additive Measures wie die *Marge* im vorherigen Beispiel wird ebenfalls ein Säulen- und Liniendiagramm verwendet, wobei die Verwendung einer einzelnen Achse bedeutet, dass die absoluten Werte leicht verglichen werden können. Auch hier zeigt die grau gefüllte Zeile den Gesamtwert an. Ob nun die tatsächlichen oder die relativen Zahlen verglichen werden: Bei der Bestimmung des Grades, in dem sich zwei Verteilungen unterscheiden, geht es nicht nur um die Berechnung der Differenz der Werte. Beispiel:
 
@@ -107,7 +107,7 @@ Für nicht additive Measures wie die *Marge* im vorherigen Beispiel wird ebenfal
 
 * Verschiedene Heuristiken werden verwendet, um die aussagekräftigsten Ergebnisse auszuwählen, z. B. unter Berücksichtigung anderer Beziehungen zwischen den Daten.
      
-Nachdem verschiedene Spalten und die jeweiligen Werte untersucht wurden, werden die Werte ausgewählt, die die größten Unterschiede aufweisen. Zum besseren Verständnis werden diese dann als gruppierte Säulen ausgegeben, wobei die Säule, deren Werte den größten Unterschied ergeben, zuerst angezeigt wird. Bis zu drei Werte pro Spalte dargestellt, jedoch kleiner angezeigt werden könnte, gäbe es weniger als drei Werte, die eine große Auswirkung haben oder wenn einige Werte viel besser als andere eindrucksvolle sind. 
+Nachdem verschiedene Spalten und die jeweiligen Werte untersucht wurden, werden die Werte ausgewählt, die die größten Unterschiede aufweisen. Zum besseren Verständnis werden diese dann als gruppierte Säulen ausgegeben, wobei die Säule, deren Werte den größten Unterschied ergeben, zuerst angezeigt wird. Pro Spalte werden bis zu drei Werte angezeigt, es können jedoch auch weniger angezeigt werden, wenn es weniger als drei Werte gibt, die eine große Bedeutung haben, oder wenn einige Werte viel wirkungsvoller sind als andere. 
 
 Möglicherweise werden nicht alle Spalten des Modells in der verfügbaren Zeit untersucht, sodass die bedeutendsten Spalten und Werte ggf. nicht angezeigt werden. Allerdings werden verschiedene Heuristiken eingesetzt, um sicherzustellen, dass die wahrscheinlichsten Spalten zuerst untersucht werden. Angenommen, dass nach Prüfung aller Spalten festgestellt wird, dass die folgenden Spalte/Werte den größten Einfluss auf die Verteilung haben (in absteigender Reihenfolge):
 

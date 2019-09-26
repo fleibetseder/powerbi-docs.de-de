@@ -9,16 +9,16 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: cfinlan
 ms.date: 08/29/2019
-ms.openlocfilehash: add2f82594d83d1e1f177bfad5045c2e0a34ba84
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: f7f1b777e7c4e54dbdcfb1757fe4df274624a580
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70189367"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71075999"
 ---
 # <a name="pass-a-report-parameter-in-a-url-for-a-paginated-report-in-power-bi"></a>Übergeben eines Berichtsparameters in einer URL für einen paginierten Bericht in Power BI 
 
-Sie können Berichtsparameter an einen Bericht übergeben, indem Sie diese in die URL eines paginierten Berichts einschließen. Alle Abfrageparameter können über entsprechende Berichtsparameter verfügen. Daher übergeben Sie einen Abfrageparameter an einen Bericht, indem Sie den entsprechenden Berichtsparameter übergeben. Sie müssen den Parameternamen mit dem Präfix `rp:` versehen, damit Power BI ihn in der URL erkennen kann. 
+Sie können Berichtsparameter an einen Bericht übergeben, indem Sie diese in die URL eines paginierten Berichts einschließen. Alle Abfrageparameter können über entsprechende Berichtsparameter verfügen. Daher übergeben Sie einen Abfrageparameter an einen Bericht, indem Sie den entsprechenden Berichtsparameter übergeben. Sie müssen den Parameternamen mit dem Präfix `rp:` versehen, damit Power BI ihn in der URL erkennen kann. 
 
 Bei den Berichtsparametern wird die Groß-/Kleinschreibung beachtet, und es werden die folgenden Sonderzeichen verwendet: 
 
@@ -60,10 +60,10 @@ Beispiel:
 rp:SalesOrderNumber:isnull=true
 ```
 
-Verwenden Sie 0 für FALSE und 1 für TRUE, um einen booleschen Wert zu übergeben. Schließen Sie das Dezimaltrennzeichen des Servergebietsschemas ein, um einen Gleitkommawert zu übergeben.
+Verwenden Sie beim Übergeben eines booleschen Werts 0 für FALSE und 1 für TRUE. Schließen Sie beim Übergeben eines Gleitkommawerts das Dezimaltrennzeichen des Servergebietsschemas ein.
 
 > [!NOTE]
-> Wenn Ihr Bericht einen Berichtsparameter enthält, der über einen Standardwert verfügt, und der Wert der  **Prompt**-Eigenschaft  **FALSE** ist (d. h., die **Prompt User**-Eigenschaft wird im Berichts-Manager nicht ausgewählt), können Sie für diesen Berichtsparameter keinen Wert innerhalb einer URL übergeben. Dadurch können Administratoren verhindern, dass Endbenutzer die Werte bestimmter Berichtsparameter hinzufügen oder ändern.
+> Wenn Ihr Bericht einen Berichtsparameter enthält, der über einen Standardwert verfügt, und der Wert der **Prompt**-Eigenschaft **FALSE** ist (d.h., die **Prompt User**-Eigenschaft ist im Berichts-Manager nicht ausgewählt), können Sie für diesen Berichtsparameter keinen Wert innerhalb einer URL übergeben. Dadurch können Administratoren verhindern, dass Endbenutzer die Werte bestimmter Berichtsparameter hinzufügen oder ändern.
 
 ## <a name="additional-examples"></a>Zusätzliche Beispiele 
 

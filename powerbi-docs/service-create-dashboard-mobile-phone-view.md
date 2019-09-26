@@ -1,5 +1,5 @@
 ---
-title: Optimieren eines Dashboards für Mobiltelefone – Power BI
+title: 'Optimieren von Dashboards für Mobiltelefone: Power BI'
 description: Hier erfahren Sie, wie Sie eine benutzerdefinierte, für die Anzeige auf Smartphones geeignete Ansicht eines Dashboards im Power BI-Dienst erstellen können.
 author: maggiesMSFT
 manager: kfile
@@ -12,15 +12,15 @@ ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: f2b8c2c4be343dc135fe1b133bfcb956c1549de4
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61158199"
 ---
-# <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>Optimieren eines Dashboards für Mobiltelefone – Power BI 
-Wenn Sie Dashboards im Hochformat auf einem Telefon anzeigen, sehen Sie die dashboardkacheln nacheinander nach dem anderen, alle die gleiche Größe angeordnet sind. Im Power BI-Dienst können Sie eine benutzerdefinierte Ansicht eines Dashboards speziell für den Hochformatmodus auf Smartphones erstellen. Auch wenn Sie eine Telefonansicht erstellen, wenn Sie das Telefon seitwärts aktivieren, sehen Sie das Dashboard, wie es im Dienst angeordnet ist.
+# <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>Optimieren von Dashboards für Mobiltelefone: Power BI 
+Wenn Sie Dashboards im Hochformat auf einem Smartphone anzeigen, werden Sie bemerken, dass die Dashboardkacheln nacheinander angeordnet sind und die gleiche Größe aufweisen. Sie können im Power BI-Dienst eine benutzerdefinierte Ansicht eines Dashboards erstellen, speziell für den Hochformatmodus auf Smartphones. Selbst wenn Sie eine Smartphoneansicht erstellen, wenn Sie das Smartphone um 90° drehen, wird das Dashboard in seinem Layout im Dienst angezeigt.
 
-Suchen Sie Informationen zum Anzeigen von Dashboards auf einem mobilen Gerät? Versuchen Sie es in dieser schnellstartanleitung [untersuchen Sie Dashboards und Berichte in den mobilen Power BI-apps](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md) stattdessen.
+Suchen Sie nach Informationen über das Anzeigen von Dashboards auf einem mobilen Gerät? Probieren Sie es stattdessen mit diesem Schnellstart: [Erkunden von Dashboards und Berichten in den mobilen Power BI-Apps](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md).
 
 > [!NOTE]
 > Während Sie die Telefonansicht bearbeiten, kann jeder, der das Dashboard auf einem Telefon anzeigt, Ihre Änderungen in Echtzeit verfolgen. Wenn Sie beispielsweise alle Kacheln in Ihrer Telefonansicht des Dashboards lösen, verfügt das Dashboard auf anderen Telefonen plötzlich über keine Kacheln mehr. 

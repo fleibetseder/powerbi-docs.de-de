@@ -1,7 +1,7 @@
 ---
 ms.openlocfilehash: 30cd80cbeafe2da4468a0049bfa0c34715bce0d3
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "66051118"
@@ -31,7 +31,7 @@ Diese drei Komponenten – **Power BI Desktop**, der **Power BI-Dienst** und *
 ## <a name="how-power-bi-matches-your-role"></a>Verwendung von Power BI entsprechend Ihrer Rolle
 Wie Sie Power BI verwenden, kann von Ihrer Rolle in einem Projekt oder einem Team abhängen. Und andere Personen in anderen Rollen verwenden Power BI möglicherweise auf andere Weise.
 
-Während Sie beispielsweise in erster Linie den **Power BI-Dienst** nutzen, verwendet ein anderer Mitarbeiter, der viel mit Zahlen arbeitet und Geschäftsberichte erstellt, unter Umständen vorwiegend **Power BI Desktop** (und veröffentlicht Desktop-Berichte im Power BI-Dienst, die Sie dann anzeigen können). Und eine andere Mitarbeiterin im Vertrieb verwendet dagegen hauptsächlich die Power BI-Smartphone-app zum Überwachen des Status von sollvorgaben für den Verkauf und neue Vertriebslead Drilldowns.
+Während Sie beispielsweise in erster Linie den **Power BI-Dienst** nutzen, verwendet ein anderer Mitarbeiter, der viel mit Zahlen arbeitet und Geschäftsberichte erstellt, unter Umständen vorwiegend **Power BI Desktop** (und veröffentlicht Desktop-Berichte im Power BI-Dienst, die Sie dann anzeigen können). Und ein anderer Mitarbeiter im Vertrieb verwendet hauptsächlich die mobile Power BI-App, um den Status von Absatzquoten zu überwachen und einen Drilldown in die Details zu neuen potenziellen Interessenten auszuführen.
 
 Möglicherweise verwenden Sie die einzelnen Komponenten von **Power BI** zu unterschiedlichen Zeitpunkten, je nachdem, welche Ziele Sie erreichen möchten oder welche Rolle Ihnen für ein bestimmtes Projekt zugewiesen ist.
 

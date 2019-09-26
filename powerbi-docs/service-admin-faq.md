@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: c32f4b0a03ba751d5b8cbd6e98633275ece9222b
-ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
+ms.openlocfilehash: 4ec7a67b861a747f9f8f654ab9fb3fa5c2951af3
+ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70877811"
+ms.lasthandoff: 09/21/2019
+ms.locfileid: "71175194"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Verwalten von Power BI – häufig gestellte Fragen (FAQ)
 
@@ -38,6 +38,7 @@ Dieser Artikel behandelt häufig gestellte Fragen zur Power BI-Verwaltung. Einen
 
 * [Wie ändert sich dadurch die Art und Weise, in der ich die Identitäten für Benutzer in meiner Organisation heute verwalte?](#how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today)
 * [Wie verwalte ich Power BI?](#how-do-we-manage-power-bi)
+* [Was ist der Prozess zum Verwalten eines Mandanten, der von Microsoft für meine Benutzer erstellt wurde?](#what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users)
 * [Wenn ich mehrere Domänen habe, kann ich den Office 365-Mandanten steuern, dem Benutzer hinzugefügt werden?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to)
 * [Wie entferne ich Power BI für Benutzer, die sich bereits registriert haben?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [Wie erfahre ich, wenn meinem Mandanten neue Benutzer beigetreten sind?](#how-do-i-know-when-new-users-have-joined-my-tenant)
@@ -172,6 +173,14 @@ Es gibt drei Szenarien, die ggf. für die Benutzer in Ihrer Organisation in Betr
 Power BI stellt ein Verwaltungsportal bereit, in dem Sie Nutzungsstatistiken anzeigen können. Es enthält auch einen Link zum Microsoft 365 Admin Center zum Verwalten von Benutzern und Gruppen und die Möglichkeit zum Steuern von Einstellungen, die für den gesamten Mandanten gelten.
 
 Damit Sie das Power BI-Verwaltungsportal verwenden können, müssen Sie Ihr Konto in Office 365 oder Azure Active Directory als **Globaler Administrator** kennzeichnen oder Ihrem Benutzerkonto muss die Power BI-Dienstadministratorrolle zugewiesen werden. Weitere Informationen finden Sie unter [Grundlegendes zur Power BI-Administratorrolle](service-admin-role.md) und [Power BI-Verwaltungsportal](service-admin-portal.md).
+
+### <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>Was ist der Prozess zum Verwalten eines Mandanten, der von Microsoft für meine Benutzer erstellt wurde?
+
+Wenn sich ein Self-Service-Benutzer für einen Clouddienst mit Azure AD registriert, fügt ihn der Dienst basierend auf seiner E-Mail-Domäne einem nicht verwalteten Azure AD-Verzeichnis hinzu. Sie können den von einem anderen Benutzer erstellten Mandanten über einen Prozess mit der Bezeichnung *Administratorübernahme* beanspruchen und verwalten. Weitere Informationen finden Sie unter [Übernehmen eines nicht verwalteten Verzeichnisses als Administrator in Azure Active Directory](/azure/active-directory/users-groups-roles/domains-admin-takeover). Die Art der Übernahme hängt davon ab, ob es einen bestehenden verwalteten Mandanten gibt, der mit Ihrer Domäne verbunden ist:
+
+* Power BI unterstützt die interne Administratorübernahme. Wenn Sie eine _interne_ Administratorübernahme eines nicht verwalteten Azure-Verzeichnisses ausführen, werden Sie als globaler Administrator des nicht verwalteten Verzeichnisses hinzugefügt. Es werden keine Benutzer, Domänen oder Dienste zu anderen von Ihnen verwalteten Verzeichnissen migriert.
+
+* Power BI unterstützt die externe Administratorübernahme nicht mehr. Beim Durchführen einer _externen_ Administratorübernahme fügen Sie den DNS-Domänennamen des nicht verwalteten Verzeichnisses Ihrem verwalteten Azure-Verzeichnis hinzu. Wenn Sie den Domänennamen hinzufügen, wird in Ihrem verwalteten Azure-Verzeichnis eine Zuordnung von Benutzern zu Ressourcen erstellt, sodass Benutzer weiterhin und ohne Unterbrechung auf Dienste zugreifen können.
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to"></a>Wenn ich mehrere Domänen habe, kann ich den Office 365-Mandanten steuern, dem Benutzer hinzugefügt werden?
 

@@ -1,6 +1,6 @@
 ---
-title: Punktdiagramme mit hoher Dichte in Powerbi
-description: Punktdiagramme mit hoher Dichte in Powerbi
+title: Punktdiagramme mit hoher Dichte in Power BI
+description: Punktdiagramme mit hoher Dichte in Power BI
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 928e93c724a47f48aff1f87ee51f9a8c907774d6
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454280"
@@ -32,7 +32,7 @@ Sie können z.B. ein Punktdiagramm der Verkaufsaktivitäten Ihrer Organisation e
 ## <a name="how-high-density-scatter-charts-work"></a>Funktionsweise von Punktdiagrammen mit hoher Dichte
 Früher hat **Power BI** zum Erstellen eines Punktdiagramms eine Sammlung von Beispieldatenpunkten im vollständigen Bereich der zugrunde liegenden Daten auf deterministische Weise ausgewählt. In Power BI wurde die erste und die letzte Datenzeile in der Datenreihe des Punktdiagramms ausgewählt, und dann wurden die restlichen Zeilen gleichmäßig unterteilt, sodass im Punktdiagramm insgesamt 3.500 Datenpunkte dargestellt werden. Wenn die Stichprobe beispielsweise 35.000 Zeilen umfasst, werden die erste und letzte Zeile für die Darstellung ausgewählt und außerdem jede zehnte Zeile dargestellt (35.000/10 = jede zehnte Zeile = 3.500 Datenpunkte). Zudem wurden früher NULL-Werte oder nicht darstellbare Punkte (z.B. Textwerte) in Datenreihen nicht angezeigt und somit beim Generieren des Visuals nicht berücksichtigt. Bei einer solchen Stichprobenentnahme basiert die wahrgenommene Dichte des Punktdiagramms auch auf den repräsentativen Datenpunkten. Deshalb war die implizierte visuelle Dichte eine Folge der als Stichprobe entnommenen Datenpunkte und nicht der vollständigen Sammlung der zugrunde liegenden Daten.
 
-Beim Aktivieren der **High-Density Sampling**, implementiert Power BI einen Algorithmus, der überlappende Punkte ausgeschlossen werden, und stellt sicher, dass die Punkte auf dem Visual erreicht werden können, bei der Interaktion mit der Visualisierung. Darüber hinaus stellt der Algorithmus sicher, dass alle Punkte im Dataset im Visual dargestellt werden. So wird nicht nur einfach eine repräsentative Stichprobe sondern auch der Kontext ausgewählter Punkte dargestellt.
+Wenn Sie die **Stichprobenentnahme mit hoher Dichte** aktivieren, implementiert Power BI einen Algorithmus, der überlappende Punkte ausschließt, und es wird sichergestellt, dass die Punkte im Visual bei der Interaktion mit diesem erreicht werden können. Darüber hinaus stellt der Algorithmus sicher, dass alle Punkte im Dataset im Visual dargestellt werden. So wird nicht nur einfach eine repräsentative Stichprobe sondern auch der Kontext ausgewählter Punkte dargestellt.
 
 Definitionsgemäß werden Stichproben von Daten mit hoher Dichte entnommen, um schnell Visualisierungen zu erstellen, die auf Interaktivität reagieren. Zu viele Datenpunkte in einem Visual können dieses verlangsamen und die Sichtbarkeit von Trends beeinträchtigen. Das Erstellen des Algorithmus zur Stichprobenentnahme hängt davon ab, wie die Daten entnommen werden, um die beste Visualisierung zu bieten und sicherzustellen, dass alle Daten dargestellt werden. Durch den verbesserten Algorithmus in Power BI werden Reaktionsfähigkeit, Darstellung und die Erhaltung von wichtigen Punkten im gesamten Dataset optimal miteinander vereint.
 
@@ -42,7 +42,7 @@ Definitionsgemäß werden Stichproben von Daten mit hoher Dichte entnommen, um s
 > 
 
 ## <a name="how-the-new-scatter-chart-sampling-algorithm-works"></a>Funktionsweise des neuen Algorithmus der Stichprobenentnahme für Punktdiagramme
-Der neue Algorithmus für **High-Density Sampling** für Punktdiagramme nutzt Methoden, die erfasst und die zugrunde liegenden Daten effektiver darstellen und überlappende Punkte ausgeschlossen werden. Hierzu wird mit einem kleinen Radius für jeden Datenpunkt (der visuelle Kreisradius für einen bestimmten Punkt in der Visualisierung) begonnen. Anschließend wird der Radius aller Datenpunkte vergrößert. Wenn sich zwei (oder mehr) Datenpunkte überlappen, werden die überlappenden Datenpunkte durch einen einzelnen Kreis (mit vergrößertem Radius) dargestellt. Der Algorithmus vergrößert den Radius der Datenpunkte weiter, bis der Radiuswert dazu führt, dass im Punktdiagramm eine angemessene Anzahl von Datenpunkten – 3.500 – angezeigt wird.
+Der neue Algorithmus der **Stichprobenentnahme mit hoher Dichte** für Punktdiagramme nutzt Methoden, mit denen die zugrunde liegenden Daten effektiver erfasst und dargestellt und überlappende Punkte ausgeschlossen werden. Hierzu wird mit einem kleinen Radius für jeden Datenpunkt (der visuelle Kreisradius für einen bestimmten Punkt in der Visualisierung) begonnen. Anschließend wird der Radius aller Datenpunkte vergrößert. Wenn sich zwei (oder mehr) Datenpunkte überlappen, werden die überlappenden Datenpunkte durch einen einzelnen Kreis (mit vergrößertem Radius) dargestellt. Der Algorithmus vergrößert den Radius der Datenpunkte weiter, bis der Radiuswert dazu führt, dass im Punktdiagramm eine angemessene Anzahl von Datenpunkten – 3.500 – angezeigt wird.
 
 Die Methoden in diesem Algorithmus stellen sicher, dass Ausreißer im resultierenden Visual dargestellt werden. Der Algorithmus berücksichtigt beim Bestimmen der Überlappung auch die Skalierung, sodass exponentielle Skalierungen gemäß den zugrunde liegenden visualisierten Datenpunkten dargestellt werden.
 
@@ -56,7 +56,7 @@ Der Algorithmus bewahrt zudem die Gesamtform des Punktdiagramms.
 Darüber hinaus werden Datenpunkte, die nicht dargestellt werden können (z.B. NULL-Werte oder Textwerte), ignoriert, und stattdessen wird ein anderer Wert ausgewählt, der dargestellt werden kann. Auch dies stellt sicher, dass die richtige Form des Punktdiagramms erhalten bleibt.
 
 ### <a name="when-the-standard-algorithm-for-scatter-charts-is-used"></a>Wenn der Standardalgorithmus für Punktdiagramme verwendet wird
-Es gibt Situationen, in denen **High-Density Sampling** kann nicht angewendet werden, um ein Punktdiagramm und das ursprüngliche Algorithmus verwendet wird. Dabei handelt es sich um die folgenden Situationen:
+Es gibt Situationen, in denen die **Stichprobenentnahme mit hoher Dichte** nicht auf ein Punktdiagramm angewendet werden kann und der ursprüngliche Algorithmus verwendet wird. Dabei handelt es sich um die folgenden Situationen:
 
 * Wenn Sie mit der rechten Maustaste auf einen Wert unter **Details** klicken und diesen daraufhin im Menü auf **Elemente ohne Daten anzeigen** festlegen, wird das Punktdiagramm auf den ursprünglichen Algorithmus zurückgesetzt.
   
@@ -68,7 +68,7 @@ Es gibt Situationen, in denen **High-Density Sampling** kann nicht angewendet we
   ![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_03.png)
 
 ## <a name="how-to-turn-on-high-density-sampling-for-a-scatter-chart"></a>Aktivieren der Stichprobenentnahme mit hoher Dichte für ein Punktdiagramm
-Aktivieren **High-Density Sampling**ein Punktdiagramm aus, wechseln Sie zu der **Formatierung** Bereich erweitern Sie die **allgemeine** Karte, und schieben Sie am unteren Rand der Karte, die **High-Density Sampling** schalten Sie den Schieberegler auf **auf**.
+Wählen Sie zum Aktivieren der **Stichprobenentnahme mit hoher Dichte** ein Punktdiagramm aus, navigieren Sie zum Bereich **Formatierung**, erweitern Sie die Karte **Allgemein**, und schalten Sie den Schieberegler **Stichprobenentnahme mit hoher Dichte** unten auf dieser Karte auf **Ein**.
 
 ![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_04.png)
 
@@ -83,7 +83,7 @@ Aktivieren **High-Density Sampling**ein Punktdiagramm aus, wechseln Sie zu der *
 ## <a name="considerations-and-limitations"></a>Überlegungen und Einschränkungen
 Der Algorithmus der Stichprobenentnahme mit hoher Dichte ist eine wichtige Verbesserung in Power BI. Es gibt jedoch einige Aspekte, die Sie berücksichtigen sollten, wenn Sie mit Werten hoher Dichte und Punktdiagrammen arbeiten.
 
-* Die **High-Density Sampling** Algorithmus funktioniert nur mit liveverbindungen mit Power BI-Dienst basierenden Modellen, importierten Modellen oder DirectQuery.
+* Der Algorithmus der **Stichprobenentnahme mit hoher Dichte** kann nur für Liveverbindungen mit auf dem Power BI-Dienst basierenden Modellen, importierten Modellen oder DirectQuery ausgeführt werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 Weitere Informationen über die Stichprobenentnahme mit hoher Dichte in anderen Diagrammen finden Sie im folgenden Artikel.

@@ -11,7 +11,7 @@ ms.date: 04/15/2019
 ms.author: davidi
 ms.openlocfilehash: 5c31277b640b16882bef5c5f2cd9c56b441ede82
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61329872"
@@ -27,7 +27,7 @@ Administratoren verwenden den folgenden Registrierungsschlüssel, um das Anmelde
 Key: HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop
 valueName: ShowLeadGenDialog
 ```
-Sie können auch den folgenden Schlüssel, versuchen, der für einige Kunden basierend auf ihrer Konfiguration erfolgreich war:
+Sie können auch den folgenden Schlüssel ausprobieren, der bei einigen Kunden auf der Grundlage ihrer Konfiguration erfolgreich war:
 
 ```
 Key: HKEY_CURRENT_USER\SOFTWARE\Microsoft\Microsoft Power BI Desktop

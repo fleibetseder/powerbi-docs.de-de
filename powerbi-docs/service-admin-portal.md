@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 07/25/2019
+ms.date: 09/20/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 260860ba1ac875b097b12a1ac32ef09e983fe08d
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 5551247307e750624006de71a3c8652376b73fcf
+ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69655154"
+ms.lasthandoff: 09/21/2019
+ms.locfileid: "71175269"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Verwalten von Power BI im Verwaltungsportal
 
@@ -47,6 +47,7 @@ Das Portal umfasst neun Registerkarten. In den verbleibenden Abschnitten dieses 
 * [Visuals für Organisationen](#organizational-visuals)
 * [Dataflowspeicher (Vorschau)](#dataflowStorage)
 * [Arbeitsbereiche](#workspaces)
+* [Benutzerdefiniertes Branding](#custom-branding)
 
 ## <a name="usage-metrics"></a>Nutzungsmetriken
 
@@ -522,7 +523,22 @@ Als Administrator können Sie die Arbeitsbereiche anzeigen, die in Ihrem Mandant
 
 ![Liste der Arbeitsbereiche](media/service-admin-portal/workspaces-list.png)
 
+## <a name="custom-branding"></a>Benutzerdefiniertes Branding
 
+Als Administrator können Sie das Aussehen von Power BI für Ihre gesamte Organisation anpassen. Derzeit gibt es drei Hauptoptionen:
+
+![Benutzerdefinierte Brandingoptionen](media/service-admin-portal/power-bi-custom-branding.png)
+
+* **Logo hochladen**: Laden Sie für optimale Ergebnisse ein Logo hoch, das als PNG-Datei gespeichert ist, eine Größe von 10 KB oder weniger und mindestens 200 x 30 Pixel aufweist.
+
+* **Coverbild hochladen**: Laden Sie für optimale Ergebnisse ein Coverbild hoch, das als JPG- oder PNG-Datei gespeichert ist, eine Größe von 1 MB oder weniger und mindestens 1920 x 160 Pixel aufweist.
+
+* **Designfarbe auswählen**: Sie können Ihr Design als Hexadezimalzahl oder RGB-Wert angeben oder es aus der integrierten Palette auswählen.
+
+
+Weitere Informationen finden Sie unter [Benutzerdefiniertes Branding für Ihre Organisation](http://aka.ms/orgBranding).
+
+![Liste der Arbeitsbereiche](media/service-admin-portal/workspaces-list.png)
 ## <a name="next-steps"></a>Nächste Schritte
 
 [Verwalten von Power BI in Ihrer Organisation](service-admin-administering-power-bi-in-your-organization.md)  

@@ -8,39 +8,39 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/14/2019
+ms.date: 09/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: e15cb6e09ff493512bb1b87939004c851b31fa10
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 66ac187d002c1606f96694bb45a5d44ba2ad2279
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61048001"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141237"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exportieren von Power BI-Berichten als PDF-Dateien
 Mit Power BI können Sie Berichte im PDF-Format veröffentlichen und darauf basierend einfach ein Dokument erstellen. Wenn Sie das Feature **In PDF exportieren** verwenden, wird jede Seite des Power BI-Berichts als individuelle Seite im PDF-Dokument angezeigt.
 
 ## <a name="how-to-export-your-power-bi-report-to-pdf"></a>Exportieren eines Power BI-Berichts als PDF-Datei
-Wählen Sie im Power BI-Dienst einen Bericht aus, der im Zeichenbereich angezeigt werden soll. Sie können auch einen Bericht von der Startseite, aus Apps oder einem anderen Abschnitt im linken Navigationsbereich auswählen.
+Wählen Sie im Power BI-Dienst einen Bericht aus, der im Zeichenbereich angezeigt werden soll. Sie können auch einen Bericht von der Startseite, aus Apps oder einem anderen Container in der linken Navigationsleiste auswählen.
 
-1. Klicken Sie in der Menüleiste auf **Datei** > **In PDF exportieren**.
+1. Wählen Sie in der Menüleiste **Exportieren** > **PDF** aus.
 
-    ![„Datei“ auf der Menüleiste und Pfeil, der auf „In PDF exportieren“ zeigt](media/end-user-pdf/power-bi-export-pdf.png)
+    ![Auswählen von „Exportieren“ in der Menüleiste, der Pfeil zeigt auf „Nach PDF exportieren“](media/end-user-pdf/power-bi-export.png)
 
-    Ein Popupfenster wird angezeigt, in dem Sie die **aktuelle Ansicht** oder die **Standardansicht** auswählen können.  Die **aktuelle Ansicht** exportiert den Bericht im aktuellen Zustand. Dazu gehören die aktiven Änderungen, die Sie an Datenschnitt- und Filterwerten vorgenommen haben.  Die meisten Benutzer wählen diese Option aus.  Alternativ können Sie **Standardansicht** auswählen, wodurch der Bericht im ursprünglichen Zustand exportiert wird (wie er vom Autor freigegeben wurde). Änderungen, die Sie am ursprünglichen Zustand vorgenommen haben, werden nicht dargestellt.
+    Es wird ein Popupfenster angezeigt, in dem Sie die Option zur Auswahl von **Aktuelle Werte** oder **Standardwerte** haben.  **Aktuelle Werte** exportiert den Bericht im aktuellen Zustand. Dazu gehören die aktiven Änderungen, die Sie an Datenschnitt- und Filterwerten vorgenommen haben.  Die meisten Benutzer wählen diese Option aus.  Alternativ können **Standardwerte** auswählen, wodurch der Bericht im ursprünglichen Zustand exportiert wird (wie er vom *Designer* freigegeben wurde). Änderungen, die Sie am ursprünglichen Zustand vorgenommen haben, werden nicht dargestellt.
     
-    Darüber hinaus können Sie über das Kontrollkästchen auswählen, ob die ausgeblendeten Registerkarten eines Berichts exportiert werden sollen.  Aktivieren Sie das Kontrollkästchen einfach, wenn Sie nur die Registerkarten des Berichts exportieren möchten, die Ihnen im Browser angezeigt werden.  Wenn Sie alle ausgeblendeten Registerkarten im Exportvorgang enthalten möchten, lassen Sie das Kontrollkästchen deaktiviert.  Wenn das Kontrollkästchen ausgegraut ist, enthält der Bericht keine ausgeblendeten Registerkarten.  Sobald Sie Ihre Auswahl vorgenommen haben, klicken Sie auf „Exportieren“, um fortzufahren.
+    Darüber hinaus können Sie über das Kontrollkästchen auswählen, ob die ausgeblendeten Registerkarten eines Berichts exportiert werden sollen.  Aktivieren Sie das Kontrollkästchen einfach, wenn Sie nur die Registerkarten des Berichts exportieren möchten, die Ihnen im Browser angezeigt werden.  Wenn Sie alle ausgeblendeten Registerkarten im Exportvorgang enthalten möchten, lassen Sie das Kontrollkästchen deaktiviert.  Wenn das Kontrollkästchen ausgegraut ist, enthält der Bericht keine ausgeblendeten Registerkarten.  Sobald Sie Ihre Auswahl getroffen haben, wählen Sie „Exportieren“ aus, um fortzufahren.
     
     In der oberen rechten Ecke wird eine Fortschrittsleiste angezeigt. Das Exportieren kann einige Minuten dauern. Während der Bericht exportiert wird, können Sie in Power BI weiterarbeiten.
 
-    ![Meldung zum Fortschritt des Exportierens](media/end-user-pdf/power-bi-export-message.png)
+    ![Meldung zum Fortschritt des Exportierens](media/end-user-pdf/power-bi-export-progress.png)
 
     Sobald der Vorgang beendet ist, wird über das Banner gemeldet, dass der Power BI-Dienst den Export abgeschlossen hat.
 
 2. Ihre Datei ist dann dort verfügbar, wo Ihr Browser heruntergeladene Dateien speichert. In der folgenden Abbildung wird die Datei als Downloadbanner unten im Browserfenster angezeigt.
 
-    ![Speicherort für heruntergeladene Datei](media/end-user-pdf/power-bi-save-file.png)
+    ![Speicherort für heruntergeladene Datei](media/end-user-pdf/power-bi-export-done.png)
 
 Das war schon alles. Sie können die Datei herunterladen und mit einem beliebigen PDF-Viewer öffnen, z.B. der in Microsoft Edge enthaltene.
 

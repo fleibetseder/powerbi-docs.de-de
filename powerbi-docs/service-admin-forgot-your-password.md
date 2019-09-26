@@ -1,21 +1,21 @@
 ---
 title: Sie haben Ihr Kennwort für Power BI vergessen?
-description: Wenn Sie Ihr Kennwort vergessen haben, können Sie einen Link, um anzufordern, ein Kennwort zurückzusetzen.
+description: Wenn Sie Ihr Kennwort vergessen haben, können Sie einen Link zum Anfordern einer Kennwortzurücksetzung verwenden.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/14/2019
+ms.date: 09/13/2019
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 855fae9f23527c47802eef6dac2ded5ffcc8b786
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 6b3e75b9674a8b22948bdee1b8f8b9086eb2b691
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710342"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71075180"
 ---
 # <a name="forgot-your-password-for-power-bi"></a>Sie haben Ihr Kennwort für Power BI vergessen?
 
@@ -23,15 +23,15 @@ Wenn Sie Ihr Kennwort vergessen haben, können Sie den folgenden Link zum Anford
 
 <https://passwordreset.microsoftonline.com>
 
-Wenn Sie die Meldung erhalten, dass Ihr Konto eingerichtet ist nicht das Kennwort zurücksetzen, wenden Sie sich an Ihren Office 365-Administrator. Wenn Sie die kostenlose Testversion verwenden, ist der Administrator die erste Person in Ihrer Organisation, die sich registrieren.
+Wenn Sie die Mitteilung erhalten, dass Ihr Konto nicht für Kennwortzurücksetzung eingerichtet ist, wenden Sie sich an Ihren Office 365-Administrator. Wenn Sie die kostenlose Testversion verwenden, ist der Administrator die erste Person in Ihrer Organisation, die sich registriert hat.
 
-Wenn Sie Probleme beim Zugriff auf Ihr Konto weiterhin Probleme haben, können Sie versuchen, wenden Sie sich an das Supportteam für das Zurücksetzen eines Kennworts.
+Wenn weiterhin Probleme beim Zugriff auf Ihr Konto auftreten, wenden Sie sich wegen einer Kennwortzurücksetzung an das Supportteam.
 
 *1-800-642-7676*
 
-Es ist wichtig zu beachten, dass die Telefonnummer nicht die Supportrufnummer für Power BI-Dienst ist.
+Beachten Sie, dass diese Telefonnummer nicht die Nummer des Supports für den Power BI-Dienst ist.
 
 > [!NOTE]
-> Powerbi bietet Support während der üblichen Geschäftszeiten in der Zeitzone Eastern Standard Time (EST). Unterstützung ist derzeit nur auf Englisch in bereitgestellt.
+> Power BI bietet Support während der normalen Geschäftszeiten in der EST-Zeitzone (Eastern Standard Time). Support wird zurzeit nur in englischer Sprache bereitgestellt.
 
 Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)

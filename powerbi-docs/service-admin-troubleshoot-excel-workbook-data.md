@@ -1,6 +1,6 @@
 ---
-title: 'Fehler: Wir konnten nicht in Ihrer Excel-Arbeitsmappe keine Daten gefunden.'
-description: 'Fehler: Wir konnten nicht in Ihrer Excel-Arbeitsmappe keine Daten gefunden.'
+title: 'Fehler: Wir haben in Ihrer Excel-Arbeitsmappe keine Daten gefunden'
+description: 'Fehler: Wir haben in Ihrer Excel-Arbeitsmappe keine Daten gefunden'
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
@@ -13,19 +13,19 @@ ms.custom: seodec18
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: 6fb02e6cbaca30859aa00f58ae07c9a3fd7f6fe0
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65101426"
 ---
-# <a name="error-we-couldnt-find-any-data-in-your-excel-workbook"></a>Fehler: Wir konnten nicht in Ihrer Excel-Arbeitsmappe keine Daten gefunden.
+# <a name="error-we-couldnt-find-any-data-in-your-excel-workbook"></a>Fehler: Wir haben in Ihrer Excel-Arbeitsmappe keine Daten gefunden
 
 >[!NOTE]  
 >Dieser Artikel gilt für Excel 2007 und höher.
 
 Beim Importieren einer Excel-Arbeitsmappe in Power BI wird möglicherweise die folgende Fehlermeldung angezeigt:
 
-*Fehler: Es konnte nicht als Tabelle formatierten Daten gefunden. Um aus Excel in Power BI-Dienst importieren möchten, müssen Sie die Daten als Tabelle formatieren. Wählen Sie alle Daten in der Tabelle soll, und drücken Sie STRG + T.*
+*Fehler: Wir haben keine Daten gefunden, die als Tabelle formatiert sind. Wenn Sie aus Excel in den Power BI-Dienst importieren möchten, müssen Sie die Daten als Tabelle formatieren. Wählen Sie alle gewünschten Daten in der Tabelle aus, und drücken Sie STRG+T.*
 
 ![Daten in Arbeitsmappe nicht gefunden](media/service-admin-troubleshoot-excel-workbook-data/power-bi-we-couldnt-find-any-data.png)
 

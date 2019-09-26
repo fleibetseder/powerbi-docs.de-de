@@ -1,5 +1,5 @@
 ---
-title: Verwenden Sie die Überwachung in Ihrer Organisation
+title: Verwenden von Überwachung in der Organisation
 description: Erfahren Sie, wie Sie mit der Überwachung in Power BI ergriffene Maßnahmen überwachen und untersuchen können. Sie können das Security & Compliance Center oder PowerShell verwenden.
 author: mgblythe
 manager: kfile
@@ -7,119 +7,119 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/23/2019
+ms.date: 09/09/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 559ff45974274420e2545228720000359d5fe971
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: cd12546c91e9f967c8ed4cdd6e4dac9884f73670
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64906793"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71075836"
 ---
-# <a name="use-auditing-within-your-organization"></a>Verwenden Sie die Überwachung in Ihrer Organisation
+# <a name="use-auditing-within-your-organization"></a>Verwenden von Überwachung in der Organisation
 
-Zu wissen, wer welche Aktion ausgeführt wird, auf welches Element in die Power BI-möglich Mandant Ihres Unternehmens erfüllen die Anforderungen, wie die Einhaltung gesetzlicher Bestimmungen und datensatzverwaltung kritische. Verwenden Sie Power BI-Überwachung, um die Aktionen, die Benutzer, z. B. "Bericht anzeigen" und "Dashboard anzeigen" überwachen. Sie können nicht die Überwachung verwenden, um Berechtigungen zu überwachen.
+Es kann wichtig sein zu wissen, wer welche Aktion für welches Element im Power BI-Mandanten ausführt. Dies kann Ihrer Organisation bei der Einhaltung von Anforderungen helfen, etwa bei der Einhaltung gesetzlicher Bestimmungen und der Dokumentverwaltung. Verwenden Sie Power BI-Überwachung, um von Benutzern ausgeführte Aktionen wie „Bericht anzeigen“ und „Dashboard anzeigen“ zu überwachen. Sie können die Überwachung nicht dazu verwenden, Berechtigungen zu überwachen.
 
 Sie arbeiten mit der Überwachung im Office 365 Security & Compliance Center oder verwenden PowerShell. Die Überwachung baut auf in Exchange Online enthaltener Funktionalität auf, die zur Unterstützung von Power BI automatisch bereitgestellt wird.
 
-Sie können die Überwachungsdaten nach Datumsbereich, Benutzer, Dashboard, Bericht, Dataset und Aktivitätstyp filtern. Sie können auch die Aktivitäten in einer CSV (durch Trennzeichen getrennte Werte), um die Analyse offline herunterladen.
+Sie können die Überwachungsdaten nach Datumsbereich, Benutzer, Dashboard, Bericht, Dataset und Aktivitätstyp filtern. Sie können die Aktivitäten auch als CSV-Datei (durch Trennzeichen getrennte Datei) herunterladen, um die Analyse offline durchzuführen.
 
 ## <a name="requirements"></a>Anforderungen
 
 Die folgenden Anforderungen müssen erfüllt sein, um auf Überwachungsprotokolle zugreifen zu können:
 
-* Sie müssen entweder globaler Administrator sein, oder der Rolle Überwachungsprotokolle oder Postfachzugriffskonto-Überwachungsprotokolle in Exchange Online auf das Überwachungsprotokoll zugreifen. In der Standardeinstellung die Rollengruppen Compliance-Verwaltung und Organisation stammen, mit diesen Rollen zugewiesen werden, auf die **Berechtigungen** Seite im Exchange Administrationscenter.
+* Sie müssen entweder globaler Administrator sein, oder Ihnen muss in Exchange Online die Rolle „Überwachungsprotokolle“ oder „Überwachungsprotokolle schreibgeschützt“ zugewiesen sein, damit Sie auf das Überwachungsprotokoll zugreifen können. Standardmäßig sind diese Rollen den Rollengruppen „Compliance Management“ und „Organisationsmanagement“ auf der Seite **Berechtigungen** im Exchange Admin Center zugewiesen.
 
-    Um nicht-Administratorkonten mit Zugriff auf das Überwachungsprotokoll zu gewährleisten, müssen Sie den Benutzer als Mitglied einer dieser Rollengruppen hinzufügen. Wenn Sie sie möchten eine andere Möglichkeit, Sie erstellen eine benutzerdefinierte Rolle-Gruppe im Exchange Administrationscenter, weisen die Überwachungsprotokolle "oder" Postfachzugriffskonto Audit Logs "dieser Gruppe, und fügen Sie das Konto ohne Administratorrechte auf die neue Rollengruppe. Weitere Informationen finden Sie unter [Verwalten von Rollengruppen in Exchange Online](/Exchange/permissions-exo/role-groups).
+    Um Nicht-Administratorkonten Zugriff auf die Überwachungsprotokolle zu geben, müssen Sie den Benutzer als Mitglied einer dieser Rollengruppen hinzufügen. Wenn Sie anders vorgehen möchten, können Sie eine benutzerdefinierte Rollengruppe im Exchange Admin Center erstellen, dieser Gruppe die Rolle „Überwachungsprotokolle“ oder „Überwachungsprotokolle schreibgeschützt“ zuweisen und dann der neuen Rollengruppe das Nicht-Administratorkonto zuweisen. Weitere Informationen finden Sie unter [Verwalten von Rollengruppen in Exchange Online](/Exchange/permissions-exo/role-groups).
 
     Wenn Sie über das Microsoft 365 Admin Center nicht auf das Exchange Admin Center zugreifen können, navigieren Sie zu https://outlook.office365.com/ecp, und melden Sie sich mit Ihren Anmeldeinformationen an.
 
-* Wenn Sie auf das Überwachungsprotokoll Zugriff, aber nicht, ein globaler Administrator oder den Power BI-Dienst-Administrator sind, wird nicht den Zugriff auf das Power BI-Verwaltungsportal haben. In diesem Fall müssen Sie einen direkten Link zum [Office 365 Security & Compliance Center](https://sip.protection.office.com/#/unifiedauditlog) verwenden.
+* Wenn Sie Zugriff auf das Überwachungsprotokoll haben, aber kein globaler Administrator oder Power BI-Dienst-Administrator sind, haben Sie keinen Zugriff auf das Power BI-Verwaltungsportal. In diesem Fall müssen Sie einen direkten Link zum [Office 365 Security & Compliance Center](https://sip.protection.office.com/#/unifiedauditlog) verwenden.
 
-## <a name="access-your-audit-logs"></a>Zugriff auf Ihre Überwachungsprotokolle
+## <a name="access-your-audit-logs"></a>Zugriff auf Überwachungsprotokolle
 
-Um die Protokolle zugreifen zu können, stellen Sie zunächst sicher, zum Aktivieren der Protokollierung in Power BI. Weitere Informationen finden Sie unter [Überwachungsprotokolle](service-admin-portal.md#audit-logs) in der Dokumentation zum Verwaltungsportal. Es kann bis zu einer Verzögerung von 48 Stunden zwischen dem Zeitpunkt, die Sie die Überwachung aktivieren und beim Überwachungsdaten anzeigen können. Wenn Sie nicht umgehend Daten sehen, überprüfen Sie die Überwachungsprotokolle später noch einmal. Es kann zu einer ähnlichen Verzögerung kommen, nachdem Ihnen die Leseberechtigung für Überwachungsprotokolle erteilt wurde und bis Sie die Protokolle ansehen können.
+Um auf Protokolle zuzugreifen, vergewissern Sie sich zunächst, dass die Protokollierung in Power BI aktiviert ist. Weitere Informationen finden Sie unter [Überwachungsprotokolle](service-admin-portal.md#audit-logs) in der Dokumentation zum Verwaltungsportal. Es kann eine Verzögerung von bis zu 48 Stunden nach der Aktivierung der Überwachung geben, bis Sie Überwachungsdaten einsehen können. Wenn Sie nicht umgehend Daten sehen, überprüfen Sie die Überwachungsprotokolle später noch einmal. Es kann zu einer ähnlichen Verzögerung kommen, nachdem Ihnen die Leseberechtigung für Überwachungsprotokolle erteilt wurde und bis Sie die Protokolle ansehen können.
 
-Die Power BI-Überwachungsprotokolle sind direkt über das [Office 365 Security & Compliance Center](https://sip.protection.office.com/#/unifiedauditlog) verfügbar. Es gibt auch ein Link aus dem Power BI-Verwaltungsportal:
+Die Power BI-Überwachungsprotokolle sind direkt über das [Office 365 Security & Compliance Center](https://sip.protection.office.com/#/unifiedauditlog) verfügbar. Es steht auch ein Link aus dem Power BI-Verwaltungsportal zur Verfügung:
 
-1. Wählen Sie in Power BI die **Zahnradsymbol** in der oberen rechten Ecke, und wählen Sie dann **Verwaltungsportal**.
+1. Wählen Sie in der Ecke rechts oben in Power BI das **Zahnradsymbol** und dann **Verwaltungsportal** aus.
 
-   ![Screenshot des im Dropdown-zahnradmenü mit der Admin-Portal-Option hingewiesen.](media/service-admin-auditing/powerbi-admin.png)
+   ![Screenshot des Zahnrad-Dropdownmenüs mit hervorgehobener Option „Verwaltungsportal“.](media/service-admin-auditing/powerbi-admin.png)
 
 1. Wählen Sie **Azure-Überwachungsprotokolle** aus.
 
 1. Wählen Sie **Zum O365 Admin Center wechseln** aus.
 
-   ![Screenshot des Verwaltungsportals, mit der Überwachung protokolliert Option und die wechseln Sie zu Microsoft Office 365 Admin Center-Optionen, die als Legende an.](media/service-admin-auditing/audit-log-o365-admin-center.png)
+   ![Screenshot des Verwaltungsportals mit hervorgehobenen Optionen „Überwachungsprotokolle“ und „Zum Microsoft O365-Verwaltungscenter wechseln“.](media/service-admin-auditing/audit-log-o365-admin-center.png)
 
 ## <a name="search-only-power-bi-activities"></a>Nur nach Power BI-Aktivitäten suchen
 
 Sie können die Ergebnisse mithilfe dieser Schritte auf Power BI-Aktivitäten einschränken. Eine Liste der [Aktivitäten, die von Power BI überwacht werden](#activities-audited-by-power-bi) finden Sie weiter unten in diesem Artikel.
 
-1. Auf der **überwachungsprotokollsuche** Seite **Suche**, wählen Sie die Dropdownliste für **Aktivitäten**.
+1. Wählen Sie auf der Seite **Überwachungsprotokollsuche** unter **Suche** die Dropdownliste für **Aktivitäten** aus.
 
 2. Wählen Sie **Power BI-Aktivitäten** aus.
 
-   ![Screenshot der Überwachung der protokollsuche mit Power BI-Aktivitäten hingewiesen.](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)
+   ![Screenshot der Überwachungsprotokollsuche mit hervorgehobenen Power BI-Aktivitäten.](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)
 
 3. Klicken oder tippen Sie auf eine beliebige Stelle neben dem Auswahlfeld, um es zu schließen.
 
-Ihre Suche gibt nur Power BI-Aktivitäten zurück.
+Ihre Suchen geben nur Power BI-Aktivitäten zurück.
 
 ## <a name="search-the-audit-logs-by-date"></a>Überwachungsprotokolle nach Datum durchsuchen
 
-Sie können die Protokolle mit den Feldern für das **Startdatum** und das **Enddatum** nach Datumsbereichen durchsuchen. Die Standardauswahl ist die letzten sieben Tage. Die Anzeige zeigt das Datum und Uhrzeit im Format der koordinierten Weltzeit (Coordinated Universal Time, UTC). Der Datumsbereich kann maximal 90 Tage umfassen. 
+Sie können die Protokolle mit den Feldern für das **Startdatum** und das **Enddatum** nach Datumsbereichen durchsuchen. Die Standardauswahl sind die vergangenen sieben Tage. Die Anzeige stellt Datum und Uhrzeit in koordinierter Weltzeit (UTC) dar. Der Datumsbereich kann maximal 90 Tage umfassen. 
 
-Sie erhalten einen Fehler, wenn der ausgewählte Datumsbereich größer als 90 Tage ist. Wenn Sie den maximalen Datumsbereich von 90 Tagen verwenden, wählen Sie die aktuelle Uhrzeit als **Startdatum** aus. Andernfalls erhalten Sie die Fehlermeldung, dass das Startdatum vor dem Enddatum liegt. Wenn Sie die Überwachung innerhalb der letzten 90 Tage aktiviert haben, kann der Datumsbereich nicht vor dem Datum beginnen, an dem die Überwachung aktiviert wurde.
+Wenn der ausgewählte Datumsbereich größer als 90 Tage ist, wird ein Fehler angezeigt. Wenn Sie den maximalen Datumsbereich von 90 Tagen verwenden, wählen Sie die aktuelle Uhrzeit als **Startdatum** aus. Andernfalls erhalten Sie die Fehlermeldung, dass das Startdatum vor dem Enddatum liegt. Wenn Sie die Überwachung innerhalb der letzten 90 Tage aktiviert haben, kann der Datumsbereich nicht vor dem Datum beginnen, an dem die Überwachung aktiviert wurde.
 
-![Screenshot der Überwachung der protokollsuche mit Startdatum und Enddatum der genannten Optionen.](media/service-admin-auditing/search-audit-log-by-date.png)
+![Screenshot der Überwachungsprotokollsuche mit hervorgehobenen Optionen „Anfangsdatum“ und „Enddatum“.](media/service-admin-auditing/search-audit-log-by-date.png)
 
 ## <a name="search-the-audit-logs-by-users"></a>Überwachungsprotokolle nach Benutzern durchsuchen
 
-Sie können nach Einträgen im Überwachungsprotokoll für Aktivitäten, die von bestimmten Benutzern suchen. Geben Sie einen oder mehrere Benutzernamen in der **Benutzer** Feld. Der Benutzername sieht wie eine e-Mail-Adresse. Es ist das Konto, das Benutzer sich bei Power BI anmelden. Lassen Sie dieses Feld leer, um Einträge für alle Benutzer (und Dienstkonten) in Ihrer Organisation abzurufen.
+Sie können im Überwachungsprotokoll nach Einträgen suchen, die Aktivitäten bestimmter Benutzer betreffen. Geben Sie mindestens einen Benutzernamen in das Feld **Benutzer** ein. Der Benutzername sieht aus wie eine E-Mail-Adresse. Es handelt sich um das Konto, mit dem sich Benutzer bei Power BI anmelden. Lassen Sie dieses Feld leer, um Einträge für alle Benutzer (und Dienstkonten) in Ihrer Organisation abzurufen.
 
 ![Nach Benutzern suchen](media/service-admin-auditing/search-audit-log-by-user.png)
 
 ## <a name="view-search-results"></a>Anzeigen der Suchergebnisse
 
-Nach der Auswahl **Suche**, laden Sie die Ergebnisse der Suche. Nach einigen Augenblicken wird sie unter anzeigen **Ergebnisse**. Wenn die Suche abgeschlossen ist, zeigt die Anzeige der Anzahl der Ergebnisse an. **Überwachungsprotokollsuche** maximal 1000-Ereignissen angezeigt. Wenn mehr als 1000 Ereignisse die Suchkriterien entsprechen, wird die app die 1000 neuesten Ereignisse angezeigt.
+Nachdem Sie **Suche** ausgewählt haben, werden die Suchergebnisse geladen. Sie werden nach einigen Augenblicken unter **Ergebnisse** angezeigt. Nach dem Abschluss der Suche zeigt die Anzeige die Anzahl der gefundenen Ergebnisse. Die **Überwachungsprotokollsuche** zeigt maximal 1.000 Ereignisse an. Wenn mehr als 1.000 Ereignisse den Suchkriterien entsprechen, zeigt die App die neuesten 1.000 Ereignisse an.
 
 ### <a name="view-the-main-results"></a>Anzeigen der wichtigsten Ergebnisse
 
-Die **Ergebnisse** Bereich enthält die folgenden Informationen für jedes Ereignis, das von der Suche zurückgegeben. Wählen Sie unter **Ergebnisse** eine Spaltenüberschrift aus, um die Ergebnisse zu sortieren.
+Der Bereich **Ergebnisse** enthält die folgenden Informationen für jedes von der Suche zurückgegebene Ereignis. Wählen Sie unter **Ergebnisse** eine Spaltenüberschrift aus, um die Ergebnisse zu sortieren.
 
 | **Spalte** | **Definition** |
 | --- | --- |
 | Datum (Date) |Datum und Uhrzeit des Ereignisses (im UTC-Format). |
-| IP-Adresse |Die IP-Adresse des Geräts verwendet werden, für die Aktivität protokolliert. Die app zeigt die IP-Adresse in IPv4- oder IPv6-Adressformat. |
+| IP-Adresse |Die IP-Adresse des Geräts, das für die protokollierte Aktivität verwendet wurde. Die App zeigt die IP-Adresse als IPv4- oder IPv6-Adresse an. |
 | Benutzer |Der Benutzer (oder das Dienstkonto), der die Aktion ausgeführt hat, die das Ereignis ausgelöst hat. |
 | Activity |Die Aktivität, die vom Benutzer ausgeführt wurde. Dieser Wert entspricht den Aktivitäten, die Sie in der Dropdownliste **Aktivitäten** ausgewählt haben. Bei Ereignissen aus dem Überwachungsprotokoll für Exchange-Administratoren ist der Wert in dieser Spalte ein Exchange-Cmdlet. |
-| Artikel |Das Objekt erstellt oder geändert werden, da die entsprechende Aktivität. Z. B. die angezeigten oder geänderten Datei oder das aktualisierte Benutzerkonto. Nicht alle Aktivitäten verfügen über einen Wert in dieser Spalte. |
-| Detail |Weitere Details zu einer Aktivität. Nicht alle Aktivitäten werden in diesem Fall einen Wert aufweisen. |
+| Artikel |Das Objekt, das aufgrund der entsprechenden Aktivität erstellt oder geändert wurde. Beispielsweise die angezeigte oder geänderte Datei oder das aktualisierte Benutzerkonto. Nicht alle Aktivitäten verfügen über einen Wert in dieser Spalte. |
+| Detail |Weitere Details zu einer Aktivität. Auch hier weisen nicht alle Aktivitäten einen Wert auf. |
 
 ### <a name="view-the-details-for-an-event"></a>Anzeigen von Ereignisdetails
 
-Um weitere Details zu einem Ereignis anzuzeigen, wählen Sie den Ereignisdatensatz in der Liste der Suchergebnisse. Ein **Details** Seite wird angezeigt, die die genauen Eigenschaften des Ereignisses aufgerufen wurde. Die **Details** Eigenschaften abhängig von der Office 365-Dienst, in dem das Ereignis tritt auf, wird angezeigt.
+Um weitere Details zu einem Ereignis anzuzeigen, wählen Sie den Eintrag eines Ereignisses in der Liste der Suchergebnisse aus. Es wird eine Seite **Details** angezeigt, die die detaillierten Eigenschaften aus dem Ereignisdatensatz enthält. Die Seite **Details** zeigt Eigenschaften abhängig von dem Office 365-Dienst an, in dem das Ereignis auftrat.
 
 Um diese Details anzuzeigen, wählen Sie **Weitere Informationen** aus. Alle Power BI-Einträge weisen einen Wert von 20 für die RecordType-Eigenschaft auf. Informationen zu weiteren Eigenschaften finden Sie unter [Detaillierte Eigenschaften im Überwachungsprotokoll](/office365/securitycompliance/detailed-properties-in-the-office-365-audit-log/).
 
-   ![Screenshot des Dialogfelds für die Überwachung Details mit der Informationsoption für weitere hingewiesen.](media/service-admin-auditing/audit-details.png)
+   ![Screenshot des Überwachungsdetails-Dialogfelds mit hervorgehobener Option „Weitere Informationen“.](media/service-admin-auditing/audit-details.png)
 
 ## <a name="export-search-results"></a>Exportieren der Suchergebnisse
 
-Gehen Sie folgendermaßen vor, um das Power BI-Überwachungsprotokoll in eine CSV-Datei zu exportieren.
+Um das Power BI-Überwachungsprotokoll in eine CSV-Datei zu exportieren, gehen Sie wie folgt vor.
 
 1. Wählen Sie **Ergebnisse exportieren** aus.
 
 1. Wählen Sie entweder **Geladene Ergebnisse speichern** oder **Alle Ergebnisse herunterladen** aus.
 
-    ![Screenshot des Exports führt Option.](media/service-admin-auditing/export-auditing-results.png)
+    ![Screenshot der Option zum Exportieren der Ergebnisse.](media/service-admin-auditing/export-auditing-results.png)
 
 ## <a name="use-powershell-to-search-audit-logs"></a>Verwenden von PowerShell zum Suchen nach Überwachungsprotokollen
 
-Sie können auch mit PowerShell basierend auf Ihrer Anmeldung auf die Überwachungsprotokolle zugreifen. Das folgende Beispiel zeigt, wie Sie eine Verbindung mit Exchange Online PowerShell herstellen und dann den Befehl [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) verwenden, um Power BI-Überwachungsprotokolleinträge abzurufen. Um das Skript auszuführen, ein Administrator muss weisen Sie die entsprechenden Berechtigungen, unter dem [Anforderungen](#requirements) Abschnitt.
+Sie können auch mit PowerShell basierend auf Ihrer Anmeldung auf die Überwachungsprotokolle zugreifen. Das folgende Beispiel zeigt, wie Sie eine Verbindung mit Exchange Online PowerShell herstellen und dann den Befehl [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) verwenden, um Power BI-Überwachungsprotokolleinträge abzurufen. Um das Skript auszuführen, muss ein Administrator Ihnen die entsprechenden Berechtigungen zuweisen, wie im Abschnitt [Anforderungen](#requirements) beschrieben.
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned

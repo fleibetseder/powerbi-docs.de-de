@@ -1,28 +1,33 @@
 ---
 title: Paginierter Berichts-Generator in Power BI
 description: Der paginierte Berichts-Generator in Power BI ist ein Tool für das Erstellen von paginierten Berichten.
-ms.date: 06/06/2019
+ms.date: 09/16/2019
 ms.service: powerbi
 ms.subservice: report-builder
+featuredvideoid: 78TZeiEhveY
 ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 7ae945be1941fea4303b5cc74f9a2a4f104e8754
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 6d13871ec3ba8a7550a556a8923893a6b7d676ae
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840485"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71076059"
 ---
 # <a name="power-bi-paginated-report-builder"></a>Paginierter Berichts-Generator in Power BI
 
  Der paginierte Berichts-Generator in Power BI ist ein Tool für das Erstellen von paginierten Berichten.  Wenn Sie einen paginierten Bericht entwerfen, erstellen Sie eine Berichtsdefinition, die angibt, welche Daten abgerufen werden sollen, wo Sie abgerufen werden können und wie sie angezeigt werden sollen. Bei Ausführung des Berichts legt der Berichtsprozessor die angegebene Berichtsdefinition zugrunde, ruft die Daten ab und kombiniert sie mit dem Berichtslayout, um den Bericht zu generieren. Im Berichts-Generator können Sie sich eine Vorschau des Berichts ansehen. Dann veröffentlichen Sie den Bericht im Power BI-Dienst.
 
+Sie ziehen das Lernen aus Videos vor? Sehen Sie sich die Videoreihe über paginierte Power BI-Berichte auf YouTube an, die vom Principal Program Manager von Power BI, Chris Finlan, stammt.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/78TZeiEhveY?list=PLx7LcKtN_gq-JVzM6L8xNNxX7kts-KflJ" frameborder="0" allowfullscreen></iframe>
+
+Die folgenden paginierten Berichte enthalten eine Matrix mit Zeilen- und Spaltengruppen, Sparklines, Indikatoren und eine Zusammenfassung in Form eines Kreisdiagramms in der rechten oberen Ecke sowie eine Karte mit zwei geografischen Datasets, die nach Farbe und Kreisgröße unterschieden dargestellt werden.  
+
 ![Paginierter Bericht im Power BI-Dienst](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
 
- Dieser paginierte Bericht enthält eine Matrix mit Zeilen- und Spaltengruppen, Sparklines, Indikatoren und eine Zusammenfassung in Form eines Kreisdiagramms in der rechten oberen Ecke sowie eine Karte mit zwei geografischen Datasets, die nach Farbe und Kreisgröße unterschieden dargestellt werden.  
-  
 ##  <a name="JumpStartReptCreation"></a> Beschleunigte Berichtserstellung  
  
 -   **Mit dem Tabellen-, Matrix- oder Diagramm-Assistenten** erstellen Sie eine Datenquellenverbindung, ziehen Sie anschließend Felder per Drag & Drop, um eine Datasetabfrage zu erstellen, wählen Sie Layout und Stil aus, und passen Sie den Bericht an.  
@@ -52,6 +57,9 @@ ms.locfileid: "66840485"
 -   **Wählen Sie ein Präsentationsformat aus**, wenn Sie den Bericht öffnen oder nachdem Sie ihn geöffnet haben. Sie können ein weborientiertes, seitenorientiertes oder ein Desktopanwendungsformat auswählen. Zu den Formaten gehören MHTML, PDF, XML, CSV, Word und Excel.  
   
 -   **Richten Sie Abonnements ein.** Nachdem Sie den Bericht im Power BI-Dienst veröffentlicht haben, können Sie ihn so konfigurieren, dass er zu einer bestimmten Zeit ausgeführt und als E-Mail-Abonnement versendet wird.  
+
 ## <a name="next-steps"></a>Nächste Schritte
 
 - [Was sind paginierte Berichte in Power BI Premium? (Vorschau)](paginated-reports-report-builder-power-bi.md)
+
+- Sehen Sie sich die [Videoreihe über paginierte Power BI-Berichte](https://www.youtube.com/watch?v=78TZeiEhveY&list=PLx7LcKtN_gq-JVzM6L8xNNxX7kts-KflJ) auf YouTube an, die vom Principal Program Manager von Power BI, Chris Finlan, stammt.

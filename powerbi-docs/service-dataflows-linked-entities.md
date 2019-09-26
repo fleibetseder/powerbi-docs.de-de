@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: d766730185a9064241621d15efc9faf31334fe95
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61136442"
@@ -88,11 +88,11 @@ Es gibt einige Einschränkungen, die es bei der Arbeit mit verknüpften Entität
 
 Die folgenden Artikeln können für das Erstellen oder Arbeiten mit Dataflows nützlich sein: 
 
-* [Self-service-Prep in Power BI](service-dataflows-overview.md)
+* [Self-Service-Datenaufbereitung in Power BI](service-dataflows-overview.md)
 * [Erstellen und Verwenden von Dataflows in Power BI](service-dataflows-create-use.md)
-* [Verwenden berechnete Elemente in Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [Verwenden Datenflüsse mit lokalen Datenquellen](service-dataflows-on-premises-gateways.md)
-* [Entwicklerressourcen für Power BI-Datenflüsse](service-dataflows-developer-resources.md)
+* [Using computed entities on Power BI Premium (Verwenden berechneter Entitäten in Power BI Premium)](service-dataflows-computed-entities-premium.md)
+* [Using dataflows with on-premises data sources (Verwenden von Datenflüssen mit lokalen Datenquellen)](service-dataflows-on-premises-gateways.md)
+* [Developer resources for Power BI dataflows (Entwicklerressourcen für Power BI-Datenflüsse)](service-dataflows-developer-resources.md)
 
 Weitere Informationen zu Power Query und zur geplanten Aktualisierung finden Sie in den folgenden Artikeln:
 * [Abfrageübersicht in Power BI Desktop](desktop-query-overview.md)

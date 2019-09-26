@@ -12,12 +12,12 @@ ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 55571cda4558b5dd9ba28f757f6e11ad4b45f939
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61136373"
 ---
-# <a name="self-service-data-prep-in-power-bi"></a>Self-service-Prep in Power BI
+# <a name="self-service-data-prep-in-power-bi"></a>Self-Service-Datenaufbereitung in Power BI
 
 Mit dem stets wachsenden Datenvolumen wächst auch die Herausforderung, diese Daten in gut geformte, handlungsrelevante Informationen umzuwandeln. Wir wollen Daten, die für Analysen geeignet sind, um Visuals, Berichte und Dashboards aufzufüllen, damit wir aus den Datenmengen schnell handlungsrelevante Informationen gewinnen. Mit der  **Self-Service-Datenaufbereitung** für Big Data in Power BI wandeln Sie Daten mit wenigen Klicks in Power BI-Informationen um.
 
@@ -108,10 +108,10 @@ Durch das Speichern von Geschäftsdaten im standardisierten **Common Data Model*
 Dieser Artikel bietet einen Überblick über die Self-Service-Datenaufbereitung für Big Data in Power BI und die vielfältigen Verwendungsoptionen. Die folgenden Artikel gehen näher auf gängige Anwendungsszenarien für Dataflows ein. 
 
 * [Erstellen und Verwenden von Dataflows in Power BI](service-dataflows-create-use.md)
-* [Verwenden berechnete Elemente in Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [Verwenden Datenflüsse mit lokalen Datenquellen](service-dataflows-on-premises-gateways.md)
-* [Entwicklerressourcen für Power BI-Datenflüsse](service-dataflows-developer-resources.md)
-* [Datenflüsse und Azure Data Lake-integration](service-dataflows-azure-data-lake-integration.md)
+* [Using computed entities on Power BI Premium (Verwenden berechneter Entitäten in Power BI Premium)](service-dataflows-computed-entities-premium.md)
+* [Using dataflows with on-premises data sources (Verwenden von Datenflüssen mit lokalen Datenquellen)](service-dataflows-on-premises-gateways.md)
+* [Developer resources for Power BI dataflows (Entwicklerressourcen für Power BI-Datenflüsse)](service-dataflows-developer-resources.md)
+* [Dataflows und Azure Data Lake-Integration](service-dataflows-azure-data-lake-integration.md)
 
 Weitere Informationen zu Power Query und zur geplanten Aktualisierung finden Sie in den folgenden Artikeln:
 * [Abfrageübersicht in Power BI Desktop](desktop-query-overview.md)

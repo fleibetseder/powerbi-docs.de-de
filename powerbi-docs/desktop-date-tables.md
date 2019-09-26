@@ -12,14 +12,14 @@ ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: 9bbe302c7187419abae556bb34f991efa1fdae00
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454382"
 ---
 # <a name="set-and-use-date-tables-in-power-bi-desktop"></a>Festlegen und Verwenden von Datumstabellen in Power BI Desktop
 
-**Power BI Desktop** arbeitet im Hintergrund automatisch Spalten zu bestimmen, die Datumsangaben darstellen und erstellt anschließend Datumshierarchien und weitere nützliche Metadaten für das Modell in Ihrem Namen. Diese integrierten Hierarchien können Sie benutzen, wenn Sie Berichtsfeatures wie Visuals, Tabellen, Quickmeasures und Slicer erstellen. Power BI Desktop erstellt dazu ausgeblendete Tabellen, die Sie für Ihre Berichte und DAX-Ausdrücke verwenden können.
+**Power BI Desktop** erkennt im Hintergrund automatisch Spalten, die Datumswerte darstellen und erstellt anschließend in Ihrem Auftrag Datumshierarchien und weitere nützliche Metadaten für Ihr Modell. Diese integrierten Hierarchien können Sie benutzen, wenn Sie Berichtsfeatures wie Visuals, Tabellen, Quickmeasures und Slicer erstellen. Power BI Desktop erstellt dazu ausgeblendete Tabellen, die Sie für Ihre Berichte und DAX-Ausdrücke verwenden können.
 
 Viele Datenanalysten erstellen lieber eigene Datumstabellen, was selbstverständlich ebenfalls möglich ist. In **Power BI Desktop** können Sie festlegen, welche Tabelle für Ihr Modell als **Datumstabelle** verwendet werden soll. Anschließend haben Sie die Möglichkeit, datumsbezogene Visuals, Tabellen, Quickmeasures usw. zu erstellen, die auf die Daten dieser Tabelle zugreifen. Wenn Sie eine eigene Datumstabelle festlegen, können Sie die in Ihrem Modell erstellten Datumshierarchien konfigurieren und sie in **Quickmeasures** und anderen Vorgängen nutzen, die auf die Datumstabelle des Modells zurückgreifen. 
 
@@ -52,7 +52,7 @@ Beim Festlegen der Datumstabelle können Sie auswählen, welche Spalte als Datum
 
 ![](media/desktop-date-tables/date-tables_03.png)
 
-Beachten Sie, dass **Power BI Desktop** beim Festlegen einer eigenen Datumstabelle nicht wie sonst üblich automatisch Hierarchien erstellt und diese in Ihr Modell integriert. Wenn Sie später deaktivieren Sie die Datentabelle (und nicht mehr manuell festgelegte Datumstabelle verfügen), erstellt Power BI Desktop die automatisch erstellten integrierten Datumstabellen für Sie für die Datumsspalten in der Tabelle an.
+Beachten Sie, dass **Power BI Desktop** beim Festlegen einer eigenen Datumstabelle nicht wie sonst üblich automatisch Hierarchien erstellt und diese in Ihr Modell integriert. Wenn Sie später die Auswahl für die Datumstabelle aufheben und nicht mehr über eine manuell festgelegte Datumstabelle verfügen, erstellt Power BI Desktop die automatisch erstellten integrierten Datumstabellen für die Datumsspalten in der Tabelle erneut.
 
 Außerdem sollten Sie beachten, dass beim Kennzeichnen einer Tabelle als Datumstabelle die integrierte (automatisch erstellte) Datumstabelle, die von Power BI Desktop erstellt wurde, entfernt wird. Dadurch funktionieren die Visuals und DAX-Elemente nicht mehr richtig, die Sie auf der Grundlage der integrierten Tabellen erstellt haben. 
 

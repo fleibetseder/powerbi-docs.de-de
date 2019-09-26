@@ -7,23 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 09/20/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 81449d7a07bec3c142930573154ecd13a0ceff49
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d2ba4809ce5c6664350ec81b57b6fc717a13879f
+ms.sourcegitcommit: 4222ebad1a3a32d8040f6a615a0b7f173d7869d0
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61141098"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71164543"
 ---
-# <a name="connect-to-data-sources-for-power-bi-dataflows"></a>Verbinden Sie mit Datenquellen für Power BI-Datenflüsse
+# <a name="connect-to-data-sources-for-power-bi-dataflows"></a>Herstellen einer Verbindung mit Datenquellen über Power BI-Dataflows
 
 Mit Power BI-Dataflows können Sie eine Verbindung mit vielen unterschiedlichen Datenquellen herstellen, um neue Dataflows zu erstellen oder neue Entitäten zu einem vorhandenen Dataflow hinzuzufügen.
 
 In diesem Artikel werden die vielen verfügbaren Datenquellen zum Erstellen oder Hinzufügen von Dataflows aufgeführt. Ferner wird erläutert, wie diese Dataflows mithilfe dieser Datenquellen erstellt werden.
 
-Eine Übersicht über das Erstellen und verwenden die Datenflüsse, finden Sie unter [erstellen und Verwenden von Datenflüsse in Power BI](service-dataflows-create-use.md).
+Eine Übersicht über das Erstellen und Verwenden von Dataflows finden Sie unter [Erstellen und Verwenden von Dataflows in Power BI](service-dataflows-create-use.md).
 
 ## <a name="create-a-dataflow-from-a-data-source"></a>Erstellen eines Dataflows aus einer Datenquelle
 
@@ -156,7 +156,6 @@ Anschließend stellt Ihr Skript eine Verbindung mit der von Ihnen angegebenen Da
 
 In der folgenden Liste können Sie sehen, welche Connectors Sie aktuell durch Kopieren und Einfügen der M-Abfrage in eine leere Abfrage verwenden können:
 
-* SAP Business Warehouse 
 * Azure Analysis Services
 * Adobe Analytics
 * ODBC
@@ -176,11 +175,11 @@ Mehr ist zum Herstellen einer Verbindung mit Datenquellen in Power BI-Dataflows
 
 In diesem Artikel wurde erläutert, mit welchen Datenquellen Sie für Dataflows Verbindungen herstellen können. Die folgenden Artikel gehen näher auf gängige Anwendungsszenarien für Dataflows ein. 
 
-* [Self-service-Prep in Power BI](service-dataflows-overview.md)
+* [Self-Service-Datenaufbereitung in Power BI](service-dataflows-overview.md)
 * [Erstellen und Verwenden von Dataflows in Power BI](service-dataflows-create-use.md)
-* [Verwenden berechnete Elemente in Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [Verwenden Datenflüsse mit lokalen Datenquellen](service-dataflows-on-premises-gateways.md)
-* [Entwicklerressourcen für Power BI-Datenflüsse](service-dataflows-developer-resources.md)
+* [Using computed entities on Power BI Premium (Verwenden berechneter Entitäten in Power BI Premium)](service-dataflows-computed-entities-premium.md)
+* [Using dataflows with on-premises data sources (Verwenden von Datenflüssen mit lokalen Datenquellen)](service-dataflows-on-premises-gateways.md)
+* [Developer resources for Power BI dataflows (Entwicklerressourcen für Power BI-Datenflüsse)](service-dataflows-developer-resources.md)
 * [Dataflows und Integration in Azure Data Lake (Vorschauversion)](service-dataflows-azure-data-lake-integration.md)
 
 Weitere Informationen zu Power Query und zur geplanten Aktualisierung finden Sie in den folgenden Artikeln:

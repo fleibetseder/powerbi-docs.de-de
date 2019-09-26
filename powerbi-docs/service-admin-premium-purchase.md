@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/12/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: bc55d290e10832034ed96d7092c5baa4b7cc20d1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: a6e37885c5e15dbaaa28fc5cb693089fda747c9e
+ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65565285"
+ms.lasthandoff: 09/21/2019
+ms.locfileid: "71175243"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Erwerben von Power BI Premium
 
@@ -101,9 +101,10 @@ Wenn Sie Ihr Premium-Abonnement kündigen oder Ihre Kapazitätslizenz abläuft, 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Power BI – Preise](https://powerbi.microsoft.com/pricing/)   
-[Power BI Premium-Rechner](https://powerbi.microsoft.com/calculator/)   
-[Power BI Premium – Häufig gestellte Fragen](service-premium-faq.md)   
+[Konfigurieren und Verwalten von Kapazitäten in Power BI Premium](service-admin-premium-manage.md)\
+[Power BI – Preise](https://powerbi.microsoft.com/pricing/)\
+[Power BI Premium-Rechner](https://powerbi.microsoft.com/calculator/)\
+[Power BI Premium – Häufig gestellte Fragen](service-premium-faq.md)\
 [Planning a Power BI Enterprise Deployment whitepaper (Whitepaper zum Planen der Unternehmensbereitstellung von Power BI)](https://aka.ms/pbienterprisedeploy)
 
 Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)

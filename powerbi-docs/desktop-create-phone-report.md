@@ -1,5 +1,5 @@
 ---
-title: Berichtsoptimierung für die mobile apps – Power BI
+title: 'Optimieren von Berichten für die mobilen Apps: Power BI'
 description: Erfahren Sie, wie Sie die Seiten des Berichts für die mobilen Power BI-Apps optimieren, indem Sie eine Hochformatversion des Berichts speziell für Smartphones und Tablets erstellen.
 author: maggiesMSFT
 manager: kfile
@@ -12,19 +12,19 @@ ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: f55d1e518c3c710503bb56539667bb652f287aa7
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61310693"
 ---
-# <a name="optimize-reports-for-the-power-bi-mobile-apps"></a>Berichtsoptimierung für den mobilen Power BI-apps
-Sie können die Benutzeroberfläche zum Anzeigen von Berichten in den mobilen apps durch Erstellen eines Layouts Hochformat verbessern. In Power BI Desktop und Power BI-Dienst können Sie neu anordnen und Ändern der Größe berichtsvisuals für eine optimale Leistung im Hochformatmodus ausgeführt.  
+# <a name="optimize-reports-for-the-power-bi-mobile-apps"></a>Optimieren von Berichten für die mobilen Power BI-Apps
+Sie können die Benutzererfahrung beim Anzeigen von Berichten in den mobilen Apps verbessern, indem Sie ein Layout im Hochformat erstellen. In Power BI Desktop und dem Power BI-Dienst ordnen Sie die visuellen Elemente von Berichten in Größe und Position neu an, um eine optimale Erfahrung in der Hochformatdarstellung zu erzielen.  
 
-Suchen Sie nach Informationen zum Anzeigen von Berichten auf einem mobilen Gerät stattdessen? Versuchen Sie es in dieser schnellstartanleitung [untersuchen Sie Dashboards und Berichte in den mobilen Power BI-apps](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md).
+Suchen Sie stattdessen nach Informationen zum Anzeigen von Berichten auf einem mobilen Gerät? Probieren Sie es mit diesem Schnellstart: [Erkunden von Dashboards und Berichten in den mobilen Power BI-Apps](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md).
 
 ![Optimierter Bericht auf einem Smartphone](media/desktop-create-phone-report/desktop-create-phone-report-1.png)
 
-Außerdem können Sie erstellen [ *reaktionsfähig* Visuals](#optimize-a-visual-for-any-size) und [dynamische Datenschnitte](#enhance-slicers-to-work-well-in-phone-reports) , das Ändern der Größe und eine beliebige Stelle. Wenn Sie dem Bericht Filter hinzufügen, werden sie automatisch in den optimierten Bericht.
+Außerdem können Sie [*dynamische* Visuals](#optimize-a-visual-for-any-size) und [dynamische Datenschnitte](#enhance-slicers-to-work-well-in-phone-reports) erstellen, deren Größe überall automatisch optimal angepasst wird. Wenn Sie dem Bericht Filter hinzufügen, werden diese Filter automatisch im optimierten Bericht angezeigt.
 
 ## <a name="lay-out-a-portrait-version-of-a-report-page"></a>Erstellen des Layouts für die Hochformatversion einer Berichtsseite
 
@@ -44,7 +44,7 @@ Nachdem Sie einen Bericht erstellt haben, können Sie ihn für Smartphones und T
    
     ![Visual ziehen und ablegen](media/desktop-create-phone-report/desktop-create-phone-report-4.gif)
    
-    Sie können der Smartphoneberichtsseite einige oder alle visuellen Elemente der Masterberichtsseite hinzufügen. Jedes visuelle Element kann nur einmal hinzugefügt werden. Sie müssen nicht alle visuellen Elemente enthalten.
+    Sie können der Smartphoneberichtsseite einige oder alle visuellen Elemente der Masterberichtsseite hinzufügen. Jedes visuelle Element kann nur einmal hinzugefügt werden. Sie müssen nicht alle visuellen Elemente einschließen.
 
 4. Sie können die Größe der visuellen Elemente im Raster auf die gleiche Weise ändern wie Kacheln in Dashboards und mobilen Dashboards.
    

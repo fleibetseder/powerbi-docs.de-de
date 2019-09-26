@@ -9,18 +9,18 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.cunstom: ''
-ms.date: 08/10/2017
+ms.date: 09/16/2019
 LocalizationGroup: Get started
-ms.openlocfilehash: 11afe27ffbca295eec67fd07731cc646bcca56dc
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3de0b5473c6d00013bdf109f262dc0577c3bf290
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769704"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073513"
 ---
 # <a name="get-started-with-third-party-apps"></a>Erste Schritte mit Drittanbieter-Apps
 
-Sie können auch Apps von Unternehmen oder einzelnen Entwicklern mit Power BI verwenden, die nicht von Microsoft stammen. Beispielsweise können Sie eine Drittanbieter app verwenden, die Power BI-Kacheln in eine benutzerdefinierte Webanwendung integriert. Wenn Sie eine Drittanbieter app verwenden, werden Sie aufgefordert, erteilen Sie die Anwendung bestimmte Berechtigungen für Ihre Power BI-Konto und Ressourcen. Sie dürfen nur solchen Anwendungen Berechtigungen gewähren, die Sie kennen und die aus einer vertrauenswürdigen Quelle stammen. Berechtigungen einer Anwendung können jederzeit widerrufen werden. Weitere Informationen finden Sie unter [Widerrufen der Berechtigungen für eine Drittanbieter-App](#revoke).
+Sie können auch Apps von Unternehmen oder einzelnen Entwicklern mit Power BI verwenden, die nicht von Microsoft stammen. Beispielsweise können Sie eine Drittanbieter-App verwenden, die Power BI-Kacheln in eine maßgeschneiderte Webanwendung integrieren. Wenn Sie eine Drittanbieter-App verwenden, werden Sie aufgefordert, der Anwendung bestimmte Berechtigungen für Ihr Power BI-Konto und -Ressourcen zu gewähren. Sie dürfen nur solchen Anwendungen Berechtigungen gewähren, die Sie kennen und die aus einer vertrauenswürdigen Quelle stammen. Berechtigungen einer Anwendung können jederzeit widerrufen werden. Weitere Informationen finden Sie unter [Widerrufen der Berechtigungen für eine Drittanbieter-App](#revoke).
 
 Im Folgenden sind die Zugriffsarten aufgeführt, die eine Anwendung anfordern kann.
 
@@ -47,16 +47,16 @@ Im Folgenden sind die Zugriffsarten aufgeführt, die eine Anwendung anfordern ka
 
 <a name="revoke"/>
 
-## <a name="revoke-third-party-app-permissions"></a>REVOKE – Berechtigungen für Drittanbieter-app
+## <a name="revoke-third-party-app-permissions"></a>Widerrufen der Berechtigungen für eine Drittanbieter-App
 
-Sie widerrufen die Berechtigungen für eine Drittanbieter-app, indem Sie auf der Office 365 – meine Apps-Website.
+Berechtigungen für eine Drittanbieter-App widerrufen Sie auf der Website „Meine Apps“ von Office 365.
 
-Auf der **Office 365 – Meine apps** Standorts, sieht die Vorgehensweise zum Widerrufen des Drittanbieter-Berechtigungen:
+Gehen Sie wie folgt vor, um Berechtigungen für Drittanbieter auf der Website **Office 365 – Meine Apps** zu widerrufen:
 
 1. Gehen Sie zur Website [Office 365 – Meine Apps](https://portal.office.com/myapps).
 
-2. Auf der **"Meine apps"** Seite, suchen Sie die Drittanbieter-app.
+2. Suchen Sie auf der Seite **Meine Apps** nach der Drittanbieter-App.
 
 3. Zeigen Sie auf den App-Titel, klicken Sie auf die Schaltfläche **(...)** , und klicken Sie auf **Entfernen**.
 
-   ![Zeilen](media/service-power-bi-get-started-third-party-apps/remove.png)
+   ![Entfernen](media/service-power-bi-get-started-third-party-apps/remove.png)

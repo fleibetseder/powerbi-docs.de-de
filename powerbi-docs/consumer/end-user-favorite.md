@@ -3,23 +3,22 @@ title: Favoriten im Power BI-Dienst (Dashboards, Berichte, Apps)
 description: Dokumentation zum Festlegen von Dashboards, Berichten und Apps als Favoriten im Power BI-Dienst
 author: mihart
 manager: kvivek
-ms.custom: seodec18
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/28/2019
+ms.date: 09/19/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: c6da58ff5902a95c0e032cd4ed30a6ef0cae1e55
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: b61705051dfaba4eb2f8192daf170d5fb60bffd0
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "66374992"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141614"
 ---
-# <a name="favorite-dashboards-reports-and-apps-in-power-bi-service"></a>Bevorzugte Dashboards, Berichte und Apps im Power BI-Dienst
+# <a name="favorite-dashboards-reports-and-apps-in-the-power-bi-service"></a>Bevorzugte Dashboards, Berichte und Apps im Power BI-Dienst
 Wenn Sie Inhalte als *Favoriten* festlegen, können Sie schnell über die Inhaltsliste **Favoriten** oder über **Power BI Home** > **Favoriten und häufig aufgerufene Elemente** darauf zugreifen.  Als Favoriten werden in der Regel Elemente festgelegt, die Sie häufig aufrufen. Diese werden mit einem gelben Stern markiert.
 
    ![Symbol „Favorit“](./media/end-user-favorite/power-bi-favorite-nav.png)
@@ -32,9 +31,9 @@ Sie können im Power BI-Dienst auch ein einzelnes Dashboard als [ausgewähltes D
 
 1. Öffnen Sie ein Dashboard oder einen Bericht, das bzw. den Sie häufig verwenden. Auch Inhalte, die für Sie freigegeben wurden, können als *Favorit* festgelegt werden.
 
-2. Klicken Sie im Power BI-Dienst im oberen Menüband auf **Favorit** oder auf das ![Sternsymbol](./media/end-user-favorite/power-bi-favorite-icon.png).
+2. Klicken Sie im Power BI-Dienst in der oberen Menüleiste auf **Favorit** oder auf das ![Sternsymbol](./media/end-user-favorite/power-bi-favorite-icon.png).
    
-   ![Symbol „Favorit“](./media/end-user-favorite/powerbi-dashboard-favorite.png)
+   ![Symbol „Favorit“](./media/end-user-favorite/power-bi-favorite.png)
    
    Sie können ein Dashboard oder einen Bericht überall dort als Favorit festlegen, wo das Sternsymbol angezeigt wird, wie etwa auf den Seiten „Home“, „Zuletzt verwendet“, „Apps“ oder „Für mich freigegeben“. 
    
@@ -44,19 +43,19 @@ Sie können im Power BI-Dienst auch ein einzelnes Dashboard als [ausgewähltes D
 
 1. Wählen Sie im Navigationsbereich die Option **Apps** aus.
 
-   ![Dashboard](./media/end-user-favorite/power-bi-favorite-apps.png)
+   ![Dashboard](./media/end-user-favorite/power-bi-app.png)
 
 2. Zeigen Sie auf eine App, um weitere Details anzuzeigen.  Wählen Sie das Sternsymbol ![Sternsymbol](./media/end-user-favorite/power-bi-favorite-icon.png)  aus, um einen Favoriten festzulegen.
    
-   ![Zeigen Sie auf eine App](./media/end-user-favorite/power-bi-favorite-app.png)
+   ![Zeigen Sie auf eine App](./media/end-user-favorite/power-bi-hover-app.png)
 
 ## <a name="working-with-favorites"></a>Arbeiten mit *Favoriten*
-1. Wenn Sie auf die Favoriten zugreifen möchten, wählen Sie den Flyoutpfeil rechts neben **Favoriten** aus.  Hier können Sie einen Favoriten auswählen, um diesen zu öffnen. Es werden nur fünf Favoriten aufgeführt (in alphabetischer Reihenfolge). Wenn Sie mehr als fünf Favoriten festgelegt haben, klicken Sie auf **Alle anzeigen**, um die Inhaltsliste „Favoriten“ zu öffnen (siehe Schritt 2). 
+1. Wenn Sie auf die Favoriten zugreifen möchten, wählen Sie den Flyoutpfeil rechts neben **Favoriten** aus.  Hier können Sie einen Favoriten auswählen, um diesen zu öffnen. Es werden bis zu fünf Favoriten aufgeführt (in alphabetischer Reihenfolge). Wenn Sie mehr als fünf Favoriten festgelegt haben, klicken Sie auf **Alle anzeigen**, um die Inhaltsliste „Favoriten“ zu öffnen (siehe Schritt 2). 
    
    ![Flyout „Favoriten“](./media/end-user-favorite/power-bi-favorite-flyout.png)
 2. Klicken Sie zum Anzeigen **aller** als Favoriten hinzugefügten Inhalte im Navigationsbereich auf **Favoriten** oder auf das ![Sternsymbol](./media/end-user-favorite/power-bi-favorites-icon.png) für die Favoriten.  
    
-    ![Fenster „Favoriten“](./media/end-user-favorite/power-bi-favorites-screen.png)
+    ![Fenster „Favoriten“](./media/end-user-favorite/power-bi-fav-screen.png)
    
    Von hier aus können Sie diese öffnen, die Besitzer ermitteln und Ihre Favoriten sogar für Ihre Kollegen freigeben.
 
@@ -65,7 +64,7 @@ Sie verwenden einen Bericht nicht mehr so oft wie früher?  Sie können es aus d
 
 1. Wählen Sie im linken Navigationsbereich **Favoriten**, um den Bildschirm **Favoriten** zu öffnen.
    
-   ![Bildschirm „Favoriten“](./media/end-user-favorite/power-bi-unfavorites-screen.png)
+   ![Bildschirm „Favoriten“](./media/end-user-favorite/power-bi-un-favorite.png)
 2. Klicken Sie auf den gelben Stern neben dem Inhalt, um diesen als Favorit zu löschen.
 
 > [!NOTE]

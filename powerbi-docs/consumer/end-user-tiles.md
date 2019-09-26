@@ -4,24 +4,23 @@ description: Alle wichtigen Informationen über Dashboardkacheln in Power BI fü
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/05/2018
+ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 3a341dda238996db4953fa7c68d7053034ca40b8
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 7e6d10a7a06c94c6bc00b06d38194dde461720be
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61050133"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71142145"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Dashboardkacheln in Power BI
-Eine Kachel ist eine Momentaufnahme Ihrer Daten, die von einem *Designer* an das Dashboard geheftet wurde. Eine Kachel kann aus einem Bericht, einem Dataset, einem Dashboard, dem Q&A-Fragefeld, Excel, SSRS (SQL Server Reporting Services) und noch mehr erstellt werden.  Der Screenshot zeigt viele verschiedene Kacheln, die an ein Dashboard angeheftet sind.
+Eine Kachel ist eine Momentaufnahme Ihrer Daten, die von einem *Designer* an das Dashboard geheftet wurde. *Designer* können Kacheln aus einem Bericht, einem Dataset, einem Dashboard, dem Q&A-Fragefeld, Excel, SSRS (SQL Server Reporting Services) und noch mehr erstellen.  Der Screenshot zeigt viele verschiedene Kacheln, die an ein Dashboard angeheftet sind.
 
-![Power BI-Dashboard](./media/end-user-tiles/power-bi-dashboard.png)
+![Power BI-Dashboard](./media/end-user-tiles/power-bi-dash.png)
 
 
 Neben den Kacheln, die an das Dashboard geheftet werden, können *Designer* eigenständige Kacheln mit **Kachel hinzufügen** direkt zum Dashboard hinzufügen. Eigenständige Kacheln können Textfelder, Bilder, Videos, Streamingdaten und Webinhalte enthalten.
@@ -38,15 +37,15 @@ Benötigen Sie Hilfe, um die Grundkomponenten zu verstehen, aus denen Power BI b
 
     - Kachel, die mit Q&A erstellt wurde
    
-        ![Symbol „Auslassungspunkte“](./media/end-user-tiles/power-bi-menu1.png)
+        ![Symbol „Auslassungspunkte“](./media/end-user-tiles/power-bi-options-1.png)
 
     - Kachel, die aus einer Arbeitsmappe erstellt wurde
    
-        ![Symbol „Auslassungspunkte“](./media/end-user-tiles/power-bi-menu2.png)
+        ![Symbol „Auslassungspunkte“](./media/end-user-tiles/power-bi-options-2.png)
 
     - Kachel, die aus einem Bericht erstellt wurde
    
-        ![Symbol „Auslassungspunkte“](./media/end-user-tiles/power-bi-menu3.png)
+        ![Symbol „Auslassungspunkte“](./media/end-user-tiles/power-bi-options-3.png)
    
     Hier können Sie Folgendes tun:
    
@@ -56,9 +55,12 @@ Benötigen Sie Hilfe, um die Grundkomponenten zu verstehen, aus denen Power BI b
    
 
    * [Die Arbeitsmappe öffnen, mit der diese Kachel erstellt wurde](end-user-reports.md) ![Arbeitsmappensymbol](./media/end-user-tiles/power-bi-open-worksheet.png)  
-    * [Die Kachel im Fokusmodus anzeigen](end-user-focus.md) ![Fokussymbol](./media/end-user-tiles/fullscreen-icon.jpg)  
-     * [Einblicke ausführen ](end-user-insights.md) ![Symbol „Einblicke“](./media/end-user-tiles/power-bi-insights.png)
-    * [Einen Kommentar hinzufügen und eine Diskussion starten](end-user-comment.md) ![Kommentarsymbol](./media/end-user-tiles/comment-icons.png)
+   * [Die Kachel im Fokusmodus anzeigen](end-user-focus.md) ![Fokussymbol](./media/end-user-tiles/fullscreen-icon.jpg)  
+   * [Erkenntnisse anzeigen](end-user-insights.md) ![Erkenntnisse-Symbol](./media/end-user-tiles/power-bi-insights.png)
+   * [Einen Kommentar hinzufügen und eine Diskussion starten](end-user-comment.md) ![Kommentarsymbol](./media/end-user-tiles/comment-icons.png)
+   * [Verwalten von Warnungen für eine Dashboardkachel](end-user-alerts.md)  ![Warnsymbol](./media/end-user-tiles/power-bi-alert-icon.png)
+   * [Öffnen der Daten in Excel](end-user-export.md)  ![Exportsymbol](./media/end-user-tiles/power-bi-export-icon.png)
+
 
 3. Wählen Sie zum Schließen des Aktionsmenüs eine leere Fläche im Zeichenbereich aus.
 

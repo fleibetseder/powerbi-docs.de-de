@@ -13,7 +13,7 @@ ms.date: 08/10/2017
 LocalizationGroup: Data from databases
 ms.openlocfilehash: 51efec6c78dbb29b9c3dc760284c7bb3c8711bdc
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "64769937"
@@ -31,15 +31,15 @@ In Power BI gibt es zwei Möglichkeiten, die Verbindung mit einem SQL Server Ana
 
 1. Klicken Sie unter **Mein Arbeitsbereich** auf **Daten abrufen**. Sie können auch zu einem Gruppenarbeitsbereich wechseln, sofern verfügbar.
 
-   ![Herstellen einer Verbindung mit um Schaltfläche "Daten" zu erhalten.](media/sql-server-analysis-services-tabular-data/connecttoas_getdatabutton.png)
+   ![Mit Schaltfläche „Daten abrufen“ verbinden](media/sql-server-analysis-services-tabular-data/connecttoas_getdatabutton.png)
 
 2. Wählen Sie **Datenbanken und mehr** aus.
 
-   ![Herstellen einer Verbindung mit Daten 1](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_1.png)
+   ![Mit „Daten abrufen“ verbinden 1](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_1.png)
 
 3. Wählen Sie **SQL Server Analysis Services** > **Verbinden** aus.
 
-   ![Herstellen einer Verbindung mit Daten 2](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_2.png)
+   ![Mit „Daten abrufen“ verbinden 2](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_2.png)
 
 4. Wählen Sie einen Server aus. Wenn keine der hier aufgeführten Server angezeigt werden, wurde entweder kein Gateway und keine Datenquelle konfiguriert oder Ihr Konto ist nicht auf der Registerkarte **Benutzer** der Datenquelle im Gateway aufgeführt. Wenden Sie sich an Ihren Administrator.
 
@@ -47,7 +47,7 @@ In Power BI gibt es zwei Möglichkeiten, die Verbindung mit einem SQL Server Ana
 
 Nachdem Sie die Verbindung mit dem Modell hergestellt haben, wird es auf der Power BI-Website unter **Mein Arbeitsbereich/Datasets**angezeigt. Bei einem Wechsel zu einem Gruppenarbeitsbereich wird das Dataset in der Gruppe angezeigt.
 
-![Eine Verbindung mit Datasets herstellen](media/sql-server-analysis-services-tabular-data/connecttoas_dataset_5.png)
+![Verbinden mit einem Dataset](media/sql-server-analysis-services-tabular-data/connecttoas_dataset_5.png)
 
 ## <a name="dashboard-tiles"></a>Dashboardkacheln
 

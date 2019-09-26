@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: overview
-ms.date: 05/08/2019
+ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 711e0252cddcc78437e03a82d91c67441cfc3a55
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 575d66ad6bb10a4e7faa90f5f658e86115402400
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513517"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141971"
 ---
 # <a name="what-is-power-bi-desktop"></a>Was ist Power BI Desktop?
 
@@ -32,6 +32,16 @@ Im Folgenden finden Sie die häufigsten Verwendungsmöglichkeiten für **Power B
 * Freigeben von Berichten für andere Personen über den **Power BI-Dienst**
 
 Personen, die für solche Aufgaben zuständig sind, werden häufig als *Datenanalysten* (bzw. einfach *Analysten*) oder als Business Intelligence-Experten (oder *Berichtersteller*) bezeichnet. Allerdings arbeiten auch viele Menschen, die sich selbst nicht als Analysten oder Berichtersteller betrachten, mit **Power BI Desktop**, um überzeugende Berichts zu erstellen oder Daten aus verschiedenen Quellen abzurufen und Datenmodelle zu erstellen, die sie für Kollegen und Organisationen freigeben können.
+
+Es gibt drei Ansichten in Power BI Desktop, die entlang der linken Seite des Zeichenbereichs angezeigt werden. Die Ansichten, die in der Reihenfolge der Darstellung beschrieben werden, sind die folgenden:
+* **Berichtsansicht**: Hier erstellen Sie Berichte und visuelle Elemente, und hier wenden Sie den größten Teil ihrer Erstellungszeit auf.
+* **Datenansicht**: Hier werden die Tabellen, Measures und sonstigen Daten angezeigt, die in dem mit dem Bericht verknüpften Datenmodell verwendet werden, und hier werden die Daten für die optimale Nutzung im Modell des Berichts transformiert.
+* **Modellansicht**: In dieser Ansicht können Sie die Beziehungen zwischen den Tabellen in Ihrem Datenmodell anzeigen und verwalten.
+
+Die folgende Abbildung zeigt die drei Ansichten, wie sie links neben der Zeichenfläche angezeigt werden:
+
+![verschiedene Ansichten](media/desktop-what-is-desktop/what-is-desktop-07.png)
+
 
 Mit **Power BI Desktop** können Sie komplexe visuell aufbereitete Berichte erstellen und dabei Daten aus mehreren Quellen in einem Bericht zusammenstellen, den Sie dann für andere Personen in Ihrer Organisation freigeben. 
 

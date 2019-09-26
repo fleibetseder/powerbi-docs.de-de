@@ -12,13 +12,13 @@ ms.author: davidi
 LocalizationGroup: Get started
 ms.openlocfilehash: 28b77cfeda1f84f3643216dba45bef40bd6441ff
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513244"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Registrieren einer US-Behörde für den Power BI-Dienst
-Für den **Power BI-Dienst** ist im Rahmen von **Office 365 US Government Community**-Abonnements eine Version für Kunden verfügbar, die Angehörige von US-Behörden sind. Die **Power BI-Dienst** in diesem Artikel vorgestellte Version ist für US Government-Kunden vorgesehen, und ist unabhängig und sich von der kommerziellen Version des der **Power BI-Dienst**.
+Für den **Power BI-Dienst** ist im Rahmen von **Office 365 US Government Community**-Abonnements eine Version für Kunden verfügbar, die Angehörige von US-Behörden sind. Die in diesem Artikel vorgestellte Version des **Power BI-Diensts** ist für Angehörige von US-Behörden konzipiert. Es handelt sich hierbei um ein separates und von der kommerziellen Version des **Power BI-Diensts** abweichendes Produkt.
 
 Weitere Informationen zum **Power BI-Dienst** für US-Behörden, u.a. zu Funktionen und Einschränkungen, finden Sie unter [Power BI für Angehörige von US-Behörden – Übersicht](service-govus-overview.md).
 
@@ -58,7 +58,7 @@ Wenn Ihre Organisation bereits **Office Government Cloud**-Kunde ist, aber noch 
 > 
 > 
 
-1. Melden Sie sich mit Ihrem vorhandenen Office Government Cloud-Konto, und wechseln Sie zum Verwaltungsportal
+1. Melden Sie sich mit Ihrem vorhandenen Office Government Cloud-Konto an, und navigieren Sie zum Verwaltungsportal
 2. Wählen Sie **Abrechnung** aus.
 3. Wählen Sie **Dienst kaufen** aus.
 4. Wählen Sie die Power BI Pro Government-Option aus, und entscheiden Sie sich für **Try** (Testen) oder **Buy Now** (Jetzt kaufen)
@@ -66,7 +66,7 @@ Wenn Ihre Organisation bereits **Office Government Cloud**-Kunde ist, aber noch 
 6. Weisen Sie dem Konto Benutzer zu.
    
    ![](media/service-govus-signup/service_govus_signup_5.png)
-7. Melden Sie sich bei der **Power BI-Dienst** für US Government-Kunde [https://app.powerbigov.us](https://app.powerbigov.us)
+7. Melden Sie sich beim **Power BI-Dienst** für Kunden bei US-Behörden unter [https://app.powerbigov.us](https://app.powerbigov.us) an.
 
 ## <a name="additional-signup-information"></a>Zusätzliche Registrierungsinformationen
 Im Folgenden sind die zusätzlichen Informationen zum Registrieren für **Power BI US Government** in diversen Lizenzmigrationsfällen aufgeführt.
@@ -75,7 +75,7 @@ Im Folgenden sind die zusätzlichen Informationen zum Registrieren für **Power 
 * Klicken Sie auf „Abrechnung > Dienst kaufen > Power BI Pro Gov“, befolgen Sie die Anweisungen, und wählen Sie „Erwerben“ anstelle von „Testversion“ aus.
 * Geben Sie erforderlichen Informationen ein, und rufen Sie die Lizenzen ab.
 * Entfernen Sie die Power BI Pro-Testversion, oder entfernen Sie die alten Lizenzen, und weisen Sie den Benutzern die neuen Lizenzen zu.
-* Melden Sie sich beim [https://app.powerbigov.us](https://app.powerbigov.us)
+* Melden Sie sich bei [https://app.powerbigov.us](https://app.powerbigov.us) an
 
 ### <a name="reseller-power-bi-trial-to-pro-customer-onboarding"></a>Onboarding von der Power BI-Testversion für Wiederverkäufer auf einen Pro-Kunden
 Wechseln Sie zu **Abrechnung > Abonnements**, und wählen Sie das Abonnement **Power BI Pro for Government**. Dort wird Folgendes angezeigt:
@@ -90,14 +90,14 @@ Wechseln Sie zu **Abrechnung > Abonnements**, und wählen Sie das Abonnement **P
 ### <a name="whitelisting-instructions"></a>Anweisungen zum Aufnehmen in die Whitelist
 Das *Aufnehmen in die Whitelist* ist ein Prozess, bei dem das Power BI-Technikerteam Kunden aus der Umgebung der kommerziellen Cloud in die sichere Umgebung der Cloud für Behörden verschieben. Dadurch wird sichergestellt, dass die in der Cloud für die US-Regierung verfügbaren Funktionen erwartungsgemäß funktionieren. Alle vorhandenen (oder neuen) US-Behördenkunden, die erstmalig **Power BI**-Dienste für US-Behörden erwerben, *müssen* den folgenden Prozess zum Aufnehmen in die Whitelist befolgen. Der Prozess muss vor der Einrichtung von bzw. Migration auf **Power BI**-Dienste für US-Behörden ausgeführt werden. 
 
-Damit Ihr Mandant *in der Whitelist* für die US Government-Cloud, wenden Sie sich an den Microsoft-Kundenbetreuer, um Unterstützung zu erhalten, mit dem aufnehmen in die Whitelist. Nur Administratoren können diese Anforderung erstellen. Der Vorgang für die *Aufnahme in die Whitelist* dauert ungefähr drei Wochen. Während dieser Zeit nimmt das Power BI-Technikteam entsprechende Änderungen vor, um sicherzustellen, dass Ihr Mandant ordnungsgemäß in der Cloud für US-Behörden arbeitet.
+Damit Ihr Mandant *in die Whitelist* der Cloud für US-Behörden aufgenommen wird, wenden Sie sich an das Microsoft-Kontoteam zur Unterstützung bei der Aufnahme in die Whitelist. Nur Administratoren können diese Anforderung erstellen. Der Vorgang für die *Aufnahme in die Whitelist* dauert ungefähr drei Wochen. Während dieser Zeit nimmt das Power BI-Technikteam entsprechende Änderungen vor, um sicherzustellen, dass Ihr Mandant ordnungsgemäß in der Cloud für US-Behörden arbeitet.
 
 Bei Kunden, die von **Free**-Power BI-Lizenzen zu **Power BI US Government** migrieren (und damit definitionsgemäß zu den zugehörigen Features der **Pro**-Lizenz, die weiter oben im Artikel beschrieben sind), werden die im folgenden Abschnitt dieses Artikels beschriebenen Probleme auftreten, bis ihr Mandant durch das Power BI-Technikteam in die *Whitelist aufgenommen* wurde.
 
 ### <a name="mixed-free-and-pro-licenses-in-us-government-tenants"></a>Kombinierte Free- und Pro-Lizenzen bei Mandanten von US-Behörden
 Wenn Sie in Ihrem Mandanten sowohl Free- als auch Pro-Lizenzen für US-Behörden verwenden, werden diese beiden Lizenzen beibehalten, aber mindestens einer der Lizenztypen wird nicht ordnungsgemäß funktionieren. Wenn Ihr Mandant erfolgreich in die *Whitelist aufgenommen* wurde, geschieht Folgendes:
 
-* Alle Benutzer der Free-Lizenz werden nicht mehr in der Lage, zur Anmeldung beim Power BI mit **Power BI Desktop**, und es treten Funktionslücken, die im folgenden Abschnitt beschrieben.
+* Alle Benutzer der Free-Lizenz können sich nicht mehr über **Power BI Desktop** bei Power BI anmelden, und es treten Funktionslücken auf, wie im folgenden Abschnitt beschrieben.
 * Alle Clients, die US Government Pro-Lizenzen zugewiesen sind, werden wie erwartet funktionieren, einschließlich der Verwendung von Gateways, Power BI Desktop und mobile Apps.
 
 Bei Verwendung einer Kombination von Free- und Pro-Lizenzen in einem Mandanten für US-Behörden und Durchlaufen des Prozesses für die *Aufnahme in die Whitelist*, kann Folgendes erwartet werden:

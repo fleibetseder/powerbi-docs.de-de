@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: 567beb29ecdcaf8a07023c8c8c9b32995623534c
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454461"
@@ -28,7 +28,7 @@ Sehen Sie sich nun einige der Elemente in der **Datenansicht** näher an.
 
 1. **Symbol für die Datenansicht:** Mit einem Klick auf dieses Symbol gelangen Sie zur Datenansicht zurück.
 
-2. **Datenraster:** Zeigt die ausgewählte Tabelle und alle darin enthaltenen Spalten und Zeilen an. Spalten, die aus der **Berichtsansicht** ausgeblendet sind, sind ausgegraut. Sie können für eine Spalte für Optionen mit der rechten Maustaste.
+2. **Datenraster:** Zeigt die ausgewählte Tabelle und alle darin enthaltenen Spalten und Zeilen an. Spalten, die aus der **Berichtsansicht** ausgeblendet sind, sind ausgegraut. Sie können mit der rechten Maustaste auf eine Spalte klicken, um Optionen anzuzeigen.
 
 3. **Menüband „Modellierung“:** Hier können Sie Beziehungen verwalten, Berechnungen erstellen und den Datentyp, das Format und die Datenkategorie für eine Spalte ändern.
 

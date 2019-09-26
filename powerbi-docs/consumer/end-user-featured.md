@@ -5,21 +5,20 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/14/2019
+ms.date: 09/14/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7222f13d5ee4f25d7d55655bb5a7e5f2f28c77d4
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 5251bf34d7467c2727cdac83c6f6f9faf59aa888
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65608688"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141278"
 ---
-# <a name="featured-dashboards-in-power-bi-service"></a>Ausgewählte Dashboards im Power BI-Dienst
+# <a name="featured-dashboards-in-the-power-bi-service"></a>Ausgewählte Dashboards im Power BI-Dienst
 ## <a name="create-a-featured-dashboard"></a>Erstellen eines ausgewählten Dashboards
 Viele Benutzer haben ein bevorzugtes Dashboard.  Dies kann das Dashboard sein, mit dem Sie Ihr Unternehmen verwalten, oder ein Dashboard mit einer Aggregation von Kacheln aus unterschiedlichen Dashboards und Berichten.
 
@@ -52,7 +51,7 @@ Selbstverständlich können Sie später jederzeit ein neues Dashboard als ausgew
 1. Führen Sie die obigen Schritte 1 und 2 aus.
    
     ![Fenster „Ausgewähltes Dashboard ändern“](./media/end-user-featured/power-bi-change-feature.png)
-2. Wählen Sie **Als ausgewähltes festlegen**. Wenn das Dashboard nicht mehr als „ausgewählt“ festgelegt ist, bleibt es trotzdem in Ihrem Arbeitsbereich erhalten.  
+2. Wählen Sie **Als ausgewähltes festlegen**. Wenn das Dashboard nicht mehr als „ausgewählt“ festgelegt ist, bleibt es trotzdem in Power BI erhalten.  
    
     ![Erfolgsmeldung](./media/end-user-featured/power-bi-unfeature-new.png)
 

@@ -13,7 +13,7 @@ ms.author: maggies
 LocalizationGroup: Get started
 ms.openlocfilehash: ff962335b573c6dd2a03ae5ab4633c1042a77059
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "64770779"
@@ -50,16 +50,16 @@ Die vier wichtigsten Grundkomponenten von Power BI sind: **_Dashboards_** , **_B
 Arbeitsbereiche sind Container für Dashboards, Berichte, Arbeitsmappen und Datasets in Power BI. Es gibt zwei Typen von Arbeitsbereichen: *Mein Arbeitsbereich* und *App-Arbeitsbereiche*. Was genau ist eine *App*? Eine Power BI-*App* ist eine Sammlung von Dashboards und Berichten, die erstellt wurden, um Schlüsselmetriken für die Power BI-Endbenutzer Ihrer Organisation bereitzustellen. Apps sind interaktiv, können von Endbenutzern aber nicht bearbeitet werden.
 
 - *Mein Arbeitsbereich* ist der persönliche Arbeitsbereich jedes Power BI-Kunden, in dem Sie Ihre eigenen Inhalte bearbeiten. Nur Sie haben Zugriff auf Ihren „Mein Arbeitsbereich“. Sie können Dashboards und Berichte von Ihrem Arbeitsbereich aus freigeben. Wenn Sie in Dashboards und Berichte mit anderen Personen zusammenarbeiten oder eine App erstellen möchten, sollten Sie einen App-Arbeitsbereich verwenden.      
--  *App-Arbeitsbereiche* werden für die Zusammenarbeit und die Freigabe von Inhalten für Kollegen verwendet. Darüber sind hinaus werden hier Apps für Ihre Organisation erstellt, veröffentlicht und verwaltet. Betrachten Sie sie als eine Art Bereitstellungsraum und Container für Ihre Inhalte, die eine Power BI-App bilden. Sie können Ihren App-Arbeitsbereichen Kollegen hinzufügen und gemeinsam an Dashboards, Berichten, Arbeitsmappen und Datasets arbeiten. Alle Mitglieder des app-Arbeitsbereichs benötigen Power BI Pro-Lizenzen. App-Benutzer, die Kollegen, die Zugriff auf die apps, unbedingt nicht, dass Pro-Lizenzen. Erfahren Sie mehr über die [neue Arbeitsbereiche](service-create-the-new-workspaces.md).  
+-  *App-Arbeitsbereiche* werden für die Zusammenarbeit und die Freigabe von Inhalten für Kollegen verwendet. Darüber sind hinaus werden hier Apps für Ihre Organisation erstellt, veröffentlicht und verwaltet. Betrachten Sie sie als eine Art Bereitstellungsraum und Container für Ihre Inhalte, die eine Power BI-App bilden. Sie können Ihren App-Arbeitsbereichen Kollegen hinzufügen und gemeinsam an Dashboards, Berichten, Arbeitsmappen und Datasets arbeiten. Alle Mitglieder von App-Arbeitsbereichen benötigen Power BI Pro-Lizenzen. Für App-Anwender, also die Kollegen, die Zugriff auf die Apps haben, sind Pro-Lizenzen jedoch nicht zwingend erforderlich. Weitere Informationen zu den [neuen Arbeitsbereichen](service-create-the-new-workspaces.md).  
 
-Weitere Informationen zum Freigeben von in der Regel beginnen Sie mit [Möglichkeiten, Dashboards Freigeben Ihrer Arbeit](service-how-to-collaborate-distribute-dashboards-reports.md).
+Um mehr über Teilen im Allgemeinen zu erfahren, beginnen Sie mit [Wege zum Teilen Ihrer Arbeit mit Dashboards](service-how-to-collaborate-distribute-dashboards-reports.md).
 
 Nun zu den Grundkomponenten von Power BI. Sie können keine Dashboards oder Berichte ohne Daten erstellen (es können zwar leere Dashboards und Berichte verwendet werden, diese wären jedoch nicht nützlich). Beginnen wir also mit **Datasets**.
 
 ## <a name="datasets"></a>Datasets
 Ein *Dataset* ist eine Sammlung von Daten, die Sie *importieren* oder mit denen Sie eine *Verbindung herstellen*. In Power BI können Sie Verbindungen mit allen Arten von Datasets herstellen, sie importieren und zentral anordnen.  
 
-Datasets sind *Arbeitsbereichen* zugeordnet, und ein einzelnes Dataset kann Teil mehrerer Arbeitsbereiche sein. Wenn Sie einen Arbeitsbereich öffnen, werden die zugeordneten Datasets auf der Registerkarte **Datasets** aufgeführt. Jedes aufgelistete Dataset stellt eine einzelne Datenquelle dar, z. B. eine Excel-Arbeitsmappe auf OneDrive oder ein lokales tabellarisches SSAS-Dataset oder ein Salesforce-Dataset. Es werden viele verschiedene Datenquellen unterstützt, zu denen beständig neue Datenquellen hinzugefügt werden. Die Liste der [Dataset-Typen, mit denen Sie mit Power BI](service-get-data.md).
+Datasets sind *Arbeitsbereichen* zugeordnet, und ein einzelnes Dataset kann Teil mehrerer Arbeitsbereiche sein. Wenn Sie einen Arbeitsbereich öffnen, werden die zugeordneten Datasets auf der Registerkarte **Datasets** aufgeführt. Jedes aufgelistete Dataset stellt eine einzelne Datenquelle dar, z. B. eine Excel-Arbeitsmappe auf OneDrive oder ein lokales tabellarisches SSAS-Dataset oder ein Salesforce-Dataset. Es werden viele verschiedene Datenquellen unterstützt, zu denen beständig neue Datenquellen hinzugefügt werden. Mehr dazu finden Sie in der Liste der [Datasettypen, die mit Power BI verwendet werden können](service-get-data.md).
 
 Im folgenden Beispiel ist die App „Vertrieb und Marketing“ ausgewählt, und es wurde auf die Registerkarte **Datasets** geklickt.
 
@@ -75,7 +75,7 @@ Im folgenden Beispiel ist die App „Vertrieb und Marketing“ ausgewählt, und 
 
 Wählen Sie am unteren Rand der linken Navigationsleiste **Daten abrufen** aus, um die [Verbindung mit einem Dataset herzustellen oder es zu importieren](service-get-data.md). Befolgen Sie die Anweisungen zum Herstellen einer Verbindung mit der jeweiligen Quelle bzw. zum Importieren, und fügen Sie das Dataset dem aktiven Arbeitsbereich hinzu. Neue Datasets werden mit einem gelben Sternchen markiert. Das zugrunde liegende Dataset wird durch Ihre Arbeit in Power BI nicht verändert.
 
-Datasets, die von einem Arbeitsbereichsmitglied hinzugefügt stehen die anderen Mitglieder des Arbeitsbereichs mit einem *Admin*, *Member*, oder *"Mitwirkender"* Rolle.
+Datasets, die von einem Arbeitsbereichsmitglied hinzugefügt wurden, sind für die anderen Arbeitsbereichsmitglieder mit den Rollen *Administrator*, *Mitglied* oder *Mitwirkender* verfügbar.
 
 Datasets können aktualisiert, umbenannt, untersucht und entfernt werden. Verwenden Sie ein Dataset, um einen völlig neuen Bericht zu erstellen, oder führen Sie [Schnelleinblicke](service-insights.md) aus.  Wählen Sie **Verwandte Inhalte anzeigen**, um zu erfahren, welche Berichte und Dashboards ein Dataset bereits verwenden. Wählen Sie ein Dataset aus, um es zu untersuchen. Tatsächlich öffnen Sie das Dataset im Berichts-Editor, wo Sie beginnen können, die Daten zu untersuchen und Visualisierungen zu erstellen. Fahren wir also mit dem nächsten Thema fort – Berichte.
 
@@ -85,31 +85,31 @@ Datasets können aktualisiert, umbenannt, untersucht und entfernt werden. Verwen
 * [Beispieldatasets für Power BI](sample-datasets.md)
 
 ## <a name="reports"></a>Berichte
-Ein Power BI-Bericht besteht aus mindestens einer Seite mit Visualisierungen, wie z. B. Liniendiagrammen, Maps und Treemaps. Visualisierungen werden auch als **_visuelle Elemente oder Visuals_** bezeichnet. Alle Visualisierungen in einem Bericht stammen aus einem einzelnen Dataset. Sie können Berichte von Grund auf neu in Power BI erstellen, importieren Sie sie mit Dashboards, die Kollegen für Sie freigeben oder Power BI können zu erstellen, wenn Sie mit Datasets aus Excel, Power BI Desktop, Datenbanken und SaaS-Anwendungen eine Verbindung herstellen.  Wenn Sie z. B. eine Verbindung mit einer Excel-Arbeitsmappe herstellen, die Power View-Tabellen enthält, dann erstellt Power BI einen Bericht auf Basis dieser Tabellen. Und wenn Sie eine Verbindung mit einer SaaS-Anwendung herstellen, wird ein vorgefertigter Bericht von Power BI importiert.
+Ein Power BI-Bericht besteht aus mindestens einer Seite mit Visualisierungen, wie z. B. Liniendiagrammen, Maps und Treemaps. Visualisierungen werden auch als **_visuelle Elemente oder Visuals_** bezeichnet. Alle Visualisierungen in einem Bericht stammen aus einem einzelnen Dataset. Sie können Berichte in Power BI von Grund auf neu erstellen oder sie mithilfe von Dashboards importieren, die Kollegen mit Ihnen teilen. Außerdem kann Power BI sie erstellen, wenn Sie Verbindungen mit Datasets aus Excel, Power BI Desktop, Datenbanken und SaaS-Anwendungen herstellen.  Wenn Sie z. B. eine Verbindung mit einer Excel-Arbeitsmappe herstellen, die Power View-Tabellen enthält, dann erstellt Power BI einen Bericht auf Basis dieser Tabellen. Und wenn Sie eine Verbindung mit einer SaaS-Anwendung herstellen, wird ein vorgefertigter Bericht von Power BI importiert.
 
-Es gibt zwei Modi, um Berichte anzuzeigen und mit ihnen zu interagieren: *"Leseansicht"* und *Bearbeitungsansicht*. Wenn Sie einen Bericht öffnen, wird es in der Leseansicht geöffnet. Wenn Sie über Bearbeitungsberechtigungen verfügen, und Sie sehen dann **Bericht bearbeiten** in der oberen linken Ecke, und Sie können den Bericht anzuzeigen, in der Bearbeitungsansicht.  Ist ein Bericht in einem Arbeitsbereich, alle Benutzer mit einem *Admin*, *Member*, oder *"Mitwirkender"* Rolle bearbeiten kann. Sie haben Zugriff auf alle untersuchungs-, entwerfen, erstellen und Freigabefunktionen in der Bearbeitungsansicht anzeigen, für diesen Bericht. Die Personen, denen sie den Bericht mit Teilen können untersuchen und mit den Bericht in der Leseansicht interagieren.   
+Es gibt zwei Modi, um Berichte anzuzeigen und mit ihnen zu interagieren: *Leseansicht* und *Bearbeitungsansicht*. Wenn Sie einen Bericht öffnen, wird er in der Leseansicht geöffnet. Wenn Sie über Bearbeitungsberechtigungen verfügen, wird in der oberen linken Ecke **Bericht bearbeiten** angezeigt, und Sie können den Bericht in der Bearbeitungsansicht anzeigen.  Wenn sich ein Bericht in einem Arbeitsbereich befindet, kann ihn jeder Inhaber der Rollen *Administrator*, *Mitglied* oder *Mitwirkender* bearbeiten. Sie haben Zugriff auf alle Funktionen zum Untersuchen, Entwerfen, Erstellen und Teilen der Bearbeitungsansicht für den betreffenden Bericht. Die Personen, mit denen sie den Bericht teilen, können den Bericht in der Leseansicht untersuchen und mit ihm interagieren.   
 
 Wenn Sie einen Arbeitsbereich öffnen, werden die zugeordneten Berichte auf der Registerkarte **Berichte** aufgeführt. Jeder aufgeführte Bericht stellt mindestens eine Seite mit Visualisierungen dar, die auf nur einem der zugrunde liegenden Datasets basieren. Wählen Sie einen Bericht aus, um ihn zu öffnen.
 
-Wenn Sie eine app öffnen, sind Sie ein Dashboard angezeigt.  Wählen Sie eine Dashboardkachel (siehe weiter unten) aus, die aus einem Bericht angeheftet wurde, um auf den zugrunde liegenden Bericht zuzugreifen. Beachten Sie, dass nicht alle Kacheln aus Berichten angeheftet werden, möglicherweise müssen Sie also einige Kacheln durchprobieren, bis Sie den gesuchten Bericht finden.
+Wenn Sie eine App öffnen, wird ein Dashboard angezeigt.  Wählen Sie eine Dashboardkachel (siehe weiter unten) aus, die aus einem Bericht angeheftet wurde, um auf den zugrunde liegenden Bericht zuzugreifen. Beachten Sie, dass nicht alle Kacheln aus Berichten angeheftet werden, möglicherweise müssen Sie also einige Kacheln durchprobieren, bis Sie den gesuchten Bericht finden.
 
 Der Bericht wird standardmäßig in der Leseansicht geöffnet.  Wählen Sie einfach **Bericht bearbeiten** aus, um den Bericht in der Bearbeitungsansicht zu öffnen (falls Sie über die erforderlichen Berechtigungen verfügen).
 
-Im folgenden Beispiel, ich app "Vertrieb und marketing" ausgewählt, und klicken Sie auf der Registerkarte für **Berichte**.
+Im folgenden Beispiel ist der App-Arbeitsbereich „Vertrieb und Marketing“ ausgewählt, und es wurde auf die Registerkarte **Berichte** geklickt.
 
 ![Ausgewählte Berichte](media/service-basic-concepts/power-bi-reports.png)
 
 **EIN** Bericht...
 
 * ist in einem einzelnen Arbeitsbereich enthalten.
-* kann mehreren Dashboards in diesem Arbeitsbereich zugeordnet sein. Kacheln angeheftet aus, dass ein Bericht auf mehrere Dashboards angezeigt werden kann.
-* kann mithilfe der Daten aus einem Dataset erstellt werden. Power BI Desktop können mehr als eine Datenquelle in einem einzelnen Dataset in einem Bericht zusammenfassen und der Bericht in Power BI importiert werden kann.
+* kann mehreren Dashboards innerhalb des gleichen Arbeitsbereichs zugeordnet werden. Angeheftete Kacheln aus diesem einen Bericht können auf mehreren Dashboards vorkommen.
+* kann mithilfe der Daten aus einem Dataset erstellt werden. Power BI Desktop kann mehrere Datasets zu einem einzelnen Bericht zusammenfassen, der seinerseits in Power BI importiert werden kann.
 
   ![Diagramm der Berichte](media/service-basic-concepts/drawing3new.png)
 
 ### <a name="dig-deeper"></a>Weiterführende Themen
 - [Erstellen eines Berichts im Power BI-Dienst durch Importieren eines Datasets](service-report-create-new.md)
-- [Berichtsoptimierung für den mobilen Power BI-apps](desktop-create-phone-report.md)
+- [Optimieren von Berichten für die mobilen Power BI-Apps](desktop-create-phone-report.md)
 
 ## <a name="dashboards"></a>Dashboards
 Ein *Dashboard* ist ein von Ihnen **im Power BI-Dienst** oder von einem Kollegen **im Power BI-Dienst** erstelltes Objekt, das für Sie freigegeben wurde. Es handelt sich um einen einzelnen Zeichenbereich, der keine, eine oder mehrere Kacheln und Widgets enthält. Jede aus einem Bericht oder aus [Q&A](power-bi-q-and-a.md) angeheftete Kachel zeigt eine einzelne [Visualisierung](power-bi-report-visualizations.md) an, die aus einem Dataset erstellt wurde und an das Dashboard angeheftet ist. Gesamte Berichtsseiten können ebenfalls als einzelne Kachel an ein Dashboard angeheftet werden. Es gibt viele Möglichkeiten, dem Dashboard Kacheln hinzuzufügen – zu viele, um sie in diesem Übersichtsthema zu behandeln. Weitere Informationen finden Sie unter [Dashboardkacheln in Power BI](service-dashboard-tiles.md).
@@ -136,7 +136,7 @@ Es gibt viele verschiedene Möglichkeiten, wie Sie oder ein Kollege [ein Dashboa
   ![Ausgewähltes Dashboard](media/service-basic-concepts/drawing1.png)
 
 ### <a name="dig-deeper"></a>Weiterführende Themen
-* [Erstellen Sie ein leeres Dashboard, und rufen Sie anschließend einige Daten](service-dashboard-create.md) .
+* [Erstellen eines leeren Dashboards und Abrufen von Daten](service-dashboard-create.md)
 * [Duplizieren eines Dashboards](service-dashboard-copy.md)
 * [Erstellen einer Telefonansicht eines Dashboards](service-create-dashboard-mobile-phone-view.md)
 

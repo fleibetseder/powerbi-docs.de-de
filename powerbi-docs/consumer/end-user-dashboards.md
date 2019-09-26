@@ -3,20 +3,19 @@ title: Was ist ein Dashboard, und wie öffne ich es?
 description: Dashboards sind ein zentrales Feature des Power BI-Diensts.
 author: mihart
 manager: kvivek
-ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/12/2019
+ms.date: 09/12/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 81987b864224b6afd254a3bffe17ecbb019198d0
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: cad6aeeb156534052241d5183a575b222736230a
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65608335"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141920"
 ---
 # <a name="dashboards-for-power-bi-service-consumers"></a>Dashboard für Benutzer des Power BI-Diensts
 
@@ -54,8 +53,8 @@ Als Zeichenbereiche, die ebenfalls Visualisierungen enthalten, werden Berichte g
 | Zugrunde liegende Dataset-Tabellen und Felder sichtbar |Nein. Exportieren von Daten, aber Tabellen und Felder im Dashboard nicht sichtbar |Ja. Tabellen, Felder und Werte des Datasets sichtbar |
 
 
-## <a name="dashboard-creators-and-dashboard-consumers"></a>Ersteller und Anwender von Dashboards
-Als ein Power BI-***Kunden*** erhalten Sie Dashboards von *Erstellern*. In diesen Themen erhalten Sie weitere Informationen zu Dashboards:
+## <a name="dashboard-designers-and-dashboard-consumers"></a>Designer und Anwender von Dashboards
+Als ein Power BI-***Nutzer*** erhalten Sie Dashboards von *Designern*. In diesen Themen erhalten Sie weitere Informationen zu Dashboards:
 
 * [Anzeigen eines Dashboards](end-user-dashboard-open.md)
 * Informieren Sie sich über [Dashboardkacheln](end-user-tiles.md), und erfahren Sie, wie Sie damit interagieren.

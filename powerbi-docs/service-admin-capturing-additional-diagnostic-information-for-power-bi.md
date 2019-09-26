@@ -13,48 +13,48 @@ ms.custom: seodec18
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: 710fb4cdcf9efb051434966d47c2eaced17ac9ba
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65100230"
 ---
 # <a name="capture-additional-diagnostic-information-for-power-bi"></a>Erfassen von zusätzlichen Diagnoseinformationen für Power BI
 
-Dieser Artikel enthält Anweisungen für die manuelle Erfassung von zusätzlichen Diagnoseinformationen aus dem Power BI-Web-Client.
+Dieser Artikel enthält Anweisungen für die manuelle Erfassung von zusätzlichen Diagnoseinformationen aus dem Webclient von Power BI.
 
-1. Navigieren Sie zu [Power BI](https://app.powerbi.com) mit Microsoft Edge oder InternetExplorer.
+1. Navigieren Sie mit Microsoft Edge oder Internet Explorer zu [Power BI](https://app.powerbi.com).
 
-1. Drücken Sie **F12** zu den Microsoft Edge-Entwicklertools zu öffnen.
+1. Drücken Sie **F12**, um die Microsoft Edge-Entwicklertools zu öffnen.
 
-   ![Screenshot des Microsoft Edge-Entwickler-Tools-Elemente-Registerkarte.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-developer-tools.png)
+   ![Screenshot der Registerkarte „Elemente“ der Microsoft Edge-Entwicklertools.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-developer-tools.png)
 
 1. Wählen Sie die Registerkarte **Network** (Netzwerk) aus. Es wird der Datenverkehr aufgelistet, der bereits erfasst wurde.
 
-   ![Screenshot des Microsoft Edge-Entwickler-Tools-Registerkarte ("Netzwerk".](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab.png)
+   ![Screenshot der Registerkarte „Netzwerk“ der Microsoft Edge-Entwicklertools.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab.png)
 
     Sie können:
 
-    * Navigieren Sie im Fenster, und reproduzieren Sie ggf. vorhandene Probleme, die Sie möglicherweise stoßen.
+    * Im Fenster browsen und jedes eventuell auftretende Problem reproduzieren.
 
-    * Ausblenden und Anzeigen des Entwicklers Fenster zu einem beliebigen Zeitpunkt während der Sitzung durch Drücken von F12.
+    * Das Entwicklertoolsfenster während der Sitzung jederzeit durch Drücken von F12 aus- und einblenden.
 
-1. Sie können das rote Quadrat auf auswählen, um die Profilerstellungssitzung zu beenden, die **Netzwerk** Registerkarte des Entwicklers tools Bereich.
+1. Zum Beenden der Profilerstellungssitzung das rote Quadrat auf der Registerkarte **Netzwerk** im Entwicklertoolbereich auswählen.
 
-   ![Screenshot des Microsoft Edge Developer Tools Registerkarte "Netzwerk" mit einem Aufruf aus der Schaltfläche "Beenden".](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-stop.png)
+   ![Screenshot der Registerkarte „Netzwerk“ der Microsoft Edge-Entwicklertools mit einer Legende zur Schaltfläche „Stop“.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-stop.png)
 
-1. Wählen Sie das Diskettensymbol, um die Daten als HTTP-Archiv (HAR)-Datei zu exportieren.
+1. Wählen Sie das Diskettensymbol aus, um die Daten als HTTP-Archivdatei (HAR) zu exportieren.
 
-   ![Screenshot des Microsoft Edge Developer Tools Registerkarte "Netzwerk" in einer Legende aus, der das Diskettensymbol.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-save.png)
+   ![Screenshot der Registerkarte „Netzwerk“ der Microsoft Edge-Entwicklertools mit einer Legende zum Diskettensymbol.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-save.png)
 
 1. Geben Sie einen Dateinamen ein, und speichern Sie die HAR-Datei.
 
-    Die HAR-Datei enthält alle Informationen über netzwerkanforderungen zwischen dem Browserfenster und Power BI einschließlich:
+    Die HAR-Datei enthält alle Informationen über Netzwerkanforderungen zwischen dem Browserfenster und Power BI, darunter:
 
     * Die Aktivitäts-IDs für jede Anforderung.
 
-    * Der genaue Zeitstempel für jede Anforderung.
+    * Den genauen Zeitstempel für jede Anforderung.
 
-    * Alle Fehlerinformationen, die an den Client zurückgegeben wird.
+    * Alle an den Client zurückgegebenen Fehlerinformationen.
 
     Diese Ablaufverfolgung enthält außerdem die Daten, die zum Füllen der auf dem Bildschirm angezeigten visuellen Objekte verwendet werden.
 

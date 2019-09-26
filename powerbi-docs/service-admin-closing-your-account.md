@@ -1,5 +1,5 @@
 ---
-title: Ihr Power BI-Konto schließen
+title: Schließen des Power BI-Kontos möglich
 description: Wenn Sie Power BI nicht mehr verwenden möchten, können Sie Ihr Power BI-Konto schließen.
 author: mgblythe
 manager: kfile
@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/26/2019
+ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: a285c6188e8b9298702645e28ad686e33147c3a9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 227b4e837e75959dc838556ab0215db32131ec07
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65101145"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71075654"
 ---
-# <a name="close-your-power-bi-account"></a>Ihr Power BI-Konto schließen
+# <a name="close-your-power-bi-account"></a>Schließen des Power BI-Kontos möglich
 
-Wenn Sie Power BI nicht mehr verwenden möchten, können Sie Ihr Power BI-Konto schließen.  Nachdem Sie Ihr Konto schließen, können Sie in Power BI anmelden. Wie sie in der Richtlinie für die datenaufbewahrung in der Power BI-Dienstvertrag angegeben haben, löscht Power BI auch, alle Kundendaten, die Sie hochgeladen oder erstellt haben. Es wird nicht beibehalten.
+Wenn Sie Power BI nicht mehr verwenden möchten, können Sie Ihr Power BI-Konto schließen.  Nach dem Schließen Ihres Kontos können Sie sich nicht mehr bei Power BI anmelden. Ferner löscht Power BI, wie in der Datenaufbewahrungsrichtlinie in den Power BI-Nutzungsbedingungen dargelegt, alle von Ihnen hochgeladenen oder erstellten Kundendaten. Sie bleiben nicht erhalten.
 
 ## <a name="individual-power-bi-users"></a>Einzelne Power BI-Benutzer
 
@@ -27,23 +27,23 @@ Wenn Sie sich als Einzelperson für Power BI registriert haben, können Sie Ihr 
 
 1. Klicken Sie in Power BI rechts oben auf das Zahnradsymbol, und wählen Sie **Einstellungen** aus.
 
-    ![Screenshot des oben rechts auf der Benutzeroberfläche mit das Zahnradsymbol klicken und die Option "Einstellungen" gekennzeichnet.](media/service-admin-closing-your-account/close-account-settings.png)
+    ![Screenshot der rechten oberen Ecke der Benutzeroberfläche mit Zahnradsymbol und Option „Einstellungen“ mit Legende.](media/service-admin-closing-your-account/close-account-settings.png)
 
 1. Klicken Sie auf der Registerkarte **Allgemein** auf **Konto schließen**.
 
-    ![Screenshot der oberen linken Ecke des auf der Seite "Einstellungen" mit der Option Schließen Konto hingewiesen wird.](media/service-admin-closing-your-account/close-account-settings-2.png)
+    ![Screenshot der linken oberen Ecke der Seite „Einstellungen“ mit hervorgehobener Option „Konto schließen“.](media/service-admin-closing-your-account/close-account-settings-2.png)
 
 1. Wählen Sie einen Grund für die Schließung des Kontos aus (1). Sie können auch weitere Informationen angeben (2). Wählen Sie dann **Konto schließen**aus.
 
-    ![Screenshot des Dialogfelds Konto schließen mit der Option Schließen Konto hingewiesen wird.](media/service-admin-closing-your-account/close-account-settings-3.png)
+    ![Screenshot des Dialogfelds „Konto schließen“ mit hervorgehobener Option „Konto schließen“.](media/service-admin-closing-your-account/close-account-settings-3.png)
 
 1. Bestätigen Sie, dass Sie Ihr Konto schließen möchten.
 
-    ![Screenshot mit dem Konto schließen Bestätigungsdialogfeld mit der Option "Ja" hingewiesen.](media/service-admin-closing-your-account/close-account-settings-4.png)
+    ![Screenshot des Bestätigungsdialogfelds „Konto schließen“ mit hervorgehobener Option „Ja“.](media/service-admin-closing-your-account/close-account-settings-4.png)
 
-    Sie sollten eine Bestätigung angezeigt, dass es sich bei Power BI auf Ihr Konto geschlossen. Bei Bedarf können Sie das Konto von hier aus wieder öffnen.
+    Sie sollten eine Bestätigung sehen, dass Power BI Ihr Konto geschlossen hat. Bei Bedarf können Sie das Konto von hier aus wieder öffnen.
 
-    ![Screenshot der Ihr Konto wurde geschlossen Dialogfeld.](media/service-admin-closing-your-account/close-account-settings-5.png)
+    ![Screenshot des Dialogfelds „Ihr Konto wurde geschlossen“.](media/service-admin-closing-your-account/close-account-settings-5.png)
 
 ## <a name="managed-tenant-users"></a>Benutzer von verwalteten Mandanten
 

@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.date: 06/30/2018
 ms.openlocfilehash: 7f05da6d49a1aeddedfe145bebf0324e3af51572
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61270453"
@@ -126,13 +126,13 @@ Zwischengespeicherte Datasets finden Sie in PBIX-Dateien, die Daten im Gegensatz
 
 **Flow**
 
-1. Rufen Sie GET auf (https://api.powerbi.com/v1.0/collections/{collection_id}/workspaces/{wid}/datasets/{dataset_id}/Default.GetBoundGatewayDataSources), und speichern Sie die erhaltene Verbindungszeichenfolge.
+1. Rufen Sie GET auf (https://api.powerbi.com/v1.0/collections/{collection_id}/workspaces/{wid}/datasets/{dataset_id}/Default.GetBoundGatewayDataSources ), und speichern Sie die erhaltene Verbindungszeichenfolge.
 2. Herunterladen PBIX-API Aufrufen im PaaS-Arbeitsbereich.
 3. Speichern Sie die PBIX.
 4. Rufen Sie Import PBIX SaaS-Arbeitsbereich auf.
-5. Aktualisieren Sie die Verbindungszeichenfolge, indem Sie POST aufrufen (https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.SetAllConnections).
-6. Rufen Sie GW und Datasource-Bezeichner, durch den Aufruf - GET https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
-7. Aktualisieren Sie die Benutzeranmeldedaten, indem Sie PATCH (https://api.powerbi.com/v1.0/myorg/gateways/{gateway_id}/datasources/{datasource_id}) aufrufen.
+5. Aktualisieren Sie die Verbindungszeichenfolge, indem Sie POST aufrufen (https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.SetAllConnections ).
+6. Rufen Sie die GW- und Datenquellen-ID über GET (https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources ) auf.
+7. Aktualisieren Sie die Benutzeranmeldedaten, indem Sie PATCH (https://api.powerbi.com/v1.0/myorg/gateways/{gateway_id}/datasources/{datasource_id} ) aufrufen.
 
 #### <a name="old-dataset--reports"></a>Altes Dataset & Bericht
 

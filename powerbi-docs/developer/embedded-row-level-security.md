@@ -1,20 +1,20 @@
 ---
 title: Verwenden von Sicherheit auf Zeilenebene für eingebettete Inhalte aus Power BI
 description: Erfahren Sie mehr zu den Schritten, die Sie durchführen müssen, um Inhalte von Power BI in Ihre Anwendung einzubetten.
-author: rkarlin
-ms.author: rkarlin
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 7c58d4a5ce94a8659c85606dc2cbce1b4fc615f5
-ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
+ms.openlocfilehash: 2e7100db05b6ace0e4d530964f645e120387a8b2
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67596572"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073347"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sicherheit auf Zeilenebene mit Power BI Embedded
 
@@ -26,7 +26,7 @@ Wenn Sie Berichte für Power BI-Benutzer in der Organisation einbetten (der Benu
 
 ![Die für die Sicherheit auf Zeilenebene relevanten Elemente.](media/embedded-row-level-security/powerbi-embedded-rls-components.png)
 
-Um RLS nutzen zu können, müssen Sie drei wichtige Konzepte verstehen: Benutzer, Rollen und Regeln. Sehen wir uns diese im Einzelnen genauer an:
+Um RLS nutzen zu können, müssen Sie drei wichtige Konzepte verstehen: Benutzer, Rollen und Regeln. Sehen wir uns diese Konzepte im Einzelnen genauer an:
 
 **Benutzer**: Endbenutzer, die das Artefakt (Dashboard, Kachel, Bericht oder Dataset) anzeigen. In Power BI Embedded werden Benutzer durch die username-Eigenschaft in einem Einbettungstoken identifiziert.
 
@@ -77,7 +77,7 @@ Wenn der Filter so wie hier angewendet wird, werden alle Datensätze in den Tabe
 
 ## <a name="applying-user-and-role-to-an-embed-token"></a>Anwenden eines Benutzers und einer Rolle auf ein Einbettungstoken
 
-Nachdem Sie jetzt die Power BI Desktop-Rollen konfiguriert haben, müssen in Ihrer Anwendung einige Schritte ausgeführt werden, um die Rollen zu nutzen.
+Nachdem Sie jetzt die Power BI Desktop-Rollen konfiguriert haben, müssen Sie in Ihrer Anwendung noch einige weitere Schritte ausführen, um die Rollen zu nutzen.
 
 Benutzer werden durch die Anwendung authentifiziert und autorisiert, und mithilfe von Einbettungstoken wird einem Benutzer Zugriff auf einen bestimmten Power BI Embedded-Bericht gewährt. Power BI Embedded verfügt über keine Informationen über die Identität des Benutzers. Damit RLS erfolgreich angewendet wird, müssen Sie im Einbettungstoken zusätzlichen Kontext in Form von Identitäten übergeben. Sie können die Identitäten mithilfe der [Embed Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken)-API übergeben.
 

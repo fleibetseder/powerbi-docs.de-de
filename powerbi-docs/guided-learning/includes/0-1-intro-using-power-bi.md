@@ -1,7 +1,7 @@
 ---
 ms.openlocfilehash: 1c000b2bfce4b6eeaa40b1a641321a20cea49d13
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "66051087"
@@ -17,7 +17,7 @@ Wenn Will die vielen Möglichkeiten mit Power BI erklärt, denken Sie daran, das
 
 ![](media/0-1-intro-using-power-bi/c0a1_1.png)
 
-Wie bereits erwähnt, können Sie ausschließlich mit dem **Power BI-Dienst** arbeiten, Daten abrufen und Dashboards erstellen – das ist kein Problem. Jemand im Team arbeiten möglicherweise nur Zeit **Power BI Desktop**, die ebenfalls kein Problem ist. Damit Sie Power BI insgesamt und seine Möglichkeiten besser verstehen können, zeigen wir Ihnen alles... Sie können dann entscheiden, wie Sie am besten davon profitieren.
+Wie bereits erwähnt, können Sie ausschließlich mit dem **Power BI-Dienst** arbeiten, Daten abrufen und Dashboards erstellen – das ist kein Problem. Andere in Ihrem Team arbeiten möglicherweise nur mit **Power BI Desktop**, was ebenfalls kein Problem ist. Damit Sie Power BI insgesamt und seine Möglichkeiten besser verstehen können, zeigen wir Ihnen alles... Sie können dann entscheiden, wie Sie am besten davon profitieren.
 
 Legen wir also los und übergeben Will das Wort. Zunächst müssen wir die grundlegenden Komponenten von Power BI verstehen. Dies bildet eine solide Grundlage dafür, zu lernen, wie Daten von Power BI in interessante Berichte und Visualisierungen umgewandelt werden.
 

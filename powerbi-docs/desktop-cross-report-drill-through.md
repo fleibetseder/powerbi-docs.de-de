@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 09/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e735d45a7a49c4a0365e35d5bb95957c6145f934
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 6424180dde3dac0d6d2b66c8a9303810b6aa0dc6
+ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70903754"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71100099"
 ---
 # <a name="use-cross-report-drillthrough-in-power-bi-desktop"></a>Verwenden der berichtsübergreifenden Drillthroughfunktion in Power BI Desktop
 
@@ -32,7 +32,7 @@ Sie müssen die folgenden Definitionen verstehen, bevor wir mit dem Einrichten u
 
 
 > [!NOTE]
-> Auf einzeln freigegebene Berichte in *Mein Arbeitsbereich*, bei denen es sich um Berichte handelt, die als *[Für mich freigegeben](service-share-dashboards.md#share-a-dashboard-or-report)* angezeigt werden, kann nur in dem Arbeitsbereich zugegriffen werden, von dem aus sie ursprünglich freigegeben wurden. 
+> Mit der berichtsübergreifenden Drillthroughfunktion in Power BI Desktop können Sie kontextbezogen von einem Bericht zu einem anderen Bericht wechseln. Dies trifft zu, solange sich die Berichte im Power BI-Dienst im gleichen Arbeitsbereich oder der gleichen App befinden. Dies betrifft nicht den Zugriff auf einzeln freigegebene Berichte in *Mein Arbeitsbereich* ([Für mich freigegebene Berichte](service-share-dashboards.md#share-a-dashboard-or-report)); stattdessen müssen Sie auf den Bericht in dem Arbeitsbereich zugreifen, in dem er ursprünglich freigegeben wurde.
 
 
 ## <a name="enable-cross-report-drillthrough"></a>Aktivieren des berichtsübergreifenden Drillthroughs

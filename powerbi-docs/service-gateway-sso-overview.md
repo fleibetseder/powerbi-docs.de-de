@@ -10,16 +10,16 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 6f270c28f643736f07c09ceb3e544e473f831ad9
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 4991117cfa8b34d9adbbd2dc29082d1e75b6852d
+ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271853"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71100377"
 ---
 # <a name="overview-of-single-sign-on-sso-for-gateways-in-power-bi"></a>Übersicht: Single Sign-On für Gateways in Power BI
 
-Sie können nahtlose Verbindungen mit SSO gewährleisten und für Power BI-Berichte und -Dashboards das Aktualisieren von lokalen Daten ermöglichen, indem Sie Ihr lokales Datengateway entweder mit der eingeschränkten Delegierung von Kerberos oder Security Assertion Markup Language (SAML) konfigurieren. Das lokale Datengateway ermöglicht das einmalige Anmelden über DirectQuery. Damit werden Verbindungen mit lokalen Datenquellen hergestellt.
+Sie können nahtlose Verbindungen mit SSO gewährleisten und für Power BI-Berichte und -Dashboards das Aktualisieren aus lokalen Daten in Echtzeit ermöglichen, indem Sie Ihr lokales Datengateway entweder mit der eingeschränkten Delegierung von Kerberos oder Security Assertion Markup Language (SAML) konfigurieren. Das lokale Datengateway unterstützt das einmalige Anmelden über DirectQuery. Damit werden Verbindungen mit lokalen Datenquellen hergestellt.
 
 Folgende Datenquellen werden derzeit unterstützt:
 
@@ -52,8 +52,7 @@ Es folgen weitere Details zu diesen Schritten:
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nachdem Sie sich nun grundlegend mit SSO auskennen, können Sie sich ausführlichere Informationen zu Kerberos und SAML ansehen:
+Nachdem Sie sich nun grundlegend mit SSO über das Gateway auskennen, können Sie sich ausführlichere Informationen zu Kerberos und SAML ansehen:
 
 * [Einmaliges Anmelden (SSO): Kerberos](service-gateway-sso-kerberos.md)
-* [Einmaliges Anmelden (SSO): Kerberos (ressourcenbasiert)](service-gateway-sso-kerberos-resource.md)
 * [Einmaliges Anmelden (SSO): SAML](service-gateway-sso-saml.md)

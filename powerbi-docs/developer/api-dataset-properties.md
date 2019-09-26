@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 06/08/2018
 ms.openlocfilehash: 508f304e2f5033c301db683e3b7557856fb3731b
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61386291"
@@ -31,7 +31,7 @@ id     |  GUID       | Systemweit eindeutiger Bezeichner für das Dataset.      
 name     | Zeichenfolge        | Benutzerdefinierter Name des Datasets.        | False        | True        
 tables     | Table[]        | Eine Auflistung von Tabellen.        |  False       | False        
 relationships     | Relationship[]        | Eine Auflistung von Beziehungen zwischen Tabellen.        | False        |  False  
-defaultMode     | Zeichenfolge        | Bestimmt, ob das Dataset gestreamt, überführt wird, oder beide Werte "Push" und "Streaming".         | False        |  False
+defaultMode     | Zeichenfolge        | Legt mithilfe der Werte „Push“ und „Streaming“ fest, ob das Dataset gepusht, gestreamt oder sowohl gepusht als auch gestreamt wird.         | False        |  False
 
 ## <a name="table"></a>Tabelle (Table)
 

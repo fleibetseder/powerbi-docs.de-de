@@ -7,15 +7,15 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 09/16/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 258dd735c5ba97122d9e93f888e65cf2030f01eb
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: ace40fed472dc516cce5a761544cc5365566f3cd
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530465"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71074126"
 ---
 # <a name="intro-to-datasets-across-workspaces-preview"></a>Einführung in die Verwendung von Datasets in mehreren Arbeitsbereichen (Vorschau)
 
@@ -55,6 +55,7 @@ Wenn Sie beim Erstellen von Datasets ein Dataset schaffen, von dem andere profit
 Die spezifischen Features und Erfahrungen, die auf der Grundlage geteilter Datasets erstellt werden, werden gemäß ihren bestehenden Szenarien lizenziert. Beispiel:
 
 - Im Allgemeinen stehen die Ermittlung von freigegebenen Datasets und Herstellen von Verbindungen mit ihnen allen Benutzern zur Verfügung. Benutzer ohne Pro-Lizenz können jedoch nur Verbindungen mit Datasets herstellen, die sich in ihrem persönlichen Arbeitsbereich befinden.
+- Benutzer ohne eine Pro-Lizenz können Berichte und Dashboards, die auf einem freigegebenen Dataset basieren, nur nutzen, wenn beide Arbeitsbereiche (der Arbeitsbereich, der die Inhalte und der, der das Dataset enthält) in einer Premium-Kapazität gehostet sind.
 - In Power BI Desktop können Benutzer ohne Pro-Lizenz nur Datasets aus ihrem persönlichen Arbeitsbereich sehen.
 - Zum Kopieren von Berichten zwischen Arbeitsbereichen ist eine Pro-Lizenz erforderlich.
 - Für das Kopieren von Berichten aus einer App ist ebenfalls eine Pro-Lizenz erforderlich, wie sie es bisher schon für organisationsbezogene Inhaltspakete erforderlich war.
@@ -66,7 +67,7 @@ Die spezifischen Features und Erfahrungen, die auf der Grundlage geteilter Datas
 - Angenommen, Sie erstellen einen Bericht in Arbeitsbereich A, der auf einem Dataset in Arbeitsbereich B basiert. Wenn Sie eine App für Arbeitsbereich A erstellen, können Sie diesen Bericht nur in die App für Arbeitsbereich A einschließen, wenn Sie auch Mitglied von Arbeitsbereich B sind.
 - In einem klassischen Arbeitsbereich zeigt die Oberfläche zur Datasetermittlung nur die Datasets in dem betreffenden Arbeitsbereich an.
 - Wenn Sie einer App einen Bericht hinzufügen möchten, der auf einem freigegebenen Dataset basiert, müssen Sie Mitglied des Dataset-Arbeitsbereichs sein. Dies ist ein bekanntes Problem.
-- „Im Web veröffentlichen“ funktioniert nicht für Berichte, die auf einem freigegebenen Dataset basieren. Dies ist beabsichtigt.
+- Prinzipbedingt funktioniert „Im Web veröffentlichen“ nicht für Berichte, die auf einem freigegebenen Dataset basieren.
 - Wenn zwei Personen Mitglieder eines Arbeitsbereichs sind, der auf ein freigegebenes Dataset zugreift, ist es möglich, dass nur eine von ihnen das zugehörige Dataset im Arbeitsbereich sieht. Nur Personen, die mindestens Lesezugriff auf das Dataset besitzen, können das freigegebene Dataset sehen. 
 
 ## <a name="next-steps"></a>Nächste Schritte
