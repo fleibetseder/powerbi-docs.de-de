@@ -199,7 +199,7 @@ Sie können beliebigen HTML-Inhalt als Kachel in Ihren Bericht oder Ihr Dashboar
   ```html
   <iframe src="https://xyz.com">
   ```
-* Bearbeiten Sie die Informationen zu Breite und Höhe. Mit diesem Einbettungscode wird ein Video eingebettet und der Videoplayer wird auf 560x315 Pixel festgelegt. Diese Größe wird beim Ändern der Kachelgröße nicht geändert.
+* Bearbeiten Sie die Informationen zu Breite und Höhe. Mit diesem Einbettungscode wird ein Video eingebettet, und der Videoplayer wird auf 560×315 Pixel festgelegt. Diese Größe wird beim Ändern der Kachelgröße nicht geändert.
   
   ```html
   <iframe width="560" height="315"
