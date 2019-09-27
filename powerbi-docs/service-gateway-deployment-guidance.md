@@ -43,9 +43,9 @@ Eine Einschränkung in Power BI ist, dass nur *ein* Gateway pro *Bericht* zuläs
 
 ### <a name="connection-type"></a>Verbindungstyp
 
-Power BI bietet zwei Arten von Verbindungen: DirectQuery und Import. Nicht alle Datenquellen unterstützen beide Verbindungstypen. Viele Faktoren können zu Ihrer Wahl beitragen, z.B. Sicherheitsanforderungen, Leistung, Datengrenzwerte und Datenmodellgrößen. Weitere Informationen zu Verbindungstypen und unterstützten Datenquellen finden Sie in der [Liste der verfügbaren Datenquellentypen](service-gateway-data-sources.md#list-of-available-data-source-types).
+Power BI bietet zwei Arten von Verbindungen: DirectQuery und Import. Nicht alle Datenquellen unterstützen beide Verbindungstypen. Viele Faktoren können zu Ihrer Wahl beitragen, z. B. Sicherheitsanforderungen, Leistung, Datengrenzwerte und Datenmodellgrößen. Weitere Informationen zu Verbindungstypen und unterstützten Datenquellen finden Sie in der [Liste der verfügbaren Datenquellentypen](service-gateway-data-sources.md#list-of-available-data-source-types).
 
-Je nachdem, welcher Verbindungstyp verwendet wird, kann die Gatewaynutzung variieren. Versuchen Sie z.B. DirectQuery-Datenquellen nach Möglichkeit von Datenquellen mit geplanter Aktualisierung zu trennen. Die Annahme ist, dass Sie sich in verschiedenen Berichten befinden und getrennt werden können. Durch das Trennen von Quellen wird verhindert, dass sich im Gateway tausende DirectQuery-Anforderungen in der Warteschlange befinden, wenn gleichzeitig die morgendlich geplante Aktualisierung eines großen Datenmodells stattfindet,das für das Hauptdashboard des Unternehmens verwendet wird. 
+Je nachdem, welcher Verbindungstyp verwendet wird, kann die Gatewaynutzung variieren. Versuchen Sie z.B. DirectQuery-Datenquellen nach Möglichkeit von Datenquellen mit geplanter Aktualisierung zu trennen. Dabei wird angenommen, dass Sie sich in verschiedenen Berichten befinden und getrennt werden können. Durch das Trennen von Quellen wird verhindert, dass sich im Gateway tausende DirectQuery-Anforderungen in der Warteschlange befinden, wenn gleichzeitig die morgendlich geplante Aktualisierung eines großen Datenmodells stattfindet, das für das Hauptdashboard des Unternehmens verwendet wird. 
 
 Berücksichtigen Sie deshalb für jede Option Folgendes:
 
@@ -57,7 +57,7 @@ Informationen zu den Anforderungen an die Computerinstallation finden Sie in den
 
 ### <a name="location"></a>Standort
 
-Der Speicherort der Gatewayinstallation kann erhebliche Auswirkungen auf die Abfrageleistung haben. Stellen Sie sicher, dass Ihr Gateway, die Speicherorte von Datenquellen und der Power BI-Mandant so nahe beieinander wie möglich sind, um die Netzwerklatenz zu minimieren. Um den Speicherort Ihres Power BI-Mandaten im Power BI-Dienst zu bestimmen, wählen Sie das Fragezeichen **?** Symbol rechts oben. Wählen Sie dann **Info** aus.
+Der Speicherort der Gatewayinstallation kann erhebliche Auswirkungen auf die Abfrageleistung haben. Stellen Sie sicher, dass der physische Abstand zwischen Ihrem Gateway, den Speicherorten der Datenquellen und dem Power BI-Mandanten so gering wie möglich ist, um die Netzwerklatenz zu minimieren. Um den Speicherort Ihres Power BI-Mandaten im Power BI-Dienst zu bestimmen, wählen Sie das Fragezeichen **?** Symbol rechts oben. Wählen Sie dann **Info** aus.
 
 ![Ermitteln des Speicherorts des Power BI-Mandanten](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_02.png)
 
