@@ -1,20 +1,20 @@
 ---
 title: Unterstützung des Modus für hohen Kontrast in Power BI-Visuals
 description: In diesem Artikel wird beschrieben, wie Sie die Unterstützung des Modus „Hoher Kontrast“ zu Power BI-Visuals hinzufügen.
-author: sranins
-ms.author: rasala
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: f7f1a2277b3cdf38554039136010ab60c8f09bae
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: f5e6d205a26648f8e157663ed7afd58e33b4b328
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70237183"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194014"
 ---
 # <a name="high-contrast-mode-support-in-power-bi-visuals"></a>Unterstützung des Modus für hohen Kontrast in Power BI-Visuals
 
