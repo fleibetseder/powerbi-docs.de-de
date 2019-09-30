@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/26/2019
 ms.author: tebercov
-ms.openlocfilehash: 5e34601c3ebacb3cfd8a4a5ddeb282756d0f700b
-ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.openlocfilehash: fae3af81540e22b961fcb1d2a79de425fdc1cd8c
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67791825"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194793"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tipps für die Erstellung von Vorlagen-Apps in Power BI
 
@@ -126,7 +126,6 @@ Vorlagen-Apps können auf AppSource veröffentlicht werden – befolgen Sie dies
 
 * Achten Sie darauf, eine Vorlagen-App mit ansprechenden Beispieldaten zu erstellen, die der installierenden Person helfen zu verstehen, was die App kann (leerer Bericht und leeres Dashboard sind nicht erwünscht).
 Vorlagen-Apps unterstützen Apps, die nur Beispieldaten enthalten; achten Sie darauf, das Kontrollkästchen „Statisch“ zu aktivieren. [Weitere Informationen](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Im Allgemeinen können nur Anwendungen mit nützlichen Funktionen zur allgemeinen Verwendung in AppSource genehmigt werden. Anwendungen mit Daten als Beispielinhalt müssen entweder einen Wert als Anleitung oder einen statistischen Wert besitzen.
 * Halten Sie Anweisungen für das Validierungsteam bereit, die Anmeldeinformationen und Parameter enthalten, die für das Herstellen der Verbindung mit Daten erforderlich sind.
 * Die Anwendung muss in Power BI und in Ihrem CPP-Angebot ein App-Symbol enthalten. [Weitere Informationen](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
 * Landing Page muss konfiguriert sein. [Weitere Informationen](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
@@ -135,6 +134,7 @@ Vorlagen-Apps unterstützen Apps, die nur Beispieldaten enthalten; achten Sie da
 * Installieren Sie die App über den App-Link, bevor Sie sie übermitteln, stellen Sie sicher, dass Sie die Verbindung mit dem Dataset herstellen können und die App wie geplant funktioniert.
 * Entladen Sie vor dem Hochladen der BPIX-Datei in den Vorlagen-App-Arbeitsbereich unbedingt alle unnötigen Verbindungen.
 * Befolgen Sie [Bewährte Entwurfsmethoden für Berichte und Visualisierungen](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) für Power BI, um den besten Eindruck bei Ihren Benutzern zu machen und die Genehmigung für die Verteilung zu erhalten.
+<!--- * In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.) -->
 
 ## <a name="known-limitations"></a>Bekannte Einschränkungen
 
@@ -147,7 +147,7 @@ Vorlagen-Apps unterstützen Apps, die nur Beispieldaten enthalten; achten Sie da
 | Datenquellen | Datenquellen, die für geplante Datenaktualisierungen in der Cloud unterstützt werden, sind zulässig. <br>Nicht unterstützt: <li> DirectQuery</li><li>Liveverbindungen (ausgenommen Azure Analysis Services)</li> <li>Lokale Datenquellen (persönliche Gateways und Enterprise-Gateways werden nicht unterstützt)</li> <li>Echtzeit (Pushdataset wird nicht unterstützt)</li> <li>Zusammengesetzte Modelle</li></ul> |
 | Dataset: arbeitsbereichübergreifend | Arbeitsbereichübergreifende Datasets sind nicht zulässig.  |
 | Abfrageparameter | Nicht unterstützt: Parameter vom Typ „Any“ oder „Binary“ blockieren den Aktualisierungsvorgang für Datasets. |
-| Benutzerdefinierte Visuals | Es werden nur öffentlich verfügbare benutzerdefinierte Visuals unterstützt. [Benutzerdefinierte Visuals für Organisationen](power-bi-custom-visuals-organization.md) werden nicht unterstützt. |
+| Benutzerdefinierte visuelle Elemente | Es werden nur öffentlich verfügbare benutzerdefinierte Visuals unterstützt. [Benutzerdefinierte Visuals für Organisationen](power-bi-custom-visuals-organization.md) werden nicht unterstützt. |
 
 ## <a name="next-steps"></a>Nächste Schritte
 
