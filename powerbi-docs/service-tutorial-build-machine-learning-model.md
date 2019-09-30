@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Erstellen eines Machine Learning-Modells in Power BI (Vorschau)'
+title: 'Tutorial: Erstellen eines Machine Learning-Modells in Power BI (Vorschauversion)'
 description: In diesem Tutorial erstellen Sie ein Machine Learning-Modell in Power BI.
 author: davidiseminger
 manager: kfile
@@ -13,187 +13,187 @@ ms.author: davidi
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 611d6f6c923e6cb68af94840c4266a0b6dee7651
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61406746"
 ---
-# <a name="tutorial-build-a-machine-learning-model-in-power-bi-preview"></a>Tutorial: Erstellen eines Machine Learning-Modells in Power BI (Vorschau)
+# <a name="tutorial-build-a-machine-learning-model-in-power-bi-preview"></a>Tutorial: Erstellen eines Machine Learning-Modells in Power BI (Vorschauversion)
 
-In diesem Tutorial Artikel verwenden Sie **automatisierte Machine Learning** erstellen und eine binäre Vorhersage-Modell in Power BI anwenden. Das Lernprogramm enthält Anleitungen zum Erstellen eines Power BI-Datenfluss, und mit den Entitäten im Datenfluss zu trainieren und überprüfen ein Machine learning-Modell direkt in Power BI definiert. Klicken Sie dann verwenden wir das Modell für die Bewertung, um vorhersagen zu generieren.
+In diesem Tutorialartikel verwenden Sie **Automatisiertes maschinelles Lernen** zum Erstellen und Anwenden eines binären Vorhersagemodells in Power BI. Das Tutorial enthält Anleitungen zum Erstellen eines Power BI-Dataflows und zum Verwenden der im Dataflow definierten Entitäten, um ein Machine Learning-Modell direkt in Power BI zu trainieren und zu überprüfen. Wir verwenden dieses Modell dann zur Bewertung, um Vorhersagen zu generieren.
 
-Zunächst erstellen Sie eine binäre Vorhersage Machine learning-Modell, um vorherzusagen, die Absicht Kauf von onlinekäufern, basierend auf einem Satz ihrer onlinesitzung Attribute. Ein Benchmark-Machine Learning-Dataset wird für diese Übung verwendet. Nachdem ein Modell trainiert ist, generiert Power BI automatisch eine Erläuterung der Modellergebnisse Überprüfungsbericht. Sie können dann überprüfen Sie den Überprüfungsbericht und das Modell anwenden, um Ihre Daten für die Bewertung.
+Zunächst erstellen Sie ein Machine Learning-Modell für die binäre Vorhersage der Kaufabsichten von Onlinekunden auf Basis eines Satzes ihrer Onlinesitzungsattribute. Für diese Übung wird ein Benchmark-Machine Learning-Dataset verwendet. Sobald ein Modell trainiert ist, generiert Power BI automatisch einen Überprüfungsbericht, in dem die Modellergebnisse erläutert werden. Sie können dann den Überprüfungsbericht auswerten und das Modell zur Bewertung auf die Daten anwenden.
 
-In diesem Lernprogramm umfasst folgende Schritte aus:
+Dieses Tutorial umfasst folgende Schritte:
 
 > [!div class="checklist"]
-> * Erstellen Sie einen Datenfluss mit der Eingabedaten
-> * Erstellen und Trainieren von Machine Learning-Modellen
-> * Überprüfen Sie den Modell-Überprüfungsbericht
-> * Das Modell auf eine Entität Datenfluss anwenden
-> * Verwenden die bewertete Ausgabe aus dem Modell in Power BI-Berichten
+> * Erstellen eines Dataflows mit den Eingabedaten
+> * Erstellen und Trainieren eines Machine Learning-Modells
+> * Auswerten des Modellüberprüfungsberichts
+> * Anwenden des Modells auf eine Dataflowentität
+> * Verwenden der bewerteten Ausgabe des Modells in einem Power BI-Bericht
 
-## <a name="create-a-dataflow-with-the-input-data"></a>Erstellen Sie einen Datenfluss mit der Eingabedaten
+## <a name="create-a-dataflow-with-the-input-data"></a>Erstellen eines Dataflows mit den Eingabedaten
 
-Der erste Teil dieses Lernprogramms ist die Erstellung von einem Datenfluss mit Eingabedaten. Dieser Prozess dauert einige Schritte, wie in den folgenden Abschnitten gezeigt Abrufen von Daten ab.
+Der erste Teil dieses Tutorials besteht darin, einen Dataflow mit Eingabedaten zu erstellen. Dieser Vorgang erfordert einige Schritte, wie in den folgenden Abschnitten beschrieben, beginnend mit dem Erfassen der Daten.
 
 ### <a name="get-data"></a>Daten abrufen
 
-Der erste Schritt beim Erstellen von eines Datenfluss ist Ihre Datenquellen bereit. In unserem Fall verwenden wir ein Machine Learning-Dataset aus einer Reihe von online-Sitzungen, von denen einige in einen Kauf letztendlich zu. Das Dataset enthält einen Satz von Attributen zu diesen Sitzungen, die wir für das Trainieren des Modells verwenden.
+Der erste Schritt beim Erstellen eines Dataflows besteht darin, dass Sie Ihre Datenquellen bereithalten. In unserem Fall verwenden wir ein Machine Learning-Dataset aus einer Reihe von Onlinesitzungen, wobei es in einigen davon zum Kauf kam. Das Dataset enthält eine Reihe von Attributen zu diesen Sitzungen, die wir zum Trainieren unseres Modells verwenden.
 
-Sie können das Dataset von der UC Irvine-Website herunterladen.  Wir haben auch diesem verfügbar sind, im Rahmen dieses Tutorials, mit dem folgenden Link: [online_shoppers_intention.csv](https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv).
+Sie können das Dataset von der UC Irvine-Website herunterladen.  Auch dies steht für den Zweck dieses Tutorials über den folgenden Link zur Verfügung: [online_shoppers_intention.csv](https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv).
 
-### <a name="create-the-entities"></a>Erstellen von Entitäten
+### <a name="create-the-entities"></a>Erstellen der Entitäten
 
 Um die Entitäten in Ihrem Dataflow zu erstellen, melden Sie sich beim Power BI-Dienst an, und navigieren Sie zu einem Arbeitsbereich Ihrer dedizierten Kapazität, in dem die KI-Vorschau aktiviert ist.
 
-Wenn Sie bereits über einen Arbeitsbereich haben, können Sie erstellen dazu **Arbeitsbereiche** in in der Power BI-Dienst, und wählen im linken Navigationsmenü **app-Arbeitsbereich erstellen** am unteren Rand der Bereich, wird angezeigt. Daraufhin wird einen Bereich auf der rechten Seite Details des Arbeitsbereichs eingeben. Geben Sie einen Arbeitsbereichsnamen, und wählen Sie **erweitert**. Vergewissern Sie sich, dass der Arbeitsbereich wird verwendet, dedizierte Kapazität, die mit dem Optionsfeld und sie eine dedizierte Kapazität-Instanz zugewiesen ist, die die AI (Vorschauversion) aktiviert ist. Klicken Sie auf **Speichern**.
+Wenn Sie noch keinen Arbeitsbereich haben, können Sie einen Arbeitsbereich erstellen, indem Sie im Power BI-Dienst im linken Navigationsmenü **Arbeitsbereiche** und im dann angezeigten Bereich am unteren Rand **App-Arbeitsbereich erstellen** auswählen. Daraufhin wird rechts ein Bereich zur Eingabe der Details des Arbeitsbereichs geöffnet. Geben Sie einen Namen für den Arbeitsbereich ein, und wählen Sie **Erweitert** aus. Bestätigen Sie mithilfe des Optionsfelds „Dedizierte Kapazität“, dass der Arbeitsbereich dedizierte Kapazität verwendet und einer Instanz mit dedizierter Kapazität zugewiesen ist, für die die KI-Vorschau aktiviert ist. Klicken Sie auf **Speichern**.
 
 ![Arbeitsbereich erstellen](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-01.png)
 
-Der Arbeitsbereich erstellt wurde, wählen Sie **überspringen** in der unteren rechten Rand der Willkommensseite, wie in der folgenden Abbildung dargestellt.
+Sobald der Arbeitsbereich erstellt ist, können Sie unten rechts im Begrüßungsbildschirm **Überspringen** auswählen, wie in der folgenden Abbildung gezeigt.
 
-![Überspringen Sie, wenn Sie einen Arbeitsbereich verfügen](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-02.png)
+![Überspringen, wenn Sie über einen Arbeitsbereich verfügen](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-02.png)
 
-Wählen Sie die **Datenflüsse (Vorschau)** Registerkarte. Wählen Sie die **erstellen** oben rechts neben dem Arbeitsbereich, und wählen Sie dann die Schaltfläche **Datenfluss**.
+Wählen Sie die Registerkarte **Dataflows (Vorschau)** aus. Wählen Sie die Schaltfläche **Erstellen** oben rechts im Arbeitsbereich und dann die Schaltfläche **Dataflow** aus.
 
-![Erstellen von Datenfluss](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-03.png)
+![Erstellen des Dataflows](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-03.png)
 
-Wählen Sie **Neue Entitäten hinzufügen** aus. Dadurch wird eine **Power Query** -Editor in den Browser.
+Wählen Sie **Neue Entitäten hinzufügen** aus. Damit wird ein **Power Query**-Editor im Browser gestartet.
 
 ![Hinzufügen einer neuen Entität](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-04.png)
 
-Wählen Sie **Text/CSV-Datei** als eine Datenquelle angezeigt werden soll, in der folgenden Abbildung.
+Wählen Sie **Text-/CSV-Datei** als Datenquelle aus, wie in der folgenden Abbildung dargestellt.
 
-![Ausgewählten Text/CSF-Datei](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-05.png)
+![Ausgewählte Text-/CSV-Datei](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-05.png)
 
-In der **Herstellen einer Verbindung mit einer Datenquelle** , die neben angezeigt wird, fügen Sie den folgenden Link in der *online_shoppers_intention.csv* in die **Dateipfad oder URL** Feld, und wählen Sie dann auf  **Nächste**.
+Fügen Sie im Feld **Mit einer Datenquelle verbinden**, das als Nächstes angezeigt wird, den folgenden Link zur Datei *online_shoppers_intention.csv* in das Feld **Dateipfad oder URL** ein, und wählen Sie dann **Weiter** aus.
 
 `https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv`
 
 ![Dateipfad](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-06.png)
 
-Die Power Query-Editor zeigt eine Vorschau der Daten aus der CSV-Datei. Wählen Sie **Tabelle transformieren** in dem Befehl Menüband, und wählen Sie dann **erste Zeile als Header verwenden** aus dem Menü, das angezeigt wird. Dadurch wird die _höher gestufte Header_ Schritte der Abfrage in der **angewendeten Schritte** Abschnitt auf der rechten Seite des Bildschirms. Sie können die Abfrage einen aussagekräftigeren Namen umbenennen, durch Ändern des Werts in der **Namen** Feld finden Sie im rechten Bereich. Beispielsweise können Sie ändern, Namen der Abfrage in _Online Besucher_.
+Der Power Query-Editor zeigt eine Vorschau der Daten aus der CSV-Datei an. Wählen Sie **Tabelle transformieren** im Menübefehlsband und im dann angezeigten Menü **Erste Zeile als Überschriften verwenden** aus. Dadurch wird der Abfrageschritt _Höher gestufte Header_ im Abschnitt **Angewendete Schritte** rechts im Bildschirm hinzugefügt. Sie können die Abfrage mit einen benutzerfreundlicheren Namen umbenennen, indem Sie den Wert im Feld **Name** im rechten Bereich ändern. Beispielsweise könnten Sie den Abfragenamen in _Online Visitor_ (Onlinebesucher) ändern.
 
-![Ändern Sie in einen Anzeigenamen](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-07.png)
+![Ändern in einen benutzerfreundlichen Namen](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-07.png)
 
-Einige die Attribut-Datentypen in diesem Dataset sind _numerischen_ oder _booleschen_, obwohl diese möglicherweise als Zeichenfolgen nach interpretiert werden **Power Query**. Wählen Sie das Attribut Type-Symbol am oberen Rand der einzelnen Spaltenüberschriften so ändern Sie die nachfolgend aufgeführten, auf die folgenden Spalten:
+Einige der Attributdatentypen in diesem Dataset sind _numerisch_ oder _boolesch_, obwohl diese möglicherweise von **Power Query** als Zeichenfolgen interpretiert werden. Wählen Sie das Attributtypsymbol am oberen Rand der Spaltenkopfzeilen aus, um die unten aufgeführten Spalten in die folgenden Typen zu ändern:
 
 * **Dezimalzahl:** Administrative_Duration; Informational_Duration; ProductRelated_Duration; BounceRates; ExitRates; PageValues; SpecialDay
-* **True oder False:** Wochenende; Umsatz
+* **True/False:** Weekend; Revenue
 
 ![Ändern des Datentyps](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-08.png)
 
-Die **binäre Vorhersage** Modell Trainieren Sie erfordert ein boolesches Feld als eine Bezeichnung, die die Ergebnisse aus der letzten Beobachtungen zu identifizieren. In diesem Dataset das _Umsatz_ -Attribut gibt an, Kauf, und dieses Attribut ist bereits als einen booleschen Wert zur Verfügung. Wir müssen also keine berechnete Spalte für die Bezeichnung hinzufügen. In anderen Datasets müssen Sie möglicherweise vorhandene Bezeichnungsattribute in einer booleschen Spalte zu transformieren.
+Das von uns trainierte **binäre Vorhersagemodell** erfordert ein boolesches Feld als Bezeichnung, die die Ergebnisse aus den vergangenen Beobachtungen identifiziert. In diesem Dataset gibt das Attribut _Revenue_ (Umsatz) den Kauf an, und dieses Attribut ist bereits als boolescher Wert verfügbar. Darum müssen wir keine berechnete Spalte für die Bezeichnung hinzufügen. In anderen Datasets müssen Sie möglicherweise vorhandene Bezeichnungsattribute in eine boolesche Spalte umwandeln.
 
-Wählen Sie die **Fertig** , um Power Query-Editor zu schließen. Daraufhin wird eine Entitätenliste mit die _Online Besucher_ Daten, die wir hinzugefügt. Wählen Sie **speichern** in der oberen rechten Ecke, geben Sie einen Namen für den Datenfluss aus, und wählen Sie dann **speichern** klicken Sie im Dialogfeld wie in der folgenden Abbildung dargestellt.
+Wählen Sie die Schaltfläche **Fertig** aus, um den Power Query-Editor zu schließen. Dadurch wird die Liste der Entitäten mit den von uns hinzugefügten _Online Visitor_-Daten angezeigt. Wählen Sie in der oberen rechten Ecke **Speichern** aus, geben Sie einen Namen für den Dataflow an, und wählen Sie dann im Dialogfeld die Option **Speichern** aus, wie in der folgenden Abbildung gezeigt.
 
-![Speichern Sie den Datenfluss](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-09.png)
+![Speichern des Dataflows](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-09.png)
 
 ### <a name="refresh-the-dataflow"></a>Aktualisieren des Dataflows
 
-Speichern der Datenfluss führt eine Benachrichtigung angezeigt wird die besagt, dass es sich bei Ihrem Datenfluss gespeichert wurde. Wählen Sie **jetzt aktualisieren** zum Erfassen von Daten aus der Quelle in den Datenfluss verwendet.
+Beim Speichern des Dataflows wird eine Benachrichtigung angezeigt, die das Speichern bestätigt. Wählen Sie **Jetzt aktualisieren** aus, um Daten aus der Quelle im Dataflow zu erfassen.
 
 ![Jetzt aktualisieren](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-10.png)
 
 Wählen Sie **Schließen** in der oberen rechten Ecke aus, und warten Sie, bis die Aktualisierung des Dataflows abgeschlossen ist.
 
-Sie können auch Ihre Datenfluss aktualisieren, mit der **Aktionen** Befehle. Der Datenfluss zeigt den Zeitstempel an, wenn die Aktualisierung abgeschlossen ist.
+Sie können Ihren Dataflow auch mit den **Aktionen**-Befehlen aktualisieren. Der Dataflow zeigt den Zeitstempel an, wenn die Aktualisierung abgeschlossen ist.
 
 ![Zeitstempel der Aktualisierung](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-11.png)
 
-## <a name="create-and-train-a-machine-learning-model"></a>Erstellen und Trainieren von Machine Learning-Modellen
+## <a name="create-and-train-a-machine-learning-model"></a>Erstellen und Trainieren eines Machine Learning-Modells
 
-Wählen Sie den Datenfluss aus, nachdem die Aktualisierung abgeschlossen wurde. Wählen Sie zum Hinzufügen eines Machine Learning-Modells die **Anwenden von ML-Modell** Schaltfläche der **Aktionen** Liste für die Basis-Entität, die Ihr Training Daten und Bezeichnung enthält, und wählen Sie dann **Hinzufügen einer Machine Learning-Modells**.
+Wählen Sie den Dataflow aus, sobald die Aktualisierung abgeschlossen ist. Wählen Sie zum Hinzufügen eines Machine Learning-Modells die Schaltfläche **ML-Modell anwenden** in der Liste **Aktionen** für die Basisentität aus, die die Trainingsdaten und Bezeichnungsinformationen enthält, und wählen Sie dann **Machine Learning-Modell hinzufügen** aus.
 
 ![Machine Learning-Modell hinzufügen](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-12.png)
 
-Der erste Schritt zum Erstellen von unseren Machine Learning-Modell wird zum Identifizieren der historischen Daten, einschließlich das Bezeichnungsfeld an, dem Sie vorhersagen möchten. Das Modell wird von Erkenntnisse aus diesen Daten erstellt werden.
+Der erste Schritt beim Erstellen unseres Machine Learning-Modells besteht darin, die Verlaufsdaten zu identifizieren, einschließlich des Bezeichnungsfelds, das Sie vorhersagen möchten. Das Modell wird erstellt, indem es aus diesen Daten lernt.
 
-Wenn das Dataset, das wir verwenden, dies ist die **Umsatz** Feld. Wählen Sie **Umsatz** als Wert für "Historische Ergebnisfeld" und wählen Sie dann **Weiter**.
+Im Fall des Datasets, das wir verwenden, ist dies das Feld **Revenue**. Wählen Sie **Revenue** als Wert für „Feld für historisches Ergebnis“ aus, und wählen Sie dann **Weiter** aus.
 
-![Wählen Sie Verlaufsdaten aus](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-13.png)
+![Auswählen von Verlaufsdaten](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-13.png)
 
-Als Nächstes müssen wir den Typ der Machine learning-Modell zum Erstellen auswählen. Powerbi analysiert die Werte in das Feld für Verlauf Ergebnis, das Sie angegeben haben und die Typen von Machine Learning-Modelle, die erstellt werden können, um vorherzusagen, dieses Feld vorgeschlagen.
+Als Nächstes müssen wir den Typ des zu erstellenden Machine Learning-Modells auswählen. Power BI analysiert die Werte im „Feld für historisches Ergebnis“, das Sie identifiziert haben, und schlägt die Machine Learning-Modelltypen vor, die erstellt werden können, um dieses Feld vorherzusagen.
 
-Da wir ein binäres Ergebnisses Vorhersage sind der gibt an, ob ein Benutzer einen Kauf oder nicht tätigt, in diesem Fall wählen Sie **binäre Vorhersage** für den Typ des Modells ein, und wählen Sie dann neben.
+Da wir in diesem Fall ein binäres Ergebnis vorhersagen, nämlich ob ein Benutzer einen Einkauf durchführt oder nicht, wählen Sie **Binäre Vorhersage** für den Modelltyp und dann „Weiter“ aus.
 
-![Binäre Vorhersage ausgewählt](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-14.png)
+![Ausgewählte binäre Vorhersage](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-14.png)
 
-Als Nächstes wird Power BI ist eine vorläufige Überprüfung der Daten und schlägt die Eingaben, die das Modell verwenden können. Sie haben die Möglichkeit zum Anpassen der Felder für die Eingabe für das Modell verwendet. Wählen Sie in unserem geordneten Dataset um alle Felder auszuwählen, das Kontrollkästchen neben dem Namen der Entität ein. Wählen Sie **Weiter** , die Eingaben zu akzeptieren.
+Als Nächstes führt Power BI eine vorläufige Überprüfung der Daten durch und schlägt die Eingaben vor, die das Modell verwenden könnte. Sie haben die Möglichkeit, die für das Modell verwendeten Eingabefelder anzupassen. Um in unserem zusammengestellten Dataset alle Felder auszuwählen, aktivieren Sie das Kontrollkästchen neben dem Entitätsnamen. Wählen Sie **Weiter** aus, um die Eingaben zu akzeptieren.
 
-![Aktivieren Sie das nächste Kontrollkästchen](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-15.png)
+![Auswählen von „Weiter“](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-15.png)
 
-Im letzten Schritt müssen wir bieten einen Namen für das Modell sowie die benutzerfreundlichen Beschriftungen für die Ergebnisse im automatisch generierten Bericht verwendet werden, die die Ergebnisse die modellvalidierung zusammengefasst werden. Als Nächstes haben wir das Modell benennen _Kauf Absicht Vorhersage_, sowie die Bezeichnungen "true" und "false" als _Kauf_ und _Nein-Purchase-_ . Klicken Sie auf **Speichern**.
+Im letzten Schritt müssen wir einen Namen für unser Modell sowie die benutzerfreundlichen Bezeichnungen für die Ergebnisse angeben, die im automatisch generierten Bericht verwendet werden, der die Ergebnisse der Modellüberprüfung zusammenfasst. Als Nächstes müssen wir das Modell mit _Purchase Intent Prediction_ (Kaufabsichtsvorhersage) benennen und die „true“- und „false“-Bezeichnungen mit _Purchase_ (Kauf) und _No-Purchase_ (Kein Kauf). Klicken Sie auf **Speichern**.
 
-![Speichern Sie das Modell](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-16.png)
+![Speichern des Modells](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-16.png)
 
-Machine Learning-Modell ist jetzt bereit für das Training. Wählen Sie **jetzt aktualisieren** zu trainieren des Modells.
+Unser Machine Learning-Modell ist jetzt zum Training bereit. Wählen Sie **Jetzt aktualisieren** aus, um das Trainieren des Modells zu starten.
 
 ![Jetzt aktualisieren](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-17.png)
 
-Des trainingsprozesses wird zunächst sampling und Ihre historischen Daten normalisieren und Teilen Ihr Dataset in zwei neue Entitäten *Kauf Absicht Vorhersagen Trainingsdaten* und *Kauf Absicht Vorhersage testen Daten*.
+Der Trainingsprozess beginnt mit der Stichprobenentnahme und Normalisierung ihrer Verlaufsdaten sowie dem Aufteilen Ihres Datasets in zwei neue Entitäten *Purchase Intent Prediction Training Data* (Trainingsdaten für Kaufabsichtsvorhersage) und *Purchase Intent Prediction Testing Data* (Testdaten für Kaufabsichtsvorhersage).
 
-Abhängig von der Größe des Datasets kann das Training zu ein paar Minuten, ein paar Stunden dauern. An diesem Punkt sehen Sie das Modell in der **Machine learning-Modelle** Registerkarte Datenfluss. Die _bereit_ Status gibt an, dass das Modell wurde in die Warteschlange für das Training oder befindet sich unter dem Training.
+Abhängig von der Größe des Datasets kann der Trainingsprozess zwischen einigen Minuten und einigen Stunden dauern. An diesem Punkt können Sie das Modell auf der Registerkarte **Machine Learning-Modelle** des Dataflows sehen. Der Status _Bereit_ zeigt an, dass das Modell in eine Warteschlange eingereiht wurde oder gerade trainiert wird.
 
-![Bereit für das training](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-18.png)
+![Bereit zum Training](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-18.png)
 
-Während das Modell trainieren ist, wird Sie nicht anzeigen oder bearbeiten den Datenfluss. Sie können bestätigen, dass das Modell wird trainiert und validiert, über den Status des Datenflusses. Dies wird als eine datenaktualisierung ausgeführt, in der **Datenflüsse** Registerkarte des Arbeitsbereichs.
+Während das Modell trainiert wird, können Sie den Dataflow nicht anzeigen oder bearbeiten. Sie können über den Status des Dataflows feststellen, ob das Modell trainiert und überprüft wird. Dieser wird als laufende Datenaktualisierung auf der Registerkarte **Dataflows** des Arbeitsbereichs angezeigt.
 
-![Im Prozess](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-19.png)
+![In Bearbeitung](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-19.png)
 
-Nachdem das Modelltraining abgeschlossen ist, zeigt den Datenfluss eine aktualisierte Aktualisierungszeit an. Sie können bestätigen, dass das Modell trainiert ist, navigieren Sie zu, die **Machine learning-Modelle** Registerkarte im Datenfluss. Das Modell, das Sie erstellt haben, sollte Status anzeigen **angewiesen** und **Trainiertes letzte** Zeit sollte jetzt aktualisiert werden.
+Sobald das Modelltraining abgeschlossen ist, wird für den Dataflow eine aktualisierte Aktualisierungszeit angezeigt. Sie können überprüfen, ob das Modell trainiert ist, indem Sie zur Registerkarte **Machine Learning-Modelle** im Dataflow navigieren. Für das von Ihnen erstellte Modell sollte der Status **Trainiert** angezeigt werden, und die Zeitangabe **Zuletzt trainiert** sollte jetzt aktualisiert sein.
 
-![Letzte trainiert](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-20.png)
+![Zuletzt trainiert](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-20.png)
 
-## <a name="review-the-model-validation-report"></a>Überprüfen Sie den Modell-Überprüfungsbericht
+## <a name="review-the-model-validation-report"></a>Auswerten des Modellüberprüfungsberichts
 
-Zum Überprüfen des Berichts für die Modell-Überprüfung im der **Machine Learning-Modellen, s** festlegen, ob die **Leistungsbericht anzeigen und das Modell anwenden** Schaltfläche der **Aktionen** Spalte für das Modell . Dieser Bericht zeigt, wie Ihr Machine Learning-Modell wahrscheinlich durchführen wird.
+Um den Modellüberprüfungsbericht auszuwerten, wählen Sie in den **Machine Learning-Modellen** die Schaltfläche **Leistungsbericht anzeigen und Modell anwenden** in der Spalte **Aktionen** für das Modell aus. In diesem Bericht wird beschrieben, wie das Machine Learning-Modell wahrscheinlich durchgeführt wird.
 
-In der **Modellleistung** Seite des Berichts wählen **wichtige Einflussfaktoren** oberen prädiktoren für Ihr Modell an. Sie können auswählen, eine der prädiktoren angezeigt, wie die Ergebnis-Verteilung mit der diese Vorhersage verbunden werden sollen.
+Wählen Sie auf der Seite **Modellleistung** des Berichts **Wichtigste Einflussfaktoren** aus, um die wichtigsten Vorhersagen für das Modell anzuzeigen. Sie können eine der Vorhersagen auswählen, um zu sehen, wie die Ergebnisverteilung mit dieser Vorhersage verknüpft ist.
 
-![Leistung des Modells](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-21.png)
+![Modellleistung](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-21.png)
 
-Sie können die **Wahrscheinlichkeitsschwellenwert** Slicer auf der Seite für die Leistung des Modells aus, um den Einfluss auf die Genauigkeit und Rückruf für das Modell zu untersuchen.
+Sie können den **Wahrscheinlichkeitsschwellenwert**-Slicer auf der Seite „Modellleistung“ verwenden, um seine Auswirkung auf die Genauigkeit und den Abruf des Modells zu untersuchen.
 
 ![Wahrscheinlichkeitsschwellenwert](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-22.png)
 
-Die anderen Seiten des Berichts werden die statistischen Leistungsmetriken für das Modell beschrieben.
+Die anderen Seiten des Berichts beschreiben die statistischen Leistungsmetriken für das Modell.
 
-Der Bericht enthält auch eine Schulungsdetails-Seite, die beschreibt die verschiedenen Iterationen, die ausgeführt wurden, wie die Features aus den Eingaben, und die hyperparameter für das endgültige Modell verwendet extrahiert wurden.
+Der Bericht enthält auch eine Seite mit Trainingsdetails, die die verschiedenen ausgeführten Iterationen beschreibt, wie Features aus den Eingaben extrahiert und welche Hyperparameter für das endgültige Modell verwendet wurden.
 
-## <a name="apply-the-model-to-a-dataflow-entity"></a>Das Modell auf eine Entität Datenfluss anwenden
+## <a name="apply-the-model-to-a-dataflow-entity"></a>Anwenden des Modells auf eine Dataflowentität
 
-Wählen Sie die **übernehmen Modell** Schaltfläche am oberen Rand des Berichts auf dieses Modell aufgerufen wird, wenn der Datenfluss aktualisiert wird. In der **übernehmen** Dialogfeld können Sie angeben, die Zielentität, die Quelldaten verfügt, auf dem das Modell angewendet werden soll.
+Wählen Sie oben im Bericht die Schaltfläche **Modell anwenden** aus, um dieses Modell aufzurufen, wenn der Dataflow aktualisiert wird. Im Dialogfeld **Anwenden** können Sie die Zielentität angeben, die die Quelldaten enthält, auf die das Modell angewendet werden soll.
 
 ![Modell anwenden](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-23.png)
 
-Wenn Sie dazu aufgefordert werden, müssen Sie **aktualisieren** dem Datenfluss eine Vorschau der Ergebnisse des Modells anzeigen.
+Nach Aufforderung müssen Sie den Dataflow **Aktualisieren**, um eine Vorschau der Ergebnisse Ihres Modells anzuzeigen.
 
-Das Modell anwenden, wird eine neue Entität mit dem Suffix erstellt **erweitert < Model_name >** angefügt wird, auf die Entität, zu dem Sie das Modell angewendet. In unserem Fall die Anwendung des Modells, das die **OnlineShoppers** Entität erstellt **OnlineShoppers bereichert Kauf Absicht Vorhersage**, wozu die vorhergesagte Ausgabe aus dem Modell.
+Durch das Anwenden des Modells wird eine neue Entität erstellt, wobei das Suffix **enriched <Modellname>** (erweitert) der Entität angehängt wird, auf die Sie das Modell angewendet haben. In unserem Fall wird durch das Anwenden des Modells auf die **OnlineShoppers**-Entität eine **OnlineShoppers enriched Purchase Intent Prediction** erstellt, die die vorhergesagte Ausgabe des Modells einschließt.
 
-Anwenden eines Modells für binäre Vorhersage fügt drei Spalten mit vorhergesagte Ergebnis Wahrscheinlichkeits-Score und die wichtigsten Einflussfaktoren für datensatzspezifischen für die Vorhersage, jeweils mit dem angegebenen Spaltennamen als Präfix.
+Wenn Sie ein binäres Vorhersagemodell anwenden, werden drei Spalten mit dem vorhergesagten Ergebnis, der Wahrscheinlichkeitsbewertung und den wichtigsten datensatzspezifischen Einflussfaktoren für die Vorhersage hinzugefügt, wobei jeweils der angegebene Spaltenname vorangestellt wird.
 
-![Drei Spalten vom Ergebnis](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-24.png)
+![Drei Ergebnisspalten](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-24.png)
 
-Aufgrund eines bekannten Problems sind die bewerteten Ausgabespalten in der erweiterten Entität nur aus Power BI Desktop zugegriffen werden kann. Um diese im Dienst der Vorschau anzuzeigen, müssen Sie eine spezielle Vorschau-Entität verwenden.
+Aufgrund eines bekannten Problems sind die bewerteten Ausgabespalten in der erweiterten Entität nur über Power BI Desktop zugänglich. Um diese im Dienst in der Vorschau anzuzeigen, müssen Sie eine besondere Vorschauentität verwenden.
 
-Die Datenfluss-Aktualisierung abgeschlossen ist, wählen Sie die **OnlineShoppers bereichert Kauf Absicht Vorhersage Vorschau** Entität, die die Ergebnisse anzuzeigen.
+Sobald die Dataflowaktualisierung abgeschlossen ist, können Sie die **OnlineShoppers enriched Purchase Intent Prediction Preview**-Entität auswählen, um die Ergebnisse anzuzeigen.
 
 ![Anzeigen der Ergebnisse](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-25.png)
 
-## <a name="using-the-scored-output-from-the-model-in-a-power-bi-report"></a>Verwenden die bewertete Ausgabe aus dem Modell in Power BI-Berichten
+## <a name="using-the-scored-output-from-the-model-in-a-power-bi-report"></a>Verwenden der bewerteten Ausgabe des Modells in einem Power BI-Bericht
 
-Um die bewerteten aus Ihrer Machine learning-Modell zu verwenden, können Sie aus dem Power BI Desktop Ihre Datenfluss Verbinden mit dem Connector Datenflüsse. Die **OnlineShoppers bereichert Kauf Absicht Vorhersage** Entität kann jetzt verwendet werden, um die Vorhersagen aus Ihrem Modell in Power BI-Berichte zu integrieren.
+Wenn Sie die bewertete Ausgabe Ihres Machine Learning-Modells verwenden möchten, können Sie mit dem Dataflows-Connector eine Verbindung mit Ihrem Dataflow über den Power BI-Desktop herstellen. Mit der **OnlineShoppers enriched Purchase Intent Prediction**-Entität können Sie jetzt die Vorhersagen aus dem Modell in Power BI-Berichte einbinden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Tutorial haben Sie erstellt und eine binäre Vorhersage-Modell in Power BI mit diesen Schritten angewendet:
+In diesem Tutorial haben Sie mithilfe der folgenden Schritte ein binäres Vorhersagemodell in Power BI erstellt und angewendet:
 
-* Erstellen Sie einen Datenfluss mit der Eingabedaten
-* Erstellen und Trainieren von Machine Learning-Modellen
-* Überprüfen Sie den Modell-Überprüfungsbericht
-* Das Modell auf eine Entität Datenfluss anwenden
-* Verwenden die bewertete Ausgabe aus dem Modell in Power BI-Berichten
+* Erstellen eines Dataflows mit den Eingabedaten
+* Erstellen und Trainieren eines Machine Learning-Modells
+* Auswerten des Modellüberprüfungsberichts
+* Anwenden des Modells auf eine Dataflowentität
+* Verwenden der bewerteten Ausgabe des Modells in einem Power BI-Bericht
 
-Weitere Informationen zur Automatisierung von Machine Learning in Power BI finden Sie unter [automatisierte Machine Learning in Power BI (Vorschau)](service-machine-learning-automated.md).
+Weitere Informationen zur Machine Learning-Automatisierung in Power BI finden Sie unter [Automatisiertes Machine Learning in Power BI (Vorschauversion)](service-machine-learning-automated.md).
