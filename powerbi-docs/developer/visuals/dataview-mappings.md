@@ -1,20 +1,20 @@
 ---
 title: Grundlegendes zur Zuordnung von Datenansichten in Power BI-Visuals
 description: In diesem Artikel wird beschrieben, wie Power BI Daten transformiert, bevor diese an Visuals übergeben werden.
-author: asander
-ms.author: asander
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 07989183688045f34d78e71cdaad5045d080f436
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: 77d5d6423c8246712d12dcc041d32ae73f68b72e
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70237226"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71193557"
 ---
 # <a name="understand-data-view-mapping-in-power-bi-visuals"></a>Grundlegendes zur Zuordnung von Datenansichten in Power BI-Visuals
 
@@ -58,7 +58,7 @@ Power BI erzeugt eine Datenansicht mit einer einzelnen `categorical`-Zuordnung. 
 }
 ```
 
-## <a name="conditions"></a>Bedingungen
+## <a name="conditions"></a>„conditions“
 
 In diesem Abschnitt werden Bedingungen für eine bestimmte Datenzuordnung beschrieben. Sie können mehrere Gruppen von Bedingungen bereitstellen. Wenn die Daten mit einer der beschriebenen Bedingungsgruppen übereinstimmen, werden die Daten vom Visual als gültig betrachtet.
 
@@ -369,7 +369,7 @@ Die Tabellendatenansicht ist eine einfache Datenzuordnung. Im Wesentlichen hande
 
 ### <a name="example-7"></a>Beispiel 7
 
-Folgende Datenrollen und -zuordnungen sind gegeben:
+Mit den angegebenen Funktionen
 
 ```json
 "dataRoles": [
@@ -397,7 +397,7 @@ Folgende Datenrollen und -zuordnungen sind gegeben:
 
 Mit diesen können Sie die Tabellendatenansicht wie folgt visualisieren:  
 
-| Land| Jahr | Sales |
+| Land| Jahr | Vertrieb |
 |-----|-----|------|
 | USA | 2016 | 100 |
 | USA | 2015 | 50 |
@@ -516,7 +516,7 @@ Power BI erzeugt eine hierarchische Datenstruktur. Das Stammelement dieser Struk
 
 Dataset:
 
-| Parents (Eltern) | Children (Kinder) | Grandchildren (Enkelkinder) | Spalten | Werte |
+| Übergeordnete Elemente | Untergeordnete Elemente | Grandchildren (Enkelkinder) | Spalten | Werte |
 |-----|-----|------|-------|-------|
 | Parent1 | Child1 | Grand child1 | Col1 | 5 |
 | Parent1 | Child1 | Grand child1 | Col2 | 6 |
@@ -618,7 +618,7 @@ Die Datenstruktur für das Visual wird wie im folgenden Code definiert. Nur die 
 
 Sie können einen Datenverringerungsalgorithmus verwenden, um festzulegen, wie viele Daten für die Datenansicht verwendet werden.
 
-Auf alle benutzerdefinierten Visuals wird standardmäßig der Datenverringerungsalgorithmus „top“ angewendet, wobei *count* auf 1000 Datenpunkte festgelegt ist. Das Festlegen der folgenden Eigenschaften in *capabilities.json* hat dieselben Auswirkungen:
+Auf alle Power BI-Visuals wird standardmäßig der Datenverringerungsalgorithmus „top“ angewendet, wobei *count* auf 1000 Datenpunkte festgelegt ist. Das Festlegen der folgenden Eigenschaften in *capabilities.json* hat dieselben Auswirkungen:
 
 ```json
 "dataReductionAlgorithm": {
@@ -628,7 +628,7 @@ Auf alle benutzerdefinierten Visuals wird standardmäßig der Datenverringerungs
 }
 ```
 
-Sie können für *count* einen anderen Integerwert bis 30.000 festlegen. R-basierte benutzerdefinierte Visuals können bis zu 150.000 Zeilen unterstützen.
+Sie können für *count* einen anderen Integerwert bis 30.000 festlegen. R-basierte Power BI-Visuals können bis zu 150000 Zeilen unterstützen.
 
 ## <a name="data-reduction-algorithm-types"></a>Typen von Datenverringerungsalgorithmen
 

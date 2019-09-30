@@ -1,22 +1,22 @@
 ---
 title: Hinzufügen von Formatierungsoptionen zu einem benutzerdefinierten Power BI-Visual
 description: Tutorial zum Entwickeln von benutzerdefinierten Formatierungsoptionen für Power BI-Visuals
-author: sranins
-ms.author: rasala
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 11/21/2018
-ms.openlocfilehash: 56134143a752a094c339248c3eeeab57116d3501
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 5fa14e3aa8a303206d52359d04db05850e096d81
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61380141"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194587"
 ---
-# <a name="tutorial-adding-formatting-options-to-a-power-bi-custom-visual"></a>Tutorial: Hinzufügen von Formatierungsoptionen zu einem benutzerdefinierten Power BI-Visual
+# <a name="tutorial-adding-formatting-options-to-a-power-bi-visual"></a>Tutorial: Hinzufügen von Formatierungsoptionen zu einem Power BI-Visual
 
 Dieses Tutorial erläutert die genaue Vorgehensweise beim Hinzufügen allgemeiner Eigenschaften zu einem Visual.
 
@@ -263,4 +263,4 @@ Tipps zum Debuggen von benutzerdefinierten Visualisierungen finden Sie im [Debug
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Sie können Ihr neu entwickeltes Visual auflisten, sodass andere Personen dieses verwenden können, indem Sie es zu **AppSource** übermitteln. Weitere Informationen zu diesem Vorgang finden Sie im Artikel zum [Veröffentlichen benutzerdefinierter Visuals in AppSource](office-store.md).
+Sie können Ihr neu entwickeltes Visual auflisten, sodass andere Personen dieses verwenden können, indem Sie es zu **AppSource** übermitteln. Weitere Informationen zu diesem Vorgang finden Sie im Artikel zum [Veröffentlichen Power BI-Visuals in AppSource](office-store.md).

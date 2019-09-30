@@ -1,24 +1,24 @@
 ---
 title: Hinzufügen der Unterstützung von Lesezeichen für Power BI-Visuals
 description: Power BI-Visuals unterstützen das Wechseln zwischen Lesezeichen.
-author: zBritva
-ms.author: v-ilgali
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: c7fb8fa6fcf8c07f0d8f466892fff8d03a492a79
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: c19b67a59d0ecb4cbfbcf5ad8dd18886f440e164
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70237283"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194433"
 ---
 # <a name="add-bookmark-support-for-power-bi-visuals"></a>Hinzufügen der Unterstützung von Lesezeichen für Power BI-Visuals
 
-Mithilfe von Lesezeichen in Power BI-Berichten lassen sich konfigurierte Ansichten einer Berichtsseite sowie der Auswahl- und Filterzustand des Visuals erfassen. Allerdings sind zusätzliche Aktionen vonseiten benutzerdefinierter Visuals nötig, damit Lesezeichen unterstützt werden und angemessen auf Änderungen reagiert werden kann.
+Mithilfe von Lesezeichen in Power BI-Berichten lassen sich konfigurierte Ansichten einer Berichtsseite sowie der Auswahl- und Filterzustand des Visuals erfassen. Allerdings sind zusätzliche Aktionen von Seiten der Power BI-Visuals nötig, damit Lesezeichen unterstützt werden und angemessen auf Änderungen reagiert werden kann.
 
 Weitere Informationen zu Lesezeichen finden Sie unter [Verwenden von Lesezeichen zum Teilen von Erkenntnissen und Erstellen von Präsentationen in Power BI](https://docs.microsoft.com/power-bi/desktop-bookmarks).
 
@@ -32,7 +32,7 @@ Wenn Ihr Visual mit anderen Visuals interagiert, Datenpunkte auswählt oder ande
 
 2. Aktualisieren Sie die Visual-API auf Version 1.11.0, damit Sie `registerOnSelectCallback` in einer Instanz von `SelectionManager` verwenden können. Das Hilfsprogramm wird für nicht filterbezogene Visuals vorausgesetzt, die den normalen `SelectionManager` anstelle des `InteractivityService` verwenden.
 
-### <a name="how-custom-visuals-interact-with-power-bi-in-report-bookmarks"></a>So interagieren benutzerdefinierte Visuals mit Power BI im Berichtslesezeichen
+### <a name="how-power-bi-visuals-interact-with-power-bi-in-report-bookmarks"></a>So interagieren Power BI-Visuals mit Power BI im Berichtslesezeichen
 
 Betrachten wir das folgende Szenario: Sie möchten mehrere Lesezeichen auf der Berichtsseite mit einem anderen Auswahlzustand in jedem Lesezeichen erstellen.
 

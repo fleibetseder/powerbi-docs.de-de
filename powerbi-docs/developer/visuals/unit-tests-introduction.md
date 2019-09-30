@@ -1,20 +1,20 @@
 ---
 title: Einführung in Komponententests für Power BI-Visualprojekte
 description: In diesem Artikel wird beschrieben, wie Sie Komponententests für Power BI-Visualprojekte erstellen.
-author: zBritva
-ms.author: v-ilgali
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: f0040ef53fbbce8c7133e5f645bcbddb0bbfadea
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: bb9835ceba302716c2c4b1e28eda33c6e4b1db42
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70236720"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71192462"
 ---
 # <a name="tutorial-add-unit-tests-for-power-bi-visual-projects"></a>Tutorial: Hinzufügen von Komponententests zu Power BI-Visualprojekten
 
@@ -616,4 +616,4 @@ Sie können sich für jede Datei den Quellcode anzeigen lassen. Die `Coverage`-H
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Sobald Ihr Visual bereit ist, können Sie es zur Veröffentlichung übermitteln. Weitere Informationen finden Sie unter [Veröffentlichen von benutzerdefinierten Visuals in AppSource](../office-store.md).
+Sobald Ihr Visual bereit ist, können Sie es zur Veröffentlichung übermitteln. Weitere Informationen finden Sie unter [Veröffentlichen von Power BI-Visuals in AppSource](../office-store.md).

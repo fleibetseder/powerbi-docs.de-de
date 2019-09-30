@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/12/2018
-ms.openlocfilehash: 24854cd459996c766507b50dc6af41d995ba7204
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 93c26d64193346b9b2db52bb2d0a0bbe32a4e97b
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073033"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305711"
 ---
 # <a name="power-bi-embedded-performance-best-practices"></a>Bewährte Methoden für die Leistung von Power BI Embedded
 
@@ -64,21 +64,23 @@ Organisationen mit Power BI Premium-Funktionen oder Power BI Embedded-Funktionen
 
 ## <a name="preload"></a>Vorab Laden
 
-Verwenden Sie die JavaScript-API **preload**, um die Endbenutzerleistung zu verbessern. `powerbi.preload()` lädt Javascript, CSS-Dateien und andere Artefakte herunter, die später zum Einbetten eines Berichts verwendet werden.
+Verwenden Sie `powerbi.preload()`, um die Leistung für Endbenutzer zu verbessern. Die Methode `powerbi.preload()` lädt Javascript, CSS-Dateien und andere Artefakte herunter, die später zum Einbetten eines Berichts verwendet werden.
 
-Rufen Sie **preload** (Vorab Laden) auf, wenn Sie den Bericht nicht sofort einbetten. Wenn Sie beispielsweise einen Bericht auf den Klick auf eine Schaltfläche hin einbetten, ist es sinnvoll, **preload** während des Ladens der vorhergehenden Seite aufzurufen. Wenn der Benutzer der Anwendung dann auf die Schaltfläche klickt, erfolgt das Rendern schneller.
-
-> [!NOTE]
-> Es wird nicht empfohlen, „preload“ unmittelbar vor dem Einbetten des Berichts aufzurufen. Stattdessen können Sie Bootstrap verwenden, um den iFrame für die Einbettung vorzubereiten.
+Rufen Sie `powerbi.preload()` auf, wenn Sie den Bericht nicht sofort einbetten. Wenn beispielsweise die eingebetteten Power BI-Inhalte nicht auf der Startseite angezeigt werden, verwenden Sie `powerbi.preload()`, um die Artefakte, die zum Einbetten der Inhalte verwendet werden, herunterzuladen und zwischenzuspeichern.
 
 ## <a name="bootstrapping-the-iframe"></a>Bootstrapping des iFrames
 
 > [!NOTE]
-> [Power BI-Client-SDK](https://github.com/Microsoft/PowerBI-JavaScript), Version 2.9 (Beta), ist für das Bootstrappen des iFrames erforderlich. 
->
-> `powerbi.bootstrap(element, config)` kann verwendet werden, um den iFrame für das Einbetten vorzubereiten. Der wichtigste Anwendungsfall für diese Funktion besteht in der Parallelisierung des iFrame-Bootstraps und der Back-End-Aufrufe, die für das Einbetten verwendet werden (beispielsweise [Get reports](/rest/api/power-bi/reports/getreportsingroup)-Aufruf).
+> [Power BI-Client SDK](https://github.com/Microsoft/PowerBI-JavaScript), Version 2.9, ist zum Bootstrappen des iFrames erforderlich.
 
-[Weitere Informationen über iFrame-Bootstrap](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bootstrap---For-Better-Performance).
+`powerbi.bootstrap(element, config)` ermöglicht Ihnen, mit dem Einbetten zu beginnen, bevor alle erforderlichen Parameter verfügbar sind. Die Bootstrap-API bereitet den iFrame vor und initialisiert ihn.
+Wenn Sie die Bootstrap-API verwenden, ist trotzdem ein Aufruf von `powerbi.embed(element, config)` für das gleiche HTML-Element erforderlich.
+
+Beispielsweise besteht einer der Anwendungsfälle für diese Funktion in der parallelen Ausführung des iFrame-Bootstraps und der Back-End-Aufrufe zum Einbetten.
+> [!TIP]
+> Verwenden Sie die Bootstrap-API, wenn es möglich ist, den iFrame zu generieren, bevor er für den Endbenutzer sichtbar ist.
+
+[Weitere Informationen über iFrame-Bootstrap](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bootstrap-For-Better-Performance).
 
 ## <a name="measure-performance"></a>Messen der Leistung
 
