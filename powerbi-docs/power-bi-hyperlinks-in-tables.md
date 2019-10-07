@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/30/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 58cb009e29c05ce318c5931fb418617e1ef63f4f
-ms.sourcegitcommit: ba085b248c54e8fb1fd8eb2bb23a814e3fdd7ff6
+ms.openlocfilehash: b158e968d0fd35859cfd293177a7273e8311d5b2
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70937067"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715290"
 ---
 # <a name="add-hyperlinks-urls-to-a-table"></a>Hinzufügen von Hyperlinks (URLs) zu einer Tabelle
 In diesem Thema erfahren Sie, wie Sie Hyperlinks (URLs) einer Tabelle hinzufügen. Mit Power BI Desktop fügen Sie einer Tabelle oder Matrix Hyperlinks (URLs) hinzu. Dann können Sie entweder in Power BI Desktop oder dem Power BI-Dienst diese Hyperlinks Ihren Berichtstabellen und Matrizen hinzuzufügen. 
@@ -57,7 +57,7 @@ Das Verfahren zum Hinzufügen eines Hyperlinks hängt davon ab, ob Sie die Daten
 
     ![URL-Symbol aktivieren](media/power-bi-hyperlinks-in-tables/power-bi-url-icon-on.png)
 
-1. (Optional) [Veröffentlichen Sie den Bericht aus Power BI Desktop im Power BI-Dienst](guided-learning/publishingandsharing.yml?tutorial-step=2), und öffnen Sie den Bericht im Power BI-Dienst. Die Hyperlinks werden hier ebenfalls geöffnet.
+1. (Optional) [Veröffentlichen Sie den Bericht aus Power BI Desktop im Power BI-Dienst](/learn/modules/publish-share-power-bi/2-publish-reports), und öffnen Sie den Bericht im Power BI-Dienst. Die Hyperlinks werden hier ebenfalls geöffnet.
 
 ### <a name="for-data-connected-with-directquery"></a>Für über DirectQuery verbundene Daten
 Im DirectQuery-Modus kann keine neue Spalte erstellt werden.  Wenn die Daten jedoch bereits URLs enthalten, können Sie diese in Hyperlinks umwandeln.
@@ -65,7 +65,7 @@ Im DirectQuery-Modus kann keine neue Spalte erstellt werden.  Wenn die Daten jed
 1. Erstellen Sie in der Berichtsansicht eine Tabelle mit einem Feld, das URLs enthält.
 2. Wählen Sie die Spalte aus, und wählen Sie anschließend auf der Registerkarte **Modellierung** das Dropdownmenü für **Datenkategorie** aus.
 3. Wählen Sie **Web-URL**aus. Die Hyperlinks werden blau und unterstrichen angezeigt.
-4. (Optional) [Veröffentlichen Sie den Bericht aus Power BI Desktop im Power BI-Dienst](guided-learning/publishingandsharing.yml?tutorial-step=2), und öffnen Sie den Bericht im Power BI-Dienst. Die Hyperlinks werden hier ebenfalls geöffnet.
+4. (Optional) [Veröffentlichen Sie den Bericht aus Power BI Desktop im Power BI-Dienst](/learn/modules/publish-share-power-bi/2-publish-reports), und öffnen Sie den Bericht im Power BI-Dienst. Die Hyperlinks werden hier ebenfalls geöffnet.
 
 ## <a name="create-a-table-or-matrix-hyperlink-in-excel-power-pivot"></a>Erstellen eines Tabellen- oder Matrix-Hyperlinks in Power Pivot für Excel
 Sie können Ihren Power BI-Tabellen und -Matrizen auch Hyperlinks hinzufügen, indem Sie die Hyperlinks im Dataset erstellen, bevor Sie das betreffende Dataset aus Power BI importieren bzw. eine Verbindung damit herstellen. In diesem Beispiel wird eine Excel-Arbeitsmappe verwendet.

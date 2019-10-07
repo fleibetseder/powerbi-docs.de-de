@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 61fc821e63889951aefd0ef815f885ffa8a880cf
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: 2c17378c14ef084ad6632e52df2a801832b311d9
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68994826"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715180"
 ---
 # <a name="download-a-report-from-the-power-bi-service-to-power-bi-desktop-preview"></a>Herunterladen eines Berichts aus dem Power BI-Dienst in Power BI Desktop (Vorschau)
 In Power BI Desktop können Sie einen Bericht (*PBIX*-Datei) von Ihrem lokalen Computer aus über den Power BI-Dienst veröffentlichen. Mit Power BI-Berichten können Sie auch andersherum vorgehen: Sie können auch einen Bericht aus dem Power BI-Dienst in Power BI Desktop herunterladen. Die Erweiterung für einen Power BI-Bericht ist in beiden Fällen „.pbix“.
@@ -26,7 +26,7 @@ Es sind einige Einschränkungen und Überlegungen zu berücksichtigen, die weite
 
 ## <a name="download-the-report-as-a-pbix-file"></a>Herunterladen des Berichts als PBIX-Datei
 
-Sie können nur Berichte herunterladen, die nach dem 23. November 2016 [mit Power BI Desktop erstellt](guided-learning/publishingandsharing.yml?tutorial-step=2) und seitdem aktualisiert wurden. Wenn er vor diesem Zeitpunkt erstellt wurde, ist die Menüoption **Bericht herunterladen** im Power BI-Dienst ausgegraut.
+Sie können nur Berichte herunterladen, die nach dem 23. November 2016 [mit Power BI Desktop erstellt](/learn/modules/publish-share-power-bi/2-publish-reports) und seitdem aktualisiert wurden. Wenn er vor diesem Zeitpunkt erstellt wurde, ist die Menüoption **Bericht herunterladen** im Power BI-Dienst ausgegraut.
 
 Gehen Sie zum Herunterladen der PBIX-Datei folgendermaßen vor:
 

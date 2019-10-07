@@ -10,12 +10,12 @@ ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
 ms.date: 09/13/2019
-ms.openlocfilehash: d2c0ab82a3b262a975c461a4414ed7fd3b1bc060
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 104b903e6b7a47b5ce35dc5c0627a43d54c1090a
+ms.sourcegitcommit: 0687908938e4c3b68401fd511ec1c28fb54ddeb3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075902"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71691224"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Vergleich zwischen Power BI-Berichtsserver und Power BI-Dienst
 
@@ -52,7 +52,8 @@ Der Power BI-Berichtsserver und der Power BI-Dienst weisen viele Ähnlichkeiten,
 | Erweiterte Zusammenarbeit mit Office 365 | Nein | Ja | [Zusammenarbeiten in einem App-Arbeitsbereich ](../service-collaborate-power-bi-workspace.md) mit Office 365 |
 | R-Visuals | Nein | Ja | [Erstellen von R-Visuals](../desktop-r-visuals.md) in Power BI Desktop, um diese anschließend im Power BI-Dienst zu veröffentlichen. Power BI-Berichte können nicht zusammen mit R-Visuals im Power BI-Berichtsserver gespeichert werden.  |
 | Vorschaufeatures | Nein | Ja | [Aktivieren von Vorschaufeatures im Power BI-Dienst](../consumer/end-user-preview-features.md) |
-| Benutzerdefinierte Visuals | Ja | Ja | [Benutzerdefinierte Visualisierungen in Power BI](../power-bi-custom-visuals.md) |
+| Benutzerdefinierte visuelle Elemente | Ja | Ja | [Benutzerdefinierte Visualisierungen in Power BI](../power-bi-custom-visuals.md) |
+| Zusammengesetzte Modelle | Nein | Ja |
 | Power BI Desktop | Für den Berichtsserver optimierte Version, zum Download mit dem Berichtsserver verfügbar | Für Power BI-Dienst optimierte Version, verfügbar im Windows Store | [Power BI Desktop für den Berichtsserver](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop für den Power BI-Dienst](http://aka.ms/pbidesktopstore) |
 
 ## <a name="next-steps"></a>Nächste Schritte

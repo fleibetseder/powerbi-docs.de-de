@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: f44c83613f874aec84a389ac5034ebde193467c2
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: 4af7a6305ace9113e912f0ad1527064c505f0ca8
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70840605"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715512"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Informationen zum Sternschema und der Wichtigkeit für Power BI
 
@@ -205,6 +205,6 @@ Dieser m:n-Entwurfsansatz ist gut dokumentiert und ist auch ohne Überbrückungs
 Weitere Informationen zum Entwurf von Sternschemas und Power BI-Modellen finden Sie in den folgenden Artikeln:
 
 - [Wikipedia-Artikel zur dimensionalen Modellierung](https://go.microsoft.com/fwlink/p/?linkid=246459)
-- [Erstellen und Verwalten von Beziehungen in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-create-and-manage-relationships)
-- [Beziehungen mit einer m:n-Kardinalität in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships)
-- [Geführtes Tutorial: Modellierung](https://docs.microsoft.com/power-bi/guided-learning/modeling)
+- [Erstellen und Verwalten von Beziehungen in Power BI Desktop](../desktop-create-and-manage-relationships.md)
+- [Beziehungen mit einer m:n-Kardinalität in Power BI Desktop](../desktop-many-to-many-relationships.md)
+- [Geführtes Tutorial: Modellierung](/learn/modules/model-data-power-bi/)
