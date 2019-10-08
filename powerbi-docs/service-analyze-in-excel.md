@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/04/2019
+ms.date: 09/26/2019
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 5dbfa400f25f6981f7a73bffe1afad2acf735334
-ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.openlocfilehash: b04feaff983f2a4384fc87028355143264c6e6b1
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70391882"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71325511"
 ---
 # <a name="analyze-in-excel"></a>In Excel analysieren
 Es gibt Situationen, in denen Sie zum Anzeigen von und Interagieren mit einem Datenset aus Power BI Excel verwenden möchten. Mit **In Excel analysieren** können Sie genau dies tun. Greifen Sie in Excel basierend auf dem in Power BI existierenden Dataset auf PivotTable-, Diagramm- und Datenschnitt-Features in Excel zu.
@@ -25,11 +25,13 @@ Es gibt Situationen, in denen Sie zum Anzeigen von und Interagieren mit einem Da
 Es gibt diverse Anforderungen für die Verwendung von **In Excel analysieren**:
 
 * **In Excel analysieren** wird für Microsoft Excel 2010 SP1 und höher unterstützt.
+
 * Excel-PivotTables unterstützen keine Drag & Drop-Aggregation von numerischen Feldern. Ihr Dataset in Power BI *muss über vordefinierte Measures verfügen*.
 * In einigen Organisationen gelten möglicherweise Gruppenrichtlinienregeln, durch die eine Installation der erforderlichen Updates für **In Excel analysieren** für Excel verhindert wird. Wenn Sie die Updates nicht installieren können, wenden Sie sich an Ihren Administrator.
 * **In Excel analysieren** erfordert, dass sich das Dataset in Power BI Premium befindet oder der Benutzer über eine Power BI Pro-Lizenz verfügt. Weitere Informationen zu den funktionellen Unterschieden zwischen den Lizenztypen finden Sie unter [Power BI-Features nach Lizenztyp](service-features-license-type.md). 
 * Benutzer können mithilfe von „In Excel analysieren“ eine Verbindung mit Datasets herstellen, wenn sie über Leseberechtigung für das zugrunde liegende Dataset verfügen.  Ein Benutzer hat mehrere Möglichkeiten, an Leseberechtigungen zu gelangen: Er ist entweder ein Mitglied des Arbeitsbereichs, das das Dataset enthält oder er besitzt einen Bericht oder ein Dashboard, das das Dataset verwendet und mit ihm geteilt wurde, oder er hat die Berechtigung für eine App, die das Dataset enthält.
 * Bei **In Excel analysieren** handelt es sich um eine Funktion des Power BI-Diensts, die im Power BI-Berichtsserver sowie in Power BI Embedded nicht verfügbar ist. 
+* **In Excel analysieren** wird nur von Geräten unterstützt, auf denen Microsoft Windows ausgeführt wird.
 
 ## <a name="how-does-it-work"></a>Funktionsweise
 Wenn Sie **In Excel analysieren** im Menü mit den Auslassungszeichen (...) auswählen, das mit einem Dataset oder Bericht in **Power BI** verknüpft ist, erstellt Power BI eine ODC-Datei und lädt diese vom Browser auf Ihrem Computer herunter.

@@ -1,37 +1,37 @@
 ---
-title: Verwenden von R-gestützten, benutzerdefinierten Visualisierungen in Power BI
-description: Verwenden von R-gestützten, benutzerdefinierten Visualisierungen in Power BI
-author: sranins
-ms.author: rasala
-manager: kfile
+title: Verwenden von R-gestützten Power BI-Visuals in Power BI
+description: Verwenden von R-gestützten Power BI-Visuals in Power BI
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 07/27/2018
 LocalizationGroup: Create reports
-ms.openlocfilehash: d79164ea5b66fe003f913742436a817d76d798e0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: b5f8677b3207122831e3d2cae6c07aa5bbcb9983
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61278648"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194599"
 ---
-# <a name="use-r-powered-custom-visuals-in-power-bi"></a>Verwenden von R-gestützten, benutzerdefinierten Visualisierungen in Power BI
+# <a name="use-r-powered-power-bi-visuals-in-power-bi"></a>Verwenden von R-gestützten Power BI-Visuals in Power BI
 
-In **Power BI Desktop** und im **Power BI-Dienst** können Sie R-gestützte benutzerdefinierte Visuals erstellen, ganz ohne Kenntnisse von R und ohne Skripts in R zu verfassen. Dadurch können Sie die analytischen Möglichkeiten von R-Visualisierungen und R-Skripten nutzen, ohne R erlernen oder in R programmieren zu müssen.
+In **Power BI Desktop** und im **Power BI-Dienst** können Sie R-gestützte Power BI-Visuals erstellen, ganz ohne Kenntnisse von R und ohne Skripts in R zu verfassen. Dadurch können Sie die analytischen Möglichkeiten von R-Visualisierungen und R-Skripten nutzen, ohne R erlernen oder in R programmieren zu müssen.
 
-Um R-gestützte benutzerdefinierte Visuals zu verwenden, wählen Sie das gewünschte benutzerdefinierte R-Visual im [**AppSource**](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1)-Katalog der **benutzerdefinierten Visuals** für Power BI aus, und laden Sie es herunter.
+Um R-gestützte Power BI-Visuals zu verwenden, wählen Sie das gewünschte benutzerdefinierte R-Visual im [**AppSource**](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1)-Katalog der **Power BI-Visuals** für Power BI aus, und laden Sie es herunter.
 
 ![R-Visual 1a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_1a.png)
 
 In den folgenden Abschnitten wird beschrieben, wie Sie R-gestützte Visualisierungen in **Power BI Desktop** auswählen, laden und verwenden können.
 
-## <a name="use-r-custom-visuals"></a>Verwenden benutzerdefinierter R-Visuals
+## <a name="use-r-power-bi-visuals"></a>Verwenden von R-gestützten Power BI-Visuals
 
-Um R-gestützte, benutzerdefinierte Visuals zu verwenden, laden Sie die einzelnen Visuals aus der Bibliothek **Custom visuals** (Benutzerdefinierte Visuals) herunter. Dann können Sie die diese wie jedes andere Visual in **Power BI Desktop** verwenden. Es gibt zwei Möglichkeiten, benutzerdefinierte Visuals zu erhalten: Sie können sie von der **AppSource**-Website herunterladen, oder Sie können sie in **Power BI Desktop** suchen und importieren. 
+Um R-gestützte Power BI-Visuals zu verwenden, laden Sie die einzelnen Visuals aus der Bibliothek **Power BI-Visuals** herunter. Dann können Sie die diese wie jedes andere Visual in **Power BI Desktop** verwenden. Es gibt zwei Möglichkeiten, Power BI-Visuals zu erhalten: Sie können sie von der **AppSource**-Website herunterladen, oder Sie können sie in **Power BI Desktop** suchen und importieren. 
 
-### <a name="get-custom-visuals-from-appsource"></a>Herunterladen benutzerdefinierter Visuals aus AppSource
+### <a name="get-power-bi-visuals-from-appsource"></a>Herunterladen von Power BI-Visuals aus AppSource
 
 Befolgen Sie die folgenden Schritte, um benutzerdefinierte Visuals auf der **AppSource**-Website zu suchen und auszuwählen:
 
@@ -50,7 +50,7 @@ Befolgen Sie die folgenden Schritte, um benutzerdefinierte Visuals auf der **App
 
    ![R-Visual 3a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_3a.png)
 
-   Um R-gestützte, benutzerdefinierte Visualisierungen im **Power BI-Dienst** zu verwenden, brauchen Sie R nicht zu installieren. Wenn Sie R-gestützte, benutzerdefinierte Visualisierungen hingegen in **Power BI Desktop** verwenden möchten, *müssen* Sie R auf dem lokalen Computer installieren. Hier können Sie R herunterladen:
+   Um R-gestützte Power BI-Visuals im **Power BI-Dienst** zu verwenden, ist es nicht erforderlich, R nicht zu installieren. Wenn Sie R-gestützte Power BI-Visuals hingegen in **Power BI Desktop** verwenden möchten, *müssen* Sie R auf dem lokalen Computer installieren. Hier können Sie R herunterladen:
 
    * [CRAN](https://cran.r-project.org/)
    * [MRO](https://mran.microsoft.com/)
@@ -79,25 +79,25 @@ Befolgen Sie die folgenden Schritte, um benutzerdefinierte Visuals auf der **App
 
     Es lohnt sich, die Bibliothek häufiger zu besuchen, da regelmäßig neue Visuals hinzugefügt werden.
 
-### <a name="get-custom-visuals-from-within-power-bi-desktop"></a>Importieren benutzerdefinierter Visuals in **Power BI Desktop**
+### <a name="get-power-bi-visuals-from-within-power-bi-desktop"></a>Importieren Power BI-Visuals in **Power BI Desktop**
 
-1. Sie können benutzerdefinierte Visuals auch in **Power BI Desktop** importieren. Klicken Sie in **Power BI Desktop** auf die Auslassungspunkte (...) im Bereich **Visuals**, und wählen Sie **Aus Marketplace importieren** aus.
+1. Sie können Power BI-Visuals auch in **Power BI Desktop** importieren. Klicken Sie in **Power BI Desktop** auf die Auslassungspunkte (...) im Bereich **Visuals**, und wählen Sie **Aus Marketplace importieren** aus.
 
    ![R-Visual 4a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_4a.png)
 
-2. Anschließend wird das Dialogfeld **Power BI-Visuals** angezeigt, in dem Sie durch die verfügbaren benutzerdefinierten Visuals scrollen und das gewünschte Visual auswählen können. Sie können anhand des Namens suchen, eine Kategorie auswählen oder einfach durch die verfügbaren Visuals scrollen. Wenn Sie Ihre Auswahl getroffen haben, wählen Sie einfach **Hinzufügen** aus, um das benutzerdefinierte Visual zu **Power BI Desktop** hinzuzufügen.
+2. Anschließend wird das Dialogfeld **Power BI-Visuals** angezeigt, in dem Sie durch die verfügbaren Power BI-Visuals scrollen und das gewünschte Visual auswählen können. Sie können anhand des Namens suchen, eine Kategorie auswählen oder einfach durch die verfügbaren Visuals scrollen. Wenn Sie Ihre Auswahl getroffen haben, wählen Sie einfach **Hinzufügen** aus, um das benutzerdefinierte Visual zu **Power BI Desktop** hinzuzufügen.
 
    ![R-Visual 12](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_12.png)
 
-## <a name="contribute-r-powered-custom-visuals"></a>Beisteuern R-gestützter benutzerdefinierter Visuals
+## <a name="contribute-r-powered-power-bi-visuals"></a>Beisteuern R-gestützter Power BI-Visuals
 
-Wenn Sie für Ihre Berichte eigene R-Visuals erstellen, können Sie diese für Benutzer auf der ganzen Welt über den **Katalog mit benutzerdefinierten Visuals** freigeben. Beiträge werden über GitHub eingereicht. Dieser Vorgang wird hier beschrieben:
+Wenn Sie für Ihre Berichte eigene R-Visuals erstellen, können Sie diese für Benutzer auf der ganzen Welt über den **Power BI-Visualkatalog** freigeben. Beiträge werden über GitHub eingereicht. Dieser Vorgang wird hier beschrieben:
 
-* [Contributing to the R-powered custom visuals gallery (in englischer Sprache)](https://github.com/Microsoft/PowerBI-visuals#building-r-powered-custom-visual-corrplot)
+* [Contributing to the R-powered Power BI visuals gallery (in englischer Sprache)](https://github.com/Microsoft/PowerBI-visuals#building-r-powered-custom-visual-corrplot)
 
-## <a name="troubleshoot-r-powered-custom-visuals"></a>Problembehandlung für R-gestützte benutzerdefinierte Visuals
+## <a name="troubleshoot-r-powered-power-bi-visuals"></a>Problembehandlung bei R-gestützten Power BI-Visuals
 
-R-gestützte benutzerdefinierte Visualisierungen weisen bestimmte Abhängigkeiten auf, die berücksichtigt werden müssen, damit die Visualisierungen ordnungsgemäß ausgeführt werden. Wenn R-gestützte benutzerdefinierte Visualisierungen nicht ordnungsgemäß ausgeführt oder geladen werden, hat das Problem in der Regel eine der folgenden Ursachen:
+R-gestützte Power BI-Visuals weisen bestimmte Abhängigkeiten auf, die berücksichtigt werden müssen, damit die visuellen Elemente ordnungsgemäß ausgeführt werden. Wenn R-gestützte Power BI-Visuals nicht ordnungsgemäß ausgeführt oder geladen werden, hat das Problem in der Regel eine der folgenden Ursachen:
 
 * Die R-Engine fehlt.
 * Fehler im R-Skript, auf dem die Visualisierung basiert.
@@ -150,7 +150,7 @@ Das Power BI-Team arbeitet daran, diese Probleme zu beheben, bevor sie bei Ihnen
 
 Betrachten Sie die folgenden zusätzlichen Informationen über R in Power BI.
 
-* [Power BI-Katalog mit benutzerdefinierten Visualisierungen](https://app.powerbi.com/visuals/)
+* [Power BI-Visualkatalog](https://app.powerbi.com/visuals/)
 * [Ausführen von R-Skripts in Power BI Desktop](desktop-r-scripts.md)
 * [Erstellen von visuellen R-Elementen in Power BI Desktop](desktop-r-visuals.md)
 * [Verwenden einer externen R-IDE mit Power BI](desktop-r-ide.md)

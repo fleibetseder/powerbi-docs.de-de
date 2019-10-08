@@ -11,14 +11,17 @@ ms.topic: conceptual
 ms.date: 06/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b12b2035d7686667535dfdddba42b4b8ca014d96
-ms.sourcegitcommit: 4ae1257c5d7b33aa2fafd91caf8b353a985c6771
+ms.openlocfilehash: ac9ffa4d1186a8ca6d4e2d55da4311bbce55903e
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67161123"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194654"
 ---
 # <a name="funnel-charts"></a>Trichterdiagramme
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Mit einem Trichterdiagramm kann ein linearer Prozess mit aufeinanderfolgenden und miteinander verbundenen Phasen visuell dargestellt werden. Ein Beispiel ist etwa ein Trichterdiagramm für den Verkauf, das die von den Kunden durchlaufenen Phasen nachverfolgt: Lead \> Qualifizierter Lead \> Potenzieller Kunde \> Vertrag \> Abschluss.  Die Form des Trichterdiagramms zeigt auf einen Blick den Zustand des nachverfolgten Prozesses an.
 
 Jede Phase des Diagramms stellt einen prozentualen Anteil am Gesamtwert dar. Daher hat ein Trichterdiagramm in den meisten Fällen die Form eines Trichters, wobei die erste Phase am größten und jede nachfolgende Phase etwas kleiner ist.  Ein birnenförmiges Diagramm ist hilfreich, um ein Problem im Prozess zu identifizieren.  In der Regel ist jedoch die erste Phase (die „Trichteröffnung“) am größten.
@@ -39,11 +42,27 @@ Trichterdiagramme sind gut für folgende Zwecke geeignet:
 ## <a name="working-with-funnel-charts"></a>Arbeiten mit Trichterdiagrammen
 Trichterdiagramme:
 
-* Können von Berichten und von Q&A angeheftet werden
 * Sortierbar
 * Vielfachunterstützung
 * Hervorheben und Kreuzfiltern durch andere Visualisierungen auf der gleichen Berichtseite möglich
 * Verwendung zum Hervorheben und Kreuzfiltern anderer Visualisierungen auf der gleichen Berichtseite möglich
+   > [!NOTE]
+   > In diesem Video sehen Sie, wie ein Trichterdiagramm anhand des Beispiels für Vertrieb und Marketing erstellt wird. Befolgen Sie dann die Schritte unterhalb des Videos, um es anhand der PBIX-Datei zum Analysebeispiel für Opportunity selbst auszuprobieren.
+   > 
+   > 
+## <a name="prerequisite"></a>Voraussetzung
+
+Dieses Tutorial verwendet die [PBIX-Datei zum Analysebeispiel für Opportunity](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix
+).
+
+1. Wählen Sie im oberen linken Bereich der Menüleiste die Option **Datei** > **Öffnen** aus.
+   
+2. Suchen Sie nach Ihrer Kopie der **PBIX-Datei zum Analysebeispiel für Opportunity**.
+
+1. Öffnen Sie die **PBIX-Datei zum Analysebeispiel für Opportunity** in der Berichtsansicht ![Screenshot des Berichtsansichtssymbols.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Auswählen ![Screenshot der gelben Registerkarte.,](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) um eine neue Seite hinzuzufügen.
+
 
 ## <a name="create-a-basic-funnel-chart"></a>Erstellen eines einfachen Trichterdiagramms
 In diesem Video sehen Sie, wie ein Trichterdiagramm anhand des Beispiels für Vertrieb und Marketing erstellt wird.
@@ -53,13 +72,13 @@ In diesem Video sehen Sie, wie ein Trichterdiagramm anhand des Beispiels für Ve
 
 Erstellen Sie jetzt ein eigenes Trichterdiagramm, das die Anzahl der Verkaufschancen in jeder der Verkaufsphasen anzeigt.
 
-In dieser Anleitung wird das Beispiel zur Opportunityanalyse verwendet. Wenn Sie diese Schritte selbst ausführen möchten, [laden Sie das Beispiel](../sample-datasets.md) für den Power BI-Dienst („app.powerbi.com“) oder Power BI Desktop herunter.   
-
-1. Beginnen Sie auf einer leeren Berichtsseite, und wählen Sie **SalesStage** \> **Vertriebsphase** aus. Wenn Sie den Power BI-Dienst verwenden, achten Sie darauf, den Bericht in der [Bearbeitungsansicht](../service-interact-with-a-report-in-editing-view.md) zu öffnen.
+1. Beginnen Sie auf einer leeren Berichtsseite, und wählen Sie **SalesStage** \> **Vertriebsphase** aus.
    
-    ![nach Vertriebsphase](media/power-bi-visualization-funnel-charts/funnelselectfield_new.png)
-2. [Wandeln Sie das Diagramm](power-bi-report-change-visualization-type.md) in ein Trichterdiagramm um. Beachten Sie, dass sich **Vertriebsphase** im Bereich der **Gruppe** befindet. 
-3. Wählen Sie im Bereich **Felder** die Option **Fakt** \> **Anzahl an Verkaufschancen** aus.
+    ![nach Vertriebsphase](media/power-bi-visualization-funnel-charts/funnelselectfield-new.png)
+
+1. Wählen Sie das Trichtersymbol aus, ![Trichterdiagramm-Symbol](media/power-bi-visualization-funnel-charts/power-bi-funnel-icon.png) um das Säulendiagramm in ein Trichterdiagramm zu konvertieren.
+
+2. Wählen Sie im Bereich **Felder** die Option **Fakt** \> **Anzahl an Verkaufschancen** aus.
    
     ![Erstellen des Trichterdiagramms](media/power-bi-visualization-funnel-charts/power-bi-funnel-2.png)
 4. Wenn Sie mit dem Mauszeiger auf einen Balken zeigen, werden zahlreiche Informationen angezeigt.
@@ -69,8 +88,8 @@ In dieser Anleitung wird das Beispiel zur Opportunityanalyse verwendet. Wenn Sie
    * Gesamte Konversionsrate (% der Leads) 
    * Änderungen zwischen den einzelnen Phasen in Prozent (in diesem Fall zwischen Angebots- und Lösungsphase)
      
-     ![Details für die Angebotsleiste](media/power-bi-visualization-funnel-charts/funnelhover_new.png)
-5. [Fügen Sie den Trichter als Dashboardkachel hinzu](../service-dashboard-tiles.md). 
+     ![Details für die Angebotsleiste](media/power-bi-visualization-funnel-charts/funnelhover-new.png)
+
 6. [Speichern Sie den Bericht](../service-report-save.md).
 
 ## <a name="highlighting-and-cross-filtering"></a>Hervorheben und Kreuzfiltern
@@ -82,15 +101,6 @@ Durch Markieren eines Balkens in einem Trichterdiagramm werden Kreuzfilter zu an
    
    ![Kurzes Video, das visuelle Interaktionen zeigt](media/power-bi-visualization-funnel-charts/funnelchartnoowl.gif)
 2. Informationen zum Festlegen der Einstellungen für die Kreuzhervorhebung und Kreuzfilterung von visuellen Elementen finden Sie unter [Interaktionen mit Visualisierungen in einem Power BI-Bericht](../service-reports-visual-interactions.md).
-
-## <a name="create-a-funnel-chart-using-qa"></a>Erstellen eines Trichterdiagramms mithilfe von Q&A
-Öffnen Sie das Dashboard für das Beispiel einer Opportunityanalyse oder ein anderes Dashboard, an das eine Visualisierung aus dem Dataset des Beispiels einer Opportunityanalyse angeheftet wurde.  Wenn Sie in Q&A eine Frage eingeben, sucht Power BI in allen dem ausgewählten Dashboard zugeordneten Datasets (d. h. mit Kacheln, die dem Dashboard angeheftet sind) nach Antworten. Weitere Informationen finden Sie unter [Power BI – Grundkonzepte](../service-basic-concepts.md).
-
-1. Geben Sie im Dashboard des Beispiels einer Opportunityanalyse Ihre Frage im Q&A-Fragefeld ein.
-   
-   ![Fragefeld und Trichter](media/power-bi-visualization-funnel-charts/power-bi-qna.png)
-   
-2. Fügen Sie „als Trichter“ hinzu, um den bevorzugten Visualisierungstyp anzugeben.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

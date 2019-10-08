@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 09/15/2019
 ms.author: tebercov
-ms.openlocfilehash: 8e08557c475f06c8a32cebb0b7ca0fe1054cf266
-ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
+ms.openlocfilehash: f936d5df9872d6dec8862709f614b2dc28f2e414
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67264546"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71195388"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Erstellen einer Vorlagen-App in Power BI
 
@@ -47,7 +47,7 @@ Um eine Vorlagen-App zu erstellen, die Sie an andere Power BI-Mandanten verteile
 
 3. Geben Sie einen Namen und für Ihren App-Arbeitsbereich ein und fügen Sie optional eine Beschreibung und ein Bild des Logos hinzu.
 
-4. Klicken Sie auf**Vorlagen-App entwickeln**.
+4. Erweitern Sie den Abschnitt **Erweitert**, und wählen Sie **Vorlagen-App entwickeln** aus.
 
     ![Vorlagen-App entwickeln](media/service-template-apps-create/power-bi-template-app-develop.png)
 
@@ -84,11 +84,13 @@ Nun, da sich Inhalt in Ihrem Arbeitsbereich befindet, können Sie diesen in eine
     - App-Logo (Maximale Dateigröße: 45 Tsd.; Seitenverhältnis 1:1; Formate: .PNG, .JPG, .JPEG)
     - Designfarbe der App
 
-    **Content (Inhalt)**
+    **Navigation**
 
-    **Landing Page der App:** Definieren Sie einen Bericht oder ein Dashboard, der bzw. das die Landing Page Ihrer App darstellen soll. Verwenden Sie eine Landing Page, die einen guten Eindruck vermittelt:
+    Aktivieren Sie den **Neuen Navigations-Generator**, in dem Sie den linken Navigationsbereich definieren können (Weitere Informationen finden Sie in diesem Artikel unter [Entwerfen der Navigation](service-create-distribute-apps.md#design-the-navigation-experience)).
 
-    ![Inhalt](media/service-template-apps-create/power-bi-create-content.png)
+   ![Landing Page der App festlegen](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
+    
+    **Landing Page der App:** Wenn Sie sich entscheiden, den Navigations-Generator zu deaktivieren, haben Sie die Möglichkeit, die Landing Page der App auszuwählen. Definieren Sie einen Bericht oder ein Dashboard als Landing Page Ihrer App. Verwenden Sie eine Landing Page, die einen guten Eindruck vermittelt.
 
     **Control (Steuerung)**
 
@@ -107,7 +109,6 @@ Nun, da sich Inhalt in Ihrem Arbeitsbereich befindet, können Sie diesen in eine
     - **Wert:** Standardparameterwert
     - **Erforderlich:** Verwenden Sie diesen Parameter, damit das Installationsprogramm einen benutzerspezifischen Parameter eingibt.
     - **Sperre:** Das Sperren verhindert, dass das Installationsprogramm einen Parameter aktualisiert.
-    - **Statisch:** Aktivieren Sie diesen Parameter, falls die App *ausschließlich* Beispieldaten enthält. Wenn Sie **Statisch** auswählen, weist der Installationsassistent den Benutzer nicht an, eine Datenquelle zu vernetzen.
 
     **Zugriff:** Entscheiden Sie in der Testphase, wer in Ihrer Organisation Ihre App installieren und testen kann. Keine Sorge, Sie können diese Einstellungen jederzeit ändern. Durch die Festlegung wird der Zugriff auf die verteilte Vorlagen-App nicht beeinflusst.
 

@@ -9,18 +9,43 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: 0aa1d964485297c5e0dae3f4a309cc0dd15b92b2
-ms.sourcegitcommit: 90ad0572a92f640684cdc32c9a6478d299de9dc0
+ms.openlocfilehash: 71c2135092b0b9bb2b02f4559d40c0b10814a51f
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2019
-ms.locfileid: "68940902"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71325724"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Änderungsprotokoll für Power BI-Berichtsserver
 
 Dieses Änderungsprotokoll bezieht sich auf Power BI-Berichtsserver und enthält neue Elemente sowie Fehlerkorrekturen für jeden veröffentlichten Build.
 
 Ausführliche Informationen zu neuen Funktionen finden Sie unter [Neuerungen in Power BI-Berichtsserver](whats-new.md). 
+
+## <a name="september-2019"></a>September 2019
+
+- **Power BI-Berichtsserver**          
+    - *Version 1.6.7206.38019 (Build 15.0.1102.597), Veröffentlichung: 26. September 2019*
+        - Sicherheitsupdates
+        - Fehlerkorrekturen
+           - Paginated Reports
+             - Behoben: Probleme mit der Barrierefreiheit bei der Verwendung des IE und von Edge
+             - Behoben: Probleme mit SAP HANA beim Testen der Verbindung
+             - Behoben: Probleme, die beim Bereitstellen von Listen mit E-Mail-Adressen gefunden wurden
+             - Behoben: Probleme mit Power BI-Berichten, die eine DirectQuery-Datenquelle und die integrierte Authentifizierung verwenden
+             - Behoben: Probleme mit paginierten Berichte zum Rendering mit Filterparametern, wenn die Option für Momentaufnahmen aktiviert ist
+             - Behoben: doppelte Ausführung gespeicherter Prozeduren während der Berichtsausführung
+             - Behoben: Standarddienstkonto erhält Berechtigungen zur SQL Server-Anmeldung, wenn das benutzerdefinierte Dienstkonto zum Ausführen des Power BI-Berichtsservers konfiguriert ist.
+             - Behoben: Beim Zugriff auf Modelle wird eine Aktualisierung auf die japanische Zeitzone vorgenommen.
+             - Behoben: veraltete Modelle, wenn eine neue Version des Berichts bei der Aktualisierung hochgeladen wird
+             - Behoben: Probleme mit Parameterwerten, die das Zeichen „&“ enthalten.
+         - Programmierbarkeit
+             - Aktualisiert: Web-API/PowerBIReports({Id})/DataSources (PATCH) zum Zulassen von Aktualisierungen für Verbindungszeichenfolgen.
+         
+- **Power BI Desktop (optimiert für Power BI-Berichtsserver)**
+    - *Version: 2.73.5586.821 (September 2019), Veröffentlichung: 26. September 2019* (neuer Build und neue Version)
+    - Enthält Änderungen, die für die Verbindung mit dem Power BI-Berichtsserver (September 2019) erforderlich sind
+
 
 ## <a name="may-2019"></a>Mai 2019
 

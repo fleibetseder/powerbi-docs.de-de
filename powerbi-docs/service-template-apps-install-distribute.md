@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 09/14/2019
 ms.author: tebercov
-ms.openlocfilehash: 158345c44f8801a98e19dcd9b4c7dde14aa6126b
-ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
+ms.openlocfilehash: 660fd7c623e8a195f937a3a2b468f758986411e1
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67264535"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71195203"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization---power-bi"></a>Installieren und Verteilen von Vorlagen-Apps in Ihrer Organisation: Power BI
 
@@ -82,7 +82,7 @@ Klicken Sie im Browser auf den folgenden Link, um AppSource mit einem Filter fü
    >[!NOTE]
    >Damit Sie Vorlagen-Apps installieren können, die nicht in AppSource aufgeführt sind, müssen Sie diese mithilfe Ihrer Administratorberechtigungen anfordern. Details finden Sie unter Power BI-[Verwaltungsportal > Vorlagen-App-Einstellungen](service-admin-portal.md#template-apps-settings).
 
-## <a name="update-and-distribute-the-app"></a>Aktualisieren und Verteilen der App
+## <a name="customize-and-publish-the-app"></a>Anpassen und Veröffentlichen der App
 
 Nachdem Sie die App für Ihre Organisation aktualisiert haben, können Sie sie veröffentlichen. Die Schritte gleichen dem Veröffentlichen jeder anderen App.
 
@@ -94,7 +94,7 @@ Nachdem Sie die App für Ihre Organisation aktualisiert haben, können Sie sie v
 
    ![App-Beschreibung und Farbe festlegen](media/service-template-apps-install-distribute/power-bi-install-app-details.png)
 
-3. Unter **Inhalt** können Sie das Dashboard oder den Bericht als Landing Page auswählen.
+3. Unter **Navigation** können Sie den neuen Navigations-Generator für Ihre App verwenden oder entweder das Dashboard oder den Bericht für die Landing Page auswählen. Weitere Informationen finden Sie unter [Entwerfen der Navigation für Ihre App](service-create-distribute-apps.md#design-the-navigation-experience).
 
    ![Landing Page der App festlegen](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
 
@@ -106,14 +106,31 @@ Nachdem Sie die App für Ihre Organisation aktualisiert haben, können Sie sie v
 
 6. Nachdem die App erfolgreich veröffentlicht wurde, können Sie den Link kopieren und den Personen mitteilen, denen Sie den Zugriff erteilt haben. Wenn Sie die App für sie freigegeben haben, wird sie ihnen auf der Registerkarte **Meine Organisation** in AppSource angezeigt.
 
-## <a name="next-steps"></a>Nächste Schritte 
+## <a name="update-a-template-app"></a>Erstellen einer Vorlagen-App
+
+Ersteller von Vorlagen-App können neue Versionen ihrer Vorlagen-Apps über AppSource oder einen direkten Link freigeben. In diesem Fall können sie die Vorlagen-App aktualisieren, wenn sie die App mit der gleichen oder einer neueren Version neu installieren.
+
+  >[!NOTE]
+  >Durch die Installation einer neuen Version werden alle Änderungen überschrieben, die Sie an Berichten und Dashboards vorgenommen haben. Wenn Sie die aktualisierten Berichte und Dashboards beibehalten möchten, können Sie sie vor der Installation mit einem anderen Namen oder Speicherort speichern.
+
+- **Vorhandene Version überschreiben:** Überschreibt den vorhandenen Arbeitsbereich mit der aktualisierten Version der Vorlagen-App.
+
+   ![Aktualisieren einer Vorlagen-App](media/service-template-apps-install-distribute/power-bi-update-app-overwrite.png)
+
+- **In einem neuen Arbeitsbereich installieren:** Installiert eine neue Version des Arbeitsbereichs und der App, die Sie neu konfigurieren müssen.
+
+### <a name="overwrite-behavior"></a>Überschreibverhalten
+
+* Durch das Überschreiben werden die Berichte, Dashboards und das Dataset im *Arbeitsbereich* und nicht in der App aktualisiert. Durch das Überschreiben ändert sich nichts an der Navigation, dem Setup und der Berechtigung der App.
+* Nachdem Sie den Arbeitsbereich aktualisiert haben, müssen Sie *die App aktualisieren*, um die Änderungen aus dem Arbeitsbereich auf die Organisations-App anzuwenden.
+* Beim Überschreiben werden konfigurierte Parameter und die Authentifizierung beibehalten. Nach dem Update wird eine automatische Aktualisierung des Datasets gestartet. In diesem Zeitraum werden in der Organisations-App sowie in den Berichten und Dashboards die *Beispieldaten* angezeigt.
+  ![Beispieldaten](media/service-template-apps-install-distribute/power-bi-sample-data.png)
+* Beim Überschreiben werden immer Beispieldaten angezeigt, bis die Aktualisierung abgeschlossen ist. Wenn der Autor der Vorlagen-App Änderungen am Dataset oder den Parametern vorgenommen hat, sehen Benutzer des Arbeitsbereichs und der App weiterhin die *Beispieldaten*.
+* Beim Überschreiben werden niemals *neue* Berichte oder Dashboards, die Sie dem Arbeitsbereich hinzugefügt haben, gelöscht. Die ursprünglichen Berichte und Dashboards werden mit Änderungen des ursprünglichen Autors überschrieben.
+
+>[!IMPORTANT]
+>Denken Sie daran, nach dem Überschreiben [die App zu aktualisieren](#customize-and-publish-the-app), um Änderungen auf die Berichte und Dashboards der Benutzer Ihrer Organisations-App anzuwenden.
+
+## <a name="next-steps"></a>Nächste Schritte
 
 [Gemeinsames Erstellen von Arbeitsbereichen mit Ihren Kollegen in Power BI](service-create-workspaces.md)
-
-
-
-
-
-. 
-
- 

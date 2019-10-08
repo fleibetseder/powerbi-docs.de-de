@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2019
-ms.openlocfilehash: 54713c9c978554521d68aeb7b4c25d681ddb3d69
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 09/26/2019
+ms.openlocfilehash: bbd9a3884b3b6b0cd235471b0746f605e3872aff
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187458"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71325752"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installieren von für Power BI-Berichtsserver optimiertem Power BI Desktop
 
@@ -30,26 +30,25 @@ Die einfachste Möglichkeit, um sicherzustellen, dass Sie die aktuelle Version d
 
     ![Power BI Desktop aus dem Webportal herunterladen](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
-    Oder wechseln Sie direkt zu [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=56723) (optimiert für Power BI-Berichtsserver – Mai 2019) im Microsoft Download Center.
+    Oder besuchen Sie die Startseite des [Power BI-Berichtsservers](https://powerbi.microsoft.com/report-server/), und wählen Sie **Erweiterte Downloadoptionen** aus.
 
 2. Wählen Sie im Download Center **Download** aus.
 
 3. Wählen Sie abhängig von Ihrem Computer eine der folgenden Versionen aus: 
 
     - **PBIDesktopRS.msi** (32-Bit-Version) oder
-
     - **PBIDesktopRS_x64.msi** (64-Bit-Version).
 
-1. Nachdem Sie das Installationsprogramm heruntergeladen haben, führen Sie den Setup-Assistenten für Power BI Desktop (Mai 2019).
+1. Nachdem Sie das Installationsprogramm heruntergeladen haben, führen Sie den Setup-Assistenten für Power BI Desktop (September 2019) aus.
 
-2. Wählen Sie am Ende der Installation, **starten Sie Power BI Desktop**.
+2. Wählen Sie am Ende des Installationsvorgangs **Power BI Desktop starten** aus.
 
     Die App wird automatisch gestartet, sodass Sie gleich loslegen können.
 
 ## <a name="verify-youre-using-the-correct-version"></a>Überprüfen, ob Sie die richtige Version verwenden
-Sie können ganz einfach überprüfen, ob Sie die richtige Power BI Desktop-Version verwenden: Schauen Sie sich den Startbildschirm oder die Titelleiste in Power BI Desktop an. In der Titelleiste werden Monat und Jahr des Releases angegeben. Darüber hinaus sind die Farben des Power BI-Logos umgekehrt, d. h. gelb auf schwarz anstatt schwarz auf gelb.
+Sie können ganz einfach überprüfen, ob Sie die richtige Power BI Desktop-Version verwenden: Schauen Sie sich den Startbildschirm oder die Titelleiste in Power BI Desktop an. Anhand des Texts **Power BI Desktop (September 2019)** auf der Titelleiste erkennen Sie, dass Sie über die richtige Version verfügen. Darüber hinaus sind die Farben des Power BI-Logos umgekehrt, d. h. gelb auf schwarz anstatt schwarz auf gelb.
 
-![Titelleiste für „Installieren von für Power BI-Berichtsserver optimiertem Power BI Desktop“](media/install-powerbi-desktop/power-bi-report-server-desktop-may-2019.png)
+![Power BI Desktop September 2019](media/install-powerbi-desktop/power-bi-report-server-desktop-sept-2019.png)
 
 Die Power BI Desktop-Version für den Power BI-Dienst gibt Monat und Jahr nicht in der Titelleiste an.
 
@@ -60,7 +59,7 @@ Wenn Sie Power BI Desktop bereits installiert haben und dann Power BI Desktop (o
 
 Sie können immer zuerst die Version von Power BI Desktop öffnen, die Sie verwenden möchten. Öffnen Sie anschließend die Datei in Power BI Desktop.
 
-Bearbeiten eine Power BI-Berichts in Power BI-Berichtsserver oder erstellen einen neuen Power BI-Bericht im Webportal wird immer die richtige Version von Power BI Desktop geöffnet.
+Zum Bearbeiten eines Power BI-Berichts auf dem Power BI-Berichtsserver oder Erstellen eines neuen Power BI-Berichts über das Webportal wird stets die richtige Version von Power BI Desktop geöffnet.
 
 ## <a name="considerations-and-limitations"></a>Überlegungen und Einschränkungen
 
@@ -68,7 +67,7 @@ Power BI-Berichte in Power BI-Berichtsserver und im Power BI-Dienst (http://app.
 
 ### <a name="in-a-browser"></a>In einem Browser
 
-Power BI-Berichtsserver-Berichte unterstützt fast alle Visualisierungen, einschließlich benutzerdefinierte visuelle Elemente. Power BI-Berichtsserver-Berichte unterstützen Folgendes nicht:
+Power BI-Berichtsserver-Berichte unterstützen beinahe alle Visualisierungen, einschließlich benutzerdefinierte visuelle Elemente. Power BI-Berichtsserver-Berichte unterstützen Folgendes nicht:
 
 * Visuelle R-Elemente
 * ArcGIS-Karten
@@ -89,13 +88,13 @@ Die folgenden Funktionen werden von den Power BI-Berichtsserver-Berichten in den
 * ArcGIS-Karten
 * Benutzerdefinierte Visualisierungen
 * Brotkrümel
-* Geografische Filterung oder Strichcodes
+* Geofilter oder Strichcodes
 
 ## <a name="power-bi-desktop-for-earlier-versions-of-power-bi-report-server"></a>Power BI Desktop für frühere Versionen von Power BI-Berichtsserver
 
 Wenn Sie eine frühere Version des Berichtsservers verwenden, benötigen Sie die entsprechende Version von Power BI Desktop. Hier ist der Link zum Herunterladen der vorherigen Version.
 
-- Microsoft Power BI Desktop ([optimiert für Power BI-Berichtsserver – Januar 2019](https://go.microsoft.com/fwlink/?linkid=2055039))
+- Microsoft Power BI Desktop ([optimiert für Power BI-Berichtsserver, Januar 2019](https://go.microsoft.com/fwlink/?linkid=2055039))
 
 ## <a name="next-steps"></a>Nächste Schritte
 

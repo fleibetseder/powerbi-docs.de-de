@@ -1,65 +1,65 @@
 ---
 title: Häufig gestellte Fragen zu Power BI-Visuals
-description: Durchsuchen Sie die Liste der häufig gestellten Fragen und Antworten zu benutzerdefinierten Visuals in Power BI.
-author: sranins
-ms.author: rasala
-manager: kfile
+description: In diesem Artikel finden Sie eine Liste häufig gestellter Fragen und Antworten zu Power BI-Visuals.
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: 58fa65abfa2d2cff5e02b34fe8db8aa10b36ee14
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 5c4c13d021891ad591b2411a1f0b3219b750478d
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415382"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71195462"
 ---
 # <a name="frequently-asked-questions-about-power-bi-visuals"></a>Häufig gestellte Fragen zu Power BI-Visuals
 
-## <a name="organizational-custom-visuals"></a>Benutzerdefinierte Visuals für Organisationen
+## <a name="organizational-visuals"></a>Visuals für Organisationen
 
 Mit dem Verwaltungsportal können Sie Power BI-Visuals für Ihre Organisation verwalten.
 
-### <a name="how-can-the-admin-manage-the-organizational-custom-visuals"></a>Wie kann der Administrator die benutzerdefinierten Visuals für Organisationen verwalten?
+### <a name="how-can-the-admin-manage-the-organizational-power-bi-visuals"></a>Wie kann der Administrator die Power BI-Visuals für Organisationen verwalten?
 
-Im Administratorportal kann der Administrator auf der Registerkarte „Benutzerdefinierte Visuals für Organisationen“ [alle benutzerdefinierten Visuals im Unternehmen sehen und verwalten](service-admin-portal.md#organizational-visuals): hinzufügen, deaktivieren, aktivieren und löschen.
-Diese Visuals müssen nicht mehr per E-Mail oder über einen freigegebenen Ordner weitergegeben werden. Nach der Bereitstellung im Repository der Organisation können die Benutzer in der Organisation diese benutzerdefinierten Visuals für Organisationen einfach finden und direkt über Power BI Desktop oder -Dienst in ihre Berichte importieren. Die benutzerdefinierten Visuals für Organisationen finden Sie im integrierten Store (in Desktop und Dienst) auf der Registerkarte *MEINE ORGANISATION*. Sobald der Administrator eine neue Version eines benutzerdefinierten Visuals hochlädt, erhält jeder in der Organisation die gleiche aktualisierte Version. Berichtsautoren müssen das Visual in ihren Berichten nicht löschen, um die neue Version zu erhalten, da alle Berichte, die diese Visuals verwenden, automatisch aktualisiert werden! Der Aktualisierungsmechanismus ist ähnlich wie bei den Visuals im Marketplace.
+Im Verwaltungsportal kann der Administrator auf der Registerkarte „Organisationsvisuals“ [alle Power BI-Organisationsvisuals im Unternehmen sehen und verwalten](service-admin-portal.md#organizational-visuals), d. h. hinzufügen, deaktivieren, aktivieren und löschen.
+Diese Visuals müssen nicht mehr per E-Mail oder über einen freigegebenen Ordner weitergegeben werden. Nach der Bereitstellung im Repository der Organisation können die Benutzer in der Organisation diese Organisationsvisuals mühelos finden und direkt über Power BI Desktop oder den -Dienst in ihre Berichte importieren. Die Organisationsvisuals finden Sie im integrierten Store (in Power BI Desktop und im -Dienst) auf der Registerkarte *MEINE ORGANISATION*. Sobald der Administrator eine neue Version eines benutzerdefinierten Visuals hochlädt, erhält jeder in der Organisation die gleiche aktualisierte Version. Berichtsautoren müssen das Visual in ihren Berichten nicht löschen, um die neue Version zu erhalten, da alle Berichte, die diese Visuals verwenden, automatisch aktualisiert werden! Der Aktualisierungsmechanismus ist ähnlich wie bei den Visuals im Marketplace.
 
 ### <a name="if-an-admin-uploads-a-custom-visual-from-the-public-marketplace-to-the-organization-store-is-it-automatically-updated-once-a-vendor-updates-the-visual-in-the-public-marketplace"></a>Wenn ein Administrator ein benutzerdefiniertes Visual vom öffentlichen Marketplace in den Unternehmensspeicher hochlädt, wird es dann automatisch aktualisiert, sobald ein Anbieter das Visual auf dem öffentlichen Marketplace aktualisiert?
 
 Nein, es gibt keine automatische Aktualisierungen vom öffentlichen Marketplace.
-Es liegt in der Verantwortung des Administrators, die Version der benutzerdefinierten Visuals zu aktualisieren.
+Es liegt in der Verantwortung des Administrators, die Version der Organisationsvisuals zu aktualisieren.
 
 ### <a name="is-there-a-way-to-disable-the-organizational-store"></a>Gibt es eine Möglichkeit, den Store der Organisation zu deaktivieren?
 
-Nein, die Registerkarte „MEINE ORGANIZATION“ aus Power BI Desktop und -Dienst wird für die Benutzer immer angezeigt. Der Administrator kann alle benutzerdefinierten Visuals für Organisationen im Administratorportal deaktivieren oder löschen, und der Speicher der Organisation ist dann leer.
+Nein, die Registerkarte „MEINE ORGANIZATION“ aus Power BI Desktop und -Dienst wird für die Benutzer immer angezeigt. Der Administrator kann alle Organisationsvisuals im Verwaltungsportal deaktivieren oder löschen, und der Speicher der Organisation ist dann leer.
   
-### <a name="if-the-administrator-disables-custom-visuals-from-the-admin-portal-tenant-settings-do-users-still-have-access-to-the-organizational-custom-visuals"></a>Wenn der Administrator benutzerdefinierte Visuals über das Administratorportal deaktiviert (Mandanteneinstellungen), haben Benutzer dann noch Zugriff auf die benutzerdefinierten Visuals?
+### <a name="if-the-administrator-disables-power-bi-visuals-from-the-admin-portal-tenant-settings-do-users-still-have-access-to-the-organizational-visuals"></a>Wenn der Administrator Power BI-Visuals über das Verwaltungsportal deaktiviert (Mandanteneinstellungen), haben Benutzer dann noch Zugriff auf die Organisationsvisuals?
 
-Ja, wenn der Administrator die benutzerdefinierten Visuals im Administratorportal deaktiviert, hat dies keine Auswirkungen auf den Speicher der Organisation. Einige Organisationen deaktivieren benutzerdefinierte Visuals und aktivieren nur handverlesene Visuals, die vom Power BI-Administrator importiert und in den Speicher der Organisation hochgeladen wurden. Das Deaktivieren der benutzerdefinierten Visuals über das Administratorportal wird in Power BI Desktop nicht erzwungen. Desktop-Benutzer können weiterhin benutzerdefinierte Visuals vom öffentlichen Marketplace in ihren Berichten hinzufügen und verwenden. Diese öffentlichen benutzerdefinierten Visuals beenden jedoch das Rendering nach der Veröffentlichung im Power BI-Dienst und geben einen entsprechenden Fehler aus. Wenn Sie den Power BI-Dienst verwenden, können Sie keine benutzerdefinierten Visuals vom öffentlichen Marketplace importieren. Es können nur Visuals aus dem Speicher der Organisation importiert werden, da die Einstellung für benutzerdefinierte Visuals im Administrationsportal im Power BI-Dienst erzwungen wird.
+Ja, wenn der Administrator die Power BI-Visuals über das Verwaltungsportal deaktiviert, hat dies keine Auswirkungen auf den Organisationsspeicher. Einige Organisationen deaktivieren Power BI-Visuals und aktivieren nur handverlesene Visuals, die vom Power BI-Administrator importiert und in den Organisationsspeicher hochgeladen wurden. Das Deaktivieren der Power BI-Visuals über das Verwaltungsportal wird in Power BI Desktop nicht erzwungen. Desktop-Benutzer können weiterhin Power BI-Visuals vom öffentlichen Marketplace in ihren Berichten hinzufügen und verwenden. Diese öffentlichen Power BI-Visuals werden nach der Veröffentlichung im Power BI-Dienst jedoch nicht mehr gerendert und geben einen entsprechenden Fehler aus. Wenn Sie den Power BI-Dienst verwenden, können Sie keine Power BI-Visuals aus dem öffentlichen Marketplace importieren. Es können nur Visuals aus dem Organisationsspeicher importiert werden, da die Einstellung für Power BI-Visuals im Verwaltungsportal im Power BI-Dienst erzwungen wird.
 
-### <a name="why-does-the-organizational-store-and-organizational-custom-visuals-make-a-great-enterprise-solution"></a>Warum sind der Store der Organisation und die benutzerdefinierten Visuals in Kombination eine großartige Unternehmenslösung?
+### <a name="why-does-the-organizational-store-and-organizational-visuals-make-a-great-enterprise-solution"></a>Warum ergibt die Kombination des Organisationsspeichers und der Organisationsvisuals eine großartige Unternehmenslösung?
 
 * Jeder erhält die gleiche visuelle Ansicht, die vom Power BI-Administrator gesteuert wird. Sobald der Administrator die Version des Visuals im Administratorportal aktualisiert, erhalten alle Benutzer in der Organisation automatisch die aktualisierte Version.
 
 * Sie müssen keine Visual-Dateien mehr per E-Mail oder einem freigegebenen Ordner mehr weitergeben! Eine zentrale Anlaufstelle, sichtbar für alle angemeldeten Mitglieder.
 
-* Sicherheit und Unterstützung, neue Versionen von benutzerdefinierten Visuals werden ähnlich den Marketplace-Visuals automatisch in allen Berichten aktualisiert.
+* Aufgrund der Sicherheit und Unterstützbarkeit: Neue Versionen von benutzerdefinierten Visuals werden ähnlich den Marketplace-Visuals automatisch in allen Berichten aktualisiert.
 
-* Benutzer in der Organisation, die die benutzerdefinierten Visuals verwenden, müssen angemeldet sein, um diese Visuals zu sehen und zu verwenden, die ein Sicherheitselement für die Organisation darstellen.
+* Benutzer in der Organisation, die die Organisationsvisuals verwenden, müssen angemeldet sein, um diese Visuals zu sehen und zu verwenden, die ein Sicherheitselement für die Organisation darstellen.
 
-* Administratoren können steuern, welche benutzerdefinierten Visuals in der Organisation verfügbar sein sollen.
+* Administratoren können steuern, welche Power BI-Visuals in der Organisation verfügbar sein sollen.
 
 * Administratoren können Visuals zu Testzwecken im Administratorportal aktivieren/deaktivieren. Es besteht eine bessere Sicherheitsdurchsetzung, da diese Visuals nur für Organisationsmitglieder erlaubt sind.
 
-## <a name="certified-custom-visuals"></a>Zertifizierte benutzerdefinierte Visuals
+## <a name="certified-power-bi-visuals"></a>Zertifizierte Power BI-Visuals
 
-### <a name="what-are-certified-custom-visuals"></a>Was sind zertifizierte benutzerdefinierte Visuals?
+### <a name="what-are-certified-power-bi-visuals"></a>Was sind zertifizierte Power BI-Visuals?
 
-Zertifizierte benutzerdefinierte Visuals sind Visuals im [Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals), die bestimmte [angegebene](power-bi-custom-visuals-certified.md) Codeanforderungen und Testkriterien des Power BI-Teams erfüllen.  Die durchgeführten Tests wurden entworfen, um zu überprüfen, ob das Visual nicht auf externe Dienste oder Ressourcen zugreift. Microsoft ist jedoch nicht der Autor benutzerdefinierter Drittanbietervisuals, und Kunden wird empfohlen, direkt mit dem Autor Kontakt aufzunehmen, um die Funktionalität eines solchen Visuals zu überprüfen.
+Zertifizierte Power BI-Visuals sind Visuals im [Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals), die bestimmte [festgelegte](power-bi-custom-visuals-certified.md) Codeanforderungen und Testkriterien des Power BI-Teams erfüllen.  Die durchgeführten Tests wurden entworfen, um zu überprüfen, ob das Visual nicht auf externe Dienste oder Ressourcen zugreift. Power BI-Visuals von Drittanbietern stammen jedoch nicht von Microsoft. Kunden wird empfohlen, den Autor direkt zu kontaktieren, um die Funktionalität solcher Visuals zu überprüfen.
 
 ### <a name="what-tests-are-done-during-the-certification-process"></a>Welche Tests werden während des Zertifizierungsprozesses durchgeführt?
 
@@ -90,11 +90,11 @@ Für eine aktualisierte Version dauert es bis zu 3 Wochen. Bei einer neuen Einre
 
 ### <a name="does-the-certification-process-ensure-that-no-data-leakage-occurs"></a>Garantiert der Zertifizierungsprozess, dass keine Datenlecks vorkommen?
 
-Die durchgeführten Tests wurden entworfen, um zu überprüfen, ob das Visual nicht auf externe Dienste oder Ressourcen zugreift. Microsoft ist jedoch nicht der Autor benutzerdefinierter Drittanbietervisuals, und Kunden wird empfohlen, direkt mit dem Autor Kontakt aufzunehmen, um die Funktionalität eines solchen Visuals zu überprüfen.
+Die durchgeführten Tests wurden entworfen, um zu überprüfen, ob das Visual nicht auf externe Dienste oder Ressourcen zugreift. Power BI-Visuals von Drittanbietern stammen jedoch nicht von Microsoft. Kunden wird empfohlen, den Autor direkt zu kontaktieren, um die Funktionalität solcher Visuals zu überprüfen.
  
-### <a name="are-uncertified-custom-visuals-safe-to-use"></a>Ist es sicher, nicht zertifizierte Visuals zu verwenden?
+### <a name="are-uncertified-power-bi-visuals-safe-to-use"></a>Ist die Verwendung nicht zertifizierter Power BI-Visuals sicher?
 
-Bei nicht zertifizierten benutzerdefinierten Visuals handelt es sich nicht zwangsläufig um unsichere Visuals.
+Nicht zertifizierte Power BI-Visuals sind nicht zwangsläufig unsicher.
 Einige Visuals sind nicht zertifiziert, da sie mindestens einem Punkt der [Zertifizierungsanforderungen](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements) nicht entsprechen. Beispiele hierfür sind die Herstellung einer Verbindung zu einem externen Dienst wie Kartenvisuals oder Visuals, die kommerzielle Bibliotheken verwenden.
  
 ## <a name="visuals-with-additional-purchases"></a>Visuals mit zusätzlichen Käufen
@@ -103,11 +103,11 @@ Einige Visuals sind nicht zertifiziert, da sie mindestens einem Punkt der [Zerti
 
 Ein Visual mit zusätzlichen Käufen ähnelt Add-Ins mit In-App-Kauf (In-app purchase, IAP) im Marketplace. Das Preisschild dieser Add-Ins lautet **Möglicherweise sind zusätzliche Käufe erforderlich**.
 
-Benutzerdefinierte IAP-Visuals sind kostenlose, herunterladbare benutzerdefinierte Visuals – die Benutzer zahlen nichts für den Download dieser benutzerdefinierten Visuals aus dem Marketplace. In IAP-Visuals stehen optionale In-App-Käufe für erweiterte Features zur Verfügung.  
+Power BI-Visuals mit In-App-Käufen sind kostenlose, herunterladbare Power BI-Visuals. Die Benutzer zahlen nichts für den Download dieser Power BI-Visuals aus dem Marketplace. In IAP-Visuals stehen optionale In-App-Käufe für erweiterte Features zur Verfügung.  
 
 ### <a name="whats-the-benefit-to-developers"></a>Worin liegt der Vorteil für Entwickler?
 
-Benutzerdefinierte IAP-Visuals werden in AppSource von den vielen täglichen Besuchern entdeckt und bedeuten für Ihre benutzerdefinierten IAP-Visuals und Sie als Entwickler wertvollen Datenverkehr und gesteigerte Bekanntheit.
+Power BI-Visuals mit In-App-Käufen werden in AppSource von den vielen täglichen Besuchern entdeckt und bedeuten für Ihre Power BI-Visuals mit In-App-Käufen und Sie als Entwickler wertvollen Datenverkehr und gesteigerte Bekanntheit.
 
 Wenn Sie Ihre Visuals bis vor Kurzem über Ihre Website verwaltet haben, können Sie sie jetzt bei AppSource einreichen. Dadurch werden Auffindbarkeit und Sichtbarkeit der IAP-Visuals innerhalb der Power BI-Community gesteigert.
 
@@ -115,15 +115,15 @@ Visuals in AppSource nutzen einen direkten Feedbackkanal von Ihren Kunden, die d
 
 Nachdem Ihre IAP-Visuals vom AppSource-Validierungsteam genehmigt wurden, können Sie sie darüber hinaus zur Zertifizierung einreichen. Dies ist ein optionaler Vorgang.  
 
-Nach erfolgter Zertifizierung können benutzerdefinierte IAP-Visuals in PowerPoint exportiert und in den empfangenen E-Mail angezeigt werden, wenn ein Benutzer Berichtsseiten abonniert. Durch Einreichen von IAP-Visuals beim Marketplace können benutzerdefinierte IAP-Visuals heute also auch zertifiziert werden und einen Satz zusätzlicher Features unterstützen.  
+Nach erfolgter Zertifizierung können Power BI-Visuals mit In-App-Käufen in PowerPoint exportiert und in den empfangenen E-Mail angezeigt werden, wenn ein Benutzer Berichtsseiten abonniert. Durch Einreichen von Visuals mit In-App-Käufen beim Marketplace können Power BI-Visuals mit In-App-Käufen mittlerweile also auch zertifiziert werden und zusätzliche Features unterstützen.  
 
 ### <a name="do-iap-visuals-need-to-be-certified"></a>Müssen IAP Visuals zertifiziert werden?
 
-Der Zertifizierungsprozess ist optional. Ganz wie bei kostenlosen Visuals liegt es im Ermessen des Entwicklers, ob seine benutzerdefinierten IAP-Visuals zertifiziert werden sollen oder nicht.
+Der Zertifizierungsprozess ist optional. Ganz wie bei kostenlosen Visuals liegt es im Ermessen des Entwicklers, ob seine Power BI-Visuals mit In-App-Käufen zertifiziert werden sollen oder nicht.
 
 ### <a name="what-is-changing-in-the-submission-process"></a>Was ändert sich am Übermittlungsvorgang?
 
-Der Übermittlungsvorgang von benutzerdefinierten IAP-Visuals an den Marketplace ist der gleiche wie bei kostenlosen Visuals. Er erfolgt über das Dashboard des Verkäufers.  Die einzige Änderung am Übermittlungsvorgang besteht darin, dass Entwickler in den Entwicklerkommentaren im Verkäuferdashboard folgende Angabe machen müssen: „Visual mit In-App-Kauf“. Außerdem müssen Sie ggf. einen Lizenzschlüssel/ein Token bereitstellen, um die kostenpflichtigen/erweiterten Funktionen zu validieren.  
+Der Vorgang zum Einreichen von Power BI-Visuals mit In-App-Käufen beim Marketplace ist der gleiche wie bei kostenlosen Visuals. Er erfolgt über das Dashboard des Verkäufers.  Die einzige Änderung am Übermittlungsvorgang besteht darin, dass Entwickler in den Entwicklerkommentaren im Verkäuferdashboard folgende Angabe machen müssen: „Visual mit In-App-Kauf“. Außerdem müssen Sie ggf. einen Lizenzschlüssel/ein Token bereitstellen, um die kostenpflichtigen/erweiterten Funktionen zu validieren.  
 
 Es wird keine neue Option *kostenlos mit In-App-Kauf* im Verkäuferdashboard geben, Sie müssen Ihre IAP-Visuals als *kostenlos* einreichen.
 
@@ -151,8 +151,8 @@ Bedenken Sie, dass die Zertifizierung ein optionaler Vorgang ist, es liegt bei I
 
 ### <a name="how-to-get-support"></a>Wie erhalte ich Support?
 
-Zögern Sie nicht, sich mit Fragen, Kommentaren oder Problemen an das Supportteam für benutzerdefinierte Visuals zu wenden: *pbicvsupport@microsoft.com*  .  
+Zögern Sie nicht, sich mit Fragen, Kommentaren oder Problemen an das Power BI-Visuals-Supportteam zu wenden:  *pbicvsupport@microsoft.com*  .  
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Weitere Informationen finden Sie auf der Seite [Troubleshoot Power BI custom visuals (Problembehandlung für benutzerdefinierte Power BI-Visuals)](power-bi-custom-visuals-troubleshoot.md).
+Weitere Informationen finden Sie auf der Seite [Problembehandlung bei benutzerdefinierten Power BI-Visuals](power-bi-custom-visuals-troubleshoot.md).

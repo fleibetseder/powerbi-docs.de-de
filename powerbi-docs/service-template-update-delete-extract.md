@@ -7,25 +7,33 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 09/23/2019
 ms.author: tebercov
-ms.openlocfilehash: 273734493c761739f9780e6a7fe6e781900723f9
-ms.sourcegitcommit: 7d52401f50944feaaa112c84113ee47f606dbf68
+ms.openlocfilehash: 2cf655c25bb58ec001bac52b55aea74f887f08d9
+ms.sourcegitcommit: 3885ae11e695f875a82c212ca157e401db8337c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67125876"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71207635"
 ---
 # <a name="update-delete-and-extract-template-app"></a>Aktualisieren, Löschen und Extrahieren einer Vorlagen-App
 
 Da sich Ihre App nun in der Produktionsphase befindet, können Sie in die Testphase zurückkehren, ohne den Status der App in der Produktionsphase ändern zu müssen.
 ## <a name="update-your-app"></a>Aktualisieren Ihrer App
 
+Wenn Sie die Änderungen in Power BI Desktop vorgenommen haben, beginnen Sie mit Schritt (1). Wenn Sie die Änderungen in Power BI Desktop nicht vorgenommen haben, beginnen Sie mit Schritt (4).
+
+1. Laden Sie das aktualisierte Dataset hoch, und überschreiben Sie das vorhandene Dataset. **Stellen Sie sicher, dass Sie genau denselben Datasetnamen verwenden**. Wenn Sie einen anderen Namen verwenden, wird ein neues Dataset für Benutzer erstellt, die die App aktualisieren.
+![Dataset überschreiben](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset.png)
+1. Importieren Sie die PBIX-Datei von Ihrem Computer.
+![Dataset überschreiben](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset2.png)
+1. Bestätigen Sie den Überschreibvorgang.
+![Dataset überschreiben](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset3.png)
 
 1. Klicken Sie im **Release Management**-Bereich auf **Create app** (App erstellen).
-2. Wechseln Sie zurück in den App-Erstellungsprozess.
-3. Nachdem Sie die Kategorien **Branding**, **Content** (Inhalt), **Control** (Steuerung) und **Access** (Zugriff) eingestellt haben, klicken Sie erneut auf **Create app** (App erstellen).
-4. Wählen Sie **Close** (Schließen) aus, und wechseln Sie zurück zu **Release Management**.
+1. Wechseln Sie zurück in den App-Erstellungsprozess.
+1. Nachdem Sie die Kategorien **Branding**, **Content** (Inhalt), **Control** (Steuerung) und **Access** (Zugriff) eingestellt haben, klicken Sie erneut auf **Create app** (App erstellen).
+1. Wählen Sie **Close** (Schließen) aus, und wechseln Sie zurück zu **Release Management**.
 
    Wie Sie sehen, haben Sie nun zwei Versionen: Die Version in der Produktionsphase und zusätzlich eine neue Version in der Testphase.
 
@@ -33,10 +41,18 @@ Da sich Ihre App nun in der Produktionsphase befindet, können Sie in die Testph
 
 5. Wenn Sie bereit sind, Ihre App in die Präproduktionsphase höherzustufen, um Tests außerhalb Ihres Mandanten durchzuführen, wechseln Sie zurück in den Release Management-Bereich, und wählen Sie **App höher stufen** neben **Tests** aus.
 6. Ihr Link ist nun live geschaltet. Senden Sie ihn noch mal an das Cloud-Partnerportal (CPP), indem Sie die Schritte unter [Aktualisieren eines Power BI-App-Angebots](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer) befolgen.
-7. In CPP müssen Sie Ihr Angebot erneut **veröffentlichen** sowie erneut validieren lassen.
+7. Im Cloud-Partnerportal müssen Sie Ihr Angebot erneut **veröffentlichen** sowie erneut validieren lassen.
 
->[!NOTE]
->Stufen Sie Ihre App nur höher in die Produktionsphase, nachdem sie vom Cloud-Partnerportal genehmigt wurde und Sie sie veröffentlichen.
+   >[!NOTE]
+   >Stufen Sie Ihre App nur höher in die Produktionsphase, nachdem sie vom Cloud-Partnerportal genehmigt wurde und Sie sie veröffentlichen.
+
+### <a name="update-behavior"></a>Tabellenverhalten
+
+1. Durch das Aktualisieren der App kann das Installationsprogramm der Vorlagen-App [eine Vorlagen-App](service-template-apps-install-distribute.md#update-a-template-app) im bereits installierten Arbeitsbereich aktualisieren, ohne die Verbindungskonfiguration zu verwerfen.
+1. Informationen dazu, wie sich Änderungen im Dataset auf die installierte Vorlagen-App auswirken, finden Sie unter [Überschreibverhalten](service-template-apps-install-distribute.md#overwrite-behavior) des Installationsprogramms.
+1. Beim Aktualisieren (Überschreiben) wird die Vorlagen-App zunächst auf die Beispieldaten zurückgesetzt, und die Verbindung mit der Benutzerkonfiguration wird automatisch wiederhergestellt (Parameter und Authentifizierung). Bis zur Fertigstellung der Aktualisierung wird in den Berichten, Dashboards und der Organisations-App das Beispieldatenbanner angezeigt.
+1. Wenn Sie dem aktualisierten Dataset, für das Benutzereingaben erforderlich sind, einen neuen Abfrageparameter hinzugefügt haben, müssen Sie das Kontrollkästchen *required* (erforderlich) aktivieren. Dadurch wird das Installationsprogramm nach dem Aktualisieren der App aufgefordert, die Verbindungszeichenfolge anzugeben.
+ ![erforderliche Parameter](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset4.png)
 
 ## <a name="extract-workspace"></a>Extrahieren des Arbeitsbereichs
 Das Zurücksetzen auf die vorherige Version einer Template-App ist mit der Extraktionsfunktion einfacher denn je. Die folgenden Schritte extrahieren eine bestimmte App-Version aus verschiedenen Releasestufen in einen neuen Arbeitsbereich:

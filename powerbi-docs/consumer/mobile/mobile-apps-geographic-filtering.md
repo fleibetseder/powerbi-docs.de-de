@@ -6,26 +6,26 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 02/09/2018
+ms.date: 09/25/2019
 ms.author: mshenhav
-ms.openlocfilehash: 828dcb4aeb8b7c5e69292685470f112a2d85cb71
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 9a4950a1d52451764c3c62413bf4ecbd036f06c8
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61349495"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305774"
 ---
 # <a name="filter-a-report-by-geographic-location-in-the-power-bi-mobile-apps"></a>Filtern eines Berichts nach geografischem Standort in den mobilen Power BI-Apps
 Gilt für:
 
-| ![iPhone](./media/mobile-apps-geographic-filtering/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-geographic-filtering/ipad-logo-50-px.png) | ![Android-Smartphone](./media/mobile-apps-geographic-filtering/android-phone-logo-50-px.png) | ![Android-Tablet](./media/mobile-apps-geographic-filtering/android-tablet-logo-50-px.png) | ![Android-Tablet](./media/mobile-apps-geographic-filtering/win-10-logo-50-px.png) |
-|:--- |:--- |:--- |:--- |:--- |
-| iPhones |iPads |Android-Telefone |Android-Tablets |Windows 10-Smartphones |
+| ![iPhone](./media/mobile-apps-geographic-filtering/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-geographic-filtering/ipad-logo-50-px.png) | ![Android-Smartphone](./media/mobile-apps-geographic-filtering/android-phone-logo-50-px.png) | ![Android-Tablet](./media/mobile-apps-geographic-filtering/win-10-logo-50-px.png) |
+|:--- |:--- |:--- |:--- |
+| iPhones |iPads |Android-Telefone |Windows 10-Smartphones |
 
 Wird beim Betrachten eines Power BI-Berichts auf Ihrem mobilen Gerät in der rechten oberen Ecke ein kleines Nadelsymbol angezeigt? Wenn dies der Fall ist, können Sie diesen Bericht basierend auf Ihrem geografischen Standort filtern.
 
 > [!NOTE]
-> Sie können nur nach Ort filtern, wenn die geografischen Namen im Bericht Englisch sind, z.B. „New York City“ oder „Germany“. Auf Windows 10-Smartphones werden geografische Filter unterstützt, auf Windows 10-Tablets und -PCs nicht.
+> Sie können nur nach Ort filtern, wenn die geografischen Namen im Bericht Englisch sind, z. B. „New York City“ oder „Germany“. Auf Windows 10-Smartphones werden geografische Filter unterstützt, auf Windows 10-Tablets und -PCs nicht.
 > 
 > 
 
@@ -37,13 +37,13 @@ Wird beim Betrachten eines Power BI-Berichts auf Ihrem mobilen Gerät in der rec
     ![Stecknadel-Filter](./media/mobile-apps-geographic-filtering/power-bi-mobile-geo-map-set-filter.png)
 
 ## <a name="why-dont-i-see-location-tags-on-a-report"></a>Warum sehe ich im Bericht keine Positionsmarkierungen?
-Alle drei Bedingungen müssen zutreffen, damit Positionsmarkierungen angezeigt werden. 
+Alle drei der folgenden Bedingungen müssen erfüllt sein, damit Positionsmarkierungen angezeigt werden. 
 
 * Der Ersteller des Berichts hat in Power BI Desktop in mindestens einer Spalte [geografische Daten kategorisiert](../../desktop-mobile-geofiltering.md) (wie Stadt, Bundesland, Land/Region).
 * Sie befinden sich an einem Standort, für den Daten in einer dieser Spalten vorhanden sind.
 * Sie verwenden eines dieser mobilen Geräte:
   * iOS (iPad, iPhone, iPod)
-  * Android-Telefon oder Tablet
+  * Android-Smartphone
   * Windows 10-Smartphone (andere Windows 10-Geräte wie PCs und Tablets unterstützten geografische Filter nicht)
 
 Weitere Informationen finden Sie unter [Einrichten von geografischen Filtern](../../desktop-mobile-geofiltering.md) in Power BI Desktop.

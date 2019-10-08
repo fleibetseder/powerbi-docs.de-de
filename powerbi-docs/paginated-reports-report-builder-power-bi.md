@@ -8,17 +8,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 06/06/2019
-ms.openlocfilehash: 9e4d5285b48739e9f16fbe503736c20cb5524e5d
-ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
+ms.date: 09/24/2019
+ms.openlocfilehash: ca090f7251349c9ed4768b49f1372c14e68f0068
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69985725"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305679"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Was sind paginierte Berichte in Power BI Premium?
 
-Paginierte Berichte sind seit Langem das Standardberichtsformat in SQL Server Reporting Services und stehen jetzt auch im Power BI-Dienst zur Verfügung. Diese Berichte können ausgedruckt oder freigegeben werden. Sie werden als „paginiert“ bezeichnet, weil sie so formatiert sind, dass sie gut auf eine Seite passen. Sie zeigen alle Daten in einer Tabelle an, selbst wenn die Tabelle sich über mehrere Seiten erstreckt. Diese werden gelegentlich auch als „pixelgenau“ bezeichnet, weil Sie das Berichtsseitenlayout detailliert steuern können. Paginierte Berichte basieren auf der RDL-Berichtstechnologie von SQL Server Reporting Services. Der Berichts-Generator ist das eigenständige Tool für die Erstellung paginierter Berichte. 
+Paginierte Berichte sind seit Langem das Standardberichtsformat in SQL Server Reporting Services und stehen jetzt auch im Power BI-Dienst zur Verfügung. Diese Berichte können ausgedruckt oder freigegeben werden. Sie werden als „paginiert“ bezeichnet, weil sie so formatiert sind, dass sie gut auf eine Seite passen. Sie zeigen alle Daten in einer Tabelle an, selbst wenn die Tabelle sich über mehrere Seiten erstreckt. Sie werden gelegentlich auch als „pixelperfekt“ bezeichnet, weil Sie das Berichtsseitenlayout detailliert steuern können. Paginierte Berichte basieren auf der RDL-Berichtstechnologie von SQL Server Reporting Services. Der Berichts-Generator ist das eigenständige Tool für die Erstellung paginierter Berichte. 
 
 Paginierte Berichte können viele Seiten umfassen. Dieser Bericht umfasst beispielsweise 563 Seiten. Jede Seite ist genau strukturiert, mit einer Seite pro Rechnung und sich wiederholenden Kopf- und Fußzeilen.
 
@@ -36,20 +36,19 @@ Paginierte Berichte besitzen ihr eigenes Designtool, nämlich den Power BI-Beric
 
 Ein einzelner paginierter Bericht kann über eine Reihe unterschiedlicher Datenquellen verfügen. Im Gegensatz zu Power BI-Berichten liegt ihm kein Datenmodell zugrunde. Für die erste Version paginierter Berichte im Power BI-Dienst erstellen Sie eingebettete Datenquellen und Datasets im Bericht selbst. Momentan können Sie keine freigegebenen Datenquellen oder freigegebene Datasets verwenden. Sie erstellen Berichte im Berichts-Generator auf dem lokalen Computer. Wenn ein Bericht eine Verbindung mit lokalen Daten herstellt, nachdem Sie den Bericht in den Power BI-Dienst hochgeladen haben, müssen Sie ein Gateway erstellen und die Datenverbindung umleiten. Hier sind die Datenquellen aufgeführt, mit denen Sie zu diesem Zeitpunkt eine Verbindung herstellen können:
 
-- Azure SQL-Datenbank und Data Warehouse
+- Azure SQL-Datenbank und Data Warehouse (via Basic und OAuth)
 - Azure Analysis Services (über SSO)
 - SQL Server über ein Gateway
 - SQL Server Analysis Services über ein Gateway
-- Power BI Premium-Datasets
+- Power BI-Datasets
 - Oracle
 - Teradata
-- Zusätzlich hinzugefügte Datenquellen
 
 ## <a name="design-your-report"></a>Entwerfen des Berichts  
 
 ### <a name="create-paginated-reports-with-matrix-chart-and-free-form-layouts"></a>Erstellen Sie paginierte Berichte mit Matrix-, Diagramm- und Freiformlayouts
 
-Tabellenberichte eignen sich gut für spaltenbasierte Daten. Matrixberichte wie Kreuztabellenberichte oder PivotTable-Berichte eignen sich gut für zusammengefasste Daten. Diagrammberichte stellen Daten in einem grafischen Format dar. Freiform-*Listenberichte* können fast alles Andere wie z. B. Rechnungen darstellen. 
+Tabellenberichte eignen sich gut für spaltenbasierte Daten. Matrixberichte wie Kreuztabellenberichte oder PivotTable-Berichte eignen sich gut für zusammengefasste Daten. Diagrammberichte stellen Daten in einem grafischen Format dar. Freiform-*Listenberichte* können fast alles Andere wie z.B. Rechnungen darstellen. 
   
 Sie können mit einem der Assistenten des Berichts-Generators starten. Die Tabellen-, Matrix- und Diagramm-Assistenten führen Sie durch die Erstellung der Verbindung mit der eingebetteten Datenquelle und dem eingebetteten Dataset. Ziehen Sie anschließend Felder per Drag & Drop, um eine Datasetabfrage zu erstellen, wählen Sie Layout und Stil aus, und passen Sie den Bericht an.  
   
@@ -57,7 +56,7 @@ Mit dem Karten-Assistenten erstellen Sie Berichte, die aggregierte Daten vor ein
 
 ### <a name="add-more-to-your-report"></a>Hinzufügen weiterer Elemente zum Bericht
 
-Ändern Sie Ihre Daten, indem Sie sie filtern, gruppieren und sortieren bzw. Formeln oder Ausdrücke hinzufügen. Fügen Sie Diagramme, Messgeräte, Sparklines und Indikatoren hinzu, um Daten in einem visuellen Format zusammenzufassen.  Verwenden Sie Parameter und Filter, um Daten für benutzerdefinierte Ansichten zu filtern. Betten Sie Bilder und andere Ressourcen ein, oder verweisen Sie auf diese (auch auf externe Inhalte).  
+Ändern Sie Ihre Daten, indem Sie sie filtern, gruppieren und sortieren bzw. Formeln oder Ausdrücke hinzufügen. Fügen Sie Diagramme, Messgeräte, Sparklines und Indikatoren hinzu, um Daten in einem visuellen Format zusammenzufassen.  Verwenden Sie Parameter und Filter, um Daten für benutzerdefinierte Sichten zu filtern. Betten Sie Bilder oder andere Ressourcen ein, oder verweisen Sie darauf – auch externe Inhalte.  
 
 Alles in einem paginierten Bericht, vom Bericht selbst bis hin zu jedem Textfeld, jedem Bild, jeder Tabelle und jedem Diagramm, besitzt ein Array von Eigenschaften, die Sie festlegen können, damit der Bericht genau Ihren Vorstellungen entspricht.
 
@@ -79,10 +78,10 @@ Weitere Details finden Sie im Artikel [Subscribe yourself and others to paginate
 Hier sind einige andere Features aufgeführt, die in der ersten Version nicht unterstützt werden:
 
 - Anheften von Berichtsseiten oder Visuals an Power BI-Dashboards. Sie können noch immer Visualisierungen aus einem lokalen paginierten Bericht auf einem Power BI-Berichtsserver oder einem Reporting Services-Berichtsserver an ein Power BI-Dashboard anheften. Weitere Informationen finden Sie unter [Anheften von Reporting Services-Elementen an Power BI-Dashboards](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards).
-- Interaktive Features wie Dokumentstrukturen und Schaltflächen zum Ein-/Ausblenden.
-- Unterberichte und Drillthroughberichte.
+- Dokumentstruktur.
+- Unterberichte und Drillthroughberichte.  Sie können jedoch auch URL-Parameter mit paginierten Berichten verwenden, um Drillthroughszenarios zu erreichen.
 - Freigegebene Datenquellen und freigegebene Datasets.
-- Visuals aus Power BI-Berichten.
+
  
 ## <a name="next-steps"></a>Nächste Schritte
 

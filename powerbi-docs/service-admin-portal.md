@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/20/2019
+ms.date: 09/25/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 5551247307e750624006de71a3c8652376b73fcf
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: f472ee821d0ccf3bbe8e47697f934b91668cd16d
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175269"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305893"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Verwalten von Power BI im Verwaltungsportal
 
@@ -522,6 +522,15 @@ Mit Power BI verwendete Daten werden standardmäßig im internen Speicher von Po
 Als Administrator können Sie die Arbeitsbereiche anzeigen, die in Ihrem Mandanten vorhanden sind. Sie können die Liste der Arbeitsbereiche sortieren und filtern und die Details zu jedem Arbeitsbereich anzeigen. Die Tabellenspalten entsprechen den von der [Power BI Admin-Rest-API](/rest/api/power-bi/admin) für Arbeitsbereiche zurückgegebenen Eigenschaften. Persönliche Arbeitsbereiche sind vom Typ **PersonalGroup**, klassische Arbeitsbereiche vom Typ **Group** und moderne Arbeitsbereiche vom Typ **Workspace**. Weitere Informationen finden Sie unter [Erstellen der neuen Arbeitsbereiche in Power BI](service-create-the-new-workspaces.md).
 
 ![Liste der Arbeitsbereiche](media/service-admin-portal/workspaces-list.png)
+
+Auf der Registerkarte **Arbeitsbereiche** sehen Sie den *Status* für jeden Arbeitsbereich. In der folgenden Tabelle finden Sie weitere Informationen zur Bedeutung dieser Status.
+
+|Staat  |Beschreibung  |
+|---------|---------|
+| Aktiv | Ein normaler Arbeitsbereich. Es zeigt nichts über die Verwendung an oder das, was sich darin befindet, sondern nur, dass der Arbeitsbereich selbst „normal“ ist. |
+| Verwaist | Ein Arbeitsbereich ohne Administratorbenutzer. |
+| Gelöscht | Ein gelöschter Arbeitsbereich. Wir pflegen genügend Metadaten, um den Arbeitsbereich auf Wunsch wiederherzustellen. |
+| Wird entfernt | Ein Arbeitsbereich, der gerade gelöscht wird, aber noch vorhanden ist. Benutzer können ihre eigenen Arbeitsbereiche löschen, indem sie Dinge in „Entfernen“ und schließlich in „Gelöscht“ verschieben. |
 
 ## <a name="custom-branding"></a>Benutzerdefiniertes Branding
 

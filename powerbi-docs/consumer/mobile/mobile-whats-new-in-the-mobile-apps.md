@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: e74bdacc1b8ee40ec6628337e9e78528e8fdee29
-ms.sourcegitcommit: 4222ebad1a3a32d8040f6a615a0b7f173d7869d0
+ms.openlocfilehash: fe8f21bbbd0886b8ff4046f744884e53f8822912
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71164502"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71327757"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Neuigkeiten bei den mobilen Apps für Power BI
 Informationen zu verwandten Neuigkeiten finden Sie unter:
@@ -22,6 +22,13 @@ Informationen zu verwandten Neuigkeiten finden Sie unter:
 * [Blog des Power BI-Teams zu mobilen Apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Neuigkeiten in Power BI Desktop](../../desktop-latest-update.md)  
 * [Neuigkeiten beim Power BI-Dienst](../../service-whats-new.md)  
+
+## <a name="september-2019"></a>September 2019
+
+### <a name="support-for-custom-app-navigation-ios-and-android"></a>Unterstützung für benutzerdefinierte App-Navigation (iOS und Android)
+
+Die Unterstützung für benutzerdefinierte App-Navigation wurde hinzugefügt. Wenn Sie nun eine App in Power BI Mobile öffnen, steht Ihnen die benutzerdefinierte Navigation des App-Erstellers zur Verfügung. Die App-Navigation kann nach Inhalten organisiert werden und kann neue Elemente wie Links und reduzierbare Abschnitte enthalten.
+Lesen Sie mehr zur [benutzerdefinierten Navigation](https://powerbi.microsoft.com/en-us/blog/designing-custom-navigation-for-power-bi-apps-is-now-available/).
 
 ## <a name="august-2019"></a>August 2019
 

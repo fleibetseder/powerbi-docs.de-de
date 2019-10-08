@@ -11,18 +11,20 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 857db3240385e9bf1b4e0416cc1200d1a029d73e
-ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.openlocfilehash: 65410dc15600307ba11a2c48db1689be5a458383
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68867207"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71193077"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Tabellen in Power BI-Berichten und -Dashboards
 
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Eine Tabelle ist ein Raster, das zusammengehörende Daten in einer logischen Folge von Zeilen und Spalten enthält. Zudem können auch Kopfzeilen und eine Zeile für Summen enthalten sein. Tabellen empfehlen sich insbesondere für quantitative Vergleiche, bei denen Sie viele Werte einer einzigen Kategorie betrachten. In dieser Tabelle werden beispielsweise fünf verschiedene Measures für die **Kategorie** angezeigt.
 
-![Screenshot einer Tabelle, die fünf verschiedene Measures für die Kategorie anzeigt.](media/power-bi-visualization-tables/table.png)
+![Screenshot einer Tabelle, die fünf verschiedene Measures für die Kategorie anzeigt.](media/power-bi-visualization-tables/power-bi-table-grid3.png)
 
 Erstellen Sie Tabellen in Berichten, und heben Sie Elemente in der Tabelle mit anderen Visuals auf der gleichen Berichtsseite übergreifend hervor. Sie können Zeilen, Spalten und sogar einzelne Zellen für die Kreuzhervorhebung auswählen. Sie können auch einzelne und mehrere ausgewählte Zellen kopieren und in andere Anwendungen einfügen.
 
@@ -36,25 +38,23 @@ Tabellen sind für folgende Zwecke gut geeignet:
 
 * Anzeigen numerischer Daten nach Kategorien.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisite"></a>Voraussetzung
 
-* Der Power BI-Dienst oder Power BI Desktop
+Dieses Tutorial verwendet die [PBIX-Datei mit einem Analysebeispiel für den Einzelhandel](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-* Bericht zum Analysebeispiel für den Einzelhandel
+1. Wählen Sie im oberen linken Bereich der Menüleiste die Option **Datei** > **Öffnen** aus.
+   
+2. Suchen Sie Ihre Kopie der **PBIX-Datei mit einem Analysebeispiel für den Einzelhandel**.
 
-## <a name="get-the-retail-analysis-sample-report"></a>Abrufen des Berichts zum Analysebeispiel für den Einzelhandel
+1. Öffnen Sie die **PBIX-Datei mit einem Analysebeispiel für den Einzelhandel** in der Berichtsansicht ![Screenshot des Berichtsansichtssymbols.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-In dieser Anleitung wird das Analysebeispiel für den Einzelhandel verwendet. Zum Erstellen einer Visualisierung benötigen Sie Bearbeitungsberechtigungen für das Dataset und den Bericht. Erfreulicherweise können die Power BI-Beispiele alle bearbeitet werden. Wenn jemand einen Bericht für Sie freigegeben hat, können Sie keine Visualisierungen in Berichten erstellen. Öffnen Sie zum besseren Verständnis den [Bericht zum Analysebeispiel für den Einzelhandel](../sample-datasets.md).
+1. Auswählen ![Screenshot der gelben Registerkarte.,](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) um eine neue Seite hinzuzufügen.
 
-Nach dem Abrufen des Datasets für das **Analysebeispiel für den Einzelhandel** können Sie beginnen.
 
 ## <a name="create-a-table"></a>Erstellen einer Tabelle
 
 Sie erstellen die am Anfang des Artikels abgebildete Tabelle, um Umsatzwerte nach Artikelkategorien anzuzeigen.
 
-1. Wählen Sie in **Mein Arbeitsbereich** die Option **Datasets** > **Bericht erstellen** aus.
-
-    ![Screenshot von „Datasets > Bericht erstellen“.](media/power-bi-visualization-tables/power-bi-create-a-report.png)
 
 1. Wählen Sie im Bereich **Felder** **Element** > **Kategorie** aus.
 
@@ -66,11 +66,10 @@ Sie erstellen die am Anfang des Artikels abgebildete Tabelle, um Umsatzwerte nac
 
 1. Wählen Sie dann **Verkäufe > Verkäufe in diesem Jahr** aus, und wählen Sie alle drei Optionen aus: **Wert**, **Ziel** und **Status**.
 
-1. Suchen Sie im Bereich **Visualisierung** den Bereich **Werte**, und verschieben Sie die Werte mit Drag & Drop, bis die Reihenfolge der Diagrammspalten der in der ersten Abbildung auf dieser Seite entspricht. Ihre **Werte** sehen nun wie folgt aus:
+1. Suchen Sie im Bereich **Visualisierung** den Bereich **Werte**, und wählen Sie die Werte aus, bis die Reihenfolge der Diagrammspalten der in der ersten Abbildung auf dieser Seite entspricht. Ziehen Sie bei Bedarf die Werte in den Wertbereich. Ihre **Werte** sehen nun wie folgt aus:
 
     ![Werte](media/power-bi-visualization-tables/power-bi-table2.png)
 
-1. Heften Sie die Tabelle durch Auswählen des Anheften-Symbols am Dashboard an ![Reißzwecke](media/power-bi-visualization-tables/pbi_pintile.png) in der rechten oberen Ecke des Visuals.
 
 ## <a name="format-the-table"></a>Formatieren der Tabelle
 
@@ -170,10 +169,6 @@ So kopieren Sie mehrere Zellen:
 1. Wählen Sie **Kopieren** > **Auswahl kopieren** aus.
 
     ![Kopieroptionen](media/power-bi-visualization-tables/power-bi-copy-selection.png)
-
-    Die Kopie enthält die Spalten- und Zeilenüberschriften.
-
-    ![Einfügen in Excel](media/power-bi-visualization-tables/power-bi-paste-selection.png)
 
 ## <a name="adjust-the-column-width-of-a-table"></a>Anpassen der Spaltenbreite in einer Tabelle
 

@@ -1,6 +1,6 @@
 ---
 title: Grundlegendes zur Power BI-Administratorrolle
-description: Erfahren Sie, wie Sie die Sicherheit auf Zeilenebene für importierte Datasets in DirectQuery im Power BI-Dienst konfigurieren.
+description: Dieser Artikel beschreibt die Rolle des Power BI-Dienstadministrators und wie Sie diese in Ihrer Organisation verwenden können.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
@@ -10,18 +10,16 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 2185d7a9c91ed014cf0bed29d6393be0e40556a8
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 8b4d2382f89c48f20767cf72bc0468589c366cfe
+ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074515"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256435"
 ---
 # <a name="understanding-the-power-bi-service-administrator-role"></a>Grundlegendes zur Rolle „Power BI-Dienstadministrator“
 
 Erfahren Sie, wie Sie Rolle des Power BI-Dienstadministrators in Ihrer Organisation verwenden können. Benutzer mit dieser Rolle verfügen über vollständige Kontrolle über einen Power BI-Mandanten und die zugehörigen Verwaltungsfunktionen – mit Ausnahme der Lizenzierung.
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/PQRbdJgEm3k?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 Die Rolle des Power BI-Dienstadministrators kann Benutzern zugewiesen werden, die Zugriff auf das Power BI-Verwaltungsportal benötigen, ohne dass diesen Benutzern auch vollständiger Administratorzugriff auf Office 365 gewährt wird.
 

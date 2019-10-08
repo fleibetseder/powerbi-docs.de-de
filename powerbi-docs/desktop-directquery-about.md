@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 11de32b8119e8b6922dcc1a971750e4256812932
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: d303e20e524ad7ac67882812b6e4f5a1d9b06c33
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654750"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305800"
 ---
 # <a name="using-directquery-in-power-bi"></a>Verwenden von DirectQuery mit Power BI
 Sie können eine Verbindung mit allen möglichen verschiedenen Datenquellen herstellen, wenn Sie  **Power BI Desktop** oder den **Power BI-Dienst** verwenden, und es gibt unterschiedliche Möglichkeiten, diese Datenverbindungen herzustellen. Sie können Daten in Power BI *importieren*, was die gängigste Methode ist, um Daten abzurufen. Alternativ können Sie eine Direktverbindung zu Daten im ursprünglichen Quellrepository herstellen, was als **DirectQuery** bekannt ist. Dieser Artikel beschreibt **DirectQuery** und die zugehörigen Funktionen:
@@ -137,6 +137,7 @@ Der Begriff *Modellierung* bezeichnet in diesem Kontext den Vorgang zum Verfeine
 Wenn Sie **DirectQuery** verwenden, können viele dieser Modellanreicherungen noch immer vorgenommen werden, und es existiert sicherlich noch immer das Prinzip, dass die Rohdaten angereichert werden, um den späteren Verbrauch zu verbessern. Allerdings sind einige Modellierungsfunktionen bei der Verwendung von DirectQuery überhaupt nicht oder nur eingeschränkt verfügbar. Im Allgemeinen werden Einschränkungen angewendet, um Leistungsprobleme zu vermeiden. Die Einschränkungen, die häufig für DirectQuery-Quellen angewendet werden, sind in der folgenden Liste aufgeführt. Zusätzliche Einschränkungen gelten möglicherweise für einzelne Quellen, so wie am Ende dieses Artikels unter *Datenquellenspezifische Details* beschrieben wird.
 
 * **Keine integrierte Datumshierarchie:** Wenn Sie Daten importieren, erhält standardmäßig auch jede date/datetime-Spalte eine integrierte Datumshierarchie, die standardmäßig verfügbar ist. Wenn Sie z.B. eine Tabelle mit Verkaufsaufträgen importieren, die eine Spalte „OrderDate“ enthält, dann wird es vor der Verwendung von OrderDate in einem visuellen Element möglich sein, die zugehörige Ebene auszuwählen (Jahr, Monat, Tag), die verwendet werden soll. Diese integrierte Datumshierarchie ist nicht verfügbar, wenn Sie den DirectQuery-Modus verwenden. Beachten Sie jedoch, dass die DAX Time Intelligence-Funktionen ganz normal verwendet werden können, wenn eine Datumstabelle in der zugrunde liegenden Quelle verfügbar ist (wie es in vielen Data Warehouses üblich ist).
+* **Datums-/Zeitunterstützung nur bis zur zweiten Genauigkeit:** Wenn Sie Zeitspalten in Ihrem Dataset verwenden, gibt Power BI nur Abfragen an die zugrunde liegende Quelle mit einem Detaillierungsgrad von Sekunden aus. Abfragen werden erst in Millisekunden an die DirectQuery-Quelle gesendet, sodass Sie diesen Teil der Zeitangaben aus Ihren Quellspalten entfernen müssen.
 * **Einschränkungen in berechneten Spalten:** Berechnete Spalten sind darauf beschränkt, dass sie zeilenintern sind. Das bedeutet, dass sie sich nur auf Werte anderer Spalten derselben Tabelle beziehen können, ohne Aggregatfunktionen zu verwenden. Darüber hinaus werden die zugelassenen DAX-Skalarfunktionen (wie etwa LEFT()) auf diejenigen eingeschränkt, die an die darunter liegende Quelle übertragen werden können. Ergebnisse können je nach genauen Funktionen der Quelle variieren. Funktionen, die nicht unterstützt werden, werden nicht in AutoVervollständigen aufgelistet, wenn DAX für eine berechnete Tabelle erstellt wird, und würden bei Benutzung einen Fehler auslösen.
 * **Keine Unterstützung für über- und untergeordnete DAX-Funktionen:** Wenn Sie sich im DirectQuery-Modell befinden, ist die Verwendung der DAX PATH()-Funktionsfamilie nicht möglich, die normalerweise die Strukturen der über- und untergeordneten Funktionen behandeln (etwa als Kontenplan oder Mitarbeiterhierarchien).
 * **Berechnete Tabellen werden nicht unterstützt:** Die Möglichkeit zum Definieren einer berechneten Tabelle mithilfe eines DAX-Ausdrucks wird im DirectQuery-Modus nicht unterstützt.

@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 09/17/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 214b9fe48d5254e1bd2d436dd873b3c2d1d35f98
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1622e06cd7aa394d384954b393d1e547e87df10a
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65564913"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305655"
 ---
 # <a name="restart-a-power-bi-premium-capacity"></a>Neustarten einer Power BI Premium-Kapazität
 
@@ -31,7 +31,7 @@ Power BI verbessert kontinuierlich den Schutz von Benutzern der Premium-Kapazit
 
 ## <a name="is-the-restart-process-safe-will-i-lose-any-data"></a>Ist der Neustartprozess sicher? Gehen meine Daten verloren?
 
-Alle gespeicherten Daten, Definitionen, Berichte und Dashboards in Ihrer Kapazität bleiben nach dem Neustart vollständig intakt. Wenn Sie eine Kapazität neu starten, werden alle laufenden geplanten Aktualisierungen und Ad-hoc-Aktualisierungen angehalten. Der Dienst versucht, die Aktualisierungen zu wiederholen, wenn die Kapazität verfügbar ist. Benutzern, die mit der Kapazität interagieren, geht nicht gespeicherte Arbeit verloren. Sie sollten nach Abschluss des Neustarts ihren Browser aktualisieren.
+Alle gespeicherten Daten, Definitionen, Berichte und Dashboards in Ihrer Kapazität bleiben nach dem Neustart vollständig intakt. Wenn Sie eine Kapazität neu starten, werden alle laufenden geplanten Aktualisierungen und Ad-hoc-Aktualisierungen angehalten. Der Dienst versucht, die Aktualisierung erneut durchzuführen, wenn die Kapazität verfügbar ist. Benutzern, die mit der Kapazität interagieren, geht nicht gespeicherte Arbeit verloren. Sie sollten nach Abschluss des Neustarts ihren Browser aktualisieren.
 
 ## <a name="how-do-i-restart-a-capacity"></a>Wie starte ich eine Kapazität neu?
 

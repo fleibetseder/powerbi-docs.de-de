@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/06/2019
+ms.date: 09/26/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: e77e61d00ac555c907a6d87ab0ffdeb8e21a5bd8
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: bf69b2e4c25597eba980137e5ef8b2feb2f4d103
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841309"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71327715"
 ---
 # <a name="storage-mode-in-power-bi-desktop"></a>Speichermodus in Power BI Desktop
 
 In Power BI Desktop können Sie den *Speichermodus* von Tabellen festlegen. Mit dem *Speichermodus* können Sie steuern, ob Power BI Desktop Tabellendaten im Arbeitsspeicher für Berichte zwischenspeichert. 
 
-![Speichermodus in Power BI Desktop](media/desktop-storage-mode/storage-mode_01.png)
+![Speichermodus in Power BI Desktop](media/desktop-storage-mode/storage-mode-01.png)
 
 Das Festlegen des Speichermodus bietet viele Vorteile. Sie können den Speichermodus für jede Tabelle in Ihrem Modell einzeln festlegen. Durch diese Aktion entsteht ein einzelnes Dataset, das folgende Vorteile bietet:
 
@@ -48,13 +48,10 @@ Die Einstellung „Speichermodus“ in Power BI Desktop ist eines von drei in Be
 
 ## <a name="use-the-storage-mode-property"></a>Verwenden der Speichermoduseigenschaft
 
-Der Speichermodus ist eine Eigenschaft, die Sie für jede Tabelle in Ihrem Modell festlegen können. Wenn Sie den Speichermodus festlegen möchten, klicken Sie im Bereich **Felder** mit der rechten Maustaste auf die Tabelle, deren Eigenschaften Sie festlegen möchten, und wählen Sie dann **Eigenschaften** aus.
+Der Speichermodus ist eine Eigenschaft, die Sie für jede Tabelle in Ihrem Modell festlegen können. Wählen Sie in der Ansicht **Modell** die Tabelle aus, deren Eigenschaften Sie anzeigen oder festlegen möchten, wählen Sie dann den Bereich **Eigenschaften**, und erweitern Sie dann den Abschnitt **Erweitert**. Erweitern Sie anschließend das Dropdownmenü **Speichermodus**, um den Speichermodus festzulegen oder seine aktuelle Einstellung anzuzeigen.
 
-![Die Option „Eigenschaften“ im Kontextmenü](media/desktop-storage-mode/storage-mode_02.png)
+![Die Option „Eigenschaften“ im Kontextmenü](media/desktop-storage-mode/storage-mode-02.png)
 
-Die aktuelle Eigenschaft wird in der Dropdownliste **Speichermodus** im Bereich **Feldeigenschaften** der Tabelle angezeigt. Dort können Sie den aktuellen Speichermodus anzeigen oder ändern.
-
-![Festlegen des Speichermodus für eine Tabelle](media/desktop-storage-mode/storage-mode_03.png)
 
 Es gibt drei Werte für den Speichermodus:
 
@@ -77,11 +74,11 @@ Für Dual-Tabellen gelten dieselben funktionellen Einschränkungen wie für Dire
 ## <a name="propagation-of-dual"></a>Weitergabe von Dual
 Sehen Sie sich das folgende einfache Modell an, bei dem alle Tabellen von einer einzelnen Quelle stammen, die Import und DirectQuery unterstützt.
 
-![Beispielbeziehungsansicht für den Speichermodus](media/desktop-storage-mode/storage-mode_04.png)
+![Beispielbeziehungsansicht für den Speichermodus](media/desktop-storage-mode/storage-mode-04.png)
 
 Nehmen wir an, dass es sich bei allen Tabellen in diesem Modell um DirectQuery-Tabellen handelt. Wenn der **Speichermodus** der *SurveyResponse*-Tabelle in „Import“ geändert wird, wird folgendes Warnungsfenster angezeigt:
 
-![Warnungsfenster des Speichermodus](media/desktop-storage-mode/storage-mode_05.png)
+![Warnungsfenster des Speichermodus](media/desktop-storage-mode/storage-mode-05.png)
 
 Die Dimensionstabellen (*Customer*, *Geography* und *Date*) können auf **Dual** festgelegt werden, um die Anzahl schwacher Beziehungen im Dataset zu verringern und die Leistung zu verbessern. Schwache Beziehungen enthalten normalerweise mindestens eine DirectQuery-Tabelle, bei der die Joinlogik nicht per Push an die Quellsysteme übertragen werden kann. Die Tatsache, dass **Dual**-Tabellen entweder als DirectQuery oder Import fungieren können, hilft dies zu vermeiden.
 
@@ -123,15 +120,15 @@ Abfragen, die auf Tabellen im **Dual**-Modus verweisen, geben wenn möglich Date
 
 Im Anschluss an das vorherige Beispiel verweist die folgende Abfrage nur auf eine Spalte aus der Tabelle *Date*, die sich im **Dual**-Modus befindet. Aus diesem Grund sollte die Abfrage vom Cache ausgeführt werden.
 
-![Skript für die Speichermodusdiagnose](media/desktop-storage-mode/storage-mode_06.png)
+![Skript für die Speichermodusdiagnose](media/desktop-storage-mode/storage-mode-06.png)
 
 Die folgende Abfrage verweist nur auf eine Spalte aus der Tabelle *Sales*, die sich im **DirectQuery**-Modus befindet. Aus diesem Grund sollte diese *nicht* vom Cache ausgeführt werden.
 
-![Skript für die Speichermodusdiagnose](media/desktop-storage-mode/storage-mode_07.png)
+![Skript für die Speichermodusdiagnose](media/desktop-storage-mode/storage-mode-07.png)
 
 Die folgende Abfrage ist interessant, da sie beide Spalten kombiniert. Diese Abfrage wird nicht vom Cache ausgeführt. Möglicherweise erwarten Sie zunächst, dass *CalendarYear*-Werte vom Cache und *SalesAmount*-Werte von der Quelle abgerufen die Ergebnisse anschließend kombiniert werden, dies wäre jedoch weniger effizient als den SUM/GROUP BY-Vorgang an das Quellsystem zu übermitteln. Wenn der Vorgang an die Quelle weitergegeben wird, fällt die Anzahl der zurückgegebenen Zeilen wahrscheinlich weitaus geringer aus. 
 
-![Skript für die Speichermodusdiagnose](media/desktop-storage-mode/storage-mode_08.png)
+![Skript für die Speichermodusdiagnose](media/desktop-storage-mode/storage-mode-08.png)
 
 > [!NOTE]
 > Dieses Verhalten unterscheidet sich von [Beziehungen mit einer m:n-Kardinalität in Power BI Desktop](desktop-many-to-many-relationships.md), wenn zwischengespeicherte und nicht zwischengespeicherte Tabellen kombiniert werden.
@@ -145,7 +142,7 @@ Der Speichermodus *Dual* trägt zur Leistungsoptimierung bei. Er sollte nur auf 
 ## <a name="data-view"></a>Datenansicht
 Ist für mindestens eine Tabelle im Dataset der Speichermodus auf **Import** oder **Dual** festgelegt, wird die Registerkarte **Datenansicht** angezeigt.
 
-![Datensicht in Power BI Desktop](media/desktop-storage-mode/storage-mode_09.png)
+![Datensicht in Power BI Desktop](media/desktop-storage-mode/storage-mode-03.png)
 
 Wenn **Dual-** und **Import-Tabellen** in der **Datenansicht** ausgewählt sind, zeigen diese zwischengespeicherte Daten an. DirectQuery-Tabellen zeigen keine Daten an, und es wird eine Meldung angezeigt, die besagt, dass DirectQuery-Tabellen nicht angezeigt werden können.
 

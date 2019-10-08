@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2019
+ms.date: 09/26/2019
 ms.author: maggies
-ms.openlocfilehash: 2401064f1f7f3be63c23d72e79987784e1ec7049
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ec1aab13955a4c34861a3f0d8dd39b6c77607696
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187504"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71325665"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Erstellen eines Power BI-Berichts für den Power BI-Berichtsserver
 Sie können Power BI-Berichte lokal im Webportal von Power BI-Berichtsserver ebenso wie in der Cloud im Power BI-Dienst https://powerbi.com) speichern und verwalten. Sie erstellen und bearbeiten Berichte in Power BI Desktop und veröffentlichen sie im Webportal. Anschließend können Leser in Ihrer Organisation die Berichte in einem Browser oder einer mobilen Power BI-App auf einem Mobilgerät anzeigen.
@@ -31,7 +31,7 @@ Wenn Sie bereits Power BI-Berichte in Power BI Desktop erstellt haben, ist das E
 
     ![Power BI Desktop aus dem Webportal herunterladen](media/quickstart-create-powerbi-report/report-server-download-web-portal.png)
 
-    Oder wechseln Sie direkt zu [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=56723) (optimiert für Power BI-Berichtsserver – Mai 2019) im Microsoft Download Center.
+    Besuchen Sie alternativ die Startseite von [Power BI-Berichtsserver](https://powerbi.microsoft.com/report-server/), und wählen Sie **Erweiterte Downloadoptionen** aus.
 
 2. Wählen Sie im Download Center **Download** aus.
 
@@ -41,19 +41,19 @@ Wenn Sie bereits Power BI-Berichte in Power BI Desktop erstellt haben, ist das E
 
     - **PBIDesktopRS_x64.msi** (64-Bit-Version).
 
-4. Nachdem Sie das Installationsprogramm heruntergeladen haben, führen Sie den Setup-Assistenten für Power BI Desktop (Mai 2019).
+4. Nachdem Sie das Installationsprogramm heruntergeladen haben, führen Sie den Setup-Assistenten für Power BI Desktop (September 2019) aus.
 
 2. Aktivieren Sie am Ende des Installationsvorgangs **Power BI Desktop jetzt starten**.
    
-    Die App wird automatisch gestartet, sodass Sie gleich loslegen können. Sie können feststellen, dass Sie die richtige Version verfügen, da "Power BI Desktop (Mai 2019)" in der Titelleiste angezeigt wird.
+    Die App wird automatisch gestartet, sodass Sie gleich loslegen können. Anhand des Texts **Power BI Desktop (September 2019)** auf der Titelleiste erkennen Sie, dass Sie über die richtige Version verfügen.
 
-    ![Power BI Desktop-Version Mai 2019](media/quickstart-create-powerbi-report/power-bi-report-server-desktop-may-2019.png)
+    ![Power BI Desktop September 2019](media/quickstart-create-powerbi-report/power-bi-report-server-desktop-sept-2019.png)
 
 3. Wenn Sie mit Power BI Desktop nicht vertraut sind, wird empfohlen, sich die Videos auf dem Begrüßungsbildschirm anzusehen.
    
     ![Startbildschirm von Power BI Desktop](media/quickstart-create-powerbi-report/report-server-powerbi-desktop-start.png)
 
-## <a name="step-2-select-a-data-source"></a>Schritt 2: Auswählen einer Datenquelle
+## <a name="step-2-select-a-data-source"></a>Schritt 2: Auswählen einer Datenquelle
 Sie können Verbindungen mit einer Vielzahl von Datenquellen herstellen. Erfahren Sie mehr über das [Verbinden mit Datenquellen](connect-data-sources.md).
 
 1. Klicken Sie auf dem Begrüßungsbildschirm auf **Daten abrufen**.
@@ -61,7 +61,7 @@ Sie können Verbindungen mit einer Vielzahl von Datenquellen herstellen. Erfahre
     Oder klicken Sie auf der Registerkarte **Start** auf **Daten abrufen**.
 2. Wählen Sie Ihre Datenquelle (in diesem Beispiel **Analysis Services**) aus.
    
-    ![Datenquelle auswählen](media/quickstart-create-powerbi-report/report-server-get-data-ssas.png)
+    ![Datenquelle auswählen](media/quickstart-create-powerbi-report/power-bi-report-server-get-data-ssas.png)
 3. Füllen Sie **Server** und optional **Datenbank** aus. Stellen Sie sicher, dass **Live verbinden** ausgewählt ist, und klicken Sie auf **OK**.
    
     ![Servername](media/quickstart-create-powerbi-report/report-server-ssas-server-name.png)

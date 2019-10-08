@@ -11,14 +11,16 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 4c28071917dbe5669e6e35bd416236ef7047eb24
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: 1de5869bc5b422dc98a13316022f653f62675829
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67408645"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71192575"
 ---
 # <a name="treemaps-in-power-bi"></a>Treemaps in Power BI
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 Treemaps zeigen hierarchische Daten als verschachtelten Rechtecke an. Jede Hierarchieebene wird durch ein farbiges Rechteck (Verzweigung) dargestellt, das kleinere Rechtecke (Blätter) enthält. Power BI macht die Größe der Fläche in jedem Rechteck vom gemessenen Wert abhängig. Die Rechtecke werden von oben links (das Größte) nach unten rechts (das Kleinste) angeordnet.
 
@@ -40,6 +42,11 @@ Sie könnten die Anzahl der in anderen Kleidungskategorien verkauften Artikeln d
 
 Sie möchten sich zunächst einmal ansehen, wie ein Treemap-Diagramm erstellt wird? Ab Position 2:10 erläutert Amanda in diesem Video das Erstellen eines Treemap-Diagramms.
 
+   > [!NOTE]
+   > Dieses Video verwendet eine ältere Version von Power BI Desktop.
+   > 
+   > 
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="when-to-use-a-treemap"></a>Verwenden von Treemaps
@@ -58,15 +65,18 @@ Treemaps sind gut geeignet:
 
 * Zum Erkennen von Mustern, Ausreißern, der wichtigsten Einflussfaktoren und Ausnahmen.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisite"></a>Voraussetzung
 
-* Der Power BI-Dienst oder Power BI Desktop
+Dieses Tutorial verwendet die [PBIX-Datei mit einem Analysebeispiel für den Einzelhandel](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-* Bericht zum Analysebeispiel für den Einzelhandel
+1. Wählen Sie im oberen linken Bereich der Menüleiste die Option **Datei** > **Öffnen** aus.
+   
+2. Suchen Sie Ihre Kopie der **PBIX-Datei mit einem Analysebeispiel für den Einzelhandel**.
 
-## <a name="get-the-retail-analysis-sample-report"></a>Abrufen des Berichts zum Analysebeispiel für den Einzelhandel
+1. Öffnen Sie die **PBIX-Datei mit einem Analysebeispiel für den Einzelhandel** in der Berichtsansicht ![Screenshot des Berichtsansichtssymbols.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-In dieser Anleitung wird das Analysebeispiel für den Einzelhandel verwendet. Zum Erstellen einer Visualisierung benötigen Sie Bearbeitungsberechtigungen für das Dataset und den Bericht. Erfreulicherweise können die Power BI-Beispiele alle bearbeitet werden. Wenn jemand einen Bericht für Sie freigegeben hat, können Sie keine Visualisierungen in Berichten erstellen. Öffnen Sie zum besseren Verständnis den [Bericht zum Analysebeispiel für den Einzelhandel](../sample-datasets.md).
+1. Auswählen ![Screenshot der gelben Registerkarte.,](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) um eine neue Seite hinzuzufügen.
+
 
 Nach dem Abrufen des Datasets für das **Analysebeispiel für den Einzelhandel** können Sie beginnen.
 
@@ -74,25 +84,22 @@ Nach dem Abrufen des Datasets für das **Analysebeispiel für den Einzelhandel**
 
 Sie erstellen einen Bericht und fügen ein einfaches Treemap-Diagramm hinzu.
 
-1. Wählen Sie in **Mein Arbeitsbereich** die Option **Datasets** > **Bericht erstellen** aus.
-
-    ![Screenshot von „Datasets > Bericht erstellen“.](media/power-bi-visualization-treemaps/power-bi-create-a-report.png)
 
 1. Wählen Sie im Bereich **Felder** das Measure **Verkäufe** > **Verkäufe im letzten Jahr** aus.
 
-   ![Screenshot mit Auswahl von „Verkäufe > Verkäufe im letzten Jahr“ und der resultierenden Visualisierung.](media/power-bi-visualization-treemaps/treemapfirstvalue_new.png)
+   ![Screenshot mit Auswahl von „Verkäufe > Verkäufe im letzten Jahr“ und der resultierenden Visualisierung.](media/power-bi-visualization-treemaps/treemapfirstvalue-new.png)
 
 1. Wählen Sie das Treemap-Diagrammsymbol ![Screenshot des Treemap-Diagrammsymbols](media/power-bi-visualization-treemaps/power-bi-treemap-icon.png) aus, um das Diagramm in ein Treemap-Diagramm umzuwandeln.
 
-   ![Screenshot des Treemap-Diagramms ohne Konfiguration.](media/power-bi-visualization-treemaps/treemapconvertto_new.png)
+   ![Screenshot des Treemap-Diagramms ohne Konfiguration.](media/power-bi-visualization-treemaps/treemapconvertto-new.png)
 
-1. Ziehen Sie **Element** > **Kategorie** in den Bereich **Gruppe**.
+1. Wählen Sie **Element** > **Kategorie** aus, wodurch dem Bereich **Gruppe** noch **Kategorie** hinzugefügt wird.
 
     Power BI erstellt ein Treemap-Diagramm, in dem die Größe der Rechtecke auf dem Gesamtumsatz basiert und die Farbe die Kategorie widerspiegelt. Im Wesentlichen haben Sie eine Hierarchie erstellt, die die relative Größe des Gesamtumsatzes nach Kategorie visuell darstellt. In der Kategorie **Herren** wurden die höchsten Umsätze verzeichnet, in der Kategorie **Strumpfwaren** hingegen die niedrigsten.
 
     ![Screenshot des konfigurierten Treemap-Diagramms.](media/power-bi-visualization-treemaps/power-bi-complete.png)
 
-1. Ziehen Sie **Laden** > **Kette** in den Bereich **Details**, um das Treemap-Diagramm zu vervollständigen. Sie können den Vorjahresumsatzes jetzt nach Kategorie und Kette vergleichen.
+1. Wählen Sie **Laden** > **Kette** aus, wodurch dem Bereich **Details** noch **Kette** hinzugefügt wird, um das Treemap-Diagramm zu vervollständigen. Sie können den Vorjahresumsatzes jetzt nach Kategorie und Kette vergleichen.
 
    ![Screenshot des Treemap-Diagramms, wobei „Laden > Kette“ den „Details“ hinzugefügt ist.](media/power-bi-visualization-treemaps/power-bi-details.png)
 
@@ -103,19 +110,14 @@ Sie erstellen einen Bericht und fügen ein einfaches Treemap-Diagramm hinzu.
 
     Wenn Sie in dem Rechteck **090-Home** z.B. mit dem Mauszeiger über **Fashions Direct** fahren, wird die QuickInfo zum Fashions Direct-Teil der Kategorie „Home“ angezeigt.
 
-   ![Screenshot der Home-QuickInfo, die angezeigt wird.](media/power-bi-visualization-treemaps/treemaphoverdetail_new.png)
+   ![Screenshot der Home-QuickInfo, die angezeigt wird.](media/power-bi-visualization-treemaps/treemaphoverdetail-new.png)
 
-1. Fügen Sie das Treemap-Diagramm als [Dashboardkachel hinzu (heften Sie die Visualisierung an)](../service-dashboard-tiles.md).
-
-1. Speichern Sie [den Bericht](../service-report-save.md).
 
 ## <a name="highlighting-and-cross-filtering"></a>Hervorheben und Kreuzfiltern
 
-Informationen zur Verwendung des Bereichs **Filter** finden Sie unter [Hinzufügen eines Filters zu einem Bericht in Power BI](../power-bi-report-add-filter.md).
+Das Markieren von **Kategorien** oder **Details** in einem Treemap-Diagramm ermöglicht die Kreuzhervorhebung und Kreuzfilterung anderer Visualisierungen auf der Berichtsseite. Fügen Sie dieser Berichtsseite entweder einige Visuals hinzu, oder kopieren Sie das Treemap-Diagramm auf eine der anderen Seiten in diesem Bericht. Im folgenden Bild wurde das Treemap-Diagramm auf die Seite **Übersicht** kopiert. 
 
-Das Markieren von **Kategorien** oder **Details** in einem Treemap-Diagramm ermöglicht die Kreuzhervorhebung und Kreuzfilterung anderer Visualisierungen auf der Berichtsseite und umgekehrt. Fügen Sie dieser Berichtsseite entweder einige Visuals hinzu, oder kopieren Sie das Treemap-Diagramm auf eine der anderen Seiten in diesem Bericht.
-
-1. Wählen Sie im Treemap-Diagramm entweder eine **Kategorie** oder eine **Kette** innerhalb einer **Kategorie** aus. Dadurch erfolgt eine Kreuzhervorhebung der anderen Visualisierungen auf der Seite. Wenn Sie beispielsweise **050-Schuhe**auswählen, wird für Schuhe ein Umsatz von **3.640.471 $** für das letzte Jahr angezeigt, wobei **2.174.185 $** auf **Fashions Direct** entfielen.
+1. Wählen Sie im Treemap-Diagramm entweder eine **Kategorie** oder eine **Kette** innerhalb einer **Kategorie** aus. Dadurch erfolgt eine Kreuzhervorhebung der anderen Visualisierungen auf der Seite. Wenn Sie beispielsweise **050-Schuhe** auswählen, wird für Schuhe ein Umsatz von **16.352.432 $** für das letzte Jahr angezeigt, wobei **2.174.185 $** auf **Fashions Direct** entfielen.
 
    ![Screenshot des „Übersicht über Ladenverkäufe“-Berichts mit Kreuzhervorhebung.](media/power-bi-visualization-treemaps/treemaphiliting.png)
 

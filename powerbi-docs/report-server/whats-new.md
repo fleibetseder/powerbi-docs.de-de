@@ -8,17 +8,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2019
-ms.openlocfilehash: 364795a25aaffb92afc4a7148c9bf6b3f88d2ac8
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 09/26/2019
+ms.openlocfilehash: 26dde078ce0b237779660c44b2843a645e4d1a47
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187315"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71325575"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Neuerungen in Power BI-Berichtsserver
 
-Erfahren Sie mehr über in Power BI-Berichtsserver und für Power BI-Berichtsserver optimiertem Power BI Desktop neuerungen. Dieser Artikel behandelt die wichtigsten Featurebereiche und wird aktualisiert, sobald neue Elemente veröffentlicht werden.
+Lernen Sie die Neuerungen in Power BI-Berichtsserver und Power BI Desktop mit Optimierung für Power BI-Berichtsserver kennen. In diesem Artikel werden die wichtigsten Featurebereiche behandelt, und er wird mit jedem neuen Release aktualisiert.
 
 Informationen zu verwandten Power BI-Neuigkeiten finden Sie hier:
 
@@ -26,77 +26,132 @@ Informationen zu verwandten Power BI-Neuigkeiten finden Sie hier:
 * [Neuigkeiten in Power BI Desktop](../desktop-latest-update.md)
 * [Neuigkeiten bei den mobilen Apps für Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
 
-## <a name="may-2019-power-bi-desktop-for-power-bi-report-server"></a>Mai 2019: Power BI Desktop für Power BI-Berichtsserver
+## <a name="september-2019"></a>September 2019
 
-Finden Sie unter den [Power BI-Berichtsserver Mai 2019](https://powerbi.microsoft.com/blog/power-bi-report-server-update-may-2019/) Blogbeitrag, um Details zu den neuen Funktionen.
+Ausführliche Informationen zu den neuen Features finden Sie im Blogbeitrag zu [Power BI-Berichtsserver vom September 2019](https://powerbi.microsoft.com/blog/power-bi-report-server-september-2019-feature-summary/).
 
-Hier sind einige der Highlights des Release:
+Das Update für Power BI-Berichtsserver vom September 2019 enthält viele Power BI-Berichtsfeatures. Im Folgenden werden einige Highlights aufgeführt:
 
-### <a name="performance-analyzer"></a>Leistungsanalyse 
+- **Filter auf Visualebene für Slicer:** Sie können einen Filter auf Visualebene für Slicer hinzufügen. Dieser Filter funktioniert wie alle anderen Filter auf Visualebene. Nur der Slicer selbst wird gefiltert und keine anderen Visuals. Dieser Filter eignet sich zum Filtern leerer Felder oder für die Verwendung von Measurefiltern.
+- **Symbole für Tabellen und Matrizen:** Mit KPI-Symbolen können Sie Regeln für die Anzeige verschiedener Symbolsätze in Ihren Tabellen und Matrizen ähnlich wie bei Symbolsätzen in Excel einrichten.
+- **Gruppieren von Visuals:** Sie können nun Visuals, Formen, Textfelder, Bilder und Schaltflächen wie in PowerPoint auf einer Berichtsseite gruppieren. Wenn Sie Objekte gruppieren, können Sie sie alle gemeinsam verschieben und skalieren. Die Gruppierung vereinfacht die Arbeit in Berichten mit vielen geschichteten Objekten auf allen Seiten.
+- **Neue Standarddesigns:** Die verfügbaren Designs für Berichte wurden aktualisieren, und das Standarddesign für neue Berichte wurde geändert, damit sie den neuen JSON-Optionen für Designs entsprechen. Das neue Standarddesign passt besser zur Designsprache von Microsoft und entspricht bewährten Designmethoden für Visuals. 
+- **Aktualisiertes Bereichsdesign:** Ein Großteil der Benutzeroberfläche wurde überarbeitet. Alle Bereiche, die Fußzeile und der Ansicht-Switcher wurden in eine hellere Farbe geändert, ihre Abstände wurden angepasst und neue Symbole wurden eingeführt. Das neue Design ist der erste Schritt zur Überholung der gesamten Benutzeroberfläche.
 
-Wenn Ihre langsamer berichtsausführung als erwartet, versuchen Sie die Performance Analyzer in Power BI Desktop. Wenn Sie ihn starten, wird eine Protokolldatei mit Informationen zu jeder Aktion, dass Sie im Bericht erstellen. Erfahren Sie mehr über die [Performance Analyzer](../desktop-performance-analyzer.md).
-
-### <a name="new-modeling-view"></a>Neue Modellierung anzeigen
-
-In der neuen Ansicht Modellierung in Power BI Desktop können Sie anzeigen und Arbeiten mit komplexen Datasets, die viele Tabellen enthalten. Highlights gehören mehrere Diagrammlayouts und massenbearbeitung von Spalten, Measures und Tabellen. Erfahren Sie mehr über [Modellierung Ansicht](../desktop-modeling-view.md).
-
-### <a name="accessible-visual-interaction"></a>Zugegriffen werden kann, visuelle Interaktion
-
-Sie können jetzt den Zugriff von Datenpunkten in viele der integrierten visuellen Elemente, die Navigation per Tastatur zu verwenden. Erfahren Sie mehr über [Barrierefreiheit in Power BI-Berichten](../desktop-accessibility.md).
-
-### <a name="conditional-formatting-titles-and-web-url-actions"></a>Bedingte Formatierung, Titel und Web-URL-Aktionen
-
-Power BI-Berichte sind interaktiv. Es ist sinnvoll, dass Titel in einem Bericht entsprechend den aktuellen Status des Berichts dynamisch ist. Sie können die gleiche ausdrucksgebundenen Formatierung die URLs der Ihrer Schaltflächen, Formen und Bilder dynamic stellen. Erfahren Sie mehr über [Titel auf Ausdrücken beruhende](../desktop-conditional-format-visual-titles.md).
-
-### <a name="cross-highlight-by-axis-labels"></a>Hervorheben von achsenbezeichnungen
-
-Wählen Sie die Kategorie-achsenbezeichnungen in einem visuellen Element auf den anderen Elementen auf einer Seite kreuzhervorhebung, genau, wie Sie die Datenpunkte in einem Visual auswählen. Erfahren Sie mehr über [kreuzhervorhebung](../power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
-
-### <a name="all-the-new-features"></a>Alle neuen features
-
-Hier ist die Liste sämtlicher neuer Funktionen:
+In der folgenden Liste werden alle Features aufgeführt. 
 
 ### <a name="reporting"></a>Berichterstellung
 
-- Kreuzhervorhebung für ein einzelner Punkt in Liniendiagrammen 
-- Zeilenumbruch in Titel 
-- Aktualisieren Sie die standardmäßige visuelle Interaktion auf kreuzfiltern ¬­
-- Abgerundete Ecken für Visuals 
-- Einzelne select-slicer  
-- Heat Map-Unterstützung für Bing maps  
-- Hervorheben von achsenbezeichnungen  
-- Formatieren von Standard-QuickInfo  
-- Statische Web URL-Unterstützung für Schaltflächen, Formen und Bilder  
-- Optionen auf der Seite Ausrichtung   
-- Verbesserungen der Auswahl im  
-- Zugegriffen werden kann, visuelle Interaktion  
-- Bedingte Formatierung für den Titel von visuellen Elementen  
-- Bedingte Formatierung für Web-URL-Aktionen für Schaltflächen, Formen und Bilder
-- Performance Analyzer-Bereich
-- Tabellen- und matrixvisuals Tastaturnavigation
-- Zeile Daten Bezeichnungssteuerelement position
-- KPI visuellen Indikator Text Steuerelementgröße verändern
+- Aktualisiertes Bereichsdesign
+- Filter auf Visualebene für Slicer
+- Sortieren nach dem Bereich „Leistungsanalyse“
+- QuickInfo für Visualheader
+- Anpassung der Bezeichnung für Gesamtsumme für Tabellen und Matrizen
+- Synchronisieren der Slicerunterstützung für Hierarchieslicer
+- Konsistente Schriftgrade für Visuals
+- Symbolsätze für Tabellen und Matrizen
+- Unterstützung von Prozenten für bedingte Formatierung nach Regeln
+- Der neue Filterbereich ist jetzt allgemein verfügbar
+- Unterstützung für Datenfarben bei der Verwendung der Wiedergabeachse für Punktdiagramme
+- Leistungsverbesserungen bei der Verwendung relativer Datums- und Dropdown-Slicer
+- Gruppieren von Visuals
+- Farb- und Textklassen in Designs
+- Neue Standarddesigns
 
 ### <a name="analytics"></a>Analyse
 
-- Anzeigen von Datumsangaben als Hierarchie, die jetzt allgemein verfügbar  
+- Benutzerdefinierte Zeichenfolgen
+- Updates der Formatierungsoptionen für die bedingte Formatierung
+
+    - Hintergrund- und Titelfarben für Visuals
+    - Farben für das Kartenvisual
+    - Füllen und Farben von Messgerätvisuals
+    - Alternativer Text
+    - Rahmenfarbe
+
+- Warnungen für bedingte Formatierung
+- Verbesserung der Drillthrougherkennbarkeit
+- Neue DAX-Ausdrücke: REMOVEFILTERS und CONVERT
+- Neuer DAX-Vergleichsoperatoren: „==“
+
+### <a name="data-preparation"></a>Datenvorbereitung
+
+- Verbesserung von M Intellisense
+- Neue Transformation: Spalte nach Positionen teilen
+- Kopieren in die Zwischenablage aus der Datenprofilerstellung
+
+
+## <a name="may-2019-power-bi-desktop-for-power-bi-report-server"></a>Mai 2019: Power BI Desktop für Power BI-Berichtsserver
+
+Ausführliche Informationen zu den neuen Features finden Sie im Blogbeitrag zu [Power BI-Berichtsserver vom Mai 2019](https://powerbi.microsoft.com/blog/power-bi-report-server-update-may-2019/).
+
+Im Folgenden werden einige Highlights des Release aufgeführt:
+
+### <a name="performance-analyzer"></a>Performance Analyzer 
+
+Wenn Ihr Bericht langsamer als erwartet ausgeführt wird, verwenden Sie die Leistungsanalyse in Power BI Desktop. Wenn Sie die Leistungsanalyse starten, wird eine Protokolldatei mit Informationen zu allen Aktionen erstellt, die Sie im Bericht vornehmen. Weitere Informationen finden Sie unter [Leistungsanalyse](../desktop-performance-analyzer.md).
+
+### <a name="new-modeling-view"></a>Neue Modellierungsansicht
+
+In der neuen Modellierungsansicht in Power BI Desktop können Sie komplexe Datasets mit vielen Tabellen anzeigen und mit diesen arbeiten. Zu den Highlights gehören mehrere Diagrammlayouts und die Massenbearbeitung von Spalten, Measures und Tabellen. Weitere Informationen finden Sie unter [Modellierungsansicht](../desktop-modeling-view.md).
+
+### <a name="accessible-visual-interaction"></a>Zugängliche Interaktion mit Visuals
+
+Sie können nun mithilfe der Tastaturnavigation auf die Datenpunkte vieler integrierter Visuals zugreifen. Weitere Informationen finden Sie unter [Barrierefreiheit in Power BI Desktop-Berichten](../desktop-accessibility.md).
+
+### <a name="conditional-formatting-titles-and-web-url-actions"></a>Bedingte Formatierung für Titel und Web-URL-Aktionen
+
+Power BI-Berichte sind interaktiv. Es ist sinnvoll, dass Titel in einem Bericht dynamisch sind, um den aktuellen Zustand des Berichts widerzuspiegeln. Sie können dieselbe ausdrucksbasierte Formatierung verwenden, um dynamische URLs für Ihre Schaltflächen, Formen und Bilder zu erstellen. Weitere Informationen finden Sie unter [Ausdrucksbasierte Titel](../desktop-conditional-format-visual-titles.md).
+
+### <a name="cross-highlight-by-axis-labels"></a>Kreuzhervorhebung mit Achsenbezeichnungen
+
+Wählen Sie die Achsenkategoriebezeichnungen in einem Visual aus, um die anderen Elemente auf einer Seite auf gleicher Weise übergreifend hervorzuheben, wie Sie Datenpunkte in einem Visual auswählen würden. Weitere Informationen finden Sie unter [Kreuzhervorhebung](../power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
+
+### <a name="all-the-new-features"></a>Alle neuen Features
+
+Im Folgenden werden alle neuen Features aufgeführt:
+
+### <a name="reporting"></a>Berichterstellung
+
+- Kreuzhervorhebung für einzelne Punkte in Liniendiagrammen 
+- Zeilenumbruch bei Titeln 
+- Update für die Standardinteraktion mit Visuals zum Kreuzfiltern
+- Abgerundete Ecken bei Rahmen von Visuals 
+- Einzelauswahlslicer  
+- Wärmebildunterstützung für Bing Karten  
+- Kreuzhervorhebung mit Achsenbezeichnungen  
+- Standardformatierung von QuickInfos  
+- Unterstützung statischer Web-URLs für Schaltflächen, Formen und Bilder  
+- Optionen für Seitenausrichtung   
+- Verbesserungen des Auswahlbereichs  
+- Zugängliche Interaktion mit Visuals  
+- Bedingte Formatierung für Titel von Visuals  
+- Bedingte Formatierung für Web-URL-Aktionen für Schaltflächen, Formen und Bilder
+- Leistungsanalysebereich
+- Tastaturnavigation für Tabellen und Matrizen
+- Positionssteuerelement für Datenbeschriftungen auf Zeilenebene
+- Steuerelement für die Textgröße der Anzeige des KPI-Visuals
+
+### <a name="analytics"></a>Analyse
+
+- Das Anzeigen von Datumsangaben als Hierarchie ist jetzt allgemein verfügbar  
 
 ### <a name="modeling"></a>Modellierung
 
-- Modellieren von neue Ansicht, die jetzt allgemein verfügbar
+- Die neue Modellierungsansicht ist jetzt allgemein verfügbar
 - Neue DAX-Funktionen
-- Aktualisieren Sie auf die ALLSELECTED-DAX-Funktion
-- Deaktivieren Sie automatische Datumstabellen für neue Berichte
+- Update der ALLSELECTED DAX-Funktion
+- Deaktivieren der automatisch generierten Datumstabellen für neue Berichte
 
-## <a name="may-2019-power-bi-report-server"></a>Mai 2019: Power BI-Berichtsserver
+## <a name="may-2019-power-bi-report-server"></a>Mai 2019: Power BI-Berichtsserver
 
-### <a name="support-for-trusted-visuals"></a>Unterstützung für vertrauenswürdige visuals
+### <a name="support-for-trusted-visuals"></a>Unterstützung für vertrauenswürdige Visuals
 
-Wir haben Unterstützung für vertrauenswürdige Visualisierungen in Power BI-Berichtsserver hinzugefügt. Derzeit unterstützen wir Mapbox und PowerOn Visualisierungen. Für diese Version ESRI, Visio und PowerApps werden nicht unterstützt.)
+Die Unterstützung von vertrauenswürdigen Visuals wurde zu Power BI-Berichtsserver hinzugefügt. Derzeit werden die Visuals „Mapbox“ und „PowerOn“ unterstützt. (Esri, Visio und PowerApps werden in diesem Release nicht unterstützt.)
 
 ### <a name="improved-security-features"></a>Verbesserte Sicherheitsfeatures
 
-**RestrictedResourceMimeTypeForUpload**, die Administratoren können eine durch Trennzeichen getrennte Liste der gesperrten MIME-Typen, z. B. Text/html angeben.
+Administratoren können **RestrictedResourceMimeTypeForUpload** verwenden, um eine durch Kommas getrennte Liste gesperrter MIME-Typen festlegen können, z. B. Text oder HTML.
 
 ## <a name="january-2019"></a>Januar 2019
 

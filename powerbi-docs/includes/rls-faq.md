@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 0592cb7ef076f8094aca565d955cc238b2181068
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: cd0696b44e285119193059304c89cfa04c755771
+ms.sourcegitcommit: bbd9b38f30a4ca5cb8072496c9cacb635b03aa88
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69560950"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71409363"
 ---
 ## <a name="faq"></a>HÄUFIG GESTELLTE FRAGEN
 **Frage:** Was passiert, wenn ich im Power BI-Dienst bereits Rollen und Regeln für ein Dataset erstellt habe? Werden sie weiterhin funktionieren, wenn ich sie so belasse?  
@@ -19,3 +19,5 @@ ms.locfileid: "69560950"
 **Frage:** Kann ich mit der RLS Detaildaten in Visuals ausblenden und Zugriff auf in Visuals zusammengefasste Daten erteilen?  
 **Antwort:** Nein. Sie sichern einzelne Datenzeilen, für die Benutzer werden jedoch immer entweder die Details oder die zusammengefassten Daten angezeigt.
 
+**Frage:** Für meine Datenquelle sind bereits Sicherheitsrollen definiert (z. B. SQL Server-Rollen oder SAP BW-Rollen). Worin besteht die Beziehung zwischen diesen und RLS?  
+**Antwort:** Die Antwort hängt davon ab, ob Sie Daten importieren oder DirectQuery verwenden. Wenn Sie Daten in das Power BI-Dataset importieren, werden die Sicherheitsrollen in der Datenquelle nicht verwendet. In diesem Fall sollten Sie RLS definieren, um Sicherheitsregeln für Benutzer zu erzwingen, die in Power BI eine Verbindung herstellen. Wenn Sie DirectQuery verwenden, werden die Sicherheitsrollen in Ihrer Datenquelle verwendet. Wenn ein Benutzer einen Bericht öffnet, sendet Power BI eine Abfrage an die zugrunde liegende Datenquelle, die Sicherheitsregeln für die Daten basierend auf den Anmeldeinformationen des Benutzers anwendet.

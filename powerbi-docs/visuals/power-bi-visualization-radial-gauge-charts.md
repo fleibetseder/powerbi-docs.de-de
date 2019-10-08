@@ -11,23 +11,28 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8b0db9aebe72d54aa464ec012e614ae0ec5bc723
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: 020d7edcf6bc499623df93a9def30285a37cffc6
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67390545"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194212"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Radialmessgerät-Diagramme in Power BI
 
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Ein Diagramm für ein radiales Messgerät verfügt über einen Kreisbogen und zeigt einen einzelnen Wert an, mit dem der Fortschritt bei Erreichen eines Ziels oder ein Key Performance Indicator (KPI) gemessen wird. Die Linie (oder *Nadel*) stellt das Ziel oder den Wert dar. Der Fortschritt beim Erreichen des Ziels wird durch die Schattierung dargestellt. Der Wert innerhalb des Bogens stellt den Fortschrittswert dar. Power BI verteilt alle möglichen Werte gleichmäßig auf dem Bogen, vom kleinsten Wert (ganz links) bis zum höchsten Wert (ganz rechts).
 
-![Screenshot des radialen Messgeräts.](media/power-bi-visualization-radial-gauge-charts/gauge_m.png)
+![Screenshot des radialen Messgeräts.](media/power-bi-visualization-radial-gauge-charts/gauge-m.png)
 
 In diesem Beispiel sind Sie ein Autohändler, der die durchschnittlichen Verkäufe seines Vertriebsteams pro Monat verfolgt. Die Nadel stellt ein Verkaufsziel von 140 Autos dar. Der kleinste Wert für die durchschnittlichen Verkäufe ist 0, und der höchste Wert ist auf 200 festgelegt.  Die blaue Schattierung zeigt, dass das Team im aktuellen Monat einen Durchschnitt von ca. 120 Verkäufen erzielt hat. Glücklicherweise ist noch eine Woche Zeit, um das Ziel zu erreichen.
 
 Schauen Sie Will beim Erstellen von Einzelmetrikvisualisierungen wie Messgeräten, Karten und KPIs zu.
-
+   > [!NOTE]
+   > Dieses Video verwendet eine ältere Version von Power BI Desktop.
+   > 
+   > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="when-to-use-a-radial-gauge"></a>Einsatzmöglichkeiten für ein radiales Messgerät
@@ -44,43 +49,39 @@ Radiale Messgeräte sind gut für folgende Zwecke geeignet:
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-* Der Power BI-Dienst oder Power BI Desktop
+Dieses Tutorial verwendet die [Excel-Datei mit dem Finanzbeispiel](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-* Excel-Arbeitsmappe mit Finanzbeispiel: [Laden Sie das Beispiel direkt herunter](http://go.microsoft.com/fwlink/?LinkID=521962).
+1. Wählen Sie im oberen linken Bereich der Menüleiste **Daten abrufen** > **Excel** aus.
+   
+2. Suchen Sie Ihre Kopie der **Excel-Datei mit dem Finanzbeispiel**.
+
+1. Öffnen Sie die **Excel-Datei mit dem Finanzbeispiel** in der Berichtsansicht ![Screenshot des Berichtsansichtssymbols.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Wählen Sie **Finanzdaten** und **Blatt1** aus.
+
+1. Klicken Sie auf **Laden**.
+
+1. Auswählen ![Screenshot der gelben Registerkarte.,](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) um eine neue Seite hinzuzufügen.
+
+
 
 ## <a name="create-a-basic-radial-gauge"></a>Erstellen eines einfachen radialen Messgeräts
 
-In dieser Anleitung wird der Power BI-Dienst verwendet. Um die Schritte durchzuführen, melden Sie sich bei Power BI an, und öffnen Sie die Excel-Datei mit dem Finanzbeispiel.
+### <a name="step-1-create-a-gauge-to-track-gross-sales"></a>Schritt 1: Erstellen eines Messgeräts zum Nachverfolgen des Bruttoumsatzes
 
-### <a name="step-1-open-the-financial-sample-excel-file"></a>Schritt 1: Öffnen der Excel-Datei mit dem Finanzbeispiel
-
-1. Laden Sie die [Excel-Finanzbeispieldatei](../sample-financial-download.md) herunter, falls Sie dies noch nicht getan haben. Merken Sie sich, wo Sie sie gespeichert haben.
-
-1. Wählen Sie innerhalb des Power BI-Diensts die Option **Daten abrufen** > **Dateien** aus.
-
-1. Wählen Sie **Lokale Datei** aus, und navigieren Sie zum Speicherort der Beispieldatei.
-
-1. Wählen Sie **Importieren** aus. Power BI fügt das Finanzbeispiel Ihrem Arbeitsbereich als Dataset hinzu.
-
-1. Wählen Sie in der Inhaltsliste **Datasets** das Symbol **Bericht erstellen** für das **Finanzbeispiel** aus.
-
-    ![Screenshot der Liste „Datasets“ mit einem Pfeil, der auf das Symbol „Bericht erstellen“ für das Finanzbeispiel zeigt.](media/power-bi-visualization-radial-gauge-charts/power-bi-dataset.png)
-
-### <a name="step-2-create-a-gauge-to-track-gross-sales"></a>Schritt 2: Erstellen eines Messgeräts zum Nachverfolgen des Bruttoumsatzes
-
-Als Sie im letzten Abschnitt das Symbol **Bericht erstellen** ausgewählt haben, hat Power BI einen leeren Bericht in der Bearbeitungsansicht erstellt.
+1. Beginnen Sie auf einer leeren Berichtsseite.
 
 1. Wählen Sie im Bereich **Felder** die Option **Bruttoumsatz** aus.
 
-   ![](media/power-bi-visualization-radial-gauge-charts/grosssalesvalue_new.png)
+   ![](media/power-bi-visualization-radial-gauge-charts/grosssalesvalue-new.png)
 
 1. Ändern Sie die Aggregation in **Mittelwert**.
 
-   ![Screenshot des Bereichs „Felder“, wobei „Bruttoumsatz“ und das Aggregat „Durchschnitt“ hervorgehoben sind.](media/power-bi-visualization-radial-gauge-charts/changetoaverage_new.png)
+   ![Screenshot des Bereichs „Felder“, wobei „Bruttoumsatz“ und das Aggregat „Durchschnitt“ hervorgehoben sind.](media/power-bi-visualization-radial-gauge-charts/changetoaverage-new.png)
 
-1. Wählen Sie das Messgerätsymbol aus ![Screenshot des Messgerätsymbols,](media/power-bi-visualization-radial-gauge-charts/gaugeicon_new.png) um das Säulendiagramm in ein Messgerätdiagramm zu konvertieren.
+1. Wählen Sie das Messgerätsymbol aus ![Screenshot des Messgerätsymbols,](media/power-bi-visualization-radial-gauge-charts/gaugeicon-new.png) um das Säulendiagramm in ein Messgerätdiagramm zu konvertieren.
 
-    ![Screenshot des Messgerätdiagramms.](media/power-bi-visualization-radial-gauge-charts/gauge_no_target.png)
+    ![Screenshot des Messgerätdiagramms.](media/power-bi-visualization-radial-gauge-charts/gauge-no-target.png)
 
     Je nachdem, wann Sie die **Finanzbeispiel**-Datei herunterladen, werden möglicherweise Zahlen angezeigt, die mit diesen Zahlen nicht übereinstimmen.
 
@@ -95,7 +96,7 @@ Als Sie im letzten Abschnitt das Symbol **Bericht erstellen** ausgewählt haben,
 
    Power BI fügt eine Nadel hinzu, um den Zielwert von **145.480 US-Dollar**anzugeben.
 
-   ![Screenshot des Messgerätdiagramms mit hinzugefügtem „Durchschnitt von COGS“.](media/power-bi-visualization-radial-gauge-charts/gaugeinprogress_new.png)
+   ![Screenshot des Messgerätdiagramms mit hinzugefügtem „Durchschnitt von COGS“.](media/power-bi-visualization-radial-gauge-charts/gaugeinprogress-new.png)
 
     Sie sehen also, dass wir unser Ziel übererfüllt haben.
 
@@ -110,7 +111,7 @@ In Schritt 2 verwendete Power BI das Feld **Wert**, um den kleinsten und den h
 
 1. Ändern Sie die Aggregation in **Maximum**.
 
-   ![Screenshot des Bereichs „Felder“, wobei „Bruttoumsatz“ und das Aggregat „Maximum“ hervorgehoben sind.](media/power-bi-visualization-radial-gauge-charts/setmaximum_new.png)
+   ![Screenshot des Bereichs „Felder“, wobei „Bruttoumsatz“ und das Aggregat „Maximum“ hervorgehoben sind.](media/power-bi-visualization-radial-gauge-charts/setmaximum-new.png)
 
    Das Messgerät wird mit dem neuen Endwert – Bruttoumsatz von 1,21 Millionen – neu gezeichnet.
 
@@ -119,8 +120,6 @@ In Schritt 2 verwendete Power BI das Feld **Wert**, um den kleinsten und den h
 ### <a name="step-5-save-your-report"></a>Schritt 5: Bericht speichern
 
 1. [Speichern Sie den Bericht](../service-report-save.md).
-
-1. [Fügen Sie das Messgerätdiagramm als Dashboardkachel hinzu](../service-dashboard-pin-tile-from-report.md). 
 
 ## <a name="use-manual-format-options-to-set-minimum-maximum-and-target-values"></a>Verwenden manueller Formatierungsoptionen zum Festlegen der Werte für Minimum, Maximum und Ziel
 
@@ -136,7 +135,7 @@ In Schritt 2 verwendete Power BI das Feld **Wert**, um den kleinsten und den h
 
 1. Deaktivieren Sie die Option **COGS** im Bereich **Felder**, um den Zielwert zu entfernen.
 
-    ![Screenshot der deaktivierten COGS-Option.](media/power-bi-visualization-radial-gauge-charts/pbi_remove_target.png)
+    ![Screenshot der deaktivierten COGS-Option.](media/power-bi-visualization-radial-gauge-charts/pbi-remove-target.png)
 
 1. Wenn das Feld **Ziel** unter **Messachse**angezeigt wird, geben Sie einen Wert ein.
 

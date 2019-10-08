@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 1c4a16d0dbe22a154dacfd296bfedab8acb97e81
-ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.openlocfilehash: 6e89fa21617add5c3c11ada990f7055d305cebf5
+ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68867122"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256443"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Unterstützte Sprachen und Länder/Regionen für Power BI
 
@@ -116,14 +116,14 @@ Power BI erkennt Ihre Sprache ausgehend von den Spracheinstellungen auf Ihrem Co
    Möglicherweise müssen Sie den Browser schließen und erneut öffnen, damit die geänderte Einstellung wirksam wird.
 
 ## <a name="choose-the-language-or-locale-of-power-bi-desktop"></a>Auswählen der Sprache oder des Gebietsschemas von Power BI Desktop
-Es gibt zwei Möglichkeiten, Power BI Desktop zu erhalten: Sie können es herunterladen oder über den Windows Store installieren.
+Es gibt zwei Möglichkeiten, Power BI Desktop zu erhalten: Sie können es als eigenständiges Installationsprogramm herunterladen oder aus dem Windows Store installieren.
 
-* Wenn Sie [Power BI Desktop aus dem Windows Store installieren](#choose-a-language-for-power-bi-desktop-installed-from-the-windows-store), werden sämtliche Sprachen installiert, und es wird die Sprache angezeigt, die der Windows-Standardsprache entspricht.
-* Wenn Sie [Power BI Desktop herunterladen](#choose-a-language-when-you-download-power-bi-desktop), wählen Sie die Sprache während des Downloadvorgangs aus. 
+* Wenn Sie Power BI Desktop aus dem Windows Store installieren, werden sämtliche Sprachen installiert, und es wird standardmäßig die Sprache angezeigt, die der Windows-Standardsprache entspricht.
+* Wenn Sie Power BI Desktop als eigenständiges Installationsprogramm herunterladen, wählen Sie die Standardsprache beim Ausführen des Installationsprogramms aus. Sie können sie zu einem späteren Zeitpunkt ändern.
 * Sie können auch [ein beim Importieren von Daten zu verwendendes Gebietsschema](#choose-the-locale-for-importing-data-into-power-bi-desktop) für einen bestimmten Bericht auswählen.
 
-### <a name="choose-a-language-for-power-bi-desktop-installed-from-the-windows-store"></a>Auswählen einer Sprache für Power BI Desktop beim Installieren aus dem Windows Store
-1. [Installieren Sie Power BI Desktop](http://aka.ms/pbidesktopstore) aus dem Windows Store.
+### <a name="choose-a-language-for-power-bi-desktop"></a>Auswählen einer Sprache für Power BI Desktop 
+1. Installieren Sie Power BI Desktop [aus dem Windows Store](http://aka.ms/pbidesktopstore) oder als [eigenständiges Installationsprogramm](http://aka.ms/pbiSingleInstaller).
 2. Suchen Sie zum Ändern der Sprache auf Ihrem Computer nach **Windows-Einstellungen**. 
 3. Wählen Sie **Zeit & Sprache** aus.
    
@@ -140,11 +140,6 @@ Gehen Sie folgendermaßen vor, um die Standardeinstellung zu überschreiben und 
 3. Wählen Sie im Feld **Anwendungssprache** ein anderes Gebietsschema aus. 
 
 In Power BI Desktop können nur die Sprachen ausgewählt werden, die in der Dropdownliste „Anwendungssprache“ angezeigt werden.
-
-### <a name="choose-a-language-when-you-download-power-bi-desktop"></a>Auswählen der Sprache beim Herunterladen von Power BI Desktop
-Wenn Sie die MSI-Version des Installers für Power BI Desktop verwenden, wird die Sprache beim Download festgelegt. Sie können die Sprache auf der Seite [Power BI Desktop herunterladen](https://www.microsoft.com/en-us/download/details.aspx?id=45331) auswählen. 
-
-Bei dieser Art von Installation können Sie die Sprache in Power BI Desktop nur ändern, indem Sie die Downloadseite erneut aufrufen und Power BI Desktop in einer anderen Sprache herunterladen.
 
 ### <a name="choose-the-locale-for-importing-data-into-power-bi-desktop"></a>Auswählen des Gebietsschemas für den Import von Daten in Power BI Desktop
 Egal, ob Sie Power BI Desktop herunterladen oder aus dem Windows Store installieren, Sie können für einen bestimmten Bericht ein anderes Gebietsschema als das in Ihrer Version von Power BI Desktop geltende Gebietsschema auswählen. Das Gebietsschema ändert die Interpretationsweise der Daten beim Import aus der Datenquelle. Dabei wird z. B. festgelegt, ob „3/4/2017“ als 3. April oder als 4. März interpretiert wird. 

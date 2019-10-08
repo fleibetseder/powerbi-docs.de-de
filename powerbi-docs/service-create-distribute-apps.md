@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5d0ace5c2986b30436838d33037ae3019bd8bdce
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: f54906643bba8c631c8d8052309ad3ff512ad3fa
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70751573"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305765"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Veröffentlichen von Apps in Power BI
 
@@ -190,6 +190,13 @@ Dadurch wird die App für alle Benutzer, für die sie veröffentlicht wurde, dei
 Wenn Ihre App-Benutzer die App öffnen, wird anstelle des standardmäßigen linken Navigationsbereichs von Power BI die von Ihnen erstellte Navigation angezeigt. In der App-Navigation sind die Berichte und Dashboards in den von Ihnen definierten Abschnitten aufgelistet. Zudem sind die einzelnen Seiten in jedem Bericht aufgeführt, nicht nur der Berichtsname.
 
 ![App mit Navigation](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
+
+## <a name="considerations-and-limitations"></a>Überlegungen und Einschränkungen
+Aspekte, die beim Veröffentlichen von Apps zu beachten sind:
+
+* Sie können maximal 100 Benutzer oder Gruppen in der Zugriffsliste der App haben. Allerdings können Sie mehr als 100 Benutzern Zugriff auf die App gewähren. Verwenden Sie dazu eine oder mehrere Benutzergruppen, die alle gewünschten Benutzer enthalten.
+* Wenn bei der neuen Arbeitsbereichsfunktion der zur App-Zugriffsliste hinzugefügte Benutzer bereits über den Arbeitsbereich Zugriff auf die App hat, wird er nicht in der Zugriffsliste für die App angezeigt.  
+
 
 ## <a name="next-steps"></a>Nächste Schritte
 * [Erstellen eines Arbeitsbereichs](service-create-workspaces.md)

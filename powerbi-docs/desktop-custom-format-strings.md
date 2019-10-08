@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 02a81aa47fb7945b2fd76d03a6bdde7712304bdc
-ms.sourcegitcommit: 7eb74b060de080152c190ac7eb6b64767f8d6626
+ms.openlocfilehash: fffb0479865439759167635efcae1799452c4c6f
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70919538"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305733"
 ---
 # <a name="use-custom-format-strings-in-power-bi-desktop"></a>Verwenden benutzerdefinierter Formatzeichenfolgen in Power BI Desktop
 
@@ -148,13 +148,14 @@ In der folgenden Tabelle sind die Zeichen aufgeführt, mit denen Sie **benutzerd
 | (**E- E+ e- e+** ) | Wissenschaftliches Format. Wenn der Formatausdruck mindestens einen Ziffernplatzhalter (**0** oder **#** ) rechts von E-, E+, e- oder e+ enthält, wird die Zahl im wissenschaftlichen Format angezeigt, und E oder e wird zwischen der Zahl und deren Exponent eingefügt. Die Anzahl der Ziffernplatzhalter auf der rechten Seite bestimmt die Anzahl der Ziffern im Exponenten. Verwenden Sie E- oder e-, um ein Minuszeichen neben negativen Exponenten zu platzieren. Verwenden Sie E+ oder e+, um ein Minuszeichen neben negativen Exponenten und ein Pluszeichen neben positiven Exponenten zu platzieren. |
 | **- + $** ( ) | Zeigt ein literales Zeichen an. Um ein anderes Zeichen als eines der aufgelisteten anzuzeigen, stellen Sie ihm einen umgekehrten Schrägstrich voran (\) oder setzen Sie es in doppelte Anführungszeichen (&quot; &quot;). |
 | (* *\** ) | Das nächste Zeichen in der Formatzeichenfolge wird angezeigt. Um ein Zeichen anzuzeigen, das eine besondere Bedeutung als literales Zeichen hat, stellen Sie ihm einen umgekehrten Schrägstrich (\) voran. Der umgekehrte Schrägstrich selbst wird nicht angezeigt. Die Verwendung eines umgekehrten Schrägstrichs ist identisch mit dem Einschließen des nächsten Zeichens in doppelte Anführungszeichen. Um einen umgekehrten Schrägstrich anzuzeigen, verwenden Sie zwei umgekehrte Schrägstriche (\\). Beispiele für Zeichen, die nicht als literale Zeichen angezeigt werden können, sind die Datums- und Zeitformatierungszeichen (a, c, d, h, m, n, p, q, s, t, w, y, / und :), die numerischen Formatierungszeichen (#, 0, %, E, e, Komma und Punkt) und die Zeichenfolgen-Formatierungszeichen (@, &amp;, \&lt;, \&gt; und !). |
-| (&quot;ABC&quot;) | Die Zeichenfolge innerhalb der doppelten Anführungszeichen (&quot; &quot;) wird angezeigt. Wenn Sie eine Zeichenfolge in **format** aus dem Code einschließen möchten, müssen Sie den Text mit **Chr(34)** einschließen (34 ist der Zeichencode für ein Anführungszeichen (&quot;)). |
+| (&quot;ABC&quot;) | Die Zeichenfolge innerhalb der doppelten Anführungszeichen (&quot; &quot;) wird angezeigt. |
 
 
 ## <a name="next-steps"></a>Nächste Schritte
 Folgende Artikel könnten Sie ebenfalls interessieren:
 
 * [VBA-Formatzeichenfolgen](https://docs.microsoft.com/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example)
+* [Measures in Power BI Desktop](desktop-measures.md)
+* [Datentypen in Power BI Desktop](desktop-data-types.md)
 * [Bedingte Formatierung in Tabellen](desktop-conditional-table-formatting.md)
-* [Ausdrucksbasierte Titel in Power BI Desktop](desktop-conditional-format-visual-titles.md)
 

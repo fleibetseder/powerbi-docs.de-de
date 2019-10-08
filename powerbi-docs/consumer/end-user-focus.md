@@ -1,23 +1,22 @@
 ---
 title: 'Fokusmodus und Vollbildmodus: Vorgehensweise zum Vergrößern, um weitere Details anzuzeigen'
-description: Dokumentation zur Anzeige eines Power BI-Dashboards, einer Dashboardkachel, eines Berichts oder einer Berichtsvisualisierung im Fokusmodus oder im Vollbildmodus
+description: Dokumentation zur Anzeige eines Power BI-Dashboards, einer Dashboardkachel, eines Berichts oder eines Berichtsvisuals im Fokusmodus oder im Vollbildmodus
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 featuredvideoid: dtdLul6otYE
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 09/23/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: abc9671338e916671f243093bad455ed0cb4ef7e
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: a52fdbefabf84df22c89b0e933d56352fedf5da1
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61061840"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71327803"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>Anzeigen von Inhalten im Detail: Fokusmodus und Vollbildmodus
 
@@ -29,12 +28,13 @@ Der Fokusmodus und der Vollbildmodus sind zwei verschiedene Möglichkeiten, um w
 |---------|---------|----------------------|
 |Dashboard     |   Nicht möglich     | Ja |
 |Berichtseite   | Nicht möglich  | Ja|
-|Berichtsvisualisierung | Ja    | Ja |
+|Berichtsvisual | Ja    | Ja |
 |Dashboardkachel | Ja    | Ja |
 |Windows 10 Mobile | Nicht möglich | Ja |
 
 ## <a name="what-is-full-screen-mode"></a>Was ist der Vollbildmodus?
-![Dashboardvollbildmodus vorher und nachher](media/end-user-focus/power-bi-full-screen-comparison.png)
+
+![Dashboardvollbildmodus vorher und nachher](media/end-user-focus/power-bi-dashboards-focus.png)
 
 Zeigen Sie Ihre Inhalte aus dem Power BI-Dienst (Dashboards, Berichtsseiten, Kacheln und Visuals) ohne störende Menüs und Navigationsleisten an.  Sie erhalten jederzeit eine aufgeräumte vollständige Ansicht Ihrer Inhalte auf einen Blick. Dies wird gelegentlich auch als TV-Modus bezeichnet.   
 
@@ -49,20 +49,22 @@ Einige Verwendungsmöglichkeiten des Vollbildmodus:
 * Überprüfen im gesperrten Modus – Sie können den Bildschirm berühren oder mit dem Mauszeiger auf Kacheln zeigen, ohne den zugrunde liegenden Bericht oder das Dashboard zu öffnen.
 
 ## <a name="what-is-focus-mode"></a>Was ist der Fokusmodus?
+
 Im ***Fokusmodus*** können Sie ein Visual oder eine Kachel erweitern (ausklappen) und so mehr Details anzeigen.  Vielleicht verwenden Sie ein Dashboard oder einen Bericht, der etwas unübersichtlich ist, und möchten nur ein einzelnes Visual vergrößern.  Dies ist ein perfekter Verwendungszweck des Fokusmodus.  
 
-![Dashboardvollbildmodus vorher und nachher](media/end-user-focus/power-bi-focus-compare.png)
+![Dashboardvollbildmodus vorher und nachher](media/end-user-focus/power-bi-compare-dash.png)
 
 Im Fokusmodus kann ein Power BI-*Consumer* mit Filtern interagieren, die bei Erstellung des Visuals angewendet wurden.  Im Power BI-Dienst können Sie den Fokusmodus für eine Dashboardkachel oder ein Berichtsvisual verwenden.
 
 ## <a name="working-in-full-screen-mode"></a>Arbeiten im Vollbildmodus
+
 Um entweder ein Dashboard oder eine Berichtsseite im Vollbildmodus zu öffnen, wählen Sie das Vollbildsymbol ![Symbol „Vollbild“](media/end-user-focus/power-bi-full-screen-icon.png) aus der oberen Navigationsleiste aus. Sobald Sie sich im Vollbildmodus befinden, wird durch Bewegen der Maus oder des Cursors ein Kontextmenü angezeigt. Weil der Vollbildmodus für eine breite Vielfalt an Inhalten verfügbar ist, sind die Optionen im Kontextmenü jeweils etwas unterschiedlich, aber ziemlich selbsterklärend.  Zeigen Sie einfach auf ein Symbol, um eine Definition zu erhalten.
 
 Menü für Dashboards    
-![Menü für Dashboards](media/end-user-focus/power-bi-full-screen-menu-dashboard.png)    
+![Menü für Dashboards](media/end-user-focus/power-bi-full-screen-dash.png)    
 
 Menü für Berichtsseiten    
-![Menü für Berichte](media/end-user-focus/power-bi-report-menu.png)    
+![Menü für Berichte](media/end-user-focus/power-bi-report-full-screen.png)    
 
   * ![Symbol „Zurück“](media/end-user-focus/power-bi-back-icon.png)    
   Kehren Sie mit der Schaltfläche **Zurück** zur vorherigen Seite in Ihrem Browser zurück. Wenn die vorherige Seite eine Power BI-Seite war, wird sie ebenfalls im Vollbildmodus angezeigt.  Der Vollbildmodus bleibt so lange aktiviert, bis Sie ihn beenden.
@@ -70,7 +72,7 @@ Menü für Berichtsseiten
   * ![Symbol „Drucken“](media/end-user-focus/power-bi-print-icon.png)    
   Verwenden Sie diese Schaltfläche, um die Dashboard- oder Berichtsseite im Vollbildmodus zu drucken.
 
-  * ![Symbol „An Bildschirmgröße anpassen“](media/end-user-focus/power-bi-fit-to-width.png)    
+  * ![Symbol „An Bildschirmgröße anpassen“](media/end-user-focus/power-bi-fit-to-screen-icon.png)    
     Verwenden Sie die Schaltfläche **An Bildschirmgröße anpassen**, um das Dashboard so groß wie möglich anzuzeigen, ohne dass Bildlaufleisten verwendet werden.  
 
     ![An Bildschirm anpassen](media/end-user-focus/power-bi-fit-screen.png)
@@ -82,57 +84,59 @@ Menü für Berichtsseiten
 
   * ![Symbol „Berichtsnavigation“](media/end-user-focus/power-bi-report-nav2.png)       
     Verwenden Sie in Berichten im Vollbildmodus diese Pfeile, um zwischen den Seiten im Bericht zu wechseln.    
-  * Um den Vollbildmodus zu beenden, klicken Sie auf das Symbol **Vollbildmodus beenden**.
+  * ![Symbol „Vollbildmodus beenden“](media/end-user-focus/exit-fullscreen-new.png)     
+  Um den Vollbildmodus zu beenden, klicken Sie auf das Symbol **Vollbildmodus beenden**.
 
-      ![Symbol „Vollbildmodus beenden“](media/end-user-focus/exit-fullscreen-new.png)
+      
 
 ## <a name="working-in-focus-mode"></a>Arbeiten im Fokusmodus
-Es gibt zwei Möglichkeiten, den Fokusmodus zu öffnen: eine für Dashboardkacheln und eine andere für Berichtsvisualisierungen.
+
+Es gibt zwei Möglichkeiten, den Fokusmodus zu öffnen: eine für Dashboardkacheln und eine andere für Berichtsvisuals.
 
 ### <a name="focus-mode-in-dashboards"></a>Fokusmodus in Dashboards
+
 1. Öffnen Sie ein Dashboard im Power BI-Dienst.
 
-2. Zeigen Sie auf eine Dashboardkachel oder eine Berichtsvisualisierung, klicken Sie auf die Auslassungspunkte (...), und wählen Sie dann **Im Fokusmodus öffnen** aus.
+2. Zeigen Sie auf eine Dashboardkachel oder ein Berichtsvisual, klicken Sie auf die Auslassungspunkte (...), und wählen Sie dann **Im Fokusmodus öffnen** aus.
 
-    ![Menü mit Auslassungspunkten (...) für die Kachel](media/end-user-focus/power-bi-dashboard-focus-mode.png).
+    ![Menü mit Auslassungspunkten (...) für die Kachel](media/end-user-focus/power-bi-dashboard-focus.png).
 
-2. Die Kachel wird geöffnet und füllt den gesamten Berichtszeichenbereich.
+2. Die Kachel wird geöffnet und füllt den gesamten Berichtszeichenbereich. Beachten Sie, dass Ihnen immer noch der **Filterbereich** zur Verfügung steht, mit dem Sie mit dem Visual interagieren können. Der **Filterbereich** kann zugeklappt werden. 
 
-   ![Kachel füllt den Berichtszeichenbereich](media/end-user-focus/power-bi-tile-focus.png)
-
-3. Erweitern Sie den Bereich „Filter“, um alle auf diese Visualisierung angewendeten Filter anzuzeigen.
-
-   ![Fokusmodus mit dem Bereich „Filter“](media/end-user-focus/power-bi-focus-filters.png)
+   ![Kachel füllt den Berichtszeichenbereich](media/end-user-focus/power-bi-focus-filter.png)
 
 4. Probieren Sie die Funktion aus, indem Sie die [Filter ändern](end-user-report-filter.md) und in Ihren Daten nach interessanten Erkenntnissen suchen.  
 
 5. Beenden Sie den Fokusmodus, und wechseln Sie zurück zum Dashboard, indem Sie **Fokusmodus beenden** (in der linken oberen Ecke des Visuals) auswählen.
 
-    ![Fokusmodus beenden](media/end-user-focus/power-bi-tile-exit-focus.png)    
+    ![Fokusmodus beenden](media/end-user-focus/power-bi-exit.png)    
 
 
-## <a name="focus-mode-for-report-visualizations"></a>Fokusmodus für Berichtvisualisierungen
-1. Öffnen Sie einen Bericht im Power BI-Dienst.  In diesem Beispiel zeigen wir die Verwendung des Analysebeispiels für den Einzelhandel.
+## <a name="focus-mode-for-report-visuals"></a>Fokusmodus für Berichtvisuals
 
-1. Nachdem der Bericht geöffnet wurde, wählen Sie die **Registerkarte „Monatsumsätze nach Bezirk“** aus.
+1. Öffnen Sie einen Bericht im Power BI-Dienst.  In diesem Beispiel zeigen wir die Verwendung des Beispiels für Vertrieb und Marketing.
 
-2. Zeigen Sie auf das Flächendiagramm in der unteren linken Ecke, und klicken Sie auf das Symbol **Fokusmodus** ![Symbol „Fokusmodus“](media/end-user-focus/pbi_popout.jpg).  
+1. Wählen Sie die Kategorie **Seit Jahresbeginn** (YTD) aus, wenn der Bericht geöffnet ist.
 
-   ![Symbol „Fokusmodus“ auf der Kachel](media/end-user-focus/power-bi-hover-focus.png)
-2. Die Visualisierung wird geöffnet und füllt den gesamten Zeichenbereich.
+2. Zeigen Sie auf das Flächendiagramm in der oberen linken Ecke, und klicken Sie auf das Symbol **Fokusmodus** ![Symbol „Fokusmodus“](media/end-user-focus/pbi_popout.jpg).  
 
-   ![Visual im Fokusmodus](media/end-user-focus/power-bi-display-focus-newer2.png)
-3. Erweitern Sie optional den Bereich „Filter“, um mit den auf dieses Visual angewendeten Filtern zu interagieren. Sehen Sie sich die Daten genauer an, um neue Erkenntnisse zu gewinnen und Antworten auf Fragen zu finden. Als *Consumer* können Sie weder neue Filter hinzufügen, noch die in den Visualisierungen verwendeten Felder ändern oder neue Visualisierungen erstellen.  Allerdings werden alle Änderungen, die Sie an den vorhandenen Filtern vornehmen, beim Beenden von Power BI gespeichert. Wenn Power BI Ihre Änderungen nicht speichern soll, wählen Sie **Auf Standard zurücksetzen** aus. ![Schaltfläche „Auf Standard zurücksetzen“](media/end-user-focus/power-bi-resets.png)  
+   ![Symbol „Fokusmodus“ auf der Kachel](media/end-user-focus/power-bi-hover-focus-icon.png)
+2. Das Visual wird geöffnet und füllt den gesamten Zeichenbereich.
 
-   ![Fokusmodus mit Anzeige „Filter“](media/end-user-focus/power-bi-display-focus-filters3.png)
+   ![Visual im Fokusmodus](media/end-user-focus/power-bi-display-focus-new.png)
+
+3. Verwenden Sie optional den Bereich **Filter**, um mit den auf dieses Visual angewendeten Filtern zu interagieren. Sehen Sie sich die Daten genauer an, um neue Erkenntnisse zu gewinnen und Antworten auf Fragen zu finden. Als *Consumer* können Sie weder neue Filter hinzufügen, noch die in den Visuals verwendeten Felder ändern oder neue Visuals erstellen.  Allerdings werden alle Änderungen, die Sie an den vorhandenen Filtern vornehmen, beim Beenden von Power BI gespeichert. Wenn Power BI Ihre Änderungen nicht speichern soll, wählen Sie **Auf Standard zurücksetzen** aus. ![Schaltfläche „Auf Standard zurücksetzen“](media/end-user-focus/power-bi-resets.png)  
+
 
 5. Beenden Sie den Fokusmodus, und wechseln Sie zurück zum Bericht, indem Sie **Zurück zum Bericht** (in der linken oberen Ecke des Visuals) auswählen.
 
-    ![Fokusmodus beenden](media/end-user-focus/power-bi-exit-focus-report.png)  
+    ![Fokusmodus beenden](media/end-user-focus/power-bi-back-to-report.png)  
 
 ## <a name="considerations-and-troubleshooting"></a>Zu beachtende Aspekte und Problembehandlung
-* Wenn Sie den Fokusmodus für eine Visualisierung in einem Bericht verwenden, können Sie alle Filter anzeigen und damit interagieren: auf Visual-, Seiten-, Drillthrough- und Berichtsebene.    
-* Wenn Sie den Fokusmodus für eine Visualisierung in einem Dashboard verwenden, können Sie nur den Filter auf Visualebene anzeigen und damit interagieren.
+
+* Wenn Sie den Fokusmodus für ein Visual in einem Bericht verwenden, können Sie alle Filter anzeigen und damit interagieren: auf Visual-, Seiten-, Drillthrough- und Berichtsebene.    
+* Wenn Sie den Fokusmodus für ein Visual in einem Dashboard verwenden, können Sie nur den Filter auf Visualebene anzeigen und damit interagieren.
 
 ## <a name="next-steps"></a>Nächste Schritte
+
 [Anzeigeeinstellungen für Berichte](end-user-report-view.md)

@@ -11,14 +11,17 @@ ms.topic: conceptual
 ms.date: 02/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 74c4468cbb764d8bd7720845939b3b7fbdf66b06
-ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
+ms.openlocfilehash: e001d35761eb7918aab2c427c3400df526e4dbc0
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67299468"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71192403"
 ---
-# <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>ArcGIS Maps von ESRI im Power BI-Dienst und in Power BI Desktop
+# <a name="arcgis-maps-in-power-bi-desktop-by-esri"></a>ArcGIS Maps in Power BI Desktop von Esri
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Dieses Tutorial richtet sich an Personen, die eine ArcGIS-Karte erstellen. Sobald der Ersteller eine ArcGIS-Karte für einen Kollegen freigegeben hat, kann dieser die Karte anzeigen und mit ihr interagieren, jedoch keine Änderungen speichern. Weitere Informationen zum Anzeigen von ArcGIS-Karten finden Sie unter [Interagieren mit ArcGIS-Karten](power-bi-visualizations-arcgis.md).
 
 Die Kombination von ArcGIS Maps und Power BI bietet völlig neue Möglichkeiten der Kartendarstellung, die über die Darstellung von Punkten auf einer Karte weit hinausgeht. Wählen Sie Basiskarten, Standorttypen, Designs, Symbolstile und Referenzebenen aus, um beeindruckende, aussagekräftige Kartenvisualisierungen zu erstellen. Die Kombination von autoritativen Datenebenen auf einer Karte mit räumlicher Analyse vermittelt ein tieferes Verständnis der Daten in der Visualisierung.
@@ -31,7 +34,7 @@ Die Kombination von ArcGIS Maps und Power BI bietet völlig neue Möglichkeiten 
 
 Im folgenden Beispiel werden in einem dunkelgrauen Zeichenbereich regionale Umsatzdaten als Heatmap auf einer demografischen Ebene des Medians des verfügbaren Einkommens im Jahr 2016 angezeigt. Wie Sie bei der weiteren Lektüre feststellen werden, bieten ArcGIS-Karten nahezu unbegrenzte erweiterte Mappingfunktionen, demografische Daten und noch eindrucksvollere Kartenvisualisierungen für optimales Storytelling.
 
-![](media/power-bi-visualization-arcgis/power-bi-intro-arcgis.png)
+![Startbild von arcGIS](media/power-bi-visualization-arcgis/power-bi-intro-arcgis.png)
 
 > [!TIP]
 > Besuchen Sie die [Seite von ESRI für Power BI](https://www.esri.com/powerbi), auf der Sie viele Beispiele und Kommentare von Kunden finden. Und besuchen Sie dann die [Seite für erste Schritte mit ArcGIS Maps für Power BI](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm) (in englischer Sprache) von ESRI.
@@ -49,30 +52,35 @@ ArcGIS Maps for Power BI werden von Esri (www.esri.com) bereitgestellt. Die Verw
 
 <br/>
 
-## <a name="enable-arcgis-map"></a>Aktivieren einer ArcGIS-Karte
-ArcGIS-Karten sind derzeit im Power BI-Dienst, in Power BI Desktop und in Power BI – Mobilgeräte verfügbar. Dieser Artikel enthält Anweisungen für den Power BI-Dienst und für Power BI Desktop.
 
-### <a name="enable-the-arcgis-map-in-power-bi-service-apppowerbicom"></a>Aktivieren der ArcGIS-Karte ***im Power BI-Dienst („app.powerbi.com“)***
-Dieses Lernprogramm verwendet das [Analysebeispiel für den Einzelhandel](../sample-retail-analysis.md). So aktivieren Sie **ArcGIS Maps für Power BI**:
+### <a name="enable-the-arcgis-map-in-power-bi-desktop-apppowerbicom"></a>Aktivieren der ArcGIS-Karte ***in Power BI Desktop („app.powerbi.com“)***
+Dieses Tutorial verwendet die [.PBIX-Datei zum Analysebeispiel für den Einzelhandel (Retail Analysis sample)](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix
+). So aktivieren Sie **ArcGIS Maps für Power BI**:
 
-1. Wählen Sie im rechten oberen Abschnitt der Menüleiste das Zahnradsymbol aus, und öffnen Sie **Einstellungen**.
+1. Wählen Sie im oberen linken Bereich der Menüleiste **Datei** \> **Öffnen** aus.
    
-    ![](media/power-bi-visualization-arcgis/power-bi-settings.png)
-2. Aktivieren Sie das Kontrollkästchen **ArcGIS Maps für Power BI**. Sie müssen Power BI neu starten, nachdem Sie die Auswahl vorgenommen haben.
+2. Suchen Sie auf dem lokalen Computer die PBIX-Datei **Retail Analysis sample**.
+
+1. Öffnen Sie das **Analysebeispiel für den Einzelhandel** in der Berichtsansicht ![Screenshot des Berichtsansichtssymbols.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Auswählen ![Screenshot der gelben Registerkarte.,](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) um eine neue Seite hinzuzufügen.
+
    
-    ![](media/power-bi-visualization-arcgis/power-bi-use-arcgis-new.png)
-3. Öffnen Sie einen Bericht in der [Bearbeitungsansicht](../consumer/end-user-reading-view.md), und wählen Sie im Bereich „Visualisierungen“ das Symbol „ArcGIS Maps für Power BI“ aus.
+3. Wählen Sie im Bereich „Visualisierungen“ das Symbol „ArcGIS Maps for Power BI“ aus.
    
-    ![](media/power-bi-visualization-arcgis/power-bi-viz-pane2.png)
+    ![Bereich „Visualisierungen“ für ArcGIS-Karten](media/power-bi-visualization-arcgis/power-bi-viz-pane.png)
 4. Power BI fügt eine leere ArcGIS-Kartenvorlage zur Berichtszeichenfläche hinzu.
    
-   ![](media/power-bi-visualization-arcgis/power-bi-esri-placeholder2new.png)
+   ![Platzhalter für ArcGIS-Visualisierung](media/power-bi-visualization-arcgis/power-bi-esri-placeholder2new.png)
 
 <br/>
 
 ## <a name="create-an-arcgis-map-visual"></a>Erstellen eines ArcGIS-Kartenvisuals
-Sehen Sie sich an, wie Will verschiedene ArcGIS-Kartenvisualisierungen erstellt, und probieren Sie es dann anhand des [Analysebeispiels für Einzelhandel](../sample-datasets.md) selbst aus.
-
+Sehen Sie sich an, wie Will verschiedene ArcGIS Map-Visualisierungen erstellt, und probieren Sie es dann anhand der PBIX-Datei [Retail Analysis sample (Analysebeispiel für Einzelhandel)](../sample-datasets.md) selbst aus.
+   > [!NOTE]
+   > Dieses Video verwendet eine ältere Version von Power BI Desktop.
+   > 
+   > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EKVvOZmxg9s" frameborder="0" allowfullscreen></iframe>
 
 1. Ziehen Sie aus dem Bereich **Felder** ein Datenfeld in den Bucket **Ort** oder **Breitengrad** und/oder **Längengrad**. In diesem Beispiel verwenden wir **Store > Ort**.
@@ -82,28 +90,28 @@ Sehen Sie sich an, wie Will verschiedene ArcGIS-Kartenvisualisierungen erstellt,
    > 
    > 
    
-    ![](media/power-bi-visualization-arcgis/power-bi-fields-pane3new.png)
-2. Konvertieren Sie die Visualisierung in eine ArcGIS-Karte, indem Sie die Vorlage aus dem Bereich „Visualisierungen“ ![](media/power-bi-visualization-arcgis/power-bi-arcgis-template.png) auswählen.
+    ![Bereich für ArcGIS-Felder](media/power-bi-visualization-arcgis/power-bi-fields-pane3new.png)
+
 3. Ziehen Sie ein Measure aus dem Bereich **Felder** in den Bucket **Größe**, um die Darstellung der Daten anzupassen. In diesem Beispiel verwenden wir **Umsätze > Umsätze letztes Jahr**.
    
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-point-map-size2new.png)
+    ![Visualisierung für die Esri-Punktkarte](media/power-bi-visualization-arcgis/power-bi-esri-point-map-size2new.png)
 
 ## <a name="settings-and-formatting-for-arcgis-maps"></a>Einstellungen und Formatierungen für ArcGIS-Karten
 So greifen Sie auf die Formatierungsfunktionen für **ArcGIS-Karten für Power BI** zu:
 
 1. Sie können auf zusätzliche Funktionen zugreifen, indem Sie die Auslassungspunkte in der rechten oberen Ecke der Visualisierung und anschließend **Bearbeiten** auswählen.
    
-   ![](media/power-bi-visualization-arcgis/power-bi-edit2.png)
+   ![ArcGIS-Bearbeitungsbereich](media/power-bi-visualization-arcgis/power-bi-edit2.png)
    
    Die verfügbaren Funktionen werden am oberen Rand der Visualisierung angezeigt. Wenn Sie eine Funktion auswählen, wird ein Aufgabenbereich mit detaillierten Optionen angezeigt.<br/>
    
-   ![](media/power-bi-visualization-arcgis/power-bi-esri-features-new.png)
+   ![Bereich „Funktionen“ in Esri](media/power-bi-visualization-arcgis/power-bi-esri-features-new.png)
    
    > [!NOTE]
    > Weitere Informationen zu den Einstellungen und Funktionen finden Sie unten unter **Ausführliche Dokumentation**.
    > 
    > 
-2. Wenn Sie zum Bericht zurückkehren möchten, wählen Sie links oben in der Berichtszeichenfläche **Zurück zum Bericht** aus.
+
 
 <br/>
 
@@ -116,22 +124,22 @@ Es werden vier grundlegende Karten bereitgestellt: „Dunkelgrauer Zeichenbereic
 
 Wenn Sie eine Basiskarte anwenden möchten, wählen Sie sie im Aufgabenbereich aus.
 
-![](media/power-bi-visualization-arcgis/power-bi-esri-base-maps-new.png)
+![Visual zu Basiskarten für Esri](media/power-bi-visualization-arcgis/power-bi-esri-base-maps-new.png)
 
 ### <a name="location-type"></a>Ortstyp
 ArgGIS-Karten für Power BI erkennt automatisch die beste Darstellungsweise für Daten in der Karte. Dabei wird zwischen Punkten und Begrenzungen ausgewählt. Mit den Optionen für den Ortstyp können Sie die Auswahl anpassen.
 
-![](media/power-bi-visualization-arcgis/power-bi-esri-location-types-new.png)
+![Beispiel für Esri-Positionstypen](media/power-bi-visualization-arcgis/power-bi-esri-location-types-new.png)
 
 **Begrenzungen** kann nur verwendet werden, wenn die Daten geografische Standardwerte enthalten. Esri ermittelt automatisch die Form, die auf der Karte angezeigt wird. Geografische Standardwerte umfassen Länder, Bundesländer, Postleitzahlen usw. Wie bei der Geocodierung erkennt Power BI jedoch möglicherweise nicht, dass ein Feld standardmäßig eine Begrenzung darstellen soll, oder es ist keine Begrenzung für Ihre Daten vorhanden.  
 
 ### <a name="map-theme"></a>Kartendesign
-Es werden vier Kartendesigns bereitgestellt. Die Designs „Nur Ort“ und „Größe“ werden automatisch auf Grundlage der Felder ausgesucht, die Sie an den Bucket **Größe** im Power BI-Bereich „Felder“ binden. Zurzeit wird **Größe** verwendet, was wir jetzt in **Wärmebild** ändern.  
+Es werden vier Kartendesigns bereitgestellt. Die Designs „Nur Ort“ und „Größe“ werden automatisch auf Grundlage der Felder ausgesucht, die Sie an den Bucket **Größe** im Power BI-Bereich „Felder“ binden. Wir verwenden aktuell **Größe**, deshalb wechseln Sie zu **Wärmebild**, und denken Sie daran, **Wärmebild** zu deaktivieren, bevor Sie mit dem nächsten Schritt fortfahren.  
 
-![](media/power-bi-visualization-arcgis/power-bi-esri-map-theme-new.png)
+![Beispiel für Esri-Kartendesign](media/power-bi-visualization-arcgis/power-bi-esri-map-theme-new.png)
 
 <table>
-<tr><th>Design</th><th>Beschreibung</th>
+<tr><th>Theme</th><th>Beschreibung</th>
 <tr>
 <td>Nur Ort</td>
 <td>Stellt Datenpunkte oder ausgefüllte Begrenzungen auf der Karte auf Grundlage der Einstellungen für den Ortstyp dar.</td>
@@ -152,31 +160,31 @@ Es werden vier Kartendesigns bereitgestellt. Die Designs „Nur Ort“ und „Gr
 
 
 ### <a name="symbol-style"></a>Symbolstil
-Mit Symbolstilen können Sie die Darstellung von Daten in der Karte genauer anpassen. Symbolstile sind kontextbezogen und abhängig vom ausgewählten Ortstyp und Kartendesign. Im folgenden Beispiel ist „Ortstyp“ auf **Größe** festgelegt, und an „Transparenz“, „Stil“ und „Größe“ wurden Anpassungen vorgenommen.
+Mit Symbolstilen können Sie die Darstellung von Daten in der Karte genauer anpassen. Symbolstile sind kontextbezogen und abhängig vom ausgewählten Ortstyp und Kartendesign. Im folgenden Beispiel ist der Kartentyp auf **Größe** festgelegt, und an „Transparenz“, „Stil“ und „Größe“ wurden Anpassungen vorgenommen. 
 
-![](media/power-bi-visualization-arcgis/power-bi-esri-symbol-style-new.png)
+![Beispiel für Esri-Symbolformat](media/power-bi-visualization-arcgis/power-bi-esri-symbol-style-new.png)
 
-### <a name="pins"></a>Stecknadeln
+### <a name="pins"></a>Markierungen
 Fügen Sie Stecknadeln hinzu, um die Aufmerksamkeit auf bestimmte Punkte in der Karte zu lenken.  
 
 1. Wählen Sie die Registerkarte **Pins** (Stecknadeln) aus.
 2. Geben Sie im Suchfeld Schlüsselwörter (z.B. Adressen, Orte oder Sehenswürdigkeiten) ein, und wählen Sie sie in der Dropdownliste aus. Auf der Karte wird ein Symbol angezeigt, und der Standort wird auf der Karte automatisch vergrößert. Suchergebnisse werden im Bereich „Pins“ (Stecknadeln) als Infokarten für interessante Orte gespeichert. Sie können bis zu 10 Infokarten für interessante Orte speichern.
    
-   ![](media/power-bi-visualization-arcgis/power-bi-pin-arcgis-newer.png)
+   ![Beispiel für Stecknadel für ArcGIS-Karte](media/power-bi-visualization-arcgis/power-bi-pin-arcgis-newer.png)
 3. Diesem Standort wird eine Stecknadel hinzufügt, und Sie können die Farbe der Stecknadel ändern.
    
-   ![](media/power-bi-visualization-arcgis/power-bi-pin-color-new.png)
+   ![Beispiel für Stecknadelfarbe](media/power-bi-visualization-arcgis/power-bi-pin-color-new.png)
 4. Sie können Stecknadeln hinzufügen und löschen.
    
-   ![](media/power-bi-visualization-arcgis/power-bi-pin3.png)
+   ![Beispiel zu Hinzufügen und Löschen von Stecknadeln](media/power-bi-visualization-arcgis/power-bi-pin3.png)
 
-### <a name="drive-time"></a>Drive time (Fahrzeit)
+### <a name="drive-time"></a>Fahrzeit
 Im Bereich „Drive time“ (Fahrzeit) können Sie einen Ort auswählen und dann bestimmen, welche anderen Kartenfeatures sich in einem angegebenen Radius oder innerhalb einer angegebenen Fahrzeit befinden.  
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-drive-time.png)
+    ![Fahrzeitbeispiel](media/power-bi-visualization-arcgis/power-bi-esri-drive-time.png)
 
 1. Wählen Sie die Registerkarte **Drive time** (Fahrzeit) und dann das Tool für die Einzel- oder Mehrfachauswahl aus. Wählen Sie die Stecknadel für Washington, D.C. aus.
 
-   ![](media/power-bi-visualization-arcgis/power-bi-esri-single-select.png)
+   ![Beispiel zur Auswahl einzelner Stecknadeln](media/power-bi-visualization-arcgis/power-bi-esri-single-select.png)
    
    > [!TIP]
    > Wenn Sie die Karte vergrößern (mit dem Symbol „+“), lassen sich Orte einfacher auswählen.
@@ -184,22 +192,23 @@ Im Bereich „Drive time“ (Fahrzeit) können Sie einen Ort auswählen und dann
    > 
 2. Angenommen, Sie fliegen für einige Tage nach Washington, D.C. und möchten ermitteln, welche Geschäfte sich mit dem Auto in akzeptabler Zeit erreichen lassen. Ändern Sie „Search area“ (Suchbereich) in **Radius** und „Abstand“ in **50**, wählen Sie als Maßeinheit „miles“ (Meilen) und dann „OK“ aus.    
    
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-drive-time-radius.png)
+    ![Fahrzeitradius](media/power-bi-visualization-arcgis/power-bi-esri-drive-time-radius.png)
+
 3. Der Radius wird in Violett dargestellt. Wählen Sie einen beliebigen Standort aus, um seine Details anzuzeigen. Optional können Sie den Radius durch Ändern der Farbe und Kontur formatieren.
    
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-drive-time.png)
+    ![Beispiel zu Radiusformat mit Farbe und Kontur](media/power-bi-visualization-arcgis/power-bi-esri-drive-time.png)
 
-### <a name="reference-layer"></a>Referenzebenen
+### <a name="reference-layer"></a>Referenzebene
 #### <a name="reference-layer---demographics"></a>Referenzebene – Demografie
 ArcGIS-Karten für Power BI stellen eine Auswahl von demografischen Ebenen bereit, mit denen Daten aus Power BI in Kontext gestellt werden können.
 
 1. Wählen Sie die Registerkarte **Referenzebene** und anschließend **Demografie** aus.
 2. Für jede aufgeführte Ebene wird ein Kontrollkästchen angezeigt. Aktivieren Sie ein Kontrollkästchen, um die entsprechende Ebene zur Karte hinzuzufügen.  In diesem Beispiel wurde das durchschnittliche Haushaltseinkommen hinzugefügt.<br/>
    
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-reference-layer-demographic.png)
+    ![Demografisches Beispiel zu Referenzebene](media/power-bi-visualization-arcgis/power-bi-esri-reference-layer-demographic.png)
 3. Jede Ebene ist außerdem interaktiv. So wie Sie den Mauszeiger über eine Blase halten können, um Details anzuzeigen, können Sie auf einen schattierten Bereich auf die Karte klicken, um die Details zu sehen.<br/>
    
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-reference-layer-details.png)
+    ![Detailliertes Beispiel zu Referenzebene](media/power-bi-visualization-arcgis/power-bi-esri-reference-layer-details.png)
 
 #### <a name="reference-layer---arcgis"></a>Referenzebene – ArcGIS
 Über ArcGIS Online können Organisationen öffentliche Webkarten veröffentlichen. Darüber hinaus bietet Esri mit dem „Living Atlas“ einen Satz mit ausgewählten Webkarten. Auf der ArcGIS-Registerkarte können Sie alle öffentlichen Webkarten und Living Atlas-Karten durchsuchen und Ihrer Karte als Referenzebenen hinzufügen.
@@ -207,23 +216,29 @@ ArcGIS-Karten für Power BI stellen eine Auswahl von demografischen Ebenen berei
 1. Wählen Sie die Registerkarte **Referenzebene** und anschließend **ArcGIS** aus.
 2. Geben Sie Suchbegriffe ein, und wählen Sie dann eine Kartenebene aus. In diesem Beispiel wurden die Kongresswahlbezirke der USA ausgewählt.
    
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-demographics-esri2-new.png)
+    ![Beispiel zur Demografie in Esri](media/power-bi-visualization-arcgis/power-bi-reference-details.png)
 3. Wählen Sie zum Anzeigen der Details einen schattierten Bereich aus. Die Option *Aus Referenzebene auswählen* wird angezeigt: Wählen Sie mit dem Tool zur Auswahl der Referenzebenen Begrenzungen oder Objekte in der Ebene aus.
 
 <br/>
 
 ## <a name="selecting-data-points"></a>Auswählen von Datenpunkten
-ArcGIS-Karten für Power BI stellt drei Auswahlmodi bereit.
+ArcGIS Maps for Power BI bietet fünf Modi für die Auswahl, damit Sie Ihre Daten genau und schnell auswählen können.
 
-Sie können den Auswahlmodus mit dem Schalter ändern:
+Ändern Sie den Auswahlmodus, indem Sie mit Ihrem Cursor auf das Symbol der einzelnen Auswahlmodi zeigen, wie im obigen Bild dargestellt. So wird der ausgeblendete Balken erweitert, und weitere Tools werden angezeigt:
 
-![](media/power-bi-visualization-arcgis/power-bi-esri-selection-tools2.png)
+![Esri-Auswahltool](media/power-bi-visualization-arcgis/power-bi-esri-selection-tools2.png)
 
-![](media/power-bi-visualization-arcgis/power-bi-esri-selection-single2.png) Wählt einzelne Datenpunkte aus.
+Jedes Tool spielt eine einzigartige Rolle bei der Auswahl Ihrer Daten: 
 
-![](media/power-bi-visualization-arcgis/power-bi-esri-selection-marquee2.png) Zeichnet ein Rechteck auf der Karte und wählt die darin enthaltenen Datenpunkte aus.
+![Esri-Einzelauswahl](media/power-bi-visualization-arcgis/power-bi-esri-selection-single2.png) Wählt einzelne Datenpunkte aus.
 
-![](media/power-bi-visualization-arcgis/power-bi-esri-selection-reference-layer2.png) Ermöglicht die Verwendung von Begrenzungen oder Polygonen in den Referenzebenen zum Auswählen von enthaltenen Datenpunkten.
+![Esri-Auswahlrechteck](media/power-bi-visualization-arcgis/power-bi-esri-selection-marquee2.png) Zeichnet ein Rechteck auf der Karte und wählt die darin enthaltenen Datenpunkte aus.
+
+![Referenzebene zur Esri-Auswahl](media/power-bi-visualization-arcgis/power-bi-esri-selection-reference-layer2.png) Ermöglicht die Verwendung von Begrenzungen oder Polygonen in den Referenzebenen zum Auswählen von enthaltenen Datenpunkten.
+
+![Pufferebene zur Esri-Auswahl](media/power-bi-visualization-arcgis/power-bi-esri-selection-reference-buffer.png) Damit können Sie Daten mithilfe einer Pufferebene auswählen.
+
+![Ähnliche Auswahl mit Esri](media/power-bi-visualization-arcgis/power-bi-esri-selection-reference-similar.png) Damit können Sie Datenpunkte auswählen, die sich ähneln.
 
 > [!NOTE]
 > Es können maximal 250 Datenpunkte gleichzeitig ausgewählt werden.
@@ -242,21 +257,20 @@ Verbesserungsvorschläge können Sie an die [Ideensammlung für Power BI](https:
 <br/>
 
 ## <a name="managing-use-of-arcgis-maps-for-power-bi-within-your-organization"></a>Verwalten der Verwendung von ArcGIS-Karten für Power BI in Ihrer Organisation
-Mit Power BI können Benutzer, Mandanten- und IT-Administratoren festlegen, ob ArcGIS-Karten für Power BI verwendet werden sollen.
+Mit Power BI können Benutzer, Mandanten- und IT-Administratoren festlegen, ob ArcGIS-Karten für Power BI verwendet werden sollen. Im Folgenden finden Sie die Schritte, die jede Rolle ausführen kann, um die Verwendung von ArcGIS-Karten zu verwalten. 
 
-**Benutzeroptionen**: Wenn Benutzer in Power BI Desktop keine ArcGIS-Karten für Power BI mehr verwenden möchten, können sie dieses Feature auf der Sicherheitsregisterkarte in **Optionen** deaktivieren. Wenn die entsprechende Option deaktiviert ist, werden ArcGIS-Karten nicht standardmäßig geladen.
+### <a name="user-options"></a>Benutzeroptionen
+Wenn Benutzer in Power BI Desktop keine ArcGIS-Karten für Power BI mehr verwenden möchten, können sie dieses Feature auf der Sicherheitsregisterkarte unter **Datei** > **Optionen und Einstellungen** auswählen und anschließend auf **Optionen** > **Sicherheit** klicken. Wenn die entsprechende Option deaktiviert ist, werden ArcGIS-Karten nicht standardmäßig geladen.
 
-![](media/power-bi-visualization-arcgis/power-bi-desktop-security-dialog2.png)
+![Dialogfeld zur Desktopsicherheit](media/power-bi-visualization-arcgis/power-bi-desktop-security-dialog2.png)
 
-Wenn die Benutzer ArcGIS Maps für Power BI nicht mehr im Power BI-Dienst verwenden möchten, können sie das Feature in den Benutzereinstellungen auf der Registerkarte „ArcGIS Maps für Power BI“ deaktivieren. Wenn die entsprechende Option deaktiviert ist, werden ArcGIS-Karten nicht standardmäßig geladen.
+### <a name="tenant-admin-options"></a>Optionen für Mandantenadministrator
+In PowerBI.com können Mandantenadministratoren die Verwendung von ArcGIS Maps for Power BI für alle Mandantenbenutzer deaktivieren. Klicken Sie dazu auf **Einstellungen** > **Verwaltungsportal** > **Mandanteneinstellungen**. In diesem Fall wird das Symbol für ArcGIS-Karten für Power BI nicht mehr im Visualisierungsbereich für Power BI angezeigt.
 
-![](media/power-bi-visualization-arcgis/power-bi-use-arcgis-new.png)
+![Beispiel für das ArcGIS-Administratorportal](media/power-bi-visualization-arcgis/power-bi-arcgis-admin-portal2.png)
 
-**Optionen für Mandantenadministratoren**: In PowerBI.com können Mandantenadministratoren die Verwendung von ArcGIS-Karten für Power BI für alle Mandantenbenutzer deaktivieren. In diesem Fall wird das Symbol für ArcGIS-Karten für Power BI nicht mehr im Visualisierungsbereich für Power BI angezeigt.
-
-![](media/power-bi-visualization-arcgis/power-bi-arcgis-admin-portal2.png)
-
-**Optionen für IT-Administratoren**: Power BI Desktop unterstützt die Verwendung von **Gruppenrichtlinien** zum Deaktivieren von ArcGIS-Karten für Power BI auf allen in einer Organisation bereitgestellten Computern.
+### <a name="it-administrator-options"></a>Optionen für den IT-Administrator
+Power BI Desktop unterstützt die Verwendung von **Gruppenrichtlinien** zum Deaktivieren von ArcGIS-Karten für Power BI auf allen in einer Organisation bereitgestellten Computern.
 
 <table>
 <tr><th>Attribut</th><th>Wert</th>
