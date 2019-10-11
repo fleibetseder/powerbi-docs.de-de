@@ -1,6 +1,6 @@
 ---
 title: Verwenden von Menübanddiagrammen in Power BI
-description: Erstellen und Verwenden von Menübanddiagrammen im Power BI-Dienst und in Power BI Desktop
+description: Erstellen und Verwenden von Menübanddiagrammen im Power BI Desktop
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -10,20 +10,34 @@ ms.topic: conceptual
 ms.date: 06/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3400071c6b8cee472bb61475e6d3482189680563
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: e6044f3a2cfdbfc40d0497ebde25780336dc1dc4
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840101"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715473"
 ---
 # <a name="use-ribbon-charts-in-power-bi"></a>Verwenden von Menübanddiagrammen in Power BI
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Mit den Menübanddiagrammen können Sie Daten visualisieren und schnell feststellen, welche Kategorie von Daten den höchsten Rang (größten Wert) hat. Menübanddiagramme eignen sich gut zum Anzeigen von Rangänderungen, wobei der höchste Rang (Wert) immer für jeden Zeitraum oben angezeigt wird. 
 
-![Menübanddiagramm](media/desktop-ribbon-charts/ribbon-charts_01.png)
+![Menübanddiagramm](media/desktop-ribbon-charts/ribbon-charts-01.png)
+
+## <a name="prerequisites"></a>Voraussetzungen
+
+Dieses Tutorial verwendet die [PBIX-Datei mit einem Analysebeispiel für den Einzelhandel](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+
+1. Wählen Sie im oberen linken Bereich der Menüleiste die Option **Datei** > **Öffnen** aus.
+   
+2. Suchen Sie Ihre Kopie der **PBIX-Datei mit einem Analysebeispiel für den Einzelhandel**.
+
+1. Öffnen Sie die **PBIX-Datei mit einem Analysebeispiel für den Einzelhandel** in der Berichtsansicht ![Screenshot des Berichtsansichtssymbols.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Auswählen ![Screenshot der gelben Registerkarte.,](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) um eine neue Seite hinzuzufügen.
 
 ## <a name="create-a-ribbon-chart"></a>Erstellen eines Menübanddiagramms
-Öffnen Sie zum besseren Verständnis den [Analysebericht für den Einzelhandel](../sample-retail-analysis.md). 
 
 1. Wählen Sie zum Erstellen eines leeren Diagramms die Option **Menübanddiagramm** im Bereich **Visualisierungen** aus.
 
@@ -31,13 +45,13 @@ Mit den Menübanddiagrammen können Sie Daten visualisieren und schnell feststel
 
     Menübanddiagramme verknüpfen eine Kategorie von Daten über das visualisierte Zeitkontinuum mithilfe von Bändern, sodass Sie den Rang einer bestimmten Kategorie während der gesamten Spanne der X-Achse (in der Regel die Zeitachse) erkennen können.
 
-2. Wählen Sie Felder für **Achse**, **Legende** und **Wert** aus.  In diesem Beispiel wurde Folgendes ausgewählt: **Datum**, **Kategorie** und **This Year Sales** (Verkäufe in diesem Jahr).  
+2. Wählen Sie Felder für **Achse**, **Legende** und **Wert** aus.  In diesem Beispiel wurde Folgendes ausgewählt: **Store** > **OpenDate**, **Item** > **Kategorie**, und **Vertrieb** > **This Year Sales** > **Wert**.  
 
     ![Ausgewählte Felder](media/desktop-ribbon-charts/power-bi-ribbon-values.png)
 
-    Da das Dataset nur die Daten eines Jahres enthält, wurde das Feld **Jahr** von der **Achse** entfernt. 
+    Da das Dataset nur die Daten eines Jahres enthält, wurde das Feld **Jahr** und **Quartal**von der **Achse** entfernt.
 
-3. Auf dem Menübanddiagramm wird die Rangfolge in Schritten von je zwei Monaten angezeigt. Diese hat sich im Laufe der Zeit geändert.  Beispielsweise war die Kategorie „Home“ erst auf Platz drei, dann auf Platz vier und anschließend wieder auf Platz drei. Im Juli wechselte die Kategorie „Junior“ außerdem von Platz drei auf Platz fünf. 
+3. Auf dem Menübanddiagramm wird die Rangfolge für jeden Monat angezeigt. Diese hat sich im Laufe der Zeit geändert. Beispielsweise wechselt die Kategorie „Home“ von Februar auf März vom zweiten auf den fünften Rang.
 
     ![Menübanddiagramm](media/desktop-ribbon-charts/power-bi-ribbon.png)
 
@@ -57,7 +71,7 @@ Da die die y-Achse in dem Menübanddiagramm nicht beschriftet ist, sollten Sie D
 
 ![Formatierungsoptionen für Datenbeschriftungen](media/desktop-ribbon-charts/power-bi-labels.png)
 
-Legen Sie Formatierungsoptionen für Ihre Datenbeschriftungen fest.  In diesem Beispiel wurde für die Textfarbe „weiß“, für die Dezimalstelle „0“ und für die Anzeigeeinheiten „Tausend“ festgelegt. 
+Legen Sie Formatierungsoptionen für Ihre Datenbeschriftungen fest. In diesem Beispiel wurde für die Textfarbe „weiß“, und für die Anzeigeeinheiten „Tausend“ festgelegt.
 
 ![Menüband-Vorlage auf dem Bereich „Visualisierung“](media/desktop-ribbon-charts/power-bi-data-labels.png)
 

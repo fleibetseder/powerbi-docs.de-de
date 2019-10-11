@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 08/21/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 2d2eb51c5aad44572f1b427248fd85ef19a6306f
-ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
+ms.openlocfilehash: a05924fc093c1514f51c3fabac3162433e2188f7
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69985692"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968892"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurieren von Workloads in einer Premium-Kapazität
 
@@ -59,18 +59,59 @@ Mit der KI-Workload können Sie Cognitive Services und automatisiertes maschinel
 
 ### <a name="datasets"></a>Datasets
 
-Die Datasetworkload ist standardmäßig aktiviert und kann nicht deaktiviert werden. Verwenden Sie die folgenden Einstellungen, um das Workloadverhalten zu steuern.
+Die Datasetworkload ist standardmäßig aktiviert und kann nicht deaktiviert werden. Verwenden Sie die folgenden Einstellungen, um das Workloadverhalten zu steuern. Unterhalb der Tabelle finden Sie zusätzliche Verwendungsinformationen für einige der Einstellungen.
 
 | Einstellungsname | Beschreibung |
 |---------------------------------|----------------------------------------|
 | **Max. Arbeitsspeicher (%)** | Der Prozentsatz des maximal verfügbaren Arbeitsspeichers, der von Datasets in einer Kapazität verwendet werden kann. |
 | **XMLA-Endpunkt** | Mit dieser Einstellung wird festgelegt, dass Verbindungen von Clientanwendungen die Sicherheitsgruppenmitgliedschaft berücksichtigen, die auf den Ebenen des Arbeitsbereichs und der Apps festgelegt wird. Weitere Informationen finden Sie unter [Herstellen einer Verbindung zwischen Datasets und Clientanwendungen und Tools](service-premium-connect-tools.md). |
-| **Max Intermediate Row Set Count** (Maximale Anzahl von Zwischenrowsets) | Die maximale Anzahl von Zwischenzeilen, die von DirectQuery zurückgegeben werden. Der Standardwert ist 1.000.000, und der zulässige Bereich liegt zwischen 100.000 und 2.147.483.647. Verwenden Sie diese Einstellung, um die Auswirkungen ressourcenintensiver oder schlecht konzipierter Berichte einzuschränken. |
-| **Maximale Größe für Offlinedataset (GB)** | Die maximale Größe des Offlinedatasets im Arbeitsspeicher. Dies ist die komprimierte Größe auf dem Datenträger. Der Standardwert wird durch die SKU festgelegt, und der zulässige Bereich liegt zwischen 0,1 und 10 GB. Mit dieser Einstellung hindern Sie Ersteller von Berichten daran, ein großes Dataset zu veröffentlichen, das sich negativ auf die Kapazität auswirken könnte. |
-| **Max Result Row Set Count** (Maximale Anzahl von Ergebnisrowsets) | Die maximale Anzahl von Zeilen, die in einer DAX-Abfrage zurückgegeben werden. Der Standardwert ist -1 (keine Grenze), und der zulässige Bereich liegt zwischen 100000 und 2147483647. Verwenden Sie diese Einstellung, um die Auswirkungen ressourcenintensiver oder schlecht konzipierter Berichte einzuschränken. |
-| **Query Memory Limit (%)** (Arbeitsspeicherlimit für Abfragen (%)) | Der Prozentsatz des maximal verfügbaren Arbeitsspeichers, der für temporäre Ergebnisse in einer Abfrage oder einem DAX-Measure verwendet werden kann. Verwenden Sie diese Einstellung, um die Auswirkungen ressourcenintensiver oder schlecht konzipierter Berichte einzuschränken. |
-| **Query Timeout (seconds)** (Abfragetimeout (Sekunden)) | Die maximale Zeitspanne bis zum Timeout einer Abfrage. Der Standardwert lautet 3.600 Sekunden (1 Stunde). Bei einem Wert von 0 (null) tritt kein Timeout für Abfragen auf. Mit dieser Einstellung erhalten Sie mehr Kontrolle über zeitintensive Abfragen. |
+| **Max Intermediate Row Set Count** (Maximale Anzahl von Zwischenrowsets) | Die maximale Anzahl von Zwischenzeilen, die von DirectQuery zurückgegeben werden. Der Standardwert ist 1.000.000, und der zulässige Bereich liegt zwischen 100.000 und 2.147.483.647. |
+| **Maximale Größe für Offlinedataset (GB)** | Die maximale Größe des Offlinedatasets im Arbeitsspeicher. Dies ist die komprimierte Größe auf dem Datenträger. Der Standardwert wird durch die SKU festgelegt, und der zulässige Bereich liegt zwischen 0,1 und 10 GB. |
+| **Max Result Row Set Count** (Maximale Anzahl von Ergebnisrowsets) | Die maximale Anzahl von Zeilen, die in einer DAX-Abfrage zurückgegeben werden. Der Standardwert ist -1 (keine Grenze), und der zulässige Bereich liegt zwischen 100000 und 2147483647. |
+| **Query Memory Limit (%)** (Arbeitsspeicherlimit für Abfragen (%)) | Der Prozentsatz des maximal verfügbaren Arbeitsspeichers, der für temporäre Ergebnisse in einer Abfrage oder einem DAX-Measure verwendet werden kann. |
+| **Query Timeout (seconds)** (Abfragetimeout (Sekunden)) | Die maximale Zeitspanne bis zum Timeout einer Abfrage. Der Standardwert lautet 3.600 Sekunden (1 Stunde). Bei einem Wert von 0 (null) tritt kein Timeout für Abfragen auf. |
 |  |  |  |
+
+#### <a name="max-intermediate-row-set-count"></a>Maximale Anzahl von Zwischenzeilen
+
+Verwenden Sie diese Einstellung, um die Auswirkungen ressourcenintensiver oder schlecht konzipierter Berichte einzuschränken. Wenn eine Abfrage an ein DirectQuery-Dataset zu einem sehr großen Ergebnis aus der Quelldatenbank führt, kann dies zu einem Anstieg der Speicherauslastung und dem Verarbeitungsaufwand führen. Dies kann dazu führen, dass andere Benutzer und Berichte wenig Ressourcen haben. Mit dieser Einstellung kann der Kapazitätsadministrator anpassen, wie viele Zeilen von einer einzelnen Abfrage aus der Datenquelle abgerufen werden können.
+
+Wenn die Kapazität mehr als den Standardwert von einer Million Zeilen unterstützen kann und Sie über ein großes Dataset verfügen, erhöhen Sie diese Einstellung, um weitere Zeilen abzurufen.
+
+Beachten Sie, dass sich diese Einstellung nur auf DirectQuery-Abfragen auswirkt, während sich die Einstellung [Maximale Anzahl von Ergebniszeilen](#max-result-row-set-count) auf DAX-Abfragen auswirkt.
+
+#### <a name="max-offline-dataset-size"></a>Maximale Größe für Offlinedataset
+
+Mit dieser Einstellung hindern Sie Ersteller von Berichten daran, ein großes Dataset zu veröffentlichen, das sich negativ auf die Kapazität auswirken könnte. Beachten Sie, dass Power BI die tatsächliche Größe im Arbeitsspeicher erst ermitteln kann, wenn das Dataset in den Arbeitsspeicher geladen wurde. Es ist möglich, dass ein Dataset mit einer geringeren Offline-Größe über einen größeren Speicherbedarf als ein Dataset mit einer größeren Offline-Größe verfügt.
+
+Wenn Sie über ein vorhandenes Dataset verfügen, das größer ist als die von Ihnen angegebene Größe für diese Einstellung, kann das Dataset nicht geladen werden, wenn ein Benutzer versucht, darauf zuzugreifen.
+
+#### <a name="max-result-row-set-count"></a>Maximale Anzahl von Ergebniszeilen
+
+Verwenden Sie diese Einstellung, um die Auswirkungen ressourcenintensiver oder schlecht konzipierter Berichte einzuschränken. Wenn dieser Grenzwert in einer DAX-Abfrage erreicht wird, wird dem Benutzer des Berichts der folgende Fehler angezeigt. Er sollte die Fehlerdetails kopieren und einen Administrator kontaktieren.
+
+![Die Daten für dieses Visual konnten nicht geladen werden](media/service-admin-premium-workloads/could-not-load-data.png)
+
+Beachten Sie, dass sich diese Einstellung nur auf DAX-Abfragen auswirkt, während sich die Einstellung [Maximale Anzahl von Zwischenzeilen](#max-intermediate-row-set-count) auf DirectQuery-Abfragen auswirkt.
+
+#### <a name="query-memory-limit"></a>Arbeitsspeicherlimit für Abfragen
+
+Verwenden Sie diese Einstellung, um die Auswirkungen ressourcenintensiver oder schlecht konzipierter Berichte einzuschränken. Einige Abfragen und Berechnungen können zu Zwischenergebnissen führen, die viel Arbeitsspeicher für die Kapazität verwenden. Dies kann dazu führen, dass andere Abfragen sehr langsam ausgeführt werden, andere Datasets aus der Kapazität entfernt werden und bei anderen Benutzern der Kapazität zum Fehler „Nicht genügend Speicher“ führt.
+
+Diese Einstellung gilt für die Datenaktualisierung und das Rendern von Berichten. Die Datenaktualisierung führt sowohl die Aktualisierung der Daten aus der Datenquelle als auch die Aktualisierung einer Abfrage aus, es sei denn, die Einstellung „Abfrage aktualisieren“ ist deaktiviert. Wenn die Einstellung „Abfrage aktualisieren“ nicht deaktiviert ist, gilt dieses Speicherlimit auch für diese Abfragen. Alle fehlgeschlagenen Abfragen bewirken, dass der Status der geplanten Aktualisierung als Fehler gemeldet wird, obwohl die Datenaktualisierung erfolgreich war.
+
+#### <a name="query-timeout"></a>Abfragetimeout
+
+Verwenden Sie diese Einstellung, um eine bessere Kontrolle über Abfragen mit langer Ausführungsdauer zu gewährleisten, die dazu führen können, dass Berichte für Benutzer langsam geladen werden. Diese Einstellung gilt für die Datenaktualisierung und das Rendern von Berichten. Die Datenaktualisierung führt sowohl die Aktualisierung der Daten aus der Datenquelle als auch die Aktualisierung einer Abfrage aus, es sei denn, die Einstellung „Abfrage aktualisieren“ ist deaktiviert. Wenn die Einstellung „Abfrage aktualisieren“ nicht deaktiviert ist, gilt dieses Zeitlimit auch für diese Abfragen.
+
+Diese Einstellung gilt für eine einzelne Abfrage und nicht für die Dauer, die benötigt wird, um alle Abfragen auszuführen, die mit dem Aktualisieren eines Datasets oder eines Berichts verknüpft sind. Sehen Sie sich das folgende Beispiel an:
+
+- Die Einstellung **Abfragetimeout** beträgt 1200 (20 Minuten).
+- Es werden fünf Abfragen ausgeführt, die jeweils 15 Minuten laufen.
+
+Die Gesamtzeit für alle Abfragen beträgt 75 Minuten, aber das Einstellungslimit wird nicht erreicht, weil alle einzelnen Abfragen weniger als 20 Minuten laufen.
+
+Beachten Sie, dass Power BI-Berichte diesen Standardwert mit einem wesentlich geringeren Zeitlimit für jede Abfrage der Kapazität außer Kraft setzen. Das Zeitlimit für jede Abfrage beträgt in der Regel etwa drei Minuten.
 
 ### <a name="dataflows"></a>Dataflows
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 09/26/2019
 ms.author: maggies
-ms.openlocfilehash: ec1aab13955a4c34861a3f0d8dd39b6c77607696
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: f3a52e14271827a043f05d6b170e79718306aa99
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71325665"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715249"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Erstellen eines Power BI-Berichts für den Power BI-Berichtsserver
 Sie können Power BI-Berichte lokal im Webportal von Power BI-Berichtsserver ebenso wie in der Cloud im Power BI-Dienst https://powerbi.com) speichern und verwalten. Sie erstellen und bearbeiten Berichte in Power BI Desktop und veröffentlichen sie im Webportal. Anschließend können Leser in Ihrer Organisation die Berichte in einem Browser oder einer mobilen Power BI-App auf einem Mobilgerät anzeigen.
@@ -31,7 +31,7 @@ Wenn Sie bereits Power BI-Berichte in Power BI Desktop erstellt haben, ist das E
 
     ![Power BI Desktop aus dem Webportal herunterladen](media/quickstart-create-powerbi-report/report-server-download-web-portal.png)
 
-    Besuchen Sie alternativ die Startseite von [Power BI-Berichtsserver](https://powerbi.microsoft.com/report-server/), und wählen Sie **Erweiterte Downloadoptionen** aus.
+    Oder besuchen Sie die Startseite des [Power BI-Berichtsservers](https://powerbi.microsoft.com/report-server/), und wählen Sie **Erweiterte Downloadoptionen** aus.
 
 2. Wählen Sie im Download Center **Download** aus.
 
@@ -97,7 +97,7 @@ Wenn Ihr Bericht fertig ist, speichern Sie ihn auf dem Power BI-Berichtsserver, 
 Power BI Desktop bietet zahlreiche nützliche Ressourcen zum Erstellen von Berichten. Dieser Link ist ein guter Ausgangspunkt.
 
 * [Erste Schritte mit Power BI Desktop](../desktop-getting-started.md)
-* Lernen mit Anleitungen: [Erste Schritte mit Power BI Desktop](../guided-learning/gettingdata.yml?tutorial-step=2)
+* Lernen mit Anleitungen: [Power BI Desktop im Überblick](/learn/modules/get-data-power-bi/2-getting-started-power-bi-desktop)
 
 ### <a name="power-bi-report-server"></a>Power BI-Berichtsserver
 * [Installieren von für Power BI-Berichtsserver optimiertem Power BI Desktop](install-powerbi-desktop.md)  

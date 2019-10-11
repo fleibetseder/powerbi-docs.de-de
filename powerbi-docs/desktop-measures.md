@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 07/29/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 431c1738a5d2e975fd96a8209ca8245cd4414d40
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: d5ada41ef4941f14118b777e37e731337a5282d0
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68730130"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715399"
 ---
 # <a name="measures-in-power-bi-desktop"></a>Measures in Power BI Desktop
 
 **Power BI Desktop** hilft Ihnen, Einblicke in Ihre Daten mit nur ein paar Mausklicks zu gewinnen. Manchmal enthalten diese Daten aber einfach nicht alles, was Sie für die Antwort auf Ihre drängendsten Fragen benötigen. Measures können Ihnen in dieser Situation weiterhelfen.
 
-Measures werden in einigen der am häufigsten verwendeten Datenanalysen verwendet. Einfache Zusammenfassungen wie Summen, Mittelwerte, Mindest- und Höchstwerte sowie eine Anzahl können wie im Video zur [Zusammenfassung und Kategorie](https://docs.microsoft.com/power-bi/guided-learning/visualizations?tutorial-step=16) erläutert über den Bereich „Felder“ festgelegt werden. Mithilfe einer DAX-Formel können Sie erweiterte Berechnungen selbst erstellen. Die berechneten Ergebnisse von Measures ändern sich ständig in Reaktion auf Ihre Interaktion mit Berichten und ermöglichen so eine schnelle und dynamische Untersuchung von Daten ohne Vorlauf. Sehen wir uns das einmal näher an.
+Measures werden in einigen der am häufigsten verwendeten Datenanalysen verwendet. Einfache Zusammenfassungen wie Summen, Mittelwerte, Mindestwerte, Höchstwerte und Anzahlen können über den Bereich „Felder“ festgelegt werden. Die berechneten Ergebnisse von Measures ändern sich ständig in Reaktion auf Ihre Interaktion mit Berichten und ermöglichen so eine schnelle und dynamische Untersuchung von Daten ohne Vorlauf. Sehen wir uns das einmal näher an. Weitere Informationen finden Sie unter [Erstellen berechneter Measures](/learn/modules/model-data-power-bi/4b-create-calculated-measures).
 
 ## <a name="understanding-measures"></a>Grundlegendes zu Measures
 

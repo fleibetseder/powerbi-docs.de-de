@@ -3,20 +3,19 @@ title: Häufig gestellte Fragen von Endbenutzern zu Power BI
 description: Durchsuchen Sie eine Liste von häufig gestellten Fragen und Antworten zum Power BI-Dienst und den mobilen Power BI-Apps.
 author: mihart
 manager: kvivek
-ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 6/17/2019
+ms.date: 10/03/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 5efdb98e0722add361f3b333f773fc03c6ea50a9
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: bf3e7b790788c8ce21b222a083a853b06185acc0
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "69654145"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71943317"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Häufig gestellte Fragen zu Power BI
 
@@ -33,23 +32,13 @@ Power BI Pro ist eine einzelne Lizenz, die Zugriff auf alle Inhalte und Funktion
 
 Power BI Premium bietet dedizierte Kapazitäten, um konsistentere Leistung bereitzustellen. Darüber hinaus werden auch größere Datenvolumen in Power BI unterstützt. Mit Premium können individuelle Benutzer Inhalte von Power BI Pro-Benutzern weiträumig verteilen, ohne dass Benutzerlizenzen für Empfänger, die den Inhalt anzeigen, erforderlich sind.
 
-## <a name="what-happens-if-my-power-bi-pro-license-expires"></a>Was geschieht, wenn meine Power BI Pro-Lizenz abläuft?
-
-Nach Ablauf einer Power BI Pro-Lizenz gibt es eine Karenzzeit. Bei Lizenzen, die Teil einer Volumenlizenz sind, beträgt die Karenzzeit 90 Tage. Bei direkt erworbenen Lizenzen beträgt die Karenzzeit 30 Tage.
-
-Für Power BI Pro gilt der gleiche Abonnementslebenszyklus wie für Office 365. Weitere Informationen finden Sie unter [Was geschieht mit meinen Daten und dem Zugriff darauf, wenn mein Office 365 Business-Abonnement endet?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
-
 ## <a name="what-if-i-have-questions-about-power-bi-premium"></a>Wie gehe ich vor, wenn ich Fragen zu Power BI Premium haben?
 
 Fragen, die sich auf Power BI Premium beziehen, finden Sie unter [Power BI Premium – Häufig gestellte Fragen](../service-premium-faq.md).
 
-## <a name="how-do-i-find-out-who-in-my-organization-has-a-power-bi-account"></a>Wie finde ich heraus, welche Benutzer meiner Organisation über ein Power BI-Konto verfügen?
-
-Sie können den in Azure Active Directory integrierten Anwendungsbericht für Power BI einsehen, um die aktiven Benutzer in Ihrer Organisation anzuzeigen. Der Azure AD-Bericht gibt nicht an, über welche Art von Lizenz die Benutzer verfügen. Er zeigt ausschließlich an, welche Benutzer sich für Power BI angemeldet haben, und wann sie sich angemeldet haben. Weitere Informationen finden Sie unter [Power BI-Benutzer suchen, die sich angemeldet haben](../service-admin-access-usage.md).
-
 ## <a name="what-is-power-bi-desktop"></a>Was ist Power BI Desktop?
 
-Power BI Desktop ist eine kostenlose Anwendung, die Sie direkt auf Ihrem Computer installieren können. Power BI Desktop weist eine enge Integration mit dem Power BI-Dienst auf.  Data Scientists, Administratoren und Entwickler verwenden Power BI Desktop, um Berichte zu erstellen und diese mit Benutzern des Power BI-Diensts zu teilen. Weitere Informationen zu [Power BI Desktop](../desktop-what-is-desktop.md)
+Power BI Desktop ist eine kostenlose Anwendung, die Sie direkt auf Ihrem Computer installieren können. Power BI Desktop weist eine enge Integration mit dem Power BI-Dienst auf.  Data Scientists, Administratoren und Entwickler verwenden Power BI Desktop, um Berichte zu erstellen und diese mit *Benutzern* des Power BI-Diensts zu teilen. Weitere Informationen zu [Power BI Desktop](../desktop-what-is-desktop.md)
 
 ## <a name="what-do-i-need-to-use-the-power-bi-service"></a>Was benötige ich, um den Power BI-Dienst zu verwenden?
 
@@ -88,7 +77,7 @@ Folgende Ressourcen helfen Ihnen bei den ersten Schritten:
 * [Power BI-Blog](http://blogs.msdn.com/b/powerbi/)
 * [Webinare](../webinars.md)
 * Einsteigervideos auf unserem [YouTube-Kanal](https://www.youtube.com/user/mspowerbi)
-* Artikel [Erste Schritte mit Power BI](../service-get-started.md)
+* [Erste Schritte mit Power BI für *Benutzer*](power-bi-consumer-landing.md)
 * [Treten Sie unserer Community bei](https://community.powerbi.com/), und stellen Sie Fragen
 * Weitere Vorschläge finden Sie unter [10 Tipps, um Hilfe zu erhalten](../service-tips-for-finding-help.md).
 
@@ -126,6 +115,7 @@ Wie viele andere Microsoft-Dienste und Software bietet Power BI eine einfache M�
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-* [Was ist Power BI?](../power-bi-overview.md)
+* [Was ist ein Power BI-Benutzer?](end-user-consumer.md)
+* [Verwenden von Power BI als Benutzer](end-user-reading-view.md)
 * Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
 * Treten weiterhin Probleme auf? Besuchen Sie die [Supportseite für Power BI](https://powerbi.microsoft.com/support/).

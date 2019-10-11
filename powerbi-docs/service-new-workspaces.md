@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9add7ce3c5caf675fde15fd15eea03d9d9b49d9b
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: 32d43ca4b9681495e22db023604afeac31d15e7e
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70750899"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715212"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organisieren der Arbeit in den neuen Power BI-Arbeitsbereichen
 
@@ -24,7 +24,7 @@ ms.locfileid: "70750899"
 Die neue Benutzeroberfläche für Arbeitsbereiche hat die Allgemeine Verfügbarkeit (GA, General Availability) erreicht und ist jetzt der Standardarbeitsbereich. Sie können weiterhin [klassische Arbeitsbereiche](service-create-workspaces.md) basierend auf Office 365-Gruppen erstellen und verwenden. 
 
 > [!NOTE]
-> Um die Sicherheit auf Zeilenebene (Row-Level Security, RLS) für Benutzer zu erzwingen, die Inhalte in einem Arbeitsbereich durchsuchen, verwenden Sie die Rolle „Anzeigender Benutzer“. Wenn die Rolle „Anzeigender Benutzer“ in Ihrem Mandanten noch nicht verfügbar ist, verwenden Sie weiterhin [klassische Arbeitsbereiche](service-create-workspaces.md), und wählen Sie die Option **Mitglieder können Power BI-Inhalt nur anzeigen** aus. Alternativ können Sie eine Power BI-App für diese Benutzer veröffentlichen oder die Freigabe zur Verteilung von Inhalten verwenden.
+> Um die Sicherheit auf Zeilenebene (Row-Level Security, RLS) für Benutzer zu erzwingen, die Inhalte in einem Arbeitsbereich durchsuchen, verwenden Sie die Rolle „Anzeigender Benutzer“. Veröffentlichen Sie eine Power BI-App für diese Benutzer, oder verwenden Sie die Freigabe zur Verteilung von Inhalt, um RLS zu erzwingen, ohne Zugriff auf den Arbeitsbereich zu gewähren.
 
 Mit den neuen Arbeitsbereichen können Sie Folgendes durchführen:
 
@@ -73,11 +73,14 @@ Folgende Rollen sind verfügbar: Administrator, Mitglied, Mitwirkender und Betra
 | Anderen erlauben, Elemente erneut freizugeben. |  X | X  |   |   |
 | Inhalte im Arbeitsbereich erstellen, bearbeiten und löschen.  |  X | X  | X  |   |
 | Berichte im Arbeitsbereich veröffentlichen und Inhalt löschen.  |  X | X  | X  |   |
-| Erstellen Sie einen Bericht in einem anderen Arbeitsbereich basierend auf einem Dataset in diesem Arbeitsbereich. |  X | X  | X  | X <sup>1</sup>  |
-| Kopieren Sie einen Bericht. | X | X | X | X <sup>1</sup> |
+| Erstellen Sie einen Bericht in einem anderen Arbeitsbereich basierend auf einem Dataset in diesem Arbeitsbereich. |  X | X  | X  |   |
+| Kopieren Sie einen Bericht. | X | X | X |  |
 | Anzeigen eines Elements und Interagieren mit einem Element. |  X | X  | X  | X  |
 
-**1** erfordert eine Power BI Pro-Lizenz und eine [Erstellungsberechtigung für Datasets](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). 
+> [!NOTE]
+>Benutzer müssen zusätzliche Kriterien erfüllen, um einen Bericht zu kopieren und einen Bericht in einem anderen Arbeitsbereich basierend auf einem Dataset in diesem Arbeitsbereich zu erstellen:
+>- Sie benötigen eine Power BI Pro-Lizenz. 
+>- Sie benötigen die Erstellungsberechtigung für das Dataset. Für Datasets in diesem Arbeitsbereich haben die Personen mit den Rollen „Administrator“, „Mitglied“ und „Mitwirkender“ über ihre Arbeitsbereichsrolle die Erstellungsberechtigung.
  
 ## <a name="licensing"></a>Lizenzierung
 Alle Benutzer, die Sie einem Arbeitsbereich in der gemeinsam genutzten Kapazität hinzufügen, benötigen eine Power BI Pro-Lizenz. Im Arbeitsbereich ist die Zusammenarbeit aller Beteiligten beim Erstellen von Dashboards und Berichten möglich, die Sie für eine größere Zielgruppe oder sogar die gesamte Organisation veröffentlichen möchten. 

@@ -7,21 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/25/2019
+ms.date: 10/02/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: dcc273dd6bf356d9149086b38b9126e721fe63a2
-ms.sourcegitcommit: 390dc3716d5c83385bedde63dd152431a77020e2
+ms.openlocfilehash: da7652556bc11e47cf238dd969ae1b27e6387299
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68380274"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968810"
 ---
 # <a name="add-a-filter-to-a-report-in-power-bi"></a>Hinzufügen eines Filters zu einem Bericht in Power BI
 
+[!INCLUDE [power-bi-service-new-look-include](includes/power-bi-service-new-look-include.md)]
+
 Dieser Artikel erläutert, wie Sie einem Bericht in Power BI einen Seiten-, Visualisierungs-, Berichts- oder Drillthroughfilter hinzufügen. Die Beispiele in diesem Artikel stammen aus dem Power BI-Dienst. Die dargestellten Schritte sind fast identisch mit denen in Power BI Desktop.
 
-**Wussten Sie schon?** Power BI umfasst eine neue Filteroberfläche, die sich zurzeit in der Vorschau befindet. Erfahren Sie mehr über die [neue Filteroberfläche in Power BI-Berichten](power-bi-report-filter.md).
+**Wussten Sie schon?** Power BI umfasst eine neue Filterfunktion. Erfahren Sie mehr über die [neue Filteroberfläche in Power BI-Berichten](power-bi-report-filter.md).
 
 ![Neue Filteroberfläche](media/power-bi-report-add-filter/power-bi-filter-reading.png)
 
@@ -140,7 +142,7 @@ Laden Sie hierfür das [Kundenrentabilitätsbeispiel](sample-customer-profitabil
 Im Folgenden wird beschrieben, wie der Drillthroughfilter funktioniert.
 
 1. Starten Sie auf der Berichtseite **Team-Scorecard**.    
-2. Angenommen, Sie sind Andrew Ma und möchten die „Team Executive“-Berichtseite so gefiltert anzeigen, dass nur Ihre Daten enthalten sind.  Klicken Sie im Flächendiagramm oben rechts auf einen grünen Datenpunkt, um die Menüoption „Drillthrough“ zu öffnen.
+2. Angenommen, Sie sind Andrew Ma und möchten die „Team Executive“-Berichtseite so gefiltert anzeigen, dass nur Ihre Daten enthalten sind.  Klicken Sie im Flächendiagramm oben links mit der rechten Maustaste auf einen grünen Datenpunkt, um die Menüoption „Drillthrough“ zu öffnen.
    
     ![Starten der Drillthroughaktion](media/power-bi-report-add-filter/power-bi-drillthrough.png)
 3. Wählen Sie **Drillthrough > Team Executive** aus, um einen Drillthrough zur Berichtseite **Team Executive** (Teammanager) durchzuführen. Die Seite wird so gefiltert, dass Informationen zum Datenpunkt angezeigt werden, auf den Sie mit der rechten Maustaste geklickt haben; in diesem Fall „Andrew Ma“. An die Drillthroughberichtseite wird nur das Feld übergeben, das sich im Bereich „Drillthroughfilter“ befindet.  

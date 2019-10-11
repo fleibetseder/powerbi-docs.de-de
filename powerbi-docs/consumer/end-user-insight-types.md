@@ -4,23 +4,25 @@ description: Schnelle Einblicke und „Einblicke anzeigen“ in Power BI
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 9/23/2019
+ms.date: 10/2/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 991dd7bb94e79a21c8e4ec877093b81d2ed9b285
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: 507d49ba6cdb894667bf66f8f35c5c325b9ff25e
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71327778"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71943923"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>Von Power BI unterstützte Einblicke
+
+Der Power BI-Dienst kann in Ihren Dashboards und Berichten automatisch nach Erkenntnissen suchen.
+
 ## <a name="how-does-insights-work"></a>Wie funktionieren Einblicke?
-Power BI durchsucht schnell verschiedene Teilmengen des Datasets unter Verwendung eines hoch entwickelten Algorithmus, um potenziell interessante Einblicke zu gewinnen. Power BI untersucht in einer festgelegten Zeit möglichst große Mengen des Datasets.
+Power BI durchsucht schnell verschiedene Teilmengen Ihres Datasets. Während der Suche nutzt Power BI mehrere hoch entwickelte Algorithmen, um potenziell interessante Erkenntnisse zu ermitteln. Power BI untersucht in einer festgelegten Zeit möglichst große Mengen des Datasets.
 
 Sie können Einblicke für ein Dataset oder eine Dashboard-Kachel ausführen.   
 
@@ -74,8 +76,6 @@ Erkennt in Daten auf einer Zeitreihe, wenn bestimmte Datums- oder Zeitangaben mi
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Power BI-Einblicke](end-user-insights.md)
-
-Wenn Sie ein Dataset besitzen, können Sie es [für Einblicke optimieren](../service-insights-optimize.md).
 
 Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
 

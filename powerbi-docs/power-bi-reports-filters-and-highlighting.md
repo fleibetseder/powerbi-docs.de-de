@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 4584ad0f8c083a765b1a1a9943496b40a3ed4bdf
-ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
+ms.openlocfilehash: cfae856cf80027a92fb7d19c27b990aa659d992d
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68342165"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968750"
 ---
 # <a name="filters-and-highlighting-in-power-bi-reports"></a>Filter und Hervorhebungen in Power BI-Berichten
  Dieser Artikel informiert Sie über das Filtern und Hervorheben im Power BI-Dienst. Die Benutzeroberfläche ist nahezu identisch mit der von Power BI Desktop. *Filter* entfernen alles bis auf die Daten, auf die Sie sich konzentrieren möchten. *Hervorheben* ist nicht dasselbe wie Filtern. Dieser Vorgang entfernt keine Daten, sondern hebt eine Teilmenge der sichtbaren Daten hervor. Die nicht hervorgehobenen Daten bleiben sichtbar, sind jedoch abgeblendet.
@@ -28,7 +28,7 @@ Zum Zuweisen von Filtern und Hervorhebungen zu Berichten haben Sie in Power BI v
 * Ausführliche Einführung in die [in der Bearbeitungsansicht verfügbaren Steuerelemente zum Filtern und Hervorheben](power-bi-report-add-filter.md) in Power BI Desktop und dem Power BI-Dienst. Der Artikel befasst sich ausführlich mit Filtertypen wie Datum und Uhrzeit, numerischen Filtern sowie Textfiltern. Außerdem werden die Unterschiede zwischen den grundlegenden und den erweiterten Optionen behandelt.
 * Wenn Sie das Standardverfahren für die Verwendung von Filtern und Hervorhebungen kennengelernt haben, erfahren Sie, [wie Sie die Art und Weise ändern, in der verschiedene Visualisierungen auf einer Seite einander durch Filter und Hervorhebungen beeinflussen](service-reports-visual-interactions.md).
 
-**Wussten Sie schon?** Power BI umfasst eine neue Filteroberfläche, die sich zurzeit in der Vorschau befindet. Erfahren Sie mehr über die [neue Filteroberfläche in Power BI-Berichten](power-bi-report-filter.md).
+**Wussten Sie schon?** Power BI umfasst eine neue Filterfunktion. Erfahren Sie mehr über die [neue Filteroberfläche in Power BI-Berichten](power-bi-report-filter.md).
 
 ![Neue Filteroberfläche](media/power-bi-reports-filters-and-highlighting/power-bi-filter-reading.png)
 

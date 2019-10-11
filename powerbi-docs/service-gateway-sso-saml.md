@@ -10,22 +10,22 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 09/16/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 75641468b52d4174779b9ddd03ed7aab27b6c5d0
-ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
+ms.openlocfilehash: 62bb2f1e334d6bb125a2fffc49cd62611080ef29
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71100413"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968943"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-sso-from-power-bi-to-on-premises-data-sources"></a>Verwenden von SAML (Security Assertion Markup Language) für SSO von Power BI bei lokalen Datenquellen
 
-Verwenden Sie [SAML (Security Assertion Markup Language)](https://www.onelogin.com/pages/saml) zum Aktivieren der nahtlosen SSO-Konnektivität. Durch das Aktivieren von SSO für Power BI-Berichte und -Dashboards können Daten aus lokalen Datenquellen einfacher aktualisiert werden.
+Verwenden Sie [SAML (Security Assertion Markup Language)](https://www.onelogin.com/pages/saml) zum Aktivieren der nahtlosen SSO-Konnektivität. Durch das Aktivieren von SSO für Power BI-Berichte und -Dashboards können Daten aus lokalen Datenquellen unter Beachtung der für diese Quellen konfigurierten Benutzerberechtigungen einfacher aktualisiert werden.
 
 ## <a name="supported-data-sources"></a>Unterstützte Datenquellen
 
 Derzeit wird SAP HANA mit SAML unterstützt. Weitere Informationen zum Einrichten und Konfigurieren von SSO für SAP HANA mit SAML finden Sie in der SAP HANA-Dokumentation unter [SAML SSO for BI Platform to HANA (SAML SSO für die BI-Plattform mit HANA)](https://wiki.scn.sap.com/wiki/display/SAPHANA/SAML+SSO+for+BI+Platform+to+HANA).
 
-Mit [Kerberos](service-gateway-sso-kerberos.md) werden weitere Datenquellen unterstützt.
+Mit [Kerberos](service-gateway-sso-kerberos.md) wird das Hinzufügen zusätzlicher Datenquellen (einschließlich HANA) unterstützt.
 
 Für HANA wird **dringend** die Aktivierung der Verschlüsselung empfohlen, bevor eine SAML-SSO-Verbindung hergestellt wird. Sie sollten den HANA-Server daher so konfigurieren, dass verschlüsselte Verbindungen akzeptiert werden. Auch für das Gateway sollten Sie die Verschlüsselung einrichten, wenn dieses mit dem HANA-Server kommuniziert. Der HANA-ODBC-Treiber ist standardmäßig **nicht** in der Lage, SAML-Assertionen zu verschlüsseln. Wenn die Verschlüsselung nicht aktiviert ist, wird die signierte SAML-Assertion unverschlüsselt vom Gateway zum HANA-Server gesendet und kann dann abgefangen und von Drittanbietern wiederverwendet werden. Anweisungen zum Aktivieren von Verschlüsselung für HANA mithilfe der OpenSSL-Bibliothek finden Sie unter [Aktivieren von Verschlüsselung für SAP HANA](/power-bi/desktop-sap-hana-encryption).
 
@@ -43,7 +43,7 @@ In den folgenden Schritten wird beschrieben, wie Sie mithilfe einer Stammzertifi
    openssl req -new -x509 -newkey rsa:2048 -days 3650 -sha256 -keyout CA_Key.pem -out CA_Cert.pem -extensions v3_ca
    ```
 
-    Stellen Sie sicher, dass das Zertifikat der Stammzertifizierungsstelle ordnungsgemäß geschützt ist. Es könnte ansonsten von Drittanbietern für den nicht autorisierten Zugriff auf den HANA-Server verwendet werden. 
+    Stellen Sie sicher, dass der private Schlüssel der Stammzertifizierungsstelle ordnungsgemäß geschützt ist. Wenn Dritte ihn abrufen können, könnte er für den nicht autorisierten Zugriff auf den HANA-Server verwendet werden.
 
     Fügen Sie das Zertifikat (z. B. mit dem Namen „CA_Cert.pem“) dem Zertifikatspeicher des HANA-Servers hinzu, sodass dieser Server alle erstellen Zertifikate, die von der Stammzertifizierungsstelle signiert werden, als vertrauenswürdig einstuft. Den Speicherort des Zertifikatspeichers für den HANA-Server finden Sie in der **ssltruststore**-Konfigurationseinstellung. Wenn Sie die Schritte in der SAP-Dokumentation zur Konfiguration von OpenSSL umgesetzt haben, stuft der HANA-Server möglicherweise bereits eine Stammzertifizierungsstelle als vertrauenswürdig ein, die dann wiederverwendet werden kann. Weitere Informationen finden Sie unter [How to Configure Open SSL for SAP HANA Studio to SAP HANA Server (Konfigurieren von OpenSSL-Verbindungen zwischen SAP HANA Studio und einem SAP HANA-Server)](https://archive.sap.com/documents/docs/DOC-39571). Wenn Sie über mehrere HANA-Server verfügen, für die Sie SSO mit SAML aktivieren möchten, müssen Sie sicherstellen, dass jeder Server diese Stammzertifizierungsstelle als vertrauenswürdig einstuft.
 
@@ -61,7 +61,7 @@ In den folgenden Schritten wird beschrieben, wie Sie mithilfe einer Stammzertifi
 
 Da so erstellte IdP-Zertifikat ist ein Jahr lang gültig (siehe „-days“-Option). Importieren Sie nun Ihr IdP-Zertifikat in SAP HANA Studio, um einen neuen SAML-Identitätsanbieter zu erstellen.
 
-1. Klicken Sie in SAP HANA Studio mit der rechten Maustaste auf Ihren SAP HANA-Server, navigieren Sie dann zu **Security (Sicherheit)**  > **Open Security Console (Sicherheitskonsole öffnen)**  > **SAML Identity Provider (SAML-Identitätsanbieter)**  > **OpenSSL Cryptographic Library (Kryptografische OpenSSL-Bibliothek)** .
+1. Klicken Sie in SAP HANA Studio mit der rechten Maustaste auf Ihren SAP HANA-Server, und navigieren Sie dann zu **Security**&gt;**Open Security Console**&gt;**SAML Identity Provider**&gt;**OpenSSL Cryptographic Library** (Sicherheit > Sicherheitskonsole öffnen > SAML-Identitätsanbieter > OpenSSL-Kryptografiebibliothek).
 
     ![Identitätsanbieter](media/service-gateway-sso-saml/identity-providers.png)
 
@@ -77,13 +77,13 @@ Da so erstellte IdP-Zertifikat ist ein Jahr lang gültig (siehe „-days“-Opti
 
     ![SAML konfigurieren](media/service-gateway-sso-saml/configure-saml.png)
 
-1. Wählen Sie den Identitätsanbieter aus, den Sie in Schritt 2 erstellt haben. Geben Sie als **External Identity** (Externe Identität) den UPN des Power BI-Benutzers ein (in der Regel die E-Mail-Adresse, mit der sich der Benutzer bei Power BI anmeldet), und klicken Sie dann auf **Add** (Hinzufügen). Beachten Sie Folgendes: Wenn Sie das Gateway für die Verwendung der Konfigurationsoption *ADUserNameReplacementProperty* konfiguriert haben, sollten Sie den Wert eingeben, der den ursprünglichen UPN des Power BI-Benutzers ersetzt. Wenn Sie z. B. *ADUserNameReplacementProperty* auf **SAMAccountName** festlegen, sollten Sie den Wert **SAMAccountName** des Benutzers eingeben.
+1. Wählen Sie den Identitätsanbieter aus, den Sie in Schritt 2 erstellt haben. Geben Sie als **External Identity** (Externe Identität) den UPN des Power BI-Benutzers ein (die E-Mail-Adresse, mit der sich der Benutzer bei Power BI anmeldet), und klicken Sie dann auf **Add** (Hinzufügen). Beachten Sie Folgendes: Wenn Sie das Gateway für die Verwendung der Konfigurationsoption *ADUserNameReplacementProperty* konfiguriert haben, sollten Sie den Wert eingeben, der den ursprünglichen UPN des Power BI-Benutzers ersetzt. Wenn Sie z. B. *ADUserNameReplacementProperty* auf **SAMAccountName** festlegen, sollten Sie den Wert **SAMAccountName** des Benutzers eingeben.
 
     ![Identitätsanbieter auswählen](media/service-gateway-sso-saml/select-identity-provider.png)
 
-Nachdem Sie das Zertifikat und die Identität des Gateways konfiguriert haben, konvertieren Sie als Nächstes das Zertifikat in das PFX-Format, und konfigurieren Sie den Gatewaycomputer für die Verwendung des Zertifikats.
+Nachdem Sie das Zertifikat und die Identität des Gateways konfiguriert haben, konvertieren Sie als Nächstes das Zertifikat in das PFX-Format, und konfigurieren Sie das Gateway für die Verwendung des Zertifikats.
 
-1. Konvertieren Sie das Zertifikat in das PFX-Format, indem Sie den folgenden Befehl ausführen. Beachten Sie, dass dieser Befehl als Kennwort für die PFX-Datei „root“ festlegt.
+1. Konvertieren Sie das Zertifikat in das PFX-Format, indem Sie den folgenden Befehl ausführen. Beachten Sie, dass dieser Befehl die resultierende PFX-Datei „samlcert.pfx“ benennt und „root“ als Kennwort festlegt.
 
     ```
     openssl pkcs12 -export -out samltest.pfx -in IdP_Cert.pem -inkey IdP_Key.pem -passin pass:root -passout pass:root
@@ -91,11 +91,11 @@ Nachdem Sie das Zertifikat und die Identität des Gateways konfiguriert haben, k
 
 1. Kopieren Sie die PFX-Datei auf den Gatewaycomputer:
 
-    1. Doppelklicken Sie auf die Datei „samltest.pfx“, und klicken Sie dann auf **Local Machine (Lokaler Computer)**  > **Next (Weiter)** .
+    1. Doppelklicken Sie auf die Datei „samltest.pfx“, und wählen Sie dann **Local Machine**&gt;**Next** (Lokaler Computer > Weiter) aus.
 
     1. Geben Sie das Kennwort ein, und klicken Sie auf **Next (Weiter)** .
 
-    1. Wählen Sie die Option **Place all certificates in the following store (Alle Zertifikate unter folgendem Speicherort speichern)** aus, und klicken Sie dann auf **Browse (Durchsuchen)**  > **Personal (Eigene Zertifikate)**  > **OK**.
+    1. Klicken Sie auf **Place all certificates in the following store** (Alle Zertifikate in folgendem Speicher speichern), und wählen Sie dann **Browse**&gt;**Personal**&gt;**OK** (Durchsuchen > Persönlich > OK) aus.
 
     1. Klicken Sie auf **Next (Weiter)** , und dann auf **Finish (Fertig stellen)** .
 
@@ -111,13 +111,13 @@ Nachdem Sie das Zertifikat und die Identität des Gateways konfiguriert haben, k
 
         ![Snap-In hinzufügen](media/service-gateway-sso-saml/add-snap-in.png)
 
-    1. Klicken Sie auf **Certificates (Zertifikate)**  > **Add (Hinzufügen)** , und klicken Sie dann auf **Computer account (Computerkonto)**  > **Next (Weiter)** .
+    1. Klicken Sie auf **Certificates**&gt;**Add** (Zertifikate > Hinzufügen), und wählen Sie dann auf **Computer account**&gt;**Next** (Computerkonto > Weiter) aus.
 
-    1. Klicken Sie auf **Local Computer (Lokaler Computer)**  > **Finish (Fertig stellen)**  > **OK**.
+    1. Klicken Sie dann auf **Local Computer**&gt;**Finish**&gt;**OK** (Lokaler Computer > Fertigstellen > Weiter).
 
-    1. Erweitern Sie **Certificates (Zertifikate)**  > **Personal (Eigene Zertifikate)**  > **Certificates (Zertifikate)** , und suchen Sie nach dem Zertifikat.
+    1. Erweitern Sie **Certificates**&gt;**Personal**&gt;**Certificates** (Zertifikate > Persönlich > Zertifikate), und suchen Sie nach dem Zertifikat.
 
-    1. Klicken Sie mit der rechten Maustaste auf das Zertifikat, und navigieren Sie zu **All Tasks (Alle Aufgaben)**  > **Manage Private Keys (Private Schlüssel verwalten)** .
+    1. Klicken Sie mit der rechten Maustaste auf das Zertifikat, und navigieren Sie zu **All Tasks**&gt;**Manage Private Keys** (Alle Aufgaben > Private Schlüssel verwalten).
 
         ![Private Schlüssel verwalten](media/service-gateway-sso-saml/manage-private-keys.png)
 
@@ -135,21 +135,21 @@ Führen Sie schlussendlich die folgenden Schritte aus, um den Zertifikatfingerab
 
 1. Kopieren Sie den Fingerabdruck des von Ihnen erstellten Zertifikats.
 
-1. Navigieren Sie zum Gatewayverzeichnis, dessen Standardpfad folgendermaßen lautet: „C:\Programme\On-premises data gateway“.
+1. Navigieren Sie zum Gatewayverzeichnis, dessen Standardpfad folgendermaßen lautet: *C:\Programme\On-premises data gateway*.
 
-1. Öffnen Sie „PowerBI.DataMovement.Pipeline.GatewayCore.dll.config“, und suchen Sie nach dem Abschnitt *SapHanaSAMLCertThumbprint*. Fügen Sie den kopierten Fingerabdruck ein.
+1. Öffnen Sie die Datei **PowerBI.DataMovement.Pipeline.GatewayCore.dll.config**, und suchen Sie nach dem Abschnitt *SapHanaSAMLCertThumbprint*. Fügen Sie den kopierten Fingerabdruck ein.
 
 1. Starten Sie den Gatewaydienst neu.
 
 ## <a name="running-a-power-bi-report"></a>Ausführen eines Power BI-Berichts
 
-Sie können jetzt die Seite **Manage Gateway (Gateway verwalten)** in Power BI verwenden, um die SAP HANA-Datenquelle zu konfigurieren, und unter **Erweiterte Einstellungen** können Sie das einmalige Anmelden aktivieren. Anschließend können Sie Berichte und Datasets veröffentlichen, die an diese Datenquelle gebunden sind.
+Sie können jetzt die Seite **Gateway verwalten** in Power BI verwenden, um die SAP HANA-Datenquelle zu konfigurieren, und unter **Erweiterte Einstellungen** können Sie SSO aktivieren. Anschließend können Sie Berichte und Datasets veröffentlichen, die an diese Datenquelle gebunden sind.
 
 ![Erweiterte Einstellungen](media/service-gateway-sso-saml/advanced-settings.png)
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
-Nachdem SSO konfiguriert wurde, wird Ihnen im Power BI-Portal möglicherweise der folgende Fehler angezeigt: „The credentials provided cannot be used for the SapHana source.“ (Die bereitgestellten Anmeldeinformationen können nicht für die SapHana-Quelle verwendet werden.) Dieser Fehler bedeutet, dass die SAML-Anmeldeinformationen von SAP HANA nicht akzeptiert wurden.
+Nachdem SSO konfiguriert wurde, wird Ihnen im Power BI-Portal möglicherweise der folgende Fehler angezeigt: *„The credentials provided cannot be used for the SapHana source.“* (Die bereitgestellten Anmeldeinformationen können nicht für die SapHana-Quelle verwendet werden.) Dieser Fehler bedeutet, dass die SAML-Anmeldeinformationen von SAP HANA nicht akzeptiert wurden.
 
 In den Authentifizierungsablaufverfolgungen finden sich detaillierte Informationen zum Beheben von Fehlern bei Problemen mit Anmeldeinformationen bei SAP HANA. Befolgen Sie diese Schritte, um die Ablaufverfolgung für Ihren SAP HANA-Server zu konfigurieren.
 

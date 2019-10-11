@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/10/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: a2de6d79971e59879e65d2e3cf652caf156d80cf
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 5c50ec38da65573e085d9e27b0e31524256ac009
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70904072"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715523"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Erstellen der neuen Arbeitsbereiche in Power BI
 
@@ -28,7 +28,7 @@ Hier liegt der Unterschied. In den neuen Arbeitsbereichen können Sie Folgendes 
 - Genauere Arbeitsbereichsrollen für flexiblere Verwaltung von Berechtigungen in einem Arbeitsbereich verwenden.
 
 > [!NOTE]
-> Zum Erzwingen der Sicherheit auf Zeilenebene (Row-Level Security, RLS) für Power BI Pro-Benutzer, die Inhalte in einem Arbeitsbereich durchsuchen, verwenden Sie weiterhin [klassische Arbeitsbereiche](service-create-workspaces.md). Wählen Sie die Option **Mitglieder können Power BI-Inhalt nur anzeigen** aus. Alternativ können Sie eine Power BI-App für diese Benutzer veröffentlichen oder die Freigabe zur Verteilung von Inhalten verwenden. Die in Kürze verfügbare Viewerrolle wird dieses Szenario künftig in neuen Arbeitsbereichen ermöglichen.
+> Zum Erzwingen der Sicherheit auf Zeilenebene (Row-Level Security, RLS) für Power BI Pro-Benutzer, die Inhalte in einem Arbeitsbereich durchsuchen, weisen Sie den Benutzern die Viewer-Rolle zu.
 
 Weitere Informationen finden Sie im Artikel [Neue Arbeitsbereiche](service-new-workspaces.md).
 
@@ -40,9 +40,9 @@ Weitere Informationen finden Sie im Artikel [Neue Arbeitsbereiche](service-new-w
 
 2. Sie erstellen automatisch einen aktualisierten Arbeitsbereich, es sei denn, Sie wählen die Option **Auf klassische Version zurücksetzen**.
    
-     ![Neuer Arbeitsbereich](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
+     ![Neue Arbeitsbereichsfunktion](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
      
-     Wenn Sie **Auf klassische Version zurücksetzen** wählen, erstellen Sie einen Arbeitsbereich, der auf einer Office 365-Gruppe basiert. Verwenden Sie diese Option, wenn Sie die Option **Mitglieder können Power BI-Inhalt nur anzeigen** benötigen, um die Sicherheit auf Zeilenebene (Row-Level Security, RLS) für Arbeitsbereichsmitglieder zu erzwingen.
+     Wenn Sie **Auf klassische Version zurücksetzen** auswählen, erstellen Sie einen [Arbeitsbereich, der auf einer Office 365-Gruppe basiert](service-create-workspaces.md). 
 
 2. Benennen Sie den Arbeitsbereich. Wenn der Name nicht verfügbar ist, geben Sie einen eindeutigen Namen ein.
    
