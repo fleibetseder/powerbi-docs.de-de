@@ -7,12 +7,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 50f78709ce7ce302ce79df5eb383af25f55d539a
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: 1a46c1fb8e9f31bd5199fccfaecb16cece144b5a
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68471581"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72021024"
 ---
 # <a name="use-shared-datasets-in-power-bi-report-builder"></a>Verwenden von freigegebenen Datasets im Power BI-Berichts-Generator
 
@@ -20,14 +20,14 @@ Sie können ein Dataset, das Sie in Power BI Desktop erstellt haben, als Datenqu
 
 ![Power BI Desktop- und paginierter Berichts-Generator-Bericht](media/report-builder-shared-datasets/power-bi-desktop-report-builder-arrow-26-pgs.png)
 
-Der Datensatz muss sich nicht in einem Arbeitsbereich in einer Premium-Kapazität befinden, und Sie müssen kein Mitglied dieses Arbeitsbereichs sein. Sie müssen lediglich die [Erstellungsberechtigung](service-datasets-build-permissions.md#build-permissions-for-shared-datasets) für das Dataset haben. Um Ihren paginierten Bericht veröffentlichen zu können, benötigen Sie eine Power BI Pro-Lizenz. Außerdem benötigen Sie mindestens eine „Mitwirkender“-Rolle für einen Arbeitsbereich in einer Premium-Kapazität.
+Der Datensatz muss sich nicht in einem Arbeitsbereich in einer Premium-Kapazität befinden, und Sie müssen kein Mitglied dieses Arbeitsbereichs sein. Sie müssen lediglich die [Erstellungsberechtigung](service-datasets-build-permissions.md) für das Dataset haben. Um Ihren paginierten Bericht veröffentlichen zu können, benötigen Sie eine Power BI Pro-Lizenz. Außerdem benötigen Sie mindestens eine „Mitwirkender“-Rolle für einen Arbeitsbereich in einer Premium-Kapazität.
 
 ## <a name="what-you-need"></a>Voraussetzung
 
 Im folgenden finden Sie eine Liste der Elemente, die Sie benötigen oder nicht benötigen, um ein freigegebenes Dataset im Power BI Berichts-Generator zu verwenden.
 
 - Power BI-Berichts-Generator. [Laden Sie den Power BI-Berichts-Generator herunter, und installieren Sie ihn](https://go.microsoft.com/fwlink/?linkid=2086513).
-- Um auf ein Power BI-Dataset zugreifen zu können, benötigen Sie die Erstellungsberechtigung für das Dataset. Erfahren Sie mehr über [Erstellungsberechtigung](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+- Um auf ein Power BI-Dataset zugreifen zu können, benötigen Sie die Erstellungsberechtigung für das Dataset. Erfahren Sie mehr über [Erstellungsberechtigung](service-datasets-build-permissions.md).
 - Sie benötigen keine Power BI Pro-Lizenz, um im Berichts-Generator einen paginierten Bericht zu erstellen. 
 - Sie benötigen eine Power BI Pro-Lizenz, um Ihren paginierten Bericht veröffentlichen zu können. Außerdem benötigen Sie mindestens eine „Mitwirkender“-Rolle für einen Arbeitsbereich in einer Premium-Kapazität. 
 - Optional: Wenn Sie den Schritten in diesem Artikel folgen möchten, laden Sie die Power BI Desktop-Datei [Retail Analysis Sample PBIX.pbix](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) herunter, öffnen Sie die Datei in Power BI Desktop, und fügen Sie eine Tabelle mit vielen Spalten hinzu. Deaktivieren Sie im Bereich **Format** die Option **Gesamt**. Veröffentlichen Sie die Datei dann in einem Arbeitsbereich im Power BI-Dienst.
@@ -105,7 +105,7 @@ Sollen die Daten im Power BI-Bericht und in Ihrem Berichts-Generator-Bericht ide
 
     ![Dialogfeld „Dataseteigenschaften“](media/report-builder-shared-datasets/power-bi-report-builder-dataset-properties.png)
 
-1. Wählen Sie **OK** aus.
+1. Wählen Sie **OK**aus.
 
     Nun wird das neue Dataset mit einer Liste seiner Felder im Bereich „Berichtsdaten“ angezeigt.
 
@@ -133,7 +133,7 @@ Eine schnelle Möglichkeit zum Erstellen einer Tabelle besteht darin, den Tabell
 
 1. Wählen Sie die gewünschten Layoutoptionen aus, und wählen Sie **Weiter** aus.
 
-1. Wählen Sie **Fertig stellen** aus.
+1. Wählen Sie **Fertig stellen**aus.
     Die Tabelle wird in der Entwurfsansicht angezeigt.
 
     ![Berichtsentwurfsansicht](media/report-builder-shared-datasets/power-bi-report-builder-design-view.png)

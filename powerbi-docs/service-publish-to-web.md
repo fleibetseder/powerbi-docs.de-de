@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/16/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 86fc2f8d13cdcd006c01dfff0114c13cc78f5e65
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 9824b3340da694c00784f34b0c6245cafbf69383
+ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987020"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72239918"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Veröffentlichen im Web aus Power BI
 
@@ -113,13 +113,13 @@ Nachdem Sie einen **Im Web veröffentlichen**-Einbindungscode erstellt haben, k�
 
 ## <a name="updates-to-reports-and-data-refresh"></a>Updates an Berichten und Datenaktualisierung
 
-Nachdem Sie einen **Im Web veröffentlichen**-Einbindungscode erstellt und geteilt haben, werden alle Änderungen, die Sie vornehmen, im Bericht aktualisiert, und der Einbindungscodelink ist sofort aktiv. Jeder, der den Link öffnet, kann den Bericht sehen. Nach dieser anfänglichen Aktion kann es jedoch ungefähr eine Stunde dauern, bis Änderungen an Berichten oder Visuals für Ihre Benutzer sichtbar werden. Wenn Ihre Updates sofort verfügbar sein müssen, können Sie den Einbindungscode löschen und einen neuen erstellen. Weitere Informationen finden Sie im Abschnitt [**Funktionsweise**](#howitworks) weiter unten in diesem Artikel. 
+Nachdem Sie einen **Im Web veröffentlichen**-Einbindungscode erstellt und geteilt haben, werden alle Änderungen, die Sie vornehmen, im Bericht aktualisiert, und der Einbindungscodelink ist sofort aktiv. Jeder, der den Link öffnet, kann den Bericht sehen. Nach dieser anfänglichen Aktion kann es jedoch ungefähr eine Stunde dauern, bis Änderungen an Berichten oder Visuals für Ihre Benutzer sichtbar werden. Weitere Informationen finden Sie im Abschnitt [**Funktionsweise**](#howitworks) weiter unten in diesem Artikel. 
 
 ## <a name="data-refresh"></a>Datenaktualisierung
 
 Datenaktualisierungen werden in Ihrem eingebetteten Bericht oder in Ihrer Virtualisierung automatisch wiedergegeben. Es kann ungefähr eine Stunde dauern, bis aktualisierte Daten über Einbindungscodes widergespiegelt werden. Um die automatische Aktualisierung zu deaktivieren, wählen Sie im Zeitplan für das vom Bericht verwendete Dataset **nicht aktualisieren** aus.  
 
-## <a name="custom-visuals"></a>Benutzerdefinierte Visuals
+## <a name="custom-visuals"></a>Benutzerdefinierte visuelle Elemente
 
 Benutzerdefinierte visuelle Elemente werden von **Im Web veröffentlichen**unterstützt. Wenn Sie **Im Web veröffentlichen** verwenden, brauchen Benutzer, mit denen Sie Ihr veröffentlichtes Visual teilen, benutzerdefinierte Visuals nicht zu aktivieren, um den Bericht anzuzeigen.
 
