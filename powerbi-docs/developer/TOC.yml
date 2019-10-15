@@ -15,9 +15,9 @@
         - name: Lernprogramme
           items:
             - name: Entwickeln eines Power BI-Visuals
-              href: custom-visual-develop-tutorial.md
+              href: visuals/custom-visual-develop-tutorial.md
             - name: Hinzufügen von Formatierungsoptionen
-              href: custom-visual-develop-tutorial-format-options.md
+              href: visuals/custom-visual-develop-tutorial-format-options.md
             - name: Hinzufügen von Komponententests für Visualprojekte
               href: visuals/unit-tests-introduction.md
         - name: Konzepte
