@@ -2,20 +2,20 @@
 title: Zwischenspeicherung von Abfragen in Power BI Premium
 description: Zwischenspeicherung von Abfragen in Power BI Premium
 author: KesemSharabi
-ms.author: maggies
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: bhmerc
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/16/2019
+ms.date: 10/04/2019
 LocalizationGroup: ''
-ms.openlocfilehash: 489069df43d2c09f6f5551987a61353e095aff7a
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 6e68f515581d62b544f1c6b17144e73ea709a62d
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71076180"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020515"
 ---
 # <a name="query-caching-in-power-bi-premiumembedded"></a>Zwischenspeicherung von Abfragen in Power BI Premium/Embedded
 
@@ -26,13 +26,13 @@ Organisationen mit Power BI Premium oder Power BI Embedded können von der *Zwis
 
 Zwischengespeicherte Abfrageergebnisse beziehen sich auf den Benutzer- und Datasetkontext und berücksichtigen Sicherheitsregeln. Derzeit führt der Dienst die Zwischenspeicherung von Abfragen nur für die erste Seite durch, auf die Sie gelangen. Abfragen werden also nicht zwischengespeichert, wenn Sie mit dem Bericht interagieren. Der Abfragecache respektiert [persönliche Lesezeichen](consumer/end-user-bookmarks.md#personal-bookmarks) und [persistente Filter](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/), sodass Abfragen, die von einem personalisierten Bericht generiert werden, im Cache gespeichert werden. [Dashboardkacheln](service-dashboard-tiles.md), die von denselben Abfragen unterstützt werden, profitieren ebenfalls davon, sobald die Abfrage zwischengespeichert wurde. Die Leistung wird ebenfalls optimiert, wenn regelmäßig auf ein Dataset zugegriffen wird und dieses nicht oft aktualisiert werden muss. Die Zwischenspeicherung von Abfragen kann zudem die Last auf Ihrer Premium/Embedded-Kapazität verringern, indem die Gesamtzahl der Abfragen reduziert wird.
 
-Sie steuern das Zwischenspeicherungsverhalten für Abfragen für das Dataset im Power BI-Dienst über die Seite **Einstellungen**. Ihnen stehen zwei mögliche Einstellungen zur Verfügung:
+Sie steuern das Zwischenspeicherungsverhalten für Abfragen für das Dataset im Power BI-Dienst über die Seite **Einstellungen**. Ihnen stehen drei mögliche Einstellungen zur Verfügung:
 
+- **Kapazitätsstandard**: Zwischenspeicherung von Abfragen: Aus
 - **Aus:** Die Zwischenspeicherung von Abfragen darf für dieses Dataset nicht verwendet werden.
-
 - **Ein:** Sie können die Zwischenspeicherung von Abfragen für dieses Dataset verwenden.
 
-![Dialogfeld „Zwischenspeicherung von Abfragen“](media/power-bi-query-caching/power-bi-query-caching.png)
+    ![Dialogfeld „Zwischenspeicherung von Abfragen“](media/power-bi-query-caching/power-bi-query-3-options.png)
 
 ## <a name="considerations-and-limitations"></a>Überlegungen und Einschränkungen
 

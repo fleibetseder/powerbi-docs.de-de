@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/10/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5385512e534d866a2474fd4e3def10f45d52a1a0
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 32b9adc92222e2122aff41d7ef7ef351c3158951
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70903879"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020245"
 ---
 # <a name="create-classic-workspaces-in-power-bi"></a>Erstellen von klassischen Arbeitsbereichen in Power BI
 
@@ -90,11 +90,11 @@ Apps sind die Weiterentwicklung von organisationsbezogenen Inhaltspaketen. Wenn 
 * Nachdem Geschäftskunden ein Inhaltspaket installiert haben, verliert es seine Gruppenidentität. Es ist dann lediglich eine Liste von Dashboards und Berichten zwischen anderen Dashboards und Berichten. Hingegen bleibt die Gruppierung und Identität von Apps auch nach der Installation erhalten. Durch diese Gruppierung können Geschäftskunden nun zu späteren Zeitpunkten immer wieder unkompliziert dorthin navigieren.
 * Sie können in jedem Arbeitsbereich mehrere Inhaltspakete erstellen, eine App weist jedoch eine 1:1-Beziehung zu ihrem Arbeitsbereich auf. 
 * Wir planen, im Verlauf der Zeit die Unterstützung organisationsbezogener Inhaltspakete einzustellen, daher wird empfohlen, von nun an Apps zu erstellen.  
-* Die Veröffentlichung der Vorschauversion stellt den Beginn des Endes der Unterstützung organisationsbezogener Inhaltspakete dar. Sie können diese nicht in der Vorschauversion für Arbeitsbereiche nutzen oder erstellen.
+* Mit der neuen Arbeitsbereichsumgebung unternehmen wir die ersten Schritte zum Ausmustern organisationsbezogener Inhaltspakete. Sie können diese in neuen Arbeitsbereichen nicht nutzen oder erstellen.
 
 Einen Vergleich der beiden Arbeitsbereiche finden Sie unter [Unterschiede zwischen den neuen und den alten Arbeitsbereichen](service-new-workspaces.md#how-the-new-workspaces-are-different). 
 
 ## <a name="next-steps"></a>Nächste Schritte
 * [Installieren und Verwenden von Apps in Power BI](service-create-distribute-apps.md)
-- [Erstellen der neuen Arbeitsbereiche (Vorschau)](service-create-the-new-workspaces.md)
+- [Erstellen neuer Arbeitsbereiche](service-create-the-new-workspaces.md)
 * Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)

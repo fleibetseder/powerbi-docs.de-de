@@ -10,14 +10,17 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 1d07c678b02f77689d24d067ca58a4e28ac70cb0
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 6543263c0e6c3395479169e8b02034e4a9c78f7b
+ms.sourcegitcommit: 3b4de8785d17c9e00b041cff7bd4d39829316437
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68623918"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72164101"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Flächenkartogramme in Power BI Desktop (Vorschau)
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Erstellen Sie ein Visual für die **Formenzuordnung**, um Regionen auf einer Karte voneinander abzutrennen. Im Gegensatz zum Visual **Karte** kann das Visual **Formenzuordnung** keine genauen geografischen Standorte von Datenpunkten auf einer Karte anzeigen. Stattdessen soll es vor allem Regionen auf einer Karte in Beziehung zueinander setzen, indem diese unterschiedliche Farben erhalten.
 
 Visuals für die **Formenzuordnung** basieren auf ESRI/TopoJSON-Karten. Diese Karten können von Ihnen erstellte benutzerdefinierte Karten verwenden. Benutzerdefinierte Karten sind beispielswiese die Folgenden: geografische Pläne, Sitz- oder Raumpläne. In diesem Vorschaurelease von **Flächenkartogramm** ist es nicht möglich, benutzerdefinierte Karten zu verwenden.
@@ -194,7 +197,7 @@ Verwenden Sie in dieser Vorschauversion die folgenden **Regionsschlüssel**, um 
 
 ### <a name="france-regions"></a>Frankreich: Regionen
 
-| ID | name | name-en |
+| ID | NAME | name-en |
 | --- | --- | --- |
 | Alsace |Alsace |Alsace |
 | Rhone-Alpes |Rhône-Alpes |Rhone-Alpes |
@@ -361,7 +364,7 @@ Verwenden Sie in dieser Vorschauversion die folgenden **Regionsschlüssel**, um 
 
 ### <a name="usa-states"></a>USA: Staaten
 
-| ID | name | postal |
+| ID | NAME | postal |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alaska |AK |

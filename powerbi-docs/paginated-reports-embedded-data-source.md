@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.openlocfilehash: 83e3ffbae43d25e89cf52077acaa731cdee9b502
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 4dda73794c888d89ad67f1af23bfb8c38eb43f61
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270826"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020801"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Erstellen einer eingebetteten Datenquelle für paginierte Berichte im Power BI-Dienst
 
@@ -76,21 +76,21 @@ Für paginierte Berichte, die eine Verbindung mit Power BI-Datasets herstellen, 
 
 - RDL-Datei im selben Arbeitsbereich wie das Dataset (derselbe Besitzer): Unterstützt
 - RDL-Datei in einem anderen Arbeitsbereich als das Dataset (derselbe Besitzer): Unterstützt
-- Freigegebene RDL-Datei: Jedem Benutzer, dem der Bericht angezeigt wird, müssen auf Datasetebene Erstellungsberechtigungen zugewiesen sein
-- Freigegebene App: Jedem Benutzer, dem der Bericht angezeigt wird, müssen auf Datasetebene Erstellungsberechtigungen zugewiesen sein
+- Freigegebene RDL-Datei: Jedem Benutzer, der den Bericht einsieht, muss auf Dataset-Ebene die Berechtigung „Erstellen“ zugewiesen sein
+- Freigegebene App: Jedem Benutzer, der den Bericht einsieht, muss auf Dataset-Ebene die Berechtigung „Erstellen“ zugewiesen sein
 - RDL-Datei im selben Arbeitsbereich wie das Dataset (anderer Benutzer): Unterstützt
-- RDL-Datei in einem anderen Arbeitsbereich als das Dataset (anderer Benutzer): Jedem Benutzer, dem der Bericht angezeigt wird, müssen auf Datasetebene Erstellungsberechtigungen zugewiesen sein
-- Sicherheit auf Rollenebene: Jedem Benutzer, dem der Bericht angezeigt wird, müssen auf Datasetebene Erstellungsberechtigungen zugewiesen sein, um diese zu erzwingen
+- RDL-Datei in einem anderen Arbeitsbereich als das Dataset (anderer Benutzer): Jedem Benutzer, dem der Bericht angezeigt wird, muss auf Dataset-Ebene die Berechtigung „Erstellen“ zugewiesen sein
+- Sicherheit auf Rollenebene: Jedem Benutzer, dem der Bericht angezeigt wird, muss auf Dataset-Ebene die Berechtigung „Erstellen“ zugewiesen sein, um diese zu erzwingen.
 
 ### <a name="new-experience-apps-and-app-workspaces"></a>Neue Apps und App-Arbeitsbereiche
 
 - RDL-Datei im selben Arbeitsbereich wie das Dataset: Unterstützt
 - RDL-Datei in einem anderen Arbeitsbereich als das Dataset (derselbe Besitzer): Unterstützt
-- Freigegebene RDL-Datei: Jedem Benutzer, dem der Bericht angezeigt wird, müssen auf Datasetebene Erstellungsberechtigungen zugewiesen sein
-- Freigegebene App: Jedem Benutzer, dem der Bericht angezeigt wird, müssen auf Datasetebene Erstellungsberechtigungen zugewiesen sein
+- Freigegebene RDL-Datei: Jedem Benutzer, der den Bericht einsieht, muss auf Dataset-Ebene die Berechtigung „Erstellen“ zugewiesen sein
+- Freigegebene App: Jedem Benutzer, der den Bericht einsieht, muss auf Dataset-Ebene die Berechtigung „Erstellen“ zugewiesen sein
 - RDL-Datei im selben Arbeitsbereich wie das Dataset (anderer Benutzer) – Unterstützt
-- RDL-Datei in einem anderen Arbeitsbereich als das Dataset (anderer Benutzer): Jedem Benutzer, dem der Bericht angezeigt wird, müssen auf Datasetebene Erstellungsberechtigungen zugewiesen sein
-- Sicherheit auf Rollenebene: Jedem Benutzer, dem der Bericht angezeigt wird, müssen auf Datasetebene Erstellungsberechtigungen zugewiesen sein, um diese zu erzwingen
+- RDL-Datei in einem anderen Arbeitsbereich als das Dataset (anderer Benutzer): Jedem Benutzer, der den Bericht einsieht, muss auf Dataset-Ebene die Berechtigung „Erstellen“ zugewiesen sein
+- Sicherheit auf Rollenebene: Jedem Benutzer, dem der Bericht angezeigt wird, muss auf Dataset-Ebene die Berechtigung „Erstellen“ zugewiesen sein, um diese zu erzwingen
 
 ## <a name="next-steps"></a>Nächste Schritte
 

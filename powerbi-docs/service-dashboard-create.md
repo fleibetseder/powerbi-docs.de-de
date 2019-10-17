@@ -10,49 +10,46 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/17/2019
 ms.author: maggies
-ms.openlocfilehash: b50d247f54cfe2af4cefbd14b9528b1dfa263acf
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 108882dd0f3b61d6cb19fd18290b44316231f3cb
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624246"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020346"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Erstellen eines Power BI-Dashboards aus einem Bericht
 Sie haben die [Einführung in Dashboards in Power BI](service-dashboards.md) gelesen und möchten jetzt Sie Ihr eigenes erstellen. Es gibt viele Methoden zum Erstellen eines Dashboards. So können Sie beispielsweise ein Dashboard anhand eines Berichts, von Grund auf neu, anhand eines Datasets oder durch Duplizieren eines vorhandenen Dashboards erstellen.  
 
-Anfangs kann diese Aufgabe überwältigend erscheinen. Daher erstellen wir zunächst ein schnelles und einfaches Dashboard, indem wir Visualisierungen aus einem Bericht anheften, der bereits erstellt wurde. 
+Wir erstellen zunächst schnell ein einfaches Dashboard, indem wir Visualisierungen aus einem Bericht anheften, der bereits erstellt wurde. 
 
-Nachdem Sie diesen Schnellstart durchgeführt haben, verfügen Sie über ein gutes Verständnis der folgenden Aspekte:
+Nach Lektüre dieses Artikels sind Sie mit den folgenden Themen bestens vertraut:
 - Beziehung zwischen Dashboards und Berichten
 - Öffnen der Bearbeitungsansicht im Berichts-Editor
 - Anheften von Kacheln 
 - Navigieren zwischen einem Dashboard und einem Bericht 
-
-## <a name="who-can-create-a-dashboard"></a>Wer kann ein Dashboard erstellen?
-Die Fähigkeit zum Erstellen eines Dashboards ist eine Funktion für *Ersteller* und erfordert Bearbeitungsberechtigungen für den Bericht. Bearbeitungsberechtigungen sind für Berichtsersteller verfügbar sowie für diejenigen Kollegen, denen der Ersteller Zugriff gewährt. Ein Beispiel: David erstellt einen Bericht im Arbeitsbereich „ABC“ und fügt Sie als Mitglied zu diesem Arbeitsbereich hinzu. Dann verfügen sowohl Sie als auch David über Bearbeitungsberechtigungen. Wenn andererseits ein Bericht direkt für Sie oder im Rahmen einer [Power BI-App](service-create-distribute-apps.md) freigegeben wurde, Sie den Bericht also nur *nutzen*, können Sie keine Kacheln an ein Dashboard anheften.
  
 ![Dashboard](media/service-dashboard-create/power-bi-completed-dashboard-small.png)
 
 > [!NOTE] 
-> Dashboards sind ein Feature des Power BI-Diensts und nicht von Power BI Desktop. Obwohl Dashboards nicht mit Power BI Mobile erstellt werden können, lassen sie sich in dieser App [anzeigen und freigeben](consumer/mobile/mobile-apps-view-dashboard.md).
+> Dashboards sind ein Feature des Power BI-Diensts und nicht von Power BI Desktop. Obwohl Sie in den mobilen Power BI-Apps keine Dashboards erstellen, können Sie sie darin [anzeigen und freigeben](consumer/mobile/mobile-apps-view-dashboard.md).
 >
 > 
 
 ## <a name="video-create-a-dashboard-by-pinning-visuals-and-images-from-a-report"></a>Video: Erstellen eines Dashboards durch Anheften von Visualisierungen und Bildern aus einem Bericht
-Amanda zeigt Ihnen, wie Sie ein neues Dashboard erstellen, indem Sie Visualisierungen aus einem Bericht anheften. Befolgen Sie dann die Schritte unter[Importieren eines Datasets mit einem Bericht](#import-a-dataset-with-a-report), um die Vorgehensweise anhand des Beispiels für die Beschaffungsanalyse selbst auszuprobieren.
+Amanda zeigt Ihnen, wie Sie ein neues Dashboard erstellen, indem Sie Visualisierungen aus einem Bericht anheften. Befolgen Sie dann die Schritte im nächsten Abschnitt unter [Importieren eines Datasets mit einem Bericht](#import-a-dataset-with-a-report), um die Vorgehensweise anhand des Beispiels für die Beschaffungsanalyse selbst auszuprobieren.
     
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="import-a-dataset-with-a-report"></a>Importieren eines Datasets mit einem Bericht
-Wir werden eines der Beispiel-Power BI-Datasets importieren, um damit unser neues Dashboard zu erstellen. Das Beispiel ist eine Excel-Arbeitsmappe mit zwei PowerView-Tabellen. Wenn Sie die Arbeitsmappe in Power BI importieren, werden Ihrem Arbeitsbereich ein Dataset und ein Bericht hinzugefügt. Der Bericht wird automatisch aus den PowerView-Tabellen erstellt.
+Wir werden in dieser Anleitung eines der Power BI-Beispieldatasets importieren, um damit unser neues Dashboard zu erstellen. Das Beispiel ist eine Excel-Arbeitsmappe mit zwei PowerView-Arbeitsblättern. Wenn Sie die Arbeitsmappe in Power BI importieren, werden Ihrem Arbeitsbereich ein Dataset und ein Bericht hinzugefügt. Der Bericht wird automatisch aus den PowerView-Tabellen erstellt.
 
-1. Laden Sie die [Excel-Datei](http://go.microsoft.com/fwlink/?LinkId=529784) mit dem Beispiel der Beschaffungsanalyse herunter. Wir empfehlen, die Datei in OneDrive for Business zu speichern.
+1. Laden Sie die Excel-Datei mit dem [Beispiel der Beschaffungsanalyse](http://go.microsoft.com/fwlink/?LinkId=529784) herunter. Wir empfehlen, die Datei in OneDrive for Business zu speichern.
 2. Öffnen Sie den Power BI-Dienst in einem Browser (app.powerbi.com).
 3. Wählen Sie im linken Navigationsbereich **Mein Arbeitsbereich** und anschließend **Daten abrufen** aus.
 
-    ![Linker Navigationsbereich](media/service-dashboard-create/power-bi-get-data3.png)
-5. Wählen Sie **Dateien**aus.
+    ![Linker Navigationsbereich](media/service-dashboard-create/power-bi-get-data-new-look.png)
+5. Klicken Sie unter **Dateien** auf **Abrufen**.
 
    ![Dateien abrufen](media/service-dashboard-create/power-bi-select-files.png)
 6. Navigieren Sie zum Speicherort der Excel-Datei des Beispiels für die Beschaffungsanalyse. Wählen Sie die Datei und dann **Verbinden** aus.
@@ -64,6 +61,9 @@ Wir werden eines der Beispiel-Power BI-Datasets importieren, um damit unser neue
 8. Wenn die Erfolgsmeldung angezeigt wird, klicken Sie auf das **x**, um sie auszublenden.
 
    ![Erfolgsmeldung](media/service-dashboard-create/power-bi-view-datasetnew.png)
+
+> [!TIP]
+> Schon gewusst...? Sie können die linke Navigationsstruktur eingrenzen, indem Sie oben auf das Symbol mit den drei Linien klicken ![Navigationsbereichssymbol ein- oder ausblenden](media/service-dashboard-create/power-bi-new-look-hide-nav-pane.png). Dadurch erhalten Sie mehr Platz für den Bericht selbst.
 
 ### <a name="open-the-report-and-pin-tiles-to-your-dashboard"></a>Öffnen des Berichts und Anheften von Kacheln an Ihr Dashboard
 1. Wählen Sie im gleichen Arbeitsbereich die Registerkarte **Berichte** und dann **Analysebeispiel für Beschaffung** aus, um den Bericht zu öffnen.

@@ -7,21 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 10/08/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 6c752b6083d2f3baecf7e1a9ce20f77e8c5a46d0
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 11f60ba14734f40849aec47a492f4bf80c4ef3b5
+ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654948"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72239958"
 ---
 # <a name="the-new-look-of-the-power-bi-service"></a>Das neue Design des Power BI-Diensts
 
-Der Power BI-Dienst (app.powerbi.com) verfügt über ein neues Design, das das Anzeigen und Interagieren mit Ihren Berichten vereinfacht. Das neue Design bietet eine moderne Oberfläche, die einfacher aufgebaut ist und auf dem vertrauten Aussehen anderer Microsoft-Produkte basiert. Innerhalb des gesamten Power BI-Diensts bilden nun Berichtsinhalte den wesentlichen Schwerpunkt. Dazu wurde zu einem helleren Farbdesign und aktualisierten Symbolen gewechselt. Hier sehen Sie eine Übersicht über die Änderungen beim neuen Design. Ausführlichere Informationen finden Sie in den nummerierten Abschnitten:
+Der Power BI-Dienst (app.powerbi.com) verfügt über ein neues Design, das das Anzeigen und Interagieren mit Ihren Berichten vereinfacht. Das neue Design ist einfacher und basiert auf Ihrer Vertrautheit mit anderen Microsoft-Produkten. Innerhalb des gesamten Power BI-Diensts bilden nun Berichtsinhalte den wesentlichen Schwerpunkt. Dazu wurde zu einem helleren Farbdesign und aktualisierten Symbolen gewechselt. Hier sehen Sie eine Übersicht über die Änderungen beim neuen Design. Ausführlichere Informationen finden Sie in den nummerierten Abschnitten:
 
 ![Übersicht über die Änderungen beim neuen Design](media/service-new-look/power-bi-new-look-changes.png)
+
+Suchen Sie eine bestimmte Aktion? Siehe [Das „neue Design“: Wo sind die Aktionen jetzt?](service-new-look-where-actions.md)
 
 ## <a name="quick-tour-of-the-changes"></a>Kurze Tour durch die Änderungen
 
@@ -70,7 +72,7 @@ Suchen Sie nach den Aktionen im Menü **Datei**? Die Aktionen, die sich bisher i
 
 ## <a name="6-new-filter-experience"></a>6. Neue Filteroberfläche
 
-Neueste Updates wie das Anzeigen angewendeter Filter und der neue Filterbereich stehen im neuen Design standardmäßig zur Verfügung. Selbst wenn die Berichts-Designer noch kein Upgrade auf die neue Filteroberfläche durchgeführt haben, wird Ihnen der neue Filterbereich angezeigt.
+Neueste Updates wie das Anzeigen angewendeter Filter und der neue Filterbereich stehen im neuen Design standardmäßig zur Verfügung. Selbst wenn Ihr Berichts-Designer noch kein Upgrade auf die neue Filteroberfläche durchgeführt hat, wird Ihnen der neue Filterbereich angezeigt.
 
 ![Filterneudarstellung](media/service-new-look/power-bi-new-look-filters.png)
 

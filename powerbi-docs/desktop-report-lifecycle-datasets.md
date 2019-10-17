@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f3c72de197203adcad1020bc244ff0bc215e10bd
-ms.sourcegitcommit: 4222ebad1a3a32d8040f6a615a0b7f173d7869d0
+ms.openlocfilehash: e213bad8e7267abe0b49d1f460717dd817e9832a
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71164481"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020483"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Herstellen einer Verbindung mit Datasets im Power BI-Dienst über Power BI Desktop
 Sie können eine Liveverbindung mit einem gemeinsam genutzten Dataset im Power BI-Dienst herstellen und auf Grundlage des gleichen Datasets viele verschiedene Berichte erstellen. Das bedeutet, dass Sie in Power BI Desktop Ihr perfektes Datenmodell erstellen und im Power BI-Dienst veröffentlichen können. Dann können Sie und andere Benutzer aus diesem einen, gemeinsam verwendeten Datenmodell mehrere unterschiedliche Berichte (als separate PBIX-Dateien) erstellen und in unterschiedlichen Arbeitsbereichen speichern. Das Feature heißt **Liveverbindung mit Power BI-Dienst**.
@@ -35,7 +35,7 @@ Ein Beispiel: Anna ist Business Analyst in Ihrem Team und hat die entsprechenden
 Alle sind von Annas Bericht und Dataset begeistert – und genau da beginnen die Probleme: Jeder in Annas Team versucht, eine *eigene Version* dieses Datasets zu erstellen und anschließend seine eigenen Berichte für das Team freizugeben. Plötzlich enthält der Arbeitsbereich Ihres Teams im **Power BI-Dienst** zahlreiche verschiedene Berichte, die jeweils auf unterschiedlichen Datasets basieren. Welches davon ist auf dem neuesten Stand? Waren die Datasets identisch, oder doch nur annähernd gleich? Wo lagen die Unterschiede? Mit dem Feature **Liveverbindung mit Power BI-Dienst** lässt sich all das vermeiden. Im nächsten Abschnitt erfahren Sie, wie andere Benutzer das von Anna veröffentlichte Dataset für ihre eigenen Berichte in Ihren eigenen Arbeitsbereichen verwenden können und wie Sie es allen Benutzern ermöglichen, ihre individuellen Berichte auf der Grundlage des gleichen fundierten, geprüften und veröffentlichten Datasets zu erstellen.
 
 ### <a name="connect-to-a-power-bi-service-dataset-using-a-live-connection"></a>Herstellen einer Liveverbindung mit einem Dataset des Power BI-Diensts
-Anna erstellt einen Bericht (und das zugrunde liegende Dataset) und veröffentlicht diesen dann im **Power BI-Dienst**, woraufhin er dort im Power BI-Dienst-Arbeitsbereich ihres Teams angezeigt wird. Wenn Anna den Bericht in einem *neuen Arbeitsbereich* speichert, kann sie die Berechtigung zum Erstellen festlegen, um den Bericht für jeden Benutzer innerhalb und außerhalb ihres Arbeitsbereichs verfügbar und verwendbar zu machen.
+Anna erstellt einen Bericht (und das zugrunde liegende Dataset) und veröffentlicht diesen dann im **Power BI-Dienst**, woraufhin er dort im Power BI-Dienst-Arbeitsbereich ihres Teams angezeigt wird. Wenn Anna den Bericht in einem *neuen Arbeitsbereich* speichert, kann sie die Berechtigung „Erstellen“ festlegen, um den Bericht für jeden Benutzer innerhalb und außerhalb ihres Arbeitsbereichs verfügbar und nutzbar zu machen.
 
 Weitere Informationen zu den neuen Arbeitsbereichen finden Sie unter [App-Arbeitsbereiche](service-new-workspaces.md).
 
@@ -76,7 +76,7 @@ Nach Abschluss des Vorgangs werden in **Power BI Desktop** eine Erfolgsmeldung, 
 
 Nachdem der Bericht mit seinem Dataset nun im Power BI-Dienst veröffentlicht wurde, können Sie ihn *bewerben*, um seine Qualität und Zuverlässigkeit zu bestätigen. Sie können zudem anfordern, dass er von zentralen Zertifizierungsstellen in Ihrem Power BI-Mandanten *zertifiziert* wird. Durch diese Empfehlungen wird Ihr Dataset immer oben in der Liste angezeigt, wenn Benutzer nach Datasets suchen. Weitere Informationen zu diesem Prozess finden Sie im Artikel zum [Bewerben Ihres Datasets](service-datasets-promote.md). 
 
-Als letzten Schritt müssen Sie *Erstellberechtigungen* für das Dataset festlegen, auf dem der Bericht basiert. Erstellberechtigungen legen fest, wer Ihr Dataset sehen und verwenden darf. Sie können die Berechtigungen entweder direkt im Arbeitsbereich oder beim Freigeben einer App im Arbeitsbereich festlegen. Weitere Informationen finden Sie im Artikel zum [Erstellen und Freigeben von Datasets](service-datasets-build-permissions.md#build-permissions-for-shared-datasets) im Abschnitt zur Erstellberechtigung.
+Als letzten Schritt müssen Sie *Erstellberechtigungen* für das Dataset festlegen, auf dem der Bericht basiert. Erstellberechtigungen legen fest, wer Ihr Dataset sehen und verwenden darf. Sie können die Berechtigungen entweder direkt im Arbeitsbereich oder beim Freigeben einer App im Arbeitsbereich festlegen. Weitere Informationen finden Sie im Artikel zum [Erstellen und Freigeben von Datasets](service-datasets-build-permissions.md) im Abschnitt zur Erstellberechtigung.
 
 Als Nächstes erfahren Sie, wie Teamkollegen mit Zugriff auf den Arbeitsbereich, in dem der Bericht und das Dataset veröffentlichten wurden, eine Verbindung mit dem Dataset herstellen und eigene Berichte erstellen können.
 

@@ -7,15 +7,15 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/16/2019
+ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: ace40fed472dc516cce5a761544cc5365566f3cd
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: e086cc89a24760bce0c4a45efd558dc47495bd04
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074126"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020767"
 ---
 # <a name="intro-to-datasets-across-workspaces-preview"></a>Einführung in die Verwendung von Datasets in mehreren Arbeitsbereichen (Vorschau)
 
@@ -23,7 +23,7 @@ Business Intelligence ist eine gemeinschaftliche Aktivität. Es ist wichtig, sta
 
 ![Freigegebenes Dataset auswählen](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
-In Power BI können Ersteller von Datasets mithilfe der [Erstellungsberechtigung](service-datasets-build-permissions.md#build-permissions-for-shared-datasets) steuern, wer Zugriff auf ihre Daten hat. Datasetersteller können Datasets auch *zertifizieren* oder *höher stufen*, damit andere sie finden können. Auf diese Weise können Berichtsautoren erkennen, welche Datasets hohe Qualität aufweisen und offiziell sind, und können diese Datasets für das Erstellen in Power BI verwenden. Mandantenadministratoren verfügen über eine neue Mandanteneinstellung zum [Steuern der Arbeitsbereiche übergreifenden Verwendung von Datasets](service-datasets-admin-across-workspaces.md).
+In Power BI können Ersteller von Datasets mithilfe der [Erstellungsberechtigung](service-datasets-build-permissions.md) steuern, wer Zugriff auf ihre Daten hat. Datasetersteller können Datasets auch *zertifizieren* oder *höher stufen*, damit andere sie finden können. Auf diese Weise können Berichtsautoren erkennen, welche Datasets hohe Qualität aufweisen und offiziell sind, und können diese Datasets für das Erstellen in Power BI verwenden. Mandantenadministratoren verfügen über eine neue Mandanteneinstellung zum [Steuern der Arbeitsbereiche übergreifenden Verwendung von Datasets](service-datasets-admin-across-workspaces.md).
 
 ## <a name="dataset-sharing-and-the-new-workspace-experience"></a>Freigeben von Datasets und die neue Arbeitsbereichsoberfläche
 
@@ -44,7 +44,7 @@ Wenn Sie in einem Arbeitsbereich oder einer App einen Bericht gefunden haben, de
 
 ## <a name="build-permission-for-datasets"></a>Erstellungsberechtigung für Datasets
 
-Wenn Sie ein Datasetersteller sind, können Sie mit dem Erstellungsberechtigungstyp festlegen, wer in Ihrer Organisation neuen Inhalt in Ihren Datasets erstellen kann. Personen mit Erstellungsberechtigung können darüber hinaus außerhalb von Power BI neue Inhalte auf dem Dataset aufbauen, z. B. Excel-Datenblätter mithilfe von „In Excel analysieren“, von XMLA und durch Exportieren. Weitere Informationen zur [Erstellungsberechtigung](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+Als Ersteller eines Datasets können Sie mit dem Berechtigungstyp „Erstellen“ festlegen, wer in Ihrer Organisation neue Inhalte in Ihren Datasets erstellen kann. Benutzer mit der Berechtigung „Erstellen“ können darüber hinaus außerhalb von Power BI neue Inhalte anhand des Datasets erstellen, z. B. Excel-Datenblätter mithilfe von „In Excel analysieren“, von XMLA und durch Exportieren. Weitere Informationen zur [Erstellungsberechtigung](service-datasets-build-permissions.md).
 
 ## <a name="promotion-and-certification"></a>Bewerbung und Zertifizierung
 
@@ -54,19 +54,17 @@ Wenn Sie beim Erstellen von Datasets ein Dataset schaffen, von dem andere profit
 
 Die spezifischen Features und Erfahrungen, die auf der Grundlage geteilter Datasets erstellt werden, werden gemäß ihren bestehenden Szenarien lizenziert. Beispiel:
 
-- Im Allgemeinen stehen die Ermittlung von freigegebenen Datasets und Herstellen von Verbindungen mit ihnen allen Benutzern zur Verfügung. Benutzer ohne Pro-Lizenz können jedoch nur Verbindungen mit Datasets herstellen, die sich in ihrem persönlichen Arbeitsbereich befinden.
-- Benutzer ohne eine Pro-Lizenz können Berichte und Dashboards, die auf einem freigegebenen Dataset basieren, nur nutzen, wenn beide Arbeitsbereiche (der Arbeitsbereich, der die Inhalte und der, der das Dataset enthält) in einer Premium-Kapazität gehostet sind.
-- In Power BI Desktop können Benutzer ohne Pro-Lizenz nur Datasets aus ihrem persönlichen Arbeitsbereich sehen.
+- Im Allgemeinen stehen das Ermitteln freigegebener Datasets und das Herstellen von Verbindungen allen Benutzern offen. Eine Premium-Lizenz ist dafür nicht erforderlich.
+- Benutzer ohne Pro-Lizenz können Datasets nur dann arbeitsbereichsübergreifend zum Erstellen von Berichten verwenden, wenn sich diese Datasets im persönlichen Arbeitsbereich der Benutzer („Mein Arbeitsbereich“) oder in einem Arbeitsbereich im Premium-Tarif befinden. Die gleiche Lizenzierungseinschränkung gilt unabhängig davon, ob sie Berichte in Power BI Desktop oder im Power BI-Dienst erstellen.
 - Zum Kopieren von Berichten zwischen Arbeitsbereichen ist eine Pro-Lizenz erforderlich.
 - Für das Kopieren von Berichten aus einer App ist ebenfalls eine Pro-Lizenz erforderlich, wie sie es bisher schon für organisationsbezogene Inhaltspakete erforderlich war.
 - Zum Höherstufen und Zertifizieren von Datasets ist eine Pro-Lizenz erforderlich.
 
 ## <a name="considerations-and-limitations"></a>Überlegungen und Einschränkungen
 
+- Als App-Herausgeber müssen Sie sicherstellen, dass Ihre Zielgruppe auf Datasets außerhalb des App-Arbeitsbereichs zugreifen kann. Andernfalls treten bei der Interaktion mit Ihrer App Probleme auf. Berichte werden ohne Zugriff auf das Dataset nicht geöffnet, und Dashboardkacheln werden gesperrt angezeigt. Außerdem können Benutzer die App nicht öffnen, wenn das erste Element in der Navigationsstruktur ein Bericht ohne Zugriff auf das Dataset ist.
 - Das Erstellen eines Berichts auf der Grundlage eines Datasets in einem anderen Arbeitsbereich setzt die neue Arbeitsbereichsoberfläche an beiden Enden voraus: Der Bericht muss sich in einer neuen Arbeitsbereichsoberfläche befinden, und das Dataset muss sich in einer neuen Arbeitsbereichsoberfläche befinden.
-- Angenommen, Sie erstellen einen Bericht in Arbeitsbereich A, der auf einem Dataset in Arbeitsbereich B basiert. Wenn Sie eine App für Arbeitsbereich A erstellen, können Sie diesen Bericht nur in die App für Arbeitsbereich A einschließen, wenn Sie auch Mitglied von Arbeitsbereich B sind.
 - In einem klassischen Arbeitsbereich zeigt die Oberfläche zur Datasetermittlung nur die Datasets in dem betreffenden Arbeitsbereich an.
-- Wenn Sie einer App einen Bericht hinzufügen möchten, der auf einem freigegebenen Dataset basiert, müssen Sie Mitglied des Dataset-Arbeitsbereichs sein. Dies ist ein bekanntes Problem.
 - Prinzipbedingt funktioniert „Im Web veröffentlichen“ nicht für Berichte, die auf einem freigegebenen Dataset basieren.
 - Wenn zwei Personen Mitglieder eines Arbeitsbereichs sind, der auf ein freigegebenes Dataset zugreift, ist es möglich, dass nur eine von ihnen das zugehörige Dataset im Arbeitsbereich sieht. Nur Personen, die mindestens Lesezugriff auf das Dataset besitzen, können das freigegebene Dataset sehen. 
 

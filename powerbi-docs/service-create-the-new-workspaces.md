@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 10/02/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5c50ec38da65573e085d9e27b0e31524256ac009
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 7d53acc0dc8c669026665347de9593fa1df84c62
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715523"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020182"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Erstellen der neuen Arbeitsbereiche in Power BI
 
@@ -68,7 +68,7 @@ Weitere Informationen finden Sie im Artikel [Neue Arbeitsbereiche](service-new-w
 
 ## <a name="workspace-contact-list"></a>Arbeitsbereichs-Kontaktliste
 
-Mit der neuen Arbeitsbereich-Kontaktliste können Sie festlegen, welche Benutzer Benachrichtigungen über Probleme im Arbeitsbereich erhalten. Standardmäßig wird jeder Benutzer oder jede Gruppe benachrichtigt, der/die als Arbeitsbereichsadministrator angegeben ist, aber Sie können die Liste anpassen. Benutzer oder Gruppen, die in der Kontaktliste aufgeführt sind, werden in der Benutzeroberfläche (UI) angezeigt, um Benutzern Hilfe zum Arbeitsbereich bieten zu können.
+Sie können festlegen, welche Benutzer Benachrichtigungen über im Arbeitsbereich auftretende Probleme erhalten. Standardmäßig werden alle Benutzer oder Gruppen benachrichtigt, die als Arbeitsbereichsadministrator angegeben sind. Aber Sie können die Liste anpassen, indem Sie sie zur *Kontaktliste* hinzufügen. Benutzer oder Gruppen in der Kontaktliste werden auf der Benutzeroberfläche angezeigt, um Benutzern Hilfe zum Arbeitsbereich bieten zu können.
 
 1. Greifen Sie auf eine von zwei Arten auf die neue Einstellung **Kontaktliste** zu:
 
@@ -79,6 +79,9 @@ Mit der neuen Arbeitsbereich-Kontaktliste können Sie festlegen, welche Benutzer
     ![Arbeitsbereichseinstellungen](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
 2. Akzeptieren Sie unter **Erweitert** > **Kontaktliste** den Standard, **Arbeitsbereichsadministratoren**, oder fügen Sie eine eigene Liste **Bestimmter Benutzer oder Gruppen** hinzu. 
+
+    ![Kontakte für den Arbeitsbereich](media/service-create-the-new-workspaces/power-bi-workspace-contacts.png)
+
 3. Wählen Sie **Speichern**.
 
 ## <a name="workspace-onedrive"></a>OneDrive für Arbeitsbereich
@@ -103,34 +106,15 @@ Power BI synchronisiert keine Berechtigungen von Benutzern oder Gruppen, für di
 
 ### <a name="access-the-workspace-onedrive-location"></a>Zugreifen auf den „OneDrive für Arbeitsbereich“-Speicherort
 
-Nachdem Sie den OneDrive-Speicherort konfiguriert haben, können Sie von einigen unterschiedlichen Stellen im Arbeitsbereich darauf zugreifen:
+Nachdem Sie den OneDrive-Speicherort konfiguriert haben, gelangen Sie zu ihm auf die gleiche Weise wie zu anderen Datenquellen im Power BI-Dienst.
 
-- Wählen Sie **Arbeitsbereiche** > *Arbeitsbereichsname*, das Auslassungspunktemenü ( **...** ) und **Dateien** aus. 
+1. Klicken Sie im linken Navigationsbereich auf **Daten abrufen** und dann im Feld **Dateien** auf **Abrufen**.
 
-    ![Speicherort der Arbeitsbereichsdateien](media/service-new-workspaces/power-bi-new-workspace-files.png)
+    ![Abrufen von Daten und Dateien](media/service-create-the-new-workspaces/power-bi-get-data-files.png)
 
-- Wählen Sie das Auslassungspunktemenü ( **...** ) in der rechten oberen Ecke des Arbeitsbereichs und **Dateien** aus.
-
-    ![Speicherort der Arbeitsbereichsdateien](media/service-create-the-new-workspaces/power-bi-new-workspace-files-ellipsis.png)
-    
-- In der Benutzeroberfläche **Daten abrufen** > **Dateien**. Der Eintrag **OneDrive – Business** ist Ihre eigene „OneDrive for Business“-Instanz. Die zweite OneDrive-Instanz ist die, die Sie hinzugefügt haben.
+1.  Der Eintrag **OneDrive – Business** ist Ihre eigene „OneDrive for Business“-Instanz. Die zweite OneDrive-Instanz ist die, die Sie hinzugefügt haben.
 
     ![Speicherort der Arbeitsbereichsdateien – Daten abrufen](media/service-create-the-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
-
-## <a name="add-content-to-your-workspace"></a>Hinzufügen von Inhalt zu Ihrem Arbeitsbereich
-
-Nachdem Sie einen neuen Arbeitsbereich erstellt haben, ist es Zeit, diesem Inhalte hinzuzufügen. Das Hinzufügen von Inhalt ist in den neuen und klassischen Arbeitsbereichen ähnlich. Verwenden Sie die Schaltfläche „Erstellen“, oder verwenden Sie „Daten abrufen“, um dem Arbeitsbereich Inhalte hinzuzufügen.
-
-1. Auf der **Willkommensseite** Ihres neuen Arbeitsbereichs können Sie Inhalte hinzufügen. 
-
-    ![Willkommensseite des neuen Arbeitsbereichs](media/service-create-the-new-workspaces/power-bi-workspace-get-data.png)
-
-1. Klicken Sie beispielsweise auf **Beispiele** > **Customer Profitability Sample**.
-
-> [!NOTE]
-> Sie können den neuen Arbeitsbereichen keine organisationsbezogenen Inhaltspakete oder Inhaltspakete von Drittanbietern hinzufügen. Apps sind für viele Inhaltspakete von Drittanbietern verfügbar, die Sie zuvor verwendet haben. Verwenden Sie klassische Arbeitsbereiche, wenn Sie weiterhin Inhaltspakete verwenden müssen. Inhaltspakete sind veraltet, darum ist es das Beste, stattdessen Apps zu verwenden.
-
-Wenn Sie Inhalte in der Inhaltsliste eines Arbeitsbereichs anzeigen, wird der Name des Arbeitsbereichs als Besitzer aufgeführt.
 
 ### <a name="connecting-to-third-party-services-in-new-workspaces"></a>Herstellen einer Verbindung mit Drittanbieterdiensten in neuen Arbeitsbereichen
 
@@ -142,9 +126,7 @@ In den neuen Arbeitsbereichen können Sie keine organisationsbezogenen Inhaltspa
 
 1. Weil Sie ein Administrator sind, sehen Sie in der Inhaltsliste des Arbeitsbereichs die neue Aktion **Zugriff**.
 
-    ![Inhaltsliste der Arbeitsbereiche](media/service-create-the-new-workspaces/power-bi-new-workspace-files-ellipsis.png)
-
-1. Klicken Sie auf **Zugriff**.
+    ![Inhaltsliste der Arbeitsbereiche](media/service-create-the-new-workspaces/power-bi-workspace-access-icon.png)
 
 1. Fügen Sie diesen Arbeitsbereichen Sicherheitsgruppen, Verteilerlisten, Office 365-Gruppen oder Einzelpersonen als Mitglieder, Mitwirkende oder Administratoren hinzu. Eine Erläuterung der verschiedenen Rollen finden Sie unter [Rollen in den neuen Arbeitsbereichen](service-new-workspaces.md#roles-in-the-new-workspaces).
 

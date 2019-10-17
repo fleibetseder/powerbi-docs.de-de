@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 62bec222a3f948612db63c386e10c0afe9762bb4
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: d83a57b2b1f8e2ca0887f2432f2de43647900b81
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721432"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020640"
 ---
 # <a name="remove-your-connection-to-a-power-bi-organizational-content-pack"></a>Entfernen der Verbindung mit einem organisationsbezogenen Power BI-Inhaltspaket
 
 > [!NOTE]
-> Sie können keine organisationsbezogenen Inhaltspakete in der Vorschauversion der neuen Arbeitsbereiche erstellen oder installieren. Führen Sie jetzt ein Upgrade durch, und wandeln Sie Ihre Inhaltspakete in Apps um, falls Sie dies noch nicht getan haben. Erfahren Sie [mehr über die neuen Arbeitsbereiche](service-create-the-new-workspaces.md).
+> Sie können in den neuen Arbeitsbereichsumgebungen keine organisationsbezogenen Inhaltspakete erstellen oder installieren. Führen Sie jetzt ein Upgrade durch, und wandeln Sie Ihre Inhaltspakete in Apps um, falls Sie dies noch nicht getan haben. Erfahren Sie [mehr über die neuen Arbeitsbereiche](service-create-the-new-workspaces.md).
 > 
 
 Ein Kollege hat ein Inhaltspaket erstellt. Sie haben es in AppSource gefunden und Ihrem Power BI-Arbeitsbereich hinzugefügt. Aber jetzt benötigen Sie es nicht mehr.  Wie entfernen Sie es?

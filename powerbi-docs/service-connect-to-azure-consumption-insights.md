@@ -7,50 +7,53 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 09/25/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 089f8c31a0b1eb11f6871268f2f848949be95d9b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: e51f936e44e8c8ee3442aedfb2389675774c0a47
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66222120"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020439"
 ---
 # <a name="connect-to-microsoft-azure-consumption-insights-with-power-bi"></a>Herstellen einer Verbindung mit Microsoft Azure Consumption Insights mithilfe von Power BI
-Untersuchen und überwachen Sie Ihre Microsoft Azure-Nutzungsdaten in Power BI mit dem Power BI-Inhaltspaket. Die Daten werden automatisch einmal täglich aktualisiert.
+Untersuchen und überwachen Sie mit dem Power BI-Inhaltspaket Ihre Microsoft Azure-Nutzungsdaten im Power BI-Dienst. Die Daten werden einmal täglich automatisch aktualisiert.
 
-Stellen Sie eine Verbindung mit dem [Microsoft Azure Consumption Insights-Inhaltspaket](https://app.powerbi.com/getdata/services/azureconsumption) für Power BI her.
+Stellen Sie eine Verbindung mit dem [Inhaltspaket „Microsoft Azure Consumption Insights“](https://app.powerbi.com/getdata/services/azureconsumption) für den Power BI-Dienst her.
+
+> [!NOTE]
+> Wenn Sie die Einrichtung stärker anpassen möchten, verwenden Sie den [Azure Consumption Insights-Connector](desktop-connect-azure-consumption-insights.md) in Power BI Desktop.
 
 ## <a name="how-to-connect"></a>Herstellen der Verbindung
-1. Wählen Sie unten im linken Navigationsbereich **Daten abrufen** aus.
+1. Klicken Sie im Power BI-Dienst unten im linken Navigationsbereich auf **Daten abrufen**.
    
-    ![](media/service-connect-to-azure-consumption-insights/getdata.png)
+    ![Daten abrufen](media/service-connect-to-azure-consumption-insights/getdata.png)
 2. Wählen Sie im Feld **Dienste** die Option **Abrufen**aus.
    
-   ![](media/service-connect-to-azure-consumption-insights/services.png)
-3. Wählen Sie **Microsoft Azure Consumption Insights** \> **jetzt**. 
+   ![Dienste abrufen](media/service-connect-to-azure-consumption-insights/services.png)
+3. Wählen Sie **Microsoft Azure Consumption Insights** \> **Jetzt anfordern** aus. 
    
-   ![](media/service-connect-to-azure-consumption-insights/mazureconsumption.png)
+   ![Jetzt anfordern](media/service-connect-to-azure-consumption-insights/mazureconsumption.png)
 4. Geben Sie die Anzahl der Monate, für die Sie Daten importieren möchten, und Ihre Azure Enterprise-Registrierungsnummer ein. Nachstehend finden Sie weitere Informationen zum [Suchen dieser Parameter](#FindingParams).
    
-    ![](media/service-connect-to-azure-consumption-insights/azureconsumptionparams.png)
-5. Geben Sie zum Herstellen der Verbindung Ihren Zugriffsschlüssel ein. Sie finden Ihre Schlüssel für die Registrierung im Azure EA-Portal. 
+    ![Herstellen einer Verbindung mit Microsoft Azure Consumption Insights](media/service-connect-to-azure-consumption-insights/azureconsumptionparams.png)
+5. Geben Sie zum Herstellen der Verbindung Ihren Zugriffsschlüssel ein. Sie finden Ihren Registrierungsschlüssel im Azure EA-Portal. 
    
-    ![](media/service-connect-to-azure-consumption-insights/msazureconsumptioncreds.png)
-6. Der Importvorgang startet automatisch. Nach Abschluss des Vorgangs werden Sie im Navigationsbereich ein neues Dashboard, Bericht und Modell angezeigt. Wählen Sie das Dashboard aus, um die importierten Daten anzuzeigen.
+    ![Microsoft Azure Consumption Insights: Schlüssel](media/service-connect-to-azure-consumption-insights/msazureconsumptioncreds.png)
+6. Der Importvorgang startet automatisch. Nach Abschluss des Vorgangs werden im Navigationsbereich ein neues Dashboard, ein Bericht und ein Modell angezeigt. Wählen Sie das Dashboard aus, um die importierten Daten anzuzeigen.
    
-   ![](media/service-connect-to-azure-consumption-insights/msazureconsumptiondashboard.png)
+   ![Microsoft Azure Consumption Insights-Dashboard](media/service-connect-to-azure-consumption-insights/msazureconsumptiondashboard.png)
 
 **Was nun?**
 
 * Versuchen Sie, am oberen Rand des Dashboards [im Q&A-Feld eine Frage zu stellen](consumer/end-user-q-and-a.md).
 * [Ändern Sie die Kacheln](service-dashboard-edit-tile.md) im Dashboard.
 * [Wählen Sie eine Kachel aus](consumer/end-user-tiles.md), um den zugrunde liegenden Bericht zu öffnen.
-* Während das Dataset aktualisieren täglich geplant ist, können Sie jedoch das Aktualisierungsintervall ändern oder aktualisieren sie bei Bedarf mit **jetzt aktualisieren**
+* Zwar ist Ihr Dataset auf tägliche Aktualisierung festgelegt, jedoch können Sie das Aktualisierungsintervall ändern oder über **Jetzt aktualisieren** nach Bedarf aktualisieren.
 
 ## <a name="whats-included"></a>Inhalt
-Das Microsoft Azure Consumption Insights-Inhaltspaket enthält monatliche Berichtsdaten für den Monatsbereich, die, den Sie beim Herstellen einer Verbindung angegeben haben. Der Bereich ist ein bewegliches Fenster, sodass die enthaltenen Datumsangaben aktualisiert werden, da das Dataset aktualisiert.
+Das Inhaltspaket Microsoft Azure Consumption Insights enthält monatliche Berichtsdaten für den Bereich der Monate, den Sie beim Herstellen der Verbindung angegeben haben. Der Bereich ist ein bewegliches Zeitfenster, sodass die enthaltenen Datumsangaben bei Aktualisierung des Datasets aktualisiert werden.
 
 ## <a name="system-requirements"></a>Systemanforderungen
 Das Inhaltspaket erfordert Zugriff auf die Enterprise-Features im Azure-Portal. 
@@ -58,30 +61,32 @@ Das Inhaltspaket erfordert Zugriff auf die Enterprise-Features im Azure-Portal.
 <a name="FindingParams"></a>
 
 ## <a name="finding-parameters"></a>Suchen von Parametern
-Power BI-berichterstellung steht für direkte EA, Partner und indirekte Kunden zur Verfügung, die Abrechnungsinformationen anzeigen können. Unten finden Sie Informationen zum Suchen aller Werte, die der Verbindung erforderlichen erwartet wird.
+Die Power BI-Berichterstellung steht für direkte EA-, Partner und indirekte Kunden zur Verfügung, die Abrechnungsinformationen anzeigen können. Im folgenden Abschnitt finden Sie Informationen, wie Sie die zum Herstellen der Verbindung erforderlichen Werte ermitteln können.
 
 **Anzahl Monate**
 
-* Die Anzahl der Monate (1 und 36) von Daten von heute, die Sie importieren möchten.
+* Die Anzahl der Monate (1-36), für die Sie Daten importieren möchten.
 
 **Registrierungsnummer**
 
-* Ihre Azure Enterprise-Registrierungsnummer, finden Sie unter den [Azure Enterprise Portal](https://ea.azure.com/) home-Bildschirm unter **Registrierungsdetails**.
+* Ihre Azure Enterprise-Registrierungsnummer, die sich auf dem Startbildschirm des [Azure Enterprise-Portals](https://ea.azure.com/) unter **Registrierungsdetails** befindet.
   
-    ![](media/service-connect-to-azure-consumption-insights/params2.png)
+    ![Registrierungsnummer](media/service-connect-to-azure-consumption-insights/params2.png)
 
 **Zugriffsschlüssel**
 
-* Sie finden den Zugriffsschlüssel im Azure Enterprise-Portal unter **Nutzung herunterladen** > **API-Zugriffsschlüssel**.
+* Ihren Schlüssel finden Sie im Azure Enterprise Portal unter **Nutzung herunterladen** > **API-Zugriffsschlüssel**.
   
-    ![](media/service-connect-to-azure-consumption-insights/creds2.png)
+    ![Zugriffsschlüssel](media/service-connect-to-azure-consumption-insights/creds2.png)
 
 **Zusätzliche Hilfe**
 
-* Für zusätzliche Hilfe bei der Einrichtung der Azure Enterprise Power BI-Paket, melden Sie sich beim Azure Enterprise Portal, und zeigen Sie die API-Hilfedatei unter **Hilfe**. Sie erhalten auch weitere Anweisungen unter **Berichte** -> **Nutzung herunterladen** -> **API-Zugriffsschlüssel**.
+* Um zusätzliche Hilfe zum Einrichten des Azure Enterprise Power BI-Pakets zu erhalten, melden Sie sich am Azure Enterprise-Portal an, um unter **Hilfe** die API-Hilfedatei anzuzeigen. Weitere Anweisungen finden Sie auch unter **Berichte** -> **Nutzung herunterladen** -> **API-Zugriffsschlüssel**.
+* Wenn Sie die Einrichtung stärker anpassen möchten, verwenden Sie den [Azure Consumption Insights-Connector](desktop-connect-azure-consumption-insights.md) in Power BI Desktop.
 
 ## <a name="next-steps"></a>Nächste Schritte
-[Erste Schritte mit Power BI](service-get-started.md)
+
+[Azure Consumption Insights-Connector](desktop-connect-azure-consumption-insights.md) in Power BI Desktop
 
 [Abrufen von Daten in Power BI](service-get-data.md)
 

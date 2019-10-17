@@ -10,16 +10,16 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: b9c308e0593ac207e323df5b78619f0279f95594
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: e54750d928918fd77c2bf93577cf1d3d0634ca97
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523435"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020625"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Einführung in organisationsbezogene Inhaltspakete in Power BI
 > [!NOTE]
-> Sie können keine organisationsbezogenen Inhaltspakete in der Vorschauversion der neuen Arbeitsbereiche erstellen oder installieren. Führen Sie jetzt ein Upgrade durch, und wandeln Sie Ihre Inhaltspakete in Apps um, falls Sie dies noch nicht getan haben. Erfahren Sie [mehr über die neuen Arbeitsbereiche](service-create-the-new-workspaces.md).
+> Sie können in den neuen Arbeitsbereichsumgebungen keine organisationsbezogenen Inhaltspakete erstellen oder installieren. Führen Sie jetzt ein Upgrade durch, und wandeln Sie Ihre Inhaltspakete in Apps um, falls Sie dies noch nicht getan haben. Erfahren Sie [mehr über die neuen Arbeitsbereiche](service-create-the-new-workspaces.md).
 > 
 
 Verteilen Sie regelmäßig Berichte per E-Mail an Ihr Team? Probieren Sie diese Alternative aus: Erstellen Sie ein Paket aus Ihren Dashboards, Berichten, Excel-Arbeitsmappen und Datasets, und veröffentlichen Sie sie für Ihr Team als *organisationsbezogenes Inhaltspaket*. Alle von Ihnen erstellten Inhaltspakete kann Ihr Team leicht in AppSource finden. Da Inhaltspakete Teil von Power BI sind, nutzen sie alle Features von Power BI, einschließlich interaktiver Untersuchung von Daten, neuer Visualisierungen, Fragen und Antworten, Integration mit anderen Datenquellen, Aktualisierung von Daten und mehr.

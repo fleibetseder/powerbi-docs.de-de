@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/06/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8d48214cffcc17da9c105f7277b721c03946d5c2
-ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.openlocfilehash: eb1940f7d5a4e809590b5b425b8005776040a5cc
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68961722"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020653"
 ---
 # <a name="tutorial-create-and-publish-a-power-bi-organizational-content-pack"></a>Tutorial: Erstellen und Veröffentlichen eines organisationsbezogenen Power BI-Inhaltspakets
 
@@ -26,7 +26,7 @@ Das Erstellen von Inhaltspaketen unterscheidet sich vom Freigeben von Dashboards
 Zum Erstellen eines organisationsbezogenen Inhaltspakets benötigen Sie und Ihre Kollegen ein [Power BI Pro-Konto](https://powerbi.microsoft.com/pricing).
 
 > [!NOTE]
-> Mit der Vorschauversion der neuen Arbeitsbereiche können Sie keine organisationsbezogenen Inhaltspakete erstellen oder installieren. Führen Sie jetzt ein Upgrade durch, und wandeln Sie Ihre Inhaltspakete in Apps um, falls Sie dies noch nicht getan haben. Erfahren Sie [mehr über die neuen Arbeitsbereiche](service-create-the-new-workspaces.md).
+> In den neuen Arbeitsbereichsumgebungen können Sie keine organisationsbezogenen Inhaltspakete erstellen oder installieren. Führen Sie jetzt ein Upgrade durch, und wandeln Sie Ihre Inhaltspakete in Apps um, falls Sie dies noch nicht getan haben. Erfahren Sie [mehr über die neuen Arbeitsbereiche](service-create-the-new-workspaces.md).
 
 ## <a name="create-and-publish-a-content-pack"></a>Erstellen und Veröffentlichen eines Inhaltspakets
 

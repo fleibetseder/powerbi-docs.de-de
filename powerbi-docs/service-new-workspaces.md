@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/05/2019
+ms.date: 09/30/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 32d43ca4b9681495e22db023604afeac31d15e7e
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 15f0ce3910261ed2902603ab7fb3f07f8b695d4c
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715212"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020690"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organisieren der Arbeit in den neuen Power BI-Arbeitsbereichen
 
@@ -79,7 +79,7 @@ Folgende Rollen sind verfügbar: Administrator, Mitglied, Mitwirkender und Betra
 
 > [!NOTE]
 >Benutzer müssen zusätzliche Kriterien erfüllen, um einen Bericht zu kopieren und einen Bericht in einem anderen Arbeitsbereich basierend auf einem Dataset in diesem Arbeitsbereich zu erstellen:
->- Sie benötigen eine Power BI Pro-Lizenz. 
+>- Sie benötigen eine Power BI Pro-Lizenz. Weitere Informationen finden Sie im nächsten Abschnitt zur [Lizenzierung](#licensing).
 >- Sie benötigen die Erstellungsberechtigung für das Dataset. Für Datasets in diesem Arbeitsbereich haben die Personen mit den Rollen „Administrator“, „Mitglied“ und „Mitwirkender“ über ihre Arbeitsbereichsrolle die Erstellungsberechtigung.
  
 ## <a name="licensing"></a>Lizenzierung
@@ -141,7 +141,7 @@ Einige Features funktionieren in den neuen Arbeitsbereichen anders als in den ak
 - Mitglieder, die eine erneute Freigabe durchführen oder nicht durchführen können: ersetzt durch die Rolle „Mitwirkender“.
 - Schreibgeschützte Arbeitsbereiche: Anstatt Benutzern schreibgeschützten Zugriff auf einen Arbeitsbereich zu gewähren, weisen Sie Benutzern die Rolle „Anzeigender Benutzer“ zu, die einen ähnlichen schreibgeschützten Zugriff auf den Inhalt eines Arbeitsbereichs umfasst.
 - Wenn sich der Arbeitsbereich in einer Power BI Premium-Kapazität befindet, können Benutzer ohne Power BI Pro-Lizenz auch dann auf den Arbeitsbereich zugreifen, wenn sie die Rolle „Anzeigender Benutzer“ haben.
-- Um Benutzern mit der Rolle „Anzeigender Benutzer“ den Export von Daten zu ermöglichen, stellen Sie sicher, dass sie die Berechtigung zum Erstellen für die Datasets im Arbeitsbereich haben. Erfahren Sie mehr über die [Erstellungsberechtigung für Datasets](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+- Um Benutzern mit der Rolle „Anzeigender Benutzer“ den Export von Daten zu ermöglichen, stellen Sie sicher, dass sie die Berechtigung zum Erstellen für die Datasets im Arbeitsbereich haben. Erfahren Sie mehr über die [Erstellungsberechtigung für Datasets](service-datasets-build-permissions.md).
 - Es gibt keine Schaltfläche **Arbeitsbereich verlassen**.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen

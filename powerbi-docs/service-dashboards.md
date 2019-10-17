@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/17/2019
+ms.date: 09/19/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7ee083de9800b55c4f7d998a113c1a63df112b7b
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 269b495a41f193c6a2ba02fa75f171c3b5789689
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624021"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72019610"
 ---
 # <a name="introduction-to-dashboards-for-power-bi-designers"></a>Einführung in Dashboards für Power BI-Designer
 
@@ -29,9 +29,6 @@ Dashboards sind ein reines Feature des Power BI-Diensts. Sie sind in Power BI De
 
 Die Visualisierungen auf dem Dashboard heißen *Kacheln*. Kacheln werden aus Berichten an ein Dashboard *angeheftet*. Wenn Sie noch nicht mit Power BI vertraut sind, können Sie sich mithilfe des Artikels [Grundlegende Konzepte für Designer im Power BI-Dienst](service-basic-concepts.md) eine gute Grundlage schaffen.
 
-> [!IMPORTANT]
-> Sie benötigen eine [Power BI Pro](service-free-vs-pro.md)-Lizenz, um Dashboards zu erstellen.
-
 Die Visualisierungen eines Dashboards stammen aus Berichten. Jeder Bericht basiert auf einem Dataset. Sie können sich ein Dashboard als Fenster zu den zugrunde liegenden Berichten und Datasets vorstellen. Wenn Sie eine Visualisierung auswählen, gelangen Sie zu dem Bericht (und damit dem Dataset), auf dem sie basiert.
 
 ![Diagramm, das die Beziehungen zwischen Dashboards, Berichten und Datasets anzeigt](media/service-dashboards/power-bi-diagram.png)
@@ -40,6 +37,13 @@ Die Visualisierungen eines Dashboards stammen aus Berichten. Jeder Bericht basie
 Mit Dashboards können Sie die Entwicklung Ihres Geschäfts verfolgen und die wichtigsten Metriken immer im Auge behalten. Jede Visualisierung eines Dashboards kann auf einem oder vielen Datasets, auf einem einzelnen Bericht oder zahllosen Berichten basieren. Ein Dashboard fasst lokale und Clouddaten zusammen und bietet eine konsolidierte Ansicht – unabhängig vom Speicherort der Daten.
 
 Ein Dashboard ist nicht nur schön anzusehen. Es ist ausgesprochen interaktiv, und die Kacheln aktualisieren sich automatisch, wenn sich die zugrunde liegenden Daten ändern.
+
+## <a name="who-can-create-a-dashboard"></a>Wer kann ein Dashboard erstellen?
+Die Fähigkeit zum Erstellen eines Dashboards ist eine Funktion für *Ersteller* und erfordert Bearbeitungsberechtigungen für den Bericht. Bearbeitungsberechtigungen sind für Berichtsersteller verfügbar sowie für diejenigen Kollegen, denen der Ersteller Zugriff gewährt. Beispiel: Wenn David einen Bericht im Arbeitsbereich „ABC“ erstellt und Sie diesem Arbeitsbereich als Mitglied hinzufügt, verfügen sowohl Sie als auch David über Bearbeitungsberechtigungen. Wenn andererseits ein Bericht direkt für Sie oder im Rahmen einer [Power BI-App](service-create-distribute-apps.md) freigegeben wurde, *nutzen* Sie den Bericht. Sie können ggf. keine Kacheln an ein Dashboard anheften. 
+
+> [!IMPORTANT]
+> Sie benötigen eine [Power BI Pro](service-free-vs-pro.md)-Lizenz, um in Arbeitsbereichen Dashboards zu erstellen. Sie können in „Mein Arbeitsbereich“ Dashboards ohne Power BI Pro-Lizenz erstellen.
+
 
 ## <a name="dashboards-versus-reports"></a>Vergleich: Dashboards und Berichte
 [Berichte](service-reports.md) und Dashboards sehen ähnlich aus, da sie beide Canvases sind, die mit Visualisierungen gefüllt sind. Es gibt jedoch wesentliche Unterschiede, wie in der folgenden Tabelle zu sehen ist.
