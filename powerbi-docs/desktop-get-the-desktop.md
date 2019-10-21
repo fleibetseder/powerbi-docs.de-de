@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/10/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: e7a96186fe68ed0d70de7a502e81da4f24f4d802
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 7c99b00427ffe742511c0029da79b6ebde02d916
+ms.sourcegitcommit: 83e1e162a037f352e542bd5c198a3c98f5db23c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70903570"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72511689"
 ---
 # <a name="get-power-bi-desktop"></a>Power BI Desktop erwerben
 In **Power BI Desktop** können Sie erweiterte Abfragen, Modelle und Berichte erstellen, die Daten visualisieren. Mit **Power BI Desktop** können Sie Datenmodelle entwerfen, Berichte erstellen und Ihre Arbeit durch die Veröffentlichung im Power BI-Dienst freigeben.  **Power BI Desktop** steht als kostenloser Download zur Verfügung.
@@ -105,28 +105,6 @@ Die folgende Liste zeigt die Mindestanforderungen zur Ausführung von **Power BI
 
 Wir möchten, dass Sie nur die besten Erfahrungen mit Power BI Desktop machen. Sollte einmal ein Problem mit Power BI Desktop auftreten, finden Sie in diesem Abschnitt Lösungen oder Vorschläge, wie sich diese Probleme beheben lassen. 
 
-### <a name="installing-power-bi-desktop-on-remote-machines"></a>Installieren von Power BI Desktop auf Remotecomputern
-
-Wenn Sie Power BI Desktop für Ihre Benutzer mit einem Tool bereitstellen, das eine Windows Installer-Datei (MSI-Datei) erfordert, können Sie die MSI-Datei aus der Power BI Desktop-Installer-EXE-Datei extrahieren. Hierfür können Sie Tools von Drittanbietern wie z. B. das WiX Toolset verbinden.
-
-> [!NOTE]
-> Da es sich um ein Drittanbieterprodukt handelt, könnten sich die Optionen des WiX Toolsets ohne vorherige Ankündigung ändern. Bitte entnehmen Sie der Dokumentation die aktuellen Informationen, und kontaktieren Sie die Benutzermailingliste, um Hilfe zu erhalten.
-
-* Laden Sie auf dem Computer, auf dem Sie den Power BI Desktop-Installer heruntergeladen haben, die neueste Version des WiX Toolsets unter https://wixtoolset.org/ von der WiX-Website herunter, und installieren Sie sie.
-* Öffnen Sie ein Befehlszeilenfenster als Administrator, und navigieren Sie zu dem Ordner, in dem Sie das WiX Toolset installiert haben.
-* Führen Sie den folgenden Befehl aus: 
-    
-    ```Dark.exe <path to Power BI Desktop installer> -x <output folder>```
-
-    Beispiel:
-
-    ``` Dark.exe C:\PBIDesktop_x64.exe -x C:\output```
-
-* Der Ausgabeordner enthält einen Ordner mit dem Namen *AttachedContainer*, der die MSI-Dateien enthält.
-
-
-
-
 ### <a name="using-command-line-options-during-installation"></a>Verwenden von Befehlszeilenoptionen bei der Installation 
 
 Bei der Installation von Power BI Desktop können Sie Eigenschaften und Optionen mit Befehlszeilenoptionen festlegen. Dies ist besonders nützlich für Administratoren, die die Installation von Power BI Desktop in Organisationen verwalten oder unterstützen. Die folgenden Optionen können für MSI- und EXE-Installationen verwendet werden. 
@@ -146,7 +124,6 @@ Bei der Installation von Power BI Desktop können Sie Eigenschaften und Optione
 
 Sie können auch die folgenden **Syntaxparameter** verwenden, die mit der Syntax „PROPERTY=VALUE“ angegeben werden:
 
-
 |Parameter  |Bedeutung  |
 |---------|---------|
 |ACCEPT_EULA     |Erfordert den Wert 1 zum automatischen Akzeptieren der EULA.         |
@@ -156,12 +133,28 @@ Sie können auch die folgenden **Syntaxparameter** verwenden, die mit der Syntax
 |LANGUAGE     |Gebietsschemacode, z. B. „en-US“, „de-DE“, „pr-BR“, um die Standardsprache der Anwendung zu erzwingen. Wenn keine Sprache angegeben ist, wird Power BI Desktop in der Sprache des Windows-Betriebssystems angezeigt. Dies kann vom Benutzer im Dialogfeld „Optionen“ geändert werden.         |
 |REG_SHOWLEADGENDIALOG     |Der Wert 0 deaktiviert die Anzeige des Dialogfelds, das angezeigt wird, bevor Sie sich bei Power BI Desktop angemeldet haben.         |
 
-
-
-
 Beispielsweise könnten Sie Power BI Desktop mit der folgenden Syntax ohne Benutzeroberfläche unter Verwendung der Sprache „Deutsch“ installieren: 
 
 ```“-quiet LANG=de-DE ACCEPT_EULA=1”```
+
+### <a name="installing-power-bi-desktop-on-remote-machines"></a>Installieren von Power BI Desktop auf Remotecomputern
+
+Wenn Sie Power BI Desktop für Ihre Benutzer mit einem Tool bereitstellen, das eine Windows Installer-Datei (MSI-Datei) erfordert, können Sie die MSI-Datei aus der Power BI Desktop-Installer-EXE-Datei extrahieren. Hierfür können Sie Tools von Drittanbietern wie z. B. das WiX Toolset verbinden.
+
+> [!NOTE]
+> Da es sich um ein Drittanbieterprodukt handelt, könnten sich die Optionen des WiX Toolsets ohne vorherige Ankündigung ändern. Bitte entnehmen Sie der Dokumentation die aktuellen Informationen, und kontaktieren Sie die Benutzermailingliste, um Hilfe zu erhalten.
+
+* Laden Sie auf dem Computer, auf dem Sie den Power BI Desktop-Installer heruntergeladen haben, die neueste Version des WiX Toolsets unter https://wixtoolset.org/ von der WiX-Website herunter, und installieren Sie sie.
+* Öffnen Sie ein Befehlszeilenfenster als Administrator, und navigieren Sie zu dem Ordner, in dem Sie das WiX Toolset installiert haben.
+* Führen Sie den folgenden Befehl aus: 
+    
+    ```Dark.exe <path to Power BI Desktop installer> -x <output folder>```
+
+    Beispiel:
+
+    ``` Dark.exe C:\PBIDesktop_x64.exe -x C:\output```
+
+* Der Ausgabeordner enthält einen Ordner mit dem Namen *AttachedContainer*, der die MSI-Dateien enthält.
 
 
 ### <a name="issues-when-using-previous-releases-of-power-bi-desktop"></a>Probleme bei der Verwendung von früheren Versionen von Power BI Desktop

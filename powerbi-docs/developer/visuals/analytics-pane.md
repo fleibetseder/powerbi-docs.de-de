@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 06/18/2019
-ms.openlocfilehash: 67f9bc793b78d2019875b8165ea71fa712fd9d23
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 0782ea63a9833c220e4d96886d79d42af643e111
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71193681"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307597"
 ---
 # <a name="the-analytics-pane-in-power-bi-visuals"></a>Der Bereich „Analyse“ in Power BI-Visuals
 
@@ -26,7 +26,7 @@ In diesem Artikel wird erläutert, wie Power BI-Visuals mithilfe von Version 2
 
 ## <a name="manage-the-analytics-pane"></a>Verwalten des Bereichs „Analyse“
 
-Genauso wie Sie Eigenschaften im [Bereich **Format**](https://docs.microsoft.com/power-bi/developer/custom-visual-develop-tutorial-format-options) verwalten können, können Sie auch den Bereich **Analyse** verwalten, indem Sie ein Objekt in der Datei *capabilities.json* des Visuals definieren. 
+Genauso wie Sie Eigenschaften im [Bereich **Format**](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial-format-options) verwalten können, können Sie auch den Bereich **Analyse** verwalten, indem Sie ein Objekt in der Datei *capabilities.json* des Visuals definieren.
 
 Es gelten die folgenden Unterschiede für den Bereich **Analyse**:
 

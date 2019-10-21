@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 05/9/2019
-ms.openlocfilehash: 2203e3a9abddb52902c09fdc98665ba013f604ee
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: 84afdf7072241533bf1e70d6a2a49d18c3da1d8f
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71946216"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307825"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>So lassen Sie sich ein Power BI-Visual zertifizieren
 
@@ -31,7 +31,7 @@ Dieser Zertifizierungsprozess ist ein optionaler Prozess, und es obliegt den Ent
 
 **Nicht zertifizierte Power BI-Visuals** sind nicht zwangsläufig unsicher. Einige Visuals sind nicht zertifiziert, da sie mindestens einem Punkt der [Zertifizierungsanforderungen](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements) nicht entsprechen. Beispiele hierfür sind die Herstellung einer Verbindung zu einem externen Dienst wie Kartenvisuals oder Visuals, die kommerzielle Bibliotheken verwenden.
 
-Sind Sie Webentwickler und möchten eigene Visualisierungen erstellen und zu  **[Microsoft AppSource](https://appsource.microsoft.com)** hinzufügen? Weitere Informationen finden Sie unter  **[Entwickeln eines benutzerdefinierten Visuals für Power BI](developer/custom-visual-develop-tutorial.md)** .
+Sind Sie Webentwickler und möchten eigene Visualisierungen erstellen und zu  **[Microsoft AppSource](https://appsource.microsoft.com)** hinzufügen? Weitere Informationen finden Sie unter  **[Entwickeln eines benutzerdefinierten Visuals für Power BI](developer/visuals/custom-visual-develop-tutorial.md)** .
 
 ## <a name="removal-of-power-bi-certified-power-bi-visuals"></a>Entfernen von Power BI-Visuals mit Power BI-Zertifizierung
 
@@ -196,7 +196,7 @@ Weitere Informationen zu Visuals finden Sie in den [häufig gestellten Fragen zu
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-* [Entwickeln eines benutzerdefinierten Visuals für Power BI](developer/custom-visual-develop-tutorial.md)
+* [Entwickeln eines benutzerdefinierten Visuals für Power BI](developer/visuals/custom-visual-develop-tutorial.md)
 * [Wiedergabeliste benutzerdefinierter visueller Elemente von Microsoft auf YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
 * [Visualisierungen in Power BI](visuals/power-bi-report-visualizations.md)  
 * [Benutzerdefinierte Visualisierungen in Power BI](power-bi-custom-visuals.md)  

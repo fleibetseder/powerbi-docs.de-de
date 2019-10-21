@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 03/25/2019
-ms.openlocfilehash: fd49c69a14d3dac6b1a045f6aba407ec7aac0deb
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: cc180c2e9d5275172ad9da75c502ef53d9d7ee66
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61269445"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307625"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Welche Möglichkeiten bietet die Power BI-API für Entwickler?
 
@@ -57,7 +57,7 @@ Sie können die Power BI-API zum [Übertragen von Daten in ein Dataset mithilfe 
 ## <a name="next-steps"></a>Nächste Schritte
 
 * [Übertragen von Daten in ein Dataset per Push](walkthrough-push-data.md)
-* [Entwickeln eines benutzerdefinierten Visuals für Power BI](custom-visual-develop-tutorial.md)
+* [Entwickeln eines benutzerdefinierten Visuals für Power BI](visuals/custom-visual-develop-tutorial.md)
 * [Referenz für Power BI-REST-API](rest-api-reference.md)
 * [Power BI-REST-APIs](https://docs.microsoft.com/rest/api/power-bi/)
 
