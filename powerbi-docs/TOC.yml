@@ -443,7 +443,7 @@
           href: service-tutorial-use-cognitive-services.md
         - name: Machine Learning-Integration
           href: service-tutorial-invoke-machine-learning-model.md
-        - name: Erstellen eines Machine Learning-Modells (Vorschau)
+        - name: Erstellen eines Machine Learning-Modells
           href: service-tutorial-build-machine-learning-model.md
         - name: Aktualisieren von Daten über SQL Server
           href: service-gateway-sql-tutorial.md
@@ -717,7 +717,7 @@
               href: service-machine-learning-integration.md
             - name: Verwenden von Cognitive Services in Power BI
               href: service-cognitive-services.md
-            - name: Automatisiertes Machine Learning in Power BI (Vorschauversion)
+            - name: Automatisiertes Machine Learning in Power BI
               href: service-machine-learning-automated.md
         - name: Datenherkunft
           href: service-data-lineage.md
@@ -1161,6 +1161,8 @@
       href: guidance/import-modeling-data-reduction.md
     - name: Vergleich zwischen der DIVIDE-Funktion und dem Divisionsoperator (/)
       href: guidance/dax-divide-function-operator.md
+    - name: Die Bedeutung von Query Folding
+      href: guidance/power-query-folding.md
     - name: Angemessene Verwendung von Fehlerfunktionen
       href: guidance/dax-error-functions.md
     - name: Bewährte Methoden für Dataflows
