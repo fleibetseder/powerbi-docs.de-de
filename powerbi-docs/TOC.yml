@@ -211,8 +211,6 @@
               href: desktop-calculated-tables.md
             - name: Measures in Power BI Desktop
               href: desktop-measures.md
-            - name: Bearbeiten von Q&A des linguistischen Schemas
-              href: power-bi-q-and-a-linguistic-schema.md
             - name: Importieren und Anzeigen von KPIs (Vorschau)
               href: desktop-import-and-display-kpis.md
         - name: Erstellen von Berichten
@@ -227,8 +225,6 @@
               href: desktop-tooltips.md
             - name: Exportieren in eine PDF-Datei und Drucken von Berichten
               href: desktop-export-to-pdf.md
-            - name: Q&A in Power BI Desktop
-              href: desktop-qna-in-reports.md
             - name: Analysebereich in Power BI Desktop
               href: desktop-analytics-pane.md
             - name: Verwenden von Einblicken zur Erklärung von Anstiegen und Rückgängen
