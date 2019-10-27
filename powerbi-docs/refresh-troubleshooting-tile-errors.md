@@ -7,16 +7,16 @@ ms.reviewer: kayu
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 12/06/2018
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: c1df7e6293db703922f37c3f28546bb296d1a46a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: f6becb175b8779588ab8d203bb02256945c71ee6
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66050995"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72544289"
 ---
 # <a name="troubleshooting-tile-errors"></a>Problembehandlung für Kachelfehler
 Im Folgenden sind häufige Fehler, die Ihnen möglicherweise in Verbindung mit Kacheln begegnen, gemeinsam mit den entsprechenden Erklärungen aufgeführt.
@@ -65,16 +65,16 @@ Das Feld wurde möglicherweise gelöscht oder umbenannt. Entfernen Sie das fehle
 
 Dies ist normalerweise ein vorübergehendes Problem. Wenn Sie es später erneut versuchen und diese Meldung weiterhin angezeigt wird, wenden Sie sich an den Support.
 
-**Kacheln weiterhin ungefilterte Daten angezeigt wird, nachdem Sie die einmalige Anmeldung (SSO) aktivieren.**
+**Nach dem Aktivieren der einmaligen Anmeldung (Single Sign-On, SSO) zeigen Kacheln weiterhin ungefilterte Daten an.**
 
-Dies kann vorkommen, wenn das zugrunde liegende Dataset für die Verwendung von DirectQuery-Modus oder einer Liveverbindung mit Analysis Services über ein lokales datengateway konfiguriert ist. In diesem Fall weiterhin die Kacheln zeigen die ungefilterten Daten nach dem Aktivieren von SSO für die Datenquelle, bis der nächsten Aktualisierung der dashboardkachel fällig ist. Bei der nächsten Aktualisierung der Kachel "verwendet Power BI-SSO-Konfiguration, und die Kacheln zeigen die Daten, die entsprechend der Benutzeridentität gefiltert. 
+Dies kann der Fall sein, wenn das zugrunde liegende Dataset so konfiguriert ist, dass der DirectQuery-Modus oder eine Liveverbindung zu Analysis Services über ein lokales Datengateway verwendet wird. In diesem Fall zeigen die Kacheln weiterhin die ungefilterten Daten an, nachdem SSO für die Datenquelle aktiviert wurde, bis die nächste Aktualisierung der Kachel ansteht. Bei der nächsten Kachelaktualisierung verwendet Power BI SSO gemäß der Konfiguration, und die Kacheln zeigen die gefilterten Daten entsprechend der Benutzeridentität an. 
 
-Wenn Sie die gefilterten Daten sofort sehen möchten, können Sie eine kachelaktualisierung erzwingen, indem Sie auf die Auslassungspunkte (...) in der oberen rechten Ecke des ein Dashboard und **dashboardkacheln aktualisieren**.
+Sie können eine Kachelaktualisierung auch erzwingen, wenn Sie die gefilterten Daten sofort anzeigen möchten, indem Sie die Auslassungspunkte (...) oben rechts in einem Dashboard auswählen und dann **Dashboardkacheln aktualisieren** auswählen.
 
-Außerdem können Sie als Besitzer eines Datasets Ändern der aktualisierungshäufigkeit der Kachel und legen Sie es auf 15 Minuten, um die Aktualisierung der dashboardkachel zu beschleunigen. Wählen Sie das Zahnradsymbol in der Ecke des Power BI-Dienst, und wählen Sie dann **Einstellungen**. Auf der **Einstellungen** Seite die **Datasets** Registerkarte. Erweitern Sie **geplante cacheaktualisierung** , und ändern Sie **Aktualisierungshäufigkeit**. Stellen Sie sicher, dass Sie die Konfiguration auf die ursprünglichen aktualisierungshäufigkeit zurücksetzen, nach Power BI mit der nächsten Aktualisierung der dashboardkachel führt.
+Als Besitzer des Datasets können Sie auch die Aktualisierungshäufigkeit der Kachel ändern und diese auf 15 Minuten festlegen, um die Kachelaktualisierung zu beschleunigen. Wählen Sie rechts oben im Power BI-Dienst das Zahnradsymbol und dann **Einstellungen** aus. Klicken Sie auf der Seite **Einstellungen** auf die Registerkarte **Datasets**. Erweitern Sie **Geplante Cache Aktualisierung**, und ändern Sie die **Aktualisierungshäufigkeit**. Stellen Sie sicher, dass Sie die Konfiguration auf die ursprüngliche Aktualisierungshäufigkeit zurücksetzen, nachdem Power BI die nächste Kachelaktualisierung durchgeführt hat.
 
 > [!NOTE]
-> Die **geplante cacheaktualisierung** Abschnitt ist nur für Datasets in DirectQuery/LiveConnection Modus verfügbar. Datasets im Importmodus ist keine separate kachelaktualisierung erforderlich, weil die Kacheln automatisch, während die nächste geplante datenaktualisierung aktualisiert werden.
+> Der Abschnitt **Geplante Cacheaktualisierung** ist nur für Datasets im DirectQuery-/Liveverbindungsmodus verfügbar. Für Datasets im Importmodus ist keine separate Kachelaktualisierung erforderlich, da die Kacheln während der nächsten geplanten Datenaktualisierung automatisch aktualisiert werden.
 
 ## <a name="contact-support"></a>Support kontaktieren
 Wenn weiterhin Probleme auftreten, wenden Sie sich an den [Support](https://support.powerbi.com), um dem Problem auf den Grund zu gehen.

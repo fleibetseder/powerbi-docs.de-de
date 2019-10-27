@@ -10,19 +10,22 @@ ms.topic: conceptual
 ms.date: 06/11/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fe1d2a6f086831a4ae6bd78d8669dce9459bffad
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: b7a4021999a39d88b78d31aaa55d7f9c08a93d8e
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839865"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72544136"
 ---
 # <a name="basic-area-chart"></a>Grundlegendes Flächendiagramm
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Das grundlegende Flächendiagramm (auch bekannt als überlappendes Flächendiagramm) basiert auf dem Liniendiagramm. Der Bereich zwischen der Achse und der Zeile ist mit Farben gefüllt, um Volumen anzuzeigen. 
 
 Flächendiagramme betonen das Ausmaß von Veränderungen im Laufe der Zeit und können dazu genutzt werden, um den gesamten Wert über einen Trend hinweg hervorzuheben. Beispielsweise können Daten, die den Gewinn im Zeitverlauf darstellen, in ein Flächendiagramm gezeichnet werden, um den Gesamtgewinn zu verdeutlichen.
 
-![](media/power-bi-visualization-basic-area-chart/powerbi-area-chartnew.png)
+![](media/power-bi-visualization-basic-area-chart/power-bi-chart-example.png)
 
 ## <a name="when-to-use-a-basic-area-chart"></a>Wann ein einfaches Flächendiagramm verwendet werden sollte
 Einfache Flächendiagramme sind gut geeignet,
@@ -31,29 +34,32 @@ Einfache Flächendiagramme sind gut geeignet,
 * für individuelle Reihen, die einen physisch zählbaren Satz darstellen
 
 ### <a name="prerequisites"></a>Voraussetzungen
- - Power BI-Dienst
- - Retail Analysis sample
+In diesem Tutorial wird die [PBIX-Datei mit einem Analysebeispiel für den Einzelhandel](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) verwendet.
 
-Melden Sie sich bei Power BI an, wählen Sie **Daten abrufen\> Beispiele \> Analysebeispiel für Einzelhandel > Verbinden** aus, und wählen Sie **Zum Dashboard wechseln**. 
+1. Wählen Sie im oberen linken Bereich der Menüleiste **Datei** > **Öffnen** aus.
+   
+2. Suchen Sie Ihre Kopie der **PBIX-Datei mit einem Analysebeispiel für den Einzelhandel**.
+
+1. Öffnen Sie die **PBIX-Datei mit einem Analysebeispiel für den Einzelhandel** in der Berichtsansicht ![Screenshot des Berichtsansichtssymbols.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Auswählen ![Screenshot der gelben Registerkarte.,](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) um eine neue Seite hinzuzufügen.
+
 
 ## <a name="create-a-basic-area-chart"></a>Erstellen eines grundlegenden Flächendiagramms
  
 
-1. Wählen Sie im Dashboard „Analysebeispiel für Einzelhandel“ die Kachel **Läden gesamt** aus, um den Bericht „Analysebeispiel für Einzelhandel“ zu öffnen.
-2. Klicken Sie auf **Bearbeiten**, um den Bericht in der Bearbeitungsansicht zu öffnen.
-3. Fügen Sie eine neue Berichtsseite hinzu, indem Sie auf das gelbe Pluszeichen (+) am unteren Rand des Berichts klicken.
-4. Erstellen Sie ein Flächendiagramm, das den Absatz des laufenden Jahres und den des Vorjahres pro Monat anzeigt.
+1. Diese Schritte unterstützen Sie beim Erstellen eines Flächendiagramms, das den Absatz des laufenden Jahres und den des Vorjahres pro Monat anzeigt.
    
    a. Wählen Sie im Bereich „Felder“ die Option **Sales \> Last Year Sales** (Verkäufe > Verkäufe im Vorjahr) und **This Year Sales > Wert** (Verkäufe in diesem Jahr) aus.
 
-   ![](media/power-bi-visualization-basic-area-chart/power-bi-bar-chart.png)
+   ![Flächendiagramm mit Datenwerten](media/power-bi-visualization-basic-area-chart/power-bi-bar-chart.png)
 
    b.  Konvertieren Sie das Diagramm in ein grundlegendes Flächendiagramm, indem Sie im Bereich „Visualisierungen“ das Symbol „Flächendiagramm“ auswählen.
 
-   ![](media/power-bi-visualization-basic-area-chart/convertchart.png)
+   ![Flächendiagrammsymbol](media/power-bi-visualization-basic-area-chart/convertchart.png)
    
-   c.  Wählen Sie **Zeit \> Monat**, um es dem Bereich **Achse** hinzuzufügen.   
-   ![](media/power-bi-visualization-basic-area-chart/powerbi-area-chartnew.png)
+   c.  Wählen Sie **Zeit \> FiscalMonth** aus, um die Angaben ebenfalls dem Bereich **Achse** hinzuzufügen.   
+   ![Achsenwerte des Flächendiagramms](media/power-bi-visualization-basic-area-chart/powerbi-area-chartnew.png)
    
    d.  Wählen Sie die Auslassungspunkte in der oberen, rechten Ecke der Visualisierung aus, und wählen Sie **Nach FiscalMonth sortieren**, um das Diagramm sortiert nach Monaten anzuzeigen. Wenn Sie die Sortierreihenfolge ändern möchten, klicken Sie erneut auf die Auslassungspunkte und anschließend auf **Aufsteigend sortieren** oder **Absteigend sortieren**.
 
@@ -62,14 +68,11 @@ Informationen zur Verwendung des Filterbereichs finden Sie unter [Hinzufügen ei
 
 Um einen bestimmten Bereich im Diagramm hervorheben, wählen Sie diesen Bereich oder seinen oberen Rahmen aus.  Im Gegensatz zu anderen Visualisierungstypen erfolgt durch Hervorheben eines grundlegenden Flächendiagramms keine Kreuzfilterung der anderen Visualisierungen auf der Berichtsseite (sofern auf derselben Seite weitere Visualisierungen vorhanden sind). Flächendiagramme sind jedoch ein Ziel für das Kreuzfiltern, das von anderen Visualisierungen auf der Berichtsseite ausgelöst wird. 
 
-1. Probieren Sie es aus, indem Sie Ihr Flächendiagramm auswählen und in eine andere Berichtsseite kopieren (mit STRG+C und STRG+V).
-2. Wählen Sie eine der schattierten Flächen aus, und wählen Sie dann die andere schattierte Fläche aus. Es sollten keine Auswirkungen auf die anderen Visualisierungen auf der Seite zu sehen sein.
+1. Probieren Sie es aus, indem Sie Ihr Flächendiagramm auswählen und auf die Berichtsseite **New Store Analysis** kopieren (mit STRG+C und STRG+V).
+2. Wählen Sie eine der schattierten Flächen des Flächendiagramms aus, und wählen Sie dann die andere schattierte Fläche aus. Es sollten keine Auswirkungen auf die anderen Visualisierungen auf der Seite zu sehen sein.
+1. Wählen Sie nun ein Element aus. Beachten Sie die Auswirkungen auf das Flächendiagramm. Es wird kreuzgefiltert.
 
-    ![Die ausgewählte Visualisierung für die Verkäufe dieses Jahres als Flächendiagramm](media/power-bi-visualization-basic-area-chart/power-bi-select-area.png)
-
-3. Wählen Sie nun ein Element einer anderen Visualisierung auf der Seite aus, z.B. eine Säule eines Säulendiagramms oder einen Monat in einem Liniendiagramm. Beachten Sie die Auswirkungen auf das Flächendiagramm. Es wird gefiltert.  
-
-    ![Die ausgewählte Säule „Ft Oglethorpe“](media/power-bi-visualization-basic-area-chart/power-bi-filter.png) 
+    ![Filterbeispiele](media/power-bi-visualization-basic-area-chart/power-bi-area-chart-filters.gif) 
 
 Weitere Informationen finden Sie unter [Interaktionen mit Visuals in einem Power BI-Bericht](../service-reports-visual-interactions.md)
 

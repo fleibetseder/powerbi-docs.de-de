@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/19/2019
+ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 417238550f68a1c244bab33b8343712f02242eae
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: 56583c796a8f6e32bed67629dee4fe3bea677bee
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71945278"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307838"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datenquellen in Power BI Desktop
 Mit Power BI Desktop können Sie Verbindungen mit Daten aus vielen verschiedenen Quellen herstellen. Eine vollständige Liste der verfügbaren Datenquellen wird am unteren Rand dieser Seite angezeigt.
@@ -225,6 +225,201 @@ Wählen Sie bei der Eingabe der URL oder Ressourcenverbindungsinformationen **OK
 Sie können die Daten entweder durch Auswählen der Schaltfläche **Laden** laden, die sich am unteren Rand des Bereichs **Navigator** befindet, oder Sie bearbeiten die Abfrage vor dem Laden der Daten, indem Sie die Schaltfläche **Bearbeiten** auswählen.
 
 Das ist alles, was zum Herstellen der Verbindung mit Datenquellen im Power BI-Designer erforderlich ist. Sie können eine Verbindung mit Daten aus der wachsenden Liste von Datenquellen herstellen, die wir kontinuierlich erweitern.
+
+## <a name="using-pbids-files-to-get-data"></a>Verwenden von PBIDS-Dateien zum Abrufen von Daten
+
+PBIDS-Dateien sind Power BI Desktop-Dateien, die eine bestimmte Struktur aufweisen und über eine PBIDS-Erweiterung verfügen, um anzugeben, dass es sich um eine Power BI-Datenquellendatei handelt.
+
+Sie können eine PBIDS-Datei erstellen, um die Funktion **Daten abrufen** für Berichtersteller in Ihrem Unternehmen zu optimieren. Es wird empfohlen, dass Administratoren diese Dateien für häufig verwendete Verbindungen erstellen, um die Verwendung von PBIDS-Dateien für neue Berichtsautoren zu ermöglichen. 
+
+Wenn ein Autor eine PBIDS-Datei öffnet, wird Power BI Desktop geöffnet und fordert den Benutzer zur Eingabe von Anmeldeinformationen auf, um sich zu authentifizieren und eine Verbindung mit der Datenquelle herzustellen, die in der Datei angegeben ist. Das Dialogfeld „Navigation“ wird angezeigt, und der Benutzer muss die Tabellen aus dieser Datenquelle auswählen, die in das Modell geladen werden sollen. Benutzer müssen möglicherweise auch die Datenbanken auswählen, wenn sie nicht in der PBIDS-Datei angegeben werden. 
+
+Von diesem Zeitpunkt an kann der Benutzer mit dem Erstellen von Visualisierungen beginnen oder *Recent sourcesU erneut besuchen, um einen neuen Satz von Tabellen in das Modell zu laden. 
+
+Zurzeit unterstützen PBIDS-Dateien nur eine einzelne Datenquelle in einer Datei. Wenn Sie mehr als eine Datenquelle angeben, tritt ein Fehler auf. 
+
+Um die PBIDS-Datei zu erstellen, müssen Administratoren die erforderlichen Eingaben für eine einzelne Verbindung angeben. Sie können den Modus der Verbindung entweder als **DirectQuery** oder als **Import** angeben. Wenn **Modus** in der Datei fehlt/NULL ist, wird der Benutzer, der die Datei in Power BI Desktop öffnet, aufgefordert, „DirectQuery“ oder „Import“ auszuwählen. 
+
+### <a name="pbids-file-examples"></a>Beispiele für PBIDS-Dateien
+
+Dieser Abschnitt enthält einige Beispiele aus häufig verwendeten Datenquellen. Der PBIDS-Dateityp unterstützt bis auf zwei Ausnahmen nur Datenverbindungen, die auch in Power BI Desktop unterstützt werden: Live Connect und leere Abfrage. 
+
+Die PBIDS-Datei enthält *keine* Authentifizierungsinformationen und keine Tabellen- und Schemainformationen.  
+
+Im Folgenden finden Sie einige gängige Beispiele für PBIDS-Dateien, die aber nicht vollständig oder umfassend sind. Für andere Datenquellen finden Sie weitere Informationen im Thema [DSR-Format (Data Source Reference ) für Protokoll- und Adressinformationen](https://docs.microsoft.com/azure/data-catalog/data-catalog-dsr#data-source-reference-specification).
+
+Diese Beispiele dienen nur als Übersicht, sind nicht umfassend und enthalten nicht alle unterstützten Connectors im DSR-Format. Administratoren oder Unternehmen können ihre eigenen Datenquellen anhand dieser Beispiele als Orientierungshilfe erstellen, aus denen sie ihre eigenen Datenquelldateien erstellen und unterstützen können. 
+
+
+**Azure AS**
+```
+{ 
+    "version": "0.1", 
+    "connections": [ 
+    { 
+        "details": { 
+        "protocol": "analysis-services", 
+        "address": { 
+            "server": "server-here" 
+        }, 
+        } 
+    } 
+    ] 
+}
+```
+
+
+ 
+
+**Ordner**
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "folder", 
+        "address": { 
+            "path": "folder-path-here" 
+        } 
+      } 
+    } 
+  ] 
+} 
+```
+
+**OData**
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "odata", 
+        "address": { 
+            "url": "URL-here" 
+        } 
+      } 
+    } 
+  ] 
+} 
+```
+ 
+**SAP BW**
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "sap-bw-olap", 
+        "address": { 
+          "server": "server-name-here", 
+          "systemNumber": "system-number-here", 
+          "clientId": "client-id-here" 
+        }, 
+      } 
+    } 
+  ] 
+} 
+```
+ 
+**SAP Hana**
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "sap-hana-sql", 
+        "address": { 
+          "server": "server-name-here:port-here" 
+        }, 
+      } 
+    } 
+  ] 
+} 
+```
+
+**SharePoint-Liste**
+
+Die URL muss auf die SharePoint-Website selbst und nicht auf eine Liste innerhalb der Website verweisen. Benutzer erhalten einen Navigator, mit dem Sie mindestens eine Liste von dieser Website auswählen können, die jeweils zu einer Tabelle im Modell wird. 
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "sharepoint-list", 
+        "address": { 
+          "url": "URL-here" 
+        }, 
+       } 
+    } 
+  ] 
+} 
+```
+ 
+ 
+**SQL Server**
+```
+{ 
+  “version”: “0.1”, 
+  “connections”: [ 
+    { 
+      “details”: { 
+        “protocol”: “tds”, 
+        “address”: { 
+          “server”: “server-name-here”, 
+          “database”: “db-name-here (optional)” 
+        } 
+      }, 
+      “options”: {}, 
+      “mode”: “DirectQuery” 
+    } 
+  ] 
+} 
+} 
+```
+ 
+
+**Textdatei**
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "file", 
+        "address": { 
+            "path": "path-here" 
+        } 
+      } 
+    } 
+  ] 
+} 
+```
+ 
+
+**Web**
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "http", 
+        "address": { 
+            "url": "URL-here" 
+        } 
+      } 
+    } 
+  ] 
+} 
+```
+ 
+
+
 
 ## <a name="next-steps"></a>Nächste Schritte
 Mit Power BI Desktop können Sie viele Aufgaben ausführen. Weitere Informationen zu den Funktionen und Möglichkeiten finden Sie in den folgenden Ressourcen:

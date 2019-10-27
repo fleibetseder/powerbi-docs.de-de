@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 10/14/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: a05924fc093c1514f51c3fabac3162433e2188f7
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: 2b05ad31612d1960e131028d13552843834a98bd
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968892"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307379"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurieren von Workloads in einer Premium-Kapazität
 
@@ -70,6 +70,8 @@ Die Datasetworkload ist standardmäßig aktiviert und kann nicht deaktiviert wer
 | **Max Result Row Set Count** (Maximale Anzahl von Ergebnisrowsets) | Die maximale Anzahl von Zeilen, die in einer DAX-Abfrage zurückgegeben werden. Der Standardwert ist -1 (keine Grenze), und der zulässige Bereich liegt zwischen 100000 und 2147483647. |
 | **Query Memory Limit (%)** (Arbeitsspeicherlimit für Abfragen (%)) | Der Prozentsatz des maximal verfügbaren Arbeitsspeichers, der für temporäre Ergebnisse in einer Abfrage oder einem DAX-Measure verwendet werden kann. |
 | **Query Timeout (seconds)** (Abfragetimeout (Sekunden)) | Die maximale Zeitspanne bis zum Timeout einer Abfrage. Der Standardwert lautet 3.600 Sekunden (1 Stunde). Bei einem Wert von 0 (null) tritt kein Timeout für Abfragen auf. |
+| **Automatische Seitenaktualisierung (Vorschau)** | Ein-/Ausschalten, um für Premium-Arbeitsbereiche automatische Seitenaktualisierung zu ermöglichen. |
+| **Mindestintervall für Aktualisierung** | Wenn die automatische Seitenaktualisierung aktiviert ist, das minimal zulässige Intervall für die Seitenaktualisierung. Der Standardwert beträgt fünf Minuten, und der zulässige Mindestwert ist eine Sekunde. |
 |  |  |  |
 
 #### <a name="max-intermediate-row-set-count"></a>Maximale Anzahl von Zwischenzeilen
@@ -112,6 +114,19 @@ Diese Einstellung gilt für eine einzelne Abfrage und nicht für die Dauer, die 
 Die Gesamtzeit für alle Abfragen beträgt 75 Minuten, aber das Einstellungslimit wird nicht erreicht, weil alle einzelnen Abfragen weniger als 20 Minuten laufen.
 
 Beachten Sie, dass Power BI-Berichte diesen Standardwert mit einem wesentlich geringeren Zeitlimit für jede Abfrage der Kapazität außer Kraft setzen. Das Zeitlimit für jede Abfrage beträgt in der Regel etwa drei Minuten.
+
+#### <a name="automatic-page-refresh-preview"></a>Automatische Seitenaktualisierung (Vorschau)
+
+Wenn diese Option aktiviert ist, ermöglicht die automatische Seitenaktualisierung Benutzern in Ihrer Premium-Kapazität das Aktualisieren von Seiten in ihrem Bericht in einem definierten Intervall für DirectQuery-Quellen. Als Kapazitätsadministrator können Sie die folgenden Aufgaben ausführen:
+
+1.  Aktivieren und Deaktivieren der automatischen Seitenaktualisierung
+2.  Definieren eines Mindestintervalls für die Aktualisierung
+
+Die folgende Abbildung zeigt, wo Sie die Einstellung für das automatische Aktualisierungsintervall finden:
+
+![Administratoreinstellung für automatisches Aktualisierungsintervall](media/service-admin-premium-workloads/automatic-refresh-interval.png)
+
+Abfragen, die durch automatische Seitenaktualisierung erstellt werden, werden direkt an die Datenquelle gerichtet. Daher ist es wichtig, die Zuverlässigkeit und Last dieser Quellen zu berücksichtigen, wenn Sie automatische Seitenaktualisierung in Ihrem Unternehmen zulassen. 
 
 ### <a name="dataflows"></a>Dataflows
 
@@ -180,6 +195,7 @@ Die [Power BI Premium-Kapazitätsmetriken-App](service-admin-premium-monitor-c
 
 [Optimieren von Power BI Premium-Kapazitäten](service-premium-capacity-optimize.md)     
 [Self-Service-Datenaufbereitung in Power BI (Vorschau)](service-dataflows-overview.md)   
-[Was sind paginierte Berichte in Power BI Premium? (Vorschau)](paginated-reports-report-builder-power-bi.md)   
+[Was sind paginierte Berichte in Power BI Premium?](paginated-reports-report-builder-power-bi.md)   
+[Automatische Seitenaktualisierung in Power BI Desktop (Vorschau)](desktop-automatic-page-refresh.md)
 
 Weitere Fragen? [Fragen an die Power BI-Community](http://community.powerbi.com/)

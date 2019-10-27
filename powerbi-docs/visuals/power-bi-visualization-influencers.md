@@ -10,14 +10,17 @@ ms.topic: tutorial
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a3e88d853f59a0e9a188d6d6796559ad2d9059a9
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: 056457d5a90585fd30a0a85f95d28d1097c720b0
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68995291"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72544052"
 ---
 # <a name="key-influencers-visualization"></a>Visual „Wichtige Einflussfaktoren“
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Mithilfe des Visuals „Wichtige Einflussfaktoren“ können Sie die wichtigen Faktoren einer für Sie relevanten Metrik besser nachvollziehen. Es analysiert die Daten, erstellt eine Rangfolge für wichtige Faktoren und stellt diese dar. Angenommen, Sie möchten beispielsweise ermitteln, wodurch die Personalfluktuation oder Abwanderung beeinflusst wird. Dabei können z. B. die Länge des Anstellungsvertrags oder das Alter des Mitarbeiters wichtige Faktoren darstellen. 
  
 ## <a name="when-to-use-key-influencers"></a>Wann empfiehlt sich die Verwendung des Visuals „Wichtige Einflussfaktoren“? 
@@ -49,6 +52,10 @@ Sie können das Visual in folgenden Fällen erfolgreich verwenden:
  
 Sehen Sie sich dieses Video an, um zu erfahren, wie ein Visual für wichtige Einflussfaktoren mit einer kategorischen Metrik erstellt wird. Führen Sie anschließend die folgenden Schritte aus, um ein Visual zu erstellen. 
 
+   > [!NOTE]
+   > In diesem Video wird eine frühere Version von Power BI Desktop verwendet.
+   > 
+   > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Ihr Produkt-Manager möchte, dass Sie ermitteln, welche Faktoren dazu führen, dass Kunden negative Bewertungen zu Ihrem Clouddienst abgeben. Öffnen Sie die Datei [customerfeedback.pbix](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) in Power BI Desktop, um diesem Tutorial zu folgen. Sie können außerdem die Excel-Datei [customerfeedback.xlsx](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx) für den Power BI-Dienst oder Power BI Desktop herunterladen. 

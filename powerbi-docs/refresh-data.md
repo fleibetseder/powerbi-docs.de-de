@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/12/2019
+ms.date: 10/14/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 7492651d2b5be8a63c97594fce3f3399b1122cc3
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: f5fe835d2ec423b596460a81ccb2a406b306c3c5
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68325033"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307945"
 ---
 # <a name="data-refresh-in-power-bi"></a>Aktualisieren von Daten in Power BI
 
@@ -108,7 +108,7 @@ Wenn Sie Ihre Datasets und Berichte auf der Grundlage einer Power BI Desktop-Dat
 
 Im Gegensatz zu einer Datasetaktualisierung, in der Power BI Daten aus einer Datenquelle in ein Dataset importiert, synchronisiert die OneDrive-Aktualisierung Datasets und Berichte mit ihren Quelldateien. Standardmäßig prüft Power BI etwa stündlich, ob ein Dataset, das mit einer Datei auf OneDrive oder SharePoint Online verbunden ist, synchronisiert werden muss. Um vergangene Synchronisationszyklen zu überprüfen, überprüfen Sie die Registerkarte OneDrive im Aktualisierungsverlauf. Der folgende Screenshot zeigt einen vollständigen Synchronisierungszyklus für ein Beispieldataset.
 
-![Aktualisierungsverlauf](media/refresh-data/refresh-history.png)
+![Verlauf aktualisieren](media/refresh-data/refresh-history.png)
 
 Wie der obige Screenshot zeigt, hat Power BI diese OneDrive-Aktualisierung als **Geplante** Aktualisierung identifiziert, aber es ist nicht möglich, das Aktualisierungsintervall zu konfigurieren. Sie können die OneDrive-Aktualisierung nur in den Einstellungen des Datasets deaktivieren. Das Deaktivieren der Aktualisierung ist nützlich, wenn Sie nicht möchten, dass Ihre Datasets und Berichte in Power BI Änderungen aus den Quelldateien automatisch übernehmen.
 
@@ -309,6 +309,13 @@ Das Warnungssymbol dient dazu, aktuelle Probleme mit dem Dataset anzuzeigen, abe
 > [!NOTE]
 > Sie finden einen Link zur Anzeige des Aktualisierungsverlaufs in den Dataseteinstellungen. Sie können den Aktualisierungsverlauf auch programmgesteuert mithilfe der [Power BI-REST-API](/rest/api/power-bi/datasets/getrefreshhistoryingroup) abrufen. Indem Sie eine benutzerdefinierte Lösung verwenden, können Sie den Aktualisierungsverlauf von mehreren Datasets zentral überwachen.
 
+## <a name="automatic-page-refresh"></a>Automatische Seitenaktualisierung
+
+Die automatische Seitenaktualisierung funktioniert auf Berichtsseitenebene und ermöglicht Berichtsautoren, ein Aktualisierungsintervall für Visuals auf einer Seite festzulegen, das nur aktiv ist, wenn die Seite genutzt wird. Die automatische Seitenaktualisierung ist nur für DirectQuery-Datenquellen verfügbar. Das minimale Aktualisierungsintervall hängt davon ab, in welchem Typ von Arbeitsbereich der Bericht veröffentlicht wird, sowie von den Administratoreinstellungen für die Kapazität für Premium-Arbeitsbereiche.
+
+Weitere Informationen zur automatischen Seitenaktualisierung finden Sie im Artikel [Automatische Seitenaktualisierung](desktop-automatic-page-refresh.md).
+
+
 ## <a name="best-practices"></a>Bewährte Methoden
 
 Die regelmäßige Überprüfung des Aktualisierungsverlaufs Ihrer Datasets ist eine der wichtigsten Best Practices, die Sie anwenden können, um sicherzustellen, dass Ihre Berichte und Dashboards aktuelle Daten verwenden. Wenn Sie Probleme feststellen, beheben Sie sie umgehend, und informieren Sie gegebenenfalls die Datenquellenbesitzer und Gatewayadministratoren.
@@ -324,6 +331,7 @@ Beachten Sie außerdem die folgenden Empfehlungen, um zuverlässige Datenaktuali
 - Verwenden Sie eine zuverlässige Enterprisedatengateway-Bereitstellung, um eine Verbindung Ihrer Datasets mit lokalen Datenquellen herzustellen. Wenn Sie gatewaybezogene Fehler bei der Aktualisierung feststellen, wenn das Gateway z.B. nicht verfügbar oder überlastet ist, besprechen Sie dies mit Gatewayadministratoren, um entweder einem bestehenden Cluster zusätzliche Gateways hinzuzufügen oder einen neuen Cluster bereitzustellen (zentral hochskalieren oder horizontal hochskalieren).
 - Verwenden Sie separate Datengateways für Importdatasets und DirectQuery-/LiveConnect-Datasets, damit die Datenimporte während der geplanten Aktualisierung nicht die Leistung von Berichten und Dashboards auf DirectQuery-/LiveConnect-Datasets beeinträchtigen, die bei jeder Benutzerinteraktion die Datenquellen abfragen.
 - Stellen Sie sicher, dass Power BI Benachrichtigungen über Aktualisierungsfehler an Ihre Mailbox senden kann. Spamfilter könnten die E-Mail-Nachrichten blockieren oder in einen separaten Ordner verschieben, in dem Sie sie möglicherweise nicht sofort bemerken.
+
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 21a7bf05330373febe1e9f121f07df6de0779c69
-ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.openlocfilehash: e6b0d7db9f82d8bc68f230858799f6afbcad1c82
+ms.sourcegitcommit: 83e1e162a037f352e542bd5c198a3c98f5db23c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "70200946"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72511661"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Datenquellen für den Power BI-Dienst
 Daten sind der Kern von Power BI. Nehmen wir an, dass Sie Daten untersuchen. Hierfür können Sie Diagramme und Dashboards erstellen oder über die **Q&A**-Funktion Fragen stellen. Die angezeigten Visualisierungen und Antworten rufen die zugrunde liegenden Daten aus einem Dataset ab. Doch woher stammt das Dataset? Es stammt aus einer Datenquelle.
@@ -111,7 +111,11 @@ Die Datenaktualisierung ist ein äußerst wichtiger Aspekt von Power BI und zu k
 ## <a name="considerations-and-limitations"></a>Überlegungen und Einschränkungen
 Für alle im Power BI-Dienst verwendeten Datenquellen gelten die folgenden Einschränkungen. Es gibt weitere Einschränkungen, die für bestimmte Features gelten, die folgende Liste gilt jedoch für den gesamten Power BI-Dienst:
 
-* **Beschränkung der Datasetgröße:** Kein Dataset im Power BI-Dienst darf größer als 1 GB sein.
-* **Zeilenbeschränkung:** Ihr Dataset kann maximal 2 Milliarden Zeilen enthalten, wenn Sie **DirectQuery** nicht verwenden. Drei Zeilen sind reserviert. Das bedeutet, dass Sie maximal 1.999.999.997 Zeilen nutzen können. Wenn Sie **DirectQuery** verwenden, sind maximal 1 Million Zeilen nutzbar.
-* **Spaltenbeschränkung:** Für alle Tabellen im Dataset sind zusammen maximal 16.000 Spalten zulässig. Diese Einschränkung gilt für den Power BI-Dienst und für in Power BI Desktop verwendete Datasets. In Power BI wird im Dataset eine interne Zeilennummernspalte pro Tabelle verwendet. Das bedeutet, dass für jede Tabelle im Dataset maximal 15.999 Spalten genutzt werden können.
+* **Beschränkung der Datasetgröße**: Es gibt eine Einschränkung von 1 GB für Datasets, die in gemeinsam verwendeten Kapazitäten im Power BI-Dienst gespeichert sind. Wenn Sie größere Datasets benötigen, können Sie [Power BI Premium](service-premium-what-is.md)verwenden.
+
+* **Verschiedene Werte in einer Spalte**: Beim Zwischenspeichern von Daten in einem Power BI-Dataset (manchmal auch als „Importmodus“ bezeichnet) gibt es einen Grenzwert von 1.999.999.997 für die Anzahl der verschiedenen Werte, die in einer Spalte gespeichert werden können.
+
+* **Zeilenbegrenzung**: Wenn Sie **DirectQuery** verwenden, legt Power BI eine Obergrenze für die Abfrageergebnisse fest, die an Ihre zugrunde liegende Datenquelle gesendet werden. Wenn die an die Datenquelle gesendete Abfrage mehr als eine Million Zeilen zurückgibt, wird ein Fehler angezeigt, und die Abfrage schlägt fehl. Ihre zugrunde liegenden Daten können trotzdem mehr als eine Million Zeilen enthalten. Es ist unwahrscheinlich, dass Sie diese Obergrenze erreichen, da die meisten Berichte die Daten in kleinere Ergebnismengen zusammenfassen.
+
+* **Spaltenbeschränkung:** Für alle Tabellen im Dataset sind zusammen maximal 16.000 Spalten zulässig. Diese Einschränkung gilt für den Power BI-Dienst und für in Power BI Desktop verwendete Datasets. Power BI verfolgt die Anzahl der Spalten und Tabellen im Dataset auf diese Weise nach. Dies bedeutet, dass die maximale Anzahl der Spalten 16.000 minus eine Spalte für jede Tabelle im Dataset beträgt.
 

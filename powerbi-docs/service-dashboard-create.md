@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/17/2019
 ms.author: maggies
-ms.openlocfilehash: 108882dd0f3b61d6cb19fd18290b44316231f3cb
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 6d8a6a28d72ce6d0fa6123b15f9e692ed1cc4d44
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020346"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72543300"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Erstellen eines Power BI-Dashboards aus einem Bericht
 Sie haben die [Einführung in Dashboards in Power BI](service-dashboards.md) gelesen und möchten jetzt Sie Ihr eigenes erstellen. Es gibt viele Methoden zum Erstellen eines Dashboards. So können Sie beispielsweise ein Dashboard anhand eines Berichts, von Grund auf neu, anhand eines Datasets oder durch Duplizieren eines vorhandenen Dashboards erstellen.  
@@ -68,9 +68,9 @@ Wir werden in dieser Anleitung eines der Power BI-Beispieldatasets importieren, 
 ### <a name="open-the-report-and-pin-tiles-to-your-dashboard"></a>Öffnen des Berichts und Anheften von Kacheln an Ihr Dashboard
 1. Wählen Sie im gleichen Arbeitsbereich die Registerkarte **Berichte** und dann **Analysebeispiel für Beschaffung** aus, um den Bericht zu öffnen.
 
-    ![Registerkarte „Berichte“](media/service-dashboard-create/power-bi-reports.png) Der Bericht wird in der Leseansicht geöffnet. Beachten Sie, dass er am unteren Rand zwei Registerkarten aufweist: **Rabattanalyse** und **Übersicht über die Ausgaben**. Jede Registerkarte stellt eine Seite des Berichts dar.
+    ![Registerkarte „Berichte“](media/service-dashboard-create/power-bi-reports.png) Der Bericht wird in der Leseansicht geöffnet. Beachten Sie, dass auf der linken Seite zwei Registerkarten vorhanden sind: **Rabattanalyse** und **Übersicht über die Ausgaben**. Jede Registerkarte stellt eine Seite des Berichts dar.
 
-2. Wählen Sie **Bericht bearbeiten** aus, um den Bericht in der Bearbeitungsansicht zu öffnen.
+2. Wählen Sie **Weitere Optionen (...)**  > **Bericht bearbeiten** aus, um den Bericht in der Bearbeitungsansicht zu öffnen.
 
     ![Bericht in der Leseansicht](media/service-dashboard-create/power-bi-reading-view.png)
 3. Zeigen Sie auf eine Visualisierung, um die verfügbaren Optionen anzuzeigen. Um einem Dashboard eine Visualisierung hinzuzufügen, wählen Sie das Stecknadelsymbol ![Stecknadelsymbol](media/service-dashboard-create/power-bi-pin-icon.png).

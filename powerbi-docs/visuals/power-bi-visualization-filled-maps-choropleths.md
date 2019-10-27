@@ -11,14 +11,17 @@ ms.topic: conceptual
 ms.date: 06/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0123d8123170cfa78b3d13a55ed2f367af0447ae
-ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
+ms.openlocfilehash: 2befce7914fc295ff4a6124be10183d5ff20106d
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67299381"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72544358"
 ---
 # <a name="filled-maps-choropleths-in-power-bi"></a>Flächenkartogramme (Choroplethenkarten) in Power BI
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 In einem Flächenkartogramm wird mithilfe von Schattierungen, Farben oder Mustern angezeigt, in welchem Verhältnis Werte innerhalb eines geografischen Gebiets stehen.  Diese relativen Unterschiede werden mithilfe von Schattierungen angezeigt, wobei hell eine geringe Menge/Häufigkeit und dunkel eine große Menge/Häufigkeit anzeigt.    
 
 ![Karte der USA](media/power-bi-visualization-filled-maps-choropleths/large-map.png)
@@ -44,27 +47,24 @@ Flächenkartogramme sind gut für folgende Zwecke geeignet:
 * Für einen Überblick in Bezug auf die Verteilung über geografische Standorte hinweg
 
 ### <a name="prerequisites"></a>Voraussetzungen
-- Power BI-Dienst oder Power BI Desktop
-- Sales and Marketing Sample
+In diesem Tutorial wird die [PBIX-Datei mit einem Analysebeispiel für den Einzelhandel](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) verwendet.
+1. Wählen Sie im oberen linken Bereich der Menüleiste **Datei** > **Öffnen** aus.
+   
+2. Suchen Sie Ihre Kopie der **PBIX-Datei mit einem Analysebeispiel für den Einzelhandel**.
 
-Im Tutorial wird der Power BI-Dienst und nicht Power BI Desktop verwendet.
+1. Öffnen Sie die **PBIX-Datei mit einem Analysebeispiel für den Einzelhandel** in der Berichtsansicht ![Screenshot des Berichtsansichtssymbols.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Auswählen ![Screenshot der gelben Registerkarte.,](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) um eine neue Seite hinzuzufügen.
+
 
 ## <a name="create-a-basic-filled-map"></a>Erstellen eines grundlegenden Flächenkartogramms
 In diesem Video wird eine einfache Karte erstellt und in ein Flächenkartogramm umgewandelt.
+   > [!NOTE]
+   > In diesem Video wird eine frühere Version von Power BI Desktop verwendet.
+   > 
+   > 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
-
-### <a name="get-data-and-add-a-new-blank-page-to-the-report"></a>Abrufen von Daten und Hinzufügen einer neuen leeren Seite zu dem Bericht
-1. Um ein eigenes Flächenkartogramm zu erstellen, [laden Sie das Beispiel für Vertrieb und Marketing herunter](../sample-datasets.md). Melden Sie sich zu diesem Zweck bei Power BI an, und wählen Sie **Daten abrufen \> Beispiele \> Vertrieb und Marketing\> Verbinden** aus. Sie können die **Power BI Sales and Marketing**-App auch auf appsource.com abrufen. 
-
-2. Öffnen Sie den Bericht „Sales and Marketing“.
-
-   ![Der Bericht „Sales and Marketing“ wird geöffnet.](media/power-bi-visualization-filled-maps-choropleths/power-bi-report-canvas.png)
-3. Power BI öffnet den Bericht. Klicken Sie auf **Bericht bearbeiten**, um den Bericht in der [Bearbeitungsansicht](../service-interact-with-a-report-in-editing-view.md) zu öffnen.
-
-4. Fügen Sie eine neue Seite hinzu, indem Sie auf das gelbe Pluszeichen am unteren Rand des Zeichenbereichs klicken.
-
-    ![Registerkarte „Bericht“](media/power-bi-visualization-filled-maps-choropleths/power-bi-new-page.png)
 
 ### <a name="create-a-filled-map"></a>Erstellen eines Flächenkartogramms
 1. Wählen Sie im Bereich „Felder“ das Feld **Geo** \> **Bundesstaat** aus.    
@@ -75,9 +75,9 @@ In diesem Video wird eine einfache Karte erstellt und in ein Flächenkartogramm 
    ![Vorlagen mit dem hervorgehobenen Symbol für Flächenkartogramme](media/power-bi-visualization-filled-maps-choropleths/img003.png)
 3. Filtern Sie die Karte, um nur die kontinentalen USA anzuzeigen.
 
-   a.  Suchen Sie im unteren Teil des Visualisierungsbereichs nach **Filter** .
+   a.  Suchen Sie links neben dem Visualisierungsbereich nach dem Bereich **Filter**. Erweitern Sie den Bereich, wenn er minimiert ist.
 
-   b.  Zeigen Sie auf **Bundesland** , und klicken Sie auf das Erweiterungssymbol.  
+   b.  Zeigen Sie auf **State**, und klicken Sie auf das Erweiterungssymbol.  
    ![Filter auf visueller Ebene zeigt „State(All)“ an](media/power-bi-visualization-filled-maps-choropleths/img004.png)
 
    c.  Aktivieren Sie das Kontrollkästchen **Alle**, und deaktivieren Sie das Kontrollkästchen **AK**.
@@ -115,11 +115,11 @@ Das Markieren eines Orts in einem Flächenkartogramm ermöglicht das Kreuzfilter
 
     ![Registerkarte „Stimmung“: ausgewählt](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment-tab.png)
 
-4. Bewegen Sie die Visuals auf der Seite, und ändern Sie deren Größe, um Platz zu schaffen. Drücken Sie anschließend STRG+V, um das Flächenkartogramm aus dem vorherigen Bericht einzufügen.
+4. Bewegen Sie die Visuals auf der Seite, und ändern Sie deren Größe, um Platz zu schaffen. Drücken Sie anschließend STRG+V, um das Flächenkartogramm aus dem vorherigen Bericht einzufügen. (Siehe folgende Abbildungen)
 
    ![Flächenkartogramm zur Seite „Stimmung“ hinzugefügt](media/power-bi-visualization-filled-maps-choropleths/power-bi-map.png)
 
-5. Wählen Sie auf dem Flächenkartogramm einen Bundesstaat aus.  Dadurch werden die anderen Visualisierungen auf der Seite hervorgehoben. Wenn Sie hier beispielsweise **Texas** auswählen, sehen Sie, dass der Stimmungswert bei 74 liegt. Texas befindet sich im Central District \#23.   
+5. Wählen Sie auf dem Flächenkartogramm einen Bundesstaat aus.  Dadurch erfolgt eine Kreuzhervorhebung und Kreuzfilterung der anderen Visualisierungen auf der Seite. Wenn Sie beispielsweise **Texas** auswählen, sehen Sie, dass der Stimmungswert bei 75 liegt. Texas befindet sich im Central District Nr. 23.   
    ![Texas ausgewählt](media/power-bi-visualization-filled-maps-choropleths/power-bi-texas.png)
 2. Wählen Sie in dem Liniendiagramm „VanArsdel - Sentiment by Month“ (VanArsdel – Stimmung nach Monat) aus. Dadurch wird das Flächenkartogramm gefiltert, sodass nur die Stimmungsdaten für VanArsdel und nicht für die Konkurrenz angezeigt werden.  
    ![Neue Schattierung](media/power-bi-visualization-filled-maps-choropleths/power-bi-yes.png)

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: ff962335b573c6dd2a03ae5ab4633c1042a77059
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 5a4c385b9c8e8a28de3b9a5e1dd84651f87ef000
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770779"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72543162"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Grundlegende Konzepte für Designer im Power BI-Dienst
 
@@ -33,10 +33,11 @@ Wenn Sie den Power BI-Dienst in einem Browser öffnen, sehen Sie zunächst den S
 3. Power BI-Schaltfläche „Start“
 4. Symbolschaltflächen, einschließlich Einstellungen, Hilfe und Feedback
 5. Suchfeld
-6. Kacheln aus einem bevorzugten Dashboard
-7. Favoriten und häufig verwendete Dashboards und Berichte
+6. Favoriten und häufig verwendete Dashboards, Berichte und Arbeitsbereiche
+7. Zuletzt verwendete Dashboards, Berichte und Arbeitsbereiche
+8. Ihre Arbeitsbereiche
 
-Die Endbenutzer Ihrer Berichte und Dashboards haben das gleiche Starterlebnis im Power BI-Dienst in einem Browser.
+Sie und die Endbenutzer Ihrer Berichte und Dashboards haben im Power BI-Dienst das gleiche Starterlebnis in einem Browser.
 
 Diese Features werden später näher erläutert. Zunächst werden einige Grundkonzepte von Power BI besprochen. Alternativ können Sie sich zuerst dieses Video ansehen.  In diesem Video gibt Will einen Überblick über den Power BI-Dienst und erklärt die grundlegenden Konzepte.
 
@@ -195,8 +196,8 @@ Der Bereich für Fragen und Antworten sucht im Dataset bzw. in Datasets, die mit
 
 Sobald Sie mit der Eingabe einer Frage beginnen, gelangen Sie zur Seite für Fragen und Antworten (F&A). Während der Eingabe unterstützt Sie der Bereich für Fragen und Antworten mithilfe von Umformulierungen, AutoAusfüllen, Vorschlägen usw. dabei, die richtige Frage zu stellen und die beste Antwort zu finden. Wenn Sie eine Visualisierung (Antwort) gefunden haben, die Ihnen gefällt, fügen Sie diese einfach zum Dashboard hinzu. Weitere Informationen finden Sie unter [Fragen und Antworten in Power BI](power-bi-q-and-a.md).
 
-### <a name="4-icon-buttons"></a>4. **Symbolschaltflächen**
-Die Symbole in der rechten oberen Ecke sind Ihre Ressourcen für Einstellungen, Benachrichtigungen, Downloads, zum Öffnen der Hilfe und zum Senden von Feedback an das Power BI-Team. Wählen Sie den doppelten Pfeil aus, um das Dashboard im **Vollbildmodus** zu öffnen.  
+### <a name="4-icons-in-the-black-header-bar"></a>4. **Symbole in der schwarzen Kopfzeile**
+Die Symbole in der rechten oberen Ecke sind Ihre Ressourcen für Einstellungen, Benachrichtigungen, Downloads, zum Öffnen der Hilfe, zum Aktivieren oder Deaktivieren von **Neues Design** und zum Senden von Feedback an das Power BI-Team.  
 
 ![Symbolschaltflächen](media/service-basic-concepts/power-bi-icons.png)
 
@@ -217,8 +218,8 @@ Wenn Sie auf **Power BI** klicken, gelangen Sie zur Power BI-Startseite zurück.
 
    ![„Power BI“ im Dienst](media/service-basic-concepts/version-new.png)
 
-### <a name="8-labeled-icon-buttons"></a>8. **Beschriftete Symbolschaltflächen**
-In diesem Bereich des Bildschirms finden Sie zusätzliche Optionen für die Interaktion mit Inhalten (in diesem Fall dem Dashboard).  Neben den beschrifteten Symbolen können Sie die Auslassungspunkte auswählen, um Optionen zum Duplizieren, Drucken und Aktualisieren des Dashboards und weitere Optionen anzuzeigen.
+### <a name="8-labeled-icons-in-the-gray-menu-bar"></a>8. **Gekennzeichnete Symbole in der grauen Menüleiste**
+In diesem Bereich des Bildschirms finden Sie zusätzliche Optionen für die Interaktion mit Inhalten (in diesem Fall dem Dashboard).  Neben den beschrifteten Symbolen können Sie **Weitere Optionen (...)** auswählen, um Optionen zum Duplizieren, Drucken und Aktualisieren des Dashboards und mehr anzuzeigen.
 
    ![Beschriftete Symbolschaltflächen](media/service-basic-concepts/power-bi-labeled-icons.png)
 

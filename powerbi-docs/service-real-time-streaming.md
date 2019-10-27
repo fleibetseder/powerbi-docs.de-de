@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 034dc98b1e623bd0d509eb2d174cdc3e3b865067
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: f88d1e0458e6a1b3abe20c0b4dd889c037ede612
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514321"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307349"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Echtzeitstreaming in Power BI
 Mit dem Power BI-Echtzeitstreaming können Sie in Echtzeit Daten streamen und Dashboards aktualisieren. Alle visuellen Elemente und Dashboards, die in Power BI erstellt werden können, können so erstellt werden, dass Echtzeitdaten und visuelle Echtzeitelemente angezeigt und aktualisiert werden. Die Geräte und Quellen von Streamingdaten können Factorysensoren, soziale Medien, Servicenutzungsmetriken sowie alle Elemente sein, über die zeitkritische Daten erfasst oder übertragen werden können.
@@ -235,6 +235,13 @@ Versuchen Sie, das Problem anhand der folgenden Prüfliste zu beheben:
 4. Erfolgt die Ausgabe der Azure Stream Analytics-Abfrage explizit in die Power BI-Ausgabe? (Verwendung des INTO-Schlüsselworts)
 5. Erfolgt ein Datenfluss durch den Azure Stream Analytics-Auftrag? Das Dataset wird nur erstellt, wenn Daten übertragen werden.
 6. Können Sie die Azure Stream Analytics-Protokolle einsehen, um festzustellen, ob Warnungen oder Fehler vorhanden sind?
+
+## <a name="automatic-page-refresh"></a>Automatische Seitenaktualisierung
+
+Die automatische Seitenaktualisierung funktioniert auf Berichtsseitenebene und ermöglicht Berichtsautoren, ein Aktualisierungsintervall für Visuals auf einer Seite festzulegen, das nur aktiv ist, wenn die Seite genutzt wird. Die automatische Seitenaktualisierung ist nur für DirectQuery-Datenquellen verfügbar. Das minimale Aktualisierungsintervall hängt davon ab, in welchem Typ von Arbeitsbereich der Bericht veröffentlicht wird, sowie von den Administratoreinstellungen für die Kapazität für Premium-Arbeitsbereiche.
+
+Weitere Informationen zur automatischen Seitenaktualisierung finden Sie im Artikel [Automatische Seitenaktualisierung](desktop-automatic-page-refresh.md).
+
 
 ## <a name="next-steps"></a>Nächste Schritte
 Hier sind einige Links zu Themen, die beim Verwenden von Echtzeitstreaming in Power BI hilfreich sein könnten:

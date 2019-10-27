@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 3/27/2019
-ms.openlocfilehash: 44534f2adbc4f1f39a0c65e11d646fd8fd67be71
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: 1841311e94ca593093fa3104b615328927365880
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71944818"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307654"
 ---
 # <a name="publish-power-bi-visuals-to-appsource"></a>Veröffentlichen von Power BI-Visuals in AppSource
 
 Erfahren Sie, wie Sie ein benutzerdefiniertes Visual in AppSource veröffentlichen, damit es von anderen gefunden und verwendet werden kann.
 
-Nachdem Sie ein benutzerdefiniertes Visual erstellt haben, empfiehlt es sich, es in AppSource zu veröffentlichen, damit es von anderen Personen gefunden und verwendet werden kann. Zuvor sind jedoch einige vorbereitende Schritte erforderlich. Weitere Informationen zum Erstellen eines benutzerdefinierten Visuals finden Sie im Tutorial [Entwickeln eines benutzerdefinierten Power BI-Visuals](custom-visual-develop-tutorial.md).
+Nachdem Sie ein benutzerdefiniertes Visual erstellt haben, empfiehlt es sich, es in AppSource zu veröffentlichen, damit es von anderen Personen gefunden und verwendet werden kann. Zuvor sind jedoch einige vorbereitende Schritte erforderlich. Weitere Informationen zum Erstellen eines benutzerdefinierten Visuals finden Sie im Tutorial [Entwickeln eines benutzerdefinierten Power BI-Visuals](visuals/custom-visual-develop-tutorial.md).
 
    ![Office Store](media/office-store/appsource-01.png)
 
@@ -147,7 +147,7 @@ Sobald Ihre Visualisierung erstellt wurde, können Sie veranlassen, dass die Vis
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Entwickeln eines benutzerdefinierten Visuals für Power BI](custom-visual-develop-tutorial.md)  
+[Entwickeln eines benutzerdefinierten Visuals für Power BI](visuals/custom-visual-develop-tutorial.md)  
 [Visualisierungen in Power BI](../visuals/power-bi-report-visualizations.md)  
 [Benutzerdefinierte Visualisierungen in Power BI](../power-bi-custom-visuals.md)  
 [Wie wird ein benutzerdefiniertes visuelles Element *zertifiziert*?](../power-bi-custom-visuals-certified.md)

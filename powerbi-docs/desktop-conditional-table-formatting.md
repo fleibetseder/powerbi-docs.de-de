@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/16/2019
+ms.date: 10/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 35f60c0e41a06c8f13931d158fe092184da8838d
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: bd14437b0833d4c24c37ebeca6524948465bdb1f
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69561063"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72544000"
 ---
 # <a name="conditional-formatting-in-tables"></a>Bedingte Formatierung in Tabellen 
 Mithilfe der bedingten Formatierung für Tabellen können Sie benutzerdefinierte Zellenfarben basierend auf Zellwerten oder auf anderen Werten oder Feldern festlegen und Verlaufsfarben verwenden. Sie können auch Zellwerte mit Datenbalken darstellen. 
@@ -140,6 +140,9 @@ Sie können einen beliebigen der in der CSS-Farbspezifikation unter [https://www
 Bei der Anwendung von bedingter Formatierung auf Tabellen sollten Sie folgende Überlegungen berücksichtigen:
 
 * Bedingte Formatierung wird nur auf die Werte eines **Matrix**-Visuals angewendet und gilt nicht für Teilergebnisse oder Gesamtergebnisse. 
+* Bedingte Formatierung wird nicht auf die Zeile **Gesamt** angewendet.
+* Alle Tabellen, die keine Gruppierung aufweisen, werden als einzelne Zeile angezeigt, die keine bedingte Formatierung unterstützt.
+* Wenn Sie das Farbverlaufsformat mit automatischen Maximal-/Minimalwerten oder regelbasierte Formatierung mit Prozentregeln verwenden, kann bedingte Formatierung nicht angewendet werden, wenn Ihre Daten NaN-Werte enthalten. NaN bedeutet „Not a Number“, was in der Regel durch einen Fehler aufgrund einer Division durch Null verursacht wird. Mit der [Divide () DAX-Funktion](https://docs.microsoft.com/dax/divide-function-dax) können Sie diese Fehler vermeiden.
 
 
 ## <a name="next-steps"></a>Nächste Schritte

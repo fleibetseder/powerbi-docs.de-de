@@ -8,15 +8,15 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/31/2018
-ms.openlocfilehash: 71c2135092b0b9bb2b02f4559d40c0b10814a51f
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.date: 10/09/2019
+ms.openlocfilehash: a3f7e1676c864ff1f5dbf081dd2e7818f30caba6
+ms.sourcegitcommit: e533c65607bbba0f620fddabd6b107e5933772c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71325724"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72259962"
 ---
-# <a name="changelog-for-power-bi-report-server"></a>Änderungsprotokoll für Power BI-Berichtsserver
+# <a name="change-log-for-power-bi-report-server"></a>Änderungsprotokoll für Power BI-Berichtsserver
 
 Dieses Änderungsprotokoll bezieht sich auf Power BI-Berichtsserver und enthält neue Elemente sowie Fehlerkorrekturen für jeden veröffentlichten Build.
 
@@ -24,12 +24,19 @@ Ausführliche Informationen zu neuen Funktionen finden Sie unter [Neuerungen in 
 
 ## <a name="september-2019"></a>September 2019
 
-- **Power BI-Berichtsserver**          
+- **Power BI-Berichtsserver**
+    - *Version: 1.6.7221.30698 (Build 15.0.1102.620), Veröffentlichung: 9. Oktober 2019*
+        - Fehlerkorrekturen
+            - Behoben: Benutzerdefiniertes Visual „Textfilter“.
+            - Behoben: Leistung von Dropdownslicern.
+            - Behoben: „Strip PII“ aus Telemetrie.
+          - Behoben: Für URLs wird keine Groß-/Kleinschreibung beachtet.
+             
     - *Version 1.6.7206.38019 (Build 15.0.1102.597), Veröffentlichung: 26. September 2019*
         - Sicherheitsupdates
         - Fehlerkorrekturen
-           - Paginated Reports
-             - Behoben: Probleme mit der Barrierefreiheit bei der Verwendung des IE und von Edge
+           - Paginierte Berichte
+             - Behoben: Probleme mit der Barrierefreiheit bei der Verwendung von Internet Explorer und Microsoft Edge.
              - Behoben: Probleme mit SAP HANA beim Testen der Verbindung
              - Behoben: Probleme, die beim Bereitstellen von Listen mit E-Mail-Adressen gefunden wurden
              - Behoben: Probleme mit Power BI-Berichten, die eine DirectQuery-Datenquelle und die integrierte Authentifizierung verwenden
@@ -43,10 +50,17 @@ Ausführliche Informationen zu neuen Funktionen finden Sie unter [Neuerungen in 
              - Aktualisiert: Web-API/PowerBIReports({Id})/DataSources (PATCH) zum Zulassen von Aktualisierungen für Verbindungszeichenfolgen.
          
 - **Power BI Desktop (optimiert für Power BI-Berichtsserver)**
+
+    - *Version: 2.73.5586.1241 (September 2019), Veröffentlichung: 9. Oktober 2019*
+        - Fehlerkorrekturen
+            - Behoben: Benutzerdefiniertes Visual „Textfilter“.
+            - Behoben: Leistung von Dropdownslicern.
+            - Behoben: „Strip PII“ aus Telemetrie.
+            
     - *Version: 2.73.5586.821 (September 2019), Veröffentlichung: 26. September 2019* (neuer Build und neue Version)
-    - Enthält Änderungen, die für die Verbindung mit dem Power BI-Berichtsserver (September 2019) erforderlich sind
+        - Enthält Änderungen, die für die Verbindung mit dem Power BI-Berichtsserver (September 2019) erforderlich sind
 
-
+    
 ## <a name="may-2019"></a>Mai 2019
 
 - **Power BI-Berichtsserver**          
@@ -104,7 +118,7 @@ Ausführliche Informationen zu neuen Funktionen finden Sie unter [Neuerungen in 
                 - Kopieren und Einfügen zwischen PBIX-Dateien
                 - Intelligente Hinweise zur Ausrichtung
                 - Unterstützung für den SAP BW 2.0-Connector
-            - Administratoren
+            - Administrators
                 - Können nun die Erweiterungen der Ressourcen einschränken, die auf den Berichtsserver hochgeladen werden können
                 - Können nun die unterstützten Hyperlinkschemas einschränken
             - Programmierbarkeit

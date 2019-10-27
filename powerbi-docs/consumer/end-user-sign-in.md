@@ -8,15 +8,15 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/24/2019
+ms.date: 10/13/2019
 ms.author: mihart
 LocalizationGroup: Getting started
-ms.openlocfilehash: 328010a97825f84e103a1100c8783cd02769d67f
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 7bc52e06234b8c1be558f0c74680febe2a65d1d1
+ms.sourcegitcommit: 5410a17c6325406c9d9364585d7c26de4d9488ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "66750966"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72380017"
 ---
 # <a name="sign-in-to-power-bi-service"></a>Anmelden beim Power BI-Dienst
 
@@ -25,56 +25,61 @@ Bevor Sie sich bei Power BI anmelden können, benötigen Sie ein Konto. Es gibt 
 
 ## <a name="sign-in-for-the-first-time"></a>Erstmaliges Anmelden
 
-### <a name="step-one-open-a-browser"></a>Schritt 1: Öffnen eines Browsers
-Der Power BI-Dienst wird im Browser ausgeführt.  Also ist der erste Schritt, den Browser Ihrer Wahl zu öffnen und **app.powerbi.com** einzugeben.
+### <a name="step-1-open-a-browser"></a>Schritt 1: Öffnen eines Browsers
+Der Power BI-Dienst wird in einem Browser ausgeführt.  Also ist der erste Schritt, den Browser Ihrer Wahl zu öffnen und **app.powerbi.com** einzugeben.
 
 ![Browserfeld mit eingegebener URL](media/end-user-sign-in/power-bi-sign-in.png)
 
-### <a name="step-two-type-your-email-address"></a>Schritt 2: Eingeben Ihrer E-Mail-Adresse
-Bei der ersten Anmeldung werden Sie aufgefordert, Ihre E-Mail-Adresse einzugeben.  Dies ist die Geschäfts-, Schul- oder Uni-E-Mail-Adresse, die für die Registrierung bei Power BI verwendet wurde.  
+### <a name="step-2-type-your-email-address"></a>Schritt 2: Eingeben der E-Mail-Adresse
+Bei der ersten Anmeldung werden Sie aufgefordert, Ihre E-Mail-Adresse einzugeben.  Diese E-Mail-Adresse ist das Geschäfts-, Schul- oder Unikonto, das für die Registrierung bei Power BI verwendet wurde.  
 
 Suchen Sie in Ihrem Posteingang nach einer E-Mail von Ihrem Power BI-Administrator. Die meisten Administratoren senden Ihnen eine Willkommens-E-Mail, in der Sie Ihr temporäres Kennwort finden. Verwenden Sie dieses E-Mail-Konto für die Anmeldung. 
 
-![Browserfeld mit eingegebener URL](media/end-user-sign-in/power-bi-email2.png)
+![Browserfeld mit eingegebener URL](media/end-user-sign-in/power-bi-password.png)
 
 
  
-### <a name="step-three-create-a-new-password"></a>Schritt 3: Erstellen eines neuen Kennworts
-Wenn Ihr Power BI-Administrator Ihnen ein temporäres Kennwort gesendet hat, geben Sie es in das Feld **Aktuelles Kennwort** ein. Wenn Sie das Kennwort nicht erhalten haben, wenden Sie sich an Ihren Power BI-Administrator.
+### <a name="step-3-create-a-new-password"></a>Schritt 3: Erstellen eines neuen Kennworts
+Wenn Ihr Power BI-Administrator Ihnen ein temporäres Kennwort gesendet hat, geben Sie es in das Feld **Aktuelles Kennwort** ein. Wenn Sie kein Kennwort erhalten haben, wenden Sie sich an Ihren Power BI-Administrator.
 
-![E-Mail-Adresse im Anmeldefeld](media/end-user-sign-in/power-bi-login2.png)
+![E-Mail-Adresse im Anmeldefeld](media/end-user-sign-in/power-bi-login.png)
 
-Power BI speichert Ihre Anmeldeinformationen, damit Sie Ihren Benutzernamen (E-Mail-Adresse) bei der nächsten Anmeldung nicht eingeben müssen. 
+Wenn sich Power BI Ihre Anmeldeinformationen merken soll, wählen Sie **Ja** aus. 
 
-### <a name="step-four-review-your-home-page"></a>Schritt 4: Überprüfen Ihrer Startseite
-Bei Ihrem ersten Besuch wird Ihre Power BI-**Startseite** geöffnet. Wenn die **Startseite** nicht geöffnet wird, öffnen Sie sie über den linken Navigationsbereich. 
+![Entscheiden, ob Power BI Ihre Anmeldeinformationen speichern soll](media/end-user-sign-in/power-bi-stay-signed-in.png)
 
-![E-Mail-Adresse im Anmeldefeld](media/end-user-sign-in/power-bi-home-select.png)
 
-Auf der Startseite werden alle Inhalte angezeigt, für die Sie über Berechtigungen verfügen. Zunächst wird auf Ihrer Startseite nicht viel angezeigt werden. Das ändert sich jedoch mit der Zeit, in der Sie und Ihre Kollegen Power BI verwenden. 
+### <a name="step-4-review-your-home-landing-page"></a>Schritt 4: Überprüfen der Startseite „Home“
+Bei Ihrem ersten Besuch wird Ihre Power BI-Startseite **Home** geöffnet. Wenn **Home** nicht geöffnet wird, wählen Sie diese Seite im Navigationsbereich aus. 
 
-![E-Mail-Adresse im Anmeldefeld](media/end-user-sign-in/power-bi-home2.png)
+![Screenshot mit ausgewählter Startseite „Home“](media/end-user-sign-in/power-bi-home-selected.png)
 
-Wenn Sie nicht möchten, dass die Startseite geöffnet wird, können Sie [festlegen, dass ein Dashboard oder Bericht Ihrer **Favoriten**](end-user-featured.md) geöffnet wird. 
+Auf der Startseite „Home“ werden alle Inhalte angezeigt, für die Sie über Berechtigungen verfügen. Zunächst wird nicht viel Inhalt angezeigt. Das ändert sich jedoch mit der Zeit, wenn Sie und Ihre Kollegen Power BI verwenden. 
+
+![Startseite „Home“](media/end-user-sign-in/power-bi-home-landing.png)
+
+Wenn Sie nicht möchten, dass Power BI die Startseite „Home“ öffnet, können Sie [festlegen, dass stattdessen ein **ausgewähltes** Dashboard oder ein Bericht](end-user-featured.md) geöffnet wird. 
 
 ## <a name="safely-interact-with-content"></a>Sicheres Interagieren mit Inhalten
 Als ***Benutzer*** geben andere ihre Inhalte für Sie frei, und Sie interagieren mit diesen Inhalten, um die Daten zu untersuchen und Geschäftsentscheidungen zu treffen.  Während Sie in Power BI arbeiten (Filtern, Aufteilen, Abonnieren, Exportieren und Skalieren), wirken sich Ihre Änderungen nicht auf das zugrundeliegende Dataset oder den ursprünglichen freigegebenen Inhalt aus (Dashboards und Berichte). Sie müssen sich also keine Gedanken machen, dass Sie etwas kaputt machen könnten. In Power BI können Sie problemlos herum experimentieren. Das bedeutet nicht, dass Sie Ihre Änderungen nicht speichern können. Allerdings wirken sich die gespeicherten Änderungen nur auf **Ihre** Ansicht des Inhalts aus. Zum Wiederherstellen der ursprünglichen Standardansicht müssen Sie lediglich auf eine Schaltfläche klicken.
 
+![Schaltfläche „Auf Standard zurücksetzen“](media/end-user-sign-in/power-bi-reset.png)
+
 ## <a name="sign-out-of-power-bi-service"></a>Abmelden vom Power BI-Dienst
 Wenn Sie Power BI schließen oder sich abmelden, werden Ihre Änderungen gespeichert, damit Sie genau dort weitermachen können, wo Sie aufgehört haben.
 
-Schließen Sie einfach die Registerkarte im Browser, um Power BI zu schließen. 
+Schließen Sie die entsprechende Registerkarte im Browser, um Power BI zu schließen. 
 
 ![Klicken von X zum Schließen der Registerkarte](media/end-user-sign-in/power-bi-close.png) 
 
-Wenn Sie Ihren Computer mit jemandem teilen, wird empfohlen, dass Sie sich jedes Mal abmelden, wenn Sie Power BI schließen.  Klicken Sie zum Abmelden auf Ihr Profilbild in der oberen rechten Ecke, und wählen Sie **Abmelden** aus. Andernfalls können Sie die Registerkarte einfach schließen, wenn Sie fertig sind.
+Wenn Sie Ihren Computer mit jemandem teilen, wird empfohlen, dass Sie sich jedes Mal abmelden, wenn Sie Power BI schließen.  Klicken Sie zum Abmelden auf Ihr Profilbild in der oberen rechten Ecke, und wählen Sie **Abmelden** aus. Andernfalls können Sie die Registerkarte schließen, wenn Sie fertig sind.
 
 ![Profil geklickt](media/end-user-sign-in/power-bi-sign-out.png) 
 
 ## <a name="troubleshooting-and-considerations"></a>Problembehandlung und Überlegungen
 - Wenn Sie sich bei Power BI als Einzelperson registriert haben, melden Sie sich mit der E-Mail-Adresse an, die Sie beim Registrieren verwendet haben.
 
-- Wenn Sie Power BI mit mehreren Konten verwenden, werden Sie bei der Anmeldung dazu aufgefordert, ein Konto aus einer Liste auszuwählen und ein Kennwort einzugeben. 
+- Einige Benutzer verwenden Power BI mit mehreren Konten. Wenn dies der Fall ist, werden Sie bei der Anmeldung aufgefordert, ein Konto aus einer Liste auszuwählen. 
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Installieren und Verwenden von Apps mit Dashboards und Berichten in Power BI](end-user-app-view.md)

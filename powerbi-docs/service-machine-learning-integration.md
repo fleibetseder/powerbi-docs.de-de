@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 10ee974b73372fb2243febdcb4431b5decebdf4b
-ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.openlocfilehash: 9593296b0e09340fe4f62fff7a2e7722912a4216
+ms.sourcegitcommit: e533c65607bbba0f620fddabd6b107e5933772c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66823486"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72259941"
 ---
 # <a name="azure-machine-learning-integration-in-power-bi"></a>Azure Machine Learning-Integration in Power BI
 
@@ -70,7 +70,7 @@ Data Scientists verwenden zum Entwickeln und sogar Bereitstellen ihre Machine Le
 
 Diese Schemadatei muss in den bereitgestellten Webdienst für Modelle des Machine Learning-Diensts aufgenommen werden. Um das Schema für den Webdienst automatisch zu generieren, müssen Sie ein Beispiel der Eingabe/Ausgabe im Eingangsskript für das bereitgestellte Modell angeben. Lesen Sie dazu den Unterabschnitt zur (optionalen) automatischen Swagger-Schemagenerierung in den Bereitstellungsmodellen in der Dokumentation zum Azure Machine Learning Service. Der Link beinhaltet das Beispieleingangsskript mit den Anweisungen für die Schemagenerierung. 
 
-Insbesondere die Funktionen *@input_schema* und *@output_schema* im Eingangsskript verweisen auf die Eingabe- und Ausgabebeispielformate in den Variablen *input_sample* und *output_sample* und verwenden diese Beispiele zum Generieren einer OpenAPI-Spezifikation (Swagger) für den Webdienst während der Bereitstellung.
+Insbesondere verweisen die Funktionen *\@input_schema* und *\@output_schema* im Eingabeskript auf die Eingabe- und Ausgabebeispielformate in den Variablen *input_sample* und *output_sample* und verwenden diese Beispiele, um während der Bereitstellung eine OpenAPI-Spezifikation (Swagger) für den Webdienst zu generieren.
 
 Diese Anweisungen zur Schemagenerierung durch Aktualisieren des Eingangsskripts müssen ebenfalls auf Modelle angewendet werden, die automatisierte Experimente in Machine Learning unter Nutzung des Azure Machine Learning-SDKs verwenden.
 
@@ -113,9 +113,9 @@ Dieser Artikel enthält eine Übersicht über die Integration von Machine Learni
 
 Weitere Informationen zu Dataflows finden Sie in den folgenden Artikeln:
 * [Erstellen und Verwenden von Dataflows in Power BI](service-dataflows-create-use.md)
-* [Verwenden berechneter Entitäten in Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [Verwenden von Datenflüssen mit lokalen Datenquellen](service-dataflows-on-premises-gateways.md)
-* [Entwicklerressourcen für Power BI-Datenflüsse](service-dataflows-developer-resources.md)
+* [Using computed entities on Power BI Premium (Verwenden berechneter Entitäten in Power BI Premium)](service-dataflows-computed-entities-premium.md)
+* [Using dataflows with on-premises data sources (Verwenden von Datenflüssen mit lokalen Datenquellen)](service-dataflows-on-premises-gateways.md)
+* [Developer resources for Power BI dataflows (Entwicklerressourcen für Power BI-Datenflüsse)](service-dataflows-developer-resources.md)
 * [Dataflows und Integration in Azure Data Lake (Vorschauversion)](service-dataflows-azure-data-lake-integration.md)
 
 
