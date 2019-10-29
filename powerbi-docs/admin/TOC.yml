@@ -1,4 +1,6 @@
-- name: Power BI-Verwaltung
+- name: Power BI-Administratordokumentation
+  href: index.yml
+  expanded: true
   items:
     - name: Übersicht
       expanded: true
@@ -8,7 +10,7 @@
     - name: Konzepte
       expanded: true
       items:
-        - name: Administratorrolle in Office 365
+        - name: Administratorrolle in Microsoft 365
           href: ../service-admin-role.md
         - name: Häufig gestellte Fragen (FAQ)
           href: ../service-admin-faq.md
@@ -22,9 +24,9 @@
               href: ../service-admin-licensing-organization.md
             - name: Power BI Pro kaufen
               href: ../service-admin-purchasing-power-bi-pro.md
-            - name: Registrieren für eine Office 365-Testversion
+            - name: Registrieren mit einer kostenlosen Microsoft 365-Testversion
               href: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
-            - name: Hinzufügen von Power BI bei einem Office 365-Partner
+            - name: Hinzufügen von Power BI mit einem Microsoft 365-Partner
               href: ../service-admin-syndication-partner.md
         - name: Verwenden des Verwaltungsportals
           href: ../service-admin-portal.md
@@ -32,19 +34,19 @@
           href: ../service-admin-where-is-my-tenant-located.md
         - name: Suchen nach angemeldeten Benutzern
           href: ../service-admin-access-usage.md
-        - name: Power BI-Überwachung
+        - name: Überwachung
           href: ../service-admin-auditing.md
         - name: Nachverfolgen der Dienstintegrität
           href: ../service-admin-health.md
-        - name: Schließen des Power BI-Kontos
+        - name: Schließen des Kontos
           href: ../service-admin-closing-your-account.md
-        - name: Power BI und ExpressRoute
+        - name: ExpressRoute
           href: ../service-admin-power-bi-expressroute.md
         - name: Verwenden von Azure AD B2B
           href: ../service-admin-azure-ad-b2b.md
-        - name: "Sicherheit auf Zeilenebene mit Power\_BI"
+        - name: Sicherheit auf Zeilenebene
           href: ../service-admin-rls.md
-        - name: Archivierter Arbeitsbereich in Power BI
+        - name: Archivierter Arbeitsbereich
           href: ../service-admin-power-bi-archived-workspace.md
         - name: Konfigurieren mobiler Apps mit Intune
           href: ../service-admin-mobile-intune.md

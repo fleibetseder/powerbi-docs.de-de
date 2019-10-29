@@ -1047,6 +1047,8 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=849021'
             - name: Zugreifen auf freigegebene Datasets als OData-Feeds
               href: report-server/access-dataset-odata.md
+            - name: Ändern der Datenquellen-Verbindungszeichenfolgen mit PowerShell
+              href: report-server/connect-data-source-apis.md
             - name: Konfigurieren von geplanten Aktualisierungen
               href: report-server/configure-scheduled-refresh.md
             - name: Hinzufügen von Kommentaren zu einem Bericht

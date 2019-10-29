@@ -269,7 +269,7 @@ Report report = reports.Value.FirstOrDefault();
 
 ### <a name="create-the-embed-token"></a>Erstellen des Einbettungstokens
 
-Es wurde ein Einbettungstoken generiert, das aus der JavaScript-API verwendet werden kann. Das Einbettungstoken ist spezifisch für das Element, das Sie einbetten. Das heißt, dass Sie bei jedem Einbetten eines Power BI-Inhaltselements dafür ein neues Einbettungstoken erstellen müssen. Weitere Informationen hierzu, u.a. zum erforderlichen **accessLevel**, finden Sie unter [GenerateToken-API](https://msdn.microsoft.com/library/mt784614.aspx).
+Es wurde ein Einbettungstoken generiert, das aus der JavaScript-API verwendet werden kann. Das Einbettungstoken ist spezifisch für das Element, das Sie einbetten. Das heißt, dass Sie bei jedem Einbetten eines Power BI-Inhaltselements dafür ein neues Einbettungstoken erstellen müssen. Weitere Informationen hierzu, u. a. zum erforderlichen **accessLevel**, finden Sie unter [GenerateToken-API](https://msdn.microsoft.com/library/mt784614.aspx).
 
 *In der Datei „Services\EmbedService.cs“ in der [Beispielanwendung](https://github.com/Microsoft/PowerBI-Developer-Samples) finden Sie ein Beispiel zum Erstellen eines Einbettungstokens (Bericht, Dashboard oder Kachel).*
 
