@@ -424,11 +424,11 @@
     - name: Übersicht
       items:
         - name: Was ist Power BI?
-          href: power-bi-overview.md
+          href: fundamentals/power-bi-overview.md
         - name: Was ist der Power BI-Dienst?
           href: power-bi-service-overview.md
         - name: Vergleich zwischen Power BI Desktop und dem Power BI-Dienst
-          href: service-service-vs-desktop.md
+          href: designer/service-service-vs-desktop.md
     - name: Lernprogramme
       items:
         - name: Erste Schritte mit Power BI
