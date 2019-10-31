@@ -415,10 +415,20 @@
           href: desktop-latest-update-archive.md
         - name: Lächeln senden – Datenschutzerklärung für Power BI Desktop
           href: desktop-send-smile-privacy-statement.md
-        - name: Barrierefreiheit in Power BI-Berichten
-          href: desktop-accessibility.md
         - name: Verwalten des Power BI Desktop-Anmeldeformulars
           href: desktop-admin-sign-in-form.md
+        - name: Barrierefreiheit
+          items:
+            - name: Übersicht über die Barrierefreiheit in Power BI
+              href: desktop-accessibility-overview.md
+            - name: Erstellen barrierefreier Power BI-Berichte
+              href: desktop-accessibility-creating-reports.md
+            - name: Nutzen von Power BI-Berichten mit Barrierefreiheitstools
+              href: desktop-accessibility-consuming-tools.md
+            - name: Erstellen von Power BI-Berichten mit Barrierefreiheitstools
+              href: desktop-accessibility-creating-tools.md
+            - name: Tastenkombinationen für Barrierefreiheit für Power BI-Berichte
+              href: desktop-accessibility-keyboard-shortcuts.md
 - name: Power BI-Dienst
   items:
     - name: Übersicht
