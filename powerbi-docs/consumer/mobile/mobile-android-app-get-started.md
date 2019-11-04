@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: c5d6549c449c77cea709783b1634318e12fc2e52
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 5734c62485340417b6327f07df4abd7af3f2f185
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61350947"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060293"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Erste Schritte mit der mobilen Power BI-App auf Android-Geräten
 Die Android-App für Microsoft Power BI bietet Ihnen die mobile BI-Umgebung für Power BI, Power BI-Berichtsserver und Reporting Services. Mit dem touchfähigen, mobilen Livezugriff auf lokale Server und die Cloud können Sie Ihre Unternehmensdashboards überall anzeigen und mit ihnen interagieren. Untersuchen Sie die Daten in Dashboards, und geben Sie diese dann über eine E-Mail oder SMS für Kollegen frei. 
@@ -23,7 +23,7 @@ Die Android-App für Microsoft Power BI bietet Ihnen die mobile BI-Umgebung für
 
 Sie erstellen Power BI-Berichte in Power BI Desktop und veröffentlichen sie:
 
-* [Veröffentlichen Sie sie im Power BI-Dienst](../../power-bi-overview.md), und erstellen Sie Dashboards.
+* [Veröffentlichen Sie sie im Power BI-Dienst](../../fundamentals/power-bi-overview.md), und erstellen Sie Dashboards.
 * [Veröffentlichen Sie sie lokal auf dem Power BI-Berichtsserver](../../report-server/quickstart-create-powerbi-report.md).
 
 In der Power BI-App für Android interagieren Sie anschließend mit Ihren Dashboards und Berichten, die sich auf lokalen Servern oder in der Cloud befinden können.
@@ -136,7 +136,7 @@ Hier finden Sie weitere Möglichkeiten, die die Android-Geräte-App für Power B
 
 ### <a name="see-also"></a>Siehe auch
 * [Herunterladen der Android-App](http://go.microsoft.com/fwlink/?LinkID=544867) aus dem Android App Store.
-* [Was ist Power BI?](../../power-bi-overview.md)
+* [Was ist Power BI?](../../fundamentals/power-bi-overview.md)
 * Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
 
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/13/2018
 ms.author: mshenhav
-ms.openlocfilehash: c735b5e1abbed0c733ca4414e15fc44b741349d8
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 01ee3cf9be3a0d6b4350925d4ecb9e57b668457a
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61343882"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060233"
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Anzeigen lokaler Berichte und KPIs eines Berichtsservers in den mobilen Power BI-Apps
 
@@ -132,6 +132,6 @@ Sie können KPIs und Berichte im Webportal als Favoriten markieren und dann bequ
 3. Tippen Sie auf **Server entfernen**.
 
 ## <a name="next-steps"></a>Nächste Schritte
-* [Was ist Power BI?](../../power-bi-overview.md)  
+* [Was ist Power BI?](../../fundamentals/power-bi-overview.md)  
 * Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
 
