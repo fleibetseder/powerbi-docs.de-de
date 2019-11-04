@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: aa0827c0be31d65db7bff2c6e2476e5db59b2895
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 87c223c8ef0be0eac81bb672bde10023dcf79d71
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "60977994"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73059779"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Kacheln in den mobilen Power BI-Apps
 Gilt für:
@@ -122,6 +122,6 @@ Anschließend öffnen Sie in den mobilen Power BI-Apps Kacheln im Fokusmodus und
 4. Tippen Sie auf den Rückwärtspfeil oder die Schaltfläche „Zurück“, um die Kachel zu schließen und zum Dashboard zurückzukehren.
 
 ## <a name="next-steps"></a>Nächste Schritte
-* [Was ist Power BI?](../../power-bi-overview.md)
+* [Was ist Power BI?](../../fundamentals/power-bi-overview.md)
 * Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
 

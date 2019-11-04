@@ -11,14 +11,17 @@ ms.topic: conceptual
 ms.date: 09/24/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: a1cc536e83832ab89b8a0aee8e8f01b9ced35a10
-ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
+ms.openlocfilehash: e0ec01eb4d4ee8134a165d438f29baa4aee22841
+ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256359"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72716932"
 ---
 # <a name="view-power-bi-notifications"></a>Anzeigen von Power BI-Benachrichtigungen
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Die Mitteilungszentrale ist ein fortlaufender Feed von Informationen zu Ihrer Nutzung von Power BI. Öffnen Sie die Mitteilungszentrale, um Nachrichten über neue Dashboards, die mit Ihnen geteilt wurden, sowie Informationen über Power BI-Ereignisse und -Meetings, Warnungen, die Sie eingerichtet haben, und vieles mehr anzuzeigen. Sie können [Warnungen im Power BI-Dienst festlegen](end-user-alerts.md) wie auch in den mobilen Power BI-Apps.
 
 Sehen Sie sich an, wie Amanda Benachrichtigungen überprüft, verwaltet und beantwortet. Befolgen Sie anschließend die Anleitung unter dem Video, um es selbst auszuprobieren.    

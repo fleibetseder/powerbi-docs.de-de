@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 05/9/2019
-ms.openlocfilehash: 84afdf7072241533bf1e70d6a2a49d18c3da1d8f
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: d0372af2727861a4af0f4ebb983cb447b020b821
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307825"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021352"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>So lassen Sie sich ein Power BI-Visual zertifizieren
 
@@ -71,7 +71,7 @@ Stellen Sie sicher, dass Ihr benutzerdefiniertes Visual folgenden Anforderungen 
 
 * Wenn Eigenschaften in „capabilities.json“ geändert werden, stellen Sie sicher, dass sie nicht zu Störungen bei vorhandenen Benutzerberichten führen.
 
-* Achten Sie darauf, dass das visuelle Element die [Richtlinien für Power BI-Visuals](https://docs.microsoft.com/en-us/power-bi/developer/guidelines-powerbi-visuals#guidelines-for-power-bi-visuals-with-additional-purchases) einhält. **Wasserzeichen sind nicht zulässig**.
+* Achten Sie darauf, dass das visuelle Element die [Richtlinien für Power BI-Visuals](./developer/guidelines-powerbi-visuals.md#guidelines-for-power-bi-visuals-with-additional-purchases) einhält. **Wasserzeichen sind nicht zulässig**.
 
 * Ihr Visual darf nur öffentlich überprüfbare OSS-Komponenten besitzen (öffentliche JS-Bibliotheken oder TypeScript. Der Quellcode ist für die Überprüfung verfügbar und besitzt keine bekannten Sicherheitsrisiken). Wir können überprüfen, ob ein benutzerdefiniertes Visual eine kommerzielle Komponente verwendet.
 
@@ -192,7 +192,7 @@ So reichen Sie ein benutzerdefiniertes visuelles Element zur Zertifizierung ein
 
 ## <a name="faq"></a>HÄUFIG GESTELLTE FRAGEN
 
-Weitere Informationen zu Visuals finden Sie in den [häufig gestellten Fragen zu zertifizierten Visuals](#get-a-power-bi-visual-certified).
+Weitere Informationen zu Visuals finden Sie in den [häufig gestellten Fragen zu zertifizierten Visuals](power-bi-custom-visuals-faq.md#certified-power-bi-visuals).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

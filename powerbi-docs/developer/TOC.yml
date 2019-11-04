@@ -71,6 +71,8 @@
               href: visuals/landing-page.md
             - name: Start-URL
               href: visuals/launch-url.md
+            - name: API für lokalen Speicher
+              href: visuals/local-storage.md
             - name: Rendern von Ereignissen
               href: visuals/event-service.md
             - name: Sortierung

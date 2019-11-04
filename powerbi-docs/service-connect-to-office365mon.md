@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 8/29/2019
 ms.author: tebercov
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 364220d5d900004252e51184fc9cbd7e03b45b2d
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: 5d31eccd52164bb4d1ff37532d89dc7e147693d3
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70159910"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060828"
 ---
 # <a name="connect-to-office365mon-with-power-bi"></a>Herstellen einer Verbindung mit Office365Mon mithilfe von Power BI
 Die Analyse von Ausfällen und Integritätsdaten von Office 365 ist mit Power BI und der Office365Mon-Vorlagen-App ein Kinderspiel. Power BI ruft Ihre Daten ab – Stichprobendaten zu Ausfällen und Integrität eingeschlossen –, und erstellt basierend auf diesen Daten ein Dashboard und Berichte.
@@ -57,7 +57,7 @@ Stellen Sie eine Verbindung mit der [Office365Mon-Vorlagen-App](https://app.powe
 Wenn nach dem Eingeben Ihrer Office365Mon-Abonnementsanmeldeinformationen zur Anmeldung der **Anmeldefehler** gemeldet wird, verfügt das verwendete Konto nicht über die erforderlichen Berechtigungen, um die Office365Mon-Daten aus Ihrem Konto abzurufen. Überprüfen Sie, ob es sich um ein Administratorkonto handelt, und versuchen Sie es erneut.
 
 ## <a name="next-steps"></a>Nächste Schritte
-[Was ist Power BI?](power-bi-overview.md)
+[Was ist Power BI?](fundamentals/power-bi-overview.md)
 
 [Abrufen von Daten in Power BI](service-get-data.md)
 

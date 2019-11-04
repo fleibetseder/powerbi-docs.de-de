@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/30/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: bc562c1c75f72e0ada23580aa0698f6463c129bb
-ms.sourcegitcommit: 88e2a80b95b3e735689e75da7c35d84e24772e13
+ms.openlocfilehash: b351ba2151937b62002dc0cfca849cff58985581
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66814301"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060817"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Herstellen einer Verbindung mit Salesforce mithilfe von Power BI
 Mit Power BI können Sie sich problemlos mit Ihrem Salesforce.com-Konto verbinden. Mit dieser Verbindung können Sie Ihre Salesforce-Daten abrufen, und ein Dashboard und Berichte werden automatisch bereitgestellt.
@@ -91,7 +91,7 @@ Sehen Sie sich diese Lösung im folgenden Forum an, wenn beim Versuch, eine Verb
 
 
 ## <a name="next-steps"></a>Nächste Schritte
-[Was ist Power BI?](power-bi-overview.md)
+[Was ist Power BI?](fundamentals/power-bi-overview.md)
 
 [Datenquellen für den Power BI-Dienst](service-get-data.md)
 

@@ -8,17 +8,20 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 10/17/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9b0b4f186187dc16d0b9e5e6ae9049d2a108b19a
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: deca8a60a006d942fc8b38ed232e0215d94c2d9a
+ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70184392"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72717117"
 ---
 # <a name="apps-in-power-bi"></a>Apps in Power BI
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 ## <a name="what-is-a-power-bi-app"></a>Was ist eine Power BI-App?
 Eine *App* ist ein Power BI-Inhaltstyp, bei dem zusammengehörige Dashboards und Berichte an einem Ort zusammengefasst werden. Eine App bündelt ein oder mehrere Dashboards sowie einen oder mehrere Berichte. Apps werden von *Power BI-Designern* erstellt und mit *Endbenutzern* wie Ihnen geteilt. 
 

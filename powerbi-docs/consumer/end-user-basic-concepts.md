@@ -12,16 +12,18 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 2b9fd3fc971d2cf73aabb2033d3a64565333bc67
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 902bfe11ba3dfa4047ab5918de7081ae05fb9a09
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543696"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060348"
 ---
 # <a name="basic-concepts-for-the-power-bi-service-consumers"></a>Grundkonzepte für Benutzer des Power BI-Diensts
 
-In diesem Artikel wird davon ausgegangen, dass Sie bereits den Übersichtsartikel zu [Power BI](../power-bi-overview.md) gelesen haben und sich als [***Benutzer*** von Power BI](end-user-consumer.md) identifiziert haben. Benutzer erhalten Power BI-Inhalte wie Dashboards und Berichte von Kollegen. Benutzer nutzen den Power BI-Dienst, also die Website-basierte Version von Power BI.
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
+In diesem Artikel wird davon ausgegangen, dass Sie bereits den Übersichtsartikel zu [Power BI](../fundamentals/power-bi-overview.md) gelesen haben und sich als [***Benutzer*** von Power BI](end-user-consumer.md) identifiziert haben. Benutzer erhalten Power BI-Inhalte wie Dashboards und Berichte von Kollegen. Benutzer nutzen den Power BI-Dienst, also die Website-basierte Version von Power BI.
 
 Sie hören zweifellos den Begriff „Power BI Desktop“ oder einfach „Desktop“. Es ist das eigenständige Tool, das von *Designern* verwendet wird, die Dashboards und Berichte erstellen und mit Ihnen teilen. Sie müssen wissen, dass es andere Power BI-Tools gibt. Solange Sie ein Benutzer sind, arbeiten Sie nur mit dem Power BI-Dienst. Dieser Artikel bezieht sich nur auf den Power BI-Dienst.
 
