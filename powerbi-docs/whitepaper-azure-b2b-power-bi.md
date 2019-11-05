@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 7500b5b5ff7f3eabde730b527c16fb6fe2570b89
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 0227072818b7c09463b47ba896c782ded1e7f248
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523527"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432399"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Verteilen von Power BI Inhalt an externe Gastbenutzer mit Azure Active Directory B2B
 
 **Zusammenfassung:** Dieses Whitepaper erläutert das Verteilen von Inhalten an Benutzer außerhalb der Organisation mithilfe der Integration von Azure Active Directory Business-to-Business (Azure AD B2B).
 
-**Writer** Lukasz Pawlowski, Kasper de Jonge
+**Writer:** Lukasz Pawlowski, Kasper de Jonge
 
 **Technische Reviewer:** Adam Wilson, Sheng Liu, Qian Liang, Sergei gundorov, Jacob Grimm, Adam Saxton, Maya shenhav, Nimrod Shalit, Elisabeth Olson
 
@@ -39,7 +39,7 @@ Dieses Whitepaper behandelt alle Details, die Sie benötigen, um die Integration
 > [!NOTE]
 > In diesem Whitepaper bezeichnen wir Azure Active Directory als Azure AD und Azure Active Directory Business to Business as Azure AD B2B.
 
-## <a name="scenarios"></a>Szenarien
+## <a name="scenarios"></a>SS
 
 "Configuration Manager" ist ein Automobilhersteller, der mit vielen unterschiedlichen Lieferanten zusammenarbeitet, die ihm alle Komponenten, Materialien und Dienste zur Verfügung stellen, die für die Ausführung der Fertigungs Vorgänge erforderlich sind. Die Lieferkette der Lieferkette muss von "fitoso" optimiert werden, und es ist geplant, Power BI zur Überwachung wichtiger Leistungsmetriken der Lieferkette zu verwenden. Mit der Analyse der externen Lieferkettenpartner möchte man eine sichere und verwaltbare Methode nutzen.
 
@@ -97,7 +97,7 @@ Apps verfügen auch über ein eindeutiges Feature, mit dem App-Autoren die Anwen
 
 Da die Mitarbeiter von "Configuration Manager" weiterhin mit den unter Unternehmen oder Lieferanten zusammenarbeiten können, müssen die externen Techniker eng mit den Analysten von "zusammenarbeiten". Power BI bietet mehrere Features für die Zusammenarbeit, mit denen Benutzer über Inhalte kommunizieren können, die Sie nutzen können. Durch das Abonnieren von Dashboards (und das kurze kommentieren von Berichten) können Benutzerdaten Punkte erörtern, die Ihnen angezeigt werden, und mit den Berichts Autoren kommunizieren, um Fragen
 
-Derzeit können externe Gastbenutzer an Kommentaren teilnehmen, indem Sie Kommentare hinterlassen und die Antworten lesen. Im Unterschied zu internen Benutzern können Gastbenutzer jedoch @mentioned nicht sein, und Sie erhalten keine Benachrichtigungen, dass Sie einen Kommentar erhalten haben. Gastbenutzer können die Funktion "Abonnements" nicht innerhalb Power BI zum Zeitpunkt der Erstellung verwenden. In einer zukünftigen Version werden diese Einschränkungen aufgehoben, und der Gastbenutzer erhält eine e-Mail, wenn er einen @mentions Kommentar erhält, oder wenn ein Abonnement an die e-Mail-Adresse gesendet wird, die einen Link zum Inhalt in Power BI enthält.
+Derzeit können externe Gastbenutzer an Kommentaren teilnehmen, indem Sie Kommentare hinterlassen und die Antworten lesen. Im Gegensatz zu internen Benutzern können Gastbenutzer jedoch nicht @mentioned werden und erhalten keine Benachrichtigungen, dass Sie einen Kommentar erhalten haben. Gastbenutzer können die Funktion "Abonnements" nicht innerhalb Power BI zum Zeitpunkt der Erstellung verwenden. In einer zukünftigen Version werden diese Einschränkungen aufgehoben, und der Gastbenutzer erhält eine e-Mail, wenn ein Kommentar ihn @mentions, oder wenn ein Abonnement an die e-Mail gesendet wird, die einen Link zum Inhalt in Power BI enthält.
 
 ### <a name="access-content-in-the-power-bi-mobile-apps"></a>Zugreifen auf Inhalte in den mobilen Power BI-apps
 
@@ -120,7 +120,7 @@ Wenn alle Benutzer von Power BI für die Organisation intern sind, besteht keine
 
 Im folgenden finden Sie in der Regel Organisationsstrukturen, die sich gut für Azure AD B2B-Stil übergreifende Zusammenarbeit in Power BI eignen. Azure AD B2B funktioniert in den meisten Fällen gut, aber in einigen Situationen sind die allgemeinen alternativen Ansätze, die am Ende dieses Dokuments abgedeckt werden, in Erwägung gezogen.
 
-### <a name="case-1-direct-collaboration-between-organizations"></a>Fall 1: Direkte Zusammenarbeit zwischen Organisationen
+### <a name="case-1-direct-collaboration-between-organizations"></a>Fall 1: direkte Zusammenarbeit zwischen Organisationen
 
 Die Beziehung zwischen der Beziehung zwischen und Ihrem Heizkörper Lieferanten ist ein Beispiel für die direkte Zusammenarbeit zwischen Organisationen. Da es relativ wenig Benutzer bei "Configuration Manager" gibt, und der Lieferant, der Zugriff auf die Informationen zur Heiz Zuverlässigkeit benötigt, ist die Verwendung Azure AD B2B-basierten externen Freigabe ideal. Es ist einfach zu verwenden und einfach zu verwalten. Dies ist auch ein gängiges Muster in Beratungsdiensten, in dem ein Berater möglicherweise Inhalte für eine Organisation erstellen muss.
 
@@ -129,7 +129,7 @@ Die Beziehung zwischen der Beziehung zwischen und Ihrem Heizkörper Lieferanten 
 
 Diese Freigabe erfolgt in der Regel zunächst mithilfe der Ad-hoc-Freigabe pro Element. Wenn sich die Teams jedoch vergrößern oder Beziehungen vertiefen, wird der geplante Freigabe Ansatz pro Element zur bevorzugten Methode, um den Verwaltungsaufwand zu reduzieren. Darüber hinaus kann die Ad-hoc-oder geplante Freigabe von Power BI-apps, das kommentieren und Abonnieren von Inhalten in Unternehmen, der Zugriff auf Inhalte in Mobile Apps und die Organisations übergreifende Bearbeitung und Verwaltung von Power BI Inhalten ebenfalls durch die Organisation erfolgen. Wichtig: Wenn die Benutzer beider Organisationen über Power BI pro Lizenzen in den jeweiligen Organisationen verfügen, können Sie diese pro-Lizenzen in den Power BI Umgebungen der anderen verwenden. Dies bietet eine vorteilhafte Lizenzierung, da die einladende Organisation möglicherweise nicht für eine Power BI pro Lizenz für externe Benutzer bezahlen muss. Dies wird im Abschnitt zur Lizenzierung weiter unten in diesem Dokument ausführlicher erläutert.
 
-### <a name="case-2-parent-and-its-subsidiaries-or-affiliates"></a>Fall 2: Übergeordnete und zugehörige Tochtergesellschaften oder Unternehmen
+### <a name="case-2-parent-and-its-subsidiaries-or-affiliates"></a>Fall 2: übergeordnetes Element und seine Tochtergesellschaften oder Tochtergesellschaften
 
 Einige Organisationsstrukturen sind komplexer, einschließlich teilweiser oder vollständig eigener Niederlassungen, verbundener Unternehmen oder verwalteter Dienstanbieter Beziehungen. Diese Organisationen verfügen über eine übergeordnete Organisation, z. b. ein firmeneigenes Unternehmen, aber die zugrunde liegenden Organisationen arbeiten teilweise unabhängig voneinander unterschiedlichen regionalen Anforderungen. Dies führt dazu, dass jede Organisation über eine eigene Azure AD Umgebung verfügt und Power BI Mandanten trennt.
 
@@ -173,7 +173,7 @@ Der zweite Ansatz nutzt [Azure SQL-Datenbank](https://azure.microsoft.com/servic
 
 Es sind auch anspruchsvollere Ansätze möglich, die oben genannten sind jedoch die gängigste Vorgehensweise.
 
-### <a name="case-3-shared-environment-across-partners"></a>Fall 3: Gemeinsam genutzte Umgebung zwischen Partnern
+### <a name="case-3-shared-environment-across-partners"></a>Fall 3: gemeinsam genutzte Umgebung zwischen Partnern
 
 Bei der Zusammenarbeit mit einem Mitbewerber ist es möglich, ein Auto in einer gemeinsam genutzten assemblyleitung zu erstellen, das Fahrzeug jedoch unter verschiedenen Marken oder in verschiedenen Regionen zu verteilen. Dies erfordert umfassende Zusammenarbeit und gemeinsamen Besitz von Daten, Intelligenz und Analysen in Organisationen. Diese Struktur ist auch in der Consulting Services-Branche üblich, in der ein Team von Beratern eine Projekt basierte Analyse für einen Client durchführen kann.
 
@@ -202,11 +202,11 @@ Während von "Configuration Manager" ein Bericht zur Zuverlässigkeit der Zuverl
 ![Verteilung an viele Partner](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_10.png)
 
 
-Wenn eine Organisation standardisierte Daten und Einblicke an viele externe Benutzer/Organisationen verteilen muss, können Sie die Ad-hoc-oder geplante Freigabe von Power BI apps-Szenario verwenden, um schnell und ohne umfassende Entwicklungskosten ein BI-Portal zu erstellen. Der Prozess zum Erstellen eines solchen Portals mithilfe einer Power BI-APP wird in der Fallstudie behandelt: Schrittweise Anleitung zum Aufbau eines BI-Portals mit Power BI + Azure AD B2B – Schritt-für-Schritt-Anweisungen weiter unten in diesem Dokument.
+Wenn eine Organisation standardisierte Daten und Einblicke an viele externe Benutzer/Organisationen verteilen muss, können Sie die Ad-hoc-oder geplante Freigabe von Power BI apps-Szenario verwenden, um schnell und ohne umfassende Entwicklungskosten ein BI-Portal zu erstellen. Der Prozess zum Erstellen eines solchen Portals mithilfe einer Power BI-APP wird in der Fallstudie: Erstellen eines BI-Portals mit Power BI + Azure AD B2B – Schritt-für-Schritt-Anweisungen weiter unten in diesem Dokument behandelt.
 
 Eine gängige Variante dieses Szenarios ist, wenn eine Organisation versucht, Erkenntnisse mit Consumern auszutauschen, insbesondere wenn Sie Azure B2C mit Power BI verwenden möchten. Power BI bietet keine native Unterstützung für Azure B2C. Wenn Sie die Optionen für diesen Fall auswerten, empfiehlt es sich, die alternative Option 2 in der allgemeinen Alternative zu verwenden, die im Abschnitt weiter unten in diesem Dokument erläutert wird.
 
-## <a name="case-study-building-a-bi-portal-using-power-bi--azure-ad-b2b--step-by-step-instructions"></a>Fallstudie: Schritt-für-Schritt-Anleitung zum Aufbauen eines BI-Portals mit Power BI + Azure AD B2B –
+## <a name="case-study-building-a-bi-portal-using-power-bi--azure-ad-b2b--step-by-step-instructions"></a>Fallstudie: Aufbau eines BI-Portals mit Power BI + Azure AD B2B – Schritt-für-Schritt-Anweisungen
 
 Die Integration von Power BI in Azure AD B2B sorgt für eine nahtlose und unkomplizierte Möglichkeit, Gastbenutzern einen sicheren Zugriff auf das BI-Portal zu ermöglichen. Dies kann von "Configuration Manager" in drei Schritten festgelegt werden:
 
@@ -217,9 +217,9 @@ Die Integration von Power BI in Azure AD B2B sorgt für eine nahtlose und unkomp
 
     Die erste Aufgabe von "Configuration Manager" besteht darin, das BI-Portal in Power BI zu erstellen. Das BI-Portal von Configuration Manager besteht aus einer Sammlung von speziell erstellten Dashboards und Berichten, die vielen internen und Gastbenutzern zur Verfügung gestellt werden. Die empfohlene Vorgehensweise in Power BI besteht darin, eine Power BI-APP zu erstellen. Erfahren Sie mehr über [apps in Power BI](https://powerbi.microsoft.com/blog/distribute-to-large-audiences-with-power-bi-apps/).
 
-- Das BI-Team von Configuration Manager erstellt einen app-Arbeitsbereich in Power BI
+- Das BI-Team von Configuration Manager erstellt einen Arbeitsbereich in Power BI
 
-    ![App-Arbeitsbereich](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_12.png)
+    ![Arbeitsbereich](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_12.png)
     
 
 - Weitere Autoren werden dem Arbeitsbereich hinzugefügt.
@@ -232,7 +232,7 @@ Die Integration von Power BI in Azure AD B2B sorgt für eine nahtlose und unkomp
     ![Inhalt innerhalb des Arbeitsbereichs erstellen](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_14.png)
 
 
-    Nachdem der Inhalt nun in einem App-Arbeitsbereich erstellt wurde, kann er Gastbenutzer in Partnerorganisationen einladen, diesen Inhalt zu nutzen.
+    Nachdem der Inhalt nun in einem Arbeitsbereich erstellt wurde, kann er von der Gastbenutzer in Partnerorganisationen eingeladen werden, diesen Inhalt zu nutzen.
 
 2. Einladen von Gastbenutzern
 
@@ -319,7 +319,7 @@ Die Integration von Power BI in Azure AD B2B sorgt für eine nahtlose und unkomp
 
 Nachdem wir nun erfahren haben, wie wir Power BI Inhalte nahtlos an Gastbenutzer in Partnerorganisationen verteilen können, sehen wir uns an, wie dies im Hintergrund funktioniert.
 
-Wenn "Configuration Manager" [lucy@supplier1.com](mailto:lucy@supplier1.com) in das zugehörige Verzeichnis geladen wurde, erstellt [Lucy@supplier1.com](mailto:Lucy@supplier1.com) Azure AD eine Verknüpfung zwischen und dem Azure AD Mandanten von "". Über diesen Link können Sie Azure AD Lucy@supplier1.com wissen, dass auf Inhalte im Mandanten von "Configuration Manager" zugreifen kann.
+Wenn die [lucy@supplier1.com](mailto:lucy@supplier1.com) von "Azure AD" in das zugehörige Verzeichnis geladen wurde, erstellt eine Verknüpfung zwischen [Lucy@supplier1.com](mailto:Lucy@supplier1.com) und dem Azure AD Mandanten "". Über diesen Link können Sie Azure AD wissen, dass Lucy@supplier1.com auf Inhalte im Mandanten von "Configuration Manager" zugreifen kann.
 
 Wenn Lucy versucht, auf die Power BI-APP von Azure AD von Configuration Manager zuzugreifen, überprüft, ob Lucy auf den Mandanten von "Configuration Manager" zugreifen kann, und stellt Power BI ein Token bereit, das angibt, dass Lucy für den Zugriff auf Inhalte im Mandanten von "Configuration Manager" authentifiziert ist. Power BI verwendet dieses Token, um zu autorisieren und sicherzustellen, dass Lucy Zugriff auf die Power BI-APP von.
 
@@ -339,7 +339,7 @@ Mit einem von drei Ansätzen können Gastbenutzer von seinen Lieferanten und Par
 > [!NOTE]
 > _Der Free-Tarif Azure AD B2B's reicht für die Verwendung von Power BI mit Azure AD B2B aus. Für einige erweiterte Azure AD B2B-Features wie dynamische Gruppen ist eine zusätzliche Lizenzierung erforderlich. Weitere Informationen finden Sie in der Azure AD B2B-Dokumentation:_ [ _https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_ ](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance)
 
-### <a name="approach-1-contoso-uses-power-bi-premium"></a>Ansatz 1: Von "Configuration Manager" verwendet Power BI Premium
+### <a name="approach-1-contoso-uses-power-bi-premium"></a>Ansatz 1: von "Configuration Manager" verwendet Power BI Premium
 
 Bei diesem Ansatz erwirbt "Configuration Manager" Power BI Premium Kapazität und weist dieser Kapazität den Inhalt des BI-Portals zu. Dadurch können Gastbenutzer von Partnerorganisationen ohne Power BI Lizenz auf die Power BI-APP von zugreifen.
 
@@ -350,12 +350,12 @@ Außerdem kann es von den anderen Power BI Premium-Funktionen für die apps prof
 ![Zusätzliche Funktionen](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_24.png)
 
 
-### <a name="approach-2-contoso-assigns-power-bi-pro-licenses-to-guest-users"></a>Ansatz 2: Von "Configuration Manager" werden Gastbenutzern Power BI pro Lizenzen zugewiesen.
+### <a name="approach-2-contoso-assigns-power-bi-pro-licenses-to-guest-users"></a>Ansatz 2: von "Configuration Manager" werden Gastbenutzern Power BI pro Lizenzen zugewiesen.
 
 Bei dieser Vorgehensweise weist "Ada" von "Configuration Manager" pro-Lizenzen von Partnerorganisationen zu – Dies kann über das Microsoft 365 Admin Center von "" erfolgen. Dadurch können Gastbenutzer von Partnerorganisationen auf die Power BI-APP von "App" zugreifen, ohne selbst eine Lizenz erwerben zu müssen. Dies kann für die Freigabe mit externen Benutzern geeignet sein, deren Organisation Power BI noch nicht übernommen hat.
 
 > [!NOTE]
-> _Die pro-Lizenz von "Configuration Manager" gilt nur für Gastbenutzer, wenn Sie auf Inhalte im Mandanten von "Configuration Manager" zugreifen. Pro-Lizenzen ermöglichen den Zugriff auf Inhalte, die sich nicht in einer Power BI Premium Kapazität befinden. Externe Benutzer mit einer pro-Lizenz werden jedoch standardmäßig auf eine reine Nutzung beschränkt. Dies kann geändert werden, indem Sie den im_ Abschnitt _Aktivieren externer Benutzer zum Bearbeiten und Verwalten von Inhalten in Power BI weiter_ unten _in diesem Dokument_ beschriebenen Ansatz verwenden.
+> Die pro-Lizenz von "Configuration Manager" gilt nur für Gastbenutzer, wenn Sie auf Inhalte im Mandanten von "Configuration Manager" zugreifen. Pro-Lizenzen ermöglichen den Zugriff auf Inhalte, die sich nicht in einer Power BI Premium Kapazität befinden. Externe Benutzer mit einer pro-Lizenz werden jedoch standardmäßig auf eine reine Nutzung beschränkt. Dies kann mithilfe des Ansatzes geändert werden, der im Abschnitt _Aktivieren externer Benutzer zum Bearbeiten und Verwalten von Inhalten in Power BI weiter_ unten in diesem Dokument beschrieben wird.
 
 ![Lizenzinformationen](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_25.png)
 
@@ -365,7 +365,7 @@ Bei dieser Vorgehensweise weist "Ada" von "Configuration Manager" pro-Lizenzen v
 Bei dieser Vorgehensweise weist Lieferant 1 Lucy eine Power BI pro-Lizenz zu. Sie können dann mit dieser Lizenz auf die Power BI-APP von "Configuration Manager" zugreifen. Da Lucy beim Zugriff auf eine externe Power BI Umgebung seine pro-Lizenz aus seiner eigenen Organisation verwenden kann, wird diese Vorgehensweise auch als _Bring-your-own-License_ (byol) bezeichnet. Wenn beide Organisationen Power BI verwenden, bietet dies eine vorteilhafte Lizenzierung für die allgemeine Analyselösung und minimiert den Aufwand für das Zuweisen von Lizenzen für externe Benutzer.
 
 > [!NOTE]
-> _Die pro-Lizenz, die Lucy von Supplier 1 erhält, gilt für jeden Power BI Mandanten, bei dem Lucy ein Gastbenutzer ist. Pro-Lizenzen ermöglichen den Zugriff auf Inhalte, die sich nicht in einer Power BI Premium Kapazität befinden. Externe Benutzer mit einer pro-Lizenz werden jedoch standardmäßig auf eine reine Nutzung beschränkt. Dies kann geändert werden, indem Sie den im_ Abschnitt _Aktivieren externer Benutzer zum Bearbeiten und Verwalten von Inhalten in Power BI weiter_ unten _in diesem Dokument_ beschriebenen Ansatz verwenden.
+> Die pro-Lizenz, die Lucy von Supplier 1 erhält, gilt für jeden Power BI Mandanten, bei dem Lucy ein Gastbenutzer ist. Pro-Lizenzen ermöglichen den Zugriff auf Inhalte, die sich nicht in einer Power BI Premium Kapazität befinden. Externe Benutzer mit einer pro-Lizenz werden jedoch standardmäßig auf eine reine Nutzung beschränkt. Dies kann geändert werden, indem Sie den im Abschnitt _Aktivieren externer Benutzer zum Bearbeiten und Verwalten von Inhalten in Power BI weiter_ unten in diesem Dokument beschriebenen Ansatz verwenden.
 
 ![Pro-Lizenzanforderungen](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_26.png)
 
@@ -400,7 +400,7 @@ Dadurch wird eine Seite geöffnet, auf der das BI-Team von Team die beiden erste
 
 ![Sicherheit auf Zeilenebene](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_30.png)
 
-In dem Beispiel fügt "Configuration Manager" einen Benutzer in einer Partnerorganisation mit der e-[adam@themeasuredproduct.com](mailto:adam@themeasuredproduct.com)Mail-Adresse "" der Rolle "Europa" hinzu:
+In dem Beispiel fügt "Configuration Manager" einen Benutzer in einer Partnerorganisation mit der e-Mail-Adresse "[adam@themeasuredproduct.com](mailto:adam@themeasuredproduct.com)" zur Europäischen Rolle hinzu:
 
 ![Sicherheitseinstellungen auf Zeilenebene](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_31.png)
 
@@ -460,7 +460,7 @@ Power BI bietet die Möglichkeit, dass mit dem lokalen [Daten Gateway](https://p
 > [!NOTE]
 > Wenn Sie ein Gateway installieren, um eine Verbindung mit Ihrem Power BI-Mandanten herzustellen, müssen Sie einen Benutzer verwenden, der in Ihrem Mandanten erstellt wurde. Externe Benutzer können kein Gateway installieren und eine Verbindung mit Ihrem Mandanten herstellen.
 
-Für externe Benutzer ist dies möglicherweise komplizierter, da die externen Benutzer in der Regel nicht dem lokalen AD bekannt sind. Power BI bietet hierfür eine Problem Umgehung, indem es den Administratoren von Configuration Manager gestattet wird, die externen Benutzernamen den internen Benutzernamen zuzuordnen, wie unter [Verwalten Ihrer Datenquelle-Analysis Services](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise-manage-ssas/)beschrieben. Beispielsweise [lucy@supplier1.com](mailto:lucy@supplier1.com) kann [Lucy\_supplier1\_com#EXT@contoso.com](mailto:lucy_supplier1_com)zugeordnet werden.
+Für externe Benutzer ist dies möglicherweise komplizierter, da die externen Benutzer in der Regel nicht dem lokalen AD bekannt sind. Power BI bietet hierfür eine Problem Umgehung, indem es den Administratoren von Configuration Manager gestattet wird, die externen Benutzernamen den internen Benutzernamen zuzuordnen, wie unter [Verwalten Ihrer Datenquelle-Analysis Services](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise-manage-ssas/)beschrieben. Beispielsweise können [lucy@supplier1.com](mailto:lucy@supplier1.com) [Lucy\_supplier1\_com #EXT@contoso.com](mailto:lucy_supplier1_com)zugeordnet werden.
 
 ![Zuordnen von Benutzernamen](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_40.png)
 
@@ -471,7 +471,7 @@ Diese Methode ist in Ordnung, wenn "Configuration Manager" nur eine Handvoll Ben
 Mit Configuration Manager können externe Benutzerinhalte innerhalb der Organisation wie zuvor im Abschnitt Organisations übergreifende Bearbeitung und Verwaltung von Power BI Inhalt beschrieben mitwirken.
 
 > [!NOTE]
-> Um Inhalte innerhalb der Power BI Ihrer Organisation zu bearbeiten und zu verwalten, muss der Benutzer über eine Power BI pro Lizenz in einem anderen Arbeitsbereich als meinem Arbeitsbereich verfügen. Benutzer können pro-Lizenzen abrufen, wie in The_ _Licensing__section dieses Dokuments beschrieben._
+> Um Inhalte innerhalb der Power BI Ihrer Organisation zu bearbeiten und zu verwalten, muss der Benutzer über eine Power BI pro Lizenz in einem anderen Arbeitsbereich als meinem Arbeitsbereich verfügen. Benutzer können pro-Lizenzen abrufen, wie im Abschnitt zur _Lizenzierung_ dieses Dokuments beschrieben.
 
 Das Power BI Admin-Portal enthält die Einstellung **externen Gastbenutzern das Bearbeiten und Verwalten von Inhalten in den** Einstellungen der Organisation in den Mandanten Einstellungen. Standardmäßig ist die Einstellung auf deaktiviert festgelegt, was bedeutet, dass externe Benutzer standardmäßig eine eingeschränkte schreibgeschützte Benutzerumgebung erhalten. Die Einstellung gilt für Benutzer, deren usertype in Azure AD auf Guest festgelegt ist. In der folgenden Tabelle wird das Verhalten der Benutzerfreundlichkeit in Abhängigkeit von Ihrem usertype und der Konfiguration der Einstellungen beschrieben.
 
@@ -505,14 +505,14 @@ Für Gastbenutzer, die über die Einstellung erlauben Sie externen Gastbenutzern
 
 - Direktes Veröffentlichen aus Power BI Desktop im Power BI-Dienst
 - Gastbenutzer können Power BI Desktop nicht dazu verwenden, eine Verbindung mit Dienstdatasets im Power BI-Dienst herzustellen.
-- Klassische Arbeitsbereiche, die mit Office 365-Gruppen verknüpft sind: Gastbenutzer können keine Administratoren für diese Arbeitsbereiche erstellen oder selbst Administratoren sein. Sie können Mitglieder sein.
+- Klassische Arbeitsbereiche, die an Office 365-Gruppen gebunden sind: Gastbenutzer können diese Arbeitsbereiche nicht erstellen oder Administratoren erstellen. Sie können Mitglieder sein.
 - Das Senden von Ad-hoc-Einladungen wird für Arbeitsbereichszugriffslisten nicht unterstützt.
 - Power BI Publisher für Excel wird für Gastbenutzer nicht unterstützt.
 - Gastbenutzer können nicht Power BI Gateway installieren und eine Verbindung von Power BI Gateway mit Ihrer Organisation herstellen.
 - Gastbenutzer können keine Apps installieren und diese für die gesamte Organisation freigeben.
 - Gastbenutzer können keine Organisationsinhaltspakete verwenden, erstellen, aktualisieren oder installieren.
 - Gastbenutzer können nicht „In Excel analysieren“ verwenden.
-- Gastbenutzer können nicht @mentioned kommentiert werden (diese Funktion wird in einer zukünftigen Version hinzugefügt)
+- Gastbenutzer können nicht in Kommentar @mentioned werden (diese Funktion wird in einer zukünftigen Version hinzugefügt)
 - Gastbenutzer können keine Abonnements verwenden (diese Funktion wird in einer zukünftigen Version hinzugefügt)
 - Gastbenutzer, die diese Funktion verwenden, sollten ein Geschäfts-, Schul- oder Unikonto besitzen. Gastbenutzer, die persönliche Konten verwenden, haben aufgrund von Anmelde Beschränkungen weitere Einschränkungen.
 
@@ -607,7 +607,7 @@ Gründe für die Auswahl dieser Alternativen:
 
 
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>HÄUFIG GESTELLTE FRAGEN
 
 **Kann von "Configuration Manager" eine Einladung gesendet werden, die automatisch eingelöst wird, sodass der Benutzer nur "bereit für den Start" ist? Oder muss der Benutzer immer zur einlösungs-URL durch Klicken?**
 
@@ -621,7 +621,7 @@ Ja. Weitere Informationen finden Sie unter [bedingter Zugriff für Benutzer der 
 
 **Wie funktioniert die B2B-Zusammenarbeit, wenn der eingeladene Partner einen Verbund verwendet, um eine eigene lokale Authentifizierung hinzuzufügen?**
 
-Wenn der Partner über einen Azure AD Mandanten verfügt, der mit der lokalen Authentifizierungs Infrastruktur im Verbund ist, wird automatisch das lokale einmalige Anmelden (Single Sign-on, SSO) durchgeführt. Wenn der Partner über keinen Azure AD Mandanten verfügt, kann ein Azure AD Konto für neue Benutzer erstellt werden.
+Wenn der Partner über einen Azure AD Mandanten verfügt, der mit der lokalen Authentifizierungs Infrastruktur im Verbund ist, wird automatisch die lokale Single Sign-on (SSO) erreicht. Wenn der Partner über keinen Azure AD Mandanten verfügt, kann ein Azure AD Konto für neue Benutzer erstellt werden.
 
 **Kann ich Gastbenutzer mit e-Mail-Konten für Kunden einladen?**
 
