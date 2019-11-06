@@ -102,6 +102,8 @@
               href: embed-sample-for-customers.md
             - name: Einbetten von Inhalt für Ihre Organisation
               href: embed-sample-for-your-organization.md
+            - name: Einbetten paginierter Berichte für Kunden
+              href: embed-paginated-reports-customers.md
             - name: Einbetten von Inhalt für nationale Clouds
               href: embed-sample-for-customers-national-clouds.md
         - name: Konzepte
@@ -112,6 +114,8 @@
               href: embed-service-principal.md
             - name: Sicherheit auf Zeilenebene
               href: embedded-row-level-security.md
+            - name: Paginierte Berichte mit Sicherheit auf Zeilenebene
+              href: paginated-reports-row-level-security.md
             - name: Verwalten von mehreren Mandanten
               href: embed-multi-tenancy.md
             - name: Azure-Diagnoseprotokollierung für Power BI Embedded
