@@ -3,19 +3,19 @@ title: Whitepaper zur Sicherheit in Power BI
 description: Whitepaper zur Sicherheitsarchitektur und Implementierung von Power BI
 author: davidiseminger
 ms.author: davidi
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 4cb2ae69044b156d5f8a4bd554f8386808fb6b9e
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 8cbb1c4b25cacae5cb025f85790be6a1657b0482
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73430496"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73787764"
 ---
 # <a name="power-bi-security-whitepaper"></a>Whitepaper zur Sicherheit in Power BI
 
@@ -34,13 +34,13 @@ ms.locfileid: "73430496"
 
 **Power BI** ist ein Onlinesoftwaredienst (_SaaS_ oder Software-as-a-Service) von Microsoft, mit dem Sie ganz unkompliziert und schnell Self-Service-Business Intelligence-Dashboards, -Berichte, -Datasets und Visualisierungen erstellen können. Mithilfe von Power BI können Sie eine Verbindung mit vielen verschiedenen Datenquellen herstellen, Daten aus diesen Verbindungen kombinieren und formen und anschließend Berichte und Dashboards erstellen, die Sie mit anderen teilen können.
 
-Der Power BI-Dienst ist Gegenstand der [Microsoft Online Services-Nutzungsbedingungen](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) und der [Datenschutzbestimmungen von Microsoft Enterprise](http://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). Informationen zum für die Datenverarbeitung vorgesehenen Speicherort finden Sie im entsprechenden Abschnitt in den Microsoft Online Services-Nutzungsbedingungen. Complianceinformationen in Bezug auf Power BI finden Sie in erster Linie im [Microsoft Trust Center](https://www.microsoft.com/trustcenter). Das Power BI-Team arbeitet hart daran, seinen Kunden die neuesten Innovationen und Produktivitätsfunktionen zur Verfügung zu stellen. Power BI befindet sich derzeit in der Ebene D des Kompatibilitäts- [Frameworks von Office 365](http://go.microsoft.com/fwlink/p/?LinkID=618494).
+Der Power BI-Dienst ist Gegenstand der [Microsoft Online Services-Nutzungsbedingungen](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) und der [Datenschutzbestimmungen von Microsoft Enterprise](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). Informationen zum für die Datenverarbeitung vorgesehenen Speicherort finden Sie im entsprechenden Abschnitt in den Microsoft Online Services-Nutzungsbedingungen. Complianceinformationen in Bezug auf Power BI finden Sie in erster Linie im [Microsoft Trust Center](https://www.microsoft.com/trustcenter). Das Power BI-Team arbeitet hart daran, seinen Kunden die neuesten Innovationen und Produktivitätsfunktionen zur Verfügung zu stellen. Power BI befindet sich derzeit in der Ebene D des Kompatibilitäts- [Frameworks von Office 365](https://go.microsoft.com/fwlink/p/?LinkID=618494).
 
 In diesem Artikel wird die Power BI-Sicherheit anhand einer Erläuterung der Power BI-Architektur beschrieben, anschließend wird erklärt, wie Benutzer Power BI zur Authentifizierung verwenden können und wie Datenverbindungen hergestellt werden. Danach erhalten Sie Informationen dazu, wie Power BI Daten innerhalb des Diensts speichert und verschiebt. Zudem finden Sie im letzten Abschnitt Fragen und Antworten zum Thema Sicherheit.
 
 ## <a name="power-bi-architecture"></a>Architektur von Power BI
 
-Der **Power BI**-Dienst basiert auf **Azure**, der [Cloud Computing-Plattform](http://azure.microsoft.com/overview/what-is-azure/) von Microsoft. Power BI wird derzeit weltweit in vielen Rechenzentren bereitgestellt und in den Regionen, die von diesen Rechenzentren abgedeckt werden, gibt es dieselbe Anzahl an aktiven Bereitstellungen, die den Kunden zur Verfügung stehen, und passiven Bereitstellungen, die jeweils zur Sicherung der aktiven Bereitstellungen dienen.
+Der **Power BI**-Dienst basiert auf **Azure**, der [Cloud Computing-Plattform](https://azure.microsoft.com/overview/what-is-azure/) von Microsoft. Power BI wird derzeit weltweit in vielen Rechenzentren bereitgestellt und in den Regionen, die von diesen Rechenzentren abgedeckt werden, gibt es dieselbe Anzahl an aktiven Bereitstellungen, die den Kunden zur Verfügung stehen, und passiven Bereitstellungen, die jeweils zur Sicherung der aktiven Bereitstellungen dienen.
 
 Jede Power BI-Bereitstellung umfasst zwei Cluster – ein Web-Front-End (**WFE**)-Cluster und ein **-Back-End** -Cluster. Diese beiden Cluster werden auf dem folgenden Bild dargestellt und sind Hintergrund für den Rest dieses Artikels. 
 
@@ -117,8 +117,8 @@ Power BI wird basierend auf dem Bereitstellungsort von Power BI-Clustern in regi
 
 Über die folgenden Links erhalten Sie weitere Informationen zu Azure-Rechenzentren.
 
-- [Azure-Regionen:](http://azure.microsoft.com/regions/) Informationen zu Azure-Standorten auf der ganzen Welt
-- [Azure-Dienste, nach Region:](http://azure.microsoft.com/regions/#services) eine vollständige Liste der Azure-Dienste (sowohl Infrastruktur- als auch Plattformdienste), die Microsoft in den einzelnen Regionen zur Verfügung stellt.
+- [Azure-Regionen:](https://azure.microsoft.com/regions/) Informationen zu Azure-Standorten auf der ganzen Welt
+- [Azure-Dienste, nach Region:](https://azure.microsoft.com/regions/#services) eine vollständige Liste der Azure-Dienste (sowohl Infrastruktur- als auch Plattformdienste), die Microsoft in den einzelnen Regionen zur Verfügung stellt.
 
 Derzeit ist der Power BI-Dienst in bestimmten Regionen verfügbar, die von Rechenzentren bedient werden, wie im [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)beschrieben. Über den folgenden Link wird eine Karte mit Power BI-Rechenzentren angezeigt (durch Zeigen auf eine Region werden die Rechenzentren angezeigt, die sich dort befinden):
 
@@ -126,7 +126,7 @@ Derzeit ist der Power BI-Dienst in bestimmten Regionen verfügbar, die von Reche
 
 Microsoft bietet auch Rechenzentren für unabhängige Staaten an. Weitere Informationen zur Verfügbarkeit des Power BI-Diensts für nationale Clouds finden Sie unter [Nationale Power BI-Clouds](https://powerbi.microsoft.com/clouds/).
 
-Weitere Informationen zu Speicherort und Verwendung Ihrer Daten finden Sie im [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Verpflichtungen zum Speicherort ruhender Kundendaten sind in den **Bedingungen zur Datenverarbeitung** der [Bestimmungen für Onlinedienste von Microsoft](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) angegeben.
+Weitere Informationen zu Speicherort und Verwendung Ihrer Daten finden Sie im [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Verpflichtungen zum Speicherort ruhender Kundendaten sind in den **Bedingungen zur Datenverarbeitung** der [Bestimmungen für Onlinedienste von Microsoft](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) angegeben.
 
 ## <a name="user-authentication"></a>Benutzerauthentifizierung
 
@@ -224,7 +224,7 @@ Bei cloudbasierten Datenquellen verschlüsselt die Datenverschiebungsrolle die V
         - Wenn das Dataset für die Aktualisierung festgelegt ist, werden die Anmeldeinformationen verschlüsselt in der Azure SQL-Datenbank-Instanz der Datenverschiebung gespeichert. Der Verschlüsselungsschlüssel wird auf dem Computer gespeichert, der das Gateway für die Infrastruktur des Kunden ausführt.
         - Wenn das Dataset nicht für die Aktualisierung festgelegt ist, werden keine Anmeldeinformationen für die Datenquellen gespeichert.
 
-1. Daten
+1. abrufen
 
     a. Analysis Services (lokal) und DirectQuery: Im Power BI-Dienst werden keine Datasets gespeichert.
 
@@ -301,7 +301,7 @@ Nicht flüchtige Geräte sind Geräte, die über Arbeitsspeicher verfügen, der 
     c. Push-Daten: keine (nicht zulässig)
 
     d. ETL: keine (wie im Abschnitt **Ruhende Daten** oben beschrieben werden weder Anmeldeinformationen noch anderes im Computeknoten gespeichert)
-4. Daten
+4. abrufen
 
     Einige Datenartefakte können für einen begrenzten Zeitraum auf dem Datenträger der Computeknoten gespeichert werden.
 
@@ -371,7 +371,7 @@ Der Datencache von Power BI Mobile wird zwei Wochen lang auf dem Gerät gespeich
 
 Power BI Mobile-Anwendungen berücksichtigen keine Ordner auf dem Gerät. 
 
-Alle drei Plattformen, die für Power BI Mobile verfügbar sind, unterstützen Microsoft Intune, ein Softwaredienst, der Mobilgeräte- und Anwendungsverwaltung anbietet. Wenn Intune aktiviert und konfiguriert ist, werden Daten auf dem mobilen Gerät verschlüsselt, und die Power BI-Anwendung selbst kann nicht auf einer SD-Karte installiert werden. Weitere Informationen zu [Microsoft Intune](http://www.microsoft.com/cloud-platform/microsoft-intune).
+Alle drei Plattformen, die für Power BI Mobile verfügbar sind, unterstützen Microsoft Intune, ein Softwaredienst, der Mobilgeräte- und Anwendungsverwaltung anbietet. Wenn Intune aktiviert und konfiguriert ist, werden Daten auf dem mobilen Gerät verschlüsselt, und die Power BI-Anwendung selbst kann nicht auf einer SD-Karte installiert werden. Weitere Informationen zu [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).
 
 ## <a name="power-bi-security-questions-and-answers"></a>Fragen und Antworten zur Power BI-Sicherheit
 
@@ -487,7 +487,7 @@ Weitere Informationen zu Power BI finden Sie in den folgenden Ressourcen:
 - [Erste Schritte mit Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471664)
 - [Power BI REST APIs – Overview (Power BI-REST-APIs – Übersicht)](https://msdn.microsoft.com/library/dn877544.aspx)
 - [Power BI REST APIs (Power BI-REST-APIs)](https://msdn.microsoft.com/library/mt147898.aspx)
-- [Lokales Datengateway](service-gateway-onprem.md)
+- [On-premises data gateway (Lokales Datengateway)](service-gateway-onprem.md)
 - [Power BI und ExpressRoute](service-admin-power-bi-expressroute.md)
 - [Nationale Power BI-Clouds](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)

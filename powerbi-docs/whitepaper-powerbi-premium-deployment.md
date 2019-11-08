@@ -3,19 +3,19 @@ title: Bereitstellen und Verwalten von Power BI Premium Kapazitäten
 description: Machen Sie sich mit den möglichen Power BI Premium vertraut, und erfahren Sie, wie Sie skalierbare Lösungen entwerfen, bereitstellen, überwachen und beheben.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/06/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: eecbc43f26cebc12884ae6c5143a815f6e310ce5
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: f9269b52b1721cd7c6801cd0337911159c0b2494
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432367"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73786344"
 ---
 # <a name="deploying-and-managing-power-bi-premium-capacities"></a>Bereitstellen und Verwalten von Power BI Premium Kapazitäten
 
@@ -48,7 +48,7 @@ Im Rahmen des Themas dieses Whitepaper werden in diesem Abschnitt Kapazitäten, 
 
 Bei gemeinsam genutzten Kapazitäten werden Workloads auf Computeressourcen ausgeführt, die gemeinsam mit anderen Kunden genutzt werden. Da die Kapazität Ressourcen gemeinsam nutzen muss, werden Einschränkungen auferlegt, um "Fairplay" zu gewährleisten, z. b. die maximale Modell Größe (1 GB) und die maximale tägliche Aktualisierungshäufigkeit (acht Mal pro Tag).
 
-### <a name="workspaces"></a>Arbeitsbereiche
+### <a name="workspaces"></a>Workspaces
 
 Power BI Arbeitsbereiche befinden sich innerhalb von Kapazitäten und stellen Sicherheits-, Zusammenarbeits-und Bereitstellungs Container dar. Jeder Power BI-Benutzer verfügt über einen persönlichen Arbeitsbereich, der als **Mein Arbeitsbereich** bezeichnet wird. Zusätzliche Arbeitsbereiche können erstellt werden, um die Zusammenarbeit und Bereitstellung zu ermöglichen. Diese werden als **Arbeitsbereiche**bezeichnet. Arbeitsbereiche, einschließlich persönlicher Arbeitsbereiche, werden standardmäßig in der gemeinsam genutzten Kapazität erstellt.
 
@@ -327,7 +327,7 @@ In der folgenden Tabelle werden die Ressourcen und die Grenzwerte für die einze
 
 | Kapazitätsknoten | Gesamtzahl an V-Kernen | Back-End-V-Kerne | RAM (GB) | Front-End-V-Kerne | DQ/LC (pro Sekunde) | Modell-Aktualisierungsparallelität |
 | --- | --- | --- | --- | --- | --- | --- |
-| EM1/A1 | 1 | 0,5 | 3 | 0,5 | 3,75 | 1 |
+| EM1/A1 | 1 | 0.5 | 3 | 0.5 | 3,75 | 1 |
 | EM2/A2 | 2 | 1 | 5 | 1 | 7,5 | 2 |
 | EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
