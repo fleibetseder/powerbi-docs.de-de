@@ -3,19 +3,18 @@ title: Bereitstellen und Verwalten von Power BI Premium Kapazitäten
 description: Machen Sie sich mit den möglichen Power BI Premium vertraut, und erfahren Sie, wie Sie skalierbare Lösungen entwerfen, bereitstellen, überwachen und beheben.
 author: mgblythe
 ms.author: mblythe
-manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/06/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: f9269b52b1721cd7c6801cd0337911159c0b2494
-ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
+ms.openlocfilehash: 3ccd4af0f00e132c8bc0bd29a9ff23f89b13a15f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73786344"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880613"
 ---
 # <a name="deploying-and-managing-power-bi-premium-capacities"></a>Bereitstellen und Verwalten von Power BI Premium Kapazitäten
 
@@ -367,41 +366,41 @@ Das Verwalten von Power BI Premium umfasst das erwerben von Abonnements sowie da
 
 ### <a name="creating-and-managing-capacities"></a>Erstellen und Verwalten von Kapazitäten
 
-Auf der Seite " **Kapazitäts Einstellungen** " des **Power BI admin** -Portals wird die Anzahl der erworbenen und verfügbaren v-Kerne angezeigt (d. h., Sie werden einer Kapazität zugewiesen), und es werden Premium-Kapazitäten aufgeführt. Auf der Seite können globale Administratoren von Office 365 oder Power BI-Dienst Administratoren Premium-Kapazitäten von verfügbaren v-Kernen erstellen oder vorhandene Premium-Kapazitäten ändern.
+Auf der Seite " **Kapazitäts Einstellungen** " des **Power BI admin** -Portals wird die Anzahl der erworbenen und verfügbaren v-Kerne angezeigt (d. h., Sie werden einer Kapazität zugewiesen), und es werden Premium-Kapazitäten aufgeführt. The page allows Office 365 Global Administrators or Power BI service administrators to create Premium capacities from available v-cores, or to modify existing Premium capacities.
 
-Beim Erstellen einer Premium-Kapazität muss der Administrator Folgendes definieren:
+When creating a Premium capacity, the administrator is required to define:
 
-- Kapazitäts Name (innerhalb des Mandanten eindeutig)
-- Kapazitäts Administrator (en)
+- Capacity name (unique within the tenant)
+- Capacity admin(s)
 - Kapazitätsumfang
-- Region für die Daten Residenz \[[12](#endnote-12)\]
+- Region for data residency \[[12](#endnote-12)\]
 
 Mindestens ein Kapazitätsadministrator muss zugewiesen werden. Als Kapazitätsadministratoren zugewiesene Benutzer können folgende Aktionen ausführen:
 
-- Arbeitsbereiche der Kapazität zuweisen
-- Verwalten von Benutzerberechtigungen zum Hinzufügen von zusätzlichen Kapazitäts Administratoren oder Benutzern mit Zuweisungs Berechtigungen (damit Sie Arbeitsbereiche der Kapazität zuweisen können)
-- Verwalten von Arbeits Auslastungen, um die maximale Speicherauslastung für paginierte Berichte und Datenfluss Arbeits Auslastungen zu konfigurieren
-- Starten Sie die Kapazität neu, um alle Vorgänge zurückzusetzen, wenn die Systemüberlastung \[[13](#endnote-13)\]
+- Assign workspaces to the capacity
+- Manage user permissions, to add additional Capacity Admins or users with assignment permissions (to enable them to assign workspaces to the capacity)
+- Manage workloads, to configure maximum memory usage for paginated reports and dataflows workloads
+- Restart the capacity, to reset all operations in case of system overload \[[13](#endnote-13)\]
 
-Kapazitäts Administratoren können nicht auf Arbeitsbereichs Inhalte zugreifen (es sei denn, Sie haben explizit zugewiesene Arbeitsbereichs Berechtigungen) und haben keinen Zugriff auf alle Power BI Administrator Bereiche (sofern nicht explizit zugewiesen) wie nutzungsmetriken, Überwachungs Protokolle oder Mandanten Einstellungen. Wichtig: Kapazitätsadministratoren sind auch nicht berechtigt, neue Kapazitäten zu erstellen oder vorhandene Kapazitäten zu skalieren. Außerdem werden Sie pro Kapazität zugewiesen, um sicherzustellen, dass Sie nur Kapazitäten anzeigen und verwalten können, denen Sie zugewiesen sind.
+Capacity Admins cannot access workspace content (unless explicitly assigned workspace permissions) and they do not have access to all Power BI admin areas (unless explicitly assigned) such as usage metrics, audit logs or tenant settings. Wichtig: Kapazitätsadministratoren sind auch nicht berechtigt, neue Kapazitäten zu erstellen oder vorhandene Kapazitäten zu skalieren. Also, they are assigned on a per capacity-basis, ensuring that they can only view and manage capacities to which they are assigned.
 
-Die Kapazitäts Größe muss in einer verfügbaren Liste mit SKU-Optionen ausgewählt werden, die durch die Anzahl der verfügbaren v-Kerne im Pool eingeschränkt wird. Es ist möglich, mehrere Kapazitäten aus dem Pool zu erstellen, die aus einer oder mehreren erworbenen SKUs stammen können. Beispielsweise könnte eine P3-SKU (32 V-Kerne) zum Erstellen von drei Kapazitäten verwendet werden: eine P2 (16 V-Kerne) und zwei P1 (2 x 8 V-Kerne). Verbesserte Leistung und Skalierbarkeit können durch die Erstellung von kleineren Kapazitäten erreicht werden. dieses Thema wird im Abschnitt [Optimieren von Premium-Kapazitäten](#optimizing-premium-capacities) erläutert. Die folgende Abbildung zeigt ein Beispiel für das Setup für die fiktive Organisation "Unternehmen", bestehend aus fünf Premium-Kapazitäten (3 x P1 und 2 x P3), die jeweils Arbeitsbereiche enthalten, und mehreren Arbeitsbereichen in gemeinsam genutzter Kapazität.
+Capacity size must be selected from an available list of SKU options which is constrained by the number of available v-cores in the pool. It is possible to create multiple capacities from the pool which could be sourced from one or more purchased SKUs. Beispielsweise könnte eine P3-SKU (32 V-Kerne) zum Erstellen von drei Kapazitäten verwendet werden: eine P2 (16 V-Kerne) und zwei P1 (2 x 8 V-Kerne). Improved performance and scale may be achieved by creating smaller sized capacities, and this topic is discussed in the [Optimizing Premium Capacities](#optimizing-premium-capacities) section. The following image shows an example setup for the fictitious Contoso organization consisting of five Premium capacities (3 x P1, and 2 x P3) with each containing workspaces, and several workspaces in shared capacity.
 
 ![Ein Beispielsetup für die fiktive Organisation Contoso](media/whitepaper-premium-deployment/contoso-organization-example.png)
 
-Eine Premium-Kapazität kann einer anderen Region als der Start Region des Power BI Mandanten zugewiesen werden. Dadurch wird die administrative Kontrolle über die Rechenzentren (innerhalb definierter geografischer Regionen) Power BI Inhalts bereitgestellt. \[[12](#endnote-12)\]
+A Premium capacity can be assigned to a region other than the home region of the Power BI tenant, providing administrative control over which datacenters (within defined geographic regions) Power BI content resides. \[[12](#endnote-12)\]
 
 Power BI-Dienstadministratoren und globale Office 365-Administratoren können Premium-Kapazitäten ändern. Sie haben insbesondere folgende Möglichkeiten:
 
-- Ändern Sie die Kapazitäts Größe, um Ressourcen zentral hoch-oder Herunterskalieren. Es ist jedoch nicht möglich, ein Downgrade für eine P-SKU auf eine EM-SKU durchzuführen oder umgekehrt.
-- Kapazitäts Administratoren hinzufügen oder entfernen
-- Hinzufügen oder Entfernen von Benutzern mit Zuweisungs Berechtigungen
-- Hinzufügen oder Entfernen zusätzlicher Workloads
-- Bereiche ändern
+- Change the capacity size to scale up or scale down resources. However, it is not possible to downgrade a P SKU to an EM SKU, or upgrade vice versa.
+- Add or remove Capacity Admins
+- Add or remove users that have assignment permissions
+- Add or remove additional workloads
+- Change regions
 
-Zuweisungsberechtigungen sind erforderlich, um einer bestimmten Premium-Kapazität einen Arbeitsbereich zuzuweisen. Die Berechtigungen können für die gesamte Organisation, bestimmte Benutzer oder Gruppen gewährt werden.
+Zuweisungsberechtigungen sind erforderlich, um einer bestimmten Premium-Kapazität einen Arbeitsbereich zuzuweisen. The permissions can be granted to the entire organization, specific users or groups.
 
-Premium-Kapazitäten unterstützen standardmäßig Workloads für die Ausführung von Power BI-Abfragen. Außerdem werden drei zusätzliche Workloads unterstützt: **paginierte Berichte**, **Dataflows**und **Ki**. Jede Workload erfordert das Konfigurieren des maximalen Arbeitsspeichers (als Prozentsatz des gesamten verfügbaren Arbeitsspeichers) für die Verwendung durch die Workload. Es ist wichtig zu verstehen, dass sich das Erhöhen der maximalen Speicher Belegungen auf die Anzahl der aktiven Modelle, die gehostet werden können, und den Durchsatz von Aktualisierungen auswirkt.
+Premium-Kapazitäten unterstützen standardmäßig Workloads für die Ausführung von Power BI-Abfragen. It also supports three additional workloads: **Paginated Reports**, **Dataflows**, and **AI**. Jede Workload erfordert das Konfigurieren des maximalen Arbeitsspeichers (als Prozentsatz des gesamten verfügbaren Arbeitsspeichers) für die Verwendung durch die Workload. It is important to understand that increasing maximum memory allocations can impact on the number of active models that can be hosted, and the throughput of refreshes.
 
 Der Arbeitsspeicher wird Dataflows dynamisch zugeordnet, ist paginierten Berichten jedoch statisch zugeordnet. Der Grund für die statische Zuordnung des maximalen Arbeitsspeichers ist, dass paginierte Berichte innerhalb eines gesicherten, eigenständigen Raums der Kapazität ausgeführt werden können. Beim Festlegen des Arbeitsspeichers für paginierte Berichte ist Vorsicht geboten, da der verfügbare Arbeitsspeicher für das Laden von Modellen reduziert wird.
 
@@ -412,18 +411,18 @@ Der Arbeitsspeicher wird Dataflows dynamisch zugeordnet, ist paginierten Bericht
 | KI | N/V | 20 % Standard; mindestens 20 %  | 20 % Standard, mindestens 10 % | 20 % Standard, mindestens 5 %  |
 | | | | | |
 
-Das Löschen einer Premium-Kapazität ist möglich und führt nicht zum Löschen der Arbeitsbereiche und Inhalte. Stattdessen werden alle zugewiesenen Arbeitsbereiche in freigegebene Kapazität verschoben. Wenn die Premium-Kapazität in einer anderen Region erstellt wurde, wird der Arbeitsbereich in die freigegebene Kapazität der Start Region verschoben.
+Deleting a Premium capacity is possible and will not result in the deletion of its workspaces and content. Instead, it will move any assigned workspaces to shared capacity. When the Premium capacity was created in a different region, the workspace will be moved to shared capacity of the home region.
 
-### <a name="assigning-workspaces-to-capacities"></a>Zuweisen von Arbeitsbereichen zu Kapazitäten
+### <a name="assigning-workspaces-to-capacities"></a>Assigning Workspaces to Capacities
 
-Arbeitsbereiche können einer Premium-Kapazität im **Power BI admin**-**Portal** oder-für einen Arbeitsbereich im **Arbeitsbereich** zugewiesen werden.
+Workspaces can be assigned to a Premium capacity in the **Power BI Admin**  **Portal** or - for a workspace - in the **Workspace** pane.
 
-Kapazitäts Administratoren und globale Administratoren von Office 365 oder Power BI-Dienst Administratoren können Arbeitsbereiche im **Power BI Verwaltungs**  **Portal**Massen zuweisen. Zuweisungen im Massenvorgang können auf Folgendes angewendet werden:
+Capacity Admins, as well as Office 365 Global Administrators or Power BI service administrators, can bulk assign workspaces in the **Power BI Admin**  **Portal**. Zuweisungen im Massenvorgang können auf Folgendes angewendet werden:
 
-- **Arbeitsbereiche nach Benutzern** : alle Arbeitsbereiche, die sich im Besitz dieser Benutzer befinden, einschließlich persönlicher Arbeitsbereiche, werden der Premium-Kapazität zugewiesen. Dies schließt die erneute Zuweisung von Arbeitsbereichen ein, wenn Sie bereits einer anderen Premium-Kapazität zugewiesen sind. Außerdem werden den Benutzern auch Berechtigungen zur Zuweisung von Arbeitsbereichen zugewiesen.
+- **Workspaces by users** : All workspaces owned by those users, including personal workspaces, are assigned to the Premium capacity. This will include the re-assignment of workspaces when they are already assigned to a different Premium capacity. Außerdem werden den Benutzern auch Berechtigungen zur Zuweisung von Arbeitsbereichen zugewiesen.
 
 - **Bestimmte Arbeitsbereiche**
-- **Die Arbeitsbereiche der gesamten Organisation** : alle Arbeitsbereiche, einschließlich persönlicher Arbeitsbereiche, werden der Premium-Kapazität zugewiesen. Außerdem werden allen aktuellen und zukünftigen Benutzern Arbeitsbereichs Zuweisungs Berechtigungen zugewiesen. \[[14](#endnote-14)\]
+- **The entire organization's workspaces** : All workspaces, including personal workspaces, are assigned to the Premium capacity. In addition, all current and future users are assigned workspace assignment permissions. \[[14](#endnote-14)\]
 
 Ein Arbeitsbereich kann einer Premium-Kapazität im Bereich **Arbeitsbereich** hinzugefügt werden, sofern der Benutzer ein Arbeitsbereichsadministrator ist und über Zuweisungsberechtigungen verfügt.
 
@@ -435,11 +434,11 @@ Im Power BI-Dienst ist ein Arbeitsbereich, der einer Premium-Kapazität zugewies
 
 ![Identifizieren eines Arbeitsbereichs, der einer Premium-Kapazität zugewiesen ist](media/whitepaper-premium-deployment/premium-diamond-icon.png)
 
-### <a name="monitoring-capacities"></a>Überwachen von Kapazitäten
+### <a name="monitoring-capacities"></a>Monitoring Capacities
 
-Durch Überwachen von Premium-Kapazitäten erhalten Administratoren Informationen über die Leistung ihrer Kapazitäten. Kapazitäten können mithilfe der [Power BI Premium kapazitätsmetriken-App](service-admin-premium-monitor-capacity.md) oder des [Power BI admin-Portals](service-admin-premium-monitor-portal.md)überwacht werden.
+Durch Überwachen von Premium-Kapazitäten erhalten Administratoren Informationen über die Leistung ihrer Kapazitäten. Capacities can be monitored by using the [Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capacity.md) or the [Power BI admin portal](service-admin-premium-monitor-portal.md).
 
-#### <a name="interpreting-metrics"></a>Interpretieren von Metriken
+#### <a name="interpreting-metrics"></a>Interpreting Metrics
 
 Metriken sollten überwacht werden, um ein grundlegendes Verständnis von Ressourcenverwendung und Workloadaktivität zu gewinnen. Wenn bei der Kapazität Leistungsschwächen auftreten, müssen Sie wissen, welche Metriken Sie überwachen und welche Konsequenzen Sie ziehen können.
 
@@ -450,10 +449,10 @@ Im Allgemeinen können langsame Berichte ein Hinweis auf eine Kapazitätsüberla
 - **Fehler bei Abfragen** weisen sicherlich auf unzureichenden Arbeitsspeicher hin, und dass ein Modell nicht in den Arbeitsspeicher geladen werden konnte. Der Power BI-Dienst versucht 30 Sekunden lang, ein Modell zu laden, bevor ein Fehler gemeldet wird.
 
 - **Übermäßig lange Wartezeiten bei Abfragen** können aus verschiedenen Gründen auftreten:
-  - Der Power BI-Dienst zuerst das Modell (en) entfernen und dann das auf die Abfrage abgefragte Modell laden (denken Sie daran, dass höhere Entfernungs Raten für Datasets allein keine Anzeichen für Kapazitäts Belastung sind, es sei denn, es werden lange Abfrage Wartezeiten begleitet, die eine Speicher Überlastung angeben).
-  - Ladezeiten von Modellen (insbesondere das warten auf das Laden eines großen Modells in den Speicher)
-  - Abfragen mit langer Ausführungszeit
-  - Zu viele lc\dq-Verbindungen (überschreiten der Kapazitäts Limits)
+  - The need for the Power BI service to first evict model(s) and then load the to-be-queried model (recall that higher dataset eviction rates alone are not an indication of capacity stress, unless accompanied by long query wait times that indicate memory thrashing)
+  - Model load times (especially the wait to load a large model into memory)
+  - Long running queries
+  - Too many LC\DQ connections (exceeding capacity limits)
   - CPU-Sättigung
   - Komplexe Berichtsentwürfe mit einer übermäßigen Anzahl von visuellen Elementen auf einer Seite (denken Sie daran, dass jede Visualisierung eine Abfrage ist)
 - **Lange Abfragezeiten** können darauf hindeuten, dass Modellentwürfe nicht optimiert sind, insbesondere wenn mehrere Datasets in einer Kapazität aktiv sind und nur ein Dataset lange Abfragezeiten erzeugt. Dies deutet darauf hin, dass die Kapazitätsressourcen ausreichen und das fragliche Dataset suboptimal oder einfach langsam ist. Abfragen mit langer Ausführungszeit können problematisch sein, da sie den Zugriff auf Ressourcen blockieren können, die von anderen Prozessen benötigt werden.
@@ -834,7 +833,7 @@ Zum Bereitstellen und Verwalten von Power BI Premium Kapazitäten benötigen Adm
 
 ## <a name="end-notes"></a>Notizen beenden
 
-<a name="endnote-01"></a>\[1\] dieses technische Whitepaper befasst sich mit Power BI Premium, das nur vom clouddienst Power BI unterstützt wird. Power BI-Berichtsserver ist nicht im Bereich, es sei denn, es wird angegeben, dass die für die Installation von Power BI-Berichtsserver erforderliche Lizenz in enthalten ist. einige Power BI Premium-SKUs.
+<a name="endnote-01"></a>\[1\] dieses technische Whitepaper ist Power BI Premium, das nur vom clouddienst Power BI unterstützt wird. Power BI-Berichtsserver ist nicht im Bereich, mit der Ausnahme, dass die für die Installation von Power BI-Berichtsserver erforderliche Lizenz in einigen Power BI Premium SKUs enthalten ist.
 
 <a name="endnote-02"></a>\[2\] als clouddienst Power BI, wenn Sie zum Einbetten von Inhalten im Namen von Anwendungs Benutzern verwendet wird, ist Platform-as-a-Service (PAS). Diese Art der Einbettung kann mit unterschiedlichen beiden Produkten erreicht werden, von denen eine Power BI Premium ist.
 
