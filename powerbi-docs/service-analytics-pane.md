@@ -2,7 +2,6 @@
 title: Erstellen dynamischer Bezugslinien für Visuals in Power BI Desktop
 description: Erstellen dynamischer Bezugslinien für Visualisierungen im Power BI-Dienst
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/14/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: ce99539e1804746970eae20dc9396f0f0536afea
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: ab8fb8daa46a21676925de16a068f2d2029954d2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61184114"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73855915"
 ---
 # <a name="create-dynamic-reference-lines-for-visuals-in-the-power-bi-service"></a>Erstellen dynamischer Bezugslinien für Visuals im Power BI-Dienst
 
@@ -100,5 +99,5 @@ Außerdem können für nicht kartesische visuelle Elemente zurzeit keine dynamis
 ## <a name="next-steps"></a>Nächste Schritte
 [Analysebereich in Power BI Desktop](desktop-analytics-pane.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 
