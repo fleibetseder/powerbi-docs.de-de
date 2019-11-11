@@ -3,18 +3,17 @@ title: Entwickeln mithilfe der REST-APIs für Power BI-Berichtsserver
 description: Die REST-API bietet programmgesteuerten Zugriff auf die Objekte in einem Katalog für Power BI-Berichtsserver.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/25/2018
-ms.openlocfilehash: 8f35b7a3c19751b4537a49fa8cb30f4347f080ed
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 9b8e795c4a55f9efd6fd534d92d95b36c93cf2c0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770767"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874078"
 ---
 # <a name="develop-with-the-rest-apis-for-power-bi-report-server"></a>Entwickeln mithilfe der REST-APIs für Power BI-Berichtsserver
 
@@ -41,7 +40,7 @@ Ein REST API-Anforderungs-/Antwortpaar kann in fünf Komponenten unterteilt werd
 * Optionale Felder für den HTTP-**Anforderungsnachrichtentext**, um den URI- und HTTP-Vorgang zu unterstützen. POST-Vorgänge enthalten beispielsweise MIME-codierte Objekte, die als komplexe Parameter übergeben werden. Für POST- oder PUT-Vorgänge muss auch der MIME-Codierungstyp für den Text im `Content-type`-Anforderungsheader angegeben werden. Für einige Dienste muss ein bestimmter MIME-Typ verwendet werden, z.B. `application/json`.
 * Felder des HTTP-**Anforderungsnachrichtenheaders**:
   
-  * Ein [HTTP-Statuscode](http://www.w3.org/Protocols/HTTP/HTRESP.html), der 2xx Erfolgscodes bis zu 4xx oder 5xx Fehlercodes enthalten kann. Alternativ kann ein vom Dienst definierter Statuscode zurückgegeben werden, entsprechend der Angabe in der API-Dokumentation.
+  * Ein [HTTP-Statuscode](https://www.w3.org/Protocols/HTTP/HTRESP.html), der 2xx Erfolgscodes bis zu 4xx oder 5xx Fehlercodes enthalten kann. Alternativ kann ein vom Dienst definierter Statuscode zurückgegeben werden, entsprechend der Angabe in der API-Dokumentation.
   * Optionale zusätzliche Headerfelder, die jeweils zum Unterstützen der Antwort auf die Anforderung erforderlich sein können, z.B. ein `Content-type`-Antwortheader.
 * Optionale Felder für den HTTP-**Antwortnachrichtentext**:
   
@@ -53,7 +52,7 @@ Eine moderne REST-API benötigt eine moderne API-Dokumentation. Die REST-API bau
 
 ## <a name="testing-api-calls"></a>Testen von API-Aufrufen
 
-Ein Tool zum Testen von HTTP-Anforderungs-/Antwortnachrichten ist [Fiddler](http://www.telerik.com/fiddler). Fiddler ist ein kostenloser Webdebugproxy, der Ihre REST-Anforderungen abfangen kann, wodurch die HTTP-Anforderungs-/Antwortnachrichten auf einfache Weise diagnostiziert werden können.
+Ein Tool zum Testen von HTTP-Anforderungs-/Antwortnachrichten ist [Fiddler](https://www.telerik.com/fiddler). Fiddler ist ein kostenloser Webdebugproxy, der Ihre REST-Anforderungen abfangen kann, wodurch die HTTP-Anforderungs-/Antwortnachrichten auf einfache Weise diagnostiziert werden können.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

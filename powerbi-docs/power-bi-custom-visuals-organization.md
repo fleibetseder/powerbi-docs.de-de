@@ -3,19 +3,18 @@ title: Visuals für Organisationen in Power BI
 description: Verwenden, Verwalten und Erstellen von Visuals für Organisationen in Power BI
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/11/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b10a856a98c892b32e873bd01105c52777d2b413
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: 8c28c5ee89ffee37c09db8dc6ffcd6fb90274786
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71946159"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875228"
 ---
 # <a name="organizational-visuals-in-power-bi"></a>Visuals für Organisationen in Power BI
 
@@ -62,4 +61,4 @@ Informationen zur Problembehandlung finden Sie auf der Seite [Problembehandlung 
 
 Weitere Informationen und Antworten auf Fragen finden Sie in den [häufig gestellten Fragen zu Power BI-Visuals in Power BI](power-bi-custom-visuals-faq.md#organizational-visuals).
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/).
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/).

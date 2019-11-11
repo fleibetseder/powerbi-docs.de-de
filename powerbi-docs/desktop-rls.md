@@ -3,7 +3,6 @@ title: Grundlegendes zur Sicherheit auf Zeilenebene (Row-Level Security; RLS) mi
 description: Erfahren Sie, wie Sie die Sicherheit auf Zeilenebene für importierte Datasets und DirectQuery in Power BI Desktop konfigurieren.
 author: davidiseminger
 ms.author: davidi
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.custom: ''
 ms.date: 08/14/2019
 LocalizationGroup: Create reports
-ms.openlocfilehash: 91f2da65764480a0cf9cf298a052436b27e18c83
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: d3c3310b6fd60d0e6f30eabd4c5136af5b8c54ff
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69560937"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73866012"
 ---
 # <a name="row-level-security-rls-with-power-bi-desktop"></a>Sicherheit auf Zeilenebene (row-level security; RLS) mit Power BI Desktop
 
@@ -41,4 +40,4 @@ Erfahren Sie mehr über die Optionen für [RLS innerhalb des Power BI-Diensts](s
 
 [Sicherheit auf Zeilenebene (row-level security; RLS) mit Power BI](service-admin-rls.md)  
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

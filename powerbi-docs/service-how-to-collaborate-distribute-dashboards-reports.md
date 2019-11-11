@@ -3,19 +3,18 @@ title: Freigeben Ihrer Arbeit in Power BI
 description: In Power BI können Sie Dashboards, Berichte und Kacheln und Apps auf verschiedene Weisen freigeben und für die Zusammenarbeit verwenden. Jede davon hat ihre Vorteile.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/06/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 31310900b91924e639ce10a13aef3da996598502
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: 7633f0771a87c01d53261d13135d831e95e80136
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841749"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881338"
 ---
 # <a name="ways-to-share-your-work-in-power-bi"></a>Freigeben Ihrer Arbeit in Power BI
 
@@ -135,4 +134,4 @@ Mit **Im Web veröffentlichen** können Sie Power BI-Berichte im Internet veröf
 
 Feedback? Anregungen nehmen wir auf der [Power BI-Communitywebsite](https://community.powerbi.com/) entgegen.
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

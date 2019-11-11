@@ -2,7 +2,6 @@
 title: 'Zertifizieren von Datasets (Vorschau): Power BI'
 description: Erfahren Sie, wie Sie Benutzer im Unternehmen zu verlässlichen Datasets mit hoher Qualität führen.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 915fb9d10b69142621554f29a7fd77e7a41932e5
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: bdce9ec797d00b34f657ed66df6b7a5ce373334d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67567340"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877163"
 ---
 # <a name="certify-datasets-preview"></a>Zertifizieren von Datasets (Vorschau)
 
@@ -43,4 +42,4 @@ Erfahren Sie mehr darüber, wie Mandantenadministratoren [die Verwendung von Dat
 ## <a name="next-steps"></a>Nächste Schritte
 
 * Erfahren Sie mehr über das [Verwenden von Datasets in mehreren Arbeitsbereichen](service-datasets-across-workspaces.md)
-* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

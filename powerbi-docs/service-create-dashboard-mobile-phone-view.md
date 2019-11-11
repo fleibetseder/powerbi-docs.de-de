@@ -2,7 +2,6 @@
 title: 'Optimieren von Dashboards für Mobiltelefone: Power BI'
 description: Hier erfahren Sie, wie Sie eine benutzerdefinierte, für die Anzeige auf Smartphones geeignete Ansicht eines Dashboards im Power BI-Dienst erstellen können.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f2b8c2c4be343dc135fe1b133bfcb956c1549de4
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 75152d546bc2dc622210d5b9e5933ee44fbdc0b7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61158199"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872856"
 ---
 # <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>Optimieren von Dashboards für Mobiltelefone: Power BI 
 Wenn Sie Dashboards im Hochformat auf einem Smartphone anzeigen, werden Sie bemerken, dass die Dashboardkacheln nacheinander angeordnet sind und die gleiche Größe aufweisen. Sie können im Power BI-Dienst eine benutzerdefinierte Ansicht eines Dashboards erstellen, speziell für den Hochformatmodus auf Smartphones. Selbst wenn Sie eine Smartphoneansicht erstellen, wenn Sie das Smartphone um 90° drehen, wird das Dashboard in seinem Layout im Dienst angezeigt.
@@ -59,5 +58,5 @@ Suchen Sie nach Informationen über das Anzeigen von Dashboards auf einem mobile
 ## <a name="next-steps"></a>Nächste Schritte
 * [Erstellen von Berichten, die für die Power BI-Smartphone-Apps optimiert sind](desktop-create-phone-report.md)
 * [Erstellen von dynamischen Visuals, die für eine beliebige Größe optimiert sind](visuals/desktop-create-responsive-visuals.md)
-* Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+* Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
 

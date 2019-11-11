@@ -2,7 +2,6 @@
 title: Power BI kann einem O365-Partner nicht hinzugefügt werden
 description: Power BI kann einem Office 365-Syndizierungspartner nicht hinzugefügt werden Das Syndizierungsmodell ist ein von Office 365 verwendetes Kaufmodell.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: bb81df81a24046820a82c00915f637ab471eb054
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 558d939582b5ac7ec67d64a9f56305326bc34d03
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074200"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73856648"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Power BI kann einem Office 365-Partnerabonnement nicht hinzugefügt werden
 
@@ -84,4 +83,4 @@ Um Ad-Hoc-Abonnements zu aktivieren können Sie sich an Ihren Partner wenden und
 
 [Power BI licensing in your organization (Power BI-Lizenzierung in Ihrem Unternehmen)](service-admin-licensing-organization.md)
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

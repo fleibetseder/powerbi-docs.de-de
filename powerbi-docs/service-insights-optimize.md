@@ -2,7 +2,6 @@
 title: Optimieren von Daten für schnelle Einblicke in Power BI
 description: Optimieren Sie Daten für schnelle Einblicke in Power BI. Wenn Power BI keine Einblicke in den Daten findet, finden Sie im Folgenden mögliche Lösungsansätze.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/02/2017
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 2d2a0cca984776ea67fca45b39f91e280fe02afa
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 1ed588b0ca183e090d12f9aa0df23460a6037ed4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61235028"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872217"
 ---
 # <a name="optimize-your-data-for-power-bi-quick-insights"></a>Optimieren von Daten für schnelle Einblicke in Power BI
 Sie möchten die Ergebnisse der schnellen Einblicke verbessern?  Wenn Sie Besitzer eines Datasets sind, probieren Sie Folgendes:
@@ -28,5 +27,5 @@ Sie möchten die Ergebnisse der schnellen Einblicke verbessern?  Wenn Sie Besitz
 ### <a name="next-steps"></a>Nächste Schritte
 [Schnelle Einblicke in Power BI](consumer/end-user-insights.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 

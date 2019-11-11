@@ -2,7 +2,6 @@
 title: Bearbeiten von Parametereinstellungen im Power BI-Dienst
 description: Abfrageparameter werden in Power BI Desktop erstellt, können jedoch im Power BI-Dienst geprüft und aktualisiert werden.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/21/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8db6f106ecc2285cb66ff980bc72fa666456f81a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 656de2cbf318211bf2fe19f15a3867ab183f3173
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61225981"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871949"
 ---
 # <a name="edit-parameter-settings-in-the-power-bi-service"></a>Bearbeiten von Parametereinstellungen im Power BI-Dienst
 Abfrageparameter werden in Power BI Desktop von Berichtserstellern hinzugefügt. Mit Parametern können sie Teile von Berichten von mindestens einem *Parameterwert* abhängig machen. Ein Berichtsersteller kann z.B. einen Parameter erstellen, der die Daten auf ein Land bzw. eine Region einschränkt, oder einen Parameter, der das akzeptierte Format von Feldern (z.B. für Datumsangaben, Uhrzeitangaben und Text) definiert.

@@ -2,19 +2,18 @@
 title: Kacheln in den mobilen Power BI-Apps
 description: Kacheln sind Livemomentaufnahmen Ihrer Daten, die an ein Dashboard angeheftet sind. Erfahren Sie, wie Sie mit Kacheln in den mobilen Power BI-Apps interagieren.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: 87c223c8ef0be0eac81bb672bde10023dcf79d71
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 570276b8af2862d6aab6dc806cb0c627be8ff157
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73059779"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870033"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Kacheln in den mobilen Power BI-Apps
 Gilt für:
@@ -123,5 +122,5 @@ Anschließend öffnen Sie in den mobilen Power BI-Apps Kacheln im Fokusmodus und
 
 ## <a name="next-steps"></a>Nächste Schritte
 * [Was ist Power BI?](../../fundamentals/power-bi-overview.md)
-* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
 

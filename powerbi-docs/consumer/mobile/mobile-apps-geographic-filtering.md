@@ -2,18 +2,17 @@
 title: Filtern eines Berichts nach geografischem Standort in einer mobilen Power BI-App
 description: Hier erfahren Sie, wie Sie in den mobilen Microsoft Power BI-Apps einen Bericht nach geografischem Standort filtern können, wenn der Besitzer des Berichts geografische Markierungen festgelegt hat.
 author: mshenhav
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 09/25/2019
 ms.author: mshenhav
-ms.openlocfilehash: 9a4950a1d52451764c3c62413bf4ecbd036f06c8
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: 1079b624ebab827b41f4da55095028796319fdcd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305774"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870635"
 ---
 # <a name="filter-a-report-by-geographic-location-in-the-power-bi-mobile-apps"></a>Filtern eines Berichts nach geografischem Standort in den mobilen Power BI-Apps
 Gilt für:
@@ -51,5 +50,5 @@ Weitere Informationen finden Sie unter [Einrichten von geografischen Filtern](..
 ### <a name="next-steps"></a>Nächste Schritte
 * [Connect to Power BI data from the real world](mobile-apps-data-in-real-world-context.md) (Verbinden mit realen Power BI-Daten mit den Apps für mobile Geräte)
 * [Datenkategorisierung in Power BI Desktop](../../desktop-data-categorization.md) 
-* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
 

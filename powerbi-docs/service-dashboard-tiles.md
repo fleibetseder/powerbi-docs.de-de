@@ -2,7 +2,6 @@
 title: Einführung in Dashboardkacheln für Power BI-Designer
 description: In diesem Artikel werden Dashboardkacheln in Power BI beschrieben. Dazu gehören auch Kacheln, die aus SSRS-Berichten (SQL Server Reporting Services) erstellt werden.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4577ca5d12002e18406b66036244d895fa7ee5fd
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: 801af5e9c4d5306a3e77d4e82c787cc90e9cac37
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68994881"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872780"
 ---
 # <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Einführung in Dashboardkacheln für Power BI-Designer
 
@@ -41,7 +40,7 @@ Es gibt viele verschiedene Möglichkeiten, eine Kachel zu Ihrem Dashboard hinzuz
 * [Power BI Q&A](service-dashboard-pin-tile-from-q-and-a.md)
 * [ein Bericht](service-dashboard-pin-tile-from-report.md)
 * [ein anderes Dashboard](service-pin-tile-to-another-dashboard.md)
-* [eine Excel-Arbeitsmappe auf OneDrive for Business](service-dashboard-pin-tile-from-excel.md)
+* [einer Excel-Arbeitsmappe auf OneDrive for Business](service-dashboard-pin-tile-from-excel.md)
 * [Power BI Publisher für Excel](publisher-for-excel.md)
 * [Quick Insights (Schnelle Einblicke)](service-insights.md)
 * [ein lokaler paginierter Bericht im Power BI-Berichtsserver oder in SQL Server Reporting Services](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
@@ -99,8 +98,8 @@ Wenn Sie eine Kachel auswählen, hängt das, was anschließend geschieht, davon 
 - [Einführung in Dashboards für Power BI-Designer](service-dashboards.md)  
 - [Aktualisieren von Daten in Power BI](refresh-data.md)
 - [Grundlegende Konzepte für Designer im Power BI-Dienst](service-basic-concepts.md)
-- [Integrieren von Power BI Kacheln in Office-Dokumente](http://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
+- [Integrieren von Power BI Kacheln in Office-Dokumente](https://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
 - [Anheften von Reporting Services-Elementen an Power BI-Dashboards](https://msdn.microsoft.com/library/mt604784.aspx)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/).
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/).
 

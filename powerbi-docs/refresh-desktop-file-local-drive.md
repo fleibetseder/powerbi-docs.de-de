@@ -2,7 +2,6 @@
 title: Aktualisieren eines aus einer Power BI Desktop-Datei erstellten Datasets – lokal
 description: Aktualisieren eines aus einer Power BI Desktop-Datei erstellten Datasets auf einem lokalen Laufwerk
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/04/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 58727627656a3cb22ad7fce626d0c7e6ce746440
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: b96163b433998ad92860ad6c234aac4126cf5486
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816483"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874380"
 ---
 # <a name="refresh-a-dataset-created-from-a-power-bi-desktop-file-on-a-local-drive"></a>Aktualisieren eines aus einer Power BI Desktop-Datei erstellten Datasets auf einem lokalen Laufwerk
 
@@ -51,7 +50,7 @@ Wenn Sie das Dataset aktualisieren, stellt Power BI keine Verbindung mit der Dat
 
 ## <a name="how-do-i-schedule-refresh"></a>Wie richte ich eine Zeitplanaktualisierung ein?
 
-Beim Einrichten eines Aktualisierungszeitplans stellt Power BI eine direkte Verbindung mit den Datenquellen mithilfe von Verbindungsinformationen und Anmeldeinformationen aus dem Dataset her, um aktualisierte Daten abzufragen und die aktualisierten Daten in das Dataset zu laden. Alle Visualisierungen in Berichten und Dashboards, die auf dem Dataset des Power BI-Diensts basieren, werden ebenfalls aktualisiert.
+Beim Einrichten eines AKtualisierungszeitplans stellt Power BI eine direkte Verbindung mit den Datenquellen mithilfe von Verbindungsinformationen und Anmeldeinformationen aus dem Dataset her, um aktualisierte Daten abzufragen und diese in das Dataset zu laden. Alle Visualisierungen in Berichten und Dashboards, die auf dem Dataset des Power BI-Diensts basieren, werden ebenfalls aktualisiert.
 
 Weitere Details zum Einrichten einer geplanten Aktualisierung finden Sie unter [Configure scheduled refresh (Konfigurieren einer Zeitplanaktualisierung)](refresh-scheduled-refresh.md).
 
@@ -68,5 +67,5 @@ Manchmal werden Daten nicht wie erwartet aktualisiert. Dies weist meistens auf e
 - [Problembehandlung beim lokalen Datengateway](service-gateway-onprem-tshoot.md)
 - [Problembehandlung für Power BI Gateway – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
 

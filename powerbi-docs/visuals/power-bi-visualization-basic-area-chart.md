@@ -2,7 +2,6 @@
 title: Grundlegendes Flächendiagramm
 description: Grundlegendes Flächendiagramm.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/11/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b7a4021999a39d88b78d31aaa55d7f9c08a93d8e
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: ccba97d7fc4df050b9685dd9c2a69af36f62a485
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72544136"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880979"
 ---
 # <a name="basic-area-chart"></a>Grundlegendes Flächendiagramm
 
@@ -34,7 +33,7 @@ Einfache Flächendiagramme sind gut geeignet,
 * für individuelle Reihen, die einen physisch zählbaren Satz darstellen
 
 ### <a name="prerequisites"></a>Voraussetzungen
-In diesem Tutorial wird die [PBIX-Datei mit einem Analysebeispiel für den Einzelhandel](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) verwendet.
+In diesem Tutorial wird die [PBIX-Datei mit einem Analysebeispiel für den Einzelhandel](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) verwendet.
 
 1. Wählen Sie im oberen linken Bereich der Menüleiste **Datei** > **Öffnen** aus.
    

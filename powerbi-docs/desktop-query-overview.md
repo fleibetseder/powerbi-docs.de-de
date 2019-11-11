@@ -2,7 +2,6 @@
 title: Abfrageübersicht in Power BI Desktop
 description: Abfrageübersicht in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 56c38a4e42dcdb3fb22e9dc92446c7e963f50e3e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 3ee7c094972e7251ab99d9092691bf809344a3d5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513544"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876306"
 ---
 # <a name="query-overview-in-power-bi-desktop"></a>Abfrageübersicht in Power BI Desktop
 Mit **Power BI Desktop** vernetzen Sie sich mit der Welt der Daten, erstellen überzeugende und fundierte Berichte und teilen Ihre Arbeit mit anderen, die dann darauf aufbauen und so ihr Business Intelligence-Potenzial erweitern können.
@@ -47,7 +46,7 @@ Solange noch keine Datenverbindungen hergestellt wurden, ist der **Abfrage-Edito
 
 Sobald eine Abfrage geladen wurde, werden im **Abfrage-Editor** weitere Informationen angezeigt. Wenn Sie eine Verbindung mit der folgenden Webdatenquelle herstellen, lädt der **Abfrage-Editor** Informationen zu den Daten, mit deren Strukturierung Sie anschließend beginnen können.
 
-[*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
 Nach dem Herstellen der Datenverbindung präsentiert sich der **Abfrage-Editor** wie folgt:
 

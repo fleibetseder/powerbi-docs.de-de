@@ -2,7 +2,6 @@
 title: Filter und Hervorhebungen in Power BI-Berichten
 description: Informationen zu Filtern und Hervorhebungen in Power BI-Berichten
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 53bca7d1c0fd4d8592ec694d67148a7e3ccd46ff
-ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
+ms.openlocfilehash: f1722690ff974a9d4fac6e94243e1024bfbfc12e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72891876"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877614"
 ---
 # <a name="filters-and-highlighting-in-power-bi-reports"></a>Filter und Hervorhebungen in Power BI-Berichten
  Dieser Artikel informiert Sie über das Filtern und Hervorheben im Power BI-Dienst. Die Benutzeroberfläche ist nahezu identisch mit der von Power BI Desktop. *Filter* entfernen alles bis auf die Daten, auf die Sie sich konzentrieren möchten. *Hervorheben* ist nicht dasselbe wie Filtern. Dieser Vorgang entfernt keine Daten, sondern hebt eine Teilmenge der sichtbaren Daten hervor. Die nicht hervorgehobenen Daten bleiben sichtbar, sind jedoch abgeblendet.
@@ -100,5 +99,5 @@ Wählen Sie einen Wert oder eine Achsenbezeichnung in einem Visual aus, um die a
 
 [Ändern der Kreuzfilterung und -hervorhebung von Berichtsvisualisierungen](consumer/end-user-interactions.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 

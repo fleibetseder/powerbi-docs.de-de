@@ -2,19 +2,18 @@
 title: Konfigurationseinstellungen für die Power BI-iOS-App
 description: Benutzerspezifisches Anpassen des Verhaltens von Power BI für iOS mithilfe des MDM-Tools
 author: paulinbar
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/07/2019
 ms.author: mshenhav
-ms.openlocfilehash: bc9c6dd8cd892ab0304cc5a99a3bb780486f32f0
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: c2d619489b042e523c559a16dab249b268389cd5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70160152"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879432"
 ---
 # <a name="remotely-configure-power-bi-ios-app-using-mobile-device-management-mdm-tool"></a>Remotekonfiguration der Power BI-iOS-App mithilfe des Tools für die Masterdatenverwaltung (MDM)
 
@@ -61,6 +60,6 @@ Dabei werden alle MDM-Anbieter unterstützt. Wenn Sie Intune nicht verwenden, fi
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-* Laden Sie die [mobile Power BI iPhone-App](http://go.microsoft.com/fwlink/?LinkId=522062) herunter.
+* Laden Sie die [mobile Power BI iPhone-App](https://go.microsoft.com/fwlink/?LinkId=522062) herunter.
 * Folgen Sie [@MSPowerBI auf Twitter](https://twitter.com/MSPowerBI)
-* Werden Sie Teil der [Power BI-Community](http://community.powerbi.com/), um sich mit den Mitgliedern auszutauschen
+* Werden Sie Teil der [Power BI-Community](https://community.powerbi.com/), um sich mit den Mitgliedern auszutauschen

@@ -1,17 +1,17 @@
 ---
-ms.openlocfilehash: 6366dbe4d7c58b49b4085d80aa690fd6c64fee59
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: 3966521d158c244487638be4117f98ea570e1f28
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70847688"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73799865"
 ---
 Willkommen zum Abschnitt **Geführtes Lernen** von Power BI, das Ihnen eine Einführung in **DAX** geben soll.
 
 **DAX** steht für **Data Analysis Expressions** und ist die Formelsprache, die in Power BI verwendet wird (sie wird auch von Power BI im Hintergrund verwendet). Sie finden DAX auch in anderen Angeboten von Microsoft, wie Power Pivot und SSAS Tabular, aber diese Themen des Geführten Lernens beziehen sich auf den Gebrauch von DAX in Power BI und können von Ihnen verwendet werden.
 
 ## <a name="dax-and-this-guided-learning-video-series"></a>DAX und die Videoreihe zum geführten Lernen
-Dieser Abschnitt **Geführtes Lernen** soll Ihnen die Grundlagen von DAX vermitteln – wie man sich DAX vorstellt, wie es funktioniert und die nützlichsten Funktionen, die vom renommierten DAX-Experten [Alberto Ferrari](http://www.sqlbi.com/learning-dax) erklärt (und mit viel Erfahrung beigebracht) werden.
+Dieser Abschnitt **Geführtes Lernen** soll Ihnen die Grundlagen von DAX vermitteln – wie man sich DAX vorstellt, wie es funktioniert und die nützlichsten Funktionen, die vom renommierten DAX-Experten [Alberto Ferrari](https://www.sqlbi.com/learning-dax) erklärt (und mit viel Erfahrung beigebracht) werden.
 
 ![Por­t­rät von Alberto Ferrari](media/7-1-intro-to-dax/intro_dax_6_alberto_ferrari.png)
 
@@ -30,7 +30,7 @@ DAX verwendet die Operatorüberladung, d. h., Sie können Datentypen in Ihren B
 
 Mit einem Datentyp werden Sie in Power BI vermutlich oft arbeiten: **DateTime**. **DateTime** wird als Gleitkommazahl mit Integer- und Dezimalzahlkomponenten gespeichert. DateTime kann zur genauen Berechnung jedes Zeitraums nach dem 1. März 1900 verwendet werden.
 
-> Videoinhalt zur Verfügung gestellt von [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
+> Videoinhalt zur Verfügung gestellt von [Alberto Ferrari, SQLBI](https://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
 > 
 > 
 

@@ -2,7 +2,6 @@
 title: Power BI-FAQ zur Hochverfügbarkeit und Notfallwiederherstellung sowie zu Failovers
 description: Informationen zur Hochverfügbarkeit und zum Bereitstellen von Geschäftskontinuität und Notfallwiederherstellung für Benutzer des Power BI-Diensts
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: b8f98541b70c3573d9f31b5e59196cd37d322bb3
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: dd2c94b490cdf31bd383c7100b9a1bc372f8e75f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075237"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873685"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Power BI-FAQ zur Hochverfügbarkeit und Notfallwiederherstellung sowie zu Failovers
 
@@ -23,7 +22,7 @@ In diesem Artikel erhalten Sie Informationen zur Hochverfügbarkeit und zum Bere
 
 ## <a name="what-does-high-availability-mean-for-power-bi"></a>Was bedeutet „Hochverfügbarkeit“ in Bezug auf Power BI?
 
-Power BI ist ein vollständig verwalteter SaaS-Dienst (Software-as-a-Service).  Dieser wurde von Microsoft so entwickelt, dass er bei Infrastrukturfehlern nicht an Stabilität verliert und Benutzer immer auf ihre Berichte zugreifen können.  Er wird von einer [SLA von 99,9 %](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) unterstützt.
+Power BI ist ein vollständig verwalteter SaaS-Dienst (Software-as-a-Service).  Dieser wurde von Microsoft so entwickelt, dass er bei Infrastrukturfehlern nicht an Stabilität verliert und Benutzer immer auf ihre Berichte zugreifen können.  Er wird von einer [SLA von 99,9 %](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) unterstützt.
 
 ## <a name="what-is-a-power-bi-failover"></a>Was ist ein Power BI-Failover?
 
@@ -50,7 +49,7 @@ In beiden Fällen entscheiden sich die Mitglieder des Executive Teams von Power 
 
 ## <a name="how-do-i-know-power-bi-is-now-in-failover-mode"></a>Woher weiß ich, dass sich Power BI gerade im Failovermodus befindet?
 
-Dann wird eine Benachrichtigung auf der Supportseite von Power BI veröffentlicht ([https://powerbi.microsoft.com/en-us/support/](https://powerbi.microsoft.com/en-us/support/)). Diese enthält Informationen zu den wichtigsten Vorgängen, die während des Failovers nicht ausgeführt werden können, z. B. das Veröffentlichen, Aktualisieren, Erstellen und Duplizieren von Dashboards sowie das Ändern von Berechtigungen.
+Dann wird eine Benachrichtigung auf der Supportseite von Power BI veröffentlicht ([https://powerbi.microsoft.com/support/](https://powerbi.microsoft.com/support/)). Diese enthält Informationen zu den wichtigsten Vorgängen, die während des Failovers nicht ausgeführt werden können, z. B. das Veröffentlichen, Aktualisieren, Erstellen und Duplizieren von Dashboards sowie das Ändern von Berechtigungen.
 
 ## <a name="how-long-does-it-take-power-bi-to-fail-over"></a>Wie lange dauert ein Power BI-Failover?
 

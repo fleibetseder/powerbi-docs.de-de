@@ -3,18 +3,17 @@ title: Paginierung in paginierten Power BI-Berichten
 description: In diesem Artikel erfahren Sie mehr über unterstützte Datenquellen für paginierte Berichte im Power BI-Dienst und dazu, wie Sie eine Verbindung zu Datenquellen der Azure SQL-Datenbank herstellen.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 07/22/2019
-ms.openlocfilehash: e91d3801cc2293ad22028a95a331d473f41288c0
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: d0f0abe15348d54f24143d69fcd6c0c2b71e9a34
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624838"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874787"
 ---
 # <a name="pagination-in-power-bi-paginated-reports"></a>Paginierung in paginierten Power BI-Berichten
 
@@ -90,4 +89,4 @@ ms.locfileid: "68624838"
 
 [Anzeigen eines paginierten Berichts im Power BI-Dienst](paginated-reports-view-power-bi-service.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: Was ist die Power BI-Verwaltung?
 description: Dieser Artikel beschreibt die Konfiguration von Governancerichtlinien, die Überwachung der Nutzung sowie die Bereitstellung von Lizenzen, Kapazitäten und Organisationsressourcen.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: overview
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 779dba9262752a4030eb263002822d0186f3e470
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: d33aad1d52a7074873e4b2bb7f5e2f93e2b8ab0e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075802"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873729"
 ---
 # <a name="what-is-power-bi-administration"></a>Was ist die Power BI-Verwaltung?
 
@@ -87,4 +86,4 @@ In diesem Artikel haben Sie einige kurze Einblicke in den Arbeit eines Power BI-
 
 [Häufig gestellte Fragen zur Power BI-Verwaltung](service-admin-faq.md)
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

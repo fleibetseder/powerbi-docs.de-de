@@ -2,7 +2,6 @@
 title: Punktdiagramme mit hoher Dichte in Power BI
 description: Punktdiagramme mit hoher Dichte in Power BI
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 928e93c724a47f48aff1f87ee51f9a8c907774d6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: ae33d7aac0eb42e925e78b8b76a9d7106cdf9d20
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65454280"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73867445"
 ---
 # <a name="high-density-sampling-in-power-bi-scatter-charts"></a>Stichprobenentnahme mit hoher Dichte in Power BI-Punktdiagrammen
 Mit Veröffentlichung von **Power BI Desktop** im September 2017 und den Updates des **Power BI-Diensts** steht ein neuer Stichprobenalgorithmus zur Verfügung, der die Darstellung von Daten mit hoher Dichte in Punktdiagrammen verbessert.

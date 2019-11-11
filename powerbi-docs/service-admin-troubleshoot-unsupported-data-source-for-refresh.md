@@ -2,7 +2,6 @@
 title: Problembehandlung bei nicht unterstützter Datenquelle für die Aktualisierung
 description: Problembehandlung bei nicht unterstützter Datenquelle für die Aktualisierung
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.date: 12/06/2017
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 32c42f21eafa7118ed3977340517aeebe8c4219b
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: b44dbc06c15a576174277695583f3afebb0f298a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72542898"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73856269"
 ---
 # <a name="troubleshooting-unsupported-data-source-for-refresh"></a>Problembehandlung bei nicht unterstützter Datenquelle für die Aktualisierung
 Bei der Konfiguration eines Datasets für die planmäßige Aktualisierung kann ein Fehler angezeigt werden.
@@ -45,5 +44,5 @@ Wenn Sie unsicher sind, welche Datenquelle verwendet wurde, können Sie diese su
 [Problembehandlung beim lokalen Datengateway](service-gateway-onprem-tshoot.md)  
 [Problembehandlung für Power BI Gateway – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
 

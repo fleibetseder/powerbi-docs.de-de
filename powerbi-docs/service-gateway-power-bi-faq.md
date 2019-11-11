@@ -2,7 +2,6 @@
 title: Häufig gestellte Fragen zum lokalen Datengateway – Power BI
 description: Dieser Artikel enthält häufig gestellte Fragen zum lokalen Datengateway für Power BI. Hier werden häufig gestellte Fragen für das in Power BI verwendete Gateway zentral gesammelt.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: cd3afd0ed3ba1f5b734aab2106cbd70f65f29006
-ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.openlocfilehash: 45a645227a5d7a18fd05738559ed0bccc0e1f7c9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68867069"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872408"
 ---
 # <a name="on-premises-data-gateway-faq---power-bi"></a>Häufig gestellte Fragen zum lokalen Datengateway – Power BI
 
@@ -73,5 +72,5 @@ ms.locfileid: "68867069"
 
 * [Problembehandlung beim lokalen Datengateway](/data-integration/gateway/service-gateway-tshoot)
 
-Weitere Fragen? Wenden Sie sich an die [Power BI-Community](http://community.powerbi.com/).
+Weitere Fragen? Wenden Sie sich an die [Power BI-Community](https://community.powerbi.com/).
 

@@ -3,18 +3,17 @@ title: Erstellen eines Datasets
 description: Exemplarische Vorgehensweise – Übertragen von Daten in ein Dataset per Push – Erstellen eines Datasets in Power BI
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 4bc24df67dd7d2b8ac0ae987ad2e50cff082c73f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 3b0a1f2234490ae1c887b77395d87e41deb3319d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710377"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875480"
 ---
 # <a name="step-3-create-a-dataset-in-power-bi"></a>Schritt 3: Erstellen eines Datasets in Power BI
 Dieser Artikel ist Teil einer Anleitung zum [Übertragen von Daten in ein Dataset per Push](walkthrough-push-data.md).
@@ -236,5 +235,5 @@ namespace walkthrough_push_data
 [Übersicht über Power BI-REST-API](overview-of-power-bi-rest-api.md)  
 [Referenz zur Power BI-REST-API](https://docs.microsoft.com/rest/api/power-bi/)  
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 

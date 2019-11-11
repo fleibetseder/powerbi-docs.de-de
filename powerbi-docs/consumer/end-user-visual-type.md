@@ -2,7 +2,6 @@
 title: Visualtypen in Power BI für Benutzer
 description: Visualtypen im Power BI-Dienst
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/21/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 875e154dbac063c0e4b9d5dc4208387e6d529a93
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 1670d3af200c8da672ac7034e4e15f6f460147a7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70302506"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73861323"
 ---
 # <a name="visual-types-in-power-bi"></a>Visualtypen in Power BI
 Sie finden Visuals in Berichten, Dashboards und Q&A. Einige der Visualtypen sind in Power BI enthalten, und einige andere sind *benutzerdefinierte Visuals*. Benutzerdefinierte Visuals werden außerhalb von Power BI erstellt, damit *Berichts-Designer* sie zu Power BI-Berichten und -Dashboards hinzufügen können. 
@@ -137,7 +136,7 @@ Flächenkartogramme vergleichen Regionen auf einer Karte mithilfe von Farben. Ei
 Das Visual „Matrix“ ist eine Art Tabellenvisual (siehe „Tabelle“ unten), das ein abgestuftes Layout unterstützt. Berichts-Designer fügen Matrixvisuals oft in Berichte und Dashboards ein, damit Benutzer mindestens ein Element (Zeilen, Spalten, Zellen) auswählen können, um es anderen Visuals auf einer Berichtseite gegenüberzustellen.  
 
 ### <a name="pie-charts"></a>Kreisdiagramme
-![pie chart](media/end-user-visual-type/pbi-nancy-viz-pie.png)
+![Kreisdiagramm](media/end-user-visual-type/pbi-nancy-viz-pie.png)
 
 Kreisdiagramme zeigen die Beziehung von Teilen zum Ganzen. 
 
@@ -232,4 +231,4 @@ Bei der Eingabe von Abfragen in natürlicher Sprache über den Bereich für Frag
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Interagieren mit Visuals in Berichten, Dashboards und Apps](end-user-visualizations.md)    
-[„The right visual reference“ von sqlbi.com](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
+[„The right visual reference“ von sqlbi.com](https://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)

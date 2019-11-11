@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/03/2019
 ms.author: michalfo
-ms.openlocfilehash: 3f1e02c880d737998afd7c84c4259e4de8582da9
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: befe57bd0c3441a44f4db745e3af73bd9afed933
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70391496"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73783540"
 ---
 # <a name="using-siri-shortcuts-in-power-bi-mobile-ios-app-preview"></a>Verwenden von Siri-Verknüpfungen in der Power BI Mobile-App für iOS (Vorschauphase)
 
@@ -66,7 +66,7 @@ Wenn Sie eine Verknüpfung löschen möchten, navigieren Sie zum Element, und ti
 ## <a name="next-steps"></a>Nächste Schritte
 Führen Sie folgende Schritte aus, um mehr über die mobile Power BI-App zu erfahren: 
 
-* Laden Sie die [mobile Power BI-App für iPhone](http://go.microsoft.com/fwlink/?LinkId=522062) herunter.
+* Laden Sie die [mobile Power BI-App für iPhone](https://go.microsoft.com/fwlink/?LinkId=522062) herunter.
 * Folgen Sie [@MSPowerBI auf Twitter](https://twitter.com/MSPowerBI).
-* Werden Sie Teil der [Power BI-Community](http://community.powerbi.com/), um sich mit den Mitgliedern auszutauschen.
+* Werden Sie Teil der [Power BI-Community](https://community.powerbi.com/), um sich mit den Mitgliedern auszutauschen.
 

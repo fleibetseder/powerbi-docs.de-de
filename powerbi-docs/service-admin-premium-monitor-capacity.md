@@ -3,19 +3,18 @@ title: Überwachen von Power BI Premium-Kapazitäten mit der App „Power BI Pre
 description: Verwenden des Power BI-Verwaltungsportals und der Power BI Premium Capacity Metrics-App
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/31/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 9f5e2715af5b3fd898d3c7f0486c8b75463a1c42
-ms.sourcegitcommit: 9eae2a52af6926cda4d6b03de4d50d7fa8b2f216
+ms.openlocfilehash: 3ec2d68fd7245642c67f8b12b86609683ccf69e8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70030187"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873476"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Überwachen von Premium-Kapazitäten über die App
 
@@ -257,7 +256,7 @@ Die Registerkarte **IDs und Info** enthält die Bereiche **Kapazitäten**, **Arb
 | Berichtsabschnitt | Metrics |
 | --- | --- |
 | SKU- und Workloadinformationen | Die SKU- und Workloadeinstellungen für die Kapazität. |
-| Administratoren | Die Namen der Administratoren für die Kapazität. |
+| Administrators | Die Namen der Administratoren für die Kapazität. |
 |||
 
 #### <a name="workspaces-area"></a>Bereich „Arbeitsbereiche“

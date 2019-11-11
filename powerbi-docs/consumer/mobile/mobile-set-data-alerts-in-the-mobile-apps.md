@@ -2,19 +2,18 @@
 title: Festlegen von Datenwarnungen in den mobilen Power BI-Apps
 description: Sie können in den mobilen Power BI-Apps Warnungen festlegen, um Benachrichtigungen erhalten, wenn die Daten in einem Dashboard die von Ihnen festgelegten Grenzen überschreiten.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/18/2017
 ms.author: mshenhav
-ms.openlocfilehash: 65e6414cb31c2b8234bb1f5426c7bff295263308
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: c843a3ef8ddfde591dec27ea523cb73857d1a289
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61381054"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870109"
 ---
 # <a name="set-data-alerts-in-the-power-bi-mobile-apps"></a>Festlegen von Datenwarnungen in den mobilen Power BI-Apps
 Gilt für:
@@ -168,5 +167,5 @@ Häufig wird die tägliche Aktualisierung von Datenquellen festgelegt, manche we
 ## <a name="next-steps"></a>Nächste Schritte
 * [Verwalten von Warnungen im Power BI-Dienst](../../service-set-data-alerts.md)
 * [Mobile Power BI-Mitteilungszentrale](mobile-apps-notification-center.md)
-* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
 

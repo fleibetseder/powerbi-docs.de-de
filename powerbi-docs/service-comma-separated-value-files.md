@@ -2,7 +2,6 @@
 title: Abrufen von Daten aus kommagetrennten Dateien (CSV)
 description: Erfahren Sie, wie Sie Daten von CSV-Dateien in Power BI aufrufen
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,17 +9,17 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 1a150c2cb4eb819b78b2b08a492087eb98bf6363
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: a33c8a45f4f32efb0a47df82b8af23d42c281ae9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513338"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73855528"
 ---
 # <a name="get-data-from-comma-separated-value-csv-files"></a>Abrufen von Daten aus kommagetrennten Dateien (CSV)
 ![](media/service-comma-separated-value-files/csv_icon.png)
 
-Kommagetrennte Dateien, häufig als CSV bezeichnet, sind einfache Textdateien mit Datenzeilen, in denen jeder Wert durch ein Komma getrennt ist. Diese Dateitypen können große Mengen an Daten bei einer relativ geringen Dateigröße enthalten; damit sind sie als Datenquelle für Power BI ideal geeignet. Sie können eine Beispiel-CSV-Datei [hier](http://go.microsoft.com/fwlink/?LinkID=619356) herunterladen.
+Kommagetrennte Dateien, häufig als CSV bezeichnet, sind einfache Textdateien mit Datenzeilen, in denen jeder Wert durch ein Komma getrennt ist. Diese Dateitypen können große Mengen an Daten bei einer relativ geringen Dateigröße enthalten; damit sind sie als Datenquelle für Power BI ideal geeignet. Sie können eine Beispiel-CSV-Datei [hier](https://go.microsoft.com/fwlink/?LinkID=619356) herunterladen.
 
 Falls Sie eine CSV-Datei haben, ist es an der Zeit, sie in Ihre Power BI-Website als Dataset zu übertragen. Dort können Sie Ihre Daten durchsuchen, Dashboards erstellen, und Ihre Einblicke mit anderen teilen.
 

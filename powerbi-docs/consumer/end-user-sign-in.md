@@ -2,7 +2,6 @@
 title: Anmelden und Abmelden
 description: Erfahren Sie, wie Sie sich beim Power BI-Dienst im Web anmelden, und wie Sie sich abmelden.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/13/2019
 ms.author: mihart
 LocalizationGroup: Getting started
-ms.openlocfilehash: 7bc52e06234b8c1be558f0c74680febe2a65d1d1
-ms.sourcegitcommit: 5410a17c6325406c9d9364585d7c26de4d9488ae
+ms.openlocfilehash: febe0ce869618d1517a668619e4b4bebd6023447
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72380017"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73861603"
 ---
 # <a name="sign-in-to-power-bi-service"></a>Anmelden beim Power BI-Dienst
 

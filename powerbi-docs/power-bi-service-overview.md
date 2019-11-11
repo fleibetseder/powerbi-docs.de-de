@@ -2,7 +2,6 @@
 title: Was ist der Power BI-Dienst?
 description: Übersicht über den Power BI-Dienst und wie dieser mit den anderen Komponenten von Power BI zusammenhängt
 author: maggiesMSFT
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 featuredvideoid: B2vd4MQrz4M
@@ -10,12 +9,12 @@ ms.topic: overview
 ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: b8a01839da68a276ff136d7068dafac0ce82f102
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 22446936f36074379242bd54af15c9bb2864e4a8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060854"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874985"
 ---
 # <a name="what-is-the-power-bi-service"></a>Was ist der Power BI-Dienst?
 Bei **Power BI** handelt es sich um eine Sammlung von Softwarediensten, Apps und Connectors, die Sie gemeinsam dabei unterstützen, Geschäftseinblicke für Sie und Ihr Unternehmen möglichst effektiv zu erstellen, freizugeben und zu nutzen. Der Microsoft Power BI-*Dienst* (app.powerbi.com), manchmal auch als Power BI Online bezeichnet, ist der SaaS-Teil (*Software-as-a-Service*) von Power BI. Beim Power BI-Dienst verlieren Sie durch *Dashboards* nie den Überblick über Ihr Unternehmen. In den Dashboards werden *Kacheln* angezeigt, die Sie auswählen können, um weitere Informationen in Form von *Berichten* zu erhalten. Dashboards und Berichte stellen Verbindungen mit mehreren *Datasets* her, die sämtliche relevanten Daten an einem Ort zusammenzuführen. 

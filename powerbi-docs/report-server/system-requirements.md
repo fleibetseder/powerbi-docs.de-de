@@ -3,18 +3,17 @@ title: Hardware- und Softwareanforderungen für die Installation von Power BI-Be
 description: In diesem Artikel werden die Mindestanforderungen an die Hardware und Software zum Installieren und Ausführen von Power BI-Berichtsserver aufgeführt.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 07/23/2019
-ms.openlocfilehash: fea28cd1c6541ae9255acd4be14cc85c2c2c5bed
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: aeb47f7f2a6e2de7c8c5095561819367ab16a7e9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415356"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873942"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Hardware- und Softwareanforderungen für die Installation von Power BI-Berichtsserver
 
@@ -24,7 +23,7 @@ In diesem Artikel werden die Mindestanforderungen an die Hardware und Software z
 
 | Komponente | Anforderung |
 | --- | --- |
-| .NET Framework |4.6<br><br>Über [Microsoft .NET Framework 4.6 (Webinstaller) für Windows](http://support.microsoft.com/kb/3045560) können Sie .NET Framework manuell installieren.<br/><br/> Weitere Informationen, Empfehlungen und Anleitungen zu .NET Framework 4.6 finden Sie im [Handbuch für die Bereitstellung von .NET Framework für Entwickler](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).<br/><br/>Windows 8.1 und Windows Server 2012 R2 erfordern die Installation von [KB2919355](http://support.microsoft.com/kb/2919355) vor der Installation von .NET Framework 4.6. |
+| .NET Framework |4.6<br><br>Über [Microsoft .NET Framework 4.6 (Webinstaller) für Windows](https://support.microsoft.com/kb/3045560) können Sie .NET Framework manuell installieren.<br/><br/> Weitere Informationen, Empfehlungen und Anleitungen zu .NET Framework 4.6 finden Sie im [Handbuch für die Bereitstellung von .NET Framework für Entwickler](https://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).<br/><br/>Windows 8.1 und Windows Server 2012 R2 erfordern die Installation von [KB2919355](https://support.microsoft.com/kb/2919355) vor der Installation von .NET Framework 4.6. |
 | Festplatte |Power BI-Berichtsserver erfordert mindestens 1 GB verfügbaren Speicherplatz auf der Festplatte.<br><br>Außerdem ist zusätzlicher Speicherplatz auf dem Datenbankserver erforderlich, der die Berichtsserver-Datenbank hostet. |
 | Arbeitsspeicher |**Minimum:** 1 GB<br/><br/> **Empfohlen:** Mindestens 4 GB |
 | Prozessorgeschwindigkeit |**Minimum:** x64-Prozessor: 1,4 GHz<br/><br/> **Empfohlen:** 2,0 GHz oder schneller |
@@ -77,6 +76,6 @@ Sie können eine Liveverbindung für tabellarische oder mehrdimensionale Instanz
 [Administratorübersicht](admin-handbook-overview.md)  
 [Installieren von Power BI-Berichtsserver](install-report-server.md)  
 [Herunterladen des Berichts-Generators](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Herunterladen der SQL Server Data Tools](http://go.microsoft.com/fwlink/?LinkID=616714)
+[Herunterladen der SQL Server Data Tools](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

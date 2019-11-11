@@ -2,7 +2,6 @@
 title: Leitfaden zum Bereitstellen eines Datengateways für Power BI
 description: Informationen zu bewährten Methoden und Überlegungen für das Bereitstellen eines Gateways für Power BI.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5a0c29f04e7329373eec5f60af840e503ec22b3c
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: d4a02ccc759f78a4243f34fb59115fb9084ea90d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68729996"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881694"
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Leitfaden zum Bereitstellen eines Datengateways für Power BI
 
@@ -69,5 +68,5 @@ Wenn Sie das Power BI-Gateway mit Azure Analysis Services verwenden möchten, st
 * [Lokales Datengateway – Problembehandlung](service-gateway-onprem-tshoot.md)  
 * [On-premises data gateway FAQ - Power BI (Häufig gestellte Fragen zum lokalen Datengateway – Power BI)](service-gateway-power-bi-faq.md)  
 
-Weitere Fragen? Wenden Sie sich an die [Power BI-Community](http://community.powerbi.com/).
+Weitere Fragen? Wenden Sie sich an die [Power BI-Community](https://community.powerbi.com/).
 

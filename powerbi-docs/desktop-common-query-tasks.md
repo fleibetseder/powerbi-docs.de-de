@@ -2,7 +2,6 @@
 title: Allgemeine Abfrageaufgaben in Power BI Desktop
 description: Allgemeine Abfrageaufgaben in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: dc6aa42691c7caa2593b28e441f96985b1e3bcda
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 2b1cf2a7f10fd7249dcdec26b5c5f5d12ff15aca
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239444"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878670"
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Allgemeine Abfrageaufgaben in Power BI Desktop
 Beim Arbeiten im Fenster **Abfrage-Editor** von Power BI Desktop haben Sie es mit einer Hand voll häufig verwendeter Aufgaben zu tun. In diesem Dokument werden diese allgemeinen Aufgaben vorgestellt. Zudem finden Sie Links zu weiteren Informationen. 
@@ -31,9 +30,9 @@ Zu den hier vorgestellten allgemeinen Abfrageaufgaben zählen folgende Aufgaben:
 
 Zum Ausführen dieser Aufgaben verwenden wir einige Datenverbindungen. Diese Daten sind für Sie zum Download verfügbar. Wenn Sie die Schritte selbst ausführen möchten, können Sie auch eine Verbindung zu diesen Daten herstellen.
 
-Die erste Datenverbindung ist eine Excel-Arbeitsmappe, die Sie unter [diesem Link](http://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx) herunterladen können. Die andere ist eine Webressource (sie wird auch in anderen Inhalten der Hilfe zu Power BI Desktop verwendet), auf die über folgenden Pfad zugegriffen werden kann:
+Die erste Datenverbindung ist eine Excel-Arbeitsmappe, die Sie unter [diesem Link](https://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx) herunterladen können. Die andere ist eine Webressource (sie wird auch in anderen Inhalten der Hilfe zu Power BI Desktop verwendet), auf die über folgenden Pfad zugegriffen werden kann:
 
-[*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
 Mit den Schritten, die zum Verbinden mit diesen beiden Datenquellen erforderlich sind, beginnen die allgemeinen Abfrageaufgaben.
 
@@ -142,7 +141,7 @@ Der Abfrage-Editor zeichnet alle angewendeten Abfrageschritte als Text auf, den 
 
 ![](media/desktop-common-query-tasks/queryformulas_advancededitorbutton.png)
 
-Hier sehen Sie den **Erweiterter Editor**, in dem die Abfrageschritte der Abfrage **USA\_StudentEnrollment** angezeigt werden. Diese Schritte werden in der Power Query-Formelsprache erstellt, die häufig auch nur **M** genannt wird. Informationen hierzu finden Sie unter [Informationen zu Power Query-Formeln](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f). Um die eigentliche Spezifikation dieser Formelsprache anzuzeigen, öffnen Sie [Microsoft Power Query-Spezifikation für die Excel-Formelsprache](http://go.microsoft.com/fwlink/?linkid=320633).
+Hier sehen Sie den **Erweiterter Editor**, in dem die Abfrageschritte der Abfrage **USA\_StudentEnrollment** angezeigt werden. Diese Schritte werden in der Power Query-Formelsprache erstellt, die häufig auch nur **M** genannt wird. Informationen hierzu finden Sie unter [Informationen zu Power Query-Formeln](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f). Um die eigentliche Spezifikation dieser Formelsprache anzuzeigen, öffnen Sie [Microsoft Power Query-Spezifikation für die Excel-Formelsprache](/powerquery-m/excel-workbook).
 
 ![](media/desktop-common-query-tasks/queryformulas_advancededitor.png)
 

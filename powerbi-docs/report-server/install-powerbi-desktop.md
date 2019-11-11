@@ -3,18 +3,17 @@ title: Installieren von für Power BI-Berichtsserver optimiertem Power BI Deskto
 description: Erfahren Sie mehr zum Installieren von für Power BI-Berichtsserver optimiertem Power BI Desktop
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/03/2019
-ms.openlocfilehash: a97c8125af46eae193f6c592d0b3c1153ae9b50c
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: 2a95f8afce2762b82e73741563a29fa22b433d36
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968642"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874116"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installieren von für Power BI-Berichtsserver optimiertem Power BI Desktop
 
@@ -55,7 +54,7 @@ Die Power BI Desktop-Version für den Power BI-Dienst gibt Monat und Jahr nicht 
 ## <a name="file-extension-association"></a>Zuordnung der Dateinamenerweiterung
 Wenn Sie Power BI Desktop und Power BI Desktop (optimiert für den Power BI-Berichtsserver) auf demselben Computer installieren, weist die neueste Installation von Power BI Desktop die Dateizuordnung zu PBIX-Dateien auf. Wenn Sie also auf eine PBIX-Datei doppelklicken, wird die Power BI Desktop-Version gestartet, die Sie zuletzt installiert haben.
 
-Wenn Sie Power BI Desktop bereits installiert haben und dann Power BI Desktop (optimiert für den Power BI-Berichtsserver) installieren, werden alle PBIX-Dateien standardmäßig in für den Power BI-Berichtsserver optimiertem Power BI Desktop geöffnet. Wenn Sie möchten, dass beim Öffnen von PBIX-Dateien standardmäßig Power BI Desktop gestartet wird, müssen Sie [Power BI Desktop aus dem Microsoft Store](http://aka.ms/pbidesktopstore) erneut installieren.
+Wenn Sie Power BI Desktop bereits installiert haben und dann Power BI Desktop (optimiert für den Power BI-Berichtsserver) installieren, werden alle PBIX-Dateien standardmäßig in für den Power BI-Berichtsserver optimiertem Power BI Desktop geöffnet. Wenn Sie möchten, dass beim Öffnen von PBIX-Dateien standardmäßig Power BI Desktop gestartet wird, müssen Sie [Power BI Desktop aus dem Microsoft Store](https://aka.ms/pbidesktopstore) erneut installieren.
 
 Sie können immer zuerst die Version von Power BI Desktop öffnen, die Sie verwenden möchten. Öffnen Sie anschließend die Datei in Power BI Desktop.
 
@@ -63,7 +62,7 @@ Zum Bearbeiten eines Power BI-Berichts auf dem Power BI-Berichtsserver oder Erst
 
 ## <a name="considerations-and-limitations"></a>Überlegungen und Einschränkungen
 
-Power BI-Berichte in Power BI-Berichtsserver und im Power BI-Dienst (http://app.powerbi.com) sowie in den mobilen Power BI-Apps funktionieren fast identisch, wobei sich einige Features aber unterscheiden.
+Power BI-Berichte in Power BI-Berichtsserver und im Power BI-Dienst (https://app.powerbi.com) sowie in den mobilen Power BI-Apps funktionieren fast identisch, wobei sich einige Features aber unterscheiden.
 
 ### <a name="selecting-a-language"></a>Auswählen einer Sprache
 

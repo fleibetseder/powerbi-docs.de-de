@@ -3,19 +3,18 @@ title: Bewährte Methoden für die Power BI-Leistung
 description: Dieser Artikel enthält Informationen zum Erstellen schneller und zuverlässiger Berichte in Power BI.
 author: Bhavik-MSFT
 ms.author: bhmerc
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/30/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 736c1ee1b1998ec7f991167352313a05061b3f3c
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: 2fd0a3d878641264e84a14579901a9685b0f6e8b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841482"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875104"
 ---
 # <a name="power-bi-performance-best-practices"></a>Bewährte Methoden für die Power BI-Leistung
 
@@ -152,7 +151,7 @@ Das lokale Datengateway eignet sich hervorragend zum Herstellen einer Verbindung
 
 Die Netzwerklatenz kann die Leistung eines Berichts beeinträchtigen, wenn es länger dauert, bis Anforderungen den Power BI-Dienst erreichen und Antworten übermittelt werden. Mandanten in Power BI werden einer bestimmten Region zugewiesen. Sie können die „Heimatregion“ Ihres Mandanten ermitteln, indem Sie zu „powerbi.com“ navigieren und **?** rechts oben auswählen. Klicken Sie dann auf **Info**. Wenn Benutzer von einem Mandanten aus auf den Power BI-Dienst zugreifen, werden ihre Anforderungen immer an diese Region weitergeleitet. Wenn die Anforderungen den Power BI-Dienst erreichen, kann der Dienst dann zusätzliche Anforderungen – z.B. an die zugrunde liegende Datenquelle oder das Gateway – senden, die ebenfalls der Netzwerklatenz unterliegen.
 
-Tools wie [Azure Speed Test](http://azurespeedtest.azurewebsites.net/) bieten einen Überblick über die Netzwerklatenz zwischen dem Client und der Azure-Region. Im Allgemeinen sollten sich, um die Auswirkungen der Netzwerklatenz zu minimieren, Datenquellen, Gateways und der Power BI-Cluster in möglichst großer Nähe zueinander befinden. Wenn die Netzwerklatenz ein Problem darstellt, versuchen Sie, Gateways und Datenquellen näher am Power BI-Cluster anzuordnen, indem Sie sie auf virtuellen Computern platzieren.
+Tools wie [Azure Speed Test](https://azurespeedtest.azurewebsites.net/) bieten einen Überblick über die Netzwerklatenz zwischen dem Client und der Azure-Region. Im Allgemeinen sollten sich, um die Auswirkungen der Netzwerklatenz zu minimieren, Datenquellen, Gateways und der Power BI-Cluster in möglichst großer Nähe zueinander befinden. Wenn die Netzwerklatenz ein Problem darstellt, versuchen Sie, Gateways und Datenquellen näher am Power BI-Cluster anzuordnen, indem Sie sie auf virtuellen Computern platzieren.
 
 Um die Netzwerklatenz noch weiter zu verbessern, können Sie [Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/) verwenden. Hiermit können schnellere und zuverlässigere Netzwerkverbindungen zwischen den Clients und Azure-Rechenzentren hergestellt werden.
 

@@ -2,7 +2,6 @@
 title: Verwalten Ihrer Datenquelle – SQL
 description: So verwalten Sie On-premises data gateway und die zu diesem Gateway gehörigen Datenquellen.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ca8cf2e9c20f2efb4fe4b9f80a936ba887cccc93
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: 66e9b53761fa154fe76cefea99cb5c88345b97aa
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832391"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881640"
 ---
 # <a name="manage-your-data-source---sql-server"></a>Verwalten Ihrer Datenquelle – SQL Server
 
@@ -81,5 +80,5 @@ Wenn Sie auf der Registerkarte **Benutzer** der im Gateway konfigurierten Datenq
 * [Lokales Datengateway – Power BI](service-gateway-onprem-tshoot.md)
 * [Verwenden von Kerberos für SSO (Single Sign-On, Einmaliges Anmelden) von Power BI bei lokalen Datenquellen](service-gateway-sso-kerberos.md)
 
-Weitere Fragen? Stellen Sie Ihre Frage in der [Power BI-Community](http://community.powerbi.com/).
+Weitere Fragen? Stellen Sie Ihre Frage in der [Power BI-Community](https://community.powerbi.com/).
 

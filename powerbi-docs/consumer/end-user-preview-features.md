@@ -2,7 +2,6 @@
 title: Aktivieren von Vorschaufeatures
 description: Power BI-Vorschaufeatures aktivieren (und deaktivieren)
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: b2d658daade3ab1aa2a1c09dc33c0e7d48636910
-ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.openlocfilehash: 5189c92c9da29b38d9ffaa4bf59e271e08fc4b2c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71141520"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862718"
 ---
 # <a name="opt-in-for-power-bi-service-preview-features"></a>Aktivieren von Vorschaufeatures im Power BI-Dienst
 ## <a name="what-are-preview-features"></a>Was sind *Vorschaufeatures*?
@@ -34,5 +33,5 @@ Der Power BI-Dienst wird ständig verbessert. Neue Features werden immer wieder 
 4. Wenn Sie die Vorschaufeatures deaktivieren möchten, führen Sie die ersten drei oben beschriebenen Schritte aus. Wählen Sie dabei im dritten Schritt **Aus** aus bzw. deaktivieren Sie das Kontrollkästchen, und klicken Sie dann auf **Übernehmen**.
 
 
-Haben Sie Fragen oder Feedback? [Besuchen Sie das Power BI-Communityforum](http://community.powerbi.com/t5/Navigation-Preview-Forum/bd-p/NavigationPreview).
+Haben Sie Fragen oder Feedback? [Besuchen Sie das Power BI-Communityforum](https://community.powerbi.com/t5/Navigation-Preview-Forum/bd-p/NavigationPreview).
 

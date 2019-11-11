@@ -3,19 +3,18 @@ title: Verwenden von benutzerdefinierten Datenconnectors mit dem lokalen Datenga
 description: Sie können benutzerdefinierte Datenconnectors mit dem lokalen Datengateway verwenden.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 3c0ef172115dba05deb02d724b663742a2e71c13
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: c76c8fdb635db7724ffeb1a5140e9095c9b2eff5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832521"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881742"
 ---
 # <a name="use-custom-data-connectors-with-the-on-premises-data-gateway"></a>Verwenden von benutzerdefinierten Datenconnectors mit dem lokalen Datengateway
 
@@ -23,7 +22,7 @@ ms.locfileid: "68832521"
 
 Mithilfe der Datenconnectors für Power BI können Sie eine Verbindung zu Daten einer App, eines Diensts oder einer Datenquelle herstellen und auf diese zugreifen. Sie können benutzerdefinierte Datenconnectors entwickeln und diese in Power BI Desktop verwenden.
 
-Weitere Informationen zum Entwickeln benutzerdefinierter Datenconnectors für Power BI finden auf der GitHub-Seite zum [Datenconnector SDK](http://aka.ms/dataconnectors). Diese Seite enthält Informationen zu den ersten Schritten sowie Beispiele für Power BI und Power Query.
+Weitere Informationen zum Entwickeln benutzerdefinierter Datenconnectors für Power BI finden auf der GitHub-Seite zum [Datenconnector SDK](https://aka.ms/dataconnectors). Diese Seite enthält Informationen zu den ersten Schritten sowie Beispiele für Power BI und Power Query.
 
 Wenn Sie Berichte in Power BI Desktop erstellen, die benutzerdefinierte Datenconnectors nutzen, können Sie das lokale Datengateway dazu verwenden, diese Berichte über den Power BI-Dienst zu aktualisieren.
 
@@ -58,4 +57,4 @@ Wenn diese Option aktiviert ist, werden Ihre benutzerdefinierten Connectors als 
 * [Configure proxy settings for the on-premises data gateway (Konfigurieren von Proxyeinstellungen für das lokale Datengateway)](/data-integration/gateway/service-gateway-proxy)
 * [Verwenden von Kerberos für SSO (Single Sign-On, Einmaliges Anmelden) von Power BI bei lokalen Datenquellen](service-gateway-sso-kerberos.md)  
 
-Weitere Fragen? Stellen Sie Ihre Frage in der [Power BI-Community](http://community.powerbi.com/).
+Weitere Fragen? Stellen Sie Ihre Frage in der [Power BI-Community](https://community.powerbi.com/).

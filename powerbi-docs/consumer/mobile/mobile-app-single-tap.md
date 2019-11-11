@@ -2,19 +2,18 @@
 title: Konfigurieren von Berichtsinteraktionen für einfaches Tippen
 description: Erfahren Sie, wie Sie Berichtsinteraktionen für einfaches oder doppeltes Tippen konfigurieren.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: c553b921ebeb30b8fb8ec7ba9f7bce74f6c31dee
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 4288178f702ff3fbfaa05c943adb0fd7ec12f530
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "67558953"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879417"
 ---
 # <a name="configure-report-interaction-to-single-tap-or-double-tap"></a>Konfigurieren von Berichtsinteraktionen für einfaches oder doppeltes Tippen
 Gilt für:
@@ -46,5 +45,5 @@ Dieser Artikel gilt für Berichte im Querformat und Smartphoneberichte.
 
 ## <a name="next-steps"></a>Nächste Schritte
 * [Anzeigen von und Interagieren mit Power BI-Berichten, die für das Smartphone optimiert sind](mobile-apps-view-phone-report.md)
-* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
 

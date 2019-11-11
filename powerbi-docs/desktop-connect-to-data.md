@@ -2,7 +2,6 @@
 title: Verbinden mit Daten in Power BI Desktop
 description: Verbinden mit Daten in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,15 +10,15 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0a582eb5c160685784c6db497353f92d2dd3d2cf
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b9e006cb14d391b82c7a1f48ba760ad9c363062c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514096"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878485"
 ---
 # <a name="connect-to-data-in-power-bi-desktop"></a>Verbinden mit Daten in Power BI Desktop
-Mit Power BI Desktop können Sie problemlos Verbindungen zur ständig wachsenden Welt der Daten herstellen. Wenn Sie noch nicht über Power BI Desktop verfügen, können Sie die Anwendung [herunterladen](http://go.microsoft.com/fwlink/?LinkID=521662) und installieren.
+Mit Power BI Desktop können Sie problemlos Verbindungen zur ständig wachsenden Welt der Daten herstellen. Wenn Sie noch nicht über Power BI Desktop verfügen, können Sie die Anwendung [herunterladen](https://go.microsoft.com/fwlink/?LinkID=521662) und installieren.
 
 In Power BI Desktop sind *alle möglichen Arten* von in Power BI Desktop verfügbaren Datenquellen enthalten. Aus der folgenden Abbildung geht hervor, wie Sie eine Verbindung zu Daten herstellen. Wählen Sie dazu zuerst das Menüband **Datei** und dann **Daten abrufen \> Mehr** aus.
 
@@ -32,7 +31,7 @@ Stellen Sie sich vor, Sie gehen in Rente. Sie möchten dort leben, wo die Sonne 
 
 In beiden Fällen finden Sie eine Webressource, die interessante Daten und mehr zu diesen Themen enthält:
 
-[*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
 Wählen Sie **Daten abrufen \> Web** aus, und geben Sie die Adresse ein.
 
@@ -75,7 +74,7 @@ Mit Power BI Desktop können Sie viele Aufgaben ausführen. Weitere Informatione
 * [Strukturieren und Kombinieren von Daten mit Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Allgemeine Abfrageaufgaben in Power BI Desktop](desktop-common-query-tasks.md)   
 
-Möchten Sie uns Feedback senden? Prima! verwenden Sie das Menüelement **Vorschlag einreichen** in Power BI Desktop oder besuchen Sie [Community-Feedback](http://community.powerbi.com/t5/Community-Feedback/bd-p/community-feedback). Wir freuen uns, von Ihnen zu hören!
+Möchten Sie uns Feedback senden? Prima! verwenden Sie das Menüelement **Vorschlag einreichen** in Power BI Desktop oder besuchen Sie [Community-Feedback](https://community.powerbi.com/t5/Community-Feedback/bd-p/community-feedback). Wir freuen uns, von Ihnen zu hören!
 
 ![](media/desktop-connect-to-data/sendfeedback.png)
 

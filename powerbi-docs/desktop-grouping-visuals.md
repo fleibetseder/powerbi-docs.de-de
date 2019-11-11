@@ -2,7 +2,6 @@
 title: Verwenden von Gruppierung in Power BI Desktop
 description: Informationen zum Gruppieren von Visuals in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6b6266547704077769174c2ae0a9675503f10dca
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: d67fbacece27ab75a3add89541dad77ce51a91f8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69029578"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73867496"
 ---
 # <a name="use-grouping-in-power-bi-desktop"></a>Verwenden von Gruppierung in Power BI Desktop
 Wenn Sie **Gruppierung** in **Power BI Desktop** verwenden, können Sie Visuals in Ihrem Bericht gruppieren, z. B. Schaltflächen, Textfelder, Formen, Bilder und alle Visuals, die Sie erstellen. Das funktioniert genauso wie das Gruppieren von Elementen in PowerPoint. Durch das Gruppieren von Visuals in einem Bericht können Sie die Gruppe wie ein einzelnes Objekt behandeln, und so das Verschieben, Ändern der Größe und das Arbeiten mit Ebenen in Ihrem Bericht einfacher, schneller und intuitiver zu gestalten.

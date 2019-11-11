@@ -2,7 +2,6 @@
 title: 'Erstellen von Berichten auf Grundlage von Datasets aus anderen Arbeitsbereichen (Vorschau): Power BI'
 description: Erfahren Sie, wie Sie ein Dataset mit Benutzern in der gesamten Organisation teilen können. Dann können diese in ihren eigenen Arbeitsbereichen Berichte erstellen, die auf Ihrem Dataset basieren.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f8229c74a233d8bc44370380bf635527506194f0
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: 371507eb86e1b68225e9d66ee3a1363b0e163d4f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67567456"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877174"
 ---
 # <a name="create-reports-based-on-datasets-from-different-workspaces-preview"></a>Erstellen von Berichten auf Grundlage von Datasets aus anderen Arbeitsbereichen (Vorschau)
 
@@ -63,4 +62,4 @@ Es gibt zwei Arten von empfohlenen Datasets. Datasetbesitzer können ein Dataset
 ## <a name="next-steps"></a>Nächste Schritte
 
 - [Verwenden von Datasets in mehreren Arbeitsbereichen (Vorschau)](service-datasets-across-workspaces.md)
-- Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+- Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

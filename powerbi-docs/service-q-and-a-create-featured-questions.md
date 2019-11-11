@@ -2,7 +2,6 @@
 title: Erstellen von ausgewählten Fragen für Power BI Q&A
 description: Dokumentation zum Erstellen von ausgewählten Fragen für Power BI Q&A
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/14/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 138c14e98485777d84130854c7811a33b74dffd3
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 1571589844abb8e9acf0bbb78eccf5664db9bf52
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721116"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881117"
 ---
 # <a name="create-featured-questions-for-power-bi-qa"></a>Erstellen von ausgewählten Fragen für Power BI Q&A
 Wenn Sie ein Dataset besitzen, können Sie dem Dataset eigene ausgewählte Fragen hinzufügen. Power BI Q&A zeigt diese Fragen dann für Kollegen an, die Berichte nutzen, die auf diesem Dataset basieren.  Durch die ausgewählten Fragen erhalten Ihre Kollegen Anhaltspunkte für die Arten von Fragen, die sie zum Dataset stellen können. Welche ausgewählten Fragen Sie hinzufügen, ist Ihnen überlassen – häufig gestellte Fragen, Fragen mit interessanten Ergebnissen oder Fragen, die möglicherweise schwierig zu formulieren sind.
@@ -50,5 +49,5 @@ In diesem Artikel wird das [Analysebeispiel für den Einzelhandel](sample-datase
 - [Verwenden von Q&A in Dashboards und Berichten](power-bi-tutorial-q-and-a.md)  
 - [Grundlegende Konzepte für Designer im Power BI-Dienst](service-basic-concepts.md)  
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 

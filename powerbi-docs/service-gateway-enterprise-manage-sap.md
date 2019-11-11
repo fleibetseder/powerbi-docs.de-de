@@ -2,7 +2,6 @@
 title: Verwalten Ihrer Datenquelle –SAP HANA
 description: So verwalten Sie On-premises data gateway und die zu diesem Gateway gehörigen Datenquellen. Dieser Artikel bezieht sich auf SAP HANA.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/16/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: b3e1ea53abeff39609515b0b615f9e000432e9c6
-ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
+ms.openlocfilehash: 577f0b26052ecc5fbe5f4e5b4da624da2b6e06c4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70303175"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881722"
 ---
 # <a name="manage-your-data-source---sap-hana"></a>Verwalten Ihrer Datenquelle –SAP HANA
 
@@ -74,5 +73,5 @@ Wenn Sie auf der Registerkarte **Benutzer** der im Gateway konfigurierten Datenq
 * [Problembehandlung beim lokalen Datengateway](/data-integration/gateway/service-gateway-tshoot)
 * [Lokales Datengateway – Power BI](service-gateway-onprem-tshoot.md) 
 
-Weitere Fragen? Stellen Sie Ihre Frage in der [Power BI-Community](http://community.powerbi.com/).
+Weitere Fragen? Stellen Sie Ihre Frage in der [Power BI-Community](https://community.powerbi.com/).
 

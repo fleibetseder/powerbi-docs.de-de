@@ -3,18 +3,17 @@ title: Sicherheit auf Zeilenebene auf dem Power BI-Berichtsserver
 description: Erfahren Sie mehr zur Sicherheit auf Zeilenebene auf dem Power BI-Berichtsserver.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
-ms.openlocfilehash: f43538b658c1d46984026fd936378a37d33c2e1d
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: 7436b97cdeacf08f1d4ed9374ec615d56ae92db1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70751540"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73859178"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Sicherheit auf Zeilenebene auf dem Power BI-Berichtsserver
 
@@ -34,7 +33,7 @@ Standardmäßig werden beim Filtern mit Sicherheit auf Zeilenebene einzelne unid
 
 Aktivieren Sie dieses Kontrollkästchen, wenn Sie die [dynamische Sicherheit auf Zeilenebene](https://docs.microsoft.com/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters) basierend auf dem Benutzernamen oder der Anmelde-ID implementieren. 
 
-Weitere Informationen finden Sie unter [Bidirektionale Kreuzfilterung mithilfe von DirectQuery in Power BI Desktop](../desktop-bidirectional-filtering.md) und im Whitepaper [Securing the Tabular BI Semantic Model (Sichern des semantischen BI-Tabellenmodells)](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
+Weitere Informationen finden Sie unter [Bidirektionale Kreuzfilterung mithilfe von DirectQuery in Power BI Desktop](../desktop-bidirectional-filtering.md) und im Whitepaper [Securing the Tabular BI Semantic Model (Sichern des semantischen BI-Tabellenmodells)](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
 
 [!INCLUDE [rls-desktop-view-as-roles](../includes/rls-desktop-view-as-roles.md)]
 

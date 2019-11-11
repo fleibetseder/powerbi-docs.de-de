@@ -2,7 +2,6 @@
 title: Anzeigen von Bildern in einer Tabelle oder Matrix in einem Bericht
 description: In Power BI Desktop erstellen Sie eine Spalte mit Hyperlinks zu Bildern. Fügen Sie diese Hyperlinks dann entweder in Power BI Desktop oder im Power BI-Dienst einer Berichtstabelle, Matrix, einem Slicer oder einer Karte mit mehreren Zeilen hinzu, um das Bild anzuzeigen.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/11/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: cbb04057c8065e998068dd6520539c830a659f72
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 95b1dc1be3421f19fa8220629ca2003469658480
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715552"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874484"
 ---
 # <a name="display-images-in-a-table-matrix-or-slicer-in-a-report"></a>Anzeigen von Bildern in einem Bericht in einer Tabelle, Matrix oder einem Slicer
 
@@ -48,5 +47,5 @@ Ihren Berichten Bilder hinzuzufügen ist eine gute Möglichkeit, sie zu verbesse
 
 [Grundlegende Konzepte für Designer im Power BI-Dienst](service-basic-concepts.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 

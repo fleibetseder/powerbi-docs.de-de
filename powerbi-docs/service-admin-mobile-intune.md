@@ -2,7 +2,6 @@
 title: Konfigurieren mobiler Apps mit Microsoft Intune
 description: Informationen zum Konfigurieren der mobilen Power BI-Apps mit Microsoft Intune Dies umfasst das Hinzufügen und Bereitstellen der Anwendung sowie das Erstellen der Richtlinie für mobile Anwendungen zum Kontrollieren der Sicherheit.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: b1af8c58e24ff1d95b28ea8a024c29ccdcac56b3
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: abbbceb6734ecb70469efa198b6e85fce4c3e840
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075613"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73857345"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Konfigurieren mobiler Apps mit Microsoft Intune
 
@@ -191,4 +190,4 @@ Sie installieren die Anwendung über die *Unternehmensportal*-App. Wenn Sie das 
 
 [Power BI-Apps für mobile Geräte](consumer/mobile/mobile-apps-for-mobile-devices.md)  
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)  
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)  

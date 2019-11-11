@@ -2,7 +2,6 @@
 title: Erste Schritte mit Power BI Desktop
 description: Erste Schritte mit Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,17 +9,17 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 2049d996c9f6130718e203a8f6d27a2a7fac911f
-ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.openlocfilehash: e533313e20c4e1f994c2ae3d1e552170aef2cbd2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "70201013"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73868018"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Erste Schritte mit Power BI Desktop
 Willkommen beim Handbuch **Erste Schritte mit Power BI Desktop**. Dieser kurze Überblick über Power BI Desktop soll Sie mit der Funktionsweise vertraut machen und die Möglichkeiten aufzeigen, die Ihnen in Power BI Desktop zur Verfügung stehen. Dadurch sind Sie rasch in der Lage, neben ansprechenden Berichten auch robuste Datenmodelle zu erstellen, die Ihr Business Intelligence-Potenzial erweitern. 
 
-Gefallen Ihnen Videos besser als Text? Gerne können Sie sich auch unser [Video „Erste Schritte“ ansehen](desktop-videos.md). Wenn Sie parallel zum Video entsprechende Beispieldaten anzeigen möchten, können Sie die [Excel-Beispielarbeitsmappe herunterladen](http://go.microsoft.com/fwlink/?LinkID=521962).
+Gefallen Ihnen Videos besser als Text? Gerne können Sie sich auch unser [Video „Erste Schritte“ ansehen](desktop-videos.md). Wenn Sie parallel zum Video entsprechende Beispieldaten anzeigen möchten, können Sie die [Excel-Beispielarbeitsmappe herunterladen](https://go.microsoft.com/fwlink/?LinkID=521962).
 
 ![](media/desktop-getting-started/pbi_gettingstartedsplash_resized.png)
 
@@ -88,7 +87,7 @@ Stellen Sie sich vor, Sie gehen in Pension und möchten dort leben, wo oft die S
 
 In allen drei Fällen hält die folgende Webressource u.a. Daten zu diesen Themenbereichen bereit:
 
-[*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
 Wählen Sie **Daten abrufen \> Web** aus, und fügen Sie die Adresse ein.
 
@@ -158,7 +157,7 @@ Diese Daten von verschiedenen Bundesstaaten sind interessant und nützlich zur E
 
 Glücklicherweise gibt es eine andere öffentliche Datenquelle, die genau das bereitstellt. Die Daten müssen jedoch noch entsprechend strukturiert werden, bevor wir sie mit unserer Tabelle mit bevorzugten Wohnorten für Pensionäre verbinden können. Hier befindet sich die Webressource mit den Länderkürzeln:
 
-<http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
+<https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
 
 Wählen Sie im Menüband **Start** die Ansicht **Abfrage-Editor** und dann **Daten abrufen \> Web**aus. Geben Sie die Adresse ein, und klicken Sie auf **OK**. Im Fenster **Navigator** werden die Ergebnisse von dieser Webseite angezeigt.
 

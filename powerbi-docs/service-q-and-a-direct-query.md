@@ -2,7 +2,6 @@
 title: Verwenden von Q&A mit Liveverbindungen in Power BI
 description: Dokumentation für die Verwendung von Power BI Q&A-Abfragen in natürlicher Sprache mit Liveverbindungen mit Analysis Services-Daten und dem lokalen Datengateway.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 59c9488def297537cc2ea944f6c0fc4f59ba29ba
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 8bb3597d2877376431a2249428e88d56bee2c0a1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66720888"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871810"
 ---
 # <a name="enable-qa-for-live-connections-in-power-bi"></a>Aktivieren von Q&A für Liveverbindungen in Power BI
 ## <a name="what-is-the-on-premises-data-gateway--what-is-a-live-connection"></a>Was ist das lokale Datengateway?  Was ist eine Liveverbindung?
@@ -66,5 +65,5 @@ Die Funktion weist einige Einschränkungen auf:
 - [Grundlegende Konzepte für Designer im Power BI-Dienst](service-basic-concepts.md)  
 - [Übersicht über Power BI Q&A](consumer/end-user-q-and-a.md)  
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
 

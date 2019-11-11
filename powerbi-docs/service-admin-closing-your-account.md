@@ -2,7 +2,6 @@
 title: Schließen des Power BI-Kontos möglich
 description: Wenn Sie Power BI nicht mehr verwenden möchten, können Sie Ihr Power BI-Konto schließen.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 227b4e837e75959dc838556ab0215db32131ec07
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 6909e07619f36337f9ff69f97f3212afa0f5659d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075654"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73857867"
 ---
 # <a name="close-your-power-bi-account"></a>Schließen des Power BI-Kontos möglich
 
@@ -51,4 +50,4 @@ Wenn Ihre Organisation Sie für Power BI registriert hat, wenden Sie sich an Ihr
 
 ![Schließen eines verwalteten Kontos](media/service-admin-closing-your-account/close-account-managed.png)
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

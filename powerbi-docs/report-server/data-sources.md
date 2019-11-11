@@ -2,19 +2,18 @@
 title: Datenquellen für Power BI-Berichte in Power BI-Berichtsserver
 description: Power BI-Berichte können Verbindungen mit einer Reihe von Datenquellen herstellen. Je nach Verwendung der Daten sind verschiedene Datenquellen verfügbar.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/17/2018
 ms.author: maggies
-ms.openlocfilehash: 9b7f3adfc7702dee36c43308b227baf72328935a
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: 019cbc489ae6433629898e44088e689767ef12ae
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71945833"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874179"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Datenquellen für Power BI-Berichte in Power BI-Berichtsserver
 Power BI-Berichte können Verbindungen mit einer Reihe von Datenquellen herstellen. Je nach Verwendung der Daten sind verschiedene Datenquellen verfügbar. Daten können importiert werden, oder Daten können direkt mit DirectQuery oder über eine Liveverbindung mit SQL Server Analysis Services abgefragt werden.
@@ -73,7 +72,7 @@ Andere Datenquellen können funktionieren, selbst wenn sie nicht in der Liste de
 | Sybase-Datenbank |Ja |Ja |Nein |
 | Teradata |Ja |Ja |Ja |
 | Text/CSV |Ja |Ja |Nein |
-| Datenquellen-Anmeldeinformationen |Ja |Ja |Nein |
+| Web |Ja |Ja |Nein |
 | XML |Ja |Ja |Nein |
 | appFigures (Beta) |Ja |Nein |Nein |
 | Azure Analysis Services-Datenbank |Ja |Nein |Ja |
@@ -121,7 +120,7 @@ Microsoft Power BI-Berichtsserver unterstützt keine auf OAuth basierende Authen
 | --- | --- | --- | --- | --- |
 | SQL Server-Datenbank |Nein |Nein |Ja |Ja |
 | SQL Server Analysis Services |Nein |Nein |Ja |Ja |
-| Datenquellen-Anmeldeinformationen |Ja |Nein |Ja |Ja |
+| Web |Ja |Nein |Ja |Ja |
 | Azure SQL-Datenbank |Nein |Nein |Ja |Nein |
 | Azure SQL Data Warehouse |Nein |Nein |Ja |Nein |
 | Active Directory |Nein |Nein |Ja |Ja |

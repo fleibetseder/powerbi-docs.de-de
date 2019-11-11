@@ -2,7 +2,6 @@
 title: KPI-Visualisierungen (Key Performance Indicator)
 description: Erstellen von KPI-Visualisierungen (Key Performance Indicator) in Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: xmja6EpqaO0
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: tutorial
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8ecec706c281b2a36c342ea852eebb4a8559a6fd
-ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
+ms.openlocfilehash: 42a9f2c641a0cdac9b7a129ffc5ecc6f7fb8cf8d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72239928"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870866"
 ---
 # <a name="key-performance-indicator-kpi-visuals"></a>KPI-Visualisierungen (Key Performance Indicator)
 
@@ -47,7 +46,7 @@ Ein KPI-Dataset muss Zielwerte für eine KPI enthalten. Wenn Ihr Dataset keine Z
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-In diesem Tutorial wird die [PBIX-Datei mit einem Analysebeispiel für den Einzelhandel](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) verwendet.
+In diesem Tutorial wird die [PBIX-Datei mit einem Analysebeispiel für den Einzelhandel](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) verwendet.
 
 1. Wählen Sie im oberen linken Bereich der Menüleiste **Datei** > **Öffnen** aus.
 
@@ -106,4 +105,4 @@ Wenn die KPI nicht wie in der Abbildung oben aussieht, haben Sie möglicherweise
 
 * [Visualisierungstypen in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

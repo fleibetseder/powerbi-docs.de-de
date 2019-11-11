@@ -4,18 +4,17 @@ description: In diesem Artikel erfahren Sie, wie Sie eine Power BI Embedded-Kapa
 services: power-bi-embedded
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 editor: ''
 tags: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 01/31/2019
-ms.openlocfilehash: b9a632fa39d320d14d1282cee5e59022a8ab0303
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 5a30c8cb6af80e74cbf2513c24aee55483338fb4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61388435"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875902"
 ---
 # <a name="scale-your-power-bi-embedded-capacity-in-the-azure-portal"></a>Skalieren einer Power BI Embedded-Kapazität im Azure-Portal
 
@@ -62,4 +61,4 @@ Wie Sie Ihre Kapazität anhalten oder starten, erfahren Sie unter [Anhalten und 
 
 Weitere Informationen zum Einbetten von Power BI-Inhalten in Ihre Anwendung finden Sie unter [Einbetten von Power BI-Berichten, -Dashboards, oder -Kacheln](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/).
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: Verwenden von Aggregaten (Summe, Durchschnitt usw.) im Power BI-Dienst
 description: Erfahren Sie, wie Sie die Aggregation in einem Diagramm (Summe, Durchschnitt, Maximum usw.) im Power BI-Dienst ändern können.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.date: 05/03/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Reports
-ms.openlocfilehash: 7cee05df6a7d13e18bc31bc1a1f34a5f89711c0d
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: 595b5743450aeb8ae6f6e60157742e3563a28fdd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "65710684"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873305"
 ---
 # <a name="work-with-aggregates-sum-average-and-so-on-in-the-power-bi-service"></a>Verwenden von Aggregaten (Summe, Durchschnitt usw.) im Power BI-Dienst
 
@@ -50,7 +49,7 @@ Die Arbeit mit Aggregaten im Power BI-Dienst kann verwirrend sein. Möglicherwei
 
 In der Regel liegt das zugrunde liegende Problem bei der Felddefinition im Dataset. Möglicherweise hat der Besitzer des Datasets das Feld als Text definiert, was erklären würde, wieso Power BI weder die Summe noch den Durchschnitt ermitteln kann. [Die Kategorisierung eines Felds kann allerdings nur vom Besitzer des Datasets geändert werden.](desktop-measures.md) Wenn Sie also über Besitzerberechtigungen für das Dataset verfügen (in Power BI Desktop oder in dem Programm, in dem das Dataset erstellt wurde, z. B. Excel), können Sie das Problem beheben. Andernfalls müssen Sie den Besitzer des Datasets um Hilfe bitten.  
 
-Am Ende dieses Artikels finden Sie einen gesonderten Abschnitt namens [**Zu beachtende Aspekte und Problembehandlung**](#considerations-and-troubleshooting). Dort finden Sie Tipps und Anleitungen. Wenn Sie dort keine passende Antwort finden, stellen Sie Ihre Frage im [Forum der Power BI-Community](http://community.powerbi.com). Sie erhalten eine umgehende Antwort direkt vom Power BI-Team.
+Am Ende dieses Artikels finden Sie einen gesonderten Abschnitt namens [**Zu beachtende Aspekte und Problembehandlung**](#considerations-and-troubleshooting). Dort finden Sie Tipps und Anleitungen. Wenn Sie dort keine passende Antwort finden, stellen Sie Ihre Frage im [Forum der Power BI-Community](https://community.powerbi.com). Sie erhalten eine umgehende Antwort direkt vom Power BI-Team.
 
 ## <a name="change-how-a-numeric-field-is-aggregated"></a>Ändern, wie ein numerisches Feld aggregiert wird
 
@@ -188,4 +187,4 @@ F:  In der Dropdownliste steht die Option **Nicht zusammenfassen** nicht zur Ver
 
 A:  Entfernen Sie das Feld, und fügen Sie es anschließend wieder hinzu.
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

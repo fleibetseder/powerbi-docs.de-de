@@ -2,7 +2,6 @@
 title: Datentypen in Power BI Desktop
 description: Datentypen in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: reference
 ms.date: 09/05/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ccde7f01968a9fdcdd74903819b7083a552479b0
-ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.openlocfilehash: a3ca4b8ffe709fec7953eb5d4081bdf296504eb1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70391785"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73868511"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Datentypen in Power BI Desktop
 Dieser Artikel beschreibt Datentypen, die im Power BI Desktop und von DAX (Data Analysis Expressions) unterstützt werden. 
@@ -71,7 +70,7 @@ Power BI Desktop unterstützt fünf Datum/Uhrzeit-Datentypen in der Abfrageansic
 **Wahr/Falsch** – Ein boolescher Wert, der entweder auf Wahr oder Falsch gesetzt wird.
 
 ### <a name="blanksnulls-type"></a>Leerzeichen-/Null-Typ
-**Leer** – Ein Datentyp in DAX, der SQL-Nullen darstellt und ersetzt. Sie können mit der [BLANK](http://msdn.microsoft.com/library/ee634820.aspx)-Funktion ein Leerzeichen erstellen und mit der logischen [ISBLANK](https://msdn.microsoft.com/library/ee634204.aspx)-Funktion nach Leerzeichen suchen.
+**Leer** – Ein Datentyp in DAX, der SQL-Nullen darstellt und ersetzt. Sie können mit der [BLANK](https://msdn.microsoft.com/library/ee634820.aspx)-Funktion ein Leerzeichen erstellen und mit der logischen [ISBLANK](https://msdn.microsoft.com/library/ee634204.aspx)-Funktion nach Leerzeichen suchen.
 
 ### <a name="table-data-type"></a>Tabellendatentyp
 DAX verwendet einen Tabellendatentyp in vielen Funktionen, z. B. in Aggregationen und Zeitintelligenzberechnungen. Einige Funktionen erfordern einen Verweis auf eine Tabelle, während andere Funktionen eine Tabelle zurückgeben, die dann als Eingabe für andere Funktionen verwendet werden kann. In einigen Funktionen, die eine Tabelle als Eingabe erfordern, können Sie einen Ausdruck angeben, der eine Tabelle ergibt. Bei einigen Funktionen ist ein Verweis auf eine Basistabelle erforderlich. Informationen zu den Anforderungen bestimmter Funktionen finden Sie unter [DAX-Funktionsreferenz](https://msdn.microsoft.com/library/ee634396.aspx).

@@ -2,7 +2,6 @@
 title: Hinzufügen eines Links zu einem Textfeld in einem Bericht
 description: Hinzufügen eines Links zu einem Textfeld in Power BI Desktop und im Power BI-Dienst
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0ceb1749fcbf78ac844ca1c6e4b3f08a6f4c5d3f
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: 2de2cd80dbffc8c65a4577fffd6a8e41bc6116d2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832405"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873793"
 ---
 # <a name="add-a-hyperlink-to-a-text-box-in-a-report"></a>Hinzufügen eines Links zu einem Textfeld in einem Bericht
 Sie können ein Textfeld zu einem Bericht in Power BI Desktop oder im Power BI-Dienst hinzufügen. Sie können ein Textfeld aus einem Bericht an ein Dashboard anheften oder direkt zu einem Dashboard hinzufügen. Sie können in jedem Textfeld einen Link hinzufügen. Dabei ist es nicht wichtig, wo sich das Textfeld befindet. In diesem Artikel wird veranschaulicht, wie ein Link in ein Textfeld in einem Bericht hinzugefügt wird. 
@@ -63,5 +62,5 @@ Informationen zu Links in Power BI-Tabellen und -Matrizen finden Sie unter [Hinz
 ## <a name="next-steps"></a>Nächste Schritte
 [Textfelder und Formen in Power BI-Berichten](power-bi-reports-add-text-and-shapes.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/).
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/).
 

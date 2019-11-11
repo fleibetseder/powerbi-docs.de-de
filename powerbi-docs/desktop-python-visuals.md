@@ -2,7 +2,6 @@
 title: Erstellen von Power BI-Visualisierungen mithilfe von Python
 description: Erstellen von Power BI-Visualisierungen mithilfe von Python
 author: otarb
-manager: rajatt
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/20/2018
 ms.author: otarb
 LocalizationGroup: Create reports
-ms.openlocfilehash: b41a50ae7c4aaf8f70c9d7745ea4767b7644a62f
-ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
+ms.openlocfilehash: 567b775cb7323dbd343f2a26d4abc0d60885ab7a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70303128"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877974"
 ---
 # <a name="create-power-bi-visuals-using-python"></a>Erstellen von Power BI-Visualisierungen mithilfe von Python
 Mit **Power BI Desktop** können Sie **Python** zum Visualisieren Ihrer Daten verwenden.
@@ -158,7 +157,7 @@ Dieses Tutorial soll Ihnen den Einstieg in die Erstellung von Visuals mit Python
 * Dokumentation auf der [Matplotlib](https://matplotlib.org/)-Website. 
 * [Matplotlib Tutorial: A Basic Guide to Use Matplotlib with Python (Matplotlib-Tutorial: Basisanleitung zur Verwendung von Matplotlib mit Python)](https://www.datasciencelearner.com/matplotlib-tutorial-complete-guide-to-use-matplotlib-with-python/) 
 * [Matplotlib Tutorial – Python Matplotlib Library with Examples (Matplotlib-Tutorial: Matplotlib-Bibliothek für Python mit Beispielen)](https://www.edureka.co/blog/python-matplotlib-tutorial/) 
-* [Pandas API Reference (API-Referenz für Pandas)](http://pandas.pydata.org/pandas-docs/stable/reference/index.html) 
+* [Pandas API Reference (API-Referenz für Pandas)](https://pandas.pydata.org/pandas-docs/stable/reference/index.html) 
 * [Python-Visualisierungen im Power BI-Dienst](https://powerbi.microsoft.com/blog/python-visualizations-in-power-bi-service/) 
 * [Erstellen von Python-Visuals in Power BI](https://www.absentdata.com/how-to-user-python-and-power-bi/)
 

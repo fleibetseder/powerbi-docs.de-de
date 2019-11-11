@@ -2,7 +2,6 @@
 title: Was ist ein Power BI-„Kunde“?
 description: Übersicht über Power BI für Benutzer (auch als Endbenutzer oder Geschäftskunden bezeichnet).
 author: mihart
-manager: kvivek
 ms.service: powerbi
 ms.custom: seodec18
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: overview
 ms.date: 10/31/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 8b1876d0990cc21d854ac96329e5ab4a5632f22d
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: bf5e83005e0bd1782e497cdeec1d3689e5749b12
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73430271"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73863803"
 ---
 # <a name="the-power-bi-service-for-consumers"></a>Der Power BI-Dienst für Verbraucher
 
@@ -59,6 +58,6 @@ Das bedeutet nicht, dass Sie Ihre Änderungen nicht speichern können. Allerding
 ## <a name="next-steps"></a>Nächste Schritte
 
 [Verschaffen Sie sich einen Überblick über den Power BI-Dienst für Benutzer](end-user-reading-view.md)    
-[Schulung zum Power BI-Dienst für Benutzer](https://docs.microsoft.com/en-us/learn/paths/consume-data-with-power-bi/)    
+[Schulung zum Power BI-Dienst für Benutzer](https://docs.microsoft.com/learn/paths/consume-data-with-power-bi/)    
 [Terminologie und Konzepte für Power BI-*Kunden*](end-user-basic-concepts.md)    
 

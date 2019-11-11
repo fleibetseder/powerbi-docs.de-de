@@ -3,19 +3,18 @@ title: Multi-Geo-Unterstützung für Power BI Premium
 description: In diesem Artikel erfahren Sie, wie Sie Inhalte für Rechenzentren in anderen Regionen als der ursprünglichen Region des Power BI-Mandanten bereitstellen können.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: f29ce1ce05db80378eee81293d92484fb4f58f45
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.openlocfilehash: 129cef8a923b27582bd6424c8d025b93ecbe5532
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665411"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873439"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Konfigurieren von Multi-Geo-Unterstützung für Power BI Premium
 
@@ -102,4 +101,4 @@ Sie haben zwei Möglichkeiten, Arbeitsbereiche aus der Multi-Geo-Kapazität zu e
 - [Was ist Power BI Premium?](service-premium-what-is.md)
 - [Multi-Geo für Power BI Embedded-Kapazitäten](developer/embedded-multi-geo.md)
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

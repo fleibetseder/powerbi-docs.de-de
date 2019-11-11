@@ -2,7 +2,6 @@
 title: Ändern der Interaktion von Visualisierungen in einem Bericht
 description: Dokumentation zum Festlegen der visuellen Interaktionen in Berichten von Power BI Desktop und Power BI-Diensten.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: N_xYsCbyHPw
 ms.custom: seodec18
@@ -12,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/11/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 6f739992ed282ada92b1049df09a8b5d4b3938a9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 1b05acc111ce582c84706e5b63ba564f606576f6
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61406000"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871576"
 ---
 # <a name="change-how-visuals-interact-in-a-power-bi-report"></a>Ändern der Interaktion von Visualisierungen in einem Power BI-Bericht
 Wenn Sie über die Berechtigungen zum Bearbeiten eines Berichts verfügen, können Sie **visuelle Interaktionen** verwenden, um zu ändern, wie sich Visualisierungen auf einer Berichtsseite aufeinander auswirken. 

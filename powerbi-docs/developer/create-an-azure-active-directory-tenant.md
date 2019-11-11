@@ -3,18 +3,17 @@ title: Erstellen eines Azure Active Directory-Mandanten für Power BI
 description: Erfahren Sie, wie Sie einen neuen Azure Active Directory-Mandanten (Azure AD) für eine benutzerdefinierte Anwendung erstellen können, die Power BI-REST-APIs aufruft.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/28/2019
-ms.openlocfilehash: 73dddd00b6f811cd29c76c97b04136358d6e6b7a
-ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.openlocfilehash: 1297341014154267a7e99cbb8b1e85e36e6194b9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66809205"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73864689"
 ---
 # <a name="create-an-azure-active-directory-tenant-to-use-with-power-bi"></a>Erstellen eines Azure Active Directory-Mandanten für Power BI
 
@@ -98,4 +97,4 @@ Nachdem Sie nun über einen Azure AD-Mandanten verfügen, können Sie mit diesem
  
 [Schnellstart: Einrichten einer Entwicklungsumgebung](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant)  
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

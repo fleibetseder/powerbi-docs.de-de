@@ -2,7 +2,6 @@
 title: 'Drittanbieterdienst: Facebook-Connector für Power BI Desktop'
 description: 'Drittanbieterdienst: Facebook-Connector für Power BI Desktop'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6b02717c49a1207dfec39ebb1529e7e9b222fa62
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 644e68ec827915c5457e22e1c1486a8f6f3299f6
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65512855"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877037"
 ---
 # <a name="facebook-connector-for-power-bi-desktop"></a>Facebook-Connector für Power BI Desktop
 Der Facebook-Connector in **Power BI Desktop** ist abhängig von der Graph-API von Facebook. Daher können Funktionen und Verfügbarkeit im Laufe der Zeit variieren.

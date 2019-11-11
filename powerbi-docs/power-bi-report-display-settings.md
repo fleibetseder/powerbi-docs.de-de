@@ -2,7 +2,6 @@
 title: Einstellungen für die Seitenanzeige in einem Power BI-Bericht
 description: Einstellungen für Seitenanzeige und Seitenansicht für Berichte
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 97df2d6910f0215bd01875c88ea5d81d5dcc2c7c
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 183ce793342253775f641406620447e7b0f44020
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66720854"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875122"
 ---
 # <a name="page-display-settings-in-a-power-bi-report"></a>Einstellungen für die Seitenanzeige in einem Power BI-Bericht
 Wir wissen, wie wichtig es ist, dass das Layout des Berichts perfekt ist. Das ist in manchen Fällen jedoch schwierig, da Sie und Ihre Kollegen die Berichte möglicherweise auf Bildschirmen mit unterschiedliche Seitenverhältnissen und Größen anzeigen. 
@@ -80,5 +79,5 @@ Erfahren Sie mehr über [Berichte in Power BI](consumer/end-user-reports.md).
 
 [Grundlegende Konzepte für Designer im Power BI-Dienst](service-basic-concepts.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 

@@ -3,19 +3,18 @@ title: Azure und Power BI
 description: Azure und Power BI
 author: davidiseminger
 ms.author: davidi
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/08/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 9d48054e4b41c097d51522ad7596b750bd067e6d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: db988dfd360aae00fed1f6d917376a6ba54f9089
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513333"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873225"
 ---
 # <a name="azure-and-power-bi"></a>Azure und Power BI
 
@@ -31,7 +30,7 @@ Sie können mit einer einfachen Verbindung zu einer Azure SQL-Datenbank beginnen
 
 ![SQL nach Power BI](media/service-azure-and-power-bi/azure_2_sqltopbi.png)
 
-Ihnen steht eine Vielzahl weiterer Ressourcen mit Information über [Azure SQL-Datenbank](http://azure.microsoft.com/services/sql-database/) zur Verfügung.
+Ihnen steht eine Vielzahl weiterer Ressourcen mit Information über [Azure SQL-Datenbank](https://azure.microsoft.com/services/sql-database/) zur Verfügung.
 
 ## <a name="transform-shape-and-merge-your-cloud-data"></a>Sie können Ihre Clouddaten transformieren, modellieren und zusammenführen
 
@@ -43,13 +42,13 @@ Sie können außerdem verschiedene Berichte für verschiedene Zielgruppen erstel
 
 Weitere Informationen finden Sie in den folgenden Ressourcen:
 
-* [Azure SQL-Datenbank](http://azure.microsoft.com/services/sql-database/)
-* [Azure HDInsight](http://azure.microsoft.com/services/hdinsight/)
-* [Azure Storage](http://azure.microsoft.com/services/storage/) (Blob Storage und Table Storage)
+* [Azure SQL-Datenbank](https://azure.microsoft.com/services/sql-database/)
+* [Azure HDInsight](https://azure.microsoft.com/services/hdinsight/)
+* [Azure Storage](https://azure.microsoft.com/services/storage/) (Blob Storage und Table Storage)
 
 ## <a name="get-complex-and-ahead-using-azure-services-and-power-bi"></a>Gewinnen Sie an Komplexität (und Vorsprung) mit Azure Services und Power BI
 
-Mit Azure und Power BI können Sie sich so weit ausdehnen, wie Sie es benötigen. Nutzen Sie Datenverarbeitung aus vielen Quellen, setzen Sie Echtzeitsysteme in großem Umfang ein, verwenden Sie [Stream Analytics](http://azure.microsoft.com/services/stream-analytics/) und [Event Hubs](http://azure.microsoft.com/services/event-hubs/), und fügen Sie Ihre verschiedenen SaaS-Dienste in Business Intelligence-Berichten zusammen, die Ihrem Unternehmen ein klares Profil geben.
+Mit Azure und Power BI können Sie sich so weit ausdehnen, wie Sie es benötigen. Nutzen Sie Datenverarbeitung aus vielen Quellen, setzen Sie Echtzeitsysteme in großem Umfang ein, verwenden Sie [Stream Analytics](https://azure.microsoft.com/services/stream-analytics/) und [Event Hubs](https://azure.microsoft.com/services/event-hubs/), und fügen Sie Ihre verschiedenen SaaS-Dienste in Business Intelligence-Berichten zusammen, die Ihrem Unternehmen ein klares Profil geben.
 
 ![Azure – Komplexität](media/service-azure-and-power-bi/azure_4_complex.png)
 
@@ -57,7 +56,7 @@ Mit Azure und Power BI können Sie sich so weit ausdehnen, wie Sie es benötigen
 
 Betten Sie eindrucksvolle interaktive Datenvisualisierungen in Anwendungen, Websites, Portale usw. ein, um Ihre Geschäftsdaten optimal zu nutzen. Mit [Power BI Embedded als Ressource in Azure](https://azure.microsoft.com/services/power-bi-embedded/) können Sie interaktive Berichte und Dashboards einfach einbetten, damit Ihre Benutzer von konsistenten und hochpräzisen Umgebungen auf allen Geräten profitieren.  Mit der Kombination aus Power BI und eingebetteten Analysen gewinnen Sie aus Daten Wissen und erhalten aus Einblicken handlungsrelevante Informationen, die Sie in Taten umsetzen können.  Darüber hinaus können Sie den Wert von Power BI und Azure erweitern, indem Sie Analysen in die [internen Anwendungen und Portale Ihrer Organisation](https://powerbi.microsoft.com/developers/embedded-analytics/organization/) einbetten.
 
-Viele Informationen zu den Power BI-APIs finden Sie im [Power BI-Entwicklerportal](http://dev.powerbi.com).
+Viele Informationen zu den Power BI-APIs finden Sie im [Power BI-Entwicklerportal](https://dev.powerbi.com).
 
 Weitere Informationen finden Sie unter [Welche Möglichkeiten bietet Power BI Entwicklern?](developer/what-can-you-do.md).
 

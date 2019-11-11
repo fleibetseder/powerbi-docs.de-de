@@ -2,19 +2,18 @@
 title: Administratorübersicht, Power BI-Berichtsserver
 description: Dieser Artikel ist die Administratorübersicht für den Power BI-Berichtsserver, einen lokalen Speicherort zum Speichern und Verwalten Ihrer Power BI-, mobilen und paginierten Berichte.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: maggies
-ms.openlocfilehash: c670c78b03a1cd3fd6ce1ad3aeaa0003ce794eec
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: a93b3def115aaadbc33f6d0985aeea424558f248
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187352"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860228"
 ---
 # <a name="admin-overview-power-bi-report-server"></a>Administratorübersicht, Power BI-Berichtsserver
 Dieser Artikel ist die Administratorübersicht für den Power BI-Berichtsserver, einen lokalen Speicherort zum Speichern und Verwalten Ihrer Power BI-, mobilen und paginierten Berichte. Dieser Artikel stellt die Planungs-, Bereitstellungs- und Verwaltungskonzepte Ihres Power BI-Berichtsservers vor und enthält Links zu weiteren Informationen.
@@ -49,7 +48,7 @@ Sicherheit und Schutz sind für jede Organisation wichtig. In der Dokumentation 
 [Ermitteln des Product Key für den Berichtsserver](find-product-key.md)  
 [Installieren von für Power BI-Berichtsserver optimiertem Power BI Desktop](install-powerbi-desktop.md)  
 [Herunterladen des Berichts-Generators](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Herunterladen der SQL Server Data Tools](http://go.microsoft.com/fwlink/?LinkID=616714)
+[Herunterladen der SQL Server Data Tools](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
 

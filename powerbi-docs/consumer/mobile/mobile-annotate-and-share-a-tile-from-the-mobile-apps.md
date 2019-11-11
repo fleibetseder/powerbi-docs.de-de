@@ -2,19 +2,18 @@
 title: Kommentieren und Freigeben in den mobilen Power BI-Apps
 description: 'Hier erhalten Sie Informationen zum Kommentieren und Freigeben von Kacheln, Berichten und Visualisierungen in der mobilen Microsoft Power BI-App für iOS und Android. '
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: mshenhav
-ms.openlocfilehash: 1f7911007d9629c8990fc15ddf7453bafe0e78f5
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 013cbc58a8404fa803a14c73b1668be1215cf642
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70841461"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879494"
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Kommentieren und Freigeben von Kacheln, Berichten oder Visuals in den mobilen Power BI-Apps
 Gilt für:
@@ -74,5 +73,5 @@ Sie können auch [eine Kachel in der mobilen Power BI-App für Windows 10-Gerät
 
 ## <a name="next-steps"></a>Nächste Schritte
 * [Freigeben eines Dashboards in den mobilen Power BI-Apps](mobile-share-dashboard-from-the-mobile-apps.md)
-* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
 

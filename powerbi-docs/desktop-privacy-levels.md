@@ -2,7 +2,6 @@
 title: Grundlegendes zu Datenschutzebenen in Power BI Desktop
 description: Power BI Desktop – Datenschutzebenen
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: reference
 ms.date: 09/09/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d3405a434c8b3add7bb39f20d5aa65e066e4b73d
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: b28c56433e27794798f2907f0d780002db96b2f7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841325"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878081"
 ---
 # <a name="power-bi-desktop-privacy-levels"></a>Power BI Desktop – Datenschutzebenen
 In **Power BI Desktop** geben Datenschutzebenen eine Isolationsstufe an, die den Grad der Isolation einer Datenquelle von anderen Datenquellen angibt. Obwohl eine restriktive Isolationsstufe den Austausch von Informationen zwischen Datenquellen blockiert, kann sie Funktionalitäts- und Leistungseinbußen bewirken.

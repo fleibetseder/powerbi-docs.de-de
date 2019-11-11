@@ -2,7 +2,6 @@
 title: Verwenden von berechneten Tabellen in Power BI Desktop
 description: Berechnete Tabellen in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 641d1ac2c1bbcb9d143afdc04652b4c12b6e775f
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 4da25e0c6ea7115111bc057947183a8b86b5c2f4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68522235"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878684"
 ---
 # <a name="using-calculated-tables-in-power-bi-desktop"></a>Verwenden von berechneten Tabellen in Power BI Desktop
 Mit berechneten Tabellen können Sie dem Modell eine neue Tabelle hinzufügen. Aber anstatt Werte abzufragen und aus einer Datenquelle in die Spalten Ihrer neuen Tabelle zu laden, erstellen Sie eine DAX-Formel, die die Werte der Spalte definiert. In Power BI Desktop werden berechnete Spalten mithilfe der Funktion "Neue Tabelle" in der Berichtsansicht oder der Datenansicht erstellt.

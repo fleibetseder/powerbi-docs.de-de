@@ -2,7 +2,6 @@
 title: Anzeigen von kürzlich besuchten Inhalten im Power BI-Dienst
 description: Dokumentation zu zuletzt verwendeten Inhalten in Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/24/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: bae340f89b10253920f8e22d02b4b78c23fa2dd9
-ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
+ms.openlocfilehash: 80c11aef2e985304c824fe1948a6bec867e6cb33
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256234"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862420"
 ---
 # <a name="recent-content-in-the-power-bi-service"></a>Suchen von **zuletzt verwendeten** Inhalten im Power BI-Dienst
 Die zuletzt verwendeten Inhalte sind die letzten Elemente, die Sie im Power BI-Dienst geöffnet haben (maximal 20 Elemente).  Dazu gehören: Dashboards, Berichte, Apps und Arbeitsmappen.
@@ -53,5 +52,5 @@ Die Aktionen, die Ihnen zur Verfügung stehen, hängen von den Einstellungen ab,
 ## <a name="next-steps"></a>Nächste Schritte
 [Apps im Power BI-Dienst](end-user-apps.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 

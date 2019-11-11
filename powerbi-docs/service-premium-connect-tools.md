@@ -3,7 +3,6 @@ title: Herstellen einer Verbindung mit Power BI Premium-Datasets mithilfe von Cl
 description: Beschreibt das Herstellen einer Verbindung mit Datasets in Power BI Premium von Clientanwendungen und Tools.
 author: minewiskan
 ms.author: owend
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/24/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 4c39cf5a60786f7cc1748155ce7004254d40ad00
-ms.sourcegitcommit: ebac79f8c2871d4a7e54c1e99ce6d2409345b060
+ms.openlocfilehash: 0364fae1648e6155cc5e5a92850861c3bedbabdc
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68475631"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871887"
 ---
 # <a name="connect-to-datasets-with-client-applications-and-tools-preview"></a>Herstellen einer Verbindung zu Datasets mit Clientanwendungen und Tools (Vorschau)
 

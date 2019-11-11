@@ -2,7 +2,6 @@
 title: 'Tutorial: Kombinieren von Daten aus Excel und einem OData-Feed in Power BI Desktop'
 description: 'Tutorial: Kombinieren von Daten aus Excel und einem OData-Feed'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: f18dae9ecd0eff0b7f62a3152fc59c81f1292ba4
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: 8d1b253d5e84bb15dea4612978ee970faccb7a1a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160382"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73866086"
 ---
 # <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Tutorial: Kombinieren von Umsatzdaten aus Excel und einem OData-Feed
 
@@ -35,7 +34,7 @@ Sie importieren beide Datasets und führen Transformationen und Aggregationen du
 
 Importieren Sie zunächst die Produktdaten aus der Excel-Arbeitsmappe „Products.xlsx“ in Power BI Desktop.
 
-1. [Laden Sie die Excel-Arbeitsmappe „Products.xlsx“ herunter](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx), und speichern Sie sie als **Products.xlsx**.
+1. [Laden Sie die Excel-Arbeitsmappe „Products.xlsx“ herunter](https://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx), und speichern Sie sie als **Products.xlsx**.
    
 2. Klicken Sie im Power BI Desktop-Menüband auf der Registerkarte **Start** auf den Dropdownpfeil neben **Daten abrufen**, und wählen Sie dann in der Dropdownliste **Am häufigsten verwendet** den Eintrag **Excel** aus. 
    
@@ -76,7 +75,7 @@ Importieren Sie als Nächstes die Auftragsdaten aus dem OData-Feed des Northwind
    
    ![Abrufen von OData](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata.png)
    
-2. Fügen Sie im Dialogfeld **OData-Feed** die URL für den Northwind-OData-Feed `http://services.odata.org/V3/Northwind/Northwind.svc/` ein. Wählen Sie **OK**aus.
+2. Fügen Sie im Dialogfeld **OData-Feed** die URL für den Northwind-OData-Feed `https://services.odata.org/V3/Northwind/Northwind.svc/` ein. Wählen Sie **OK**aus.
    
    ![Dialogfeld „OData-Feed“](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata2.png)
    
@@ -271,7 +270,7 @@ Wählen Sie ein Produkt im Diagramm **Quantity by ProductName** aus, damit die K
 Im fertig gestellten Bericht werden Daten aus der Excel-Datei „Products.xlsx“ und dem Northwind-OData-Feed in Visuals kombiniert, die die Analyse von Auftragsinformationen für verschiedene Länder, Zeitrahmen und Produkte ermöglichen. Wenn Ihr Bericht fertig ist, können Sie ihn [in den Power BI-Dienst hochladen](desktop-upload-desktop-files.md), um ihn für andere Power BI-Benutzer freizugeben.
 
 ## <a name="next-steps"></a>Nächste Schritte
-* [Weitere Tutorials zu Power BI Desktop lesen](http://go.microsoft.com/fwlink/?LinkID=521937)
-* [Videos zu Power BI Desktop ansehen](http://go.microsoft.com/fwlink/?LinkID=519322)
-* [Power BI-Forum besuchen](http://go.microsoft.com/fwlink/?LinkID=519326)
-* [Power BI-Blog lesen](http://go.microsoft.com/fwlink/?LinkID=519327)
+* [Weitere Tutorials zu Power BI Desktop lesen](https://go.microsoft.com/fwlink/?LinkID=521937)
+* [Videos zu Power BI Desktop ansehen](https://go.microsoft.com/fwlink/?LinkID=519322)
+* [Power BI-Forum besuchen](https://go.microsoft.com/fwlink/?LinkID=519326)
+* [Power BI-Blog lesen](https://go.microsoft.com/fwlink/?LinkID=519327)

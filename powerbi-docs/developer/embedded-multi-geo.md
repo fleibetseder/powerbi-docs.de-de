@@ -3,18 +3,17 @@ title: Multi-Geo-Unterstützung für Power BI Embedded
 description: In diesem Artikel erfahren Sie, wie Sie Inhalte für Rechenzentren in anderen Regionen als der Heimatregion von Power BI Embedded bereitstellen können.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 57f01a458bad36c73a01adb1bc62bfd5a055a337
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 093b1e430d59a6060829b63a5bcfe17a7bb43928
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61344974"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875789"
 ---
 # <a name="multi-geo-support-for-power-bi-embedded"></a>Multi-Geo-Unterstützung für Power BI Embedded
 
@@ -92,4 +91,4 @@ Weitere Informationen zu Power BI Embedded-Kapazitäten und Multi-Geo-Optionen f
 
 * [Multi-Geo in Power BI Premium-Kapazitäten](../service-admin-premium-multi-geo.md)
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

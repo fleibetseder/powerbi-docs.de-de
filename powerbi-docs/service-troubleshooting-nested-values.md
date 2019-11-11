@@ -2,7 +2,6 @@
 title: Problembehandlung bei geschachtelten Werten im Power BI-Dienst, die als Text zurückgegeben werden
 description: Hier erfahren Sie, wie Sie Probleme mit geschachtelten Werten beheben können, die in eine Zeichenfolge konvertiert werden, wenn falsche Datenschutzeinstellungen für die Datenquelle verwendet werden.
 author: cpopell
-manager: kfile
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: troubleshooting
 ms.date: 6/4/2019
 ms.author: gepopell
 LocalizationGroup: Reports
-ms.openlocfilehash: 61181f9317718b6a4fb1cd73a767e4002b5b27f5
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: ab40ca9c415dacf52f4d82eb2c157d57aef92f93
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72544263"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871286"
 ---
 # <a name="troubleshooting-nested-values-returned-as-text-in-power-bi-service"></a>Problembehandlung bei geschachtelten Werten im Power BI-Dienst, die als Text zurückgegeben werden
 
@@ -24,7 +23,7 @@ ms.locfileid: "72544263"
 
 Bisher kam es vor, dass ein Power BI-Bericht auf dem Desktop problemlos aktualisiert werden konnte, es im Power BI-Dienst aber zu Problemen kam, und eine Fehlermeldung wie „Der Wert „[Table]“ kann nicht in den Typ „Table“ konvertiert werden.“ ausgegeben wurde. Einer der Gründe für diesen Fehler ist der, dass geschachtelte, nicht-skalare Werte (z.B. Tabellen, Datensätze, Listen und Funktionen) automatisch in Textwerte konvertiert werden (z.B. „[Table]“ oder „[Record]“), wenn die Datenschutzfirewall eine Datenquelle puffert.
 
-Da der Power BI-Dienst es nun unterstützt, Datenschutzebenen festzulegen (oder die Firewall komplett zu deaktivieren), können solche Fehler vermieden werden, indem die [Datenschutzeinstellungen für die Datenquelle im Power BI-Dienst als nicht privat konfiguriert](https://powerbi.microsoft.com/en-us/blog/privacy-levels-for-cloud-data-sources/) werden.
+Da der Power BI-Dienst es nun unterstützt, Datenschutzebenen festzulegen (oder die Firewall komplett zu deaktivieren), können solche Fehler vermieden werden, indem die [Datenschutzeinstellungen für die Datenquelle im Power BI-Dienst als nicht privat konfiguriert](https://powerbi.microsoft.com/blog/privacy-levels-for-cloud-data-sources/) werden.
 
 Wenn die Firewall z. B. eine verschachtelte Tabelle oder Liste oder einen verschachtelten Datensatz puffert, wird in Power BI ab Juni der folgende Fehler ausgegeben, anstatt solche Werte automatisch in Text zu konvertieren: 
 
@@ -57,4 +56,4 @@ Wenn Sie die Spalte nicht entfernen können, sollten Sie das alte Verhalten repl
 `if [MyColumn] is table then "[Table]" else if [MyColumn] is record then "[Record]" else if [MyColumn] is list then "[List]" else if [MyColumn] is function then "[Function]" else [MyColumn]`
 
 Tritt das Problem auch in Power BI Desktop auf, wenn Sie alle Datenschutzeinstellungen für Ihre Datenquelle auf privat festlegen?
-Ist dies der Fall, sollten Sie den Fehler lösen können, indem Sie [die entsprechenden Datenschutzeinstellungen für die Datenquelle](https://powerbi.microsoft.com/en-us/blog/privacy-levels-for-cloud-data-sources/) im Power BI-Dienst auf nicht privat festlegen.
+Ist dies der Fall, sollten Sie den Fehler lösen können, indem Sie [die entsprechenden Datenschutzeinstellungen für die Datenquelle](https://powerbi.microsoft.com/blog/privacy-levels-for-cloud-data-sources/) im Power BI-Dienst auf nicht privat festlegen.

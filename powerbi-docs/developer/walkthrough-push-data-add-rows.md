@@ -3,18 +3,17 @@ title: Hinzufügen von Zeilen zu einer Tabelle
 description: Exemplarische Vorgehensweise zum Übertragen von Daten per Push – Hinzufügen von Zeilen zu einer Power BI-Tabelle
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: a355f09984bc454f74dfab8ef137e29fd5aed110
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 39bf8ec92fba25c6097cf663bdb6572705938a42
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710413"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879851"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Schritt 5: Hinzufügen von Zeilen zu einer Power BI-Tabelle
 
@@ -317,4 +316,4 @@ Obwohl angeben ist, dass wir im oben stehenden Code die erste ID abrufen ( **_//
 [Übertragung von Daten in ein Power BI-Dashboard per Push](walkthrough-push-data.md)  
 [Übersicht über Power BI-REST-API](overview-of-power-bi-rest-api.md)  
 [Referenz zur Power BI-REST-API](https://docs.microsoft.com/rest/api/power-bi/)  
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

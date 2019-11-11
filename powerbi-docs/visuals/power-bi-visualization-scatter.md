@@ -2,7 +2,6 @@
 title: Punkt-, Blasen- und Punktplotdiagramme in Power BI
 description: Punktdiagramme, Punktplotdiagramme und Blasendiagramme in Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: PVcfPoVE3Ys
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d776425d4c19070c00658cbd588c5421d22a0057
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 88db87b995f52aa51023bd465d349459e1dd2965
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71192796"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870812"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Punktdiagramme, Punktplotdiagramme und Blasendiagramme in Power BI
 
@@ -78,9 +77,9 @@ Sie sind eine hervorragende Wahl, wenn Sie Kategoriedaten entlang der X-Achse ei
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Dieses Tutorial verwendet die [PBIX-Datei mit einem Analysebeispiel für den Einzelhandel](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+In diesem Tutorial wird die [PBIX-Datei mit einem Analysebeispiel für den Einzelhandel](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) verwendet.
 
-1. Wählen Sie im oberen linken Bereich der Menüleiste die Option **Datei** > **Öffnen** aus.
+1. Wählen Sie im oberen linken Bereich der Menüleiste **Datei** > **Öffnen** aus.
    
 2. Suchen Sie Ihre Kopie der **PBIX-Datei mit einem Analysebeispiel für den Einzelhandel**.
 
@@ -172,4 +171,4 @@ Um ein neues Feld zu erstellen, [fügen Sie mit dem Abfrage-Editor von Power BI 
 
 * [Visualisierungstypen in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

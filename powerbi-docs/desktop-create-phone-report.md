@@ -2,7 +2,6 @@
 title: 'Optimieren von Berichten für die mobilen Apps: Power BI'
 description: Erfahren Sie, wie Sie die Seiten des Berichts für die mobilen Power BI-Apps optimieren, indem Sie eine Hochformatversion des Berichts speziell für Smartphones und Tablets erstellen.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: f55d1e518c3c710503bb56539667bb652f287aa7
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 006d0e02f3b0aa7860cade4d8e035ddc299e8ba8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61310693"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878384"
 ---
 # <a name="optimize-reports-for-the-power-bi-mobile-apps"></a>Optimieren von Berichten für die mobilen Power BI-Apps
 Sie können die Benutzererfahrung beim Anzeigen von Berichten in den mobilen Apps verbessern, indem Sie ein Layout im Hochformat erstellen. In Power BI Desktop und dem Power BI-Dienst ordnen Sie die visuellen Elemente von Berichten in Größe und Position neu an, um eine optimale Erfahrung in der Hochformatdarstellung zu erzielen.  
@@ -110,5 +109,5 @@ Leser des Berichts können die Ausrichtung ihres Smartphones oder Tablets änder
 * [Erstellen einer Telefonansicht eines Dashboards in Power BI](service-create-dashboard-mobile-phone-view.md)
 * [Anzeigen von Power BI-Berichten, die für das Smartphone optimiert sind](consumer/mobile/mobile-apps-view-phone-report.md)
 * [Erstellen von dynamischen Visuals, die für eine beliebige Größe optimiert sind](visuals/desktop-create-responsive-visuals.md)
-* Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+* Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
 

@@ -2,7 +2,6 @@
 title: Freigeben eines Datasets (Vorschau)
 description: Als Datasetbesitzer können Sie Ihre Datasets erstellen und teilen, damit andere sie verwenden können. Erfahren Sie, wie Sie diese freigeben.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c490228a1dfa1e6c842db3c41ab077a99f35f975
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: ce8a404a53eebb88bbd72998f10fd94a649b8af8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72021112"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872484"
 ---
 # <a name="share-a-dataset-preview"></a>Freigeben eines Datasets (Vorschau)
 
@@ -55,4 +54,4 @@ Wenn Sie über ein freigegebenes Dataset in Ihrem Arbeitsbereich verfügen, müs
 ## <a name="next-steps"></a>Nächste Schritte
 
 - [Verwenden von Datasets in mehreren Arbeitsbereichen (Vorschau)](service-datasets-across-workspaces.md)
-- Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+- Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

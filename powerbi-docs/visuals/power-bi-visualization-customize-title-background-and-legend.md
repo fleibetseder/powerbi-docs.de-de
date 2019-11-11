@@ -2,7 +2,6 @@
 title: Erste Schritte beim Formatieren von Power BI-Visualisierungen
 description: Anpassen von Visualisierungstitel, Hintergrund und Legende
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6228ed70dd78ffca6cd3c8803518b2b27674576f
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: 011e2b6d3bf5cc998f7db76e96536d2ddab09888
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389801"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880851"
 ---
 # <a name="customize-visualization-titles-legends-and-backgrounds"></a>Anpassen der Titel, Legenden und Hintergründe von Visualisierungen
 
@@ -146,7 +145,7 @@ Hier ist eine Liste der Visualisierungen und jeweils verfügbaren Anpassungsopti
 | Ringdiagramm | Ja | Ja | Ja |
 | Flächenkartogramm | Ja | Ja | Ja |
 | Trichterdiagramm | Ja | Ja | n/v |
-| Messgerät | Ja | Ja | n/v |
+| Maßstab | Ja | Ja | n/v |
 | KPI | Ja | Ja | n/v |
 | Linie | Ja | Ja | Ja |
 | Zuordnung | Ja | Ja | Ja |
@@ -167,4 +166,4 @@ Hier ist eine Liste der Visualisierungen und jeweils verfügbaren Anpassungsopti
 
 - [Grundkonzepte für Benutzer des Power BI-Diensts](../consumer/end-user-basic-concepts.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

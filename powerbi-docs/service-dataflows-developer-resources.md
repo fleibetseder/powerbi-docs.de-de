@@ -2,7 +2,6 @@
 title: Developer resources for Power BI dataflows (Entwicklerressourcen für Power BI-Datenflüsse)
 description: In diesem Artikel erfahren Sie, wo Sie Ressourcen für die Entwicklung und Power BI-Dataflows finden.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 9a4caed97881e176d075527c90ae8d5eff213676
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: cf08f984e98b1497b04d1e19bd870ebcdda010b3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61136760"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877228"
 ---
 # <a name="developer-resources-for-power-bi-dataflows"></a>Developer resources for Power BI dataflows (Entwicklerressourcen für Power BI-Datenflüsse)
 

@@ -2,7 +2,6 @@
 title: Radialmessgerät-Diagramme in Power BI
 description: Radialmessgerät-Diagramme in Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: xmja6Epqa
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 020d7edcf6bc499623df93a9def30285a37cffc6
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: e783b4357d4db39e09aabbb1df39e1bb5c84532e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71194212"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880906"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Radialmessgerät-Diagramme in Power BI
 
@@ -49,7 +48,7 @@ Radiale Messgeräte sind gut für folgende Zwecke geeignet:
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Dieses Tutorial verwendet die [Excel-Datei mit dem Finanzbeispiel](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+Dieses Tutorial verwendet die [Excel-Datei mit dem Finanzbeispiel](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. Wählen Sie im oberen linken Bereich der Menüleiste **Daten abrufen** > **Excel** aus.
    
@@ -153,4 +152,4 @@ Nachdem Sie diese Schritte abgeschlossen haben, haben Sie ein Messgerätdiagramm
 
 * [Visualisierungstypen in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

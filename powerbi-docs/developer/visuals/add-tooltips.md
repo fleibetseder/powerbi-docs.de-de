@@ -3,18 +3,17 @@ title: QuickInfos in Power BI-Visuals
 description: In diesem Artikel wird erläutert, wie Sie QuickInfos in Power BI-Visuals anzeigen können.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 3b530da369dad2bcecde47c8f92202387abd42a6
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 8829cb8af41611fb29cd4fc22da7706e80ef3210
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71193715"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880358"
 ---
 # <a name="tooltips-in-power-bi-visuals"></a>QuickInfos in Power BI-Visuals
 

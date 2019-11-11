@@ -2,7 +2,6 @@
 title: Freigeben von Dashboards, die mit einer Excel-Datei in OneDrive verbunden sind – Power BI
 description: Erfahren Sie, wie Sie Dashboards freigeben können, die mit einer Excel-Arbeitsmappe auf OneDrive for Business verbunden sind, und bei denen Sie Kacheln aus der Arbeitsmappe anheften.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7157ddd66c651519f59eb964f5fcf95eb127943c
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: ee32d10ffeb22160b054661ca91c46890a877fa3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721449"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871465"
 ---
 # <a name="share-a-power-bi-dashboard-that-links-to-an-excel-file-in-onedrive"></a>Freigeben eines Power BI-Dashboards, das mit einer Excel-Datei in OneDrive verknüpft ist
 In Power BI können Sie sich [mit Excel-Arbeitsmappen auf OneDrive for Business verbinden](service-excel-workbook-files.md) und Kacheln an ein Dashboard aus der jeweiligen Arbeitsmappe anheften. Wenn Sie dieses Dashboard freigeben oder ein Inhaltspaket erstellen, das dieses Dashboard enthält:
@@ -57,5 +56,5 @@ Das Freigeben eines Dashboards in einem Power BI-Arbeitsbereich ähnelt dem Frei
 ## <a name="next-steps"></a>Nächste Schritte
 * [Anheften einer Kachel an ein Power BI-Dashboard aus Excel](service-dashboard-pin-tile-from-excel.md)
 * [Grundlegende Konzepte für Designer im Power BI-Dienst](service-basic-concepts.md)
-* Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+* Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 

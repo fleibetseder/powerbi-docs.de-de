@@ -3,19 +3,18 @@ title: Embedded Analytics für das Einbetten von Power BI-Inhalten in eine Anwen
 description: Hier erfahren Sie, wie Sie mit den Power BI-APIs einen Bericht, ein Dashboard oder eine Kachel für Embedded Analytics für Ihre Kunden in eine Anwendung integrieren bzw. einbetten. Erfahren Sie, wie Sie Power BI mit Embedded Analytics-Software, Embedded Analytics-Tools oder eingebetteten Business Intelligence-Tools in Ihre Anwendung für nationale Clouds und Clouds für Behörden integrieren.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: bc6b9cf92966dd9e86e789169b9b8134dbfcb2ba
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 7ede1678dc6cf0e217eb17dcc28f756031467b84
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61374317"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875884"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Tutorial: Einbetten von Power BI-Inhalten in Ihre Anwendung für nationale Clouds
 
@@ -37,7 +36,7 @@ Folgende sind verfügbar:
 
 ![Eingebettetes Dashboard](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-Für diese exemplarische Vorgehensweise benötigen Sie ein **Power BI-Konto**. Wenn Sie kein Konto eingerichtet haben, können Sie je nach Behörde oder Land die passende nationale Cloud auswählen. Sie können sich für ein [Power BI-Konto für US-Behörden](../service-govus-signup.md), ein [Power BI Deutschland-Cloudkonto](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) oder ein [Power BI China-Cloudkonto](http://www.21vbluecloud.com/powerbi/) registrieren.
+Für diese exemplarische Vorgehensweise benötigen Sie ein **Power BI-Konto**. Wenn Sie kein Konto eingerichtet haben, können Sie je nach Behörde oder Land die passende nationale Cloud auswählen. Sie können sich für ein [Power BI-Konto für US-Behörden](../service-govus-signup.md), ein [Power BI Deutschland-Cloudkonto](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) oder ein [Power BI China-Cloudkonto](https://www.21vbluecloud.com/powerbi/) registrieren.
 
 > [!NOTE]
 > Möchten Sie stattdessen ein Dashboard für Ihre Organisation einbetten? Siehe [Integrieren eines Dashboards in eine App für Ihre Organisation](integrate-dashboard.md).
@@ -150,7 +149,7 @@ In der Anwendung müssen Sie ein **Zugriffstoken** aus Azure AD abrufen, bevor S
 
 * Government Community Cloud (GCC) – ```https://login.microsoftonline.com```
 
-* Military Contractors (DoDCON) – ```http://login.microsoftonline.us```
+* Military Contractors (DoDCON) – ```https://login.microsoftonline.us```
 
 * Military (DoD) – ```https://login.microsoftonline.us```
 
@@ -445,4 +444,4 @@ Ein Anwendungsbeispiel ist innerhalb des [Beispiels zum Einbetten von Inhalten f
 
 Überlegungen und Einschränkungen
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

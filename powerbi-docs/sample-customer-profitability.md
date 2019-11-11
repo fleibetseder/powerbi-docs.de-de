@@ -2,7 +2,6 @@
 title: 'Beispiel zur Kundenrentabilität für Power BI: Übersicht'
 description: 'Beispiel zur Kundenrentabilität für Power BI: Übersicht'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: ddda7d6aaacbcde2d71371b316d14a9cd411bd43
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: d6368ae61b2813972c3209e2af456ba5aa5fb81b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523420"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874019"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Beispiel zur Kundenrentabilität für Power BI: Übersicht
 
@@ -53,11 +52,11 @@ Bevor Sie das Beispiel verwenden können, müssen Sie es zunächst als [Inhaltsp
 
 ### <a name="get-the-pbix-file-for-this-sample"></a>Abrufen der PBIX-Datei für dieses Beispiel
 
-Alternativ können Sie das Beispiel zur Kundenrentabilität als [PBIX-Datei](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix) herunterladen. Dabei handelt es sich um ein für Power BI Desktop entworfenes Dateiformat.
+Alternativ können Sie das Beispiel zur Kundenrentabilität als [PBIX-Datei](https://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix) herunterladen. Dabei handelt es sich um ein für Power BI Desktop entworfenes Dateiformat.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Abrufen der Excel-Arbeitsmappe für dieses Beispiel
 
-Wenn Sie sich die Datenquelle für dieses Beispiel ansehen möchten, dieses steht auch als [Excel-Arbeitsmappe](http://go.microsoft.com/fwlink/?LinkId=529781) zur Verfügung. Die Arbeitsmappe enthält Power View-Blätter, die Sie anzeigen und ändern können. Aktivieren Sie die Add-Ins für die Datenanalyse, um die Rohdaten anzuzeigen, und klicken Sie dann auf **Power Pivot > Verwalten**. Weitere Informationen zum Aktivieren der Add-Ins für Power View und Power Pivot finden Sie unter [Anzeigen der Excel-Beispiele in Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Wenn Sie sich die Datenquelle für dieses Beispiel ansehen möchten, dieses steht auch als [Excel-Arbeitsmappe](https://go.microsoft.com/fwlink/?LinkId=529781) zur Verfügung. Die Arbeitsmappe enthält Power View-Blätter, die Sie anzeigen und ändern können. Aktivieren Sie die Add-Ins für die Datenanalyse, um die Rohdaten anzuzeigen, und klicken Sie dann auf **Power Pivot > Verwalten**. Weitere Informationen zum Aktivieren der Add-Ins für Power View und Power Pivot finden Sie unter [Anzeigen der Excel-Beispiele in Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Welche Erkenntnisse gewinnen wir über unser Dashboard?
 
@@ -180,7 +179,7 @@ Für die Analyse kann es hilfreich sein, zu ermitteln, in welcher Branche Valery
 
 2.  Wählen Sie oben auf dem Dashboard die Option **Ask a question** (Frage stellen) aus, um das Q&A-Feld zu öffnen.
 
-    ![Stellen Sie eine Frage zu Ihren Daten.](media/sample-customer-profitability/power-bi-ask-question.png)
+    ![Eine Frage zu Ihren Daten stellen](media/sample-customer-profitability/power-bi-ask-question.png)
 
 3. Geben Sie in das Fragefeld *total revenue by industry for Valery* (Gesamtumsatz nach Branche für Valery) ein. Sie sehen, wie die Visualisierung beim Eingeben der Frage aktualisiert wird.
 

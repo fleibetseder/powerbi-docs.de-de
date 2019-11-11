@@ -7,12 +7,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 0cf85d2757dd77de854a6640f400c6dd9c70379a
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: c44f90bc29887a5431c893803cf4910e0e5093d3
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431506"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73791265"
 ---
 # <a name="use-shared-datasets-in-power-bi-report-builder"></a>Verwenden von freigegebenen Datasets im Power BI-Berichts-Generator
 
@@ -30,7 +30,7 @@ Im folgenden finden Sie eine Liste der Elemente, die Sie benötigen oder nicht b
 - Um auf ein Power BI-Dataset zugreifen zu können, benötigen Sie die Erstellungsberechtigung für das Dataset. Erfahren Sie mehr über [Erstellungsberechtigung](service-datasets-build-permissions.md).
 - Sie benötigen keine Power BI Pro-Lizenz, um im Berichts-Generator einen paginierten Bericht zu erstellen. 
 - Sie benötigen eine Power BI Pro-Lizenz, um Ihren paginierten Bericht veröffentlichen zu können. Außerdem benötigen Sie mindestens eine „Mitwirkender“-Rolle für einen Arbeitsbereich in einer Premium-Kapazität. 
-- Optional: Wenn Sie den Schritten in diesem Artikel folgen möchten, laden Sie die Power BI Desktop-Datei [Retail Analysis Sample PBIX.pbix](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) herunter, öffnen Sie die Datei in Power BI Desktop, und fügen Sie eine Tabelle mit vielen Spalten hinzu. Deaktivieren Sie im Bereich **Format** die Option **Gesamt**. Veröffentlichen Sie die Datei dann in einem Arbeitsbereich im Power BI-Dienst.
+- Optional: Wenn Sie den Schritten in diesem Artikel folgen möchten, laden Sie die Power BI Desktop-Datei [Retail Analysis Sample PBIX.pbix](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) herunter, öffnen Sie die Datei in Power BI Desktop, und fügen Sie eine Tabelle mit vielen Spalten hinzu. Deaktivieren Sie im Bereich **Format** die Option **Gesamt**. Veröffentlichen Sie die Datei dann in einem Arbeitsbereich im Power BI-Dienst.
 
     ![Gesamt aus](media/report-builder-shared-datasets/power-bi-desktop-totals-off.png)
 

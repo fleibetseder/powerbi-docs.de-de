@@ -2,7 +2,6 @@
 title: 'Kontrollieren der Verwendung von Datasets in mehreren Arbeitsbereichen (Vorschau): Power BI'
 description: Erfahren Sie, wie der Informationsfluss im Power BI-Mandanten eingeschränkt werden kann.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/31/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 363bf9b107722b3993ed7ac43138c73da03f410a
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: d1ad29bebc148d9f30e8d22240dd149787251a0a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461785"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872585"
 ---
 # <a name="control-the-use-of-datasets-across-workspaces-preview"></a>Kontrollieren der Verwendung von Datasets in mehreren Arbeitsbereichen (Vorschau)
 
@@ -40,4 +39,4 @@ Als Mandantenadministrator können Sie eine URL für den Link **Weitere Informat
 ## <a name="next-steps"></a>Nächste Schritte
 
 - [Verwenden von Datasets in mehreren Arbeitsbereichen (Vorschau)](service-datasets-across-workspaces.md)
-- Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+- Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 06ee6ad7ade46d811c6340d905150c6dd3810c55
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: c3b1b7288d0d277fc866ea47887335d10279c6cc
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61273388"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73799866"
 ---
 Mit DAX erhalten Sie viele verfügbare Funktionen zum Strukturieren, Formatieren oder Analysieren Ihrer Daten. Diese Funktionen können in eine Handvoll Kategorien unterteilt werden:
 
@@ -97,7 +97,7 @@ DAX enthält die folgenden **Datumsfunktionen**:
 
 Diese Funktionen sind hilfreich zum Berechnen und Extrahieren von Informationen aus *Datumswerten*. Sie gelten nicht für Zeitintelligenz, bei der eine Datumstabelle verwendet wird.
 
-> Videoinhalt zur Verfügung gestellt von [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax)
+> Videoinhalt zur Verfügung gestellt von [Alberto Ferrari, SQLBI](https://www.sqlbi.com/learning-dax)
 > 
 > 
 

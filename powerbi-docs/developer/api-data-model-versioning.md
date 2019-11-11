@@ -3,18 +3,17 @@ title: Versionsverwaltung für Power BI-Datenmodelle
 description: Von einem OData-Dienst verfügbar gemachtes Datenmodell
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
-ms.openlocfilehash: 6456974e7c05b65eb084d00bb1970d4291a0cf0c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 3835aabee88b33ba8b053550e4637cb387bace02
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61385617"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875960"
 ---
 # <a name="data-model-versioning"></a>Versionsverwaltung für Datenmodelle
 
@@ -37,7 +36,7 @@ Clients ***SOLLTEN*** darauf vorbereitet sein, dass Dienste solche inkrementelle
   
 Dienste sollten ihr Datenmodell ***NICHT*** in Abhängigkeit vom authentifizierten Benutzer ändern. Ist das Datenmodell vom Benutzer oder einer Benutzergruppe abhängig, MUSS es sich bei allen Änderungen um sichere Änderungen handeln, wie sie in diesem Abschnitt definiert sind, wenn das vollständige Modell mit dem für Benutzer mit eingeschränkten Autorisierungen sichtbaren Modell verglichen wird.  
   
-Weitere Informationen zu OData-Datenmodellstandards finden Sie unter [OData Version 4.0 Part 1: Protocol Plus Errata 02](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html).  
+Weitere Informationen zu OData-Datenmodellstandards finden Sie unter [OData Version 4.0 Part 1: Protocol Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html).  
   
 ## <a name="see-also"></a>Siehe auch
 [Übersicht über Power BI-REST-API](https://docs.microsoft.com/rest/api/power-bi/)  

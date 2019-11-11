@@ -2,7 +2,6 @@
 title: Erstellen benutzerdefinierter Power BI-Antwortseiten für Cortana
 description: Erstellen von benutzerdefinierten Antwortseiten für Cortana in Power BI
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,18 +9,18 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: bb0f6febfaee30c3eab3ce8b8aa618eb09c464bf
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: 06f155676dffa7b5f87ce61a8b342708793ef2c6
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375238"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853744"
 ---
 # <a name="use-power-bi-service-or-power-bi-desktop-to-create-a-custom-answer-page-for-cortana"></a>Verwenden des Power BI-Diensts oder von Power BI Desktop zum Erstellen einer benutzerdefinierten Antwortseite für Cortana
 Verwenden Sie sämtliche Funktionen von Power BI zum Erstellen von speziellen Berichtsseiten, die als *Cortana-Antwortseiten* (und gelegentlich als *Cortana-Antwortkarten*) bezeichnet werden und zur Beantwortung von Cortana-Fragen entworfen wurden.
 
 > [!IMPORTANT]
-> Cortana-Integration ist in Power BI veraltet. Gestartet am 11. Juni, funktioniert Cortana nicht mehr für alle Dashboards und Berichte.
+> Die Cortana-Integration in Power BI wird eingestellt. Ab dem 11. Juni funktioniert Cortana nicht mehr für Dashboards und Berichte.
 
 ![](media/service-cortana-answer-cards/power-bi-cortana.png)
 
@@ -96,5 +95,5 @@ Ergebnisse mit hoch bewerteten Antworten (z.B. vollständige Übereinstimmung mi
 
 Können Sie Cortana immer noch nicht mit Power BI verwenden?  Verwenden Sie die [Cortana-Problembehandlung](service-cortana-troubleshoot.md).
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 

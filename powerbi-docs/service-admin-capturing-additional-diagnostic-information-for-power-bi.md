@@ -2,7 +2,6 @@
 title: Erfassen von zusätzlichen Diagnoseinformationen
 description: Diese Anweisungen bieten zwei mögliche Optionen für die manuelle Erfassung von zusätzlichen Diagnoseinformationen aus dem Webclient von Power BI.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.date: 09/17/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: ea1756b82efe6a68940ae3c5094eafc9c3ca4c7c
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: 370ac3fad6f31c214ecafad7762acd8219831218
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305869"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873703"
 ---
 # <a name="capture-additional-diagnostic-information-for-power-bi"></a>Erfassen von zusätzlichen Diagnoseinformationen für Power BI
 
@@ -60,4 +59,4 @@ Dieser Artikel enthält Anweisungen für die manuelle Erfassung von zusätzliche
 
 1. Sie können die HAR-Datei angeben, um die Überprüfung zu unterstützen.
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: Freigeben von Power BI-Dashboards und -Berichten für Kollegen und andere
 description: In diesem Artikel wird erläutert, wie Sie Power BI-Dashboards und -Berichte für Kollegen innerhalb und außerhalb Ihrer Organisation freigeben, und was Sie über die Freigabe wissen müssen.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/19/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: da7b8999dfb6185b044960dde7795008d7e716f7
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 05a134f50f9a09ae5b51578a5e4e5f0a01a95740
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69655084"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871506"
 ---
 # <a name="share-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Freigeben von Power BI-Dashboards und -Berichten für Kollegen und andere
 *Freigeben* ist eine gute Möglichkeit, einigen Personen Zugriff auf Ihre Dashboards und Berichte zu gewähren. Zudem bietet Power BI [verschiedene Möglichkeiten zum gemeinsamen Bearbeiten und Verteilen von Dashboards und Berichten](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -143,7 +142,7 @@ In diesem Fall müssen Sie ihnen eine Berechtigung für das zugrunde liegende Da
 
 1. Wählen Sie die Auslassungspunkte ( **...** ) neben dem Dataset und dann **Berechtigungen verwalten** aus.
 
-    ![Verwalten von Berechtigungen](media/service-share-dashboards/power-bi-sharing-manage-permissions.png)
+    ![Berechtigungen verwalten](media/service-share-dashboards/power-bi-sharing-manage-permissions.png)
 
 1. Wählen Sie **Benutzer hinzufügen** aus.
 
@@ -167,5 +166,5 @@ Zum Freigeben eines Dashboards oder Berichts benötigen Sie die Berechtigung zum
 * Feedback? Anregungen nehmen wir auf der [Power BI-Communitywebsite](https://community.powerbi.com/) entgegen.
 * [Wie kann ich Dashboards und Berichte freigeben?](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Freigeben eines gefilterten Power BI-Berichts](service-share-reports.md)
-* Haben Sie Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/).
+* Haben Sie Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/).
 

@@ -2,7 +2,6 @@
 title: Zwei Möglichkeiten zur Freigabe eines gefilterten Power BI-Berichts
 description: Lernen Sie zwei Möglichkeiten kennen, einen Power BI-Bericht für Kollegen in Ihrer Organisation zu filtern und freizugeben.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/06/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c5bc8b32ae61870b794875c1d1720cd07dcf97f8
-ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
+ms.openlocfilehash: 79f09b5018efcdae88d74ae26f099ff095fb161a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70877715"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871442"
 ---
 # <a name="two-ways-to-share-a-filtered-power-bi-report"></a>Zwei Möglichkeiten zur Freigabe eines gefilterten Power BI-Berichts
 *Freigeben* ist eine gute Möglichkeit, einigen Personen Zugriff auf Ihre Dashboards und Berichte zu gewähren. Wie gehen Sie vor, wenn Sie eine gefilterte Version eines Berichts freigeben möchten? Dabei handelt es sich möglicherweise um einen Bericht, der nur Daten für einen bestimmten Ort, einen bestimmten Vertriebsmitarbeiter oder ein bestimmtes Jahr enthält. Versuchen Sie, einen Bericht zu filtern und freizugeben, oder erstellen Sie eine benutzerdefinierte URL. Der Bericht wird gefiltert, wenn Empfänger ihn erstmalig öffnen. Sie können den Filter entfernen, indem Sie die URL ändern. 
@@ -74,6 +73,6 @@ Weitere Informationen finden Sie im Artikel [Filtern eines Berichts mithilfe von
 ## <a name="next-steps"></a>Nächste Schritte
 * [Freigeben Ihrer Arbeit in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Freigeben eines Dashboards](service-share-dashboards.md)
-* Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/).
+* Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/).
 * Feedback? Anregungen nehmen wir auf der [Power BI-Communitywebsite](https://community.powerbi.com/) entgegen.
 

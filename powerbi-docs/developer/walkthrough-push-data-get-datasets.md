@@ -3,18 +3,17 @@ title: Abrufen eines Datasets zum Hinzufügen von Zeilen
 description: Exemplarische Vorgehensweise zum Übertragen von Daten per Push – Abrufen eines Datasets, um einer Power BI-Tabelle Zeilen hinzuzufügen
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: f7dc84c9c6c84a30417d97f37d984b5f01ec9cd7
-ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
+ms.openlocfilehash: 1edf73aa20301e86146de0d9ef924ad45c6f1f33
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67596472"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875720"
 ---
 # <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>Schritt 4: Abrufen eines Datasets, um einer Power BI-Tabelle Zeilen hinzuzufügen
 
@@ -22,7 +21,7 @@ Dieser Artikel ist Teil einer Anleitung zum [Übertragen von Daten in ein Datase
 
 In **Schritt 3** von „Übertragen von Daten in ein Dataset per Push“ haben Sie unter [Erstellen eines Datasets in Power BI](walkthrough-push-data-create-dataset.md) den Vorgang [Dataset erstellen](https://docs.microsoft.com/rest/api/power-bi/datasets) zum Erstellen eines Datasets in Power BI aufgerufen. In diesem Schritt verwenden Sie den Vorgang [Datasets abrufen](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) und „Newtonsoft.Json“, um eine Dataset-ID abzurufen. Sie verwenden die Dataset-ID in Schritt 4, um einem Dataset Zeilen hinzufügen. 
 
-Um Daten per Push in ein Power BI-Dataset zu übertragen, müssen Sie auf die Tabelle im Dataset verweisen. Um auf eine Tabelle in einem Dataset zu verweisen, müssen Sie zuerst eine **Dataset-ID**abrufen. Mithilfe des Vorgangs [Datasets abrufen](/rest/api/power-bi/datasets/getdatasets) rufen Sie eine **Dataset-ID** ab. Der Vorgang **Datasets abrufen** gibt eine JSON-Zeichenfolge mit einer Liste aller Datasets in Power BI zurück. Die empfohlene Methode zum Deserialisieren einer JSON-Zeichenfolge ist das Verwenden von [Newtonsoft.Json](http://www.newtonsoft.com/json).
+Um Daten per Push in ein Power BI-Dataset zu übertragen, müssen Sie auf die Tabelle im Dataset verweisen. Um auf eine Tabelle in einem Dataset zu verweisen, müssen Sie zuerst eine **Dataset-ID**abrufen. Mithilfe des Vorgangs [Datasets abrufen](/rest/api/power-bi/datasets/getdatasets) rufen Sie eine **Dataset-ID** ab. Der Vorgang **Datasets abrufen** gibt eine JSON-Zeichenfolge mit einer Liste aller Datasets in Power BI zurück. Die empfohlene Methode zum Deserialisieren einer JSON-Zeichenfolge ist das Verwenden von [Newtonsoft.Json](https://www.newtonsoft.com/json).
 
 Nachstehen erfahren Sie, wie Sie ein Dataset abrufen.
 
@@ -270,10 +269,10 @@ namespace walkthrough_push_data
 ## <a name="next-steps"></a>Nächste Schritte
 
 [Hinzufügen von Zeilen zu einer Power BI-Tabelle](walkthrough-push-data-add-rows.md)  
-[Newtonsoft.Json](http://www.newtonsoft.com/json)  
+[Newtonsoft.Json](https://www.newtonsoft.com/json)  
 [Get Datasets (Datasets abrufen)](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets)  
 [Übertragen von Daten in Power BI per Push](walkthrough-push-data.md)  
 [Übersicht über Power BI-REST-API](overview-of-power-bi-rest-api.md)  
 [Referenz zur Power BI-REST-API](https://docs.microsoft.com/rest/api/power-bi/)  
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

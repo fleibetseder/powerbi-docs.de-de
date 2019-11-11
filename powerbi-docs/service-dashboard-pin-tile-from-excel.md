@@ -2,7 +2,6 @@
 title: Anheften einer Kachel an ein Power BI-Dashboard aus Excel
 description: Heften Sie eine Kachel aus Excel an ein Power BI-Dashboard auf OneDrive for Business an. Anheften von Bereichen, Diagrammen, Tabellen
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: l8JoB7w0zJA
 ms.service: powerbi
@@ -11,18 +10,18 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 273cfbd86573a5eceaf9705ac19b0f7928b59176
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: d0f258af383327fb25c8f0e896677bbd19eca6c4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61138595"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877427"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Anheften einer Kachel an ein Power BI-Dashboard aus Excel
 Bevor Sie eine Kachel aus der Excel-Arbeitsmappe anheften können, müssen Sie diese Arbeitsmappe mit dem Power BI-Dienst („app.powerbi.com“) verbinden. Durch Verbinden einer Arbeitsmappe wird im Wesentlichen eine verknüpfte schreibgeschützte Version der Arbeitsmappe im Power BI-Dienst bereitgestellt, und Sie können Bereiche an Dashboards anheften. Sie können auch ein gesamtes Arbeitsblatt an ein Dashboard anheften.  
 Wenn eine Arbeitsmappe für Sie freigegeben wurde, können Sie die vom Besitzer angehefteten Kacheln anzeigen, jedoch selbst keine Dashboardkacheln erstellen. 
 
-Ausführliche Informationen über die gemeinsame Verwendung von Excel und Power BI finden Sie unter [Abrufen von Daten aus Excel-Arbeitsmappendateien](http://go.microsoft.com/fwlink/?LinkID=521962).
+Ausführliche Informationen über die gemeinsame Verwendung von Excel und Power BI finden Sie unter [Abrufen von Daten aus Excel-Arbeitsmappendateien](https://go.microsoft.com/fwlink/?LinkID=521962).
 
 Sehen Sie sich an, wie Will mehrere Verfahren zum Importieren von Daten aus Excel-Arbeitsmappen und Herstellen der Verbindung mit Excel-Arbeitsmappen vorführt.
 
@@ -81,12 +80,12 @@ Wenn Sie eine Arbeitsmappenkachel auswählen, wird die verknüpfte Arbeitsmappe 
  ![Video](media/service-dashboard-pin-tile-from-excel/pin-from-excel.gif)
 
 ## <a name="considerations-and-troubleshooting"></a>Zu beachtende Aspekte und Problembehandlung
-Nicht unterstützte Features: Power BI verwendet Excel Services, um die Arbeitsmappenkacheln abzurufen. Da einige Funktionen von Excel in der Excel Services-REST-API nicht unterstützt werden, werden sie nicht auf Kacheln in Power BI angezeigt. Beispiel: Sparklines, bedingte Formatierung von Symbolsätzen und Zeitslicer. Eine vollständige Liste der nicht unterstützten Features finden Sie unter den [nicht unterstützten Features in der Excel Services-REST-API](http://msdn.microsoft.com/library/office/ff394477.aspx).
+Nicht unterstützte Features: Power BI verwendet Excel Services, um die Arbeitsmappenkacheln abzurufen. Da einige Funktionen von Excel in der Excel Services-REST-API nicht unterstützt werden, werden sie nicht auf Kacheln in Power BI angezeigt. Beispiel: Sparklines, bedingte Formatierung von Symbolsätzen und Zeitslicer. Eine vollständige Liste der nicht unterstützten Features finden Sie unter den [nicht unterstützten Features in der Excel Services-REST-API](https://msdn.microsoft.com/library/office/ff394477.aspx).
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Freigeben eines Dashboards mit Links zu einer Excel-Arbeitsmappe](service-share-dashboard-that-links-to-excel-onedrive.md)
 
 [Abrufen von Daten aus Excel-Arbeitsmappendateien](service-excel-workbook-files.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 

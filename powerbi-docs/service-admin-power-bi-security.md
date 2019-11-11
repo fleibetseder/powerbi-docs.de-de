@@ -3,19 +3,18 @@ title: Sicherheit in Power BI
 description: Sicherheit in Power BI. So steht Power BI in Beziehung zu Azure Active Directory und anderen Azure-Diensten. Dieses Thema enthält auch einen Link zu einem ausführlicheren Whitepaper.
 author: davidiseminger
 ms.author: davidi
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
 LocalizationGroup: Administration
-ms.openlocfilehash: a5dac73fd2555b0ae53b0618dbc10f831db1149b
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: e856c3afca0578c906a54f636dd58cd9208607a8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074717"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873494"
 ---
 # <a name="power-bi-security"></a>Sicherheit in Power BI
 
@@ -46,7 +45,7 @@ Die gepunktete Linie im Bild des **-Back-End**-Clusters oben verdeutlicht die Gr
 
 ## <a name="user-authentication"></a>Benutzerauthentifizierung
 
-Power BI verwendet Azure Active Directory ([AAD](http://azure.microsoft.com/services/active-directory/)) zum Authentifizieren von Benutzern, die sich beim Power BI-Dienst anmelden, und verwendet wiederum die Power BI-Anmeldeinformationen, wenn ein Benutzer versucht, auf Ressourcen zuzugreifen, die eine Authentifizierung erfordern. Benutzer melden sich beim Power BI-Dienst mit der E-Mail-Adresse an, die sie zum Einrichten ihres Power BI-Kontos verwendet haben. Power BI verwendet diese zur Anmeldung verwendete E-Mail-Adresse als den *gültigen Benutzernamen*, der an Ressourcen übergeben wird, wenn ein Benutzer versucht, Daten abzurufen. Der *effektive Benutzername* wird dann einem *Benutzerprinzipalnamen* ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx)) zugeordnet, und für das zugehörige Windows-Domänenkonto aufgelöst, mit dem die Authentifizierung erfolgt.
+Power BI verwendet Azure Active Directory ([AAD](https://azure.microsoft.com/services/active-directory/)) zum Authentifizieren von Benutzern, die sich beim Power BI-Dienst anmelden, und verwendet wiederum die Power BI-Anmeldeinformationen, wenn ein Benutzer versucht, auf Ressourcen zuzugreifen, die eine Authentifizierung erfordern. Benutzer melden sich beim Power BI-Dienst mit der E-Mail-Adresse an, die sie zum Einrichten ihres Power BI-Kontos verwendet haben. Power BI verwendet diese zur Anmeldung verwendete E-Mail-Adresse als den *gültigen Benutzernamen*, der an Ressourcen übergeben wird, wenn ein Benutzer versucht, Daten abzurufen. Der *effektive Benutzername* wird dann einem *Benutzerprinzipalnamen* ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx)) zugeordnet, und für das zugehörige Windows-Domänenkonto aufgelöst, mit dem die Authentifizierung erfolgt.
 
 Für Organisationen, die Unternehmens-E-Mail-Adressen für die Anmeldung bei Power BI verwendet haben (wie z. B. <em>david@contoso.com</em>), ist die Zuordnung von *effektivem Benutzernamen* zum Benutzerprinzipalnamen (UPN) einfach. Für Organisationen, die keine Unternehmens-E-Mail-Adressen für die Anmeldung bei Power BI verwendet haben (wie z. B. <em>david@contoso.onmicrosoft.com</em>), erfordert die Zuordnung zwischen AAD und lokalen Anmeldeinformationen eine [Verzeichnissynchronisierung](https://technet.microsoft.com/library/jj573653.aspx), um ordnungsgemäß zu funktionieren.
 

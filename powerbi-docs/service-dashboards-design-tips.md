@@ -2,7 +2,6 @@
 title: Tipps zum Gestalten von Power BI-Dashboards
 description: Tipps zum Gestalten von Power BI-Dashboards
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 2083fa0d197010ca770422f11c7f1e4b83d0184b
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: 95170ec36c5b4da0314c858ae415c3bbcb2ab556
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023749"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877399"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Tipps zum Gestalten von Power BI-Dashboards
 Nachdem Sie ein Dashboard erstellt und einige Kacheln hinzugefügt haben, können Sie Ihr Dashboard ansprechend und funktionell gestalten. In der Regel bedeutet dies, dass die wichtigsten Informationen hervorgehoben werden, sodass das Dashboard ordentlich und übersichtlich ist.
@@ -24,8 +23,6 @@ Nachdem Sie ein Dashboard erstellt und einige Kacheln hinzugefügt haben, könne
 
 > [!TIP]
 > Gefällt Ihnen dieses Dashboard? Sie können dieses Dashboard und zugehörige Berichte von AppSource herunterladen. Navigieren Sie zu **Daten abrufen** > **Dienste**. Suchen Sie nach **Microsoft Sample - Sales & Marketing** > **Jetzt abrufen**.
-
-Viele der Entwurfsgrundlagen für Berichte gelten auch für Dashboards. Lesen Sie unser Whitepaper [Bewährte Entwurfsmethoden für Berichte und Visualisierungen](visuals/power-bi-visualization-best-practices.md), um weitere Informationen zu erhalten.
 
 Hier finden Sie einige Tipps für Dashboards.
 
@@ -85,4 +82,4 @@ Wenn Sie die Gestaltung erstklassiger Dashboards perfektionieren möchten, infor
 ## <a name="next-steps"></a>Nächste Schritte
 [Erstellen eines Dashboards aus einem Bericht](service-dashboard-create.md)  
 [Grundlegende Konzepte für Designer im Power BI-Dienst](service-basic-concepts.md)  
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: Festlegen von Kontaktinformationen für Berichte und Dashboards
 description: Erfahren Sie mehr zum Festlegen von Kontaktinformationen für Berichte und Dashboards.
 author: LukaszPawlowski-MS
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/08/2010
 ms.author: lukaszp
 LocalizationGroup: Common tasks
-ms.openlocfilehash: b64bc2566be8787ad4bb4916ed8b8c8731a87ed7
-ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
+ms.openlocfilehash: bb98f7bbb92b72512f880513ec94ccb55d64fc67
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72245490"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872150"
 ---
 # <a name="set-contact-information-for-reports-and-dashboards-in-the-power-bi-service"></a>Festlegen von Kontaktinformationen für Berichte und Dashboards im Power BI-Dienst
 In diesem Artikel erfahren Sie, wie Sie Kontaktinformationen für ein Dashboard oder einen Bericht im Power BI-Dienst festlegen.
@@ -65,4 +64,4 @@ Die Kontaktlisteninformationen werden auch an anderer Stelle verwendet. Beispiel
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

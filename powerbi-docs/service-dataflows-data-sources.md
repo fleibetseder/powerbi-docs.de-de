@@ -2,7 +2,6 @@
 title: Herstellen einer Verbindung mit Dataflows in Power BI
 description: Erfahren Sie mehr über die Funktionsweise von Dataflows in Power BI.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/20/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: ae260e36d0ca7363a3b21242087813d951cf4983
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: 650fb243152d9bf2ca2ecfc37143145d734b78fe
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71945812"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872679"
 ---
 # <a name="connect-to-data-sources-for-power-bi-dataflows"></a>Herstellen einer Verbindung mit Datenquellen über Power BI-Dataflows
 
@@ -61,7 +60,7 @@ Die Kategorie **Alle Kategorien** enthält alle Datenquellen, aus allen Kategori
 
 Die Kategorie **Datei** enthält die folgenden verfügbaren Datenverbindungen für Dataflows:
 
-* Access
+* Zugriff
 * Excel
 * JSON
 * Text/CSV

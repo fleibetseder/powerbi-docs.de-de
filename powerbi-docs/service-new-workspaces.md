@@ -2,7 +2,6 @@
 title: Organisieren der Arbeit in den neuen Power BI-Arbeitsbereichen
 description: Lernen Sie die neuen Arbeitsbereiche kennen, die Sammlungen von Dashboards und Berichten sind, die konzipiert wurden, um Schlüsselmetriken für Ihre Organisation bereitzustellen.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/30/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 15f0ce3910261ed2902603ab7fb3f07f8b695d4c
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 8ff32c2559570514f775d15d7da3f787ab85970a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020690"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872063"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organisieren der Arbeit in den neuen Power BI-Arbeitsbereichen
 
@@ -162,4 +161,4 @@ Ja. Da wir beide Typen von Arbeitsbereichen gleichzeitig unterstützen, listen w
 * [Erstellen der neuen Arbeitsbereiche in Power BI](service-create-the-new-workspaces.md)
 * [Erstellen der klassischen Arbeitsbereiche](service-create-workspaces.md)
 * [Installieren und Verwenden von Apps in Power BI](service-create-distribute-apps.md)
-* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

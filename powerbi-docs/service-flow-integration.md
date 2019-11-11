@@ -2,7 +2,6 @@
 title: Integration von Power BI in Microsoft Flow
 description: Erfahren Sie, wie Sie Flows erstellen, die durch Power BI-Datenwarnungen ausgelöst werden.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: YhmNstC39Mw
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: c02ce0a92e258055edf906cf17730fec56bcb450
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: a5b5a34e7cd61ac9d197faa0ef4410cd9558f597
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61147041"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881841"
 ---
 # <a name="microsoft-flow-and-power-bi"></a>Microsoft Flow und Power BI
 
@@ -112,5 +111,5 @@ In dieser Aufgabe erstellen wir einen einfachen Flow von Grund auf neu, der durc
 * [Festlegen von Datenwarnungen im Power BI-Dienst](service-set-data-alerts.md)
 * [Festlegen von Datenwarnungen auf dem iPhone](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Festlegen von Datenwarnungen in der mobilen Power BI-App für Windows 10](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
-* Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+* Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 

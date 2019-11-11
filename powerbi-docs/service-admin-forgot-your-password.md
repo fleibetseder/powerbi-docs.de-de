@@ -2,7 +2,6 @@
 title: Sie haben Ihr Kennwort für Power BI vergessen?
 description: Wenn Sie Ihr Kennwort vergessen haben, können Sie einen Link zum Anfordern einer Kennwortzurücksetzung verwenden.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/13/2019
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 6b3e75b9674a8b22948bdee1b8f8b9086eb2b691
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: c4e13871e7ebf432e1478eb8d524f466bed9f0bc
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075180"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873611"
 ---
 # <a name="forgot-your-password-for-power-bi"></a>Sie haben Ihr Kennwort für Power BI vergessen?
 
@@ -34,4 +33,4 @@ Beachten Sie, dass diese Telefonnummer nicht die Nummer des Supports für den Po
 > [!NOTE]
 > Power BI bietet Support während der normalen Geschäftszeiten in der EST-Zeitzone (Eastern Standard Time). Support wird zurzeit nur in englischer Sprache bereitgestellt.
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

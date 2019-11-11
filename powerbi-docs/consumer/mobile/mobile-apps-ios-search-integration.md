@@ -2,19 +2,18 @@
 title: Integration der iOS-Gerätesuche mit Power BI
 description: Verwenden der Gerätesuche (Spotlight) für das Suchen nach benötigten Inhalten und das Zugreifen auf diese Inhalte
 author: michalfo
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/03/2019
 ms.author: michalfo
-ms.openlocfilehash: 8f40781bb15b06f894a53f16d4ec6754d88e6b53
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: f89895650bb0b81533aeddbc149f225742dc9d3f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "66817074"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879229"
 ---
 # <a name="ios-device-search-spotlight-integration-with-power-bi-mobile-ios-app-preview"></a>Die Integration der iOS-Gerätesuche (Spotlight) mit der Power BI Mobile-iOS-App (Vorschauversion)
 Verwenden Sie die iOS-Gerätesuche, um nach Inhalten zu suchen und auf diese zuzugreifen.
@@ -51,7 +50,7 @@ Die von Siri unterstützte Gerätesuche enthält auch Vorschläge, die auf Ihren
 ## <a name="next-steps"></a>Nächste Schritte
 Führen Sie folgende Schritte aus, um mehr über die mobile Power BI-App zu erfahren: 
 
-* Laden Sie die [mobile Power BI-App für iPhone](http://go.microsoft.com/fwlink/?LinkId=522062) herunter.
+* Laden Sie die [mobile Power BI-App für iPhone](https://go.microsoft.com/fwlink/?LinkId=522062) herunter.
 * Folgen Sie [@MSPowerBI auf Twitter](https://twitter.com/MSPowerBI).
-* Werden Sie Teil der [Power BI-Community](http://community.powerbi.com/), um sich mit den Mitgliedern auszutauschen.
+* Werden Sie Teil der [Power BI-Community](https://community.powerbi.com/), um sich mit den Mitgliedern auszutauschen.
 

@@ -2,7 +2,6 @@
 title: Bedingte Tabellenformatierungen in Power BI Desktop
 description: Wenden Sie benutzerdefinierte Formatierungen auf Tabellen an.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: bd14437b0833d4c24c37ebeca6524948465bdb1f
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 14bddde618d4ef623fb91593a6a62cdb5be851a6
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72544000"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876591"
 ---
 # <a name="conditional-formatting-in-tables"></a>Bedingte Formatierung in Tabellen 
 Mithilfe der bedingten Formatierung für Tabellen können Sie benutzerdefinierte Zellenfarben basierend auf Zellwerten oder auf anderen Werten oder Feldern festlegen und Verlaufsfarben verwenden. Sie können auch Zellwerte mit Datenbalken darstellen. 

@@ -3,18 +3,17 @@ title: Q&A in Power BI Embedded
 description: Power BI Embedded bietet Ihnen eine Möglichkeit, Q&A in eine Anwendung zu integrieren, sodass Ihre Benutzer in natürlicher Sprache Fragen stellen können.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/20/2017
-ms.openlocfilehash: afe53e7b24328612bd7858abe263e4365f1c891d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: f02274a18624ce2e9bb14902c29fe05833f3fbde
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61268723"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880419"
 ---
 # <a name="qa-in-power-bi-embedded"></a>Q&A in Power BI Embedded
 
@@ -36,8 +35,8 @@ var config= {
     accessToken: access token value,
     embedUrl:    https://app.powerbi.com/qnaEmbed (groupId to be appended as query parameter if required),
     datasetIds:  array of requested data set ids (at the moment we support only one dataset),
-    viewMode:    models.QnAMode.Interactive | models.QnAMode.ResultOnly,
-    question:    optional parameter for Explore mode (QnAMode.Interactive) and mandatory for Render Result mode (QnAMode.ResultOnly)
+    viewMode:    models.QnaMode.Interactive | models.QnaMode.ResultOnly,
+    question:    optional parameter for Explore mode (QnaMode.Interactive) and mandatory for Render Result mode (QnaMode.ResultOnly)
 };
 
 // Get a reference to the embedded QNA HTML element
@@ -103,4 +102,4 @@ Erstellen Sie ein Einbettungstoken aus einem Dataset, um ein Q&A-Teil zu starten
 
 Um sich mit der Q&A-Einbettung vertraut zu machen, sehen Sie sich das [JavaScript-Einbettungsbeispiel](https://microsoft.github.io/PowerBI-JavaScript/demo/) an.
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

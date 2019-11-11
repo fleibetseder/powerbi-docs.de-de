@@ -3,18 +3,17 @@ title: Verwenden von OAuth zum Herstellen einer Verbindung mit dem Power BI-Beri
 description: In diesem Artikel erfahren Sie, wie Sie Ihre Umgebung für die Unterstützung der OAuth-Authentifizierung mit der mobilen Power BI-App konfigurieren, um eine Verbindung mit Reporting Services 2016 oder höher herzustellen.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/03/2019
-ms.openlocfilehash: 59c376afd384812473d3175df992c628ae5049ca
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 9ce761d09e2db4fbbc2e56d461f5272041edfbfe
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70903635"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870079"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Verwenden von OAuth zum Herstellen einer Verbindung mit dem Power BI-Berichtsserver und SSRS
 
@@ -193,7 +192,7 @@ Führen Sie zum Konfigurieren der eingeschränkten Delegierung die folgenden Sch
 Sie können Anwendungen innerhalb der Report Access Management Console veröffentlichen, hier wird die Anwendung allerdings über PowerShell erstellt. Der Befehl zum Hinzufügen der Anwendung lautet wie folgt:
 
 ```powershell
-Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/ -ExternalCertificateThumbprint "0ff79c75a725e6f67e3e2db55bdb103efc9acb12" -BackendServerUrl http://ContosoSSRS/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
+Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/ -ExternalCertificateThumbprint "0ff79c75a725e6f67e3e2db55bdb103efc9acb12" -BackendServerUrl https://ContosoSSRS/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
 ```
 
 | Parameter | Kommentare |
@@ -243,7 +242,7 @@ Sie können die Multi-Factor Authentication aktivieren, um die Sicherheit für I
 
 ![Fehler „Fehler beim Anmelden beim SSRS-Server“](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 
-Sie können [Fiddler](http://www.telerik.com/fiddler) als Proxy für Ihre mobilen Geräte einrichten, um zu überprüfen, wie weit die Anforderung gesendet wurde. Wenn Sie einen Fiddler-Proxy für ein Smartphone aktivieren möchten, müssen Sie [CertMaker für iOS und Android](http://www.telerik.com/fiddler/add-ons) auf dem Computer mit Fiddler einrichten. Das Add-On wird von Telerik für Fiddler bereitgestellt.
+Sie können [Fiddler](https://www.telerik.com/fiddler) als Proxy für Ihre mobilen Geräte einrichten, um zu überprüfen, wie weit die Anforderung gesendet wurde. Wenn Sie einen Fiddler-Proxy für ein Smartphone aktivieren möchten, müssen Sie [CertMaker für iOS und Android](https://www.telerik.com/fiddler/add-ons) auf dem Computer mit Fiddler einrichten. Das Add-On wird von Telerik für Fiddler bereitgestellt.
 
 Wenn die Anmeldung bei Verwendung von Fiddler erfolgreich ist, liegt möglicherweise ein Zertifikatsproblem mit der WAP-Anwendung oder dem AD FS-Server vor. Sie können dann mit einem Tool wie [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226) überprüfen, ob die Zertifikate gültig sind.
 
@@ -256,4 +255,4 @@ Wenn die Anmeldung bei Verwendung von Fiddler erfolgreich ist, liegt möglicherw
 [Webanwendungsproxy in Windows Server 2016](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server)  
 [Veröffentlichen von Anwendungen mit AD FS-Vorauthentifizierung](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app)  
 [Konfigurieren von AD FS 2016 und Azure MFA](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa)  
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
