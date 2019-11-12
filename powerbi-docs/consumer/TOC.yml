@@ -188,6 +188,8 @@
               href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
             - name: Scannen eines Barcodes mit der App auf dem iPhone
               href: mobile/mobile-apps-scan-barcode-iphone.md
+            - name: Konfigurieren mithilfe der Verwaltung mobiler Geräte
+              href: mobile/mobile-app-configuration.md
         - name: iOS
           items:
             - name: Erste Schritte mit der iOS-App
@@ -202,8 +204,6 @@
               href: mobile/mobile-apps-iOS-search-integration.md
             - name: Power BI Apple Watch-App
               href: mobile/mobile-apple-watch.md
-            - name: Konfigurieren mithilfe der Verwaltung mobiler Geräte
-              href: mobile/mobile-app-configuration.md
         - name: Android-Geräte
           items:
             - name: Erste Schritte mit der Android-App
