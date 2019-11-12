@@ -1,19 +1,19 @@
 ---
 title: Beispiele für Ausdrücke im Power BI-Berichts-Generator
 description: Ausdrücke werden häufig in paginierten Berichten des paginierten Power BI-Berichts-Generators verwendet, um den Inhalt und die Darstellung der Berichte zu steuern.
-ms.date: 06/06/2019
+ms.date: 10/21/2019
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 9f3131749a484380a1352d39ae35ea409f6dc697
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 06847956eae4dfefc7cff75b5a360fbb8b892c39
+ms.sourcegitcommit: d173e22f5a3e76717adfaa573ea391bde0338ffe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624152"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728545"
 ---
 # <a name="expression-examples-in-power-bi-report-builder"></a>Beispiele für Ausdrücke im Power BI-Berichts-Generator
 Ausdrücke werden häufig in paginierten Berichten des paginierten Power BI-Berichts-Generators verwendet, um den Inhalt und die Darstellung der Berichte zu steuern. Ausdrücke werden in Microsoft Visual Basic geschrieben und können integrierte Funktionen, benutzerdefinierten Code, Berichts- und Gruppenvariablen sowie benutzerdefinierte Variablen verwenden. Ausdrücke beginnen mit einem Gleichheitszeichen (=).   
@@ -35,7 +35,7 @@ Dieses Thema enthält Beispiele für Ausdrücke, die für allgemeine Aufgaben in
 Weitere Informationen über einfache und komplexe Ausdrücke, über die Anwendungsbereiche der Ausdrücke, und die Arten von Verweisen, die Sie in einen Ausdruck aufnehmen können, finden Sie in den Themen unter [Ausdrücken in Power BI-Berichts-Generator](report-builder-expressions.md). 
   
 ## <a name="functions"></a>Funktionen  
- Viele Ausdrücke in einem Bericht enthalten Funktionen. Sie können Daten formatieren, Logik anwenden und mit diesen Funktionen auf Berichtsmetadaten zugreifen. Sie können Ausdrücke schreiben, die Funktionen aus der Microsoft Visual Basic-Laufzeitbibliothek sowie aus den Namespaces `xref:System.Convert` und `xref:System.Math` verwenden. Sie können Verweise auf Funktionen aus anderen Assemblys oder benutzerdefinierten Code hinzufügen. Sie können auch Klassen aus Microsoft .NET Framework verwenden, wie z.B. `xref:System.Text.RegularExpressions`.  
+ Viele Ausdrücke in einem Bericht enthalten Funktionen. Sie können Daten formatieren, Logik anwenden und mit diesen Funktionen auf Berichtsmetadaten zugreifen. Sie können Ausdrücke schreiben, die Funktionen aus der Microsoft Visual Basic-Laufzeitbibliothek sowie aus den Namespaces `xref:System.Convert` und `xref:System.Math` verwenden. Sie können Verweise auf Funktionen in benutzerdefiniertem Code hinzufügen. Sie können auch Klassen aus Microsoft .NET Framework verwenden, wie z.B. `xref:System.Text.RegularExpressions`.  
   
 ##  <a name="VisualBasicFunctions"></a> Visual Basic-Funktionen  
  Mit Visual Basic-Funktionen können Sie die Daten bearbeiten, die in Textfeldern angezeigt werden, oder die für Parameter, Eigenschaften oder andere Bereichen des Berichts verwendet werden. Dieser Abschnitt enthält Beispiele zur Veranschaulichung einiger dieser Funktionen. Weitere Informationen finden Sie unter [Member der Visual Basic-Laufzeitbibliothek](https://go.microsoft.com/fwlink/?LinkId=198941) auf MSDN.  
@@ -476,7 +476,7 @@ Weitere Informationen über einfache und komplexe Ausdrücke, über die Anwendun
     ```  
   
 ##  <a name="CustomCode"></a> Benutzerdefinierter Code  
- Sie können in einem Bericht benutzerdefinierten Code verwenden. Benutzerdefinierter Code ist entweder in einen Bericht eingebettet oder in einer benutzerdefinierten Assembly gespeichert, die im Bericht verwendet wird.  
+ Sie können in einem Bericht eingebetteten benutzerdefinierten Code verwenden. 
   
 ### <a name="using-group-variables-for-custom-aggregation"></a>Verwenden von Gruppenvariablen für benutzerdefinierte Aggregation  
  Sie können den Wert für eine Gruppenvariable initialisieren, die zu einem bestimmten Gruppenbereich lokal ist, und anschließend einen Verweis auf diese Variable in den Ausdrücken einbinden. Eine der Methoden, wie Sie eine Gruppenvariable mit benutzerdefiniertem Code verwenden können, besteht darin, ein benutzerdefiniertes Aggregat zu implementieren. 
