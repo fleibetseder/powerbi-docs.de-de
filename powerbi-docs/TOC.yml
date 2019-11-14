@@ -119,6 +119,8 @@
           items:
             - name: Datenquellen in Power BI Desktop
               href: desktop-data-sources.md
+            - name: Verbindung mit LinkedIn Sales Navigator herstellen (Vorschau)
+              href: desktop-connect-linkedin-sales-navigator.md
             - name: Herstellen einer Verbindung mit einer Webseite anhand eines Beispiels (Vorschau)
               href: desktop-connect-to-web-by-example.md
             - name: Herstellen einer Verbindung mit Datasets im Power BI-Dienst
@@ -201,6 +203,8 @@
           items:
             - name: Kombinieren von Binärdateien
               href: desktop-combine-binaries.md
+            - name: Verwenden von KI Insights in Power BI Desktop (Vorschau)
+              href: desktop-ai-insights.md
         - name: Modellieren Ihrer Daten
           items:
             - name: Datenkategorisierung in Power BI Desktop
@@ -339,6 +343,8 @@
               href: visuals/power-bi-visualization-card.md
             - name: Kombinationsdiagramm in Power BI
               href: visuals/power-bi-visualization-combo-chart.md
+            - name: Struktur für Aufschlüsselung in Power BI (Vorschau)
+              href: visuals/power-bi-visualization-decomposition-tree.md
             - name: Ringdiagramme in Power BI
               href: visuals/power-bi-visualization-doughnut-charts.md
             - name: Flächenkartogramme (Choroplethenkarten) in Power BI
@@ -375,8 +381,6 @@
               href: visuals/power-bi-visualization-treemaps.md
             - name: Wasserfalldiagramme in Power BI
               href: visuals/power-bi-visualization-waterfall-charts.md
-            - name: Erstellen dynamischer Bezugslinien
-              href: service-analytics-pane.md
         - name: Natürliche Sprache
           items:
             - name: Einführung in Q&A
@@ -405,6 +409,8 @@
       items:
         - name: Datentypen in Power BI Desktop
           href: desktop-data-types.md
+        - name: Verwenden der aktualisierten Schleife in Power BI Desktop (Vorschau)
+          href: desktop-ribbon.md
         - name: Tastenkombinationen für den Formel-Editor für Power BI Desktop
           href: desktop-formula-editor.md
         - name: Power BI Desktop – Datenschutzebenen
