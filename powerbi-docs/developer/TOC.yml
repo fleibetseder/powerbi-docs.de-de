@@ -12,7 +12,7 @@
         - name: Übersicht
           items:
             - name: Visuals in Power BI
-              href: ../power-bi-custom-visuals.md
+              href: power-bi-custom-visuals.md
         - name: Lernprogramme
           items:
             - name: Entwickeln eines Power BI-Visuals
@@ -24,11 +24,11 @@
         - name: Konzepte
           items:
             - name: Visuals für Organisationen in Power BI
-              href: ../power-bi-custom-visuals-organization.md
+              href: power-bi-custom-visuals-organization.md
             - name: Richtlinien für Power BI-Visuals
               href: guidelines-powerbi-visuals.md
             - name: Häufig gestellte Fragen zu Visuals
-              href: ../power-bi-custom-visuals-faq.md
+              href: power-bi-custom-visuals-faq.md
             - name: Verwenden von Funktionen
               href: visuals/capabilities.md
             - name: Zuordnungen von Datenansichten
@@ -40,12 +40,12 @@
         - name: Vorgehensweise
           items:
             - name: Zertifizierung von Visuals
-              href: ../power-bi-custom-visuals-certified.md
+              href: power-bi-custom-visuals-certified.md
             - name: Veröffentlichen von benutzerdefinierten Visuals in AppSource
               href: office-store.md
             - name: 'Verwenden von R-gestützten, benutzerdefinierten Visualisierungen in Power BI'
-              href: ../desktop-r-powered-custom-visuals.md
-            - name: Zulassen von Visualinteraktionen
+              href: ../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/toc.json&bc=/powerbi-docs/developer/breadcrumb/toc.json
+            - name: Visualinteraktionen
               href: visuals/visuals-interactions.md
             - name: Hinzufügen von Auswahloptionen
               href: visuals/selection-api.md
@@ -68,9 +68,7 @@
             - name: Synchronisierung von Slicern
               href: visuals/enable-sync-slicers.md
             - name: Problembehandlung bei Power BI-Visuals
-              href: ../power-bi-custom-visuals-troubleshoot.md
-            - name: Migrieren zum neuen powerbi-visuals-tools-Toolset
-              href: visuals/migrate-to-new-tools.md
+              href: power-bi-custom-visuals-troubleshoot.md
         - name: Referenz
           items:
             - name: Startseite
