@@ -80,7 +80,7 @@
         - name: "Standardelement in mehrdimensionalen Modellen in Power\_BI"
           href: desktop-default-member-multidimensional-models.md
         - name: Häufig gestellte Fragen zu Visuals
-          href: power-bi-custom-visuals-faq.md
+          href: developer/power-bi-custom-visuals-faq.md
     - name: Vorgehensweise
       items:
         - name: Power BI Desktop erwerben
@@ -673,6 +673,8 @@
           items:
             - name: Erstellen neuer Arbeitsbereiche
               href: service-create-the-new-workspaces.md
+            - name: Upgrade für klassische Arbeitsbereiche
+              href: designer/service-upgrade-workspaces.md
             - name: Erstellen von Arbeitsbereichen
               href: service-create-workspaces.md
             - name: Veröffentlichen von Apps über Arbeitsbereiche
