@@ -45,8 +45,10 @@
               href: office-store.md
             - name: 'Verwenden von R-gestützten, benutzerdefinierten Visualisierungen in Power BI'
               href: ../desktop-r-powered-custom-visuals.md
-            - name: Visualinteraktionen
+            - name: Zulassen von Visualinteraktionen
               href: visuals/visuals-interactions.md
+            - name: Hinzufügen von Auswahloptionen
+              href: visuals/selection-api.md
             - name: Hinzufügen von QuickInfos zu Visuals
               href: visuals/add-tooltips.md
             - name: Hinzufügen eines Analysebereichs
@@ -57,6 +59,8 @@
               href: visuals/fetch-more-data.md
             - name: Unterstützung von Lesezeichen
               href: visuals/bookmarks-support.md
+            - name: Hinzufügen von Kontextmenüunterstützung
+              href: visuals/context-menu.md
             - name: Hervorheben von Daten in Visuals
               href: visuals/highlight.md
             - name: Unterstützung des Modus für hohen Kontrast
@@ -65,6 +69,8 @@
               href: visuals/enable-sync-slicers.md
             - name: Problembehandlung bei Power BI-Visuals
               href: ../power-bi-custom-visuals-troubleshoot.md
+            - name: Migrieren zum neuen powerbi-visuals-tools-Toolset
+              href: visuals/migrate-to-new-tools.md
         - name: Referenz
           items:
             - name: Startseite
@@ -77,6 +83,8 @@
               href: visuals/event-service.md
             - name: Sortierung
               href: visuals/sort-options.md
+            - name: Interaktivitätshilfsprogramme
+              href: visuals/utils-interactivity-selections.md
         - name: Ressourcen
           items:
             - name: Dev Center
