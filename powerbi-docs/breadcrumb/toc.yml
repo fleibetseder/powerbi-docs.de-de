@@ -9,7 +9,7 @@
         - name: Verbraucher
           tocHref: /power-bi/consumer/
           topicHref: /power-bi/consumer/power-bi-consumer-landing
-        - name: Developer
+        - name: Entwickler
           tocHref: /power-bi/developer/
           topicHref: /power-bi/developer/index
         - name: Geführte Tutorials
@@ -18,3 +18,6 @@
         - name: Berichtsserver
           tocHref: /power-bi/report-server/
           topicHref: /power-bi/report-server/get-started
+        - name: Leitfaden
+          tocHref: /power-bi/guidance/
+          topicHref: /power-bi/guidance/index
