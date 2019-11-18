@@ -2,18 +2,18 @@
 title: Direktes Eingeben von Daten in paginierte Berichte im Berichts-Generator
 description: In diesem Artikel erfahren Sie, wie Sie im Berichts-Generator Daten direkt in paginierte Berichte eingeben können.
 author: maggiesMSFT
-ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.openlocfilehash: 4690185b745408d99852f00851c7cf0933bd0b46
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.author: maggies
+ms.openlocfilehash: f3170fb30011e50ba97f936d879a7f19cc795521
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874835"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128398"
 ---
 # <a name="enter-data-directly-in-a-paginated-report-in-report-builder---power-bi"></a>Direktes Eingeben von Daten in paginierte Berichte im Berichts-Generator: Power BI
 

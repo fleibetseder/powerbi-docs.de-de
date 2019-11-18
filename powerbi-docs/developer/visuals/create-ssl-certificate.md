@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: d24135cc55ebc8cdfd2a1279cb2a2a46f8f0bc3e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 224b6db8fa04a471a1ce7d1fff2b34a838d6fb9d
+ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880181"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74060348"
 ---
 # <a name="create-an-ssl-certificate"></a>Erstellen eines SSL-Zertifikats
 
@@ -22,20 +22,19 @@ In diesem Artikel wird das Erstellen eines SSL-Zertifikats erläutert.
 Führen Sie den folgenden Befehl aus, um das Zertifikat mithilfe des PowerShell-Cmdlets `New-SelfSignedCertificate` unter Windows 8 oder höher zu erstellen.
 
 ```cmd
-pbiviz --create-cert
+pbiviz --install-cert
 ```
 
 Das Tool erfordert eine OpenSSL-Installation für Windows 7. Das OpenSSL-Hilfsprogramm muss über die Befehlszeile verfügbar sein.
 
 Rufen Sie die Website für [OpenSSL](https://www.openssl.org) oder [OpenSSL-Binärdateien](https://wiki.openssl.org/index.php/Binaries) auf, um OpenSSL zu installieren.
 
-
-
 ## <a name="create-a-certificate-mac-os-x"></a>Erstellen eines Zertifikats (Mac OS X)
 
 Das OpenSSL-Hilfsprogramm ist in der Regel in den Betriebssystemen Linux und Mac OS X verfügbar.
 
 Sie können es auch installieren, indem Sie einen der folgenden Befehle ausführen:
+
 * Über den *Brew*-Paket-Manager:
 
     ```cmd
@@ -52,7 +51,7 @@ Sie können es auch installieren, indem Sie einen der folgenden Befehle ausführ
 Nachdem Sie das OpenSSL-Hilfsprogramm zum Erstellen eines neuen Zertifikats installiert haben, führen Sie den folgenden Befehl aus:
 
 ```cmd
-pbiviz --create-cert
+pbiviz --install-cert
 ```
 
 ## <a name="create-a-certificate-linux"></a>Erstellen eines Zertifikats (Linux)
@@ -80,7 +79,7 @@ Wenn das OpenSSL-Hilfsprogramm für Ihr Linux-Betriebssystem nicht verfügbar is
 Wenn das OpenSSL-Hilfsprogramm bereits auf Ihrem Betriebssystem verfügbar ist, erstellen Sie ein neues Zertifikat, indem Sie den folgenden Befehl ausführen:
 
 ```cmd
-pbiviz --create-cert
+pbiviz --install-cert
 ```
 
 Alternativ können Sie das OpenSSL-Hilfsprogramm über die Website für [OpenSSL](https://www.openssl.org) oder [OpenSSL-Binärdateien](https://wiki.openssl.org/index.php/Binaries) abrufen.

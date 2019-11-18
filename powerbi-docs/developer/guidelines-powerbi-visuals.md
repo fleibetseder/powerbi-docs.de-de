@@ -5,15 +5,15 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 07/16/2019
-ms.openlocfilehash: 84c873c925c7e733c70b309d5cc2476dff2e553b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e650b1eb8fd05db54b9d0bf9021eaa881d28832e
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73863953"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128188"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Richtlinien für Power BI-Visuals
 Bevor Sie Ihr Visual in AppSource [veröffentlichen](https://docs.microsoft.com/power-bi/developer/office-store), damit andere es verwenden können, stellen Sie sicher, dass Sie die Richtlinien befolgen, um Ihren Benutzern eine hohe Benutzerfreundlichkeit zu bieten. 
@@ -52,7 +52,7 @@ Informative Symbole, sofern vorhanden, sollten sich im Lesemodus nach den oben b
 
 Bis vor Kurzem wurden im Marketplace (AppSource) nur kostenlose Power BI-Visuals akzeptiert. Diese Vorgabe wurde geändert (Dezember 2018). Sie können also auch Visuals in AppSource anbieten, für die möglicherweise weitere Komponenten erworben werden müssen. 
 
-Visuals, für die möglicherweise weitere Komponenten erworben werden müssen, ähneln den Add-Ins im Office Store, die per In-App-Kauf (IAP, In-App-Purchase) erworben werden. Entwickler können diese Visuals zudem zur Zertifizierung übermitteln, nachdem das AppSource-Team diese genehmigt hat und nachdem sichergestellt wurde, dass diese den Zertifizierungsanforderungen entsprechen. Weitere Informationen zu den Anforderungen finden Sie unter [Zertifizierte Power BI-Visuals](../power-bi-custom-visuals-certified.md).
+Visuals, für die möglicherweise weitere Komponenten erworben werden müssen, ähneln den Add-Ins im Office Store, die per In-App-Kauf (IAP, In-App-Purchase) erworben werden. Entwickler können diese Visuals zudem zur Zertifizierung übermitteln, nachdem das AppSource-Team diese genehmigt hat und nachdem sichergestellt wurde, dass diese den Zertifizierungsanforderungen entsprechen. Weitere Informationen zu den Anforderungen finden Sie unter [Zertifizierte Power BI-Visuals](../developer/power-bi-custom-visuals-certified.md).
 
 > [!NOTE]
 > Damit ein Visual zertifiziert werden kann, darf es nicht auf externe Dienste oder Ressourcen zugreifen.

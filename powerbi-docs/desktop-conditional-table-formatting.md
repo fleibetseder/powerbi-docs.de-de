@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 14bddde618d4ef623fb91593a6a62cdb5be851a6
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b715cd42ea221f62258b66eee71b6525b2015ae1
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876591"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128175"
 ---
 # <a name="conditional-formatting-in-tables"></a>Bedingte Formatierung in Tabellen 
 Mithilfe der bedingten Formatierung für Tabellen können Sie benutzerdefinierte Zellenfarben basierend auf Zellwerten oder auf anderen Werten oder Feldern festlegen und Verlaufsfarben verwenden. Sie können auch Zellwerte mit Datenbalken darstellen. 

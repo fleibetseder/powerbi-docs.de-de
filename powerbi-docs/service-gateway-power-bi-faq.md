@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 45a645227a5d7a18fd05738559ed0bccc0e1f7c9
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4aa3d46741044498846865278db51859980a19b9
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872408"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74010816"
 ---
 # <a name="on-premises-data-gateway-faq---power-bi"></a>Häufig gestellte Fragen zum lokalen Datengateway – Power BI
 
@@ -41,10 +41,6 @@ ms.locfileid: "73872408"
 **Frage:** Warum kann ich keine Verbindung mit meinem Oracle-Server aufbauen? 
 
 **Antwort:** Möglicherweise müssen Sie den Oracle-Client installieren und in der Datei „tnsnames.ora“ die benötigten Serverdaten eintragen, um die Verbindung mit dem Oracle-Server herzustellen. Diese Installation erfolgt separat außerhalb des Gateways. Weitere Informationen finden Sie unter [Installieren des Oracle-Clients](service-gateway-onprem-manage-oracle.md#install-the-oracle-client).
-
-**Frage:** Kann das Gateway mit ExpressRoute verwendet werden? 
-
-**Antwort:** Ja. Weitere Informationen zu ExpressRoute und Power BI finden Sie unter [Power BI und ExpressRoute](service-admin-power-bi-expressroute.md).
 
 **Frage:** Ich verwende R-Skripts. Wird dies unterstützt?
 
