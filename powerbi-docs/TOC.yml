@@ -477,6 +477,10 @@
               href: service-the-report-editor-take-a-tour.md
             - name: Power BI-Datenquellen
               href: service-get-data.md
+            - name: Verstehen von Power BI-Datasets
+              href: service-datasets-understand.md
+            - name: Verstehen von Power BI-Datasetmodi
+              href: service-dataset-modes-understand.md
             - name: Aktualisieren von Daten in Power BI
               href: refresh-data.md
         - name: Zusammenarbeit in Power BI
@@ -509,7 +513,7 @@
               href: service-interruption-notifications.md
         - name: Power BI erweitern
           items:
-            - name: Microsoft Flow und Power BI
+            - name: "Power Automate und Power\_BI"
               href: service-flow-integration.md
             - name: Verwenden von Drittanbieter-Apps
               href: service-power-bi-get-started-third-party-apps.md
@@ -1125,31 +1129,3 @@
       items:
         - name: Monatliche Gatewayupdates
           href: /data-integration/gateway/service-gateway-monthly-updates
-- name: Leitfaden
-  items:
-    - name: Übersicht
-      href: guidance/overview.md
-    - name: Was ist ein Sternschema?
-      href: guidance/star-schema.md
-    - name: Reduzieren der Größe des Datenmodells
-      href: guidance/import-modeling-data-reduction.md
-    - name: Vergleich zwischen der DIVIDE-Funktion und dem Divisionsoperator (/)
-      href: guidance/dax-divide-function-operator.md
-    - name: Die Bedeutung von Query Folding
-      href: guidance/power-query-folding.md
-    - name: Angemessene Verwendung von Fehlerfunktionen
-      href: guidance/dax-error-functions.md
-    - name: Bewährte Methoden für Dataflows
-      href: service-dataflows-best-practices.md
-    - name: Leitfaden für das DirectQuery-Model in Power BI Desktop
-      href: guidance/directquery-model-guidance.md
-    - name: Whitepaper
-      items:
-        - name: Whitepaper – Übersicht
-          href: whitepapers.md
-        - name: Whitepaper zur Sicherheit in Power BI
-          href: whitepaper-powerbi-security.md
-        - name: Power BI Premium-Bereitstellung
-          href: whitepaper-powerbi-premium-deployment.md
-        - name: Externe Verteilung von Power BI mit Azure Active Directory B2B
-          href: whitepaper-azure-b2b-power-bi.md

@@ -1,0 +1,36 @@
+- name: Dokumentation zum Power BI-Leitfaden
+  href: index.yml
+  expanded: true
+  items:
+    - name: Übersicht
+      expanded: true
+      items:
+        - name: Übersicht
+          href: overview.md
+    - name: Konzepte
+      expanded: true
+      items:
+        - name: Was ist ein Sternschema?
+          href: star-schema.md
+        - name: Reduzieren der Größe des Datenmodells
+          href: import-modeling-data-reduction.md
+        - name: Vergleich zwischen der DIVIDE-Funktion und dem Divisionsoperator (/)
+          href: dax-divide-function-operator.md
+        - name: Die Bedeutung von Query Folding
+          href: power-query-folding.md
+        - name: Angemessene Verwendung von Fehlerfunktionen
+          href: dax-error-functions.md
+        - name: Bewährte Methoden für Dataflows
+          href: ../service-dataflows-best-practices.md
+        - name: Leitfaden für das DirectQuery-Model in Power BI Desktop
+          href: directquery-model-guidance.md
+    - name: Whitepaper
+      items:
+        - name: Whitepaper – Übersicht
+          href: ../whitepapers.md
+        - name: Whitepaper zur Sicherheit in Power BI
+          href: ../whitepaper-powerbi-security.md
+        - name: Power BI Premium-Bereitstellung
+          href: ../whitepaper-powerbi-premium-deployment.md
+        - name: Externe Verteilung von Power BI mit Azure Active Directory B2B
+          href: ../whitepaper-azure-b2b-power-bi.md
