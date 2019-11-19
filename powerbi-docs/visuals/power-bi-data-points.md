@@ -2,20 +2,19 @@
 title: Große Datasets, Datenpunktgrenzwerte und Datenstrategien
 description: Datengrenzwerte für Visuals und Datenverringerungsstrategien
 author: mihart
-manager: kvivek
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/02/2018
+ms.date: 11/07/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6b5f2fa44a45cca06f90474d8c76fd6f06cae3ce
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 1ae0fc339d3837c8fc28cc604b3ddb840807dcd5
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61276421"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74011302"
 ---
 # <a name="data-point-limits-and-strategies-by-visual-type"></a>Datenpunktgrenzwerte und Strategien nach Visualtyp
 
@@ -75,7 +74,7 @@ Siehe [Funktionsweise der Stichprobenentnahme für Linienelemente](../desktop-hi
 ### <a name="combo-chart"></a>Kombinationsdiagramm
  Verwendet die gleichen Strategien wie Säulendiagramme Beachten Sie, dass die Zeile im **Kombinationsdiagramm** nicht den Algorithmus für hohe Dichte verwendet, den **Liniendiagramme** verwenden.
 
-### <a name="custom-visuals"></a>Benutzerdefinierte Visuals
+### <a name="custom-visuals"></a>Benutzerdefinierte visuelle Elemente
 Kann bis zu 30.000 Datenpunkte abrufen. Die Entscheidung, welche Strategien angewandt werden sollen, liegt jedoch beim Autor des Visuals.
 
 ### <a name="doughnut"></a>Ringdiagramm
@@ -147,16 +146,15 @@ Auf 150.000 Zeilen beschränkt. Wenn mehr als 150.000 Zeilen ausgewählt werden,
         - Kategorien: Stichprobe von 500 Werten
         - Reihen: Oberste 20 Werte
 
-### <a name="shape-map"></a>Formenzuordnung
-Flächenkartogramme können Statistiken oder dynamische Grenzwerte verwenden. 
-- Maximale Anzahl von Datenpunkten: 10.000
+### <a name="shape-map-preview"></a>Formenzuordnung (Vorschau)
+Die Formenzuordnung kann Statistiken oder dynamische Grenzwerte verwenden. 
+- Maximale Anzahl von Datenpunkten: 1.500
 - Kategorien: Oberste 500
-- Reihe (Wenn X und Y vorhanden sind): Oberste 20
 
 ### <a name="table"></a>Tabelle
 - Werte: Virtualisierung (Data Windowing) mit Fenstern von 500 Zeilen zur gleichen Zeit
 
-### <a name="tree-map-this-could-use-statistics-or-dynamic-limits"></a>Kacheldiagramm (hier könnten Statistiken oder dynamische Grenzwerte verwendet werden)
+### <a name="tree-map-could-use-statistics-or-dynamic-limits"></a>Kacheldiagramm (hier könnten Statistiken oder dynamische Grenzwerte verwendet werden)
 - Maximale Anzahl von Datenpunkten: 3.500
 - Gruppe: Oberste 500
 - Details: Oberste 20
