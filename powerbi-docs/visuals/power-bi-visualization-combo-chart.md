@@ -2,7 +2,6 @@
 title: Kombinationsdiagramm in Power BI
 description: In diesem Tutorial zu Kombinationsdiagrammen wird erläutert, wann sie verwendet werden sollten und wie sie im Power BI-Dienst und in Power BI Desktop erstellt werden.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 97c01966750d888f3420d265eb3f252b3a8f57d3
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 03a426947787cbd2720661267cac4601a4b9b13a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71195025"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880938"
 ---
 # <a name="combo-chart-in-power-bi"></a>Kombinationsdiagramm in Power BI
 
@@ -36,9 +35,9 @@ Kombinationsdiagramme sind gut für folgende Zwecke geeignet:
 * Zur Platzersparnis im Zeichenbereich
 
 ### <a name="prerequisites"></a>Voraussetzungen
-Dieses Tutorial verwendet die [PBIX-Datei mit einem Analysebeispiel für den Einzelhandel](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+In diesem Tutorial wird die [PBIX-Datei mit einem Analysebeispiel für den Einzelhandel](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) verwendet.
 
-1. Wählen Sie im oberen linken Bereich der Menüleiste die Option **Datei** > **Öffnen** aus.
+1. Wählen Sie im oberen linken Bereich der Menüleiste **Datei** > **Öffnen** aus.
    
 2. Suchen Sie Ihre Kopie der **PBIX-Datei mit einem Analysebeispiel für den Einzelhandel**.
 
@@ -67,7 +66,7 @@ In diesem Video sehen Sie, wie ein Kombinationsdiagramm anhand des Beispiels fü
     c. Wählen Sie **Zeit** \> **Geschäftsmonat** aus, um den Wert dem Bereich **Achse** hinzuzufügen.
 
     ![Beispiel eines Kombinationsdiagramms](media/power-bi-visualization-combo-chart/combotutorial1new.png)
-5. Klicken Sie erst auf die Auslassungspunkte (...) in der rechten oberen Ecke der Visualisierung und dann auf **Sortieren nach > FiscalMonth**. Wenn Sie die Sortierreihenfolge ändern möchten, klicken Sie erst erneut auf die Auslassungspunkte und anschließend auf **Aufsteigend sortieren** oder **Absteigend sortieren**. In diesem Beispiel wird **Aufsteigend sortieren** verwendet.
+5. Wählen Sie **Weitere Optionen** (...) in der rechten oberen Ecke der Visualisierung und dann **Sortieren nach > FiscalMonth** aus. Wenn Sie die Sortierreihenfolge ändern möchten, klicken Sie erst erneut auf die Auslassungspunkte und anschließend auf **Aufsteigend sortieren** oder **Absteigend sortieren**. In diesem Beispiel wird **Aufsteigend sortieren** verwendet.
 
 6. Konvertieren Sie das Säulendiagramm in ein Kombinationsdiagramm. Es gibt zwei Kombinationsdiagramme: **Linien- und gestapeltes Säulendiagramm** und **Linien- und gruppiertes Säulendiagramm**. Wenn Sie das Säulendiagramm ausgewählt haben, wählen Sie im Bereich **Visualisierungen** die Option **Linien- und gruppiertes Säulendiagramm** aus.
 

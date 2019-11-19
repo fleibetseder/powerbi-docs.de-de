@@ -2,19 +2,18 @@
 title: Aktualisieren, Löschen und Extrahieren einer Power BI-Vorlagen-App
 description: 'Vorgehensweise: Aktualisieren, Löschen und Extrahieren einer Vorlagen-App.'
 author: teddybercovitz
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/23/2019
 ms.author: tebercov
-ms.openlocfilehash: 2cf655c25bb58ec001bac52b55aea74f887f08d9
-ms.sourcegitcommit: 3885ae11e695f875a82c212ca157e401db8337c4
+ms.openlocfilehash: a15a27255f15bdce39ddb14a6cda798d170ba3ad
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71207635"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871385"
 ---
 # <a name="update-delete-and-extract-template-app"></a>Aktualisieren, Löschen und Extrahieren einer Vorlagen-App
 
@@ -65,7 +64,7 @@ Das Zurücksetzen auf die vorherige Version einer Template-App ist mit der Extra
 Ihre neue Arbeitsbereichsversionierung wird zurückgesetzt, und Sie können die Vorlagen-App aus dem neu extrahierten Workspace weiter entwickeln und verteilen.
 
 ## <a name="delete-template-app-version"></a>Löschen der Vorlagen-App-Version
-Ein Vorlagen-App-Arbeitsbereich ist die Quelle einer aktiven verteilten Vorlagen-App. Um die Benutzer der Vorlagen-App zu schützen, ist es nicht möglich, einen Arbeitsbereich zu löschen, ohne zuvor alle erstellten App-Versionen im Arbeitsbereich zu entfernen.
+Ein Vorlagen-Arbeitsbereich ist die Quelle einer aktiven verteilten Vorlagen-App. Um die Benutzer der Vorlagen-App zu schützen, ist es nicht möglich, einen Arbeitsbereich zu löschen, ohne zuvor alle erstellten App-Versionen im Arbeitsbereich zu entfernen.
 Das Löschen einer App-Version löscht auch die App-URL, die nicht mehr funktioniert.
 
 1. Wählen Sie im Bereich „Releaseverwaltung“ die Auslassungspunkte **(...)** und dann **Löschen** aus.

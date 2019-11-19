@@ -2,7 +2,6 @@
 title: Hinzufügen von Bildern, Videos und mehr in Dashboards
 description: Dokumentation zur Verwendung des Widgets „Kachel hinzufügen“, um eine Bild-, Video-, Textfeld-, Webcode- und Streamingdatenkachel zu einem Dashboard hinzuzufügen.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: e2PD8m1Q0vU
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 042fee1a55728884b3f4d5792a82973b3ea9fcc4
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: a012320a12d2516cb24dc92f2472e3c49ce9081e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832563"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853533"
 ---
 # <a name="add-images-videos-and-more-to-your-dashboard"></a>Hinzufügen von Bildern, Videos und mehr in Dashboards
 
@@ -232,7 +231,7 @@ Sie können beliebigen HTML-Inhalt als Kachel in Ihren Bericht oder Ihr Dashboar
 ## <a name="edit-a-tile"></a>Bearbeiten einer Kachel
 So nehmen Sie Änderungen an einer vorhandenen Kachel vor:
 
-1. Zeigen Sie auf die rechte obere Ecke der Kachel, und klicken Sie die Auslassungspunkte (...).
+1. Bewegen sie den Mauszeiger über die rechte obere Ecke der Kachel, und wählen Sie **Weitere Optionen** (...) aus.
    
     ![Kachel „Auslassungspunkte auswählen“](media/service-dashboard-add-widget/pbi_ellipses.png)
 2. Wählen Sie **Details bearbeiten** aus, um Änderungen im Fenster **Kacheldetails** vorzunehmen.
@@ -246,5 +245,5 @@ So nehmen Sie Änderungen an einer vorhandenen Kachel vor:
 ## <a name="next-steps"></a>Nächste Schritte
 [Einführung in Dashboardkacheln für Power BI-Designer](service-dashboard-tiles.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/).
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/).
 

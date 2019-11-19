@@ -4,7 +4,6 @@ description: In diesem Schnellstart werden Informationen zu Power BI, -Apps, -Be
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: kvivek
 editor: ''
 tags: ''
 ms.service: powerbi
@@ -13,12 +12,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/30/2019
 ms.author: mihart
-ms.openlocfilehash: ef955f672bc7266979b1e0b9ddbab6e9b6ae1ff7
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 09b9bf10c3328ecc4eb9ca9d16460b1bcfab0da5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70236976"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862692"
 ---
 # <a name="quickstart-learn-about-the-power-bi-capabilities-for-consumers"></a>Schnellstart: Informationen zu Funktionen für *Benutzer* in Power BI
 In dieser Schnellstartanleitung erfahren Sie, wie Sie mit Power BI interagieren können, um nach datengesteuerten Geschäftsinformationen zu suchen. Dieser Artikel bietet keinen detaillierten Einblick, sondern vielmehr einen groben Überblick über eine Vielzahl der verfügbaren Aktionen für **Benutzer** in Power BI.
@@ -50,7 +49,7 @@ Der Begriff „Inhalt“ bezieht sich im Rahmen von Power BI auf Berichte, Dashb
 
 Eine *App* ist ein Power BI-Inhaltstyp, bei dem zusammengehörige Dashboards und Berichte an einem Ort zusammengefasst werden. Eine App bündelt ein oder mehrere Dashboards sowie einen oder mehrere Berichte. Apps werden von *Power BI-Designern* erstellt und mit *Endbenutzern* wie Ihnen geteilt. 
 
-Eine Möglichkeit zum Anzeigen Ihrer Apps besteht darin, in der Navigationsleiste auf **Apps** zu klicken und eine App auszuwählen, die Sie öffnen möchten.
+Eine Möglichkeit zum Anzeigen Ihrer Apps besteht darin, im Navigationsbereich auf **Apps** zu klicken und eine App auszuwählen, die Sie öffnen möchten.
 
 ![Symbol „Apps abrufen“](./media/end-user-reading-view/power-bi-apps.png)
 
@@ -116,9 +115,9 @@ Visuals bestehen aus Datenpunkten. Sie können die Details anzeigen, indem Sie a
 ![Zum Anzeigen von Details mit dem Mauszeiger zeigen](media/end-user-reading-view/power-bi-hover.gif)
 
 ### <a name="favorite-a-dashboard"></a>Hinzufügen von Dashboards als „Favoriten“
-Wenn Sie Inhalte *als Favorit speichern*, können Sie über die Navigationsleiste auf diese zugreifen. Die Navigationsleiste wird in fast jedem Bereich in Power BI angezeigt. Favoriten sind üblicherweise die Dashboards, Berichtsseiten und Apps, die Sie am häufigsten besuchen.
+Wenn Sie Inhalte als *Favorit* speichern, können Sie über den Navigationsbereich auf diese zugreifen. Der Navigationsbereich wird in fast jedem Bereich in Power BI angezeigt. Favoriten sind üblicherweise die Dashboards, Berichtsseiten und Apps, die Sie am häufigsten besuchen.
 
-Klicken Sie in der oberen rechten Ecke des Power BI-Diensts auf **als Favorit speichern**, oder klicken Sie, wenn die Schaltfläche nicht angezeigt wird, auf die Auslassungspunkte (...), und wählen Sie dann **als Favorit speichern** aus. 
+Klicken Sie in der oberen rechten Ecke des Power BI-Diensts auf **Favorit**, oder klicken Sie, wenn die Schaltfläche nicht angezeigt wird, auf **Weitere Optionen** (...), und wählen Sie dann als **Favorit** aus der Dropdownliste. 
    
 ![Symbol „Favorit“](./media/end-user-reading-view/power-bi-favorites.png)
 
@@ -168,7 +167,7 @@ Weitere Informationen finden Sie unter [Fokusmodus und Vollbildmodus](end-user-f
 ### <a name="sort-a-visualization"></a>Visualisierung sortieren
 Visuelle Elemente auf einer Berichtsseite können mit den von Ihnen vorgenommenen Änderungen sortiert und gespeichert werden. 
 
-Zeigen Sie auf ein Visual, um es zu aktivieren, und klicken Sie dann auf die Auslassungspunkte (...), um die Sortieroptionen zu öffnen.
+Zeigen Sie auf ein Visual, um es zu aktivieren, und klicken Sie dann auf **Weitere Optionen** (...), um die Sortieroptionen zu öffnen.
 
 ![Diagramm sortieren](media/end-user-reading-view/sort.gif) 
 
@@ -177,7 +176,7 @@ Weitere Informationen zum [Sortieren von Visuals](end-user-search-sort.md).
 ### <a name="show-the-data-used-to-create-a-visualization"></a>Anzeigen der zum Erstellen einer Visualisierung verwendeten Daten
 Eine Power BI-Visualisierung wird mithilfe von Daten aus zugrunde liegenden Datasets erstellt. Sie haben in Power BI die Möglichkeit, die Daten *anzuzeigen*, die der Visualisierung zugrunde liegen. Wenn Sie **Daten anzeigen** auswählen, werden die Daten in Power BI unter (oder neben) der Visualisierung angezeigt.
 
-Klicken Sie mit einem aktiven Visual auf die Auslassungspunkte (...), und wählen Sie die Option **Daten anzeigen** aus.
+Klicken Sie mit einem aktiven Visual auf die **Weitere Optionen** (...), und wählen Sie die Option **Daten anzeigen** aus.
    
    ![Daten anzeigen auswählen](./media/end-user-show-data/power-bi-explore-show-data.png)
 
@@ -194,9 +193,9 @@ Zusätzlich zum Anzeigen der Daten, die zum Erstellen eines Visuals verwendet we
 Das war ein kurzer Überblick über einige der Aktionen, die für *Benutzer* im Power BI-Dienst verfügbar sind.  
 
 ## <a name="clean-up-resources"></a>Bereinigen von Ressourcen
-- Wenn Sie mit einer App verbunden sind, wählen Sie in der linken Navigationsleiste **Apps** aus, um die Apps-Inhaltsliste zu öffnen. Zeigen Sie auf die zu löschende App, und klicken Sie auf das Papierkorbsymbol.
+- Wenn Sie mit einer App verbunden sind, wählen Sie im der linken Navigationsbereich **Apps** aus, um die Apps-Inhaltsliste zu öffnen. Zeigen Sie auf die zu löschende App, und klicken Sie auf das Papierkorbsymbol.
 
-- Wenn Sie einen Power BI-Beispielbericht importiert oder sich mit ihm verbunden haben, klicken Sie in der linken Navigationsleiste auf **Mein Arbeitsbereich**. Suchen Sie unter den Registerkarten am oberen Rand das Dashboard, den Bericht und das Dataset, und klicken Sie für alle drei jeweils auf das Papierkorbsymbol.
+- Wenn Sie einen Power BI-Beispielbericht importiert oder sich mit ihm verbunden haben, klicken Sie im linken Navigationsbereich auf **Mein Arbeitsbereich**. Suchen Sie unter den Registerkarten am oberen Rand das Dashboard, den Bericht und das Dataset, und klicken Sie für alle drei jeweils auf das Papierkorbsymbol.
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Power BI für Verbraucher](end-user-consumer.md)

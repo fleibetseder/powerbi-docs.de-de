@@ -3,18 +3,17 @@ title: Was kann ich mit der Power BI-API tun
 description: Was kann ich mit der Power BI-API tun
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 03/25/2019
-ms.openlocfilehash: cc180c2e9d5275172ad9da75c502ef53d9d7ee66
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 8a231a426823d40be34e900a32d06e5d5f77108b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307625"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880481"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Welche Möglichkeiten bietet die Power BI-API für Entwickler?
 
@@ -32,7 +31,7 @@ Einige der Möglichkeiten, die die Power BI-APIs bieten:
 | Authentifizieren bei Power BI. | [Authentifizieren bei Power BI](get-azuread-access-token.md) |
 
 > [!NOTE]
-> Die APIs von Power BI verweisen weiterhin in Gruppen auf Arbeitsbereiche. Alle Verweise auf Gruppen bedeuten, dass Sie mit App-Arbeitsbereichen arbeiten.
+> In Power BI-APIs werden Arbeitsbereiche weiterhin als Gruppen bezeichnet. Alle Verweise auf Gruppen bedeuten, dass Sie mit Arbeitsbereichen arbeiten.
 
 ## <a name="api-developer-tools"></a>API-Entwicklertools
 
@@ -61,4 +60,4 @@ Sie können die Power BI-API zum [Übertragen von Daten in ein Dataset mithilfe 
 * [Referenz für Power BI-REST-API](rest-api-reference.md)
 * [Power BI-REST-APIs](https://docs.microsoft.com/rest/api/power-bi/)
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

@@ -3,19 +3,18 @@ title: Dienstprinzipal in Power BI
 description: Erfahren Sie, wie Sie eine Anwendung zum Einbetten von Power BI-Inhalten in Azure Active Directory über einen Dienstprinzipal registrieren können.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: c77d206dbd7fa0604bc60fb4054c09f73cbe442e
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 9bbba47456d9c5bed5c8cd77858b6dbaeefce5a1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073106"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877652"
 ---
 # <a name="service-principal-with-power-bi"></a>Dienstprinzipal in Power BI
 
@@ -58,8 +57,8 @@ Es bestehen Unterschiede, je nachdem, ob Sie für die Authentifizierung einen Di
 |------------------------------------------------------|---------------------|-------------------|
 | Anmeldung beim Power BI-Dienst möglich?  | Ja | Nein |
 | Im Power BI-Verwaltungsportal aktiviert? | Nein | Ja |
-| [Funktioniert mit Anwendungsarbeitsbereichen (v1)?](../service-create-workspaces.md) | Ja | Nein |
-| [Funktioniert mit den neuen Anwendungsarbeitsbereichen (v2)?](../service-create-the-new-workspaces.md) | Ja | Ja |
+| [Funktioniert mit Arbeitsbereichen (v1)](../service-create-workspaces.md) | Ja | Nein |
+| [Funktioniert mit den neuen Aarbeitsbereichen (v2)](../service-create-the-new-workspaces.md) | Ja | Ja |
 | Arbeitsbereichsadministrator erforderlich bei Verwendung in Power BI Embedded? | Ja | Ja |
 | Kann Power BI-REST-APIs verwenden? | Ja | Ja |
 | Benötigt für die Erstellung einen globalen Administrator? | Ja | Nein |
@@ -141,7 +140,7 @@ Es gibt ein UI-Feature, mit dem Sie Power BI-Artefakte und -Ressourcen von einem
 
 ### <a name="how-to-get-the-service-principal-object-id"></a>So erhalten Sie die Dienstprinzipalobjekt-ID
 
-Wenn Sie einem neuen Anwendungsarbeitsbereich einen Dienstprinzipal zuweisen möchten, verwenden Sie die [Power BI-REST-APIs](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser). Wenn Sie für Vorgänge auf einen Dienstprinzipal verweisen oder Änderungen vornehmen möchten, z.B. einen Dienstprinzipal als Administrator auf einen Arbeitsbereich anwenden, verwenden Sie die **Objekt-ID des Dienstprinzipals**.
+Wenn Sie einem neuen Arbeitsbereich einen Dienstprinzipal zuweisen möchten, verwenden Sie die [Power BI-REST-APIs](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser). Wenn Sie für Vorgänge auf einen Dienstprinzipal verweisen oder Änderungen vornehmen möchten, z.B. einen Dienstprinzipal als Administrator auf einen Arbeitsbereich anwenden, verwenden Sie die **Objekt-ID des Dienstprinzipals**.
 
 Unten finden Sie eine Anleitung, wie Sie die Objekt-ID des Dienstprinzipals aus dem Azure-Portal erhalten.
 
@@ -166,7 +165,7 @@ Unten sehen Sie ein Beispielskript, mit dem Sie die Objekt-ID des Dienstprinzipa
 
 ## <a name="considerations-and-limitations"></a>Überlegungen und Einschränkungen
 
-* Dienstprinzipale sind nur für [neue Anwendungsarbeitsbereiche](../service-create-the-new-workspaces.md) geeignet.
+* Dienstprinzipale sind nur für [neue Arbeitsbereiche](../service-create-the-new-workspaces.md) geeignet.
 * **Mein Arbeitsbereich** wird nicht unterstützt, wenn ein Dienstprinzipal verwendet wird.
 * Dedizierte Kapazität ist erforderlich, um in die Produktionsphase wechseln zu können.
 * Sie können sich über den Dienstprinzipal nicht im Power BI-Portal anmelden.

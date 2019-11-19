@@ -2,7 +2,6 @@
 title: 'Analysebeispiel für IT-Investitionen für Power BI: Übersicht'
 description: 'Analysebeispiel für IT-Investitionen für Power BI: Übersicht'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: bc6b35b6401f4424a3a5120cb7c28437da9a2a48
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: 6f39f8b5c288c1dbff3cd87c7beee27683cfeae2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68462246"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873903"
 ---
 # <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>Analysebeispiel für IT-Investitionen für Power BI: Übersicht
 
@@ -54,11 +53,11 @@ Sie benötigen keine Power BI-Lizenz, um die Beispiele in Power BI Desktop kenne
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Abrufen der PBIX-Datei für dieses Beispiel
 
-Alternativ können Sie das Analysebeispiel für IT-Ausgaben als [PBIX-Datei](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix) herunterladen, ein für Power BI Desktop entworfenes Dateiformat.
+Alternativ können Sie das Analysebeispiel für IT-Ausgaben als [PBIX-Datei](https://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix) herunterladen, ein für Power BI Desktop entworfenes Dateiformat.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Abrufen der Excel-Arbeitsmappe für dieses Beispiel
 
-Wenn Sie sich die Datenquelle für dieses Beispiel ansehen möchten, dieses steht auch als [Excel-Arbeitsmappe](http://go.microsoft.com/fwlink/?LinkId=529783) zur Verfügung. Die Arbeitsmappe enthält Power View-Blätter, die Sie anzeigen und ändern können. Aktivieren Sie die Add-Ins für die Datenanalyse, um die Rohdaten anzuzeigen, und klicken Sie dann auf **Power Pivot > Verwalten**. Weitere Informationen zum Aktivieren der Add-Ins für Power View und Power Pivot finden Sie unter [Anzeigen der Excel-Beispiele in Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Wenn Sie sich die Datenquelle für dieses Beispiel ansehen möchten, dieses steht auch als [Excel-Arbeitsmappe](https://go.microsoft.com/fwlink/?LinkId=529783) zur Verfügung. Die Arbeitsmappe enthält Power View-Blätter, die Sie anzeigen und ändern können. Aktivieren Sie die Add-Ins für die Datenanalyse, um die Rohdaten anzuzeigen, und klicken Sie dann auf **Power Pivot > Verwalten**. Weitere Informationen zum Aktivieren der Add-Ins für Power View und Power Pivot finden Sie unter [Anzeigen der Excel-Beispiele in Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="it-spend-analysis-sample-dashboard"></a>Dashboard zum Analysebeispiel für IT-Ausgaben
 Die beiden numerischen Kacheln links auf dem Dashboard, **Planabweichung in Prozent** und **Abweichung, aktuelle Schätzung 3, Prozent**, geben uns einen Überblick darüber, wie wir uns im Vergleich zum Plan und zur Schätzung des letzten Quartals (LE3 = Latest Estimate Quarter 3) geschlagen haben. Insgesamt liegen wir etwa 6% neben dem Plan. Betrachten wir die Ursache für diese Abweichung: Wann, wo und in welcher Kategorie?
@@ -78,7 +77,7 @@ Aber Schlüsse nur aus einem Blick auf dieses Diagramm zu ziehen, kann in die Ir
     Nun untersuchen wir, welche Kategorie in den USA die Abweichung verursacht.
 
 ## <a name="ask-questions-of-the-data"></a>Fragen an die Daten stellen
-1. Wählen Sie in der oberen Navigationsleiste **Analysebeispiel für IT-Ausgaben** aus, um zum Beispieldashboard zurückzukehren.
+1. Wählen Sie im oberen Navigationsbereich **Analysebeispiel für IT-Ausgaben** aus, um zum Beispieldashboard zurückzukehren.
 2. Wählen Sie **Stellen Sie eine Frage zu Ihren Daten** aus.
 3. Wählen Sie in der Liste **Questions to get you started** (Fragen, um Ihnen den Einstieg zu erleichtern) auf der linken Seite die Option **what is the plan by IT area** (Plan nach IT-Bereich) aus.
 

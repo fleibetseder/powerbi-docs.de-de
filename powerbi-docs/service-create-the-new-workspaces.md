@@ -2,7 +2,6 @@
 title: Erstellen der neuen Arbeitsbereiche – Power BI
 description: Informationen zum Erstellen der neuen Arbeitsbereiche, Sammlungen von Dashboards, Berichten und paginierten Berichten, die zum Bereitstellen von Schlüsselmetriken für Ihre Organisation konzipiert wurden.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/02/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7d53acc0dc8c669026665347de9593fa1df84c62
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: bbb5eeee7422670c771f7bbfb4b051de0538a10a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020182"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877514"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Erstellen der neuen Arbeitsbereiche in Power BI
 
@@ -74,7 +73,7 @@ Sie können festlegen, welche Benutzer Benachrichtigungen über im Arbeitsbereic
 
     Im Bereich **Arbeitsbereich erstellen**, wenn Sie sie neu erstellen.
 
-    Wählen Sie im linken Navigationsbereich den Pfeil neben **Arbeitsbereiche** aus, wählen Sie die Auslassungspunkte (...) neben dem Arbeitsbereichsnamen aus, und wählen Sie dann **Arbeitsbereichseinstellungen** aus. Der Bereich **Einstellungen** wird geöffnet.
+    Wählen Sie im Navigationsbereich den Pfeil neben **Arbeitsbereiche** aus, wählen Sie die **Weitere Optionen** (...) neben dem Arbeitsbereichsnamen aus, und wählen Sie dann **Arbeitsbereichseinstellungen** aus. Der Bereich **Einstellungen** wird geöffnet.
 
     ![Arbeitsbereichseinstellungen](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
@@ -94,7 +93,7 @@ Power BI synchronisiert keine Berechtigungen von Benutzern oder Gruppen, für di
 
     Im Bereich **Arbeitsbereich erstellen**, wenn Sie sie neu erstellen.
 
-    Wählen Sie im linken Navigationsbereich den Pfeil neben **Arbeitsbereiche** aus, wählen Sie die Auslassungspunkte (...) neben dem Arbeitsbereichsnamen aus, und wählen Sie dann **Arbeitsbereichseinstellungen** aus. Der Bereich **Einstellungen** wird geöffnet.
+    Wählen Sie im Navigationsbereich den Pfeil neben **Arbeitsbereiche** aus, wählen Sie die **Weitere Optionen** (...) neben dem Arbeitsbereichsnamen aus, und wählen Sie dann **Arbeitsbereichseinstellungen** aus. Der Bereich **Einstellungen** wird geöffnet.
 
     ![Arbeitsbereichseinstellungen](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
@@ -108,7 +107,7 @@ Power BI synchronisiert keine Berechtigungen von Benutzern oder Gruppen, für di
 
 Nachdem Sie den OneDrive-Speicherort konfiguriert haben, gelangen Sie zu ihm auf die gleiche Weise wie zu anderen Datenquellen im Power BI-Dienst.
 
-1. Klicken Sie im linken Navigationsbereich auf **Daten abrufen** und dann im Feld **Dateien** auf **Abrufen**.
+1. Klicken Sie im Navigationsbereich auf **Daten abrufen** und dann im Feld **Dateien** auf **Abrufen**.
 
     ![Abrufen von Daten und Dateien](media/service-create-the-new-workspaces/power-bi-get-data-files.png)
 
@@ -145,4 +144,4 @@ Informieren Sie sich über das [Veröffentlichen einer App aus den neuen Arbeits
 * Weitere Informationen zum [Organisieren von Arbeit in den neuen Arbeitsbereichen in Power BI](service-new-workspaces.md)
 * [Erstellen klassischer Arbeitsbereiche](service-create-workspaces.md)
 * [Veröffentlichen einer App aus den neuen Arbeitsbereichen in Power BI](service-create-distribute-apps.md)
-* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
