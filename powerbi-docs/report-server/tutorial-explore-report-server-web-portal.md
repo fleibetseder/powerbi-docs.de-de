@@ -2,19 +2,18 @@
 title: 'Tutorial: Erkunden von Power BI-Berichtsserver auf einem virtuellen Computer'
 description: In diesem Tutorial erstellen Sie einen virtuellen Computer, auf dem Power BI-Berichtsserver bereits installiert ist, und erkunden das Webportal.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: tutorial
 ms.date: 05/06/2019
 ms.author: maggies
-ms.openlocfilehash: d30a396eeb4d461d7c36cecf9759306236810cab
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 312b86f9e0c0dda0c9c943520c74286e0458acef
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65240079"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73859250"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Tutorial: Erkunden des Power BI-Berichtsserver-Webportals auf einem virtuellen Computer
 In diesem Tutorial erstellen Sie einen virtuellen Azure-Computer mit bereits installiertem Power BI-Berichtsserver, sodass Sie das Anzeigen, Bearbeiten und Verwalten von Power BI-Beispielberichten und paginierten Berichten sowie KPIs üben können.
@@ -72,7 +71,7 @@ Das Power BI-Team hat einen virtuellen Computer erstellt, auf dem Power BI-Beric
 
 ## <a name="connect-to-your-virtual-machine"></a>Herstellen einer Verbindung mit dem virtuellen Computer
 
-1. Wählen Sie im linken Navigationsbereich von Azure die Option **Virtuelle Computer** aus. 
+1. Wählen Sie im Navigationsbereich von Azure die Option **Virtuelle Computer** aus. 
 
 2. Geben Sie im Feld **Nach Name filtern** den Begriff „Report“ ein. 
 
@@ -108,7 +107,7 @@ Wenn der virtuelle Computer geöffnet wird, werden auf dem Desktop folgende Elem
 |![Nummer 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Öffnet das Webportal von Power BI-Berichtsserver im Browser |
 |![Nummer 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Startet SQL Server Data Tools zum Erstellen paginierter Berichte (RDL) |
 
-Doppelklicken Sie auf das Symbol **Berichtsserver-Webportal**. Der Browser öffnet die Seite `http://localhost/reports/browse`. Im Webportal sehen Sie verschiedene Dateien nach Typ gruppiert. 
+Doppelklicken Sie auf das Symbol **Berichtsserver-Webportal**. Der Browser öffnet die Seite `https://localhost/reports/browse`. Im Webportal sehen Sie verschiedene Dateien nach Typ gruppiert. 
 
 ![Webportal von Power BI-Berichtsserver](media/tutorial-explore-report-server-web-portal/power-bi-report-server-browser-in-vm.png)
 
@@ -189,7 +188,7 @@ Im Webportal können Sie paginierte Berichte anzeigen und verwalten sowie den Be
 
 ### <a name="manage-a-paginated-report"></a>Verwalten eines paginierten Berichts
 
-1. Klicken Sie im Webportal unter **Paginierte Berichte** auf die Auslassungspunkte (...) neben **Sales Order**, und klicken Sie dann auf **Verwalten**.
+1. Klicken Sie im Webportal unter **Paginierte Berichte** auf **Weitere Optionen** (...) neben **Sales Order** > **Verwalten**.
 
 1. Wählen Sie **Parameter** aus, ändern Sie den Standardwert für **SalesOrderNumber** zu **SO50689**, und klicken Sie auf **Anwenden**.
 
@@ -219,7 +218,7 @@ Im Webportal können Sie paginierte Berichte anzeigen und verwalten sowie den Be
 
 Sie können paginierte Berichte im Berichts-Generator bearbeiten, den Sie direkt aus dem Browser starten können.
 
-1. Klicken Sie im Webportal auf die Auslassungspunkte (...) neben **Sales Order**, und wählen Sie **Im Berichts-Generator bearbeiten** aus.
+1. Klicken Sie im Webportal auf **Weitere Optionen** (...) neben **Sales Order** > **Im Berichts-Generator bearbeiten**.
 
 1. Klicken Sie auf **Zulassen**, um der Website zu erlauben, ein Programm auf Ihrem Computer zu öffnen.
 

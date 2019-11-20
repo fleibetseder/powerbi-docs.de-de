@@ -2,7 +2,6 @@
 title: Hinzufügen von Kommentaren zu Dashboards und Berichten
 description: In diesem Dokument wird erläutert, wie Kommentare einem Dashboard, Bericht oder Visual hinzugefügt und dazu verwendet werden, Unterhaltungen mit Projektmitarbeitern zu führen.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,14 +10,17 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: f9979a852028e929b626e76534fef073feca3fd8
-ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
+ms.openlocfilehash: da941de8b44f3833a5f80bba648f4a185f35b36e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71100700"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852033"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>Hinzufügen von Kommentaren zu einem Dashboard oder Bericht
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Sie können einem Dashboard oder Bericht einen persönlichen Kommentar hinzufügen oder über ein Dashboard oder einen Bericht eine Unterhaltung mit Ihren Kollegen beginnen. Das Feature **Kommentare** ist nur eine der Möglichkeiten, wie ein *Endbenutzer* mit anderen Personen interagieren kann. 
 
 ![Video zu Kommentaren](media/end-user-comment/comment.gif)
@@ -64,7 +66,7 @@ Die Vorgehensweise zum Hinzufügen von Kommentaren zu einem Dashboard oder Beric
 ### <a name="add-a-comment-to-a-specific-dashboard-or-report-visual"></a>Hinzufügen eines Kommentars zu einem bestimmten Dashboard- oder Berichtsvisual
 Sie können Kommentare nicht nur zu einem vollständigen Dashboard oder zu einer gesamten Berichtsseite, sondern auch zu einzelnen Dashboardkacheln und einzelnen Berichtsvisuals hinzufügen. Die Vorgehensweisen sind sehr ähnlich, und in diesem Beispiel wird ein Bericht verwendet.
 
-1. Zeigen Sie auf das Visual, und klicken Sie auf die Auslassungspunkte (...).    
+1. Zeigen Sie auf das Visual, und klicken Sie auf **Weitere Optionen** (...).    
 2. Wählen Sie in der Dropdownliste **Kommentare öffnen** aus.
 
     ![Erste Auswahl: Kommentar hinzufügen](media/end-user-comment/power-bi-report-comment.png)  

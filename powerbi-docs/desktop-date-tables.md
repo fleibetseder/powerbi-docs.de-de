@@ -2,7 +2,6 @@
 title: Festlegen und Verwenden von Datumstabellen in Power BI Desktop
 description: Erfahren Sie, wie Sie in Power BI Desktop eine Tabelle als Datumstabelle festlegen.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,16 +9,18 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 9bbe302c7187419abae556bb34f991efa1fdae00
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: b2a7f4434ac82a125352eaefdd2417d9039b710f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65454382"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73868622"
 ---
 # <a name="set-and-use-date-tables-in-power-bi-desktop"></a>Festlegen und Verwenden von Datumstabellen in Power BI Desktop
 
 **Power BI Desktop** erkennt im Hintergrund automatisch Spalten, die Datumswerte darstellen und erstellt anschließend in Ihrem Auftrag Datumshierarchien und weitere nützliche Metadaten für Ihr Modell. Diese integrierten Hierarchien können Sie benutzen, wenn Sie Berichtsfeatures wie Visuals, Tabellen, Quickmeasures und Slicer erstellen. Power BI Desktop erstellt dazu ausgeblendete Tabellen, die Sie für Ihre Berichte und DAX-Ausdrücke verwenden können.
+
+Weitere Informationen zu diesem automatischen Verhalten finden Sie im Artikel [Automatische Angabe von Datum/Uhrzeit in Power BI Desktop](desktop-auto-date-time.md).
 
 Viele Datenanalysten erstellen lieber eigene Datumstabellen, was selbstverständlich ebenfalls möglich ist. In **Power BI Desktop** können Sie festlegen, welche Tabelle für Ihr Modell als **Datumstabelle** verwendet werden soll. Anschließend haben Sie die Möglichkeit, datumsbezogene Visuals, Tabellen, Quickmeasures usw. zu erstellen, die auf die Daten dieser Tabelle zugreifen. Wenn Sie eine eigene Datumstabelle festlegen, können Sie die in Ihrem Modell erstellten Datumshierarchien konfigurieren und sie in **Quickmeasures** und anderen Vorgängen nutzen, die auf die Datumstabelle des Modells zurückgreifen. 
 
@@ -75,6 +76,5 @@ Wenn Sie eine eigene **Datumstabelle** festlegen, müssen Sie darauf achten, den
 
 Folgende Artikel könnten Sie ebenfalls interessieren:
 
+* [Automatische Angabe von Datum/Uhrzeit in Power BI Desktop](desktop-auto-date-time.md)
 * [Datentypen in Power BI Desktop](desktop-data-types.md)
-
- 

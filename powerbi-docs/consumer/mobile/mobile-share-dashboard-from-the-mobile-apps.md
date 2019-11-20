@@ -2,19 +2,18 @@
 title: Freigeben eines Dashboards oder Berichts in den mobilen Power BI-Apps
 description: Laden Sie andere Personen ein, sich Ihre Dashboards und Berichte anzusehen, indem Sie Links aus der mobilen Power BI-App freigeben. Erfahren Sie, wie das funktioniert.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: mshenhav
-ms.openlocfilehash: 75d315463601110dee61d293a7a41abbf30aaa2d
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 232d311e876a5fe01eb6c8091eb7a83669592cbf
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61274438"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879081"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Freigeben eines Dashboards oder Berichts in den mobilen Power BI-Apps
 Gilt für:
@@ -86,7 +85,7 @@ Sie können die Freigabe nur aufheben, wenn Sie der Besitzer sind.
 3. Um die Freigabe aufzuheben, tippen Sie auf den roten Kreis neben dem Namen und dann auf **Löschen**.
 
 ## <a name="share-from-your-android-device"></a>Freigeben über Ihr Android-Gerät
-1. Tippen Sie auf der Startseite des Dashboards oder Berichts auf die Auslassungspunkte (...) und dann auf **Invite a colleague** (Kollegen einladen).
+1. Tippen Sie auf der Startseite des Dashboards oder Berichts auf **Weitere Optionen** (...) und dann auf **Kollegen einladen**.
    
    ![Kollegen einladen](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-tablet-share-dashboard.png)
 2. Oder tippen Sie auf einem Dashboard oder Bericht auf das Symbol „Einladen“. ![Einladungssymbol](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon.png).
@@ -147,5 +146,5 @@ Sie können die Freigabe nur aufheben, wenn Sie der Besitzer sind.
 ## <a name="next-steps"></a>Nächste Schritte
 * [Kommentieren und Freigeben einer Momentaufnahme einer Kachel, eines Berichts oder einer Visualisierung in den mobilen Apps](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md)
 * [Freigeben Ihrer Power BI-Dashboards und -Berichte für Kollegen und andere](../../service-share-dashboards.md)
-* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
 

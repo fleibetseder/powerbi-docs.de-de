@@ -2,7 +2,6 @@
 title: Anheften einer Kachel an ein Dashboard aus Q&A
 description: Dokumentation zum Anheften einer Kachel an ein Power BI-Dashboard aus dem Fragefeld für Fragen und Antworten (F&A)
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 33598798104d88f3044a6689effa54e9b4256274
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 12aa35e37e4382e7fc89fc9e0fe8c2ae564e8eda
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61139430"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872807"
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Anheften einer Kachel an ein Dashboard aus Q&A
 ## <a name="how-to-pin-a-tile-from-qa"></a>Anheften einer Kachel aus Q&A
@@ -52,9 +51,9 @@ Um die Schritte selbst nachzuvollziehen, öffnen Sie das [Dashboard zum Analyseb
    ![Dashboard mit Kacheln](media/service-dashboard-pin-tile-from-q-and-a/power-bi-pinned.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Zu beachtende Aspekte und Problembehandlung
-* Wenn Sie anfangen, eine Frage einzugeben, sucht F&A sofort nach der besten Antwort aus allen Datasets, die mit dem aktuellen Dashboard verknüpft sind.  Das „aktuelle Dashboard“ ist das Dashboard, das in der oberen Navigationsleiste aufgeführt wird. Diese Frage wird beispielsweise im Dashboard **Analysebeispiel für den Einzelhandel** gestellt, das Teil des App-Arbeitsbereichs **mihart** ist.
+* Wenn Sie anfangen, eine Frage einzugeben, sucht F&A sofort nach der besten Antwort aus allen Datasets, die mit dem aktuellen Dashboard verknüpft sind.  Das „aktuelle Dashboard“ ist das Dashboard, das im oberen Navigationsbereich aufgeführt wird. Diese Frage wird beispielsweise im Dashboard **Analysebeispiel für den Einzelhandel** gestellt, das Teil des Arbeitsbereichs **mihart** ist.
 
-  ![Brotkrümel](media/service-dashboard-pin-tile-from-q-and-a/power-bi-navbar.png)
+  ![Brotkrümel](media/service-dashboard-pin-tile-from-q-and-a/power-bi-nav pane.png)
 * **Woher weiß F&A, welche Datasets verwendet werden sollen**?  Q&A hat Zugriff auf alle Datasets, die über mindestens eine an das Dashboard angeheftete Visualisierung verfügen.
 
 * **Wird das Fragefeld nicht angezeigt**? Wenden Sie sich an den Power BI-Administrator. Der Administrator kann Q&A deaktivieren.
@@ -64,4 +63,4 @@ Um die Schritte selbst nachzuvollziehen, öffnen Sie das [Dashboard zum Analyseb
 [Umbenennen, Ändern der Größe und Position, Hinzufügen eines Hyperlinks und mehr](service-dashboard-edit-tile.md)    
 [Anzeigen einer Dashboardkachel im Fokusmodus](consumer/end-user-focus.md)     
 [Zurück zu Q&A in Power BI](consumer/end-user-q-and-a.md)  
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

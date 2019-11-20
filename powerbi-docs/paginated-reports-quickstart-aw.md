@@ -3,18 +3,17 @@ title: 'Tutorial: Erstellen und Hochladen eines paginierten Berichts in den Powe
 description: In diesem Tutorial stellen Sie eine Verbindung mit einer Beispielinstanz von Azure SQL-Datenbank her. Anschließend erstellen Sie mithilfe eines Assistenten im Berichts-Generator einen paginierten Bericht. Dann laden Sie den paginierten Bericht in einen Arbeitsbereich in einer Premium-Kapazität im Power BI-Dienst hoch.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 44af74b722e5d21c7475a382f8097f453854230d
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: ab4cb14936ceff52a78f713877064d525de4b104
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839732"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875431"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Tutorial: Erstellen und Hochladen eines paginierten Berichts in den Power BI-Dienst
 
@@ -44,7 +43,7 @@ Im Folgenden werden die Voraussetzungen für die Erstellung eines paginierten Be
 Im Folgenden werden die Voraussetzungen zum Hochladen Ihres paginierten Berichts in den Power BI-Dienst aufgeführt:
 
 - Sie benötigen eine [Power BI Pro-Lizenz](service-admin-power-bi-pro-in-your-organization.md).
-- Sie benötigen einen App-Arbeitsbereich für den Dienst in einer [Power BI Premium-Kapazität](service-premium-what-is.md). Diese ist durch ein Diamantsymbol ![Premium-Diamantsymbol](media/paginated-reports-quickstart-aw/premium-diamond.png) neben den Namen des Arbeitsbereichs gekennzeichnet.
+- Sie benötigen einen Arbeitsbereich für den Dienst in einer [Power BI Premium-Kapazität](service-premium-what-is.md). Diese ist durch ein Diamantsymbol ![Premium-Diamantsymbol](media/paginated-reports-quickstart-aw/premium-diamond.png) neben den Namen des Arbeitsbereichs gekennzeichnet.
 
 ## <a name="create-the-matrix-with-a-wizard"></a>Erstellen der Matrix mit einem Assistenten
   
@@ -108,7 +107,7 @@ Im Folgenden werden die Voraussetzungen zum Hochladen Ihres paginierten Berichts
 
     - Adresse
     - Kunde
-    - Produkt
+    - Product
     - ProductCategory
     - SalesOrderDetail
     - SalesOrderHeader
@@ -137,7 +136,7 @@ Im Folgenden werden die Voraussetzungen zum Hochladen Ihres paginierten Berichts
 
     - OrderQty
     - UnitPrice
-    - Zwischensumme
+    - LineTotal
 
     Der Berichts-Generator hat die Felder automatisch in den Summenfeldern **Werte** erstellt.
 
@@ -287,7 +286,7 @@ Eine weitere Formatierungsverbesserung vor der Veröffentlichung des Berichts im
 
 Nachdem Sie diesen paginierten Bericht erstellt haben, können Sie ihn in den Power BI-Dienst hochladen.
 
-1. Wählen Sie im Power BI-Dienst (http://app.powerbi.com) im linken Navigationsbereich die Option **Arbeitsbereiche** > **App-Arbeitsbereich erstellen** aus.
+1. Wählen Sie im Power BI-Dienst https://app.powerbi.com) im Navigationsbereich **Arbeitsbereiche** > **Arbeitsbereich erstellen** aus.
 
 2. Nennen Sie Ihren Arbeitsbereich **Azure AW**, oder vergeben Sie einen anderen eindeutigen Namen. Sie sind jetzt das einzige Mitglied. 
 

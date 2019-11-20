@@ -10,12 +10,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 10/21/2019
 rLocalizationGroup: Common tasks
-ms.openlocfilehash: add49c43e16b2070b054f4228d1faf0075b736f8
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a9339cc9f61a3a191e8783935c9ec38e119894e9
+ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73861385"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099201"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Abonnieren eines Berichts oder Dashboards im Power BI-Dienst 
 
@@ -81,7 +81,7 @@ Ein Abonnement wird beendet, wenn die Pro-Lizenz abläuft, das Dashboard oder de
 * Wenn die Links (zum Inhalt) in Ihrer E-Mail nicht mehr funktionieren, ist es möglich, dass der Inhalt gelöscht wurde. In der E-Mail können Sie unterhalb des Screenshots sehen, ob Sie selbst ein Abonnement für sich erstellt haben oder ob es von einem anderen Benutzer für Sie erstellt wurde. Falls es jemand anderes war, bitten Sie den Kollegen, entweder die E-Mails abzubestellen oder erneut ein Abonnement für Sie zu erstellen.
 * Abonnements von Berichtseiten sind mit dem Namen der Berichtseite verknüpft. Wenn Sie eine Berichtsseite abonnieren und diese umbenannt wird, müssen Sie Ihr Abonnement erneut erstellen.
 * Wenn Sie das Abonnementfeature nicht verwenden können, wenden Sie sich an Ihren Systemadministrator. Ihre Organisation hat dieses Feature möglicherweise deaktiviert.  
-* E-Mail-Abonnements bieten keine Unterstützung für die meisten [benutzerdefinierten Visuals](../power-bi-custom-visuals.md).  Die Ausnahme sind benutzerdefinierte Visuals, die [zertifiziert](../power-bi-custom-visuals-certified.md) wurden.  
+* E-Mail-Abonnements bieten keine Unterstützung für die meisten [benutzerdefinierten Visuals](../developer/power-bi-custom-visuals.md).  Die Ausnahme sind benutzerdefinierte Visuals, die [zertifiziert](../developer/power-bi-custom-visuals-certified.md) wurden.  
 * E-Mail-Abonnements bieten aktuell keine Unterstützung für R-gestützte benutzerdefinierte Visuals.  
 * Insbesondere für Abonnements von Dashboards werden bestimmte Typen von Kacheln noch nicht unterstützt.  Dazu zählen Streamingkacheln, Videokacheln und benutzerdefinierte Kacheln mit Webinhalten.     
 * Aufgrund der Beschränkungen für die E-Mail-Größe können Dashboards oder Berichte mit extrem großen Bildern möglicherweise nicht abonniert werden.    
