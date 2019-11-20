@@ -2,7 +2,6 @@
 title: Anzeigen von verwandten Inhalten aus Dashboards, Berichten und Datasets
 description: Vereinfachte Navigation zum Anzeigen verwandter Inhalte in Dashboards, Berichten und Datasets
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 ms.custom: seodec18
@@ -12,14 +11,17 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: b52a858d10bb7f508d39e2d4e9678e48e01394f5
-ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
+ms.openlocfilehash: 9e202d22c2ff42a29eb28a8ee154b09f18097d04
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71100361"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862284"
 ---
 # <a name="view-related-content-in-the-power-bi-service"></a>Anzeigen verwandter Inhalte im Power BI-Dienst
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Im Bereich **verwandte Inhalte** sehen Sie, wie Ihre Inhalte im Power BI-Dienst (Dashboards, Berichte und Datasets) miteinander verbunden sind. Der Bereich **Verwandte Inhalte** dient auch als Startplattform für die Ausführung von Aktionen. Von hier können Sie beispielsweise ein Dashboard öffnen, einen Bericht öffnen, Erkenntnisse generieren, die Daten in Excel analysieren und mehr.  
 
 In Power BI basieren Berichte auf Datasets, werden visuelle Berichtselemente an Dashboards angeheftet, und visuelle Dashboardelemente sind wiederum mit Berichten verknüpft. Aber woher wissen Sie, welche Dashboards visuelle Elemente aus Ihrem Marketingbericht hosten? Und wie finden Sie diese Dashboards? Basieren die visuellen Elemente in Ihrem Beschaffungsdashboard auf mehreren Datasets? Und falls ja: Wie heißen sie, und wie können Sie sie öffnen und bearbeiten? Wird Ihr HR-Dataset überhaupt in einem Bericht oder Dashboard genutzt? Kann es verschoben werden, ohne dass fehlerhafte Links entstehen? Fragen wie diese werden alle im Bereich **Verwandte Inhalte** beantwortet.  Der Bereich enthält nicht nur die verwandten Inhalte, sondern ermöglicht auch, Aktionen auszuführen und komfortabel zwischen den verwandten Inhalten zu navigieren.
@@ -36,7 +38,7 @@ Sehen Sie sich an, wie Will verwandte Inhalte für ein Dashboard anzeigt. Befolg
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M#t=3m05s" frameborder="0" allowfullscreen></iframe>
 
-Wählen Sie bei geöffnetem Dashboard oder Bericht die Auslassungspunkte (...) in der Menüleiste aus, und wählen Sie im Dropdownmenü die Option **Verwandte Inhalte anzeigen** aus.
+Wählen Sie bei geöffnetem Dashboard oder Bericht in der Menüleiste **Weitere Optionen** (...) aus, und wählen Sie im Dropdownmenü die Option **Verwandte Inhalte anzeigen** aus.
 
 ![Auslassungspunkte-Dropdownmenü](./media/end-user-related/power-bi-dropdown.png)
 
@@ -51,9 +53,9 @@ Von hier aus können Sie direkt Aktionen für die verwandten Inhalte ausführen.
 ## <a name="view-related-content-for-a-dataset"></a>Anzeigen verwandter Inhalte für ein Dataset
 Zum Öffnen des Bereichs **Verwandte Inhalte** benötigen Sie mindestens *Anzeigeberechtigungen* für ein Dataset. In diesem Beispiel verwenden wir das [Analysebeispiel für Beschaffung](../sample-procurement.md).
 
-Suchen Sie in der Navigationsleiste die Überschrift **Arbeitsbereiche**, und wählen Sie in der Liste einen Arbeitsbereich aus. Wenn ein Arbeitsbereich Inhalte enthält, werden diese im Zeichenbereich auf der rechten Seite angezeigt. 
+Suchen Sie im Navigationsbereich die Überschrift **Arbeitsbereiche**, und wählen Sie in der Liste einen Arbeitsbereich aus. Wenn ein Arbeitsbereich Inhalte enthält, werden diese im Zeichenbereich auf der rechten Seite angezeigt. 
 
-![Arbeitsbereiche in der linken Navigationsleiste](./media/end-user-related/power-bi-workspace.png)
+![Arbeitsbereiche im Navigationsbereich](./media/end-user-related/power-bi-workspace.png)
 
 
 Wählen Sie in einem Arbeitsbereich die Registerkarte **Datasets** aus, und suchen Sie anschließend das **Verwandte Inhalte anzeigen**-Symbol aus ![Symbol „Verwandte Inhalte anzeigen“](./media/end-user-related/power-bi-view-related-icon-new.png) aus.
@@ -73,5 +75,5 @@ Von hier aus können Sie direkt Aktionen für die verwandten Inhalte ausführen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 * [Erste Schritte mit dem Power BI-Dienst](../service-get-started.md)
-* Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+* Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 

@@ -2,7 +2,6 @@
 title: 'Organisationsinhaltspakete: Zugreifen und Kopieren'
 description: Erfahren Sie, wie Sie In Power BI Kopien von organisationsbezogenen Inhaltspaketen erstellen und wie die Problembehandlung verläuft, wenn beim Zugriff darauf Probleme auftreten.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp, kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 86fa7a7845686fd46e9d58ea138bdddd47a0a097
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 905e461c69a898b41b45e48405c3aaaa6e09cfec
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72019628"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881311"
 ---
 # <a name="organizational-content-packs-copy-refresh-and-get-access"></a>Organisationsinhaltspakete: Kopieren, aktualisieren und abrufen
 
@@ -30,7 +29,7 @@ Das Erstellen von Inhaltspaketen unterscheidet sich vom Freigeben von Dashboards
 ## <a name="create-a-copy-of-an-organizational-content-pack"></a>Erstellen einer Kopie eines organisationsbezogenen Inhaltspakets
 Erstellen Sie eine eigene Kopie des Inhaltspakets, die für andere nicht sichtbar ist.
 
-1. Wählen Sie die Auslassungspunkte (...) neben dem Dashboard des Inhaltspakets aus und dann „Kopie erstellen“.
+1. Wählen Sie **Weitere Optionen** (...) neben dem Dashboard des Inhaltspakets und dann „Kopie erstellen“ aus.
 
     ![](media/service-organizational-content-pack-copy-refresh-access/power-bi-create-copy-organizational-content-pack.png)
 2. Wählen Sie **Speichern**.  
@@ -58,4 +57,4 @@ Weitere Informationen finden Sie unter [Verwalten, Aktualisieren und Löschen vo
 ## <a name="next-steps"></a>Nächste Schritte
 * [Einführung in organisationsbezogene Inhaltspakete](service-organizational-content-pack-introduction.md)
 * [Erstellen einer Gruppe in Power BI](service-create-distribute-apps.md)
-* Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+* Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

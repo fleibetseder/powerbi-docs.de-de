@@ -2,7 +2,6 @@
 title: Berichte im Power BI-Dienst
 description: Berichte im Power BI-Dienst (für Kunden)
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,14 +9,16 @@ ms.topic: conceptual
 ms.date: 09/05/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 21a77d585707b19cd8a3d06ad44471fac45d7178
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 3f6f534b71ba6d8e8798418275c4758a95fc6fb5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70903724"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73851226"
 ---
 # <a name="reports-in-power-bi"></a>Berichte in Power BI
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Ein Power BI-Bericht stellt eine Ansicht eines Datasets aus verschiedenen Perspektiven dar, wobei die aus dem Dataset gewonnenen verschiedenen Ergebnisse und Erkenntnisse als Visuals angezeigt werden.  Ein Bericht kann ein einzelnes Visual, aber auch mehrere mit Visuals gefüllte Seiten enthalten. Abhängig von Ihrem Aufgabengebiet sind Sie möglicherweise jemand, der Berichte *entwirft*. Sie können auch jemand sein, der Berichte *nutzt* oder verwendet. Dieser Artikel richtet sich an *Consumer*.
 
@@ -27,7 +28,7 @@ A. Dieser Bericht umfasst sechs Seiten (bzw. Registerkarten). Sie sehen hier die
 B. Diese Seite enthält fünf verschiedene Visuals und einen Seitentitel.    
 C. Im Bereich *Filter* wird ein Filter angezeigt, der auf alle Berichtseiten angewendet wird. Klicken Sie auf den Pfeil ( **>** ), um den Filterbereich zu reduzieren.    
 D. Das Power BI-Banner zeigt den Namen des Berichts und das Datum der letzten Aktualisierung an. Wählen Sie den Pfeil aus, um ein Menü zu öffnen, in dem auch der Name des Berichtsbesitzers angezeigt wird.    
-E. Die Aktionsleiste enthält Aktionen, die Sie für diesen Bericht ausführen können.  Beispielsweise können Sie einen Kommentar hinzufügen, ein Lesezeichen anzeigen oder Daten aus dem Bericht exportieren.  Wählen Sie die Auslassungspunkte (...) aus, um eine Liste der zusätzlichen Berichtsfunktionen anzuzeigen.    
+E. Die Aktionsleiste enthält Aktionen, die Sie für diesen Bericht ausführen können.  Beispielsweise können Sie einen Kommentar hinzufügen, ein Lesezeichen anzeigen oder Daten aus dem Bericht exportieren.  Wählen Sie **Weitere Optionen** (...) aus, um eine Liste der zusätzlichen Berichtsfunktionen anzuzeigen.    
 
 Wenn Sie noch nicht mit Power BI vertraut sind, können Sie sich mithilfe des Artikels [Basic concepts for the Power BI service consumers (Grundkonzepte für Benutzer des Power BI-Diensts)](end-user-basic-concepts.md) eine gute Grundlage schaffen. Berichte können auf mobilen Geräten angezeigt, freigegeben und kommentiert werden. Weitere Informationen finden Sie unter [Explore reports in the Power BI mobile apps (Untersuchen von Berichten in mobilen Power BI-Apps)](mobile/mobile-reports-in-the-mobile-apps.md).
 

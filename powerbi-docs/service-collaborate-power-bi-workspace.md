@@ -2,7 +2,6 @@
 title: Zusammenarbeiten in einem klassischen Arbeitsbereich
 description: Informieren Sie sich über die Zusammenarbeit an Power BI Desktop-Dateien in Ihrem Arbeitsbereich sowie über die Verwendung von Office 365-Diensten, z. B. über das Freigeben von Dateien in OneDrive for Business, Unterhaltungen in Exchange, im Kalender und in Aufgaben.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 41aaf33602fc8a895d54666736d775ac53d5aaef
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: cddb55ab85cfd6d8d6a5e49d81b83a80df2f81da
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832431"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873169"
 ---
 # <a name="collaborate-in-a-classic-workspace"></a>Zusammenarbeiten in einem klassischen Arbeitsbereich
 Power BI-Arbeitsbereiche stellen einen hervorragenden Ort für die Zusammenarbeit mit Ihren Kollegen an Dashboards, Berichten und Datasets dar, um *Apps* zu erstellen. Dieser Artikel befasst sich mit den ursprünglichen, *klassischen* Arbeitsbereichen.  
@@ -45,7 +44,7 @@ Sobald Sie eine Power BI Desktop-Datei erstellt haben, können Sie diese in eine
 ## <a name="collaborate-in-office-365"></a>Zusammenarbeiten in Office 365
 Ausgangspunkt der Zusammenarbeit in Office 365 ist der klassische Arbeitsbereich in Power BI.
 
-1. Klicken Sie im Power BI-Dienst auf den Pfeil neben **Arbeitsbereiche**, und klicken Sie dann auf die Auslassungspunkte (...) neben dem Namen des Arbeitsbereichs. 
+1. Klicken Sie im Power BI-Dienst auf den Pfeil neben **Arbeitsbereiche**, und klicken Sie dann neben dem Namen des Arbeitsbereichs auf **Weitere Optionen** (...). 
    
    ![Menü „Arbeitsbereiche“](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
 2. Über dieses Menü können Sie auf verschiedene Arten mit Ihrer Gruppe zusammenarbeiten: 
@@ -56,7 +55,7 @@ Ausgangspunkt der Zusammenarbeit in Office 365 ist der klassische Arbeitsbereich
    Beim ersten Aufrufen Ihres Gruppenarbeitsbereichs in Office 365 müssen Sie unter Umständen ein wenig warten. Lassen Sie sich 15 bis 30 Minuten Zeit, und aktualisieren Sie dann Ihren Browser.
 
 ## <a name="have-a-group-conversation-in-office-365"></a>Gruppenunterhaltung in Office 365
-1. Klicken Sie auf die Auslassungspunkte (...) neben dem Namen des Arbeitsbereichs, und wählen Sie dann **Unterhaltungen** aus. 
+1. Klicken Sie neben dem Namen des Arbeitsbereichs auf **Weitere Optionen** (...) \> **Unterhaltungen**. 
    
     ![Registerkarte „Unterhaltungen“](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    
@@ -66,7 +65,7 @@ Ausgangspunkt der Zusammenarbeit in Office 365 ist der klassische Arbeitsbereich
 2. Erfahren Sie mehr über [Gruppenunterhaltungen in Outlook für Office 365](https://support.office.com/Article/Have-a-group-conversation-a0482e24-a769-4e39-a5ba-a7c56e828b22).
 
 ## <a name="schedule-an-event-on-the-group-workspace-calendar"></a>Planen eines Ereignisses im Gruppenarbeitsbereichskalender
-1. Klicken Sie auf die Auslassungspunkte (...) neben dem Arbeitsbereichsnamen, und wählen Sie **Kalender** aus. 
+1. Klicken Sie neben dem Namen des Arbeitsbereichs auf **Weitere Optionen** (...) \> **Kalender**. 
    
    ![Registerkarte „Kalender“](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    
@@ -80,6 +79,6 @@ Wenn Sie Besitzer oder Administrator eines Arbeitsbereichs sind, können Sie auc
 
 ## <a name="next-steps"></a>Nächste Schritte
 * [Veröffentlichen von Apps in Power BI](service-create-distribute-apps.md)
-* Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/).
+* Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/).
 * Feedback? Besuchen Sie [Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi).
 

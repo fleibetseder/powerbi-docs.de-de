@@ -2,7 +2,6 @@
 title: Daten und Datensätze in Power BI Desktop-Visualisierungen genauer betrachten
 description: Verwenden der Power BI Desktop-Funktionen „Daten anzeigen“ und „Datensätze anzeigen“ für Drilldowns
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 6e425f146228d0139b9eec914a44ed5dc732fe98
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 66fe4a9eb109565108cd150369b2260a9d3e1d06
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514766"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877763"
 ---
 # <a name="use-see-data-and-see-records-in-power-bi-desktop"></a>Verwenden von „Daten anzeigen“ und „Datensätze anzeigen“ in Power BI Desktop
 In **Power BI Desktop** können Sie beliebige Visualisierungen genauer betrachten (Drillthrough) und die Textdarstellung der zugrunde liegenden Daten oder einzelner Datensätze der ausgewählten Visuals anzeigen. Diese Features werden auch als *Durchklicken*, *Drillthrough* oder *Drillthrough zu den Details* bezeichnet.
@@ -41,7 +40,7 @@ Mit **Daten anzeigen** können Sie die Textdarstellung der Werte einer ausgewäh
 
 ![„Daten anzeigen“ im Menüband](media/desktop-see-data-see-records/see-data1.png)
 
-Sie können die Daten auch anzeigen, indem Sie mit der rechten Maustaste auf eine Visualisierung klicken und dann im Kontextmenü **Daten anzeigen** aufrufen. Alternativ können Sie auch auf die Auslassungspunkte (...) für **weitere Optionen** in der oberen rechten Ecke der Visualisierung klicken und **Daten anzeigen** auswählen.
+Sie können die Daten auch anzeigen, indem Sie mit der rechten Maustaste auf eine Visualisierung klicken und dann im Kontextmenü **Daten anzeigen** aufrufen. Alternativ können Sie auch auf **Weitere Optionen** (...) in der oberen rechten Ecke der Visualisierung klicken und **Daten anzeigen** auswählen.
 
 ![„Daten anzeigen“ per Klick mit rechter Maustaste](media/desktop-see-data-see-records/see-data2.png)&nbsp;&nbsp;![„Daten anzeigen“ über „Weitere Optionen“](media/desktop-see-data-see-records/see-data3.png)
 

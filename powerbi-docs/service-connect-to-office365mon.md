@@ -2,7 +2,6 @@
 title: Herstellen einer Verbindung mit Office365Mon mithilfe von Power BI
 description: Office365Mon für Power BI
 author: teddybercovitz
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 8/29/2019
 ms.author: tebercov
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 5d31eccd52164bb4d1ff37532d89dc7e147693d3
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 64e8365a6d4e0c01911de9e69998af4d58d59202
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060828"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73854716"
 ---
 # <a name="connect-to-office365mon-with-power-bi"></a>Herstellen einer Verbindung mit Office365Mon mithilfe von Power BI
 Die Analyse von Ausfällen und Integritätsdaten von Office 365 ist mit Power BI und der Office365Mon-Vorlagen-App ein Kinderspiel. Power BI ruft Ihre Daten ab – Stichprobendaten zu Ausfällen und Integrität eingeschlossen –, und erstellt basierend auf diesen Daten ein Dashboard und Berichte.
@@ -26,7 +25,7 @@ Stellen Sie eine Verbindung mit der [Office365Mon-Vorlagen-App](https://app.powe
 >Zum Herstellen der Verbindung und Laden der Power BI-Vorlagen-App ist ein Office365Mon-Administratorkonto erforderlich.
 
 ## <a name="how-to-connect"></a>Herstellen der Verbindung
-1. Wählen Sie unten im linken Navigationsbereich **Daten abrufen** aus.
+1. Wählen Sie unten im Navigationsbereich **Daten abrufen** aus.
    
    ![](media/service-connect-to-office365mon/pbi_getdata.png)
 2. Wählen Sie im Feld **Dienste** die Option **Abrufen**aus.
@@ -42,7 +41,7 @@ Stellen Sie eine Verbindung mit der [Office365Mon-Vorlagen-App](https://app.powe
    ![](media/service-connect-to-office365mon/creds.png)
    
    ![](media/service-connect-to-office365mon/creds2.png)
-5. Nachdem die Daten von Power BI importiert wurden, werden im linken Navigationsbereich ein neues Dashboard, ein Bericht und ein Dataset angezeigt. Neue Elemente sind mit einem gelben Sternchen (\*) markiert. Wählen Sie den Eintrag „Office365Mon“ aus.
+5. Nachdem die Daten von Power BI importiert wurden, werden im Navigationsbereich ein neues Dashboard, ein Bericht und ein Dataset angezeigt. Neue Elemente sind mit einem gelben Sternchen (\*) markiert. Wählen Sie den Eintrag „Office365Mon“ aus.
    
    ![](media/service-connect-to-office365mon/dashboard4.png)
 

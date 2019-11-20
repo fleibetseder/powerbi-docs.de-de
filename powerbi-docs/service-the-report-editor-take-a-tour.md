@@ -2,7 +2,6 @@
 title: Einführung in den Berichts-Editor
 description: In Power BI Desktop und im Power BI-Dienst gestalten Sie im Berichts-Editor die Berichte, die Ihre Endbenutzer sehen. Dieser Vorgang ist in den beiden Umgebungen ähnlich.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: c3a5454032a4138ce3d93c490fa6b3d5a7fecec5
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: 800079f20d0c16964b0e5dd5fbac5919e94317f7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023738"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871357"
 ---
 # <a name="tour-the-report-editor-in-power-bi"></a>Einführung in den Berichts-Editor in Power BI
 
@@ -34,14 +33,14 @@ Im Power BI-Dienst ist der Berichts-Editor nur in der Bearbeitungsansicht verfü
 
 Der Berichts-Editor von Power BI ist in verschiedene Hauptabschnitte unterteilt:  
 
-1. Obere Navigationsleiste
+1. Oberer Navigationsbereich
 1. Zeichenbereich für den Bericht
 1. Bereich „Filter“
 1. Bereich „Visualisierungen“
 1. Bereich „Felder“
 
-## <a name="1-the-top-navigation-bar"></a>1. Die obere Navigationsleiste
-Die in der oberen Navigationsleiste verfügbaren Aktionen sind zahlreich, und es werden kontinuierlich neue Aktionen hinzugefügt. Informationen zu einer bestimmten Aktion finden Sie im Inhaltsverzeichnis der Power BI-Dokumentation, oder verwenden Sie das Suchfeld.
+## <a name="1-the-top-nav-pane"></a>1. Der obere Navigationsbereich
+Die im oberen Navigationsbereich verfügbaren Aktionen sind zahlreich, und es werden kontinuierlich neue Aktionen hinzugefügt. Informationen zu einer bestimmten Aktion finden Sie im Inhaltsverzeichnis der Power BI-Dokumentation, oder verwenden Sie das Suchfeld.
 
 
 ## <a name="2-the-report-canvas"></a>2. Der Zeichenbereich des Berichts
@@ -156,5 +155,5 @@ Weitere Informationen zu Berichten finden im [Power BI-Dienst](service-report-c
 
 [Grundlegende Konzepte für Power BI-Designer](service-basic-concepts.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 

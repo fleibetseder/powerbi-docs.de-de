@@ -2,19 +2,18 @@
 title: Tipps für die Erstellung von Vorlagen-Apps in Power BI
 description: Tipps für die Erstellung von Abfragen, Datenmodellen, Berichten und Dashboards für gute Vorlagen-Apps
 author: teddybercovitz
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/26/2019
 ms.author: tebercov
-ms.openlocfilehash: fae3af81540e22b961fcb1d2a79de425fdc1cd8c
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 04b50882c28bf561e628e9f02dff6c147233d260
+ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71194793"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099751"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tipps für die Erstellung von Vorlagen-Apps in Power BI
 
@@ -132,7 +131,7 @@ Vorlagen-Apps unterstützen Apps, die nur Beispieldaten enthalten; achten Sie da
 * Befolgen Sie die Dokumentation [Power BI-App-Angebot](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
 * Falls ein Dashboard Teil Ihrer App ist, stellen Sie sicher, dass es nicht leer ist.
 * Installieren Sie die App über den App-Link, bevor Sie sie übermitteln, stellen Sie sicher, dass Sie die Verbindung mit dem Dataset herstellen können und die App wie geplant funktioniert.
-* Entladen Sie vor dem Hochladen der BPIX-Datei in den Vorlagen-App-Arbeitsbereich unbedingt alle unnötigen Verbindungen.
+* Entladen Sie vor dem Hochladen der BPIX-Datei in den Vorlagen-Arbeitsbereich unbedingt alle unnötigen Verbindungen.
 * Befolgen Sie [Bewährte Entwurfsmethoden für Berichte und Visualisierungen](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) für Power BI, um den besten Eindruck bei Ihren Benutzern zu machen und die Genehmigung für die Verteilung zu erhalten.
 <!--- * In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.) -->
 
@@ -147,7 +146,7 @@ Vorlagen-Apps unterstützen Apps, die nur Beispieldaten enthalten; achten Sie da
 | Datenquellen | Datenquellen, die für geplante Datenaktualisierungen in der Cloud unterstützt werden, sind zulässig. <br>Nicht unterstützt: <li> DirectQuery</li><li>Liveverbindungen (ausgenommen Azure Analysis Services)</li> <li>Lokale Datenquellen (persönliche Gateways und Enterprise-Gateways werden nicht unterstützt)</li> <li>Echtzeit (Pushdataset wird nicht unterstützt)</li> <li>Zusammengesetzte Modelle</li></ul> |
 | Dataset: arbeitsbereichübergreifend | Arbeitsbereichübergreifende Datasets sind nicht zulässig.  |
 | Abfrageparameter | Nicht unterstützt: Parameter vom Typ „Any“ oder „Binary“ blockieren den Aktualisierungsvorgang für Datasets. |
-| Benutzerdefinierte visuelle Elemente | Es werden nur öffentlich verfügbare benutzerdefinierte Visuals unterstützt. [Benutzerdefinierte Visuals für Organisationen](power-bi-custom-visuals-organization.md) werden nicht unterstützt. |
+| Benutzerdefinierte visuelle Elemente | Es werden nur öffentlich verfügbare benutzerdefinierte Visuals unterstützt. [Benutzerdefinierte Visuals für Organisationen](developer/power-bi-custom-visuals-organization.md) werden nicht unterstützt. |
 
 ## <a name="next-steps"></a>Nächste Schritte
 

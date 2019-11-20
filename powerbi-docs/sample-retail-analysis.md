@@ -2,7 +2,6 @@
 title: 'Analysebeispiel für Einzelhandel für Power BI: Übersicht'
 description: 'Analysebeispiel für Einzelhandel für Power BI: Übersicht'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: b3adcf3ba97e83875187a11116fdb7b642e5560b
-ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.openlocfilehash: 42e3a95e344e17d1ceba11911fc8aa349ebafd0c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68962239"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858568"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Analysebeispiel für Einzelhandel für Power BI: Übersicht
 
@@ -54,11 +53,11 @@ Sie benötigen keine Power BI-Lizenz, um die Beispiele in Power BI Desktop kenne
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Abrufen der PBIX-Datei für dieses Beispiel
 
-Alternativ können Sie das Analysebeispiel für den Einzelhandel als [PBIX-Datei](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) herunterladen, ein für Power BI Desktop entworfenes Dateiformat. 
+Alternativ können Sie das Analysebeispiel für den Einzelhandel als [PBIX-Datei](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) herunterladen, ein für Power BI Desktop entworfenes Dateiformat. 
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Abrufen der Excel-Arbeitsmappe für dieses Beispiel
 
-Wenn Sie sich die Datenquelle für dieses Beispiel ansehen möchten, dieses steht auch als [Excel-Arbeitsmappe](http://go.microsoft.com/fwlink/?LinkId=529778) zur Verfügung. Die Arbeitsmappe enthält Power View-Blätter, die Sie anzeigen und ändern können. Aktivieren Sie die Add-Ins für die Datenanalyse, um die Rohdaten anzuzeigen, und klicken Sie dann auf **Power Pivot > Verwalten**. Weitere Informationen zum Aktivieren der Add-Ins für Power View und Power Pivot finden Sie unter [Anzeigen der Excel-Beispiele in Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Wenn Sie sich die Datenquelle für dieses Beispiel ansehen möchten, dieses steht auch als [Excel-Arbeitsmappe](https://go.microsoft.com/fwlink/?LinkId=529778) zur Verfügung. Die Arbeitsmappe enthält Power View-Blätter, die Sie anzeigen und ändern können. Aktivieren Sie die Add-Ins für die Datenanalyse, um die Rohdaten anzuzeigen, und klicken Sie dann auf **Power Pivot > Verwalten**. Weitere Informationen zum Aktivieren der Add-Ins für Power View und Power Pivot finden Sie unter [Anzeigen der Excel-Beispiele in Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="start-on-the-dashboard-and-open-the-report"></a>Starten auf dem Dashboard und Öffnen des Berichts
 
@@ -78,7 +77,7 @@ Wenn Sie sich die Datenquelle für dieses Beispiel ansehen möchten, dieses steh
 
    Der Bezirk **FD-01** hat den höchsten durchschnittlichen **Umsatz pro Quadratmeter**, und FD-02 hat die geringste **Gesamtumsatzabweichung** im Vergleich zum Vorjahr. FD-03 und FD-04 schneiden insgesamt am schlechtesten ab.
 4. Wählen Sie einige der einzelnen Blasen oder andere Diagramme, um die übergreifende Hervorhebung den Einfluss Ihrer Auswahl sichtbar machen zu lassen.
-5. Um zum Dashboard zurückzukehren, wählen Sie in der oberen Navigationsleiste **Analysebeispiel für Einzelhandel** aus.
+5. Um zum Dashboard zurückzukehren, wählen Sie im oberen Navigationsbereich **Analysebeispiel für Einzelhandel** aus.
 
    ![Navigationsleiste](media/sample-retail-analysis/power-bi-breadcrumbs.png)
 6. Wählen Sie auf dem Dashboard die Kachel **This Year's Sales New & Existing Stores** (Umsätze dieses Jahres in neuen und vorhandenen Filialen) aus, was gleichbedeutend mit der Eingabe *Umsätze dieses Jahr* im Q&A-Fragefeld ist.

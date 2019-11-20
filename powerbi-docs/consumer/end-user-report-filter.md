@@ -2,23 +2,24 @@
 title: Überblick über den Berichtsbereich „Filter“
 description: Hinzufügen eines Filters zu einem Bericht im Power BI-Dienst für Nutzer
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/04/2019
+ms.date: 10/22/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: a1dee67279e6f43c0ff8008338f7b8a9f5a2d41a
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: af784c772ddbdd895f7e6c576d91d4e2fec8ffeb
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70841202"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862043"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Überblick über den Berichtsbereich „Filter“
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Dieser Artikel befasst sich mit dem Berichtsbereich **Filter** im Power BI-Dienst. Sie können Filter verwenden, um neue Erkenntnisse zu Ihren Daten zu gewinnen.
 
@@ -34,11 +35,14 @@ Wenn ein Kollege einen Bericht mit Ihnen teilt, suchen Sie immer nach dem Bereic
 
 Der Bereich **Filter** enthält Filter, die der *Berichts-Designer* zum Bericht hinzugefügt hat. *Berichtsnutzer* wie Sie können mit den vorhandenen Filtern interagieren und ihre Änderungen speichern, aber keine neuen Filter zum Bericht hinzufügen. Auf dem obigen Screenshot hat der Designer beispielsweise drei Filter auf Seitenebene hinzugefügt: **Segment is All** (Segment ist alle), **Year is 2014** (Jahr ist 2014) und **Region is Central** (Region ist zentral). Sie können mit diesen Filtern interagieren und sie ändern, jedoch keinen vierten Filter auf Seitenebene hinzufügen.
 
-Berichte behalten alle Änderungen bei, die Sie im Bereich **Filter** vornehmen. Der Dienst überträgt diese Änderungen auch in die mobile Version des Berichts.
+Berichte behalten alle Änderungen bei, die Sie im Bereich **Filter** vornehmen. Der Dienst überträgt diese Änderungen auch in die mobile Version des Berichts. 
 
 Klicken Sie in der oberen Menüleiste auf **Auf Standardwert zurücksetzen**, um den Bereich **Filter** auf den Standard zurückzusetzen.
 
 ![Screenshot des Symbols „Auf Standardwert zurücksetzen“.](media/end-user-report-filter/power-bi-reset-icon.png) 
+
+> [!NOTE]
+> Wenn die Option **Auf Standardwert zurücksetzen** nicht angezeigt wird, wurde sie möglicherweise vom *Berichts-Designer* deaktiviert. Der *Designer* kann außerdem bestimmte Filter sperren, sodass Sie sie nicht ändern können.
 
 ## <a name="view-all-the-filters-for-a-report-page"></a>Anzeigen aller Filter einer Berichtsseite
 

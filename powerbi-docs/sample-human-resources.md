@@ -2,7 +2,6 @@
 title: 'Beispiel für das Personalwesen: Übersicht'
 description: 'Beispiel für Personalwesen für Power BI: Übersicht'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: d5670a8077b4de03f6eb866f6177f17cdec7d7f7
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: 3f0c95673bd6a9a5af2a828869f38d32440b617a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68462346"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858863"
 ---
 # <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Beispiel für Personalwesen für Power BI: Übersicht
 
@@ -58,11 +57,11 @@ Bevor Sie das Beispiel verwenden können, müssen Sie es zunächst als [Inhaltsp
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Abrufen der PBIX-Datei für dieses Beispiel
 
-Alternativ können Sie das Beispiel für das Personalwesen als [PBIX-Datei](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix) herunterladen, ein für Power BI Desktop entworfenes Dateiformat.
+Alternativ können Sie das Beispiel für das Personalwesen als [PBIX-Datei](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix) herunterladen, ein für Power BI Desktop entworfenes Dateiformat.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Abrufen der Excel-Arbeitsmappe für dieses Beispiel
 
-Wenn Sie sich die Datenquelle für dieses Beispiel ansehen möchten, dieses steht auch als [Excel-Arbeitsmappe](http://go.microsoft.com/fwlink/?LinkId=529780) zur Verfügung. Die Arbeitsmappe enthält Power View-Blätter, die Sie anzeigen und ändern können. Aktivieren Sie die Add-Ins für die Datenanalyse, um die Rohdaten anzuzeigen, und klicken Sie dann auf **Power Pivot > Verwalten**. Weitere Informationen zum Aktivieren der Add-Ins für Power View und Power Pivot finden Sie unter [Anzeigen der Excel-Beispiele in Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Wenn Sie sich die Datenquelle für dieses Beispiel ansehen möchten, dieses steht auch als [Excel-Arbeitsmappe](https://go.microsoft.com/fwlink/?LinkId=529780) zur Verfügung. Die Arbeitsmappe enthält Power View-Blätter, die Sie anzeigen und ändern können. Aktivieren Sie die Add-Ins für die Datenanalyse, um die Rohdaten anzuzeigen, und klicken Sie dann auf **Power Pivot > Verwalten**. Weitere Informationen zum Aktivieren der Add-Ins für Power View und Power Pivot finden Sie unter [Anzeigen der Excel-Beispiele in Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="new-hires"></a>Neue Mitarbeiter
 Betrachten wir zunächst die Neueinstellungen.
@@ -87,7 +86,7 @@ Betrachten wir zunächst die Neueinstellungen.
 
 4. Wählen Sie in den Diagrammen die verschiedenen Altersgruppen und Geschlechter aus, um die Beziehungen zwischen Alter, Geschlecht, Region und ethnischer Gruppe zu untersuchen.
 
-5. Wählen Sie in der oberen Navigationsleiste **Beispiel für das Personalwesen** aus, um zum Dashboard zurückzukehren.
+5. Wählen Sie im oberen Navigationsbereich **Beispiel für das Personalwesen** aus, um zum Dashboard zurückzukehren.
 
    ![Rückkehr zum Dashboard](media/sample-human-resources/power-bi-breadcrumbs.png)
 
@@ -133,7 +132,7 @@ Wir sehen uns den Bericht in der Bearbeitungsansicht an. Sie können die Kreisdi
 
 8. Sie können die gleichen Schritte auch für das Kreisdiagramm **Anzahl der aktiven Mitarbeiter nach Geschlecht** ausführen und es von aktiven Mitarbeitern in Trennungen ändern. Sehen Sie sich die Daten zum freiwilligen Ausscheiden nach Geschlecht an, um nach weiteren Erkenntnissen zu suchen.
 
-9. Wählen Sie in der oberen Navigationsleiste **Beispiel für das Personalwesen** aus, um zum Dashboard zurückzukehren. Wenn Sie möchten, können Sie die Änderungen speichern, die Sie am Bericht vorgenommen haben.
+9. Wählen Sie im oberen Navigationsbereich **Beispiel für das Personalwesen** aus, um zum Dashboard zurückzukehren. Wenn Sie möchten, können Sie die Änderungen speichern, die Sie am Bericht vorgenommen haben.
 
 ## <a name="bad-hires"></a>Fehleinstellungen
 Als Letztes untersuchen wir den Bereich der Fehleinstellungen. Bei Fehleinstellungen geht es um Mitarbeiter, die weniger als 60 Tage im Unternehmen tätig waren. Wir stellen schnell ein, aber stellen wir gute Kandidaten ein?
@@ -147,7 +146,7 @@ Als Letztes untersuchen wir den Bereich der Fehleinstellungen. Bei Fehleinstellu
 
 3. Wenn Sie sich das Ringdiagramm **Anzahl der Fehleinstellungen nach Geschlecht** ansehen und verschiedene Regionen im Datenschnitt **Region** auswählen, werden Sie feststellen, dass die Region „Osten“ die einzige Region mit mehr weiblichen als männlichen Fehleinstellungen ist.  
 
-4. Wählen Sie den Namen des Dashboards aus der oberen Navigationsleiste aus, um zum Dashboard zurückzukehren.
+4. Wählen Sie den Namen des Dashboards aus dem oberen Navigationsbereich aus, um zum Dashboard zurückzukehren.
 
 ## <a name="ask-a-question-in-the-dashboard-qa-box"></a>Stellen einer Frage im Q&A-Feld des Dashboards
 Im Dashboard können Sie im [Q&A-Fragenfeld](power-bi-tutorial-q-and-a.md) eine Frage zu Ihren Daten in natürlicher Sprache stellen. Q&A erkennt die eingegebenen Wörter und schließt, wo in Ihrem Dataset eine Antwort zu finden ist.

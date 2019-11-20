@@ -2,19 +2,18 @@
 title: Erstellen eines Links zu einer bestimmten Stelle in den mobilen Power BI-Apps
 description: Erfahren Sie, wie Sie mit einem URI (Uniform Resource Identifier) einen Deep-Link zu einem bestimmten Dashboard, einer bestimmten Kachel oder einem bestimmten Bericht in der mobilen Power BI-App erstellen.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/24/2019
 ms.author: mshenhav
-ms.openlocfilehash: 4e09b10e38b018f8e5572343b343a243ace3bf81
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 427019d831aa02723f17efd3de78081c368717c2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "64906531"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879290"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>Erstellen eines Links zu einer bestimmten Stelle in den mobilen Power BI-Apps
 Mithilfe von Links können Sie direkt auf bestimmte Elemente in Power BI zugreifen. Dabei kann es sich um Berichte, Dashboards oder Kacheln handeln.
@@ -69,7 +68,7 @@ Die Abfrageparameter **QUERY PARAMS** lauten:
 
 #### <a name="links-of-apps-and-items-in-app"></a>Links von Apps und Elementen innerhalb einer App
 
-Bei **Apps, Berichten und Dashboards, die Teil einer App sind**, können Sie den Link am einfachsten über den Arbeitsbereich der App und die Option „App aktualisieren“ abrufen. Es wird die Oberfläche „App veröffentlichen“ geöffnet. Wechseln Sie zur Registerkarte „Zugriff“, auf der der Abschnitt **Links** angezeigt wird. Erweitern Sie diesen Abschnitt. Dort wird eine Liste der App und der Links zu allen Inhalten angezeigt, über die Sie direkt auf die Links zugreifen können.
+Bei **Apps, Berichten und Dashboards, die Teil einer App sind**, können Sie den Link am einfachsten über den Arbeitsbereich und die Option „App aktualisieren“ abrufen. Es wird die Oberfläche „App veröffentlichen“ geöffnet. Wechseln Sie zur Registerkarte „Zugriff“, auf der der Abschnitt **Links** angezeigt wird. Erweitern Sie diesen Abschnitt. Dort wird eine Liste der App und der Links zu allen Inhalten angezeigt, über die Sie direkt auf die Links zugreifen können.
 
 ![Links unter „App veröffentlichen“ in Power BI ](./media/mobile-apps-links/mobile-link-copy-app-links.png)
 
@@ -117,6 +116,6 @@ Ihr Feedback hilft uns zu entscheiden, welche Features wir künftig realisieren.
 
 * [Power BI-Apps für mobile Geräte](mobile-apps-for-mobile-devices.md)
 * Folgen Sie @MSPowerBI auf Twitter
-* Werden Sie Teil der [Power BI-Community](http://community.powerbi.com/), um sich mit den Mitgliedern auszutauschen
-* [Was ist Power BI?](../../power-bi-overview.md)
+* Werden Sie Teil der [Power BI-Community](https://community.powerbi.com/), um sich mit den Mitgliedern auszutauschen
+* [Was ist Power BI?](../../fundamentals/power-bi-overview.md)
 

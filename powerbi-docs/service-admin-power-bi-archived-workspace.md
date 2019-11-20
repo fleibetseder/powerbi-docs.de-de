@@ -2,7 +2,6 @@
 title: Archivierter Arbeitsbereich in Power BI
 description: Archivierter Arbeitsbereich in Power BI nach dem Verwalten Ihres Office 365-Mandanten
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 891ffffd885e2b5d59cba64e6e99ce7fe3cf811b
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: 66bf203cad577df0c985fbd73bcab3c6d79f6a95
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175489"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873568"
 ---
 # <a name="power-bi-archived-workspace"></a>Archivierter Arbeitsbereich in Power BI
 
@@ -24,7 +23,7 @@ ms.locfileid: "71175489"
 
 Jeder Benutzer kann sich bei Power BI anmelden und innerhalb weniger Minuten mit der Verwendung des Diensts beginnen.  Möglicherweise beschließt die IT-Abteilung Ihrer Organisation zu einem späteren Zeitpunkt, die Verwaltung von Power BI für die Benutzer in Ihrer Organisation zu übernehmen.  In diesem Fall profitieren Sie von der zentralen Verwaltung der Benutzer und Berechtigungen in Ihrer Organisation. Möglicherweise können Sie sich auch mit dem gleichen Benutzernamen und Kennwort bei Power BI anmelden, den/das Sie für andere Dienste in Ihrer Organisation verwenden.
 
-Alle Inhalte, die Sie erstellt haben, bevor Ihre IT-Abteilung die Verwaltung von Power BI übernommen hat, werden in einen archivierten Arbeitsbereich in Power BI platziert, der über den linken Navigationsbereich von [Power BI](https://app.powerbi.com) zugänglich ist. Sie sollten neue Power BI-Inhalte in Ihrem Arbeitsbereich erstellen, der von der IT-Abteilung Ihrer Organisation verwaltet und gesichert wird.  Der archivierte Arbeitsbereich bleibt bestehen, aber es gibt Einschränkungen für Aktionen, die Sie mit den Inhalten in Ihrem archivierten Arbeitsbereich ausführen können.  Um diese Einschränkungen aufzuheben, müssen Sie durch die IT-Abteilung den Inhalt in Ihrem archivierten Arbeitsbereich zu Ihrem Arbeitsbereich migrieren lassen.
+Alle Inhalte, die Sie erstellt haben, bevor Ihre IT-Abteilung die Verwaltung von Power BI übernommen hat, werden in einen archivierten Arbeitsbereich in Power BI platziert, der über den Navigationsbereich von [Power BI](https://app.powerbi.com) zugänglich ist. Sie sollten neue Power BI-Inhalte in Ihrem Arbeitsbereich erstellen, der von der IT-Abteilung Ihrer Organisation verwaltet und gesichert wird.  Der archivierte Arbeitsbereich bleibt bestehen, aber es gibt Einschränkungen für Aktionen, die Sie mit den Inhalten in Ihrem archivierten Arbeitsbereich ausführen können.  Um diese Einschränkungen aufzuheben, müssen Sie durch die IT-Abteilung den Inhalt in Ihrem archivierten Arbeitsbereich zu Ihrem Arbeitsbereich migrieren lassen.
 
 ## <a name="restrictions-in-your-archived-workspace"></a>Einschränkungen im archivierten Arbeitsbereich
 
@@ -50,5 +49,5 @@ Um Power BI weiterhin zu nutzen, sollten Sie neue Inhalte in Ihrem Arbeitsbereic
 
 * **Dashboards**: Dashboards, die als im Rahmen von Inhaltspaketen installiert wurden, werden automatisch neu erstellt, wenn Sie erneut eine Verbindung zum Inhaltspaket in Ihrem Arbeitsbereich herstellen. Wenn Sie Ihre eigenen Dashboards über den Power BI-Dienst erstellt haben, erstellen Sie diese Dashboards in Ihrem Arbeitsbereich neu.
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
 

@@ -2,21 +2,20 @@
 title: Anzeigen von Nachrichten in der Mitteilungszentrale
 description: Die Mitteilungszentrale ist ein fortlaufender Feed von Informationen zu Ihrer Nutzung von Power BI.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: bZMSv5KAlcE
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/24/2019
+ms.date: 10/31/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e0ec01eb4d4ee8134a165d438f29baa4aee22841
-ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
+ms.openlocfilehash: c4feda0e502a9363900901ebe76005219587167b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72716932"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73863036"
 ---
 # <a name="view-power-bi-notifications"></a>Anzeigen von Power BI-Benachrichtigungen
 
@@ -31,7 +30,7 @@ Sehen Sie sich an, wie Amanda Benachrichtigungen überprüft, verwaltet und bean
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bZMSv5KAlcE" frameborder="0" allowfullscreen></iframe>
 
-
+## <a name="view-your-notifications"></a>Anzeigen Ihrer Benachrichtigungen
 1. Wenn Sie sich bei Power BI anmelden, werden dem Feed alle neuen Benachrichtigungen hinzugefügt, die an Sie gesendet wurden, während Sie offline waren. Wenn neue Benachrichtigungen für Sie vorhanden sind, wird eine gelbe Blase mit der Anzahl neuer Elemente in Power BI angezeigt.
    
    ![Neues Benachrichtigungssymbol](./media/end-user-notification-center/power-bi-new-notification.png)
@@ -43,9 +42,9 @@ Sehen Sie sich an, wie Amanda Benachrichtigungen überprüft, verwaltet und bean
    ![Mitteilungszentrale](./media/end-user-notification-center/power-bi-notification-center.png)
 4. Um eine Benachrichtigung zu schließen, klicken Sie auf das Symbol „X“.
 
-### <a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a>Nächste Schritte
 * [Datenwarnungen im Power BI-Dienst](end-user-alerts.md)
 * [Festlegen von Datenwarnungen in der iPhone-App (Power BI für iOS)](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Festlegen von Datenwarnungen in der mobilen Power BI-App für Windows 10](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
-* Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+* Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 

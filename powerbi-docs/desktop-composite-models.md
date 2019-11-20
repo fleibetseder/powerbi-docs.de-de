@@ -2,7 +2,6 @@
 title: Verwenden zusammengesetzter Modelle in Power BI Desktop
 description: Erstellen von Datenmodellen mit mehreren Datenverbindungen und m:n-Beziehungen in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ae896fb737eda6f95efa1589f2b3384e7426cf30
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: c79994f2144dfe019c3ac10a51230d17b75b542e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654576"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876574"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Verwenden zusammengesetzter Modelle in Power BI Desktop
 
@@ -53,7 +52,7 @@ Wenn Sie z.B. zusammengesetzte Modelle verwenden, können Sie ein Modell erstell
 Ein Modell, bei dem Daten aus mehr als einer DirectQuery-Quelle kombiniert werden oder bei dem DirectQuery mit importierten Daten kombiniert wird, wird als *zusammengesetztes Modell* bezeichnet.
 
 
-Sie können wie gewohnt Beziehungen zwischen Tabellen erstellen, auch wenn diese Tabellen von verschiedenen Quellen stammen. Hierbei gilt jedoch eine Einschränkung: Beziehungen, die sich über mehrere Quellen erstrecken, müssen so definiert werden, dass sie die Kardinalität *m:n* aufweisen, unabhängig von der tatsächlichen Kardinalität. Das Verhalten solcher Beziehungen entspricht dann dem normalen Verhalten für *m:n*-Beziehungen, wie unter [m:n-Beziehungen in Power BI Desktop (Vorschauversion)](desktop-many-to-many-relationships.md) beschrieben wird. 
+Sie können wie gewohnt Beziehungen zwischen Tabellen herstellen, auch wenn diese Tabellen aus verschiedenen Quellen stammen. Alle Beziehungen, die quellübergreifend sind, werden mit einer Kardinalität von *m:n* erstellt, unabhängig von ihrer tatsächlichen Kardinalität. Sie können sie in 1:n, n:1 oder m:n ändern. Gleich, welche Kardinalität Sie wählen, quellübergreifende Beziehungen weisen insofern ein abweichendes Verhalten auf, als Sie keine DAX-Funktionen zum Abrufen von Werten aus der n-Seite auf der 1-Seite verwenden können. Ferner stellen Sie möglicherweise eine beeinträchtigte Leistung im Vergleich mit m:n-Beziehungen innerhalb der gleichen Quelle fest.
 
 > [!NOTE]
 > Im Kontext von zusammengesetzten Modellen stellen alle importierten Tabellen im Grunde eine einzelne Quelle dar, unabhängig von der tatsächlichen zugrunde liegenden Datenquelle, aus der sie importiert wurden.   
@@ -88,7 +87,7 @@ Auch in Power BI Desktop finden Sie unter **Beziehungsansicht** nun eine weitere
 
 ![Beziehungsansicht der Tabellen](media/desktop-composite-models/composite-models_08.png)
 
-Nun müssen wir diese Tabellen mit den anderen Tabellen im Modell verknüpfen. Wir erstellen wie immer eine Beziehung zwischen der **Bike**-Tabelle von SQL Server und der importierten **ProductManagers**-Tabelle. Das heißt, die Beziehung wird zwischen *Bike[ProductName]* und *ProductManagers[ProductName]* aufgebaut. Wie zuvor erwähnt, müssen alle Beziehungen, die quellübergreifend sind, die Standardkardinalität *m:n* besitzen. 
+Nun müssen wir diese Tabellen mit den anderen Tabellen im Modell verknüpfen. Wir erstellen wie immer eine Beziehung zwischen der **Bike**-Tabelle von SQL Server und der importierten **ProductManagers**-Tabelle. Das heißt, die Beziehung wird zwischen *Bike[ProductName]* und *ProductManagers[ProductName]* aufgebaut. Wie zuvor erwähnt, weisen alle Beziehungen, die quellübergreifend sind, die Standardkardinalität *m:n* auf. 
 
 ![Das Fenster „Beziehung erstellen“](media/desktop-composite-models/composite-models_09.png)
 

@@ -2,19 +2,18 @@
 title: Erste Schritte mit der mobilen Power BI-App auf Android-Geräten
 description: Erfahren Sie, wie Sie Power BI mit der Microsoft Power BI-App für Android mobil nutzen können und Zugriff auf Unternehmensdaten auf lokalen Servern und in der Cloud erhalten.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: 5734c62485340417b6327f07df4abd7af3f2f185
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 9a0d15c73ed19990a44ff888b73d9c569d0dfc5f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060293"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876776"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Erste Schritte mit der mobilen Power BI-App auf Android-Geräten
 Die Android-App für Microsoft Power BI bietet Ihnen die mobile BI-Umgebung für Power BI, Power BI-Berichtsserver und Reporting Services. Mit dem touchfähigen, mobilen Livezugriff auf lokale Server und die Cloud können Sie Ihre Unternehmensdashboards überall anzeigen und mit ihnen interagieren. Untersuchen Sie die Daten in Dashboards, und geben Sie diese dann über eine E-Mail oder SMS für Kollegen frei. 
@@ -34,7 +33,7 @@ Machen Sie sich [mit den Neuerungen bei den Power BI-Mobile Apps](../../mobile-w
 
 ### <a name="get-the-app"></a>Abrufen der App
 
-[Laden Sie die Power BI für Android-App von Google Play herunter](http://go.microsoft.com/fwlink/?LinkID=544867).
+[Laden Sie die Power BI für Android-App von Google Play herunter](https://go.microsoft.com/fwlink/?LinkID=544867).
   
 Power BI kann auf verschiedenen Android-Geräten mit dem Betriebssystem Android 5.0 oder höher ausgeführt werden. Um Ihr Gerät zu überprüfen, wechseln Sie zu **Einstellungen** > **Geräteinformationen** > **Android-Version**. 
 
@@ -44,9 +43,9 @@ Auch ohne Registrierung oder Anmeldung können Sie nach dem Öffnen der App die 
 Machen Sie sich [mit den Neuerungen bei den Power BI-Mobile Apps](../../mobile-whats-new-in-the-mobile-apps.md) vertraut.
 
 ## <a name="sign-up-for-the-power-bi-service-on-the-web"></a>Registrieren beim Power BI-Dienst im Web
-Wenn Sie sich noch nicht registriert haben, wechseln Sie zum [Power BI-Dienst (http://powerbi.com/)](http://powerbi.com/), um sich für ein Konto zum Erstellen und Speichern von Dashboards und Berichten und zum Zusammenführen Ihrer Daten zu registrieren. Melden Sie sich dann auf Ihrem Android-Gerät bei Power BI an, um die eigenen Dashboards von überall aus anzeigen zu können.
+Wenn Sie sich noch nicht registriert haben, wechseln Sie zum [Power BI-Dienst (https://powerbi.com/)](https://powerbi.com/), um sich für ein Konto zum Erstellen und Speichern von Dashboards und Berichten und zum Zusammenführen Ihrer Daten zu registrieren. Melden Sie sich dann auf Ihrem Android-Gerät bei Power BI an, um die eigenen Dashboards von überall aus anzeigen zu können.
 
-1. Tippen Sie im Power BI-Dienst auf [Registrieren](http://go.microsoft.com/fwlink/?LinkID=513879), um ein Power BI-Konto zu erstellen.
+1. Tippen Sie im Power BI-Dienst auf [Registrieren](https://go.microsoft.com/fwlink/?LinkID=513879), um ein Power BI-Konto zu erstellen.
 2. Beginnen Sie mit dem [Erstellen eigener Dashboards und Berichte](../../service-get-started.md).
 
 ## <a name="get-started-with-the-power-bi-app-on-your-device"></a>Erste Schritte mit der Power BI-App auf Ihrem Gerät
@@ -88,14 +87,14 @@ Sie können die Power BI-Dashboard-Beispiele anzeigen und mit ihnen interagieren
 ## <a name="find-your-content-in-the-power-bi-mobile-apps"></a>Suchen von Inhalten in Dashboards in mobilen Power BI-Apps
 Ihre Dashboards und Berichte sind an unterschiedlichen Stellen in den mobilen Power BI-Apps gespeichert, abhängig davon, woher sie stammen. [Weitere Informationen zum Suchen von Inhalten in den mobilen Apps](../../mobile-apps-quickstart-view-dashboard-report.md). Außerdem können Sie jederzeit nach allen Inhalten in den mobilen Power BI-Apps suchen. 
 
-![Linker Navigationsbereich](./media/mobile-android-app-get-started/power-bi-mobile-new-nav-no-numbers.png)
+![Navigationsbereich](./media/mobile-android-app-get-started/power-bi-mobile-new-nav-no-numbers.png)
 
 ## <a name="view-your-favorite-dashboards-kpis-and-reports"></a>Anzeigen Ihrer als Favoriten gespeicherten Dashboards, KPIs und Berichte
 Auf der Seite „Favoriten“ in den mobilen Apps werden alle als Favoriten gespeicherten Power BI-Dashboards zusammen mit Power BI-Berichtsserver- und Reporting Services-KPIs und -Berichten angezeigt. Wenn Sie ein Dashboard als *Favoriten* in den mobilen Power BI-Apps speichern, können Sie auf allen Ihren Geräten darauf zugreifen, auch über den Power BI-Dienst in Ihrem Browser. 
 
 * Tippen Sie auf **Favoriten**.
   
-   ![Favoriten im linken Navigationsbereich](./media/mobile-android-app-get-started/power-bi-android-favorite-left-nav.png)
+   ![Favoriten im Navigationsbereich](./media/mobile-android-app-get-started/power-bi-android-favorite-left-nav.png)
   
    Auf dieser Seite befinden sich Ihre Power BI-Favoriten und Ihre Favoriten aus dem Webportal von Power BI-Berichtsserver und Reporting Services.
   
@@ -135,8 +134,8 @@ Hier finden Sie weitere Möglichkeiten, die die Android-Geräte-App für Power B
 * Erstellen Sie [Berichte in Power BI Desktop, und veröffentlichen Sie sie im Webportal von Power BI-Berichtsserver](../../report-server/quickstart-create-powerbi-report.md).
 
 ### <a name="see-also"></a>Siehe auch
-* [Herunterladen der Android-App](http://go.microsoft.com/fwlink/?LinkID=544867) aus dem Android App Store.
+* [Herunterladen der Android-App](https://go.microsoft.com/fwlink/?LinkID=544867) aus dem Android App Store.
 * [Was ist Power BI?](../../fundamentals/power-bi-overview.md)
-* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
 
 

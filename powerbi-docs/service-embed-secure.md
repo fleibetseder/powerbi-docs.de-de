@@ -3,19 +3,18 @@ title: Einbetten eines Berichts in ein sicheres Portal oder eine sichere Website
 description: Mit dem Power BI-Feature zum Einbetten können Benutzer Berichte mühelos in interne Webportale sicher einbetten.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/20/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3c6dc26ee1cf806ff85a9452c024e7ccbd210a25
-ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.openlocfilehash: 59841cdcfae3bc08e0b6dcacf4bcb6664dfe209c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68867110"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877077"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Einbetten eines Berichts in ein sicheres Portal oder eine sichere Website
 
@@ -49,7 +48,7 @@ Die Option **Einbetten** unterstützt [URL-Filter](service-url-filters.md) und U
 
 Wenn Sie die Option **Einbetten** verwenden, erhalten Benutzer nicht automatisch die Berechtigung zum Anzeigen des Berichts. Die Leseberechtigungen werden im Power BI-Dienst festgelegt.
 
-Im Power BI-Dienst können Sie eingebettete Berichte für Benutzer freigeben, die Zugriff benötigen. Wenn Sie eine Office 365-Gruppe verwenden, können Sie Benutzer als Mitglieder des App-Arbeitsbereichs aufführen. Weitere Informationen dazu finden Sie unter [Verwalten Ihres App-Arbeitsbereichs in Power BI und Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
+Im Power BI-Dienst können Sie eingebettete Berichte für Benutzer freigeben, die Zugriff benötigen. Wenn Sie eine Office 365-Gruppe verwenden, können Sie Benutzer als Mitglieder des Arbeitsbereichs aufführen. Weitere Informationen dazu finden Sie unter [Verwalten Ihres Arbeitsbereichs in Power BI und Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## <a name="licensing"></a>Lizenzierung
 

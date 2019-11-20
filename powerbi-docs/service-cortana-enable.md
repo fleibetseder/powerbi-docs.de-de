@@ -2,25 +2,24 @@
 title: Aktivieren von Cortana für Power BI
 description: Verwenden Sie Cortana mit Power BI, um Antworten zu Ihren Daten zu erhalten. Aktivieren Sie Cortana für jedes Power BI-Dataset, und aktivieren Sie anschließend den Cortana-Zugriff auf Ihre Datasets von Windows-Geräten.
 author: maggiesMSFT
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 584dacbb3823f1a7c2475c780124985992a4b1d4
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: a631bc37c193521b2acc367a0c6d8540419e3b79
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375151"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872907"
 ---
 # <a name="enable-cortana-to-access-power-bi-reports-and-their-underlying-datasets"></a>Aktivieren von Cortana für den Zugriff auf Power BI-Berichte (und deren zugrunde liegende Datasets)
 Sie haben die [Einführung in Cortana für Power BI](service-cortana-intro.md) gelesen (falls nicht, sollten Sie diese lesen und dann hierher zurückkehren). Und jetzt möchten Sie es selbst auszuprobieren.  Bevor Sie in Cortana Fragen in natürlicher Sprache stellen und Antworten anhand der in Power BI-***Berichten*** gespeicherten Daten erhalten können, müssen einige Anforderungen erfüllt sein. Insbesondere müssen Sie folgende Aktionen ausführen.
 
 > [!IMPORTANT]
-> Cortana-Integration ist in Power BI veraltet. Gestartet am 11. Juni, funktioniert Cortana nicht mehr für alle Dashboards und Berichte.
+> Die Cortana-Integration in Power BI wird eingestellt. Ab dem 11. Juni funktioniert Cortana nicht mehr für Dashboards und Berichte.
 
 Im Power BI-Dienst
 
@@ -42,7 +41,7 @@ Sie müssen sich für jedes Dataset, auf das Contana Zugriff haben soll, beim Po
 2. Das diesem Bericht zugeordnete Dataset heißt **Contoso Vertrieb**.
    
     ![Dataset „Contoso Vertrieb“](media/service-cortana-enable/power-bi-identify-dataset.png)
-3. Wählen Sie die **Auslassungspunkte (...) > Einstellungen** rechts neben dem Datasetnamen aus.  
+3. Wählen Sie rechts neben dem Datasetnamen **Weitere Optionen** (...) > Einstellungen** aus.  
    
     ![„Einstellungen“ auswählen](media/service-cortana-enable/power-bi-settings-cortana.png)
 4. Wählen Sie **Q&A und Cortana** > **Cortana den Zugriff auf dieses Dataset erlauben** > **Anwenden** aus.
@@ -84,5 +83,5 @@ Cortana verwendet dieses Geschäfts- oder Schulkonto, um in Power BI nach mögli
 
 [Behandeln von Problemen bei Cortana für Power BI](service-cortana-troubleshoot.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 

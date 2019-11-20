@@ -2,7 +2,6 @@
 title: 'Tutorial: Herstellen einer Verbindung mit einem GitHub-Repository mit Power BI'
 description: In diesem Tutorial stellen Sie mit Power BI eine Verbindung mit realen Daten im GitHub-Dienst her. Anschließend erstellt Power BI automatisch Dashboards und Berichte.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: SarinaJoan
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.topic: tutorial
 ms.date: 08/07/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 7540083b49e0790bfd9062d28d2655ff024d577f
-ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.openlocfilehash: 986f35cd1c4f612b16374107487d0ca20c9c607e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68867150"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871250"
 ---
 # <a name="tutorial-connect-to-a-github-repo-with-power-bi"></a>Tutorial: Herstellen einer Verbindung mit einem GitHub-Repository mit Power BI
 In diesem Tutorial stellen Sie mit Power BI eine Verbindung mit realen Daten im GitHub-Dienst her. Anschließend erstellt Power BI automatisch Dashboards und Berichte. Sie stellen eine Verbindung mit dem öffentlichen *Repository* mit Power BI-Inhalten her und erhalten Antworten auf folgende Fragen: die Anzahl der Mitwirkenden an öffentlichen Power BI-Inhalten. Sie erfahren, wer sich am aktivsten beteiligt und am welchen Tag der Woche es die meisten Beiträge gab. Und andere Fragen. 
@@ -45,7 +44,7 @@ Für dieses Tutorial benötigen Sie ein GitHub-Konto, falls Sie noch keines habe
 
 ## <a name="how-to-connect"></a>Herstellen der Verbindung
 1. Melden Sie sich beim Power BI-Dienst (https://app.powerbi.com) ) an. 
-2. Wählen Sie im linken Navigationsbereich **Apps** und dann **Apps abrufen** aus.
+2. Wählen Sie im Navigationsbereich **Apps** und dann **Apps abrufen** aus.
    
    ![Power BI-Option „Apps abrufen“](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial.png) 
 
@@ -72,15 +71,15 @@ Für dieses Tutorial benötigen Sie ein GitHub-Konto, falls Sie noch keines habe
    Jetzt kann Power BI eine Verbindung mit GitHub und den Daten herstellen.  Die Daten werden einmal täglich aktualisiert.
 
 8. Nachdem Power BI die Daten importiert hat, werden die Inhalte Ihres neuen GitHub-Arbeitsbereichs angezeigt. 
-9. Klicken Sie in der linken Navigationsleiste auf den Pfeil neben dem Namen des Arbeitsbereichs. Sie sehen, dass der Arbeitsbereich ein Dashboard und einen Bericht enthält. 
+9. Klicken Sie im Navigationsberich auf den Pfeil neben dem Namen des Arbeitsbereichs. Sie sehen, dass der Arbeitsbereich ein Dashboard und einen Bericht enthält. 
 
-    ![App im linken Navigationsbereich](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
+    ![App im Navigationsbereich](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
 
-10. Klicken Sie auf die Auslassungspunkte (...) neben dem Namen des Dashboards, klicken Sie dann auf **Umbenennen**, und geben Sie **GitHub-Dashboard** ein.
+10. Wählen Sie neben dem Namen des Dashboards **Weitere Optionen** (...) > **Umbenennen** aus, und geben Sie **GitHub-Dashboard** ein.
  
     ![Power BI: GitHub-Kachel](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav.png) 
 
-8. Klicken Sie auf das Symbol für die globale Navigation, um den linken Navigationsbereich zu minimieren, damit Sie mehr Platz haben.
+8. Klicken Sie auf das Symbol für die globale Navigation, um den Navigationsbereich zu minimieren, damit Sie mehr Platz haben.
 
     ![Symbol „Globale Navigation“](media/service-tutorial-connect-to-github/power-bi-global-navigation-icon.png)
 
@@ -129,7 +128,7 @@ Für dieses Tutorial benötigen Sie ein GitHub-Konto, falls Sie noch keines habe
 
 Nachdem Sie das Tutorial abgeschlossen haben, können Sie die GitHub-App löschen. 
 
-1. Wählen Sie auf der linken Navigationsleiste **Apps** aus.
+1. Wählen Sie im Navigationsbereich **Apps** aus.
 2. Zeigen Sie auf die GitHub-Kachel, und klicken Sie auf das Symbol **Löschen**.
 
     ![GitHub-App löschen](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-delete.png)

@@ -2,7 +2,6 @@
 title: Erste Schritte mit dem Power BI-Dienst
 description: Erste Schritte mit dem Power BI-Onlinedienst (app.powerbi.com)
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,15 +9,15 @@ ms.topic: tutorial
 ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 49504343b076d7e2371c45005da24e35831bf506
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: 3a9b2a5e7de0a5072b266c7b146488e5d546f616
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70751022"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872327"
 ---
 # <a name="tutorial-get-started-with-the-power-bi-service"></a>Tutorial: Erste Schritte mit dem Power BI-Dienst
-Dieses Tutorial bietet eine Einführung in einige Features des *Power BI-Diensts*. Darin können Sie eine Verbindung mit Daten herstellen, einen Bericht und ein Dashboard erstellen und Fragen zu Ihren Daten stellen. Der Power BI-Dienst bietet Ihnen noch viele weitere Möglichkeiten. Mit diesem Tutorial wollen wir Sie nur schon einmal auf den Geschmack bringen. Damit Sie die Funktion des Power BI-Diensts im Hinblick auf die anderen Power BI-Angebote einordnen können, sollten Sie zunächst den Artikel [Was ist Power BI?](power-bi-overview.md) lesen.
+Dieses Tutorial bietet eine Einführung in einige Features des *Power BI-Diensts*. Darin können Sie eine Verbindung mit Daten herstellen, einen Bericht und ein Dashboard erstellen und Fragen zu Ihren Daten stellen. Der Power BI-Dienst bietet Ihnen noch viele weitere Möglichkeiten. Mit diesem Tutorial wollen wir Sie nur schon einmal auf den Geschmack bringen. Damit Sie die Funktion des Power BI-Diensts im Hinblick auf die anderen Power BI-Angebote einordnen können, sollten Sie zunächst den Artikel [Was ist Power BI?](fundamentals/power-bi-overview.md) lesen.
 
 ![Startseite des Power BI-Diensts](media/service-get-started/power-bi-service-get-started-home.png)
 
@@ -35,7 +34,7 @@ In diesem Tutorial führen Sie die folgenden Schritte aus:
 > * Bereinigen von Ressourcen durch Löschen des Datasets, des Berichts und des Dashboards.
 
 > [!TIP]
-> Sie möchten Ihre Trainingsgeschwindigkeit lieber selbst bestimmen? [Registrieren Sie sich auf EdX für unseren Kurs zur Datenanalyse und -visualisierung.](http://aka.ms/edxpbi)
+> Sie möchten Ihre Trainingsgeschwindigkeit lieber selbst bestimmen? [Registrieren Sie sich auf EdX für unseren Kurs zur Datenanalyse und -visualisierung.](https://aka.ms/edxpbi)
 
 ## <a name="sign-up-for-the-power-bi-service"></a>Registrieren beim Power BI-Dienst
 Wenn Sie noch kein Power BI-Konto besitzen, [registrieren Sie sich für eine kostenlose Power BI-Testversion](https://app.powerbi.com/signupredirect?pbi_source=web), bevor Sie beginnen.
@@ -46,10 +45,10 @@ Nachdem Sie ein Konto angelegt haben, geben Sie *app.powerbi.com* in Ihrem Brows
 
 Wenn Sie einen Power BI-Bericht erstellen, beginnen Sie häufig in Power BI Desktop. Dieses Mal beginnen wir mit dem Erstellen eines Berichts im Power BI-Dienst.
 
-In diesem Tutorial werden Daten aus einer CSV-Datei abgerufen. Führen Sie hierzu die folgenden Schritte aus: [Herunterladen der CSV-Datei mit dem Finanzbeispiel](http://go.microsoft.com/fwlink/?LinkID=521962).
+In diesem Tutorial werden Daten aus einer CSV-Datei abgerufen. Führen Sie hierzu die folgenden Schritte aus: [Herunterladen der CSV-Datei mit dem Finanzbeispiel](https://go.microsoft.com/fwlink/?LinkID=521962).
 
-1. [Melden Sie sich bei Power BI an](http://www.powerbi.com/). Verfügen Sie über ein Konto? Keine Sorge: Sie können sich für eine kostenlose Testversion registrieren.
-2. Power BI wird in Ihrem Browser geöffnet. Wählen Sie unten auf der linken Navigationsleiste **Daten abrufen** aus.
+1. [Melden Sie sich bei Power BI an](https://www.powerbi.com/). Verfügen Sie über ein Konto? Keine Sorge: Sie können sich für eine kostenlose Testversion registrieren.
+2. Power BI wird in Ihrem Browser geöffnet. Wählen Sie unten im Navigationsbereich **Daten abrufen**aus.
 
     Die Seite **Daten abrufen** wird geöffnet.   
 
@@ -73,7 +72,7 @@ In diesem Tutorial werden Daten aus einer CSV-Datei abgerufen. Führen Sie hierz
 
     ![Leerer Zeichenbereich des Berichts](media/service-get-started/power-bi-service-blank-report.png)
 
-7. Beachten Sie, dass es eine Option für die die **Leseansicht** in der oberen Navigationsleiste gibt. Da diese Option verfügbar ist, bedeutet dies, dass Sie sich zurzeit in der Bearbeitungsansicht befinden. Ein [Überblick](service-the-report-editor-take-a-tour.md) stellt eine hervorragende Möglichkeit dar, sich mit dem Berichts-Editor vertraut zu machen.
+7. Beachten Sie, dass es eine Option für die **Leseansicht** im oberen Navigationsbereich gibt. Da diese Option verfügbar ist, bedeutet dies, dass Sie sich zurzeit in der Bearbeitungsansicht befinden. Ein [Überblick](service-the-report-editor-take-a-tour.md) stellt eine hervorragende Möglichkeit dar, sich mit dem Berichts-Editor vertraut zu machen.
 
     ![Option „Leseansicht“](media/service-get-started/power-bi-service-reading-view.png)
 
@@ -115,13 +114,13 @@ Nachdem die Verbindung mit den Daten hergestellt wurde, können Sie die Daten un
    
 8. Wählen Sie die neue Kachel auf dem Dashboard aus, um zum Bericht zurückzukehren. Power BI ruft den Bericht wieder in der Leseansicht auf. 
 
-1. Wählen Sie die Auslassungspunkte (...) auf der oberen Navigationsleiste und dann **Bearbeiten** aus, um wieder in die Bearbeitungsansicht zu wechseln. Wenn Sie sich wieder in der Bearbeitungsansicht befinden, können Sie weiterhin das Durchsuchen und Anheften von Kacheln fortsetzen.
+1. Um zur Bearbeitungsansicht zurück zu wechseln, wählen Sie **Weitere Optionen** (...) im oberen Navigationsbereich > **Bearbeiten** aus. Wenn Sie sich wieder in der Bearbeitungsansicht befinden, können Sie weiterhin das Durchsuchen und Anheften von Kacheln fortsetzen.
 
     ![„Bearbeiten“ auswählen, um den Bericht zu bearbeiten](media/service-get-started/power-bi-service-edit-report.png)
 
 ## <a name="step-3-explore-with-qa"></a>Schritt 3: Durchsuchen mit Q&A
 
-Versuchen Sie, im Q&A-Fragefeld eine Frage zu stellen, um eine schnelle Untersuchung Ihrer Daten durchzuführen. Q&A erstellt zu Ihren Daten Abfragen in natürlicher Sprache. In einem Dashboard befindet sich das Q&A-Feld oben (**Stellen Sie eine Frage zu Ihren Daten**). In einem Bericht befindet es sich in der oberen Navigationsleiste (**Stellen Sie eine Frage**).
+Versuchen Sie, im Q&A-Fragefeld eine Frage zu stellen, um eine schnelle Untersuchung Ihrer Daten durchzuführen. Q&A erstellt zu Ihren Daten Abfragen in natürlicher Sprache. In einem Dashboard befindet sich das Q&A-Feld oben (**Stellen Sie eine Frage zu Ihren Daten**). In einem Bericht befindet es sich im oberen Navigationsbereich (**Stellen Sie eine Frage**).
 
 1. Wählen Sie **Mein Arbeitsbereich** im schwarzen **Power BI**-Balken aus, um zum Dashboard zurückzukehren.
 
@@ -198,9 +197,9 @@ Im Folgenden finden Sie eine letzte Interaktion, die Sie beachten sollten, bevor
 ## <a name="clean-up-resources"></a>Bereinigen von Ressourcen
 Nachdem Sie das Tutorial abgeschlossen haben, können Sie das Dataset, den Bericht und das Dashboard löschen. 
 
-1. Stellen Sie sicher, dass Sie in der linken Navigationsleiste in **Mein Arbeitsbereich** sind.
+1. Stellen Sie im Navigationsbereich sicher, dass Sie sich in **Mein Arbeitsbereich** befinden.
 2. Klicken Sie auf die Registerkarte **Dataset**, und suchen Sie nach dem Dataset, das Sie für dieses Tutorial importiert haben.  
-3. Wählen Sie die Auslassungspunkte (...) und dann **Löschen** aus.
+3. Wählen Sie **Weitere Optionen** (...) > **Löschen** aus.
 
     ![Dataset löschen](media/service-get-started/power-bi-service-delete-dataset.png)
 

@@ -2,7 +2,6 @@
 title: Automatisches Erstellen von Einblicken in Daten mit Power BI
 description: Hier erfahren Sie, wie Sie Einblicke in Ihre Datasets und Dashboardkacheln erhalten.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: et_MLSL2sA8
 ms.custom: seodec18
@@ -12,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/06/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 0492b797d75e29145c14a70d8a8058bad295ef18
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: 5f571cabcc413947713cd232863b3ecad910436d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68994905"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872247"
 ---
 # <a name="generate-data-insights-automatically-with-power-bi"></a>Automatisches Erstellen von Einblicken in Daten mit Power BI
 Sie besitzen ein neues Dataset und fragen sich, womit Sie beginnen sollen?  Sie müssen schnell ein Dashboard erstellen?  Sie möchten nach Einblicken suchen, die Sie möglicherweise übersehen haben?
@@ -38,7 +37,7 @@ Lassen Sie sich von Amanda zeigen, wie Sie das Feature „Schnelle Einblicke“ 
 
 Jetzt sind sie dran. Durchsuchen Sie Erkenntnisse, indem Sie das [Analysebeispiel für die Lieferantenqualität](sample-supplier-quality.md) verwenden.
 
-1. Wählen Sie auf der Registerkarte **Datasets** die Auslassungspunkte (...) und dann **Quick Insights abrufen** aus.
+1. Wählen Sie auf der Registerkarte **Datasets** **Weitere Optionen** (...) und dann **Quick Insights abrufen** aus.
    
     ![Registerkarte „Datasets“](media/service-insights/power-bi-ellipses.png)
    
@@ -62,7 +61,7 @@ Jetzt sind sie dran. Durchsuchen Sie Erkenntnisse, indem Sie das [Analysebeispie
 
 1. Zeigen Sie auf eine Karte, und wählen Sie das Anheftsymbol aus, um die Visualisierung einem Dashboard hinzuzufügen.
 
-2. Zeigen Sie auf eine Karte, wählen Sie die Auslassungspunkte (...) und dann **Erkenntnisse anzeigen** aus. 
+2. Zeigen Sie auf eine Karte, wählen Sie **Weitere Optionen** (...) und dann **Erkenntnisse anzeigen** aus. 
 
     Die Anzeige für Erkenntnisse wird im Fokusmodus geöffnet.
    
@@ -86,7 +85,7 @@ Jetzt sind sie dran. Durchsuchen Sie Erkenntnisse, indem Sie das [Analysebeispie
 Anstatt nach Erkenntnissen für ein gesamtes Dataset zu suchen, schränken Sie Ihre Suche ein, um eine bereichsbezogene Erkenntnis für die Daten auszuführen, die zum Erstellen einer einzelnen Dashboardkachel verwendet werden. 
 
 1. Öffnen Sie ein Dashboard.
-2. Zeigen Sie auf eine Kachel. Wählen Sie die Auslassungspunkte (...) und dann **Erkenntnisse anzeigen** aus. Die Kachel wird im [Fokusmodus](service-focus-mode.md) geöffnet. Die Einblickkarten werden rechts angezeigt.    
+2. Zeigen Sie auf eine Kachel. Wählen Sie **Weitere Optionen** (...) und dann **Erkenntnisse anzeigen** aus. Die Kachel wird im [Fokusmodus](service-focus-mode.md) geöffnet. Die Einblickkarten werden rechts angezeigt.    
    
     ![Fokusmodus](media/service-insights/pbi-insights-tile.png)    
 3. Ist einer der Einblicke für Sie interessant? Wählen Sie die entsprechende Einblickkarte aus, um weitere Informationen zu erhalten. Der ausgewählte Einblick wird auf der linken Seite angezeigt, und neue Einblickkarten (ausschließlich abhängig von den Daten in diesem Einblick) werden rechts angezeigt.    
@@ -96,5 +95,5 @@ Anstatt nach Erkenntnissen für ein gesamtes Dataset zu suchen, schränken Sie I
 - Wenn Sie ein Dataset besitzen, [optimieren Sie es für Quick Insights](service-insights-optimize.md).
 - Weitere Informationen zu den [verfügbaren Quick Insights-Typen](service-insight-types.md).
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/).
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/).
 

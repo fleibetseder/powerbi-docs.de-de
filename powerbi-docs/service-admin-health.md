@@ -2,7 +2,6 @@
 title: Nachverfolgen des Power BI-Dienststatus in Office 365
 description: Erfahren Sie, wie Sie aktuelle Daten und Verlaufsdaten zur Dienstintegrität im Microsoft 365 Admin Center anzeigen.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 579950320c3193e9cc1921a06d5b121ff0b58ae0
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 0e944dfa34bec1e1c1816cf80d7dc2df7252b65a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075358"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73857679"
 ---
 # <a name="track-power-bi-service-health-in-office-365"></a>Nachverfolgen des Power BI-Dienststatus in Office 365
 
@@ -29,7 +28,7 @@ Weitere Informationen zu Rollen finden Sie unter [Administratorrollen in Zusamme
 
 1. Melden Sie sich beim [Microsoft 365 Admin Center](https://portal.office.com/adminportal) an.
 
-1. Wählen Sie in der linken Navigationsleiste **Alle anzeigen** > **Integrität** > **Dienstintegrität** aus. Die Seite „Dienstintegrität“ wird angezeigt:
+1. Wählen Sie im Navigationsbereich **Alle anzeigen** > **Integrität** > **Dienstintegrität** aus. Die Seite „Dienstintegrität“ wird angezeigt:
 
     ![Screenshot des Microsoft 365 Admin Centers, in dem die Optionen „Integrität“ und „Dienstintegrität“ hervorgehoben sind.](media/service-admin-health/service-health-tile.png)
 

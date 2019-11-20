@@ -2,7 +2,6 @@
 title: 'Tutorial: Herstellen einer Verbindung mit lokalen Daten in SQL Server'
 description: Erfahren Sie, wie Sie SQL Server als Gatewaydatenquelle verwenden und Daten aktualisieren.
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 54ef11b51fb02b6913b4d591967a140c5affc1b8
-ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
+ms.openlocfilehash: 91b6ee8971004a014b188f94142e90914ae3a3b7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68307399"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881551"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Aktualisieren von Daten aus einer lokalen SQL Server-Datenbank
 
@@ -131,7 +130,7 @@ Sie haben in Power BI Desktop eine direkte Verbindung mit Ihrer lokalen SQL Serv
 
 Nachdem Sie in Power BI nun lokal über ein Datengateway eine Verbindung zwischen Ihrem Dataset und Ihrer SQL Server-Datenbank hergestellt haben, konfigurieren Sie mithilfe der folgenden Schritte einen Aktualisierungszeitplan. Durch die Aktualisierung Ihres Datasets nach einem Zeitplan können Sie sicherstellen, dass Ihre Berichte und Dashboards über die aktuellen Daten verfügen.
 
-1. Öffnen Sie im linken Navigationsbereich **Mein Arbeitsbereich** \> **Datasets**. Wählen Sie die Auslassungspunkte ( **. . .** ) für das Dataset **AdventureWorksProducts** aus, und klicken Sie dann auf **Zeitplanaktualisierung**.
+1. Öffnen Sie im Navigationsbereich **Mein Arbeitsbereich** \> **Datasets**. Wählen Sie die Auslassungspunkte ( **. . .** ) für das Dataset **AdventureWorksProducts** aus, und klicken Sie dann auf **Zeitplanaktualisierung**.
 
     > [!NOTE]
     > Stellen Sie sicher, dass Sie die Auslassungspunkte für das Dataset **AdventureWorksProducts** und nicht die Auslassungspunkte für den Bericht mit dem gleichen Namen auswählen. Das Kontextmenü des Berichts **AdventureWorksProducts** umfasst nicht die Option **Zeitplanaktualisierung**.
@@ -149,7 +148,7 @@ Nachdem Sie in Power BI nun lokal über ein Datengateway eine Verbindung zwische
 
 ## <a name="perform-an-on-demand-refresh"></a>Durchführen einer bedarfsgesteuerten Aktualisierung
 
-Da Sie nun einen Aktualisierungszeitplan konfiguriert haben, aktualisiert Power BI Ihr Dataset zum nächsten geplanten Zeitpunkt (in einem Zeitfenster von 15 Minuten). Wenn Sie die Daten früher aktualisieren möchten, z. B. um Ihr Gateway und Ihre Datenquellenkonfiguration zu testen, führen Sie eine bedarfsgesteuerte Aktualisierung durch, indem Sie die Option **Jetzt aktualisieren** im Datasetmenü im linken Navigationsbereich verwenden. Bedarfsgesteuerte Aktualisierungen haben keinen Einfluss auf die nächste geplante Aktualisierungszeit, aber sie zählen bei der Beschränkung der täglichen Aktualisierungen, wie bereits im vorherigen Abschnitt erwähnt.
+Da Sie nun einen Aktualisierungszeitplan konfiguriert haben, aktualisiert Power BI Ihr Dataset zum nächsten geplanten Zeitpunkt (in einem Zeitfenster von 15 Minuten). Wenn Sie die Daten früher aktualisieren möchten, z.B. um Ihr Gateway und Ihre Datenquellenkonfiguration zu testen, führen Sie eine bedarfsgesteuerte Aktualisierung durch, indem Sie die Option **Jetzt aktualisieren** im Datasetmenü im Navigationsbereich verwenden. Bedarfsgesteuerte Aktualisierungen haben keinen Einfluss auf die nächste geplante Aktualisierungszeit, aber sie zählen bei der Beschränkung der täglichen Aktualisierungen, wie bereits im vorherigen Abschnitt erwähnt.
 
 Simulieren Sie zur Veranschaulichung eine Änderung an den Beispieldaten, indem Sie die Tabelle „DimProduct“ in der Datenbank „AdventureWorksDW“ mithilfe von SQL Server Management Studio (SSMS) aktualisieren.
 
@@ -163,7 +162,7 @@ WHERE EnglishProductName ='Road-250 Red, 58'
 
 Führen Sie nun die folgenden Schritte aus, damit die aktualisierten Daten über die Gatewayverbindung zum Dataset gelangen und in den Berichten in Power BI erscheinen.
 
-1. Wählen Sie im Power BI-Dienst im linken Navigationsbereich die Option **Mein Arbeitsbereich** aus, und erweitern Sie diese.
+1. Wählen Sie im Power BI-Dienst im Navigationsbereich die Option **Mein Arbeitsbereich** aus, und erweitern Sie diese.
 
 2. Wählen Sie unter **Datasets** die Auslassungspunkte ( **. . .** ) für das Dataset **AdventureWorksProducts** aus, und klicken Sie dann auf **Jetzt aktualisieren**.
 

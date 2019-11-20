@@ -2,19 +2,18 @@
 title: Verfahren zur Datenreduktion für die Importmodellierung
 description: Lernen Sie die verschiedenen Verfahren zur Reduktion von Daten kennen, die in Importmodelle geladen werden.
 author: peter-myers
-manager: asaxton
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/05/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 794ded1bc310cfcecc609f48ee4f0595693ceeb3
-ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
+ms.openlocfilehash: c61a21f400de009815ecb685f989b1cdafbcdb22
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69520178"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875603"
 ---
 # <a name="data-reduction-techniques-for-import-modeling"></a>Verfahren zur Datenreduktion für die Importmodellierung
 
@@ -29,7 +28,7 @@ Trotz der Effizienz der VertiPaq-Speicher-Engine sollten Sie die Daten, die in I
 - In kleineren Modellen werden Daten schneller aktualisiert, was zu niedrigeren Latenzen, einem höheren Durchsatz bei Aktualisierungen von Datasets und einer geringeren Auslastung des Quellsystems sowie der Kapazitätsressourcen führt.
 - Eine geringere Anzahl von Tabellenzeilen kann zu einer schnelleren Auswertung der Berechnungen führen, wodurch eine Zunahme der Gesamtabfrageleistung möglich ist.
 
-In diesem Artikel werden sieben Verfahren zur Reduktion von Daten behandelt. Dazu gehören:
+In diesem Artikel werden acht Verfahren zur Reduktion von Daten behandelt. Dazu gehören:
 
 - [Entfernen von unnötigen Spalten](#remove-unnecessary-columns)
 - [Entfernen von unnötigen Zeilen](#remove-unnecessary-rows)
@@ -37,6 +36,7 @@ In diesem Artikel werden sieben Verfahren zur Reduktion von Daten behandelt. Daz
 - [Optimieren von Spaltendatentypen](#optimize-column-data-types)
 - [Verwenden von benutzerdefinierten Spalten](#preference-for-custom-columns)
 - [Deaktivieren des Ladevorgangs für Power Query-Abfragen](#disable-power-query-query-load)
+- [Datum/Uhrzeit automatisch deaktivieren](#disable-auto-datetime)
 - [Wechseln in den gemischten Modus](#switch-to-mixed-mode)
 
 ## <a name="remove-unnecessary-columns"></a>Entfernen von unnötigen Spalten
@@ -85,6 +85,10 @@ Gelegentlich sind jedoch berechnete Modellspalten möglicherweise die bessere Wa
 Power Query-Abfragen, die zur Datenintegration mit anderen Abfragen vorgesehen sind, sollten nicht in das Modell geladen werden. Deaktivieren Sie daher in diesen Fällen den Ladevorgang für Abfragen.
 
 ![Deaktivieren des Ladevorgangs für eine Power Query-Abfrage](media/import-modeling-data-reduction/power-query-disable-query-load.png)
+
+## <a name="disable-auto-datetime"></a>Datum/Uhrzeit automatisch deaktivieren
+
+Power BI Desktop enthält eine Option mit dem Namen _Datum/Uhrzeit automatisch_. Wenn diese Option aktiviert ist, wird eine verborgene automatische Datums-/Uhrzeittabelle für Datumsspalten erstellt, um Berichtsautoren beim Konfigurieren von Filtern, Gruppieren und Drilldown für Kalenderzeiträume zu unterstützen. Die verborgenen Tabellen sind tatsächlich berechnete Tabellen, die die Größe des Modells anwachsen lassen. Anleitungen zum Verwenden dieser Option finden Sie im Artikel [Auto date/time guidance in Power BI Desktop](../desktop-auto-date-time.md) (Anleitungen zum automatischen Datum/der automatischen Uhrzeit in Power BI Desktop).
 
 ## <a name="switch-to-mixed-mode"></a>Wechseln in den gemischten Modus
 

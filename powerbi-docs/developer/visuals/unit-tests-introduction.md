@@ -3,18 +3,17 @@ title: Einführung in Komponententests für Power BI-Visualprojekte
 description: In diesem Artikel wird beschrieben, wie Sie Komponententests für Power BI-Visualprojekte erstellen.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: bb9835ceba302716c2c4b1e28eda33c6e4b1db42
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 590f11f23a04a698459cc4db99efe5308ccc0ce3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71192462"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879959"
 ---
 # <a name="tutorial-add-unit-tests-for-power-bi-visual-projects"></a>Tutorial: Hinzufügen von Komponententests zu Power BI-Visualprojekten
 
@@ -65,7 +64,7 @@ Fügen Sie der Datei *package.json* im Abschnitt `devDependencies` die erforderl
 "webpack": "4.26.0"
 ```
 
-Weitere Informationen zum Paket finden Sie unter:
+Weitere Informationen zu *package.json* finden Sie in der Beschreibung unter [npm-package.json](https://docs.npmjs.com/files/package.json).
 
 Speichern Sie die Datei *package.json*. Führen Sie anschließend am Speicherort von `package.json` den folgenden Befehl aus:
 
@@ -393,8 +392,8 @@ Im Befehlszeilenfenster wird die folgende Ausgabe angezeigt:
 > karma start
 
 23 05 2017 12:24:26.842:WARN [watcher]: Pattern "E:/WORKSPACE/PowerBI/PowerBI-visuals-sampleBarChart/data/*.csv" does not match any file.
-23 05 2017 12:24:30.836:WARN [karma]: No captured browser, open http://localhost:9876/
-23 05 2017 12:24:30.849:INFO [karma]: Karma v1.3.0 server started at http://localhost:9876/
+23 05 2017 12:24:30.836:WARN [karma]: No captured browser, open https://localhost:9876/
+23 05 2017 12:24:30.849:INFO [karma]: Karma v1.3.0 server started at https://localhost:9876/
 23 05 2017 12:24:30.850:INFO [launcher]: Launching browser Chrome with unlimited concurrency
 23 05 2017 12:24:31.059:INFO [launcher]: Starting browser Chrome
 23 05 2017 12:24:33.160:INFO [Chrome 58.0.3029 (Windows 10 0.0.0)]: Connected on socket /#2meR6hjXFmsE_fjiAAAA with id 5875251
@@ -580,8 +579,8 @@ Nun können Sie den Komponententest erneut ausführen. Folgende Ausgabe muss ang
 > karma start
 
 23 05 2017 16:19:54.318:WARN [watcher]: Pattern "E:/WORKSPACE/PowerBI/PowerBI-visuals-sampleBarChart/data/*.csv" does not match any file.
-23 05 2017 16:19:58.333:WARN [karma]: No captured browser, open http://localhost:9876/
-23 05 2017 16:19:58.346:INFO [karma]: Karma v1.3.0 server started at http://localhost:9876/
+23 05 2017 16:19:58.333:WARN [karma]: No captured browser, open https://localhost:9876/
+23 05 2017 16:19:58.346:INFO [karma]: Karma v1.3.0 server started at https://localhost:9876/
 23 05 2017 16:19:58.346:INFO [launcher]: Launching browser Chrome with unlimited concurrency
 23 05 2017 16:19:58.394:INFO [launcher]: Starting browser Chrome
 23 05 2017 16:19:59.873:INFO [Chrome 58.0.3029 (Windows 10 0.0.0)]: Connected on socket /#NcNTAGH9hWfGMCuEAAAA with id 3551106

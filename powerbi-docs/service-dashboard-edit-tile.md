@@ -2,7 +2,6 @@
 title: Bearbeiten einer Dashboardkachel
 description: In diesem Tutorial erstellen Sie eine Kachel und heften sie an ein Dashboard an, und Sie lernen, wie Sie diese Dashboardkachel bearbeiten, indem Sie ihre Größe ändern, sie verschieben, umbenennen, anheften, löschen oder ihr einen Link hinzufügen.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: lJKgWnvl6bQ
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: c1b6f7434724540a9ad5b579030c3ed54b32abed
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: bdd2ec136ae741e15e0cb60d141c651cd5fb6749
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66720578"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877466"
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Bearbeiten oder Entfernen einer Dashboardkachel
 
@@ -83,9 +82,9 @@ Sie können Kacheln in vielen unterschiedlichen Größen erstellen – von 1 x 1
 ![Video](media/service-dashboard-edit-tile/pbigif_resizetile4.gif)
 
 - - -
-## <a name="the-ellipses--menu"></a>Das Menü mit den Auslassungspunkten (...)
+## <a name="more-options--menu"></a>Menü **Weitere Optionen** (...)
 
-1. Wählen Sie die Auslassungspunkte in der rechten oberen Ecke der Kachel aus. 
+1. Wählen Sie **Weitere Optionen** (...) in der rechten oberen Ecke der Kachel aus. 
    
    ![Kachel „Auslassungspunkte“](media/service-dashboard-edit-tile/power-bi-tile.png)
 
@@ -148,5 +147,5 @@ Standardmäßig gelangen Sie durch Auswählen einer Kachel zu dem Bericht, in de
 
 [Grundlegende Konzepte für Designer im Power BI-Dienst](service-basic-concepts.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 

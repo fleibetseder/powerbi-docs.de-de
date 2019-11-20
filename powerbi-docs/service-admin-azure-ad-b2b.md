@@ -2,7 +2,6 @@
 title: Verteilen von Inhalten an externe Gastbenutzer mit Azure AD B2B
 description: Power BI ist in Azure Active Directory Business-to-Business (Azure AD B2B) integriert, um die sichere Verteilung von Power BI-Inhalten an Gastbenutzer außerhalb der Organisation zu ermöglichen.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 8b7327a7b32aacd222efc422263187f29285bd73
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: bcde2bc456ee48e8dc66d6c0ba6b17d79fbe43a8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075775"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858010"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Verteilen von Power BI-Inhalten an externe Gastbenutzer mit Azure AD B2B
 
@@ -81,7 +80,7 @@ Wenn das Feature [Externen Gastbenutzern das Bearbeiten und Verwalten von Inhalt
 
 ### <a name="use-power-bi-premium"></a>Verwenden von Power BI Premium
 
-Durch Zuweisen des App-Arbeitsbereichs zu [Power BI Premium-Kapazität](service-premium-what-is.md) kann der Gastbenutzer die App verwenden, ohne dass eine Power BI Pro-Lizenz erforderlich ist. Mithilfe von Power BI Premium können Apps zudem weitere Leistungsmerkmale nutzen, z.B. höhere Aktualisierungsraten, dedizierte Kapazität und große Modelle.
+Durch Zuweisen des Arbeitsbereichs zu [Power BI Premium-Kapazität](service-premium-what-is.md) kann der Gastbenutzer die App verwenden, ohne dass eine Power BI Pro-Lizenz erforderlich ist. Mithilfe von Power BI Premium können Apps zudem weitere Leistungsmerkmale nutzen, z.B. höhere Aktualisierungsraten, dedizierte Kapazität und große Modelle.
 
 ![Diagramm der Gastbenutzeroberfläche mit Power BI Premium.](media/service-admin-azure-ad-b2b/license-approach-1.png)
 
@@ -113,6 +112,8 @@ Damit sich diese Benutzer bei Power BI anmelden können, stellen Sie ihnen die M
 
 * Standardmäßig schränkt Azure AD B2B externe Gäste auf die reine Nutzung von Inhalten ein. Externe Azure AD B2B-Gäste können Apps, Dashboards und Berichte anzeigen, Daten exportieren und E-Mail-Abonnements für Dashboards und Berichte erstellen. Der Zugriff auf Arbeitsbereiche und die Veröffentlichung eigener Inhalte sind hingegen nicht möglich. Diese Einschränkungen gelten jedoch nicht für Gastbenutzer, die über das Feature [Externen Gastbenutzern das Bearbeiten und Verwalten von Inhalten in der Organisation erlauben](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) Zugriff erhalten.
 
+* Zum Einladen von Gastbenutzern wird eine Power BI Pro-Lizenz benötigt. Pro-Testbenutzer können keine Gastbenutzer in Power BI einladen.
+
 * Auch Gastbenutzer, für die die Option [Externen Gastbenutzern das Bearbeiten und Verwalten von Inhalten in der Organisation erlauben](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) aktiviert ist, können bestimmte Funktionen nicht nutzen. Zum Aktualisieren oder Veröffentlichen von Berichten müssen sie die Webbenutzeroberfläche des Power BI-Diensts verwenden, einschließlich des Befehls „Daten abrufen“ zum Hochladen von Power BI Desktop-Dateien.  Die folgenden Funktionen werden nicht unterstützt:
     * Direktes Veröffentlichen aus Power BI Desktop im Power BI-Dienst
     * Gastbenutzer können Power BI Desktop nicht dazu verwenden, eine Verbindung mit Dienstdatasets im Power BI-Dienst herzustellen.
@@ -127,7 +128,12 @@ Damit sich diese Benutzer bei Power BI anmelden können, stellen Sie ihnen die M
     * Gastbenutzer können nicht „In Excel analysieren“ verwenden
     * Gastbenutzer können beim Kommentieren nicht @mentioned werden.
     * Gastbenutzer können keine Abonnements verwenden
-    * Gastbenutzer, die diese Funktion verwenden, sollten ein Geschäfts-, Schul- oder Unikonto besitzen. Für Gastbenutzer, die persönliche Konten verwenden, gelten mehr Einschränkungen aufgrund von Anmeldeeinschränkungen.
+    * Gastbenutzer, die diese Funktion verwenden, sollten ein Geschäfts-, Schul- oder Unikonto besitzen. 
+    
+* Für Gastbenutzer, die persönliche Konten verwenden, gelten mehr Einschränkungen aufgrund von Anmeldeeinschränkungen.
+    * Sie können die Nutzungserfahrungen im Power BI-Dienst über einen Webbrowser verwenden.
+    * Sie können keine mobilen Power BI-Apps verwenden.
+    * Sie können sich nicht anmelden, um Anmeldeinformationen anzugeben, wenn ein Geschäfts-, Schul- oder Unikonto erforderlich ist.
 
 * Dieses Feature ist für das Onlinebericht-Webpart von Power BI SharePoint derzeit nicht verfügbar.
 

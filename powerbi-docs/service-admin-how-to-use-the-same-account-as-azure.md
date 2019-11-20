@@ -2,7 +2,6 @@
 title: Verwenden des gleichen Kontos für Power BI und Azure
 description: Verwenden der gleichen Kontoanmeldung für Power BI und Azure
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: f9659ad657c4466ad58eb40d4a07916b46f9536a
-ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
+ms.openlocfilehash: 11fecb5ff87c454b32b2504fba3914f397265184
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70877778"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873630"
 ---
 # <a name="using-the-same-account-for-power-bi-and-azure"></a>Verwenden des gleichen Kontos für Power BI und Azure
 
@@ -29,7 +28,7 @@ Wenn Sie die gleiche Anmeldung sowohl für Azure als auch für Power BI verwende
 
 Sie können Ihr Unternehmenskonto mit folgenden Schritten als Co-Administrator in Azure hinzufügen:
 
-1. Melden Sie sich beim [Azure-Portal](http://portal.azure.com/) an. Wenn Sie Benutzer in mehreren Azure-Verzeichnissen sind, wählen Sie **Abonnements** aus und filtern dann für die Anzeige nur das Verzeichnis und die Abonnements heraus, die Sie bearbeiten möchten.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com/) an. Wenn Sie Benutzer in mehreren Azure-Verzeichnissen sind, wählen Sie **Abonnements** aus und filtern dann für die Anzeige nur das Verzeichnis und die Abonnements heraus, die Sie bearbeiten möchten.
 
 1. Wählen Sie im Navigationsbereich die Option **Zugriffssteuerung (IAM)** und dann **Hinzufügen** \> **Co-Administrator hinzufügen** aus.
 
@@ -39,4 +38,4 @@ Sie können Ihr Unternehmenskonto mit folgenden Schritten als Co-Administrator i
 
 1. Verwenden Sie bei Ihrer nächsten Anmeldung im Azure-Portal Ihre Organisations-E-Mail-Adresse.
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

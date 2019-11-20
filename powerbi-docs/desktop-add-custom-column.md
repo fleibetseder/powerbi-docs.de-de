@@ -2,71 +2,97 @@
 title: Hinzufügen einer benutzerdefinierten Spalte in Power BI Desktop
 description: Schnelles Erstellen einer neuen benutzerdefinierten Spalte in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5633370259662141296550aa3d5d2343ac4fedaa
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: 443053bc973005d3e2a655b1222d049a4251e7d7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67408558"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878873"
 ---
 # <a name="add-a-custom-column-in-power-bi-desktop"></a>Hinzufügen einer benutzerdefinierten Spalte in Power BI Desktop
-Mit dem **Abfrage-Editor** in **Power BI Desktop** können Sie dem Modell einfach eine neue benutzerdefinierte Datenspalte hinzufügen. Sie können mit einfachen Schaltflächen die benutzerdefinierte Spalte erstellen und umbenennen, um [M-Formeln](https://msdn.microsoft.com/library/mt270235.aspx) zum Definieren der benutzerdefinierten Spalte zu entwerfen. Die M-Formel weist einen [umfassenden Funktionsreferenz-Inhaltssatz](https://msdn.microsoft.com/library/mt779182.aspx) auf. 
 
-![](media/desktop-add-custom-column/add-custom-column_01.png)
+Mit dem Abfrage-Editor in Power BI Desktop können Sie Ihrem Modell einfach eine neue benutzerdefinierte Datenspalte hinzufügen. Mit dem Abfrage-Editor können Sie Ihre benutzerdefinierte Spalte erstellen und umbenennen, um [PowerQuery M-Formelabfragen](https://docs.microsoft.com/powerquery-m/quick-tour-of-the-power-query-m-formula-language) zum Definieren Ihrer benutzerdefinierten Spalte zu erstellen. PowerQuery M-Formelabfragen weisen einen [umfassenden Funktionsreferenz-Inhaltssatz](https://docs.microsoft.com/powerquery-m/power-query-m-function-reference) auf. 
 
-Das Erstellen einer benutzerdefinierten Spalte ist ein weiterer **angewendeter Schritt** für die Abfrage, die Sie im **Abfrage-Editor** erstellen. Das bedeutet, dass sie jederzeit geändert oder verschoben werden kann.
+Wenn Sie im Abfrage-Editor eine benutzerdefinierte Spalte erstellen, fügt Power BI Desktop sie den **Abfrageeinstellungen** der Abfrage als **Angewendeten Schritt** hinzu. Er kann jederzeit geändert oder verschoben werden.
 
-## <a name="use-query-editor-to-add-a-new-custom-column"></a>Hinzufügen einer neuen benutzerdefinierten Spalte mithilfe des Abfrage-Editors
-Starten Sie zum Erstellen einer neuen benutzerdefinierten Spalte den **Abfrage-Editor**. Wählen Sie hierzu in **Power BI Desktop** auf dem Menüband **Start** die Option **Abfragen bearbeiten** aus.
+![Seite „Benutzerdefinierte Spalte hinzufügen“](media/desktop-add-custom-column/add-custom-column_01.png)
 
-![](media/desktop-add-custom-column/add-column-from-example_02.png)
+## <a name="use-query-editor-to-add-a-custom-column"></a>Hinzufügen einer benutzerdefinierten Spalte mithilfe des Abfrage-Editors
 
-Wenn der **Abfrage-Editor** gestartet wurde und Sie Daten geladen haben, können Sie eine benutzerdefinierte Spalte hinzufügen. Wählen Sie hierzu auf dem Menüband die Registerkarte **Spalte hinzufügen** und dann **Benutzerdefinierte Spalte** aus.
+Führen Sie die folgenden Schritte aus, um mit der Erstellung einer benutzerdefinierten Spalte zu beginnen:
 
-![](media/desktop-add-custom-column/add-custom-column_02.png)
+1. Starten Sie Power BI Desktop, und laden Sie einige Daten.
 
-Das im folgenden Abschnitt beschriebene Fenster **Benutzerdefinierte Spalte hinzufügen** wird angezeigt.
+2. Wählen Sie auf der Registerkarte **Start** im Menüband **Abfragen bearbeiten** und dann **Abfragen bearbeiten** im Menü aus.
+
+   ![Auswählen von „Abfragen bearbeiten“](media/desktop-add-custom-column/add-column-from-example_02.png)
+
+   Das **Abfrage-Editor**-Fenster wird geöffnet. 
+
+2. Wählen Sie auf der Registerkarte **Spalte hinzufügen** im Menüband **Benutzerdefinierte Spalte** aus.
+
+   ![Auswählen von „Benutzerdefinierte Spalte“](media/desktop-add-custom-column/add-custom-column_02.png)
+
+   Das Fenster **Benutzerdefinierte Spalte hinzufügen** wird angezeigt.
 
 ## <a name="the-add-custom-column-window"></a>Das Fenster „Benutzerdefinierte Spalte hinzufügen“
-Im Fenster **Benutzerdefinierte Spalte hinzufügen** wird im rechten Bereich die Liste der verfügbaren Felder angezeigt, und oben wird der Name der benutzerdefinierten Spalte angezeigt (Sie können sie umbenennen, indem Sie in diesem Textfeld einen neuen Namen eingeben). Außerdem wird die [**M**-Formel](https://msdn.microsoft.com/library/mt779182.aspx) angezeigt, die Sie für die Definition der neuen benutzerdefinierten Spalte erstellen (oder eingeben), indem Sie Felder aus dem rechten Bereich einfügen, Operatoren hinzufügen und weitere Aktionen ausführen. 
 
-![](media/desktop-add-custom-column/add-custom-column_03.png)
+Das Fenster **Benutzerdefinierte Spalte hinzufügen** weist die folgenden Features auf: 
+- Eine Liste der verfügbaren Spalten in der Liste **Verfügbare Spalten** auf der rechten Seite.
+
+- Den ursprünglichen Namen Ihrer benutzerdefinierten Spalte im Feld **Neuer Spaltenname**. Sie können diese Spalte umbenennen.
+
+- [PowerQuery M-Formelabfragen](https://docs.microsoft.com/powerquery-m/power-query-m-function-reference) im Feld **Benutzerdefinierte Spaltenformel**. Sie erstellen diese Abfragen durch Erstellen der Formel, in der Ihre neue benutzerdefinierte Spalte definiert ist. 
+
+   ![Seite „Benutzerdefinierte Spalte hinzufügen“](media/desktop-add-custom-column/add-custom-column_03.png)
 
 ## <a name="create-formulas-for-your-custom-column"></a>Erstellen von Formeln für die benutzerdefinierte Spalte
-Sie können in der Liste **Verfügbare Spalten** auf der rechten Seite ein Feld auswählen und auf **<< Einfügen** klicken, um es der Formel für die benutzerdefinierte Spalte hinzuzufügen. Sie können auch einfach auf eine Spalte in der Liste doppelklicken, um es hinzuzufügen.
 
-Während Sie die Formel eingeben, um die Spalte zu erstellen, wird am unteren Rand des Fensters in Echtzeit (während der Eingabe) angegeben, ob Syntaxfehler gefunden werden. Wenn alles in Ordnung ist, wird ein grünes Häkchen angezeigt.
+1. Wählen Sie in der Liste **Verfügbare Spalten** auf der rechten Seite eine Spalte aus, und wählen Sie dann unterhalb der Liste **Einfügen** aus, um sie der Formel für die benutzerdefinierte Spalte hinzuzufügen. Außerdem können Sie eine Spalte hinzufügen, indem Sie in der Liste darauf doppelklicken.
 
-![](media/desktop-add-custom-column/add-custom-column_04.png)
+2. Achten Sie beim Eingeben der Formel und dem Erstellen Ihrer Spalte auf den Indikator unten im Fenster **Benutzerdefinierte Spalte hinzufügen**. 
 
-Wenn die Syntax einen Fehler enthält, werden ein gelbes Warnsymbol zusammen mit dem erkannten Fehler und ein Link angezeigt, über den der Cursor (in der Formel) an die Position des erkannten Fehlers verschoben wird.
+   Wenn keine Fehler vorhanden sind, sehen Sie ein grünes Markierungshäkchen und die Meldung *Es wurden keine Syntaxfehler gefunden*.
 
-![](media/desktop-add-custom-column/add-custom-column_05.png)
+   ![Erfolgreiche Syntaxprüfung auf der Seite „Benutzerdefinierte Spalte hinzufügen“](media/desktop-add-custom-column/add-custom-column_04.png)
 
-Wenn Sie auf **OK** klicken, wird die benutzerdefinierte Spalte dem Modell hinzugefügt, und den **Angewendeten Schritten** der Abfrage wird der Schritt **Hinzugefügte benutzerdefinierte Spalte** hinzugefügt.
+   Wenn ein Syntaxfehler vorliegt, wird ein gelbes Warnsymbol zusammen mit einem Link zu der fehlerhaften Stelle in Ihrer Formel angezeigt.
 
-![](media/desktop-add-custom-column/add-custom-column_06.png)
+   ![Fehler auf der Seite „Benutzerdefinierte Spalte hinzufügen“](media/desktop-add-custom-column/add-custom-column_05.png)
 
-Wenn Sie im Bereich **Angewendete Schritte** auf den Schritt **Hinzugefügte benutzerdefinierte Spalte** doppelklicken, wird erneut das Fenster **Benutzerdefinierte Spalte hinzufügen** angezeigt. In diesem ist die benutzerdefinierte Formel, die Sie erstellt haben, bereits geladen, und Sie können sie ggf. ändern.
+3. Wählen Sie **OK**aus. 
 
-## <a name="using-the-advanced-editor-for-custom-columns"></a>Verwenden des erweiterten Editors für benutzerdefinierte Spalten
-Sie können auch mit dem **erweiterten Editor** benutzerdefinierte Spalten erstellen (und jeden Schritt der Abfrage ändern). Wählen Sie im **Abfrage-Editor** die Registerkarte **Ansicht** und dann **Erweiterter Editor** aus, um den **erweiterten Editor** anzuzeigen.
+   Power BI Desktop fügt dem Modell Ihre benutzerdefinierte Spalte und der Liste **Angewendete Schritte** in den **Abfrageeinstellungen** den Schritt **Spalte hinzugefügt** hinzu.
 
-![](media/desktop-add-custom-column/add-custom-column_07.png)
+   ![„Benutzerdefinierte Spalte“ zu Abfrageeinstellungen hinzugefügt](media/desktop-add-custom-column/add-custom-column_06.png)
 
-Der **Erweiterte Editor** bietet Ihnen vollständige Kontrolle über Ihre Abfrage.
+4. Um Ihre benutzerdefinierte Spalte zu ändern, doppelklicken Sie in der Liste **Angewendete Schritte** auf den Schritt **Spalte hinzugefügt**. 
 
+   Das Fenster **Benutzerdefinierte Spalte hinzufügen** wird mit der benutzerdefinierten Spaltenformel angezeigt, die Sie erstellt haben.
+
+## <a name="use-the-advanced-editor-for-custom-columns"></a>Verwenden des erweiterten Editors für benutzerdefinierte Spalten
+
+Nachdem Sie Ihre Abfrage erstellt haben, können Sie auch den **Erweiterten Editor** verwenden, um die Schritte Ihrer Abfrage zu ändern. Führen Sie hierfür die folgenden Schritte aus:
+
+1. Wählen Sie im Fenster **Abfrage-Editor** die Registerkarte **Ansicht** im Menüband aus. 
+
+2. Wählen Sie **Erweiterter Editor**aus.
+
+   Die Seite **Erweiterter Editor** wird angezeigt, die Ihnen vollständige Kontrolle über Ihre Abfrage bietet. 
+
+   ![Seite „Erweiterter Editor“](media/desktop-add-custom-column/add-custom-column_07.png)
+
+   
 ## <a name="next-steps"></a>Nächste Schritte
-Es gibt weitere Möglichkeiten zum Erstellen einer benutzerdefinierten Spalte. Zu diesen zählt das Erstellen einer Spalte anhand von Beispielen, die Sie im **Abfrage-Editor** angeben. Weitere Informationen zum Erstellen von benutzerdefinierten Spalten aus Beispielen finden Sie im folgenden Artikel:
 
-* [Hinzufügen einer Spalte aus einem Beispiel in Power BI Desktop](desktop-add-column-from-example.md)
-* [Power Query M-Referenz](/powerquery-m/power-query-m-reference)  
+- Sie können eine benutzerdefinierte Spalte auch auf andere Weise erstellen, beispielsweise indem Sie eine Spalte anhand von Beispielen erstellen, die Sie im Abfrage-Editor angeben. Weitere Informationen finden Sie unter [Hinzufügen einer Spalte aus einem Beispiel in Power BI Desktop](desktop-add-column-from-example.md).
+
+- Referenzinformationen zu Power Query M finden Sie in der [Power Query M-Funktionsreferenz](/powerquery-m/power-query-m-function-reference).
 

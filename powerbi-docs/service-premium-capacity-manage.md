@@ -3,7 +3,6 @@ title: Verwalten von Microsoft Power BI Premium-Kapazitäten
 description: Beschreibt Verwaltungsaufgaben für Power BI Premium-Kapazitäten.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/10/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1e8218e19ca3949a96a9c701e4a18f9fb088e2a1
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: 5e8becd877165f456793d99951544156a9314290
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175204"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881190"
 ---
 # <a name="managing-premium-capacities"></a>Verwalten von Premium-Kapazitäten
 
@@ -42,7 +41,7 @@ Mindestens ein Kapazitätsadministrator muss zugewiesen werden. Als Kapazitätsa
 
 Kapazitätsadministratoren können nicht auf Arbeitsbereichsinhalte zugreifen, solange sie nicht explizit in Arbeitsbereichsberechtigungen zugewiesen werden. Sie haben auch keinen Zugriff auf alle Power BI-Administrationsbereiche (solange sie nicht explizit zugewiesen werden) wie Nutzungsmetriken, Überwachungsprotokolle oder Mandanteneinstellungen. Wichtig: Kapazitätsadministratoren sind auch nicht berechtigt, neue Kapazitäten zu erstellen oder vorhandene Kapazitäten zu skalieren. Administratoren werden pro Kapazität zugewiesen, um sicherzustellen, dass sie nur Kapazitäten anzeigen und verwalten können, denen sie zugewiesen sind.
 
-Der Kapazitätsumfang wird aus einer Liste verfügbarer SKU-Optionen ausgewählt, die durch die Anzahl der verfügbaren V-Kerne im Pool eingeschränkt wird. Es ist möglich, mehrere Kapazitäten aus dem Pool zu erstellen, für die eine oder mehrere erworbene SKUs als Quelle dienen könnten. Beispielsweise könnte eine P3-SKU (32 V-Kerne) zum Erstellen von drei Kapazitäten verwendet werden: eine P2 (16 V-Kerne) und zwei P1 (2 x 8 V-Kerne). Verbesserte Leistung und Skalierbarkeit können Sie erzielen, indem Sie kleinere Kapazitäten erstellen, wie im Artikel [Optimieren von Premium-Kapazitäten](service-premium-capacity-optimize.md) beschrieben. Die folgende Abbildung zeigt ein Beispielsetup für die fiktive Organisation Contoso aus fünf Premium-Kapazitäten (3 x P1 und 2 x P3), die jeweils App-Arbeitsbereiche enthalten, und mehreren Arbeitsbereichen in gemeinsam genutzter Kapazität.
+Der Kapazitätsumfang wird aus einer Liste verfügbarer SKU-Optionen ausgewählt, die durch die Anzahl der verfügbaren V-Kerne im Pool eingeschränkt wird. Es ist möglich, mehrere Kapazitäten aus dem Pool zu erstellen, für die eine oder mehrere erworbene SKUs als Quelle dienen könnten. Beispielsweise könnte eine P3-SKU (32 V-Kerne) zum Erstellen von drei Kapazitäten verwendet werden: eine P2 (16 V-Kerne) und zwei P1 (2 x 8 V-Kerne). Verbesserte Leistung und Skalierbarkeit können Sie erzielen, indem Sie kleinere Kapazitäten erstellen, wie im Artikel [Optimieren von Premium-Kapazitäten](service-premium-capacity-optimize.md) beschrieben. Die folgende Abbildung zeigt ein Beispielsetup für die fiktive Organisation Contoso aus fünf Premium-Kapazitäten (3 x P1 und 2 x P3), die jeweils Arbeitsbereiche enthalten, und mehreren Arbeitsbereichen in gemeinsam genutzter Kapazität.
 
 ![Ein Beispielsetup für die fiktive Organisation Contoso](media/service-premium-capacity-manage/contoso-organization-example.png)
 
@@ -66,7 +65,7 @@ Das Löschen einer Premium-Kapazität ist möglich und führt nicht zum Löschen
 
 ### <a name="assigning-workspaces-to-capacities"></a>Zuweisen von Arbeitsbereichen zu Kapazitäten
 
-Arbeitsbereiche können einer Premium-Kapazität im Power BI-Verwaltungsportal oder, für einen App-Arbeitsbereich, im Bereich **Arbeitsbereich** zugewiesen werden.
+Arbeitsbereiche können einer Premium-Kapazität im Power BI-Verwaltungsportal oder, für einen Arbeitsbereich, im Bereich **Arbeitsbereich** zugewiesen werden.
 
 Kapazitätsadministratoren und globale Administratoren von Office 365 oder Power BI-Dienstadministratoren können Arbeitsbereiche im Power BI-Verwaltungsportal im Massenvorgang zuweisen. Zuweisungen im Massenvorgang können auf Folgendes angewendet werden:
 

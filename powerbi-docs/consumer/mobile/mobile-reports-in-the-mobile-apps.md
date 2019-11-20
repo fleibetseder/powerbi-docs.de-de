@@ -2,19 +2,18 @@
 title: Durchsuchen von Berichten in den mobilen Power BI-Apps
 description: Hier erfahren Sie, wie Sie in den mobilen Power BI-Apps auf Ihrem Telefon oder Tablet Berichte anzeigen und mit diesen interagieren. Sie erstellen Berichte im Power BI-Dienst oder in Power BI Desktop und interagieren anschließend in mobilen Apps mit diesen.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/09/2019
 ms.author: mshenhav
-ms.openlocfilehash: 166b7d88e6ab55481ec56b0cf4f91628cd141bef
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: d4b9a9aeda00dd7f16690d1e92336f5b63adf1da
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "69985751"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73869760"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Durchsuchen von Berichten in den mobilen Power BI-Apps
 Gilt für:
@@ -45,7 +44,7 @@ Es gibt zwei Symbole für Berichte in den mobilen Power BI-Apps:
 > [!NOTE]
 > Wenn Sie Ihr Smartphone im Querformat halten, wird immer das Querformat angezeigt, auch wenn die Berichtsseite ein Layout für Smartphones aufweist.
 
-Tippen Sie auf die Auslassungspunkte (...) in der rechten oberen Ecke einer Kachel, und wählen Sie dann **Bericht öffnen** aus, um einen Bericht eines Dashboards abzurufen:
+Tippen Sie auf **Weitere Optionen** (...) in der rechten oberen Ecke einer Kachel, und wählen Sie dann **Bericht öffnen** aus, um einen Bericht eines Dashboards abzurufen:
   
   ![Bericht öffnen](./media/mobile-reports-in-the-mobile-apps/power-bi-android-open-report-tile.png)
   
@@ -59,7 +58,7 @@ Ein Tippen gleicht einem Mausklick. Wenn Sie den Bericht auf Grundlage eines Dat
 Wenn Sie auf einen Datenschnittwert tippen, wird der Wert ausgewählt und für den Rest des Berichts wird ein Datenschnitt anhand des Werts durchgeführt.
 Wenn Sie auf einen Link, eine Schaltfläche oder ein Lesezeichen tippen, wird die vom Berichtsautor definierte Aktion ausgeführt.
 
-Wahrscheinlich haben Sie bemerkt, dass ein Rahmen angezeigt wird, wenn Sie auf ein Visual tippen. In der oberen rechten Ecke des Rahmens werden Auslassungspunkte (...) angezeigt. Wenn Sie auf diese Auslassungspunkte tippen, wird ein Menü mit Aktionen angezeigt, die Sie an diesem Visual vornehmen können:
+Wahrscheinlich haben Sie bemerkt, dass ein Rahmen angezeigt wird, wenn Sie auf ein Visual tippen. In der oberen rechten Ecke des Rahmens werden **Weitere Optionen** (...) angezeigt. Wenn Sie auf diese Auslassungspunkte tippen, wird ein Menü mit Aktionen angezeigt, die Sie an diesem Visual vornehmen können:
 
 ![Visual und Menü](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
@@ -92,7 +91,7 @@ Weitere Informationen finden Sie unter [Hinzufügen der Drillthroughfunktion in 
    
    
 ### <a name="using-the-actions-in-the-report-footer"></a>Verwenden der Aktionen in der Fußzeile des Berichts
-Über die Fußzeile des Berichts können Sie verschiedene Aktionen für die aktuelle Berichtsseite oder dem gesamten Bericht ausführen. Die Fußzeile bietet schnellen Zugriff auf die am häufigsten verwendeten Aktionen. Sie können auf andere Aktionen zugreifen, indem Sie auf die Auslassungspunkte (...) tippen:
+Über die Fußzeile des Berichts können Sie verschiedene Aktionen für die aktuelle Berichtsseite oder dem gesamten Bericht ausführen. Die Fußzeile bietet schnellen Zugriff auf die am häufigsten verwendeten Aktionen. Sie können auf andere Aktionen zugreifen, indem Sie auf die Schaltfläche **Weitere Optionen** (...) tippen:
 
 ![Berichtsfußzeile](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
 
@@ -105,7 +104,7 @@ Sie können zwischen Berichtsseiten wechseln, indem Sie vom Rand des Bildschirms
 - Anzeigen aller Berichtsaktionen.
 
 #### <a name="all-report-actions"></a>Alle Berichtsaktionen
-Wenn Sie im Bericht auf die Schaltfläche mit den Auslassungspunkten (...) tippen, werden alle Aktionen angezeigt, die Sie für einen Bericht ausführen können:
+Wenn Sie im Bericht auf die Schaltfläche **Weitere Optionen** (...) tippen, werden alle Aktionen angezeigt, die Sie für einen Bericht ausführen können:
 
 
 ![Alle Berichtsaktionen](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)
@@ -124,5 +123,5 @@ Beispiel:
 ## <a name="next-steps"></a>Nächste Schritte
 * [Anzeigen von und Interagieren mit Power BI-Berichten, die für das Smartphone optimiert sind](mobile-apps-view-phone-report.md)
 * [Erstellen einer für Smartphones optimierten Version eines Berichts](../../desktop-create-phone-report.md)
-* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
 

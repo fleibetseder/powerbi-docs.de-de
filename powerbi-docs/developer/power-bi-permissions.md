@@ -3,18 +3,17 @@ title: Power BI-Berechtigungen
 description: Power BI-Berechtigungen
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 10/01/2018
-ms.openlocfilehash: 8a48ec007f2d8c9c07de5cc0d51049e3dbf19662
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 14327f09ede41c23fd4fe7cc65fc4f8d3a91b926
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61269351"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880434"
 ---
 # <a name="power-bi-permissions"></a>Power BI-Berechtigungen
 
@@ -42,11 +41,11 @@ Mit Power BI-Berechtigungen kann eine Anwendung bestimmte Aktionen im Namen des
 Eine Anwendung kann bei der ersten Anmeldung auf der Seite eines Benutzers Berechtigungen anfordern. Die angeforderten Berechtigungen werden im Bereichsparameter des Aufrufs übergeben. Wenn die Berechtigungen gewährt werden, wird ein Zugriffstoken an die App zurückgegeben, das für zukünftige API-Aufrufe verwendet werden kann. Der Zugriff ist nur für eine bestimmte Anwendung möglich.
 
 > [!NOTE]
-> Die APIs von Power BI verweisen weiterhin auf Arbeitsbereiche als Gruppen. Alle Verweise auf Gruppen bedeuten, dass Sie mit App-Arbeitsbereichen arbeiten.
+> In Power BI-APIs werden Arbeitsbereiche weiterhin als Gruppen bezeichnet. Alle Verweise auf Gruppen bedeuten, dass Sie mit Arbeitsbereichen arbeiten.
 
 ## <a name="requesting-permissions"></a>Anfordern von Berechtigungen
 
-Sie können die API aufrufen, um sich mit einem Benutzernamen und einem Kennwort zu authentifizieren und im Namen eines anderen Benutzers Aktionen ausführen. Zu diesem Zweck müssen jedoch Berechtigungen angefordert und vom Benutzer genehmigt werden. Daraufhin wird bei allen zukünftigen Aufrufen das zurückgegebene Zugriffstoken gesendet. Bei diesem Vorgang befolgen wir das Standardprotokoll [OAuth 2.0](http://oauth.net/2/). Während die tatsächliche Implementierung variieren kann, beinhaltet der OAuth-Flow für Power BI die folgenden Elemente:
+Sie können die API aufrufen, um sich mit einem Benutzernamen und einem Kennwort zu authentifizieren und im Namen eines anderen Benutzers Aktionen ausführen. Zu diesem Zweck müssen jedoch Berechtigungen angefordert und vom Benutzer genehmigt werden. Daraufhin wird bei allen zukünftigen Aufrufen das zurückgegebene Zugriffstoken gesendet. Bei diesem Vorgang befolgen wir das Standardprotokoll [OAuth 2.0](https://oauth.net/2/). Während die tatsächliche Implementierung variieren kann, beinhaltet der OAuth-Flow für Power BI die folgenden Elemente:
 
 * **Anmeldebenutzeroberfläche**: Über diese Benutzeroberfläche kann der Entwickler Berechtigungen anfordern. Der Benutzer muss sich hierfür anmelden, sofern er dies nicht bereits getan hat. Zudem muss der Benutzer die von der Anwendung angeforderten Berechtigungen genehmigen. Das Anmeldefenster sendet einen Zugriffscode oder eine Fehlermeldung an eine festgelegte Umleitungs-URL zurück.
   * In Power BI sollte für native Anwendungen eine Standard-Umleitungs-URL angegeben werden.
@@ -54,4 +53,4 @@ Sie können die API aufrufen, um sich mit einem Benutzernamen und einem Kennwort
 * **Autorisierungstoken** : Werden verwendet, um API-Aufrufe im Namen eines anderen Benutzers zu authentifizieren. Sie sind auf eine bestimmte Anwendung begrenzt. Token haben eine feste Lebensdauer und müssen nach Ablauf aktualisiert werden.
 * **Aktualisierungstoken** : Token werden nach ihrem Ablauf aktualisiert.
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

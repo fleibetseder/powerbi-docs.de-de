@@ -3,7 +3,6 @@ title: Embedded Analytics mit Power BI
 description: Power BI bietet APIs zum Verwenden von Embedded Analytics für Ihre Dashboards und Berichte in Anwendungen. In diesem Artikel erfahren Sie mehr über das Einbetten mit Power BI in einer PaaS-Umgebung und in einer SaaS-Umgebung unter Verwendung von Embedded Analytics-Software, Embedded Analytics-Tools oder eingebetteten Business Intelligence-Tools.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -17,16 +16,16 @@ helpviewer_keywords:
 - Power BI APIs
 ms.custom: seodec18
 ms.date: 05/15/2019
-ms.openlocfilehash: d2e52ff986bb2bba0caf5168c5038bb55011144a
-ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.openlocfilehash: ccd5917b91d9dd0576f0f4607f84f849f6df145d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70391531"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875776"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Embedded Analytics mit Power BI
 
-Der Power BI-Dienst (SaaS) und der Power BI Embedded-Dienst in Azure (PaaS) verfügen über APIs zum Einbetten Ihrer Dashboards und Berichte. Beim Einbetten von Inhalten erhalten Sie so Zugriff auf die neuesten Power BI-Features, wie etwa Dashboards, Gateways und App-Arbeitsbereiche.
+Der Power BI-Dienst (SaaS) und der Power BI Embedded-Dienst in Azure (PaaS) verfügen über APIs zum Einbetten Ihrer Dashboards und Berichte. Beim Einbetten von Inhalten erhalten Sie so Zugriff auf die neuesten Power BI-Features, wie etwa Dashboards, Gateways und Arbeitsbereiche.
 
 Sie können mit dem [Einbettungssetuptool](https://aka.ms/embedsetup) schnell eine Beispielanwendung herunterladen und mit der Arbeit beginnen.
 
@@ -85,7 +84,7 @@ Entwickler, die Power BI Embedded verwenden, können sich auf das Erstellen der 
 > [!IMPORTANT]
 > Zwar ist für das Einbetten der Power BI-Dienst erforderlich, Ihre Kunden benötigen jedoch kein Power BI-Konto, um die eingebetteten Inhalte Ihrer Anwendung anzuzeigen. 
 
-Wenn Sie bereit sind, in eine Produktionsumgebung zu wechseln, muss der Arbeitsbereich Ihrer App einer dedizierten Kapazität zugeordnet werden. Power BI Embedded in Microsoft Azure bietet [dedizierte Kapazitäten](azure-pbie-create-capacity.md), die von Ihren Anwendungen genutzt werden können.
+Wenn Sie bereit sind, in eine Produktionsumgebung zu wechseln, muss Ihr Arbeitsbereich einer dedizierten Kapazität zugeordnet werden. Power BI Embedded in Microsoft Azure bietet [dedizierte Kapazitäten](azure-pbie-create-capacity.md), die von Ihren Anwendungen genutzt werden können.
 
 Ausführliche Informationen zum Einbetten finden Sie unter [Einbetten von Power BI-Inhalten](embed-sample-for-customers.md).
 
@@ -102,4 +101,4 @@ Nun können Sie mit der Einbettung von Power BI-Inhalten in eine Anwendung oder 
 > [!div class="nextstepaction"]
 >[Inhalte für Ihre Kunden einbetten](embed-sample-for-customers.md)
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

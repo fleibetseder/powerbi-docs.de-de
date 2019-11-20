@@ -2,7 +2,6 @@
 title: Drilldown und Drillup in einem Visual
 description: Dieser Artikel veranschaulicht, wie Sie im Microsoft Power BI-Dienst einen Drilldown in einem Visual durchführen können.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/17/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b200ec86db339e42a708c3db042df06b9513cc6e
-ms.sourcegitcommit: f34acbf9fb1ab568fd89773aaf412a847f88dd34
+ms.openlocfilehash: 21d663b2f29a8090e6cfb7013d16c739ef0a29b3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589506"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73851456"
 ---
 # <a name="drill-mode-in-a-visual-in-power-bi"></a>Drillmodus in einem Visual in Power BI
 
@@ -128,7 +127,7 @@ Eine Treemap, die nur die Postleitzahl anzeigt, ist nicht nützlich.  *Erweitern
 ## <a name="show-the-data-as-you-drill"></a>Anzeigen der Daten beim Drillvorgang
 Verwenden Sie **Daten anzeigen**, um Daten anzuzeigen, die sich im Hintergrund befinden. Immer wenn Sie einen Drillvorgang ausführen oder eine Erweiterung durchführen, werden durch **Daten anzeigen** die Daten angezeigt, die zum Erstellen des Visuals verwendet werden. Dies kann Ihnen helfen zu verstehen, wie Hierarchien, Drillvorgänge und Erweiterungsvorgänge zusammenarbeiten, um Visuals zu erstellen. 
 
-Wählen Sie rechts oben die Auslassungspunkte (...) und dann **Daten anzeigen** aus. 
+Wählen Sie rechts oben **Weitere Optionen** (...) und dann **Daten anzeigen** aus. 
 
 ![Screenshot des Menüs mit Auslassungspunkten.](./media/end-user-drill/power-bi-ellipses.png)
 
@@ -153,4 +152,4 @@ Standardmäßig filtern Drillvorgänge keine anderen visuellen Elemente in einem
 
 [Power BI – Grundkonzepte](end-user-basic-concepts.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

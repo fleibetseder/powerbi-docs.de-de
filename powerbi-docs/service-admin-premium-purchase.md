@@ -3,19 +3,18 @@ title: Erwerben von Power BI Premium
 description: Erfahren Sie, wie Sie Power BI Premium erwerben und den Zugriff auf Inhalte für Ihre gesamte Organisation ermöglichen können.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/12/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: a6e37885c5e15dbaaa28fc5cb693089fda747c9e
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: b9681b15b0eef4415849b59e903440f9d904b1f6
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175243"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73856874"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Erwerben von Power BI Premium
 
@@ -30,17 +29,17 @@ Wenn ein Power BI Premium-Abonnement abläuft, bleibt der vollständige Zugriff 
 
 ## <a name="create-a-new-tenant-with-power-bi-premium-p1"></a>Erstellen eines neuen Mandanten mit Power BI Premium P1
 
-Wenn Sie noch nicht über einen Mandanten verfügen und einen erstellen möchten, können Sie gleichzeitig Power BI Premium erwerben. Der folgende Link führt Sie durch die Schritte zum Erstellen eines neuen Mandanten und ermöglicht Ihnen den Erwerb von Power BI Premium: [Power BI Premium P1-Angebot](https://signup.microsoft.com/Signup?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1). Wenn Sie den Mandanten erstellen, wird Ihnen automatisch die globale Office 365-Administratorrolle für diesen Mandanten zugewiesen.
+Wenn Sie noch nicht über einen Mandanten verfügen und einen erstellen möchten, können Sie gleichzeitig Power BI Premium erwerben. Der folgende Link führt Sie durch die Schritte zum Erstellen eines neuen Mandanten und ermöglicht Ihnen den Erwerb von Power BI Premium: [Power BI Premium P1-Angebot](https://signup.microsoft.com/Signup?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1). Wenn Sie den Mandanten erstellen, wird Ihnen automatisch die globale Microsoft 365-Administratorrolle für diesen Mandanten zugewiesen.
 
 ## <a name="purchase-a-power-bi-premium-capacity-for-an-existing-organization"></a>Erwerben einer Power BI Premium-Kapazität für eine vorhandene Organisation
 
-Wenn Sie über eine vorhandene Organisation (einen Mandanten) verfügen, müssen Sie über die globale Office 365-Administratorrolle oder die Rechnungsadministratorrolle verfügen, um Abonnements und Lizenzen zu erwerben. Weitere Informationen finden Sie unter [Informationen zu Office 365-Administratorrollen](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
+Wenn Sie über eine vorhandene Organisation (einen Mandanten) verfügen, müssen Sie über die globale Microsoft 365-Administratorrolle oder die Rechnungsadministratorrolle verfügen, um Abonnements und Lizenzen zu erwerben. Weitere Informationen finden Sie unter [Informationen zu Microsoft 365-Administratorrollen](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
 
 Führen Sie die folgenden Schritte aus, um eine Premium-Kapazität zu erwerben.
 
-1. Klicken Sie im Power BI-Dienst auf die Office 365-App-Auswahl, und wählen Sie dann **Administrator** aus.
+1. Klicken Sie im Power BI-Dienst auf die Microsoft 365-App-Auswahl, und wählen Sie dann **Administrator** aus.
 
-    ![Office 365-App-Auswahl](media/service-admin-premium-purchase/o365-app-picker.png)
+    ![Microsoft 365-App-Auswahl](media/service-admin-premium-purchase/o365-app-picker.png)
 
     Alternativ können Sie zum Microsoft 365 Admin Center wechseln. Dorthin gelangen Sie, indem Sie zu https://portal.office.com navigieren und **Administrator** auswählen.
 
@@ -66,7 +65,7 @@ Da Sie nun über eine Kapazität verfügen, können Sie weitere hinzufügen, wen
 
 1. Suchen Sie unter **Andere Pläne** den Power BI Premium-Artikel aus, von dem Sie mehr erwerben möchten.
 
-1. Zeigen Sie mit dem Mauszeiger auf das **Auslassungszeichen (...)** , und wählen Sie dann **Lizenzanzahl ändern** aus.
+1. Zeigen Sie mit dem Mauszeiger auf **Weitere Optionen** (...), und wählen Sie dann **Lizenzanzahl ändern** aus.
 
     ![Anzahl an Lizenzen ändern](media/service-admin-premium-purchase/premium-purchase-more.png)
 
@@ -107,4 +106,4 @@ Wenn Sie Ihr Premium-Abonnement kündigen oder Ihre Kapazitätslizenz abläuft, 
 [Power BI Premium – Häufig gestellte Fragen](service-premium-faq.md)\
 [Planning a Power BI Enterprise Deployment whitepaper (Whitepaper zum Planen der Unternehmensbereitstellung von Power BI)](https://aka.ms/pbienterprisedeploy)
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

@@ -2,19 +2,18 @@
 title: Virtueller Q&A-Analyst in iOS-Apps – Power BI
 description: Mit dem virtuellen Q&A-Analysten können Sie in der mobilen Power BI-App auf Ihrem iOS-Gerät in Ihren eigenen Worten Fragen zu den Beispieldaten stellen.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2018
 ms.author: mshenhav
-ms.openlocfilehash: 0517299240137bf63ace8aca6a1da577a4443d2d
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 34fe1af53a62c5198cc30625d840321c414be8f7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "60977226"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879377"
 ---
 # <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Virtueller Q&A-Analyst in iOS-Apps – Power BI
 
@@ -35,7 +34,7 @@ Wenn Sie noch nicht bei Power BI registriert sind, müssen Sie sich zuerst für 
 ## <a name="prerequisites"></a>Voraussetzungen
 
 ### <a name="install-the-power-bi-for-ios-app"></a>Installieren der Power BI für iOS-App
-[Laden Sie die iOS-App](http://go.microsoft.com/fwlink/?LinkId=522062 "Herunterladen der iPhone-App") aus dem Apple App Store auf Ihr iPad, Ihr iPhone oder Ihren iPod Touch herunter.
+[Laden Sie die iOS-App](https://go.microsoft.com/fwlink/?LinkId=522062 "iPhone-App herunterladen") aus dem Apple App Store auf Ihr iPad, Ihr iPhone oder Ihren iPod Touch herunter.
 
 Folgende Versionen unterstützen die Power BI für iOS-App:
 - iPad mit iOS 10 oder höher
@@ -49,7 +48,7 @@ Der erste Schritt besteht darin, die Beispiele zu Einzelhandelsanalyse und Oppor
 
 1. Öffnen Sie den Power BI-Dienst (app.powerbi.com), und melden Sie sich an.
 
-2. Wählen Sie im linken Navigationsbereich die Optionen **Arbeitsbereiche** und **Mein Arbeitsbereich** aus.
+2. Klicken Sie im Navigationsbereich auf **Arbeitsbereiche**, **Mein Arbeitsbereich**.
 
 3. Wählen Sie in der linken unteren Ecke **Daten abrufen** aus.
    

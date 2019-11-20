@@ -2,7 +2,6 @@
 title: Konfigurieren von geplanten Aktualisierungen
 description: Hier werden die Schritte zur Auswahl eines Gateways und zur Konfiguration einer geplanten Aktualisierung behandelt.
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/06/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 46f61d2fcce21e3f8e6dae83c32457414928faee
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: 89f8b3d609b9433cc85d8af709eec828f924ad8e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816596"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860697"
 ---
 # <a name="configure-scheduled-refresh"></a>Konfigurieren von geplanten Aktualisierungen
 
@@ -30,7 +29,7 @@ Dabei werden die Optionen beschrieben, die sowohl für das [lokale Datengateway 
 
 Gehen Sie wie folgt vor, um in den Bildschirm für die **Geplante Aktualisierung** zu gelangen.
 
-1. Wählen Sie die **Auslassungspunkte (...)** aus, die neben einem unter **Datasets** aufgelisteten Dataset stehen.
+1. Wählen Sie neben einem Dataset, das unter **Datasets** aufgelistet ist, **Weitere Optionen** (...) aus.
 2. Wählen Sie **Zeitplanaktualisierung** aus.
 
     ![Zeitplanaktualisierung](media/refresh-scheduled-refresh/dataset-menu.png)
@@ -48,11 +47,11 @@ Falls Sie ein persönliches Gateway konfiguriert haben, steht es Ihnen als Auswa
 
 Sie können auch das Enterprise-Gateway verwenden, falls Ihnen eins zur Verfügung steht. Ihnen wird nur dann ein Enterprise-Gateway als verfügbar angezeigt, wenn Ihr Konto in der Registerkarte **Benutzer** der für ein bestimmtes Gateway konfigurierten Datenquelle aufgelistet ist.
 
-## <a name="data-source-credentials"></a>Anmeldeinformationen für Datenquellen
+## <a name="data-source-credentials"></a>Datenquellenanmeldeinformationen
 ### <a name="power-bi-gateway---personal"></a>Power BI Gateway – Personal
 Falls Sie das persönliche Gateway zum Aktualisieren der Daten verwenden, müssen Sie die Anmeldeinformationen angeben, um eine Verbindung mit der Back-End-Datenquelle herzustellen. Falls Sie mit einem Inhaltspaket von einem Onlinedienst verbunden sind, werden die eingegebenen Anmeldeinformationen für die geplante Aktualisierung übernommen.
 
-![Anmeldeinformationen für Datenquellen](media/refresh-scheduled-refresh/data-source-credentials-pgw.png)
+![Datenquellenanmeldeinformationen](media/refresh-scheduled-refresh/data-source-credentials-pgw.png)
 
 Sie müssen sich nur beim ersten Mal bei Datenquellen anmelden, wenn Sie dieses Dataset aktualisiert haben. Sobald Sie sie eingegeben haben, werden diese Anmeldeinformationen im Dataset beibehalten.
 
@@ -127,5 +126,5 @@ Manchmal werden Daten nicht wie erwartet aktualisiert. Dies weist meistens auf e
 - [Problembehandlung beim lokalen Datengateway](service-gateway-onprem-tshoot.md)  
 - [Problembehandlung für Power BI Gateway – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
 

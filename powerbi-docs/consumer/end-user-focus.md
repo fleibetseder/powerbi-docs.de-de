@@ -2,7 +2,6 @@
 title: 'Fokusmodus und Vollbildmodus: Vorgehensweise zum Vergrößern, um weitere Details anzuzeigen'
 description: Dokumentation zur Anzeige eines Power BI-Dashboards, einer Dashboardkachel, eines Berichts oder eines Berichtsvisuals im Fokusmodus oder im Vollbildmodus
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: dtdLul6otYE
 ms.service: powerbi
@@ -11,14 +10,16 @@ ms.topic: conceptual
 ms.date: 09/23/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: a52fdbefabf84df22c89b0e933d56352fedf5da1
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: 633aaf4bd06634f0b1cc7eb2dd38b56eec0cfaf0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71327803"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852746"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>Anzeigen von Inhalten im Detail: Fokusmodus und Vollbildmodus
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]    
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dtdLul6otYE" frameborder="0" allowfullscreen></iframe>
 
@@ -36,7 +37,7 @@ Der Fokusmodus und der Vollbildmodus sind zwei verschiedene Möglichkeiten, um w
 
 ![Dashboardvollbildmodus vorher und nachher](media/end-user-focus/power-bi-dashboards-focus.png)
 
-Zeigen Sie Ihre Inhalte aus dem Power BI-Dienst (Dashboards, Berichtsseiten, Kacheln und Visuals) ohne störende Menüs und Navigationsleisten an.  Sie erhalten jederzeit eine aufgeräumte vollständige Ansicht Ihrer Inhalte auf einen Blick. Dies wird gelegentlich auch als TV-Modus bezeichnet.   
+Zeigen Sie Ihre Inhalte aus dem Power BI-Dienst (Dashboards, Berichtsseiten, Kacheln und Visuals) ohne störende Menüs und Navigationsbereiche an.  Sie erhalten jederzeit eine aufgeräumte vollständige Ansicht Ihrer Inhalte auf einen Blick. Dies wird gelegentlich auch als TV-Modus bezeichnet.   
 
 Um den Vollbildmodus zu öffnen, wählen Sie das Symbol **Vollbild** ![Symbol „Vollbild“](media/end-user-focus/power-bi-full-screen-icon.png) aus der Menüleiste des Power BI-Diensts oberhalb des Dashboards, des Berichts, der Kachel im Fokusmodus oder des Visuals im Fokusmodus aus.  Der ausgewählte Inhalt füllt den gesamten Bildschirm aus.
 Wenn Sie Power BI Mobile verwenden, ist [der Vollbildmodus für mobile Windows 10-Apps verfügbar](./mobile/mobile-windows-10-app-presentation-mode.md). 
@@ -58,7 +59,7 @@ Im Fokusmodus kann ein Power BI-*Consumer* mit Filtern interagieren, die bei Ers
 
 ## <a name="working-in-full-screen-mode"></a>Arbeiten im Vollbildmodus
 
-Um entweder ein Dashboard oder eine Berichtsseite im Vollbildmodus zu öffnen, wählen Sie das Vollbildsymbol ![Symbol „Vollbild“](media/end-user-focus/power-bi-full-screen-icon.png) aus der oberen Navigationsleiste aus. Sobald Sie sich im Vollbildmodus befinden, wird durch Bewegen der Maus oder des Cursors ein Kontextmenü angezeigt. Weil der Vollbildmodus für eine breite Vielfalt an Inhalten verfügbar ist, sind die Optionen im Kontextmenü jeweils etwas unterschiedlich, aber ziemlich selbsterklärend.  Zeigen Sie einfach auf ein Symbol, um eine Definition zu erhalten.
+Um entweder ein Dashboard oder eine Berichtsseite im Vollbildmodus zu öffnen, wählen Sie das Vollbildsymbol ![Symbol „Vollbild“](media/end-user-focus/power-bi-full-screen-icon.png) aus dem oberen Navigationsbereich. Sobald Sie sich im Vollbildmodus befinden, wird durch Bewegen der Maus oder des Cursors ein Kontextmenü angezeigt. Weil der Vollbildmodus für eine breite Vielfalt an Inhalten verfügbar ist, sind die Optionen im Kontextmenü jeweils etwas unterschiedlich, aber ziemlich selbsterklärend.  Zeigen Sie einfach auf ein Symbol, um eine Definition zu erhalten.
 
 Menü für Dashboards    
 ![Menü für Dashboards](media/end-user-focus/power-bi-full-screen-dash.png)    
@@ -97,11 +98,11 @@ Es gibt zwei Möglichkeiten, den Fokusmodus zu öffnen: eine für Dashboardkache
 
 1. Öffnen Sie ein Dashboard im Power BI-Dienst.
 
-2. Zeigen Sie auf eine Dashboardkachel oder ein Berichtsvisual, klicken Sie auf die Auslassungspunkte (...), und wählen Sie dann **Im Fokusmodus öffnen** aus.
+2. Zeigen Sie auf eine Dashboardkachel oder ein Berichtsvisual, wählen Sie **Weitere Optionen** (...) und dann **Im Fokusmodus öffnen** aus.
 
     ![Menü mit Auslassungspunkten (...) für die Kachel](media/end-user-focus/power-bi-dashboard-focus.png).
 
-2. Die Kachel wird geöffnet und füllt den gesamten Berichtszeichenbereich. Beachten Sie, dass Ihnen immer noch der **Filterbereich** zur Verfügung steht, mit dem Sie mit dem Visual interagieren können. Der **Filterbereich** kann zugeklappt werden. 
+2. Die Kachel wird geöffnet und füllt den gesamten Berichtszeichenbereich. Beachten Sie, dass Ihnen immer noch der **Filterbereich** zur Verfügung steht, mit dem Sie mit dem Visual interagieren können. Der **Filterbereich** kann zugeklappt werden.
 
    ![Kachel füllt den Berichtszeichenbereich](media/end-user-focus/power-bi-focus-filter.png)
 

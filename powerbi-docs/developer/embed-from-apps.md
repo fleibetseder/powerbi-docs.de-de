@@ -1,20 +1,19 @@
 ---
 title: Einbetten von Berichten oder Dashboards aus Apps
-description: Erfahren Sie, wie Sie einen Bericht oder ein Dashboard aus einer Power BI-App anstatt aus einem App-Arbeitsbereich integrieren bzw. einbetten.
+description: Erfahren Sie, wie Sie einen Bericht oder ein Dashboard aus einer Power BI-App anstatt aus einem Arbeitsbereich integrieren bzw. einbetten.
 author: rkarlin
 ms.author: rkarlin
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
-manager: kfile
 ms.date: 11/27/2018
-ms.openlocfilehash: 5a988eb160ce772d2c2e70e8cba2c01d3f0a36a9
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: 188601167684313c6e103063e67b9ba57fd2d451
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66750901"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877671"
 ---
 # <a name="embed-reports-or-dashboards-from-apps"></a>Einbetten von Berichten oder Dashboards aus Apps
 
@@ -42,7 +41,7 @@ In Power BI können Sie Apps erstellen, um zusammengehörige Dashboards und Beri
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Erfahren Sie, wie Sie aus App-Arbeitsbereichen für Drittanbieterkunden und Ihre Organisation einbetten:
+Erfahren Sie, wie Sie aus Arbeitsbereichen für Drittanbieterkunden und Ihre Organisation einbetten:
 
 > [!div class="nextstepaction"]
 >[Embed for third-party customers (Einbetten für Drittanbieterkunden)](embed-sample-for-customers.md)

@@ -2,7 +2,6 @@
 title: 'Analysebeispiel für Lieferantenqualität für Power BI: Übersicht'
 description: 'Analysebeispiel für Lieferantenqualität für Power BI: Übersicht'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 76e053d34dcd7f1f199f4cbf9f02196e8efc6232
-ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
+ms.openlocfilehash: 156b00c7f7287f12397afea422a38f3870d6c399
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69621310"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858405"
 ---
 # <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Analysebeispiel für Lieferantenqualität für Power BI: Übersicht
 
@@ -59,11 +58,11 @@ Bevor Sie das Beispiel verwenden können, müssen Sie es zunächst als [Inhaltsp
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Abrufen der PBIX-Datei für dieses Beispiel
 
-Alternativ können Sie das Analysebeispiel für Lieferantenqualität als [PBIX-Datei](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix) herunterladen, die zur Verwendung mit Power BI Desktop vorgesehen ist.
+Alternativ können Sie das Analysebeispiel für Lieferantenqualität als [PBIX-Datei](https://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix) herunterladen, die zur Verwendung mit Power BI Desktop vorgesehen ist.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Abrufen der Excel-Arbeitsmappe für dieses Beispiel
 
-Wenn Sie sich die Datenquelle für dieses Beispiel ansehen möchten, dieses steht auch als [Excel-Arbeitsmappe](http://go.microsoft.com/fwlink/?LinkId=529779) zur Verfügung. Die Arbeitsmappe enthält Power View-Blätter, die Sie anzeigen und ändern können. Aktivieren Sie die Add-Ins für die Datenanalyse, um die Rohdaten anzuzeigen, und klicken Sie dann auf **Power Pivot > Verwalten**. Weitere Informationen zum Aktivieren der Add-Ins für Power View und Power Pivot finden Sie unter [Anzeigen der Excel-Beispiele in Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Wenn Sie sich die Datenquelle für dieses Beispiel ansehen möchten, dieses steht auch als [Excel-Arbeitsmappe](https://go.microsoft.com/fwlink/?LinkId=529779) zur Verfügung. Die Arbeitsmappe enthält Power View-Blätter, die Sie anzeigen und ändern können. Aktivieren Sie die Add-Ins für die Datenanalyse, um die Rohdaten anzuzeigen, und klicken Sie dann auf **Power Pivot > Verwalten**. Weitere Informationen zum Aktivieren der Add-Ins für Power View und Power Pivot finden Sie unter [Anzeigen der Excel-Beispiele in Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="downtime-caused-by-defective-materials"></a>Ausfallzeiten durch Materialmängel
 Wir analysieren die Ausfallzeiten durch Materialmängel und stellen fest, welche Anbieter verantwortlich sind.  
@@ -94,7 +93,7 @@ Wir analysieren die Ausfallzeiten durch Materialmängel und stellen fest, welche
     ![Treemap „Ausfallzeiten (Min.) nach Hersteller“](media/sample-supplier-quality/supplier5.png)  
 
    Auf dieser Treemap sehen wir die acht wichtigsten Hersteller in den acht Blöcken auf der linken Seite der Treemap. Wir sehen auch, dass sie für knapp 50 % aller Ausfallzeiten in Minuten verantwortlich sind.  
-3. Wählen Sie in der oberen Navigationsleiste die Option **Analysebeispiel für Lieferantenqualität** aus, um zum Dashboard zurückzukehren.
+3. Wählen Sie im oberen Navigationsbereich die Option **Analysebeispiel für Lieferantenqualität** aus, um zum Dashboard zurückzukehren.
 
 ### <a name="comparing-plants"></a>Werke vergleichen
 Nun möchten wir prüfen, welches Werk beim Umgang mit Materialmängeln besser abschneidet und weniger Ausfallzeiten verzeichnet.  
@@ -113,7 +112,7 @@ Nun möchten wir prüfen, welches Werk beim Umgang mit Materialmängeln besser a
 3. Wählen Sie die **Logistik**-Blase im Blasendiagramm aus, und sehen Sie sich die Werke in Springfield und Naperville genauer an. Naperville scheint beim Umgang mit Mängeln erfolgreicher zu sein, da es eine Vielzahl an Reklamationen und eine geringe Auswirkung hat – Springfield verzeichnet hingegen einen hohen Wert bei der Auswirkung.  
 
    ![Logistik auswählen](media/sample-supplier-quality/supplier8.png)  
-4. Wählen Sie in der oberen Navigationsleiste die Option **Analysebeispiel für Lieferantenqualität** aus, um zum Dashboard zurückzukehren.
+4. Wählen Sie im oberen Navigationsbereich die Option **Analysebeispiel für Lieferantenqualität** aus, um zum Dashboard zurückzukehren.
 
 ## <a name="which-material-type-is-best-managed"></a>Welcher Materialart schneidet am besten ab?
 Der am besten verwaltete Materialtyp ist unabhängig von der Anzahl der Mängel der Typ mit den geringsten Ausfallzeiten oder gar keiner Beeinträchtigung.
@@ -138,7 +137,7 @@ Der am besten verwaltete Materialtyp ist unabhängig von der Anzahl der Mängel 
 
     ![Diagramm „Gesamtanzahl der Mängel nach Monat und Jahr“](media/sample-supplier-quality/supplier11.png)  
 3. Führen mehr Mängel zwangsläufig zu mehr Ausfallzeiten? Stellen Sie Fragen über das Q&A-Feld, um das in Erfahrung zu bringen.  
-4. Wählen Sie in der oberen Navigationsleiste die Option **Analysebeispiel für Lieferantenqualität** aus, um zum Dashboard zurückzukehren.  
+4. Wählen Sie im oberen Navigationsbereich die Option **Analysebeispiel für Lieferantenqualität** aus, um zum Dashboard zurückzukehren.  
 5. Da wir wissen, dass Rohmaterialien die höchste Anzahl von Mängeln haben, geben Sie dies in das Fragenfeld ein: *Anzeigen von Materialtypen, Jahr und Gesamtanzahl der Mängel* (show material types, year, and total defect qty).  
 
     2014 lagen mehr Mängel bei Rohmaterialien vor als 2013.  

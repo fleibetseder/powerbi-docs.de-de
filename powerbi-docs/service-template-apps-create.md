@@ -2,19 +2,18 @@
 title: Erstellen von Vorlagen-Apps in Power BI
 description: Wie Sie Vorlagen-Apps in Power BI erstellen, die Sie an jeden beliebigen Power BI-Kunden verteilen können.
 author: teddybercovitz
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/15/2019
 ms.author: tebercov
-ms.openlocfilehash: f936d5df9872d6dec8862709f614b2dc28f2e414
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 4b3158cbe26efe05e3d35c1c6c93027738cc817a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71195388"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871494"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Erstellen einer Vorlagen-App in Power BI
 
@@ -33,19 +32,19 @@ Zum Erstellen einer Vorlagen-App ist Folgendes erforderlich:
 - Vertrautheit mit den [grundlegenden Konzepten von Power BI](service-basic-concepts.md)
 - Berechtigungen, um eine Vorlagen-App öffentlich freizugeben. Details finden Sie unter Power BI-[Verwaltungsportal > Vorlagen-App-Einstellungen](service-admin-portal.md#template-apps-settings).
 
-## <a name="create-the-template-app-workspace"></a>Erstellen des Arbeitsbereichs für eine Vorlagen-App
+## <a name="create-the-template-workspace"></a>Erstellen des Arbeitsbereichs für eine Vorlage
 
-Um eine Vorlagen-App zu erstellen, die Sie an andere Power BI-Mandanten verteilen können, müssen Sie diese in einem der neuen App-Arbeitsbereiche erstellen.
+Um eine Vorlagen-App zu erstellen, die Sie an andere Power BI-Mandanten verteilen können, müssen Sie diese in einem der neuen Arbeitsbereiche erstellen.
 
-1. Wählen Sie im Power BI-Dienst die Option **Arbeitsbereiche** > **App-Arbeitsbereich erstellen** aus.
+1. Wählen Sie im Power BI-Dienst die Option **Arbeitsbereiche** > **Arbeitsbereich erstellen** aus.
 
-    ![App-Arbeitsbereich erstellen](media/service-template-apps-create/power-bi-new-workspace.png)
+    ![Erstellen des Arbeitsbereichs](media/service-template-apps-create/power-bi-new-workspace.png)
 
-2. Wählen Sie unter **App-Arbeitsbereich erstellen** die Option **Upgrade auf neue Version durchführen** aus.
+2. Wählen Sie unter **Arbeitsbereich erstellen** die Option **Upgrade auf neue Version durchführen** aus.
 
     ![Ausprobieren neuer Arbeitsbereiche](media/service-template-apps-create/power-bi-upgrade-new.png)
 
-3. Geben Sie einen Namen und für Ihren App-Arbeitsbereich ein und fügen Sie optional eine Beschreibung und ein Bild des Logos hinzu.
+3. Geben Sie einen Namen und für Ihren Arbeitsbereich ein, und fügen Sie optional eine Beschreibung und ein Bild des Logos hinzu.
 
 4. Erweitern Sie den Abschnitt **Erweitert**, und wählen Sie **Vorlagen-App entwickeln** aus.
 
@@ -57,7 +56,7 @@ Um eine Vorlagen-App zu erstellen, die Sie an andere Power BI-Mandanten verteile
 
 ## <a name="create-the-content-in-your-template-app"></a>Erstellen des Inhalts in Ihrer Vorlagen-App
 
-Wie in einem regulären Power BI-Arbeitsbereich, müssen Sie im nächsten Schritt die Inhalte im Arbeitsbereich erstellen.  
+Wie in einem regulären Power BI-Arbeitsbereich müssen Sie im nächsten Schritt die Inhalte im Arbeitsbereich erstellen.  
 
 - [Erstellen Sie Ihren Power BI-Inhalt](power-bi-creator-landing.md) in Ihrem Arbeitsbereich.
 
@@ -69,7 +68,7 @@ Unter [Tips for authoring template apps in Power BI (Tipps für die Erstellung v
 
 Nun, da sich Inhalt in Ihrem Arbeitsbereich befindet, können Sie diesen in einer Vorlagen-App packen. Zunächst müssen Sie eine Test-Vorlagen-App erstellen, auf die nur innerhalb Ihrer Organisation in Ihrem Mandanten zugegriffen werden kann.
 
-1. Klicken Sie im Vorlagen-App-Arbeitsbereich auf **Create app** (App erstellen).
+1. Klicken Sie im Vorlagen-Arbeitsbereich auf **App erstellen**.
 
     ![App erstellen](media/service-template-apps-create/power-bi-create-app.png)
 
@@ -86,7 +85,7 @@ Nun, da sich Inhalt in Ihrem Arbeitsbereich befindet, können Sie diesen in eine
 
     **Navigation**
 
-    Aktivieren Sie den **Neuen Navigations-Generator**, in dem Sie den linken Navigationsbereich definieren können (Weitere Informationen finden Sie in diesem Artikel unter [Entwerfen der Navigation](service-create-distribute-apps.md#design-the-navigation-experience)).
+    Aktivieren Sie den **Neuen Navigations-Generator**, in dem Sie den Navigationsbereich definieren können (Weitere Informationen finden Sie in diesem Artikel unter [Entwerfen der Navigation](service-create-distribute-apps.md#design-the-navigation-experience)).
 
    ![Landing Page der App festlegen](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
     
@@ -133,7 +132,7 @@ Die URL ändert sich nicht, wenn Sie zwischen Releasephasen wechseln. Die Höher
 
 Betrachten wir die einzelnen Phasen nun etwas genauer:
 
-1. Wählen Sie im Vorlagen-App-Arbeitsbereich **Release Management** aus.
+1. Wählen Sie im Vorlagen-Arbeitsbereich **Release Management** aus.
 
     ![Release Management-Symbol](media/service-template-apps-create/power-bi-release-management-icon.png)
 

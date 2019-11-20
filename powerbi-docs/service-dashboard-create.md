@@ -2,7 +2,6 @@
 title: Erstellen eines Power BI-Dashboards aus einem Bericht
 description: Erstellen eines Power BI-Dashboards aus einem Bericht
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -10,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/17/2019
 ms.author: maggies
-ms.openlocfilehash: 6d8a6a28d72ce6d0fa6123b15f9e692ed1cc4d44
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: d67e7acf4309595e8bccac86119ea38f1a97797f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543300"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853407"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Erstellen eines Power BI-Dashboards aus einem Bericht
 Sie haben die [Einführung in Dashboards in Power BI](service-dashboards.md) gelesen und möchten jetzt Sie Ihr eigenes erstellen. Es gibt viele Methoden zum Erstellen eines Dashboards. So können Sie beispielsweise ein Dashboard anhand eines Berichts, von Grund auf neu, anhand eines Datasets oder durch Duplizieren eines vorhandenen Dashboards erstellen.  
@@ -44,11 +43,11 @@ Amanda zeigt Ihnen, wie Sie ein neues Dashboard erstellen, indem Sie Visualisier
 ## <a name="import-a-dataset-with-a-report"></a>Importieren eines Datasets mit einem Bericht
 Wir werden in dieser Anleitung eines der Power BI-Beispieldatasets importieren, um damit unser neues Dashboard zu erstellen. Das Beispiel ist eine Excel-Arbeitsmappe mit zwei PowerView-Arbeitsblättern. Wenn Sie die Arbeitsmappe in Power BI importieren, werden Ihrem Arbeitsbereich ein Dataset und ein Bericht hinzugefügt. Der Bericht wird automatisch aus den PowerView-Tabellen erstellt.
 
-1. Laden Sie die Excel-Datei mit dem [Beispiel der Beschaffungsanalyse](http://go.microsoft.com/fwlink/?LinkId=529784) herunter. Wir empfehlen, die Datei in OneDrive for Business zu speichern.
+1. Laden Sie die Excel-Datei mit dem [Beispiel der Beschaffungsanalyse](https://go.microsoft.com/fwlink/?LinkId=529784) herunter. Wir empfehlen, die Datei in OneDrive for Business zu speichern.
 2. Öffnen Sie den Power BI-Dienst in einem Browser (app.powerbi.com).
-3. Wählen Sie im linken Navigationsbereich **Mein Arbeitsbereich** und anschließend **Daten abrufen** aus.
+3. Wählen Sie im Navigationsbereich **Mein Arbeitsbereich** und anschließend **Daten abrufen** aus.
 
-    ![Linker Navigationsbereich](media/service-dashboard-create/power-bi-get-data-new-look.png)
+    ![Navigationsbereich](media/service-dashboard-create/power-bi-get-data-new-look.png)
 5. Klicken Sie unter **Dateien** auf **Abrufen**.
 
    ![Dateien abrufen](media/service-dashboard-create/power-bi-select-files.png)
@@ -63,7 +62,7 @@ Wir werden in dieser Anleitung eines der Power BI-Beispieldatasets importieren, 
    ![Erfolgsmeldung](media/service-dashboard-create/power-bi-view-datasetnew.png)
 
 > [!TIP]
-> Schon gewusst...? Sie können die linke Navigationsstruktur eingrenzen, indem Sie oben auf das Symbol mit den drei Linien klicken ![Navigationsbereichssymbol ein- oder ausblenden](media/service-dashboard-create/power-bi-new-look-hide-nav-pane.png). Dadurch erhalten Sie mehr Platz für den Bericht selbst.
+> Schon gewusst...? Sie können den Navigationsbereich eingrenzen, indem Sie oben auf das Symbol mit den drei Linien klicken ![Symbol „Navigationsbereich ein- oder ausblenden“](media/service-dashboard-create/power-bi-new-look-hide-nav-pane.png). Dadurch erhalten Sie mehr Platz für den Bericht selbst.
 
 ### <a name="open-the-report-and-pin-tiles-to-your-dashboard"></a>Öffnen des Berichts und Anheften von Kacheln an Ihr Dashboard
 1. Wählen Sie im gleichen Arbeitsbereich die Registerkarte **Berichte** und dann **Analysebeispiel für Beschaffung** aus, um den Bericht zu öffnen.
@@ -118,4 +117,4 @@ Glückwunsch, Sie haben Ihr erstes Dashboard erstellt! Da Sie jetzt über ein Da
 * [Power BI – Grundkonzepte](service-basic-concepts.md)
 * [Tipps zum Gestalten überzeugender Power BI-Dashboards](service-dashboards-design-tips.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/).
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/).

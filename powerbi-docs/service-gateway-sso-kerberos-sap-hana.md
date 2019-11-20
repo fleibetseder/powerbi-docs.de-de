@@ -3,44 +3,44 @@ title: Verwenden von Kerberos für SSO (Single Sign-On, Einmaliges Anmelden) bei
 description: Konfigurieren Ihres SAP HANA-Servers, um einmaliges Anmelden vom Power BI-Dienst zu aktivieren
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 08/01/2019
+ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9e7bdb0ae2f1e512e3e431cf69395d601cbc7b3f
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: bf255e97bbce8360de6fba314ac181b7633e6db3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968528"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872341"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-to-sap-hana"></a>Verwenden von Kerberos für SSO (Single Sign-On, Einmaliges Anmelden) bei SAP HANA
 
 In diesem Artikel wird beschrieben, wie Sie Ihre SAP HANA-Datenquelle dafür konfigurieren, dass SSO vom Power BI-Dienst aktiviert wird.
 
 > [!NOTE]
-> Führen Sie die Schritte in diesem Artikel zusätzlich zu den Schritten in [Konfigurieren von Kerberos-SSO](service-gateway-sso-kerberos.md) aus, bevor Sie versuchen, einen SAP HANA-basierten Bericht, der Kerberos-SSO verwendet, zu aktualisieren.
+> Bevor Sie versuchen, einen auf SAP HANA basierenden Bericht zu aktualisieren, der Kerberos SSO verwendet, führen Sie beide Schritte in diesem Artikel und die Schritte in [Kerberos SSO konfigurieren](service-gateway-sso-kerberos.md) aus.
 
 ## <a name="enable-sso-for-sap-hana"></a>Aktivieren von SSO für SAP HANA
 
 Gehen Sie folgendermaßen vor, um SSO für SAP HANA zu aktivieren:
 
-* Vergewissern Sie sich, dass auf dem SAP HANA-Server die erforderliche Mindestversion ausgeführt wird (abhängig von der Plattformebene Ihres SAP HANA-Servers):
-  * [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386)
-  * [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324)
-  * [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
-* Installieren Sie auf dem Gatewaycomputer den aktuellen HANA-ODBC-Treiber von SAP.  Die Mindestversion ist die HANA-ODBC-Version 2.00.020.00 vom August 2017.
+1. Vergewissern Sie sich, dass auf dem SAP HANA-Server die erforderliche Mindestversion ausgeführt wird (abhängig von der Plattformebene Ihres SAP HANA-Servers):
+   - [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386)
+   - [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324)
+   - [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
 
-Stellen Sie sicher, dass der SAP HANA-Server für Kerberos-basiertes SSO konfiguriert wurde. Weitere Informationen zum Einrichten von SSO für SAP HANA mit Kerberos finden Sie im SAP HANA Security Guide im Thema [Single Sign-On Using Kerberos](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.03/1885fad82df943c2a1974f5da0eed66d.html) (Einmaliges Anmelden mit Kerberos). Sehen Sie sich außerdem die Links auf dieser Seite an – insbesondere den SAP-Hinweis 1837331 (HOWTO HANA DBSSO Kerberos/Active Directory).
+2. Installieren Sie auf dem Gatewaycomputer den aktuellen SAP HANA-ODBC-Treiber. Die Mindestversion ist die HANA-ODBC-Version 2.00.020.00 vom August 2017.
 
-Wir empfehlen außerdem, diese zusätzlichen Schritte durchzuführen, die eine geringfügige Verbesserung der Leistung bewirken können.
+3. Stellen Sie sicher, dass der SAP HANA-Server für Kerberos-basiertes SSO konfiguriert wurde. Weitere Informationen zum Einrichten von SSO für SAP HANA mit Kerberos finden Sie im SAP HANA Security Guide im Thema [Single Sign-On Using Kerberos](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.03/1885fad82df943c2a1974f5da0eed66d.html) (Einmaliges Anmelden mit Kerberos). Sehen Sie sich außerdem die Links auf dieser Seite an – insbesondere den SAP-Hinweis 1837331 (HOWTO HANA DBSSO Kerberos/Active Directory).
 
-1. Suchen Sie im Gatewayinstallationsverzeichnis die folgende Konfigurationsdatei, und öffnen Sie sie: *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*.
+Wir empfehlen außerdem, diese zusätzlichen Schritte durchzuführen, die eine geringfügige Verbesserung der Leistung bewirken können:
 
-2. Suchen Sie die Eigenschaft *FullDomainResolutionEnabled*, und ändern Sie ihren Wert in *True*.
+1. Suchen Sie im Gatewayinstallationsverzeichnis die folgende Konfigurationsdatei, und öffnen Sie sie: Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config.
+
+2. Suchen Sie die `FullDomainResolutionEnabled`-Eigenschaft, und ändern Sie Ihren Wert in `True`.
 
     ```xml
     <setting name=" FullDomainResolutionEnabled " serializeAs="String">
@@ -52,9 +52,9 @@ Jetzt können Sie [einen Power BI-Bericht ausführen](service-gateway-sso-kerber
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Weitere Informationen zum **lokalen Datengateway** und zu **DirectQuery** finden Sie in den folgenden Ressourcen:
+Weitere Informationen zum lokalen Datengateway und zu DirectQuery finden Sie in den folgenden Ressourcen:
 
-* [What is an on-premises data gateway? (Was ist ein lokales Datengateway?)](/data-integration/gateway/service-gateway-getting-started)
+* [What is an on-premises data gateway? (Was ist ein lokales Datengateway?)](/data-integration/gateway/service-gateway-onprem)
 * [DirectQuery in Power BI](desktop-directquery-about.md)
 * [Von DirectQuery unterstützte Datenquellen](desktop-directquery-data-sources.md)
 * [DirectQuery und SAP BW](desktop-directquery-sap-bw.md)

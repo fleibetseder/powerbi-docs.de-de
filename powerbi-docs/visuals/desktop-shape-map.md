@@ -2,20 +2,19 @@
 title: Verwenden von Flächenkartogrammen in Power BI Desktop (Vorschauversion)
 description: Erstellen von relativen Vergleichen von Regionen mithilfe von Flächenkartogrammen in Power BI Desktop
 author: mihart
-manager: kvivek
-ms.reviewer: ''
+ms.reviewer: amanda
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 11/4/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 6543263c0e6c3395479169e8b02034e4a9c78f7b
-ms.sourcegitcommit: 3b4de8785d17c9e00b041cff7bd4d39829316437
+ms.openlocfilehash: 800f7d3cd7f930f2c3411c21e94cadb7cda94c8c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72164101"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871116"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Flächenkartogramme in Power BI Desktop (Vorschau)
 
@@ -61,7 +60,7 @@ Führen Sie die folgenden Schritte aus, um ein **Flächenkartogramm** zu erstell
 3. Mithilfe von Formatierungsoptionen wie **Standardfarbe**, **Zoom** etc. können Sie die Karte ändern. Außerdem können Sie dem Bucket **Legende** auch eine Spalte „Datenkategorie“ hinzufügen und die Kartenregionen basierend auf Kategorien klassifizieren.
 
 ## <a name="use-custom-maps"></a>Verwenden benutzerdefinierter Karten
-Sie können benutzerdefinierte Karten für das **Flächenkartogramm** verwenden, sofern sie das **TopoJSON**-Format aufweisen. Wenn die Karte in einem anderen Format vorliegt, können Sie mit Onlinetools, z.B. [**Map Shaper**](http://mapshaper.org/), die *Shape-Dateien* oder *GeoJSON*-Karten in das **TopoJSON**-Format konvertieren.
+Sie können benutzerdefinierte Karten für das **Flächenkartogramm** verwenden, sofern sie das **TopoJSON**-Format aufweisen. Wenn die Karte in einem anderen Format vorliegt, können Sie mit Onlinetools, z.B. [**Map Shaper**](https://mapshaper.org/), die *Shape-Dateien* oder *GeoJSON*-Karten in das **TopoJSON**-Format konvertieren.
 
 Um die **TopoJSON**-Kartendatei zu verwenden, fügen Sie dem Bericht ein visuelles ShapeMap-Element hinzu, und fügen Sie den Buckets *Standort* und *Farbsättigung* Daten hinzu. Erweitern Sie dann im Bereich **Visualisierungen**, in dem der Abschnitt **Format** (in der folgenden Abbildung als (1) dargestellt) ausgewählt ist, den Abschnitt **Form**, und wählen Sie **+ Karte hinzufügen** aus.
 
@@ -82,7 +81,7 @@ Sie können mit den einzelnen Karten der US-Staaten auch interessante Vorgänge 
 
 Wenn Sie gerne mit diesem Dataset und der Visualisierung experimentieren möchten, können Sie die PBIX-Originaldatei herunterladen, die zur Generierung dieses Berichts verwendet wurde. Sie finden sie unter folgendem Link:
 
-* [PBIX-Demodatei des benutzerdefinierten Flächenkartogramms](http://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix)
+* [PBIX-Demodatei des benutzerdefinierten Flächenkartogramms](https://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix)
 
 ## <a name="getting-map-data"></a>Abrufen von Kartendaten
 Um schnell Daten in ein Modell abzurufen, um **Flächenkartogramm** zu testen, können Sie eine der Tabellen am Ende dieses Artikels kopieren und anschließend auf dem Menüband **Start** **Daten eingeben** auswählen.
@@ -108,7 +107,7 @@ Für dieses Vorschaurelease von **Flächenkartogramm** gibt es einige Bedingunge
 * Die Visualisierung **Flächenkartogramm** befindet sich in der Vorschauversion und muss in Power BI Desktop aktiviert werden. Wählen Sie **Datei > Optionen und Einstellungen > Optionen > Vorschaufeatures** aus, und aktivieren Sie anschließend das Kontrollkästchen bei **Visuelles Formzuordnungselement**, um **Formzuordnung** zu aktivieren.
 * Derzeit muss auch der Bucket **Farbsättigung** festgelegt sein, damit die Klassifizierung **Legende** ordnungsgemäß funktioniert.
 * Die endgültige Version **Formenzuordnung** wird über eine Benutzeroberfläche verfügen, die die Zuordnungsschlüssel der aktuell ausgewählten Zuordnung anzeigt (es ist kein Datum festgelegt, für die endgültige Version, und **Formenzuordnung** ist weiterhin als Vorschau verfügbar). In dieser Vorschauversion können Sie auf die Zuordnungsregionsschlüssel in den Tabellen verweisen, die in folgendem Abschnitt **Regionsschlüssel** dieses Artikels zu finden sind.
-* Das visuelle Element **Flächenkartogramm** kann maximal 1.000 Datenpunkte zeichnen.
+* Das visuelle Element **Flächenkartogramm** kann maximal 1.500 Datenpunkte zeichnen.
 
 ## <a name="region-keys"></a>Regionsschlüssel
 

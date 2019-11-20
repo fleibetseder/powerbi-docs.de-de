@@ -2,7 +2,6 @@
 title: Verwenden von Überwachung in der Organisation
 description: Erfahren Sie, wie Sie mit der Überwachung in Power BI ergriffene Maßnahmen überwachen und untersuchen können. Sie können das Security & Compliance Center oder PowerShell verwenden.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,12 +10,12 @@ ms.date: 09/09/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: aef5a8861a42e566086198c924c99d0b73406f60
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: 76de629f1579289ea3b702013583911d05f08408
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71325458"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873769"
 ---
 # <a name="use-auditing-within-your-organization"></a>Verwenden von Überwachung in der Organisation
 
@@ -162,7 +161,9 @@ Die folgenden Aktivitäten werden von Power BI überwacht:
 | Admin attached dataflow storage account to tenant (Administrator hat Dataflow-Speicherkonten zum Mandanten hinzugefügt) | AdminAttachedDataflowStorageAccountToTenant | Derzeit nicht verwendet                       |
 | Analyzed Power BI dataset (Power BI-Dataset analysiert)                         | AnalyzedByExternalApplication               |                                          |
 | Analyzed Power BI report (Power BI-Bericht analysiert)                          | AnalyzeInExcel                              |                                          |
+| Dataflow-Speicherkonto hinzugefügt                 | AttachedDataflowStorageAccount              |                                          |
 | Binden von Power BI-Datasets an Gateways                | BindToGateway                               |                                          |
+| Dataflow-Aktualisierung abgebrochen                        | CancelDataflowRefresh                       |                                          |
 | Changed capacity state (Kapazitätsstatus geändert)                            | ChangeCapacityState                         |                                          |
 | Changed capacity user assignment (Benutzerzuweisung für die Kapazität geändert)                  | UpdateCapacityUsersAssignment               |                                          |
 | Changed Power BI dataset connections (Power BI-Verbindungen mit Datasets geändert)              | SetAllConnections                           |                                          |
@@ -194,6 +195,7 @@ Die folgenden Aktivitäten werden von Power BI überwacht:
 | Power BI-Bericht gelöscht                           | DeleteReport                                |                                          |
 | Discovered Power BI dataset data sources (Datenquellen für Power BI-Datasets ermittelt)          | GetDatasources                              |                                          |
 | Downloaded Power BI report (Power BI-Bericht herunterladen)                        | DownloadReport                              |                                          |
+| Dataflow-Eigenschaften bearbeitet                        | EditDataflowProperties                      |                                          |
 | Edited Power BI certification permission (Power BI-Zertifikatsberechtigung bearbeitet)          | EditCertificationPermission                 | Derzeit nicht verwendet                       |
 | Power BI-Dashboard bearbeitet                         | EditDashboard                               | Derzeit nicht verwendet                       |
 | Edited Power BI dataset (Power BI-Dataset bearbeitet)                           | EditDataset                                 |                                          |
@@ -213,7 +215,7 @@ Die folgenden Aktivitäten werden von Power BI überwacht:
 | Power BI-Dashboard gedruckt                        | PrintDashboard                              |                                          |
 | Power BI-Berichtseite gedruckt                      | PrintReport                                 |                                          |
 | Published Power BI report to web (Power BI-Bericht im Web veröffentlicht)                  | PublishToWebReport                          |                                          |
-| Received Power BI dataflow secret from Key Vault (Geheimnis für Power BI-Dataflow von Key Vault empfangen)  | ReceiveDataflowSecretFromKeyVault           | Derzeit nicht verwendet                       |
+| Received Power BI dataflow secret from Key Vault (Geheimnis für Power BI-Dataflow von Key Vault empfangen)  | ReceiveDataflowSecretFromKeyVault           |                                          |
 | Removed data source from Power BI gateway (Datenquelle aus Power BI-Gateway entfernt)         | RemoveDatasourceFromGateway                 |                                          |
 | Removed Power BI group members (Power BI-Gruppenmitglieder entfernt)                    | DeleteGroupMembers                          |                                          |
 | Removed workspace from a capacity (Arbeitsbereich aus einer Kapazität entfernt)                 | RemoveWorkspacesFromCapacity                |                                          |
@@ -221,6 +223,7 @@ Die folgenden Aktivitäten werden von Power BI überwacht:
 | Requested Power BI dataflow refresh (Aktualisierung von Power BI-Dataflow angefordert)               | RequestDataflowRefresh                      | Derzeit nicht verwendet                       |
 | Requested Power BI dataflow refresh (Aktualisierung von Power BI-Dataset angefordert)                | RefreshDataset                              |                                          |
 | Retrieved Power BI workspaces (Power BI-Arbeitsbereiche abgerufen)                     | GetWorkspaces                               |                                          |
+| Dataflow-Speicherort für einen Arbeitsbereich festlegen     | SetDataflowStorageLocationForWorkspace      |                                          |
 | Set scheduled refresh on Power BI dataflow (Geplante Aktualisierung des Power BI-Dataflow festgelegt)        | SetScheduledRefreshOnDataflow               |                                          |
 | Set scheduled refresh on Power BI dataset (Geplante Aktualisierung des Power BI-Dataset festgelegt)         | SetScheduledRefresh                         |                                          |
 | Power BI-Dashboard geteilt                         | ShareDashboard                              |                                          |
@@ -229,10 +232,12 @@ Die folgenden Aktivitäten werden von Power BI überwacht:
 | Power BI-Testversion gestartet                            | OptInForProTrial                            |                                          |
 | Took over a Power BI datasource (Power BI-Datenquellen übernommen)                   | TakeOverDataset                          |                                          |
 | Took over Power BI dataset (Power BI-Dataset übernommen)                        | TakeOverDataset                             |                                          |
+| Power BI-Dataflow übernommen                     | TookOverDataflow                             |                                          |
 | Unpublished Power BI app (Veröffentlichung der Power BI-App aufgehoben)                          | UnpublishApp                                |                                          |
 | Update capacity resource governance settings (Governanceeinstellungen für Kapazitätsressourcen aktualisiert)      | UpdateCapacityResourceGovernanceSettings    | Derzeit nicht im Microsoft 365 Admin Center verwendet |
 | Updated capacity admin (Administrator der Kapazität aktualisiert)                            | UpdateCapacityAdmins                        |                                          |
 | Updated capacity display name (Anzeigename der Kapazität aktualisiert)                     | UpdateCapacityDisplayName                   |                                          |
+| Zuweisungsberechtigungen für Dataflow-Speicher aktualisiert   | UpdatedDataflowStorageAssignmentPermissions |                                          |
 | Updated organization's Power BI settings (Power BI-Einstellungen der Organisation aktualisiert)          | UpdatedAdminFeatureSwitch                   |                                          |
 | Updated Power BI app (Power BI-App aktualisiert)                              | UpdateApp                                   |                                          |
 | Updated Power BI dataflow (Power BI-Dataflow aktualisiert)                         | UpdateDataflow                              |                                          |
@@ -255,4 +260,4 @@ Die folgenden Aktivitäten werden von Power BI überwacht:
 
 [Power BI-Verwaltungsportal](service-admin-portal.md)  
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

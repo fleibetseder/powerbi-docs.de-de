@@ -2,7 +2,6 @@
 title: Das neue Design des Power BI-Diensts
 description: Der Power BI-Dienst (app.powerbi.com) hat ein neues Design. In diesem Artikel wird beschrieben, wie Sie mit dem neuen Design in Berichten navigieren.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/08/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 11f60ba14734f40849aec47a492f4bf80c4ef3b5
-ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
+ms.openlocfilehash: c69e0247ecde7d6bd1cf158761a2ff9efd31d2d3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72239958"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881384"
 ---
 # <a name="the-new-look-of-the-power-bi-service"></a>Das neue Design des Power BI-Diensts
 
@@ -66,7 +65,7 @@ Es wurde keine der Funktionen des alten Designs entfernt. Sie haben Zugriff auf 
 
 ### <a name="where-are-file-menu-actions"></a>Wo befinden sich die Aktionen im Menü „Datei“?
 
-Suchen Sie nach den Aktionen im Menü **Datei**? Die Aktionen, die sich bisher im Menü **Datei** befunden haben, sind jetzt ebenfalls im Menü mit den Auslassungspunkten (...) enthalten. 
+Suchen Sie nach den Aktionen im Menü **Datei**? Die Aktionen, die sich bisher im Menü **Datei** befunden haben, sind jetzt ebenfalls im Menü **Weitere Optionen** (...) enthalten. 
 
 ![Menü „Datei“ im neuen Design](media/service-new-look/power-bi-file-menu-new-look.gif)
 

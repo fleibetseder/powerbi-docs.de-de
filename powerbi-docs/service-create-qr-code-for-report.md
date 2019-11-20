@@ -2,7 +2,6 @@
 title: Erstellen eines QR-Codes für einen Bericht für die Verwendung in mobilen Power BI-Apps
 description: QR-Codes in Power BI können alle Elemente in der realen Welt direkt mit verwandten BI-Informationen in der mobilen Power BI-App verbinden – es ist keine Suche erforderlich.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/13/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: eb2ea1fbb96138e892ed563d5999f5bc9da8e59f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: c98f06afe2af93e32d98ff1c3147cc15b64fbb57
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61160675"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853364"
 ---
 # <a name="create-a-qr-code-for-a-report-in-power-bi-to-use-in-the-mobile-apps"></a>Erstellen eines QR-Codes für einen Bericht in Power BI für die Verwendung in mobilen Apps
 QR-Codes in Power BI können alle Elemente in der realen Welt direkt mit verwandten BI-Informationen verbinden – es ist keine Navigation oder Suche erforderlich.
@@ -26,7 +25,7 @@ Kollegen, mit denen Sie den Bericht gemeinsam verwenden, können den QR-Code fü
 
 ## <a name="create-a-qr-code-for-a-report"></a>Erstellen eines QR-Codes für einen Bericht
 1. Öffnen Sie einen Bericht im Power BI-Dienst.
-2. Wählen Sie die Auslassungspunkte (...) in der oberen rechten Ecke und dann **QR-Code generieren**aus. 
+2. Wählen Sie **Weitere Optionen** (...) in der oberen rechten Ecke und dann **QR-Code generieren** aus. 
    
     ![](media/service-create-qr-code-for-report/power-bi-create-qr-code-report.png)
 3. Es wird ein Dialogfeld mit dem QR-Code angezeigt. 
@@ -51,5 +50,5 @@ Power BI generiert den QR-Code für den Druck als JPG-Datei.
 * [Connect to Power BI data from the real world](consumer/mobile/mobile-apps-data-in-real-world-context.md) (Verbinden mit realen Power BI-Daten mit den Apps für mobile Geräte)
 * [Scannen eines Power BI-QR-Codes mit einem mobilen Gerät](consumer/mobile/mobile-apps-qr-code.md)
 * [Erstellen eines QR-Codes für eine Kachel](service-create-qr-code-for-tile.md)
-* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
 

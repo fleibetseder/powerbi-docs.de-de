@@ -2,7 +2,6 @@
 title: 'Fehler: Wir haben in Ihrer Excel-Arbeitsmappe keine Daten gefunden'
 description: 'Fehler: Wir haben in Ihrer Excel-Arbeitsmappe keine Daten gefunden'
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.date: 04/30/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: c32133a7958c1239337a5f77a92dde098652514e
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 08de5051adb420bc2a3b257fcc231730aa505b23
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72542859"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873409"
 ---
 # <a name="error-we-couldnt-find-any-data-in-your-excel-workbook"></a>Fehler: Wir haben in Ihrer Excel-Arbeitsmappe keine Daten gefunden
 
@@ -61,7 +60,7 @@ Wenn Sie eine Excel-Arbeitsmappe importieren, sucht Power BI nach diesen Tabelle
    
     ![Als Tabelle formatierte Daten](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-table.png)
 6. Speichern Sie die Arbeitsmappe.
-7. Kehren Sie zu Power BI zurück. Wählen Sie unten im linken Navigationsbereich „Daten abrufen“ aus.
+7. Kehren Sie zu Power BI zurück. Wählen Sie unten im Navigationsbereich „Daten abrufen“ aus.
    
     ![Daten abrufen](media/service-admin-troubleshoot-excel-workbook-data/power-bi-get-data.png)
 8. Wählen Sie im Feld **Dateien** die Option **Abrufen**aus.

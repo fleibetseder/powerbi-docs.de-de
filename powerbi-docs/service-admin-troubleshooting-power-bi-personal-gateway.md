@@ -2,7 +2,6 @@
 title: Problembehandlung für Power BI Gateway (persönlicher Modus)
 description: Problembehandlung für Power BI Gateway (persönlicher Modus)
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: troubleshooting
 ms.date: 5/06/2019
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 8916d92eef86be601ceb21112209ab7daa736c11
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 32413c8ae860f5c9e376f8be46290047f67231fc
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543528"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873372"
 ---
 # <a name="troubleshooting-power-bi-gateway-personal-mode"></a>Problembehandlung für Power BI Gateway (persönlicher Modus)
 
@@ -128,7 +127,7 @@ Die Protokolle **Datenverwaltungsgateway** und **PowerBIGateway** befinden sich 
 ![Protokolle „Datenverwaltungsgateway“ und „PowerBIGateway“](media/service-admin-troubleshooting-power-bi-personal-gateway/event-logs.png)
 
 ### <a name="fiddler-trace"></a>Ablaufverfolgung mit Fiddler
-[Fiddler](http://www.telerik.com/fiddler) ist ein kostenloses Tool von Telerik, mit dem HTTP-Verkehr überwacht werden kann. Sie können die Kommunikation zwischen dem Power BI-Dienst und dem Clientcomputer verfolgen. Dieser Kommunikation können Sie Fehler und ähnliche Informationen entnehmen.
+[Fiddler](https://www.telerik.com/fiddler) ist ein kostenloses Tool von Telerik, mit dem HTTP-Verkehr überwacht werden kann. Sie können die Kommunikation zwischen dem Power BI-Dienst und dem Clientcomputer verfolgen. Dieser Kommunikation können Sie Fehler und ähnliche Informationen entnehmen.
 
 ![Ablaufverfolgung mit Fiddler](media/service-admin-troubleshooting-power-bi-personal-gateway/fiddler.png)
 
@@ -154,5 +153,5 @@ Sie können alternativ auch im Ordner „Temp“ (%temp%) nach Dateien suchen, d
 - [Problembehandlung für Kachelfehler](refresh-troubleshooting-tile-errors.md)  
 - [Problembehandlung beim lokalen Datengateway](service-gateway-onprem-tshoot.md) 
  
-Weitere Fragen? Stellen Sie Ihre Frage in der [Power BI-Community](http://community.powerbi.com/).
+Weitere Fragen? Stellen Sie Ihre Frage in der [Power BI-Community](https://community.powerbi.com/).
 

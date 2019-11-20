@@ -2,7 +2,6 @@
 title: Ausführen und Anzeigen von Einblicken auf Dashboardkacheln
 description: Hier erfahren Sie, wie Sie als Power BI-Endbenutzer Einblicke in Ihre Datasets und Dashboardkacheln erhalten.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: et_MLSL2sA8
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 9/22/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: c157a486b66180de1299144e670210559a53258a
-ms.sourcegitcommit: 3885ae11e695f875a82c212ca157e401db8337c4
+ms.openlocfilehash: ab37c806aaf3cd666c71dc22ee1f3d4d457647e0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71207580"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73863399"
 ---
 # <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Anzeigen von Einblicken auf Dashboardkacheldaten mit Power BI
 Jede [Kachel](end-user-tiles.md) eines Visuals in Ihrem Dashboard ist ein Ausgangspunkt für das Durchsuchen von Daten. Wenn Sie eine Kachel auswählen, wird ein Bericht oder [Q&A geöffnet](end-user-q-and-a.md), in dem Sie filtern und sortieren und das dem Bericht zugrunde liegende Dataset detailliert analysieren können. Und wenn Sie Einblicke ausführen, erledigt Power BI das Durchsuchen der Daten für Sie.
@@ -31,7 +30,7 @@ Das Feature „Einblicke“ basiert auf einer wachsenden Reihe [erweiterter anal
 Wenn Sie Einblicke für eine Dashboardkachel ausführen, durchsucht Power BI nur die Daten, die zum Erstellen dieser einzelnen Dashboardkachel verwendet wurden. 
 
 1. [Öffnen Sie ein Dashboard](end-user-dashboards.md).
-2. Zeigen Sie auf eine Kachel. Wählen Sie die Auslassungspunkte (...) aus, und wählen Sie dann **Einblicke anzeigen** aus. 
+2. Zeigen Sie auf eine Kachel. Wählen Sie **Weitere Optionen** (...) und dann **Erkenntnisse anzeigen** aus. 
 
     ![Auslassungspunkte-Menümodus](./media/end-user-insights/power-bi-hovers.png)
 

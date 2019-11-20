@@ -2,19 +2,18 @@
 title: Favoriten in den mobilen Power BI-Apps
 description: Hier erfahren Sie mehr über das Erstellen und Anzeigen Ihrer als Favoriten gespeicherten Power BI-Dashboards, -Berichte und -Apps sowie über Power BI-Berichtsserver- und Reporting Services-Berichte und -KPIs in den mobilen Apps.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2018
 ms.author: mshenhav
-ms.openlocfilehash: 433bfc6298632eb9b999a23fe4b54417add507a3
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: c4fcf7bea8bf458231533efbc88e307d8d9ba2ab
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61339353"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870680"
 ---
 # <a name="make-and-view-favorites-in-the-power-bi-mobile-apps"></a>Erstellen und Anzeigen von Favoriten in den mobilen Power BI-Apps
 Gilt für:
@@ -44,7 +43,7 @@ Sie können KPIs und Berichte als Favoriten in Ihrem Power BI-Berichtsserver- od
   ![Seite „Favoriten“](./media/mobile-apps-favorites/power-bi-ipad-favorites.png)
 
 ## <a name="make-an-app-a-favorite"></a>Speichern einer App als Favoriten
-1. Tippen Sie in der mobilen App in der App-Liste neben der gewünschten App auf die Auslassungspunkte (...) > **Zu Favoriten hinzufügen**.
+1. Tippen Sie in der mobilen App in der App-Liste neben der gewünschten App auf **Weitere Optionen** (...) > **Favorit**.
    
     ![Menü „App-Favoriten“](./media/mobile-apps-favorites/power-bi-android-favorite-app-ellipsis.png)
    
@@ -65,7 +64,7 @@ Sie können ein Power BI-Dashboard oder einen Bericht in der Liste der Dashboard
 ## <a name="make-a-dashboard-or-report-a-favorite-in-the-android-mobile-apps"></a>Speichern eines Dashboards oder Berichts als Favorit in mobilen Android-Apps
 Sie können ein Dashboard oder einen Bericht in der Liste der Dashboards oder Berichte oder im Dashboard oder Bericht selbst als Favorit festlegen.
 
-* Tippen Sie in der Liste der Dashboards oder Berichte in der mobilen App auf die vertikalen Auslassungspunkte (...) neben dem Namen, und tippen Sie dann auf **Favorit**. Neben dem Namen wird ein gelber Stern (![Symbol „Favorit“](./././media/mobile-apps-favorites/power-bi-mobile-yes-favorite-icon.png)) angezeigt.
+* Tippen Sie in der Liste der Dashboards oder Berichte in der mobilen App auf die vertikale Schaltfläche **Weitere Optionen** (...) neben dem Namen, und tippen Sie dann auf **Favorit**. Neben dem Namen wird ein gelber Stern (![Symbol „Favorit“](./././media/mobile-apps-favorites/power-bi-mobile-yes-favorite-icon.png)) angezeigt.
   
     ![Menü „Android-Favoriten“](./media/mobile-apps-favorites/power-bi-android-make-favorite.png)
 * Tippen Sie im Dashboard oder Bericht auf der Multifunktionsleiste auf den leeren Stern ![Symbol „Not Favorite“ (Kein Favorit)](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png). Die Farbe des Sterns ändert sich in Dunkelgrau ![Symbol „Favorit“](./media/mobile-apps-favorites/power-bi-android-favorite-icon.png).
@@ -77,5 +76,5 @@ Sie können Ihre als Favoriten gespeicherten Power BI-Berichtsserver- und Report
 
 ## <a name="next-steps"></a>Nächste Schritte
 * [Als Favoriten gespeicherte Dashboards im Power BI-Dienst](../end-user-favorite.md) 
-* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
 

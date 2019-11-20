@@ -2,7 +2,6 @@
 title: Herstellen einer Verbindung mit Salesforce mithilfe von Power BI
 description: Salesforce für Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/30/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b351ba2151937b62002dc0cfca849cff58985581
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 6fedd3994a9e6a14ea89637a0c12aa8dd47928a9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060817"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73854620"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Herstellen einer Verbindung mit Salesforce mithilfe von Power BI
 Mit Power BI können Sie sich problemlos mit Ihrem Salesforce.com-Konto verbinden. Mit dieser Verbindung können Sie Ihre Salesforce-Daten abrufen, und ein Dashboard und Berichte werden automatisch bereitgestellt.
@@ -23,7 +22,7 @@ Mit Power BI können Sie sich problemlos mit Ihrem Salesforce.com-Konto verbinde
 Weitere Informationen zur [Salesforce-Integration](https://powerbi.microsoft.com/integrations/salesforce) mit Power BI.
 
 ## <a name="how-to-connect"></a>Herstellen der Verbindung
-1. Klicken Sie in Power BI unten im linken Navigationsbereich auf **Daten abrufen**.
+1. Wählen Sie in Power BI unten im Navigationsbereich **Daten abrufen**aus.
    
    ![](media/service-connect-to-salesforce/pbi_getdata.png) 
 2. Wählen Sie im Feld **Dienste** die Option **Abrufen**aus.
@@ -53,7 +52,7 @@ Weitere Informationen zur [Salesforce-Integration](https://powerbi.microsoft.com
      
      Wenn keine Berichte angezeigt werden, können Sie diese über Ihr Salesforce-Konto hinzufügen oder erstellen. Anschließend stellen Sie die Verbindung erneut her.
 
-7. Klicken Sie auf **Verbinden**, um den Importvorgang zu starten. Während des Imports wird eine Benachrichtigung angezeigt, dass der Import ausgeführt wird. Wenn der Importvorgang abgeschlossen ist, werden Dashboard, Bericht und Dataset für Ihre Salesforce-Daten im linken Navigationsbereich aufgeführt.
+7. Klicken Sie auf **Verbinden**, um den Importvorgang zu starten. Während des Imports wird eine Benachrichtigung angezeigt, dass der Import ausgeführt wird. Wenn der Importvorgang abgeschlossen ist, werden Dashboard, Bericht und Dataset für Ihre Salesforce-Daten im Navigationsbereich aufgeführt.
    
    ![](media/service-connect-to-salesforce/pbi_getdatasalesforcedash.png)
 

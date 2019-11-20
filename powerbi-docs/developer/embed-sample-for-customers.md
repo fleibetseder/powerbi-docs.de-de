@@ -3,23 +3,22 @@ title: Embedded Analytics für das Einbetten von Power BI-Inhalten in Ihre Anwen
 description: Hier erfahren Sie, wie Sie mit den Power BI-APIs einen Bericht, ein Dashboard oder eine Kachel für Embedded Analytics für Ihre Kunden in eine Anwendung integrieren bzw. einbetten. In diesem Artikel erfahren Sie, wie Sie Power BI mit Embedded Analytics-Software, Embedded Analytics-Tools oder eingebetteten Business Intelligence-Tools in Ihre Anwendung integrieren.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: rkarlin
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 04/02/2019
-ms.openlocfilehash: 8fd87174a1f94ac8a6472238164298c47aa5691e
-ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.openlocfilehash: 24a9c0069cb80a20a84823655437a27a4f6c0e9e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70391812"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877711"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Tutorial: Einbetten von Power BI-Inhalten in eine Anwendung für Ihre Kunden
 
-Mit **Power BI Embedded in Azure** können Sie mit App Owns Data (App ist Besitzer der Daten) Berichte, Dashboards oder Kacheln in eine Anwendung einbetten. Bei **App Owns Data** verwendet eine Anwendung Power BI als eingebettete Analyseplattform. **Unabhängige Softwarehersteller und -entwickler** können Power BI-Inhalt erstellen, der vollständig integrierte und interaktive Berichte, Dashboards oder Kacheln in einer Anwendung anzeigt, ohne dass die Benutzer über eine Power BI-Lizenz verfügen müssen. In diesem Tutorial wird veranschaulicht, wie Sie in **Power BI Embedded in Azure** einen Bericht für Ihre Kunden in eine Anwendung integrieren, indem Sie das Power BI .NET SDK mit der Power BI-JavaScript-API verwenden.
+Mit **Power BI Embedded in Azure** oder **Power BI-Einbetten in Office** können Sie mit App Owns Data (App ist Besitzer der Daten) Berichte, Dashboards oder Kacheln in eine Anwendung einbetten. Bei **App Owns Data** verwendet eine Anwendung Power BI als eingebettete Analyseplattform. **Unabhängige Softwarehersteller** oder **Entwickler** können Power BI-Inhalt erstellen, der vollständig integrierte und interaktive Berichte, Dashboards oder Kacheln in einer Anwendung anzeigt, ohne dass die Benutzer über eine Power BI-Lizenz verfügen müssen. In diesem Tutorial wird veranschaulicht, wie Sie einen Bericht in eine Anwendung integrieren, indem Sie das Power BI .NET SDK mit der Power BI-JavaScript-API verwenden.
 
 ![Power BI Embed Report](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
 
@@ -33,12 +32,9 @@ In diesem Tutorial erhalten Sie Informationen zu den folgenden Vorgängen:
 Sie benötigen Folgendes, um direkt mit dem Tutorial loslegen zu können:
 
 * Ein [Power BI Pro-Konto](../service-self-service-signup-for-power-bi.md) (ein Hauptkonto, d.h. ein Benutzername und ein Kennwort zur Anmeldung in Ihrem Power BI Pro-Konto) oder einen [Dienstprinzipal (Token nur für Anwendungen)](embed-service-principal.md)
-* Ein [Microsoft Azure](https://azure.microsoft.com/)-Abonnement
 * Einen individuell eingerichteten [Azure Active Directory-Mandanten](create-an-azure-active-directory-tenant.md)
 
 Wenn Sie noch nicht bei **Power BI Pro** registriert sind, [registrieren Sie sich für eine kostenlose Testversion](https://powerbi.microsoft.com/pricing/), bevor Sie beginnen.
-
-Wenn Sie kein Azure-Abonnement besitzen, erstellen Sie ein [kostenloses Konto](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), bevor Sie beginnen.
 
 ## <a name="set-up-your-embedded-analytics-development-environment"></a>Einrichten der Entwicklungsumgebung für eingebettete Analysen
 
@@ -60,13 +56,13 @@ Wenn Sie jedoch mit einem Dienstprinzipal fortfahren, müssen Sie eine **servers
 
 ## <a name="set-up-your-power-bi-environment"></a>Einrichten der Power BI-Umgebung
 
-### <a name="create-an-app-workspace"></a>Erstellen eines App-Arbeitsbereichs
+### <a name="create-a-workspace"></a>Arbeitsbereich erstellen
 
-Wenn Sie Berichte, Dashboards oder Kacheln für Ihre Kunden einbetten, müssen Sie Ihre Inhalte in einem App-Arbeitsbereich platzieren. Zur Einrichtung stehen verschiedene Arten von Arbeitsbereichen zur Auswahl: der [traditionelle Arbeitsbereich](../service-create-workspaces.md) oder [neue Arbeitsbereiche](../service-create-the-new-workspaces.md). Wenn Sie ein *Hauptkonto* verwenden, spielt es keine Rolle, welche Art von Arbeitsbereich Sie verwenden. Wenn Sie jedoch einen *[Dienstprinzipal](embed-service-principal.md)* verwenden, um sich in der Anwendung anzumelden, müssen Sie neue Arbeitsbereiche verwenden. In beiden Szenarios müssen das *Hauptkonto* und der *Dienstprinzipal* Administratorkonten für die Arbeitsbereiche Ihrer Anwendung sein.
+Wenn Sie Berichte, Dashboards oder Kacheln für Ihre Kunden einbetten, müssen Sie Ihre Inhalte in einem Arbeitsbereich platzieren. Zur Einrichtung stehen verschiedene Arten von Arbeitsbereichen zur Auswahl: der [traditionelle Arbeitsbereich](../service-create-workspaces.md) oder [neue Arbeitsbereiche](../service-create-the-new-workspaces.md). Wenn Sie ein *Hauptkonto* verwenden, spielt es keine Rolle, welche Art von Arbeitsbereich Sie verwenden. Wenn Sie jedoch einen *[Dienstprinzipal](embed-service-principal.md)* verwenden, um sich in der Anwendung anzumelden, müssen Sie neue Arbeitsbereiche verwenden. In beiden Szenarien müssen das *Hauptkonto* oder der *Dienstprinzipal* Administratorkonten für die Arbeitsbereiche Ihrer Anwendung sein.
 
 ### <a name="create-and-publish-your-reports"></a>Erstellen und Veröffentlichen von Berichten
 
-Sie können Ihre Berichte und Datasets mit Power BI Desktop erstellen und diese Berichte dann in einem App-Arbeitsbereich veröffentlichen. Es gibt zwei Möglichkeiten, dies zu erreichen: Als Endbenutzer können Sie Berichte über ein Hauptkonto mit einer Lizenz für Power BI Pro in einem traditionellen Anwendungsarbeitsbereich veröffentlichen. Wenn Sie einen Dienstprinzipal verwenden, können Sie Berichte über die [Power BI-REST-APIs](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup) in neuen Arbeitsbereichen veröffentlichen.
+Sie können Ihre Berichte und Datasets mit Power BI Desktop erstellen und diese Berichte dann in einem Arbeitsbereich veröffentlichen. Es gibt zwei Möglichkeiten, dies zu erreichen: Als Endbenutzer können Sie Berichte über ein Hauptkonto mit einer Lizenz für Power BI Pro in einem herkömmlichen Arbeitsbereich veröffentlichen. Wenn Sie einen Dienstprinzipal verwenden, können Sie Berichte über die [Power BI-REST-APIs](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup) in neuen Arbeitsbereichen veröffentlichen.
 
 Unten finden Sie eine ausführliche Anleitung, wie Sie Ihren PBIX-Bericht in Ihrem Power BI-Arbeitsbereich veröffentlichen.
 
@@ -78,7 +74,7 @@ Unten finden Sie eine ausführliche Anleitung, wie Sie Ihren PBIX-Bericht in Ihr
 
    ![Power BI Desktop-Bericht](media/embed-sample-for-customers/embed-sample-for-customers-027.png)
 
-3. Veröffentlichen Sie den Bericht in **App-Arbeitsbereiche**. Dieser Vorgang unterscheidet sich, je nachdem, ob Sie ein Hauptkonto mit einer Lizenz für Power BI Pro oder einen Dienstprinzipal verwenden. Wenn Sie ein Hauptkonto verwenden, können Sie Ihren Bericht über Power BI Desktop veröffentlichen.  Wenn Sie einen Dienstprinzipal verwenden, müssen Sie die Power BI-REST-APIs verwenden.
+3. Veröffentlichen Sie den Bericht in **Arbeitsbereichen**. Dieser Vorgang unterscheidet sich, je nachdem, ob Sie ein Hauptkonto mit einer Lizenz für Power BI Pro oder einen Dienstprinzipal verwenden. Wenn Sie ein Hauptkonto verwenden, können Sie Ihren Bericht über Power BI Desktop veröffentlichen.  Wenn Sie einen Dienstprinzipal verwenden, müssen Sie die Power BI-REST-APIs verwenden.
 
 ## <a name="embed-content-using-the-sample-application"></a>Einbetten von Inhalt mit der Beispielanwendung
 
@@ -123,7 +119,7 @@ Führen Sie die folgenden Schritte aus, um **applicationId** abzurufen:
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 
-2. Klicken Sie im Navigationsbereich auf der linken Seite auf **Alle Dienste** > **App-Registrierungen**.
+2. Klicken Sie im Navigationsbereich auf der linken Seite auf **Alle Dienste** und dann auf **App-Registrierungen**.
 
     ![App-Registrierung, Suche](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
@@ -139,7 +135,7 @@ Führen Sie die folgenden Schritte aus, um **applicationId** abzurufen:
 
 Dieses Attribut wird für beide Authentifizierungstypen benötigt (Hauptkonto und [Dienstprinzipal](embed-service-principal.md)).
 
-Geben Sie für **workspaceId** die Anwendungsarbeitsbereichs-GUID (Gruppen-GUID) aus Power BI an. Die benötigten Informationen erhalten Sie entweder aus der URL, wenn Sie im Power BI-Dienst angemeldet sind, oder über PowerShell.
+Geben Sie für **workspaceId** die Arbeitsbereichs-GUID (Gruppen-GUID) aus Power BI an. Die benötigten Informationen erhalten Sie entweder aus der URL, wenn Sie im Power BI-Dienst angemeldet sind, oder über PowerShell.
 
 URL <br>
 
@@ -268,11 +264,23 @@ Report report = reports.Value.FirstOrDefault();
 ```
 
 ### <a name="create-the-embed-token"></a>Erstellen des Einbettungstokens
+Generieren Sie ein Einbettungstoken, das aus der JavaScript-API verwendet werden kann. Es gibt zwei API-Typen, die erste Gruppe enthält fünf APIs, von denen jede ein Einbettungstoken für ein bestimmtes Element erstellt. Die zweite Gruppe, die nur eine API enthält, generiert ein Token, das zum Einbetten mehrerer Elemente verwendet werden kann.
 
-Es wurde ein Einbettungstoken generiert, das aus der JavaScript-API verwendet werden kann. Das Einbettungstoken ist spezifisch für das Element, das Sie einbetten. Das heißt, dass Sie bei jedem Einbetten eines Power BI-Inhaltselements dafür ein neues Einbettungstoken erstellen müssen. Weitere Informationen hierzu, u. a. zum erforderlichen **accessLevel**, finden Sie unter [GenerateToken-API](https://msdn.microsoft.com/library/mt784614.aspx).
+**APIs zum Generieren eines Einbettungstokens für ein bestimmtes Element**
 
-*In der Datei „Services\EmbedService.cs“ in der [Beispielanwendung](https://github.com/Microsoft/PowerBI-Developer-Samples) finden Sie ein Beispiel zum Erstellen eines Einbettungstokens (Bericht, Dashboard oder Kachel).*
+Das mit diesen APIs erstellte Einbettungstoken ist spezifisch für das Element, das Sie einbetten. Jedes Mal, wenn Sie ein Power BI-Element (wie etwa einen Bericht, ein Dashboard oder eine Kachel) mit diesen APIs einbetten, müssen Sie ein neues Einbettungstoken für das Element erstellen.
+* [Dashboards GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/dashboards_generatetokeningroup)
+* [Datasets GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/datasets_generatetokeningroup)
+* [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)
+* [Reports GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup)
+* [Tiles GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/tiles_generatetokeningroup)
 
+Beispiele zum Erstellen eines Einbettungstokens für einen Bericht, ein Dashboard oder eine Kachel stehen in den folgenden Dateien in der [Beispielanwendung](https://github.com/Microsoft/PowerBI-Developer-Samples) zur Verfügung.
+* Services\EmbedService.cs
+* Models\EmbedConfig.cs
+* Models\TileEmbedConfig.cs
+
+Unten finden Sie ein Codebeispiel zur Verwendung der GenerateTokenInGroup-Einbettungstoken-API für Berichte.
 ```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
@@ -290,7 +298,55 @@ var embedConfig = new EmbedConfig()
 };
 ```
 
-Eine Klasse wird für **EmbedConfig** und **TileEmbedConfig** erstellt. Ein Beispiel ist in der Datei **Models\EmbedConfig.cs** und der Datei **Models\TileEmbedConfig.cs** verfügbar.
+**API zum Generieren eines Einbettungstokens für mehrere Elemente**<a id="multiEmbedToken"></a>
+
+Die Einbettungs-API [Token generieren](https://docs.microsoft.com/rest/api/power-bi/embedtoken/generatetoken) generiert ein Token, das zum Einbetten mehrerer Elemente verwendet werden kann.
+
+Sie kann außerdem zum dynamischen Auswählen eines Datasets während des Einbettens eines Berichts verwendet werden. Weitere Informationen über diese Verwendung der API finden Sie unter [dynamische Bindung](embed-dynamic-binding.md).
+
+
+Unten finden Sie ein Beispiel zur Verwendung dieser API.
+ 
+```csharp
+using Microsoft.PowerBI.Api.V2;
+using Microsoft.PowerBI.Api.V2.Models;
+
+var reports = new List<GenerateTokenRequestV2Report>()
+{ 
+    new GenerateTokenRequestV2Report()
+    {
+        AllowEdit = false,
+        Id = report1.Id
+    },
+    new GenerateTokenRequestV2Report()
+    {
+        AllowEdit = true,
+        Id = report2.Id
+    }
+};
+
+var datasets= new List<GenerateTokenRequestV2Dataset>()
+{
+    new GenerateTokenRequestV2Dataset(dataset1.Id),
+    new GenerateTokenRequestV2Dataset(dataset2.Id),
+    new GenerateTokenRequestV2Dataset(dataset3.Id),
+};
+
+var targetWorkspaces = new List<GenerateTokenRequestV2TargetWorkspace>()
+{
+    new GenerateTokenRequestV2TargetWorkspace(workspace1.Id),
+    new GenerateTokenRequestV2TargetWorkspace(workspace2.Id),
+};
+
+var request = new GenerateTokenRequestV2()
+{
+    Datasets = datasetsRequestDetails ?? null,
+    Reports = reportsRequestDetails,
+    TargetWorkspaces = targetWSRequestdetials ?? null,
+};
+
+var token = client.GetClient().EmbedToken.GenerateToken(request);
+```
 
 ### <a name="load-an-item-using-javascript"></a>Laden eines Elements mit JavaScript
 
@@ -345,35 +401,40 @@ Im Beispiel wird ein Modell **EmbedConfig** und ein Modell **TileEmbedConfig** m
 
 ## <a name="move-to-production"></a>In die Produktionsphase wechseln
 
-Wenn Sie mit dem Entwickeln Ihrer Anwendung fertig sind, sollten Sie Ihren App-Arbeitsbereich durch eine dedizierte Kapazität absichern. 
+Wenn Sie mit dem Entwickeln Ihrer Anwendung fertig sind, sollten Sie Ihren Arbeitsbereich durch eine dedizierte Kapazität absichern. 
 
 > [!Important]
-> Dedizierte Kapazität ist erforderlich, um in die Produktionsphase wechseln zu können.
+> Dedizierte Kapazität ist erforderlich, um in die Produktionsphase wechseln zu können. Alle Arbeitsbereiche (jene, die die Berichte oder Dashboards enthalten und jene, die die Datasets enthalten) müssen einer Kapazität zugewiesen werden.
 
 ### <a name="create-a-dedicated-capacity"></a>Erstellen einer dedizierten Kapazität
 
-Wenn Sie eine dedizierte Kapazität erstellen, können Sie Ihrem Kunden eine dedizierte Ressource zuweisen. Sie können eine dedizierte Kapazität im [Microsoft Azure-Portal](https://portal.azure.com) erwerben. Weitere Informationen zum Erstellen einer Power BI Embedded-Kapazität finden Sie unter [Erstellen einer Power BI Embedded-Kapazität im Azure-Portal](azure-pbie-create-capacity.md).
+Wenn Sie eine dedizierte Kapazität erstellen, können Sie Ihrem Kunden eine dedizierte Ressource zuweisen. Sie können unter zwei Typen von Kapazität wählen:
+* **Power BI Premium**: Ein Office 356-Abonnement auf Mandantenebene, das in zwei SKU-Familien erhältlich ist, *EM* und *P*. Beim Einbetten von Power BI-Inhalten wird diese Lösung als *Power BI-Einbettung* bezeichnet. Weitere Informationen zu diesem Abonnement finden Sie unter [Was ist Power BI Premium?](../service-premium-what-is.md)
+* **Azure Power BI Embedded**: Sie können eine dedizierte Kapazität im [Microsoft Azure-Portal](https://portal.azure.com) erwerben. Dieses Abonnement verwendet die *A*-SKUs. Weitere Informationen zum Erstellen einer Power BI Embedded-Kapazität finden Sie unter [Erstellen einer Power BI Embedded-Kapazität im Azure-Portal](azure-pbie-create-capacity.md).
+> [!NOTE]
+> Mit A-SKUs können Sie mit einer KOSTENLOSEN Power BI-Lizenz nicht auf Power BI-Inhalte zugreifen.
 
-Verwenden Sie die folgende Tabelle, um herauszufinden, welche Power BI Embedded-Kapazität am besten zu Ihren Anforderungen passt.
+In der Tabelle unten sind die Ressourcen und Grenzen der einzelnen SKUs beschrieben. Um zu bestimmen, welche Kapazität sich optimal für Ihre Anforderungen eignet, lesen Sie die Tabelle [Welche SKU soll ich für mein Szenario erwerben](https://docs.microsoft.com/power-bi/developer/embedded-faq#power-bi-now-offers-three-skus-for-embedding-a-skus-em-skus-and-p-skus-which-one-should-i-purchase-for-my-scenario).
 
-| Kapazitätsknoten | Gesamtzahl der Kerne<br/>*(Back-End + Front-End)* | Back-End-Kerne | Front-End-Kerne | Grenzwerte für DirectQuery/Liveverbindung|
-| --- | --- | --- | --- | --- | --- |
-| A1 |1 V-Kern |0,5 Kerne, 3 GB RAM |0,5 Kerne |0 5 pro Sekunde |
-| A2 |2 V-Kerne |1 Kern, 5 GB RAM |1 Kern | 10 pro Sekunde |
-| A3 |4 V-Kerne |2 Kerne, 10 GB RAM |2 Kerne | 15 pro Sekunde |
-| A4 |8 V-Kerne |4 Kerne, 25 GB RAM |4 Kerne |30 pro Sekunde |
-| A5 |16 V-Kerne |8 Kerne, 50 GB RAM |8 Kerne |60 pro Sekunde |
-| A6 |32 V-Kerne |16 Kerne, 100 GB RAM |16 Kerne |120 pro Sekunde |
+| Kapazitätsknoten | Gesamtzahl an V-Kernen | Back-End-V-Kerne | RAM (GB) | Front-End-V-Kerne | DirectQuery/Live Connection (s) | Modell-Aktualisierungsparallelität |
+| --- | --- | --- | --- | --- | --- | --- |
+| EM1/A1 | 1 | 0,5 | 2.5 | 0,5 | 3,75 | 1 |
+| EM2/A2 | 2 | 1 | 5 | 1 | 7,5 | 2 |
+| EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
+| P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
+| P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
+| P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
+| | | | | | | |
 
-**_Mit A-SKUs können Sie mit einer KOSTENLOSEN Power BI-Lizenz nicht auf Power BI-Inhalte zugreifen._**
+### <a name="development-testing"></a>Entwicklungstests
 
 Da Einbettungstokens mit Pro-Lizenzen für Entwicklungstests vorgesehen sind, ist die Anzahl von Einbettungstokens limitiert, die ein Power BI-Hauptkonto oder einen -Dienstprinzipal generieren kann. Für eine dedizierte Kapazität ist eine Einbettung in eine Produktionsumgebung erforderlich. Sie können mit einer dedizierten Kapazität so viele eingebettete Token generieren, wie Sie möchten. Verwenden Sie die Vorgänge zum Abrufen [verfügbarer Features](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures), um den Auslastungswert zu überprüfen, der die derzeit eingebettete Auslastung in Prozent angibt. Der Verbrauchsbetrag errechnet sich pro Hauptkonto.
 
 Weitere Informationen finden Sie im [Embedded analytics capacity planning whitepaper (Whitepaper zur Kapazitätsplanung von Embedded Analytics)](https://aka.ms/pbiewhitepaper).
 
-### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Zuweisen eines App-Arbeitsbereichs zu einer dedizierten Kapazität
+### <a name="assign-a-workspace-to-a-dedicated-capacity"></a>Zuweisen eines Arbeitsbereichs zu einer dedizierten Kapazität
 
-Wenn Sie eine dedizierte Kapazität erstellt haben, können Sie ihr Ihren App-Arbeitsbereich zuweisen.
+Wenn Sie eine dedizierte Kapazität erstellt haben, können Sie ihr Ihren Arbeitsbereich zuweisen.
 
 Mithilfe der [Power BI-REST-API](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity) können Sie einem Arbeitsbereich über einen [Dienstprinzipal](embed-service-principal.md) eine dedizierte Kapazität zuzuweisen. Wenn Sie die Power BI-REST-APIs einsetzen, müssen Sie die [Dienstprinzipalobjekt-ID](embed-service-principal.md#how-to-get-the-service-principal-object-id) verwenden.
 
@@ -387,9 +448,9 @@ Entlang der folgenden Schritte können Sie einem Arbeitsbereich über ein **Haup
 
     ![Zuweisen der dedizierten Kapazität](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
 
-3. Nachdem Sie auf **Speichern** geklickt haben, sollte neben dem Namen des App-Arbeitsbereichs eine **Raute** angezeigt werden.
+3. Nachdem Sie auf **Speichern** geklickt haben, sollte neben dem Namen des Arbeitsbereichs eine **Raute** angezeigt werden.
 
-    ![An Kapazität gebundener App-Arbeitsbereich](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
+    ![An Kapazität gebundener Arbeitsbereich](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
 
@@ -398,4 +459,4 @@ In diesem Tutorial haben Sie gelernt, wie Sie Power BI-Inhalte für Ihre Kunden 
 > [!div class="nextstepaction"]
 >[Embed for your organization (Einbetten für Ihre Organisation)](embed-sample-for-your-organization.md)
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

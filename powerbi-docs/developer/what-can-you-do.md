@@ -3,18 +3,17 @@ title: Welche Möglichkeiten bietet Power BI Entwicklern?
 description: Power BI bietet eine Vielzahl von Möglichkeiten für Entwickler. Dies reicht vom Einbetten bis hin zu benutzerdefinierten Visuals und dem Streamen von Datasets.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
 ms.date: 03/15/2019
-ms.openlocfilehash: 0d4f79714be7d354c26a7bd63adbe8bce07ed4ef
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 9105edd88e83f17f4d6e75a7e45dc123a6789713
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307464"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875686"
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>Welche Möglichkeiten bietet Power BI Entwicklern?
 
@@ -22,7 +21,7 @@ Entwicklern stehen verschiedene Optionen zur Verfügung, um Power BI-Inhalte in 
 
 ## <a name="embedding-power-bi-content"></a>Einbetten von Power BI-Inhalt
 
-Der Power BI-Dienst (SaaS) und der Power BI Embedded-Dienst in Azure (PaaS) verfügen über APIs zum Einbetten Ihrer Dashboards und Berichte. Dies bedeutet, dass Sie auf die neuesten Power BI-Features, z.B. Dashboards, Gateways und App-Arbeitsbereich, zugreifen können, wenn Sie Inhalte einbetten.
+Der Power BI-Dienst (SaaS) und der Power BI Embedded-Dienst in Azure (PaaS) verfügen über APIs zum Einbetten Ihrer Dashboards und Berichte. Dies bedeutet, dass Sie auf die neuesten Power BI-Features, z.B. Dashboards, Gateways und Arbeitsbereich, zugreifen können, wenn Sie Inhalte einbetten.
 
 Sie können mit dem [Einbettungssetuptool](https://aka.ms/embedsetup) schnell eine Beispielanwendung herunterladen und mit der Arbeit beginnen.
 

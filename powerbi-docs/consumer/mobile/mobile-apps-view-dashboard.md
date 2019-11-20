@@ -2,19 +2,18 @@
 title: Anzeigen von Dashboards und Berichten in mobilen Power BI-Apps
 description: Erstellen Sie Dashboards und Berichte im Power BI-Dienst, oder stellen eine Verbindung mit diesen her. Zeigen Sie sie anschließend in den mobilen Power BI-Apps an.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: mshenhav
-ms.openlocfilehash: e5e8df2be443b215a02f196c4f676af1cbff6275
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 1a3450ba4a31679c9e2e4ad844ef1058ebfdf4ee
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "69654623"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870670"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Anzeigen von Dashboards und Berichten in mobilen Power BI-Apps
 Gilt für:
@@ -40,7 +39,7 @@ Hier sehen Sie ein Power BI-Dashboard im Power BI-Dienst:
 ## <a name="view-dashboards-on-your-iphone"></a>Anzeigen von Dashboards auf dem iPhone
 1. Öffnen Sie die Power BI-App auf Ihrem iPhone und melden Sie sich an.
    
-   Müssen Sie die [iPhone-App](http://go.microsoft.com/fwlink/?LinkId=522062) aus dem Apple App Store herunterladen?
+   Müssen Sie die [iPhone-App](https://go.microsoft.com/fwlink/?LinkId=522062) aus dem Apple App Store herunterladen?
 2. Tippen Sie auf ein Dashboard, um es zu öffnen.  
    
     ![Tippen auf ein Dashboard](./media/mobile-apps-view-dashboard/power-bi-iphone-dashboard-home.png)
@@ -80,7 +79,7 @@ Mithilfe der Zusammendrückbewegung können Sie unterschiedliche Bereiche des Da
 ## <a name="view-dashboards-on-your-ipad"></a>Anzeigen von Dashboards auf dem iPad
 1. Öffnen Sie die Power BI-App.
    
-   Sie haben die [iPad-App](http://go.microsoft.com/fwlink/?LinkId=522062) noch nicht aus dem Apple App Store heruntergeladen?
+   Sie haben die [iPad-App](https://go.microsoft.com/fwlink/?LinkId=522062) noch nicht aus dem Apple App Store heruntergeladen?
 2. Tippen Sie auf **Dashboards** am oberen Rand der App.  
    
    ![Dashboard-Startseite](./media/mobile-apps-view-dashboard/power-bi-ipad-dashboard-home.png)
@@ -103,7 +102,7 @@ Mithilfe der Zusammendrückbewegung können Sie unterschiedliche Bereiche des Da
 ## <a name="view-dashboards-on-your-android-phone"></a>Anzeigen von Dashboards auf dem Android-Mobiltelefon
 1. Öffnen Sie die Power BI-App auf Ihrem Android-Mobiltelefon und melden Sie sich.
    
-   Sie haben [die Android-App](http://go.microsoft.com/fwlink/?LinkID=544867) noch nicht heruntergeladen?
+   Sie haben [die Android-App](https://go.microsoft.com/fwlink/?LinkID=544867) noch nicht heruntergeladen?
 2. Tippen Sie auf ein Dashboard, um es zu öffnen.   
    
    ![Dashboard-Startseite](./media/mobile-apps-view-dashboard/power-bi-android-dashboards.png)
@@ -118,7 +117,7 @@ Mithilfe der Zusammendrückbewegung können Sie unterschiedliche Bereiche des Da
 
     Wenn Sie Besitzer des Dashboards sind, können Sie im Power BI-Dienst [eine Ansicht des Dashboards speziell für Smartphones](../../service-create-dashboard-mobile-phone-view.md) im Hochformat erstellen. 
 
-1. Tippen Sie auf dem Dashboard auf die vertikalen Auslassungspunkte (...) neben dem Namen, um einen Kollegen einzuladen, das Dashboard zu aktualisieren oder Informationen davon abzurufen:
+1. Tippen Sie auf dem Dashboard auf die vertikale Schaltfläche **Weitere Optionen** (...) neben dem Namen, um einen Kollegen einzuladen, das Dashboard zu aktualisieren oder Informationen davon abzurufen:
    
    ![Menü unter Auslassungspunkten](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 2. Streichen Sie nach oben oder unten, um alle [Kacheln im Dashboard](mobile-tiles-in-the-mobile-apps.md) anzuzeigen. 
@@ -127,14 +126,14 @@ Mithilfe der Zusammendrückbewegung können Sie unterschiedliche Bereiche des Da
 ## <a name="view-dashboards-on-your-android-tablet"></a>Anzeigen von Dashboards auf dem Android-Tablet
 1. Öffnen Sie die Power BI-App auf Ihrem Android-Tablet und melden Sie sich an.
    
-   Sie haben [die Android-App](http://go.microsoft.com/fwlink/?LinkID=544867) noch nicht heruntergeladen?
+   Sie haben [die Android-App](https://go.microsoft.com/fwlink/?LinkID=544867) noch nicht heruntergeladen?
 2. Tippen Sie auf ein Dashboard, um es zu öffnen.   
    
    ![Dashboard-Startseite](./media/mobile-apps-view-dashboard/power-bi-android-tablet-dashboard-home.png)
    
    * Die gelben Sterne ![Favoriten-Stern](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) kennzeichnen die Dashboards, die Favoriten sind. 
    * Die Bezeichnung unterhalb jedes Dashboardnamens (in diesem Fall „MBI“) ![Datenklassifizierung](././media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) gibt an, wie die Daten in den einzelnen Dashboards klassifiziert sind. Erfahren Sie mehr über die [Klassifizierung von Daten in Power BI](../../service-data-classification.md).
-3. Tippen Sie auf dem Dashboard auf die vertikalen Auslassungspunkte (...) neben dem Namen, um einen Kollegen einzuladen, das Dashboard zu aktualisieren oder Informationen davon abzurufen:
+3. Tippen Sie auf dem Dashboard auf die vertikale Schaltfläche **Weitere Optionen** (...) neben dem Namen, um einen Kollegen einzuladen, das Dashboard zu aktualisieren oder Informationen davon abzurufen:
    
    ![Menü unter Auslassungspunkten](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 4. Streichen Sie nach oben oder unten, um alle [Kacheln im Dashboard](mobile-tiles-in-the-mobile-apps.md) anzuzeigen. 
@@ -154,8 +153,8 @@ Wenn Sie der Besitzer des Dashboards sind, können Sie *im Power BI-Dienst* eine
 Lesen Sie mehr unter [Create a phone view of a dashboard in Power BI](../../service-create-dashboard-mobile-phone-view.md) (Erstellen einer Telefonansicht eines Dashboards in Power BI).
 
 ## <a name="next-steps"></a>Nächste Schritte
-* [Herunterladen der Android-App](http://go.microsoft.com/fwlink/?LinkID=544867) aus dem Google Play Store  
+* [Herunterladen der Android-App](https://go.microsoft.com/fwlink/?LinkID=544867) aus dem Google Play Store  
 * [Erste Schritte mit der Android-App für Power BI](mobile-android-app-get-started.md)  
-* [Was ist Power BI?](../../power-bi-overview.md)
-* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+* [Was ist Power BI?](../../fundamentals/power-bi-overview.md)
+* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
 

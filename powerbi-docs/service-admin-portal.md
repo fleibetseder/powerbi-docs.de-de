@@ -2,21 +2,20 @@
 title: Power BI-Verwaltungsportal
 description: Das Verwaltungsportal ermöglicht die Mandantenverwaltung von Power BI in Ihrer Organisation. Es enthält Elemente wie z. B. Nutzungsmetriken und Zugriff auf das Microsoft 365 Admin Center sowie auf die Einstellungen.
 author: mgblythe
-ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/25/2019
+ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: f472ee821d0ccf3bbe8e47697f934b91668cd16d
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: 9970d676019bb253471da48ce3e9019e211ba6c5
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305893"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128386"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Verwalten von Power BI im Verwaltungsportal
 
@@ -169,7 +168,9 @@ Die nächsten Abschnitte bieten einen Überblick über die verschiedenen Arten v
 
 Benutzer in der Organisation können über das Hilfemenü von Power BI zur internen Hilfe und zu Supportressourcen gelangen. Insbesondere ändern diese Parameter das Verhalten der Menüelemente „Weitere Informationen“, „Community“ und „Hilfe erhalten“.
 
-Es ist auch möglich, eine URL anzugeben, um Benutzer zu einer benutzerdefinierten Lösung für Lizenzierungsanforderungen zu leiten. Dieser Parameter passt die Ziel-URL der Schaltfläche „Upgrade für Konto ausführen“ an, die ein Benutzer ohne Power BI Pro-Lizenz im Dialogfeld „Aktualisieren auf Power BI Pro“ sowie auf der Seite „Persönlichen Speicher verwalten“ finden kann.
+    ![Enable except setting](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
+
+Durch Angeben einer URL für Lizenzierungsanforderungen passen Sie die Ziel-URL der Schaltfläche **Upgrade für Konto ausführen** an, die ein Benutzer ohne Power BI Pro-Lizenz im Dialogfeld **Aktualisieren auf Power BI Pro** sowie auf der Seite **Persönlichen Speicher verwalten** finden kann. Darüber hinaus bietet Power BI in diesem Dialogfeld oder auf dieser Speicherseite die Schaltfläche **Pro kostenlos testen** nicht mehr an, um sicherzustellen, dass Power BI die Benutzer über Ihre Lösung zur Lizenzverwaltung zuverlässig durch die in Ihrer Organisation definierten Prozesse führt.
 
 ### <a name="receive-email-notifications-for-service-outages-or-incidents"></a>E-Mail-Benachrichtigungen bei Dienstausfällen oder Incidents
 
@@ -179,7 +180,7 @@ E-Mail-aktivierte Sicherheitsgruppen erhalten E-Mail-Benachrichtigungen, wenn di
 
 ### <a name="create-workspaces"></a>Erstellen von Arbeitsbereichen
 
-Administratoren geben mit der Einstellung **Arbeitsbereiche erstellen** an, welche Benutzer in der Organisation App-Arbeitsbereiche erstellen können, um gemeinsam an Dashboards, Berichten und anderen Inhalten zu arbeiten. Erfahren Sie mehr über [App-Arbeitsbereiche](service-create-the-new-workspaces.md).
+Administratoren geben mit der Einstellung **Arbeitsbereiche erstellen** an, welche Benutzer in der Organisation Arbeitsbereiche erstellen können, um gemeinsam an Dashboards, Berichten und anderen Inhalten zu arbeiten. Erfahren Sie mehr über [Arbeitsbereiche](service-create-the-new-workspaces.md).
 
 Das Verwaltungsportal hat einen weiteren Abschnitt mit Einstellungen zu den Arbeitsbereichen Ihres Mandanten. In diesem Abschnitt können Sie die Liste der Arbeitsbereiche sortieren und filtern und die Details zu jedem Arbeitsbereich anzeigen. Nähere Informationen finden Sie unter [Arbeitsbereiche](#workspaces).
 
@@ -303,7 +304,7 @@ Benutzer in der Organisation können externe Suchfeatures verwenden, die auf Azu
 
 ### <a name="add-and-use-custom-visuals"></a>Benutzerdefinierte Visuals hinzufügen und verwenden
 
-Benutzer in der Organisation können mit benutzerdefinierten Visuals interagieren und diese freigeben. [Weitere Informationen](power-bi-custom-visuals.md)
+Benutzer in der Organisation können mit benutzerdefinierten Visuals interagieren und diese freigeben. [Weitere Informationen](developer/power-bi-custom-visuals.md)
 
 > [!NOTE]
 > Diese Einstellung kann für die gesamte Organisation gelten oder auf bestimmte Gruppen beschränkt werden.
@@ -455,7 +456,7 @@ Als Administrator können Sie die Einbindungscodes anzeigen, die für Ihren Mand
 
  ## <a name="organizational-visuals">Visuals für Organisationen</a> 
 
-Auf der Registerkarte **Organisationsvisuals** können Sie benutzerdefinierte Visuals in Ihrer Organisation bereitstellen und verwalten. Mit Organisationsvisuals können Sie ganz einfach proprietäre Visuals in Ihrer Organisation bereitstellen. Berichtsautoren können diese Visuals dann erkunden und in ihre Berichte in Power BI Desktop importieren. [Weitere Informationen](power-bi-custom-visuals-organization.md)
+Auf der Registerkarte **Organisationsvisuals** können Sie benutzerdefinierte Visuals in Ihrer Organisation bereitstellen und verwalten. Mit Organisationsvisuals können Sie ganz einfach proprietäre Visuals in Ihrer Organisation bereitstellen. Berichtsautoren können diese Visuals dann erkunden und in ihre Berichte in Power BI Desktop importieren. [Weitere Informationen](developer/power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
 > Ein benutzerdefiniertes Visual kann Code mit Sicherheits- oder Datenschutzrisiken enthalten. Stellen Sie sicher, dass Sie dem Autor und der Quelle des benutzerdefinierten Visuals vertrauen können, bevor Sie dieses im Repository der Organisation bereitstellen.
@@ -511,7 +512,7 @@ Um das Visual im Store der Organisation zu aktualisieren, wählen Sie das Zahnra
 
 Stellen Sie sicher, dass die Visual-ID unverändert bleibt. Die neue Datei ersetzt die vorherige Datei für alle Berichte in der gesamten Organisation. Wenn jedoch die neue Version des Visuals irgendeine Verwendung oder Datenstruktur der vorherigen Version des Visuals beeinträchtigen könnte, ersetzen Sie die vorherige Version nicht. Stattdessen sollten Sie einen neuen Eintrag für die neue Version des Visuals erstellen. Fügen Sie beispielsweise eine neue Versionsnummer (Version X.X) zum Titel des neuen gelisteten Visuals hinzu. Auf diese Weise wird deutlich, dass es sich nur um das gleiche Visual mit einer aktualisierten Versionsnummer handelt, sodass die Funktionalität bestehender Berichte nicht beeinträchtigt wird. Stellen Sie erneut sicher, dass die Visual-ID unverändert bleibt. Wenn die Benutzer das Repository der Organisation das nächste Mal über Power BI Desktop verwenden, können sie die neue Version importieren. Sie werden in diesem Fall aufgefordert, die aktuelle Version zu ersetzen, die sich im Bericht befindet.
 
-Weitere Informationen finden Sie in den [häufig gestellten Fragen zu benutzerdefinierten Visuals in Organisationen](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals).
+Weitere Informationen finden Sie in den [häufig gestellten Fragen zu benutzerdefinierten Visuals in Organisationen](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-visuals).
 
 ## <a name="dataflowStorage">Dataflowspeicher (Vorschau)</a>
 
@@ -545,7 +546,7 @@ Als Administrator können Sie das Aussehen von Power BI für Ihre gesamte Organi
 * **Designfarbe auswählen**: Sie können Ihr Design als Hexadezimalzahl oder RGB-Wert angeben oder es aus der integrierten Palette auswählen.
 
 
-Weitere Informationen finden Sie unter [Benutzerdefiniertes Branding für Ihre Organisation](http://aka.ms/orgBranding).
+Weitere Informationen finden Sie unter [Benutzerdefiniertes Branding für Ihre Organisation](https://aka.ms/orgBranding).
 
 ![Liste der Arbeitsbereiche](media/service-admin-portal/workspaces-list.png)
 ## <a name="next-steps"></a>Nächste Schritte

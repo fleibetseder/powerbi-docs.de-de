@@ -3,18 +3,17 @@ title: Übertragen von Daten in ein Dataset per Push
 description: Übertragen von Daten in ein Power BI-Dataset per Push
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/22/2019
-ms.openlocfilehash: 9eb81610044f795b6f9dc5c58aeefad13de06542
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 5db16bfdc1013668be5103f392d6f298c8faf925
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66222155"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875445"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Übertragen von Daten in ein Power BI-Dataset per Push
 
@@ -43,7 +42,7 @@ Es folgen die Vorgänge, um Daten per Push in ein Dataset zu übertragen:
 * [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows)
 * [Get Groups (Gruppen abrufen)](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups)
 
-Erstellen Sie ein Dataset in Power BI durch Übergeben einer JSON-Zeichenfolge (JavaScript Object Notation) an den Power BI-Dienst. Weitere Informationen zu JSON finden Sie unter [Einführung in JSON](http://json.org/).
+Erstellen Sie ein Dataset in Power BI durch Übergeben einer JSON-Zeichenfolge (JavaScript Object Notation) an den Power BI-Dienst. Weitere Informationen zu JSON finden Sie unter [Einführung in JSON](https://json.org/).
 
 Die JSON-Zeichenfolge für ein Dataset hat das folgende Format:
 
@@ -112,13 +111,13 @@ Für ein Power BI-Tabellenschema können Sie die folgenden Datentypen verwenden.
 
 ## <a name="learn-more-about-pushing-data-into-power-bi"></a>Weitere Informationen zum Übertragen von Daten per Push in Power BI
 
-Informationen zum Einstieg in das Übertragen von Daten per Push in ein Dataset finden Sie links im Navigationsbereich unter [Schritt 1: Registrieren einer App in Azure AD](walkthrough-push-data-register-app-with-azure-ad.md).
+Informationen zum Einstieg in das Übertragen von Daten per Push in ein Dataset finden Sie links im Navigationsbereich unter [Schritt 1: Registrieren einer App in Azure AD](walkthrough-push-data-register-app-with-azure-ad.md) im Navigationsbereich.
 
 [Nächster Schritt >](walkthrough-push-data-register-app-with-azure-ad.md)
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 [Registrieren bei Power BI](create-an-azure-active-directory-tenant.md)  
-[Einführung in JSON](http://json.org/)  
+[Einführung in JSON](https://json.org/)  
 [Übersicht über Power BI-REST-API](overview-of-power-bi-rest-api.md)  
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

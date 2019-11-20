@@ -2,21 +2,20 @@
 title: Exportieren von Daten aus einem Power BI-Visual
 description: Exportieren Sie Daten aus einem Berichts- und Dashboardvisual, und zeigen Sie sie in Excel an.
 author: mihart
-manager: kvivek
 ms.reviewer: cmfinlan
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/11/2019
+ms.date: 10/30/2019
 ms.author: mihart
 LocalizationGroup: Consumers
-ms.openlocfilehash: 80033cafbe66303a1d6f55bba61f7d19449dc45b
-ms.sourcegitcommit: f34acbf9fb1ab568fd89773aaf412a847f88dd34
+ms.openlocfilehash: 0e8a3ce01356804aa5dcca21895fa01b5908ebd0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589528"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73851313"
 ---
 # <a name="export-data-from-a-visual"></a>Exportieren von Daten aus einer Visualisierung
 
@@ -26,11 +25,11 @@ Wenn Sie die Daten anzeigen möchten, auf deren Grundlage ein Visual erstellt wu
 
 ## <a name="from-a-visual-on-a-power-bi-dashboard"></a>Aus einem Visual in einem Power BI-Dashboard
 
-1. Starten Sie ein Power BI-Dashboard. Hier verwenden wir das Dashboard aus der ***Beispiel für Vertrieb und Marketing***-App. Sie können [diese APP von AppSource.com herunterladen](https://appsource.microsoft.com/en-us/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample-preview?flightCodes=e2b06c7a-a438-4d99-9eb6-4324ce87f282).
+1. Starten Sie ein Power BI-Dashboard. Hier verwenden wir das Dashboard aus der ***Beispiel für Vertrieb und Marketing***-App. Sie können [diese APP von AppSource.com herunterladen](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample-preview?flightCodes=e2b06c7a-a438-4d99-9eb6-4324ce87f282).
 
     ![App-Dashboard](media/end-user-export/power-bi-dashboards.png)
 
-2. Zeigen Sie auf ein Visual, um die Auslassungspunkte (...) anzuzeigen, und klicken Sie, um das Aktionsmenü anzuzeigen.
+2. Zeigen Sie auf ein Visual, um **Weitere Optionen** (...) anzuzeigen, und klicken Sie, um das Aktionsmenü anzuzeigen.
 
     ![Bei Auswahl der Auslassungspunkte angezeigtes Menü](media/end-user-export/power-bi-action-menu.png)
 

@@ -3,18 +3,17 @@ title: Verwalten der Mehrinstanzenfähigkeit mit Power BI Embedded Analytics
 description: Entwerfen einer mehrinstanzenfähigen Anwendung mit Embedded Analytics.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: 3940f677cadc5844cfac9c32781a5586bde0607a
-ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
+ms.openlocfilehash: 0456e1e56db3e291f359f266b1ac12073fb747da
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69621296"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73864429"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Verwalten der Mehrinstanzenfähigkeit mit Power BI Embedded Analytics
 
@@ -37,7 +36,7 @@ In diesem Artikel werden die unterschiedlichen Ansätze beschrieben und anhand m
 
 **Mandant**: Ein einzelner Kunde (Organisation), der die SaaS-Anwendung und alle Ressourcen oder Daten verwendet, die der Kunde in die SaaS-Anwendung einbringt.
 
-**[Power BI](../power-bi-overview.md)** : Der Power BI-Clouddienst, der als Plattform für Power BI Embedded dient.
+**[Power BI](../fundamentals/power-bi-overview.md)** : Der Power BI-Clouddienst, der als Plattform für Power BI Embedded dient.
 
 **Power BI-Mandant**: Ein Satz von Power BI-Ressourcen, die mit einem einzelnen AAD-Mandanten verknüpft sind.
 
@@ -55,7 +54,7 @@ In diesem Artikel werden die unterschiedlichen Ansätze beschrieben und anhand m
 
 **Kapazität**: Eine Reihe von Ressourcen, die ausschließlich zur Ausführung des Power BI-Diensts verwendet werden. [Power BI Premium-Kapazitäten](../service-premium-what-is.md): Für Unternehmen, die Power BI intern verwenden, während [Power BI Embedded-Kapazitäten](azure-pbie-create-capacity.md) für Anwendungsentwickler bestimmt sind, die SaaS-Anwendungen für Drittanbieter entwickeln möchten.
 
-**[Power BI Pro-Lizenz](../service-admin-purchasing-power-bi-pro.md)** : Eine benutzerbasierte Lizenz, die Rechte zum Veröffentlichen von Inhalten in App-Arbeitsbereichen, zum Nutzen von Apps ohne Premium-Kapazität, zum Freigeben von Dashboards und zum Abonnieren von Dashboards und Berichten erteilt.
+**[Power BI Pro-Lizenz](../service-admin-purchasing-power-bi-pro.md)** : Eine benutzerbasierte Lizenz, die Rechte zum Veröffentlichen von Inhalten in Arbeitsbereichen, zum Nutzen von Apps ohne Premium-Kapazität, zum Freigeben von Dashboards und zum Abonnieren von Dashboards und Berichten erteilt.
 
 **[Datenkonnektivitätsmodi](../desktop-directquery-about.md)** : Die Verbindung zwischen Datenquellen und Power BI kann in verschiedenen Modi hergestellt werden:
 

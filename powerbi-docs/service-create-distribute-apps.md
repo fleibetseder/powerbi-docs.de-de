@@ -2,19 +2,18 @@
 title: Veröffentlichen von Apps in Power BI
 description: Erfahren Sie, wie die neuen Apps veröffentlicht werden, die Sammlungen von Dashboards und Berichten mit integrierter Navigation sind.
 author: maggiesMSFT
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7aa9ec22eec07632a071b5ffaadfe06f221897d7
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 622d01632b9c9cbe6203090b3ac2149d4bc94474
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020224"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853640"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Veröffentlichen von Apps in Power BI
 
@@ -115,7 +114,7 @@ Sie können die App-Navigation folgendermaßen weiter anpassen:
 * Elemente in den Bereichen **Berichtsdetails**, **Dashboarddetails** und **Arbeitsmappendetails** umbenennen.
 * Bestimmte Elemente aus der Navigation ausblenden.
 * Mithilfe der Option **Neu** **Abschnitte** hinzufügen, um verwandte Inhalte zu gruppieren.
-* Mithilfe der Option **Neu** zur linken Navigationsleiste einen **Link** zu einer externen Ressource hinzufügen. 
+* Mithilfe der Option **Neu** zum Navigationsbereich einen **Link** zu einer externen Ressource hinzufügen. 
 
 Wenn Sie einen **Link** hinzufügen, können Sie unter **Linkdetails** auswählen, wo der Link geöffnet wird. Standardmäßig werden Links in der **aktuellen Registerkarte** geöffnet, Sie können jedoch auch **Neue Registerkarte** oder **Inhaltsbereich** auswählen. 
 
@@ -187,7 +186,7 @@ Dadurch wird die App für alle Benutzer, für die sie veröffentlicht wurde, dei
 
 ## <a name="view-your-published-app"></a>Anzeigen der veröffentlichten App
 
-Wenn Ihre App-Benutzer die App öffnen, wird anstelle des standardmäßigen linken Navigationsbereichs von Power BI die von Ihnen erstellte Navigation angezeigt. In der App-Navigation sind die Berichte und Dashboards in den von Ihnen definierten Abschnitten aufgelistet. Zudem sind die einzelnen Seiten in jedem Bericht aufgeführt, nicht nur der Berichtsname.
+Wenn Ihre App-Benutzer die App öffnen, wird anstelle des standardmäßigen Navigationsbereichs von Power BI die von Ihnen erstellte Navigation angezeigt. In der App-Navigation sind die Berichte und Dashboards in den von Ihnen definierten Abschnitten aufgelistet. Zudem sind die einzelnen Seiten in jedem Bericht aufgeführt, nicht nur der Berichtsname.
 
 ![App mit Navigation](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
 
@@ -203,4 +202,4 @@ Aspekte, die beim Veröffentlichen von Apps zu beachten sind:
 * [Installieren und Verwenden von Apps in Power BI](consumer/end-user-apps.md)
 * [Power BI-Apps für externe Dienste](service-connect-to-services.md)
 * [Power BI-Verwaltungsportal](https://docs.microsoft.com/power-bi/service-admin-portal)
-* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

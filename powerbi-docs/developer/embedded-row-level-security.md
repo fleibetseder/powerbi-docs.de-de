@@ -3,18 +3,17 @@ title: Verwenden von Sicherheit auf Zeilenebene für eingebettete Inhalte aus Po
 description: Erfahren Sie mehr zu den Schritten, die Sie durchführen müssen, um Inhalte von Power BI in Ihre Anwendung einzubetten.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 2e7100db05b6ace0e4d530964f645e120387a8b2
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 3ef9bd001e17c472216e501c6d38907087219959
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073347"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875817"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sicherheit auf Zeilenebene mit Power BI Embedded
 
@@ -33,7 +32,7 @@ Um RLS nutzen zu können, müssen Sie drei wichtige Konzepte verstehen: Benutzer
 **Rollen**: Benutzer gehören Rollen an. Eine Rolle ist ein Container für Regeln. Sie kann z.B. mit *Vertriebsleiter* oder *Vertriebsmitarbeiter* benannt werden. Rollen werden in Power BI Desktop erstellt. Weitere Informationen finden Sie unter [Sicherheit auf Zeilenebene (row-level Security; RLS) mit Power BI Desktop](../desktop-rls.md).
 
 **Regeln**: Für Rollen gelten Regeln, und diese Regeln sind die Filter, die auf die Daten anzuwenden sind. Dabei kann es sich um eine einfache Regel, z.B. „Land = USA“, oder eine dynamischere Regel handeln.
-Im Rest dieses Artikels wird ein Beispiel für das Erstellen von RLS beschrieben, das dann in einer eingebetteten Anwendung verwendet wird. In unserem Beispiel wird die PBIX-Datei [Retail Analysis Sample](http://go.microsoft.com/fwlink/?LinkID=780547) (Analysebeispiel für den Einzelhandel) verwendet.
+Im Rest dieses Artikels wird ein Beispiel für das Erstellen von RLS beschrieben, das dann in einer eingebetteten Anwendung verwendet wird. In unserem Beispiel wird die PBIX-Datei [Retail Analysis Sample](https://go.microsoft.com/fwlink/?LinkID=780547) (Analysebeispiel für den Einzelhandel) verwendet.
 
 ![Beispiel für einen Bericht](media/embedded-row-level-security/powerbi-embedded-report-example.png)
 
@@ -73,7 +72,7 @@ Dazu gehen Sie wie folgt vor:
 
     In den Berichten werden jetzt Daten für den angemeldeten Benutzer **AndrewMa** angezeigt.
 
-Wenn der Filter so wie hier angewendet wird, werden alle Datensätze in den Tabellen **District** (Bezirk), **Store** (Geschäft) und **Sales** (Umsätze) gefiltert. Aufgrund der Filterrichtung in den Beziehungen zwischen den Tabellen **Sales** (Umsätze) und **Time** (Zeit), **Sales** (Umsätze) und **Item** (Artikel) sowie **Item** (Artikel) und **Time** (Zeit) erfolgt keine Filterung in diesen Tabellen. Um weitere Informationen über die bidirektionale Kreuzfilterung zu erhalten, laden Sie das Whitepaper [Bidirectional cross-filtering in SQL Server Analysis Services 2016 and Power BI Desktop](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) (Bidirektionale Kreuzfilterung in SQL Server Analysis Services 2016 und Power BI Desktop, in englischer Sprache) herunter.
+Wenn der Filter so wie hier angewendet wird, werden alle Datensätze in den Tabellen **District** (Bezirk), **Store** (Geschäft) und **Sales** (Umsätze) gefiltert. Aufgrund der Filterrichtung in den Beziehungen zwischen den Tabellen **Sales** (Umsätze) und **Time** (Zeit), **Sales** (Umsätze) und **Item** (Artikel) sowie **Item** (Artikel) und **Time** (Zeit) erfolgt keine Filterung in diesen Tabellen. Um weitere Informationen über die bidirektionale Kreuzfilterung zu erhalten, laden Sie das Whitepaper [Bidirectional cross-filtering in SQL Server Analysis Services 2016 and Power BI Desktop](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) (Bidirektionale Kreuzfilterung in SQL Server Analysis Services 2016 und Power BI Desktop, in englischer Sprache) herunter.
 
 ## <a name="applying-user-and-role-to-an-embed-token"></a>Anwenden eines Benutzers und einer Rolle auf ein Einbettungstoken
 
@@ -241,7 +240,7 @@ Die [Sicherheit auf Zeilenebene](../service-admin-rls.md) ist ein Feature, das D
 
 [JavaScript-Filter](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) werden verwendet, um den Benutzern zu ermöglichen, eine reduzierte, auf einen Bereich beschränkte oder gefilterte Ansicht der Daten zu nutzen. Der Benutzer hat dennoch weiterhin Zugriff auf die Tabellen, Spalten und Measures des Modellschemas und kann möglicherweise auf darin enthaltene Daten zugreifen. Eingeschränkter Zugriff auf die Daten kann nur mit RLS angewendet werden, nicht über APIs zur clientseitigen Filterung.
 
-## <a name="token-based-identity-with-azure-sql-database-preview"></a>Tokenbasierte Identität mit Azure SQL-Datenbank (Vorschau)
+## <a name="token-based-identity-with-azure-sql-database"></a>Tokenbasierte Identität mit Azure SQL-Datenbank
 
 Über die **tokenbasierte Identität** können Sie die effektive Identität für ein Einbettungstoken mit dem Zugriffstoken aus **Azure Active Directory (AAD)** für eine **Azure SQL-Datenbank** angeben.
 
@@ -332,7 +331,7 @@ Sie können diese Berechtigung nicht über das Verwaltungsportal festlegen. Dies
 * Wenn das zugrunde liegende Dataset ein Cloudmodell ist (Cachemodell oder DirectQuery), muss die effektive Identität mindestens eine Rolle enthalten. Andernfalls erfolgt keine Rollenzuweisung.
 * Mit einer Identitätenliste werden mehrere Identitätstoken für die Dashboardeinbettung aktiviert. Bei allen anderen Artefakten enthält die Liste eine einzelne Identität.
 
-### <a name="token-based-identity-limitations-preview"></a>Einschränkungen der tokenbasierten Identität (Vorschau)
+### <a name="token-based-identity-limitations"></a>Einschränkungen der tokenbasierten Identität
 
 * Diese Funktion beschränkt die Verwendung nur für Power BI Premium.
 * Diese Funktion funktioniert nicht mit einer lokalen SQL Server-Instanz.

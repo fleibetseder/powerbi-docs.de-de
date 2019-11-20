@@ -3,25 +3,24 @@ title: Lokales Datengateway – Problembehandlung
 description: Dieser Artikel erläutert Wege, wie Sie Probleme behandeln können, die mit dem lokalen Datengateway und Power BI auftreten. Er bietet eventuell Hilfestellungen für bekannte Probleme und nennt Tools, die Sie unterstützen.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: bfb0546771331e13f3703de0afdbcad6c3219f9c
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: b420c827df3c18796d0d46514f81170f202eafbd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543815"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881576"
 ---
 # <a name="troubleshoot-gateways---power-bi"></a>Lokales Datengateway – Problembehandlung
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-In diesem Artikel werden einige häufige Probleme erläutert, die beim Verwenden des lokalen Datengateways mit Power BI auftreten können. Wenn ein Problem auftritt, das hier nicht aufgeführt ist, können Sie die Website der Power BI-[Community](http://community.powerbi.com) verwenden. Oder Sie können ein [Support Ticket](http://powerbi.microsoft.com/support)erstellen.
+In diesem Artikel werden einige häufige Probleme erläutert, die beim Verwenden des lokalen Datengateways mit Power BI auftreten können. Wenn ein Problem auftritt, das hier nicht aufgeführt ist, können Sie die Website der Power BI-[Community](https://community.powerbi.com) verwenden. Oder Sie können ein [Support Ticket](https://powerbi.microsoft.com/support)erstellen.
 
 ## <a name="configuration"></a>Konfiguration
 
@@ -227,7 +226,7 @@ Die Fehlermeldung „-10709 Connection failed error“ (Fehler 10709: Verbindung
 
 Wenn Sie das Gateway für eine geplante Aktualisierung verwenden, kann der **Aktualisierungsverlauf** Ihnen helfen anzuzeigen, welche Fehler aufgetreten sind. Der Verlauf kann auch nützliche Daten liefern, wenn Sie eine Supportanfrage erstellen müssen. Sie können geplante und bedarfsgesteuerte Aktualisierungen anzeigen. In den folgenden Schritten wird beschrieben, wie Sie zur Option „Verlauf aktualisieren“ gelangen.
 
-1. Wählen Sie im Power BI-Navigationsbereich in **Datasets** ein Dataset aus. Öffnen Sie das Menü, und wählen Sie **Aktualisierung planen** aus.
+1. Wählen Sie im Power BI-Navigationsbereich unter **Datasets** ein Dataset aus. Öffnen Sie das Menü, und wählen Sie **Aktualisierung planen** aus.
 
     ![Auswählen der Option „Aktualisierung planen“](media/service-gateway-onprem-tshoot/scheduled-refresh.png)
 
@@ -241,7 +240,7 @@ Weitere Informationen zur Problembehandlung bei Aktualisierungsfehlern finden Si
 
 ## <a name="fiddler-trace"></a>Ablaufverfolgung mit Fiddler
 
-[Fiddler](http://www.telerik.com/fiddler) ist ein kostenloses Tool von Telerik, mit dem HTTP-Verkehr überwacht werden kann. Sie können den Datenaustausch zwischen dem Power BI-Dienst und dem Clientcomputer verfolgen. In dieser Datenverkehrsliste können Fehler und andere zugehörige Informationen enthalten sein.
+[Fiddler](https://www.telerik.com/fiddler) ist ein kostenloses Tool von Telerik, mit dem HTTP-Verkehr überwacht werden kann. Sie können den Datenaustausch zwischen dem Power BI-Dienst und dem Clientcomputer verfolgen. In dieser Datenverkehrsliste können Fehler und andere zugehörige Informationen enthalten sein.
 
 ![Verwenden der Fiddler-Ablaufverfolgung](media/service-gateway-onprem-tshoot/fiddler.png)
 
@@ -254,4 +253,4 @@ Weitere Informationen zur Problembehandlung bei Aktualisierungsfehlern finden Si
 * [Verwalten Ihrer Datenquelle – SQL Server](service-gateway-enterprise-manage-sql.md)  
 * [Verwalten der Datenquelle: Import/Geplante Aktualisierung](service-gateway-enterprise-manage-scheduled-refresh.md)  
 
-Weitere Fragen? Wenden Sie sich an die [Power BI-Community](http://community.powerbi.com/).
+Weitere Fragen? Wenden Sie sich an die [Power BI-Community](https://community.powerbi.com/).

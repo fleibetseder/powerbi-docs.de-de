@@ -2,7 +2,6 @@
 title: Die Berechtigung „Erstellen“ für freigegebene Datasets (Vorschau)
 description: Erfahren Sie, wie Sie die Kontrolle über die zum Zugriff auf ihre Daten berechtigten Personen behalten, indem Sie die Berechtigung „Erstellen“ verwenden.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 069ec5e0c767bcfcb0a4a41c2180ae78146800f2
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: b17fa4299d2db84f63f0d8f7ed4c17a0c9c437db
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020897"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872560"
 ---
 # <a name="build-permission-for-shared-datasets-preview"></a>Die Berechtigung „Erstellen“ für freigegebene Datasets (Vorschau)
 
@@ -29,7 +28,7 @@ Es gibt verschiedene Möglichkeiten zum Erteilen der Berechtigung „Erstellen�
 
 - Mitglieder eines Arbeitsbereichs mit mindestens der Rolle „Mitwirkender“ haben automatisch die Berechtigung „Erstellen“ für Datasets in diesem Arbeitsbereich und die Berechtigung zum Kopieren eines Berichts.
  
-- Mitglieder des Arbeitsbereichs, in dem sich das Dataset befindet, können die Berechtigung im Berechtigungscenter bestimmten Benutzern oder Sicherheitsgruppen zuweisen. Wenn Sie Mitglied des Arbeitsbereichs sind, klicken Sie auf Auslassungspunkte (…) neben einem Dataset und dann auf **Berechtigungen verwalten**.
+- Mitglieder des Arbeitsbereichs, in dem sich das Dataset befindet, können die Berechtigung im Berechtigungscenter bestimmten Benutzern oder Sicherheitsgruppen zuweisen. Wenn Sie Mitglied des Arbeitsbereichs sind, klicken Sie auf **Weitere Optionen** (…) neben einem Dataset und dann auf **Berechtigungen verwalten**.
 
     ![Auswählen der Auslassungspunkte](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
@@ -50,11 +49,11 @@ Sie können einer Person die Berechtigung „Erstellen“ für ein Dataset entzi
 Es ist möglich, dass Sie irgendwann Benutzern eines freigegebenen Datensatzes die Berechtigung „Erstellen“ entziehen müssen. 
 
 1. Wechseln Sie in einem Arbeitsbereich zur Listenseite **Datasets**. 
-1. Klicken Sie auf die Auslassungspunkte (...) neben dem Dataset und dann auf **Berechtigungen verwalten**.
+1. Klicken Sie neben dem Dataset auf **Weitere Optionen** (...) und dann auf **Berechtigungen verwalten**.
 
     ![Berechtigungen verwalten](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
-1. Klicken Sie auf die Auslassungspunkte (...) neben einem Namen und dann auf **Remove build** (Berechtigung „Erstellen“ entziehen).
+1. Wählen Sie neben einem Namen **Weitere Optionen**  (...) und dann **Build entfernen** aus.
 
     ![Berechtigung „Erstellen“ entziehen](media/service-datasets-build-permissions/power-bi-dataset-remove-build-permissions.png)
 
@@ -80,11 +79,11 @@ Angenommen, Sie haben eine App aus einem Arbeitsbereich an eine Gruppe von Benut
 1. Klicken Sie auf **Aktualisieren**.
 
 1. Wechseln Sie im Arbeitsbereich zur Listenseite **Datasets**. 
-1. Klicken Sie auf die Auslassungspunkte (...) neben dem Dataset und dann auf **Berechtigungen verwalten**.
+1. Klicken Sie neben dem Dataset auf **Weitere Optionen** (...) und dann auf **Berechtigungen verwalten**.
 
     ![Berechtigungen verwalten](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
-1. Klicken Sie auf die Auslassungspunkte (...) neben einem Namen und dann auf **Remove build** (Berechtigung „Erstellen“ entziehen).
+1. Wählen Sie neben ihrem Namen **Weitere Optionen**  (...) und dann **Build entfernen** aus.
 
     ![Berechtigung „Erstellen“ entziehen](media/service-datasets-build-permissions/power-bi-dataset-remove-build-permissions.png)
 
@@ -103,4 +102,4 @@ Sie können die Berechtigung „Erstellen“ entziehen. In diesem Fall können d
 ## <a name="next-steps"></a>Nächste Schritte
 
 - [Verwenden von Datasets in mehreren Arbeitsbereichen (Vorschau)](service-datasets-across-workspaces.md)
-- Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+- Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: Erstellen von klassischen Arbeitsbereichen in Power BI
 description: Informationen zum Erstellen von Arbeitsbereichen, Sammlungen von Dashboards, Berichten und paginierten Berichten, die zum Bereitstellen von Schlüsselmetriken für Ihre Organisation konzipiert wurden.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/10/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 32b9adc92222e2122aff41d7ef7ef351c3158951
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 3153e63685e21a29687c33e702c4ade55324e05c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020245"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853549"
 ---
 # <a name="create-classic-workspaces-in-power-bi"></a>Erstellen von klassischen Arbeitsbereichen in Power BI
 
@@ -39,7 +38,7 @@ Wenn Sie diesen erstellen, müssen Sie möglicherweise etwa eine Stunde warten, 
 ### <a name="add-an-image-to-your-office-365-workspace-optional"></a>Hinzufügen eines Bilds im Office 365-Arbeitsbereich (optional)
 Standardmäßig wird für die App in Power BI ein kleiner farbiger Kreis mit den Initialen der App erstellt. Sie können dies jedoch mit einem Bild anpassen. Sie benötigen eine Exchange Online-Lizenz, um ein Bild hinzuzufügen.
 
-1. Wählen Sie **Arbeitsbereiche**, wählen Sie die Auslassungspunkte (...) neben dem Namen des Arbeitsbereichs, und wählen Sie dann **Mitglieder** aus. 
+1. Wählen Sie **Arbeitsbereiche**, wählen Sie **Weitere Optionen** (...) neben dem Namen des Arbeitsbereichs, und wählen Sie dann **Mitglieder** aus. 
    
      ![Auswählen von Mitgliedern des Arbeitsbereichs](media/service-create-workspaces/power-bi-workspace-old-members.png)
    
@@ -75,7 +74,7 @@ In den aktuellen Arbeitsbereichen können Sie auch mithilfe organisationsbezogen
 
 Wenn Sie offizielle Inhalte an eine große Zielgruppe innerhalb Ihrer Organisation verteilen möchten, können Sie eine App aus Ihrem Arbeitsbereich veröffentlichen.  Wenn der Inhalt bereit ist, wählen Sie aus, welche Dashboards und Berichte Sie veröffentlichen möchten, und veröffentlichen Sie diese dann als *App*. Sie können über jeden Arbeitsbereich eine App erstellen.
 
-In der Liste der Apps im linken Navigationsbereich werden alle Apps angezeigt, die Sie installiert haben. Ihre Kollegen können Ihre App auf verschiedene Weise abrufen. 
+In der Liste der Apps im Navigationsbereich werden alle Apps angezeigt, die Sie installiert haben. Ihre Kollegen können Ihre App auf verschiedene Weise abrufen. 
 - Sie können Ihre Apps in Microsoft AppSource suchen und installieren.
 - Sie können Ihnen einen direkten Link senden. 
 - Sie können sie automatisch in den Power BI-Konten Ihrer Kollegen installieren, wenn Ihr Power BI-Administrator Ihnen die Berechtigung dazu erteilt. 
@@ -97,4 +96,4 @@ Einen Vergleich der beiden Arbeitsbereiche finden Sie unter [Unterschiede zwisch
 ## <a name="next-steps"></a>Nächste Schritte
 * [Installieren und Verwenden von Apps in Power BI](service-create-distribute-apps.md)
 - [Erstellen neuer Arbeitsbereiche](service-create-the-new-workspaces.md)
-* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

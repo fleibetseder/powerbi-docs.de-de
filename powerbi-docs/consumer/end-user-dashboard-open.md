@@ -2,7 +2,6 @@
 title: Anzeigen eines Power BI-Dashboards
 description: Dashboards sind ein wichtiges Feature des Power BI-Diensts, erfahren Sie, wie Sie sie öffnen und ein Dashboard anzuzeigen.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 629db8e4706bfb42f3f1b3ad65b8a57577d7ee21
-ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
+ms.openlocfilehash: f250d380fc8938f7b5d7723b5b8becb65f27d79d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72716384"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852601"
 ---
 # <a name="view-a-dashboard"></a>Anzeigen eines Dashboards
 
@@ -39,7 +38,7 @@ Power BI Pro ist sowohl für Freigeben eines Dashboards als auch Anzeigen eines 
 
 
 
-Sie können Dashboards in allen in der linken Navigationsleiste vorhandenen Containern finden. 
+Sie können Dashboards in allen im Navigationsbereich angezeigten Containern finden. 
 
 ![Dashboard-Symbol](media/end-user-dashboard-open/power-bi-open-dashboards.gif)
 

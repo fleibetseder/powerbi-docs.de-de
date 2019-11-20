@@ -2,20 +2,19 @@
 title: Tutorial zum Visual „Wichtige Einflussfaktoren“
 description: 'Tutorial: Erstellen eines Visuals für wichtige Einflussfaktoren in Power BI'
 author: mihart
-manager: kvivek
 ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 05/22/2019
+ms.date: 10/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 056457d5a90585fd30a0a85f95d28d1097c720b0
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 80ed285a22c0272f3bd268397e0e019396b941d7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72544052"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870996"
 ---
 # <a name="key-influencers-visualization"></a>Visual „Wichtige Einflussfaktoren“
 
@@ -58,7 +57,7 @@ Sehen Sie sich dieses Video an, um zu erfahren, wie ein Visual für wichtige Ein
    > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Ihr Produkt-Manager möchte, dass Sie ermitteln, welche Faktoren dazu führen, dass Kunden negative Bewertungen zu Ihrem Clouddienst abgeben. Öffnen Sie die Datei [customerfeedback.pbix](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) in Power BI Desktop, um diesem Tutorial zu folgen. Sie können außerdem die Excel-Datei [customerfeedback.xlsx](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx) für den Power BI-Dienst oder Power BI Desktop herunterladen. 
+Ihr Produkt-Manager möchte, dass Sie ermitteln, welche Faktoren dazu führen, dass Kunden negative Bewertungen zu Ihrem Clouddienst abgeben. Öffnen Sie die Datei [customerfeedback.pbix](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) in Power BI Desktop, um diesem Tutorial zu folgen. Sie können außerdem die Excel-Datei [customerfeedback.xlsx](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx) für den Power BI-Dienst oder Power BI Desktop herunterladen. Wählen Sie einen der beiden Links aus, und wählen Sie von der dann geöffneten GitHub-Seite **Herunterladen** aus.
 
 > [!NOTE]
 > Das Customer Feedback-Dataset basiert auf dem Werk [Moro et al., 2014] S. Moro, P. Cortez und P. Rita. „A Data-Driven Approach to Predict the Success of Bank Telemarketing“. *Decision Support Systems*, Elsevier, 62:22-31, Juni 2014. 
@@ -240,7 +239,7 @@ In den wichtigsten Segmenten für numerische Zielsetzungen werden Gruppen angege
 
 ## <a name="analyze-a-metric-that-is-a-measure-or-a-summarized-column"></a>Analysieren einer Metrik, die ein Measure oder eine zusammengefasste Spalte ist
 
-Im Fall eines Measures oder einer zusammengefassten Spalte wird die Analyse standardmäßig auf den [oben](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric) beschriebenen **Continuous Analysis Type** (kontinuierlichen Analysetyp) festgelegt. Dies kann nicht geändert werden. Der größte Unterschied zwischen der Analyse eines Measures oder einer zusammengefassten Spalte und einer nicht zusammengefassten numerischen Spalte ist die Ebene, auf der die Analyse ausgeführt wird.
+Im Fall eines Measures oder einer zusammengefassten Spalte wird die Analyse standardmäßig auf den [oben](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric) beschriebenen **Continuous Analysis Type** (kontinuierlichen Analysetyp) festgelegt. Dies kann nicht geändert werden. Der größte Unterschied zwischen der Analyse eines Measures oder einer zusammengefassten Spalte und einer nicht zusammengefassten numerischen Spalte ist die Ebene, auf der die Analyse ausgeführt wird.
 
 Im Fall von nicht zusammengefassten Spalten wird die Analyse immer auf Tabellenebene ausgeführt. Im obigen Beispiel des Immobilienpreises haben wir die Metrik **House Price** (Hauspreis) analysiert, um zu sehen, was den Preis für ein Haus steigen oder sinken lässt. Die Analyse wird automatisch auf Tabellenebene ausgeführt. Unsere Tabelle verfügt über eine eindeutige ID für jedes Haus, damit die Analyse auf Hausebene ausgeführt wird.
 
@@ -254,7 +253,7 @@ Measures und zusammengefasste Spalten werden automatisch auf der Ebene der verwe
 
 Diese Analyse ist extrem zusammengefasst, sodass es für das Regressionsmodell schwierig ist, in den Daten Muster zu finden, aus denen es lernen kann. Wir sollten die Analyse detaillierter ausführen, um bessere Ergebnisse zu erzielen. Wenn wir den Hauspreis auf der Hausebene analysieren möchten, müssen wir das **ID**-Feld der Analyse explizit hinzufügen. Trotzdem möchten wir nicht, dass die Haus-ID als Einflussfaktor angesehen wird. Es hilft uns nicht, zu erfahren, dass der Preis für ein Haus steigt, wenn die Haus-ID sich erhöht. An dieser Stelle ist die Feldoption **Erweitern durch** praktisch. Mithilfe der Feldoption **Erweitern durch** können Sie Felder hinzufügen, die Sie verwenden möchten, um die Ebene der Analyse festzulegen, ohne nach neuen Einflussfaktoren suchen zu müssen.
 
-Sehen Sie sich an, wie die Visualisierung aussieht, nachdem Sie die **ID** für die Feldoption **Erweitern durch** hinzugefügt haben. Nachdem Sie die Ebene definiert haben, auf der das Measure ausgewertet werden soll, erfolgt das Interpretieren von Einflussfaktoren genau gleich wie bei [nicht zusammengefassten numerischen Spalten](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric).
+Sehen Sie sich an, wie die Visualisierung aussieht, nachdem Sie die **ID** für die Feldoption **Erweitern durch** hinzugefügt haben. Nachdem Sie die Ebene definiert haben, auf der das Measure ausgewertet werden soll, erfolgt das Interpretieren von Einflussfaktoren genau gleich wie bei [nicht zusammengefassten numerischen Spalten](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric).
 
 ![Measures-Tabelle](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
 

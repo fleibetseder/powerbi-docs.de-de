@@ -2,7 +2,6 @@
 title: Erstellen von ansprechenden Berichten aus Excel-Arbeitsmappen im Power BI-Dienst
 description: In diesem Artikel wird beschrieben, wie Sie unkompliziert ansprechende Berichte aus einer Excel-Arbeitsmappe erstellen.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,15 +9,15 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: ed4bc9d10e3e1512aba559d77ba8729a39cb8a84
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: c2a4719a03e37569e40d4247939a9f2c73379e52
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68995072"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872516"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-the-power-bi-service"></a>Erstellen von ansprechenden Berichten aus Excel-Arbeitsmappen im Power BI-Dienst
-Ihr Vorgesetzter möchte bis zum Ende des Arbeitstages von Ihnen einen Bericht über die aktuellen Verkaufszahlen in Verbindung mit den Eindrücken der letzten Kampagne angefertigt bekommen. Die neuesten Daten befinden sich jedoch auf verschiedenen Systemen von Drittanbietern und in Dateien auf Ihrem Laptop. In der Vergangenheit hat es Stunden gedauert, Visuals zu erstellen und einen Bericht zu formatieren, weshalb Sie nervös werden.
+Ihre Vorgesetzte möchte bis zum Ende des Arbeitstages von Ihnen einen Bericht über die aktuellen Verkaufszahlen in Verbindung mit den Eindrücken der letzten Kampagne angefertigt bekommen. Die neuesten Daten befinden sich jedoch auf verschiedenen Systemen von Drittanbietern und in Dateien auf Ihrem Laptop. In der Vergangenheit hat es Stunden gedauert, Visuals zu erstellen und einen Bericht zu formatieren, weshalb Sie nervös werden.
 
 Kein Problem. Mit Power BI können Sie in kürzester Zeit einen beeindruckenden Bericht erstellen.
 
@@ -57,7 +56,7 @@ Der Power BI-Dienst stellt Verbindungen mit vielen Datenquellen her, einschlie�
 
    ![Dropdownliste „Erstellen“](media/service-from-excel-to-stunning-report/power-bi-create-dash.png)
 
-4. Klicken Sie unten im linken Navigationsbereich auf **Daten abrufen**. 
+4. Wählen Sie unten im Navigationsbereich **Daten abrufen** aus. 
 
 5. Klicken Sie auf der Seite **Daten abrufen** im Feld **Dateien** unter **Neuen Inhalt erstellen** auf **Abrufen**.
 
@@ -111,7 +110,7 @@ Wie sieht es mit der Anzeige einer Visualisierung der Verkäufe nach Produkt- un
 
 2. Klicken Sie auf eines der Symbole im Menü **Visualisierungen**, um den Typ des Diagramms zu ändern. Ändern Sie ihn z. B. in **Gestapeltes Säulendiagramm**. 
 
-3. Klicken Sie zum Sortieren des Diagramms auf die Auslassungspunkte (...) und dann auf **Sortieren nach**.
+3. Klicken Sie zum Sortieren des Diagramms auf **Weitere Optionen** (...) und dann auf **Sortieren nach**.
 
    ![Gestapeltes Säulendiagramm im Berichts-Editor](media/service-from-excel-to-stunning-report/pbi_barchart-new.png)
 
@@ -140,5 +139,5 @@ Angenommen, Sie möchten Ihr Dashboard für Ihren Vorgesetzten freigeben. Sie k�
 * [Erste Schritte mit Power BI Desktop](desktop-getting-started.md)
 * [Grundlegende Konzepte für Designer im Power BI-Dienst](service-basic-concepts.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/).
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/).
 

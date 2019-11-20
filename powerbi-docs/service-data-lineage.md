@@ -2,19 +2,18 @@
 title: Datenherkunft (Vorschau)
 description: In Projekten mit moderner Business Intelligence (BI) ist es für viele Kunden eine wesentliche Herausforderung, den Datenfluss von der Datenquelle bis zum Ziel zu verstehen.
 author: paulinbar
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.date: 10/03/2019
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: e91f1d5084957ee7266161b9a34f916e2902d1f4
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 774b8b19f8b199e1d98b2bd5e079b35f1a9a6935
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72019589"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877364"
 ---
 # <a name="data-lineage-preview"></a>Datenherkunft (Vorschau)
 In Projekten mit moderner Business Intelligence (BI) kann es eine Herausforderung sein, den Datenfluss von der Datenquelle bis zum Ziel zu verstehen. Die Herausforderung ist noch größer, wenn Sie erweiterte analytische Projekte erstellt haben, die mehrere Datenquellen, Artefakte und Abhängigkeiten umfassen.  Es kann schwierig sein, Fragen wie „Was geschieht, wenn ich diese Daten ändere?“ oder „Warum ist dieser Bericht nicht auf dem neusten Stand?“ zu beantworten. Sie benötigen möglicherweise ein Team von Experten oder eine umfassende Untersuchung, um das zu verstehen. Wir haben die Datenherkunftsansicht entworfen, um Sie beim Beantworten dieser Fragen zu unterstützen.
@@ -55,7 +54,7 @@ Bei Datasets sehen Sie den Zeitpunkt der letzten Aktualisierung und ob ein Datas
  
 Wenn ein Bericht im Arbeitsbereich auf einem Dataset in einem anderen Arbeitsbereich basiert, wird der Name des Quellarbeitsbereichs auf der Datasetkarte angezeigt. Wählen Sie den Namen des Quellarbeitsbereichs aus, um zu diesem Arbeitsbereich zu wechseln.
  
-- Wählen Sie für jedes Artefakt die Auslassungspunkte (...) aus, um das Optionsmenü anzuzeigen. Es enthält alle Aktionen, die auch in der Listenansicht verfügbar sind.
+- Wählen Sie für jedes Artefakt **Weitere Optionen** (...) aus, um das Optionsmenü anzuzeigen. Es enthält alle Aktionen, die auch in der Listenansicht verfügbar sind.
   
 Wählen Sie die Datasetkarte selbst aus, um mehr Metadaten in Datasets anzuzeigen. Weitere Informationen zum Dataset werden in einem Seitenbereich angezeigt.
 
@@ -89,7 +88,8 @@ Die Herkunftsansicht ist eine interaktive Canvas. Mit der Maus und dem Touchpad 
 
 ## <a name="considerations-and-limitations"></a>Überlegungen und Einschränkungen
 
-Die Herkunftsansicht ist in Internet Explorer nicht verfügbar. Weitere Informationen finden Sie unter [Unterstützte Browser für Power BI](power-bi-browsers.md).
+- Die Herkunftsansicht ist in Internet Explorer nicht verfügbar. Weitere Informationen finden Sie unter [Unterstützte Browser für Power BI](power-bi-browsers.md).
+- Die Herkunftsansicht ist in „Mein Arbeitsbereich“ nicht verfügbar.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

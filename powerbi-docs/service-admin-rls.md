@@ -2,7 +2,6 @@
 title: Sicherheit auf Zeilenebene (row-level security; RLS) mit Power BI
 description: Erfahren Sie, wie Sie die Sicherheit auf Zeilenebene für importierte Datasets in DirectQuery im Power BI-Dienst konfigurieren.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,12 +10,12 @@ ms.author: mblythe
 ms.date: 09/09/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 04a8c8a08d885427e9de43b719674fce4ac2ebbd
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 6ce3a65489c60cabb1dd705ce3243c4cec6abe40
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074847"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873511"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Sicherheit auf Zeilenebene (row-level security; RLS) mit Power BI
 
@@ -28,7 +27,7 @@ Sie können RLS für Datenmodelle konfigurieren, die mithilfe von Power BI Deskt
 
 Standardmäßig werden beim Filtern mit Sicherheit auf Zeilenebene einzelne unidirektionale Filter verwendet, unabhängig davon, ob die Beziehungen als unidirektional oder bidirektional festgelegt wurden. Sie können die bidirektionale Kreuzfilterung mit Sicherheit auf Zeilenebene manuell aktivieren, indem Sie die Beziehung auswählen und das Kontrollkästchen **Sicherheitsfilter in beide Richtungen anwenden** aktivieren. Sie sollten dieses Kontrollkästchen aktivieren, wenn Sie auch dynamische Sicherheit auf Zeilenebene auf der Serverebene implementiert haben, wo die Sicherheit auf Zeilenebene auf Grundlage eines Benutzernamens oder der Anmelde-ID bereitstellt wird.
 
-Weitere Informationen finden Sie unter [Bidirektionale Kreuzfilterung mithilfe von DirectQuery in Power BI Desktop](desktop-bidirectional-filtering.md) und im Artikel [Securing the Tabular BI Semantic Model](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) (Sichern des semantischen BI-Tabellenmodells, in englischer Sprache).
+Weitere Informationen finden Sie unter [Bidirektionale Kreuzfilterung mithilfe von DirectQuery in Power BI Desktop](desktop-bidirectional-filtering.md) und im Artikel [Securing the Tabular BI Semantic Model](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) (Sichern des semantischen BI-Tabellenmodells, in englischer Sprache).
 
 ![Anwenden eines Sicherheitsfilters](media/service-admin-rls/rls-apply-security-filter.png)
 
@@ -70,7 +69,7 @@ Sie können Mitglieder entfernen, indem Sie das „X“ neben ihrem Namen auswä
 
 Sie können überprüfen, ob die von Ihnen definierte Rolle ordnungsgemäß funktioniert, indem Sie sie testen. 
 
-1. Wählen Sie das **Auslassungszeichen (...)** neben der Rolle aus.
+1. Wählen Sie **Weitere Optionen** (...) neben der Rolle aus.
 2. Wählen Sie **Daten als Rolle testen** aus.
 
 ![Als Rolle testen](media/service-admin-rls/rls-test-role.png)
@@ -89,12 +88,12 @@ Um zur normalen Ansicht zurückzukehren, wählen Sie **Zurück zur Sicherheit au
 
 [!INCLUDE [include-short-name](./includes/rls-usernames.md)]
 
-## <a name="using-rls-with-app-workspaces-in-power-bi"></a>Verwenden von RLS mit App-Arbeitsbereichen in Power BI
+## <a name="using-rls-with-workspaces-in-power-bi"></a>Verwenden von RLS mit Arbeitsbereichen in Power BI
 
-Wenn Sie Ihren Power BI Desktop-Bericht in einem App-Arbeitsbereich im Power BI-Dienst veröffentlichen, werden die Rollen auf Mitglieder mit Lesezugriff angewendet. Sie müssen in den Einstellungen angeben, dass Mitglieder die Power BI-Inhalte nur im App-Arbeitsbereich anzeigen können.
+Wenn Sie Ihren Power BI Desktop-Bericht in einem Arbeitsbereich im Power BI-Dienst veröffentlichen, werden die Rollen auf Mitglieder mit Lesezugriff angewendet. Sie müssen in den Einstellungen angeben, dass Mitglieder die Power BI-Inhalte nur im Arbeitsbereich anzeigen können.
 
 > [!WARNING]
-> Wenn Sie den App-Arbeitsbereich so konfiguriert haben, dass deren Mitglieder über Bearbeitungsberechtigungen verfügen, werden die RLS-Rollen nicht auf diese angewendet. Benutzer können dann alle Daten einsehen.
+> Wenn Sie den Arbeitsbereich so konfiguriert haben, dass dessen Mitglieder über Bearbeitungsberechtigungen verfügen, werden die RLS-Rollen nicht auf diese angewendet. Benutzer können dann alle Daten einsehen.
 
 ![Gruppeneinstellungen](media/service-admin-rls/rls-group-settings.png)
 
@@ -105,4 +104,4 @@ Wenn Sie Ihren Power BI Desktop-Bericht in einem App-Arbeitsbereich im Power BI-
 ## <a name="next-steps"></a>Nächste Schritte
 [Sicherheit auf Zeilenebene (Row-Level Security; RLS) mit Power BI Desktop](desktop-rls.md)  
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

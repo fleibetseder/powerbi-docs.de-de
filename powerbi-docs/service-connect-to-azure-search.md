@@ -2,7 +2,6 @@
 title: Herstellen einer Verbindung mit Azure Search mithilfe von Power BI
 description: Azure Search für Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 8b7560570af4f1b459cdde8589c0afdb9194e154
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 511fb6674d84cc0d206fdb1807fcb9ebf9e41d30
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060926"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873100"
 ---
 # <a name="connect-to-azure-search-with-power-bi"></a>Herstellen einer Verbindung mit Azure Search mithilfe von Power BI
 Azure Search Traffic Analytics ermöglicht das Überwachen und Verstehen des Datenverkehrs zu Ihrem Azure Search-Dienst. Das Azure Search-Inhaltspaket für Power BI bietet detaillierte Einblicke in Ihre Suchdaten, einschließlich Suchen, Indizierung, Dienststatistiken und Latenz der letzten 30 Tage. Weitere Informationen finden Sie im [Azure-Blogbeitrag](https://azure.microsoft.com/blog/analyzing-your-azure-search-traffic/).
@@ -25,7 +24,7 @@ Azure Search Traffic Analytics ermöglicht das Überwachen und Verstehen des Dat
 Stellen Sie eine Verbindung mit dem [Azure Search-Inhaltspaket](https://app.powerbi.com/getdata/services/azure-search) für Power BI her.
 
 ## <a name="how-to-connect"></a>Herstellen der Verbindung
-1. Wählen Sie unten im linken Navigationsbereich **Daten abrufen** aus.
+1. Wählen Sie unten im Navigationsbereich **Daten abrufen** aus.
    
    ![](media/service-connect-to-azure-search/pbi_getdata.png) 
 2. Wählen Sie im Feld **Dienste** die Option **Abrufen**aus.

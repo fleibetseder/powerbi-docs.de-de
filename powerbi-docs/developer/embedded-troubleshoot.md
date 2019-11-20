@@ -3,18 +3,17 @@ title: Problembehandlung bei Embedded-Anwendungen
 description: In diesem Artikel werden einige häufige Probleme erläutert, die beim Einbetten von Inhalten aus Power BI auftreten können.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
 ms.date: 02/05/2019
-ms.openlocfilehash: 08d66df2456917c09b6b0c1d9c40e2de47f53fa5
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 4038ffdb9a3218c0b2f04dd524463235fa91b6b7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543903"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73864104"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Problembehandlung bei Embedded-Anwendungen
 
@@ -24,7 +23,7 @@ In diesem Artikel werden einige häufige Probleme erläutert, die beim Einbetten
 
 ### <a name="fiddler-trace"></a>Ablaufverfolgung mit Fiddler
 
-[Fiddler](http://www.telerik.com/fiddler) ist ein kostenloses Tool von Telerik, mit dem HTTP-Verkehr überwacht werden kann.  Sie können den Datenverkehr zwischen den Power BI-APIs und dem Clientcomputer verfolgen. So können Sie Fehler und ähnliche Informationen anzeigen.
+[Fiddler](https://www.telerik.com/fiddler) ist ein kostenloses Tool von Telerik, mit dem HTTP-Verkehr überwacht werden kann.  Sie können den Datenverkehr zwischen den Power BI-APIs und dem Clientcomputer verfolgen. So können Sie Fehler und ähnliche Informationen anzeigen.
 
 ![Ablaufverfolgung mit Fiddler](media/embedded-troubleshoot/fiddler.png)
 
@@ -78,9 +77,9 @@ Zur genaueren Prüfung muss möglicherweise eine Fiddler-Überwachung ausgeführ
 
 * Der Benutzer hat die Anzahl von Einbettungstoken überschritten, die mit einer gemeinsam genutzten Kapazität generiert werden können. Erwerben Sie weitere Azure-Kapazitäten, und weisen Sie den Arbeitsbereich dieser Kapazität zu, um weitere Einbettungstoken generieren zu können. Weitere Informationen finden Sie unter [Einrichten von Power BI Embedded-Kapazität im Azure-Portal](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
 * Das Azure AD-Auth-Token ist abgelaufen.
-* Der authentifizierte Benutzer ist kein Mitglied der Gruppe (App-Arbeitsbereich).
-* Der authentifizierte Benutzer ist kein Administrator der Gruppe (App-Arbeitsbereich).
-* Der authentifizierte Benutzer verfügt über keine Berechtigungen. Berechtigungen können mithilfe der [refreshUserPermissions-API](https://docs.microsoft.com/en-us/rest/api/power-bi/users/refreshuserpermissions) aktualisiert werden.
+* Der authentifizierte Benutzer ist kein Mitglied der Gruppe (Arbeitsbereich).
+* Der authentifizierte Benutzer ist kein Administrator der Gruppe (Arbeitsbereich).
+* Der authentifizierte Benutzer verfügt über keine Berechtigungen. Berechtigungen können mithilfe der [refreshUserPermissions-API](https://docs.microsoft.com/rest/api/power-bi/users/refreshuserpermissions) aktualisiert werden.
 * Der Autorisierungsheader wird möglicherweise nicht ordnungsgemäß aufgeführt. Stellen Sie sicher, dass keine Rechtschreibfehler enthalten sind.
 
 Das Back-End der Anwendung muss das Auth-Token möglicherweise vor dem Aufrufen von GenerateToken aktualisieren.
@@ -293,7 +292,7 @@ Wenn Sie die Beispiel-App **Einbetten für Ihre Organisation** ausführen, wird 
 
     AADSTS50011: The reply URL specified in the request doesn't match the reply URLs configured for the application: <client ID>
 
-Dieser Fehler entsteht, weil die Umleitungs-URL, die für die Webserveranwendung angegeben ist, sich von der URL des Beispiels unterscheidet. Wenn Sie die Beispielanwendung registrieren möchten, verwenden Sie `http://localhost:13526/` als Umleitungs-URL.
+Dieser Fehler entsteht, weil die Umleitungs-URL, die für die Webserveranwendung angegeben ist, sich von der URL des Beispiels unterscheidet. Wenn Sie die Beispielanwendung registrieren möchten, verwenden Sie `https://localhost:13526/` als Umleitungs-URL.
 
 Wenn Sie die registrierte Anwendung bearbeiten möchten, lernen Sie, wie Sie die [mit AAD registrierte Anwendung aktualisieren](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-update-azure-ad-app), damit die Anwendung Zugriff auf die Web-APIs bereitstellen kann.
 
@@ -305,7 +304,7 @@ Wenn Sie den Fehler AADSTS50079 erhalten: Der Benutzer muss mehrstufige Authenti
 
 Weitere Informationen finden Sie unter [Häufig gestellte Fragen zu Power BI Embedded](embedded-faq.md).
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 
 Wenn Sie weitere Unterstützung benötigen, [wenden Sie sich an den Support](https://powerbi.microsoft.com/support/pro/?Type=documentation&q=power+bi+embedded), oder [erstellen Sie ein Supportticket über das Azure-Portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest), und geben Sie die Fehlermeldungen an, die Sie erhalten.
 
@@ -313,4 +312,4 @@ Wenn Sie weitere Unterstützung benötigen, [wenden Sie sich an den Support](htt
 
 Weitere Informationen finden Sie in den [FAQs](embedded-faq.md).
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

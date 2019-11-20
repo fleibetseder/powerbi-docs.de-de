@@ -2,7 +2,6 @@
 title: Herstellen einer Verbindung mit Acumatica mithilfe von Power BI
 description: Acumatica für Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: d2ee7a338f34e4c29fdbefae6518bede9e94badb
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: 09e55aef3a1167143694c8e26a342cb1b8f0875c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70186143"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873199"
 ---
 # <a name="connect-to-acumatica-with-power-bi"></a>Herstellen einer Verbindung mit Acumatica mithilfe von Power BI
 Mit dem Power BI-Acumatica-Inhaltspaket können Sie schnell Erkenntnisse aus Ihren Verkaufschancendaten gewinnen. Power BI ruft Ihre Daten ab, einschließlich Verkaufschancen, Konten und Kunden, und erstellt dann auf der Grundlage dieser Daten ein Standarddashboard und zugehörige Berichte.
@@ -28,7 +27,7 @@ Stellen Sie eine Verbindung mit dem [Acumatica- Inhaltspaket](https://app.powerb
 >Die Mindestversion von Acumatica für dieses Inhaltspaket ist 5.2.
 
 ## <a name="how-to-connect"></a>Herstellen der Verbindung
-1. Wählen Sie unten im linken Navigationsbereich **Daten abrufen** aus.
+1. Wählen Sie unten im Navigationsbereich **Daten abrufen** aus.
    
    ![](media/service-connect-to-acumatica/getdata3.png)
 2. Wählen Sie im Feld **Dienste** die Option **Abrufen**aus.
@@ -47,7 +46,7 @@ Stellen Sie eine Verbindung mit dem [Acumatica- Inhaltspaket](https://app.powerb
 5. Wählen Sie als Authentifizierungsmethode **Standard**aus. Geben Sie den Benutzernamen und das Kennwort Ihres Acumatica-Kontos ein, und klicken Sie dann auf **Anmelden**.
    
     ![](media/service-connect-to-acumatica/creds2.png)
-6. Nachdem die Daten von Power BI importiert wurden, werden im linken Navigationsbereich ein neues Dashboard, ein Bericht und ein Dataset angezeigt. Neue Elemente sind mit einem gelben Sternchen (\*) gekennzeichnet, das nach dem Auswählen ausgeblendet wird. Nach Auswahl des Dashboards wird ein Layout ähnlich dem folgenden gezeigt:
+6. Nachdem die Daten von Power BI importiert wurden, werden im Navigationsbereich ein neues Dashboard, ein Bericht und ein Dataset angezeigt. Neue Elemente sind mit einem gelben Sternchen (\*) gekennzeichnet, das nach dem Auswählen ausgeblendet wird. Nach Auswahl des Dashboards wird ein Layout ähnlich dem folgenden gezeigt:
    
     ![](media/service-connect-to-acumatica/dashboard.png)
 

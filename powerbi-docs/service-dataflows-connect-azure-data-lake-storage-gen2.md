@@ -2,7 +2,6 @@
 title: Erfahren Sie, wie Sie Azure Data Lake Storage Gen2 mit Power BI zur Dataflowspeicherung verbinden können.
 description: Verwenden von eigenen Daten für Dataflows mit Azure Data Lake Storage Gen2
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 1e4d589702bb471a2abc6af9448a6846825adbfe
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: c48ae0913d0096546c23d22d3e4596fdb21aef82
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160369"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872715"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Verbinden von Azure Data Lake Storage Gen2 zur Dataflowspeicherung (Vorschauversion)
 
@@ -105,7 +104,7 @@ Um Berechtigungen für das Dateisystem zu gewähren, wenden Sie die Einstellunge
 
 Führen Sie die folgenden Schritte aus, um Anwendungen in Ihrem Mandanten zu finden:
 
-1. Wählen Sie im [Azure-Portal](https://portal.azure.com/) im linken Navigationsbereich den Eintrag **Azure Active Directory** aus.
+1. Wählen Sie im [Azure-Portal](https://portal.azure.com/) im Navigationsbereich den Eintrag **Azure Active Directory** aus.
 2. Klicken Sie im Blatt **Active Directory** auf **Unternehmensanwendungen**.
 3. Wählen Sie im Dropdownmenü **Anwendungstyp** die Option **Alle Anwendungen** aus, und klicken Sie dann auf **Übernehmen**. Ein Beispiel Ihrer Mandantenanwendungen wird angezeigt, ähnlich der folgenden Abbildung.
 
@@ -183,7 +182,7 @@ Es gibt auch einige bekannte Probleme, was in diesem Abschnitt thematisiert wird
 
 Benutzer von **Power BI Desktop** können nur auf Dataflows zugreifen, die in einem Azure Data Lake Storage-Konto gespeichert sind, wenn sie der Besitzer des jeweiligen Dataflows sind, oder wenn sie für den CDM-Ordner im Data Lake autorisiert sind. Das Szenario sieht folgendermaßen aus:
 
-1. Anna hat einen neuen App-Arbeitsbereich erstellt und diesen so konfiguriert, dass Dataflows im Data Lake Ihrer Organisation gespeichert werden. 
+1. Anna hat einen neuen Arbeitsbereich erstellt und diesen so konfiguriert, dass Dataflows im Data Lake Ihrer Organisation gespeichert werden. 
 2. Ben ist ebenfalls Mitglied des Arbeitsbereichs, den Anna erstellt hat, und möchte Power BI Desktop und den Dataflowconnector verwenden, um Daten aus Annas Dataflow zu erhalten.
 3. Da Ben im Data Lake-Konto nicht als Benutzer des CDM-Ordners des Dataflows autorisiert wurde, wird ihm ein ähnlicher Fehler angezeigt.
 
@@ -223,4 +222,4 @@ Weitere Informationen zum Common Data Model finden Sie im folgenden Übersichtsa
 * [CDM folders (CDM-Ordner)](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [The metadata file (model.json) for the Common Data Model (Die Metadatendatei (model.json) des CDM)](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-Natürlich können Sie auch jederzeit [Fragen in der Power BI-Community stellen](http://community.powerbi.com/).
+Natürlich können Sie auch jederzeit [Fragen in der Power BI-Community stellen](https://community.powerbi.com/).

@@ -2,7 +2,6 @@
 title: Tipps zum Erstellen überzeugender Berichte
 description: Tipps und Tricks zum Erstellen von Berichten in Power BI und Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: willthom
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 4d686a807d9413c15b19ff382e5ac54fb696b10b
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: d7f2c83cf1d0f29f2c0d0c6e621a253acdd3ce41
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721354"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860886"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Tipps und Tricks zum Erstellen von Berichten in Power BI Desktop und im Power BI-Dienst
 Um Ihre Daten optimal zu nutzen, benötigen Sie manchmal etwas zusätzliche Hilfe. Wir haben einige Tipps und Tricks zusammengestellt, die Sie nutzen können, wenn Sie Berichte in Microsoft Power BI Desktop, im Power BI-Dienst *und* in Microsoft Excel 2016 oder Excel 2013 Pro Plus-Editionen erstellen, wobei das Power Pivot-Add-In und Power Query installiert und aktiviert sein müssen.
@@ -163,12 +162,9 @@ DAX ist die Formelsprache für Berechnungen in Power BI Desktop.  Sie ist für B
 
 [DAX-Referenz (Data Analysis Expressions)](https://msdn.microsoft.com/library/gg413422.aspx)
 
-[DAX-Ressourcencenter](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
+[DAX-Ressourcencenter](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
 
 ## <a name="power-bi-service-and-power-bi-desktop"></a>Power BI-Dienst *und* Power BI Desktop
-
-### <a name="read-the-whitepaper-principles-for-designing-power-bi-reportsvisualspower-bi-visualization-best-practicesmd"></a>Whitepaper lesen: [Grundlagen des Entwurfs von Power BI-Berichten](visuals/power-bi-visualization-best-practices.md)
-Dieses Dokument enthält Informationen zu den bewährten Methoden zum Entwerfen von Berichten in Power BI. Ausgehend von der Planung werden Entwurfsgrundlagen und -verfahren beschrieben, die Sie für Ihre Berichte sowie für die Seiten und einzelnen visuellen Elemente des Berichts verwenden können. Viele dieser bewährten Methoden gelten auch für das Entwerfen von Dashboards.
 
 ### <a name="read-andor-watch-how-to-design-visually-stunning-reports-and-dashboards-in-power-bi"></a>Erfahren Sie mehr unter „Erstellen visuell ansprechender Berichte (und Dashboards) in Power BI“.
 Community-Mitglied Miguel Myers ist sowohl Datenanalysten als auch Grafikdesigner.
@@ -226,4 +222,4 @@ Zu unseren Lieblingsbüchern (in englischer Sprache) zählen:
 
 [Berichte in Power BI](consumer/end-user-reports.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

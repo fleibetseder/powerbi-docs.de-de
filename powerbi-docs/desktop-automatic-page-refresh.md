@@ -2,7 +2,6 @@
 title: Automatische Seitenaktualisierung in Power BI Desktop (Vorschau)
 description: Erfahren Sie, wie Sie Seiten für DirectQuery-Quellen in Power BI Desktop automatisch aktualisieren können.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 546dffe20d6840544eca1360945482630a686069
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 4c2217495ee8b735bc600c9b803897a408495472
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307982"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878771"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Automatische Seitenaktualisierung in Power BI Desktop (Vorschau)
 
@@ -112,7 +111,7 @@ Um zu verdeutlichen, wie dies funktioniert, beginnen wir mit einigen Hintergrund
 
 Bei gemeinsam genutzten Kapazitäten werden Workloads auf Computeressourcen ausgeführt, die gemeinsam mit anderen Kunden genutzt werden. Da die Kapazität Ressourcen gemeinsam nutzen muss, werden Einschränkungen auferlegt, um *Fairplay* zu gewährleisten, z.B. das Festlegen einer maximalen Modellgröße (1 GB) und einer maximalen täglichen Aktualisierungshäufigkeit (acht Mal pro Tag).
 
-Power BI-**Arbeitsbereiche** befinden sich innerhalb der Kapazitäten, und sie stellen Sicherheits-, Zusammenarbeits- und Bereitstellungscontainer dar. Jeder Power BI-Benutzer verfügt über einen persönlichen Arbeitsbereich, der als **Mein Arbeitsbereich** bezeichnet wird. Zusätzliche Arbeitsbereiche können erstellt werden, um die Zusammenarbeit und die Bereitstellung zu ermöglichen, und diese werden als **App-Arbeitsbereiche** bezeichnet. Standardmäßig werden Arbeitsbereiche (einschließlich persönlicher Arbeitsbereiche) in der **gemeinsam genutzten Kapazität** erstellt.
+Power BI-**Arbeitsbereiche** befinden sich innerhalb der Kapazitäten, und sie stellen Sicherheits-, Zusammenarbeits- und Bereitstellungscontainer dar. Jeder Power BI-Benutzer verfügt über einen persönlichen Arbeitsbereich, der als **Mein Arbeitsbereich** bezeichnet wird. Zusätzliche Arbeitsbereiche können erstellt werden, um die Zusammenarbeit und die Bereitstellung zu ermöglichen, und diese werden als **Arbeitsbereiche** bezeichnet. Standardmäßig werden Arbeitsbereiche (einschließlich persönlicher Arbeitsbereiche) in der **gemeinsam genutzten Kapazität** erstellt.
 
 Im Folgenden finden Sie einige Details zu den beiden Arbeitsbereichsszenarien:
 

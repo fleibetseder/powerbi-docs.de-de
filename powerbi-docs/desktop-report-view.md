@@ -2,7 +2,6 @@
 title: Berichtsansicht in Power BI Desktop
 description: Berichtsansicht in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c76dfc45437fdc2406c89e41a4a076d9ef4e7a44
-ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.openlocfilehash: 06b8c9d0be2ec8bc5b350767263bfc5e0ab4ec81
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71142177"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877870"
 ---
 # <a name="report-view-in-power-bi-desktop"></a>Berichtsansicht in Power BI Desktop
 Wenn Sie bereits mit Power BI gearbeitet haben, wissen Sie, wie einfach Berichte erstellt werden können, die dynamische Perspektiven und Einblicke in Ihre Daten bereitstellen. Power BI verfügt in Power BI Desktop zudem über weitere komplexe Funktionen. Mit Power BI Desktop können Sie komplexe Abfragen erstellen, Daten aus mehreren Quellen kombinieren, Beziehungen zwischen Tabellen erstellen usw.
@@ -29,7 +28,7 @@ Wenn Sie zum ersten Mal Daten in Power BI Desktop laden, wird die **Berichtsans
 
 ![Power BI Desktop](media/desktop-report-view/pbi_reportviewinpbidesigner_reportview.png)
 
-Sie können zwischen der **Berichtsansicht**, der **Datenansicht** und der **Beziehungsansicht** wechseln, indem Sie auf die Symbole auf der linken Navigationsleiste klicken:
+Sie können zwischen der **Berichtsansicht**, der **Datenansicht** und der **Beziehungsansicht** wechseln, indem Sie auf die Symbole im linken Navigationsbereich klicken:
 
 ![Symbol für Berichtsansicht](media/desktop-report-view/pbi_reportviewinpbidesigner_changeview.png)
 

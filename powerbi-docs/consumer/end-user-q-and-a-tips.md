@@ -2,21 +2,19 @@
 title: Tipps und Tricks für Fragen mit Q&A
 description: Tipps und Tricks für Fragen mit Q&A in Power BI
 author: mihart
-manager: kvivek
-ms.reviewer: ''
-ms.custom: seodec18
+ms.reviewer: Mohammad
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/26/2019
+ms.date: 10/23/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 4f6dc7167d64385182ecbd448b6c400fa7f829df
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: a6b489c11087e43ed8b10ce9bdf8088b97f48e8d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "67408190"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862393"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Tipps zum Stellen von Fragen mit Power BI Q&A
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Wörter und Begriffe, die von Q&A erkannt werden
@@ -29,7 +27,7 @@ In der nachstehenden Liste wird Präsens verwendet, jedoch werden in den meisten
 >  
 
 
-|Category  |Schlüsselwörter  |Column3  |
+|Kategorie  |Schlüsselwörter  |Column3  |
 |---------|---------|---------|
 |**Aggregate**     | total, sum, amount, number, quantity, count, average, most, least, fewest, largest, smallest, highest, biggest, maximum, max, greatest, lowest, littlest, minimum, min          |
 |     |         |         
@@ -79,7 +77,9 @@ Q&A versucht stets, die gestellte Frage zu verstehen und zu beantworten. Dabei v
 * Eine Vorschau der Antwort wird in Form einer Visualisierung angezeigt. Diese Visualisierung wird immer wieder aktualisiert, wenn Sie weitere Eingaben vornehmen und die Frage bearbeiten (es wird nicht darauf gewartet, dass Sie die EINGABETASTE drücken).
 * Es werden Ersatzbegriffe aus den zugrunde liegenden Datasets vorgeschlagen, wenn Sie den Cursor wieder in das Fragefeld setzen.
 * Die Frage wird anhand der Daten in den zugrunde liegenden Datasets umformuliert. Q&A ersetzt die von Ihnen verwendeten Wörter durch Synonyme aus den zugrunde liegenden Datasets. Wenn Sie die Umformulierung lesen, wissen Sie, ob Q&A Ihre Frage verstanden hat. 
-* Nicht verstandene Wörter werden abgeblendet.
+* Fügt einem nicht verstandenen Wort einen doppelten Unterstrich hinzu.
+* Fügt einem verstandenen Wort einen einfachen Unterstrich hinzu.
+* Ermöglicht es Ihnen, den Besitzer des Berichts oder Dashboards zu kontaktieren, wenn Ihr Begriff nicht gefunden wird oder wenn Ihre Frage keine Ergebnisse ergibt.
 
 ## <a name="dont-stop-now"></a>Das ist noch nicht alles
 Halten Sie die Konversation am Laufen, nachdem Q&A Ihre Ergebnisse anzeigt! Nutzen Sie die interaktiven Features der Visualisierung und von Q&A, um weitere Einblicke zu gewinnen.
@@ -89,5 +89,5 @@ Zurück zu [Q&A in Power BI](end-user-q-and-a.md)
 
 [Power BI – Grundkonzepte](end-user-basic-concepts.md)  
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 

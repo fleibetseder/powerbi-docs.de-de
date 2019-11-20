@@ -2,7 +2,6 @@
 title: Verwenden von Dashboarddesigns im Power BI-Dienst
 description: Erfahren Sie, wie Sie eine benutzerdefinierte Farbpalette verwenden und auf das gesamte Dashboard im Power BI-Dienst anwenden können.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/22/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8e444c78c1f6f9f3f0be1375f96f7381489cc069
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: e2793fe56df462fd5f1bd1c266b75ad14fd9b375
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61143226"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877451"
 ---
 # <a name="use-dashboard-themes-in-power-bi-service"></a>Verwenden von Dashboarddesigns im Power BI-Dienst
 Mit **Dashboarddesigns** können Sie einem Dashboard ein Farbschema zuweisen (Unternehmensfarben, Farben der Jahreszeit oder beliebige andere Farben). Wenn Sie ein **Dashboarddesigns** zuweisen, verwenden alle Visualisierungen des Dashboards die Farben des gewünschten Farbschemas (mit wenigen Ausnahmen, siehe unten).
@@ -30,7 +29,7 @@ Wenn Sie die Farben der Berichtsvisuals auf dem Dashboard ändern, wirkt sich da
 
 
 ## <a name="how-dashboard-themes-work"></a>Funktionsweise von Dashboarddesigns
-Öffnen Sie zunächst ein Dashboard, das Sie erstellt haben (oder das Sie bearbeiten dürfen) und das Sie anpassen möchten. Klicken Sie auf die Auslassungspunkte („...“) und dann auf **Dashboarddesign**. 
+Öffnen Sie zunächst ein Dashboard, das Sie erstellt haben (oder das Sie bearbeiten dürfen) und das Sie anpassen möchten. Klicken Sie auf **Weitere Optionen** (...) und dann auf **Dashboarddesign**. 
 
 ![Option „Dashboarddesign“](media/service-dashboard-themes/power-bi-dashboard-theme.png)
 
