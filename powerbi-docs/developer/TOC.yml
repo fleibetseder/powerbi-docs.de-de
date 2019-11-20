@@ -142,7 +142,7 @@
               href: register-app.md
             - name: Abrufen eines Azure AD-Zugriffstokens
               href: get-azuread-access-token.md
-            - name: Dynamische Bindung
+            - name: Verknüpfen eines Berichts mithilfe von dynamischer Bindung
               href: embed-dynamic-binding.md
             - name: Einbetten von Q&A
               href: qanda.md
