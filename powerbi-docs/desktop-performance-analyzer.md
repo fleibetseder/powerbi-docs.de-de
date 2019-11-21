@@ -1,8 +1,7 @@
 ---
-title: Verwenden von Performance Analyzer untersuchen der Leistung beim Element der Berichte in Power BI Desktop
-description: Ermitteln der Leistung von Visuals und Berichtselemente im Hinblick auf die ressourcennutzung und Reaktionsfähigkeit
+title: Verwenden der Leistungsanalyse zum Untersuchen der Leistung von Berichtselementen in Power BI Desktop
+description: Erfahren Sie, wie Sie die Leistung von Visualisierungen und Berichtselementen in Bezug auf Ressourcenverbrauch und Reaktionsfähigkeit ermitteln.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,74 +9,74 @@ ms.topic: conceptual
 ms.date: 05/15/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1851e0a55bf01073a6591f64de43830a72eca89b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 8bbf391135442d6490033c0fc65b7372154820d2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65854411"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73866425"
 ---
-# <a name="use-performance-analyzer-to-examine-report-element-performance"></a>Verwenden von Performance Analyzer um berichtsleistung-Element zu untersuchen.
+# <a name="use-performance-analyzer-to-examine-report-element-performance"></a>Verwenden der Leistungsanalyse zum Untersuchen der Leistung von Berichtselementen
 
-In **Power BI Desktop** finden Sie Out wie jede von Berichtselementen, wie z. B. Visuals und DAX-Formeln ausgeführt werden. Mithilfe der **Performance Analyzer**, sehen Sie und Datensatz-Protokolle, messen, wie jede von Berichtselementen ausführt, wenn der Benutzer mit ihnen interagieren und welche Aspekte der ihre Leistung sind die meisten (oder den niedrigsten) ressourcenintensiv.
+In **Power BI Desktop** können Sie die Leistung für jedes Ihrer Berichtselemente – beispielsweise Visuals und DAX-Formeln – ermitteln. Mithilfe der **Leistungsanalyse** können Sie Protokolle anzeigen und aufzeichnen, um die Leistung für jedes Ihrer Berichtselemente bei der Benutzerinteraktion zu messen und festzustellen, welche Aspekte die meisten (oder wenigsten) Ressourcen verbrauchen.
 
-![Leistungsanalyse](media/desktop-performance-analyzer/performance-analyzer-01.png)
+![Performance Analyzer](media/desktop-performance-analyzer/performance-analyzer-01.png)
 
-Leistungsanalyse untersucht und zeigt die Dauer, die zum Aktualisieren oder aller visuellen Elemente erforderlich, Interaktionen der Benutzer initiiert, und werden die Informationen bereitgestellt, so können Sie anzeigen, Drilldown, und die Ergebnisse zu exportieren. Performance Analyzer können Sie visuelle Elemente, die die beeinträchtigen die Leistung Ihrer Berichte zu erkennen und identifizieren Sie die Gründe für die Auswirkungen.
+Die Leistungsanalyse untersucht und zeigt die Dauer an, die zum Aktualisieren aller Visuals benötigt wird, die über Benutzerinteraktionen initiiert werden. Die Ergebnisse werden so dargestellt, dass Sie die Ergebnisse anzeigen, näher untersuchen oder exportieren können. Mithilfe der Leistungsanalyse können Sie visuelle Elemente identifizieren, die sich auf die Leistung Ihrer Berichte auswirken, und Sie können den Grund für die Beeinträchtigung ermitteln.
 
-## <a name="displaying-the-performance-analyzer-pane"></a>Im Bereich Performance Analyzer anzeigen
+## <a name="displaying-the-performance-analyzer-pane"></a>Anzeige des Bereichs „Leistungsanalyse“
 
-In **Power BI Desktop** wählen Sie die **Ansicht** Menüband. In der **anzeigen** Teil der **Ansicht** Menüband, Sie können das Kontrollkästchen neben **Performance Analyzer** Bereich Performance Analyzer angezeigt.
+Wählen Sie in **Power BI Desktop** das Menüband **Ansicht** aus. Im Bereich **Anzeigen** des Menübands **Ansicht** können Sie das Kontrollkästchen neben **Leistungsanalyse** aktivieren, um den Bereich „Leistungsanalyse“ anzuzeigen.
 
-![Wählen Sie die Performance Analyzer in der Registerkarte "Ansicht"](media/desktop-performance-analyzer/performance-analyzer-02.png)
+![Auswählen der Leistungsanalyse im Menüband „Ansicht“](media/desktop-performance-analyzer/performance-analyzer-02.png)
 
-Nach der Auswahl wird die Performance Analyzer in einen eigenen Bereich rechts neben den Zeichenbereich des Berichts angezeigt.
+Nach der Auswahl wird die Leistungsanalyse in einem eigenen Bereich rechts neben der Berichtscanvas angezeigt.
 
 ## <a name="using-performance-analyzer"></a>Verwenden der Leistungsanalyse
 
-Performance Analyzer Measures werden die Verarbeitungszeit (einschließlich der Zeit zum Erstellen oder aktualisieren eine Visualisierung) zum Aktualisieren von Berichtselementen, die als Ergebnis Eingreifen des Benutzers, das Ausführen einer Abfrage dazu initiiert erforderlich. Beispielsweise erfordert einen Slicer anpassen, die Slicer-Visualisierung, eine Abfrage senden, in das Datenmodell geändert werden, und die betroffenen visuellen Elemente, die durch die neuen Einstellungen aktualisiert werden müssen. 
+Die Leistungsanalyse misst die benötigte Verarbeitungszeit (einschließlich der Zeit zum Erstellen oder Aktualisieren eines Visuals) für das Aktualisieren von Berichtselementen, die über eine Benutzerinteraktion ausgelöst wurden und zum Ausführen einer Abfrage führen. Beispielsweise muss bei Anpassung eines Slicers das Slicervisual geändert, eine Abfrage an das Datenmodell gesendet und eine Aktualisierung der Visuals durchgeführt werden, die aufgrund der neuen Einstellungen aktualisiert werden müssen. 
 
-Damit Performance Analyzer, die Aufzeichnung zu beginnen, wählen Sie einfach **Aufzeichnung starten**
+Klicken Sie einfach auf **Aufzeichnung starten**, um mit der Aufzeichnung durch die Leistungsanalyse zu beginnen.
 
 ![Aufzeichnung starten](media/desktop-performance-analyzer/performance-analyzer-03.png)
 
-Alle Aktionen im Bericht werden angezeigt, und protokolliert im Bereich Performance Analyzer in der Reihenfolge, in die Visualisierung von Power BI geladen wird. Vielleicht haben Sie beispielsweise einen Bericht, den Benutzer sehr lange dauert behaupteten haben, um zu aktualisieren. Oder bestimmte Visuals in einem Bericht eine lange dauern angezeigt wird, wenn Sie ein Schieberegler angepasst wird. Leistungsanalyse erkennen Sie, dass Sie welches visuelle ist die Ursache und welche Aspekte des visuellen Elements identifiziert die längste Dauer verarbeiten ausgeführt werden. 
+Alle Aktionen, die Sie im Bericht ausführen, werden im Bereich „Leistungsanalyse“ in der Reihenfolge angezeigt und protokolliert, in der das Visual von Power BI geladen wird. So könnten Sie beispielsweise über einen Bericht verfügen, für den die Benutzer eine lange Aktualisierungsdauer gemeldet haben. Oder die Anzeige bestimmter Visuals in einem Bericht dauert sehr lange, nachdem ein Schieberegler angepasst wurde. Über die Leistungsanalyse können ermitteln, welches Visual die Ursache dafür ist, und Sie können ermitteln, welche Aspekte des Visuals die längste Verarbeitungsdauer aufweisen. 
 
-Nachdem Sie die Aufzeichnung starten die **Aufzeichnung starten** Schaltfläche ist abgeblendet Out (inaktiv, da Sie bereits eine Aufzeichnung dieser haben) und die **beenden** Schaltfläche ist aktiviert. 
+Nach dem Start der Aufzeichnung wird die Schaltfläche **Aufzeichnung starten** abgeblendet dargestellt (die Schaltfläche ist inaktiv, weil die Aufzeichnung bereits begonnen hat), und die Schaltfläche **Beenden** ist aktiv. 
 
-Leistungsanalyse sammelt und zeigt die Messung Leistungsinformationen in Echtzeit. Damit jedes Mal, wenn Sie auf ein visuelles Element, klicken Sie auf einen Slicer zu verschieben, oder auf andere Weise interagieren zeigt Performance Analyzer die Ergebnisse sofort im Bereich an.
+Die Leistungsanalyse sammelt und zeigt die Informationen zur Leistungsmessung in Echtzeit an. Deshalb zeigt die Leistungsanalyse bei jedem Klick auf ein Visual, beim Verschieben eines Slicers oder bei einer anderen Form der Interaktion sofort die Leistungsergebnisse im zugehörigen Fenster an.
 
-Verfügt im Bereich mehr Informationen als angezeigt werden kann, wird eine Bildlaufleiste angezeigt, um auf zusätzliche Informationen zu navigieren.
+Wenn der Bereich mehr Informationen enthält, als angezeigt werden können, erscheint eine Bildlaufleiste, um zu den Zusatzinformationen zu navigieren zu können.
 
-Jede Interaktion besitzt einen Abschnitt-Bezeichner im Bereich, beschreibt die Aktion, die die Protokolleinträge initiiert. In der folgenden Abbildung wurde die Interaktion an, dass die Benutzer einen Datenschnitt geändert.
+Jede Interaktion im Bereich weist einen Abschnittsbezeichner auf. Dieser Bezeichner beschreibt die Aktion, die den Protokolleintrag ausgelöst hat. Im Screenshot unten bestand die Interaktion darin, dass der Benutzer einen Slicer geändert hat.
 
-![Abschnitte, die basierend auf den Typ der Interaktion](media/desktop-performance-analyzer/performance-analyzer-04.png)
+![Abschnitte basierend auf Interaktionstyp](media/desktop-performance-analyzer/performance-analyzer-04.png)
 
-Jedes visuellen Elements Protokollinformationen umfasst die Zeit (Dauer) um die folgenden Kategorien von Aufgaben ausführen:
+Die Protokollinformationen zu jedem Visual beinhalten die aufgewendete Zeit (Dauer) zum Ausführen der folgenden Aufgabenkategorien:
 
-* **DAX-Abfrage** – Wenn eine DAX-Abfrage benötigt wurde, ist dies die Zeit zwischen der Visualisierung, die die Abfrage gesendet und für Analysis Services werden die Ergebnisse zurückgegeben.
-* **Visuelle Darstellung** -erforderliche Zeit für das visuelle Element zum Zeichnen auf dem Bildschirm, einschließlich der Zeit erforderlich, um alle Images für Web oder die geocodierung abzurufen. 
-* **Andere** -Zeit, die von der Visualisierung für Abfragen wird vorbereitet, warten auf andere visuelle Elemente abgeschlossen oder andere Verarbeitung im Hintergrund ausführen erforderlich.
+* **DAX-Abfrage**: Wenn eine DAX-Abfrage erforderlich war, ist dies die Zeit zwischen dem Sendevorgang der Abfrage durch das Visual und der Rückgabe der Ergebnisse durch Analysis Services.
+* **Visuelle Anzeige**: Die Zeit, die zum Zeichnen des Visuals auf dem Bildschirm benötigt wird. Dies schließt die Zeit ein, die für das Abrufen von Webbildern oder eine Geocodierung benötigt wird. 
+* **Andere**: Die Zeit, die das Visual für das Vorbereiten von Abfragen, das Warten auf den Abschluss anderer Visuals oder das Durchführen einer weiteren Hintergrundverarbeitung benötigt.
 
-![Elemente von Protokollinformationen](media/desktop-performance-analyzer/performance-analyzer-06.png)
+![Elemente in Protokollinformationen](media/desktop-performance-analyzer/performance-analyzer-06.png)
 
-Nachdem Sie Berichtselemente Sie mit der Performance Analyzer messen möchten Interaktion haben, können Sie wählen die **beenden** Schaltfläche. Informationen zur Leistung bleibt nach der Auswahl im Bereich **beenden** für die Sie analysieren.
+Nachdem Sie mithilfe der Leistungsanalyse mit Berichtselementen interagiert haben, deren Leistung Sie messen möchten, können Sie auf die Schaltfläche **Beenden** klicken. Die Leistungsinformationen werden zur weiteren Analyse auch nach dem Klicken auf **Beenden** weiterhin im Bereich angezeigt.
 
-Wählen Sie zum Löschen Sie die Informationen im Bereich Performance Analyzer **löschen**. Alle Informationen werden gelöscht, und wird nicht gespeichert werden, bei der Auswahl **löschen**. Finden Sie im nächsten Abschnitt erfahren, wie Informationen in Protokollen gespeichert. 
+Um die Informationen aus dem Bereich „Leistungsanalyse“ zu entfernen, klicken Sie auf **Löschen**. Bei Auswahl von **Löschen** werden alle Informationen entfernt, und es werden keine Daten gespeichert. Im nächsten Abschnitt erfahren Sie, wie Sie Informationen in Protokollen speichern können. 
 
-## <a name="refreshing-visuals"></a>Aktualisieren von visuellen Elementen
+## <a name="refreshing-visuals"></a>Aktualisieren von Visuals
 
-Sie können auswählen, **Aktualisieren von visuellen Elementen** im Bereich "Performance Analyzer" alle Visualisierungen auf der aktuellen Seite des Berichts aktualisieren, und dadurch Performance Analyzer, die Informationen über alle visuellen Elemente zu erfassen.
+Durch Auswahl von **Visuals aktualisieren** im Bereich „Leistungsanalyse“ können Sie alle Visuals auf der aktuellen Seite des Berichts aktualisieren, um über die Leistungsanalyse Informationen zu all diesen Visuals zu erfassen.
 
-Sie können auch einzelne visuelle Elemente aktualisieren. Wenn Performance Analyzer aufzeichnet, klicken Sie auf **Aktualisieren dieses visuelle Element** finden Sie in der oberen rechten Ecke jedes visuellen Elements, um diese Visualisierung zu aktualisieren und die Leistungsinformationen zu erfassen.
+Sie können auch einzelne Visuals aktualisieren. Wenn über die Leistungsanalyse eine Aufzeichnung durchgeführt wird, können Sie oben rechts in jedem Visual auf **Dieses Visual aktualisieren** klicken, um das betreffende Visual zu aktualisieren und zugehörige Leistungsinformationen zu erfassen.
 
-![Aktualisieren Sie ein einzelnes visuelles Element](media/desktop-performance-analyzer/performance-analyzer-07.png)
+![Aktualisieren einzelner Visuals](media/desktop-performance-analyzer/performance-analyzer-07.png)
 
-## <a name="saving-performance-information"></a>Speichern von Leistungsdaten
+## <a name="saving-performance-information"></a>Speichern von Leistungsinformationen
 
-Sie können Informationen zur Performance Analyzer erstellt einen Bericht speichern, durch Auswählen der **exportieren** Schaltfläche. Auswählen von **exportieren** erstellt Sie eine JSON-Datei mit Informationen aus dem Bereich Performance Analyzer. 
+Sie können die von der Leistungsanalyse generierten Informationen zu einem Bericht speichern, indem Sie auf die Schaltfläche **Exportieren** klicken. Durch das Auswählen von **Exportieren** wird eine JSON-Datei mit Informationen aus dem Bereich „Leistungsanalyse“ erstellt. 
 
-![Speichern Sie die Protokolldatei für die Leistungsanalyse](media/desktop-performance-analyzer/performance-analyzer-05.png)
+![Speichern der Protokolldatei für die Leistungsanalyse](media/desktop-performance-analyzer/performance-analyzer-05.png)
 
 
 ## <a name="next-steps"></a>Nächste Schritte

@@ -2,7 +2,6 @@
 title: Veröffentlichen in Power BI aus Excel 2016
 description: Erfahren Sie, wie Sie eine Excel-Arbeitsmappe auf Ihrer Power BI-Website veröffentlichen.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: bb9ff3ae6b08111156616a84ee795131c708f42c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 81bc53bae43cb16af92a9ecaf20c26c594a24368
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514798"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881133"
 ---
 # <a name="publish-to-power-bi-from-excel-2016"></a>Veröffentlichen in Power BI aus Excel 2016
 Mit Excel 2016 können Sie Ihre Excel-Arbeitsmappen direkt auf Ihrer [Power BI](https://powerbi.microsoft.com)-Website veröffentlichen. Dort können Sie hochgradig interaktive Berichte und Dashboards auf Grundlage der Daten in Ihrer Arbeitsmappe erstellen. Sie können Ihre Einblicke dann für andere Personen in Ihrer Organisation freigeben.
@@ -88,5 +87,5 @@ Nach Abschluss des Vorgangs können Sie direkt aus Excel zu Power BI wechseln.
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Excel-Daten in Power BI](service-excel-workbook-files.md)  
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 

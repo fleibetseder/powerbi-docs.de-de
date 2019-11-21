@@ -2,7 +2,6 @@
 title: Überblick über die für Power BI verfügbaren Beispiele
 description: Beispiele für Inhaltspakete, PBIX-Dateien und Excel-Datasets für Power BI
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 49c16e083b2119e94f23a78b10ea014efcd70c3c
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: d5fcc6866d564367d2a29dc00493a959409ea2ed
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721483"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858986"
 ---
 # <a name="what-sample-data-is-available-to-use-with-power-bi"></a>Welche Beispieldaten sind für die Verwendung mit Power BI verfügbar?
 Angenommen, Sie sind mit Power BI noch nicht vertraut und möchten es ausprobieren, haben jedoch keine Daten.  Aber vielleicht haben Sie ja ein Dataset. Da Sie (noch) nicht verstehen, wie Power BI funktioniert, fürchten Sie vielleicht, Ihr Dataset irgendwie zu beschädigen?
@@ -63,7 +62,7 @@ Dieses Branchenbeispiel konzentriert sich auf die Einstellungsstrategie eines Un
 
 In diesem Branchenbeispiel analysieren wir die geplanten gegenüber den tatsächlichen Kosten der IT-Abteilung eines Unternehmens. Dieser Vergleich hilft uns, zu verstehen, wie gut das Unternehmen auf Jahressicht geplant hat und welche Bereiche große Abweichungen gegenüber dem Plan aufwiesen. Das Unternehmen aus dem Beispiel durchläuft einen jährlichen Planungszyklus und erstellt dann quartalsweise eine neueste Schätzung (Latest Estimate, LE), um die Änderungen an den IT-Ausgaben im Verlauf des Geschäftsjahrs zu analysieren.
 
-### <a name="opportunity-analysis-sample--opportunity-analysis-samplemediasample-datasetspower-bi-oapng"></a>Opportunity Analysis sample  ![Opportunity Analysis sample](media/sample-datasets/power-bi-oa.png)
+### <a name="opportunity-analysis-sample--opportunity-analysis-samplemediasample-datasetspower-bi-oapng"></a>Analysebeispiel für Verkaufschancen  ![Analysebeispiel für Verkaufschancen](media/sample-datasets/power-bi-oa.png)
 [Tour durch das Analysebeispiel zu Opportunity](sample-opportunity-analysis.md)
 
 In diesem Branchenbeispiel wird der Vertriebskanal eines Softwareunternehmens erkundet. Vertriebsleiter überwachen ihre direkten und Partnervertriebskanäle durch Nachverfolgen von Opportunitys und Umsatz nach Region, Auftragsvolumen und Kanal.
@@ -73,7 +72,7 @@ In diesem Branchenbeispiel wird der Vertriebskanal eines Softwareunternehmens er
 
 In diesem Branchenbeispiel werden die Schlüsselmetriken eines CFO für seine leitenden Mitarbeiter, Produkte und Kunden analysiert. Sie können untersuchen, welche Faktoren Einfluss auf die Rentabilität Ihres Unternehmens haben.
 
-### <a name="retail-analysis-sample--retail-analysis-samplemediasample-datasetspower-bi-rspng"></a>Retail Analysis sample  ![Retail Analysis sample](media/sample-datasets/power-bi-rs.png)
+### <a name="retail-analysis-sample--retail-analysis-samplemediasample-datasetspower-bi-rspng"></a>Analysebeispiel für den Einzelhandel  ![Analysebeispiel für den Einzelhandel](media/sample-datasets/power-bi-rs.png)
 [Tour durch das Analysebeispiel für den Einzelhandel](sample-retail-analysis.md)
 
 Dieses Branchenbeispiel analysiert Umsatzdaten des Einzelhandels von Artikeln, die in verschiedenen Läden und Bezirken verkauft wurden. Die Metriken vergleichen die Leistung dieses Jahres mit der des letzten Jahres in den folgenden Bereichen: Umsatz, Einheiten, Bruttogewinn und Varianz sowie Analyse neuer Läden.
@@ -116,16 +115,16 @@ Da Sie jetzt über Daten verfügen, können Sie mit den nächsten Schritten fort
 ## <a name="the-power-bi-samples-as-excel-files"></a>Die Power BI-Beispiele als Excel-Dateien
 Jedes der Beispielinhaltspakete ist auch als Excel-Arbeitsmappe verfügbar. Die Excel-Arbeitsmappen sind für die Verwendung im Power BI-Dienst vorgesehen.  
 
-1. Laden Sie die Dateien mithilfe der nachstehenden Links einzeln herunter, oder [laden Sie eine ZIP-Datei mit allen Beispieldateien herunter](http://go.microsoft.com/fwlink/?LinkId=535020). Als erfahrener Benutzer möchten Sie möglicherweise die Excel-Arbeitsmappen herunterladen, um die Datenmodelle zu untersuchen oder zu bearbeiten.
+1. Laden Sie die Dateien mithilfe der nachstehenden Links einzeln herunter, oder [laden Sie eine ZIP-Datei mit allen Beispieldateien herunter](https://go.microsoft.com/fwlink/?LinkId=535020). Als erfahrener Benutzer möchten Sie möglicherweise die Excel-Arbeitsmappen herunterladen, um die Datenmodelle zu untersuchen oder zu bearbeiten.
 
-   * [Analysebeispiel für den Einzelhandel](http://go.microsoft.com/fwlink/?LinkId=529778)
-   * [Analysebeispiel für Lieferantenqualität](http://go.microsoft.com/fwlink/?LinkId=529779)
-   * [Beispiel für das Personalwesen](http://go.microsoft.com/fwlink/?LinkId=529780)
-   * [Beispiel zur Kundenrentabilität](http://go.microsoft.com/fwlink/?LinkId=529781)
-   * [Beispiel zur Nachverfolgung von Verkaufschancen](http://go.microsoft.com/fwlink/?LinkId=529782)
-   * [Analysebeispiel für IT-Ausgaben](http://go.microsoft.com/fwlink/?LinkId=529783)
-   * [Analysebeispiel für Beschaffung](http://go.microsoft.com/fwlink/?LinkId=529784)
-   * [Beispiel für Vertrieb und Marketing](http://go.microsoft.com/fwlink/?LinkId=529785)
+   * [Analysebeispiel für den Einzelhandel](https://go.microsoft.com/fwlink/?LinkId=529778)
+   * [Analysebeispiel für Lieferantenqualität](https://go.microsoft.com/fwlink/?LinkId=529779)
+   * [Beispiel für das Personalwesen](https://go.microsoft.com/fwlink/?LinkId=529780)
+   * [Beispiel zur Kundenrentabilität](https://go.microsoft.com/fwlink/?LinkId=529781)
+   * [Beispiel zur Nachverfolgung von Verkaufschancen](https://go.microsoft.com/fwlink/?LinkId=529782)
+   * [Analysebeispiel für IT-Ausgaben](https://go.microsoft.com/fwlink/?LinkId=529783)
+   * [Analysebeispiel für Beschaffung](https://go.microsoft.com/fwlink/?LinkId=529784)
+   * [Beispiel für Vertrieb und Marketing](https://go.microsoft.com/fwlink/?LinkId=529785)
 2. Speichern Sie die heruntergeladene Datei. Es ist wichtig, wo Sie die Datei speichern.
 
    * ![Lokal](media/sample-datasets/power-bi-local-file2.png) **Lokal**: Wenn Sie Ihre Datei auf einem lokalen Laufwerk Ihres Computers oder an einem anderen Speicherort in Ihrer Organisation speichern, können Sie Ihre Datei über Power BI in Power BI importieren. Tatsächlich verbleibt Ihre Datei auf Ihrem lokalen Laufwerk. Die Datei wird also eigentlich gar nicht in Power BI importiert. Stattdessen wird ein neues Dataset auf Ihrer Power BI-Website erstellt. Daraufhin werden Daten und ggf. das Datenmodell in das Dataset geladen. Wenn Ihre Datei Berichte enthält, werden diese auf Ihrer Power BI-Website unter „Berichte“ angezeigt.
@@ -154,7 +153,7 @@ Jedes der Beispielinhaltspakete ist auch als Excel-Arbeitsmappe verfügbar. Die 
 
     ![Importieren oder Verbinden](media/sample-datasets/power-bi-import.png)
 9. Wenn Sie **Importieren** auswählen, wird die Beispielarbeitsmappe in Power BI importiert und als neues Dataset mit dem Namen **Analysebeispiel für Beschaffung** hinzugefügt.  Wenn die Arbeitsmappe Power View-Blätter, -Tabellen oder -Bereiche oder ein Datenmodell enthält, wird von Power BI auch ein Bericht (mit dem gleichen Namen) erstellt. Und wenn Sie noch kein Dashboard geöffnet haben, wird ein neues Dashboard erstellt. (Wenn beim Klicken auf **Daten abrufen** ein Dashboard geöffnet war, wird auf diesem Dashboard eine neue leere Kachel angezeigt.  Durch Klicken auf diese Kachel gelangen Sie zu dem Bericht für das Dataset, das Sie gerade hinzugefügt haben). Der neue Inhalt wird nach dem Beispiel benannt und mit einem gelben Sternchen markiert.
-10. Wenn der Bildschirm **Ihr Dataset steht bereit** angezeigt wird, wählen Sie **Dataset anzeigen** oder **Quick Insights** aus, oder verwenden Sie die linke Power BI-Navigationsleiste, um den zugehörigen Bericht oder das zugehörige Dashboard zu suchen und zu öffnen.  
+10. Wenn der Bildschirm **Ihr Dataset steht bereit** angezeigt wird, wählen Sie **Dataset anzeigen** oder **Quick Insights abrufen**. Oder verwenden Sie den Power BI-Navigationsbereich, um den zugehörigen Bericht oder das zugehörige Dashboard zu suchen und zu öffnen.  
 
      ![Dataset anzeigen](media/sample-datasets/power-bi-ready.png)
 
@@ -176,15 +175,15 @@ Jedes der Beispielinhaltspakete ist auch als PBIX-Datei von Power BI verfügbar.
 
 1. Laden Sie mithilfe der folgenden Links die Dateien einzeln herunter. Wenn Sie auf die Links klicken, wird die jeweilige Datei automatisch im Ordner „Downloads“ gespeichert. 
 
-   * [PBIX-Datei zum Analysebeispiel für den Einzelhandel](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
-   * [PBIX-Datei zum Analysebeispiel für Lieferantenqualität](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
+   * [PBIX-Datei zum Analysebeispiel für den Einzelhandel](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
+   * [PBIX-Datei zum Analysebeispiel für Lieferantenqualität](https://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
    <!-- Previous link doesn't work -->
-   * [PBIX-Datei zu Human Resources Sample](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix)
-   * [PBIX-Datei zum Beispiel zur Kundenrentabilität](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix)
-   * [PBIX-Datei zum Beispiel zur Nachverfolgung von Verkaufschancen](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix)
-   * [PBIX-Datei zum Analysebeispiel für IT-Ausgaben](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix)
-   * [PBIX-Datei zum Analysebeispiel für Beschaffung](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix)
-   * [PBIX-Datei zum Beispiel für Vertrieb und Marketing](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix)
+   * [PBIX-Datei zu Human Resources Sample](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix)
+   * [PBIX-Datei zum Beispiel zur Kundenrentabilität](https://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix)
+   * [PBIX-Datei zum Beispiel zur Nachverfolgung von Verkaufschancen](https://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix)
+   * [PBIX-Datei zum Analysebeispiel für IT-Ausgaben](https://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix)
+   * [PBIX-Datei zum Analysebeispiel für Beschaffung](https://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix)
+   * [PBIX-Datei zum Beispiel für Vertrieb und Marketing](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix)
 
 1. Wählen Sie in Power BI Desktop **Datei > Öffnen** aus, und navigieren Sie zu dem Verzeichnis, in dem Sie die PBIX-Beispieldatei gespeichert haben.
 
@@ -198,4 +197,4 @@ Jedes der Beispielinhaltspakete ist auch als PBIX-Datei von Power BI verfügbar.
 
 [Datenquellen für Power BI](service-get-data.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: Arbeiten mit Visualisierungen (visuellen Elementen) als Benutzer
 description: Konzepte und Terminologie für Power BI-Benutzer – Visualisierungen, visuelle Elemente. Was ist eine Power BI-Visualisierung bzw. ein visuelles Element.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7f72e53fe9f017f5f12893711858cc9179b883dd
-ms.sourcegitcommit: 5410a17c6325406c9d9364585d7c26de4d9488ae
+ms.openlocfilehash: fc663f34b5ed95502f84f3858cb54cdb42f6fead
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379971"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860984"
 ---
 # <a name="interact-with-visuals-in-reports-dashboards-and-apps"></a>Interagieren mit Visuals in Berichten, Dashboards und Apps
 
@@ -52,7 +51,7 @@ Für viele dieser Optionen kann Ihr Administrator oder der *Designer* die Mögli
 |[Lassen Sie Power BI für Sie in den Daten des visuellen Elements nach interessanten Fakten oder Trends ](end-user-insights.md) zu suchen.  Diese automatisch generierten Visuals werden *Erkenntnisse* genannt.     |    Ja     |  Für den ganzen Bericht, nicht pro Visual       | Nein   |
 |[Zeigen Sie immer nur ein visuelles Element gleichzeitig an, indem Sie den *Fokus*modus](end-user-focus.md) verwenden.     | Ja        |   Ja      | NV  |
 |[Suchen Sie den Zeitpunkt, zu dem das Visual zum letzten Mal aktualisiert wurde](end-user-fresh.md).     |  Ja       |    Ja     | NV  |
-|[Zeigen Sie immer nur ein Visual gleichzeitig ohne Ränder oder Navigationsleisten an, indem Sie den *Vollbild-* oder *Fokusmodus* verwenden](end-user-focus.md).     |   Ja      |  Ja       | Standardmäßig  |
+|[Zeigen Sie immer nur ein Visual gleichzeitig ohne Ränder oder Navigationsbereiche an, indem Sie den *Vollbild-* oder *Fokusmodus* verwenden](end-user-focus.md).     |   Ja      |  Ja       | Standardmäßig  |
 |[Drucken](end-user-print.md).     |  Ja       |   Ja      | Nein  |
 |[Untersuchen Sie das visuelle Element, indem Sie visuelle Filter hinzufügen und ändern.](end-user-report-filter.md)     |    Nein     |   Ja      | Nein  |
 |Zeigen Sie auf ein visuelles Element, um zusätzliche Details und QuickInfos anzuzeigen.     |    Ja     |   Ja      | Ja  |
