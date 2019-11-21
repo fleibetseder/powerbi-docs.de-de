@@ -1,21 +1,20 @@
 ---
 title: Power BI für Berichts-Designer
 description: Stellen Sie Verbindungen zu Daten her, entwerfen Sie Abfragen und erstellen Sie Berichte und Dashboards in Power BI? Sind Sie Power BI-Administrator?
-author: maggiesMSFT
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: landing-page
 ms.date: 10/07/2019
 ms.author: maggies
+author: maggiesMSFT
 layout: LandingPage
 LocalizationGroup: Get started
-ms.openlocfilehash: 4defed78228805a3f61447def82b3c3d406103d3
-ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
+ms.openlocfilehash: cb80bad73a615621ad8a2459e71607900f8d493d
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72239893"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128339"
 ---
 # <a name="power-bi-for-report-designers"></a>Power BI für Berichts-Designer
 
@@ -37,7 +36,7 @@ Sind Sie eher ein Verbraucher in Power BI? Willkommen! [Power BI für Verbrauche
                                           <h3>Erste Schritte beim Erstellen mit Power BI</h3> 
                                           <p></p>
                                                <a href="desktop-what-is-desktop.md">Erste Schritte mit Power BI Desktop</a><br/> 
-                                               <a href="power-bi-overview.md">Erste Schritte mit dem Power BI-Dienst</a><br/> 
+                                               <a href="fundamentals/power-bi-overview.md">Erste Schritte mit dem Power BI-Dienst</a><br/> 
                                                <a href="report-server/get-started.md">Was ist der Power BI-Berichtsserver?</a>
                                     </div> 
                               </div> 
@@ -156,7 +155,7 @@ Sind Sie eher ein Verbraucher in Power BI? Willkommen! [Power BI für Verbrauche
                                           <h3>Freigeben Ihrer Arbeit</h3> 
                                           <p></p>
                                                 <a href="service-how-to-collaborate-distribute-dashboards-reports.md">Wie kann ich mit anderen Personen zusammenarbeiten und Elemente freigeben?</a><br/>
-                                                <a href="service-create-workspaces.md">App-Arbeitsbereiche im Power BI-Dienst</a> 
+                                                <a href="service-create-workspaces.md">Arbeitsbereiche im Power BI-Dienst</a> 
                                     </div> 
                               </div> 
                         </div> 

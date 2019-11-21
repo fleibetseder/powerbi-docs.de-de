@@ -3,18 +3,17 @@ title: Veröffentlichen von Power BI-Visuals in AppSource
 description: Erfahren Sie, wie Sie ein benutzerdefiniertes Visual in AppSource veröffentlichen, damit es von anderen gefunden und verwendet werden kann.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 3/27/2019
-ms.openlocfilehash: 1841311e94ca593093fa3104b615328927365880
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 8d320b5fa1387ebf21ecd8c3c1db70b9892154e7
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307654"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128057"
 ---
 # <a name="publish-power-bi-visuals-to-appsource"></a>Veröffentlichen von Power BI-Visuals in AppSource
 
@@ -38,10 +37,10 @@ Nachdem Sie unsere [Richtlinien für Power BI-Visuals](guidelines-powerbi-visual
 | PBIX-Beispielberichtsdatei |Ja |Um Ihre Visualisierung zu präsentieren, sollten Sie Benutzer mit der Visualisierung vertraut machen. Sie sollten den Nutzen der Visualisierung für den Benutzer unterstreichen und Beispiele für die Verwendung, die Formatierungsoptionen und weitere Funktionen bieten. Sie können auch am Ende eine Seite für *Hinweise* hinzufügen, die Tipps und Tricks, häufige Fehler und ähnliche Hinweise enthält.<br>Der PBIX-Beispielbericht muss offline ohne externe Verbindung funktionieren. |
 | Symbol |Ja |Sie sollten das Logo der benutzerdefinierten Visualisierung einschließen, das in der digitalen Ladenzeile angezeigt wird. Dabei kann es sich um eine PNG-, JPG-, JPEG- oder GIF-Datei handeln. Die Abmessung muss genau 300 px (Breite) × 300 px (Höhe) betragen. **Wichtig:** Lesen Sie die [Kurzanleitung](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) sorgfältig durch, bevor Sie das Symbol senden. |
 | Screenshots |Ja |Sie müssen mindestens einen Screenshot bereitstellen. Dabei kann es sich um eine PNG-, JPG-, JPEG- oder GIF-Datei handeln. Die Abmessung muss genau 1366 px (Breite) × 768 px (Höhe) betragen. Die Datei darf nicht mehr als 1024 KB groß sein. *Um den Nutzen der Screenshots zu erhöhen, fügen Sie Textblasen hinzu, die den Wertbeitrag wichtiger Features, die in den einzelnen Screenshots gezeigt werden, erläutern.* |
-| Support-Downloadlink |Ja |Geben Sie eine URL an, um Kunden zu unterstützen, bei denen Probleme mit Ihrer Visualisierung auftreten. Dieser Link wird als Teil Ihrer SellerDashboard-Auflistung eingegeben und wird Benutzern angezeigt, wenn sie auf die Auflistung Ihres Visuals auf AppSource zugreifen. Die URL sollte „https://“ oder „http://“ enthalten. |
-| Link zum Datenschutzdokument |Ja |Geben Sie einen Link zur Datenschutzrichtlinie für Kunden an, die Ihre Visualisierung verwenden. Dieser Link wird als Teil Ihrer SellerDashboard-Auflistung eingegeben und wird Benutzern angezeigt, wenn sie auf die Auflistung Ihres Visuals auf AppSource zugreifen. Der Link sollte „https://“ oder „http://“ enthalten. |
+| Support-Downloadlink |Ja |Geben Sie eine URL an, um Kunden zu unterstützen, bei denen Probleme mit Ihrer Visualisierung auftreten. Dieser Link wird als Teil Ihrer SellerDashboard-Auflistung eingegeben und wird Benutzern angezeigt, wenn sie auf die Auflistung Ihres Visuals auf AppSource zugreifen. Das Format der URL muss „https://“ oder „http://“ enthalten. |
+| Link zum Datenschutzdokument |Ja |Geben Sie einen Link zur Datenschutzrichtlinie für Kunden an, die Ihre Visualisierung verwenden. Dieser Link wird als Teil Ihrer SellerDashboard-Auflistung eingegeben und wird Benutzern angezeigt, wenn sie auf die Auflistung Ihres Visuals auf AppSource zugreifen. Das Format des Links muss „https://“ oder „http://“ enthalten. |
 | Lizenzbedingungen |Ja |Sie müssen eine Datei mit den Lizenzbedingungen hochladen. Dabei kann es sich um eigene Lizenzbedingungen oder die Standardlizenzbedingungen im Office Store für Power BI-Visualisierungen handeln. Um die Standardlizenzbedingungen zu verwenden, fügen Sie die folgende URL in das Dialogfeld zum Hochladen der Datei mit Lizenzbedingungen im Verkäuferdashboard ein: [https://visuals.azureedge.net/app-store/Power BI – Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
-| Videolink |Nein |Um das Interesse der Benutzer an Ihrer benutzerdefinierten Visualisierung zu steigern, sollten sie einen Link zu einem Video über Ihre Visualisierung bereitstellen. Die URL sollte „https://“ oder „http://“ enthalten. |
+| Videolink |Nein |Um das Interesse der Benutzer an Ihrer benutzerdefinierten Visualisierung zu steigern, sollten sie einen Link zu einem Video über Ihre Visualisierung bereitstellen. Das Format der URL muss „https://“ oder „http://“ enthalten. |
 | GitHub-Repository |Nein |Es wird empfohlen, einen gültigen öffentlichen Link zu einem [GitHub](https://www.github.com)-Repository bereitzustellen, das Quellen Ihrer Visualisierung und Beispieldaten enthält, damit andere Entwickler Feedback geben und Verbesserungen des Codes vorschlagen können. |
 
 ## <a name="submitting-to-power-bi"></a>Übermitteln an Power BI
@@ -143,13 +142,13 @@ Nach der Übermittlung können Sie im [App-Dashboard](https://sellerdashboard.mi
 
 ## <a name="certify-your-visual"></a>Zertifizieren Ihrer Visualisierung
 
-Sobald Ihre Visualisierung erstellt wurde, können Sie veranlassen, dass die Visualisierung zertifiziert wird. Dies bedeutet, sie kann im Power BI-Dienst ausgeführt und mit anderen Funktionen des Diensts, z. B. Exportieren nach PowerPoint, verwendet werden. Weitere Informationen finden Sie unter [Wie wird ein benutzerdefiniertes visuelles Element *zertifiziert*?](../power-bi-custom-visuals-certified.md)
+Sobald Ihre Visualisierung erstellt wurde, können Sie veranlassen, dass die Visualisierung zertifiziert wird. Dies bedeutet, sie kann im Power BI-Dienst ausgeführt und mit anderen Funktionen des Diensts, z. B. Exportieren nach PowerPoint, verwendet werden. Weitere Informationen finden Sie unter [Wie wird ein benutzerdefiniertes visuelles Element *zertifiziert*?](../developer/power-bi-custom-visuals-certified.md)
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 [Entwickeln eines benutzerdefinierten Visuals für Power BI](visuals/custom-visual-develop-tutorial.md)  
 [Visualisierungen in Power BI](../visuals/power-bi-report-visualizations.md)  
-[Benutzerdefinierte Visualisierungen in Power BI](../power-bi-custom-visuals.md)  
-[Wie wird ein benutzerdefiniertes visuelles Element *zertifiziert*?](../power-bi-custom-visuals-certified.md)
+[Benutzerdefinierte Visualisierungen in Power BI](../developer/power-bi-custom-visuals.md)  
+[Wie wird ein benutzerdefiniertes visuelles Element *zertifiziert*?](../developer/power-bi-custom-visuals-certified.md)
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

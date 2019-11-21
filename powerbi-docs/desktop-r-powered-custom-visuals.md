@@ -3,19 +3,18 @@ title: Verwenden von R-gestützten Power BI-Visuals in Power BI
 description: Verwenden von R-gestützten Power BI-Visuals in Power BI
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 07/27/2018
 LocalizationGroup: Create reports
-ms.openlocfilehash: ab0c4a7bf529f878796ea4b41177e57d19c79128
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: 9cc5c40328955f54cb0f37567d7ff91d37a302ce
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71945257"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128231"
 ---
 # <a name="use-r-powered-power-bi-visuals-in-power-bi"></a>Verwenden von R-gestützten Power BI-Visuals in Power BI
 
@@ -55,7 +54,7 @@ Befolgen Sie die folgenden Schritte, um benutzerdefinierte Visuals auf der **App
    * [CRAN](https://cran.r-project.org/)
    * [MRO](https://mran.microsoft.com/)
 
-4. Sobald das Visual (wie jede andere Datei über den Browser) heruntergeladen wurde, wechseln Sie zu **Power BI Desktop**, klicken Sie im Bereich **Visuals** auf die Auslassungspunkte (...), und wählen Sie **Aus Datei importieren** aus.
+4. Sobald das Visual (wie jede andere Datei über den Browser) heruntergeladen wurde, wechseln Sie zu **Power BI Desktop**, klicken Sie im Bereich **Visualisierungen** auf die Auslassungspunkte (...) zum Öffnen **weiterer Optionen**, und wählen Sie **Aus Datei importieren** aus.
 
    ![R-Visual 4a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_4a.png)
 5. Sie erhalten eine Warnmeldung zum Importieren benutzerdefinierter Visualisierungen, wie in der folgenden Abbildung:

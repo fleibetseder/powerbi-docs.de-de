@@ -1,20 +1,19 @@
 ---
 title: Registrieren einer App zum Einbetten von Power BI-Inhalten
 description: Erfahren Sie, wie Sie eine Anwendung zum Einbetten von Power BI-Inhalten in Azure Active Directory registrieren können.
-author: rkarlin
-ms.author: rkarlin
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 04/02/2019
-ms.openlocfilehash: 73cca097ce6693c3bbee538eb1518a2ede19beab
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 8a2aa135bfa5720763485579b012c13c722637db
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61269699"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74009793"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Registrieren einer Azure AD-Anwendung zur Verwendung mit Power BI-Inhalten
 
@@ -105,7 +104,7 @@ Sie können sich entweder mit dem *Masterkonto* (zur Einbettung von Inhalten) od
 
 ### <a name="using-the-azure-ad-portal"></a>Über das Azure AD-Portal
 
-1. Navigieren Sie im Azure-Portal zu [App-Registrierungen](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade), und wählen Sie die App aus, die Sie für die Einbettung verwenden.
+1. Navigieren Sie im Azure-Portal zu [App-Registrierungen](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade/quickStartType//sourceType/), und wählen Sie die App aus, die Sie für die Einbettung verwenden.
 
 2. Wählen Sie unter **Verwalten** **API-Berechtigungen** aus.
 
@@ -199,4 +198,4 @@ Sie können sich entweder mit dem *Masterkonto* (zur Einbettung von Inhalten) od
 
 Sie haben Ihre Anwendung in Azure AD registriert und müssen jetzt Benutzer in der Anwendung authentifizieren. Weitere Informationen hierzu finden Sie unter [Authentifizieren von Benutzern und Abrufen eines Azure AD-Zugriffstokens für Ihre Power BI-App](get-azuread-access-token.md).
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

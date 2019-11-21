@@ -3,24 +3,24 @@ title: Exportieren von Daten aus einer Power BI-Visualisierung
 description: Sie können Daten aus einer Berichts- oder Dashboardvisualisierung exportieren und in Excel anzeigen.
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: tessa
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/30/2019
+ms.date: 11/13/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: be85769d8ae2340843a4ebdeb5c88ffc2ca86920
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: b2474cd5cc82e1736790f4a352b216dcc8013a6f
+ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431090"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74060460"
 ---
 # <a name="export-data-from-visualizations"></a>Exportieren von Daten aus Visualisierungen
 
-Wenn Sie die Daten anzeigen möchten, auf deren Grundlage eine Visualisierung erstellt wurde, können Sie die [Daten in Power BI anzeigen](service-reports-show-data.md). Sie können diese Daten auch als *XLSX*- oder *CSV*-Datei in Excel exportieren. Für das Exportieren von Daten sind eine Pro- oder Premium-Lizenz und Bearbeitungsberechtigungen für das Dataset und den Bericht erforderlich.
+Wenn Sie die Daten anzeigen möchten, auf deren Grundlage eine Visualisierung erstellt wurde, können Sie die [Daten in Power BI anzeigen](service-reports-show-data.md). Sie können diese Daten auch als *XLSX*- oder *CSV*-Datei in Excel exportieren. Für das Exportieren von Daten sind eine Pro- oder Premium-Lizenz und Bearbeitungsberechtigungen für das Dataset und den Bericht erforderlich. <!--If you have access to the dashboard or report but the data is classified as *highly confidential*, Power BI will not allow you to export the data.-->
 
 Sehen Sie zu, wie Will Daten aus einer der Visualisierungen in seinem Bericht exportiert, als *XLSX*-Datei speichert und dann in Excel öffnet. Befolgen Sie dann die schrittweisen Anleitungen unter dem Video, um es selbst ausprobieren.
 
@@ -152,7 +152,7 @@ Es ist wichtig, zu beachten, dass die Administratoreinstellungen die Datenexport
 ## <a name="limitations-and-considerations"></a>Einschränkungen und Überlegungen
 Diese Einschränkungen und Überlegungen gelten für Power BI Desktop und Power BI-Dienst, einschließlich Power BI Pro und Premium.
 
-- Um die Daten aus einem visuellen Element exportieren zu können, benötigen Sie [Erstellungsberechtigungen für freigegebene Datasets](https://docs.microsoft.com/power-bi/service-datasets-build-permissions#build-permissions-for-shared-datasets).
+- Um die Daten aus einem visuellen Element exportieren zu können, benötigen Sie [Erstellungsberechtigungen für freigegebene Datasets](https://docs.microsoft.com/power-bi/service-datasets-build-permissions).
 
 -  Die maximale Anzahl von Zeilen, die **Power BI Desktop** und **Power BI-Dienst** aus einem **Bericht im Importmodus** in eine *CSV*-Datei exportieren können, ist 30.000.
 
@@ -160,13 +160,11 @@ Diese Einschränkungen und Überlegungen gelten für Power BI Desktop und Power 
 
 - Das Exportieren mit *zugrunde liegenden Daten* funktioniert nicht, wenn:
 
-  - Die Datenquelle eine Analysis Services-Liveverbindung ist.
-
   - Die Version älter als 2016 ist.
 
   - Die Tabellen im Modell keinen eindeutigen Schlüssel aufweisen.
     
-  -  Wenn ein Administrator oder Berichtsdesigner dieses Feature deaktiviert hat.
+  -  Ein Administrator oder Berichts-Designer dieses Feature deaktiviert hat.
 
 - Das Exportieren mithilfe *Zugrunde liegender Daten* ist nicht möglich, wenn Sie für die Visualisierung, die Power BI exportiert, die Option *Elemente ohne Daten anzeigen* aktivieren.
 
@@ -196,4 +194,4 @@ Diese Einschränkungen und Überlegungen gelten für Power BI Desktop und Power 
 
 - Power BI-Administratoren können das Exportieren von Daten deaktivieren.
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

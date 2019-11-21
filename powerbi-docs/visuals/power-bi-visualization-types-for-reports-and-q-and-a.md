@@ -2,26 +2,25 @@
 title: Visualisierungstypen in Power BI
 description: Visualisierungstypen in Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/12/2019
+ms.date: 10/31/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c039f4adc196e619dc81af38fb52cd07e89992f0
-ms.sourcegitcommit: 4ae1257c5d7b33aa2fafd91caf8b353a985c6771
+ms.openlocfilehash: 80fc4f4afe29806077d1bf64a59d8761d7ab1c1d
+ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67161176"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099936"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualisierungstypen in Power BI
 ## <a name="power-bi-visualizations"></a>Power BI-Visualisierungen
 Wir werden neue Visualisierungen hinzufügen, seien Sie gespannt!
 
-Besuchen Sie auch [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Sie finden dort eine wachsende Anzahl von [benutzerdefinierten Visuals](../power-bi-custom-visuals.md), die Sie herunterladen und in eigenen Dashboards und Berichten verwenden können. Sind Sie kreativ? [Erfahren Sie, wie Sie eigene Visuals erstellen und zur Communitywebsite hinzufügen können](../developer/office-store.md).  
+Besuchen Sie auch [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Sie finden dort eine wachsende Anzahl von [benutzerdefinierten Visuals](../developer/power-bi-custom-visuals.md), die Sie herunterladen und in eigenen Dashboards und Berichten verwenden können. Sind Sie kreativ? [Erfahren Sie, wie Sie eigene Visuals erstellen und zur Communitywebsite hinzufügen können](../developer/office-store.md).  
 
 ## <a name="list-of-visualizations-available-in-power-bi"></a>Liste der in Power BI verfügbaren Visualisierungen
 Alle genannten Visualisierungen können zu Power BI-Berichten hinzugefügt, in Fragen und Antworten angegeben und auf Dashboards angeheftet werden.
@@ -147,6 +146,14 @@ Weitere Informationen finden Sie unter [Matrixvisuals in Power BI](desktop-matri
 >[!TIP]
 >Kreisdiagramme zeigen die Beziehung von Teilen zum Ganzen. 
 
+### <a name="qa-visual"></a>Q&A-Visuals
+![Visuals für Fragen und Antworten](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-q-and-a.png)
+
+>[!TIP]
+>Ähnlich wie bei der [Verwendung der Q&A-Funktion in Dashboards](../power-bi-tutorial-q-and-a.md) können Sie mit dem Visual für Fragen und Antworten Fragen zu Ihren Daten in natürlicher Sprache stellen. 
+
+Weitere Informationen finden Sie unter [Visuals für Fragen und Antworten in Power BI](power-bi-visualization-q-and-a.md).
+
 ### <a name="r-script-visuals"></a>Visuelle R-Skriptelemente
 ![R-Visuals](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-r-visuals.png)
 
@@ -218,8 +225,8 @@ Bei der Eingabe von Abfragen in natürlicher Sprache über den Bereich für Frag
 
 ***Umsätze nach Bundesland als Treemap***
 
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
+![Q&A-Fragefeld mit dem angegebenen Visualisierungstyp](media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Visualisierungen in Power BI-Berichten](power-bi-report-visualizations.md)    
-[„The right visual reference“ von sqlbi.com](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
+[„The right visual reference“ von sqlbi.com](https://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
