@@ -2,7 +2,6 @@
 title: Herstellen einer Verbindung mit Project Online mithilfe von Power BI
 description: Project Online für Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 0978e87167f96b40082819764d7e3ae35e930a4b
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: 941981e1f84cf3d7a74a156e4f1c88f57e061ad2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023782"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73854664"
 ---
 # <a name="connect-to-project-web-app-with-power-bi"></a>Herstellen einer Verbindung mit Project Web App mithilfe von Power BI
 Microsoft Project Web App ist eine flexible Onlinelösung für das Projektportfoliomanagement (PPM) und die tägliche Arbeit. Project Web App ermöglicht es Organisationen, die ersten Schritte zu unternehmen, Investitionen in Projektportfolios zu priorisieren und den beabsichtigten Geschäftserfolg zu realisieren. Mit der Vorlagen-App für Power BI von Project Web App können Sie Erkenntnisse von Project Web App nutzen, um das Verwalten von Projekten, Portfolios und Ressourcen zu vereinfachen.
@@ -24,7 +23,7 @@ Stellen Sie eine Verbindung mit der [Vorlagen-App von Project Web App](https://a
 
 ## <a name="how-to-connect"></a>Herstellen der Verbindung
 
-1. Wählen Sie im linken Navigationsbereich **Apps** und dann in der oberen rechten Ecke **Apps abrufen** aus.
+1. Wählen Sie im Navigationsbereich **Apps** und dann in der oberen rechten Ecke **Apps abrufen** aus.
 
     ![Apps abrufen](media/service-connect-to-project-online/GetApps.png)
 
@@ -38,7 +37,7 @@ Stellen Sie eine Verbindung mit der [Vorlagen-App von Project Web App](https://a
    ![Installieren von Project Web](media/service-connect-to-project-online/ProjectTile.png)
 5. Klicken Sie im Bereich **Apps** auf die Kachel **Microsoft Project Web App**. 
    
-   ![Microsoft Project Web-App](media/service-connect-to-project-online/getstarted.png)
+   ![Microsoft Project Web App](media/service-connect-to-project-online/getstarted.png)
 6. Wählen Sie unter **Erste Schritte mit Ihrer neuen App** die Option **Daten verbinden** aus.
    
    ![Verbinden mit Daten](media/service-connect-to-project-online/mproject.png)
@@ -52,7 +51,7 @@ Stellen Sie eine Verbindung mit der [Vorlagen-App von Project Web App](https://a
 
 9. Eine Benachrichtigung wird angezeigt, dass Ihre Daten geladen werden. Je nach Größe Ihres Kontos kann dies einige Zeit dauern. Nachdem Power BI die Daten importiert hat, werden die Inhalte Ihres neuen Arbeitsbereichs angezeigt. Möglicherweise müssen Sie das Dataset aktualisieren, um die neuesten Updates zu erhalten. 
 
-    Nachdem die Daten von Power BI importiert wurden, werden im linken Navigationsbereich der Bericht mit 13 Seiten und das Dataset angezeigt. 
+    Nachdem die Daten von Power BI importiert wurden, werden im Navigationsbereich der Bericht mit 13 Seiten und das Dataset angezeigt. 
 
 10. Sobald Ihre Berichte bereit sind, können Sie Ihre Project Web App-Daten erkunden. Die Vorlagen-App enthält 13 umfangreiche und detaillierte Berichte für die Portfolioübersicht (sechs Berichtsseiten), die Ressourcenübersicht (fünf Berichtsseiten) und den Projektstatus (zwei Berichtsseiten). 
 

@@ -2,19 +2,18 @@
 title: 'Tutorial: Stellen von Fragen mit dem virtuellen Q&A-Analysten in iOS-Apps'
 description: In diesem Tutorial verwenden Sie den virtuellen Q&A-Analysten in der mobilen Power BI-App auf Ihrem iOS-Gerät, um in Ihren eigenen Worten Fragen zu Beispieldaten stellen.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: tutorial
 ms.date: 11/16/2018
 ms.author: mshenhav
-ms.openlocfilehash: 74949d2b71dbdca46bbda9623a962616a72af45e
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: c7fd216d50f918d96392532ccb82f80d619ce8a3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61337406"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73869659"
 ---
 # <a name="tutorial-ask-questions-about-your-data-with-the-qa-virtual-analyst-in-the-power-bi-ios-apps"></a>Tutorial: Stellen von Fragen zu Ihren Daten mit dem virtuellen Q&A-Analysten in iOS-Apps für Power BI
 
@@ -42,7 +41,7 @@ Wenn Sie noch nicht bei Power BI registriert sind, müssen Sie sich zuerst für 
 ## <a name="prerequisites"></a>Voraussetzungen
 
 ### <a name="install-the-power-bi-for-ios-app"></a>Installieren der Power BI für iOS-App
-[Laden Sie die iOS-App](http://go.microsoft.com/fwlink/?LinkId=522062 "Herunterladen der iPhone-App") aus dem Apple App Store auf Ihr iPad, Ihr iPhone oder Ihren iPod Touch herunter.
+[Laden Sie die iOS-App](https://go.microsoft.com/fwlink/?LinkId=522062 "iPhone-App herunterladen") aus dem Apple App Store auf Ihr iPad, Ihr iPhone oder Ihren iPod Touch herunter.
 
 Folgende Versionen unterstützen die Power BI für iOS-App:
 - iPad mit iOS 10 oder höher
@@ -54,11 +53,11 @@ Der erste Schritt im Tutorial ist das Herunterladen der Beispiele zur Opportunit
 
 1. Öffnen Sie den Power BI-Dienst in einem Browser (app.powerbi.com), und melden Sie sich an.
 
-1. Klicken Sie auf das globale Navigationssymbol, um den linken Navigationsbereich zu öffnen.
+1. Klicken Sie auf das globale Navigationssymbol, um den Navigationsbereich zu öffnen.
 
     ![Globales Navigationssymbol](./media/tutorial-mobile-apps-ios-qna/power-bi-android-quickstart-global-nav-icon.png)
 
-2. Wählen Sie im linken Navigationsbereich **Arbeitsbereiche** > **Mein Arbeitsbereich** aus.
+2. Klicken Sie im Navigationsbereich auf **Arbeitsbereiche** > **Mein Arbeitsbereich**.
 
     ![Mein Arbeitsbereich](./media/tutorial-mobile-apps-ios-qna/power-bi-android-quickstart-my-workspace.png)
 
@@ -117,7 +116,7 @@ Wenn Sie das Tutorial beendet haben, können Sie das Dashboard, den Bericht und 
 
 1. Öffnen Sie den Power BI-Dienst (app.powerbi.com), und melden Sie sich an.
 
-2. Wählen Sie im linken Navigationsbereich **Arbeitsbereiche** > **Mein Arbeitsbereich** aus.
+2. Klicken Sie im Navigationsbereich auf **Arbeitsbereiche** > **Mein Arbeitsbereich**.
 
 3. Klicken Sie auf der Registerkarte **Dashboards** neben dem Dashboard für die Opportunityanalyse auf das Mülleimersymbol zum **Löschen**.
 

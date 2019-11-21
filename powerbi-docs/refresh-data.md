@@ -2,7 +2,6 @@
 title: Aktualisieren von Daten in Power BI
 description: Dieser Artikel beschreibt die Datenaktualisierungsfeatures von Power BI und ihre Abhängigkeiten auf konzeptioneller Ebene.
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: f5fe835d2ec423b596460a81ccb2a406b306c3c5
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 422d742748fc6880b0636bd3a0c5de7011a3ff0a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307945"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860790"
 ---
 # <a name="data-refresh-in-power-bi"></a>Aktualisieren von Daten in Power BI
 
@@ -93,14 +92,14 @@ Ein Power BI-Aktualisierungsvorgang kann aus mehreren Aktualisierungstypen beste
 
 #### <a name="data-refresh"></a>Datenaktualisierung
 
-Für Power BI-Benutzer bedeutet die Aktualisierung von Daten in der Regel den Import von Daten aus den ursprünglichen Datenquellen in ein Dataset, entweder basierend auf einem Aktualisierungszeitplan oder bedarfsgesteuert. Sie können mehrere tägliche Aktualisierungen des Datasets durchführen, was notwendig sein kann, wenn sich die zugrunde liegenden Quelldaten häufig ändern. Power BI begrenzt Datasets auf gemeinsam genutzter Kapazität auf acht tägliche Aktualisierungen. Wenn das Dataset sich auf einer Premium-Kapazität befindet, können Sie bis zu 48 Aktualisierungen pro Tag durchführen. Weitere Informationen finden Sie später in diesem Artikel unter „Konfigurieren geplanter Aktualisierungen“.
+Für Power BI-Benutzer bedeutet die Aktualisierung von Daten in der Regel den Import von Daten aus den ursprünglichen Datenquellen in ein Dataset, entweder basierend auf einem Aktualisierungszeitplan oder bedarfsgesteuert. Sie können mehrere tägliche Aktualisierungen des Datasets durchführen, was notwendig sein kann, wenn sich die zugrunde liegenden Quelldaten häufig ändern. Power BI begrenzt Datasets auf gemeinsam genutzter Kapazität auf acht tägliche Aktualisierungen. Wenn das Dataset sich auf einer Premium-Kapazität befindet, können Sie in den Dataseteinstellungen bis zu 48 Aktualisierungen pro Tag planen. Weitere Informationen finden Sie später in diesem Artikel unter „Konfigurieren geplanter Aktualisierungen“.
 
-Es ist auch wichtig, darauf hinzuweisen, dass die Beschränkung der täglichen Aktualisierungen sowohl für geplante als auch für bedarfsgesteuerte Aktualisierungen gilt. Sie können eine bedarfsgesteuerte Aktualisierung auslösen, indem Sie **Jetzt aktualisieren** im Datasetmenü auswählen, wie der folgende Screenshot zeigt. Sie können auch eine Datenaktualisierung mithilfe der Power BI-REST-API programmgesteuert auslösen. Wenn Sie daran interessiert sind, eine eigene Aktualisierungslösung zu erstellen, lesen Sie [Datasets – Dataset aktualisieren](/rest/api/power-bi/datasets/refreshdataset).
+Es ist auch wichtig, darauf hinzuweisen, dass die Beschränkung der gemeinsamen Kapazität für tägliche Aktualisierungen sowohl für geplante als auch für API-Aktualisierungen gilt. Sie können auch eine bedarfsgesteuerte Aktualisierung auslösen, indem Sie **Jetzt aktualisieren** im Datasetmenü auswählen, wie der folgende Screenshot zeigt. Bedarfsgesteuerte Aktualisierungen sind nicht in der Aktualisierungseinschränkung enthalten. Beachten Sie auch, dass Datasets in einer Premium-Kapazität keine Einschränkungen für API-Aktualisierungen enthalten. Wenn Sie daran interessiert sind, eine eigene Aktualisierungslösung mithilfe der Power BI-REST-API zu erstellen, lesen Sie [Datasets – Dataset aktualisieren](/rest/api/power-bi/datasets/refreshdataset).
 
 ![Jetzt aktualisieren](media/refresh-data/refresh-now.png)
 
 > [!NOTE]
-> Datenaktualisierungen müssen in weniger als 2 Stunden abgeschlossen werden. Wenn Ihre Datasets längere Aktualisierungsvorgänge erfordern, ziehen Sie in Betracht, das Dataset auf eine Premium-Kapazität zu verschieben. Auf Premium beträgt die maximale Aktualisierungsdauer 5 Stunden.
+> Datenaktualisierungen müssen auf gemeinsam genutzter Kapazität in weniger als 2 Stunden abgeschlossen werden. Wenn Ihre Datasets längere Aktualisierungsvorgänge erfordern, ziehen Sie in Betracht, das Dataset auf eine Premium-Kapazität zu verschieben. Auf Premium beträgt die maximale Aktualisierungsdauer 5 Stunden.
 
 #### <a name="onedrive-refresh"></a>OneDrive-Aktualisierung
 
@@ -134,7 +133,7 @@ Nach einer Datenaktualisierung sind jedoch zuvor zwischengespeicherte Abfrageerg
 
 #### <a name="tile-refresh"></a>Kachelaktualisierung
 
-Power BI verwaltet einen Cache für jedes visuelle Kachelelement auf Ihren Dashboards und aktualisiert proaktiv die Kachelcaches, wenn sich Daten ändern. D.h., die Kachelaktualisierung erfolgt automatisch nach einer Datenaktualisierung. Dies gilt sowohl für geplante als auch bedarfsgesteuerte Aktualisierungsvorgänge. Sie können eine Kachelaktualisierung auch erzwingen, indem Sie die Auslassungspunkte (...) oben rechts in einem Dashboard auswählen und dann **Dashboardkacheln aktualisieren** auswählen.
+Power BI verwaltet einen Cache für jedes visuelle Kachelelement auf Ihren Dashboards und aktualisiert proaktiv die Kachelcaches, wenn sich Daten ändern. D.h., die Kachelaktualisierung erfolgt automatisch nach einer Datenaktualisierung. Dies gilt sowohl für geplante als auch bedarfsgesteuerte Aktualisierungsvorgänge. Sie können eine Kachelaktualisierung auch erzwingen, indem Sie **Weitere Optionen** (...) oben rechts in einem Dashboard auswählen und dann **Dashboardkacheln aktualisieren** auswählen.
 
 ![Dashboardkacheln aktualisieren](media/refresh-data/refresh-dashboard-tiles.png)
 
@@ -277,7 +276,7 @@ In dem Bereich **geplante Aktualisierung** definieren Sie das Aktualisierungsint
 
 ![Konfigurieren von geplanten Aktualisierungen](media/refresh-data/configure-scheduled-refresh.png)
 
-Nachdem Sie einen Aktualisierungszeitplan konfiguriert haben, werden Sie auf der Seite mit den Dataseteinstellungen über die nächste Aktualisierungszeit informiert, wie im obigen Screenshot dargestellt. Wenn Sie die Daten früher aktualisieren möchten, z. B. um Ihr Gateway und Ihre Datenquellenkonfiguration zu testen, führen Sie eine bedarfsgesteuerte Aktualisierung durch, indem Sie die Option **Jetzt aktualisieren** im Datasetmenü im linken Navigationsbereich verwenden. Bedarfsgesteuerte Aktualisierungen haben keinen Einfluss auf die nächste geplante Aktualisierungszeit, aber sie zählen bei der Beschränkung der täglichen Aktualisierungen, wie bereits früher in diesem Artikel erläutert.
+Nachdem Sie einen Aktualisierungszeitplan konfiguriert haben, werden Sie auf der Seite mit den Dataseteinstellungen über die nächste Aktualisierungszeit informiert, wie im obigen Screenshot dargestellt. Wenn Sie die Daten früher aktualisieren möchten, z. B. um Ihr Gateway und Ihre Datenquellenkonfiguration zu testen, führen Sie eine bedarfsgesteuerte Aktualisierung durch, indem Sie die Option **Jetzt aktualisieren** im Datasetmenü im Navigationsbereich verwenden. Bedarfsgesteuerte Aktualisierungen haben keinen Einfluss auf die nächste geplante Aktualisierungszeit, aber sie zählen bei der Beschränkung der täglichen Aktualisierungen, wie bereits früher in diesem Artikel erläutert.
 
 Beachten Sie auch, dass die konfigurierte Aktualisierungszeit möglicherweise nicht genau der Zeitpunkt ist, zu dem Power BI den nächsten geplanten Prozess startet. Power BI startet geplante Aktualisierungen auf bestmögliche Weise. Das Ziel ist, die Aktualisierung innerhalb von 15 Minuten des geplanten Zeitfensters zu starten, aber es kann zu einer Verzögerung von bis zu einer Stunde kommen, wenn der Dienst die benötigten Ressourcen nicht früher zuweisen kann.
 
@@ -339,4 +338,4 @@ Beachten Sie außerdem die folgenden Empfehlungen, um zuverlässige Datenaktuali
 [Tools zur Problembehandlung von Aktualisierungsproblemen](service-gateway-onprem-tshoot.md)  
 [Problembehandlung bei Aktualisierungsszenarios](refresh-troubleshooting-refresh-scenarios.md)  
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

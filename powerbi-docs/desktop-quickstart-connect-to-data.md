@@ -2,7 +2,6 @@
 title: 'Schnellstart: Herstellen einer Verbindung mit Daten'
 description: Herstellen einer Verbindung mit einer Datenquelle in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: quickstart
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: quickstart
-ms.openlocfilehash: 253ecbad775a2f4aa7dd1974c534fdcaa222676c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 1366a5281a36293a484f08c12ab9f8891e29123d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514456"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876213"
 ---
 # <a name="quickstart-connect-to-data-in-power-bi-desktop"></a>Schnellstart: Verbinden mit Daten in Power BI Desktop
 
@@ -28,12 +27,12 @@ Wenn Sie noch nicht bei Power BI registriert sind, müssen Sie sich zuerst für 
 ## <a name="prerequisites"></a>Voraussetzungen
 
 Um die Schritte in diesem Artikel auszuführen, benötigen Sie Folgendes:
-* **Power BI Desktop** ist eine kostenlose Anwendung, die auf Ihrem lokalen Computer ausgeführt wird. Laden Sie sie herunter, und installieren Sie sie. Sie können [**Power BI Desktop** direkt herunterladen](https://powerbi.microsoft.com/desktop) oder aus dem [**Microsoft Store**](http://aka.ms/pbidesktopstore) abrufen.
-* [Laden Sie diese Excel-Beispielarbeitsmappe herunter](http://go.microsoft.com/fwlink/?LinkID=521962), und erstellen Sie den Ordner *C:\PBID-qs*, in dem Sie die Excel-Datei speichern können. Bei den nachfolgenden Schritten in dieser Schnellstartanleitung wird davon ausgegangen, dass dies der Speicherort der heruntergeladenen Excel-Arbeitsmappe ist.
+* **Power BI Desktop** ist eine kostenlose Anwendung, die auf Ihrem lokalen Computer ausgeführt wird. Laden Sie sie herunter, und installieren Sie sie. Sie können [**Power BI Desktop** direkt herunterladen](https://powerbi.microsoft.com/desktop) oder aus dem [**Microsoft Store**](https://aka.ms/pbidesktopstore) abrufen.
+* [Laden Sie diese Excel-Beispielarbeitsmappe herunter](https://go.microsoft.com/fwlink/?LinkID=521962), und erstellen Sie den Ordner *C:\PBID-qs*, in dem Sie die Excel-Datei speichern können. Bei den nachfolgenden Schritten in dieser Schnellstartanleitung wird davon ausgegangen, dass dies der Speicherort der heruntergeladenen Excel-Arbeitsmappe ist.
 
 ## <a name="launch-power-bi-desktop"></a>Starten von Power BI Desktop
 
-Nachdem Sie **Power BI Desktop** installiert haben, starten Sie die Anwendung, sodass sie auf Ihrem lokalen Computer ausgeführt wird. Es wird eine leere Canvas angezeigt, auf der Sie Visuals und Berichte aus den Daten erstellen, mit denen Sie eine Verbindung hergestellt haben. 
+Nachdem Sie **Power BI Desktop** installiert haben, starten Sie die Anwendung, sodass sie auf Ihrem lokalen Computer ausgeführt wird. Ein Tutorial für Power BI wird angezeigt. Folgen Sie den Anweisungen im Tutorial, oder schließen Sie es, und beginnen Sie mit einer leeren Canvas, auf der Sie Visuals und Berichte aus den Daten erstellen, mit denen Sie eine Verbindung hergestellt haben. 
 
 ![Power BI Desktop – leere Canvas](media/desktop-quickstart-connect-to-data/qs-connect-data_01.png)
 

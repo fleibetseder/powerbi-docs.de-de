@@ -2,7 +2,6 @@
 title: Erstellen und Verwenden von Dataflows in Power BI
 description: Erfahren Sie, wie Sie Dataflows in Power BI erstellen und verwenden.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,18 +9,18 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 4507490fc2986ec7934af4c9e7417585523c7a05
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 704e073299f89859c507b3ddc6ccba0b4be03d76
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61143932"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877374"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi"></a>Erstellen und Verwenden von Dataflows in Power BI
 
 Mit der erweiterten Datenaufbereitung in **Power BI** können Sie eine Sammlung von Daten erstellen, den sogenannten Dataflow. Damit können Sie eine Verbindung zu Geschäftsdaten aus verschiedenen Quellen herstellen sowie Daten bereinigen, transformieren und dann in den Power BI-Speicher laden.
 
-Ein **Dataflow** ist eine Sammlung von *Entitäten* (Entitäten ähneln Tabellen), die in App-Arbeitsbereichen im Power BI-Dienst erstellt und verwaltet werden. Sie können Entitäten Ihrem Dataflow hinzufügen und diese bearbeiten sowie Zeitpläne zur Datenaktualisierung direkt in dem Arbeitsbereich verwalten, in dem Ihr Dataflow erstellt wurde.
+Ein **Dataflow** ist eine Sammlung von *Entitäten* (Entitäten ähneln Tabellen), die in Arbeitsbereichen im Power BI-Dienst erstellt und verwaltet werden. Sie können Entitäten Ihrem Dataflow hinzufügen und diese bearbeiten sowie Zeitpläne zur Datenaktualisierung direkt in dem Arbeitsbereich verwalten, in dem Ihr Dataflow erstellt wurde.
 
 Wenn Sie einen Dataflow erstellt haben, können Sie mit **Power BI Desktop** und dem **Power BI-Dienst** Datasets, Berichte, Dashboards und Apps erstellen, die auf den Daten basieren, die Sie in Power BI-Dataflows integriert haben, und so Informationen zu Ihren Geschäftsaktivitäten gewinnen.
 
@@ -36,13 +35,13 @@ Das Verwenden eines Dataflows umfasst drei wesentliche Schritte:
 Die folgenden Abschnitten widmen sich jedem dieser Schritte und stellen die dafür verfügbaren Tools vor. Fangen wir an.
 
 ## <a name="creating-a-dataflow"></a>Erstellen eines Dataflows
-Um einen Dataflow zu erstellen, starten Sie den Power BI-Dienst im Browser, und wählen Sie im Navigationsbereich links einen **App-Arbeitsbereich** aus (Dataflows sind im Power BI-Dienst unter *my-workspace* nicht verfügbar). Die folgende Abbildung veranschaulicht das. Sie können auch einen neuen Arbeitsbereich zum Erstellen Ihres neuen Dataflows erstellen. 
+Starten Sie den Power BI-Dienst im Browser, und wählen Sie im Navigationsbereich links einen **Arbeitsbereich** aus (Dataflows sind im Power BI-Dienst unter *my-workspace* nicht verfügbar), um einen Dataflow zu erstellen. Die folgende Abbildung veranschaulicht das. Sie können auch einen neuen Arbeitsbereich zum Erstellen Ihres neuen Dataflows erstellen. 
 
 ![Erstellen eines Dataflows in Power BI](media/service-dataflows-create-use/dataflows-create-use_02a.png)
 
-Im Bereich **App-Arbeitsbereich**, in dem Sie einen Dataflow erstellen können, wird oben rechts auf der Canvas die Schaltfläche **+ Erstellen** angezeigt. Wählen Sie die Schaltfläche **+ Erstellen** und dann **Dataflow** aus der Dropdownliste aus. 
+Im Bereich **Arbeitsbereich**, in dem Sie einen Dataflow erstellen können, wird oben rechts auf der Canvas die Schaltfläche **+ Erstellen** angezeigt. Wählen Sie die Schaltfläche **+ Erstellen** und dann **Dataflow** aus der Dropdownliste aus. 
 
-Beachten Sie, dass ein Dataflow nur *einen Besitzer* haben kann. Das ist die Person, die den Dataflow erstellt. Nur der Besitzer kann den Dataflow bearbeiten. Alle Mitglieder des **App-Arbeitsbereichs**, die Lese- oder Schreibberechtigungen für den App-Arbeitsbereich haben, in dem der Dataflow erstellt wird, können sich über **Power BI Desktop** mit dem Dataflow verbinden. Dies wird später im Artikel beschrieben.
+Beachten Sie, dass ein Dataflow nur *einen Besitzer* haben kann. Das ist die Person, die den Dataflow erstellt. Nur der Besitzer kann den Dataflow bearbeiten. Alle Mitglieder des **Arbeitsbereichs**, die Lese- oder Schreibberechtigungen für den Arbeitsbereich haben, in dem der Dataflow erstellt wird, können sich über **Power BI Desktop** mit dem Dataflow verbinden. Dies wird später im Artikel beschrieben.
 
 ![Schaltfläche „+ Erstellen“ in Power BI zum Erstellen eines Dataflows](media/service-dataflows-create-use/dataflows-create-use_03a.png)
 
@@ -111,7 +110,7 @@ Großartig! Nun können Sie mit dem nächsten Schritt fortfahren, nämlich der P
 
 Wenn Ihr Dataflow gespeichert wurde, legen Sie die Aktualisierungshäufigkeit für alle Ihre verknüpften Datenquellen fest.
 
-Power BI-Dataflows verwenden den Power BI-Datenaktualisierungsprozess, um Ihre Daten auf dem neuesten Stand zu halten. Im **Power BI-Dienst** finden Sie im Abschnitt **App-Arbeitsbereich** eine Sammlung von Bereichen, in denen Ihre Informationen aufgelistet werden können, einschließlich Dataflows (s. Abbildung).
+Power BI-Dataflows verwenden den Power BI-Datenaktualisierungsprozess, um Ihre Daten auf dem neuesten Stand zu halten. Im **Power BI-Dienst** finden Sie im Abschnitt **Arbeitsbereich** eine Sammlung von Bereichen, in denen Ihre Informationen aufgelistet werden können, einschließlich Dataflows (s. Abbildung).
 
 ![Verwalten von Dataflows im Power BI-Dienst](media/service-dataflows-create-use/dataflows-create-use_12.png)
 
@@ -134,7 +133,7 @@ Wählen Sie in Power BI Desktop **Daten abrufen > Power BI > Power BI-Dataflows 
 
 ![Herstellen einer Verbindung mit Dataflows über Power BI Desktop](media/service-dataflows-create-use/dataflows-create-use_15.png)
 
-Navigieren Sie von dort aus zu dem **App-Arbeitsbereich**, in dem Sie Ihren Dataflow gespeichert haben. Wählen Sie den Dataflow und dann die Entitäten aus, die Sie aus der Liste erstellt haben.
+Navigieren Sie von dort aus zu dem **Arbeitsbereich**, in dem Sie Ihren Dataflow gespeichert haben. Wählen Sie den Dataflow und dann die Entitäten aus, die Sie aus der Liste erstellt haben.
 
 Sie können auch die **Suchleiste** oben im Fensters verwenden, um schnell nach dem Namen Ihres Dataflows oder in Dataflowentitäten nach Ihren Entitäten zu suchen.
 

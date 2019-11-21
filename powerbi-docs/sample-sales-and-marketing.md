@@ -2,7 +2,6 @@
 title: 'Beispiel für Vertrieb und Marketing für Power BI: Übersicht'
 description: 'Beispiel für Vertrieb und Marketing für Power BI: Übersicht'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 31f42d7f53b3322717677d586266668fb2c0f26b
-ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
+ms.openlocfilehash: 8085a6c8f5d0e7a2797ef6c5961b6083eb98f346
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68391360"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873813"
 ---
 # <a name="sales-and-marketing-sample-for-power-bi-take-a-tour"></a>Beispiel für Vertrieb und Marketing für Power BI: Übersicht
 
@@ -56,11 +55,11 @@ Bevor Sie das Beispiel verwenden können, müssen Sie es zunächst als [Inhaltsp
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Abrufen der PBIX-Datei für dieses Beispiel
 
-Alternativ können Sie das Beispiel für Vertrieb und Marketing als [PBIX-Datei](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) herunterladen, die zur Verwendung mit Power BI Desktop vorgesehen ist.
+Alternativ können Sie das Beispiel für Vertrieb und Marketing als [PBIX-Datei](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) herunterladen, die zur Verwendung mit Power BI Desktop vorgesehen ist.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Abrufen der Excel-Arbeitsmappe für dieses Beispiel
 
-Wenn Sie sich die Datenquelle für dieses Beispiel ansehen möchten, dieses steht auch als [Excel-Arbeitsmappe](http://go.microsoft.com/fwlink/?LinkId=529785) zur Verfügung. Die Arbeitsmappe enthält Power View-Blätter, die Sie anzeigen und ändern können. Aktivieren Sie die Add-Ins für die Datenanalyse, um die Rohdaten anzuzeigen, und klicken Sie dann auf **Power Pivot > Verwalten**. Weitere Informationen zum Aktivieren der Add-Ins für Power View und Power Pivot finden Sie unter [Anzeigen der Excel-Beispiele in Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Wenn Sie sich die Datenquelle für dieses Beispiel ansehen möchten, dieses steht auch als [Excel-Arbeitsmappe](https://go.microsoft.com/fwlink/?LinkId=529785) zur Verfügung. Die Arbeitsmappe enthält Power View-Blätter, die Sie anzeigen und ändern können. Aktivieren Sie die Add-Ins für die Datenanalyse, um die Rohdaten anzuzeigen, und klicken Sie dann auf **Power Pivot > Verwalten**. Weitere Informationen zum Aktivieren der Add-Ins für Power View und Power Pivot finden Sie unter [Anzeigen der Excel-Beispiele in Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Welche Erkenntnisse gewinnen wir über unser Dashboard?
 Wir werden uns nun das Dashboard und die Kacheln ansehen, die der CMO angeheftet hat. Wir sehen Informationen zu unserem Marktanteil, den Verkäufen und der Stimmungslage. Die Daten sind nach Region, Zeitraum und Wettbewerb aufgeschlüsselt.
@@ -82,7 +81,7 @@ Durch Verwenden von Q&A können Sie weitere Details in den Daten entdecken.
 
    ![Q&A-Frage: Total units by segment for VanArsdel (Gesamteinheiten nach Segment für VanArsdel)](media/sample-sales-and-marketing/sales2.png)
 3. Unser Anteil in den Kategorien **Moderation** und **Komfort** ist hoch – in diesen Segmenten behaupten wir uns im Wettbewerb.
-4. Kehren Sie zum Dashboard zurück, indem Sie **Sales and Marketing Sample** in der oberen Navigationsleiste auswählen.
+4. Kehren Sie zum Dashboard zurück, indem Sie im oberen Navigationsbereich auf **Beispiel für Vertrieb und Marketing** klicken.
 
 ### <a name="what-does-total-unit-market-share-look-like-for-category-versus-region"></a>Wie sieht der Marktanteil für die gesamten Einheiten für die Kategorie (im Vergleich zur Region) aus?
 1. Betrachten Sie die Kachel **Total Units YTD by Manufacturer, Region** (Gesamteinheiten YTD nach Hersteller, Region). Wie groß ist der Marktanteil für die Einheiten insgesamt nach Kategorie?

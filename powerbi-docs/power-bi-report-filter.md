@@ -2,7 +2,6 @@
 title: Neue Filteroberfläche in Power BI-Berichten
 description: Filter in Power BI erhalten eine neue Funktionalität und ein neues Design.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,16 +9,16 @@ ms.topic: conceptual
 ms.date: 09/06/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: e5e67863888e5bd6d611ded7a58254fe693f4bb6
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: ab7d8a34211b9cb8addd90daf2cbce7d22f10e61
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841269"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875148"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports"></a>Neue Filteroberfläche in Power BI-Berichten
 
-Filter in Power BI haben eine neue Funktionalität und ein neues Design. Wenn Sie sich für die neue Filterbenutzeroberfläche entscheiden, können Sie den Filterbereich so formatieren, dass er wie der Rest des Berichts aussieht. Sie können Filter sperren und sogar ausblenden. Wenn Sie den Bericht entwerfen, sehen Sie nicht mehr den alten Filterbereich im Bereich „Visualisierungen“. Ihre gesamte Filterbearbeitung und -formatierung führen Sie in einem einzelnen Filterbereich durch. 
+Filter in Power BI haben eine neue Funktionalität und ein neues Design. Wenn Sie sich für das neue Filterdesign entscheiden, können Sie den Filterbereich so formatieren, dass er wie der Rest des Berichts aussieht. Sie können Filter sperren und sogar ausblenden. Wenn Sie den Bericht entwerfen, sehen Sie nicht mehr den alten Filterbereich im Bereich „Visualisierungen“. Ihre gesamte Filterbearbeitung und -formatierung führen Sie in einem einzelnen Filterbereich durch. 
 
 ![Neue Filteroberfläche](media/power-bi-report-filter/power-bi-filter-new-look.png)
 
@@ -44,7 +43,7 @@ Die neue Filteroberfläche ist für neue Berichte standardmäßig aktiviert. Sie
 ### <a name="turn-on-new-filters-for-an-existing-report-in-power-bi-desktop"></a>Aktivieren von neuen Filtern für einen vorhandenen Bericht in Power BI Desktop
 
 1. Wählen Sie in Power BI Desktop in einem vorhandenen Bericht **Datei** > **Optionen und Einstellungen** > **Optionen** aus.
-2. Wählen Sie in der linken Navigationsleiste unter **Aktuelle Datei** die Option **Berichtseinstellungen** aus.
+2. Wählen Sie im Navigationsbereich unter **Aktuelle Datei** den Eintrag **Berichtseinstellungen** aus.
 3. Wählen Sie unter **Benutzeroberfläche zur Filterung** die Option **Aktualisierten Filterbereich aktivieren und Filter im Visualheader für diesen Bericht anzeigen** aus.
 
 ### <a name="turn-on-new-filters-for-an-existing-report-in-the-service"></a>Aktivieren von neuen Filtern für einen vorhandenen Bericht im Power BI-Dienst
@@ -238,5 +237,5 @@ Probieren Sie die neue Filteroberfläche aus! Senden Sie uns auf der [Power BI I
 - [Filter und Hervorhebungen in Berichten](power-bi-reports-filters-and-highlighting.md)
 - [Verschiedene Filtertypen in Power BI-Berichten](power-bi-report-filter-types.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 

@@ -2,7 +2,6 @@
 title: Erstellen eines Berichts aus einem Dataset
 description: Erstellen Sie einen Power BI-Bericht aus einem Dataset.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,27 +9,27 @@ ms.topic: conceptual
 ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: f2d9046c907b78ce2c1bb2754007c34199877a08
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: c3f30206a01dce9cf9fd3ce0600b46b401df2b1f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523080"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871767"
 ---
 # <a name="create-a-report-in-the-power-bi-service-by-importing-a-dataset"></a>Erstellen eines Berichts im Power BI-Dienst durch Importieren eines Datasets
 Sie haben [Berichte in Power BI](consumer/end-user-reports.md) gelesen, und jetzt möchten Sie Ihren eigenen erstellen. Es gibt verschiedene Möglichkeiten zum Erstellen eines Berichts. In diesem Artikel wird zunächst ein einfacher Bericht im Power BI-Dienst aus einem Excel-Dataset erstellt. Wenn Sie die Grundlagen zum Erstellen eines Berichts verstanden haben, sehen Sie sich die [nächsten Schritte](#next-steps) ganz unten an, um zu komplexeren Themen über Berichte zu gelangen.  
 
 ## <a name="prerequisites"></a>Voraussetzungen
 - [Registrieren Sie sich beim Power BI-Dienst](service-self-service-signup-for-power-bi.md). Informationen zum Erstellen von Berichten mit Power BI Desktop finden Sie unter [Berichtsansicht in Power BI Desktop](desktop-report-view.md). 
-- [Laden Sie das Excel-Dataset „Analysebeispiel für Einzelhandel“ herunter](http://go.microsoft.com/fwlink/?LinkId=529778), und speichern Sie es in OneDrive for Business oder lokal.
+- [Laden Sie das Excel-Dataset „Analysebeispiel für Einzelhandel“ herunter](https://go.microsoft.com/fwlink/?LinkId=529778), und speichern Sie es in OneDrive for Business oder lokal.
 
 ## <a name="import-the-dataset"></a>Importieren des Datasets
 Diese Methode zum Erstellen eines Berichts beginnt mit einem Dataset und einem leeren Berichtszeichenbereich. Sie können die Vorgehensweise im Excel-Dataset „Analysebeispiel für Einzelhandel“ nachvollziehen.
 
 1. Der Bericht wird in einem Arbeitsbereich des Power BI-Diensts erstellt. Wählen Sie daher einen vorhandenen Arbeitsbereich aus, oder erstellen Sie einen.
    
-   ![Liste von App-Arbeitsbereichen](media/service-report-create-new/power-bi-workspaces2.png)
-2. Wählen Sie unten im linken Navigationsbereich **Daten abrufen** aus.
+   ![Liste von Arbeitsbereichen](media/service-report-create-new/power-bi-workspaces2.png)
+2. Wählen Sie unten im Navigationsbereich **Daten abrufen** aus.
    
    ![Daten abrufen](media/service-report-create-new/power-bi-get-data3.png)
 3. Wählen Sie **Dateien** aus, und navigieren Sie zum Speicherort des Beispiels für die Einzelhandelsanalyse.
@@ -93,5 +92,5 @@ Erkunden Sie weiter Ihre Daten, und fügen Sie Visualisierungen hinzu. Wenn Sie 
 ## <a name="next-steps"></a>Nächste Schritte
 
 * Erfahren Sie, wie Sie [Visualisierungen an ein Dashboard anheften](service-dashboard-pin-tile-from-report.md).   
-* Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+* Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 

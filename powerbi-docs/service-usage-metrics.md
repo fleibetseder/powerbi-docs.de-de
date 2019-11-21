@@ -3,20 +3,19 @@ title: Überwachen von Nutzungsmetriken für Dashboards und Berichte
 description: Anzeigen, Speichern und Verwenden von Nutzungsmetriken für Power BI-Dashboards und -Berichte.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 10/21/2019
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e77bfdf771e84afbc87335aa77993640d10282b0
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: 9aa2e11dd2068cae118336268c5c55ead1e25b8b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530552"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871203"
 ---
 # <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Überwachen von Nutzungsmetriken für Power BI-Dashboards und Berichte
 
@@ -86,7 +85,7 @@ Um tiefer in die Berichtsdaten einzusteigen oder auf der Grundlage des zugrunde 
 
 | Metrik | Dashboard | Report | Beschreibung |
 | --- | --- | --- | --- |
-| Datenschnitt „Verteilungsmethode“ |Ja |Ja |Wie Benutzer Zugriff auf den Inhalt erhalten haben. Es gibt drei Zugriffsmethoden: 1. Können Benutzer auf das Dashboard oder den Bericht als Mitglied eines [App-Arbeitsbereichs](consumer/end-user-experience.md) zugreifen, 2. kann der Inhalt für sie [freigegeben](service-share-dashboards.md) werden, oder es kann 3. ein Inhaltspakets bzw. eine App installiert werden.  Beachten Sie, dass Aufrufe über eine App als „Inhaltspaket“ gelten. |
+| Datenschnitt „Verteilungsmethode“ |Ja |Ja |Wie Benutzer Zugriff auf den Inhalt erhalten haben. Es gibt drei Zugriffsmethoden: 1. Können Benutzer auf das Dashboard oder den Bericht als Mitglied eines [Arbeitsbereichs](consumer/end-user-experience.md) zugreifen, 2. kann der Inhalt für sie [freigegeben](service-share-dashboards.md) werden, oder es kann 3. ein Inhaltspakets bzw. eine App installiert werden.  Beachten Sie, dass Aufrufe über eine App als „Inhaltspaket“ gelten. |
 | Datenschnitt „Plattformen“ |Ja |Ja |Wurde auf das Dashboard oder den Bericht über den Power BI-Dienst (powerbi.com) oder ein mobiles Gerät zugegriffen? Unter „Mobil“ fallen alle unsere iOS-, Android- und Windows-Apps. |
 | Datenschnitt „Berichtsseite“ |Nein |Ja |Wenn der Bericht mehr als eine Seite hat, segmentieren Sie den Bericht anhand der Seiten, die aufgerufen wurden. Wenn Sie eine Listenoption für „Blank“ sehen, bedeutet dies, dass vor Kurzem eine Berichtsseite hinzugefügt wurde (innerhalb von 24 Stunden wird der tatsächliche Name der neuen Seite in der Datenschnittliste angezeigt) bzw. dass Berichtsseiten gelöscht wurden. „Blank“ erfasst derartige Situationen. |
 | Aufrufe pro Tag |Ja |Ja |Gesamtanzahl der Aufrufe pro Tag. Ein „Aufruf“ wird als Benutzervorgang zum Laden einer Berichtsseite oder eines Dashboards definiert. |
@@ -152,11 +151,18 @@ Power BI ist in separaten nationalen Clouds verfügbar. Diese Clouds entsprechen
 
 ## <a name="considerations-and-limitations"></a>Überlegungen und Einschränkungen
 
+### <a name="discrepancies-between-audit-logs-and-usage-metrics"></a>Abweichungen zwischen Überwachungsprotokollen und Nutzungsmetriken
+
 Es ist wichtig zu verstehen, dass beim Vergleich von Nutzungsmetriken und Überwachungsprotokollen Unterschiede auftreten können, und man sollte die Ursachen hierfür kennen. *Überwachungsprotokolle* werden mithilfe von Daten aus dem Power BI-Dienst gesammelt, und *Nutzungsmetriken* werden auf dem Client erfasst. Die aggregierten Zahlen der Aktivitäten in Überwachungsprotokollen stimmen möglicherweise nicht immer mit den Nutzungsmetriken überein. Dies hat folgende Gründe:
 
 * Die Zahlen in Nutzungsmetriken können aufgrund von inkonsistenten Netzwerkverbindungen, Anzeigenblockern oder anderen Problemen, die das Senden von Ereignissen vom Client stören können, zu niedrig sein.
 * Bestimmte Ansichtstypen sind in den Nutzungsmetriken nicht enthalten, wie zuvor in diesem Artikel beschrieben.
 * In den Nutzungsmetriken kann es vorkommen, dass zu viele Aktivitäten gezählt werden, z.B. wenn der Client eine Aktualisierung durchführt, ohne dass eine Anforderung an den Power BI-Dienst zurückgesendet werden muss.
+
+### <a name="other-considerations"></a>Andere Aspekte
+
+Sie müssen den Inhalt in Ihrem Arbeitsbereich innerhalb des Arbeitsbereichs mindestens einmal anzeigen. Wenn sich der Inhalt des Arbeitsbereichs nicht mindestens einmal in der Ansicht befindet, werden die Daten von den Anwendungsansichten nicht im Nutzungsmetrikbericht korreliert. Zeigen Sie einfach den Inhalt Ihres Arbeitsbereichs mindestens einmal an, um die Blockierung für die Verarbeitung von Daten für diesen Bericht aufzuheben.
+
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -188,4 +194,4 @@ Neben dem Verständnis der möglichen Unterschiede zwischen Nutzungsmetriken und
 
 [Verwalten von Power BI im Verwaltungsportal](service-admin-portal.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

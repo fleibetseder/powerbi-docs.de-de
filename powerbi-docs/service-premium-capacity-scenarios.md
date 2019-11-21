@@ -1,9 +1,8 @@
 ---
-title: Szenarien für Microsoft Power BI Premium-Kapazität
-description: Beschreibt häufige Szenarien von Power BI Premium-Kapazität.
+title: Szenarios mit Microsoft Power BI Premium-Kapazitäten
+description: Beschreibt häufige Szenarios mit Microsoft Power BI Premium-Kapazitäten.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,145 +10,145 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1d666a6702515a935d93549d026f207848f2bca8
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3190645044c930c1c63fd7c199883d784723d6f0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65565352"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881237"
 ---
-# <a name="premium-capacity-scenarios"></a>Szenarien für Premium-Kapazität
+# <a name="premium-capacity-scenarios"></a>Szenarios mit Premium-Kapazitäten
 
-Dieser Artikel beschreibt die reale Szenarien, in denen Power BI Premium-Kapazitäten implementiert wurden. Häufig auftretende Probleme und Herausforderungen beschrieben, außerdem Probleme zu identifizieren und lösen lassen:
+In diesem Artikel werden Szenarios aus der Praxis beschrieben, in denen Power BI Premium-Kapazitäten implementiert wurden. Häufige Probleme und Herausforderungen werden ebenso erläutert wie die Identifizierung von Problemen und deren Lösung:
 
-- [Datasets auf dem neuesten Stand halten](#keeping-datasets-up-to-date)
-- [Identifizieren langsame Reaktion datasets](#identifying-slow-responding-datasets)
-- [Identifizieren von Ursachen für sporadisch langsam reagieren Datasets](#identifying-causes-for-sporadically-slow-responding-datasets)
-- [Bestimmt, ob genügend Arbeitsspeicher](#determining-whether-there-is-enough-memory)
-- [Bestimmt, ob genügend CPU](#determining-whether-there-is-enough-cpu)
+- [Auf dem neuesten Stand halten von Datasets](#keeping-datasets-up-to-date)
+- [Identifizieren von langsam reagierenden Datasets](#identifying-slow-responding-datasets)
+- [Identifizieren von Ursachen für sporadisch langsam reagierende Datasets](#identifying-causes-for-sporadically-slow-responding-datasets)
+- [Bestimmen, ob genügend Arbeitsspeicher vorhanden ist](#determining-whether-there-is-enough-memory)
+- [Bestimmen, ob genügend CPU-Kapazität vorhanden ist](#determining-whether-there-is-enough-cpu)
 
-Die Schritte, anhand von Beispielen, Diagramm und Tabelle stammen aus der **Kapazitätsmetriken für Power BI Premium-app** , dass ein Power BI-Administrator Zugriff zu erhalten.
+Die Schritte sowie Diagramm- und Tabellenbeispiele stammen aus der **Power BI Premium-Kapazitäts-Metrik-App**, auf die ein Power BI-Administrator Zugriff hat.
 
-## <a name="keeping-datasets-up-to-date"></a>Datasets auf dem neuesten Stand halten
+## <a name="keeping-datasets-up-to-date"></a>Auf dem neuesten Stand halten von Datasets
 
-In diesem Szenario wurde eine Untersuchung ausgelöst, wenn Benutzer sich darüber beschwert, dass Berichtsdaten wird manchmal "veraltete" werden angezeigt.
+In diesem Szenario wurde eine Untersuchung eingeleitet, als sich die Benutzer beschwerten, dass die Berichtsdaten manchmal alt oder „überholt“ erschienen.
 
-In der app interagiert der Administrator die **aktualisiert** visuelle Element, und Sortieren von Datasets durch die **Max. Wartezeit** Statistiken in absteigender Reihenfolge. Dieses visuelle Element können sie die Datasets, die mit der längsten Wartezeiten, gruppiert nach dem Namen des Arbeitsbereichs anzuzeigen.
+In der App interagiert der Administrator mit dem Visual **Aktualisierungen** und sortiert Datasets nach der Statistik **Max. Wartezeit** in absteigender Reihenfolge. Dieses Visual hilft ihnen, Datasets mit den längsten Wartezeiten, gruppiert nach Arbeitsbereichsnamen, anzuzeigen.
 
-![DataSet-Aktualisierungen, die maximale Wartezeit, gruppiert nach Arbeitsbereich absteigend sortiert](media/service-premium-capacity-scenarios/dataset-refreshes.png)
+![Das Dataset wird nach absteigender maximaler Wartezeit sortiert und, nach Arbeitsbereich gruppiert, aktualisiert.](media/service-premium-capacity-scenarios/dataset-refreshes.png)
 
-In der **stündlichen durchschnittliche aktualisieren warten Sie, wie oft** visual, sie feststellen, dass die Aktualisierung Wartezeiten konsistent rund um 16 Uhr täglich spitzenauslastung.
+Im Visual **Durchschnittliche stündliche Aktualisierungswartezeiten** sehen sie, dass die Aktualisierungswartezeiten jeden Tag immer um etwa 16 Uhr einen Spitzenwert erreichen.
 
-![Aktualisieren Sie wartet Spitze in regelmäßigen Abständen um 16 Uhr](media/service-premium-capacity-scenarios/peak-refresh-waits.png)
+![Spitzenwerte von Aktualisierungszeiten regelmäßig um 16 Uhr](media/service-premium-capacity-scenarios/peak-refresh-waits.png)
 
 Es gibt mehrere mögliche Erklärungen für diese Ergebnisse:
 
-- Zu viele Aktualisierungsversuchen können zur gleichen Zeit, auftreten überschreiten von Grenzwerten für die von der kapazitätsknoten definiert. In diesem Fall standardmäßig sechs gleichzeitige Aktualisierungen auf eine P1 mit speicherbelegung.
+- Möglicherweise gibt es zu viele gleichzeitige Aktualisierungsversuche, die die durch den Kapazitätsknoten definierten Grenzen überschreiten. In diesem Fall werden sechs gleichzeitige Aktualisierungen auf einem P1 mit Standardspeicherzuweisung durchgeführt.
 
-- Datasets aktualisiert werden, möglicherweise zu groß für verfügbare Speicher (und erfordert mindestens 2 x den erforderlichen Speicher für die vollständige Aktualisierung).
-- Ineffiziente Power Query-Logik kann in eine Auslastungsspitze von Arbeitsspeicher während der Datasetaktualisierung resultierende sein. Für eine ausgelastete Kapazität erreichen dieser Spitze gelegentlich die physische Grenze, die Aktualisierung fehlschlägt, und möglicherweise Auswirkungen auf andere Vorgänge Bericht anzeigen, auf der Kapazität.
-- Häufig abgefragte Datasets, die im Speicher verbleiben müssen, beeinträchtigen die Fähigkeit eines anderen Datasets, die aufgrund von begrenzt verfügbaren Arbeitsspeicher zu aktualisieren.
+- Zu aktualisierende Datasets können für den verfügbaren Speicher zu groß sein (für eine vollständige Aktualisierung wird mindestens der doppelte Speicher benötigt).
+- Ineffiziente Power Query-Logik kann zu einem Anstieg der Speichernutzung während der Aktualisierung des Datasets führen. Bei einer Kapazitätsauslastung kann diese Spitze gelegentlich die physische Grenze erreichen, wodurch die Aktualisierung fehlschlägt und andere Vorgänge der Berichtsansicht zur Kapazität beeinträchtigt werden können.
+- Häufig abgefragte Datasets, die im Speicher bleiben müssen, können aufgrund des begrenzten verfügbaren Speichers die Aktualisierung anderer Datasets beeinträchtigen.
 
-Power BI-Administrator kann damit untersuchen können, suchen Sie nach:
+Um die Untersuchung zu erleichtern, kann der Power BI-Administrator nach Folgendem suchen:
 
-- Unzureichender Arbeitsspeicher zum Zeitpunkt der Daten aktualisiert wird, wenn der verfügbare Arbeitsspeicher auf weniger als 2 x die Größe des Datasets aktualisiert ist.
-- Datasets, die nicht aktualisiert und noch nicht im Arbeitsspeicher vor der Aktualisierung, gestartet, um interaktive Datenverkehr während hohe Aktualisierungszeiten anzuzeigen. Um anzuzeigen, welche Datasets zu jedem Zeitpunkt in den Arbeitsspeicher geladen werden, kann ein Power BI-Administrator sehen Sie sich den Bereich "Datasets" des **Datasets** Registerkarte in der app. Der Administrator kann dann plattformübergreifend filtern, zu einem bestimmten Zeitpunkt durch Klicken auf einen Balken in den **stündlichen geladen Dataset zählt**. Eine lokale Spitze, die in der folgenden Abbildung dargestellt zeigt an, eine Stunde, wenn mehrere Datasets in den Arbeitsspeicher geladen wurden, der Anfang des geplanten Aktualisierungen verzögert werden kann.
-- Erhöhte Dataset entfernungen dauert platzieren, wenn es sich bei datenaktualisierungen geplant sind, um zu starten. Entfernungen können auf hohe speicherauslastung verursacht wurde, stellt viele verschiedene interaktive Berichte vor dem Zeitpunkt der Aktualisierung vorhanden hinweisen. Die **stündlichen Dataset Entfernungen und Arbeitsspeichernutzung** Visual kann Spitzen in der entfernungen eindeutig anzugeben.
+- Wenig verfügbarer Speicher zum Zeitpunkt der Datenaktualisierungen, wenn der verfügbare Speicher weniger als doppelt so groß ist wie das zu aktualisierende Dataset.
+- Für Datasets, die nicht aktualisiert wurden und sich vor dem Aktualisieren nicht im Speicher befanden, wurde jedoch ein interaktiver Datenverkehr während Aktualisierungszeiten mit hohen Auslastungen angezeigt. Informationen darüber, welche Datasets zu einem bestimmten Zeitpunkt in den Speicher geladen werden, kann ein Power BI-Administrator im Datasetbereich auf der Registerkarte **Datasets** in der App einsehen. Der Administrator kann dann den Filter auf eine bestimmte Zeit verschieben, indem er auf einen der Balken in **Anzahl von stündlich geladenen Datasets** klickt. Ein lokaler Spitzenwert, der im unteren Bild dargestellt ist, zeigt eine Stunde, in der mehrere Datasets in den Speicher geladen wurden, wodurch es zu einer Verzögerung des Beginns der geplanten Aktualisierungen kommen konnte.
+- Zum Startzeitpunkt der Datenaktualisierungen finden vermehrt Entfernungen von Datasets statt. Entfernungen können darauf hindeuten, dass eine hohe Speicherauslastung auftrat, die dadurch verursacht wurde, dass zu viele verschiedene interaktive Berichte vor dem Zeitpunkt der Aktualisierung bereitgestellt wurden. Das Visual **Entfernte Datasets und Arbeitsspeicherverbrauch pro Stunde** kann deutlich auf Spitzenwerte bei Entfernungen hinweisen.
 
-Die folgende Abbildung zeigt eine lokale Spitze in der geladenen Datasets, das bedeutet, dass interaktive Abfragen verzögert Anfang aktualisiert. Wählen einen Zeitraum auf die **stündlichen geladen Dataset zählt** Visual kreuzt Filter die **Größe des Datasets beseitigt** visual.
+Das folgende Bild zeigt einen lokalen Spitzenwert in geladenen Datasets, der eine interaktive Abfrage bei verzögerten Starts der Aktualisierungen vorschlägt. Die Auswahl eines Zeitraums im Visual **Anzahl von stündlich geladenen Datasets** bewirkt eine Kreuzfilterung des Visuals **Datasetgrößen**.
 
-![Eine lokale Spitze in der geladenen Datasets vorgeschlagen, interaktive Abfragen verzögerten Start von Aktualisierungen](media/service-premium-capacity-scenarios/hourly-loaded-dataset-counts.png)
+![Ein lokaler Spitzenwert in geladenen Datasets schlägt eine interaktive Abfrage bei verzögerten Starts der Aktualisierungen vor.](media/service-premium-capacity-scenarios/hourly-loaded-dataset-counts.png)
 
-Power BI-Administrator versuchen, das Problem zu beheben, indem Sie Schritte ausführen, um sicherzustellen, dass ausreichend Arbeitsspeicher für datenaktualisierungen zunächst verfügbar ist:
+Der Power BI-Administrator kann das Problem ggf. beheben, indem er Maßnahmen ergreift, um sicherzustellen, dass genügend Speicherplatz für die Datenaktualisierung zur Verfügung steht:
 
-- Kontaktaufnahme mit dem Dataset aktualisieren Besitzer und aufgefordert, zu staffeln Daten trennen Zeitpläne.
-- Verkleinern Datasets Kacheln durch Abfragen verursachte Last durch das Entfernen unnötiger Dashboards oder Dashboard, insbesondere über diejenigen, die Sicherheit auf Zeilenebene zu erzwingen.
-- Beschleunigen der datenaktualisierungen durch Optimieren der Power Query-Logik. Verbessern Sie die Modellierung von berechneten Spalten oder Tabellen. Reduzieren Sie der Größe des Datasets beseitigt, oder konfigurieren Sie größere Datasets Durchführung inkrementeller datenaktualisierungen.
+- Kontaktaufnahme mit den Datasetbesitzern und Aufforderung, die Datenaktualisierungspläne zu staffeln und zu löschen.
+- Reduzierung der Abfragelast für Datasets durch Entfernen unnötiger Dashboards oder Dashboardkacheln, insbesondere solcher, die die Sicherheit auf Zeilenebene durchsetzen.
+- Beschleunigung der Datenaktualisierungen durch Optimierung der Power Query-Logik. Verbesserung der Modellierung von berechneten Spalten oder Tabellen. Reduzierung der Datasetgrößen oder Konfiguration größerer Datasets zur Durchführung einer inkrementellen Datenaktualisierung.
 
-## <a name="identifying-slow-responding-datasets"></a>Identifizieren langsame Reaktion datasets
+## <a name="identifying-slow-responding-datasets"></a>Identifizierung von langsam reagierenden Datasets.
 
-In diesem Szenario eine Untersuchung begonnen hat, wenn Benutzer sich darüber beschwert, dass bestimmte Berichte öffnen, zu lange gedauert hat und zuweilen mehr reagierte.
+In diesem Szenario wurde eine Untersuchung eingeleitet, als sich Benutzer darüber beschwerten, dass das Öffnen bestimmter Berichte zu lange dauerte und manchmal auch zum Stillstand kommen würde.
 
-In der app kann der Power BI-Administrator mithilfe der **Abfragedauern** das visuelle Element an die schlechteste Leistung Datasets zu bestimmen, indem Sie das Sortieren von Datasets nach absteigender **Durchschnittsdauer**. Dieses visuelle Element wird auch Dataset Anzahl von Abfragen, damit Sie sehen, wie oft die Datasets abgefragt werden.
+In der App kann der Power BI-Administrator das Visual **Abfragedauer** verwenden, um die Datasets mit der schlechtesten Leistung zu bestimmen, indem er Datasets nach **Durchschnittliche Dauer** absteigend sortiert. Dieses Visual zeigt auch die Anzahl der Abfragen von Datasets an, sodass Sie sehen können, wie oft diese abgefragt werden.
 
-![Schlechteste Leistung datasets](media/service-premium-capacity-scenarios/worst-performing-datasets.png)
+![Leistungsschwächste Datasets](media/service-premium-capacity-scenarios/worst-performing-datasets.png)
 
-Der Administrator kann, finden Sie in der **Abfrage Dauerverteilung** Visualisierung zeigt ein gesamtverteilung von Buckets abfrageleistung (< = 30ms, 0 – 100 ms) für den gefilterten Zeitraum. Im Allgemeinen Abfragen akzeptieren einer Sekunde oder weniger werden von den meisten Benutzern reaktionsfähig berücksichtigt Abfragen, die länger dauern tendenziell eine Vorstellung von schlechte Leistung erstellen.
+Der Administrator kann sich auf das Visual **Verteilung der Abfragedauer** beziehen, das eine Gesamtverteilung der getakteten Abfrageleistung (<= 30 ms, 0-100 ms) für den gefilterten Zeitraum anzeigt. Im Allgemeinen werden Abfragen, die eine Sekunde oder weniger dauern, von den meisten Benutzern als schnell beantwortet angesehen; Abfragen, die länger dauern, führen tendenziell dazu, dass die Leistung schlechter beurteilt wird.
 
-Die **Verteilung der Dauer für die stündliche Abfrage** Visual kann der Administrator Power BI ein-Stunden-Zeiträume zu identifizieren, wenn die Leistung der Kapazität kann haben wurde erkannt, die als schlechter. Je größer Segmente die Leiste der Abfrage darstellen Dauer von mehr als einer Sekunde, je größer das Risiko, dass Benutzer eine schlechte Leistung wahrgenommen werden.
+Mit dem Visual **Stündliche Verteilungen der Abfragedauer** kann der Power BI-Administrator einstündige Zeiträume identifizieren, in denen die Kapazitätsleistung als schlecht empfunden werden konnte. Je größer die Balkensegmente, die die Abfragedauer über eine Sekunde darstellen, desto wahrscheinlicher ist es, dass Benutzer eine schlechte Leistung feststellen.
 
-Das visuelle Element ist interaktiv, und wenn ein Segment des Balkens aktiviert ist, den entsprechenden **Abfragedauern** tabellenvisual auf der Berichtsseite ist kreuzgefiltert Datasets angezeigt, dar. Power BI-Administrator auf einfache Weise identifizieren, die diese kreuzfilterung ermöglicht die Datasets langsam reagiert.
+Das Visual ist interaktiv, sodass bei Auswahl eines Segments des Balkens das entsprechende Tabellenvisual **Abfragedauer** auf der Berichtsseite kreuzgefiltert wird, um die entsprechenden Datasets anzuzeigen. Durch diese Kreuzfilterung kann der Power BI-Administrator leicht erkennen, welche Datasets langsam reagieren.
 
-Die folgende Abbildung zeigt eine Visualisierung gefiltert nach **stündlichen Abfrage Dauer Verteilungen**die schlechteste Leistung Datasets in einer Stunde Buckets Schwerpunkt. 
+Das folgende Bild zeigt ein Visual, das nach **Stündliche Verteilungen der Abfragedauer** gefiltert ist und sich auf die Datasets mit der schlechtesten Leistung in einstündigen Buckets konzentriert. 
 
-![Gefilterte stündlichen Abfrage Dauer Verteilungen visual zeigt schlechteren zu kennzeichnen, die Datasets ausführen](media/service-premium-capacity-scenarios/hourly-query-duration-distributions.png)
+![Das gefilterte Visual „Stündliche Verteilungen der Abfragedauer“ zeigt die leistungsschwächsten Datasets](media/service-premium-capacity-scenarios/hourly-query-duration-distributions.png)
 
-Nachdem eine schlechte Leistung Dataset in einer bestimmten einstündigen Zeitspanne identifiziert wurde, kann Power BI-Administrator überprüfen Sie, ob eine schlechte Leistung, wenn eine überladene Kapazität verursacht wird oder aufgrund einer fehlerhaft, Dataset oder Bericht entwickelt. Sie können den beziehen sich auf die **Abfrage warten Sie, wie oft** Visual und Sortieren von Datasets nach absteigender Durchschnittliche Abfragewartezeit. Wenn Sie ein großer Prozentsatz der Abfragen im Wartezustand befindet, ist ein hoher Bedarf an, für das Dataset wahrscheinlich die Ursache für viele Abfrage wartet. Die durchschnittliche Zeit "Abfragewartezeit" ist eine wesentliche (> 100 ms), könnte nicht Schaden, überprüfen das Dataset und den Bericht, um festzustellen, ob Optimierungen vorgenommen werden können. Z. B. weniger Visuals auf Berichtsseiten oder eine Optimierung der DAX-Ausdruck angegeben.
+Sobald das leistungsschwache Dataset in einem festgelegten Zeitraum von einer Stunde identifiziert wurde, kann der Power BI-Administrator untersuchen, ob eine schlechte Leistung durch eine zu hohe Kapazitätsauslastung oder durch ein schlecht entwickeltes Dataset bzw. einen schlecht konzipierten Bericht verursacht wird. Sie können sich auf das Visual **Abfragewartezeiten** beziehen und Datasets nach der absteigenden durchschnittlichen Wartezeit der Abfrage sortieren. Wenn ein großer Prozentsatz der Abfragen wartet, ist eine hohe Nachfrage nach dem Dataset wahrscheinlich die Ursache für zu lange Abfragezeiten. Wenn die durchschnittliche Wartezeit für die Abfrage erheblich ist (> 100 ms), kann es sich lohnen, das Dataset und den Bericht zu überprüfen. So lässt sich feststellen, ob Optimierungen vorgenommen werden können. Beispiele hierfür sind weniger Visuals auf bestimmten Berichtsseiten oder eine DAX-Ausdruckoptimierung.
 
-![Die Abfrage warten Sie, wie oft Visualisierung hilft zu schlechter Leistung Datasets anzeigen](media/service-premium-capacity-scenarios/query-wait-times.png)
+![Das Visual „Abfragewartezeiten“ trägt dazu bei, leistungsschwache Datasets aufzudecken.](media/service-premium-capacity-scenarios/query-wait-times.png)
 
-Es gibt mehrere mögliche Ursachen für die Abfrage warten Zeit ansammeln in Datasets:
+Es gibt mehrere mögliche Gründe, warum sich für Datasets bei Abfragen längere Wartezeiten ergeben:
 
-- Eine suboptimale Modellentwurf, Measureausdrücke oder sogar den Berichtsentwurf - alle Umstände, die über mitwirkungsrechte lang andauernde Abfragen, die hohe CPU nutzen. Dies erzwingt, dass neue Abfragen warten, bis die CPU-Threads verfügbar, und erstellen einen Konvoi-Effekt (Stellen Sie sich datenverkehrsstau), während der Hauptgeschäftszeiten häufig gesehen. Die **Abfragewartevorgänge** Seite werden die Haupt-Ressourcenskriptdatei zu bestimmen, ob die Datasets hohe durchschnittliche abfragewartezeiten enthalten.
-- Eine hohe Anzahl von gleichzeitigen Kapazität Benutzer (Hunderte oder Tausende) nutzen, den gleichen Bericht oder Dataset. Sogar ausgereifte Datasets können einen Schwellenwert für die Parallelität ausführen. Dies wird in der Regel durch ein einzelnes Dataset einen deutlich höheren Wert angezeigt, für die Abfrage als andere Datasets anzeigen zählt angegeben (z. B. Abfragen von 300 KB für ein Dataset gegenüber < 30 KB-Abfragen für alle anderen Datasets). Zu einem bestimmten Zeitpunkt die Abfrage wartet für dieses Dataset gestartet wird, um staffeln, der in angezeigt werden kann die **Abfragedauern** visual.
-- Viele verschiedene Datasets gleichzeitig abgefragt speicherüberlastung verursachen, da Datasets häufig in den Arbeitsspeicher durchlaufen. Dies führt dazu, dass Benutzer, die Leistungseinbußen auftreten, wenn das Dataset in den Arbeitsspeicher geladen wird. Um zu bestätigen, Power BI-Administrator kann finden Sie unter den **stündlichen Dataset Entfernungen und Arbeitsspeichernutzung** visual, die möglicherweise eine große Anzahl von Datasets in den Arbeitsspeicher geladen wird wiederholt entfernt werden.
+- Ungünstige Modelldesigns, Measureausdrücke oder sogar Berichtsdesigns: dies sind alles Umstände, die zu zeitintensiven Abfragen und hoher CPU-Nutzung beitragen können. Dadurch müssen neue Abfragen warten, bis CPU-Threads verfügbar sind, sodass ein Konvoi-Effekt (Datenverkehrsstau) entsteht, der häufig zu den Hauptgeschäftszeiten auftritt. Die Seite **Abfragewartezeiten** ist die wichtigste Informationsquelle, um festzustellen, ob Datasets eine hohe durchschnittliche Wartezeit bei Abfragen haben.
+- Eine hohe Anzahl von gleichzeitigen Zugriffen (Hunderte bis Tausende) auf den gleichen Bericht oder das gleiche Dataset. Selbst gut durchdachte Datasets können bei Überschreitung eines Schwellenwerts für die gleichzeitige Nutzung schlecht abschneiden. Dies wird in der Regel durch ein einzelnes Dataset angezeigt, das einen deutlich höheren Wert für die Anzahl der Abfragen aufweist als andere Datasets (z.B. 300.000 Abfragen für ein Dataset im Vergleich zu < 30.000 Abfragen für alle anderen Datasets). Ab einem bestimmten Zeitpunkt werden die Abfragewartezeiten für dieses Dataset gestaffelt, wie im Visual **Abfragedauer** zu sehen ist.
+- Viele unterschiedliche Datasets wurden gleichzeitig abgefragt, was zu einer Überlastung durch den häufigen Wechsel der Datasets im Speicher führte. Infolgedessen stellten Benutzer fest, dass Datasets nur langsam in den Speicher geladen wurden. Zur Bestätigung kann sich der Power BI-Administrator auf das Visual **Entfernte Datasets und Arbeitsspeicherverbrauch pro Stunde** beziehen, das darauf hinweist, dass eine große Anzahl von in den Speicher geladenen Datasets wiederholt entfernt wurde.
 
-## <a name="identifying-causes-for-sporadically-slow-responding-datasets"></a>Identifizieren von Ursachen für sporadisch langsam reagieren Datasets
+## <a name="identifying-causes-for-sporadically-slow-responding-datasets"></a>Identifizierung von Ursachen für sporadisch langsam reagierende Datasets
 
-In diesem Szenario wurde eine Untersuchung gestartet, wenn Benutzer beschrieben, dass berichtsvisuals manchmal wurden nur langsam reagiert, oder können nicht mehr reagiert, aber in anderen Fällen diese Auswirkung in akzeptabler Weise reagiert wurden.
+In diesem Szenario wurde eine Untersuchung eingeleitet, als die Benutzer beschrieben, dass Berichtsvisuals manchmal nur langsam oder gar nicht mehr, zu anderen Zeiten aber zuverlässig reagierten.
 
-Innerhalb der app die **Abfragedauern** Abschnitt wurde verwendet, um die Ursache Dataset wie folgt suchen:
+In der App wurde der Abschnitt **Abfragedauer** verwendet, um das verursachende Dataset wie folgt zu finden:
 
-- In der **Abfragedauern** visual der Administrator gefilterte Dataset von Dataset (beginnend mit dem obersten abgefragte Datasets) und untersucht die übergreifende gefilterte Balken in den **stündlichen Abfrage Verteilungen** visual.
-- Wenn ein einstündigen Balken bedeutende Änderungen des Verhältnisses zwischen allen Abfragegruppen Dauer im Vergleich zu anderen Balken, eine Stunde für dieses Dataset wurde (z. B. das Verhältnis zwischen der Farben, ändert sich erheblich), es bedeutet, dass dieses Dataset veranschaulicht eine sporadische Änderung die Leistung.
-- Zeigt einen unregelmäßigen Teil der Abfragen mit schlechter Leistung, eine Stunde Balken angezeigt ein TimeSpan-Objekt, in denen das Dataset durch einen konkurrierenden Effekt, durch andere Datasets Aktivitäten verursacht betroffen war.
+- Im Visual **Abfragedauer** filterte der Administrator das Dataset nach Dataset (beginnend mit den obersten abgefragten Datasets) und untersuchte die kreuzgefilterten Balken im Visual **Stündliche Verteilungen der Abfragedauer**.
+- Wenn ein einzelner 1-Stunden-Balken signifikante Änderungen im Verhältnis zwischen allen Abfragedauergruppen und anderen 1-Stunden-Balken für dieses Dataset zeigte (z.B. eine drastische Veränderung der Verhältnisse zwischen den Farben), bedeutet dies, dass dieses Dataset eine sporadische Änderung der Leistung zeigte.
+- Die 1-Stunden-Balken, die einen unregelmäßigen Anteil der nicht zufriedenstellenden Abfragen anzeigen, veranschaulichten eine Zeitspanne, in der dieses Dataset von einem „Noisy Neighbor“-Effekt betroffen war, der durch die Aktivitäten anderer Datasets verursacht wurde.
 
-Die folgende Abbildung zeigt eine Stunde am 30. Januar mit erheblichen preisgünstiger leistungsregression eines Datasets Fehler, angegeben durch die Größe des "(3,10s]"Ausführung Dauer Buckets. Klicken Sie auf diese Leiste einstündigen zeigt alle Datasets in den Arbeitsspeicher geladen werden, während dieser Zeit möglich, verursacht die konkurrierenden Auswirkungen Datasets anzeigen.
+Das folgende Bild zeigt eine Stunde am 30. Januar, in der ein signifikanter Leistungseinbruch eines Datasets auftrat, dargestellt durch die Größe des „(3,10s]“-Ausführungsdauerbuckets. Wenn Sie auf diesen 1-Stunden-Balken klicken, werden alle in diesem Zeitraum in den Speicher geladenen Datasets aufgedeckt, worunter auch Datasets sein können, die den „Noisy Neighbor“-Effekt verursachen.
 
-![Leiste mit der schlechtesten Leistung durch einen großen Teil](media/service-premium-capacity-scenarios/worst-performing-queries.png)
+![Balken mit der schlechtesten Leistung von einem großen Anteil](media/service-premium-capacity-scenarios/worst-performing-queries.png)
 
-Sobald ein problematisch TimeSpan-Objekt (z. B. während 30. Januar in der Abbildung oben) gekennzeichnet ist kann Power BI-Administrator entfernen Sie alle datasetfilter anschließend filtern Sie nur nach dieser Zeitspanne, um zu bestimmen, welche Datasets während dieser Zeit aktiv abgefragt wurden. Das Dataset Ursache für den noisy-Neighbor-Effekt ist normalerweise auf, des oberen abgefragte Datasets oder die Woche mit die längste durchschnittliche Abfragedauer.
+Sobald eine problematische Zeitspanne identifiziert wurde (z.B. während des 30. Januar im obigen Bild), kann der Power BI-Administrator alle Datasetfilter entfernen. Dann kann er nur nach dieser Zeitspanne filtern, um festzustellen, welche Datasets während dieser Zeit aktiv abgefragt wurden. Das verursachende Dataset für den „Noisy Neighbor“-Effekt ist in der Regel das oberste abgefragte Dataset oder das mit der längsten durchschnittlichen Abfragedauer.
 
-Eine Lösung für dieses Problem könnte sein, um die Ursache zu verteilen, die Datasets, die über unterschiedliche Arbeitsbereiche auf verschiedenen Premium-Kapazitäten oder gemeinsam genutzte Kapazität, wenn der Datasetgröße, Verbrauch Anforderungen und Daten aktualisieren Muster unterstützt werden.
+Eine mögliche Lösung für dieses Problem wäre die Verteilung der verursachenden Datasets auf verschiedene Arbeitsbereiche verschiedener Premium-Kapazitäten oder auf gemeinsame Speicherkapazitäten, wenn die Größe des Datasets, der Nutzungsbedarf und die Datenaktualisierungsmuster unterstützt werden.
 
-Das Gegenteil könnte auch "true" sein. Power BI-Administrator konnte identifizieren Mal, wenn ein Dataset-abfrageleistung erheblich verbessert, und suchen Sie nach, was nicht mehr vorhanden. Wenn bestimmte Informationen an diesem Punkt fehlt, können, die um auf das Problem zu verweisen.
+Das Gegenteil könnte auch der Fall sein. Der Power BI-Administrator könnte Zeiten identifizieren, in denen sich die Leistung einer Datasetabfrage drastisch verbessert, und dann nach dem verschwundenen Element suchen. Wenn an dieser Stelle bestimmte Informationen fehlen, kann dies helfen, das verursachende Problem zu erkennen.
 
-## <a name="determining-whether-there-is-enough-memory"></a>Bestimmt, ob genügend Arbeitsspeicher
+## <a name="determining-whether-there-is-enough-memory"></a>Bestimmen, ob genügend Arbeitsspeicher vorhanden ist
 
-Bestimmt, ob genügend für die Kapazität Arbeitsspeicher um seine Workloads abzuschließen, Power BI-Administrator kann finden Sie unter den **Arbeitsspeicherprozentsätze verbraucht** in visual die **Datasets** Registerkarte der app. **Alle** (gesamt) Arbeitsspeicher darstellt, die speicherbelegungen, die durch Datasets, die in den Arbeitsspeicher, unabhängig davon, ob diese aktiv abgefragt oder verarbeitet werden geladen. **Aktive** Arbeitsspeicher darstellt, die speicherbelegungen, die durch Datasets, die aktiv verarbeitet werden.
+Um zu bestimmen, ob genügend Speicherkapazität vorhanden ist, um die Workloads abzuschließen, kann der Power BI-Administrator auf das Visual **Prozentsätze des verbrauchten Arbeitsspeichers** auf der Registerkarte **Datasets** der App zugreifen. **Alle**: Der gesamte Speicher zeigt den von den geladenen Datasets insgesamt genutzten Speicher, unabhängig davon, ob sie aktiv abgefragt oder verarbeitet werden. **Aktiv**: Der aktive Speicher zeigt den von den aktiv verarbeiteten Datasets genutzten Speicher.
 
-In einer fehlerfreien Kapazität das visuelle Element aussehen wird, zeigt eine Lücke zwischen allen (gesamt) und den aktiven Arbeitsspeicher:
+Bei einer guten Speicherkapazität sieht das Visual wie folgt aus und zeigt eine Lücke zwischen „Alle“ und „Aktiv“, also dem gesamten und dem aktiven Speicher an.
 
-![Eine fehlerfreie Kapazität wird eine Lücke zwischen allen (gesamt) angezeigt und aktiven Arbeitsspeichers](media/service-premium-capacity-scenarios/memory-healthy-capacity.png)
+![Bei einer guten Speicherkapazität gibt es eine Lücke zwischen dem gesamten und dem aktiven Speicher](media/service-premium-capacity-scenarios/memory-healthy-capacity.png)
 
-In einer Kapazität arbeitsspeicherauslastung auftritt zeigt dasselbe visuelle deutlich aktiven Arbeitsspeicher und Gesamtarbeitsspeicher konvergieren, was bedeutet, dass es nicht möglich, weitere Datasets klicken Sie dann in den Arbeitsspeicher geladen ist. In diesem Fall kann die Power BI-Administrator klicken **Kapazität neu starten** (in **erweiterte Optionen** der Bereich "Kapazität Einstellungen" des Verwaltungsportals). Neu starten die Ergebnisse für die Kapazität wird für alle Datasets aus dem Speicher geleert und ermöglicht ihnen, in den Arbeitsspeicher gemäß der Vorgabe (Abfrage- oder datenaktualisierungsanforderungen) neu zu laden.
+Bei einer unzureichenden Speicherkapazität zeigt das gleiche Visual deutlich den aktiven Speicher und den gesamten Speicher konvergierend an, sodass es dann unmöglich ist, zusätzliche Datasets in den Speicher zu laden. In diesem Fall kann der Power BI-Administrator auf **Neustart der Kapazität** klicken (unter **Erweiterte Optionen** im Bereich für Kapazitätseinstellungen des Administratorportals). Ein Neustart der Kapazität führt dazu, dass alle Datasets aus dem Speicher geleert werden und bei Bedarf (durch Abfragen oder Datenaktualisierung) wieder in den Speicher geladen werden können.
 
-![** Aktiv ** Arbeitsspeicher mit konvergieren ** alle ** Arbeitsspeicher](media/service-premium-capacity-scenarios/memory-unhealthy-capacity.png)
+![**Aktiver** Speicher konvergierend mit **gesamtem** Speicher](media/service-premium-capacity-scenarios/memory-unhealthy-capacity.png)
 
-## <a name="determining-whether-there-is-enough-cpu"></a>Bestimmt, ob genügend CPU
+## <a name="determining-whether-there-is-enough-cpu"></a>Bestimmen, ob genügend CPU-Kapazität vorhanden ist
 
-Im Allgemeinen sollte eine Kapazität für die durchschnittliche CPU-Auslastung unter 80 % bleiben. Diesen Wert überschreiten, bedeutet, dass die Kapazität annähert, die die CPU-Auslastung ist.
+Im Allgemeinen sollte die durchschnittliche CPU-Auslastung einer Kapazität unter 80 % liegen. Wenn dieser Wert überschritten wird, nähert sich die Kapazität der CPU-Sättigung.
 
-Auswirkungen der CPU-Auslastung werden durch Vorgänge dauert länger, als sie aufgrund der Kapazität, die viele CPU-Kontexten-Schalter ausführen sollten, da es versucht, alle Vorgänge zu verarbeiten, angegeben. In einer Premium-Kapazität mit einer hohen Anzahl gleichzeitiger Abfragen wird dies durch hohe abfragewartezeiten angezeigt. Eine Folge von hohem Wartezeiten ist langsamer Reaktionsfähigkeit als üblich. Power BI-Administrator kann ganz einfach ermitteln, wenn die CPU Kapazität, anhand erschöpft ist der **stündlichen Abfrage warten Zeit Verteilungen** visual. Periodische Spitzen der Abfrage die Wartezeit Anzahl potenzieller die CPU-Auslastung angeben.
+Die Auswirkungen der CPU-Sättigung äußern sich in Vorgängen mit längerer Ausführungszeit, da versucht wird, mit der Kapazität viele Vorgänge zu verarbeiten, indem zwischen CPU-Kontexten gewechselt wird. In einer Premium-Kapazität mit einer hohen Anzahl gleichzeitiger Abfragen wird dies durch lange Abfragewartezeiten angegeben. Eine Folge langer Abfragewartezeiten sind längere Reaktionszeiten als üblich. Der Power BI-Administrator kann leicht erkennen, wann die CPU gesättigt ist, indem er das Visual **Stündliche Wartezeitverteilungen für Abfragen** überprüft. Regelmäßig auftretende Spitzen bei den Indikatoren der Abfragewartezeit weisen auf eine potenzielle CPU-Sättigung hin.
 
-![Periodische Spitzen Abfrage Wartezeit Anzahl potenzieller die CPU-Auslastung angeben](media/service-premium-capacity-scenarios/peak-query-wait-times.png)
+![Regelmäßig auftretende Spitzen bei den Indikatoren der Abfragewartezeit weisen auf eine potenzielle CPU-Sättigung hin](media/service-premium-capacity-scenarios/peak-query-wait-times.png)
 
-Ein ähnliches Muster kann manchmal in Hintergrundvorgänge erkannt werden, wenn sie auf die CPU-Auslastung beitragen. Ein Power BI-Administrator finden für ein periodischer Anstieg in der Aktualisierungen auf Zeiten für ein bestimmtes Dataset, der die CPU-Auslastung, die zum Zeitpunkt, (wahrscheinlich aufgrund von anderen laufenden Dataset aktualisiert und/oder interaktive Abfragen angeben kann). In diesem Fall auf die **System** Ansicht der app nicht unbedingt ergibt möglicherweise, dass die CPU bei 100 % liegt. Die **System** zeigt stündlichen Durchschnittswerte, jedoch die CPU kann werden ausgelastet mehrere Minuten lang, der intensive Vorgänge, die wird als Spitzen im Wartezeiten.
+In manchen Fällen kann ein einfaches Muster in Hintergrundvorgängen erkannt werden, wenn diese zur CPU-Sättigung beitragen. Ein Power BI-Administrator kann nach einem vorübergehenden Anstieg der Aktualisierungszeiten für ein bestimmtes Dataset suchen, der auf die jeweilige CPU-Sättigung hinweisen kann (wahrscheinlich aufgrund anderer laufender Aktualisierungen von Datasets und/oder interaktiver Abfragen). In diesem Fall kann der Blick auf die Ansicht **System** in der App nicht unbedingt Aufschluss darüber geben, ob die CPU bei 100 % liegt. Die Ansicht **System** zeigt stündliche Durchschnittswerte an, aber die CPU kann für mehrere Minuten rechenintensiver Vorgänge gesättigt werden, was sich als Spitzen in den Wartezeiten wiederspiegelt.
 
-Es gibt weitere Details in Bezug auf die Auswirkungen der CPU-Auslastung anzeigen. Während die Anzahl der Abfragen, die warten wichtig ist, wird Abfragewartezeit immer zu einem gewissen Grad ausgeführt, ohne dass eine Verringerung der wahrnehmbaren Leistung. Einige Datasets (mit längere Durchschnittliche Abfragezeit, der angibt, Komplexität oder Größe), sind anfälliger für die Auswirkungen der CPU-Auslastung als andere. Um diese Datasets ganz einfach identifizieren zu können, sehen sich Power BI-Administrator für die Änderungen in der Zusammensetzung der Farbe der Balken in den **pro Stunde warten Verteilung** visual. Nach dem Ermitteln einer Leiste Ausreißer, können sie die Datasets, die Abfrage wartet, während dieser Zeit musste suchen und betrachten Sie auch die Durchschnittliche Abfragewartezeit verglichen, um die durchschnittliche Abfragedauer. Wenn diese beiden Metriken von der gleichen Größe werden und die abfragearbeitsauslastung für das Dataset nicht trivial ist, ist es wahrscheinlich, dass das Dataset nicht genügend CPU-Nutzung beeinträchtigt wird.
+Es gibt weitere Details, die den Effekt der CPU-Sättigung verdeutlichen. Obwohl die Anzahl der wartenden Abfragen wichtig ist, werden immer gewisse Abfragewartezeiten auftreten, ohne dass es zu erkennbaren Leistungseinbrüchen kommt. Einige Datasets (mit längerer durchschnittlicher Abfragezeit, die auf Komplexität oder Größe hinweist) sind für die Effekte der CPU-Sättigung anfälliger als andere. Um diese Datasets leicht zu identifizieren, kann der Power BI-Administrator nach Änderungen in der Farbzusammensetzung der Balken im Visual **Stündliche Wartezeitverteilungen für Abfragen** suchen. Nachdem er einen Ausreißer erkannt hat, kann er nach den Datasets mit Abfragewartezeiten in diesem Zeitraum suchen und sich auch die durchschnittliche Abfragewartezeit im Vergleich zur durchschnittlichen Abfragedauer ansehen. Wenn diese beiden Metriken gleich groß sind und die Abfrageworkload für das Dataset nicht trivial ist, wird die Abfrageleistung für das Dataset wahrscheinlich durch eine unzureichende CPU-Kapazität beeinträchtigt.
 
-Dieser Effekt kann besonders offensichtlich sein, wenn ein Dataset in kurze Bursts sehr häufig Abfragen von mehreren Benutzern (z. B. in einer Schulung), wodurch die CPU-Auslastung während jeder Burst-genutzt wird. In diesem Fall können erhebliche abfragewartezeiten für dieses Dataset auftreten können, sowie für andere Datasets in der Kapazität (Auswirkung noisy-Neighbor) beeinträchtigt wird.
+Dieser Effekt tritt besonders deutlich zutage, wenn ein Dataset in kurzen Bursts von hochfrequenten Abfragen durch mehrere Benutzer (z.B. in einer Schulungssitzung) genutzt wird. Das Ergebnis ist eine CPU-Sättigung bei jedem Burst. In diesem Fall können erhebliche Abfragewartezeiten für dieses Dataset auftreten, die sich in Bezug auf die Kapazität auch auf andere Datasets auswirken („Noisy Neighbor“-Effekt).
 
-In einigen Fällen können Power BI-Administratoren fordern Sie die Besitzer von Datasets einen weniger Erstellung flüchtige abfragearbeitsauslastung durch Erstellen eines Dashboards (welche Abfragen regelmäßig mit der ein Dataset aktualisieren für zwischengespeicherte Kacheln) anstelle eines Berichts. Dies kann helfen, Spitzen zu verhindern, wenn das Dashboard geladen wird. Diese Lösung möglicherweise immer möglich, dass die angegebene geschäftsanforderungen, nicht jedoch eine effektive Möglichkeit, um die CPU-Auslastung zu vermeiden, ohne dass auf das Dataset ändern können.
+In manchen Fällen können Power BI-Administratoren auch Datasetbesitzer auffordern, eine weniger schwankende Abfrageworkload zu erzeugen, indem sie anstelle eines Berichts ein Dashboard erstellen (das regelmäßig mit jeder Aktualisierung des Datasets für zwischengespeicherte Kacheln abfragt). Dies kann dazu beitragen, Auslastungsspitzen beim Laden des Dashboards zu vermeiden. Möglicherweise ist diese Lösung für bestimmte Geschäftsanforderungen mitunter nicht umsetzbar, aber sie kann dennoch eine effektive Methode sein, um eine CPU-Sättigung zu vermeiden, ohne Änderungen am Dataset vorzunehmen.
 
-## <a name="acknowledgements"></a>Bestätigungen
+## <a name="acknowledgements"></a>Danksagungen
 
-Dieser Artikel geschrieben wurde, indem Peter Myers, Data Platform MVP und unabhängige BI-Experte mit [bitweise Lösungen](https://www.bitwisesolutions.com.au/).
+Dieser Artikel wurde von Peter Myers, Data Platform MVP und unabhängiger BI-Experte bei [Bitwise Solutions](https://www.bitwisesolutions.com.au/), verfasst.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 > [!div class="nextstepaction"]
-> [Premium-Kapazitäten, mit der app überwachen](service-admin-premium-monitor-capacity.md)    
+> [Überwachen von Premium-Kapazitäten über die App](service-admin-premium-monitor-capacity.md)    
 > [!div class="nextstepaction"]
 > [Überwachen von Kapazitäten im Verwaltungsportal](service-admin-premium-monitor-portal.md)   
 

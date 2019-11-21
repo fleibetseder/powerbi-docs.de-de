@@ -7,12 +7,12 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 7f05da6d49a1aeddedfe145bebf0324e3af51572
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: f55a9f1bfc9454c7d5a4ee3755a10f7cde1b0fd6
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61270453"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73780943"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Migrieren von Inhalten aus der Power BI-Arbeitsbereichssammlung zu Power BI Embedded
 
@@ -20,7 +20,7 @@ Erfahren Sie, wie Sie Inhalte aus der Power BI-Arbeitsbereichssammlung zu Power 
 
 Microsoft hat vor Kurzem [Power BI Embedded vorgestellt](https://powerbi.microsoft.com/blog/power-bi-embedded-capacity-based-skus-coming-to-azure/), ein neues kapazitätsbasiertes Lizenzierungsmodell, das die Flexibilität der Benutzer beim Zugriff, der Freigabe und dem Verteilen von Inhalten erhöht. Das Angebot bietet zusätzliche Skalierbarkeit und Leistung.
 
-Mit Power BI Embedded stehen Ihnen eine API-Oberfläche, ein einheitlicher Satz von Funktionen und Zugriff auf die neuesten Power BI-Features (z.B. Dashboards, Gateways und App-Arbeitsbereiche) zur Verfügung, wenn Sie Inhalte einbetten. In Zukunft können Sie mit Power BI Desktop beginnen und zu einer Bereitstellung mit Power BI Embedded wechseln.
+Mit Power BI Embedded stehen Ihnen eine API-Oberfläche, einheitliche Funktionen und Zugriff auf die neuesten Power BI-Features (z.B. Dashboards, Gateways und Arbeitsbereiche) zur Verfügung, wenn Sie Inhalte einbetten. In Zukunft können Sie mit Power BI Desktop beginnen und zu einer Bereitstellung mit Power BI Embedded wechseln.
 
 Die aktuelle Power BI-Arbeitsbereichssammlung ist für einen begrenzten Zeitraum weiterhin verfügbar. Kunden mit einem Enterprise Agreement haben bis zum Ablauf ihrer vorhandenen Vereinbarungen Zugriff darauf; Kunden, welche die Power BI-Arbeitsbereichssammlung über einen direkten Kanal oder einen CSP-Kanal erworben haben, haben ab dem allgemeinen Verfügbarkeitsrelease von Power BI Embedded ein Jahr lang weiterhin Zugriff darauf.  Dieser Artikel bietet hilfreiche Informationen zur Migration der Power BI-Arbeitsbereichssammlung zum neuen Power BI Embedded sowie Erläuterungen zu den zu erwartenden Änderungen in Ihrer Anwendung.
 
@@ -56,19 +56,19 @@ Es gibt einige Schritte, die Sie zur Vorbereitung der Migration der Power BI-Arb
 Die folgenden Konten müssen in Ihrem Mandanten vorhanden sein.
 
 > [!NOTE]
-> Diese Konten benötigen Power BI Pro-Lizenzen, um App-Arbeitsbereiche nutzen zu können.
+> Diese Konten benötigen Power BI Pro-Lizenzen, um Arbeitsbereiche nutzen zu können.
 
 1. Ein Mandantenadministrator
 
-    Dieser Benutzer sollte Mitglied aller App-Arbeitsbereiche sein, die zum Einbetten erstellt werden.
+    Dieser Benutzer sollte Mitglied aller Arbeitsbereiche sein, die zum Einbetten erstellt werden.
 
 2. Konten für Analysten, die Inhalte erstellen
 
-    Diese Benutzer sollten nach Bedarf App-Arbeitsbereichen zugewiesen werden.
+    Diese Benutzer sollten nach Bedarf Arbeitsbereichen zugewiesen werden.
 
 3. Ein *Master*-Benutzerkonto der Anwendung oder Embedded-Konto.
 
-    Das Back-End der Anwendung speichert die Anmeldeinformationen für dieses Konto und ruft damit ein Azure AD-Token für die Verwendung mit Power BI-APIs ab. Mit diesem Konto wird das Einbettungstoken für die Anwendung generiert. Dieses Konto muss einem Administrator der App-Arbeitsbereiche gehören, die für die Einbettung erstellt werden.
+    Das Back-End der Anwendung speichert die Anmeldeinformationen für dieses Konto und ruft damit ein Azure AD-Token für die Verwendung mit Power BI-APIs ab. Mit diesem Konto wird das Einbettungstoken für die Anwendung generiert. Dieses Konto muss einem Administrator der Arbeitsbereiche gehören, die für die Einbettung erstellt werden.
 
 > [!NOTE]
 > Dies ist lediglich ein herkömmliches Benutzerkonto in Ihrer Organisation, das für Einbettungszwecke verwendet wird.
@@ -83,14 +83,14 @@ Sie müssen Ihre Anwendung bei Azure AD registrieren, um REST-API-Aufrufe ausfü
 
 Sie müssen die Anwendung mithilfe des **Hauptkontos** der Anwendung registrieren.
 
-## <a name="create-app-workspaces-required"></a>Erstellen von App-Arbeitsbereichen (erforderlich)
+## <a name="create-workspaces-required"></a>Erstellen von Arbeitsbereichen (erforderlich)
 
-Sie können App-Arbeitsbereiche nutzen, um eine bessere Isolation bereitzustellen, wenn Ihre Anwendung von mehreren Kunden verwendet wird. Dashboards und Berichte werden dann zwischen Ihren Kunden isoliert. Sie können anschließend ein Power BI-Konto pro App-Arbeitsbereich verwenden, um die Anwendungsnutzung für die Kunden noch weiter zu isolieren.
+Sie können Arbeitsbereiche nutzen, um eine bessere Isolation bereitzustellen, wenn Ihre Anwendung von mehreren Kunden verwendet wird. Dashboards und Berichte werden dann zwischen Ihren Kunden isoliert. Sie können anschließend ein Power BI-Konto pro Arbeitsbereich verwenden, um die Anwendungsnutzung für die Kunden noch weiter zu isolieren.
 
 > [!IMPORTANT]
 > Sie können in einem persönlichen Arbeitsbereich nicht das Einbetten in Nicht-Power BI-Benutzer nutzen.
 
-Sie benötigen einen Benutzer, der über eine Pro-Lizenz verfügt, um einen App-Arbeitsbereich in Power BI zu erstellen. Der Power BI-Benutzer, der den App-Arbeitsbereich erstellt, ist standardmäßig der Administrator dieses Arbeitsbereichs.
+Sie benötigen einen Benutzer, der über eine Pro-Lizenz verfügt, um einen Arbeitsbereich in Power BI zu erstellen. Der Power BI-Benutzer, der den Arbeitsbereich erstellt, ist standardmäßig der Administrator dieses Arbeitsbereichs.
 
 > [!NOTE]
 > Das *Hauptkonto* der Anwendung muss ein Administrator des Arbeitsbereichs sein.
@@ -163,7 +163,7 @@ Es ist möglich, einige Problemumgehungen zum Migrieren des Push-Vorgangs mit AP
 
 ## <a name="create-and-upload-new-reports"></a>Erstellen und Hochladen von Berichten
 
-Zusätzlich zu dem Inhalt, den Sie aus dem Power BI-Arbeitsbereich migriert haben, können Sie Ihre Berichte und Datasets mit Power BI Desktop erstellen und diese Berichte anschließend in einem App-Arbeitsbereich veröffentlichen. Der Endbenutzer, der die Berichte veröffentlicht, muss über eine Power BI Pro-Lizenz verfügen, damit er einen App-Arbeitsbereich veröffentlichen kann.
+Zusätzlich zu dem Inhalt, den Sie aus der Power BI-Arbeitsbereichssammlung migriert haben, können Sie Ihre Berichte und Datasets mit Power BI Desktop erstellen und diese Berichte anschließend in einem Arbeitsbereich veröffentlichen. Der Endbenutzer, der die Berichte veröffentlicht, muss über eine Power BI Pro-Lizenz verfügen, damit er einen Arbeitsbereich veröffentlichen kann.
 
 ## <a name="rebuild-your-application"></a>Erneutes Erstellen der Anwendung
 
@@ -179,9 +179,9 @@ Innerhalb Ihrer Anwendung ordnen Sie Benutzer, die Sie in der Anwendung verwalte
 
 Wenn Sie in die Produktionsphase wechseln möchten, müssen Sie die folgenden Schritte ausführen.
 
-* Wenn Sie einen separaten Mandanten für die Entwicklung verwenden, müssen Sie sicherstellen, dass Ihre App-Arbeitsbereiche, zusammen mit Dashboards und Berichten, in der Produktionsumgebung verfügbar sind. Sie müssen zudem sicherstellen, dass Sie die Anwendung in Azure AD für Ihren Produktionsmandanten erstellt haben, und dass Sie die entsprechenden App-Berechtigungen zugewiesen haben, wie in Schritt 1 angegeben.
+* Wenn Sie einen separaten Mandanten für die Entwicklung verwenden, müssen Sie sicherstellen, dass Ihre Arbeitsbereiche, zusammen mit Dashboards und Berichten, in der Produktionsumgebung verfügbar sind. Sie müssen zudem sicherstellen, dass Sie die Anwendung in Azure AD für Ihren Produktionsmandanten erstellt haben, und dass Sie die entsprechenden App-Berechtigungen zugewiesen haben, wie in Schritt 1 angegeben.
 * Erwerben Sie eine Kapazität, die Ihren Anforderungen entspricht. Lesen Sie das [Whitepaper zur Kapazitätsplanung für die Analyse in Power BI Embedded](https://aka.ms/pbiewhitepaper) (in englischer Sprache), um die Menge und Art der benötigten Kapazität besser zu verstehen. Sie können in Azure [Kapazität erwerben](https://portal.azure.com/#create/Microsoft.PowerBIDedicated).
-* Bearbeiten Sie den App-Arbeitsbereich, und weisen Sie diesen einer Premium-Kapazität unter „Erweitert“ zu.
+* Bearbeiten Sie den Arbeitsbereich, und weisen Sie diesen einer Premium-Kapazität unter „Erweitert“ zu.
 
     ![Premium-Kapazität](media/migrate-from-powerbi-embedded/powerbi-embedded-premium-capacity02.png)
 
@@ -207,4 +207,4 @@ Sie sollten in Azure einige Bereinigungsschritte ausführen.
 [Whitepaper zur Kapazitätsplanung der Analyse von Arbeitsbereichssammlungen](https://aka.ms/pbiewhitepaper)  
 [Power BI Premium-Whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

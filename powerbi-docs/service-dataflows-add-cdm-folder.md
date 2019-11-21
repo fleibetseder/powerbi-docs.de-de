@@ -1,8 +1,7 @@
 ---
 title: Hinzufügen eines CDM-Ordners als Dataflow in Power BI
-description: Konfigurieren eines App-Arbeitsbereichs, um dessen Dataflowdefinition und Datendateien in Azure Data Lake Storage Gen2 zu speichern
+description: Konfigurieren eines Arbeitsbereichs, um dessen Dataflowdefinition und Datendateien in Azure Data Lake Storage Gen2 zu speichern
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: bf2f9baff753b71563c9b5075d3b15be7ae833f9
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 5b6b8658e4480173c32a591c2fc763a238cfd13a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68522741"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872693"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>Hinzufügen eines CDM-Ordners als Dataflow in Power BI (Vorschauversion)
 
@@ -33,7 +32,7 @@ In den folgenden Abschnitten wird beschrieben, wie Sie einen Dataflow aus einem 
 
 ## <a name="create-a-dataflow-from-a-cdm-folder"></a>Erstellen eines Dataflows aus einem CDM-Ordner
 
-Starten Sie den **Power BI-Dienst**, und wählen Sie einen **App-Arbeitsbereich** aus dem linken Navigationsbereich aus, um mit dem Erstellen eines Dataflows aus einem CDM-Ordner zu beginnen. Sie können auch einen neuen Arbeitsbereich zum Erstellen Ihres neuen Dataflows erstellen.
+Starten Sie den **Power BI-Dienst**, und wählen Sie einen **Arbeitsbereich** aus dem Navigationsbereich aus, um mit dem Erstellen eines Dataflows aus einem CDM-Ordner zu beginnen. Sie können auch einen neuen Arbeitsbereich zum Erstellen Ihres neuen Dataflows erstellen.
 
 ![Erstellen eines Dataflows im Power BI-Dienst](media/service-dataflows-add-cdm-folder/dataflow-from-cdm-folder_02.jpg)
 
@@ -74,7 +73,7 @@ Beachten Sie außerdem die Hinweise in der folgenden Liste:
 
 Benutzer von **Power BI Desktop** können nur auf Dataflows zugreifen, die in einem Azure Data Lake Storage Gen2-Konto gespeichert sind, wenn sie der Besitzer des jeweiligen Dataflows oder explizit für den CDM-Ordner des jeweiligen Dataflows autorisiert sind. Sehen Sie sich das folgende Beispiel an:
 
-1.  Anna erstellt einen neuen App-Arbeitsbereich und konfiguriert ihn so, dass Dataflows aus einem CDM-Ordner gespeichert werden.
+1.  Anna erstellt einen neuen Arbeitsbereich und konfiguriert ihn so, dass Dataflows aus einem CDM-Ordner gespeichert werden.
 2.  Ben ist ebenfalls Mitglied des Arbeitsbereichs, den Anna erstellt hat, und möchte Power BI Desktop und den Dataflowconnector verwenden, um Daten aus Annas Dataflow zu erhalten.
 3.  Da Ben im Data Lake-Konto nicht als autorisierter Benutzer des CDM-Ordners des Dataflows hinzugefügt wurde, erhält Ben eine Fehlermeldung.
 
@@ -110,5 +109,5 @@ Weitere Informationen zum Common Data Model finden Sie im folgenden Übersichtsa
 * [CDM folders (CDM-Ordner)](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [The metadata file (model.json) for the Common Data Model (Die Metadatendatei (model.json) des CDM)](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-Natürlich können Sie auch jederzeit [Fragen in der Power BI-Community stellen](http://community.powerbi.com/).
+Natürlich können Sie auch jederzeit [Fragen in der Power BI-Community stellen](https://community.powerbi.com/).
 

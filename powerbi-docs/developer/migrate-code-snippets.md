@@ -3,18 +3,17 @@ title: Codeausschnitte zum Migrieren von Inhalt von Power BI Embedded
 description: Hier finden Sie einige Codeausschnitte mit grundlegenden Vorgängen, die für die Migration von Inhalten erforderlich sind.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: abf45f5213a10379535d4c6ada3b54ffa625ddc5
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 95c249fe2326d9075d920a415c707811d19e5387
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61269227"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880519"
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Codeausschnitte zum Migrieren von Inhalten aus der Power BI-Arbeitsbereichssammlung
 
@@ -167,7 +166,7 @@ In diesem Codeausschnitt werden zur Vereinfachung unverschlüsselte Anmeldeinfor
 
 Sie müssen den Bericht für das erstellte Dataset neu erstellen.
 
-Für diesen Codeausschnitt wird angenommen, dass sich das im Pushverfahren übertragbare Dataset bereits in einem App-Arbeitsbereich in der SaaS-Umgebung befindet. Informationen über die Push-API finden Sie unter [Übertragen von Daten in ein Power BI-Dataset per Push](walkthrough-push-data.md).
+Für diesen Codeausschnitt wird angenommen, dass sich das im Pushverfahren übertragbare Dataset bereits in einem Arbeitsbereich in der SaaS-Umgebung befindet. Informationen über die Push-API finden Sie unter [Übertragen von Daten in ein Power BI-Dataset per Push](walkthrough-push-data.md).
 
 ```csharp
     var credentials = new TokenCredentials(<Your WSC access key>, "AppKey");
@@ -240,4 +239,4 @@ Für diesen Codeausschnitt wird angenommen, dass sich das im Pushverfahren über
 [JavaScript-Einbettungsbeispiel](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Power BI Premium-Whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

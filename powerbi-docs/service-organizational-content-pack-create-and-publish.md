@@ -2,7 +2,6 @@
 title: Erstellen und Veröffentlichen eines organisationsbezogenen Inhaltspakets – Power BI
 description: In diesem Tutorial erstellen Sie ein organisationsbezogenes Inhaltspaket, schränken den Zugriff auf eine bestimmte Gruppe ein und veröffentlichen es in der Inhaltspaketbibliothek Ihrer Organisation in Power BI.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/06/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: eb1940f7d5a4e809590b5b425b8005776040a5cc
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 25b63db2d77e84fb3fc1a3e844ceb46ef1a9bd82
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020653"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872005"
 ---
 # <a name="tutorial-create-and-publish-a-power-bi-organizational-content-pack"></a>Tutorial: Erstellen und Veröffentlichen eines organisationsbezogenen Power BI-Inhaltspakets
 
@@ -34,9 +33,9 @@ Nehmen Sie an, Sie wären der Release-Manager bei Contoso und bereiteten sich au
 
 Führen Sie hierzu die folgenden Schritte aus: Navigieren Sie im [Power BI-Dienst](https://powerbi.com) zu **Mein Arbeitsbereich**. Wechseln Sie anschließend zu **Daten abrufen** > **Beispiele** > **Analysebeispiel für Opportunity** > **Verbinden**, um eine eigene Kopie zu erhalten.
 
-1. Klicken Sie im linken Navigationsbereich auf **Arbeitsbereiche** > **Mein Arbeitsbereich**.
+1. Klicken Sie im Navigationsbereich auf **Arbeitsbereiche** > **Mein Arbeitsbereich**.
 
-1. Klicken Sie in der oberen Navigationsleiste auf das Zahnradsymbol ![Screenshot des Zahnradsymbols](media/service-organizational-content-pack-create-and-publish/cog.png) > **Inhaltspaket erstellen**.
+1. Klicken Sie oben im Navigationsbereich auf das Zahnradsymbol ![Screenshot des Zahnradsymbols](media/service-organizational-content-pack-create-and-publish/cog.png). > **Inhaltspaket erstellen**.
 
    ![Screenshot der Benutzeroberfläche mit hervorgehobenem Zahnradsymbol und hervorgehobener Option „Inhaltspaket erstellen“](media/service-organizational-content-pack-create-and-publish/pbi_create_contpk.png)
 
@@ -100,4 +99,4 @@ Führen Sie hierzu die folgenden Schritte aus: Navigieren Sie im [Power BI-Dien
 
 * [Was ist OneDrive for Business?](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)
 
-* Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+* Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

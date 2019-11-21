@@ -3,20 +3,19 @@ title: Was ist Microsoft Power BI Premium?
 description: Power BI Premium bietet dedizierte Kapazitäten für Ihre Organisation, sodass Sie von verlässlicherer Leistung und größeren Datenmengen profitieren, ohne Benutzerlizenzen kaufen zu müssen.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/17/2019
+ms.date: 10/28/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: c46b58369c334ff5364cee00bb5c3f8cd025adf0
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: f62387feebca089b2afbb919419365fd7e09c2d3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305838"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871824"
 ---
 # <a name="what-is-power-bi-premium"></a>Was ist Power BI Premium?
 
@@ -53,7 +52,7 @@ Power BI-Premium-Abonnements werden von Administratoren im Microsoft 365 Admin C
 
 Mit Power BI Premium erhalten Sie *dedizierte Kapazitäten*. Im Gegensatz zu einer gemeinsam genutzten Kapazität, bei der die Workloads auf gemeinsam mit anderen Kunden genutzten Computerressourcen ausgeführt werden, ist eine dedizierte Kapazität für die ausschließliche Verwendung durch eine Organisation bestimmt. Sie ist isoliert und verfügt über dedizierte Computeressourcen, die verlässliche und konsistente Leistung für die gehosteten Inhalte zur Verfügung stellt. 
 
-Arbeitsbereiche befinden sich innerhalb von Kapazitäten. Jeder Power BI-Benutzer verfügt über einen persönlichen Arbeitsbereich, der als **Mein Arbeitsbereich** bezeichnet wird. Zusätzliche Arbeitsbereiche, auch als **App-Arbeitsbereiche** bezeichnet, können erstellt werden, um die Zusammenarbeit zu ermöglichen. Standardmäßig werden Arbeitsbereiche, einschließlich persönlicher Arbeitsbereiche, in der gemeinsam genutzten Kapazität erstellt. Wenn Sie über Premium-Kapazitäten verfügen, können sowohl zu „Meine Arbeitsbereiche“ als auch zu App-Arbeitsbereichen Premium-Kapazitäten zugewiesen werden.
+Arbeitsbereiche befinden sich innerhalb von Kapazitäten. Jeder Power BI-Benutzer verfügt über einen persönlichen Arbeitsbereich, der als **Mein Arbeitsbereich** bezeichnet wird. Zusätzliche Arbeitsbereiche, auch als **Arbeitsbereiche** bezeichnet, können erstellt werden, um die Zusammenarbeit zu ermöglichen. Standardmäßig werden Arbeitsbereiche, einschließlich persönlicher Arbeitsbereiche, in der gemeinsam genutzten Kapazität erstellt. Wenn Sie über Premium-Kapazitäten verfügen, können sowohl zu „Meine Arbeitsbereiche“ als auch zu Arbeitsbereichen Premium-Kapazitäten zugewiesen werden.
 
 ### <a name="capacity-nodes"></a>Kapazitätsknoten
 
@@ -71,7 +70,7 @@ Die Ressourcen und Grenzwerte der einzelnen Premium-SKUs (und A-SKU jeweils glei
 
 | Kapazitätsknoten | Gesamtzahl an V-Kernen | Back-End-V-Kerne | RAM (GB) | Front-End-V-Kerne | DirectQuery/Live Connection (s) | Modell-Aktualisierungsparallelität |
 | --- | --- | --- | --- | --- | --- | --- |
-| EM1/A1 | 1 | 0,5 | 2.5 | 0,5 | 3,75 | 1 |
+| EM1/A1 | 1 | 0,5 | 3 | 0,5 | 3,75 | 1 |
 | EM2/A2 | 2 | 1 | 5 | 1 | 7,5 | 2 |
 | EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
@@ -166,9 +165,9 @@ Je nach der gewählten SKU unterstützt Power BI Premium das Hochladen von PBIX-
 
 ### <a name="size-considerations"></a>Dimensionierungsaspekte
 
-Große Modelle können ressourcenintensiv sein. Für Modelle mit mehr als 1 GB sollten Sie mindestens eine P1-SKU verwenden. Sie können zwar große Modelle in Arbeitsbereichen veröffentlichen, die von A-SKUs (bis A3) gestützt sind, aber Sie können diese Modelle nicht aktualisieren.
+Große Datasets können ressourcenintensiv sein. Für Datasets mit mehr als 1 GB sollten Sie mindestens eine P1-SKU verwenden. Sie können zwar große Datasets in Arbeitsbereichen veröffentlichen, die von A-SKUs (bis A3) gestützt sind, aber Sie können diese Modelle nicht aktualisieren.
 
-In der folgenden Tabelle werden die empfohlenen SKUs für verschiedene PBIX-Größen aufgeführt:
+In der folgenden Tabelle werden die empfohlenen SKUs zum Hochladen oder Veröffentlichen der PBIX-Datei im Power BI-Dienst angezeigt:
 
    |SKU  |PBIX-Größe   |
    |---------|---------|
@@ -176,9 +175,11 @@ In der folgenden Tabelle werden die empfohlenen SKUs für verschiedene PBIX-Grö
    |P2    | < 6 GB        |
    |P3, P4, P5    | bis zu 10 GB   |
 
-Die A4-SKU für Power BI Embedded entspricht der P1-SKU, A5 entspricht P2 und A6 entspricht P3. Beim Veröffentlichen von großen Modellen in A- und EM-SKUs werden möglicherweise Fehler zurückgegeben, die sich nicht auf den Fehler zur Begrenzung der Modellgröße in der gemeinsam genutzten Kapazität beziehen. Aktualisierungsfehler bei großen Modellen in A- und EM-SKUs verweisen häufig auf Timeouts. 
+Die A4-SKU für Power BI Embedded entspricht der P1-SKU, A5 entspricht P2 und A6 entspricht P3. Beim Veröffentlichen von großen Datasets in A- und EM-SKUs werden möglicherweise Fehler zurückgegeben, die sich nicht auf den Fehler zur Begrenzung der Modellgröße in der gemeinsam genutzten Kapazität beziehen. Aktualisierungsfehler bei großen Datasets in A- und EM-SKUs verweisen häufig auf Timeouts.
 
-Ihre PBIX-Dateien stellen Daten in einem *stark komprimierten Zustand* dar. Die Daten werden in den meisten Fällen beim Laden in den Speicher mehrmals größer, ebenso wie anschließend bei jeder Datenaktualisierung.
+Wenn Sie [große Modelle](service-premium-large-models.md) für ein Dataset aktivieren, gelten die Größenbeschränkungen für PBIX-Dateien auch für das Hochladen oder Veröffentlichen von Dateien. Wenn Datasets eine Kombination aus inkrementellen Aktualisierungen und großen Modellen verwenden, können sie jedoch deutlich über diesen Grenzwerten liegen. Bei großen Modellen wird die Größe des Datasets nur durch den Power BI Premium-Kapazitätsumfang beschränkt.
+
+Ihre PBIX-Dateien stellen Daten in einem *stark komprimierten Zustand* dar. Die Daten werden in den meisten Fällen beim Laden in den Speicher größer, ebenso wie anschließend bei jeder Datenaktualisierung.
 
 Die geplante Aktualisierung von großen Datasets kann lange dauern und ressourcenintensiv sein. Es ist wichtig, nicht zu viele sich überschneidende Aktualisierungen zu planen. Die Konfiguration von [inkrementeller Aktualisierung](service-premium-incremental-refresh.md) wird empfohlen, da sie schneller sowie zuverlässiger ist und weniger Ressourcen beansprucht.
 

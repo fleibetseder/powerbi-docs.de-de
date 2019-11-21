@@ -1,8 +1,7 @@
 ---
-title: Verwenden Sie die Modellierung-Ansicht in Power BI Desktop
+title: Verwenden der Modellierungsansicht in Power BI Desktop
 description: Verwenden der Modellierungsansicht zur Anzeige komplexer Datasets in einem visuellen Format in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 1fdb6058a6306f63f53c770812f85ccd9f9113ea
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 6869430e3fece78210d538c9886234c7728b667a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65941340"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73866542"
 ---
-# <a name="modeling-view-in-power-bi-desktop"></a>Modellieren die Ansicht in Power BI Desktop
+# <a name="modeling-view-in-power-bi-desktop"></a>Modellierungsansicht in Power BI Desktop
 
 Die **Modellierungsansicht** in **Power BI Desktop** erlaubt es Ihnen, komplexe Datasets mit vielen Tabellen anzuzeigen und mit diesen zu arbeiten.
 

@@ -2,7 +2,6 @@
 title: Umbenennen von Dashboards, Berichten, Arbeitsbereichen, Berichtsseiten und Datasets
 description: Sie können praktisch alle Elemente im Power BI-Dienst umbenennen.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 905ef263084cf531e6b38fb4640286e4d78697ce
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: de842b95c8f6e023a5207c07abb2525c5fe45878
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61273764"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871712"
 ---
 # <a name="rename-almost-anything-in-power-bi-service"></a>Sie können praktisch alle Elemente im Power BI-Dienst umbenennen.
 In diesem Artikel wird erläutert, wie Sie Dashboards, Berichte, Berichtsseiten, Arbeitsmappen, Datasets, Apps und Arbeitsbereiche im Power BI-Dienst umbenennen.
@@ -28,9 +27,9 @@ In diesem Artikel wird erläutert, wie Sie Dashboards, Berichte, Berichtsseiten,
 | Berichte in einem Arbeitsbereich |Ja |Nein |
 | Arbeitsmappe in einem Arbeitsbereich |Ja |Nein |
 | Dataset in einem Arbeitsbereich |Ja |Nein |
-| App-Arbeitsbereich |Ja, wenn Sie der Besitzer sind oder über Administratorberechtigungen verfügen |Nein |
-| Veröffentlichte Apps |Nicht im App-Bildschirm, aber der App-Name kann im App-Arbeitsbereich geändert und die App mit einem neuen Namen neu veröffentlicht werden, wenn Sie über Administratorberechtigungen verfügen |Nein |
-| App-Inhalte (Dashboard, Bericht, Arbeitsmappe, Dataset) |Nicht im App-Bildschirm, aber der Inhalt der App kann im App-Arbeitsbereich umbenannt und die App mit einem neuen Namen neu veröffentlicht werden, wenn Sie über Administratorberechtigungen verfügen |Nein |
+| Arbeitsbereich |Ja, wenn Sie der Besitzer sind oder über Administratorberechtigungen verfügen |Nein |
+| Veröffentlichte Apps |Nicht im App-Bildschirm, aber der App-Name kann im Arbeitsbereich geändert und die App mit einem neuen Namen neu veröffentlicht werden, wenn Sie über Administratorberechtigungen verfügen |Nein |
+| App-Inhalte (Dashboard, Bericht, Arbeitsmappe, Dataset) |Nicht im App-Bildschirm, aber der Inhalt der App kann im Arbeitsbereich umbenannt und die App mit einem neuen Namen neu veröffentlicht werden, wenn Sie über Administratorberechtigungen verfügen |Nein |
 | Inhalte in **Für mich freigegeben** |Nein |Nein |
 
 ## <a name="rename-a-dashboard-report-or-workbook"></a>Umbenennen eines Dashboards, Berichts oder einer Arbeitsmappe
@@ -45,7 +44,7 @@ In diesem Artikel wird erläutert, wie Sie Dashboards, Berichte, Berichtsseiten,
 1. Öffnen Sie einen Arbeitsbereich, und wählen Sie die Registerkarte **Datasets** aus.
    
    ![Registerkarte „Datasets“ im Arbeitsbereich](media/service-rename/power-bi-ellipses.png)
-2. Zeigen Sie auf das Element, das Sie umbenennen möchten, wählen Sie die Auslassungspunkte (...) aus, und wählen Sie **Umbenennen** aus.  
+2. Zeigen Sie auf das Element, das Sie umbenennen möchten, wählen Sie **Weitere Optionen** (...) und dann **Umbenennen** aus.  
    
       ![„Umbenennen“ auswählen](media/service-rename/power-bi-rename-datasets.png)
    
@@ -57,11 +56,11 @@ In diesem Artikel wird erläutert, wie Sie Dashboards, Berichte, Berichtsseiten,
    
      ![Bereich „Umbenennen“](media/service-rename/power-bi-rename.png)
 
-## <a name="rename-an-app-workspace"></a>Umbenennen eines App-Arbeitsbereichs
-Jeder Benutzer mit Administratorberechtigungen kann einen App-Arbeitsbereich umbenennen.
+## <a name="rename-a-workspace"></a>Umbenennen eines Arbeitsbereichs
+Jeder Benutzer mit Administratorberechtigungen kann einen Arbeitsbereich umbenennen.
 
 1. Wechseln Sie zu dem Arbeitsbereich, den Sie umbenennen möchten.
-2. Wählen Sie in der rechten oberen Ecke die Auslassungspunkte (...) und dann **Arbeitsbereich bearbeiten** aus. Wenn diese Option nicht angezeigt wird, verfügen Sie nicht über die Berechtigung zum Umbenennen dieses Arbeitsbereichs. 
+2. Wählen Sie in der rechten oberen Ecke **Weitere Optionen** (...) und dann **Arbeitsbereich bearbeiten** aus. Wenn diese Option nicht angezeigt wird, verfügen Sie nicht über die Berechtigung zum Umbenennen dieses Arbeitsbereichs. 
    
     ![„Bearbeiten des Arbeitsbereichs“ auswählen](media/service-rename/power-bi-edit-workspace.png)
 3. Geben Sie einen neuen Namen für den Arbeitsbereich ein, und wählen Sie **Speichern** aus.
@@ -85,7 +84,7 @@ Gefällt Ihnen der Namen einer Seite in Ihrem Power BI-Bericht nicht?  Ein neuer
 
 ## <a name="considerations-and-troubleshooting"></a>Zu beachtende Aspekte und Problembehandlung
 * Wenn das Element, das umbenannt werden soll, für Sie freigegeben wurde oder zu einem Inhaltspaket gehört, wird das Zahnradsymbol nicht angezeigt, und Sie haben keinen Zugriff auf die Einstellungen.
-* Wenn auf der Registerkarte **Datasets** die Auslassungspunkte (...) nicht angezeigt werden, vergrößern Sie das Browserfenster.
+* Wenn auf der Registerkarte **Datasets** nicht **Weitere Optionen** (...) angezeigt wird, vergrößern Sie das Browserfenster.
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 

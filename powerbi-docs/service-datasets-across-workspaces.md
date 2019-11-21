@@ -2,7 +2,6 @@
 title: Einführung in die Verwendung von Datasets in mehreren Arbeitsbereichen (Vorschau)
 description: Erfahren Sie, wie Sie ein Dataset mit Benutzern in der gesamten Organisation teilen können. Dann können diese in ihren eigenen Arbeitsbereichen Berichte erstellen, die auf Ihrem Dataset basieren.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e086cc89a24760bce0c4a45efd558dc47495bd04
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: d30a8012161934ada4ff3cb2ce6852fe62f48892
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020767"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877196"
 ---
 # <a name="intro-to-datasets-across-workspaces-preview"></a>Einführung in die Verwendung von Datasets in mehreren Arbeitsbereichen (Vorschau)
 
@@ -62,7 +61,7 @@ Die spezifischen Features und Erfahrungen, die auf der Grundlage geteilter Datas
 
 ## <a name="considerations-and-limitations"></a>Überlegungen und Einschränkungen
 
-- Als App-Herausgeber müssen Sie sicherstellen, dass Ihre Zielgruppe auf Datasets außerhalb des App-Arbeitsbereichs zugreifen kann. Andernfalls treten bei der Interaktion mit Ihrer App Probleme auf. Berichte werden ohne Zugriff auf das Dataset nicht geöffnet, und Dashboardkacheln werden gesperrt angezeigt. Außerdem können Benutzer die App nicht öffnen, wenn das erste Element in der Navigationsstruktur ein Bericht ohne Zugriff auf das Dataset ist.
+- Als App-Herausgeber müssen Sie sicherstellen, dass Ihre Zielgruppe auf Datasets außerhalb des Arbeitsbereichs zugreifen kann. Andernfalls treten bei der Interaktion mit Ihrer App Probleme auf. Berichte werden ohne Zugriff auf das Dataset nicht geöffnet, und Dashboardkacheln werden gesperrt angezeigt. Außerdem können Benutzer die App nicht öffnen, wenn das erste Element in der Navigationsstruktur ein Bericht ohne Zugriff auf das Dataset ist.
 - Das Erstellen eines Berichts auf der Grundlage eines Datasets in einem anderen Arbeitsbereich setzt die neue Arbeitsbereichsoberfläche an beiden Enden voraus: Der Bericht muss sich in einer neuen Arbeitsbereichsoberfläche befinden, und das Dataset muss sich in einer neuen Arbeitsbereichsoberfläche befinden.
 - In einem klassischen Arbeitsbereich zeigt die Oberfläche zur Datasetermittlung nur die Datasets in dem betreffenden Arbeitsbereich an.
 - Prinzipbedingt funktioniert „Im Web veröffentlichen“ nicht für Berichte, die auf einem freigegebenen Dataset basieren.
@@ -73,4 +72,4 @@ Die spezifischen Features und Erfahrungen, die auf der Grundlage geteilter Datas
 - [Höher Stufen von Datasets](service-datasets-promote.md)
 - [Zertifizieren von Datasets](service-datasets-certify.md)
 - [Steuern der Verwendung von Datasets in mehreren Arbeitsbereichen](service-datasets-admin-across-workspaces.md)
-- Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+- Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

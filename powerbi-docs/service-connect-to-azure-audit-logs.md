@@ -2,7 +2,6 @@
 title: Herstellen einer Verbindung mit Azure-Überwachungsprotokollen mithilfe von Power BI
 description: Azure-Überwachungsprotokolle für Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 42b56cbad4c47b8cc8133a1f35511ea48ac24055
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: d0bd4e90dac6e71d95c38bed83f1c9507acc4fd3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060610"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73855392"
 ---
 # <a name="connect-to-azure-audit-logs-with-power-bi"></a>Herstellen einer Verbindung mit Azure-Überwachungsprotokollen mithilfe von Power BI
 Mit dem Azure-Überwachungsprotokoll-Inhaltspaket können Sie die in den Überwachungsprotokollen gespeicherten Informationen analysieren und visualisieren. Power BI ruft Ihre Daten ab und erstellt ein Standard-Dashboard sowie Berichte basierend auf diesen Daten.
@@ -25,7 +24,7 @@ Mit dem Azure-Überwachungsprotokoll-Inhaltspaket können Sie die in den Überwa
 Stellen Sie eine Verbindung mit dem [Azure-Überwachungsprotokoll-Inhaltspaket](https://app.powerbi.com/getdata/services/azure-audit-logs) her, oder informieren Sie sich über die [Integration von Azure-Überwachungsprotokollen](https://powerbi.microsoft.com/integrations/azure-audit-logs) in Power BI.
 
 ## <a name="how-to-connect"></a>Herstellen der Verbindung
-1. Wählen Sie unten im linken Navigationsbereich **Daten abrufen** aus.  
+1. Wählen Sie unten im Navigationsbereich **Daten abrufen** aus.  
    
     ![](media/service-connect-to-azure-audit-logs/getdata.png)
 2. Wählen Sie im Feld **Dienste** die Option **Abrufen**aus.  

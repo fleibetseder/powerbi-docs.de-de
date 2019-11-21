@@ -1,8 +1,7 @@
 ---
 title: Konfigurieren von Datafloweinstellungen im Arbeitsbereich
-description: Konfigurieren eines App-Arbeitsbereichs in Power BI, um dessen Dataflowdefinition und Datendateien in Azure Data Lake Storage Gen2 zu speichern
+description: Konfigurieren eines Arbeitsbereichs in Power BI, um dessen Dataflowdefinition und Datendateien in Azure Data Lake Storage Gen2 zu speichern
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 12f4f24be9189041d5906844ebe71d6ffb023ec5
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: fa448dac3e7788639377ce2d73d9c0ed68952fb3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523518"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877343"
 ---
 # <a name="configure-workspace-dataflow-settings-preview"></a>Konfigurieren von Datafloweinstellungen im Arbeitsbereich (Vorschauversion)
 
@@ -35,11 +34,11 @@ In den folgenden Abschnitten sehen wir uns diese beiden Möglichkeiten genauer a
 
 ## <a name="create-a-new-workspace-configure-its-dataflow-storage"></a>Erstellen eines neuen Arbeitsbereichs und Konfigurieren des Dataflowspeichers eines neuen Arbeitsbereichs
 
-Wenn Sie im Power BI-Dienst einen neuen App-Arbeitsbereich erstellen möchten, wählen Sie **Arbeitsbereiche > App-Arbeitsbereich erstellen** aus.
+Klicken Sie auf **Arbeitsbereiche > Arbeitsbereich erstellen**, um im Power BI-Dienst einen neuen Arbeitsbereich zu erstellen.
 
 ![Hinzufügen eines neuen Arbeitsbereichs](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_01.jpg)
 
-Im Dialogfeld „App-Arbeitsbereich erstellen“ wird möglicherweise ein gelbes Feld mit dem Titel **Vorschau der verbesserten Arbeitsbereiche** angezeigt. Wählen Sie in diesem Bereich **Jetzt testen** aus.
+Im Dialogfeld „Arbeitsbereich erstellen“ wird möglicherweise ein gelbes Feld mit dem Titel **Preview improved workspaces** (Vorschau der verbesserten Arbeitsbereiche anzeigen) angezeigt. Wählen Sie in diesem Bereich **Jetzt testen** aus.
 
 ![Vorschau der verbesserten Arbeitsbereiche](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_02.jpg)
 
@@ -47,7 +46,7 @@ Im Dialogfeld, das angezeigt wird, können Sie Ihrem Arbeitsbereich einen eindeu
 
 ![Neuen Arbeitsbereich benennen](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_03.jpg)
 
-Erweitern Sie als nächsten Schritt im Dialogfeld **App-Arbeitsbereich erstellen** den Bereich **Erweitert**. Dort können Sie die Einstellung **Dataflowspeicher (Vorschauversion)** aktivieren.
+Erweitern Sie als nächstes im Dialogfeld **Arbeitsbereich erstellen** den Bereich **Erweitert**. Dort können Sie die Einstellung **Dataflow storage (preview)** (Dataflowspeicher (Vorschauversion)) aktivieren.
 
 ![Erweiterte Einstellungen für den neuen Arbeitsbereich](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_04.jpg)
 
@@ -57,7 +56,7 @@ Klicken Sie auf **Speichern**, um den neuen Arbeitsbereich zu erstellen. Sobald 
 
 Als Alternative zum Erstellen eines neuen Arbeitsbereichs können Sie auch einen vorhandenen Arbeitsbereich aktualisieren, sodass die Definitionsdatei und die Daten im Azure Data Lake Storage Gen2-Konto Ihrer Organisation gespeichert werden. Die Einstellungen für den Dataflowspeicher Ihres Arbeitsbereichs können nur geändert werden, wenn der Arbeitsbereich keine Dataflows enthält.
 
-Sie können einen App-Arbeitsbereich bearbeiten, indem Sie auf die Auslassungspunkte **(…)** und dann auf **Arbeitsbereich bearbeiten** klicken. 
+Sie können einen Arbeitsbereich bearbeiten, indem Sie auf die Auslassungspunkte **(…)** und dann auf **Edit workspace** (Arbeitsbereich bearbeiten) klicken. 
 
 ![Arbeitsbereich bearbeiten](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_05.jpg)
 
@@ -103,7 +102,7 @@ Beachten Sie außerdem die Hinweise in der folgenden Liste:
 
 Benutzer von **Power BI Desktop** haben nur Zugriff auf Dataflows, die in einem Azure Data Lake Storage Gen2-Konto gespeichert sind, wenn sie der Besitzer des jeweiligen Dataflows sind. Sehen Sie sich das folgende Beispiel an:
 
-1.  Anna erstellt einen neuen App-Arbeitsbereich und konfiguriert ihn so, dass Dataflows im Data Lake Ihrer Organisation gespeichert werden.
+1.  Anna erstellt einen neuen Arbeitsbereich und konfiguriert ihn so, dass Dataflows im Data Lake der Organisation gespeichert werden.
 2.  Ben ist ebenfalls Mitglied des Arbeitsbereichs, den Anna erstellt hat, und möchte Power BI Desktop und den Dataflowconnector verwenden, um Daten aus Annas Dataflow zu erhalten.
 3.  Da Ben im Data Lake-Konto nicht als autorisierter Benutzer des CDM-Ordners des Dataflows hinzugefügt wurde, erhält Ben eine Fehlermeldung.
 
@@ -138,4 +137,4 @@ Weitere Informationen zum Common Data Model finden Sie im folgenden Übersichtsa
 * [CDM folders (CDM-Ordner)](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [The metadata file (model.json) for the Common Data Model (Die Metadatendatei (model.json) des CDM)](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-Natürlich können Sie auch jederzeit [Fragen in der Power BI-Community stellen](http://community.powerbi.com/).
+Natürlich können Sie auch jederzeit [Fragen in der Power BI-Community stellen](https://community.powerbi.com/).

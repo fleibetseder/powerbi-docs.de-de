@@ -3,18 +3,17 @@ title: Eingebettete Datenquellen für paginierte Berichte im Power BI-Dienst
 description: In diesem Artikel erfahren Sie, wie eine eingebettete Datenquelle in einem paginierten Bericht im Power BI-Dienst erstellt und geändert wird.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.openlocfilehash: 4dda73794c888d89ad67f1af23bfb8c38eb43f61
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: d7a170cad376c3ec9fd3ca8ca7d2c8d2d8ac0223
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020801"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875311"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Erstellen einer eingebetteten Datenquelle für paginierte Berichte im Power BI-Dienst
 
@@ -72,7 +71,7 @@ Ausführlichere Informationen finden Sie unter [Berichtsdaten im Power BI-Berich
 
 Für paginierte Berichte, die eine Verbindung mit Power BI-Datasets herstellen, gelten die Regeln für freigegebene Datasets in Power BI mit geringen Änderungen.  Halten Sie sich an folgende Regeln, um Benutzern paginierte Berichte mit Power BI-Datasets richtig anzuzeigen und sicherzustellen, dass die Sicherheit auf Zeilenebene (Row Level Security, RLS) aktiviert ist und für Ihre Besucher erzwungen wird:
 
-### <a name="classic-apps-and-app-workspaces"></a>Klassische Apps und App-Arbeitsbereiche
+### <a name="classic-apps-and-workspaces"></a>Klassische Apps und Arbeitsbereiche
 
 - RDL-Datei im selben Arbeitsbereich wie das Dataset (derselbe Besitzer): Unterstützt
 - RDL-Datei in einem anderen Arbeitsbereich als das Dataset (derselbe Besitzer): Unterstützt
@@ -82,7 +81,7 @@ Für paginierte Berichte, die eine Verbindung mit Power BI-Datasets herstellen, 
 - RDL-Datei in einem anderen Arbeitsbereich als das Dataset (anderer Benutzer): Jedem Benutzer, dem der Bericht angezeigt wird, muss auf Dataset-Ebene die Berechtigung „Erstellen“ zugewiesen sein
 - Sicherheit auf Rollenebene: Jedem Benutzer, dem der Bericht angezeigt wird, muss auf Dataset-Ebene die Berechtigung „Erstellen“ zugewiesen sein, um diese zu erzwingen.
 
-### <a name="new-experience-apps-and-app-workspaces"></a>Neue Apps und App-Arbeitsbereiche
+### <a name="new-experience-apps-and-workspaces"></a>Neue Apps und Arbeitsbereiche
 
 - RDL-Datei im selben Arbeitsbereich wie das Dataset: Unterstützt
 - RDL-Datei in einem anderen Arbeitsbereich als das Dataset (derselbe Besitzer): Unterstützt

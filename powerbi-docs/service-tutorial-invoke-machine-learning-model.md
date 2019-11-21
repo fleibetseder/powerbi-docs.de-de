@@ -2,7 +2,6 @@
 title: 'Tutorial: Aufrufen eines Machine Learning Studio-Modells in Power BI (Vorschau)'
 description: In diesem Tutorial rufen Sie ein Machine Learning Studio-Modell in Power BI auf.
 author: davidiseminger
-manager: kfile
 ms.reviewer: SarinaJoan
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: e0b2036192ace4404816f5ba64ad07569949452e
-ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
+ms.openlocfilehash: 3cbe715bc3cff9d2afeefe7c82847f104f4d0835
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67596588"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876969"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-model-in-power-bi-preview"></a>Tutorial: Aufrufen eines Machine Learning Studio-Modells in Power BI (Vorschau)
 
@@ -44,7 +43,7 @@ Um von Power BI aus auf ein Azure ML-Modell zugreifen zu können, benötigen Sie
 
 Die folgenden Schritte setzen voraus, dass Sie Koadministrator für das Azure-Abonnement und die Ressourcengruppe sind, für die das Modell veröffentlicht wurde.
 
-Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an, und navigieren Sie zur Seite **Abonnements**, die Sie über die Liste **Alle Dienste** im linken Navigationsmenü finden.
+Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an, und navigieren Sie zur Seite **Abonnements**, die Sie über die Liste **Alle Dienste** im Navigationsmenü finden.
 
 ![Azure-Portal](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_01.png)
 
@@ -68,7 +67,7 @@ Dieser Schritt setzt voraus, dass Sie über die Daten, die Sie mit Ihrem Azure M
 
 Um die Entitäten in Ihrem Dataflow zu erstellen, melden Sie sich beim Power BI-Dienst an, und navigieren Sie zu einem Arbeitsbereich Ihrer dedizierten Kapazität, in dem die KI-Vorschau aktiviert ist.
 
-Wenn Sie noch keinen Arbeitsbereich haben, können Sie einen Arbeitsbereich erstellen, indem Sie **Arbeitsbereiche** im linken Menü und dann **App-Arbeitsbereich erstellen** im Bereich am unteren Rand auswählen.  Daraufhin wird ein Bereich zur Eingabe der Details des Arbeitsbereichs geöffnet. Geben Sie einen Namen für den Arbeitsbereich ein, und wählen Sie **Speichern** aus.
+Wenn Sie noch keinen Arbeitsbereich haben, können Sie einen Arbeitsbereich erstellen, indem Sie **Arbeitsbereiche** im linken Menü und dann **Arbeitsbereich erstellen** im Bereich am unteren Rand auswählen.  Daraufhin wird ein Bereich zur Eingabe der Details des Arbeitsbereichs geöffnet. Geben Sie einen Namen für den Arbeitsbereich ein, und wählen Sie **Speichern** aus.
 
 ![Erstellen des Arbeitsbereichs](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_03.png)
 
@@ -135,7 +134,7 @@ Durch Auswahl des **Bearbeiten**-Symbols wird der Power Query-Editor für die En
 
 ![Bearbeiten](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_16.png)
 
-Wählen Sie die **KI-Erkenntnisse**-Schaltfläche im Menüband und dann im linken Navigationsmenü den _Azure Machine Learning Models_-Ordner aus.
+Wählen Sie die Schaltfläche **KI-Erkenntnisse** im Menüband und dann im Navigationsmenü den Ordner _Azure Machine Learning Models_ aus.
 
 Die Azure ML-Modelle, auf die Ihnen Zugriff gewährt wurde, werden als Power Query-Funktionen mit einem *AzureML*-Präfix aufgelistet.  Beim Klicken auf die Funktion, die dem _AutomobilePricePrediction_-Modell entspricht, werden die Parameter für den Webdienst des Modells als Funktionsparameter aufgelistet.
 

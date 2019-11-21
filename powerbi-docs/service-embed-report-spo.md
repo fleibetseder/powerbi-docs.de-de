@@ -3,7 +3,6 @@ title: Einbetten mit dem Berichts-Webpart in SharePoint Online
 description: 'Jetzt in Power BI: Mit dem neuen Berichts-Webpart für SharePoint Online können Sie interaktive Power BI-Berichte einfach in SharePoint Online-Seiten einbetten.'
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 05/16/2019
-ms.openlocfilehash: c5d35c1e7fef15c72314738c1d67f81656dc3101
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: e44ea4174545715a689b4f4370516cbbab4a593b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073610"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881885"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Einbetten mit dem Berichts-Webpart in SharePoint Online
 
@@ -79,11 +78,11 @@ Nachdem Sie einen Bericht in SharePoint Online eingebettet haben, haben die Benu
 > [!IMPORTANT]
 > Überprüfen Sie im Power BI-Dienst, wer den Bericht sehen kann, und stellen Sie sicher, dass nicht aufgeführte, berechtigte Benutzer Zugriff erhalten.
 
-Es gibt zwei Möglichkeiten, den Berichtszugriff in Power BI zu erteilen. Erstens können Sie beim Erstellen der SharePoint Online-Teamwebsite auf Grundlage einer Office 365-Gruppe den Benutzer als Mitglied des **App-Arbeitsbereichs im Power BI-Dienst** und der **SharePoint-Seite** aufführen. Weitere Informationen finden Sie unter [Verwalten eines App-Arbeitsbereichs](service-manage-app-workspace-in-power-bi-and-office-365.md).
+Es gibt zwei Möglichkeiten, den Berichtszugriff in Power BI zu erteilen. Erstens können Sie beim Erstellen der SharePoint Online-Teamwebsite auf Grundlage einer Office 365-Gruppe den Benutzer als Mitglied des **Arbeitsbereichs im Power BI-Dienst** und der **SharePoint-Seite** aufführen. Weitere Informationen finden Sie unter [Verwalten eines Arbeitsbereichs](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 Zweitens können Sie einen Bericht in eine App einbetten und diese direkt für Benutzer freigeben:  
 
-1. Der Autor, der ein Pro-Benutzer sein muss, erstellt einen Bericht in einem App-Arbeitsbereich. Zur Freigabe für *Power BI Free-Benutzer* muss der App-Arbeitsbereich als *Premium-Arbeitsbereich* festgelegt sein.
+1. Der Autor, der ein Pro-Benutzer sein muss, erstellt einen Bericht in einem Arbeitsbereich. Zur Freigabe für *Power BI Free-Benutzer* muss der Arbeitsbereich als *Premium-Arbeitsbereich* festgelegt sein.
 
 2. Der Ersteller veröffentlicht die App und installiert sie dann. Der Autor muss die App installieren, damit er Zugriff auf die Berichts-URL hat, die zum Einbetten in SharePoint Online verwendet wird.
 
@@ -93,7 +92,7 @@ Zweitens können Sie einen Bericht in eine App einbetten und diese direkt für B
 
 4. Der Ersteller öffnet die App und ruft den Bericht auf.
 
-5. Der Autor kopiert die einzubettende Berichts-URL aus dem von der App installierten Bericht. Verwenden Sie nicht die ursprüngliche Berichts-URL aus dem App-Arbeitsbereich.
+5. Der Autor kopiert die einzubettende Berichts-URL aus dem von der App installierten Bericht. Verwenden Sie nicht die ursprüngliche Berichts-URL aus dem Arbeitsbereich.
 
 6. Erstellen Sie in SharePoint Online eine neue Teamwebsite.
 
@@ -123,7 +122,7 @@ Unten finden Sie die Einstellungen, die Sie für das Power BI-Webpart für Share
 | --- | --- |
 | Seitenname |Legt die Standardseite des Webparts fest. Wählen Sie einen Wert aus der Dropdownliste aus. Wenn keine Seiten angezeigt werden, verfügt der Bericht entweder nur über eine Seite, oder die eingefügte URL enthält den Seitennamen. Entfernen Sie den Berichtsabschnitt aus der URL, um eine bestimmte Seite auswählen zu können. |
 | Anzeige |Passt die Einpassung des Berichts in die SharePoint Online-Seite an. |
-| Navigationsbereich anzeigen |Anzeigen oder Ausblenden des Navigationsbereichs der Seite. |
+| Navigationsbereich anzeigen |Zeigt den Navigationsbereich der Seite an oder blendet ihn aus. |
 | Filterbereich anzeigen |Anzeigen oder Ausblenden des Filterbereichs. |
 
 ## <a name="reports-that-do-not-load"></a>Nicht geladene Berichte
@@ -173,4 +172,4 @@ Benutzer, die einen Bericht in SharePoint anzeigen, benötigen entweder eine **P
 * [Was ist Power BI Premium?](service-premium-what-is.md)
 * [Einbetten eines Berichts in ein sicheres Portal oder eine sichere Website](service-embed-secure.md)
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

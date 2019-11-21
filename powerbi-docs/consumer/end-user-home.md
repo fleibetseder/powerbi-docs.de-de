@@ -2,7 +2,6 @@
 title: Suchen von Inhalten im Power BI-Dienst
 description: Suchen und öffnen Sie von der Seite „Home“ aus Berichte, Dashboards und Apps.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: d97b5a93060869d65de6652af869b472baf8cd10
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: b905b738dc9fa38e390a94fb1b893aba8e45a0db
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71077782"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73863697"
 ---
 # <a name="find-your-dashboards-reports-and-apps"></a>Suchen von Dashboards, Berichten und Apps
 In Power BI bezeichnet der Begriff *Inhalte* Apps, Dashboards und Berichte. Inhalte werden von *Power BI-Designern* erstellt und mit anderen Benutzern wie Ihnen geteilt. Ihre Inhalte werden im Power BI-Dienst angezeigt, und Sie können von dort darauf zugreifen. Beginnen Sie Ihre Arbeit in Power BI am besten von der Startseite aus.
@@ -28,7 +27,7 @@ Nach der Anmeldung wird Power BI geöffnet, und es wird die Seite „Home“ ang
 Es gibt drei verschiedene Möglichkeiten, in Power BI Home nach Inhalten zu suchen und sie anzuzeigen. Der Pool an Inhalten ist bei allen drei gleich, nur die Art der Suche unterscheidet sich. In manchen Fällen erweist sich das Durchsuchen als die einfachste und schnellste Möglichkeit, einen Inhalt zu finden. In anderen Fällen ist das Auswählen einer *Karte* auf der Seite „Home“ die beste Option.
 
 - Auf der Seite „Home“ werden Ihre Favoriten und neuesten Inhalte sowie empfohlene Inhalte und Lernressourcen angezeigt und organisiert. Jeder Inhalt wird einzeln als *Karte* mit Titel und Symbol angezeigt. Durch Auswählen einer Karte wird der entsprechende Inhalt geöffnet.
-- Auf der linken Seite befindet sich ein Navigationsbereich, auch Navigationsleiste genannt. In diesem Bereich werden die gleichen Inhalte in etwas anderer Form angezeigt, und zwar in den Kategorien „Favoriten“, „Zuletzt verwendet“, „Apps“ und „Für mich freigegeben“. Von hier aus können Sie Listen mit Inhalten anzeigen und durch Auswählen einen Inhalt öffnen.
+- Auf der linken Seite befindet sich ein Navigationsbereich. In diesem Bereich werden die gleichen Inhalte in etwas anderer Form angezeigt, und zwar in den Kategorien „Favoriten“, „Zuletzt verwendet“, „Apps“ und „Für mich freigegeben“. Von hier aus können Sie Listen mit Inhalten anzeigen und durch Auswählen einen Inhalt öffnen.
 - Über das globale Suchfeld in der oberen rechten Ecke können Sie durch Eingabe von Titel, Name oder Schlüsselwort nach Inhalten suchen.
 
 In den folgenden Abschnitten werden die einzelnen Optionen zum Suchen und Anzeigen von Inhalten näher erläutert.
@@ -65,23 +64,23 @@ Power BI empfiehlt Ihnen eine Reihe von Apps basierend auf Ihrer Aktivität und 
 ### <a name="learning-resources"></a>Lernressourcen
 Ganz unten auf der Seite „Home“ wird eine Reihe von Lernressourcen angezeigt. Welche Ressourcen dort angezeigt werden, hängt von Ihrer Aktivität, Ihren Einstellungen und dem Power BI-Administrator ab. 
  
-## <a name="explore-the-navigation-pane-nav-bar"></a>Navigationsbereich (Navigationsleiste) erkunden
+## <a name="explore-the-nav-pane"></a>Untersuchen des Navigationsbereichs
 
-![Screenshot der Navigationsleiste im Power BI-Dienst](media/end-user-home/power-bi-nav-bar.png)
+![Screenshot des Navigationsbereichs im Power BI-Dienst](media/end-user-home/power-bi-nav-bar.png)
 
 
-Über den Navigationsbereich auf der linken Seite (Navigationsleiste) können Sie Dashboards, Berichte und Apps suchen und zwischen ihnen wechseln. In einigen Fällen stellt die Navigationsleiste die schnellste Möglichkeit dar, auf einen Inhalt zuzugreifen.
-Die Navigationsleiste wird beim Öffnen der Startseite angezeigt und bleibt auch nach dem Öffnen von anderen Bereichen im Power BI-Dienst erhalten.
+Über den Navigationsbereich können Sie Dashboards, Berichte und Apps suchen und zwischen ihnen wechseln. In einigen Fällen stellt der Navigationsbereich die schnellste Möglichkeit dar, auf einen Inhalt zuzugreifen.
+Der Navigationsbereich wird beim Öffnen der Startseite angezeigt und bleibt auch nach dem Öffnen von anderen Bereichen des Power BI-Diensts erhalten.
   
-In der Navigationsleiste werden Ihre Inhalte in Form von Containern organisiert, die den Bereichen auf der Seite „Home“ ähnlich sind: „Favoriten“, „Zuletzt verwendet“, „Apps“ und „Für mich freigegeben“. Mithilfe der Flyouts können Sie für jeden Container nur die neuesten Inhalte anzeigen oder zu Inhaltslisten mit allen Inhalten der jeweiligen Containerkategorie wechseln.
+Im Navigationsbereich werden Ihre Inhalte in Containern organisiert, die den Bereichen auf der Seite „Home“ ähnlich sind: „Favoriten“, „Zuletzt verwendet“, „Apps“ und „Für mich freigegeben“. Mithilfe der Flyouts können Sie für jeden Container nur die neuesten Inhalte anzeigen oder zu Inhaltslisten mit allen Inhalten der jeweiligen Containerkategorie wechseln.
  
 - Wenn Sie einen der Inhaltsabschnitte öffnen möchten, um eine Liste mit allen Elementen anzuzeigen, klicken Sie auf die Überschrift.
 - Wenn Sie das neueste Element in den einzelnen Containern anzeigen möchten, klicken Sie auf das Flyout ( **>** ).
 
-    ![Video zur Verwendung von „Zuletzt verwendet“ auf der Navigationsleiste](media/end-user-home/power-bi-nav-bar.gif)
+    ![Video zur Verwendung von „Zuletzt verwendet“ im Navigationsbereich](media/end-user-home/power-bi-nav-bar.gif)
 
  
-Die Navigationsleiste ist eine weitere Möglichkeit, schnell nach Inhalten zu suchen. Inhalte werden dort auf ähnliche Weise wie auf der Seite „Home“ organisiert, jedoch in Form von Listen anstelle von Karten. 
+Der Navigationsbereich ist eine weitere Möglichkeit, schnell nach Inhalten zu suchen. Inhalte werden dort auf ähnliche Weise wie auf der Seite „Home“ organisiert, jedoch in Form von Listen anstelle von Karten. 
 
 ## <a name="search-all-of-your-content"></a>Durchsuchen aller Inhalte
 Manchmal findet man einen Inhalt am schnellsten, wenn man danach sucht. Wenn Ihnen beispielsweise auffällt, dass ein längere Zeit nicht mehr verwendetes Dashboard auf der Seite „Home“ nicht mehr angezeigt wird. Oder wenn Sie zwar noch wissen, dass Ihr Kollege Aaron etwas für Sie freigegeben hat, aber Sie erinnern sich nicht mehr an den Namen oder die Art des Inhalts, ob es sich um ein Dashboard oder einen Bericht gehandelt hat.

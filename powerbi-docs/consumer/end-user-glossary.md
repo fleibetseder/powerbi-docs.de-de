@@ -9,12 +9,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 09/04/2019
 ms.author: mihart
-ms.openlocfilehash: b9622a08506c6f5ade900296d91b449c64dc374c
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 32a93a881a801ec5dd335f167e69a5b76f53d694
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70903655"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73764722"
 ---
 # <a name="glossary-for-power-bi-service"></a>Glossar für den Power BI-Dienst
 Der Power BI-Dienst führt möglicherweise Terminologie ein, die nicht vertraut oder zunächst verwirrend ist. Das Glossar ist der ideale Ort, um Begriffe nachzuschlagen – vielleicht sollten Sie ein Lesezeichen setzen? Eine weitere hervorragende Ressource, mehr über die Bausteine zu erfahren, aus denen sich der Power BI-Dienst zusammensetzt, sind die [Grundkonzepte](end-user-basic-concepts.md). Grundkonzepte bietet einen allgemeinen Überblick über die Power BI-*Bestandteile* und die Art ihrer Verbindung.
@@ -37,10 +37,8 @@ Dieses Glossar ist eine Communityinitiative.  Fehlt hier ein Begriff? Bitten Sie
 
 **answer card, answer page (Antwortkarte, Antwortseite)** Siehe „Cortana-Antwortkarte“.
 
-**App, Apps**
+**App, Apps** 
 
- 
-**app workspace (App-Arbeitsbereich)** Alle Arbeitsbereiche in Power BI mit Ausnahme von „Mein Arbeitsbereich“ sind jetzt App-Arbeitsbereiche. Die Inhalte können in einer Power BI-App gebündelt werden. Inhalte, die in Premium-Kapazität gespeichert sind, können mit Free-Benutzern geteilt werden. Persönliche Arbeitsbereiche (unter „Mein Arbeitsbereich“) können in Premium-Kapazität gehostet werden.  
 
 **AppSource** Ein zentralisiertes Onlinerepository, das Sie durchsuchen und in dem Sie Dashboards, Berichte, Datasets und Apps zum Herunterladen finden können.
 
@@ -54,7 +52,7 @@ Dieses Glossar ist eine Communityinitiative.  Fehlt hier ein Begriff? Bitten Sie
 
 **bookmark (Lesezeichen)** Eine Ansicht von Daten, die im Lesezeichenbereich eines Berichts in Power BI Desktop oder im Dienst erfasst wurde. In Desktop sind die Lesezeichen zum Teilen im Power BI-Dienst in der PBIX-Berichtsdatei gespeichert.
   
-**Breadcrumbs** Das Navigationselement oben links, das die schnelle Navigation zwischen App-Arbeitsbereichen erlaubt.
+**Breadcrumbs** Das Navigationselement oben links, das die schnelle Navigation zwischen Arbeitsbereichen erlaubt.
 
 ## <a name="c"></a>C
 
@@ -70,7 +68,7 @@ Dieses Glossar ist eine Communityinitiative.  Fehlt hier ein Begriff? Bitten Sie
 
 **connect live (Live verbinden)** Eine Methode zum Herstellen einer Verbindung mit SQL Server Analysis Services-Datenmodellen. Auch als „Liveverbindung“ bezeichnet.
 
-**Container** Die Bereiche auf der Navigationsleiste sind *Container*. In der Navigationsleiste finden Sie Container für Folgendes: „Favoriten“, „Zuletzt verwendet“, „Apps“, „Für mich freigegeben“ und „Startseite“. 
+**Container** Die Bereiche im Navigationsbereich sind *Container*. Im Navigationsbereich finden Sie Container für Folgendes: „Favoriten“, „Zuletzt verwendet“, „Apps“, „Für mich freigegeben“ und „Startseite“. 
 
 **content (Inhalt)** Inhalte für den Power BI-Dienst sind im allgemeinen Dashboards, Berichte und Apps. Sie können auch Arbeitsmappen und Datasets sein.
 
@@ -164,12 +162,12 @@ In Dokumentation kann „Power BI-Umgebung (Mandant)“ verwendet werden; hier k
 
 ## <a name="l"></a>L
 
-**left navigation (linker Navigationsbereich)** Dieser wurde durch die **Navigationsleiste** ersetzt, wird aber möglicherweise trotzdem in einer Dokumentation angezeigt.    
+**left navigation (linker Navigationsbereich)** Dieser wurde durch den **Navigationsbereich** ersetzt, wird aber möglicherweise trotzdem in einer Dokumentation angezeigt.    
 Die Steuerelemente am linken Rand des Power BI-Diensts.
 
-Erste Nennung: linker Navigationsbereich. In späteren Nennungen oder wenig Platz: linke Navigation.
+Erste Nennung: Navigationsbereich. In späteren Nennungen oder bei Platzmangel: nav pane
 
-**list page (Listenseite)** oder **Inhaltsliste** Eine der Abschnittsseiten für die Elemente im linken Navigationsbereich. Beispielsweise Favoriten, Zuletzt verwendet, Mein Arbeitsbereich usw.
+**list page (Listenseite)** oder **Inhaltsliste** Eine der Abschnittsseiten für die Elemente im Navigationsbereich. Beispielsweise Favoriten, Zuletzt verwendet, Mein Arbeitsbereich usw.
 
 ## <a name="m"></a>M
 
@@ -177,17 +175,17 @@ Erste Nennung: linker Navigationsbereich. In späteren Nennungen oder wenig Plat
 
 **modeling (Modellieren)** [Power BI Desktop] Vorbereiten der Daten, zu denen Sie eine Verbindung hergestellt haben, für die Verwendung in Power BI. Dies schließt das Erstellen von Beziehungen zwischen Tabellen in mehreren Datenquellen, das Erstellen von Measures und das Zuweisen von Metriken ein.
 
-**My workspace (Mein Arbeitsbereich)** Der Arbeitsbereich, in dem alle Power BI-Kunden Inhalte erstellen. Wenn sie alle hier erstellten Inhalte in einer App bündeln wollen und über die Berechtigung *Designer* verfügen, laden sie es in den entsprechenden App-Arbeitsbereich hoch oder erstellen einen neuen.
+**My workspace (Mein Arbeitsbereich)** Der Arbeitsbereich, in dem alle Power BI-Kunden Inhalte erstellen. Wenn sie alle hier erstellten Inhalte in einer App bündeln wollen und über die Berechtigung *Designer* verfügen, laden sie es in den entsprechenden Arbeitsbereich hoch oder erstellen einen neuen.
 
 ## <a name="n"></a>N
 
 **native (Nativ)** Im Lieferumfang des Produkts enthalten. Beispielsweise enthält Power BI einen Satz von *native (nativen)* Visualisierungstypen. Sie können aber auch andere Typen importieren, z.B. benutzerdefinierte visuelle Elemente.
 
-**navigation bar** oder **nav bar** (Navigationsleiste) Die Steuerelemente am linken Rand des Power BI-Diensts.
+**nav pane** oder **nav pane** (Navigationsbereich) Die Steuerelemente am linken Rand des Power BI-Diensts.
 
-Erste Nennung: Navigationsleiste. In späteren Nennungen oder bei Platzmangel: nav bar.
+Erste Nennung: Navigationsbereich. In späteren Nennungen oder bei Platzmangel: nav pane
 
-**navigation pane (Navigationsbereich)** Siehe **Navigationsleiste**
+**nav pane** Siehe **nav pane** (Navigationsbereich)
 
 **notification (Benachrichtigung)** Nachrichten, die von der und an die Power BI-Mitteilungszentrale gesendet werden.  
 
@@ -222,7 +220,7 @@ Erste Nennung: Navigationsleiste. In späteren Nennungen oder bei Platzmangel: n
 
 **Power BI**, **Power BI service (Power BI-Dienst)** , **Power BI Desktop**, **Power BI Mobile**: einige der Power BI-Angebote. *Power BI* ist der allgemeine Ausdruck. Er wird häufig anstelle eines vollständigen Produktnamens verwendet, etwa für *Power BI service (Power BI-Dienst)* und *Power BI Mobile* nach der ersten Nennung des vollständigen Produktnamens.
 
-**Power BI Desktop** Auch als *Desktop* bezeichnet. Die kostenlose Windows-Anwendung von Power BI, die Sie auf Ihrem lokalen Computer installieren können und die es Ihnen ermöglicht, eine Verbindung mit Ihren Daten herzustellen und diese zu transformieren und zu visualisieren. Wird von Berichts-Designern und Administratoren verwendet. Weitere Informationen finden Sie unter [Was ist Power BI?](../power-bi-overview.md).
+**Power BI Desktop** Auch als *Desktop* bezeichnet. Die kostenlose Windows-Anwendung von Power BI, die Sie auf Ihrem lokalen Computer installieren können und die es Ihnen ermöglicht, eine Verbindung mit Ihren Daten herzustellen und diese zu transformieren und zu visualisieren. Wird von Berichts-Designern und Administratoren verwendet. Weitere Informationen finden Sie unter [Was ist Power BI?](../fundamentals/power-bi-overview.md).
 
 **Power BI Embedded** Ein von Entwicklern verwendetes Produkt, um Power BI-Dashboards und Berichte in eigene Apps, Websites und Tools einzubetten.
 
@@ -232,7 +230,7 @@ Erste Nennung: Navigationsleiste. In späteren Nennungen oder bei Platzmangel: n
 
 **Power BI Report Server (Power BI-Berichtsserver)** Ein Angebot von SSRS unter neuem Markennamen, das mit Power BI Premium vorgestellt wird und Organisationen den Aufbau verteilter, hybrider BI-Systeme (eine Mischung aus Cloud- und lokalen Bereitstellungen) ermöglicht. Embedded bietet eine lokalisierte Möglichkeit zum Speichern und Verwalten von Power BI-Berichten.
 
-**Power BI service (Power BI-Dienst)** Ein Online-SaaS-Dienst (Software-as-a-Service). Weitere Informationen finden Sie unter [Was ist Power BI?](../power-bi-overview.md).
+**Power BI service (Power BI-Dienst)** Ein Online-SaaS-Dienst (Software-as-a-Service). Weitere Informationen finden Sie unter [Was ist Power BI?](../fundamentals/power-bi-overview.md).
 
 **Power BI service connector (Power BI-Dienstconnector)** Dieser Connector ermöglicht Benutzern von Power BI Desktop das Herstellen einer Verbindung aus Desktop mit Datasets im Power BI-Dienst. Sie können einmalig ein Modell erstellen, das dann in vielen Berichten und Dashboards wiederverwendet werden kann.
 
@@ -262,7 +260,7 @@ Fügen Sie diese zu einer URL hinzu, um die in einem Power BI-Bericht dargestell
 
 **real-time streaming (Echtzeitstreaming)** Die Möglichkeit, Daten in Echtzeit aus Quellen wie Sensoren, sozialen Medien, Nutzungsmetriken und beliebigen anderen Quellen, die das Erfassen oder Übertragen von zeitkritischen Daten erlauben, zu streamen und Dashboards zu aktualisieren.  
 
-**Recent (Zuletzt verwendet)** Der Container im linken Navigationsbereich, der alle individuellen Artefakte enthält, auf die zuletzt zugegriffen wurde.
+**Recent (Zuletzt verwendet)** Der Container im Navigationsbereich, der alle individuellen Artefakte enthält, auf die zuletzt zugegriffen wurde.
 
 **related content (Verwandte Inhalte)** Zeigt die einzelnen Inhaltsteile, die zum aktuellen Inhalt beitragen. Bei einem Dashboard sehen Sie beispielsweise die Berichte und Datasets, die die Daten und Visualisierungen auf dem Dashboard zur Verfügung stellen.   
 
@@ -290,7 +288,7 @@ Eine Ansicht eines einzelnen Datasets aus verschiedenen Perspektiven, wobei die 
 **share, sharing (Freigeben, Teilen)** In Power BI bedeutet Teilen normalerweise das direkte Teilen eines einzelnen Artefakts (eines Dashboards oder Berichts) mit einer oder mehreren Personen mithilfe ihrer E-Mail-Adressen. Setzt eine Power BI Pro-Lizenz für Absender und Empfänger voraus.
 Auf mobilen Geräten kann sich Teilen auf die native Freigabefunktionalität des Betriebssystems beziehen, wie in „annotate and share“ (Kommentieren und teilen).  
 
-**Shared with me (Für mich freigegeben)** Der Container im linken Navigationsbereich, der alle individuellen Artefakte enthält, die direkt von einem anderen Power BI-Benutzer geteilt wurden.
+**Shared with me (Für mich freigegeben)** Der Container im Navigationsbereich, der alle individuellen Artefakte enthält, die direkt von einem anderen Power BI-Benutzer geteilt wurden.
 
 **snapshot (Momentaufnahme)**
 
@@ -325,7 +323,7 @@ Power BI-Dashboards enthalten Berichtskacheln.
 
 **workbook (Arbeitsmappe)** Eine Excel-Arbeitsmappe, die als Datenquelle verwendet wird. Arbeitsmappen können ein Datenmodell mit einer oder mehreren Tabellen enthalten, die mithilfe von verknüpften Tabellen, Power Query oder Power Pivot geladen wurden.
 
-**workspace (Arbeitsbereiche)** Container für Dashboards, Berichte und Datasets in Power BI. Weitere Informationen finden Sie unter „App-Arbeitsbereich“ in dieser Begriffssammlung.
+**workspace (Arbeitsbereiche)** Container für Dashboards, Berichte und Datasets in Power BI. Benutzer können an den Inhalten in jedem Arbeitsbereich außer denen in „Mein Arbeitsbereich“ zusammenarbeiten. Die Inhalte können in einer Power BI-App gebündelt werden. Inhalte, die in Premium-Kapazität gespeichert sind, können mit Free-Benutzern geteilt werden. Persönliche Arbeitsbereiche (unter „Mein Arbeitsbereich“) können in Premium-Kapazität gehostet werden.
 
 ## <a name="x"></a>X
 **x-axis (X-Achse)**  

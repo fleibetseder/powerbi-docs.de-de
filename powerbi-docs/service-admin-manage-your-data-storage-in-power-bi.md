@@ -1,8 +1,7 @@
 ---
 title: Verwalten des Datenspeichers in Ihren Arbeitsbereichen
-description: Hier erfahren Sie, wie Sie den Datenspeicher in Ihrem individuellen Arbeitsbereich oder in Ihrem App-Arbeitsbereich verwalten, um sicherzustellen, dass Sie weiterhin Berichte und Datasets veröffentlichen können.
+description: Hier erfahren Sie, wie Sie den Datenspeicher in Ihrem individuellen oder allgemeinen Arbeitsbereich verwalten, um sicherzustellen, dass Sie weiterhin Berichte und Datasets veröffentlichen können.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,24 +10,24 @@ ms.topic: conceptual
 ms.date: 12/21/2018
 ms.author: maggies
 LocalizationGroup: Administration
-ms.openlocfilehash: a46fbb0679de30e554003d858e01756b9b242b1b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: f8e7240b34e20a3d18443cadb5265c5d0d870790
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61190215"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873658"
 ---
 # <a name="manage-data-storage-in-power-bi-workspaces"></a>Verwalten des Datenspeichers in Power BI-Arbeitsbereichen
 
-Hier erfahren Sie, wie Sie den Datenspeicher in Ihrem individuellen Arbeitsbereich oder in Ihrem App-Arbeitsbereich verwalten, um sicherzustellen, dass Sie weiterhin Berichte und Datasets veröffentlichen können.
+Hier erfahren Sie, wie Sie den Datenspeicher in Ihrem individuellen oder allgemeinen Arbeitsbereich verwalten, um sicherzustellen, dass Sie weiterhin Berichte und Datasets veröffentlichen können.
 
-Benutzer- und App-Arbeitsbereiche weisen jeweils eigene Datenkapazitäten auf:
+Benutzer und Arbeitsbereiche weisen jeweils eigene Datenkapazitäten auf:
 
 * Alle Benutzer verfügen über maximal 10 GB Datenspeicher.
-* Benutzer mit einer Power BI Pro-Lizenz können App-Arbeitsbereiche mit jeweils maximal 10 GB Datenspeicher erstellen.
-* In einer Premium-Kapazität wird ein App-Arbeitsbereich nicht auf den Speicher eines Power BI Pro-Benutzers angerechnet.
+* Benutzer mit einer Power BI Pro-Lizenz können Arbeitsbereiche mit jeweils maximal 10 GB Datenspeicher erstellen.
+* In einer Premium-Kapazität wird ein Arbeitsbereich nicht auf den Speicher eines Power BI Pro-Benutzers angerechnet.
 
-Auf Mandantenebene darf der gesamte genutzte Datenspeicher für alle Pro-Benutzer und App-Arbeitsbereiche im Mandanten 10 GB pro Pro-Benutzer nicht überschreiten.
+Auf Mandantenebene darf der gesamte genutzte Datenspeicher für alle Pro-Benutzer und Arbeitsbereiche im Mandanten 10 GB je Pro-Benutzer nicht überschreiten.
 
 Informieren Sie sich über weitere Funktionen des [Power BI-Preismodells](https://powerbi.microsoft.com/pricing).
 
@@ -46,7 +45,7 @@ Die Größe des freigegebenen Dashboards hängt von den angehefteten Elementen a
 
 Prüfen Sie den in Ihrem Power BI-Konto genutzten Datenspeicher, und verwalten Sie das Konto.
 
-1. Um den eigenen Speicher zu verwalten, wechseln Sie im linken Navigationsbereich zu **Mein Arbeitsbereich**.
+1. Wechseln Sie im Navigationsbereich zu **Mein Arbeitsbereich**, um den eigenen Speicher zu verwalten.
    
     ![Mein Arbeitsbereich](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
 2. Wählen Sie das Zahnradsymbol ![Zahnradsymbol](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) in der rechten oberen Ecke \> **Persönlichen Speicher verwalten** aus.
@@ -63,15 +62,15 @@ Prüfen Sie den in Ihrem Power BI-Konto genutzten Datenspeicher, und verwalten S
 
 Bedenken Sie, dass Sie oder andere Benutzer über Berichte und Dashboards verfügen können, die auf einem Dataset basieren. Wenn Sie das Dataset löschen, funktionieren diese Berichte und Dashboards nicht mehr.
 
-## <a name="manage-your-app-workspace"></a>Verwalten Ihres App-Arbeitsbereichs
-1. Wählen Sie den Pfeil neben **Arbeitsbereiche** \> Name des App-Arbeitsbereichs aus.
+## <a name="manage-your-workspace"></a>Verwalten Ihres Arbeitsbereichs
+1. Wählen Sie den Pfeil neben **Arbeitsbereiche** \> und den Namen des Arbeitsbereichs aus.
    
-    ![Wählen Sie einen App-Arbeitsbereich aus](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
+    ![Einen Arbeitsbereich auswählen](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
 2. Wählen Sie das Zahnradsymbol ![Zahnradsymbol](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) in der rechten oberen Ecke \> **Gruppenspeicher verwalten** aus.
    
     Die obere Leiste zeigt, wie viel des Speicherlimits der Gruppe verwendet wurde.
    
-    ![Verwalten von Speicher des App-Arbeitsbereichs](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupstorage.png)
+    ![Den Speicher des Arbeitsbereichs verwalten](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupstorage.png)
    
     Die Datasets und Berichte werden auf zwei Registerkarten unterteilt:
    
@@ -80,7 +79,7 @@ Bedenken Sie, dass Sie oder andere Benutzer über Berichte und Dashboards verfü
 3. Wählen Sie das Papierkorbsymbol aus, um ein Dataset oder einen Bericht zu löschen ![Papierkorbsymbol](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
    
    > [!NOTE]
-   > Jedes Mitglied eines App-Arbeitsbereichs, das über Bearbeitungsberechtigungen verfügt, ist zum Löschen von Datasets und Berichten im App-Arbeitsbereich berechtigt.
+   > Jedes Mitglied eines Arbeitsbereichs, das über Bearbeitungsberechtigungen verfügt, ist zum Löschen von Datasets und Berichten im Arbeitsbereich berechtigt.
    > 
    > 
 
@@ -104,5 +103,5 @@ Dieser Grenzwert wird auch unter **Persönlichen Speicher verwalten** angezeigt.
 
  ![Ihr Speicherlimit wurde überschritten](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
 
- Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+ Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
 

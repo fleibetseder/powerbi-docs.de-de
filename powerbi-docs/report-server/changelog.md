@@ -3,18 +3,17 @@ title: Änderungsprotokoll für Power BI-Berichtsserver
 description: Dieses Änderungsprotokoll bezieht sich auf Power BI-Berichtsserver und enthält neue Elemente sowie Fehlerkorrekturen für jeden veröffentlichten Build.
 ms.author: jaimeta
 author: jtarquino
-manager: kfile
 ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/09/2019
-ms.openlocfilehash: a3f7e1676c864ff1f5dbf081dd2e7818f30caba6
-ms.sourcegitcommit: e533c65607bbba0f620fddabd6b107e5933772c1
+ms.date: 10/25/2019
+ms.openlocfilehash: ef85aea957ec470b348676b553248f30d3bf8532
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72259962"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874273"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Änderungsprotokoll für Power BI-Berichtsserver
 
@@ -23,15 +22,22 @@ Dieses Änderungsprotokoll bezieht sich auf Power BI-Berichtsserver und enthält
 Ausführliche Informationen zu neuen Funktionen finden Sie unter [Neuerungen in Power BI-Berichtsserver](whats-new.md). 
 
 ## <a name="september-2019"></a>September 2019
-
 - **Power BI-Berichtsserver**
+    - *Version: 1.6.7236.4246 (Build 15.0.1102.646), Veröffentlichung: 25. Oktober 2019*
+        - Sicherheitsupdates
+        - Fehlerkorrekturen
+            - Korrektur für .NET Framework 4.7 nicht installiert
+            - Korrektur für paginierte Berichte für Teradata mit mehrwertigen Parametern mit Fehler 110083
+            - Korrektur für URLRoot-Wert, der nicht funktioniert, wenn mehrere Webdienst-URL-Bindungen vorhanden sind und eine davon https://+80/reportserver ist
+          - Korrektur für mehrwertige Parameterwerte in paginierten Berichten, die außerhalb der Berichtsdaten angezeigt werden
+          
     - *Version: 1.6.7221.30698 (Build 15.0.1102.620), Veröffentlichung: 9. Oktober 2019*
         - Fehlerkorrekturen
             - Behoben: Benutzerdefiniertes Visual „Textfilter“.
             - Behoben: Leistung von Dropdownslicern.
             - Behoben: „Strip PII“ aus Telemetrie.
           - Behoben: Für URLs wird keine Groß-/Kleinschreibung beachtet.
-             
+          
     - *Version 1.6.7206.38019 (Build 15.0.1102.597), Veröffentlichung: 26. September 2019*
         - Sicherheitsupdates
         - Fehlerkorrekturen
@@ -50,7 +56,10 @@ Ausführliche Informationen zu neuen Funktionen finden Sie unter [Neuerungen in 
              - Aktualisiert: Web-API/PowerBIReports({Id})/DataSources (PATCH) zum Zulassen von Aktualisierungen für Verbindungszeichenfolgen.
          
 - **Power BI Desktop (optimiert für Power BI-Berichtsserver)**
-
+    - *Version: 2.73.5586.1501 (September 2019), Veröffentlichung: 25. Oktober 2019*
+        - Fehlerkorrekturen
+            - Korrektur für die Telemetrie
+            
     - *Version: 2.73.5586.1241 (September 2019), Veröffentlichung: 9. Oktober 2019*
         - Fehlerkorrekturen
             - Behoben: Benutzerdefiniertes Visual „Textfilter“.
@@ -295,6 +304,6 @@ Ausführliche Informationen zu neuen Funktionen finden Sie unter [Neuerungen in 
 [Administratorübersicht](admin-handbook-overview.md)  
 [Installieren von Power BI-Berichtsserver](install-report-server.md)  
 [Herunterladen des Berichts-Generators](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Herunterladen der SQL Server Data Tools](http://go.microsoft.com/fwlink/?LinkID=616714)
+[Herunterladen der SQL Server Data Tools](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

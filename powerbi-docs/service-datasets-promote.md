@@ -2,7 +2,6 @@
 title: 'Höher Stufen Ihres Datasets (Vorschau): Power BI'
 description: Erfahren Sie, wie Sie Ihr Dataset höher stufen, um Benutzer im Unternehmen zu verlässlichen Datasets von hoher Qualität zu führen.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 681cd9f65713738e2b842bfa3404511f9e3a98f4
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: 379249ac50f61df07c4adaffe53e0df29a311086
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67567355"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877129"
 ---
 # <a name="promote-your-dataset-preview"></a>Höher Stufen Ihres Datasets (Vorschau)
 
@@ -30,7 +29,7 @@ Ihr Dataset muss sich in einem Arbeitsbereich mit neuer Benutzeroberfläche im P
 
 1. Navigieren Sie im Arbeitsbereich zur Liste der Datasets.
  
-1. Wählen Sie die Auslassungspunkte (...) und dann **Einstellungen** aus.
+1. Wählen Sie **Weitere Optionen** (...) und dann **Einstellungen** aus.
 
     ![Auswählen der Auslassungspunkte beim Dataset](media/service-datasets-certify-promote/power-bi-dataset-settings.png)
 
@@ -55,4 +54,4 @@ Ihr Mandantenadministrator hat Personen in Ihrer Organisation bestimmt, die Data
 ## <a name="next-steps"></a>Nächste Schritte
 
 * Erfahren Sie mehr über das [Verwenden von Datasets in mehreren Arbeitsbereichen](service-datasets-across-workspaces.md)
-* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

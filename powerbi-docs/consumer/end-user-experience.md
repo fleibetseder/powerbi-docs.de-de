@@ -2,22 +2,21 @@
 title: Die neue Navigation im Power BI-Dienst
 description: Übersicht über die Power BI-Navigation
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: quickstart
-ms.date: 10/18/2019
+ms.date: 10/30/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 14c7f88e0bfb822a73a72958f556443260f6ed76
-ms.sourcegitcommit: f34acbf9fb1ab568fd89773aaf412a847f88dd34
+ms.openlocfilehash: e6be58971b265414440041f4667a0b0cc455cdd4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589452"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73851527"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Schnellstart: Sich mit dem Power BI-Dienst vertraut machen
 
@@ -57,7 +56,7 @@ In „Mein Arbeitsbereich“ sind Ihre Inhalte auf 4 Registerkarten organisiert:
 
 ![Anzeige „Mein Arbeitsbereich“](./media/end-user-experience/power-bi-my-workspace.png)
 
-Wählen Sie im linken Navigationsbereich einen Arbeitsbereich aus. Die Registerkarten für die entsprechenden Inhalte (Dashboards, Berichte, Arbeitsmappen und Datasets) werden dann rechts im Power BI-Zeichenbereich aufgerufen.
+Wählen Sie im Navigationsbereich einen Arbeitsbereich aus. Die Registerkarten mit den zugehörigen Inhalten (Dashboards, Berichte, Arbeitsmappen und Datasets) werden dann rechts im Power BI-Zeichenbereich aufgerufen.
 
 Einem neuen Benutzer wird nur ein Arbeitsbereich (**Mein Arbeitsbereich**) angezeigt.
 
@@ -82,7 +81,7 @@ Auf diesen Registerkarten (auch als *Inhaltsansichten* bezeichnet) sehen Sie Inf
    
    ![Favorit entfernen](./media/end-user-experience/power-bi-unfavorite2.png)
 
-2. Klicken Sie im linken Navigationsbereich auf den Pfeil rechts neben **Favoriten**, um die Liste aller Inhalte anzuzeigen, die Sie als Favoriten markiert haben. Da der linke Navigationsbereich ein permanentes Feature des Power BI-Diensts ist, haben Sie überall im Power BI-Dienst Zugriff auf diese Liste.
+2. Klicken Sie im Navigationsbereich auf den Pfeil rechts neben **Favoriten**, um die Liste aller Inhalte anzuzeigen, die Sie als Favoriten markiert haben. Da der Navigationsbereich ein permanentes Feature des Power BI-Diensts ist, haben Sie überall im Power BI-Dienst Zugriff auf diese Liste.
    
     ![Flyout „Favoriten“](./media/end-user-experience/power-bi-favorite.png)
    
@@ -92,7 +91,7 @@ Auf diesen Registerkarten (auch als *Inhaltsansichten* bezeichnet) sehen Sie Inf
    
    ![Als Favorit markieren](./media/end-user-experience/power-bi-report-favorite.png)
 
-3. Öffnen Sie den *Bereich* **Favoriten**, indem Sie im linken Navigationsbereich **Favoriten** auswählen oder auf das Sternsymbol ![](media/end-user-experience/powerbi-star-icon.png) klicken.
+3. Öffnen Sie den *Bereich* **Favoriten**, indem Sie im Navigationsbereich auf **Favoriten** oder das Sternsymbol klicken. ![Screenshot: gelbes Sternsymbol](media/end-user-experience/powerbi-star-icon.png)
    
    ![Anzeige „Favoriten“ öffnen](./media/end-user-experience/power-bi-favorite-pane.png)
    
@@ -107,13 +106,13 @@ Weitere Informationen finden Sie unter [Favoriten](end-user-favorite.md).
 
 ## <a name="locate-your-most-recent-content"></a>Suchen der neuesten Inhalte
 
-1. Ähnlich wie bei den Favoriten können Sie überall im Power BI-Dienst auf die zuletzt verwendeten Berichte und Dashboards zugreifen, indem Sie im linken Navigationsbereich auf den Pfeil neben **Zuletzt verwendet** klicken.
+1. Ähnlich wie bei den Favoriten können Sie überall im Power BI-Dienst auf die zuletzt verwendeten Inhalte zugreifen, indem Sie im Navigationsbereich auf den Pfeil neben **Zuletzt verwendet** klicken.
 
    ![Flyout „Zuletzt verwendet“](./media/end-user-experience/power-bi-recent-flyout.png)
 
     Wählen Sie im Flyout Inhalt aus, um ihn zu öffnen.
 
-2. Mitunter möchten Sie keine aktuellen Inhalte öffnen, sondern einfach Informationen anzeigen oder andere Aktionen ausführen, wie z.B. Erkenntnisse anzeigen oder nach Excel exportieren. Öffnen Sie in solchen Fällen den Bereich **Zuletzt verwendet**, indem Sie auf **Zuletzt verwendet** oder das zugehörige Symbol im linken Navigationsbereich klicken. Wenn Sie mehrere Arbeitsbereiche haben, enthält diese Liste Inhalte aus allen Ihren Arbeitsbereichen.
+2. Mitunter möchten Sie keine aktuellen Inhalte öffnen, sondern einfach Informationen anzeigen oder andere Aktionen ausführen, wie z.B. Erkenntnisse anzeigen oder nach Excel exportieren. Öffnen Sie in solchen Fällen den Bereich **Zuletzt verwendet**, indem Sie auf **Zuletzt verwendet** oder das zugehörige Symbol im Navigationsbereich klicken. Wenn Sie mehrere Arbeitsbereiche haben, enthält diese Liste Inhalte aus allen Ihren Arbeitsbereichen.
 
    ![Bereich „Zuletzt verwendet“](./media/end-user-experience/power-bi-recent.png)
 
@@ -138,7 +137,7 @@ Weitere Informationen finden Sie unter [Navigation: Suchen und Sortieren von Inh
 Nachdem Sie diese Schnellstartanleitung abgeschlossen haben, können Sie das Dashboard, den Bericht und das Dataset zum Beispiel für die Einzelhandelsanalyse löschen, wenn Sie möchten.
 
 1. Öffnen Sie den Power BI-Dienst (app.powerbi.com), und melden Sie sich an.    
-2. Wählen Sie im linken Navigationsbereich die Optionen **Arbeitsbereiche > Mein Arbeitsbereich** aus.  
+2. Klicken Sie im Navigationsbereich auf **Arbeitsbereiche > Mein Arbeitsbereich**.  
     Sehen Sie den gelben Stern, der anzeigt, dass es sich um einen Favoriten handelt?    
 3. Klicken Sie auf der Registerkarte **Dashboards** neben dem Retail Analysis-Dashboard auf das Mülleimersymbol zum **Löschen**.    
 

@@ -1,8 +1,7 @@
 ---
-title: Vertrauenswürdige Drittanbieter-Connectors in Powerbi
-description: 'Gewusst wie: einen mit Drittanbieter-Connector in Power BI zu vertrauen'
+title: Vertrauenswürdige Connectors von Drittanbietern in Power BI
+description: Vorgehensweise beim Anerkennen der Vertrauenswürdigkeit eines signierten Drittanbieterconnectors in Power BI
 author: cpopell
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,41 +9,41 @@ ms.topic: conceptual
 ms.date: 04/3/2019
 ms.author: gepopell
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 30b7457c6149320c43f24b967a842382821b01b1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ac3f795d6a80d5f143daf68436f41f5771b3c2bb
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65607779"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876163"
 ---
-# <a name="trusting-third-party-connectors"></a>Vertrauen Drittanbieter-connectors
+# <a name="trusting-third-party-connectors"></a>Anerkennen von Drittanbieterconnectors als vertrauenswürdig
 
-## <a name="why-do-you-need-trusted-third-party-connectors"></a>Warum benötigen Sie die vertrauenswürdigen Drittanbieter-Connectors?
+## <a name="why-do-you-need-trusted-third-party-connectors"></a>Warum benötigen Sie vertrauenswürdige Connectors von Drittanbietern?
 
-In Power BI empfehlen wir in der Regel Ihre Sicherheit zum Erweiterung von Daten auf dem höheren Grad an, die Laden von Code, die nicht durch Microsoft zertifiziert wird verhindert, dass Ebene beibehalten. Allerdings gibt es möglicherweise viele Fälle, in denen Sie bestimmte Connectors – diejenigen, die Sie geschrieben haben, noch diejenigen, die durch einen Berater oder der Anbieter außerhalb des Pfads der Microsoft-Zertifizierung bereitgestellte laden möchten.
+Es wird grundsätzlich empfohlen, in Power BI eine höhere Sicherheitsstufe für die Datenerweiterung zu verwenden, um zu verhindern, dass nicht von Microsoft zertifizierter Code geladen wird. Es kann jedoch häufiger der Fall sein, dass Sie bestimmte Connectors laden möchten, die Sie geschrieben haben, oder die Ihnen ein Berater oder Anbieter außerhalb des Microsoft-Zertifizierungspfads bereitgestellt wurden.
 
-Der Entwickler eines bestimmten Connectors können sie mit einem Zertifikat signieren und bieten Ihnen die Informationen, die auf sichere Weise Laden ohne verringern die Sicherheitseinstellungen werden sollen.
+Der Entwickler eines bestimmten Connectors kann diesen mit einem Zertifikat signieren und Ihnen die erforderlichen Informationen bereitstellen, wie Sie den Connector sicher laden können, ohne die Sicherheitseinstellungen zu senken.
 
-Wenn Sie weitere Informationen zu den Sicherheitseinstellungen erhalten möchten, müssen Sie erhalten Informationen über diese [hier](https://docs.microsoft.com/power-bi/desktop-connector-extensibility).
+Wenn Sie mehr über die Sicherheitseinstellungen erfahren möchten, können Sie sich [hier](https://docs.microsoft.com/power-bi/desktop-connector-extensibility) informieren.
 
-## <a name="using-the-registry-to-trust-third-party-connectors"></a>Mithilfe der Registrierung, um Drittanbieter-Connectors zu vertrauen.
+## <a name="using-the-registry-to-trust-third-party-connectors"></a>Verwenden der Registrierung zum Einrichten von vertrauenswürdigen Drittanbieterconnectors
 
-Vertrauen Drittanbieter-Connectors in Power BI erfolgt durch Auflisten der Fingerabdruck des Zertifikats, die Sie in einem angegebenen Registrierungswert vertrauen möchten. Wenn dieser Fingerabdruck den Fingerabdruck des Zertifikats für den Connector ein, das Sie laden möchten entspricht, werden Sie zu "Empfohlen" Sicherheitsstufe von Power BI laden können. 
+Das Zulassen von vertrauenswürdigen Drittanbieterconnectors in Power BI erfolgt durch Auflisten des Zertifikatfingerabdrucks, dem Sie vertrauen möchten, in einem angegebenen Registrierungswert. Wenn dieser Fingerabdruck mit dem Zertifikatsfingerabdruck auf dem Connector übereinstimmt, den Sie laden möchten, können Sie ihn in der „empfohlenen“ Sicherheitsstufe von Power BI laden. 
 
-Der Registrierungspfad ist HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Power BI-Desktop. Stellen Sie sicher, dass der Pfad vorhanden ist, oder erstellen sie. Wir haben uns entschieden, diesen Speicherort aufgrund von IT-Richtlinie als auch erfordern lokale Computer Administratorenzugriff so bearbeiten Sie in erster Linie gesteuert. 
+Der Registrierungspfad lautet HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Power BI Desktop. Stellen Sie sicher, dass der Pfad vorhanden ist, oder erstellen Sie ihn. Dieser Speicherort wurde ausgewählt, da er in erster Linie durch IT-Richtlinien gesteuert wird und zu dessen Bearbeitung auf die Verwaltung des lokalen Computers zugegriffen werden muss. 
 
-![Power BI Desktop-Registrierung ohne vertrauenswürdigen Drittanbieter-Schlüssel festlegen](media/desktop-trusted-third-party-connectors/desktoptrustedthird1.png)
+![Registrierung von Power BI Desktop ohne vertrauenswürdige Schlüssel von Drittanbietern](media/desktop-trusted-third-party-connectors/desktoptrustedthird1.png)
 
-Fügen Sie einen neuen Wert unter dem oben angegebenen Pfad hinzu. Der Typ muss "Mehrteilige Zeichenfolge-Value" (REG_MULTI_SZ) und "TrustedCertificateThumbprints" sollte aufgerufen werden 
+Fügen Sie unter dem oben angegebenen Pfad einen neuen Wert hinzu. Der Typ muss ein „mehrteiliger Zeichenfolgenwert“ (REG_MULTI_SZ) sein, und er muss als „TrustedCertificateThumbprints“ bezeichnet werden. 
 
-![Power BI Desktop-Registrierung mit einem Eintrag für den vertrauenswürdigen Drittanbieter-Connectors, aber keine Schlüssel](media/desktop-trusted-third-party-connectors/desktoptrustedthird2.png)
+![Registrierung von Power BI Desktop mit einem Eintrag für vertrauenswürdige Drittanbieterconnectors ohne Schlüssel](media/desktop-trusted-third-party-connectors/desktoptrustedthird2.png)
 
-Fügen Sie die Fingerabdrücke der Zertifikate zu vertrauen. Sie können mehrere Zertifikate mithilfe von "\0" als Trennzeichen oder in den Registrierungs-Editor, des rechten Maustaste auf ändern, und jeder Fingerabdruck in einer neuen Zeile platzieren, hinzufügen. Beispielfingerabdruck ist ein selbst signiertes Zertifikat entnommen. 
+Fügen Sie die Fingerabdrücke der Zertifikate hinzu, die Sie als vertrauenswürdig einstufen möchten. Sie können mehrere Zertifikate hinzufügen, indem Sie „\ 0“ als Trennzeichen verwenden. Sie können auch im Registrierungs-Editor mit der rechten Maustaste klicken, und Änderungen vornehmen, indem Sie jeden Fingerabdruck in einer neuen Zeile ablegen. Der Beispielfingerabdruck stammt von einem selbstsignierten Zertifikat. 
 
- ![Power BI Desktop-Registrierung mit einem vertrauenswürdigen Drittanbieter-Schlüssel festlegen](media/desktop-trusted-third-party-connectors/desktoptrustedthird3.png)
+ ![Registrierung von Power BI Desktop mit vertrauenswürdigen Schlüsseln von Drittanbietern](media/desktop-trusted-third-party-connectors/desktoptrustedthird3.png)
 
-Wenn Sie ordnungsgemäß die Anweisungen befolgt haben und den richtigen Fingerabdruck durch Ihre Entwickler übergeben worden sein, sollten Sie jetzt auf sichere Trust-Connectors, die mit dem zugehörigen Zertifikat signiert sein.
+Wenn Sie die Anweisungen korrekt befolgt haben und den richtigen Fingerabdruck vom Entwickler erhalten haben, sollten Sie nun den mit dem zugehörigen Zertifikat signierten Connectors vertrauen können.
 
-## <a name="how-to-sign-connectors"></a>Gewusst wie: Signieren von Connectors
+## <a name="how-to-sign-connectors"></a>Signieren von Connectors
 
-Wenn Sie einen Connector haben Sie oder ein Entwickler müssen sich anmelden, informieren Sie sich über ihn in der Power Query-Dokumentation [hier](https://docs.microsoft.com/power-query/handlingconnectorsigning).
+Wenn Sie über einen Connector verfügen, den Sie oder ein Entwickler signieren müssen, können Sie die entsprechenden Informationen in der Power Query-Dokumentation [hier](https://docs.microsoft.com/power-query/handlingconnectorsigning) nachlesen.

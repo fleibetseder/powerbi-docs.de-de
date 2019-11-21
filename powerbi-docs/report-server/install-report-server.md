@@ -3,18 +3,17 @@ title: Installieren von Power BI-Berichtsserver
 description: Erfahren Sie, wie Power BI-Berichtsserver installiert wird.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/22/2019
-ms.openlocfilehash: c0e3666a5838ae8e3849f5defd3858c9ea205a42
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: eecddd9251bbce732e9dc4ef70ad0d855f499d11
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839450"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874139"
 ---
 # <a name="install-power-bi-report-server"></a>Installieren von Power BI-Berichtsserver
 
@@ -46,11 +45,11 @@ Weitere Details erhalten Sie im Verlauf dieses Artikels.
 
 Wenn Sie Power BI Premium erworben haben, haben Sie auf der Registerkarte **Premium-Einstellungen** im Power BI-Verwaltungsportal Zugriff auf den Product Key Ihres Power BI-Berichtsservers. Dieser steht nur globalen Administratoren oder Benutzern zur Verfügung, denen die Administratorrolle für den Power BI-Dienst zugewiesen wurde.
 
-![Premium-Einstellungen](../report-server/media/install-report-server/pbirs-product-key.png "Schlüssel für Power BI-Berichtsserver in den Premium-Einstellungen")
+![Premium-Einstellungen](../report-server/media/install-report-server/pbirs-product-key.png "Schlüssel für den Power BI-Berichtsserver in den Premium-Einstellungen")
 
 Wenn Sie auf **Power BI Report Server key** (Schlüssel für den Power BI-Berichtsserver) klicken, wird ein Dialogfeld mit Ihrem Product Key angezeigt. Diesen können Sie kopieren und bei der Installation verwenden.
 
-![Product Key](../report-server/media/install-report-server/pbirs-product-key-dialog.png "Product Key für Power BI-Berichtsserver")
+![Product Key](../report-server/media/install-report-server/pbirs-product-key-dialog.png "Product Key für den Power BI-Berichtsserver")
 
 #### <a name="sql-server-enterprise-software-assurance-sa"></a>SQL Server Enterprise Software Assurance (SA)
 
@@ -127,14 +126,14 @@ URL-Reservierungen bestehen aus einem Präfix, Hostnamen, Port und virtuellen Ve
 | Teil | Beschreibung |
 | --- | --- |
 | Präfix |Das Standardpräfix ist HTTP. Wenn Sie zuvor ein SSL-Zertifikat (Secure Sockets Layer) installiert haben, versucht Setup, URL-Reservierungen zu erstellen, die das Präfix HTTPS verwenden. |
-| Hostname |Der Standardhostname ist ein Platzhalter (+). Er gibt an, dass der Berichtsserver alle HTTP-Anforderungen am vorgesehenen Port für alle Hostnamen akzeptiert, die in den Computer aufgelöst werden, einschließlich `http://<computername>/reportserver`, `http://localhost/reportserver` oder `http://<IPAddress>/reportserver.`. |
+| Hostname |Der Standardhostname ist ein Platzhalter (+). Er gibt an, dass der Berichtsserver alle HTTP-Anforderungen am vorgesehenen Port für alle Hostnamen akzeptiert, die in den Computer aufgelöst werden, einschließlich `https://<computername>/reportserver`, `https://localhost/reportserver` oder `https://<IPAddress>/reportserver.`. |
 | Port |Der Standardport ist 80. Wenn Sie einen anderen Port als 80 verwenden, müssen Sie diesen explizit der URL hinzufügen, sobald Sie das Webportal in einem Browserfenster öffnen. |
 | Virtuelles Verzeichnis |Standardmäßig werden virtuelle Verzeichnisse im Format „ReportServer“ für den Berichtsserver-Webdienst und „Reports“ für das Webportal erstellt. Für den Report Server-Webdienst heißt das standardmäßige virtuelle Verzeichnis **reportserver**. Für das Webportal heißt das standardmäßige virtuelle Verzeichnis **reports**. |
 
 Ein Beispiel der vollständigen URL-Zeichenfolge kann folgendermaßen aussehen:
 
-* `http://+:80/reportserver`: Ermöglicht den Zugriff auf den Berichtsserver.
-* `http://+:80/reports`: Ermöglicht den Zugriff auf das Webportal.
+* `https://+:80/reportserver`: Ermöglicht den Zugriff auf den Berichtsserver.
+* `https://+:80/reports`: Ermöglicht den Zugriff auf das Webportal.
 
 ## <a name="firewall"></a>Firewall
 

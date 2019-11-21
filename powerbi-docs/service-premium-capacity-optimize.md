@@ -3,7 +3,6 @@ title: Optimieren von Microsoft Power BI Premium-Kapazitäten
 description: Beschreibt Optimierungsstrategien für Power BI Premium-Kapazitäten.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1fb775bd203fc1e0f6342a0d5cd4d9e382b8342a
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: d2e8ede356ed015c4c35b311ca58d35366324b9a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70750918"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871910"
 ---
 # <a name="optimizing-premium-capacities"></a>Optimieren von Premium-Kapazitäten
 
@@ -33,7 +32,7 @@ Am Ende dieses Artikels werden noch Testansätze und die Dimensionierung der Pre
 
 Für Ihr Vorhaben, die bestmögliche Nutzung und Leistung zu erzielen, werden einige bewährte Methoden empfohlen. Dazu gehören:
 
-- Verwenden von App-Arbeitsbereichen anstelle persönlicher Arbeitsbereiche
+- Verwenden von Arbeitsbereichen anstelle persönlicher Arbeitsbereiche
 - Trennen von unternehmenskritischer und Self-Service-BI (SSBI) in verschiedene Kapazitäten
 
   ![Trennen von unternehmenskritischer und Self-Service-BI in verschiedene Kapazitäten](media/service-premium-capacity-optimize/separate-capacities.png)
@@ -257,7 +256,7 @@ Es ist wichtig, dass die Tests wiederholbar sind. Tests sollten mehrmals ausgef�
 
 Wenn Sie bereits über eine Kapazität und die Berichte verfügen, für die Sie einen Auslastungstest durchführen möchten, verwenden Sie das [PowerShell-Tool zum Generieren einer Auslastung](https://aka.ms/PowerBILoadTestingTool), um schnell einen Auslastungstest zu erzeugen. Mit dem Tool können Sie abschätzen, wie viele Instanzen jedes Berichts ihre Kapazität innerhalb einer Stunde ausführen kann. Sie können das Tool verwenden, um die Fähigkeit der Kapazität zum Rendern einzelner Berichte oder zum parallelen Rendern mehrerer verschiedener Berichte abzuschätzen. Weitere Informationen erhalten Sie im Video [Microsoft Power BI: Premium-Kapazität](https://www.youtube.com/watch?time_continue=1860&v=C6vk6wk9dcw).
 
-Zum Generieren eines komplexeren Tests sollten Sie die Entwicklung einer Auslastungstestanwendung in Betracht ziehen, die eine realistische Workload simuliert. Weitere Informationen erhalten Sie im Webinar zum Thema [Testen von Power BI-Anwendungen mit dem Visual Studio-Auslastungstest](https://powerbi.microsoft.com/en-us/blog/week-4-11-webinars-load-testing-power-bi-applications-with-visual-studio-load-test-and-getting-started-with-cds-for-apps-based-model-driven-apps/).
+Zum Generieren eines komplexeren Tests sollten Sie die Entwicklung einer Auslastungstestanwendung in Betracht ziehen, die eine realistische Workload simuliert. Weitere Informationen erhalten Sie im Webinar zum Thema [Testen von Power BI-Anwendungen mit dem Visual Studio-Auslastungstest](https://powerbi.microsoft.com/blog/week-4-11-webinars-load-testing-power-bi-applications-with-visual-studio-load-test-and-getting-started-with-cds-for-apps-based-model-driven-apps/).
 
 ## <a name="acknowledgements"></a>Danksagungen
 

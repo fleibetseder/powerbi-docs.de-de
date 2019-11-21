@@ -3,18 +3,17 @@ title: Migrationstool von Power BI Embedded
 description: Dieses Migrationstool kann verwendet werden, um Ihre Berichte aus dem Power BI Embedded Azure-Dienst (PaaS) in den Power BI-Dienst (SaaS) zu kopieren.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 9344a1a3dc4f682925da900cde8accfead783f88
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 2970744f89bf8fdc115be018d00c8f5b73d9ddfc
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61272028"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880568"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Power BI Embedded-Migrationstool
 
@@ -132,7 +131,7 @@ Ein Pfad wird automatisch für Sie erstellt. Sie können diesen Pfad bei Bedarf 
 
 #### <a name="upload-plan"></a>Uploadplan
 
-Hier geben Sie ein Präfix ein, das für die App-Arbeitsbereiche verwendet werden soll, die im Power BI-Dienst erstellt werden. Hinter dem Präfix steht die GUID für den Arbeitsbereich, der in Azure vorhanden war.
+Hier geben Sie ein Präfix ein, das für die Arbeitsbereiche verwendet werden soll, die im Power BI-Dienst erstellt werden. Hinter dem Präfix steht die GUID für den Arbeitsbereich, der in Azure vorhanden war.
 
 ![Uploadplan](media/migrate-tool/migrate-tool-upload-plan.png)
 
@@ -167,21 +166,21 @@ Nachdem der Download abgeschlossen ist, klicken Sie auf die Registerkarte **Grup
 
 ## <a name="step-3-create-groups"></a>Schritt 3: Gruppen erstellen
 
-Nachdem Sie die verfügbaren Berichte heruntergeladen haben, können Sie zur Registerkarte **Gruppen erstellen** wechseln. Auf dieser Registerkarte werden die App-Arbeitsbereiche innerhalb des Power BI-Diensts anhand des Migrationsplans erstellt, den Sie erstellt haben. Der App-Arbeitsbereich wird mit dem Namen erstellt, den Sie auf der Registerkarte **Hochladen** innerhalb von **Analysieren und Planen Sie die Migration** bereitgestellt.
+Nachdem Sie die verfügbaren Berichte heruntergeladen haben, können Sie zur Registerkarte **Gruppen erstellen** wechseln. Auf dieser Registerkarte werden die Arbeitsbereiche innerhalb des Power BI-Diensts anhand des Migrationsplans erstellt, den Sie erstellt haben. Der Arbeitsbereich wird mit dem Namen erstellt, den Sie auf der Registerkarte **Hochladen** innerhalb von **Analyze & Plan Migration** (Analysieren und Planen Sie die Migration) bereitgestellt haben.
 
 ![Gruppen erstellen](media/migrate-tool/migrate-tool-create-groups.png)
 
-Um die App-Arbeitsbereiche zu erstellen, wählen Sie entweder **Ausgewählte Gruppen erstellen** oder **Fehlende Gruppen erstellen**.
+Sie können entweder auf **Create Selected Groups** (Ausgewählte Gruppen erstellen) oder **Create All Missing Groups** (Alle fehlenden Gruppen erstellen) klicken, um die Arbeitsbereiche zu erstellen.
 
-Wenn Sie eine dieser Optionen auswählen, werden Sie aufgefordert, sich anzumelden. *Sie sollten Ihre Anmeldeinformationen für den Power BI-Dienst verwenden, auf dem Sie die App-Arbeitsbereiche erstellen möchten.*
+Wenn Sie eine dieser Optionen auswählen, werden Sie aufgefordert, sich anzumelden. *Sie sollten Ihre Anmeldeinformationen für den Power BI-Dienst verwenden, in dem Sie die Arbeitsbereiche erstellen möchten.*
 
 ![Gruppenanmeldung erstellen](media/migrate-tool/migrate-tool-create-group-sign-in.png)
 
-Dadurch wird der App-Arbeitsbereich im Power BI-Dienst erstellt. Dadurch werden die Berichte nicht in den App-Arbeitsbereich hochgeladen.
+Dadurch wird der Arbeitsbereich im Power BI-Dienst erstellt. Dadurch werden die Berichte nicht in den Arbeitsbereich hochgeladen.
 
-Sie können überprüfen, ob der App-Arbeitsbereich erstellt wurde, indem Sie sich bei Power BI anmelden und überprüfen, ob der Arbeitsbereich vorhanden ist. Sie werden bemerken, dass nichts im Arbeitsbereich vorhanden ist.
+Sie können überprüfen, ob der Arbeitsbereich erstellt wurde, indem Sie sich bei Power BI anmelden und überprüfen, ob der Arbeitsbereich vorhanden ist. Sie werden bemerken, dass nichts im Arbeitsbereich vorhanden ist.
 
-![App-Arbeitsbereich](media/migrate-tool/migrate-tool-app-workspace.png)
+![Arbeitsbereich](media/migrate-tool/migrate-tool-app-workspace.png)
 
 Nachdem der Arbeitsbereich erstellt wurde, können Sie mit der Registerkarte **Hochladen** fortfahren.
 
@@ -235,9 +234,9 @@ Für das fehlerhafte Element können wir den Namen des SaaSTargetReportName-Obje
 
 Wir können dann den Plan im Migrationstool erneut öffnen und den fehlerhaften Bericht hochladen.
 
-Kehren wir zu Power BI zurück. Wir sehen, dass die Berichte und Datasets im App-Arbeitsbereich hochgeladen wurden.
+Zurück in Power BI sehen wir, dass die Berichte und Datasets im Arbeitsbereich hochgeladen wurden.
 
-![App-Arbeitsbereich hochladen](media/migrate-tool/migrate-tool-upload-app-workspace.png)
+![Hochladen von Arbeitsbereichen](media/migrate-tool/migrate-tool-upload-app-workspace.png)
 
 <a name="upload-local-file"></a>
 
@@ -264,7 +263,7 @@ Sie können dann die Verbindungszeichenfolge für das Dataset im Power BI-Dienst
 
 ## <a name="embedding"></a>Einbetten
 
-Da Ihre Berichte im Power BI-Dienst aus dem Power BI Embedded Azure-Dienst migriert wurden, können Sie nun die Anwendung aktualisieren und beginnen, die Berichte in diesem App-Arbeitsbereich einzubetten.
+Da Ihre Berichte aus dem Power BI Embedded-Azure-Dienst zum Power BI-Dienst migriert wurden, können Sie nun die Anwendung aktualisieren und damit beginnen, die Berichte in diesem Arbeitsbereich einzubetten.
 
 Weitere Informationen dazu finden Sie unter [Migrieren von Inhalten aus Arbeitsbereichssammlungen von Power BI Embedded zu Power BI](migrate-from-powerbi-embedded.md).
 
@@ -278,4 +277,4 @@ Weitere Informationen dazu finden Sie unter [Migrieren von Inhalten aus Arbeitsb
 [JavaScript-Einbettungsbeispiel](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Power BI Premium-Whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: Problembehandlung für Kachelfehler
 description: Häufig in Power BI auftretende Fehler bei der Aktualisierung einer Kachel
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,18 +10,18 @@ ms.topic: troubleshooting
 ms.date: 12/06/2018
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: f6becb175b8779588ab8d203bb02256945c71ee6
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: dbae4c82fb350242ed0fefadeeec217666fc3005
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72544289"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877503"
 ---
 # <a name="troubleshooting-tile-errors"></a>Problembehandlung für Kachelfehler
 Im Folgenden sind häufige Fehler, die Ihnen möglicherweise in Verbindung mit Kacheln begegnen, gemeinsam mit den entsprechenden Erklärungen aufgeführt.
 
 > [!NOTE]
-> Falls bei Ihnen ein Fehler auftritt, der hier nicht aufgelistet ist, und Ihnen Probleme verursacht, können Sie auf der [Communitywebsite](http://community.powerbi.com/) um Hilfe bitten oder ein [Support-Ticket](https://powerbi.microsoft.com/support/) erstellen.
+> Falls bei Ihnen ein Fehler auftritt, der hier nicht aufgelistet ist, und Ihnen Probleme verursacht, können Sie auf der [Communitywebsite](https://community.powerbi.com/) um Hilfe bitten oder ein [Support-Ticket](https://powerbi.microsoft.com/support/) erstellen.
 > 
 > 
 
@@ -38,7 +37,7 @@ Wenden Sie sich an den Besitzer des Dashboards, um sicherzustellen, dass die Dat
 
 **Benutzerdefinierte Visuals wurden durch Ihren Administrator deaktiviert.**
 
-Ihr Power BI-Administrator hat die Nutzung benutzerdefinierter Visuals für Ihre Organisation oder Ihre Sicherheitsgruppe deaktiviert. Sie können keine benutzerdefinierten Visuals von [Microsoft Marketplace](https://appsource.microsoft.com/en-us/marketplace/apps?page=1&product=power-bi-visuals) verwenden und keine privaten Visuals aus einer Datei importieren. Sie können nur die vorgegebenen Visuals verwenden.
+Ihr Power BI-Administrator hat die Nutzung benutzerdefinierter Visuals für Ihre Organisation oder Ihre Sicherheitsgruppe deaktiviert. Sie können keine benutzerdefinierten Visuals von [Microsoft Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) verwenden und keine privaten Visuals aus einer Datei importieren. Sie können nur die vorgegebenen Visuals verwenden.
 
 
 **Die Daten-Shapes müssen mindestens eine Gruppe oder Berechnung enthalten, die Daten ausgibt. Wenden Sie sich an den Besitzer des Dashboards.**
@@ -69,7 +68,7 @@ Dies ist normalerweise ein vorübergehendes Problem. Wenn Sie es später erneut 
 
 Dies kann der Fall sein, wenn das zugrunde liegende Dataset so konfiguriert ist, dass der DirectQuery-Modus oder eine Liveverbindung zu Analysis Services über ein lokales Datengateway verwendet wird. In diesem Fall zeigen die Kacheln weiterhin die ungefilterten Daten an, nachdem SSO für die Datenquelle aktiviert wurde, bis die nächste Aktualisierung der Kachel ansteht. Bei der nächsten Kachelaktualisierung verwendet Power BI SSO gemäß der Konfiguration, und die Kacheln zeigen die gefilterten Daten entsprechend der Benutzeridentität an. 
 
-Sie können eine Kachelaktualisierung auch erzwingen, wenn Sie die gefilterten Daten sofort anzeigen möchten, indem Sie die Auslassungspunkte (...) oben rechts in einem Dashboard auswählen und dann **Dashboardkacheln aktualisieren** auswählen.
+Wenn Sie die gefilterten Daten sofort anzeigen möchten, können Sie eine Kachelaktualisierung auch erzwingen, indem Sie auf **Weitere Optionen** (...) oben rechts in einem Dashboard und dann auf **Dashboardkacheln aktualisieren** klicken.
 
 Als Besitzer des Datasets können Sie auch die Aktualisierungshäufigkeit der Kachel ändern und diese auf 15 Minuten festlegen, um die Kachelaktualisierung zu beschleunigen. Wählen Sie rechts oben im Power BI-Dienst das Zahnradsymbol und dann **Einstellungen** aus. Klicken Sie auf der Seite **Einstellungen** auf die Registerkarte **Datasets**. Erweitern Sie **Geplante Cache Aktualisierung**, und ändern Sie die **Aktualisierungshäufigkeit**. Stellen Sie sicher, dass Sie die Konfiguration auf die ursprüngliche Aktualisierungshäufigkeit zurücksetzen, nachdem Power BI die nächste Kachelaktualisierung durchgeführt hat.
 
@@ -82,5 +81,5 @@ Wenn weiterhin Probleme auftreten, wenden Sie sich an den [Support](https://supp
 ## <a name="next-steps"></a>Nächste Schritte
 [Problembehandlung beim lokalen Datengateway](service-gateway-onprem-tshoot.md)  
 [Problembehandlung in Power BI Personal Gateway](service-admin-troubleshooting-power-bi-personal-gateway.md)  
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 

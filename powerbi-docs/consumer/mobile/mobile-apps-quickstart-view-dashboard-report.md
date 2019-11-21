@@ -2,19 +2,18 @@
 title: 'Schnellstart: Erkunden von Dashboards und Berichten in mobilen Apps'
 description: In dieser Schnellstartanleitung erkunden Sie ein Beispieldashboard und einen Beispielbericht in den mobilen Power BI-Apps.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 04/18/2019
 ms.author: mshenhav
-ms.openlocfilehash: 173142d9aaf2b445504028e1f7987abe21806c37
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 9af245b51fa2520dca1ccca535ec44f14360a54c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "60975866"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879278"
 ---
 # <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Schnellstart: Erkunden von Dashboards und Berichten in den mobilen Power BI-Apps
 In dieser Schnellstartanleitung erkunden Sie ein Beispieldashboard und einen Beispielbericht in den mobilen Power BI-Apps auf einem Android-Smartphone. Sie können diese Anleitung auch in anderen mobilen Apps nachvollziehen. 
@@ -35,7 +34,7 @@ Dashboards sind Portale für den Lebenszyklus und die Prozesse des Unternehmens.
 Wenn Sie noch nicht bei Power BI registriert sind, müssen Sie sich zuerst für eine [kostenlose Testversion registrieren](https://app.powerbi.com/signupredirect?pbi_source=web).
 
 ### <a name="install-the-power-bi-for-android-app"></a>Installieren der Power BI für Android-App
-[Laden Sie die Power BI für Android-App von Google Play herunter](http://go.microsoft.com/fwlink/?LinkID=544867).
+[Laden Sie die Power BI für Android-App von Google Play herunter](https://go.microsoft.com/fwlink/?LinkID=544867).
 
 Power BI funktioniert auf Android-Geräten mit dem Betriebssystem Android 5.0 oder höher. Um Ihr Gerät zu überprüfen, wechseln Sie zu **Einstellungen** > **Geräteinformationen** > **Android-Version**.
 
@@ -44,11 +43,11 @@ Der erste Schritt in dieser Schnellstartanleitung ist das Herunterladen des Beis
 
 1. Öffnen Sie den Power BI-Dienst in einem Browser (app.powerbi.com), und melden Sie sich an.
 
-1. Klicken Sie auf das globale Navigationssymbol, um den linken Navigationsbereich zu öffnen.
+1. Klicken Sie auf das globale Navigationssymbol, um den Navigationsbereich zu öffnen.
 
     ![Globales Navigationssymbol](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-global-nav-icon.png)
 
-2. Wählen Sie im linken Navigationsbereich **Arbeitsbereiche** > **Mein Arbeitsbereich** aus.
+2. Klicken Sie im Navigationsbereich auf **Arbeitsbereiche** > **Mein Arbeitsbereich**.
 
     ![Mein Arbeitsbereich](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-my-workspace.png)
 
@@ -135,7 +134,7 @@ Nachdem Sie diese Schnellstartanleitung abgeschlossen haben, können Sie das Das
 
 1. Öffnen Sie den Power BI-Dienst (app.powerbi.com), und melden Sie sich an.
 
-2. Wählen Sie im linken Navigationsbereich **Arbeitsbereiche** > **Mein Arbeitsbereich** aus.
+2. Klicken Sie im Navigationsbereich auf **Arbeitsbereiche** > **Mein Arbeitsbereich**.
 
     Sehen Sie den gelben Stern, der anzeigt, dass es sich um einen Favoriten handelt?
 

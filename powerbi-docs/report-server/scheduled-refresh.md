@@ -2,19 +2,18 @@
 title: Geplante Aktualisierung von Power BI-Berichten in Power BI-Berichtsserver
 description: Power BI-Berichte können mit verschiedenen Datenquellen verbunden sein. Je nach Verwendung der Daten sind verschiedene Datenquellen verfügbar.
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: mblythe
-ms.openlocfilehash: ca2c37a93652bf0f622c7154fe8438faf4c70ac1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ede44316d9dd188787381b26ee3352af13775c0f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66051022"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874012"
 ---
 # <a name="power-bi-report-scheduled-refresh-in-power-bi-report-server"></a>Geplante Aktualisierung von Power BI-Berichten in Power BI-Berichtsserver
 Durch die geplante Aktualisierung für Power BI-Berichte wird sichergestellt, dass die Daten für einen Bericht auf dem neuesten Stand bleiben.
@@ -34,7 +33,7 @@ Beim Verwenden der geplanten Aktualisierung für Ihre Power BI-Berichte werden v
 * Das Datenmodell wird in einer Analysis Services-Instanz geladen.
 * Für einige Datenquellen wird das Power Query-Mashup-Engine verwendet, um eine Verbindung mit Datenquellen herzustellen und um die Daten zu transformieren. Die Verbindung mit anderen Datenquellen kann direkt aus einem Analysis Services-Dienst hergestellt werden, der die Datenmodelle für Power BI-Berichtsserver hostet.
 * Neue Daten werden in das Datenmodell in Analysis Services geladen.
-* In einer Konfiguration für horizontales Skalieren kann das Datenmodell über Knoten hinweg repliziert werden.
+* In einer Konfiguration mit horizontaler Skalierung kann das Datenmodell knotenübergreifend repliziert werden.
 * Analysis Services verarbeitet die Daten und führt alle erforderlichen Berechnungen aus.
 
 Power BI-Berichtsserver verwaltet eine Ereigniswarteschlange für alle geplanten Vorgänge. Dabei wird die Warteschlange in regelmäßigen Abständen nach neuen Ereignissen abgefragt. In der Standardeinstellung wird die Warteschlange alle 10 Sekunden überprüft. Sie können das Intervall ändern, indem Sie die Konfigurationseinstellungen **PollingInterval**, **IsNotificationService** und **IsEventService** in der Konfigurationsdatei „RSReportServer.config“ bearbeiten. Mit **IsDataModelRefreshService** kann zudem festgelegt werden, ob ein Berichtsserver geplante Ereignisse verarbeitet.

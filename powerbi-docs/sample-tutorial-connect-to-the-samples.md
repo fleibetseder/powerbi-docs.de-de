@@ -2,7 +2,6 @@
 title: Herstellen einer Verbindung mit Beispielen im Power BI-Dienst
 description: Erfahren Sie, wie Sie Beispiele im Power BI-Dienst installieren und durchsuchen.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 3577c19342d9f2dc5b0e3ab9908f47f82430e6db
-ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
+ms.openlocfilehash: 90136f39d9f2a8e330748b56d6302bb75d2a31fe
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68391513"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873846"
 ---
 #  <a name="connect-to-the-samples-in-the-power-bi-service"></a>Herstellen einer Verbindung mit Beispielen im Power BI-Dienst
 
@@ -38,7 +37,7 @@ Um sich mit diesem bestimmten Inhaltspaket und dessen Szenario vertraut zu mache
 
     Wenn Sie nicht über eine Power BI Pro-Lizenz verfügen, können Sie das Beispiel in Ihrem Arbeitsbereich speichern.
 
-2. Wählen Sie unten im linken Navigationsbereich **Daten abrufen** aus. 
+2. Wählen Sie unten im Navigationsbereich **Daten abrufen** aus. 
 
    ![„Daten abrufen“ auswählen](media/sample-datasets/power-bi-get-data.png)
 
@@ -91,7 +90,7 @@ Untersuchen Sie jetzt selbstständig das Dashboard, das Dataset und den Bericht.
      
    ![Vollständig neuer Bericht](media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
 
-1. Eine weitere Möglichkeit zum Erkunden des Datasets besteht darin, [Quick Insights](consumer/end-user-insights.md) (Schnelleinblicke) auszuführen. Wählen Sie die Auslassungspunkte (...) aus, und wählen Sie dann **Schnelle Einblicke gewinnen** aus. Wenn die Einblicke bereit sind, wählen Sie **Einblicke anzeigen** aus.
+1. Eine weitere Möglichkeit zum Erkunden des Datasets besteht darin, [Quick Insights](consumer/end-user-insights.md) (Schnelleinblicke) auszuführen. Wählen Sie **Weitere Optionen** (...) und dann **Schnelle Einblicke gewinnen** aus. Wenn die Einblicke bereit sind, wählen Sie **Einblicke anzeigen** aus.
      
     ![Bericht zu Erkenntnissen](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 
@@ -100,7 +99,7 @@ Wenn Sie die PBIX-Beispieldatei zum ersten Mal in Power BI Desktop öffnen, wird
 
 Anders als Bearbeiten eines Berichts im Power BI-Dienst können Sie in Power BI Desktop auch mit Abfragen arbeiten und Daten modellieren, sodass Sie sicherstellen können, dass die Daten in Ihren Berichten optimale Einblicke bieten. Sie können die Power BI Desktop-Datei dann jederzeit entweder auf Ihrem lokalen Laufwerk oder in der Cloud speichern.
 
-1. Laden Sie die [PBIX-Datei mit dem Analysebeispiel für den Einzelhandel](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) herunter, und öffnen Sie die Datei in Power BI Desktop. 
+1. Laden Sie die [PBIX-Datei mit dem Analysebeispiel für den Einzelhandel](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) herunter, und öffnen Sie die Datei in Power BI Desktop. 
 
     ![Beispiel in der Berichtsansicht von Power BI](media/sample-tutorial-connect-to-the-samples/power-bi-samples-desktop.png)
 
@@ -138,4 +137,4 @@ Weitere Informationen finden Sie unter:
 - [Welche Beispieldaten sind für die Verwendung mit Power BI verfügbar?](sample-datasets.md)
 - [Datenquellen für Power BI](service-get-data.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

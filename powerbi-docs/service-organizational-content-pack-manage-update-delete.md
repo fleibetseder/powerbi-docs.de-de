@@ -2,7 +2,6 @@
 title: 'Organisationsinhaltspakete: Verwalten und aktualisieren'
 description: Erfahren Sie, wie Sie organisationsbezogene Inhaltspakete in Power BI verwalten, aktualisieren und löschen.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 86b7a5e93183c06d6cac1445cb1702edde5d4bc9
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 975c219a98f3d03f59df4d1c2a0551718bf213f0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020589"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881270"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Verwalten, Aktualisieren und Löschen von organisationsbezogenen Inhaltspaketen
 > [!NOTE]
@@ -71,14 +70,14 @@ Eine weitere Änderung, die Ersteller von Inhaltspaketen vornehmen können, ist 
 Als Ersteller des Inhaltspakets können Sie eine [Aktualisierung des Datasets planen](refresh-data.md).  Beim Erstellen und Hochladen des Inhaltspakets wird der Aktualisierungszeitplan mit den Datasets hochgeladen. Wenn Sie den Aktualisierungszeitplan ändern, müssen Sie das Inhaltspaket erneut veröffentlichen (siehe oben).
 
 ## <a name="delete-an-organizational-content-pack-from-appsource"></a>Löschen eines organisationsbezogenen Inhaltspakets aus AppSource
-Sie können ein Inhaltspaket nur dann aus AppSource löschen, wenn Sie es erstellt haben. Wenn Sie ein Organisationsinhaltspaket in einem App-Arbeitsbereich erstellt haben und diesen Arbeitsbereich dann löschen, achten Sie darauf, dass Sie das Inhaltspaket als Erstes löschen. Wenn Sie den Arbeitsbereich löschen, ohne vorher das Inhaltspaket gelöscht zu haben, haben Sie keinen Zugriff mehr auf das Inhaltspaket und müssen sich für Hilfe an den Microsoft Support wenden. 
+Sie können ein Inhaltspaket nur dann aus AppSource löschen, wenn Sie es erstellt haben. Wenn Sie ein Organisationsinhaltspaket in einem Arbeitsbereich erstellt haben und diesen Arbeitsbereich dann löschen, achten Sie darauf, dass Sie das Inhaltspaket als Erstes löschen. Wenn Sie den Arbeitsbereich löschen, ohne vorher das Inhaltspaket gelöscht zu haben, haben Sie keinen Zugriff mehr auf das Inhaltspaket und müssen sich für Hilfe an den Microsoft Support wenden. 
 
 > [!TIP]
 > Sie können [Ihre Verbindung mit einem Inhaltspaket trennen](service-organizational-content-pack-disconnect.md), das Sie nicht erstellt haben. Dadurch wird das Inhaltspaket nicht aus AppSource gelöscht.
 > 
 > 
 
-1. Wenn Sie ein Inhaltspaket aus AppSource löschen möchten, wechseln Sie in den App-Arbeitsbereich, in dem Sie das Inhaltspaket erstellt haben, wählen Sie das Zahnradsymbol ![](media/service-organizational-content-pack-manage-update-delete/cog.png) und die Option **Inhaltspakete anzeigen** aus.
+1. Wenn Sie ein Inhaltspaket aus AppSource löschen möchten, wechseln Sie in den Arbeitsbereich, in dem Sie das Inhaltspaket erstellt haben, wählen Sie das Zahnradsymbol ![](media/service-organizational-content-pack-manage-update-delete/cog.png) und die Option **Inhaltspakete anzeigen** aus.
 2. Wählen Sie **Löschen \> Löschen** aus. 
    
    * Für Mitglieder, die das Inhaltspaket nicht angepasst haben, werden das Dashboard und die dem Inhaltspaket zugeordneten Berichte automatisch entfernt. Sie sind nicht mehr verfügbar, und das Inhaltspaket wird im Navigationsbereich nicht angezeigt.
@@ -87,5 +86,5 @@ Sie können ein Inhaltspaket nur dann aus AppSource löschen, wenn Sie es erstel
 ## <a name="next-steps"></a>Nächste Schritte
 * [Einführung in organisationsbezogene Inhaltspakete](service-organizational-content-pack-introduction.md)
 * [Erstellen und Verteilen einer App in Power BI](service-create-distribute-apps.md) 
-* Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+* Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 

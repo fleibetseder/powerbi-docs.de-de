@@ -2,20 +2,19 @@
 title: Anzeigen der Daten, die zum Erstellen der Power BI-Visualisierung verwendet wurden
 description: In diesem Dokument wird erläutert, wie Sie die zum Erstellen eines Visuals in Power BI verwendeten Daten anzeigen und diese Daten in eine CSV-Datei exportieren.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/26/2018
+ms.date: 11/4/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0ffb0a2e7bee17d71ca2037c8a233c2443ff1120
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 5417511b12c85cb467c3613671a1e101541c9609
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61389500"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880616"
 ---
 # <a name="show-the-data-that-was-used-to-create-the-visualization"></a>Anzeigen der Daten, die zum Erstellen der Visualisierung verwendet wurden
 ## <a name="show-data"></a>Daten anzeigen
@@ -28,17 +27,20 @@ Sie können die Daten, mit denen die Visualisierung erstellt wurde, auch als XLS
 > 
 > 
 
-## <a name="using-show-data-in-power-bi-service"></a>Verwenden von *Daten anzeigen* im Power BI-Dienst
-1. Öffnen Sie im Power BI-Dienst einen Bericht in der [Leseansicht oder der Bearbeitungsansicht](../service-interact-with-a-report-in-editing-view.md), und wählen Sie ein Visual aus.  Öffnen Sie in Power BI Desktop die Berichtsansicht.
-2. Wählen Sie zum Anzeigen der für das Visual verwendeten Daten **Durchsuchen** > **Daten anzeigen**.
-   
-   ![Daten anzeigen auswählen](media/service-reports-show-data/power-bi-show-data.png)
+## <a name="using-show-data"></a>Verwenden *Daten anzeigen* 
+1. Wählen Sie in Power BI Desktop eine Visualisierung aus, um sie zu aktivieren.
+
+2. Wählen Sie die Auslassungspunkte (...) für **Weitere Aktionen** und **Daten anzeigen** aus. 
+    ![Anzeigeoption für „Daten anzeigen“](media/service-reports-show-data/power-bi-more-action.png)
+
+
 3. Standardmäßig werden die Daten unter der Visualisierung angezeigt.
    
-   ![Vertikale Anzeige des Visuals und der Daten](media/service-reports-show-data/power-bi-explore-show-data.png)
-4. Wählen Sie zum Ändern der Ausrichtung rechts oben in der Visualisierung das vertikale Layout ![](media/service-reports-show-data/power-bi-vertical-icon-new.png) aus.
+   ![Vertikale Anzeige des Visuals und der Daten](media/service-reports-show-data/power-bi-show-data-below.png)
+
+4. Wählen Sie zum Ändern der Ausrichtung das vertikale Layout ![kleiner Screenshot des Symbols zum Wechseln zum vertikalen Layout](media/service-reports-show-data/power-bi-vertical-icon-new.png) in der rechten oberen Ecke der Visualisierung aus.
    
-   ![Horizontale Anzeige des Visuals und der Daten](media/service-reports-show-data/power-bi-explore-show-data2.png)
+   ![Horizontale Anzeige des Visuals und der Daten](media/service-reports-show-data/power-bi-show-data-side.png)
 5. Wählen Sie zum Exportieren der Daten in eine CSV-Datei die Auslassungspunkte und anschließend **Daten exportieren** aus.
    
     ![„Daten exportieren“ auswählen](media/service-reports-show-data/power-bi-export-data-new.png)
@@ -46,9 +48,30 @@ Sie können die Daten, mit denen die Visualisierung erstellt wurde, auch als XLS
     Weitere Informationen zum Exportieren der Daten in Excel finden Sie unter [Exportieren von Daten aus Power BI-Visualisierungen](power-bi-visualization-export-data.md).
 6. Wenn die Daten ausgeblendet werden sollen, deaktivieren Sie **Durchsuchen** > **Daten anzeigen**.
 
+## <a name="using-show-records"></a>Verwenden von „Datensätzen anzeigen“
+Sie können den Fokus auch auf einen Datensatz einer Visualisierung legen und die zugrunde liegenden Daten genauer betrachten. 
+
+1. Wählen Sie für die Verwendung von **Datensätze anzeigen** eine Visualisierung aus, um sie zu aktivieren. 
+
+2. Wählen Sie im Menüband „Desktop“ die Registerkarte **Visual Tools** > **Daten/Drill** > **Datensätze anzeigen** aus. 
+
+    ![Screenshot mit ausgewählter Option „Datensätze anzeigen“](media/service-reports-show-data/power-bi-see-record.png)
+
+3. Wählen Sie einen Datenpunkt oder eine Zeile in der Visualisierung aus. In diesem Beispiel wurde die vierte Spalte von links ausgewählt. Power BI zeigt den Datasetdatensatz für diesen Datenpunkt an.
+
+    ![Screenshot eines einzelnen Datensatzes aus dem Dataset](media/service-reports-show-data/power-bi-row.png)
+
+4. Wählen Sie **Zurück zum Bericht** aus, um zur Canvas des Desktopberichts zurückzukehren. 
+
+## <a name="considerations-and-troubleshooting"></a>Zu beachtende Aspekte und Problembehandlung
+
+- Wenn die Schaltfläche **Datensätze anzeigen** im Menüband deaktiviert und ausgegraut ist, bedeutet dies, dass die ausgewählte Visualisierung die Option „Datensätze anzeigen“ nicht unterstützt.
+- Sie können die Daten in der Ansicht „Datensätze anzeigen“ nicht ändern und wieder im Bericht speichern.
+- Wenn die Visualisierung ein berechnetes Measure beinhaltet, können Sie „Datensätze anzeigen“ nicht verwenden.
+- Sie können „Datensätze anzeigen“ nicht verwenden, wenn Sie mit einem aktiven mehrdimensionalen Modell (MD-Modell) verbunden sind.  
+
 ## <a name="next-steps"></a>Nächste Schritte
 [Exportieren von Daten aus Power BI-Visualisierungen](power-bi-visualization-export-data.md)    
-[Visualisierungen in Power BI-Berichten](power-bi-report-visualizations.md)    
-[Power BI-Berichte](../consumer/end-user-reports.md)    
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 

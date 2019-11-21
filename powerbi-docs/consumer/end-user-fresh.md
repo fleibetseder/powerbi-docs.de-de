@@ -2,7 +2,6 @@
 title: Vorgehensweise von Power BI zur Sicherstellung der Aktualität Ihrer Inhalte
 description: Erfahren Sie, wie Power BI sicherstellt, dass Sie mit der neuesten Version der Daten, des Berichts, des Dashboards und der App arbeiten.
 author: mihart
-manager: kvivek
 ms.service: powerbi
 ms.custom: ''
 ms.subservice: powerbi-consumer
@@ -10,14 +9,17 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 46f9d40b5e556c0d306aa77243a49835fca9d812
-ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.openlocfilehash: 92f031ff43bc4d3bd5840e69fec166606b14eb73
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71141820"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73863887"
 ---
 # <a name="your-content-is-up-to-date"></a>Aktualität Ihrer Inhalte
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Als *Benutzer* interagieren Sie mit Inhalten, die von *Designern* erstellt und für Sie freigegeben werden. Sie fragen sich möglicherweise, ob diese Inhalte aktuell sind, oder Sie möchten einfach nur wissen, wann die Inhalte zuletzt aktualisiert wurden. Zu wissen, dass Sie mit den aktuellsten Inhalten arbeiten, gibt Ihnen Vertrauen.  
  
 ![Power BI-Dashboard](media/end-user-fresh/power-bi-dashboards.png)
@@ -40,9 +42,9 @@ Der Name des Besitzers ist in der Titelleiste von Dashboards und Berichten aufge
 
 Auf dem App-Bildschirm werden Ihnen sowohl der Name des Designers als auch das Datum der letzten Aktualisierung der App angezeigt.  
 
-1. Klicken Sie im linken Navigationsbereich auf **Apps**.
+1. Klicken Sie im Navigationsbereich auf **Apps**.
 
-    ![Linker Navigationsbereich](media/end-user-fresh/power-bi-nav-app.png)
+    ![Navigationsbereich](media/end-user-fresh/power-bi-nav-app.png)
 
 
 
@@ -63,7 +65,7 @@ Wenn Sie möchten, können Sie für die meisten Inhalte das Datum der letzten Ak
 ### <a name="dashboard-tiles"></a>Dashboardkacheln
 Zeigen Sie bei Dashboardkacheln die Kachel im Fokusmodus an, um den Zeitstempel der letzten Aktualisierung anzuzeigen.
 
-1. Klicken Sie auf einer Dashboardkachel auf die Auslassungspunkte (...), und wählen Sie **Im Fokusmodus öffnen** aus.
+1. Klicken Sie auf einer Dashboardkachel auf **Weitere Optionen** (...) und dann auf **Open in Focus mode** (Im Fokusmodus öffnen).
 
     ![Menü, das angezeigt wird, nachdem die Auslassungspunkte ausgewählt wurden](media/end-user-fresh/power-bi-focus-mode.png)
 
@@ -72,7 +74,7 @@ Zeigen Sie bei Dashboardkacheln die Kachel im Fokusmodus an, um den Zeitstempel 
     ![breiter Browser, in dem das Datum der letzten Aktualisierung angezeigt wird](media/end-user-fresh/power-bi-last-refresh2.png)
 
 ### <a name="dashboards-and-reports"></a>Dashboards und Berichte
-Als weitere Möglichkeit können Sie das Datum der letzten Aktualisierung mithilfe von **Verwandte Inhalte anzeigen** nachschlagen.  **Verwandte Inhalte anzeigen** finden Sie durch Auswählen der Auslassungspunkte (...) in der oberen Menüleiste von Power BI.
+Als weitere Möglichkeit können Sie das Datum der letzten Aktualisierung mithilfe von **Verwandte Inhalte anzeigen** nachschlagen.  Sie können die Option **View related** (Verwandte Inhalte anzeigen) verwenden, indem Sie in der oberen Menüleiste von Power BI auf **Weitere Optionen** (...) klicken.
 
 ![Auswählen von „Verwandte Inhalte anzeigen“ im Menü](media/end-user-fresh/power-bi-view-related-dropdown.png)
 

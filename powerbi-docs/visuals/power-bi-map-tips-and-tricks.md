@@ -2,21 +2,20 @@
 title: Tipps und Tricks für Zuordnungen (einschließlich der Integration von Bing Maps)
 description: 'Tipps und Tricks für Power BI-Kartenvisualisierungen, Visuals, Standorte, Längen- und Breitengrad und deren Funktionsweise mit Bing Maps. '
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ajTPGNpthcg
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/26/2019
+ms.date: 10/30/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5ae83079ae0dffca42498644f4de628bc626bb5e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: dd35f06a685d1fd4620ef6a2ee3dc7f90e702a6a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61411845"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881037"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Tipps und Tricks für Power BI-Kartenvisualisierungen
 Power BI arbeitet mit Bing Maps zusammen, um Standardkartenkoordinaten bereitzustellen (ein Prozess, der als Geocodierung bezeichnet wird), sodass Sie Karten erstellen können. Beide identifizieren mit Algorithmen den richtigen Standort, manchmal ist es jedoch lediglich eine bestmögliche Schätzung. Wenn Power BI allein keine eigene Kartenvisualisierung erstellen kann, wird auf Bing Maps zurückgegriffen. 
@@ -26,12 +25,13 @@ Sie oder der Administrator müssen möglicherweise die Firewall aktualisieren, u
 * https://platform.bing.com/geo/spatial/v1/public/Geodata
 * https://www.bing.com/api/maps/mapcontrol
 
-Befolgen Sie die nachstehenden Tipps, um die Wahrscheinlichkeit einer korrekten Geocodierung zu erhöhen. Orientieren Sie sich an der ersten Gruppe von Tipps, wenn Sie auf das Dataset selbst zugreifen können. Die zweite Gruppe von Tipps betrifft Aktionen, die Sie in Power BI ausführen können, wenn Sie keinen Zugriff auf das Dataset haben. Und die letzte Gruppe ist eine Liste mit URLs.
+Befolgen Sie die nachstehenden Tipps, um die Wahrscheinlichkeit einer korrekten Geocodierung zu erhöhen. Orientieren Sie sich an der ersten Gruppe von Tipps, wenn Sie auf das Dataset selbst zugreifen können. Die zweite Gruppe von Tipps betrifft Aktionen, die Sie in Power BI ausführen können, wenn Sie keinen Zugriff auf das Dataset haben. 
 
 ## <a name="what-is-sent-to-bing-maps"></a>An Bing Maps gesendete Informationen
 Der Power BI-Dienst und Power BI Desktop senden die Geodaten an Bing, die Bing zum Erstellen der Kartenvisualisierung benötigt. Dies kann die Daten in den Buckets **Standort**, **Breitengrad** und **Längengrad** sowie geografische Felder in jedem der Buckets **Berichtsstufenfilter**, **Filter auf Seitenebene** oder **Filter auf visueller Ebene** umfassen. Welche Daten genau gesendet werden, variiert je nach Kartentyp. Weitere Informationen finden Sie in der [Bing Maps-Datenschutzerklärung](https://go.microsoft.com/fwlink/?LinkID=248686).
 
-* Für Karten (Blasendiagrammkarten) werden keine Daten an Bing gesendet, wenn Breiten- und Längengrad angegeben werden. Andernfalls werden alle Daten im Bucket **Standort** und in den Filterbuckets an Bing gesendet.     
+* Für Karten (Blasen-, Streu- und Punktdiagrammkarten) werden keine Daten an Bing gesendet, wenn Breiten- und Längengrad angegeben werden. Andernfalls werden alle Daten im Bucket **Standort** und in den Filterbuckets an Bing gesendet.     
+
 * Flächenkartogramme erfordern ein Feld im Bucket **Standort**, auch wenn Breiten- und Längengrad angegeben werden. Alle Daten in den Buckets **Standort**, **Breitengrad** und **Längengrad** werden an Bing gesendet.
   
     Im folgenden Beispiel wird das Feld **Vendor** für Geocodierung verwendet, somit werden alle Lieferantendaten an Bing gesendet. Daten aus den Bucktes **Größe** und **Farbsättigung** werden nicht an Bing gesendet.
@@ -47,7 +47,7 @@ Wenn Sie Zugriff auf das Dataset haben, das zum Erstellen der Kartenvisualisieru
 
 **1. Kategorisieren von geografischen Feldern in Power BI Desktop**
 
-In Power BI Desktop können Sie sicherstellen, dass Felder richtig geocodiert sind, indem Sie die *Datenkategorie* der Datenfelder festlegen. Wählen Sie die gewünschte Tabelle aus, wechseln Sie zum Menüband **Erweitert**, und legen Sie dann die **Datenkategorie** auf **Adresse**, **Ort**, **Kontinent**, **Land/Region**, **Landkreis**, **Postleitzahl**, **Bundesland** oder **Kanton** fest. Diese Datentypkategorien helfen Bing, das Datum richtig zu codieren. Weitere Informationen finden Sie unter [Datenkategorisierung in Power BI Desktop](../desktop-data-categorization.md). Wenn Sie eine Liveverbindung mit SQL Server Analysis Services herstellen, müssen Sie die Kategorisierung von Daten außerhalb von Power BI mit [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) festlegen.
+In Power BI Desktop können Sie sicherstellen, dass Felder richtig geocodiert sind, indem Sie die *Datenkategorie* der Datenfelder festlegen. Wählen Sie in der Datenansicht die gewünschte Spalte aus. Wählen Sie über das Menüband die Registerkarte **Modellierung** aus, und legen Sie dann die **Datenkategorie** auf **Adresse**, **Ort**, **Kontinent**, **Land/Region**, **Landkreis**, **Postleitzahl**, **Bundesland** oder **Kanton** fest. Diese Datentypkategorien helfen Bing, das Datum richtig zu codieren. Weitere Informationen finden Sie unter [Datenkategorisierung in Power BI Desktop](../desktop-data-categorization.md). Wenn Sie eine Liveverbindung mit SQL Server Analysis Services herstellen, müssen Sie die Kategorisierung von Daten außerhalb von Power BI mit [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) festlegen.
 
 **2. Verwenden mehrerer Standortspalten**    
  Manchmal reicht es trotz Einstellen der Datenkategorien für die Zuordnung nicht aus, dass Bing Ihre Absichten richtig errät. Einige Bezeichnungen sind mehrdeutig, wenn der Ort in mehreren Ländern oder Regionen vorhanden ist. So gibt es beispielsweise ***Southampton*** in England sowie in den Bundesstaaten Pennsylvania und New York.
@@ -56,7 +56,7 @@ In Power BI wird Bings [Vorlagendienst für unstrukturierte URLs](https://msdn.m
 
  Wenn z.B. nur eine Spalte für „Ort“ vorhanden ist, ist die Geocodierung für Bing möglicherweise schwierig auszuführen. Fügen Sie weitere Geospalten hinzu, um den Standort eindeutig festzulegen.  Manchmal muss dem Dataset lediglich eine weitere Standortspalte hinzugefügt werden, in diesem Fall „Bundesland/Kanton“. Und vergessen Sie nicht die ordnungsgemäße Kategorisierung der Spalte, siehe Punkt 1 weiter oben.
 
-Stellen Sie sicher, dass jedes Feld nur die spezifischen Informationen für die Kategorisierung enthält.  Beispielsweise sollte das Standortfeld „Ort“ **Southampton** lauten, nicht **Southampton, New York**.  Adressfelder für den Standort sollten ebenfalls **1 Microsoft Way** und nicht **1 Microsoft Way, Redmond, WA** lauten.
+Stellen Sie sicher, dass jedes Feld nur über eine einzelne Speicherortkategorie verfügt. Beispielsweise sollte das Standortfeld „Ort“ **Southampton** lauten, nicht **Southampton, New York**.  Adressfelder für den Standort sollten ebenfalls **1 Microsoft Way** und nicht **1 Microsoft Way, Redmond, WA** lauten.
 
 **3. Verwenden Sie bestimmte Breiten- und Längengrade**
 
@@ -84,14 +84,14 @@ Wenn das Dataset bereits verschiedene Ebenen von Standortdaten aufweist, können
 
 Beim Drilling in geografischen Hierarchien müssen Sie wissen, wie die einzelnen Drillschaltflächen funktionieren und welche Informationen an Bing Maps gesendet werden. 
 
-* Mit der Drillschaltfläche ganz rechts (Drillmodus ![](media/power-bi-map-tips-and-tricks/power-bi-drill-down.png)) können Sie einen Kartenstandort auswählen und Ebene für Ebene einen Drilldown zu diesem Standort ausführen. Wenn Sie z.B. Drilldown aktivieren und auf Nordamerika klicken, gehen Sie in der Hierarchie nach unten weiter zur nächsten Ebene, den Bundesstaaten in Nordamerika. Für die Geocodierung sendet Power BI nur Daten zu Ländern und Bundesstaaten in Nordamerika an Bing Maps.  
-* Auf der linken Seite stehen zwei weitere Drilloptionen zur Verfügung. Mit der ersten Option ![](media/power-bi-map-tips-and-tricks/power-bi-drill-down2.png) wird ein Drillvorgang zur nächsten Ebene in der Hierarchie für alle Standorte gleichzeitig durchgeführt. Wenn Sie z.B. gerade Länder betrachten und mit dieser Option zur nächsten Ebene (Staaten) wechseln, zeigt Power BI Daten zu Bundesstaaten für alle Länder an. Für die Geocodierung sendet Power BI für alle Standorte Daten zum Bundesstaat (nicht zum Land) an Bing Maps. Diese Option ist nützlich, wenn die einzelnen Ebenen in der Hierarchie keine Beziehung zur Ebene darüber haben. 
+* Mit der Drillschaltfläche ganz rechts, ![Symbol „Drillmodus“,](media/power-bi-map-tips-and-tricks/power-bi-drill-down.png) können Sie einen Kartenstandort auswählen und Ebene für Ebene einen Drilldown zu diesem Standort ausführen. Wenn Sie z.B. Drilldown aktivieren und auf Nordamerika klicken, gehen Sie in der Hierarchie nach unten weiter zur nächsten Ebene, den Bundesstaaten in Nordamerika. Für die Geocodierung sendet Power BI nur Daten zu Ländern und Bundesstaaten in Nordamerika an Bing Maps.  
+* Auf der linken Seite stehen zwei weitere Drilloptionen zur Verfügung. Mit der ersten Option, ![Symbol für ersten Drillvorgang,](media/power-bi-map-tips-and-tricks/power-bi-drill-down2.png) wird ein Drillvorgang zur nächsten Ebene in der Hierarchie für alle Standorte gleichzeitig durchgeführt. Wenn Sie z.B. gerade Länder betrachten und mit dieser Option zur nächsten Ebene (Staaten) wechseln, zeigt Power BI Daten zu Bundesstaaten für alle Länder an. Für die Geocodierung sendet Power BI für alle Standorte Daten zum Bundesstaat (nicht zum Land) an Bing Maps. Diese Option ist nützlich, wenn die einzelnen Ebenen in der Hierarchie keine Beziehung zur Ebene darüber haben. 
 * Die zweite Option ![Drilldown mit Karten](./media/power-bi-map-tips-and-tricks/power-bi-drill-down3.png) ähnelt einem Drilldown, mit dem Unterschied, dass Sie nicht auf die Karte klicken müssen.  Die Ansicht wird nach unten zur nächsten Ebene der Hierarchie erweitert, wobei der Kontext der aktuellen Ebene gespeichert wird. Wenn Sie z.B. gerade Länder betrachten und dieses Symbol auswählen, navigieren Sie in der Hierarchie nach unten auf die nächste Ebene, die Bundesstaaten. Für die Geocodierung sendet Power BI Daten für jeden Bundesstaat und das entsprechende Land, damit die Geocodierung in Bing Maps genauer erfolgen kann. Bei den meisten Karten verwenden Sie diese Option oder die Option „Drilldown“ ganz rechts, damit Sie so viele Informationen wie möglich an Bing senden und genaue Standortinformationen abrufen können. 
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Drilldown in einer Visualisierung in Power BI](../consumer/end-user-drill.md)
 
-[Power Bi-Visualisierung](power-bi-report-visualizations.md)
+[Power Bi-Visualisierungen](power-bi-report-visualizations.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 

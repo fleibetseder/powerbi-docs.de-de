@@ -2,7 +2,6 @@
 title: Dataflows in Power BI
 description: Erfahren Sie mehr über die Funktionsweise von Dataflows in Power BI.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/01/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 55571cda4558b5dd9ba28f757f6e11ad4b45f939
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 28be15b1f62f410c14faaa5d3e8c36060596c466
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61136373"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872610"
 ---
 # <a name="self-service-data-prep-in-power-bi"></a>Self-Service-Datenaufbereitung in Power BI
 
@@ -25,7 +24,7 @@ Mit dem stets wachsenden Datenvolumen wächst auch die Herausforderung, diese Da
 
 Power BI führt **Dataflows** ein, um Organisationen dabei zu unterstützen, Daten aus unterschiedlichen Quellen zu vereinheitlichen und zum Modellieren aufbereiten. Analysten können mit vertrauten Self-Service-Tools ganz einfach Dataflows erstellen. Dataflows werden zum Erfassen, Transformieren, Integrieren und Anreichern von Big Data verwendet, indem unter anderem Datenquellenverbindungen, ETL-Logik und Aktualisierungspläne definiert werden. Darüber hinaus gestaltet die neue modellgesteuerte Berechnungs-Engine, die zum Funktionsumfang eines Dataflows gehört, die Datenaufbereitung verwaltbar, deterministischer und unkomplizierter für Datenanalysten und Berichtsersteller. Ähnlich wie Tabellenkalkulationen Neuberechnungen für alle betroffenen Formeln verarbeiten, verwalten Dataflows Änderungen für Entitäten oder Datenelemente in Ihrem Namen, automatisieren Updates und erleichtern einst schwierige und zeitaufwändige Logikprüfungen für eine einfache Datenaktualisierung. Mit Dataflows können Aufgaben, die früher von Data Scientists überwacht werden mussten – und mehrere Stunden oder Tage dauerten – nun mit wenigen Klicks von Analysten und Berichtserstellern erledigt werden. 
 
-Daten werden als Entitäten im [**Common Data Model**](https://docs.microsoft.com/powerapps/common-data-model/overview) in Azure Data Lake Storage Gen2 gespeichert. Dataflows werden in App-Arbeitsbereichen mithilfe des Power BI-Diensts erstellt und verwaltet.  
+Daten werden als Entitäten im [**Common Data Model**](https://docs.microsoft.com/powerapps/common-data-model/overview) in Azure Data Lake Storage Gen2 gespeichert. Dataflows werden in Arbeitsbereichen mithilfe des Power BI-Diensts erstellt und verwaltet.  
  
 **Dataflows** wurden zum Verwenden des **Common Data Model** konzipiert. Dabei handelt es sich um eine standardisierte, modulare und erweiterbare Sammlung von Datenschemas, die von Microsoft veröffentlicht wurde und darauf ausgelegt ist, das Erstellen, Verwenden und Analysieren von Daten zu vereinfachen. Mit diesem Modell können Sie schnell und einfach von Datenquellen zu Power BI-Dashboards wechseln.
 

@@ -2,19 +2,18 @@
 title: Beispiele für Vorlagen-Apps
 description: Beispiele für die persönliche Verwendung oder Weiterverteilung als AppSource-Power BI-App
 author: teddybercovitz
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 10/31/2019
 ms.author: tebercov
-ms.openlocfilehash: dad2bbbcd2d5b6d709ffe5c98020e4ee8791cadf
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 1429221684e706b2db10790f26fe9765e0e9fe86
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70904721"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871301"
 ---
 # <a name="template-apps-samples"></a>Beispiele für Vorlagen-Apps
 
@@ -28,13 +27,13 @@ Die Beispiele erfordern möglicherweise zusätzliche Benutzerkonten mit dem rele
 
 * [Github](https://templateapps.blob.core.windows.net/sampletemplateapps/GitHub.pbix)
 * [Mailchimp](https://templateapps.blob.core.windows.net/sampletemplateapps/MailChimp.pbix)
-* [JIRA](https://templateapps.blob.core.windows.net/sampletemplateapps/JIRA.pbix)
 * [QuickBooks Online](https://templateapps.blob.core.windows.net/sampletemplateapps/QuickBooksOnline.pbix)
 * [Google Analytics](https://templateapps.blob.core.windows.net/sampletemplateapps/GoogleAnalytics.pbix)
 * [Salesforce Sales Manager](https://templateapps.blob.core.windows.net/sampletemplateapps/SalesforceSalesManager.pbix)
 * [Salesforce Sales Rep](https://templateapps.blob.core.windows.net/sampletemplateapps/SalesforceSalesRep.pbix)
 * [Smartsheet](https://templateapps.blob.core.windows.net/sampletemplateapps/Smartsheet.pbix)
 * [Zendesk](https://templateapps.blob.core.windows.net/sampletemplateapps/Zendesk.pbix)
+* [Marketo](https://templateapps.blob.core.windows.net/sampletemplateapps/Marketo.pbix)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

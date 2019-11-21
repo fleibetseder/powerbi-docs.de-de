@@ -3,25 +3,24 @@ title: Aktualisieren von Power BI-Berichtsserver
 description: Erfahren Sie, wie Power BI-Berichtsserver aktualisiert wird.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 09/05/2017
-ms.openlocfilehash: 52863ea4bd666547a9c63b3add1d2d9c0626adc7
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: eac019bc31396359b7520e057f2384adce386a96
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839697"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873955"
 ---
 # <a name="upgrade-power-bi-report-server"></a>Aktualisieren von Power BI-Berichtsserver
 
 Erfahren Sie, wie Power BI-Berichtsserver aktualisiert wird.
 
- **Herunterladen** ![herunterladen](media/upgrade/download.png "herunterladen")
+ **Download** ![herunterladen](media/upgrade/download.png "Herunterladen")
 
 Um Power BI-Berichtsserver und Power BI Desktop mit Optimierung für Power BI-Berichtsserver herunterzuladen, navigieren Sie zu [Lokale Berichterstellung mit Power BI-Berichtsserver](https://powerbi.microsoft.com/report-server/).
 
@@ -63,11 +62,11 @@ Das Aktualisieren des Power BI-Berichtsservers ist einfach. Zum Installieren der
 
 2. Wählen Sie **Upgrade von Power BI-Berichtsserver ausführen** aus.
 
-    ![Power BI-Berichtsserver aktualisieren](media/upgrade/reportserver-upgrade1.png "Power BI-Berichtsserver aktualisieren")
+    ![Upgrade von Power BI-Berichtsserver](media/upgrade/reportserver-upgrade1.png "Power BI-Berichtsserver aktualisieren")
 
 3. Lesen Sie die Lizenzbedingungen, stimmen Sie ihnen zu, und wählen Sie dann **Upgrade** aus.
 
-    ![Lizenzvertrag](media/upgrade/reportserver-upgrade-eula.png "Lizenzvertrag")
+    ![Lizenzbedingungen](media/upgrade/reportserver-upgrade-eula.png "Lizenzbedingungen")
 
 4. Nach erfolgreichem Upgrade können Sie **Berichtsserver konfigurieren** auswählen, um den Konfigurations-Manager für Reporting Services zu starten, oder **Schließen**, um das Installationsprogramm zu beenden.
 

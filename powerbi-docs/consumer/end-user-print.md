@@ -2,7 +2,6 @@
 title: Drucken im Power BI-Dienst
 description: Drucken Sie ein Dashboard, eine Kachel oder eine Berichtseite im Power BI-Dienst.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,14 +10,17 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 4e211677026d66b89631063cf07e38ce1e46ee10
-ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
+ms.openlocfilehash: ec633b5e41936363663736807979dc08f50820b1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71100197"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862771"
 ---
 # <a name="printing-from-the-power-bi-service"></a>Drucken im Power BI-Dienst
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Drucken Sie im Power BI-Dienst ein ganzes Dashboard, eine Dashboardkachel, eine Berichtseite oder ein Berichtsvisual. Berichte können nur seitenweise gedruckt werden. Es ist nicht möglich, den ganzen Bericht auf einmal zu drucken.
 
    > [!NOTE]
@@ -37,7 +39,7 @@ Drucken Sie im Power BI-Dienst ein ganzes Dashboard, eine Dashboardkachel, eine 
 
 ## <a name="print-a-dashboard-tile"></a>Drucken einer Dashboardkachel
 1. Öffnen Sie das Dashboard im [Vollbildmodus](end-user-focus.md), indem Sie in der oberen Menüleiste auf das ![Vollbildsymbol](./media/end-user-print/power-bi-full-screen-icon.png) klicken.
-3. [Öffnen Sie die Kachel im Fokusmodus](end-user-focus.md), indem Sie mit dem Mauszeiger auf die Auslassungspunkte (...) zeigen und anschließend auf die Option **Im Fokusmodus öffnen** oder auf das ![Fokusmodussymbol](./media/end-user-print/power-bi-focus-icon.png) klicken.
+3. [Öffnen Sie die Kachel im Fokusmodus](end-user-focus.md), indem Sie mit dem Mauszeiger auf **Weitere Optionen** (...) zeigen und anschließend auf die Option **Im Fokusmodus öffnen** oder auf das ![Fokusmodussymbol](./media/end-user-print/power-bi-focus-icon.png) klicken.
    
     ![Das Menü mit Auslassungspunkten (...)](./media/end-user-print/power-bi-menu-options.png)
 4. Zeigen Sie auf die Kachel, um das Menü „Optionen“ anzuzeigen.
@@ -79,5 +81,5 @@ Berichte können seitenweise gedruckt werden.
 ## <a name="next-steps"></a>Nächste Schritte
 [Freigeben von Dashboards und Berichten für Kollegen und andere Personen](../service-share-dashboards.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](http://community.powerbi.com/)
+Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
 

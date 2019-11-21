@@ -3,19 +3,18 @@ title: Konfigurieren und Verwalten von Kapazitäten in Power BI Premium
 description: Erfahren Sie, wie Sie Power BI Premium verwalten und den Zugriff auf Inhalte für Ihre gesamte Organisation aktivieren können.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/17/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: e9214fbb78b501b49e8c2115423ec1c6f55e65d7
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: 04f5b1f639b7abdbbe789a23e5d7a54790ad50a5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175662"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73857100"
 ---
 # <a name="configure-and-manage-capacities-in-power-bi-premium"></a>Konfigurieren und Verwalten von Kapazitäten in Power BI Premium
 
@@ -98,7 +97,7 @@ Power BI-Administratoren und globale Administratoren von Office 365 können Powe
 
 ### <a name="manage-user-permissions"></a>Verwalten von Benutzerberechtigungen
 
-Sie können zusätzliche Kapazitätsadministratoren zuweisen sowie Benutzer mit *Berechtigungen zur Kapazitätszuweisung*. Benutzer mit Zuweisungsberechtigungen können einer Kapazität einen App-Arbeitsbereich zuweisen, wenn sie ein Administrator dieses Arbeitsbereichs sind. Außerdem können sie der Kapazität ihren persönlichen Arbeitsbereich (*Mein Arbeitsbereich*) zuweisen. Benutzer mit Zuweisungsberechtigungen haben keinen Zugang zum Verwaltungsportal.
+Sie können zusätzliche Kapazitätsadministratoren zuweisen sowie Benutzer mit *Berechtigungen zur Kapazitätszuweisung*. Benutzer mit Zuweisungsberechtigungen können einer Kapazität einen Arbeitsbereich zuweisen, wenn sie Administrator dieses Arbeitsbereichs sind. Außerdem können sie der Kapazität ihren persönlichen Arbeitsbereich (*Mein Arbeitsbereich*) zuweisen. Benutzer mit Zuweisungsberechtigungen haben keinen Zugang zum Verwaltungsportal.
 
 > [!NOTE]
 > Kapazitätsadministratoren für Power BI Embedded werden im Microsoft Azure-Portal definiert.
@@ -109,7 +108,7 @@ Erweitern Sie unter **Benutzerberechtigungen** **Benutzer mit Zuweisungsberechti
 
 ## <a name="assign-a-workspace-to-a-capacity"></a>Zuweisen eines Arbeitsbereichs zu einer Kapazität
 
-Es gibt zwei Möglichkeiten, einer Kapazität einen Arbeitsbereich zuzuweisen: im Verwaltungsportal oder über einen App-Arbeitsbereich.
+Es gibt zwei Möglichkeiten, einer Kapazität einen Arbeitsbereich zuzuweisen: im Verwaltungsportal oder über einen Arbeitsbereich.
 
 ### <a name="assign-from-the-admin-portal"></a>Zuweisen über das Verwaltungsportal
 
@@ -127,22 +126,22 @@ Kapazitätsadministratoren können, genauso wie Administratoren von Power BI und
    | --- | --- |
    | **Arbeitsbereiche nach Benutzern** | Wenn Sie Ihre Arbeitsbereiche nach Benutzern oder Gruppen zuweisen, werden alle Arbeitsbereiche dieses Benutzers einer Premium-Kapazität zugewiesen, einschließlich seiner der persönlichen Arbeitsbereiche. Diese Benutzer erhalten automatisch Berechtigung zur Zuweisung von Arbeitsbereichen.<br>Dies gilt auch für Arbeitsbereiche, die bereits einer anderen Kapazität zugewiesen wurden. |
    | **Bestimmte Arbeitsbereiche** | Geben Sie den Namen eines bestimmten Arbeitsbereichs ein, den Sie der ausgewählten Kapazität zuweisen möchten. |
-   | **Arbeitsbereiche der gesamten Organisation** | Wenn Sie die Arbeitsbereiche der gesamten Organisation einer Premium-Kapazität zuweisen, werden alle App-Arbeitsbereiche und Meine Arbeitsbereiche, die sich in Ihrer Organisation befinden, dieser Premium-Kapazität zugewiesen. Des Weiteren erhalten alle aktuellen und zukünftigen Benutzer die Berechtigung, einzelne Arbeitsbereiche erneut dieser Kapazität zuzuweisen. |
+   | **Arbeitsbereiche der gesamten Organisation** | Wenn Sie die Arbeitsbereiche der gesamten Organisation einer Premium-Kapazität zuweisen, werden alle Arbeitsbereiche und „Meine Arbeitsbereiche“, die sich in Ihrer Organisation befinden, dieser Premium-Kapazität zugewiesen. Des Weiteren erhalten alle aktuellen und zukünftigen Benutzer die Berechtigung, einzelne Arbeitsbereiche erneut dieser Kapazität zuzuweisen. |
    | | |
 
 1. Klicken Sie auf **Übernehmen**.
 
-### <a name="assign-from-app-workspace-settings"></a>Zuweisen über Einstellungen von App-Arbeitsbereichen
+### <a name="assign-from-workspace-settings"></a>Zuweisen über Einstellungen von Arbeitsbereichen
 
-Sie können einer Premium-Kapazität auch einen App-Arbeitsbereich über die Einstellungen dieses Arbeitsbereichs zuweisen. Um einen Arbeitsbereich in eine Kapazität zu verschieben, müssen Sie über Administratorberechtigungen für diesen Arbeitsbereich verfügen sowie über Berechtigungen zur Kapazitätszuweisung für diese Kapazität. Beachten Sie, dass Arbeitsbereichsadministratoren einen Arbeitsbereich jederzeit aus einer Premium-Kapazität entfernen können.
+Sie können einer Premium-Kapazität auch einen Arbeitsbereich über die Einstellungen dieses Arbeitsbereichs zuweisen. Um einen Arbeitsbereich in eine Kapazität zu verschieben, müssen Sie über Administratorberechtigungen für diesen Arbeitsbereich verfügen sowie über Berechtigungen zur Kapazitätszuweisung für diese Kapazität. Beachten Sie, dass Arbeitsbereichsadministratoren einen Arbeitsbereich jederzeit aus einer Premium-Kapazität entfernen können.
 
-1. Sie können einen App-Arbeitsbereich bearbeiten, indem Sie auf die Auslassungspunkte **. . .** und dann auf **Bearbeiten des Arbeitsbereichs** klicken.
+1. Sie können einen Arbeitsbereich bearbeiten, indem Sie auf die Auslassungspunkte **(...)** und dann auf **Edit workspace** (Arbeitsbereich bearbeiten) klicken.
 
     ![Bearbeiten des Arbeitsbereichs über das Kontextmenü mit den Auslassungspunkten](media/service-admin-premium-manage/edit-app-workspace.png)
 
 1. Erweitern Sie unter **Bearbeiten des Arbeitsbereichs** **Erweitert**.
 
-1. Wählen Sie die Kapazität aus, der Sie diesen App-Arbeitsbereich zuweisen möchten.
+1. Wählen Sie die Kapazität aus, der Sie diesen Arbeitsbereich zuweisen möchten.
 
     ![Dropdownliste für die Kapazitätsauswahl](media/service-admin-premium-manage/app-workspace-advanced.png)
 
@@ -166,4 +165,4 @@ Weitere Informationen finden Sie unter [Install Power BI Report Server (Installa
 
 [Verwalten von Premium-Kapazitäten](service-premium-capacity-manage.md)
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
