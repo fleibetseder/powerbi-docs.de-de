@@ -1,29 +1,28 @@
 ---
-title: Bearbeiten von SAP-Variablen im Power BI-Dienst (Vorschau)
+title: Bearbeiten von SAP-Variablen im Power BI-Dienst
 description: Azure und Power BI
 author: Sujata994
 ms.author: sunaraya
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 11/12/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: db1d4a8a9734c910514b4952b664bf7ebce324c1
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: cec8d598713000ec1d2b5a1fb72ebaa7d8932faf
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654877"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74010887"
 ---
-# <a name="edit-sap-variables-in-the-power-bi-service-preview"></a>Bearbeiten von SAP-Variablen im Power BI-Dienst (Vorschau)
+# <a name="edit-sap-variables-in-the-power-bi-service"></a>Bearbeiten von SAP-Variablen im Power BI-Dienst
 
-Wenn sie SAP Business Warehouse oder SAP Hana mit DirectQuery verwenden, können die Autoren von Berichten jetzt zulassen, dass Endbenutzer SAP-Variablen im **Power BI Dienst** für Premium-Arbeitsbereiche bearbeiten können.
+Wenn sie SAP Business Warehouse oder SAP HANA mit DirectQuery verwenden, können die Autoren von Berichten jetzt zulassen, dass Endbenutzer SAP-Variablen im **Power BI-Dienst** für Premium-Arbeitsbereiche und gemeinsame Arbeitsbereiche bearbeiten können. Hinweis: Dieses Feature funktioniert für Berichte auf der Registerkarte „Für mich freigegeben“ unter „Mein Arbeitsbereich“ NICHT. 
 
 ![Dialogfeld „Variablen bearbeiten“](media/service-edit-sap-variables/sap-edit-variables-dialog.png)
 
-In diesem Dokument wird beschrieben, welche Anforderungen erfüllt sein müssen, damit Variablen in Power BI bearbeitet werden können. Außerdem erhalten Sie Informationen zum Aktivieren dieses Vorschaufeatures und zum Bearbeiten von Variablen im Power BI-Dienst.
+In diesem Dokument wird beschrieben, welche Anforderungen erfüllt sein müssen, damit Variablen in Power BI bearbeitet werden können. Außerdem erhalten Sie Informationen zum Aktivieren dieses Features und zum Bearbeiten von Variablen im Power BI-Dienst.
 
 ## <a name="requirements-for-sap-edit-variables"></a>Anforderungen für das Feature „SAP edit variables“ (SAP-Variablen bearbeiten)
 
@@ -31,12 +30,10 @@ Damit Sie das Feature „SAP edit variables“ (SAP-Variablen bearbeiten) verwen
 
 **Neue Filteroberfläche erforderlich:** für den Bericht muss die [Neue Filteroberfläche](power-bi-report-filter.md) aktiviert sein. Gehen Sie wie folgt vor, um diese für Ihren Bericht in Power BI Desktop zu aktivieren:
 - Klicken Sie in Power BI Desktop auf **Datei** > **Optionen und Einstellungen** > **Optionen**.
-- Wählen Sie in der linken Navigationsleiste unter **Aktuelle Datei** die Option **Berichtseinstellungen** aus.
+- Wählen Sie im Navigationsbereich unter **Aktuelle Datei** den Eintrag **Berichtseinstellungen** aus.
 - Klicken Sie unter **Benutzeroberfläche zur Filterung** auf die Option **Enable the updated filter pane (Aktualisierten Filterbereich aktivieren)** .
 
 **DirectQuery-Verbindungen erforderlich:** Sie müssen mithilfe von DirectQuery eine Verbindung mit der SAP-Datenquelle herstellen. Importverbindungen werden nicht unterstützt.
-
-**Power BI Premium-Abonnement erforderlich:** das Feature „SAP Edit Variables“ (SAP-Variablen bearbeiten) funktioniert zurzeit nur mit Power BI Premium-Abonnements.
 
 **SSO-Setup erforderlich:** Damit dieses Feature funktioniert, muss einmaliges Anmelden (Single Sign-On, SSO) konfiguriert sein. Weitere Informationen finden Sie unter [Übersicht: Single Sign-On (SSO)](service-gateway-sso-overview.md).
 
@@ -48,7 +45,7 @@ Damit Sie das Feature „SAP edit variables“ (SAP-Variablen bearbeiten) verwen
 
 ## <a name="how-to-enable-the-feature"></a>Aktivieren des Features
 
-Wenn Sie das Feature **SAP edit variables** (SAP-Variablen bearbeiten) aktivieren möchten, sollten Sie in Power BI Desktop eine Verbindung mit der SAP HANA- oder der SAP BW-Datenquelle herstellen. Navigieren Sie anschließend zu **Datei > Optionen und Einstellungen > Optionen**, und klicken Sie dann im Bereich „Aktuelle Datei“ auf der linken Seite auf **DirectQuery**. Wenn Sie diese Option auswählen, werden wie in der folgenden Abbildung auf der rechten Seite DirectQuery-Optionen und ein Kontrollkästchen für die Option **Allow end users to change SAP variables in the report (preview)** (Zulassen, dass Endbenutzer SAP-Variablen im Bericht ändern können (Vorschau)) angezeigt.
+Wenn Sie das Feature **SAP edit variables** (SAP-Variablen bearbeiten) aktivieren möchten, sollten Sie in Power BI Desktop eine Verbindung mit der SAP HANA- oder der SAP BW-Datenquelle herstellen. Navigieren Sie anschließend zu **Datei > Optionen und Einstellungen > Optionen**, und klicken Sie dann im Bereich „Aktuelle Datei“ auf der linken Seite auf **DirectQuery**. Wenn Sie diese Option auswählen, werden wie in der folgenden Abbildung auf der rechten Seite DirectQuery-Optionen und ein Kontrollkästchen für die Option **Allow end users to change SAP variables in the report** (Zulassen, dass Endbenutzer SAP-Variablen im Bericht ändern können) angezeigt.
 
 ![DirectQuery-Optionen](media/service-edit-sap-variables/sap-preview-setting-in-desktop.png)
 
@@ -78,10 +75,6 @@ Gehen Sie dafür wie folgt vor:
     ![Auf Standardwert zurücksetzen](media/service-edit-sap-variables/reset-to-default.png)
 
 Der Besitzer eines Berichts kann diese Standardeinstellungen ändern, wenn er an einem veröffentlichten Bericht im Power BI-Dienst arbeitet, der SAP HANA oder SAP BW verwendet, und das Feature **Variablen bearbeiten** aktiviert ist. Der Besitzer kann die Variablen im Bearbeitungsmodus ändern und den Bericht speichern, damit diese Einstellungen als die *neuen Standardeinstellungen* für diesen Bericht verwendet werden. Allen anderen Benutzer, die auf den Bericht zugreifen, nachdem der Besitzer des Berichts Änderungen vorgenommen hat, werden diese neuen Einstellungen als Standardeinstellungen angezeigt.
-
-## <a name="issues-and-considerations"></a>Probleme und Überlegungen
-
-Derzeit wird das Feature „SAP edit variables“ (SAP-Variablen bearbeiten) in Apps nicht unterstützt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

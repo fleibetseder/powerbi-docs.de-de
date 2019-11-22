@@ -1,22 +1,22 @@
 ---
 title: Grundlegende Konzepte für Designer im Power BI-Dienst
-description: Arbeitsbereiche, Dashboards, Berichte, Datasets und Arbeitsmappen im Power BI-Dienst.
+description: Kapazitäten für Power BI-Dienst, Arbeitsbereiche, Dashboards, Berichte, Arbeitsmappen, Datasets und Dataflows.
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/25/2019
+ms.date: 11/14/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 5a4c385b9c8e8a28de3b9a5e1dd84651f87ef000
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: f86b9ae056770240485ff1984be4714faec9dc83
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543162"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128365"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Grundlegende Konzepte für Designer im Power BI-Dienst
 
@@ -28,7 +28,7 @@ Wenn Sie noch nicht über eigene Berichte verfügen, installieren Sie für die Z
 
 Wenn Sie den Power BI-Dienst in einem Browser öffnen, sehen Sie zunächst den Startbildschirm. Vermutlich sind dies die Elemente, die angezeigt werden:
 
-1. Navigationsbereich (linker Navigationsbereich)
+1. Navigationsbereich
 2. Office 365-App-Startfeld
 3. Power BI-Schaltfläche „Start“
 4. Symbolschaltflächen, einschließlich Einstellungen, Hilfe und Feedback
@@ -45,24 +45,40 @@ Diese Features werden später näher erläutert. Zunächst werden einige Grundko
 
 
 ## <a name="power-bi-concepts"></a>Power BI-Konzepte
-Die vier wichtigsten Grundkomponenten von Power BI sind: **_Dashboards_** , **_Berichte_** , **_Arbeitsmappen_** und **_Datasets_** . Diese sind in **_Arbeitsbereichen_** angeordnet. Zunächst sollen Arbeitsbereiche erläutert werden, bevor näher auf die vier Grundkomponenten eingegangen wird.
+Die fünf wichtigsten Grundkomponenten von Power BI sind: *Dashboards*, *Berichte*, *Arbeitsmappen*, *Datasets* und *Dataflows*. Alle Komponenten sind in *Arbeitsbereichen* angeordnet und werden basierend auf *Kapazitäten* erstellt.  Zunächst werden in diesem Artikel die Konzepte von Kapazitäten und Arbeitsbereichen beschrieben. Anschließend erhalten Sie weitere Informationen zu den fünf Grundkomponenten.
+
+## <a name="capacities"></a>Funktionen
+Kapazitäten sind ein zentrales Konzept von Power BI, das eine Reihe von Ressourcen (Speicher, Prozessor und Arbeitsspeicher) darstellt, die zum Hosten und Bereitstellen Ihrer Power BI-Inhalte verwendet werden. Kapazitäten werden entweder _gemeinsam_ genutzt oder sind _dediziert_. Eine gemeinsam genutzte Kapazität wird für andere Microsoft-Kunden freigegeben, während eine dedizierte Kapazität vollständig einem einzelnen Kunden zugewiesen wird. Für dedizierte Kapazitäten wird ein [Abonnement](service-premium-what-is.md) benötigt. Weitere Informationen zu dieser Art von Kapazitäten finden Sie im Artikel [Verwalten von Premium-Kapazitäten](service-premium-capacity-manage.md).
+
+Standardmäßig werden Arbeitsbereiche auf einer freigegebenen Kapazität erstellt. Bei gemeinsam genutzten Kapazitäten werden Workloads auf Computeressourcen ausgeführt, die gemeinsam mit anderen Kunden genutzt werden. Da die Kapazität Ressourcen teilen muss, werden Einschränkungen auferlegt, um „Fair Play“ zu gewährleisten, z. B. eine maximale Modellgröße (1 GB) und eine maximale tägliche Aktualisierungshäufigkeit (acht Mal pro Tag).
 
 ## <a name="workspaces"></a>Arbeitsbereiche
-Arbeitsbereiche sind Container für Dashboards, Berichte, Arbeitsmappen und Datasets in Power BI. Es gibt zwei Typen von Arbeitsbereichen: *Mein Arbeitsbereich* und *App-Arbeitsbereiche*. Was genau ist eine *App*? Eine Power BI-*App* ist eine Sammlung von Dashboards und Berichten, die erstellt wurden, um Schlüsselmetriken für die Power BI-Endbenutzer Ihrer Organisation bereitzustellen. Apps sind interaktiv, können von Endbenutzern aber nicht bearbeitet werden.
+Arbeitsbereiche werden basierend auf Kapazitäten erstellt. Im Wesentlichen handelt es dabei sich um Container für Dashboards, Berichte, Arbeitsmappen, Datasets und Dataflows in Power BI.
 
-- *Mein Arbeitsbereich* ist der persönliche Arbeitsbereich jedes Power BI-Kunden, in dem Sie Ihre eigenen Inhalte bearbeiten. Nur Sie haben Zugriff auf Ihren „Mein Arbeitsbereich“. Sie können Dashboards und Berichte von Ihrem Arbeitsbereich aus freigeben. Wenn Sie in Dashboards und Berichte mit anderen Personen zusammenarbeiten oder eine App erstellen möchten, sollten Sie einen App-Arbeitsbereich verwenden.      
--  *App-Arbeitsbereiche* werden für die Zusammenarbeit und die Freigabe von Inhalten für Kollegen verwendet. Darüber sind hinaus werden hier Apps für Ihre Organisation erstellt, veröffentlicht und verwaltet. Betrachten Sie sie als eine Art Bereitstellungsraum und Container für Ihre Inhalte, die eine Power BI-App bilden. Sie können Ihren App-Arbeitsbereichen Kollegen hinzufügen und gemeinsam an Dashboards, Berichten, Arbeitsmappen und Datasets arbeiten. Alle Mitglieder von App-Arbeitsbereichen benötigen Power BI Pro-Lizenzen. Für App-Anwender, also die Kollegen, die Zugriff auf die Apps haben, sind Pro-Lizenzen jedoch nicht zwingend erforderlich. Weitere Informationen zu den [neuen Arbeitsbereichen](service-create-the-new-workspaces.md).  
+Es gibt zwei Typen von Arbeitsbereichen: *Mein Arbeitsbereich* und *Arbeitsbereiche*.
+
+- *Mein Arbeitsbereich* ist der persönliche Arbeitsbereich jedes Power BI-Kunden, in dem Sie Ihre eigenen Inhalte bearbeiten. Nur Sie haben Zugriff auf Ihren „Mein Arbeitsbereich“. Sie können Dashboards und Berichte von Ihrem Arbeitsbereich aus freigeben. Wenn Sie in Dashboards und Berichte mit anderen Personen zusammenarbeiten oder eine App erstellen möchten, sollten Sie einen Arbeitsbereich verwenden.      
+-  *Arbeitsbereiche* werden für die Zusammenarbeit und die Freigabe von Inhalten für Kollegen verwendet. Sie können Ihren Arbeitsbereichen Kollegen hinzufügen und gemeinsam an Dashboards, Berichten, Arbeitsmappen und Datasets arbeiten. Alle Mitglieder von Arbeitsbereichen benötigen Power BI Pro-Lizenzen. Es gibt dabei nur eine Ausnahme. Weitere Informationen zu den [neuen Arbeitsbereichen](service-create-the-new-workspaces.md). 
+
+    Darüber hinaus werden in *Arbeitsbereichen* Apps für Ihre Organisation erstellt, veröffentlicht und verwaltet. Betrachten Sie Arbeitsbereiche als eine Art Bereitstellungsraum und Container für Ihre Inhalte, die eine Power BI-App bilden. Was genau ist eine *App*? Es handelt sich dabei um eine Sammlung von Dashboards und Berichten, die erstellt wurden, um Schlüsselmetriken für die Power BI-Endbenutzer Ihrer Organisation bereitzustellen. Apps sind interaktiv, können von Kunden aber nicht bearbeitet werden. Für App-Anwender, also die Kollegen, die Zugriff auf die Apps haben, sind Pro-Lizenzen jedoch nicht zwingend erforderlich.  
 
 Um mehr über Teilen im Allgemeinen zu erfahren, beginnen Sie mit [Wege zum Teilen Ihrer Arbeit mit Dashboards](service-how-to-collaborate-distribute-dashboards-reports.md).
 
-Nun zu den Grundkomponenten von Power BI. Sie können keine Dashboards oder Berichte ohne Daten erstellen (es können zwar leere Dashboards und Berichte verwendet werden, diese wären jedoch nicht nützlich). Beginnen wir also mit **Datasets**.
+Nun zu den fünf Grundkomponenten von Power BI.
+
+## <a name="dataflows"></a>Dataflows
+Mit einem *Dataflow* können Organisationen Daten aus unterschiedlichen Quellen vereinheitlichen. Sie sind optional und werden häufig in komplexen oder größeren Projekten eingesetzt. Sie stellen Daten dar, die für die Verwendung durch Datasets vorbereitet und bereitgestellt werden. Sie können jedoch nicht direkt als Quelle für die Berichterstellung verwendet werden. Sie nutzen die umfangreiche Sammlung von Microsoft-Datenconnectors und ermöglichen so die Erfassung von Daten aus lokalen und cloudbasierten Datenquellen.
+
+Dataflows werden nur in Arbeitsbereichen erstellt und verwaltet (aber nicht unter *Mein Arbeitsbereich*). Außerdem werden sie als Entitäten im Common Data Model (CDM) in Azure Data Lake Storage Gen2 gespeichert. In der Regel werden regelmäßig Aktualisierungen durchgeführt, um die Daten aktuell zu halten. Dataflows eignen sich hervorragend für die Vorbereitung von Daten für die Verwendung – und potenzielle Wiederverwendung – durch ihre Datasets. Weitere Informationen finden Sie im Artikel [Self-Service-Datenaufbereitung in Power BI](service-dataflows-overview.md).
+
+Sie können keine Dashboards oder Berichte ohne Daten erstellen. Zwar können leere Dashboards und Berichte verwendet werden, diese wären jedoch nicht nützlich. Deswegen finden Sie im Folgenden Informationen zu **Datasets**.
 
 ## <a name="datasets"></a>Datasets
-Ein *Dataset* ist eine Sammlung von Daten, die Sie *importieren* oder mit denen Sie eine *Verbindung herstellen*. In Power BI können Sie Verbindungen mit allen Arten von Datasets herstellen, sie importieren und zentral anordnen.  
+Ein *Dataset* ist eine Sammlung von Daten, die Sie *importieren* oder mit denen Sie eine *Verbindung herstellen*. In Power BI können Sie Verbindungen mit allen Arten von Datasets herstellen, sie importieren und zentral anordnen. Datasets können auch Daten aus Dataflows entnehmen.
 
 Datasets sind *Arbeitsbereichen* zugeordnet, und ein einzelnes Dataset kann Teil mehrerer Arbeitsbereiche sein. Wenn Sie einen Arbeitsbereich öffnen, werden die zugeordneten Datasets auf der Registerkarte **Datasets** aufgeführt. Jedes aufgelistete Dataset stellt eine einzelne Datenquelle dar, z. B. eine Excel-Arbeitsmappe auf OneDrive oder ein lokales tabellarisches SSAS-Dataset oder ein Salesforce-Dataset. Es werden viele verschiedene Datenquellen unterstützt, zu denen beständig neue Datenquellen hinzugefügt werden. Mehr dazu finden Sie in der Liste der [Datasettypen, die mit Power BI verwendet werden können](service-get-data.md).
 
-Im folgenden Beispiel ist die App „Vertrieb und Marketing“ ausgewählt, und es wurde auf die Registerkarte **Datasets** geklickt.
+Im folgenden Beispiel ist der Arbeitsbereich „Vertrieb und Marketing“ ausgewählt, und es wurde auf die Registerkarte **Datasets** geklickt.
 
 ![Ausgewählte Datasets](media/service-basic-concepts/power-bi-datasets.png)
 
@@ -74,13 +90,17 @@ Im folgenden Beispiel ist die App „Vertrieb und Marketing“ ausgewählt, und 
 
   ![Diagramm der Datasets](media/service-basic-concepts/drawing2.png)
 
-Wählen Sie am unteren Rand der linken Navigationsleiste **Daten abrufen** aus, um die [Verbindung mit einem Dataset herzustellen oder es zu importieren](service-get-data.md). Befolgen Sie die Anweisungen zum Herstellen einer Verbindung mit der jeweiligen Quelle bzw. zum Importieren, und fügen Sie das Dataset dem aktiven Arbeitsbereich hinzu. Neue Datasets werden mit einem gelben Sternchen markiert. Das zugrunde liegende Dataset wird durch Ihre Arbeit in Power BI nicht verändert.
+Wählen Sie am unteren Rand des Navigationsbereichs **Daten abrufen** aus, um die [Verbindung mit einem Dataset herzustellen oder es zu importieren](service-get-data.md). Befolgen Sie die Anweisungen zum Herstellen einer Verbindung mit der jeweiligen Quelle bzw. zum Importieren, und fügen Sie das Dataset dem aktiven Arbeitsbereich hinzu. Neue Datasets werden mit einem gelben Sternchen markiert. Das zugrunde liegende Dataset wird durch Ihre Arbeit in Power BI nicht verändert.
 
 Datasets, die von einem Arbeitsbereichsmitglied hinzugefügt wurden, sind für die anderen Arbeitsbereichsmitglieder mit den Rollen *Administrator*, *Mitglied* oder *Mitwirkender* verfügbar.
 
-Datasets können aktualisiert, umbenannt, untersucht und entfernt werden. Verwenden Sie ein Dataset, um einen völlig neuen Bericht zu erstellen, oder führen Sie [Schnelleinblicke](service-insights.md) aus.  Wählen Sie **Verwandte Inhalte anzeigen**, um zu erfahren, welche Berichte und Dashboards ein Dataset bereits verwenden. Wählen Sie ein Dataset aus, um es zu untersuchen. Tatsächlich öffnen Sie das Dataset im Berichts-Editor, wo Sie beginnen können, die Daten zu untersuchen und Visualisierungen zu erstellen. Fahren wir also mit dem nächsten Thema fort – Berichte.
+Datasets können aktualisiert, umbenannt, untersucht und entfernt werden. Verwenden Sie ein Dataset, um einen völlig neuen Bericht zu erstellen, oder führen Sie [Schnelleinblicke](service-insights.md) aus.  Wählen Sie **Verwandte Inhalte anzeigen**, um zu erfahren, welche Berichte und Dashboards ein Dataset bereits verwenden. Wählen Sie ein Dataset aus, um es zu untersuchen. Tatsächlich öffnen Sie das Dataset im Berichts-Editor, wo Sie beginnen können, die Daten zu untersuchen und Visualisierungen zu erstellen.
+
+Damit zum nächsten Thema: Berichte.
 
 ### <a name="dig-deeper"></a>Weiterführende Themen
+* [Datasets im Power BI-Dienst](service-datasets-understand.md)
+* [Datasetmodi im Power BI-Dienst](service-dataset-modes-understand.md)
 * [Was ist Power BI Premium?](service-premium-what-is.md)
 * [Abrufen von Daten in Power BI](service-get-data.md)
 * [Beispieldatasets für Power BI](sample-datasets.md)
@@ -96,7 +116,7 @@ Wenn Sie eine App öffnen, wird ein Dashboard angezeigt.  Wählen Sie eine Dashb
 
 Der Bericht wird standardmäßig in der Leseansicht geöffnet.  Wählen Sie einfach **Bericht bearbeiten** aus, um den Bericht in der Bearbeitungsansicht zu öffnen (falls Sie über die erforderlichen Berechtigungen verfügen).
 
-Im folgenden Beispiel ist der App-Arbeitsbereich „Vertrieb und Marketing“ ausgewählt, und es wurde auf die Registerkarte **Berichte** geklickt.
+Im folgenden Beispiel ist der Arbeitsbereich „Vertrieb und Marketing“ ausgewählt, und es wurde auf die Registerkarte **Berichte** geklickt.
 
 ![Ausgewählte Berichte](media/service-basic-concepts/power-bi-reports.png)
 
@@ -159,13 +179,13 @@ Bis hierher wurden Arbeitsbereiche und die Grundkomponenten erläutert. Nun brin
 
 ![Der Power BI-Dienst in einem Browser](media/service-basic-concepts/completenewest.png)
 
-### <a name="1-navigation-pane-left-nav"></a>1. **Navigationsbereich** (linker Navigationsbereich)
+### <a name="1-navigation-pane"></a>1. **Navigationsbereich**
 Verwenden Sie den Navigationsbereich, um zwischen den Arbeitsbereichen und den Grundkomponenten von Power BI zu wechseln: Dashboards, Berichte, Arbeitsmappen und Datasets.  
 
   ![Navigationsbereich](media/service-basic-concepts/power-bi-navigation.png)
 
 * Wählen Sie **Daten abrufen** aus, um [Datasets, Berichte und Dashboards zu Power BI hinzuzufügen](service-get-data.md).
-* Mit diesem Symbol erweitern und reduzieren Sie den Navigationsbereich ![Symbol für den Navigationsbereich](media/service-basic-concepts/expand-icon.png).
+* Erweitern und reduzieren Sie den Navigationsbereich mit diesem Symbol ![Symbol „Navigationsbereich“](media/service-basic-concepts/expand-icon.png).
 * Öffnen oder verwalten Sie Ihre wichtigsten Inhalte, indem Sie **Favoriten** auswählen.
 * Zum Anzeigen und Öffnen der zuletzt abgerufenen Inhalte wählen Sie **Zuletzt verwendet** aus.
 * Zum Anzeigen, Öffnen oder Löschen von Apps wählen Sie **Apps** aus.
@@ -224,8 +244,7 @@ In diesem Bereich des Bildschirms finden Sie zusätzliche Optionen für die Inte
    ![Beschriftete Symbolschaltflächen](media/service-basic-concepts/power-bi-labeled-icons.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
-- [Was ist Power BI?](power-bi-overview.md)  
+- [Was ist Power BI?](fundamentals/power-bi-overview.md)  
 - [Power BI-Videos](videos.md)  
 - [Berichts-Editor – Verschaffen Sie sich einen Überblick](service-the-report-editor-take-a-tour.md)
-
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+- Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
