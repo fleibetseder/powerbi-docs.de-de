@@ -3,18 +3,18 @@ title: Berichtsparameter im Berichts-Generator von Power BI
 description: In diesem Thema werden allgemeine Verwendungsmöglichkeiten für die Parameter des Berichts-Generators von Power BI für paginierte Berichte, die Eigenschaften, die Sie festlegen können, und vieles mehr beschrieben.
 ms.service: powerbi
 ms.subservice: report-builder
-ms.custom: ''
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
+ms.custom: ''
 ms.date: 06/06/2019
-ms.openlocfilehash: 21fe08c2cba004a6aff77eae12303d0181ab56ec
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: d31036676a5960f7f6eb0f346c2c02ab979ff9bc
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840531"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128420"
 ---
 # <a name="report-parameters-in-power-bi-report-builder"></a>Berichtsparameter im Berichts-Generator von Power BI
 
@@ -40,7 +40,7 @@ In diesem Thema werden allgemeine Verwendungsmöglichkeiten für die Parameter d
 
 Wenn Sie einen Bericht mit Parametern anzeigen, zeigt die Symbolleiste der Berichtanzeige jeden Parameter an, sodass Sie interaktiv Werte angeben können. Die folgende Abbildung zeigt den Bereich „Parameter“ für einen Bericht mit Parametern für @ReportMonth, @ReportYear, @EmployeeID, @ShowAll, @ExpandTableRows, @CategoryQuota und @SalesDate.  
 
-![Anzeigen eines Berichts mit Parametern](media/report-builder-parameters/report-builder-parameters-power-bi-service.png "Anzeigen eines Berichts mit Parametern")
+![Anzeigen von Berichten mit Parametern](media/report-builder-parameters/report-builder-parameters-power-bi-service.png "Anzeigen von Berichten mit Parametern")
   
 1. **Bereich „Parameter“** : In der Symbolleiste der Berichtanzeige wird eine Eingabeaufforderung und der Standardwert jedes Parameters angezeigt. Im Bereich „Parameter“ können Sie das Layout von Parametern anpassen.  
   
@@ -65,7 +65,7 @@ Sie können Berichtsparameter auf verschiedene Arten erstellen.
   
  Fügen Sie eine Datasetabfrage hinzu, die Variablen enthält, oder eine gespeicherte Datasetprozedur, die Eingabeparameter enthält. Für alle Variablen oder Eingabeparameter wird jeweils ein Datasetparameter erstellt und für alle Datasetparameter jeweils ein Berichtsparameter.  
   
-![Dataseteigenschaften für Parameter des Berichts-Generators](media/report-builder-parameters/report-builder-parameter-dataset.png "Dataseteigenschaften für Parameter des Berichts-Generators")
+![Berichts-Generator Dataset-Parametereigenschaften](media/report-builder-parameters/report-builder-parameter-dataset.png "Berichts-Generator Dataset-Parametereigenschaften")
 
   
  In der Abbildung des Berichts-Generators wird Folgendes dargestellt:  

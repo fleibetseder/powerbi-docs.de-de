@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/30/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 2fd0a3d878641264e84a14579901a9685b0f6e8b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 52beebb839907a6b4141cec089184fcb693fe817
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875104"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74010678"
 ---
 # <a name="power-bi-performance-best-practices"></a>Bewährte Methoden für die Power BI-Leistung
 
@@ -152,8 +152,6 @@ Das lokale Datengateway eignet sich hervorragend zum Herstellen einer Verbindung
 Die Netzwerklatenz kann die Leistung eines Berichts beeinträchtigen, wenn es länger dauert, bis Anforderungen den Power BI-Dienst erreichen und Antworten übermittelt werden. Mandanten in Power BI werden einer bestimmten Region zugewiesen. Sie können die „Heimatregion“ Ihres Mandanten ermitteln, indem Sie zu „powerbi.com“ navigieren und **?** rechts oben auswählen. Klicken Sie dann auf **Info**. Wenn Benutzer von einem Mandanten aus auf den Power BI-Dienst zugreifen, werden ihre Anforderungen immer an diese Region weitergeleitet. Wenn die Anforderungen den Power BI-Dienst erreichen, kann der Dienst dann zusätzliche Anforderungen – z.B. an die zugrunde liegende Datenquelle oder das Gateway – senden, die ebenfalls der Netzwerklatenz unterliegen.
 
 Tools wie [Azure Speed Test](https://azurespeedtest.azurewebsites.net/) bieten einen Überblick über die Netzwerklatenz zwischen dem Client und der Azure-Region. Im Allgemeinen sollten sich, um die Auswirkungen der Netzwerklatenz zu minimieren, Datenquellen, Gateways und der Power BI-Cluster in möglichst großer Nähe zueinander befinden. Wenn die Netzwerklatenz ein Problem darstellt, versuchen Sie, Gateways und Datenquellen näher am Power BI-Cluster anzuordnen, indem Sie sie auf virtuellen Computern platzieren.
-
-Um die Netzwerklatenz noch weiter zu verbessern, können Sie [Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/) verwenden. Hiermit können schnellere und zuverlässigere Netzwerkverbindungen zwischen den Clients und Azure-Rechenzentren hergestellt werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
