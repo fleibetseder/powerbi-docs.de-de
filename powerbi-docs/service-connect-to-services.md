@@ -2,25 +2,24 @@
 title: Herstellung einer Verbindung mit den verwendeten Diensten mithilfe von Power BI
 description: Stellen Sie eine Verbindung mit vielen der Dienste her, die Sie zur Unterstützung Ihrer Geschäftstätigkeit einsetzen, z. B. Salesforce, Microsoft Dynamics CRM und Google Analytics.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: abecc9b0c5e450d24f29230ad75417b1494e6ce9
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: 91740d16a91aa8dc1936e8ae1a2812653c45e6a1
+ms.sourcegitcommit: 50c4bebd3432ef9c09eacb1ac30f028ee4e66d61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70159998"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73925827"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Herstellung einer Verbindung mit den verwendeten Diensten mithilfe von Power BI
 Mit Power BI können Sie eine Verbindung mit vielen der Dienste herstellen, die Sie zur Unterstützung Ihrer Geschäftstätigkeit einsetzen, z. B. Salesforce, Microsoft Dynamics und Google Analytics. Power BI verwendet zunächst Ihre Anmeldeinformationen, um eine Verbindung mit dem Dienst herzustellen. Anschließend erstellt Power BI einen *Power BI-Arbeitsbereich* mit einem Dashboard und einer Reihe von Power BI-Berichten, die Ihre Daten automatisch anzeigen und Ihnen visuelle Einblicke in Ihr Unternehmen ermöglichen.
 
 >[!IMPORTANT]
->Am 25. September 2019 werden wir einige Inhaltspakete als veraltet kennzeichnen. Alle installierten Inhaltspakete funktionieren weiterhin, Sie können danach jedoch keine neuen mehr installieren. [Vorlagen-Apps](https://docs.microsoft.com/power-bi/service-template-apps-overview) dienen als Ersatz für die Dienstinhaltspakete.
+>Dienstinhaltspakete werden durch [Vorlagen-Apps](https://docs.microsoft.com/power-bi/service-template-apps-overview) ersetzt. Am 25. September 2019 wurden bereits einige Inhaltspakete eingestellt. Eingestellte Inhaltspakete, die Sie installiert haben, verbleiben in Ihrem Konto, aber es wird keine Dokumentation oder Unterstützung dafür bereitgestellt, und diese Pakete können nicht erneut installiert werden.
 
 Melden Sie sich bei Power BI an, um alle [Dienste, mit denen Sie eine Verbindung herstellen können,](https://app.powerbi.com/getdata/services) anzuzeigen. 
 
@@ -36,7 +35,7 @@ Nachdem Sie die App installiert haben, können Sie das Dashboard und die Bericht
 ## <a name="edit-the-dashboard-and-reports"></a>Bearbeiten des Dashboards und der Berichte
 Wenn der Importvorgang abgeschlossen ist, wird die neue App auf der Seite „Apps“ angezeigt.
 
-1. Wählen Sie im linken Navigationsbereich **Apps** und dann die App aus.
+1. Wählen Sie im Navigationsbereich **Apps** und dann die App aus.
    
      ![Seite „Apps“](media/service-connect-to-services/power-bi-service-apps-open-app.png)
 2. Sie können eine Frage im Bereich für Fragen und Antworten stellen oder auf eine Kachel klicken, um den zugrunde liegenden Bericht zu öffnen. 
@@ -71,6 +70,6 @@ Wenn Sie daran interessiert sind, Ihre eigenen Vorlagen-Apps zu erstellen und zu
 ## <a name="next-steps"></a>Nächste Schritte
 * [Verteilen von Apps an Ihre Kollegen](service-create-distribute-apps.md)
 * [Erstellen der neuen Arbeitsbereiche in Power BI](service-create-the-new-workspaces.md)
-* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
-* Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](http://community.powerbi.com/)
+* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
+* Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
 

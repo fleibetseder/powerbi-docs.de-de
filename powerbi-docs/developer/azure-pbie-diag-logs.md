@@ -1,18 +1,18 @@
 ---
 title: Diagnoseprotokollierung für den Power BI Embedded-Dienst in Azure | Microsoft-Dokumentation
 description: In diesem Artikel erfahren Sie mehr über das Einrichten der Diagnoseprotokollierung für den Power BI Embedded-Dienst in Azure.
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
-ms.openlocfilehash: 9065feef76050c6a04e1ecf8ec7907b74be4b0ce
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 362c765fb5e739563b8d21eaed53304eddce8acc
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875985"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265704"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Diagnoseprotokollierung für Power BI Embedded in Azure
 

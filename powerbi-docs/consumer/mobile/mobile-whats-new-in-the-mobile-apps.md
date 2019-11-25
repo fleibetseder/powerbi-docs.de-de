@@ -1,20 +1,19 @@
 ---
 title: Neuigkeiten bei den mobilen Apps für Power BI
 description: Neuigkeiten bei den mobilen Apps für Power BI
-author: mshenhav
-manager: kfile
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 04/08/2019
-ms.author: mshenhav
-ms.openlocfilehash: fe8f21bbbd0886b8ff4046f744884e53f8822912
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.date: 11/12/2019
+ms.author: painbar
+ms.openlocfilehash: c188f2b00447ff9f97059e81e7945f67e3170c6d
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71327757"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74010011"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Neuigkeiten bei den mobilen Apps für Power BI
 Informationen zu verwandten Neuigkeiten finden Sie unter:
@@ -23,18 +22,40 @@ Informationen zu verwandten Neuigkeiten finden Sie unter:
 * [Neuigkeiten in Power BI Desktop](../../desktop-latest-update.md)  
 * [Neuigkeiten beim Power BI-Dienst](../../service-whats-new.md)  
 
-## <a name="september-2019"></a>September 2019
+## <a name="october-2019"></a>Oktober 2019
+
+### <a name="android-support-for-remote-configuration-of-report-server-access-settings"></a>Android-Unterstützung für die Remotekonfiguration der Zugriffseinstellungen für den Berichtsserver
+
+Es wurde Android-Unterstützung für die Remotekonfiguration der Berichtsserver-Zugriffseinstellungen für die mobile Power BI-App hinzugefügt. IT-Administratoren können ab sofort das MDM-Tool ihrer Organisation verwenden, um diese Einstellungen sowohl für iOS- als auch für Android-Geräte remote zu konfigurieren. Weitere Informationen finden Sie unter [Remotekonfiguration des Zugriffs der mobilen Power BI-App für iOS auf Berichtsserver](https://docs.microsoft.com/power-bi/report-server/configure-powerbi-mobile-apps-remote).
+
+### <a name="cross-report-drillthrough"></a>Berichtsübergreifender Drillthrough
+
+In diesem Monat wurde Unterstützung für berichtsübergreifende Drillthroughs hinzugefügt. Sie können nun auf einen Datenpunkt tippen, um über einen Drillthrough auf andere Berichte oder Berichtsseiten zuzugreifen. Wenn Sie einen Drillthrough auf eine Zielseite durchführen, wird der Inhalt dieser Seite anhand der Drillthrougheinstellungen gefiltert.
+
+> [!NOTE]
+> Berichtsübergreifende Drillthroughs sind nur verfügbar, wenn diese während der Berichterstellung aktiviert wurden. [Hier erfahren Sie mehr über berichtsübergreifende Drillthroughs.](https://docs.microsoft.com/power-bi/desktop-cross-report-drill-through)
+
+
+### <a name="data-sensitivity-labels"></a>Vertraulichkeitsbezeichnungen für Daten
+
+Sie können nun die Vertraulichkeitsbezeichnungen sehen, die der Inhaltsbesitzer für Berichte, Dashboards, Datasets oder Dataflows festgelegt hat, um die Vertraulichkeit der Daten zu klassifizieren. Vertraulichkeitsbezeichnungen legen fest, wie Inhalte für andere Benutzer freigegeben werden können. [Hier erfahren Sie mehr über Vertraulichkeitsbezeichnungen für Power BI-Daten.](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)
+
+### <a name="support-for-custom-app-navigation-windows"></a>Unterstützung für benutzerdefinierte App-Navigation (Windows)
+
+Die Unterstützung für benutzerdefinierte App-Navigation wurde jetzt nach iOS und Android auch für Windows-Geräte hinzugefügt. Weitere Informationen finden Sie in den [Neuigkeiten von September](#september-2019).
+
+## <a name="september-2019"></a>September 2019
 
 ### <a name="support-for-custom-app-navigation-ios-and-android"></a>Unterstützung für benutzerdefinierte App-Navigation (iOS und Android)
 
 Die Unterstützung für benutzerdefinierte App-Navigation wurde hinzugefügt. Wenn Sie nun eine App in Power BI Mobile öffnen, steht Ihnen die benutzerdefinierte Navigation des App-Erstellers zur Verfügung. Die App-Navigation kann nach Inhalten organisiert werden und kann neue Elemente wie Links und reduzierbare Abschnitte enthalten.
-Lesen Sie mehr zur [benutzerdefinierten Navigation](https://powerbi.microsoft.com/en-us/blog/designing-custom-navigation-for-power-bi-apps-is-now-available/).
+Lesen Sie mehr zur [benutzerdefinierten Navigation](https://powerbi.microsoft.com/blog/designing-custom-navigation-for-power-bi-apps-is-now-available/).
 
 ## <a name="august-2019"></a>August 2019
 
 ### <a name="introducting-power-bi-mobile-new-look-preview-ios-and-android"></a>Einführung in das neue Design von Power BI Mobile (Vorschauversion) – iOS und Android
 
-Wir haben unsere App aktualisiert und eine neue Benutzeroberfläche eingeführt, indem wir eine Startseite hinzugefügt haben, die schnellen Zugriff auf Ihre häufig verwendeten Inhalte bietet, und neue Navigationsleisten, mit denen Sie mühelos durch die App navigieren können. Dank der neuen und aktualisierten Benutzeroberflächen finden Sie nun schneller und leichter, was Sie benötigen, wenn Sie es benötigen.
+Die App wurde aktualisiert, und es wurde eine neue Benutzeroberfläche eingeführt. Nun gibt es eine Startseite, die schnellen Zugriff auf Ihre häufig verwendeten Inhalte bietet, und neue Navigationsbereiche, mit denen Sie mühelos durch die App navigieren können. Dank der neuen und aktualisierten Benutzeroberflächen finden Sie nun schneller und leichter, was Sie benötigen, wenn Sie es benötigen.
 Da sich das neue Design in der Vorschau befindet, müssen Sie es aktivieren, um es zu nutzen.
 Weitere Informationen zum [neuen Design von Power BI Mobile](https://powerbi.microsoft.com/blog/introducing-power-bi-mobile-apps-new-look-preview/).
 
@@ -42,7 +63,7 @@ Weitere Informationen zum [neuen Design von Power BI Mobile](https://powerbi.mic
 
 ### <a name="secured-access-with-azure-active-directory-ad-application-proxy-ios-and-android"></a>Sicherer Zugriff mit dem Azure Active Directory-Anwendungsproxy (AD) – iOS und Android
 
-Wir haben mit dem Azure Active Directory-Team zusammengearbeitet, um mobile Power BI-Anwendungen mit dem Azure Active Directory-Anwendungsproxy (AAD) zu integrieren. Mit dieser Konfiguration können Sie von der mobilen Power BI-App aus ohne komplexe lokale Konfiguration eine Verbindung mit dem innerhalb der Unternehmensgrenzen gehosteten Berichtsserver herstellen. Weitere Informationen finden Sie unter [Integration mit der mobilen Power BI-App und dem Azure AD-Anwendungsproxy](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Erfahren Sie, [wie Sie das Azure AD-Anwendungsproxy und Power BI](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi) konfigurieren.
+Wir haben mit dem Azure Active Directory-Team zusammengearbeitet, um mobile Power BI-Anwendungen mit dem Azure Active Directory-Anwendungsproxy (AAD) zu integrieren. Mit dieser Konfiguration können Sie von der mobilen Power BI-App aus ohne komplexe lokale Konfiguration eine Verbindung mit dem Berichtsserver herstellen, der innerhalb der Unternehmensgrenzen gehostet wird. Weitere Informationen finden Sie unter [Integration mit der mobilen Power BI-App und dem Azure AD-Anwendungsproxy](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Erfahren Sie, [wie Sie das Azure AD-Anwendungsproxy und Power BI](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi) konfigurieren.
 
 ## <a name="july-2019"></a>Juli 2019
 
@@ -423,7 +444,7 @@ In Balken- und Säulendiagrammen eines Berichts können Sie zum Scrollen nun ans
 #### <a name="ios-devices"></a>iOS-Geräte
 **Befragen von Daten mit einer Vorschau von Q&A** 
 
-Mit Q&A können Sie frei formulierte Fragen zu Ihren Daten stellen und Antworten von Power BI erhalten. Q&A ist bereits im Power BI-Dienst auf http://powerbi.com enthalten. Das Feature ist jetzt auch [in der mobilen App auf Ihrem iPhone oder iPad verfügbar](mobile-apps-ios-qna.md).
+Mit Q&A können Sie frei formulierte Fragen zu Ihren Daten stellen und Antworten von Power BI erhalten. Q&A ist bereits im Power BI-Dienst auf https://powerbi.com enthalten. Das Feature ist jetzt auch [in der mobilen App auf Ihrem iPhone oder iPad verfügbar](mobile-apps-ios-qna.md).
 
 **Herstellen einer Verbindung mit mehreren SSRS-Servern** 
 
@@ -695,24 +716,24 @@ Das Power BI-Team lief Ende 2015 mit mehreren wichtigen Ergänzungen und Updates
 #### <a name="sql-server-2016-reporting-services-mobile-reports-in-ios"></a>Mobile SQL Server 2016 Reporting Services-Berichte in iOS
 Sie können in der Power BI-App auf Ihrem iOS-Gerät (iPad oder iPhone) mobile SQL Server-Berichte anzeigen. Weitere Informationen:
 
-* Blogbeitrag zu [SQL 16 SSRS auf der Power BI-App für iOS](http://blogs.msdn.com/b/powerbi/archive/2015/12/30/sql-16-ssrs-on-power-bi-app-for-ios.aspx)
+* Blogbeitrag zu [SQL 16 SSRS auf der Power BI-App für iOS](https://blogs.msdn.com/b/powerbi/archive/2015/12/30/sql-16-ssrs-on-power-bi-app-for-ios.aspx)
 * Dokumentation zu [mobilen SQL Server-Berichten und -KPIs in der iPhone- und iPad-App](mobile-app-ssrs-kpis-mobile-on-premises-reports.md)
 
 #### <a name="power-bi-app-for-windows-10-phones"></a>Power BI-App für Windows 10 Phones
 Die Power BI-App für Windows 10 Phones ist für Toucheingaben und mobile Produktivität optimiert. Untersuchen Sie Dashboards und Berichte, laden Sie Kollegen zum Anzeigen von Daten ein, oder teilen Sie Erkenntnisse per E-Mail, um Ihr Team nach vorn zu bringen. Darüber hinaus können Sie [Power BI-Dashboards an Ihren Windows Phone-Startbildschirm anheften](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
 
-* Lesen Sie den Blogbeitrag zur [Power BI-App für Windows 10 Smartphones](http://blogs.msdn.com/b/powerbi/archive/2015/12/30/announcing-the-power-bi-app-for-windows-10-mobile.aspx).
+* Lesen Sie den Blogbeitrag zur [Power BI-App für Windows 10 Smartphones](https://blogs.msdn.com/b/powerbi/archive/2015/12/30/announcing-the-power-bi-app-for-windows-10-mobile.aspx).
 * [Erste Schritte mit der Power BI-App für Windows 10 Smartphones](mobile-windows-10-phone-app-get-started.md).
 
 #### <a name="other-additions"></a>Weitere Ergänzungen
-Lesen Sie den [Blogbeitrag vom Dezember zu den Power BI-Mobile Apps](http://blogs.msdn.com/b/powerbi/archive/2015/12/30/power-bi-mobile-apps-update-_2d00_-december-2015.aspx), der weitere Details bietet.
+Lesen Sie den [Blogbeitrag vom Dezember zu den Power BI-Mobile Apps](https://blogs.msdn.com/b/powerbi/archive/2015/12/30/power-bi-mobile-apps-update-_2d00_-december-2015.aspx), der weitere Details bietet.
 
 * Erhalten Sie Benachrichtigungen, wenn ein Kollege ein Dashboard für Sie freigegeben hat. (iOS)
 * Zeigen Sie ganze angeheftete Berichtsseiten in Ihren Dashboards an. (iOS und Android)
-* [Scannen Sie einen QR-Code](http://blogs.msdn.com/b/powerbi/archive/2015/12/08/bridge-the-gap-between-your-physical-world-and-your-bi-using-qr-codes.aspx), und wechseln Sie direkt zu einer relevanten Kachel auf Ihrem Android-Smartphone.
+* [Scannen Sie einen QR-Code](https://blogs.msdn.com/b/powerbi/archive/2015/12/08/bridge-the-gap-between-your-physical-world-and-your-bi-using-qr-codes.aspx), und wechseln Sie direkt zu einer relevanten Kachel auf Ihrem Android-Smartphone.
 
 ### <a name="november-2015"></a>November 2015
-Lesen Sie den Blogbeitrag [„Power BI mobile apps update“ vom November 2015](http://blogs.msdn.com/b/powerbi/archive/2015/11/24/power-bi-mobile-apps-update-_2d00_-november-2015.aspx).
+Lesen Sie den Blogbeitrag [„Power BI mobile apps update“ vom November 2015](https://blogs.msdn.com/b/powerbi/archive/2015/11/24/power-bi-mobile-apps-update-_2d00_-november-2015.aspx).
 
 #### <a name="all-power-bi-mobile-apps"></a>Alle mobilen Apps für Power BI
 * Ein neuer Installationsvorgang.
@@ -729,7 +750,7 @@ Lesen Sie den Blogbeitrag [„Power BI mobile apps update“ vom November 2015](
 * [Direktes Verknüpfen einer Kachel mit einer bestimmten URL](../../service-dashboard-edit-tile.md#hyperlink).
 
 ### <a name="october-2015"></a>Oktober 2015
-Lesen Sie den [Blogbeitrag zu Power BI Mobile vpn Mitte Oktober](http://blogs.msdn.com/b/powerbi/archive/2015/10/21/power-bi-mobile-mid-october-updates-are-here.aspx).
+Lesen Sie den [Blogbeitrag zu Power BI Mobile vpn Mitte Oktober](https://blogs.msdn.com/b/powerbi/archive/2015/10/21/power-bi-mobile-mid-october-updates-are-here.aspx).
 
 #### <a name="all-power-bi-mobile-apps"></a>Alle mobilen Apps für Power BI
 * Liniendiagramme mit prozentbasierter Y-Achse berechnen jetzt den visuellen Bereich auf Basis Ihrer tatsächlichen Daten. Der Graph startet nun mit dem niedrigsten Datenpunkt im Diagramm anstatt mit einem Standardwert.
@@ -741,12 +762,12 @@ Lesen Sie den [Blogbeitrag zu Power BI Mobile vpn Mitte Oktober](http://blogs.ms
 * Bleiben Sie im Hinblick auf die neuesten Dashboards Ihrer Gruppe immer auf dem neuesten Stand. Empfangen Sie jedes Mal, wenn ein Teammitglied ein Dashboard zu einer Ihrer Gruppen hinzufügt, eine Benachrichtigung auf Ihrem iPhone.
   
     ![](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_grpdashalertcrop.png)
-* Sie können Dashboards jetzt auch horizontal anzeigen, indem Sie Ihr Telefon einfach drehen. Erfahren Sie mehr über das [Querformat in der iPhone-App](http://blogs.msdn.com/b/powerbi/archive/2015/11/02/enjoy-the-landscape-with-the-power-bi-iphone-app.aspx).
+* Sie können Dashboards jetzt auch horizontal anzeigen, indem Sie Ihr Telefon einfach drehen. Erfahren Sie mehr über das [Querformat in der iPhone-App](https://blogs.msdn.com/b/powerbi/archive/2015/11/02/enjoy-the-landscape-with-the-power-bi-iphone-app.aspx).
   
     ![](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_landscape.png)
 
 ### <a name="september-2015"></a>September 2015
-Verbesserungen an den mobilen Power BI-Apps – Android, iOS (iPhone und iPad) und Windows. Lesen Sie den [Blogbeitrag zu Power BI Mobile von Mitte September](http://blogs.msdn.com/b/powerbi/archive/2015/09/23/power-bi-mobile-mid-september-updates-are-here.aspx).
+Verbesserungen an den mobilen Power BI-Apps – Android, iOS (iPhone und iPad) und Windows. Lesen Sie den [Blogbeitrag zu Power BI Mobile von Mitte September](https://blogs.msdn.com/b/powerbi/archive/2015/09/23/power-bi-mobile-mid-september-updates-are-here.aspx).
 
 #### <a name="android"></a>Android-
 * Unterstützung für Gruppenarbeitsbereiche: Arbeiten Sie mit Kollegen in Gruppenarbeitsbereichen zusammen. 

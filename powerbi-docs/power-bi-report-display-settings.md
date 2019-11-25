@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 183ce793342253775f641406620447e7b0f44020
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cc2ddd0b6fbd0b621c07056ed4b525f66d81319c
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875122"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265866"
 ---
 # <a name="page-display-settings-in-a-power-bi-report"></a>Einstellungen für die Seitenanzeige in einem Power BI-Bericht
 Wir wissen, wie wichtig es ist, dass das Layout des Berichts perfekt ist. Das ist in manchen Fällen jedoch schwierig, da Sie und Ihre Kollegen die Berichte möglicherweise auf Bildschirmen mit unterschiedliche Seitenverhältnissen und Größen anzeigen. 
@@ -66,8 +66,7 @@ Die Einstellungen für die **Seitengröße** sind nur für den Besitzer eines Be
 
 * 4:3-Seitenverhältnis
 * 16:9-Seitenverhältnis (Standard)
-* Cortana
-* Brief
+* Letter
 * Benutzerdefiniert (Höhe und Breite in Pixel)
 
 ## <a name="next-steps"></a>Nächste Schritte
