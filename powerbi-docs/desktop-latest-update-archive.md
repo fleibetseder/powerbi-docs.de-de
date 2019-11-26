@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/11/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 8ae5e8e348c982c7e1dffd469e180f4353910bf3
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 228bc9a7c6d02b5c2cdf34178c7b023c78fa23ea
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099506"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74310819"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Vorherige monatliche Updates für Power BI Desktop
 
@@ -1503,7 +1503,7 @@ In diesem Monat bietet **Power BI Desktop** die folgenden Updates:
 ### <a name="reporting"></a>Berichterstellung:
 
 -   Hinzufügen von Lesezeichen (Vorschau) [[Video]](https://youtu.be/jksjtR8GnBE?t=1m47s) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#bookmarking) [[Artikel]](desktop-bookmarks.md)
--   Auswahlbereich und Steuerelemente für die Anzeige von Visuals [[Video]](https://youtu.be/jksjtR8GnBE?t=7m26s) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#selectionPane) [[Artikel]](desktop-bookmarks.md#visibility---using-the-selection-pane) 
+-   Auswahlbereich und Steuerelemente für die Anzeige von Visuals [[Video]](https://youtu.be/jksjtR8GnBE?t=7m26s) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#selectionPane) [[Artikel]](desktop-bookmarks.md#visibility-using-the-selection-pane) 
 -   Lesezeichenlinks für Formen und Bilder [[Video]](https://youtu.be/jksjtR8GnBE?t=8m54s) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#links) [[Artikel]](desktop-bookmarks.md#bookmarks-for-shapes-and-images)
 -   Spotlight [[Video]](https://youtu.be/jksjtR8GnBE?t=5m39s) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#spotlight) [[Artikel]](desktop-bookmarks.md#using-spotlight)
 -   Marker für Punkt- und Blasendiagramme [[Video]](https://youtu.be/jksjtR8GnBE?t=17m20s) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#markers) [[Artikel]](desktop-accessibility.md)
