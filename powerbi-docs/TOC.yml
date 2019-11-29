@@ -813,10 +813,6 @@
               items:
                 - name: Herstellen einer Dienstverbindung mit Apps
                   href: service-connect-to-services.md
-                - name: Acumatica
-                  href: service-connect-to-acumatica.md
-                - name: Azure-Überwachungsprotokolle
-                  href: service-connect-to-azure-audit-logs.md
                 - name: GitHub
                   href: service-connect-to-github.md
                 - name: Office365Mon
@@ -907,6 +903,8 @@
           href: report-builder-power-bi.md
     - name: Lernprogramme
       items:
+        - name: 'Praxislab: Erstellen eines paginierten Berichts'
+          href: 'https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208'
         - name: Erstellen und Hochladen eines paginierten Berichts
           href: paginated-reports-quickstart-aw.md
     - name: Konzepte
