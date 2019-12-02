@@ -1,25 +1,25 @@
 ---
 title: Herstellen einer Verbindung mit Office365Mon mithilfe von Power BI
 description: Office365Mon für Power BI
-author: teddybercovitz
+author: paulinbar
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 8/29/2019
-ms.author: tebercov
+ms.date: 11/26/2019
+ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 64e8365a6d4e0c01911de9e69998af4d58d59202
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8e9563d10d80290a48e20cd2d6a889831d34924b
+ms.sourcegitcommit: fe9253a6021b9e198afa28aa9c670c3bacf59674
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73854716"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74548597"
 ---
 # <a name="connect-to-office365mon-with-power-bi"></a>Herstellen einer Verbindung mit Office365Mon mithilfe von Power BI
 Die Analyse von Ausfällen und Integritätsdaten von Office 365 ist mit Power BI und der Office365Mon-Vorlagen-App ein Kinderspiel. Power BI ruft Ihre Daten ab – Stichprobendaten zu Ausfällen und Integrität eingeschlossen –, und erstellt basierend auf diesen Daten ein Dashboard und Berichte.
 
-Stellen Sie eine Verbindung mit der [Office365Mon-Vorlagen-App](https://app.powerbi.com/groups/me/getdata/services/office365mon) für Power BI her.
+Stellen Sie eine Verbindung mit der [Office365Mon-Vorlagen-App](https://msit.powerbi.com/groups/me/getapps/services/office365mon.office365mon_powerbi_v3) für Power BI her.
 
 >[!NOTE]
 >Zum Herstellen der Verbindung und Laden der Power BI-Vorlagen-App ist ein Office365Mon-Administratorkonto erforderlich.

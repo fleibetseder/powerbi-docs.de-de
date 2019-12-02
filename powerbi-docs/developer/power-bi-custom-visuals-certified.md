@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 05/9/2019
-ms.openlocfilehash: c6ecb2eb2346940a22bbd6b7bff5ca0138faa290
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 373d57b871953f1afe02212ff0a1bbdb633cac4d
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74102592"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565255"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>So lassen Sie sich ein Power BI-Visual zertifizieren
 
@@ -70,7 +70,7 @@ Stellen Sie sicher, dass Ihr benutzerdefiniertes Visual folgenden Anforderungen 
 
 * Wenn Eigenschaften in „capabilities.json“ geändert werden, stellen Sie sicher, dass sie nicht zu Störungen bei vorhandenen Benutzerberichten führen.
 
-* Achten Sie darauf, dass das visuelle Element die [Richtlinien für Power BI-Visuals](./guidelines-powerbi-visuals.md#guidelines-for-power-bi-visuals-with-additional-purchases) einhält. **Wasserzeichen sind nicht zulässig**.
+* Achten Sie darauf, dass das visuelle Element die [Richtlinien für Power BI-Visuals](./guidelines-powerbi-visuals.md) einhält. **Wasserzeichen sind nicht zulässig**.
 
 * Ihr Visual darf nur öffentlich überprüfbare OSS-Komponenten besitzen (öffentliche JS-Bibliotheken oder TypeScript. Der Quellcode ist für die Überprüfung verfügbar und besitzt keine bekannten Sicherheitsrisiken). Wir können überprüfen, ob ein benutzerdefiniertes Visual eine kommerzielle Komponente verwendet.
 
