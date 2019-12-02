@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/15/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a45566d6fe9f4833ebed91e7c10656a8ca1c6961
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: e68d886564552d1b1cb2dc9e7c018c65a5cca039
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74102063"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265209"
 ---
 # <a name="visuals-in-power-bi"></a>Visuals in Power BI
 
@@ -49,7 +49,7 @@ Power BI-Administratoren genehmigen Power BI-Visuals in ihren Organisationen und
 
 Communitymitglieder und Microsoft haben beide ihre Power BI-Visuals zum allgemeinen Nutzen beigetragen und sie im [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals)-Marketplace veröffentlicht. Sie können diese Visuals herunterladen und sie Ihren Power BI-Berichten hinzufügen. Microsoft hat diese Power BI-Visuals auf Funktionalität und Qualität getestet und genehmigt.
 
-Was ist [AppSource](office-store.md)? Es ist der Ort, an dem Sie Apps, Add-Ins und Erweiterungen für Microsoft-Software finden. In AppSource finden Millionen von Benutzern Produkte, z.B. Office 365, Azure, Dynamics 365, Cortana und Power BI, mit denen sie effizienter, besser informiert und eleganter als zuvor arbeiten können.
+Was ist [AppSource](office-store.md)? Es ist der Ort, an dem Sie Apps, Add-Ins und Erweiterungen für Microsoft-Software finden. In AppSource finden Millionen von Benutzern von Produkten wie Office 365, Azure, Dynamics 365 und Power BI Lösungen, mit denen sie die Effizienz ihrer Arbeit steigern, fundiertere Einblicke gewinnen oder die Darstellung der Ergebnisse verbessern können.
 
 ### <a name="certified-visuals"></a>Zertifizierte Visuals
 
@@ -134,7 +134,7 @@ Sie haben zwei Möglichkeiten zum Herunterladen und Importieren von Power BI-Vis
 
     ![AppSource](media/power-bi-custom-visuals/power-bi-appsource-apps.png)
 
-2. Wechseln Sie zur Seite [App-Ergebnisse](https://appsource.microsoft.com/marketplace/apps), auf der Sie die beliebtesten Apps in den einzelnen Kategorien, einschließlich *Power BI-Apps*, anzeigen können. Klicken Sie in der Liste des Navigationsbereichs auf **Power BI-Visuals**, um die Ergebnisse einzugrenzen, da Sie nach Power BI-Visuals suchen.
+2. Wechseln Sie zur Seite [App-Ergebnisse](https://appsource.microsoft.com/marketplace/apps), auf der Sie die beliebtesten Apps in den einzelnen Kategorien, einschließlich *Power BI-Apps*, anzeigen können. Klicken Sie in der Liste des Navigationsbereichs auf **Power BI-Visuals**, um die Ergebnisse einzugrenzen, da Sie nach Power BI-Visuals suchen.
 
     ![AppSource-Visuals](media/power-bi-custom-visuals/power-bi-appsource-visuals.png)
 

@@ -1,20 +1,20 @@
 ---
-title: Embedded Analytics für das Einbetten von Power BI-Inhalten in eine Anwendung für nationale Clouds und Clouds für Behörden
+title: Einbetten von Inhalten in eine Anwendung für nationale Clouds und Clouds für Behörden
 description: Hier erfahren Sie, wie Sie mit den Power BI-APIs einen Bericht, ein Dashboard oder eine Kachel für Embedded Analytics für Ihre Kunden in eine Anwendung integrieren bzw. einbetten. Erfahren Sie, wie Sie Power BI mit Embedded Analytics-Software, Embedded Analytics-Tools oder eingebetteten Business Intelligence-Tools in Ihre Anwendung für nationale Clouds und Clouds für Behörden integrieren.
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: 7ede1678dc6cf0e217eb17dcc28f756031467b84
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b469cd4649a7acaef3a64eb0d3d8359e438e796f
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875884"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311107"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Tutorial: Einbetten von Power BI-Inhalten in Ihre Anwendung für nationale Clouds
 

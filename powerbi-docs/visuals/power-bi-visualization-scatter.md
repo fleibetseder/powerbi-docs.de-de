@@ -2,20 +2,20 @@
 title: Punkt-, Blasen- und Punktplotdiagramme in Power BI
 description: Punktdiagramme, Punktplotdiagramme und Blasendiagramme in Power BI
 author: mihart
-ms.reviewer: ''
+ms.reviewer: amac
 featuredvideoid: PVcfPoVE3Ys
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 11/21/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 88db87b995f52aa51023bd465d349459e1dd2965
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a03ac63caf8da96cd7e786c99c8a8dcd36f45a75
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870812"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311614"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Punktdiagramme, Punktplotdiagramme und Blasendiagramme in Power BI
 
@@ -131,13 +131,30 @@ Nun fügen wir eine dritte Dimension hinzu.
     > [!NOTE]
     > Mehr Datenpunkte können längere Ladezeit bedeuten. Wenn Sie sich dafür entscheiden, Berichte mit Einschränkungen am oberen Ende der Skala zu veröffentlichen, sollten Sie Ihre Berichte im Web und ebenfalls auf Mobilgeräten testen. Sie möchten bestätigen, dass die Leistung des Diagramms den Erwartungen Ihrer Benutzer entspricht.
 
-1. Sie können [u.a. Visualisierungsfarben, Bezeichnungen, Titel, Hintergrund formatieren](service-getting-started-with-color-formatting-and-axis-properties.md).
-
-    Zum [Verbessern der Barrierefreiheit](../desktop-accessibility.md) sollten Sie das Hinzufügen von Markierungsformen zu jeder Linie in Betracht ziehen. Sie können zum Auswählen der Markierungsform **Formen** erweitern und dann **Markierungsform** sowie eine Form auswählen.
+1. Sie können u. a. Visualisierungsfarben, Bezeichnungen, Titel und Hintergrund formatieren. Zum [Verbessern der Barrierefreiheit](../desktop-accessibility.md) sollten Sie das Hinzufügen von Markierungsformen zu jeder Linie in Betracht ziehen. Sie können zum Auswählen der Markierungsform **Formen** erweitern und dann **Markierungsform** sowie eine Form auswählen.
 
     ![Screenshot der Dropdownliste „Formen“, wobei die Optionen für „Markierungsform“ hervorgehoben sind.](media/power-bi-visualization-scatter/pbi-scatter-marker.png)
 
-    Sie können die Markierungsform auch in Raute, Dreieck oder Quadrat ändern. Die Verwendung einer anderen Markierungsform für jede Linie erleichtert den Benutzern des Berichts, die Linien (oder Flächen) voneinander zu unterscheiden.
+    Ändern Sie die Markierungsform in Raute, Dreieck oder Quadrat. Die Verwendung einer anderen Markierungsform für jede Linie erleichtert den Benutzern des Berichts, die Linien (oder Flächen) voneinander zu unterscheiden.
+
+1. Öffnen Sie den Bereich „Analyse“ ![Screenshot des Symbols für den Bereich „Analyse“.](media/power-bi-visualization-scatter/power-bi-analytics.png) zum Hinzufügen zusätzlicher Informationen zur Visualisierung.  
+    - Fügen Sie eine Linie für den Medianwert hinzu. Wählen Sie **Median** > **Hinzufügen** aus. Standardmäßig wird von Power BI eine Medianlinie für *Umsatz pro Quadratfuß* hinzugefügt. Dies ist nicht besonders nützlich, da offensichtlich 10 Datenpunkte vorhanden sind und der Median mit fünf Datenpunkten auf jeder Seite erstellt wird. Wechseln Sie stattdessen zum **Measure** *Gesamtumsatzabweichung in Prozent*.  
+
+        ![Screenshot des Blasendiagramms mit Medianlinie.](media/power-bi-visualization-scatter/power-bi-analytics-median.png)
+
+    - Fügen Sie Symmetrieschattierung hinzu, um anzuzeigen, welche Punkte über einen höheren Wert für das x-Achsen-Measure im Vergleich zum y-Achsen-Measure verfügen und umgekehrt. Wenn Sie im Bereich „Analyse“ die Symmetrieschattierung aktivieren, zeigt Power BI den Hintergrund des Punktdiagramms symmetrisch basierend auf den oberen und unteren Begrenzungen der aktuellen Achse an. So können Sie schnell erkennen, welches Achsenmeasure ein Datenpunkt begünstigt, insbesondere wenn die x- und y-Achse unterschiedliche Achsenbereiche verwenden.
+
+        a. Ändern Sie das Feld **Abweichungen der Gesamtumsätze in Prozent** in **Bruttogewinn % Vorjahr**.
+
+        ![Screenshot des Blasendiagramms mit Medianlinie.](media/power-bi-visualization-scatter/power-bi-format-symmetry.png)
+
+        b. Fügen Sie im Bereich „Analyse“ **Symmetrieschattierung** hinzu. Anhand der Schattierung lässt sich erkennen, dass nur die Kategorie „Strumpfwaren“ (die grüne Blase im rosa schattierten Bereich) den Bruttogewinn und nicht den Umsatz pro Ladenfläche begünstigt. 
+
+        ![Screenshot des Blasendiagramms mit hinzugefügter Symmetrieschattierung.](media/power-bi-visualization-scatter/power-bi-symmetry.png)
+
+    - Sehen Sie sich den Analysebereich weiter an, um interessante Einblicke aus Ihren Daten zu gewinnen. 
+
+        ![Screenshot des Blasendiagramms mit hinzugefügter Symmetrieschattierung.](media/power-bi-visualization-scatter/power-bi-analytics-example.png)
 
 ## <a name="create-a-dot-plot-chart"></a>Erstellen eines Punktplotdiagramms
 

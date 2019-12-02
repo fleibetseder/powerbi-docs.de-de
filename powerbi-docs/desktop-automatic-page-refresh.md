@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4c2217495ee8b735bc600c9b803897a408495472
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b9f7c745ad251fdb81c7898130cd3ca6c5d32af9
+ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878771"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164161"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Automatische Seitenaktualisierung in Power BI Desktop (Vorschau)
 
@@ -105,9 +105,9 @@ Power BI Desktop weist keine Einschränkung für das Aktualisierungsintervall au
 
 Im Power BI-Dienst gelten automatische Seitenaktualisierungseinschränkungen basierend auf Faktoren wie dem Arbeitsbereich und sind davon abhängig, ob Premium-Dienste verwendet werden.
 
-Um zu verdeutlichen, wie dies funktioniert, beginnen wir mit einigen Hintergrundinformationen zu [Kapazitäten und Arbeitsbereichen](whitepaper-powerbi-premium-deployment.md#capacities).
+Um zu verdeutlichen, wie dies funktioniert, beginnen wir mit einigen Hintergrundinformationen zu Kapazitäten und Arbeitsbereichen:
 
-**Kapazitäten** sind ein zentrales Konzept von Power BI, das eine Reihe von Ressourcen (Speicher, Prozessor und Arbeitsspeicher) darstellt, die zum Hosten und Bereitstellen von Power BI-Inhalten verwendet werden. Kapazitäten werden entweder gemeinsam genutzte oder sind dediziert. Eine **gemeinsam genutzte Kapazität** wird für andere Microsoft-Kunden freigegeben, während eine **dedizierte Kapazität** vollständig einem einzelnen Kunden zugewiesen wird. Dedizierte Kapazitäten werden im Artikel [Premium-Kapazitäten](whitepaper-powerbi-premium-deployment.md#capacities) vorgestellt.
+**Kapazitäten** sind ein zentrales Konzept von Power BI, das eine Reihe von Ressourcen (Speicher, Prozessor und Arbeitsspeicher) darstellt, die zum Hosten und Bereitstellen von Power BI-Inhalten verwendet werden. Kapazitäten werden entweder gemeinsam genutzte oder sind dediziert. Eine **gemeinsam genutzte Kapazität** wird für andere Microsoft-Kunden freigegeben, während eine **dedizierte Kapazität** vollständig einem einzelnen Kunden zugewiesen wird. Dedizierte Kapazitäten werden im Artikel [Verwalten von Premium-Kapazitäten](service-premium-capacity-manage.md) vorgestellt.
 
 Bei gemeinsam genutzten Kapazitäten werden Workloads auf Computeressourcen ausgeführt, die gemeinsam mit anderen Kunden genutzt werden. Da die Kapazität Ressourcen gemeinsam nutzen muss, werden Einschränkungen auferlegt, um *Fairplay* zu gewährleisten, z.B. das Festlegen einer maximalen Modellgröße (1 GB) und einer maximalen täglichen Aktualisierungshäufigkeit (acht Mal pro Tag).
 
@@ -123,7 +123,7 @@ Im Folgenden finden Sie einige Details zu den beiden Arbeitsbereichsszenarien:
 
  2. *Minimales Aktualisierungsintervall*: Wenn Sie die Funktion aktivieren, muss der Kapazitätsadministrator ein minimales Aktualisierungsintervall einrichten. Wenn Ihr Intervall niedriger als das Minimum ist, überschreibt der Power BI-Dienst das Intervall, um das von Ihrem Kapazitätsadministrator festgelegte Mindestintervall zu berücksichtigen.
 
-In der folgenden Tabelle werden weitere Details zur Verfügbarkeit dieses Features und den Grenzwerten für die einzelnen Kapazitätstypen und [Speichermodi](whitepaper-powerbi-premium-deployment.md#model-storage-modes) beschrieben.
+In der folgenden Tabelle werden weitere Details zur Verfügbarkeit dieses Features und den Grenzwerten für die einzelnen Kapazitätstypen und [Speichermodi](service-dataset-modes-understand.md) beschrieben.
 
 | Speichermodus | Dedizierte Kapazität | Gemeinsam genutzte Kapazität |
 | --- | --- | --- |

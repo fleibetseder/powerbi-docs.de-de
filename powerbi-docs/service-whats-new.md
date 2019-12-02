@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/22/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: c470eba3998e04fde8c00c619077d5d8db444b42
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 06e46413be709ac3eda2102332740d709092187e
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099734"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265337"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Neuigkeiten bei Power BI
 Auf dieser Seite finden Sie Informationen zu bekannten Problemen und kürzlich veröffentlichen Features im **Power BI-Dienst**. Informationen zu verwandten Neuigkeiten finden Sie unter:
@@ -30,7 +30,7 @@ Sehen Sie sich auch die YouTube-Kanäle an, um Informationen zu Neuerungen und F
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
 ### <a name="october-2019"></a>Oktober 2019
-* Neue Microsoft Flow-Aktion zum Aktualisieren von Power BI-Datasets.
+* Neue Power Automate-Aktion zum Aktualisieren von Power BI-Datasets.
 * [Kontaktliste](https://powerbi.microsoft.com/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) für Berichte und Dashboards im Power BI-Dienst
 
 ## <a name="previous-months-2019"></a>Vorherige Monate (2019)
@@ -227,7 +227,7 @@ Sehen Sie sich auch die YouTube-Kanäle an, um Informationen zu Neuerungen und F
 * [Power BI-Überwachungsprotokolle](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#auditlogs) im Office 365-Überwachungsportal sind global verfügbar.
 * Version 1.4 von [Entwicklertools und APIs für benutzerdefinierte Visualisierungen](https://powerbi.microsoft.com/blog/new-apis-available-for-custom-visuals-developers/) wurde freigegeben.
 * [Funktionsgruppe für Echtzeitstreaming](https://powerbi.microsoft.com/blog/announcing-general-availability-of-power-bi-real-time-streaming-datasets/) wurde zur allgemeinen Verfügbarkeit freigegeben.
-* [Übertragen von Daten per Push an Power BI mit Microsoft Flow](https://powerbi.microsoft.com/blog/push-rows-to-a-power-bi-streaming-dataset-without-writing-any-code-using-microsoft-flow/), ohne eine Codezeile schreiben zu müssen.
+* [Übertragen von Daten per Push an Power BI mit Power Automate](https://powerbi.microsoft.com/blog/push-rows-to-a-power-bi-streaming-dataset-without-writing-any-code-using-microsoft-flow/), ohne Code schreiben zu müssen.
 * Vorschauversion: [Abonnieren von Berichtsseiten](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/), um den Überblick über Ihre Daten zu behalten.
 * Verwenden des Azure AD-Inhaltspakets, um besser zu wissen, wie Ihre Mitarbeiter und Partner Azure AD verwenden.
 
@@ -530,7 +530,6 @@ Im [Power BI-Blog](https://blogs.msdn.com/b/powerbi/archive/2015/12/16/more-powe
 
 * Automatische Erkennung von Trends und Mustern in einem Dataset mit Schnelleinblicken: [Video](https://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-updates-from-browser-to-desktop-and-new-automated-insights-mf.aspx) oder [Artikel](consumer/end-user-insights.md)
 * [Visualize your VMob data in Power BI (in englischer Sprache)](https://blogs.msdn.com/b/powerbi/archive/2015/11/25/visualize-your-vmob-data-in-power-bi.aspx)
-* [Announcing Power BI integration with Cortana and new ways to quickly find insights in your data (in englischer Sprache)](https://blogs.msdn.com/b/powerbi/archive/2015/12/01/announcing-power-bi-integration-with-cortana-and-new-ways-to-quickly-find-insights-in-your-data.aspx)
 * [Announcing preview of Power BI gateway for enterprise deployments (in englischer Sprache)](https://blogs.msdn.com/b/powerbi/archive/2015/12/02/announcing-preview-of-power-bi-gateway-for-enterprise-deployments.aspx)
 * Einführung eines neuen Inhaltspakets: [Search Analytics from Bing on your Power BI Dashboards](https://blogs.msdn.com/b/powerbi/archive/2015/12/02/search-analytics-from-bing-on-your-power-bi-dashboards.aspx) (Suchanalyse über Bing in Ihren Power BI-Dashboards)
 * Neue Verbesserungen für Entwickler: [Zwei neue APIs und einfachere App-Registrierung](https://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-for-developers-reports-api-and-a-simple-app-registration-experience.aspx)

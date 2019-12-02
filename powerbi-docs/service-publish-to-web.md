@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/16/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9f8da4a5f37eb1e652dd2125dd588febf49fb01b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 1fd640922f132f56a03b37ed59a6267a5af83d00
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871850"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311705"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Veröffentlichen im Web aus Power BI
 
@@ -135,7 +135,8 @@ Benutzerdefinierte visuelle Elemente werden von **Im Web veröffentlichen**unter
 - ArcGIS Maps for Power BI-Visuals
 - Berichte, die DAX-Measures auf Berichtebene enthalten
 - SSO-Datenabfragemodelle
-- [Geschützte vertrauliche oder proprietäre Informationen](#publish-to-web-from-power-bi)
+- Geschützte vertrauliche oder proprietäre Informationen
+- [Freigegebene und zertifizierte Datasets](service-datasets-share.md).
 - Die Funktion zur automatischen Authentifizierung, die von der Option **Einbetten** unterstützt wird, kann nicht mit der Power BI-JavaScript-API verwendet werden. Verwenden Sie zum Einbetten mit der Power BI-JavaScript-API die Methode [Benutzer ist Besitzer der Daten](developer/embed-sample-for-your-organization.md).
 
 ## <a name="tenant-setting"></a>Mandanteneinstellung

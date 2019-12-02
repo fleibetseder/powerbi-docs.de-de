@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: d6368ae61b2813972c3209e2af456ba5aa5fb81b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 160c5736bc2894e629f5bb375dd07e993def1e0c
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874019"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265547"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Beispiel zur Kundenrentabilität für Power BI: Übersicht
 
@@ -128,7 +128,7 @@ Viele Kacheln im Dashboard „Customer Profitability Sample“ wurden aus dem zu
 
     * Auf der Seite **Team Scorecard** werden die Leistung der fünf Manager und ihre Umsatzdaten aufgeführt.
     * Auf der Seite **Industry Margin Analysis** wird die Rentabilität im Vergleich zur gesamten Branche analysiert.
-    * Auf der Seite **Executive Scorecard** wird eine für Cortana formatierte Ansicht der Daten der einzelnen Manager geboten.
+    * Auf der Seite **Executive Scorecard** finden Sie eine Ansicht der Daten der einzelnen Manager in einem benutzerdefinierten Seitenformat.
 
 ### <a name="team-scorecard-page"></a>Seite „Team-Scorecard“
 ![Berichtseite „Team-Scorecard“](media/sample-customer-profitability/customer2.png)
@@ -170,7 +170,7 @@ Auf dieser Berichtsseite wird ein anderes Segment der Daten bereitgestellt. Es g
    * Valery, die nur für ein Produkt verantwortlich ist, bearbeitet nur fünf Branchensegmente. Valerys Brancheneinfluss ist saisonabhängig, aber es ergibt sich immer eine große Blase. Dies deutet auf einen signifikanten Beitrag zum Gesamtergebnis des Unternehmens hin. Kann ihre negative Leistung anhand der Segmente für die Branche erklärt werden?
 
 ### <a name="executive-scorecard"></a>Executive Scorecard
-Diese Seite wird als Cortana-Antwortseite formatiert. Weitere Informationen finden Sie unter [Verwenden des Power BI-Diensts oder von Power BI Desktop zum Erstellen einer benutzerdefinierten Antwortseite für Cortana](service-cortana-answer-cards.md).
+Diese Seite verfügt über ein benutzerdefiniertes Seitenformat.
 
 ## <a name="dig-into-the-data-by-asking-questions-with-qa"></a>Näheres Untersuchen der Daten durch Stellen von Fragen mit Q&A
 Für die Analyse kann es hilfreich sein, zu ermitteln, in welcher Branche Valery den höchsten Umsatz erzielt. Hierfür verwenden wir Q&A.

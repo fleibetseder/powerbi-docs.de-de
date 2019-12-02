@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/21/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e26b50d571cfffeae1c93f37e715eca24ff4f12e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8f5d11b53526c5d266b96a8f21c42fecc66d3795
+ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871557"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74163772"
 ---
 # <a name="data-alerts-in-the-power-bi-service"></a>Datenwarnungen im Power BI-Dienst
 
@@ -23,7 +23,7 @@ Legen Sie Warnungen fest, um Benachrichtigungen zu erhalten, wenn die Daten in d
 
 Sie können Warnungen für Kacheln festlegen, wenn Sie über eine Power BI Pro-Lizenz verfügen. Sie können auch Warnungen festlegen, wenn jemand ein Dashboard in einer [Premium-Kapazität](service-premium-what-is.md) freigibt. Warnungen können nur für Kacheln, die über Berichtsvisuals angeheftet wurden, und nur für Messgeräte, KPIs und Karten festgelegt werden. Warnungen können für Visuals festgelegt werden, die aus Streamingdatasets erstellt wurden, die Sie aus einem Bericht an ein Dashboard anheften. Warnungen können nicht für Streamingkacheln festgelegt werden, die direkt auf dem Dashboard über **Kachel hinzufügen** > **Benutzerdefinierte Streamingdaten** erstellt wurden.
 
-Die Warnungen werden nur Ihnen angezeigt, auch wenn Sie das Dashboard freigeben. Nicht einmal der Besitzer des Dashboards kann Warnungen anzeigen, die Sie in ihrer Ansicht Ihres Dashboards festgelegt haben. Datenwarnungen werden mit allen Plattformen synchronisiert. Sie können Datenwarnungen daher [in den mobilen Power BI-Apps](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) und im Power BI-Dienst festlegen und anzeigen. Für Power BI Desktop sind sie nicht verfügbar. Sie können Warnungen sogar mit Microsoft Flow automatisieren und integrieren. Sie können es selbst in diesem [Microsoft Flow und Power BI](service-flow-integration.md)-Artikel ausprobieren.
+Die Warnungen werden nur Ihnen angezeigt, auch wenn Sie das Dashboard freigeben. Nicht einmal der Besitzer des Dashboards kann Warnungen anzeigen, die Sie in ihrer Ansicht Ihres Dashboards festgelegt haben. Datenwarnungen werden mit allen Plattformen synchronisiert. Sie können Datenwarnungen daher [in den mobilen Power BI-Apps](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) und im Power BI-Dienst festlegen und anzeigen. Für Power BI Desktop sind sie nicht verfügbar. Sie können Warnungen sogar mit Power Automate automatisieren und integrieren. Sie können es selbst in diesem [Power Automate und Power BI](service-flow-integration.md)-Artikel ausprobieren.
 
 ![Kacheln](media/service-set-data-alerts/powerbi-alert-types-new.png)
 
@@ -125,7 +125,7 @@ Es gibt viele Möglichkeiten zum Verwalten von Warnungen:
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-* [Erstellen Sie einen Flow in Microsoft Flow, der eine Datenwarnung enthält.](service-flow-integration.md)
+* [Erstellen Sie einen Flow in Power Automate, der eine Datenwarnung enthält.](service-flow-integration.md)
 
 * [Legen Sie Datenwarnungen auf Ihrem mobilen Gerät fest.](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 

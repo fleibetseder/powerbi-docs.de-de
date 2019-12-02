@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 8bb3597d2877376431a2249428e88d56bee2c0a1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cf1d67318fc86b1044e38e6f4f5f56c9473c39a1
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871810"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265492"
 ---
 # <a name="enable-qa-for-live-connections-in-power-bi"></a>Aktivieren von Q&A für Liveverbindungen in Power BI
 ## <a name="what-is-the-on-premises-data-gateway--what-is-a-live-connection"></a>Was ist das lokale Datengateway?  Was ist eine Liveverbindung?
@@ -23,9 +23,9 @@ Sie können Datasets in Power BI importieren oder eine Liveverbindung zu den Da
 ## <a name="qa-for-on-premises-data-gateway-datasets"></a>Q&A für Datasets mit Zugriff über das lokale Datengateway
 Wenn Sie F&A mit Datasets verwenden möchten, auf die Sie über ein Gateway zugreifen, müssen Sie die Datasets zuerst aktivieren.
 
-Nach der Aktivierung erstellt Power BI einen Index für Ihre Datenquelle und lädt eine Teilmenge der Daten in Power BI hoch, um das Stellen von Fragen zu ermöglichen. Das Erstellen des anfänglichen Index kann mehrere Minuten dauern. Dieser wird anschließend von Power BI verwaltet und bei Datenänderungen automatisch aktualisiert. Das F&A-Feature verhält sich mit diesen Datasets genauso wie mit in Power BI veröffentlichten Daten. In beiden Fällen wird der vollständige in F&A verfügbare Feature-Satz einschließlich der Verwendung der Datenquelle mit Cortana unterstützt.
+Nach der Aktivierung erstellt Power BI einen Index für Ihre Datenquelle und lädt eine Teilmenge der Daten in Power BI hoch, um das Stellen von Fragen zu ermöglichen. Das Erstellen des anfänglichen Index kann mehrere Minuten dauern. Dieser wird anschließend von Power BI verwaltet und bei Datenänderungen automatisch aktualisiert. Das F&A-Feature verhält sich mit diesen Datasets genauso wie mit in Power BI veröffentlichten Daten. In beiden Fällen wird der vollständige in F&A verfügbare Feature-Satz unterstützt.
 
-Wenn Sie in Power BI Fragen stellen, ermittelt F&A die beste Visualisierung bzw. den besten Bericht, um Ihre Fragen mithilfe eines Index Ihres Datasets zu beantworten. Nachdem die bestmögliche Antwort ermittelt wurde, ruft Q&A mithilfe von DirectQuery Livedaten aus der Datenquelle über das Gateway ab, um Diagrammen und Grafiken zu füllen. Dadurch zeigen die F&A-Ergebnisse in Power BI stets die aktuellen Daten direkt aus der zugrunde liegenden Datenquelle an.
+Wenn Sie in Power BI Fragen stellen, ermittelt F&A die beste Visualisierung bzw. den besten Bericht, um Ihre Fragen mithilfe eines Index Ihres Datasets zu beantworten. Nachdem die bestmögliche Antwort ermittelt wurde, ruft Q&A mithilfe von DirectQuery Livedaten aus der Datenquelle über das Gateway ab, um Diagrammen und Grafiken zu füllen. Dadurch zeigt Power BI Q&A stets die aktuellen Daten direkt aus der zugrunde liegenden Datenquelle an.
 
 Da Power BI F&A die Text- und Schemawerte aus Ihrer Datenquelle verwenden, um zu ermitteln, wie das zugrunde liegende Modell für Antworten abgefragt werden soll, ist bei Suchen nach speziellen neuen oder gelöschten Textwerten (wie Fragen im Zusammenhang mit einem neu hinzugefügten Textdatensatz für einen Kunden) wichtig, dass der Index die aktuellen Werte enthält. Power BI aktualisiert den Text- und Schemaindex automatisch innerhalb von 60 Minuten nach einer Datenänderung.
 
@@ -43,12 +43,12 @@ Nachdem Sie das Datengateway eingerichtet haben, stellen Sie aus Power BI eine 
 2. Wählen Sie **Datasets**, und wählen Sie das für Q&A aktivierte Dataset aus.
    
    ![Anzeige „Datasets“ im Menü „Einstellungen“](media/service-q-and-a-direct-query/power-bi-q-and-a-settings.png)
-3. Erweitern Sie **Q&A and Cortana**, aktivieren Sie das Kontrollkästchen **Turn on Q&A for this dataset**, und wählen Sie **Anwenden**.
+3. Erweitern Sie **Q&A**, aktivieren Sie das Kontrollkästchen **Q&A für dieses Dataset aktivieren**, und wählen Sie **Anwenden**.
    
-    ![Erweiterter Q&A-Bereich](media/service-q-and-a-direct-query/power-bi-q-and-a-directquery.png)
+    ![Erweiterter Q&A-Bereich](media/service-q-and-a-direct-query/power-bi-qna-dataset-direct-query.png)
 
 ## <a name="what-data-is-cached-and-how-is-privacy-protected"></a>Welche Daten werden zwischengespeichert, und wie werden Daten geschützt?
-Wenn Sie F&A für Ihre lokalen Daten aktivieren, wird eine Teilmenge der Daten im Dienst zwischengespeichert. Damit wird eine akzeptable Leistung von F&A sichergestellt. Werte, die länger als 24 Zeichen sind, werden in Power BI nicht zwischengespeichert. Wenn Sie F&A deaktivieren (durch Deaktivieren von **Turn on Q&A for this dataset**) oder Ihr Dataset löschen, wird der Cache innerhalb weniger Stunden gelöscht.
+Wenn Sie F&A für Ihre lokalen Daten aktivieren, wird eine Teilmenge der Daten im Dienst zwischengespeichert. Durch die Zwischenspeicherung wird eine akzeptable Leistung von Q&A sichergestellt. Werte, die länger als 24 Zeichen sind, werden in Power BI nicht zwischengespeichert. Wenn Sie F&A deaktivieren (durch Deaktivieren von **Turn on Q&A for this dataset**) oder Ihr Dataset löschen, wird der Cache innerhalb weniger Stunden gelöscht.
 
 ## <a name="considerations-and-troubleshooting"></a>Zu beachtende Aspekte und Problembehandlung
 Die Funktion weist einige Einschränkungen auf:
@@ -56,7 +56,7 @@ Die Funktion weist einige Einschränkungen auf:
 * Das Feature ist zunächst nur für tabellarische SQL Server 2016 Analysis Services-Datenquellen verfügbar. Das Feature wurde für die Zusammenarbeit mit tabellarischen Daten optimiert. Die Q&A-Funktion wird noch nicht für mehrere Dimensionen unterstützt. Im Lauf der Zeit werden weitere vom lokalen Datengateway unterstützte Datenquellen eingeführt.
 * Die in SQL Server Analysis Services definierte vollständige Unterstützung der Sicherheit auf Zeilenebene steht nicht von Beginn an zur Verfügung. Bei der Eingabe von Fragen in Q&A können durch die „automatische Vervollständigung“ Zeichenfolgenwerte angezeigt werden, auf die der Benutzer keinen Zugriff hat. Die im Modell definierte Sicherheit auf Zeilenebene wird jedoch für Berichts- und Diagrammvisualisierungen respektiert, wobei keine zugrunde liegenden numerischen Daten angezeigt werden können. Optionen zum Steuern dieses Verhalten werden in kommenden Updates veröffentlicht.
 * Die Sicherheit auf Objektebene wird nicht unterstützt. Q&A berücksichtigt die Sicherheit auf Objektebene nicht und kann Tabellen- oder Spaltennamen für Benutzer offenlegen, die keinen Zugriff darauf haben. Sie sollten die Sicherheit auf Zeilenebene aktivieren, um sicherzustellen, dass Datenwerte angemessen gesichert sind. 
-* Liveverbindungen werden nur mit dem lokalen Datengateway unterstützt. Daher können sie nicht mit dem persönlichen Gateway verwendet werden.
+* Liveverbindungen werden nur mit dem lokalen Datengateway unterstützt. Daher kann dieses Feature nicht mit dem persönlichen Gateway verwendet werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

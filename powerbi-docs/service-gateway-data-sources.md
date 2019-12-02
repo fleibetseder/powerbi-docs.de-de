@@ -10,18 +10,18 @@ ms.date: 07/15/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 1966a9ea38f8ff9d1517b4df5ed0db1254ddf80d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cb28db10eecdc32f844e29c8beea178f08fbf920
+ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881777"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74410866"
 ---
 # <a name="manage-data-sources"></a>Verwalten von Datenquellen
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Power BI unterstützt viele lokale Datenquellen, von denen jede eigene Anforderungen aufweist. Ein Gateway kann für eine oder mehrere Datenquellen verwendet werden. In diesem Beispiel erfahren Sie, wie Sie SQL Server als Datenquelle hinzufügen. Die Schritte ähneln denen für andere Datenquellen.
+Power BI unterstützt viele [lokale Datenquellen](power-bi-data-sources.md), von denen jede eigene Anforderungen aufweist. Ein Gateway kann für eine oder mehrere Datenquellen verwendet werden. In diesem Beispiel erfahren Sie, wie Sie SQL Server als Datenquelle hinzufügen. Die Schritte ähneln denen für andere Datenquellen.
 
 Die meisten Verwaltungsvorgänge für Datenquellen können auch mit APIs ausgeführt werden. Weitere Informationen finden Sie unter [REST-APIs (Gateways)](/rest/api/power-bi/gateways).
 
@@ -101,7 +101,7 @@ Sie können Benutzern und Sicherheitsgruppen auch Verwaltungszugriff auf das Gat
 
 4. Klicken Sie auf **Hinzufügen**, woraufhin das hinzugefügte Mitglied im Feld angezeigt wird.
 
-    ![Hinzufügen von Benutzern](media/service-gateway-data-sources/add-user.png)
+    ![Benutzer hinzufügen](media/service-gateway-data-sources/add-user.png)
 
 Denken Sie daran, dass Sie jeder Datenquelle, für die Sie den Zugriff gewähren möchten, Benutzer hinzufügen müssen. Jede Datenquelle verfügt über eine separate Liste von Benutzern. Fügen Sie Benutzer jeder Datenquelle separat hinzu.
 
@@ -117,56 +117,7 @@ Beim Hinzufügen einer Datenquelle für das Gateway müssen Sie für diese Daten
 
 ## <a name="list-of-available-data-source-types"></a>Liste der verfügbaren Datenquellentypen
 
-Das lokale Datengateway unterstützt die folgenden Datenquellen für Power BI. Zusätzlich zu lokalen Datenquellen ist für Quellen mit einer Firewall, einem VPN oder einem virtuellen Netzwerk möglicherweise auch ein Datengateway erforderlich.
-
-| **Datenquelle** | **Live/DirectQuery** | **(Vom Benutzer konfigurierte) manuelle oder geplante Aktualisierung** |
-| --- | --- | --- |
-| Amazon Redshift |Ja |Ja |
-| Analysis Services |Ja |Ja |
-| AtScale-Cubes |Ja |Ja |
-| Azure Active Directory |Nein |Ja |
-| Azure Blob Storage |Nein |Ja |
-| Azure DevOps Server |Nein |Ja |
-| Azure Table Storage |Nein |Ja |
-| BI-Connector |Ja |Ja |
-| Denodo |Ja |Ja |
-| Dremio |Ja |Ja |
-| EmigoDataSourceConnector |Nein |Ja |
-| Essbase |Ja |Ja |
-| Exasol |Ja |Ja |
-| Datei |Nein |Ja |
-| Ordner |Nein |Ja |
-| Paxata |Nein |Ja |
-| IBM DB2 |Ja |Ja |
-| IBM Informix-Datenbank |Nein |Ja |
-| IBM Netezza |Ja |Ja |
-| Impala |Ja |Ja |
-| Jethro ODBC |Ja |Ja |
-| Kyligence Enterprise |Ja |Ja |
-| MarkLogic ODBC |Ja |Ja |
-| Microsoft Graph-Sicherheit |Nein |Ja |
-| MySQL |Nein |Ja |
-| ODBC |Nein |Ja |
-| OData |Nein |Ja |
-| OLE DB |Nein |Ja |
-| Oracle |Ja |Ja |
-| PostgreSQL |Nein |Ja |
-| QubolePresto |Ja |Ja |
-| Quick Base-Connector |Nein |Ja |
-| SAP Business Warehouse-Nachrichtenserver |Ja |Ja |
-| SAP Business Warehouse-Server |Ja |Ja |
-| SAP HANA |Ja |Ja |
-| SQL Server |Ja |Ja |
-| SharePoint |Nein |Ja |
-| Snowflake |Ja |Ja |
-| Spark |Ja |Ja |
-| SurveyMonkey |Nein |Ja |
-| Sybase |Nein |Ja |
-| TeamDesk.Database |Nein |Ja |
-| Teradata |Ja |Ja |
-| Vertica |Ja |Ja |
-| Web |Nein |Ja |
-| Workforce Dimensions |Nein |Ja |
+Informationen zu den Datenquellen, die das lokale Datengateway unterstützt, finden Sie unter [Power BI-Datenquellen](power-bi-data-sources.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

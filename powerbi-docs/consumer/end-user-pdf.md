@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5d26327e41e4236a3ea5e0eca2246c6f66a64be4
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 8041fee4689c6319f219c26f20701c6062601a64
+ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099133"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164206"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exportieren von Power BI-Berichten als PDF-Dateien
 
@@ -61,6 +61,7 @@ Einige Aspekte und Einschränkungen sind bei der Arbeit mit dem Feature **In PDF
 * Wenn Sie Berichte mit Hintergrundbild in eine PDF-Datei exportieren und für den **Seitenhintergrund** die Optionen **Normal** oder **Füllung** verwenden, wird das Bild im Export möglicherweise verzerrt dargestellt. Wenn Sie optimale Ergebnisse erzielen möchten, verwenden Sie die Option **Anpassen**, um Probleme mit dem exportierten Dokument zu vermeiden.
 * Der Power BI-Dienst verwendet Ihre Power BI-Spracheinstellung, um die Sprache für den PDF-Export festzulegen. Sie können die Spracheinstellung anzeigen oder festlegen, indem Sie das Zahnradsymbol ![Zahnradsymbol](media/end-user-powerpoint/power-bi-settings-icon.png) > **Einstellungen** > **Allgemein** > **Sprache** auswählen.
 * URL-Filter werden zurzeit nicht beachtet, wenn Sie **Aktuelle Werte** für Ihren Export auswählen.
+* Bei Berichten mit ungewöhnlichen benutzerdefinierten Seitengrößen können in Exportszenarien Probleme auftreten. Um optimale Ergebnisse zu erzielen, sollten Sie zu einer Standardseitengröße für den Bericht wechseln.
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Drucken eines Berichts](end-user-print.md)

@@ -1,5 +1,5 @@
 ---
-title: Integration von Power BI in Microsoft Flow
+title: Integration von Power BI in Power Automate
 description: Erfahren Sie, wie Sie Flows erstellen, die durch Power BI-Datenwarnungen ausgelöst werden.
 author: mgblythe
 ms.reviewer: ''
@@ -10,16 +10,16 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: a5b5a34e7cd61ac9d197faa0ef4410cd9558f597
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c8d768e1d02846eca10c6100aa8ec30dbb7f704b
+ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881841"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164325"
 ---
-# <a name="microsoft-flow-and-power-bi"></a>Microsoft Flow und Power BI
+# <a name="power-automate-and-power-bi"></a>Power Automate und Power BI
 
-[Microsoft Flow](https://flow.microsoft.com/documentation/getting-started) ist ein SaaS-Dienst zum Automatisieren von Workflows zwischen den immer zahlreicheren Anwendungen und SaaS-Diensten, auf die Geschäftsbenutzer zugreifen. Mit Flow können Sie Aufgaben automatisieren, indem Sie Ihre bevorzugten Apps und Dienste (einschließlich Power BI) synchronisieren, um Benachrichtigungen zu erhalten, Dateien zu synchronisieren, Daten zu sammeln und weitere Aktionen ausführen zu lassen. Die Automatisierung von Workflows vereinfacht Aufgaben, die sich wiederholen.
+[Power Automate](https://flow.microsoft.com/documentation/getting-started) ist ein SaaS-Dienst zum Automatisieren von Workflows zwischen den immer zahlreicheren Anwendungen und SaaS-Diensten, auf die Geschäftsbenutzer zugreifen. Mit Flow können Sie Aufgaben automatisieren, indem Sie Ihre bevorzugten Apps und Dienste (einschließlich Power BI) synchronisieren, um Benachrichtigungen zu erhalten, Dateien zu synchronisieren, Daten zu sammeln und weitere Aktionen ausführen zu lassen. Die Automatisierung von Workflows vereinfacht Aufgaben, die sich wiederholen.
 
 [Erste Schritte mit Flow](https://flow.microsoft.com/documentation/getting-started)
 
@@ -30,12 +30,12 @@ Sehen Sie sich an, wie Sirui einen Flow erstellt, der eine detaillierte E-Mail a
 ## <a name="create-a-flow-that-is-triggered-by-a-power-bi-data-alert"></a>Erstellen eines Flows, der durch eine Power BI-Datenwarnung ausgelöst wird
 
 ### <a name="prerequisites"></a>Voraussetzungen
-In diesem Tutorial erfahren Sie, wie Sie zwei verschiedene Flows erstellen: einen Flow aus einer Vorlage und einen von Grund auf neuen Flow. Um die Schritte des Tutorials auszuführen, [erstellen Sie in Power BI eine Datenwarnung](service-set-data-alerts.md), erstellen ein kostenloses Slack-Konto und [registrieren Sie sich für Microsoft Flow](https://flow.microsoft.com/#home-signup) (kostenlos!).
+In diesem Tutorial erfahren Sie, wie Sie zwei verschiedene Flows erstellen: einen Flow aus einer Vorlage und einen von Grund auf neuen Flow. Um die Schritte des Tutorials auszuführen, [erstellen Sie in Power BI eine Datenwarnung](service-set-data-alerts.md), erstellen ein kostenloses Slack-Konto und [registrieren Sie sich für Power Automate](https://flow.microsoft.com/#home-signup) (kostenlos!).
 
 ## <a name="create-a-flow-that-uses-power-bi---from-a-template"></a>Erstellen eines Flows, der Power BI verwendet – aus einer Vorlage
 In dieser Aufgabe verwenden wir eine Vorlage, um einen einfachen Flow zu erstellen, der durch eine Power BI-Datenwarnung (Benachrichtigung) ausgelöst wird.
 
-1. Melden Sie sich bei Microsoft Flow („flow.microsoft.com“) an.
+1. Melden Sie sich bei Power Automate (flow.microsoft.com) an.
 2. Wählen Sie **Meine Flows** aus.
    
    ![Menüleiste „Flow“](media/service-flow-integration/power-bi-my-flows.png)
@@ -80,7 +80,7 @@ Diese Vorlage verfügt über einen Trigger (Power BI-Datenwarnung bei neuen Olym
 ## <a name="create-a-flow-that-uses-power-bi---from-scratch-blank"></a>Erstellen eines Flows, der Power BI verwendet – ohne Vorlage (leer)
 In dieser Aufgabe erstellen wir einen einfachen Flow von Grund auf neu, der durch eine Power BI-Datenwarnung (Benachrichtigung) ausgelöst wird.
 
-1. Melden Sie sich bei Microsoft Flow an.
+1. Melden Sie sich bei Power Automate an.
 2. Wählen Sie **Meine Flows** > **Ohne Vorlage erstellen** aus.
    
    ![Obere Menüleiste „Flow“](media/service-flow-integration/power-bi-my-flows.png)
@@ -107,7 +107,7 @@ In dieser Aufgabe erstellen wir einen einfachen Flow von Grund auf neu, der durc
     ![Outlook-Benachrichtigung bei Auslösung des Flows](media/service-flow-integration/power-bi-flow-notice.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
-* [Erste Schritte mit Microsoft Flow](https://flow.microsoft.com/documentation/getting-started/)
+* [Erste Schritte mit Power Automate](https://flow.microsoft.com/documentation/getting-started/)
 * [Festlegen von Datenwarnungen im Power BI-Dienst](service-set-data-alerts.md)
 * [Festlegen von Datenwarnungen auf dem iPhone](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Festlegen von Datenwarnungen in der mobilen Power BI-App für Windows 10](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)

@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/05/2019
 ms.author: v-pemyer
-ms.openlocfilehash: c61a21f400de009815ecb685f989b1cdafbcdb22
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 5560181f2fc52a02eebce274d88dc66517181517
+ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875603"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74410778"
 ---
 # <a name="data-reduction-techniques-for-import-modeling"></a>Verfahren zur Datenreduktion für die Importmodellierung
 
@@ -24,11 +24,11 @@ In Importmodelle werden Daten geladen, die zuerst komprimiert und optimiert und 
 Trotz der Effizienz der VertiPaq-Speicher-Engine sollten Sie die Daten, die in Ihre Modelle geladen werden, so weit wie möglich reduzieren. Dies gilt insbesondere für große Modelle und Modelle, die im Laufe der Zeit voraussichtlich größer werden. Vier Gründe sprechen für eine Reduktion der Daten:
 
 - Größere Modelle werden von Ihrer Kapazität möglicherweise nicht unterstützt. Eine gemeinsam genutzte Kapazität kann Modelle mit einer Größe von bis zu 1 GB hosten, während Premium-Kapazitäten Modelle mit einer Größe von bis zu 13 GB hosten können. Weitere Informationen finden Sie im Artikel [Unterstützung von Datasets in Power BI Premium](../service-premium-large-datasets.md).
-- Kleinere Modelle führen zu weniger Konflikten bei Kapazitätsressourcen. Dies gilt insbesondere für den Arbeitsspeicher. Dadurch können mehr Modelle über längere Zeiträume gleichzeitig geladen werden, was zu niedrigeren Entfernungsraten führt. Weitere Informationen finden Sie im Whitepaper [Power BI Premium-Bereitstellung](../whitepaper-powerbi-premium-deployment.md) unter [Funktionsweise von Kapazitäten](../whitepaper-powerbi-premium-deployment.md#how-capacities-function).
+- Kleinere Modelle führen zu weniger Konflikten bei Kapazitätsressourcen. Dies gilt insbesondere für den Arbeitsspeicher. Dadurch können mehr Modelle über längere Zeiträume gleichzeitig geladen werden, was zu niedrigeren Entfernungsraten führt. Weitere Informationen finden Sie unter [Verwalten von Premium-Kapazitäten](../service-premium-capacity-manage.md).
 - In kleineren Modellen werden Daten schneller aktualisiert, was zu niedrigeren Latenzen, einem höheren Durchsatz bei Aktualisierungen von Datasets und einer geringeren Auslastung des Quellsystems sowie der Kapazitätsressourcen führt.
 - Eine geringere Anzahl von Tabellenzeilen kann zu einer schnelleren Auswertung der Berechnungen führen, wodurch eine Zunahme der Gesamtabfrageleistung möglich ist.
 
-In diesem Artikel werden acht Verfahren zur Reduktion von Daten behandelt. Dazu gehören:
+In diesem Artikel werden acht Verfahren zur Reduktion von Daten behandelt. Diese Verfahren umfassen Folgendes:
 
 - [Entfernen von unnötigen Spalten](#remove-unnecessary-columns)
 - [Entfernen von unnötigen Zeilen](#remove-unnecessary-rows)
@@ -43,12 +43,12 @@ In diesem Artikel werden acht Verfahren zur Reduktion von Daten behandelt. Dazu 
 
 Tabellenspalten in Modellen erfüllen zwei Hauptaufgaben:
 
-- **Berichterstellung:** Bei diesem Vorgang sollen Berichtsentwürfe entstehen, mit denen sich Modelldaten filtern, gruppieren und zusammenfassen lassen.
+- **Berichterstellung**: Bei diesem Vorgang sollen Berichtsentwürfe entstehen, mit denen sich Modelldaten filtern, gruppieren und zusammenfassen lassen.
 - **Modellstrukturierung:** Bei diesem Vorgang werden Modellbeziehungen und -berechnungen, Sicherheitsrollen und sogar die Farbformatierung von Daten unterstützt.
 
 Spalten, die diese Aufgaben nicht erfüllen, können vermutlich entfernt werden. Das Entfernen von Spalten wird auch als _vertikales Filtern_ bezeichnet.
 
-Sie sollten für Ihre Modelle eine Spaltenzahl festlegen, die sich aus den Anforderungen an die Berichterstellung ergibt. Natürlich können sich diese Anforderungen im Laufe der Zeit ändern. Es ist jedoch einfacher, später Spalten hinzuzufügen, als zu entfernen. Wenn Spalten entfernt werden, kann das dazu führen, dass Berichte nicht mehr funktionieren oder die Modellstruktur Fehler aufweist.
+Sie sollten für Ihre Modelle eine Spaltenzahl festlegen, die sich aus den Anforderungen an die Berichterstellung ergibt. Diese Anforderungen können sich im Laufe der Zeit ändern. Es ist jedoch einfacher, später Spalten hinzuzufügen, als zu entfernen. Wenn Spalten entfernt werden, kann das dazu führen, dass Berichte nicht mehr funktionieren oder die Modellstruktur Fehler aufweist.
 
 ## <a name="remove-unnecessary-rows"></a>Entfernen von unnötigen Zeilen
 
@@ -62,7 +62,7 @@ Beim **Filtern nach Zeit** wird die Menge der _Verlaufsdaten_ begrenzt, die in F
 
 Das wohl effektivste Verfahren zur Verringerung der Modellgröße umfasst das Laden vorab zusammengefasster Daten. Bei dieser Methode kann die Granularität (Grain) der Faktentabellen erhöht werden. Der Nachteil besteht jedoch in einem Informationsverlust.
 
-Angenommen, in einer Faktentabelle mit Quelldaten zu Verkaufszahlen wird für jede Auftragsposition eine Zeile gespeichert. Wenn alle Verkaufsmetriken zusammengefasst und nach Datum, Kunde und Produkt gruppiert werden, könnte eine erhebliche Datenreduktion erzielt werden. Dieser Vorgang könnte sogar noch optimiert werden, wenn _auf der Monatsebene_ nach Datum gefiltert wird. Dadurch kann die Modellgröße zwar um bis zu 99 % verringert werden, jedoch ist dann eine Berichterstellung auf Tagesebene oder auf der Ebene einer Auftragsposition nicht mehr möglich. Wenn Daten aus Faktentabellen zusammengefasst werden, hat dies immer auch Nachteile. Die Auswirkungen dieser Nachteile lassen sich mit einem gemischten Modell einschränken. Dies wird im Abschnitt [Wechseln in den gemischten Modus](#switch-to-mixed-mode) beschrieben.
+Angenommen, in einer Faktentabelle mit Quelldaten zu Verkaufszahlen wird für jede Auftragsposition eine Zeile gespeichert. Wenn alle Verkaufsmetriken zusammengefasst und nach Datum, Kunde und Produkt gruppiert werden, könnte eine erhebliche Datenreduktion erzielt werden. Dieser Vorgang könnte sogar noch optimiert werden, wenn _auf der Monatsebene_ nach Datum gefiltert wird. Dadurch kann die Modellgröße zwar um bis zu 99 % verringert werden, jedoch ist dann eine Berichterstellung auf Tagesebene oder auf der Ebene einer Auftragsposition nicht mehr möglich. Wenn Daten aus Faktentabellen zusammengefasst werden, hat dies immer auch Nachteile. Die Auswirkungen dieser Nachteile lassen sich mit einem gemischten Modell verringern. Diese Möglichkeit wird im Abschnitt [Wechseln in den gemischten Modus](#switch-to-mixed-mode) beschrieben.
 
 ## <a name="optimize-column-data-types"></a>Optimieren von Spaltendatentypen
 
@@ -70,7 +70,7 @@ Die VertiPaq-Speicher-Engine verwendet für jede Spalte eigene Datenstrukturen. 
 
 In bestimmten Fällen können Sie Quelltextdaten in numerische Werte konvertieren. So kann beispielsweise Auftragsnummern durchgängig ein Textwert (z. B. „SO123456“) vorangestellt werden. Dieses Präfix könnte dann entfernt und der Wert der Auftragsnummer in eine ganze Zahl konvertiert werden. Bei großen Tabellen kann dies vor allem dann zu einer erheblichen Datenreduktion führen, wenn die Spalten eindeutige Werte oder Werte mit hoher Kardinalität enthalten.
 
-In diesem Beispiel wird empfohlen, die Spalteneigenschaft „Default Summarization“ (Standardzusammenfassung) auf „Nicht zusammenfassen“ festzulegen. Dadurch werden ungeeignete Zusammenfassungen der Auftragsnummerwerte vermieden.
+In diesem Beispiel wird empfohlen, die Spalteneigenschaft „Default Summarization“ (Standardzusammenfassung) auf „Nicht zusammenfassen“ festzulegen. Dadurch werden ungeeignete Zusammenfassungen der Auftragsnummernwerte vermieden.
 
 ## <a name="preference-for-custom-columns"></a>Verwenden von benutzerdefinierten Spalten
 
@@ -94,7 +94,7 @@ Power BI Desktop enthält eine Option mit dem Namen _Datum/Uhrzeit automatisch_.
 
 In Power BI Desktop wird im gemischten Modus ein zusammengesetztes Modell erzeugt. Damit können Sie den Speichermodus für _jede Tabelle_ festlegen. Für jede Tabelle kann daher die Eigenschaft „Speichermodus“ auf „Importieren“, „DirectQuery“ oder „Dual“ festgelegt werden.
 
-Ein wirksames Verfahren zum Verringern der Modellgröße besteht darin, die Eigenschaft „Speichermodus“ für größere Faktentabellen auf „DirectQuery“ festzulegen. Dieser Entwurfsansatz kann in einigen Fällen gut mit der Strategie kombiniert werden, die unter [Gruppieren nach und Zusammenfassen](#group-by-and-summarize) beschrieben wurde. So könnten z. B. zusammengefasste Verkaufsdaten verwendet werden, um Zusammenfassungsberichte effizient zu erstellen. Auf einer Drillthroughseite könnten außerdem Verkäufe für einen bestimmten (eingegrenzten) Filterkontext detailgenau aufgeführt werden, in dem alle zugehörigen Auftragspositionen angezeigt werden. In diesem Beispiel würde die Drillthroughseite Visuals enthalten, die auf einer DirectQuery-Tabelle basieren, mit der die Auftragsdaten abgerufen werden.
+Ein wirksames Verfahren zum Verringern der Modellgröße besteht darin, die Eigenschaft „Speichermodus“ für größere Faktentabellen auf „DirectQuery“ festzulegen. Dieser Entwurfsansatz kann in einigen Fällen gut mit der Strategie kombiniert werden, die im Verfahren [Gruppieren nach und Zusammenfassen](#group-by-and-summarize) weiter oben beschrieben wurde. So könnten z. B. zusammengefasste Verkaufsdaten verwendet werden, um Zusammenfassungsberichte effizient zu erstellen. Auf einer Drillthroughseite könnten außerdem Verkäufe für einen bestimmten (eingegrenzten) Filterkontext detailgenau aufgeführt werden, in dem alle zugehörigen Auftragspositionen angezeigt werden. In diesem Beispiel würde die Drillthroughseite Visuals enthalten, die auf einer DirectQuery-Tabelle basieren, mit der die Auftragsdaten abgerufen werden.
 
 Wenn Sie zusammengesetzte Modelle verwenden, müssen Sie jedoch auch zahlreiche Auswirkungen auf die Sicherheit und Leistung berücksichtigen. Weitere Informationen finden Sie im Artikel [Verwenden zusammengesetzter Modelle in Power BI Desktop](../desktop-composite-models.md).
 
@@ -103,4 +103,5 @@ Wenn Sie zusammengesetzte Modelle verwenden, müssen Sie jedoch auch zahlreiche 
 Weitere Informationen zum Entwerfen von Power BI-Importmodellen finden Sie in den folgenden Artikeln:
 
 - [Verwenden zusammengesetzter Modelle in Power BI Desktop](../desktop-composite-models.md)
-- [Speichermodus in Power BI Desktop](../desktop-storage-mode.md)
+- [Speichermodus in Power BI Desktop](../desktop-storage-mode.md)
+- Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

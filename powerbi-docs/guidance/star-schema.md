@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 42da2dd74d80d2a68cf38c8d35ee4e500d6780d8
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 241789dc6255dd461ef6cc62425b732788d7c63d
+ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875581"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74410843"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Informationen zum Sternschema und der Wichtigkeit für Power BI
 
@@ -27,7 +27,7 @@ Das **Sternschema** ist ein ausgereifter Modellierungsansatz, der von relational
 
 **Dimensionstabellen** beschreiben Geschäftsentitäten, die „Dinge“, die Sie modellieren. Entitäten können Produkte, Personen, Orte und Konzepte, einschließlich der Zeit selbst, enthalten. Die Tabelle mit der meisten Konsistenz in einem Sternschema ist eine Datumsdimensionstabelle. Eine Dimensionstabelle enthält eine Schlüsselspalte (oder Spalten), die als eindeutiger Bezeichner fungiert, und beschreibende Spalten.
 
-**Faktentabellen** enthalten Beobachtungen oder Ereignisse. Dabei kann es sich um Verkaufsaufträge, Lagerbestände, Wechselkurse, Temperaturen usw. handeln. Eine Faktentabelle enthält Dimensionsschlüsselspalten, die sich auf Dimensionstabellen beziehen, und numerische Measurespalten. Die Dimensionsschlüsselspalten bestimmen die _Dimensionalität_ einer Faktentabelle, während die Dimensionsschlüsselwerte die _Granularität_ einer Faktentabelle bestimmen. Stellen Sie sich beispielsweise eine Faktentabelle vor, die zum Enthalten von Verkaufszielen entworfen wurde, die die zweidimensionalen Schlüsselspalten **Date** und **ProductKey** enthält. Es ist leicht zu verstehen, dass die Tabelle zwei Dimensionen enthält. Die Granularität kann jedoch nicht ermittelt werden, ohne die Dimensionsschlüsselwerte zu berücksichtigen. Beachten Sie, dass die Werte in diesem Beispiel in der Spalte **Date** dem ersten Tag eines jeden Monats entsprechen. In diesem Fall handelt es sich bei der Granularität um die monatliche Produktebene.
+In **Faktentabellen** werden Beobachtungen oder Ereignisse gespeichert. Dabei kann es sich um Aufträge, Lagerbestände, Wechselkurse, Temperaturen usw. handeln. Eine Faktentabelle enthält Dimensionsschlüsselspalten, die sich auf Dimensionstabellen beziehen, und numerische Measurespalten. Die Dimensionsschlüsselspalten bestimmen die _Dimensionalität_ einer Faktentabelle, während die Dimensionsschlüsselwerte die _Granularität_ einer Faktentabelle bestimmen. Stellen Sie sich beispielsweise eine Faktentabelle vor, die zum Enthalten von Verkaufszielen entworfen wurde, die die zweidimensionalen Schlüsselspalten **Date** und **ProductKey** enthält. Es ist leicht zu verstehen, dass die Tabelle zwei Dimensionen enthält. Die Granularität kann jedoch nicht ermittelt werden, ohne die Dimensionsschlüsselwerte zu berücksichtigen. Beachten Sie, dass die Werte in diesem Beispiel in der Spalte **Date** dem ersten Tag eines jeden Monats entsprechen. In diesem Fall handelt es sich bei der Granularität um die monatliche Produktebene.
 
 Im Allgemeinen enthalten Dimensionstabellen eine relativ kleine Anzahl von Zeilen. Faktentabellen können dagegen eine sehr große Zeilenanzahl enthalten und im Laufe der Zeit größer werden.
 
@@ -37,7 +37,7 @@ Im Allgemeinen enthalten Dimensionstabellen eine relativ kleine Anzahl von Zeile
 
 Der Sternschemaentwurf und viele verwandte Konzepte, die in diesem Artikel vorgestellt werden, sind ein wichtiger Bestandteil der Entwicklung von Power BI-Modellen mit optimierter Leistung und Benutzerfreundlichkeit.
 
-Denken Sie daran, dass jede Power BI-Berichtvisualisierung eine Abfrage generiert, die an das Power BI-Modell (das der Power BI-Dienst als Dataset bezeichnet) gesendet wird. Diese Abfragen werden zum Filtern, Gruppieren und Zusammenfassen der Modelldaten verwendet. Demnach ist ein gut entworfenes Modell eines, das Tabellen für Filterung und Gruppierung sowie Tabellen für die Zusammenfassung bereitstellt. Dies fügt sich gut in die Entwurfsprinzipien für Sternschemas ein:
+Denken Sie daran, dass jede Power BI-Berichtvisualisierung eine Abfrage generiert, die an das Power BI-Modell (das der Power BI-Dienst als Dataset bezeichnet) gesendet wird. Diese Abfragen werden zum Filtern, Gruppieren und Zusammenfassen der Modelldaten verwendet. Demnach ist ein gut entworfenes Modell eines, das Tabellen für Filterung und Gruppierung sowie Tabellen für die Zusammenfassung bereitstellt. Damit entspricht dieser Entwurf den Prinzipien für Sternschemas:
 
 - Dimensionstabellen unterstützen die _Filterung_ und _Gruppierung_.
 - Faktentabellen unterstützen die _Zusammenfassung_.
@@ -50,7 +50,7 @@ Ein gut strukturierter Modellentwurf sollte Tabellen enthalten, die entweder Dim
 
 Letztlich sollten Sie wissen, dass ein optimaler Modellentwurf aus einem Teil Wissenschaft und einem Teil Kunst besteht. Manchmal können Sie die bewährten Methoden ignorieren, wenn dies sinnvoll ist.
 
-Es gibt viele weitere Konzepte im Zusammenhang mit dem Sternschemaentwurf, die auf ein Power BI-Modell angewendet werden können. Dazu gehören:
+Es gibt viele weitere Konzepte im Zusammenhang mit dem Sternschemaentwurf, die auf ein Power BI-Modell angewendet werden können. Einige Beispiele für diese Konzepte:
 
 - [Measures](#measures)
 - [Ersatzschlüssel](#surrogate-keys)
@@ -67,14 +67,14 @@ Im Sternschemaentwurf ist ein **Measure** eine Faktentabellenspalte, die Werte e
 
 Im Power BI-Modell weisen **Measures** eine andere, aber ähnliche, Definition auf. Dabei handelt es sich um eine in [DAX (Data Analysis Expressions)](https://docs.microsoft.com/dax/data-analysis-expressions-dax-reference) geschriebene Formel, die die Zusammenfassung ermöglicht. Measureausdrücke nutzen oft DAX-Aggregationsfunktionen wie SUM, MIN, MAX, AVERAGE usw., um zur Abfragezeit ein Skalarwertergebnis zu erzeugen (Werte werden nie im Modell gespeichert). Measureausdrücke können zwischen einfachen Spaltenaggregationen und komplexeren Formeln variieren, die den Filterkontext und bzw. oder die Beziehungsweitergabe überschreiben. Weitere Informationen finden Sie im Artikel zu den [DAX-Grundlagen in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-quickstart-learn-dax-basics).
 
-Sie sollten wissen, dass Power BI-Modelle eine zweite Methode für die Zusammenfassung unterstützen. Alle Spalten, in der Regel numerische Spalten, können mithilfe einer Berichtsvisualisierung oder mit Q&A zusammengefasst werden. Für Sie als Modellentwickler ist das eine praktische Funktion, da Sie in vielen Fällen keine Measures erstellen müssen. Beispielsweise könnte die Spalte **Sales Amount** (Verkaufsquote) für die Verkäufe des Adventure Works-Wiederverkäufers auf verschiedene Weisen zusammengefasst werden (sum, count, average, median, min, max usw.), ohne dass ein Measure für jeden möglichen Aggregationstyp erstellt werden muss.
+Sie sollten wissen, dass Power BI-Modelle eine zweite Methode für die Zusammenfassung unterstützen. Alle Spalten, in der Regel numerische Spalten, können mithilfe einer Berichtsvisualisierung oder mit Q&A zusammengefasst werden. Diese Spalten werden als _implizite Measures_ bezeichnet. Für Sie als Modellentwickler ist das eine praktische Funktion, da Sie in vielen Fällen keine Measures erstellen müssen. Beispielsweise könnte die Spalte **Sales Amount** (Verkaufsquote) für die Verkäufe des Adventure Works-Wiederverkäufers auf verschiedene Weisen zusammengefasst werden (sum, count, average, median, min, max usw.), ohne dass ein Measure für jeden möglichen Aggregationstyp erstellt werden muss.
 
 ![Beispiel in der Feldliste](media/star-schema/field-list-example.png)
 
 Es gibt jedoch zwei überzeugende Gründe für die Erstellung von Measures, auch für einfache Zusammenfassungen auf Spaltenebene:
 
-- Wenn Sie wissen, dass Berichtsautoren das Modell mithilfe von [mehrdimensionalen Ausdrücken (MDX)](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017) abfragen, muss das Modell Measures enthalten. MDX können Spaltenwerte nicht zusammenfassen. Dies ist insbesondere relevant, wenn ein Power BI-Dataset mithilfe von MDX abgefragt wird. Dies ist beispielsweise der Fall, wenn [In Excel analysieren](https://docs.microsoft.com/power-bi/service-analyze-in-excel) verwendet wird (PivotTables verwenden MDX-Abfragen).
-- Wenn Sie sicherstellen müssen, dass Berichtsautoren Spalten nur auf bestimmte Weisen zusammenfassen können. Beispielsweise kann die Spalte **Unit Price** (Einzelpreis) des Wiederverkäufers (die einen Preis pro Einheit darstellt) zusammengefasst werden, aber nur mithilfe spezifischer Aggregationsfunktionen. Diese Spalte sollte nie zusammengefast werden, jedoch ist es angebracht, sie mithilfe anderer Aggregationsfunktionen zusammenzufassen (min, max, average usw.). In diesem Fall kann der Modellierer die Spalte **Unit Price** (Einzelpreis) ausblenden und Measures für alle entsprechenden Aggregationsfunktionen erstellen.
+- Wenn Sie wissen, dass Ihre Berichtsautoren das Modell mithilfe von [mehrdimensionalen Ausdrücken (MDX)](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017) abfragen, muss das Modell _explizite Measures_ enthalten. Explizite Measures werden mit DAX definiert. Dieser Entwurfsansatz ist äußerst relevant, wenn ein Power BI-DataSet mithilfe von MDX abgefragt wird, da keine Summen von Spaltenwerten mit MDX möglich sind. Insbesondere wird MDX für [Analysen in Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel) verwendet (PivotTables geben MDX-Abfragen aus).
+- Wenn Sie sicherstellen müssen, dass Ihre Berichtsautoren Spalten nur auf bestimmte Weisen zusammenfassen können. Beispielsweise kann die Spalte **Unit Price** (Einzelpreis) des Wiederverkäufers (die einen Preis pro Einheit darstellt) zusammengefasst werden, aber nur mithilfe spezifischer Aggregationsfunktionen. Diese Spalte sollte nie zusammengefast werden, jedoch ist es angebracht, sie mithilfe anderer Aggregationsfunktionen zusammenzufassen (min, max, average usw.). In diesem Fall kann der Modellierer die Spalte **Unit Price** (Einzelpreis) ausblenden und Measures für alle entsprechenden Aggregationsfunktionen erstellen.
 
 Hinweis: Dieser Entwurfsansatz eignet sich für Berichte, die im Power BI-Dienst erstellt wurden, und für Q&A. Jedoch können Power BI Desktop-Liveverbindungen Berichtsautoren ermöglichen, ausgeblendete Felder im Bereich **Felder** anzuzeigen, wodurch dieser Entwurfsansatz umgangen werden kann.
 
@@ -100,7 +100,7 @@ In Power BI Desktop können Sie entscheiden, ob Sie ein Schneeflockendesign für
 
 Folgendes geschieht, wenn Sie sich für das Imitieren eines Schneeflockendimensionsentwurfs entscheiden:
 
-- Power BI lädt weitere Tabellen, was in Hinsicht auf Speicher und Leistung weniger effizient ist. Diese Tabellen müssen Spalten enthalten, um Modellbeziehungen zu unterstützen, was zu einer größeren Modellgröße führen kann.
+- Power BI lädt weitere Tabellen, was in Hinsicht auf Speicher und Leistung weniger effizient ist. Diese Tabellen müssen Spalten enthalten, um Modellbeziehungen zu unterstützen, was zu größeren Modellen führen kann.
 - Längere Weitergabeketten für Beziehungsfilter müssen durchlaufen werden, was wahrscheinlich weniger effizient ist, als Filter die auf eine einzelne Tabelle angewendet werden.
 - Der Bereich **Felder** stellt mehrere Modelltabellen für Berichtsautoren dar, was zu einer weniger intuitiven Benutzung führen kann, insbesondere, wenn Schneeflockendimensionstabellen nur eine oder zwei Spalten enthalten.
 - Es ist nicht möglich, eine Hierarchie zu erstellen, die die Tabellen umfasst.
@@ -123,15 +123,15 @@ Eine nicht inkrementelle Aktualisierung einer Dimensionstabelle des Power BI-Mod
 
 ### <a name="type-2-scd"></a>SCD Typ 2
 
-Eine **SCD** vom **Typ 2** unterstützt die Versionskontrolle für Dimensionselemente. Wenn das Quellsystem keine Versionen speicher, werden Änderungen in der Regel vom Ladevorgang des Data Warehouse erkannt, und die Änderung wird in der Dimensionstabelle ordnungsgemäß verwaltet. In diesem Fall muss die Dimensionstabelle einen Ersatzschlüssel verwenden, um einen eindeutigen Verweis auf eine _Version_ des Dimensionselements bereitzustellen. Sie enthält auch Spalten, die die Gültigkeit des Datumsbereichs der Version definieren (z. B. **StartDate** und **EndDate**) und eine Flagspalte (z. B. **IsCurrent**), um mühelos nach aktuellen Dimensionselementen zu filtern.
+Eine **SCD** vom **Typ 2** unterstützt die Versionskontrolle für Dimensionselemente. Wenn das Quellsystem keine Versionen speichert, werden Änderungen i. d. R. vom Ladevorgang des Data Warehouse erkannt, und die Änderung wird in der Dimensionstabelle ordnungsgemäß verwaltet. In diesem Fall muss die Dimensionstabelle einen Ersatzschlüssel verwenden, um einen eindeutigen Verweis auf eine _Version_ des Dimensionselements bereitzustellen. Sie enthält auch Spalten, die die Gültigkeit des Datumsbereichs der Version definieren (z. B. **StartDate** und **EndDate**) und eine Flagspalte (z. B. **IsCurrent**), um mühelos nach aktuellen Dimensionselementen zu filtern.
 
 Beispielsweise weist Adventure Works Vertriebsmitarbeiter zu einer Vertriebsregion zu. Wenn ein Vertriebsmitarbeiter einer anderen Region zugewiesen wird, muss eine neue Version des Vertriebsmitarbeiters erstellt werden, um sicherzustellen, dass Verlaufsdaten weiterhin der vorherigen Region zugeordnet bleiben. Die Dimensionstabelle muss Versionen von Vertriebsmitarbeitern und ihren zugeordneten Regionen enthalten, um eine genaue Verlaufsanalyse der Verkäufe pro Vertriebsmitarbeiter zu ermöglichen. Die Tabelle sollte auch Werte für das Start- und Enddatum enthalten, um die Gültigkeitsdauer zu definieren. Aktuelle Versionen können ein leeres Enddatum (oder 31. 12. 9999) definieren, was angibt, dass die Zeile der aktuellen Version entspricht. Die Tabelle muss außerdem einen Ersatzschlüssel definieren, weil der Geschäftsschlüssel (in diesem Fall die Mitarbeiter-ID) nicht eindeutig ist.
 
-Denken Sie daran, dass Sie ein Zwischensystem (beispielsweise ein Data Warehouse) zum Ermitteln und Speichern von Änderungen verwenden müssen, wenn die Quelldaten die Versionen nicht speichert. Der Tabellenladevorgang muss vorhandene Daten beibehalten und Änderungen ermitteln. Wenn eine Änderung ermittelt wird, muss der Tabellenladevorgang die aktuelle Version aktualisieren. Dies erfolgt durch Aktualisieren des Werts **EndDate** und Einfügen einer neuen Version mit dem Wert **StartDate**, der ab dem vorherigen Wert von **EndDate** beginnt. Verwandte Fakten müssen außerdem eine zeitbasierte Suche verwenden, um den entsprechenden Dimensionsschlüsselwert für das Faktendatum abzurufen. Ein Power BI-Model, das Power Query verwendet, kann dies nicht durchführen. Allerdings kann es Daten aus einer vorab geladenen Dimensionstabelle vom SCD Typ 2 laden.
+Denken Sie daran, dass Sie ein Zwischensystem (beispielsweise ein Data Warehouse) zum Ermitteln und Speichern von Änderungen verwenden müssen, wenn die Quelldaten die Versionen nicht speichert. Der Tabellenladevorgang muss vorhandene Daten beibehalten und Änderungen ermitteln. Wenn eine Änderung ermittelt wird, muss der Tabellenladevorgang die aktuelle Version aktualisieren. Die Aufzeichnung dieser Änderungen erfolgt durch Aktualisieren des Werts **EndDate** und Einfügen einer neuen Version mit dem Wert **StartDate**, der ab dem vorherigen Wert von **EndDate** beginnt. Verwandte Fakten müssen außerdem eine zeitbasierte Suche verwenden, um den entsprechenden Dimensionsschlüsselwert für das Faktendatum abzurufen. Mit einem Power BI-Model, das Power Query verwendet, kann dieses Ergebnis nicht erzielt werden. Allerdings kann es Daten aus einer vorab geladenen Dimensionstabelle vom SCD Typ 2 laden.
 
-Das Power BI-Modell sollte das Abfragen von Verlaufsdaten für Elemente und für die Versionen von Elementen, die einen bestimmten Zustand zu einem bestimmten Zeitpunkt für das Element darstellen, unabhängig von Änderungen unterstützen. Für Adventure Works ermöglicht dies das Abfragen des Vertriebsmitarbeiters unabhängig von der zugewiesenen Vertriebsregion oder einer bestimmten Version des Vertriebsmitarbeiters.
+Das Power BI-Modell sollte das Abfragen von Verlaufsdaten für Elemente und für die Versionen von Elementen, die einen bestimmten Zustand zu einem bestimmten Zeitpunkt für das Element darstellen, unabhängig von Änderungen unterstützen. Für Adventure Works ermöglicht dieser Entwurf das Abfragen des Vertriebsmitarbeiters unabhängig von der zugewiesenen Vertriebsregion oder einer bestimmten Version des Vertriebsmitarbeiters.
 
-Hierzu muss die Dimensionstabelle des Power BI-Modells eine Spalte zum Filtern der Vertriebsmitarbeiter und eine andere Spalte zum Filtern nach der spezifischen Version der Vertriebsmitarbeiter enthalten. Es ist wichtig, dass die Versionsspalte eine genaue Beschreibung enthält, z. B. „Michael Blythe (15. 12. 2008 – 26. 06. 2019)“ oder „Michael Blythe (aktuell)“. Außerdem ist es wichtig, dass Berichtsautoren und Benutzer über die Grundlagen von SCD Typ 2 informiert sind und wissen, wie geeignete Berichtsentwürfe durch Anwendung der richtigen Filter erstellt werden.
+Um diese Anforderung zu erfüllen, muss die Dimensionstabelle des Power BI-Modells eine Spalte zum Filtern der Vertriebsmitarbeiter und eine andere Spalte zum Filtern nach der spezifischen Version der Vertriebsmitarbeiter enthalten. Es ist wichtig, dass die Versionsspalte eine genaue Beschreibung enthält, z. B. „Michael Blythe (15. 12. 2008 – 26. 06. 2019)“ oder „Michael Blythe (aktuell)“. Außerdem ist es wichtig, dass Berichtsautoren und Benutzer über die Grundlagen von SCD Typ 2 informiert sind und wissen, wie geeignete Berichtsentwürfe durch Anwendung der richtigen Filter erstellt werden.
 
 Es wird außerdem empfohlen, eine Hierarchie zu verwenden, die das Ausführen von Drilldowns zur Versionsebene der Visuals ermöglicht.
 
@@ -145,7 +145,7 @@ Eine **Dimension mit unterschiedlichen Rollen** ist eine Dimension, die verwandt
 
 Für Data Warehouses besteht der akzeptierte Entwurfsansatz darin, eine einzelne Datumsdimensionstabelle zu definieren. Die „Rolle“ der Datumsdimension wird anhand der Faktenspalte festgelegt, die zur Abfragezeit zum Verknüpfen der Tabellen verwendet wird. Wenn Sie beispielsweise die Verkäufe nach Datum analysieren, bezieht sich die Tabellenverknüpfung auf die Spalte für Verkäufe nach Datum des Wiederverkäufers.
 
-In einem Power BI-Modell kann dieser Entwurf imitiert werden, indem mehrere Beziehungen zwischen zwei Tabellen erstellt werden. Im Adventure Works-Beispiel würden die Datums- und Verkaufstabellen des Wiederverkäufers über drei Beziehungen verfügen. Dies ist zwar möglich, jedoch sollte darauf geachtet werden, dass nur eine aktive Beziehung zwischen zwei Power BI-Modelltabellen bestehen kann. Alle anderen Beziehungen müssen als „inaktiv“ festgelegt werden. Wenn eine einzelne aktive Beziehung vorliegt, bedeutet das, dass eine Standardfilterweitergabe von Datum an Verkäufe des Wiederverkäufers vorliegt. In diesem Fall wird die aktive Beziehung auf den allgemeinsten Filter festgelegt, die von Berichten verwendet wird. Bei Adventure Works wäre dies die Beziehung für das Bestelldatum.
+In einem Power BI-Modell kann dieser Entwurf imitiert werden, indem mehrere Beziehungen zwischen zwei Tabellen erstellt werden. Im Adventure Works-Beispiel würden die Datums- und Verkaufstabellen des Wiederverkäufers über drei Beziehungen verfügen. Dieser Entwurf ist zwar möglich, jedoch sollte darauf geachtet werden, dass nur eine aktive Beziehung zwischen zwei Power BI-Modelltabellen bestehen kann. Alle anderen Beziehungen müssen als „inaktiv“ festgelegt werden. Wenn eine einzelne aktive Beziehung vorliegt, bedeutet das, dass eine Standardfilterweitergabe von Datum an Verkäufe des Wiederverkäufers vorliegt. In diesem Fall wird die aktive Beziehung auf den allgemeinsten Filter festgelegt, die von Berichten verwendet wird. Bei Adventure Works wäre dies die Beziehung für das Bestelldatum.
 
 ![Beispiel für eine einzelne Dimension mit unterschiedlichen Rollen und Beziehungen](media/star-schema/relationships.png)
 
@@ -162,7 +162,7 @@ Für diesen Entwurfsansatz müssen Sie nicht mehrere Measures für verschiedene 
 
 Beachten Sie die folgenden bewährten Methoden beim Erstellen von Modelldimensionstabellen für jede Rolle:
 
-- Stellen Sie sicher, dass alle Spaltennamen sich selbst beschreiben. Es ist zwar möglich, in allen Datumstabellen über eine Spalte für das **Jahr** zu verfügen (Spaltennamen sind innerhalb ihrer Tabelle eindeutig), jedoch ist sie in den Standardtiteln für Visuals nicht selbst beschreibend. Es empfiehlt sich, die Spalten in allen Dimensionsrollentabellen umzubenennen, damit die Tabelle **Versanddatum** über eine Jahresspalte namens **Versandjahr** verfügt usw.
+- Stellen Sie sicher, dass alle Spaltennamen sich selbst beschreiben. Es ist zwar möglich, in allen Datumstabellen über eine Spalte für das **Jahr** zu verfügen (Spaltennamen sind innerhalb ihrer Tabelle eindeutig), jedoch ist sie in den Standardtiteln für Visuals nicht selbst beschreibend. Es empfiehlt sich, die Spalten in allen Dimensionsrollentabellen umzubenennen, damit die Tabelle **Versanddatum** über eine Jahresspalte mit dem Namen **Versandjahr** usw. verfügt.
 - Sofern es relevant ist, sollten Sie sicherstellen, dass die Tabellenbeschreibungen Feedback zur Konfiguration der Filterweitergabe für die Berichtsautoren bereitstellen (über QuickInfos im Bereich **Felder**). Diese Verdeutlichung ist wichtig, wenn das Modell eine Tabelle mit einem allgemeinen Namen, z. B. **Datum**, enthält, die zum Filtern vieler Faktentabellen verwendet wird. Wenn diese Tabelle beispielsweise über eine aktive Verbindung zur Spalte für das Bestelldatum von Verkäufen durch Wiederverkäufer verfügt, sollten Sie eventuell eine Tabellenbeschreibung wie „Filter für die Verkäufe durch Wiederverkäufer nach Bestelldatum“ einfügen.
 
 ## <a name="junk-dimensions"></a>Junkdimensionen
@@ -207,3 +207,4 @@ Weitere Informationen zum Entwurf von Sternschemas und Power BI-Modellen finden 
 - [Erstellen und Verwalten von Beziehungen in Power BI Desktop](../desktop-create-and-manage-relationships.md)
 - [Beziehungen mit einer m:n-Kardinalität in Power BI Desktop](../desktop-many-to-many-relationships.md)
 - [Geführtes Tutorial: Modellierung](/learn/modules/model-data-power-bi/)
+- Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

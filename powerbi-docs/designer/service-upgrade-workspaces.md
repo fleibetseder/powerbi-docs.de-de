@@ -9,19 +9,19 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 34b0bd1a59ec66cf7a2e5eb41d2c1ec12a39d1e7
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 266a8609123f05f258daee60f6ae17f032ebae29
+ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128120"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74410821"
 ---
 # <a name="upgrade-classic-workspaces-to-the-new-workspaces-in-power-bi"></a>Aktualisieren klassischer Arbeitsbereiche auf die neuen Arbeitsbereiche in Power BI
 
 In diesem Artikel wird erläutert, wie ein klassischer Arbeitsbereich auf den neuen Arbeitsbereich aktualisiert wird. Sie können einen beliebigen klassischen Arbeitsbereich aktualisieren. Die neuen Arbeitsbereiche verfügen über präzisere Arbeitsbereichsrollen, sodass Sie den Zugriff auf Inhalte besser verwalten können. Sie können aktualisierte Arbeitsbereiche flexibler verwalten, da sie enger mit ihrer ursprünglichen Office 365-Gruppe verbunden sind. Erfahren Sie mehr [über die neuen Arbeitsbereiche](../service-new-workspaces.md). 
 
 >[!NOTE]
->Diese Dokumentation ist eine Vorabversion und erläutert eine Funktion, die noch nicht verfügbar ist. Wir haben sie veröffentlicht, damit Sie sich auf die neue Funktion vorbereiten und Fragen, die sich vor der Veröffentlichung ergeben, klären können.  
+>Das Arbeitsbereichsupgrade ist als öffentliche Vorschau verfügbar. 
 
 ![Erfolgreiches Upgrade](media/service-upgrade-workspaces/power-bi-upgrade-success.png)
 
@@ -198,7 +198,15 @@ Einige Organisationen möchten viele oder alle Arbeitsbereiche auf den neuen Arb
 2. Arbeiten Sie mit einzelnen Office 365-Gruppenbesitzern oder mit Ihrem Office 365-Administrator zusammen, damit diese die Arbeitsbereiche aktualisieren können. Wenn Sie den Arbeitsbereich aktualisieren möchten, müssen Sie Besitzer der Gruppe werden.
 
 Die Funktion für das Upgrade des Arbeitsbereichs bietet keine Tools für Massen- oder programmgesteuerte Upgrades. Darüber hinaus werden neue Office 365-Gruppen, die in Ihrer Organisation erstellt wurden, weiterhin in Power BI angezeigt. 
-    
+   
+   
+## <a name="known-issues"></a>Bekannte Probleme
+
+Möglicherweise treten verschiedene bekannte Probleme auf:
+- Nach dem Upgrade der Benutzer wird möglicherweise die Warnung „Fehler beim Laden des Modells“ angezeigt. Diese Meldung wird fälschlicherweise angezeigt und kann ignoriert werden. 
+- Nach dem Upgrade haben manche Arbeitsbereiche einen anderen Namen als vor dem Upgrade. In diesem Fall wird der Name des Arbeitsbereichs entweder auf einen vorherigen Namen für den Arbeitsbereich zurückgesetzt, oder der Arbeitsbereichsname ist leer. Um dieses Problem zu beheben, benennen Sie den Arbeitsbereich in den gewünschten Namen um.
+- Nachdem Sie einen Arbeitsbereich aktualisiert haben, bei dem ein Inhaltspaket installiert war, werden möglicherweise zusätzliche Dashboards im Arbeitsbereich angezeigt, die vor dem Upgrade nicht sichtbar waren. Dies tritt in einigen Fällen auf, in denen ein Inhaltspaket nicht kürzlich aktualisiert wurde. Sie können diese Dashboards problemlos entfernen.
+
 
 
 ## <a name="next-steps"></a>Nächste Schritte

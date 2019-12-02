@@ -1,53 +1,40 @@
 ---
 title: Verwenden von Quickmeasures für gängige und leistungsstarke Berechnungsfunktionen
-description: Schnellmeasures bieten vorgefertigte DAX-Formeln zur schnellen Durchführung gängiger Berechnungen.
+description: Quickmeasures bieten vorgefertigte DAX-Formeln zur schnellen Durchführung gängiger Berechnungen.
 author: davidiseminger
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 11/22/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 755ef6ab515244a2b7613ee7007caf3c3e6d1ed8
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4e5ea5e5fcbffb5c61434ecc26a90d80d1cd1736
+ms.sourcegitcommit: 982ffaa8eb91897f48221a816970671f4a92e6d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877957"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74415242"
 ---
-# <a name="use-quick-measures-to-easily-perform-common-and-powerful-calculations"></a>Verwenden von Quickmeasures zur einfachen Nutzung gängiger und leistungsstarker Berechnungsfunktionen
-Mit **Quickmeasures** können Sie gängige und leistungsstarke Berechnungsfunktionen nutzen. Ein **Quickmeasure** führt für eine Eingabe, die Sie in einem Dialogfeld vornehmen, im Hintergrund eine Reihe von (vorgefertigten) DAX-Befehlen aus und liefert Ergebnisse, die Sie dann in Ihrem Bericht verwenden können. Und das Beste: Sie können sich ansehen, welche DAX-Befehle das Quickmeasure ausführt, und sich so besser mit DAX vertraut machen.
+# <a name="use-quick-measures-for-common-calculations"></a>Verwenden von Quickmeasures für gängige Berechnungsfunktionen
+Mit *Quickmeasures* können Sie gängige und leistungsstarke Berechnungsfunktionen schnell und einfach verwenden. Ein Quickmeasure führt einen Satz von DAX-Befehlen (Data Analysis Expressions) im Hintergrund aus und zeigt dann Ergebnisse an, die Sie in Ihrem Bericht verwenden können. Sie müssen den DAX nicht selbst verfassen, sondern dieser wird entsprechend Ihren Eingaben in einem Dialogfeld automatisch erstellt. Es stehen zahlreiche Berechnungskategorien und Bearbeitungsmöglichkeiten zur Verfügung, mit denen Sie die Berechnungen an Ihre jeweiligen Anforderungen anpassen können. Und das womöglich Beste: Sie können sich ansehen, welche DAX-Befehle das Quickmeasure ausführt, und sich so besser mit DAX vertraut machen.
 
-![](media/desktop-quick-measures/quick-measures_01.png)
+## <a name="create-a-quick-measure"></a>Erstellen eines Quickmeasures
 
-Klicken Sie zum Erstellen von **Schnellmeasures** im Bereich **Felder** mit der rechten Maustaste auf ein Feld, und wählen Sie im daraufhin angezeigten Menü die Option **Schnellmeasures** aus. Alternativ können Sie auch im Bereich **Werte** eines bereits vorhandenen visuellen Elements mit der rechten Maustaste auf einen beliebigen Wert klicken (etwa auf das Feld *Werte* in einem *Balkendiagramm*). Es stehen zahlreiche Berechnungskategorien und Bearbeitungsmöglichkeiten zur Verfügung, mit denen Sie die Berechnungen an Ihre jeweiligen Anforderungen anpassen können.
+Klicken Sie zum Erstellen eines Quickmeasures in Power BI Desktop im Bereich **Felder** mit der rechten Maustaste auf ein beliebiges Element oder wählen Sie die Ellipse **...** neben dem Element. Wählen Sie dann im daraufhin angezeigten Menü **Neues Quickmeasure**. 
 
-### <a name="quick-measures-now-generally-available"></a>Quickmeasures ab sofort allgemein verfügbar
+![„Neues Quickmeasure“ auswählen](media/desktop-quick-measures/quick-measures_01.png)
 
-Quickmeasures sind seit Februar 2018 im neuen Release von **Power BI Desktop** allgemein verfügbar und befinden sich damit nicht mehr in der Vorschauversion. Wenn Sie ein früheres Release von **Power BI Desktop** verwenden, können Sie **Quickmeasures** mit einem Release von **Power BI Desktop** verwenden, das im **April 2017** oder danach erschienen ist. Aktivieren Sie dazu unter **Datei > Optionen und Einstellungen > Optionen > Vorschaufeatures** das Kontrollkästchen neben **Quickmeasures**.
+Sie können auch mit der rechten Maustaste auf den Dropdownpfeil neben einem beliebigen Wert im Bereich **Werte** eines vorhandenen Visuals klicken und im Menü **Neues Quickmeasure** auswählen. 
 
-![](media/desktop-quick-measures/quick-measures_02b.png)
+Wenn Sie **Neues Quickmeasure** auswählen, wird das Fenster **Quickmeasures** angezeigt, in dem Sie die gewünschte Berechnung und die Felder auswählen können, für die die Berechnung ausgeführt werden soll. 
 
-Sie müssen **Power BI Desktop** neu starten, nachdem Sie die Auswahl vorgenommen haben.
+Wählen Sie das Feld **Berechnung auswählen** aus, um eine umfassende Liste der verfügbaren Quickmeasures anzuzeigen. 
 
-## <a name="using-quick-measures"></a>Verwenden von Schnellmeasures
-Klicken Sie zum Erstellen eines **Schnellmeasures** in **Power BI Desktop** im Bereich **Felder** mit der rechten Maustaste auf ein beliebiges Feld, und wählen Sie im daraufhin angezeigten Menü die Option **Schnellmeasures** aus.
+![Verfügbare Quickmeasureberechnungen](media/desktop-quick-measures/quick-measures_04.png)
 
-![](media/desktop-quick-measures/quick-measures_01.png)
-
-Bei Verwendung von SSAS-Liveverbindungen (SQL Server Analysis Services) sind einige **Quickmeasures** verfügbar. In **Power BI Desktop** wird nur die Sammlung der **Quickmeasures** angezeigt, die für die Version von SSAS unterstützt werden, mit der die Verbindung hergestellt wird. Wenn eine Verbindung mit einer SSAS-Livedatenquelle besteht und bestimmte **Quickmeasures** nicht in der Liste enthalten sind, unterstützt die SSAS-Version, mit der die Verbindung besteht, nicht das DAX-Measure, mit dem das betreffende **Quickmeasure** implementiert wurde.
-
-Nach Auswahl der Option im Kontextmenü erscheint das Fenster **Quickmeasures**. Hier können Sie die gewünschte Berechnung sowie die Felder auswählen, für die die Berechnung erfolgen soll.
-
-![](media/desktop-quick-measures/quick-measures_03.png)
-
-Wenn Sie das Dropdownmenü auswählen, erhalten Sie eine lange Liste mit verfügbaren **Schnellmeasures**.
-
-![](media/desktop-quick-measures/quick-measures_04.png)
-
-Die Schnellmeasure-Berechnungstypen sind in fünf unterschiedliche Gruppen unterteilt, die jeweils eine Reihe von Berechnungen umfassen. Folgende Gruppen und Berechnungen stehen zur Verfügung:
+Die fünf Berechnungstypen für Quickmeasures und ihre Berechnungen lauten wie folgt:
 
 * **Pro Kategorie aggregieren**
   * Durchschnitt pro Kategorie
@@ -59,7 +46,7 @@ Die Schnellmeasure-Berechnungstypen sind in fünf unterschiedliche Gruppen unter
   * Gefilterter Wert
   * Differenz zu gefiltertem Wert
   * Prozentuale Differenz zu gefiltertem Wert
-  * Sales from new categories (Umsätze aus neuen Kategorien)
+  * Umsatz durch Neukunden
 * **Zeitinformationen**
   * Summe seit Jahresanfang
   * Summe seit Quartalsanfang
@@ -83,70 +70,69 @@ Die Schnellmeasure-Berechnungstypen sind in fünf unterschiedliche Gruppen unter
   * Bewertungssterne
   * Verkettete Werteliste
 
-Diese Berechnungen werden voraussichtlich noch ergänzt. Daher würden wir gerne von Ihnen erfahren, welche **Quickmeasures** Sie sich wünschen und ob Sie Vorschläge (einschließlich zugrunde liegender DAX-Formeln) für **Quickmeasures** haben. Weitere Informationen hierzu finden Sie am Ende dieses Artikels.
+Am Ende dieses Artikels erfahren Sie, wie Sie neue Quickmeasures, zugrunde liegende DAX-Formeln oder sonstige Ideen zu Quickmeasures vorschlagen können.
 
-## <a name="example-of-quick-measures"></a>Beispiel für Schnellmeasures
-In diesem Abschnitt sehen wir uns ein Beispiel dieser **Schnellmeasures** in Aktion an.
+> [!NOTE]
+> Bei Verwendung von SSAS-Liveverbindungen (SQL Server Analysis Services) sind einige Quickmeasures verfügbar. In Power BI Desktop werden nur Quickmeasures angezeigt, die für die Version von SSAS unterstützt werden, mit der die Verbindung hergestellt wird. Wenn eine Verbindung mit einer SSAS-Livedatenquelle besteht und bestimmte Quickmeasures nicht in der Liste enthalten sind, unterstützt die SSAS-Version, mit der die Verbindung besteht, die DAX-Befehle nicht, mit denen diese Quickmeasures implementiert wurden.
 
-Die folgende **Matrix** zeigt eine Verkaufstabelle für verschiedene Elektronikprodukte. Hierbei handelt es sich um eine einfache Tabelle mit der Summe der einzelnen Kategorien.
+Nachdem Sie die für das Quickmeasure gewünschten Berechnungen und Felder ausgewählt haben, wählen Sie **OK** aus. Das neue Quickmeasure wird im Bereich **Felder** angezeigt, und die zugrunde liegende DAX-Formel wird in der Bearbeitungsleiste angezeigt. 
 
-![](media/desktop-quick-measures/quick-measures_05.png)
+## <a name="quick-measure-example"></a>Beispiel für Quickmeasure
+Im Folgenden sehen wir uns die Verwendung eines Quickmeasures in der Praxis an.
 
-Wenn wir mit der rechten Maustaste auf den Feldbereich **Werte** klicken und **Quickmeasures** auswählen, können wir als *Berechnung* die Option *Durchschnitt pro Kategorie* und als *Basiswert* die Option *Summe von SalesAmount* auswählen. Anschließend können wir *SalesAmount* angeben, indem wir das entsprechende Feld aus dem Bereich *Felder* (rechts) in den Bereich *Kategorie* (links) ziehen.
+Das folgende Matrixvisual zeigt eine Umsatztabelle für verschiedene Produkte. Hierbei handelt es sich um eine einfache Tabelle mit der Umsatzsumme der einzelnen Kategorien.
+
+![Matrixvisual mit einer Umsatztabelle](media/desktop-quick-measures/quick-measures_05.png)
+
+Wählen Sie bei ausgewähltem Matrixvisual den Dropdownpfeil neben **TotalSales** im Bereich **Werte** aus, und wählen Sie **Neues Quickmeasure** aus. 
+
+Wählen Sie im Fenster **Quickmeasures** unter **Berechnung** die Option **Durchschnitt pro Kategorie** aus. 
+
+Ziehen Sie **Average Unit Price** aus dem Bereich **Felder** in das Feld **Basiswert**. Behalten Sie **Kategorie** im Feld **Kategorie** bei, und wählen Sie **OK** aus. 
 
 ![](media/desktop-quick-measures/quick-measures_06.png)
 
-Wenn wir nun **OK** auswählen, passieren einige interessante Dinge, wie in der Abbildung nach der folgenden Liste zu sehen:
+Sobald Sie **OK** auswählen, werden verschiedene Aktionen ausgeführt.
 
-1. Die **Matrix** enthält nun eine neue Spalte mit unserer Berechnung (in diesem Fall: *Durchschnitt innerhalb von „SalesAmount“* ).
-2. Ein neues **Measure** wurde erstellt. Es befindet sich im Bereich **Felder** und wird von Power BI durch ein gelbes Kästchen hervorgehoben. Dieses Measure steht für jedes andere visuelle Element im Bericht zur Verfügung (nicht nur für das visuelle Element, für das es ursprünglich erstellt wurde).
-3. Die für das **Schnellmeasure** erstellte DAX-Formel wird auf der Bearbeitungsleiste angezeigt.
+![Neues Quickmeasure im Visual, in der Bearbeitungs- und Feldliste](media/desktop-quick-measures/quick-measures_07.png)
 
-![](media/desktop-quick-measures/quick-measures_07.png)
+1. Das Matrixvisual verfügt über eine neue Spalte, in der der berechnete Durchschnitt pro Kategorie von **Average Unit Price** angezeigt wird.
+   
+2. Die DAX-Formel für das neue Quickmeasure wird in der Bearbeitungsleiste angezeigt. Weitere Informationen zur DAX-Formel finden Sie im [nächsten Abschnitt](#learn-dax-by-using-quick-measures).
+   
+3. Das neue Quickmeasure wird ausgewählt und im Bereich **Felder** hervorgehoben. 
 
-Beachten Sie im Zusammenhang mit dem ersten Punkt, dass das **Schnellmeasure** auf das visuelle Element angewendet wurde. Es gibt eine neue Spalte und einen zugeordneten Wert. Beide basieren auf dem erstellten **Schnellmeasure**.
+Das neue Quickmeasure ist für jedes Visual im Bericht verfügbar, nicht nur für das Visual, für das Sie es erstellt haben. Die folgende Abbildung zeigt ein Säulendiagrammvisual, das mit dem neuen Quickmeasurefeld erstellt wurde.
 
-![](media/desktop-quick-measures/quick-measures_08.png)
+![Neues Balkendiagramm auf Grundlage des Quickmeasurefelds](media/desktop-quick-measures/quick-measures_09.png)
 
-Zweitens: Das **Schnellmeasure** wird im Bereich **Felder** des Datenmodells angezeigt und kann wie jedes andere Feld im Modell für ein beliebiges anderes visuelles Element verwendet werden. In der folgenden Abbildung wurde unter Verwendung des neuen Felds, das durch das **Schnellmeasure** erstellt wurde, ein **Balkendiagramm** erstellt.
+## <a name="learn-dax-by-using-quick-measures"></a>Kennenlernen von DAX über Quickmeasures
+Ein großer Vorteil von Quickmeasures ist, dass Sie die DAX-Formel anzeigen, die das Measure implementiert. Wenn Sie im Bereich **Felder** ein Quickmeasure auswählen, wird die **Bearbeitungsleiste** mit der DAX-Formel angezeigt, die Power BI zur Implementierung des Measures erstellt hat.
 
-![](media/desktop-quick-measures/quick-measures_09.png)
+![Quickmeasureformel in der Bearbeitungsleiste](media/desktop-quick-measures/quick-measures_10.png)
 
-Im nächsten Abschnitt beschäftigen wir uns mit dem dritten Punkt: DAX-Formeln.
+In der Bearbeitungsleiste wird nicht nur die Formel hinter dem Measure angezeigt, sondern vor allem können Sie erkennen, wie Sie die DAX-Formeln erstellen, die den Quickmeasures zugrunde liegen.
 
-## <a name="learn-dax-using-quick-measures"></a>Kennenlernen von DAX anhand von Schnellmeasures
-Ein weiterer Vorteil von **Schnellmeasures**: Das Feature zeigt Ihnen direkt die DAX-Formel, die zur Implementierung des Measures erstellt wurde. In der folgenden Abbildung haben wir das Measure ausgewählt, das durch das **Schnellmeasure** erstellt wurde. (Es befindet sich nun im Bereich **Felder**, sodass wir lediglich darauf klicken müssen.) Daraufhin wird die **Bearbeitungsleiste** mit der DAX-Formel angezeigt, die Power BI zur Implementierung des Measures erstellt hat.
+Angenommen, Sie müssen eine Berechnung für einen Jahresvergleich durchführen, wissen aber nicht, wie Sie die DAX-Formel strukturieren oder wo Sie überhaupt anfangen sollen. In diesem Fall können Sie ein Quickmeasure mit der Berechnung **Änderung zwischen zwei Jahren** erstellen und sich die Darstellung im Visual und die Funktionsweise der DAX-Formel ansehen. Anschließend können Sie entweder direkt Änderungen an der DAX-Formel vornehmen oder ein ähnliches Measure erstellen, das Ihren Anforderungen und Erwartungen entspricht. Das ist fast so als hätten Sie einen Lehrer, der umgehend auf Ihre Was-wäre-wenn-Fragen reagiert – und das mit nur wenigen Mausklicks. 
 
-![](media/desktop-quick-measures/quick-measures_10.png)
+Sie können Quickmeasures jederzeit wieder aus dem Modell löschen, wenn sie nicht Ihren Vorstellungen entsprechen. Dazu klicken Sie einfach mit der rechten Maustaste auf das Measure oder wählen **...** neben dem Measure und dann **Löschen** aus. Sie können ein Quickmeasure auch nach Belieben umbenennen, indem Sie im Menü **Umbenennen** auswählen. 
 
-Das ist praktisch, denn so erfahren Sie, welche Formel dem Measure zugrunde liegt. Was aber vielleicht noch wichtiger ist: Sie können anhand von **Quickmeasures** sehen, wie die zugrunde liegenden DAX-Formeln erstellt werden sollten.
-
-Angenommen, Sie müssen eine Berechnung für einen Jahresvergleich durchführen, wissen aber nicht so recht, wie Sie die DAX-Formel strukturieren (oder wo Sie überhaupt anfangen) sollen. In diesem Fall können Sie ein **Quickmeasure** mit der Berechnung **Änderung zwischen zwei Jahren** erstellen und sich den Vorgang ansehen. Gehen Sie dazu wie folgt vor: Erstellen Sie das **Quickmeasure**, betrachten Sie die Darstellung in Ihrem visuellen Element, sehen Sie sich an, wie die DAX-Formel funktioniert, und ändern Sie dann entweder die DAX-Formel direkt, oder erstellen Sie ein weiteres Measure, bis die Berechnungen Ihren Anforderungen oder Erwartungen entsprechen.
-
-Das ist fast so als hätten Sie einen Lehrer, der umgehend auf Ihre Was-wäre-wenn-Fragen reagiert – und das mit nur wenigen Mausklicks. Sie können diese Measures jederzeit aus Ihrem Modell löschen, wenn sie Ihnen nicht zusagen. Dazu müssen Sie lediglich mit der rechten Maustaste auf das Measure klicken und **Löschen** auswählen.
-
-![](media/desktop-quick-measures/quick-measures_11.png)
-
-Und wenn Sie das optimale Measure erstellt haben, können Sie es über das gleiche Kontextmenü mit einem beliebigen Namen versehen.
+![Löschen oder Umbenennen eines Quickmeasures](media/desktop-quick-measures/quick-measures_11.png)
 
 ## <a name="limitations-and-considerations"></a>Einschränkungen und Überlegungen
 Folgende Einschränkungen und Überlegungen sollten Sie berücksichtigen:
 
-* **Quickmeasures** sind nur verfügbar, wenn Sie das Modell ändern können. Das ist bei einigen Liveverbindungen nicht der Fall (tabellarische SSAS-Liveverbindungen werden unterstützt, wie weiter oben erläutert).
-* Das Measure, das dem Bereich **Felder** hinzugefügt wird, kann für ein beliebiges visuelles Element im Bericht verwendet werden.
-* Sie können jederzeit die DAX-Formel anzeigen, die einem **Schnellmeasure** zugeordnet ist. Wählen Sie hierzu im Bereich **Felder** das erstellte Measure aus, und sehen Sie sich die Formel auf der **Bearbeitungsleiste** an.
-* Beim Arbeiten im DirectQuery-Modus können Sie keine Quickmeasures mit Zeitintelligenz erstellen. Die DAX-Funktionen, die in diesen Quickmeasures verwendet werden, haben Auswirkungen auf die Leistung, wenn sie in die T-SQL-Anweisungen übersetzt werden, die an Ihre Datenquelle gesendet werden.
+- Sie können Quickmeasures verwenden, die dem Bereich **Felder** mit einem beliebigen Visual im Bericht hinzugefügt wurden.
+- Sie können jederzeit die DAX-Formel anzeigen, die einem Quickmeasure zugeordnet ist. Wählen Sie hierzu im Bereich **Felder** das Measure aus, und sehen Sie sich die Formel in der Bearbeitungsleiste an.
+- Quickmeasures sind nur verfügbar, wenn Sie das Modell ändern können. Wenn Sie mit bestimmten Liveverbindungen arbeiten, ist dies nicht der Fall. Tabellarische SSAS-Liveverbindungen werden wie beschrieben unterstützt.
+- Beim Arbeiten im DirectQuery-Modus können Sie keine Quickmeasures mit Zeitintelligenz erstellen. Die DAX-Funktionen, die in diesen Quickmeasures verwendet werden, haben Auswirkungen auf die Leistung, wenn sie in die T-SQL-Anweisungen übersetzt werden, die an Ihre Datenquelle gesendet werden.
 
-> [!WARNING]
-> Ein Schnellmeasure generiert derzeit *nur* DAX-Anweisungen mit Kommas als Argumenttrennzeichen. Wenn Ihre Version von **Power BI Desktop** für eine Sprache lokalisiert ist, in der Kommas als Dezimaltrennzeichen verwendet werden, können Quickmeasures nicht ordnungsgemäß funktionieren.
-> 
-> 
+> [!IMPORTANT]
+> DAX-Anweisungen für Quickmeasures verwenden nur Kommas als Trennzeichen für Argumente. Wenn Ihre Version von Power BI Desktop in einer Sprache lokalisiert ist, in der Kommas als Dezimaltrennzeichen verwendet werden, funktionieren Quickmeasures nicht ordnungsgemäß.
 
 ### <a name="time-intelligence-and-quick-measures"></a>Zeitintelligenz und Quickmeasures
-Ab dem **Power BI Desktop**-Update von Oktober 2017 können Sie eigene benutzerdefinierte Datumstabellen mit Zeitintelligenz-**Quickmeasures** verwenden. Wenn Sie ein externes Tabellenmodel verwenden, müssen Sie sicherstellen, dass die primäre Datumsspalte in dieser Tabelle beim Erstellen des Modells als Datumstabelle markiert wurde, wie in diesem [Artikel beschrieben](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular). Wenn Sie Ihre eigene Datumstabelle importieren, stellen Sie sicher, dass Sie diese als Datumstabelle markieren, wie in [diesem Artikel](https://docs.microsoft.com/power-bi/desktop-date-tables) beschrieben.
+Sie können eigene benutzerdefinierte Datumstabellen mit Zeitintelligenz-Quickmeasures verwenden. Wenn Sie ein externes Tabellenmodel verwenden, müssen Sie sicherstellen, dass die primäre Datumsspalte in dieser Tabelle beim Erstellen des Modells als Datumstabelle markiert wurde, wie unter [Festlegen als Datentabelle für die Verwendung der Zeitintelligenz](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular). Wenn Sie Ihre eigene Datumstabelle importieren, stellen Sie sicher, dass Sie diese als Datumstabelle markieren, wie unter [Festlegen und Verwenden von Datumstabellen in Power BI Desktop](desktop-date-tables.md) beschrieben.
 
 ### <a name="additional-information-and-examples"></a>Weitere Informationen und Beispiele
-Dieser Schwerpunktartikel wird voraussichtlich noch mit Beispielen und Anleitungen für die einzelnen Berechnungen der **Schnellmeasures** aktualisiert. Schauen Sie daher bald wieder vorbei.
-
-Haben Sie eine Idee für ein noch nicht verfügbares **Schnellmeasure**? Sehr gut! Besuchen Sie [diese Seite](https://go.microsoft.com/fwlink/?linkid=842906), und reichen Sie Ihre Ideen (und DAX-Formeln) für das **Schnellmeasure** ein, das Sie sich für **Power BI Desktop** wünschen, damit wir es ggf. in einer späteren Version der Liste mit verfügbaren **Schnellmeasures** hinzufügen können.
+Haben Sie eine Idee für ein neues Quickmeasure? Sehr gut! Sehen Sie sich die Seite [Power BI Ideas](https://go.microsoft.com/fwlink/?linkid=842906) an, und teilen Sie uns Ihre Ideen und DAX-Formeln für Quickmeasures mit, die Sie sich in Power BI Desktop wünschen. Möglicherweise ergänzen wir sie in der Liste der Quickmeasures in einer zukünftigen Version.
 

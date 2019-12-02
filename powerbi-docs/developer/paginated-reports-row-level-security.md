@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/04/2019
-ms.openlocfilehash: f28ffa89647272306dc9cecb5c93928d36805d2a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4db1f887c1dd889a06c02643a0270cc24ab9c45f
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880475"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311512"
 ---
 # <a name="implementing-row-level-security-in-embedded-paginated-reports-preview"></a>Implementieren der Sicherheit auf Zeilenebene in eingebetteten paginierten Berichten (Vorschau)
 
@@ -30,7 +30,7 @@ Beim Anwenden der Sicherheit auf Zeilenebene auf einen paginierten Power BI-Beri
 
 Verwenden Sie nach dem Zuweisen des Parameter zum **UserID**-Attribut die API [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup), um das Token für die Einbettung zu erhalten.
 
-## <a name="use-uderid-as-a-filter-at-report-or-query-level"></a>Verwenden von UserID als Filter auf Berichts-oder Abfrageebene
+## <a name="use-userid-as-a-filter-at-report-or-query-level"></a>Verwenden von UserID als Filter auf Berichts- oder Abfrageebene
 
 Sie können **UserID** als *Filter* oder in einer *Abfrage* für die Datenquelle im [Power BI-Berichts-Generator für paginierte Berichte](../report-builder-power-bi.md) verwenden.
 
@@ -66,7 +66,7 @@ Sie können **UserID** als *Filter* oder in einer *Abfrage* für die Datenquelle
 
     ![Parameter im Power BI-Berichts-Generator](media/embedded-paginated-reports-secure-data/parameters.png)
 
-2. Geben Sie im Feld **Parametername** **@UserID** ein, und fügen Sie im Feld **Parameterwert** **[&UserID]** hinzu.
+2. Geben Sie im Feld **Parametername** **\@UserID** ein, und fügen Sie im Feld **Parameterwert** **[&UserID]** hinzu.
 
     ![Parametername im Power BI-Berichts-Generator](media/embedded-paginated-reports-secure-data/parameter-name.png) 
 
