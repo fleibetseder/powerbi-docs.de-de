@@ -15,7 +15,7 @@
           items:
             - name: Verwenden von R-gestützten Power BI-Visuals in Power BI
               tocHref: /power-bi/developer/
-              topicHref: /power-bi/desktop-r-powered-custom-visuals/
+              topicHref: /power-bi/developer/index
         - name: Geführte Tutorials
           tocHref: /power-bi/guided-learning/
           topicHref: /power-bi/guided-learning/
