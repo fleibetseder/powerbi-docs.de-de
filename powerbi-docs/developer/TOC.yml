@@ -15,6 +15,8 @@
               href: power-bi-custom-visuals.md
         - name: Lernprogramme
           items:
+            - name: Visual-Konzept
+              href: visuals/power-bi-visuals-concept.md
             - name: Entwickeln eines Power BI-Visuals
               href: visuals/custom-visual-develop-tutorial.md
             - name: Hinzufügen von Formatierungsoptionen
@@ -67,6 +69,8 @@
               href: visuals/high-contrast-support.md
             - name: Synchronisierung von Slicern
               href: visuals/enable-sync-slicers.md
+            - name: Hinzufügen von Unterstützung für Drilldowns
+              href: visuals/drill-down-support.md
             - name: Problembehandlung bei Power BI-Visuals
               href: power-bi-custom-visuals-troubleshoot.md
         - name: Referenz
@@ -81,8 +85,14 @@
               href: visuals/event-service.md
             - name: Sortierung
               href: visuals/sort-options.md
-            - name: Interaktivitätshilfsprogramme
-              href: visuals/utils-interactivity-selections.md
+            - name: Lokalisierung
+              href: visuals/localization.md
+            - name: "Hilfsprogramme für Power\_BI-Visuals"
+              items:
+                - name: Interaktivitätshilfsprogramme
+                  href: visuals/utils-interactivity-selections.md
+                - name: Formatierungshilfsprogramme
+                  href: visuals/utils-formatting.md
         - name: Ressourcen
           items:
             - name: Dev Center

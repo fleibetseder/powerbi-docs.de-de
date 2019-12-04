@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: d7fcc054ccf0bea1a036eaf24cb9631a2abb3969
-ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
+ms.openlocfilehash: bfc1572e31269182e9ca63efbbf6934b90f84b66
+ms.sourcegitcommit: 462ccdd9f79ff698ed0cdfc3165f4ada364dd9ef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74410896"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74478609"
 ---
 # <a name="directquery-model-guidance-in-power-bi-desktop"></a>Leitfaden für das DirectQuery-Model in Power BI Desktop
 
@@ -99,7 +99,7 @@ Auf einem DirectQuery-Dataset basierende Berichte können auf verschiedene Weise
     
 - **Wenden Sie zuerst Filter an:** Beim ersten Entwurf von Berichten empfehlen wir Ihnen, alle anwendbaren Filter (auf Berichts-, Seiten- oder Visualebene) anzuwenden, bevor Sie den Visualfeldern Felder zuordnen. Anstatt beispielsweise die Measures **Country** und **Sales** hineinzuziehen und dann nach einem bestimmten Jahr zu filtern, wenden Sie den Filter zuerst auf das Feld **Year** an. Der Grund dafür ist, dass bei jedem Schritt zur Erstellung eines Visuals eine Abfrage gesendet wird. Obwohl es möglich ist, Änderungen vorzunehmen, bevor die erste Abfrage abgeschlossen ist, wird der zugrunde liegenden Datenquelle viel unnötige Last aufgebürdet. Indem Filter früh angewendet werden, werden diese zwischenzeitlichen Abfragen generell günstiger und schneller. Außerdem kann es, wenn Sie Filter nicht frühzeitig anwenden, zu einer Überschreitung des Grenzwerts von 1 Mio. Zeilen kommen (siehe oben).
 - **Begrenzen Sie die Anzahl von Visuals auf einer Seite:** Wenn eine Berichtsseite geöffnet wird (und Seitenfilter angewendet werden), werden alle Visuals auf einer Seite aktualisiert. Es besteht jedoch eine Obergrenze für die Anzahl von Abfragen, die parallel gesendet werden können. Diese wird durch die Power BI-Umgebung und die Modelleinstellung **Maximale Verbindungsanzahl pro Datenquelle** vorgegeben (siehe oben). Mit zunehmender Anzahl von Seitenvisuals steigt daher die Wahrscheinlichkeit, dass sie seriell aktualisiert werden. Dies erhöht die zum Aktualisieren der gesamten Seite benötigte Zeit und die Wahrscheinlichkeit, dass Visuals (bei flüchtigen Datenquellen) inkonsistente Ergebnisse anzeigen. Aus diesem Grund wird empfohlen, die Anzahl von Visuals auf einer Seite zu begrenzen und stattdessen mehr einfachere Seiten zu haben. Das Ersetzen mehrerer Kartenvisuals durch ein einziges mehrzeiliges Kartenvisual kann ein ähnliches Seitenlayout ermöglichen.
-- **Deaktivieren Sie die Interaktion zwischen Visuals:** Interaktionen mit Kreuzhervorhebung und Kreuzfilterung erfordern das Übermitteln von Abfragen an die zugrunde liegende Quelle. Sofern diese Interaktionen nicht notwendig sind, wird empfohlen, sie zu deaktivieren, wenn die Reaktionszeit auf die Auswahlkriterien von Benutzern unangemessen lang ist. Diese Interaktionen können entweder für den gesamten Bericht (wie zuvor unter „Optionen zur Verringerung von Abfragen“ beschrieben) oder wie im Artikel [Gegenseitige Kreuzfilterung von Visuals in einem Power BI-Bericht](../consumer/end-user-interactions.md) beschrieben von Fall zu Fall deaktiviert werden.
+- **Deaktivieren Sie die Interaktion zwischen Visuals:** Interaktionen mit Kreuzhervorhebung und Kreuzfilterung erfordern das Übermitteln von Abfragen an die zugrunde liegende Quelle. Sofern diese Interaktionen nicht notwendig sind, wird empfohlen, sie zu deaktivieren, wenn die Reaktionszeit auf die Auswahlkriterien von Benutzern unangemessen lang ist. Diese Interaktionen können entweder für den gesamten Bericht (wie oben in den Optionen zur Verringerung von Abfragen beschrieben) oder von Fall zu Fall deaktiviert werden. Weitere Informationen finden Sie unter [Gegenseitige Kreuzfilterung von Visuals in einem Power BI-Bericht](../consumer/end-user-interactions.md).
 
 Zusätzlich zur oben aufgeführten Liste mit Optimierungstechniken kann jede der nachfolgenden Berichtsfunktionen zu Leistungsproblemen beitragen:
 
@@ -110,8 +110,8 @@ Zusätzlich zur oben aufgeführten Liste mit Optimierungstechniken kann jede der
     
     Dies kann dazu führen, dass zwei Abfragen an die zugrunde liegende Datenquelle gesendet werden:
     
-      - Die erste Abfrage ruft die Kategorien ab, die die Bedingungen erfüllen (Sales > 15 Mio. US-Dollar).
-      - Die zweite Abfrage ruft die notwendigen Daten für das Visual ab, einschließlich der Kategorien, die die Bedingung in der WHERE-Klausel erfüllen.
+    - Die erste Abfrage ruft die Kategorien ab, die die Bedingungen erfüllen (Sales > 15 Mio. US-Dollar).
+    - Die zweite Abfrage ruft die notwendigen Daten für das Visual ab, einschließlich der Kategorien, die die Bedingung in der WHERE-Klausel erfüllen.
     
     Dies funktioniert in der Regel gut, wenn es wie in diesem Beispiel hunderttausende Kategorien gibt. Die Leistung kann sich jedoch verschlechtern, wenn die Anzahl der Kategorien wesentlich größer ist (tatsächlich schlägt die Abfrage fehl, wenn mehr als eine 1 Mio. Kategorien die Bedingung erfüllen. Der Grund dafür ist die Begrenzung auf 1 Mio. Zeilen, die zuvor erwähnt wurde).
 - **TopN-Filter:** Erweiterte Filter können so definiert werden, dass sie nur die oberen (oder unteren) n Werte nach einem Measure filtern. Beispielsweise um nur die obersten fünf Kategorien im obigen Visual anzuzeigen. Wie bei den Measurefiltern führt dies auch dazu, dass zwei Abfragen an die zugrunde liegende Datenquelle gesendet werden. Allerdings gibt die erste Abfrage alle Kategorien der zugrunde liegenden Quelle zurück. Anschließend werden die obersten n basierend auf den zurückgegebenen Ergebnissen bestimmt. Abhängigkeit von der Kardinalität der beteiligten Spalte kann dies zu Leistungsproblemen führen (oder Abfragefehlern aufgrund des Zeilengrenzwerts von 1 Mio.).
@@ -127,7 +127,7 @@ Es gibt viele Funktions- und Leistungsverbesserungen, die durch die Konvertierun
 
 ## <a name="educate-users"></a>Schulen von Benutzern
 
-Es ist wichtig, Ihre Benutzer darüber zu informieren, wie sie effizient mit Berichten arbeiten können, die auf DirectQuery-Datasets basieren. Ihre Berichtsautoren sollten sich mit dem Inhalt des Themas [Optimieren von Berichtsentwürfen](#optimize-report-designs) vertraut machen.
+Es ist wichtig, Ihre Benutzer darüber zu informieren, wie sie effizient mit Berichten arbeiten können, die auf DirectQuery-Datasets basieren. Ihre Berichtsautoren sollten sich mit dem Inhalt des Themas [Optimieren von Berichtsentwürfen](#optimize-report-designs section) vertraut machen.
 
 Wir empfehlen, dass Sie Ihre Berichtsempfänger über Ihre Berichte informieren, die auf DirectQuery-Datasets basieren. Es kann für sie hilfreich sein, die allgemeine Datenarchitektur zu verstehen, einschließlich der in diesem Artikel beschriebenen wesentlichen Einschränkungen. Lassen Sie sie wissen, dass die Aktualisierung von Antworten und interaktive Filterung zuweilen langsam sein können. Wenn Berichtsbenutzer verstehen, warum eine Leistungsverschlechterung erfolgen kann, ist es weniger wahrscheinlich, dass sie das Vertrauen in die Berichte und Daten verlieren.
 
