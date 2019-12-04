@@ -58,6 +58,8 @@
               href: end-user-pdf.md
             - name: Hinzufügen eines Lesezeichens zu einem Bericht
               href: end-user-bookmarks.md
+            - name: Paginierte Berichte
+              href: end-user-paginated-report.md
         - name: Visualisierungen
           items:
             - name: Wofür kann ich Visualisierungen verwenden?
