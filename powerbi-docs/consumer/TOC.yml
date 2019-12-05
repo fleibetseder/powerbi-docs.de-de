@@ -58,8 +58,16 @@
               href: end-user-pdf.md
             - name: Hinzufügen eines Lesezeichens zu einem Bericht
               href: end-user-bookmarks.md
-            - name: Paginierte Berichte
-              href: end-user-paginated-report.md
+            - name: Paginierte Berichte in Power BI
+              items:
+                - name: Paginierte Berichte
+                  href: end-user-paginated-report.md
+                - name: Anzeigen eines paginierten Berichts
+                  href: paginated-reports-view-power-bi-service.md
+                - name: Interagieren mit Parametern
+                  href: paginated-reports-view-parameters.md
+                - name: Abonnieren (selbst oder stellvertretend)
+                  href: paginated-reports-subscriptions.md
         - name: Visualisierungen
           items:
             - name: Wofür kann ich Visualisierungen verwenden?

@@ -7,15 +7,15 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 11/26/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b9f7c745ad251fdb81c7898130cd3ca6c5d32af9
-ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
+ms.openlocfilehash: 50daa90f937a9d1c7081d9b22e3c743da950945c
+ms.sourcegitcommit: fe9253a6021b9e198afa28aa9c670c3bacf59674
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164161"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74548564"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Automatische Seitenaktualisierung in Power BI Desktop (Vorschau)
 
@@ -83,7 +83,7 @@ Als nächstes schauen wir uns an, wie Sie als Kapazitätsadministrator Leistungs
 
 Sie können auch automatische Seitenaktualisierungsintervalle für Berichte festlegen, die in Power BI Desktop erstellt und für den Power BI-Dienst veröffentlicht wurden. 
 
-Die automatische Seitenaktualisierung für Berichte im Power BI-Dienst wird mit Schritten konfiguriert, die der Konfiguration in Power BI Desktop ähneln. Die folgende Abbildung zeigt die Konfiguration der **Seitenaktualisierung** für den Power BI-Dienst:
+Die automatische Seitenaktualisierung für Berichte im Power BI-Dienst wird mit Schritten konfiguriert, die der Konfiguration in Power BI Desktop ähneln. Wenn die automatische Seitenaktualisierung im Power BI-Dienst konfiguriert wird, unterstützt sie auch [eingebetteten Power BI-Inhalt](developer/embedding.md). Die folgende Abbildung zeigt die Konfiguration der **Seitenaktualisierung** für den Power BI-Dienst:
 
 ![Automatische Seitenaktualisierung im Power BI-Dienst](media/desktop-automatic-page-refresh/automatic-page-refresh-04.png)
 
