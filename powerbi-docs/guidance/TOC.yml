@@ -32,6 +32,10 @@
           href: ../service-dataflows-best-practices.md
         - name: Leitfaden für das DirectQuery-Model in Power BI Desktop
           href: directquery-model-guidance.md
+        - name: Erweitern von Visuals mit QuickInfos für Berichtsseiten
+          href: report-page-tooltips.md
+        - name: Drillthrough für Berichtsseiten
+          href: report-drillthrough.md
     - name: Whitepaper
       items:
         - name: Whitepaper – Übersicht
