@@ -1,20 +1,20 @@
 ---
 title: Wo befindet sich mein Power BI-Mandant?
 description: Hier erfahren Sie, wo sich der Power BI-Mandant befindet und wie dieser Ort ausgewählt wird. Dies ist wichtig zu wissen, da es sich auf Ihre Interaktionen mit dem Dienst auswirken kann.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: mblythe
+ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 3f12e6f0b54f85ebd626b2bd35bf1a03d513c17a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4a763b31333004a8cdecda5262967473817bc983
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73873328"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74698369"
 ---
 # <a name="where-is-my-power-bi-tenant-located"></a>Wo befindet sich mein Power BI-Mandant?
 

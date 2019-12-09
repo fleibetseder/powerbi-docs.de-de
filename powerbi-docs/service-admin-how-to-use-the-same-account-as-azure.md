@@ -1,20 +1,20 @@
 ---
 title: Verwenden des gleichen Kontos für Power BI und Azure
 description: Verwenden der gleichen Kontoanmeldung für Power BI und Azure
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: mblythe
+ms.author: kfollis
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 11fecb5ff87c454b32b2504fba3914f397265184
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4f1f8947827500ec89d189e17f8ab2189caaff93
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73873630"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74698576"
 ---
 # <a name="using-the-same-account-for-power-bi-and-azure"></a>Verwenden des gleichen Kontos für Power BI und Azure
 

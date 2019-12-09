@@ -1,20 +1,20 @@
 ---
 title: Lokales Datengateway – Problembehandlung
 description: Dieser Artikel erläutert Wege, wie Sie Probleme behandeln können, die mit dem lokalen Datengateway und Power BI auftreten. Er bietet eventuell Hilfestellungen für bekannte Probleme und nennt Tools, die Sie unterstützen.
-author: mgblythe
-ms.author: mblythe
+author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: b420c827df3c18796d0d46514f81170f202eafbd
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 73e2c923500a2d78072a711bc7662a5923811bba
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881576"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74699335"
 ---
 # <a name="troubleshoot-gateways---power-bi"></a>Lokales Datengateway – Problembehandlung
 

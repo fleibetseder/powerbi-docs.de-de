@@ -1,20 +1,20 @@
 ---
 title: Konfigurieren von Workloads in Power BI Premium
 description: Hier erfahren Sie, wie Sie Workloads in einer Power BI Premium-Kapazität konfigurieren.
-author: mgblythe
-ms.author: mblythe
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/14/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 8240c4590a5e5bb892c4858ea74aa20e569ecb89
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7d94c5d3531576cd36688591b55aaf4a49de51aa
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73856815"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831302"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurieren von Workloads in einer Premium-Kapazität
 
@@ -164,7 +164,7 @@ Die Workload für paginierte Berichte ermöglicht Ihnen die Ausführung paginier
 | **Max. Arbeitsspeicher (%)** | Der Prozentsatz des maximal verfügbaren Arbeitsspeichers, der von paginierten Berichten in einer Kapazität verwendet werden kann. |
 |  |  |
 
-Mit paginierten Berichten kann benutzerdefinierter Code beim Rendern eines Berichts ausgeführt werden. Das ist beispielsweise sinnvoll, wenn sich die Textfarbe auf Grundlage der Inhalte dynamisch ändert, wodurch zusätzlicher Arbeitsspeicher belegt werden kann. Power BI Premium führt paginierte Berichte in einem Bereich innerhalb der Kapazität aus. Der festgelegte Wert für „Max. Arbeitsspeicher“ wird *unabhängig* davon verwendet, ob die Workload aktiv ist. Wenn Sie für die Einstellung „Max. Arbeitsspeicher“ einen Wert festlegen, der sich von der Standardeinstellung unterscheidet, müssen Sie einen ausreichend niedrigen Wert festlegen, damit dieser sich nicht negativ auf die anderen Workloads auswirkt.
+Mit paginierten Berichten kann benutzerdefinierter Code beim Rendern eines Berichts ausgeführt werden. Das ist beispielsweise sinnvoll, wenn sich die Textfarbe auf Grundlage der Inhalte dynamisch ändert, wodurch zusätzlicher Arbeitsspeicher belegt werden kann. Power BI Premium führt paginierte Berichte in einem Bereich innerhalb der Kapazität aus. 
 
 Teilweise kann es vorkommen, dass die Workload für paginierte Berichte nicht verfügbar ist. In diesem Fall zeigt die Workload einen Fehlerstatus im Verwaltungsportal an, und den Benutzern werden Timeouts beim Rendern von Berichten angezeigt. Deaktivieren Sie die Workload, und aktivieren Sie sie dann erneut, um dieses Problem zu beheben.
 

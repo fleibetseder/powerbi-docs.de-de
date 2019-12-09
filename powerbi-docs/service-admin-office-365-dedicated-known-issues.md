@@ -1,21 +1,21 @@
 ---
 title: Office 365 dediziert-Kunden – bekannte Probleme
 description: Unterstützung für Office 365 dediziert-Kunden – bekannte Probleme Dieses Thema behandelt Probleme, die speziell für Office 365 dediziert-Kunden relevant sind. Dazu gehören Einschränkungen des Gruppenfeatures sowie der iPhone-App mit personalisierten Domänen.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/28/2017
-ms.author: mblythe
+ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 010a45c08a3ed27b12b4fca91c64c87a00430f5a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a5a9d080205e5f6a047ed820b8b5ed70fa9017d2
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73873598"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74699979"
 ---
 # <a name="office-365-dedicated-customers---known-issues"></a>Office 365 dediziert-Kunden – bekannte Probleme
 Power BI wird jetzt für dedizierte Office 365-Kunden unterstützt.  Wenn Sie dedizierter O365-Kunde sind, können Sie sich mit einem Konto aus diesem Mandanten anmelden und Power BI verwenden. Es gibt derzeit zwei bekannte Probleme.

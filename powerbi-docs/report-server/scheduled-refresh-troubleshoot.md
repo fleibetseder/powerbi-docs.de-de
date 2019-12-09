@@ -1,19 +1,19 @@
 ---
 title: Problembehandlung für die geplante Aktualisierung in Power BI-Berichtsserver
 description: In diesem Artikel werden die verfügbaren Ressourcen für die Behandlung von Problemen mit der geplanten Aktualisierung in Power BI-Berichtsserver erläutert.
-author: mgblythe
+author: maggiesMSFT
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: troubleshooting
 ms.date: 11/01/2017
-ms.author: mblythe
-ms.openlocfilehash: 37eb5c0e68a6895ac105cc7f12d3353c04641204
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.author: maggies
+ms.openlocfilehash: dd7d6a140dd9828a188f22144e31ea89e342c370
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874047"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74698691"
 ---
 # <a name="troubleshoot-scheduled-refresh-in-power-bi-report-server"></a>Problembehandlung für die geplante Aktualisierung in Power BI-Berichtsserver
 In diesem Artikel werden die verfügbaren Ressourcen für die Behandlung von Problemen mit der geplanten Aktualisierung in Power BI-Berichtsserver erläutert.

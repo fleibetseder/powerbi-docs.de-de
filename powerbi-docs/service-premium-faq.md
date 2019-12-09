@@ -1,20 +1,20 @@
 ---
 title: Power BI Premium – Häufig gestellte Fragen
 description: Durchsuchen Sie die Liste der häufig gestellten Fragen und Antworten zum Power BI-Premium-Angebot.
-author: mgblythe
-ms.author: mblythe
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/16/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 31335f01bd91355587634afbde9a10df5689226b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ff2f22620cf062dcc342323e71dc7401b5991cd7
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881183"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74697035"
 ---
 # <a name="power-bi-premium-faq"></a>Power BI Premium – Häufig gestellte Fragen
 

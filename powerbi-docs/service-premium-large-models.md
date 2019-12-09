@@ -1,20 +1,20 @@
 ---
 title: Große Modelle in Power BI Premium (Vorschauversion)
 description: Mit dem Feature für große Modelle können Datasets in Power BI Premium mehr als 10 GB groß werden.
-author: mgblythe
-ms.author: mblythe
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/29/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: a561976a968284197f759f60c621a757f2995f4f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 934f045e2546893c48211729402a773b4bbe2aa0
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881149"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74696759"
 ---
 # <a name="large-models-in-power-bi-premium-preview"></a>Große Modelle in Power BI Premium (Vorschauversion)
 
