@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/30/2019
+ms.date: 11/27/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8a9e2094619d4c6b0e0f6feb2c9767902b4f7b09
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: bdaac078fa106565f7c11b3cc323840b5d10b579
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099678"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565337"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organisieren der Arbeit in den neuen Power BI-Arbeitsbereichen
 
@@ -60,7 +60,7 @@ Mit Rollen können Sie verwalten, wer welche Aktionen in einem Arbeitsbereich du
 
 Wenn Sie einer Benutzergruppe Rollen zuweisen, verfügen die Personen in der Gruppe über Zugriffsberechtigungen für Inhalte. Wenn Sie Benutzergruppen schachteln, verfügen alle Benutzer über die Berechtigung.
 
-Folgende Rollen sind verfügbar: Administrator, Mitglied, Mitwirkender und Betrachter. Für alle diese Funktionen außer der letzten ist eine Power BI Pro-Lizenz erforderlich.
+Folgende Rollen sind verfügbar: Administrator, Mitglied, Mitwirkender und Betrachter. Für alle diese Funktionen außer Anzeigen und Interaktion ist eine Power BI Pro-Lizenz erforderlich.
 
 |Funktion   | Administrator  | Mitglied  | Mitwirkender  | Anzeigender Benutzer |
 |---|---|---|---|---|
@@ -72,15 +72,15 @@ Folgende Rollen sind verfügbar: Administrator, Mitglied, Mitwirkender und Betra
 | Anderen erlauben, Elemente erneut freizugeben. |  X | X  |   |   |
 | Inhalte im Arbeitsbereich erstellen, bearbeiten und löschen.  |  X | X  | X  |   |
 | Berichte im Arbeitsbereich veröffentlichen und Inhalt löschen.  |  X | X  | X  |   |
-| Erstellen Sie einen Bericht in einem anderen Arbeitsbereich basierend auf einem Dataset in diesem Arbeitsbereich. |  X | X  | X  |   |
-| Kopieren Sie einen Bericht. | X | X | X |  |
-| Anzeigen eines Elements und Interagieren mit einem Element. |  X | X  | X  | X  |
+| Erstellen Sie einen Bericht in einem anderen Arbeitsbereich basierend auf einem Dataset in diesem Arbeitsbereich.<sup>1</sup> |  X | X  | X  |   |
+| Kopieren Sie einen Bericht.<sup>1</sup> | X | X | X |  |
+| Anzeigen eines Elements und Interagieren mit einem Element.<sup>2</sup> |  X | X  | X  | X  |
 
-> [!NOTE]
->Benutzer müssen zusätzliche Kriterien erfüllen, um einen Bericht zu kopieren und einen Bericht in einem anderen Arbeitsbereich basierend auf einem Dataset in diesem Arbeitsbereich zu erstellen:
->- Sie benötigen eine Power BI Pro-Lizenz. Weitere Informationen finden Sie im nächsten Abschnitt zur [Lizenzierung](#licensing).
->- Sie benötigen die Erstellungsberechtigung für das Dataset. Für Datasets in diesem Arbeitsbereich haben die Personen mit den Rollen „Administrator“, „Mitglied“ und „Mitwirkender“ über ihre Arbeitsbereichsrolle die Erstellungsberechtigung.
- 
+1. Sie müssen zusätzliche Kriterien erfüllen, um einen Bericht zu kopieren und einen Bericht in einem anderen Arbeitsbereich basierend auf einem Dataset in diesem Arbeitsbereich zu erstellen:
+    - Sie benötigen eine Power BI Pro-Lizenz. Weitere Informationen finden Sie im nächsten Abschnitt zur [Lizenzierung](#licensing).
+    - Sie benötigen die Erstellungsberechtigung für das Dataset. Für Datasets in diesem Arbeitsbereich haben die Personen mit den Rollen „Administrator“, „Mitglied“ und „Mitwirkender“ über ihre Arbeitsbereichsrolle die Erstellungsberechtigung.
+2. Auch wenn Sie nicht über eine Power BI Pro-Lizenz verfügen, können Sie Elemente im Power BI-Dienst anzeigen und mit ihnen interagieren, wenn sich die Elemente in einem Arbeitsbereich in einer Premium-Kapazität befinden.
+
 ## <a name="licensing"></a>Lizenzierung
 Alle Benutzer, die Sie einem Arbeitsbereich in der gemeinsam genutzten Kapazität hinzufügen, benötigen eine Power BI Pro-Lizenz. Im Arbeitsbereich ist die Zusammenarbeit aller Beteiligten beim Erstellen von Dashboards und Berichten möglich, die Sie für eine größere Zielgruppe oder sogar die gesamte Organisation veröffentlichen möchten. 
 

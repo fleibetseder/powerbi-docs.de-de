@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2019
-ms.openlocfilehash: eecddd9251bbce732e9dc4ef70ad0d855f499d11
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 11/26/2019
+ms.openlocfilehash: 7297e73dc0e412f75412eb48398ef9c85cda8d6e
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874139"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565770"
 ---
 # <a name="install-power-bi-report-server"></a>Installieren von Power BI-Berichtsserver
 
@@ -21,9 +21,9 @@ Erfahren Sie, wie Power BI-Berichtsserver installiert wird.
 
 ## <a name="download-power-bi-report-server"></a>Power BI-Berichtsserver herunterladen
 
-Laden Sie [Power BI-Berichtsserver](https://www.microsoft.com/download/details.aspx?id=56722) aus dem Microsoft Download Center herunter.
+Klicken Sie auf der Seite [Lokale Berichterstellung mit Power BI-Berichtsserver](https://powerbi.microsoft.com/report-server/) auf **Kostenlose Testversion herunterladen**.
 
-Es ist auch eine kostenlose Testversion verfügbar. Klicken Sie auf der Seite [Lokale Berichterstellung mit Power BI-Berichtsserver](https://powerbi.microsoft.com/report-server/) auf **Kostenlose Testversion herunterladen**.
+Wenn Sie die Datei „PowerBIReportServer.exe“ ausführen, wählen Sie die kostenlose Testversion aus oder geben Ihren Product Key ein. Weitere Details erhalten Sie im Verlauf dieses Artikels.
 
 ## <a name="before-you-install"></a>Vor der Installation
 
@@ -43,7 +43,7 @@ Weitere Details erhalten Sie im Verlauf dieses Artikels.
 
 #### <a name="power-bi-premium"></a>Power BI Premium
 
-Wenn Sie Power BI Premium erworben haben, haben Sie auf der Registerkarte **Premium-Einstellungen** im Power BI-Verwaltungsportal Zugriff auf den Product Key Ihres Power BI-Berichtsservers. Dieser steht nur globalen Administratoren oder Benutzern zur Verfügung, denen die Administratorrolle für den Power BI-Dienst zugewiesen wurde.
+Wenn Sie Power BI Premium erworben haben, haben Sie auf der Registerkarte **Premium-Einstellungen** im Power BI-Verwaltungsportal Zugriff auf den Product Key Ihres Power BI-Berichtsservers. Das Verwaltungsportal steht nur globalen Administratoren oder Benutzern zur Verfügung, denen die Administratorrolle für den Power BI-Dienst zugewiesen wurde.
 
 ![Premium-Einstellungen](../report-server/media/install-report-server/pbirs-product-key.png "Schlüssel für den Power BI-Berichtsserver in den Premium-Einstellungen")
 
@@ -70,7 +70,7 @@ Zum Zeitpunkt der Installation ist kein Server mit der SQL Server-Datenbank-Engi
 
     ![Wählen einer Edition](media/install-report-server/pbireportserver-choose-edition.png)
 
-    Sie können im Dropdownmenü die Evaluierungs- oder die Developer-Edition auswählen.
+    Wählen Sie entweder die Evaluierungs- oder die Developer-Edition aus.
 
     ![Edition 2](media/install-report-server/pbireportserver-choose-edition2.png)
 
@@ -95,11 +95,11 @@ Zum Zeitpunkt der Installation ist kein Server mit der SQL Server-Datenbank-Engi
 
 Nach Auswahl von **Berichtsserver konfigurieren** beim Setup wird der Konfigurations-Manager für Reporting Services angezeigt. Weitere Informationen finden Sie unter [Konfigurations-Manager für Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode).
 
-Sie müssen zum Abschließen der ersten Konfiguration von Reporting Services [eine Berichtsserver-Datenbank erstellen](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-report-server-create-a-report-server-database). Ein SQL Server-Datenbankserver ist erforderlich, um diesen Schritt abzuschließen.
+Zum Abschließen der ersten Konfiguration von Reporting Services müssen Sie [eine Berichtsserver-Datenbank erstellen](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-report-server-create-a-report-server-database). Ein SQL Server-Datenbankserver ist erforderlich, um diesen Schritt abzuschließen.
 
 ### <a name="creating-a-database-on-a-different-server"></a>Erstellen einer Datenbank auf einem anderen Server
 
-Wenn Sie die Berichtsserver-Datenbank auf einem Datenbankserver auf einem anderen Computer erstellen, müssen Sie das Dienstkonto für den Berichtsserver in Anmeldeinformationen ändern, die auf dem Datenbankserver erkannt werden. 
+Wenn Sie die Berichtsserver-Datenbank auf einem Datenbankserver auf einem anderen Computer erstellen, ändern Sie das Dienstkonto für den Berichtsserver in Anmeldeinformationen, die auf dem Datenbankserver erkannt werden. 
 
 Standardmäßig verwendet der Berichtsserver das virtuelle Dienstkonto. Wenn Sie versuchen, eine Datenbank auf einem anderen Server zu erstellen, wird möglicherweise der folgenden Fehler zum Schritt „Anwenden von Verbindungsrechten“ angezeigt.
 
@@ -137,9 +137,9 @@ Ein Beispiel der vollständigen URL-Zeichenfolge kann folgendermaßen aussehen:
 
 ## <a name="firewall"></a>Firewall
 
-Wenn Sie von einem Remotecomputer aus auf den Berichtsserver zugreifen möchten, stellen Sie sicher, dass Sie Firewallregeln konfiguriert haben, sofern eine Firewall vorhanden ist.
+Wenn Sie von einem Remotecomputer aus auf den Berichtsserver zugreifen möchten, achten Sie darauf, dass Firewallregeln konfiguriert wurden, sofern eine Firewall vorhanden ist.
 
-Sie müssen den TCP-Port öffnen, den Sie für Ihre Webdienst-URL und die Webportal-URL konfiguriert haben. Standardmäßig werden beide für TCP-Port 80 konfiguriert.
+Öffnen Sie den TCP-Port, den Sie für Ihre Webdienst-URL und die Webportal-URL konfiguriert haben. Standardmäßig werden beide für TCP-Port 80 konfiguriert.
 
 ## <a name="additional-configuration"></a>Zusätzliche Konfiguration
 
