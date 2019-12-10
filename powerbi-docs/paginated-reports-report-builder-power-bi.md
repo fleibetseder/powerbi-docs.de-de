@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/27/2019
-ms.openlocfilehash: 90bc46c484f659994c6a9500865803531fa3cdcc
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.openlocfilehash: 35f50f57f3874bbb87fcdd5fbcf7da987fea1d1a
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565697"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831151"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Was sind paginierte Berichte in Power BI Premium?
 
@@ -70,7 +70,7 @@ Sie können Ihren paginierten Bericht im Power BI-Dienst in einem Browser und au
 
 Sie können jetzt im Power BI-Dienst E-Mail-Abonnements für paginierte Berichte für sich selbst und andere einrichten. Im Allgemeinen ist dieser Vorgang mit dem Abonnieren von Berichten und Dashboards im Power BI-Dienst identisch. Durch das Einrichten von Abonnements können Sie entscheiden, ob Sie die E-Mails täglich, wöchentlich oder stündlich erhalten möchten. Das Abonnement enthält eine PDF-Anlage mit der gesamten Berichtsausgabe.
 
-Weitere Details finden Sie im Artikel [Subscribe yourself and others to paginated reports in the Power BI service (Abonnieren von paginierten Berichten im Power BI-Dienst für sich selbst und andere)](paginated-reports-subscriptions.md). 
+Weitere Details finden Sie im Artikel [Subscribe yourself and others to paginated reports in the Power BI service (Abonnieren von paginierten Berichten im Power BI-Dienst für sich selbst und andere)](consumer/paginated-reports-subscriptions.md). 
 
 ## <a name="limitations-and-considerations"></a>Einschränkungen und Überlegungen
 
