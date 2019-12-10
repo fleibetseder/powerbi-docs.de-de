@@ -1,7 +1,7 @@
 ---
 title: Paginierter Berichts-Generator in Power BI
 description: Der paginierte Berichts-Generator in Power BI ist ein Tool für das Erstellen von paginierten Berichten.
-ms.date: 09/16/2019
+ms.date: 11/27/2019
 ms.service: powerbi
 ms.subservice: report-builder
 featuredvideoid: 78TZeiEhveY
@@ -9,16 +9,18 @@ ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 6d13871ec3ba8a7550a556a8923893a6b7d676ae
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: faba36a609abd94b2439006fbbcf01a1d193c585
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71076059"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565292"
 ---
 # <a name="power-bi-paginated-report-builder"></a>Paginierter Berichts-Generator in Power BI
 
  Der paginierte Berichts-Generator in Power BI ist ein Tool für das Erstellen von paginierten Berichten.  Wenn Sie einen paginierten Bericht entwerfen, erstellen Sie eine Berichtsdefinition, die angibt, welche Daten abgerufen werden sollen, wo Sie abgerufen werden können und wie sie angezeigt werden sollen. Bei Ausführung des Berichts legt der Berichtsprozessor die angegebene Berichtsdefinition zugrunde, ruft die Daten ab und kombiniert sie mit dem Berichtslayout, um den Bericht zu generieren. Im Berichts-Generator können Sie sich eine Vorschau des Berichts ansehen. Dann veröffentlichen Sie den Bericht im Power BI-Dienst.
+
+Nutzen Sie das [Praxislab: Erstellen Sie einen paginierten Microsoft Power BI-Bericht](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208).
 
 Sie ziehen das Lernen aus Videos vor? Sehen Sie sich die Videoreihe über paginierte Power BI-Berichte auf YouTube an, die vom Principal Program Manager von Power BI, Chris Finlan, stammt.
 
@@ -61,5 +63,5 @@ Die folgenden paginierten Berichte enthalten eine Matrix mit Zeilen- und Spalten
 ## <a name="next-steps"></a>Nächste Schritte
 
 - [Was sind paginierte Berichte in Power BI Premium? (Vorschau)](paginated-reports-report-builder-power-bi.md)
-
+- Nutzen Sie das [Praxislab: Erstellen Sie einen paginierten Microsoft Power BI-Bericht](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208)
 - Sehen Sie sich die [Videoreihe über paginierte Power BI-Berichte](https://www.youtube.com/watch?v=78TZeiEhveY&list=PLx7LcKtN_gq-JVzM6L8xNNxX7kts-KflJ) auf YouTube an, die vom Principal Program Manager von Power BI, Chris Finlan, stammt.

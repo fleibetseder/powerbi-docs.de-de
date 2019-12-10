@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 3ef9bd001e17c472216e501c6d38907087219959
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cd252572c3080f300592b52ddc0f25cefcf7f084
+ms.sourcegitcommit: 462ccdd9f79ff698ed0cdfc3165f4ada364dd9ef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875817"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74478665"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sicherheit auf Zeilenebene mit Power BI Embedded
 
@@ -333,8 +333,7 @@ Sie können diese Berechtigung nicht über das Verwaltungsportal festlegen. Dies
 
 ### <a name="token-based-identity-limitations"></a>Einschränkungen der tokenbasierten Identität
 
-* Diese Funktion beschränkt die Verwendung nur für Power BI Premium.
-* Diese Funktion funktioniert nicht mit einer lokalen SQL Server-Instanz.
-* Diese Funktion funktioniert nicht mit Multi-Geo.
+* Sie können RLS nur verwenden, wenn Sie über eine dedizierte Kapazität verfügen.
+* RLS funktioniert nicht mit einer lokalen SQL Server-Instanz.
 
 Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

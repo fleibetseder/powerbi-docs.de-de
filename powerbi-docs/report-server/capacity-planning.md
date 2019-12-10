@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 3/5/2018
 ms.author: pashah
-ms.openlocfilehash: c286e921c47b46c20cd73d4b32146093adc74d7f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ad657da4e0a81c6b3b9845d9c130755334f5a97f
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73860116"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565731"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>Leitfaden zur Kapazitätsplanung für Power BI-Berichtsserver
 Power BI-Berichtsserver ist eine Lösung für Self-Service-BI und Enterprise-Berichterstellung, die Kunden lokal hinter der Firewall bereitstellen können. Sie kombiniert die interaktiven Berichte von Power BI Desktop mit der lokalen Serverplattform von SQL Server Reporting Services. Aufgrund der starken und zunehmenden Verwendung von Analysen und Berichten in Unternehmen kann die Budgetplanung für die Hardwareinfrastruktur und die erforderlichen Softwarelizenzen für die Skalierung auf eine hohe Benutzeranzahl eine Herausforderung sein. Dieses Dokument bietet einen Leitfaden zur Kapazitätsplanung für Power BI-Berichtsserver anhand der Ergebnisse zahlreicher Auslastungstests mit verschiedenen Arbeitsauslastungen eines Berichtsservers. Die Berichte, Abfragen und Verwendungsmuster in einem Unternehmen weisen große Unterschiede auf. Jedoch lassen sich die in diesem Dokument vorgestellten Ergebnisse zusammen mit den tatsächlich verwendeten Tests und einer ausführlichen Beschreibung ihrer Ausführung immer als Orientierungshilfe bei der anfänglichen Planung der Bereitstellung von Power BI-Berichtsserver nutzen.
@@ -56,7 +56,10 @@ Die in den Auslastungstests verwendeten Tests sind in einem GitHub-Projekt mit d
 * Tests, die das Rendern von kleinen und großen paginierten Berichten simulieren, und 
 * Tests, die das Ausführen verschiedener Typen von Webportalvorgängen simulieren. 
 
-Alle Tests wurden so entworfen, dass sie einen End-to-End-Vorgang (z.B. das Rendern eines Berichts, das Erstellen einer neuen Datenquelle usw.) ausführen. Zu diesem Zweck führen die Tests eine oder mehrere Webanforderungen an den Berichtsserver (über APIs) aus. In der Praxis muss ein Benutzer möglicherweise einige zwischengeschaltete Vorgänge ausführen, um einen dieser End-to-End-Vorgänge abzuschließen. Beispiel: Zum Rendern eines Berichts muss der Benutzer zum Webportal wechseln, zu dem Ordner navigieren, in dem sich der Bericht befindet, und dann auf den Bericht klicken, um ihn zu rendern. In den Tests werden nicht alle Vorgänge ausgeführt, die zum vollständigen Ausführen einer End-to-End-Aufgabe erforderlich sind, jedoch erzeugen sie einen Großteil der Last, die der Power BI-Berichtsserver unter realen Bedingungen bewältigen muss. Sie können das GitHub-Projekt erkunden, um mehr über die unterschiedlichen Typen der verwendeten Berichte und die Vielfalt der ausgeführten Vorgänge zu erfahren.
+Alle Tests wurden so entworfen, dass sie einen End-to-End-Vorgang (z.B. das Rendern eines Berichts, das Erstellen einer neuen Datenquelle usw.) ausführen. Zu diesem Zweck führen die Tests eine oder mehrere Webanforderungen an den Berichtsserver (über APIs) aus. In der Praxis muss ein Benutzer möglicherweise einige zwischengeschaltete Vorgänge ausführen, um einen dieser End-to-End-Vorgänge abzuschließen. Beispiel: Zum Rendern eines Berichts muss der Benutzer zum Webportal wechseln, zu dem Ordner navigieren, in dem sich der Bericht befindet, und dann auf den Bericht klicken, um ihn zu rendern. In den Tests werden nicht alle Vorgänge ausgeführt, die zum vollständigen Ausführen einer End-to-End-Aufgabe erforderlich sind, jedoch erzeugen sie einen Großteil der Last, die der Power BI-Berichtsserver unter realen Bedingungen bewältigen muss. Sie können das GitHub-Projekt erkunden, um mehr über die unterschiedlichen Typen der verwendeten Berichte und die Vielfalt der ausgeführten Vorgänge zu erfahren.  
+
+> [!NOTE]
+> Das Tool wird nicht offiziell von Microsoft unterstützt, das Produktteam trägt jedoch zum Projekt bei und beantwortet Fragen von anderen Mitwirkenden.
 
 ### <a name="workloads"></a>Workloads
 Beim Testen werden zwei Workloadprofile verwendet: „Power BI-Bericht – stark“ und „Paginierter Bericht – stark“. In der folgenden Tabelle wird die Verteilung der für den Berichtsserver ausgeführten Anforderungen beschrieben.
@@ -133,12 +136,11 @@ Für den virtuellen Computer, der Power BI-Berichtsserver hostet, wurden untersc
 ### <a name="2-run-the-loadtest-tool"></a>2 Ausführen des Tools LoadTest
 Wenn Sie das Tool LoadTest von Reporting Services für Ihre Power BI-Berichtsserver-Bereitstellung oder eine Microsoft Azure-Bereitstellung von Power BI-Berichtsserver ausführen möchten, führen Sie die folgenden Schritte aus.
 
-1. Klonen Sie das Reporting Services LoadTest-Projekt von GitHub (https://github.com/Microsoft/Reporting-Services-LoadTest).
+1. Klonen Sie das Reporting Services LoadTest-Projekt von GitHub (https://github.com/Microsoft/Reporting-Services-LoadTest).  
 2. Das Projektverzeichnis enthält eine Projektmappendatei mit dem Namen „RSLoadTests.sln“. Öffnen Sie diese Datei in Visual Studio 2015 oder höher.
 3. Bestimmen Sie, ob dieses Tool für Ihre Bereitstellung von Power BI-Berichtsserver oder für eine Bereitstellung von Power BI-Berichtsserver in Microsoft Azure ausgeführt werden soll. Wenn Sie es für Ihre eigene Bereitstellung ausführen möchten, fahren Sie mit Schritt 5 fort.
 4. Befolgen Sie die Anweisungen unter https://github.com/Microsoft/Reporting-Services-LoadTest#create-a-sql-server-reporting-services-load-environment-in-azure, um eine Power BI-Berichtsserver-Umgebung in Azure zu erstellen.
 5. Sobald Sie mit der Bereitstellung der Umgebung fertig sind, befolgen Sie die Anweisungen unter https://github.com/Microsoft/Reporting-Services-LoadTest#load-test-execution, um die Tests auszuführen.
 
 Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
-
 

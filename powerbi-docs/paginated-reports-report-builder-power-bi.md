@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 09/24/2019
-ms.openlocfilehash: 9e49e8e70e7bc499fbcfe0c263bdd8315f2c7dbe
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 11/27/2019
+ms.openlocfilehash: 90bc46c484f659994c6a9500865803531fa3cdcc
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874704"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565697"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Was sind paginierte Berichte in Power BI Premium?
 
@@ -21,9 +21,9 @@ Paginierte Berichte sind seit Langem das Standardberichtsformat in SQL Server Re
 
 Paginierte Berichte können viele Seiten umfassen. Dieser Bericht umfasst beispielsweise 563 Seiten. Jede Seite ist genau strukturiert, mit einer Seite pro Rechnung und sich wiederholenden Kopf- und Fußzeilen.
 
-![Paginiert](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
+Nutzen Sie das [Praxislab: Erstellen Sie einen paginierten Microsoft Power BI-Bericht](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208).
 
-![Paginierter Bericht im Power BI-Dienst](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
+![Paginiert](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
 Sie können eine Vorschau Ihres Berichts im Berichts-Generator anzeigen und dann im Power BI-Dienst unter https://app.powerbi.com veröffentlichen. Sie benötigen eine Power BI Pro-Lizenz, um einen Bericht im Dienst zu veröffentlichen. Sie können paginierte Berichte in „Mein Arbeitsbereich“ oder in anderen Arbeitsbereichen veröffentlichen und freigeben, solange sich der Arbeitsbereich in einer Power BI Premium-Kapazität befindet. Außerdem muss ein Power BI-Administrator paginierte Berichte im Abschnitt [Premium-Kapazitäten](service-admin-premium-workloads.md#paginated-reports) des Power BI-Administratorportals aktivieren. 
 
@@ -87,6 +87,6 @@ Hier sind einige andere Features aufgeführt, die in der ersten Version nicht un
 - [Installieren des Power BI-Berichts-Generators aus dem Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513)
 - [Tutorial: Erstellen eines paginierten Berichts](paginated-reports-quickstart-aw.md)
 - [Enter data directly in a paginated report (Eingeben von Daten direkt in einem paginierten Bericht)](paginated-reports-enter-data.md)
-
+- [Praxislab: Erstellen Sie einen paginierten Microsoft Power BI-Bericht](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208)
   
 
