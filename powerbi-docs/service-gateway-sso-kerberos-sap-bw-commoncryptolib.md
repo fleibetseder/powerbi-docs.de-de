@@ -1,20 +1,20 @@
 ---
 title: Verwenden von Kerberos-Single Sign-On für Einmaliges Anmelden (SSO) bei SAP BW mithilfe von CommonCryptoLib (sapcrypto.dll)
 description: Konfigurieren Ihres SAP BW-Servers, um einmaliges Anmelden vom Power BI-Dienst mithilfe von CommonCryptoLib (sapcrypto.dll) zu aktivieren
-author: mgblythe
-ms.author: mblythe
+author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 63b5abde7deb5f6d93fb7702f0b1244bd193a47d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 6c098a187b7f0d0d4828500cd6c5995a7c82ab42
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872431"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74697633"
 ---
 # <a name="use-kerberos-single-sign-on-for-sso-to-sap-bw-using-commoncryptolib-sapcryptodll"></a>Verwenden von Kerberos-Single Sign-On für Einmaliges Anmelden (SSO) bei SAP BW mithilfe von CommonCryptoLib (sapcrypto.dll)
 
@@ -101,7 +101,7 @@ Wenn der Bericht im Power BI-Dienst nicht aktualisiert werden kann, können Sie 
 
 ### <a name="cpic-tracing"></a>CPIC-Ablaufverfolgung
 
-1. Legen Sie zum Aktivieren der CPIC-Ablaufverfolgung zwei Umgebungsvariablen fest: **CPIC**TRACE\_ und \_CPIC**TRACE\_DIR**. 
+1. Legen Sie zum Aktivieren der CPIC-Ablaufverfolgung zwei Umgebungsvariablen fest: **CPIC\_TRACE** und **CPIC\_TRACE\_DIR**. 
 
    Mit der ersten Variablen wird die Ablaufverfolgungsebene festgelegt, die zweite Variable gibt das Verzeichnis für die Ablaufverfolgungsdatei an. Bei dem Verzeichnis muss es sich um einen Speicherort handeln, in den Mitglieder der Gruppe „Authentifizierte Benutzer“ schreiben können. 
  

@@ -1,20 +1,20 @@
 ---
 title: Verwenden von Kerberos für SSO (Single Sign-On, Einmaliges Anmelden) bei SAP BW mithilfe von gx64krb5
 description: Konfigurieren Ihres SAP BW-Servers, um einmaliges Anmelden vom Power BI-Dienst mithilfe von gx64krb5 zu aktivieren
-author: mgblythe
-ms.author: mblythe
+author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: a162ba686c3f548ed371e7a63c2d85dd1f697462
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 9588f13a857dc105dce3b3577df7c3b06df027ed
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881468"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74699243"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-to-sap-bw-using-gx64krb5"></a>Verwenden von Kerberos für SSO (Single Sign-On, Einmaliges Anmelden) bei SAP BW mithilfe von gx64krb5
 
@@ -188,7 +188,7 @@ Falls eines der nachfolgend aufgeführten Probleme mit der gx64krb5-Installation
 
 1. Aktivieren Sie die SAP BW-Ablaufverfolgung, und überprüfen Sie die generierten Protokolldateien. Es sind verschiedene Arten von SAP BW-Ablaufverfolgungen verfügbar (z. B. CPIC-Ablaufverfolgung):
 
-   a. Legen Sie zum Aktivieren der CPIC-Ablaufverfolgung zwei Umgebungsvariablen fest: **CPIC**TRACE\_ und \_CPIC**TRACE\_DIR**.
+   a. Legen Sie zum Aktivieren der CPIC-Ablaufverfolgung zwei Umgebungsvariablen fest: **CPIC\_TRACE** und **CPIC\_TRACE\_DIR**.
 
       Mit der ersten Variablen wird die Ablaufverfolgungsebene festgelegt, die zweite Variable gibt das Verzeichnis für die Ablaufverfolgungsdatei an. Bei dem Verzeichnis muss es sich um einen Speicherort handeln, in den Mitglieder der Gruppe „Authentifizierte Benutzer“ schreiben können. 
  
