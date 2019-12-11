@@ -32,10 +32,14 @@
           href: ../service-dataflows-best-practices.md
         - name: Leitfaden für das DirectQuery-Model in Power BI Desktop
           href: directquery-model-guidance.md
+        - name: Verweis auf Power Query-Abfragen
+          href: power-query-referenced-queries.md
         - name: Erweitern von Visuals mit QuickInfos für Berichtsseiten
           href: report-page-tooltips.md
         - name: Drillthrough für Berichtsseiten
           href: report-drillthrough.md
+        - name: Anleitung zur automatischen Angabe von Datum/Uhrzeit in Power BI Desktop
+          href: auto-date-time.md
     - name: Whitepaper
       items:
         - name: Whitepaper – Übersicht
