@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b947fe3f2faf423a7b2ced4d0032578ded015f7a
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: efbeda396217c1a715f9a5d7ae4827c5f8d09a25
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099815"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74698990"
 ---
 # <a name="r-visuals-in-power-bi"></a>R-Visuals in Power BI
 R-Visualisierungen können derzeit nur in **Power BI Desktop** erstellt und anschließend im Power BI-Dienst veröffentlicht werden. Weitere Informationen zum Erstellen von R-Visuals finden Sie unter [Erstellen von Power BI-Visuals mithilfe von R](../desktop-r-visuals.md).
@@ -94,6 +94,11 @@ R-Visualisierungen weisen im Power BI-Dienst einige Einschränkungen auf:
 * R-Visualisierungen werden nicht angezeigt, wenn **Im Web veröffentlichen** verwendet wird.
 * R-Visualisierungen drucken derzeit nicht, wenn Dashboards und Berichte drucken
 * R-Visualisierungen werden im DirectQuery-Modus von Analysis Services derzeit nicht unterstützt
+* Visuelle R-Elemente können Textbezeichnungen in grafische Elemente konvertieren. Hierfür müssen Sie im Power BI-Dienst den folgenden zusätzlichen Schritt ausführen:
+  
+  * Fügen Sie die folgende Zeile am Anfang des R-Skripts ein:
+    
+        powerbi_rEnableShowText =  1
 * Für chinesische, japanische und koreanische Schriftarten müssen alle folgenden zusätzlichen Schritte ausgeführt werden, um eine ordnungsgemäße Funktion im Power BI-Dienst sicherzustellen:
   
   * Installieren Sie zunächst das R-Paket *showtext* und alle Abhängigkeiten. Hierzu können Sie das folgende Skript ausführen:

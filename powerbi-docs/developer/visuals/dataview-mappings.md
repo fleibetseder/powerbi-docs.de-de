@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 07cc0517fb27649bb3cc47b8ba8f51b4268d9a7c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b50ebde94d78ca42437979d792fb6402affe8855
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880156"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74696630"
 ---
 # <a name="understand-data-view-mapping-in-power-bi-visuals"></a>Grundlegendes zur Zuordnung von Datenansichten in Power BI-Visuals
 
@@ -101,14 +101,29 @@ Wenn Sie eine einzelne Datenzuordnung verwenden möchten, müssen Sie den Namen 
 ### <a name="example-3"></a>Beispiel 3
 
 ```json
-"dataViewMappings": {
-    "conditions": [
-        { "Y": { "max": 1 } }
+{
+    "dataRoles": [
+        {
+            "displayName": "Y",
+            "name": "Y",
+            "kind": "Measure"
+        }
     ],
-    "single": {
-        "role": "Y"
-    }
-}  
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "Y": {
+                        "max": 1
+                    }
+                }
+            ],
+            "single": {
+                "role": "Y"
+            }
+        }
+    ]
+}
 ```
 
 Die resultierende Datenansicht enthält immer noch die anderen Typen („table“, „categorical“ usw.). Jede Zuordnung enthält jedoch nur den einzelnen Wert. Es empfiehlt sich, nur auf den Wert in „single“ zuzugreifen.
@@ -129,6 +144,48 @@ Die resultierende Datenansicht enthält immer noch die anderen Typen („table�
     ]
 }
 ```
+
+Codebeispiel für die Verarbeitung der einfachen Datenzuordnung in der Ansicht
+
+```typescript
+"use strict";
+import powerbi from "powerbi-visuals-api";
+import DataView = powerbi.DataView;
+import DataViewSingle = powerbi.DataViewSingle;
+// standart imports
+// ...
+
+export class Visual implements IVisual {
+    private target: HTMLElement;
+    private host: IVisualHost;
+    private valueText: HTMLParagraphElement;
+
+    constructor(options: VisualConstructorOptions) {
+        // constructor body
+        this.target = options.element;
+        this.host = options.host;
+        this.valueText = document.createElement("p");
+        this.target.appendChild(this.valueText);
+        // ...
+    }
+
+    public update(options: VisualUpdateOptions) {
+        const dataView: DataView = options.dataViews[0];
+        const singleDataView: DataViewSingle = dataView.single;
+
+        if (!singleDataView ||
+            !singleDataView.value ) {
+            return
+        }
+
+        this.valueText.innerText = singleDataView.value.toString();
+    }
+}
+```
+
+Als Ergebnis zeigt das Visual einen einzelnen Wert aus Power BI an:
+
+![Beispiel für ein Visual mit Zuordnung einer einzelnen Datenansicht](./media/visual-simple-dataview-mapping.png)
 
 ## <a name="categorical-data-mapping"></a>Kategorische Datenzuordnung
 
@@ -284,10 +341,10 @@ Die kategorische Datensicht kann beispielsweise wie folgt visualisiert werden:
 |-----|-----|------|------|------|------|
 | | Jahr | 2013 | 2014 | 2015 | 2016 |
 | Land | | |
-| USA | | x | x | 125 | 100 |
-| Kanada | | x | 50 | 200 | x |
-| Mexiko | | 300 | x | x | x |
-| VEREINIGTES KÖNIGREICH | | x | x | 75 | x |
+| USA | | x | x | 650 | 350 |
+| Kanada | | x | 630 | 490 | x |
+| Mexiko | | 645 | x | x | x |
+| VEREINIGTES KÖNIGREICH | | x | x | 831 | x |
 
 Power BI erstellt sie als kategorische Datenansicht. Dabei handelt es sich um die Gruppe von Kategorien.
 
@@ -299,9 +356,9 @@ Power BI erstellt sie als kategorische Datenansicht. Dabei handelt es sich um di
                 "source": {...},
                 "values": [
                     "Canada",
-                    "Mexico",
+                    "USA",
                     "UK",
-                    "USA"
+                    "Mexico"
                 ],
                 "identity": [...],
                 "identityFields": [...],
@@ -313,54 +370,130 @@ Power BI erstellt sie als kategorische Datenansicht. Dabei handelt es sich um di
 
 Jede Kategorie wird auch einer Gruppe von Werten zugeordnet. Zur Gruppierung der einzelnen Werte wird eine Reihe verwendet, die auf Jahren basiert.
 
-Beispielsweise belaufen sich die Verkaufszahlen in Kanada im Jahr 2013 auf 0 und im Jahr 2014 auf 50.
+Jedes `values`-Array stellt z. B. Daten für jedes Jahr dar.
+Außerdem hat jedes `values`-Array vier Werte für Kanada, USA, Vereinigtes Königreich und Mexiko:
 
 ```JSON
 {
     "values": [
+        // Values for 2013 year
         {
             "source": {...},
             "values": [
-                null,
-                300,
-                null,
-                null
+                null, // Value for `Canada` category
+                null, // Value for `USA` category
+                null, // Value for `UK` category
+                645 // Value for `Mexico` category
             ],
             "identity": [...],
         },
+        // Values for 2014 year
         {
             "source": {...},
             "values": [
-                50,
-                null,
-                150,
-                null
+                630, // Value for `Canada` category
+                null, // Value for `USA` category
+                null, // Value for `UK` category
+                null // Value for `Mexico` category
             ],
             "identity": [...],
         },
+        // Values for 2015 year
         {
             "source": {...},
             "values": [
-                200,
-                null,
-                null,
-                125
+                490, // Value for `Canada` category
+                650, // Value for `USA` category
+                831, // Value for `UK` category
+                null // Value for `Mexico` category
             ],
             "identity": [...],
         },
+        // Values for 2016 year
         {
             "source": {...},
             "values": [
-                null,
-                null,
-                null,
-                100
+                null, // Value for `Canada` category
+                350, // Value for `USA` category
+                null, // Value for `UK` category
+                null // Value for `Mexico` category
             ],
             "identity": [...],
         }
     ]
 }
 ```
+
+Das Codebeispiel für die Verarbeitung einer kategorischer Datenansichtszuordnung wird nachfolgend beschrieben. Im Beispiel wird eine hierarchische Struktur, `Country => Year => Value`, erstellt.
+
+```typescript
+"use strict";
+import powerbi from "powerbi-visuals-api";
+import DataView = powerbi.DataView;
+import DataViewDataViewCategoricalSingle = powerbi.DataViewCategorical;
+import DataViewValueColumnGroup = powerbi.DataViewValueColumnGroup;
+import PrimitiveValue = powerbi.PrimitiveValue;
+// standart imports
+// ...
+
+export class Visual implements IVisual {
+    private target: HTMLElement;
+    private host: IVisualHost;
+    private categories: HTMLElement;
+
+    constructor(options: VisualConstructorOptions) {
+        // constructor body
+        this.target = options.element;
+        this.host = options.host;
+        this.categories = document.createElement("pre");
+        this.target.appendChild(this.categories);
+        // ...
+    }
+
+    public update(options: VisualUpdateOptions) {
+        const dataView: DataView = options.dataViews[0];
+        const categoricalDataView: DataViewCategorical = dataView.categorical;
+
+        if (!categoricalDataView ||
+            !categoricalDataView.categories ||
+            !categoricalDataView.categories[0] ||
+            !categoricalDataView.values) {
+            return;
+        }
+
+        // Categories have only one column in data buckets
+        // If you want to support several columns of categories data bucket, you should iterate categoricalDataView.categories array.
+        const categoryFieldIndex = 0;
+        // Measure has only one column in data buckets.
+        // If you want to support several columns on data bucket, you should iterate years.values array in map function
+        const measureFieldIndex = 0;
+        let categories: PrimitiveValue[] = categoricalDataView.categories[categoryFieldIndex].values;
+        let values: DataViewValueColumnGroup[] = categoricalDataView.values.grouped();
+
+        let data = {};
+        // iterate categories/countries
+        categories.map((category: PrimitiveValue, categoryIndex: number) => {
+            data[category.toString()] = {};
+            // iterate series/years
+            values.map((years: DataViewValueColumnGroup) => {
+                if (!data[category.toString()][years.name] && years.values[measureFieldIndex].values[categoryIndex]) {
+                    data[category.toString()][years.name] = []
+                }
+                if (years.values[0].values[categoryIndex]) {
+                    data[category.toString()][years.name].push(years.values[measureFieldIndex].values[categoryIndex]);
+                }
+            });
+        });
+
+        this.categories.innerText = JSON.stringify(data, null, 6);
+        console.log(data);
+    }
+}
+```
+
+Das Ergebnis des Visuals:
+
+![Das Visual mit kategorischer Datenansichtszuordnung](./media/categorical-data-view-mapping-visual.png)
 
 ## <a name="table-data-mapping"></a>Tabellendatenzuordnung
 
@@ -373,8 +506,13 @@ Mit den angegebenen Funktionen
 ```json
 "dataRoles": [
     {
-        "displayName": "Values",
-        "name": "values",
+        "displayName": "Column",
+        "name": "column",
+        "kind": "Measure"
+    },
+    {
+        "displayName": "Value",
+        "name": "value",
         "kind": "Measure"
     }
 ]
@@ -385,9 +523,18 @@ Mit den angegebenen Funktionen
     {
         "table": {
             "rows": {
-                "for": {
-                    "in": "values"
-                }
+                "select": [
+                    {
+                        "for": {
+                            "in": "column"
+                        }
+                    },
+                    {
+                        "for": {
+                            "in": "value"
+                        }
+                    }
+                ]
             }
         }
     }
@@ -395,6 +542,8 @@ Mit den angegebenen Funktionen
 ```
 
 Mit diesen können Sie die Tabellendatenansicht wie folgt visualisieren:  
+
+Beispiel für Daten:
 
 | Land| Jahr | Vertrieb |
 |-----|-----|------|
@@ -406,6 +555,10 @@ Mit diesen können Sie die Tabellendatenansicht wie folgt visualisieren:
 | VEREINIGTES KÖNIGREICH | 2014 | 150 |
 | USA | 2015 | 75 |
 
+Datenbindung:
+
+![Tabellendatenansichtszuordnung von Datenbindungen](./media/table-dataview-mapping-data.png)
+
 In Power BI werden die Daten als Tabellendatenansicht angezeigt. Sie sollten nicht davon ausgehen, dass die Daten sortiert wurden.
 
 ```JSON
@@ -416,37 +569,32 @@ In Power BI werden die Daten als Tabellendatenansicht angezeigt. Sie sollten nic
             [
                 "Canada",
                 2014,
-                50
+                630
             ],
             [
                 "Canada",
                 2015,
-                200
+                490
             ],
             [
                 "Mexico",
                 2013,
-                300
+                645
             ],
             [
                 "UK",
                 2014,
-                150
+                831
             ],
             [
                 "USA",
                 2015,
-                100
-            ],
-            [
-                "USA",
-                2015,
-                75
+                650
             ],
             [
                 "USA",
                 2016,
-                100
+                350
             ]
         ]
     }
@@ -456,6 +604,89 @@ In Power BI werden die Daten als Tabellendatenansicht angezeigt. Sie sollten nic
 Sie können die Daten aggregieren, indem Sie das gewünschte Feld auswählen und dann „Summe“ auswählen.  
 
 ![Datenaggregation](./media/data-aggregation.png)
+
+Codebeispiel für die Verarbeitung der Tabellendatenansichtszuordnung
+
+```typescript
+"use strict";
+import "./../style/visual.less";
+import powerbi from "powerbi-visuals-api";
+// ...
+import DataViewMetadataColumn = powerbi.DataViewMetadataColumn;
+import DataViewTable = powerbi.DataViewTable;
+import DataViewTableRow = powerbi.DataViewTableRow;
+import PrimitiveValue = powerbi.PrimitiveValue;
+// other imports
+// ...
+
+export class Visual implements IVisual {
+    private target: HTMLElement;
+    private host: IVisualHost;
+    private table: HTMLParagraphElement;
+
+    constructor(options: VisualConstructorOptions) {
+        // constructor body
+        this.target = options.element;
+        this.host = options.host;
+        this.table = document.createElement("table");
+        this.target.appendChild(this.table);
+        // ...
+    }
+
+    public update(options: VisualUpdateOptions) {
+        const dataView: DataView = options.dataViews[0];
+        const tableDataView: DataViewTable = dataView.table;
+
+        if (!tableDataView) {
+            return
+        }
+        while(this.table.firstChild) {
+            this.table.removeChild(this.table.firstChild);
+        }
+
+        //draw header
+        const tableHeader = document.createElement("th");
+        tableDataView.columns.forEach((column: DataViewMetadataColumn) => {
+            const tableHeaderColumn = document.createElement("td");
+            tableHeaderColumn.innerText = column.displayName
+            tableHeader.appendChild(tableHeaderColumn);
+        });
+        this.table.appendChild(tableHeader);
+
+        //draw rows
+        tableDataView.rows.forEach((row: DataViewTableRow) => {
+            const tableRow = document.createElement("tr");
+            row.forEach((columnValue: PrimitiveValue) => {
+                const cell = document.createElement("td");
+                cell.innerText = columnValue.toString();
+                tableRow.appendChild(cell);
+            })
+            this.table.appendChild(tableRow);
+        });
+    }
+}
+```
+
+Die Formatierungsvisualisierungdatei `style/visual.less` enthält das Layout für die folgende Tabelle:
+
+```less
+table {
+    display: flex;
+    flex-direction: column;
+}
+
+tr, th {
+    display: flex;
+    flex: 1;
+}
+
+td {
+    flex: 1;
+    border: 1px solid black;
+}
+```
+
+![Das Visual mit Tabellendatenansichtszuordnung](./media/table-dataview-mapping-visual.png)
 
 ## <a name="matrix-data-mapping"></a>Matrixdatenzuordnung
 
@@ -694,7 +925,7 @@ Sie können den Datenverringerungsalgorithmus auf den `rows`-Abschnitt der Zuord
                     "top": {
                         "count": 2000
                     }
-                } 
+                }
             }
         }
     }
@@ -702,3 +933,7 @@ Sie können den Datenverringerungsalgorithmus auf den `rows`-Abschnitt der Zuord
 ```
 
 Sie können den Datenverringerungsalgorithmus auf die Abschnitte `rows` und `columns` der Zuordnungsmatrix für Datenansichten anwenden.
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Erfahren Sie, wie Sie [Drilldown-Unterstützung für Datenansichtszuordnungen in Power BI-Visuals hinzufügen](drill-down-support.md).

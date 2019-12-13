@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ab84795ff5d140f23f19184bbc40e91133854f1f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 37cbea42d530f05df1d9f1003554680b80c5b5c3
+ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876736"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907943"
 ---
 # <a name="aggregations-in-power-bi-desktop"></a>Aggregationen in Power BI Desktop
 
@@ -92,7 +92,7 @@ Der einzige Fall, bei der eine *quellenübergreifende* Beziehung als stark einge
 
 Informationen zu *quellenübergreifenden* Aggregationstreffern, die nicht von Beziehungen abhängen, finden Sie weiter unten im Abschnitt zu Aggregationen basierend auf gruppierten Spalten.
 
-### <a name="aggregation-tables-are-not-addressable"></a>Aggregationstabellen sind nicht adressierbar
+### <a name="aggregation-tables-arent-addressable"></a>Aggregationstabellen sind nicht adressierbar
 Benutzer mit schreibgeschütztem Zugriff auf das Dataset können keine Aggregationstabellen abfragen. So können bei der Verwendung mit der RLS Sicherheitsbedenken vermieden werden. Benutzer und Abfragen verwenden die Detailtabelle, nicht die Aggregationstabelle. Sie müssen nicht wissen, dass es die Aggregationstabelle gibt.
 
 Aus diesem Grund sollte die Tabelle **Sales Agg** ausgeblendet werden. Wenn das nicht der Fall ist, wird sie vom Dialogfeld „Aggregationen verwalten“ ausgeblendet, wenn Sie auf „Alle übernehmen“ klicken.
@@ -184,9 +184,9 @@ In einigen Fällen kann die Funktion DISTINCTCOUNT von Aggregationen profitieren
 ### <a name="rls"></a>RLS
 RLS-Ausdrücke (Row Level Security, Sicherheit auf Zeilenebene) sollten die Aggregationstabelle und die Detailtabelle filtern, damit sie ordnungsgemäß funktionieren. Danach funktioniert der RLS-Ausdruck für die Tabelle **Geography**, da in den Beziehungen zu den Tabellen **Sales** und **Sales Agg** nach „Geography“ gefiltert wird. Auf Abfragen für die Aggregationstabelle und andere Abfragen wurde die Sicherheit auf Zeilenebene erfolgreich angewendet.
 
-![Aggregationen unter „Rollen verwalten“](media/desktop-aggregations/manage-roles.jpg)
+![Aggregationen unter „Rollen verwalten“](media/desktop-aggregations/manage-roles.png)
 
-Ein RLS-Ausdruck in der Tabelle **Product** würde nur die Tabelle **Sales** filtern, nicht die Tabelle **Sales Agg**. Diese Vorgehensweise wird nicht empfohlen. Abfragen, die von Benutzern übermittelt werden, die über diese Rolle auf das Dataset zugreifen, profitieren nicht von Aggregationstreffern. Da die Aggregationstabelle eine weitere Darstellung derselben Daten in der Detailtabelle ist, wäre es nicht sicher, Abfragen aus der Aggregationstabelle zu beantworten, da der RLS-Filter nicht angewendet werden kann.
+Ein RLS-Ausdruck in der Tabelle **Product** würde nur die Tabelle **Sales** filtern, nicht die Tabelle **Sales Agg**. Dies wird nicht empfohlen. Abfragen, die von Benutzern übermittelt werden, die über diese Rolle auf das Dataset zugreifen, profitieren nicht von Aggregationstreffern. Da die Aggregationstabelle eine weitere Darstellung derselben Daten in der Detailtabelle ist, wäre es nicht sicher, Abfragen aus der Aggregationstabelle zu beantworten, da der RLS-Filter nicht angewendet werden kann.
 
 Ein RLS-Ausdruck für Tabelle **die Sales Agg** filtert nur die Aggregationstabelle, nicht die Detailtabelle. Diese Vorgehensweise ist nicht zulässig.
 

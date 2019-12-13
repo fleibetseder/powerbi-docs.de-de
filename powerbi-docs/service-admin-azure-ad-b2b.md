@@ -1,20 +1,20 @@
 ---
 title: Verteilen von Inhalten an externe Gastbenutzer mit Azure AD B2B
 description: Power BI ist in Azure Active Directory Business-to-Business (Azure AD B2B) integriert, um die sichere Verteilung von Power BI-Inhalten an Gastbenutzer außerhalb der Organisation zu ermöglichen.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: mblythe
+ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: bcde2bc456ee48e8dc66d6c0ba6b17d79fbe43a8
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c126b073ac80a470733d7d8dd2638da28a06b265
+ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858010"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882823"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Verteilen von Power BI-Inhalten an externe Gastbenutzer mit Azure AD B2B
 
@@ -30,7 +30,9 @@ Sie können auch das Feature [Externen Gastbenutzern das Bearbeiten und Verwalte
 
 ## <a name="who-can-you-invite"></a>Wen können Sie einladen?
 
-Sie können Gastbenutzer einladen, die eine E-Mail-Adresse mit einem privaten Konto verwenden, wie etwa gmail.com, outlook.com und hotmail.com. In Azure AD B2B werden diese Adressen als *soziale Identitäten* bezeichnet.
+Sie können Gastbenutzer einladen, die eine gängige E-Mail-Adresse mit einem privaten Konto verwenden, wie etwa gmail.com, outlook.com und hotmail.com. In Azure AD B2B werden diese Adressen als *soziale Identitäten* bezeichnet.
+
+Benutzer, die einer Government-Cloud wie [Power BI for US Government](service-govus-overview.md) zugeordnet sind, können Sie nicht einladen.
 
 ## <a name="invite-guest-users"></a>Einladen von Gastbenutzern
 

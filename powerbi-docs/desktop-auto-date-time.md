@@ -8,20 +8,18 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 7453854376923fbb55376182a8674e5f3d7d1b63
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8789986e94c860bffc622d903e33b4f1edabdd2d
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878779"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74696162"
 ---
 # <a name="auto-datetime-in-power-bi-desktop"></a>Automatische Angabe von Datum/Uhrzeit in Power BI Desktop
 
-Dieser Artikel richtet sich an Datenmodellierer, die Importmodelle oder zusammengesetzte Modelle in Power BI Desktop entwickeln.
+Dieser Artikel richtet sich an Datenmodellierer, die Importmodelle oder zusammengesetzte Modelle in Power BI Desktop entwickeln. Im Artikel wird die Option _Autom. Datum/Uhrzeit_ vorgestellt und beschrieben.
 
-## <a name="background"></a>Hintergrund
-
-_Autom. Datum/Uhrzeit_ ist eine Option zum Laden von Daten Power BI Desktop. Der Zweck dieser Option ist es, praktische Zeitinformationen für Berichte basierend auf Datumsspalten zu unterstützen, die in ein Modell geladen werden. Insbesondere können Berichtsautoren hierdurch eine Filterung, Gruppierung und Drilldowns anhand von Kalenderzeiträumen durchführen, ohne dass der Modellierer diese Funktionalität explizit entwickeln muss. Kalenderzeiträume umfassen Jahre, Quartale, Monate und Tage.
+„Autom. Datum/Uhrzeit“ ist eine Option zum Laden von Daten Power BI Desktop. Der Zweck dieser Option ist es, praktische Zeitinformationen für Berichte basierend auf Datumsspalten zu unterstützen, die in ein Modell geladen werden. Berichtsautoren, die Ihr Datenmodell verwenden, können mit ihr eine Filterung, Gruppierung und Drilldowns anhand von Kalenderzeiträumen (Jahre, Quartale, Monate und Tage) durchführen. Ein wichtiger Aspekt ist, dass Sie diese Zeitintelligenzfunktionen nicht explizit entwickeln müssen.
 
 Wenn die Option aktiviert ist, erstellt Power BI Desktop für jede Datumsspalte eine ausgeblendete automatische Datums-/Uhrzeittabelle, sofern alle der folgenden Bedingungen erfüllt sind:
 
@@ -34,11 +32,11 @@ Wenn die Option aktiviert ist, erstellt Power BI Desktop für jede Datumsspalte 
 Jede automatische Datums-/Uhrzeittabelle ist tatsächlich eine [berechnete Tabelle](desktop-calculated-tables.md), die unter Verwendung der DAX-Funktion [CALENDAR](/dax/calendar-function-dax) Datenzeilen generiert. Jede Tabelle umfasst außerdem sechs berechnete Spalten: **Day**, **MonthNo**, **Month**, **QuarterNo**, **Quarter** und **Year**.
 
 > [!NOTE]
-> Die Spaltennamen und -werte werden gemäß [Modellsprache](supported-languages-countries-regions.md#choose-the-language-for-the-model-in-power-bi-desktop) übersetzt und formatiert.
+> Power BI übersetzt und formatiert die Spaltennamen und werte entsprechend der [Modellsprache](supported-languages-countries-regions.md#choose-the-language-for-the-model-in-power-bi-desktop).
 
-Es wird außerdem eine Beziehung zwischen der Spalte **Date** der Tabelle mit automatischen Datums-/Zeitangaben und der Datumsspalte im Modell erstellt.
+Power BI Desktop erstellt außerdem eine Beziehung zwischen der Spalte **Date** der Tabelle mit automatischen Datums-/Zeitangaben und der Datumsspalte im Modell.
 
-Die automatische Datums-/Uhrzeittabelle wird mit vollständigen Kalenderjahren geladen, die alle in der Datumsspalte des Modells gespeicherten Daten umfassen. Wenn das früheste Datum in einer Datumsspalte beispielsweise der 20. März 2016 und das späteste Datum der 23. Oktober 2019 ist, enthält die Tabelle 1.461 Zeilen. Jede Zeile repräsentiert ein Datum in den vier Kalenderjahren 2016 bis 2019. Beim Aktualisieren des Modells wird auch jede automatische Datums-/Uhrzeittabelle aktualisiert. So wird sichergestellt, dass die Tabellen immer Daten enthalten, die die Werte der Datumsspalte umfassen.
+Die automatische Datums-/Uhrzeittabelle enthält vollständige Kalenderjahre, die alle in der Datumsspalte des Modells gespeicherten Daten umfassen. Wenn das früheste Datum in einer Datumsspalte beispielsweise der 20. März 2016 und das späteste Datum der 23. Oktober 2019 ist, enthält die Tabelle 1.461 Zeilen. Jede Zeile repräsentiert ein Datum in den vier Kalenderjahren 2016 bis 2019. Wenn Power BI das Modell aktualisiert, wird auch jede automatische Datums-/Uhrzeittabelle aktualisiert. So wird sichergestellt, dass die Tabellen Daten enthalten, die die Werte der Datumsspalte umfassen.
 
 Wenn es möglich war, die Zeilen einer automatischen Datums-/Uhrzeittabelle anzuzeigen, könnten sie so aussehen:
 
@@ -55,17 +53,17 @@ Wenn es möglich war, eine automatische Datums-/Uhrzeittabelle im Modellansichts
 
 ## <a name="work-with-auto-datetime"></a>Arbeiten mit „Autom. Datum/Uhrzeit“
 
-Wenn eine automatische Datums-/Uhrzeittabelle für eine Datumsspalte vorhanden ist (und diese Spalte sichtbar ist), wird diese Spalte Berichtsautoren nicht als Feld im Bereich **Felder** angezeigt. Stattdessen ist ein erweiterbares Objekt vorhanden, das den Namen der Datumsspalte trägt. Es ist leicht identifizierbar, weil es mit einem Kalendersymbol versehen ist. Wenn der Berichtsautor das Kalenderobjekt erweitert, wird eine Hierarchie namens **Date Hierarchy** geöffnet. Nach dem Erweitern der Hierarchie werden vier Ebenen angezeigt: **Year**, **Quarter**, **Month** und **Day**.
+Wenn eine automatische Datums-/Uhrzeittabelle für eine Datumsspalte vorhanden ist (und diese Spalte sichtbar ist), wird diese Spalte Berichtsautoren nicht als Feld im Bereich **Felder** angezeigt. Stattdessen ist ein erweiterbares Objekt vorhanden, das den Namen der Datumsspalte trägt. Es ist leicht identifizierbar, weil es mit einem Kalendersymbol versehen ist. Wenn Berichtsautoren das Kalenderobjekt erweitern, wird eine Hierarchie namens **Date Hierarchy** geöffnet. Nach dem Erweitern der Hierarchie werden vier Ebenen angezeigt: **Year**, **Quarter**, **Month** und **Day**.
 
 ![Beispiel für den Bereich „Felder“ mit erweiterter Tabelle „Sales“. Sie enthält ein Feld namens „OrderDate“, das mit einem Kalendersymbol versehen ist. Es ist ebenfalls erweitert und enthält eine Hierarchie namens „Date Hierarchy“. Auch diese ist erweitert und umfasst vier Ebenen: Year, Quarter, Month, Day.](media/desktop-auto-date-time/auto-date-time-fields-pane-example.png)
 
 Die generierte automatische Uhrzeit-/Datumshierarchie kann verwendet werden, um ein Visual in genau der gleichen Weise zu konfigurieren wie reguläre Hierarchien. Visuals können konfiguriert werden, indem entweder die gesamte **Date Hierarchy**-Hierarchie oder bestimmte Ebenen der Hierarchie verwendet werden.
 
-Es gibt jedoch eine zusätzliche Funktionalität, die von regulären Hierarchien nicht unterstützt wird. Wenn die automatische Datums-/Uhrzeithierarchie – oder eine Ebene aus der Hierarchie – zu einer Visualquelle hinzugefügt wird, kann der Berichtsersteller zwischen der Hierarchie und der Datumsspalte umschalten. Dieser Ansatz ist für einige Visuals sinnvoll, wenn Sie nur die Datumsspalte und nicht die Hierarchie und die zugehörigen Ebenen benötigen. Sie konfigurieren zunächst das Visualfeld (Rechtsklick auf das Visualfeld oder Klick auf den Pfeil nach unten) und wechseln dann über das Kontextmenü zwischen der Datumsspalte oder der Datumshierarchie.
+Es gibt jedoch eine zusätzliche Funktionalität, die von regulären Hierarchien nicht unterstützt wird. Wenn die automatische Datums-/Uhrzeithierarchie – oder eine Ebene aus der Hierarchie – zu einer Visualquelle hinzugefügt wird, können Berichtsersteller zwischen der Hierarchie und der Datumsspalte umschalten. Dieser Ansatz ist für einige Visuals sinnvoll, wenn nur die Datumsspalte und nicht die Hierarchie und die zugehörigen Ebenen benötigt werden. Sie konfigurieren zunächst das Visualfeld (Rechtsklick auf das Visualfeld oder Klick auf den Pfeil nach unten) und wechseln dann über das Kontextmenü zwischen der Datumsspalte oder der Datumshierarchie.
 
 ![Beispiel für die Konfiguration eines Visualfelds für die OrderDate-Hierarchie. Das geöffnete Kontextmenü zeigt zwei Optionen an, die es dem Benutzer ermöglichen, zwischen der Spalte „OrderDate“ und „Date Hierarchy“ zu wechseln.](media/desktop-auto-date-time/auto-date-time-configure-visuals-fields.png)
 
-Schließlich können in DAX geschriebene Modellberechnungen direkt auf eine Datumsspalte oder indirekt auf die ausgeblendeten Spalten der automatischen Datums-/Uhrzeittabelle verweisen.
+Schließlich können in DAX geschriebene Modellberechnungen _direkt_ auf eine Datumsspalte oder _indirekt_ auf die ausgeblendeten Spalten der automatischen Datums-/Uhrzeittabelle verweisen.
 
 Eine in Power BI Desktop geschriebene Formel kann wie gewohnt auf eine Datumsspalte verweisen. Die Spalten der automatischen Datums-/Uhrzeittabelle müssen jedoch mit einer speziellen erweiterten Syntax referenziert werden. Sie verweisen zuerst auf die Datumsspalte und fügen dann einen Punkt (.) ein. Anschließend können Sie mithilfe der Autovervollständigung der Bearbeitungsleiste eine Spalte aus der automatischen Datums-/Uhrzeittabelle auswählen.
 
@@ -89,7 +87,7 @@ Die Option für die aktuelle Datei kann ebenfalls jederzeit aktiviert oder deakt
 > [!CAUTION]
 > Gehen Sie mit Bedacht vor, wenn Sie die Option „Aktuelle Datei“ deaktivieren, weil dadurch die automatischen Datums-/Uhrzeittabellen entfernt werden. Stellen Sie sicher, dass alle fehlerhaften Berichtsfilter oder Visuals, die zur Verwendung der Tabellen konfiguriert wurden, korrigiert werden.
 
-Klicken Sie in Power BI Desktop auf _Datei > Optionen und Einstellungen > Optionen_, und wählen Sie dann **Global** oder **Aktuelle Datei** aus. Die Option befindet sich auf jeder Seite unterhalb des Abschnitts **Zeitintelligenz**.
+Klicken Sie in Power BI Desktop auf _Datei > Optionen und Einstellungen > Optionen_, und wählen Sie dann **Global** oder **Aktuelle Datei** aus. Die Option befindet sich auf jeder Seite im Abschnitt **Zeitintelligenz**.
 
 ![Beispiel für das Konfigurieren von Power BI Desktop-Optionen. Es wurde die Seite „Daten laden“ aus der Gruppe „GLOBAL“ ausgewählt. Im Abschnitt „Zeitintelligenz“ wurde die Option „Autom. Datum/Uhrzeit für neue Dateien“ aktiviert.](media/desktop-auto-date-time/auto-date-time-configure-global-options.png)
 

@@ -1,15 +1,15 @@
 ---
-author: mgblythe
+author: davidiseminger
 ms.service: powerbi
 ms.topic: include
 ms.date: 09/13/2019
-ms.author: mblythe
-ms.openlocfilehash: c658e683e86a899d45728220dee3706a0d617f0f
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.author: davidi
+ms.openlocfilehash: 6d1a239954a64da1c92cc68b56912e6f4ab67228
+ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74284110"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882787"
 ---
 ## <a name="limitations"></a>Einschränkungen
 
@@ -19,7 +19,7 @@ Es folgt eine Liste der aktuellen Einschränkungen für die Sicherheit auf Zeile
 
 * Sie können Sicherheit auf Zeilenebene (Row Level Security, RLS) nur auf den mithilfe von Power BI Desktop erstellten Datasets definieren. Wenn Sie RLS für mit Excel erstellte Datasets aktivieren möchten, müssen Sie Ihre Dateien zunächst in PBIX-Dateien (Power BI Desktop) konvertieren. [Weitere Informationen](../desktop-import-excel-workbooks.md)
 
-* Es werden nur ETL- und DirectQuery-Verbindungen unterstützt. Live-Verbindungen zu Analysis Services werden im lokalen Modell verarbeitet.
+* Es werden nur Import- und DirectQuery-Verbindungen unterstützt. Live-Verbindungen zu Analysis Services werden im lokalen Modell verarbeitet.
 
 ## <a name="known-issues"></a>Bekannte Probleme
 

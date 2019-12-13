@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 8a9218085b0da655d1ce4b3ece0b2666c4826c86
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: e2587140d5436552e26be90c67eb5e6240bf6a1d
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74061866"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74696138"
 ---
 # <a name="microsoft-power-bi-visuals-interactivity-utils"></a>Interaktivitätshilfsprogramme für Microsoft Power BI-Visuals
 
@@ -80,7 +80,7 @@ Normalerweise enthalten Datenpunkte Auswahlmöglichkeiten und Werte. Die Schnitt
   specificIdentity?: powerbi.extensibility.ISelectionId;
 ```
 
-Der erste Schritt beim Verwenden von Interaktivitätshilfsprogrammen ist das Erstellen einer Instanz von Interaktivitätshilfsprogrammen und anschließend das Speichern des Objekts als Eigenschaft des Visuals.
+Der erste Schritt beim Verwenden von Interaktivitätshilfsprogrammen ist das Erstellen einer Instanz von Interaktivitätshilfsprogrammen und anschließend das Speichern eines Objekts als Eigenschaft des Visuals.
 
 ```typescript
 export class Visual implements IVisual {
@@ -106,7 +106,7 @@ export interface VisualDataPoint extends interactivitySelectionService.Selectabl
 Der zweite Schritt ist das Erweitern der grundlegenden Verhaltensklasse:
 
 > [!NOTE]
-> Die BaseBehavior-Klasse wurde in [Version 5.6.x der Interaktivitätshilfsprogramme](https://www.npmjs.com/package/powerbi-visuals-utils-interactivityutils/v/5.6.0) eingeführt. Wenn Sie eine ältere Version verwenden, erstellen Sie die Verhaltensklasse wie im Beispiel unten (die `BaseBehavior`-Klasse ist gleich):
+> Die BaseBehavior-Klasse wurde in [Version 5.6.x der Interaktivitätshilfsprogramme](https://www.npmjs.com/package/powerbi-visuals-utils-interactivityutils/v/5.6.0) eingeführt. Wenn Sie die ältere Version verwenden, erstellen Sie die Verhaltensklasse wie im Beispiel unten (die `BaseBehavior`-Klasse ist gleich):
 
 Definieren Sie die Schnittstelle für Optionen der Verhaltensklasse:
 
@@ -126,8 +126,8 @@ export interface BaseBehaviorOptions<SelectableDataPointType extends BaseDataPoi
 }
 ```
 
-Definieren Sie die Klasse für `visual behaviour`. Die Klasse ist dafür verantwortlich die Mausereignisse `click` und `contextmenu` zu verarbeiten.
-Wenn Sie auf Datenelemente im Visual klicken, wird der Auswahlhandler zum Auswählen von Datenpunkten aufgerufen. Löschen Sie alternativ die Auswahl, wenn der Benutzer auf ein Hintergrundelement des Visuals klickt. Die Klasse verfügt über die folgenden Methoden: `bindClick`, `bindClearCatcher` und `bindContextMenu`.
+Definieren Sie eine Klasse für `visual behavior`. Die Klasse ist dafür verantwortlich, die Mausereignisse `click` und `contextmenu` zu verarbeiten.
+Wenn ein Benutzer auf Datenelemente im Visual klickt, wird daraufhin der Auswahlhandler zum Auswählen von Datenpunkten aufgerufen. Wenn der Benutzer auf das Hintergrundelement des Visuals klickt, wird der Handler zum Löschen der Auswahl aufgerufen. Die Klasse verfügt über die folgenden Methoden: `bindClick`, `bindClearCatcher` und `bindContextMenu`.
 
 ```typescript
 export class Behavior<SelectableDataPointType extends BaseDataPoint> implements IInteractiveBehavior {
@@ -232,7 +232,7 @@ Die Interaktivitätshilfsprogramme rufen die `bindEvents`-Methoden auf, um Handl
 
 Die `renderSelection`-Methode wird zum Aktualisieren des Status von Visuals von Elementen im Diagramm verwendet.
 
-Ein Beispiel zur `renderSelection`-Implementierungsmethode:
+Beispiel für die `renderSelection`-Implementierungsmethode:
 
 ```typescript
 public renderSelection(hasSelection: boolean): void {
@@ -246,7 +246,7 @@ public renderSelection(hasSelection: boolean): void {
 }
 ```
 
-Mit dem letzten Schritt wird die `visual behavior`-Instanz erstellt und die `bind`-Methode der Instanz von Interaktivitätshilfsprogrammen aufgerufen:
+Mit dem letzten Schritt wird eine `visual behavior`-Instanz erstellt und die `bind`-Methode der Instanz von Interaktivitätshilfsprogrammen aufgerufen:
 
 ```typescript
 this.interactivity.bind(<BaseBehaviorOptions<VisualDataPoint>>{
@@ -259,9 +259,9 @@ this.interactivity.bind(<BaseBehaviorOptions<VisualDataPoint>>{
 
 * `selectionMerge` ist das D3-Auswahlobjekt, das alle auswählbaren Elemente im Visual darstellt.
 
-* `select(this.target)` ist das D3-Auswahlobjekt, das alle auswählbaren Hauptelemente (DOM) des Visuals darstellt.
+* `select(this.target)` ist das D3-Auswahlobjekt, das die wichtigsten DOM-Elemente im Visual darstellt.
 
-* `this.categories`-Datenpunkte mit Elementen, wobei die Schnittstelle `VisualDataPoint` oder `categories: VisualDataPoint[];` ist.
+* `this.categories` sind Datenpunkte mit Elementen, wobei die Schnittstelle `VisualDataPoint` (oder `categories: VisualDataPoint[];`) ist.
 
 * `this.behavior` ist eine neue Instanz von `visual behavior`.
 
@@ -278,7 +278,7 @@ this.interactivity.bind(<BaseBehaviorOptions<VisualDataPoint>>{
   }
   ```
 
-Nun kann Ihr Visual die Auswahl verarbeiten.
+Nun kann das Visual die Auswahl verarbeiten.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

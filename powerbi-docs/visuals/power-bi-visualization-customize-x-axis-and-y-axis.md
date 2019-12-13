@@ -7,16 +7,18 @@ featuredvideoid: 9DeAKM4SNJM
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/4/2019
+ms.date: 12/3/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 393f6f25fedddd9ff17d635ae67ce473ab57eea4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: bafcf3a754c58a040595279f93d885e8f317195e
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880919"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791774"
 ---
+- Wo ist die Bruttogewinnlinie für die Jahre %? Ich kann Diagramme mit mehreren Balken, aber nicht mit mehreren Linien erstellen.
+
 # <a name="customize-x-axis-and-y-axis-properties"></a>Anpassen der Eigenschaften der X- und Y-Achse
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
@@ -171,7 +173,7 @@ Für einige Visualisierung haben zwei Y-Achsen Vorteile. Kombinationsdiagramme s
 
 ### <a name="create-a-chart-with-two-y-axes"></a>Erstellen eines Diagramms mit zwei Y-Achsen
 
-1. Wählen Sie das Säulendiagramm und ändern Sie es in ein *Linien- und gestapeltes Säulendiagramm*. 
+1. Wählen Sie das Säulendiagramm und ändern Sie es in ein *Linien- und gestapeltes Säulendiagramm*. Dieser Visualtyp unterstützt Werte in Liniendiagrammen mit einer Linie und Werte in Diagrammen mit gestapelten Säulen. 
 
     ![Screenshot des Bereichs „Visualisierungen“ mit hervorgehobenem Symbol „Linien- und gestapeltes Säulendiagramm“.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-combo.png)
    
@@ -185,7 +187,7 @@ Für einige Visualisierung haben zwei Y-Achsen Vorteile. Kombinationsdiagramme s
 
    ![Kombinationsdiagramm und Formatierungsbereich mit reduziertem Schriftgrad 12](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-font-size.png)
 
-   Power BI erstellt zwei Y-Achsen und ermöglicht die unterschiedliche Skalierung der Werte. Die linke Achse misst die Umsätze in US-Dollar und die rechte die Prozentzahlen.
+   Power BI erstellt zwei Y-Achsen und ermöglicht die unterschiedliche Skalierung der Werte. Die linke Achse misst die Umsätze in US-Dollar und die rechte die Prozentzahlen des Bruttogewinns.
 
 ### <a name="format-the-second-y-axis"></a>Formatieren der zweiten Y-Achse
 Da wir die Visualisierung mit einer formatierten Y-Achse begonnen haben, hat Power BI die zweite Y-Achse mit den gleichen Einstellungen erstellt. Das können wir aber ändern. 

@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/22/2019
-ms.openlocfilehash: d0f0abe15348d54f24143d69fcd6c0c2b71e9a34
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/03/2019
+ms.openlocfilehash: fced83abab1898724e165154fbc177ccf50ca061
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874787"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831256"
 ---
 # <a name="pagination-in-power-bi-paginated-reports"></a>Paginierung in paginierten Power BI-Berichten
 
- Paginierung bezieht sich auf die Anzahl der Seiten in einem Bericht und die Anordnung von Berichtselementen auf diesen Seiten. Die Paginierung in paginierten Power BI-Berichten variiert in Abhängigkeit von der Renderingerweiterung, die Sie zum Anzeigen und Übermitteln des Berichts verwenden. Wenn Sie einen Bericht auf dem Berichtsserver ausführen, verwendet der Bericht den HTML-Renderer. HTML folgt einem bestimmten Satz von Paginierungsregeln. Wenn Sie den gleichen Bericht beispielsweise nach PDF exportieren, wird der PDF-Renderer verwendet, und es wird ein anderer Satz Regeln angewendet. Daher ergibt sich eine andere Paginierung des Berichts. Um erfolgreich einen für Ihre Benutzer leicht lesbaren Bericht zu entwerfen, der für den Renderer, den Sie zum Übermitteln Ihres Berichts verwenden möchten, optimiert ist, müssen Sie die Regeln verstehen, die zum Steuern der Paginierung in paginierten Power BI-Berichten verwendet werden.  
+ *Paginierung* bezieht sich auf die Anzahl der Seiten in einem Bericht und die Anordnung der Berichtselemente auf diesen Seiten. Die Paginierung in paginierten Power BI-Berichten variiert in Abhängigkeit von der Renderingerweiterung, die Sie zum Anzeigen und Übermitteln des Berichts verwenden. Wenn Sie einen Bericht auf dem Berichtsserver ausführen, verwendet der Bericht den HTML-Renderer. HTML folgt einem bestimmten Satz von Paginierungsregeln. Wenn Sie denselben Bericht beispielsweise als PDF exportieren, verwenden Sie den PDF-Renderer, der ein anderes Regelwerk verwendet. Daher ist der Bericht anders paginiert. Sie müssen die Regeln verstehen, die zum Steuern der Paginierung in paginierten Power BI-Berichten verwendet werden. Anschließend können Sie erfolgreich einen leicht lesbaren Bericht entwerfen, den Sie für den Renderer optimieren, den Sie für die Bereitstellung Ihres Berichts verwenden möchten.  
   
- In diesem Thema wird der Einfluss der physischen Seitengröße und des Berichtslayouts auf die Weise erörtert, wie Renderer für harten Seitenumbruch den Bericht rendern. Im Bereich **Berichtseigenschaften**, dem Bereich **Eigenschaften** oder im Dialogfeld **Seite einrichten** können Sie Eigenschaften festlegen, um die physische Seitengröße und die Seitenränder zu ändern und den Bericht in Spalten aufzuteilen. Sie können auf den Bereich **Berichtseigenschaften** zugreifen, indem Sie auf den blauen Bereich außerhalb des Berichtshauptteils klicken. Zum Dialogfeld **Seite einrichten** gelangen Sie, indem Sie auf der Registerkarte „Start“ auf **Ausführen** und dann auf der Registerkarte „Ausführen“ auf **Seite einrichten** klicken.  
+ In diesem Thema wird der Einfluss der physischen Seitengröße und des Berichtslayouts auf die Weise erörtert, wie Renderer für harten Seitenumbruch den Bericht rendern. Im Bereich **Berichtseigenschaften**, im Bereich **Eigenschaften** oder im Dialogfeld **Seite einrichten** können Sie Eigenschaften festlegen, um die physische Seitengröße und die Seitenränder zu ändern und den Bericht in Spalten aufzuteilen. Rufen Sie den Bereich **Berichtseigenschaften** auf, indem Sie auf den blauen Bereich außerhalb des Berichtshauptteils klicken. Navigieren Sie zum Dialogfeld **Seite einrichten**, indem Sie auf der Registerkarte „Start“ auf **Ausführen** und dann auf der Registerkarte „Ausführen“ auf **Seite einrichten** klicken.  
   
 > [!NOTE]  
 >  Wenn Sie einen Bericht für die Breite einer Seite ausgelegt haben, er aber auf mehreren Seiten gerendert wird, überprüfen Sie, ob die Breite des Textkörpers des Berichts, einschließlich der Ränder, möglicherweise größer als die Breite der physischen Seite ist. Um zu verhindern, dass dem Bericht leere Seiten hinzugefügt werden, können Sie die Containergröße verringern, indem Sie die Ecke des Containers nach links ziehen.  
@@ -30,7 +30,7 @@ ms.locfileid: "73874787"
  Sie können den Textkörper des Berichts mit einer Rahmenfarbe, einer Rahmenart und einer Rahmenbreite formatieren. Außerdem können Sie eine Hintergrundfarbe und ein Hintergrundbild hinzufügen.  
   
 ## <a name="the-physical-page"></a>Die physische Seite  
- Die physische Seitengröße entspricht dem Papierformat. Das Papierformat, das Sie für den Bericht angeben, steuert, in welcher Weise der Bericht gerendert wird. Berichte, die in Formaten mit hartem Seitenumbruch gerendert werden, fügen horizontal und vertikal Seitenumbrüche ein, um beim Druck oder der Anzeige in einem Dateiformat mit harten Seitenumbrüchen eine optimierte Leseerfahrung zu bieten. Berichte, die in Formaten mit bedingtem Seitenumbruch gerendert werden, fügen horizontal Seitenumbrüche ein, um bei der Anzeige in einem Webbrowser eine optimierte Leseerfahrung zu bieten.  
+ Die physische Seitengröße entspricht dem Papierformat. Das Papierformat, das Sie für den Bericht angeben, steuert, in welcher Weise der Bericht gerendert wird. In Berichten, die in Formate mit hartem Seitenumbruch gerendert wurden, werden Seitenumbrüche horizontal und vertikal basierend auf der physischen Seitengröße eingefügt. Diese Seitenumbrüche ermöglichen ein optimiertes Lesen, wenn sie gedruckt oder in einem Dateiformat mit hartem Seitenumbruch angezeigt werden. In Berichten, die in Formate mit bedingtem Seitenumbruch gerendert wurden, werden Seitenumbrüche horizontal basierend auf der physischen Seitengröße eingefügt. Auch hier ermöglichen die Seitenumbrüche ein optimiertes Lesen, wenn sie in einem Webbrowser angezeigt werden.  
   
  Standardmäßig beträgt das Papierformat 21,6 x 27,9 cm, jedoch können Sie dieses Format im Bereich **Berichtseigenschaften** oder im Dialogfeld **Seite einrichten** ändern, oder indem Sie die Eigenschaften PageHeight und PageWidth im Bereich **Eigenschaften** ändern. Die Seitengröße wächst oder schrumpft nicht, um die Inhalte des Berichttextkörpers aufzunehmen. Wenn der Bericht auf einer einzelnen Seite dargestellt werden soll, müssen alle Inhalte im Textkörper des Berichts auf die physische Seite passen. Wenn sie nicht passen und Sie das Format mit hartem Seitenumbruch verwenden, sind für den Bericht zusätzliche Seiten erforderlich. Wenn der Textkörper des Berichts über die rechte Kante der physischen Seite hinaus wächst, wird horizontal ein Seitenumbruch eingefügt. Wenn der Textkörper des Berichts über die Unterkante der physischen Seite hinaus wächst, wird vertikal ein Seitenumbruch eingefügt.  
   
@@ -87,6 +87,6 @@ ms.locfileid: "73874787"
   
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Anzeigen eines paginierten Berichts im Power BI-Dienst](paginated-reports-view-power-bi-service.md)
+[Anzeigen eines paginierten Berichts im Power BI-Dienst](consumer/paginated-reports-view-power-bi-service.md)
 
 Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

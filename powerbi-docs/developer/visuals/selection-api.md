@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 5f5e4769c750406a02ead656af551133fbceb738
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: 94a1af90cc7ed08947f65f4ed0d55e981558d049
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74061889"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74696440"
 ---
 # <a name="add-interactivity-into-visual-by-power-bi-visuals-selections"></a>Hinzufügen von Interaktivität zu Visuals mithilfe von Auswahlmöglichkeiten für Power BI-Visuals
 
 Power BI bietet zwei Möglichkeiten der Interaktion mit Visuals: Auswahl und Filterung. Im folgenden Beispiel wird veranschaulicht, wie Sie beliebige Elemente in einem Visual auswählen und andere Visuals im Bericht über den neuen Auswahlzustand informieren.
 
-Das `Selection`-Objekt entspricht der-Schnittstelle:
+Das `Selection`-Objekt entspricht der folgenden Schnittstelle:
 
 ```typescript
 export interface ISelectionId {
@@ -35,9 +35,9 @@ export interface ISelectionId {
 
 ## <a name="how-to-use-selectionmanager-to-select-data-points"></a>Verwenden von SelectionManager zum Auswählen von Datenpunkten
 
-Das Visual-Hostobjekt stellt eine Methode zum Erstellen einer Instanz des Auswahl-Managers bereit. Der Auswahl-Manager ist für die Auswahl, die Aufhebung der Auswahl, die Darstellung des Kontextmenüs, das Speichern der Inhaltsauswahl(en) und das Prüfen des Auswahlstatus zuständig. Und der Auswahl-Manager verfügt über die entsprechenden Methoden für diese Aktionen.
+Das Visual-Hostobjekt stellt eine Methode zum Erstellen einer Instanz des Auswahl-Managers bereit. Der Auswahl-Manager ist für die Auswahl, die Aufhebung der Auswahl, die Darstellung des Kontextmenüs, das Speichern der Inhaltsauswahl und das Prüfen des Auswahlstatus zuständig. Der Auswahl-Manager verfügt über die entsprechenden Methoden für diese Aktionen.
 
-### <a name="create-instance-of-selection-manager"></a>Erstellen einer Instanz des Auswahl-Managers
+### <a name="create-an-instance-of-the-selection-manager"></a>Erstellen einer Instanz des Auswahl-Managers
 
 Um den Auswahl-Manager zu verwenden, müssen Sie eine Instanz des Auswahl-Managers erstellen. Normalerweise erstellen Visuals eine Instanz des Auswahl-Managers im `constructor` des Visual-Objekts.
 
@@ -56,7 +56,7 @@ export class Visual implements IVisual {
 }
 ```
 
-### <a name="create-instance-of-selection-builder"></a>Erstellen einer Instanz des Auswahlgenerators
+### <a name="create-an-instance-of-the-selection-builder"></a>Erstellen einer Instanz des Auswahlgenerators
 
 Nachdem die Instanz des Auswahl-Managers erstellt wurde, müssen Sie für jeden Datenpunkt im Visual `selections` erstellen. Das Visual-Hostobjekt stellt die `createSelectionIdBuilder`-Methode zum Erstellen der Auswahl für jeden Datenpunkt zur Verfügung. Diese Methode gibt eine Instanz des Objekts mit der-Schnittstelle `powerbi.visuals.ISelectionIdBuilder` zurück:
 
@@ -74,14 +74,14 @@ export interface ISelectionIdBuilder {
 Dieses Objekt verfügt über entsprechende Methoden zum Erstellen von `selections` für verschiedenen Zuordnungstypen der Datenansicht.
 
 > [!NOTE]
-> Die Methoden `withTable` und `withMatrixNode` wurden mit API 2.5.0 der Power BI-Visuals eingeführt.
-> Wenn Sie Auswahloptionen für Tabellen- oder Matrixzuordnungen der Datenansicht verwenden müssen, müssen Sie ein Update auf API-Version 2.5.0 oder höher vornehmen.
+> Die Methoden `withTable` und `withMatrixNode` wurden mit der API 2.5.0 der Power BI-Visuals eingeführt.
+> Wenn Sie Auswahloptionen für Tabellen- oder Matrixzuordnungen der Datenansicht verwenden müssen, müssen Sie ein Update auf die API-Version 2.5.0 oder höher vornehmen.
 
 ### <a name="create-selections-for-categorical-data-view-mapping"></a>Erstellen von Auswahlmöglichkeiten für Kategoriezuordnungen der Datenansicht
 
-Sehen wir uns einmal an, wie Auswahloptionen in der Kategoriezuordnung der Datenansicht für ein Beispieldataset dargestellt werden:
+Sehen wir uns an, wie Auswahloptionen in der Kategoriezuordnung der Datenansicht für ein Beispieldataset dargestellt werden:
 
-| Hersteller | Typ | Wert |
+| Manufacturer | Typ | Wert |
 | - | - | - |
 | Chrysler | Kfz aus Inlandsfertigung | 28883 |
 | Chrysler | LKW aus Inlandsfertigung | 117131 |
@@ -155,13 +155,13 @@ Und das Visual verwendet die folgende Zuordnung der Datenansicht:
 }
 ```
 
-Im Beispiel ist `Manafacturer` `columns` und `Type` `rows` zugeordnet. Es gibt eine Datenreihe, die durch Gruppieren von Werten nach `rows` (`Type`) erstellt wird.
+Im Beispiel ist `Manufacturer` `columns` und `Type` `rows` zugeordnet. Es gibt eine Datenreihe, die durch Gruppieren von Werten nach `rows` (`Type`) erstellt wird.
 
-Und ein Visual sollte auch in der Lage sein, einen Datenschnitt für `Manafacturer` und `Type` auszuführen.
+Und ein Visual sollte auch in der Lage sein, einen Datenschnitt für `Manufacturer` und `Type` auszuführen.
 
-Wenn der Benutzer beispielsweise `Chrysler` als `Manafacturer` auswählt, sollten die anderen Visuals folgende Daten anzeigen:
+Wenn der Benutzer beispielsweise `Chrysler` als `Manufacturer` auswählt, sollten die anderen Visuals folgende Daten anzeigen:
 
-| Hersteller | Typ | Wert |
+| Manufacturer | Typ | Wert |
 | - | - | - |
 | **Chrysler** | Kfz aus Inlandsfertigung | 28883 |
 | **Chrysler** | LKW aus Inlandsfertigung | 117131 |
@@ -170,7 +170,7 @@ Wenn der Benutzer beispielsweise `Chrysler` als `Manafacturer` auswählt, sollte
 
 Wenn der Benutzer `Import Car` nach `Type` (wählt Daten nach Reihe aus) auswählt, sollten die anderen Visuals folgende Daten anzeigen:
 
-| Hersteller | Typ | Wert |
+| Manufacturer | Typ | Wert |
 | - | - | - |
 | Chrysler | **Import-Kfz** | 0 |
 | Ford | **Import-Kfz** | 0 |
@@ -185,10 +185,10 @@ Die Data Baskets des Visuals müssen gefüllt werden.
 
 ![Daten Baskets des VIsuals mit getroffener Auswahl](media/visual-selections-databuckets.png)
 
-Es gibt `Manafacturer` als Kategorie (Spalten), `Type` als Datenreihe (Zeilen) und `Value` als `Values` für Datenreihen.
+Es gibt `Manufacturer` als Kategorie (Spalten), `Type` als Datenreihe (Zeilen) und `Value` als `Values` für Datenreihen.
 
 > [!NOTE]
-> Die `Values` sind für Datenreihen erforderlich, da das Visual gemäß der Datenzuordnung erwartet, dass `Values` nach `Rows`-Daten gruppiert ist.
+> Die `Values` sind für Datenreihen erforderlich, da das Visual gemäß der Datenzuordnung erwartet, dass `Values` nach `Rows`-Daten gruppiert sind.
 
 #### <a name="create-selections-for-categories"></a>Erstellen von Auswahlen für Kategorien
 
@@ -196,7 +196,7 @@ Es gibt `Manafacturer` als Kategorie (Spalten), `Type` als Datenreihe (Zeilen) u
 // categories
 const categories = dataView.categorical.categories;
 
-// create label for 'Manafacturer' column
+// create label for 'Manufacturer' column
 const p = document.createElement("p") as HTMLParagraphElement;
 p.innerText = categories[0].source.displayName.toString();
 this.target.appendChild(p);
@@ -209,7 +209,7 @@ for (let categoryIndex = 0; categoryIndex < categoriesCount; categoryIndex++) {
     const categoryValue: powerbi.PrimitiveValue = categories[0].values[categoryIndex];
 
     const categorySelectionId = this.host.createSelectionIdBuilder()
-        .withCategory(categories[0], categoryIndex) // we have only one category (only one `Manafacturer` column)
+        .withCategory(categories[0], categoryIndex) // we have only one category (only one `Manufacturer` column)
         .createSelectionId();
     this.dataPoints.push({
         value: categoryValue,
@@ -231,7 +231,7 @@ for (let categoryIndex = 0; categoryIndex < categoriesCount; categoryIndex++) {
 
 Im Beispielcode können Sie sehen, dass alle Kategorien durchlaufen werden. Bei jedem Durchgang wird `createSelectionIdBuilder` aufgerufen, um die nächste Auswahl für jede Kategorie zu erstellen, indem die `withCategory`-Methode des Auswahlgenerators aufgerufen wird. Die Methode `createSelectionId` wird als abschließende Methode zur Rückgabe des generierten `selection`-Objekts verwendet.
 
-In der `withCategory`-Methode übergeben wir die Spalte der `category`; in diesem Beispiel sind das `Manafacturer` und der Index des Kategorieelements.
+In der `withCategory`-Methode übergeben wir die Spalte der `category`; in diesem Beispiel sind das `Manufacturer` und der Index des Kategorieelements.
 
 #### <a name="create-selections-for-series"></a>Erstellen von Auswahlen für Datenreihen
 
@@ -361,9 +361,9 @@ interface ISelectionManager {
 }
 ```
 
-Sie können sehen, dass `select` ein Array von Auswahlen akzeptieren kann. Das bedeutet, dass Ihr Visual mehrere Datenpunkte auswählen kann. Der zweite Parameter `multiSelect` ist für die Mehrfachauswahl zuständig. Wenn der Wert WAHR ist, löscht Power BI den vorherigen Auswahlzustand nicht und übernimmt die aktuelle Auswahl; andernfalls wird die vorherige Auswahl zurückgesetzt.
+Sie können sehen, dass `select` ein Array von Auswahlen akzeptieren kann. Das bedeutet, dass Ihr Visual mehrere Datenpunkte auswählen kann. Der zweite Parameter, `multiSelect`, ist für die Mehrfachauswahl zuständig. Wenn der Wert true ist, löscht Power BI den vorherigen Auswahlzustand nicht und übernimmt die aktuelle Auswahl; andernfalls wird die vorherige Auswahl zurückgesetzt.
 
-Typisches Szenario für die Verwendung von `multiSelect` zur Verarbeitung des Zustands der STRG-Taste bei On-Click-Ereignissen.
+Das typische Szenario für die Verwendung von `multiSelect` zur Verarbeitung des Zustands der STRG-Taste bei On-Click-Ereignissen
 
 ```typescript
 button.addEventListener("click", (mouseEvent) => {
@@ -374,7 +374,7 @@ button.addEventListener("click", (mouseEvent) => {
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-* [Erfahren Sie, wie Sie die Auswahl für das Binden von Visual-Eigenschaften an Datenpunkte verwenden](objects-properties.md#objects-selector)
+* [Erfahren Sie, wie Sie die Auswahl für das Binden von Visualeigenschaften an Datenpunkte verwenden](objects-properties.md#objects-selector)
 
 * [Verarbeiten von Auswahlmöglichkeiten bei wechselnden Lesezeichen](bookmarks-support.md#visuals-with-selection)
 

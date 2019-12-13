@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: cc554bff1cbd248ccd69a80ee47b60af981cdab1
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: 245475feeb43ee544117aaa54969f2de1e207cd5
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74061820"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74696280"
 ---
 # <a name="migrate-to-the-new-powerbi-visuals-tools-3xx"></a>Migrieren zum neuen powerbi-visuals-tools 3.x.x
 
@@ -81,7 +81,7 @@ Beispiel für das sampleBarChart-Visual und entsprechende [Änderungen](https://
 
 Die neue Version von powerbi-visual-tools enthält nicht alle API-Versionen. Der Entwickler muss stattdessen eine bestimmte Version des [`powerbi-visuals-api`](https://www.npmjs.com/package/powerbi-visuals-api)-Pakets installieren. Die Version des Pakets entspricht der API-Version für benutzerdefinierte Power BI-Visuals und stellt alle Typdefinitionen für die Power BI-API für benutzerdefinierte Visuals bereit.
 
-Fügen Sie `powerbi-visuals-api` in die Abhängigkeiten des Projekts ein, indem Sie den Befehl `npm install --save-dev powerbi-visuals-api` ausführen.
+Fügen Sie `powerbi-visuals-api` in die Abhängigkeiten eines Projekts ein, indem Sie den Befehl `npm install --save-dev powerbi-visuals-api` ausführen.
 Außerdem müssen Sie den Link zu alten API-Typdefinitionen entfernen, weil Typen aus `powerbi-visuals-api` automatisch von Webpack eingeschlossen werden. Entsprechende Änderungen sind in [dieser](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/package.json#L14) Zeile von `package.json` enthalten.
 
 ## <a name="update-tsconfigjson"></a>Aktualisieren von „`tsconfig.json`“
@@ -95,7 +95,7 @@ Sie können außerdem die `target`-Option in `ES6` ändern, wenn Sie modernes Ja
 
 ## <a name="update-custom-visuals-utils"></a>Aktualisieren von Hilfsprogrammen für benutzerdefinierte Visuals
 
-Wenn Sie eines der Hilfsprogramme in [powerbi-visuals-utils](https://www.npmjs.com/search?q=powerbi-visuals-utils) verwenden, sollten Sie diese ebenfalls auf die neueste Version aktualisieren.
+Wenn Sie eines der powerbi-visuals-utils (https://www.npmjs.com/search?q=powerbi-visuals-utils) verwenden, sollten Sie diese ebenfalls auf die neueste Version aktualisieren.
 
 Führen Sie den Befehl `npm install powerbi-visuals-utils-<UTILNAME> --save` (Beispiel: `npm install powerbi-visuals-utils-dataviewutils --save`) aus, um die neue Version mit externen Modulen von TypeScript abzurufen.
 

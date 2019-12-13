@@ -1,21 +1,21 @@
 ---
 title: Problembehandlung bei nicht unterstützter Datenquelle für die Aktualisierung
 description: Problembehandlung bei nicht unterstützter Datenquelle für die Aktualisierung
-author: mgblythe
+author: maggiesMSFT
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: troubleshooting
 ms.date: 12/06/2017
-ms.author: mblythe
+ms.author: maggies
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: b44dbc06c15a576174277695583f3afebb0f298a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e3fe8626001972acc0b7555f37844b5abb62753b
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73856269"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74792000"
 ---
 # <a name="troubleshooting-unsupported-data-source-for-refresh"></a>Problembehandlung bei nicht unterstützter Datenquelle für die Aktualisierung
 Bei der Konfiguration eines Datasets für die planmäßige Aktualisierung kann ein Fehler angezeigt werden.
@@ -35,7 +35,7 @@ Wenn Sie unsicher sind, welche Datenquelle verwendet wurde, können Sie diese su
    ![Erweiterter Editor](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-advanced-editor.png)
 4. Notieren Sie sich den für die Datenquelle aufgeführten Anbieter.  In diesem Beispiel ist der Anbieter Active Directory.  
    ![Datenquellenanbieter](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-provider.png)
-5. Vergleichen Sie den Anbieter mit der Liste der unterstützten Datenquellen unter [Aktualisieren von Daten in Power BI](refresh-data.md).  Sie werden feststellen, dass Active Directory für die Aktualisierung keine unterstützte Datenquelle ist.  
+5. Vergleichen Sie den Anbieter mit der Liste der unterstützten Datenquellen, die in [Power BI-Datenquellen](power-bi-data-sources.md) gefunden wurden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Datenaktualisierung](refresh-data.md)  

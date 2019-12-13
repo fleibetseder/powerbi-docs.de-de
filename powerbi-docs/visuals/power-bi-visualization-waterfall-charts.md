@@ -7,15 +7,15 @@ featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 12/5/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fedaa811c94a9e955d6ca10646bc546f60dc9b98
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 6abca661a1553bfabc3da35fe714ff9bced5555a
+ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881966"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907646"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Wasserfalldiagramme in Power BI
 
@@ -63,9 +63,11 @@ Dieses Tutorial verwendet die [PBIX-Datei mit einem Analysebeispiel für den Ein
 
 Sie erstellen ein Wasserfalldiagramm, mit dem Abweichungen beim Umsatz (geschätzter Umsatz im Vergleich zu tatsächlichen Verkaufszahlen) nach Monat dargestellt werden.
 
+### <a name="build-the-waterfall-chart"></a>Erstellen des Wasserfalldiagramms
+
 1. Wählen Sie im Bereich **Felder** die Option **Verkäufe** > **Gesamtabweichung Verkäufe** aus.
 
-   ![Screenshot der Auswahl von „Verkäufe > Gesamtabweichung Verkäufe“ und des resultierenden visuellen Elements](media/power-bi-visualization-waterfall-charts/power-bi-first-value.png)
+   ![Screenshot der Auswahl von „Verkäufe > Gesamtabweichung Verkäufe“ und des resultierenden visuellen Elements](media/power-bi-visualization-waterfall-charts/power-bi-bar.png)
 
 1. Wählen Sie das Wasserfallsymbol ![Screenshot des Wasserfallsymbols](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-icon.png)
 
@@ -73,41 +75,45 @@ Sie erstellen ein Wasserfalldiagramm, mit dem Abweichungen beim Umsatz (geschät
 
 1. Wählen Sie **Zeit** > **FiscalMonth** aus, um den Wert dem Bereich **Kategorie** hinzuzufügen.
 
-    ![Wasserfalldiagramm](media/power-bi-visualization-waterfall-charts/power-bi-waterfall.png)
+    ![Wasserfalldiagramm](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-month.png)
 
-1. Stellen Sie sicher, dass Power BI das Wasserfalldiagramm chronologisch sortiert hat. Wählen Sie in der rechten oberen Ecke des Diagramms **Weitere Optionen** (...) aus.
+### <a name="sort-the-waterfall-chart"></a>Sortieren des Wasserfalldiagramms
 
-    In diesem Beispiel wird **Aufsteigend sortieren** verwendet.
+1. Stellen Sie sicher, dass Power BI das Wasserfalldiagramm chronologisch nach Monat sortiert hat. Wählen Sie in der rechten oberen Ecke des Diagramms **Weitere Optionen** (...) aus.
 
-    Überprüfen Sie, ob sich links von **Aufsteigend sortieren** ein gelber Indikator befindet. Dies gibt an, dass die ausgewählte Option angewendet wird.
+    Wählen Sie für dieses Beispiel **Sortieren nach** und **FiscalMonth** dann aus. Ein gelber Indikator neben Ihrer Auswahl zeigt an, wenn die Auswahloption angewendet wird.
 
-    ![„Sortieren nach > Aufsteigend sortieren“ auswählen](media/power-bi-visualization-waterfall-charts/power-bi-sort-by.png)
+    ![Auswählen von „Sortieren nach > FiscalMonth“](media/power-bi-visualization-waterfall-charts/power-bi-sort-by-fiscalmonth.png)
+    
+    Um die Monate in chronologischer Reihenfolge anzuzeigen, wählen Sie **Aufsteigend sortieren** aus. Überprüfen Sie im nächsten Schritt, ob sich links von **Aufsteigend sortieren** ein gelber Indikator befindet. Dies gibt an, dass die ausgewählte Option angewendet wird.
 
-    Klicken Sie als nächstes auf **Sortieren nach**, und wählen Sie **FiscalMonth** aus. Wie beim vorherigen Schritt zeigt ein gelber Indikator neben Ihrer Auswahl an, wann Ihre Auswahloption angewendet wird.
+    ![„Sortieren nach > Aufsteigend sortieren“ auswählen](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-ascending.png)
 
-    ![Auswählen von „Sortieren nach > FiscalMonth“](media/power-bi-visualization-waterfall-charts/power-bi-sort-by-fiscal-month.png)
+    
 
-    Sie können auch die Werte auf der X-Achse betrachten und sehen dann, dass sie in der Reihenfolge von **Jan** bis **Aug** sortiert sind.
+    Beachten Sie, dass das Diagramm für den Geschäftsmonat von Januar nach August sortiert ist.  
 
-    Analysieren Sie die Informationen genauer, um zu ermitteln, was von Monat zu Monat am stärksten zu den Änderungen beiträgt.
+### <a name="explore-the-waterfall-chart"></a>Analysieren des Wasserfalldiagramms
+
+Analysieren Sie die Informationen genauer, um zu ermitteln, was von Monat zu Monat am stärksten zu den Änderungen beiträgt.
 
 1.  Wählen Sie **Laden** > **Gebiet** aus, wodurch dem Bucket **Aufschlüsselung** noch **Gebiet** hinzugefügt wird.
 
     ![Zeigt Store im Bucket „Aufschlüsselung“ an](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)
 
-    Standardmäßig fügt Power BI die wichtigsten fünf Faktoren für die Steigerungen oder Verringerungen pro Monat hinzu. Das folgende Bild hat den Visualisierungsbereich erweitert, um weitere Daten einzuschließen. 
+    Power BI verwendet den Wert in **Aufschlüsselung**, um der Visualisierung weitere Daten hinzuzufügen. Power BI fügt die wichtigsten fünf Faktoren für die Steigerungen oder Verringerungen pro Geschäftsmonat hinzu. Dies bedeutet, dass der Februar nun z.B. über sechs Datenpunkte verfügt, anstatt nur einen.  
 
-    ![Zeigt Store im Bucket „Aufschlüsselung“ an](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-initial.png)
+    ![Zeigt Store im Bucket „Aufschlüsselung“ an](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-default.png)
 
-    Sie interessieren sich aber nur für die ersten beiden Faktoren.
+    Angenommen, Sie interessieren sich aber nur für die ersten beiden Faktoren.
 
 1. Wählen Sie im Bereich **Format** **Aufschlüsselung** aus, und legen Sie für **Max. Aufschlüsselungen** **2** fest.
 
-    ![„Format > Aufschlüsselung“](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-maximum.png)
+    ![„Format > Aufschlüsselung“](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-two.png)
 
     Ein kurzer Blick zeigt, dass die Gebiete „Ohio“ und „Pennsylvania“ im Wasserfalldiagramm den größten Anteil an positiven wie negativen Änderungen haben.
 
-    ![Wasserfalldiagramm](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-axis.png)
+    ![Wasserfalldiagramm](media/power-bi-visualization-waterfall-charts/power-bi-axis-waterfall.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

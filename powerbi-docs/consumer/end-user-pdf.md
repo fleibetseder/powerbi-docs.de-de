@@ -7,15 +7,15 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/14/2019
+ms.date: 11/27/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8041fee4689c6319f219c26f20701c6062601a64
-ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
+ms.openlocfilehash: 9e00e68e0a5f6df62072a1d9744276bffbd3beb4
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164206"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791668"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exportieren von Power BI-Berichten als PDF-Dateien
 
@@ -62,6 +62,7 @@ Einige Aspekte und Einschränkungen sind bei der Arbeit mit dem Feature **In PDF
 * Der Power BI-Dienst verwendet Ihre Power BI-Spracheinstellung, um die Sprache für den PDF-Export festzulegen. Sie können die Spracheinstellung anzeigen oder festlegen, indem Sie das Zahnradsymbol ![Zahnradsymbol](media/end-user-powerpoint/power-bi-settings-icon.png) > **Einstellungen** > **Allgemein** > **Sprache** auswählen.
 * URL-Filter werden zurzeit nicht beachtet, wenn Sie **Aktuelle Werte** für Ihren Export auswählen.
 * Bei Berichten mit ungewöhnlichen benutzerdefinierten Seitengrößen können in Exportszenarien Probleme auftreten. Um optimale Ergebnisse zu erzielen, sollten Sie zu einer Standardseitengröße für den Bericht wechseln.
+* Beim Exportieren nach PDF werden bei Berichten, die Designs mit benutzerdefinierten Schriftarten verwenden, die benutzerdefinierte Schriftart durch eine Standardschriftart ersetzt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Drucken eines Berichts](end-user-print.md)

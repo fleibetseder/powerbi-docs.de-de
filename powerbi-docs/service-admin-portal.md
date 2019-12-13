@@ -1,21 +1,21 @@
 ---
 title: Power BI-Verwaltungsportal
 description: Das Verwaltungsportal ermöglicht die Mandantenverwaltung von Power BI in Ihrer Organisation. Es enthält Elemente wie z. B. Nutzungsmetriken und Zugriff auf das Microsoft 365 Admin Center sowie auf die Einstellungen.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/25/2019
-ms.author: mblythe
+ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: bb842128c26161d2f8da2961c6f014b9ecb45fc5
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 4776e458c778b6bd482106660ab9b8cd978699e5
+ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265888"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882898"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Verwalten von Power BI im Verwaltungsportal
 
@@ -247,11 +247,14 @@ Die folgende Abbildung zeigt das Menü **Datei** für einen Bericht, wenn die Ei
 ![Bericht drucken](media/service-admin-portal/powerbi-admin-print-report.png)
 
 ### <a name="allow-external-guest-users-to-edit-and-manage-content-in-the-organization"></a>Externen Gastbenutzern das Bearbeiten und Verwalten von Inhalten in der Organisation erlauben
-Azure AD-B2B-Gastbenutzer können Inhalte in der Organisation bearbeiten und verwalten. [Weitere Informationen](service-admin-azure-ad-b2b.md)
+Azure Active Directory B2B-Gastbenutzer können Inhalte in der Organisation bearbeiten und verwalten. [Weitere Informationen](service-admin-azure-ad-b2b.md)
 
 In der folgenden Abbildung wird die Option „Allow external guest users to edit and manage content in the organization“ (Externen Gastbenutzern das Bearbeiten und Verwalten von Inhalten in der Organisation erlauben) angezeigt.
 
 ![Externen Gastbenutzern das Bearbeiten und Verwalten von Inhalten in der Organisation erlauben](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
+
+> [!IMPORTANT]
+> Wenn Sie dem Azure AD-Mandanten einen externen Benutzer hinzufügen (entweder manuell oder durch Freigeben eines Berichts für diesen Benutzer), ist dieses Benutzerkonto jetzt für interne Konten sichtbar. Ein interner Benutzer kann andere Dinge für den externen Benutzer freigeben, auch wenn das interne Konto nicht über externe Freigabeberechtigungen verfügt.
 
 ### <a name="email-subscriptions"></a>E-Mail-Abonnements
 Benutzer in der Organisation können E-Mail-Abonnements erstellen und verwenden. Erfahren Sie mehr über [Abonnements](service-report-subscribe.md).

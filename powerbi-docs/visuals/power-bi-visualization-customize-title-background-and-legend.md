@@ -7,27 +7,22 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 12/04/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 011e2b6d3bf5cc998f7db76e96536d2ddab09888
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 252e83a543640ec47fbadd00012bf1a4d8074f84
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880851"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831448"
 ---
 # <a name="customize-visualization-titles-legends-and-backgrounds"></a>Anpassen der Titel, Legenden und Hintergründe von Visualisierungen
 
-In diesem Tutorial lernen Sie einige verschiedene Möglichkeiten zum Anpassen von Visualisierungen kennen. Es gibt so viele Optionen zum Anpassen von Visualisierungen. Der beste Weg, um mehr über sie alle zu erfahren, ist die Erkundung des Bereichs **Format** (wählen Sie das Farbrollensymbol aus). Um Ihnen den Einstieg zu erleichtern, wird in diesem Artikel das Anpassen des Titels, der Legende und des Hintergrunds einer Visualisierung erläutert.
+In diesem Tutorial lernen Sie einige verschiedene Möglichkeiten zum Anpassen von Visualisierungen kennen. Es gibt so viele Optionen zum Anpassen von Visualisierungen. Der beste Weg, um mehr über sie alle zu erfahren, ist die Erkundung des Bereichs **Format** (wählen Sie das Farbrollensymbol aus). Um Ihnen den Einstieg zu erleichtern, wird in diesem Artikel das Anpassen des Titels, der Legende und des Hintergrunds einer Visualisierung und das Hinzufügen eines Designs erläutert.
 
 Sie können nicht alle Visualisierungen anpassen. Details hierzu finden Sie in der [kompletten Liste](#visualization-types-that-you-can-customize) der Visualisierungen.
 
-Schneller Vorlauf bis 4:50 im Video für eine Demonstration zum Anpassen von Visualisierungen:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
-
-Befolgen Sie anschließend die Anweisungen unter dem Video, um es mit Ihren eigenen Daten selbst auszuprobieren.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -37,7 +32,7 @@ Befolgen Sie anschließend die Anweisungen unter dem Video, um es mit Ihren eige
 
 ## <a name="customize-visualization-titles-in-reports"></a>Anpassen der Visualisierungstitel in Berichten
 
-Melden Sie sich beim [Power BI-Dienst](https://app.powerbi.com) an, und öffnen Sie den Bericht zum [Analysebeispiel für den Einzelhandel](../sample-datasets.md) in der [Bearbeitungsansicht](../service-interact-with-a-report-in-editing-view.md).
+Melden Sie sich bei Power BI Desktop an, und öffnen Sie das [Analysebeispiel für den Einzelhandel](../sample-datasets.md).
 
 > [!NOTE]
 > Wenn Sie eine Visualisierung an ein Dashboard anheften, wird sie zu einer Dashboardkachel. Sie können auch die Kacheln selbst mit [neuen Titeln und Untertiteln, Hyperlinks und Größenänderungen](../service-dashboard-edit-tile.md) anpassen.
@@ -50,41 +45,38 @@ Melden Sie sich beim [Power BI-Dienst](https://app.powerbi.com) an, und öffnen 
 
 1. Wählen Sie **Titel** aus, um diesen Abschnitt zu erweitern.
 
-   ![Screenshot des Bereichs „Format“ mit hervorgehobenem Farbrollensymbol und auf die Dropdownliste „Titel“ weisendem Pfeil.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-formatting-menu.png)
+   ![Screenshot des Bereichs „Format“ mit hervorgehobenem Farbrollensymbol und auf die Dropdownliste „Titel“ weisendem Pfeil.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-format-menu.png)
 
 1. Setzen Sie den Schieberegler**Titel** auf **Ein**.
 
-   ![Screenshot des auf „Ein“ gesetzten Schiebereglers.](media/power-bi-visualization-customize-title-background-and-legend/onoffslider.png)
-
 1. Um den Titel zu ändern, geben Sie *Ladenanzahl nach Öffnungsmonat* in das Feld **Titeltext** ein.
 
-1. Ändern Sie **Schriftfarbe** in Orange und **Hintergrundfarbe** in Gelb.
+    ![Screenshot des Bereichs „Format“ mit dem eingegebenen Titeltext.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-title.png)
 
-    1. Wählen in der Dropdownliste aus **Designfarben**, **Zuletzt verwendete Farben** oder **Benutzerdefinierte Farbe** eine Farbe aus.
+1. Ändern Sie **Schriftfarbe** in Weiß und **Hintergrundfarbe** in Blau.    
 
-        ![Screenshot der Optionen „Schriftfarbe“ und „Hintergrundfarbe“.](media/power-bi-visualization-customize-title-background-and-legend/customizecolorpicker.png)
+    a. Wählen in der Dropdownliste aus **Designfarben**, **Zuletzt verwendete Farben** oder **Benutzerdefinierte Farbe** eine Farbe aus.
 
-    1. Wählen Sie die Dropdownliste aus, um das Farbfenster zu schließen.
+        ![Screenshot of the Font color and Background color options.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-color.png)
 
-       Speichern Sie die bisher vorgenommenen Änderungen.
+    b. Wählen Sie die Dropdownliste aus, um das Farbfenster zu schließen.
 
-       Wenn Sie jemals alle Änderungen rückgängig machen müssen, können Sie zu den Standardfarben zurückkehren, indem Sie **Auf Standardwert zurücksetzen** im Farbfenster auswählen.
 
-1. Vergrößern Sie die Textgröße auf **12 pt**.
+1. Vergrößern Sie die Textgröße auf **16 pt**.
 
 1. Die letzte Anpassung, die Sie am Diagrammtitel vornehmen, ist die Ausrichtung in der Mitte der Visualisierung.
 
-    ![Screenshot der Ausrichtungssteuerelemente, wobei die Option „Mitte“ ausgewählt ist.](media/power-bi-visualization-customize-title-background-and-legend/customizealign.png)
+    ![Screenshot der Ausrichtungssteuerelemente, wobei die Option „Mitte“ ausgewählt ist.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-align.png)
 
-An diesem Punkt des Tutorials sollte der Titel Ihres gruppierten Säulendiagramms wie folgt aussehen:
+    An diesem Punkt des Tutorials sollte der Titel Ihres gruppierten Säulendiagramms wie folgt aussehen:
 
-![Screenshot des neu konfigurierten gruppierten Säulendiagramms.](media/power-bi-visualization-customize-title-background-and-legend/tutorialprogress1.png)
+    ![Screenshot des neu konfigurierten gruppierten Säulendiagramms.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-table.png)
 
 Speichern Sie die Änderungen, die Sie vorgenommen haben, und fahren Sie mit dem nächsten Abschnitt fort.
 
 Wenn Sie einmal alle Änderungen zurücksetzen müssen, wählen Sie **Auf Standardwert zurücksetzen** am unteren Rand des Anpassungsbereichs des **Titels** aus.
 
-![Screenshot der Option „Auf Standardwert zurücksetzen“.](media/power-bi-visualization-customize-title-background-and-legend/revertall.png)
+![Screenshot der Option „Auf Standardwert zurücksetzen“.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-revert.png)
 
 ## <a name="customize-visualization-backgrounds"></a>Anpassen der Hintergründe von Visualisierungen
 
@@ -98,7 +90,7 @@ Erweitern Sie im gleichen gruppierten Säulendiagramm die Optionen für den **Hi
 
 An diesem Punkt des Tutorials sollte der Hintergrund Ihres gruppierten Säulendiagramms wie folgt aussehen:
 
-![Screenshot des gruppierten Säulendiagramms mit aktualisierter Hintergrundfarbe.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-customize-background.png)
+![Screenshot des gruppierten Säulendiagramms mit aktualisierter Hintergrundfarbe.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-background.png)
 
 Speichern Sie die Änderungen, die Sie vorgenommen haben, und fahren Sie mit dem nächsten Abschnitt fort.
 
@@ -112,7 +104,7 @@ Wenn Sie einmal alle Änderungen zurücksetzen müssen, wählen Sie **Auf Standa
 
 1. Erweitern Sie die Optionen von **Legende**:
 
-      ![Screenshot der Option „Legende“.](media/power-bi-visualization-customize-title-background-and-legend/legend.png)
+    ![Screenshot der Karte „Legende“.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-legends.png)
 
 1. Setzen Sie den **Legende**-Schieberegler auf **Ein**.
 
@@ -122,13 +114,20 @@ Wenn Sie einmal alle Änderungen zurücksetzen müssen, wählen Sie **Auf Standa
 
 1. Geben Sie *Manager* in das Feld **Legendenname** ein.
 
-An diesem Punkt des Tutorials sollte die Legende Ihres gruppierten Säulendiagramms wie folgt aussehen:
-
-![Screenshot der aktualisierten Legende im gruppierten Säulendiagramm.](media/power-bi-visualization-customize-title-background-and-legend/legend-move.png)
+1. Ändern Sie **Farbe** in Schwarz.
 
 Speichern Sie die Änderungen, die Sie vorgenommen haben, und fahren Sie mit dem nächsten Abschnitt fort.
 
 Wenn Sie einmal alle Änderungen zurücksetzen müssen, wählen Sie **Auf Standardwert zurücksetzen** am unteren Rand des Anpassungsbereichs der **Legende** aus.
+
+## <a name="customize-colors-using-a-theme"></a>Anpassen von Farben mithilfe eines Designs
+
+Mit Berichtsdesigns können Sie Entwurfsänderungen auf den gesamten Bericht anwenden, z. B. die Verwendung von Unternehmensfarben, das Ändern von Symbolsätzen oder das Anwenden der neuen Standardformatierung für Visuals. Wenn Sie ein Berichtsdesign anwenden, verwenden alle Visuals im Bericht Farben und Formatierung des ausgewählten Designs.
+
+Wenn Sie ein Design auf den Bericht anwenden möchten, wählen Sie **Design wechseln** in der Menüleiste aus. Wählen Sie ein Design aus.  Im folgenden Bericht wird das Design **Solar** verwendet.
+
+ 
+![Bericht mit Design „Solar“ in Gelb-, Orange- und Rottönen](media/power-bi-visualization-customize-title-background-and-legend/power-bi-theme.png)
 
 ## <a name="visualization-types-that-you-can-customize"></a>Visualisierungstypen, die Sie anpassen können
 
@@ -146,12 +145,15 @@ Hier ist eine Liste der Visualisierungen und jeweils verfügbaren Anpassungsopti
 | Flächenkartogramm | Ja | Ja | Ja |
 | Trichterdiagramm | Ja | Ja | n/v |
 | Maßstab | Ja | Ja | n/v |
+| Wichtigste Einflussfaktoren | Ja | Ja | n/v |
 | KPI | Ja | Ja | n/v |
 | Linie | Ja | Ja | Ja |
 | Zuordnung | Ja | Ja | Ja |
 | Matrix | Ja | Ja | n/v |
 | Kreis | Ja | Ja | Ja |
+| Q&A | Ja | Ja | n/v |
 | Punktdiagramm | Ja | Ja | Ja |
+| Formen | Ja | Ja | Ja |
 | Slicer | Ja | Ja | n/v |
 | Tabelle | Ja | Ja | n/v |
 | Textfeld | Nein | Ja | n/v |
@@ -163,7 +165,5 @@ Hier ist eine Liste der Visualisierungen und jeweils verfügbaren Anpassungsopti
 - [Anpassen der Eigenschaften der X- und Y-Achse](power-bi-visualization-customize-x-axis-and-y-axis.md)
 
 - [Erste Schritte mit Farbeinstellungen und Achseneigenschaften](service-getting-started-with-color-formatting-and-axis-properties.md)
-
-- [Grundkonzepte für Benutzer des Power BI-Diensts](../consumer/end-user-basic-concepts.md)
 
 Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

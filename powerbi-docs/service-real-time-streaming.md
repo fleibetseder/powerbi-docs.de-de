@@ -9,17 +9,17 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 9415365c3846329d5bcf707ec7f41d0bd2cc6f92
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a4d948e768682aab77708289320914ce3ef0fdc3
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871728"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74699090"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Echtzeitstreaming in Power BI
 Mit dem Power BI-Echtzeitstreaming können Sie in Echtzeit Daten streamen und Dashboards aktualisieren. Alle visuellen Elemente und Dashboards, die in Power BI erstellt werden können, können so erstellt werden, dass Echtzeitdaten und visuelle Echtzeitelemente angezeigt und aktualisiert werden. Die Geräte und Quellen von Streamingdaten können Factorysensoren, soziale Medien, Servicenutzungsmetriken sowie alle Elemente sein, über die zeitkritische Daten erfasst oder übertragen werden können.
 
-![](media/service-real-time-streaming/real-time-streaming_10.jpg)
+![Screenshot der Ergebnisse von Echtzeitumgebungssensoren](media/service-real-time-streaming/real-time-streaming-10.png)
 
 In diesem Artikel wird das Einrichten eines Echtzeitstreaming-Datasets in Power BI veranschaulicht. Bevor wir jedoch darauf eingehen, ist ein Verständnis der Typen von Echtzeitdatasets, die in Kacheln (und Dashboards) angezeigt werden, sowie der Unterschiede zwischen diesen Datasets unerlässlich.
 
@@ -198,7 +198,7 @@ In diesem Beispiel wird ein öffentlich verfügbarer Datenstrom aus **PubNub** v
    ![](media/service-real-time-streaming/real-time-streaming_9.png)
 5. Erstellen Sie im Power BI-Arbeitsbereich ein neues Dashboard, und fügen Sie dann eine Kachel hinzu (die Schritte finden Sie bei Bedarf weiter oben). Wenn Sie jetzt eine Kachel erstellen und **Benutzerdefinierte Streamingdaten** auswählen, ist ein Streamingdataset vorhanden, das Sie verwenden können. Experimentieren Sie ein wenig damit. Wenn Sie Liniendiagrammen einige Felder vom Typ *Zahl* und dann weitere Kacheln hinzufügen, erhalten Sie ein Echtzeitdashboard, das wie folgt aussieht:
    
-   ![](media/service-real-time-streaming/real-time-streaming_10.jpg)
+   ![Screenshot der Ergebnisse von Echtzeitumgebungssensoren](media/service-real-time-streaming/real-time-streaming-10.png)
 
 Probieren Sie dieses Beispieldataset aus. Erstellen Sie dann eigene Datasets, und streamen Sie Livedaten in Power BI.
 

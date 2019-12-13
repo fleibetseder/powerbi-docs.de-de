@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/18/2019
+ms.date: 12/04/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 87d9be7a6d82dfc37ba3409b7c5068407671b405
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 25422b2503caed78e6e6518a855f6b23a0571a8c
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099164"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74830509"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Exportieren von Berichten aus Power BI nach PowerPoint
 
@@ -24,61 +24,61 @@ Mit Power BI können Sie Berichte in Microsoft PowerPoint veröffentlichen und d
 
 * Jede Seite im Power BI-Bericht entspricht einer einzelnen Folie in PowerPoint.
 * Jede Seite im Power BI-Bericht wird beim Export in ein einzelnes hochauflösendes Bild in PowerPoint umgewandelt.
-* Die Filter- und Slicereinstellungen, die Sie dem Bericht hinzugefügt haben, werden beibehalten.
+* Sie können die Filter- und Slicereinstellungen beibehalten, die Sie dem Bericht hinzugefügt haben.
 * In PowerPoint wird ein Link zum Power BI-Bericht erstellt.
 
 **Power BI-Berichte** lassen sich ganz schnell nach **PowerPoint** exportieren. Befolgen Sie dazu die Schritte im nächsten Abschnitt.
 
 ## <a name="export-your-power-bi-report-to-powerpoint"></a>Exportieren eines Power BI-Berichts nach PowerPoint
-Wählen Sie im Power BI-Dienst einen Bericht aus, der im Zeichenbereich angezeigt werden soll. Sie können auch einen Bericht von der **Startseite**, aus **Apps** oder einem anderen Container im Navigationsbereich auswählen.
+Wählen Sie im **Power BI-Dienst** einen Bericht aus, der im Zeichenbereich angezeigt werden soll. Sie können auch einen Bericht auf der Seite **Home**, aus **Apps** oder einem anderen Container im Navigationsbereich auswählen.
 
 Sobald der Bericht, den Sie nach PowerPoint exportieren möchten, im Zeichenbereich angezeigt wird, wählen Sie in der Menüleiste **Exportieren** > **PowerPoint** aus.
 
 ![Auswählen von „Exportieren“ in der Menüleiste](media/end-user-powerpoint/power-bi-export.png)
 
-Es wird ein Popupfenster angezeigt, in dem Sie die Option zur Auswahl von **Aktuelle Werte** oder **Standardwerte** haben. **Aktuelle Werte** exportiert den Bericht im aktuellen Zustand. Dazu gehören die aktiven Änderungen, die Sie an Datenschnitt- und Filterwerten vorgenommen haben. Die meisten Benutzer wählen diese Option aus. Alternativ können Sie **Standardwerte** auswählen, wodurch der Bericht im ursprünglichen Zustand exportiert wird (wie er vom *Autor* freigegeben wurde). Änderungen, die Sie am ursprünglichen Zustand vorgenommen haben, werden nicht dargestellt.
+Es wird ein Popupfenster angezeigt, in dem Sie die Option zur Auswahl von **Aktuelle Werte** oder **Standardwerte** haben. **Aktuelle Werte** exportiert den Bericht im aktuellen Zustand. Dazu gehören die aktiven Änderungen, die Sie an Datenschnitt- und Filterwerten vorgenommen haben. Die meisten Benutzer wählen diese Option aus. Alternativ können Sie auf **Standardwerte** klicken, wodurch der Bericht im ursprünglichen Zustand exportiert wird (wie er vom *Designer* freigegeben wurde). Änderungen am ursprünglichen Zustand werden nicht dargestellt.
+
+> [!NOTE]
+> Bei der Option **Aktuelle Werte** ist der Scrollzustand der Visuals nicht enthalten.
 
 ![Zu exportierende Elemente auswählen](media/end-user-powerpoint/power-bi-current-values.png)
  
-Darüber hinaus können Sie über das Kontrollkästchen auswählen, ob die ausgeblendeten Registerkarten eines Berichts exportiert werden sollen. Aktivieren Sie einfach das Kontrollkästchen, wenn Sie nur die Registerkarten des Berichts exportieren möchten, die Ihnen im Browser angezeigt werden. Wenn Sie alle ausgeblendeten Registerkarten im Exportvorgang enthalten möchten, lassen Sie das Kontrollkästchen deaktiviert. Wenn das Kontrollkästchen ausgegraut ist, enthält der Bericht keine ausgeblendeten Registerkarten. Sobald Sie Ihre Auswahl vorgenommen haben, wählen Sie **Exportieren** aus, um fortzufahren.
+Darüber hinaus können Sie über das Kontrollkästchen auswählen, ob die ausgeblendeten Registerkarten eines Berichts exportiert werden sollen. Aktivieren Sie einfach das Kontrollkästchen, wenn Sie nur die Registerkarten des Berichts exportieren möchten, die Ihnen im Browser angezeigt werden. Wenn Sie alle ausgeblendeten Registerkarten im Exportvorgang enthalten möchten, lassen Sie das Kontrollkästchen deaktiviert. Wenn das Kontrollkästchen ausgegraut ist, enthält der Bericht keine ausgeblendeten Registerkarten. Ein Beispiel für eine ausgeblendete Registerkarte ist beispielsweise eine QuickInfo-Registerkarte. [Benutzerdefinierte QuickInfos](../desktop-tooltips.md) werden von *Berichts-Designern* erstellt und im Power BI-Dienst für *Verbraucher* nicht als Berichtsregisterkarten angezeigt. 
 
-Rechts oben im Browserfenster des Power BI-Diensts wird ein Benachrichtigungsbanner mit der Information angezeigt, dass ein Export nach PowerPoint ausgeführt wird. Der Exportvorgang kann einige Minuten dauern. Während der Bericht exportiert wird, können Sie in Power BI weiterarbeiten.
+Sobald Sie Ihre Auswahl vorgenommen haben, wählen Sie **Exportieren** aus, um fortzufahren. Rechts oben im Browserfenster des Power BI-Diensts wird ein Benachrichtigungsbanner mit der Information angezeigt, dass ein Export nach PowerPoint ausgeführt wird. Der Exportvorgang kann einige Minuten dauern. Während der Bericht exportiert wird, können Sie in Power BI weiterarbeiten.
 
 ![Benachrichtigung „Export nach PowerPoint wird durchgeführt“](media/end-user-powerpoint/power-bi-export-progress.png)
 
 Nachdem der Power BI-Dienst den Export abgeschlossen hat, werden Sie darüber über das Banner informiert. Ihre Datei ist dann dort verfügbar, wo Ihr Browser heruntergeladene Dateien speichert. In der folgenden Abbildung wird die Datei als Downloadbanner unten im Browserfenster angezeigt.
 
-![Pfeil, der auf die Benachrichtigung im Browser am unteren Rand des Bildschirms zeigt](media/end-user-powerpoint/powerbi_to_powerpoint_4.png)
+![Benachrichtigung im Browser am unteren Bildschirmrand](media/end-user-powerpoint/power-bi-browsers.png)
 
 Das war schon alles. Sie können die Datei herunterladen, in PowerPoint öffnen und wie jeden anderen PowerPoint-Stapel bearbeiten oder erweitern.
 
 ## <a name="check-out-your-exported-powerpoint-file"></a>Features der exportierten PowerPoint-Datei
 Wenn Sie die aus Power BI exportierte PowerPoint-Datei öffnen, werden Sie einige nützliche Elemente entdecken. Sehen Sie sich die folgende Abbildung an, und betrachten Sie die nummerierten Elemente, in denen einige dieser Features beschrieben werden.
 
-![PowerPoint wird geöffnet](media/end-user-powerpoint/powerbi_to_powerpoint_5.png)
+![PowerPoint wird geöffnet](media/end-user-powerpoint/power-bi-powerpoint.png)
 
 1. Die erste Seite der Foliengruppe enthält den Namen des Berichts sowie einen Link, über den Sie den Bericht, auf dem die Foliengruppe basiert, **in Power BI anzeigen** können.
 2. Zudem erhalten Sie nützliche Informationen zum Bericht. **Letzte Datenaktualisierung** zeigt das Datum und die Uhrzeit an, auf denen der exportierte Bericht basiert. **Heruntergeladen am** zeigt das Datum und die Uhrzeit des Exports des Power BI-Berichts in eine PowerPoint-Datei.
 3. Jeder Berichtsseite entspricht eine eigene Folie, wie im Navigationsbereich zu sehen. 
 4. Ihr veröffentlichter Bericht wird in der Sprache gerendert, die in Ihren Power BI-Einstellungen oder in den Gebietsschemaeinstellungen Ihres Browsers angegeben ist. Sie können die Spracheinstellung anzeigen oder festlegen, indem Sie das Zahnradsymbol ![Zahnradsymbol](media/end-user-powerpoint/power-bi-settings-icon.png) > **Einstellungen** > **Allgemein** > **Sprache** auswählen. Weitere Informationen zu Gebietsschemas finden Sie unter [Unterstützte Sprachen und Länder oder Regionen für Power BI](../supported-languages-countries-regions.md).
-5. Die PowerPoint-Präsentation enthält eine Deckfolie mit der exportierten Zeit in der richtigen Zeitzone.
+
 
 Wenn Sie eine einzelne Folie näher betrachten, sehen Sie, dass jede Berichtsseite als separates Bild enthalten ist.
 
->[!NOTE]
-> Es ist neu, dass für jede Berichtsseite ein Visual vorhanden ist. Das vorherige Verhalten, mit dem für jedes Visual ein eigenständiges Bild bereitgestellt wurde, wird nicht mehr implementiert. 
- 
-
-![Bildschirm, auf dem jedes Visual als eigenständiges Bild angezeigt wird](media/end-user-powerpoint/powerbi_to_powerpoint_6.png)
+![Bildschirm, auf dem jedes Visual als eigenständiges Bild angezeigt wird](media/end-user-powerpoint/power-bi-images.png)
 
 Wie Sie mit dem PowerPoint-Stapel und den hochauflösenden Bildern weiter verfahren möchten, liegt ganz bei Ihnen.
 
-## <a name="limitations"></a>Einschränkungen
+## <a name="considerations-and-troubleshooting"></a>Zu beachtende Aspekte und Problembehandlung
 Bei der Arbeit mit der Funktion **Nach PowerPoint exportieren** sind einige Aspekte und Einschränkungen zu beachten.
 
 * R-Visuals werden derzeit nicht unterstützt. Diese Visuals werden als leeres Bild in PowerPoint mit der Fehlermeldung exportiert, dass das Visual nicht unterstützt wird.
 * Benutzerdefinierte Visuals, die zertifiziert wurden, werden unterstützt. Weitere Informationen zu zertifizierten benutzerdefinierten Visuals sowie zum Zertifizieren von benutzerdefinierten Visuals finden Sie unter [Wie wird ein benutzerdefiniertes Visual zertifiziert?](../developer/power-bi-custom-visuals-certified.md). Benutzerdefinierte Visuals, die nicht zertifiziert wurden, werden nicht unterstützt. Sie werden als leeres Bild in PowerPoint mit der Fehlermeldung exportiert, dass das Visual nicht unterstützt wird.
 * Berichte mit mehr als 30 Berichtsseiten können derzeit nicht exportiert werden.
+* Visuals mit Scrollleiste werden im Standardzustand exportiert. Das Visual zeigt in PowerPoint nur den oberen Teil der Daten an. Das Scrollen ist in PowerPoint nicht verfügbar, da jede Folie ein Bild ist. 
 * Der Exportvorgang des Berichts nach PowerPoint kann einige Minuten dauern. Zu den Faktoren, die die benötigte Zeit beeinflussen, zählen die Struktur des Berichts sowie die jeweils aktuelle Auslastung des Power BI-Diensts.
 * Wenn das Menüelement **Nach PowerPoint exportieren** im Power BI-Dienst nicht verfügbar ist, hat der Administrator Ihres Mandanten diese Funktion wahrscheinlich deaktiviert. Wenden Sie sich an den Mandantenadministrator, um Einzelheiten zu erfahren.
 * Hintergrundbilder werden an der Begrenzung des Diagramms abgeschnitten. Es wird empfohlen, Hintergrundbilder vor dem Export als PowerPoint-Datei zu entfernen.

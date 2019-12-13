@@ -7,17 +7,17 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/19/2019
+ms.date: 12/05/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9c35e97fba55230277f9f144a5155071656b6add
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e7fa98be039093015e1b19ba8bf20f1368658a43
+ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870959"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907822"
 ---
-# <a name="filled-maps-choropleths-in-power-bi"></a>Flächenkartogramme (Choroplethenkarten) in Power BI
+# <a name="filled-maps-choropleth-in-power-bi"></a>Flächenkartogramme (Choroplethenkarten) in Power BI
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -46,12 +46,12 @@ Flächenkartogramme sind gut für folgende Zwecke geeignet:
 * Für einen Überblick in Bezug auf die Verteilung über geografische Standorte hinweg
 
 ### <a name="prerequisites"></a>Voraussetzungen
-In diesem Tutorial wird die [PBIX-Datei mit einem Analysebeispiel für den Einzelhandel](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) verwendet.
+In diesem Tutorial wird die [PBIX-Beispieldatei für Vertrieb und Marketing](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) verwendet.
 1. Wählen Sie im oberen linken Bereich der Menüleiste **Datei** > **Öffnen** aus.
    
-2. Suchen Sie Ihre Kopie der **PBIX-Datei mit einem Analysebeispiel für den Einzelhandel**.
+2. Suchen Sie nach Ihrer Kopie der **PBIX-Beispieldatei für Vertrieb und Marketing**.
 
-1. Öffnen Sie die **PBIX-Datei mit einem Analysebeispiel für den Einzelhandel** in der Berichtsansicht ![Screenshot des Berichtsansichtssymbols.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+1. Öffnen Sie die **PBIX-Beispieldatei für Vertrieb und Marketing** in der Berichtsansicht ![Screenshot des Berichtsansichtssymbols](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
 1. Auswählen ![Screenshot der gelben Registerkarte.,](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) um eine neue Seite hinzuzufügen.
 
@@ -63,7 +63,7 @@ In diesem Video wird eine einfache Karte erstellt und in ein Flächenkartogramm 
    > 
    > 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
+[VIDEO https://www.youtube.com/embed/ajTPGNpthcg ]
 
 ### <a name="create-a-filled-map"></a>Erstellen eines Flächenkartogramms
 1. Wählen Sie im Bereich „Felder“ das Feld **Geo** \> **Bundesstaat** aus.    
@@ -84,22 +84,22 @@ In diesem Video wird eine einfache Karte erstellt und in ein Flächenkartogramm 
    ![Dropdownliste für State, in der die Optionen „All“ und „AK“ nicht ausgewählt ist](media/power-bi-visualization-filled-maps-choropleths/img005.png)
 4. Wählen Sie das Farbrollersymbol aus, um den Bereich „Formatierung“ zu öffnen, und wählen Sie **Datenfarben** aus.
 
-    ![Bereich „Formatierung“ mit der Option „Datenfarben“](media/power-bi-visualization-filled-maps-choropleths/power-bi-data-color.png)
+    ![Bereich „Formatierung“ mit der Option „Datenfarben“](media/power-bi-visualization-filled-maps-choropleths/power-bi-colors-data.png)
 
 5. Klicken Sie auf die drei vertikalen Punkte, und wählen Sie **Bedingte Formatierung** aus.
 
-    ![„Datenfarben“, Schaltfläche „Bedingte Formatierung“](media/power-bi-visualization-filled-maps-choropleths/power-bi-conditional-formatting.png)
+    ![„Datenfarben“, Schaltfläche „Bedingte Formatierung“](media/power-bi-visualization-filled-maps-choropleths/power-bi-conditional.png)
 
-6. Verwenden Sie die Anzeige **Standardfarbe – Datenfarben**, um festzulegen, wie das Flächenkartogramm schattiert wird. Die verfügbaren Optionen umfassen, auf welchem Feld die Schattierung basiert und wie sie angewendet wird. In diesem Beispiel verwenden wir das Feld **SalesFact** > **Sentiment** (SalesFact > Stimmung) und legen für den niedrigsten Stimmungswert Rot und für den höchsten Wert Grün fest. Werte zwischen dem Maximum und dem Minimum sind Schattierungen von Rot und Grün. Die Abbildung am unteren Rand der Anzeige stellt den Bereich der Farben dar, die verwendet werden. 
+6. Verwenden Sie die Anzeige **Standardfarbe – Datenfarben**, um festzulegen, wie das Flächenkartogramm schattiert wird. Die verfügbaren Optionen umfassen, auf welchem Feld die Schattierung basiert und wie sie angewendet wird. In diesem Beispiel verwenden wir das Feld **SalesFact** > **Sentiment** (SalesFact > Stimmung) und legen für den niedrigsten Stimmungswert Orange und für den höchsten Wert Blau fest. Werte zwischen dem Maximum und dem Minimum sind Schattierungen von Orange und Blau. Die Abbildung am unteren Rand der Anzeige stellt den Bereich der Farben dar, die verwendet werden. 
 
-    ![Bereich „Standardfarbe“ mit ausgewählter Option „Sentiment“ (Stimmung)](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment.png)
+    ![Bereich „Standardfarbe“ mit ausgewählter Option „Sentiment“ (Stimmung)](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment-field.png)
 
-7. Das Flächenkartogramm ist grün und rot schattiert. Rot steht dabei für schlechtere und grün für bessere (d.h. positive) Stimmungsdaten.  Ziehen Sie ein Feld in den QuickInfo-Bereich, um weitere Details anzuzeigen.  Hier wurde **Sentiment gap** (Stimmungslücke) hinzugefügt und der Staat Idaho (ID) hervorgehoben. Die Stimmungslücke ist niedrig und liegt bei 6.
-   ![Flächenkartogramm mit QuickInfos zu Idaho](media/power-bi-visualization-filled-maps-choropleths/power-bi-filled-map-idaho.png)
+7. Das Flächenkartogramm ist grün und rot schattiert. Rot steht dabei für schlechtere und grün für bessere (d.h. positive) Stimmungsdaten.  Ziehen Sie ein Feld in den QuickInfo-Bereich, um weitere Details anzuzeigen.  Hier haben wir **SalesFact** > **Sentiment gap** (SalesFact > Stimmungslücke) hinzugefügt. Wenn Sie den Status von Idaho (ID) hervorheben, sehen Sie, dass die Stimmungslücke bei 6 liegt und damit niedrig ist.
+   ![Flächenkartogramm mit QuickInfos zu Idaho](media/power-bi-visualization-filled-maps-choropleths/power-bi-idaho-filled-map.png)
 
 10. [Speichern Sie den Bericht](../service-report-save.md).
 
-Mit Power BI haben Sie viel Kontrolle über die Darstellung Ihres Flächenkartogramms. Probieren Sie diese Steuerelemente für Datenfarben so lange aus, bis Sie das gewünschte Erscheinungsbild erhalten. 
+Mithilfe von Power BI können Sie die Darstellung Ihres Flächenkartogramms umfassend steuern. Verschieben Sie die Steuerelemente für die Datenfarbe, bis Ihnen das Ergebnis gefällt. 
 
 ## <a name="highlighting-and-cross-filtering"></a>Hervorheben und Kreuzfiltern
 Informationen zur Verwendung des Filterbereichs finden Sie unter [Hinzufügen eines Filters zu einem Bericht in Power BI](../power-bi-report-add-filter.md).
@@ -118,10 +118,10 @@ Das Markieren eines Orts in einem Flächenkartogramm ermöglicht das Kreuzfilter
 
    ![Flächenkartogramm zur Seite „Stimmung“ hinzugefügt](media/power-bi-visualization-filled-maps-choropleths/power-bi-map.png)
 
-5. Wählen Sie auf dem Flächenkartogramm einen Bundesstaat aus.  Dadurch erfolgt eine Kreuzhervorhebung und Kreuzfilterung der anderen Visualisierungen auf der Seite. Wenn Sie beispielsweise **Texas** auswählen, sehen Sie, dass der Stimmungswert bei 75 liegt. Texas befindet sich im Central District Nr. 23.   
-   ![Texas ausgewählt](media/power-bi-visualization-filled-maps-choropleths/power-bi-texas.png)
+5. Wählen Sie auf dem Flächenkartogramm einen Bundesstaat aus.  Dadurch erfolgt eine Kreuzhervorhebung und Kreuzfilterung der anderen Visualisierungen auf der Seite. Wenn Sie z. B. **Texas** auswählen, werden die Karten kreuzgefiltert, und es erfolgt eine Kreuzhervorhebung des Balkendiagramms. Sie wissen nun, dass der Stimmungswert bei 75 liegt und dass sich Texas im Central District Nr. 23 befindet.   
+   ![Texas ausgewählt](media/power-bi-visualization-filled-maps-choropleths/power-bi-filter.png)
 2. Wählen Sie in dem Liniendiagramm „VanArsdel - Sentiment by Month“ (VanArsdel – Stimmung nach Monat) aus. Dadurch wird das Flächenkartogramm gefiltert, sodass nur die Stimmungsdaten für VanArsdel und nicht für die Konkurrenz angezeigt werden.  
-   ![Neue Schattierung](media/power-bi-visualization-filled-maps-choropleths/power-bi-yes.png)
+   ![Neue Schattierung](media/power-bi-visualization-filled-maps-choropleths/power-bi-vanarsdel.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Zu beachtende Aspekte und Problembehandlung
 Kartendaten sind unter Umständen nicht eindeutig.  Neben Paris in Frankreich gibt es auch noch ein Paris in Texas. Ihre geografischen Daten sind wahrscheinlich in separaten Spalten gespeichert – eine Spalte für den Ortsnamen, eine Spalte für den Namen des Bundeslands oder des Landkreises usw. Für Bing ist es daher nicht eindeutig, welches Paris gemeint ist. Wenn das Dataset bereits Daten für die Breiten- und Längengrade enthält, umfasst Power BI spezielle Felder, mithilfe derer die Kartendaten eindeutig zugeordnet werden können. Ziehen Sie das Feld mit den Breitengraddaten in den Bereich „Visualisierungen \> Breitengrad“.  Führen Sie für den Längengrad die gleichen Schritte aus.    
@@ -130,7 +130,7 @@ Kartendaten sind unter Umständen nicht eindeutig.  Neben Paris in Frankreich gi
 
 Wenn Sie zum Bearbeiten des Datasets in Power BI Desktop berechtigt sind, erfahren Sie in diesem Video, wie Sie Mehrdeutigkeiten in Karten beheben.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Co2z9b-s_yM" frameborder="0" allowfullscreen></iframe>
+[VIDEO https://www.youtube.com/embed/Co2z9b-s_yM ]
 
 [Führen Sie zum Aktualisieren des Datasets diese Anweisungen aus](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7), wenn Sie zwar über Bearbeitungszugriff für das Dataset, aber nicht über Zugriff auf die Breiten- und Längengraddaten verfügen.
 

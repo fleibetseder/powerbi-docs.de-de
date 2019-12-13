@@ -7,15 +7,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/23/2019
+ms.date: 12/03/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: c8e95a53e0907de86449a91095d2c5afbef5b4c8
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 4d8a5c1cceb66b7103a58c7bcebfa46dbdd97430
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099762"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831101"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Abonnieren von Berichten und Dashboards im Power BI-Dienst für sich selbst und andere
 
@@ -38,7 +38,7 @@ Sie müssen nicht über Berechtigungen zum Bearbeiten des Inhalts (Dashboard ode
 
 Gleich, ob Sie ein Dashboard, einen Bericht oder einen paginierten Bericht abonnieren, der Vorgang ist ähnlich. Sie können Dashboards und Berichte im Power BI-Dienst über dieselbe Schaltfläche abonnieren.
 
-Das Abonnieren von paginierten Berichten unterscheidet sich etwas. Details finden Sie unter [Abonnieren eines paginierten Berichts im Power BI-Dienst für sich selbst und andere](paginated-reports-subscriptions.md).
+Das Abonnieren von paginierten Berichten unterscheidet sich etwas. Details finden Sie unter [Abonnieren eines paginierten Berichts im Power BI-Dienst für sich selbst und andere](consumer/paginated-reports-subscriptions.md).
  
 ![Das Symbol „Abonnieren“ auswählen](media/service-report-subscribe/power-bi-subscribe-orientation.png).
 
@@ -107,6 +107,6 @@ Ein Abonnement wird beendet, wenn die Pro-Lizenz abläuft, der Besitzer das Dash
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Abonnieren eines paginierten Berichts im Power BI-Dienst für sich selbst und andere](paginated-reports-subscriptions.md)
+- [Abonnieren eines paginierten Berichts im Power BI-Dienst für sich selbst und andere](consumer/paginated-reports-subscriptions.md)
 - Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)    
 - [Blogbeitrag lesen](https://powerbi.microsoft.com/blog/introducing-dashboard-email-subscriptions-a-360-degree-view-of-your-business-in-your-inbox-every-day/)
