@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/06/2019
 ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: e09b3f8579b65bc242cda1dbdb54f187ab6b47d0
-ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
+ms.openlocfilehash: 622273ed4c8d6f2faee46d3cc84d981f86bd8c92
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74791600"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958400"
 ---
 # <a name="configure-scheduled-refresh"></a>Konfigurieren von geplanten Aktualisierungen
 
@@ -44,13 +44,13 @@ Falls Sie ein persönliches Gateway konfiguriert haben, steht es Ihnen als Auswa
 
 Sie können auch das Enterprise-Gateway verwenden, falls Ihnen eins zur Verfügung steht. Ihnen wird nur dann ein Enterprise-Gateway als verfügbar angezeigt, wenn Ihr Konto in der Registerkarte **Benutzer** der für ein bestimmtes Gateway konfigurierten Datenquelle aufgelistet ist.
 
-## <a name="data-source-credentials"></a>Datenquellen-Anmeldeinformationen
+## <a name="data-source-credentials"></a>Anmeldeinformationen für die Datenquelle
 
 ### <a name="power-bi-gateway---personal"></a>Power BI Gateway – Personal
 
 Falls Sie das persönliche Gateway zum Aktualisieren der Daten verwenden, müssen Sie die Anmeldeinformationen angeben, um eine Verbindung mit der Back-End-Datenquelle herzustellen. Falls Sie mit einem Inhaltspaket von einem Onlinedienst verbunden sind, werden die eingegebenen Anmeldeinformationen für die geplante Aktualisierung übernommen.
 
-![Datenquellen-Anmeldeinformationen](media/refresh-scheduled-refresh/data-source-credentials-pgw.png)
+![Anmeldeinformationen für die Datenquelle](media/refresh-scheduled-refresh/data-source-credentials-pgw.png)
 
 Sie müssen sich nur beim ersten Mal bei Datenquellen anmelden, wenn Sie dieses Dataset aktualisiert haben. Sobald Sie sie eingegeben haben, werden diese Anmeldeinformationen im Dataset beibehalten.
 
@@ -75,7 +75,7 @@ Im Bereich **Geplante Aktualisierung** definieren Sie das Aktualisierungsinterva
 Der Schieberegler **Halten Sie Ihre Daten aktuell** muss auf **Ja** festgelegt sein, um die Einstellungen konfigurieren zu können.
 
 > [!NOTE]
-> Der Power BI-Dienst ist darauf ausgelegt, die Aktualisierung der Daten innerhalb einer Toleranz von **15 Minuten** für den geplanten Aktualisierungszeitraum zu initiieren.
+> Das Ziel ist, die Aktualisierung innerhalb von 15 Minuten des geplanten Zeitfensters zu starten, aber es kann zu einer Verzögerung von bis zu einer Stunde kommen, wenn der Dienst die benötigten Ressourcen nicht früher zuweisen kann.
 
 ![Dialogfeld „Geplante Aktualisierung“](media/refresh-scheduled-refresh/scheduled-refresh.png)
 
