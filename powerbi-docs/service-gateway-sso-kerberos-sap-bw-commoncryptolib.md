@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/10/2019
+ms.date: 12/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 6c098a187b7f0d0d4828500cd6c5995a7c82ab42
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 02c8ac991fbf84051ae795ef4a80f2b3dc07a1ce
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74697633"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000179"
 ---
 # <a name="use-kerberos-single-sign-on-for-sso-to-sap-bw-using-commoncryptolib-sapcryptodll"></a>Verwenden von Kerberos-Single Sign-On für Einmaliges Anmelden (SSO) bei SAP BW mithilfe von CommonCryptoLib (sapcrypto.dll)
 
@@ -89,7 +89,7 @@ In diesem Artikel wird beschrieben, wie Sie Ihre SAP BW-Datenquelle so konfiguri
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
-Wenn der Bericht im Power BI-Dienst nicht aktualisiert werden kann, können Sie die Gateway-Ablaufverfolgung, CPIC-Ablaufverfolgung und CommonCryptoLib-Ablaufverfolgung verwenden, um das Problem zu diagnostizieren. Da es sich bei der CPIC-Ablaufverfolgung und bei CommonCryptoLib um SAP-Produkte handelt, kann Microsoft dafür keinen Support bereitstellen. Active Directory-Benutzer, denen SSO-Zugriff auf BW gewährt wird, müssen bei einigen Active Directory-Konfigurationen möglicherweise Mitglied der Gruppe „Administratoren“ auf dem Computer sein, auf dem das Gateway installiert ist.
+Wenn der Bericht im Power BI-Dienst nicht aktualisiert werden kann, können Sie die Gateway-Ablaufverfolgung, CPIC-Ablaufverfolgung und CommonCryptoLib-Ablaufverfolgung verwenden, um das Problem zu diagnostizieren. Da es sich bei der CPIC-Ablaufverfolgung und bei CommonCryptoLib um SAP-Produkte handelt, kann Microsoft dafür keinen Support bereitstellen.
 
 ### <a name="gateway-logs"></a>Gatewayprotokolle
 
@@ -109,7 +109,49 @@ Wenn der Bericht im Power BI-Dienst nicht aktualisiert werden kann, können Sie 
 
    ![CPIC-Ablaufverfolgung](media/service-gateway-sso-kerberos/cpic-tracing.png)
 
- 3. Reproduzieren Sie das Problem, und stellen Sie sicher, dass **CPIC\_TRACE\_DIR** Ablaufverfolgungsdateien enthält.
+3. Reproduzieren Sie das Problem, und stellen Sie sicher, dass **CPIC\_TRACE\_DIR** Ablaufverfolgungsdateien enthält.
+ 
+    Die CPIC-Ablaufverfolgung kann Probleme auf höherer Ebene diagnostizieren, z. B. einen Fehler beim Laden der sapcrypto.dll-Bibliothek. Im Folgenden finden Sie einen Codeausschnitt einer CPIC-Ablaufverfolgungsdatei, in der ein Fehler beim Laden einer DLL aufgetreten ist:
+
+    ```
+    [Thr 7228] *** ERROR => DlLoadLib()==DLENOACCESS - LoadLibrary("C:\Users\test\Desktop\sapcrypto.dll")
+    Error 5 = "Access is denied." [dlnt.c       255]
+    ```
+
+    Wenn ein solcher Fehler auftritt, Sie aber die Berechtigungen zum Lesen und Ausführen in den Dateien „sapcrypto.dll“ und „sapcrypto.ini“ wie im [Abschnitt oben](#configure-sap-bw-to-enable-sso-using-commoncryptolib) beschrieben festgelegt haben, legen Sie die gleichen Lese- und Ausführungsberechtigungen in dem Ordner fest, der die Dateien enthält.
+
+    Wenn Sie die DLL-Datei weiterhin nicht laden können, aktivieren Sie die [Überwachung für die Datei](/windows/security/threat-protection/auditing/apply-a-basic-audit-policy-on-a-file-or-folder). Die resultierenden Überwachungsprotokolle in der Windows-Ereignisanzeige können Ihnen helfen zu ermitteln, warum sich die Datei nicht laden lässt. Suchen Sie nach einem Fehlereintrag, der durch den Active Directory-Benutzer initiiert wurde, dessen Identität angenommen wurde. Für den Benutzer `MYDOMAIN\mytestuser`, dessen Identität angenommen wurde, würde ein Fehler im Überwachungsprotokoll beispielsweise folgendermaßen aussehen:
+
+    ```
+    A handle to an object was requested.
+
+    Subject:
+        Security ID:        MYDOMAIN\mytestuser
+        Account Name:       mytestuser
+        Account Domain:     MYDOMAIN
+        Logon ID:       0xCF23A8
+
+    Object:
+        Object Server:      Security
+        Object Type:        File
+        Object Name:        <path information>\sapcrypto.dll
+        Handle ID:      0x0
+        Resource Attributes:    -
+
+    Process Information:
+        Process ID:     0x2b4c
+        Process Name:       C:\Program Files\On-premises data gateway\Microsoft.Mashup.Container.NetFX45.exe
+
+    Access Request Information:
+        Transaction ID:     {00000000-0000-0000-0000-000000000000}
+        Accesses:       ReadAttributes
+                
+    Access Reasons:     ReadAttributes: Not granted
+                
+    Access Mask:        0x80
+    Privileges Used for Access Check:   -
+    Restricted SID Count:   0
+    ```
 
 ### <a name="commoncryptolib-tracing"></a>CommonCryptoLib-Ablaufverfolgung 
 

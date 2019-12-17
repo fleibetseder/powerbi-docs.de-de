@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 9434aa717ad10791e75366cf23ef8ece567389ea
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 37107c1092b12a8efc230718c624f104aa31520f
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699128"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958561"
 ---
 # <a name="what-is-power-bi-premium"></a>Was ist Power BI Premium?
 
@@ -29,16 +29,17 @@ Power BI Premium bietet dedizierte und erweiterte Ressourcen für die Ausführun
 > * Unterstützung für Datenresidenz nach Region (Multi-Geo)
 > * Teilen von Daten mit beliebigen Personen ohne Erwerb einer Benutzerlizenz
 
-Dieser Artikel stellt wichtige Funktionen in Power BI Premium vor. Wo es erforderlich ist, bieten Links zu weiteren Artikeln ausführlichere Informationen.
+Dieser Artikel stellt wichtige Funktionen in Power BI Premium vor. Wo es erforderlich ist, bieten Links zu weiteren Artikeln ausführlichere Informationen. Weitere Informationen zu Power BI Pro und Power BI Premium finden Sie auf der Website [Power BI – Preise](https://powerbi.microsoft.com/pricing/) im Abschnitt _Vergleich der Power BI-Funktionen_.
 
 ## <a name="subscriptions-and-licensing"></a>Abonnements und Lizenzierung
 
 Power BI Premium ist ein Office 365-Abonnement auf Mandantenebene, das in zwei SKU-Familien (Stock Keeping Unit) erhältlich ist:
 
-- **EM**-SKUs (EM1–EM3) zum Einbetten, die eine jährliche Verpflichtung erfordern und monatlich abgerechnet werden. Die EM1- und EM2-SKUs sind nur über Volumenlizenzierungspläne erhältlich. Sie können sie nicht direkt erwerben.
 - **P**-SKUs (P1–P3) für Einbettungs- und Unternehmensfunktionen, die eine monatliche oder jährliche Verpflichtung erfordern, monatlich abgerechnet werden und eine Lizenz zur lokalen Installation von Power BI-Berichtsserver beinhalten.
 
-Ein alternativer Ansatz ist der Kauf eines **Azure Power BI Embedded** -Abonnements, das ein einzelnes Abonnement der **A**-SKU-Familie (A1–A6) zur Einbettung und für Kapazitätstests nur zu Testzwecken enthält. Alle SKUs bieten V-Kerne zum Erstellen von Kapazitäten, die EM-SKUs sind jedoch für Einbettung im kleineren Maßstab eingeschränkt. EM1-, EM2-, A1- und A2-SKUs mit weniger als vier V-Kernen können nicht in dedizierter Infrastruktur ausgeführt werden.
+- **EM**-SKUs (EM1–EM3) zum Einbetten für _Organisationen_, die eine jährliche Verpflichtung erfordern und monatlich abgerechnet werden. Die EM1- und EM2-SKUs sind nur über Volumenlizenzierungspläne erhältlich. Sie können sie nicht direkt erwerben.
+
+Alternativ dazu können Sie auch ein **Power BI Embedded**-Abonnement in Azure erwerben. Es gibt eine einzige **A**-SKU-Familie (A1–A6), die keine Verpflichtung erfordert und pro Stunde abgerechnet wird. Diese wird für Power BI-Bezeichnungen in Anwendungen, Portalen und Websites oder als Möglichkeit zum Testen von P- oder EM-Funktionen genutzt. Alle SKUs bieten V-Kerne zum Erstellen von Kapazitäten, die EM-SKUs sind jedoch für Einbettung im kleineren Maßstab eingeschränkt. EM1-, EM2-, A1- und A2-SKUs mit weniger als vier V-Kernen können nicht in dedizierter Infrastruktur ausgeführt werden.
 
 Zwar liegt der Schwerpunkt dieses Artikels auf den P-SKUs, viel vom Beschriebenen ist jedoch auch für die A-SKUs relevant. Im Gegensatz zu den Premium-Abonnement-SKUs, erfordern Azure-SKUs keine zeitliche Verpflichtung und werden stundenweise abgerechnet. Sie bieten uneingeschränkte Elastizität, die zentrales Hochskalieren, Herunterskalieren, Anhalten, Fortsetzen und Löschen ermöglicht. 
 
@@ -50,7 +51,11 @@ Power BI-Premium-Abonnements werden von Administratoren im Microsoft 365 Admin C
 
 ## <a name="dedicated-capacities"></a>Dedizierte Kapazitäten
 
-Mit Power BI Premium erhalten Sie *dedizierte Kapazitäten*. Im Gegensatz zu einer gemeinsam genutzten Kapazität, bei der die Workloads auf gemeinsam mit anderen Kunden genutzten Computerressourcen ausgeführt werden, ist eine dedizierte Kapazität für die ausschließliche Verwendung durch eine Organisation bestimmt. Sie ist isoliert und verfügt über dedizierte Computeressourcen, die verlässliche und konsistente Leistung für die gehosteten Inhalte zur Verfügung stellt. 
+Mit Power BI Premium erhalten Sie *dedizierte Kapazitäten*. Im Gegensatz zu einer gemeinsam genutzten Kapazität, bei der die Workloads auf gemeinsam mit anderen Kunden genutzten Computerressourcen ausgeführt werden, ist eine dedizierte Kapazität für die ausschließliche Verwendung durch eine Organisation bestimmt. Sie ist isoliert und verfügt über dedizierte Computeressourcen, die verlässliche und konsistente Leistung für die gehosteten Inhalte zur Verfügung stellt. Beachten Sie, dass folgende Ressourcen in gemeinsam genutzten Kapazitäten gespeichert werden, nicht in Ihrer dedizierten Kapazität:
+
+* Excel-Arbeitsmappen (es sei denn, die Daten werden zuerst in Power BI Desktop importiert)
+* [Pushdatasets](/rest/api/power-bi/pushdatasets)
+* [Streamingdatasets](service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
 
 Arbeitsbereiche befinden sich innerhalb von Kapazitäten. Jeder Power BI-Benutzer verfügt über einen persönlichen Arbeitsbereich, der als **Mein Arbeitsbereich** bezeichnet wird. Zusätzliche Arbeitsbereiche, auch als **Arbeitsbereiche** bezeichnet, können erstellt werden, um die Zusammenarbeit zu ermöglichen. Standardmäßig werden Arbeitsbereiche, einschließlich persönlicher Arbeitsbereiche, in der gemeinsam genutzten Kapazität erstellt. Wenn Sie über Premium-Kapazitäten verfügen, können sowohl zu „Meine Arbeitsbereiche“ als auch zu Arbeitsbereichen Premium-Kapazitäten zugewiesen werden.
 
@@ -77,6 +82,9 @@ Die Ressourcen und Grenzwerte der einzelnen Premium-SKUs (und A-SKU jeweils glei
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
 | | | | | | | |
+
+> [!NOTE]
+> Die Verwendung einer einzelnen größeren SKU (z. B. eine P2-SKU) ist möglicherweise der Kombination mehrerer kleinerer SKUs (z. B. zwei P1-SKUs) vorzuziehen. Mit P2 können Sie z. B. größere Modelle verwenden und erzielen eine bessere Parallelität.
 
 ### <a name="capacity-workloads"></a>Kapazitätsworkloads
 
@@ -235,5 +243,3 @@ Weitere Informationen finden Sie unter [Herstellen einer Verbindung zu Datasets 
 > [Verwalten von Premium-Kapazitäten](service-premium-capacity-manage.md)
 
 Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
-
-||||||
