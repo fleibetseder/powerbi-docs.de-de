@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/16/2019
-ms.openlocfilehash: 10e7ab035f17715bba858fc3b055c5bf47af1331
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.openlocfilehash: 6bf7610a010a72248a3d2fdd96718eea513a68da
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565608"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000087"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Richtlinien für Power BI-Visuals
 Bevor Sie Ihr Power BI-Visual in Microsoft AppSource [veröffentlichen](https://docs.microsoft.com/power-bi/developer/office-store), damit andere es verwenden können, stellen Sie sicher, dass Sie die Richtlinien befolgen, um Ihren Benutzern eine hohe Benutzerfreundlichkeit zu bieten.
@@ -50,7 +50,12 @@ Sie können ein Popupfenster verwenden, um den Lizenzerwerb zu erläutern, wenn 
 
 ### <a name="submission-process"></a>Einreichungsprozess
 
-Entwickler laden ihre Power BI-Visuals, die In-App-Käufe enthalten, genau wie kostenlose Visuals über das Seller-Dashboard in Microsoft AppSource hoch. Um deutlich zu machen, dass das übermittelte Power BI-Visual In-App-Käufe enthält, müssen Entwickler im Seller-Dashboard den Hinweis „Visual mit In-App-Käufen“ hinzufügen. Entwickler müssen außerdem einen Lizenzschlüssel oder ein Token angeben, damit das entsprechende Team die In-App-Käufe überprüfen kann. Sobald das Power BI-Visual überprüft und genehmigt wurde, zeigt das Microsoft AppSource-Listing für das IAP Power BI-Visual den Hinweis „Möglicherweise müssen weitere Komponenten erworben werden“ in den Preisoptionen an.
+Führen Sie den [Übermittlungsprozess](office-store.md#submitting-to-appsource) aus. Navigieren Sie dann zur Registerkarte *Produkteinrichtung*, und aktivieren Sie das Kontrollkästchen *Mein Produkt erfordert den Erwerb eines Diensts*.
+
+Sobald das Power BI-Visual überprüft und genehmigt wurde, zeigt das Microsoft AppSource-Listing für das IAP Power BI-Visual den Hinweis „Möglicherweise müssen weitere Komponenten erworben werden“ in den Preisoptionen an.
+
+>[!NOTE]
+>Wenn Ihr Power BI-Visual bereits über das [Verkäuferdashboard](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) übermittelt wurde und Sie ein IAP-Feature hinzufügen möchten, müssen Sie im Hinweisabschnitt des Verkäuferdashboards einen Kommentar einfügen: „Visual mit In-App-Kauf“. Sie müssen außerdem einen Lizenzschlüssel oder ein Token angeben, damit das entsprechende Team die IAP-Features überprüfen kann.
 
 ## <a name="context-menu"></a>Kontextmenü
 Das Kontextmenü ist das Rechtsklickmenü, das angezeigt wird, wenn der Benutzer mit der Maus über ein Visual fährt.

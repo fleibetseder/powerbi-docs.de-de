@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/29/2019
 ms.author: preetikr
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e5374397dc9b89df7b7cbd86cfca5a44631b94e4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ef8e874c1f1a47d65845b87dccd441746651a68b
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876488"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999788"
 ---
 # <a name="connect-to-the-microsoft-graph-security-api-in-power-bi-desktop"></a>Herstellen einer Verbindung mit der Microsoft Graph-Sicherheits-API in Power BI Desktop
 
@@ -40,7 +40,7 @@ Der Administrator Ihres Azure AD-Mandanten kann eine der folgenden Methoden nutz
 
 * Reagieren auf Anforderungen, die Ihre Logik-App bei der ersten Ausführung über [Benutzeroberflächen zum Erteilen von Einwilligungen für Anwendungen](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience) übermittelt
    
-Das Benutzerkonto, das beim Microsoft Graph-Sicherheitsconnector angemeldet wird, muss Mitglied der eingeschränkten Administratorrolle „Sicherheitsleseberechtigter“ in Azure AD sein. Dabei kann es sich entweder um einen *Sicherheitsleseberechtigten* oder einen *Sicherheitsadministrator* handeln. Weitere Informationen finden Sie unter [Assign Azure AD roles to users (Zuweisen von Azure AD-Rollen zu Benutzern)](https://docs.microsoft.com/graph/security-authorization#assign-azure-ad-roles-to-users).
+Dem Benutzerkonto, das sich beim Microsoft Graph-Sicherheitsconnector anmeldet, muss die Azure AD-Rolle „Sicherheitsleseberechtigter“ zugewiesen sein, **falls** der Benutzer kein Mitglied der Rolle *Sicherheitsadministrator* ist. Weitere Informationen finden Sie unter [Assign Azure AD roles to users (Zuweisen von Azure AD-Rollen zu Benutzern)](https://docs.microsoft.com/graph/security-authorization#assign-azure-ad-roles-to-users).
 
 ## <a name="using-the-microsoft-graph-security-connector"></a>Verwenden des Microsoft Graph-Sicherheits-Connectors
 

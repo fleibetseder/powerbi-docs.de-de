@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 98a1fc1c394a81f743e622ec1756e6501a497fa3
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: cc85fb07f50a42952e9b293908a797b1cbac023f
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699841"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958354"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Power BI kann einem Office 365-Partnerabonnement nicht hinzugefügt werden
 
@@ -48,7 +48,7 @@ Wenn Ihr Partner Power BI nicht anbietet und Sie den Dienst nicht direkt bei Mic
 
 ## <a name="sign-up-for-a-free-trial"></a>Registrieren für eine kostenlose Testversion
 
-Sie können sich für eine kostenlose Testversion von Power BI Pro registrieren. Wenn Sie Power BI Pro am Ende des Testzeitraums nicht erwerben, steht Ihnen dennoch weiterhin eine kostenlose Lizenz zur Verfügung, mit denen Sie viele Power BI-Features nutzen können. Weitere Informationen finden Sie unter [Power BI Free und Pro im Vergleich](service-features-license-type.md).
+Sie können sich für eine kostenlose Testversion von Power BI registrieren. Wenn Sie Power BI Pro am Ende des Testzeitraums nicht erwerben, steht Ihnen dennoch weiterhin eine kostenlose Lizenz zur Verfügung, mit denen Sie viele Power BI-Features nutzen können. Weitere Informationen finden Sie unter [Registrieren für Power BI als Einzelperson](service-self-service-signup-for-power-bi.md).
 
 ### <a name="enable-ad-hoc-subscriptions"></a>Aktivieren von Ad-hoc-Abonnements
 

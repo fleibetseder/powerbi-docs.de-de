@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/15/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e68d886564552d1b1cb2dc9e7c018c65a5cca039
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 1d176941f04bdaf06c9cdeda65271769098268fb
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265209"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999811"
 ---
 # <a name="visuals-in-power-bi"></a>Visuals in Power BI
 
@@ -122,7 +122,7 @@ Sie haben zwei Möglichkeiten zum Herunterladen und Importieren von Power BI-Vis
 
 6. Scrollen Sie nach unten, um Bewertungen anzuzeigen.
 
-    ![Überprüfungen](media/power-bi-custom-visuals/power-bi-reviews.png)
+    ![Bewertungen](media/power-bi-custom-visuals/power-bi-reviews.png)
 
 7. Wählen Sie **Hinzufügen** aus, um das benutzerdefinierte Visual zu importieren. Am unteren Ende des Bereichs **Visualisierungen** wird sein Symbol hinzugefügt, und es kann jetzt in Ihrem Bericht verwendet werden.
 
@@ -168,11 +168,11 @@ Sie haben zwei Möglichkeiten zum Herunterladen und Importieren von Power BI-Vis
 
 ## <a name="troubleshoot"></a>Problembehandlung
 
-Informationen zur Problembehandlung finden Sie unter [Problembehandlung bei Power BI-Visuals in Power BI](power-bi-custom-visuals-troubleshoot.md).
+Informationen zur Problembehandlung finden Sie unter [Problembehandlung bei Power BI-Visuals](power-bi-custom-visuals-troubleshoot.md).
 
 ## <a name="faq"></a>HÄUFIG GESTELLTE FRAGEN
 
-Weitere Informationen und Antworten auf Fragen finden Sie in den [häufig gestellten Fragen zu Power BI-Visuals in Power BI](power-bi-custom-visuals-faq.md#organizational-visuals).
+Weitere Informationen und Antworten auf Fragen finden Sie in den [häufig gestellten Fragen zu Power BI-Visuals](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -9,16 +9,16 @@ ms.topic: quickstart
 ms.date: 10/29/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: ebaf32bbf84dcbb8efd8516fd0a1ab01011f2d63
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 55cdfad221aef276c790e98de83dd844bc13aafe
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698484"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958685"
 ---
 # <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Erwerben und Zuweisen von Power BI Pro-Benutzerlizenzen
 
-Power BI Pro wird als Einzelbenutzerlizenz bereitgestellt, die es Benutzern ermöglicht, von anderen Benutzern im Power BI-Dienst veröffentlichte Berichte und Dashboards zu lesen und mit diesen zu interagieren. Außerdem ist es möglich, Inhalte freizugeben und mit anderen Power BI Pro-Benutzern zusammenzuarbeiten. Nur Benutzer mit einer Power BI Pro-Benutzerlizenz können Inhalte veröffentlichen oder für andere Benutzer freigeben und Inhalte nutzen, die von anderen Benutzern erstellt wurden – es sei denn, diese Inhalte werden in einer Power BI Premium-Kapazität bereitgestellt. Weitere Informationen finden Sie unter [Power BI features by license type (Power BI-Features nach Lizenztyp)](service-features-license-type.md).
+Power BI Pro wird als Einzelbenutzerlizenz bereitgestellt, die es Benutzern ermöglicht, von anderen Benutzern im Power BI-Dienst veröffentlichte Berichte und Dashboards zu lesen und mit diesen zu interagieren. Außerdem ist es möglich, Inhalte freizugeben und mit anderen Power BI Pro-Benutzern zusammenzuarbeiten. Nur Benutzer mit einer Power BI Pro-Benutzerlizenz können Inhalte veröffentlichen oder für andere Benutzer freigeben und Inhalte nutzen, die von anderen Benutzern erstellt wurden – es sei denn, diese Inhalte werden in einer Power BI Premium-Kapazität bereitgestellt. Weitere Informationen finden Sie auf der Website [Power BI – Preise](https://powerbi.microsoft.com/pricing/) im Abschnitt _Vergleich der Power BI-Funktionen_.
 
 ## <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Erwerben und Zuweisen von Power BI Pro-Benutzerlizenzen
 
@@ -54,7 +54,7 @@ Führen Sie diese Schritte aus, um Power BI Pro-Lizenzen im Microsoft 365 Admin 
 
     ![Power BI-Abonnement](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro-04.png)
 
-5. Zeigen Sie auf die Auslassungspunkte ( **...** ) des gewünschten Abonnements, und wählen Sie **Jetzt kaufen** aus.
+5. Zeigen Sie auf die Auslassungspunkte (**...**) des gewünschten Abonnements, und wählen Sie **Jetzt kaufen** aus.
 
     ![Jetzt kaufen](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro-05.png)
 

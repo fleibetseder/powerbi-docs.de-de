@@ -8,16 +8,16 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/22/2019
 ms.author: kfollis
-ms.openlocfilehash: a45cfb20907c96995adf8618cd6dd8ff32194bea
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: be7f95b2bbbd6e5e6314c7fd57869a30c176746c
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699726"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958492"
 ---
 # <a name="power-bi-data-sources"></a>Power BI-Datenquellen
 
-In der folgenden Tabelle werden die von Power BI unterstützten Datenquellen aufgeführt, einschließlich Informationen über DirectQuery und das lokale Datengateway.
+In der folgenden Tabelle werden die von Power BI für Datasets unterstützten Datenquellen aufgeführt, einschließlich Informationen zu DirectQuery und dem lokalen Datengateway. Informationen zu Dataflows finden Sie unter [Herstellen einer Verbindung mit Datenquellen über Power BI-Dataflows](service-dataflows-data-sources.md).
 
 | Datenquellen- | Verbindung vom Desktop aus | Verbindung und Aktualisierung vom Dienst aus | DirectQuery-/Liveverbindung | Gateway (unterstützt) | Gateway (erforderlich) |
 |---|---|---|---|---|---|---|---|
@@ -95,7 +95,7 @@ In der folgenden Tabelle werden die von Power BI unterstützten Datenquellen au
 | Planview Enterprise One – CTM | Ja | Ja | Nein | Nein | Nein |
 | Planview Enterprise One – PRM | Ja | Ja | Nein | Nein | Nein |
 | Planview Projectplace | Ja | Ja | Nein | Nein | Nein |
-| PostgreSQL | Ja | Ja | Nein | Ja | Ja |
+| PostgreSQL | Ja | Ja | Ja | Ja | Ja |
 | Power BI-Dataflows | Ja | Ja | Nein | Nein | Nein |
 | Power BI-Datasets | Ja | Ja | Ja | Nein | Nein |
 | Power Platform-Dataflows | Ja | Ja | Nein | Nein | Nein |

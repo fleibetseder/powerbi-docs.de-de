@@ -1,5 +1,5 @@
 ---
-title: Zertifizierte Power BI-Visuals
+title: Zertifizierte Power BI-Visuals
 description: Anforderungen und Vorgehensweise für das Einreichen eines benutzerdefinierten Visuals zur Zertifizierung Sowie eine Liste bereits zertifizierter Power BI-Visuals.
 author: KesemSharabi
 ms.author: kesharab
@@ -8,92 +8,94 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 05/9/2019
-ms.openlocfilehash: 373d57b871953f1afe02212ff0a1bbdb633cac4d
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.date: 12/02/2019
+ms.openlocfilehash: 0a39496ade27cd45fae116eea92ef4b472e04582
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565255"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999742"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>So lassen Sie sich ein Power BI-Visual zertifizieren
 
-## <a name="what-are-_certified_-power-bi-visuals"></a>Was sind **_zertifizierte_** Power BI-Visuals?
+Zertifizierte Power Bi-Visuals sind Visuals im *Marketplace*, die bestimmte *festgelegte Codeanforderungen* erfüllen, die vom *Microsoft Power BI-Team* getestet und genehmigt wurden. Mit den Tests wird sichergestellt, dass ein Visual nicht auf externe Dienste oder Ressourcen zugreift.
 
-Zertifizierte Power Bi-Visuals sind Visuals im **Marketplace**, die bestimmte **festgelegte Codeanforderungen** erfüllen, die vom **Microsoft Power BI-Team** getestet und genehmigt wurden. Sobald ein benutzerdefiniertes Visual zertifiziert wurde, bietet es mehr Funktionen. Beispielsweise können Sie [PowerPoint exportieren](../consumer/end-user-powerpoint.md) und das Visual in E-Mails anzeigen, die Sie erhalten, wenn ein Benutzer [Berichtsseiten abonniert](../consumer/end-user-subscribe.md).
+Zertifizierte Power BI-Visuals und [Power BI-Standardvisuals](power-bi-custom-visuals.md) werden auf die gleiche Weise verwendet. Sie können zu [Power BI Desktop](../desktop-what-is-desktop.md) und dem [Power BI-Dienst](../power-bi-service-overview.md) hinzugefügt und mit [mobilen Power BI-Apps](../consumer/mobile/mobile-apps-for-mobile-devices.md) sowie [Power BI Embedded](embedding.md) angezeigt werden.
 
-**Zertifizierte Power BI-Visuals** werden genauso wie [Standardvisuals für Power BI](power-bi-custom-visuals.md) verwendet. Zertifizierte Power BI-Visuals können dem **Power BI-Dienst** oder einem **Power BI Desktop-Bericht** hinzugefügt werden und in **Power BI Mobile** sowie **Power BI Embedded** angezeigt werden.
+Der Zertifizierungsprozess ist optional. Entwickler entscheiden selbst, ob sie ihr Power BI-Visual im Marketplace zertifizieren lassen möchten. Wenn ein Power BI-Visual zertifiziert wurde, bietet es mehr Features. Beispielsweise können Sie ein Visual [nach PowerPoint exportieren](../consumer/end-user-powerpoint.md) oder in empfangenen E-Mails anzeigen, wenn ein Benutzer [Berichtsseiten abonniert](../consumer/end-user-subscribe.md).
 
-Die durchgeführten Tests wurden entworfen, um zu überprüfen, ob das Visual nicht auf externe Dienste oder Ressourcen zugreift. **Microsoft** ist *nicht* der Autor von Power BI-Visuals von Drittanbietern, und Kunden wird empfohlen, direkt mit dem Autor Kontakt aufzunehmen, um die Funktionalität eines solchen Visuals zu überprüfen.
+Nicht zertifizierte Power BI-Visuals sind nicht zwangsläufig unsicher. Einige Visuals sind nicht zertifiziert, da sie mindestens einem Punkt der [Zertifizierungsanforderungen](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements) nicht entsprechen. Beispiele hierfür sind die Herstellung einer Verbindung zu einem externen Dienst wie Kartenvisuals oder Visuals, die kommerzielle Bibliotheken verwenden.
 
-Dieser Zertifizierungsprozess ist ein optionaler Prozess, und es obliegt den Entwicklern zu entscheiden, ob ihr Visual im Marketplace zertifiziert werden soll.  
+Wenn Sie Webentwickler sind und selbst Power BI-Visuals erstellen und zu [Microsoft AppSource](https://appsource.microsoft.com) hinzufügen möchten, beginnen Sie mit dem Tutorial  [Entwickeln eines Power BI-Visuals](visuals/custom-visual-develop-tutorial.md).
 
-**Nicht zertifizierte Power BI-Visuals** sind nicht zwangsläufig unsicher. Einige Visuals sind nicht zertifiziert, da sie mindestens einem Punkt der [Zertifizierungsanforderungen](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements) nicht entsprechen. Beispiele hierfür sind die Herstellung einer Verbindung zu einem externen Dienst wie Kartenvisuals oder Visuals, die kommerzielle Bibliotheken verwenden.
+> [!NOTE]
+> **Microsoft** ist *nicht* der Autor von Power BI-Visuals von Drittanbietern. Wir raten Kunden, direkt mit dem Autor eines Drittanbieter-Power BI-Visuals Kontakt aufzunehmen, um die Funktionalität des Visuals zu verifizieren.
 
-Sind Sie Webentwickler und möchten eigene Visualisierungen erstellen und zu  **[Microsoft AppSource](https://appsource.microsoft.com)** hinzufügen? Weitere Informationen finden Sie unter  **[Entwickeln eines benutzerdefinierten Visuals für Power BI](visuals/custom-visual-develop-tutorial.md)** .
+> [!IMPORTANT]
+> Microsoft kann ein Power BI-Visual nach eigenem Ermessen aus der [Liste zertifizierter Visuals](#list-of-power-bi-visuals-that-have-been-certified) entfernen.
 
-## <a name="removal-of-power-bi-certified-power-bi-visuals"></a>Entfernen von Power BI-Visuals mit Power BI-Zertifizierung
+## <a name="certification-requirements"></a>Zertifizierungsanforderungen
 
-Microsoft kann nach eigenem Ermessen ein Visual aus der Liste [zertifizierter Visuals](#list-of-power-bi-visuals-that-have-been-certified) entfernen.
-
-## <a name="getting-a-custom-visualcertified"></a>Abrufen eines zertifizierten benutzerdefinierten Visuals
-
-### <a name="certification-requirements"></a>Zertifizierungsanforderungen
-
-Stellen Sie sicher, dass Ihr benutzerdefiniertes Visual folgenden Anforderungen entspricht, damit es [zertifiziert](#get-a-power-bi-visual-certified) werden kann:  
-
-* Es muss von Microsoft AppSource genehmigt sein. Ihr benutzerdefiniertes Visual sollte sich in unserem [Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) befinden.
-* Das benutzerdefinierte visuelle Element wurde mit der **API-Version 2.5** oder höher geschrieben.
-* Das Coderepository muss dem Power BI-Team zur Überprüfung zur Verfügung stehen (z.B. Quellcode – JavaScript oder TypeScript – in einem uns verfügbaren Format in GitHub, das für Menschen lesbar ist).
-
-    >[!Note]
-    > Sie müssen Ihren Code nicht öffentlich in GitHub freigeben.
-* Coderepository-Anforderungen:
-   * Der minimal erforderliche Satz von Dateien muss enthalten sein:
-      * .gitignore
-      * capabilities.json
-      * pbiviz.json
-      * package.json
-      * package-lock.json
-      * tsconfig.json
-   * Der Ordner „node_modules“ darf nicht enthalten sein (fügen Sie „node_modules“ der GITIGNORE-Datei hinzu)
-   * Der **npm install**-Befehl darf keine Fehler zurückgeben.
-   * Der **npm audit**-Befehl darf keine Warnungen mit hoher oder mittlerer Stufe zurückgeben.
-   * Der **pbiviz package**-Befehl darf keine Fehler zurückgeben.
-   * [TSlint from Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) muss ohne außer Kraft gesetzte Konfigurationen enthalten sein, und dieser Befehl darf keine lint-Fehler zurückgeben.
-   * Das kompilierte Paket des benutzerdefinierten visuellen Elements muss mit dem gesendeten Paket übereinstimmen (die md5-Hashwerte beider Dateien sollten gleich sein).
-* Quellcode-Anforderungen:
-   * Das visuelle Element muss die [Rendering Events-API](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/) unterstützen.
-   * Stellen Sie sicher, dass kein beliebiger/dynamischer Code ausgeführt wird (bad: eval(), unsafe to use of settimeout(), requestAnimationFrame(), setinterval(eine Funktion mit Benutzereingaben), Ausführen von Benutzereingaben/-daten).
-   * Stellen Sie sicher, dass DOM sicher bearbeitet wird (bad: innerHTML, D3.html(<Benutzer-/Dateneingabe>), Bereinigung für Benutzereingaben/Daten vor dem Hinzufügen zum DOM verwenden).
-   * Stellen Sie sicher, dass es in der Browserkonsole keine JavaScript-Fehler/-Ausnahmen für Eingabedaten gibt. Benutzer verwenden Ihr visuelles Element möglicherweise mit einem anderen, unerwarteten Datenbereich, dabei darf das visuelle Element nicht versagen. Sie können [diesen Beispielbericht](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) als Testdataset verwenden.
-
-* Wenn Eigenschaften in „capabilities.json“ geändert werden, stellen Sie sicher, dass sie nicht zu Störungen bei vorhandenen Benutzerberichten führen.
-
-* Achten Sie darauf, dass das visuelle Element die [Richtlinien für Power BI-Visuals](./guidelines-powerbi-visuals.md) einhält. **Wasserzeichen sind nicht zulässig**.
-
-* Ihr Visual darf nur öffentlich überprüfbare OSS-Komponenten besitzen (öffentliche JS-Bibliotheken oder TypeScript. Der Quellcode ist für die Überprüfung verfügbar und besitzt keine bekannten Sicherheitsrisiken). Wir können überprüfen, ob ein benutzerdefiniertes Visual eine kommerzielle Komponente verwendet.
-
-* Das Visual greift nicht auf externe Dienste oder Ressourcen zu. Unter anderem gehen keine HTTP/S- oder WebSocket-Anforderungen von Power BI oder anderen Diensten aus. 
+Um Ihr Power BI-Visual [zertifizieren](#get-a-power-bi-visual-certified) zu lassen, stellen Sie sicher, dass das Visual die in diesem Abschnitt aufgeführten Anforderungen erfüllt. 
 
 > [!TIP]
-> Es wird empfohlen, dass Sie EsLint mit dem standardmäßigen verwendeten Sicherheitsregelsatz nutzen, um Ihren Code vor der Einreichung zu überprüfen.
+> Wir empfehlen die Nutzung von EsLint mit dem standardmäßigen Sicherheitsregelsatz, um Ihren Code vor der Übermittlung vorab zu überprüfen.
 
-## <a name="process-for-submitting-a-custom-visual-for-certification"></a>Vorgang zum Einreichen eines benutzerdefinierten visuellen Elements zur Zertifizierung
+* Im Microsoft-Verkäuferdashboard oder in Partner Center genehmigt: Ihr Power BI-Visual sollte sich in unserem [Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) befinden.
+* Das Power BI-Visual wurde mit der *API-Version 2.5* oder höher geschrieben.
+* Das Coderepository kann durch das Power BI-Team überprüft werden. Beispielsweise kann dem Team über GitHub ein lesbares Format des Quellcodes (JavaScript oder TypeScript) zur Verfügung gestellt werden.
 
-So reichen Sie ein benutzerdefiniertes visuelles Element zur Zertifizierung ein
+    >[!NOTE]
+    > Sie müssen Ihren Code nicht öffentlich in GitHub freigeben.
 
-1. Senden Sie eine E-Mail an den Power BI-Support für Power BI-Visuals (pbicvsupport@microsoft.com). Fügen Sie der E-Mail die folgende Informationen hinzu:
-    * Titel: Zertifizierungsanforderung für Visual
-    * Link zum GitHub-Repository, in dem der vom Menschen lesbare Quellcode gehostet wird
-    * [Befolgen der Anforderungen](#certification-requirements)
-    * Übergeben des Codereviews
+* Coderepository-Anforderungen:
+  * Folgende Dateien müssen enthalten sein:
+    * .gitignore
+    * capabilities.json
+    * pbiviz.json
+    * package.json
+    * package-lock.json
+    * tsconfig.json
+  * Der Ordner *node_modules* darf nicht enthalten sein (fügen Sie *node_modules* zur GITIGNORE-Datei hinzu).
+  * Der Befehl *npm install* darf keine Fehler zurückgeben.
+  * Der Befehl *npm audit* darf keine Warnungen mit hohem oder mittlerem Schweregrad zurückgeben.
+  * Der Befehl *pbiviz package* darf keine Fehler zurückgeben.
+  * [TSlint von Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) muss ohne überschriebene Konfigurationen enthalten sein. Dieser Befehl darf keine lint-Fehler zurückgeben.
+   * Das kompilierte Paket des Power BI-Visuals muss mit dem übermittelten Paket übereinstimmen (die md5-Hashwerte beider Dateien müssen gleich sein).
+* Quellcode-Anforderungen:
+   * Das Power BI-Visual muss die [API zum Rendern von Ereignissen](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/) unterstützen.
+   * Stellen Sie sicher, dass kein beliebiger/dynamischer Code ausgeführt wird (bad: eval(), unsafe to use of settimeout(), requestAnimationFrame(), setinterval(eine Funktion mit Benutzereingaben), Ausführen von Benutzereingaben/-daten).
+   * Stellen Sie sicher, dass DOM sicher bearbeitet wird (bad: innerHTML, D3.html(<Benutzer-/Dateneingabe>), Bereinigung für Benutzereingaben/Daten vor dem Hinzufügen zum DOM verwenden).
+   * Stellen Sie sicher, dass die Browserkonsole keinerlei JavaScript-Fehler oder -Ausnahmen für Eingabedaten ausgibt. Benutzer verwenden Ihr Power BI-Visual möglicherweise mit einem anderen, unerwarteten Datenbereich, für den beim Visual keine Fehler auftreten dürfen. Sie können diesen [Beispielbericht](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) als Testdataset verwenden.
 
-2. Das Microsoft-Team für Power BI-Visuals benachrichtigt Sie, sobald Ihr benutzerdefiniertes Visual zertifiziert und der [Liste der zertifizierten Visuals](#list-of-power-bi-visuals-that-have-been-certified) hinzugefügt wurde oder mit einem Bericht zu den zu behebenden Problemen abgelehnt wurde. Es ist Aufgabe des Entwicklers, eine offene Kommunikation mit Microsoft zu pflegen und seine zertifizierten Visuals bei Bedarf zu aktualisieren.
+* Wenn Eigenschaften in *capabilities.json* geändert werden, stellen Sie sicher, dass diese keine zu Störungen bei vorhandenen Benutzerberichten verursachen.
+
+* Achten Sie darauf, dass Ihr Power BI-Visual den [Richtlinien für Power BI-Visuals](./guidelines-powerbi-visuals.md) entspricht.
+    
+* Ihr Code darf nur öffentlich überprüfbare OSS-Komponenten wie öffentliche JavaScript- oder TypeScript-Bibliotheken verwenden. Der Quellcode muss zur Überprüfung verfügbar sein und darf keine bekannten Sicherheitsrisiken aufweisen. Wir können überprüfen, ob ein benutzerdefiniertes Visual eine kommerzielle Komponente verwendet.
+
+* Das Power BI-Visual darf nicht auf externe Dienste oder Ressourcen zugreifen. Beispielsweise dürfen aus Power BI keine HTTP/S- oder WebSocket-Anforderungen an Dienste gesendet werden. 
+
+## <a name="submitting-a-power-bi-visual-for-certification"></a>Übermitteln eines Power BI-Visual zur Zertifizierung
+
+Sie können über Partner Center eine Zertifizierung Ihres Power BI-Visuals durch das Power BI-Team anfordern.
+
+>[!TIP]
+>Der Zertifizierungsprozess für ein Power BI-Visual kann einige Zeit in Anspruch nehmen. Wenn Sie ein neues Power BI-Visual erstellen, empfiehlt es sich, dieses über Partner Center zu veröffentlichen, bevor Sie eine Power BI-Zertifizierung anfordern. Damit wird sichergestellt, dass sich die Veröffentlichung Ihres Visuals nicht verzögert.
+
+So fordern Sie eine Power BI-Zertifizierung an:
+
+1. Melden Sie sich bei Partner Center an.
+2. Wählen Sie auf der **Übersichtsseite** Ihre Power BI-Visual aus, und wechseln Sie zur Seite **Produkteinrichtung**.
+3. Aktivieren Sie das Kontrollkästchen **Power BI-Zertifizierung anfordern**.
+4. Geben Sie auf der Seite **Überprüfen und veröffentlichen** im Textfeld **Hinweise für Zertifizierung** einen Link zum Quellcode sowie die Anmeldeinformationen für den Zugriff darauf an.
+
+>[!NOTE]
+> Wenn Sie sich gerade mitten im Übermittlungsprozess für ein Power BI-Visual befinden und das [Verkäuferdashboard](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) (das alte Verwaltungstool) verwenden müssen, lesen Sie die Anweisungen für den [Übermittlungsprozess für die Zertifizierung auf dem Verkäuferdashboard](seller-dashboard.md#seller-dashboard-certification-submission-process).
 
 ## <a name="list-of-power-bi-visuals-that-have-been-certified"></a>Liste der Power BI-Visuals mit Zertifizierung
 
-| Link zu AppSource | Link zum Video |
+| Link | Video |
 | --- | --- |
 | [3AG Systems – Bar Chart With Relative Variance (3AG Systems: Balkendiagramm mit relativer Varianz)](https://appsource.microsoft.com/en/product/power-bi-visuals/WA104381912) | |
 | [3AG Systems – Column Chart With Relative Variance (3AG Systems: Säulendiagramm mit relativer Varianz)](https://appsource.microsoft.com/product/power-bi-visuals/WA104381803) | |

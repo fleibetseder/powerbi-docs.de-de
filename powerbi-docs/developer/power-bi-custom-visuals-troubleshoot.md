@@ -1,5 +1,5 @@
 ---
-title: Problembehandlung bei der Entwicklung von Power BI-Visuals
+title: Problembehandlung bei der Entwicklung von Power BI-Visuals
 description: In diesem Artikel werden einige häufige Probleme erläutert, die beim Entwickeln oder Erstellen eines benutzerdefinierten Power BI-Visuals auftreten können.
 author: KesemSharabi
 ms.author: kesharab
@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.topic: troubleshooting
 ms.subservice: powerbi-custom-visuals
 ms.date: 11/06/2018
-ms.openlocfilehash: e28df5035e057d485a8122853f6ae88327e3045f
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: c2680a5818488a7822f38b8286a3e5a1782a487a
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74127763"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999765"
 ---
-# <a name="troubleshoot-power-bi-power-bi-visuals"></a>Problembehandlung bei Power BI-Visuals
+# <a name="troubleshoot-power-bi-visuals"></a>Problembehandlung bei Power BI-Visuals
 
 ## <a name="debug"></a>Debuggen
 
@@ -38,8 +38,8 @@ Wenn sie nicht angezeigt wird, vergewissern Sie sich, dass Sie sie in den Power 
 
 Führen Sie den Server für Visuals mit dem Befehl `pbiviz start` über die Befehlszeile Ihres Terminals im Stammverzeichnis des Visualprojekts aus. Wenn der Server nicht ausgeführt wird, wurden vermutlich die SSL-Zertifikate nicht ordnungsgemäß installiert.
 
-Zögern Sie nicht, sich mit Fragen, Kommentaren oder Problemen an das Power BI-Visuals-Supportteam zu wenden: *pbicvsupport@microsoft.com*  .
+Zögern Sie nicht, sich mit Fragen, Kommentaren oder Problemen an das Power BI-Visuals-Supportteam zu wenden: *pbicvsupport@microsoft.com* .
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Weitere Informationen finden Sie in den [häufig gestellten Fragen zu Power BI-Visuals](power-bi-custom-visuals-faq.md#organizational-visuals).
+Weitere Informationen finden Sie in den [häufig gestellten Fragen zu Power BI-Visuals](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals).

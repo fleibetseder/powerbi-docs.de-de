@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 8789986e94c860bffc622d903e33b4f1edabdd2d
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 1f350e8ff888ffc2fd95e6c47bf84ccc96ebf88b
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74696162"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000156"
 ---
 # <a name="auto-datetime-in-power-bi-desktop"></a>Automatische Angabe von Datum/Uhrzeit in Power BI Desktop
 
@@ -36,7 +36,7 @@ Jede automatische Datums-/Uhrzeittabelle ist tatsächlich eine [berechnete Tabel
 
 Power BI Desktop erstellt außerdem eine Beziehung zwischen der Spalte **Date** der Tabelle mit automatischen Datums-/Zeitangaben und der Datumsspalte im Modell.
 
-Die automatische Datums-/Uhrzeittabelle enthält vollständige Kalenderjahre, die alle in der Datumsspalte des Modells gespeicherten Daten umfassen. Wenn das früheste Datum in einer Datumsspalte beispielsweise der 20. März 2016 und das späteste Datum der 23. Oktober 2019 ist, enthält die Tabelle 1.461 Zeilen. Jede Zeile repräsentiert ein Datum in den vier Kalenderjahren 2016 bis 2019. Wenn Power BI das Modell aktualisiert, wird auch jede automatische Datums-/Uhrzeittabelle aktualisiert. So wird sichergestellt, dass die Tabellen Daten enthalten, die die Werte der Datumsspalte umfassen.
+Die automatische Datums-/Uhrzeittabelle enthält vollständige Kalenderjahre, die alle in der Datumsspalte des Modells gespeicherten Daten umfassen. Wenn das früheste Datum in einer Datumsspalte beispielsweise der 20. März 2016 und das späteste Datum der 23. Oktober 2019 ist, enthält die Tabelle 1.461 Zeilen. Jede Zeile repräsentiert ein Datum in den vier Kalenderjahren 2016 bis 2019. Wenn Power BI das Modell aktualisiert, wird jede automatische Datums-/Uhrzeittabelle ebenfalls aktualisiert. Auf diese Weise enthält das Modell immer Daten, die Werte der Datumsspalte umfassen.
 
 Wenn es möglich war, die Zeilen einer automatischen Datums-/Uhrzeittabelle anzuzeigen, könnten sie so aussehen:
 
@@ -93,7 +93,8 @@ Klicken Sie in Power BI Desktop auf _Datei > Optionen und Einstellungen > Option
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Weitere Informationen zur Option „Autom. Datum/Uhrzeit“ und verwandten Themen finden Sie in den folgenden Ressourcen:
+Weitere Informationen zu diesem Artikel finden Sie in den folgenden Ressourcen:
 
+- [Automatische Angabe von Datum/Uhrzeit in Power BI Desktop](guidance/auto-date-time.md)
 - [Festlegen und Verwenden von Datumstabellen in Power BI Desktop](desktop-date-tables.md)
 - Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

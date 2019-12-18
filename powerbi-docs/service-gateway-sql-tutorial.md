@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
-ms.openlocfilehash: 0ab5831cb1cf4af28a56711475b7ba6a5683b5d5
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 100417202fca148be0e2e976ce0cd84167c803d9
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699312"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958432"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Aktualisieren von Daten aus einer lokalen SQL Server-Datenbank
 
@@ -49,6 +49,10 @@ Gehen Sie folgendermaßen vor, um mithilfe der AdventureWorksDW-Beispieldatenban
 2. Geben Sie im Dialogfeld **SQL Server-Datenbank** die Namen von **Server** und **Datenbank (optional)** ein, stellen Sie sicher, dass als **Datenkonnektivitätsmodus** die Option **Import** ausgewählt ist, und klicken Sie dann auf **OK**.
 
     ![SQL Server-Datenbank](./media/service-gateway-sql-tutorial/sql-server-database.png)
+
+    In diesem Tutorial verwenden wir keine **erweiterten Optionen**, Sie können aber eine SQL-Anweisung angeben und andere Optionen wie beispielsweise die Verwendung von [SQL Server-Failover](/sql/database-engine/availability-groups/windows/failover-clustering-and-always-on-availability-groups-sql-server) festlegen.
+
+    ![Erweiterte SQL Server-Optionen](media/service-gateway-sql-tutorial/sql-server-advanced-options.png)
 
 3. Überprüfen Sie Ihre **Anmeldeinformationen**, und klicken Sie auf **Verbinden**.
 
@@ -130,7 +134,7 @@ Sie haben in Power BI Desktop eine direkte Verbindung mit Ihrer lokalen SQL Serv
 
 Nachdem Sie in Power BI nun lokal über ein Datengateway eine Verbindung zwischen Ihrem Dataset und Ihrer SQL Server-Datenbank hergestellt haben, konfigurieren Sie mithilfe der folgenden Schritte einen Aktualisierungszeitplan. Durch die Aktualisierung Ihres Datasets nach einem Zeitplan können Sie sicherstellen, dass Ihre Berichte und Dashboards über die aktuellen Daten verfügen.
 
-1. Öffnen Sie im Navigationsbereich **Mein Arbeitsbereich** \> **Datasets**. Wählen Sie die Auslassungspunkte ( **. . .** ) für das Dataset **AdventureWorksProducts** aus, und klicken Sie dann auf **Zeitplanaktualisierung**.
+1. Öffnen Sie im Navigationsbereich **Mein Arbeitsbereich** \> **Datasets**. Wählen Sie die Auslassungspunkte (**. . .**) für das Dataset **AdventureWorksProducts** aus, und klicken Sie dann auf **Zeitplanaktualisierung**.
 
     > [!NOTE]
     > Stellen Sie sicher, dass Sie die Auslassungspunkte für das Dataset **AdventureWorksProducts** und nicht die Auslassungspunkte für den Bericht mit dem gleichen Namen auswählen. Das Kontextmenü des Berichts **AdventureWorksProducts** umfasst nicht die Option **Zeitplanaktualisierung**.
@@ -164,7 +168,7 @@ Führen Sie nun die folgenden Schritte aus, damit die aktualisierten Daten über
 
 1. Wählen Sie im Power BI-Dienst im Navigationsbereich die Option **Mein Arbeitsbereich** aus, und erweitern Sie diese.
 
-2. Wählen Sie unter **Datasets** die Auslassungspunkte ( **. . .** ) für das Dataset **AdventureWorksProducts** aus, und klicken Sie dann auf **Jetzt aktualisieren**.
+2. Wählen Sie unter **Datasets** die Auslassungspunkte (**. . .**) für das Dataset **AdventureWorksProducts** aus, und klicken Sie dann auf **Jetzt aktualisieren**.
 
     ![Jetzt aktualisieren](./media/service-gateway-sql-tutorial/refresh-now.png)
 

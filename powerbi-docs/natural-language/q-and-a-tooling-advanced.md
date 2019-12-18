@@ -7,19 +7,19 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/18/2019
 ms.author: mohaali
-ms.openlocfilehash: d1ae995c3e98befe776ac091a0312e281e97022e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 64a6294ca30901c61928eca068ab4ebbb3d39638
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875331"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958515"
 ---
 # <a name="edit-qa-linguistic-schema-and-add-phrasings-in-power-bi-desktop"></a>Bearbeiten des linguistischen Schemas für Q&A und Hinzufügen von Ausdrücken in Power BI Desktop 
 Indem Sie gängige Ausdrücke und natürliche Sprache verwenden, können Sie Ihre Daten effizient auswerten. Noch besser können Sie profitieren, wenn Ihre Daten Antworten liefern. Wenn Sie Power BI eine Frage stellen, bemüht sich das Programm, diese richtig zu beantworten. Für eine noch bessere Interaktion mit Q&A können Sie die Antworten optimieren. Eine Möglichkeit hierzu besteht darin, das linguistische Schema zu bearbeiten. 
 
-Alles beginnt mit Ihren Unternehmensdaten.  Je besser das Datenmodell, desto einfacher ist es für Benutzer, qualitativ hochwertige Antworten zu erhalten. Eine Möglichkeit zur Verbesserung des Modells besteht darin, ein linguistisches Schema hinzuzufügen, das Terminologie und Beziehungen zwischen Tabellen- und Spaltennamen in Ihrem Dataset definiert und kategorisiert. Ihre linguistischen Schemas verwalten Sie mit Power BI Desktop. 
+Alles beginnt mit Ihren Unternehmensdaten.  Je besser das Datenmodell, desto einfacher ist es für Benutzer, qualitativ hochwertige Antworten zu erhalten. Eine Möglichkeit zur Verbesserung des Modells besteht darin, ein linguistisches Schema hinzuzufügen, das Terminologie und Beziehungen zwischen Tabellen- und Spaltennamen in Ihrem Dataset definiert und kategorisiert. Ihre linguistischen Schemas verwalten Sie mit Power BI Desktop. 
 
-Bei Q&A gibt es zwei Seiten.  Die erste Seite besteht in der Vorbereitung oder *Modellierung*.  Die zweite Seite ist das Stellen von Fragen und das Erkunden der Daten, die *Nutzung*. In einigen Unternehmen können Mitarbeiter, die als *Datenmodellierer* oder IT-Administratoren fungieren, die Datasets zusammenstellen, die Datenmodelle erstellen und die Datasets in Power BI veröffentlichen.  Eine andere Gruppe von Mitarbeitern, die „Consumer“, nutzen die Daten online.  In anderen Unternehmen werden diese Rollen ggf. kombiniert. 
+Bei Q&A gibt es zwei Seiten.  Die erste Seite besteht in der Vorbereitung oder *Modellierung*.  Die zweite Seite ist das Stellen von Fragen und das Erkunden der Daten, die *Nutzung*. In einigen Unternehmen können Mitarbeiter, die als *Datenmodellierer* oder IT-Administratoren fungieren, die Datasets zusammenstellen, die Datenmodelle erstellen und die Datasets in Power BI veröffentlichen.  Eine andere Gruppe von Mitarbeitern, die „Consumer“, nutzen die Daten online.  In anderen Unternehmen werden diese Rollen ggf. kombiniert. 
 
 Dieser Artikel richtet sich an Datenmodellierer – also Personen, die Datasets optimieren, um die bestmöglichen Q&A-Ergebnisse zu erzielen. 
 

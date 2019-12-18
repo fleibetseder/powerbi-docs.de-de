@@ -9,18 +9,18 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/11/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8c28c5ee89ffee37c09db8dc6ffcd6fb90274786
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: f11636de003aaab2d10d595b3c2b0230e373410c
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74102086"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999834"
 ---
 # <a name="organizational-visuals-in-power-bi"></a>Visuals für Organisationen in Power BI
 
 Sie können Power BI-Visuals in Power BI verwenden, um einen einzigartigen Typ von Visual zu erstellen, der auf Ihre Zwecke zugeschnitten ist. Power BI-Visuals werden von Entwicklern erstellt. Der Grund dafür ist oft, dass die Visuals, die in Power BI enthalten sind, deren Anforderungen nicht ganz erfüllen.
 
-In einigen Organisationen sind Power BI-Visuals sogar noch wichtiger, da sie notwendig sein können, um bestimmte Daten oder Einsichten zu übermitteln, die für die Organisation einzigartig sind. Sie können ebenfalls spezielle Anforderungen für Daten enthalten oder private Geschäftsmethoden hervorheben. Solche Organisationen müssen Power BI-Visuals entwickeln, diese innerhalb der Organisation freigeben und sicherstellen, dass sie ordnungsgemäß verwaltet werden. Durch benutzerdefinierte Power BI-Visuals in Power BI können Organisationen dies erreichen.
+In einigen Organisationen sind Power BI-Visuals sogar noch wichtiger, da sie notwendig sein können, um bestimmte Daten oder Einsichten zu übermitteln, die für die Organisation einzigartig sind. Sie können ebenfalls spezielle Anforderungen für Daten enthalten oder private Geschäftsmethoden hervorheben. Solche Organisationen müssen Power BI-Visuals entwickeln, diese innerhalb der Organisation freigeben und sicherstellen, dass sie ordnungsgemäß verwaltet werden. Durch Power BI-Visuals können Organisationen dies erreichen.
 
 Die folgende Abbildung stellt den Prozess dar, den Power BI-Visuals für Organisationen in Power BI durchlaufen. Dieser beginnt beim Administrator, wird in der Entwicklung und Verwaltung fortgesetzt und endet beim Datenanalysten.
 
@@ -55,10 +55,10 @@ Benutzer:
 
 ## <a name="troubleshoot"></a>Problembehandlung
 
-Informationen zur Problembehandlung finden Sie auf der Seite [Problembehandlung für Power BI-Visuals in Power BI](power-bi-custom-visuals-troubleshoot.md).
+Informationen zur Problembehandlung finden Sie auf der Seite [Problembehandlung bei Power BI-Visuals](power-bi-custom-visuals-troubleshoot.md).
 
 ## <a name="faq"></a>HÄUFIG GESTELLTE FRAGEN
 
-Weitere Informationen und Antworten auf Fragen finden Sie in den [häufig gestellten Fragen zu Power BI-Visuals in Power BI](power-bi-custom-visuals-faq.md#organizational-visuals).
+Weitere Informationen und Antworten auf Fragen finden Sie in den [häufig gestellten Fragen zu Power BI-Visuals](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals).
 
 Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/).

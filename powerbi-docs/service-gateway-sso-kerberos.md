@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/10/2019
+ms.date: 12/03/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 4ce5eab22538b7abdded2759a4a072fd500575ea
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 889fbce483f839147677789c73d826fa23542731
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699220"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000110"
 ---
 # <a name="configure-kerberos-based-sso-from-power-bi-service-to-on-premises-data-sources"></a>Konfigurieren des Kerberos-basierten einmaligen Anmeldens (Single Sign-On, SSO) im Power BI-Dienst bei lokalen Datenquellen
 
@@ -66,6 +66,22 @@ Ermitteln Sie zunächst, ob bereits ein SPN für das Domänenkonto erstellt wurd
    ```setspn -a gateway/MyGatewayMachine Contoso\GatewaySvc```
 
    Sie können den SPN auch über das MMC-Snap-In **Active Directory-Benutzer und -Computer** festlegen.
+   
+### <a name="add-gateway-service-account-to-windows-authorization-and-access-group-if-required"></a>Hinzufügen eines Gatewaydienstkontos zur Windows-Autorisierungs- und -Zugriffsgruppe bei Bedarf
+
+In einigen Szenarien muss das Gatewaydienstkonto zur Windows-Autorisierungs- und -Zugriffsgruppe hinzugefügt werden. Hierzu gehören Szenarien der Sicherheitshärtung der Active Directory-Umgebung sowie Situationen, in denen sich das Gatewaydienstkonto und die Benutzerkonten, deren Identität das Gateway annimmt, in getrennten Domänen oder Gesamtstrukturen befinden. Sie können das Gatewaydienstkonto auch dann zur Windows-Autorisierungs- und -Zugriffsgruppe hinzufügen, wenn für die Domäne bzw. Gesamtstruktur keine Härtung erfolgt ist, dies ist aber nicht erforderlich.
+
+Weitere Informationen finden Sie unter [Windows-Autorisierungs- und -Zugriffsgruppe](/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-winauthaccess).
+
+Um diesen Konfigurationsschritt abzuschließen, gehen Sie bei jeder Domäne mit Active Directory-Benutzern, deren Identität das Gatewaydienstkonto annehmen soll, folgendermaßen vor:
+1. Melden Sie sich bei einem Computer in der Domäne an, und starten Sie das MMC-Snap-In „Active Directory-Benutzer und -Computer“.
+2. Suchen Sie die **Windows-Autorisierungs- und Zugriffsgruppe**. Diese befindet sich in der Regel im Container **Builtin**.
+3. Doppelklicken Sie auf die Gruppe, und klicken Sie auf die Registerkarte **Mitglieder**.
+4. Klicken Sie auf **Hinzufügen**, und ändern Sie den Domänenstandort zu der Domäne, in der sich das Gatewaydienstkonto befindet.
+5. Geben Sie den Namen des Gatewaydienstkontos an, und klicken Sie auf **Namen überprüfen**, um zu überprüfen, ob auf das Gatewaydienstkonto zugegriffen werden kann.
+6. Klicken Sie auf **OK**.
+7. Klicken Sie auf **Übernehmen**.
+8. Starten Sie den Gatewaydienst neu.
 
 ### <a name="decide-on-the-type-of-kerberos-constrained-delegation-to-use"></a>Festlegen des Typs der eingeschränkten Kerberos-Delegierung
 
@@ -173,7 +189,7 @@ Abschließend müssen dem Gatewaydienstkonto auf dem Computer, auf dem der Gatew
 
 1. Führen Sie auf dem Gatewaycomputer **gpedit.msc** aus.
 
-2. Navigieren Sie zu **Richtlinie für „Lokaler Computer“** &gt;**Computerkonfiguration**&gt;**Windows-Einstellungen**&gt;**Sicherheitseinstellungen**&gt;**Lokale Richtlinien**&gt;**Zuweisen von Benutzerrechten**.
+2. Navigieren Sie zu **Richtlinie für „Lokaler Computer“**&gt;**Computerkonfiguration**&gt;**Windows-Einstellungen**&gt;**Sicherheitseinstellungen**&gt;**Lokale Richtlinien**&gt;**Zuweisen von Benutzerrechten**.
 
     ![Ordnerstruktur der Richtlinie für den lokalen Computer](media/service-gateway-sso-kerberos/user-rights-assignment.png)
 

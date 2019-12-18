@@ -1,29 +1,38 @@
 ---
 title: Was sind Power BI-Vorlagen-Apps?
 description: Dieser Artikel enthält eine Übersicht über Vorlagen-Apps in Power BI. Erfahren Sie, wie Sie Power BI-Apps ohne oder mit nur wenig Code erstellen, und diese dann für Power BI-Kunden bereitstellen.
-author: teddybercovitz
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/24/2019
-ms.author: tebercov
-ms.openlocfilehash: 4b4e32f787d2d262d604ff0745f8c028e9fff949
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/08/2019
+ms.author: painbar
+ms.openlocfilehash: f519665c78f8c96452091edb84ae9a40f9dc01ba
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871318"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000005"
 ---
 # <a name="what-are-power-bi-template-apps"></a>Was sind Power BI-Vorlagen-Apps?
 
 Mit den neuen *Vorlagen-Apps* von Power BI können Power BI-Partner Power BI-Apps ohne oder mit nur wenig Code erstellen und für Power BI-Kunden bereitstellen.  Dieser Artikel enthält eine Übersicht über Vorlagen-Apps in Power BI.
 
-Vorlagen-Apps sind ein Ersatz für die aktuellen Dienstinhaltspakete. Als Power BI-Partner erstellen Sie sofort verfügbare Inhalte für Ihre Kunden und veröffentlichen diese selbst.  
+Vorlagen-Apps sind ein Ersatz für die aktuellen Dienstinhaltspakete. Als Power BI-Partner erstellen Sie sofort verfügbare Inhalte für Ihre Kunden und veröffentlichen diese selbst.  
 
-Sie können Vorlagen-Apps erstellen, mit denen Ihre Kunden eine Verbindung mit ihren eigenen Konten herstellen und diese instanziieren können. Als Domänenexperten können sie die Daten so freigeben, dass diese von ihren Geschäftskunden mühelos genutzt werden können.  
+Sie erstellen Vorlagen-Apps, mit denen Ihre Kunden Verbindungen und Instanziierungen innerhalb ihrer eigenen Konten ausführen können. Als Experten auf ihrem Fachgebiet können die Kunden ihre Daten so freigeben, dass diese von ihren Geschäftsbenutzern ganz einfach genutzt werden können.  
 
-Sie übermitteln Ihre Vorlagen-Apps an das Cloud-Partnerportal. Die Apps werden dann im Power BI-App-Katalog (app.powerbi.com/getdata/services) und in Microsoft AppSource (appsource.microsoft.com) öffentlich zur Verfügung gestellt. Hier erhalten Sie einen Überblick über die Erstellung von öffentlichen Vorlagen-Apps.  
+Sie übermitteln Ihre Vorlagen-Apps an das Cloud-Partnerportal. Die Apps werden dann im [Marketplace für Power BI-Apps](https://app.powerbi.com/getdata/services) und in [Microsoft AppSource](https://appsource.microsoft.com/?product=power-bi) öffentlich zur Verfügung gestellt. Hier erhalten Sie einen Überblick über die Erstellung von öffentlichen Vorlagen-Apps.
+
+## <a name="power-bi-apps-marketplace"></a>Marketplace für Power BI-Apps
+
+Mithilfe von Power BI-Vorlagen-Apps können Benutzer von Power BI Pro oder Power BI Premium dank vorgefertigter Dashboards und Berichte, die mit Livedatenquellen verbunden werden können, sofort Erkenntnisse gewinnen. Viele Power BI-Apps sind im [Marketplace für Power BI-Apps](https://app.powerbi.com/getdata/services) bereits verfügbar.
+
+|  |
+|     :---:      |
+| [![Foo](./media/service-template-apps-overview/project-web.png)](https://app.powerbi.com/groups/me/getapps/services/office365mon.office365mon_powerbi_v3) [![Foo](./media/service-template-apps-overview/azure-backup.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-azurebackup.pbi-azurebackup-template) [![Foo](./media/service-template-apps-overview/dynamics-sales.png)](https://app.powerbi.com/groups/me/getapps/services/microsoftdynsmb.businesscentral_sales) [![Foo](./media/service-template-apps-overview/forms-pro.png)](https://app.powerbi.com/groups/me/getapps/services/msfp.formsprocustomersatisfaction) |
+|  |
 
 ## <a name="process"></a>Verfahren
 Der allgemeine Prozess zum Entwickeln und Übermitteln einer Vorlagen-App umfasst mehrere Phasen. Manche Phasen umfassen mehr als eine Aktivität zur gleichen Zeit.
@@ -48,20 +57,21 @@ Im Folgenden werden die allgemeinen Schritte aufgeführt.
 
 1. [Überprüfen Sie die Anforderungen](#requirements), um sicherzustellen, dass Sie sie erfüllen. 
 
-1. Erstellen Sie einen Bericht in Power BI Desktop. Verwenden Sie Parameter, damit Sie den Bericht als Datei speichern können, die von anderen benutzt werden kann. 
+2. Erstellen Sie einen Bericht in Power BI Desktop. Verwenden Sie Parameter, damit Sie den Bericht als Datei speichern können, die von anderen benutzt werden kann. 
 
-1. Erstellen Sie einen Arbeitsbereich für Ihre Vorlagen-App in Ihrem Mandanten im Power BI-Dienst (app.powerbi.com). 
+3. Erstellen Sie einen Arbeitsbereich für Ihre Vorlagen-App in Ihrem Mandanten im Power BI-Dienst (app.powerbi.com). 
 
-1. Importieren Sie Ihre PBIX-Datei, und fügen Sie Inhalte, z.B. ein Dashboard, zu Ihrer App hinzu. 
+4. Importieren Sie Ihre PBIX-Datei, und fügen Sie Inhalte, z.B. ein Dashboard, zu Ihrer App hinzu. 
 
-1. Erstellen Sie ein Testpaket, um die Vorlagen-App innerhalb Ihrer Organisation selbst zu testen. 
+5. Erstellen Sie ein Testpaket, um die Vorlagen-App innerhalb Ihrer Organisation selbst zu testen. 
 
-1. Stufen Sie die Test-App zur Präproduktion hinauf, um die App für die Validierung an AppSource zu übermitteln und sie außerhalb Ihres eigenen Mandanten zu testen. 
+6. Stufen Sie die Test-App zur Präproduktion hinauf, um die App für die Validierung an AppSource zu übermitteln und sie außerhalb Ihres eigenen Mandanten zu testen. 
 
-1. Übermitteln Sie den Inhalt zur Veröffentlichung an das Cloud-Partnerportal. 
+7. Übermitteln Sie den Inhalt zur Veröffentlichung an das Cloud-Partnerportal. 
 
-1. Stellen Sie Ihr Angebot in AppSource „Live“, und verschieben Sie Ihre App in Power BI in die Produktion.
-2. Sie können jetzt mit der Entwicklung der nächsten Version im gleichen Arbeitsbereich in der Präproduktion beginnen. 
+8. Stellen Sie Ihr Angebot in AppSource „Live“, und verschieben Sie Ihre App in Power BI in die Produktion.
+
+9. Sie können jetzt mit der Entwicklung der nächsten Version im gleichen Arbeitsbereich in der Präproduktion beginnen. 
 
 ## <a name="requirements"></a>Anforderungen
 
@@ -80,6 +90,19 @@ Zum Veröffentlichen einer Vorlagen-App im Power BI-Dienst und in AppSource müs
 - Aktivieren Sie die Datenanpassung, um beispielsweise benutzerdefinierte Verbindungs- und Parameterkonfiguration durch den Installer zu unterstützen.
 
 Weitere Vorschläge finden Sie unter [Tips for authoring template apps in Power BI (Tipps für die Erstellung von Vorlagen-Apps in Power BI)](service-template-apps-tips.md).
+
+## <a name="known-limitations"></a>Bekannte Einschränkungen
+
+| Feature | Bekannte Einschränkung |
+|---------|---------|
+|Inhalt:  Datasets   | Genau ein Dataset sollte vorhanden sein. Nur Datasets, die in Power BI Desktop erstellt wurden (.pbix-Dateien), sind zulässig. <br>Nicht unterstützt: Datasets aus anderen Vorlagen-Apps, arbeitsbereichübergreifende Datasets, paginierte Berichte (.rdl-Dateien), Excel-Arbeitsmappen |
+|Inhalt: Dashboards | Echtzeitkacheln sind nicht zulässig (d.h. Push- oder Streamingdatasets werden nicht unterstützt). |
+|Inhalt: Dataflows | Nicht unterstützt: Dataflows |
+|Inhalte aus Dateien | Nur PBIX-Dateien sind zulässig. <br>Nicht unterstützt: .rdl-Dateien (paginierte Berichte), Excel-Arbeitsmappen   |
+| Datenquellen | Datenquellen, die für geplante Datenaktualisierungen in der Cloud unterstützt werden, sind zulässig. <br>Nicht unterstützt: <li> DirectQuery</li><li>Liveverbindungen (ausgenommen Azure Analysis Services)</li> <li>Lokale Datenquellen (persönliche Gateways und Enterprise-Gateways werden nicht unterstützt)</li> <li>Echtzeit (Pushdataset wird nicht unterstützt)</li> <li>Zusammengesetzte Modelle</li></ul> |
+| Dataset: arbeitsbereichübergreifend | Arbeitsbereichübergreifende Datasets sind nicht zulässig.  |
+| Abfrageparameter | Nicht unterstützt: Parameter vom Typ „Any“ oder „Binary“ blockieren den Aktualisierungsvorgang für Datasets. |
+| Benutzerdefinierte visuelle Elemente | Es werden nur öffentlich verfügbare benutzerdefinierte Visuals unterstützt. [Benutzerdefinierte Visuals für Organisationen](developer/power-bi-custom-visuals-organization.md) werden nicht unterstützt. |
 
 ## <a name="support"></a>Support
 Unterstützung während der Entwicklung finden Sie unter [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Diese Website wird aktiv überwacht und verwaltet. Kundenanfragen werden schnell an das entsprechende Team weitergeleitet.

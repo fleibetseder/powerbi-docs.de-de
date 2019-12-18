@@ -9,12 +9,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9588f13a857dc105dce3b3577df7c3b06df027ed
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 6c8b62cf798d2fbbd09dab0603d216448d04487c
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699243"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000133"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-to-sap-bw-using-gx64krb5"></a>Verwenden von Kerberos für SSO (Single Sign-On, Einmaliges Anmelden) bei SAP BW mithilfe von gx64krb5
 
@@ -75,7 +75,7 @@ Bearbeiten Sie diesen Abschnitt, wenn Sie Ihren SAP BW-Server noch nicht für di
 
 1. Melden Sie sich über SAP Logon bei Ihrem Server an, und legen Sie mithilfe der Transaktion RZ10 die folgenden Profilparameter fest:
 
-    1. Legen Sie den Profilparameter **snc/identity/as** auf *p:&lt;von Ihnen erstellter SAP BW-Dienstbenutzer&gt;* fest. Beispiel: *p:BWServiceUser\@MYDOMAIN.COM*. Beachten Sie das *p:* , das dem UPN des Dienstbenutzers vorangestellt ist. Das Präfix lautet nicht *p:CN=* wie bei Verwendung der CommonCryptoLib als SNC-Bibliothek.
+    1. Legen Sie den Profilparameter **snc/identity/as** auf *p:&lt;von Ihnen erstellter SAP BW-Dienstbenutzer&gt;* fest. Beispiel: *p:BWServiceUser\@MYDOMAIN.COM*. Beachten Sie das *p:*, das dem UPN des Dienstbenutzers vorangestellt ist. Das Präfix lautet nicht *p:CN=* wie bei Verwendung der CommonCryptoLib als SNC-Bibliothek.
 
     1. Legen Sie den Profilparameter **snc/gssapi\_lib** auf den *&lt;Pfad zu gx64krb5.dll auf dem BW-Servercomputer&gt;* fest. Platzieren Sie die Bibliothek an einem Ort, auf den der SAP BW-Anwendungsserver zugreifen kann.
 
@@ -154,7 +154,7 @@ Fügen Sie die erforderlichen Einträge zur Registrierung des Computers hinzu, a
 
 1. Geben Sie im Fenster für die Konfiguration der Datenquelle genau wie bei der Anmeldung beim SAP BW-Server über Power BI Desktop den **Hostnamen**, die **Systemnummer** und die **Client-ID** des SAP BW-Anwendungsservers ein.
 
-1. Geben Sie im Feld **Name des SNC-Partners** den *p:&lt;SPN ein, den Sie Ihrem SAP BW-Dienstbenutzer zugeordnet haben&gt;* . Wenn der SPN beispielsweise SAP/BWServiceUser\@MYDOMAIN.COM lautet, geben Sie *p:SAP/BWServiceUser\@MYDOMAIN.COM* in das Feld **Name des SNC-Partners** ein.
+1. Geben Sie im Feld **Name des SNC-Partners** den *p:&lt;SPN ein, den Sie Ihrem SAP BW-Dienstbenutzer zugeordnet haben&gt;*. Wenn der SPN beispielsweise SAP/BWServiceUser\@MYDOMAIN.COM lautet, geben Sie *p:SAP/BWServiceUser\@MYDOMAIN.COM* in das Feld **Name des SNC-Partners** ein.
 
 1. Wählen Sie für die SNC-Bibliothek **SNC\_LIB** oder **SNC\_LIB\_64** aus. Vergewissern Sie sich, dass **SNC\_LIB\_64** auf dem Gatewaycomputer auf die gx64krb5.dll-Datei verweist. Alternativ können Sie die Option **Benutzerdefiniert** auswählen und den absoluten Pfad zu „gx64krb5.dll“ auf dem Gatewaycomputer angeben.
 
@@ -197,6 +197,8 @@ Falls eines der nachfolgend aufgeführten Probleme mit der gx64krb5-Installation
       ![CPIC-Ablaufverfolgung](media/service-gateway-sso-kerberos/cpic-tracing.png)
 
     c. Reproduzieren Sie das Problem, und stellen Sie sicher, dass **CPIC\_TRACE\_DIR** Ablaufverfolgungsdateien enthält. 
+    
+    d. Untersuchen Sie die Inhalte der Ablaufverfolgungsdateien, um das Problem zu ermitteln. Beispielsweise könnten Sie feststellen, dass die Datei „gx64krb5.dll“ nicht ordnungsgemäß geladen wurde oder dass ein anderer als der erwartete Active Directory-Benutzer den SSO-Verbindungsversuch initiiert hat.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
