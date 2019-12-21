@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 12/02/2019
 ms.locfileid: "74696440"
 ---
-# <a name="add-interactivity-into-visual-by-power-bi-visuals-selections"></a>Hinzufügen von Interaktivität zu Visuals mithilfe von Auswahlmöglichkeiten für Power BI-Visuals
+# <a name="add-interactivity-into-visual-by-power-bi-visuals-selections"></a>Power BI-Visuals interaktiv gestalten mithilfe von Auswahloptionen
 
 Power BI bietet zwei Möglichkeiten der Interaktion mit Visuals: Auswahl und Filterung. Im folgenden Beispiel wird veranschaulicht, wie Sie beliebige Elemente in einem Visual auswählen und andere Visuals im Bericht über den neuen Auswahlzustand informieren.
 
@@ -157,7 +157,7 @@ Und das Visual verwendet die folgende Zuordnung der Datenansicht:
 
 Im Beispiel ist `Manufacturer` `columns` und `Type` `rows` zugeordnet. Es gibt eine Datenreihe, die durch Gruppieren von Werten nach `rows` (`Type`) erstellt wird.
 
-Und ein Visual sollte auch in der Lage sein, einen Datenschnitt für `Manufacturer` und `Type` auszuführen.
+Das Visual sollte die Daten ferner nach `Manufacturer` und `Type` aufschlüsseln können.
 
 Wenn der Benutzer beispielsweise `Chrysler` als `Manufacturer` auswählt, sollten die anderen Visuals folgende Daten anzeigen:
 
@@ -181,9 +181,9 @@ Wenn der Benutzer `Import Car` nach `Type` (wählt Daten nach Reihe aus) auswäh
 
 ![Das Visual mit den Auswahlen für Kategorien und Datenreihen](media/visual-selections-sample.png)
 
-Die Data Baskets des Visuals müssen gefüllt werden.
+Die Datenkörbe des Visuals müssen gefüllt werden.
 
-![Daten Baskets des VIsuals mit getroffener Auswahl](media/visual-selections-databuckets.png)
+![Datenkörbe des Visuals mit getroffener Auswahl](media/visual-selections-databuckets.png)
 
 Es gibt `Manufacturer` als Kategorie (Spalten), `Type` als Datenreihe (Zeilen) und `Value` als `Values` für Datenreihen.
 
@@ -309,7 +309,7 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-Der Code des Visuals durchläuft die Zeilen der Tabelle und ruft für jede Zeile die Tabellenmethode `withTable` auf. Die Parameter `withTable`-Methode sind das `table`-Objekt und der Index der Tabellenzeile.
+Der Code des Visuals durchläuft die Zeilen der Tabelle und ruft für jede Zeile die Tabellenmethode `withTable` auf. Die Parameter der `withTable`-Methode sind das `table`-Objekt und der Index der Tabellenzeile.
 
 ### <a name="create-selections-for-matrix-data-view-mapping"></a>Erstellen von Auswahloptionen für die Zuordnungen der Matrixdatenansicht
 
