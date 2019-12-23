@@ -7,6 +7,10 @@
       items:
         - name: Was ist die Power BI-Verwaltung?
           href: ../service-admin-administering-power-bi-in-your-organization.md
+        - name: Wo befindet sich mein Mandant?
+          href: ../service-admin-where-is-my-tenant-located.md
+        - name: Migrieren zu deutschen „Go Local“-Regionen
+          href: service-admin-migrate-data-germany.md
     - name: Konzepte
       expanded: true
       items:
@@ -30,8 +34,6 @@
               href: ../service-admin-syndication-partner.md
         - name: Verwenden des Verwaltungsportals
           href: ../service-admin-portal.md
-        - name: Wo befindet sich mein Mandant?
-          href: ../service-admin-where-is-my-tenant-located.md
         - name: Suchen nach angemeldeten Benutzern
           href: ../service-admin-access-usage.md
         - name: Überwachung

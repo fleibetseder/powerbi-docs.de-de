@@ -40,6 +40,8 @@
           href: report-drillthrough.md
         - name: Anleitung zur automatischen Angabe von Datum/Uhrzeit in Power BI Desktop
           href: auto-date-time.md
+        - name: 'Leitfaden zu m:n-Beziehungen'
+          href: relationships-many-to-many.md
     - name: Whitepaper
       items:
         - name: Whitepaper – Übersicht

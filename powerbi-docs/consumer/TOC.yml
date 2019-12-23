@@ -142,6 +142,8 @@
       items:
         - name: Welches sind die mobilen Apps?
           href: mobile/mobile-apps-for-mobile-devices.md
+        - name: Vorstellung der Homepage
+          href: mobile/mobile-apps-home-page.md
     - name: Schnellstartanleitungen
       items:
         - name: Erkunden von Dashboards und Berichten
@@ -198,7 +200,7 @@
               href: mobile/mobile-apps-qr-code.md
             - name: Kommentieren und Freigeben in den mobilen Apps
               href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
-            - name: Scannen eines Barcodes mit der App auf dem iPhone
+            - name: Scannen eines Barcodes aus der mobilen Power BI-App
               href: mobile/mobile-apps-scan-barcode-iphone.md
             - name: Konfigurieren mithilfe der Verwaltung mobiler Geräte
               href: mobile/mobile-app-configuration.md
