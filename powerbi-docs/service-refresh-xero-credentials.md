@@ -37,7 +37,7 @@ Wenn Sie sehen, dass die Aktualisierung wie oben gezeigt fehlgeschlagen ist, bef
 4. Melden Sie sich mit Ihrem Xero-Konto an.
    
     ![](media/service-refresh-xero-credentials/powerbi-xero-welcome.png)
-5. Nachdem Sie Ihre Anmeldeinformationen aktualisiert haben, möchten jetzt wir sicherstellen, dass im Aktualisierungszeitplan die tägliche Ausführung festgelegt ist. Klicken Sie dazu auf die Auslassungspunkte (...) für **Weitere Optionen** neben dem Xero-Dataset, und klicken Sie dann erneut auf **Aktualisierung planen**.
+5. Nachdem Sie Ihre Anmeldeinformationen aktualisiert haben, möchten jetzt wir sicherstellen, dass im Aktualisierungszeitplan die tägliche Ausführung festgelegt ist. Klicken Sie dazu auf die Auslassungspunkte (...) für **Weitere Optionen** neben dem Xero-Dataset, und klicken Sie dann noch mal auf **Aktualisierung planen**.
    
     ![](media/service-refresh-xero-credentials/powerbi-xero-refresh-schedule.png)
 6. Sie können das Dataset auch sofort aktualisieren. Klicken Sie neben dem Xero-Dataset auf die Auslassungspunkte (...) für **Weitere Optionen**, und klicken Sie dann auf **Jetzt aktualisieren**.

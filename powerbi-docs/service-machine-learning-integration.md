@@ -86,7 +86,7 @@ Mit Auswahl der Schaltfläche **Bearbeiten** wird der Power Query-Editor für di
 
 ![Power Query-Editor](media/service-machine-learning-integration/machine-learning-integration_06.png)
 
-Wählen Sie die Schaltfläche **KI-Erkenntnisse** im Menüband und dann im Navigationsmenü den Ordner _Azure Machine Learning Models_ aus. Alle Azure ML-Modelle, auf die Sie Zugriff haben, finden Sie hier als Power Query-Funktionen aufgelistet. Darüber hinaus werden die Eingabeparameter für das Azure ML-Modell automatisch als Parameter der entsprechenden Power Query-Funktion zugeordnet.
+Wählen Sie die Schaltfläche **KI Insights** im Menüband und dann im Navigationsmenü den Ordner _Azure Machine Learning Models_ aus. Alle Azure ML-Modelle, auf die Sie Zugriff haben, finden Sie hier als Power Query-Funktionen aufgelistet. Darüber hinaus werden die Eingabeparameter für das Azure ML-Modell automatisch als Parameter der entsprechenden Power Query-Funktion zugeordnet.
 
 Um ein Azure ML-Modell aufzurufen, können Sie beliebige Spalten der ausgewählten Entität als Eingabe aus der Dropdownliste angeben. Sie können auch durch das Umschalten des Spaltensymbols auf der linken Seite des Eingabedialogfelds einen konstanten Wert angeben, der als Eingabe verwendet wird.
 

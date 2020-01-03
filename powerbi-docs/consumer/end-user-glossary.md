@@ -9,12 +9,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 09/04/2019
 ms.author: mihart
-ms.openlocfilehash: 8c7a0463e8a521482a1aab6a53ae9656585a7849
-ms.sourcegitcommit: fe9253a6021b9e198afa28aa9c670c3bacf59674
+ms.openlocfilehash: 32a93a881a801ec5dd335f167e69a5b76f53d694
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74548531"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73764722"
 ---
 # <a name="glossary-for-power-bi-service"></a>Glossar für den Power BI-Dienst
 Der Power BI-Dienst führt möglicherweise Terminologie ein, die nicht vertraut oder zunächst verwirrend ist. Das Glossar ist der ideale Ort, um Begriffe nachzuschlagen – vielleicht sollten Sie ein Lesezeichen setzen? Eine weitere hervorragende Ressource, mehr über die Bausteine zu erfahren, aus denen sich der Power BI-Dienst zusammensetzt, sind die [Grundkonzepte](end-user-basic-concepts.md). Grundkonzepte bietet einen allgemeinen Überblick über die Power BI-*Bestandteile* und die Art ihrer Verbindung.
@@ -34,6 +34,8 @@ Dieses Glossar ist eine Communityinitiative.  Fehlt hier ein Begriff? Bitten Sie
 **alert, alerts (Benachrichtigung, Benachrichtigungen)** Eine Funktion, die Benutzer auf der Grundlage von ihnen selbst festgelegter Grenzwerte über Änderungen in den Daten benachrichtigt. Benachrichtigungen können für Kacheln festgelegt werden, die aus visuellen Elementen von Berichten angeheftet wurden. Benutzer empfangen Benachrichtigungen im Dienst und in ihren mobilen Apps.
 
 **annotate (Kommentieren)** Das Schreiben von Zeilen oder Text oder das Anbringen von Stempeln auf einer Momentaufnahmekopie einer Kachel, eines Berichts oder eines visuellen Elements in der mobilen Power BI-App für iOS- und Android-Geräte.
+
+**answer card, answer page (Antwortkarte, Antwortseite)** Siehe „Cortana-Antwortkarte“.
 
 **App, Apps** 
 
@@ -75,6 +77,10 @@ Dieses Glossar ist eine Communityinitiative.  Fehlt hier ein Begriff? Bitten Sie
 **content pack (Inhaltspaket)** Eine Sammlung von vorkonfigurierten Datasets, Berichten und Dashboards. Inhaltspakete sind nun **Apps**. Erfahren Sie mehr [über die neuen Arbeitsbereiche](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). 
 
 **content view (Inhaltsansicht)**
+
+**Cortana answer card (Cortana-Antwortkarte)** Die dedizierte Berichtsseite, die in einen Power BI-Bericht aufgenommen wird, um das Erstellen benutzerdefinierter Antworten von Cortana zu ermöglichen.
+
+**Cortana answer page (Cortana-Antwortseite)** Der Name für die Cortana-Seite, die Kunden angezeigt wird.
 
 **cross filter, cross highlight (Kreuzfilter, übergreifende Hervorhebung)**
 

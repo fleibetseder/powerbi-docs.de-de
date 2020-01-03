@@ -36,7 +36,7 @@ AutoML in Power BI integriert [automatisiertes ML](https://docs.microsoft.com/az
 
 Nachdem ein ML-Modell trainiert wurde, erstellt AutoML automatisch einen Power BI-Bericht, der die wahrscheinliche Leistung Ihres ML-Modells erklärt. AutoML legt den Schwerpunkt auf Erklärbarkeit, indem es die wichtigsten Einflussfaktoren unter Ihren Eingaben hervorhebt, die die von Ihrem Modell gelieferten Vorhersagen beeinflussen. Der Bericht enthält auch Schlüsselmetriken für das Modell.
 
-Andere Seiten des generierten Berichts zeigen eine statistische Zusammenfassung zum Modell und die Trainingsdetails. Die statistische Zusammenfassung ist für Benutzer von Interesse, die die üblichen Data Science-Measures der Modellleistung einsehen möchten. In den Trainingsdetails sind alle Iterationen mit den zugehörigen Modellierungsparametern zusammengefasst, die zur Erstellung Ihres Modells erfolgt sind. Außerdem wird beschrieben, wie die einzelnen Eingaben zur Erstellung des ML-Modells verwendet wurden.
+Andere Seiten des generierten Berichts zeigen eine statistische Zusammenfassung zum Modell und die Trainingsdetails. Die statistische Zusammenfassung ist für Benutzer von Interesse, die die üblichen Data-Science-Measures der Modellleistung einsehen möchten. In den Trainingsdetails sind alle Iterationen mit den zugehörigen Modellierungsparametern zusammengefasst, die zur Erstellung Ihres Modells erfolgt sind. Außerdem wird beschrieben, wie die einzelnen Eingaben zur Erstellung des ML-Modells verwendet wurden.
 
 Danach können Sie Ihr ML-Modell auf Ihre Daten anwenden, um es zu bewerten. Bei der Aktualisierung des Dataflows werden Ihre Daten mit Vorhersagen aus Ihrem ML-Datenmodell aktualisiert. Power BI bietet auch eine individualisierte Erklärung für die jeweilige Vorhersage, die das ML-Modell liefert.
 
@@ -60,7 +60,7 @@ Es wird eine vereinfachte Umgebung gestartet, die aus einem Assistenten besteht,
 
 **1. Wählen Sie die Entität mit den historischen Daten und das Ergebnisfeld aus, für das Sie eine Vorhersage wünschen.**
 
-Im Ergebnisfeld wird das Beschriftungsattribut für das Training des ML-Modells bestimmt (siehe folgende Abbildung).
+Im Ergebnisfeld wird das Beschriftungsattribut für das Training des ML-Modells bestimmt. Die folgende Abbildung veranschaulicht das.
 
 ![Historische Ergebnisdaten auswählen](media/service-machine-learning-automated/automated-machine-learning-power-bi-03.png)
 
@@ -85,7 +85,7 @@ Diese Featureempfehlung beruht auf einer Stichprobe von Daten. Daher sollten Sie
 
 **4. Geben Sie Ihrem Modell einen Namen, und speichern Sie die Konfiguration.**
 
-Im letzten Schritt geben Sie dem Modell einen Namen und wählen „Speichern und trainieren“ aus, um mit dem Training des ML-Modells zu beginnen. Sie können wählen, ob Sie die Trainingszeit verkürzen möchten, um schnelle Ergebnisse zu erzielen, oder ob Sie die Trainingszeit verlängern möchten, um das beste Modell zu erhalten.
+Im letzten Schritt geben Sie dem Modell einen Namen und wählen „Speichern und trainieren“ aus, um mit dem Training des ML-Modells zu beginnen. Sie können entscheiden, ob Sie die Trainingszeit verkürzen möchten, um schnelle Ergebnisse zu erzielen, oder ob Sie die Trainingszeit verlängern möchten, um das beste Modell zu erhalten.
 
 ![Dem Modell einen Namen geben](media/service-machine-learning-automated/automated-machine-learning-power-bi-06.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Einbetten von paginierten Berichten in Anwendungen für Kunden
+title: Einbetten von paginierten Power BI-Berichten in Anwendungen für Kunden
 description: Hier erfahren Sie, wie Sie einen paginierten Power BI-Bericht mithilfe der Power BI-APIs in eine Anwendung integrieren oder einbetten.
 author: KesemSharabi
 ms.author: kesharab
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 11/04/2019
-ms.openlocfilehash: 1493f628ce822afa020e300ff7428da059fcc65d
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.openlocfilehash: 5611d65ab800c14b2570a12078c08cce5dc58147
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74311424"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877736"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers-preview"></a>Tutorial: Einbetten von paginierten Power BI-Berichten in eine Anwendung für Kunden (Vorschauversion)
 
@@ -37,11 +37,6 @@ Sie benötigen Folgendes, um direkt mit dem Tutorial loslegen zu können:
 * mindestens A4- oder P1-[Kapazität](#create-a-dedicated-capacity) mit aktivierter Workload für [paginierte Berichte](../service-admin-premium-workloads.md#paginated-reports)
 
 Wenn Sie kein Azure-Abonnement besitzen, erstellen Sie ein [kostenloses Konto](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), bevor Sie beginnen.
-
-> [!IMPORTANT]
-> * Sie müssen einen **Dienstprinzipal** verwenden. Hauptbenutzer werden nicht unterstützt.
-> * Datenquellen, die Single Sign-on (SSO) erfordern, werden nicht unterstützt.
-> * Power BI-DataSet wird als [Datenquelle](../service-get-data.md) nicht unterstützt.
 
 ## <a name="set-up-your-power-bi-environment"></a>Einrichten der Power BI-Umgebung
 

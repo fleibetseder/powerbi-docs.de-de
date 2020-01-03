@@ -48,7 +48,7 @@ Viele Power BI-Berichtsersteller erstellen Berichte, die viele Daten enthalten. 
 
 Drücken Sie beim Navigieren zu einem Visual zum Auswählen des Visuals auf **STRG+NACH-RECHTS-TASTE**, um durch die erste Ebene zu navigieren. Nachdem Sie dieses Visual ausgewählt haben, können Sie auf die **TAB-TASTE** drücken, um die Hauptbereiche der Visualisierung zu durchlaufen. Zu diesen Hauptbereichen, die Sie durchlaufen können, gehören die Datenplotpunkte, die Kategorien der X-Achse (sofern für das Visual zutreffend) und die Legende (wenn das Visual über eine solche verfügt).
 
-In der folgenden GIF-Grafik wird gezeigt, wie ein Benutzer die erste Ebene eines visuellen Elements durchläuft:
+In der folgenden GIF-Grafik wird gezeigt, wie ein Benutzer die erste Ebene eines Visuals durchläuft:
 
 ![Durchlaufen der ersten Ebene](media/desktop-accessibility/accessibility-consuming-tools-04.gif)
 

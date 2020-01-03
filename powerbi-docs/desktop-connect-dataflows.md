@@ -39,7 +39,7 @@ Sie können die Leistung der Datenerfassung für Dataflows verbessern. Wenn z.B.
 
 Die meisten Dataflows befinden sich im Mandanten des Power BI-Diensts. Benutzer von **Power BI Desktop** können jedoch nur auf Dataflows zugreifen, die in einem Azure Data Lake Storage Gen2-Konto gespeichert sind, wenn sie der Besitzer des jeweiligen Dataflows oder explizit für den CDM-Ordner des jeweiligen Dataflows autorisiert sind. Sehen Sie sich das folgende Beispiel an:
 
-1.  Anna erstellt einen neuen Arbeitsbereich und konfiguriert ihn so, dass Dataflows im Data Lake Ihrer Organisation gespeichert werden.
+1.  Anna erstellt einen neuen Arbeitsbereich und konfiguriert ihn so, dass Dataflows im Data Lake der Organisation gespeichert werden.
 2.  Ben ist ebenfalls Mitglied des Arbeitsbereichs, den Anna erstellt hat, und möchte Power BI Desktop und den Dataflowconnector verwenden, um Daten aus Annas Dataflow zu erhalten.
 3.  Da Ben im Data Lake-Konto nicht als autorisierter Benutzer des CDM-Ordners des Dataflows hinzugefügt wurde, erhält er eine Fehlermeldung.
 

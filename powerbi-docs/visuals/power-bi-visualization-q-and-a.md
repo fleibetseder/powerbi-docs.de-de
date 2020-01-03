@@ -5,14 +5,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/19/2019
+ms.date: 10/19/2019
 ms.author: mohaali
-ms.openlocfilehash: 9805b98df7f606e61412ca9dee7dc0467a1649a3
-ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
+ms.openlocfilehash: 78a74d2d49ac9eabb7d63f467c9838d370d5c314
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74791830"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870838"
 ---
 # <a name="introduction-to-power-bi-qa-visual"></a>Einführung in Q&A-Visuals in Power BI
 
@@ -20,13 +20,13 @@ ms.locfileid: "74791830"
 
 ## <a name="what-is-the-qa-visual"></a>Was ist ein Q&A-Visual?
 
-Über ein Q&A-Visual können Benutzer in natürlicher Sprache Fragen stellen und erhalten Antworten in Form eines visuellen Elements. 
+Über ein Q&A-Visual können Benutzer in natürlicher Sprache Fragen stellen und erhalten Antworten in Form eines Visuals. 
 
 ![Exemplarische Vorgehensweise zu Q&A-Visuals](../natural-language/media/qna-visual-walkthrough.gif)
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-Q&A-Visuals können sowohl von *Benutzern* als Tool für schnelle Antworten auf Datenfragen verwendet werden als auch von *Designern*, die durch Doppelklicken an einer beliebigen Stelle in einem Bericht Visuals in natürlicher Sprache erstellen können. Ein Q&A-Visual unterstützt wie jedes andere visuelle Element Kreuzfilterung, Kreuzhervorhebung und auch Lesezeichen. Zudem unterstützt es Designs und andere Standardformatierungsoptionen, die in Power BI verfügbar sind.
+Q&A-Visuals können sowohl von *Benutzern* als Tool für schnelle Antworten auf Datenfragen verwendet werden als auch von *Designern*, die durch Doppelklicken an einer beliebigen Stelle in einem Bericht Visuals in natürlicher Sprache erstellen können. Ein Q&A-Visual unterstützt wie jedes andere Visual Kreuzfilterung, Kreuzhervorhebung und auch Lesezeichen. Zudem unterstützt es Designs und andere Standardformatierungsoptionen, die in Power BI verfügbar sind.
 
 Q&A-Visuals bestehen aus vier Kernkomponenten:
 
@@ -65,7 +65,7 @@ In dieser Übung wird zum Erstellen eines Q&A-Visuals eine der vorgeschlagenen F
 
     ![Q&A-Visual mit Karte](media/power-bi-visualization-q-and-a/power-bi-map.png)
 
-    Sie können Power BI aber auch mitteilen, welches Visual verwendet werden soll, indem Sie Ihrer Frage in natürlicher Sprache diese Information hinzufügen. Bedenken Sie jedoch, dass nicht jeder Visualtyp auch zu Ihren Daten passen muss. Mit diesen Daten könnten Sie beispielsweise kein sinnvolles Punktdiagramm erstellen. Ein Flächenkartogramm ist jedoch gut geeignet.
+    Wenn Sie einen bestimmten Visualtyp bevorzugen, fügen Sie diese Angabe Ihrer Abfrage in natürlicher Sprache hinzu. Bedenken Sie jedoch, dass nicht jeder Visualtyp auch zu Ihren Daten passen muss. Mit diesen Daten könnten Sie beispielsweise kein sinnvolles Punktdiagramm erstellen. Ein Flächenkartogramm ist jedoch gut geeignet.
 
     ![Q&A-Visual mit Flächenkartogramm](media/power-bi-visualization-q-and-a/power-bi-specify-map.png)
 
@@ -93,10 +93,6 @@ Wenn Sie sich nicht sicher sind, wie die Frage aussehen oder welche Terminologie
 6. Auf die folgende Weise können Sie das Visual in ein Säulendiagramm ändern. 
 
     ![Q&A-Visual mit dem zur Frage hinzugefügten Zusatz „als Säulendiagramm“](media/power-bi-visualization-q-and-a/power-bi-specify-visual.png)
-
-7.  Fügen Sie der Berichtseite weitere Visuals hinzu, und sehen Sie sich an, wie das Q&A-Visual mit den anderen Visuals auf der Seite interagiert. In diesem Beispiel wendet das Q&A-Visual eine Kreuzfilterung auf das Liniendiagramm und eine Kreuzhervorhebung auf das Balkendiagramm an.
-
-    ![Q&A-Visual mit einem ausgewählten Balken, und die Auswirkung auf die anderen drei Visuals auf der Berichtseite](media/power-bi-visualization-q-and-a/power-bi-filters.png)
 
 ## <a name="format-and-customize-the-qa-visual"></a>Formatieren und Anpassen von Q&A-Visuals
 Q&A-Visuals können mithilfe des Bereichs „Formatierung“ und durch Anwenden eines Designs angepasst werden. 
@@ -151,4 +147,4 @@ Q&A-Visuals sind in Office und Bing integriert, um gängige nicht erkannte Wört
 Sie können natürliche Sprache auf verschiedene Weise integrieren. Weitere Informationen finden Sie in den folgenden Artikeln:
 
 * [Q&A-Tools](../natural-language/q-and-a-tooling-intro.md)
-* [Bewährte Methoden für Q&A](../natural-language/q-and-a-best-practices.md)
+* [Q&A: Bewährte Methoden](../natural-language/q-and-a-best-practices.md)

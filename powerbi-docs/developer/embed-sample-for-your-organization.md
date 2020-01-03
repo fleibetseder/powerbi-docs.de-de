@@ -1,20 +1,20 @@
 ---
-title: Einbetten von Inhalten in eine Anwendung für Ihre Organisation
+title: Embedded Analytics für das Einbetten von Power BI-Inhalten in eine Anwendung für Ihre Organisation
 description: Hier erfahren Sie, wie Sie mit den Power BI-APIs einen Bericht (Power BI oder paginiert), ein Dashboard oder eine Kachel für Embedded Analytics für Ihre Organisation in eine Anwendung integrieren bzw. einbetten. In diesem Artikel erfahren Sie, wie Sie Power BI mit Embedded Analytics-Software, Embedded Analytics-Tools oder eingebetteten Business Intelligence-Tools in Ihre Anwendung integrieren.
-author: KesemSharabi
-ms.author: kesharab
+author: rkarlin
+ms.author: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 07/29/2019
-ms.openlocfilehash: c67ce4ef9b5b0ac2054d4ecdf76ee3a1a79571d8
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.openlocfilehash: 3a217ebd1b6450c76ebf25ad5154293566d955f6
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74311058"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875998"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Tutorial: Einbetten von Power BI-Inhalten in eine Anwendung für Ihre Organisation
 

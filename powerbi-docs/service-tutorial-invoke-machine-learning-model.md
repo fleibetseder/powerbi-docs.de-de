@@ -134,7 +134,7 @@ Durch Auswahl des **Bearbeiten**-Symbols wird der Power Query-Editor für die En
 
 ![Bearbeiten](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_16.png)
 
-Wählen Sie die Schaltfläche **KI-Erkenntnisse** im Menüband und dann im Navigationsmenü den Ordner _Azure Machine Learning Models_ aus.
+Wählen Sie die Schaltfläche **KI Insights** im Menüband und dann im Navigationsmenü den Ordner _Azure Machine Learning Models_ aus.
 
 Die Azure ML-Modelle, auf die Ihnen Zugriff gewährt wurde, werden als Power Query-Funktionen mit einem *AzureML*-Präfix aufgelistet.  Beim Klicken auf die Funktion, die dem _AutomobilePricePrediction_-Modell entspricht, werden die Parameter für den Webdienst des Modells als Funktionsparameter aufgelistet.
 

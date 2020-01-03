@@ -30,7 +30,7 @@ In diesem Tutorial verwenden wir unser Dataset mit Einzelhandelsdaten und erstel
 
 In diesem Tutorial wird die [PBIX-Datei mit einem Analysebeispiel für den Einzelhandel](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) verwendet.
 
-1. Wählen Sie im oberen linken Bereich der Power BI Desktop-Menüleiste **Datei** > **Öffnen** aus.
+1. Klicken Sie im oberen linken Bereich der Power BI Desktop-Menüleiste auf **Datei** > **Öffnen**.
    
 2. Suchen Sie Ihre Kopie der **PBIX-Datei mit einem Analysebeispiel für den Einzelhandel**.
 

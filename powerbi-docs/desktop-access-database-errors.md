@@ -26,7 +26,7 @@ In Power BI Desktop verwenden sowohl Access-Datenbanken als auch frühe Versione
 Wenn die Power BI Desktop-Fehlermeldung angibt, dass die Access-Datenbank-Engine nicht installiert ist, müssen Sie die Version der Access-Datenbank-Engine (entweder 32 Bit oder 64 Bit) installieren, die Ihrer Version von Power BI Desktop entspricht. Sie können das Access-Datenbankmodul von der [Downloadseite](https://www.microsoft.com/download/details.aspx?id=13255) aus installieren.
 
 >[!NOTE]
->Wenn sich die Bitversion des installierten Access-Datenbank-Engine von der Bitversion Ihrer Microsoft Office-Installation unterscheidet, können Office-Anwendungen die Access-Datenbank-Engine nicht verwenden.
+>Wenn sich die Bitversion der installierten Access-Datenbank-Engine von der Bitversion Ihrer Microsoft Office-Installation unterscheidet, können Office-Anwendungen die Access-Datenbank-Engine nicht verwenden.
 
 ## <a name="situation-2-the-access-database-engine-bit-version-32-bit-or-64-bit-is-different-from-your-power-bi-desktop-bit-version"></a>Situation 2: Die Bitversion der Access-Datenbank-Engine (32 Bit oder 64 Bit) unterscheidet sich von Ihrer Power BI Desktop-Bitversion.
 

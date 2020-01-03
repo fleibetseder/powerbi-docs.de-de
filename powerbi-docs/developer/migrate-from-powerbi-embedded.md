@@ -1,18 +1,18 @@
 ---
 title: Migrieren von Inhalten aus der Power BI-Arbeitsbereichssammlung zu Power BI
 description: Erfahren Sie, wie Sie Inhalte aus der Power BI-Arbeitsbereichssammlung zu Power BI Embedded migrieren und die Vorteile für das Einbetten in Apps nutzen können.
-author: KesemSharabi
-ms.author: kesharab
+author: rkarlin
+ms.author: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 829724fb96b0122bc3bd2b346d8102947b0921f7
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.openlocfilehash: f55a9f1bfc9454c7d5a4ee3755a10f7cde1b0fd6
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74311553"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73780943"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Migrieren von Inhalten aus der Power BI-Arbeitsbereichssammlung zu Power BI Embedded
 
@@ -20,7 +20,7 @@ Erfahren Sie, wie Sie Inhalte aus der Power BI-Arbeitsbereichssammlung zu Power 
 
 Microsoft hat vor Kurzem [Power BI Embedded vorgestellt](https://powerbi.microsoft.com/blog/power-bi-embedded-capacity-based-skus-coming-to-azure/), ein neues kapazitätsbasiertes Lizenzierungsmodell, das die Flexibilität der Benutzer beim Zugriff, der Freigabe und dem Verteilen von Inhalten erhöht. Das Angebot bietet zusätzliche Skalierbarkeit und Leistung.
 
-Mit Power BI Embedded stehen Ihnen eine API-Oberfläche, einheitliche Funktionen und Zugriff auf die neuesten Power BI-Features (z.B. Dashboards, Gateways und Arbeitsbereiche) zur Verfügung, wenn Sie Inhalte einbetten. In Zukunft können Sie mit Power BI Desktop beginnen und zu einer Bereitstellung mit Power BI Embedded wechseln.
+Mit Power BI Embedded stehen Ihnen eine API-Oberfläche, einheitliche Funktionen und Zugriff auf die neuesten Power BI-Features (z. B. Dashboards, Gateways und Arbeitsbereiche) zur Verfügung, wenn Sie Inhalte einbetten. In Zukunft können Sie mit Power BI Desktop beginnen und zu einer Bereitstellung mit Power BI Embedded wechseln.
 
 Die aktuelle Power BI-Arbeitsbereichssammlung ist für einen begrenzten Zeitraum weiterhin verfügbar. Kunden mit einem Enterprise Agreement haben bis zum Ablauf ihrer vorhandenen Vereinbarungen Zugriff darauf; Kunden, welche die Power BI-Arbeitsbereichssammlung über einen direkten Kanal oder einen CSP-Kanal erworben haben, haben ab dem allgemeinen Verfügbarkeitsrelease von Power BI Embedded ein Jahr lang weiterhin Zugriff darauf.  Dieser Artikel bietet hilfreiche Informationen zur Migration der Power BI-Arbeitsbereichssammlung zum neuen Power BI Embedded sowie Erläuterungen zu den zu erwartenden Änderungen in Ihrer Anwendung.
 

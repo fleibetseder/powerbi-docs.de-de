@@ -1,6 +1,6 @@
 ---
 title: Verwenden von Power BI Q&A zur Untersuchung und Erstellung von Visuals
-description: Hier erfahren Sie wie Sie neue Visualisierungen in Dashboards und Berichten mit Power BI Q&A erstellen.
+description: Hier erfahren Sie, wie Sie Power BI Q&A verwenden, um neue Visualisierungen in Dashboards und Berichten zu erstellen.
 author: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -17,7 +17,7 @@ ms.locfileid: "73875087"
 ---
 # <a name="use-power-bi-qa-to-explore-your-data-and-create-visuals"></a>Verwenden von Power BI Q&A zur Untersuchung Ihrer Daten und Erstellung von Visuals
 
-Manchmal ist die schnellste Möglichkeit, um eine Antwort auf Basis Ihrer Daten zu erhalten, eine Frage in natürlicher Sprache zu stellen. Mit dem Q&A-Feature in Power BI können Sie Ihre Daten in Ihren eigenen Worten untersuchen.  Der erste Teil dieses Artikels zeigt, wie Sie Q&A in Dashboards im Power BI-Dienst einsetzen. Der zweite Teil zeigt, was Sie mit Q&A bei der Erstellung von Berichten entweder im Power BI-Dienst oder in Power BI Desktop machen können. Weitere Informationen finden Sie im Artikel [Q&A für Power BI-Verbraucher](consumer/end-user-q-and-a.md). 
+Manchmal ist die schnellste Möglichkeit, um eine Antwort auf Basis Ihrer Daten zu erhalten, eine Frage in natürlicher Sprache zu stellen. Mit dem Q&A-Feature in Power BI können Sie Ihre Daten in Ihren eigenen Worten untersuchen.  Der erste Teil dieses Artikels zeigt, wie Sie Q&A in Dashboards im Power BI-Dienst einsetzen. Der zweite Teil zeigt, was Sie mit Q&A bei der Erstellung von Berichten entweder im Power BI-Dienst oder in Power BI Desktop machen können. Weitere Informationen finden Sie im Artikel [Q&A für Power BI-Nutzer](consumer/end-user-q-and-a.md). 
 
 [Q&A in den Power BI Mobile-Apps](consumer/mobile/mobile-apps-ios-qna.md) sowie [Q&A mit Power BI Embedded](developer/qanda.md) werden in eigenen Artikeln behandelt. 
 
@@ -31,7 +31,7 @@ Im Power BI-Dienst (app.powerbi.com) enthält ein Dashboard angeheftete Kacheln 
 
 ![Anzeigen von verwandten Berichten und Datasets](media/power-bi-tutorial-q-and-a/power-bi-view-related.png)
 
-Das Q&A-Fragefeld befindet sich in der linken oberen Ecke des Dashboards, wo Sie Ihre Frage in natürlicher Sprache eingeben. Sie sehen kein Q&A-Fragefeld? Weitere Informationen finden Sie unter [Zu beachtende Aspekte und Problembehandlung](consumer/end-user-q-and-a.md#considerations-and-troubleshooting) im Artikel **Q&A für Power BI-Verbraucher**.  Q&A erkennt die Wörter die Sie eingeben und prüft, wo (in welchem Dataset) die Antwort zu finden ist. Q&A unterstützt Sie mit automatischer Vervollständigung, Neuformulierung und anderen textlichen und visuellen Hilfsmitteln bei der Formulierung Ihrer Frage.
+Das Q&A-Fragefeld befindet sich in der linken oberen Ecke des Dashboards, wo Sie Ihre Frage in natürlicher Sprache eingeben. Wird kein Q&A-Fragefeld angezeigt? Weitere Informationen hierzu finden Sie unter [Zu beachtende Aspekte und Problembehandlung](consumer/end-user-q-and-a.md#considerations-and-troubleshooting) im Artikel **Q&A für Power BI-Verbraucher**.  Q&A erkennt die Wörter, die Sie eingeben und prüft, wo (in welchem Dataset) die Antwort zu finden ist. Q&A unterstützt Sie mit automatischer Vervollständigung, Neuformulierung und anderen textlichen und visuellen Hilfsmitteln bei der Formulierung Ihrer Frage.
 
 ![Fragenfeld für Q&A](media/power-bi-tutorial-q-and-a/powerbi-qna.png)
 
@@ -41,7 +41,7 @@ Die Antwort auf Ihre Frage wird als eine interaktive Visualisierung angezeigt un
 
     ![Neue Q&A-Oberfläche in Power BI](media/power-bi-tutorial-q-and-a/power-bi-qna-new-experience.png)
 
-1. Noch bevor Sie mit der Eingabe beginnen, zeigt Q&A einen neuen Bildschirm mit Vorschlägen für die Formulierung Ihrer Frage an. Sie sehen Phrasen und vollständige Fragen, die die Namen der Tabellen in den zugrunde liegenden Datensätzen enthalten, und können sogar vollständige Fragen aufgelistet sehen, wenn der Datensatzeigentümer [ausgewählte Fragen](service-q-and-a-create-featured-questions.md) erstellt hat.
+1. Noch bevor Sie mit der Eingabe beginnen, zeigt Q&A einen neuen Bildschirm mit Vorschlägen für die Formulierung Ihrer Frage an. Sie sehen Phrasen und vollständige Fragen, die die Namen der Tabellen in den zugrunde liegenden Datensätzen enthalten, und können sogar vollständige Fragen aufgelistet sehen, wenn der Eigentümer des Datasets [ausgewählte Fragen](service-q-and-a-create-featured-questions.md) erstellt hat.
 
    ![Vorgeschlagene Fragen in Q&A](media/power-bi-tutorial-q-and-a/power-bi-qna-suggested-questions.png)
 
@@ -67,7 +67,7 @@ Die Antwort auf Ihre Frage wird als eine interaktive Visualisierung angezeigt un
 
 5. Wenn Sie mit dem Ergebnis zufrieden sind, heften Sie die Visualisierung an ein Dashboard an, indem Sie das Anheftsymbol in der oberen rechten Ecke auswählen. Wenn das Dashboard für Sie freigegeben wurde oder Bestandteil einer App ist, können Sie die Visualisierung nicht anheften.
 
-   ![Q&A Anheften des visuellen Elements](media/power-bi-tutorial-q-and-a/power-bi-qna-pin-visual.png)
+   ![Q&A Anheften des Visuals](media/power-bi-tutorial-q-and-a/power-bi-qna-pin-visual.png)
 
 ## <a name="part-2-use-qa-in-a-report-in-power-bi-service-or-power-bi-desktop"></a>Teil 2: Verwenden von Q&A in einem Bericht im Power BI-Dienst oder in Power BI Desktop
 
@@ -75,7 +75,7 @@ Verwenden Sie Q&A, um das Dataset zu untersuchen und dem Bericht sowie Dashboard
 
 ![Zugehörige Datasets anzeigen](media/power-bi-tutorial-q-and-a/power-bi-view-related.png)
 
-Sie benötigen Bearbeitungsberechtigungen für den Bericht und das zugrunde liegende Dataset, um Q&A in Berichten verwenden zu können. Im Artikel [Q&A für Power BI-Verbraucher](consumer/end-user-q-and-a.md) wird dies als *Erstellerszenario* bezeichnet. Wenn Sie stattdessen einen Bericht *nutzen*, der mit Ihnen geteilt wurde, ist Q&A nicht verfügbar.
+Sie benötigen Bearbeitungsberechtigungen für den Bericht und das zugrunde liegende Dataset, um Q&A in Berichten verwenden zu können. Im Artikel [Q&A für Power BI-Nutzer](consumer/end-user-q-and-a.md) wird dies als *Erstellerszenario* bezeichnet. Wenn Sie stattdessen einen Bericht *nutzen*, der mit Ihnen geteilt wurde, ist Q&A nicht verfügbar.
 
 1. Öffnen Sie einen Bericht in der Bearbeitungsansicht (Power BI-Dienst) oder Berichtsansicht (Power BI Desktop), und wählen Sie auf der Menüleiste **Frage stellen** aus.
 

@@ -9,16 +9,15 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 88a49af62a26b64d8b913b6df03c82841f31a489
-ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
+ms.openlocfilehash: c363e63a7354c2a8c66099a98cb441ce2c94becf
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74410957"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878367"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datenquellen in Power BI Desktop
-
-Mit Power BI Desktop können Sie Verbindungen mit Daten aus vielen verschiedenen Quellen herstellen. Eine vollständige Liste der verfügbaren Datenquellen finden Sie unter [Power BI-Datenquellen](power-bi-data-sources.md).
+Mit Power BI Desktop können Sie Verbindungen mit Daten aus vielen verschiedenen Quellen herstellen. Eine vollständige Liste der verfügbaren Datenquellen wird am unteren Rand dieser Seite angezeigt.
 
 Wählen Sie zum Herstellen einer Verbindung mit Daten im Menüband **Start** den Eintrag **Daten abrufen** aus. Wenn Sie den Pfeil nach unten oder den Text **Daten abrufen** auf der Schaltfläche auswählen, wird das Datentypmenü **Am häufigsten verwendet** angezeigt, das in der folgenden Abbildung veranschaulicht wird:
 
@@ -234,7 +233,7 @@ Sie können eine PBIDS-Datei erstellen, um die Funktion **Daten abrufen** für B
 
 Wenn ein Autor eine PBIDS-Datei öffnet, wird Power BI Desktop geöffnet und fordert den Benutzer zur Eingabe von Anmeldeinformationen auf, um sich zu authentifizieren und eine Verbindung mit der Datenquelle herzustellen, die in der Datei angegeben ist. Das Dialogfeld „Navigation“ wird angezeigt, und der Benutzer muss die Tabellen aus dieser Datenquelle auswählen, die in das Modell geladen werden sollen. Benutzer müssen möglicherweise auch die Datenbanken auswählen, wenn sie nicht in der PBIDS-Datei angegeben werden. 
 
-Von diesem Zeitpunkt an kann der Benutzer mit dem Erstellen von Visualisierungen beginnen oder *Zuletzt verwendete Quellen* erneut besuchen, um einige neue Tabellen in das Modell zu laden. 
+Von diesem Zeitpunkt an kann der Benutzer mit dem Erstellen von Visualisierungen beginnen oder *Zuletzt verwendete Quellen* noch mal besuchen, um einige neue Tabellen in das Modell zu laden. 
 
 Zurzeit unterstützen PBIDS-Dateien nur eine einzelne Datenquelle in einer Datei. Wenn Sie mehr als eine Datenquelle angeben, tritt ein Fehler auf. 
 

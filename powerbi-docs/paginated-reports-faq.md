@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 12/03/2019
-ms.openlocfilehash: c1f8a274a17d85cf8f86d2e33ff63f3e9b686742
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.date: 10/04/2019
+ms.openlocfilehash: d8fd8490bda3be4217440a984e8b6da6fca7c5cf
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831237"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874795"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Paginierte Berichte in Power BI: HÄUFIG GESTELLTE FRAGEN 
 
 Dieser Artikel behandelt häufig gestellte Fragen zu paginierten Berichten. Diese Berichte sind umfassend formatiert und pixelgenau, somit eignet sich ihre Ausgabe ideal zum Drucken und Erstellen von PDFs. Sie werden als „paginiert“ bezeichnet, weil sie so formatiert sind, dass sie gut auf mehrere Seiten passen. Paginierte Berichte basieren auf der RDL-Berichtstechnologie von SQL Server Reporting Services (SSRS). 
 
-In diesem Artikel werden viele häufig gestellte Fragen zu paginierten Berichten in Power BI Premium und zum Berichts-Generator beantwortet, dem eigenständigen Tool zum Erstellen von paginierten Berichten. Sie benötigen eine Power BI Pro-Lizenz, um einen Bericht im Dienst zu veröffentlichen. Sie können paginierte Berichte in Ihrem Arbeitsbereich oder in Arbeitsbereichen veröffentlichen und freigeben, solange sich der Arbeitsbereich in einer Power BI Premium-Kapazität befindet. 
+In diesem Artikel werden viele häufig gestellte Fragen zu paginierten Berichten in Power BI Premium und zum Berichts-Generator beantwortet, dem eigenständigen Tool zum Erstellen von paginierten Berichten. Sie benötigen eine Power BI Pro-Lizenz, um einen Bericht im Dienst zu veröffentlichen. Sie können paginierte Berichte unter „Mein Arbeitsbereich“ oder in anderen Arbeitsbereichen veröffentlichen und freigeben, solange sich der Arbeitsbereich in einer Power BI Premium-Kapazität befindet. 
 
 ## <a name="administration"></a>Verwaltung
 
@@ -116,7 +116,21 @@ Sie erhalten eine Fehlermeldung, wenn Sie versuchen, eine Datei hochzuladen, die
 
 ### <a name="what-data-sources-do-you-support-currently-for-paginated-reports"></a>Welche Datenquellen werden derzeit für paginierte Berichte unterstützt?
 
-Eine Liste der Datenquellen finden Sie im Artikel [Unterstützte Datenquellen für paginierte Power BI-Berichte](paginated-reports-data-sources.md). 
+Folgende Datenquellen werden unterstützt: 
+
+- Power BI-Datasets (über einmaliges Anmelden (Single Sign-on, SSO))
+- Azure Analysis Services (über einmaliges Anmelden (SSO, Single Sign On) und oAuth)
+- Azure SQL Data Warehouse
+- Azure SQL-Datenbank (Benutzername/Kennwort, SSO und OAuth)
+- Verwaltete Azure SQL-Datenbank-Instanz über öffentlichen Endpunkt (Benutzername/Kennwort)
+- SQL Server*
+- Tabellen- und mehrdimensionale Modelle (DAX und MDX) von SQL Server Analysis Services (SSAS)* 
+- Oracle* 
+- Teradata* 
+
+* erfordert das lokale Gateway.
+
+Beim Zugriff auf SSAS über das Gateway benötigt der Benutzer, dessen Anmeldeinformationen gespeichert sind, erhöhte Berechtigungen in SSAS, um über das Gateway zu arbeiten.
 
 ### <a name="what-authentication-methods-do-you-support"></a>Welche Authentifizierungsmethoden werden unterstützt?
 

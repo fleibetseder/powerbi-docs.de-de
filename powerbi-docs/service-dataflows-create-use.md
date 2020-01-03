@@ -110,7 +110,7 @@ Großartig! Nun können Sie mit dem nächsten Schritt fortfahren, nämlich der P
 
 Wenn Ihr Dataflow gespeichert wurde, legen Sie die Aktualisierungshäufigkeit für alle Ihre verknüpften Datenquellen fest.
 
-Power BI-Dataflows verwenden den Power BI-Datenaktualisierungsprozess, um Ihre Daten auf dem neuesten Stand zu halten. Im **Power BI-Dienst** finden Sie im Abschnitt **Arbeitsbereich** eine Sammlung von Bereichen, in denen Ihre Informationen aufgelistet werden können, einschließlich Dataflows (s. Abbildung).
+Power BI-Dataflows verwenden den Power BI-Datenaktualisierungsprozess, um Ihre Daten auf dem neuesten Stand zu halten. Im **Power BI-Dienst** finden Sie im Abschnitt **Arbeitsbereich** eine Sammlung von Bereichen, in denen Ihre Informationen wie in der folgenden Abbildung veranschaulicht einschließlich Dataflows aufgelistet werden können.
 
 ![Verwalten von Dataflows im Power BI-Dienst](media/service-dataflows-create-use/dataflows-create-use_12.png)
 

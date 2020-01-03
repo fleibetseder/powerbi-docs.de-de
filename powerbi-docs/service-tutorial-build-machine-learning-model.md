@@ -80,7 +80,7 @@ Power Query leitet automatisch den Spaltentyp ab. Sie können den Spaltentyp än
 
 ![Ändern des Datentyps](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-08.png)
 
-Wählen Sie die Schaltfläche **Speichern und schließen** aus, um den Power Query-Editor zu schließen. Geben Sie einen Namen für den Dataflow an, und wählen Sie dann im Dialogfeld die Option **Speichern** aus, wie in der folgenden Abbildung gezeigt.
+Wählen Sie die Schaltfläche **Speichern und schließen** aus, um den Power Query-Editor zu schließen. Geben Sie einen Namen für den Dataflow an, und wählen Sie dann wie in der folgenden Abbildung veranschaulicht im Dialogfeld die Option **Speichern** aus.
 
 ![Speichern des Dataflows](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-09.png)
 
@@ -106,7 +106,7 @@ Als Nächstes führt Power BI eine vorläufige Überprüfung einer Stichprobe de
 
 ![Auswählen von „Weiter“](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-13.png)
 
-Im letzten Schritt müssen wir unserem Modell einen Namen geben. Nennen Sie das Modell _Vorhersage der Kaufabsicht_. Sie können wählen, ob Sie die Trainingszeit verkürzen möchten, um schnelle Ergebnisse zu erzielen, oder ob Sie die Trainingszeit erhöhen möchten, um das beste Modell zu erhalten. Wählen Sie dann **Speichern und trainieren** aus, um mit dem Training des Modells zu beginnen.
+Im letzten Schritt müssen wir unserem Modell einen Namen geben. Nennen Sie das Modell _Vorhersage der Kaufabsicht_. Sie können entscheiden, ob Sie die Trainingszeit verkürzen möchten, um schnelle Ergebnisse zu erzielen, oder ob Sie die Trainingszeit verlängern möchten, um das beste Modell zu erhalten. Wählen Sie dann **Speichern und trainieren** aus, um mit dem Training des Modells zu beginnen.
 
 ![Speichern des Modells](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-14.png)
 
@@ -145,7 +145,7 @@ Wählen Sie oben im Bericht die Schaltfläche **Modell anwenden** aus, um dieses
 
 Nach Aufforderung müssen Sie den Dataflow **Aktualisieren**, um eine Vorschau der Ergebnisse Ihres Modells anzuzeigen.
 
-Die Anwendung des Modells erzeugt zwei neue Entitäten mit dem Suffix **erweiterter <Modellname>** und **Erklärungen zu erweitertem <Modellnamen>**. In diesem Fall wird durch das Anwenden des Modells auf die **Onlinebesucher**-Entität **Online Visitors enriched Purchase Intent Prediction** (erweiterte Vorhersage der Kaufabsicht von Onlinebesuchern) erstellt, die die vorhergesagte Ausgabe des Modells einschließt, und **Online Visitors enriched Purchase Intent Prediction explanations** (Erklärungen der erweiterten Vorhersagen der Kaufabsicht von Onlinebesuchern), die die wichtigsten datensatzspezifischen Einflussfaktoren für die Vorhersage enthalten. 
+Die Anwendung des Modells erzeugt zwei neue Entitäten mit dem Suffix **erweiterter <Modellname>** und **Erklärungen zu erweitertem <Modellnamen>** . In diesem Fall wird durch das Anwenden des Modells auf die **Onlinebesucher**-Entität **Online Visitors enriched Purchase Intent Prediction** (erweiterte Vorhersage der Kaufabsicht von Onlinebesuchern) erstellt, die die vorhergesagte Ausgabe des Modells einschließt, und **Online Visitors enriched Purchase Intent Prediction explanations** (Erklärungen der erweiterten Vorhersagen der Kaufabsicht von Onlinebesuchern), die die wichtigsten datensatzspezifischen Einflussfaktoren für die Vorhersage enthalten. 
 
 Wenn Sie ein binäres Vorhersagemodell anwenden, werden vier Spalten mit dem vorhergesagten Ergebnis, der Wahrscheinlichkeitsbewertung, den wichtigsten datensatzspezifischen Einflussfaktoren für die Vorhersage und dem Erklärungsindex hinzugefügt, wobei jeweils der angegebene Spaltenname vorangestellt wird.  
 

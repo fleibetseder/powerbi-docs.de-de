@@ -33,7 +33,7 @@ Zusätzlich zu diesen dedizierten Toolfunktionen finden Sie auf der Registerkart
 
 Q&A-Tools sind nur in Power BI Desktop verfügbar und unterstützen derzeit ausschließlich den Importmodus.
 
-1. Öffnen Sie Power BI Desktop, und verwenden Sie Q&A, um eine Visualisierung zu erstellen. 
+1. Öffnen Sie Power BI Desktop, und verwenden Sie Q&A, um ein Visual zu erstellen. 
 2. Klicken Sie am Rand des Visuals auf das Zahnradsymbol. 
 
     ![Q&A-Visual: Zahnradsymbol](media/qna-visual-gear.png)

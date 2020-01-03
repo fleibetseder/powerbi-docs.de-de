@@ -46,7 +46,7 @@ Im Dialogfeld, das angezeigt wird, können Sie Ihrem Arbeitsbereich einen eindeu
 
 ![Neuen Arbeitsbereich benennen](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_03.jpg)
 
-Erweitern Sie als nächstes im Dialogfeld **Arbeitsbereich erstellen** den Bereich **Erweitert**. Dort können Sie die Einstellung **Dataflow storage (preview)** (Dataflowspeicher (Vorschauversion)) aktivieren.
+Erweitern Sie als Nächstes im Dialogfeld **Arbeitsbereich erstellen** den Bereich **Erweitert**. Dort können Sie die Einstellung **Dataflow storage (preview)** (Dataflowspeicher (Vorschauversion)) aktivieren.
 
 ![Erweiterte Einstellungen für den neuen Arbeitsbereich](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_04.jpg)
 

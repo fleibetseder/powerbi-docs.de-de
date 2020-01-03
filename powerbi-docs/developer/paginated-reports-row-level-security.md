@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/04/2019
-ms.openlocfilehash: 4db1f887c1dd889a06c02643a0270cc24ab9c45f
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.openlocfilehash: f28ffa89647272306dc9cecb5c93928d36805d2a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74311512"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880475"
 ---
 # <a name="implementing-row-level-security-in-embedded-paginated-reports-preview"></a>Implementieren der Sicherheit auf Zeilenebene in eingebetteten paginierten Berichten (Vorschau)
 
@@ -30,7 +30,7 @@ Beim Anwenden der Sicherheit auf Zeilenebene auf einen paginierten Power BI-Beri
 
 Verwenden Sie nach dem Zuweisen des Parameter zum **UserID**-Attribut die API [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup), um das Token für die Einbettung zu erhalten.
 
-## <a name="use-userid-as-a-filter-at-report-or-query-level"></a>Verwenden von UserID als Filter auf Berichts- oder Abfrageebene
+## <a name="use-uderid-as-a-filter-at-report-or-query-level"></a>Verwenden von UserID als Filter auf Berichts-oder Abfrageebene
 
 Sie können **UserID** als *Filter* oder in einer *Abfrage* für die Datenquelle im [Power BI-Berichts-Generator für paginierte Berichte](../report-builder-power-bi.md) verwenden.
 
@@ -38,43 +38,43 @@ Sie können **UserID** als *Filter* oder in einer *Abfrage* für die Datenquelle
 
 1. Wählen Sie im Fenster **Dataseteigenschaften** im linken Bereich die Option **Filter** aus.
 
-    ![Filter für den Power BI Berichts-Generator](media/embedded-paginated-reports-secure-data/filter.png)
+    ![Filter für Power BI Report Builder](media/embedded-paginated-reports-secure-data/filter.png)
 
 2. Wählen Sie im Dropdownmenü **Ausdruck** den Parameter aus, den Sie zum Filtern der Daten verwenden möchten.
 
-     ![Ausdruck im Power BI-Berichts-Generator](media/embedded-paginated-reports-secure-data/expression.png)
+     ![Ausdruck in Power BI Report Builder](media/embedded-paginated-reports-secure-data/expression.png)
 
 3. Klicken Sie auf die Funktionsschaltfläche **Wert**. 
 
-    ![Wert im Power BI-Berichts-Generator](media/embedded-paginated-reports-secure-data/function.png)
+    ![Wert in Power BI Report Builder](media/embedded-paginated-reports-secure-data/function.png)
 
 4. Wählen Sie im Fenster **Ausdruck** in der Liste **Kategorie** die Option **Integrierte Felder** aus.
 
-    ![Ausdruck im Power BI-Berichts-Generator](media/embedded-paginated-reports-secure-data/built-in-fields.png)
+    ![Ausdruck in Power BI Report Builder](media/embedded-paginated-reports-secure-data/built-in-fields.png)
 
 5. Wählen Sie in der Liste **Element** **UserID** aus, und klicken Sie auf **OK**.
 
-    ![UserID im Power BI-Berichts-Generator](media/embedded-paginated-reports-secure-data/userid.png)
+    ![UserID in Power BI Report Builder](media/embedded-paginated-reports-secure-data/userid.png)
 
 6. Vergewissern Sie sich, dass im Fenster **Dataseteigenschaften** der Ausdruck *Ihr ausgewählter Parameter = UserID* ist, und klicken Sie auf **OK**.
 
-    ![Dataseteigenschaften im Power BI Berichts-Generator](media/embedded-paginated-reports-secure-data/verify.png)
+    ![Dataseteigenschaften in Power BI Report Builder](media/embedded-paginated-reports-secure-data/verify.png)
 
 ### <a name="using-a-query"></a>Verwenden einer Abfrage
 
 1. Wählen Sie im Fenster **Dataseteigenschaften** im linken Bereich **Parameter** aus, und klicken Sie auf **Hinzufügen**.
 
-    ![Parameter im Power BI-Berichts-Generator](media/embedded-paginated-reports-secure-data/parameters.png)
+    ![Parameter in Power BI Report Builder](media/embedded-paginated-reports-secure-data/parameters.png)
 
-2. Geben Sie im Feld **Parametername** **\@UserID** ein, und fügen Sie im Feld **Parameterwert** **[&UserID]** hinzu.
+2. Geben Sie im Feld **Parametername** **@UserID** ein, und fügen Sie im Feld **Parameterwert** **[&UserID]** hinzu.
 
-    ![Parametername im Power BI-Berichts-Generator](media/embedded-paginated-reports-secure-data/parameter-name.png) 
+    ![Parametername in Power BI Report Builder](media/embedded-paginated-reports-secure-data/parameter-name.png) 
 
 3. Wählen Sie im linken Bereich **Abfrage** aus, fügen Sie in der Abfrage den Parameter **UserID** als Teil der Abfrage hinzu, und klicken Sie auf **OK**.
     > [!NOTE]
     > Im folgenden Screenshot wird der Farbparameter als Beispiel verwendet (whereFinalTable.Color = @UserID). Bei Bedarf ist es möglich, eine komplexere Abfrage zu erstellen.
 
-    ![Bearbeiten von Abfragen im Power BI-Berichts-Generator](media/embedded-paginated-reports-secure-data/query-edit.png)
+    ![Bearbeiten von Abfragen in Power BI Report Builder](media/embedded-paginated-reports-secure-data/query-edit.png)
 
 ## <a name="passing-the-configured-parameter-using-the-embed-token"></a>Übergeben des konfigurierten Parameters mit dem Einbettungstoken
 

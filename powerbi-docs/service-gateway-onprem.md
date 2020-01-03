@@ -1,26 +1,26 @@
 ---
 title: Lokales Datengateway
 description: Dieser Artikel bietet einen Überblick über das lokale Datengateway für Power BI. Mithilfe dieses Gateways können Sie mit DirectQuery-Datenquellen arbeiten. Sie können damit außerdem die Clouddatasets mit lokalen Daten aktualisieren.
-author: arthiriyer
-ms.author: arthii
+author: mgblythe
+ms.author: mblythe
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 07/15/2019
-ms.openlocfilehash: 96a006f60e08d35ef6bbe13a2033d866814ec5b2
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: b01a3ef5832541822aa9311df14289285f601b2b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74697541"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872433"
 ---
 # <a name="what-is-an-on-premises-data-gateway"></a>Was ist ein lokales Datengateway?
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Das lokale Datengateway fungiert als Brücke, die die schnelle und sichere Übertragung von Daten zwischen lokalen Daten (Daten, die nicht in der Cloud gespeichert sind) und mehreren Microsoft Cloud Services ermöglicht. Diese Clouddienste umfassen Power BI, PowerApps, Power Automate, Azure Analysis Services und Azure Logic Apps. Mithilfe eines Gateways können Organisationen Datenbanken und andere Datenquellen in ihren eigenen Netzwerken behalten, diese lokalen Daten aber sicher in Clouddiensten verwenden.
+Das lokale Datengateway fungiert als Brücke, die die schnelle und sichere Übertragung von Daten zwischen lokalen Daten (Daten, die nicht in der Cloud gespeichert sind) und mehreren Microsoft Cloud Services ermöglicht. Diese Clouddienst umfassen Power BI, PowerApps, Microsoft Flow, Azure Analysis Services und Azure Logic Apps. Mithilfe eines Gateways können Organisationen Datenbanken und andere Datenquellen in ihren eigenen Netzwerken behalten, diese lokalen Daten aber sicher in Clouddiensten verwenden.
 
 ## <a name="how-the-gateway-works"></a>So funktioniert das Gateway
 

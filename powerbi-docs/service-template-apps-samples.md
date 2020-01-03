@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/31/2019
 ms.author: tebercov
-ms.openlocfilehash: b1f04f6c9fd0381d6454eb0ef8649c3d7fec49b6
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: 1429221684e706b2db10790f26fe9765e0e9fe86
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74010916"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871301"
 ---
 # <a name="template-apps-samples"></a>Beispiele für Vorlagen-Apps
 
@@ -25,7 +25,6 @@ Die Beispiele erfordern möglicherweise zusätzliche Benutzerkonten mit dem rele
 
 ## <a name="downloadable-template-apps-samples"></a>Herunterladbare Beispiele für Vorlagen-Apps
 
-* [LinkedIn Sales Navigator Analytics-Integration](https://templateapps.blob.core.windows.net/sampletemplateapps/SalesNavigatorTemplate.pbix)
 * [Github](https://templateapps.blob.core.windows.net/sampletemplateapps/GitHub.pbix)
 * [Mailchimp](https://templateapps.blob.core.windows.net/sampletemplateapps/MailChimp.pbix)
 * [QuickBooks Online](https://templateapps.blob.core.windows.net/sampletemplateapps/QuickBooksOnline.pbix)
