@@ -9,17 +9,17 @@ ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
 ms.openlocfilehash: 623a0bbd187a997003ce7b82cc76d5c4fbe9ce44
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73868073"
 ---
 # <a name="directquery-model-troubleshooting-in-power-bi-desktop"></a>Problembehandlung für das DirectQuery-Model in Power BI Desktop
 
 Dieser Artikel richtet sich an Datenmodellierer, die Power BI DirectQuery-Modelle entwickeln, die entweder mit Power BI Desktop oder dem Power BI-Dienst entwickelt wurden. Es wird beschrieben, wie Sie Leistungsprobleme diagnostizieren und weitere Informationen darüber erhalten können, wie Berichte optimiert werden.
 
-## <a name="performance-analyzer"></a>Performance Analyzer
+## <a name="performance-analyzer"></a>Leistungsanalyse
 
 Es wird dringend empfohlen, die Diagnose von Leistungsproblemen in Power BI Desktop statt im Power BI-Dienst oder Power BI-Berichtsserver zu starten. Es ist häufig der Fall, dass Leistungsprobleme einfach auf dem Leistungsgrad der zugrunde liegenden Datenquelle basieren. Diese können in der isolierteren Umgebung von Power BI Desktop einfacher identifiziert und diagnostiziert werden, und bestimmte Komponenten können zunächst entfernt werden (wie das Power BI-Gateway). Nur wenn Leistungsprobleme nicht in Power BI Desktop vorhanden sind, sollte sich die Untersuchung auf die Eigenschaften des Berichts in Power BI fokussieren. Die [Leistungsanalyse](desktop-performance-analyzer.md) ist ein nützliches Tool zum Erkennen von Problemen in diesem Prozess.
 

@@ -1,19 +1,19 @@
 ---
 title: Codeausschnitte zum Migrieren von Inhalt von Power BI Embedded
 description: Hier finden Sie einige Codeausschnitte mit grundlegenden Vorgängen, die für die Migration von Inhalten erforderlich sind.
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 95c249fe2326d9075d920a415c707811d19e5387
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: f44e8b44157f62b6b80e16b18a2c80d11e43eb77
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880519"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "74265329"
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Codeausschnitte zum Migrieren von Inhalten aus der Power BI-Arbeitsbereichssammlung
 
@@ -232,7 +232,7 @@ Für diesen Codeausschnitt wird angenommen, dass sich das im Pushverfahren über
 [Power BI Embedded-Migrationstool](migrate-tool.md)  
 [Einbetten mit Power BI](embedding.md)  
 [Migrieren von Inhalten aus Power BI Embedded-Arbeitsbereichsammlungen zu Power BI](migrate-from-powerbi-embedded.md)  
-[Einbetten von Power BI-Dashboards, -Berichten und -Kacheln](embedding-content.md)  
+[Wie soll ich Power BI-Dashboards, -Berichte und -Kacheln einbetten?](embedding-content.md)  
 [Power BI Premium – Beschreibung](../service-premium-what-is.md)  
 [JavaScript-API-Git-Repository](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI-C#-Git-Repository](https://github.com/Microsoft/PowerBI-CSharp)  

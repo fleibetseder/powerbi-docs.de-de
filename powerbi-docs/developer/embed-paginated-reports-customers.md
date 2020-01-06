@@ -1,5 +1,5 @@
 ---
-title: Einbetten von paginierten Power BI-Berichten in Anwendungen für Kunden
+title: Einbetten von paginierten Berichten in Anwendungen für Kunden
 description: Hier erfahren Sie, wie Sie einen paginierten Power BI-Bericht mithilfe der Power BI-APIs in eine Anwendung integrieren oder einbetten.
 author: KesemSharabi
 ms.author: kesharab
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 11/04/2019
-ms.openlocfilehash: 5611d65ab800c14b2570a12078c08cce5dc58147
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 1493f628ce822afa020e300ff7428da059fcc65d
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877736"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "74311424"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers-preview"></a>Tutorial: Einbetten von paginierten Power BI-Berichten in eine Anwendung für Kunden (Vorschauversion)
 
@@ -38,11 +38,16 @@ Sie benötigen Folgendes, um direkt mit dem Tutorial loslegen zu können:
 
 Wenn Sie kein Azure-Abonnement besitzen, erstellen Sie ein [kostenloses Konto](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), bevor Sie beginnen.
 
+> [!IMPORTANT]
+> * Sie müssen einen **Dienstprinzipal** verwenden. Hauptbenutzer werden nicht unterstützt.
+> * Datenquellen, die Single Sign-on (SSO) erfordern, werden nicht unterstützt.
+> * Power BI-DataSet wird als [Datenquelle](../service-get-data.md) nicht unterstützt.
+
 ## <a name="set-up-your-power-bi-environment"></a>Einrichten der Power BI-Umgebung
 
 Sie müssen einer dedizierten Kapazität einen Arbeitsbereich zuweisen und den Bericht in den Arbeitsbereich hochladen, um einen paginierten Bericht einzubetten.
 
-### <a name="create-an-app-workspace"></a>Erstellen eines App-Arbeitsbereichs
+### <a name="create-an-app-workspace"></a>App-Arbeitsbereich erstellen
 
 Da Sie einen [Dienstprinzipal](embed-service-principal.md) für die Anmeldung bei Ihrer Anwendung nutzen, müssen Sie [neue Arbeitsbereiche](../service-create-the-new-workspaces.md) verwenden. Als *Dienstprinzipal* müssen Sie außerdem Administrator oder Mitglied des App-Arbeitsbereichs sein, der im Zusammenhang mit Ihrer App steht.
 

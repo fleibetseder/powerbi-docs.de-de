@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/12/2018
 ms.openlocfilehash: c3e2327131ae82fa025236c9242476466b6d9074
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73864060"
 ---
 # <a name="power-bi-embedded-performance-best-practices"></a>Bewährte Methoden für die Leistung von Power BI Embedded
@@ -94,7 +94,7 @@ Zwischengespeicherte Daten werden gerendert, wenn sie verfügbar sind, es wird a
 
 [Weitere Informationen zum Ereignishandling](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Handling-Events).
 
-### <a name="performance-analyzer"></a>Performance Analyzer
+### <a name="performance-analyzer"></a>Leistungsanalyse
 
 Um die Leistung der Berichtselemente zu untersuchen, können Sie die Leistungsanalyse in Power BI Desktop verwenden.
 Mit der Leistungsanalyse können Sie Protokolle aufzeichnen und anzeigen, die die Leistung jedes Ihrer Berichtselemente messen.

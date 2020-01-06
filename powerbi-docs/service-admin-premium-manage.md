@@ -1,20 +1,20 @@
 ---
 title: Konfigurieren und Verwalten von Kapazitäten in Power BI Premium
 description: Erfahren Sie, wie Sie Power BI Premium verwalten und den Zugriff auf Inhalte für Ihre gesamte Organisation aktivieren können.
-author: mgblythe
-ms.author: mblythe
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/17/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 04f5b1f639b7abdbbe789a23e5d7a54790ad50a5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e60aed5b538eab3b630f42a665d96256cc07879c
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73857100"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "74700094"
 ---
 # <a name="configure-and-manage-capacities-in-power-bi-premium"></a>Konfigurieren und Verwalten von Kapazitäten in Power BI Premium
 

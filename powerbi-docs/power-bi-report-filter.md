@@ -10,10 +10,10 @@ ms.date: 09/06/2019
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: ab7d8a34211b9cb8addd90daf2cbce7d22f10e61
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73875148"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports"></a>Neue Filteroberfläche in Power BI-Berichten
@@ -53,7 +53,7 @@ Wenn Sie das **neue Design** im Power BI-Dienst aktiviert haben ![Neues Design e
 Wenn Sie das neue Design nicht aktiviert haben, können Sie die neue Filteroberfläche mithilfe der folgenden Schritte dennoch anzeigen:
 
 1. Klicken Sie in der Inhaltsliste für einen Arbeitsbereich im Power BI-Dienst auf die Registerkarte **Berichte**.
-2. Suchen Sie den zu aktivierenden Bericht, und klicken Sie für diesen Bericht auf das **Einstellungssymbol** ![Berichteinstellungssymbol](media/power-bi-report-filter/power-bi-settings-icon.png).
+2. Suchen Sie den zu aktivierenden Bericht, und klicken Sie für diesen Bericht auf das **Einstellungssymbol**![Berichteinstellungssymbol](media/power-bi-report-filter/power-bi-settings-icon.png).
 3. Wählen Sie unter **Benutzeroberfläche zur Filterung** die Option **Aktualisierten Filterbereich aktivieren und Filter im Visualheader für diesen Bericht anzeigen** aus.
 
     ![Aktivieren des Bereichs für aktualisierte Filter](media/power-bi-report-filter/power-bi-service-filter-enable.png)

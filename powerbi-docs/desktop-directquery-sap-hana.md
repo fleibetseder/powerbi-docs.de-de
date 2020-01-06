@@ -10,10 +10,10 @@ ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 8d5923c111debb14aab46977d42f3357837d9399
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73878291"
 ---
 # <a name="directquery-and-sap-hana"></a>DirectQuery und SAP HANA
@@ -148,5 +148,5 @@ Weitere Informationen zu DirectQuery finden Sie in den folgenden Ressourcen:
 * [DirectQuery in Power BI](desktop-directquery-about.md)
 * [Von DirectQuery unterstützte Datenquellen](desktop-directquery-data-sources.md)
 * [DirectQuery und SAP BW](desktop-directquery-sap-bw.md)
-* [Lokales Datengateway](service-gateway-onprem.md)
+* [On-premises data gateway (Lokales Datengateway)](service-gateway-onprem.md)
 

@@ -1,20 +1,20 @@
 ---
 title: Aktualisieren von Daten in Power BI
 description: Dieser Artikel beschreibt die Datenaktualisierungsfeatures von Power BI und ihre Abhängigkeiten auf konzeptioneller Ebene.
-author: mgblythe
+author: maggiesMSFT
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/14/2019
-ms.author: mblythe
+ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 422d742748fc6880b0636bd3a0c5de7011a3ff0a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: bdb5b797146dae0bd8c6a70163a245f44430da8c
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73860790"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "74791688"
 ---
 # <a name="data-refresh-in-power-bi"></a>Aktualisieren von Daten in Power BI
 
@@ -54,7 +54,7 @@ Da Power BI die Daten zwischenspeichert, können die Größen der Datasets im Im
 | --- | --- |
 | Gemeinsam genutzt, A1, A2 oder A3 | 1 GB |
 | A4 oder P1 | 3GB |
-| A5 oder P2 | 6GB |
+| A5 oder P2 | 6 GB |
 | A6 oder P3 | 10 GB |
 | | |
 
@@ -92,7 +92,7 @@ Ein Power BI-Aktualisierungsvorgang kann aus mehreren Aktualisierungstypen beste
 
 #### <a name="data-refresh"></a>Datenaktualisierung
 
-Für Power BI-Benutzer bedeutet die Aktualisierung von Daten in der Regel den Import von Daten aus den ursprünglichen Datenquellen in ein Dataset, entweder basierend auf einem Aktualisierungszeitplan oder bedarfsgesteuert. Sie können mehrere tägliche Aktualisierungen des Datasets durchführen, was notwendig sein kann, wenn sich die zugrunde liegenden Quelldaten häufig ändern. Power BI begrenzt Datasets auf gemeinsam genutzter Kapazität auf acht tägliche Aktualisierungen. Wenn das Dataset sich auf einer Premium-Kapazität befindet, können Sie in den Dataseteinstellungen bis zu 48 Aktualisierungen pro Tag planen. Weitere Informationen finden Sie später in diesem Artikel unter „Konfigurieren geplanter Aktualisierungen“.
+Für Power BI-Benutzer bedeutet die Aktualisierung von Daten in der Regel den Import von Daten aus den ursprünglichen Datenquellen in ein Dataset, entweder basierend auf einem Aktualisierungszeitplan oder bedarfsgesteuert. Sie können mehrere tägliche Aktualisierungen des Datasets durchführen, was notwendig sein kann, wenn sich die zugrunde liegenden Quelldaten häufig ändern. Power BI begrenzt Datasets auf gemeinsam genutzter Kapazität auf acht tägliche Aktualisierungen. Wenn das Dataset sich auf einer Premium-Kapazität befindet, können Sie in den Dataseteinstellungen bis zu 48 Aktualisierungen pro Tag planen. Weitere Informationen finden Sie unter [Konfigurieren von geplanten Aktualisierungen](#configure-scheduled-refresh) weiter unten in diesem Artikel.
 
 Es ist auch wichtig, darauf hinzuweisen, dass die Beschränkung der gemeinsamen Kapazität für tägliche Aktualisierungen sowohl für geplante als auch für API-Aktualisierungen gilt. Sie können auch eine bedarfsgesteuerte Aktualisierung auslösen, indem Sie **Jetzt aktualisieren** im Datasetmenü auswählen, wie der folgende Screenshot zeigt. Bedarfsgesteuerte Aktualisierungen sind nicht in der Aktualisierungseinschränkung enthalten. Beachten Sie auch, dass Datasets in einer Premium-Kapazität keine Einschränkungen für API-Aktualisierungen enthalten. Wenn Sie daran interessiert sind, eine eigene Aktualisierungslösung mithilfe der Power BI-REST-API zu erstellen, lesen Sie [Datasets – Dataset aktualisieren](/rest/api/power-bi/datasets/refreshdataset).
 
@@ -105,7 +105,14 @@ Es ist auch wichtig, darauf hinzuweisen, dass die Beschränkung der gemeinsamen 
 
 Wenn Sie Ihre Datasets und Berichte auf der Grundlage einer Power BI Desktop-Datei, einer Excel-Arbeitsmappe oder einer durch Trennzeichen getrennten Datei (CSV, Comma Separated Value) auf OneDrive oder SharePoint Online erstellt haben, führt Power BI eine andere Art der Aktualisierung durch, die als OneDrive-Aktualisierung bekannt ist. Weitere Informationen finden Sie unter [Abrufen von Daten aus Dateien für Power BI](service-get-data-from-files.md).
 
-Im Gegensatz zu einer Datasetaktualisierung, in der Power BI Daten aus einer Datenquelle in ein Dataset importiert, synchronisiert die OneDrive-Aktualisierung Datasets und Berichte mit ihren Quelldateien. Standardmäßig prüft Power BI etwa stündlich, ob ein Dataset, das mit einer Datei auf OneDrive oder SharePoint Online verbunden ist, synchronisiert werden muss. Um vergangene Synchronisationszyklen zu überprüfen, überprüfen Sie die Registerkarte OneDrive im Aktualisierungsverlauf. Der folgende Screenshot zeigt einen vollständigen Synchronisierungszyklus für ein Beispieldataset.
+Im Gegensatz zu einer Datasetaktualisierung, in der Power BI Daten aus einer Datenquelle in ein Dataset importiert, synchronisiert die OneDrive-Aktualisierung Datasets und Berichte mit ihren Quelldateien. Standardmäßig prüft Power BI etwa stündlich, ob ein Dataset, das mit einer Datei auf OneDrive oder SharePoint Online verbunden ist, synchronisiert werden muss.
+
+> [!IMPORTANT]
+> Gehen Sie bei der Behandlung der Dateiverwaltung auf OneDrive umsichtig vor. Wenn Sie eine OneDrive-Datei als Datenquelle festlegen, verweist Power BI beim Ausführen der Aktualisierung auf die Element-ID der Datei, was in bestimmten Szenarien zu Problemen führen kann. Stellen Sie sich das Szenario vor, in dem Sie über eine Masterdatei _A_ sowie eine Kopie _B_ dieser Datei für die Produktion verfügen und Sie konfigurieren die OneDrive-Aktualisierung für Datei B. Wenn Sie dann Datei A über Datei B _kopieren_, wird durch den Kopiervorgang die alte Datei B gelöscht und eine neue Datei B mit einer anderen Element-ID erstellt, sodass die OneDrive-Aktualisierung nicht mehr funktioniert. Stattdessen sollten Sie Datei B hochladen und ersetzen, wodurch diese dieselbe Element-ID beibehält.
+
+Sie können die Datei an einen anderen Speicherort verschieben (z. B. mittels Drag & Drop), dann funktioniert die Aktualisierung weiterhin, da PBI die fileID nach wie vor kennt. Wenn Sie diese Datei jedoch an einen anderen Speicherort kopieren, werden eine neue Instanz der Datei und eine neue fileID erstellt. Daher ist der Verweis auf die Power BI-Datei nicht mehr gültig, und die Aktualisierung schlägt fehl.
+
+Um vergangene Synchronisationszyklen zu überprüfen, überprüfen Sie die Registerkarte OneDrive im Aktualisierungsverlauf. Der folgende Screenshot zeigt einen vollständigen Synchronisierungszyklus für ein Beispieldataset.
 
 ![Verlauf aktualisieren](media/refresh-data/refresh-history.png)
 
@@ -276,7 +283,7 @@ In dem Bereich **geplante Aktualisierung** definieren Sie das Aktualisierungsint
 
 ![Konfigurieren von geplanten Aktualisierungen](media/refresh-data/configure-scheduled-refresh.png)
 
-Nachdem Sie einen Aktualisierungszeitplan konfiguriert haben, werden Sie auf der Seite mit den Dataseteinstellungen über die nächste Aktualisierungszeit informiert, wie im obigen Screenshot dargestellt. Wenn Sie die Daten früher aktualisieren möchten, z. B. um Ihr Gateway und Ihre Datenquellenkonfiguration zu testen, führen Sie eine bedarfsgesteuerte Aktualisierung durch, indem Sie die Option **Jetzt aktualisieren** im Datasetmenü im Navigationsbereich verwenden. Bedarfsgesteuerte Aktualisierungen haben keinen Einfluss auf die nächste geplante Aktualisierungszeit, aber sie zählen bei der Beschränkung der täglichen Aktualisierungen, wie bereits früher in diesem Artikel erläutert.
+Nachdem Sie einen Aktualisierungszeitplan konfiguriert haben, werden Sie auf der Seite mit den Dataseteinstellungen über die nächste Aktualisierungszeit informiert, wie im obigen Screenshot dargestellt. Wenn Sie die Daten früher aktualisieren möchten, z.B. um Ihr Gateway und Ihre Datenquellenkonfiguration zu testen, führen Sie eine bedarfsgesteuerte Aktualisierung durch, indem Sie die Option **Jetzt aktualisieren** im Datasetmenü im Navigationsbereich verwenden. Bedarfsgesteuerte Aktualisierungen wirken sich nicht auf den nächsten geplanten Aktualisierungszeitpunkt aus.
 
 Beachten Sie auch, dass die konfigurierte Aktualisierungszeit möglicherweise nicht genau der Zeitpunkt ist, zu dem Power BI den nächsten geplanten Prozess startet. Power BI startet geplante Aktualisierungen auf bestmögliche Weise. Das Ziel ist, die Aktualisierung innerhalb von 15 Minuten des geplanten Zeitfensters zu starten, aber es kann zu einer Verzögerung von bis zu einer Stunde kommen, wenn der Dienst die benötigten Ressourcen nicht früher zuweisen kann.
 

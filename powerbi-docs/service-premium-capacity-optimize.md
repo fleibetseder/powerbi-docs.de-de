@@ -1,8 +1,8 @@
 ---
 title: Optimieren von Microsoft Power BI Premium-Kapazitäten
 description: Beschreibt Optimierungsstrategien für Power BI Premium-Kapazitäten.
-author: mgblythe
-ms.author: mblythe
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: d2e8ede356ed015c4c35b311ca58d35366324b9a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4d03419105244b7fddafea3b26b69e4f4f5f874c
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871910"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "74958538"
 ---
 # <a name="optimizing-premium-capacities"></a>Optimieren von Premium-Kapazitäten
 
@@ -268,5 +268,3 @@ Dieser Artikel wurde von Peter Myers, Data Platform MVP und unabhängiger BI-Exp
 > [Szenarios mit Premium-Kapazitäten](service-premium-capacity-scenarios.md)   
   
 Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
-
-||||||

@@ -1,21 +1,21 @@
 ---
 title: Problembehandlung für Kachelfehler
 description: Häufig in Power BI auftretende Fehler bei der Aktualisierung einer Kachel
-author: mgblythe
+author: maggiesMSFT
 ms.reviewer: kayu
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: troubleshooting
 ms.date: 12/06/2018
-ms.author: mblythe
+ms.author: maggies
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: dbae4c82fb350242ed0fefadeeec217666fc3005
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 04ee1386547ed888531ea139227969d49629863d
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877503"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "74699542"
 ---
 # <a name="troubleshooting-tile-errors"></a>Problembehandlung für Kachelfehler
 Im Folgenden sind häufige Fehler, die Ihnen möglicherweise in Verbindung mit Kacheln begegnen, gemeinsam mit den entsprechenden Erklärungen aufgeführt.

@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2019
 ms.author: v-pemyer
-ms.openlocfilehash: b674c621c30491a00c529af7f2fcd9eb87f3ecfa
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: a19e8148a719186cbaefe3203d58a5a98687c067
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74834768"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223626"
 ---
 # <a name="report-page-drillthrough"></a>Drillthrough für Berichtsseiten
 
@@ -63,7 +63,7 @@ Zur Entwurfszeit des Berichts werden wir die folgenden Vorgehensweisen empfohlen
 - **Auffinden:** Helfen Sie, die Aufmerksamkeit auf eine Drillthroughseite zu lenken, indem Sie einen Text für das Symbol im Visualheader festlegen oder Anweisungen zu einem Textfeld hinzufügen. Alternativ können Sie eine Überlagerung entwerfen, wie im [diesem Blogbeitrag](https://alluringbi.com/2019/10/23/overlays-for-true-self-serve-reporting/) beschrieben.
 
 > [!TIP]
-> Außerdem ist es möglich, Drillthroughs für Ihre paginierten Power BI-Berichte zu konfigurieren. Dazu fügen Sie zu den Power BI-Berichten Links hinzu. Über Links können [URL-Parameter](/blog/url-parameters-for-paginated-reports-are-now-available/) definiert werden.
+> Außerdem ist es möglich, Drillthroughs für Ihre paginierten Power BI-Berichte zu konfigurieren. Dazu fügen Sie zu den Power BI-Berichten Links hinzu. Über Links können [URL-Parameter](https://powerbi.microsoft.com/blog/url-parameters-for-paginated-reports-are-now-available/) definiert werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

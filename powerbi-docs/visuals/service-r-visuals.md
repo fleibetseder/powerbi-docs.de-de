@@ -10,10 +10,10 @@ ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: efbeda396217c1a715f9a5d7ae4827c5f8d09a25
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74698990"
 ---
 # <a name="r-visuals-in-power-bi"></a>R-Visuals in Power BI
@@ -33,7 +33,7 @@ Die folgende Abbildung zeigt ein Power BI-Dashboard mit einer Sammlung von R-Vis
 
 R-Visualisierungen werden in einem [Power BI Desktop-Bericht](../desktop-get-the-desktop.md) wie dem in der folgenden Abbildung dargestellten Bericht erstellt.
 
-![Desktopbericht mit zwei visuellen Elementen](media/service-r-visuals/power-bi-r-visual-desktop.png)
+![Desktopbericht mit zwei Visuals](media/service-r-visuals/power-bi-r-visual-desktop.png)
 
 Sobald der Bericht in **Power BI Desktop** erstellt wurde, können Sie den Bericht, der mindestens eine R-Visualisierung enthält, im Power BI-Dienst veröffentlichen. 
 
@@ -113,7 +113,7 @@ R-Pakete sind Sammlungen von R-Funktionen, Daten und kompiliertem Code, die in e
 
 In **Power BI Desktop** können alle R-Pakettypen ohne Einschränkung verwendet werden. Sie können R-Pakete für die Verwendung in **Power BI Desktop** selbst installieren (z.B. mit [RStudio IDE](https://www.rstudio.com/)).
 
-R-Visualisierungen im **Power BI-Dienst** werden von den Paketen im Abschnitt **Unterstützte Pakete** [dieses Artikels](../service-r-packages-support.md) unterstützt. Wenn Sie ein für Sie interessantes Paket nicht in der Liste unterstützter Pakete finden, können Sie die Unterstützung für das Paket anfordern. Informationen zum Anfordern von Support finden Sie unter [R-Pakete im Power BI-Dienst](../service-r-packages-support.md).
+R-Visualisierungen im **Power BI-Dienst** werden von den Paketen im Abschnitt **Unterstützte Pakete**[dieses Artikels](../service-r-packages-support.md) unterstützt. Wenn Sie ein für Sie interessantes Paket nicht in der Liste unterstützter Pakete finden, können Sie die Unterstützung für das Paket anfordern. Informationen zum Anfordern von Support finden Sie unter [R-Pakete im Power BI-Dienst](../service-r-packages-support.md).
 
 ### <a name="requirements-and-limitations-of-r-packages"></a>Voraussetzungen und Einschränkungen für R-Pakete
 Es gibt eine Reihe von Voraussetzungen und Einschränkungen für R-Pakete:

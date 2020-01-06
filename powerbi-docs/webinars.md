@@ -8,26 +8,18 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 44da3a20c203bfc50be08b0ed91efa6dfd998204
-ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
+ms.openlocfilehash: 73b439b870a4f931c2db680c0067a6ea2fdf54ff
+ms.sourcegitcommit: d5de66b591c2e1de979ce0e3ce5e5b6e1f2a08db
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74882749"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548557"
 ---
 # <a name="power-bi-webinars"></a>Power BI-Webinare
 
 Registrieren Sie sich für unsere nächsten Livewebinare, oder sehen Sie sich unsere aufgezeichneten Sitzungen an.
 
 ## <a name="upcoming-webinars"></a>Kommende Webinare
-
-**Analytics in Azure virtual event: Accelerate time to insight with Azure Synapse Analytics** (Analyse von virtuellen Azure-Ereignissen: Schneller zur Erkenntnis mit Azure Synapse Analytics)
-<br>von Gayle Sheppard und John MacIntyre
-<br>[Jetzt registrieren](https://info.microsoft.com/WW-Analytics-in-Azure-virtual-event-Accelerate-Time-to-Insight-with-Azure-Synapse-Analytics-Registration.html?ocid=AID2482920_QSG_373413)
-
-**Nine Trends Shaping the Future of Big Data Analytics** (Neun Trends, die die Zukunft von Big Data-Analysen bestimmen)
-<br>von Vijay Gopalakrishnan
-<br>[Registrieren Sie sich, um am 18. Dezember bei der Übertragung dabei zu sein.](https://info.microsoft.com/ww-landing-Nine-Trends-Shaping-the-Future-of-Big-Data-Analytics.html?Lcid=EN-US)
 
 **Wie KI Business Intelligence verändert: drei Beispiele**
 <br>von Justyna Lucznik
@@ -39,6 +31,10 @@ Registrieren Sie sich für unsere nächsten Livewebinare, oder sehen Sie sich un
 
 Machen Sie sich mithilfe dieser beliebten On-Demand-Webinare mit Power BI vertraut.
 
+**Analytics in Azure virtual event: Accelerate time to insight with Azure Synapse Analytics** (Analyse von virtuellen Azure-Ereignissen: Schneller zur Erkenntnis mit Azure Synapse Analytics)
+<br>von Gayle Sheppard und John MacIntyre
+<br>[Jetzt registrieren und ansehen](https://info.microsoft.com/Analytics-in-Azure-virtual-event-Accelerate-Time-to-Insight-with-Azure-Synapse-Analytics-On-Demand-Registration.html)
+
 **How Microsoft Is Changing BI Data Protection** (Wie Microsoft den Schutz von BI-Daten ändert)
 <br>von Anton Fritz und Adi Regev
 <br>[Jetzt registrieren und ansehen](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
@@ -46,6 +42,10 @@ Machen Sie sich mithilfe dieser beliebten On-Demand-Webinare mit Power BI vertra
 **Power BI and the Future of Modern and Enterprise BI** (Power BI und die Zukunft der modernen und der Unternehmens-BI)
 <br>von Arun Ulag und Amir Netz
 <br>[Jetzt registrieren und ansehen](https://info.microsoft.com/ww-landing-The-Future-of-Modern-and-Enterprise-BI-video.html?LCID=EN-US)
+
+**Nine Trends Shaping the Future of Big Data Analytics** (Neun Trends, die die Zukunft von Big Data-Analysen bestimmen)
+<br>von Vijay Gopalakrishnan
+<br>[Jetzt registrieren und ansehen](https://info.microsoft.com/ww-landing-Nine-Trends-Shaping-the-Future-of-Big-Data-Analytics.html?Lcid=EN-US)
 
 **Getting Started with Power BI** (Erste Schritte mit Power BI, in englischer Sprache)
 <br>von Miguel Martinez

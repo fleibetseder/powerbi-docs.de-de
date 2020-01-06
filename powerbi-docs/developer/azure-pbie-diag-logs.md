@@ -1,18 +1,18 @@
 ---
 title: Diagnoseprotokollierung für den Power BI Embedded-Dienst in Azure | Microsoft-Dokumentation
 description: In diesem Artikel erfahren Sie mehr über das Einrichten der Diagnoseprotokollierung für den Power BI Embedded-Dienst in Azure.
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
-ms.openlocfilehash: 9065feef76050c6a04e1ecf8ec7907b74be4b0ce
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 362c765fb5e739563b8d21eaed53304eddce8acc
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875985"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "74265704"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Diagnoseprotokollierung für Power BI Embedded in Azure
 
@@ -110,7 +110,7 @@ Die Kategorie „Engine“ weist die Ressource an, die folgenden Ereignisse zu p
 |    Ende der Abfrage    |    Zeichnet alle Abfrageendereignisse seit Beginn der Ablaufverfolgung auf.    |
 |    Ende der Vertipaq-Abfrage    |    Zeichnet alle VertiPaq SE-Abfrageendereignisse seit Beginn der Ablaufverfolgung auf.    |
 |    Überwachung von Abmeldungsereignissen    |    Zeichnet alle Trennungen von den Engine-Ereignissen seit Beginn der Ablaufverfolgung auf.    |
-|    Fehler (Error)    |    Zeichnet alle Engine-Fehlerereignisse seit Beginn der Ablaufverfolgung auf.    |
+|    Fehler    |    Zeichnet alle Engine-Fehlerereignisse seit Beginn der Ablaufverfolgung auf.    |
 
 <br>
 <br>
@@ -130,9 +130,9 @@ Die Kategorie „Engine“ weist die Ressource an, die folgenden Ereignisse zu p
 | SessionType | Benutzer | Sitzungstyp (welche Entität hat den Vorgang verursacht). |
 | ProgressTotal | 0 | Status gesamt. |
 | IntegerData | 0 | Integer-Daten. |
-| Severity | 0 | Schweregrad einer Ausnahme. |
+| Schweregrad | 0 | Schweregrad einer Ausnahme. |
 | Vorgang erfolgreich | 1 | 1 = Erfolgreiche Ausführung 0 = Fehlerhafte Ausführung (z.B. gibt der Wert „1“ die erfolgreiche Ausführung einer Berechtigungsüberprüfung und „0“ einen Fehler bei dieser Überprüfung an). |
-| Fehler (Error) | 0 | Fehlernummer eines bestimmten Ereignisses. |
+| Fehler | 0 | Fehlernummer eines bestimmten Ereignisses. |
 | ConnectionID | 3 | Eindeutige Verbindungs-ID. |
 | DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | ID des Datasets, in dem die Anweisung des Benutzers ausgeführt wird. |
 | SessionID | 3D063F66-A111-48EE-B960-141DEBDA8951 | Sitzungs-GUID. |

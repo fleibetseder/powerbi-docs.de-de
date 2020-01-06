@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Get started
 ms.openlocfilehash: 7edfe46173b1d9b2537c5fd980b245af09fd1f53
-ms.sourcegitcommit: 57ec4d51744b89bd695e6c62184c21342f2eae83
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74178283"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Registrieren einer US-Behörde für den Power BI-Dienst
@@ -40,7 +40,7 @@ Wenn Ihre Organisation neuer Kunde der **Office Government Cloud** ist, gehen Si
 > Diese Schritte sollten vom Portaladministrator ausgeführt werden.
 >
 
-1. Wechseln Sie zu [https://products.office.com/government/office-365-web-services-for-government](https://products.office.com/government/office-365-web-services-for-government).
+1. Navigieren Sie zu [https://products.office.com/government/office-365-web-services-for-government](https://products.office.com/government/office-365-web-services-for-government).
 
 >[!NOTE]
 >Wenn Sie sich nicht sofort für Office Government Cloud registrieren möchten, wenden Sie sich an Ihren Vertriebsmitarbeiter.
@@ -79,7 +79,7 @@ Im Folgenden sind die zusätzlichen Informationen zum Registrieren für **Power 
 ### <a name="reseller-power-bi-trial-to-pro-customer-onboarding"></a>Onboarding von der Power BI-Testversion für Wiederverkäufer auf einen Pro-Kunden
 Wechseln Sie zu **Abrechnung > Abonnements**, und wählen Sie das Abonnement **Power BI Pro for Government**. Dort wird Folgendes angezeigt:
 
-* Verfügbarkeit
+* Verfügbar
 * Zugewiesen
 * Links für das Zuweisen zu Benutzern
 * Wenn noch die Testversion zugewiesen ist:
