@@ -1,28 +1,28 @@
 ---
 title: Lokales Datengateway
 description: Dieser Artikel bietet einen Überblick über das lokale Datengateway für Power BI. Mithilfe dieses Gateways können Sie mit DirectQuery-Datenquellen arbeiten. Sie können damit außerdem die Clouddatasets mit lokalen Daten aktualisieren.
-author: mgblythe
-ms.author: mblythe
+author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 07/15/2019
-ms.openlocfilehash: b01a3ef5832541822aa9311df14289285f601b2b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 96a006f60e08d35ef6bbe13a2033d866814ec5b2
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872433"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "74697541"
 ---
 # <a name="what-is-an-on-premises-data-gateway"></a>Was ist ein lokales Datengateway?
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Das lokale Datengateway fungiert als Brücke, die die schnelle und sichere Übertragung von Daten zwischen lokalen Daten (Daten, die nicht in der Cloud gespeichert sind) und mehreren Microsoft Cloud Services ermöglicht. Diese Clouddienst umfassen Power BI, PowerApps, Microsoft Flow, Azure Analysis Services und Azure Logic Apps. Mithilfe eines Gateways können Organisationen Datenbanken und andere Datenquellen in ihren eigenen Netzwerken behalten, diese lokalen Daten aber sicher in Clouddiensten verwenden.
+Das lokale Datengateway fungiert als Brücke, die die schnelle und sichere Übertragung von Daten zwischen lokalen Daten (Daten, die nicht in der Cloud gespeichert sind) und mehreren Microsoft Cloud Services ermöglicht. Diese Clouddienste umfassen Power BI, PowerApps, Power Automate, Azure Analysis Services und Azure Logic Apps. Mithilfe eines Gateways können Organisationen Datenbanken und andere Datenquellen in ihren lokalen Netzwerken behalten, diese lokalen Daten aber sicher in Clouddiensten verwenden.
 
-## <a name="how-the-gateway-works"></a>So funktioniert das Gateway
+## <a name="how-the-gateway-works"></a>Funktionsweise des Gateways
 
 ![Übersicht über Gateways](media/service-gateway-onprem/on-premises-data-gateway.png)
 
@@ -30,11 +30,11 @@ Weitere Informationen zur Funktionsweise des Gateways finden Sie unter [Architek
 
 ## <a name="types-of-gateways"></a>Arten von Gateways
 
-Es gibt zwei verschiedene Arten von Gateways für zwei verschiedene Szenarios:
+Für die unterschiedlichen Szenarios gibt es zwei verschiedene Arten von Gateways:
 
-* **Lokales Datengateway** ermöglicht mehreren Benutzern, eine Verbindung mit mehreren lokalen Datenquellen herzustellen. Sie können ein lokales Datengateway mit allen unterstützten Diensten mit einer einzigen Gatewayinstallation verwenden. Dieses Gateway eignet sich für komplexe Szenarios, in denen mehrere Benutzer auf mehrere Datenquellen zugreifen.
+* Das **Lokale Datengateway** ermöglicht mehreren Benutzern das Herstellen einer Verbindung mit mehreren lokalen Datenquellen. Sie können ein lokales Datengateway mit allen unterstützten Diensten mit einer einzigen Gatewayinstallation verwenden. Dieses Gateway eignet sich für komplexe Szenarios, in denen mehrere Benutzer auf mehrere Datenquellen zugreifen.
 
-* **Lokales Datengateway (persönlicher Modus)** ermöglicht einem Benutzer die Verbindung mit Datenquellen und kann nicht für andere Benutzer freigegeben werden. Ein lokales Datengateway (persönlicher Modus) kann nur mit Power BI verwendet werden. Dieses Gateway eignet sich für Szenarios, in denen Sie die einzige Person sind, die Berichte erstellt, und Sie Datenquellen nicht für andere Personen freigeben müssen.
+* Das **lokale Datengateway (persönlicher Modus)** ermöglicht einem Benutzer das Herstellen einer Verbindung mit Datenquellen und kann nicht für andere Benutzer freigegeben werden. Ein lokales Datengateway (persönlicher Modus) kann nur mit Power BI verwendet werden. Dieses Gateway eignet sich für Szenarios, in denen Sie die einzige Person sind, die Berichte erstellt, und in denen Sie Datenquellen nicht für andere Personen freigeben müssen.
 
 ## <a name="use-a-gateway"></a>Verwenden eines Gateways
 

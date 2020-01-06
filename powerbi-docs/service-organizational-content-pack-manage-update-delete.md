@@ -10,10 +10,10 @@ ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 975c219a98f3d03f59df4d1c2a0551718bf213f0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73881270"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Verwalten, Aktualisieren und Löschen von organisationsbezogenen Inhaltspaketen
@@ -56,7 +56,7 @@ Wenn Sie eine Änderung am Dashboard, das Sie in ein Inhaltspaket eingeschlossen
 Eine weitere Änderung, die Ersteller von Inhaltspaketen vornehmen können, ist das Erweitern oder Einschränken des Zugriffs zum Inhaltspaket.  Möglicherweise haben Sie ein Inhaltspaket für eine breite Zielgruppe veröffentlicht, und Sie haben sich entschieden, den Zugriff auf eine kleinere Gruppe einzuschränken.  
 
 1. Wählen Sie das Zahnradsymbol ![](media/service-organizational-content-pack-manage-update-delete/cog.png) und die Option **Inhaltspakete anzeigen** aus.
-2. Wählen Sie **Bearbeiten**aus. 
+2. Wählen Sie **Bearbeiten** aus. 
 3. Nehmen Sie im Fenster **Inhaltspaket aktualisieren** alle notwendigen Änderungen vor, und wählen Sie **Update**aus. Löschen Sie beispielsweise die ursprüngliche Verteilergruppe im Feld **Bestimmte Gruppen** , und ersetzen Sie sie durch eine andere Verteilergruppe (die über weniger Mitglieder verfügt).
    
    Daraufhin wird eine Erfolgsmeldung angezeigt.

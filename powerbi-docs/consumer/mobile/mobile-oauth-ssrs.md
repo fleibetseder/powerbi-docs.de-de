@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/03/2019
-ms.openlocfilehash: 9ce761d09e2db4fbbc2e56d461f5272041edfbfe
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3680344c3449c80064b818f7ab2a5b48020fba4b
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870079"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75220606"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Verwenden von OAuth zum Herstellen einer Verbindung mit dem Power BI-Berichtsserver und SSRS
 
@@ -94,7 +94,7 @@ Hierzu führen Sie die folgenden Schritten aus.
 
    ![Assistent zum Hinzufügen von Anwendungsgruppen in ADFS (1)](media/mobile-oauth-ssrs/adfs-application-group-wizard1.png)
 
-3. Wählen Sie **Weiter**aus.
+3. Wählen Sie **Weiter** aus.
 
 4. Geben Sie einen **Namen** für die hinzuzufügende Anwendung ein. 
 
@@ -112,7 +112,7 @@ Hierzu führen Sie die folgenden Schritten aus.
    urn:ietf:wg:oauth:2.0:oob
 
    ![Assistent zum Hinzufügen von Anwendungsgruppen in ADFS (2)](media/mobile-oauth-ssrs/adfs-application-group-wizard2.png)
-7. Wählen Sie **Weiter**aus.
+7. Wählen Sie **Weiter** aus.
 
 8. Geben Sie die URL für den Berichtsserver ein. Bei dieser URL handelt es sich um die externe URL, die auf den Webanwendungsproxy verweist. Das Format sollte wie folgt lauten.
 
@@ -122,17 +122,17 @@ Hierzu führen Sie die folgenden Schritten aus.
    *https://<url_des_berichtsservers>/*
 
    ![Assistent zum Hinzufügen von Anwendungsgruppen in ADFS (3)](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
-9. Wählen Sie **Weiter**aus.
+9. Wählen Sie **Weiter** aus.
 
 10. Wählen Sie die **Zugriffssteuerungsrichtlinie** aus, die für Ihre Organisation am besten geeignet ist.
 
     ![Assistent zum Hinzufügen von Anwendungsgruppen in ADFS (4)](media/mobile-oauth-ssrs/adfs-application-group-wizard4.png)
 
-11. Wählen Sie **Weiter**aus.
+11. Wählen Sie **Weiter** aus.
 
 12. Wählen Sie **Weiter**aus.
 
-13. Wählen Sie **Weiter**aus.
+13. Wählen Sie **Weiter** aus.
 
 14. Wählen Sie **Schließen** aus.
 
@@ -185,7 +185,7 @@ Führen Sie zum Konfigurieren der eingeschränkten Delegierung die folgenden Sch
 
     ![Eingeschränkte Delegierung für WAP (4)](media/mobile-oauth-ssrs/wap-contrained-delegation4.png)
 
-11. Wählen Sie **OK**aus.
+11. Wählen Sie **OK** aus.
 
 ### <a name="add-wap-application"></a>Hinzufügen einer WAP-Anwendung
 
@@ -244,7 +244,7 @@ Sie können die Multi-Factor Authentication aktivieren, um die Sicherheit für I
 
 Sie können [Fiddler](https://www.telerik.com/fiddler) als Proxy für Ihre mobilen Geräte einrichten, um zu überprüfen, wie weit die Anforderung gesendet wurde. Wenn Sie einen Fiddler-Proxy für ein Smartphone aktivieren möchten, müssen Sie [CertMaker für iOS und Android](https://www.telerik.com/fiddler/add-ons) auf dem Computer mit Fiddler einrichten. Das Add-On wird von Telerik für Fiddler bereitgestellt.
 
-Wenn die Anmeldung bei Verwendung von Fiddler erfolgreich ist, liegt möglicherweise ein Zertifikatsproblem mit der WAP-Anwendung oder dem AD FS-Server vor. Sie können dann mit einem Tool wie [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226) überprüfen, ob die Zertifikate gültig sind.
+Wenn die Anmeldung bei Verwendung von Fiddler erfolgreich ist, liegt möglicherweise ein Zertifikatsproblem mit der WAP-Anwendung oder dem AD FS-Server vor. 
 
 ## <a name="next-steps"></a>Nächste Schritte
 

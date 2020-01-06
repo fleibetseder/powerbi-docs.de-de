@@ -10,10 +10,10 @@ ms.date: 09/12/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: a4fbf56a796a30c2d8a718411e3363238a9c2bb2
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73851837"
 ---
 # <a name="dashboards-for-power-bi-service-consumers"></a>Dashboard für Benutzer des Power BI-Diensts
@@ -46,9 +46,9 @@ Als Zeichenbereiche, die ebenfalls Visualisierungen enthalten, werden Berichte g
 
 | **Eigenschaften** | **Dashboards** | **Berichte** |
 | --- | --- | --- |
-| Pages |Eine Seite |Eine oder mehrere Seiten |
+| Seiten |Eine Seite |Eine oder mehrere Seiten |
 | Datenquellen |Ein oder mehrere Berichte und ein oder mehrere Datasets pro Dashboard |Ein Dataset pro Bericht |
-| Filter |Keine Filter, keine Slices |Viele Filter, Hervorhebungen und Slices |
+| Filterung |Keine Filter, keine Slices |Viele Filter, Hervorhebungen und Slices |
 | Benachrichtigungen festlegen |Benachrichtigungen können erstellt werden. Sie erhalten eine E-Mail, wenn bestimmte Bedingungen erfüllt sind. |Nein |
 | Empfohlen |Ein Dashboard kann als „ausgewähltes“ Dashboard festgelegt werden. |Ein ausgewählter Bericht kann nicht erstellt werden. |
 | Zugrunde liegende Dataset-Tabellen und Felder sichtbar |Nein. Exportieren von Daten, aber Tabellen und Felder im Dashboard nicht sichtbar |Ja. Tabellen, Felder und Werte des Datasets sichtbar |

@@ -1,8 +1,8 @@
 ---
 title: Szenarios mit Microsoft Power BI Premium-Kapazitäten
 description: Beschreibt häufige Szenarios mit Microsoft Power BI Premium-Kapazitäten.
-author: mgblythe
-ms.author: mblythe
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 3190645044c930c1c63fd7c199883d784723d6f0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 9b3e06172d29f218f9234cf1f3d7e1f623495001
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881237"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "74697265"
 ---
 # <a name="premium-capacity-scenarios"></a>Szenarios mit Premium-Kapazitäten
 

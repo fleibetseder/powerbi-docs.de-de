@@ -1,20 +1,20 @@
 ---
 title: Power BI-Lizenzierung in Ihrem Unternehmen
 description: 'Verstehen Sie die verschiedenen Lizenztypen, die in Power BI verfügbar sind: kostenlose Lizenzen, Power BI Pro und Power BI Premium.'
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: mblythe
+ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 2cbf2498740d26a59ced5652368cf99b8fa5eec1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7a2cc9a1deb87e94c0887b1ae00174d6791cf712
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73857710"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "74700025"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Power BI-Lizenzierung in Ihrem Unternehmen
 

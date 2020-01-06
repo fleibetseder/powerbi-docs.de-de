@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: db4b6d4915e97aaee65806b0bca7801bf4ce951e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4440db5888eeeab638eab4ea3819107d37bdbdbd
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876226"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223467"
 ---
 # <a name="use-an-external-r-ide-with-power-bi"></a>Verwenden einer externen R-IDE mit Power BI
 Mit **Power BI Desktop** können Sie eine externe R-IDE (Integrated Development Environment, integrierte Entwicklungsumgebung) zum Erstellen und Optimieren von R-Skripts verwenden und diese Skripts dann in Power BI nutzen.
@@ -31,7 +31,7 @@ Ab der **Power BI Desktop**-Version von September 2016 (Version 2.39.4526.362) k
 Um dieses Feature verwenden zu können, müssen Sie eine **R-IDE** auf dem lokalen Computer installieren. Die R-Engine ist in **Power BI Desktop** nicht enthalten und wird nicht bereitgestellt oder installiert. Sie müssen daher **R** separat auf dem lokalen Computer installieren. Sie können die zu verwendende R-IDE-R auswählen. Dabei stehen Ihnen die folgenden Optionen zur Verfügung:
 
 * Sie können Ihre bevorzugte R-IDE installieren. Viele sind kostenlos, z. B. über die [R Open-Downloadseite](https://mran.revolutionanalytics.com/download/) und das [CRAN-Repository](https://cran.r-project.org/bin/windows/base/).
-* **Power BI Desktop** unterstützt auch [R Studio](https://www.rstudio.com/) und **Visual Studio 2015** mit den Editoren [*R-Tools für Visual Studio*](https://beta.visualstudio.com/vs/rtvs/).
+* **Power BI Desktop** unterstützt auch [R Studio](https://www.rstudio.com/) und **Visual Studio 2015** mit den Editoren [*R-Tools für Visual Studio*](/visualstudio/rtvs).
 * Sie können auch eine andere **R-IDE** installieren und sie durch **Power BI Desktop** starten lassen. Führen Sie dazu einen der folgenden Schritte aus:
   
   * Verknüpfen Sie **R**-Dateien mit der externen IDE, die von **Power BI Desktop** gestartet werden soll.

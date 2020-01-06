@@ -1,20 +1,20 @@
 ---
 title: Überwachen von Power BI Premium-Kapazitäten mithilfe des Verwaltungsportals
 description: Verwenden des Power BI-Verwaltungsportals zum Überwachen von Premium-Kapazitäten.
-author: mgblythe
-ms.author: mblythe
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 04/10/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 0d1e0da498a7a2c78e86b643b8a86cb87d6d095a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 51d7b29eee1394ec1bbcad8d69b39b4e45ecdb18
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73856871"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "74700071"
 ---
 # <a name="monitor-capacities-in-the-admin-portal"></a>Überwachen von Kapazitäten im Verwaltungsportal
 

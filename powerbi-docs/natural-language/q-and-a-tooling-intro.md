@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 10/17/2019
 ms.author: mohaali
 ms.openlocfilehash: 17d0a68782f34c09286be5ebe020668a15061ee4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73874934"
 ---
 # <a name="intro-to-qa-tooling-to-train-power-bi-qa-preview"></a>Einführung in Q&A-Tools zum Trainieren von Power BI Q&A (Vorschau)
@@ -42,7 +42,7 @@ Q&A-Tools sind nur in Power BI Desktop verfügbar und unterstützen derzeit auss
 
     ![Q&A: „Erste Schritte“](media/qna-tooling-dialog.png)
 
-### <a name="review-questions"></a>Fragen zur Überprüfung
+### <a name="review-questions"></a>Fragen prüfen
 
 Klicken Sie auf **Fragen prüfen**, um eine Liste der Datasets aufzurufen, die im Power BI-Dienst für Ihren Mandanten verwendet werden. Auf der Seite **Fragen prüfen** werden auch der Besitzer des Datasets, der Arbeitsbereich und das Datum der letzten Aktualisierung angezeigt. Auf dieser Seite können Sie ein Dataset auswählen und prüfen, welche Fragen die Benutzer gestellt haben. Außerdem werden Wörter angezeigt, die nicht erkannt wurden. Es werden alle Daten der letzten 28 Tage angezeigt.
 
@@ -100,6 +100,6 @@ In Power BI können Sie die Engine für natürliche Sprache vollständig in Q&A 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Es gibt verschiedene bewährte Methoden zur Verbesserung der Engine für natürliche Sprache. Weitere Informationen finden Sie im folgenden Artikel:
+Es gibt verschiedene Best Practices zur Verbesserung der Engine zur Verarbeitung natürlicher Sprache. Weitere Informationen finden Sie im folgenden Artikel:
 
 * [Q&A: Bewährte Methoden](q-and-a-best-practices.md)

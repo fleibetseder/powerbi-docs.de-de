@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/27/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: bdaac078fa106565f7c11b3cc323840b5d10b579
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.openlocfilehash: 749d8d5b62df87b0e6b29d524e90c694a0e38efe
+ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565337"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75622438"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organisieren der Arbeit in den neuen Power BI-Arbeitsbereichen
 
@@ -62,7 +62,7 @@ Wenn Sie einer Benutzergruppe Rollen zuweisen, verfügen die Personen in der Gru
 
 Folgende Rollen sind verfügbar: Administrator, Mitglied, Mitwirkender und Betrachter. Für alle diese Funktionen außer Anzeigen und Interaktion ist eine Power BI Pro-Lizenz erforderlich.
 
-|Funktion   | Administrator  | Mitglied  | Mitwirkender  | Anzeigender Benutzer |
+|Funktionalität   | Administrator  | Mitglied  | Mitwirkender  | Viewer |
 |---|---|---|---|---|
 | Den Arbeitsbereich aktualisieren und löschen.  | X  |   |   |   | 
 | Personen hinzufügen/entfernen (einschließlich anderer Administratoren).  | X  |   |   |   |
@@ -111,18 +111,19 @@ Mit dem Feature OneDrive für Arbeitsbereich können Sie eine Office 365-Gruppe 
 Power BI synchronisiert keine Berechtigungen von Benutzern oder Gruppen, für die der Arbeitsbereichszugriff mit der Office 365-Gruppenmitgliedschaft konfiguriert ist. Die beste Vorgehensweise besteht darin, den Zugriff auf den Arbeitsbereich über dieselbe Office 365-Gruppe zu verwalten, deren Dateispeicher Sie in dieser Einstellung konfigurieren. 
 
 Erfahren Sie, wie Sie [OneDrive für Arbeitsbereich einstellen und darauf zugreifen können](service-create-the-new-workspaces.md#workspace-onedrive).  
-   
+
 ## <a name="auditing"></a>Überwachung
+
 Die folgenden Aktivitäten werden von Power BI für Arbeitsbereiche der neuen Benutzeroberfläche für Arbeitsbereiche überwacht.
 
-| Anzeigename |   Vorgangsname |
+| Anzeigename | Vorgangsname |
 |---|---|
 | Created Power BI folder (Power BI-Ordner erstellt) | CreateFolder |
 | Deleted Power BI folder (Power BI-Ordner gelöscht) | DeleteFolder |
 | Updated Power BI folder (Power BI-Ordner aktualisiert) | UpdateFolder |
 | Updated Power BI folder access (Ordnerzugriff für Power BI aktualisiert)| UpdateFolderAccess |
 
-Informieren Sie sich ausführlicher über [Von Power BI überwachte Aktivitäten](service-admin-auditing.md#activities-audited-by-power-bi).
+Informieren Sie sich ausführlicher über [Von Power BI überwachte Aktivitäten](service-admin-auditing.md).
 
 ## <a name="limitations-and-considerations"></a>Einschränkungen und Überlegungen
 

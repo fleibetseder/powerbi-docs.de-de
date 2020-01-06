@@ -10,10 +10,10 @@ ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 704e073299f89859c507b3ddc6ccba0b4be03d76
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73877374"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi"></a>Erstellen und Verwenden von Dataflows in Power BI
@@ -57,7 +57,7 @@ Eine **Entität** ist eine Gruppe von Feldern, die ähnlich wie eine Tabelle in 
 
 Wenn Sie eine Datenquelle auswählen, werden Sie aufgefordert, die Verbindungseinstellungen anzugeben, einschließlich des Kontos, das bei der Verbindung mit der Datenquelle verwendet werden soll (s. Abbildung).
 
-![Verbinden mit einer Datenquelle](media/service-dataflows-create-use/dataflows-create-use_06.png)
+![Mit Datenquelle verbinden](media/service-dataflows-create-use/dataflows-create-use_06.png)
 
 Nachdem die Verbindung hergestellt wurde, können Sie auswählen, welche Daten für Ihre Entität verwendet werden sollen. Wenn Sie Daten und eine Quelle auswählen, verbindet sich Power BI anschließend wieder mit der Datenquelle, um die Daten in Ihrem Dataflow mit der später im Setupprozess ausgewählten Häufigkeit zu aktualisieren.
 

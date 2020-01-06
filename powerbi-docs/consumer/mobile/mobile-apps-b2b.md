@@ -1,19 +1,19 @@
 ---
 title: Anzeigen Power BI-Inhalten als externer Gastbenutzer (Azure AD B2B)
 description: Verwenden von mobilen Power BI-Apps, um Inhalte anzuzeigen, die für Sie aus einer externen Organisation freigegeben wurden.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/27/2019
-ms.author: mshenhav
-ms.openlocfilehash: f0db77a69bd8845b9448b7c15fedea7663683ec0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/09/2019
+ms.author: painbar
+ms.openlocfilehash: c5e1e0b90f24a81940edab46633f49df41d25fdc
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879341"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75219867"
 ---
 # <a name="view-power-bi-content-shared-with-you-from-an-external-organization"></a>Anzeigen von Power BI-Inhalten, die von einer externen Organisation für Sie freigegeben wurden
 
@@ -30,18 +30,18 @@ Gilt für:
 
 **Zunächst benötigen Sie eine Person aus einer externen Organisation, die ein Element für Sie freigibt.** Wenn jemand [ein Element für Sie freigibt](../../service-share-dashboards.md) (aus derselben Organisation oder aus einer externen Organisation), erhalten Sie eine E-Mail mit einem Link zu diesem freigegebenen Element. Wenn Sie diesen Link auf Ihrem mobilen Gerät folgen, wird der mobile Power BI-App geöffnet. Wenn die APP erkennt, dass das Element von einer externen Organisation freigegeben wurde, stellt die App erneut eine Verbindung mit dieser Organisation mit ihrer Identität her. Anschließend lädt die APP alle Elemente, die für Sie von dieser Organisation freigegeben wurden.
 
-![Öffnen eines freigegebenen Elements über E-Mail in Power BI ](./media/mobile-apps-b2b/mobile-b2b-open-item-email.png)
+![Öffnen eines freigegebenen Elements über E-Mail in Power BI ](./media/mobile-apps-b2b/mobile-b2b-open-item-email-new.png)
 
 > [!NOTE]
 > Wenn dies das erste Element ist, das als externer Gastbenutzer für Sie freigegeben wurde, müssen Sie die Einladung in einem Browser beanspruchen. Die Einladung kann nicht in der Power BI-App beansprucht werden.
 
 Solange Sie mit einer externen Organisation verbunden sind, wird in der APP ein schwarzer Header angezeigt. Dieser Header gibt an, dass Sie nicht mit ihrer eigenen Organisation verbunden sind. Um erneut eine Verbindung mit ihrer eigenen Organisation herzustellen, beenden Sie den Gastmodus.
 
-![Power BI-Header für Gastbenutzer](./media/mobile-apps-b2b/mobile-b2b-exit-home.png)
+![Power BI-Header für Gastbenutzer](./media/mobile-apps-b2b/mobile-b2b-exit-home-new.png)
 
 Obwohl Sie über einen Power BI-Artefaktlink verfügen müssen, um eine Verbindung mit einer externen Organisation herzustellen, können Sie nach dem Umschalten Ihrer App auf alle Elemente zugreifen, die für Sie freigegeben wurden (nicht nur auf das Element, das Sie über die E-Mail-Nachricht geöffnet haben). Um alle Elemente anzuzeigen, auf die Sie in der externen Organisation zugreifen können, navigieren Sie zum App-Menü und wählen **Für mich freigegeben** aus. Unter **Apps** finden Sie auch Apps, die Sie ebenfalls verwenden können.
 
-![App-Menü von Power BI als externer Gastbenutzer](./media/mobile-apps-b2b/mobile-b2b-menu.png)
+![App-Menü von Power BI als externer Gastbenutzer](./media/mobile-apps-b2b/mobile-b2b-menu-new.png)
 
 ## <a name="limitations"></a>Einschränkungen
 

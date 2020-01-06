@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: bfc1572e31269182e9ca63efbbf6934b90f84b66
-ms.sourcegitcommit: 462ccdd9f79ff698ed0cdfc3165f4ada364dd9ef
+ms.openlocfilehash: 723cc7b2767f6a5ee4394bca74e507fc688b3af8
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74478609"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223636"
 ---
 # <a name="directquery-model-guidance-in-power-bi-desktop"></a>Leitfaden für das DirectQuery-Model in Power BI Desktop
 
@@ -87,7 +87,7 @@ Ein DirectQuery-Modell kann auf verschiedene Weisen optimiert werden, wie in der
 
     Durch Erhöhen des Werts von **Maximale Verbindungsanzahl pro Datenquelle** wird eine größere Anzahl von Abfragen sichergestellt (entsprechend der angegebenen maximalen Anzahl), die an die zugrunde liegenden Datenquelle gesendet werden können. Dies ist hilfreich, wenn sich zahlreiche Visuals auf einer einzigen Seite befinden oder viele Benutzer gleichzeitig auf einen Bericht zugreifen. Sobald die maximale Anzahl von Verbindungen erreicht ist, werden weitere Abfragen in die Warteschlange gestellt, bis eine Verbindung verfügbar wird. Ein Erhöhen dieses Grenzwerts führt zu mehr Last für die zugrunde liegende Datenquelle. Daher ist nicht garantiert, dass durch die Einstellung die Gesamtleistung verbessert wird.
     
-    Wenn das Modell in Power BI veröffentlicht wird, hängt die maximale Anzahl gleichzeitiger Abfragen der zugrunde liegenden Datenquelle auch von der Umgebung ab. Unterschiedliche Umgebungen (wie Power BI, Power BI Premium oder Power BI-Berichtsserver) können unterschiedliche Durchsatzeinschränkungen vorsehen. Weitere Informationen zu Ressourcenbeschränkungen bei der Power BI Premium-Kapazität finden Sie unter [Bereitstellen und Verwalten von Power BI Premium-Kapazitäten](https://docs.microsoft.com/power-bi/whitepaper-powerbi-premium-deployment#premium-capacities).
+    Wenn das Modell in Power BI veröffentlicht wird, hängt die maximale Anzahl gleichzeitiger Abfragen der zugrunde liegenden Datenquelle auch von der Umgebung ab. Unterschiedliche Umgebungen (wie Power BI, Power BI Premium oder Power BI-Berichtsserver) können unterschiedliche Durchsatzeinschränkungen vorsehen. Weitere Informationen zu Ressourcenbeschränkungen bei der Power BI Premium-Kapazität finden Sie unter [Bereitstellen und Verwalten von Power BI Premium-Kapazitäten](https://docs.microsoft.com/power-bi/whitepaper-powerbi-premium-deployment).
 
 ## <a name="optimize-report-designs"></a>Optimieren von Berichtsentwürfen
 
