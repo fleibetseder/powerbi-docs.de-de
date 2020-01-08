@@ -36,7 +36,7 @@
           href: ../service-admin-portal.md
         - name: Suchen nach angemeldeten Benutzern
           href: ../service-admin-access-usage.md
-        - name: Überwachung
+        - name: Nachverfolgen von Benutzeraktivitäten
           href: ../service-admin-auditing.md
         - name: Nachverfolgen der Dienstintegrität
           href: ../service-admin-health.md
