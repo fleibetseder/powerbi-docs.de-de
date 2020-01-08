@@ -48,7 +48,7 @@ Sie können die Daten, mit denen die Visualisierung erstellt wurde, auch als XLS
     Weitere Informationen zum Exportieren der Daten in Excel finden Sie unter [Exportieren von Daten aus Power BI-Visualisierungen](power-bi-visualization-export-data.md).
 6. Wenn die Daten ausgeblendet werden sollen, deaktivieren Sie **Durchsuchen** > **Daten anzeigen**.
 
-## <a name="using-show-records"></a>Verwenden von „Datensätzen anzeigen“
+## <a name="using-show-records"></a>Verwenden von „Datensätze anzeigen“
 Sie können den Fokus auch auf einen Datensatz einer Visualisierung legen und die zugrunde liegenden Daten genauer betrachten. 
 
 1. Wählen Sie für die Verwendung von **Datensätze anzeigen** eine Visualisierung aus, um sie zu aktivieren. 
