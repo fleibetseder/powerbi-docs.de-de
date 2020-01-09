@@ -507,9 +507,9 @@
               href: service-tips-for-finding-help.md
             - name: Dienstunterbrechungsbenachrichtigungen
               href: service-interruption-notifications.md
-        - name: Power BI erweitern
+        - name: Visuelle Elemente verwenden
           items:
-            - name: "Power Automate und Power\_BI"
+            - name: Power Automate und Power BI
               href: service-flow-integration.md
             - name: Verwenden von Drittanbieter-Apps
               href: service-power-bi-get-started-third-party-apps.md
@@ -903,8 +903,6 @@
           href: report-builder-data.md
         - name: Unterstützte Datenquellen
           href: paginated-reports-data-sources.md
-        - name: Verwenden freigegebener Power BI-Datasets
-          href: report-builder-shared-datasets.md
         - name: Entwurfstipps
           href: report-builder-design-tips.md
         - name: 'Tabellen, Matrizen, Listen'
@@ -929,6 +927,8 @@
           href: paginated-reports-embedded-data-source.md
         - name: Erstellen eines eingebetteten Datasets
           href: paginated-reports-create-embedded-dataset.md
+        - name: Erstellen eines Berichts mit einem freigegebenen Power BI-Dataset
+          href: report-builder-shared-datasets.md
         - name: Erstellen von Parametern
           href: paginated-reports-parameters.md
         - name: Übergeben eines Berichtsparameters in einer URL
@@ -989,6 +989,8 @@
       items:
         - name: Installieren von Power BI Desktop
           href: report-server/install-powerbi-desktop.md
+        - name: Installieren des Berichts-Generators
+          href: report-server/install-report-builder.md
         - name: Berichtsserver – Grundlagen
           items:
             - name: Erstellen eines Power BI-Berichts für einen Berichtsserver
