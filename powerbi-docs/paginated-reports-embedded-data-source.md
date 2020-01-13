@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.openlocfilehash: d7a170cad376c3ec9fd3ca8ca7d2c8d2d8ac0223
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7cfc52557d9dcce03dd2e42818bb04f4754c190d
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875311"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75304307"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Erstellen einer eingebetteten Datenquelle für paginierte Berichte im Power BI-Dienst
 
@@ -53,7 +53,7 @@ Ausführlichere Informationen finden Sie unter [Berichtsdaten im Power BI-Berich
   
     -   Geben Sie die Verbindungszeichenfolge direkt im Textfeld **Verbindungszeichenfolge** ein. 
   
-    -   Klicken Sie auf die Ausdrucksschaltfläche (**fx)** , um einen Ausdruck zu erstellen, der als Verbindungszeichenfolge ausgewertet wird. Geben Sie den Ausdruck im Dialogfeld **Ausdruck** im Bereich „Ausdruck“ ein. Wählen Sie **OK**aus. 
+    -   Klicken Sie auf die Ausdrucksschaltfläche (**fx)** , um einen Ausdruck zu erstellen, der als Verbindungszeichenfolge ausgewertet wird. Geben Sie den Ausdruck im Dialogfeld **Ausdruck** im Bereich „Ausdruck“ ein. Wählen Sie **OK** aus. 
   
     -   Wählen Sie **Erstellen**, um das Dialogfeld **Verbindungseigenschaften** für die Datenquelle zu öffnen, die Sie in Schritt 2 ausgewählt haben.  
   
@@ -63,7 +63,7 @@ Ausführlichere Informationen finden Sie unter [Berichtsdaten im Power BI-Berich
   
      Geben Sie die Anmeldeinformationen für diese Datenquelle ein. Der Besitzer der Datenquelle wählt den Typ der Anmeldeinformationen aus, die unterstützt werden. Weitere Informationen finden Sie unter [Angeben von Anmelde- und Verbindungsinformationen für Berichtsdatenquellen](https://docs.microsoft.com/sql/reporting-services/report-data/specify-credential-and-connection-information-for-report-data-sources).
   
-5.  Wählen Sie **OK**aus.  
+5.  Wählen Sie **OK** aus.  
   
      Die Datenquelle wird im Berichtsdatenbereich angezeigt.  
      
@@ -75,21 +75,21 @@ Für paginierte Berichte, die eine Verbindung mit Power BI-Datasets herstellen, 
 
 - RDL-Datei im selben Arbeitsbereich wie das Dataset (derselbe Besitzer): Unterstützt
 - RDL-Datei in einem anderen Arbeitsbereich als das Dataset (derselbe Besitzer): Unterstützt
-- Freigegebene RDL-Datei: Jedem Benutzer, der den Bericht einsieht, muss auf Dataset-Ebene die Berechtigung „Erstellen“ zugewiesen sein
-- Freigegebene App: Jedem Benutzer, der den Bericht einsieht, muss auf Dataset-Ebene die Berechtigung „Erstellen“ zugewiesen sein
+- Freigegebene RDL-Datei: Jedem Benutzer, dem der Bericht angezeigt wird, muss auf Datasetebene die Leseberechtigung zugewiesen sein.
+- Freigegebene App: Jedem Benutzer, dem der Bericht angezeigt wird, muss auf Datasetebene die Leseberechtigung zugewiesen sein.
 - RDL-Datei im selben Arbeitsbereich wie das Dataset (anderer Benutzer): Unterstützt
-- RDL-Datei in einem anderen Arbeitsbereich als das Dataset (anderer Benutzer): Jedem Benutzer, dem der Bericht angezeigt wird, muss auf Dataset-Ebene die Berechtigung „Erstellen“ zugewiesen sein
-- Sicherheit auf Rollenebene: Jedem Benutzer, dem der Bericht angezeigt wird, muss auf Dataset-Ebene die Berechtigung „Erstellen“ zugewiesen sein, um diese zu erzwingen.
+- RDL-Datei in einem anderen Arbeitsbereich als das Dataset (anderer Benutzer): Jedem Benutzer, dem der Bericht angezeigt wird, muss auf Datasetebene die Leseberechtigung zugewiesen sein.
+- Sicherheit auf Rollenebene: Jedem Benutzer, dem der Bericht angezeigt wird, muss auf Datasetebene die Leseberechtigung zugewiesen sein, um diese zu erzwingen.
 
 ### <a name="new-experience-apps-and-workspaces"></a>Neue Apps und Arbeitsbereiche
 
 - RDL-Datei im selben Arbeitsbereich wie das Dataset: Unterstützt
 - RDL-Datei in einem anderen Arbeitsbereich als das Dataset (derselbe Besitzer): Unterstützt
-- Freigegebene RDL-Datei: Jedem Benutzer, der den Bericht einsieht, muss auf Dataset-Ebene die Berechtigung „Erstellen“ zugewiesen sein
-- Freigegebene App: Jedem Benutzer, der den Bericht einsieht, muss auf Dataset-Ebene die Berechtigung „Erstellen“ zugewiesen sein
+- Freigegebene RDL-Datei: Jedem Benutzer, dem der Bericht angezeigt wird, muss auf Datasetebene die Leseberechtigung zugewiesen sein.
+- Freigegebene App: Jedem Benutzer, dem der Bericht angezeigt wird, muss auf Datasetebene die Leseberechtigung zugewiesen sein.
 - RDL-Datei im selben Arbeitsbereich wie das Dataset (anderer Benutzer) – Unterstützt
-- RDL-Datei in einem anderen Arbeitsbereich als das Dataset (anderer Benutzer): Jedem Benutzer, der den Bericht einsieht, muss auf Dataset-Ebene die Berechtigung „Erstellen“ zugewiesen sein
-- Sicherheit auf Rollenebene: Jedem Benutzer, dem der Bericht angezeigt wird, muss auf Dataset-Ebene die Berechtigung „Erstellen“ zugewiesen sein, um diese zu erzwingen
+- RDL-Datei in einem anderen Arbeitsbereich als das Dataset (anderer Benutzer): Jedem Benutzer, dem der Bericht angezeigt wird, muss auf Datasetebene die Leseberechtigung zugewiesen sein.
+- Sicherheit auf Rollenebene: Jedem Benutzer, dem der Bericht angezeigt wird, muss auf Datasetebene die Leseberechtigung zugewiesen sein, um diese zu erzwingen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

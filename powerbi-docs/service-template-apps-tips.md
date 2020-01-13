@@ -8,18 +8,18 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/26/2019
 ms.author: tebercov
-ms.openlocfilehash: 04b50882c28bf561e628e9f02dff6c147233d260
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: a9f589a5e840e95e349ec303b42b30568820e8b3
+ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099751"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75622453"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tipps für die Erstellung von Vorlagen-Apps in Power BI
 
 Wenn Sie in Power BI [Ihre Vorlagen-App erstellen](service-template-apps-create.md), besteht ein Teil des Erstellungsprozesses in der Logistik für die Erstellung eines Arbeitsbereichs, für Tests und für die Produktionsphase. Der andere wichtige Teil besteht ganz klar in der Erstellung des Berichts und des Dashboards. Wir können den Erstellungsprozess in vier Hauptkomponenten unterteilen. Das Arbeiten mit diesen Komponenten hilft Ihnen dabei, die Vorlagen-App bestmöglich zu erstellen:
 
-* Mit **Abfragen** [verbinden](desktop-connect-to-data.md) und [transformieren](desktop-query-overview.md) Sie die Daten, und Sie definieren [Parameter](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/). 
+* Mit **Abfragen**[verbinden](desktop-connect-to-data.md) und [transformieren](desktop-query-overview.md) Sie die Daten, und Sie definieren [Parameter](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/). 
 * In dem **Datenmodell** können Sie [Beziehungen](desktop-create-and-manage-relationships.md), [Measures](desktop-measures.md) und Q&A-Verbesserungen erstellen.  
 * **[Berichtseiten](desktop-report-view.md)** enthalten Visuals und Filter für Einblicke in Ihre Daten.  
 * **[Dashboards](consumer/end-user-dashboards.md)** und [Kacheln](service-dashboard-create.md) bieten eine Übersicht über die enthaltenen Einblicke.
@@ -131,7 +131,7 @@ Vorlagen-Apps unterstützen Apps, die nur Beispieldaten enthalten; achten Sie da
 * Befolgen Sie die Dokumentation [Power BI-App-Angebot](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
 * Falls ein Dashboard Teil Ihrer App ist, stellen Sie sicher, dass es nicht leer ist.
 * Installieren Sie die App über den App-Link, bevor Sie sie übermitteln, stellen Sie sicher, dass Sie die Verbindung mit dem Dataset herstellen können und die App wie geplant funktioniert.
-* Entladen Sie vor dem Hochladen der BPIX-Datei in den Vorlagen-Arbeitsbereich unbedingt alle unnötigen Verbindungen.
+* Entladen Sie vor dem Hochladen der PBIX-Datei in den Vorlagenarbeitsbereich unbedingt alle unnötigen Verbindungen.
 * Befolgen Sie [Bewährte Entwurfsmethoden für Berichte und Visualisierungen](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) für Power BI, um den besten Eindruck bei Ihren Benutzern zu machen und die Genehmigung für die Verteilung zu erhalten.
 <!--- * In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.) -->
 

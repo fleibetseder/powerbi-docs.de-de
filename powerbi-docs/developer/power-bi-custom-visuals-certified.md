@@ -1,6 +1,6 @@
 ---
 title: Zertifizierte Power BI-Visuals
-description: Anforderungen und Vorgehensweise für das Einreichen eines benutzerdefinierten Visuals zur Zertifizierung Sowie eine Liste bereits zertifizierter Power BI-Visuals.
+description: Anforderungen und Vorgehensweise für das Einreichen eines benutzerdefinierten Visuals zur Zertifizierung Sowie eine Liste der zertifizierten Power BI-Visuals
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 12/02/2019
-ms.openlocfilehash: 0a39496ade27cd45fae116eea92ef4b472e04582
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.openlocfilehash: c39b96122016746905ea09c0983adf50356f0c77
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "74999742"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75221963"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>So lassen Sie sich ein Power BI-Visual zertifizieren
 
@@ -32,7 +32,7 @@ Wenn Sie Webentwickler sind und selbst Power BI-Visuals erstellen und zu [Mic
 > **Microsoft** ist *nicht* der Autor von Power BI-Visuals von Drittanbietern. Wir raten Kunden, direkt mit dem Autor eines Drittanbieter-Power BI-Visuals Kontakt aufzunehmen, um die Funktionalität des Visuals zu verifizieren.
 
 > [!IMPORTANT]
-> Microsoft kann ein Power BI-Visual nach eigenem Ermessen aus der [Liste zertifizierter Visuals](#list-of-power-bi-visuals-that-have-been-certified) entfernen.
+> Microsoft kann ein Power BI-Visual nach eigenem Ermessen aus der [Liste zertifizierter Power BI-Visuals](#certified-power-bi-visuals) entfernen.
 
 ## <a name="certification-requirements"></a>Zertifizierungsanforderungen
 
@@ -41,7 +41,7 @@ Um Ihr Power BI-Visual [zertifizieren](#get-a-power-bi-visual-certified) zu las
 > [!TIP]
 > Wir empfehlen die Nutzung von EsLint mit dem standardmäßigen Sicherheitsregelsatz, um Ihren Code vor der Übermittlung vorab zu überprüfen.
 
-* Im Microsoft-Verkäuferdashboard oder in Partner Center genehmigt: Ihr Power BI-Visual sollte sich in unserem [Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) befinden.
+* Im Microsoft-Verkäuferdashboard oder in Partner Center genehmigt: Sie sollten Ihr Power BI-Visual zu unserem [Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) hinzufügen.
 * Das Power BI-Visual wurde mit der *API-Version 2.5* oder höher geschrieben.
 * Das Coderepository kann durch das Power BI-Team überprüft werden. Beispielsweise kann dem Team über GitHub ein lesbares Format des Quellcodes (JavaScript oder TypeScript) zur Verfügung gestellt werden.
 
@@ -61,9 +61,9 @@ Um Ihr Power BI-Visual [zertifizieren](#get-a-power-bi-visual-certified) zu las
   * Der Befehl *npm audit* darf keine Warnungen mit hohem oder mittlerem Schweregrad zurückgeben.
   * Der Befehl *pbiviz package* darf keine Fehler zurückgeben.
   * [TSlint von Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) muss ohne überschriebene Konfigurationen enthalten sein. Dieser Befehl darf keine lint-Fehler zurückgeben.
-   * Das kompilierte Paket des Power BI-Visuals muss mit dem übermittelten Paket übereinstimmen (die md5-Hashwerte beider Dateien müssen gleich sein).
+   * Das kompilierte Paket des Power BI-Visuals muss mit dem übermittelten Paket übereinstimmen.
 * Quellcode-Anforderungen:
-   * Das Power BI-Visual muss die [API zum Rendern von Ereignissen](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/) unterstützen.
+   * Das Power BI-Visual muss die [API zum Rendern von Ereignissen](./visuals/event-service.md) unterstützen.
    * Stellen Sie sicher, dass kein beliebiger/dynamischer Code ausgeführt wird (bad: eval(), unsafe to use of settimeout(), requestAnimationFrame(), setinterval(eine Funktion mit Benutzereingaben), Ausführen von Benutzereingaben/-daten).
    * Stellen Sie sicher, dass DOM sicher bearbeitet wird (bad: innerHTML, D3.html(<Benutzer-/Dateneingabe>), Bereinigung für Benutzereingaben/Daten vor dem Hinzufügen zum DOM verwenden).
    * Stellen Sie sicher, dass die Browserkonsole keinerlei JavaScript-Fehler oder -Ausnahmen für Eingabedaten ausgibt. Benutzer verwenden Ihr Power BI-Visual möglicherweise mit einem anderen, unerwarteten Datenbereich, für den beim Visual keine Fehler auftreten dürfen. Sie können diesen [Beispielbericht](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) als Testdataset verwenden.
@@ -93,105 +93,116 @@ So fordern Sie eine Power BI-Zertifizierung an:
 >[!NOTE]
 > Wenn Sie sich gerade mitten im Übermittlungsprozess für ein Power BI-Visual befinden und das [Verkäuferdashboard](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) (das alte Verwaltungstool) verwenden müssen, lesen Sie die Anweisungen für den [Übermittlungsprozess für die Zertifizierung auf dem Verkäuferdashboard](seller-dashboard.md#seller-dashboard-certification-submission-process).
 
-## <a name="list-of-power-bi-visuals-that-have-been-certified"></a>Liste der Power BI-Visuals mit Zertifizierung
+## <a name="certified-power-bi-visuals"></a>Zertifizierte Power BI-Visuals
 
-| Link | Video |
-| --- | --- |
-| [3AG Systems – Bar Chart With Relative Variance (3AG Systems: Balkendiagramm mit relativer Varianz)](https://appsource.microsoft.com/en/product/power-bi-visuals/WA104381912) | |
-| [3AG Systems – Column Chart With Relative Variance (3AG Systems: Säulendiagramm mit relativer Varianz)](https://appsource.microsoft.com/product/power-bi-visuals/WA104381803) | |
-| [Advanced Donut Visual (Erweitertes Ringdiagrammvisual)](https://appsource.microsoft.com/product/power-bi-visuals/WA104381941) | |
-| [Advanced Network Visualization (Erweiterte Netzwerkvisualisierung)](https://appsource.microsoft.com/product/power-bi-visuals/WA104381942) | |
-| [Advanced TimeSeries Visual (Erweitertes TimeSeries-Visual)](https://appsource.microsoft.com/product/power-bi-visuals/WA104381943) | |
-| [Advanced Combo Visual (Erweitertes Combovisual)](https://appsource.microsoft.com/product/power-bi-visuals/WA104381944) | |
-| [Aster-Plot](https://appsource.microsoft.com/product/power-bi-visuals/WA104380759) | |
-| [Beyondsoft-Kalender](https://appsource.microsoft.com/product/power-bi-visuals/WA104381096) | |
-| [Schleifendiagramm von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380838) | [Video](https://youtu.be/So5xKMSpVJI) |
-| [Kastengrafikdiagramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104380831) | |
-| [Kastengrafikdiagramm von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104381351) | [Video](https://youtu.be/JoHaFLfhXdo) |
-| [Ziegeldiagramm von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380836) | [Video](https://youtu.be/hA3DOsvn2xY) |
-| [Blasendiagramm von Akvelon](https://appsource.microsoft.com/product/power-bi-visuals/WA104381340) | |
-| [Bullet-Diagramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104380755) | [Video](https://youtu.be/AOlsFYkfkcw) |
-| [Bullet-Diagramm von OKViz](https://appsource.microsoft.com/product/power-bi-visuals/WA104380953) | [Video](https://youtu.be/mtvUNl9bMjA) |
-| [Kalender von Tallan](https://appsource.microsoft.com/product/power-bi-visuals/WA104381146) | |
-| [Kerzendiagramm von OKViz](https://appsource.microsoft.com/product/power-bi-visuals/WA104380952) | [Video](https://youtu.be/nT_18gyRxPo) |
-| [Karte mit Zuständen von OKViz](https://appsource.microsoft.com/product/power-bi-visuals/WA104380967) | |
-| [Chiclet-Slicer](https://appsource.microsoft.com/product/power-bi-visuals/WA104380756) | |
-| [Chord](https://appsource.microsoft.com/product/power-bi-visuals/WA104380761) | [Video](https://youtu.be/AQvd2FhRyCI) |
-| [Kreisförmiges Messgerät von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380837) | [Video](https://youtu.be/9NHXALkBXuY) |
-| [Clusterzuordnung](https://appsource.microsoft.com/product/power-bi-visuals/WA104380806) | |
-| [Zylindrisches Messgerät von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380874) | [Video](https://youtu.be/DgdoWi7Gcxo) |
-| [Messuhrdiagramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104381184) | |
-| [Punktdiagramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104380760) | |
-| [Punktdiagramm von OKViz](https://appsource.microsoft.com/product/power-bi-visuals/WA104380949) | [Video](https://youtu.be/By16pX9KT40) |
-| [Drilldown-Kartogramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104381045) | |
-| [Drilldown-Choroplethenkarte](https://appsource.microsoft.com/product/power-bi-visuals/WA104381044) | |
-| [Drilldown-Säulendiagramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104380857) | [Video](https://youtu.be/lBy2gQQ5YsQ) |
-| [Drilldown-Säulendiagramm für zeitbasierte Daten](https://appsource.microsoft.com/product/power-bi-visuals/WA104380881) | [Video](https://youtu.be/T_mRou18vx0) |
-| [Drilldown-Ringdiagramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104380858) | [Video](https://youtu.be/AUVFrSHmPeo) |
-| [Dual KPI](https://appsource.microsoft.com/product/power-bi-visuals/WA104380774) | |
-| [Dynamic Tooltip von MAQ](https://appsource.microsoft.com/product/power-bi-visuals/WA104380983) | [Video](https://youtu.be/Z-tl97BpEr0) |
-| [Erweitertes Punktdiagramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104380762) | [Video](https://youtu.be/xCfM0cjM4do) |
-| [Enlighten Aquarium](https://appsource.microsoft.com/product/power-bi-visuals/WA104381112) | |
-| [Enlighten Slicer](https://appsource.microsoft.com/product/power-bi-visuals/WA104380960) | |
-| [Enlighten Stack Shuffle](https://appsource.microsoft.com/product/power-bi-visuals/WA104380849) | |
-| [Enlighten-Waffeldiagramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104380850) | |
-| [Filtern nach Liste von Devscope](https://appsource.microsoft.com/product/power-bi-visuals/WA104381413) | [Video](https://youtu.be/RetEWGwBu0I) |
-| [Force-Directed Graph](https://appsource.microsoft.com/product/power-bi-visuals/WA104380764) | [Video](https://youtu.be/YsTa7uyJ4sg) |
-| [Trichterdiagramm mit Quelle von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104381334) | [Video](https://youtu.be/R_EcimsLI8U) |
-| [Gantt](https://appsource.microsoft.com/product/power-bi-visuals/WA104380765) | [Video](https://youtu.be/qJ7s_KrGiUU) |
-| [Gantt-Diagramm von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104381364) | [Video](https://youtu.be/vJLV9JRCpI8) |
-| [Globe Data Bars](https://appsource.microsoft.com/product/power-bi-visuals/WA104381344) | |
-| [Grid by MAQ Software (Raster von MAQ Software)](https://appsource.microsoft.com/product/power-bi-visuals/WA104380825) | [Video](https://youtu.be/VOPoDJgZfOY) |
-| [Hierarchiediagramm von Akvelon](https://appsource.microsoft.com/product/power-bi-visuals/WA104381333) | [Video](https://youtu.be/0ZGzJaq_KT4) |
-| [Histogramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104380776) | |
-| [Histogramm mit Punkten von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104381032) | [Video](https://youtu.be/-ILF--wExrw) |
-| [Horizontales Trichterdiagramm von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380846) | [Video](https://youtu.be/SudZei68PPo) |
-| [Bild von CloudScope](https://appsource.microsoft.com/product/power-bi-visuals/WA104381297) | |
-| [Bildraster](https://appsource.microsoft.com/product/power-bi-visuals/WA104381355) | |
-| [Designer für Infografiken](https://appsource.microsoft.com/product/power-bi-visuals/WA104380898) | |
-| [KPI-Diagramm von Akvelon](https://appsource.microsoft.com/product/power-bi-visuals/WA104381432) | |
-| [KPI Column von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380996) | [Video](https://youtu.be/rU0xoOlIq1U) |
-| [KPI-Raster von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380947) | [Video](https://youtu.be/dM4PvZh71V0) |
-| [KPI-Indikator](https://appsource.microsoft.com/product/power-bi-visuals/WA104380832) | |
-| [KPI-Ticker von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380946) | [Video](https://youtu.be/cudG4gsZ2V8) |
-| [Linearmessgerät von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380821) | [Video](https://youtu.be/7_jFaM30dkc) |
-| [LineDot-Diagramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104380766) | |
-| [Mekko-Diagramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104380785) | [Video](https://youtu.be/90FLCKpgicA) |
-| [Multi-KPI](https://appsource.microsoft.com/product/power-bi-visuals/WA104381763) | |
-| [Overview von CloudScope](https://appsource.microsoft.com/product/power-bi-visuals/WA104381477) | |
-| [Wiedergabeachse (dynamischer Slicer)](https://appsource.microsoft.com/product/power-bi-visuals/WA104380981) | |
-| [Power KPI](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083) | [Video](https://youtu.be/IvfIP3E6-1Q) |
-| [Power-KPI-Matrix](https://appsource.microsoft.com/product/power-bi-visuals/WA104381299) | [Video](https://youtu.be/1enze8pcGzY) |
-| [Pulse-Diagramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104381006) | [Video](https://youtu.be/DQWdcQtjDVw) |
-| [Quadrant Chart by MAQ Software (Quadrant-Diagramm von MAQ Software)](https://appsource.microsoft.com/product/power-bi-visuals/WA104381011) | [Video](https://youtu.be/ppBnyhqWNC0) |
-| [Netzdiagramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104380771) | |
-| [Ringdiagramm von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380824) | [Video](https://youtu.be/pDToHDFHnq8) |
-| [Drehbares Diagramm von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104381007) | [Video](https://youtu.be/d5xBCMmb3hU) |
-| [Sankey-Diagramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104380777) | [Video](https://youtu.be/WWP9wVUHGaA) |
-| [Punktdiagramm von Akvelon](https://appsource.microsoft.com/product/power-bi-visuals/WA104381703) | |
-| [Scroller](https://appsource.microsoft.com/product/power-bi-visuals/WA104381018) | |
-| [Intelligenter Filter von OKViz](https://appsource.microsoft.com/product/power-bi-visuals/WA104380859) | [Video](https://youtu.be/gcJsDDRQq28) |
-| [Sparkline von OKViz](https://appsource.microsoft.com/product/power-bi-visuals/WA104380910) | [Video](https://youtu.be/0m3Vnvso9tY) |
-| [Stream-Diagramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104380772) | |
-| [Sunburst](https://appsource.microsoft.com/product/power-bi-visuals/WA104380767) | |
-| [Synoptic Panel von OKViz](https://appsource.microsoft.com/product/power-bi-visuals/WA104380873) | |
-| [Tabellenheatmap](https://appsource.microsoft.com/product/power-bi-visuals/WA104380818) | |
-| [Tachometer](https://appsource.microsoft.com/product/power-bi-visuals/WA104380937) | [Video](https://youtu.be/C3OXdETbS9o) |
-| [Textfilter](https://appsource.microsoft.com/product/power-bi-visuals/WA104381309) | |
-| [Text-Wrapper von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380826) | |
-| [Thermometer von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380847) | [Video](https://youtu.be/SPX9mgrAdBc) |
-| [Time Brush-Slicer](https://appsource.microsoft.com/product/power-bi-visuals/WA104380798) | |
-| [Timeline-Slicer](https://appsource.microsoft.com/product/power-bi-visuals/WA104380786) | [Video](https://youtu.be/ozMtZ4_NZ10) |
-| [Timeline von CloudScope](https://appsource.microsoft.com/product/power-bi-visuals/WA104381427) | [Video](https://youtu.be/szNi9YgXFJc) |
-| [Tornado-Diagramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104380768) | [Video](https://www.youtube.com/watch?v=AQvd2FhRyCI) |
-| [Handelsdiagramm von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380823) | [Video](https://youtu.be/xhTR6y6J9Ko) |
-| [Ultimative Varianz](https://appsource.microsoft.com/product/power-bi-visuals/WA104381140) | [Video](https://youtu.be/pDYF8iZxERs) |
-| [Ultimatives Wasserfalldiagramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104380956) | [Video](https://youtu.be/0BZsVCQdEkc) |
-| [Benutzerliste von CloudScope](https://appsource.microsoft.com/product/power-bi-visuals/WA104381426) | |
-| [Waffeldiagramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104381049) | [Video](https://youtu.be/1vRqYUsm3Vk) |
-| [Wortwolke](https://appsource.microsoft.com/product/power-bi-visuals/WA104380752) | [Video](https://youtu.be/AblTenl9fqo) |
+Die zertifizierten Power BI-Visuals werden nachfolgend aufgeführt. Klicken Sie auf den Link, um das Power BI-Visual in AppSource zu öffnen. Wenn ein Video verfügbar ist, können Sie auf den jeweiligen Link klicken, um dieses anzusehen.
 
-## <a name="faq"></a>HÄUFIG GESTELLTE FRAGEN
+* [3AG Systems - Bar Chart With Absolute Variance](https://appsource.microsoft.com/product/power-bi-visuals/WA104381802)
+*  [3AG Systems – Bar Chart With Relative Variance (3AG Systems: Balkendiagramm mit relativer Varianz)](https://appsource.microsoft.com/product/power-bi-visuals/WA104381912)
+*  [3AG Systems – Column Chart With Relative Variance (3AG Systems: Säulendiagramm mit relativer Varianz)](https://appsource.microsoft.com/product/power-bi-visuals/WA104381803)
+*  [3AG Systems - Column Chart with Variance](https://appsource.microsoft.com/product/power-bi-visuals/WA104381724)
+* [Advanced Donut Visual (Vollversion)](https://appsource.microsoft.com/product/power-bi-visuals/WA104381941)
+*  [Advanced Donut Visual (Eingeschränkte Version)](https://appsource.microsoft.com/product/power-bi-visuals/WA104380858)
+*  [Advanced Graph Visual](https://appsource.microsoft.com/product/power-bi-visuals/WA104382086)
+*  [Advanced Network Visualization (Erweiterte Netzwerkvisualisierung)](https://appsource.microsoft.com/product/power-bi-visuals/WA104381942)
+*  [Advanced TimeSeries Visual (Vollversion)](https://appsource.microsoft.com/product/power-bi-visuals/WA104381943)
+*  [Aster-Plot](https://appsource.microsoft.com/product/power-bi-visuals/WA104380759)
+*  [Beyondsoft-Kalender](https://appsource.microsoft.com/product/power-bi-visuals/WA104381096)
+*  [Schleifendiagramm von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380838)
+*  [Kastengrafikdiagramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104380831)
+* [Kastengrafikdiagramm von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104381351)
+*  [Ziegeldiagramm von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380836)
+*  [Blasendiagramm von Akvelon](https://appsource.microsoft.com/product/power-bi-visuals/WA104381340)
+*  [Bullet Chart](https://appsource.microsoft.com/product/power-bi-visuals/WA104380755), **[Link zum Video](https://youtu.be/AOlsFYkfkcw)**
+* [Bullet-Diagramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104380755)
+*  [Bullet Chart by OKViz](https://appsource.microsoft.com/product/power-bi-visuals/WA104380953), **[Link zum Video](https://youtu.be/mtvUNl9bMjA)**
+* [Calendar by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104381844)
+*  [Kalender von Tallan](https://appsource.microsoft.com/product/power-bi-visuals/WA104381146)
+*  [Candlestick by OKViz](https://appsource.microsoft.com/product/power-bi-visuals/WA104380952), **[Link zum Video](https://youtu.be/nT_18gyRxPo)**
+*  [Karte mit Zuständen von OKViz](https://appsource.microsoft.com/product/power-bi-visuals/WA104380967)
+*  [Chiclet-Slicer](https://appsource.microsoft.com/product/power-bi-visuals/WA104380756)
+*  [Chord](https://appsource.microsoft.com/product/power-bi-visuals/WA104380761), **[Link zum Video](https://youtu.be/AQvd2FhRyCI)**
+*  [Kreisförmiges Messgerät von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380837)
+*  [Clusterzuordnung](https://appsource.microsoft.com/product/power-bi-visuals/WA104380806)
+* [Custom Calendar by Akvelon](https://appsource.microsoft.com/product/power-bi-visuals/WA104381179)
+* [Zylindrisches Messgerät von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380874)
+*  [Dial Gauge](https://appsource.microsoft.com/product/power-bi-visuals/WA104381184)
+[Dot Plot](https://appsource.microsoft.com/product/power-bi-visuals/WA104380760)
+*  [Dot Plot by OKViz](https://appsource.microsoft.com/product/power-bi-visuals/WA104380949), **[Link zum Video](https://youtu.be/By16pX9KT40)**
+*  [Drilldown-Kartogramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104381045)
+*  [Drilldown-Choroplethenkarte](https://appsource.microsoft.com/product/power-bi-visuals/WA104381044)
+*  [Drilldown-Säulendiagramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104380857), **[Link zum Video](https://youtu.be/lBy2gQQ5YsQ)**
+*  [Drilldown-Säulendiagramm für zeitbasierte Daten](https://appsource.microsoft.com/product/power-bi-visuals/WA104380881), **[Link zum Video](https://youtu.be/T_mRou18vx0)**
+*  [Drilldown-Ringdiagramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104380858), **[Link zum Video](https://youtu.be/AUVFrSHmPeo)**
+*  [Dual KPI](https://appsource.microsoft.com/product/power-bi-visuals/WA104380774)
+*  [Dynamic Tooltip von MAQ](https://appsource.microsoft.com/product/power-bi-visuals/WA104380983)
+*  [Erweitertes Punktdiagramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104380762), **[Link zum Video](https://youtu.be/xCfM0cjM4do)**
+*  [Enlighten Aquarium](https://appsource.microsoft.com/product/power-bi-visuals/WA104381112)
+*  [Enlighten Slicer](https://appsource.microsoft.com/product/power-bi-visuals/WA104380960)
+*  [Enlighten Stack Shuffle](https://appsource.microsoft.com/product/power-bi-visuals/WA104380849)
+*  [Enlighten-Waffeldiagramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104380850)
+*  [Filern nach Liste von Devscope](https://appsource.microsoft.com/product/power-bi-visuals/WA104381413), **[Link zum Video](https://youtu.be/RetEWGwBu0I)**
+*  [Force-Directed Graph](https://appsource.microsoft.com/product/power-bi-visuals/WA104380764), **[Link zum Video](https://youtu.be/YsTa7uyJ4sg)**
+*  [Trichterdiagramm mit Quelle von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104381334)
+*  [Gantt](https://appsource.microsoft.com/product/power-bi-visuals/WA104380765), **[Link zum Video](https://youtu.be/qJ7s_KrGiUU)**
+* [Gantt-Diagramm von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104381364)
+*  [Globe Data Bars](https://appsource.microsoft.com/product/power-bi-visuals/WA104381344)
+*  [Grid by MAQ Software (Raster von MAQ Software)](https://appsource.microsoft.com/product/power-bi-visuals/WA104380825)
+*  [Hierarchy Chart by Akvelon](https://appsource.microsoft.com/product/power-bi-visuals/WA104381333), **[Link zum Video](https://youtu.be/0ZGzJaq_KT4)**
+*  [Histogramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104380776)
+*  [Histogramm mit Punkten von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104381032)
+* [Horizontal bar chart](https://appsource.microsoft.com/product/power-bi-visuals/WA104381230)
+*  [Horizontales Trichterdiagramm von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380846)
+*  [Bild von CloudScope](https://appsource.microsoft.com/product/power-bi-visuals/WA104381297)
+*  [Bildraster](https://appsource.microsoft.com/product/power-bi-visuals/WA104381355)
+*  [Designer für Infografiken](https://appsource.microsoft.com/product/power-bi-visuals/WA104380898)
+*  [KPI-Diagramm von Akvelon](https://appsource.microsoft.com/product/power-bi-visuals/WA104381432)
+*  [KPI Column von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380996)
+*  [KPI-Raster von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380947)
+*  [KPI-Indikator](https://appsource.microsoft.com/product/power-bi-visuals/WA104380832)
+*  [KPI-Ticker von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380946)
+* [Linearmessgerät von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380821)
+*  [LineDot-Diagramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104380766)
+*  [Mekko Chart](https://appsource.microsoft.com/product/power-bi-visuals/WA104380785), **[Link zum Video](https://youtu.be/90FLCKpgicA)**
+*  [Multi-KPI](https://appsource.microsoft.com/product/power-bi-visuals/WA104381763)
+*  [Overview von CloudScope](https://appsource.microsoft.com/product/power-bi-visuals/WA104381477)
+*  [Wiedergabeachse (dynamischer Slicer)](https://appsource.microsoft.com/product/power-bi-visuals/WA104380981)
+*  [Power KPI](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083), [Link zum Video](https://youtu.be/IvfIP3E6-1Q)
+*  [Power KPI Matrix](https://appsource.microsoft.com/product/power-bi-visuals/WA104381299), **[Link zum Video](https://youtu.be/1enze8pcGzY)**
+*  [Pulse Chart](https://appsource.microsoft.com/product/power-bi-visuals/WA104381006), **[Link zum Video](https://youtu.be/DQWdcQtjDVw)**
+*  [Quadrant Chart by MAQ Software (Quadrant-Diagramm von MAQ Software)](https://appsource.microsoft.com/product/power-bi-visuals/WA104381011)
+*  [Netzdiagramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104380771)
+*  [Ringdiagramm von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380824)
+*  [Drehbares Diagramm von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104381007)
+*  [Sankey Chart](https://appsource.microsoft.com/product/power-bi-visuals/WA104380777), **[Link zum Video](https://youtu.be/WWP9wVUHGaA)**
+*  [Punktdiagramm von Akvelon](https://appsource.microsoft.com/product/power-bi-visuals/WA104381703)
+*  [Scroller](https://appsource.microsoft.com/product/power-bi-visuals/WA104381018)
+*  [Smart Filter by OKViz](https://appsource.microsoft.com/product/power-bi-visuals/WA104380859), **[Link zum Video](https://youtu.be/gcJsDDRQq28)**
+*  [Sparkline by OKViz](https://appsource.microsoft.com/product/power-bi-visuals/WA104380910), **[Link zum Video](https://youtu.be/0m3Vnvso9tY)**
+*  [Stream-Diagramm](https://appsource.microsoft.com/product/power-bi-visuals/WA104380772)
+*  [Sunburst](https://appsource.microsoft.com/product/power-bi-visuals/WA104380767)
+*  [Synoptic Panel von OKViz](https://appsource.microsoft.com/product/power-bi-visuals/WA104380873)
+*  [Tabellenheatmap](https://appsource.microsoft.com/product/power-bi-visuals/WA104380818)
+*  [Tachometer](https://appsource.microsoft.com/product/power-bi-visuals/WA104380937), **[Link zum Video](https://youtu.be/C3OXdETbS9o)**
+*  [Textfilter](https://appsource.microsoft.com/product/power-bi-visuals/WA104381309)
+*  [Text-Wrapper von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380826)
+*  [Thermometer von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380847)
+*  [Time Brush-Slicer](https://appsource.microsoft.com/product/power-bi-visuals/WA104380798)
+*  [Timeline Slicer](https://appsource.microsoft.com/product/power-bi-visuals/WA104380786), **[Link zum Video](https://youtu.be/ozMtZ4_NZ10)**
+*  [Timeline by CloudScope](https://appsource.microsoft.com/product/power-bi-visuals/WA104381427), [Link zum Video](https://youtu.be/szNi9YgXFJc)
+*  [Tornado chart](https://appsource.microsoft.com/product/power-bi-visuals/WA104380768), **[Link zum Video](https://www.youtube.com/watch?v=AQvd2FhRyCI)**
+*  [Handelsdiagramm von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380823)
+* [Ultimate KPI Card](https://appsource.microsoft.com/product/power-bi-visuals/WA104381977)
+*  [Ultimate Variance](https://appsource.microsoft.com/product/power-bi-visuals/WA104381140), **[Link zum Video](https://youtu.be/pDYF8iZxERs)**
+*  [Ultimate Waterfall](https://appsource.microsoft.com/product/power-bi-visuals/WA104380956), **[Link zum Video](https://youtu.be/0BZsVCQdEkc)**
+*  [Benutzerliste von CloudScope](https://appsource.microsoft.com/product/power-bi-visuals/WA104381426)
+*  [Venn-Diagramm von MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104381231)
+*  [Violin Plot](https://appsource.microsoft.com/product/power-bi-visuals/WA104381947)
+*  [Visio Visual](https://appsource.microsoft.com/product/power-bi-visuals/WA104381132)
+*  [Waffle Chart](https://appsource.microsoft.com/product/power-bi-visuals/WA104381049), **[Link zum Video](https://youtu.be/1vRqYUsm3Vk)**
+*  [Word Cloud](https://appsource.microsoft.com/product/power-bi-visuals/WA104380752), **[Link zum Video](https://youtu.be/AblTenl9fqo)**
+
+## <a name="faq"></a>Häufig gestellte Fragen
 
 Weitere Informationen zu Visuals finden Sie in den [häufig gestellten Fragen zu zertifizierten Visuals](power-bi-custom-visuals-faq.md#certified-power-bi-visuals).
 

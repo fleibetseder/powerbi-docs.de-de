@@ -10,10 +10,10 @@ ms.date: 04/19/2019
 ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: f759992c42cc589d21ed51d5d63775bf54518c3f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73869110"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Erstellen und Verwalten von Beziehungen in Power BI Desktop
@@ -23,12 +23,12 @@ Wenn Sie mehrere Tabellen importieren, werden Sie mit großer Wahrscheinlichkeit
 Wenn Sie zwei oder mehr Tabellen gleichzeitig abfragen, nachdem die Daten geladen sind, versucht Power BI Desktop, die Beziehungen zu finden und für Sie zu erstellen. Kardinalität, Kreuzfilterrichtung und aktive Eigenschaften werden automatisch festgelegt. Power BI Desktop untersucht die Spaltennamen in den abgefragten Tabellen, um festzustellen, ob mögliche Beziehungen vorhanden sind. Wenn Beziehungen vorhanden sind, werden sie automatisch erstellt. Wenn Power BI Desktop nicht mit hoher Zuverlässigkeit ermitteln kann, dass eine Übereinstimmung vorliegt, wird die Beziehung nicht automatisch erstellt. Sie können das Dialogfeld "Beziehungen verwalten" weiterhin dazu verwenden, Beziehungen zu erstellen oder zu bearbeiten.
 
 ## <a name="create-a-relationship-by-using-autodetect"></a>Erstellen einer Beziehung mit AutoErmittlung
-Klicken Sie auf der Registerkarte **Start** auf **Beziehungen verwalten**\>**AutoErmittlung**.
+Klicken Sie auf der Registerkarte **Start** auf **Beziehungen verwalten** \> **AutoErmittlung**.
 
 ![](media/desktop-create-and-manage-relationships/automaticrelationship.gif)
 
 ## <a name="create-a-relationship-manually"></a>Manuelles Erstellen einer Beziehung
-1. Klicken Sie auf der Registerkarte **Start** auf **Beziehungen verwalten**\>**Neu**.
+1. Klicken Sie auf der Registerkarte **Start** auf **Beziehungen verwalten** \> **Neu**.
 2. Wählen Sie im Dialogfeld **Beziehung erstellen** in der ersten Dropdownliste für Tabellen eine Tabelle aus, und wählen Sie dann die Spalte aus, die Sie in der Beziehung verwenden möchten.
 3. In der zweiten Dropdownliste für Tabellen wählen Sie die andere Tabelle aus, die in die Beziehung einbezogen werden soll. Wählen Sie dann die andere zu verwendende Spalte aus, und klicken Sie auf **OK**.
 
@@ -80,7 +80,7 @@ Nachdem Sie zwei Tabellen mit einer Beziehung verbunden haben, können Sie mit d
 Wir führen ein kurzes Tutorial durch, um Ihnen besser zu vermitteln, wie Beziehungen in Power BI Desktop funktionieren.
 
 >[!TIP]
->Sie können diese Lektion selbst durchführen. Kopieren Sie die nachfolgende Tabelle „Projektstunden“ in ein Excel-Arbeitsblatt, wählen Sie alle Zellen aus, und klicken Sie auf **EINFÜGEN**\>**Tabelle**. Klicken Sie im Dialogfeld **Tabelle erstellen** einfach auf **OK**. Nehmen Sie dann im Feld **Tabellenname**die Eingabe **Projektstunden**vor. Gehen Sie für die Tabelle „UnternehmenProjekt“ auf dieselbe Weise vor. Sie können die Daten dann mithilfe der Option **Daten abrufen** in Power BI-Desktop importieren. Wählen Sie die Arbeitsmappe und Tabellen als Datenquelle aus.
+>Sie können diese Lektion selbst durchführen. Kopieren Sie die nachfolgende Tabelle „Projektstunden“ in ein Excel-Arbeitsblatt, wählen Sie alle Zellen aus, und klicken Sie auf **EINFÜGEN** \> **Tabelle**. Klicken Sie im Dialogfeld **Tabelle erstellen** einfach auf **OK**. Nehmen Sie dann im Feld **Tabellenname**die Eingabe **Projektstunden**vor. Gehen Sie für die Tabelle „UnternehmenProjekt“ auf dieselbe Weise vor. Sie können die Daten dann mithilfe der Option **Daten abrufen** in Power BI-Desktop importieren. Wählen Sie die Arbeitsmappe und Tabellen als Datenquelle aus.
 
 Diese erste Tabelle, „Projektstunden“, stellt einen Datensatz von Arbeitstickets dar, der die Anzahl der Stunden aufzeichnet, die eine Person an einem bestimmten Projekt gearbeitet hat. 
 
@@ -88,17 +88,17 @@ Diese erste Tabelle, „Projektstunden“, stellt einen Datensatz von Arbeitstic
 
 | **Ticket** | **Absender** | **Stunden** | **Projekt** | **Sendedatum** |
 | ---:|:--- | ---:|:--- | ---:|
-| 1001 |Brewer, Alan |22 |Blau |1/1/2013 |
-| 1002 |Brewer, Alan |26 |Rot |2/1/2013 |
-| 1003 |Ito, Shu |34 |Gelb |12/4/2012 |
+| 1001 |Brewer, Alan |22 |Blue |1/1/2013 |
+| 1002 |Brewer, Alan |26 |Red |2/1/2013 |
+| 1003 |Ito, Shu |34 |Yellow |12/4/2012 |
 | 1004 |Brewer, Alan |13 |Orange |1/2/2012 |
-| 1005 |Bowen, Eli |29 |Violett |10/1/2013 |
-| 1006 |Bento, Nuno |35 |Grün |2/1/2013 |
-| 1007 |Hamilton, David |10 |Gelb |10/1/2013 |
+| 1005 |Bowen, Eli |29 |Violett |1\.10.2013 |
+| 1006 |Bento, Nuno |35 |Green |2/1/2013 |
+| 1007 |Hamilton, David |10 |Yellow |1\.10.2013 |
 | 1008 |Han, Mu |28 |Orange |1/2/2012 |
-| 1009 |Ito, Shu |22 |Violett |2/1/2013 |
-| 1010 |Bowen, Eli |28 |Grün |10/1/2013 |
-| 1011 |Bowen, Eli |9 |Blau |10/15/2013 |
+| 1009 |Ito, Shu |22 |Purple |2/1/2013 |
+| 1010 |Bowen, Eli |28 |Green |10/1/2013 |
+| 1011 |Bowen, Eli |9 |Blue |10/15/2013 |
 
 Diese zweite Tabelle, „UnternehmenProjekt“, stellt eine Liste von Projekten mit zugeordneter Priorität dar: A, B oder C. 
 
@@ -106,11 +106,11 @@ Diese zweite Tabelle, „UnternehmenProjekt“, stellt eine Liste von Projekten 
 
 | **Projektname** | **Priorität** |
 | --- | --- |
-| Blau |A |
+| Blue |A |
 | Rot |B |
-| Grün |C |
+| Green |C |
 | Gelb |C |
-| Violett |B |
+| Purple |B |
 | Orange |C |
 
 Beachten Sie, dass jede Tabelle eine Projektspalte besitzt. Die Benennung ist etwas unterschiedlich, aber die Werte scheinen gleich zu sein. Das ist wichtig, und wir kommen in Kürze darauf zurück.
@@ -184,19 +184,19 @@ Die nachfolgende Tabelle „UnternehmenPriorität“ stellt eine Liste aller Unt
 
 | **Genehmigte Projekte** | **Budgetzuteilung** | **Zuteilungsdatum** |
 |:--- | ---:| ---:|
-| Blau |40,000 |12/1/2012 |
-| Rot |100,000 |12/1/2012 |
-| Grün |50,000 |12/1/2012 |
+| Blue |40,000 |12/1/2012 |
+| Red |100,000 |12/1/2012 |
+| Grün |50.000 |12/1/2012 |
 
 **UnternehmenProjektPriorität**
 
 | **Projekt** | **Priorität** |
 | --- | --- |
-| Blau |A |
+| Blue |A |
 | Rot |B |
-| Grün |C |
+| Green |C |
 | Gelb |C |
-| Violett |B |
+| Purple |B |
 | Orange |C |
 
 Wenn wir zwischen der Spalte „Projekt“ in der Tabelle „UnternehmenProjektPriorität“ und der Spalte „Genehmigte Projekte“ in der Tabelle „Projektbudget“ wie folgt eine Beziehung erstellen:
@@ -208,10 +208,10 @@ wird für die Kardinalität automatisch Eins-zu-Eins („1: 1“) und für die K
 | **Projekt** | **Priorität** | **Budgetzuteilung** | **Zuteilungsdatum** |
 |:--- | --- | ---:| ---:|
 | Blau |A |40,000 |12/1/2012 |
-| Rot |B |100,000 |12/1/2012 |
-| Grün |C |50,000 |12/1/2012 |
-| Gelb |C |<br /> |<br /> |
-| Violett |B |<br /> |<br /> |
+| Red |B |100.000 |12/1/2012 |
+| Green |C |50,000 |12/1/2012 |
+| Yellow |C |<br /> |<br /> |
+| Purple |B |<br /> |<br /> |
 | Orange |C |<br /> |<br /> |
 
 Zwischen den beiden Tabellen besteht eine 1:1-Beziehung, da in der Spalte „Projekt“ der kombinierten Tabelle keine sich wiederholenden Werte enthalten sind. Die Spalte „Projekt“ ist eindeutig, da jeder Wert nur einmal auftritt. Daher können die Zeilen der beiden Tabellen ohne Duplizierung direkt kombiniert werden.
@@ -222,24 +222,24 @@ Aber angenommen, Sie wissen, dass die Daten bei der nächsten Aktualisierung ge�
 
 | **Genehmigte Projekte** | **Budgetzuteilung** | **Zuteilungsdatum** |
 | --- | ---:| ---:|
-| Blau |40,000 |12/1/2012 |
-| Rot |100,000 |12/1/2012 |
-| Grün |50,000 |12/1/2012 |
-| Blau |80,000 |6/1/2013 |
-| Rot |90,000 |6/1/2013 |
+| Blue |40,000 |12/1/2012 |
+| Red |100,000 |12/1/2012 |
+| Grün |50.000 |12/1/2012 |
+| Blue |80,000 |6/1/2013 |
+| Red |90,000 |6/1/2013 |
 
  Das bedeutet, dass die beste Kombination der beiden Tabellen jetzt tatsächlich wie folgt aussieht: 
 
 | **Projekt** | **Priorität** | **Budgetzuteilung** | **Zuteilungsdatum** |
 | --- | --- | ---:| ---:|
 | Blau |A |40,000 |12/1/2012 |
-| Rot |B |100,000 |12/1/2012 |
-| Grün |C |50,000 |12/1/2012 |
-| Gelb |C |<br /> |<br /> |
-| Violett |B |<br /> |<br /> |
+| Red |B |100.000 |12/1/2012 |
+| Green |C |50,000 |12/1/2012 |
+| Yellow |C |<br /> |<br /> |
+| Purple |B |<br /> |<br /> |
 | Orange |C |<br /> |<br /> |
-| Blau |A |80000 |6/1/2013 |
-| Rot |B |90000 |6/1/2013 |
+| Blue |A |80000 |6/1/2013 |
+| Red |B |90000 |6/1/2013 |
 
 In dieser neuen kombinierten Tabelle weist die Spalte „Projekt“ sich wiederholende Werte auf. Die beiden ursprünglichen Tabellen weisen nach der Aktualisierung der Tabelle keine 1:1-Beziehung auf. Da in diesem Fall bekannt ist, dass zukünftige Updates dazu führen, dass die Spalte „Projekt“ Duplikate enthält, wird für die Kardinalität eine n\*:1-Beziehung festgelegt, wobei n „ProjectBudget“ entspricht und 1 „CompanyProjectPriority“.
 
@@ -290,17 +290,17 @@ Betrachten wir dazu ein Beispiel. Die erste Tabelle ist „ProjektTickets“ und
 
 | **Ticket** | **GeöffnetVon** | **Absender** | **Stunden** | **Projekt** | **Sendedatum** |
 | ---:|:--- |:--- | ---:|:--- | ---:|
-| 1001 |Perham, Tom |Brewer, Alan |22 |Blau |1/1/2013 |
-| 1002 |Roman, Daniel |Brewer, Alan |26 |Rot |2/1/2013 |
-| 1003 |Roth, Daniel |Ito, Shu |34 |Gelb |12/4/2012 |
+| 1001 |Perham, Tom |Brewer, Alan |22 |Blue |1/1/2013 |
+| 1002 |Roman, Daniel |Brewer, Alan |26 |Red |2/1/2013 |
+| 1003 |Roth, Daniel |Ito, Shu |34 |Yellow |12/4/2012 |
 | 1004 |Perham, Tom |Brewer, Alan |13 |Orange |1/2/2012 |
-| 1005 |Roman, Daniel |Bowen, Eli |29 |Violett |10/1/2013 |
-| 1006 |Roth, Daniel |Bento, Nuno |35 |Grün |2/1/2013 |
-| 1007 |Roth, Daniel |Hamilton, David |10 |Gelb |10/1/2013 |
+| 1005 |Roman, Daniel |Bowen, Eli |29 |Violett |1\.10.2013 |
+| 1006 |Roth, Daniel |Bento, Nuno |35 |Green |2/1/2013 |
+| 1007 |Roth, Daniel |Hamilton, David |10 |Yellow |1\.10.2013 |
 | 1008 |Perham, Tom |Han, Mu |28 |Orange |1/2/2012 |
-| 1009 |Roman, Daniel |Ito, Shu |22 |Violett |2/1/2013 |
-| 1010 |Roth, Daniel |Bowen, Eli |28 |Grün |10/1/2013 |
-| 1011 |Perham, Tom |Bowen, Eli |9 |Blau |10/15/2013 |
+| 1009 |Roman, Daniel |Ito, Shu |22 |Purple |2/1/2013 |
+| 1010 |Roth, Daniel |Bowen, Eli |28 |Green |10/1/2013 |
+| 1011 |Perham, Tom |Bowen, Eli |9 |Blue |10/15/2013 |
 
 **Mitarbeiterfunktion**
 

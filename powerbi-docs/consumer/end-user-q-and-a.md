@@ -6,15 +6,15 @@ ms.reviewer: mohammad ali
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/22/2019
+ms.date: 12/18/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 051803b3d9708289f37271afc02b7802fb52b50e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 5dd924f066b6382ed895d81ed0ada5d913c040e6
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73862663"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75218182"
 ---
 # <a name="qa-for-power-bi-consumers"></a>Q&A für Power BI-**Verbraucher**
 
@@ -67,28 +67,30 @@ Beispiel:
 
 Sobald Sie mit den Daten vertraut sind, navigieren Sie zurück zum Dashboard, und platzieren Sie Ihren Mauszeiger auf dem Fragefeld. Die Q&A-Anzeige wird geöffnet.
 
-![Q&A-Anzeige](media/end-user-q-and-a/power-bi-screen.png) 
+![Q&A-Anzeige](media/end-user-q-and-a/power-bi-suggested.png) 
 
 Noch bevor Sie mit der Eingabe beginnen, zeigt Q&A einen neuen Bildschirm mit Vorschlägen für die Formulierung Ihrer Frage an. Es werden Ausdrücke und Fragen angezeigt, die die Namen von Tabellen in den zugrunde liegenden Datasets enthalten, und möglicherweise werden sogar *ausgewählte* Fragen aufgeführt, die der Besitzer des Datasets erstellt hat.
 
 Sie können jede dieser Fragen auswählen, um sie dem Fragefeld hinzuzufügen und dann zu verfeinern, um eine bestimmte Antwort zu finden. 
 
-Darüber hinaus unterstützt Q&A Sie beim Stellen von Fragen durch Eingabeaufforderungen, AutoVervollständigen und visuelle Hinweise. 
+![Q&A-Anzeige](media/end-user-q-and-a/power-bi-result.png) 
+
+Darüber hinaus unterstützt Power BI Sie beim Stellen von Fragen mit folgenden Features: Eingabeaufforderungen, AutoVervollständigen und visuelle Hinweise. Power BI bietet diese Unterstützung für Q&A für Dashboards, Q&A in Berichten und mit dem Q&A-Visual. Diese Features werden weiter unten im Abschnitt [Erstellen eines Q&A-Visuals durch Eingabe einer Abfrage in natürlicher Sprache](#create-a-qa-visual-by-typing-a-natural-language-query) ausführlich erläutert.
 
 <!-- ![video](../visuals/media/end-user-q-and-a/qna4.gif) -->
 
 
-## <a name="the-qa-visual"></a>Das Q&A-Visual
+## <a name="the-qa-visual-in-power-bi-reports"></a>Das Q&A-Visual in Power BI-Berichten
 
-Über das Q&A-Visual können Sie in natürlicher Sprache Fragen stellen und erhalten Antworten in Form eines visuellen Elements. Das Q&A-Visual unterstützt wie jedes andere visuelle Element Kreuzfilterung, Kreuzhervorhebung, Lesezeichen und Kommentare. 
+Über das Q&A-Visual können Sie in natürlicher Sprache Fragen stellen und erhalten Antworten in Form eines visuellen Elements. Das Q&A-Visual unterstützt wie jedes andere visuelle Element in einem Bericht Kreuzfilterung, Kreuzhervorhebung, Lesezeichen und Kommentare. 
 
 Sie erkennen ein Q&A-Visual anhand des Fragefelds im oberen Bereich. Hier geben Sie Fragen in natürlicher Sprache ein. Das Q&A-Visual kann beliebig oft verwendet werden, um Fragen zu Ihren Daten zu stellen. Wenn Sie den Bericht verlassen, wird das Q&A-Visual auf die zugehörigen Standardeinstellungen zurückgesetzt. 
 
 ![Screenshot eines standardmäßigen Q&A-Visuals](media/end-user-q-and-a/power-bi-q-and-a-default.png)
 
 
-## <a name="use-the-qa-visual"></a>Verwenden des Q&A-Visuals
-Um das Q&A-Visual zu verwenden, wählen Sie entweder eine der vorgeschlagenen Fragen aus oder geben eine eigene Frage in natürlicher Sprache ein. 
+## <a name="use-qa"></a>Verwenden von Q&A 
+Wählen Sie entweder eine der vorgeschlagenen Fragen aus oder geben eine eigene Frage in natürlicher Sprache ein, um Q&A für ein Dashboard oder das Q&A-Visual in einem Bericht zu verwenden. 
 
 ### <a name="create-a-qa-visual-by-using-a-suggested-question"></a>Erstellen eines Q&A-Visuals durch Verwendung einer vorgeschlagenen Frage
 
@@ -105,26 +107,45 @@ Sie können Power BI aber auch mitteilen, welches Visual verwendet werden soll, 
 
 Wenn Sie sich nicht sicher sind, welcher Fragetyp oder welche Terminologie verwendet werden sollte, erweitern Sie die Option **Alle Vorschläge anzeigen**. Alternativ können Sie sich auch die weiteren Visuals im Bericht ansehen. Auf diese Weise können Sie sich mit den Begriffen und Inhalten des Datasets vertraut machen.
 
-1. Geben Sie Ihre Frage in natürlicher Sprache in das Q&A-Feld ein. Während Sie Ihre Frage eingeben, stellt Power BI automatische Vervollständigungen, Vorschläge und Feedback bereit.
+1. Geben Sie Ihre Frage in natürlicher Sprache in das Q&A-Feld ein. Während Sie Ihre Frage eingeben, stellt Power BI automatische Vervollständigungen, visuelle Hinweise und Feedback bereit.
 
-    - Eine rote Unterstreichung wird für Wörter verwendet, die von Power BI nicht erkannt werden. Sofern möglich, unterstützt Power BI Sie beim Definieren dieser Wörter. Wenn die korrekte Definition angezeigt wird, wählen Sie sie aus der Dropdownliste aus.  
+    **AutoVervollständigen**: Bei der Eingabe Ihrer Frage zeigt Power BI Q&A relevante und kontextuelle Vorschläge an, die Ihnen helfen, schnell mit natürlicher Sprache produktiv zu werden. Sie erhalten während der Eingabe sofort Feedback und Ergebnisse. Die Funktionalität ist vergleichbar mit der Eingabe in eine Suchmaschine.
 
-        ![Rot unterstrichener Begriff im Q&A-Fragefeld](media/end-user-q-and-a/power-bi-q-and-a-red.png)
+    In diesem Beispiel ist der gewünschte Vorschlag der letzte. 
 
-    - Wenn keine der Definitionen zutrifft, versuchen Sie es mit einem anderen Begriff. Alternativ können Sie das rot unterstrichene Wort auswählen und den Besitzer des Berichts bitten, das Wort hinzuzufügen.
+    ![Q&A mit einem blau unterstrichenen Wort](media/end-user-q-and-a/power-bi-autocomplete.png)
 
-        ![Eingabe einer Frage im Q&A-Fragefeld](media/end-user-q-and-a/power-bi-q-and-a-owner.png)
+    **Rote/blaue Unterstreichungen**: Power BI Q&A zeigt Wörter mit Unterzeichnungen an, damit Sie sehen können, welche Wörter Power BI verstanden oder nicht erkannt hat. Eine durchgezogene blaue Unterstreichung zeigt an, dass Power BI das Wort erkannt hat. Das Beispiel unten zeigt, dass Q&A das Wort **store** verstanden hat.
 
-    - Wenn Sie mit der Eingabe der Frage fortfahren, erhalten Sie eine Rückmeldung von Power BI, falls die Frage nicht verstanden wird, und es werden weitere Vorschläge angezeigt. Im nachstehenden Beispiel schlägt Power BI unter „Meinten Sie...“ eine andere Möglichkeit der Formulierung vor, die die Terminologie des Datasets aufgreift. 
+    ![Q&A mit Vorschlägen aus der Dropdownliste zur Vervollständigung der Frage](media/end-user-q-and-a/power-bi-blue.png)
 
-        ![Anzeige von vorgeschlagenen Korrekturen durch Q&A](media/end-user-q-and-a/power-bi-q-and-a-did-you-mean.png)
+    Wählen Sie ein blau unterstrichenes Wort aus, um eine Dropdownliste mit vorgeschlagenen Fragen anzuzeigen. 
 
-2. Nachdem Sie einen Korrekturvorschlag von Power BI ausgewählt haben, werden Ihre Ergebnisse als Liniendiagramm angezeigt. 
+    ![Dropdownliste mit Vorschlägen zu „Sie können auf Folgendes versuchen“](media/end-user-q-and-a/power-bi-try.png)
+
+
+    Bei der Eingabe eines Worts in Q&A wird dieses häufig rot unterstrichen. Eine rote Unterstreichung kann auf zwei potenzielle Probleme hinweisen. Der erste Problemtyp wird als „geringe Zuverlässigkeit“ kategorisiert. Wenn Sie ein ungenaues oder mehrdeutiges Wort eingeben, wird das Feld rot unterstrichen. Ein Beispiel hierfür ist das Wort „Speicherort“. Das Wort „Speicherort“ kann in verschiedenen Feldern enthalten sein, deshalb werden Sie vom System durch die rote Unterstreichung aufgefordert, das von Ihnen gemeinte Feld auszuwählen. In diesem Beispiel werden Sie von Power BI aufgefordert, das Feld auszuwählen, das Sie für „VanArsdel“ verwenden möchten.
+    
+    ![Rot unterstrichener Begriff im Q&A-Fragefeld](media/end-user-q-and-a/power-bi-q-and-a-red.png)
+    
+    Ein weiteres Beispiel für eine geringe Zuverlässigkeit läge vor, wenn Sie das Wort „Bereich“ eingeben, aber die Spalte das Wort „Bezirk“ enthält. Power BI Q&A erkennt dank Integration von Bing und Office Wörter mit gleicher Bedeutung. Q&A unterstreicht das betreffende Wort in Rot, damit Sie wissen, dass es sich nicht um eine direkte Übereinstimmung handelt.
+
+    ![Q&A formuliert die Frage mit einem Synonym um](media/end-user-q-and-a/power-bi-red.png)
+
+    Der zweite Problemtyp liegt vor, wenn Q&A das Wort überhaupt nicht erkennt. Ein Beispiel könnte die Verwendung des Worts „Geografie“ sein, obwohl es in den Daten nirgendwo enthalten ist. Das Wort ist in einem Wörterbuch enthalten, wird aber von Q&A mit einer roten Unterstreichung markiert. Power BI Q&A kann keine Visualisierung erstellen und schlägt Ihnen vor, dass Sie den Berichts-Designer bitten, den Begriff hinzuzufügen.
+
+    ![Q&A mit dem Vorschlag, dass Sie den Designer bitten, das Wort „Geografie“ hinzuzufügen](media/end-user-q-and-a/power-bi-geography.png)
+
+    **Vorschläge**: Wenn Sie mit der Eingabe der Frage fortfahren, erhalten Sie eine Rückmeldung von Power BI, falls die Frage nicht verstanden wird, und es werden weitere Vorschläge angezeigt. Im nachstehenden Beispiel schlägt Power BI unter „Meinten Sie...“ eine andere Möglichkeit der Formulierung vor, die die Terminologie des Datasets aufgreift. 
+
+    ![Anzeige von vorgeschlagenen Korrekturen durch Q&A](media/end-user-q-and-a/power-bi-q-and-a-did-you-mean.png)
+
+    Nachdem Sie einen Korrekturvorschlag von Power BI ausgewählt haben, werden Ihre Ergebnisse als Liniendiagramm angezeigt. 
 
     ![Q&A-Visualergebnisse als Liniendiagramm](media/end-user-q-and-a/power-bi-q-and-a-line.png)
 
 
-3. Sie können das Liniendiagramm aber auch in einen anderen Visualtyp ändern.  
+    Sie können das Liniendiagramm aber auch in einen anderen Visualtyp ändern.  
 
     ![Q&A-Visual mit dem zur Frage hinzugefügten Zusatz „als Säulendiagramm“](media/end-user-q-and-a/power-bi-q-and-a-specify-type.png)
 

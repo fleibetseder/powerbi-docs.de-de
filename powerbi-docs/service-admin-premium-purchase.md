@@ -7,31 +7,39 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/12/2019
+ms.date: 12/10/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: bc5576bcf1edbe5c3d3ccaf2d217e5666484a7d4
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 8a97f30f75b8bf720d735944589e671392c47237
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699933"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75223993"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Erwerben von Power BI Premium
 
+In diesem Artikel wird beschrieben, wie Sie eine Power BI Premium-Kapazität für Ihre Organisation erwerben. In diesem Artikel werden zwei Szenarios beschrieben:
+
+- Verwenden von P-SKUs für übliche Produktionsszenarios. Für P-SKUs gilt ein monatlicher oder jährlicher Prepaidtarif, und sie werden monatlich abgerechnet. P-SKUs können Sie im [Microsoft 365 Admin Center](https://admmin.microsoft.com) erwerben.
+
+- Verwenden von A-SKUs für Testszenarios und für Fälle, in denen Sie nicht die Berechtigungen haben, um P-SKUs erwerben zu können (Microsoft 365-Rollen „Globaler Administrator“ oder „Rechnungsadministrator“). Tarife für A-SKUs sind nicht zeitlich gebunden und werden stündlich abgerechnet. A-SKUs können Sie über das [Azure-Portal](https://portal.azure.com) erwerben.
+
+Weitere Informationen über Power BI Premium finden Sie unter [Was ist Power BI Premium?](service-premium-what-is.md). Aktuelle Informationen zu Preisen und zur Planung finden Sie auf der [Seite zu den Power BI-Preisen](https://powerbi.microsoft.com/pricing/) und über den [Power BI Premium-Rechner](https://powerbi.microsoft.com/calculator/). Auch wenn Ihre Organisation Power BI Premium verwendet, benötigen Inhaltsautoren weiterhin eine [Power BI Pro-Lizenz](service-admin-purchasing-power-bi-pro.md). Stellen Sie sicher, dass Sie mindestens eine Power BI Pro-Lizenz für Ihre Organisation erwerben. Bei A-SKUs benötigen _alle Benutzer_, die Inhalte nutzen möchten, Power BI Pro-Lizenzen.
+
 > [!NOTE]
-> Dieser Artikel wird gerade mit Beschreibungen neuer Features und ausführlicheren Informationen aktualisiert. Außerdem wird die Lesbarkeit verbessert. 
+> Wenn ein Power BI Premium-Abonnement abläuft, bleibt der vollständige Zugriff auf die Kapazität 30 Tage lang erhalten. Danach wird der Inhalt auf eine gemeinsam genutzte Kapazität zurückgesetzt. Modelle mit mehr als 1 GB werden in gemeinsam genutzten Kapazitäten nicht unterstützt.
 
-In diesem Artikel wird beschrieben, wie Sie eine Power BI Premium-Kapazität (P1-P3) für Ihre Organisation erwerben. Sie können eine Power BI Premium-Kapazität über das Microsoft 365 Admin Center erwerben und Ihre Kapazitäten über das Power BI-Verwaltungsportal verwalten. Aktuelle Informationen zu Preisen und zur Planung finden Sie auf der [Seite zu den Power BI-Preisen](https://powerbi.microsoft.com/pricing/) und über den [Power BI Premium-Rechner](https://powerbi.microsoft.com/calculator/).
+## <a name="purchase-p-skus-for-typical-production-scenarios"></a>Erwerben von P-SKUs für übliche Produktionsszenarios
 
-Auch wenn Ihre Organisation Power BI Premium verwendet, benötigen Inhaltsautoren weiterhin eine Power BI Pro-Lizenz. Stellen Sie sicher, dass Sie mindestens eine Power BI Pro-Lizenz für Ihre Organisation erwerben.
+Sie können entweder einen neuen Mandanten mit einer konfigurierten P1-SKU für Power BI Premium erstellen, oder Sie kaufen eine Power BI Premium-Kapazität für eine bereits bestehende Organisation. In beiden Fällen können Sie bei Bedarf Kapazität hinzufügen.
 
-Wenn ein Power BI Premium-Abonnement abläuft, bleibt der vollständige Zugriff auf die Kapazität 30 Tage lang erhalten. Danach wird der Inhalt auf eine gemeinsam genutzte Kapazität zurückgesetzt. Modelle mit mehr als 1 GB werden in gemeinsam genutzten Kapazitäten nicht unterstützt.
-
-## <a name="create-a-new-tenant-with-power-bi-premium-p1"></a>Erstellen eines neuen Mandanten mit Power BI Premium P1
+### <a name="create-a-new-tenant-with-power-bi-premium-p1"></a>Erstellen eines neuen Mandanten mit Power BI Premium P1
 
 Wenn Sie noch nicht über einen Mandanten verfügen und einen erstellen möchten, können Sie gleichzeitig Power BI Premium erwerben. Der folgende Link führt Sie durch die Schritte zum Erstellen eines neuen Mandanten und ermöglicht Ihnen den Erwerb von Power BI Premium: [Power BI Premium P1-Angebot](https://signup.microsoft.com/Signup?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1). Wenn Sie den Mandanten erstellen, wird Ihnen automatisch die globale Microsoft 365-Administratorrolle für diesen Mandanten zugewiesen.
 
-## <a name="purchase-a-power-bi-premium-capacity-for-an-existing-organization"></a>Erwerben einer Power BI Premium-Kapazität für eine vorhandene Organisation
+Nachdem Sie Kapazität erworben haben, sollten Sie lernen, wie Sie [Kapazitäten verwalten](service-admin-premium-manage.md#manage-capacity) und einer Kapazität [Arbeitsbereiche zuweisen](service-admin-premium-manage.md#assign-a-workspace-to-a-capacity).
+
+### <a name="purchase-a-power-bi-premium-capacity-for-an-existing-organization"></a>Erwerben einer Power BI Premium-Kapazität für eine vorhandene Organisation
 
 Wenn Sie über eine vorhandene Organisation (einen Mandanten) verfügen, müssen Sie über die globale Microsoft 365-Administratorrolle oder die Rechnungsadministratorrolle verfügen, um Abonnements und Lizenzen zu erwerben. Weitere Informationen finden Sie unter [Informationen zu Microsoft 365-Administratorrollen](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
 
@@ -41,7 +49,7 @@ Führen Sie die folgenden Schritte aus, um eine Premium-Kapazität zu erwerben.
 
     ![Microsoft 365-App-Auswahl](media/service-admin-premium-purchase/o365-app-picker.png)
 
-    Alternativ können Sie zum Microsoft 365 Admin Center wechseln. Dorthin gelangen Sie, indem Sie zu https://portal.office.com navigieren und **Administrator** auswählen.
+    Alternativ können Sie zum Microsoft 365 Admin Center wechseln.
 
 1. Wählen Sie **Abrechnung** > **Dienste erwerben** aus.
 
@@ -57,7 +65,9 @@ Nachdem Sie den Kauf abgeschlossen haben, zeigt die Seite **Dienste kaufen** an,
 
 ![Power BI Premium](media/service-admin-premium-purchase/premium-purchased.png)
 
-## <a name="purchase-additional-capacities"></a>Erwerben zusätzlicher Kapazitäten
+Nachdem Sie Kapazität erworben haben, sollten Sie lernen, wie Sie [Kapazitäten verwalten](service-admin-premium-manage.md#manage-capacity) und einer Kapazität [Arbeitsbereiche zuweisen](service-admin-premium-manage.md#assign-a-workspace-to-a-capacity).
+
+### <a name="purchase-additional-capacities"></a>Erwerben zusätzlicher Kapazitäten
 
 Da Sie nun über eine Kapazität verfügen, können Sie weitere hinzufügen, wenn Ihre Anforderungen steigen. Darüber hinaus können Sie innerhalb Ihrer Organisation beliebige Kombinationen von Premium-Kapazitäts-SKUs (P1 bis P3) verwenden. Die unterschiedlichen SKUs bieten unterschiedliche Ressourcenfunktionen an.
 
@@ -78,7 +88,7 @@ Die Seite **Kaufdienste** weist dann die Anzahl der Instanzen aus, über die Sie
 
 ![Verfügbare V-Kerne für Power BI Premium-Kapazität](media/service-admin-premium-purchase/premium-capacities.png)
 
-## <a name="cancel-your-subscription"></a>Kündigen Ihres Abonnements
+### <a name="cancel-your-subscription"></a>Kündigen Ihres Abonnements
 
 Sie können Ihr Abonnement über das Microsoft 365 Admin Center kündigen. Gehen Sie wie folgt vor, um Ihr Premium-Abonnement zu kündigen.
 
@@ -94,9 +104,70 @@ Sie können Ihr Abonnement über das Microsoft 365 Admin Center kündigen. Gehen
 
 1. Lesen Sie die Informationen. Wenn Sie fortfahren möchten, wählen Sie **Abonnement kündigen** aus.
 
-### <a name="when-canceling-or-your-license-expires"></a>Kündigung oder Ablauf Ihrer Lizenz
+#### <a name="when-canceling-or-your-license-expires"></a>Kündigung oder Ablauf Ihrer Lizenz
 
 Wenn Sie Ihr Premium-Abonnement kündigen oder Ihre Kapazitätslizenz abläuft, können Sie weiterhin für einen Zeitraum von 30 Tagen ab dem Datum der Kündigung oder des Ablaufs der Lizenz auf Ihre Premium-Kapazitäten zugreifen. Nach 30 Tagen können Sie nicht mehr auf Ihre Premium-Kapazitäten oder die darin enthaltenen Arbeitsbereiche zugreifen.
+
+## <a name="purchase-a-skus-for-testing-and-other-scenarios"></a>Erwerben von A-SKUs für Test- und andere Szenarios
+
+A-SKUs werden über Azure Power BI Embedded zur Verfügung gestellt. Sie können A-SKUs folgendermaßen nutzen:
+
+- Aktivieren der Einbettung von Power BI in Anwendungen von Drittanbietern. Weitere Informationen finden Sie im Artikel [Was ist Power BI Embedded in Azure?](developer/azure-pbie-what-is-power-bi-embedded.md)
+
+- Testen von Premium-Funktionen vor dem Kauf einer P-SKU.
+
+- Erstellen von Entwicklungs- und Testumgebungen parallel zu einer Produktionsumgebung, die P-SKUs verwendet.
+
+- Erwerben von Power BI Premium, obwohl Sie keine der Microsoft 365-Rollen „Globaler Administrator“ oder „Rechnungsadministrator“ innehaben.
+
+> [!NOTE]
+> Wenn Sie eine A4- oder eine höhere SKU erwerben, können Sie alle Premium-Funktionen nutzen, mit Ausnahme der unbegrenzten Freigabe von Inhalten. Bei A-SKUs benötigen _alle Benutzer_, die Inhalte nutzen möchten, Power BI Pro-Lizenzen.
+
+Gehen Sie folgendermaßen vor, um A-SKUs im Azure-Portal zu erwerben:
+
+1. Melden Sie sich im [Azure-Portal](https://portal.azure.com) mit einem Konto an, das mindestens über Administratorberechtigungen für Kapazitäten in Power BI verfügt.
+
+1. Suchen Sie nach _Power BI Embedded_, und wählen Sie den Dienst in den Suchergebnissen aus.
+
+    ![Suchergebnisse im Azure-Portal](media/service-admin-premium-purchase/azure-portal-search.png)
+
+1. Wählen Sie **Create Power BI Embedded** (Power BI Embedded erstellen) aus.
+
+    ![Power BI Embedded erstellen](media/service-admin-premium-purchase/create-power-bi-embedded.png)
+
+1. Geben Sie auf dem **Power BI Embedded**-Bildschirm für die Erstellung folgende Informationen an:
+
+    - Das **Abonnement**, in dem Power BI Embedded erstellt werden soll
+
+    - Der physische **Speicherort**, an dem die Ressourcengruppe erstellt werden soll, die den Dienst enthält. Dieser Speicherort sollte sich in der Nähe des Speicherorts Ihres Azure Active Directory-Mandanten für Power BI befinden, um die Leistung zu verbessern.
+
+    - Die bereits vorhandene **Ressourcengruppe**, die verwendet werden soll. Gibt es noch keine, können Sie wie im Beispiel gezeigt eine neue erstellen.
+
+    - Der **Power BI-Kapazitätsadministrator** Der Kapazitätsadministrator muss selbst Mitglied oder ein Dienstprinzipal in Ihrem Azure Active Directory-Mandaten sein.
+
+    ![Abonnement und Ressourcengruppe](media/service-admin-premium-purchase/subscription-resource-group.png)
+
+1. Wenn Sie Zugriff auf alle Funktionen von Power BI Premium haben möchten (mit Ausnahme unbegrenzter Freigabe), benötigen Sie eine A4-SKU oder höher. Wählen Sie **Größe ändern** aus.
+
+    ![Kapazitätsumfang ändern](media/service-admin-premium-purchase/change-capacity-size.png)
+
+1. Wählen Sie eine der Kapazitätsgrößen A4, A5 oder A6 aus, die P1, P2 und P3 entspricht.
+
+    ![Auswählen einer A3-Kapazität](media/service-admin-premium-purchase/select-a3-capacity.png)
+
+1. Wählen Sie **Überprüfen und erstellen** aus, überprüfen Sie die ausgewählten Optionen, und wählen Sie dann die Option **Erstellen** aus.
+
+    ![Erstellen von Ressourcen](media/service-admin-premium-purchase/create-resource.png)
+
+1. Die Bereitstellung kann einige Minuten dauern. Wenn sie abgeschlossen ist, wählen Sie **Zu Ressource wechseln** aus.
+
+    ![Bereitstellung abgeschlossen](media/service-admin-premium-purchase/deployment-complete.png)
+
+1. Sehen Sie sich auf dem Verwaltungsbildschirm die Optionen an, die Ihnen für die Verwaltung des Diensts zur Verfügung stehen, z. B. das Pausieren des Diensts, wenn Sie ihn nicht verwenden.
+
+    ![Verwalten der Kapazität](media/service-admin-premium-purchase/manage-capacity.png)
+
+Nachdem Sie Kapazität erworben haben, sollten Sie lernen, wie Sie [Kapazitäten verwalten](service-admin-premium-manage.md#manage-capacity) und einer Kapazität [Arbeitsbereiche zuweisen](service-admin-premium-manage.md#assign-a-workspace-to-a-capacity).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

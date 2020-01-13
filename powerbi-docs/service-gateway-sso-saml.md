@@ -1,20 +1,20 @@
 ---
 title: Verwenden von SAML (Security Assertion Markup Language) für SSO von Power BI bei lokalen Datenquellen
 description: Konfigurieren Ihres Gateways mit SAML (Security Assertion Markup Language) zum Aktivieren von SSO von Power BI bei lokalen Datenquellen.
-author: mgblythe
-ms.author: mblythe
+author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 6117cc884bc50e78ec0ec41f18b7868422165d78
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: bbb0584843f79445c4e5cca073f9c4b953d346aa
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881447"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "74699358"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-sso-from-power-bi-to-on-premises-data-sources"></a>Verwenden von SAML (Security Assertion Markup Language) für SSO von Power BI bei lokalen Datenquellen
 
@@ -122,7 +122,7 @@ Nachdem Sie das Zertifikat und die Identität des Gateways konfiguriert haben, m
 
     1. Klicken Sie auf **Certificates** &gt; **Hinzufügen** (Zertifikate), und dann auf **Computer account** &gt; **Weiter** (Computerkonto).
 
-    1. Klicken Sie dann auf **Local Computer**&gt;**Finish**&gt;**OK** (Lokaler Computer > Fertigstellen > Weiter).
+    1. Wählen Sie **Local Computer**&gt;**Finish**&gt;**OK** (Lokaler Computer > Fertig stellen > OK) aus.
 
     1. Erweitern Sie **Certificates**&gt;**Personal**&gt;**Certificates** (Zertifikate > Persönlich > Zertifikate), und suchen Sie nach dem Zertifikat.
 

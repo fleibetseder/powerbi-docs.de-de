@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6ee7405b7c3d542dd824c70c17459c7078b3f0e1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: f7af1c584802181cab68f6ce2fc4823ec7078354
+ms.sourcegitcommit: 331ebf6bcb4a5cdbdc82e81a538144a00ec935d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878825"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75523025"
 ---
 # <a name="using-analysis-services-tabular-data-in-power-bi-desktop"></a>Verwenden tabellarischer Analysis Services-Daten in Power BI Desktop
 Mit Power BI Desktop verfügen Sie über zwei Möglichkeiten, eine Verbindung mit tabellarischen Modellen von SQL Server Analysis Services herzustellen und Daten aus diesen Modellen abzurufen: Durchsuchen mit Live-Verbindung oder Auswählen und Importieren von Elementen in Power BI Desktop.
@@ -76,6 +76,12 @@ Wenn Sie „Elemente auswählen“ und „Daten abrufen“ auswählen, importier
 **Frage:** Im Navigator werden ein Modell und eine Perspektive angezeigt. Was ist der Unterschied?
 
 **Antwort:** Eine Perspektive ist eine bestimmte Ansicht eines tabellarischen Modells. Sie enthält ggf. nur bestimmte Tabellen, Spalten oder Maße in Abhängigkeit von einem speziellen Datenanalysebedarf. Ein tabellarisches Modell enthält immer mindestens eine-Perspektive, die alles, was im Modell enthalten ist, umfassen kann. Wenn Sie nicht sicher sind, was Sie auswählen sollen, wenden Sie sich an Ihren Administrator.
+
+**Frage:** Gibt es Funktionen von Analysis Services, die das Verhalten von Power BI verändern?
+
+**Antwort:** Ja. Abhängig von den Funktionen, die Ihr tabellarisches Modell verwendet, kann sich die Benutzeroberfläche in Power BI Desktop ändern. Beispiele hierfür sind:
+* Möglicherweise sehen Sie die Measures im Modell oben in der Feldliste gruppiert und nicht in Tabellen neben den Spalten. Keine Sorge! Sie können sie trotzdem wie gewohnt verwenden, es ist nur einfacher, sie auf diese Weise zu finden.
+* Wenn im tabellarischen Modell Berechnungsgruppen definiert sind, können Sie diese nur in Verbindung mit Modellmeasures verwenden und nicht mit impliziten Measures, die Sie durch Hinzufügen von numerischen Feldern zu einem Visual erstellen. Das Modell könnte auch das Flag **DiscourageImplicitMeasures** manuell festgelegt haben, was den gleichen Effekt hat. Weitere Informationen finden Sie unter [Berechnungsgruppen in Analysis Services](https://docs.microsoft.com/analysis-services/tabular-models/calculation-groups#benefits).
 
 ## <a name="to-change-the-server-name-after-initial-connection"></a>So ändern Sie den Namen des Servers nach der ersten Verbindung
 Nachdem Sie eine Power BI Desktop-Datei mit einer Live-Verbindung erstellt haben, kann es in einigen Fällen erforderlich sein, die Verbindung auf einen anderen Server umzuschalten. Wenn Sie beispielsweise Ihre Power BI-Desktop-Datei bei der Verbindung mit einem Entwicklungsserver und vor der Veröffentlichung im Power BI-Dienst erstellt haben, möchten Sie die Verbindung zum Produktionsserver umschalten.

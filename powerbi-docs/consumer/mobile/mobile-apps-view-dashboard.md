@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: mshenhav
-ms.openlocfilehash: 1a3450ba4a31679c9e2e4ad844ef1058ebfdf4ee
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: d35d54308f778033f508549bfd52e9d61ef2a949
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870670"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75218346"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Anzeigen von Dashboards und Berichten in mobilen Power BI-Apps
 Gilt für:
@@ -63,7 +63,7 @@ Hier sehen Sie ein Power BI-Dashboard im Power BI-Dienst:
    
    * [Tippen Sie auf eine Kachel](mobile-tiles-in-the-mobile-apps.md), um sie im Fokusmodus zu öffnen und mit ihr zu interagieren.
    * Tippen Sie auf den Stern ![Favoriten-Stern](././media/mobile-apps-view-dashboard/power-bi-mobile-not-favorite-icon.png), um [sie als Favoriten festzulegen](mobile-apps-favorites.md).
-   * Tippen Sie auf **Einladen** ![Einladungssymbol](./media/mobile-apps-view-dashboard/pbi_ipad_shareiconblk.png), um [einen Kollegen einzuladen](mobile-share-dashboard-from-the-mobile-apps.md), Ihr Dashboard aufzurufen.
+   * Tippen Sie auf **Einladen** ![Einladungssymbol](./media/mobile-apps-view-dashboard/pbi_ipad_shareiconblk.png), um zum Aufrufen Ihres Dashboards [einen Kollegen einzuladen](mobile-share-dashboard-from-the-mobile-apps.md).
    * [Synchronisieren Sie das Dashboard mit Ihrer Apple Watch](mobile-apple-watch.md).
 4. Um zur Liste der Dashboards zurückzukehren, tippen Sie auf den Pfeil neben dem Dashboardtitel, und tippen Sie anschließend auf **Mein Arbeitsbereich**.
    
@@ -119,7 +119,7 @@ Mithilfe der Zusammendrückbewegung können Sie unterschiedliche Bereiche des Da
 
 1. Tippen Sie auf dem Dashboard auf die vertikale Schaltfläche **Weitere Optionen** (...) neben dem Namen, um einen Kollegen einzuladen, das Dashboard zu aktualisieren oder Informationen davon abzurufen:
    
-   ![Menü unter Auslassungspunkten](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
+   ![Menü nach Auswahl der Auslassungspunkte](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 2. Streichen Sie nach oben oder unten, um alle [Kacheln im Dashboard](mobile-tiles-in-the-mobile-apps.md) anzuzeigen. 
 3. Gehen Sie zurück zur Dashboard-Startseite, tippen Sie auf den Namen des Dashboards, um die Breadcrumbspur zu öffnen, und tippen Sie dann auf **Mein Arbeitsbereich**.   
 
@@ -135,7 +135,7 @@ Mithilfe der Zusammendrückbewegung können Sie unterschiedliche Bereiche des Da
    * Die Bezeichnung unterhalb jedes Dashboardnamens (in diesem Fall „MBI“) ![Datenklassifizierung](././media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) gibt an, wie die Daten in den einzelnen Dashboards klassifiziert sind. Erfahren Sie mehr über die [Klassifizierung von Daten in Power BI](../../service-data-classification.md).
 3. Tippen Sie auf dem Dashboard auf die vertikale Schaltfläche **Weitere Optionen** (...) neben dem Namen, um einen Kollegen einzuladen, das Dashboard zu aktualisieren oder Informationen davon abzurufen:
    
-   ![Menü unter Auslassungspunkten](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
+   ![Menü nach Auswahl der Auslassungspunkte](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 4. Streichen Sie nach oben oder unten, um alle [Kacheln im Dashboard](mobile-tiles-in-the-mobile-apps.md) anzuzeigen. 
    
    Mithilfe der Zusammendrückbewegung können Sie unterschiedliche Bereiche des Dashboards vergrößern und verkleinern und mit einer Schwenkbewegung navigieren. Sie können auch [auf eine Kachel tippen](mobile-tiles-in-the-mobile-apps.md), um die Kachel im Fokusmodus zu öffnen und mit Ihren Daten zu interagieren.

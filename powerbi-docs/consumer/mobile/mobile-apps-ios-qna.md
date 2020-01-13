@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2018
 ms.author: mshenhav
-ms.openlocfilehash: 34fe1af53a62c5198cc30625d840321c414be8f7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 6feba420e5bdc25651176be67e6f86f1dafc9ef6
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879377"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75219564"
 ---
 # <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Virtueller Q&A-Analyst in iOS-Apps – Power BI
 
@@ -33,63 +33,26 @@ Wenn Sie noch nicht bei Power BI registriert sind, müssen Sie sich zuerst für 
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-### <a name="install-the-power-bi-for-ios-app"></a>Installieren der Power BI für iOS-App
-[Laden Sie die iOS-App](https://go.microsoft.com/fwlink/?LinkId=522062 "iPhone-App herunterladen") aus dem Apple App Store auf Ihr iPad, Ihr iPhone oder Ihren iPod Touch herunter.
+* **Installieren der Power BI-App für iOS:** [Laden Sie die App für iOS](https://go.microsoft.com/fwlink/?LinkId=522062) auf Ihr iPhone oder iPad.
+Folgende Versionen unterstützen die Power BI-App für iOS:
+    * iPad mit iOS 11 oder höher
+    * iPhone 5 und höher mit iOS 11 oder höher
+* **Herunterladen der Beispiele zu Einzelhandelsanalyse und Opportunityanalyse:** Der erste Schritt im Schnellstart ist das Herunterladen der Beispiele zu Einzelhandelanalyse und Opportunityanalyse im Power BI-Dienst. Erfahren Sie, wie Sie im ersten Schritt [eine Beispieldatei in Ihr Power BI-Konto herunterladen](./mobile-apps-download-samples.md). Stellen Sie sicher, dass Sie das Beispiel zur Einzelhandelsanalyse und das Beispiel zur Opportunityanalyse auswählen.
 
-Folgende Versionen unterstützen die Power BI für iOS-App:
-- iPad mit iOS 10 oder höher
-- iPhone 5 und höher mit iOS 10 oder höher 
-- iPod Touch mit iOS 10 oder höher
-
-### <a name="download-samples"></a>Beispiele herunterladen
-Der erste Schritt besteht darin, die Beispiele zu Einzelhandelsanalyse und Opportunityanalyse im Power BI-Dienst herunterzuladen.
-
-**Abrufen des Beispiels für die Einzelhandelsanalyse**
-
-1. Öffnen Sie den Power BI-Dienst (app.powerbi.com), und melden Sie sich an.
-
-2. Klicken Sie im Navigationsbereich auf **Arbeitsbereiche**, **Mein Arbeitsbereich**.
-
-3. Wählen Sie in der linken unteren Ecke **Daten abrufen** aus.
-   
-    ![](media/mobile-apps-ios-qna/power-bi-get-data.png)
-
-3. Wählen Sie auf der Seite „Daten abrufen“ das Symbol **Beispiele** aus.
-   
-   ![](media/mobile-apps-ios-qna/power-bi-samples-icon.png)
-
-4. Wählen Sie das **Beispiel für die Einzelhandelsanalyse** aus.
- 
-    ![Retail Analysis Sample](./media/mobile-apps-ios-qna/power-bi-rs.png)
- 
-8. Wählen Sie **Verbinden** aus.  
-  
-   ![Retail Analysis Sample](./media/mobile-apps-ios-qna/retail16.png)
-   
-5. Das Inhaltspaket wird in Power BI importiert, und dem aktuellen Arbeitsbereich werden ein neues Dashboard, ein neuer Bericht und ein neues Dataset hinzugefügt.
-   
-   ![Retail Analysis Sample](./media/mobile-apps-ios-qna/power-bi-service-retail-sample.png)
-
-**Abrufen des Beispiels für die Opportunityanalyse**
-
-- Führen Sie die gleichen Schritte aus wie für das Beispiel für die Einzelhandelsanalyse. Wählen Sie in Schritt 4 jedoch das **Beispiel für die Opportunityanalyse** aus.
-
-    ![Retail Analysis Sample](./media/mobile-apps-ios-qna/power-bi-oa.png)
-  
-Sie können die Beispiele jetzt auf Ihrem iOS-Gerät anzeigen.
+Sobald Sie die Voraussetzungen erfüllt haben, können Sie den virtuellen Q&A-Analysten ausprobieren.
 
 ## <a name="try-asking-questions-on-your-iphone-or-ipad"></a>Fragen stellen auf dem iPhone oder iPad
-1. Tippen Sie auf Ihrem iPhone oder iPad auf die globale Navigationsschaltfläche ![Globale Navigationsschaltfläche](./media/mobile-apps-ios-qna/power-bi-iphone-global-nav-button.png) > **Arbeitsbereiche** > **Mein Arbeitsbereich**, und öffnen Sie das Dashboard für das Beispiel für die Einzelhandelsanalyse.
+1. Tippen Sie in der Navigationsleiste unten auf Ihrem iPhone oder iPad auf die Schaltfläche für Arbeitsbereiche, ![Schaltfläche für Arbeitsbereiche](./media/mobile-apps-ios-qna/power-bi-iphone-workspaces-button.png)navigieren Sie zu „Mein Arbeitsbereich“, und öffnen Sie das Dashboard zum Beispiel der Einzelhandelsanalyse.
 
 2. Tippen Sie im Aktionsmenü unten auf der Seite (auf einem iPad oben auf der Seite) auf das Symbol „Virtueller Q&A-Analyst“ ![Symbol „Virtueller Q&A-Analyst“](././media/mobile-apps-ios-qna/power-bi-ios-q-n-a-icon.png).
      Der virtuelle Q&A-Analyst bietet einige Vorschläge für den Einstieg.
-3. Geben Sie **show** ein, tippen Sie in der Liste der Vorschläge auf **sales** (Umsatz) und anschließend auf **Senden** ![Symbol „Senden“](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+3. Geben Sie **anzeigen** ein, tippen Sie in der Vorschlagsliste auf **sales** (Umsatz) und dann auf **Senden** ![Symbol zum Senden](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![Umsätze anzeigen](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-show-sales.png)
-4. Tippen Sie in den Schlüsselwörtern auf **nach** und dann in der Vorschlagsliste auf **Element** > **Senden** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+4. Tippen Sie in den Schlüsselwörtern auf **nach** und dann in der Vorschlagsliste auf **Element** und danach auf **Senden** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![Umsatz nach Artikel](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-sale-by-item.png)
-5. Tippen Sie in den Schlüsselwörtern auf **as**, dann auf das Säulendiagrammsymbol ![](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-column-chart-icon.png) und zuletzt auf **Senden** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+5. Tippen Sie in den Schlüsselwörtern auf **wie**, dann auf das Säulendiagrammsymbol ![](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-column-chart-icon.png) und zuletzt auf **Senden** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 6. Tippen Sie lang auf das resultierende Diagramm, und tippen Sie dann auf **Erweitern**.
 
     ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-tap-expand-feedback.png)
@@ -99,13 +62,13 @@ Sie können die Beispiele jetzt auf Ihrem iOS-Gerät anzeigen.
     ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-expanded-chart.png)
 7. Tippen Sie in der linken oberen Ecke auf den Pfeil, um zum Chatfenster des virtuellen Q&A-Analysten zurückzukehren.
 8. Tippen Sie rechts im Textfeld auf das X, um den Text zu löschen und neu zu beginnen.
-9. Die nächste Frage: Tippen Sie in den Schlüsselwörtern auf **top** und dann auf **sale by avg $/unit ly** > **Senden** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+9. Die nächste Frage: Tippen Sie in den Schlüsselwörtern auf **oben** und dann auf **sale by avg $/unit ly** > **Senden** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-2.png)
-10. Wählen Sie in den Schlüsselwörtern **by** aus, und tippen Sie dann oben in der Vorschlagsliste auf **time** > **Senden** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+10. Wählen Sie in den Schlüsselwörtern **nach** aus, und tippen Sie dann oben in der Vorschlagsliste auf **time** (Zeit) und dann auf **Senden** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
      ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-by-time.png)
-11. Tippen Sie auf **as** und dann in der Vorschlagsliste auf das Liniendiagrammsymbol ![](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-line-chart-icon.png) > **Senden** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+11. Tippen Sie auf **wie** und dann in der Vorschlagsliste auf das Liniendiagrammsymbol ![](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-line-chart-icon.png) und dann auf **Senden** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-as-line.png)
 

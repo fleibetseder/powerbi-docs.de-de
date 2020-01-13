@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/04/2018
+ms.date: 12/14/2019
 ms.author: mihart
-ms.openlocfilehash: b22da2df92c0cc7130c7a5ebf69e2284c12ffef4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a4b8dd876cfaca3fa4ad91bf5b4d94aa5b4be311
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73861965"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75218010"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Anzeigen eines Berichts im Power BI-Dienst für *Kunden*
 
@@ -29,10 +29,10 @@ Es gibt viele verschiedene Möglichkeiten zum Öffnen eines Berichts, und wir ze
 ## <a name="open-a-report-from-power-bi-home"></a>Öffnen eines Berichts über die Seite „Home“ in Power BI
 Lassen Sie uns zuerst einen Bericht öffnen, der direkt mit Ihnen geteilt wurde, und dann einen Bericht, der als Teil einer App geteilt wurde.
 
-   ![Startseite](./media/end-user-report-open/power-bi-home-canvas.png)
+   ![Homepage](./media/end-user-report-open/power-bi-home-canvas.png)
 
 ### <a name="open-a-report-that-has-been-shared-with-you"></a>Öffnen eines Berichts, der mit Ihnen geteilt wurde
-Power BI-*Designer* können einen einzelnen Bericht direkt über einen Link in einer E-Mail freigeben, oder indem sie ihn automatisch hinzufügen. Auf diese Weise geteilte Inhalte werden im Container **Für mich freigegeben** im Navigationsbereich und im Abschnitt **Für mich freigegeben** auf der Seite „Start“ angezeigt.
+Power BI-*Designer* können einen einzelnen Bericht direkt über einen Link in einer E-Mail freigeben oder indem Sie ihn automatisch Ihrem Power BI-Inhalt hinzufügen. Auf diese Weise geteilte Berichte werden im Container **Für mich freigegeben** im Navigationsbereich und im Abschnitt **Für mich freigegeben** auf der Seite „Start“ angezeigt.
 
 1. Öffnen Sie den Power BI-Dienst („app.powerbi.com“).
 
@@ -40,7 +40,7 @@ Power BI-*Designer* können einen einzelnen Bericht direkt über einen Link in e
 
    ![Seite „Home“](./media/end-user-report-open/power-bi-select-home-new.png)
    
-3. Scrollen Sie nach unten, bis Sie **Für mich freigegeben** sehen. Suchen Sie nach dem Berichtssymbol ![Berichtssymbol](./media/end-user-report-open/power-bi-report-icon.png). In diesem Screenshot wird ein Dashboard und ein Bericht mit dem Namen *Sales and Marketing sample* angezeigt. 
+3. Scrollen Sie nach unten, bis Sie **Für mich freigegeben** sehen. Suchen Sie nach dem Berichtssymbol ![Berichtssymbol](./media/end-user-report-open/power-bi-report-icon.png). In diesem Screenshot wird ein Dashboard und ein Bericht angezeigt. Der Bericht heißt *Beispiel für Vertrieb und Marketing*. 
    
    ![Abschnitt „Für mich freigegeben“ der Startseite](./media/end-user-report-open/power-bi-shared-new.png)
 
@@ -64,8 +64,10 @@ Power BI-*Designer* können einen einzelnen Bericht direkt über einen Link in e
 
    ![An Seite anpassen](./media/end-user-report-open/power-bi-actual.png)
 
+Es gibt viele Möglichkeiten, wie Sie mit einem Bericht interagieren können, um Einblicke zu gewinnen und Geschäftsentscheidungen zu treffen.  Verwenden Sie das Inhaltsverzeichnis auf der linken Seite, um andere Artikel zu Power BI-Berichten zu lesen. 
+
 ### <a name="open-a-report-that-is-part-of-an-app"></a>Öffnen eines Bericht, der Teil einer App ist
-Wenn Sie von Kollegen oder aus AppSource Apps erhalten haben, sind diese Apps über die Seite „Start“ und den **Apps**-Container im Navigationsbereich verfügbar. Eine [App](end-user-apps.md) ist ein Paket aus Dashboards und Berichten.
+Wenn Sie von Kollegen oder aus AppSource Apps erhalten haben, sind diese Apps über die Seite „Start“ und den **Apps**-Container im Navigationsbereich verfügbar. Eine [App](end-user-apps.md) ist eine Sammlung von Dashboards und Berichten, die von einem Power BI-*Designer* für Sie gebündelt wurden.
 
 ### <a name="prerequisites"></a>Voraussetzungen
 Um teilzunehmen, laden Sie die „Sales and Marketing“-App herunter.
@@ -78,19 +80,19 @@ Sie können die App von Ihrem Apps-Container oder von der Startseite aus öffnen
 
 7. Scrollen Sie nach unten, bis Sie **Meine Apps** sehen.
 
-   ![Startseite](./media/end-user-report-open/power-bi-app.png)
+   ![Homepage](./media/end-user-report-open/power-bi-app.png)
 
-8. Wählen Sie Ihre neue „Sales and Marketing“-App aus, um sie zu öffnen. Abhängig von den Optionen, die vom App-*Designer* festgelegt wurden, öffnet die App entweder ein Dashboard oder einen Bericht. Diese App öffnet ein Dashboard.  
+8. Wählen Sie Ihre neue *Sales and Marketing*-App aus, um sie zu öffnen. Abhängig von den Optionen, die vom App-*Designer* festgelegt wurden, öffnet die App entweder ein Dashboard oder einen Bericht. Diese App öffnet ein Dashboard.  
 
 
 ## <a name="open-a-report-from-a-dashboard"></a>Öffnen eines Berichts aus einem Dashboard
 Berichte können aus einem Dashboard geöffnet werden. Die meisten [Dashboardkacheln](end-user-tiles.md) sind aus Berichten *angeheftet*. Das Auswählen einer Kachel öffnet den Bericht, mit dem diese Kachel erstellt wurde. 
 
-1. Wählen Sie im Dashboard eine Kachel aus. In diesem Beispiel wurde die Kachel „Total Units YTD...“ ausgewählt.
+1. Wählen Sie im Dashboard eine Kachel aus. In diesem Beispiel wurde die Kachel *Total Units YTD...* in einem Säulendiagramm ausgewählt.
 
     ![Dashboard mit ausgewählter Kachel](./media/end-user-report-open/power-bi-dashboard.png)
 
-2.  Der entsprechende Bericht wird geöffnet. Beachten Sie, dass die Seite „YTD Category“ angezeigt wird. Dies ist die Berichtseite, die das im Dashboard ausgewählte Säulendiagramm enthält.
+2.  Der entsprechende Bericht wird geöffnet. Beachten Sie, dass die Seite *YTD Category* angezeigt wird. Dies ist die Berichtseite, die das im Dashboard ausgewählte Säulendiagramm enthält.
 
     ![Bericht in „Leseansicht“ öffnen](./media/end-user-report-open/power-bi-report-tabs.png)
 
@@ -100,7 +102,7 @@ Berichte können aus einem Dashboard geöffnet werden. Die meisten [Dashboardkac
 
 ##  <a name="still-more-ways-to-open-a-report"></a>Weitere Möglichkeiten zum Öffnen eines Berichts
 Wie Sie mit der Navigation im Power BI-Dienst besser vertraut sind, werden Sie feststellen, welche Arbeitsabläufe für Sie am besten geeignet sind. Weitere Möglichkeiten zum Zugriff auf Berichte:
-- Über den Navigationsbereich mithilfe der Optionen **Favoriten** und **Zuletzt verwendet**    
+- Über den Navigationsbereich mithilfe der Optionen [Favoriten](end-user-favorite.md) und [Zuletzt verwendet](end-user-recent.md)    
 - Mit [Verwandte Inhalte anzeigen](end-user-related.md)    
 - Über eine E-Mail, wenn jemand [einen Bericht für Sie freigibt](../service-share-reports.md) oder Sie [eine Benachrichtigung](end-user-alerts.md) festgelegt haben.    
 - Über die [Mitteilungszentrale](end-user-notification-center.md)    

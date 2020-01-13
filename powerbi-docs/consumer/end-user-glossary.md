@@ -2,19 +2,18 @@
 title: Glossar für Power BI-Endverbraucher
 description: In Power BI werden viele neue Begriffe und neue Verwendungsarten für bekannte Begriffe eingeführt. Verwenden Sie unser Glossar, um sich mit der Power BI-Terminologie vertraut zu machen.
 services: power-bi
-ms.custom: seodec18
 author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/04/2019
+ms.date: 12/18/2019
 ms.author: mihart
-ms.openlocfilehash: 32a93a881a801ec5dd335f167e69a5b76f53d694
-ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
+ms.openlocfilehash: 046f35613e5fe748e93389fbe10a77af08f449e3
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73764722"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75303926"
 ---
 # <a name="glossary-for-power-bi-service"></a>Glossar für den Power BI-Dienst
 Der Power BI-Dienst führt möglicherweise Terminologie ein, die nicht vertraut oder zunächst verwirrend ist. Das Glossar ist der ideale Ort, um Begriffe nachzuschlagen – vielleicht sollten Sie ein Lesezeichen setzen? Eine weitere hervorragende Ressource, mehr über die Bausteine zu erfahren, aus denen sich der Power BI-Dienst zusammensetzt, sind die [Grundkonzepte](end-user-basic-concepts.md). Grundkonzepte bietet einen allgemeinen Überblick über die Power BI-*Bestandteile* und die Art ihrer Verbindung.
@@ -34,8 +33,6 @@ Dieses Glossar ist eine Communityinitiative.  Fehlt hier ein Begriff? Bitten Sie
 **alert, alerts (Benachrichtigung, Benachrichtigungen)** Eine Funktion, die Benutzer auf der Grundlage von ihnen selbst festgelegter Grenzwerte über Änderungen in den Daten benachrichtigt. Benachrichtigungen können für Kacheln festgelegt werden, die aus visuellen Elementen von Berichten angeheftet wurden. Benutzer empfangen Benachrichtigungen im Dienst und in ihren mobilen Apps.
 
 **annotate (Kommentieren)** Das Schreiben von Zeilen oder Text oder das Anbringen von Stempeln auf einer Momentaufnahmekopie einer Kachel, eines Berichts oder eines visuellen Elements in der mobilen Power BI-App für iOS- und Android-Geräte.
-
-**answer card, answer page (Antwortkarte, Antwortseite)** Siehe „Cortana-Antwortkarte“.
 
 **App, Apps** 
 
@@ -78,11 +75,9 @@ Dieses Glossar ist eine Communityinitiative.  Fehlt hier ein Begriff? Bitten Sie
 
 **content view (Inhaltsansicht)**
 
-**Cortana answer card (Cortana-Antwortkarte)** Die dedizierte Berichtsseite, die in einen Power BI-Bericht aufgenommen wird, um das Erstellen benutzerdefinierter Antworten von Cortana zu ermöglichen.
+**Kreuzfiltern** Gilt für Visualinteraktionen. Durch die Kreuzfilterung werden nicht geltende Daten entfernt. Wenn Sie beispielsweise **Moderation** im Ringdiagramm auswählen, wird das Liniendiagramm kreuzgefiltert. Das Liniendiagramm zeigt jetzt nur noch Datenpunkte an, die für das Moderationssegment gelten.
 
-**Cortana answer page (Cortana-Antwortseite)** Der Name für die Cortana-Seite, die Kunden angezeigt wird.
-
-**cross filter, cross highlight (Kreuzfilter, übergreifende Hervorhebung)**
+**Übergreifende Hervorhebung** Gilt für Visualinteraktionen. Durch die übergreifende Hervorhebung werden alle ursprünglichen Datenpunkte beibehalten, aber der Teil, der nicht für Ihre Auswahl gilt, wird abgeblendet. Wenn Sie beispielsweise **Moderation** im Ringdiagramm auswählen, wird das Säulendiagramm übergreifend hervorgehoben. Das Säulendiagramm blendet alle Daten, die nicht für das Moderationssegment gelten, ab, und hebt alle Daten hervor, die für das Moderationssegment gelten.
 
 **custom visual (Benutzerdefiniertes visuelles Element)** Visuelle Elemente, die von der Community und von Microsoft erstellt werden. Sie können aus dem Office-Store für die Verwendung in Power BI-Berichten heruntergeladen werden.
 
@@ -316,6 +311,8 @@ Power BI-Dashboards enthalten Berichtskacheln.
 **value, values (Wert, Werte)** Numerische Daten für die Visualisierung.
 
 **visual, visualization (visuelles Element, Visualisierung)** Ein Diagramm. Zu den visuellen Elementen zählen: Balkendiagramm, Baumkarte, Ringdiagramm, Zuordnung.
+
+**Visualinteraktion** Eines der herausragenden Features von Power BI ist die Art und Weise, wie alle Visuals auf einer Berichtsseite miteinander verbunden sind. Wenn Sie in einem der visuellen Elemente einen Datenpunkt auswählen, ändern sich alle anderen visuellen Elemente auf der Seite, die diese Daten enthalten, auf Grundlage dieser Auswahl.
 
 **Visualizations pane (Bereich „Visualisierung“)** Name für die Visualisierungsvorlagen, die mit der gemeinsamen Zeichnungsfläche für Power BI Desktop und dem Power BI-Dienst geliefert werden. Enthält kleine Vorlagen, auch als Symbole bezeichnet, für jeden nativen Visualisierungstyp.  
 

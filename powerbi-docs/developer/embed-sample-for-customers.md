@@ -8,13 +8,13 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 04/02/2019
-ms.openlocfilehash: 85b21d95cb992449d3b7a910c619d049237fc9d8
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.date: 12/12/2019
+ms.openlocfilehash: e27789ca28d86a53b7d8340b3d766a73a04645cb
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74311095"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223408"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Tutorial: Einbetten von Power BI-Inhalten in eine Anwendung für Ihre Kunden
 
@@ -435,6 +435,8 @@ Weitere Informationen finden Sie im [Embedded analytics capacity planning whitep
 ### <a name="assign-a-workspace-to-a-dedicated-capacity"></a>Zuweisen eines Arbeitsbereichs zu einer dedizierten Kapazität
 
 Wenn Sie eine dedizierte Kapazität erstellt haben, können Sie ihr Ihren Arbeitsbereich zuweisen.
+
+Alle Arbeitsbereiche, die Power BI-Ressourcen im Zusammenhang mit dem eingebetteten Inhalt (einschließlich Datasets, Berichten und Dashboards) enthalten, müssen dedizierten Kapazitäten zugewiesen werden. Wenn sich z. B. ein eingebetteter Bericht und das an ihn gebundene Dataset in unterschiedlichen Arbeitsbereichen befinden, müssen beide Arbeitsbereiche dedizierten Kapazitäten zugewiesen werden.
 
 Mithilfe der [Power BI-REST-API](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity) können Sie einem Arbeitsbereich über einen [Dienstprinzipal](embed-service-principal.md) eine dedizierte Kapazität zuzuweisen. Wenn Sie die Power BI-REST-APIs einsetzen, müssen Sie die [Dienstprinzipalobjekt-ID](embed-service-principal.md#how-to-get-the-service-principal-object-id) verwenden.
 

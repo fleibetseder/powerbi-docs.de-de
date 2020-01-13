@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 12/03/2019
-ms.openlocfilehash: 8afa43cf9d49286a1ec04f7f60aa4a4c4ca7fd16
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: fac23cf5814513c488a3403be420a2273992bae5
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831180"
+ms.lasthandoff: 01/04/2020
+ms.locfileid: "75657165"
 ---
 # <a name="create-parameters-for-paginated-reports-in-the-power-bi-service"></a>Erstellen von Parametern für paginierte Berichte im Power BI-Dienst
 
@@ -60,8 +60,13 @@ Die folgende Abbildung zeigt die Designansicht im Power BI-Berichts-Generator f�
   
     -   Um den Parameter auszublenden und vor Änderungen auf dem Berichtsserver nach der Veröffentlichung des Berichts zu schützen, wählen Sie **Intern** aus. Der Berichtsparameter lässt sich dann nur noch in der Berichtsdefinition anzeigen. Bei dieser Option müssen Sie einen Standardwert festlegen oder einen Nullwert für den Parameter zulassen.  
   
-9. Wählen Sie **OK**aus. 
-  
+9. Wählen Sie **OK** aus. 
+
+## <a name="considerations-and-troubleshooting"></a>Zu beachtende Aspekte und Problembehandlung
+
+- Wenn Sie ein Power BI-Dataset oder ein Analysis Services-Modell als Datenquelle verwenden, können Sie aufgrund von DAX-Beschränkungen nicht mehr als 1.000 Parameterwerte in einer einzigen Anforderung übergeben. 
+
+ 
 ## <a name="next-steps"></a>Nächste Schritte
 
 Unter [Anzeigen von Parametern für paginierte Berichte](consumer/paginated-reports-view-parameters.md) erfahren Sie, wie die Parameter im Power BI-Dienst angezeigt werden.

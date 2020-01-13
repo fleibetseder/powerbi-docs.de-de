@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 10/21/2019
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 9aa2e11dd2068cae118336268c5c55ead1e25b8b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73871203"
 ---
 # <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Überwachen von Nutzungsmetriken für Power BI-Dashboards und Berichte
@@ -43,7 +43,7 @@ Sie können im Power BI-Dienst nur Berichte zu Nutzungsmetriken ausführen. Wenn
 ## <a name="view-a-usage-metrics-report"></a>Anzeigen eines Berichts zu Nutzungsmetriken
 
 1. Starten Sie im Arbeitsbereich, der das Dashboard oder den Bericht enthält.
-2. Klicken Sie entweder in der Inhaltsliste im Arbeitsbereich oder im Dashboard bzw. im Bericht selbst auf das Symbol für **Nutzungsmetriken** ![Symbol „Nutzungsmetriken“](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png).
+2. Wählen Sie entweder aus der Inhaltsliste des Arbeitsbereichs oder aus dem Dashboard oder dem Bericht selbst das Symbol für **Nutzungsmetriken** ![Symbol für Nutzungsmetriken](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png) aus.
 
     ![Registerkarte „Dashboards“](media/service-usage-metrics/power-bi-run-usage-metrics-report.png)
 
@@ -83,7 +83,7 @@ Um tiefer in die Berichtsdaten einzusteigen oder auf der Grundlage des zugrunde 
 
 ## <a name="which-metrics-are-reported"></a>Welche Metriken werden gemeldet?
 
-| Metrik | Dashboard | Report | Beschreibung |
+| Metric | Dashboard | Bericht | Beschreibung |
 | --- | --- | --- | --- |
 | Datenschnitt „Verteilungsmethode“ |Ja |Ja |Wie Benutzer Zugriff auf den Inhalt erhalten haben. Es gibt drei Zugriffsmethoden: Benutzer können auf das Dashboard oder den Bericht als Mitglied eines [Arbeitsbereichs](consumer/end-user-experience.md) zugreifen, der Inhalt kann für sie [freigegeben](service-share-dashboards.md) werden, oder es kann ein Inhaltspakets bzw. eine App installiert werden.  Beachten Sie, dass Aufrufe über eine App als „Inhaltspaket“ gelten. |
 | Datenschnitt „Plattformen“ |Ja |Ja |Wurde auf das Dashboard oder den Bericht über den Power BI-Dienst (powerbi.com) oder ein mobiles Gerät zugegriffen? Unter „Mobil“ fallen alle unsere iOS-, Android- und Windows-Apps. |
@@ -147,7 +147,7 @@ Details zu diesen Einstellungen finden Sie unter [Steuern von Nutzungsmetriken](
 
 ## <a name="usage-metrics-in-national-clouds"></a>Verwenden von Metriken in nationalen Clouds
 
-Power BI ist in separaten nationalen Clouds verfügbar. Diese Clouds entsprechen hinsichtlich Sicherheit, Datenschutz, Konformität und Transparenz dem Niveau der weltweiten Power BI-Version und verwenden darüber hinaus ein einmaliges Modell für regionale Regelungen zu Servicebereitstellung, Speicherort der Daten, Zugriff und Kontrolle. Aufgrund dieses einzigartigen Modells für regionale Regelungen sind Nutzungsmetriken nicht in nationalen Clouds verfügbar. Weitere Informationen finden Sie in den [Informationen zu den nationalen Clouds](https://powerbi.microsoft.com/clouds/).
+Power BI ist in separaten nationalen Clouds verfügbar. Diese Clouds bieten das gleiche Maß an Sicherheit, Datenschutz, Konformität und Transparenz wie die globale Version von Power BI, kombiniert mit einem eindeutigen Modell für lokale Vorschriften zur Dienstbereitstellung, Datenresidenz, Zugriff und Kontrolle. Aufgrund dieses einzigartigen Modells für regionale Regelungen sind Nutzungsmetriken nicht in nationalen Clouds verfügbar. Weitere Informationen finden Sie in den [Informationen zu den nationalen Clouds](https://powerbi.microsoft.com/clouds/).
 
 ## <a name="considerations-and-limitations"></a>Überlegungen und Einschränkungen
 

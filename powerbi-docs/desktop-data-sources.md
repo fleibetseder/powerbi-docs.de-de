@@ -9,15 +9,16 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c363e63a7354c2a8c66099a98cb441ce2c94becf
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 0f24675d4185efd7524d9e8c453c919d64e0364a
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878367"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75222140"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datenquellen in Power BI Desktop
-Mit Power BI Desktop können Sie Verbindungen mit Daten aus vielen verschiedenen Quellen herstellen. Eine vollständige Liste der verfügbaren Datenquellen wird am unteren Rand dieser Seite angezeigt.
+
+Mit Power BI Desktop können Sie Verbindungen mit Daten aus vielen verschiedenen Quellen herstellen. Eine vollständige Liste der verfügbaren Datenquellen finden Sie unter [Power BI-Datenquellen](power-bi-data-sources.md).
 
 Wählen Sie zum Herstellen einer Verbindung mit Daten im Menüband **Start** den Eintrag **Daten abrufen** aus. Wenn Sie den Pfeil nach unten oder den Text **Daten abrufen** auf der Schaltfläche auswählen, wird das Datentypmenü **Am häufigsten verwendet** angezeigt, das in der folgenden Abbildung veranschaulicht wird:
 
@@ -28,9 +29,7 @@ Wenn Sie die Option **Mehr...** im Menü **Am häufigsten verwendet** auswählen
 ![Schaltfläche „Daten abrufen“](media/desktop-data-sources/data-sources-02.png)
 
 > [!NOTE]
-> Das Power BI-Team erweitert laufend die Datenquellen, die für **Power BI Desktop** und den **Power BI-Dienst** verfügbar sind. Daher finden Sie häufig Vorabversionen von noch nicht in der Endversion vorliegenden Datenquellen, die als *Beta* oder *Vorschau* gekennzeichnet sind. Für alle als *Beta* oder *Vorschau* markierten Datenquellen stehen nur eingeschränkter Support und weniger Funktionen zur Verfügung, und sie sollten nicht in Produktionsumgebungen verwendet werden. 
-
-> Zudem sind alle Datenquellen, die als *Beta* oder *Vorschau* für **Power BI Desktop** gekennzeichnet sind, möglicherweise nicht für die Verwendung im **Power BI-Dienst** oder in anderen Microsoft-Diensten verfügbar, bis die Datenquelle allgemein verfügbar wird (GA).
+> Das Power BI-Team erweitert laufend die Datenquellen, die für **Power BI Desktop** und den **Power BI-Dienst** verfügbar sind. Daher finden Sie häufig Vorabversionen von noch nicht in der Endversion vorliegenden Datenquellen, die als *Beta* oder *Vorschau* gekennzeichnet sind. Für alle als *Beta* oder *Vorschau* markierten Datenquellen stehen nur eingeschränkter Support und weniger Funktionen zur Verfügung, und sie sollten nicht in Produktionsumgebungen verwendet werden. Zudem sind alle Datenquellen, die als *Beta* oder *Vorschau* für **Power BI Desktop** gekennzeichnet sind, möglicherweise nicht für die Verwendung im **Power BI-Dienst** oder in anderen Microsoft-Diensten verfügbar, bis die Datenquelle allgemein verfügbar wird (GA).
 
 ## <a name="data-sources"></a>Datenquellen
 Datentypen werden in die folgenden Kategorien unterteilt:
@@ -40,7 +39,7 @@ Datentypen werden in die folgenden Kategorien unterteilt:
 * Datenbank
 * Power BI
 * Azure
-* Online-Dienste
+* Onlinedienste
 * Sonstige
 
 Die Kategorie **Alles** umfasst alle Datenverbindungstypen aus allen Kategorien.
@@ -81,7 +80,7 @@ Die Kategorie **Datenbank** bietet die folgenden Datenverbindungen:
 * Vertica
 * Snowflake
 * Essbase
-* AtScale-Cubes (Beta)
+* AtScale-Cubes
 * BI-Connector
 * Dremio
 * Exasol
@@ -103,7 +102,7 @@ Die Kategorie **Power Platform** bietet die folgenden Datenverbindungen:
 * Power BI-Datasets
 * Power BI-Dataflows
 * Common Data Service
-* Power Platform-Dataflows (Beta)
+* Power Platform-Dataflows
 
 Die folgende Abbildung zeigt das Fenster **Daten abrufen** für **Power Platform**.
 
@@ -117,13 +116,14 @@ Die Kategorie **Azure** bietet die folgenden Datenverbindungen:
 * Azure Blob Storage
 * Azure-Tabellenspeicher
 * Azure Cosmos DB
-* Azure Data Lake Storage Gen2 (Beta)
+* Azure Data Lake Storage Gen2
 * Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive Query
 * Azure Data Explorer (Kusto)
-* Azure Cost Management (Beta)
+* Azure Cost Management
+* Azure Time Series Insights (Beta)
 
 Die folgende Abbildung zeigt das Fenster **Daten abrufen** für **Azure**.
 
@@ -208,7 +208,7 @@ Die folgende Abbildung zeigt das Fenster **Daten abrufen** für **Sonstige**.
 > [!NOTE]
 > Zurzeit ist es nicht möglich, eine Verbindung mit benutzerdefinierten Datenquellen herzustellen, die mit Azure Active Directory gesichert wurden.
 
-## <a name="connecting-to-a-data-source"></a>Herstellen der Verbindung mit einer Datenquelle
+## <a name="connecting-to-a-data-source"></a>Herstellen einer Verbindung mit einer Datenquelle
 Wenn Sie die Verbindung mit einer Datenquelle herstellen möchten, wählen Sie die Datenquelle im Fenster **Daten abrufen** und dann **Verbinden**aus. In der folgenden Abbildung ist **Web** aus der Datenverbindungskategorie **Sonstige** ausgewählt.
 
 ![Mit Web verbinden](media/desktop-data-sources/data-sources-08.png)

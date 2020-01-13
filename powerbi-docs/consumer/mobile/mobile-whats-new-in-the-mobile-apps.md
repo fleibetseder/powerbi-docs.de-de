@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/12/2019
+ms.date: 12/16/2019
 ms.author: painbar
-ms.openlocfilehash: c188f2b00447ff9f97059e81e7945f67e3170c6d
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: 44fcfdbaa51b85b191ff1452c66daee7da0360f8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74010011"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75220515"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Neuigkeiten bei den mobilen Apps für Power BI
 Informationen zu verwandten Neuigkeiten finden Sie unter:
@@ -21,6 +21,20 @@ Informationen zu verwandten Neuigkeiten finden Sie unter:
 * [Blog des Power BI-Teams zu mobilen Apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Neuigkeiten in Power BI Desktop](../../desktop-latest-update.md)  
 * [Neuigkeiten beim Power BI-Dienst](../../service-whats-new.md)  
+
+## <a name="november-2019"></a>November 2019
+
+### <a name="power-bi-apps-new-look-is-now-on-by-default"></a>Das neue Erscheinungsbild der Power BI-App ist jetzt standardmäßig aktiviert
+ 
+Wenn Sie die App öffnen, werden das neue Erscheinungsbild und die Navigationsleisten automatisch aktiviert, sodass die Inhalte einfacher zu finden und zu öffnen sind. Verwenden Sie die [Startseite](mobile-apps-home-page.md) der App als Ausgangspunkt. So können Sie schnell auf Ihre wichtigsten Inhalte zugreifen und einen [Aktivitätsfeed](mobile-apps-home-page.md#activity-feed) mit allen aktuellen Warnungen, Benachrichtigungen und vielem mehr anzeigen.
+
+### <a name="see-all-your-latest-power-bi-activity"></a>Alle aktuellen Power BI-Aktivitäten anzeigen
+ 
+Mit dem Aktivitätsfeld können Sie in Echtzeit nachverfolgen, was mit Ihrem Power BI-Inhalt passiert. Wechseln Sie einfach zur Startseite der App, und öffnen Sie die Registerkarte „Aktivität“, um alle aktuellen Benachrichtigungen, Warnungen, Kommentare, @mentions und vieles mehr anzuzeigen. [Weitere Informationen](mobile-apps-home-page.md#activity-feed).
+
+### <a name="use-bookmarks-in-your-reports"></a>Verwenden von Lesezeichen in Ihren Berichten
+
+Die mobile Power BI-App unterstützt jetzt Lesezeichen, die in Power BI erstellt wurden. Wenn Sie die App öffnen, können Sie die vom Berichtsautor erstellten Lesezeichen sowie alle von Ihnen selbst erstellten persönlichen Lesezeichen nutzen. [Weitere Informationen](mobile-reports-in-the-mobile-apps.md#bookmarks).
 
 ## <a name="october-2019"></a>Oktober 2019
 
@@ -469,7 +483,7 @@ Lesen Sie die [Zusammenfassung der Funktionen der mobilen Apps im Blog vom Janua
 #### <a name="ios"></a>iOS
 **SSRS-Authentifizierung unter Verwendung der Active Directory-Verbunddienste (ADFS) – Vorschau** Ab jetzt können Sie sich bei lokalen Servern für SQL Server Reporting Services über mobile Geräte mit einem Organisationskonto anmelden. Weitere Informationen finden Sie unter [OAuth verwenden, um Verbindungen mit SSRS-Servern herzustellen](mobile-oauth-ssrs.md).
 
-#### <a name="android"></a>Android
+#### <a name="android"></a>Android-
 **SSRS-Authentifizierung unter Verwendung der Active Directory-Verbunddienste (ADFS) – Vorschau** Ab jetzt können Sie sich bei lokalen Servern für SQL Server Reporting Services über mobile Geräte mit einem Organisationskonto anmelden. Weitere Informationen finden Sie unter [OAuth verwenden, um Verbindungen mit SSRS-Servern herzustellen](mobile-oauth-ssrs.md).
 
 **Neu und verbessert: Anmerkung und Freigabe – schnelle Erkenntnisse** Alle Funktionen zum Freigeben und Erstellen von Anmerkungen sind jetzt für Android-Geräte verfügbar. Über das verbesserte Menü können Sie jetzt schneller und einfacher Anmerkungen erstellen und Einblicke freigeben, und Sie können Berichte mit Anmerkungen direkt in der Power BI-App freigeben.
@@ -503,7 +517,7 @@ Wenn für eine Bildkachel vom Dashboardbesitzer eine benutzerdefinierte URL defi
 
 Sie können jetzt Apple Watch-Daten direkt aus der Watch-App aktualisieren. Drücken Sie stärker auf der Indexseite des Dashboards, um Ihre Daten zu aktualisieren. (Die mobile Power BI-App muss hierfür auf Ihrem iPhone im Hintergrund ausgeführt werden).
 
-#### <a name="android"></a>Android
+#### <a name="android"></a>Android-
 **Benutzerdefinierte URL für Bildkacheln**
 
 Wenn für eine Bildkachel vom Dashboardbesitzer eine benutzerdefinierte URL definiert wurde, wird beim Tippen auf die Kachel direkt diese URL geöffnet, ohne die Kachel im Fokusmodus anzuzeigen. Darüber hinaus können Dashboardkacheln, die vordefinierte benutzerdefinierte URLs enthalten, den Leser jetzt zu Berichten innerhalb der App umleiten.
@@ -520,7 +534,7 @@ Lesen Sie die [Power BI-Featurezusammenfassung für mobile Apps vom November 201
 #### <a name="android-devices"></a>Android-Geräte
 **Vorschauversion: Mobile Anwendungsverwaltung von Intune** Power BI-Unterstützung für Microsoft Intune Mobile Application Manager (MAM) steht jetzt als Vorschaufeature für Power BI Pro-Benutzer auf Android-Geräten zur Verfügung. 
 
-**Favoriten** Kennzeichnen Sie Ihre bevorzugten Dashboards auf Ihrem Android-Gerät, und betrachten Sie alle Ihre [bevorzugten Power BI-Dashboards und mobilen Reporting Services-Berichte und -KPIs](mobile-android-app-get-started.md#view-your-favorite-dashboards-kpis-and-reports) an einem zentralen Ort. 
+**Favoriten** Kennzeichnen Sie Ihre bevorzugten Dashboards auf Ihrem Android-Gerät, und betrachten Sie alle Ihre [bevorzugten Power BI-Dashboards und mobilen Reporting Services-Berichte und -KPIs](mobile-android-app-get-started.md#view-your-favorite-dashboards-and-reports) an einem zentralen Ort. 
 
 #### <a name="ios-devices"></a>iOS-Geräte
 **Links** URLs in Kacheln und Visualisierungen können nun angeklickt und in einem Browser geöffnet werden.
@@ -678,7 +692,7 @@ Lesen Sie den [Power BI-Mobile Apps-Blog für März 2016](https://powerbi.micros
 
 **Kacheln von Bing und R** Öffnen Sie Bing- und R-Kacheln im Fokusmodus.
 
-**Weiter Live-Kacheln auf Ihrem Startbildschirm** [Heften Sie KPIs und Karten als Live-Kacheln an Ihren Startbildschirm](mobile-pin-dashboard-start-screen-windows-10-phone-app.md), damit Sie alle Ihre wichtigen Metriken auf einem Blick sehen können.
+**Weitere Live-Kacheln auf Ihrem Startbildschirm** [Heften Sie KPIs und Karten als Livekacheln an Ihren Startbildschirm an](mobile-pin-dashboard-start-screen-windows-10-phone-app.md), damit Sie alle Ihre wichtigen Metriken immer im Blick haben.
 
 **Zwei-Finger-Zoom** Verwenden Sie den Zwei-Finger-Zoom auf Ihrem Tablet PC, um Dashboards genauer zu untersuchen.
 
@@ -687,7 +701,7 @@ Lesen Sie den [Power BI-Mobile Apps-Blog für März 2016](https://powerbi.micros
 **Berichtskatalog** Öffnen Sie Ihre Berichte direkt im Berichtskatalog.
 
 ### <a name="february-2016"></a>Februar 2016
-#### <a name="android"></a>Android
+#### <a name="android"></a>Android-
 Zeigen Sie Dashboards [auf Android-Smartphones im Querformat an](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-phone). 
 
 #### <a name="power-bi-app-for-windows-10-devices"></a>Power BI-App für Windows 10-Geräte

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: 570276b8af2862d6aab6dc806cb0c627be8ff157
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b400f429ef1e65a40caea717ab18bc06300f9d76
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870033"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75221175"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Kacheln in den mobilen Power BI-Apps
 Gilt für:
@@ -41,10 +41,13 @@ Anschließend öffnen Sie in den mobilen Power BI-Apps Kacheln im Fokusmodus und
    
    ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-tile-pie.png)
 3. Tippen Sie in einer Karte auf das Symbol **Karte zentrieren** (![](media/mobile-tiles-in-the-mobile-apps/power-bi-center-map-icon.png)), um die Karte auf Ihren aktuellen Standort zu zentrieren.
-   
-     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-center-map.png)
-4. Tippen Sie auf das Freigabesymbol ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-share-icon.png), um [eine Kachel mit einer Anmerkung zu versehen und sie für andere freizugeben](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md).
+
+   ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-center-map.png)
+
+4. Tippen Sie auf das Stiftsymbol ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-annotate-icon.png), um [eine Kachel zu kommentieren](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual) und dann auf das Symbol zum Teilen ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-share-icon.png), um [es mit anderen zu teilen](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual).
+
 5. [Fügen Sie der Kachel eine Warnung hinzu](mobile-set-data-alerts-in-the-mobile-apps.md). Wenn die Werte die Ziele über- oder unterschreiten, werden Sie von Power BI benachrichtigt.
+
 6. Manchmal hat der Ersteller des Dashboards einen Link zu einer Kachel hinzugefügt. Wenn dies der Fall ist, verfügt sie im Fokusmodus über ein Linksymbol ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png):
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-tile-link.png)
@@ -54,7 +57,7 @@ Anschließend öffnen Sie in den mobilen Power BI-Apps Kacheln im Fokusmodus und
     ![](media/mobile-tiles-in-the-mobile-apps/pbi_andr_openlinkmessage.png)
    
     Nachdem Sie den Link in der Power BI-App geöffnet haben, können Sie ihn kopieren und stattdessen in einem Browserfenster öffnen.
-7. [Öffnen Sie den Bericht](mobile-reports-in-the-mobile-apps.md)![](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png), auf dem die Kachel basiert.
+7. [Öffnen Sie den Bericht](mobile-reports-in-the-mobile-apps.md) ![](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png), auf dem die Kachel basiert.
 8. Um die Kachel im Fokusmodus zu belassen, tippen Sie auf die Kachelnamen und dann auf den Dashboardnamen oder auf **Mein Arbeitsbereich**.
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-tile-breadcrumb.png)
@@ -68,7 +71,7 @@ Anschließend öffnen Sie in den mobilen Power BI-Apps Kacheln im Fokusmodus und
     Im Fokusmodus haben Sie folgende Möglichkeiten:
    
    * Auf das Diagramm tippen, um die Leiste in einem Linien-, Balken-, Säulen- oder Blasendiagramm zu verschieben, damit die Werte für einen bestimmten Punkt in der Visualisierung angezeigt werden.  
-   * Tippen Sie auf das Symbol „Momentaufnahme freigeben“ ![](./media/mobile-tiles-in-the-mobile-apps/pbi_andr_sharesnapicon.png), um [die Kachel mit einer Anmerkung zu versehen und sie für andere freizugeben](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md).
+   * Tippen Sie auf das Stiftsymbol ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-annotate-icon.png), um [eine Kachel zu kommentieren](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual), und klicken Sie dann auf das Symbol für Momentaufnahmen ![](./media/mobile-tiles-in-the-mobile-apps/pbi_andr_sharesnapicon.png), um [es mit anderen zu teilen](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual).
    * Tippen Sie auf das Symbol „Bericht öffnen“ ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-android-tablet-open-report-icon.png), um den [Bericht in der mobilen App anzuzeigen](mobile-reports-in-the-mobile-apps.md).
 3. Manchmal hat der Ersteller des Dashboards einen Link zu einer Kachel hinzugefügt. Wenn dies der Fall ist, wird beim Tippen auf die Auslassungspunkte ( **...** ) die Option **Link öffnen** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png) angezeigt:
    

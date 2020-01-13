@@ -1,19 +1,19 @@
 ---
 title: Durchsuchen von Berichten in den mobilen Power BI-Apps
 description: Hier erfahren Sie, wie Sie in den mobilen Power BI-Apps auf Ihrem Telefon oder Tablet Berichte anzeigen und mit diesen interagieren. Sie erstellen Berichte im Power BI-Dienst oder in Power BI Desktop und interagieren anschließend in mobilen Apps mit diesen.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/09/2019
-ms.author: mshenhav
-ms.openlocfilehash: d4b9a9aeda00dd7f16690d1e92336f5b63adf1da
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/16/2019
+ms.author: painbar
+ms.openlocfilehash: bb54a4e403f2cc12800d0c97e44308f7ad5c5f65
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73869760"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75220724"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Durchsuchen von Berichten in den mobilen Power BI-Apps
 Gilt für:
@@ -96,29 +96,43 @@ Weitere Informationen finden Sie unter [Hinzufügen der Drillthroughfunktion in 
 ![Berichtsfußzeile](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
 
 Sie können die folgenden Aktionen über die Fußzeile ausführen:
-- Zurücksetzen des Berichtsfilters und der übergreifenden Hervorhebungsauswahl in den ursprünglichen Zustand.
-- Öffnen des Konversationsbereichs, um Kommentare anzuzeigen oder zum Bericht hinzuzufügen.
-- Öffnen des Filterbereich, um den derzeit auf den Bericht angewendeten Filter anzuzeigen oder zu ändern.
-- Auflisten aller Seiten des Berichts. Wenn Sie auf einen Seitennamen tippen, wird diese Seite geladen und angezeigt.
+* Zurücksetzen des Berichtsfilters und der übergreifenden Hervorhebungsauswahl in den ursprünglichen Zustand.
+* Öffnen des Konversationsbereichs, um Kommentare anzuzeigen oder zum Bericht hinzuzufügen.
+* Öffnen des Filterbereich, um den derzeit auf den Bericht angewendeten Filter anzuzeigen oder zu ändern.
+* Auflisten aller Seiten des Berichts. Wenn Sie auf einen Seitennamen tippen, wird diese Seite geladen und angezeigt.
 Sie können zwischen Berichtsseiten wechseln, indem Sie vom Rand des Bildschirms in die Mitte wischen.
-- Anzeigen aller Berichtsaktionen.
+* Anzeigen aller Berichtsaktionen.
 
 #### <a name="all-report-actions"></a>Alle Berichtsaktionen
 Wenn Sie im Bericht auf die Schaltfläche **Weitere Optionen** (...) tippen, werden alle Aktionen angezeigt, die Sie für einen Bericht ausführen können:
 
 
-![Alle Berichtsaktionen](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)
+![Alle Berichtsaktionen](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-all-actions.png)
 
 Einige der Aktionen können deaktiviert sein, da sie von den spezifischen Berichtsfunktionen abhängig sind.
 Beispiel:
+
+**Lesezeichen** wird nur angezeigt, wenn die Aktion [Lesezeichen](mobile-reports-in-the-mobile-apps.md#bookmarks) im Bericht festgelegt wurde. Sowohl persönlichen Lesezeichen, die Sie im Power BI-Dienst definieren können, als auch Lesezeichen, die vom Berichtersteller definiert wurden, werden angezeigt. Wenn eines der Lesezeichen als Standardlesezeichen definiert wurde, wird der Bericht beim Laden für diese Ansicht geöffnet.
+
+**Anmerkung und Freigabe** kann deaktiviert sein, wenn in Ihrer Organisation eine [Intune-Schutzrichtlinie](https://docs.microsoft.com/intune/app-protection-policies) vorhanden ist, die die Freigabe über mobile Power BI-Apps untersagt.
+
+**Einladen** ist nur aktiviert, wenn Sie über die Berechtigung verfügen, den Bericht für andere Benutzer freizugeben. Sie verfügen nur über Berechtigung, wenn Sie der Besitzer des Berichts sind oder der Besitzer Ihnen die Berechtigung zum Freigeben gewährt hat.
 
 **Filter by current location** (Nach aktuellem Standort filtern) ist aktiviert, wenn der Berichtsautor den Bericht mit geografischen Daten kategorisiert hat. Weitere Informationen finden Sie unter [Identifizieren von geografischen Daten in einem Bericht](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
 
 **Scan to filter the report by barcode** (Barcode zum Filtern des Berichts scannen) wird nur aktiviert, wenn das Dataset in Ihrem Bericht als **Barcode** markiert ist. Weitere Informationen finden Sie unter [Markieren von Barcodes in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes).
 
-**Einladen** ist nur aktiviert, wenn Sie über die Berechtigung verfügen, den Bericht für andere Benutzer freizugeben. Sie verfügen nur über Berechtigung, wenn Sie der Besitzer des Berichts sind oder der Besitzer Ihnen die Berechtigung zum Freigeben gewährt hat.
+### <a name="bookmarks"></a>Lesezeichen
 
-**Anmerkung und Freigabe** kann deaktiviert sein, wenn in Ihrer Organisation eine [Intune-Schutzrichtlinie](https://docs.microsoft.com/intune/app-protection-policies) vorhanden ist, die die Freigabe über mobile Power BI-Apps untersagt.
+Die mobile Power BI-App unterstützt sowohl vom Berichtersteller definierte Berichtlesezeichen, als auch persönliche Lesezeichen, die Sie im Power BI-Dienst definieren können. Sie finden das Lesezeichenmenü unter **Weitere Optionen** (...) auf der [Symbolleiste „Berichtsaktionen“](mobile-reports-in-the-mobile-apps.md#all-report-actions).
+
+![Lesezeichenmenü](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-menu.png)
+
+Wenn eine Lesezeichenansicht eines Berichts geöffnet ist, wird der Name des Lesezeichens am oberen Rand des Berichts angezeigt.
+
+![Lesezeichenansicht](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
+
+[Erfahren Sie mehr über Lesezeichen im Power BI-Dienst](https://docs.microsoft.com/power-bi/consumer/end-user-bookmarks).
 
 ## <a name="next-steps"></a>Nächste Schritte
 * [Anzeigen von und Interagieren mit Power BI-Berichten, die für das Smartphone optimiert sind](mobile-apps-view-phone-report.md)

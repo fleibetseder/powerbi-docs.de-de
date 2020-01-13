@@ -10,10 +10,10 @@ ms.date: 05/13/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: 817ce82b94817530854d85c7dbcca17a313fc438
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73874461"
 ---
 # <a name="create-a-visual-with-power-bi-qa"></a>Erstellen eines Visuals mit Power BI Q&A
@@ -28,7 +28,7 @@ Zum Durchführen der Schritte müssen Sie einen Bericht verwenden, den Sie bearb
 
 Wie gehen Sie beim Erstellen des Liniendiagramms mithilfe von Q&A vor?
 
-1. Wählen Sie in dem Power BI-Arbeitsbereich **Daten abrufen** \> **Beispiele** \> **Analysebeispiel für den Einzelhandel**  >  **Verbinden** aus.
+1. Wählen Sie aus dem Power BI-Arbeitsbereich **Daten abrufen** \> **Beispiele** \> **Retail Analysis Sample** (Analysebeispiel für Einzelhandel) > **Verbinden** aus.
 
 1. Öffnen Sie das Dashboard mit dem Analysebeispiel für den Einzelhandel, und platzieren Sie den Cursor im Q&A-Feld **Stellen Sie eine Frage zu Ihren Daten**.
 

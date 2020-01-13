@@ -1,19 +1,19 @@
 ---
 title: Offlinemodus zum Anzeigen von Daten in mobilen Power BI-Apps
 description: 'Erfahren Sie Näheres über die Vorteile über das Anzeigen von Power BI in einer mobilen App anstatt in einem mobilen Browser: Sie können Ihre Daten auch dann anzeigen, wenn keine Netzverbindung besteht.'
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/27/2018
-ms.author: mshenhav
-ms.openlocfilehash: 09a4595b461f69cfa02b4cc0ca3c96b1eb917ef8
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/09/2019
+ms.author: painbar
+ms.openlocfilehash: 2974f257509d88a469f981bbdecf8cdca47c8e9e
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870616"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75219073"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Offlinemodus zum Anzeigen von Daten in mobilen Power BI-Apps
 Gilt für:
@@ -36,7 +36,7 @@ Zusätzlich haben Sie schreibgeschützten Zugriff auf alle Power BI-Berichte, a
 ## <a name="background-data-refresh"></a>Datenaktualisierung im Hintergrund
 Durch die Aktualisierung im Hintergrund werden Ihre Dashboardfavoriten sowie die Dashboards und Berichte, die Sie in den letzten zwei Wochen angezeigt haben, mit den Daten im Power BI-Dienst (nicht der Datenquelle) aktualisiert. Wenn eine WLAN-Verbindung besteht, wird die Aktualisierung im Hintergrund alle 2 Stunden ausgeführt. Wenn die Verbindung hingegen über ein 3G-Netz erfolgt, werden die Inhalte in Power BI alle 24 Stunden aktualisiert.
 
-Sie können die Datenaktualisierung im Hintergrund deaktivieren, z. B. um das beanspruchte Datenvolumen zu reduzieren. Überprüfen Sie hierzu die Einstellungen auf Ihrem Gerät.
+Sie können beispielsweise die Datenaktualisierung im Hintergrund deaktivieren, um eine hohe Netzwerkauslastung zu vermeiden. Überprüfen Sie hierzu die Einstellungen auf Ihrem Gerät.
 
 > [!NOTE]
 > Wenn Sie die mobile Power BI-App auf einem iOS-Gerät verwenden und Ihr Unternehmen Microsoft Intune MAM konfiguriert hat, ist die Datenaktualisierung im Hintergrund deaktiviert. Power BI aktualisiert die Daten über den Power BI-Dienst im Web, wenn Sie das nächste Mal die App aufrufen.
@@ -52,7 +52,7 @@ Power BI zeigt klar an, wenn Sie in den Offline- oder Onlinemodus wechseln. Au�
 Wenn Sie Power BI auf Ihrem Mobilgerät im Offlinemodus nutzen, gelten diese Einschränkungen:
 
 * Power BI kann bis zu 250 MB Daten offline zwischenspeichern.
-* Für einige Kacheltypen ist eine aktive Serververbindung nötig. Sie stehen daher offline nicht zur Verfügung &#150; z.B. Kacheln von Bing-Karten und einige benutzerdefinierte Kacheln.
+* Für einige Kacheltypen ist eine aktive Serververbindung nötig, sie stehen daher nicht offline zur Verfügung; z. B. Kacheln von Bing-Karten und einige benutzerdefinierte Kacheln.
 * Vollständige Excel-Arbeitsmappen sind in Power BI nicht offline verfügbar.
 * Sie können mobile Reporting Services-Berichte und KPIs offline anzeigen, wenn Sie sie angezeigt haben, während sie verbunden waren. Sie aktualisieren sich nicht im Hintergrund. Sie aktualisieren sich jedes Mal, wenn Sie sie öffnen.
 * In den mobilen Power BI-Apps können Sie keine Power BI Desktop-Dateien (PBIX-Dateien) anzeigen, die im Power BI-Berichtsserver gespeichert sind. 
@@ -65,4 +65,3 @@ Ihr Feedback hilft uns zu entscheiden, welche Features wir künftig realisieren.
 * Folgen Sie @MSPowerBI auf Twitter
 * Werden Sie Teil der [Power BI-Community](https://community.powerbi.com/), um sich mit den Mitgliedern auszutauschen
 * [Was ist Power BI?](../../fundamentals/power-bi-overview.md)
-

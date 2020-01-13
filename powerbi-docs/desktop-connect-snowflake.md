@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 2bb44498b6123eadffe86c7eb9bfb93bb0db5e14
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 23d66994e88204f56ee937a4f7887225e48a5e2f
+ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876427"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75304291"
 ---
 # <a name="connect-to-snowflake-in-power-bi-desktop"></a>Verbinden mit Snowflake in Power BI Desktop
 In Power BI Desktop können Sie eine Verbindung mit einem **Snowflake Computing**-Warehouse herstellen und die zugrunde liegenden Daten wie jede andere Datenquelle in Power BI Desktop verwenden. 
@@ -42,9 +42,14 @@ Wenn Sie dazu aufgefordert werden, geben Sie Ihren Benutzernamen und Ihr Kennwor
 > 
 > 
 
+Wenn Sie die Option „Microsoft-Konto“ verwenden möchten, bitten Sie Ihren Snowflake-Administrator, sich mit Snowflake in Verbindung zu setzen, damit Sie im Rahmen der privaten Vorschau Zugriff auf diese Funktion erhalten.
+
+![Authentifizierung mit einem Microsoft-Konto für den Snowflake-Connector](media/desktop-connect-snowflake/connect-snowflake-6.png)
+
+
 Nachdem die Verbindung erfolgreich hergestellt wurde, wird das Fenster **Navigator** mit den auf dem Server verfügbaren Daten angezeigt. Aus diesen können Sie ein oder mehrere Elemente auswählen, die importiert und in **Power BI Desktop** verwendet werden sollen.
 
-![](media/desktop-connect-snowflake/connect_snowflake_5.png)
+![ODBC-Fehler 28000, der zu einem Verbindungsfehler führt](media/desktop-connect-snowflake/connect_snowflake_5.png)
 
 Sie können die ausgewählte Tabelle **laden**, um die gesamte Tabelle in **Power BI Desktop** zu importieren, oder Sie können die Abfrage **bearbeiten**. Wenn Sie „Bearbeiten“ auswählen, wird der **Abfrage-Editor** geöffnet, sodass Sie den Satz der zu verwendenden Daten filtern und aufbereiten können, um diesen aufbereiteten Satz von Daten anschließend in **Power BI Desktop** zu laden.
 

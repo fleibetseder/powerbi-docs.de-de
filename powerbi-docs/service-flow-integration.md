@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 738ae599e116beaf5ff80098e4965ee3ed958b04
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: e9c6185506d1992a46ee14ff1eafe0c37d9f65c1
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699680"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223782"
 ---
-# <a name="power-automate-and-power-bi"></a>Power Automate und Power BI
+# <a name="power-automate-and-power-bi"></a>Power Automate und Power BI
 
-[Power Automate](https://flow.microsoft.com/documentation/getting-started) ist ein SaaS-Dienst zum Automatisieren von Workflows zwischen den immer zahlreicheren Anwendungen und SaaS-Diensten, auf die Geschäftsbenutzer zugreifen. Mit Flow können Sie Aufgaben automatisieren, indem Sie Ihre bevorzugten Apps und Dienste (einschließlich Power BI) synchronisieren, um Benachrichtigungen zu erhalten, Dateien zu synchronisieren, Daten zu sammeln und weitere Aktionen ausführen zu lassen. Die Automatisierung von Workflows vereinfacht Aufgaben, die sich wiederholen.
+[Power Automate](https://docs.microsoft.com/power-automate/getting-started) ist ein SaaS-Dienst zum Automatisieren von Workflows zwischen den immer zahlreicheren Anwendungen und SaaS-Diensten, auf die Geschäftsbenutzer zugreifen. Mit Flow können Sie Aufgaben automatisieren, indem Sie Ihre bevorzugten Apps und Dienste (einschließlich Power BI) synchronisieren, um Benachrichtigungen zu erhalten, Dateien zu synchronisieren, Daten zu sammeln und weitere Aktionen ausführen zu lassen. Die Automatisierung von Workflows vereinfacht Aufgaben, die sich wiederholen.
 
-[Erste Schritte mit Flow](https://flow.microsoft.com/documentation/getting-started)
+[Erste Schritte mit Flow](https://docs.microsoft.com/power-automate/getting-started)
 
 Sehen Sie sich an, wie Sirui einen Flow erstellt, der eine detaillierte E-Mail an Kollegen versendet, wenn eine Power BI-Warnung ausgelöst wird. Befolgen Sie dann die schrittweisen Anleitungen unter dem Video, um es selbst ausprobieren.
 
@@ -90,7 +90,7 @@ In dieser Aufgabe erstellen wir einen einfachen Flow von Grund auf neu, der durc
 1. Wählen Sie in der Dropdownliste den Namen der Warnung aus.  Informationen zum Erstellen einer Warnung finden Sie unter [Datenwarnungen in Power BI](service-set-data-alerts.md).
    
     ![Namen der Warnung auswählen](media/service-flow-integration/power-bi-totalstores2.png)
-2. Wählen Sie **Neuer Schritt** > **Aktion hinzufügen** aus.
+2. Wählen Sie **Neuer Schritt** > **Aktion hinzufügen**.
    
    ![Neuen Schritt hinzufügen](media/service-flow-integration/power-bi-new-step.png)
 3. Suchen Sie nach **Outlook**, und wählen Sie **Ereignis erstellen** aus.
@@ -107,7 +107,7 @@ In dieser Aufgabe erstellen wir einen einfachen Flow von Grund auf neu, der durc
     ![Outlook-Benachrichtigung bei Auslösung des Flows](media/service-flow-integration/power-bi-flow-notice.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
-* [Erste Schritte mit Power Automate](https://flow.microsoft.com/documentation/getting-started/)
+* [Erste Schritte mit Power Automate](https://docs.microsoft.com/power-automate/getting-started/)
 * [Festlegen von Datenwarnungen im Power BI-Dienst](service-set-data-alerts.md)
 * [Festlegen von Datenwarnungen auf dem iPhone](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Festlegen von Datenwarnungen in der mobilen Power BI-App für Windows 10](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)

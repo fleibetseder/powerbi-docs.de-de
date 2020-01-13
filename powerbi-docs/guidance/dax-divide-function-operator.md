@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: c20a366ef657e851ef77a9649dbcc8b66b67dac0
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 7eea15d4389afaac2ac69e2f26eaa38fe84e337b
+ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74695195"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75304164"
 ---
 # <a name="dax-divide-function-vs-divide-operator-"></a>DAX: Vergleich zwischen der DIVIDE-Funktion und dem Divisionsoperator (/)
 
@@ -58,7 +58,7 @@ Es wird empfohlen, dass Sie die DIVIDE-Funktion verwenden, wenn es sich beim Nen
 
 Wenn es sich beim Nenner um einen konstanten Wert handelt, wird empfohlen, dass Sie den Divisionsoperator verwenden. In diesem Fall ist die Division garantiert erfolgreich, und Ihr Ausdruck erzielt eine bessere Leistung, da unnötige Tests vermieden werden.
 
-Überlegen Sie sorgfältig, ob die DIVIDE-Funktion einen alternativen Wert zurückgeben sollte. Bei Measures ist es in der Regel besser, wenn sie BLANK zurückgeben, wenn ein sinnvolles Ergebnis nicht ausgewertet werden kann. Weitere Informationen finden Sie unter [Vermeiden der Konvertierung von BLANKs in Werte](dax-avoid-converting-blank.md).
+Überlegen Sie sorgfältig, ob die DIVIDE-Funktion einen alternativen Wert zurückgeben sollte. Für Measures ist es in der Regel besser, wenn sie BLANK zurückgeben. Der Vorteil einer Rückgabe von BLANK ist, dass Berichtsvisuals Gruppierungen standardmäßig löschen, wenn Zusammenfassungen leer sind. Dadurch kann das Visual die Aufmerksamkeit auf Gruppierungen lenken, die Daten enthalten. Bei Bedarf können Sie das Visual so konfigurieren, dass alle Gruppen (die Werte oder BLANK (LEER) zurückgeben) im Filterkontext angezeigt werden, indem Sie die Option [Elemente ohne Daten anzeigen](../desktop-show-items-no-data.md) aktivieren.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

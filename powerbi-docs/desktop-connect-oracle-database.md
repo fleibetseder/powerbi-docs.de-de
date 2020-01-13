@@ -6,62 +6,62 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 11/20/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7c91095cf321fed56a0cb1c3c6bd1113f380a524
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c2290963db54f150eed8176c2820c59f8f138666
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878510"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223283"
 ---
 # <a name="connect-to-an-oracle-database"></a>Herstellen einer Verbindung mit einer Oracle-Datenbank
-Um über **Power BI Desktop** eine Verbindung mit einer Oracle-Datenbank herzustellen, muss auf dem Computer, auf dem Power BI Desktop ausgeführt wird, die richtigen Oracle-Clientsoftware installiert sein. Welche Oracle-Clientsoftware Sie verwenden, hängt davon ab, ob Sie für Power BI Desktop die **32-Bit**-Version oder die **64-Bit**-Version installiert haben.
+Für die Herstellung einer Verbindung mit einer Oracle-Datenbank muss auf dem Computer, auf dem Power BI Desktop ausgeführt wird, die richtigen Oracle-Clientsoftware installiert sein. Welche Oracle-Clientsoftware Sie verwenden, hängt davon ab, welche Version von Power BI Desktop Sie installiert haben: 32-Bit oder 64-Bit.
 
-**Unterstützte Versionen**: Oracle 9 und höher, Oracle-Clientsoftware Version 8.1.7 und höher.
+Unterstützte Oracle-Versionen: 
+- Oracle 9 und höher
+- Oracle-Clientsoftware, Version 8.1.7 und höher
 
 ## <a name="determining-which-version-of-power-bi-desktop-is-installed"></a>Ermitteln der installierten Version von Power BI Desktop
-Um zu bestimmen, welche Version von Power BI Desktop installiert ist, klicken Sie auf **Datei > Hilfe > Info**, und überprüfen Sie die Zeile **Version:** . In der folgenden Abbildung ist eine 64-Bit-Version von Power BI Desktop installiert:
+Wählen Sie **Datei** > **Hilfe** > **Info** aus, und überprüfen Sie dann die Zeile **Version**, um zu bestimmen, welche Version von Power BI Desktop installiert ist. In der folgenden Abbildung ist eine 64-Bit-Version von Power BI Desktop installiert:
 
-![](media/desktop-connect-oracle-database/connect-oracle-database_1.png)
+![Power BI Desktop-Version](media/desktop-connect-oracle-database/connect-oracle-database_1.png)
 
 ## <a name="installing-the-oracle-client"></a>Installieren des Oracle-Clients
-Verwenden Sie für **32-Bit**-Versionen von Power BI Desktop den folgenden Link, um den **32-Bit**-Oracle-Client herunterzuladen und zu installieren:
+- Laden Sie den [32-Bit-Oracle-Client](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html) für die 32-Bit-Version von Power BI Desktop herunter, und installieren Sie ihn.
 
-* [32-Bit-Oracle Data Access Components (ODAC) mit Oracle Developer Tools für Visual Studio (12.1.0.2.4)](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
-
-Verwenden Sie für **64-Bit**-Versionen von Power BI Desktop den folgenden Link, um den **64-Bit**-Oracle-Client herunterzuladen und zu installieren:
-
-* [64-Bit-ODAC 12c-Version 4 (12.1.0.2.4) für Windows x64](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
+- Laden Sie den [64-Bit-Oracle-Client](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html) für die 64-Bit-Version von Power BI Desktop herunter, und installieren Sie ihn.
 
 ## <a name="connect-to-an-oracle-database"></a>Herstellen einer Verbindung mit einer Oracle-Datenbank
-Nachdem der entsprechende Oracle-Clienttreiber installiert wurde, können Sie eine Verbindung mit einer Oracle-Datenbank herstellen. Gehen Sie wie folgt vor, um die Verbindung herzustellen:
+Nachdem Sie den entsprechenden Oracle-Clienttreiber installiert haben, können Sie eine Verbindung mit einer Oracle-Datenbank herstellen. Gehen Sie wie folgt vor, um die Verbindung herzustellen:
 
-1. Wählen Sie im Fenster „Daten abrufen“ die Befehlsfolge **Datenbank > Oracle-Datenbank**.
+1. Klicken Sie auf der Registerkarte **Start** auf **Daten abrufen**. 
+
+2. Wählen Sie im angezeigten Fenster **Daten abrufen** die Option **Mehr** aus (falls erforderlich), dann **Datenbank** > **Oracle-Datenbank**, und anschließend **Verbinden**.
    
-   ![](media/desktop-connect-oracle-database/connect-oracle-database_2.png)
-2. Geben Sie im daraufhin angezeigten Dialogfeld **Oracle-Datenbank** den Namen des Servers ein, und wählen Sie **Verbinden**. Wenn eine SID erforderlich ist, können Sie dies über folgendes Format festlegen: *Servername/SID*, wobei SID dem eindeutigen Namen der Datenbank entspricht. Wenn das Format *Servername/SID* nicht funktioniert, versuchen Sie es mit *Servername/Dienstname*, wobei Dienstname der beim Herstellen der Verbindung verwendete Alias ist.
+   ![Verbindung „Oracle-Datenbank“](media/desktop-connect-oracle-database/connect-oracle-database_2.png)
+2. Geben Sie im daraufhin angezeigten Dialogfeld **Oracle-Datenbank** den Namen des **Servers** ein, und wählen Sie **OK** aus. Wenn eine SID erforderlich ist, legen Sie sie über folgendes Format fest: *Servername/SID*, wobei *SID* dem eindeutigen Namen der Datenbank entspricht. Wenn das Format *Servername/SID* nicht funktioniert, verwenden Sie *Servername/Dienstname*, wobei *Dienstname* der beim Herstellen der Verbindung verwendete Alias ist.
 
 
-   ![](media/desktop-connect-oracle-database/connect-oracle-database_3.png)
+   ![Oracle-Servername eingeben](media/desktop-connect-oracle-database/connect-oracle-database_3.png)
 
    > [!TIP]
-   > Wenn Sie während dieses Schritts Probleme mit der Verbindung haben, verwenden Sie versuchsweise das folgenden Format im Feld „Servername“: (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=host_name)(PORT=port_num))(CONNECT_DATA=(SERVICE_NAME=service_name)))
+   > Wenn Sie während dieses Schritts Probleme mit der Verbindung haben, verwenden Sie versuchsweise das folgenden Format im Feld **Server**: *(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=host_name)(PORT=port_num))(CONNECT_DATA=(SERVICE_NAME=service_name)))*
    
-3. Wenn Sie Daten mithilfe einer nativen Datenbankabfrage importieren möchten, können Sie Ihre Abfrage in das Feld **SQL-Anweisung** einfügen. Dieses wird angezeigt, wenn Sie im Dialogfeld **Oracle-Datenbank** die **Erweiterten Optionen** einblenden.
+3. Wenn Sie Daten mithilfe einer nativen Datenbankabfrage importieren möchten, fügen Sie Ihre Abfrage in das Feld **SQL-Anweisung** ein. Dieses wird angezeigt, wenn Sie im Dialogfeld **Oracle-Datenbank** die **Erweiterten Optionen** einblenden.
    
-   ![](media/desktop-connect-oracle-database/connect-oracle-database_4.png)
-4. Nachdem Sie die erforderlichen Informationen in das Dialogfeld „Oracle-Datenbank“ eingegeben haben (einschließlich aller optionalen Informationen wie SID oder nativer Datenbankabfrage), wählen Sie **OK**, um die Verbindung herzustellen.
+   ![„Erweiterte Optionen“ erweitern](media/desktop-connect-oracle-database/connect-oracle-database_4.png)
+4. Nachdem Sie die erforderlichen Informationen in das Dialogfeld **Oracle-Datenbank** eingegeben haben (einschließlich aller optionalen Informationen wie SID oder nativer Datenbankabfrage), wählen Sie **OK** aus, um die Verbindung herzustellen.
 5. Wenn für die Anmeldung bei der Oracle-Datenbank Anmeldeinformationen erforderlich sind, geben Sie diese bei Aufforderung in das Dialogfeld ein.
 
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
-Wenn Sie Power BI Desktop aus dem Microsoft Store heruntergeladen haben, können Sie möglicherweise aufgrund eines Problems mit dem Oracle-Treiber keine Verbindung zu Oracle-Datenbanken herstellen. Wenn dieses Problem auftritt, wird die Fehlermeldung „Object reference not set“ (Der Objektverweis ist nicht festgelegt.) zurückgegeben. Führen Sie einen der folgenden Schritte aus, um das Problem zu beheben:
+Wenn Sie Power BI Desktop aus dem Microsoft Store heruntergeladen haben, können Sie möglicherweise aufgrund eines Problems mit dem Oracle-Treiber keine Verbindung zu Oracle-Datenbanken herstellen. Wenn dieses Problem auftritt, wird die folgende Fehlermeldung zurückgegeben: *Object reference not set* (Der Objektverweis ist nicht festgelegt). Führen Sie einen der folgenden Schritte aus, um das Problem zu beheben:
 
-* Laden Sie stattdessen Power BI Desktop von https://powerbi.microsoft.com/desktop herunter.
+* Laden Sie Power BI Desktop aus dem [Download Center](https://www.microsoft.com/download/details.aspx?id=58494) herunter, anstatt vom Microsoft Store.
 
-* Wenn Sie die Version aus dem Microsoft Store verwenden möchten: Kopieren Sie auf Ihrem lokalen Computer die Datei „oraons.dll“ von _12.X.X.X\client_X_ nach _12.X.X.X\client_X\bin_. Das X steht für Versions- und Verzeichnisnummern.
+* Wenn Sie die Version aus dem Microsoft Store verwenden möchten: Kopieren Sie auf Ihrem lokalen Computer die Datei „oraons.dll“ von _12.X.X\client_X_ nach _12.X.X\client_X\bin_, wobei _X_ die Version und Verzeichnisnummern darstellt.
 
-Wenn Ihnen im Power BI Gateway beim Herstellen einer Verbindung mit einer Oracle-Datenbank die Fehlermeldung *Object reference not set* (Der Objektverweis ist nicht festgelegt) angezeigt wird, können Sie das Problem möglicherweise lösen, indem Sie die Anweisungen im Artikel [Verwalten der Datenquelle – Oracle](service-gateway-onprem-manage-oracle.md) befolgen.
+Wenn Ihnen im Power BI Gateway beim Herstellen einer Verbindung mit einer Oracle-Datenbank die Fehlermeldung *Object reference not set* (Der Objektverweis ist nicht festgelegt) angezeigt wird, befolgen Sie die Anweisungen im Artikel [Verwalten der Datenquelle – Oracle](service-gateway-onprem-manage-oracle.md).

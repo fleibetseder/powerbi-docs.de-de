@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 49615e1b6c205d9b894df0bcca7ef4979f153ba7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: f5fa262c01767ba934a10300e321796845d47c5f
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872126"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75223813"
 ---
 # <a name="automated-machine-learning-in-power-bi"></a>Automatisiertes Machine Learning in Power BI
 
@@ -32,7 +32,7 @@ AutoML in Power BI ermöglicht Datenanalysten den Einsatz von Dataflows, um Mach
 
 AutoML unterstützt für Dataflows das Erstellen von Modellen der Typen **Binäre Vorhersage**, **Klassifizierung** und **Regression**. Dies sind beaufsichtigte Machine Learning-Techniken, was bedeutet, dass sie aus den bekannten Ergebnissen früherer Beobachtungen lernen, um die Ergebnisse anderer Beobachtungen vorherzusagen. Das Eingabedataset zum Trainieren eines AutoML-Modells besteht aus einer Reihe von Datensätzen, die mit den bekannten Ergebnissen **beschriftet**  sind.
 
-AutoML in Power BI integriert [automatisiertes ML](https://docs.microsoft.com/azure/machine-learning/service/concept-automated-ml) aus [Azure Machine Learning Service](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml), um Ihre ML-Modelle zu erstellen. Sie benötigen jedoch kein Azure-Abonnement, um AutoML in Power BI zu nutzen. Der Prozess des Trainings und Hostings der ML-Modelle wird vollständig vom Power BI-Dienst verwaltet.
+AutoML in Power BI integriert [automatisiertes Machine Learning](https://docs.microsoft.com/azure/machine-learning/service/concept-automated-ml) aus [Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml) zur Erstellung Ihrer Machine Learning-Modelle. Sie benötigen jedoch kein Azure-Abonnement, um AutoML in Power BI zu nutzen. Der Prozess des Trainings und Hostings der ML-Modelle wird vollständig vom Power BI-Dienst verwaltet.
 
 Nachdem ein ML-Modell trainiert wurde, erstellt AutoML automatisch einen Power BI-Bericht, der die wahrscheinliche Leistung Ihres ML-Modells erklärt. AutoML legt den Schwerpunkt auf Erklärbarkeit, indem es die wichtigsten Einflussfaktoren unter Ihren Eingaben hervorhebt, die die von Ihrem Modell gelieferten Vorhersagen beeinflussen. Der Bericht enthält auch Schlüsselmetriken für das Modell.
 
@@ -282,7 +282,7 @@ Dieser Artikel enthält eine Übersicht über automatisiertes maschinelles Lerne
 
 - [Tutorial: Erstellen eines Machine Learning-Modells in Power BI](service-tutorial-build-machine-learning-model.md)
 - [Tutorial: Verwenden von Cognitive Services in Power BI](service-tutorial-use-cognitive-services.md)
-- [Tutorial: Aufrufen eines Machine Learning Studio-Modells in Power BI (Vorschau)](service-tutorial-invoke-machine-learning-model.md)
+- [Tutorial: Aufrufen eines klassischen Machine Learning Studio-Modells in Power BI (Vorschau)](service-tutorial-invoke-machine-learning-model.md)
 - [Cognitive Services in Power BI](service-cognitive-services.md)
 - [Azure Machine Learning integration in Power BI (Azure Machine Learning-Integration in Power BI)](service-machine-learning-integration.md)
 

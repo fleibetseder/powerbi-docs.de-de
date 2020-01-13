@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 12/03/2019
-ms.openlocfilehash: 12ecde787bb268190f9b94a2db5992d5840080ac
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.openlocfilehash: 73a6a3d16ae2515af41a3232a37579e18876f38b
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75002533"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223665"
 ---
 # <a name="submit-a-power-bi-visual-to-appsource-using-seller-dashboard"></a>Übermitteln eines Power BI-Visuals an AppSource über das Verkäuferdashboard
 
@@ -103,7 +103,7 @@ Befolgen Sie die Anweisungen in diesem Abschnitt, um ein Power BI-Visual im Ver
     * [Befolgen der Anforderungen](power-bi-custom-visuals-certified.md#certification-requirements)
     * Übergeben des Codereviews
 
-2. Das Microsoft-Team für Power BI-Visuals benachrichtigt Sie, wenn Ihr Power BI-Visual zertifiziert und der [Liste der zertifizierten Visuals](power-bi-custom-visuals-certified.md#list-of-power-bi-visuals-that-have-been-certified) hinzugefügt wurde oder wenn es mit einem Bericht zu den zu behebenden Problemen abgelehnt wurde. Es ist Aufgabe des Entwicklers, eine offene Kommunikation mit Microsoft zu pflegen und seine zertifizierten Visuals bei Bedarf zu aktualisieren.
+2. Das Microsoft-Team für Power BI-Visuals benachrichtigt Sie, wenn Ihr Power BI-Visual zertifiziert und der [Liste der zertifizierten Power BI-Visuals](power-bi-custom-visuals-certified.md#certified-power-bi-visuals) hinzugefügt wurde oder wenn es mit einem Bericht zu den zu behebenden Problemen abgelehnt wurde. Es ist Aufgabe des Entwicklers, eine offene Kommunikation mit Microsoft zu pflegen und seine zertifizierten Visuals bei Bedarf zu aktualisieren.
 
 ## <a name="tracking-submission-status-and-usage"></a>Nachverfolgen des Übermittlungsstatus und der Verwendung
 

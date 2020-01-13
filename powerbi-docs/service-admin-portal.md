@@ -10,12 +10,12 @@ ms.date: 09/25/2019
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 4776e458c778b6bd482106660ab9b8cd978699e5
-ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
+ms.openlocfilehash: 99d57b734e42913db20e8a414c3216ed66334fa8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74882898"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75224200"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Verwalten von Power BI im Verwaltungsportal
 
@@ -162,15 +162,15 @@ Einstellungen können drei Zustände aufweisen:
 
 Die nächsten Abschnitte bieten einen Überblick über die verschiedenen Arten von Mandanteneinstellungen.
 
-## <a name="help-and-support-settings"></a>Einstellungen für Hilfe und Support
+## <a name="help-and-support-settings"></a>Hilfe- und Supporteinstellungen
 
-### <a name="publish-get-help-information"></a>Veröffentlichen von Informationen zu „Hilfe erhalten“
+### <a name="publish-get-help-information"></a>Informationen zu "Hilfe anfordern" veröffentlichen
 
 Benutzer in der Organisation können über das Hilfemenü von Power BI zur internen Hilfe und zu Supportressourcen gelangen. Insbesondere ändern diese Parameter das Verhalten der Menüelemente „Weitere Informationen“, „Community“ und „Hilfe erhalten“.
 
-    ![Enable except setting](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
+Durch die Angabe einer URL für Lizenzanforderungen passen Sie außerdem die Ziel-URL der Schaltfläche **Upgrade für Konto ausführen** an. Benutzer ohne Power BI Pro-Lizenz sehen diese Schaltfläche im Dialogfeld **Update to Power BI Pro (Aktualisierung auf Power BI Pro)** sowie auf der Seite **Persönlichen Speicher verwalten**. Außerdem bietet Power BI nicht mehr die Schaltfläche **Pro kostenlos testen** in diesem Dialogfeld oder auf der Speicherseite an. Dadurch wird sichergestellt, dass Power BI Ihre Benutzer zuverlässig durch die in Ihrer Organisation definierten Prozesse durch Ihre Lizenzverwaltungslösung führt.
 
-Durch Angeben einer URL für Lizenzierungsanforderungen passen Sie die Ziel-URL der Schaltfläche **Upgrade für Konto ausführen** an, die ein Benutzer ohne Power BI Pro-Lizenz im Dialogfeld **Aktualisieren auf Power BI Pro** sowie auf der Seite **Persönlichen Speicher verwalten** finden kann. Darüber hinaus bietet Power BI in diesem Dialogfeld oder auf dieser Speicherseite die Schaltfläche **Pro kostenlos testen** nicht mehr an, um sicherzustellen, dass Power BI die Benutzer über Ihre Lösung zur Lizenzverwaltung zuverlässig durch die in Ihrer Organisation definierten Prozesse führt.
+![Einstellung mit Ausnahme aktivieren](media/service-admin-portal/powerbi-admin-tenant-settings-gethelp.png)
 
 ### <a name="receive-email-notifications-for-service-outages-or-incidents"></a>E-Mail-Benachrichtigungen bei Dienstausfällen oder Incidents
 
@@ -208,7 +208,7 @@ Die folgende Abbildung zeigt das Menü **Datei** für einen Bericht an, wenn die
 
 Den Benutzer werden basierend auf der Einstellung **Im Web veröffentlichen** unterschiedliche Optionen in der Benutzeroberfläche angezeigt.
 
-|Feature |Für die gesamte Organisation aktiviert |Für die gesamte Organisation deaktiviert |Bestimmte Sicherheitsgruppen   |
+|Feature |Für die gesamte Organisation aktiviert |Für die gesamte Organisation deaktiviert |Sicherheitsgruppen angeben   |
 |---------|---------|---------|---------|
 |**Im Web veröffentlichen** im Menü **Datei** des Berichts.|Für alle aktiviert|Nicht für alle sichtbar|Nur für autorisierte Benutzer oder Gruppen sichtbar|
 |**Einbindungscodes verwalten** unter **Einstellungen**|Für alle aktiviert|Für alle aktiviert|Für alle aktiviert<br><br>Option * **Löschen** nur für autorisierte Benutzer oder Gruppen<br>* **Codes abrufen** für alle aktiviert|

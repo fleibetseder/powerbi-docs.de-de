@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: mshenhav
-ms.openlocfilehash: 22988b08209865e9f1f2c583a30aa40e48c249bc
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7b0a8b1f8b77ba1ee636bc92bb230b7c51e2935b
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879235"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75219374"
 ---
 # <a name="get-notifications-in-the-power-bi-mobile-apps"></a>Abrufen von Benachrichtigungen in den mobilen Power BI-Apps
 Gilt für:
@@ -34,27 +34,23 @@ Sie erhalten Benachrichtigungen bezüglich Ihrer Power BI-Erfahrung direkt im Po
    
    ![Benachrichtigungsbanner](./media/mobile-apps-notification-center/power-bi-mobile-notification-banner.png)
    
-   Oder auf einem iPad:
-   
-   ![Benachrichtigungen](./media/mobile-apps-notification-center/power-bi-ipad-notifications.png)
-   
+
    Sie können [ändern, wie Sie von Power BI benachrichtigt werden](mobile-apps-notification-center.md#change-or-turn-off-notifications-on-your-mobile-device).
-2. Wenn Sie beim Anmelden bei Power BI auf Ihrem Mobilgerät Benachrichtigungen empfangen haben, wird ein gelber Punkt auf der globalen Navigationsschaltfläche ![Punkt auf „Benachrichtigungen“](./media/mobile-apps-notification-center/power-bi-android-menu-notifications-icon.png) (Android) oder auf dem Symbol **Benachrichtigungen** angezeigt. 
-   
-   ![Punkt auf „Benachrichtigungen“](./media/mobile-apps-notification-center/power-bi-windows-10-notifications.png)
-3. Wählen Sie das Symbol „Benachrichtigungen“ ![Symbol „Benachrichtigungen“](./media/mobile-apps-notification-center/power-bi-windows-10-notification-icon.png) (Windows 10) aus.
+2. Wenn Sie Benachrichtigungen erhalten haben, sehen Sie bei der Anmeldung bei Power BI auf Ihrem mobilen Gerät einen gelben Punkt auf der Benachrichtigungsglocke ![Benachrichtigungsglocke](./media/mobile-apps-notification-center/powerbi-alert-tile-notification-icon.png) (iOS und Android) oder auf der globalen Navigationsschaltfläche ![Punkt auf „Benachrichtigungen“](./media/mobile-apps-notification-center/power-bi-iphone-alert-global-nav-button.png) (Windows 10-Geräte). 
+
+3. Tippen Sie auf die Benachrichtigungsglocke ![Benachrichtigungsglocke](./media/mobile-apps-notification-center/powerbi-alert-tile-notification-icon.png) (iOS und Android) oder auf das Symbol der Mitteilungszentrale ![Symbol „Benachrichtigungen“](./media/mobile-apps-notification-center/power-bi-windows-10-notification-icon.png) (Windows 10-Geräte), um die Benachrichtigungen in der Mitteilungszentrale zu sehen.
    
     Die neuesten Benachrichtigungen werden immer ganz oben angezeigt und die ungelesenen hervorgehoben. Benachrichtigungen werden 90 Tage lang aufbewahrt, es sei denn, Sie löschen sie oder erreichen das zulässige Maximum von 100 Benachrichtigungen.
    
    ![iOS-Benachrichtigungsliste](./media/mobile-apps-notification-center/power-bi-iphone-notifications-list.png)
-4. Um eine Benachrichtigung zu verwerfen, tippen Sie darauf, halten Sie sie gedrückt, und wählen Sie **Verwerfen** aus.
+4. Tippen Sie auf die Benachrichtigung, bleiben Sie auf dieser, und wischen Sie diese dann zur Seite, um sie auf iOS- und Android-Geräten zu schließen. Klicken Sie bei Windows 10-Geräten mit der rechten Maustaste darauf, und wählen Sie **Schließen** aus.
 
 ## <a name="change-or-turn-off-notifications-on-your-mobile-device"></a>Ändern oder Deaktivieren von Benachrichtigungen auf Ihrem mobilen Gerät
 Sie können ändern, wie Sie von Power BI benachrichtigt werden.
 
 1. Wechseln Sie auf einem iOS-Gerät zu **Einstellungen** > **Benachrichtigungen**. 
    
-    Wechseln Sie auf einem Android-Telefon zu **Benachrichtigungseinstellungen**.
+    Navigieren Sie auf einem Android-Smartphone zu **Einstellungen** > **Benachrichtigungen**.
    
     Wechseln Sie auf einem Windows-Gerät in **Einstellungen** zu **System** > **Benachrichtigungen**.
 2. Wählen Sie in der Liste der Apps **Power BI** aus. 

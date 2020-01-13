@@ -9,10 +9,10 @@ ms.topic: tutorial
 ms.date: 05/06/2019
 ms.author: maggies
 ms.openlocfilehash: 312b86f9e0c0dda0c9c943520c74286e0458acef
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73859250"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Tutorial: Erkunden des Power BI-Berichtsserver-Webportals auf einem virtuellen Computer
@@ -206,7 +206,7 @@ Im Webportal können Sie paginierte Berichte anzeigen und verwalten sowie den Be
 
     Sie können diesen sowie weitere Parameter hier ändern, ohne dabei die Standardwerte zu verändern.
 
-1. Wählen Sie **Order** **SO48339** > **Bericht anzeigen** aus.
+1. Wählen Sie **Order** **SO48339** > **Bericht anzeigen** aus.
 
 4. Sie sehen, dass dies Seite 1 von 2 ist. Klicken Sie auf den Pfeil nach rechts, um die zweite Seite anzuzeigen. Die Tabelle wird auf dieser Seite fortgesetzt.
 

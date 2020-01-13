@@ -8,13 +8,13 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 03/29/2019
-ms.openlocfilehash: 3791e9cdfd44c62e6f9e9b79f5345d6d2476b0db
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.date: 12/12/2019
+ms.openlocfilehash: dec23aaa4fd54761c62507b8c7a5a36c45c75afd
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74264182"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75223375"
 ---
 # <a name="service-principal-with-power-bi"></a>Dienstprinzipal in Power BI
 
@@ -53,7 +53,7 @@ Sie können einen Dienstprinzipal nur verwenden, wenn Ihre Artefakte und Ressour
 
 Es bestehen Unterschiede, je nachdem, ob Sie für die Authentifizierung einen Dienstprinzipal oder ein standardmäßiges Hauptkonto (Power BI Pro-Lizenz) verwenden. In der untenstehenden Tabelle sehen Sie einige bedeutende Unterschiede:
 
-| aufrufen | Hauptbenutzerkonto <br> (Power BI Pro-Lizenzen) | Dienstprinzipal <br> (Token nur für Anwendungen) |
+| Funktion | Hauptbenutzerkonto <br> (Power BI Pro-Lizenzen) | Dienstprinzipal <br> (Token nur für Anwendungen) |
 |------------------------------------------------------|---------------------|-------------------|
 | Anmeldung beim Power BI-Dienst möglich?  | Ja | Nein |
 | Im Power BI-Verwaltungsportal aktiviert? | Nein | Ja |
@@ -150,7 +150,7 @@ Unten finden Sie eine Anleitung, wie Sie die Objekt-ID des Dienstprinzipals aus 
 
    ![Verwaltete Anwendung in lokalem Verzeichnis](media/embed-service-principal/managed-application-in-local-directory.png)
 
-    > [!Note]
+    > [!NOTE]
     > Die Objekt-ID im Bild oben ist nicht diejenige, die für den Dienstprinzipal verwendet wird.
 
 3. Klicken Sie auf **Eigenschaften**, damit die Objekt-ID angezeigt wird.
@@ -174,6 +174,7 @@ Unten sehen Sie ein Beispielskript, mit dem Sie die Objekt-ID des Dienstprinzipa
 * [Für Ihre Organisation eingebettete Anwendungen](embed-sample-for-your-organization.md) können Dienstprinzipale nicht verwenden.
 * Die Verwaltung von [Datenflüssen](../service-dataflows-overview.md) wird nicht unterstützt.
 * Der Dienstprinzipal unterstützt aktuell überhaupt keine Administrator-APIs.
+* Wenn ein Dienstprinzipal mit einer [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview)-Datenquelle verwendet wird, muss der Dienstprinzipal selbst über eine Azure Analysis Services-Instanzberechtigung verfügen. Zu diesem Zweck eine Sicherheitsgruppe zu verwenden, die den Dienstprinzipal enthält, funktioniert nicht.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

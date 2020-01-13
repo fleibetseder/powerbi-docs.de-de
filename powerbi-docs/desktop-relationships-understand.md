@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 8562d0fd5acee2f18576f0a6b6f2e3d613354f92
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: 0029d275e5180c29e8653f549d8450014362b59b
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74009642"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75304240"
 ---
 # <a name="model-relationships-in-power-bi-desktop"></a>Modellieren von Beziehungen in Power BI Desktop
 
@@ -73,7 +73,7 @@ Beim Konfigurieren einer 1:n- oder n:1-Beziehung wählen Sie den Wert aus, der d
 
 Eine **1:1**-Beziehung bedeutet, dass beide Spalten eindeutige Werte enthalten. Dieser Kardinalitätstyp ist nicht gängig und weist aufgrund der Speicherung redundanter Daten eher auf einen suboptimalen Modellentwurf hin.<!-- For guidance on using this cardinality type, see the [One-to-one relationship guidance](guidance/relationships-one-to-one) article.-->
 
-Eine **m:n**-Beziehung bedeutet, dass beide Spalten doppelte Werte enthalten können. Dieser Kardinalitätstyp wird selten verwendet. Er ist in der Regel nützlich, wenn komplexe Modellanforderungen entworfen werden.<!-- For guidance on using this cardinality type, see the [Many-to-many relationship guidance](guidance/relationships-many-to-many) article.-->
+Eine **m:n**-Beziehung bedeutet, dass beide Spalten doppelte Werte enthalten können. Dieser Kardinalitätstyp wird selten verwendet. Er ist in der Regel nützlich, wenn komplexe Modellanforderungen entworfen werden. Hinweise zur Verwendung dieses Kardinalitätstyps finden Sie unter [Leitfaden zu m:n-Beziehungen](guidance/relationships-many-to-many.md).
 
 > [!NOTE]
 > Der m:n-Kardinalitätstyp wird für Modelle, die für den Power BI-Berichtsserver entwickelt werden, derzeit nicht unterstützt.
@@ -135,7 +135,7 @@ Es gibt mehrere DAX-Funktionen, die für Modellbeziehungen relevant sind. Jede F
 - [USERELATIONSHIP](/dax/userelationship-function-dax): Erzwingt die Verwendung einer bestimmten inaktiven Modellbeziehung.
 - [CROSSFILTER](/dax/crossfilter-function): Ändert die Kreuzfilterrichtung der Beziehung (in „einzeln“ oder „beide“) oder deaktiviert die Filterweitergabe (keine).
 - [COMBINEVALUES](/dax/combinevalues-function-dax): Verbindet zwei oder mehr Textzeichenfolgen zu einer einzigen Textzeichenfolge. Zweck dieser Funktion ist die Unterstützung mehrspaltiger Beziehungen in DirectQuery-Modellen.
-- [TREATAS](/dax/treatas-function): Wendet das Ergebnis eines Tabellenausdrucks als Filter auf Spalten aus einer nicht verknüpften Tabelle an.
+- [TREATAS](/dax/treatas-function): Wendet das Ergebnis eines Tabellenausdrucks als Filter auf Spalten aus einer nicht verknüpften Tabelle an
 - [Übergeordnete und untergeordnete Funktionen](/dax/parent-and-child-functions-dax): Eine Familie verwandter Funktionen, mit denen berechnete Spalten generiert werden können, um eine Über-/Unterordnungshierarchie zu etablieren. Diese Spalten können dann zum Erstellen einer Hierarchie auf fester Ebene verwendet werden.
 
 ## <a name="relationship-evaluation"></a>Beziehungsauswertung
@@ -226,4 +226,5 @@ In der folgenden Liste sind die Beziehungen nach ihrer Filterweitergabe-Leistung
 ## <a name="next-steps"></a>Nächste Schritte
 
 - [Informationen zum Sternschema und dessen Wichtigkeit für Power BI](guidance/star-schema.md)
+- [Leitfaden zu m:n-Beziehungen](guidance/relationships-many-to-many.md)
 - Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

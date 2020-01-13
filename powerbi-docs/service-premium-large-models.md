@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/29/2019
+ms.date: 12/18/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 934f045e2546893c48211729402a773b4bbe2aa0
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 044952c6ce5e3b1550067f9d288f8eab02b868bb
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74696759"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223708"
 ---
 # <a name="large-models-in-power-bi-premium-preview"></a>Große Modelle in Power BI Premium (Vorschauversion)
 
@@ -118,23 +118,4 @@ Berücksichtigen Sie bei der Verwendung großer Modelle die folgenden Einschrän
 - **Multi-Geo-Unterstützung**: Für Files Premium aktivierte Datasets schlagen bei Kapazitäten fehl, bei denen [Multi-Geo](service-admin-premium-multi-geo.md) ebenfalls aktiviert ist.
 
 - **Herunterladen zu Power BI Desktop**: Wenn ein Dataset in Files Premium gespeichert wird, tritt beim Herunterladen als [PBIX](service-export-to-pbix.md)-Datei ein Fehler auf.
-- **Unterstützte Regionen**: Große Modelle werden von den folgenden Regionen unterstützt:
-  - Australien, Osten
-  - Australien, Südosten
-  - USA, Mitte
-  - Asien, Osten
-  - USA, Osten
-  - USA, Osten 2
-  - Japan, Osten
-  - Japan, Westen
-  - Südkorea, Mitte
-  - Südkorea, Süden
-  - USA, Norden-Mitte
-  - Europa, Norden
-  - USA, Süden-Mitte
-  - Asien, Südosten
-  - Vereinigtes Königreich, Süden
-  - Vereinigtes Königreich, Westen
-  - Europa, Westen
-  - USA, Westen
-  - USA, Westen 2
+- **Unterstützte Regionen**: Große Modelle werden in allen Azure-Regionen unterstützt, die Storage Premium-Dateien unterstützen. Weitere Informationen finden Sie unter [Verfügbare Produkte nach Region](https://azure.microsoft.com/global-infrastructure/services/?products=storage).

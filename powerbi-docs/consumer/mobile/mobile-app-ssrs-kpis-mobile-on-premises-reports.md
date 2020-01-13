@@ -1,19 +1,19 @@
 ---
 title: Anzeigen lokaler Berichte und KPIs in den mobilen Power BI-Apps
 description: Die mobile Power BI-Apps bieten touchfähigen, mobilen Livezugriff auf Ihre lokalen Geschäftsdaten in SQL Server Reporting Services und Power BI-Berichtsserver.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/13/2018
-ms.author: mshenhav
-ms.openlocfilehash: 50d44b99d8efea848588ab4c460a469ef6dc780b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/05/2019
+ms.author: painbar
+ms.openlocfilehash: 6020a6cb72be4e8d7be0485c7787fefc097e679d
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879446"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75220053"
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Anzeigen lokaler Berichte und KPIs eines Berichtsservers in den mobilen Power BI-Apps
 
@@ -40,8 +40,9 @@ Stellen Sie dann in den mobilen Power BI-Apps eine Verbindung mit bis zu fünf B
 ## <a name="explore-samples-in-the-mobile-apps-without-a-server-connection"></a>Untersuchen von Beispielen in den mobilen Apps ohne Serververbindung
 Auch wenn Sie keinen Zugriff auf ein Reporting Services-Webportal haben, können Sie trotzdem die Features von mobilen Reporting Services-Berichten und KPIs untersuchen. 
 
-1. Tippen Sie auf die globale Navigationsschaltfläche ![Globale Navigationsschaltfläche](././media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-global-nav-button.png) in der linken oberen Ecke, und tippen Sie anschließend rechts oben auf das Zahnradsymbol ![Zahnradsymbol](././media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-settings-icon.png).
-2. Tippen Sie auf **Reporting Services-Beispiele**, und durchsuchen Sie diese, um mit den beispielhaften KPIs und mobilen Berichten zu interagieren.
+1. Tippen Sie auf Ihr Profilbild in der oberen linken Ecke, und tippen Sie dann auf **Einstellungen** im sich öffnenden Kontobereich.
+
+2. Tippen Sie auf der sich öffnenden Einstellungsseite auf **Reporting Services-Beispiele**, und durchsuchen Sie diese, um mit den beispielhaften KPIs und mobilen Berichten zu interagieren.
    
    ![Beispiele für Reporting Services](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-ssrs-samples.png)
 
@@ -53,36 +54,35 @@ In den mobilen Power BI-Apps können Sie lokale Power BI-Berichte, mobile Report
    
    ![Anmelden bei einem Berichtsserver](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-connect-to-rs-login.png)
    
-   Wenn Sie sich bereits bei der Power BI-App angemeldet haben, tippen Sie auf die globale Navigationsschaltfläche ![Globale Navigationsschaltfläche](././media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-global-nav-button.png), und tippen Sie anschließend auf das Zahnradsymbol ![Zahnradsymbol](././media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-settings-icon.png) in der rechten oberen Ecke.
-3. Tippen Sie auf **Mit Server verbinden**.
+   Wenn Sie sich bereits bei der Power BI-App angemeldet haben, tippen Sie auf Ihr Profilbild in der oberen linken Ecke, und tippen Sie dann auf **Einstellungen** im sich öffnenden Kontobereich.
+3. Tippen Sie auf der sich öffnenden Einstellungsseite auf **Mit Server verbinden**.
    
     ![Mit Server verbinden](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-android-server-sign-in.png)
 
-     Die mobile App muss irgendwie auf den Server zugreifen können. Hierzu gibt es verschiedene Möglichkeiten:
+    Die mobile App muss irgendwie auf den Server zugreifen können. Hierzu gibt es verschiedene Möglichkeiten:
+     * Am einfachsten ist es, wenn sie sich im gleichen Netzwerk befindet oder über VPN verbunden ist.
+     * Für eine Verbindung von außerhalb der Organisation kann auch ein Webanwendungsproxy verwendet werden. Weitere Informationen finden Sie unter [Herstellen einer Verbindung mit Reporting Services mithilfe von OAuth](mobile-oauth-ssrs.md).
+     * Öffnen Sie in der Firewall eine Verbindung (Port).
 
-    - Am einfachsten ist es, wenn sie sich im gleichen Netzwerk befindet oder über VPN verbunden ist.
-    - Für eine Verbindung von außerhalb der Organisation kann auch ein Webanwendungsproxy verwendet werden. Weitere Informationen finden Sie unter [Herstellen einer Verbindung mit Reporting Services mithilfe von OAuth](mobile-oauth-ssrs.md). 
-    - Öffnen Sie in der Firewall eine Verbindung (Port).
-
-1. Geben Sie die Adresse des Servers sowie Ihren Benutzernamen und das Kennwort ein. Verwenden Sie dieses Format für die Adresse des Servers:
+4. Tragen Sie die Serveradresse ein, und geben Sie dem Server einen Anzeigenamen, wenn Sie möchten. Verwenden Sie dieses Format für die Adresse des Servers:
    
      `https://<servername>/reports`
    
-     OR
+     ODER
    
      `https://<servername>/reports`
    
    Geben Sie vor der Verbindungszeichenfolge **http** oder **https** ein.
    
     ![Dialogfeld „Mit Server verbinden“](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-connect-to-server-dialog.png)
-5. (Optional) Unter **Erweiterte Optionen** können Sie einen Anzeigenamen für den Server eingeben.
-6. Jetzt wird im Navigationsbereich der Server angezeigt – in diesem Beispiel lautet dessen Name „power bi report server“.
+5. Nachdem Sie die Serveradresse und den optionalen Anzeigenamen eingegeben haben, tippen Sie auf **Verbinden**, und geben Sie dann Ihren Benutzernamen und Ihr Kennwort ein, wenn Sie dazu aufgefordert werden.
+6. Jetzt wird Ihnen im Kontobereich der Server angezeigt. In diesem Beispiel heißt dieser „Arbeitsserver“.
    
    ![Berichtsserver im Navigationsbereich](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-left-nav-report-server.png)
 
-## <a name="connect-to-an-on-premises-report-server-in-ios"></a>Herstellen einer Verbindung mit einem lokalen Berichtsserver in iOS
+## <a name="connect-to-an-on-premises-report-server-in-ios-or-android"></a>Herstellen einer Verbindung mit einem lokalen Berichtsserver in iOS oder Android
 
-Wenn Sie Power BI in der mobilen iOS-App anzeigen, hat Ihr IT-Administrator womöglich eine App-Konfigurationsrichtlinie definiert. Falls dies der Fall ist, wird die Verbindung mit dem Berichtsserver optimiert, und Sie müssen nicht mehr so viele Informationen bereitstellen, wenn Sie eine Verbindung zu einem Berichtsserver herstellen. 
+Wenn Sie Power BI in der mobilen App für iOS oder Android anzeigen, hat Ihr IT-Administrator womöglich eine App-Konfigurationsrichtlinie definiert. Falls dies der Fall ist, wird die Verbindung mit dem Berichtsserver optimiert, und Sie müssen nicht mehr so viele Informationen bereitstellen, wenn Sie eine Verbindung zu einem Berichtsserver herstellen. 
 
 1. Es wird eine Meldung angezeigt, die besagt, dass Ihre mobile App mit einem Berichtsserver konfiguriert ist. Tippen Sie auf **Anmelden**.
 
@@ -117,7 +117,7 @@ Power BI-Berichte, mobile Reporting Services-Berichte und KPIs werden in den gle
 ## <a name="view-your-favorite-kpis-and-reports"></a>Anzeigen Ihrer bevorzugten KPIs und Berichte
 Sie können KPIs und Berichte im Webportal als Favoriten markieren und dann bequem neben den als Favoriten gespeicherten Power BI-Dashboards in einem Ordner auf Ihrem Mobilgerät anzeigen.
 
-* Tippen Sie auf **Favoriten**.
+* Tippen Sie auf **Favoriten** in der Navigationsleiste.
   
    ![Favoriten im Navigationsbereich](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-faves-pbi-report-server-update.png)
   
@@ -126,7 +126,7 @@ Sie können KPIs und Berichte im Webportal als Favoriten markieren und dann bequ
    ![Power BI-Berichte und -Dashboard auf der Seite „Favoriten“](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-favorites.png)
 
 ## <a name="remove-a-connection-to-a-report-server"></a>Entfernen einer Verbindung mit einem Berichtsserver
-1. Tippen Sie unten im Navigationsbereich auf **Einstellungen**.
+1. Öffnen Sie den Kontobereich, und klicken Sie auf **Einstellungen**.
 2. Tippen Sie auf den Servernamen, dessen Verbindung Sie trennen möchten.
 3. Tippen Sie auf **Server entfernen**.
 

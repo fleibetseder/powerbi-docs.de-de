@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: b7256a04ccdca107ef0cd8e24af8b3170a3d68cc
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 95cf62057cdea001a438f4555aa3384c54efe4b5
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74834722"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75221940"
 ---
 # <a name="extending-visuals-with-report-page-tooltips"></a>Erweitern von Visuals mit QuickInfos für Berichtsseiten
 
@@ -61,15 +61,15 @@ Eine QuickInfo für die Seite wird angezeigt. Sie zeigt bestimmte Attribute und 
 
 ### <a name="add-help"></a>Hinzufügen von Hilfe
 
-Visualheader können so konfiguriert werden, dass für diese QuickInfos für Seiten angezeigt werden. Sie können einer QuickInfo für eine Seite Hilfeinhalte hinzufügen, indem Sie umfangreich formatierte Textfelder verwenden. Sie können auch Bilder und Formen hinzufügen.
+Visualheader können so konfiguriert werden, dass für diese QuickInfos für Seiten angezeigt werden. Sie können einer QuickInfo für eine Seite Hilfedokumentation hinzufügen, indem Sie umfangreich formatierte Textfelder verwenden. Sie können auch Bilder und Formen hinzufügen.
 
 Interessanterweise können für die QuickInfo für die Seite eines Visualheaders auch Schaltflächen, Bilder, Textfelder und Formen angezeigt werden.
 
-Im folgenden Beispiel wird gezeigt, was geschieht, wenn der Benutzer des Berichts mit dem Mauszeiger auf das Symbol für den Visualheader zeigt.
+Im folgenden Beispiel wird gezeigt, was geschieht, wenn der Benutzer des Berichts mit dem Mauszeiger auf das [Symbol für den Visualheader](../desktop-visual-elements-for-reports.md) zeigt.
 
 ![Der Benutzer eines Berichts hat mit dem Mauszeiger auf das Symbol des Visualheaders gezeigt (Fragezeichen). Es wurde eine umfangreich formatierte QuickInfo angezeigt.](media/report-page-tooltips/suggestion-add-help.png)
 
-Eine QuickInfo für die Seite wird angezeigt. Sie zeigt umfangreich formatierten Text an, der die vom Visual angezeigten Measures beschreibt. Die QuickInfo enthält auch eine Form (Linie).
+Eine QuickInfo für die Seite wird angezeigt. Sie stellt umfangreich formatierten Text in vier Textfeldern und eine Linie dar. Die QuickInfo-Seite bietet Unterstützung, indem sie die Akronyme im Visual beschreibt.
 
 ## <a name="recommendations"></a>Empfehlungen
 
@@ -87,5 +87,6 @@ Weitere Informationen zu diesem Artikel finden Sie in den folgenden Ressourcen:
 
 - [Erstellen von QuickInfos basierend auf Berichtsseiten in Power BI Desktop](../desktop-tooltips.md)
 - [Anpassen von QuickInfos in Power BI Desktop](../desktop-custom-tooltips.md)
+- [Use visual elements to enhance Power BI reports (Erweitern von Power BI-Berichten durch Visualelemente)](../desktop-visual-elements-for-reports.md)
 - Guy in a Cube-Video: [Power BI report page tooltip – How to create one in Power BI Desktop (Erstellen von QuickInfos für Power BI-Berichtsseiten in Power BI Desktop)](https://www.youtube.com/watch?v=URTA7JZsAtw)
 - Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

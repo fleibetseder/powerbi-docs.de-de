@@ -1,345 +1,348 @@
 ---
 title: Erste Schritte mit Power BI Desktop
-description: Erste Schritte mit Power BI Desktop
+description: Erste Schritte mit Power BI Desktop
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 12/09/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: e533313e20c4e1f994c2ae3d1e552170aef2cbd2
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b32eee568ba560e95899cf0965a11f3bb037aed6
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73868018"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75222453"
 ---
-# <a name="getting-started-with-power-bi-desktop"></a>Erste Schritte mit Power BI Desktop
-Willkommen beim Handbuch **Erste Schritte mit Power BI Desktop**. Dieser kurze Überblick über Power BI Desktop soll Sie mit der Funktionsweise vertraut machen und die Möglichkeiten aufzeigen, die Ihnen in Power BI Desktop zur Verfügung stehen. Dadurch sind Sie rasch in der Lage, neben ansprechenden Berichten auch robuste Datenmodelle zu erstellen, die Ihr Business Intelligence-Potenzial erweitern. 
+# <a name="get-started-with-power-bi-desktop"></a>Erste Schritte mit Power BI Desktop
+Willkommen beim Leitfaden „Erste Schritte mit Power BI Desktop“. Im Folgenden wird veranschaulicht, wie Power BI Desktop funktioniert, wofür dieser Dienst verwendet werden kann und wie Sie stabile Datenmodelle und aussagekräftige Berichte erstellen, um Ihre Business Intelligence auszubauen.
 
-Gefallen Ihnen Videos besser als Text? Gerne können Sie sich auch unser [Video „Erste Schritte“ ansehen](desktop-videos.md). Wenn Sie parallel zum Video entsprechende Beispieldaten anzeigen möchten, können Sie die [Excel-Beispielarbeitsmappe herunterladen](https://go.microsoft.com/fwlink/?LinkID=521962).
+Wenn Sie sich nur einen groben Überblick für die Funktions- und Verwendungsweise von Power BI Desktop machen möchten, reicht es, wenn Sie sich die einzelnen Abbildungen in diesem Artikel ansehen. Dafür benötigen Sie nur wenige Minuten. Ein tiefgreifendes Verständnis gewinnen Sie, wenn Sie jeden Abschnitt sorgfältig lesen, die einzelnen Schritte durchführen und Ihre eigene Power BI Desktop-Datei erstellen, die Sie anschließend im [Power BI-Dienst](https://app.powerbi.com/) veröffentlichen und für andere freigeben können.
 
-![](media/desktop-getting-started/pbi_gettingstartedsplash_resized.png)
+![Power BI Desktop-Bericht](media/desktop-getting-started/hero.png)
 
-Mit Power BI Desktop erstellen Sie eine Sammlung von Abfragen, Datenverbindungen und Berichten, die Sie ganz einfach für andere Personen freigeben können. Power BI Desktop setzt auf bewährten Microsoft-Technologien (leistungsfähige Abfrage-Engine, Datenmodellierung und Visualisierungen) auf und arbeitet online nahtlos mit dem [**Power BI-Dienst**](https://app.powerbi.com/) zusammen.
-
-Dank der Kombination von **Power BI Desktop** (hier erstellen Analysten und andere Personen leistungsfähige Datenverbindungen, Modelle und Berichte) mit dem [**Power BI-Dienst**](https://preview.powerbi.com/) (hier werden Berichte aus Power BI Desktop freigegeben, damit Benutzer diese anzeigen und bearbeiten können) lassen sich neue Erkenntnisse aus der Welt der Daten leichter modellieren, erstellen, freigeben und ergänzen.
-
-Datenanalysten finden in Power BI Desktop ein leistungsfähiges, flexibles und hochverfügbares Werkzeug, mit dem sie nicht nur einen Zugang zur Welt der Daten erhalten, sondern diese auch strukturieren können. Mit Power BI Desktop lassen sich robuste Modelle erstellen und gut strukturierte Berichte anfertigen.
-
-## <a name="how-to-use-this-guide"></a>Verwendung dieses Handbuchs
-Sie können dieses Handbuch auf verschiedene Art und Weise verwenden. Sie können sich einen kurzen Überblick verschaffen oder alle Abschnitte sorgfältig studieren, um die Funktionsweise von Power BI Desktop in allen Aspekten zu verstehen.
-
-Wenn Sie in Eile sind, können Sie dieses Handbuch in ein paar Minuten durchblättern und erhalten durch die visuellen Darstellungen einen fundierten Einblick in die Funktionsweise und Verwendung von Power BI Desktop. Dieses Handbuch besteht überwiegend aus Screenshots, welche die Funktionsweise von Power BI Desktop verdeutlichen.
-
-Ein tiefgreifendes Verständnis gewinnen Sie, wenn Sie jeden Abschnitt sorgfältig lesen, die Schritte nachvollziehen und Ihre eigene Power BI Desktop-Datei erstellen, die Sie anschließend im **Power BI-Dienst** veröffentlichen und für andere freigeben können.
-
->[!NOTE]
->[**Power BI-Berichtsserver**](report-server/get-started.md) ist eine separate und spezialisierte Version von **Power BI** für Kunden, bei denen Daten und Berichte nur lokal gespeichert werden sollen. Für die Verwendung mit dieser besonderen Version gibt es auch eine separate und spezialisierte Version von **Power BI Desktop**: **Power BI Desktop für Power BI-Berichtsserver**. Diese kann nur mit der Berichtsserver-Version von Power BI verwendet werden. In diesem Artikel wird die Standardversion von **Power BI Desktop** beschrieben.
-
+Sie können sich auch das Video [Erste Schritte mit Power BI Desktop](https://www.youtube.com/watch?v=Qgam9M8I0xA) ansehen und die Excel-Arbeitsmappe mit [Finanzbeispielen](https://go.microsoft.com/fwlink/?LinkID=521962) herunterladen, um dem Video besser folgen zu können.
 
 ## <a name="how-power-bi-desktop-works"></a>So funktioniert Power BI Desktop
-Mit Power BI Desktop können Sie *eine Verbindung zu Daten herstellen* (in der Regel aus mehreren Datenquellen), *die Daten strukturieren* (mit Abfragen, aus denen sich aufschlussreiche, überzeugende Datenmodelle erstellen lassen) und mit diesen Modellen *Berichte erstellen* (die andere Personen nutzen, als Grundlage verwenden und freigeben können).
+Power BI Desktop gibt Ihnen folgende Möglichkeiten:
+1. Herstellen einer Verbindung mit Daten, einschließlich mehrerer Datenquellen
+1. Strukturieren der Daten mithilfe von Abfragen, um aussagekräftige, überzeugende Datenmodelle zu schaffen
+1. Verwenden von Datenmodellen zum Erstellen von Visualisierungen und Berichten 
+1. Freigeben von Berichtsdateien, die andere nutzen, erweitern und ebenfalls freigeben können Sie können Power BI Desktop-Dateien ( *.pbix*) wie alle anderen Dateien freigeben, aber am besten laden Sie sie im [Power BI-Dienst](https://preview.powerbi.com/) hoch. 
 
-Wenn Sie die Schritte – Verbinden, Strukturieren und Berichten – zu Ihrer Zufriedenheit abgeschlossen haben, können Sie Ihre Arbeit im Power BI Desktop-Dateiformat (.pbix) speichern. Power BI Desktop-Dateien können wie alle anderen Dateien freigegeben werden. Die überzeugendste Möglichkeit für ein Freigeben von Power BI Desktop-Dateien ist jedoch das Hochladen (Freigeben) über den [**Power BI-Dienst**](https://preview.powerbi.com/). 
+In Power BI Desktop sind bewährte Microsoft-Technologien für Abfrage-Engines, die Datenmodellierung sowie die Visualisierung integriert. Nicht nur Datenanalysten können mit diesem Dienst Sammlungen von Abfragen, Datenverbindungen, Modellen und Berichten erstellen und diese problemlos für andere freigeben. Durch die Kombination aus Power BI Desktop und dem Power BI-Dienst können neue Erkenntnisse aus der Welt der Daten einfacher modelliert, gewonnen, geteilt und erweitert werden.
 
 Power BI Desktop erfasst und optimiert an zentraler Stelle, was sonst meist weit verstreut und verbindungslos ist und vereinfacht damit den mühseligen Prozess beim Entwerfen und Erstellen von Business Intelligence-Repositorys und -Berichten.
+Sind Sie bereit, Power BI Desktop auszuprobieren? Lassen Sie uns loslegen!
 
-Sind Sie bereit, Power BI Desktop auszuprobieren? Fangen wir an.
-
-
+> [!NOTE]
+> Für Daten und Berichte, die lokal gespeichert werden müssen, steht eine separate, spezielle Version von Power BI zur Verfügung: der [Power BI-Berichtsserver](report-server/get-started.md). Der Power BI-Berichtsserver verwendet eine separate und spezialisierte Version von Power BI Desktop: Power BI Desktop für Power BI-Berichtsserver. Diese kann nur mit der Berichtsserver-Version von Power BI verwendet werden. In diesem Artikel wird die Standardversion von Power BI Desktop beschrieben.
 
 ## <a name="install-and-run-power-bi-desktop"></a>Installieren und Ausführen von Power BI Desktop
-Sie können Power BI Desktop aus dem **Power BI**-Dienst herunterladen. Markieren Sie dazu das **Zahnradsymbol**, und wählen Sie dann **Power BI Desktop** aus.
+Navigieren Sie zur entsprechenden [Downloadseite](https://powerbi.microsoft.com/desktop), um Power BI Desktop herunterzuladen, und klicken Sie auf **Download Free** (Kostenlos herunterladen). Alternativ finden Sie unter [Download- oder Sprachoptionen anzeigen](https://www.microsoft.com/download/details.aspx?id=58494) weitere Downloadoptionen. 
 
-![](media/desktop-getting-started/gsg_download.png)
+Außerdem können Sie Power BI Desktop über den Power BI-Dienst herunterladen. Klicken Sie erst in der oberen Menüleiste auf das Symbol zum **Herunterladen** und anschließend auf **Power BI Desktop**.
 
-Power BI Desktop wird als Anwendung installiert und auf dem Desktop ausgeführt.
+![Power BI Desktop über den Power BI-Dienst herunterladen](media/desktop-getting-started/gsg_download.png)
 
-![](media/desktop-getting-started/designer_gsg_install.png)
+Klicken Sie auf der Seite „Microsoft Store“ auf **Get** (Herunterladen), und bearbeiten Sie nacheinander alle Eingabeaufforderungen, um Power BI Desktop auf Ihrem Computer zu installieren. Starten Sie Power BI Desktop über das Windows-**Startmenü** oder über das entsprechende Symbol auf der Windows-Taskleiste.
 
-Wenn Sie Power BI Desktop ausführen, wird ein *Willkommen* -Bildschirm angezeigt.
+Wenn Power BI Desktop zum ersten Mal gestartet wird, wird der **Willkommensbildschirm** angezeigt.
 
-![](media/desktop-getting-started/designer_gsg_startsplashscreen.png)
+Über den **Willkommensbildschirm** können Sie **Daten abrufen**, **zuletzt verwendete Quellen** abrufen, zuletzt verwendete Berichte öffnen, **andere Berichte öffnen** oder andere Links auswählen. Außerdem können Sie auswählen, ob der **Willkommensbildschirm** immer beim Start angezeigt werden soll. Klicken Sie auf das entsprechende Symbol, um den **Willkommensbildschirm** zu schließen.
 
-Direkt vom Bildschirm **Willkommen** aus können Sie (mithilfe der Verknüpfungen im linken Bereich) **Daten abrufen**, **Zuletzt verwendete Quellen** anzeigen oder **Andere Berichte** *öffnen*. Wenn Sie den Bildschirm schließen (durch Klicken auf **x** in der oberen rechten Ecke), wird die Ansicht **Bericht** von Power BI Desktop angezeigt.
+![Begrüßungsbildschirm von Power BI Desktop](media/desktop-getting-started/designer_gsg_startsplashscreen.png)
 
-![](media/desktop-getting-started/designer_gsg_blankreport.png)
+Auf der linken Seite von Power BI Desktop finden Sie Symbole zu den drei Power BI Desktop-Ansichten: **Bericht**, **Daten**und **Beziehungen**, von oben nach unten. Die aktuelle Ansicht ist an der gelben Leiste auf der linken Seite zu erkennen. Sie können die Ansichten ändern, indem auf eins der Symbole klicken. 
 
-Power BI Desktop weist drei Ansichten auf: Die Ansicht **Bericht**, die Ansicht **Daten** und die Ansicht **Beziehungen**. Power BI Desktop enthält außerdem den **Abfrage-Editor**, der in einem separaten Fenster geöffnet wird. Im **Abfrage-Editor**können Sie Abfragen erstellen und Daten transformieren, anschließend das weiter eingeschränkte Datenmodell in Power BI Desktop laden und Berichte erstellen.
+![Die drei Symbole zu den Power BI Desktop-Ansichten](media/desktop-getting-started/designer_gsg_viewtypes.png)
 
-Auf dem folgenden Bildschirm sind die Symbole der drei Ansichten auf der linken Seite von Power BI Desktop zu sehen: **Bericht**, **Daten**und **Beziehungen**, von oben nach unten. Die aktuelle Ansicht wird durch die gelbe Leiste am linken Rand angezeigt. In diesem Fall wird aktuell die Ansicht **Bericht** angezeigt. Sie können die Ansicht wechseln, indem Sie eines dieser drei Symbole auswählen.
+Die Standardansicht ist die Ansicht **Bericht**. 
 
-![](media/desktop-getting-started/designer_gsg_viewtypes.png)
+![Power BI Desktop-Ansicht „Bericht“](media/desktop-getting-started/designer_gsg_blankreport.png)
 
-Nach der Installation von Power BI Desktop können Sie Verbindungen zu Daten herstellen, die Daten strukturieren und Berichte erstellen (in der Regel in dieser Reihenfolge). In den folgenden Abschnitten werden diese Arbeitsschritte nacheinander vorgestellt.
+Power BI Desktop umfasst außerdem den **Power Query-Editor** , der in einem separaten Fenster geöffnet wird. Im **Power Query-Editor** können Sie Abfragen erstellen und Daten transformieren sowie anschließend das verfeinerte Datenmodell in Power BI Desktop laden, um Berichte zu erstellen.
 
 ## <a name="connect-to-data"></a>Verbinden mit Daten
-Nachdem Sie Power BI Desktop installiert haben, ist der Weg zu der ständig wachsenden Welt der Daten frei. Im Fenster „Abfrage“ stehen *alle möglichen Arten* von Datenquellen zur Verfügung. Aus der folgenden Abbildung geht hervor, wie Sie eine Verbindung zu Daten herstellen. Wählen Sie dazu zuerst das Menüband **Start** und dann **Daten abrufen \> Mehr**aus.
+Sobald Sie Power BI Desktop installiert haben, erhalten Sie Zugriff zur ständig wachsenden Welt der Daten. Sie können die verschiedenen verfügbaren Arten von Datenquellen anzeigen lassen, indem Sie auf der Registerkarte **Home** von Power BI Desktop auf **Daten abrufen** > **Mehr** klicken und im Fenster **Daten abrufen** die Liste **aller** Datenquellen durchscrollen. In diesem kurzen Überblick erhalten Sie Informationen dazu, wie Sie eine Reihe unterschiedlicher **Webdatenquellen** miteinander verbinden.
 
- ![](media/desktop-getting-started/getdatavidsmall.gif)
+![Webdatenquellen über „Daten abrufen“ auswählen ](media/desktop-getting-started/getdataweb.png)
 
-Für diesen kurzen Überblick verbinden wir eine Reihe unterschiedlicher Datenquellen aus dem **Web** .
+Angenommen, Sie sind Datenanalyst und arbeiten für einen Sonnenbrillenhändler. Sie möchten Ihrem Kunden dabei helfen, den Verkauf von Sonnenbrillen auf Orte auszurichten, in denen besonders häufig die Sonne scheint. In dem Artikel [Best and worst states for retirement](https://www.bankrate.com/retirement/best-and-worst-states-for-retirement/) (Die besten und schlechtesten Bundesstaaten für den Ruhestand) der Website Bankrate.com finden Sie interessante Daten zu diesem Thema.
 
-Stellen Sie sich vor, Sie gehen in Pension und möchten dort leben, wo oft die Sonne scheint, wo die Steuern günstig sind und wo eine gute Versorgung im Krankheitsfall gewährleistet ist. Vielleicht sind Sie aber auch ein Datenanalyst, der diese Informationen benötigt, um seinen Kunden zu helfen. Vielleicht möchten Sie aber Ihren Sonnenbrillenhändler dabei unterstützen, seinen Vertrieb auf die Gebiete auszurichten, in denen die Sonne besonders häufig scheint.
+Klicken Sie auf der Registerkarte **Home** in Power BI Desktop auf **Daten abrufen** > **Web**, um eine Verbindung mit einer Webdatenquelle herzustellen. 
 
-In allen drei Fällen hält die folgende Webressource u.a. Daten zu diesen Themenbereichen bereit:
+![Webdatenquelle auswählen](media/desktop-getting-started/gsg_syw_2.png)
 
-[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+Fügen Sie in das Dialogfeld **Aus dem Web** die Adresse *https:\//www.bankrate.com/retirement/best-and-worst-states-for-retirement/* in das **URL**-Feld ein, und klicken Sie anschließend auf **OK**. 
 
-Wählen Sie **Daten abrufen \> Web** aus, und fügen Sie die Adresse ein.
+![Webadresse in das Dialogfeld „Aus dem Web“ einfügen](media/desktop-getting-started/gettingstarted_8.png)
 
- ![](media/desktop-getting-started/gettingstarted_8.png)
+Wenn Sie dazu aufgefordert werden, klicken Sie erst auf dem Bildschirm **Auf Webinhalt zugreifen** und anschließend auf **Verbinden**, um anonymen Zugriff zu verwenden. 
 
-Mit der Auswahl von **OK**beginnt die **Abfragefunktion** von Power BI Desktop ihre Arbeit. Die Abfragefunktion kontaktiert die Webressource und gibt im Fenster **Navigator** die auf der Webseite gefundenen Ergebnisse zurück. In diesem Fall hat sie eine Tabelle (*Table 0*) und das allgemeine Webdokument gefunden. Da wir an der Tabelle interessiert sind, wählen wir diese in der Liste aus. Im Fenster **Navigator** wird eine Vorschau angezeigt.
+Dann startet die Abfragefunktion von Power BI Desktop und die Webressource wird kontaktiert. Im Fenster **Navigator** werden die Informationen angezeigt, die der Webseite entnommen wurden. In diesem Fall werden eine Tabelle mit dem Namen **Ranking of best and worst states for retirement** (Rangfolge der besten und schlechtesten Bundesstaaten für den Ruhestand) sowie ein Dokument zurückgegeben. Da Sie an der Tabelle interessiert sind, klicken Sie auf diese, um eine Vorschau anzuzeigen.
 
- ![](media/desktop-getting-started/datasources_fromnavigatordialog.png)
+An dieser Stelle können Sie auf **Laden** klicken, um die Tabelle zu laden, oder die Option **Daten transformieren** auswählen, um vor dem Laden Änderungen an der Tabelle vorzunehmen.
 
-An dieser Stelle können wir vor dem Laden der Tabelle die Abfrage bearbeiten (durch Auswahl von **Bearbeiten** unten im Fenster) oder die Tabelle direkt laden.
+![Vorschau der Tabelle, die der Webseite entnommen wurde](media/desktop-getting-started/datasources_fromnavigatordialog.png)
 
-Bei der Auswahl von **Bearbeiten** wird im Abfrage-Editor eine repräsentative Ansicht der Tabelle angezeigt. Der Bereich **Abfrageeinstellungen** wird angezeigt. (Sollte der Bereich nicht angezeigt werden, wählen Sie im Menüband die Option **Ansicht** und dann **Anzeigen \> Abfrageeinstellungen** aus, um den Bereich **Abfrageeinstellungen**anzuzeigen). So sieht die Ansicht aus.
+Wenn Sie auf **Daten transformieren** klicken, startet der Power Query-Editor, und es wird eine repräsentative Ansicht der Tabelle angezeigt. Der Bereich **Abfrageeinstellungen** befindet sich auf der rechten Seite. Diesen können Sie jederzeit abrufen, indem Sie auf der Registerkarte **Ansicht** des Power Query-Editors auf **Abfrageeinstellungen** klicken. 
 
- ![](media/desktop-getting-started/designer_gsg_editquery.png)
+![Power Query-Editor mit Abfrageeinstellungen](media/desktop-getting-started/designer_gsg_editquery.png)
 
 Weitere Informationen zum Herstellen einer Verbindung mit Daten finden Sie unter [Verbinden mit Daten in Power BI Desktop](desktop-connect-to-data.md).
 
-> [!NOTE]
-> Die Tabellendaten, auf die in diesem Artikel verwiesen wird, können sich mit der Zeit ändern. Somit können auch die durchzuführenden Schritte von den folgenden abweichen, sodass Sie als Teil des Lernspaßes kreativ werden und die Schritte und Ergebnisse anpassen müssen. 
-
-Im nächsten Abschnitt werden die Daten angepasst, damit sie unseren Anforderungen entsprechen. Der Vorgang, bei dem verbundene Daten angepasst werden, wird als *Strukturieren* der Daten bezeichnet.
-
-## <a name="shape-and-combine-data"></a>Strukturieren und Kombinieren von Daten
-Nachdem wir die Verbindung zu einer Datenquelle hergestellt haben, müssen wir die Daten an unsere Anforderungen anpassen. Anpassen bedeutet manchmal auch *Transformieren* der Daten. So müssen beispielsweise Spalten oder Tabellen umbenannt, Text in Zahlen umgewandelt, Zeilen entfernt oder die erste Zeile als Überschrift festgelegt werden.
-
-Im Abfrage-Editor von Power BI Desktop kommen neben den im Menüband verfügbaren Aufgaben häufig Kontextmenüs (Rechtsklick) zum Einsatz. Die meisten Optionen, die im Menüband **Transformieren** zur Auswahl stehen, können auch über Klicken auf ein Element (z. B. eine Spalte) mit der rechten Maustaste und Auswählen aus dem Kontextmenü aufgerufen werden.
-
 ## <a name="shape-data"></a>Strukturieren von Daten
-Wenn Sie im **Abfrage-Editor** Daten strukturieren, geben Sie schrittweise Anweisungen vor (die der **Abfrage-Editor** dann für Sie ausführt), um die Daten beim Laden und Darstellen im **Abfrage-Editor** anzupassen. Die ursprüngliche Datenquelle wird davon nicht berührt. Angepasst bzw. *strukturiert* wird nur diese spezifische Ansicht der Daten.
+Nachdem Sie die Verbindung zu einer Datenquelle hergestellt haben, können Sie die Daten Ihren Anforderungen entsprechend anpassen. Wenn die Daten *strukturiert* werden sollen, können Sie dem Power Query-Editor ausführliche Anweisungen zum Anpassen von Daten beim Laden und Darstellen geben. Das Strukturieren von Daten hat keine Auswirkungen auf die ursprüngliche Datenquelle, sondern nur auf die jeweilige Datenansicht. 
 
-Die Schritte, die Sie angeben (z. B. Umbenennen einer Tabelle, Transformieren eines Datentyps oder Löschen von Spalten), werden vom **Abfrage-Editor** aufgezeichnet und bei jeder Verbindung zu dieser Datenquelle ausgeführt, sodass die Daten stets in der gewünschten Art „strukturiert“ sind. Dieser Vorgang erfolgt jedes Mal, wenn Sie die Abfrage in Power BI Desktop verwenden, aber auch jedes Mal, wenn jemand auf die freigegebene Abfrage zugreift, z. B. im **Power BI-Dienst**. Diese Schritte werden der Reihe nach im Bereich **Abfrageeinstellungen** unter **Angewendete Schritte** aufgezeichnet.
+> [!NOTE]
+> Die in diesem Leitfaden verwendeten Tabellendaten können sich im Laufe der Zeit ändern. Somit können auch die durchzuführenden Schritte abweichen, weshalb Ihre Kreativität im Hinblick auf die Anpassung der einzelnen Schritte und Ergebnisse gefragt ist. 
 
-Die folgende Abbildung zeigt den Bereich **Abfrageeinstellungen** für eine strukturierte Abfrage. In den nächsten Abschnitten werden die Schritte im Einzelnen erläutert.
+Unter Umständen werden Daten beim Strukturieren *transformiert*, z. B. werden Spalten oder Tabellen umbenannt, Zeilen oder Spalten entfernt oder Datentypen geändert. Der Power Query-Editor erfasst diese Schritte sequenziell im Bereich **Abfrageeinstellungen** unter **Angewendete Schritte**. Bei jeder Verbindung dieser Abfrage mit der Datenquelle werden diese Schritte ausgeführt, damit die Daten stets Ihren Angaben entsprechend strukturiert werden. Dieser Vorgang wird jedes Mal ausgeführt, wenn Sie die Abfrage in Power BI Desktop verwenden oder wenn jemand auf die freigegebene Abfrage zugreift, z. B. im Power BI-Dienst. 
 
- ![](media/desktop-getting-started/shapecombine_querysettingsfinished.png)
+Beachten Sie, dass unter **Angewendete Schritte** in den **Abfrageeinstellungen** bereits einige Schritte angegeben sind. Sie können auf die einzelnen Schritte klicken, um deren jeweilige Auswirkungen im Power Query-Editor anzuzeigen. Sie haben zuerst eine Webquelle angegeben und dann eine Vorschau der Tabelle im Fenster **Navigator** anzeigen lassen. Im dritten Schritt (**Geänderter Typ**) hat Power BI ganze Zahlen beim Import erkannt und den ursprünglichen *Datentyp* aus dem **Webtext** in **Whole numbers** (Ganze Zahlen) geändert. 
 
-Wir wenden uns wieder den Daten zu, die wir für einen zukünftigen Pensionär durch Verbinden mit einer Webdatenquelle ermittelt haben, und strukturieren diese Daten so, dass sie unseren Anforderungen entsprechen.
+![Bereich „Abfrageeinstellungen“ mit drei angewendeten Schritten](media/desktop-getting-started/designer_gsg_appliedsteps_changedtype.png)
 
-Zunächst wurden die meisten Bewertungen als ganze Zahlen in den **Abfrage-Editor** geladen. Ausnahme war eine Spalte, die Text und Zahlen enthielt und daher nicht automatisch konvertiert wurde. Wir benötigen die Daten jedoch als Zahlen. Kein Problem: Klicken Sie einfach mit der rechten Maustaste auf die Spaltenüberschrift, und wählen Sie **Typ ändern\>> Ganze Zahl** aus, um den Datentyp zu ändern. Wenn Sie mehr als eine Spalte auswählen müssen, wählen Sie zuerst eine Spalte aus, drücken Sie die **UMSCHALTTASTE**, und wählen Sie dann mit gedrückter Taste weitere angrenzende Spalten aus. Klicken Sie anschließend mit der rechten Maustaste auf eine Spaltenüberschrift, um alle ausgewählten Spalten zu ändern. Sie können auch **STRG** verwenden, um nicht benachbarte Spalten auszuwählen.
+Wenn Sie einen Datentyp ändern müssen, wählen Sie die zu ändernde(n) Spalte(n) aus. Halten Sie die **UMSCHALTTASTE** gedrückt, um mehrere nebeneinander liegende Spalten auszuwählen, oder drücken Sie **STRG**, um Spalten auszuwählen, die nicht nebeneinander liegen. Klicken Sie entweder erst mit der rechten Maustaste auf eine Spaltenüberschrift und anschließend mit der linken auf **Typ ändern**, oder klappen Sie auf der Registerkarte **Home** in der Gruppe **Transformieren** das Dropdownmenü neben **Datentyp** auf, und wählen Sie einen neuen Datentyp aus.
 
- ![](media/desktop-getting-started/designer_gsg_changedatatype.png)
+![Ändern des Datentyps](media/desktop-getting-started/designer_gsg_changedatatype.png)
 
-Sie können auch Spalten von Text in Überschriften ändern bzw. *transformieren*, indem Sie das Menüband **Transformieren** verwenden. Die Abbildung zeigt das Menüband **Transformieren**. Der Pfeil weist auf die Schaltfläche **Datentyp**, mit der Sie den aktuellen Datentyp in einen anderen Typ transformieren können.
+> [!NOTE]
+> Der Power Query-Editor in Power BI Desktop verwendet das Menüband oder die Kontextmenüs für verfügbare Tasks. Die meisten Tasks, die auf den Registerkarten **Home** oder **Transformieren** im Menüband zur Auswahl stehen, können auch über einen Rechtsklick auf ein Element und Auswählen aus dem Kontextmenü aufgerufen werden.
 
- ![](media/desktop-getting-started/shapecombine-changetype-b.png)
+Jetzt können Sie Ihre eigenen Änderungen und Transformationen auf die Daten anwenden und unter **Angewendete Schritte** abrufen. 
 
-Beachten Sie, dass die vorgenommenen Änderungen in den **Abfrageeinstellungen**unter **Angewendete Schritte** angezeigt werden. Wenn Sie einen Schritt aus dem Strukturierungsprozess entfernen möchten, wählen Sie einfach nur den jeweiligen Schritt aus und klicken dann auf das **X** links neben dem Schritt.
+Wenn Sie beispielsweise für den Verkauf von Sonnenbrillen besonders an einer Rangfolge entsprechend dem Wetter interessiert sind, können Sie die Tabelle anhand der Spalte **Weather** (Wetter) sortieren anstatt nach der **Gesamtbewertung**. Klappen Sie das Dropdownmenü neben der Spaltenüberschrift **Weather** (Wetter) auf, und klicken Sie auf **Aufsteigend sortieren**. Die Daten werden jetzt anhand der Wetterwerte sortiert, und unter **Angewendete Schritte** wird der Schritt **Sortierte Zeilen** angezeigt. 
 
- ![](media/desktop-getting-started/designer_gsg_appliedsteps_changedtype.png)
+![Zeilen aufsteigend sortieren](media/desktop-getting-started/shapecombine-changetype-b.png)
 
-Wir müssen aber noch ein paar Änderungen vornehmen, um die gewünschte Abfrage zu erhalten.
+Da es für Sie uninteressant ist, Sonnenbrillen in den Bundesstaaten mit dem schlechtesten Wetter zu verkaufen, möchten Sie diese Bundesstaaten aus der Tabelle entfernen. Klicken Sie dafür auf der Registerkarte **Home** in der Gruppe **Zeilen verringern** auf **Zeilen entfernen** > **Untere Zeilen entfernen**. Geben Sie dann in das Dialogfeld **Untere Zeilen entfernen** *10* ein, und klicken Sie auf **OK**. 
 
-* *Entfernen der ersten Spalte* – Diese Spalte ist nicht erforderlich. Sie enthält nur überflüssige Zeilen mit dem Text „Check out how your state ranks for retirement“, ein Artefakt aufgrund der Tatsache, dass es sich um eine webbasierte Tabelle handelt.
+![Untere Zeilen entfernen](media/desktop-getting-started/pbi_gsg_getdata3.png)
 
-<!-- -->
+Die zehn Zeilen mit den schlechtesten Wetterwerten werden daraufhin aus der Tabelle entfernt, und unter **Angewendete Schritte** wird der Schritt **Entfernte untere Zeilen** angezeigt.
 
-* *Beheben einiger Fehler* – Auf der Webseite gibt es eine Spalte mit Text und Zahlen (bei einigen Bundesstaaten sind die Zahlen mit dem Text „(tie)“ versehen). Das funktioniert zwar auf der Website, nicht aber bei unserer Datenanalyse. Dieses Problem ist (in diesem Fall) leicht zu beheben und verdeutlicht einige interessante Funktionen und Möglichkeiten des **Abfrage-Editors** und der **angewendeten Schritte**.
+Außerdem enthält die Tabelle für Ihren Geschmack zu viele Informationen, und Sie möchten die folgenden Spalten entfernen: **Affordability** (Erschwinglichkeit), **Crime** (Kriminalität), **Culture** (Kultur) und **Wellness**. Wählen Sie dafür die Überschriften der Spalten aus, die Sie entfernen möchten. Halten Sie die **UMSCHALTTASTE** gedrückt, um mehrere nebeneinander liegende Spalten auszuwählen, oder drücken Sie **STRG**, um Spalten auszuwählen, die nicht nebeneinander liegen. 
 
-<!-- -->
+Klicken Sie dann auf der Registerkarte **Home** in der Gruppe **Spalten verwalten** auf **Spalten entfernen**. Alternativ können Sie auch mit der rechten Maustaste auf eine der Spaltenüberschriften klicken und anschließend im Menü auf die Option **Spalten entfernen** klicken. Dann werden die ausgewählten Spalten entfernt, und unter **Angewendete Schritte** wird der Schritt **Entfernte Spalten** angezeigt.
 
-* *Ändern des Tabellennamens* – **Table 0** ist kein sinnvoller Deskriptor, er kann aber sehr einfach geändert werden.
+![Spalten entfernen](media/desktop-getting-started/pbi_gsg_getdata3a.png)
 
-Jeder dieser Schritte wird unter **[Strukturieren und Kombinieren von Daten in Power BI Desktop](desktop-shape-and-combine-data.md)** veranschaulicht. Wahlweise können Sie diese Seite aufrufen oder mit diesem Dokument fortfahren, um zu erfahren, was als Nächstes passiert. Im nächsten Abschnitt wird der Vorgang fortgesetzt, nachdem die obigen Änderungen angewendet wurden.
+Möglicherweise fällt Ihnen dann auf, dass die Spalte **Affordability** (Erschwinglichkeit) für den Verkauf von Sonnenbrillen doch relevant sein könnte. Deshalb möchten Sie diese Spalte wieder hinzufügen. Im Bereich **Angewendete Schritte** können Sie ganz einfach Ihren letzten Schritt rückgängig machen, indem Sie auf das neben dem Schritt angezeigte **X** klicken. Wiederholen Sie nun den Schritt, und wählen Sie dabei nur die Spalten aus, die Sie wirklich löschen möchten. Wenn Sie mehr Flexibilität wünschen, können Sie jede Spalte einzeln in separaten Schritten löschen. 
+
+Sie können auf jeden Schritt im Bereich **Angewendete Schritte** klicken und diesen löschen, umbenennen, in der Sequenz nach oben oder unten verschieben, oder anschließende Schritte hinzufügen oder löschen. Wenn es sich um einen Zwischenschritt handelt, zeigt Power BI Desktop eine Warnung an, wenn die Änderung Auswirkungen auf spätere Schritte haben und Ihre Abfrage unterbrechen kann.  
+
+![Angewendete Schritte ändern](media/desktop-getting-started/designer_gsg_install.png)
+
+Wenn Sie die Tabelle beispielsweise nicht mehr anhand der Spalte **Weather** (Wetter) sortieren möchten, können Sie den Schritt **Sortierte Zeilen** auswählen. Dann zeigt Power BI Desktop eine Warnung an, um Sie darüber zu informieren, dass Ihre Abfrage unterbrochen werden könnte, wenn Sie diesen Schritt löschen. Sie haben die untersten zehn Zeilen entfernt, nachdem Sie die Tabelle anhand der Wetterwerte sortiert haben. Daher werden andere Zeilen entfernt, wenn Sie diese Sortierung aufheben. Außerdem wird eine Warnung angezeigt, wenn Sie den Schritt **Sortierte Zeilen** auswählen und versuchen, an diesem Punkt einen neuen Zwischenschritt einzufügen.  
+
+![Warnung „Schritt löschen“](media/desktop-getting-started/deletestepwarning.png)
+
+Zum Schluss ändern Sie den Titel der Tabelle, sodass er sich auf den Verkauf von Sonnenbrillen anstelle des Ruhestands bezieht. Ersetzen Sie unter **Eigenschaften** im Bereich **Abfrageeinstellungen** den alten Titel durch *Best states for sunglass sales* (Beste Bundesstaaten für den Verkauf von Sonnenbrillen).
+
+Dann sieht die fertige Abfrage zu Ihren strukturierten Daten wie folgt aus:
+
+![Fertige Abfrage](media/desktop-getting-started/shapecombine_querysettingsfinished.png)
+
+Weitere Informationen zum Strukturieren von Daten finden Sie unter [Strukturieren und Kombinieren von Daten in Power BI Desktop](desktop-shape-and-combine-data.md).
 
 ## <a name="combine-data"></a>Kombinieren von Daten
-Diese Daten von verschiedenen Bundesstaaten sind interessant und nützlich zur Erstellung weiterer Analysen und Abfragen. Es gibt allerdings ein Problem: Bei den meisten Daten wird ein zweistelliges Länderkürzel als Code für den Bundesstaat und nicht dessen voller Name verwendet. Wir müssen die Namen der Bundesstaaten in irgendeiner Weise mit den Kürzeln verknüpfen.
+Die Daten zu verschiedenen Bundesstaaten sind interessant und nützlich für die Erstellung weiterer Analysen und Abfragen. Es gibt allerdings ein Problem: Bei den meisten Daten werden zweistellige Kürzel als Codes für die Bundesstaaten und nicht die vollen Namen verwendet. Sie müssen die Namen der Bundesstaaten in irgendeiner Weise mit den Kürzeln verknüpfen, um diese Daten verwenden zu können.
 
-Glücklicherweise gibt es eine andere öffentliche Datenquelle, die genau das bereitstellt. Die Daten müssen jedoch noch entsprechend strukturiert werden, bevor wir sie mit unserer Tabelle mit bevorzugten Wohnorten für Pensionäre verbinden können. Hier befindet sich die Webressource mit den Länderkürzeln:
+Aber keine Sorge: Dafür können Sie eine andere öffentliche Datenquelle verwenden. Allerdings müssen Sie die Daten erst umfassend strukturieren, bevor Sie sie mit Ihrer Tabelle zu den Sonnenbrillen *kombinieren* können.
 
-<https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
+Sie können die Daten zu den Staatenkürzeln in den Power Query-Editor importieren, indem Sie im Menüband auf der Registerkarte **Home** in der Gruppe **Neue Abfrage** auf **Neue Quelle** > **Web** klicken. 
 
-Wählen Sie im Menüband **Start** die Ansicht **Abfrage-Editor** und dann **Daten abrufen \> Web**aus. Geben Sie die Adresse ein, und klicken Sie auf **OK**. Im Fenster **Navigator** werden die Ergebnisse von dieser Webseite angezeigt.
+![Neue Quelle](media/desktop-getting-started/pbi_gettingstartedsplash_resized.png)
 
- ![](media/desktop-getting-started/designer_gsg_usstateabbreviationsnavigator.png)
+Geben Sie im Dialogfeld **Aus dem Web** die URL für die Website mit den Staatenkürzeln ein: *https:\//en.wikipedia.org/wiki/List_of_U.S._state_abbreviations*.
 
-Wählen Sie **Table[edit]** aus, da diese Tabelle die gewünschten Daten enthält. Sie muss aber noch strukturiert werden, um die Daten dieser Tabelle entsprechend zu kürzen. Jeder dieser Schritte wird auch unter **[Strukturieren und Kombinieren von Daten in Power BI Desktop](desktop-shape-and-combine-data.md)** veranschaulicht. Zusammenfassend werden die folgenden Schritte ausgeführt.
+Wählen Sie im Fenster **Navigator** die Tabelle **Codes and abbreviations for U.S. states, federal district, territories, and other regions** (Codes und Abkürzungen für US-Bundesstaaten, Bundesdistrikte, Gebiete und andere Regionen) aus, und klicken Sie dann auf **OK**. Dann wird die Tabelle im Power Query-Editor geöffnet.
 
-Sie wählen **Bearbeiten**aus, dann:
+Entfernen Sie alle Spalten bis auf **Name and status of region** (Name und Status der Region), **Name and status of region2** (Name und Status der Region2) und **ANSI**. Halten Sie dafür **STRG** gedrückt, und klicken Sie auf diese Spalten. Klicken Sie dann entweder erst mit der rechten Maustaste auf eine der Spaltenüberschriften und anschließend mit der linken auf **Andere Spalten entfernen**, oder klicken Sie auf der Registerkarte **Home** in der Gruppe **Spalten verwalten** auf **Andere Spalten entfernen**. 
 
-* *Entfernen Sie die beiden oberen Zeilen*. Sie sind auf die Erstellungsweise der Webseitentabelle zurückzuführen und werden nicht gebraucht.
+Klicken Sie auf den Pfeil neben der Spaltenüberschrift **Name and status of region2** (Name und Status der Region2), und klicken Sie anschließend auf **Filter** > **Equals** (Ist gleich). Klappen Sie im Dialogfeld **Zeilen filtern** das Dropdownmenü zum Feld **Wert eingeben oder auswählen** neben **equals** (ist gleich) auf, und klicken Sie auf **State** (Bundesstaat). 
 
-<!-- -->
+Wählen Sie erst neben dem Feld **equals** (ist gleich) **Oder** und anschließend **State ("Commonwealth")** (Bundesstaat („Commonwealth“)) aus. Wählen Sie **OK** aus. 
 
-* *Entfernen Sie die letzten 26 Zeilen*. Hierbei handelt es sich um Gebiete, die wir nicht brauchen.
+![Zeilen filtern](media/desktop-getting-started/filterrows.png)
 
-<!-- -->
-* *Filtern Sie Washington, D.C., heraus*. In der Tabelle mit Statistiken zu den bevorzugten Wohnorten für Pensionäre ist Washington, D.C, nicht enthalten. Daher schließen wir es aus der Liste aus.
+Wenn Sie zusätzliche Werte wie **Federal district** (Bundesdistrikt) und **island** (Insel) entfernt haben, verfügen Sie anschließend über eine Liste der 50 US-Bundesstaaten mit ihren offiziellen zweistelligen Kürzeln. Sie können die Spalten umbenennen, damit sie eindeutiger sind, z. B. in **State name** (Name des Bundesstaats), **Status** und **Abbreviation** (Abkürzung), indem Sie erst mit der rechten Maustaste auf die Spaltenüberschriften klicken und anschließend mit der linken auf **Umbenennen**.
 
-<!-- -->
+Alle diese Schritte werden im Bereich **Abfrageeinstellungen** unter **Angewendete Schritte** erfasst.
 
-* *Entfernen Sie ein paar überflüssige Spalten*. Wir brauchen nur die Zuordnung der Bundesstaaten zu den offiziellen zweistelligen Länderkürzeln. Daher können wir die übrigen Spalten entfernen.
+Ihre strukturierte Tabelle sollte nun wie folgt aussehen:
 
-<!-- -->
+![Strukturierte Tabelle mit Codes für Bundesstaaten](media/desktop-getting-started/statecodes.png)
 
-* *Verwenden Sie die erste Zeile als Überschrift*. Da wir die oberen drei Zeilen entfernt haben, ist die aktuelle oberste Zeile die benötigte Überschrift.
+Benennen Sie in den **Abfrageeinstellungen** im Feld **Eigenschaften** die Tabelle in *State codes* (Codes für Bundesstaaten) um. 
 
-    >[!NOTE]
-    >An dieser Stelle sei darauf hingewiesen, dass die *Reihenfolge* der im **Abfrage-Editor** angewendeten Schritte wichtig ist und sich auf die Strukturierung der Daten auswirken kann. Berücksichtigt werden muss auch, wie sich ein Schritt auf einen anderen, nachfolgenden Schritt auswirkt. Wenn Sie also aus **Angewendete Schritte** einen Schritt entfernen, verhalten sich die nachfolgenden Schritte aufgrund des Einflusses der Schrittreihenfolge der Abfrage möglicherweise nicht mehr so, wie es ursprünglich beabsichtigt war.
+Wenn Sie die Tabelle **State codes** (Codes für Bundesstaaten) strukturiert haben, können Sie diese beiden Tabellen *kombinieren* und in einer Tabelle zusammenfassen. Da die Tabellen, über die Sie jetzt verfügen, auf Abfragen basieren, die Sie auf die Daten angewendet haben, werden sie auch *Abfragen* genannt. Zum Kombinieren von Daten gibt es zwei bevorzugte Möglichkeiten: *Zusammenführen* und *Anhängen*. 
 
-* *Benennen Sie die Spalten und die eigentliche Tabelle um*. Wie üblich, gibt es mehrere Möglichkeiten, eine Spalte umzubenennen. Wählen Sie Ihr bevorzugtes Verfahren aus.
+Wenn Sie eine oder mehrere Spalten zu einer anderen Abfrage hinzufügen möchten, können Sie die Abfragen *zusammenführen*. Wenn Sie einer vorhandenen Abfrage zusätzliche Datenzeilen hinzufügen möchten, können Sie die Abfrage *anhängen*.
 
-Nachdem nun die Tabelle *StateCodes* strukturiert wurde, können wir die beiden Tabellen bzw. Abfragen kombinieren. Da die Tabellen, die wir jetzt haben, die Ergebnisse der Abfragen sind, die wir auf die Daten angewendet haben, werden sie häufig auch als *Abfragen* bezeichnet.
+In diesem Fall sollten Sie die Abfrage **State codes** (Codes für Bundesstaaten) mit der Abfrage **Best states for sunglasses** (Beste Bundesstaaten für den Verkauf von Sonnenbrillen) *zusammenführen*. Wechseln Sie dazu zur Abfrage **Best states for sunglasses** (Beste Bundesstaaten für den Verkauf von Sonnenbrillen), indem Sie diese im linken Bereich des Power Query-Editors unter **Abfragen** auswählen. Klicken Sie anschließend auf der Registerkarte **Home** in der Gruppe **Kombinieren** auf **Abfragen zusammenführen**.
 
-Zum Kombinieren von Daten gibt zwei bevorzugte Möglichkeiten: *Zusammenführen* und *Anhängen*.
+Klappen Sie im Fenster **Zusammenführen** das Dropdownmenü für das Feld auf, um **State codes** (Codes für Bundesstaaten) aus den anderen verfügbaren Abfragen auszuwählen. Wählen Sie die abzugleichende Spalte aus den einzelnen Tabellen aus. In diesem Fall müssen Sie **State** (Bundesstaat) aus der Abfrage **Best states for sunglasses** (Beste Bundesstaaten für Sonnenbrillen) und **State name** (Name des Bundesstaats) aus der Abfrage **State codes** (Codes für Bundesstaaten) auswählen. 
 
-Wenn eine oder mehrere Spalten zu einer anderen Abfrage hinzugefügt werden sollen, werden die Abfragen **zusammengeführt** . Wenn einer vorhandenen Abfrage zusätzliche Datenzeilen hinzugefügt werden sollen, wird die Abfrage **angehangen** .
+Wenn Ihnen das Dialogfeld **Datenschutzebenen** angezeigt wird, wählen Sie erst die Option **Ignore privacy levels checks for this file** (Überprüfung der Datenschutzebene für diese Datei ignorieren) aus, und klicken Sie anschließend auf **Speichern**. Wählen Sie **OK** aus. 
 
-Im vorliegenden Fall werden wir die Abfragen zusammenführen. Wählen Sie zunächst die Abfrage aus, *mit der* die andere Abfrage zusammengeführt werden soll. Anschließend wählen Sie im Menüband auf der Registerkarte **Start** die Option **Abfragen zusammenführen** aus.
+![Abfragen zusammenführen](media/desktop-getting-started/shapecombine_merge.png)
 
- ![](media/desktop-getting-started/shapecombine_mergequeries.png)
+Dann wird auf der rechten Seite der Tabelle **Best states for sunglass sales** (Beste Bundesstaaten für den Verkauf von Sonnenbrillen) eine neue Spalte mit dem Namen **State codes** (Codes für Bundesstaaten) angezeigt. Diese enthält die Abfrage „State Code“ (Codes für Bundesstaaten), die Sie mit der Abfrage „Best States for Sunglass Sales“ (Beste Bundesstaaten für den Verkauf von Sonnenbrillen) zusammengeführt haben. Alle Spalten der zusammengeführten Tabelle werden in die Spalte **State codes** (Codes für Bundesstaaten) zusammengefasst. Sie können die zusammengeführte Tabelle *erweitern* und nur die gewünschten Spalten hinzufügen. 
 
-Im Fenster **Zusammenführen** werden Sie aufgefordert, die Tabelle auszuwählen, die mit der ausgewählten Tabelle zusammengeführt werden soll. Anschließend müssen Sie die entsprechenden Spalten angeben, die für die Zusammenführung verwendet werden sollen. Wählen Sie *State* in der Tabelle (Abfrage) *RetirementStats* und dann die Abfrage *StateCodes* aus. (Das ist in diesem Fall recht einfach, da es nur eine andere Abfrage gibt. Wenn Sie Verbindungen zu vielen Datenquellen herstellen, stehen hier viele Abfragen zur Auswahl.) Wenn Sie die übereinstimmenden Spalten – *State* aus *RetirementStats* und *State Name* aus *StateCodes* – richtig auswählen, sieht das Fenster **Zusammenführen** wie folgt aus, und die Schaltfläche **OK** ist aktiviert.
+![Spalte „Zusammengeführte Spalte“](media/desktop-getting-started/mergedquery.png)
 
- ![](media/desktop-getting-started/shapecombine_merge.png)
+Sie können die zusammengeführte Tabelle erweitern und auswählen, welche Spalten einbezogen werden sollen, indem Sie in der Spaltenüberschrift auf das Symbol **Erweitern** klicken. Wählen Sie im Dialogfeld **Erweitern** nur die Spalte **Abbreviation** (Abkürzung) aus. Deaktivieren Sie die Option **Ursprünglichen Spaltennamen als Präfix verwenden**, und klicken Sie anschließend auf **OK**. 
 
-Am Ende der Abfrage wird eine neue Spalte namens **NewColumn** erstellt, die den Inhalt der Tabelle (Abfrage) enthält, die mit der vorhandenen Abfrage zusammengeführt wurde. Alle Spalten der zusammengeführten Abfrage werden auf die neue Spalte **NewColumn** reduziert. Sie können jedoch die Tabelle **erweitern** und die gewünschten Spalten einbeziehen. Um die zusammengeführte Tabelle zu erweitern und auszuwählen, welche Spalten einbezogen werden sollen, klicken Sie auf das Erweiterungssymbol (![](media/desktop-getting-started/gettingstarted_29_expandicon.png)). Das Fenster **Erweitern** wird geöffnet.
+![Spalte „Erweitert“ aus der zusammengeführten Tabelle auswählen](media/desktop-getting-started/shapecombine_mergeexpand.png)
 
- ![](media/desktop-getting-started/shapecombine_mergeexpand.png)
-
-In unserem Fall benötigen wir nur die Spalte *State Code*. Daher wählen Sie nur diese Spalte aus und klicken dann auf **OK**. Deaktivieren Sie das Kontrollkästchen **Ursprünglichen Spaltennamen als Präfix verwenden**, da wir den ursprünglichen Spaltennamen nicht benötigen. Wenn das Kontrollkästchen aktiviert bleibt, erhält die zusammengeführte Spalte den Namen *NewColumn.State Code* (zusammengesetzt aus dem ursprünglichen Spaltennamen bzw. *NewColumn*, einem Punkt und dem Namen der in die Abfrage eingefügten Spalte).
-
->[!NOTE]
->Möchten Sie ein wenig mit dem Einfügen der Tabelle *NewColumn* experimentieren? Sie können ein wenig ausprobieren. Wenn Ihnen die Ergebnisse nicht gefallen, löschen Sie diesen Schritt einfach in der Liste **Angewendete Schritte** im Bereich **Abfrageeinstellungen**. Ihre Abfrage wird dann wieder in den Zustand vor Anwenden des Schritts **Erweitern** versetzt. Auf diese Weise können Sie beliebig oft und solange experimentieren, bis die Erweiterung Ihren Vorstellungen entspricht.
-
-Wir haben jetzt eine einzelne Abfrage (Tabelle), in der zwei entsprechend den Anforderungen strukturierte Datenquellen miteinander kombiniert sind. Diese Abfrage kann als Grundlage für viele weitere interessante Datenverbindungen dienen, z. B. für Statistiken zu Wohnkosten, demografischen Daten oder Beschäftigungsmöglichkeiten in den einzelnen Bundesstaaten.
+> [!NOTE]
+> Sie können testen, wie Sie am besten die Tabelle **State codes** (Codes für Bundesstaaten) integrieren. Wenn Ihnen die Ergebnisse nicht gefallen, löschen Sie diesen Schritt einfach aus der Liste **Angewendete Schritte** im Bereich **Abfrageeinstellungen**. Auf diese Weise können Sie beliebig oft und so lange experimentieren, bis die Erweiterung Ihren Vorstellungen entspricht.
 
 Eine umfangreichere Beschreibung der einzelnen Schritte zum Strukturieren und Kombinieren der Daten finden Sie unter [Strukturieren und Kombinieren von Daten in Power BI Desktop](desktop-shape-and-combine-data.md).
 
-Jetzt haben wir genügend Daten, um einige interessante Berichte zu erstellen – ebenfalls in Power BI Desktop. Da es sich hier um einen Meilenstein handelt, sollten wir diese Power BI Desktop-Datei speichern. Wir nennen sie **Erste Schritte in Power BI Desktop**. Um die Änderungen im **Abfrage-Editor** zu übernehmen und sie in Power BI Desktop zu laden, wählen Sie im Menüband **Start** den Befehl **Schließen und übernehmen** aus.
+Sie verfügen jetzt über eine einzelne Abfragetabelle, in der zwei entsprechend den Anforderungen strukturierte Datenquellen miteinander kombiniert sind. Diese Abfrage kann als Grundlage für viele weitere interessante Datenverbindungen dienen, z. B. zu demografischen Daten, dem Vermögen oder den Freizeitmöglichkeiten in den einzelnen Bundesstaaten.
 
-![](media/desktop-getting-started/shapecombine_closeandapply.png)
+![Strukturierte und kombinierte Abfragen](media/desktop-getting-started/mergedcolumn.png)
+
+Jetzt verfügen Sie fürs Erste über genügend Daten, um einen interessanten Bericht in Power BI Desktop erstellen zu können. Da Sie damit einen wichtigen Schritt abgeschlossen haben, übernehmen Sie die Änderungen für den **Power Query-Editor**, und laden Sie sie in Power BI Desktop hoch, indem Sie im Menüband auf der Registerkarte **Home** auf **Close & Apply** (Schließen und übernehmen) klicken. Sie können auch nur **Apply** (Übernehmen) auswählen, damit die Abfrage im Power Query-Editor geöffnet bleibt, während Sie in Power BI Desktop arbeiten. 
+
+![Schließen und Änderungen anwenden](media/desktop-getting-started/shapecombine_closeandapply.png)
+
+Sie können weitere Änderungen an der Tabelle vornehmen, nachdem Sie sie in Power BI Desktop geladen haben, und das Modell noch mal laden, um die Änderungen zu übernehmen. Wenn Sie den **Power Query-Editor** über Power BI Desktop nochmals öffnen möchten, klicken Sie im Power BI Desktop-Menüband auf der Registerkarte **Home** auf **Abfragen bearbeiten**. 
 
 ## <a name="build-reports"></a>Erstellen von Berichten
-Weitere Änderungen können nach dem Laden der Tabelle vorgenommen werden, und Sie können ein Modell erneut laden, um die von Innen vorgenommenen Änderungen anzuwenden. Aber für den Moment reicht unser Stand. In der Ansicht **Bericht** von Power BI Desktop können Sie mit dem Erstellen von Berichten beginnen.
+In der Power BI Desktop-Ansicht **Bericht** können Sie Visualisierungen und Berichte erstellen. Die Ansicht **Bericht** besteht aus sechs Hauptbereichen:
 
-Die Ansicht **Bericht** besteht aus fünf Hauptbereichen:
+![Power BI Desktop-Ansicht „Bericht“](media/desktop-getting-started/designer_gsg_reportview.png)
 
-1. Das Menüband, in dem häufige Aufgaben in Verbindung mit Berichten und Visualisierungen angezeigt werden
-2. Die Ansicht **Bericht** , oder die Zeichenfläche, in der Visualisierungen erstellt und angeordnet werden
-3. Der Registerkartenbereich **Seiten** , der sich quer über den unteren Rand erstreckt, in dem Sie eine Berichtsseite auswählen oder hinzufügen können
-4. Der Bereich **Visualisierungen** , in dem Sie Visualisierungen ändern, Farben oder Achsen anpassen, Filter anwenden, Felder ziehen und weitere Aktionen ausführen können
-5. Der Bereich **Felder** , in dem Sie Abfrageelemente und Filter auf die Ansicht **Bericht** oder auf den Bereich **Filter** des Bereichs **Visualisierungen** ziehen können
-   
-   ![](media/desktop-getting-started/designer_gsg_reportview.png)
+1. Das Menüband im oberen Bereich, in dem häufige Aufgaben in Verbindung mit Berichten und Visualisierungen angezeigt werden
+2. Der Canvasbereich, in dem Visualisierungen erstellt und angeordnet werden
+3. Der Registerkartenbereich „Seiten“ am unteren Rand, in dem Sie Berichtsseiten auswählen oder hinzufügen können
+4. Der Bereich **Filter**, in dem Sie Datenvisualisierungen filtern können
+5. Der Bereich **Visualisierungen**, in dem Sie Visualisierungen hinzufügen, ändern oder anpassen und einen Drillthrough anwenden können
+6. Der Bereich **Felder**, in dem die verfügbaren Felder in Ihren Abfragen angezeigt werden. Sie können diese Felder in den Canvasbereich, den Bereich **Filter** oder in den Bereich **Visualisierungen** ziehen, um Visualisierungen zu erstellen oder zu ändern.
 
-Die Bereiche **Visualisierungen** sowie **Felder** können durch Auswahl des kleinen Pfeils entlang der Kante reduziert werden, damit in der Ansicht **Bericht** mehr Platz zum Erstellen interessanter Visualisierungen zur Verfügung steht. Beim Ändern von Visualisierungen werden Pfeile nach oben und unten angezeigt, die bedeuten, dass Sie den betreffenden Abschnitt entsprechend erweitern oder reduzieren können.
+Sie können die Bereiche **Filter**, **Visualisierungen** und **Felder** jeweils über die oben in den Bereichen angezeigten Felder auf- bzw. zuklappen. Wenn Sie die Bereiche zuklappen, haben Sie mehr Platz im Canvasbereich, um aussagekräftige Visualisierungen zu erstellen. 
 
- ![](media/desktop-getting-started/designer_gsg_collapsepanes.png)
+![Bereiche auf- oder zuklappen](media/desktop-getting-started/designer_gsg_collapsepanes.png)
 
-Zum Erstellen einer Visualisierung ziehen Sie einfach ein Feld aus der Liste **Felder** auf die Ansicht **Bericht** . Ziehen Sie in diesem Fall das Feld *State* aus *RetirementStats*, und schauen Sie, was passiert.
+Sie können einfache Visualisierungen erstellen, indem Sie ein beliebiges Feld in der Liste mit Feldern auswählen oder indem Sie das Feld aus der Liste **Felder** in die Canvas ziehen. Ziehen Sie beispielsweise das Feld **State** (Bundesstaat) aus **Best states for sunglass sales** (Beste Bundesstaaten für den Verkauf von Sonnenbrillen) in die Canvas, um zu sehen, was passiert.
 
- ![](media/desktop-getting-started/designer_gsg_reportfirstdrag.png)
+![Feld „State“ (Bundesstaat) ziehen, um eine Kartenvisualisierung zu erstellen](media/desktop-getting-started/designer_gsg_reportfirstdrag.png)
 
-Jetzt sehen wir es uns mal an... Power BI Desktop hat automatisch eine kartenbasierte Visualisierung erstellt, da die Software erkannt hat, dass das Feld *State* Daten zu geografischen Standorten enthält.
+So sollte dies aussehen. Power BI Desktop hat automatisch eine kartenbasierte Visualisierung erstellt, da die Software erkannt hat, dass das Feld **State** (Bundesstaat) Daten zur Geolocation enthält. Die Visualisierung enthält Datenpunkte für die 40 Bundesstaaten aus dem Datenmodell. 
 
-Beachten Sie, dass auf der Seite **Visualisierungen** verschiedene Arten von Visualisierungen ausgewählt und im Bereich unterhalb der entsprechenden Symbole Felder auf verschiedenen Bereichen abgelegt werden können, um eine Legende zu platzieren oder die Visualisierung in anderer Weise zu verändern.
+Im Bereich **Visualisierungen** werden Informationen zur Visualisierung angezeigt, die Sie wie folgt ändern können. 
 
- ![](media/desktop-getting-started/designer_gsg_visualizationtypes.png)
+![Bereich „Visualisierung“](media/desktop-getting-started/designer_gsg_visualizationtypes.png)
 
-Wir machen einen schnellen Vorlauf und sehen uns an, wie die Ansicht **Bericht** nach dem Hinzufügen einiger Visualisierungen und ein paar neuer Berichtsseiten aussieht. Weitere Informationen zu Berichten finden Sie unter [Berichtsansicht in Power BI Desktop](desktop-report-view.md).
+1. Anhand der Symbole können Sie erkennen, welche Art vom Visualisierung erstellt wurde. Sie können die Visualisierungsart ändern, indem Sie ein anderes Symbol auswählen. Stattdessen können Sie aber auch eine neue Visualisierung erstellen, indem Sie ein Symbol auswählen, für das noch keine Visualisierung vorhanden ist. 
+2. Mithilfe der Option **Felder** im Bereich **Visualisierung** können Sie Datenfelder in die **Legende** und in andere Felder in dem Bereich ziehen. 
+3. Die Option **Format** (Formatieren) bietet Ihnen die Möglichkeit, Formatierungen sowie andere Steuerelemente auf Visualisierungen anzuwenden. 
 
-Die erste Berichtsseite enthält eine Ansicht der Daten auf der Basis von *Allgemeine Rangfolge*. Wenn Sie eine der Visualisierungen auswählen, wird im Bereich **Felder und Filter** angezeigt, welche Felder ausgewählt wurden. Ersichtlich ist auch die Struktur der Visualisierung (die Felder, die auf **Gemeinsame Achse**, **Spaltenwerte** und **Zeilenwerte** angewendet wurden).
+Es ist von der Art der Visualisierung und den vorhandenen Daten abhängig, welche Optionen in den Bereichen **Felder** und **Format** (Formatieren) angezeigt werden.
 
- ![](media/desktop-getting-started/designer_gsg_report1.png)
+Angenommen, Sie möchten, dass in Ihrer Kartenvisualisierung nur die zehn Bundesstaaten mit dem besten Wetter hervorgehoben werden. Zeigen Sie dafür im Bereich **Filter** mit der Maus auf **State is (All)** (Bundesstaat (Alle)), und klappen Sie den angezeigten Pfeil auf. Klappen Sie das Dropdownmenü unter **Filtertyp** auf, und klicken Sie auf **Top N** (Erste N). Wählen Sie unter **Elemente anzeigen** die Option **Unten** aus, da Sie die Elemente mit den niedrigsten Rang anzeigen möchten, und geben Sie *10* in das nächste Feld ein.
 
-In diesem Bericht gibt es sechs **Seiten** , auf denen jeweils bestimmte Datenelemente visualisiert werden.
+Ziehen Sie das Feld **Weather** (Wetter) aus dem Bereich **Felder** in das Feld **Nach Wert**, und klicken Sie anschließend auf **Filter anwenden**. 
 
-1. Die erste Seite (siehe oben) enthält alle Bundesstaaten auf der Basis *Allgemeine Rangfolge*.
-2. Die zweite Seite konzentriert sich auf die zehn besten Bundesstaaten auf der Basis *Allgemeine Rangfolge*.
-3. Auf der dritten Seite werden die 10 besten Bundesstaaten in Bezug auf Lebenshaltungskosten (und die entsprechenden Daten) visualisiert.
-4. Auf der vierten Seite steht das Wetter im Mittelpunkt; herausgefiltert wurden die 15 Bundesstaaten mit den meisten Sonnenstunden.
-5. Auf der fünften Seite befindet sich ein Diagramm zum gesellschaftlichen Wohlbefinden, das für die 15 besten Bundesstaaten visualisiert ist.
-6. Und zum Schluss eine Statistik zur Kriminalitätsrate, welche die zehn sichersten (und auch die zehn unsichersten) Bundesstaaten visualisiert.
+![Filter für die zehn Staaten mit dem besten Wetter](media/desktop-getting-started/gsg_share5.png)
 
-Hier sehen Sie, wie die Berichtsseite mit den Lebenshaltungskosten aussieht.
+Jetzt sollten in Ihrer Kartenvisualisierung nur noch die zehn Bundesstaaten mit dem besten Wetter angezeigt werden. 
 
- ![](media/desktop-getting-started/designer_gsg_report2costofliving.png)
+Benennen Sie die Visualisierung um, indem Sie im Bereich **Visualisierung** auf das Symbol **Format** (Formatieren) klicken, den **Titel** auswählen und unter **Titeltext** *Top 10 weather states* (10 Staaten mit dem besten Wetter) eingeben. 
 
-Es gibt alle möglichen interessanten Berichte und Visualisierungen, die Sie erstellen können.
+![Ändern des Titels](media/desktop-getting-started/designer_gsg_report1.png)
+
+Wenn Sie eine Visualisierung hinzuzufügen möchten, in der die Namen mit den zehn Bundesstaaten mit dem besten Wetter in ihrer Rangfolge von 1 bis 10 angezeigt werden, wählen Sie einen leeren Bereich der Canvas aus, und klicken Sie im Bereich **Visualisierung** auf das Symbol für **Säulendiagramme**. Wählen Sie im Bereich **Felder** die Optionen **State** (Bundesstaat) und **Weather** (Wetter) aus. Dann werden in einem Säulendiagramm die 40 Bundesstaaten in Ihre Abfrage angezeigt, entweder in absteigender Reihenfolge anhand ihres Rangs oder vom Staat mit dem schlechtesten Wetter hin zum Staat mit dem besten Wetter. 
+
+![Visualisierung eines Säulendiagramms](media/desktop-getting-started/gsg_share7.png)
+
+Wenn Sie die Reihenfolge ändern möchten, sodass die Nummer 1 als Erstes angezeigt wird, klicken Sie oben rechts in der Visualisierung auf die Auslassungspunkte für **Weitere Optionen**, und wählen Sie aus dem Menü die Option **Aufsteigend sortieren** aus. 
+
+![Aufsteigend sortieren](media/desktop-getting-started/shapecombine_mergequeries.png)
+
+Wenn Sie die Tabelle auf die zehn Bundesstaaten mit den besten Werten beschränken möchten, wenden Sie denselben Filter an wie für die Kartenvisualisierung. 
+
+Sie können die Visualisierung auf die gleiche Weise wie die Kartenvisualisierung umbenennen. Ändern Sie außerdem im Bereich **Visualisierung** unter **Format** (Formatieren) **Y-Achse** > **Achsentitel** von **Weather** (Wetter) in *Weather ranking* (Rangfolge nach Wetter), damit deutlicher wird, worum es geht. Legen Sie anschließend den Selektor **Y-Achse** auf **Aus** und die Option **Datenbeschriftungen** auf **An** fest. 
+
+Nun werden die zehn Staaten mit dem besten Wetter in aufsteigender Reihenfolge angezeigt. 
+
+![Fertiges Säulendiagramm](media/desktop-getting-started/shapecombine_changetype.png)
+
+Sie können ähnliche oder andere Visualisierungen für die Felder **Affordability** (Erschwinglichkeit) und **Overall ranking** (Gesamtbewertung) erstellen oder mehrere Felder in einer Visualisierung kombinieren. Es gibt alle möglichen interessanten Berichte und Visualisierungen, die Sie erstellen können. Die folgenden Visualisierungen in Form einer **Tabelle** und eines **Linien- und gruppierten Säulendiagramms** stellen die zehn Bundesstaaten mit dem besten Wetter unter Berücksichtigung der Erschwinglichkeit und der Gesamtbewertung dar:
+
+![Visualisierungen einer Tabelle und eines Linien- und gruppierten Säulendiagramms](media/desktop-getting-started/designer_gsg_report2costofliving.png)
+
+Sie können auf verschiedenen Berichtsseiten unterschiedliche Visualisierungen abrufen. Wenn Sie eine neue Seite hinzufügen möchten, klicken Sie auf das **+** -Symbol neben den bereits vorhanden Seiten auf der Seitenleiste, oder klicken Sie auf der Registerkarte **Home** des Menübands auf **Einfügen** > **Neue Seite**. Sie können Seiten umbenennen, indem Sie auf der Seitenleiste auf den Seitennamen doppelklicken, oder erst mit der rechten Maustaste auf die jeweilige Seite klicken und dann auf **Seite umbenennen** klicken. Geben Sie anschließend den neuen Namen ein. Wenn Sie zu einer anderen Seite des Berichts wechseln möchten, wählen Sie diese auf der Seitenleiste aus. 
+
+![Seitenleiste](media/desktop-getting-started/pages.png)
+
+Über die Registerkarte **Home** in der Gruppe **Einfügen** können Sie Textfelder, Bilder und Schaltflächen zu Ihren Berichtsseiten hinzufügen. Formatierungsoptionen für Visualisierungen können Sie festlegen, indem Sie eine Visualisierung auswählen und dann im Bereich **Visualisierungen** auf das Symbol **Format** (Formatieren) klicken. Wählen Sie zum Konfigurieren von Seitengrößen, Hintergründen und anderen Seiteninformationen das Symbol **Format** (Formatieren) aus. Dabei sollte keine Visualisierung ausgewählt sein.
+
+Wenn Sie Ihre Seiten und Visualisierungen erstellt haben, klicken Sie auf **Datei** > **Speichern**, und speichern Sie Ihren Bericht. 
+
+![Fertige Power BI Desktop-Berichtsseite](media/desktop-getting-started/finished-report.png)
+
+Weitere Informationen zu Berichten finden Sie unter [Berichtsansicht in Power BI Desktop](desktop-report-view.md).
 
 ## <a name="share-your-work"></a>Freigeben Ihrer Arbeit
-Nachdem wir den Power BI Desktop-Bericht halbwegs abgeschlossen haben, können wir ihn im **Power BI-Dienst** für andere Personen freigeben. Es gibt verschiedene Verfahren zum Freigeben Ihrer Arbeit in Power BI Desktop. Sie können im **Power BI** -Dienst veröffentlichen, Sie können die PBIX-Datei direkt aus dem Power BI-Dienst hochladen, oder Sie können die PBIX-Datei speichern und sie wie eine beliebige andere Datei senden.
+Sie können Ihre fertigen Power BI Desktop-Berichte für andere freigeben. Dafür gibt es verschiedene Möglichkeiten. Sie können die *PBIX*-Berichtsdatei entweder wie jede andere Datei verteilen, die *PBIX*-Datei aus dem Power BI-Dienst hochladen oder sie direkt über Power BI Desktop im Power BI-Dienst veröffentlichen. Sie müssen über ein Power BI Konto verfügen, um Berichte im Power BI-Dienst veröffentlichen oder in diesen hochladen zu können. 
 
-Sehen wir uns zunächst die direkte Veröffentlichung im **Power BI** -Dienst von Power BI Desktop aus an. Wählen Sie im Menüband **Start** den Befehl **Veröffentlichen**aus.
+Wenn Sie Ihre Dateien über Power BI Desktop im **Power BI**-Dienst veröffentlichen möchten, klicken Sie auf der Registerkarte **Home** des Menübands auf **Veröffentlichen**.
 
-![](media/desktop-getting-started/gsg_syw_1.png)
+![„Veröffentlichen“ auswählen](media/desktop-getting-started/gsg_syw_1.png)
 
-Möglicherweise werden Sie aufgefordert, sich bei Power BI anzumelden.
+Möglicherweise werden Sie aufgefordert, sich bei Power BI anzumelden oder ein Ziel auszuwählen.
 
-![](media/desktop-getting-started/gsg_syw_2.png)
+Sobald der Veröffentlichungsprozess abgeschlossen ist, wird das folgende Dialogfeld angezeigt:
 
-Wenn Sie angemeldet waren, und der Veröffentlichungsprozess abgeschlossen ist, wird das folgende Dialogfeld angezeigt.
+![Erfolgreiche Veröffentlichung in Power BI](media/desktop-getting-started/gsg_syw_3.png)
 
-![](media/desktop-getting-started/gsg_syw_3.png)
+Wenn Sie auf den Link klicken, wird Ihr Bericht auf der Power BI-Website unter **Mein Arbeitsbereich** > **Berichte** geöffnet. 
 
-Wenn Sie sich bei Power BI anmelden, wird die Power BI Desktop-Datei angezeigt, die Sie soeben in den Abschnitten **Dashboards**, **Berichte**und **Datasets** des Diensts geladen haben.
+Ein anderes Verfahren zum Freigeben Ihrer Arbeit besteht darin, sie aus dem **Power BI** -Dienst zu laden. Navigieren Sie zu *https:\//app.powerbi.com*, um Power BI im Browser zu öffnen. Klicken Sie unten links auf der Power BI **Home**-Seite auf **Daten abrufen**, um Ihren Power BI Desktop-Bericht zu laden.
 
-Ein anderes Verfahren zum Freigeben Ihrer Arbeit besteht darin, sie aus dem **Power BI** -Dienst zu laden. Über den folgenden Link wird der **Power BI** -Dienst in einem Browser geöffnet:
+![„Daten abrufen“ auf der Power BI Home-Seite auswählen](media/desktop-getting-started/pbi_gsg_getdata1.png)
 
-`https://app.powerbi.com`
+Wählen Sie auf der nächsten Seite im Abschnitt **Dateien** **Get** (Abrufen) aus.
 
-Wählen Sie **Daten abrufen** aus, um den Ladevorgang des Power BI Desktop-Berichts zu starten.
+![Dateien abrufen](media/desktop-getting-started/pbi_gsg_getdata2.png)
 
- ![](media/desktop-getting-started/pbi_gsg_getdata1.png)
+Klicken Sie auf der nächsten Seite auf **Lokale Datei**. Navigieren Sie zu ihrer Power BI Desktop-Datei ( *.pbix*), wählen Sie sie aus, und klicken Sie auf **Öffnen**. 
 
-Die Seite **Daten abrufen** wird geöffnet, auf der Sie Dienste oder Dateien auswählen können. In diesem Fall wählen Sie im Feld **Dateien** den Befehl **Abrufen** aus.
+Nach dem Import der Datei, wird sie im linken Bereich des Power BI-Diensts unter **Mein Arbeitsbereich** > **Berichte** aufgeführt.
 
-![](media/desktop-getting-started/pbi_gsg_getdata2.png)
+![Power BI Desktop-Datei in Power BI importiert](media/desktop-getting-started/pbi_gsg_getdata4.png)
 
-Die Ansicht **Dateien** wird geöffnet. In diesem Fall wählen wir **Lokale Datei**aus.
+Wenn Sie die Datei auswählen, wird die erste Seite des Berichts angezeigt. Sie können auf den Registerkarten auf der linken Seite des Berichts verschiedene Seiten auswählen. 
 
-![](media/desktop-getting-started/pbi_gsg_getdata3.png)
+Sie können an einem Bericht Änderungen im **Power BI**-Dienst vornehmen, indem Sie oben auf der Berichtscanvas auf **Weitere Optionen** > **Bearbeiten** klicken. Klicken Sie zum Speichern der Änderungen auf **Kopie speichern**.
 
-Wenn Sie die Datei auswählen, lädt Power BI die Datei hoch.
+![Bericht bearbeiten und Kopie speichern](media/desktop-getting-started/gsg_share4.png)
 
-![](media/desktop-getting-started/pbi_gsg_getdata3a.png)
+Es gibt diverse interessante Visualisierungen, die Sie im **Power BI**-Dienst aus Ihrem Bericht erstellen und an ein *Dashboard* heften können. Informationen zu Dashboards im **Power BI**-Dienst finden Sie unter [Tipps zum Gestalten von Power BI-Dashboards](service-dashboards-design-tips.md). Weitere Informationen zum Erstellen, Freigeben und Ändern von Dashboards finden Sie unter [Freigeben eines Dashboards](service-share-dashboards.md).
 
-Nachdem die Datei hochgeladen wurde, können Sie sie in den **Berichten** im linken Bereich des Power BI-Diensts auswählen.
+Wenn Sie einen Bericht oder ein Dashboard freigeben möchten, klicken Sie im oberen Bereich oder auf der Dashboardseite auf **Share** (Freigeben). Alternativ können Sie auch unter **Mein Arbeitsbereich** > **Berichte** oder **Mein Arbeitsbereich** > **Dashboards** auf das Symbol zum **Freigeben** neben dem Namen des Berichts oder Dashboards klicken.
 
-![](media/desktop-getting-started/pbi_gsg_getdata4.png)
+Füllen Sie auf der Anzeige **Bericht freigeben** bzw. **Dashboard freigeben** alle Felder aus, um eine E-Mail zu senden oder um einen Link zu erhalten, über den Sie Ihren Bericht bzw. Ihr Dashboard für andere freigeben können. 
 
-Im **Power BI-Dienst** wird die erste Seite des Berichts angezeigt. Am unteren Rand der Seite können Sie eine beliebige Registerkarte auswählen, um die entsprechende Seite des Berichts anzuzeigen.
+![Bericht freigeben](media/desktop-getting-started/gsg_share6.png)
 
- ![](media/desktop-getting-started/gsg_share4.png)
-
-Sie können an einem Bericht Änderungen im **Power BI** -Dienst vornehmen, indem Sie oben auf der Berichtszeichnungsfläche **Bericht bearbeiten** auswählen.
-
-Um den Bericht zu speichern, wählen Sie im Dienst **Datei \> Speichern unter** aus. Es gibt diverse interessante Visualisierungen, die Sie im **Power BI** -Dienst aus Ihrem Bericht erstellen und an ein *Dashboard*heften können. Informationen zu Dashboards im **Power BI**-Dienst<strong>[ finden Sie unter „Tipps zum Entwerfen eines optimalen Dashboards“](service-dashboards-design-tips.md)</strong>.
-
- ![](media/desktop-getting-started/gsg_share5.png)
-
-Nach dem Speichervorgang wählen Sie auf der Hauptseite das Symbol **Freigeben** aus.
-
- ![](media/desktop-getting-started/gsg_share6.png)
-
-Von hier aus können Sie eine E-Mail an die Kollegen schicken, für die Sie das Dashboard freigeben möchten.
-
- ![](media/desktop-getting-started/gsg_share7.png)
-
-Weitere Informationen zum Erstellen, Freigeben und Ändern von Dashboards finden Sie unter [Freigeben eines Dashboards](service-share-dashboards.md).
-
-Es gibt diverse anspruchsvolle Mashups und Visualisierungen, die Sie mit Power BI Desktop und dem Power BI-Dienst erstellen können. Weitere Informationen hierzu finden Sie im folgenden Abschnitt.
-
-## <a name="diagnostics"></a>Diagnose
-
-Power BI Desktop unterstützt die Verbindung mit einem Diagnoseport. Der Diagnoseport erlaubt anderen Tools, eine Verbindung herzustellen und Überwachungen zu Diagnosezwecken durchzuführen. *Das Durchführen von Änderungen am Modell wird nicht unterstützt! Änderungen am Modell können zu Datenbeschädigung und Datenverlust führen.*
+Es gibt diverse anspruchsvolle Mashups und Visualisierungen, die sich auf Daten beziehen und die Sie in Power BI Desktop und dem Power BI-Dienst erstellen können. 
 
 ## <a name="next-steps"></a>Nächste Schritte
-Mit Power BI Desktop können Sie viele Aufgaben ausführen. Weitere Informationen zu den Funktionen und Möglichkeiten finden Sie in folgenden Ressourcen:
+Power BI Desktop unterstützt die Verbindung mit einem Diagnoseport. Der Diagnoseport erlaubt anderen Tools, eine Verbindung herzustellen und Überwachungen zu Diagnosezwecken durchzuführen. Wenn Sie den Diagnoseport verwenden, *können Sie keine Änderungen an dem Modell vornehmen. Änderungen am Modell können zu Datenbeschädigung und Datenverlust führen.*
 
-* [Übersicht zu Abfragen mit Power BI Desktop](desktop-query-overview.md)
+Weitere Informationen zu den vielen Funktionen von Power BI Desktop finden Sie in den folgenden Ressourcen:
+
+* [Abfrageübersicht in Power BI Desktop](desktop-query-overview.md)
 * [Datenquellen in Power BI Desktop](desktop-data-sources.md)
 * [Verbinden mit Daten in Power BI Desktop](desktop-connect-to-data.md)
-* [Strukturieren und Kombinieren von Daten mit Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Tutorial: Strukturieren und Kombinieren von Daten mit Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Allgemeine Abfrageaufgaben in Power BI Desktop](desktop-common-query-tasks.md)   

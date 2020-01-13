@@ -1,103 +1,107 @@
 ---
 title: Welche Neuheiten enthält das aktuellste Update für Power BI Desktop?
-description: Welche Neuheiten enthält das aktuellste Update für Power BI Desktop?
+description: In diesem Artikel wird das neueste monatliche Update für Power BI Desktop ausführlich beschrieben.
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 12/18/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 101c735ab48c2596d2cd24ebef56bc4e0c4cad54
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: 75b3c370e6b17c5a5a4937da6db989f814a0ebd9
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74009938"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75221986"
 ---
-# <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Welche Neuheiten enthält das aktuellste Update für Power BI Desktop? 
+# <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Welche Neuheiten enthält das aktuellste Update für Power BI Desktop?
 
 
-## <a name="november-2019-update-2755649341"></a>Update November 2019 (2.75.5649.341)
+## <a name="december-2019-update-2765678661"></a>Update Dezember 2019 (2.76.5678.661)
 
-Wir freuen uns sehr über die lang ersehnten November-Updates. 
+Unsere Dezember-Updates bringen viele tolle Neuerungen mit sich. 
 
-Sie können nun die [neueste Version von Power BI Desktop herunterladen](https://powerbi.microsoft.com/desktop), die jetzt als einzelne EXE-Datei bereitgestellt wird, in der alle unterstützten Sprachen enthalten sind. Wenn Sie Windows 10 verwenden, erhalten Sie **Power BI Desktop** auch aus dem Windows Store. Die monatlichen Versionen sind identisch, auch wenn die Versionsnummerierung zwischen zwei Versionen abweichen kann, unabhängig davon, wie Sie **Power BI Desktop** installieren. Weitere Informationen finden Sie in [diesem Artikel](desktop-get-the-desktop.md). 
+Laden Sie die neueste Version von Power BI Desktop aus dem [Download Center](https://www.microsoft.com/download/details.aspx?id=58494) herunter. Wenn Sie Windows 10 verwenden, können Sie auch Power BI Desktop aus dem Microsoft Store unter Windows 10 erhalten. Unabhängig davon, wie Sie Power BI Desktop installieren, sind die monatlichen Versionen identisch, auch wenn sich die Versionsnummerierung unterscheiden kann. Weitere Informationen zum Herunterladen und Installieren von Power BI Desktop finden Sie unter [Power BI Desktop erwerben](desktop-get-the-desktop.md). 
 
 > [!IMPORTANT]
 > Seit dem Release im September 2019 wird Power BI Desktop nur als einzelne EXE-Datei mit allen unterstützten Sprachen herausgegeben. Die MSI-Version wird nicht mehr herausgegeben.
 
 
-Bedeutung der Links neben den einzelnen Updates:
+Die Links neben den einzelnen Features in der Power BI Desktop-Updateliste werden wie folgt interpretiert:
 
-* **[Video]** -Ausschnitte werden auf einer neuen Browserregisterkarte wiedergegeben, wenn das Feature erläutert wird.
-* Einige Features werden in einem **[Artikel]** ausführlich erläutert.
-* Die meisten Features werden im **[Blog]** -Beitrag zum monatlichen Update erläutert.
-* Und schließlich sind einige der Features selbsterklärend, sodass sie keinen Artikel und kein Video erfordern.
+* [blog]: Most features are explained in a section in the monthly update blog post.
+* [video]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
+* [article]: Some features have an article that provides more detail.
+* Die übrigen Features sind selbsterklärend, sodass sie keinen Artikel und kein Video erfordern.
 
-Sie können das Video **Neueste Updates** auch direkt aus diesem Artikel von Beginn an ansehen. Hierzu klicken Sie einfach auf das Symbol **Wiedergeben** auf dem Videobild unter der Liste mit den Updates.
+Sie können sich auch das gesamte [Video zu den monatlichen Updates von Power BI Desktop](#power-bi-desktop-monthly-update-video) ansehen.
 
-In diesem Monat bietet **Power BI Desktop** die folgenden Updates:
-
-### <a name="user-experience"></a>Benutzerfreundlichkeit
-* Aktualisiertes Menüband (Vorschau) [[Video]](https://youtu.be/kVli3Vm_kDo?t=13) [[Artikel]](desktop-ribbon.md) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#ribbon) 
+In diesem Monat bietet das Power BI Desktop die folgenden Updates:
 
 
 ### <a name="reporting"></a>Berichterstellung
-* Analysebaumvisual (Vorschau) [[Video]](https://youtu.be/kVli3Vm_kDo?t=464) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#decompTree) 
+* Designupdates (Vorschau) [[Video]](https://youtu.be/eCEwgZsVUOs?t=10) [[Artikel]](desktop-report-themes.md#customize-report-themes-preview) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#customizeTheme) 
+* Exportieren des aktuellen Designs (Vorschau) [[Video]](https://youtu.be/eCEwgZsVUOs?t=242) [[Artikel]](desktop-report-themes.md#customize-report-themes-preview) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#exportTheme) 
+* Festlegen des Werts für Tabellenspalten und Matrix als benutzerdefinierte URL [[Video]](https://youtu.be/eCEwgZsVUOs?t=277) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#customURL) 
+* Visuelle KPI-Formatierungseinstellungen [[Video]](https://youtu.be/eCEwgZsVUOs?t=354) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#KPI) 
+* Neue Analysebaumformatierung [[Video]](https://youtu.be/eCEwgZsVUOs?t=442) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#decomp) 
+* Umschaltfläche für den Filterbereich im neuen Menüband [[Video]](https://youtu.be/eCEwgZsVUOs?t=599) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#filterToggle) 
+* Abfragedetails zur automatischen Seitenaktualisierung [[Video]](https://youtu.be/eCEwgZsVUOs?t=717) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#APR) 
 
 
 ### <a name="analytics"></a>Analyse
-* Bedingte Formatierung von Schaltflächen [[Video]](https://youtu.be/kVli3Vm_kDo?t=834) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#button) 
+* Mehr zur Analyse von Erkenntnissen laden [[Video]](https://youtu.be/eCEwgZsVUOs?t=831) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#moreAI) 
+* Neue DAX-Funktion: Quartal [[Video]](https://youtu.be/eCEwgZsVUOs?t=855) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#quarter) 
 
 
 ### <a name="visuals"></a>Visuals
-* Update für ArcGIS Maps for Power BI [[Video]](https://youtu.be/kVli3Vm_kDo?t=1024) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#arcGIS) 
-* Neue xViz-Visuals [[Video]](https://youtu.be/kVli3Vm_kDo?t=1071) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#xViz) 
-* ZoomCharts-Visual: Drilldownwasserfall [[Video]](https://youtu.be/kVli3Vm_kDo?t=1405) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#zoomCharts) 
-* Finanzberichtsmatrix von Profitbase [[Video]](https://youtu.be/kVli3Vm_kDo?t=1575) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#financialReporting) 
-* Verteilung [[Video]](https://youtu.be/kVli3Vm_kDo?t=1661) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#distribution) 
-* Struktur [[Video]](https://youtu.be/kVli3Vm_kDo?t=1733) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#tree) 
-
+* Personalisieren des Visualbereichs (allgemein verfügbar) [[Video]](https://youtu.be/eCEwgZsVUOs?t=865) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#personalizeViz) 
+* Neue benutzerdefinierte Visuals [[Video]](https://youtu.be/eCEwgZsVUOs?t=886) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#xViz) 
 
 
 ### <a name="data-connectivity"></a>Datenkonnektivität
-* LinkedIn Sales Navigator-Connector [[Video]](https://youtu.be/kVli3Vm_kDo?t=1808) [[Artikel]](desktop-connect-linkedin-sales-navigator.md) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#linkedInSalesNavigator) 
-* Benutzeroberfläche „Bearbeiten von SAP-Variablen“ (allgemeine Verfügbarkeit) [[Video]](https://youtu.be/kVli3Vm_kDo?t=1839) [[Artikel]](service-edit-sap-variables.md) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#sapVariables) 
-* Product Insights-Connector [[Video]](https://youtu.be/A8A9baUQsXQ?t=830) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#productInsights) 
+* Azure Data Lake Storage Gen2-Connector (allgemein verfügbar) [[Video]](https://youtu.be/eCEwgZsVUOs?t=2151) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/) 
+* Connector für Power Platform-Dataflows (allgemein verfügbar) [[Video]](https://youtu.be/eCEwgZsVUOs?t=2180) [[Artikel]](service-edit-sap-variables.md) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#ADLS) 
+* Der PostgreSQL-Connector enthält jetzt den Npgsql-Anbieter. [[Video]](https://youtu.be/eCEwgZsVUOs?t=2220) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#PostgreSQL) 
+* AtScale-Connector (allgemein verfügbar) [[Video]](https://youtu.be/eCEwgZsVUOs?t=2245) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#AtScale) 
+* Azure Time Series Insights-Connector [[Video]](https://youtu.be/eCEwgZsVUOs?t=2261) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#ATS) 
+* Data Virtuality-Connector [[Video]](https://youtu.be/eCEwgZsVUOs?t=2294) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#DataVirt) 
+* Zucchetti HR Infinity-Connector [[Video]](https://youtu.be/eCEwgZsVUOs?t=2345) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#Zucchetti) 
 
 
-### <a name="data-transformation"></a>Datentransformation
-* KI-Funktionen in Power Query (Vorschau) [[Video]](https://youtu.be/kVli3Vm_kDo?t=1976) [[Artikel]](desktop-ai-insights.md) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#aiFunctions) 
-* Web By Example-Connector: Unterstützung für das Extrahieren von Links [[Video]](https://youtu.be/kVli3Vm_kDo?t=1861) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#webConnector) 
+### <a name="data-preparation"></a>Datenvorbereitung
+* Updates für KI Insights-Funktionen (Vorschau) [[Video]](https://youtu.be/eCEwgZsVUOs?t=2366) [[Artikel]](desktop-ai-insights.md) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#AIfunc) 
 
 
 ### <a name="template-apps"></a>Vorlagen-Apps
-* LinkedIn Sales Navigator für Vertriebsvorgänge [[Video]](https://youtu.be/kVli3Vm_kDo?t=2039) [[Artikel]](desktop-connect-linkedin-sales-navigator.md#using-the-linkedin-sales-navigator-template-app) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#linkedInTemplateApp) 
+* Omnichannel Insights für Dynamics 365 [[Video]](https://youtu.be/eCEwgZsVUOs?t=2416) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#Omni) 
+* Customer Service Analytics für Dynamics 365 [[Video]](https://youtu.be/eCEwgZsVUOs?t=2500) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#CS)
+* Microsoft Forms Pro for Customer Services [[Video]](https://youtu.be/eCEwgZsVUOs?t=2525) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#Forms) 
 
 
+Ausführliche Informationen zu diesen neuen Features finden Sie unter [Zusammenfassung der Power BI Desktop-Funktionen vom November 2019](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/).
 
-> [!NOTE]
-> Sie können sich auch [alle für Power BI Desktop verfügbaren Datenquellen ansehen](desktop-data-sources.md). Die Liste wird ständig erweitert, daher sollten Sie sie in regelmäßigen Abständen konsultieren.
-
-Wünschen Sie weitere Informationen zu diesen Updates? Sehen Sie sich [diesen Blogbeitrag](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/) (in englischer Sprache) an, in dem Sie ausführliche Informationen zu den neuen Features finden (dies ist der gleiche Blogbeitrag, auf den in der obigen Liste verwiesen wird).
-
-
-Das folgende Video beschreibt und zeigt die einzelnen Updates. Sie finden das Video auch im Blogbeitrag.
-
-> [!VIDEO https://www.youtube.com/embed/kVli3Vm_kDo]
+Weitere Informationen finden Sie auch unter [Neuheiten bei Power BI](service-whats-new.md) und [Neuigkeiten bei den mobilen Apps für Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 > [!NOTE]
-> Weitere Informationen finden Sie auch unter [Neuheiten bei Power BI](service-whats-new.md) und [Neuigkeiten bei den mobilen Apps für Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> Sehen Sie sich die [verfügbaren Datenquellen für Power BI Desktop](desktop-data-sources.md) an. Unsere Liste wird ständig erweitert, sehen Sie sich diese also regelmäßig an.
+
+
+## <a name="power-bi-desktop-monthly-update-video"></a>Video zu den monatlichen Updates von Power BI Desktop
+Das folgende Video beschreibt die einzelnen Updates. Sie können sich das Video auch im Blogbeitrag ansehen:
+
+> [!VIDEO https://youtu.be/eCEwgZsVUOs]
+
 
 ## <a name="more-videos"></a>Weitere Videos
 
-Möchten Sie in Videos und weiteren interessanten Inhalten mehr zu Power BI erfahren? Sehen Sie sich die folgende Sammlung von Videoquellen und Inhalten an.
+Möchten Sie in Videos und weiteren interessanten Inhalten mehr zu Power BI erfahren? Sehen Sie sich die folgende Sammlung von Videoquellen und Inhalten an:
 
--   [Power BI-Kanal](https://www.youtube.com/user/mspowerbi) – Power BI auf YouTube
--   [Geführtes Lernen zu Power BI](https://powerbi.microsoft.com/guided-learning/) – eine sequenzielle Schulung in Power BI in kleinen Schritten
+-   [Power BI-Kanal](https://www.youtube.com/user/mspowerbi): eine Sammlung von Power BI-Videos auf YouTube
+-   [Geführtes Lernen zu Power BI](https://powerbi.microsoft.com/guided-learning/): eine sequenzielle Schulung in Power BI in kleinen Schritten
 
-## <a name="previous-months-updates"></a>Updates vorheriger Monate
+## <a name="updates-for-previous-months"></a>Updates vorheriger Monate
 
-Suchen Sie nach Updates vorheriger Monate? Diese finden Sie im Artikel [Monatliche Power BI Desktop-Updates – Archiv](desktop-latest-update-archive.md).
+Suchen Sie nach Power BI Desktop-Updates vorheriger Monate? Diese finden Sie im Artikel [Monatliche Power BI Desktop-Updates – Archiv](desktop-latest-update-archive.md).

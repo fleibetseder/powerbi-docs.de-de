@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/03/2019
+ms.date: 12/18/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 28e6cea55b02fabddd0b2f118631a09c0344b66f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: dc8dad0417ac2ed6498fb7612900ebdbb0ce2a18
+ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73863093"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75303879"
 ---
 # <a name="how-visuals-cross-filter-each-other-in-a-power-bi-report"></a>Gegenseitige Kreuzfilterung von Visuals in einem Power BI-Bericht
 Eines der herausragenden Features von Power BI ist die Art, auf die alle visuellen Elemente auf einer Berichtsseite miteinander verbunden sind. Wenn Sie in einem der visuellen Elemente einen Datenpunkt auswählen, ändern sich alle anderen visuellen Elemente auf der Seite, die diese Daten enthalten, auf Grundlage dieser Auswahl. 
@@ -27,20 +27,31 @@ Standardmäßig führt die Auswahl eines Datenpunkts in einem Visual auf einer B
 
 Wenn Sie Hierarchien und Drillvorgänge noch nicht kennengelernt haben, finden Sie weitere Informationen unter [Drilldowns in Power BI](end-user-drill.md). 
 
-Die Kreuzfilterung und die Kreuzhervorhebung können sich als nützlich erweisen, wenn Sie identifizieren möchten, wie Werte in Ihren Daten zusammenhängen. Wenn Sie beispielsweise den Abschnitt „Moderation“ des Ringdiagramms auswählen, wird der Beitrag dieses Abschnitts zu jeder Spalte des Diagramms „Total Units by Month“ (Gesamteinheiten nach Monat) hervorgehoben und das Liniendiagramm wird entsprechend gefiltert.
+### <a name="cross-filtering-and-cross-highlighting"></a>Kreuzfiltern und übergreifendes Hervorheben
 
-![Darstellung von interagierenden Visuals](media/end-user-interactions/power-bi-interactions.png)
+Die Kreuzfilterung und die Kreuzhervorhebung können sich als nützlich erweisen, wenn Sie identifizieren möchten, wie Werte in Ihren Daten zusammenhängen. Die Begriffe *Kreuzfilterung* und *Kreuzhervorhebung* werden verwendet, um das hier beschriebene Verhalten davon zu unterscheiden, was geschieht, wenn Sie den Bereich **Filter** zum Filtern und Hervorheben von Visualisierungen verwenden.  
 
-Siehe [Informationen zum Filtern und Hervorheben](end-user-report-filter.md). 
+Sehen Sie sich die Berichtsseiten unten an. So können diese Benennungen definiert werden. Das Ringdiagramm „Total category volume by segment“ hat zwei Werte: „Moderation“ und „Convenience“. 
 
+![Berichtseite](media/end-user-interactions/power-bi-interactions-before.png)
 
-  
-> [!NOTE]
-> Die Begriffe *Kreuzfilterung* und *Kreuzhervorhebung* werden verwendet, um das hier beschriebene Verhalten davon zu unterscheiden, was geschieht, wenn Sie den Bereich **Filter** zum Filtern und Hervorheben von Visualisierungen verwenden.  
+1. Sehen Sie sich nun an, was geschieht, wenn Sie **Moderation** auswählen.
+
+    ![Berichtsseite, nachdem im Ringdiagramm das Segment „Moderation“ ausgewählt wurde](media/end-user-interactions/power-bi-interactions-after.png)
+
+2. Durch die **Kreuzfilterung** werden nicht geltende Daten entfernt. Wenn Sie beispielsweise **Moderation** im Ringdiagramm auswählen, wird das Liniendiagramm kreuzgefiltert. Das Liniendiagramm zeigt jetzt nur noch Datenpunkte an, die für das Segment „Moderation“ gelten. 
+
+3. Durch die **übergreifende Hervorhebung** werden alle ursprünglichen Datenpunkte beibehalten, aber der Teil, der nicht für Ihre Auswahl gilt, wird abgeblendet. Wenn Sie beispielsweise **Moderation** im Ringdiagramm auswählen, wird das Säulendiagramm übergreifend hervorgehoben. Das Säulendiagramm blendet alle Daten ab, die für das Segment „Convenience“ gelten, und hebt alle Daten hervor, die für das Segment „Moderation“ gelten. 
+
 
 ## <a name="considerations-and-troubleshooting"></a>Zu beachtende Aspekte und Problembehandlung
 - Wenn Ihr Bericht ein Visual enthält, das [Drillvorgänge](end-user-drill.md) standardmäßig unterstützt, haben Drillvorgänge an einem Visual keine Auswirkungen auf die anderen Visuals der Berichtseite.     
-- Interagiert Visual A mit Visual B, werden die Filter auf Visualebene von Visual A auch auf Visual B angewendet.
+- Filter auf Visualebene werden beibehalten, wenn andere Visuals auf der Berichtsseite kreuzgefiltert oder übergreifend hervorgehoben werden. Wenn Sie oder der Berichtersteller Filter auf Visualebene für VisualA angewendet haben, und Sie verwenden VisualA zur Interaktion mit VisualB, werden Filter auf Visualebene, die für VisualA gelten, auch auf VisualB angewendet.
+
+    ![Berichtsseite, nachdem im Ringdiagramm das Segment „Moderation“ ausgewählt wurde](media/end-user-interactions/power-bi-visual-filters.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
-[Verwenden von Berichtsfiltern](../power-bi-how-to-report-filter.md)
+[Verwenden von Berichtsfiltern](../power-bi-how-to-report-filter.md)    
+
+
+[Weitere Informationen zum Filtern und Hervorheben](end-user-report-filter.md) 

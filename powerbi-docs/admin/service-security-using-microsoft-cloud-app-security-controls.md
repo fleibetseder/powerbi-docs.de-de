@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 18062c770b93bcd1295026d841f923a81c11d84f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7aa0fb1c8707c18e583d0de6bbd602ef43291146
+ms.sourcegitcommit: d5de66b591c2e1de979ce0e3ce5e5b6e1f2a08db
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73851257"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548501"
 ---
 # <a name="using-microsoft-cloud-app-security-controls-in-power-bi-preview"></a>Verwenden von Microsoft Cloud App Security-Steuerelementen in Power BI (Vorschauversion)
 
@@ -77,10 +77,11 @@ Die Einstellungen für diese Erkennungsfunktionen werden im Cloud App Security-P
 Bei der Verwendung von Microsoft Cloud App Security mit Power BI wird für Power BI-Administratoren eine neue Rolle erstellt. Wenn Sie sich als Power BI-Administrator beim [Cloud App Security-Portal](https://portal.cloudappsecurity.com/) anmelden, haben Sie eingeschränkten Zugriff auf Power BI-relevante Daten, Warnungen, gefährdete Benutzer, Aktivitätsprotokolle und weitere Informationen.
 
 ## <a name="considerations-and-limitations"></a>Überlegungen und Einschränkungen 
-Durch die Verwendung von Cloud App Security mit Power BI können Sie mit Erkennungsfunktionen zur Überwachung von Benutzersitzungen und deren Aktivitäten die Inhalte und Daten Ihrer Organisation schützen. Bei der Verwendung von Cloud App Security mit Power BI sind einige Einschränkungen zu berücksichtigen:
+Durch die Verwendung von Cloud App Security mit Power BI können Sie mit Erkennungsfunktionen zur Überwachung von Benutzersitzungen und deren Aktivitäten die Inhalte und Daten Ihrer Organisation schützen. Bei der Verwendung von Cloud App Security mit Power BI sind einige Überlegungen und Einschränkungen zu berücksichtigen:
 
 * Microsoft Cloud App Security kann nur für Excel-, PowerPoint-und PDF-Dateien verwendet werden.
 * Wenn Sie die Funktionen der Vertraulichkeitsbezeichnungen in Ihren Sitzungsrichtlinien für Power BI verwenden möchten, benötigen Sie eine Azure Information Protection Premium P1- oder Premium P2-Lizenz. Microsoft Azure Information Protection kann entweder als eigenständige Version oder über eines der Microsoft-Lizenzpakete erworben werden. Ausführliche Informationen finden Sie unter [Azure Information Protection – Preise](https://azure.microsoft.com/pricing/details/information-protection/). Außerdem müssen Vertraulichkeitsbezeichnungen auf Ihre Power BI-Objekte angewendet werden.
+* Die Sitzungssteuerung steht für jeden Browser auf jeder gängigen Plattform unter jedem Betriebssystem zur Verfügung. Es wird empfohlen, Internet Explorer 11, Microsoft Edge (neueste Version), Google Chrome (neueste Version), Mozilla Firefox (neueste Version) oder Apple Safari (neueste Version) zu verwenden. Öffentliche API-Aufrufe von Power BI und andere nicht browserbasierte Sitzungen werden nicht als Teil der Microsoft Cloud App Security-Sitzungssteuerung unterstützt. [Weitere Details finden Sie hier](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad#supported-apps-and-clients).
 
 > [!CAUTION]
 > * Die Richtlinie *content inspection* in Microsoft Cloud App Security ist derzeit bei der Anwendung einer Excel-Dateirichtlinie in Power BI nicht verfügbar. Legen Sie diese Richtlinie daher nicht für Power BI fest.
@@ -106,7 +107,7 @@ Die Sitzungsrichtlinie wird im angezeigten Fenster erstellt. Die nummerierten Sc
 
   1. Wählen Sie in der Dropdownliste **Richtlinienvorlage** die Option *Keine Vorlage* aus.
   2. Geben Sie für das Feld **Richtlinienname** einen relevanten Namen für Ihre Sitzungsrichtlinie ein.
-  3. Wählen Sie für **Sitzungssteuerungstyp** *Heruntergeladene Steuerungsdatei (mit DLP)* .
+  3. Wählen Sie für **Sitzungssteuerungstyp***Heruntergeladene Steuerungsdatei (mit DLP)* .
 
       Wählen Sie im Abschnitt **Aktivitätsquelle** die relevanten Blockierungsrichtlinien aus. Es wird empfohlen, nicht verwaltete und nicht kompatible Geräte zu blockieren. Legen Sie fest, das Downloads blockiert werden, wenn die Sitzung in Power BI ausgeführt wird.
 

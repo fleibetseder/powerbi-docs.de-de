@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: c126b073ac80a470733d7d8dd2638da28a06b265
-ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
+ms.openlocfilehash: 22328ddd6be697f658301516d05971cdcee0d260
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74882823"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223891"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Verteilen von Power BI-Inhalten an externe Gastbenutzer mit Azure AD B2B
 
-Power BI ist in Azure Active Directory Business-to-Business (Azure AD B2B) integriert, um die sichere Verteilung von Power BI-Inhalten an Gastbenutzer außerhalb Ihrer Organisation zu ermöglichen, während Sie weiterhin die Kontrolle über die internen Daten zu behalten.  
+Power BI ist in Azure Active Directory Business-to-Business (Azure AD B2B) integriert, um die sichere Verteilung von Power BI-Inhalten an Gastbenutzer außerhalb Ihrer Organisation zu ermöglichen, während Sie weiterhin die Kontrolle über die internen Daten zu behalten. Des Weiteren können Sie Gastbenutzern außerhalb Ihrer Organisation das Bearbeiten und Verwalten von Inhalten in Ihrer Organisation ermöglichen.
 
-Des Weiteren können Sie Gastbenutzern außerhalb Ihrer Organisation das Bearbeiten und Verwalten von Inhalten in Ihrer Organisation ermöglichen.
+Dieser Artikel enthält eine grundlegende Einführung in Azure AD B2B in Power BI. Weitere Informationen finden Sie unter [Verteilen von Power BI-Inhalten an externe Gastbenutzer mit Azure Active Directory B2B](whitepaper-azure-b2b-power-bi.md).
 
 ## <a name="enable-access"></a>Aktivieren des Zugriffs
 
@@ -44,7 +44,7 @@ Verwenden Sie eine geplante Einladung, wenn Sie wissen, welche Benutzer Sie einl
 
 Führen Sie die folgenden Schritte aus, um eine Einladung über das Azure-Portal zu senden.
 
-1. Wählen Sie im [Azure-Portal](https://portal.azure.com) **Azure Active Directory** aus.
+1. Wählen Sie im [Azure-Portal](https://portal.azure.com)**Azure Active Directory** aus.
 
 1. Wählen Sie unter **Verwalten** **Benutzer** > **Alle Benutzer** > **Neuer Gastbenutzer** aus.
 
@@ -88,7 +88,7 @@ Durch Zuweisen des Arbeitsbereichs zu [Power BI Premium-Kapazität](service-prem
 
 ### <a name="assign-a-power-bi-pro-license-to-guest-user"></a>Zuweisen einer Power BI Pro-Lizenz zu einem Gastbenutzer
 
-Wenn Sie dem Gastbenutzer eine Power BI Pro-Lizenz in Ihrem Mandanten zuweisen, kann dieser die Inhalte des Mandanten anzeigen.
+Wenn Sie einem Gastbenutzer eine Power BI Pro-Lizenz in Ihrem Mandanten zuweisen, kann dieser die Inhalte des Mandanten anzeigen. Weitere Informationen zum Zuweisen von Lizenzen finden Sie unter [Zuweisen von Lizenzen zu Benutzern auf der Lizenzseite](/office365/admin/manage/assign-licenses-to-users#assign-licenses-to-users-on-the-licenses-page). Bevor Sie Gastbenutzern Pro-Lizenzen zuweisen, wenden Sie sich an Ihren Microsoft-Kundenbetreuer, um sicherzustellen, dass Sie die Bedingungen Ihrer Vereinbarung mit Microsoft einhalten.
 
 ![Diagramm der Gastbenutzeroberfläche mit Zuweisen der Pro-Lizenz aus Ihrem Mandanten.](media/service-admin-azure-ad-b2b/license-approach-2.png)
 
@@ -98,7 +98,7 @@ Dem Gastbenutzer ist in seinem Mandanten bereits eine Power BI Pro-Lizenz zugewi
 
 ![Diagramm der Gastbenutzeroberfläche bei Nutzung der eigenen Lizenz des Gasts.](media/service-admin-azure-ad-b2b/license-approach-3.png)
 
-## <a name="guest-users-who-can-edit-and-manage-content"></a>Gastbenutzer, die Inhalte bearbeiten und verwalten können. 
+## <a name="guest-users-who-can-edit-and-manage-content"></a>Gastbenutzer, die Inhalte bearbeiten und verwalten können.
 
 Wenn das Feature [Externen Gastbenutzern das Bearbeiten und Verwalten von Inhalten in der Organisation erlauben](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) verwendet wird, erhalten die angegebenen Gastbenutzer Zugriff auf Power BI in Ihrer Organisation. Sie können alle Inhalte sehen, für die sie eine Berechtigung besitzen. Sie können auf Power BI Home zugreifen, Arbeitsbereiche durchsuchen, Apps installieren, sehen, wo sie sich in der Zugriffsliste befinden, und in Arbeitsbereichen Inhalte beisteuern. Sie können einen Administrator für Arbeitsbereiche erstellen, der die neue Arbeitsbereichsoberfläche verwendet, oder sie können selbst ein Administrator für diese Bereiche sein. Es gelten einige Einschränkungen. Diese Einschränkungen sind im Abschnitt „Überlegungen und Einschränkungen“ aufgelistet.
  

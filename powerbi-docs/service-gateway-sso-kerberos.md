@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 12/03/2019
 LocalizationGroup: Gateways
 ms.openlocfilehash: 889fbce483f839147677789c73d826fa23542731
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "75000110"
 ---
 # <a name="configure-kerberos-based-sso-from-power-bi-service-to-on-premises-data-sources"></a>Konfigurieren des Kerberos-basierten einmaligen Anmeldens (Single Sign-On, SSO) im Power BI-Dienst bei lokalen Datenquellen
@@ -132,7 +132,7 @@ Konfigurieren Sie die Delegierungseinstellungen wie folgt:
 
    In unserem Beispiel beginnt der SPN mit *MSSQLSvc*. Wenn Sie sowohl den FQDN als auch den NetBIOS-SPN für den Datenbankdienst hinzugefügt haben, wählen Sie beide aus. Möglicherweise wird nur einer angezeigt.
 
-9. Wählen Sie **OK**aus. 
+9. Wählen Sie **OK** aus. 
 
    Der Dienstprinzipalname sollte nun in der Liste der Dienste aufgeführt werden, für die das Gatewaydienstkonto delegierte Anmeldeinformationen verwenden kann.
 
@@ -189,7 +189,7 @@ Abschließend müssen dem Gatewaydienstkonto auf dem Computer, auf dem der Gatew
 
 1. Führen Sie auf dem Gatewaycomputer **gpedit.msc** aus.
 
-2. Navigieren Sie zu **Richtlinie für „Lokaler Computer“**&gt;**Computerkonfiguration**&gt;**Windows-Einstellungen**&gt;**Sicherheitseinstellungen**&gt;**Lokale Richtlinien**&gt;**Zuweisen von Benutzerrechten**.
+2. Navigieren Sie zu **Richtlinie für „Lokaler Computer“** &gt; **Computerkonfiguration** &gt; **Windows-Einstellungen** &gt; **Sicherheitseinstellungen** &gt; **Lokale Richtlinien** &gt; **Zuweisen von Benutzerrechten**.
 
     ![Ordnerstruktur der Richtlinie für den lokalen Computer](media/service-gateway-sso-kerberos/user-rights-assignment.png)
 
@@ -231,7 +231,7 @@ Wenn Azure AD Connect nicht konfiguriert ist, führen Sie die folgenden Schritte
     
         Suchen Sie nach der Eigenschaft `msDS-cloudExtensionAttribute1`, und doppelklicken Sie darauf. Legen Sie den Wert auf den vollständigen Benutzernamen (UPN) fest, den Sie für die Anmeldung beim Power BI-Dienst verwenden.
     
-    1. Wählen Sie **OK**aus.
+    1. Wählen Sie **OK** aus.
     
         ![Fenster „Attribut-Editor für Zeichenfolgen“](media/service-gateway-sso-kerberos/edit-attribute.png)
     

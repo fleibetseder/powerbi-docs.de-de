@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/18/2017
-ms.author: mshenhav
-ms.openlocfilehash: c843a3ef8ddfde591dec27ea523cb73857d1a289
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/11/2019
+ms.author: painbar
+ms.openlocfilehash: 7668df00d63fc1bdb8bb0e113fa9ad7e0f029147
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870109"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75221375"
 ---
 # <a name="set-data-alerts-in-the-power-bi-mobile-apps"></a>Festlegen von Datenwarnungen in den mobilen Power BI-Apps
 Gilt für:
@@ -62,7 +62,8 @@ Sie können einzelne Warnungen auf dem Mobilgerät verwalten oder [alle Warnunge
 
 1. Tippen Sie in einem Dashboard auf eine Zahlen- oder Maßstabkachel, die eine Warnung aufweist.  
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual.png)
+   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual_has_alert.png)
+
 2. Tippen Sie auf das Glockensymbol ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-has-alert-icon.png).  
 3. Tippen Sie auf den Namen der Warnung, um sie zu bearbeiten, tippen Sie auf den Schieberegler, um E-Mail-Benachrichtigungen zu deaktivieren, oder tippen Sie auf den Papierkorb, um die Warnung zu löschen.
    
@@ -148,10 +149,12 @@ Häufig wird die tägliche Aktualisierung von Datenquellen festgelegt, manche we
 2. Wenn Sie festgelegt haben, dass bei einer Warnung eine E-Mail an Sie gesendet wird, enthält Ihr Posteingang etwa Folgendes.
    
    ![](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alerts-email.png)
-3. Power BI fügt der **Mitteilungszentrale** eine Nachricht und der entsprechenden Kachel das Symbol für eine neue Warnung ![](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png) hinzu.
-4. Tippen Sie auf die globale Navigationsschaltfläche ![](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) zum [Öffnen der **Mitteilungszentrale**](mobile-apps-notification-center.md) und Anzeigen der Warnungsdetails.
+3. Power BI fügt eine Benachrichtigung in Ihre [Mitteilungszentrale](mobile-apps-notification-center.md) und einen gelben Punkt zum Glockensymbol ![Glockensymbol](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png) in der Titelleiste (iOS und Android) oder zur globalen Navigationsschaltfläche ![globale Navigationsschaltfläche](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) (Windows 10-Geräte) hinzu.
+
+
+4. Tippen Sie auf das Glockensymbol ![Glockensymbol](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png) oder die globale Navigationsschaltfläche ![Globale Navigationsschaltfläche](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png), um [ Ihre **Mitteilungszentrale**](mobile-apps-notification-center.md) zu öffnen und die Details der Warnung anzuzeigen.
    
-     ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-notifications.png) 
+     
 
 > [!NOTE]
 > Warnungen erfolgen nur für Daten, die aktualisiert werden. Wenn Daten aktualisiert werden, überprüft Power BI, ob eine Warnung für diese Daten festgelegt ist. Wenn die Daten einen Warnungsschwellenwert erreicht haben, wird eine Warnung ausgelöst.

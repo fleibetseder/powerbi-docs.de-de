@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/17/2019
+ms.date: 12/10/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 6e64ab2730b73339d6d22ba356cce6e644af52c5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 48efc58c7428961b70fb31a96f404139a75a1ac3
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73861848"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75217870"
 ---
 # <a name="change-the-display-of-a-report-page"></a>Ändern der Anzeige einer Berichtsseite
 
@@ -52,6 +52,26 @@ Die Optionen im Menü **Ansicht** bieten Ihnen Flexibilität beim Anzeigen von B
     ![Bericht mit der Option „Vollbild“](media/end-user-report-view/power-bi-full-screen.png)
 
 Wenn Sie den Bericht verlassen, werden Ihre Einstellungen für **Ansicht** nicht gespeichert und die Standardeinstellung wieder hergestellt. Verwenden Sie [Textmarken](end-user-bookmarks.md), wenn Sie diese Einstellungen speichern möchten.
+
+## <a name="use-your-browser-to-change-page-display"></a>Verwenden des Browsers zum Ändern der Seitenanzeige
+
+Die Zoomsteuerelemente in Ihrem Browser vergrößern und verringern den verfügbaren Canvasbereich. Wenn Sie den Zoom verringern, wird der verfügbare Canvasbereich erweitert (und umgekehrt). 
+
+![Kurzes Video mit Zoomsteuerelementen im Browser](media/end-user-report-view/power-bi-zoom.png)
+
+Das Ändern der Größe des gesamten Browsers ist eine weitere Möglichkeit, die Anzeigegröße des Berichts zu ändern. 
+
+![Kurzes Video, das die Größenänderung im Browser zeigt](media/end-user-report-view/power-bi-resize-browser.gif)
+
+## <a name="zoom-in-on-a-visual"></a>Vergrößern eines Visuals
+Manchmal ist es schwierig, Details in einem Visual zu erkennen. Sie können die Visualanzeige vergrößern, auch von selbst. Weitere Informationen finden Sie unter [Fokusmodus und Vollbildmodus](end-user-focus.md).
+
+### <a name="a-visual-in-focus-mode"></a>Ein Visual im *Fokusmodus*
+
+![Screenshot eines im Fokusmodus geöffneten Visuals](media/end-user-report-view/power-bi-focus.png)
+
+### <a name="a-visual-in-full-screen-mode"></a>Ein Visual im *Vollbildmodus*
+![Screenshot eines im Vollbildmodus geöffneten Visuals](media/end-user-report-view/power-bi-full-screen.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -1,19 +1,19 @@
 ---
 title: Migrationstool von Power BI Embedded
 description: Dieses Migrationstool kann verwendet werden, um Ihre Berichte aus dem Power BI Embedded Azure-Dienst (PaaS) in den Power BI-Dienst (SaaS) zu kopieren.
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 2970744f89bf8fdc115be018d00c8f5b73d9ddfc
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 01f79bfaae13b60d3c63abd8f7fc801998075ee6
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880568"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "74265282"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Power BI Embedded-Migrationstool
 
@@ -26,7 +26,7 @@ Das Migrieren Ihrer Inhalte aus Ihren Arbeitsbereichsammlungen für den Power BI
 * Push-Datasets können nicht heruntergeladen werden und müssen neu erstellt werden, indem die Power BI-REST-APIs für den Power BI-Dienst verwendet werden.
 * PBIX-Dateien, die vor dem 26. November 2016 importiert wurden, können nicht heruntergeladen werden.
 
-## <a name="download"></a>Download
+## <a name="download"></a>Herunterladen
 
 Sie können das Migrationstool-Beispiel von [GitHub](https://github.com/Microsoft/powerbi-migration-sample) herunterladen. Sie können entweder eine ZIP-Datei des Repositorys herunterladen oder es lokal klonen. Nachdem der Download abgeschlossen ist, können Sie *powerbi-migration-sample.sln* innerhalb von Visual Studio öffnen, um das Migrationstool zu erstellen und auszuführen.
 

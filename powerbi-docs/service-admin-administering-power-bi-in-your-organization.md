@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: dced3d2bfe844e857556386fb208395faab3fd8b
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 57819765b156baac2a86b8144e86770a0117adfd
+ms.sourcegitcommit: d5de66b591c2e1de979ce0e3ce5e5b6e1f2a08db
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698967"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548591"
 ---
 # <a name="what-is-power-bi-administration"></a>Was ist die Power BI-Verwaltung?
 
@@ -61,7 +61,7 @@ Administratoren können verschiedene Aufgaben ausführen, um den Power BI-Mandan
 | Sicherstellen der Einhaltung von internen Richtlinien sowie Gesetzen und Bestimmungen | <ul><li>Verwalten der Klassifizierung von Geschäftsdaten<br><li>Durchsetzen von Richtlinien zur Veröffentlichung und Freigabe von Inhalten</ul>|
 | Verwalten von Power BI-Ressourcen |<ul><li>Verwalten von Arbeitsbereichen<br><li>Veröffentlichen von benutzerdefinierten Visuals<br><li>Überprüfen von Code zum Einbetten von Power BI in anderen Anwendungen|
 | Bereitstellen von Hilfe und Support für Mandantenbenutzer |<ul><li>Beheben von Datenzugriffs- und anderen Problemen</ul>|
-| Weitere Aufgaben |<ul><li>Bereitstellen von Power BI Desktop z.B. mit dem System Center Configuration Manager<br><li>Verwalten der Bereitstellung von mobilen Power BI-Apps mit Intune<br><li>Verwalten von Datenschutz und -sicherheit, z.B. der Quelldatensicherheit</ul>|
+| Weitere Aufgaben |<ul><li>Bereitstellen von Power BI Desktop z. B. mit System Center Configuration Manager<br><li>Verwalten der Bereitstellung von mobilen Power BI-Apps mit Intune<br><li>Verwalten von Datenschutz und -sicherheit, z.B. der Quelldatensicherheit</ul>|
 
 ## <a name="administrative-tools"></a>Verwaltungstools
 

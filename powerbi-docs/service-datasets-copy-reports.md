@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2fc33c8adcaed35dab8fc9d81ab28fa314f42e3b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 9c7cbd895a913b76a9c0b87155f7800c5538ab28
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881947"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223861"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Kopieren von Berichten aus anderen Arbeitsbereichen (Vorschau)
 
@@ -37,7 +37,7 @@ Wenn Sie in einem Arbeitsbereich oder einer App einen Bericht gefunden haben, de
 
     ![Kopie speichern (Dialogfeld)](media/service-datasets-copy-reports/power-bi-dataset-save-report.png)
 
-    Sie können den Bericht im aktuellen Arbeitsbereich oder einem anderen im Power BI-Dienst speichern. Sie sehen nur Arbeitsbereiche mit neuer Benutzeroberfläche, bei denen Sie Mitglied sind.
+    In welchem Arbeitsbereich Sie speichern können, hängt davon ab, woraus Sie kopieren. Wenn Sie aus einem Arbeitsbereich kopieren, können Sie den Bericht im aktuellen Arbeitsbereich oder einem anderen in Power BI speichern. Sie sehen nur Arbeitsbereiche mit neuer Benutzeroberfläche, bei denen Sie Mitglied sind. Wenn Sie aus einer App kopieren, können Sie den Bericht unter „Mein Arbeitsbereich“ speichern.
   
 4. Wählen Sie **Speichern**.
 

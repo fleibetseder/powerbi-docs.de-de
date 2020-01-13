@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/26/2019
+ms.date: 12/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c97316b0509f7d243befa5cfe5310aa0f5826335
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4fdcfd4d7684cef3e6b703709b2739ebbff1badd
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880015"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223551"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Verwenden von Berichtdesigns in Power BI Desktop
 Mit **Berichtsdesigns** können Sie Entwurfsänderungen auf den gesamten Bericht anwenden, z. B. die Verwendung von Unternehmensfarben, das Ändern von Symbolsätzen oder das Anwenden der neuen Standardformatierung für Visuals. Wenn Sie ein **Berichtsdesign** anwenden, verwenden alle Visuals im Bericht Farben und Formatierung des ausgewählten Designs. Es gibt einige Ausnahmen, die später in diesem Artikel beschrieben werden.
@@ -23,10 +23,10 @@ Mit **Berichtsdesigns** können Sie Entwurfsänderungen auf den gesamten Bericht
 
 Wenn Sie ein benutzerdefiniertes **Berichtsdesign** anwenden, benötigen Sie eine JSON-Datei mit einer Grundstruktur. Sie können diese JSON-Datei dann in Power BI Desktop importieren und auf Ihren Bericht anwenden.
 
-Sie können auch nahezu alle Elemente, die im Bereich **Formatierung** angezeigt werden, mithilfe der Design-JSON-Datei anpassen und standardisieren. Das Ziel besteht darin, Ihnen eine umfassende und genaue Kontrolle über das Erscheinungsbild Ihrer Berichte zu bieten.
+Sie können auch nahezu alle Elemente, die im Bereich **Formatierung** angezeigt werden, direkt in Power BI Desktop oder mithilfe der JSON-Designdatei anpassen und standardisieren. Das Ziel besteht darin, Ihnen eine umfassende und genaue Kontrolle über das Erscheinungsbild Ihrer Berichte zu bieten.
 
 ## <a name="how-report-themes-work"></a>Funktionsweise von Berichtdesigns
-Um ein Berichtsdesign auf einen Power BI Desktop-Bericht anzuwenden, wählen Sie ein verfügbares integriertes Design aus, oder importieren Sie ein benutzerdefiniertes Design.
+Sie können ein Berichtsdesign auf einen Power BI Desktop-Bericht anwenden, indem Sie ein verfügbares integriertes Design auswählen oder ein benutzerdefiniertes Design erstellen oder importieren.
 
 | Integriertes Berichtsdesign | Standardfarbsequenz    |
 |------ |---------- |
@@ -60,7 +60,7 @@ Ihr Berichtsdesign wird auf den Bericht angewendet, und Sie sind startbereit.
 
 Wenn Sie ein benutzerdefiniertes Berichtsdesign importieren möchten, wählen Sie im Menüband **Start** die Schaltfläche **Design wechseln** aus. Wählen Sie dann im Dropdownmenü **Design importieren** aus.
 
-![Importieren des Designs](media/desktop-report-themes/report-themes-3a.png)
+![Design importieren](media/desktop-report-themes/report-themes-3a.png)
 
 Navigieren Sie im neu angezeigten Fenster zum Speicherort der JSON-Datei mit dem Design. Power BI Desktop sucht nach JSON-Dateien, da JSON der Dateityp für Power BI-Berichtsdesigns ist. In der folgenden Abbildung sehen Sie einige Dateien mit Feiertagsdesigns. Wir wählen ein Feiertagsdesign für März aus.
 
@@ -70,7 +70,48 @@ Wenn die Designdatei in Power BI Desktop erfolgreich geladen wurde, erhalten Sie
 
 ![Erfolgreicher Import des Designs](media/desktop-report-themes/report-themes_5.png)
 
-Werfen wir jetzt einen Blick auf die Struktur der importierten JSON-Designdatei.
+Es gibt zwei Möglichkeiten, Designs in Power BI Desktop anzupassen. Sehen wir uns diese im Einzelnen genauer an.
+
+
+## <a name="customize-report-themes-preview"></a>Anpassen von Berichtsdesigns (Vorschau)
+
+Mit dem Release von **Power BI Desktop** vom Dezember 2019 wurden zwei neue Möglichkeiten zum Anpassen von Berichtsdesigns eingeführt:
+
+* Erstellen und Anpassen eines Designs in Power BI Desktop (Vorschau)
+* Erstellen und Anpassen einer benutzerdefinierten JSON-Berichtsdesigndatei
+
+Sie können Designs direkt in Power BI Desktop anpassen, indem Sie zuerst auf **Datei > Optionen und Einstellungen > Optionen** klicken und dann wie in der folgenden Abbildung gezeigt im Abschnitt **Preview features** (Vorschaufeatures) das Kontrollkästchen für die Option **Aktuelles Design anpassen** aktivieren.
+
+![Benutzerdefinierte Designs aktivieren](media/desktop-report-themes/report-themes_5a.png)
+
+Möglicherweise werden Sie aufgefordert, Power BI Desktop neu zu starten, damit das Vorschaufeature aktiviert wird.
+
+Nach dem Neustart können Sie damit beginnen, das aktuelle Design anzupassen, indem Sie erst auf das Menüband **Home** und dann auf **Design wechseln > Aktuelles Design anpassen** klicken. Dann wird ein Dialogfeld angezeigt, auf dem die verschiedenen Möglichkeiten zum Anpassen eines vorhandenen Designs aufgeführt sind.
+
+![Anpassen des Designs](media/desktop-report-themes/report-themes_5b.png)
+
+Wenn Ihnen ein bereits vorhandenes Design gefällt und Sie nur einige Änderungen vornehmen möchten, können dieses auswählen und dann wie in der folgenden Abbildung gezeigt im Dialogfeld auf die Option **Aktuelles Design anpassen** klicken. 
+
+![Anpassen eines aktuellen Designs](media/desktop-report-themes/report-themes_5c.png)
+
+> [!NOTE]
+> Auf dem obigen Bild ist das Menüband aktiviert, das derzeit als Vorschau verfügbar ist. Sie können die Vorschauversion des neuen Menübands aktivieren, indem Sie erst auf **Datei > Optionen und Einstellungen > Optionen** und dann im Abschnitt **Preview features** (Vorschaufeatures) auf **New ribbon preview** (Vorschau des neuen Menübands) klicken.
+
+In den folgenden Kategorien gibt es Einstellungen, die angepasst werden können. Diese finden Sie im Dialogfeld „Design anpassen“.
+
+* Designname (Sie können das Design benennen, das Sie anpassen) und verschiedene Farbeinstellungen (Designfarben, Stimmungsfarben, Kontrastfarben usw.)
+* Texteinstellungen, einschließlich Schriftfamilie, -größe und -farbe sowie Achsentitel, -farben, -karten, -KPIs und Registerkartentitel
+* Visuelle Elemente, z. B. Hintergrund, Rahmen, Überschrift und QuickInfos
+* Seitenelemente, z. B. Hintergrund
+* Filterbereichseinstellungen, einschließlich Hintergrundfarbe, Transparenz, Schrift- und Symbolfarbe, Größe und Filterkarten
+
+Sobald Sie Ihre Änderungen vorgenommen und auf die Schaltfläche **Anwenden und speichern** geklickt haben, wird Ihr Design gespeichert und kann im aktuellen Bericht verwendet und exportiert werden. 
+
+Auf diese Weise können Sie den visuellen Teil des aktuellen Designs schnell und einfach anpassen. Einige Anpassungen an Designs können allerdings nur in begrenztem Umfang vorgenommen werden, für die wie im folgenden Abschnitt beschrieben die JSON-Datei des Designs geändert werden muss.
+
+> [!TIP]
+> Die meisten Designelemente können Sie über das Dialogfeld **Aktuelles Design anpassen** anpassen und anschließend die JSON-Datei exportieren, um an dieser direkt manuell detaillierte Änderungen vorzunehmen. Danach können Sie diese optimierte JSON-Datei umbenennen und importieren und somit alle gewünschten Änderungen vornehmen.
+
 
 ## <a name="structure-of-a-report-theme-json-file"></a>Struktur einer JSON-Berichtdesigndatei
  Beim Öffnen in einem Editor sieht die JSON-Basisdatei, die im vorherigen Abschnitt ausgewählt wurde (*St Patricks Day.json*), wie in diesem Screenshot aus:

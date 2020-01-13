@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/15/2019
-ms.openlocfilehash: 5bf3fee0f3df7b5be04b99e16a8a4043e8fcf30e
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 6a481681801b580b9eec47c5c704d8bdea8835f1
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128014"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75222101"
 ---
 # <a name="tutorial-developing-a-power-bi-visual"></a>Tutorial: Entwickeln eines Power BI-Visuals
 
@@ -38,7 +38,7 @@ In diesem Tutorial erhalten Sie Informationen zu den folgenden Vorgängen:
 
 * Wenn Sie noch nicht bei **Power BI Pro** registriert sind, [registrieren Sie sich für eine kostenlose Testversion](https://powerbi.microsoft.com/pricing/), bevor Sie beginnen.
 * Sie müssen [Visual Studio Code](https://www.visualstudio.com/) installieren.
-* Die benötigen die [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/setup/installing-windows-powershell?view=powershell-6)-Version 4 oder höher für Windows-Benutzer ODER das [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) für OSX-Benutzer.
+* Die benötigen die [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell?view=powershell-6)-Version 4 oder höher für Windows-Benutzer ODER das [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) für OSX-Benutzer.
 
 ## <a name="setting-up-the-developer-environment"></a>Einrichten der Entwicklerumgebung
 
@@ -86,7 +86,7 @@ Jetzt müssen Sie das **pbiviz**-Paket installieren.
 
       ![Zertifikat installieren](media/custom-visual-develop-tutorial/install-cert-PowerShell.png)
 
-3. Wählen Sie im Schritt **Zu importierende Datei** *Weiter* aus.
+3. Wählen Sie im Schritt **Zu importierende Datei***Weiter* aus.
 
 4. Fügen Sie im Schritt **Privater Schlüsselschutz** im Feld „Passwort“ die Passphrase ein, die Sie beim Erstellen des Zertifikats erhalten haben.  In diesem Fall wieder **_15105661266553327_** .
 
@@ -96,7 +96,7 @@ Jetzt müssen Sie das **pbiviz**-Paket installieren.
 
       ![Alle Zertifikate in folgendem Speicher speichern](media/custom-visual-develop-tutorial/all-certs-in-the-following-store.png)
 
-6. Wählen Sie im Fenster **Zertifikatspeicher auswählen** **Vertrauenswürdige Stammzertifizierungsstellen** und dann *OK* aus. Wählen Sie dann im Bildschirm *Zertifikatspeicher* **Weiter**.
+6. Wählen Sie im Fenster **Zertifikatspeicher auswählen** **Vertrauenswürdige Stammzertifizierungsstellen** und dann *OK* aus. Wählen Sie dann im Bildschirm *Zertifikatspeicher***Weiter**.
 
       ![Vertrauenswürdiges Stammzertifikat](media/custom-visual-develop-tutorial/trusted-root-cert.png)
 
@@ -398,6 +398,9 @@ Jetzt können wir uns ansehen, wie wir das benutzerdefinierte Visual entwickeln 
     import IVisual = powerbi.extensibility.IVisual;
     import VisualConstructorOptions = powerbi.extensibility.visual.VisualConstructorOptions;
     import VisualUpdateOptions = powerbi.extensibility.visual.VisualUpdateOptions;
+    import EnumerateVisualObjectInstancesOptions = powerbi.EnumerateVisualObjectInstancesOptions;
+    import VisualObjectInstanceEnumeration = powerbi.VisualObjectInstanceEnumeration;
+    import IVisualHost = powerbi.extensibility.visual.IVisualHost;
 
     import * as d3 from "d3";
     type Selection<T extends d3.BaseType> = d3.Selection<T, any,any, any>;

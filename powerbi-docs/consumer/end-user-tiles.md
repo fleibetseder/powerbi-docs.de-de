@@ -10,10 +10,10 @@ ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 92c473b5df6c21509ba32e41d88dd43c265fa3a0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73861413"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Dashboardkacheln in Power BI
@@ -51,17 +51,17 @@ Benötigen Sie Hilfe, um die Grundkomponenten zu verstehen, aus denen Power BI b
    
     Hier können Sie Folgendes tun:
    
-   * [Den Bericht öffnen, mit dem diese Kachel erstellt wurde ](end-user-reports.md) ![Symbol „Bericht“](./media/end-user-tiles/chart-icon.jpg)  
+   * [Den Bericht öffnen, mit dem diese Kachel erstellt wurde ](end-user-reports.md) ![Symbol „Bericht“](./media/end-user-tiles/chart-icon.jpg)  
    
-   * [Die Q&A-Frage öffnen, mit der die Kachel erstellt wurde](end-user-reports.md) ![Q&A-Symbol](./media/end-user-tiles/qna-icon.png)  
+   * [Die Q&A-Frage öffnen, mit der die Kachel erstellt wurde](end-user-reports.md) ![Q&A-Symbol](./media/end-user-tiles/qna-icon.png)  
    
 
-   * [Die Arbeitsmappe öffnen, mit der diese Kachel erstellt wurde](end-user-reports.md) ![Arbeitsmappensymbol](./media/end-user-tiles/power-bi-open-worksheet.png)  
-   * [Die Kachel im Fokusmodus anzeigen](end-user-focus.md) ![Fokussymbol](./media/end-user-tiles/fullscreen-icon.jpg)  
-   * [Erkenntnisse anzeigen](end-user-insights.md) ![Erkenntnisse-Symbol](./media/end-user-tiles/power-bi-insights.png)
-   * [Einen Kommentar hinzufügen und eine Diskussion starten](end-user-comment.md) ![Kommentarsymbol](./media/end-user-tiles/comment-icons.png)
-   * [Verwalten von Warnungen für eine Dashboardkachel](end-user-alerts.md)  ![Warnsymbol](./media/end-user-tiles/power-bi-alert-icon.png)
-   * [Öffnen der Daten in Excel](end-user-export.md)  ![Exportsymbol](./media/end-user-tiles/power-bi-export-icon.png)
+   * [Die Arbeitsmappe öffnen, mit der diese Kachel erstellt wurde](end-user-reports.md) ![Arbeitsmappensymbol](./media/end-user-tiles/power-bi-open-worksheet.png)  
+   * [Die Kachel im Fokusmodus anzeigen](end-user-focus.md) ![Fokussymbol](./media/end-user-tiles/fullscreen-icon.jpg)  
+   * [Erkenntnisse anzeigen](end-user-insights.md) ![Symbol „Erkenntnisse“](./media/end-user-tiles/power-bi-insights.png)
+   * [Einen Kommentar hinzufügen und eine Diskussion starten](end-user-comment.md) ![Kommentarsymbol](./media/end-user-tiles/comment-icons.png)
+   * [Warnungen für eine Dashboardkachel verwalten](end-user-alerts.md) ![Warnsymbol](./media/end-user-tiles/power-bi-alert-icon.png)
+   * [Die Daten in Excel öffnen](end-user-export.md) ![Exportsymbol](./media/end-user-tiles/power-bi-export-icon.png)
 
 
 3. Wählen Sie zum Schließen des Aktionsmenüs eine leere Fläche im Zeichenbereich aus.

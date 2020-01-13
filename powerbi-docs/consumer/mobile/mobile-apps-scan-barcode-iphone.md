@@ -1,19 +1,19 @@
 ---
 title: Scannen eines Barcodes aus der mobilen Power BI-App
 description: Scannen Sie reale Barcodes, um direkt zu gefilterten BI-Informationen in der mobilen Power BI-App zu gelangen.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 10/13/2017
-ms.author: mshenhav
-ms.openlocfilehash: bbc787203293fc6c9075400abf674345710faaed
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/02/2019
+ms.author: painbar
+ms.openlocfilehash: ee3cfec0c735ad52f9a036e75f61c1ab0400567b
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879171"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75217808"
 ---
 # <a name="scan-a-barcode-with-your-device-from-the-power-bi-mobile-app"></a>Scannen eines Barcodes aus der mobilen Power BI-App mit Ihrem Gerät
 Scannen Sie reale Barcodes, um direkt zu gefilterten BI-Informationen in der mobilen Power BI-App zu gelangen.
@@ -32,14 +32,12 @@ Angenommen, ein Kollege hat [ein Barcodefeld in einem Bericht in Power BI Deskto
 Wenn Sie den Barcode eines Produkts mit dem Scanner in der Power BI-App auf Ihrem Gerät scannen, wird Ihnen der Bericht (oder eine Liste der Berichte) mit diesem Barcode angezeigt. Sie können den Bericht öffnen, der mit diesem Barcode herausgefiltert wurde.
 
 ## <a name="scan-a-barcode-with-the-power-bi-scanner"></a>Scannen eines Barcodes mit dem Power BI-Scanner
-1. Öffnen Sie in der mobilen Power BI-Anwendung das Navigationsmenü im Hauptbereich ![](media/mobile-apps-scan-barcode-iphone/pbi_iph_navmenu.png) oben links. 
-2. Scrollen Sie nach unten bis **Scanner**, und wählen Sie diesen Eintrag aus. 
-   
+1. Tippen Sie auf der Navigationsleiste auf **Weitere Optionen** (...) und dann auf **Scanner**.
+
     ![](media/mobile-apps-scan-barcode-iphone/power-bi-scanner.png)
-3. Wenn die Kamera nicht aktiviert ist, müssen Sie der Power BI-App die Verwendung der Kamera gestatten. Eine einmalige Genehmigung ist erforderlich. 
-4. Richten Sie den Scanner auf einen Barcode auf einem Produkt. 
-   
-    Sie sehen eine Liste der Berichte, die diesem Barcode zugeordnet sind.
+
+2. Wenn die Kamera nicht aktiviert ist, müssen Sie der Power BI-App die Verwendung der Kamera gestatten. Eine einmalige Genehmigung ist erforderlich. 
+4. Richten Sie den Scanner auf einen Barcode auf einem Produkt. Sie sehen eine Liste der Berichte, die diesem Barcode zugeordnet sind.
 5. Tippen Sie auf den Namen des Berichts, der automatisch zu diesem Barcode herausgefiltert wurde, um ihn auf Ihrem Gerät zu öffnen.
 
 ## <a name="filter-by-other-barcodes-while-in-a-report"></a>Nach anderen Barcodes in einem Bericht filtern
