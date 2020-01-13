@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: afd85404dd926cab396222d3ba9b4bf62e689054
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ea60400a4522dd496e19d508f13760581c0b2620
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876340"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761247"
 ---
-# <a name="default-member-in-multidimensional-models-in-power-bi"></a>Standardelement in mehrdimensionalen Modellen in Power BI
+# <a name="work-with-multidimensional-models-in-power-bi"></a>Verwenden von mehrdimensionalen Modellen in Power BI
 
 Sie können eine Verbindung mit mehrdimensionalen Modellen in Power BI herstellen und Berichte erstellen, in denen alle Arten von Daten innerhalb des Modells visualisiert werden. Bei der Arbeit mit mehrdimensionalen Modellen wendet Power BI Regeln auf die Verarbeitung von Daten basierend auf der Spalte an, die als *Standardelement* definiert ist. 
 

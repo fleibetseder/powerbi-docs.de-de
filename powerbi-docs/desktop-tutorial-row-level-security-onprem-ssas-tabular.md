@@ -10,14 +10,14 @@ ms.topic: tutorial
 ms.date: 05/28/2019
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 64a7cc62f319162b653742be776a9aa9549f8659
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.openlocfilehash: 09e4a9cc3e6a5c16f23532f0a4589fdcb1906549
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74311454"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75759518"
 ---
-# <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dynamische Sicherheit auf Zeilenebene mit dem tabellarischen Modell von Analysis Services
+# <a name="implement-row-level-security-in-an-analysis-services-tabular-model"></a>Implementieren der Sicherheit auf Zeilenebene in einem tabellarischen Analysis Services-Modell
 
 In diesem Tutorial verwenden Sie ein Beispieldataset, um die unten aufgeführten Schritte durchzuführen. Dabei erhalten Sie Informationen zur [**Sicherheit auf Zeilenebene**](service-admin-rls.md) in einem **Analysis Services-Tabellenmodell** und verwenden dieses in einem Power BI-Bericht. 
 

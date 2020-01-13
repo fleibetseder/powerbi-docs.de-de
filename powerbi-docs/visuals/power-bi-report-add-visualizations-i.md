@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d68abc7b4509595d4dfa3071dc56673e6af89e4f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b275d4e7fdb4e289d2331a2f58db504071ea609b
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871046"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75758598"
 ---
-# <a name="part-1-add-visualizations-to-a-power-bi-report"></a>Teil 1 – Hinzufügen von Visualisierungen zu einem Power BI-Bericht
+# <a name="add-visuals-to-a-power-bi-report-part-1"></a>Hinzufügen von Visuals zu einem Power BI-Bericht (Teil 1)
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 

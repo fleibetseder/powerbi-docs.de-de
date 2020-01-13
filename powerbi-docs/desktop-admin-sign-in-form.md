@@ -8,14 +8,14 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/15/2019
 ms.author: davidi
-ms.openlocfilehash: b1ab5188ba8f5ccf54589d359f6f8ced1ada3060
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 934827311e089e34e56fbcffe4d4c58a056df4ad
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73878861"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761701"
 ---
-# <a name="how-administrators-can-manage-the-power-bi-desktop-sign-in-form"></a>Verwalten des Power BI Desktop-Anmeldeformulars durch Administratoren
+# <a name="administrators-manage-the-power-bi-desktop-sign-in-form"></a>Administratoren: Verwalten des Power BI Desktop-Anmeldeformulars
 Wenn Power BI Desktop erstmalig gestartet wird, wird ein Anmeldeformular geöffnet. Dort können Informationen eingegeben werden, oder es kann die Anmeldung bei Power BI ausgeführt werden, um fortzufahren. Administratoren verwalten dieses Formular mithilfe eines Registrierungsschlüssels. 
 
 ![Anmeldeformular für Power BI Desktop](media/desktop-admin-sign-in-form/sign-in-form.png)

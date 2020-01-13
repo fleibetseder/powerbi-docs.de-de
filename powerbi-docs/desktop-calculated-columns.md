@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 10c6f9f512c1b8c837842247d9dc928e8e065451
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4178dd37acf12efbe8dd00baed4f6b72ab549841
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876630"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762046"
 ---
-# <a name="using-calculated-columns-in-power-bi-desktop"></a>Verwenden von berechneten Spalten in Power BI Desktop
+# <a name="create-calculated-columns-in-power-bi-desktop"></a>Erstellen von berechneten Spalten in Power BI Desktop
 Mit berechneten Spalten können Sie einer bereits in Ihrem Modell vorhandenen Tabelle neue Daten hinzufügen. Aber statt Werte abzufragen und sie aus einer Datenquelle in Ihre neue Spalte zu laden, erstellen Sie eine DAX-Formel, die die Werte der Spalte definiert. In Power BI Desktop werden berechnete Spalten mithilfe der Funktion "Neue Spalte" in der Berichtsansicht erstellt.
 
 Im Gegensatz zu benutzerdefinierten Spalten, die als Teil einer Abfrage im Abfrage-Editor mithilfe von „Benutzerdefinierte Spalte hinzufügen“ erstellt werden, basieren berechnete Spalten, die in der Berichtsansicht oder in der Datenansicht erstellt werden, auf bereits in das Modell geladenen Daten. Sie können sich beispielsweise dazu entschließen, Werte aus zwei verschiedenen Spalten in zwei verschiedenen, aber aufeinander bezogenen Tabellen zu verketten, eine Addition auszuführen oder Teilzeichenfolgen zu extrahieren.

@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 08/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a01598bda6520bbf0bf82175ab4256cf7d529e84
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7eded3d17e0db5894bd2f1a03fae49357eb27c69
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880699"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762253"
 ---
-# <a name="getting-started-with-color-formatting-and-axis-properties"></a>Erste Schritte mit Farbeinstellungen und Achseneigenschaften
+# <a name="get-started-with-color-formatting-and-axis-properties"></a>Erste Schritte mit Farbeinstellungen und Achseneigenschaften
 In **Power BI** können Sie die Farbe von Datenreihen und Datenpunkten und selbst den Hintergrund von Visualisierungen ändern. So haben Sie eine umfassende Kontrolle über die Anzeige Ihrer Dashboards und Berichte.
 
 Wählen Sie zunächst aus **Mein Arbeitsbereich** einen **Bericht** aus. Wählen Sie dann im oberen Menübereich die Option **Bericht bearbeiten**aus.  

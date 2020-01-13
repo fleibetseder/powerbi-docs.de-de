@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 09/06/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: ab7d8a34211b9cb8addd90daf2cbce7d22f10e61
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: e991b84dede16f35a732c54ff916ec02f5610783
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73875148"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762529"
 ---
-# <a name="the-new-filter-experience-in-power-bi-reports"></a>Neue Filteroberfläche in Power BI-Berichten
+# <a name="work-with-filters-in-power-bi-reports"></a>Verwenden von Filtern in Power BI-Berichten
 
 Filter in Power BI haben eine neue Funktionalität und ein neues Design. Wenn Sie sich für das neue Filterdesign entscheiden, können Sie den Filterbereich so formatieren, dass er wie der Rest des Berichts aussieht. Sie können Filter sperren und sogar ausblenden. Wenn Sie den Bericht entwerfen, sehen Sie nicht mehr den alten Filterbereich im Bereich „Visualisierungen“. Ihre gesamte Filterbearbeitung und -formatierung führen Sie in einem einzelnen Filterbereich durch. 
 

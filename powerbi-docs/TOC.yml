@@ -13,7 +13,7 @@
       items:
         - name: Strukturieren und Kombinieren mehrerer Datenquellen
           href: desktop-shape-and-combine-data.md
-        - name: Importieren und Analysieren von Daten einer Webseite
+        - name: Importieren und Analysieren von Webseitendaten
           href: desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
         - name: Analysieren von Umsatzdaten aus Excel und einem OData-Feed
           href: desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md
@@ -31,21 +31,21 @@
           href: sample-datasets.md
         - name: Importieren und Öffnen von Beispielpaketen
           href: sample-tutorial-connect-to-the-samples.md
-        - name: 'Übersicht: Beispiel zur Kundenrentabilität'
+        - name: Beispiel zur Kundenrentabilität
           href: sample-customer-profitability.md
-        - name: 'Übersicht: Analysebeispiel für IT-Ausgaben'
+        - name: Analysebeispiel für IT-Ausgaben
           href: sample-it-spend.md
-        - name: 'Übersicht: Beispiel für das Personalwesen'
+        - name: Beispiel für das Personalwesen
           href: sample-human-resources.md
-        - name: 'Übersicht: Analysebeispiel für Verkaufschancen'
+        - name: Analysebeispiel für Verkaufschancen
           href: sample-opportunity-analysis.md
-        - name: 'Übersicht: Beispiel für die Beschaffungsanalyse'
+        - name: Beispiel für die Beschaffungsanalyse
           href: sample-procurement.md
-        - name: 'Übersicht: Analysebeispiel für den Einzelhandel'
+        - name: Analysebeispiel für den Einzelhandel
           href: sample-retail-analysis.md
-        - name: 'Übersicht: Beispiel für Vertrieb und Marketing'
+        - name: Beispiel für Vertrieb und Marketing
           href: sample-sales-and-marketing.md
-        - name: 'Übersicht: Analysebeispiel für Lieferantenqualität'
+        - name: Analysebeispiel für Lieferantenqualität
           href: sample-supplier-quality.md
         - name: Herunterladen der Arbeitsmappe mit dem Finanzbeispiel
           href: sample-financial-download.md
@@ -57,23 +57,23 @@
           href: desktop-relationships-understand.md
         - name: Gruppieren von Visuals in einem Bericht
           href: desktop-grouping-visuals.md
-        - name: Verwenden von Vorlagen
+        - name: Erstellen von Berichtsvorlagen
           href: desktop-templates.md
-        - name: Verwenden der Modellierungsansicht
+        - name: Arbeiten mit der Modellierungsansicht
           href: desktop-modeling-view.md
         - name: Aggregationen verwalten
           href: desktop-aggregations.md
         - name: Verwenden von zusammengesetzten Modelle
           href: desktop-composite-models.md
-        - name: 'Verwenden von m:n-Beziehungen'
+        - name: 'Anwenden von m:n-Beziehungen'
           href: desktop-many-to-many-relationships.md
         - name: Verwalten des Speichermodus
           href: desktop-storage-mode.md
-        - name: Verwenden der bidirektionalen Kreuzfilterung
+        - name: Aktivieren der bidirektionalen Kreuzfilterung
           href: desktop-bidirectional-filtering.md
         - name: Verwenden von DirectQuery in Power BI
           href: desktop-directquery-about.md
-        - name: Von DirectQuery unterstützte Power BI-Datenquellen
+        - name: Power BI-Datenquellen
           href: power-bi-data-sources.md
         - name: "Voraussetzungen für Power\_BI-Datenquellen"
           href: desktop-data-source-prerequisites.md
@@ -91,19 +91,19 @@
           href: desktop-common-query-tasks.md
         - name: Erstellen und Verwalten von Beziehungen
           href: desktop-create-and-manage-relationships.md
-        - name: Verwenden der Datenansicht
+        - name: Arbeiten mit der Datenansicht
           href: desktop-data-view.md
-        - name: Verwenden von Abfragen
+        - name: Informationen zum Abfrage-Editor
           href: desktop-query-overview.md
         - name: Anwenden von DAX-Grundlagen
           href: desktop-quickstart-learn-dax-basics.md
-        - name: Verwenden der Beziehungsansicht
+        - name: Arbeiten mit der Beziehungsansicht
           href: desktop-relationship-view.md
-        - name: Verwenden der Berichtsansicht
+        - name: Arbeiten mit der Berichtsansicht
           href: desktop-report-view.md
-        - name: Herstellen von Verbindungen mit mehreren Datenquellen
+        - name: Verbinden mit Datenquellen
           href: desktop-connect-to-data.md
-        - name: Veröffentlichen von Datasets
+        - name: Veröffentlichen von Datasets und Berichten
           href: desktop-upload-desktop-files.md
         - name: "Hinzufügen von Visuals zu einem Power BI-Bericht (Teil\_1)"
           href: visuals/power-bi-report-add-visualizations-i.md
@@ -113,23 +113,25 @@
           href: visuals/power-bi-visualization-customize-title-background-and-legend.md
         - name: Elemente ohne Daten in Power BI anzeigen
           href: desktop-show-items-no-data.md
-        - name: Verwenden der automatischen Angabe von Datum und Uhrzeit
+        - name: Anwenden von autom. Datum/Uhrzeit
           href: desktop-auto-date-time.md
         - name: Verbinden mit Daten
           items:
             - name: Verbinden mit Datenquellen
               href: desktop-data-sources.md
+            - name: Erstellen eines Berichts in einer SharePoint-Liste
+              href: desktop-sharepoint-online-list.md
             - name: Verbindung mit LinkedIn Sales Navigator herstellen
               href: desktop-connect-linkedin-sales-navigator.md
             - name: Abrufen von Webseitendaten durch Angeben von Beispielen
               href: desktop-connect-to-web-by-example.md
             - name: Herstellen einer Verbindung mit Datasets im Power BI-Dienst
               href: desktop-report-lifecycle-datasets.md
-            - name: Importieren einer Excel-Arbeitsmappe
+            - name: Importieren von Excel-Arbeitsmappen
               href: desktop-import-excel-workbooks.md
-            - name: Herstellen einer Verbindung mit Daten mithilfe der generischen Power BI Desktop-Schnittstellen
+            - name: Herstellen einer Verbindung mit Daten über generische Power BI Desktop-Schnittstellen
               href: desktop-connect-using-generic-interfaces.md
-            - name: Verbinden mit einer PDF-Datei
+            - name: Herstellen einer Verbindung mit PDF-Dateien
               href: desktop-connect-pdf.md
             - name: Herstellen einer Verbindung mit Adobe Analytics
               href: desktop-connect-adobe-analytics.md
@@ -141,7 +143,7 @@
               href: desktop-python-in-query-editor.md
             - name: Verwenden einer externen Python-IDE
               href: desktop-python-ide.md
-            - name: Verwenden von Python zum Erstellen von Visuals
+            - name: Erstellen von Visuals mit Python
               href: desktop-python-visuals.md
             - name: Ausführen von R-Skripts
               href: desktop-r-scripts.md
@@ -149,47 +151,47 @@
               href: desktop-r-in-query-editor.md
             - name: Verwenden einer externen R-IDE
               href: desktop-r-ide.md
-            - name: Verwenden von R-Paketen zum Erstellen von Visuals
+            - name: Erstellen von Visuals mit R-Paketen
               href: service-r-packages-support.md
             - name: Eingeben von Daten direkt in Power BI Desktop
               href: desktop-enter-data-directly-into-desktop.md
-            - name: Herstellen der Verbindung mit einer Excel-Arbeitsmappe
+            - name: Herstellen einer Verbindung mit Excel-Arbeitsmappen
               href: desktop-connect-excel.md
-            - name: Herstellen einer Verbindung mit mehrdimensionalen Modellen
+            - name: Herstellen einer Verbindung mit mehrdimensionalen SSAS-Modellen
               href: desktop-ssas-multidimensional.md
-            - name: Herstellen einer Verbindung mit einer CSV-Datei
+            - name: Herstellen einer Verbindung mit CSV-Dateien
               href: desktop-connect-csv.md
             - name: Herstellen einer Verbindung mit einer Google BigQuery-Datenbank
               href: desktop-connect-bigquery.md
             - name: Herstellen einer Verbindung mit einer Impala-Datenbank
               href: desktop-connect-impala.md
-            - name: Herstellen einer Verbindung mit einem OData-Feed
+            - name: Herstellen einer Verbindung mit OData-Feeds
               href: desktop-connect-odata.md
             - name: Herstellen einer Verbindung mit einer Amazon Redshift-Datenbank
               href: desktop-connect-redshift.md
-            - name: Herstellen einer Verbindung mit einer Webseite
+            - name: Herstellen einer Verbindung mit Webseiten
               href: desktop-connect-to-web.md
             - name: Verbinden mit einem Snowflake Computing-Warehouse
               href: desktop-connect-snowflake.md
-            - name: Herstellen einer Verbindung mit den Daten von Azure Cost Management
+            - name: Erstellen von Visuals mit dem Azure Cost Management-Connector
               href: desktop-connect-azure-cost-management.md
             - name: Verbinden mit Azure Consumption Insights-Daten
               href: desktop-connect-azure-consumption-insights.md
-            - name: Verwenden von SAP HANA
+            - name: Herstellen einer Verbindung mit SAP HANA-Datenbanken
               href: desktop-sap-hana.md
             - name: Aktivieren der Verschlüsselung für SAP HANA
               href: desktop-sap-hana-encryption.md
-            - name: Verwenden von tabellarischen Analysis Services-Daten
+            - name: Herstellen einer Verbindung mit tabellarischen Analysis Services-Daten
               href: desktop-analysis-services-tabular-data.md
-            - name: Verwenden von DirectQuery
+            - name: Herstellen einer Verbindung mit Datenquellen über DirectQuery
               href: desktop-use-directquery.md
-            - name: Herstellen von Verbindungen mit DirectQuery und SAP Business Warehouse
+            - name: Herstellen einer Verbindung mit SAP Business Warehouse über DirectQuery
               href: desktop-directquery-sap-bw.md
-            - name: Herstellen von Verbindungen mit DirectQuery und SAP HANA
+            - name: Herstellen einer Verbindung mit SAP HANA-Datenquellen über DirectQuery
               href: desktop-directquery-sap-hana.md
             - name: Anwenden der Einstellung „Referenzielle Integrität voraussetzen“
               href: desktop-assume-referential-integrity.md
-            - name: Verwenden des SAP Business Warehouse-Connectors
+            - name: Zugreifen auf SAP BW-Daten mit dem SAP BW-Connector
               href: desktop-sap-bw-connector.md
             - name: Verwenden von OneDrive for Business-Links
               href: desktop-use-onedrive-business-links.md
@@ -197,7 +199,7 @@
               href: service-facebook-connector.md
             - name: 'Drittanbieterdienst: Verwenden des Google Analytics-Connectors'
               href: service-google-analytics-connector.md
-            - name: 'Project Online: Herstellen einer Verbindung mit Daten über Power BI Desktop'
+            - name: Herstellen einer Verbindung mit Project Online-Daten über Power BI Desktop
               href: desktop-project-online-connect-to-data.md
         - name: Transformieren und Strukturieren von Daten
           items:
@@ -209,37 +211,37 @@
           items:
             - name: Festlegen von Datenkategorien in Power BI Desktop
               href: desktop-data-categorization.md
-            - name: Markieren eines Barcodefelds für mobile Power BI-Apps
+            - name: Markieren von Barcodefeldern in Power BI für mobile Apps
               href: desktop-mobile-barcodes.md
-            - name: Festlegen geografischer Filter für mobile Power BI-Apps
+            - name: Festlegen von geografischen Filtern in Power BI für mobile Apps
               href: desktop-mobile-geofiltering.md
-            - name: Verwenden berechneter Spalten
+            - name: Erstellen von berechneten Spalten
               href: desktop-calculated-columns.md
-            - name: Verwenden berechneter Tabellen
+            - name: Erstellen von berechneten Tabellen
               href: desktop-calculated-tables.md
-            - name: Verwenden von Measures
+            - name: Erstellen von Measures für die Datenanalyse
               href: desktop-measures.md
             - name: Importieren und Anzeigen von KPIs
               href: desktop-import-and-display-kpis.md
         - name: Erstellen von Berichten
           items:
-            - name: Verwenden der automatischen Seitenaktualisierung (Vorschau)
+            - name: Aktivieren der automatischen Seitenaktualisierung (Vorschau)
               href: desktop-automatic-page-refresh.md
-            - name: Verwenden der Leistungsanalyse
+            - name: Untersuchen von Berichtselementen mit der Leistungsanalyse
               href: desktop-performance-analyzer.md
             - name: Hinzufügen von visuellen Elementen zu Berichten
               href: desktop-visual-elements-for-reports.md
-            - name: Erstellen von QuickInfos basierend auf Berichtsseiten
+            - name: Hinzufügen von QuickInfos zu Berichten zum Erweitern von Visuals
               href: desktop-tooltips.md
             - name: Exportieren von Berichten als PDF-Dateien
               href: desktop-export-to-pdf.md
-            - name: Verwenden des Bereichs „Analyse“
+            - name: Informationen zur Verwendung des Analysebereichs
               href: desktop-analytics-pane.md
-            - name: Verwenden von Erkenntnissen zum Erklären von Schwankungen in Visuals (Vorschau)
+            - name: Anwenden von Erkenntnissen zum Erklären von Schwankungen in Visuals (Vorschau)
               href: desktop-insights.md
-            - name: Verwenden von Erkenntnissen zum Ermitteln von variierenden Verteilungen in Diagrammen (Vorschau)
+            - name: Verwenden von Erkenntnissen zum Ermitteln der Abweichungen von Distributionen (Vorschau)
               href: desktop-insights-find-where-different.md
-            - name: Verwenden von Lesezeichen zum Teilen von Erkenntnissen
+            - name: Erstellen von Lesezeichen zum Speichern und Freigeben von Erkenntnissen
               href: desktop-bookmarks.md
             - name: Verwenden von Berichtsdesigns
               href: desktop-report-themes.md
@@ -247,21 +249,21 @@
               href: power-bi-report-filter-types.md
             - name: Verwenden von Filtern in Power BI-Berichten
               href: power-bi-report-filter.md
-            - name: Verwenden von Quickmeasures für gängige Berechnungsfunktionen
+            - name: Erstellen von Quickmeasures für gängige Berechnungsfunktionen
               href: desktop-quick-measures.md
-            - name: Verwenden von What-if-Parametern zum Visualisieren von Variablen
+            - name: Erstellen und Verwenden von Was-wäre-wenn-Parametern zum Visualisieren von Variablen
               href: desktop-what-if.md
             - name: Verwenden des Drillthroughfeatures
               href: desktop-drillthrough.md
             - name: Verwenden des berichtsübergreifenden Drillthroughfeatures
               href: desktop-cross-report-drill-through.md
-            - name: Verwenden von Gruppierung und Diskretisierung
+            - name: Anwenden von Gruppierung und Diskretisierung
               href: desktop-grouping-and-binning.md
             - name: Erstellen von Power BI-Visuals mit R
               href: desktop-r-visuals.md
-            - name: Verwenden R-gestützter benutzerdefinierter Visualisierungen
+            - name: Herunterladen und Verwenden R-gestützter benutzerdefinierter Visuals
               href: desktop-r-powered-custom-visuals.md
-            - name: Verwenden von Gitternetzlinien und der Ausrichtung am Raster
+            - name: Anwenden von Gitternetzlinien und der Ausrichtung am Raster
               href: desktop-gridlines-snap-to-grid.md
             - name: Anwenden von Einstellungen für die Seitenanzeige in Power BI-Berichten
               href: power-bi-report-display-settings.md
@@ -277,7 +279,7 @@
               href: desktop-slicer-filter-date-range.md
             - name: Erstellen eines Slicers mit der Möglichkeit zur Größenanpassung
               href: power-bi-slicer-filter-responsive.md
-            - name: Verwenden der Sicherheit auf Zeilenebene
+            - name: Einschränken des Datenzugriffs mit Sicherheit auf Zeilenebene
               href: desktop-rls.md
             - name: Anpassen von QuickInfos
               href: desktop-custom-tooltips.md
@@ -287,9 +289,9 @@
               href: service-add-hyperlink-to-text-box.md
             - name: Hinzufügen von Links zu einer Tabelle
               href: power-bi-hyperlinks-in-tables.md
-            - name: Anzeigen von Bildern in Tabellen
+            - name: 'Anzeigen von Bildern in einer Tabelle, einer Matrix oder einem Slicer'
               href: power-bi-images-tables.md
-            - name: Verwenden von benutzerdefinierten Formatzeichenfolgen
+            - name: Anzeigen von benutzerdefinierten Formatzeichenfolgen
               href: desktop-custom-format-strings.md
             - name: Anwenden der bedingten Tabellenformatierung
               href: desktop-conditional-table-formatting.md
@@ -297,11 +299,11 @@
               href: desktop-conditional-format-visual-titles.md
             - name: Sortieren nach Spalten
               href: desktop-sort-by-column.md
-            - name: Optimieren von Berichten für mobile Power BI-Apps
+            - name: Optimieren von Berichten für mobile Apps
               href: desktop-create-phone-report.md
-            - name: Verwenden der Optionen „Daten anzeigen“ und „Datensätze anzeigen“
+            - name: Anwenden der Optionen „Daten anzeigen“ und „Datensätze anzeigen“
               href: desktop-see-data-see-records.md
-            - name: Tipps zum Erstellen von Berichten
+            - name: Tipps und Tricks zum Erstellen von Berichten
               href: desktop-tips-and-tricks-for-creating-reports.md
         - name: Visualisierungen
           items:
@@ -309,9 +311,9 @@
               href: visuals/power-bi-report-visualizations.md
             - name: Ändern von Visuals in Power BI-Berichten
               href: visuals/power-bi-report-change-visualization-type.md
-            - name: Informationen zu Datenpunktgrenzwerten nach Visualtyp
+            - name: Anwenden von Datenpunktgrenzwerten und Strategien nach Visualtyp
               href: visuals/power-bi-data-points.md
-            - name: Anzeigen der zum Erstellen des Visuals verwendeten Daten
+            - name: Anzeigen der zugrunde liegenden Daten eines Visuals
               href: visuals/service-reports-show-data.md
             - name: Erste Schritte mit Farbeinstellungen und Achseneigenschaften
               href: visuals/service-getting-started-with-color-formatting-and-axis-properties.md
@@ -319,7 +321,7 @@
               href: visuals/service-tips-and-tricks-for-color-formatting.md
             - name: Kopieren und Einfügen einer Berichtsvisualisierung
               href: visuals/power-bi-visualization-copy-paste.md
-            - name: Exportieren der Daten für die Erstellung einer Visualisierung
+            - name: 'Exportieren der Daten, die zum Erstellen einer Visualisierung verwendet wurden'
               href: visuals/power-bi-visualization-export-data.md
             - name: 'Verschieben, Ändern der Größe und Aufklappen eines Visuals in einem Bericht'
               href: visuals/power-bi-visualization-move-and-resize.md
@@ -329,9 +331,9 @@
               href: visuals/power-bi-map-tips-and-tricks.md
             - name: Anpassen der Eigenschaften der X- und Y-Achse
               href: visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
-            - name: Interagieren mit ArcGIS Maps in Power BI-Visuals
+            - name: Interagieren mit ArcGIS-Karten in Power BI-Visuals
               href: visuals/power-bi-visualizations-arcgis.md
-            - name: Erstellen von ArcGIS Maps for Power BI-Visuals
+            - name: Erstellen von ArcGIS-Karten für Power BI-Visuals
               href: visuals/power-bi-visualization-arcgis.md
             - name: Erstellen und Verwenden einfacher Flächendiagramme
               href: visuals/power-bi-visualization-basic-area-chart.md
@@ -339,7 +341,7 @@
               href: visuals/power-bi-visualization-card.md
             - name: Erstellen und Verwenden von Kombinationsdiagrammen
               href: visuals/power-bi-visualization-combo-chart.md
-            - name: Verwenden von Analysebaumvisuals (Vorschau)
+            - name: Erstellen und Verwenden von Analysebaumvisuals (Vorschau)
               href: visuals/power-bi-visualization-decomposition-tree.md
             - name: Erstellen und Verwenden von Ringdiagrammen
               href: visuals/power-bi-visualization-doughnut-charts.md
@@ -347,17 +349,17 @@
               href: visuals/power-bi-visualization-filled-maps-choropleths.md
             - name: Erstellen und Verwenden von Trichterdiagrammen
               href: visuals/power-bi-visualization-funnel-charts.md
-            - name: Verwenden des Visuals „Wichtige Einflussfaktoren“
+            - name: Erstellen und Verwenden von Visuals für wichtige Einflussfaktoren
               href: visuals/power-bi-visualization-influencers.md
-            - name: Informationen zu Stichprobenentnahmen für Linienelemente mit hoher Dichte
+            - name: Strichprobenentnahme für visuelle Linienelemente mit hoher Dichte
               href: desktop-high-density-sampling.md
-            - name: Erstellen und Verwenden von KPI-Visualisierungen
+            - name: Erstellen und Verwenden von KPI-Visuals
               href: visuals/power-bi-visualization-kpi.md
-            - name: Verwenden von Matrixvisualisierungen
+            - name: Erstellen und Verwenden von Matrixvisuals
               href: visuals/desktop-matrix-visual.md
             - name: Informationen zu Q&A-Visuals in Power BI
               href: visuals/power-bi-visualization-q-and-a.md
-            - name: Verwenden von R-Visuals
+            - name: Erstellen und Verwenden von R-Visuals
               href: visuals/service-r-visuals.md
             - name: Erstellen und Verwenden von Radialmessgerätdiagrammen
               href: visuals/power-bi-visualization-radial-gauge-charts.md
@@ -403,17 +405,17 @@
               href: desktop-directquery-troubleshoot.md
     - name: Referenz
       items:
-        - name: Grundlegendes zu Datentypen in Power BI Desktop
+        - name: Datentypen in Power BI Desktop
           href: desktop-data-types.md
-        - name: Verwenden des aktualisierten Menübands (Vorschau)
+        - name: Das aktualisierte Menüband (Vorschau)
           href: desktop-ribbon.md
-        - name: Verwenden der Tastenkombinationen des Formel-Editors
+        - name: Tastenkombinationen des Formel-Editors
           href: desktop-formula-editor.md
-        - name: Konfigurieren der Sicherheitsstufen
+        - name: Sicherheitsstufen
           href: desktop-privacy-levels.md
-        - name: Informationen zur Connectorerweiterbarkeit
+        - name: Connectorerweiterbarkeit
           href: desktop-connector-extensibility.md
-        - name: Informationen zu vertrauenswürdigen Connectors von Drittanbietern
+        - name: Vertrauenswürdige Connectors von Drittanbietern
           href: desktop-trusted-third-party-connectors.md
     - name: Ressourcen
       items:
@@ -421,21 +423,21 @@
           href: desktop-videos.md
         - name: Archiv der Power BI Desktop-Updates
           href: desktop-latest-update-archive.md
-        - name: Datenschutz bei Power BI Desktop
+        - name: Datenschutzbestimmungen für Lächeln senden in Power BI Desktop
           href: desktop-send-smile-privacy-statement.md
-        - name: Verwalten des Power BI Desktop-Anmeldeformulars
+        - name: 'Administratoren: Verwalten des Power BI Desktop-Anmeldeformulars'
           href: desktop-admin-sign-in-form.md
         - name: Barrierefreiheit
           items:
             - name: Informationen zur Barrierefreiheit von Power BI
               href: desktop-accessibility-overview.md
-            - name: Informationen zur barrierefreien Navigation in Power BI-Berichten
+            - name: Entwerfen barrierefreier Power BI-Berichte
               href: desktop-accessibility-creating-reports.md
-            - name: Informationen zu Features für die Barrierefreiheit in Power BI-Berichten
-              href: desktop-accessibility-consuming-tools.md
-            - name: Erstellen von Power BI-Berichten mithilfe von Barrierefreiheitstools
+            - name: Erstellen von Power BI-Berichten mit Barrierefreiheitstools
               href: desktop-accessibility-creating-tools.md
-            - name: Verwenden von Tastenkombinationen in Power BI Desktop
+            - name: Nutzen von Power BI-Berichten mit Barrierefreiheitstools
+              href: desktop-accessibility-consuming-tools.md
+            - name: Tastenkombinationen in Power BI Desktop
               href: desktop-accessibility-keyboard-shortcuts.md
 - name: Power BI-Dienst
   items:

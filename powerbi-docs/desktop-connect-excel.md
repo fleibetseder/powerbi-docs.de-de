@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 31caf34b9167c282dc36afd5322458f76e7a7614
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c63b84b506b872831c1a5ce00f6ef0e79f993849
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878579"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761655"
 ---
-# <a name="connect-to-excel-in-power-bi-desktop"></a>Verbinden mit Excel in Power BI Desktop
+# <a name="connect-to-excel-workbooks-in-power-bi-desktop"></a>Connect to Excel workbooks in Power BI Desktop (Verbinden mit Excel-Arbeitsmappen in Power BI Desktop)
 Das Verbinden mit einer Excel-Arbeitsmappe in Power BI Desktop ist einfach, und dieser Artikel erklärt es Ihnen Schritt für Schritt.
 
 Wählen Sie in Power BI Desktop auf dem Menüband **Start** die Option **Daten abrufen > Excel** aus.

@@ -9,14 +9,15 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b553d9341723c9b44abce57a384d4c7ba76e00a2
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: eaf2e7fed056653f2ee44e25b493e6b5e170a8dd
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73868973"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761454"
 ---
-# <a name="connect-to-data-using-generic-interfaces-in-power-bi-desktop"></a>Herstellen einer Verbindung mit Daten mithilfe generischer Schnittstellen in Power BI Desktop
+# <a name="connect-to-data-by-using-power-bi-desktop-generic-interfaces"></a>Herstellen einer Verbindung mit Daten mithilfe der generischen Power BI Desktop-Schnittstellen 
+
 Sie können mithilfe integrierter Datenconnectors, die von **Access-Datenbanken** bis zu **Zendesk**-Ressourcen reichen und im Fenster **Daten abrufen** aufgeführt sind, eine Verbindung mit zahlreichen unterschiedlichen Datenquellen in **Power BI Desktop** herstellen. Sie können auch eine Verbindung mit verschiedenen *anderen* Datenquellen herstellen. So verfügen Sie noch über weitaus mehr Verbindungsoptionen, indem Sie generische Schnittstellen (z.B. **ODBC** oder **REST-APIs**) verwenden, die in **Power BI Desktop** integriert sind.
 
 ![](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_1.png)

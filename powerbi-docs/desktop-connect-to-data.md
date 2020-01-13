@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b9e006cb14d391b82c7a1f48ba760ad9c363062c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 61af482ca5a035325a6c3f6c5a661aa8c3fc0985
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878485"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761586"
 ---
-# <a name="connect-to-data-in-power-bi-desktop"></a>Verbinden mit Daten in Power BI Desktop
+# <a name="connect-to-data-sources-in-power-bi-desktop"></a>Herstellen einer Verbindung mit Datenquellen in Power BI Desktop
 Mit Power BI Desktop können Sie problemlos Verbindungen zur ständig wachsenden Welt der Daten herstellen. Wenn Sie noch nicht über Power BI Desktop verfügen, können Sie die Anwendung [herunterladen](https://go.microsoft.com/fwlink/?LinkID=521662) und installieren.
 
 In Power BI Desktop sind *alle möglichen Arten* von in Power BI Desktop verfügbaren Datenquellen enthalten. Aus der folgenden Abbildung geht hervor, wie Sie eine Verbindung zu Daten herstellen. Wählen Sie dazu zuerst das Menüband **Datei** und dann **Daten abrufen \> Mehr** aus.
@@ -27,7 +27,7 @@ In Power BI Desktop sind *alle möglichen Arten* von in Power BI Desktop verfüg
 ## <a name="example-of-connecting-to-data"></a>Beispiel für das Herstellen einer Verbindung mit einer Datenquelle
 In diesem Beispiel wird die Verbindung mit einer **Web** -Datenquelle hergestellt.
 
-Stellen Sie sich vor, Sie gehen in Rente. Sie möchten dort leben, wo die Sonne scheint und die Steuern sowie das Gesundheitswesen akzeptabel sind. Vielleicht sind Sie auch Datenanalyst und benötigen diese Informationen, um Ihren Kunden zu helfen, die vielleicht Hersteller von Regenkleidung sind und ihre Umsätze auf Orte ausrichten möchten, wo es *viel* regnet.
+Stellen Sie sich vor, Sie gehen in Rente. Sie möchten dort leben, wo die Sonne scheint und die Steuern sowie das Gesundheitswesen akzeptabel sind. Vielleicht sind Sie auch Datenanalyst und benötigen diese Informationen, um Ihren Kunden zu helfen, die vielleicht Hersteller von Regenkleidung sind und ihre Umsätze auf Orte ausrichten möchten, wo es *viel*regnet.
 
 In beiden Fällen finden Sie eine Webressource, die interessante Daten und mehr zu diesen Themen enthält:
 
