@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 12/16/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 3f71bf3b7b457370fccb8b5fbae4bd7bae3b227d
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 3928b90d3aba8084cb5f1bf3677adb31afb01722
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75223494"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75729671"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Vorherige monatliche Updates für Power BI Desktop
 
@@ -1016,7 +1016,7 @@ Im April wurden folgende Updates für **Power BI Desktop** veröffentlicht:
 
 ### <a name="analytics"></a>Analyse
 
-* Bedingte Formatierung durch Werte [[Video]](https://youtu.be/dgv5HhHxxe8?t=7m54s) [[Artikel]](desktop-conditional-table-formatting.md#color-formatting-by-field-value) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#conditionalFormatting) 
+* Bedingte Formatierung durch Werte [[Video]](https://youtu.be/dgv5HhHxxe8?t=7m54s) [[Artikel]](desktop-conditional-table-formatting.md#color-by-color-values) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#conditionalFormatting) 
 * Integration von Python [[Video]](https://youtu.be/dgv5HhHxxe8?t=11m14s) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#python) 
 * Q&A-Verbesserungen [[Video]](https://youtu.be/dgv5HhHxxe8?t=13m1s) [[Blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#Q&A) 
 
