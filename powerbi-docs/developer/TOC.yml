@@ -25,7 +25,7 @@
           items:
             - name: Struktur von Visualprojekten in Power BI
               href: visuals/visual-project-structure.md
-            - name: Visual-Konzept
+            - name: Visualisierungskonzepte
               href: visuals/power-bi-visuals-concept.md
             - name: Visuals für Organisationen in Power BI
               href: power-bi-custom-visuals-organization.md

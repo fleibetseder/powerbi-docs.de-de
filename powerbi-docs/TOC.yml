@@ -871,6 +871,8 @@
           href: service-admin-premium-workloads.md
         - name: Überwachen von Kapazitäten über die App
           href: service-admin-premium-monitor-capacity.md
+        - name: Überwachen von Premium-Workloadmetriken
+          href: service-premium-metrics-app.md
         - name: Überwachen von Kapazitäten im Verwaltungsportal
           href: service-admin-premium-monitor-portal.md
         - name: Konfigurieren inkrementeller Aktualisierungen
