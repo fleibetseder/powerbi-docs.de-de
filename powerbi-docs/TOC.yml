@@ -803,10 +803,10 @@
               items:
                 - name: Herstellen einer Dienstverbindung mit Apps
                   href: service-connect-to-services.md
-                - name: Azure Carbon Calculator
-                  href: service-connect-to-azure-carbon-calculator.md
                 - name: GitHub
                   href: service-connect-to-github.md
+                - name: Microsoft Sustainability Calculator
+                  href: service-connect-to-microsoft-sustainability-calculator.md
                 - name: Office365Mon
                   href: service-connect-to-office365mon.md
                 - name: Project Online
@@ -887,7 +887,7 @@
           href: service-admin-premium-restart.md
         - name: Herstellen einer Verbindung zu Datasets mit Clientanwendungen und Tools
           href: service-premium-connect-tools.md
-- name: Paginierter Berichts-Generator in Power BI
+- name: Power BI-Berichts-Generator
   items:
     - name: Übersicht
       items:
