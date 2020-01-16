@@ -120,7 +120,7 @@ Wenn zwischen Dimensionstabellen eine m:n-Beziehung besteht, können Sie der fol
 - Fügen Sie eine Brückentabelle hinzu, um die verbundenen Entitäten zu speichern.
 - Erstellen Sie zwischen den drei Tabellen 1:n-Beziehungen.
 - Konfigurieren Sie **eine** bidirektionale Beziehung, damit Filter auf Faktentabellen weitergegeben werden können.
-- Wenn ID-Werte zwingend angegeben werden sollen, legen Sie die Eigenschaft **Lässt NULL-Werte zu** der ID-Spalten auf TRUE fest. Das Aktualisieren der Daten schlägt dann fehl, wenn Bezüge auf fehlende Werte festgestellt werden.
+- Wenn ID-Werte zwingend angegeben werden sollen, legen Sie die Eigenschaft **Lässt NULL-Werte zu** der ID-Spalten auf FALSE fest. Das Aktualisieren der Daten schlägt dann fehl, wenn Bezüge auf fehlende Werte festgestellt werden.
 - Blenden Sie die Brückentabelle aus, wenn sie keine Spalten oder Measures enthält, die für die Berichterstellung erforderlich sind.
 - Blenden Sie alle ID-Spalten aus, die sich nicht für die Berichterstellung eignen, z. B. IDs, die Ersatzschlüssel sind.
 - Wenn eine ID-Spalte nicht ausgeblendet werden sollte, achten Sie darauf, dass sie sich auf der „1“-Seite der Beziehung befindet. Die „n“-seitige Spalte sollten Sie immer ausblenden. So funktionieren Filter am besten.
