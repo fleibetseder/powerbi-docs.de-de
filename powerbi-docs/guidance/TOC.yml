@@ -54,10 +54,12 @@
           items:
             - name: Erweitern von Visuals mit QuickInfos für Berichtsseiten
               href: report-page-tooltips.md
-            - name: Drillthrough für Berichtsseiten
+            - name: Verwenden des Drillthrough für Berichtsseiten
               href: report-drillthrough.md
             - name: Wann sollten paginierte Berichte in Power BI verwendet werden?
               href: report-paginated-or-power-bi.md
+            - name: Vermeiden von leeren Seiten beim Drucken paginierter Berichte
+              href: report-paginated-blank-page.md
             - name: Migrieren von SQL Server Reporting Services-Berichten zu Power BI
               href: migrate-ssrs-reports-to-power-bi.md
     - name: Whitepaper
