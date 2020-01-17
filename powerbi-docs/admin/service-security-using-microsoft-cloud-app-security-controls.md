@@ -107,7 +107,7 @@ Die Sitzungsrichtlinie wird im angezeigten Fenster erstellt. Die nummerierten Sc
 
   1. Wählen Sie in der Dropdownliste **Richtlinienvorlage** die Option *Keine Vorlage* aus.
   2. Geben Sie für das Feld **Richtlinienname** einen relevanten Namen für Ihre Sitzungsrichtlinie ein.
-  3. Wählen Sie für **Sitzungssteuerungstyp***Heruntergeladene Steuerungsdatei (mit DLP)* .
+  3. Wählen Sie für **Sitzungssteuerungstyp** *Heruntergeladene Steuerungsdatei (mit DLP)* .
 
       Wählen Sie im Abschnitt **Aktivitätsquelle** die relevanten Blockierungsrichtlinien aus. Es wird empfohlen, nicht verwaltete und nicht kompatible Geräte zu blockieren. Legen Sie fest, das Downloads blockiert werden, wenn die Sitzung in Power BI ausgeführt wird.
 
