@@ -6,146 +6,174 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/16/2019
+ms.date: 12/26/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d28028c7b75bedae958df77c743c52b44c4437d9
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: c79a8ddd68fa64b0a16663500a3f02e9a991835b
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74311727"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75730324"
 ---
-# <a name="conditional-formatting-in-tables"></a>Bedingte Formatierung in Tabellen 
-Mithilfe der bedingten Formatierung für Tabellen können Sie benutzerdefinierte Zellenfarben basierend auf Zellwerten oder auf anderen Werten oder Feldern festlegen und Verlaufsfarben verwenden. Sie können auch Zellwerte mit Datenbalken darstellen. 
+# <a name="use-conditional-formatting-in-tables"></a>Verwenden bedingter Formatierungen in Tabellen 
 
-Wählen Sie zum Zugriff auf die bedingte Formatierung im Bereich **Felder** des Bereichs **Visualisierungen** in Power BI Desktop den Dropdownpfeil neben dem Wert im Bereich **Werte** aus, den Sie formatieren möchten (oder klicken Sie mit der rechten Maustaste in das Feld). Sie können die bedingte Formatierung nur für Felder im Bereich **Werte** des Bereichs **Felder** verwalten.
+Mit der bedingten Formatierung für Tabellen in Power BI Desktop können Sie benutzerdefinierte Zellfarben, einschließlich Farbverläufen, basierend auf Feldwerten angeben. Sie können Zellwerte auch mit Datenbalken oder KPI-Symbolen oder als aktive Weblinks darstellen. Sie können bedingte Formatierungen auf jeden Text oder jedes Datenfeld anwenden, solange Sie die Formatierung auf ein Feld mit einem numerischen Namen, Farbnamen oder Hexadezimalcode oder mit Web-URL-Werten basieren. 
+
+Wählen Sie zum Anwenden der bedingten Formatierung eine **Tabellen**- oder **Matrixvisualisierung** in Power BI Desktop aus. Klicken Sie im Bereich **Felder** des Fensters **Visualisierungen** mit der rechten Maustaste, oder wählen Sie den Abwärtspfeil neben dem Feld in **Werte**, das Sie formatieren möchten. Wählen Sie **Bedingte Formatierung** und dann den Typ der anzuwendenden Formatierung aus.
 
 ![Menü „Bedingte Formatierung“](media/desktop-conditional-table-formatting/table-formatting-0-popup-menu.png)
 
-Die folgenden Abschnitte beschreiben die Optionen für „Bedingte Formatierung“. Eine oder mehrerer Optionen können in einer einzelnen Tabellenspalte kombiniert werden.
-
 > [!NOTE]
-> Bei der Anwendung auf eine Tabelle überschreibt die bedingte Formatierung alle benutzerdefinierten Tabellenformatierungen, die auf die Zellen mit bedingter Formatierung angewendet wurden.
+> Die bedingte Formatierung setzt jede benutzerdefinierte Hintergrund- oder Schriftfarbe außer Kraft, die Sie auf die bedingt formatierte Zelle anwenden.
 
-Wenn Sie eine bedingte Formatierung aus einer Visualisierung entfernen möchten, klicken Sie einfach mit der rechten Maustaste erneut auf das Feld, wählen Sie **Bedingte Formatierung entfernen** und dann den Typ der zu entfernenden Formatierung aus.
+Wenn Sie eine bedingte Formatierung aus einer Visualisierung entfernen möchten, wählen Sie **Bedingte Formatierung entfernen** aus dem Dropdownmenü des Felds, und wählen Sie dann den Typ der zu entfernenden Formatierung aus.
 
 ![Menü „Bedingte Formatierung entfernen“](media/desktop-conditional-table-formatting/table-formatting-1-remove.png)
 
-## <a name="background-color-scales"></a>Skalen für die Hintergrundfarbe
+Die folgenden Abschnitte beschreiben die einzelnen Optionen für die bedingte Formatierung. Sie können mehr als eine Option in einer einzigen Tabellenspalte kombinieren.
 
-Durch Auswahl von **Bedingte Formatierung** und **Skalen für die Hintergrundfarbe** wird das folgende Dialogfeld angezeigt.
+## <a name="format-background-or-font-color"></a>Formatieren von Hintergrund- oder Schriftfarbe
 
-![Dialogfeld „Skalen für die Hintergrundfarbe“](media/desktop-conditional-table-formatting/table-formatting-1-default-dialog.png)
+Wählen Sie zum Formatieren der Hintergrund- oder Schriftfarbe der Zelle die Option **Bedingte Formatierung** für ein Feld aus, und wählen Sie dann entweder **Hintergrundfarbe** oder **Schriftfarbe** aus dem Dropdownmenü aus. 
 
-Sie können ein Feld aus Ihrem Datenmodell auswählen, auf dem die Farben basieren sollen, indem Sie **Farbe basierend auf** für dieses Feld festlegen. Zusätzlich können Sie den Aggregationstyp für das ausgewählte Feld über den Wert **Summarization** (Zusammenfassung) angeben. Das Feld, das farbig werden soll, wird im Feld **Farbe anwenden auf** angegeben. Sie können dies also nachverfolgen. Sie können Text- und Datumsfelder auch bedingt formatieren, sofern Sie einen numerischen Wert als Grundlage für die Formatierung wählen.
+![Auswählen der Hintergrundfarbe oder Schriftfarbe](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-dialog.png)
 
-![Feld „Farbe basierend auf“](media/desktop-conditional-table-formatting/table-formatting-1-apply-color-to.png)
+Das Dialogfeld **Hintergrundfarbe** oder **Schriftfarbe** wird geöffnet, wobei der Name des zu formatierenden Felds im Titel steht. Nach der Auswahl der bedingten Formatierungsoptionen wählen Sie **OK** aus. 
 
-Um diskrete Farbwerte für angegebene Wertbereiche zu verwenden, wählen Sie **Farbe nach Regeln** aus. Um ein Farbspektrum zu verwenden, lassen Sie **Farbe nach Regeln** deaktiviert. 
+![Dialogfelder „Hintergrundfarbe“ und „Schriftfarbe“](media/desktop-conditional-table-formatting/table-formatting-2-diverging.png)
 
-![Dialogfeld „Skalen für die Hintergrundfarbe“](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-dialog.png)
+Die Optionen **Hintergrundfarbe** und **Schriftfarbe** sind dieselben, beeinflussen jedoch die Hintergrundfarbe bzw. die Schriftfarbe der Zelle. Sie können dieselbe oder eine andere bedingte Formatierung auf die Schriftfarbe und die Hintergrundfarbe eines Felds anwenden. Wenn Sie für ein Feld eine gleiche Farbe für Schrift und Hintergrund auswählen, wird die Schrift in den Hintergrund eingeblendet, sodass die Tabellenspalte nur die Farben anzeigt.
 
-### <a name="color-by-rules"></a>Nach Regeln färben
+## <a name="color-by-color-scale"></a>Farbe nach Farbskala
 
-Wenn Sie **Farbe nach Regeln** auswählen, können Sie mindestens einen Wertbereich eingeben, jeweils mit einer festgelegten Farbe.  Jeder Wertbereich beginnt mit einer *Wenn Wert*-Bedingung, einem *Und*-Wertbedingung und einer Farbe.
+Um den Zellhintergrund oder die Schriftfarbe nach einer Farbskala zu formatieren, wählen Sie im Feld **Formatieren nach** des Dialogfelds **Hintergrundfarbe** oder **Schriftfarbe** die Option **Farbskala** aus. Wählen Sie unter **Basierend auf Feld** das Feld aus, auf dem die Formatierung basieren soll. Sie können die Formatierung auf dem aktuellen Feld oder auf einem beliebigen Feld in Ihrem Modell basieren, das numerische oder Farbdaten enthält. 
 
-![Wertbereich „Farbe nach Regeln“](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-if-value.png)
+Geben Sie unter **Zusammenfassung** den Aggregationstyp an, den Sie für das ausgewählte Feld verwenden möchten. Wählen Sie unter **Standardformatierung** eine Formatierung aus, die auf leere Werte angewendet werden soll. 
 
-Tabellenzellen mit Werten in jedem Bereich werden mit der angegebenen Farbe aufgefüllt. In der folgenden Abbildung werden drei Regeln dargestellt.
+Wählen Sie unter **Minimum** und **Maximum** aus, ob das Farbschema auf den niedrigsten und höchsten Feldwert oder auf von Ihnen eingegebene benutzerdefinierte Werte angewendet werden soll. Wählen Sie aus der Dropdownliste die Farbmuster aus, die Sie auf die minimalen und maximalen Werte anwenden möchten. Aktivieren Sie das Kontrollkästchen **Abweichend**, um auch einen **Mittenwert** und eine Farbe anzugeben. 
 
-![Beispiel „Farbe nach Regeln“](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules.png)
+![Festlegen von Zellenhintergrund mit Farbskala](media/desktop-conditional-table-formatting/table-formatting-1-diverging-table.png)
 
-Die Beispieltabelle sieht nun so aus:
+Eine Beispieltabelle mit der Farbskala-Hintergrundformatierung in der Spalte **Affordability** (Erschwinglichkeit) sieht folgendermaßen aus:
+
+![Beispieltabelle mit abweichender Hintergrundfarbskala](media/desktop-conditional-table-formatting/table-formatting-1-apply-color-to.png)
+
+Die Beispieltabelle mit der Farbskala-Schriftformatierung in der Spalte **Affordability** (Erschwinglichkeit) sieht folgendermaßen aus:
+
+![Beispieltabelle mit abweichender Schriftfarbskala](media/desktop-conditional-table-formatting/table-formatting-2-table.png)
+
+## <a name="color-by-rules"></a>Nach Regeln färben
+
+Um den Zellhintergrund oder die Schriftfarbe nach Regeln zu formatieren, wählen Sie im Feld **Formatieren nach** des Dialogfelds **Hintergrundfarbe** oder **Schriftfarbe** die Option **Regeln** aus. Auch hier zeigt **Basierend auf Feld** das Feld an, auf dem die Formatierung basiert, und **Zusammenfassung** zeigt den Aggregationstyp für das Feld an. 
+
+Geben Sie unter **Regeln** einen oder mehrere Wertebereiche ein, und stellen Sie für jeden einzelnen eine Farbe ein. Jeder Wertebereich verfügt über eine *Wenn Wert*-Bedingung, eine *Und*-Wertbedingung und eine Farbe. Zellenhintergründe oder Schriften in den einzelnen Wertebereichen erhalten die angegebene Farbe. Das folgende Beispiel hat drei Regeln:
+
+![Nach Regeln färben](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-if-value.png)
+
+Eine Beispieltabelle mit der regelbasierten Hintergrundfarbformatierung in der Spalte **Affordability** (Erschwinglichkeit) sieht folgendermaßen aus:
 
 ![Beispieltabelle mit „Farbe nach Regeln“](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-table.png)
 
+## <a name="color-by-color-values"></a>Farbe nach Farbwerten
 
-### <a name="color-minimum-to-maximum"></a>Farbe Minimum zu Maximum
+Wenn Sie ein Feld oder Measure mit Farbnamen- oder Hexadezimalwertdaten besitzen, können Sie die bedingte Formatierung verwenden, um diese Farben automatisch auf die Hintergrund- oder Schriftfarbe einer Spalte anzuwenden. Sie können auch eine benutzerdefinierte Logik verwenden, um Farben auf die Schrift oder den Hintergrund anzuwenden.
 
-Sie können die Werte *Minimum* und *Maximum* sowie deren Farben konfigurieren. Wenn Sie das Kontrollkästchen **Abweichend** aktivieren, können Sie auch einen optionalen Wert für *Zentriert* konfigurieren.
+Das Feld kann alle in der CSS-Farbspezifikation unter [https://www.w3.org/TR/css-color-3/](https://www.w3.org/TR/css-color-3/) aufgeführten Farbwerte verwenden. Diese Farbwerte können Folgendes enthalten:
+- 3-, 6- oder 8-stellige Hexadezimalcodes, z. B. #3E4AFF. Vergessen Sie nicht, das #-Symbol am Anfang des Codes einzuschließen. 
+- RGB- oder RGBA-Werte, z. B. RGBA(234, 234, 234, 0.5).
+- HSL- oder HSLA-Werte, z. B. HSLA(123, 75%, 75%, 0.5).
+- Farbnamen, z. B. Green, SkyBlue, PeachPuff (Grün, Himmelblau, Pfirsichhauch). 
 
-![Schaltfläche „Abweichend“](media/desktop-conditional-table-formatting/table-formatting-1-diverging.png)
+In der folgenden Tabelle ist jedem Bundesstaat ein Farbname zugeordnet: 
 
-Die Beispieltabelle sieht nun so aus:
+![Bundesstaatstabelle mit Farbnamen](media/desktop-conditional-table-formatting/conditional-table-formatting_01.png)
 
-![Beispieltabelle mit abweichenden Farben](media/desktop-conditional-table-formatting/table-formatting-1-diverging-table.png)
+Um die Spalte **Farbe** auf der Grundlage ihrer Feldwerte zu formatieren, wählen Sie **Bedingte Formatierung** für das Feld **Farbe** und dann **Hintergrundfarbe** oder **Schriftfarbe** aus. 
 
-## <a name="font-color-scales"></a>Skalen für die Schriftfarbe
+Wählen Sie im Dialogfeld **Hintergrundfarbe** oder **Schriftfarbe** die Option **Feldwert** aus dem Dropdownfeld **Formatieren nach** aus.
 
-Durch Auswahl von **Bedingte Formatierung** und **Skalen für die Schriftfarbe** wird das folgende Dialogfeld angezeigt. Dieses Dialogfeld ähnelt dem Dialogfeld **Skalen für die Hintergrundfarbe**, es wird jedoch die Schriftfarbe geändert und nicht die Hintergrundfarbe der Zelle.
+![Formatieren nach Feldwert](media/desktop-conditional-table-formatting/conditional-table-formatting_02.png)
 
-![Dialogfeld „Skalen für die Schriftfarbe“](media/desktop-conditional-table-formatting/table-formatting-2-diverging.png)
+Eine Beispieltabelle mit farbfeldwertbasierter Formatierung der **Hintergrundfarbe** auf das Feld **Farbe** sieht folgendermaßen aus:
 
-Die Beispieltabelle sieht nun so aus:
+![Beispieltabelle mit Hintergrundformatierung nach Feldwert](media/desktop-conditional-table-formatting/conditional-table-formatting_03.png)
 
-![Beispieltabelle mit Skalen für die Schriftfarbe](media/desktop-conditional-table-formatting/table-formatting-2-table.png)
+Wenn Sie auch den **Feldwert** zur Formatierung der Spalte **Schriftfarbe** verwenden, ist das Ergebnis eine Volltonfarbe in der Spalte **Farbe**:
 
-## <a name="data-bars"></a>Datenbalken
+![Formatieren von Hintergrund und Schrift nach Feldwert](media/desktop-conditional-table-formatting/conditional-table-formatting_04.png)
 
-Durch Auswahl von **Bedingte Formatierung** und **Datenbalken** wird das folgende Dialogfeld angezeigt. 
+## <a name="color-based-on-a-calculation"></a>Farbe basierend auf einer Berechnung
+
+Sie können eine DAX-Berechnung erstellen, die verschiedene Werte auf der Grundlage der von Ihnen ausgewählten Bedingungen der Geschäftslogik ausgibt. Die Erstellung einer DAX-Formel ist in der Regel schneller als die Erstellung mehrerer Regeln im Dialogfeld für bedingte Formatierung. 
+
+Die folgende DAX-Formel wendet z. B. hexadezimale Farbwerte auf eine neue Spalte **Affordability rank** (Erschwinglichkeitsrang) an, basierend auf den vorhandenen **Affordability**-Spaltenwerten (Erschwinglichkeit):
+
+![DAX-Berechnung](media/desktop-conditional-table-formatting/conditional-table-formatting_05.png)
+
+Wählen Sie zum Anwenden der Farben die bedingte Formatierung **Hintergrundfarbe** oder **Schriftfarbe** für die Spalte **Affordability** (Erschwinglichkeit) aus, und basieren Sie die Formatierung auf dem **Feldwert** der Spalte **Affordability rank** (Erschwinglichkeitsrang). 
+
+![Basishintergrundfarbe für eine berechnete Spalte](media/desktop-conditional-table-formatting/conditional-table-formatting_06.png)
+
+Die Beispieltabelle mit der Hintergrundfarbe **Affordability** (Erschwinglichkeit) basierend auf dem berechneten **Affordability rank** (Erschwinglichkeitsrang) sieht folgendermaßen aus:
+
+![Beispieltabelle mit einer berechneten wertbasierten Farbe](media/desktop-conditional-table-formatting/conditional-table-formatting_07.png)
+
+Sie können viele weitere Variationen erstellen, indem Sie einfach Ihre Vorstellungskraft und ein wenig DAX verwenden.
+
+## <a name="add-data-bars"></a>Hinzufügen von Datenbalken
+
+Um Datenbalken basierend auf Zellwerten anzuzeigen, wählen Sie **Bedingte Formatierung** für das Feld **Affordability** (Erschwinglichkeit) aus, und wählen Sie dann **Datenbalken** aus dem Dropdownmenü aus. 
+
+Im Dialogfeld **Datenbalken** ist die Option **Nur Balken anzeigen** standardmäßig deaktiviert, sodass die Tabellenzellen sowohl die Balken als auch die tatsächlichen Werte anzeigen. Aktivieren Sie das Kontrollkästchen **Nur Balken anzeigen**, um nur die Datenbalken anzuzeigen.
+
+Sie können Werte für **Minimum** und **Maximum**, Farben und Richtung des Datenbalkens und die Farbe der Achse angeben. 
 
 ![Dialogfeld „Datenbalken“](media/desktop-conditional-table-formatting/table-formatting-3-default.png)
 
-In der Standardeinstellung ist die Option **Nur Balken anzeigen** deaktiviert, deshalb werden in der Tabellenzelle jeweils die Leiste und der aktuelle Wert angezeigt.
+Mit den auf die Spalte **Affordability** (Erschwinglichkeit) angewandten Datenbalken sieht die Beispieltabelle wie folgt aus:
 
-![Beispieltabelle mit Datenbalken und Werten](media/desktop-conditional-table-formatting/table-formatting-3-default-table.png)
+![Beispieltabelle mit Datenbalken](media/desktop-conditional-table-formatting/table-formatting-3-default-table-bars.png)
 
-Wenn die Option **Nur Balken anzeigen** aktiviert ist, zeigt die Tabellenzelle nur die Leiste an.
+## <a name="add-icons"></a>Hinzufügen von Symbolen
 
-![Beispieltabelle nur mit Datenbalken](media/desktop-conditional-table-formatting/table-formatting-3-default-table-bars.png)
+Wählen Sie zum Anzeigen von Symbolen, die auf Zellwerten basieren, **Bedingte Formatierung** für das Feld und dann **Symbole** aus dem Dropdownmenü aus. 
 
-## <a name="color-formatting-by-field-value"></a>Farbformatierung nach Feldwerten
+Wählen Sie im Dialogfeld **Symbole** unter **Formatieren nach** entweder **Regeln** oder **Feldwert** aus. 
 
-Sie können ein Measure oder eine Spalte zum Festlegen einer Farbe verwenden, indem entweder ein Textwert oder einen Hexadezimalcode verwendet wird, um diese Farbe für den Hintergrund der Schriftfarbe einer Tabelle oder eines Matrixvisuals zu übernehmen. Sie können auch eine benutzerdefinierte Logik für ein angegebenes Feld erstellen, sodass durch diese Logik die gewünschte Farbe für die Schriftart oder den Hintergrund übernommen wird.
+Wählen Sie zum Formatieren nach Regeln eine **Basierend auf Feld**-Methode, eine **Zusammenfassung**-Methode, ein **Symbollayout**, eine **Symbolausrichtung**, das Symbol **Format** und mindestens eine **Regel**. Geben Sie unter **Regeln** eine oder mehrere Regeln mit einer *Wenn Wert*-Bedingung und einer *Und*-Wertbedingung ein, und wählen Sie ein Symbol aus, das auf jede Regel angewendet werden soll. 
 
-In der folgenden Tabelle ist beispielsweise jedem Produktmodell eine Farbe zugeordnet. 
+Wählen Sie zum Formatieren nach Feldwerten eine **Basierend auf Feld**-Methode, eine **Zusammenfassung**-Methode, ein **Symbollayout** und eine **Symbolausrichtung** aus.
 
-![ProductName-Feld mit dem Namen der Farbe](media/desktop-conditional-table-formatting/conditional-table-formatting_01.png)
+Das folgende Beispiel fügt Symbole auf der Grundlage von drei Regeln hinzu:
 
-Sie können Zelle auf Grundlage des Feldwerts formatieren, indem Sie per Rechtsklick auf die Spalte *Farbe* das Dialogfeld **Bedingte Formatierung** für dieses Visual auswählen und in diesem Fall im Menü auf **Hintergrundfarbe** klicken. 
+![Dialogfeld „Symbole“](media/desktop-conditional-table-formatting/table-formatting-1-default-table.png)
 
-![Auswählen der Hintergrundfarbe im Menü](media/desktop-conditional-table-formatting/conditional-table-formatting_02.png)
+Wählen Sie **OK** aus. Mit den auf die Spalte **Affordability** (Erschwinglichkeit) nach Regeln angewandten Symbolen sieht die Beispieltabelle wie folgt aus:
 
-Wählen Sie im angezeigten Dialogfeld wie in der folgenden Abbildung dargestellt **Feldwert** im Dropdownmenü **Formatieren nach** aus.
+![Beispieltabelle mit Symbolen](media/desktop-conditional-table-formatting/table-formatting-1-default-dialog.png)
 
-![Formatieren nach Feldwert](media/desktop-conditional-table-formatting/conditional-table-formatting_03.png)
+## <a name="format-as-web-urls"></a>Formatieren als Web-URLs
 
-Sie können diesen Prozess für die Schriftfarbe wiederholen, und das Ergebnis im Visual ist wie im folgenden Bildschirm dargestellt eine Volltonfarbe in der Spalte **Farbe**.
+Wenn Sie über eine Spalte oder ein Measure verfügen, das Website-URLs enthält, können Sie diese URLs mithilfe der bedingten Formatierung als aktive Links auf Felder anwenden. Die folgende Tabelle hat z. B. eine Spalte **Website** mit Website-URLs für jeden Bundesstaat:
 
-![Formatieren nach Feldwert](media/desktop-conditional-table-formatting/conditional-table-formatting_04.png)
+![Tabelle mit Web-URL-Spalte](media/desktop-conditional-table-formatting/table-formatting-1-diverging.png)
 
-Sie können auch eine auf Geschäftslogik basierende DAX-Berechnung erstellen, die je nach den bevorzugten Bedingungen verschiedene Hexadezimalcodes ausgibt. Dies ist im Allgemeinen einfacher als das Erstellen mehrerer Regeln im Dialogfeld für die bedingte Formatierung. Betrachten Sie das *ColorKPI*-Feld in der folgenden Beispielabbildung.
+Wählen Sie zur Anzeige der Namen der einzelnen Bundesstaatsnamen als Live-Link zu ihrer Website die Option **Bedingte Formatierung** für das Feld **State** (Bundesstaat) und anschließend **Web-URL** aus. Wählen Sie im Dialogfeld **Web-URL** unter **Basierend auf Feld** die Option **Website** und anschließend die Option **OK** aus. 
 
-![DAX-Berechnungen](media/desktop-conditional-table-formatting/conditional-table-formatting_05.png)
+Mit der Formatierung **Web-URL**, die auf das Feld **State** (Bundesstaat) angewendet wird, ist jeder Bundesstaatsname ein aktiver Link zu seiner Website. In der folgenden Beispieltabelle wird die Formatierung **Web-URL** auf die Spalte **State** (Bundesstaat) und die bedingte Formatierung **Datenbalken** und **Hintergrundformatierung** auf die Spalte **Affordability** (Erschwinglichkeit) angewendet. 
 
-Anschließend können Sie den Feldwert für **Hintergrundfarbe** auf folgende Weise festlegen.
-
-![Festlegen der Feldfarbe basierend auf KPI](media/desktop-conditional-table-formatting/conditional-table-formatting_06.png)
-
-Dadurch werden beispielsweise Ergebnisse wie die folgende Matrix angezeigt.
-
-![Matrixvisual mit auf KPI-Wert basierender Farbe](media/desktop-conditional-table-formatting/conditional-table-formatting_07.png)
-
-Mithilfe von DAX und etwas Kreativität können Sie viele weitere Varianten erstellen.
-
-Sie können einen beliebigen der in der CSS-Farbspezifikation unter [https://www.w3.org/TR/css-color-3/](https://www.w3.org/TR/css-color-3/) aufgeführten Werte verwenden, um Ihre Visuals in einer bestimmten Farbe anzuzeigen:
-* Hexadezimalcodes mit 3, 6 oder 8 Ziffern, z. B. #3E4AFF. Vergessen Sie nicht, das #-Symbol am Anfang des Codes einzuschließen. „3E4AFF“ wird nicht akzeptiert. 
-* RGB- oder RGBA-Werte, z. B. RGBA(234, 234, 234, 0.5)
-* HSL- oder HSLA-Werte, z. B. HSLA(123, 75%, 75%, 0.5)
-* Farbnamen, z. B. Green, SkyBlue, PeachPuff (Grün, Himmelblau, Pfirsichhauch) 
+![Tabelle mit Web-URL, Datenbalken und Hintergrundfarbe](media/desktop-conditional-table-formatting/table-formatting-3-default-table.png)
 
 ## <a name="considerations-and-limitations"></a>Überlegungen und Einschränkungen
 Bei der Anwendung von bedingter Formatierung auf Tabellen sollten Sie folgende Überlegungen berücksichtigen:
 
-* Bedingte Formatierung wird nur auf die Werte eines **Matrix**-Visuals angewendet und gilt nicht für Teilergebnisse oder Gesamtergebnisse. 
-* Bedingte Formatierung wird nicht auf die Zeile **Gesamt** angewendet.
-* Alle Tabellen, die keine Gruppierung aufweisen, werden als einzelne Zeile angezeigt, die keine bedingte Formatierung unterstützt.
-* Wenn Sie das Farbverlaufsformat mit automatischen Maximal-/Minimalwerten oder regelbasierte Formatierung mit Prozentregeln verwenden, kann bedingte Formatierung nicht angewendet werden, wenn Ihre Daten NaN-Werte enthalten. NaN bedeutet „Not a Number“, was in der Regel durch einen Fehler aufgrund einer Division durch Null verursacht wird. Mit der [Divide () DAX-Funktion](https://docs.microsoft.com/dax/divide-function-dax) können Sie diese Fehler vermeiden.
-
+- Die bedingte Formatierung bezieht sich nur auf die Werte von visuellen Tabellen- oder Matrixelementen und gilt nicht für Zwischensummen, Gesamtsummen oder die Zeile **Summe**. 
+- Alle Tabellen, die keine Gruppierung aufweisen, werden als einzelne Zeile angezeigt, die keine bedingte Formatierung unterstützt.
+- Sie können keine Farbverlaufsformatierung mit automatischen Maximal-/Minimalwerten oder regelbasierte Formatierung mit Prozentregeln anwenden, wenn Ihre Daten *NaN*-Werte enthalten. NaN bedeutet „Not a Number“, was in der Regel durch einen Fehler aufgrund einer Division durch Null verursacht wird. Mit der [Divide () DAX-Funktion](https://docs.microsoft.com/dax/divide-function-dax) können Sie diese Fehler vermeiden.
+- Die bedingte Formatierung erfordert eine Aggregation oder ein Measure, das auf den Wert angewendet wird. Deshalb wird im Beispiel **Farbe nach Wert** „Erster“ oder „Letzter“ angezeigt. Wenn Sie Ihren Bericht für einen mehrdimensionalen Cube des Analysedienstes erstellen, können Sie kein Attribut für die bedingte Formatierung verwenden, es sei denn, der Cubebesitzer hat ein Measure erstellt, das den Wert bereitstellt.
 
 ## <a name="next-steps"></a>Nächste Schritte
-Weitere Informationen finden Sie im folgenden Artikel:  
 
-* [Tipps und Tricks zur Farbformatierung in Power BI](visuals/service-tips-and-tricks-for-color-formatting.md)  
+Weitere Informationen zur Farbformatierung finden Sie unter [Tipps und Tricks zur Farbformatierung in Power BI](visuals/service-tips-and-tricks-for-color-formatting.md).  
 
