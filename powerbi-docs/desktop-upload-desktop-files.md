@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: fa8e901d73d6ae0f35e74a427354368e75977202
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: d528ba824986ff171688a55aee2ca2febe523236
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73865342"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75759288"
 ---
-# <a name="publish-from-power-bi-desktop"></a>Veröffentlichen aus Power BI Desktop
+# <a name="publish-datasets-and-reports-from-power-bi-desktop"></a>Veröffentlichen von Datasets und Berichten aus Power BI Desktop
 Wenn Sie eine **Power BI Desktop**-Datei für den **Power BI-Dienst** veröffentlichen, werden die Daten im Modell und alle Berichte, die Sie in der **Berichtsansicht** erstellt haben, in Ihrem Power BI-Arbeitsbereich veröffentlicht. Ein neues Dataset mit dem gleichen Namen und die jeweiligen Berichte werden im Navigationsbereich Ihres Arbeitsbereichs angezeigt.
 
 Das Veröffentlichen aus **Power BI Desktop** hat die gleiche Auswirkung wie die Verwendung der Funktion **Abrufen von Daten** in Power BI, um eine Verbindung mit einer **Power BI Desktop**-Datei herzustellen und diese hochzuladen.
@@ -27,7 +27,7 @@ Das Veröffentlichen aus **Power BI Desktop** hat die gleiche Auswirkung wie die
 > 
 
 ## <a name="to-publish-a-power-bi-desktop-dataset-and-reports"></a>So veröffentlichen Sie ein Power BI Desktop-Dataset und die zugehörigen Berichte
-1. Wählen Sie in Power BI Desktop die Optionen **Datei** \> **Veröffentlichen** \> **In Power BI veröffentlichen** aus, oder klicken Sie im Menüband auf **Veröffentlichen**.  
+1. Wählen Sie in Power BI Desktop die Optionen **Datei** \> **Veröffentlichen** \> **In Power BI veröffentlichen**, oder klicken Sie im Menüband auf **Veröffentlichen**.  
 
    ![Schaltfläche „Veröffentlichen“](media/desktop-upload-desktop-files/pbid_publish_publishbutton.png)
 

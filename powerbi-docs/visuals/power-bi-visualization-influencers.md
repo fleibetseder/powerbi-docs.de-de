@@ -6,17 +6,17 @@ ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 10/22/2019
+ms.date: 01/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 80ed285a22c0272f3bd268397e0e019396b941d7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 413e30c04ac02e6b957f03494bf6a488edeacac0
+ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870996"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885327"
 ---
-# <a name="key-influencers-visualization"></a>Visual „Wichtige Einflussfaktoren“
+# <a name="create-key-influencers-visualizations"></a>Erstellen von Visualisierungen für „Wichtige Einflussfaktoren“
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -57,7 +57,7 @@ Sehen Sie sich dieses Video an, um zu erfahren, wie ein Visual für wichtige Ein
    > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Ihr Produkt-Manager möchte, dass Sie ermitteln, welche Faktoren dazu führen, dass Kunden negative Bewertungen zu Ihrem Clouddienst abgeben. Öffnen Sie die Datei [customerfeedback.pbix](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) in Power BI Desktop, um diesem Tutorial zu folgen. Sie können außerdem die Excel-Datei [customerfeedback.xlsx](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx) für den Power BI-Dienst oder Power BI Desktop herunterladen. Wählen Sie einen der beiden Links aus, und wählen Sie von der dann geöffneten GitHub-Seite **Herunterladen** aus.
+Ihr Produkt-Manager möchte, dass Sie ermitteln, welche Faktoren dazu führen, dass Kunden negative Bewertungen zu Ihrem Clouddienst abgeben. Öffnen Sie die Datei [customerfeedback.pbix](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.pbix) in Power BI Desktop, um diesem Tutorial zu folgen. Sie können außerdem die Excel-Datei [customerfeedback.xlsx](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.xlsx) für den Power BI-Dienst oder Power BI Desktop herunterladen. Wählen Sie einen der beiden Links aus, und wählen Sie von der dann geöffneten GitHub-Seite **Herunterladen** aus.
 
 > [!NOTE]
 > Das Customer Feedback-Dataset basiert auf dem Werk [Moro et al., 2014] S. Moro, P. Cortez und P. Rita. „A Data-Driven Approach to Predict the Success of Bank Telemarketing“. *Decision Support Systems*, Elsevier, 62:22-31, Juni 2014. 
@@ -73,7 +73,7 @@ Ihr Produkt-Manager möchte, dass Sie ermitteln, welche Faktoren dazu führen, d
     - Role in Org (Rolle in der Organisation) 
     - Subscription Type (Abonnementtyp) 
     - Company Size (Unternehmensgröße) 
-    - Theme
+    - Design
     
 4. Lassen Sie das Feld **Erweitern um** leer. Dieses Feld wird nur beim Analysieren eines Measures oder eines zusammengefassten Felds verwendet. 
 
@@ -267,6 +267,8 @@ Wenn Sie mehr darüber erfahren möchten, wie Sie Measures mit der Visualisierun
  
 Für das Visual „Wichtige Einflussfaktoren“ gibt es einige Einschränkungen:
 
+
+
 - Direkte Abfrage wird nicht unterstützt.
 - Liveverbindung mit Azure Analysis Services und SQL Server Analysis Services wird nicht unterstützt.
 - Webveröffentlichung wird nicht unterstützt.
@@ -357,6 +359,9 @@ Im folgenden Beispiel geben Kunden, die Verbraucher sind, niedrige Bewertungen a
 Der Grund dafür ist, dass vom Visual beim Auffinden von Einflussfaktoren auch die Anzahl der Datenpunkte berücksichtigt werden. Im folgenden Beispiel geht es um mehr als 29.000 Verbraucher und 10-mal weniger Administratoren, also etwa 2.900. Nur 390 Administratoren haben eine niedrige Bewertung abgegeben. Das Visual verfügt nicht über genügend Daten, um zu ermitteln, ob bei den Administratoren ein Muster vorliegt oder ob es sich um einen Zufall handelt. 
 
 ![Bestimmen der Einflussfaktoren](media/power-bi-visualization-influencers/power-bi-error5.png)
+
+**Welche Datenpunktgrenzwerte bestehen für die wichtigsten Einflussfaktoren?**
+Wir führen die Analyse an einer Stichprobe von 10.000 Datenpunkten durch. Die Blasen auf der einen Seite zeigen alle gefundenen Einflussfaktoren. Die Säulendiagramme und Streudiagramme auf der anderen Seite halten sich an die Stichprobenentnahmestrategien für diese wichtigen visuellen Elemente.
 
 **Wie werden wichtige Einflussfaktoren für die kategorische Analyse ermittelt?**
 

@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 12/05/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e7fa98be039093015e1b19ba8bf20f1368658a43
-ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
+ms.openlocfilehash: 6a3458de09cece30948ff848859f05ed8127d034
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907822"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75757851"
 ---
-# <a name="filled-maps-choropleth-in-power-bi"></a>Flächenkartogramme (Choroplethenkarten) in Power BI
+# <a name="create-and-use-filled-maps-choropleth-maps-in-power-bi"></a>Erstellen und Verwenden von Flächenkartogrammen (Choroplethenkarten) in Power BI
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -66,7 +66,7 @@ In diesem Video wird eine einfache Karte erstellt und in ein Flächenkartogramm 
 [VIDEO https://www.youtube.com/embed/ajTPGNpthcg ]
 
 ### <a name="create-a-filled-map"></a>Erstellen eines Flächenkartogramms
-1. Wählen Sie im Bereich „Felder“ das Feld **Geo** \> **Bundesstaat** aus.    
+1. Wählen Sie im Bereich „Felder“ das Feld **Geo** \> **State** (Bundesstaat) aus.    
 
    ![Häkchen im gelben Kontrollkästchen neben „State“](media/power-bi-visualization-filled-maps-choropleths/power-bi-state.png)
 2. [Wandeln Sie das Diagramm](power-bi-report-change-visualization-type.md) in ein Flächenkartogramm um. Beachten Sie, dass sich **Bundesstaat** jetzt im Bereich **Standort** befindet. Bing Maps verwendet das Feld unter **Standort**bereich, um die Karte zu erstellen.  Gültige Orte umfassen z. B. Länder, Bundesländer, Landkreise, Städte, Postleitzahlen usw. Bing Maps bietet verschiedene Formen für Orte auf der ganzen Welt. Ohne einen gültigen Wert im Bereich „Ort“ kann Power BI kein Flächenkartogramm erstellen.  

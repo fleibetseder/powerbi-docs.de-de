@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: ca2f1cd4908f99d47519f2dfca42bf2afae5fbed
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: c006d35baa14e68cca7009aabf79438321396802
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73878943"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761931"
 ---
-# <a name="consuming-reports-in-power-bi-with-accessibility-tools"></a>Nutzen von Berichten in Power BI mit Barrierefreiheitstools
+# <a name="consume-power-bi-reports-by-using-accessibility-features"></a>Nutzen von Power BI-Berichten mithilfe von Barrierefreiheitstools
 Power BI verfügt über viele integrierte Funktionen zur Unterstützung von Menschen mit Einschränkungen, beispielsweise für die Nutzung von und Interaktion mit Power BI-Berichten. Diese Tools helfen Benutzern dabei, dieselben Informationen aus einem Bericht zu erhalten, wie diejenigen, die keine technische Unterstützung in Anspruch nehmen.
 
 ![Windows-Einstellungen für hohen Kontrast](media/desktop-accessibility/accessibility-consuming-tools-01.png)

@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 10/21/2019
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 83a3cc769ea9451ffa5320710bd0f04934d51393
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 1816fb7926ed378cdb70ce2e0ade08893828ce4c
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73878999"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761954"
 ---
-# <a name="resolve-issues-importing-access-and-xls-files-in-power-bi-desktop"></a>Beheben von Problemen beim Importieren von Access- und XLS-Dateien in Power BI Desktop
+# <a name="troubleshoot-importing-access-and-excel-xls-files-in-power-bi-desktop"></a>Problembehandlung beim Import von XLS-Dateien aus Access und Excel in Power BI Desktop
 
 In Power BI Desktop verwenden sowohl Access-Datenbanken als auch frühe Versionen von Excel-Arbeitsmappen (XLS-Dateien vom Typ Excel 2003 bis 97) die *Access-Datenbank-Engine*. Es gibt drei häufige Situationen, die dazu führen können, dass die Access-Datenbank-Engine nicht ordnungsgemäß funktioniert.
 

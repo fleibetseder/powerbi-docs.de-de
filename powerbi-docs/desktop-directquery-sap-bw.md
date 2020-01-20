@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ffff443716f11101347debd97f28349afc3904bb
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: fee47524be70955a123d08e10dca5ee0dd3e07fd
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876320"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761178"
 ---
-# <a name="directquery-and-sap-business-warehouse-bw"></a>DirectQuery und SAP Business Warehouse (BW)
+# <a name="connect-to-sap-business-warehouse-by-using-directquery-in-power-bi"></a>Verbinden mit SAP Business Warehouse über DirectQuery in Power BI
 Sie können sich mit **SAP Business Warehouse (BW)** -Datenquellen direkt über **DirectQuery** verbinden. Da SAP BW multidimensional ist bzw. OLAP einsetzt, gibt es viele wesentliche Unterschiede zwischen DirectQuery via SAP BW und über relationalen Datenquellen wie SQL Server. Die Unterschiede werden im Folgenden dargestellt:
 
 * Es gibt bei **DirectQuery** über relationale Datenquellen einen Satz von Abfragen (wie in den Dialogfeldern **Get Data** (Daten abrufen) und **Query Editor** (Abfrage-Editor) definiert), die die im Feld verfügbaren Daten logisch definieren. Bei der Verbindung mit einer OLAP-Quelle wie SAP BW ist dies *nicht* der Fall. Bei der Verbindung mit dem SAP-Server mit **Daten abrufen** wird stattdessen nur die Abfrage „Infocube“ oder „BEx“ verwendet. Anschließend stehen alle Kennzahlen und Dimensionen der Infocube/BEx-Abfrage in der Feldliste zur Verfügung.   

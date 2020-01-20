@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1a09bd706a69156066f077bfb1668dd27448bd40
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: bf83df157738621116eb9e5461876eee8faf0863
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878601"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761678"
 ---
-# <a name="connect-to-azure-cost-management-in-power-bi-desktop"></a>Herstellen einer Verbindung mit Azure Cost Management in Power BI Desktop
+# <a name="create-visuals-and-reports-with-the-azure-cost-management-connector-in-power-bi-desktop"></a>Erstellen von visuellen Elementen und Berichten mit dem Azure Cost Management-Connector in Power BI Desktop
 
 Mit dem Azure Cost Management-Connector für Power BI Desktop können Sie leistungsstarke, benutzerdefinierte Visualisierungen und Berichte erstellen, die Ihnen helfen, Ihre Azure-Ausgaben besser zu verstehen. Der Azure Cost Management-Connector unterstützt derzeit Kunden mit einer [Microsoft-Kundenvereinbarung](https://azure.microsoft.com/pricing/purchase-options/microsoft-customer-agreement/) oder einem [Enterprise Agreement](https://azure.microsoft.com/pricing/enterprise-agreement/).  
 

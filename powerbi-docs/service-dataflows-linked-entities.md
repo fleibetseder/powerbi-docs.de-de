@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 31e2e681bc4309e5dce31583e70e669bce5e466f
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 3e6de89f66d6f6282fcde25a1d2be445e2721817
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73877235"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762184"
 ---
 # <a name="link-entities-between-dataflows-in-power-bi"></a>Verknüpfen von Entitäten zwischen Dataflows in Power BI
 
@@ -81,6 +81,7 @@ Es gibt einige Einschränkungen, die es bei der Arbeit mit verknüpften Entität
 * Zyklische Abhängigkeiten von verknüpften Entitäten sind nicht zulässig.
 * Der Dataflow muss sich in einem [neuen Power BI-Arbeitsbereich](service-create-the-new-workspaces.md) befinden.
 * Eine verknüpfte Entität kann nicht mit einer normalen Entität verbunden werden, die Daten aus einer lokalen Datenquelle abruft.
+* Wenn eine Abfrage (z. B. Abfrage A) in der Berechnung einer anderen Abfrage (Abfrage B) in Dataflows auftritt, wird Abfrage B zu einer berechneten Entität. Berechnete Entitäten können sich nicht auf lokale Quellen beziehen.
 
 
 ## <a name="next-steps"></a>Nächste Schritte

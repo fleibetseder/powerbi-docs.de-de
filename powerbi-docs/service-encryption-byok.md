@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/24/2019
+ms.date: 01/08/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 4cddf01dd57191b5d3e707589e6d8a78e106259f
-ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
+ms.openlocfilehash: c4b4d706f56d9ebc91b17194c9b2fa631aeb8497
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74958469"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762115"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Bring Your Own Key für Verschlüsselungsschlüssel in Power BI (Vorschauversion)
 
@@ -104,6 +104,8 @@ Beachten Sie folgende Punkte, bevor Sie BYOK aktivieren:
 - Momentan können Sie BYOK nicht mehr deaktivieren, sobald Sie es einmal aktiviert haben. Je nachdem, wie Sie Parameter für `Add-PowerBIEncryptionKey` angeben, können Sie bestimmen, wie Sie BYOK für eine oder mehrere Kapazitäten verwenden. Sie können hinzugefügte Schlüssel nicht mehr aus Ihrem Mandanten entfernen. Weitere Informationen finden Sie weiter unten unter [Aktivieren von BYOK](#enable-byok).
 
 - Sie können Arbeitsbereiche, die BYOK verwenden, nicht _direkt_ von einer dedizierten Kapazität in Power BI Premium in eine gemeinsam genutzte Kapazität verschieben. Dazu müssen Sie zunächst den betreffenden Arbeitsbereich in eine dedizierte Kapazität verschieben, in der BYOK nicht aktiviert ist.
+
+- Wenn Sie einen Arbeitsbereich, der BYOK verwendet, von einer dedizierten Kapazität in Power BI Premium nach „shared“ (gemeinsame Nutzung) verschieben, werden Berichte und Datasets unzugänglich, da sie mit dem Schlüssel verschlüsselt werden. Um diese Situation zu vermeiden, müssen Sie zunächst den betreffenden Arbeitsbereich in eine dedizierte Kapazität verschieben, in der BYOK nicht aktiviert ist.
 
 ### <a name="enable-byok"></a>Aktivieren von BYOK
 

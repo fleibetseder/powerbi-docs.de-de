@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a3ba6f8faf22d3854ecfcbc40e7931ca887de0f7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 25d80cd81eb06913eb24c17ef10db47fa4d2bea5
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876650"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761908"
 ---
-# <a name="using-the-analytics-pane-in-power-bi-desktop"></a>Verwenden des Analysebereichs in Power BI Desktop
+# <a name="use-the-analytics-pane-in-power-bi-desktop"></a>Verwenden des Analysebereichs in Power BI Desktop
 Mit dem Bereich **Analyse** in **Power BI Desktop** können Sie dynamische *Bezugslinien* zu Visualisierungen hinzufügen und wichtige Trends und Erkenntnisse identifizieren. Der Bereich **Analyse** befindet sich in Power BI Desktop unter **Visualisierungen**.
 
 ![](media/desktop-analytics-pane/analytics-pane_1.png)
@@ -108,7 +108,7 @@ Außerdem können für nicht kartesische visuelle Elemente zurzeit keine dynamis
 Die Linie für den Durchschnittswert ist nur verfügbar, wenn importierte Daten in **Power BI Desktop** verwendet werden oder einer Liveverbindung mit einem Modell auf einem Server mit **Analysis Service 2016** oder höher, **Azure Analysis Services** oder einem Dataset im Power BI-Dienst hergestellt wird. 
 
 ## <a name="next-steps"></a>Nächste Schritte
-Mit Power BI Desktop können Sie viele Aufgaben ausführen. Weitere Informationen zu den Funktionen und Möglichkeiten finden Sie in folgenden Ressourcen:
+Mit Power BI Desktop können Sie viele Aufgaben ausführen. Weitere Informationen zu den Funktionen und Möglichkeiten finden Sie in den folgenden Ressourcen:
 
 * [Neuigkeiten in Power BI Desktop](desktop-latest-update.md)
 * [Laden Sie Power BI Desktop herunter](desktop-get-the-desktop.md)

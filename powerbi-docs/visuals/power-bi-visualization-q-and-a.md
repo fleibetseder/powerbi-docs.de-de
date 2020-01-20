@@ -7,18 +7,18 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/19/2019
 ms.author: mohaali
-ms.openlocfilehash: 9805b98df7f606e61412ca9dee7dc0467a1649a3
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: a17f98859e637621fbae037610359c8f29391a98
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74791830"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762276"
 ---
-# <a name="introduction-to-power-bi-qa-visual"></a>Einführung in Q&A-Visuals in Power BI
+# <a name="introduction-to-power-bi-qa-visualizations"></a>Einführung in Q&A-Visualisierungen in Power BI
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-## <a name="what-is-the-qa-visual"></a>Was ist ein Q&A-Visual?
+## <a name="what-are-qa-visualizations"></a>Was sind Q&A-Visualisierungen?
 
 Über ein Q&A-Visual können Benutzer in natürlicher Sprache Fragen stellen und erhalten Antworten in Form eines Visuals. 
 

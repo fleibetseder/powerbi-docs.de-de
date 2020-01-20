@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 87a72ba5ac69334c04e65871c81a9006e183d88d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8e1babaa39a1f52a06c69dcb9aac2441ca02452b
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876370"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761270"
 ---
-# <a name="data-view-in-power-bi-desktop"></a>Datenansicht in Power BI Desktop
+# <a name="work-with-data-view-in-power-bi-desktop"></a>Arbeiten mit der Datenansicht in Power BI Desktop
 Mit der **Datenansicht** können Sie Daten im **Power BI Desktop-Modell** überprüfen, untersuchen und verstehen. Sie unterscheidet sich von der Anzeige von Tabellen, Spalten und Daten im **Abfrage-Editor**. Mit der Datenansicht sehen Sie die Daten, *nachdem* sie in das Modell geladen wurden.
 
 Wenn Sie Ihre Daten modellieren, möchten Sie möglicherweise sehen, was tatsächlich in einer Tabelle oder Spalte vorhanden ist, ohne eine Visualisierung im Berichtszeichenbereich zu erstellen, und zwar häufig bis auf Zeilenebene. Dies ist besonders nützlich, wenn Sie Measures und berechnete Spalten erstellen oder einen Datentyp oder die Datenkategorie identifizieren müssen.

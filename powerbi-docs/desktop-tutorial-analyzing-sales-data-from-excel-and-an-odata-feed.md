@@ -9,14 +9,14 @@ ms.topic: tutorial
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 8d1b253d5e84bb15dea4612978ee970faccb7a1a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 712864afdea5431fa630d052271e8cb2c05e9dd2
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73866086"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75759880"
 ---
-# <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Tutorial: Kombinieren von Umsatzdaten aus Excel und einem OData-Feed
+# <a name="tutorial-analyze-sales-data-from-excel-and-an-odata-feed"></a>Tutorial: Analysieren von Umsatzdaten aus Excel und einem OData-Feed
 
 Es ist üblich, dass sich Daten an mehreren Datenquellen befinden. Es kann z. B. sein, dass Sie über zwei Datenbanken verfügen, eine für Produktinformationen und eine für Vertriebsinformationen. Mit **Power BI Desktop** können Sie Daten aus verschiedenen Quellen kombinieren, um aufschlussreiche, überzeugende Datenanalysen und Visualisierungen zu erstellen. 
 
@@ -75,7 +75,7 @@ Importieren Sie als Nächstes die Auftragsdaten aus dem OData-Feed des Northwind
    
    ![Abrufen von OData](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata.png)
    
-2. Fügen Sie im Dialogfeld **OData-Feed** die URL für den Northwind-OData-Feed `https://services.odata.org/V3/Northwind/Northwind.svc/` ein. Wählen Sie **OK**aus.
+2. Fügen Sie im Dialogfeld **OData-Feed** die URL für den Northwind-OData-Feed `https://services.odata.org/V3/Northwind/Northwind.svc/` ein. Wählen Sie **OK** aus.
    
    ![Dialogfeld „OData-Feed“](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata2.png)
    
@@ -120,7 +120,7 @@ Im Power Query-Editor können Sie Berechnungen und benutzerdefinierte Felder ers
 
 3. Geben Sie im Feld **Benutzerdefinierte Spaltenformel** nach *=* Folgendes ein: **[Order_Details.UnitPrice]** \* **[Order_Details.Quantity]** . (Sie können die Feldnamen auch aus dem Scrollfeld **Verfügbare Spalten** auswählen und auf **<< Einfügen** klicken, statt sie einzugeben.) 
 
-4. Wählen Sie **OK**aus.
+4. Wählen Sie **OK** aus.
    
    ![Dialogfeld „Benutzerdefinierte Spalte“](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/11.png)
 

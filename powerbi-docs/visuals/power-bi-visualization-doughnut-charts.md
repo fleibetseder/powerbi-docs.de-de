@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 06/11/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 4dd6f185ea7d4f4664626586f1374f67bd34f784
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 0e870163552e64594e574669ed8dea6937633282
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870929"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75757720"
 ---
-# <a name="doughnut-charts-in-power-bi"></a>Ringdiagramme in Power BI
+# <a name="create-and-use-doughnut-charts-in-power-bi"></a>Erstellen und Verwenden von Ringdiagrammen in Power BI
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -37,13 +37,13 @@ Dieses Tutorial verwendet die [PBIX-Datei mit einem Analysebeispiel für den Ein
 
 ## <a name="create-a-doughnut-chart"></a>Erstellen eines Ringdiagramms
 
-1. Beginnen Sie auf einer leeren Berichtsseite, und wählen Sie im Bereich „Felder“ die Option **Sales** \> **Last Year Sales**.  
+1. Beginnen Sie auf einer leeren Berichtsseite, und wählen Sie im Bereich „Felder“ die Option **Sales** \> **Last Year Sales** (Verkäufe > Verkäufe im letzten Jahr).  
    
 3. Wählen Sie im Bereich „Visualisierungen“ das Symbol für ein Ringdiagramm ![Symbol für Ringdiagramm](media/power-bi-visualization-doughnut-charts/power-bi-icon.png) aus, um das Balkendiagramm in ein Ringdiagramm zu konvertieren. Wenn sich die Kategorie **Verkäufe im letzten Jahr** nicht im Bereich **Werte** befindet, ziehen Sie diese dorthin.
      
    ![Bereich „Visualisierung“ mit ausgewähltem Ringdiagramm](media/power-bi-visualization-doughnut-charts/power-bi-doughnut-chart.png)
 
-4. Wählen Sie **Element** \> **Kategorie** aus, um die Kategorie dem Bereich **Legende** hinzuzufügen. 
+4. Wählen Sie **Element** \> **Kategorie** aus, um die Kategorie dem **Legendenbereich** hinzuzufügen. 
      
     ![Ringdiagramm neben Bereich „Felder“](media/power-bi-visualization-doughnut-charts/power-bi-doughnut-done.png)
 

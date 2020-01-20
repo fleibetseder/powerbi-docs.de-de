@@ -9,14 +9,15 @@ ms.topic: conceptual
 ms.date: 11/4/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5417511b12c85cb467c3613671a1e101541c9609
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: f1598aabee45359b312d39f836cede8ca4198bb2
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73880616"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75758621"
 ---
-# <a name="show-the-data-that-was-used-to-create-the-visualization"></a>Anzeigen der Daten, die zum Erstellen der Visualisierung verwendet wurden
+# <a name="display-a-visualizations-underlying-data"></a>Anzeigen der zugrunde liegenden Daten einer Visualisierung
+
 ## <a name="show-data"></a>Daten anzeigen
 Eine Power BI-Visualisierung wird mithilfe von Daten aus Ihren Datasets erstellt. Sie haben in Power BI die Möglichkeit, die Daten *anzuzeigen*, die der Visualisierung zugrunde liegen. Wenn Sie **Daten anzeigen** auswählen, werden die Daten in Power BI unter (oder neben) der Visualisierung angezeigt.
 
@@ -48,7 +49,7 @@ Sie können die Daten, mit denen die Visualisierung erstellt wurde, auch als XLS
     Weitere Informationen zum Exportieren der Daten in Excel finden Sie unter [Exportieren von Daten aus Power BI-Visualisierungen](power-bi-visualization-export-data.md).
 6. Wenn die Daten ausgeblendet werden sollen, deaktivieren Sie **Durchsuchen** > **Daten anzeigen**.
 
-## <a name="using-show-records"></a>Verwenden von „Datensätze anzeigen“
+## <a name="using-show-records"></a>Verwenden von „Datensätzen anzeigen“
 Sie können den Fokus auch auf einen Datensatz einer Visualisierung legen und die zugrunde liegenden Daten genauer betrachten. 
 
 1. Wählen Sie für die Verwendung von **Datensätze anzeigen** eine Visualisierung aus, um sie zu aktivieren. 

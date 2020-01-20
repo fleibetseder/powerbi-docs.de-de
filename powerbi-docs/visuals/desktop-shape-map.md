@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: eac0c6fab686a3b5cf63d035ea19b52ab83aa339
-ms.sourcegitcommit: 768e1e4b19fe8c7627010127c2420d63021cb542
+ms.openlocfilehash: 3a043a343994c02a916102b83fe79d1ccd5208bf
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199456"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762322"
 ---
-# <a name="shape-maps-in-power-bi-desktop-preview"></a>Flächenkartogramme in Power BI Desktop (Vorschau)
+# <a name="create-shape-map-visualizations-in-power-bi-desktop-preview"></a>Erstellen von Visualisierungen für Flächenkartogramme in Power BI Desktop (Vorschau)
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -196,7 +196,7 @@ Verwenden Sie in dieser Vorschauversion die folgenden **Regionsschlüssel**, um 
 
 ### <a name="france-regions"></a>Frankreich: Regionen
 
-| ID | NAME | name-en |
+| ID | name | name-en |
 | --- | --- | --- |
 | Auvergne-Rhone-Alpes |  |  |
 | Bourgogne-Franche-Comte |  |  |
@@ -279,7 +279,7 @@ Verwenden Sie in dieser Vorschauversion die folgenden **Regionsschlüssel**, um 
 | it-tc |IT-52 |Toscana |Tuscany |TC |
 | it-sc |IT-82 |Sicilia |Sicily |SC |
 | it-sd |IT-88 |Sardegna |Sardinia |SD |
-| it-pm |IT-21 |Piemonte |Piedmont |PM |
+| it-pm |IT-21 |Piemonte |Piedmont |Uhr |
 | it-ml |IT-67 |Molise |Molise |ML |
 | it-mh |IT-57 |Marche |Marche |MH |
 | it-lm |IT-25 |Lombardia |Lombardy |LM |
@@ -358,7 +358,7 @@ Verwenden Sie in dieser Vorschauversion die folgenden **Regionsschlüssel**, um 
 
 ### <a name="usa-states"></a>USA: Staaten
 
-| ID | NAME | postal |
+| ID | name | postal |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alaska |AK |
@@ -400,7 +400,7 @@ Verwenden Sie in dieser Vorschauversion die folgenden **Regionsschlüssel**, um 
 | us-ma |Massachusetts |MA |
 | us-ia |Iowa |IA |
 | us-nh |New Hampshire |NH |
-| us-or |Oregon |OR |
+| us-or |Oregon |ODER |
 | us-mn |Minnesota |MN |
 | us-vt |Vermont |VT |
 | us-id |Idaho |ID |

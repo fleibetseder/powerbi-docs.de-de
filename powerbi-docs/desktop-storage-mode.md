@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 09/26/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 8ecb52f0e9f06a2d3b1c16b4231943ea7970a56e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7b2d3975ba6bcea7b1294c1432f9278908a33ea4
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879622"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760018"
 ---
-# <a name="storage-mode-in-power-bi-desktop"></a>Speichermodus in Power BI Desktop
+# <a name="manage-storage-mode-in-power-bi-desktop"></a>Verwalten des Speichermodus in Power BI Desktop
 
 In Power BI Desktop können Sie den *Speichermodus* von Tabellen festlegen. Mit dem *Speichermodus* können Sie steuern, ob Power BI Desktop Tabellendaten im Arbeitsspeicher für Berichte zwischenspeichert. 
 

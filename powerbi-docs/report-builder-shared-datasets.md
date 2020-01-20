@@ -1,20 +1,20 @@
 ---
-title: Verwenden von freigegebenen Datasets im Power BI-Generator für paginierte Berichte
-description: Aus dem Power BI-Generator für paginierte Berichte Verbindungen mit freigegebenen Datasets herstellen
-ms.date: 07/23/2019
+title: Erstellen eines paginierten Berichts mit einem freigegebenen Power BI-Dataset – Power BI Report Builder
+description: Erstellen Sie einen paginierten Bericht in Power BI Report Builder basierend auf einem freigegebenen Power BI-Dataset.
+ms.date: 01/03/2020
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: c44f90bc29887a5431c893803cf4910e0e5093d3
-ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
+ms.openlocfilehash: 335b93720718bb72027c29c6093aad952cc4cdb2
+ms.sourcegitcommit: b09de56e971b8844a3771413d1f56d49b31baaaf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73791265"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691464"
 ---
-# <a name="use-shared-datasets-in-power-bi-report-builder"></a>Verwenden von freigegebenen Datasets im Power BI-Berichts-Generator
+# <a name="create-a-paginated-report-based-on-a-power-bi-shared-dataset"></a>Erstellen eines paginierten Berichts basierend auf einem freigegebenen Power BI-Dataset
 
 Sie können ein Dataset, das Sie in Power BI Desktop erstellt haben, als Datenquelle für paginierte Berichte des Power BI-Berichts-Generators verwenden. Stellen Sie sich dieses Szenario vor: Sie haben einen Power BI-Bericht in Power BI Desktop erstellt. Sie haben viel Zeit damit verbracht, das Datenmodell zu entwerfen, und haben dann einen schönen Power BI-Bericht mit allen möglichen tollen visuellen Elementen erstellt. Ihr Bericht enthält eine Matrix mit vielen Zeilen, sodass Sie scrollen müssen, um alle Zeilen anzuzeigen. Die Leser Ihres Berichts wünschen einen Bericht, den sie drucken können und in dem alle Zeilen aus dieser Matrix enthalten sind. Ein paginierter Power BI-Bericht ist dafür geeignet: Drucken Sie eine Tabelle oder Matrix, die über mehrere Seiten verteilt ist, mit Kopf- und Fußzeilen und einem perfekten Seitenlayout, das Sie entworfen haben. Dieser Bericht ergänzt den Power BI Desktop-Bericht. Sie möchten, dass beide Berichte auf genau denselben Daten basieren, ohne Abweichungen, also verwenden Sie dasselbe Dataset.
 
@@ -99,13 +99,13 @@ Sollen die Daten im Power BI-Bericht und in Ihrem Berichts-Generator-Bericht ide
 
     ![Abfrageergebnisse](media/report-builder-shared-datasets/power-bi-report-builder-query-results.png)
 
-1. Wählen Sie **OK**aus.
+1. Wählen Sie **OK** aus.
 
     Ihre Abfrage wird im Bereich **Abfrage** des Dialogfelds **Dataseteigenschaften** angezeigt.
 
     ![Dialogfeld „Dataseteigenschaften“](media/report-builder-shared-datasets/power-bi-report-builder-dataset-properties.png)
 
-1. Wählen Sie **OK**aus.
+1. Wählen Sie **OK** aus.
 
     Nun wird das neue Dataset mit einer Liste seiner Felder im Bereich „Berichtsdaten“ angezeigt.
 

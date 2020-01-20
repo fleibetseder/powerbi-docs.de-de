@@ -6,18 +6,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/22/2019
+ms.date: 01/08/2020
 ms.author: kfollis
-ms.openlocfilehash: be7f95b2bbbd6e5e6314c7fd57869a30c176746c
-ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
+ms.openlocfilehash: 2578f8621140a64b85e6765d80d860c1489a5900
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74958492"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762552"
 ---
 # <a name="power-bi-data-sources"></a>Power BI-Datenquellen
 
 In der folgenden Tabelle werden die von Power BI für Datasets unterstützten Datenquellen aufgeführt, einschließlich Informationen zu DirectQuery und dem lokalen Datengateway. Informationen zu Dataflows finden Sie unter [Herstellen einer Verbindung mit Datenquellen über Power BI-Dataflows](service-dataflows-data-sources.md).
+
+> [!NOTE]
+> Es gibt zahlreiche Datenconnectors für Power BI Desktop, die für die Authentifizierung Internet Explorer 10 (oder höher) benötigen. 
+
 
 | Datenquellen- | Verbindung vom Desktop aus | Verbindung und Aktualisierung vom Dienst aus | DirectQuery-/Liveverbindung | Gateway (unterstützt) | Gateway (erforderlich) |
 |---|---|---|---|---|---|---|---|
@@ -33,7 +37,7 @@ In der folgenden Tabelle werden die von Power BI für Datasets unterstützten D
 | Azure Cost Management | Ja | Ja | Nein | Nein | Nein |
 | Azure Data Explorer (Kusto) | Ja | Ja | Ja | Nein | Nein |
 | Azure Data Lake Storage Gen1 | Ja | Ja | Nein | Nein | Nein |
-| Azure Data Lake Storage Gen2 | Ja | Ja | Nein | Nein | Nein |
+| Azure Data Lake Storage Gen2 | Ja | Ja | Nein | Ja | Nein |
 | Azure DevOps | Ja | Ja | Nein | Nein | Nein |
 | Azure DevOps Server | Ja | Ja | Nein | Ja | Ja |
 | Azure HDInsight (HDFS) | Ja | Ja | Nein | Nein | Nein |
@@ -65,8 +69,8 @@ In der folgenden Tabelle werden die von Power BI für Datasets unterstützten D
 | Google BigQuery | Ja | Ja | Nein | Nein | Nein |
 | Hadoop-Datei (HDFS) | Ja | Nein | Nein | Nein | Nein |
 | HDInsight Interactive Query | Ja | Ja | Ja | Nein | Nein |
-| IBM DB2 | Ja | Ja | Ja | Ja | Ja |
-| IBM Informix-Datenbank | Ja | Ja | Nein | Ja | Ja |
+| IBM DB2 | Ja | Ja | Ja | Ja | Nein |
+| IBM Informix-Datenbank | Ja | Ja | Nein | Ja | Nein |
 | IBM Netezza | Ja | Ja | Ja | Ja | Ja |
 | Impala | Ja | Ja | Ja | Ja | Ja |
 | Indexima | Ja | Ja | Ja | Ja | Ja |
@@ -95,7 +99,7 @@ In der folgenden Tabelle werden die von Power BI für Datasets unterstützten D
 | Planview Enterprise One – CTM | Ja | Ja | Nein | Nein | Nein |
 | Planview Enterprise One – PRM | Ja | Ja | Nein | Nein | Nein |
 | Planview Projectplace | Ja | Ja | Nein | Nein | Nein |
-| PostgreSQL | Ja | Ja | Ja | Ja | Ja |
+| PostgreSQL | Ja | Ja | Ja | Ja | Nein |
 | Power BI-Dataflows | Ja | Ja | Nein | Nein | Nein |
 | Power BI-Datasets | Ja | Ja | Ja | Nein | Nein |
 | Power Platform-Dataflows | Ja | Ja | Nein | Nein | Nein |
@@ -114,7 +118,7 @@ In der folgenden Tabelle werden die von Power BI für Datasets unterstützten D
 | SharePoint-Liste | Ja | Ja | Nein | Ja | Nein <sup>4</sup> |
 | SharePoint-Online-Liste | Ja | Ja | Nein | Ja <sup>2</sup> | Nein |
 | Smartsheet | Ja | Ja | Nein | Nein | Nein |
-| Snowflake | Ja | Ja | Ja | Ja | Ja |
+| Snowflake | Ja | Ja | Ja | Ja | Nein |
 | Spark | Ja | Ja | Ja | Ja | Nein |
 | SparkPost | Ja | Ja | Nein | Nein | Nein |
 | SQL Server | Ja | Ja | Ja | Ja | Ja |
