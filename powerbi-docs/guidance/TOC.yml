@@ -26,11 +26,11 @@
               href: star-schema.md
             - name: Reduzieren der Größe des Datenmodells
               href: import-modeling-data-reduction.md
-            - name: Anleitung zur automatischen Angabe von Datum/Uhrzeit in Power BI Desktop
+            - name: Leitfaden zu Datum/Uhrzeit automatisch
               href: auto-date-time.md
             - name: 'Leitfaden zu m:n-Beziehungen'
               href: relationships-many-to-many.md
-            - name: Leitfaden für das DirectQuery-Model in Power BI Desktop
+            - name: Leitfaden zum DirectQuery-Modell
               href: directquery-model-guidance.md
         - name: DAX
           items:
@@ -58,9 +58,11 @@
               href: report-drillthrough.md
             - name: Wann sollten paginierte Berichte in Power BI verwendet werden?
               href: report-paginated-or-power-bi.md
+            - name: Verwenden von kaskadierenden URL-Parametern in paginierten Berichten
+              href: paginated-report-cascading-parameter.md
             - name: Vermeiden von leeren Seiten beim Drucken paginierter Berichte
               href: report-paginated-blank-page.md
-            - name: Migrieren von SQL Server Reporting Services-Berichten zu Power BI
+            - name: Migrieren von SSRS-Berichten zu Power BI
               href: migrate-ssrs-reports-to-power-bi.md
     - name: Whitepaper
       items:
