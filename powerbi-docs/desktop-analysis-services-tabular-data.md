@@ -9,27 +9,27 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f7af1c584802181cab68f6ce2fc4823ec7078354
-ms.sourcegitcommit: 331ebf6bcb4a5cdbdc82e81a538144a00ec935d4
+ms.openlocfilehash: 7ce20b8b6dc382cdafe61bde3e9305197fd33ea6
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75523025"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762069"
 ---
-# <a name="using-analysis-services-tabular-data-in-power-bi-desktop"></a>Verwenden tabellarischer Analysis Services-Daten in Power BI Desktop
+# <a name="connect-to-analysis-services-tabular-data-in-power-bi-desktop"></a>Verbinden mit tabellarischen Analysis Services-Daten in Power BI Desktop
 Mit Power BI Desktop verfügen Sie über zwei Möglichkeiten, eine Verbindung mit tabellarischen Modellen von SQL Server Analysis Services herzustellen und Daten aus diesen Modellen abzurufen: Durchsuchen mit Live-Verbindung oder Auswählen und Importieren von Elementen in Power BI Desktop.
 
 Sehen wir uns das einmal näher an.
 
-**Durchsuchen mit Live-Verbindung** – Bei Verwendung einer Live-Verbindung werden Elemente im tabellarischen Modell oder einer Perspektive, wie Tabellen, Spalten und Maße, in der Liste der Power BI Desktop-Felder angezeigt. Die erweiterte Visualisierung und Bericht-Tools von Power BI bieten Ihnen neue und hoch interaktive Möglichkeiten zum Untersuchen Ihres tabellarischen Modells.
+**Erkunden mit Liveverbindung**: Bei Verwendung einer Liveverbindung werden Elemente im tabellarischen Modell oder einer Perspektive, wie Tabellen, Spalten und Maße, in der Liste der Power BI Desktop-Felder angezeigt. Die erweiterte Visualisierung und Bericht-Tools von Power BI Desktop bieten Ihnen neue und hoch interaktive Möglichkeiten zum Untersuchen Ihres tabellarischen Modells.
 
-Bei einer Live-Verbindung werden keine Daten aus dem tabellarischen Modell in Power BI Desktop importiert. Bei jeder Interaktion mit einer Visualisierung fragt Power BI Desktop das tabellarische Modell ab und berechnet die angezeigten Ergebnisse. Ihnen werden immer die aktuellsten Daten angezeigt, die entweder über den letzten Verarbeitungszeitpunkt oder über die Tabellen für direkte Abfragen im tabellarischen Modell verfügbar sind. 
+Bei einer Liveverbindung werden keine Daten aus dem tabellarischen Modell in Power BI Desktop importiert. Bei jeder Interaktion mit einer Visualisierung fragt Power BI Desktop das tabellarische Modell ab und berechnet die angezeigten Ergebnisse. Ihnen werden immer die aktuellsten Daten angezeigt, die entweder über den letzten Verarbeitungszeitpunkt oder über die Tabellen für direkte Abfragen im tabellarischen Modell verfügbar sind. 
 
-Beachten Sie, dass tabellarische Modelle eine hohe Sicherheit bieten. Die in Power BI-Desktop angezeigten Elemente hängen von Ihren Berechtigungen für das tabellarische Modell ab, mit dem Sie verbunden sind.
+Beachten Sie, dass tabellarische Modelle eine hohe Sicherheit bieten. Die in Power BI Desktop angezeigten Elemente hängen von Ihren Berechtigungen für das tabellarische Modell ab, mit dem Sie verbunden sind.
 
 Dynamische Berichte, die Sie in Power BI Desktop erstellt haben, können Sie durch die Veröffentlichung auf Ihrer Power BI-Website freigeben. Wenn Sie eine Power BI Desktop-Datei mit einer Liveverbindung mit einem tabellarischen Modell auf Ihrer Power BI-Website veröffentlichen möchten, muss ein lokales Datengateway installiert sein und von einem Administrator konfiguriert werden. Lesen Sie zu diesem Thema den Artikel [Lokales Datengateway](service-gateway-onprem.md).
 
-**Auswählen und Importieren von Elementen in Power BI Desktop** – Wenn Sie eine Verbindung mit dieser Option herstellen, können Sie Elemente wie Tabellen, Spalten und Measures in Ihrem tabellarischen Modell bzw. einer Perspektive auswählen und in ein Power BI Desktop-Modell laden. Mit dem erweiterten Abfrage-Editor von Power BI Desktop können Sie Ihre Suche noch weiter präzisieren. Mithilfe der Modellierungsfunktionen von Power BI Desktop können Sie die Daten noch weitergehender modellieren. Zwischen Power BI-Desktop und dem tabellarischen Modell wird keine Live-Verbindung aufrechterhalten. Sie können dann Ihr Power BI Desktop-Modell offline untersuchen oder auf Ihrer Power BI-Website veröffentlichen.
+**Auswählen und Importieren von Elementen in Power BI-Desktop**: Wenn Sie eine Verbindung mit dieser Option herstellen, können Sie Elemente, wie Tabellen, Spalten und Maße, in Ihrem tabellarischen Modell bzw. einer Perspektive auswählen und in ein Power BI Desktop-Modell laden. Mit dem erweiterten Abfrage-Editor von Power BI Desktop können Sie Ihre Suche noch weiter präzisieren. Mithilfe der Modellierungsfunktionen von Power BI Desktop können Sie die Daten noch weitergehender modellieren. Zwischen Power BI Desktop und dem tabellarischen Modell wird keine Live-Verbindung aufrechterhalten. Sie können dann Ihr Power BI Desktop-Modell offline untersuchen oder auf Ihrer Power BI-Website veröffentlichen.
 
 ## <a name="to-connect-to-a-tabular-model"></a>So stellen Sie eine Verbindung mit einem tabellarischen Modell her
 1. Klicken Sie in Power BI Desktop auf der Registerkarte **Start** auf **Daten abrufen**.

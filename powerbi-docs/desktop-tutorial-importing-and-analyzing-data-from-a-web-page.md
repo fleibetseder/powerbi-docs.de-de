@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Importieren und Analysieren von Webseitendaten'
+title: 'Tutorial: Importieren und Analysieren von Daten einer Webseite'
 description: 'Tutorial: Importieren und Analysieren von Webseitendaten mithilfe von Power BI Desktop'
 author: davidiseminger
 ms.reviewer: ''
@@ -10,14 +10,14 @@ ms.topic: tutorial
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: e4a805db851e63a725a866065a774ef8ecc23c24
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7d4aaa613ac2d79a08ed6bbc03ba47dd296942de
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879596"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75759587"
 ---
-# <a name="tutorial-analyze-web-page-data-using-power-bi-desktop"></a>Tutorial: Analysieren von Webseitendaten mit Power BI Desktop
+# <a name="tutorial-analyze-webpage-data-by-using-power-bi-desktop"></a>Tutorial: Analysieren von Webseitendaten mit Power BI Desktop
 
 Wenn Sie Fußballfan sind, möchten Sie vielleicht eine Übersicht über alle Europameister der vergangenen Jahre erstellen. Mit Power BI Desktop können Sie diese Daten von einer Webseite in einen Bericht importieren und Visualisierungen erstellen, um die Daten anzuzeigen. In diesem Tutorial erfahren Sie, wie Sie Power BI Desktop für Folgendes verwenden:
 

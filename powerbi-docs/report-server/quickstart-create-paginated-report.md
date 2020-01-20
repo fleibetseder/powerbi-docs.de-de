@@ -6,16 +6,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/22/2018
+ms.date: 01/07/2020
 ms.author: maggies
-ms.openlocfilehash: b8dd79e4b256a80ba5159a1b3980e798bc611840
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4c4228ea4276235a983849d2ea88e1030f4690f7
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875029"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75732036"
 ---
 # <a name="create-a-paginated-report-for-power-bi-report-server"></a>Erstellen eines paginierten Berichts für Power BI-Berichtsserver
+In diesem Artikel erstellen Sie in wenigen einfachen Schritten einen paginierten Bericht für den Power BI-Berichtsserver.
+
+Benötigen Sie Hilfe beim Erstellen paginierter Berichte im Report Builder für den Power BI-Dienst? Lesen Sie stattdessen den Artikel [Paginierter Report Builder in Power BI](../report-builder-power-bi.md).
+
 Wie der Name bereits vermuten lässt, können paginierte Berichte viele Seiten aufweisen. Sie verfügen über ein Layout in einem festen Format und ermöglichen eine präzise Anpassung. Bei paginierten Berichten handelt es sich um RDL-Dateien.
 
 Sie können paginierte Berichte im Webportal von Power BI-Berichtsserver ebenso wie im Webportal von SQL Server Reporting Services (SSRS) speichern und verwalten. Sie erstellen und bearbeiten sie im Berichts-Generator oder Berichts-Designer von SQL Server Data Tools (SSDT) und veröffentlichen sie dann in einem der Webportale. Anschließend können Leser in Ihrer Organisation die Berichte in einem Browser oder einer mobilen Power BI-App auf einem Mobilgerät anzeigen.
@@ -24,7 +28,7 @@ Sie können paginierte Berichte im Webportal von Power BI-Berichtsserver ebenso 
 
 Wenn Sie bereits im Berichts-Generator oder Berichts-Designer paginierte Berichte erstellt haben, sind Sie auch zum Erstellen paginierter Berichte für Power BI-Berichtsserver bereit. Falls nicht, folgen hier einige schnelle Schritte, um Ihnen den Einstieg zu erleichtern.
 
-## <a name="step-1-install-and-start-report-builder"></a>Schritt 1: Installieren und Starten des Berichts-Generators
+## <a name="step-1-start-report-builder"></a>Schritt 1: Starten des Berichts-Generators
 Möglicherweise haben Sie den Berichts-Generator bereits zum Erstellen von Berichten für einen SSRS-Server installiert. Sie können die gleiche Version des Berichts-Generators zum Erstellen von Berichten für Power BI-Berichtsserver verwenden. Falls nicht installiert, ist der Vorgang einfach.
 
 1. Wählen Sie im Webportal von Power BI-Berichtsserver **Neu** > **Paginierter Bericht** aus.

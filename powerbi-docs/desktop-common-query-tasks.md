@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 2b1cf2a7f10fd7249dcdec26b5c5f5d12ff15aca
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 116575898812e82f2f15126d0fee640902367ace
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878670"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761747"
 ---
-# <a name="common-query-tasks-in-power-bi-desktop"></a>Allgemeine Abfrageaufgaben in Power BI Desktop
+# <a name="perform-common-query-tasks-in-power-bi-desktop"></a>Durchführen allgemeiner Abfrageaufgaben in Power BI Desktop
 Beim Arbeiten im Fenster **Abfrage-Editor** von Power BI Desktop haben Sie es mit einer Hand voll häufig verwendeter Aufgaben zu tun. In diesem Dokument werden diese allgemeinen Aufgaben vorgestellt. Zudem finden Sie Links zu weiteren Informationen. 
 
 Zu den hier vorgestellten allgemeinen Abfrageaufgaben zählen folgende Aufgaben:
@@ -151,7 +151,7 @@ Die Formelkategorien für den Abfrage-Editor lauten wie folgt:
 
 * Zahl (Number)
   * Konstanten (Constants)
-  * Informationen (Information)
+  * Informationen
   * Konvertierung und Formatierung (Conversion and formatting)
   * Format
   * Rundung (Rounding)
@@ -160,14 +160,14 @@ Die Formelkategorien für den Abfrage-Editor lauten wie folgt:
   * Trigonometrie (Trigonometry)
   * Bytes
 * Text
-  * Informationen (Information)
+  * Informationen
   * Textvergleiche (Text comparisons)
   * Extraktion (Extraction)
   * Modifikation (Modification)
   * Mitgliedschaft (Membership)
   * Transformationen (Transformations)
 * Logik (Logical)
-* Datum (Date)
+* Datum
 * Uhrzeit (Time)
 * DatumUhrzeit (DateTime)
 * DatumZeitzone (DateTimeZone)
@@ -175,26 +175,26 @@ Die Formelkategorien für den Abfrage-Editor lauten wie folgt:
 * Aufzeichnung (Record)
   * Informationen (Information)
   * Transformationen (Transformations)
-  * Auswahl (Selection)
+  * Auswahl
   * Serialisierung (Serialization)
 * Liste (List)
-  * Informationen (Information)
-  * Auswahl (Selection)
+  * Informationen
+  * Auswahl
   * Transformation
-  * Mitgliedschaft (Membership)
+  * Mitgliedschaft
   * Festlegungsvorgänge (Set operations)
   * Reihenfolge (Ordering)
   * Durchschnittswerte (Averages)
   * Addition
   * Numerische Werte (Numerics)
   * Generatoren (Generators)
-* Tabelle (Table)
+* Tabelle
   * Tabellenerstellung (Table construction)
   * Konvertierungen (Conversions)
-  * Informationen (Information)
+  * Informationen
   * Zeilenvorgänge (Row operations)
   * Spaltenvorgänge (Column operations)
-  * Mitgliedschaft (Membership)
+  * Mitgliedschaft
 * Werte (Values)
 * Arithmetische Operationen (Arithmetic operations)
 * Parametertypen (Parameter Types)
@@ -205,9 +205,9 @@ Die Formelkategorien für den Abfrage-Editor lauten wie folgt:
   * Lesen von Zahlen (Reading numbers)
 * Binär (Binary)
 * Linien (Lines)
-* Ausdruck (Expression)
+* Ausdruck
 * Funktion (Function)
-* Fehler (Error)
+* Fehler
 * Vergleichsfunktion (Comparer)
 * Teilungsfunktion (Splitter)
 * Kombinierungsfunktion (Combiner)

@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 04/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: d5fcc6866d564367d2a29dc00493a959409ea2ed
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b14b9a8a0978876942de789548d9741fa3932152
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858986"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762230"
 ---
-# <a name="what-sample-data-is-available-to-use-with-power-bi"></a>Welche Beispieldaten sind für die Verwendung mit Power BI verfügbar?
+# <a name="get-sample-data-for-power-bi"></a>Abrufen von Beispieldaten in Power BI
 Angenommen, Sie sind mit Power BI noch nicht vertraut und möchten es ausprobieren, haben jedoch keine Daten.  Aber vielleicht haben Sie ja ein Dataset. Da Sie (noch) nicht verstehen, wie Power BI funktioniert, fürchten Sie vielleicht, Ihr Dataset irgendwie zu beschädigen?
 
 Kein Grund zur Beunruhigung! obviEnce ([www.obvience.com](http://www.obvience.com/)) und Microsoft haben Beispiele für Sie erstellt, die Sie verwenden können, bis Sie sich mit Power BI besser auskennen.  Die Daten sind anonymisiert und stellen verschiedene Branchen dar: Finanzindustrie, Personalwesen, Vertrieb und weitere Branchen. Darüber hinaus verwendet unsere Onlinedokumentation genau diese Stichproben in Tutorials und Beispielen, Sie können sie also nachvollziehen.      
@@ -30,7 +30,7 @@ Lesen Sie jedoch erst die folgenden rechtlichen Hinweise zur Verwendung der Stic
 
 ## <a name="usage-guidelines-for-the-power-bi-sample-excel-workbooks"></a>Nutzungsleitfäden für die Excel-Beispielsarbeitsmappen für Power BI
 
-©2015 Microsoft Corporation. Alle Rechte vorbehalten. Die Dokumente und Arbeitsmappen werden „wie besehen“ bereitgestellt. Die in diesen Arbeitsmappen angegebenen Informationen und Ansichten, einschließlich der URLs und anderer Verweise auf Internetwebsites, können ohne vorherige Ankündigung geändert werden. Sie tragen das mit der Nutzung verbundene Risiko. Einige Beispiele dienen nur Illustrationszwecken und sind frei erfunden. Reale Bezüge sind weder beabsichtigt noch erwünscht. Microsoft übernimmt hinsichtlich der hier bereitgestellten Informationen keine Gewährleistungen, seien sie ausdrücklich oder konkludent.
+©2015 Microsoft Corporation. All rights reserved. Die Dokumente und Arbeitsmappen werden „wie besehen“ bereitgestellt. Die in diesen Arbeitsmappen angegebenen Informationen und Ansichten, einschließlich der URLs und anderer Verweise auf Internetwebsites, können ohne vorherige Ankündigung geändert werden. Sie tragen das mit der Nutzung verbundene Risiko. Einige Beispiele dienen nur Illustrationszwecken und sind frei erfunden. Reale Bezüge sind weder beabsichtigt noch erwünscht. Microsoft übernimmt hinsichtlich der hier bereitgestellten Informationen keine Gewährleistungen, seien sie ausdrücklich oder konkludent.
 
 Die Arbeitsmappen übertragen Ihnen keine Rechte am geistigem Eigentum eines beliebigen Microsoft-Produkts. Sie können die Arbeitsmappe zu internen Referenzzwecken kopieren und verwenden.
 
@@ -127,10 +127,10 @@ Jedes der Beispielinhaltspakete ist auch als Excel-Arbeitsmappe verfügbar. Die 
    * [Beispiel für Vertrieb und Marketing](https://go.microsoft.com/fwlink/?LinkId=529785)
 2. Speichern Sie die heruntergeladene Datei. Es ist wichtig, wo Sie die Datei speichern.
 
-   * ![Lokal](media/sample-datasets/power-bi-local-file2.png) **Lokal**: Wenn Sie Ihre Datei auf einem lokalen Laufwerk Ihres Computers oder an einem anderen Speicherort in Ihrer Organisation speichern, können Sie Ihre Datei über Power BI in Power BI importieren. Tatsächlich verbleibt Ihre Datei auf Ihrem lokalen Laufwerk. Die Datei wird also eigentlich gar nicht in Power BI importiert. Stattdessen wird ein neues Dataset auf Ihrer Power BI-Website erstellt. Daraufhin werden Daten und ggf. das Datenmodell in das Dataset geladen. Wenn Ihre Datei Berichte enthält, werden diese auf Ihrer Power BI-Website unter „Berichte“ angezeigt.
-   * ![OneDrive Business](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive – Business**: Wenn Sie OneDrive for Business verwenden, können Sie sich mit demselben Konto auch bei Power BI anmelden. OneDrive for Business ist mit Abstand der beste Speicherort, um Ihre Arbeit in Excel, Power BI oder einer CSV-Datei mit den Datasets, Berichten und Dashboards in Power BI synchron zu halten. Da sich sowohl Power BI als auch OneDrive in der Cloud befinden, verbindet sich Power BI etwa einmal in der Stunde mit Ihrer Datei in OneDrive. Wenn Änderungen gefunden werden, werden Ihre Dataset, Berichte und Dashboards in Power BI automatisch aktualisiert.
-   * ![OneDrive – Persönlich](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive – Persönlich**: Wenn Sie Ihre Dateien in Ihrem eigenen OneDrive-Konto speichern, erhalten Sie dennoch viele der Vorteile, die Ihnen OneDrive for Business bieten würde. Der Hauptunterschied besteht darin, dass Sie sich beim ersten Verknüpfen mit Ihrer Datei, mit Ihrem Microsoft-Konto bei OneDrive anmelden müssen (mit „Daten abrufen“ > „Dateien“ > „OneDrive – Persönlich“). Normalerweise sind Ihr Microsoft- und Ihr Power BI-Konto nicht identisch. Stellen Sie bei der OneDrive-Anmeldung mithilfe Ihres Microsoft Kontos sicher, dass Sie die Option „Angemeldet bleiben“ aktiviert haben. Auf diese Weise ist Power BI in der Lage, sich etwa einmal die Stunde mit Ihrer Datei zu verbinden und sicherzustellen, dass Ihr Dataset in Power BI synchronisiert ist.
-   * ![SharePoint-Teamwebsites](media/sample-datasets/power-bi-sharepoint2.png) **SharePoint-Teamwebsites**: Das Speichern der Power BI-Dateien in SharePoint-Teamwebsites erfolgt auf ähnliche Weise wie das Speichern in OneDrive for Business. Der größte Unterschied besteht im Herstellen der Verknüpfung zur Datei aus Power BI. Sie können eine URL angeben oder eine Verknüpfung mit einem Stammordner erstellen.
+   * ![Lokal](media/sample-datasets/power-bi-local-file2.png) **Lokal** – Wenn Sie Ihre Datei auf einem lokalen Laufwerk Ihres Computers oder an einem anderen Speicherort in Ihrer Organisation speichern, können Sie Ihre Datei über Power BI in Power BI importieren. Tatsächlich verbleibt Ihre Datei auf Ihrem lokalen Laufwerk. Die Datei wird also eigentlich gar nicht in Power BI importiert. Stattdessen wird ein neues Dataset auf Ihrer Power BI-Website erstellt. Daraufhin werden Daten und ggf. das Datenmodell in das Dataset geladen. Wenn Ihre Datei Berichte enthält, werden diese auf Ihrer Power BI-Website unter „Berichte“ angezeigt.
+   * ![OneDrive Business](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive – Business** – Wenn Sie OneDrive for Business verwenden, können Sie sich mit demselben Konto auch bei Power BI anmelden. OneDrive for Business ist mit Abstand der beste Speicherort, um Ihre Arbeit in Excel, Power BI oder einer CSV-Datei mit den Datasets, Berichten und Dashboards in Power BI synchron zu halten. Da sich sowohl Power BI als auch OneDrive in der Cloud befinden, verbindet sich Power BI etwa einmal in der Stunde mit Ihrer Datei in OneDrive. Wenn Änderungen gefunden werden, werden Ihre Dataset, Berichte und Dashboards in Power BI automatisch aktualisiert.
+   * ![OneDrive Personal](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive – Personal** – Wenn Sie Ihre Dateien in Ihrem eigenen OneDrive-Konto speichern, erhalten Sie dennoch viele der Vorteile, die Ihnen OneDrive for Business bieten würde. Der Hauptunterschied besteht darin, dass Sie sich beim ersten Verknüpfen mit Ihrer Datei, mit Ihrem Microsoft-Konto bei OneDrive anmelden müssen (mit „Daten abrufen“ > „Dateien“ > „OneDrive – Persönlich“). Normalerweise sind Ihr Microsoft- und Ihr Power BI-Konto nicht identisch. Stellen Sie bei der OneDrive-Anmeldung mithilfe Ihres Microsoft Kontos sicher, dass Sie die Option „Angemeldet bleiben“ aktiviert haben. Auf diese Weise ist Power BI in der Lage, sich etwa einmal die Stunde mit Ihrer Datei zu verbinden und sicherzustellen, dass Ihr Dataset in Power BI synchronisiert ist.
+   * ![SharePoint-Teamwebsites](media/sample-datasets/power-bi-sharepoint2.png) **SharePoint-Teamwebsites** – Das Speichern der Power BI-Dateien in SharePoint-Teamwebsites erfolgt auf ähnliche Weise wie das Speichern in OneDrive for Business. Der größte Unterschied besteht im Herstellen der Verknüpfung zur Datei aus Power BI. Sie können eine URL angeben oder eine Verknüpfung mit einem Stammordner erstellen.
 1. Öffnen Sie den Power BI-Dienst („app.powerbi.com“), und melden Sie sich an.
 
    > [!TIP]

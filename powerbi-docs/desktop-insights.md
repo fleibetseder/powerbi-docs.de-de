@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 02/21/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 69b6cd3200627c5b0523fce914eae5899e594c27
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 925d63f0abf92bd7a9c0d5fdd2ff6eff5b88b961
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73867233"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761155"
 ---
-# <a name="use-insights-in-power-bi-desktop-to-explain-increases-and-decreases-seen-in-visuals-preview"></a>Verwenden von Einblicken in Power BI Desktop zur Erklärung von Anstiegen und Rückgängen in Visuals (Vorschau)
+# <a name="apply-insights-in-power-bi-desktop-to-explain-fluctuations-in-visuals-preview"></a>Anwenden von Einblicken in Power BI Desktop zum Erklären von Schwankungen in visuellen Elementen (Vorschau)
 
 Visuals weisen oft einen starken Anstieg und dann einen starken Rückgang von Werten auf. Was ist die Ursache für solche Schwankungen? Mit **Einblicke** in **Power BI Desktop** können Sie das mit wenigen Klicks herausfinden.
 

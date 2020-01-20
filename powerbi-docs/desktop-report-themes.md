@@ -1,40 +1,58 @@
 ---
 title: Verwenden von Berichtdesigns in Power BI Desktop
-description: Erfahren Sie, wie Sie eine benutzerdefinierte Farbpalette verwenden und auf den gesamten Bericht in Power BI Desktop anwenden können.
+description: Erfahren Sie, wie Sie eine benutzerdefinierte Farbpalette verwenden und auf einen gesamten Bericht in Power BI Desktop anwenden.
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/16/2019
+ms.date: 01/03/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4fdcfd4d7684cef3e6b703709b2739ebbff1badd
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: c111b04847cba56781b1dd77f899d456ad5f4162
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223551"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75731426"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Verwenden von Berichtdesigns in Power BI Desktop
-Mit **Berichtsdesigns** können Sie Entwurfsänderungen auf den gesamten Bericht anwenden, z. B. die Verwendung von Unternehmensfarben, das Ändern von Symbolsätzen oder das Anwenden der neuen Standardformatierung für Visuals. Wenn Sie ein **Berichtsdesign** anwenden, verwenden alle Visuals im Bericht Farben und Formatierung des ausgewählten Designs. Es gibt einige Ausnahmen, die später in diesem Artikel beschrieben werden.
+Mit *Berichtsdesigns* in Power BI Desktop können Sie Entwurfsänderungen auf den gesamten Bericht anwenden, z. B. Verwenden von Unternehmensfarben, Ändern von Symbolgruppen oder Anwenden der neuen Standardformatierung auf Visuals. Wenn Sie ein Berichtsdesign anwenden, verwenden alle Visuals im Bericht Farben und Formatierung des ausgewählten Designs. Es gibt einige Ausnahmen, die weiter unten in diesem Artikel beschrieben werden.
 
 ![Report themes](media/desktop-report-themes/report-themes-1a.png)
 
-Wenn Sie ein benutzerdefiniertes **Berichtsdesign** anwenden, benötigen Sie eine JSON-Datei mit einer Grundstruktur. Sie können diese JSON-Datei dann in Power BI Desktop importieren und auf Ihren Bericht anwenden.
+Es gibt zwei Arten von Berichtsdesigns, nämlich integrierte Berichtsdesigns und benutzerdefinierte Berichtsdesigndateien:
 
-Sie können auch nahezu alle Elemente, die im Bereich **Formatierung** angezeigt werden, direkt in Power BI Desktop oder mithilfe der JSON-Designdatei anpassen und standardisieren. Das Ziel besteht darin, Ihnen eine umfassende und genaue Kontrolle über das Erscheinungsbild Ihrer Berichte zu bieten.
+- Integrierte Berichtsdesigns bieten unterschiedliche Arten vordefinierter Farbschemas, die mit Power BI Desktop installiert werden. Sie wählen integrierte Berichtsdesigns direkt im Power BI Desktop-Menü aus. 
+
+- Benutzerdefinierte Berichtsdesigndateien sind Berichts Designs, die in JSON-Dateien erstellt werden, die ihre grundlegende Struktur definieren. Zum Anwenden eines benutzerdefinierten Berichtsdesigns importieren Sie die zugehörige JSON-Datei in Power BI Desktop und wenden sie auf Ihren Bericht an.
+
+Sie können nahezu alle Elemente, die im Abschnitt **Format** des Bereichs **Visualisierungen** aufgelistet sind, anpassen und standardisieren, und zwar entweder durch Anpassungen, die direkt in Power BI Desktop erfolgen, oder über eine JSON-Datei mit dem Berichtsdesign. Das Ziel besteht darin, Ihnen eine umfassende und genaue Kontrolle über das Erscheinungsbild Ihrer Berichte zu bieten.
 
 ## <a name="how-report-themes-work"></a>Funktionsweise von Berichtdesigns
-Sie können ein Berichtsdesign auf einen Power BI Desktop-Bericht anwenden, indem Sie ein verfügbares integriertes Design auswählen oder ein benutzerdefiniertes Design erstellen oder importieren.
+Sie können ein Berichtsdesign auf einen Power BI Desktop-Bericht anwenden, indem Sie ein verfügbares integriertes Design auswählen oder eine benutzerdefinierte Designdatei erstellen oder importieren.
+
+### <a name="built-in-report-themes"></a>Integriertes Berichtsdesign
+
+So wählen Sie aus den verfügbaren integrierten Berichtdesigns aus 
+
+1. Wählen Sie im Menüband **Start** den Befehl **Design wechseln** aus. 
+
+   ![Auswählen eines Berichtsdesigns](media/desktop-report-themes/report-themes-2a.png)
+
+2. Wählen in der Dropdownliste eines der vorhandenen Designs aus.
+
+   Das Berichtsdesign wird auf den Bericht angewendet.
+
+In der folgenden Tabelle sind die verfügbaren integrierten Berichtsdesigns aufgeführt.
 
 | Integriertes Berichtsdesign | Standardfarbsequenz    |
 |------ |---------- |
 | Standard   | ![Standard](media/desktop-report-themes/report-themes-color-scheme-default.png)|
 | Hochhaus  | ![Hochhaus](media/desktop-report-themes/report-themes-color-scheme-highrise.png)|
-| Executive     | ![Geschäftlich](media/desktop-report-themes/report-themes-color-scheme-executive.png)|
+| Executive     | ![Executive](media/desktop-report-themes/report-themes-color-scheme-executive.png)|
 | Grenze  | ![Grenze](media/desktop-report-themes/report-themes-color-scheme-frontier.png)|
-| Innovativ    | ![Innovativ](media/desktop-report-themes/report-themes-color-scheme-innovative.png)|
+| Innovativ  | ![Innovativ](media/desktop-report-themes/report-themes-color-scheme-innovative.png)|
 | Blüte     | ![Blüte](media/desktop-report-themes/report-themes-color-scheme-bloom.png)|
 | Gezeiten | ![Gezeiten](media/desktop-report-themes/report-themes-color-scheme-tidal.png)|
 | Temperatur   | ![Temperatur](media/desktop-report-themes/report-themes-color-scheme-temperature.png)|
@@ -50,87 +68,78 @@ Sie können ein Berichtsdesign auf einen Power BI Desktop-Bericht anwenden, inde
 | Sonnenuntergang    | ![Sonnenuntergang](media/desktop-report-themes/report-themes-color-scheme-sunset.png)|
 | Dämmerung  | ![Dämmerung](media/desktop-report-themes/report-themes-color-scheme-twilight.png)|
 
-Wenn Sie eines der verfügbaren integrierten Berichtsdesigns auswählen möchten, klicken Sie im Menüband **Start** auf die Schaltfläche **Design wechseln**, und wählen Sie eines der Designs aus dem Dropdownmenü aus.
+### <a name="import-custom-report-theme-files"></a>Importieren benutzerdefinierter Berichtsdesigndateien
 
-![Auswählen eines Berichtsdesigns](media/desktop-report-themes/report-themes-2a.png)
+So importieren Sie eine benutzerdefinierte Berichtsdesigndatei 
 
-Ihr Berichtsdesign wird auf den Bericht angewendet, und Sie sind startbereit.
+1. Wählen Sie im Menüband **Start** den Befehl **Design wechseln** und dann im Dropdownmenü **Design importieren** aus. 
 
-### <a name="importing-report-themes"></a>Importieren von Berichtsdesigns
+   ![Design importieren](media/desktop-report-themes/report-themes-3a.png)
 
-Wenn Sie ein benutzerdefiniertes Berichtsdesign importieren möchten, wählen Sie im Menüband **Start** die Schaltfläche **Design wechseln** aus. Wählen Sie dann im Dropdownmenü **Design importieren** aus.
+   Navigieren Sie im neu angezeigten Fenster zum Speicherort der JSON-Datei mit dem Design. 
 
-![Design importieren](media/desktop-report-themes/report-themes-3a.png)
+2. In der folgenden Abbildung sehen Sie einige Dateien mit Feiertagsdesigns. Wir wählen ein Feiertagsdesign für März aus, *St Patricks Day.json*.
 
-Navigieren Sie im neu angezeigten Fenster zum Speicherort der JSON-Datei mit dem Design. Power BI Desktop sucht nach JSON-Dateien, da JSON der Dateityp für Power BI-Berichtsdesigns ist. In der folgenden Abbildung sehen Sie einige Dateien mit Feiertagsdesigns. Wir wählen ein Feiertagsdesign für März aus.
+   ![Feiertagsdesign](media/desktop-report-themes/report-themes_4.png)
 
-![Feiertagsdesign](media/desktop-report-themes/report-themes_4.png)
+   Wenn die Designdatei erfolgreich geladen wurde, zeigt Power BI Desktop eine Erfolgsmeldung an.
 
-Wenn die Designdatei in Power BI Desktop erfolgreich geladen wurde, erhalten Sie eine Meldung.
+   ![Erfolgreicher Import des Designs](media/desktop-report-themes/report-themes_5.png)
 
-![Erfolgreicher Import des Designs](media/desktop-report-themes/report-themes_5.png)
-
-Es gibt zwei Möglichkeiten, Designs in Power BI Desktop anzupassen. Sehen wir uns diese im Einzelnen genauer an.
-
+Es gibt zwei Möglichkeiten, Berichtsdesigns in Power BI Desktop anzupassen. Sehen wir uns diese im Einzelnen genauer an.
 
 ## <a name="customize-report-themes-preview"></a>Anpassen von Berichtsdesigns (Vorschau)
 
-Mit dem Release von **Power BI Desktop** vom Dezember 2019 wurden zwei neue Möglichkeiten zum Anpassen von Berichtsdesigns eingeführt:
+Mit der Version von Power BI Desktop vom Dezember 2019 wurden zwei neue Möglichkeiten zum Anpassen von Berichtsdesigns eingeführt:
 
-* Erstellen und Anpassen eines Designs in Power BI Desktop (Vorschau)
-* Erstellen und Anpassen einer benutzerdefinierten JSON-Berichtsdesigndatei
+* [Erstellen und Anpassen eines Designs in Power BI Desktop (Vorschau)](#create-and-customize-a-theme-in-power-bi-desktop-preview)
+* [Erstellen und Anpassen einer benutzerdefinierten JSON-Berichtsdesigndatei](#introduction-to-report-theme-json-files)
 
-Sie können Designs direkt in Power BI Desktop anpassen, indem Sie zuerst auf **Datei > Optionen und Einstellungen > Optionen** klicken und dann wie in der folgenden Abbildung gezeigt im Abschnitt **Preview features** (Vorschaufeatures) das Kontrollkästchen für die Option **Aktuelles Design anpassen** aktivieren.
+### <a name="create-and-customize-a-theme-in-power-bi-desktop-preview"></a>Erstellen und Anpassen eines Designs in Power BI Desktop (Vorschau)
 
-![Benutzerdefinierte Designs aktivieren](media/desktop-report-themes/report-themes_5a.png)
+Ab der Power BI Desktop-Version vom Dezember 2019 ist die Möglichkeit, ein Design direkt in Power BI Desktop anzupassen, jetzt in der Vorschau verfügbar.
 
-Möglicherweise werden Sie aufgefordert, Power BI Desktop neu zu starten, damit das Vorschaufeature aktiviert wird.
+So passen Sie ein Design direkt in Power BI Desktop an 
 
-Nach dem Neustart können Sie damit beginnen, das aktuelle Design anzupassen, indem Sie erst auf das Menüband **Home** und dann auf **Design wechseln > Aktuelles Design anpassen** klicken. Dann wird ein Dialogfeld angezeigt, auf dem die verschiedenen Möglichkeiten zum Anpassen eines vorhandenen Designs aufgeführt sind.
+1. Wählen Sie **Datei** > **Optionen und Einstellungen** > **Optionen** aus. 
 
-![Anpassen des Designs](media/desktop-report-themes/report-themes_5b.png)
+2. Wählen Sie im Abschnitt **Vorschaufeatures** erst **Aktuelles Design anpassen** und dann **OK** aus.
 
-Wenn Ihnen ein bereits vorhandenes Design gefällt und Sie nur einige Änderungen vornehmen möchten, können dieses auswählen und dann wie in der folgenden Abbildung gezeigt im Dialogfeld auf die Option **Aktuelles Design anpassen** klicken. 
+   ![Benutzerdefinierte Designs aktivieren](media/desktop-report-themes/report-themes_5a.png)
 
-![Anpassen eines aktuellen Designs](media/desktop-report-themes/report-themes_5c.png)
+   Möglicherweise werden Sie aufgefordert, Power BI Desktop neu zu starten, damit das Vorschaufeature aktiviert wird. Nach dem Neustart können Sie mit der Anpassung des aktuell angewendeten Designs beginnen. 
 
-> [!NOTE]
-> Auf dem obigen Bild ist das Menüband aktiviert, das derzeit als Vorschau verfügbar ist. Sie können die Vorschauversion des neuen Menübands aktivieren, indem Sie erst auf **Datei > Optionen und Einstellungen > Optionen** und dann im Abschnitt **Preview features** (Vorschaufeatures) auf **New ribbon preview** (Vorschau des neuen Menübands) klicken.
+3. Wählen Sie im Menüband **Start** die Befehle **Design wechseln** > **Aktuelles Design anpassen** aus. 
 
-In den folgenden Kategorien gibt es Einstellungen, die angepasst werden können. Diese finden Sie im Dialogfeld „Design anpassen“.
+   Ein Dialogfeld mit den Möglichkeiten zum Anpassen eines vorhandenen Designs wird angezeigt.
 
-* Designname (Sie können das Design benennen, das Sie anpassen) und verschiedene Farbeinstellungen (Designfarben, Stimmungsfarben, Kontrastfarben usw.)
-* Texteinstellungen, einschließlich Schriftfamilie, -größe und -farbe sowie Achsentitel, -farben, -karten, -KPIs und Registerkartentitel
-* Visuelle Elemente, z. B. Hintergrund, Rahmen, Überschrift und QuickInfos
-* Seitenelemente, z. B. Hintergrund
-* Filterbereichseinstellungen, einschließlich Hintergrundfarbe, Transparenz, Schrift- und Symbolfarbe, Größe und Filterkarten
+   ![Anpassen des Designs](media/desktop-report-themes/report-themes_5b.png)
 
-Sobald Sie Ihre Änderungen vorgenommen und auf die Schaltfläche **Anwenden und speichern** geklickt haben, wird Ihr Design gespeichert und kann im aktuellen Bericht verwendet und exportiert werden. 
+4. Wenn Ihnen ein vorhandenes Design gefällt und Sie einige Anpassungen vornehmen möchten, wählen Sie das Design und dann **Aktuelles Design anpassen** aus. 
 
-Auf diese Weise können Sie den visuellen Teil des aktuellen Designs schnell und einfach anpassen. Einige Anpassungen an Designs können allerdings nur in begrenztem Umfang vorgenommen werden, für die wie im folgenden Abschnitt beschrieben die JSON-Datei des Designs geändert werden muss.
+   ![Anpassen eines aktuellen Designs](media/desktop-report-themes/report-themes_5c.png)
+
+Anpassbare Designeinstellungen finden Sie in den folgenden Kategorien, die im Fenster **Design anpassen** angezeigt werden:
+
+* **Name und Farben**: Zu den Einstellungen für Name und Farben zählen Design-, Stimmungs- und abweichende Farben.
+* **Text**: Texteinstellungen, einschließlich Schriftfamilie, -größe und -farbe sowie Achsentitel, -farben, Karten, KPIs und Registerkartentitel.
+* **Visuals**: Zu den Einstellungen visueller Elemente gehören Hintergrund, Rahmen, Überschrift und QuickInfos.
+* **Seite**: Zu den Einstellungen für Seitenelemente zählen Hintergrundbild und Hintergrund.
+* **Filterbereich**: Einstellungen für den Filterbereich sind u. a. Hintergrundfarbe, Transparenz, Schrift- und Symbolfarbe, Größe und Filterkarten.
+
+Nachdem Sie die Änderungen vorgenommen haben, wählen Sie  **Anwenden und speichern** aus, um das Design zu speichern. Ihr Design kann nun im aktuellen Bericht verwendet und exportiert werden. 
+
+Auf diese Weise können Sie den visuellen Teil des aktuellen Designs schnell und einfach anpassen. Sie können jedoch detailliertere Anpassungen an Designs vornehmen, wozu eine Änderung der [JSON-Datei](#report-theme-json-file-format) des Designs erforderlich ist.
 
 > [!TIP]
-> Die meisten Designelemente können Sie über das Dialogfeld **Aktuelles Design anpassen** anpassen und anschließend die JSON-Datei exportieren, um an dieser direkt manuell detaillierte Änderungen vorzunehmen. Danach können Sie diese optimierte JSON-Datei umbenennen und importieren und somit alle gewünschten Änderungen vornehmen.
+> Sie können die meisten Designelemente mithilfe der visuellen Elemente im Fenster **Design anpassen** anpassen. Anschließend können Sie optional die JSON-Datei exportieren und manuell Feinjustierungen vornehmen, indem Sie die Einstellungen in der JSON-Datei bearbeiten. Sie können diese optimierte JSON-Datei umbenennen und später importieren.
 
+## <a name="introduction-to-report-theme-json-files"></a>Einführung in JSON-Berichtdesigndateien
+ Wenn Sie die im vorigen Abschnitt erwähnte einfache JSON-Datei (St. Patricks Day.json) öffnen, wird sie wie folgt angezeigt:
 
-## <a name="structure-of-a-report-theme-json-file"></a>Struktur einer JSON-Berichtdesigndatei
- Beim Öffnen in einem Editor sieht die JSON-Basisdatei, die im vorherigen Abschnitt ausgewählt wurde (*St Patricks Day.json*), wie in diesem Screenshot aus:
-
-![JSON-Datei „St Patricks Day“](media/desktop-report-themes/report-themes_6.png)
-
-Die JSON-Datei muss die folgenden Zeilen enthalten:
-
-* **name**: Der Name des Designs ist die einzige Pflichtangabe.
-
-* **dataColors**: Eine Liste von Farben (im Hexadezimalcode) für Daten in Power BI Desktop-Visuals. Die Liste kann beliebig viele oder wenige Farben umfassen.
-
-* **background**, **foreground** und **tableAccent**: Mehrere Farbklassen. Weiter unten in diesem Artikel werden die Details der Farbklassen erläutert. Sie wissen jedoch, dass die Farbklassen Ihnen ermöglichen, viele Farben in Ihrem Bericht gleichzeitig festzulegen.
-
-Das ist der Text der Datei *St Patricks Day.json*, mit dem Sie eine eigene JSON-Datei erstellen können:
-
-```json
+ ```json
     {
-        "name": "St Patricks Day",
+        "name": "St Patrick's Day",
         "dataColors": ["#568410", "#3A6108", "#70A322", "#915203", "#D79A12", "#bb7711", "#114400", "#aacc66"],
         "background":"#FFFFFF",
         "foreground": "#3A6108",
@@ -138,68 +147,79 @@ Das ist der Text der Datei *St Patricks Day.json*, mit dem Sie eine eigene JSON-
     }
 ```
 
-Wenn Sie nur die grundlegenden Farben Ihres Berichts anpassen möchten, können Sie einfach den Namen und die hexadezimalen Codes dieser Datei ändern, um eine eigene persönliche JSON-Datei zum Importieren zu erhalten.
+Diese JSON-Datei mit dem Berichtsdesign weist die folgenden Zeilen auf:
 
-In der JSON-Datei definieren Sie nur die Formatierung, die Sie anpassen möchten. Für alle Formatierungselemente, die *nicht* in der JSON-Datei angegeben werden, werden die Standardeinstellungen von Power BI verwendet.
+* **name**: Den Namen des Berichtsdesigns. Dies ist das einzige Pflichtfeld.
 
-Das Erstellen einer JSON-Datei bietet viele Vorteile. Sie können beispielsweise festlegen, dass für alle Diagramme der Schriftgrad 12 oder für bestimmte Visuals eine bestimmte Schriftfamilie verwendet wird. Sie haben auch die Möglichkeit, Datenbeschriftungen für bestimmte Diagrammtypen zu deaktivieren.
+* **dataColors**: Eine Liste mit Farben im Hexadezimalcode für Daten in Power BI Desktop-Visuals. Diese Liste kann wahlweise so viele oder so wenige Farben haben, wie Sie möchten.
 
-Wenn Sie eine präzise JSON-Datei verwenden, können Sie eine Designdatei erstellen, die Ihre Diagramme und Berichte standardisiert. Dies verhilft Ihren Organisationsberichten zu einem einheitlichen Erscheinungsbild.
+* **background**, **foreground** und **tableAccent**: Farbklassen. Mithilfe von Farbklassen können Sie viele Farben in Ihrem Bericht auf einmal festlegen. 
 
-Informationen zum Format der detaillierten JSON-Datei finden Sie im Abschnitt **Format der JSON-Datei für Berichtsdesigns** später in diesem Artikel.
+Sie können diese JSON-Datei als Grundlage für die Erstellung Ihrer eigenen benutzerdefinierten Berichtsdesigndatei zum Importieren verwenden. Wenn Sie nur die Grundfarben Ihres Berichts anpassen möchten, ändern Sie den Namen und die Hexcodes in der Datei.
 
-## <a name="how-report-theme-colors-stick-to-your-reports"></a>Darstellung von Berichtdesignfarben in Berichten
-Wenn Sie Berichte im **Power BI-Dienst** veröffentlichen, bleiben die Berichtdesignfarben erhalten.
+In einer JSON-Berichtsdesigndatei geben Sie nur die Formatierung an, die Sie ändern möchten. Alles, was Sie nicht in der JSON-Datei angeben, wird auf die Standardeinstellungen von Power BI Desktop zurückgesetzt.
 
-Der Abschnitt **Datenfarben** im Bereich **Format** spiegelt Ihr Berichtsdesign wider. Nachdem Sie beispielsweise die breite Palette von Grün- und Brauntönen für das Design **St Patricks Day** angewendet haben, wählen Sie ein Visual aus. Navigieren Sie dann zu **Format > Datenfarben**. Dort werden die folgenden Informationen angezeigt:
+Das Erstellen einer JSON-Datei bietet viele Vorteile. Sie können beispielsweise festlegen, dass für alle Diagramme der Schriftgrad 12 verwendet wird, dass für bestimmte Visuals eine bestimmte Schriftfamilie verwendet wird oder das Datenbeschriftungen für bestimmte Diagrammtypen deaktiviert sind. Mithilfe einer JSON-Datei können Sie eine Berichtsdesigndatei erstellen, die Ihre Diagramme und Berichte standardisiert. Dies verhilft Ihren Organisationsberichten zu einem einheitlichen Erscheinungsbild.
 
-![Visualisierungen](media/desktop-report-themes/report-themes_8.png)
+Weitere Informationen zum Format der JSON-Datei finden Sie unter [Format der JSON-Datei für Berichtsdesigns](#report-theme-json-file-format).
 
-Also alles im grünen Bereich. Das liegt daran, dass diese Farben Teil des **Berichtsdesigns** sind, das Sie importiert und angewendet haben.
+## <a name="how-report-theme-colors-stick-with-your-reports"></a>Darstellung von Berichtdesignfarben in Berichten
+Wenn Sie Berichte im Power BI-Dienst veröffentlichen, bleiben die Berichtdesignfarben erhalten. Der Abschnitt **Datenfarben** im Bereich **Format** spiegelt Ihr Berichtsdesign wider. 
 
-Farben in der Farbpalette sind auch relativ zum aktuellen Design. Wenn Sie also beispielsweise die dritte Farbe der obersten Zeile für einen Datenpunkt auswählen und später zu dem anderen Design wechseln, wird die Farbe des Datenpunkts automatisch auf die dritte Farbe der obersten Zeile im neuen Design aktualisiert – wie beim Ändern von Designs in Microsoft Office.
+So zeigen Sie die in einem Berichtdesign verfügbaren Farben an
+
+1. Wählen Sie ein Visual aus. 
+
+2. Wählen Sie im Bereich **Visualisierung** im Bereich **Format** die Option **Datenfarben** aus.
+ 
+3. Wählen Sie die Dropdownliste eines Elements aus, um die Informationen zu **Designfarben** des Berichtsdesigns anzuzeigen.
+
+   ![Designfarben](media/desktop-report-themes/report-themes_8.png)
+
+Nachdem Sie in unserem Beispiel die Vielzahl der grünen und braunen Farben aus dem Berichtsdesign „St. Patrick's Day“ angewendet haben, sehen Sie sich die Designfarben an. Also alles im grünen Bereich. Das liegt daran, dass diese Farben Teil des Berichtsdesigns sind, das Sie importiert und angewendet haben.
+
+Die Farben in der Farbpalette sind relativ zum aktuellen Design. Angenommen, Sie wählen für einen Datenpunkt die dritte Farbe der obersten Zeile aus. Wenn Sie später zu einem anderen Design wechseln, wird die Farbe dieses Datenpunkts automatisch in die dritte Farbe der obersten Zeile des neuen Designs aktualisiert, wie dies auch beim Ändern von Designs in Microsoft Office der Fall ist.
 
 ### <a name="situations-when-report-theme-colors-wont-stick-to-your-reports"></a>Situationen, in denen Berichtdesignfarben in Berichten nicht dargestellt werden
-Angenommen, Sie wenden eine benutzerdefinierte Farbpalette (oder eine einzelne Farbe) unter Verwendung der Option „Benutzerdefinierte Farbe“ in der Farbauswahl auf einen bestimmten Datenpunkt in einem Visual an. Wenn Sie ein Berichtsdesign anwenden, überschreibt es *nicht* die angepasste Datenpunktfarbe.
+Angenommen, Sie wenden eine benutzerdefinierte Farbpalette (oder eine einzelne Farbe) unter Verwendung der Option **Benutzerdefinierte Farbe** in der Farbauswahl auf einen bestimmten Datenpunkt in einem Visual an. Wenn Sie ein Berichtsdesign anwenden, überschreibt es *nicht* die angepasste Datenpunktfarbe.
 
-Sie haben auch die Möglichkeit, die Farbe eines Datenpunkts im Abschnitt „Designfarben“ manuell festzulegen. Die Farben werden *nicht* aktualisiert, wenn Sie ein neues Berichtsdesign anwenden. Wenn Sie Farben auf ihre Standardwerte zurücksetzen möchten, damit sie bei Anwenden eines neuen Berichtsdesigns aktualisiert werden, wählen Sie **Auf Standardwert zurücksetzen** aus, oder wählen Sie in der Farbauswahl eine Farbe in der Palette **Designfarben** aus.
+Oder angenommen, Sie möchten die Farbe eines Datenpunkts manuell mithilfe des Abschnitts **Designfarben** festlegen. Wenn Sie ein neues Berichtsdesign anwenden, werden diese Farben *nicht* aktualisiert. Um Farben auf ihre Standardwerte zurückzusetzen, damit sie bei Anwenden eines neuen Berichtsdesigns aktualisiert werden, wählen Sie **Auf Standardwert zurücksetzen** oder in der Farbauswahl eine Farbe in der Palette **Designfarben** aus.
 
 ![Auf Standardwert zurücksetzen](media/desktop-report-themes/report-themes_9.png)
 
-Auf viele **benutzerdefinierte Visuals** lassen sich keine Berichtsdesigns anwenden.
+Auf viele benutzerdefinierte Visuals lassen sich keine Berichtsdesigns anwenden.
 
-## <a name="report-theme-files-you-can-use-right-now"></a>Berichtdesigndateien zur sofortigen Verwendung
-Möchten Sie gleich mit **Berichtdesigns** arbeiten? Hier sind einige vorgefertigte JSON-Dateien für Berichtsdesigns, die Sie herunterladen und in Ihren **Power BI Desktop**-Bericht importieren können. Außerdem sehen Sie ein Bild vom Berichtsdesign, das in diesem Artikel beispielhaft auf den Bericht angewendet wird.
+## <a name="custom-report-theme-files-you-can-use-right-now"></a>Benutzerdefinierte Berichtdesigndateien zur sofortigen Verwendung
+Möchten Sie gleich mit Berichtdesigns arbeiten? Sehen Sie sich die benutzerdefinierten Berichtdesigns im [Designkatalog](https://community.powerbi.com/t5/Themes-Gallery/bd-p/ThemesGallery) an, oder probieren Sie die folgenden vordefinierten JSON-Dateien mit benutzerdefinierten Berichtdesigns aus, die Sie herunterladen und in Ihren Power BI Desktop-Bericht importieren können:
 
-* Dieses [Design](https://go.microsoft.com/fwlink/?linkid=843924) haben wir in dem [Blogbeitrag](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/) verwendet, mit dem wir **Berichtdesigns** angekündigt haben: [*waveform.json*](https://go.microsoft.com/fwlink/?linkid=843924).
+* [Design „Wellenform“](https://community.powerbi.com/t5/Themes-Gallery/Waveform/m-p/140536). Dieses Berichtsdesign wurde in dem [Blogbeitrag](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/) vorgestellt, in dem die erste Veröffentlichung von Berichtsdesign angekündigt wurde. [Waveform.json herunterladen](https://go.microsoft.com/fwlink/?linkid=843924).
 
-  ![Design „waverform.json“](media/desktop-report-themes/report-themes_10.png)
+  ![Design „waveform.json“](media/desktop-report-themes/report-themes_10.png)
 
-* Dieses [Design ist für Sehbehinderte besser lesbar](https://go.microsoft.com/fwlink/?linkid=843923) als das Standardfarbdesign. Es heißt [*ColorblindSafe-Longer.json*](https://go.microsoft.com/fwlink/?linkid=843923).
+* [Design „Benutzerfreundlich bei Farbenblindheit“](https://community.powerbi.com/t5/Themes-Gallery/Color-Blind-Friendly/m-p/140597).
+Dieses Berichtsdesign ist für Sehbehinderte leichter zu lesen. [ColorblindSafe-Longer.json herunterladen](https://go.microsoft.com/fwlink/?linkid=843923).
 
-  ![Design „ColorblindSafe-Longer.json“](media/desktop-report-themes/report-themes_11.png)
+  ![Design „ColorblindSafe-Longer.json“](media/desktop-report-themes/report-themes_11.png).
 
-* Diese Gruppe von [Power View-Designs](https://go.microsoft.com/fwlink/?linkid=843925) befindet sich in einer ZIP-Datei. Dazu gehört auch das hier angezeigte Design [*Apothecary.json*](https://go.microsoft.com/fwlink/?linkid=843925).
+* Power View-Designs mit Apothecary.json. [Laden Sie Power View-Designs in einer ZIP-Datei herunter](https://go.microsoft.com/fwlink/?linkid=843925).
 
   ![Design „Apothecary.json“](media/desktop-report-themes/report-themes_12.png)
 
-* Das ist schließlich das Design *Valentines Day*.
+* Design „Valentine‘s Day“.
 
-  ![Design „Valentines Day“](media/desktop-report-themes/report-themes_13.png)
+  ![Design „Valentine‘s Day“](media/desktop-report-themes/report-themes_13.png)
 
-Anstelle eines Downloads stellen wir Ihnen den Code für die JSON-Datei „Valentines Day“ bereit:
+  Hier der Code der JSON-Datei für den Valentinstag:
 
-```json
-    {
-        "name": "Valentine's Day",
-        "dataColors": ["#990011", "#cc1144", "#ee7799", "#eebbcc", "#cc4477", "#cc5555", "#882222", "#A30E33"],
-        "background":"#FFFFFF",
-        "foreground": "#ee7799",
-        "tableAccent": "#990011"
-    }
-```
-
-Mit **Berichtdesigns** können Sie Berichten in Power BI Desktop eine persönliche Note verleihen, die Corporate Identity vertreten oder Feiertagsgrüße ausrichten. 
+   ```json
+       {
+           "name": "Valentine's Day",
+           "dataColors": ["#990011", "#cc1144", "#ee7799", "#eebbcc", "#cc4477", "#cc5555", "#882222", "#A30E33"],
+           "background":"#FFFFFF",
+           "foreground": "#ee7799",
+           "tableAccent": "#990011"
+       }
+   ```
 
 Hier sind einige weitere Berichtsdesigns, die Sie als Ausgangspunkt verwenden können:
 
@@ -208,8 +228,27 @@ Hier sind einige weitere Berichtsdesigns, die Sie als Ausgangspunkt verwenden k�
 * [Autumn](https://community.powerbi.com/t5/Themes-Gallery/Autumn/m-p/140746) (Herbst)
 * [Color Blind Friendly](https://community.powerbi.com/t5/Themes-Gallery/Color-Blind-Friendly/m-p/140597) (Für Farbenblinde)
 
+Mithilfe von Berichtdesigns können Ihre Power BI Desktop-Berichte ein lebendiges Bild von Ihnen, Ihrem Unternehmen oder sogar der aktuellen Saison oder Feiertagen vermitteln. 
+
+
+## <a name="export-report-themes-preview"></a>Exportieren von Berichtsdesigns (Vorschau)
+
+Ab der Power BI Desktop-Version vom Dezember 2019 können Sie das aktuell angewendete Berichtsdesign direkt aus Power BI Desktop in eine JSON-Datei exportieren. Nachdem Sie ein Berichtsdesign exportiert haben, können Sie es in Ihren eigenen Berichten wiederverwenden. Mit dieser Option können Sie die JSON-Datei für die meisten integrierten Designs exportieren. Die einzigen Ausnahmen sind die Standarddesigns „Klassisch“ und „Standard“, auf denen andere Designs beim Import aufbauen. 
+
+So exportieren Sie das aktuell angewendete Design aus Power BI Desktop 
+
+1. Wählen Sie **Datei** > **Optionen und Einstellungen** > **Optionen** aus. 
+
+2. Wählen Sie im Abschnitt **Vorschaufeatures** erst **Aktuelles Design anpassen** und dann **OK** aus.
+
+   Möglicherweise werden Sie aufgefordert, Power BI Desktop neu zu starten, damit das Vorschaufeature aktiviert wird. Nach dem Neustart können Sie mit dem Exportieren des aktuell angewendeten Designs beginnen. 
+
+3.  Wählen Sie im Menüband **Start** die Befehle **Design wechseln** > **Aktuelles Design exportieren** aus. 
+
+4. Wechseln Sie im Dialogfeld **Speichern unter** zu einem Verzeichnis, in dem die JSON-Datei gespeichert werden soll, und wählen Sie dann **Speichern** aus.
+
 ## <a name="report-theme-json-file-format"></a>Format der JSON-Datei für Berichtsdesigns
-Auf der grundlegendsten Ebene benötigt die Design-JSON-Datei nur eine Zeile: den **Namen**. 
+Auf der grundlegendsten Ebene benötigt die JSON-Designdatei nur eine Zeile: **name**. 
 
 ```json
     {
@@ -217,16 +256,15 @@ Auf der grundlegendsten Ebene benötigt die Design-JSON-Datei nur eine Zeile: de
     }
 ```
 
-Alles andere als der *Name* ist optional. Dies bedeutet, dass Sie die Freiheit haben, nur die Eigenschaften hinzuzufügen, die Sie speziell für die Designdatei formatieren möchten, und für den Rest weiterhin die Standardwerte von Power BI verwenden können. 
+Alles andere als **name** ist optional. Dies bedeutet, dass Sie die Freiheit haben, nur die Eigenschaften hinzuzufügen, die Sie speziell für die Designdatei formatieren möchten, und für den Rest weiterhin die Standardwerte von Power BI verwenden können. 
 
-Unter dem Namen können Sie einige grundlegende Eigenschaften von Datenfarben hinzufügen. 
+Unter **name** können Sie die folgenden grundlegenden Eigenschaften von Datenfarben hinzufügen: 
 
+* **dataColors**: Eine Liste mit Farben im Hexadezimalcode für Daten in Power BI Desktop-Visuals. Diese Liste kann wahlweise so viele oder so wenige Farben aufweisen, wie Sie möchten. Wenn alle Farben aus dieser Liste verwendet worden sind und das Visual noch weitere Farben benötigt, erfolgt die Zurücksetzung auf die Verwendung der Standardfarbpalette von Power BI. 
+* **good**, **neutral**, **bad**: Mit diesen Eigenschaften werden die vom Wasserfalldiagramm und dem KPI-Visual verwendeten Statusfarben festgelegt.
+* **maximum**, **center**, **minimum**, **null**: Mit diesen Farben werden die verschiedenen Farbverlaufsfarben im Dialogfeld für bedingte Formatierung festgelegt.  
 
-* **dataColors**: Eine Liste von Farben (im Hexadezimalcode) für Daten in Power BI Desktop-Visuals. Die Liste kann beliebig viele oder wenige Farben umfassen. Wenn alle Farben aus dieser Liste verwendet worden sind und das Visual noch weitere Farben benötigt, erfolgt die Zurücksetzung auf die Verwendung der Standardfarbpalette von Power BI. 
-* **good, neutral, bad**: Hiermit werden die vom Wasserfalldiagramm und dem KPI-Visual verwendeten Statusfarben festgelegt.
-* **maximum, center, minimum, null**: Mit diesen Farben werden die verschiedenen Farbverlaufsfarben im Dialogfeld für die bedingte Formatierung festgelegt.  
-
-Ein grundlegendes Design, das diese Farben definiert, würde wie folgt aussehen:
+Ein einfaches Design, das diese Farben definiert, sieht ungefähr so aus:
 
 ```json
     {
@@ -253,23 +291,22 @@ Ein grundlegendes Design, das diese Farben definiert, würde wie folgt aussehen:
     }
 ```
 
-Als nächstes können Sie verschiedene Farbklassen hinzufügen. Mit Farbklassen können Sie im gesamten Bericht viele Farben in einer Zeile festlegen, indem Sie ähnliche visuelle Eigenschaften gruppieren, die in der Regel die gleiche Farbe aufweisen. 
+Als Nächstes können Sie verschiedene Farbklassen hinzufügen, wie z. B. **background** und **foreground**. Mit Farbklassen können Sie im gesamten Bericht viele Farben in einer Zeile festlegen, indem Sie ähnliche visuelle Eigenschaften gruppieren, die in der Regel die gleiche Farbe aufweisen. 
 
-Die sechs Farbklassen, die Sie in der folgenden Tabelle formatieren können, werden angezeigt.
-
+Die folgende Tabelle enthält die sechs Farbklassen, die Sie formatieren können.
 
 |Farbklasse  |Formatiert Folgendes  |
 |---------|---------|
-|Vordergrund | Hintergrundfarbe für Beschriftungen (außerhalb von Datenpunkten) <br> Trendlinienfarbe <br>  Textfeld-Standardfarbe <br> Schriftfarbe für Tabellen- und Matrixwerte und Summen Datenbalken-Achsenfarbe <br> Kartendatenbeschriftungen <br> Farbe für Messgerätlegendenwert <br> KPI-Zielfarbe <br>  KPI-Textfarbe <br> Slicerelementfarbe (im Fokusmodus)  <br> Schriftfarbe für Slicerdropdownelement <br> Schriftfarbe für numerische Slicereingabe <br> Schriftfarbe für Slicerkopfzeile <br> Punktdiagramm-Verhältnislinienfarbe <br> Farbe für Liniendiagramm-Vorhersagelinie <br> Kartenführungslinien-Farbe <br> Farbe für Filterbereich und Kartentext|
-|foregroundNeutralSecondary |Beschriftungsfarben  <br> Farbe für Legendenbeschriftungen <br> Farbe für Achsenbeschriftungen <br> Schriftfarbe für Tabellen- und Matrixkopfzeile <br> Farbe für Messgerätziel und Zielführungslinie <br>  KPI-Trendachsenfarbe <br> Farbe für Slicerschieberegler <br> Schriftfarbe für Slicerelement <br> Farbe für Slicerkontur <br> Farbe beim Zeigen auf Liniendiagramm <br> Titelfarbe für mehrzeilige Karte <br> Strichfarbe für Menübanddiagramm <br> Rahmenfarbe für Formenzuordnung <br> Schriftfarbe für Schaltflächentext <br> Linienfarbe für Schaltflächensymbol <br> Schaltflächen-Konturfarbe |
-| foregroundNeutralTertiary | abgeblendete Legendenfarbe <br> Farbe für Kartenkategoriebeschriftung <br> Farbe für Kategoriebeschriftungen für mehrzeilige Karte <br> Balkenfarbe für mehrzeilige Karte <br> Strichfarbe für Trichterdiagramm-Konvertierungsrate 
-| backgroundLight | Achsengitternetzlinien-Farbe <br> Tabellen- und Matrixrasterfarbe <br> Hintergrundfarbe für Slicerkopfzeile (im Fokusmodus)  <br> Konturfarbe für mehrzeilige Karte  <br> Formfüllfarbe <br> Hintergrundfarbe für Messgerätbogen <br> Hintergrundfarbe für angewendete Filterkarte <br> |
-backgroundNeutral | Tabellen- und Matrixraster-Konturenfarbe <br> Standardfarbe für Formenzuordnung <br> Menübanddiagramm-Füllfarbe (wenn Option „Serienfarbe abgleichen“ deaktiviert ist) |
-Hintergrund | Hintergrundfarbe für Beschriftungen (innerhalb von Datenpunkten) <br> Hintergrundfarbe für Slicerdropdownelemente  <br> Ringdiagramm-Strichfarbe <br> Treemapstrichfarbe <br> Hintergrundfarbe des Kombinationsdiagramms <br> Füllfarbe für Schaltflächen <br> Farbe für Filterbereich und Hintergrund verfügbarer Filterkarten |
-tableAccent | Überschreibt die Tabellen- und Matrixraster-Konturfarbe, wenn vorhanden |
+|**foreground** | Hintergrundfarbe für Beschriftungen (außerhalb von Datenpunkten) <br> Trendlinienfarbe <br>  Textfeld-Standardfarbe <br> Schriftfarbe für Tabellen- und Matrixwerte und Summen Datenbalken-Achsenfarbe <br> Kartendatenbeschriftungen <br> Farbe für Messgerätlegendenwert <br> KPI-Zielfarbe <br>  KPI-Textfarbe <br> Slicerelementfarbe (im Fokusmodus)  <br> Schriftfarbe für Slicerdropdownelement <br> Schriftfarbe für numerische Slicereingabe <br> Schriftfarbe für Slicerkopfzeile <br> Punktdiagramm-Verhältnislinienfarbe <br> Farbe für Liniendiagramm-Vorhersagelinie <br> Kartenführungslinien-Farbe <br> Farbe für Filterbereich und Kartentext|
+|**foregroundNeutralSecondary** |Beschriftungsfarben  <br> Farbe für Legendenbeschriftungen <br> Farbe für Achsenbeschriftungen <br> Schriftfarbe für Tabellen- und Matrixkopfzeile <br> Farbe für Messgerätziel und Zielführungslinie <br>  KPI-Trendachsenfarbe <br> Farbe für Slicerschieberegler <br> Schriftfarbe für Slicerelement <br> Farbe für Slicerkontur <br> Farbe beim Zeigen auf Liniendiagramm <br> Titelfarbe für mehrzeilige Karte <br> Strichfarbe für Menübanddiagramm <br> Rahmenfarbe für Formenzuordnung <br> Schriftfarbe für Schaltflächentext <br> Linienfarbe für Schaltflächensymbol <br> Schaltflächen-Konturfarbe |
+| **foregroundNeutralTertiary** | abgeblendete Legendenfarbe <br> Farbe für Kartenkategoriebeschriftung <br> Farbe für Kategoriebeschriftungen für mehrzeilige Karte <br> Balkenfarbe für mehrzeilige Karte <br> Strichfarbe für Trichterdiagramm-Konvertierungsrate 
+| **backgroundLight** | Achsengitternetzlinien-Farbe <br> Tabellen- und Matrixrasterfarbe <br> Hintergrundfarbe für Slicerkopfzeile (im Fokusmodus)  <br> Konturfarbe für mehrzeilige Karte  <br> Formfüllfarbe <br> Hintergrundfarbe für Messgerätbogen <br> Hintergrundfarbe für angewendete Filterkarte <br> |
+**backgroundNeutral** | Tabellen- und Matrixraster-Konturenfarbe <br> Standardfarbe für Formenzuordnung <br> Menübanddiagramm-Füllfarbe (wenn Option „Serienfarbe abgleichen“ deaktiviert ist) |
+**background** | Hintergrundfarbe für Beschriftungen (innerhalb von Datenpunkten) <br> Hintergrundfarbe für Slicerdropdownelemente  <br> Ringdiagramm-Strichfarbe <br> Treemapstrichfarbe <br> Hintergrundfarbe des Kombinationsdiagramms <br> Füllfarbe für Schaltflächen <br> Farbe für Filterbereich und Hintergrund verfügbarer Filterkarten |
+**tableAccent** | Überschreibt die Tabellen- und Matrixraster-Konturfarbe, wenn vorhanden |
 
 
-Hier sehen Sie das Beispiel einer Designeinstellung der Farbklassen:
+Hier ist ein Beispieldesign, das die Farbklassen festlegt:
 
 ```json
     {
@@ -284,16 +321,16 @@ Hier sehen Sie das Beispiel einer Designeinstellung der Farbklassen:
     }
 ```
 
-Als nächstes können Sie Ihrer JSON-Datei Textklassen hinzufügen, die Farbklassen ähneln, aber so konzipiert sind, dass Sie Schriftgrad, Farbe und Familie für Textgruppen im gesamten Bericht aktualisieren können. Es gibt 12 Textklassen, aber Sie müssen eigentlich nur vier Klassen festlegen, die als *primäre Klassen* bezeichnet werden, um die gesamte Textformatierung im Bericht zu ändern. Andere Textklassen, die als *sekundäre Klassen* angesehen werden, erben ihre Eigenschaften automatisch von ihren zugeordneten primären Klassen oder leiten sie davon ab. Häufig leitet eine sekundäre Klasse einen im Vergleich zur primären Klasse helleren Ton der Textfarbe ab oder eine Textgröße, die um einen bestimmten Prozentsatz größer oder kleiner ist. 
+Als Nächstes können Sie Ihrer JSON-Datei Textklassen hinzufügen. Textklassen ähneln Farbklassen, sind aber so konzipiert, dass Sie Schriftgrad, Farbe und Familie für Textgruppen im gesamten Bericht aktualisieren können. Es gibt 12 Textklassen, aber Sie müssen nur vier Klassen festlegen, die als *primäre Klassen* bezeichnet werden, um die gesamte Textformatierung im Bericht zu ändern. Andere Textklassen, die als *sekundäre Klassen* angesehen werden, erben ihre Eigenschaften automatisch von ihren zugeordneten primären Klassen oder leiten sie davon ab. Häufig leitet eine sekundäre Klasse einen im Vergleich zur primären Klasse helleren Ton der Textfarbe ab oder eine Textgröße, die um einen bestimmten Prozentsatz größer oder kleiner ist. 
 
-Nehmen wir die Klasse *label* als Beispiel. Die Standardformatierung für die label-Klasse ist Segoe UI, 252423 (ein Dunkelgrau) und 12 Punkte, und diese Klasse wird verwendet, um die Werte in der Tabelle und der Matrix zu formatieren. In der Regel verfügen die Summen in einer Tabelle oder Matrix über eine ähnliche Formatierung, aber sie werden fett formatiert, sodass sie sich besser hervorheben, also wird für sie die Klasse für die fette Beschriftungsformatierung verwendet. Sie müssen dies jedoch nie selbst im Design-JSON-Code angeben. Power BI legt dies automatisch für Sie fest. Wenn Sie zu einem späteren Zeitpunkt entscheiden, dass die Beschriftungen in Ihrem Design in einer 14-Punkt-Schrift angezeigt werden sollen, müssen Sie nicht auch die Klasse für die fette Beschriftungsformatierung aktualisieren, da sie die gesamte Textformatierung von der label-Klasse erbt und einfach für die Schriftfamilie die Fettformatierung festgelegt wird. 
+Nehmen wir die Klasse **label** als Beispiel. Die Standardformatierung für die **label**-Klasse ist Segoe UI, 252423 (eine dunkelgraue Farbe) und 12 Punkte. Diese Klasse wird verwendet, um die Werte in der Tabelle und Matrix zu formatieren. Meist haben die Summen in einer Tabelle oder Matrix eine ähnliche Formatierung, sind aber mit der Klasse **bold label** fett formatiert, damit sie auffallen. Sie müssen diese Klasse jedoch nicht in der JSON-Designdatei angeben, denn Power BI tut dies automatisch. Wenn Sie sich später entscheiden, Beschriftungen mit einer 14-Punkt-Schriftart in Ihrem Design festzulegen, müssen Sie nicht auch die Klasse **bold label** aktualisieren, da sie die Textformatierung von der Klasse **label** erbt. 
 
-Die Tabellenliste zeigt Folgendes an:
-* Die vier primären Textklassen, was sie formatieren, und die Standardeinstellungen
-* Jede sekundäre Klasse, was sie formatiert, und ihre Standardeinstellung, die im Vergleich zur primären Klasse eindeutig ist
+Die folgende Tabelle enthält die folgenden Informationen:
+* Die vier primären Textklassen, was sie formatieren und ihre Standardeinstellungen
+* Jede sekundäre Klasse, was sie formatiert und ihre Standardeinstellung, die im Vergleich zur primären Klasse eindeutig ist
 
 
-|Primäre Klasse  |Sekundäre Klasse  |Klassenname in JSON  |Einstellungen  |Zugeordnete visuelle Objekte  |
+|Primäre Klasse  |Sekundäre Klassen  |JSON-Klassenname  |Einstellungen  |Zugeordnete visuelle Objekte  |
 |---------|---------|---------|---------|---------|
 | Legende   | N/V   | callout | DIN <br> 252423 <br> 45 pt |Kartendatenbeschriftungen <br> KPI-Indikatoren|
 |Header|N/V|header|Segoe UI Semibold <br> 252423 <br> 12 pt |Kopfzeile für die wichtigsten Einflussfaktoren |
@@ -309,7 +346,7 @@ Die Tabellenliste zeigt Folgendes an:
 |-|Klein und dünn  |smallLightLabel    |605E5C<br>9 pt |Datenbeschriftungen<br>Wertachsenbeschriftungen|
 
 
-Sie müssen die sekundären Klassen zwar nicht in der Designdatei festlegen, da sie von den primären Klassen erben, aber wenn Sie die Vererbungsregeln nicht mögen (weil Sie z. B. nicht möchten, dass Ihre Summenwerte in einer Tabelle fett formatiert sind), können Sie die sekundären Klassen explizit in der Designdatei formatieren, so wie Sie die primären Klassen formatieren können.
+Da sekundäre Klassen von den primären Klassen erben, müssen Sie sie nicht in der Designdatei festlegen. Aber wenn Ihnen die Vererbungsregeln nicht gefallen (weil Sie z. B. nicht möchten, dass Ihre Summenwerte in einer Tabelle fett formatiert sind), können Sie die sekundären Klassen ebenso wie die primären Klassen explizit in der Designdatei formatieren.
 
 Im folgenden Beispieldesign werden nur die primären Textklassen festlegt: 
 
@@ -341,7 +378,7 @@ Im folgenden Beispieldesign werden nur die primären Textklassen festlegt:
     }
 ```
 
-Um eine JSON-Datei in einem erweiterten Format zu erstellen, die eine detailliertere und präzisere Steuerung der gesamten Visualformatierung ermöglicht, können Sie der JSON-Datei schließlich den Abschnitt **visualStyles** hinzufügen. Die Formatierungsangaben im Abschnitt **visualStyles** müssen Sie schachteln. Der Abschnitt **visualStyles** hat etwa das folgende Format:
+Um eine JSON-Datei in einem erweiterten Format zu erstellen, die eine detailliertere und präzisere Steuerung der gesamten Formatierung von Visuals ermöglicht, können Sie der JSON-Datei schließlich den Abschnitt **visualStyles** hinzufügen, um Formatierungsangaben zu schachteln. Hier ein Beispiel des Abschnitts **visualStyles**:
 
     visualStyles: {
         visualName: {
@@ -353,11 +390,11 @@ Um eine JSON-Datei in einem erweiterten Format zu erstellen, die eine detaillier
         }
     }
 
-Verwenden Sie für die Abschnitte **visualName** und **cardName** einen spezifischen Visual- und Kartennamen. Derzeit ist der **styleName** immer ein Sternchen („*“), aber in einem zukünftigen Release können Sie unterschiedliche Formatvorlagen für Ihre Visuals erstellen und Ihnen Namen geben (ähnlich wie beim Tabellen- und Matrixformatvorlagen-Feature). **propertyName** ist der Name der spezifischen Formatierungsoption, und unter **propertyValue** definieren Sie die Formatierungsoption.  
+Verwenden Sie für die Abschnitte **visualName** und **cardName** einen spezifischen Visual- und Kartennamen. Derzeit ist **styleName** immer ein Sternchen (*), aber in einem künftigen Release können Sie unterschiedliche Formatvorlagen für Ihre Visuals erstellen und Ihnen Namen geben (ähnlich wie beim Tabellen- und Matrixformatvorlagen-Feature). **propertyName** ist der Name der Formatierungsoption und **propertyValue** deren Wert.  
 
-Für **visualName** und **cardName** können Sie ein Sternchen („\*“) statt eines spezifischen Visual- oder Kartennamens verwenden, wenn die Einstellung für alle Visuals oder Karten gelten soll, die eine Eigenschaft haben. Wenn Sie das Sternchen („\*“) sowohl für den Visual- als auch für den Kartennamen verwenden, wenden Sie eine Einstellung global in Ihrem Bericht an, z. B. einen Schriftgrad oder eine bestimmte Schriftfamilie für alle Texte aller Visuals.
+Verwenden Sie für **visualName** und **cardName** ein Sternchen in Anführungszeichen, wenn Sie möchten, dass diese Einstellung für alle Visuals oder Karten gilt, die eine Eigenschaft haben. Wenn Sie ein Sternchen sowohl für den Visual- als auch für den Kartennamen verwenden, wenden Sie eine Einstellung global in Ihrem Bericht an, z. B. einen Schriftgrad oder eine bestimmte Schriftfamilie für alle Texte aller Visuals.
 
-Im folgenden Beispiel werden einige Eigenschaften für alle visuellen Stile festgelegt. 
+Im folgenden Beispiel werden einige Eigenschaften für alle Visualstile festgelegt: 
 
 ```json
 {  
@@ -392,12 +429,12 @@ Im folgenden Beispiel werden einige Eigenschaften für alle visuellen Stile fest
 }
 ```
 
-Dieses Beispiel zeigt Folgendes:
+Dieses Beispiel legt die folgenden Einstellungen fest:
 
 * Aktivieren des Zeilenumbruchs überall
-* Festlegen des Gitternetzlinien-Stils auf gepunktet für alle Visuals mit einer Kategorieachse
+* Festlegen des Gitternetzlinien-Stils auf „Gepunktet“ für alle Visuals mit einer Kategorieachse
 * Festlegen einiger Formatierungen für die verfügbaren und angewendeten Filterkarten (beachten Sie, dass „$id“ verwendet wird, um die verschiedenen Versionen der Filterkarten festzulegen)
-* Festlegen der Blasengröße für Punktdiagramme auf-10.
+* Festlegen der Blasengröße für Punktdiagramme auf -10.
 
 
 > [!NOTE]
@@ -406,9 +443,9 @@ Dieses Beispiel zeigt Folgendes:
 > 
 
 ### <a name="json-file-element-definitions"></a>Definitionen der Elemente in der JSON-Datei
-In den Tabellen in diesem Abschnitt werden Visualnamen (*visualName*), Kartennamen (*cardName*) und die zum Erstellen der JSON-Datei erforderlichen Enumerationen definiert.
+In den Tabellen in diesem Abschnitt werden Visualnamen (**visualName**), Kartennamen (**cardName**) und die zum Erstellen der JSON-Datei erforderlichen Enumerationen definiert.
 
-| **visualName** |
+| Werte für visualName |
 | --- |
 | areaChart |
 | barChart |
@@ -442,9 +479,9 @@ In den Tabellen in diesem Abschnitt werden Visualnamen (*visualName*), Kartennam
 | Treemap |
 | waterfallChart |
 
-In der folgenden Tabelle sind die Werte von *cardName* definiert. Der erste Wert in jeder Zelle ist die Benennung der JSON-Datei. Der zweite Wert ist der Name der Karte, der in der Benutzeroberfläche von **Power BI Desktop** angezeigt wird.
+In der folgenden Tabelle sind die Werte von **cardName** definiert. Der erste Wert in jeder Zelle ist die Benennung der JSON-Datei. Der zweite Wert ist der Name der Karte, der auf der Benutzeroberfläche von Power BI Desktop angezeigt wird.
 
-| **cardName** |
+| Werte für cardName |
 | --- |
 | axis: Messachse |
 | breakdown: Aufschlüsselung |
@@ -501,17 +538,17 @@ In der folgenden Tabelle sind die Werte von *cardName* definiert. Der erste Wert
 ### <a name="properties-within-each-card"></a>Eigenschaften in jeder Karte
 Im folgenden Abschnitt werden die Eigenschaften in jeder Karte definiert. Auf den Kartennamen folgt jeder Eigenschaftsname. Für jede Eigenschaft der Name, der angezeigt wird, wenn der Formatierungsbereich angezeigt wird, eine Beschreibung der Funktionsweise der Formatierungsoption und der Typ der Formatierungsoption. Mit diesem Ansatz erfahren Sie, welche Art von Werten Sie in der Designdatei verwenden können. 
 
-Wenn Sie **dateTime** verwenden, muss das Datum ein ISO-Datum in einfachen Anführungszeichen sein, dem „datetime“ vorangestellt ist. Beispiel:
+Wenn Sie **dateTime** verwenden, muss das Datum ein ISO-Datum in einfachen Anführungszeichen sein, dem „datetime“ vorangestellt ist. Sehen Sie sich folgendes Beispiel an:
 
     “datetime’2011-10-05T14:48:00.000Z’”
 
 Boolesche Werte sind entweder „true“ oder „false“. Zeichenfolgen müssen in doppelte Anführungszeichen eingeschlossen werden, wie in "dies ist eine Zeichenfolge". Zahlen stehen für den Wert selbst, nicht in Anführungszeichen.
 
-Für Farben sollte das folgende Format verwendet werden, wobei „FFFFFF“ im folgenden Beispiel den Platz Ihres benutzerdefinierten Hexadezimalcodes einnimmt.  
+Farben verwenden das folgende Format, wobei Ihr benutzerdefinierter Hexadezimalcode im folgenden Beispiel „FFFFFF“ ersetzt:  
 
     { "solid": { "color": "#FFFFFF" } }
 
-Für eine Enumeration, die am häufigsten für Dropdownformatierungsoptionen verwendet wird, kann jede der im Bereich angezeigten Optionen festgelegt werden, z. B. „RightCenter“ für die Legendenposition oder „Datenwert, Prozent des Gesamtwerts“ für die Kreisdiagramm-Datenbeschriftung. Die Enumerationsoptionen werden unterhalb der Eigenschaftenliste angezeigt.
+Für eine Enumeration, die am häufigsten für Dropdownformatierungsoptionen verwendet wird, kann jede der im Bereich angezeigten Optionen festgelegt werden, z. B. „RightCenter“ für die Legendenposition oder „Datenwert, Prozent des Gesamtwerts“ für die Beschriftung von Kreisdiagrammdaten. Die Enumerationsoptionen werden unterhalb der Eigenschaftenliste angezeigt.
 
 
 ```json

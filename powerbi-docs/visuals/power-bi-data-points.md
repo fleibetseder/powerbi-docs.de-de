@@ -2,21 +2,21 @@
 title: Große Datasets, Datenpunktgrenzwerte und Datenstrategien
 description: Datengrenzwerte für Visuals und Datenverringerungsstrategien
 author: mihart
-ms.reviewer: amac
+ms.reviewer: justyna
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/07/2018
+ms.date: 01/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1ae0fc339d3837c8fc28cc604b3ddb840807dcd5
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: 320e8a25206a069c43800295ab64a7ab87afbcf0
+ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74011302"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885257"
 ---
-# <a name="data-point-limits-and-strategies-by-visual-type"></a>Datenpunktgrenzwerte und Strategien nach Visualtyp
+# <a name="apply-data-point-limits-and-strategies-by-visual-type"></a>Anwenden von Datenpunktgrenzwerten und Strategien nach Visualtyp
 
 Beim Rendern eines Visuals in Power BI muss die Visualisierung schnell und genau sein. Dafür müssen für jeden Visualtyp grundlegende Algorithmen konfiguriert werden. Visuals in Power BI müssen über ausreichend Flexibilität verfügen, um verschiedene Größen von Datasets zu verarbeiten. Einige Datasets enthalten nur wenige Datenpunkte, während andere mehrere Petabytes aufweisen. In diesem Artikel werden die von Power BI verwendeten Strategien zum Rendern von Visualisierungen beschrieben.
 
@@ -75,7 +75,7 @@ Siehe [Funktionsweise der Stichprobenentnahme für Linienelemente](../desktop-hi
  Verwendet die gleichen Strategien wie Säulendiagramme Beachten Sie, dass die Zeile im **Kombinationsdiagramm** nicht den Algorithmus für hohe Dichte verwendet, den **Liniendiagramme** verwenden.
 
 ### <a name="custom-visuals"></a>Benutzerdefinierte visuelle Elemente
-Kann bis zu 30.000 Datenpunkte abrufen. Die Entscheidung, welche Strategien angewandt werden sollen, liegt jedoch beim Autor des Visuals.
+Kann bis zu 30.000 Datenpunkte abrufen. Die Entscheidung, welche Strategien angewandt werden sollen, liegt jedoch beim Autor des visuellen Elements. Der Standardgrenzwert ist 1.000, aber der Ersteller des visuellen Elements kann dies ändern und maximal 30.000 festlegen.
 
 ### <a name="doughnut"></a>Ringdiagramm
 - Maximale Anzahl von Datenpunkten: 3.500
@@ -119,6 +119,9 @@ Je nach Konfiguration kann eine Karte Folgendes enthalten:
 - Zeilen: Virtualisierung mit Fenstern von 500 Zeilen zur gleichen Zeit
 - Spalten: Oberste 100 Gruppierungsspalten 
 - Werte: Mehrere Werte werden für die Datenverringerung nicht berücksichtigt.
+
+### <a name="powerapps-visual"></a>Visuelles PowerApps-Element
+Kann bis zu 30.000 Datenpunkte abrufen. Die Entscheidung, welche Strategien angewandt werden sollen, liegt jedoch beim Autor des visuellen Elements. Der Standardgrenzwert ist 1.000, aber der Ersteller des visuellen Elements kann dies ändern und maximal 30.000 festlegen.
 
 ### <a name="radial-gauge"></a>Radiale Messanzeige
 Keine Datenverringerungsstrategien

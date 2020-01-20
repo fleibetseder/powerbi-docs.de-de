@@ -9,12 +9,12 @@ ms.author: maggies
 ms.reviewer: cfinlan
 ms.custom: ''
 ms.date: 08/29/2019
-ms.openlocfilehash: 44e56613a69069351f21aa7d515fc2bb296e6728
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: b8301ca17559b81d4db132fbeaa0955ce68a4c6e
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74128256"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762138"
 ---
 # <a name="pass-a-report-parameter-in-a-url-for-a-paginated-report-in-power-bi"></a>Übergeben eines Berichtsparameters in einer URL für einen paginierten Bericht in Power BI 
 
@@ -64,6 +64,8 @@ Verwenden Sie beim Übergeben eines booleschen Werts 0 für FALSE und 1 für TRU
 
 > [!NOTE]
 > Wenn Ihr Bericht einen Berichtsparameter enthält, der über einen Standardwert verfügt, und der Wert der **Prompt**-Eigenschaft **FALSE** ist (d.h., die **Prompt User**-Eigenschaft ist im Berichts-Manager nicht ausgewählt), können Sie für diesen Berichtsparameter keinen Wert innerhalb einer URL übergeben. Dadurch können Administratoren verhindern, dass Endbenutzer die Werte bestimmter Berichtsparameter hinzufügen oder ändern.
+
+> Power BI unterstützt keine Abfragezeichenfolge mit mehr als 900 Zeichen.  Dieser Wert kann überschritten werden, wenn Sie URL-Parameter verwenden, um Ihren paginierten Bericht anzuzeigen.  Dies gilt insbesondere dann, wenn Sie mehrwertige Parameter verwenden.
 
 ## <a name="additional-examples"></a>Zusätzliche Beispiele 
 

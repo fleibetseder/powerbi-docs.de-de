@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/23/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: be45941e67417cbed15433405953cf728fe0aa8d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 2d564b22ecf02c0d8593ed5676e46f2eb4168964
+ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876924"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75836721"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtern eines Berichts mithilfe von Abfragezeichenfolgenparametern in der URL
 
@@ -46,7 +46,7 @@ Wenn Sie einem Bericht in einer App einen URL-Filter hinzufügen möchten, sieht
 
 Sehen Sie sich dazu das folgende Beispiel an:
 
-app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter=*Table*/*Field* eq '*value*&'ctid=*ctid*
+app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter=*Table*/*Field* eq '*value*'&ctid=*ctid*
 
 ### <a name="field-types"></a>Feldtypen
 
@@ -107,7 +107,7 @@ Power BI unterstützt außer **and** noch viele weitere Operatoren. In der folge
 |Operator  | Definition | Zeichenfolge  | Zahl | Datum |  Beispiel|
 |---------|---------|---------|---------|---------|---------|
 |**and**     | und |  Ja      | Ja |  Ja|  product/price le 200 and price gt 3.5 |
-|**eq**     | equals |  Ja      | Ja   |  Ja       | Address/City eq 'Redmond' |
+|**eq**     | Ist gleich |  Ja      | Ja   |  Ja       | Address/City eq 'Redmond' |
 |**ne**     | Ungleich |   Ja      | Ja  | Ja        |  Address/City ne 'London' |
 |**ge**     |  Größer als oder gleich       | Nein | Ja |Ja |  product/price ge 10
 |**gt**     | Größer als        |Nein | Ja | Ja  | product/price gt 20

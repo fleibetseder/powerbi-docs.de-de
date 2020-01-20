@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 03a426947787cbd2720661267cac4601a4b9b13a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 11be774515552d10846b51863eda6c155b92b57f
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880938"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75758081"
 ---
-# <a name="combo-chart-in-power-bi"></a>Kombinationsdiagramm in Power BI
+# <a name="create-and-use-combo-charts-in-power-bi"></a>Erstellen und Verwenden von Kombinationsdiagrammen in Power BI
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -59,11 +59,11 @@ In diesem Video sehen Sie, wie ein Kombinationsdiagramm anhand des Beispiels fü
 
 1. Beginnen Sie auf einer leeren Berichtsseite, und erstellen Sie ein Säulendiagramm, das den Absatz des laufenden Jahres und den Bruttogewinn pro Monat anzeigt.
 
-    a.  Wählen Sie im Bereich „Felder“ die Option **Verkäufe** \> **Verkäufe in diesem Jahr**  >  **Wert**.
+    a.  Wählen Sie im Bereich „Felder“ die Option **Sales** \> **This Year Sales** > **Value** (Verkäufe > Verkäufe in diesem Jahr > Wert) aus.
 
-    b.  Ziehen Sie **Vertrieb** \>**Bruttogewinn in diesem Jahr** in den Bereich **Wert**.
+    b.  Ziehen Sie **Sales** \> **Gross Margin This Year** (Verkäufe > Bruttogewinn in diesem Jahr) in den Bereich **Wert**.
 
-    c. Wählen Sie **Zeit** \> **Geschäftsmonat** aus, um den Wert dem Bereich **Achse** hinzuzufügen.
+    c. Wählen Sie **Zeit** \> **FiscalMonth** aus, um die Angaben ebenfalls dem Bereich **Achse** hinzuzufügen.
 
     ![Beispiel eines Kombinationsdiagramms](media/power-bi-visualization-combo-chart/combotutorial1new.png)
 5. Wählen Sie **Weitere Optionen** (...) in der rechten oberen Ecke der Visualisierung und dann **Sortieren nach > FiscalMonth** aus. Wenn Sie die Sortierreihenfolge ändern möchten, klicken Sie erst erneut auf die Auslassungspunkte und anschließend auf **Aufsteigend sortieren** oder **Absteigend sortieren**. In diesem Beispiel wird **Aufsteigend sortieren** verwendet.
@@ -71,7 +71,7 @@ In diesem Video sehen Sie, wie ein Kombinationsdiagramm anhand des Beispiels fü
 6. Konvertieren Sie das Säulendiagramm in ein Kombinationsdiagramm. Es gibt zwei Kombinationsdiagramme: **Linien- und gestapeltes Säulendiagramm** und **Linien- und gruppiertes Säulendiagramm**. Wenn Sie das Säulendiagramm ausgewählt haben, wählen Sie im Bereich **Visualisierungen** die Option **Linien- und gruppiertes Säulendiagramm** aus.
 
     ![Beispiel „In ein Kombinationsdiagramm konvertieren“](media/power-bi-visualization-combo-chart/converttocombo-new2.png)
-7. Ziehen Sie aus dem Bereich **Felder** die Option **Vertrieb** \> **Verkäufe im letzten Jahr** in den Bucket **Zeilenwerte**.
+7. Ziehen Sie aus dem **Felder**bereich die Option **Sales** \> **Last Year Sales** (Verkäufe > Verkäufe im letzten Jahr) in den Bucket **Zeilenwerte**.
 
    ![](media/power-bi-visualization-combo-chart/linevaluebucket.png)
 

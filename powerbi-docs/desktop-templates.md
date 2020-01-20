@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c2001a83a1fb4a5d605a7ac1c752fe4bbd4c5a51
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a10de05fed8a77a165797dda7155ffb81bbad815
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879561"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75759995"
 ---
-# <a name="using-templates-in-power-bi-desktop"></a>Verwenden von Vorlagen in Power BI Desktop
+# <a name="create-report-templates-for-power-bi-desktop"></a>Erstellen von Berichtsvorlagen für Power BI Desktop
 
 Mithilfe von **Power BI Desktop** können Sie ansprechende Berichte erstellen, die Einblicke in Ihre gesamte Organisation geben. Mithilfe von **Vorlagen** für Power BI Desktop können Sie Ihre Arbeit optimieren, indem Sie basierend auf einer vorhandenen Vorlage eine Berichtsvorlage erstellen, die Sie oder andere Benutzer in Ihrer Organisation als Ausgangspunkt für das Layout, das Datenmodell und die Abfragen eines neuen Berichts verwenden können. Vorlagen in **Power BI Desktop** helfen Ihnen dabei, die Berichterstellung zu beschleunigen und zu standardisieren.
 

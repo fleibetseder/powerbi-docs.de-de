@@ -7,17 +7,17 @@ ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 11/13/2019
+ms.date: 01/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d653bb0193351e2ecb38c09e6b34d02eea5cce67
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: 8aa392b69d21905901f8304c577b87b00ed19057
+ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74060607"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885268"
 ---
-# <a name="use-the-decomposition-tree-visual-in-power-bi-preview"></a>Verwenden des Analysebaumvisuals in Power BI (Vorschau)
+# <a name="create-and-view-decomposition-tree-visuals-in-power-bi-preview"></a>Erstellen und Anzeigen des visuellen Analysebaumelements in Power BI (Vorschau)
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 Mit dem Analysebaumvisual in Power BI ist es möglich, dimensionsübergreifend Daten zu visualisieren. Es aggregiert Daten automatisch und ermöglicht einen Drilldown für Ihre Dimensionen in beliebiger Reihenfolge. Gleichzeitig handelt es sich um eine KI-Visualisierung, sodass Sie basierend auf bestimmten Kriterien eine Suche nach der nächsten Dimension anfordern können, für die Sie einen Drilldown durchführen möchten. Dies macht es zu einem nützlichen Werkzeug für die Ad-hoc-Erkundung und die Durchführung von Ursachenanalysen.
@@ -131,6 +131,8 @@ Im Beispiel unten sind die ersten zwei Ebenen gesperrt. Dies bedeutet, dass Beri
 ![Analysebaum: Sperrung](media/power-bi-visualization-decomposition-tree/tree-locking.png)
 
 ## <a name="known-limitations"></a>Bekannte Einschränkungen
+
+Die maximale Anzahl der Ebenen für den Baum beträgt 50. Die maximale Anzahl von Datenpunkten, die gleichzeitig auf dem Baum visualisiert werden können, beträgt 5.000. Wir kürzen Ebenen, um die oberen „n“ anzuzeigen. Derzeit sind die oberen „n“ pro Ebene auf 10 festgelegt. 
 
 Der Analysebaum wird in den folgenden Szenarien nicht unterstützt:  
 -   Lokale Analysis Services-Instanzen

@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 90136f39d9f2a8e330748b56d6302bb75d2a31fe
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: c1fbd57f1c92c9900178eb212a1369d25fdf838a
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73873846"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762161"
 ---
-#  <a name="connect-to-the-samples-in-the-power-bi-service"></a>Herstellen einer Verbindung mit Beispielen im Power BI-Dienst
+#  <a name="import-and-open-sample-packs-for-power-bi"></a>Importieren und Öffnen von Beispielpaketen für Power BI
 
 In diesem Tutorial wird Folgendes gezeigt: 
 - Importieren eines Beispielinhaltspakets, Hinzufügen des Pakets zum Power BI-Dienst und Öffnen der Inhalte. Ein *Inhaltspaket* ist ein Beispieltyp, in dem das Dataset mit einem Dashboard und einem Bericht gebündelt ist. 

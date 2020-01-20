@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3da18269817ef89dfff9524c8875814430bc6cce
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b90bfd9482e28faa8d9dfb0d089ca07656663b53
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874442"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762460"
 ---
-# <a name="text-boxes-and-shapes-in-power-bi-reports"></a>Textfelder und Formen in Power BI-Berichten
+# <a name="add-text-boxes-and-shapes-to-power-bi-reports"></a>Hinzufügen von Textfeldern und Formen in Power BI-Berichten
 Sie können den Power BI-Dienst und Power BI Desktop verwenden, um Berichten Textfelder und Formen hinzuzufügen. In beiden Fällen benötigen Sie Berechtigungen zum Bearbeiten des Berichts. Wenn ein Bericht mit Ihnen im Power BI-Dienst geteilt wurde, verfügen Sie nicht über Berechtigungen zur Bearbeitung. 
 
 Schauen Sie sich an, wie Will mit Power BI Desktop [statische Bilder zu einem Bericht hinzufügt](/learn/modules/visuals-in-power-bi/12-formatting). Führen Sie anschließend die unten beschriebenen Schritte aus, um selbst auszuprobieren, stattdessen den Power BI-Dienst zu verwenden.
