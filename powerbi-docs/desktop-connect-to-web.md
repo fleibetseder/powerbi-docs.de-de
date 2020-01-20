@@ -10,15 +10,16 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 139cdcfe9629afb25a78bf50ae7714db670721e3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: f76d3e61c3817d3e5ab4480c935abe4dc7346e54
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878437"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761517"
 ---
-# <a name="connect-to-a-web-page-from-power-bi-desktop"></a>Verbinden mit einer Webseite in Power BI Desktop
-Sie können eine Verbindung mit einer Webseite herstellen und deren Daten in Power BI Desktop importieren, um sie in Ihren Visuals und Datenmodellen zu verwenden.
+# <a name="connect-to-webpages-from-power-bi-desktop"></a>Verbinden mit Webseiten von Power BI Desktop
+
+Sie können eine Verbindung mit einer Webseite herstellen und deren Daten in Power BI Desktop importieren, um sie in Ihren visuellen Elementen und Datenmodellen zu verwenden.
 
 Wählen Sie in Power BI Desktop auf dem Menüband **Start** die Option **Daten abrufen > Web** aus.
 

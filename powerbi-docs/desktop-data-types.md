@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 09/05/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a3ca4b8ffe709fec7953eb5d4081bdf296504eb1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3f263e67b866f6d6a3ea76257c64bbb2308a25d2
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73868511"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75729711"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Datentypen in Power BI Desktop
 Dieser Artikel beschreibt Datentypen, die im Power BI Desktop und von DAX (Data Analysis Expressions) unterstützt werden. 
@@ -51,7 +51,7 @@ Power BI Desktop unterstützt drei Zahlentypen:
 >
 
 ### <a name="datetime-types"></a>Datum/Uhrzeit-Typen
-Power BI Desktop unterstützt fünf Datum/Uhrzeit-Datentypen in der Abfrageansicht und drei in der Berichtsansicht und im Modell.   Sowohl Datum/Uhrzeit/Zeitzone als auch die Dauer werden beim Laden in das Modell konvertiert.
+Power BI Desktop unterstützt fünf Datum/Uhrzeit-Datentypen in der Abfrageansicht.  Sowohl Datum/Uhrzeit/Zeitzone als auch die Dauer werden beim Laden in das Modell konvertiert. Das Power BI Desktop-Datenmodell unterstützt nur Datum/Uhrzeit, Werte können jedoch unabhängig als Datums- oder Uhrzeitangaben formatiert werden. 
 
 **Datum/Uhrzeit** – Stellt einen Datums-und einen Uhrzeitwert dar.  Im Hintergrund wird der Datum/Uhrzeit-Wert als Dezimalzahltyp gespeichert.  Daher können Sie zwischen den beiden konvertieren.   Der Uhrzeitteil eines Datums wird als Bruchteil von ganzen Vielfachen von 1/300 Sekunden (3,33 ms) gespeichert.  Datumsangaben zwischen den Jahren 1900 und 9999 werden unterstützt.
 
@@ -59,7 +59,7 @@ Power BI Desktop unterstützt fünf Datum/Uhrzeit-Datentypen in der Abfrageansic
 
 **Uhrzeit** – Stellt nur die Uhrzeit dar (kein Datumsteil).  Bei der Konvertierung in das Modell entspricht ein Uhrzeitwert einem Datum/Uhrzeit-Wert ohne Ziffern links vom Dezimaltrennzeichen.
 
-**Datum/Uhrzeit/Zeitzone** – Stellt einen UTC-Datum/Uhrzeit-Wert dar.  Dieser wird derzeit beim Laden in das Modell in einen Datum/Uhrzeit-Wert konvertiert.
+**Datum/Uhrzeit/Zeitzone:** Stellt einen Datum/Uhrzeit-Wert (UTC) mit Zeitzonenoffset dar.  Dieser wird beim Laden in das Modell in einen Datum/Uhrzeit-Wert konvertiert. Das Power BI-Modell passt die Zeitzone nicht anhand des Standorts oder Gebietsschemas eines Benutzers an. Wenn ein Wert von 09:00 in das Modell in den USA geladen wird, wird er als 09:00 angezeigt, egal wo der Bericht geöffnet oder angezeigt wird. 
 
 **Dauer** – Stellt eine Zeitspanne dar. Sie wird beim Laden in das Modell in einen Dezimalzahlentyp konvertiert.  Als Dezimalzahlentyp kann sie einem Datum-/Uhrzeitfeld hinzugefügt oder davon subtrahiert werden und ergibt korrekte Ergebnisse.  Als Dezimalzahlentyp können Sie sie problemlos in Visualisierungen verwenden, die Größe anzeigen.
 
@@ -175,13 +175,13 @@ Wie Leerzeichen in Operationen wie Addition oder Verkettung behandelt werden, h�
 | BLANK + BLANK |BLANK |0 (Null) |
 | BLANK + 5 |5 |5 |
 | BLANK * 5 |BLANK |0 (Null) |
-| 5/BLANK |Unendlich |Fehler (Error) |
+| 5/BLANK |Unendlich |Fehler |
 | 0/BLANK |NaN |Fehler (Error) |
-| BLANK/BLANK |BLANK |Fehler (Error) |
+| BLANK/BLANK |BLANK |Fehler |
 | FALSE OR BLANK |FALSE |FALSE |
 | FALSE AND BLANK |FALSE |FALSE |
 | TRUE OR BLANK |TRUE |TRUE |
 | TRUE AND BLANK |FALSE |TRUE |
-| BLANK OR BLANK |BLANK |Fehler (Error) |
-| BLANK AND BLANK |BLANK |Fehler (Error) |
+| BLANK OR BLANK |BLANK |Fehler |
+| BLANK AND BLANK |BLANK |Fehler |
 

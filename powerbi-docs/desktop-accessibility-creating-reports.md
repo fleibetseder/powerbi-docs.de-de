@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4686b15e04d3724256c76d7ba27a125cb04e86b3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 50a5705f5e236dc326f4c2b33716e55f6a9f7ce5
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878963"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761977"
 ---
-# <a name="creating-accessible-reports-in-power-bi"></a>Erstellen barrierefreier Berichte in Power BI
+# <a name="design-power-bi-reports-for-accessibility"></a>Entwerfen von Power BI-Berichten für die Barrierefreiheit
 Sie können überzeugende Berichte entwerfen und erstellen und gleichzeitig Barrierefreiheit gewährleisten. Immer wenn Sie einen Bericht für eine beliebige Zielgruppe erstellen, sollten Sie den Bericht so erstellen, dass er von so vielen Personen wie möglich genutzt werden kann, ohne dass er für ein besonderes Design angepasst werden muss.
 
 ![Windows-Einstellungen für hohen Kontrast](media/desktop-accessibility/accessibility-05.png)
@@ -91,7 +91,7 @@ Berichtsnutzer können die Daten in einem Visual auch in tabellarischer Form anz
 Power BI bietet in das Produkt integrierte Barrierefreiheitsfunktionen, die vom Berichtsautor konfiguriert werden müssen.  Dazu gehören:
 
 * Alternativer Text
-* Registerkartenreihenfolge
+* Aktivierreihenfolge
 * Titel und Beschriftungen
 * Marker
 * Report themes
@@ -114,7 +114,7 @@ Ein Merkmal, das Power BI so überzeugend macht, sind seine dynamischen Daten. S
 
 ![Bedingte Formatierung von alternativem Text](media/desktop-accessibility/accessibility-creating-reports-07.png)
 
-### <a name="tab-order"></a>Registerkartenreihenfolge
+### <a name="tab-order"></a>Aktivierreihenfolge
 Wenn Sie die Aktivierreihenfolge festlegen, können Tastaturbenutzer durch Ihren Bericht in einer Reihenfolge navigieren, die der Art und Weise entspricht, in der Benutzer die Visuals des Berichts visuell verarbeiten. Wenn Sie dekorative Formen und Abbildungen in Ihren Bericht aufnehmen, sollten Sie diese aus der Aktivierreihenfolge entfernen. 
 
 Zum Festlegen der Aktivierreihenfolge wählen Sie auf dem Menüband die Registerkarte **Ansicht** und die Schaltfläche **Auswahlbereich** aus, um den Bereich „Auswahl“ anzuzeigen.

@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 12/03/2019
-ms.openlocfilehash: a7f0e6f08f25d47cd50789a3c8f296ae20c4cab0
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.date: 01/03/2020
+ms.openlocfilehash: 5f77e17eccf4c99e7a391ea310a34848c604e01d
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831197"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75732082"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service"></a>Veröffentlichen eines paginierten Berichts im Power BI-Dienst
 
 In diesem Artikel erfahren Sie, wie Sie einen paginierten Bericht durch Hochgeladen von Ihrem lokalen Computer im Power BI-Dienst veröffentlichen. Sie können paginierte Berichte in Ihren Arbeitsbereich oder einen anderen Arbeitsbereich hochladen, sofern sich der Arbeitsbereich in einer Premium-Kapazität befindet. Suchen Sie nach dem Diamantsymbol ![Diamantsymbol in Power BI Premium-Kapazität](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) neben dem Namen des Arbeitsbereichs. 
 
-Wenn Sie über eine lokale Berichtsdatenquelle verfügen, müssen Sie nach dem Hochladen des Berichts [ein Gateway erstellen](#create-a-gateway).
+Wenn Sie eine lokale Berichtsdatenquelle verwenden, müssen Sie nach dem Hochladen des Berichts ein Gateway erstellen. Weitere Informationen hierzu finden Sie im Abschnitt [Erstellen eines Gateways](#create-a-gateway) im Verlauf dieses Artikels.
 
 ## <a name="add-a-workspace-to-a-premium-capacity"></a>Hinzufügen eines Arbeitsbereichs zu einer Premium-Kapazität
 
@@ -35,8 +35,33 @@ Wenn im Arbeitsbereich das Diamantsymbol ![Diamantsymbol in Power BI Premium-Kap
 
    Möglicherweise können Sie diese Einstellung nicht ändern. Wenn das der Fall ist, wenden Sie sich an Ihren Power BI Premium-Kapazitätsadministrator, damit er Ihnen die Berechtigung erteilt, Ihren Arbeitsbereich einer Premium-Kapazität hinzuzufügen.
 
+## <a name="from-report-builder-publish-a-paginated-report"></a>Veröffentlichen eines paginierten Berichts über den Berichts-Generator
 
-## <a name="upload-a-paginated-report"></a>Hochladen eines paginierten Berichts
+1. Erstellen Sie Ihren paginierten Bericht im Berichts-Generator, und speichern Sie ihn auf Ihrem lokalen Computer.
+
+1. Klicken Sie im Menü **Datei** des Berichts-Generators auf **Speichern unter**.
+
+    ![Datei > Speichern > Speichern unter](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-save-as.png)
+
+    Wenn Sie noch nicht bei Power BI angemeldet sind, müssen Sie sich jetzt anmelden oder ein Konto erstellen. Klicken Sie in der oberen rechten Ecke des Berichts-Generators auf **Anmelden**, und führen Sie die Schritte durch.
+
+2. Wählen Sie aus der Liste der Arbeitsbereiche einen Arbeitsbereich aus, neben dessen Namen sich ein Diamantsymbol ![Power BI Premium-Diamantsymbol](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) befindet. Füllen Sie das Feld **Dateiname** aus, und klicken Sie auf **Speichern**. 
+
+    ![Auswahl eines Premium-Arbeitsbereichs](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-workspace.png)
+
+4. Öffnen Sie den Power BI-Dienst in einem Browser, und navigieren Sie zu dem Premium-Arbeitsbereich, in dem Sie den paginierten Bericht veröffentlicht haben. Auf der Registerkarte **Berichte** wird der Bericht angezeigt.
+
+    ![Paginierter Bericht in der Berichtsliste](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-wwi-report.png)
+
+5. Wählen Sie den paginierten Bericht aus, um diesen im Power BI-Dienst zu öffnen. Wenn er über Parameter verfügt, müssen Sie diese auswählen, bevor der Bericht angezeigt werden kann.
+
+    ![Auswählen von Parametern](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-parameters.png)
+
+6. Wenn Sie eine lokale Berichtsdatenquelle verwenden, finden Sie im Abschnitt [Erstellen eines Gateways](#create-a-gateway) weitere Informationen zum Zugriff auf Datenquellen.
+
+## <a name="from-the-power-bi-service-upload-a-paginated-report"></a>Hochladen eines paginierten Berichts über den Power BI-Dienst
+
+Sie können auch im Power BI-Dienst beginnen und dort einen paginierten Bericht hochladen.
 
 1. Erstellen Sie Ihren paginierten Bericht im Berichts-Generator, und speichern Sie ihn auf Ihrem lokalen Computer.
 
@@ -62,13 +87,15 @@ Wenn im Arbeitsbereich das Diamantsymbol ![Diamantsymbol in Power BI Premium-Kap
 
     ![Anmeldeinformationen bearbeiten](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-credentials.png)
 
-   Ihr Bericht wird in der Liste der Berichte angezeigt.
+   Auf der Registerkarte **Berichte** wird der Bericht angezeigt.
 
     ![Paginierter Bericht in der Berichtsliste](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-wwi-report.png)
 
 1. Wählen sie den Bericht aus, um ihn im Power BI-Dienst zu öffnen. Wenn er über Parameter verfügt, müssen Sie diese auswählen, bevor der Bericht angezeigt werden kann.
  
     ![Auswählen von Parametern](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-parameters.png)
+
+6. Wenn Sie eine lokale Berichtsdatenquelle verwenden, finden Sie im Abschnitt [Erstellen eines Gateways](#create-a-gateway) weitere Informationen zum Zugriff auf Datenquellen.
 
 ## <a name="create-a-gateway"></a>Erstellen eines Gateways
 
@@ -89,4 +116,5 @@ Derzeit unterstützen Gateways keine mehrwertigen Parameter.
 
 - [Anzeigen eines paginierten Berichts im Power BI-Dienst](consumer/paginated-reports-view-power-bi-service.md)
 - [Was sind paginierte Berichte in Power BI Premium? (Vorschau)](paginated-reports-report-builder-power-bi.md)
+- [Tutorial: Einbetten paginierter Power BI-Berichte in eine Anwendung für Kunden](developer/embed-paginated-reports-customers.md)
 

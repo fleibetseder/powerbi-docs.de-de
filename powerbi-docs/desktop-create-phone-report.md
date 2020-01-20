@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 11/18/2019
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 16af5a6c8b5341067c458329c68da0a1a0fe14a5
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 2dca4094ed0c21c421aa2fef89353e6f210b3ea4
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74311488"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761477"
 ---
-# <a name="optimize-reports-for-the-power-bi-mobile-apps"></a>Optimieren von Berichten für die mobilen Power BI-Apps
+# <a name="optimize-power-bi-reports-for-the-mobile-app"></a>Optimieren von Power BI-Berichten für die mobile App
 Sie können die Benutzererfahrung beim Anzeigen von Berichten in den mobilen Apps verbessern, indem Sie ein Layout im Hochformat erstellen. In Power BI Desktop und dem Power BI-Dienst ordnen Sie die visuellen Elemente von Berichten in Größe und Position neu an, um eine optimale Erfahrung in der Hochformatdarstellung zu erzielen.  
 
 Suchen Sie stattdessen nach Informationen zum Anzeigen von Berichten auf einem mobilen Gerät? Probieren Sie es mit diesem Schnellstart: [Erkunden von Dashboards und Berichten in den mobilen Power BI-Apps](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md).

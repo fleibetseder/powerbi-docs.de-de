@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/28/2019
+ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e61df101d26dd95a771a64ce7633e40fcd9c9123
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ef19c638f9c456364757576e21c303103a7f4e39
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878890"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761862"
 ---
 # <a name="overview-of-accessibility-in-power-bi"></a>Übersicht über die Barrierefreiheit in Power BI
 Beim Arbeiten mit Power BI ist es wichtig, die verschiedenen Typen von Benutzern zu berücksichtigen, die möglicherweise mit Ihren Berichten interagieren. Das Erstellen und Präsentieren von Berichten, in denen sich komfortabel mit der Tastatur navigieren lässt und die für Benutzer der Sprachausgabe leicht verständlich sind, ermöglicht es Benutzern mit visuellen oder physischen Einschränkungen, die gleichen Informationen zu erhalten.
@@ -27,9 +27,10 @@ Dieser Artikel bietet eine Übersicht zu Power BI und Barrierefreiheit. Zusätzl
 
 Universeller Entwurf betrifft die Gestaltung von Produkten, die von möglichst vielen Personen verwendet werden können, ohne dass besondere Anpassungen oder besondere Entwürfe erforderlich sind. Beim Erstellen von Berichten oder Benutzererfahrungen in Power BI ist es wichtig, die Bedürfnisse Ihrer Benutzer zu berücksichtigen. Vom Entwerfen einer barrierefreien Benutzererfahrung profitieren nicht nur Endbenutzer mit möglichen Hör-, Bewegungs-, Kognitions- oder Sehbehinderungen. Es kann allen Endbenutzern in Ihrer Organisation helfen. Power BI bietet Ihnen die Tools, mit denen Sie barrierefreie Berichte erstellen und nutzen können. Es liegt an Ihnen als Ersteller des Berichts, diese Tools zu verwenden, um die Benutzerfreundlichkeit für alle zu verbessern.
 
+
 ## <a name="accessibility-standards"></a>Barrierefreiheitsstandards
 
-Power BI ist den folgenden Standards für Barrierefreiheit verpflichtet.  Dies hilft, sicherzustellen, dass möglichst viele Personen auf Ihre Power BI-Benutzererfahrungen zugreifen können.
+Power BI ist den folgenden Standards für Barrierefreiheit verpflichtet. Dies hilft, sicherzustellen, dass möglichst viele Personen auf Ihre Power BI-Benutzererfahrungen zugreifen können. Power BI Mobile-Apps sind für die Barrierefreiheitsstufe C zertifiziert, d. h. wenn Sie zugängliche Berichte oder Dashboards erstellen, sind sie auch für jeden zugänglich, der sie mit Power BI Mobile anzeigt. 
 
 ### <a name="wcag-21"></a>WCAG 2.1
 Mithilfe von Web Content Accessibility (WCAG) können Webinhalte für Personen mit Behinderungen zugänglich gemacht werden. Es gibt drei Hauptprinzipien von WCAG:

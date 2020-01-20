@@ -7,61 +7,60 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 12/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: eae7ffdaa6f21ed0732500539f922cf10eb7bb61
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 525f7bf4c967722d8f98a9184127bc8c7907cea1
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878178"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75729921"
 ---
 # <a name="use-grouping-and-binning-in-power-bi-desktop"></a>Verwenden von Gruppierung und Diskretisierung in Power BI Desktop
-Beim Erstellen von Visuals in **Power BI Desktop** werden die Daten basierend auf Werten in den zugrunde liegenden Daten in Blöcken (oder Gruppen) aggregiert. Häufig ist dies ausreichend, in manchen Situationen ist es jedoch sinnvoll, die Darstellung der Blöcke zu verfeinern. Beispielsweise möchten Sie eventuell drei Kategorien von Produkten in einer größeren Kategorie (einer *Gruppe*) anordnen. Alternativ sollen Umsatzzahlen in Diskretisierungen der Größe 1.000.000 Dollar statt des gleichmäßig verteilten Betrags von 923.983 Dollar unterteilt werden.
+Beim Erstellen von Visuals in Power BI Desktop werden die Daten basierend auf Werten in den zugrunde liegenden Daten in Blöcke (oder Gruppen) aggregiert. Häufig ist dies ausreichend, in manchen Situationen ist es jedoch sinnvoll, die Darstellung der Blöcke zu verfeinern. Beispielsweise möchten Sie eventuell drei Kategorien von Produkten in einer größeren Kategorie (einer *Gruppe*) anordnen. Alternativ sollen Umsatzzahlen in Diskretisierungen der Größe 1.000.000 US-Dollar statt in Blöcke von 923.983 US-Dollar unterteilt werden.
 
-Sie können in Power BI Desktop Datenpunkte **gruppieren**, um Daten und Trends in den Visuals deutlicher anzeigen, analysieren und untersuchen zu können. Sie können zudem die **Größe der Diskretisierung** definieren (häufig als *Diskretisieren* bezeichnet), um Werte in Gruppen gleicher Größe zu unterteilen, die es ihnen erleichtern, Daten auf aussagekräftige Weise zu visualisieren.
+Sie können in Power BI Desktop Datenpunkte *gruppieren*, um Daten und Trends in den Visualisierungen deutlicher anzeigen, analysieren und untersuchen zu können. Sie können zudem die *Größe der Diskretisierung* festlegen, um Werte in Gruppen gleicher Größe zu unterteilen, die es ihnen erleichtern, Daten aussagekräftig zu visualisieren. Dieser Vorgang wird häufig als *Quantisierung* bezeichnet.
 
 ## <a name="using-grouping"></a>Verwenden von Gruppierung
-Wählen Sie zum Verwenden von Gruppierung mindestens zwei Elemente in einem Visual aus. Verwenden Sie zum Auswählen mehrerer Elemente STRG+Klick. Klicken Sie dann mit der rechten Maustaste auf eines der per Mehrfachauswahl ausgewählten Elemente, und wählen Sie im angezeigten Menü **Gruppe** aus.
+Wählen Sie zum Verwenden der Gruppierung mindestens zwei Elemente in einem Visual aus. Über STRG+Klick können Sie mehrere Elemente auswählen. Klicken Sie dann mit der rechten Maustaste auf eines der ausgewählten Elemente, und klicken Sie im Kontextmenü auf **Gruppieren**.
 
-![](media/desktop-grouping-and-binning/grouping-binning_1.png)
+![Befehl „Gruppieren“, Diagramm, Gruppierung, Power BI Desktop](media/desktop-grouping-and-binning/grouping-binning_1.png)
 
-Nachdem die Gruppe erstellt wurde, wird sie dem Bucket **Legende** für das Visual hinzugefügt und auch in der Liste **Felder** angezeigt.
+Nachdem die Gruppe erstellt wurde, wird sie dem Bucket **Legende** für das Visual hinzugefügt. Die Gruppe wird auch in der Liste **Felder** angezeigt.
 
-![](media/desktop-grouping-and-binning/grouping-binning_2.png)
+![Listen „Legende“ und „Felder“, Gruppierung, Power BI Desktop](media/desktop-grouping-and-binning/grouping-binning_2.png)
 
-Sobald eine Gruppe erstellt wurde, können Sie die Mitglieder dieser Gruppe einfach bearbeiten. Klicken Sie hierzu im Bucket **Legende** oder in der Liste **Felder** mit der rechten Maustaste auf das Feld, und wählen Sie **Gruppen bearbeiten** aus.
+Sie können die Mitglieder einer Gruppe problemlos bearbeiten. Klicken Sie mit der rechten Maustaste auf das Feld im Bucket **Legende** oder in der Liste **Felder**, und klicken Sie dann auf **Gruppen bearbeiten**.
 
-![](media/desktop-grouping-and-binning/grouping-binning_3.png)
+![Befehl „Gruppen bearbeiten“, Listen „Legende“ und „Felder“, Power BI Desktop](media/desktop-grouping-and-binning/grouping-binning_3.png)
 
-Im daraufhin angezeigten Fenster **Gruppen** können Sie neue Gruppen erstellen oder vorhandene Gruppen ändern. Sie können jede Gruppe auch *umbenennen*, indem Sie im Feld **Gruppen und Mitglieder** auf den Titel „Gruppe“ doppelklicken und einen neuen Namen eingeben.
+Im Dialogfeld **Gruppen** können Sie neue Gruppen erstellen oder vorhandene Gruppen bearbeiten. Sie können *Gruppen* auch umbenennen. Doppelklicken Sie im Feld **Gruppen und Mitglieder** auf den Gruppentitel, und geben Sie dann einen neuen Namen ein.
 
-Gruppen bieten Ihnen viele Gestaltungsmöglichkeiten. Sie können Elemente von der Liste **Nicht gruppierte Werte** zu einer neuen oder einer existierenden Gruppe hinzufügen. Um eine neue Gruppe zu erstellen, wählen Sie im Feld **Nicht gruppierte Werte** (mit STRG+Klick) mindestens zwei Elemente aus, und klicken Sie dann auf die Schaltfläche **Gruppieren**, die sich unter dem Feld befindet.
+Gruppen bieten Ihnen viele Möglichkeiten. Sie können Elemente von der Liste **Nicht gruppierte Werte** zu einer neuen oder einer existierenden Gruppe hinzufügen. Sie können eine neue Gruppe erstellen, indem Sie im Feld **Nicht gruppierte Werte** (mit STRG+Klick) mindestens zwei Elemente auswählen und dann auf die Schaltfläche **Gruppieren** klicken, die sich unter dem Feld befindet.
 
-Sie können einen nicht gruppierten Wert zu einer bestehenden Gruppe hinzufügen, indem Sie den nicht gruppierten Wert und dann die bereits vorhandene Gruppe, der Sie den Wert hinzufügen möchten, wählen und auf die Schaltfläche **Gruppieren** klicken. Um ein Element aus einer Gruppe zu entfernen, klicken Sie im Feld **Gruppen und Mitglieder** auf das Element und dann auf **Gruppierung aufheben**. Sie können auch auswählen, ob nicht gruppierte Kategorien in die Gruppe **Sonstige** eingefügt oder ungruppiert bleiben sollen.
+Sie können einen nicht gruppierten Wert zu einer bestehenden Gruppe hinzufügen, indem Sie einen der **nicht gruppierten Werte** und dann die bereits vorhandene Gruppe auswählen, der Sie den Wert hinzufügen möchten, und dann auf **Gruppieren** klicken. Sie können ein Element aus einer Gruppe zu entfernen, indem Sie im Feld **Gruppen und Mitglieder** auf das Element und dann auf **Gruppierung aufheben** klicken. Außerdem können Sie nicht gruppierte Kategorien in die Gruppe **Other** (Sonstiges) verschieben oder ungruppiert lassen.
 
-![](media/desktop-grouping-and-binning/grouping-binning_4.png)
+![Dialogfeld „Gruppen“, Power BI Desktop](media/desktop-grouping-and-binning/grouping-binning_4.png)
 
 > [!NOTE]
-> Sie können im Bereich **Felder** Gruppen für jedes Feld erstellen, ohne mehrere Elemente in einem Visual auswählen zu müssen. Klicken Sie einfach mit der rechten Maustaste auf das Feld, und wählen Sie im angezeigten Menü **Neue Gruppe** aus.
+> Sie können im Bereich **Felder** Gruppen für jedes Feld erstellen, ohne mehrere Elemente in einem vorhandenen Visual auswählen zu müssen. Klicken Sie einfach mit der rechten Maustaste auf das Feld, und wählen Sie im angezeigten Menü **Neue Gruppe** aus.
 
 ## <a name="using-binning"></a>Verwenden von Diskretisierung
-Sie können die Größe der Diskretisierung für numerische Felder und Zeitfelder in **Power BI Desktop** festlegen. Mit Diskretisierung können Sie die richtige Größe der in **Power BI Desktop** angezeigten Daten festlegen.
+Sie können die Größe der Diskretisierung für numerische Felder und Zeitfelder in **Power BI Desktop** festlegen. Mit der Quantisierung können Sie die richtige Größe der in Power BI Desktop angezeigten Daten festlegen.
 
-Um eine Größe der Diskretisierung anzuwenden, klicken Sie mit der rechten Maustaste auf ein **Feld**, und wählen Sie **Neue Gruppen** aus.
+Sie können die Größe einer Quantisierung anwenden, indem Sie mit der rechten Maustaste auf ein **Feld** und dann auf **Neue Gruppe** klicken.
 
-![](media/desktop-grouping-and-binning/grouping-binning_5.png)
+![Befehl „Neue Gruppe“, Liste „Felder“, Power BI Desktop](media/desktop-grouping-and-binning/grouping-binning_5.png)
 
-Legen Sie im Fenster **Gruppen** die **Größe für Diskretisierung** auf die gewünschte Größe fest.
+Legen Sie im Dialogfeld **Gruppen** die **Größe für Diskretisierung** nach Belieben fest.
 
-![](media/desktop-grouping-and-binning/grouping-binning_6.png)
+![„Größe für Diskretisierung“, Dialogfeld „Gruppen“, Power BI Desktop](media/desktop-grouping-and-binning/grouping-binning_6.png)
 
-Wenn Sie auf **OK** klicken, wird im Bereich **Felder** ein neues Feld angezeigt, an das *(Container)* angefügt ist. Sie können das Feld dann in den Zeichenbereich ziehen, um die Größe der Diskretisierung in einer Visualisierung zu verwenden.
+Wenn Sie auf **OK** klicken, wird im Bereich **Felder** ein neues Feld angezeigt, an das **(Container)** angefügt ist. Sie können das Feld dann in den Zeichenbereich ziehen, um die Größe der Diskretisierung in einer Visualisierung zu verwenden.
 
-![](media/desktop-grouping-and-binning/grouping-binning_7.png)
+![bins-Feld in die Canvas ziehen, Power BI Desktop](media/desktop-grouping-and-binning/grouping-binning_7.png)
 
-In diesem [Video](https://www.youtube.com/watch?v=BRvdZSfO0DY) wird gezeigt, wie **Diskretisierung** angewendet wird.
+In diesem [Video](https://www.youtube.com/watch?v=BRvdZSfO0DY) wird gezeigt, wie *Diskretisierung* angewendet wird.
 
-Nun verfügen Sie über die nötigen Informationen, um **Gruppierung** und **Diskretisierung** zu verwenden und um sicherzustellen, dass die Visualisierungen in den Berichten die Daten genau so anzeigen, wie Sie es wünschen.
-
+Nun verfügen Sie über die nötigen Informationen, um *Gruppierung* und *Diskretisierung* zu verwenden und um sicherzustellen, dass die Visualisierungen in den Berichten die Daten genau so anzeigen, wie Sie es wünschen.

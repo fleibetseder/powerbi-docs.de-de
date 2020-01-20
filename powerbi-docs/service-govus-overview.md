@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/24/2019
+ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 64e9ff8f4952abe79a62b6b805596554b32aa6c9
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: f14734f168abca1003bd5b6c773c4c70daf53d15
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265453"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762092"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI für Angehörige von US-Behörden
 Für den **Power BI-Dienst** ist im Rahmen von **Office 365 US Government Community**-Abonnements eine Version für Kunden verfügbar, die Angehörige von US-Behörden sind. Die in diesem Artikel vorgestellte Version des **Power BI-Diensts** ist speziell für Angehörige von US-Behörden konzipiert. Es handelt sich hierbei um ein separates und von der kommerziellen Version des **Power BI-Diensts** abweichendes Produkt.
@@ -59,6 +59,7 @@ Einige Funktionen, die in der kommerziellen Version des **Power BI-Diensts** ver
 * **Nutzungsmetriken für Dashboards und Berichte**: Nutzungsmetriken sind für Berichte und Dashboards nicht verfügbar. Kunden können Überwachungsprotokolldaten verwenden, um Nutzungsinformationen für Inhalte in Ihrer Organisation abzurufen.
 * **Dataflows** – Dataflows sind nicht verfügbar.
 * **Paginierte Berichte**: Paginierte Berichte sind zurzeit nur in "USGov Virginia" verfügbar.  Unterstützung für USGov Texas ist geplant, aber noch nicht verfügbar.
+* Das Einbetten von Power BI-Inhalt aus einer Government Community Cloud (GCC) kann nur über eine Office 365-SKU durchgeführt werden. GCC High-Kunden können [Office 365- oder Azure-SKUs](developer/embedded-faq.md#what-is-the-difference-between-the-a-skus-in-azure-and-the-em-skus-in-office-365) verwenden.
 
 Wenn Ihrem Konto **Power BI**-Free-Lizenzen zugewiesen sind, wird dieses Konto in einer kommerziellen Version des **Power BI**-Diensts ausgeführt und ist nicht Teil des Angebots **Power BI US Government**. Bei diesen Free-Konten können die folgenden Probleme auftreten:
 
@@ -88,7 +89,7 @@ Anhand der folgenden Fragen (und Antworten) finden Sie schnell die benötigten I
 
 **Antwort:** Ja, die URLs unterscheiden sich. Die folgende Tabelle enthält die verschiedenen URLs:
 
-| URL der kommerziellen Version | URL der Version für US-Behörden | GCC High-URL für US-Behörden |
+| URL der kommerziellen Version | URL der US Government-Version | GCC High-URL für US-Behörden |
 | --- | --- | --- |
 | https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) | [https://app.high.powerbigov.us](https://app.high.powerbigov.us) |
 

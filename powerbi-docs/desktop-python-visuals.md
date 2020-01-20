@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 08/20/2018
 ms.author: otarb
 LocalizationGroup: Create reports
-ms.openlocfilehash: 567b775cb7323dbd343f2a26d4abc0d60885ab7a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 21ec26182efe2d0b08b2a64227264d5b80756962
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877974"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760725"
 ---
-# <a name="create-power-bi-visuals-using-python"></a>Erstellen von Power BI-Visualisierungen mithilfe von Python
+# <a name="create-power-bi-visuals-by-using-python"></a>Erstellen von Power BI-Visualisierungen mithilfe von Python
 Mit **Power BI Desktop** können Sie **Python** zum Visualisieren Ihrer Daten verwenden.
 
 ## <a name="prerequisites"></a>Voraussetzungen
@@ -167,6 +167,7 @@ Dieses Tutorial soll Ihnen den Einstieg in die Erstellung von Visuals mit Python
 Für Python-Visuals in **Power BI Desktop** gelten einige Einschränkungen:
 
 * Beschränkungen der Datengröße – die vom visuellen Python-Element zum Zeichnen verwendeten Daten sind auf 150.000 Zeilen beschränkt. Bei Auswahl von mehr als 150.000 Zeilen werden nur die oberen 150.000 Zeilen verwendet, und im Bild wird eine Meldung angezeigt.
+* Auflösung – alle visuellen Python-Elemente werden mit 72 DPI angezeigt.
 * Beschränkung der Berechnungszeit: Wenn die Berechnung des visuellen Python-Elements 5 Minuten überschreitet, wird die Ausführung aufgrund der Zeitüberschreitung abgebrochen und eine Fehlermeldung angezeigt.
 * Beziehungen – wie bei anderen Power BI Desktop-Visualisierungen tritt ein Fehler auf, wenn Datenfelder aus unterschiedlichen Tabellen ausgewählt werden, zwischen denen keine Beziehung definiert ist.
 * Visuelle Python-Elemente werden aktualisiert, wenn Daten aktualisiert, gefiltert oder hervorgehoben werden. Das Bild selbst ist jedoch nicht interaktiv und kann nicht als Quelle für die Kreuzfilterung verwendet werden.

@@ -6,53 +6,48 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/22/2019
+ms.date: 01/02/2020
 ms.author: gepopell
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e493e4a41e7b357a23677c1c50f654dbee51e0ca
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b604ade56335e65b25501eb9fe3d3c2fd185a6f0
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878418"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761393"
 ---
 # <a name="connector-extensibility-in-power-bi"></a>Connectorerweiterbarkeit in Power BI
 
-In Power BI können Kunden und Entwickler die Datenquellen, mit denen Sie Verbindungen herstellen, auf viele Weisen erweitern. Sie verwenden vorhandene Connectors und generische Datenquellen (z. B. ODBC, OData, Oledb, Web, CSV, XML, JSON). Ferner können Entwickler Datenerweiterungen, die **benutzerdefinierte Connectors** genannt werden, erstellen und in **zertifizierte Connectors** umwandeln.
+In Power BI können Sie mithilfe von vorhandenen Connectors und generischen Datenquellen, wie ODBC, OData, OLE DB, Web, CSV, XML und JSON, eine Verbindung mit Daten herstellen. Alternativ dazu können Entwickler auch neue Datenquellen mit benutzerdefinierten Datenerweiterungen aktivieren, die *benutzerdefinierte Connectors* genannt werden. Einige benutzerdefinierte Connectors werden von Microsoft zertifiziert und als *zertifizierte Connectors* verteilt.
 
-Derzeit aktivieren Sie **Benutzerdefinierte Connectors** mithilfe eines Menüs, in dem Sie die Ebene des benutzerdefinierten Codes, dem Sie die Ausführung auf Ihrem System gestatten möchten, sicher steuern können. Sie können im Dialogfeld **Daten abrufen** alle benutzerdefinierten Connectors oder nur Connectors auswählen, die von Microsoft zertifiziert sind und verteilt werden.
+Wenn Sie nicht zertifizierte benutzerdefinierte Connectors verwenden möchten, die von Ihnen oder einem Drittanbieter entwickelt wurden, müssen Sie die Sicherheitseinstellungen in Power BI Desktop so anpassen, dass Erweiterungen ohne Überprüfung oder Warnung geladen werden können. Sie sollten diese Sicherheitseinstellung nur verwenden, wenn Sie den benutzerdefinierten Connectors hundertprozentig vertrauen, da der Code Anmeldeinformationen verarbeitet (und diese beispielsweise über HTTP sendet) und Datenschutzebenen ignorieren kann.
+
+Eine andere Möglichkeit besteht darin, dass Entwickler die Connectors mit einem Zertifikat signieren und die Informationen bereitstellen, die für eine Verwendung ohne Änderung der Sicherheitseinstellungen erforderlich sind. Weitere Informationen finden Sie unter [Vertrauenswürdige Connectors von Drittanbietern](desktop-trusted-third-party-connectors.md).
 
 ## <a name="custom-connectors"></a>Benutzerdefinierte Connectors
 
-**Benutzerdefinierte Connectors** können zahlreiche Funktionen bereitstellen – von kleinen APIs, die für Ihr Unternehmen wichtig sind, bis hin zu großen branchenspezifischen Diensten, für die Microsoft keinen Connector veröffentlicht hat. Viele dieser Connectors werden vom Hersteller verteilt. Wenn Sie also einen bestimmten Datenconnector benötigen, sollten Sie sich an einen Hersteller wenden.
+Nicht zertifizierte benutzerdefinierte Connectors können zahlreiche Funktionen bereitstellen – von kleinen unternehmenskritischen APIs bis hin zu großen branchenspezifischen Diensten, für die Microsoft keinen Connector veröffentlicht hat. Viele dieser Connectors werden vom Anbieter verteilt. Wenn Sie einen bestimmten Datenconnector benötigen, wenden Sie sich an den Anbieter. 
 
-Um einen **benutzerdefinierten Connector** zu verwenden, legen Sie ihn in den Ordner *\[Dokumente]\\Power BI Desktop\\Benutzerdefinierte Connectors* und passen Sie die Sicherheitseinstellungen wie im folgenden Abschnitt beschrieben an.
+Wenn Sie einen nicht zertifizierten benutzerdefinierten Connector verwenden möchten, legen Sie die Connectordatei mit der Endung *.pq*, *.pqx*, *.m* oder *.mez* im Ordner *\[Dokumente]\\Power BI Desktop\\Benutzerdefinierte Connectors* ab. Erstellen Sie den Ordner, falls er noch nicht vorhanden ist.
 
-Sie müssen die Sicherheitseinstellungen nicht anpassen, um **zertifizierte Connectors** zu verwenden.
+Führen Sie die folgenden Schritte aus, um die Sicherheitseinstellungen für Datenerweiterungen anzupassen:
 
-## <a name="data-extension-security"></a>Sicherheit für Datenerweiterung
+Klicken Sie in Power BI Desktop auf **Datei** > **Optionen und Einstellungen** > **Optionen** > **Sicherheit**.
 
-Um die Sicherheitseinstellungen der Datenerweiterung zu ändern, wählen Sie in **Power BI Desktop** **Datei > Optionen und Einstellungen > Optionen > Sicherheit** aus.
+Wählen Sie unter **Datenerweiterungen** die Option **(Nicht empfohlen) Alle Erweiterungen ohne Überprüfung oder Warnung laden** aus. Klicken Sie auf **OK**, und starten Sie Power BI Desktop neu. 
 
-![Legen Sie fest, ob Sie benutzerdefinierte Connectors mit Sicherheitsoptionen für die Datenerweiterung laden möchten.](media/desktop-connector-extensibility/data-extension-security-1.png)
+![Nicht zertifizierte benutzerdefinierte Connectors in den Sicherheitsoptionen für Datenerweiterungen zulassen](media/desktop-connector-extensibility/data-extension-security-1.png)
 
-Unter **Datenerweiterungen** können Sie zwischen zwei Sicherheitsstufen wählen:
+Die Standardeinstellung der Power BI Desktop-Sicherheitseinstellung für Datenerweiterungen lautet **(Empfohlen) Nur das Laden von durch Microsoft zertifizierten und anderen vertrauenswürdigen Drittanbietererweiterungen zulassen**. Sind bei dieser Einstellung nicht zertifizierte benutzerdefinierte Connectors auf Ihrem System vorhanden, wird beim Start von Power BI Desktop das Dialogfeld **Nicht zertifizierte Connectors** mit einer Liste der Connectors angezeigt, die nicht sicher geladen werden können.
 
-* (Empfohlen) Nur zertifizierte Erweiterungen laden
-* (Nicht empfohlen) Alle Erweiterungen ohne Überprüfung oder Warnung laden
+![Dialogfeld „Nicht zertifizierte Connectors“](media/desktop-connector-extensibility/data-extension-security-2.png)
 
-Wenn Sie **benutzerdefinierte Connectors** oder von Ihnen bzw. von einem Drittanbieter entwickelte Connectors verwenden möchten, müssen Sie folgende Option auswählen: **„(Not Recommended) Allow any extension to load without warning“** ((Nicht empfohlen) Alle Erweiterungen ohne Überprüfung oder Warnung laden). Diese Sicherheitseinstellung wird nur empfohlen, wenn Sie Ihren benutzerdefinierten Connectors absolut vertrauen. Der Grund hierfür besteht darin, dass der darin enthaltene Code Anmeldeinformationen verarbeiten kann (was etwa das Versenden der Anmeldeinformationen über HTTP einschließt) und Datenschutzebenen ignorieren kann.
-
-Bei der Sicherheitseinstellung **„(Empfohlen)“** erhalten Sie, wenn benutzerdefinierte Connectors auf Ihrem System vorhanden sind, die Fehlermeldung „Der folgende Connector wurde nicht zertifiziert, und wir können nicht überprüfen, ob seine Verwendung sicher ist.“, gefolgt von einer Liste mit Connectors, die nicht sicher geladen werden können.
-
-![Ein Dialogfeld beschreibt benutzerdefinierte Connectors, die aufgrund von Sicherheitseinstellungen nicht geladen werden können, in diesem Fall TripPin.](media/desktop-connector-extensibility/data-extension-security-2.png)
-
-Um den Fehler zu beheben, ohne die Sicherheit zu ändern, entfernen Sie die nicht signierten Connectors aus Ihrem Ordner „Benutzerdefinierte Connectors“.
-
-Um den Fehler zu beheben und diese Connectors zu verwenden, ändern Sie Ihre Sicherheitseinstellungen, wie zuvor beschrieben, in **„(Nicht empfohlen) Alle Erweiterungen ohne Überprüfung oder Warnung laden“** . Starten Sie dann **Power BI Desktop** neu.
+Zur Fehlerbehebung können Sie entweder Ihre Sicherheitseinstellung für **Datenerweiterungen** ändern oder die nicht zertifizierten Connectors aus dem Ordner *Benutzerdefinierte Connectors* entfernen.
 
 ## <a name="certified-connectors"></a>Zertifizierte Connectors
 
-Eine begrenzte Teilmenge von Datenerweiterungen gilt als **Zertifiziert**. Auf die zertifizierten Connectors können Sie im Dialogfeld **Daten abrufen** zugreifen. Verantwortlich für die Wartung und Unterstützung des Connectors ist jedoch der Drittanbieterentwickler, der ihn erstellt hat. Microsoft verteilt die Connectors zwar, ist aber nicht für deren Leistung oder den Erhalt ihrer Funktionalität verantwortlich.
+Eine begrenzte Teilmenge von Datenerweiterungen gilt als *zertifiziert*. Microsoft verteilt die Connectors zwar, ist aber nicht für deren Leistung oder den Erhalt ihrer Funktionalität verantwortlich. Verantwortlich für die Wartung und Unterstützung des Connectors ist der Drittanbieterentwickler, der ihn erstellt hat. 
 
-Wenn Sie einen benutzerdefinierten Connector zertifizieren möchten, muss der Hersteller sich an dataconnectors@microsoft.com wenden.
+Zertifizierte Connectors von Drittanbietern werden in Power BI Desktop im Dialogfeld **Daten abrufen** neben generischen und allgemeinen Connectors aufgelistet. Zur Verwendung von zertifizierten Connectors müssen Sie die Sicherheitseinstellungen nicht anpassen.
+
+Wenn Sie einen benutzerdefinierten Connector zertifizieren möchten, bitten Sie den Anbieter, sich an dataconnectors@microsoft.com zu wenden.

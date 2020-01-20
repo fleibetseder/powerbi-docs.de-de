@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 53124f2b1ede9d8a9c3a9866416f713af1fd2061
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: efd110ad73b1bd72813d418a1f641613c88dc0d5
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877272"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762575"
 ---
 # <a name="using-dataflows-with-on-premises-data-sources"></a>Verwenden von Dataflows mit lokalen Datenquellen
 
@@ -24,7 +24,8 @@ Mit **Dataflows** können Sie eine Sammlung von Daten aus verschiedenen Quellen 
 
 ## <a name="configuring-an-enterprise-gateway-for-use-with-dataflows"></a>Konfigurieren eines Enterprise-Gateways für die Verwendung mit Dataflows
 
-Um eine lokale Datenquelle in einem Datenfluss verwenden zu können, müssen Benutzer, die den Dataflow erstellen, ein **Enterprise-Gateway** installiert und konfiguriert haben. Der Benutzer, der den Dataflow erstellt, muss auch der Enterprise-Gateway-Administrator sein, um dieses Gateway für einen Dataflow verwenden zu können.
+Um einen Dataflow mit einem Gateway zu erstellen, muss der Benutzer der Administrator des Enterprise-Gateway sein oder der Administrator muss die Datenquelle, die er verwenden möchte, für den Benutzer freigegeben haben. 
+
 
 > [!NOTE]
 > Dataflows werden nur unter Verwendung von Enterprise-Gateways unterstützt.
@@ -35,7 +36,7 @@ Wenn Sie einen Dataflow erstellen, wählen Sie eine lokale Datenquelle aus der L
 
 ![Auswählen einer lokalen Datenquelle](media/service-dataflows-onpremises-gateways/onpremises-gateways_02a.png)
 
-Nachdem Sie Ihre Auswahl getroffen haben, werden Sie aufgefordert, die Verbindungsdetails für das Enterprise-Gateway bereitzustellen, die für den Zugriff auf die lokalen Daten verwendet werden. Sie müssen das Gateway selbst auswählen und Anmeldeinformationen für das ausgewählte Gateway angeben. Nur Gateways, bei denen der Benutzer ein Administrator ist, werden in der Dropdownliste angezeigt.
+Nachdem Sie Ihre Auswahl getroffen haben, werden Sie aufgefordert, die Verbindungsdetails für das Enterprise-Gateway bereitzustellen, die für den Zugriff auf die lokalen Daten verwendet werden. Sie müssen das Gateway selbst auswählen und Anmeldeinformationen für das ausgewählte Gateway angeben.
 
 ![Bereitstellen von Verbindungsdetails](media/service-dataflows-onpremises-gateways/onpremises-gateways_03.png)
 
@@ -74,7 +75,7 @@ Es gibt einige bekannte Einschränkungen zur Verwendung von Enterprise-Gateways 
 
 Dieser Artikel enthält Informationen zur Verwendung einer lokalen Datenquelle für Dataflows und zur Verwendung und Konfiguration von Gateways, um auf diese Daten zuzugreifen. Die folgenden Artikel können ebenfalls hilfreich sein:
 
-* [Self-Service-Datenaufbereitung in Power BI (Vorschau)](service-dataflows-overview.md)
+* [Self-Service-Datenaufbereitung mit Dataflows](service-dataflows-overview.md)
 * [Erstellen und Verwenden von Dataflows in Power BI](service-dataflows-create-use.md)
 * [Using computed entities on Power BI Premium (Verwenden berechneter Entitäten in Power BI Premium)](service-dataflows-computed-entities-premium.md)
 * [Developer resources for Power BI dataflows (Entwicklerressourcen für Power BI-Datenflüsse)](service-dataflows-developer-resources.md)

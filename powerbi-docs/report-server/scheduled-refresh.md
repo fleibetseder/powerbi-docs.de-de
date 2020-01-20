@@ -6,14 +6,14 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/01/2017
+ms.date: 01/09/2020
 ms.author: maggies
-ms.openlocfilehash: 90f08abd119e7dfc0bf639eeb2ed8334fbdfa234
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 7052b0f045b98ce8e25822f76fe0b8391e298a47
+ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74699013"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75837614"
 ---
 # <a name="power-bi-report-scheduled-refresh-in-power-bi-report-server"></a>Geplante Aktualisierung von Power BI-Berichten in Power BI-Berichtsserver
 Durch die geplante Aktualisierung für Power BI-Berichte wird sichergestellt, dass die Daten für einen Bericht auf dem neuesten Stand bleiben.
@@ -61,8 +61,10 @@ Weitere Informationen zum Überwachen einer Analysis Services-Instanz finden Sie
 
 Weitere Informationen zu Arbeitsspeichereinstellungen in Analysis Services finden Sie unter [Speichereigenschaften](https://docs.microsoft.com/sql/analysis-services/server-properties/memory-properties).
 
+### <a name="data-model-size-limit"></a>Grenzwert für die Größe des Datenmodells
+Das Datenmodell, das bei einer geplanten Aktualisierung in die interne Analysis Services-Engine geladen wird, hat eine maximale Größe von 2.000 MB (2 GB). Diese maximale Größe kann nicht konfiguriert werden. Wenn Ihr Datenmodell größer als 2 GB wird, erhalten Sie den Aktualisierungsfehler „Die Länge des Ergebnisses überschreitet die maximale Länge (2 GB) des umfangreichen Zieldatentyps“. In diesem Fall wird empfohlen, das Modell in einer Analysis Services-Instanz zu hosten und eine Liveverbindung mit dem Modell im Bericht zu verwenden.
+
 ## <a name="next-steps"></a>Nächste Schritte
 Konfigurieren Sie die [geplante Aktualisierung](configure-scheduled-refresh.md) für einen Power BI-Bericht.
 
 Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
-
