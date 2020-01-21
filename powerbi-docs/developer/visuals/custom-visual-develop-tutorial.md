@@ -86,7 +86,7 @@ Jetzt müssen Sie das **pbiviz**-Paket installieren.
 
       ![Zertifikat installieren](media/custom-visual-develop-tutorial/install-cert-PowerShell.png)
 
-3. Wählen Sie im Schritt **Zu importierende Datei***Weiter* aus.
+3. Wählen Sie im Schritt **Zu importierende Datei** *Weiter* aus.
 
 4. Fügen Sie im Schritt **Privater Schlüsselschutz** im Feld „Passwort“ die Passphrase ein, die Sie beim Erstellen des Zertifikats erhalten haben.  In diesem Fall wieder **_15105661266553327_** .
 
@@ -96,7 +96,7 @@ Jetzt müssen Sie das **pbiviz**-Paket installieren.
 
       ![Alle Zertifikate in folgendem Speicher speichern](media/custom-visual-develop-tutorial/all-certs-in-the-following-store.png)
 
-6. Wählen Sie im Fenster **Zertifikatspeicher auswählen** **Vertrauenswürdige Stammzertifizierungsstellen** und dann *OK* aus. Wählen Sie dann im Bildschirm *Zertifikatspeicher***Weiter**.
+6. Wählen Sie im Fenster **Zertifikatspeicher auswählen** **Vertrauenswürdige Stammzertifizierungsstellen** und dann *OK* aus. Wählen Sie dann im Bildschirm *Zertifikatspeicher* **Weiter**.
 
       ![Vertrauenswürdiges Stammzertifikat](media/custom-visual-develop-tutorial/trusted-root-cert.png)
 
