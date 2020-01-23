@@ -82,7 +82,7 @@
               href: end-user-drill.md
             - name: Interagieren mit ArcGIS-Karten
               href: ../power-bi-visualizations-arcgis.md
-        - name: Allgemeine Aufgaben
+        - name: Häufige Aufgaben
           items:
             - name: Exportieren von Daten in Excel
               href: end-user-export.md
@@ -176,8 +176,8 @@
               href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
             - name: Favoriten in mobilen Apps
               href: mobile/mobile-apps-favorites.md
-            - name: Konfigurieren einer Berichtsinteraktion in mobilen Apps (nur Smartphone)
-              href: mobile/mobile-app-single-tap.md
+            - name: Konfigurieren von interaktiven Einstellungen (nur Telefon)
+              href: mobile/mobile-app-interaction-settings.md
             - name: Festlegen von Datenwarnungen in den mobilen Power BI-Apps
               href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
             - name: Abrufen von Benachrichtigungen in den mobilen Power BI-Apps
