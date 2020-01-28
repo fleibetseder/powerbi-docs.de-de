@@ -961,16 +961,18 @@
       items:
         - name: Neuigkeiten
           href: report-server/whats-new.md
+        - name: Administratorübersicht
+          href: report-server/admin-handbook-overview.md
         - name: Änderungsprotokoll
           href: report-server/changelog.md
         - name: Support-Ablauffristen
           href: report-server/support-timeline.md
+        - name: Always Encrypted-Unterstützung
+          href: report-server/always-encrypted-support.md
         - name: Hardware- und Softwareanforderungen
           href: report-server/system-requirements.md
         - name: Browserunterstützung
           href: report-server/browser-support.md
-        - name: Administratorübersicht
-          href: report-server/admin-handbook-overview.md
         - name: Berichtsserver – Grundlagen
           items:
             - name: Geplante Aktualisierung für Power BI-Berichte

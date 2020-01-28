@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: a012320a12d2516cb24dc92f2472e3c49ce9081e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 0c9e3db46c66fcd440ebd304370d31539dd5c5c7
+ms.sourcegitcommit: 313a5a6a01c09038a6152d681103accbd2faf437
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73853533"
+ms.lasthandoff: 01/20/2020
+ms.locfileid: "76282035"
 ---
 # <a name="add-images-videos-and-more-to-your-dashboard"></a>Hinzufügen von Bildern, Videos und mehr in Dashboards
 
@@ -118,15 +118,13 @@ Wenn Sie Ihrem Dashboard eine YouTube- oder Vimeo-Videokachel hinzufügen, wird 
 Sie können PubNub verwenden, um Streamingdaten, wie z. B. Twitter-Feeds oder Sensordaten, zu einer Kachel in Ihrem Dashboard hinzuzufügen. Power BI verfügt über eine Integration zum Abrufen der Daten von PubNub. Im folgenden Video erklärt Will, wie das funktioniert.
    
 
-Sie können PubNub verwenden, um Streamingdaten, wie z. B. Twitter-Feeds oder Sensordaten, zu einer Kachel in Ihrem Dashboard hinzuzufügen. Power BI verfügt über eine Integration zum Abrufen der Daten von PubNub. Im folgenden Video erklärt Will, wie das funktioniert. 
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kOuINwgkEkQ" frameborder="0" allowfullscreen></iframe>
 
 1. Klicken Sie im Fenster **Kachel hinzufügen** auf **Benutzerdefinierte Streamingdaten** > **Weiter**.
 2. Klicken Sie auf **Streamingdataset hinzufügen**.
 3. Erstellen Sie ein **neues Streamingdataset** mit der Power BI-API oder mit PubNub.
 4. Füllen Sie die Felder **Datasetname**, **Abonnementschlüssel** und **Kanalname** aus. Wenn es sich um eine sichere Verbindung handelt, müssen Sie auch einen Autorisierungsschlüssel angeben. Sie können die Beispielwerte von PubNub zum Testen verwenden.
-5. Wählen Sie **Weiter**aus.
+5. Wählen Sie **Weiter** aus.
     Daraufhin werden die Felder mit den jeweiligen Datentypen und dem JSON-Format angezeigt, die im Dataset zur Verfügung stehen.
 6. Wählen Sie **Verbinden** aus.
     Somit haben Sie ein Streamingdataset erstellt.
@@ -135,7 +133,7 @@ Sie können PubNub verwenden, um Streamingdaten, wie z. B. Twitter-Feeds oder S
 9. Wählen Sie den gewünschten Visualtyp aus. Für diese Art von Daten eignet sich meist ein Liniendiagramm.
 10. Wählen Sie die **Achse**, **Legende** und **Werte** aus.
 11. Legen Sie den Zeitraum in Sekunden, Minuten oder Stunden fest, der angezeigt werden soll.
-12. Wählen Sie **Weiter**aus.
+12. Wählen Sie **Weiter** aus.
 13. Geben Sie einen **Titel** und **Untertitel** ein, wenn Sie möchten.
 14. Heften Sie die Kachel an Ihr Dashboard an.
 
@@ -148,7 +146,7 @@ Sie können PubNub verwenden, um Streamingdaten, wie z. B. Twitter-Feeds oder S
 
 4. Füllen Sie die Felder **Datasetname**, **Abonnementschlüssel** und **Kanalname** aus. Wenn es sich um eine sichere Verbindung handelt, müssen Sie auch einen Autorisierungsschlüssel angeben. Sie können die Beispielwerte von PubNub zum Testen verwenden.
 
-5. Wählen Sie **Weiter**aus.
+5. Wählen Sie **Weiter** aus.
 
    Daraufhin werden die Felder mit den jeweiligen Datentypen und dem JSON-Format angezeigt, die im Dataset zur Verfügung stehen.
 
@@ -166,7 +164,7 @@ Sie können PubNub verwenden, um Streamingdaten, wie z. B. Twitter-Feeds oder S
 
 11. Legen Sie den Zeitraum in Sekunden, Minuten oder Stunden fest, der angezeigt werden soll.
 
-12. Wählen Sie **Weiter**aus.
+12. Wählen Sie **Weiter** aus.
 
 13. Geben Sie optional einen **Titel** und einen **Untertitel** ein.
 

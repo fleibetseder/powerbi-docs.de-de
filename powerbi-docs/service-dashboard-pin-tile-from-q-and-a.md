@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 12aa35e37e4382e7fc89fc9e0fe8c2ae564e8eda
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 77be727de3cda1d3b6fd5c34b6e572b1d505fc54
+ms.sourcegitcommit: 313a5a6a01c09038a6152d681103accbd2faf437
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872807"
+ms.lasthandoff: 01/20/2020
+ms.locfileid: "76281999"
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Anheften einer Kachel an ein Dashboard aus Q&A
 ## <a name="how-to-pin-a-tile-from-qa"></a>Anheften einer Kachel aus Q&A
@@ -53,7 +53,7 @@ Um die Schritte selbst nachzuvollziehen, öffnen Sie das [Dashboard zum Analyseb
 ## <a name="considerations-and-troubleshooting"></a>Zu beachtende Aspekte und Problembehandlung
 * Wenn Sie anfangen, eine Frage einzugeben, sucht F&A sofort nach der besten Antwort aus allen Datasets, die mit dem aktuellen Dashboard verknüpft sind.  Das „aktuelle Dashboard“ ist das Dashboard, das im oberen Navigationsbereich aufgeführt wird. Diese Frage wird beispielsweise im Dashboard **Analysebeispiel für den Einzelhandel** gestellt, das Teil des Arbeitsbereichs **mihart** ist.
 
-  ![Brotkrümel](media/service-dashboard-pin-tile-from-q-and-a/power-bi-nav pane.png)
+  ![Brotkrümel](media/service-dashboard-pin-tile-from-q-and-a/power-bi-navbar.png)
 * **Woher weiß F&A, welche Datasets verwendet werden sollen**?  Q&A hat Zugriff auf alle Datasets, die über mindestens eine an das Dashboard angeheftete Visualisierung verfügen.
 
 * **Wird das Fragefeld nicht angezeigt**? Wenden Sie sich an den Power BI-Administrator. Der Administrator kann Q&A deaktivieren.
