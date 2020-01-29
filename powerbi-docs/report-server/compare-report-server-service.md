@@ -8,13 +8,13 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.date: 12/03/2019
-ms.openlocfilehash: 88df45a95e485695a9a2f36358c1fcca9670f258
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 01/16/2020
+ms.openlocfilehash: f7f163a8930d8bd90d6270f59e8afa602e89dd57
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74831144"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160832"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Vergleich zwischen Power BI-Berichtsserver und Power BI-Dienst
 
@@ -31,6 +31,7 @@ Der Power BI-Berichtsserver und der Power BI-Dienst weisen viele Ähnlichkeiten,
 | Releasezyklus | Dreimal pro Jahr (Januar, Mai, September) | Einmal pro Monat | Die neuesten Features und Fixes werden zuerst im Power BI-Dienst bereitgestellt. Die meisten wichtigen Funktionen werden in den nachfolgenden Releases auch im Power BI-Berichtsserver bereitgestellt. Einige Features bleiben dem Power BI-Dienst vorbehalten. |
 | Erstellen von Power BI-Berichten in Power BI Desktop | Ja | Ja |  |
 | Erstellen von Power BI-Berichten im Browser | Nein | Ja |  |
+| Hosten und Herstellen einer Verbindung mit freigegebenen Power BI-Datasets | Nein | Ja | [Einführung in arbeitsbereichsübergreifende Datasets](../service-datasets-across-workspaces.md) |
 | Gateway erforderlich | Nein | Ja für lokale Datenquellen |  |
 | Echtzeitstreaming | Nein | Ja | [Echtzeitstreaming in Power BI](../service-real-time-streaming.md) |
 | Dashboards | Nein | Ja | [Dashboards im Power BI-Dienst](../consumer/end-user-dashboards.md) |

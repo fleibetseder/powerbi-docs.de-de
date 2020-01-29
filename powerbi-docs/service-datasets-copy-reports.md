@@ -1,31 +1,33 @@
 ---
-title: 'Kopieren von Berichten aus anderen Arbeitsbereichen (Vorschau): Power BI'
-description: Erfahren Sie, wie Sie ein Dataset mit Benutzern in der gesamten Organisation teilen können. Dann können diese in ihren eigenen Arbeitsbereichen Berichte erstellen, die auf Ihrem Dataset basieren.
+title: Kopieren von Berichten aus anderen Apps oder Arbeitsbereichen (Vorschau) – Power BI
+description: Erfahren Sie, wie Sie eine Kopie eines Berichts erstellen und in Ihrem eigenen Arbeitsbereich speichern.
 author: maggiesMSFT
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 01/16/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9c7cbd895a913b76a9c0b87155f7800c5538ab28
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 8716a304e5b117c027d75db149ebcc8d95efebfe
+ms.sourcegitcommit: 313a5a6a01c09038a6152d681103accbd2faf437
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223861"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76268869"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Kopieren von Berichten aus anderen Arbeitsbereichen (Vorschau)
 
-Wenn Sie in einem Arbeitsbereich oder einer App einen Bericht gefunden haben, der Ihnen gefällt, können Sie eine Kopie davon erstellen und sie in einem anderen Arbeitsbereich speichern. Anschließend können Sie Ihre Kopie des Berichts ändern und Visuals und andere Elemente hinzufügen oder löschen. Sie brauchen sich nicht mit der Erstellung des Datenmodells abzugeben. Das wurde bereits für Sie erstellt. Und es ist viel einfacher, einen vorhandenen Bericht zu ändern, als einen von Grund auf neuen zu erstellen. Wenn Sie jedoch eine App aus dem neuen Arbeitsbereich erstellen, können Sie Ihre Kopie des Berichts in der App manchmal nicht veröffentlichen. Weitere Informationen finden Sie im Abschnitt [„Überlegungen und Einschränkungen“ im Artikel „Verwenden von Datasets in mehreren Arbeitsbereichen“](service-datasets-across-workspaces.md#considerations-and-limitations).
+Wenn Sie in einem Arbeitsbereich oder einer App einen Bericht gefunden haben, der Ihnen gefällt, können Sie eine Kopie davon erstellen und sie in einem anderen Arbeitsbereich speichern. Anschließend können Sie Ihre Kopie des Berichts ändern und Visuals und andere Elemente hinzufügen oder löschen. Sie brauchen sich nicht mit der Erstellung des Datenmodells abzugeben. Das wurde bereits für Sie erstellt. Und es ist viel einfacher, einen vorhandenen Bericht zu ändern, als einen von Grund auf neuen zu erstellen. Wenn Sie jedoch eine App aus Ihrem Arbeitsbereich erstellen, können Sie Ihre Kopie des Berichts manchmal nicht in der App veröffentlichen. Weitere Informationen finden Sie im Abschnitt [„Überlegungen und Einschränkungen“ im Artikel „Verwenden von Datasets in mehreren Arbeitsbereichen“](service-datasets-across-workspaces.md#considerations-and-limitations).
 
 > [!NOTE]
 > Selbst wenn sich der ursprüngliche Bericht in einem Arbeitsbereich in einer Premium-Kapazität befindet, benötigen Sie eine Pro-Lizenz, um eine Kopie zu erstellen.
 
-## <a name="save-a-copy-of-a-report"></a>Speichern einer Kopie eines Berichts
+## <a name="save-a-copy-of-a-report-in-a-workspace"></a>Speichern der Kopie eines Berichts in einem Arbeitsbereich
 
-1. Navigieren Sie in einer App oder einem Arbeitsbereich zur Listenansicht „Berichte“.
+1. Navigieren Sie in einem Arbeitsbereich zur Listenansicht „Berichte“.
+
+    ![Listenansicht „Berichte“](media/service-datasets-copy-reports/power-bi-report-list-view.png)
 
 1. Wählen Sie unter **Aktionen** **Kopie speichern** aus.
 
@@ -37,22 +39,46 @@ Wenn Sie in einem Arbeitsbereich oder einer App einen Bericht gefunden haben, de
 
     ![Kopie speichern (Dialogfeld)](media/service-datasets-copy-reports/power-bi-dataset-save-report.png)
 
-    In welchem Arbeitsbereich Sie speichern können, hängt davon ab, woraus Sie kopieren. Wenn Sie aus einem Arbeitsbereich kopieren, können Sie den Bericht im aktuellen Arbeitsbereich oder einem anderen in Power BI speichern. Sie sehen nur Arbeitsbereiche mit neuer Benutzeroberfläche, bei denen Sie Mitglied sind. Wenn Sie aus einer App kopieren, können Sie den Bericht unter „Mein Arbeitsbereich“ speichern.
+    Sie können den Bericht im aktuellen Arbeitsbereich oder einem anderen im Power BI-Dienst speichern. Sie sehen nur Arbeitsbereiche mit neuer Benutzeroberfläche, bei denen Sie Mitglied sind. 
   
 4. Wählen Sie **Speichern**.
 
-    Wenn Sie eine Kopie des Berichts speichern, erstellen Sie eine Liveverbindung zum Dataset, und Sie können die Oberfläche zur Berichterstellung öffnen und haben das gesamte Dataset zur Verfügung. Sie haben keine Kopie des Datasets erstellt. Das Dataset befindet sich weiterhin an seinem ursprünglichen Speicherort. Sie können alle im Dataset enthaltenen Tabellen und Measures in Ihrem eigenen Bericht verwenden. Es gelten Einschränkungen durch Sicherheit auf Zeilenebene (Row-Level Security, RLS) für das Dataset, sodass Sie nur Daten sehen können, zu deren Anzeige Sie gemäß Ihrer RLS-Rolle berechtigt sind.
-
-    Power BI erstellt automatisch einen Eintrag in der Liste der Datasets, wenn der Bericht auf einem Dataset basiert, das außerhalb des Arbeitsbereichs liegt. Das Symbol für ein solches Dataset unterscheidet sich vom Symbol für Datasets im Arbeitsbereich: ![Symbol „Freigegebenes Dataset“](media/service-datasets-discover-across-workspaces/power-bi-shared-dataset-icon.png)
-
-
+    Power BI erstellt automatisch eine Kopie des Berichts und einen Eintrag in der Liste der Datasets, wenn der Bericht auf einem Dataset außerhalb des Arbeitsbereichs basiert. Das Symbol für ein solches Dataset unterscheidet sich vom Symbol für Datasets im Arbeitsbereich: ![Symbol „Freigegebenes Dataset“](media/service-datasets-discover-across-workspaces/power-bi-shared-dataset-icon.png)
+    
     Auf diese Weise können Mitglieder des Arbeitsbereichs erkennen, welche Berichte und Dashboards Datasets verwenden, die sich außerhalb des Arbeitsbereichs befinden. Der Eintrag zeigt Informationen über das Dataset und einige ausgewählte Aktionen an.
 
     ![Datasetaktionen](media/service-datasets-across-workspaces/power-bi-dataset-actions.png)
 
+    Informationen zum Bericht und zum zugehörigen Dataset finden Sie im Abschnitt [Ihre Kopie des Berichts](#your-copy-of-the-report) des vorliegenden Artikels.
+
+## <a name="copy-a-report-in-an-app"></a>Kopieren eines Berichts in eine App
+
+1. Öffnen Sie in einer App den Bericht, den Sie kopieren möchten.
+2. Wählen Sie in der Menüleiste **Weitere Optionen** ( **...** ) > **Kopie speichern** aus.
+
+    ![Speichern einer Kopie des Berichts](media/service-datasets-copy-reports/power-bi-save-copy.png)
+
+    Die Option **Kopie speichern** wird nur angezeigt, wenn sich der Bericht in einem Arbeitsbereich mit der neuen Benutzeroberfläche befindet und Sie über die [Berechtigung „Erstellen“](service-datasets-build-permissions.md) verfügen.
+
+3. Benennen Sie den Bericht, und klicken Sie auf **Speichern**.
+
+    ![Benennen Ihrer Kopie des Berichts](media/service-datasets-copy-reports/power-bi-save-report-from-app.png)
+
+    Ihre Kopie wird automatisch in Ihrem Arbeitsbereich gespeichert.
+
+4. Klicken Sie auf **Gehe zu Bericht**, um Ihre Kopie zu öffnen.
+
+## <a name="your-copy-of-the-report"></a>Ihre Kopie des Berichts
+
+Wenn Sie eine Kopie des Berichts speichern, erstellen Sie eine Liveverbindung zum Dataset, und Sie können die Oberfläche zur Berichterstellung öffnen und haben das gesamte Dataset zur Verfügung. 
+
+![Bearbeiten Ihrer Kopie des Berichts](media/service-datasets-copy-reports/power-bi-edit-report-copy.png)
+
+Sie haben keine Kopie des Datasets erstellt. Das Dataset befindet sich weiterhin an seinem ursprünglichen Speicherort. Sie können alle im Dataset enthaltenen Tabellen und Measures in Ihrem eigenen Bericht verwenden. Es gelten Einschränkungen durch Sicherheit auf Zeilenebene (Row-Level Security, RLS) für das Dataset, sodass Sie nur Daten sehen können, zu deren Anzeige Sie gemäß Ihrer RLS-Rolle berechtigt sind.
+
 ## <a name="view-related-datasets"></a>Zugehörige Datasets anzeigen
 
-Wenn Sie über einen Bericht in Ihrem Arbeitsbereich verfügen, müssen Sie möglicherweise wissen, auf welchem Dataset er basiert.
+Wenn ein Bericht in einem Arbeitsbereich auf einem Dataset in einem anderen Arbeitsbereich basiert, müssen Sie möglicherweise mehr über das zugrunde liegende Dataset wissen.
 
 1. Wählen Sie in der Listenansicht der Berichte **Verwandte Inhalte anzeigen** aus.
 

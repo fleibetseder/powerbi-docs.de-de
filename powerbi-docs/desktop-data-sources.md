@@ -6,47 +6,50 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 01/09/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fd25e4ca6357dbfa5954eeabe0bf97fb6ccb8a1c
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 0cf9d6acd4fe5f729dafb575a2ab736b9e8db7bb
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761362"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76039852"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datenquellen in Power BI Desktop
 
 Mit Power BI Desktop können Sie Verbindungen mit Daten aus vielen verschiedenen Quellen herstellen. Eine vollständige Liste der verfügbaren Datenquellen finden Sie unter [Power BI-Datenquellen](power-bi-data-sources.md).
 
-Wählen Sie zum Herstellen einer Verbindung mit Daten im Menüband **Start** den Eintrag **Daten abrufen** aus. Wenn Sie den Pfeil nach unten oder den Text **Daten abrufen** auf der Schaltfläche auswählen, wird das Datentypmenü **Am häufigsten verwendet** angezeigt, das in der folgenden Abbildung veranschaulicht wird:
+Sie können mithilfe des Menübands **Start** eine Datenverbindung herstellen. Um die Datentypen **Am häufigsten verwendet** anzuzeigen, wählen Sie die Schaltfläche **Daten abrufen** oder den nach unten weisenden Pfeil aus.
 
-![Abrufen von Daten in Power BI Desktop](media/desktop-data-sources/data-sources-01.png)
+![Menü mit den am häufigsten verwendeten Datentypen, „Daten abrufen“ in Power BI Desktop](media/desktop-data-sources/data-sources-01.png)
 
-Wenn Sie die Option **Mehr...** im Menü **Am häufigsten verwendet** auswählen, wird das Fenster **Daten abrufen** angezeigt. Sie können das Fenster **Daten abrufen** auch durch direktes Auswählen der **Symbolschaltfläche** **Daten abrufen** öffnen (und das Menü **Am häufigsten verwendet** umgehen).
+Um zum Dialogfeld **Daten abrufen** zu wechseln, zeigen Sie das Menü **Am häufigsten verwendet** an und klicken auf **Mehr**. Sie können das Dialogfeld **Daten abrufen** auch durch direktes Auswählen des Symbols **Daten abrufen** öffnen (und das Menü **Am häufigsten verwendet** umgehen).
 
-![Schaltfläche „Daten abrufen“](media/desktop-data-sources/data-sources-02.png)
+![Schaltfläche „Daten abrufen“, Power BI Desktop](media/desktop-data-sources/data-sources-02.png)
 
 > [!NOTE]
-> Das Power BI-Team erweitert laufend die Datenquellen, die für **Power BI Desktop** und den **Power BI-Dienst** verfügbar sind. Daher finden Sie häufig Vorabversionen von noch nicht in der Endversion vorliegenden Datenquellen, die als *Beta* oder *Vorschau* gekennzeichnet sind. Für alle als *Beta* oder *Vorschau* markierten Datenquellen stehen nur eingeschränkter Support und weniger Funktionen zur Verfügung, und sie sollten nicht in Produktionsumgebungen verwendet werden. Zudem sind alle Datenquellen, die als *Beta* oder *Vorschau* für **Power BI Desktop** gekennzeichnet sind, möglicherweise nicht für die Verwendung im **Power BI-Dienst** oder in anderen Microsoft-Diensten verfügbar, bis die Datenquelle allgemein verfügbar wird (GA).
+> Das Power BI-Team erweitert laufend die Datenquellen, die für Power BI Desktop und den Power BI-Dienst verfügbar sind. Daher finden Sie häufig Vorabversionen von noch nicht in der Endversion vorliegenden Datenquellen, die als **Beta** oder **Vorschau** gekennzeichnet sind. Für alle als **Beta** oder **Vorschau** markierten Datenquellen werden nur eingeschränkter Support und weniger Funktionen bereitgestellt, deshalb sollten sie nicht in Produktionsumgebungen verwendet werden. Zudem sind alle Datenquellen, die als **Beta** oder **Vorschau** für Power BI Desktop gekennzeichnet sind, möglicherweise nicht für die Verwendung im Power BI-Dienst oder in anderen Microsoft-Diensten verfügbar, bis die Datenquelle allgemein verfügbar wird (GA).
 
 > [!NOTE]
 > Es gibt zahlreiche Datenconnectors für Power BI Desktop, die für die Authentifizierung Internet Explorer 10 (oder höher) benötigen. 
 
 
 ## <a name="data-sources"></a>Datenquellen
-Datentypen werden in die folgenden Kategorien unterteilt:
+
+Im Dialogfeld **Daten abrufen** werden Datentypen in die folgenden Kategorien unterteilt:
 
 * Alles
 * Datei
 * Datenbank
-* Power BI
+* Power Platform
 * Azure
 * Onlinedienste
 * Sonstige
 
 Die Kategorie **Alles** umfasst alle Datenverbindungstypen aus allen Kategorien.
+
+### <a name="file-data-sources"></a>Datenquellen vom Typ „Datei“
 
 Die Kategorie **Datei** bietet die folgenden Datenverbindungen:
 
@@ -60,7 +63,9 @@ Die Kategorie **Datei** bietet die folgenden Datenverbindungen:
 
 Die folgende Abbildung zeigt das Fenster **Daten abrufen** für **Datei**.
 
-![Daten abrufen > Datei](media/desktop-data-sources/data-sources-03.png)
+![Datenquelle „Datei“, Dialogfeld „Daten abrufen“, Power BI Desktop](media/desktop-data-sources/data-sources-03.png)
+
+### <a name="database-data-sources"></a>Datenquellen vom Typ „Datenbank“
 
 Die Kategorie **Datenbank** bietet die folgenden Datenverbindungen:
 
@@ -74,7 +79,7 @@ Die Kategorie **Datenbank** bietet die folgenden Datenverbindungen:
 * MySQL-Datenbank
 * PostgreSQL-Datenbank
 * Sybase-Datenbank
-* Teradata
+* Teradata-Datenbank
 * SAP HANA-Datenbank
 * SAP Business Warehouse-Anwendungsserver
 * SAP Business Warehouse-Nachrichtenserver
@@ -84,22 +89,25 @@ Die Kategorie **Datenbank** bietet die folgenden Datenverbindungen:
 * Vertica
 * Snowflake
 * Essbase
-* AtScale-Cubes
+* AtScale-Cubes (Beta)
 * BI-Connector
+* Denodo
 * Dremio
 * Exasol
 * Indexima (Beta)
 * InterSystems IRIS (Beta)
 * Jethro (Beta)
-* Kyligence Enterprise (Beta)
-* MarkLogic (Beta)
+* Kyligence
+* MarkLogic
 
 > [!NOTE]
 > Sie müssen einige Datenbankconnectors aktivieren, indem Sie **Datei > Optionen und Einstellungen > Optionen** und dann **Vorschaufeatures** auswählen und den Connector aktivieren. Wenn einige der oben genannten Connectors nicht angezeigt werden und Sie diese verwenden möchten, überprüfen Sie die Einstellungen von **Vorschaufeatures**. Außerdem stehen für alle als *Beta* oder *Vorschau* markierten Datenquellen nur eingeschränkter Support und weniger Funktionen zur Verfügung, und sie sollten nicht in Produktionsumgebungen verwendet werden.
 
 Die folgende Abbildung zeigt das Fenster **Daten abrufen** für **Datenbank**.
 
-![Daten abrufen > Datenbanken](media/desktop-data-sources/data-sources-04.png)
+![Datenquelle „Datenbank“, Dialogfeld „Daten abrufen“, Power BI Desktop](media/desktop-data-sources/data-sources-04.png)
+
+### <a name="power-platform-data-sources"></a>Datenquellen vom Typ „Power Platform“
 
 Die Kategorie **Power Platform** bietet die folgenden Datenverbindungen:
 
@@ -110,7 +118,9 @@ Die Kategorie **Power Platform** bietet die folgenden Datenverbindungen:
 
 Die folgende Abbildung zeigt das Fenster **Daten abrufen** für **Power Platform**.
 
-![Daten abrufen > Power BI](media/desktop-data-sources/data-sources-05.png)
+![Datenquelle „Power Platform“, Dialogfeld „Daten abrufen“, Power BI Desktop](media/desktop-data-sources/data-sources-05.png)
+
+### <a name="azure-data-sources"></a>Azure-Datenquellen
 
 Die Kategorie **Azure** bietet die folgenden Datenverbindungen:
 
@@ -131,7 +141,9 @@ Die Kategorie **Azure** bietet die folgenden Datenverbindungen:
 
 Die folgende Abbildung zeigt das Fenster **Daten abrufen** für **Azure**.
 
-![Daten abrufen > Azure](media/desktop-data-sources/data-sources-06.png)
+![Datenquelle „Azure“, Dialogfeld „Daten abrufen“, Power BI Desktop](media/desktop-data-sources/data-sources-06.png)
+
+### <a name="online-services-data-sources"></a>Datenquellen vom Typ „Onlinedienste“
 
 Die Kategorie **Online Services** bietet die folgenden Datenverbindungen:
 
@@ -152,6 +164,7 @@ Die Kategorie **Online Services** bietet die folgenden Datenverbindungen:
 * Data.World – Dataset abrufen (Beta)
 * Facebook
 * GitHub (Beta)
+* LinkedIn Sales Navigator (Beta)
 * MailChimp (Beta)
 * Merketo (Beta)
 * Mixpanel (Beta)
@@ -160,26 +173,28 @@ Die Kategorie **Online Services** bietet die folgenden Datenverbindungen:
 * QuickBooks Online (Beta)
 * Smartsheet
 * SparkPost (Beta)
-* Stripe (Beta)
 * SweetIQ (Beta)
-* Planview Enterprise One – CMT (Beta)
+* Planview Enterprise One – CTM (Beta)
 * Twilio (Beta)
 * tyGraph (Beta)
 * Webtrends (Beta)
 * Zendesk (Beta)
 * Dynamics 365 Customer Insights (Beta)
-* Emigo Data Source (Beta)
+* Emigo Data Source
 * Entersoft Business Suite (Beta)
 * Industrial App Store
 * Intune Data Warehouse (Beta)
 * Microsoft Graph-Sicherheit (Beta)
+* Product Insights (Beta)
 * Quick Base
 * TeamDesk (Beta)
-
+* Workplace Analytics (Beta)
 
 Die folgende Abbildung zeigt das Fenster **Daten abrufen** für **Onlinedienste** an.
 
-![Daten abrufen > Onlinedienste](media/desktop-data-sources/data-sources-07.png)
+![Datenquelle „Onlinedienste“, Dialogfeld „Daten abrufen“, Power BI Desktop](media/desktop-data-sources/data-sources-07.png)
+
+### <a name="other-data-sources"></a>Andere Datenquellen
 
 Die Kategorie **Sonstige** bietet die folgenden Datenverbindungen:
 
@@ -195,67 +210,69 @@ Die Kategorie **Sonstige** bietet die folgenden Datenverbindungen:
 * ODBC
 * OLE DB
 * BI360 – Budgeting & Financial Reporting (Beta)
-* Denodo
 * Information Grid (Beta)
-* Paxata 
+* Paxata
 * QubolePresto (Beta)
 * Roamler (Beta)
+* Siteimprove (Beta)
 * SurveyMonkey (Beta)
 * Tenforce (Smart)List (Beta)
+* Vena (Beta)
 * Workforce Dimensions (Beta)
 * Leere Abfrage
 
 Die folgende Abbildung zeigt das Fenster **Daten abrufen** für **Sonstige**.
 
-![Daten abrufen > Sonstige](media/desktop-data-sources/data-sources-08.png)
+![Datenquelle „Sonstige“, Dialogfeld „Daten abrufen“, Power BI Desktop](media/desktop-data-sources/data-sources-08.png)
 
 > [!NOTE]
 > Zurzeit ist es nicht möglich, eine Verbindung mit benutzerdefinierten Datenquellen herzustellen, die mit Azure Active Directory gesichert wurden.
 
 ## <a name="connecting-to-a-data-source"></a>Herstellen einer Verbindung mit einer Datenquelle
+
 Wenn Sie die Verbindung mit einer Datenquelle herstellen möchten, wählen Sie die Datenquelle im Fenster **Daten abrufen** und dann **Verbinden**aus. In der folgenden Abbildung ist **Web** aus der Datenverbindungskategorie **Sonstige** ausgewählt.
 
-![Mit Web verbinden](media/desktop-data-sources/data-sources-08.png)
+![Verbindung mit „Web“, Dialogfeld „Daten abrufen“, Power BI Desktop](media/desktop-data-sources/data-sources-08.png)
 
 Es wird ein für den Typ der Datenverbindung spezifisches Verbindungsfenster angezeigt. Wenn Anmeldeinformationen erforderlich sind, werden Sie aufgefordert, diese bereitzustellen. Die folgende Abbildung zeigt eine URL, die eingegeben wird, um die Verbindung mit einer Webdatenquelle herzustellen.
 
-![Eingabe-Web-URL](media/desktop-data-sources/datasources-fromwebbox.png)
+![Eingabe-URL, Dialogfeld „Aus dem Web“, Power BI Desktop](media/desktop-data-sources/datasources-fromwebbox.png)
 
-Wählen Sie bei der Eingabe der URL oder Ressourcenverbindungsinformationen **OK**aus. Power BI Desktop stellt die Verbindung mit der Datenquelle her und zeigt die verfügbaren Datenquellen im **Navigator**an.
+Geben Sie die URL oder Ressourcenverbindungsinformationen ein, und klicken Sie auf **OK**. Power BI Desktop stellt die Verbindung mit der Datenquelle her und zeigt die verfügbaren Datenquellen im **Navigator** an.
 
-![Navigator-Bildschirm](media/desktop-data-sources/datasources-fromnavigatordialog.png)
+![Dialogfeld „Navigator“, Power BI Desktop](media/desktop-data-sources/datasources-fromnavigatordialog.png)
 
-Sie können die Daten entweder durch Auswählen der Schaltfläche **Laden** laden, die sich am unteren Rand des Bereichs **Navigator** befindet, oder Sie bearbeiten die Abfrage vor dem Laden der Daten, indem Sie die Schaltfläche **Bearbeiten** auswählen.
+Klicken Sie zum Laden der Daten unten im Bereich des **Navigators** auf die Schaltfläche **Laden**. Klicken Sie auf die Schaltfläche **Daten transformieren**, um die Abfrage vor dem Laden der Daten im Power Query-Editor zu transformieren oder zu bearbeiten.
 
 Das ist alles, was zum Herstellen der Verbindung mit Datenquellen im Power BI-Designer erforderlich ist. Sie können eine Verbindung mit Daten aus der wachsenden Liste von Datenquellen herstellen, die wir kontinuierlich erweitern.
 
 ## <a name="using-pbids-files-to-get-data"></a>Verwenden von PBIDS-Dateien zum Abrufen von Daten
 
-PBIDS-Dateien sind Power BI Desktop-Dateien, die eine bestimmte Struktur aufweisen und über eine PBIDS-Erweiterung verfügen, um anzugeben, dass es sich um eine Power BI-Datenquellendatei handelt.
+PBIDS-Dateien sind Power BI Desktop-Dateien, die eine bestimmte Struktur und die Erweiterung „.PBIDS“ aufweisen, um anzugeben, dass es sich um eine Power BI-Datenquellendatei handelt.
 
-Sie können eine PBIDS-Datei erstellen, um die Funktion **Daten abrufen** für Berichtersteller in Ihrem Unternehmen zu optimieren. Es wird empfohlen, dass Administratoren diese Dateien für häufig verwendete Verbindungen erstellen, um die Verwendung von PBIDS-Dateien für neue Berichtsautoren zu ermöglichen. 
+Sie können eine PBIDS-Datei erstellen, um die Funktion **Daten abrufen** für Berichtersteller in Ihrer Organisation zu optimieren. Um einem neuen Berichtsautor die Verwendung von PBIDS-Dateien zu erleichtern, empfehlen wir, dass ein Administrator diese Dateien für häufig verwendete Verbindungen erstellt.
 
-Wenn ein Autor eine PBIDS-Datei öffnet, wird Power BI Desktop geöffnet und fordert den Benutzer zur Eingabe von Anmeldeinformationen auf, um sich zu authentifizieren und eine Verbindung mit der Datenquelle herzustellen, die in der Datei angegeben ist. Das Dialogfeld „Navigation“ wird angezeigt, und der Benutzer muss die Tabellen aus dieser Datenquelle auswählen, die in das Modell geladen werden sollen. Benutzer müssen möglicherweise auch die Datenbanken auswählen, wenn sie nicht in der PBIDS-Datei angegeben werden. 
+Wenn ein Autor eine PBIDS-Datei öffnet, wird Power BI Desktop geöffnet und fordert den Benutzer zur Eingabe von Anmeldeinformationen auf, um sich zu authentifizieren und eine Verbindung mit der in der Datei angegebenen Datenquelle herzustellen. Das Dialogfeld **Navigation** wird angezeigt, und der Benutzer muss die Tabellen aus dieser Datenquelle auswählen, die in das Modell geladen werden sollen. Benutzer müssen möglicherweise auch die Datenbanken auswählen, falls diese nicht in der PBIDS-Datei angegeben werden.
 
-Von diesem Zeitpunkt an kann der Benutzer mit dem Erstellen von Visualisierungen beginnen oder *Zuletzt verwendete Quellen* noch mal besuchen, um einige neue Tabellen in das Modell zu laden. 
+Von diesem Zeitpunkt an kann der Benutzer mit dem Erstellen von Visualisierungen beginnen oder **Zuletzt verwendete Quellen** auswählen, um einen neuen Tabellensatz in das Modell zu laden.
 
-Zurzeit unterstützen PBIDS-Dateien nur eine einzelne Datenquelle in einer Datei. Wenn Sie mehr als eine Datenquelle angeben, tritt ein Fehler auf. 
+Aktuell unterstützen PBIDS-Dateien nur eine einzelne Datenquelle in einer Datei. Wenn Sie mehr als eine Datenquelle angeben, tritt ein Fehler auf.
 
-Um die PBIDS-Datei zu erstellen, müssen Administratoren die erforderlichen Eingaben für eine einzelne Verbindung angeben. Sie können den Modus der Verbindung entweder als **DirectQuery** oder als **Import** angeben. Wenn **Modus** in der Datei fehlt/NULL ist, wird der Benutzer, der die Datei in Power BI Desktop öffnet, aufgefordert, „DirectQuery“ oder „Import“ auszuwählen. 
+Um eine PBIDS-Datei zu erstellen, muss ein Administrator die erforderlichen Eingaben für eine einzelne Verbindung angeben. Der Administrator kann außerdem als Verbindungsmodus entweder „DirectQuery“ oder „Import“ festlegen. Wenn die Angabe zum **Modus** in der Datei fehlt/NULL ist, wird der Benutzer, der die Datei in Power BI Desktop öffnet, aufgefordert, **DirectQuery** oder **Import** auszuwählen.
 
 ### <a name="pbids-file-examples"></a>Beispiele für PBIDS-Dateien
 
-Dieser Abschnitt enthält einige Beispiele aus häufig verwendeten Datenquellen. Der PBIDS-Dateityp unterstützt bis auf zwei Ausnahmen nur Datenverbindungen, die auch in Power BI Desktop unterstützt werden: Live Connect und leere Abfrage. 
+Dieser Abschnitt enthält einige Beispiele aus häufig verwendeten Datenquellen. Der PBIDS-Dateityp unterstützt bis auf zwei Ausnahmen nur Datenverbindungen, die auch in Power BI Desktop unterstützt werden: Live Connect und leere Abfrage
 
 Die PBIDS-Datei enthält *keine* Authentifizierungsinformationen und keine Tabellen- und Schemainformationen.  
 
-Im Folgenden finden Sie einige gängige Beispiele für PBIDS-Dateien, die aber nicht vollständig oder umfassend sind. Für andere Datenquellen finden Sie weitere Informationen im Thema [DSR-Format (Data Source Reference ) für Protokoll- und Adressinformationen](https://docs.microsoft.com/azure/data-catalog/data-catalog-dsr#data-source-reference-specification).
+Die folgenden Codeausschnitten zeigen einige gängige Beispiele für PBIDS-Dateien, die aber nicht vollständig oder umfassend sind. Für andere Datenquellen finden Sie weitere Informationen im Thema [DSR-Format (Data Source Reference ) für Protokoll- und Adressinformationen](https://docs.microsoft.com/azure/data-catalog/data-catalog-dsr#data-source-reference-specification).
 
-Diese Beispiele dienen nur als Übersicht, sind nicht umfassend und enthalten nicht alle unterstützten Connectors im DSR-Format. Administratoren oder Unternehmen können ihre eigenen Datenquellen anhand dieser Beispiele als Orientierungshilfe erstellen, aus denen sie ihre eigenen Datenquelldateien erstellen und unterstützen können. 
+Diese Beispiele dienen nur als Übersicht, sie sind nicht umfassend und enthalten nicht alle unterstützten Connectors im DSR-Format. Administratoren oder Organisationen können eigene Datenquellen anhand dieser Beispiele als Orientierungshilfe erstellen, aus denen sie ihre eigenen Datenquelldateien erstellen und unterstützen können.
 
+#### <a name="azure-as"></a>Azure AS
 
-**Azure AS**
-```
+```json
 { 
     "version": "0.1", 
     "connections": [ 
@@ -271,11 +288,9 @@ Diese Beispiele dienen nur als Übersicht, sind nicht umfassend und enthalten ni
 }
 ```
 
+#### <a name="folder"></a>Ordner
 
- 
-
-**Ordner**
-```
+```json
 { 
   "version": "0.1", 
   "connections": [ 
@@ -291,8 +306,9 @@ Diese Beispiele dienen nur als Übersicht, sind nicht umfassend und enthalten ni
 } 
 ```
 
-**OData**
-```
+#### <a name="odata"></a>OData
+
+```json
 { 
   "version": "0.1", 
   "connections": [ 
@@ -307,9 +323,10 @@ Diese Beispiele dienen nur als Übersicht, sind nicht umfassend und enthalten ni
   ] 
 } 
 ```
- 
-**SAP BW**
-```
+
+#### <a name="sap-bw"></a>SAP BW
+
+```json
 { 
   "version": "0.1", 
   "connections": [ 
@@ -326,9 +343,10 @@ Diese Beispiele dienen nur als Übersicht, sind nicht umfassend und enthalten ni
   ] 
 } 
 ```
- 
-**SAP Hana**
-```
+
+#### <a name="sap-hana"></a>SAP Hana
+
+```json
 { 
   "version": "0.1", 
   "connections": [ 
@@ -344,10 +362,11 @@ Diese Beispiele dienen nur als Übersicht, sind nicht umfassend und enthalten ni
 } 
 ```
 
-**SharePoint-Liste**
+#### <a name="sharepoint-list"></a>SharePoint-Liste
 
-Die URL muss auf die SharePoint-Website selbst und nicht auf eine Liste innerhalb der Website verweisen. Benutzer erhalten einen Navigator, mit dem Sie mindestens eine Liste von dieser Website auswählen können, die jeweils zu einer Tabelle im Modell wird. 
-```
+Die URL muss auf die SharePoint-Website selbst, nicht auf eine Liste innerhalb der Website verweisen. Benutzer erhalten einen Navigator, mit dem Sie mindestens eine Liste von dieser Website auswählen können, die jeweils zu einer Tabelle im Modell wird.
+
+```json
 { 
   "version": "0.1", 
   "connections": [ 
@@ -362,10 +381,10 @@ Die URL muss auf die SharePoint-Website selbst und nicht auf eine Liste innerhal
   ] 
 } 
 ```
- 
- 
-**SQL Server**
-```
+
+#### <a name="sql-server"></a>SQL Server
+
+```json
 { 
   "version": "0.1", 
   "connections": [ 
@@ -383,10 +402,10 @@ Die URL muss auf die SharePoint-Website selbst und nicht auf eine Liste innerhal
   ] 
 } 
 ```
- 
 
-**Textdatei**
-```
+#### <a name="text-file"></a>Textdatei
+
+```json
 { 
   "version": "0.1", 
   "connections": [ 
@@ -401,10 +420,10 @@ Die URL muss auf die SharePoint-Website selbst und nicht auf eine Liste innerhal
   ] 
 } 
 ```
- 
 
-**Web**
-```
+#### <a name="web"></a>Web
+
+```json
 { 
   "version": "0.1", 
   "connections": [ 
@@ -419,10 +438,10 @@ Die URL muss auf die SharePoint-Website selbst und nicht auf eine Liste innerhal
   ] 
 } 
 ```
- 
 
-**Dataflow**
-```
+#### <a name="dataflow"></a>Dataflow
+
+```json
 {
   "version": "0.1",
   "connections": [
@@ -440,12 +459,12 @@ Die URL muss auf die SharePoint-Website selbst und nicht auf eine Liste innerhal
 }
 ```
 
-
 ## <a name="next-steps"></a>Nächste Schritte
-Mit Power BI Desktop können Sie viele Aufgaben ausführen. Weitere Informationen zu den Funktionen und Möglichkeiten finden Sie in den folgenden Ressourcen:
+
+Mit Power BI Desktop können Sie vielfältige Aufgaben ausführen. Weitere Informationen zu den Funktionen und Möglichkeiten finden Sie in den folgenden Ressourcen:
 
 * [Was ist Power BI Desktop?](desktop-what-is-desktop.md)
 * [Übersicht zu Abfragen mit Power BI Desktop](desktop-query-overview.md)
 * [Datentypen in Power BI Desktop](desktop-data-types.md)
 * [Strukturieren und Kombinieren von Daten mit Power BI Desktop](desktop-shape-and-combine-data.md)
-* [Allgemeine Abfrageaufgaben in Power BI Desktop](desktop-common-query-tasks.md)    
+* [Allgemeine Abfrageaufgaben in Power BI Desktop](desktop-common-query-tasks.md)

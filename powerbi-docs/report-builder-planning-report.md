@@ -1,6 +1,6 @@
 ---
 title: Planen von Berichten im Berichts-Generator von Power BI
-description: Mithilfe des paginierten Berichts-Generators von Power BI können Sie viele Arten paginierter Berichte erstellen. Die Grundlage für einen hilfreichen und einfach verständlichen Bericht ist seine vorherige Planung.
+description: Mit dem Power BI Report Builder können Sie viele Arten von paginierten Berichten erstellen. Die Grundlage für einen hilfreichen und einfach verständlichen Bericht ist seine vorherige Planung.
 ms.date: 07/25/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.assetid: 79113505-1ce8-4f8c-9260-d861838f7813
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 33cdb53ab411e0d2f4686f7cc9a41bb3f0fe4cb6
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 30ab632d11befd34ff9a234e441b345c696fb54d
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68623872"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953814"
 ---
 # <a name="planning-a-report-in-power-bi-report-builder"></a>Planen von Berichten im Berichts-Generator von Power BI
 
-Mithilfe des paginierten Berichts-Generators von Power BI können Sie viele Arten paginierter Berichte erstellen. Sie können beispielsweise Berichte erstellen, in denen eine Zusammenfassung von oder detaillierte Informationen zu Umsatzdaten, Marketing- und Umsatztrends, Funktionsberichte oder Dashboards angezeigt werden. Sie können auch Berichte erstellen, die Text im Rich Text Format (RTF) nutzen, z. B. für Verkaufsaufträge, Produktkataloge oder Serienbriefe. Alle diese Berichte werden mithilfe verschiedener Kombinationen derselben grundlegenden Bausteine im Berichts-Generator erstellt. Die Grundlage für einen hilfreichen und einfach verständlichen Bericht ist seine vorherige Planung. Diese Dinge sollten Sie berücksichtigen, bevor Sie loslegen:  
+Mit dem Power BI Report Builder können Sie viele Arten von paginierten Berichten erstellen. Sie können beispielsweise Berichte erstellen, in denen eine Zusammenfassung von oder detaillierte Informationen zu Umsatzdaten, Marketing- und Umsatztrends, Funktionsberichte oder Dashboards angezeigt werden. Sie können auch Berichte erstellen, die Text im Rich Text Format (RTF) nutzen, z. B. für Verkaufsaufträge, Produktkataloge oder Serienbriefe. Alle diese Berichte werden mithilfe verschiedener Kombinationen derselben grundlegenden Bausteine im Berichts-Generator erstellt. Die Grundlage für einen hilfreichen und einfach verständlichen Bericht ist seine vorherige Planung. Diese Dinge sollten Sie berücksichtigen, bevor Sie loslegen:  
   
 ## <a name="in-what-format-do-you-want-the-report-to-appear"></a>In welchem Format soll der Bericht angezeigt werden?
   

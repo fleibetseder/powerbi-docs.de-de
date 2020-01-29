@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: ba911361ad2837a10f28358cbd1510effc1dd7eb
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.openlocfilehash: b2a05f3112a9272d5e41cff20729c445c7a0ae39
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75837644"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76038547"
 ---
 # <a name="refresh-a-dataset-stored-on-onedrive-or-sharepoint-online"></a>Aktualisieren eines auf OneDrive oder in SharePoint Online gespeicherten Datasets
 Das Importieren von Dateien aus OneDrive oder SharePoint Online in den Power BI-Dienst ist eine hervorragende Möglichkeit, um sicherzustellen, dass Ihre Arbeit in Power BI Desktop mit dem Power BI-Dienst synchronisiert wird.
@@ -37,7 +37,7 @@ Wenn Sie das Dataset aktualisieren, stellt Power BI keine Verbindung mit der Dat
 Power BI unterstützt **Jetzt Aktualisieren** und **Aktualisierung planen** für Datasets, die aus Power BI Desktop-Dateien erstellt wurden, die aus einem lokalen Laufwerk importiert wurden, wo Sie **Daten abrufen** oder den **Abfrage-Editor** verwenden, um eine Verbindung mit den Daten herzustellen und sie aus den folgenden Datenquellen zu laden.
 
 > [!NOTE]
-> Importierte Dateien auf OneDrive werden unterstützt, aber live verbundene Datasets in OneDrive werden nicht als Aktualisierungsszenario von OneDrive unterstützt.
+> Die OneDrive-Aktualisierung für Datasets von Liveverbindungen wird unterstützt. Das Ändern des Datasets für die Liveverbindung von einem Dataset in ein anderes Dataset in einem bereits veröffentlichten Bericht wird im OneDrive-Aktualisierungsszenario jedoch nicht unterstützt.
 
 ### <a name="power-bi-gateway---personal"></a>Power BI Gateway – Personal
 * Alle Onlinedatenquellen, die unter **Daten abrufen** und im **Abfrage-Editor** von Power BI Desktop angezeigt werden.

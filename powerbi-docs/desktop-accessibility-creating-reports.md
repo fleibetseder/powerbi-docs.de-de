@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 50a5705f5e236dc326f4c2b33716e55f6a9f7ce5
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 2b43727799316ade5ccdb868077360da0b315c56
+ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761977"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925689"
 ---
 # <a name="design-power-bi-reports-for-accessibility"></a>Entwerfen von Power BI-Berichten für die Barrierefreiheit
 Sie können überzeugende Berichte entwerfen und erstellen und gleichzeitig Barrierefreiheit gewährleisten. Immer wenn Sie einen Bericht für eine beliebige Zielgruppe erstellen, sollten Sie den Bericht so erstellen, dass er von so vielen Personen wie möglich genutzt werden kann, ohne dass er für ein besonderes Design angepasst werden muss.
@@ -22,6 +22,8 @@ Sie können überzeugende Berichte entwerfen und erstellen und gleichzeitig Barr
 ![Windows-Einstellungen für hohen Kontrast](media/desktop-accessibility/accessibility-05.png)
 
 Dieser Artikel beschreibt die Funktionen und Tools für die Erstellung barrierefreier Berichte in Power BI.
+
+Bei Verwendung von Power BI mit einer Sprachausgabe empfiehlt es sich im Allgemeinen, den Überprüfungs- oder Durchsuchungsmodus zu deaktivieren.
 
 Um das Erstellen von Berichten mit Sprachausgabe zu verbessern, ist jetzt ein Kontextmenü verfügbar. Das Menü ermöglicht das Verschieben von Feldern im Bereich in der Liste **Felder**. Das Menü ermöglicht auch das Verschieben des Felds in andere Bereiche, z.B. **Legende** oder **Wert** oder andere.
 

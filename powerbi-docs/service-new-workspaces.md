@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/27/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 749d8d5b62df87b0e6b29d524e90c694a0e38efe
-ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
+ms.openlocfilehash: 6337c4c5e3098d56e869b8ce71117da2413802e6
+ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75622438"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925670"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organisieren der Arbeit in den neuen Power BI-Arbeitsbereichen
 
@@ -124,6 +124,10 @@ Die folgenden Aktivitäten werden von Power BI für Arbeitsbereiche der neuen Be
 | Updated Power BI folder access (Ordnerzugriff für Power BI aktualisiert)| UpdateFolderAccess |
 
 Informieren Sie sich ausführlicher über [Von Power BI überwachte Aktivitäten](service-admin-auditing.md).
+
+## <a name="guest-users"></a>Gastbenutzer
+
+Standardmäßig können [Azure AD-B2B-Gastbenutzer](service-admin-azure-ad-b2b.md) nicht auf Arbeitsbereiche zugreifen. Power BI-Administratoren können es [externen Gastbenutzern erlauben, Inhalte in der Organisation zu bearbeiten und zu verwalten](service-admin-azure-ad-b2b.md#guest-users-who-can-edit-and-manage-content). Die entsprechenden Gastbenutzer können auf die Arbeitsbereiche zugreifen, für die sie über eine Berechtigung verfügen.
 
 ## <a name="limitations-and-considerations"></a>Einschränkungen und Überlegungen
 

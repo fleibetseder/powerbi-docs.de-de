@@ -1,6 +1,6 @@
 ---
 title: Ausdrücke im Power BI-Berichts-Generator
-description: Ausdrücke werden in paginierten Berichten des Power BI-Generators für paginierte Berichte häufig verwendet, um Daten abzurufen, zu berechnen, anzuzeigen, zu gruppieren, zu sortieren, zu filtern, zu parametrisieren oder zu formatieren.
+description: Ausdrücke werden in paginierten Berichten im Power BI Report Builder häufig verwendet, um Daten abzurufen, zu berechnen, anzuzeigen, zu gruppieren, zu sortieren, zu filtern, zu parametrisieren oder zu formatieren.
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: 76d3ac86-650c-46fe-8086-8b3edcea3882
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: d3a72fd967eeb24cfa1093d16c4434447d5fc89d
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 96c62fec55f87a31970b624a79314656ced0c159
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840623"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953861"
 ---
 # <a name="expressions-in-power-bi-report-builder"></a>Ausdrücke im Power BI-Berichts-Generator
-  Ausdrücke werden in paginierten Berichten des Power BI-Generators für paginierte Berichte häufig verwendet, um Daten abzurufen, zu berechnen, anzuzeigen, zu gruppieren, zu sortieren, zu filtern, zu parametrisieren oder zu formatieren. 
+  Ausdrücke werden in paginierten Berichten im Power BI Report Builder häufig verwendet, um Daten abzurufen, zu berechnen, anzuzeigen, zu gruppieren, zu sortieren, zu filtern, zu parametrisieren oder zu formatieren. 
   
   Viele Eigenschaften von Berichtselementen können auf einen Ausdruck festgelegt werden. Mit Ausdrücken können Sie den Inhalt, das Design und die Interaktivität Ihres Berichts bestimmen. Ausdrücke werden in Microsoft Visual Basic geschrieben, in der Berichtsdefinition gespeichert und vom Berichtsprozessor ausgewertet, wenn Sie den Bericht ausführen.  
   
@@ -68,7 +68,7 @@ Einfache Ausdrücke verwenden Symbole, um anzugeben, ob der Verweis auf ein Feld
   
 |Referenzen|Beschreibung|Beispiel|  
 |----------------|-----------------|-------------|  
-|Konstanten (Constants)|Beschreibt die Konstanten, auf die Sie für Eigenschaften, die konstante Werte (wie z. B. Schriftfarben) erfordern, interaktiv zugreifen können.|`="Blue"`|  
+|Konstanten|Beschreibt die Konstanten, auf die Sie für Eigenschaften, die konstante Werte (wie z. B. Schriftfarben) erfordern, interaktiv zugreifen können.|`="Blue"`|  
 |Operatoren|Beschreibt die Operatoren, die Sie zum Kombinieren von Verweisen in einem Ausdruck verwenden können. Der Operator **&** wird z. B. zum Verketten von Zeichenfolgen verwendet.|`="The report ran at: " & Globals!ExecutionTime & "."`|  
 |Integrierte Sammlungen|Beschreibt die integrierten Sammlungen, die Sie in einem Ausdruck verwenden können, z. B. `Fields`, `Parameters` und `Variables`.|`=Fields!Sales.Value`<br /><br /> `=Parameters!Store.Value`<br /><br /> `=Variables!MyCalculation.Value`|  
 |Integrierte Berichts- und Aggregatfunktionen|Beschreibt die integrierten Funktionen, auf die Sie von einem Ausdruck aus zugreifen können, z. B. `Sum` oder `Previous`.|`=Previous(Sum(Fields!Sales.Value))`|  

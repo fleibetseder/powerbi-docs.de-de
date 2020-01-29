@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: bdb5b797146dae0bd8c6a70163a245f44430da8c
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 2db2b4f02dac1ebcd9d24a8217a181efa9ce0779
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74791688"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76039029"
 ---
 # <a name="data-refresh-in-power-bi"></a>Aktualisieren von Daten in Power BI
 
@@ -317,10 +317,9 @@ Das Warnungssymbol dient dazu, aktuelle Probleme mit dem Dataset anzuzeigen, abe
 
 ## <a name="automatic-page-refresh"></a>Automatische Seitenaktualisierung
 
-Die automatische Seitenaktualisierung funktioniert auf Berichtsseitenebene und ermöglicht Berichtsautoren, ein Aktualisierungsintervall für Visuals auf einer Seite festzulegen, das nur aktiv ist, wenn die Seite genutzt wird. Die automatische Seitenaktualisierung ist nur für DirectQuery-Datenquellen verfügbar. Das minimale Aktualisierungsintervall hängt davon ab, in welchem Typ von Arbeitsbereich der Bericht veröffentlicht wird, sowie von den Administratoreinstellungen für die Kapazität für Premium-Arbeitsbereiche.
+Die automatische Seitenaktualisierung funktioniert auf Berichtsseitenebene und ermöglicht Berichtsautoren, ein Aktualisierungsintervall für Visuals auf einer Seite festzulegen, das nur aktiv ist, wenn die Seite genutzt wird. Die automatische Seitenaktualisierung ist nur für DirectQuery-Datenquellen verfügbar. Das mindestens erforderliche Aktualisierungsintervall hängt davon ab, in welchem Typ von Arbeitsbereich der Bericht veröffentlicht wird und welche Administratoreinstellungen für Premium-Arbeitsbereiche und [eingebettete Arbeitsbereiche](developer/embedding.md) gelten.
 
 Weitere Informationen zur automatischen Seitenaktualisierung finden Sie im Artikel [Automatische Seitenaktualisierung](desktop-automatic-page-refresh.md).
-
 
 ## <a name="best-practices"></a>Bewährte Methoden
 

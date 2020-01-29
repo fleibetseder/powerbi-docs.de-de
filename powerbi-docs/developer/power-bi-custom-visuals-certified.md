@@ -1,6 +1,6 @@
 ---
 title: Zertifizierte Power BI-Visuals
-description: Anforderungen und Vorgehensweise für das Einreichen eines benutzerdefinierten Visuals zur Zertifizierung Sowie eine Liste der zertifizierten Power BI-Visuals
+description: Anforderungen und Vorgehensweise für das Einreichen eines benutzerdefinierten Visuals zur Zertifizierung sowie eine Liste der zertifizierten Power BI-Visuals.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -8,73 +8,94 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 12/02/2019
-ms.openlocfilehash: c39b96122016746905ea09c0983adf50356f0c77
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 01/12/2019
+ms.openlocfilehash: 04954397a16fecddabca63067c903dee742873ef
+ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75221963"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925575"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>So lassen Sie sich ein Power BI-Visual zertifizieren
 
-Zertifizierte Power Bi-Visuals sind Visuals im *Marketplace*, die bestimmte *festgelegte Codeanforderungen* erfüllen, die vom *Microsoft Power BI-Team* getestet und genehmigt wurden. Mit den Tests wird sichergestellt, dass ein Visual nicht auf externe Dienste oder Ressourcen zugreift.
+Zertifizierte Power BI-Visuals sind Power BI-Visuals in [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?page=1&product=power-bi-visuals), die den [Codeanforderungen](#certification-requirements) des Microsoft Power BI-Teams entsprechen. Diese Visuals wurden getestet, um sicherzustellen, dass sie nicht auf externe Dienste oder Ressourcen zugreifen und dass sie sicheren Codierungsmustern und -richtlinien folgen.
 
-Zertifizierte Power BI-Visuals und [Power BI-Standardvisuals](power-bi-custom-visuals.md) werden auf die gleiche Weise verwendet. Sie können zu [Power BI Desktop](../desktop-what-is-desktop.md) und dem [Power BI-Dienst](../power-bi-service-overview.md) hinzugefügt und mit [mobilen Power BI-Apps](../consumer/mobile/mobile-apps-for-mobile-devices.md) sowie [Power BI Embedded](embedding.md) angezeigt werden.
+Wenn ein Power BI-Visual zertifiziert wurde, bietet es mehr Features. Beispielsweise können Sie ein Visual [nach PowerPoint exportieren](../consumer/end-user-powerpoint.md) oder in empfangenen E-Mails anzeigen, wenn ein Benutzer [Berichtsseiten abonniert](../consumer/end-user-subscribe.md).
 
-Der Zertifizierungsprozess ist optional. Entwickler entscheiden selbst, ob sie ihr Power BI-Visual im Marketplace zertifizieren lassen möchten. Wenn ein Power BI-Visual zertifiziert wurde, bietet es mehr Features. Beispielsweise können Sie ein Visual [nach PowerPoint exportieren](../consumer/end-user-powerpoint.md) oder in empfangenen E-Mails anzeigen, wenn ein Benutzer [Berichtsseiten abonniert](../consumer/end-user-subscribe.md).
-
-Nicht zertifizierte Power BI-Visuals sind nicht zwangsläufig unsicher. Einige Visuals sind nicht zertifiziert, da sie mindestens einem Punkt der [Zertifizierungsanforderungen](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements) nicht entsprechen. Beispiele hierfür sind die Herstellung einer Verbindung zu einem externen Dienst wie Kartenvisuals oder Visuals, die kommerzielle Bibliotheken verwenden.
-
-Wenn Sie Webentwickler sind und selbst Power BI-Visuals erstellen und zu [Microsoft AppSource](https://appsource.microsoft.com) hinzufügen möchten, beginnen Sie mit dem Tutorial  [Entwickeln eines Power BI-Visuals](visuals/custom-visual-develop-tutorial.md).
+Der Zertifizierungsprozess ist optional. Power BI-Visuals ohne Zertifizierung sind nicht notwendigerweise unsicher. Einige Power BI-Visuals sind nicht zertifiziert, weil sie mindestens eine [Zertifizierungsanforderung](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements) nicht erfüllen. Beispiele: Ein Power BI-Kartenvisual, das eine Verbindung mit einem externen Dienst herstellt, oder ein Power BI-Visual, das kommerzielle Bibliotheken verwendet.
 
 > [!NOTE]
-> **Microsoft** ist *nicht* der Autor von Power BI-Visuals von Drittanbietern. Wir raten Kunden, direkt mit dem Autor eines Drittanbieter-Power BI-Visuals Kontakt aufzunehmen, um die Funktionalität des Visuals zu verifizieren.
-
-> [!IMPORTANT]
-> Microsoft kann ein Power BI-Visual nach eigenem Ermessen aus der [Liste zertifizierter Power BI-Visuals](#certified-power-bi-visuals) entfernen.
+> Microsoft ist nicht der Autor von Power BI-Visuals von Drittanbietern. Um die Funktionalität eines Drittanbietervisuals zu verifizieren, wenden Sie sich direkt an den Autor.
 
 ## <a name="certification-requirements"></a>Zertifizierungsanforderungen
 
-Um Ihr Power BI-Visual [zertifizieren](#get-a-power-bi-visual-certified) zu lassen, stellen Sie sicher, dass das Visual die in diesem Abschnitt aufgeführten Anforderungen erfüllt. 
+Damit Ihr Power BI-Visual [zertifiziert](#get-a-power-bi-visual-certified) werden kann, muss es die in diesem Abschnitt aufgeführten Anforderungen erfüllen. 
 
-> [!TIP]
-> Wir empfehlen die Nutzung von EsLint mit dem standardmäßigen Sicherheitsregelsatz, um Ihren Code vor der Übermittlung vorab zu überprüfen.
+### <a name="general-requirements"></a>Allgemeine Anforderungen
 
-* Im Microsoft-Verkäuferdashboard oder in Partner Center genehmigt: Sie sollten Ihr Power BI-Visual zu unserem [Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) hinzufügen.
-* Das Power BI-Visual wurde mit der *API-Version 2.5* oder höher geschrieben.
-* Das Coderepository kann durch das Power BI-Team überprüft werden. Beispielsweise kann dem Team über GitHub ein lesbares Format des Quellcodes (JavaScript oder TypeScript) zur Verfügung gestellt werden.
+Ihre Power BI-Visual muss im Verkäuferdashboard oder in Partner Center genehmigt werden. Es empfiehlt sich, das Power BI-Visual bereits vorher in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) bereitzustellen. Informationen zum Veröffentlichen eines Power BI-Visuals in AppSource finden Sie unter [Veröffentlichen von Power BI-Visuals in Partner Center](office-store.md).
 
-    >[!NOTE]
-    > Sie müssen Ihren Code nicht öffentlich in GitHub freigeben.
+Bevor Sie Ihre Power BI-Visual zur Zertifizierung einreichen, überprüfen Sie, ob es den [Richtlinien für Power BI-Visuals](./guidelines-powerbi-visuals.md) entspricht.
 
-* Coderepository-Anforderungen:
-  * Folgende Dateien müssen enthalten sein:
-    * .gitignore
-    * capabilities.json
-    * pbiviz.json
-    * package.json
-    * package-lock.json
-    * tsconfig.json
-  * Der Ordner *node_modules* darf nicht enthalten sein (fügen Sie *node_modules* zur GITIGNORE-Datei hinzu).
-  * Der Befehl *npm install* darf keine Fehler zurückgeben.
-  * Der Befehl *npm audit* darf keine Warnungen mit hohem oder mittlerem Schweregrad zurückgeben.
-  * Der Befehl *pbiviz package* darf keine Fehler zurückgeben.
-  * [TSlint von Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) muss ohne überschriebene Konfigurationen enthalten sein. Dieser Befehl darf keine lint-Fehler zurückgeben.
-   * Das kompilierte Paket des Power BI-Visuals muss mit dem übermittelten Paket übereinstimmen.
-* Quellcode-Anforderungen:
-   * Das Power BI-Visual muss die [API zum Rendern von Ereignissen](./visuals/event-service.md) unterstützen.
-   * Stellen Sie sicher, dass kein beliebiger/dynamischer Code ausgeführt wird (bad: eval(), unsafe to use of settimeout(), requestAnimationFrame(), setinterval(eine Funktion mit Benutzereingaben), Ausführen von Benutzereingaben/-daten).
-   * Stellen Sie sicher, dass DOM sicher bearbeitet wird (bad: innerHTML, D3.html(<Benutzer-/Dateneingabe>), Bereinigung für Benutzereingaben/Daten vor dem Hinzufügen zum DOM verwenden).
-   * Stellen Sie sicher, dass die Browserkonsole keinerlei JavaScript-Fehler oder -Ausnahmen für Eingabedaten ausgibt. Benutzer verwenden Ihr Power BI-Visual möglicherweise mit einem anderen, unerwarteten Datenbereich, für den beim Visual keine Fehler auftreten dürfen. Sie können diesen [Beispielbericht](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) als Testdataset verwenden.
+Stellen Sie beim Einreichen des Power BI-Visuals sicher, dass das kompilierte Paket exakt mit dem eingereichten Paket übereinstimmt.
 
-* Wenn Eigenschaften in *capabilities.json* geändert werden, stellen Sie sicher, dass diese keine zu Störungen bei vorhandenen Benutzerberichten verursachen.
+### <a name="code-repository-requirements"></a>Anforderungen in Bezug auf das Coderepository
 
-* Achten Sie darauf, dass Ihr Power BI-Visual den [Richtlinien für Power BI-Visuals](./guidelines-powerbi-visuals.md) entspricht.
-    
-* Ihr Code darf nur öffentlich überprüfbare OSS-Komponenten wie öffentliche JavaScript- oder TypeScript-Bibliotheken verwenden. Der Quellcode muss zur Überprüfung verfügbar sein und darf keine bekannten Sicherheitsrisiken aufweisen. Wir können überprüfen, ob ein benutzerdefiniertes Visual eine kommerzielle Komponente verwendet.
+Sie müssen Ihren Code zwar nicht öffentlich auf GitHub freigeben, aber das Coderepository muss dem Power BI-Team zur Überprüfung zur Verfügung stehen. Die beste Möglichkeit hierfür besteht darin, den Quellcode (JavaScript oder TypeScript) auf GitHub bereitzustellen.
 
-* Das Power BI-Visual darf nicht auf externe Dienste oder Ressourcen zugreifen. Beispielsweise dürfen aus Power BI keine HTTP/S- oder WebSocket-Anforderungen an Dienste gesendet werden. 
+Das Repository darf nur Code für ein einziges Power BI-Visual enthalten. Es darf weder Code für mehrere Power BI-Visuals noch Code enthalten, der in keinem Zusammenhang mit dem Visual steht.
+
+Das Repository muss einen Branch namens **certification** enthalten. Der Quellcode in diesem Branch muss mit dem eingereichten Paket übereinstimmen. Dieser Code kann erst während des nächsten Einreichungsprozesses aktualisiert werden, wenn Sie das Power BI-Visual erneut einreichen.
+
+Wenn Ihr Power BI-Visual private npm-Pakete oder git-Untermodule verwendet, müssen Sie Zugriff auf die zusätzlichen Repositorys bereitstellen, die diesen Code enthalten.
+
+### <a name="file-requirements"></a>Anforderungen in Bezug auf Dateien
+
+Verwenden Sie die neueste Version der API, um Ihr Power BI-Visual zu schreiben.
+
+Das Repository muss die folgenden Dateien enthalten:
+* **.gitignore**: Fügen Sie `node_modules` zu dieser Datei hinzu. Der Code darf den Ordner *node_modules* nicht enthalten.
+* **capabilities.json**: Wenn Sie eine neuere Version Ihres Power BI-Visuals mit Änderungen an den Eigenschaften in dieser Datei einreichen, stellen Sie sicher, dass diese nicht zu Fehlern bei Berichten für vorhandene Benutzer führen.
+* **pbiviz.json**
+* **package.json**
+* **package-lock.json**
+* **tsconfig.json**
+
+### <a name="command-requirements"></a>Anforderungen in Bezug auf Befehle
+
+Stellen Sie sicher, dass die folgenden Befehle keine Fehler zurückgeben.
+
+* `npm install`
+* `pbiviz package`
+* `npm audit` darf keine Warnungen mit hohem oder mittlerem Schweregrad zurückgeben.
+* [TSLint von Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) darf keine überschriebene Konfigurationen enthalten. Dieser Befehl darf keine lint-Fehler zurückgeben.
+
+### <a name="compiling-requirements"></a>Anforderungen in Bezug auf die Kompilierung
+
+Verwenden Sie die neueste Version von [powerbi-visuals-tools](https://www.npmjs.com/package/powerbi-visuals-tools), um Ihr Power BI-Visual zu schreiben.
+
+Sie müssen das Power BI-Visual mit `pbiviz package` kompilieren. Wenn Sie eigene Buildskripts verwenden, geben Sie einen benutzerdefinierten `npm run package`-Buildbefehl an.
+
+
+
+### <a name="source-code-requirements"></a>Anforderungen in Bezug auf den Quellcode
+
+Stellen Sie sicher, dass alle Richtlinien in der Liste der [zusätzlichen Zertifizierungsanforderungen für Power BI-Visuals](https://docs.microsoft.com/legal/marketplace/certification-policies#1200-power-bi-visuals-additional-certification) eingehalten werden. Wenn Ihre Einreichung nicht mit diesen Richtlinien übereinstimmt, werden Ihnen in der Ablehnungs-E-Mail von Partner Center die unter diesem Link aufgeführten Richtliniennummern mitgeteilt.
+
+Berücksichtigen Sie die im Folgenden aufgeführten Codeanforderungen, um sicherzustellen, dass Ihr Code den Power BI-Zertifizierungsrichtlinien entspricht.  
+
+**Erforderlich**
+* Verwenden Sie nur öffentlich überprüfbare OSS-Komponenten wie öffentliche JavaScript- oder TypeScript-Bibliotheken.
+* Der Code muss die [API zum Rendern von Ereignissen](./visuals/event-service.md) unterstützen.
+* Stellen Sie sicher, dass DOM auf sichere Weise geändert wird. Bereinigen Sie Benutzereingaben oder Benutzerdaten, bevor Sie den Code zu DOM hinzufügen.
+* Verwenden Sie den [Beispielbericht](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) als Testdataset.
+
+**Nicht zulässig**
+* Zugriff auf externe Dienste oder Ressourcen. Beispielsweise dürfen aus Power BI keine HTTP/S- oder WebSocket-Anforderungen an Dienste gesendet werden.
+* Verwenden von `innerHTML` oder `D3.html(user data or user input)`.
+* JavaScript-Fehler oder -Ausnahmen in der Browserkonsole für Eingabedaten.
+* Zufälliger oder dynamischer Code wie `eval()`, unsichere Verwendung von `settimeout()`, `requestAnimationFrame()`, `setinterval(user input function)` sowie Benutzereingaben oder Benutzerdaten.
+* Minimierte JavaScript-Dateien oder -Projekte.
 
 ## <a name="submitting-a-power-bi-visual-for-certification"></a>Übermitteln eines Power BI-Visual zur Zertifizierung
 
@@ -212,6 +233,7 @@ Weitere Informationen zu Visuals finden Sie in den [häufig gestellten Fragen zu
 * [Wiedergabeliste benutzerdefinierter visueller Elemente von Microsoft auf YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
 * [Visualisierungen in Power BI](../visuals/power-bi-report-visualizations.md)  
 * [Benutzerdefinierte Visualisierungen in Power BI](power-bi-custom-visuals.md)  
-* [Veröffentlichen von Power BI-Visuals in Microsoft AppSource](../developer/office-store.md)  
+* [Veröffentlichen von Power BI-Visuals in Microsoft AppSource](../developer/office-store.md) 
+* Wenn Sie Webentwickler sind und selbst Power BI-Visuals erstellen und zu [Microsoft AppSource](https://appsource.microsoft.com) hinzufügen möchten, beginnen Sie mit dem Tutorial  [Entwickeln eines Power BI-Visuals](visuals/custom-visual-develop-tutorial.md). 
 
 Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

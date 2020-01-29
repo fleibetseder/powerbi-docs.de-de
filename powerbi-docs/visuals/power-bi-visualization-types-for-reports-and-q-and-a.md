@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/31/2019
+ms.date: 01/14/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 80fc4f4afe29806077d1bf64a59d8761d7ab1c1d
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 8737a0e9b2dd8ba17d28962ed51e24ec0c5cefc4
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099936"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76040468"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualisierungstypen in Power BI
 ## <a name="power-bi-visualizations"></a>Power BI-Visualisierungen
@@ -145,6 +145,13 @@ Weitere Informationen finden Sie unter [Matrixvisuals in Power BI](desktop-matri
 
 >[!TIP]
 >Kreisdiagramme zeigen die Beziehung von Teilen zum Ganzen. 
+
+### <a name="power-apps-visual"></a>Power Apps-Visual
+![Power Apps-Visual](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-powerapps-visual.png)
+
+Entwickler von Berichten können eine Power App erstellen und als Visual in einen Power BI-Bericht einbetten. Benutzer können mit diesem Visual im Power BI-Bericht interagieren. 
+
+Weitere Informationen finden Sie unter [Hinzufügen eines Power Apps-Visuals zu Ihrem Bericht](power-bi-visualization-powerapp.md).
 
 ### <a name="qa-visual"></a>Q&A-Visuals
 ![Visuals für Fragen und Antworten](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-q-and-a.png)

@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/25/2019
 ms.author: v-pemyer
-ms.openlocfilehash: becde542f68b2f9fb1412a904793f46a8f154856
-ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
+ms.openlocfilehash: 6ce82516413fe43cfbc1336e2f6f51003277fb4a
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75308247"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76161292"
 ---
 # <a name="many-to-many-relationship-guidance"></a>Leitfaden zu m:n-Beziehungen
 
@@ -120,7 +120,7 @@ Wenn zwischen Dimensionstabellen eine m:n-Beziehung besteht, können Sie der fol
 - Fügen Sie eine Brückentabelle hinzu, um die verbundenen Entitäten zu speichern.
 - Erstellen Sie zwischen den drei Tabellen 1:n-Beziehungen.
 - Konfigurieren Sie **eine** bidirektionale Beziehung, damit Filter auf Faktentabellen weitergegeben werden können.
-- Wenn ID-Werte zwingend angegeben werden sollen, legen Sie die Eigenschaft **Lässt NULL-Werte zu** der ID-Spalten auf FALSE fest. Das Aktualisieren der Daten schlägt dann fehl, wenn Bezüge auf fehlende Werte festgestellt werden.
+- Wenn ID-Werte zwingend angegeben werden sollen, legen Sie die Eigenschaft **Is Nullable** der ID-Spalten auf FALSE fest. Die Datenaktualisierung kann dann nicht durchgeführt werden, wenn Bezüge auf fehlende Werte festgestellt werden.
 - Blenden Sie die Brückentabelle aus, wenn sie keine Spalten oder Measures enthält, die für die Berichterstellung erforderlich sind.
 - Blenden Sie alle ID-Spalten aus, die sich nicht für die Berichterstellung eignen, z. B. IDs, die Ersatzschlüssel sind.
 - Wenn eine ID-Spalte nicht ausgeblendet werden sollte, achten Sie darauf, dass sie sich auf der „1“-Seite der Beziehung befindet. Die „n“-seitige Spalte sollten Sie immer ausblenden. So funktionieren Filter am besten.

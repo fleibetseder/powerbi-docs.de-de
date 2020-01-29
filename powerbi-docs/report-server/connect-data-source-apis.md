@@ -8,16 +8,20 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: maggies
-ms.openlocfilehash: 77716514ffbb6dc8d3f128ada85276b46bf7af05
-ms.sourcegitcommit: 17f45a81b0dcbf9e3f1fb2a551584170baecd320
+ms.openlocfilehash: 5cdf29c71ef3e5f8dc02799945cf76ccc518dabe
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72923663"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953746"
 ---
 # <a name="change-data-source-connection-strings-in-power-bi-reports-with-powershell---power-bi-report-server"></a>Ändern von Datenquellen-Verbindungszeichenfolgen in Power BI-Berichten mithilfe von PowerShell – Power BI-Berichtsserver.
 
+
 Sie können Datenquellen-Verbindungszeichenfolgen in Power BI-Berichten auf Power BI-Berichtsservern mithilfe von APIs in PowerShell verwenden. 
+
+> [!NOTE]
+> Derzeit kann diese Funktion nur für DirectQuery verwendet werden. Unterstützung für den Import und die Datenaktualisierung ist geplant.
 
 1. Installieren Sie die PowerShell-Cmdlets des Power BI-Berichtsservers. Die Cmdlets und Installationsanweisungen finden Sie unter [https://github.com/Microsoft/ReportingServicesTools](https://github.com/Microsoft/ReportingServicesTools). 
 
@@ -67,4 +71,3 @@ Sie können Datenquellen-Verbindungszeichenfolgen in Power BI-Berichten auf Powe
 [Datenquellen für paginierte Berichte auf dem Power BI-Berichtsserver](connect-data-sources.md) 
 
 Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
-

@@ -9,19 +9,19 @@ ms.topic: conceptual
 ms.date: 09/26/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7f1d86dd3da6665eb985db17ac3641768ff56947
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: d4be5aa246b6e58b9a6234f30754e16a39341abe
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73872072"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160579"
 ---
 # <a name="manage-your-workspace-in-power-bi-and-office-365"></a>Verwalten von Arbeitsbereichen in Power BI und Office 365
 
 Als Ersteller oder Administrator eines [Arbeitsbereichs in Power BI](service-create-distribute-apps.md) oder in Office 365 verwalten Sie einige Aspekte des Arbeitsbereichs in Power BI. Andere Aspekte werden in Office 365 verwaltet.
 
 > [!NOTE]
-> Die Funktionsweise der neuen Arbeitsbereiche ändert die Beziehung zwischen Power BI-Arbeitsbereichen und Office 365-Gruppen. Sie erstellen nicht jedes Mal automatisch eine Office 365-Gruppe, wenn Sie einen dieser neuen Arbeitsbereiche erstellen. Erfahren Sie mehr über das [Erstellen der neuen Arbeitsbereiche](service-create-the-new-workspaces.md).
+> Die Funktionsweise der neuen Arbeitsbereiche ändert die Beziehung zwischen Power BI-Arbeitsbereichen und Office 365-Gruppen. Sie erstellen nicht jedes Mal automatisch eine Office 365-Gruppe, wenn Sie einen der neuen Arbeitsbereiche erstellen. Erfahren Sie mehr über das [Erstellen der neuen Arbeitsbereiche](service-create-the-new-workspaces.md).
 
 In **Power BI** können Sie die folgenden Aktionen ausführen:
 

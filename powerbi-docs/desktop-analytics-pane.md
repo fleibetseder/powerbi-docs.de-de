@@ -6,31 +6,34 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 01/10/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 25d80cd81eb06913eb24c17ef10db47fa4d2bea5
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 4ad843078e452502a94aa7d60b3304528fd25496
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761908"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76038760"
 ---
 # <a name="use-the-analytics-pane-in-power-bi-desktop"></a>Verwenden des Analysebereichs in Power BI Desktop
-Mit dem Bereich **Analyse** in **Power BI Desktop** können Sie dynamische *Bezugslinien* zu Visualisierungen hinzufügen und wichtige Trends und Erkenntnisse identifizieren. Der Bereich **Analyse** befindet sich in Power BI Desktop unter **Visualisierungen**.
 
-![](media/desktop-analytics-pane/analytics-pane_1.png)
+Mit dem Bereich **Analyse** in Power BI Desktop können Sie dynamische *Bezugslinien* zu Visuals hinzufügen und wichtige Trends und Erkenntnisse identifizieren. Der Bereich und das Symbol **Analyse** befinden sich in Power BI Desktop unter **Visualisierungen**.
+
+![Bereich „Analyse“, Visualisierungen, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_1.png)
 
 > [!NOTE]
 > Der Bereich **Analyse** wird nur angezeigt, wenn Sie im Power BI Desktop-Zeichenbereich ein Visual auswählen.
 
 ## <a name="search-within-the-analytics-pane"></a>Suche im Bereich „Analyse“
-Ab dem Release von **Power BI Desktop** vom Februar 2018 (Version 2.55.5010.201 oder höher) können Sie innerhalb des Bereichs **Analyse** suchen, bei dem es sich um einen Unterabschnitt des Bereichs **Visualisierungen** handelt. Wie in der folgenden Abbildung dargestellt wird ein Suchfeld angezeigt, wenn der Bereich **Analyse** ausgewählt ist.
 
-![](media/desktop-analytics-pane/analytics-pane_1b.png)
+Ab dem Power BI Desktop-Release vom Februar 2018 (Version 2.55.5010.201 oder höher) können Sie innerhalb des Bereichs **Analyse** Suchen durchführen. Der Bereich für die Analyse ist ein Unterabschnitt des Bereichs **Visualisierungen**. Das Suchfeld wird angezeigt, wenn Sie das Symbol **Analyse** auswählen.
 
-## <a name="using-the-analytics-pane"></a>Verwendung des Bereichs „Analyse“
-Mithilfe des Bereichs **Analyse** können Sie die folgenden Arten von dynamischen Bezugslinien erstellen (wobei nicht alle Linien für alle Visualisierungstypen verfügbar sind):
+![Suchfeld, Bereich „Analyse“, Visualisierungen, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_1b.png)
+
+## <a name="use-the-analytics-pane"></a>Verwenden des Bereichs „Analyse“
+
+Mithilfe des Bereichs **Analyse** können Sie die folgenden Arten von dynamischen Bezugslinien erstellen:
 
 * Bezugslinie für X-Achse
 * Bezugslinie für Y-Achse
@@ -39,82 +42,104 @@ Mithilfe des Bereichs **Analyse** können Sie die folgenden Arten von dynamische
 * Durchschnittslinie
 * Linie für Medianwert
 * Linie für Perzentil
+* Symmetrieschattierung
+
+> [!NOTE]
+> Nicht alle Linien sind für alle Visualtypen verfügbar.
 
 In den folgenden Abschnitten erfahren Sie, wie Sie den Bereich **Analyse** und die dynamischen Bezugslinien in Ihren Visualisierungen verwenden können.
 
 Um die für eine Visualisierung verfügbaren dynamischen Bezugslinien anzuzeigen, führen Sie die folgenden Schritte aus:
 
 1. Wählen Sie eine Visualisierung aus, oder erstellen Sie eine Visualisierung. Wählen Sie dann das Symbol **Analyse** im Bereich **Visualisierungen** aus.
-   
-   ![](media/desktop-analytics-pane/analytics-pane_2.png)
-2. Wählen Sie für die gewünschte Linie den Pfeil nach unten aus, um die entsprechenden Optionen zu erweitern. In diesem Fall entscheiden wir uns für die **Durchschnittslinie**.
-   
-   ![](media/desktop-analytics-pane/analytics-pane_3.png)
-3. Um eine neue Linie zu erstellen, wählen Sie **+ Hinzufügen** aus. Dann können Sie der Linie einen Namen geben, indem Sie auf das Textfeld doppelklicken und dann den Namen eingeben.
-   
-   Für jede Linie steht eine Reihe an Optionen zur Verfügung, z.B. *Farbe*, *Transparenz*, *Stil* und *Position* (relativ zu den Datenelementen der Visualisierung). Sie können auch festlegen, ob die Bezeichnung angezeigt werden soll. Vor allem können Sie bestimmen, auf welchem **Measure** des Visuals die Linie basieren soll. Klicken Sie dazu auf das Dropdownfeld **Measure**, das automatisch mit den Datenelementen des Visuals ausgefüllt wird. In diesem Fall entscheiden wir uns für *Wetter* als Measure, geben als Bezeichnung *Durchschnittliches Wetter* ein und passen einige weitere Optionen an (siehe unten).
-   
-   ![](media/desktop-analytics-pane/analytics-pane_4.png)
-4. Wenn die Datenbezeichnung angezeigt werden soll, aktivieren Sie diese Option mit dem Schieberegler **Datenbeschriftung**. Dadurch werden eine Reihe an weiteren Optionen für die Datenbeschriftung angezeigt, wie Sie der folgenden Abbildung entnehmen können.
-   
-   ![](media/desktop-analytics-pane/analytics-pane_5.png)
-5. Beachten Sie die Zahl, die neben dem Element **Durchschnittslinie** im Bereich **Analyse** angezeigt wird. Dieser Wert steht für die Anzahl der in Ihrem Visual verwendeten dynamischen Linien und verrät auch, von welchem Typ diese sind. Wenn wir eine **Linie für Maximalwert** für *Lebenshaltungskosten* hinzufügen, wird im Bereich **Analyse** angezeigt, dass nun auch eine dynamische Bezugslinie vom Typ **Linie für Maximalwert** in der Visualisierung verwendet wird.
-   
-   ![](media/desktop-analytics-pane/analytics-pane_6.png)
 
-Wenn Ihre Visualisierung keine dynamischen Bezugslinien verwenden kann (hier eine Visualisierung vom Typ **Karte**), sehen Sie das Folgende, wenn Sie den Bereich **Analyse** aufrufen.
+    ![Anzeigen der Analyse für ein Visual, Bereich „Visualisierungen“, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_2.png)
 
-![](media/desktop-analytics-pane/analytics-pane_7.png)
+2. Wählen Sie die zu erstellende Linie aus, um die zugehörigen Optionen zu erweitern. In diesem Fall entscheiden wir uns für die **Linie für Durchschnitt**.
 
-Sie können viele interessante Einblicke gewinnen, wenn Sie mithilfe des Bereichs **Analyse** dynamische Bezugslinien erstellen.
+    ![Linie für den Durchschnitt, Bereich „Analyse“, Visualisierungen, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_3.png)
 
-Wir arbeiten an der Umsetzung weiterer Features und Funktionen, u.a. daran, dynamische Bezugslinien für mehr Visualisierungen verfügbar zu machen. Es gibt also regelmäßig Neues zu entdecken.
+3. Um eine neue Linie zu erstellen, wählen Sie **+&nbsp;Hinzufügen** aus. Anschließend können Sie die Linie benennen. Doppelklicken Sie auf das Textfeld, und geben Sie Ihren Namen ein.
+
+    Jetzt stehen zahlreiche Optionen für Ihre Linie zur Verfügung. Sie können die **Farbe**, den Prozentsatz der **Transparenz**, **Linienart** und die **Position** (im Vergleich zu den Datenelementen des Visuals) angeben. Sie können außerdem entscheiden, ob Sie eine **Datenbeschriftung** einschließen möchten. Um das Visualmeasure anzugeben, auf dem Ihre Linie basieren soll, wählen Sie die Dropdownliste **Measure** aus, die automatisch mit Datenelementen aus dem Visual aufgefüllt wird. In diesem Fall entscheiden wir uns für **Culture** (Kultur) als Measure, geben als Bezeichnung *Durchschnitt für „Culture“* ein und passen einige weitere Optionen an.
+
+    ![Durchschnittslinie für „Culture“ (Kultur), Bereich „Analyse“, Visualisierungen, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_4.png)
+
+4. Wenn eine Datenbeschriftung angezeigt werden soll, ändern Sie die Einstellung **Datenbeschriftung** von **Aus** in **Ein**. Dadurch wird eine Reihe an weiteren Optionen für die Datenbeschriftung angezeigt.
+
+    ![Datenbeschriftungseinstellungen, Bereich „Analyse“, Visualisierungen, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_5.png)
+
+5. Beachten Sie die Zahl, die neben dem Element **Durchschnittslinie** im Bereich **Analyse** angezeigt wird. Dieser Wert steht für die Anzahl der in Ihrem Visual verwendeten dynamischen Linien und verrät auch, von welchem Typ diese sind. Wenn wir eine **Linie für Maximalwert** für **Affordability** (Erschwinglichkeit) hinzufügen, wird im Bereich **Analyse** angezeigt, dass nun auch eine dynamische Bezugslinie vom Typ **Linie für Maximalwert** für das Visual verwendet wird.
+
+    ![Gesamtwerte für „Linie für Maximalwert“ und „Linie für Durchschnitt“, Bereich „Analyse“, Visualisierungen, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_6.png)
+
+Wenn das ausgewählte Visual keine dynamischen Bezugslinien verwenden kann (in diesem Fall ein Visual vom Typ **Karte**), sehen Sie die folgende Meldung, wenn Sie den Bereich **Analyse** aufrufen.
+
+![Nicht verfügbare Analyse für ein Visual vom Typ „Karte“, Bereich „Analyse“, Visualisierungen, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_7.png)
+
+Sie können viele interessante Erkenntnisse gewinnen, wenn Sie mithilfe des Bereichs **Analyse** dynamische Bezugslinien erstellen.
+
+Wir arbeiten an der Umsetzung weiterer Features und Funktionen, u. a. beispielsweise daran, dynamische Bezugslinien für mehr Visuals verfügbar zu machen. Überprüfen Sie diese Seite deshalb regelmäßig auf Neuigkeiten.
 
 ## <a name="apply-forecasting"></a>Anwenden von Vorhersagen
-Sie können das Feature **Vorhersage** verwenden, indem Sie ein visuelles Element auswählen und dann den Abschnitt **Vorhersage** des Bereichs **Analyse** erweitern. Sie können viele Eingaben zum Ändern der Vorhersage festlegen, z. B. die *Prognoselänge*, das *Konfidenzintervall* und weitere Eingaben. Die folgende Abbildung zeigt ein einfaches visuelles Linienelement mit angewendeter Vorhersage. Sie können jedoch selbst ermitteln (und mit dem Feature *Vorhersage* experimentieren), wie das Feature auf Ihre Modelle angewendet werden kann.
 
-![](media/desktop-analytics-pane/analytics-pane_8.png)
+Wenn in Ihrer Datenquelle Zeitdaten vorhanden sind, können Sie diese für das Feature *Vorhersage* verwenden. Wählen Sie einfach ein Visual aus, und erweitern Sie dann den Abschnitt **Vorhersage** des Bereichs **Analyse**. Sie können viele Eingaben zum Ändern der Vorhersage festlegen, z. B. die **Länge der Prognose**, das **Konfidenzintervall** und weitere Eingaben. Die folgende Abbildung zeigt ein einfaches Visual vom Typ „Liniendiagramm“ mit angewendeter Vorhersage. Seien Sie kreativ (und experimentieren Sie mit der Vorhersagefunktion), um zu sehen, wie sie auf Ihre Modelle angewendet werden kann.
+
+![Feature „Vorhersage“, Bereich „Analyse“, Visualisierungen, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_8.png)
+
+> [!NOTE]
+> Das Vorhersagefeature ist nur für Visuals vom Typ „Liniendiagramm“ verfügbar.
 
 ## <a name="limitations"></a>Einschränkungen
-Die Möglichkeit zum Verwenden von dynamischen Bezugslinien ist abhängig vom verwendeten visuellen Element. Die folgende Liste zeigt, welche dynamischen Linien zurzeit für welche visuellen Objekte verfügbar sind:
 
-Dynamische Linien sind für die folgenden visuellen Elemente in vollem Umfang verfügbar:
+Die Möglichkeit zum Verwenden von dynamischen Bezugslinien ist abhängig vom verwendeten visuellen Element. In den folgenden Listen werden diese Einschränkungen näher erläutert.
+
+Sie können *Bezugslinie für X-Achse*, *Bezugslinie für Y-Achse* und *Symmetrieschattierung* für das folgende Visual verwenden:
+
+* Punktdiagramm
+
+Die Verwendung von *Bezugslinie*, *Linie für Mindestwert*, *Linie für Maximalwert*, *Linie für Durchschnitt*, *Linie für Medianwert* und *Linie für Perzentil* ist für diese Visuals verfügbar:
 
 * Flächendiagramm
+* Gruppiertes Balkendiagramm
+* Gruppiertes Säulendiagramm
 * Liniendiagramm
 * Punktdiagramm
-* Gruppiertes Balkendiagramm
 
 Für die folgenden visuellen Elemente kann nur eine *Bezugslinie* aus dem Bereich **Analyse** verwendet werden:
 
-* Gestapelte Fläche
-* Gestapelter Balken
-* Gestapelte Säule
-* Gestapelter Balken (100 %)
-* Gestapelte Säule (100 %)
+* Gestapeltes Flächendiagramm
+* Gestapeltes Balkendiagramm
+* Gestapeltes Säulendiagramm
+* Wasserfalldiagramm
+* Gestapeltes Balkendiagramm (100 %)
+* Gestapeltes Säulendiagramm (100 %)
 
-Für die folgenden visuellen Elemente ist die einzige Option zurzeit eine *Trendlinie*:
+Die folgenden Visuals können eine *Trendlinie* verwenden, wenn Zeitdaten vorhanden sind:
 
-* Nicht gestapelte Linie
+* Flächendiagramm
 * Gruppiertes Säulendiagramm
+* Liniendiagramm
+* Linien- und gruppiertes Säulendiagramm
 
-Außerdem können für nicht kartesische visuelle Elemente zurzeit keine dynamischen Linien im Bereich **Analyse** anwendet werden, z. B.:
+Schließlich können Sie derzeit keine dynamischen Linien auf viele Visuals anwenden, einschließlich (aber nicht beschränkt auf):
 
-* Matrix
-* Kreisdiagramm
-* Ringdiagramm
-* Tabelle
+* Trichterdiagramm
+* Linien- und gruppiertes Säulendiagramm
+* Linien- und gestapeltes Säulendiagramm
+* Bänderdiagramm
+* Nicht kartesische Visuals, z. B. Ringdiagramm, Messgerät, Matrix, Kreisdiagramm und Tabelle
 
-Die Linie für den Durchschnittswert ist nur verfügbar, wenn importierte Daten in **Power BI Desktop** verwendet werden oder einer Liveverbindung mit einem Modell auf einem Server mit **Analysis Service 2016** oder höher, **Azure Analysis Services** oder einem Dataset im Power BI-Dienst hergestellt wird. 
+*Linie für Perzentil* ist nur verfügbar, wenn importierte Daten in Power BI Desktop verwendet werden oder wenn eine Liveverbindung mit einem Modell auf einem Server mit **Analysis Service 2016** oder höher, **Azure Analysis Services** oder einem Dataset im Power BI-Dienst vorhanden ist.
 
 ## <a name="next-steps"></a>Nächste Schritte
-Mit Power BI Desktop können Sie viele Aufgaben ausführen. Weitere Informationen zu den Funktionen und Möglichkeiten finden Sie in den folgenden Ressourcen:
+
+Mit Power BI Desktop können Sie vielfältige Aufgaben ausführen. Weitere Informationen zu den Funktionen und Möglichkeiten finden Sie in den folgenden Ressourcen:
 
 * [Neuigkeiten in Power BI Desktop](desktop-latest-update.md)
-* [Laden Sie Power BI Desktop herunter](desktop-get-the-desktop.md)
+* [Power BI Desktop erwerben](desktop-get-the-desktop.md)
 * [Was ist Power BI Desktop?](desktop-what-is-desktop.md)
 * [Übersicht zu Abfragen mit Power BI Desktop](desktop-query-overview.md)
 * [Datentypen in Power BI Desktop](desktop-data-types.md)
 * [Strukturieren und Kombinieren von Daten mit Power BI Desktop](desktop-shape-and-combine-data.md)
-* [Allgemeine Abfrageaufgaben in Power BI Desktop](desktop-common-query-tasks.md)    
-
+* [Durchführen allgemeiner Abfrageaufgaben in Power BI Desktop](desktop-common-query-tasks.md)

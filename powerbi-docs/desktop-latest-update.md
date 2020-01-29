@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 12/18/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: ab98463f6dc1defd9ee3f2a97b322fefbe582779
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 016b83e983f2b3139eb040a1f1d8d48d70b44a52
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761040"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953490"
 ---
 # <a name="whats-new-in-power-bi-desktop"></a>Neuigkeiten in Power BI Desktop
 
@@ -23,7 +23,7 @@ ms.locfileid: "75761040"
 
 Unsere Dezember-Updates bringen viele tolle Neuerungen mit sich. 
 
-Laden Sie die neueste Version von Power BI Desktop aus dem [Download Center](https://www.microsoft.com/download/details.aspx?id=58494) herunter. Wenn Sie Windows 10 verwenden, können Sie Power BI Desktop auch aus dem Microsoft Store unter Windows 10 erhalten. Unabhängig davon, wie Sie Power BI Desktop installieren, sind die monatlichen Versionen identisch, auch wenn sich die Versionsnummerierung unterscheiden kann. Weitere Informationen zum Herunterladen und Installieren von Power BI Desktop finden Sie unter [Power BI Desktop erwerben](desktop-get-the-desktop.md). 
+Laden Sie die neueste Version von Power BI Desktop aus dem [Download Center](https://www.microsoft.com/download/details.aspx?id=58494) herunter. Wenn Sie Windows 10 verwenden, können Sie Power BI Desktop auch aus dem [Microsoft Store](https://aka.ms/pbidesktopstore) abrufen. Unabhängig davon, wie Sie Power BI Desktop installieren, sind die monatlichen Versionen identisch, auch wenn sich die Versionsnummerierung unterscheiden kann. Weitere Informationen zum Herunterladen und Installieren von Power BI Desktop finden Sie unter [Power BI Desktop erwerben](desktop-get-the-desktop.md). 
 
 > [!IMPORTANT]
 > Seit dem Release im September 2019 wird Power BI Desktop nur als einzelne EXE-Datei mit allen unterstützten Sprachen herausgegeben. Die MSI-Version wird nicht mehr herausgegeben.
@@ -92,7 +92,7 @@ Weitere Informationen finden Sie auch unter [Neuheiten bei Power BI](service-wha
 ## <a name="power-bi-desktop-monthly-update-video"></a>Video zu den monatlichen Updates von Power BI Desktop
 Das folgende Video beschreibt die einzelnen Updates. Sie können sich das Video auch im Blogbeitrag ansehen:
 
-> [!VIDEO https://youtu.be/eCEwgZsVUOs]
+> [!VIDEO https://www.youtube.com/embed/eCEwgZsVUOs]
 
 
 ## <a name="more-videos"></a>Weitere Videos

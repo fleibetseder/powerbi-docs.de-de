@@ -1,6 +1,6 @@
 ---
 title: Berichtsparameter im Berichts-Generator von Power BI
-description: In diesem Thema werden allgemeine Verwendungsmöglichkeiten für die Parameter des Berichts-Generators von Power BI für paginierte Berichte, die Eigenschaften, die Sie festlegen können, und vieles mehr beschrieben.
+description: In diesem Thema werden allgemeine Verwendungsmöglichkeiten für Berichtsparameter im Power BI Report Builder, die Eigenschaften, die Sie festlegen können, und vieles mehr beschrieben.
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -9,16 +9,16 @@ ms.author: maggies
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/06/2019
-ms.openlocfilehash: d31036676a5960f7f6eb0f346c2c02ab979ff9bc
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 5a7e91c03b11902f324d6a7c639a03f7652acf16
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128420"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160855"
 ---
 # <a name="report-parameters-in-power-bi-report-builder"></a>Berichtsparameter im Berichts-Generator von Power BI
 
-In diesem Thema werden allgemeine Verwendungsmöglichkeiten für die Parameter des Berichts-Generators von Power BI für paginierte Berichte, die Eigenschaften, die Sie festlegen können, und vieles mehr beschrieben. Mithilfe von Berichtsparametern können Sie Berichtsdaten steuern, verwandte Berichte miteinander verbinden und die Berichtspräsentation anpassen. Sie können Berichtsparameter in paginierten Berichten verwenden, die Sie im Berichts-Generator erstellen.
+In diesem Thema werden allgemeine Verwendungsmöglichkeiten für Berichtsparameter im Power BI Report Builder, die Eigenschaften, die Sie festlegen können, und vieles mehr beschrieben. Mithilfe von Berichtsparametern können Sie Berichtsdaten steuern, verwandte Berichte miteinander verbinden und die Berichtspräsentation anpassen. Sie können Berichtsparameter in paginierten Berichten verwenden, die Sie im Berichts-Generator erstellen.
 
 ## <a name="bkmk_Common_Uses_for_Parameters"></a> Allgemeine Verwendungsmöglichkeiten für Parameter
 
@@ -93,7 +93,7 @@ Sie können Berichtsparameter auf verschiedene Arten erstellen.
   
 - Wählen Sie mehrere Parameterwerte in einer Dropdownliste aus.  
   
-- Wählen Sie in einer Dropdownliste einen Wert für einen Parameter aus, der die Werte bestimmt, die in der Dropdownliste für einen anderen Parameter verfügbar sind. Hierbei handelt es sich um kaskadierende Parameter. Mithilfe von kaskadierenden Parametern können Sie Parameterwerte nach und nach aus Tausenden von Werten herausfiltern, sodass eine überschaubare Anzahl übrig bleibt.  
+- Wählen Sie in einer Dropdownliste einen Wert für einen Parameter aus, der die Werte bestimmt, die in der Dropdownliste für einen anderen Parameter verfügbar sind. Hierbei handelt es sich um kaskadierende Parameter. Mithilfe von kaskadierenden Parametern können Sie Parameterwerte nach und nach aus Tausenden von Werten herausfiltern, sodass eine überschaubare Anzahl übrig bleibt. Weitere Informationen finden Sie unter [Verwenden von kaskadierenden Parametern in paginierten Berichten](guidance/paginated-report-cascading-parameter.md).
   
 - Führen Sie den Bericht aus, ohne zuerst einen Parameterwert auswählen zu müssen, da für den Parameter ein Standardwert erstellt wurde.  
   
@@ -148,5 +148,4 @@ Sie können Berichtsparameter auf verschiedene Arten erstellen.
 ## <a name="next-steps"></a>Nächste Schritte
 
 - [Was sind paginierte Berichte in Power BI Premium? (Vorschau)](paginated-reports-report-builder-power-bi.md)  
- 
- 
+- [Verwenden von kaskadierenden Parametern in paginierten Berichten](guidance/paginated-report-cascading-parameter.md)

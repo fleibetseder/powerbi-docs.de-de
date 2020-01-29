@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/04/2019
-ms.openlocfilehash: 4db1f887c1dd889a06c02643a0270cc24ab9c45f
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: f9ed7f47c0f36e540d22270048e93acd2d3a8e21
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74311512"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953764"
 ---
 # <a name="implementing-row-level-security-in-embedded-paginated-reports-preview"></a>Implementieren der Sicherheit auf Zeilenebene in eingebetteten paginierten Berichten (Vorschau)
 
@@ -32,7 +32,7 @@ Verwenden Sie nach dem Zuweisen des Parameter zum **UserID**-Attribut die API [R
 
 ## <a name="use-userid-as-a-filter-at-report-or-query-level"></a>Verwenden von UserID als Filter auf Berichts- oder Abfrageebene
 
-Sie können **UserID** als *Filter* oder in einer *Abfrage* für die Datenquelle im [Power BI-Berichts-Generator für paginierte Berichte](../report-builder-power-bi.md) verwenden.
+Sie können **UserID** als *Filter* oder in einer *Abfrage* für die Datenquelle im [Power BI Report Builder](../report-builder-power-bi.md) verwenden.
 
 ### <a name="using-the-filter"></a>Verwenden des Filters
 

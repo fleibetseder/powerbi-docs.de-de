@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/26/2019
-ms.openlocfilehash: 7297e73dc0e412f75412eb48398ef9c85cda8d6e
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 01/16/2020
+ms.openlocfilehash: 0b57ec084477955086b3d1bb0acd0a3139d325c6
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74565770"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160602"
 ---
 # <a name="install-power-bi-report-server"></a>Power BI-Berichtsserver installieren
 
@@ -47,7 +47,7 @@ Wenn Sie Power BI Premium erworben haben, haben Sie auf der Registerkarte **Prem
 
 ![Premium-Einstellungen](../report-server/media/install-report-server/pbirs-product-key.png "Schlüssel für den Power BI-Berichtsserver in den Premium-Einstellungen")
 
-Wenn Sie auf **Power BI Report Server key** (Schlüssel für den Power BI-Berichtsserver) klicken, wird ein Dialogfeld mit Ihrem Product Key angezeigt. Diesen können Sie kopieren und bei der Installation verwenden.
+Wenn Sie auf **Schlüssel für Power BI-Berichtsserver** klicken, wird ein Dialogfeld mit Ihrem Product Key angezeigt. Diesen können Sie kopieren und bei der Installation verwenden.
 
 ![Product Key](../report-server/media/install-report-server/pbirs-product-key-dialog.png "Product Key für den Power BI-Berichtsserver")
 
@@ -146,6 +146,7 @@ Wenn Sie von einem Remotecomputer aus auf den Berichtsserver zugreifen möchten,
 * Informationen zum Konfigurieren der Integration in den Power BI-Dienst, damit Sie Berichtselemente an ein Power BI-Dashboard anheften können, finden Sie unter [Integrieren in den Power BI-Dienst](https://docs.microsoft.com/sql/reporting-services/install-windows/power-bi-report-server-integration-configuration-manager).
 * Informationen zum Konfigurieren von E-Mail für die Abonnementverarbeitung finden Sie unter [E-Mail-Einstellungen](https://docs.microsoft.com/sql/reporting-services/install-windows/e-mail-settings-reporting-services-native-mode-configuration-manager) und [E-Mail-Übermittlung in Reporting Services](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services).
 * Informationen zum Konfigurieren des Webportals, damit Sie auf einem Berichtscomputer darauf zugreifen können, um Berichte anzuzeigen und zu verwalten, finden Sie unter [Konfigurieren einer Firewall für den Berichtsserverzugriff](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-firewall-for-report-server-access) und [Konfigurieren eines Berichtsservers für die Remoteverwaltung](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-report-server-for-remote-administration).
+* Ausführliche Informationen zum Festlegen von Systemeigenschaften für Berichtsserver in SQL Server Management Studio finden Sie unter [Servereigenschaften (Seite „Erweitert“)](https://docs.microsoft.com/sql/reporting-services/tools/server-properties-advanced-page-reporting-services). Sofern nicht anders angegeben, gilt die Option sowohl für den Power BI-Berichtsserver als auch für SQL Server Reporting Services.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

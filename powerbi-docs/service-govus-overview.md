@@ -1,109 +1,117 @@
 ---
-title: Power BI für Angehörige von US-Behörden – Übersicht
-description: USA Angehörige von US-Behörden finden hier Informationen über die Funktionen und Einschränkungen des Power-BI US Government-Diensts.
-author: davidiseminger
+title: Power BI für US-Behörden – Übersicht
+description: US-Behörden können ihrem Office 365 Government-Plan ein Power BI Pro-Abonnement hinzufügen. Erfahren Sie in dieser Dienstbeschreibung, wie Sie sich registrieren und die Verfügbarkeit von Funktionen überprüfen können.
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/08/2020
-ms.author: davidi
+ms.date: 01/13/2020
+ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: f14734f168abca1003bd5b6c773c4c70daf53d15
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 26dabde3846ec33e2f5910de75fb8165cce6513a
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762092"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160763"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI für Angehörige von US-Behörden
-Für den **Power BI-Dienst** ist im Rahmen von **Office 365 US Government Community**-Abonnements eine Version für Kunden verfügbar, die Angehörige von US-Behörden sind. Die in diesem Artikel vorgestellte Version des **Power BI-Diensts** ist speziell für Angehörige von US-Behörden konzipiert. Es handelt sich hierbei um ein separates und von der kommerziellen Version des **Power BI-Diensts** abweichendes Produkt.
+Dieser Artikel richtet sich an US-Behörden, die Power BI als Bestandteil eines Office 365 Government-Plans bereitstellen. Die Government-Pläne sind auf die besonderen Bedürfnisse von Organisationen zugeschnitten, die in den USA geltende Compliance- und Sicherheitsstandards erfüllen müssen. Der für US-Behörden entwickelte Power BI-Dienst unterscheidet sich von der kommerziellen Version des Power BI-Diensts. Diese Funktionsunterschiede werden in den folgenden Abschnitten beschrieben.
 
-![](media/service-govus-overview/service_usgov_overview-1.png)
+## <a name="add-power-bi-to-your-office-365-government-plan"></a>Hinzufügen von Power BI zu Ihrem Office 365 Government-Plan
 
-In den folgenden Abschnitten werden die *Funktionen* beschrieben, die für die Version des **Power BI-Diensts** für US-Behörden verfügbar sind. Außerdem werden einige *Einschränkungen* erläutert, häufig gestellte Fragen (**FAQ**) und Antworten behandelt (u.a. zur Registrierung) und Links für weitere Informationen aufgeführt.
+Bevor Sie ein Power BI-Abonnement für US-Behörden erwerben und Benutzern Lizenzen zuweisen können, müssen Sie sich für einen Office 365 Government-Plan registrieren. Wenn Ihre Organisation bereits über einen Office 365 Government-Plan verfügt, fahren Sie mit [Erwerben eines Power BI Pro Government-Abonnements](#purchase-a-power-bi-pro-government-subscription) fort.
 
-## <a name="features-of-power-bi-us-government"></a>Features von Power BI US Government
-Es muss beachtet werden, dass **Power BI US Government** nur als **Pro-Lizenz** und nicht als Free-Lizenz verfügbar ist. Bestimmte Features des Power BI-Diensts stehen in der Version **Power BI US Government** des Diensts zur Verfügung.
+### <a name="enroll-in-office-365-government-plan"></a>Registrierung für einen Office 365 Government-Plan
 
-Die folgenden Funktionen stehen Kunden von **Power BI US Government** zur Verfügung, gemäß der in der **Pro**-Lizenz beschriebenen Funktionalität:
+Als Neukunde müssen Sie einen Berechtigungsnachweis für Ihre Organisation erbringen, bevor Sie sich für einen Government-Plan registrieren können.  Füllen Sie zunächst das [Formular zum Berechtigungsnachweis für Office 365 für Behörden](https://www.microsoft.com/microsoft-365/government/eligibility-validation) aus. Um sicherzustellen, dass Sie den richtigen Plan für Ihre Organisation auswählen, konsultieren Sie die [Dienstbeschreibungen für Office 365 für US-Behörden](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government).
 
-* Erstellen und Anzeigen von Dashboards und Berichten
-* [Beschränkung der Datenkapazität](service-admin-manage-your-data-storage-in-power-bi.md)
-* [Geplante Datenaktualisierung](refresh-data.md)
-* Aktualisierbare Teamdashboards
-* Active Directory-Gruppen für Freigaben und die Verwaltung der Zugriffskontrolle
-* [Importieren von Daten](service-get-data.md) und Berichten aus Excel-, CSV- und Power BI Desktop-Dateien
-* Datenverwaltungsgateway
-* Verschlüsselung sämtlicher Daten in SQL Azure und Blob Storage für Power BI
-* Herstellen einer Dienstverbindung mit [Inhaltspaketen](service-connect-to-services.md)
+> [!NOTE]
+> Wenn Sie Power BI bereits in einer kommerziellen Umgebung implementiert haben und zu Microsoft Cloud for US Government migrieren möchten, müssen Sie Ihrem Office 365 Government-Plan ein neues Power BI Pro-Abonnement hinzufügen. Als Nächstes replizieren Sie die kommerziellen Daten in den Power BI-Dienst für US-Behörden, entfernen die Zuordnungen kommerzieller Lizenzen aus den Benutzerkonten und weisen den Benutzerkonten anschließend eine Power BI Pro Government-Lizenz zu.
+>
+>
 
-## <a name="connectivity-between-government-and-global-azure-cloud-services"></a>Konnektivität zwischen Government-Clouddiensten und globalen Azure Cloud Services 
+### <a name="government-cloud-instances"></a>Instanzen der Government-Cloud
+Office 365 bietet verschiedene Umgebungen für Regierungsbehörden, um unterschiedliche Anforderungen an die Einhaltung von Vorschriften zu erfüllen. Konsultieren Sie die verknüpften Dienstbeschreibungen für spezifische Details zu den einzelnen Umgebungen.
 
-Azure ist auf mehrere Clouds verteilt. Standardmäßig dürfen Mandanten Firewallregeln für eine cloudspezifische Instanz öffnen. Für cloudübergreifende Netzwerke müssen jedoch bestimmte Firewallregeln geöffnet werden, damit zwischen Diensten kommuniziert werden kann. Wenn Sie ein Power BI-Kunde sind und über SQL-Instanzen in der öffentlichen Cloud verfügen, für die Sie Zugriff benötigen, müssen Sie in SQL für die folgenden Datencenter bestimmte Firewallregeln für den Azure Government Cloud-IP-Adressbereich öffnen:
+* [Office 365 Government Community Cloud (GCC)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) ist für US-Behörden auf landesweiter, bundesstaatlicher und kommunaler Ebene konzipiert.
+
+* [Office 365 Government Community Cloud High (GCC-High)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) ist für US-amerikanische Bundesbehörden, Organisationen aus den Bereichen Verteidigung, Luft- und Raumfahrt sowie für weitere Organisationen konzipiert, die mit Daten der Kategorie „Controlled Unclassified Information (CUI)“ arbeiten. Diese Umgebung eignet sich für Organisationen und Unternehmen, die mit Aufgaben der nationalen Sicherheit betraut sind und deren Daten den Anforderungen der International Traffic in Arms Regulations (ITAR) oder der Defense Federal Acquisition Regulations Supplement (DFARS) unterliegen.
+
+* Die [Office 365 DoD-Umgebung](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) wurde exklusiv für das US-Verteidigungsministerium entworfen. 
+
+### <a name="purchase-a-power-bi-pro-government-subscription"></a>Erwerben eines Power BI Pro Government-Abonnements
+
+Nachdem Sie Office 365 bereitgestellt haben, können Sie ein Power BI-Abonnement hinzufügen. Befolgen Sie die Schrittanleitung unter [Registrieren einer US-Behörde](service-govus-signup.md#existing-office-government-cloud-customers), um den Power BI Pro Government-Dienst zu erwerben. Erwerben Sie eine ausreichende Anzahl von Lizenzen für alle Benutzer, die Power BI benötigen, und weisen Sie diese Lizenzen anschließend einzelnen Benutzerkonten zu.
+
+> [!IMPORTANT]
+> Power BI US Government ist nicht als Free-Lizenz verfügbar. Jedem Benutzer muss eine Pro-Lizenz zugewiesen werden, um Zugriff auf die Government Community Cloud zu erhalten. Wenn Benutzern eine Free-Lizenz zugewiesen wurde, sind sie nur zum Zugriff auf die kommerzielle Cloud berechtigt, und es kommt zu Problemen bei Authentifizierung und Zugriff. Informationen zu den Unterschieden zwischen den Lizenztypen finden Sie unter [Features des Power BI-Diensts nach Lizenztyp](service-features-license-type.md).
+>
+>
+
+## <a name="connect-to-power-bi-for-us-government"></a>Verbindungsherstellung mit Power BI für US-Behörden
+
+Sie verwenden eine andere URL zur Verbindungsherstellung mit Power BI für US-Behörden als kommerzielle Benutzer. Verwenden Sie zur Anmeldung bei Power BI die folgenden URLs:
+
+| URL der kommerziellen Version | URL der US Government-Version | GCC High-URL für US-Behörden |
+| --- | --- | --- |
+| https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) | [https://app.high.powerbigov.us](https://app.high.powerbigov.us) |
+
+Ihr Konto ist möglicherweise mehr als einer Cloud zugeordnet. In diesem Fall können Sie während der Anmeldung bei Power BI Desktop auswählen, mit welcher Cloud Sie eine Verbindung herstellen möchten.
+
+## <a name="connectivity-between-government-and-global-azure-cloud-services"></a>Konnektivität zwischen Government-Clouddiensten und globalen Azure Cloud Services
+
+Azure ist auf mehrere Clouds verteilt. Standardmäßig können Sie Firewallregeln aktivieren, um eine Verbindung mit einer cloudspezifischen Instanz zu öffnen, aber bei einem cloudübergreifenden Netzwerk ist dies anders.  Für die Kommunikation zwischen Diensten in der öffentlichen Cloud und Diensten in der Government Community Cloud ist es erforderlich, spezifische Firewallregeln zu konfigurieren. Wenn Sie beispielsweise von Ihrer Power BI Government-Cloudbereitstellung aus auf öffentliche Cloudinstanzen von SQL zugreifen möchten, benötigen Sie eine Firewallregel in SQL. Konfigurieren Sie spezifische Firewallregeln in SQL, um Verbindungen mit der Azure Government Cloud für folgende Rechenzentren zuzulassen:
 
 * USGov Iowa
 * USGov Virginia
 * USGov Texas
 * USGov Arizona
 
-In der öffentlichen Cloud sind die IP-Adressbereiche verfügbar. Die neuesten Informationen zur Government Cloud finden Sie in der herunterladbaren [Dokumentation zum Azure Government-Dienst](https://www.microsoft.com/download/details.aspx?id=57063).
+In der öffentlichen Cloud sind die IP-Adressbereiche frei verfügbar. Um die IP-Adressbereiche für die US Government-Cloud zu erhalten, laden Sie die Datei [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063) herunter. 
 
-## <a name="limitations-of-power-bi-us-government"></a>Einschränkungen von Power BI US Government
-Einige Funktionen, die in der kommerziellen Version des **Power BI-Diensts** verfügbar sind, stehen im **Power BI-Dienst** für Angehörige von US-Behörden *nicht* zur Verfügung. Das Power BI-Team arbeitet derzeit daran, diese Funktionen auch für Kunden bei US-Behörden zur Verfügung zu stellen. Dieser Artikel wird aktualisiert, sobald diese Funktionen verfügbar sind.
+Folgen Sie den Schritten unter [Erstellen und Verwalten von IP-Firewallregeln](https://docs.microsoft.com/azure/sql-database/sql-database-firewall-configure#create-and-manage-ip-firewall-rules), um Firewalls in SQL einzurichten.
 
-* **Einbetten in SharePoint Online**: Mit dem Power BI-Webpart können keine Inhalte in SharePoint Online eingebettet werden. Sicheres Einbetten ist jedoch mithilfe des [Webparts *Embed* (Einbetten)](https://docs.microsoft.com/power-bi/service-embed-secure) möglich. Dazu müssen Sie der Ausnahmeliste *app.powerbigov.us* hinzufügen, indem Sie den Anweisungen im Artikel [Zulassen oder Einschränken der Möglichkeit zum Einbetten von Inhalten auf SharePoint-Seiten](https://support.office.com/article/allow-or-restrict-the-ability-to-embed-content-on-sharepoint-pages-e7baf83f-09d0-4bd1-9058-4aa483ee137b) folgen.
-* **Power BI US Government** ist nur als **Pro**-Lizenz verfügbar. Alle Verweise auf Power BI (Free)-Lizenzen im Administratorportal (oder als Benutzer) beziehen sich auf die Ausführung in einer kommerziellen Power BI-Dienstcloud.
-* **Überwachung:** Die Überwachung ist über das Office 365 Security & Compliance Center ab dem 1. Juni 2018 nicht mehr verfügbar.
-* **Freigabe für externe Benutzer:** Die Freigabe ist innerhalb eines Power BI-Mandanten zulässig, und ab Juni 2018 ist die keine Freigabe auch für Benutzer außerhalb Ihres Power BI-Mandanten möglich. Weitere Informationen finden Sie unter [Verteilen von Power BI-Inhalten an externe Gastbenutzer mit Azure AD B2B](service-admin-azure-ad-b2b.md).
-* **Nutzungsmetriken für Dashboards und Berichte**: Nutzungsmetriken sind für Berichte und Dashboards nicht verfügbar. Kunden können Überwachungsprotokolldaten verwenden, um Nutzungsinformationen für Inhalte in Ihrer Organisation abzurufen.
-* **Dataflows** – Dataflows sind nicht verfügbar.
-* **Paginierte Berichte**: Paginierte Berichte sind zurzeit nur in "USGov Virginia" verfügbar.  Unterstützung für USGov Texas ist geplant, aber noch nicht verfügbar.
-* Das Einbetten von Power BI-Inhalt aus einer Government Community Cloud (GCC) kann nur über eine Office 365-SKU durchgeführt werden. GCC High-Kunden können [Office 365- oder Azure-SKUs](developer/embedded-faq.md#what-is-the-difference-between-the-a-skus-in-azure-and-the-em-skus-in-office-365) verwenden.
+## <a name="power-bi-feature-availability"></a>Power BI-Featureverfügbarkeit
 
-Wenn Ihrem Konto **Power BI**-Free-Lizenzen zugewiesen sind, wird dieses Konto in einer kommerziellen Version des **Power BI**-Diensts ausgeführt und ist nicht Teil des Angebots **Power BI US Government**. Bei diesen Free-Konten können die folgenden Probleme auftreten:
+Um den Anforderungen der Government Cloud-Kunden gerecht zu werden, gibt es einige Unterschiede zwischen den Plänen für US-Behörden und den kommerziellen Plänen. In der folgenden Tabelle sehen Sie, welche Funktionen in jeder Government-Umgebung verfügbar sind.
 
-* Authentifizieren von Gateway, Mobilgeräten und Desktops nicht möglich
-* Kein Zugriff auf kommerzielle Azure-Datenquellen
-* Manueller Upload von PBIX-Dateien aus der kommerziellen Version erforderlich
-* Mobile Power BI-Apps nicht verfügbar
-
-Um diese Probleme zu beheben, wenden Sie sich an den Ansprechpartner für Ihr Konto.
-
-## <a name="frequently-asked-questions-faq-for-the-us-government-version-of-the-power-bi-service"></a>Häufig gestellte Fragen (FAQ) für die Version des Power BI-Diensts für US-Behörden
-Anhand der folgenden Fragen (und Antworten) finden Sie schnell die benötigten Informationen zum Dienst.
-
-**Frage:** Wie migriere ich meine Daten aus dem kommerziellen **Power BI**-Dienst in den **Power BI-Dienst** für US-Behörden?
-
-**Antwort:** Ihr Administrator muss eine neue Instanz von **Power BI** unter einem separaten, für US-Behörden spezifischen Abonnement erstellen. Sie können dann die Daten aus der kommerziellen Version im **Power BI-Dienst** für US-Behörden replizieren, die kommerzielle Lizenz entfernen und die vorhandene Domäne dem neuen, für US-Behörden spezifischen Dienst zuordnen.
-
-**Frage:** Warum kann ich keine Verbindung mit einem bestimmten Inhaltspaket herstellen?
-
-**Antwort:** Sie müssen sicherstellen, dass Ihr Abonnement aktiviert wurde, damit Sie eine Verbindung mit dem Inhaltspaket herstellen können.
-
-**Frage:** Ich möchte **Power BI** für meine US-Behörde verwenden. Was sind die ersten Schritte?
-
-**Antwort:** Die Registrierungsschritte (auch als *Onboarding* bezeichnet) unterscheiden sich je nach vorhandener Lizenz und Abonnement. Im Artikel zur [Registrierung bei Power BI US Government](service-govus-signup.md) finden Sie weitere Informationen.
-
-**Frage:** Lautet die URL für die Verbindung mit **Power BI** für US-Behörden anders als die URL für die kommerzielle Version von **Power BI**? Gibt es eine andere URL für Kunden der Government Community Cloud High (GCC High)?
-
-**Antwort:** Ja, die URLs unterscheiden sich. Die folgende Tabelle enthält die verschiedenen URLs:
-
-| URL der kommerziellen Version | URL der US Government-Version | GCC High-URL für US-Behörden |
-| --- | --- | --- |
-| https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) | [https://app.high.powerbigov.us](https://app.high.powerbigov.us) |
-
-**Frage:** Mein Konto wird in mehreren nationalen Clouds bereitgestellt. Wie wähle ich in **Power BI Desktop** aus, mit welcher Cloud eine Verbindung hergestellt werden soll?
-
-**Antwort:** Seit dem **Power BI Desktop**-Release im Juli 2018 können Sie auswählen, welche Cloud Sie verwenden möchten, wenn Sie sich bei **Power BI Desktop** anmelden.
-
+|Feature |   |GCC |GCC-High |DoD|
+|------|------|------|------|------|
+|Verwaltung|Free-Lizenzen|Nicht verfügbar|Nicht verfügbar|Nicht verfügbar|
+|  |Festlegen von Datenspeicherlimits|Verfügbar|Verfügbar|Verfügbar|
+|  |Verwendung von Active Directory-Gruppen für Freigabe und Zugriffssteuerung|Verfügbar|Verfügbar|Verfügbar|
+|  |Überwachung über das Office 365 Security and Compliance Admin Center|Verfügbar|Verfügbar|Verfügbar|
+|  |Freigabe für externe Benutzer|Verfügbar|Verfügbar|Verfügbar|
+|  |Nutzungsmetriken für Dashboards und Berichte|Nicht verfügbar|Nicht verfügbar|Nicht verfügbar|
+|  |Azure B2B zwischen GCC und kommerzieller Cloud|Nicht verfügbar|Nicht verfügbar|Nicht verfügbar|
+|Berichterstellung|Erstellen und Anzeigen von Dashboards und Berichten|Verfügbar|Verfügbar|Verfügbar|
+|  |Geplante Datenaktualisierung|Verfügbar|Verfügbar|Verfügbar|
+|  |Aktualisierbare Teamdashboards|Verfügbar|Verfügbar|Verfügbar|
+|  |Paginierte Berichte|Verfügbar nur in „USGov Texas“ und „USGov Virginia“ |Verfügbar|In der Roadmap|
+|  |Vorlagen-Apps|Nicht verfügbar|Nicht verfügbar|Nicht verfügbar|
+|Verbinden mit Daten|Importieren von Daten und Berichten aus Excel|Verfügbar|Verfügbar|Verfügbar|
+|  |Importieren von Daten aus CSV-Dateien|Verfügbar|Verfügbar|Verfügbar|
+|  |Importieren von Daten aus Power BI Desktop-Dateien|Verfügbar|Verfügbar|Verfügbar|
+|  |Konnektivität mit CDS|Nicht verfügbar|Nicht verfügbar|Nicht verfügbar|
+|  |Azure Data Lake Storage Gen2-Connector|Nicht verfügbar|Nicht verfügbar|Nicht verfügbar|
+|Datenverwaltung|Datenverwaltungsgateway|Verfügbar|Verfügbar|Verfügbar|
+|  |Datenverschlüsselung in Azure SQL|Verfügbar|Verfügbar|Verfügbar|
+|  |Datenverschlüsselung in Blob Storage für Power BI|Verfügbar|Verfügbar|Verfügbar|
+|Produktübergreifende Integration|Einbettung in SharePoint Online über das Power BI-Webpart|Nicht verfügbar|Nicht verfügbar|Nicht verfügbar|
+|  |Einbettung in SharePoint Online über das Webpart zur Einbettung|Verfügbar|Verfügbar|Verfügbar|
+|  |Datenflows und KI-Funktionen|Nicht verfügbar|Nicht verfügbar|Nicht verfügbar|
+|  |Power Automate-Konnektivität für datengesteuerte Warnungen|Nicht verfügbar|Nicht verfügbar|Nicht verfügbar|
+|  |Power BI-Registerkarte in Teams|Nicht verfügbar|Nicht verfügbar|Nicht verfügbar|
+|  |Automatisiertes maschinelles Lernen|Nicht verfügbar|Nicht verfügbar|Nicht verfügbar|
+|  |Cognitive Services|Nicht verfügbar|Nicht verfügbar|Nicht verfügbar|
+|  |Azure ML|Nicht verfügbar|Nicht verfügbar|Nicht verfügbar|
 
 ## <a name="next-steps"></a>Nächste Schritte
-Mit Power BI können Sie viele verschiedene Aufgaben ausführen. Weitere Informationen und Anweisungen sowie einen Artikel zur Registrierung für den Dienst finden Sie in den folgenden Ressourcen:
 
 * [Registrierung bei Power BI for US Government](service-govus-signup.md)
 * <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Demo zu Power BI US Government</a>
-* [Geführtes Lernen zu Power BI](guided-learning/index.yml)
 * [Erste Schritte mit Power BI](service-get-started.md)
 * [Was ist Power BI Desktop?](desktop-what-is-desktop.md)
 

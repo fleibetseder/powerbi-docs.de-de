@@ -1,6 +1,6 @@
 ---
 title: Berichtsentwurfstipps im Power BI-Berichts-Generator
-description: Verwenden Sie die folgenden Tipps zum Entwerfen von paginierten Berichten im paginierten Berichts-Generator in Power BI.
+description: Nutzen Sie die folgenden Tipps, die Sie beim Entwerfen von paginierten Berichten in Power BI Report Builder unterstützen.
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: c1490ff0-5b8a-43c1-8d22-e459395db4f6
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: d7e232d09eee2a4cfff17d4565443195e6f7f1aa
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 3b436156d6bd36fe5da7b9b4404227ca1a6de336
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840347"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160533"
 ---
 # <a name="report-design-tips-in-power-bi-report-builder"></a>Berichtsentwurfstipps im Power BI-Berichts-Generator
-  Verwenden Sie die folgenden Tipps zum Entwerfen von paginierten Berichten im paginierten Berichts-Generator in Power BI.  
+  Nutzen Sie die folgenden Tipps, die Sie beim Entwerfen von paginierten Berichten in Power BI Report Builder unterstützen.  
   
    
   
@@ -131,7 +131,7 @@ ms.locfileid: "66840347"
   
 -   Wenn Sie den Bericht als PDF-Datei speichern möchten, muss die Breite des Berichts explizit auf einen Wert festgelegt werden, mit dem Sie die gewünschten Ergebnisse im Exportdateiformat erhalten. Legen Sie die Breite der Berichtsseite z.B. genau auf 7,9375 Zoll fest und den linken und rechten Rand auf 0,5 Zoll.  
   
--   Verwenden Sie **Drucklayout** und **Seiteneinrichtung** auf der Berichts-Viewer-Symbolleiste, um einen Bericht in einer druckkompatiblen Ansicht zu rendern. Um unerwünschte horizontale Seiten zu entfernen, führen Sie folgende Schritte aus:  
+-   Verwenden Sie **Drucklayout** und **Seiteneinrichtung** auf der Berichts-Viewer-Symbolleiste, um einen Bericht in einer druckkompatiblen Ansicht zu rendern. Gehen Sie folgendermaßen vor, um unnötige leere Seiten zu entfernen:  
   
     1.  Entfernen Sie sämtlichen zusätzlichen Leerraum zwischen Datenbereichen und an den Rändern des Berichts.  
   
@@ -140,8 +140,10 @@ ms.locfileid: "66840347"
     3.  Verwenden Sie **Rechtecke** als Container, um zu steuern, wie Berichtselemente gerendert werden.  
   
     4.  Ändern Sie in Spaltenüberschriften die Textfeldeigenschaft WritingMode zur Verwendung vertikalen Texts.  
-  
- Die Kombination dieses Verhaltens, der Breiten- und Höheneigenschaften von Berichtselementen, der Größe des Berichtshauptteils, der Seitenhöhen- und Seitenbreitendefinition, die Seitenrandeinstellungen des übergeordneten Berichts und die rendererspezifische Unterstützung des Paginierens bestimmt, welche Berichtselemente zusammen auf eine gerenderte Seite passen. 
+
+ Weitere Informationen finden Sie unter [Vermeiden von leeren Seiten beim Drucken paginierter Berichte](guidance/report-paginated-blank-page.md).
+
+ Die Kombination dieses Verhaltens, der Breiten- und Höheneigenschaften von Berichtselementen, der Größe des Berichtshauptteils, der Seitenhöhen- und Seitenbreitendefinition, die Seitenrandeinstellungen des übergeordneten Berichts und die rendererspezifische Unterstützung des Paginierens bestimmt, welche Berichtselemente zusammen auf eine gerenderte Seite passen.
  
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -1,6 +1,6 @@
 ---
 title: Beispiele für Ausdrücke im Power BI-Berichts-Generator
-description: Ausdrücke werden häufig in paginierten Berichten des paginierten Power BI-Berichts-Generators verwendet, um den Inhalt und die Darstellung der Berichte zu steuern.
+description: Ausdrücke werden in paginierten Berichten im Power BI Report Builder häufig verwendet, um den Inhalt und die Darstellung der Berichte zu steuern.
 ms.date: 10/21/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 06847956eae4dfefc7cff75b5a360fbb8b892c39
-ms.sourcegitcommit: d173e22f5a3e76717adfaa573ea391bde0338ffe
+ms.openlocfilehash: 48e81c91a4555b4c8ea847ddffb1413058bbb152
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728545"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953979"
 ---
 # <a name="expression-examples-in-power-bi-report-builder"></a>Beispiele für Ausdrücke im Power BI-Berichts-Generator
-Ausdrücke werden häufig in paginierten Berichten des paginierten Power BI-Berichts-Generators verwendet, um den Inhalt und die Darstellung der Berichte zu steuern. Ausdrücke werden in Microsoft Visual Basic geschrieben und können integrierte Funktionen, benutzerdefinierten Code, Berichts- und Gruppenvariablen sowie benutzerdefinierte Variablen verwenden. Ausdrücke beginnen mit einem Gleichheitszeichen (=).   
+Ausdrücke werden in paginierten Berichten im Power BI Report Builder häufig verwendet, um den Inhalt und die Darstellung der Berichte zu steuern. Ausdrücke werden in Microsoft Visual Basic geschrieben und können integrierte Funktionen, benutzerdefinierten Code, Berichts- und Gruppenvariablen sowie benutzerdefinierte Variablen verwenden. Ausdrücke beginnen mit einem Gleichheitszeichen (=).   
 
 Dieses Thema enthält Beispiele für Ausdrücke, die für allgemeine Aufgaben in einem Bericht verwendet werden können.  
   

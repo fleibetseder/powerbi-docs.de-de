@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 704e073299f89859c507b3ddc6ccba0b4be03d76
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 9338bc914c7f4e4afd826bcd3e3452e7c7a3ef35
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73877374"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76040449"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi"></a>Erstellen und Verwenden von Dataflows in Power BI
 
@@ -155,6 +155,14 @@ Es kann vorkommen, dass beim Verbinden von Dataflows mit Datenquellen Probleme a
 * **JSON-Datei-Connector:** Derzeit können Sie eine Verbindung mit einer JSON-Datei nur über die Standardauthentifizierung herstellen.  Die Verbindung zu einer JSON-Datei durch Bereitstellen der Anmeldeinformationen innerhalb der URL (z.B. https://XXXXX.blob.core.windows.net/path/file.json?sv=2019-01-01&si=something&sr=c&sig=123456abcdefg.. ) wird derzeit **nicht** unterstützt.  
 
 * **Azure SQL Data Warehouse:** Dataflows unterstützen derzeit nicht die Azure Active Directory-Authentifizierung (AAD) für Azure SQL Data Warehouse. Verwenden Sie für dieses Szenario die Standardauthentifizierung.
+
+## <a name="considerations-and-limitations"></a>Überlegungen und Einschränkungen
+
+Bei Dataflows gibt es einige bekannte Einschränkungen, die in der folgenden Liste erläutert werden.
+
+* Ein Dataflow muss einen der folgenden Typen ausgeben: *Datum/Uhrzeit, Dezimalzahl, Text, ganze Zahl, Datum/Uhrzeit/Zeitzone, TRUE/FALSE, Datum, Uhrzeit*
+* Dynamische Funktionen werden in Dataflows derzeit nicht unterstützt.
+
 
 ## <a name="next-steps"></a>Nächste Schritte
 

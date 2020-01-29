@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 01/15/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 1670d3af200c8da672ac7034e4e15f6f460147a7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 6fd970064bbe686a433fba0c0675948576edd8c1
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73861323"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76039102"
 ---
 # <a name="visual-types-in-power-bi"></a>Visualtypen in Power BI
 Sie finden Visuals in Berichten, Dashboards und Q&A. Einige der Visualtypen sind in Power BI enthalten, und einige andere sind *benutzerdefinierte Visuals*. Benutzerdefinierte Visuals werden außerhalb von Power BI erstellt, damit *Berichts-Designer* sie zu Power BI-Berichten und -Dashboards hinzufügen können. 
@@ -59,7 +59,7 @@ Kombinationsdiagramme sind gut für folgende Zwecke geeignet:
 - Bei einem Liniendiagramm und ein Säulendiagramm mit der gleichen X-Achse
 - Zum Vergleichen mehrerer Measures mit verschiedenen Wertebereichen
 - Zum Verdeutlichen der Zusammenhänge zweier Measures in einem Visual
-- Zum Prüfen, ob eine Kennzahl das durch eine andere Kennzahl vorgegebene Ziel erfüllt
+- Zum Prüfen, ob ein Measure das durch ein anderes Measure definierte Ziel erfüllt
 - Zur Platzersparnis im Zeichenbereich
 
 ### <a name="doughnut-charts"></a>Ringdiagramme
@@ -140,6 +140,19 @@ Das Visual „Matrix“ ist eine Art Tabellenvisual (siehe „Tabelle“ unten),
 
 Kreisdiagramme zeigen die Beziehung von Teilen zum Ganzen. 
 
+### <a name="power-apps-visual"></a>Power Apps-Visual
+![Power Apps-Visual](media/end-user-visual-type/power-bi-powerapps-visual.png)
+
+Entwickler von Berichten können eine Power App erstellen und in einen Power BI-Bericht einbetten. Benutzer können mit diesem Visual im Power BI-Bericht interagieren. 
+
+### <a name="qa-visual"></a>Q&A-Visuals
+![Visuals für Fragen und Antworten](media/end-user-visual-type/power-bi-q-and-a.png)
+
+>[!TIP]
+>Ähnlich wie bei der [Verwendung der Q&A-Funktion in Dashboards](../power-bi-tutorial-q-and-a.md) können Sie mit dem Visual für Fragen und Antworten Fragen zu Ihren Daten in natürlicher Sprache stellen. 
+
+Weitere Informationen finden Sie unter [Visuals für Fragen und Antworten in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
+
 ### <a name="ribbon-chart"></a>Bänderdiagramm
 ![Menübanddiagramm](media/end-user-visual-type/power-bi-ribbon.png)
 
@@ -161,7 +174,7 @@ Punktplotdiagramme ähneln Blasen- und Punktdiagrammen mit der Ausnahme, dass nu
 ![Punktplotdiagramm](media/end-user-visual-type/power-bi-dot-plot-squares.png)
 
 ### <a name="scatter-high-density"></a>Punktdiagramme mit hoher Dichte
-![Punktdiagramm mit hoher Dichte](media/end-user-visual-type/density-scatter.png)
+![Punktdiagramme mit hoher Dichte](media/end-user-visual-type/density-scatter.png)
 
 Definitionsgemäß werden Stichproben von Daten mit hoher Dichte entnommen, um schnell Visuals zu erstellen, die auf Interaktivität reagieren. Die Stichprobenentnahme mit hoher Dichte nutzt einen Algorithmus, der überlappende Punkte ausschließt und sicherstellt, dass alle Punkte im Dataset im Visual dargestellt werden. Es wird nicht lediglich eine Stichprobe der Daten dargestellt.  
 

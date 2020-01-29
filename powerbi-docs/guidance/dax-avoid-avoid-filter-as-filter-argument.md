@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/30/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 935b453dabeaa731a218175526ddddeb980a2b92
-ms.sourcegitcommit: b09de56e971b8844a3771413d1f56d49b31baaaf
+ms.openlocfilehash: 6abcb77e3eb534e8b5d20c1d5567c117cbb97ffe
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692457"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76161430"
 ---
 # <a name="dax-avoid-using-filter-as-a-filter-argument"></a>DAX: Vermeiden der Verwendung von FILTER als Filterargument
 
@@ -36,13 +36,13 @@ CALCULATE(
 
 Die Funktion CALCULATE akzeptiert einen Tabellenausdruck, der von der DAX-Funktion [FILTER](/dax/filter-function-dax) zurückgegeben wird, die ihren Filterausdruck für jede Zeile der Tabelle **Produkt** auswertet. Sie erzielt das richtige Ergebnis – das Verkaufsergebnis für rote Produkte. Dies kann jedoch mit einem booleschen Ausdruck wesentlich effizienter erreicht werden.
 
-Im folgenden finden Sie eine verbesserte Measuredefinition, die einen booleschen Ausdruck anstelle des Tabellenausdrucks verwendet.
+Im folgenden finden Sie eine verbesserte Measuredefinition, die einen booleschen Ausdruck anstelle des Tabellenausdrucks verwendet. Die DAX-Funktion [KEEPFILTERS](/dax/keepfilters-function-dax) stellt sicher, dass vorhandene, auf die Spalte **Color** (Farbe) angewendete Filter beibehalten und nicht überschrieben werden.
 
 ```dax
 Red Sales =
 CALCULATE(
     [Sales],
-    'Product'[Color] = "Red"
+    KEEPFILTERS('Product'[Color] = "Red")
 )
 ```
 
