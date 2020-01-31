@@ -7,15 +7,15 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 11/27/2019
+ms.date: 1/16/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9e00e68e0a5f6df62072a1d9744276bffbd3beb4
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 4570fea58a19acb4f35a5c24d0a5bfa93beba215
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74791668"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537552"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exportieren von Power BI-Berichten als PDF-Dateien
 
@@ -63,6 +63,7 @@ Einige Aspekte und Einschränkungen sind bei der Arbeit mit dem Feature **In PDF
 * URL-Filter werden zurzeit nicht beachtet, wenn Sie **Aktuelle Werte** für Ihren Export auswählen.
 * Bei Berichten mit ungewöhnlichen benutzerdefinierten Seitengrößen können in Exportszenarien Probleme auftreten. Um optimale Ergebnisse zu erzielen, sollten Sie zu einer Standardseitengröße für den Bericht wechseln.
 * Beim Exportieren nach PDF werden bei Berichten, die Designs mit benutzerdefinierten Schriftarten verwenden, die benutzerdefinierte Schriftart durch eine Standardschriftart ersetzt.
+* Grundsätzlich sollte Ihnen eine konsistente Servicequalität zur Verfügung stehen, es kann jedoch nicht garantiert werden, dass das aus Power BI exportierte PDF immer mit dem aus einer lokalen Power BI Desktop-Datei exportierten PDF übereinstimmt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Drucken eines Berichts](end-user-print.md)

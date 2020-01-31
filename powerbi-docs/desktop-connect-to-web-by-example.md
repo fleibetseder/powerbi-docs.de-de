@@ -6,33 +6,33 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 01/21/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 131101d6e7a23b7c6d8571c89097036f1149a2f3
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 2c09f21565cdf9987aad2027a148823fb32e2e55
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761540"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538968"
 ---
 # <a name="get-webpage-data-by-providing-examples"></a>Abrufen von Webseitendaten durch Angeben von Beispielen
 
-Durch Abrufen von Daten aus einer Webseite können Benutzer Daten ganz einfach aus Webseiten extrahieren und in **Power BI Desktop** importieren. Häufig liegen Daten auf Webseiten jedoch nicht in ordentlichen Tabellen vor, die sich problemlos extrahieren lassen. Das Abrufen von Daten aus solchen Seiten kann also – auch wenn die Daten strukturiert und konsistent sind – eine ziemliche Herausforderung sein. 
+Durch Abrufen von Daten aus einer Webseite können Benutzer Daten ganz einfach aus Webseiten extrahieren und in *Power BI Desktop* importieren. Häufig befinden sich die Daten auf Webseiten jedoch nicht in aufgeräumten Tabellen, die leicht zu extrahieren sind. Daten aus solchen Seiten zu erhalten, kann eine Herausforderung sein, selbst wenn die Daten strukturiert und konsistent sind.
 
-Es gibt jedoch eine Lösung: Mit dem Feature **Daten anhand von Beispielen aus dem Web abrufen** können Sie **Power BI Desktop** zeigen, welche Daten Sie extrahieren möchten, indem Sie im Connector-Dialogfeld mindestens ein Beispiel angeben. Power BI Desktop erfasst dann weitere Daten auf der Seite, die Ihren Beispielen entsprechen. Mit dieser Lösung können Sie alle Arten von Daten aus Webseiten extrahieren, also Daten in Tabellen *und* Daten, die sich nicht in Tabellen befinden. 
+Es gibt jedoch eine Lösung: Mit dem Feature *Get Data from Web by example* (Daten per Beispiel aus dem Web holen) können Sie grundlegend Power BI Desktop zeigen, welche Daten Sie extrahieren möchten, indem Sie ein oder mehrere Beispiele im Connectordialogfeld bereitstellen. Power BI Desktop sammelt andere Daten auf der Seite, die Ihren Beispielen entsprechen. Mit dieser Lösung können Sie alle Arten von Daten aus Webseiten extrahieren, also Daten in Tabellen *und* Daten, die sich nicht in Tabellen befinden.
 
 ![Daten anhand von Beispielen aus dem Web abrufen](media/desktop-connect-to-web-by-example/web-by-example_01.png)
 
-
+Die Preise in den Abbildungen dienen nur als Beispiel.
 
 ## <a name="using-get-data-from-web-by-example"></a>Verwenden von „Daten anhand von Beispielen aus dem Web abrufen“
 
-Um **Daten anhand von Beispielen aus dem Web abrufen** zu verwenden, klicken Sie im Menübandmenü **Start** auf **Daten abrufen**. Wählen Sie im angezeigten Fenster links im Bereich der Kategorien die Option **Andere** und dann **Web** aus.
+Klicken Sie im Menüband **Start** auf **Daten abrufen**. Wählen Sie im angezeigten Dialogfeld **Andere** aus den Kategorien im linken Bereich aus, und wählen Sie dann **Web** aus. Klicken Sie auf **Verbinden**, um den Vorgang fortzusetzen.
 
 ![Option „Web“ im Bereich „Daten abrufen“](media/desktop-connect-to-web-by-example/web-by-example_03.png)
 
-Geben Sie dort die URL der Webseite ein, aus der Sie Daten extrahieren möchten. In diesem Artikel verwenden wir die Microsoft Store-Webseite und zeigen, wie dieser Connector funktioniert. 
+Geben Sie in **Aus dem Web** die URL der Webseite ein, aus der Sie Daten extrahieren möchten. In diesem Artikel wird die Microsoft Store-Webseite verwendet, und es wird gezeigt, wie dieser Connector funktioniert.
 
 Wenn Sie das Prozedere nachvollziehen möchten, können Sie die gleiche [Microsoft Store-URL](https://www.microsoft.com/store/top-paid/games/xbox?category=classics) verwenden wie in diesem Artikel:
 
@@ -40,34 +40,33 @@ Wenn Sie das Prozedere nachvollziehen möchten, können Sie die gleiche [Microso
 
 ![Webdialogfeld](media/desktop-connect-to-web-by-example/web-by-example_04.png)
 
-Wenn Sie auf **OK** klicken, werden Sie zum Dialogfeld **Navigator** weitergeleitet, in dem alle automatisch erkannten Tabellen der Webseite angezeigt werden. In der Abbildung unten wurden keine Tabellen gefunden. Unten auf der Seite befindet sich jedoch eine Schaltfläche namens **Tabelle anhand von Beispielen extrahieren**, über die Sie Beispiele angeben können.
-
+Wenn Sie auf **OK** klicken, werden Sie zum Dialogfeld **Navigator** weitergeleitet, in dem alle automatisch erkannten Tabellen der Webseite angezeigt werden. In dem in der Abbildung unten gezeigten Fall wurden keine Tabellen gefunden. Wählen Sie **Tabelle anhand von Beispielen hinzufügen** aus, um Beispiele bereitzustellen.
 
 ![Navigator-Fenster](media/desktop-connect-to-web-by-example/web-by-example_05.png)
 
-Wenn Sie **Tabelle anhand von Beispielen extrahieren** auswählen, wird ein interaktives Fenster geöffnet, in dem Sie eine Vorschau des Webseiteninhalts anzeigen und Beispielwerte für die Daten angeben können, die Sie extrahieren möchten. 
+**Tabelle anhand von Beispielen hinzufügen** zeigt ein interaktives Fenster, in dem Sie den Inhalt der Webseite vorher anzeigen können. Geben Sie Beispielwerte der Daten ein, die Sie extrahieren möchten.
 
-In diesem Beispiel extrahieren wir den *Namen* und den *Preis* für jedes Spiel auf der Seite. Hierzu geben wir wie in der folgenden Abbildung gezeigt für jede Spalte einige Beispiele von der Seite an. Wenn diese Beispiele eingegeben sind, kann **Power Query** (die zugrunde liegende Technologie, die die Daten von der Webseite extrahiert) mithilfe von intelligenten Algorithmen Daten extrahieren, die dem Muster der Beispieleinträge entsprechen.
+In diesem Beispiel extrahieren wir den *Namen* und den *Preis* für jedes Spiel auf der Seite. Das können wir tun, indem wir für jede Spalte einige Beispiele von der Seite angeben. Bei der Eingabe von Beispielen extrahiert *Power Query* mithilfe intelligenter Datenextraktionsalgorithmen Daten, die dem Muster der Beispieleinträge entsprechen.
 
 ![Daten anhand von Beispielen](media/desktop-connect-to-web-by-example/web-by-example_06.png)
 
-> Hinweis: In Wertvorschläge sind nur Werte enthalten, die höchstens 128 Zeichen umfassen.
+> [!NOTE]
+> In Wertvorschläge sind nur Werte enthalten, die höchstens 128 Zeichen umfassen.
 
-Sobald wir mit den von der Webseite extrahierten Daten zufrieden sind, klicken wir auf **OK**, um zum **Abfrage-Editor** zu wechseln. Dort können wir weitere Transformationen anwenden oder die Daten formen, indem wir diese Daten mit Daten aus anderen Quellen kombinieren.
+Wenn Sie mit den aus der Webseite extrahierten Daten zufrieden sind, wählen Sie **OK** aus, um zum Power Query-Editor zu gelangen. Sie können weitere Transformationen anwenden oder die Daten erstellen, wie z. B. diese Daten mit anderen Daten aus unseren Quellen zu kombinieren.
 
 ![Daten anhand von Beispielen](media/desktop-connect-to-web-by-example/web-by-example_07.png)
 
-Nun können Sie Visuals erstellen oder die Webseitendaten auf andere Weise nutzen, wenn Sie Ihre **Power BI Desktop**-Berichte erstellen.
-
+Nun können Sie Visuals erstellen oder die Webseitendaten auf andere Weise nutzen, wenn Sie Ihre Power BI Desktop-Berichte erstellen.
 
 ## <a name="next-steps"></a>Nächste Schritte
-Es gibt viele verschiedene Arten von Daten, mit denen Sie über **Power BI Desktop** eine Verbindung herstellen können. Weitere Informationen zu Datenquellen finden Sie in folgenden Ressourcen:
 
-* [Spalte nach Beispiel hinzufügen](desktop-add-column-from-example.md)
-* [Herstellen einer Verbindung mit einer Webseite](desktop-connect-to-web.md)
+Sie können mithilfe von Power BI Desktop eine Verbindung mit Daten jeglicher Art herstellen. Weitere Informationen zu Datenquellen finden Sie in folgenden Ressourcen:
+
+* [Hinzufügen einer Spalte aus einem Beispiel in Power BI Desktop](desktop-add-column-from-example.md)
+* [Verbinden mit Webseiten von Power BI Desktop](desktop-connect-to-web.md)
 * [Datenquellen in Power BI Desktop](desktop-data-sources.md)
-* [Strukturieren und Kombinieren von Daten mit Power BI Desktop](desktop-shape-and-combine-data.md)
-* [Verbinden mit Excel in Power BI Desktop](desktop-connect-excel.md)   
-* [Verbinden mit CSV-Dateien in Power BI Desktop](desktop-connect-csv.md)   
-* [Eingeben von Daten direkt in Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   
-
+* [Strukturieren und Kombinieren von Daten in Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Verbinden mit Excel in Power BI Desktop](desktop-connect-excel.md)
+* [Verbinden mit CSV-Dateien in Power BI Desktop](desktop-connect-csv.md)
+* [Eingeben von Daten direkt in Power BI Desktop](desktop-enter-data-directly-into-desktop.md)

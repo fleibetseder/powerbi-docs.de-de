@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 024e04bd309080b5b31e43bde7c783255bfc3dba
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 70a1aed046ac213e314da2ddaecafab9c5a941ee
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73851062"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537230"
 ---
 # <a name="enable-data-sensitivity-labels-in-power-bi-preview"></a>Aktivieren von Vertraulichkeitsbezeichnungen für Daten in Power BI (Vorschau)
 
@@ -73,3 +73,4 @@ In diesem Artikel wurde beschrieben, wie Sie Vertraulichkeitsbezeichnungen auf D
 * [Übersicht über den Datenschutz in Power BI](service-security-data-protection-overview.md)
 * [Anwenden von Vertraulichkeitsbezeichnungen auf Daten in Power BI](../designer/service-security-apply-data-sensitivity-labels.md)
 * [Verwenden von Microsoft Cloud App Security-Steuerelementen in Power BI](service-security-using-microsoft-cloud-app-security-controls.md)
+* [Bericht zu Datenschutzmetriken](service-security-data-protection-metrics-report.md)

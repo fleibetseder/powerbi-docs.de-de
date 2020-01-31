@@ -1,22 +1,22 @@
 ---
 title: Integration der mobilen Power BI-App mit Siri-Kurzbefehlen
 description: Hier erfahren Sie, wie Siri-Verknüpfungen verwendet werden können, um direkt auf gewünschte Power BI-Inhalte zuzugreifen.
-author: KesemSharabi
-manager: mshenhav
+author: paulinbar
+manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/03/2019
-ms.author: michalfo
-ms.openlocfilehash: befe57bd0c3441a44f4db745e3af73bd9afed933
-ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
+ms.date: 01/15/2020
+ms.author: painbar
+ms.openlocfilehash: e5df11f6321481e95718ddda39dca300079277a1
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73783540"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537989"
 ---
-# <a name="using-siri-shortcuts-in-power-bi-mobile-ios-app-preview"></a>Verwenden von Siri-Verknüpfungen in der Power BI Mobile-App für iOS (Vorschauphase)
+# <a name="using-siri-shortcuts-in-power-bi-mobile-ios-app"></a>Verwenden von Siri-Verknüpfungen in der Power BI Mobile-App für iOS
 
 Verwenden Sie Siri-Verknüpfungen, um direkt auf gewünschte Power BI-Inhalte zuzugreifen.
 

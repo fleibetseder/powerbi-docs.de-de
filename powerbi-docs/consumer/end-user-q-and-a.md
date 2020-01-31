@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 12/18/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 5dd924f066b6382ed895d81ed0ada5d913c040e6
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: cc20d981e1e774eed109c614e146415ec3813601
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75218182"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709804"
 ---
-# <a name="qa-for-power-bi-consumers"></a>Q&A für Power BI-**Verbraucher**
+# <a name="qa-for-power-bi-consumers"></a>Q&A für Power BI-Verbraucher
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -167,6 +167,10 @@ Klicken Sie dann auf **Einstellungen** > **Dashboards**. Stellen Sie sicher, das
 **Antwort**: Wählen Sie die Option zur Kontaktaufnahme mit dem Besitzer des Berichts oder des Dashboards aus. Die Kontaktaufnahme ist direkt über die Q&A-Dashboardseite oder das Q&A-Visual möglich. Alternativ können Sie den Besitzer über die Power BI-Kopfzeile ermitteln.  Es gibt viele Dinge, die der Designer tun kann, um die Q&A-Ergebnisse zu verbessern. Beispielsweise kann der Designer Spalten im Dataset umbenennen, um Begriffe zu verwenden, die einfacher zu verstehen sind (z.B. `CustomerFirstName` anstelle von `CustFN`). Da der Designer das Dataset sehr gut kennt, kann er hilfreiche Fragen formulieren und den von Q&A vorgeschlagenen Fragen hinzufügen.
 
 ![Anzeige von Kontaktinformationen](media/end-user-q-and-a/power-bi-q-and-a-contact.png)
+
+## <a name="privacy"></a>Datenschutz
+
+Microsoft verwendet Ihre Fragen möglicherweise, um Power BI zu verbessern. Weitere Informationen finden Sie in der [Microsoft-Datenschutzerklärung](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 ## <a name="next-steps"></a>Nächste Schritte
 Informationen zum Erstellen eines Q&A-Visuals und dessen Verwaltung durch einen *Berichtdesigner* finden Sie unter [Q&A-Visualtyp](../visuals/power-bi-visualization-q-and-a.md).

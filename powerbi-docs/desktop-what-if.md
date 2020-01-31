@@ -1,67 +1,69 @@
 ---
-title: Verwenden von Was-wäre-wenn-Parametern zum Visualisieren von Variablen
-description: Erstellen Sie eine eigene Was-wäre-wenn-Variable, um Variablen in Power BI-Berichten zu imaginieren und visualisieren
+title: Verwenden von What-if-Parametern zum Visualisieren von Variablen
+description: Hier erfahren Sie, wie Sie Ihre eigene What-if-Variable erstellen, um Variablen in Power BI-Berichten zu visualisieren.
 author: davidiseminger
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 01/21/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8b9f1fc618e30d93da36b28f710dbd33f8125054
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 8a72bc43bcceae6e676728934ceec81c8cb27d04
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75759312"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76539399"
 ---
 # <a name="create-and-use-what-if-parameters-to-visualize-variables-in-power-bi-desktop"></a>Erstellen und Verwenden von Was-wäre-wenn-Parametern zum Visualisieren von Variablen in Power BI Desktop
-Ab dem **Power BI Desktop**-Release von August 2018 können Sie **Was-wäre-wenn**-Variablen für Ihre Berichte erstellen, mit Variablen als Slicer interagieren und unterschiedliche wichtige Werte in den Berichten visualisieren und quantifizieren.
 
-![](media/desktop-what-if/what-if_01.png)
+Ab dem *Power BI Desktop*-Release von August 2018 können Sie *What-if*-Variablen für Ihre Berichte erstellen, mit Variablen als Slicer interagieren und unterschiedliche wichtige Werte in den Berichten visualisieren und quantifizieren.
 
-Der Parameter **Was-wäre-wenn** befindet sich auf der Registerkarte **Modellierung** von **Power BI Desktop**. Wenn Sie diese Option auswählen, wird ein Dialogfeld angezeigt, in dem Sie den Parameter konfigurieren können.
+![Die Option „Neuer Parameter“](media/desktop-what-if/what-if_01.png)
 
-## <a name="creating-a-what-if-parameter"></a>Erstellen eines Was-wäre-wenn-Parameters
-Wählen Sie zum Erstellen eines **Was-wäre-wenn**-Parameters die Schaltfläche **Was-wäre-wenn** auf der Registerkarte **Modellierung** in **Power BI Desktop**. In der folgenden Abbildung wurde ein Parameter mit dem Namen *Discount percentage* (Rabattprozentsatz) erstellt und sein Datentyp auf *Dezimalzahl* festgelegt. Der Wert von *Minimum* ist 0, und der Wert von *Maximum* ist 0,50 (fünfzig Prozent). Außerdem wurde *Inkrement* auf 0,05 bzw. fünf Prozent festgelegt. Um diesen Betrag wird der Parameter angepasst, wenn in einem Bericht eine Interaktion mit ihm erfolgt.
+Erstellen Sie einen *What-if*-Parameter in der Registerkarte **Modellierung** in Power BI Desktop. Wenn Sie diese Option auswählen, wird ein Dialogfeld angezeigt, in dem Sie den Parameter konfigurieren können.
 
-![](media/desktop-what-if/what-if_02.png)
+## <a name="creating-a-what-if-parameter"></a>Erstellen eines What-if-Parameters
+
+Wählen Sie zum Erstellen eines What-if-Parameters **Neuer Parameter** aus der Registerkarte **Modellierung** in Power BI Desktop aus. In der folgenden Abbildung wurde ein Parameter mit dem Namen *Discount percentage* (Rabattprozentsatz) erstellt und der dazugehörige Datentyp auf **Dezimalzahl** festgelegt. Der **Mindestwert** ist Null. Der **Maximalwert** ist 0,50 (50 Prozent). Außerdem wurde **Inkrement** auf 0,05 bzw. fünf Prozent festgelegt. Um diesen Betrag wird der Parameter angepasst, wenn in einem Bericht eine Interaktion mit ihm erfolgt.
+
+![Werte für What-if-Parameter](media/desktop-what-if/what-if_02.png)
 
 > [!NOTE]
-> Stellen Sie Dezimalzahlen eine 0 voran, also 0,50 und nicht ,50. Andernfalls wird die Zahl nicht ausgewertet, und die Schaltfläche **OK** kann nicht ausgewählt werden.
+> Stellen Sie bei Dezimalzahlen sicher, dass Sie dem Wert eine Null (0) voranstellen, also 0,50 und nicht ,50. Andernfalls wird die Zahl nicht ausgewertet, und die Schaltfläche **OK** kann nicht ausgewählt werden.
 > 
 > 
 
-Durch Aktivieren des Kontrollkästchens **Slicer zu dieser Seite hinzufügen** wird mit dem **Was-wäre-wenn**-Parameter automatisch ein Slicer auf der aktuellen Berichtsseite hinzugefügt.
+Durch Aktivieren des Kontrollkästchens **Slicer zu dieser Seite hinzufügen** wird mit dem What-if-Parameter automatisch ein Slicer auf der aktuellen Berichtsseite hinzugefügt.
 
-![](media/desktop-what-if/what-if_03.png)
+![Neue Slicer auf der aktuellen Berichtsseite](media/desktop-what-if/what-if_03.png)
 
-Durch das Erstellen eines **Was-wäre-wenn**-Parameters wird auch ein Measure erstellt, mit dem Sie den aktuellen Wert des **Was-wäre-wenn**-Parameters visualisieren können.
+Durch das Erstellen eines What-if-Parameters wird auch ein Measure erstellt, mit dem Sie den aktuellen Wert des What-if-Parameters visualisieren können.
 
-![](media/desktop-what-if/what-if_04.png)
+![Ein für What-if-Parameter erstelltes Measure](media/desktop-what-if/what-if_04.png)
 
-Beachten Sie, dass nach dem Erstellen eines **Was-wäre-wenn**-Parameters sowohl der Parameter als auch das Measure Teil des Modells werden. Sie sind somit im gesamten Bericht verfügbar und können auf anderen Berichtsseiten verwendet werden. Da sie Teil des Modells sind, können Sie zudem den Slicer von der Berichtsseite löschen. Wenn er wieder auf ihr enthalten sein soll, ziehen Sie einfach den Parameter **Was-wäre-wenn** aus der Liste **Felder** in den Zeichenbereich (ändern Sie dann das Visual in einen Slicer), um den Parameter einfach wieder dem Bericht hinzuzufügen.
+Beachten Sie auf jeden Fall, dass nach dem Erstellen eines What-if-Parameters sowohl der Parameter als auch das Measure Teil des Modells werden. Sie sind somit im gesamten Bericht verfügbar und können auf anderen Berichtsseiten verwendet werden. Da diese auch Teil des Modells sind, können Sie den Slicer von der Berichtsseite löschen. Wenn Sie diesen zurückhaben möchten, nehmen Sie einfach den What-if-Parameter aus der Liste **Felder**, ziehen Sie diesen in den Zeichenbereich, und ändern Sie dann das Visual in einen Slicer.
 
-## <a name="using-a-what-if-parameter"></a>Verwenden eines Was-wäre-wenn-Parameters
-Lassen Sie uns ein einfaches Beispiel für die Verwendung eines **Was-wäre-wenn**-Parameters erstellen. Im vorherigen Abschnitt haben wir den **Was-wäre-wenn**-Parameter erstellt. Jetzt werden wir ihn auch verwenden, indem wir ein neues Measure erstellen, dessen Wert mit dem Schieberegler angepasst wird. Zu diesem Zweck erstellen wir ein neues Measure.
+## <a name="using-a-what-if-parameter"></a>Verwenden eines What-if-Parameters
 
-![](media/desktop-what-if/what-if_05.png)
+Nun wird ein einfaches Beispiel für die Verwendung eines What-if-Parameters erstellt. Im vorherigen Abschnitt wurde der What-if-Parameter bereits erstellt. Jetzt wird dieser verwendet, indem ein neues Measure erstellt wird, dessen Wert sich mit dem Schieberegler anpasst.
 
-Das neue Measure ist einfach der Gesamtumsatz, auf den der Rabatt angewendet wird. Sie können selbstverständlich komplexe und interessante Measures erstellen, mit denen die Benutzer Ihrer Berichte die Variable des **Was-wäre-wenn**-Parameters visualisieren können. Sie können z.B. einen Bericht erstellen, mit dem Vertriebsmitarbeiter die Vergütung, die sie beim Erreichen bestimmter Umsatzziele oder -prozentwerte erhalten, oder die Erhöhung von Rabatten aufgrund höherer Umsätze anzeigen können.
+![Hinzufügen eines neuen Measures mit dem Parameter](media/desktop-what-if/what-if_05.png)
 
-Sobald wir die Measureformel in der Bearbeitungsleiste eingegeben und sie mit **Sales after Discount** (Auftragsrabatt) benannt haben, wird das Ergebnis angezeigt:
+Das neue Measure ist einfach der Gesamtumsatz, auf den der Rabatt angewendet wird. Sie können komplexe und interessante Measures erstellen, mit denen die Benutzer Ihrer Berichte die Variable des What-if-Parameters visualisieren können. Sie können z.B. einen Bericht erstellen, mit dem Vertriebsmitarbeiter die Vergütung, die sie beim Erreichen bestimmter Umsatzziele oder -prozentwerte erhalten, oder die Erhöhung von Rabatten aufgrund höherer Umsätze anzeigen können.
 
-![](media/desktop-what-if/what-if_06.png)
+Geben Sie die Measureformel in die Bearbeitungsleiste ein, und benennen Sie die Formel mit *Sales after Discount* (Auftragsrabatt).
 
-Anschließend erstellen wir ein Säulendiagramm-Visual mit *OrderDate* auf der Achse und mit *SalesAmount* und dem gerade erstellten Measure *Sales after Discount* (Auftragsrabatt) als Werte.
+![Definition von Sales after Discount (Auftragsrabatt)](media/desktop-what-if/what-if_06.png)
 
-![](media/desktop-what-if/what-if_07.png)
+Anschließend erstellen wir ein Säulendiagramm-Visual mit **OrderDate** auf der Achse und mit **SalesAmount** und dem gerade erstellten Measure **Sales after Discount** (Auftragsrabatt) als Werte.
 
-Wenn wir dann den Schieberegler bewegen, stellen wir fest, dass die Spalte *Sales after Discount* (Auftragsrabatt) den ermäßigten Umsatzbetrag wiedergibt.
+![Visualisierung für SalesAmount](media/desktop-what-if/what-if_07.png)
 
-![](media/desktop-what-if/what-if_08.png)
+Wenn wir dann den Schieberegler bewegen, stellen wir fest, dass die Spalte **Sales after Discount** (Auftragsrabatt) den ermäßigten Umsatzbetrag wiedergibt.
 
-Das war schon alles. Sie können den **Was-wäre-wenn**-Parameter in allen möglichen Situationen verwenden, damit die Benutzer von Berichten mit unterschiedlichen Szenarien interagieren können, die Sie in Ihren Berichten erstellen.
+![Interagieren des Schiebereglers mit der Visualisierung](media/desktop-what-if/what-if_08.png)
 
+Das war schon alles. Sie können What-if-Parameter in allen möglichen Situationen verwenden. Diese Parameter ermöglichen den Benutzern von Berichten die Interaktion mit verschiedenen Szenarios, die Sie in Ihren Berichten erstellen.

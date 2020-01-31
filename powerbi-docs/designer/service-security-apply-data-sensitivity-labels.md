@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 09f3a3e2dce7fd3462c5a21f014bf630bfc7c83e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ea4e8da2e821483fc567a3038c6133c60992e593
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879038"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538426"
 ---
 # <a name="apply-data-sensitivity-labels-in-power-bi-preview"></a>Anwenden von Vertraulichkeitsbezeichnungen auf Daten in Power BI (Vorschau)
 
@@ -58,6 +58,9 @@ Um eine Vertraulichkeitsbezeichnung für ein Dataset festzulegen, klicken Sie au
 
 Das Anwenden oder Ändern einer Vertraulichkeitsbezeichnung für eine Dataflow erfolgt nach dem gleichen Verfahren wie bei Datasets.
 
+## <a name="removing-sensitivity-labels"></a>Entfernen von Vertraulichkeitsbezeichnungen
+Wenn Sie eine Vertraulichkeitsbezeichnung von einem Bericht, einem Dashboard, einem Dataset oder einem Dataflow entfernen möchten, können Sie prinzipiell die gleichen Schritte wie für das [Anwenden von Vertraulichkeitsbezeichnungen](#applying-sensitivity-labels) ausführen, Sie wählen jedoch die Option **(Keine)** aus, wenn Sie zur Klassifizierung der Vertraulichkeit der Daten aufgefordert werden. 
+
 ## <a name="data-protection-in-exported-files"></a>Datenschutz in exportierten Dateien
 
 Wenn Sie [Daten aus einem Bericht exportieren](https://docs.microsoft.com/power-bi/consumer/end-user-export), für die eine Vertraulichkeitsbezeichnung festgelegt wurde, erbt die generierte Datei (Excel, PowerPoint und PDF, CSV wird nicht unterstützt) die Vertraulichkeitsbezeichnung. Die Vertraulichkeitsbezeichnung ist in der Datei sichtbar, und der Zugriff auf die Datei wird auf die Benutzer beschränkt, die über ausreichende Berechtigungen verfügen.
@@ -73,16 +76,16 @@ Berücksichtigen Sie bei der Anwendung von Vertraulichkeitsbezeichnungen Folgend
 * Das Erzwingen von Bezeichnungen und Schutzeinstellungen für exportierte Dateien wird nur für Excel-, PowerPoint- und PDF-Dateien unterstützt. Bezeichnungen und Schutzeinstellungen werden nicht erzwungen, wenn Daten in CSV-Dateien exportiert, E-Mails abonniert, Visuals eingebettet und gedruckt werden.
 * Ein Benutzer, der eine Datei aus Power BI exportiert, kann gemäß den Einstellungen der Vertraulichkeitsbezeichnung auf diese Datei zugreifen und sie bearbeiten. Ein Benutzer, der Daten in eine Datei exportiert, erhält keine Besitzerberechtigungen für die Datei. 
 * Vertraulichkeitsbezeichnungen stehen für [paginierte Berichte]( https://docs.microsoft.com/power-bi/paginated-reports-report-builder-power-bi) und Arbeitsmappen aktuell nicht zur Verfügung. 
-* Sie können eine Bezeichnung aktuell nicht aus einem Power BI-Asset löschen, nachdem sie angewendet wurde.
-* Vertraulichkeitsbezeichnungen für Power BI-Assets sind nur in der Arbeitsbereichsliste und in Herkunftsansichten sichtbar. In den Ansichten „Favoriten“, „Für mich freigegeben“, „Kürzlich verwendet“ oder in der App-Ansicht werden Bezeichnungen aktuell nicht angezeigt. Beachten Sie jedoch, dass eine auf ein Power BI-Asset angewendete Vertraulichkeitsbezeichnung – auch wenn sie nicht sichtbar ist – immer dauerhaft mit den Daten gespeichert wird, die in Excel-, PowerPoint- und PDF-Dateien exportiert werden.
-* Die Vertraulichkeitsbezeichnung *Dateiverschlüsselungseinstellung*, die entweder im [Microsoft 365 Security Center](https://security.microsoft.com/) oder im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/) konfiguriert ist, gilt nur für Dateien, die aus Power BI *exportiert werden*. Es erfolgt keine Erzwingung *innerhalb von Power BI*.
+* Vertraulichkeitsbezeichnungen für Power BI-Objekte sind nur in der Arbeitsbereichsliste und in Herkunftsansichten sichtbar. In den Ansichten „Favoriten“, „Für mich freigegeben“, „Kürzlich verwendet“ oder in der App-Ansicht werden Bezeichnungen aktuell nicht angezeigt. Beachten Sie jedoch, dass eine auf ein Power BI-Asset angewendete Vertraulichkeitsbezeichnung – auch wenn sie nicht sichtbar ist – immer dauerhaft mit den Daten gespeichert wird, die in Excel-, PowerPoint- und PDF-Dateien exportiert werden.
+* Die Vertraulichkeitsbezeichnung *Dateiverschlüsselungseinstellung*, die entweder im [Microsoft 365 Security Center](https://security.microsoft.com/) oder im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/) konfiguriert ist, gilt nur für Dateien, die aus Power BI *exportiert werden*. Sie wird *innerhalb von Power BI* nicht erzwungen.
 * [HYOK-Schutz](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions) (Hold Your Own Key) wird für in Power BI angewendete Bezeichnungen nicht unterstützt.
 * Für das Anzeigen und Anwenden von Bezeichnungen in Office-Apps gelten [Lizenzanforderungen](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#subscription-and-licensing-requirements-for-sensitivity-labels).
 * Vertraulichkeitsbezeichnungen werden nur für Mandanten in der globalen (öffentlichen) Cloud unterstützt. Für Mandanten in anderen Clouds werden keine Vertraulichkeitsbezeichnungen unterstützt.
+* Vertraulichkeitsbezeichnungen werden für [externe Benutzer (B2B-Gastbenutzer in Azure Active Directory)](../service-admin-azure-ad-b2b.md) nicht unterstützt. Das bedeutet, dass externe Benutzer sich keine Bezeichnungen ansehen und keine Daten als Excel-, PDF- oder PPTX-Datei exportieren können. [Entfernen Sie die Bezeichnung](#removing-sensitivity-labels), um externen Benutzern den Export in diese Dateitypen zu ermöglichen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Artikel wurde beschrieben, wie Sie Vertraulichkeitsbezeichnungen auf Daten in Power BI anwenden. Die folgenden Artikel stellen ausführlichere Informationen zum Datenschutz in Power BI bereit. 
+In diesem Artikel wurde beschrieben, wie Sie Vertraulichkeitsbezeichnungen auf Daten in Power BI anwenden. In den folgenden Artikeln finden Sie ausführlichere Informationen zum Datenschutz in Power BI. 
 
 * [Übersicht über den Datenschutz in Power BI](../admin/service-security-data-protection-overview.md)
 * [Aktivieren von Vertraulichkeitsbezeichnungen für Daten in Power BI](../admin/service-security-enable-data-sensitivity-labels.md)

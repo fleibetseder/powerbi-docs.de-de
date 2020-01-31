@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/16/2019
+ms.date: 01/18/2020
 ms.author: painbar
-ms.openlocfilehash: bb54a4e403f2cc12800d0c97e44308f7ad5c5f65
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 27f6469cb960ff101f45636e0720b935929ff010
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75220724"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538120"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Durchsuchen von Berichten in den mobilen Power BI-Apps
 Gilt für:
@@ -53,6 +53,13 @@ Tippen Sie auf **Weitere Optionen** (...) in der rechten oberen Ecke einer Kache
 ## <a name="interact-with-reports"></a>Interagieren mit Berichten
 Nachdem Sie einen Bericht in der App geöffnet haben, können Sie mit diesem arbeiten. Mit Ihrem Bericht und dessen Daten können Sie vieles tun. In der Fußzeile des Berichts finden Sie Aktionen, die Sie für den Bericht ausführen können. Wenn Sie auf die im Bericht angezeigten Daten tippen bzw. lange tippen, können Sie Slice-and-Dice für Daten ausführen.
 
+### <a name="single-tap-versus-double-tap-interaction"></a>Interaktion durch einfaches Tippen im Vergleich zum Doppeltippen
+Wenn Sie die mobile Power BI-App herunterladen, ist hierfür die Interaktion durch einfaches Tippen festgelegt. Wenn Sie also auf ein Visual tippen, um eine Aktion durchzuführen, z. B. ein Datenschnittelement auswählen, Elemente übergreifend hervorheben oder auf einen Link oder eine Schaltfläche klicken, wird durch das Tippen sowohl das Visual ausgewählt als auch die gewünschte Aktion ausgeführt.
+
+Wenn Sie möchten, können Sie die App auf die Interaktion durch Doppeltippen umstellen. Bei der Interaktion durch Doppeltippen tippen Sie zuerst auf das Visual, das Sie auswählen möchten, und dann in das Visual, um Ihre gewünschte Aktion auszuführen.
+
+Um zur Interaktion durch Doppeltippen oder zurück zur Interaktion durch einfaches Tippen zu wechseln, navigieren Sie zu den [App-Interaktionseinstellungen](./mobile-app-interaction-settings.md).
+
 ### <a name="using-tap-and-long-tap"></a>Verwenden von Antippen und langem Antippen
 Ein Tippen gleicht einem Mausklick. Wenn Sie den Bericht auf Grundlage eines Datenpunkts übergreifend hervorheben möchten, tippen Sie auf den Datenpunkt.
 Wenn Sie auf einen Datenschnittwert tippen, wird der Wert ausgewählt und für den Rest des Berichts wird ein Datenschnitt anhand des Werts durchgeführt.
@@ -63,7 +70,6 @@ Wahrscheinlich haben Sie bemerkt, dass ein Rahmen angezeigt wird, wenn Sie auf e
 ![Visual und Menü](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
 ### <a name="tooltip-and-drill-actions"></a>QuickInfo und Drillaktionen
-
 Wenn Sie einen Datenpunkt lange antippen (tippen und halten), wird eine QuickInfo mit den Werten angezeigt, die dieser Datenpunkt repräsentiert:
 
 ![QuickInfo](./media/mobile-reports-in-the-mobile-apps/report-tooltip.png)
@@ -126,6 +132,8 @@ Beispiel:
 
 Die mobile Power BI-App unterstützt sowohl vom Berichtersteller definierte Berichtlesezeichen, als auch persönliche Lesezeichen, die Sie im Power BI-Dienst definieren können. Sie finden das Lesezeichenmenü unter **Weitere Optionen** (...) auf der [Symbolleiste „Berichtsaktionen“](mobile-reports-in-the-mobile-apps.md#all-report-actions).
 
+Standardlesezeichen sind durch ein spezielles Symbol gekennzeichnet. Für persönliche Lesezeichen können Sie die Standardeinstellung festlegen, zurücksetzen oder ändern, indem Sie neben dem Lesezeichen, das Sie ändern möchten, auf **Weitere Optionen (...)** tippen und **Als Standard festlegen** oder **Standardwert löschen** auswählen.
+
 ![Lesezeichenmenü](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-menu.png)
 
 Wenn eine Lesezeichenansicht eines Berichts geöffnet ist, wird der Name des Lesezeichens am oberen Rand des Berichts angezeigt.
@@ -133,6 +141,15 @@ Wenn eine Lesezeichenansicht eines Berichts geöffnet ist, wird der Name des Les
 ![Lesezeichenansicht](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
 
 [Erfahren Sie mehr über Lesezeichen im Power BI-Dienst](https://docs.microsoft.com/power-bi/consumer/end-user-bookmarks).
+
+## <a name="configure-your-experience-with-reports"></a>Konfigurieren von Berichten
+Die mobile Power BI-App verfügt über eine Reihe von Einstellungen, mit denen Sie Ihren Bericht anpassen können. Derzeit ist Folgendes konfigurierbar:
+* **Interaktionen mit Visuals in Berichten:** Sie können entweder die Interaktion durch einfaches Tippen oder Doppeltippen verwenden.
+* **Methode für die Datenaktualisierung:** Sie können entscheiden, ob Berichtsdaten entweder über eine Schaltfläche oder eine Pulldownaktion aktualisiert werden.
+* **Sichtbarkeit von Berichtsfußzeilen:** Fußzeilen können entweder angedockt und immer sichtbar oder dynamisch sein. Dynamische Fußzeilen werden basierend auf Ihren Aktionen ausgeblendet und wieder angezeigt, z. B. beim Scrollen.
+
+Weitere Informationen zum Ändern dieser Einstellungen finden Sie unter [Konfigurieren der Einstellungen für Berichtsinteraktionen](./mobile-app-interaction-settings.md).
+
 
 ## <a name="next-steps"></a>Nächste Schritte
 * [Anzeigen von und Interagieren mit Power BI-Berichten, die für das Smartphone optimiert sind](mobile-apps-view-phone-report.md)

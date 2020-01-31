@@ -1,27 +1,27 @@
 ---
-title: Erste Schritte mit Farbeinstellungen und Achseneigenschaften
-description: Erste Schritte mit Farbeinstellungen und Achseneigenschaften
+title: Einstieg in das Formatieren von Berichtsvisualisierungen
+description: Einstieg in die Formatierungsoptionen für Berichtsvisualisierungen
 author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 12/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7eded3d17e0db5894bd2f1a03fae49357eb27c69
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: b42d83b4cea6f5f5e8908244b2b298dc3f327468
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762253"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76540620"
 ---
-# <a name="get-started-with-color-formatting-and-axis-properties"></a>Erste Schritte mit Farbeinstellungen und Achseneigenschaften
-In **Power BI** können Sie die Farbe von Datenreihen und Datenpunkten und selbst den Hintergrund von Visualisierungen ändern. So haben Sie eine umfassende Kontrolle über die Anzeige Ihrer Dashboards und Berichte.
+# <a name="getting-started-with-the-formatting-pane"></a>Einstieg in den Formatierungsbereich
+Wenn Sie über die nötigen Berechtigungen zum Bearbeiten von Berichten verfügen, stehen Ihnen zahlreiche Formatierungsoptionen zur Verfügung. In **Power BI**-Berichten können Sie die Farbe von Datenreihen und Datenpunkten und sogar den Hintergrund von Visualisierungen ändern. Sie können ändern, wie die x- und die y-Achse dargestellt werden. Sie können sogar die Schriftarteigenschaften von Visualisierungen, Formen und Titeln formatieren, und haben somit die vollständige Kontrolle über die Darstellung Ihrer Berichte.
 
-Wählen Sie zunächst aus **Mein Arbeitsbereich** einen **Bericht** aus. Wählen Sie dann im oberen Menübereich die Option **Bericht bearbeiten**aus.  
+Öffnen Sie zunächst einen Bericht in Power BI Desktop oder im Power BI-Dienst. Beide Dienste bieten beinahe identische Formatierungsoptionen. Wenn Sie einen Bericht im Power BI-Dienst öffnen, achten Sie darauf, in der Menüleiste **Bericht bearbeiten** auszuwählen.  
 
-![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_1a.png)
+![Menüleiste mit der Option „Bearbeiten“](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-edit.png)
 
 Wenn Sie eine Visualisierung ausgewählt haben und einen Bericht bearbeiten, wird der Bereich **Visualisierungen** angezeigt, in dem Sie Visualisierungen hinzufügen oder ändern können. Direkt unter den verfügbaren Visualisierungen werden drei Symbole angezeigt: **Felder** (zwei Kästchen), **Format** (eine Farbwalze) und **Analyse** (eine Lupe). In der folgenden Abbildung ist das Symbol **Felder** ausgewählt, was durch den einen gelben Balken unterhalb des Symbols erkennbar ist.
 

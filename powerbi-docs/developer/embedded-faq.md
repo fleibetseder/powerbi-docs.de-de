@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/27/2019
-ms.openlocfilehash: 7670f8147af54f3b3a6c2c0eba34bb3ca7843eda
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 8a3b9389769c92bc52512dbf1215afa405161cd5
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74264083"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76539047"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Häufig gestellte Fragen zu Power BI Embedded
 
@@ -67,8 +67,8 @@ Im Folgenden finden Sie eine unvollständige Liste der Unterschiede zwischen den
 |----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
 |   | Eine SKUs-Azure-Kapazität | EM SKUs-O365-Kapazität | P SKUs-O365-Kapazität |
 | Einbetten von Artefakten aus dem Power BI-Arbeitsbereich | Ja | Ja | Ja |
-| Nutzen von Power BI-Berichten in einer eingebetteten Anwendung nutzen: SaaS | Nein | Ja | Ja |
-| Nutzen von Power BI-Berichten in einer eingebetteten Anwendung nutzen: PaaS | Ja | Ja | Ja |
+| Nutzen von Power BI-Berichten in einer für Ihre Organisation eingebetteten Anwendung  | Nein | Ja | Ja |
+| Nutzen von Power BI-Berichten in einer für Ihre Kunden eingebetteten Anwendung | Ja | Ja | Ja |
 | Power BI-Berichte in SharePoint nutzen | Nein | Ja | Ja |
 | Power BI-Berichte in Dynamics nutzen | Nein | Ja | Ja |
 | Power BI-Berichte in Teams nutzen (keine mobile App) | Nein | Ja | Ja |
@@ -79,7 +79,7 @@ Im Folgenden finden Sie eine unvollständige Liste der Unterschiede zwischen den
 
 |  |A-SKU (Power BI Embedded)  |EM-SKU (Power BI Premium)  |P-SKU (Power BI Premium)  |
 |---------|---------|---------|---------|
-|Kauf  |Azure-Portal |Office |Office |
+|Einkauf  |Azure-Portal |Office |Office |
 |Anwendungsfälle | Einbetten von Inhalten in Ihre eigene Anwendung | <li> Einbetten von Inhalten in Ihre eigene Anwendung <br><br><br> <li> Einbetten von Inhalten in MS Office-Anwendungen: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (keine mobile App)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) | <li> Einbetten von Inhalten in Ihre eigene Anwendung <br><br><br> <li> Einbetten von Inhalten in MS Office-Anwendungen: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (keine mobile App)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) <br><br><br> <li> Freigeben von Inhalten für Benutzer von Power BI über den [Power BI-Dienst](https://powerbi.microsoft.com/)  |
 |Abrechnung |Stündlich |Monatlich |Monatlich |
 |Vertragsbindung  |Keine Vertragsbindung |Jährlich  |Monatlich/jährlich |
@@ -202,7 +202,7 @@ Verwenden Sie powerbi.com, um Ihrer Power BI Embedded-Kapazität Arbeitsbereiche
 
 ### <a name="what-content-pack-data-types-can-you-embed"></a>Welche Datentypen für Inhaltspakete können eingebettet werden?
 
-Sie können *keine* **Dashboards** und **Kacheln** einbetten, die über Inhaltspaketdatasets erstellt wurden. Sie *können* jedoch **Berichte** einbetten, die über Inhaltspaketdatasets erstellt wurden.
+Sie können *keine***Dashboards** und **Kacheln** einbetten, die über Inhaltspaketdatasets erstellt wurden. Sie *können* jedoch **Berichte** einbetten, die über Inhaltspaketdatasets erstellt wurden.
 
 ### <a name="what-is-the-difference-between-using-row-level-security-rls-vs-javascript-filters"></a>Worin besteht der Unterschied zwischen der Verwendung der Sicherheit auf Zeilenebene (RLS) und JavaScript-Filtern?
 

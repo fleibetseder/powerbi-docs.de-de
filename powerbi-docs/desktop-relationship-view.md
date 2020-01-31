@@ -1,33 +1,29 @@
 ---
-title: Beziehungsansicht in Power BI Desktop
-description: Beziehungsansicht in Power BI Desktop
+title: Modellansicht in Power BI Desktop
+description: Modellansicht in Power BI Desktop
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 01/17/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: cd9671b8c38cb2aa1502c3aa00a871d125f819b1
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: ea568c061142e66e79351de8a6c0f0603a46f775
+ms.sourcegitcommit: 08f65ea314b547b41b51afef6876e56182190266
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75760478"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "76753221"
 ---
-# <a name="work-with-relationship-view-in-power-bi-desktop"></a>Arbeiten mit der Beziehungsansicht in Power BI Desktop
-Die **Beziehungsansicht** zeigt alle Tabellen, Spalten und Beziehungen in Ihrem Modell. Dies kann besonders hilfreich sein, wenn Ihr Modell über komplexe Beziehungen zwischen vielen Tabellen verfügt.
+# <a name="work-with-model-view-in-power-bi-desktop"></a>Arbeiten mit der Modellansicht in Power BI Desktop
 
-Schauen wir uns das mal an.
+In der *Modellansicht* werden alle Tabellen, Spalten und Beziehungen in Ihrem Modell angezeigt. Dies kann besonders hilfreich sein, wenn Ihr Modell über komplexe Beziehungen zwischen vielen Tabellen verfügt.
 
-![](media/desktop-relationship-view/relationshipview_fullscreen.png)
+Klicken Sie auf das **Modellsymbol** am Rand des Fensters, um das vorhandene Modell abzurufen. Zeigen Sie mit dem Mauszeiger auf eine Beziehungslinie, um die verwendeten Spalten anzuzeigen.
 
-**A.**  Symbol „Beziehungsansicht“: Klicken Sie darauf, um das Modell in der Beziehungsansicht zu zeigen.
+![Modellansicht, Power BI Desktop](media/desktop-relationship-view/model-view-full-screen.png)
 
-**B.** Beziehung: Sie können den Mauszeiger über eine Beziehung führen, um die verwendeten Spalten anzuzeigen. Doppelklicken Sie auf eine Beziehung, um sie im Dialogfeld **Beziehung bearbeiten** zu öffnen. 
+In der obigen Abbildung verfügt die Tabelle *Stores* (Geschäfte) über eine Spalte namens *StoreKey* (Geschäftsschlüssel), die mit der Tabelle *Sales* (Verkäufe) verknüpft ist, die ebenfalls eine *StoreKey*-Spalte (Geschäftsschlüssel) aufweist. Zwischen den beiden Tabellen besteht eine *n:1*-Beziehung (\*:1). Ein Pfeil in der Mitte der Linie zeigt die Richtung des Kontextflusses des Filters an. Die doppelten Pfeile bedeuten, dass die Kreuzfilterrichtung auf *Beide* festgelegt ist.
 
-In der obigen Abbildung sehen Sie, dass die Tabelle *Stores* über die Spalte *StoreKey* verfügt, die mit der Tabelle *Sales* verknüpft ist, die ebenfalls eine Spalte *StoreKey* besitzt. Wir sehen, dass dies eine *N zu Eins*-Beziehung (\*: 1) ist und dass das Symbol in der Mitte der Zeile den Kreuzfilter so anzeigt, dass die Richtung auf *Beide* festgelegt ist. Der Pfeil auf dem Symbol zeigt die Richtung des Filterkontextflows.
-
-Weitere Informationen über Beziehungen finden Sie unter [Erstellen und Verwalten von Beziehungen in Power BI Desktop](desktop-create-and-manage-relationships.md).
-
+Doppelklicken Sie auf eine Beziehung, um sie im Dialogfeld **Beziehung bearbeiten** zu öffnen. Weitere Informationen über Beziehungen finden Sie unter [Erstellen und Verwalten von Beziehungen in Power BI Desktop](desktop-create-and-manage-relationships.md).

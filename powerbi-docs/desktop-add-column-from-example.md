@@ -6,174 +6,163 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 01/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d07cfda18f44a0872c8c9567aa29ac49a98622a7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b10bbaa4158e6c5392cb6ed937c54bdbb5d555d2
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73869442"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538501"
 ---
-# <a name="add-a-column-from-an-example-in-power-bi-desktop"></a>Hinzufügen einer Spalte aus einem Beispiel in Power BI Desktop
-Ab der **Power BI Desktop**-Version vom April 2017 können Sie Ihrem Modell durch Angabe von Beispielwerten über den **Abfrage-Editor** ganz einfach neue Datenspalten hinzufügen. Zur Erstellung eines Beispiels für eine neue Spalte können Sie eine aktuelle Auswahl oder aber eine Eingabe verwenden, die auf allen (oder auf ausgewählten) Spalten in einer bestimmten Tabelle basiert.
+# <a name="add-a-column-from-examples-in-power-bi-desktop"></a>Hinzufügen einer Spalte aus Beispielen in Power BI Desktop
+Mithilfe der Funktion *Spalte aus Beispielen hinzufügen* im Power Query-Editor können Sie ganz einfach neue Spalten zu Ihrem Datenmodell hinzufügen, indem Sie mindestens einen Beispielwert für die neuen Spalten bereitstellen. Sie können die neuen Spaltenbeispiele aus einer Auswahl erstellen oder basierend auf allen vorhandenen Spalten in der Tabelle Eingaben bereitstellen.
 
 ![](media/desktop-add-column-from-example/add-column-from-example_01.png)
 
-Dadurch können Sie schnell und einfach neue Spalten erstellen, was besonders in folgenden Situationen hilfreich ist:
+Mithilfe der Funktion *Spalte aus Beispielen hinzufügen* können Sie schnell und einfach neue Spalten erstellen, was besonders in folgenden Situationen hilfreich ist:
 
-* Sie wissen, welches Datenergebnis Ihre neue Spalte enthalten soll, sind sich aber nicht sicher, welche Transformation (oder Sammlung von Transformationen) zum gewünschten Ergebnis führen.
-* Sie wissen bereits, welche Transformationen Sie benötigen, sind sich aber nicht sicher, mit welcher Benutzeroberflächenoption sie ausgelöst werden.
-* Sie wissen genau, welche Transformationen Sie mit einem Ausdruck vom Typ *Benutzerdefinierte Spalte* in **M** benötigen, aber mindestens einer dieser Ausdrücke steht über die Benutzeroberfläche nicht zur Verfügung.
+- Sie wissen, welche Daten Ihre neue Spalte enthalten soll, sind sich aber nicht sicher, welche Transformation oder Sammlung von Transformationen zum gewünschten Ergebnis führen.
+- Sie wissen bereits, welche Transformationen Sie benötigen, sind sich aber nicht sicher, mit welcher Benutzeroberflächenoption sie ausgelöst werden.
+- Sie wissen genau, welche Transformationen Sie mit einem Ausdruck vom Typ *Benutzerdefinierte Spalte* in der Sprache *M* benötigen, aber mindestens einer dieser Ausdrücke steht über die Benutzeroberfläche nicht zur Verfügung.
 
-Das Feature **Spalte nach Beispiel hinzufügen** ist überaus benutzerfreundlich. In den folgenden Abschnitten erfahren Sie, wie einfach es sich verwenden lässt.
+Es ist einfach und unkompliziert, eine Spalte aus einem Beispiel hinzuzufügen. Im nächsten Abschnitten erfahren Sie, wie das geht.
 
-## <a name="use-query-editor-to-add-a-new-column-from-examples"></a>Hinzufügen einer neuen Spalte auf der Grundlage von Beispielen mithilfe des Abfrage-Editors
-Wenn Sie eine neue Spalte auf der Grundlage eines Beispiels hinzufügen möchten, starten Sie zunächst den **Abfrage-Editor**. Wählen Sie hierzu in **Power BI Desktop** auf dem Menüband **Start** die Option **Abfragen bearbeiten** aus.
+## <a name="add-a-new-column-from-examples"></a>Hinzufügen einer neuen Spalte aus Beispielen
 
-![](media/desktop-add-column-from-example/add-column-from-example_02.png)
+Sie können Beispieldaten auf Wikipedia herunterladen, indem Sie auf der Registerkarte **Start** im Menüband von Power BI Desktop auf **Daten abrufen** > **Web** klicken. 
 
-Wenn Sie Daten über eine Webseite abrufen möchten, wechseln Sie zur Registerkarte **Start**, klicken Sie auf **Daten abrufen > Web**, und fügen Sie die URL in das Dialogfeld ein, das angezeigt wird. Für diesen Artikel werden Daten aus einem Wikipedia-Artikel verwendet. Sie können auf den folgenden Link klicken, um die Daten abzurufen und die folgenden Schritte auszuführen:
+![Daten aus dem Web abrufen](media/desktop-add-column-from-example/add-column-from-example_02.png)
 
-* [**Liste der Bundesstaaten und Gebiete der USA**](https://wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States)
+Fügen Sie die folgende URL in das Dialogfeld ein, das angezeigt wird, und klicken Sie auf **OK**: 
 
-Nachdem Sie den **Abfrage-Editor** gestartet und einige Daten geladen haben, können Sie damit beginnen, eine Spalte auf der Grundlage von Beispielen hinzuzufügen. Wählen Sie zum Hinzufügen einer neuen Spalte im **Abfrage-Editor** auf dem Menüband die Registerkarte **Spalte hinzufügen** und anschließend die Option **Spalte aus Beispielen** aus. In der Dropdownliste können Sie zwischen **Aus allen Spalten** (Standardeinstellung, wenn Sie nur die Schaltfläche und nicht die Dropdownliste auswählen) und **Aus Auswahl** wählen. In diesem Artikel verwenden wir die Option **Aus allen Spalten**.
+*https:\//wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States*
 
-![](media/desktop-add-column-from-example/add-column-from-example_03.png)
+Wählen Sie im Dialogfeld **Navigator** die Tabelle **States of the United States of America** (US-Bundesstaaten) aus, und klicken Sie dann auf **Daten transformieren**. Dann wird die Tabelle im Power Query-Editor geöffnet.
 
-## <a name="the-add-column-from-examples-pane"></a>Der Bereich „Spalte aus Beispielen hinzufügen“
-Nachdem Sie ausgewählt haben, dass Sie eine neue Spalte auf der Grundlage von Beispielen hinzufügen möchten, wird ein neuer Bereich mit den Spalten der aktuellen Tabelle angezeigt. (Unter Umständen müssen Sie scrollen, um alle anzuzeigen.) Rechts wird auch die neue Spalte **Column1** angezeigt. Hierbei handelt es sich um die Spalte, die **Power BI Desktop** auf der Grundlage Ihrer Beispiele erstellt. Unter der Überschrift der neuen Spalte **Column1** befinden sich leere Zellen, in die Sie die Beispiele eingeben können, auf deren Grundlage Power BI dann passende Regeln und Transformationen erstellt.
+Wenn Sie bereits geladene Daten aus Power BI Desktop öffnen möchten, klicken Sie im Menüband unter der Registerkarte **Start** auf **Abfragen bearbeiten**. Dann werden die Daten im Power Query-Editor geöffnet. 
 
-Beachten Sie, dass es sich hierbei um einen **angewendeten Schritt** im Bereich **Abfrageeinstellungen** handelt. Der **Abfrage-Editor** erfasst wie gewohnt Ihre Transformationsschritte und wendet sie in der angegebenen Reihenfolge auf die Abfrage an.
+![„Abfragen bearbeiten“ in Power BI Desktop](media/desktop-add-column-from-example/add-column-from-example_05.png)
 
-![](media/desktop-add-column-from-example/add-column-from-example_04.png)
+Sobald die Beispieldaten im Power Query-Editor geöffnet wurden, klicken Sie erst auf dem Menüband auf die Registerkarte **Spalte hinzufügen** und anschließend auf **Spalte aus Beispielen**. Klicken Sie auf das Symbol **Spalte aus Beispielen**, um die Spalte aus allen vorhandenen Spalten zu erstellen, oder öffnen Sie das Dropdownmenü, um zwischen den Optionen **Aus allen Spalten** und **Aus Auswahl** auszuwählen. Wählen Sie für diese exemplarische Vorgehensweise **Aus allen Spalten** aus.
 
-Der Bereich **Spalte aus Beispielen hinzufügen** ist in vier Hauptbereiche unterteilt:
+![„Spalte aus Beispielen hinzufügen“ auswählen](media/desktop-add-column-from-example/add-column-from-example_03.png)
 
-1. Die **Befehlsleiste** mit einer kurzen Beschreibung des Features oder der Transformation.
-2. Die Option **Feedback senden**, um zur Verbesserung des Features in Power BI beizutragen.
-3. Die Schaltflächen **OK** und **Abbrechen**, mit denen Sie Ihre Transformationen übernehmen und die Spalte hinzufügen oder den Vorgang abbrechen können.
-4. Der Bereich für die neue Spalte, in dem Sie Ihre Beispielwerte in eine beliebige Zeile eingeben können, um ein Beispiel für Power BI bereitzustellen (in Relation zu anderen Spalten in dieser Zeile).
+## <a name="add-column-from-examples-pane"></a>Der Bereich „Spalte aus Beispielen hinzufügen“
+Wenn Sie auf **Spalte hinzufügen** > **Aus Beispielen** klicken, wird der Bereich **Spalte aus Beispielen hinzufügen** oberhalb der Tabelle geöffnet. Dann wird die neue **Spalte 1** rechts neben den bereits vorhanden Spalten angezeigt. Möglicherweise müssen Sie scrollen, um alle Spalten zu sehen. Wenn Sie Ihre Beispielwerte in die leeren Zellen von **Spalte 1** eingeben, erstellt Power BI passende Regeln und Transformationen für Ihre Beispiele, um die restliche Spalte auszufüllen.
 
-![](media/desktop-add-column-from-example/add-column-from-example_05.png)
+Dabei wird **Spalte aus Beispielen** ebenfalls als **Angewendeter Schritt** im Bereich **Abfrageeinstellungen** angezeigt. Der Power Query-Editor erfasst wie gewohnt Ihre Transformationsschritte und wendet sie in der angegebenen Reihenfolge auf die Abfrage an.
 
-Wenn Sie Ihr Beispiel in die neue Spalte eingeben, liefert Power BI auf der Grundlage der erkannten Transformationen eine Vorschau der fertigen Spalte. Ein Beispiel: Wenn Sie in die erste Zeile *Alabama* eingegeben, entspricht dies dem Wert *Alabama* in der ersten Spalte der Tabelle. Nach dem Drücken der *EINGABETASTE* füllt Power BI die Spalte auf der Grundlage dieses Werts aus.
+![Der Bereich „Spalte aus Beispielen hinzufügen“](media/desktop-add-column-from-example/add-column-from-example_04.png)
 
-Wenn Sie dann aber z.B. zu der Zeile gehen, die *Massachusetts[E]* enthält und Sie den Teil *[E]* löschen (weil Sie dafür keine Verwendung mehr haben), passiert Folgendes: Power BI erkennt die Änderung und verwendet das Beispiel, um eine Transformation zu erstellen. Beachten Sie die Erläuterung der Transformation (oben in der Mitte).
+Wenn Sie Ihr Beispiel in die neue Spalte eingeben, liefert Power BI auf der Grundlage der erstellten Transformationen eine Vorschau der fertigen Spalte. Ein Beispiel: Wenn Sie in die erste Zeile *Alabama* eingegeben, entspricht dies dem Wert **Alabama** in der ersten Spalte der Tabelle. Sobald Sie die EINGABETASTE drücken, füllt Power BI den Rest der neuen Spalte basierend auf dem ersten Spaltenwert aus und nennt die Spalte **Name & postal abbreviation[12] - Copy** (Namen und offizielles Staatenkürzel – Kopie).
 
-![](media/desktop-add-column-from-example/add-column-from-example_06.png)
+Wechseln Sie nun zur Zeile **Massachusetts[E]** der neuen Spalte, und löschen Sie die Zeichen **[E]** aus der Zeichenfolge. Power BI erkennt die Änderung und verwendet das Beispiel, um eine Transformation zu erstellen. Power BI beschreibt die Transformationen im Bereich **Spalte aus Beispielen hinzufügen** und benennt die Spalte in **Text vor Trennzeichen** um. 
 
-Bei Angabe weiterer Beispiele werden die Transformationen durch den **Abfrage-Editor** entsprechend ergänzt. Wenn Sie mit dem Ergebnis zufrieden sind, können Sie **OK** auswählen, um Ihre Änderungen zu übernehmen.
+![Aus Beispielen transformierte Spalten](media/desktop-add-column-from-example/add-column-from-example_06.png)
 
-## <a name="see-add-column-from-examples-in-action"></a>„Spalte aus Beispielen hinzufügen“ in Aktion
-Möchten Sie das Feature in Aktion erleben? Das folgende Video zeigt die Nutzung dieses Features unter Verwendung der Datenquelle, die weiter oben in diesem Beispiel angegeben war. Sehen Sie sich das Video an, und probieren Sie es selbst aus.
+Wenn Sie weitere Beispiele angeben, ergänzt der Power Query-Editor die Transformationen entsprechend. Wenn Sie mit dem Ergebnis zufrieden sind, klicken Sie auf **OK**, damit Ihre Änderungen übernommen werden. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-ykbVW9wQfw" frameborder="0" allowfullscreen></iframe>
+Sie können die neue Spalte beliebig umbenennen. Doppelklicken Sie dafür auf die Spaltenüberschrift, oder klicken Sie mit der rechten Maustaste auf diese, und wählen Sie **Umbenennen** aus. 
 
-## <a name="considerations-and-limitations"></a>Überlegungen und Einschränkungen
-Bei der Verwendung des Features **Spalte aus Beispielen hinzufügen** stehen zwar viele Transformationen zur Verfügung, aber nicht alle. Die folgende Liste enthält alle unterstützten Transformationen.
+Im Folgenden Video wird die Option **Spalten aus Beispielen** unter Verwendung der Beispieldatenquelle näher veranschaulicht. 
 
-* **Verweis**
+[Power BI Desktop: Spalte aus Beispielen hinzufügen](https://www.youtube.com/watch?v=-ykbVW9wQfw) 
+
+## <a name="list-of-supported-transformations"></a>Liste der unterstützten Transformationen
+Wenn die Funktion **Spalte aus Beispielen hinzufügen** verwendet wird, sind zwar viele, aber nicht alle Transformationen verfügbar. Im Folgenden werden die unterstützten Transformationen aufgelistet:
+
+**Allgemein**
+
+- Bedingte Spalte
+
+**Verweis**
   
-  * Verweis auf eine bestimmte Spalte (einschließlich Kürzungs-, Bereinigungs- und Groß-/Kleinschreibungstransformation)
+- Verweis auf eine bestimmte Spalte, einschließlich Kürzungs-, Bereinigungs- und Groß-/Kleinschreibungstransformation
 
-* **Texttransformationen**
-  
-  * Kombinieren (unterstützt das Kombinieren von Literalzeichenfolgen und vollständigen Spaltenwerten)
-  * Ersetzen
-  * Länge
-  * Extrahieren   
-    * Erste Zeichen
-    * Letzte Zeichen
-    * Bereich
-    * Text vor Trennzeichen
-    * Text nach Trennzeichen
-    * Text zwischen Trennzeichen
-    * Länge
+**Texttransformationen**
 
-* Die folgenden unterstützten **Texttransformationen** sind ab dem November 2017-Release von **Power BI Desktop** verfügbar:
-    
-  * Zeichen entfernen
-  * Zeichen beibehalten
+- Kombinieren (unterstützt das Kombinieren von Literalzeichenfolgen und vollständigen Spaltenwerten)
+- Ersetzen
+- Länge
+- Extrahieren   
+  - Erste Zeichen
+  - Letzte Zeichen
+  - Bereich
+  - Text vor Trennzeichen
+  - Text nach Trennzeichen
+  - Text zwischen Trennzeichen
+  - Länge
+  - Zeichen entfernen
+  - Zeichen beibehalten
 
 > [!NOTE]
 > Bei allen *Texttransformationen* wird der potenzielle Bedarf für die Anwendung einer Kürzungs-, Bereinigungs- oder Groß-/Kleinschreibungstransformation auf den Wert berücksichtigt.
-> 
-> 
 
-* **Datumstransformationen**
-  
-  * Tag
-  * Tag der Woche
-  * Name des Wochentags
-  * Tag des Jahres
-  * Monat
-  * Monatsname
-  * Quartal des Jahres
-  * Woche des Monats
-  * Woche des Jahres
-  * Jahr
-  * Alter
-  * Jahresbeginn
-  * Jahresende
-  * Monatsbeginn
-  * Monatsende
-  * Quartalsbeginn
-  * Tage des Monats
-  * Quartalsende
-  * Wochenbeginn
-  * Wochenende
-  * Tag des Monats
-  * Tagesbeginn
-  * Tagesende
+**Datumstransformationen**
 
+- Tag
+- Tag der Woche
+- Name des Wochentags
+- Tag des Jahres
+- Month
+- Name Monat
+- Quartal des Jahres
+- Woche des Monats
+- Woche des Jahres
+- Jahr
+- Alter
+- Jahresbeginn
+- Jahresende
+- Monatsbeginn
+- Monatsende
+- Quartalsbeginn
+- Tage des Monats
+- Quartalsende
+- Wochenbeginn
+- Wochenende
+- Tag des Monats
+- Tagesbeginn
+- Tagesende
 
-* **Uhrzeittransformationen**
-  
-  * Stunde
-  * Minute
-  * Sekunde  
-  * In Ortszeit
+**Uhrzeittransformationen**
+
+- Hour
+- Minute
+- Second  
+- In Ortszeit
 
 > [!NOTE]
 > Bei allen *Datums-* und *Uhrzeittransformationen* wird der potenzielle Bedarf für eine Konvertierung des Spaltenwerts in *Date*, *Time* oder *DateTime* berücksichtigt.
-> 
-> 
 
-* **Zahlentransformationen** 
+**Zahlentransformationen** 
 
-  * Absoluter Wert
-  * Arkuskosinus
-  * Arkussinus
-  * Arkustangens
-  * In eine Zahl umwandeln
-  * Kosinus
-  * Cube
-  * Dividieren
-  * Exponent
-  * Fakultät
-  * Ganzzahldivision
-  * Gerade
-  * Ungerade
-  * Ln
-  * Logarithmus zur Basis 10
-  * Modulo
-  * Multiplizieren
-  * Abrunden
-  * Aufrunden
-  * Vorzeichen
-  * Sin
-  * Quadratwurzel
-  * Quadrat
-  * Subtrahieren
-  * Summe
-  * Tangens
+- Absoluter Wert
+- Arkuskosinus
+- Arkussinus
+- Arkustangens
+- In eine Zahl umwandeln
+- Kosinus
+- Cube
+- Dividieren
+- Exponent
+- Fakultät
+- Ganzzahldivision
+- Gerade
+- Ungerade
+- Ln
+- Logarithmus zur Basis 10
+- Modulo
+- Multiplizieren
+- Abrunden
+- Aufrunden
+- Vorzeichen
+- Sin
+- Quadratwurzel
+- Quadrat
+- Subtrahieren
+- Summe
+- Tangens
+- Zuordnen von Buckets/Bereiche
 
-* Die folgenden unterstützten **Zahlentransformationen** sind ab dem November 2017-Release von **Power BI Desktop** verfügbar:
-
-  * Zuordnen von Buckets/Bereiche
-
-* **Allgemein**
-  
-  * Bedingte Spalte

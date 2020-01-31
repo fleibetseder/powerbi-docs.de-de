@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 56ff7d09530030d1a1ae046a3439022cbf638b9d
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 124f373e7841cb899f0a26debb2bcc8302e8e970
+ms.sourcegitcommit: 7efbe508787029e960d6d535ac959a922c0846ca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75760570"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76309111"
 ---
 # <a name="create-model-relationships-in-power-bi-desktop"></a>Erstellen von Modellbeziehungen in Power BI Desktop
 
@@ -227,4 +227,6 @@ In der folgenden Liste sind die Beziehungen nach ihrer Filterweitergabe-Leistung
 
 - [Informationen zum Sternschema und dessen Wichtigkeit für Power BI](guidance/star-schema.md)
 - [Leitfaden zu m:n-Beziehungen](guidance/relationships-many-to-many.md)
+- Video: [Worauf Sie bei Power BI-Beziehungen achten sollten](https://youtu.be/78d6mwR8GtA)
 - Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
+- Vorschläge? [Einbringen von Ideen zur Verbesserung von Power BI](https://ideas.powerbi.com)

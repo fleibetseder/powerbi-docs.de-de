@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/15/2019
+ms.date: 01/23/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8bbf391135442d6490033c0fc65b7372154820d2
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e3e9e8ebc7feda46cb4c79ffd1535807d04a178b
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73866425"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709773"
 ---
 # <a name="use-performance-analyzer-to-examine-report-element-performance"></a>Verwenden der Leistungsanalyse zum Untersuchen der Leistung von Berichtselementen
 
@@ -58,6 +58,9 @@ Die Protokollinformationen zu jedem Visual beinhalten die aufgewendete Zeit (Dau
 * **Visuelle Anzeige**: Die Zeit, die zum Zeichnen des Visuals auf dem Bildschirm benötigt wird. Dies schließt die Zeit ein, die für das Abrufen von Webbildern oder eine Geocodierung benötigt wird. 
 * **Andere**: Die Zeit, die das Visual für das Vorbereiten von Abfragen, das Warten auf den Abschluss anderer Visuals oder das Durchführen einer weiteren Hintergrundverarbeitung benötigt.
 
+Die Werte für **Dauer (ms)** geben jeweils den Unterschied zwischen einem *Start*- und *End*-Zeitstempel eines Vorgangs an. Die meisten Vorgänge für den Zeichenbereich und Visuals werden sequenziell in einem einzelnen Benutzeroberflächenthread ausgeführt, der von mehreren Vorgängen gemeinsam genutzt wird. Die gemeldeten Zeiträume umfassen die Zeit, die in der Warteschlange verbracht wurde, während andere Vorgänge ausgeführt wurden. Das [Beispiel für die Leistungsanalyse](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Performance%20Analyzer) auf GitHub und die dazugehörige [Dokumentation](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx) enthalten Informationen darüber, wie Visuals Daten abfragen und wie sie rendern.
+
+
 ![Elemente in Protokollinformationen](media/desktop-performance-analyzer/performance-analyzer-06.png)
 
 Nachdem Sie mithilfe der Leistungsanalyse mit Berichtselementen interagiert haben, deren Leistung Sie messen möchten, können Sie auf die Schaltfläche **Beenden** klicken. Die Leistungsinformationen werden zur weiteren Analyse auch nach dem Klicken auf **Beenden** weiterhin im Bereich angezeigt.
@@ -89,3 +92,7 @@ Weitere Informationen zu **Power BI Desktop** und den ersten Schritten finden Si
 * [Strukturieren und Kombinieren von Daten mit Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Allgemeine Abfrageaufgaben in Power BI Desktop](desktop-common-query-tasks.md)   
 
+Weitere Informationen zum Beispiel für Leistungsanalyse finden Sie in den folgenden Ressourcen.
+
+* [Beispiel für die Leistungsanalyse](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Performance%20Analyzer)
+* [Dokumentation zum Beispiel für die Leistungsanalyse](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx)

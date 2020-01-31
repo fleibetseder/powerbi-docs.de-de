@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/16/2019
+ms.date: 01/22/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: c3f703bfe2685166ce575b37c053b2a9603a799f
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: e91900632b7cf470cd91923ca9ec871247c154ba
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223877"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76710191"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage"></a>Herstellen einer Verbindung mit Azure Data Lake Storage Gen2 für die Dataflowspeicherung
 
@@ -45,7 +45,7 @@ Bevor Sie Power BI mit einem Azure Data Lake Storage Gen2-Konto konfigurieren k�
 1. Das Speicherkonto muss in demselben Azure Active Directory-Mandanten erstellt werden, in dem sich auch Ihr Power BI-Mandant befindet.
 2. Das Speicherkonto muss in derselben Region erstellt werden, in der sich auch Ihr Power BI-Mandant befindet. Im Artikel [Wo befindet sich mein Power BI-Mandant?](service-admin-where-is-my-tenant-located.md) erfahren Sie, wie Sie ermitteln, in welcher Region sich Ihr Power BI-Mandant befindet.
 3. Im Speicherkonto muss die Funktion *Hierarchical Name Space* (Hierarchischer Namespace) aktiviert sein.
-4. Dem Power BI-Dienst muss die Rolle *Leser* (Reader) im Speicherkonto gewährt werden.
+4. Dem Power BI-Dienst müssen die Rollen *Reader* (Leser) und *Data Access* (Datenzugriff) für das Speicherkonto gewährt werden.
 5. Ein Dateisystem mit dem Namen **powerbi** muss erstellt werden.
 6. Der Power BI-Dienst muss für das von Ihnen erstellte Dateisystem **powerbi** autorisiert sein.
 
@@ -59,16 +59,13 @@ Führen Sie die in dem Artikel [Create an Azure Data Lake Storage Gen2 storage a
 2. Stellen Sie sicher, dass die Funktion „Hierarchischer Namespace“ aktiviert ist.
 3. Es wird empfohlen die Replikationseinstellung auf **Read-access geo-redundant storage (RA-GRS)** (Georedundante Speicher mit Lesezugriff (RA-GRS)) festzulegen.
 
-### <a name="grant-the-power-bi-service-a-reader-role"></a>Dem Power BI-Dienst eine Leserrolle gewähren
+### <a name="grant-the-power-bi-service-reader-and-data-access-roles"></a>Gewähren der Rollen „Reader“ (Leser) und „Data Access“ (Datenzugriff) für den Power BI-Dienst
 
-Als nächstes müssen Sie dem Power BI-Dienst eine Leserrolle in Ihrem erstellten Speicherkonto gewähren. Da es sich um eine integrierte Rolle handelt, ist dies sehr einfach. 
+Als Nächstes müssen Sie dem Power BI-Dienst die Rollen „Reader“ (Leser) und „Data Access“ (Datenzugriff) in Ihrem erstellten Speicherkonto gewähren. Da es sich dabei um integrierte Rollen handelt, ist dies sehr einfach. 
 
 Führen Sie die Schritte in [Zuweisen einer auf einen Container oder eine Warteschlange begrenzten Rolle im Azure-Portal](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-built-in-rbac-role) aus.
 
-Wählen Sie im Fenster **Add role assignment** (Rollenzuweisung hinzufügen) die **Leserrolle** (Reader) aus, um sie dem Power BI-Dienst zuzuweisen. Verwenden Sie dann die Suche, um den **Power BI-Dienst** zu finden. Die folgende Abbildung zeigt die dem Power BI-Dienst zugewiesene **Leserrolle**.
-
-![Power BI-Dienst mit zugewiesener Leserrolle](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05.jpg)
-
+Wählen Sie im Fenster **Rollenzuweisung hinzufügen** die Rollen **Reader** (Leser) und **Data Access** (Datenzugriff) aus, um sie dem Power BI-Dienst zuzuweisen. Verwenden Sie dann die Suche, um den **Power BI-Dienst** zu finden. 
 
 > [!NOTE]
 > Warten Sie mindestens 30 Minuten, bis die Berechtigung vom Portal an Power BI weitergegeben wurde. Warten Sie bei jeder Berechtigungsänderung im Portal 30 Minuten, bis die jeweilige Berechtigung in Power BI übernommen wurde. 

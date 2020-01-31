@@ -7,15 +7,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/30/2019
+ms.date: 01/22/2020
 ms.author: mihart
 LocalizationGroup: Consumers
-ms.openlocfilehash: 0e8a3ce01356804aa5dcca21895fa01b5908ebd0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 27128618fc594a8b7259a3de3862c6766eaecd86
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73851313"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537499"
 ---
 # <a name="export-data-from-a-visual"></a>Exportieren von Daten aus einer Visualisierung
 
@@ -31,15 +31,18 @@ Wenn Sie die Daten anzeigen möchten, auf deren Grundlage ein Visual erstellt wu
 
 2. Zeigen Sie auf ein Visual, um **Weitere Optionen** (...) anzuzeigen, und klicken Sie, um das Aktionsmenü anzuzeigen.
 
-    ![Bei Auswahl der Auslassungspunkte angezeigtes Menü](media/end-user-export/power-bi-action-menu.png)
+    ![Bei Auswahl der Auslassungspunkte angezeigtes Menü](media/end-user-export/power-bi-options-menu.png)
 
-3. Wählen Sie **In Excel exportieren** aus.
+3. Wählen Sie **In CSV exportieren** aus.
 
 4. Was als Nächstes passiert, hängt davon ab, welchen Browser Sie verwenden. Möglicherweise werden Sie aufgefordert, die Datei zu speichern, oder es wird ein Link zur exportierten Datei am unteren Rand des Browsers angezeigt. 
 
     ![Chrome-Browser mit Link zu exportierter Datei](media/end-user-export/power-bi-dashboard-exports.png)
 
-5. Öffnen Sie die Datei in Excel.  
+5. Öffnen Sie die Datei in Excel. 
+
+    > [!NOTE]
+    > Wenn Sie keine Berechtigungen für die Daten haben, können Sie nicht nach Excel exportieren oder in Excel öffnen.  
 
     ![„Total Units YTD“ (Gesamte Einheiten seit Jahresbeginn) in Excel](media/end-user-export/power-bi-excel.png)
 
@@ -53,27 +56,30 @@ Sie können Daten aus einem Visual in einem Bericht im CSV- oder XLSX-Format (Ex
 
     Diese Kachel wurde aus dem Bericht des *Beispiels für Vertrieb und Marketing* erstellt, das ist der Bericht, der geöffnet wird. Er wird mit der Seite geöffnet, die das ausgewählte Kachelvisual enthält. 
 
-2. Wählen Sie die Kachel im Bericht aus. Beachten Sie den Bereich **Filter** auf der rechten Seite. Für dieses Visual werden Filter angewendet. Weitere Informationen zu Filtern finden Sie unter [Verwenden von Filtern in einem Bericht](end-user-report-filter.md).
+2. Wählen Sie das Visual im Bericht aus. Beachten Sie den Bereich **Filter** auf der rechten Seite. Für dieses Visual werden Filter angewendet. Weitere Informationen zu Filtern finden Sie unter [Verwenden von Filtern in einem Bericht](end-user-report-filter.md).
 
     ![Ausgewählter Bereich „Filter“](media/end-user-export/power-bi-export-filter.png)
 
 
-3. Wählen Sie die Auslassungspunkte in der rechten oberen Ecke des Visuals aus. Wählen Sie **Daten exportieren** aus.
+3. Klicken Sie rechts oben im Visual auf **Weitere Optionen (...)** . Wählen Sie **Daten exportieren** aus.
 
     ![Exportieren ausgewählter Daten aus der Dropdownliste](media/end-user-export/power-bi-export-report.png)
 
 4. Sie sehen Optionen zum Exportieren zusammengefasster oder zugrunde liegender Daten. Wenn Sie die *Beispiel für Vertrieb und Marketing*-App verwenden, werden die **Zugrunde liegenden Daten** deaktiviert. Es können jedoch auch Berichte angezeigt werden, bei denen beide Optionen aktiviert sind. Im Folgenden wird der Unterschied erläutert.
 
-    **Zusammengefasste Daten**: Wählen Sie diese Option aus, wenn Sie Daten für das exportieren möchten, was im Visual angezeigt wird.  Diese Exportart zeigt nur die Daten an, die zum Erstellen des Visuals verwendet wurden. Wenn für das Visual Filter verwendet werden, werden die Daten, die Sie exportieren, ebenfalls gefiltert. Beispielsweise enthält der Export für dieses Visual nur Daten für 2014 und die zentrale Region sowie nur Daten für vier Hersteller: VanArsdel, Natura, Aliqui und Pirum.
+    **Zusammengefasste Daten**: Wählen Sie diese Option aus, wenn Sie Daten für das exportieren möchten, was aktuell im Visual angezeigt wird.  Diese Exportart zeigt nur die Daten an, die zum Erstellen des Visuals verwendet wurden. Wenn für das Visual Filter verwendet werden, werden die Daten, die Sie exportieren, ebenfalls gefiltert. Beispielsweise enthält der Export für dieses Visual nur Daten für 2014 und die zentrale Region sowie nur Daten für vier Hersteller: VanArsdel, Natura, Aliqui und Pirum. Wenn das Visual über Aggregate (Summe, Durchschnitt usw.) verfügt, wird der Export ebenfalls aggregiert. 
   
 
-    **Zugrunde liegende Daten**: Wählen Sie diese Option aus, wenn Sie Daten für das exportieren möchten, was Sie im Visual sehen, **plus** zusätzlicher Daten aus dem zugrunde liegenden Dataset.  Dies kann Daten umfassen, die im Dataset enthalten sind, aber nicht im Visual verwendet werden. 
+    **Zugrunde liegende Daten**: Wählen Sie diese Option aus, wenn Sie Daten für das exportieren möchten, was Sie im Visual sehen, **plus** zusätzlicher Daten aus dem zugrunde liegenden Dataset.  Dies kann Daten umfassen, die im Dataset enthalten sind, aber nicht im Visual verwendet werden. Wenn für das Visual Filter verwendet werden, werden die Daten, die Sie exportieren, ebenfalls gefiltert.  Wenn das Visual über Aggregate (Summe, Durchschnitt usw.) verfügt, wird die Aggregation durch den Export entfernt. Die Daten werden im Wesentlichen vereinfacht. 
 
-    ![Menü zur Auswahl von zugrunde liegenden oder zusammengefassten Daten](media/end-user-export/power-bi-export-option.png)
+    ![Menü zur Auswahl von zugrunde liegenden oder zusammengefassten Daten](media/end-user-export/power-bi-export-underlying.png)
 
 5. Was als Nächstes passiert, hängt davon ab, welchen Browser Sie verwenden. Möglicherweise werden Sie aufgefordert, die Datei zu speichern, oder es wird ein Link zur exportierten Datei am unteren Rand des Browsers angezeigt. 
 
     ![Anzeige der exportierten Datei im Microsoft Edge-Browser](media/end-user-export/power-bi-export-edge-browser.png)
+
+    > [!NOTE]
+    > Wenn Sie keine Berechtigungen für die Daten haben, können Sie nicht nach Excel exportieren oder in Excel öffnen.  
 
 
 6. Öffnen Sie die Datei in Excel. Vergleichen Sie die Menge der exportierten Daten mit den Daten, die wir aus dem gleichen Visual auf dem Dashboard exportiert haben. Der Unterschied besteht darin, dass dieser Export **zugrunde liegende Daten** enthält. 

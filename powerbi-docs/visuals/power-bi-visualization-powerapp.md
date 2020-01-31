@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 01/14/2020
+ms.date: 01/16/2020
 ms.author: mblythe
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d9549364f9129ee4ddc6e90fb973cb73c241e4a9
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: bbca812644b82f8a0b848dc16e450f880ccb596c
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76042116"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76539898"
 ---
 # <a name="tutorial-embed-a-power-apps-visual-in-a-power-bi-report"></a>Tutorial: Einbetten eines Power Apps-Visuals in einen Power BI-Bericht
 
 In diesem Tutorial verwenden Sie das Power Apps-Visual, um eine neue App zu erstellen, die in einen Power BI-Beispielbericht eingebettet ist. Diese App interagiert mit anderen Visuals in diesem Bericht.
 
-Wenn Sie kein Power Apps-Abonnement besitzen, [erstellen Sie ein kostenloses Konto](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps), bevor Sie beginnen.
+Wenn Sie kein Power Apps-Abonnement besitzen, [erstellen Sie ein kostenloses Konto](https://web.powerapps.com/signup?redirect=marketing&email=), bevor Sie beginnen.
 
 In diesem Tutorial erhalten Sie Informationen zu den folgenden Vorgängen:
 > [!div class="checklist"]
@@ -33,7 +33,7 @@ In diesem Tutorial erhalten Sie Informationen zu den folgenden Vorgängen:
 
 * [Google Chrome](https://www.google.com/chrome/browser/) oder [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge)
 * Ein [Power BI-Abonnement](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi), für das das [Analysebeispiel für Opportunity](https://docs.microsoft.com/power-bi/sample-opportunity-analysis#get-the-content-pack-for-this-sample) installiert ist.
-* Grundlegende Kenntnisse der Vorgehensweise beim [Erstellen von Apps in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/data-platform-create-app-scratch.md) und beim [Bearbeiten von Power BI-Berichten](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour)
+* Grundlegende Kenntnisse der Vorgehensweise beim [Erstellen von Apps in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/data-platform-create-app-scratch) und beim [Bearbeiten von Power BI-Berichten](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour)
 
 
 

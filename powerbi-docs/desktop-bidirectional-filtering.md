@@ -7,38 +7,33 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8aeae0075ed32a832c27f475ef3786b7df76576c
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 141dabdce7816d21c49d8c7f98d1438c2fc20e8d
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761770"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709833"
 ---
 # <a name="enable-bidirectional-cross-filtering-for-directquery-in-power-bi-desktop"></a>Aktivieren der bidirektionalen Kreuzfilterung für DirectQuery in Power BI Desktop
 
-Beim Filtern von Tabellen zum Erstellen der entsprechenden Anzeige von Daten stehen Berichtersteller (und Datenmodellierer) vor Herausforderungen, wenn sie festlegen, wie bei einem Bericht das Filtern angewendet wird. Der Filterkontext einer Tabelle besteht nur auf der einen Seite der Beziehung, jedoch nicht auf der anderen Seite. Dies erfordert oftmals komplexe DAX-Formeln, um die gewünschten Ergebnisse zu erzielen.
+Datenmodellierer und Ersteller von Berichten, die Tabellen filtern möchten, damit nur bestimmte Daten angezeigt werden, stehen vor der Herausforderung, festzulegen, wie die Filter auf einen Bericht angewendet werden sollen. Bisher war der Tabellenfilterkontext nur für eine Seite der Beziehung verfügbar, nicht für beide. Deshalb waren häufig komplizierte DAX-Formeln nötig, um das gewünschte Ergebnis zu erhalten.
 
-Mit der bidirektionalen Kreuzfilterung haben Berichtersteller (und Datenmodellierer) nun eine bessere Kontrolle darüber, wie bei der Arbeit mit verknüpften Tabellen Filter angewendet werden, indem es Filtern ermöglicht wird, auf *beide* Seiten einer Tabellenbeziehung angewendet zu werden. Dies wird erreicht, indem der Filterkontext auf eine zweite verknüpfte Tabelle auf der anderen Seite einer Tabellenbeziehung verteilt wird.
+Die bidirektionale Kreuzfilterung bietet Datenmodellierern und Erstellern von Berichten nun mehr Kontrolle über die Anwendung von Filtern bei verknüpften Tabellen. Sie ermöglicht ihnen, Filter auf *beide* Seiten der Tabellenbeziehung anzuwenden. Sie können die Filter anwenden, indem Sie den Filterkontext auf eine zweite, verknüpfte Tabelle auf der anderen Seite der Tabellenbeziehung ausweiten.
 
-## <a name="detailed-whitepaper-for-bidirectional-cross-filtering"></a>Detailliertes Whitepaper für die bidirektionale Kreuzfilterung
-Es ist ein [detailliertes Whitepaper](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) verfügbar, das die bidirektionale Kreuzfilterung in Power BI Desktop erklärt (das Whitepaper deckt auch SQL Server Analysis Services 2016 ab, da beide sich gleich verhalten).
+## <a name="enable-bidirectional-cross-filtering-for-directquery"></a>Aktivieren der bidirektionalen Kreuzfilterung für DirectQuery
 
-* Herunterladen des Whitepapers [Bidirectional cross-filtering for Power BI Desktop](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) (Bidirektionale Kreuzfilterung für Power BI Desktop)
+Sie können die bidirektionale Kreuzfilterung im Dialogfeld **Beziehung bearbeiten** aktivieren. Um für eine Beziehung die Kreuzfilterung aktivieren zu können, müssen Sie eine der folgenden Optionen konfigurieren:
 
-## <a name="enabling-bidirectional-cross-filtering-for-directquery"></a>Aktivieren der bidirektionalen Kreuzfilterung für DirectQuery
+* Legen Sie für **Kreuzfilterrichtung** die Einstellung **Beide** fest.
+* Wählen Sie **Sicherheitsfilter in beide Richtungen anwenden** aus.
 
-Folgendes muss ausgewählt sein, um die Kreuzfilterung im Dialogfeld **Beziehung bearbeiten** für eine Beziehung zu aktivieren:
-
-* **Kreuzfilterrichtung** muss auf **Beide** festgelegt sein
-* Die Option **Sicherheitsfilter in beide Richtungen anwenden** muss ebenfalls ausgewählt sein
-
-  ![](media/desktop-bidirectional-filtering/bidirectional-filtering_2.png)
+  ![Bidirektionale Filterung in Power BI Desktop konfigurieren](media/desktop-bidirectional-filtering/bidirectional-filtering_2.png)
 
 > [!NOTE]
-> Verwenden Sie beim Erstellen von DAX-Formeln für die Kreuzfilterung in Power BI Desktop *UserPrincipalName* (oft mit der Anmeldung eines Benutzers, z.B. <em>joe@contoso.com</em>, identisch) anstelle von *UserName*. Daher müssen Sie möglicherweise eine verknüpfte Tabelle erstellen, die den *UserName* einem *UserPrincipalName* (oder z.B. EmployeeID) zuordnet.
+> Verwenden Sie *UserPrincipalName*, wenn Sie in Power BI Desktop Dax-Formeln für die Kreuzfilterung erstellen. Dieses Feld ist häufig identisch mit dem Anmeldename eines Benutzers, z. B. <em>joe@contoso.com</em>, anstatt *UserName*. Daher müssen Sie möglicherweise eine verknüpfte Tabelle erstellen, die *UserName* oder *EmployeeID* zu *UserPrincipalName* zuordnet.
 
-Weitere Informationen und Beispiele zur Funktionsweise der bidirektionalen Kreuzfilterung finden Sie in dem weiter oben in diesem Artikel genannten [Whitepaper](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx).
+Weitere Informationen und Beispiele für die Funktionsweise der bidirektionalen Kreuzfilterung finden Sie im [Whitepaper zur bidirektionalen Kreuzfilterung in Power BI Desktop](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx).
 

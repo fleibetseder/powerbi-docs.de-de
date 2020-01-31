@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/17/2018
+ms.date: 01/21/2020
 ms.author: maggies
-ms.openlocfilehash: 019cbc489ae6433629898e44088e689767ef12ae
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 343c7d7e81d8e8ec53383feab6dc4dcfb17129d6
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874179"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76540588"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Datenquellen für Power BI-Berichte in Power BI-Berichtsserver
 Power BI-Berichte können Verbindungen mit einer Reihe von Datenquellen herstellen. Je nach Verwendung der Daten sind verschiedene Datenquellen verfügbar. Daten können importiert werden, oder Daten können direkt mit DirectQuery oder über eine Liveverbindung mit SQL Server Analysis Services abgefragt werden.
@@ -202,12 +202,12 @@ Microsoft Power BI-Berichtsserver unterstützt keine auf OAuth basierende Authen
 | Azure SQL Data Warehouse |Nein |Nein |Ja |Nein |Nein |
 | Oracle-Datenbank |Nein |Nein |Ja |Ja |Ja |
 | SAP Business Warehouse-Server |Nein |Nein |Ja |Nein |Nein |
-| SAP HANA-Datenbank |Nein |Nein |Ja |Ja |Nein |
+| SAP HANA-Datenbank |Nein |Nein |Ja |Ja |Ja** |
 | Teradata |Nein |Nein |Ja |Ja |Ja |
 
+** SAP HANA unterstützt DirectQuery mit integrierter Windows-Authentifizierung nur bei Verwendung als relationale Datenbank in der veröffentlichten Power BI Desktop-Datei (.pbix).
 
 ## <a name="next-steps"></a>Nächste Schritte
 Nachdem Sie die Verbindung mit Ihrer Datenquelle hergestellt haben, [erstellen Sie einen Power BI-Bericht](quickstart-create-powerbi-report.md) anhand der Daten aus der betreffenden Datenquelle.
 
 Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
-

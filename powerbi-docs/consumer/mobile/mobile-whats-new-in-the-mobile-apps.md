@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/16/2019
+ms.date: 01/08/2019
 ms.author: painbar
-ms.openlocfilehash: 44fcfdbaa51b85b191ff1452c66daee7da0360f8
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: caed3a107b8f7a57d2fb3da92073cb8a5f5331cd
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75220515"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538403"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Neuigkeiten bei den mobilen Apps für Power BI
 Informationen zu verwandten Neuigkeiten finden Sie unter:
@@ -21,6 +21,27 @@ Informationen zu verwandten Neuigkeiten finden Sie unter:
 * [Blog des Power BI-Teams zu mobilen Apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Neuigkeiten in Power BI Desktop](../../desktop-latest-update.md)  
 * [Neuigkeiten beim Power BI-Dienst](../../service-whats-new.md)  
+
+## <a name="december-2019"></a>Dezember 2019
+
+### <a name="docked-report-footer-and-a-refresh-button---new-experiences-for-interacting-with-reports-android"></a>Angedockte Berichtsfußzeile und die Schaltfläche „Aktualisieren“: Neue Funktionen für das Interagieren mit Berichten (Android)
+
+Wir haben von unseren Android-Benutzern gehört, dass Ihre Erfahrung bei der Verwendung von Berichten nicht optimal ist, dass es schwierig ist, die Berichtsfußzeile zu verwenden, und dass „Pull-to-refresh“ bei manchen Geräten zu sensibel reagiert. Daher haben wir in diesem Release die Verhaltensweisen geändert:
+* **Angedockte Berichtsfußzeile:** Wenn Sie einen Bericht auf Ihrem Telefon öffnen, wird nun die Berichtsfußzeile am Ende der Berichtsseite angedockt. Unabhängig von Ihren Aktionen auf der Seite ist sie dort immer sichtbar und verfügbar. Dadurch können alle von der Fußzeile angebotenen Optionen einfach verwendet werden.
+* **Schaltfläche „Aktualisieren“ in der Berichtskopfzeile:** In der Berichtskopfzeile wird zudem die Schaltfläche „Aktualisieren“ angezeigt, mit der Sie den Bericht aktualisieren können.
+
+Die Verhaltensweisen können mithilfe der neuen, erweiterten [Interaktionseinstellungen](./mobile-app-interaction-settings.md) der mobilen App zurückgesetzt werden, wenn Benutzer die alten Verhaltensweisen bevorzugen.
+
+Außerdem können IT-Administratoren im Namen der Benutzer [die neuen Standardeinstellungen über eine Remoteverbindung überschreiben](./mobile-app-configuration.md#interaction-settings-android), indem sie das MDM-Tool ihrer Wahl mit einer App-Konfigurationsdatei verwenden. Auf diese Weise kann für alle Benutzer in einer Organisation dasselbe Verhalten eingestellt werden.
+
+> [!NOTE]
+> Die Interaktionseinstellungen für die Schaltfläche „Aktualisieren“ und für das Andocken der Berichtsfußzeile haben derzeit keinen Einfluss auf die Berichtsserverberichte. Dies ändert sich mit dem Berichtsserverrelease im Januar.
+
+### <a name="set-default-bookmarks-from-your-mobile-app"></a>Festlegen der Standardlesezeichen in Ihrer mobilen App
+Ab sofort können Sie Standardlesezeichen für Ihre Berichte direkt in Ihrer mobilen Power BI-App festlegen. Auf diese Weise wird jedes Mal, wenn Sie einen Bericht öffnen, das Standardlesezeichen automatisch angewendet. [Weitere Informationen](./mobile-reports-in-the-mobile-apps.md#bookmarks)
+
+### <a name="filtering-by-location-on-android-tablets"></a>Filtern nach Standort auf Android-Tablets
+Die Geofilterung ermöglicht Ihnen das Filtern Ihrer Berichte basierend auf Ihrem aktuellen Standort. Diese Funktion ist jetzt auch in der Power BI-App für Android-Tablets verfügbar. [Weitere Informationen](./mobile-apps-geographic-filtering.md)
 
 ## <a name="november-2019"></a>November 2019
 

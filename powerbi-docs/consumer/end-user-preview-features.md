@@ -7,20 +7,25 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/18/2019
+ms.date: 01/17/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 5189c92c9da29b38d9ffaa4bf59e271e08fc4b2c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ad7e2133d531abcbb2165dc2be9846a6a70f4fc0
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73862718"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537422"
 ---
 # <a name="opt-in-for-power-bi-service-preview-features"></a>Aktivieren von Vorschaufeatures im Power BI-Dienst
 ## <a name="what-are-preview-features"></a>Was sind *Vorschaufeatures*?
 Der Power BI-Dienst wird ständig verbessert. Neue Features werden immer wieder als *Vorschaufeatures* veröffentlicht. Wenn Sie sie testen möchten, können Sie Vorschaufeatures aktivieren (und deaktivieren).
 
+Einige Previewfunktionen lassen sich im Power BI-Dashboard, in Power BI Home oder im Bericht selbst ein- und ausschalten.
+
+   ![Umschalter „Neues Design ein“](./media/end-user-preview-features/power-bi-toggle.png)
+
+Andere Previewfunktionen hingegen werden über das Menü *Einstellungen* verfügbar gemacht. In diesem Artikel erfahren Sie, wie Sie über das Menü „Einstellungen“ auf Previewfunktionen zugreifen.
 
 ## <a name="find-previews-and-turn-them-on-and-off"></a>Suchen und Aktivieren (und Deaktivieren) von Vorschauversionen
 1. Öffnen Sie das Menü „Einstellungen“, indem Sie auf das Zahnradsymbol in der oberen rechten Ecke des Power BI-Bildschirms klicken und dann auf **Einstellungen**.

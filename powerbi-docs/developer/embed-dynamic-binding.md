@@ -7,30 +7,28 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 11/07/2019
-ms.openlocfilehash: f797dd55202ff4cba87cc3a15601d85091e94823
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 1f54ce3a6bfd69caa3f386b7684e3df7f725523d
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74164061"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709551"
 ---
 # <a name="connect-a-report-to-a-dataset-using-dynamic-binding"></a>Verbinden eines Berichts mit einem Dataset über die dynamische Bindung 
 
-Sie können die dynamische Bindung verwenden, wenn ein Bericht mit einem Dataset verbunden ist. Die Verbindung zwischen dem Bericht und dem Dataset wird als *Bindung* bezeichnet. Wenn die Bindung nicht vorher, sondern während der Einbettung bestimmt wird, wird sie als [dynamische Bindung](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLate_binding&data=02%7C01%7CKesem.Sharabi%40microsoft.com%7C5d5b0d2d62cf4818f0c108d7635b151e%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637087115150775585&sdata=AbEtdJvgy4ivi4v4ziuui%2Bw2ibTQQXBQNYRKbXn5scA%3D&reserved=0) bezeichnet.
- 
+Sie können die dynamische Bindung verwenden, wenn ein Bericht mit einem Dataset verbunden ist. Die Verbindung zwischen dem Bericht und dem Dataset wird als *Bindung* bezeichnet. Wenn die Bindung nicht vorher, sondern während der Einbettung bestimmt wird, wird sie als dynamische Bindung bezeichnet.
+
 Wenn Sie einen Power BI-Bericht mithilfe von *dynamischer Bindung* einbetten, können Sie den gleichen Bericht in Abhängigkeit mit den Anmeldeinformationen des Benutzers mit unterschiedlichen Datasets verbinden.
- 
+
 Dies bedeutet, dass Sie je nach Dataset, mit dem eine Verbindung hergestellt wurde, einen Bericht verwenden können, um unterschiedliche Informationen anzuzeigen. Beispielsweise kann ein Bericht, in dem Werte zum Verkauf im Einzelhandel angezeigt werden, mit Datasets unterschiedlicher Händler verbunden werden und unterschiedliche Ergebnisse liefern. Dies ist davon abhängig, mit welchen Datasets der Händler verknüpft ist.
- 
+
 Bericht und Dataset müssen sich dabei nicht im gleichen Arbeitsbereich befinden. Beide Arbeitsbereiche (der mit dem Bericht und der mit dem Dataset) müssen einer [Kapazität](azure-pbie-create-capacity.md) zugewiesen sein.
 
 Stellen Sie im Rahmen des Einbettungsprozesses sicher, dass Sie ein *Token mit ausreichenden Berechtigungen generieren* und das *Konfigurationsobjekt anpassen*.
 
-
 ## <a name="generating-a-token-with-sufficient-permissions"></a>Erstellen eines Tokens mit ausreichenden Berechtigungen
 
 Dynamische Bindung wird sowohl für das *Einbetten für Ihre Organisation* als auch für das *Einbetten für Ihre Kunden* unterstützt. In der folgenden Tabelle finden Sie Informationen zu beiden Szenarios.
-
 
 |Scenario  |Datenbesitz  |Token  |Anforderungen  |
 |---------|---------|---------|---------|

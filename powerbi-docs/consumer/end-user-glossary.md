@@ -6,14 +6,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/07/2019
+ms.date: 01/17/2019
 ms.author: mihart
-ms.openlocfilehash: cf70774712a8b72493c8957139d8f802dc4d1ed7
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.openlocfilehash: e5c3f8b327d6899d83e2304e56e5813a47fc4698
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75836665"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537805"
 ---
 # <a name="glossary-for-power-bi-service"></a>Glossar für den Power BI-Dienst
 Der Power BI-Dienst führt möglicherweise Terminologie ein, die nicht vertraut oder zunächst verwirrend ist. Das Glossar ist der ideale Ort, um Begriffe nachzuschlagen – vielleicht sollten Sie ein Lesezeichen setzen? Eine weitere hervorragende Ressource, mehr über die Bausteine zu erfahren, aus denen sich der Power BI-Dienst zusammensetzt, sind die [Grundkonzepte](end-user-basic-concepts.md). Grundkonzepte bietet einen allgemeinen Überblick über die Power BI-*Bestandteile* und die Art ihrer Verbindung.
@@ -77,6 +77,10 @@ Dieses Glossar ist eine Communityinitiative.  Fehlt hier ein Begriff? Bitten Sie
 
 **content view (Inhaltsansicht)**
 
+**Kontinuierliche Variable:** eine kontinuierliche Variable kann einen beliebigen Wert zwischen dem Mindest- und dem Maximalwert aufweisen; andernfalls handelt es sich um eine diskrete Variable. Beispiele hierfür sind Temperatur, Gewicht, Alter und Zeit. Kontinuierliche Variablen können Teilwerte enthalten. Die Gesamtzahl der verkauften blauen Skateboards ist eine diskrete Variable, da kein halbes Skateboard verkauft werden kann.
+
+**Korrelation:** eine Korrelation gibt Aufschluss darüber, wie bestimmte Verhaltensweisen miteinander verknüpft sind.  Wenn sich die Anstiegs- oder Rückgangsmuster ähneln, besteht eine positive Korrelation. Wenn die Muster gegenteilig sind, besteht eine negative Korrelation. Wenn z. B. nach jeder Marketingkampagne im Fernsehen mehr rote Skateboards verkauft werden, besteht eine positive Korrelation zwischen dem Verkauf von roten Skateboards und der Marketingkampagne im Fernsehen.
+
 **Kreuzfiltern** Gilt für Visualinteraktionen. Durch die Kreuzfilterung werden nicht geltende Daten entfernt. Wenn Sie beispielsweise **Moderation** im Ringdiagramm auswählen, wird das Liniendiagramm kreuzgefiltert. Das Liniendiagramm zeigt jetzt nur noch Datenpunkte an, die für das Moderationssegment gelten.
 
 **Übergreifende Hervorhebung** Gilt für Visualinteraktionen. Durch die übergreifende Hervorhebung werden alle ursprünglichen Datenpunkte beibehalten, aber der Teil, der nicht für Ihre Auswahl gilt, wird abgeblendet. Wenn Sie beispielsweise **Moderation** im Ringdiagramm auswählen, wird das Säulendiagramm übergreifend hervorgehoben. Das Säulendiagramm blendet alle Daten, die nicht für das Moderationssegment gelten, ab, und hebt alle Daten hervor, die für das Moderationssegment gelten.
@@ -93,7 +97,7 @@ Dieses Glossar ist eine Communityinitiative.  Fehlt hier ein Begriff? Bitten Sie
 
 **Datenmodell, Excel-Datenmodell** In Power BI-Inhalt bezieht sich ein Datenmodell auf eine Zuordnung von Datenstrukturen in einem Tabellenformat. Das Datenmodell zeigt die Beziehungen, die zum Erstellen von Datenbanken verwendet werden. Berichtsdesigner, Administratoren und Entwickler erstellen und arbeiten mit Datenmodellen, um Power BI-Inhalt zu erzeugen.
 
-**Dataflow** Dataflows werden zum Erfassen, Transformieren, Integrieren und Ergänzen von Big Data verwendet, indem u. a. Datenquellenverbindungen, ETL-Logik und Aktualisierungszeitpläne definiert werden. Früher Datenpool.
+**Dataflow** Dataflows werden zum Erfassen, Transformieren, Integrieren und Ergänzen von Big Data verwendet, indem u. a. Datenquellenverbindungen, ETL-Logik und Aktualisierungszeitpläne definiert werden. Früher als Datenpool bezeichnet.
 
 **Dataset** vs. **data source (Datenquelle)** Ein **Dataset** ist eine Sammlung von Daten, die verwendet wird, um Visualisierungen und Berichte zu erstellen.
 
@@ -102,8 +106,9 @@ Dieses Glossar ist eine Communityinitiative.  Fehlt hier ein Begriff? Bitten Sie
 **Desktop** oder **Power BI Desktop** Kostenloses Power BI-Tool, das hauptsächlich von Berichtsdesignern, Administratoren und Entwicklern verwendet wird. 
 
 
-
 **diamond (Raute)** Power BI Premium. Die Form des Symbols, das einen Arbeitsbereich als Arbeitsbereich mit Premium-Kapazität kennzeichnet.
+
+**Dimension:** Dimensionen sind kategorische (Text-)Daten. Eine Dimension beschreibt eine Person, ein Objekt, ein Element, ein Produkt, einen Ort und eine Uhrzeit. In einem Dataset bieten Dimensionen die Möglichkeit, *Measures* in nützliche Kategorien zu gruppieren. Für das Beispiel des Skateboardunternehmens enthalten manche Dimensionen möglicherweise die Prüfung der Verkäufe (ein Measure) anhand des Modells, der Farbe, dem Land oder der Marketingkampagne.   
 
 **Drilldown, Drilldown, Drillthrough** In Power BI beziehen sich Drilldown und Drillup auf die Möglichkeit, in einem Bericht oder Visual die nächste Detailstufe zu erkunden. Drillthrough ermöglicht Ihnen, einen Teil eines Visuals auszuwählen und zu einer anderen Seite im Bericht zu gelangen, die nach den Daten gefiltert ist, die sich auf den Teil des Visuals beziehen, den Sie auf der ursprünglichen Seite ausgewählt haben.
 Bei einem Drillvorgang zu Details werden zumeist die zugrunde liegenden Datensätze gezeigt.
@@ -148,7 +153,7 @@ Wenn Sie Auslassungspunkte auswählen, werden zusätzliche Menüoptionen angezei
 
 ## <a name="i"></a>I
 
-**Einblicke** Siehe **Quick Insights**.
+**Insights:** Weitere Informationen finden Sie unter **Quick Insights**.
 
 
 ## <a name="j"></a>J
@@ -168,6 +173,8 @@ Erste Nennung: Navigationsbereich. In späteren Nennungen oder bei Platzmangel: 
 **list page (Listenseite)** oder **Inhaltsliste** Eine der Abschnittsseiten für die Elemente im Navigationsbereich. Beispielsweise Favoriten, Zuletzt verwendet, Mein Arbeitsbereich usw.
 
 ## <a name="m"></a>M
+
+**Measure**: ein Measure ist ein quantitatives (numerisches) Feld, das für Berechnungen verwendet werden kann. Es können z. B. Summen, der Durchschnitt oder Mindestwerte berechnet werden. Wenn das Unternehmen in unserem Beispiel Skateboards herstellt und verkauft, können die Measures die Anzahl der verkauften Skateboards und der durchschnittliche Jahresgewinn sein.
 
 **Mobile App** Apps, die es Ihnen ermöglichen, Power BI auf iOS-, Android- und Windows-Geräten auszuführen.
 
@@ -302,6 +309,8 @@ Sie können Berichtsseiten, Apps und Dashboards abonnieren und E-Mails empfangen
 ## <a name="t"></a>T
 **tiles (Kacheln)**  
 Power BI-Dashboards enthalten Berichtskacheln.
+
+**Zeitreihe:** eine Zeitreihe ist eine Möglichkeit, die Zeit als aufeinander folgende Datenpunkte anzuzeigen. Diese Datenpunkte können Inkremente wie Sekunden, Stunden, Monate oder Jahre sein.  
 
 
 ## <a name="u"></a>U

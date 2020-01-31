@@ -6,69 +6,80 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/31/2019
+ms.date: 01/15/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 75462c2414854d0848254a36b89bcdd1de365ec5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 184aeb1f26e54bb8b8935f2f06ec6cad2e282ecf
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73863489"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537905"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>Von Power BI unterstützte Einblicke
 
-Der Power BI-Dienst kann in Ihren Dashboards und Berichten automatisch nach Erkenntnissen suchen.
+Mit Power BI können Sie Ihre Daten durchsehen und interessante Trends und Muster finden. Diese Trends und Muster werden in Form von Visuals angezeigt, die *Erkenntnisse* genannt werden. 
+
+Informationen zur Verwendung von Erkenntnissen finden Sie unter [Anzeigen von Erkenntnissen auf Dashboardkacheldaten mit Power BI](end-user-insights.md).
+
+![Mehrere Erkenntnisse](media/end-user-insight-types/power-bi-insight.png)
 
 ## <a name="how-does-insights-work"></a>Wie funktionieren Einblicke?
-Power BI durchsucht schnell verschiedene Teilmengen Ihres Datasets. Während der Suche nutzt Power BI mehrere hoch entwickelte Algorithmen, um potenziell interessante Erkenntnisse zu ermitteln. Power BI untersucht in einer festgelegten Zeit möglichst große Mengen des Datasets.
+Power BI durchsucht schnell verschiedene Teilmengen Ihres Datasets. Während der Suche nutzt Power BI mehrere hoch entwickelte Algorithmen, um potenziell interessante Erkenntnisse zu ermitteln. *Power BI-Benutzer* können Erkenntnisse auf Dashboardkacheln ausführen.
 
-Sie können Einblicke für ein Dataset oder eine Dashboard-Kachel ausführen.   
+## <a name="some-terminology"></a>Terminologie
+Power BI verwendet statistische Algorithmen, um Erkenntnisse zu gewinnen. Die Algorithmen werden im nächsten Abschnitt dieses Artikels aufgeführt und beschrieben. Bevor sich mit den Algorithmen befasst wird, finden Sie hier Definitionen für einige Begriffe, die Ihnen vielleicht nicht vertraut sind. 
 
-## <a name="what-types-of-insights-can-we-find"></a>Nach welchen Typen von Informationen kann gesucht werden?
-Im Folgenden finden Sie einige der verwendeten Algorithmen:
+* **Measure**: ein Measure ist ein quantitatives (numerisches) Feld, das für Berechnungen verwendet werden kann. Es können z. B. Summen, der Durchschnitt oder Mindestwerte berechnet werden. Wenn das Unternehmen in diesem Beispiel Skateboards herstellt und verkauft, können die Measures die Anzahl der verkauften Skateboards und der durchschnittliche Jahresgewinn sein.  
+* **Dimension:** Dimensionen sind kategorische (Text-)Daten. Eine Dimension beschreibt eine Person, ein Objekt, ein Element, ein Produkt, einen Ort und eine Uhrzeit. In einem Dataset bieten Dimensionen die Möglichkeit, *Measures* in nützliche Kategorien zu gruppieren. Für das Beispiel des Skateboardunternehmens enthalten manche Dimensionen möglicherweise die Prüfung der Verkäufe (ein Measure) anhand des Modells, der Farbe, dem Land oder der Marketingkampagne.   
+* **Korrelation:** eine Korrelation gibt Aufschluss darüber, wie bestimmte Verhaltensweisen miteinander verknüpft sind.  Wenn sich die Anstiegs- oder Rückgangsmuster ähneln, besteht eine positive Korrelation. Wenn die Muster gegenteilig sind, besteht eine negative Korrelation. Wenn z. B. nach jeder Marketingkampagne im Fernsehen mehr rote Skateboards verkauft werden, besteht eine positive Korrelation zwischen dem Verkauf von roten Skateboards und der Marketingkampagne im Fernsehen.
+* **Zeitreihe:** eine Zeitreihe ist eine Möglichkeit, die Zeit als aufeinander folgende Datenpunkte anzuzeigen. Diese Datenpunkte können Inkremente wie Sekunden, Stunden, Monate oder Jahre sein.  
+* **Kontinuierliche Variable:** eine kontinuierliche Variable kann einen beliebigen Wert zwischen dem Mindest- und dem Maximalwert aufweisen; andernfalls handelt es sich um eine diskrete Variable. Beispiele hierfür sind Temperatur, Gewicht, Alter und Zeit. Kontinuierliche Variablen können Teilwerte enthalten. Die Gesamtzahl der verkauften blauen Skateboards ist eine diskrete Variable, da kein halbes Skateboard verkauft werden kann.  
 
-## <a name="category-outliers-topbottom"></a>Kategorieausreißer (oben/unten)
-Hebt die Fälle hervor, in denen für eine Messung im Modell ein oder zwei Elemente einer Dimension wesentlich größere Werte als andere Elemente der Dimension haben.  
+## <a name="what-types-of-insights-can-you-find"></a>Nach welchen Typen von Erkenntnissen kann gesucht werden?
+Dies sind die Algorithmen, die Power BI verwendet: 
+
+### <a name="category-outliers-topbottom"></a>Kategorieausreißer (oben/unten)
+Dieser hebt Fälle hervor, in denen ein oder zwei Kategorien viel größere Werte als andere Kategorien aufweisen.  
 
 ![Beispiel für Kategorieausreißer](./media/end-user-insight-types/pbi-auto-insight-types-category-outliers.png)
 
-## <a name="change-points-in-a-time-series"></a>Änderungspunkte in einer Zeitreihe
+### <a name="change-points-in-a-time-series"></a>Änderungspunkte in einer Zeitreihe
 Hebt hervor, wenn es signifikante Trendänderungen in einer Zeitreihe von Daten gibt.
 
 ![Beispiel für Änderungspunkte im Laufe der Zeit](./media/end-user-insight-types/pbi-auto-insight-types-changepoint.png)
 
-## <a name="correlation"></a>Korrelation
-Erkennt Fälle, in denen mehrere Messungen eine Korrelation zwischen diesen Messungen zeigen, wenn diese an einer Dimension im Dataset dargestellt werden.
+### <a name="correlation"></a>Korrelation
+Dieser erkennt Fälle, in denen mehrere Measures ein ähnliches Muster oder einen ähnlichen Trend aufweisen, wenn diese in einer Kategorie oder in einem Wert im Dataset dargestellt werden.
 
 ![Beispiel für Korrelation](./media/end-user-insight-types/pbi-auto-insight-types-correlation.png)
 
-## <a name="low-variance"></a>Geringe Abweichung
+### <a name="low-variance"></a>Geringe Abweichung
 Erkennt Fälle, in denen Datenpunkte nicht stark vom Mittelwert abweichen.
 
 ![Beispiel für geringe Abweichung](./media/end-user-insight-types/power-bi-low-variance.png)
 
-## <a name="majority-major-factors"></a>Mehrheit (Hauptfaktoren)
+### <a name="majority-major-factors"></a>Mehrheit (Hauptfaktoren)
 Sucht nach Fällen, in denen eine Mehrheit eines Gesamtwerts beim Aufschlüsseln in eine andere Dimension einem einzelnen Faktor zugeordnet werden kann.  
 
 ![Beispiel für Hauptfaktoren](./media/end-user-insight-types/pbi-auto-insight-types-majority.png)
 
-## <a name="overall-trends-in-time-series"></a>Allgemeine Trends in Zeitreihen
+### <a name="overall-trends-in-time-series"></a>Allgemeine Trends in Zeitreihen
 Entdeckt Trends nach oben oder unten in Zeitreihendaten.
 
 ![Beispiel für allgemeine Trends im Laufe der Zeit](./media/end-user-insight-types/pbi-auto-insight-types-trend.png)
 
-## <a name="seasonality-in-time-series"></a>Saisonabhängigkeit in Zeitreihen
+### <a name="seasonality-in-time-series"></a>Saisonabhängigkeit in Zeitreihen
 Sucht periodische Muster in Zeitreihendaten, z. B. wöchentliche, monatliche oder jährliche Saisonabhängigkeit.
 
 ![Beispiel für Saisonabhängigkeit](./media/end-user-insight-types/pbi-auto-insight-types-seasonality-new.png)
 
-## <a name="steady-share"></a>Stetiger Anteil
+### <a name="steady-share"></a>Stetiger Anteil
 Hebt Fälle hervor, in denen eine Beziehung von übergeordneten und untergeordneten Elementen zwischen dem Anteil eines untergeordneten Werts in Bezug auf den Gesamtwert des übergeordneten Elements für eine kontinuierliche Variable vorhanden ist.
 
 ![Beispiel für stetigen Anteil](./media/end-user-insight-types/pbi-auto-insight-types-steadyshare.png)
 
-## <a name="time-series-outliers"></a>Zeitreihenausreißer
+### <a name="time-series-outliers"></a>Zeitreihenausreißer
 Erkennt in Daten auf einer Zeitreihe, wenn bestimmte Datums- oder Zeitangaben mit sich deutlich von den übrigen Daten unterscheidenden Werten vorliegen.
 
 ![Beispiel für Ausreißer im Laufe der Zeit](./media/end-user-insight-types/pbi-auto-insight-types-time-series-outliers.png)
