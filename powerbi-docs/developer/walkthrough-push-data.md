@@ -1,19 +1,19 @@
 ---
 title: Übertragen von Daten in ein Dataset per Push
 description: Übertragen von Daten in ein Power BI-Dataset per Push
-author: rkarlin
-ms.author: rkarlin
-ms.reviewer: madia
+author: KesemSharabi
+ms.author: kesharab
+ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/22/2019
-ms.openlocfilehash: 5db16bfdc1013668be5103f392d6f298c8faf925
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ceebf32f62395db8741eaf43cfc494652fbbbf98
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875445"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76818799"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Übertragen von Daten in ein Power BI-Dataset per Push
 
@@ -24,7 +24,7 @@ Damit Sie beginnen können, benötigen Sie ein Azure Active Directory- (Azure AD
 ## <a name="steps-to-push-data-into-a-dataset"></a>Schritte zum Übertragen von Daten per Push in ein Dataset
 
 * Schritt 1: [Registrieren einer App in Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)
-* Schritt 2: [Abrufen eines Authentifizierungszugriffstokens](walkthrough-push-data-get-token.md)
+* Schritt 2: [Abrufen eines Authentifizierungszugriffstokens](walkthrough-push-data-get-token.md)
 * Schritt 3: [Erstellen eines Datasets in Power BI](walkthrough-push-data-create-dataset.md)
 * Schritt 4: [Abrufen eines Datasets, um einer Power BI-Tabelle Zeilen hinzuzufügen](walkthrough-push-data-get-datasets.md)
 * Schritt 5: [Hinzufügen von Zeilen zu einer Power BI-Tabelle](walkthrough-push-data-add-rows.md)
@@ -105,9 +105,9 @@ Für ein Power BI-Tabellenschema können Sie die folgenden Datentypen verwenden.
 | --- | --- |
 | Int64 |Int64.MaxValue und Int64.MinValue sind nicht zulässig. |
 | Double |Die Werte Double.MaxValue und Double.MinValue sind nicht zulässig. NaN wird nicht unterstützt. +Infinity und -Infinity werden bei einigen Funktionen (z. B. Min, Max) nicht unterstützt. |
-| Boolescher Wert |Keine |
+| Boolean |Keine |
 | Datetime |Beim Laden von Daten werden Werte mit Bruchteilen von Tagen auf ganze Vielfache von 1/300 Sekunden (3,33 ms) quantisiert. |
-| Zeichenfolge |Derzeit sind bis zu 128.000 Zeichen zulässig. |
+| String |Derzeit sind bis zu 128.000 Zeichen zulässig. |
 
 ## <a name="learn-more-about-pushing-data-into-power-bi"></a>Weitere Informationen zum Übertragen von Daten per Push in Power BI
 
@@ -120,4 +120,4 @@ Informationen zum Einstieg in das Übertragen von Daten per Push in ein Dataset 
 [Registrieren bei Power BI](create-an-azure-active-directory-tenant.md)  
 [Einführung in JSON](https://json.org/)  
 [Übersicht über Power BI-REST-API](overview-of-power-bi-rest-api.md)  
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
+Haben Sie dazu Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

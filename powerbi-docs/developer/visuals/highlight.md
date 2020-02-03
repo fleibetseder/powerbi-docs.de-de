@@ -1,19 +1,19 @@
 ---
 title: Hervorhebungen
 description: Hervorheben ausgewählter Datenpunkte in Power BI-Visuals
-author: zBritva
-ms.author: v-ilgali
-ms.reviewer: sranins
+author: KesemSharabi
+ms.author: kesharab
+ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 10/31/2019
-ms.openlocfilehash: bf5cd8d8ae649071b3c9cc7243f87ac3cc316c3b
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 0c1263760157371f9f4d9fc0f122d6e37d73d720
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74695358"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819167"
 ---
 # <a name="highlight-data-points-in-power-bi-visuals"></a>Hervorheben von Datenpunkten in Power BI-Visuals
 
@@ -325,24 +325,24 @@ Die Beispieldaten zum Erstellen der Hierarchie für die Zuordnung der Matrixdate
 
 |   Zeile1   |   Zeile2   |   Zeile3   |   Column1   |   Column2   |   Column3   |   Werte   |
 |-----|-----|------|-------|-------|-------|-------|
-|   F1   |   R11   |   R111   |   C1   |   C11   |   C111   |   1   |
-|   F1   |   R11   |   R112   |   C1   |   C11   |   C112   |   2   |
-|   F1   |   R11   |   R113   |   C1   |   C11   |   C113   |   3   |
-|   F1   |   R12   |   R121   |   C1   |   C12   |   C121   |   4   |
-|   F1   |   R12   |   R122   |   C1   |   C12   |   C122   |   5   |
-|   F1   |   R12   |   R123   |   C1   |   C12   |   C123   |   6   |
-|   F1   |   R13   |   R131   |   C1   |   C13   |   C131   |   7   |
-|   F1   |   R13   |   R132   |   C1   |   C13   |   C132   |   8   |
-|   F1   |   R13   |   R133   |   C1   |   C13   |   C133   |   9   |
-|   F2   |   R21   |   R211   |   C2   |   C21   |   C211   |   10   |
-|   F2   |   R21   |   R212   |   C2   |   C21   |   C212   |   11   |
-|   F2   |   R21   |   R213   |   C2   |   C21   |   C213   |   12   |
-|   F2   |   R22   |   R221   |   C2   |   C22   |   C221   |   13   |
-|   F2   |   R22   |   R222   |   C2   |   C22   |   C222   |   14   |
-|   F2   |   R22   |   R223   |   C2   |   C22   |   C223   |   16   |
-|   F2   |   R23   |   R231   |   C2   |   C23   |   C231   |   17   |
-|   F2   |   R23   |   R232   |   C2   |   C23   |   C232   |   18   |
-|   F2   |   R23   |   R233   |   C2   |   C23   |   C233   |   19   |
+|   R1   |   R11   |   R111   |   C1   |   C11   |   C111   |   1   |
+|   R1   |   R11   |   R112   |   C1   |   C11   |   C112   |   2   |
+|   R1   |   R11   |   R113   |   C1   |   C11   |   C113   |   3   |
+|   R1   |   R12   |   R121   |   C1   |   C12   |   C121   |   4   |
+|   R1   |   R12   |   R122   |   C1   |   C12   |   C122   |   5   |
+|   R1   |   R12   |   R123   |   C1   |   C12   |   C123   |   6   |
+|   R1   |   R13   |   R131   |   C1   |   C13   |   C131   |   7   |
+|   R1   |   R13   |   R132   |   C1   |   C13   |   C132   |   8   |
+|   R1   |   R13   |   R133   |   C1   |   C13   |   C133   |   9   |
+|   R2   |   R21   |   R211   |   C2   |   C21   |   C211   |   10   |
+|   R2   |   R21   |   R212   |   C2   |   C21   |   C212   |   11   |
+|   R2   |   R21   |   R213   |   C2   |   C21   |   C213   |   12   |
+|   R2   |   R22   |   R221   |   C2   |   C22   |   C221   |   13   |
+|   R2   |   R22   |   R222   |   C2   |   C22   |   C222   |   14   |
+|   R2   |   R22   |   R223   |   C2   |   C22   |   C223   |   16   |
+|   R2   |   R23   |   R231   |   C2   |   C23   |   C231   |   17   |
+|   R2   |   R23   |   R232   |   C2   |   C23   |   C232   |   18   |
+|   R2   |   R23   |   R233   |   C2   |   C23   |   C233   |   19   |
 
 Erstellen Sie das Visual-Standardprojekt, und übernehmen Sie das Beispiel von `capabilities.json`.
 

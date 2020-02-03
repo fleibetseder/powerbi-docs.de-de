@@ -1,22 +1,22 @@
 ---
 title: Auswahl von Datenpunkten in Power BI-Visuals
 description: In diesem Artikel wird beschrieben, wie Sie Power BI-Visuals Auswahlmöglichkeiten hinzufügen.
-author: zBritva
-ms.author: v-ilgali
+author: KesemSharabi
+ms.author: kesharab
+ms.reviewer: rkarlin
 manager: rkarlin
-ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 94a1af90cc7ed08947f65f4ed0d55e981558d049
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 6854dad244636854cc8b77ddf1ffc15342281771
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74696440"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76818891"
 ---
-# <a name="add-interactivity-into-visual-by-power-bi-visuals-selections"></a>Power BI-Visuals interaktiv gestalten mithilfe von Auswahloptionen
+# <a name="add-interactivity-into-visual-by-power-bi-visuals-selections"></a>Hinzufügen von Interaktivität zu Visuals mithilfe von Auswahlmöglichkeiten für Power BI-Visuals
 
 Power BI bietet zwei Möglichkeiten der Interaktion mit Visuals: Auswahl und Filterung. Im folgenden Beispiel wird veranschaulicht, wie Sie beliebige Elemente in einem Visual auswählen und andere Visuals im Bericht über den neuen Auswahlzustand informieren.
 
@@ -81,7 +81,7 @@ Dieses Objekt verfügt über entsprechende Methoden zum Erstellen von `selection
 
 Sehen wir uns an, wie Auswahloptionen in der Kategoriezuordnung der Datenansicht für ein Beispieldataset dargestellt werden:
 
-| Manufacturer | Typ | Wert |
+| Hersteller | type | value |
 | - | - | - |
 | Chrysler | Kfz aus Inlandsfertigung | 28883 |
 | Chrysler | LKW aus Inlandsfertigung | 117131 |
@@ -155,13 +155,13 @@ Und das Visual verwendet die folgende Zuordnung der Datenansicht:
 }
 ```
 
-Im Beispiel ist `Manufacturer` `columns` und `Type` `rows` zugeordnet. Es gibt eine Datenreihe, die durch Gruppieren von Werten nach `rows` (`Type`) erstellt wird.
+Im Beispiel ist `Manufacturer``columns` und `Type``rows` zugeordnet. Es gibt eine Datenreihe, die durch Gruppieren von Werten nach `rows` (`Type`) erstellt wird.
 
-Das Visual sollte die Daten ferner nach `Manufacturer` und `Type` aufschlüsseln können.
+Und ein Visual sollte auch in der Lage sein, einen Datenschnitt für `Manufacturer` und `Type` auszuführen.
 
 Wenn der Benutzer beispielsweise `Chrysler` als `Manufacturer` auswählt, sollten die anderen Visuals folgende Daten anzeigen:
 
-| Manufacturer | Typ | Wert |
+| Hersteller | type | value |
 | - | - | - |
 | **Chrysler** | Kfz aus Inlandsfertigung | 28883 |
 | **Chrysler** | LKW aus Inlandsfertigung | 117131 |
@@ -170,7 +170,7 @@ Wenn der Benutzer beispielsweise `Chrysler` als `Manufacturer` auswählt, sollte
 
 Wenn der Benutzer `Import Car` nach `Type` (wählt Daten nach Reihe aus) auswählt, sollten die anderen Visuals folgende Daten anzeigen:
 
-| Manufacturer | Typ | Wert |
+| Hersteller | type | value |
 | - | - | - |
 | Chrysler | **Import-Kfz** | 0 |
 | Ford | **Import-Kfz** | 0 |
@@ -181,9 +181,9 @@ Wenn der Benutzer `Import Car` nach `Type` (wählt Daten nach Reihe aus) auswäh
 
 ![Das Visual mit den Auswahlen für Kategorien und Datenreihen](media/visual-selections-sample.png)
 
-Die Datenkörbe des Visuals müssen gefüllt werden.
+Die Data Baskets des Visuals müssen gefüllt werden.
 
-![Datenkörbe des Visuals mit getroffener Auswahl](media/visual-selections-databuckets.png)
+![Daten Baskets des VIsuals mit getroffener Auswahl](media/visual-selections-databuckets.png)
 
 Es gibt `Manufacturer` als Kategorie (Spalten), `Type` als Datenreihe (Zeilen) und `Value` als `Values` für Datenreihen.
 
@@ -309,7 +309,7 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-Der Code des Visuals durchläuft die Zeilen der Tabelle und ruft für jede Zeile die Tabellenmethode `withTable` auf. Die Parameter der `withTable`-Methode sind das `table`-Objekt und der Index der Tabellenzeile.
+Der Code des Visuals durchläuft die Zeilen der Tabelle und ruft für jede Zeile die Tabellenmethode `withTable` auf. Die Parameter `withTable`-Methode sind das `table`-Objekt und der Index der Tabellenzeile.
 
 ### <a name="create-selections-for-matrix-data-view-mapping"></a>Erstellen von Auswahloptionen für die Zuordnungen der Matrixdatenansicht
 

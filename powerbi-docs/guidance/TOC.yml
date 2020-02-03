@@ -32,6 +32,8 @@
               href: relationships-many-to-many.md
             - name: Leitfaden zum DirectQuery-Modell
               href: directquery-model-guidance.md
+            - name: Leitfaden zu zusammengesetzten Modellen
+              href: composite-model-guidance.md
         - name: DAX
           items:
             - name: Vergleich zwischen der DIVIDE-Funktion und dem Divisionsoperator (/)
@@ -50,8 +52,6 @@
               href: dax-column-measure-references.md
             - name: Vermeiden der Verwendung von FILTER als Filterargument
               href: dax-avoid-avoid-filter-as-filter-argument.md
-        - name: Berichterstellung
-          items:
             - name: Erweitern von Visuals mit QuickInfos für Berichtsseiten
               href: report-page-tooltips.md
             - name: Verwenden des Drillthrough für Berichtsseiten
@@ -64,6 +64,10 @@
               href: report-paginated-blank-page.md
             - name: Migrieren von SSRS-Berichten zu Power BI
               href: migrate-ssrs-reports-to-power-bi.md
+        - name: Verwaltung und Bereitstellung
+          items:
+            - name: Festlegen der Größe des lokalen Datengateways
+              href: gateway-onprem-sizing.md
     - name: Whitepaper
       items:
         - name: Whitepaper – Übersicht

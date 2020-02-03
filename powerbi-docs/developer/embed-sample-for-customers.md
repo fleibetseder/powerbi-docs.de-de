@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 12/12/2019
-ms.openlocfilehash: e27789ca28d86a53b7d8340b3d766a73a04645cb
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: a07a3e6e1086c463e0f0c8911d7a9b6ce89aa115
+ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223408"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76913638"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Tutorial: Einbetten von Power BI-Inhalten in eine Anwendung für Ihre Kunden
 
@@ -22,7 +22,7 @@ Mit **Power BI Embedded in Azure** oder **Power BI-Einbetten in Office** können
 
 ![Power BI Embed Report](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
 
-In diesem Tutorial erhalten Sie Informationen zu den folgenden Vorgängen:
+In diesem Tutorial lernen Sie Folgendes:
 > [!div class="checklist"]
 > * Registrieren einer Anwendung in Azure
 > * Einbetten eines Power BI-Berichts in eine App
@@ -56,7 +56,7 @@ Wenn Sie jedoch mit einem Dienstprinzipal fortfahren, müssen Sie eine **servers
 
 ## <a name="set-up-your-power-bi-environment"></a>Einrichten der Power BI-Umgebung
 
-### <a name="create-a-workspace"></a>Arbeitsbereich erstellen
+### <a name="create-a-workspace"></a>Erstellen eines Arbeitsbereichs
 
 Wenn Sie Berichte, Dashboards oder Kacheln für Ihre Kunden einbetten, müssen Sie Ihre Inhalte in einem Arbeitsbereich platzieren. Zur Einrichtung stehen verschiedene Arten von Arbeitsbereichen zur Auswahl: der [traditionelle Arbeitsbereich](../service-create-workspaces.md) oder [neue Arbeitsbereiche](../service-create-the-new-workspaces.md). Wenn Sie ein *Hauptkonto* verwenden, spielt es keine Rolle, welche Art von Arbeitsbereich Sie verwenden. Wenn Sie jedoch einen *[Dienstprinzipal](embed-service-principal.md)* verwenden, um sich in der Anwendung anzumelden, müssen Sie neue Arbeitsbereiche verwenden. In beiden Szenarien müssen das *Hauptkonto* oder der *Dienstprinzipal* Administratorkonten für die Arbeitsbereiche Ihrer Anwendung sein.
 
@@ -220,7 +220,7 @@ Geben Sie für **tenant** die ID Ihres Azure-Mandanten an. Die benötigten Infor
 
 3. Jetzt können Sie den Bericht in der Beispielanwendung anzeigen.
 
-    ![Anwendung anzeigen](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
+    ![Anzeigen der Anwendung](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
 
 ## <a name="embed-content-within-your-application"></a>Einbetten von Inhalt in Ihre Anwendung
 
@@ -399,7 +399,7 @@ Im Beispiel wird ein Modell **EmbedConfig** und ein Modell **TileEmbedConfig** m
 </script>
 ```
 
-## <a name="move-to-production"></a>In die Produktionsphase wechseln
+## <a name="move-to-production"></a>Überführen in die Produktion
 
 Wenn Sie mit dem Entwickeln Ihrer Anwendung fertig sind, sollten Sie Ihren Arbeitsbereich durch eine dedizierte Kapazität absichern. 
 
@@ -409,8 +409,8 @@ Wenn Sie mit dem Entwickeln Ihrer Anwendung fertig sind, sollten Sie Ihren Arbei
 ### <a name="create-a-dedicated-capacity"></a>Erstellen einer dedizierten Kapazität
 
 Wenn Sie eine dedizierte Kapazität erstellen, können Sie Ihrem Kunden eine dedizierte Ressource zuweisen. Sie können unter zwei Typen von Kapazität wählen:
-* **Power BI Premium**: Ein Office 356-Abonnement auf Mandantenebene, das in zwei SKU-Familien erhältlich ist, *EM* und *P*. Beim Einbetten von Power BI-Inhalten wird diese Lösung als *Power BI-Einbettung* bezeichnet. Weitere Informationen zu diesem Abonnement finden Sie unter [Was ist Power BI Premium?](../service-premium-what-is.md)
-* **Azure Power BI Embedded**: Sie können eine dedizierte Kapazität im [Microsoft Azure-Portal](https://portal.azure.com) erwerben. Dieses Abonnement verwendet die *A*-SKUs. Weitere Informationen zum Erstellen einer Power BI Embedded-Kapazität finden Sie unter [Erstellen einer Power BI Embedded-Kapazität im Azure-Portal](azure-pbie-create-capacity.md).
+* **Power BI Premium**: Ein Office 356-Abonnement auf Mandantenebene, das in zwei SKU-Familien erhältlich ist, *EM* und *P*. Beim Einbetten von Power BI-Inhalten wird diese Lösung als *Power BI-Einbettung* bezeichnet. Weitere Informationen zu diesem Abonnement finden Sie unter [Was ist Power BI Premium?](../service-premium-what-is.md).
+* **Azure Power BI Embedded:** Sie können eine dedizierte Kapazität im [Microsoft Azure-Portal](https://portal.azure.com) erwerben. Dieses Abonnement verwendet die *A*-SKUs. Weitere Informationen zum Erstellen einer Power BI Embedded-Kapazität finden Sie unter [Erstellen einer Power BI Embedded-Kapazität im Azure-Portal](azure-pbie-create-capacity.md).
 > [!NOTE]
 > Mit A-SKUs können Sie mit einer KOSTENLOSEN Power BI-Lizenz nicht auf Power BI-Inhalte zugreifen.
 
@@ -418,7 +418,7 @@ In der Tabelle unten sind die Ressourcen und Grenzen der einzelnen SKUs beschrie
 
 | Kapazitätsknoten | Gesamtzahl an V-Kernen | Back-End-V-Kerne | RAM (GB) | Front-End-V-Kerne | DirectQuery/Live Connection (s) | Modell-Aktualisierungsparallelität |
 | --- | --- | --- | --- | --- | --- | --- |
-| EM1/A1 | 1 | 0,5 | 2.5 | 0,5 | 3,75 | 1 |
+| EM1/A1 | 1 | 0.5 | 2.5 | 0.5 | 3,75 | 1 |
 | EM2/A2 | 2 | 1 | 5 | 1 | 7,5 | 2 |
 | EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
@@ -446,7 +446,7 @@ Entlang der folgenden Schritte können Sie einem Arbeitsbereich über ein **Haup
 
     ![Arbeitsbereich bearbeiten](media/embed-sample-for-customers/embed-sample-for-customers-036.png)
 
-2. Erweitern Sie **Erweitert**, aktivieren Sie **Dedizierte Kapazität**, und wählen Sie die dedizierte Kapazität aus, die Sie erstellt haben. Klicken Sie auf **Speichern**.
+2. Erweitern Sie **Erweitert**, aktivieren Sie **Dedizierte Kapazität**, und wählen Sie die dedizierte Kapazität aus, die Sie erstellt haben. Klicken Sie dann auf **Speichern**.
 
     ![Zuweisen der dedizierten Kapazität](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
 
@@ -461,4 +461,4 @@ In diesem Tutorial haben Sie gelernt, wie Sie Power BI-Inhalte für Ihre Kunden 
 > [!div class="nextstepaction"]
 >[Embed for your organization (Einbetten für Ihre Organisation)](embed-sample-for-your-organization.md)
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
+Haben Sie dazu Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
