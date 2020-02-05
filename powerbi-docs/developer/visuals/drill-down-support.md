@@ -10,10 +10,10 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
 ms.openlocfilehash: 0253455cfba96c3c467f4cf8882550e22edce8ba
-ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "76819236"
 ---
 # <a name="add-drill-down-support"></a>Hinzufügen von Unterstützung für Drilldowns
@@ -205,14 +205,14 @@ button {
 
 Bereiten Sie Beispieldaten vor, um das Visual zu testen:
 
-|   H1  |   H2    | H3  |   VALUES  |
+|   H1  |   H2    | H3  |   WERTE  |
 |-----|-----|------|-------|
-|   Ein   |   A1  |   A11 |   1   |
-|   Ein   |   A1  |   A12 |   2   |
-|   Ein   |   A2  |   A21 |   3   |
-|   Ein   |   A2  |   A22 |   4   |
-|   Ein   |   A3  |   A31 |   5   |
-|   Ein   |   A3  |   A32 |   6   |
+|   A   |   A1  |   A11 |   1   |
+|   A   |   A1  |   A12 |   2   |
+|   A   |   A2  |   A21 |   3   |
+|   A   |   A2  |   A22 |   4   |
+|   A   |   A3  |   A31 |   5   |
+|   A   |   A3  |   A32 |   6   |
 |   B   |   B1  |   B11 |   7   |
 |   B   |   B1  |   B12 |   8   |
 |   B   |   B2  |   B21 |   9   |
@@ -317,24 +317,24 @@ Bereiten Sie Beispieldaten vor, um das Visual mit Zuordnungen der Matrixdatenans
 
 |   Zeile1   |   Zeile2   |   Zeile3   |   Column1   |   Column2   |   Column3   |   Werte   |
 |-----|-----|------|-------|-------|-------|-------|
-|   R1   |   R11   |   R111   |   C1   |   C11   |   C111   |   1   |
-|   R1   |   R11   |   R112   |   C1   |   C11   |   C112   |   2   |
-|   R1   |   R11   |   R113   |   C1   |   C11   |   C113   |   3   |
-|   R1   |   R12   |   R121   |   C1   |   C12   |   C121   |   4   |
-|   R1   |   R12   |   R122   |   C1   |   C12   |   C122   |   5   |
-|   R1   |   R12   |   R123   |   C1   |   C12   |   C123   |   6   |
-|   R1   |   R13   |   R131   |   C1   |   C13   |   C131   |   7   |
-|   R1   |   R13   |   R132   |   C1   |   C13   |   C132   |   8   |
-|   R1   |   R13   |   R133   |   C1   |   C13   |   C133   |   9   |
-|   R2   |   R21   |   R211   |   C2   |   C21   |   C211   |   10   |
-|   R2   |   R21   |   R212   |   C2   |   C21   |   C212   |   11   |
-|   R2   |   R21   |   R213   |   C2   |   C21   |   C213   |   12   |
-|   R2   |   R22   |   R221   |   C2   |   C22   |   C221   |   13   |
-|   R2   |   R22   |   R222   |   C2   |   C22   |   C222   |   14   |
-|   R2   |   R22   |   R223   |   C2   |   C22   |   C223   |   16   |
-|   R2   |   R23   |   R231   |   C2   |   C23   |   C231   |   17   |
-|   R2   |   R23   |   R232   |   C2   |   C23   |   C232   |   18   |
-|   R2   |   R23   |   R233   |   C2   |   C23   |   C233   |   19   |
+|   F1   |   R11   |   R111   |   C1   |   C11   |   C111   |   1   |
+|   F1   |   R11   |   R112   |   C1   |   C11   |   C112   |   2   |
+|   F1   |   R11   |   R113   |   C1   |   C11   |   C113   |   3   |
+|   F1   |   R12   |   R121   |   C1   |   C12   |   C121   |   4   |
+|   F1   |   R12   |   R122   |   C1   |   C12   |   C122   |   5   |
+|   F1   |   R12   |   R123   |   C1   |   C12   |   C123   |   6   |
+|   F1   |   R13   |   R131   |   C1   |   C13   |   C131   |   7   |
+|   F1   |   R13   |   R132   |   C1   |   C13   |   C132   |   8   |
+|   F1   |   R13   |   R133   |   C1   |   C13   |   C133   |   9   |
+|   F2   |   R21   |   R211   |   C2   |   C21   |   C211   |   10   |
+|   F2   |   R21   |   R212   |   C2   |   C21   |   C212   |   11   |
+|   F2   |   R21   |   R213   |   C2   |   C21   |   C213   |   12   |
+|   F2   |   R22   |   R221   |   C2   |   C22   |   C221   |   13   |
+|   F2   |   R22   |   R222   |   C2   |   C22   |   C222   |   14   |
+|   F2   |   R22   |   R223   |   C2   |   C22   |   C223   |   16   |
+|   F2   |   R23   |   R231   |   C2   |   C23   |   C231   |   17   |
+|   F2   |   R23   |   R232   |   C2   |   C23   |   C232   |   18   |
+|   F2   |   R23   |   R233   |   C2   |   C23   |   C233   |   19   |
 
 Wenden Sie folgende Datenansichtszuordnung für das Visual an:
 

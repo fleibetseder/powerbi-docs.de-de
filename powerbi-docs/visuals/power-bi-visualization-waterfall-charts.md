@@ -11,10 +11,10 @@ ms.date: 12/5/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 6abca661a1553bfabc3da35fe714ff9bced5555a
-ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74907646"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Wasserfalldiagramme in Power BI
@@ -26,7 +26,7 @@ Wasserfalldiagramme zeigen eine laufende Summe an, während Power BI Werte hinzu
 Die Säulen sind farbkodiert, damit Sie Zu- und Abnahmen der Werte schnell erkennen können. Die Säulen für den Anfangs- und den Endwert [gehen häufig von der horizontalen Achse aus](https://support.office.com/article/Create-a-waterfall-chart-in-Office-2016-for-Windows-8de1ece4-ff21-4d37-acd7-546f5527f185#BKMK_Float "Starten Sie auf der horizontalen Achse"), während die Zwischenwerte unverankerte Säulen sind. Aufgrund dieses Aussehens werden Wasserfalldiagramme auch als „Brückendiagramme“ bezeichnet.
 
    > [!NOTE]
-   > Dieses Video verwendet eine ältere Version von Power BI Desktop.
+   > In diesem Video wird eine ältere Version von Power BI Desktop verwendet.
    > 
    > 
 

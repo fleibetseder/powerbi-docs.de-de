@@ -9,10 +9,10 @@ ms.topic: troubleshooting
 ms.subservice: powerbi-custom-visuals
 ms.date: 11/06/2018
 ms.openlocfilehash: c2680a5818488a7822f38b8286a3e5a1782a487a
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74999765"
 ---
 # <a name="troubleshoot-power-bi-visuals"></a>Problembehandlung bei Power BI-Visuals
@@ -38,7 +38,7 @@ Wenn sie nicht angezeigt wird, vergewissern Sie sich, dass Sie sie in den Power 
 
 Führen Sie den Server für Visuals mit dem Befehl `pbiviz start` über die Befehlszeile Ihres Terminals im Stammverzeichnis des Visualprojekts aus. Wenn der Server nicht ausgeführt wird, wurden vermutlich die SSL-Zertifikate nicht ordnungsgemäß installiert.
 
-Zögern Sie nicht, sich mit Fragen, Kommentaren oder Problemen an das Power BI-Visuals-Supportteam zu wenden: *pbicvsupport@microsoft.com* .
+Zögern Sie nicht, sich mit Fragen, Kommentaren oder Problemen an das Power BI-Visuals-Supportteam zu wenden: *pbicvsupport@microsoft.com*  .
 
 ## <a name="next-steps"></a>Nächste Schritte
 

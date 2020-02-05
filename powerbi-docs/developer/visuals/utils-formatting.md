@@ -10,10 +10,10 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
 ms.openlocfilehash: 9ae7e4b976cef2217c3742ef808a9a7063695cbc
-ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "76819466"
 ---
 # <a name="formatting-utils"></a>Formatierungshilfsprogramme
@@ -402,7 +402,7 @@ stringExtensions.startsWith("Power BI", "Power");
 // returns: true
 ```
 
-### <a name="contains"></a>contains
+### <a name="contains"></a>enthält
 
 Diese Funktion überprüft, ob eine Zeichenfolge eine angegebene Teilzeichenfolge enthält.
 
@@ -629,7 +629,7 @@ interface ValueFormatterOptions {
 }
 ```
 
-## <a name="create"></a>create
+## <a name="create"></a>Erstellen
 
 Diese Methode erstellt eine Instanz von IValueFormatter.
 

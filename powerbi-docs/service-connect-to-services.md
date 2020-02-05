@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 91740d16a91aa8dc1936e8ae1a2812653c45e6a1
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: c342a7472666ee50b7213e7d933ad36da85ce7f6
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73925827"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76975031"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Herstellung einer Verbindung mit den verwendeten Diensten mithilfe von Power BI
 Mit Power BI können Sie eine Verbindung mit vielen der Dienste herstellen, die Sie zur Unterstützung Ihrer Geschäftstätigkeit einsetzen, z. B. Salesforce, Microsoft Dynamics und Google Analytics. Power BI verwendet zunächst Ihre Anmeldeinformationen, um eine Verbindung mit dem Dienst herzustellen. Anschließend erstellt Power BI einen *Power BI-Arbeitsbereich* mit einem Dashboard und einer Reihe von Power BI-Berichten, die Ihre Daten automatisch anzeigen und Ihnen visuelle Einblicke in Ihr Unternehmen ermöglichen.
@@ -71,5 +71,4 @@ Wenn Sie daran interessiert sind, Ihre eigenen Vorlagen-Apps zu erstellen und zu
 * [Verteilen von Apps an Ihre Kollegen](service-create-distribute-apps.md)
 * [Erstellen der neuen Arbeitsbereiche in Power BI](service-create-the-new-workspaces.md)
 * Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
-* Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
 

@@ -10,10 +10,10 @@ ms.date: 10/22/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
 ms.openlocfilehash: 06e46413be709ac3eda2102332740d709092187e
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74265337"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Neuigkeiten bei Power BI
@@ -516,7 +516,7 @@ Im [Power BI-Blog](https://blogs.msdn.com/b/powerbi/archive/2015/12/16/more-powe
 **10. Dezember 2015**
 
 * Anheften von Berichtsseiten an das Dashboard
-* Aktualisieren von Dashboardkacheln
+* Dashboardkacheln aktualisieren
 * Verwenden von Bildern in Datenschnitten
 * Ändern der Interaktionen zwischen Berichtsvisualisierungen
   

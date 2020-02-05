@@ -10,10 +10,10 @@ ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: cf1d67318fc86b1044e38e6f4f5f56c9473c39a1
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74265492"
 ---
 # <a name="enable-qa-for-live-connections-in-power-bi"></a>Aktivieren von Q&A für Liveverbindungen in Power BI
@@ -60,7 +60,7 @@ Die Funktion weist einige Einschränkungen auf:
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Lokales Datengateway](service-gateway-onprem.md)  
+- [On-premises data gateway (Lokales Datengateway)](service-gateway-onprem.md)  
 - [Verwalten Ihrer Datenquelle – Analysis Services](service-gateway-enterprise-manage-ssas.md)  
 - [Grundlegende Konzepte für Designer im Power BI-Dienst](service-basic-concepts.md)  
 - [Übersicht über Power BI Q&A](consumer/end-user-q-and-a.md)  

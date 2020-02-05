@@ -10,10 +10,10 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
 ms.openlocfilehash: 6854dad244636854cc8b77ddf1ffc15342281771
-ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "76818891"
 ---
 # <a name="add-interactivity-into-visual-by-power-bi-visuals-selections"></a>Hinzufügen von Interaktivität zu Visuals mithilfe von Auswahlmöglichkeiten für Power BI-Visuals
@@ -81,7 +81,7 @@ Dieses Objekt verfügt über entsprechende Methoden zum Erstellen von `selection
 
 Sehen wir uns an, wie Auswahloptionen in der Kategoriezuordnung der Datenansicht für ein Beispieldataset dargestellt werden:
 
-| Hersteller | type | value |
+| Hersteller | Typ | Wert |
 | - | - | - |
 | Chrysler | Kfz aus Inlandsfertigung | 28883 |
 | Chrysler | LKW aus Inlandsfertigung | 117131 |
@@ -161,7 +161,7 @@ Und ein Visual sollte auch in der Lage sein, einen Datenschnitt für `Manufactur
 
 Wenn der Benutzer beispielsweise `Chrysler` als `Manufacturer` auswählt, sollten die anderen Visuals folgende Daten anzeigen:
 
-| Hersteller | type | value |
+| Hersteller | Typ | Wert |
 | - | - | - |
 | **Chrysler** | Kfz aus Inlandsfertigung | 28883 |
 | **Chrysler** | LKW aus Inlandsfertigung | 117131 |
@@ -170,7 +170,7 @@ Wenn der Benutzer beispielsweise `Chrysler` als `Manufacturer` auswählt, sollte
 
 Wenn der Benutzer `Import Car` nach `Type` (wählt Daten nach Reihe aus) auswählt, sollten die anderen Visuals folgende Daten anzeigen:
 
-| Hersteller | type | value |
+| Hersteller | Typ | Wert |
 | - | - | - |
 | Chrysler | **Import-Kfz** | 0 |
 | Ford | **Import-Kfz** | 0 |
