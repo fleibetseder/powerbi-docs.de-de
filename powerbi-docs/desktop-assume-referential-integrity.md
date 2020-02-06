@@ -37,10 +37,10 @@ Im folgenden Beispiel wird das Verhalten von **Referenzielle Integrität vorauss
 1. Beachten Sie in der folgenden Abbildung mit den Tabellen **Orders** und **Products**, dass die referenzielle Integrität zwischen **Orders[ProductID]** und **Products[ProductID]** vorhanden ist. Die Spalte **[ProductID]** in der Tabelle **Orders** ist nie *NULL*, und jeder Wert ist auch in der Tabelle **Products** vorhanden. Daher sollte **Referenzielle Integrität voraussetzen** festgelegt werden, um effizientere Abfragen zu ermöglichen (durch die Verwendung dieser Einstellung werden die in Visualisierungen angezeigten Werte nicht geändert).
    
    ![](media/desktop-assume-referential-integrity/assume-referential-integrity_2.png)
-2. Beachten Sie in der nächsten Abbildung, dass zwischen **Orders[DepotID]** und **Depots[DepotID]** keine referenzielle Integrität vorhanden ist, da **DepotID** für einige *Orders* gleich *NULL* ist. Daher sollte **Referenzielle Integrität voraussetzen***nicht* festgelegt werden.
+2. Beachten Sie in der nächsten Abbildung, dass zwischen **Orders[DepotID]** und **Depots[DepotID]** keine referenzielle Integrität vorhanden ist, da **DepotID** für einige *Orders* gleich *NULL* ist. Daher sollte **Referenzielle Integrität voraussetzen** *nicht* festgelegt werden.
    
    ![](media/desktop-assume-referential-integrity/assume-referential-integrity_3.png)
-3. Schließlich besteht in den folgenden Tabellen keine referenzielle Integrität zwischen **Orders[CustomerID]** und **Customers[CustID]** . **CustomerID** enthält einige Werte (in diesem Fall *CustX*), die nicht in der Tabelle *Customers* enthalten sind. Daher sollte **Referenzielle Integrität voraussetzen***nicht* festgelegt werden.
+3. Schließlich besteht in den folgenden Tabellen keine referenzielle Integrität zwischen **Orders[CustomerID]** und **Customers[CustID]** . **CustomerID** enthält einige Werte (in diesem Fall *CustX*), die nicht in der Tabelle *Customers* enthalten sind. Daher sollte **Referenzielle Integrität voraussetzen** *nicht* festgelegt werden.
    
    ![](media/desktop-assume-referential-integrity/assume-referential-integrity_4.png)
 
