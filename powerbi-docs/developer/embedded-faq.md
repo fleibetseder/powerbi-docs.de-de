@@ -202,7 +202,7 @@ Verwenden Sie powerbi.com, um Ihrer Power BI Embedded-Kapazität Arbeitsbereiche
 
 ### <a name="what-content-pack-data-types-can-you-embed"></a>Welche Datentypen für Inhaltspakete können eingebettet werden?
 
-Sie können *keine***Dashboards** und **Kacheln** einbetten, die über Inhaltspaketdatasets erstellt wurden. Sie *können* jedoch **Berichte** einbetten, die über Inhaltspaketdatasets erstellt wurden.
+Sie können *keine* **Dashboards** und **Kacheln** einbetten, die über Inhaltspaketdatasets erstellt wurden. Sie *können* jedoch **Berichte** einbetten, die über Inhaltspaketdatasets erstellt wurden.
 
 ### <a name="what-is-the-difference-between-using-row-level-security-rls-vs-javascript-filters"></a>Worin besteht der Unterschied zwischen der Verwendung der Sicherheit auf Zeilenebene (RLS) und JavaScript-Filtern?
 
