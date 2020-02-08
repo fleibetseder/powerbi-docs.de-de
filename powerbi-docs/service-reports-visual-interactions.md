@@ -7,15 +7,15 @@ featuredvideoid: N_xYsCbyHPw
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/11/2019
+ms.date: 01/29/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 2485d9120b10b41d193189de383a1a92b15378d5
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: 116ff1df7ddc75df79e6f2f28296543449498599
+ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74011025"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "76894713"
 ---
 # <a name="change-how-visuals-interact-in-a-power-bi-report"></a>Ändern der Interaktion von Visualisierungen in einem Power BI-Bericht
 Wenn Sie über die Berechtigungen zum Bearbeiten eines Berichts verfügen, können Sie **visuelle Interaktionen** verwenden, um zu ändern, wie sich Visualisierungen auf einer Berichtsseite aufeinander auswirken. 
@@ -52,7 +52,7 @@ Wenn Sie über Bearbeitungsberechtigungen für einen Bericht verfügen, können 
 
         ![Dropdownliste „Visualinteraktionen“](media/service-reports-visual-interactions/power-bi-service.png)
 
-3. Klicken Sie auf **Interaktionen bearbeiten**, um die Steuerelemente für Interaktionen von Visualisierungen anzuzeigen. Power BI fügt Symbole für die Filterung und Hervorhebung zu allen anderen Visualisierungen auf der Berichtsseite hinzu. Sie können nun ändern, wie die ausgewählte Visualisierung mit den anderen Visualisierungen auf der Berichtsseite interagiert.
+3. Klicken Sie auf **Interaktionen bearbeiten**, um die Steuerelemente für Interaktionen von Visualisierungen anzuzeigen. Power BI fügt Symbole für die Filterung und Hervorhebung zu allen anderen Visualisierungen auf der Berichtsseite hinzu. Wie Sie sehen, führt die Strukturkarte eine Kreuzfilterung des Liniendiagramms und der Karte sowie eine Kreuzhervorhebung des Säulendiagramms durch. Sie können nun ändern, wie die ausgewählte Visualisierung mit den anderen Visualisierungen auf der Berichtsseite interagiert.
    
     ![Bericht mit aktivierten Visualinteraktionen](media/service-reports-visual-interactions/power-bi-turn-on.png)
 
@@ -61,25 +61,32 @@ Wenn Sie über Bearbeitungsberechtigungen für einen Bericht verfügen, können 
 Machen Sie sich mit den Interaktionen Ihrer Visualisierungen vertraut, indem Sie jede Visualisierung auf Ihrer Berichtsseite einzeln auswählen.  Wählen Sie einen Datenpunkt, einen Balken oder eine Form aus, und beobachten Sie die Auswirkungen auf die anderen Visualisierungen. Wenn das gezeigte Verhalten nicht dem gewünschten Verhalten entspricht, können Sie die Interaktionen ändern. Diese Änderungen werden mit dem Bericht gespeichert, sodass Ihnen und den Benutzern Ihres Berichts dieselben Visualinteraktionen angezeigt werden.
 
 
-Bestimmen Sie, welche Auswirkung die **ausgewählte Visualisierung** auf die anderen haben soll.  Optional können Sie diesen Schritt für alle anderen Visualisierungen auf der Berichtsseite wiederholen.
+Wählen Sie zunächst eine Visualisierung aus, um sie zu aktivieren.  Beachten Sie, dass alle anderen Visualisierungen auf der Seite nun Interaktionssymbole anzeigen. Das fettgedruckte Symbol ist das angewendete. Bestimmen Sie als Nächstes, welche Auswirkung die **ausgewählte Visualisierung** auf die anderen haben soll.  Optional können Sie diesen Schritt für alle anderen Visualisierungen auf der Berichtsseite wiederholen.
+
+Wenn die ausgewählte Visualisierung
    
-   * Wenn die Visualisierung kreuzgefiltert werden soll, klicken Sie auf das **Filtersymbol** ![Symbol „Filter“](media/service-reports-visual-interactions/power-bi-filter-icon.png).
-   * Wenn eine Kreuzhervorhebung bei dieser Visualisierung bewirkt werden soll, klicken Sie auf das Symbol **Hervorhebung** ![Symbol „Hervorhebung“](media/service-reports-visual-interactions/power-bi-highlight-icon.png).
-   * Wenn sie keine Auswirkung haben soll, wählen Sie das Symbol **Keine Auswirkung** ![Symbol „Keine Auswirkung“](media/service-reports-visual-interactions/power-bi-no-impact.png) aus.
+   * eine Kreuzfilterung für eine der anderen Visualisierungen auf der Seite durchführen soll, wählen Sie das **Filtersymbol** in der rechten oberen Ecke dieser Visualisierung aus ![Filtersymbol](media/service-reports-visual-interactions/power-bi-filter-icon.png).
+   * eine Kreuzhervorhebung für eine der anderen Visualisierungen auf der Seite durchführen soll, wählen Sie das **Hervorhebungssymbol** aus ![Hervorhebungssymbol](media/service-reports-visual-interactions/power-bi-highlight-icon.png).
+   * keine Auswirkungen auf andere Visualisierungen auf der Seite haben soll, wählen Sie das Symbol **Keine Auswirkung** aus ![Symbol Keine Auswirkung](media/service-reports-visual-interactions/power-bi-no-impact.png).
 
 ## <a name="change-the-interactions-of-drillable-visualizations"></a>Ändern der Interaktionen von Visualisierungen, für die ein Drillvorgang ausgeführt werden kann
 [Für bestimmte Power BI-Visualisierungen kann ein Drillvorgang ausgeführt werden](consumer/end-user-drill.md). Wenn Sie einen Drillvorgang für eine Visualisierung ausführen, wirkt sich dies standardmäßig nicht auf die anderen Visualisierungen auf der Berichtsseite aus. Dieses Verhalten kann jedoch geändert werden. 
-
-1. Wählen Sie das Visual aus, für das Sie einen Drillvorgang ausführen möchten, um es zu aktivieren. 
 
 > [!TIP]
 > Probieren Sie es mit der [Beispiel-PBIX-Datei zu Human Resources](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix) selbst aus. Diese enthält ein Säulendiagramm mit Drilldown auf der Registerkarte **New hires** (Neueinstellungen).
 >
 
+1. Wählen Sie das Visual aus, für das Sie einen Drillvorgang ausführen möchten, um es zu aktivieren. 
+
+2. Aktivieren Sie den Drilldown, indem Sie das Drilldownsymbol auswählen.
+
+    ![Drilldown aktivieren](media/service-reports-visual-interactions/power-bi-drill-down.png)
 
 2. Wählen Sie in der Menüleiste **Format** > **Drillfilter anderer Visuals** aus.  Wenn Sie nun einen Drilldown (oder Drillup) in einer Visualisierung ausführen, ändern sich die anderen Visualisierungen auf der Berichtsseite und zeigen die aktuelle Auswahl für das Drilling an. 
 
-    ![Aktivieren der Option „Drillfilter anderer Visuals“](media/service-reports-visual-interactions/power-bi-drill.png).
+    ![Aktivieren der Option „Drillfilter anderer Visuals“](media/service-reports-visual-interactions/power-bi-drill.png)
+
+3. Wenn das gezeigte Verhalten nicht dem gewünschten Verhalten entspricht, können Sie die Interaktionen [wie oben beschrieben](#change-the-interaction-behavior) ändern.
     
 ## <a name="next-steps"></a>Nächste Schritte
 [Filter und Hervorhebungen in Power BI-Berichten](power-bi-reports-filters-and-highlighting.md)

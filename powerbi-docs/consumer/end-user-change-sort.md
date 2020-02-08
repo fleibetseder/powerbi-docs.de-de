@@ -6,40 +6,40 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/01/2019
+ms.date: 01/29/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: fdd43320fec2b96aa708cb5bb1a21e269a117d2a
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 76370e2b633e21674ba878e70b5ecfc333453c96
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74830622"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76889211"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Ändern der Sortierung eines Diagramms in einem Power BI-Bericht
+
+
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 
 > [!IMPORTANT]
-> **Dieser Artikel richtet sich an Power BI-Benutzer, die keine Bearbeitungsberechtigungen für den Bericht oder das Dataset haben. Ausführlichere Informationen zum Sortieren finden Sie unter [Sortieren nach Spalte in Power BI Desktop](../desktop-sort-by-column.md)** .
+> **Dieser Artikel richtet sich an Power BI-Benutzer, die nicht berechtigt sind, den Bericht oder das Dataset zu bearbeiten, und die nur die Onlineversion von Power BI (Power BI-Dienst) verwenden. Wenn Sie ein Berichts-*Designer*, -*administrator* oder -*besitzer* sind, finden Sie in diesem Artikel möglicherweise nicht alle Informationen, die Sie benötigen. Stattdessen sollten Sie den Artikel [Sortieren nach Spalten in Power BI Desktop](../desktop-sort-by-column.md)** lesen.
 
-Im Power BI-Dienst können Sie das Erscheinungsbild eines Visuals ändern, indem Sie es nach verschiedenen Datenfeldern sortieren. Indem Sie die Sortierung eines Visuals ändern, können Sie die Informationen hervorheben, die Sie vermitteln möchten.
+Im Power BI-Dienst können Sie das Erscheinungsbild eines Visuals ändern, indem Sie es nach verschiedenen Datenfeldern sortieren. Indem Sie die Sortierung eines Visuals ändern, können Sie die Informationen hervorheben, die Sie vermitteln möchten. Ob Sie numerische Daten (z.B. Umsatzzahlen) oder Text (z.B. Ländernamen) verwenden – die Visualisierungen lassen sich wunschgemäß sortieren. Power BI bietet große Flexibilität beim Sortieren sowie Schnellmenüs. 
 
 Visuals auf einem Dashboard können nicht sortiert werden, aber in einem Power BI-Bericht können Sie die meisten Visualisierungen sortieren. 
 
-Ob Sie numerische Daten (z.B. Umsatzzahlen) oder Text (z.B. Ländernamen) verwenden – die Visualisierungen lassen sich wunschgemäß sortieren. Power BI bietet große Flexibilität beim Sortieren sowie Schnellmenüs. 
-
 ## <a name="get-started"></a>Erste Schritte
 
-Wählen Sie zum Einstieg ein beliebiges Visual aus, und wählen Sie **Weitere Aktionen** (...) aus.  Es gibt drei Optionen für das Sortieren: **Absteigend sortieren**, **Aufsteigend sortieren** und **Sortieren nach**. 
+Wählen Sie zum Einstieg ein beliebiges Berichtsvisual aus, und klicken Sie auf **Weitere Aktionen** (...).  Es gibt drei Optionen für das Sortieren: **Absteigend sortieren**, **Aufsteigend sortieren** und **Sortieren nach**. 
     
 
 ![Balkendiagramm mit alphabetischer Sortierung an der X-Achse](media/end-user-change-sort/power-bi-more-actions.png)
 
 ### <a name="sort-alphabetically-or-numerically"></a>Alphabetisches oder numerisches Sortieren
 
-Visuals können alphabetisch nach den Namen der Kategorien im Visual oder nach den numerischen Werten jeder Kategorie sortiert werden. In diesem Diagramm wird z.B. alphabetisch nach der Kategorie auf der X-Achse **Name** sortiert.
+Visuals lassen sich alphabetisch nach den Textnamen der Kategorien im Visual oder nach den numerischen Werten jeder Kategorie sortieren. In diesem Diagramm wird z.B. alphabetisch nach der Kategorie auf der X-Achse **Name** sortiert.
 
 ![Balkendiagramm mit alphabetischer Sortierung an der X-Achse](media/end-user-change-sort/powerbi-sort-category.png)
 
@@ -55,7 +55,7 @@ Sie können ganz einfach statt nach einer Kategorie (Geschäftsname) nach einem 
 > Nicht alle Visuals können sortiert werden. Beispielsweise können die folgenden Visuals nicht sortiert werden: Treemaps, Karten, Flächenkartogramme, Punktdiagramme, Tachometerdiagramme, Kartendiagramme, Wasserfalldiagramme.
 
 ## <a name="saving-changes-you-make-to-sort-order"></a>Speichern der Änderungen an der Sortierreihenfolge
-Power BI-Berichte behalten die von Ihnen vorgenommenen Änderungen am Filter, Slicer, der Sortierung und anderen Datenansichten, bei. Wenn Sie also den Bericht verlassen und später zurückkehren, sind Ihre Änderungen an der Sortierung gespeichert.  Wenn Sie Ihre Änderungen auf die Einstellungen des Berichts-Designers zurücksetzen möchten, wählen Sie aus der oberen Menüleiste **Auf Standardwert zurücksetzen** aus. 
+Power BI-Berichte behalten die von Ihnen vorgenommenen Änderungen an den Filtern, den Datenschnitten, der Sortierung und anderen Datenansichten bei, selbst wenn Sie in der [Leseansicht](end-user-reading-view.md) arbeiten. Wenn Sie also einen Bericht verlassen und später zurückkehren, werden Ihre Änderungen an der Sortierung gespeichert.  Klicken Sie auf der oberen Menüleiste auf **Auf Standardwert zurücksetzen**, wenn Sie Ihre Änderungen an den Einstellungen des Berichts-*Designers* zurücksetzen möchten. 
 
 ![Sortierung beibehalten](media/end-user-change-sort/power-bi-reset.png)
 
@@ -65,7 +65,11 @@ Ist die Schaltfläche **Auf Standardwert zurücksetzen** jedoch ausgegraut, bede
 ## <a name="considerations-and-troubleshooting"></a>Zu beachtende Aspekte und Problembehandlung
 
 ### <a name="sorting-using-other-criteria"></a>Sortieren mithilfe anderer Kriterien
-Zuweilen möchten Sie Ihre Visualisierung anhand eines anderen Felds (das nicht im Visual enthalten ist) oder anderer Kriterien sortieren,  beispielsweise nach Monat in einer sequenziellen Reihenfolge (anstatt in alphabetischer Reihenfolge) oder nach ganzen Zahlen anstatt nach Ziffer (z. B. 0, 1, 9, 20 und nicht 0, 1, 20, 9).  Nur die Person, die den Bericht entworfen hat, kann diese Änderungen für Sie vornehmen. Kontaktinformationen zum *Designer* des Berichts können Sie erfahren, indem Sie den Namen des Berichts in der Kopfleiste auswählen.
+Zuweilen möchten Sie Ihre Visualisierung anhand eines anderen Felds (das nicht im Visual enthalten ist) oder anderer Kriterien sortieren,  beispielsweise nach Monat in einer sequenziellen Reihenfolge (anstatt in alphabetischer Reihenfolge) oder nach ganzen Zahlen anstatt nach Ziffer (z. B. 0, 1, 9, 20 und nicht 0, 1, 20, 9).  
+
+Nur die Person, die den Bericht entworfen hat, kann diese Änderungen für Sie vornehmen. Kontaktinformationen zum *Designer* des Berichts können Sie erfahren, indem Sie den Namen des Berichts in der Kopfleiste auswählen.
+
+Wenn Sie ein *Designer* sind und über die Berechtigungen verfügen, den Inhalt zu bearbeiten, erfahren Sie im Artikel [Sortieren nach Spalten in Power BI Desktop](../desktop-sort-by-column.md), wie Sie das Dataset aktualisieren und diese Art von Sortierung aktivieren.
 
 ![Dropdownfeld mit Kontaktinformationen](media/end-user-change-sort/power-bi-contact.png)
 

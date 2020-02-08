@@ -1,6 +1,6 @@
 ---
-title: Konformität der PDF-Renderingerweiterung mit ISO 14289-1 – Power BI-Berichtsserver
-description: Dieses Dokument beschreibt die Konformität der PDF-Renderingerweiterung von Power BI-Berichtsserver und SQL Reporting Services mit den ISO 14289-1-Spezifikationen (PDF/UA).
+title: Konformität der PDF-Renderingerweiterung mit ISO 14289-1 – Power BI-Berichtsserver & SSRS
+description: Dieses Dokument beschreibt die Konformität der PDF-Renderingerweiterung von Power BI-Berichtsserver und SQL Server Reporting Services mit den ISO 14289-1-Spezifikationen (PDF/UA).
 author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
@@ -8,37 +8,37 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/04/2019
 ms.author: maggies
-ms.openlocfilehash: c800ee995bc3c03b3cbcda91503e6dea9495f6b5
-ms.sourcegitcommit: 721cf375627b010e8ad12c4c668295f38d450a17
+ms.openlocfilehash: bfefcef18b8cd92a5c3b15c2dcbd4653a6c7c9cd
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73638078"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819512"
 ---
-# <a name="pdf-rendering-extension-conformance-to-iso-14289-1---power-bi-report-server"></a>Konformität der PDF-Renderingerweiterung mit ISO 14289-1 – Power BI-Berichtsserver 
+# <a name="pdf-rendering-extension-conformance-to-iso-14289-1---power-bi-report-server--ssrs"></a>Konformität der PDF-Renderingerweiterung mit ISO 14289-1 – Power BI-Berichtsserver & SSRS
 
-Gilt für: Power BI-Berichtsserver und SQL Reporting Services
+Gilt für: Power BI-Berichtsserver und SQL Server Reporting Services (SSRS)
 
-Dieses Dokument beschreibt die Konformität der PDF-Renderingerweiterung von Power BI-Berichtsserver und SQL Reporting Services mit den [ISO 14289-1-Spezifikationen (PDF/UA)](https://www.pdfa.org/publication/pdfua-in-a-nutshell/).
+Dieses Dokument beschreibt die Konformität der PDF-Renderingerweiterung von Power BI-Berichtsserver und SQL Server Reporting Services mit den [ISO 14289-1-Spezifikationen (PDF/UA)](https://www.pdfa.org/publication/pdfua-in-a-nutshell/).
 
 > [!NOTE]
 > Sie können dieses Whitepaper speichern oder ausdrucken, indem Sie in Ihrem Browser erst auf **Drucken** und dann auf **Als PDF speichern** klicken.
 
-## <a name="1--scope"></a>1.  Bereich
+## <a name="1--scope"></a>1.  `Scope`
 
-Nicht zutreffend
+Nicht verfügbar
 
 ## <a name="2--normative-references"></a>2.  Normative Verweise
 
-Nicht zutreffend
+Nicht verfügbar
 
 ## <a name="3--terms-and-definitions"></a>3.  Bedingungen und Definitionen
 
-Nicht zutreffend
+Nicht verfügbar
 
 ## <a name="4--notation"></a>4.  Notation
 
-Nicht zutreffend
+Nicht verfügbar
 
 ## <a name="5-version-identification"></a>5. Versionsidentifikation
 
@@ -94,11 +94,11 @@ Sämtliche Informationen in diesem Dokument basierend auf dem Rendering eines PD
 
 ## <a name="8--conforming-reader-requirements"></a>8.  Anforderungen an einen konformen Reader
 
-Nicht zutreffend
+Nicht verfügbar
 
 ## <a name="9--at-requirements"></a>9.  AT-Anforderungen
 
-Nicht zutreffend
+Nicht verfügbar
 
 ## <a name="disclaimer"></a>Disclaimer
 
@@ -112,5 +112,5 @@ This document is for informational purposes only. MICROSOFT MAKES NO WARRANTIES,
 ## <a name="next-steps"></a>Nächste Schritte
 [Administratorübersicht](admin-handbook-overview.md)  
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
+Haben Sie dazu Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
 

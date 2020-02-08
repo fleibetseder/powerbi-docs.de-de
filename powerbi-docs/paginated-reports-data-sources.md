@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 12/03/2019
-ms.openlocfilehash: bd58f5f5f6ceaad07cbba5d25508a160b3447f88
-ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
+ms.date: 01/30/2020
+ms.openlocfilehash: 17d5661cf68b3a79598dc370ecff17c1c438fc8e
+ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75304335"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "76895095"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Unterstützte Datenquellen für paginierte Power BI-Berichte
 
@@ -23,20 +23,20 @@ In diesem Artikel erfahren Sie mehr über unterstützte Datenquellen für pagini
 
 Paginierte Berichte unterstützen nativ die folgende Liste von Datenquellen:
 
-| Datenquelle | Authentifizierung | Hinweise |
+| Data source | Authentifizierung | Notizen |
 | --- | --- | --- |
-| Azure SQL-Datenbank <br>Azure SQL Data Warehouse | Basic, Einmaliges Anmelden (SSO) OAuth2 |   |
-| Verwaltete Azure SQL-Datenbank-Instanz | Standard | Über einen öffentlichen Endpunkt mithilfe der Erweiterung für Azure SQL-Datenbank  |
-| Azure Analysis Services | SSO, OAuth2 |   |
+| Azure SQL-Datenbank <br>Azure SQL Data Warehouse | Basic, Einmaliges Anmelden (SSO) OAuth2 |   |
+| Verwaltete Azure SQL-Datenbank-Instanz | Basic | Über einen öffentlichen Endpunkt mithilfe der Erweiterung für Azure SQL-Datenbank  |
+| Azure Analysis Services | SSO, OAuth2 | Die Firewall von AAS muss deaktiviert sein oder so konfiguriert, dass sie sämtliche IP-Adressbereiche zulässt.  |
 | Power BI-Dataset | SSO | Für Power BI Premium-Datasets und Power BI Nicht-Premium-Datasets ist eine Leseberechtigung erforderlich. |
 | Premium-Power BI-Dataset (XMLA) | SSO |   |
-| Daten eingeben | N/V | Daten sind in Bericht eingebettet. |
+| Daten eingeben | – | Daten sind in Bericht eingebettet. |
 
 Mit Ausnahme von Azure SQL-Datenbank können alle Datenquellen verwendet werden, nachdem Sie den Bericht in den Power BI-Dienst hochgeladen haben. Bei den Datenquellen wird standardmäßig einmaliges Anmelden (Single Sign-on, SSO) verwendet, sofern zutreffend. Für Azure Analysis Services können Sie den Authentifizierungstyp in „OAuth2“ ändern.
 
 Für Azure SQL-Datenbankdaten-Datenquellen müssen Sie weitere Informationen bereitstellen, wie im Abschnitt [Authentifizierung für Azure SQL-Datenbank](#azure-sql-database-authentication) beschrieben.
 
-## <a name="other-data-sources"></a>Andere Datenquellen
+## <a name="other-data-sources"></a>Weitere Datenquellen
 
 Zusätzlich zu den oben genannten nativ unterstützten Datenquellen können Sie über ein [Power BI-Datengateway](service-gateway-onprem.md) auf die folgenden Datenquellen zugreifen:
 
@@ -73,4 +73,4 @@ Damit das einmalige Anmelden (SSO) und OAuth2 ordnungsgemäß funktionieren, mus
 
 [Anzeigen eines paginierten Berichts im Power BI-Dienst](consumer/paginated-reports-view-power-bi-service.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
+Haben Sie dazu Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

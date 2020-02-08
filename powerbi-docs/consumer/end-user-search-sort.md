@@ -1,66 +1,57 @@
 ---
-title: Suchen und Sortieren von Inhalten im Power BI-Dienst
-description: Dokumentation zum Suchen und Sortieren von Inhalten in „Mein Arbeitsbereich“ in Power BI
+title: Suchen von Inhalten
+description: Dokumentation für die Suche und Navigation in Inhalten im Power BI-Dienst
 author: mihart
 ms.reviewer: willt
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/21/2019
+ms.date: 01/27/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 5a7848cb5931d983ab434a19c934c9e9cb464724
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 64570b23700e125e9040f493630317c0c6350d0e
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73861734"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889098"
 ---
-# <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Navigation: Suchen und Sortieren von Inhalten im Power BI-Dienst
+# <a name="navigation-for-power-bi-consumers-sorting-content"></a>Navigation für Power BI-Benutzer: Sortieren von Inhalten
+
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Für die Navigation zu Ihren Inhalten im Power BI-Dienst gibt es verschiedene Möglichkeiten. Die Inhalte sind in Ihrem Arbeitsbereich nach verschiedenen Typen unterteilt: Dashboards und Berichte.  Außerdem sind Inhalte nach Nutzung kategorisiert: Favoriten, zuletzt verwendet, Apps, für mich freigegeben und ausgewählt. Für die Navigation an einem zentralen Ort organisiert *Power BI Home* alle Inhalte auf einer Seite. Anhand dieser unterschiedlichen Wege, Inhalte aufzurufen, finden Sie schnell das Gesuchte im Power BI-Dienst.  
 
-## <a name="navigation-within-workspaces"></a>Navigation in Arbeitsbereichen
+Wenn Sie beginnen, mit dem Power BI-Dienst zu arbeiten, verfügen Sie nur über wenige Inhalte (Dashboards, Berichte und Apps). Wenn aber Ihre Kollegen Inhalte mit Ihnen teilen, und Sie Apps herunterladen, wird die Liste Ihrer Inhalte schnell immer länger. In diesem Fall sind Funktionen zum Suchen und Sortieren sehr nützlich.
 
-Power BI-*Benutzer* haben in der Regel nur einen Arbeitsbereich: **Mein Arbeitsbereich**. **Mein Arbeitsbereich** enthält Inhalte, wenn Sie Beispiele von Microsoft heruntergeladen oder Ihre eigenen Dashboards, Berichte oder Apps erstellt oder heruntergeladen haben.  
+## <a name="searching-for-content"></a>Suchen nach Inhalt
+ Sie können die Suchfunktion in fast jedem Bereich des Power BI-Diensts nutzen. Suchen Sie einfach nach dem Suchfeld oder dem Suchsymbol. ![Lupensymbol](./media/end-user-search-sort/power-bi-search-icon.png)erforderlich.
 
-In **Mein Arbeitsbereich** unterteilt der Power BI-Dienst Ihre Inhalte nach Typ: Dashboards, Berichte, Arbeitsmappen und Datasets. Wenn Sie einen Arbeitsbereich auswählen, wird diese Unterteilung angezeigt. In diesem Beispiel enthält **Mein Arbeitsbereich** ein Dashboard, einen Bericht, keine Arbeitsmappen und ein Dataset.
+ Geben Sie in das Suchfeld ganz oder teilweise den Namen eines Dashboards, Berichts, einer Arbeitsmappe, einer App oder eines Besitzers ein. Power BI durchsucht dann den gesamten Inhalt. 
 
-![Video](./media/end-user-search-sort/myworkspace/myworkspace.gif)
+ ![Nach Bericht suchen](./media/end-user-search-sort/power-bi-search-field.png) 
 
-________________________________________
-## <a name="navigation-using-the-search-field"></a>Navigieren über das Suchfeld
-Verwenden Sie die Inhaltsansicht **Mein Arbeitsbereich** zum Suchen, Filtern und Sortieren Ihrer Inhalte. Geben Sie im Suchfeld den Namen eines Dashboards, Berichts, einer Arbeitsmappe oder eines Besitzers ganz oder teilweise ein.  
+ In einigen Bereichen von Power BI, z. B. in Arbeitsbereichen, gibt es zwei verschiedene Suchfelder. Das Suchfeld in der Menüleiste durchsucht den gesamten Inhalt, während das Suchfeld in der Arbeitsbereichscanvas nur den betreffenden Arbeitsbereich durchsucht.
 
-Wenn Sie nur teilweise über Inhalte verfügen, ist kein Suchen und Sortieren notwendig.  Wenn Sie allerdings über eine Reihe von Dashboards und Berichte verfügen, ist die Such- und Sortierfunktion überaus hilfreich. Beispielsweise enthält die unten stehende Berichtsliste 83 Elemente. 
+ ![in einem Arbeitsbereich suchen](./media/end-user-search-sort/power-bi-search-fields.png) 
 
-![Nach Bericht suchen](./media/end-user-experience/power-bi-search.png)
+## <a name="sorting-content-lists"></a>Sortieren von Inhaltslisten
 
-Sie können die Inhalte auch nach Name oder Besitzer sortieren. Beachten Sie den Pfeil nach oben rechts neben **Name**. Aktuell werden 83 Elemente in alphabetischer aufsteigender Reihenfolge angezeigt. Klicken Sie auf **Name**, um die Elemente in absteigender Reihenfolge anzuzeigen. Dann wird ein Pfeil nach unten angezeigt.
+Wenn Sie nur über wenige Inhalte verfügen, ist das Sortieren möglicherweise gar nicht notwendig.  Wenn Sie jedoch über lange Listen mit Dashboards und Berichten verfügen, finden Sie schneller, was Sie suchen, wenn Sie diese sortierten. Die folgende Liste **Für mich freigegeben** umfasst beispielsweise 63 Elemente. 
 
-![Inhalte sortieren](./media/end-user-experience/power-bi-sort-new.png)
+![Liste „Für mich freigegeben“](./media/end-user-search-sort/power-bi-long-lists.png)
+
+Momentan ist diese Inhaltsliste nach Datum sortiert (absteigend). Sie können die Kriterien zum Sortieren ändern, indem Sie auf den Pfeil rechts neben der Option **Datum (neuestes)** klicken.
+
+![Dropdownmenü zum Sortieren](./media/end-user-search-sort/power-bi-sort-date.png)
+
+
+Sie können auch in Arbeitsbereichen Inhalte sortieren. Im folgenden Beispiel werden die Inhalte anhand des **Aktualisierungsdatums** sortiert. Sie können die Kriterien für das Sortieren von Arbeitsbereichen festlegen, indem Sie erst auf die betreffende Spaltenüberschrift klicken, um diese auszuwählen, und dann nochmals auf diese klicken, um die Sortierrichtung zu ändern. 
+
+![Nach Bericht suchen](./media/end-user-search-sort/power-bi-workspace-sort.png)
 
 Nicht alle Spalten können sortiert werden. Zeigen Sie auf die Spaltenüberschriften, um herauszufinden, welche Sie sortieren können.
-
-___________________________________________________________________
-## <a name="navigation-using-the-nav-pane"></a>Navigieren über den Navigationsbereich
-Im Navigationsbereich werden Inhalte so klassifiziert, dass Sie das Gesuchte schnell und einfach finden.  
-
-![Navigationsbereich](./media/end-user-search-sort/power-bi-nav pane.png)
-
-
-- Inhalte, die für Sie freigegeben werden, sind unter **Für mich freigegeben** verfügbar.
-- Der von Ihnen zuletzt angezeigt Inhalt steht unter **Zuletzt verwendet** zur Verfügung. 
-- Ihre Apps finden Sie durch Auswahl von **Apps**.
-- **Start** ist eine Einzelseitenansicht Ihrer wichtigsten Inhalte und vorgeschlagenen Inhalte sowie Lernquellen.
-
-Außerdem können Sie Inhalte als [Favorit](end-user-favorite.md) und [Ausgewählt](end-user-featured.md) markieren. Sie können das Dashboard oder den Bericht auswählen, das bzw. den Sie voraussichtlich am häufigsten öffnen und daher als *ausgewähltes* Dashboard festlegen. Immer wenn Sie den Power BI-Dienst öffnen, wird Ihr ausgewähltes Dashboard zuerst angezeigt. Haben Sie eine Reihe von Dashboards und Apps, die Sie häufig aufrufen? Sie können sie als Favoriten festlegen, damit sie im Navigationsbereich immer verfügbar sind.
-
-![Flyout „Favoriten“](./media/end-user-search-sort/power-bi-favorite.png).
-
 
 
 ## <a name="considerations-and-troubleshooting"></a>Zu beachtende Aspekte und Problembehandlung
@@ -69,4 +60,4 @@ Außerdem können Sie Inhalte als [Favorit](end-user-favorite.md) und [Ausgewäh
 ## <a name="next-steps"></a>Nächste Schritte
 [Sortieren von Visuals in Berichten](end-user-change-sort.md)
 
-Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)
+Haben Sie dazu Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/)

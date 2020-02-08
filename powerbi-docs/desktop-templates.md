@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a10de05fed8a77a165797dda7155ffb81bbad815
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 25ed90dba0c164a44d691f8247023f2ff7e0a67f
+ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75759995"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76913535"
 ---
 # <a name="create-report-templates-for-power-bi-desktop"></a>Erstellen von Berichtsvorlagen für Power BI Desktop
 
@@ -32,7 +32,7 @@ Berichtsvorlagen für Power BI enthalten die folgenden Informationen aus dem Be
 
 Die Daten des Berichts sind allerdings *nicht* in den Vorlagen enthalten. 
 
-Für Berichtsvorlagen wird die Dateierweiterung „.pbit“ verwendet (mit Power BI Desktop-Berichten vergleichen, die die Erweiterung „.pbix“ verwenden). 
+Für Berichtsvorlagen wird die Dateierweiterung „.pbit“ verwendet (vgl. Power BI Desktop-Berichte, die die Erweiterung „.pbix“ verwenden). 
 
 Sie können eine Berichtsvorlage erstellen, indem Sie im Menü zu **Datei > Exportieren > Power BI-Vorlage** navigieren. Dann wird das folgende Fenster angezeigt, in dem Sie aufgefordert werden, eine Beschreibung für die Vorlage einzugeben. In diesem Beispiel lautet die Beschreibung für die Vorlage *Monthly sales report template* (Berichtsvorlage für die monatliche Verkäufe).
 
@@ -66,7 +66,7 @@ Sobald Sie alle erforderlichen Parameter angegeben haben, werden Sie aufgeforder
 
 Sobald Parameter und Daten angegeben wurden, wird ein Bericht erstellt, der alle Seiten, Visuals, Datenmodellartefakte und Abfragen enthält, die Teil des Berichts sind, auf dem die Vorlage basiert. 
 
-Fertig! Es ist ganz einfach,Berichtsvorlagen in Power BI Desktop zu erstellen und zu verwenden, sodass Sie problemlos überzeugende Layouts und andere Berichtsaspekte reproduzieren und für andere Benutzer freigeben können.
+Das ist alles. Es ist ganz einfach,Berichtsvorlagen in Power BI Desktop zu erstellen und zu verwenden, sodass Sie problemlos überzeugende Layouts und andere Berichtsaspekte reproduzieren und für andere Benutzer freigeben können.
 
 ## <a name="next-steps"></a>Nächste Schritte
 Lernen Sie beispielsweise mehr über **Abfrageparameter**:

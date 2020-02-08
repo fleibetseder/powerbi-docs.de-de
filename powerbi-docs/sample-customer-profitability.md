@@ -10,10 +10,10 @@ ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
 ms.openlocfilehash: 160c5736bc2894e629f5bb375dd07e993def1e0c
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74265547"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Beispiel zur Kundenrentabilität für Power BI: Übersicht
@@ -111,7 +111,7 @@ Zwei Kacheln auf dem Dashboard, **Target vs Actual** und **Year Over Year Revenu
 
     ![Ergebnisse für Carlos](media/sample-customer-profitability/power-bi-carlos.png)
 
-4. Setzen Sie Ihre Erkundung fort. Wenn Sie etwas Interessantes finden, klicken Sie auf das Symbol **Anheften** ![Symbol „Anheften“](media/sample-customer-profitability/power-bi-excel-pin.png) in der oberen rechten Ecke, um diese Informationen an [ein Dashboard anzuheften](service-dashboard-pin-tile-from-excel.md).
+4. Setzen Sie Ihre Erkundung fort. Wenn Sie etwas Interessantes finden, klicken Sie auf das Symbol **Anheften** ![Stecknadelsymbol](media/sample-customer-profitability/power-bi-excel-pin.png) in der oberen rechten Ecke, um diese Informationen an [ein Dashboard anzuheften](service-dashboard-pin-tile-from-excel.md).
 
 5. Verwenden Sie den Pfeil „Zurück“ in Ihrem Browser, um zum Dashboard zurückzukehren.
 
@@ -179,7 +179,7 @@ Für die Analyse kann es hilfreich sein, zu ermitteln, in welcher Branche Valery
 
 2.  Wählen Sie oben auf dem Dashboard die Option **Ask a question** (Frage stellen) aus, um das Q&A-Feld zu öffnen.
 
-    ![Eine Frage zu Ihren Daten stellen](media/sample-customer-profitability/power-bi-ask-question.png)
+    ![Stellen Sie eine Frage zu Ihren Daten.](media/sample-customer-profitability/power-bi-ask-question.png)
 
 3. Geben Sie in das Fragefeld *total revenue by industry for Valery* (Gesamtumsatz nach Branche für Valery) ein. Sie sehen, wie die Visualisierung beim Eingeben der Frage aktualisiert wird.
 

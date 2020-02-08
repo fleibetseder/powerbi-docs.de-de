@@ -10,12 +10,12 @@ ms.date: 09/25/2019
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: de745777a5ad6da1149328d9df92be9ecccfc181
-ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
+ms.openlocfilehash: c59f1c1653e3b1a506f342bffed6fa539dfe58b3
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885296"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76819581"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Verwalten von Power BI im Verwaltungsportal
 
@@ -203,11 +203,24 @@ Die folgende Abbildung zeigt die Meldung, die bei der Freigabe für einen extern
 
 ### <a name="publish-to-web"></a>Im Web veröffentlichen
 
-Benutzer in der Organisation können Berichte im Web veröffentlichen. [Weitere Informationen](service-publish-to-web.md)
+Benutzer in der Organisation können Berichte im Web veröffentlichen. [Weitere Informationen](service-publish-to-web.md). Dies führt dazu, dass der Bericht und die darin enthaltenen Daten für jeden im Web verfügbar sind.
+
+> [!NOTE]
+> Das Erstellen neuer Einbindungscodes zur Veröffentlichung im Web muss von einem Power BI-Administrator erlaubt werden. Organisationen verfügen möglicherweise über vorhandene Einbindungscodes. Überprüfen Sie derzeit veröffentlichte Berichte mit der Seite [Einbindungscodes](service-admin-portal.md#embed-codes).
 
 Die folgende Abbildung zeigt das Menü **Datei** für einen Bericht an, wenn die Einstellung **Im Web veröffentlichen** aktiviert ist.
 
-![Einstellung „Im Web veröffentlichen“](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+![„Im Web veröffentlichen“ im Menü „Datei“](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+
+Bei der Einstellung **Im Web veröffentlichen** gibt es mehrere Optionen dafür, welche Benutzer Einbindungscodes erstellen können.
+
+![Einstellung „Im Web veröffentlichen“](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
+
+
+Benutzer werden dazu aufgefordert, sich an den Power BI-Administrator zu wenden, damit dieser ihnen die Berechtigung zum Erstellen von Einbindungscodes erteilt, wenn bei der Option **Funktionsweise von Einbindungscodes auswählen** **Nur vorhandene Einbindungscodes zulassen** und für die Einstellung **Im Web veröffentlichen** **Aktiviert** ausgewählt ist.
+
+![„Im Web veröffentlichen“-Aufforderung](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+
 
 Den Benutzer werden basierend auf der Einstellung **Im Web veröffentlichen** unterschiedliche Optionen in der Benutzeroberfläche angezeigt.
 
@@ -449,7 +462,7 @@ Weitere Informationen zum Verwalten von Power BI Embedded-Einstellungen (A-SKU) 
 
 ## <a name="embed-codes"></a>Einbindungscodes
 
-Als Administrator können Sie die Einbindungscodes anzeigen, die für Ihren Mandanten generiert werden. Sie können Codes auch widerrufen oder löschen. [Weitere Informationen](service-publish-to-web.md)
+Als Administrator können Sie die Einbindungscodes anzeigen, die für Ihren Mandanten generiert werden, um Berichte öffentlich zu teilen. Sie können Codes auch widerrufen oder löschen. [Weitere Informationen](service-publish-to-web.md)
 
 ![Einbindungscodes innerhalb des Power BI-Verwaltungsportals](media/service-admin-portal/embed-codes.png)
 

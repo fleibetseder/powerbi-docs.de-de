@@ -1,20 +1,20 @@
 ---
 title: Einbetten eines Berichts in ein sicheres Portal oder eine sichere Website
 description: Mit dem Power BI-Feature zum Einbetten können Benutzer Berichte mühelos in interne Webportale sicher einbetten.
-author: rkarlin
-ms.author: rkarlin
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/27/2019
+ms.date: 01/30/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: d4495a2021f008326d76c7fd9ff686d639827e90
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.openlocfilehash: f4da9179ef140fd254939a4121e91dd032269c98
+ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565755"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76913609"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Einbetten eines Berichts in ein sicheres Portal oder eine sichere Website
 
@@ -129,7 +129,11 @@ Sie können beliebig viele Schaltflächen hinzufügen, um mit geringem Programmi
 
 * Bei einigen Browsern müssen Sie die Seite nach der Anmeldung aktualisieren, insbesondere bei Verwendung des InPrivate- oder Inkognitomodus.
 
-* Einmaliges Anmelden wird unterstützt, wenn Sie die Option „Einbetten“ in SharePoint Online verwenden oder über die Einbettungsmethode [Benutzer ist Besitzer der Daten](developer/embed-sample-for-your-organization.md) eine benutzerdefinierte Integration erstellen. 
+* Die Verwendung nicht unterstützter Browserversionen führt möglicherweise zu Problemen. Power BI unterstützt [diese Browser](power-bi-browsers.md).
+
+* Der klassische SharePoint-Server wird nicht unterstützt, da dieser eine niedrigere Version als Internet Explorer 11 oder das Aktivieren des Kompatibilitätsansichtsmodus erfordert.
+
+* Einmaliges Anmelden wird unterstützt, wenn Sie die [Option In SharePoint Online einbetten](service-embed-report-spo.md) verwenden oder über die Einbettungsmethode [Benutzer ist Besitzer der Daten](developer/embed-sample-for-your-organization.md) eine benutzerdefinierte Integration erstellen. 
 
 * Die Funktion zur automatischen Authentifizierung, die von der Option **Einbetten** unterstützt wird, kann nicht mit der Power BI-JavaScript-API verwendet werden. Verwenden Sie zum Einbetten mit der Power BI-JavaScript-API die Einbettungsmethode [Benutzer ist Besitzer der Daten](developer/embed-sample-for-your-organization.md). 
 

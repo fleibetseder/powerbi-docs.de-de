@@ -8,12 +8,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.author: v-pemyer
-ms.openlocfilehash: b1ce8644decb758775c0bbff87df7975a64692a2
-ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
+ms.openlocfilehash: 53940737f71e04fbf5bccd9520a749f6fc559db9
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75886111"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889234"
 ---
 # <a name="migrate-sql-server-reporting-services-reports-to-power-bi"></a>Migrieren von SQL Server Reporting Services-Berichten zu Power BI
 
@@ -31,7 +31,7 @@ Die Anleitung ist in vier Phasen unterteilt. Es wird empfohlen, vor der Migratio
 
 Sie können die Migration ohne Ausfallzeiten auf Ihren SSRS-Servern oder ohne Unterbrechungen für Ihre Berichtsbenutzer durchführen. Es ist wichtig zu wissen, dass keine Daten oder Berichte entfernt werden müssen. Es bedeutet also, dass Sie Ihre aktuelle Umgebung beibehalten können, bis Sie bereit sind, die Anwendung außer Kraft zu setzen.
 
-## <a name="before-you-start"></a>Bevor Sie beginnen
+## <a name="before-you-start"></a>Vorbereitung
 
 Bevor Sie mit der Migration beginnen, sollten Sie überprüfen, ob Ihre Umgebung bestimmte Voraussetzungen erfüllt. Wir beschreiben diese Voraussetzungen und stellen Ihnen auch ein hilfreiches Migrationstool vor.
 
@@ -74,11 +74,11 @@ Im Laufe der Zeit wird das Tool möglicherweise von Microsoft verbessert. Die Co
 
 Nachdem Sie überprüft haben, dass Ihr Unternehmen die Voraussetzungen erfüllt, können Sie mit der Phase der _Migrationsvorbereitung_ beginnen. Diese Phase besteht aus drei Stufen:
 
-1. Ermitteln
+1. Entdecken
 1. Bewerten
 1. Vorbereiten
 
-### <a name="discover"></a>Ermitteln
+### <a name="discover"></a>Entdecken
 
 Das Ziel der Phase _Ermitteln_ ist es, Ihre vorhandenen SSRS-Instanzen zu identifizieren. Dieser Prozess umfasst die Überprüfung des Netzwerks, um alle SQL Server-Instanzen in Ihrem Unternehmen zu identifizieren.
 
@@ -104,6 +104,8 @@ Die folgenden SSRS-Elementtypen können jedoch nicht zu Power BI migriert werden
 
 Wenn Ihre RDL-Berichte auf Features angewiesen sind, die von [paginierten Power BI-Berichten noch nicht unterstützt werden](../paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi), können Sie planen, sie als [Power BI-Berichte](../consumer/end-user-reports.md) neu zu entwickeln. Auch wenn Ihre RDL-Berichte migriert werden können, empfehlen wir Ihnen, die Aktualisierung als Power BI-Berichte in Betracht zu ziehen, wenn dies sinnvoll ist.
 
+Wenn Ihre RDL-Berichte Daten aus _lokalen Datenquellen_ abrufen müssen, können sie nicht die Funktion „Einmaliges Anmelden“ (Single Sign-On, SSO) verwenden. Zurzeit wird beim Datenabruf aus diesen Quellen immer der Sicherheitskontext des _Benutzerkontos der Gatewaydatenquelle_ verwendet. SQL Server Analysis Services (SSAS) kann die Sicherheit auf Zeilenebene (row-level security, RLS) nicht pro Benutzer erzwingen.
+
 Paginierte Berichte in Power BI sind im Allgemeinen für den **Druckvorgang** oder die **PDF-Erstellung** optimiert. Power BI-Berichte sind für **Recherche und Interaktivität** optimiert. Weitere Informationen finden Sie unter [Wann sollten paginierte Berichte in Power BI verwendet werden?](report-paginated-or-power-bi.md).
 
 ### <a name="prepare"></a>Vorbereiten
@@ -116,6 +118,8 @@ Das Ziel der Phase _Vorbereiten_ besteht darin, alles vorzubereiten. Sie umfasst
 1. Machen Sie sich mit der Power BI-Freigabe vertraut und planen Sie, wie Sie Inhalte durch die Veröffentlichung von [Power BI-Apps](../service-create-distribute-apps.md) verteilen werden.
 1. Erwägen Sie die Verwendung von [freigegebenen Power BI-Datasets](../service-datasets-build-permissions.md) anstelle Ihrer freigegebenen SSRS-Datenquellen.
 1. Verwenden Sie [Power BI Desktop](../desktop-what-is-desktop.md), um für Mobilgeräte optimierte Berichte zu entwickeln, möglicherweise unter Verwendung des [benutzerdefinierten visuellen Power KPI-Elements](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083?tab=Overview) anstelle Ihrer mobilen SSRS-Berichte und -KPIs.
+1. Bewerten Sie die Verwendung des integrierten Felds **UserID** in Ihren Berichten neu. Wenn Sie Berichtsdaten mit **UserID** sichern, müssen Sie sich bewusst sein, dass bei paginierten Berichten, die im Power BI-Dienst gehostet werden, der Benutzerprinzipalname (User Principal Name, UPN) zurückgegeben wird. So gibt das integrierte Feld z. B. statt des NT-Kontonamens _AW\mblythe_ eine Zeichenfolge ähnlich _m.blythe&commat;adventureworks.com_ zurück. Sie müssen die Datasetdefinitionen und möglicherweise die Quelldaten überarbeiten. Nach der Überarbeitung und Veröffentlichung empfiehlt es sich, Ihre Berichte gründlich zu testen, um sicherzustellen, dass die Datenberechtigungen wie erwartet funktionieren.
+1. Bewerten Sie die Verwendung des integrierten Felds **ExecutionTime** in Ihren Berichten neu. Bei paginierten-Berichten, die im Power BI-Dienst gehostet sind, gibt das integrierte Feld das Datum und die Uhrzeit in der Zeitangabe _koordinierte Weltzeit (Coordinated Universal Time, UCT)_ an. Das kann Auswirkungen auf die Standardwerte für Berichtsparameter und auf die Bezeichnungen haben, die die Zeit der Berichtsausführung angeben. Letztere werden häufig in Fußzeilen von Berichten verwendet.
 1. Stellen Sie sicher, dass Ihre Berichtsautoren [Power BI Report Builder](../report-builder-power-bi.md) installiert haben und dass spätere Versionen problemlos im gesamten Unternehmen verteilt werden können.
 
 ## <a name="migration-stage"></a>Migrationsphase
@@ -191,7 +195,7 @@ Weitere Informationen zu diesem Artikel finden Sie in den folgenden Ressourcen:
 * [Paginierte Berichte in Power BI: häufig gestellte Fragen](../paginated-reports-faq.md)
 * [Power BI Premium – Häufig gestellte Fragen (FAQ)](../service-premium-faq.md)
 * [RDL-Migrationstool](https://github.com/microsoft/RdlMigration)
-* Haben Sie Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
+* Fragen? [Fragen Sie die Power BI-Community](https://community.powerbi.com/)
 * Vorschläge? [Einbringen von Ideen zur Verbesserung von Power BI](https://ideas.powerbi.com)
 
 Power BI-Partner stehen zur Verfügung, um Ihr Unternehmen bei der erfolgreichen Migration zu unterstützen. Wenn Sie einen Power BI-Partner hinzuziehen möchten, besuchen Sie das [Power BI-Partnerportal](https://powerbi.microsoft.com/partners/).

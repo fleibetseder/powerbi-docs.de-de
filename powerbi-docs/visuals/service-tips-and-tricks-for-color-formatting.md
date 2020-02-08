@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/04/2019
+ms.date: 01/29/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 006288cd380a56ba57697ed285b04b38985b69db
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 0b633f2482c5b9f1624f39e4f2c0e07afc55353f
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831624"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76894986"
 ---
 # <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Tipps und Tricks zur Farbformatierung in Power BI
 Power BI bietet viele unterschiedliche Methoden zum Anpassen der Dashboards und Berichte. In diesem Artikel erhalten Sie Tipps, wie Sie Ihre Power BI-Visualisierungen ansprechender, interessanter und personalisierter gestalten können.
@@ -23,13 +23,15 @@ Nachfolgend finden Sie einige Tipps. Haben Sie weitere tolle Tipps? Sehr gut! We
 
 * Anwenden eines Designs auf den gesamten Bericht
 * Farbe eines einzelnen Datenpunkts ändern
+* Bedingte Formatierung
 * Farben eines Diagramms nach einem numerischen Wert vergeben
 * Farbe der Datenpunkte nach einem numerischen Wert vergeben
 * Farben in der Farbskala anpassen
 * Abweichende Farbskalen verwenden
+* Hinzufügen von Farben zu Tabellenzeilen
 * Änderungen in Power BI rückgängig machen
 
-Um Änderungen vorzunehmen, müssen Sie einen Bericht bearbeiten. Öffnen Sie den Bericht, und wählen Sie in der Menüleiste **Bericht bearbeiten** aus, wie im folgenden Bild gezeigt.
+Sie benötigen Berechtigungen zum Bearbeiten des Berichts, um Änderungen vorzunehmen. Öffnen Sie in Power BI Desktop die Ansicht **Bericht**. Im Power BI-Dienst müssen Sie dazu den Bericht öffnen und wie in der folgenden Abbildung dargestellt in der Menüleiste auf **Bearbeiten** klicken.
 
 ![Position des Menüs „Bearbeiten“](media/service-tips-and-tricks-for-color-formatting/power-bi-edit-report.png)
 
@@ -47,7 +49,7 @@ Hier wurde das Design **Innovate** auf den Bericht für Vertrieb und Marketing a
 ![Angewendetes Innovate-Design](media/service-tips-and-tricks-for-color-formatting/power-bi-theme-innovate.png)
 
 ## <a name="change-the-color-of-a-single-data-point"></a>Farbe eines einzelnen Datenpunkts ändern
-Unter Umständen möchten Sie einen bestimmten Datenpunkt markieren. Möglicherweise handelt es sich dabei um die Verkaufszahlen für ein neu eingeführtes Produkt oder bessere Qualitätsergebnisse nach der Einführung eines neuen Programms. Mit Power BI können Sie einen bestimmten Datenpunkt hervorheben, indem Sie seine Farbe ändern.
+Unter Umständen möchten Sie einen bestimmten Datenpunkt markieren. Das können z. B. die Verkaufszahlen für ein neu eingeführtes Produkt oder bessere Qualitätsergebnisse nach der Einführung eines neuen Programms sein. Mit Power BI können Sie einen bestimmten Datenpunkt hervorheben, indem Sie seine Farbe ändern.
 
 In der folgenden Visualisierung werden verkaufte Einheiten nach Produktsegment angeordnet. 
 
@@ -55,7 +57,7 @@ In der folgenden Visualisierung werden verkaufte Einheiten nach Produktsegment a
 
 Stellen Sie sich vor, dass Sie das Segment **Convenience** farblich hervorheben möchten, um zu zeigen, wie gut dieses brandneue Segment abschneidet. Gehen Sie wie folgt vor:
 
-Erweitern Sie den Abschnitt **Datenfarben**, und aktivieren Sie den Schieberegler für **Alles einblenden**. Die Farben für jedes Datenelement in der Visualisierung werden angezeigt. Ändern Sie einen beliebigen Datenpunkt.
+Erweitern Sie die Karte **Datenfarben**, und aktivieren Sie den Schieberegler für **Alles anzeigen**. Die Farben für jedes Datenelement in der Visualisierung werden angezeigt. Jetzt können Sie jeden beliebigen Datenpunkt bearbeiten.
 
 ![](media/service-tips-and-tricks-for-color-formatting/power-bi-show.png)
 
@@ -71,7 +73,7 @@ Sie können die Farbe eines Datenpunkts für einzelne, mehrere oder alle Datenel
 
 ![Balkendiagramm mit Balken in Grün, Gelb und Blau](media/service-tips-and-tricks-for-color-formatting/power-bi-corporate.png)
 
-Farben bieten Ihnen viele Gestaltungsmöglichkeiten. Im nächsten Abschnitt prüfen wir Farbverläufe.
+Farben bieten Ihnen viele Gestaltungsmöglichkeiten. Der nächste Abschnitt dreht sich um die bedingte Formatierung.
 
 ## <a name="conditional-formatting-for-visualizations"></a>Bedingte Formatierung für Visualisierungen
 Visualisierungen lassen sich mit dynamischen Farbeinstellungen nach dem numerischen Wert eines Felds ansprechend gestalten. Dadurch können Sie einen anderen als für die Größe eines Balkens verwendeten Wert anzeigen und die beiden Werte in einer einzelnen Grafik anzeigen. Sie können damit auch Datenpunkte markieren, die über (oder unter) einem bestimmten Wert liegen, z. B. Bereiche mit geringer Rentabilität.
@@ -79,7 +81,7 @@ Visualisierungen lassen sich mit dynamischen Farbeinstellungen nach dem numerisc
 Die folgenden Abschnitte zeigen die verschiedene Methoden, Farben auf Grundlage eines numerischen Werts anzupassen.
 
 ### <a name="base-the-color-of-data-points-on-a-value"></a>Farbe von Datenpunkten nach einem numerischen Wert vergeben
-Um die Farbe anhand eines Werts zu ändern, wählen Sie eine Visualisierung aus, um diese zu aktivieren. Öffnen Sie den Formatierungsbereich, indem Sie das Farbrollersymbol auswählen und die Karte **Datenfarben** aufklappen. Zeigen Sie auf die Karte, klicken Sie auf die drei vertikalen Punkte, und wählen Sie **Bedingte Formatierung** aus.  
+Um die Farbe anhand eines Werts zu ändern, wählen Sie eine Visualisierung aus, um diese zu aktivieren. Öffnen Sie den Bereich „Formatierung“, indem Sie auf das Farbrollersymbol klicken und die Karte **Datenfarben** öffnen. Zeigen Sie auf die Karte, klicken Sie auf die drei vertikalen Punkte, und wählen Sie **Bedingte Formatierung** aus.  
 
 ![Auswählen der Option „Bedingte Formatierung“ durch Klicken auf die drei vertikalen Punkte](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting.gif)
 
@@ -103,9 +105,9 @@ Achten Sie im ersten Bild darauf, wie die Balken im Diagramm den Farbverlauf in 
 
 ![](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional4.png)
 
-Lassen Sie uns überprüfen, was passiert, wenn wir in den Feldern **Minimum** und **Maximum** numerische Werte angeben. Wählen Sie **Anzahl** aus den Dropdownfeldern sowohl für **Minimum** als auch **Maximum** aus, und legen Sie **Minimum** auf 3.500 und **Maximum** auf 6.000 fest.
+Lassen Sie uns überprüfen, was passiert, wenn wir in den Feldern **Minimum** und **Maximum** numerische Werte angeben. Wählen Sie sowohl für **Minimum** als auch **Maximum** den Wert **Benutzerdefiniert** aus den Dropdownfeldern aus, und legen Sie **Minimum** auf 3.500 und **Maximum** auf 6.000 fest.
 
-![Bedingtes Formatieren nach Zahlen](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting-number.png)
+![Bedingtes Formatieren nach Zahlen](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting-numbers.png)
 
 Werden diese Werte festgelegt, wird der Farbverlauf nicht mehr auf die Werte im Diagramm angewendet, die unter dem **Minimum** oder über dem **Maximum** liegen. Alle Balken mit Werten oberhalb des **Maximums** werden grün, alle Balken mit Werten unterhalb des **Minimums** rot markiert.
 
@@ -116,22 +118,36 @@ Manchmal verfügen Ihre Daten über natürlich abweichende Skalen. Beispielsweis
 
 Aktivieren Sie das Kontrollkästchen **Abweichend**, um abweichende Farbskalen zu verwenden. Wenn **Abweichend** aktiviert ist, wird wie im Folgenden dargestellt eine zusätzliche Farbauswahl namens **Mitte** angezeigt.
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-diverging2.png)
+![Dialogfeld für Standardfarbe mit ausgewählter Farbskala](media/service-tips-and-tricks-for-color-formatting/power-bi-diverging-colors.png)
 
 Wenn der Schieberegler **Abweichend** aktiviert ist, können Sie die Farben für **Minimal**, **Maximal** und **Mitte** separat auswählen. In der folgenden Abbildung wird die **Mitte** für **% Market Share SPLY YTD** (% Marktanteil im gleichen Vorjahreszeitraum seit Jahresbeginn) auf „0,2“ festgelegt, sodass Balken mit Werten über 0,2 in einem Grünton und Balken mit Werten unter 0,2 in einem Rotton angezeigt werden.
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-diverging.png)
+![Säulendiagramm mit roten und grünen Balken](media/service-tips-and-tricks-for-color-formatting/power-bi-diverging.png)
+
+## <a name="add-color-to-table-rows"></a>Hinzufügen von Farben zu Tabellenzeilen
+Tabellen und Matrizen bieten zahlreiche Farbformatierungsoptionen. 
+
+![Standardtabelle](media/service-tips-and-tricks-for-color-formatting/power-bi-table.png)
+
+Das Farbschema von Tabellen und Matrizen lässt sich am schnellsten ändern, indem Sie auf der Registerkarte „Formatierung“ auf **Stil** klicken.  In der folgenden Abbildung wurde die Option **Kopfzeile in Fettformatierung, auffällige Zeilen** ausgewählt.
+
+![Standardtabelle](media/service-tips-and-tricks-for-color-formatting/power-bi-table-style.png)
+
+Experimentieren Sie mit anderen Farbformatierungsoptionen. In der folgenden Abbildung wurde sowohl die Hintergrundfarbe der **Spaltenüberschriften** als auch die **Hintergrundfarbe** und die **Alternative Hintergrundfarbe** der **Werte** (Zeilen) geändert.
+
+![Standardtabelle](media/service-tips-and-tricks-for-color-formatting/power-bi-table-rows.png)
 
 ## <a name="how-to-undo-in-power-bi"></a>Änderungen in Power BI rückgängig machen
 Wie viele andere Microsoft-Dienste und Software bietet Power BI eine einfache Möglichkeit, den letzten Befehl rückgängig zu machen. Nehmen wir an, Sie ändern die Farbe eines Datenpunkts oder eine Reihe von Datenpunkten, und die Farbe gefällt Ihnen nicht, wenn sie in der Visualisierung angezeigt wird. Sie wissen nicht genau, wie die Farbe zuvor festgelegt war, aber Sie möchten wieder diese Farbe angezeigt bekommen.
 
 Sie können Ihre letzte Aktion bzw. die letzten paar Aktionen ganz einfach **rückgängig machen**: STRG + Z.
 
+Klicken Sie auf **Auf Standardwert zurücksetzen**, um alle Änderungen zu verwerfen, die Sie auf der Karte „Formatierung“ vorgenommen haben.
+
+![Formatierungskarte mit der Option „Auf Standardwert zurücksetzen“ am unteren Rand](media/service-tips-and-tricks-for-color-formatting/power-bi-revert.png)
+
 ## <a name="feedback"></a>Feedback
 Haben Sie einen Tipp, von dem Sie berichten möchten? Bitte lassen Sie ihn uns zukommen –möglicherweise nehmen wir ihn in diese Liste auf.
-
->[!NOTE]
->Die Farb- und Achseneinstellungen sowie die zugehörigen Anpassungen, die bei Auswahl des Symbols **Format** verfügbar sind, stehen auch in Power BI Desktop zur Verfügung.
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Erste Schritte mit Farbeinstellungen und Achseneigenschaften](service-getting-started-with-color-formatting-and-axis-properties.md)

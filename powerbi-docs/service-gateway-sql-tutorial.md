@@ -10,10 +10,10 @@ ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
 ms.openlocfilehash: 100417202fca148be0e2e976ce0cd84167c803d9
-ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74958432"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Aktualisieren von Daten aus einer lokalen SQL Server-Datenbank
@@ -85,7 +85,7 @@ Gehen Sie folgendermaßen vor, um mithilfe der AdventureWorksDW-Beispieldatenban
 
 6. Speichern Sie den Bericht unter dem Namen „AdventureWorksProducts.pbix“.
 
-7. Klicken Sie auf der Registerkarte **Start** nacheinander auf **Veröffentlichen** \> **Mein Arbeitsbereich** \> **Auswählen**. Melden Sie sich beim Power BI-Dienst an, wenn Sie dazu aufgefordert werden.
+7. Klicken Sie auf der Registerkarte **Start** auf **Veröffentlichen** \> **Mein Arbeitsbereich** \> **Auswählen**. Melden Sie sich beim Power BI-Dienst an, wenn Sie dazu aufgefordert werden.
 
 8. Wählen Sie auf dem Bildschirm **Success** (Vorgang erfolgreich) die Option **Open 'AdventureWorksProducts.pbix' in Power BI** („AdventureWorksProducts.pbix“ in Power BI öffnen) aus.
 
@@ -134,7 +134,7 @@ Sie haben in Power BI Desktop eine direkte Verbindung mit Ihrer lokalen SQL Serv
 
 Nachdem Sie in Power BI nun lokal über ein Datengateway eine Verbindung zwischen Ihrem Dataset und Ihrer SQL Server-Datenbank hergestellt haben, konfigurieren Sie mithilfe der folgenden Schritte einen Aktualisierungszeitplan. Durch die Aktualisierung Ihres Datasets nach einem Zeitplan können Sie sicherstellen, dass Ihre Berichte und Dashboards über die aktuellen Daten verfügen.
 
-1. Öffnen Sie im Navigationsbereich **Mein Arbeitsbereich** \> **Datasets**. Wählen Sie die Auslassungspunkte (**. . .**) für das Dataset **AdventureWorksProducts** aus, und klicken Sie dann auf **Zeitplanaktualisierung**.
+1. Öffnen Sie im Navigationsbereich **Mein Arbeitsbereich** \> **Datasets**. Wählen Sie die Auslassungspunkte ( **. . .** ) für das Dataset **AdventureWorksProducts** aus, und klicken Sie dann auf **Zeitplanaktualisierung**.
 
     > [!NOTE]
     > Stellen Sie sicher, dass Sie die Auslassungspunkte für das Dataset **AdventureWorksProducts** und nicht die Auslassungspunkte für den Bericht mit dem gleichen Namen auswählen. Das Kontextmenü des Berichts **AdventureWorksProducts** umfasst nicht die Option **Zeitplanaktualisierung**.
@@ -168,7 +168,7 @@ Führen Sie nun die folgenden Schritte aus, damit die aktualisierten Daten über
 
 1. Wählen Sie im Power BI-Dienst im Navigationsbereich die Option **Mein Arbeitsbereich** aus, und erweitern Sie diese.
 
-2. Wählen Sie unter **Datasets** die Auslassungspunkte (**. . .**) für das Dataset **AdventureWorksProducts** aus, und klicken Sie dann auf **Jetzt aktualisieren**.
+2. Wählen Sie unter **Datasets** die Auslassungspunkte ( **. . .** ) für das Dataset **AdventureWorksProducts** aus, und klicken Sie dann auf **Jetzt aktualisieren**.
 
     ![Jetzt aktualisieren](./media/service-gateway-sql-tutorial/refresh-now.png)
 

@@ -10,10 +10,10 @@ ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: a4d948e768682aab77708289320914ce3ef0fdc3
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74699090"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Echtzeitstreaming in Power BI
@@ -82,7 +82,7 @@ Betrachten wir nun der Reihe nach diese einzelnen Möglichkeiten.
 ### <a name="using-power-bi-rest-apis-to-push-data"></a>Übertragen von Daten per Push mit den Power BI-REST-APIs
 Mit **Power BI-REST-APIs** können Daten erstellt und an **Pushdatasets** und an **Streamingdatasets** gesendet werden. Wenn Sie ein Dataset mithilfe von Power BI-REST-APIs erstellen, wird mit dem *defaultMode*-Flag angegeben, ob es sich um ein Push- oder Streamingdataset handelt. Wenn kein *defaultMode*-Flag gesetzt ist, handelt es sich bei dem Dataset standardmäßig um ein **Pushdataset**.
 
-Wenn der *defaultMode*-Wert auf *pushStreaming* festgelegt ist, ist das Dataset sowohl ein **Push**- *als auch* ein **Streamingdataset** und bietet daher die Vorteile beider Datasettypen. 
+Wenn der *defaultMode*-Wert auf *pushStreaming* festgelegt ist, ist das Dataset ein **Push**- *und* ein **Streaming**dataset und bietet daher die Vorteile beider Datasettypen. 
 
 > [!NOTE]
 > Wenn beim Verwenden von Datasets das *defaultMode*-Flag auf *pushStreaming* festgelegt ist und eine Anforderung die 15-KB-Größenbeschränkung für ein **Streamingdataset** überschreitet, jedoch unter der 16-MB-Größenbeschränkung eines **push**-Datasets liegt, wird die Anforderung erfolgreich ausgeführt, und die Daten werden im Pushdataset aktualisiert. Bei allen Streamingkacheln tritt jedoch vorübergehend ein Fehler auf.

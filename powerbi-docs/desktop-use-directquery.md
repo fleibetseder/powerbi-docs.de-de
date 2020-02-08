@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/18/2019
+ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: cfde935b2cec6e86b56b4f70865ff2d02b5ce27a
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 90721b059958e59cfd74f9ba1d0d25617a7438e6
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75759197"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889280"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Verwenden von DirectQuery in Power BI Desktop
 Wenn Sie mit *Power BI Desktop* eine Verbindung mit Ihrer Datenquelle herstellen, können Sie immer eine Kopie der Daten in Power BI Desktop importieren. Für einige Datenquellen steht hierzu eine weitere Möglichkeit zur Verfügung: das Herstellen einer direkten Verbindung mit der Datenquelle mithilfe von DirectQuery.
@@ -44,7 +44,7 @@ Die Verwendung von DirectQuery besitzt folgende Vorteile:
 - Änderungen an den zugrunde liegenden Daten können eine Aktualisierung der Daten erforderlich machen. Für einige Berichte, die stets aktuelle Daten anzeigen müssen, sind eventuell umfangreiche Datenübertragungen erforderlich, sodass das erneute Importieren von Daten nicht durchführbar ist. Im Gegensatz dazu werden in DirectQuery-Berichten immer aktuelle Daten verwendet.
 - Die Einschränkung auf 1 GB für Datasets gilt *nicht* für DirectQuery.
 
-## <a name="limitations-of-directquery"></a>Einschränkungen für DirectQuery
+## <a name="limitations-of-directquery"></a>Einschränkungen von DirectQuery
 Derzeit bestehen bei der Verwendung von DirectQuery folgende Einschränkungen:
 
 - Alle Tabellen müssen aus einer einzelnen Datenbank stammen. Dies gilt nicht für [zusammengesetzte Modelle](desktop-composite-models.md).
@@ -55,9 +55,9 @@ Derzeit bestehen bei der Verwendung von DirectQuery folgende Einschränkungen:
 
 - Um sicherzustellen, dass Abfragen, die an die zugrundeliegende Datenquelle gesendet werden, eine akzeptable Leistung aufweisen, werden für Measures standardmäßig DAX-Einschränkungen angewendet.
 
-- Bei Verwendung von DirectQuery können maximal 1 Million Zeilen mit Daten zurückgegeben werden. Dies betrifft nicht Aggregationen oder Berechnungen, die zum Erstellen des mit DirectQuery zurückgegebenen Datasets verwendet werden. Die Begrenzung betrifft nur die zurückgegebenen Zeilen.
+- Bei Verwendung von DirectQuery können maximal eine Million Zeilen mit Daten zurückgegeben werden, außer es wird eine Premium-Kapazität verwendet. Dies betrifft nicht Aggregationen oder Berechnungen, die zum Erstellen des mit DirectQuery zurückgegebenen Datasets verwendet werden. Die Begrenzung betrifft nur die zurückgegebenen Zeilen. Bei Premium-Kapazitäten kann eine maximale Zeilenanzahl festgelegt werden, wie in [diesem Beitrag](https://powerbi.microsoft.com/blog/five-new-power-bi-premium-capacity-settings-is-available-on-the-portal-preloaded-with-default-values-admin-can-review-and-override-the-defaults-with-their-preference-to-better-fence-their-capacity/) beschrieben. 
 
-    Sie können beispielsweise 10 Millionen Zeilen mit der Abfrage aggregieren, die für die Datenquelle ausgeführt wird. Die Abfrage gibt die korrekten Ergebnisse dieser Aggregation mithilfe von DirectQuery an Power BI zurück, wenn die zurückgegebenen Power BI-Daten aus weniger als 1 Million Zeilen bestehen. Bei mehr als 1 Million zurückgegebenen Zeilen gibt Power BI einen Fehler zurück.
+    Sie können beispielsweise 10 Millionen Zeilen mit der Abfrage aggregieren, die für die Datenquelle ausgeführt wird. Die Abfrage gibt die korrekten Ergebnisse dieser Aggregation mithilfe von DirectQuery an Power BI zurück, wenn die zurückgegebenen Power BI-Daten aus weniger als 1 Million Zeilen bestehen. Wenn mehr als eine Million Zeilen von DirectQuery zurückgegeben werden, gibt Power BI einen Fehler zurück (außer bei Premium-Kapazität, solange die Zeilenanzahl unterhalb der vom Administrator festgelegten Obergrenze liegt).
 
 ## <a name="important-considerations-when-using-directquery"></a>Wichtige Überlegungen bei der Verwendung von DirectQuery
 Die folgenden drei Aspekte sollten Sie bei der Verwendung von DirectQuery berücksichtigen:

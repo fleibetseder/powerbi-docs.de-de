@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/26/2019
+ms.date: 02/03/2020
 ms.author: maggies
-ms.openlocfilehash: cfb83ae8b005744098261c6973a87fb929a864dd
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 69ebfa9b1d2ef500b388a1bbb57926dc53ff2607
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858946"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76975008"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Erstellen eines Power BI-Berichts für den Power BI-Berichtsserver
 Sie können Power BI-Berichte lokal im Webportal von Power BI-Berichtsserver ebenso wie in der Cloud im Power BI-Dienst https://powerbi.com) speichern und verwalten. Sie erstellen und bearbeiten Berichte in Power BI Desktop und veröffentlichen sie im Webportal. Anschließend können Leser in Ihrer Organisation die Berichte in einem Browser oder einer mobilen Power BI-App auf einem Mobilgerät anzeigen.
@@ -90,6 +90,9 @@ Wenn Ihr Bericht fertig ist, speichern Sie ihn auf dem Power BI-Berichtsserver, 
 2. Jetzt können Sie ihn im Webportal anzeigen.
    
     ![Den Bericht im Webportal anzeigen](media/quickstart-create-powerbi-report/report-server-powerbi-report.png)
+    
+> [!NOTE]
+> Falls Sie den Bericht zu einem späteren Zeitpunkt noch einmal bearbeiten möchten, entsprechen die in Power BI Desktop angezeigten Berichtsdaten immer den zwischengespeicherten Daten, die Sie bei der Erstellung des Berichts verwendet haben.  Wenn Sie möchten, dass beim Bearbeiten des Berichts aktuelle Daten angezeigt werden, müssen Sie die Daten in der Power BI Desktop-Anwendung aktualisieren.
 
 ## <a name="next-steps"></a>Nächste Schritte
 ### <a name="power-bi-desktop"></a>Power BI Desktop

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: fa448dac3e7788639377ce2d73d9c0ed68952fb3
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 516d3a682b669400a015aaec101c7e79c14dbb44
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73877343"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889349"
 ---
 # <a name="configure-workspace-dataflow-settings-preview"></a>Konfigurieren von Datafloweinstellungen im Arbeitsbereich (Vorschauversion)
 
@@ -117,7 +117,7 @@ Weitere Informationen zu Dataflows, CDM und Azure Data Lake Storage Gen2 finden 
 
 * [Dataflows und Integration in Azure Data Lake (Vorschauversion)](service-dataflows-azure-data-lake-integration.md)
 * [Hinzufügen eines CDM-Ordners als Dataflow in Power BI (Vorschauversion)](service-dataflows-add-cdm-folder.md)
-* [Verbinden von Azure Data Lake Storage Gen2 für die Dataflowspeicherung (Vorschauversion)](service-dataflows-connect-azure-data-lake-storage-gen2.md)
+* [Verbinden von Azure Data Lake Storage Gen2 zur Dataflowspeicherung (Vorschauversion)](service-dataflows-connect-azure-data-lake-storage-gen2.md)
 
 Allgemeine Informationen zu Dataflows finden Sie in den folgenden Artikeln:
 

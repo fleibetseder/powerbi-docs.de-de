@@ -6,32 +6,32 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/14/2019
+ms.date: 01/30/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b42d83b4cea6f5f5e8908244b2b298dc3f327468
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 2433f030f00ec8cd337d97c4402b83ed6c4c5a00
+ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76540620"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "76895229"
 ---
 # <a name="getting-started-with-the-formatting-pane"></a>Einstieg in den Formatierungsbereich
-Wenn Sie über die nötigen Berechtigungen zum Bearbeiten von Berichten verfügen, stehen Ihnen zahlreiche Formatierungsoptionen zur Verfügung. In **Power BI**-Berichten können Sie die Farbe von Datenreihen und Datenpunkten und sogar den Hintergrund von Visualisierungen ändern. Sie können ändern, wie die x- und die y-Achse dargestellt werden. Sie können sogar die Schriftarteigenschaften von Visualisierungen, Formen und Titeln formatieren, und haben somit die vollständige Kontrolle über die Darstellung Ihrer Berichte.
+Wenn Sie über die nötigen Berechtigungen zum Bearbeiten von Berichten verfügen, stehen Ihnen zahlreiche Formatierungsoptionen zur Verfügung. In Power BI-Berichten können Sie die Farbe von Datenreihen und Datenpunkten und sogar den Hintergrund von Visualisierungen ändern. Sie können ändern, wie die x- und die y-Achse dargestellt werden. Sie können auch die Schriftarteigenschaften von Visualisierungen, Formen und Titeln formatieren. Power BI bietet Ihnen vollständige Kontrolle darüber, wie Ihre Berichte aussehen.
 
-Öffnen Sie zunächst einen Bericht in Power BI Desktop oder im Power BI-Dienst. Beide Dienste bieten beinahe identische Formatierungsoptionen. Wenn Sie einen Bericht im Power BI-Dienst öffnen, achten Sie darauf, in der Menüleiste **Bericht bearbeiten** auszuwählen.  
+Öffnen Sie zunächst einen Bericht in Power BI Desktop oder im Power BI-Dienst. Beide Dienste bieten beinahe identische Formatierungsoptionen. Wenn Sie einen Bericht im Power BI-Dienst öffnen, müssen Sie in der Menüleiste auf **Bearbeiten** klicken. 
 
 ![Menüleiste mit der Option „Bearbeiten“](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-edit.png)
 
-Wenn Sie eine Visualisierung ausgewählt haben und einen Bericht bearbeiten, wird der Bereich **Visualisierungen** angezeigt, in dem Sie Visualisierungen hinzufügen oder ändern können. Direkt unter den verfügbaren Visualisierungen werden drei Symbole angezeigt: **Felder** (zwei Kästchen), **Format** (eine Farbwalze) und **Analyse** (eine Lupe). In der folgenden Abbildung ist das Symbol **Felder** ausgewählt, was durch den einen gelben Balken unterhalb des Symbols erkennbar ist.
+Wenn Sie einen Bericht bearbeiten und eine Visualisierung ausgewählt haben, wird der Bereich **Visualisierungen** angezeigt. In diesem Bereich können Sie Visualisierungen bearbeiten. Direkt unter dem Bereich **Visualisierungen** werden drei Symbole angezeigt: **Felder** (zwei Kästchen), **Format** (eine Farbwalze) und **Analyse** (eine Lupe). In der folgenden Abbildung ist das Symbol **Felder** ausgewählt, was Sie am gelben Balken unterhalb des Symbols erkennen.
 
-![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_2a.png)
+![](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-format.png)
 
-Wenn Sie **Format**auswählen, zeigt der Bereich unterhalb des Symbols die verfügbaren Farb- und Achseneinstellungen der ausgewählten Visualisierung an.  
+Wenn Sie **Format** auswählen, zeigt der Bereich unterhalb des Symbols die Anpassungsmöglichkeiten für die aktuell ausgewählte Visualisierung an.  
 
-![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_3a.png)
+![](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-format-selected.png)
 
-Verschiedene Elemente der einzelnen Visualisierung können angepasst werden:
+Sie können viele Elemente einer Visualisierung anpassen. Welche Optionen verfügbar sind, hängt vom ausgewählten Visual ab. Zu diesen Optionen gehören unter anderem:
 
 * Legende
 * X-Achse
@@ -44,6 +44,12 @@ Verschiedene Elemente der einzelnen Visualisierung können angepasst werden:
 * Hintergrund
 * Seitenverhältnis fixieren
 * Rahmen
+* QuickInfos
+* Visualheader
+* Formen
+* Position    
+und vieles mehr...
+
 
 > [!NOTE]
 >  
@@ -51,49 +57,101 @@ Verschiedene Elemente der einzelnen Visualisierung können angepasst werden:
 
 Beachten Sie außerdem, dass **Filter** anstelle der Symbole angezeigt werden, wenn keine Visualisierung ausgewählt wurde. Dadurch können Sie die Filter auf alle Visualisierungen auf der Seite anwenden.
 
-Im Folgenden finden Sie ein Beispiel zu Farben und eines zum Ändern der Achseneigenschaften. Diese Beispiele zeigen Ihnen, wie Farben, Achsen und Beschriftungen angepasst werden.
+Wie Sie die Formatierungsoptionen verwenden, lernen Sie am besten, indem Sie sie einfach ausprobieren. Sie können Ihre Änderungen jederzeit rückgängig machen oder den Standardwert wiederherstellen. Es sind unglaublich viele Optionen verfügbar – und ständig kommen neue hinzu. Deshalb ist es nicht möglich, in diesem Artikel alle Formatierungsoptionen zu erklären. Um Ihnen den Einstieg zu erleichtern, werden die wichtigsten hier vorgestellt. 
+
+1. Im Visual verwendete Farben ändern   
+2. Einen Stil anwenden    
+3. Achseneigenschaften ändern    
+4. Datenbezeichnungen hinzufügen    
+
+
+
 
 ## <a name="working-with-colors"></a>Arbeiten mit Farben
 
-Zum Anpassen von Farben in einem Diagramm sind die folgenden Schritte auszuführen.
+Gehen Sie folgendermaßen vor, wenn Sie die Farben in einer Visualisierung ändern möchten:
 
-1. Wählen Sie im Berichtszeichenbereich **Säulendiagramm (gruppiert)** aus.
-2. Wählen Sie danach das Symbol **Format** aus, um die verfügbaren Anpassungsmöglichkeiten anzuzeigen.
-3. Danach wählen Sie den kleinen Pfeil nach unten aus, der links von **Datenfarben** angezeigt wird. Dadurch sehen Sie, wie die Datenfarben mit den für die ausgewählte Visualisierung spezifischen Optionen angepasst werden können.
-4. **Datenfarben** wird nach unten erweitert und zeigt die verfügbaren Anpassungen an.  
-   ![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_4a.png)
+1. Wählen Sie eine Visualisierung aus, um sie zu aktivieren.
 
-Hier können Sie verschiedene Änderungen vornehmen. Mit dem Pfeil nach unten neben der Farbe ist es möglich, die verfügbaren Datenreihen zu ändern. In diesem Beispiel wählen wir Gelb für **Lebenshaltungskosten**, Orange für **Wetter** und Grün für **Gesellschaftliches Wohlbefinden**. Der folgende Bildschirm zeigt den letzten Schritt an, das Ändern der **Lebenshaltungskosten**.  
+2. Klicken Sie auf den Farbroller, um die Registerkarte mit den Formatierungsoptionen zu öffnen. Hier werden alle für das ausgewählte Visual verfügbaren Formatierungselemente angezeigt.
 
-![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_5a.png)
+    ![Diagramm mit ausgewählter Registerkarte „Formatierung“](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-formatting.png)
 
-Die Änderungen werden in der folgenden Abbildung dargestellt. Das Diagramm ist nun sehr farbenfroh. Beim Arbeiten mit Farben sind die folgenden Elemente sehr hilfreich. Die Zahlen in der folgenden Auflistung werden auf dem Bildschirm unten ebenfalls angezeigt. So sehen Sie, wo Sie auf diese Elemente zugreifen oder diese ändern.
+3. Klicken Sie auf **Datenfarben**, um sich die verfügbaren Anpassungen anzeigen zu lassen.  
 
-1. Die Farben gefallen Ihnen nicht? Kein Problem: Über **Auf Standardwert zurücksetzen** wird Ihre Auswahl wieder auf die Standardeinstellungen zurückgesetzt. Dabei können Sie eine Farbe oder die gesamte Visualisierung zurücksetzen.
-2. Möchten Sie eine Farbe auswählen, die Sie in der Palette nicht finden? Wählen Sie einfach **Benutzerdefinierte Farbe**aus, und Ihnen wird ein Farbspektrum angezeigt.  
-   ![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_6a.png)
+    ![Diagramm mit erweitertem Formatierungsbereich und eingeblendeten Optionen für Datenfarben](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-data-colors.png)
+
+4. Legen Sie für **Alle anzeigen** die Einstellung „Ein“ fest, und wählen Sie unterschiedliche Säulenfarben aus.
+
+    ![Diagramm, in dem mehrere Säulen eine neue Farbe haben](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-change-colors.png)
+
+Hier noch ein paar hilfreiche Tipps für den Umgang mit Farben. Die Zahlen in der folgenden Auflistung werden auf dem Bildschirm unten ebenfalls angezeigt. So sehen Sie, wo Sie auf diese Elemente zugreifen oder diese ändern.
+
+1. Eine Farbe gefällt Ihnen nicht? Kein Problem: Über **Auf Standardwert zurücksetzen** können Sie die Auswahl wieder auf die Standardeinstellung zurücksetzen. 
+
+2. Alle Farbänderungen gefallen Ihnen nicht? Klicken Sie unten im Abschnitt **Datenfarben** auf **Auf Standardwert zurücksetzen**, damit wieder die Standardfarben verwendet werden. 
+
+3. Möchten Sie eine Farbe auswählen, die Sie in der Palette nicht finden? Wählen Sie einfach **Benutzerdefinierte Farbe**aus, und Ihnen wird ein Farbspektrum angezeigt.  
+
+   ![Abschnitt „Datenfarben“ mit geöffneter Farbpalette](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-color-extras.png)
 
 Gefällt Ihnen die zuletzt vorgenommene Änderung nicht? Mit **STRG + Z** machen Sie die letzte Änderung wie gewohnt rückgängig.
+
+## <a name="applying-a-style-to-a-table"></a>Anwenden eines Stils auf eine Tabelle
+Manche Power BI-Visualisierungen bieten Ihnen die Option **Stil**. So können Sie mit nur einem Klick eine ganze Reihe von Formatierungsoptionen auf Ihre Visualisierung anwenden. 
+
+1. Wählen Sie eine Tabelle oder eine Matrix aus, um sie zu aktivieren.   
+1. Öffnen Sie die Registerkarte „Formatierung“, und wählen Sie **Stil** aus.
+
+   ![Option „Stil“ über die Registerkarte „Formatierung“ auswählen](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-style.png)
+
+
+1. Wählen Sie einen Stil aus der Dropdownliste aus. 
+
+   ![Dieselbe Tabelle, mit aktiviertem Stil „Kopfzeile in Fettformatierung, auffällige Zeilen“](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-style-flashy.png)
+
+Auch nachdem Sie einen Stil angewendet haben, können Sie die Eigenschaften der Visualisierung weiter ändern, einschließlich der Farbe.
+
 
 ## <a name="changing-axis-properties"></a>Ändern der Achseneigenschaften
 
 Häufig soll auch die X-Achse oder die Y-Achse geändert werden. Ähnlich wie bei den Farbeinstellungen können Sie auch die Achseneigenschaften ändern, indem Sie links neben der zu ändernden Achse den Pfeil nach unten auswählen, wie in der folgenden Abbildung dargestellt.  
-![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_7a.png)
+![](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-y-axis.png)
 
-Wählen Sie zum Reduzieren der Optionen für die **X-Achsen** den Pfeil nach oben aus, der neben der **X-Achse**angezeigt wird.
+Im folgenden Beispiel wurden folgende Formatierungen an der y-Achse vorgenommen:
+- Verschieben der Bezeichnungen auf die rechte Seite der Visualisierung
 
-Die Beschriftungen der X-Achse werden mithilfe des Optionsfelds neben der **X-Achse** komplett ausgeblendet. Das Optionsfeld neben **Titel**legt fest, ob Achsentitel ein- oder ausgeblendet werden.  
+- Ändern des Anfangswerts zu Null
 
-Auf Ihre Power BI-Berichte und Dashboards können Sie die verschiedensten Farben und viele weitere Anpassungsmöglichkeiten anwenden.
+- Ändern der Schriftfarbe der Bezeichnungen zu Schwarz
 
-> [!NOTE]
->  
-> Die Farb- und Achseneinstellungen sowie die zugehörigen Anpassungen, die bei Auswahl des Symbols **Format** verfügbar sind, stehen auch in Power BI Desktop zur Verfügung.
+- Erhöhen der Schriftgröße der Bezeichnung auf 12
 
-## <a name="setting-color-from-text-values"></a>Festlegen von Farben mithilfe von Textwerten
+- Hinzufügen eines Titels für die Y-Achse
 
-Ab dem **Power BI Desktop**-Update vom August 2018 können Sie für ein angegebenes Berichtselement Farben nach Textwert oder Hexadezimalcode festlegen. Weitere Informationen finden Sie unter [Bedingte Formatierung in Tabellen](../desktop-conditional-table-formatting.md).
 
+    ![Gleiches Säulendiagramm, aber mit starker Formatierung der Y-Achse](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-axis-changes.png)
+
+Sie können die Achsenbezeichnungen komplett entfernen, indem Sie neben **X-Achse** oder **Y-Achse** auf das Optionsfeld klicken. Das Optionsfeld neben **Titel**legt fest, ob Achsentitel ein- oder ausgeblendet werden.  
+
+
+
+## <a name="adding-data-labels"></a>Hinzufügen von Datenbezeichnungen    
+
+Hier noch ein letztes Formatierungsbeispiel, bevor Sie die Formatierungsoptionen selbst erkunden.  Einem Flächendiagramm wurden Datenbezeichnungen hinzugefügt. 
+
+So sah das Diagramm *vorher* aus. 
+
+![Flächendiagramm unformatiert](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-area-chart.png)
+
+
+So sah das Diagramm *nach* der Formatierung aus.
+
+![Flächendiagramm formatiert](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-data-labels.png)
+
+Wir haben die Visualisierung ausgewählt, um Sie zu aktivieren, und die Registerkarte „Formatierung“ geöffnet.  Wir haben die Option **Datenbezeichnungen** ausgewählt und aktiviert. Dann haben wir die Schriftart auf 12 geändert, die Schriftfamilie „Arial Black“ ausgewählt, die Option **Hintergrund anzeigen** aktiviert und einen weißen Hintergrund mit einer Transparenz von 5 % eingestellt.
+
+Das sind nur ein paar der vielen möglichen Formatierungsaufgaben. Öffnen Sie einen Bericht im Bearbeitungsmodus, und machen Sie sich mit der Registerkarte „Formatierung“ vertraut, um ansprechende und informative Visualisierungen zu erstellen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 Weitere Informationen finden Sie im folgenden Artikel:  

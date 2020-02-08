@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 22328ddd6be697f658301516d05971cdcee0d260
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 2a17e4963d4607b67279f65205579e115df2e550
+ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223891"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77026644"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Verteilen von Power BI-Inhalten an externe Gastbenutzer mit Azure AD B2B
 
@@ -24,9 +24,12 @@ Dieser Artikel enthält eine grundlegende Einführung in Azure AD B2B in Power B
 
 ## <a name="enable-access"></a>Aktivieren des Zugriffs
 
-Achten Sie darauf, das Feature [Inhalte für externe Benutzer freigeben](service-admin-portal.md#export-and-sharing-settings) im Power BI-Verwaltungsportal zu aktivieren, bevor Sie Gastbenutzer einladen.
+Achten Sie darauf, das Feature [Inhalte für externe Benutzer freigeben](service-admin-portal.md#export-and-sharing-settings) im Power BI-Verwaltungsportal zu aktivieren, bevor Sie Gastbenutzer einladen. Auch wenn die Option aktiviert ist, muss der Benutzer in Azure Active Directory über die Berechtigung zum Einladen von Gastbenutzern verfügen. Diese kann ihm über die Rolle „Gasteinladender“ gewährt werden. 
 
 Sie können auch das Feature [Externen Gastbenutzern das Bearbeiten und Verwalten von Inhalten in der Organisation erlauben](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) verwenden. Hiermit können Sie auswählen, welcher Gastbenutzer Inhalte in Arbeitsbereichen sehen und erstellen kann. Dies schließt auch das Durchsuchen der Power BI-Instanz in Ihrer Organisation ein.
+
+> [!NOTE]
+> Mit der Einstellung [Inhalt für externe Benutzer freigeben](service-admin-portal.md#export-and-sharing-settings) wird gesteuert, ob externe Benutzer über Power BI in Ihre Organisation eingeladen werden können. Wenn ein externer Benutzer die Einladung annimmt, wird er Azure AD-B2B-Gastbenutzer in Ihrer Organisation. Er kann nun bei allen Personenauswahlfeldern von Power BI ausgewählt werden. Wenn die Einstellung deaktiviert ist, haben vorhandene Gastbenutzer in Ihrer Organisation weiterhin Zugriff auf alle Elemente, auf die sie bisher Zugriff hatten,und sind trotzdem noch in Personenauswahlfeldern aufgeführt. Auch Gäste, die über eine geplante Einladung hinzugefügt werden, sind in Personenauswahlfeldern verfügbar. Wenn Sie verhindern möchten, dass Gastbenutzer auf Power BI zugreifen, können Sie eine Azure AD-Richtlinie für bedingten Zugriff verwenden.
 
 ## <a name="who-can-you-invite"></a>Wen können Sie einladen?
 
@@ -37,6 +40,12 @@ Benutzer, die einer Government-Cloud wie [Power BI for US Government](service-go
 ## <a name="invite-guest-users"></a>Einladen von Gastbenutzern
 
 Gastbenutzer benötigen nur für den ersten Besuch bei Ihrer Organisation eine Einladung. Es gibt zwei Möglichkeiten, Benutzer einzuladen: geplante Einladungen und Ad-hoc-Einladungen.
+
+Mit den folgenden Funktionen können Sie in Power BI Gastbenutzer einladen:
+* Freigabe von Berichten und Dashboards
+* App-Zugriffsliste
+
+Wenn Sie externe Benutzer einem Arbeitsbereich hinzufügen müssen, die nicht bereits Gäste in Ihrem Azure AD-Verzeichnis sind, können Sie geplante Einladungen nutzen, wie unten erläutert. 
 
 ### <a name="planned-invites"></a>Geplante Einladungen
 
@@ -73,6 +82,7 @@ Der Gastbenutzer empfängt eine E-Mail mit der Mitteilung, dass Sie die App mit 
 ![Screenshot der E-Mail mit der Mitteilung, dass die App mit dem Gastbenutzer geteilt wurde](media/service-admin-azure-ad-b2b/guest-user-invite-email-2.png)
 
 Der Gastbenutzer muss sich mit seiner Organisations-E-Mail-Adresse anmelden. Nach dem Anmelden wird er aufgefordert, die Einladung anzunehmen. Nach der Anmeldung wird die App für den Gastbenutzer geöffnet. Um zur App zurückzukehren, kann der Benutzer den Link als Lesezeichen festlegen oder die E-Mail speichern.
+
 
 ## <a name="licensing"></a>Lizenzierung
 
@@ -141,7 +151,10 @@ Damit sich diese Benutzer bei Power BI anmelden können, stellen Sie ihnen die M
 
 * Mit einigen Active Directory-Einstellungen kann eingeschränkt werden, über welche Berechtigungen externe Gastbenutzer in Ihrer gesamten Organisation verfügen. Dies gilt auch für Ihre Power BI-Umgebung. In der folgenden Dokumentation werden die Einstellungen erläutert:
     * [Manage External Collaboration Settings](/azure/active-directory/b2b/delegate-invitations#configure-b2b-external-collaboration-settings) (Einstellungen für externe Zusammenarbeit verwalten)
-    * [Zulassen oder Blockieren von Einladungen für B2B-Benutzer von bestimmten Organisationen](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)  
+    * [Zulassen oder Blockieren von Einladungen für B2B-Benutzer von bestimmten Organisationen](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)
+    * [Zulassen oder Blockieren des Gastbenutzerzugriffs auf den Power BI-Dienst](/azure/active-directory/conditional-access/overview)
+    
+* Die Freigabe außerhalb Ihrer Organisation wird bei nationalen Clouds nicht unterstützt. Erstellen Sie stattdessen Benutzerkonten in Ihrer Organisation, über die externe Benutzer auf die Inhalte zugreifen können. 
 
 ## <a name="next-steps"></a>Nächste Schritte
 

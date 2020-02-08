@@ -1,34 +1,49 @@
 ---
-title: Zwei Möglichkeiten zur Freigabe eines gefilterten Power BI-Berichts
-description: Lernen Sie zwei Möglichkeiten kennen, einen Power BI-Bericht für Kollegen in Ihrer Organisation zu filtern und freizugeben.
+title: Filtern und Freigeben eines Power BI-Berichts
+description: Erfahren Sie, wie Sie einen Power BI-Bericht für Kollegen in Ihrer Organisation filtern und freigeben.
 author: maggiesMSFT
 ms.reviewer: lukaszp
 featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/06/2019
+ms.date: 01/29/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 79f09b5018efcdae88d74ae26f099ff095fb161a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 16041ebc9ba293ab166178e008b12277d94e89c3
+ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871442"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "76894813"
 ---
-# <a name="two-ways-to-share-a-filtered-power-bi-report"></a>Zwei Möglichkeiten zur Freigabe eines gefilterten Power BI-Berichts
-*Freigeben* ist eine gute Möglichkeit, einigen Personen Zugriff auf Ihre Dashboards und Berichte zu gewähren. Wie gehen Sie vor, wenn Sie eine gefilterte Version eines Berichts freigeben möchten? Dabei handelt es sich möglicherweise um einen Bericht, der nur Daten für einen bestimmten Ort, einen bestimmten Vertriebsmitarbeiter oder ein bestimmtes Jahr enthält. Versuchen Sie, einen Bericht zu filtern und freizugeben, oder erstellen Sie eine benutzerdefinierte URL. Der Bericht wird gefiltert, wenn Empfänger ihn erstmalig öffnen. Sie können den Filter entfernen, indem Sie die URL ändern. 
+# <a name="filter-and-share-a-power-bi-report"></a>Filtern und Freigeben eines Power BI-Berichts
+*Freigeben* ist eine gute Möglichkeit, einigen Personen Zugriff auf Ihre Dashboards und Berichte zu gewähren. Wie gehen Sie vor, wenn Sie eine gefilterte Version eines Berichts freigeben möchten? Vielleicht möchten Sie, dass der Bericht nur Daten für eine bestimmte Stadt, einen bestimmten Vertriebsmitarbeiter oder ein bestimmtes Jahr anzeigt. In diesem Artikel erfahren Sie, wie Sie einen Bericht filtern und anschließend die gefilterte Version freigeben. Ein gefilterter Bericht lässt sich auch freigeben, indem Sie [der Berichts-URL Abfrageparameter hinzuzufügen](service-url-filters.md). Bei beiden Möglichkeiten wird der Bericht gefiltert, wenn die Empfänger in das erste Mal öffnen. Sie können die gesetzten Filter auch entfernen.
 
 ![Gefilterter Bericht](media/service-share-reports/power-bi-share-filter-pane-report.png)
 
 Zudem bietet Power BI [andere Möglichkeiten zum gemeinsamen Bearbeiten und Verteilen Ihrer Berichte](service-how-to-collaborate-distribute-dashboards-reports.md). Zum Freigeben benötigen Sie und die Empfänger eine [Power BI Pro-Lizenz](service-features-license-type.md), oder es muss sich um Inhalte in einer [Premium-Kapazität](service-premium-what-is.md) handeln. 
 
-## <a name="two-ways-to-filter-a-report"></a>Zwei Möglichkeiten zum Filtern eines Berichts
+## <a name="follow-along-with-sample-data"></a>Interaktives Beispiel
 
-Für beide Filterverfahren verwenden wir die Beispielvorlagen-App „Marketing & Sales“. Möchten Sie es ausprobieren? Sie können die [Beispielvorlagen-App „Marketing & Sales“](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample?tab=Overview) auch installieren.
+In diesem Artikel wird die Beispielvorlagen-App „Marketing und Sales“ (Marketing und Umsatz) verwendet. Möchten Sie es ausprobieren? 
 
-### <a name="set-a-filter"></a>Festlegen eines Filters
+1. Installieren Sie die [Beispielvorlagen-App „Marketing & Sales“](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample?tab=Overview).
+2. Wählen Sie die App aus, und klicken Sie auf **App erkunden**.
+
+   ![Erkunden von Beispieldaten](media/service-share-reports/power-bi-sample-explore-data.png)
+
+3. Klicken Sie auf das Stiftsymbol, um den Arbeitsbereich zu öffnen, den Sie mit der App installiert haben.
+
+    ![Stiftsymbol zum Bearbeiten der App](media/service-share-reports/power-bi-edit-pencil-app.png)
+
+4. Klicken Sie in der Liste mit den Arbeitsbereichinhalten auf **Berichte**, und wählen Sie den Bericht **Sales and Marketing Sample PBIX** (Umsatz- und Marketingbeispiel PBIX) aus.
+
+    ![Beispielbericht öffnen](media/service-share-reports/power-bi-open-sample-report.png)
+
+    Jetzt können Sie die in diesem Artikel beschriebenen Aktionen selbst im Beispiel ausprobieren.
+
+## <a name="set-a-filter-in-the-report"></a>Filtern eines Berichts
 
 Öffnen Sie einen Bericht in der [Bearbeitungsansicht](consumer/end-user-reading-view.md), und wenden Sie einen Filter an.
 
@@ -38,41 +53,34 @@ In diesem Beispiel filtern wir die Seite „YTD Category“ (Kategorie „Seit J
 
 Speichern Sie den Bericht.
 
-### <a name="create-a-filter-in-the-url"></a>Erstellen eines Filters in der URL
-
-Wenn Sie den Filter am Ende der Berichtsseiten-URL hinzufügen, ist das Verhalten etwas anders. Die gefilterte Seite sieht identisch aus. Power BI fügt den Filter jedoch dem gesamten Bericht hinzu und entfernt die anderen Werte aus dem Filterbereich.  
-
-Fügen Sie am Ende der Berichtsseiten-URL Folgendes hinzu:
-   
-    ?filter=*tablename*/*fieldname* eq *value*
-   
-Das Feld muss den Typ „number“, „datetime“ oder „string" aufweisen. Die Werte *TableName* oder *FieldName* dürfen keine Leerzeichen enthalten.
-   
-In diesem Beispiel lautet der Name der Tabelle **Geo**, das Feld hat den Namen **Region**, und der Wert, nach dem gefiltert werden soll, lautet **Central**:
-   
-    ?filter=Geo/Region eq 'Central'
-
-Durch den Browser werden Sonderzeichen hinzugefügt, die Schrägstriche, Leerzeichen und Apostrophe darstellen, sodass die URL schließlich etwa wie folgt lautet:
-   
-    app.powerbi.com/groups/xxxx/reports/xxxx/ReportSection4d00c3887644123e310e?filter=Geo~2FRegion%20eq%20'Central'
-
-![Bericht mit URL-Filter](media/service-share-reports/power-bi-share-report-filter-url.png)
-
-Speichern Sie den Bericht.
-
-Weitere Informationen finden Sie im Artikel [Filtern eines Berichts mithilfe von Abfragezeichenfolgenparametern in der URL](service-url-filters.md).
-
 ## <a name="share-the-filtered-report"></a>Freigeben des gefilterten Berichts
 
-1. Wenn Sie [den Bericht freigeben](service-share-dashboards.md), deaktivieren Sie das Kontrollkästchen **E-Mail-Benachrichtigungen an Empfänger senden**.
+1. Wählen Sie **Freigeben**aus.
 
-    ![Dialogfeld „Bericht freigeben“](media/service-share-reports/power-bi-share-report-dialog.png)
+   ![„Freigeben“ auswählen](media/service-share-reports/power-bi-share.png)
 
-4. Senden Sie den Link mit dem zuvor erstellten Filter.
+2. Deaktivieren Sie die Option **E-Mail-Benachrichtigung an Empfänger senden**, um stattdessen einen gefilterten Link verschicken zu können. Wählen Sie dann **Bericht mit aktuellen Filtern und Slicern freigeben** aus, und klicken Sie auf **Freigeben**.
+
+    ![Bericht mit Filtern freigeben](media/service-share-reports/power-bi-share-with-filters.png)
+
+4. Klicken Sie noch einmal auf **Freigeben**.
+
+   ![„Freigeben“ auswählen](media/service-share-reports/power-bi-share.png)
+
+5. Klicken Sie auf die Registerkarte **Zugriff** und anschließend auf **Freigegebene Berichtansichten verwalten**.
+
+    ![Freigegebene Berichtansichten verwalten](media/service-share-reports/power-bi-manage-shared-report-views.png)
+
+6. Klicken Sie mit der rechten Maustaste auf die gewünschte URL, und wählen Sie **Link kopieren** aus.
+
+    ![Link zum gefilterten Bericht kopieren](media/service-share-reports/power-bi-copy-filtered-link.png)
+
+7. Wenn Sie diesen Link freigeben, sehen Empfänger den gefilterten Bericht. 
+
 
 ## <a name="next-steps"></a>Nächste Schritte
 * [Freigeben Ihrer Arbeit in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Freigeben eines Dashboards](service-share-dashboards.md)
-* Weitere Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/).
-* Feedback? Anregungen nehmen wir auf der [Power BI-Communitywebsite](https://community.powerbi.com/) entgegen.
+* Haben Sie dazu Fragen? [Wenden Sie sich an die Power BI-Community](https://community.powerbi.com/).
+* Haben Sie Feedback? Anregungen nehmen wir auf der [Power BI-Communitywebsite](https://community.powerbi.com/) entgegen.
 

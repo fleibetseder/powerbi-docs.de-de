@@ -1,20 +1,20 @@
 ---
 title: Veröffentlichen im Web aus Power BI
 description: Mit der Power BI-Funktion „Im Web veröffentlichen“ können Sie auf einfache Weise interaktive Power BI-Visualisierungen auf beliebigen Geräten online einbetten, etwa in Blogbeiträgen, auf Websites, in E-Mails oder über soziale Medien.
-author: rkarlin
-ms.author: rkarlin
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/16/2019
+ms.date: 01/30/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1fd640922f132f56a03b37ed59a6267a5af83d00
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.openlocfilehash: 53cc311f2fb0bfa4ab876c80b81ee2a092c4fd8c
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74311705"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76913621"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Veröffentlichen im Web aus Power BI
 
@@ -39,20 +39,24 @@ In den folgenden Schritten wird die Verwendung von **Im Web veröffentlichen**be
 1. Öffnen Sie in Ihrem Arbeitsbereich einen Bericht, den Sie bearbeiten können, und wählen Sie **Datei > Im Web veröffentlichen** aus.
 
    ![PtW1](media/service-publish-to-web/publish_to_web1.png)
+   
+2. Sollten Sie nicht berechtigt sein, Einbindungscodes zu erstellen, wenden Sie sich an Ihren Power BI-Administrator.
 
-2. Überprüfen Sie den Inhalt des Dialogfelds, und wählen Sie **Einbindungscode erstellen** aus.
+   ![PtW1](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+
+3. Überprüfen Sie den Inhalt des Dialogfelds, und wählen Sie **Einbindungscode erstellen** aus.
 
    ![PtW2](media/service-publish-to-web/publish_to_web2_ga.png)
 
-3. Lesen Sie die Warnung, wie hier dargestellt, und bestätigen Sie, dass die Daten auf einer öffentlichen Website eingebettet werden können. Wenn das der Fall ist, wählen Sie **Veröffentlichen** aus.
+4. Lesen Sie die Warnung, wie hier dargestellt, und bestätigen Sie, dass die Daten auf einer öffentlichen Website eingebettet werden können. Wenn das der Fall ist, wählen Sie **Veröffentlichen** aus.
 
    ![PtW3](media/service-publish-to-web/publish_to_web3_ga.png)
 
-4. Es wird ein Dialogfeld mit einem Link angezeigt. Sie können diesen Link per E-Mail senden, ihn in Code wie etwa einen iFrame einbetten oder ihn direkt in eine Webseite oder einen Blog einfügen.
+5. Es wird ein Dialogfeld mit einem Link angezeigt. Sie können diesen Link per E-Mail senden, ihn in Code wie etwa einen iFrame einbetten oder ihn direkt in eine Webseite oder einen Blog einfügen.
 
    ![PtW4](media/service-publish-to-web/publish_to_web4.png)
 
-5. Wenn Sie zuvor einen Einbindungscode für einen Bericht erstellt haben und Sie **Im Web veröffentlichen** auswählen, werden die Dialogfelder in den Schritten 2–4 nicht angezeigt. Stattdessen wird das Dialogfeld **Einbindungscode** angezeigt:
+6. Wenn Sie zuvor einen Einbindungscode für einen Bericht erstellt haben und Sie **Im Web veröffentlichen** auswählen, werden die Dialogfelder in den Schritten 2–4 nicht angezeigt. Stattdessen wird das Dialogfeld **Einbindungscode** angezeigt:
 
    ![PtW5](media/service-publish-to-web/publish_to_web5.png)
 
@@ -67,7 +71,7 @@ Die folgende Tabelle gibt Hilfestellung zum Ansichtsmodus und wie er sich auf di
 
 | Ansichtsmodus | Darstellung bei der Einbettung |
 | --- | --- |
-| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |**An Seite anpassen** berücksichtigt die Seitenhöhe und -breite des Berichts. Wenn Sie für Ihre Seite ein *dynamisches* Seitenverhältnis – z.B. 16:9 oder 4:3 – festlegen, wird Ihr Inhalt so skaliert, dass er in den iFrame passt. Wenn Inhalt im iFrame eingebettet ist, kann die Verwendung von **An Seite anpassen** zu einem *Letterbox-Effekt* führen, wobei ein grauer Hintergrund in iFrame-Bereichen angezeigt wird, nachdem der Inhalt so skaliert wurde, dass er in den iFrame passt. Legen Sie die Höhe und Breite Ihres iFrames entsprechend fest, um den Letterbox-Effekt zu minimieren. |
+| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |**An Seite anpassen** berücksichtigt die Seitenhöhe und -breite des Berichts. Wenn Sie für Ihre Seite ein *dynamisches* Seitenverhältnis – z. B. 16:9 oder 4:3 – festlegen, wird Ihr Inhalt so skaliert, dass er in den iFrame passt. Wenn Inhalt im iFrame eingebettet ist, kann die Verwendung von **An Seite anpassen** zu einem *Letterbox-Effekt* führen, wobei ein grauer Hintergrund in iFrame-Bereichen angezeigt wird, nachdem der Inhalt so skaliert wurde, dass er in den iFrame passt. Legen Sie die Höhe und Breite Ihres iFrames entsprechend fest, um den Letterbox-Effekt zu minimieren. |
 | ![PtW6d](media/service-publish-to-web/publish_to_web6d.png) |**Originalgröße** stellt sicher, dass die Größe des Berichts so beibehalten wird, wie sie auf der Berichtsseite festgelegt ist. Dies kann zur Folge haben, dass im iFrame Scrollleisten angezeigt werden. Legen Sie die iFrame-Höhe und -Breite so fest, dass Scrollleisten vermieden werden. |
 | ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |**An Breite anpassen** stellt sicher, dass die Inhalte in den horizontalen Bereich Ihres iFrames passen. Es wird trotzdem ein Rahmen angezeigt, die Inhalte werden aber so skaliert, dass der in der Horizontalen verfügbare Platz vollständig ausgenutzt wird. |
 
@@ -83,12 +87,12 @@ Um eine bessere Anpassung zu erreichen, können Sie versuchen, 56 Pixel zur Höh
 
 | Seitenverhältnis | Größe | Dimension (Breite x Höhe) |
 | --- | --- | --- |
-| 16:9 |Klein |640 x 416 px |
+| 16:9 |Small |640 x 416 px |
 | 16:9 |Mittel |800 x 506 px |
-| 16:9 |Groß |960 x 596 px |
-| 4:3 |Klein |640 x 536 px |
+| 16:9 |Large |960 x 596 px |
+| 4:3 |Small |640 x 536 px |
 | 4:3 |Mittel |800 x 656 px |
-| 4:3 |Groß |960 x 776 px |
+| 4:3 |Large |960 x 776 px |
 
 ## <a name="manage-embed-codes"></a>Einbindungscodes verwalten
 
@@ -141,9 +145,17 @@ Benutzerdefinierte visuelle Elemente werden von **Im Web veröffentlichen**unter
 
 ## <a name="tenant-setting"></a>Mandanteneinstellung
 
-Power BI-Administratoren können die Funktion **Im Web veröffentlichen** aktivieren oder deaktivieren. Sie können außerdem den Zugriff auf bestimmte Gruppen einschränken, was Ihre Möglichkeit zum Erstellen eines Einbindungscodes beeinträchtigen kann.
+Bei der Einstellung **Im Web veröffentlichen** gibt es mehrere Optionen dafür, welche Benutzer Einbindungscodes erstellen können.
 
-|Feature |Für die gesamte Organisation aktiviert |Für die gesamte Organisation deaktiviert |Bestimmte Sicherheitsgruppen   |
+![Einstellung „Im Web veröffentlichen“](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
+
+Sie werden dazu aufgefordert, sich zum Erstellen eines Einbindungscodes an einen Power BI-Administrator zu wenden, wenn bei der Option **Funktionsweise von Einbindungscodes auswählen** **Nur vorhandene Einbindungscodes zulassen** und für die Einstellung **Im Web veröffentlichen** **Aktiviert** ausgewählt ist.
+
+![„Im Web veröffentlichen“-Aufforderung](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+
+Power BI-Administratoren können die Funktion **Im Web veröffentlichen** aktivieren oder deaktivieren. Sie können außerdem den Zugriff auf bestimmte Gruppen einschränken, was Ihre Möglichkeit zum Erstellen eines Einbindungscodes beeinträchtigen kann. Ihnen werden basierend auf der jeweiligen Einstellung **Im Web veröffentlichen** unterschiedliche Optionen in der Benutzeroberfläche angezeigt.
+
+|Feature |Für die gesamte Organisation aktiviert |Für die gesamte Organisation deaktiviert |Sicherheitsgruppen angeben   |
 |---------|---------|---------|---------|
 |**Im Web veröffentlichen** im Menü **Datei** des Berichts|Für alle aktiviert|Nicht für alle sichtbar|Nur für autorisierte Benutzer oder Gruppen sichtbar|
 |**Einbindungscodes verwalten** unter **Einstellungen**|Für alle aktiviert|Für alle aktiviert|Für alle aktiviert<br><br>Option * **Löschen** nur für autorisierte Benutzer oder Gruppen<br>* **Codes abrufen** für alle aktiviert|
@@ -151,6 +163,9 @@ Power BI-Administratoren können die Funktion **Im Web veröffentlichen** aktivi
 |Vorhandene veröffentlichte Berichte|Alle aktiviert|Alle deaktiviert|Berichte werden weiterhin für alle gerendert.|
 
 ## <a name="understanding-the-embed-code-status-column"></a>Funktionsweise der Einbindungscode-Statusspalte
+
+>[!Note]
+>Sie sollten die von Ihnen veröffentlichten Einbindungscodes regelmäßig überprüfen und die Codes, die nicht mehr öffentlich verfügbar sein müssen, entfernen. 
 
 Die Seite **Einbindungscodes verwalten** beinhaltet eine Statusspalte. Standardmäßig sind Einbindungscodes **aktiv**, sie können aber auch einen der unten aufgelisteten Status aufweisen.
 
@@ -178,7 +193,7 @@ Sie müssen ein Microsoft Power BI-Benutzer sein, um **Im Web veröffentlichen**
 
 Wenn Sie mithilfe von **Im Web veröffentlichen**einen Einbindungscode erstellen, wird der Bericht für Internetbenutzer sichtbar gemacht. Er ist öffentlich verfügbar, daher können Sie davon ausgehen, dass Leser den Bericht in Zukunft einfach über soziale Medien teilen. Wenn Benutzer den Bericht anzeigen, entweder indem sie die direkte öffentliche URL öffnen oder den Bericht auf einer Webseite oder in einem Blog eingebettet anzeigen, speichert Power BI die Berichtsdefinition und die Ergebnisse der zum Anzeigen des Berichts erforderlichen Abfragen zwischen. Dadurch wird sichergestellt, dass Tausende Benutzer den Bericht gleichzeitig anzeigen können, ohne dass die Leistung beeinträchtigt wird.
 
-Der Cache hat einen langen Lebenszyklus. Wenn Sie die Berichtsdefinition updaten (etwa, indem Sie den Ansichtsmodus ändern) oder die Berichtsdaten aktualisieren, kann es daher ungefähr eine Stunde dauern, ehe die Änderungen in der von Ihren Benutzern angezeigten Version des Berichts angezeigt werden. Es wird daher empfohlen, dass Sie Ihre Arbeit rechtzeitig vorab bereitstellen und den Einbindungscode für **Im Web veröffentlichen** erst erstellen, wenn Sie mit den Einstellungen zufrieden sind.
+Der Cache hat einen langen Lebenszyklus. Wenn Sie die Berichtsdefinition aktualisieren (etwa, indem Sie den Ansichtsmodus ändern) oder die Berichtsdaten, kann es daher ungefähr eine Stunde dauern, ehe die Änderungen in der Ihren Benutzern angezeigten Version des Berichts angezeigt werden. Es wird daher empfohlen, dass Sie Ihre Arbeit rechtzeitig vorab bereitstellen und den Einbindungscode für **Im Web veröffentlichen** erst erstellen, wenn Sie mit den Einstellungen zufrieden sind.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

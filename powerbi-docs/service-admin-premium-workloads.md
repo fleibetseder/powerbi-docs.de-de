@@ -9,16 +9,16 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/14/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 7d94c5d3531576cd36688591b55aaf4a49de51aa
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 924be90a8598c561a12ed87872bdfbd4681831c8
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831302"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889372"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurieren von Workloads in einer Premium-Kapazität
 
-In diesem Artikel erfahren Sie, wie Sie Workloads für Power BI Premium-Kapazitäten aktivieren und konfigurieren. Kapazitäten unterstützen standardmäßig nur die Workload für die Ausführung von Power BI-Abfragen. Sie können auch zusätzliche Workloads für **[KI (Cognitive Services)](service-cognitive-services.md)** , **[Dataflows](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)** und **[Paginierte Berichte](paginated-reports-save-to-power-bi-service.md)** aktivieren und konfigurieren.
+In diesem Artikel erfahren Sie, wie Sie Workloads für Power BI Premium-Kapazitäten aktivieren und konfigurieren. Kapazitäten unterstützen standardmäßig nur die Workload für die Ausführung von Power BI-Abfragen. Sie können auch zusätzliche Workloads für **[KI (Cognitive Services)](service-cognitive-services.md)**, **[Dataflows](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)** und **[Paginierte Berichte](paginated-reports-save-to-power-bi-service.md)** aktivieren und konfigurieren.
 
 ## <a name="default-memory-settings"></a>Standardeinstellungen für den Arbeitsspeicher
 
@@ -28,18 +28,18 @@ Abfrageworkloads sind für Ressourcen optimiert und durch Ressourcen beschränkt
 
 |                     | EM2                      | EM3                       | P1                      | P2                       | P3                       |
 |---------------------|--------------------------|--------------------------|-------------------------|--------------------------|--------------------------|
-| KI | N/V | N/V | 20 % Standard; mindestens 20 % | 20 % Standard, mindestens 10 % | 20 % Standard, mindestens 5 % |
-| Dataflows | N/V |20% Standard; mindestens 12%  | 20 % Standard, mindestens 5 %  | 20% Standard; mindestens 3% | 20 % Standard, mindestens 2 %  |
-| Paginierte Berichte | N/V |N/V | 20 % Standard, mindestens 10 % | 20 % Standard, mindestens 5 % | 20 % Standard, mindestens 2,5 % |
+| KI | – | – | 20 % Standard; mindestens 20 % | 20 % Standard, mindestens 10 % | 20 % Standard, mindestens 5 % |
+| Dataflows | – |20% Standard; mindestens 12%  | 20 % Standard, mindestens 5 %  | 20% Standard; mindestens 3% | 20 % Standard, mindestens 2 %  |
+| Paginierte Berichte | – |– | 20 % Standard, mindestens 10 % | 20 % Standard, mindestens 5 % | 20 % Standard, mindestens 2,5 % |
 | | | | | | |
 
 ### <a name="microsoft-azure-skus-for-platform-as-a-service-paas-scenarios"></a>Microsoft Azure-SKUs für Plattform-as-a-Service-Szenarios (PaaS)
 
 |                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
 |-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
-| KI | N/V                      | 20 % Standard; mindestens 100 %                     | 20 % Standard; mindestens 50 %                     | 20 % Standard; mindestens 20 % | 20 % Standard, mindestens 10 % | 20 % Standard, mindestens 5 % |
+| KI | –                      | 20 % Standard; mindestens 100 %                     | 20 % Standard; mindestens 50 %                     | 20 % Standard; mindestens 20 % | 20 % Standard, mindestens 10 % | 20 % Standard, mindestens 5 % |
 | Dataflows         | 40% Standard; mindestens 40% | 24% Standard; mindestens 24% | 20% Standard; mindestens 12% | 20 % Standard, mindestens 5 %  | 20% Standard; mindestens 3% | 20 % Standard, mindestens 2 %   |
-| Paginierte Berichte | N/V                      | N/V                      | N/V                     | 20 % Standard, mindestens 10 % | 20 % Standard, mindestens 5 % | 20 % Standard, mindestens 2,5 % |
+| Paginierte Berichte | –                      | –                      | –                     | 20 % Standard, mindestens 10 % | 20 % Standard, mindestens 5 % | 20 % Standard, mindestens 2,5 % |
 | | | | | | |
 
 ## <a name="workload-settings"></a>Workloadeinstellungen
@@ -67,7 +67,7 @@ Die Datasetworkload ist standardmäßig aktiviert und kann nicht deaktiviert wer
 | **Max Intermediate Row Set Count** (Maximale Anzahl von Zwischenrowsets) | Die maximale Anzahl von Zwischenzeilen, die von DirectQuery zurückgegeben werden. Der Standardwert ist 1.000.000, und der zulässige Bereich liegt zwischen 100.000 und 2.147.483.647. |
 | **Maximale Größe für Offlinedataset (GB)** | Die maximale Größe des Offlinedatasets im Arbeitsspeicher. Dies ist die komprimierte Größe auf dem Datenträger. Der Standardwert wird durch die SKU festgelegt, und der zulässige Bereich liegt zwischen 0,1 und 10 GB. |
 | **Max Result Row Set Count** (Maximale Anzahl von Ergebnisrowsets) | Die maximale Anzahl von Zeilen, die in einer DAX-Abfrage zurückgegeben werden. Der Standardwert ist -1 (keine Grenze), und der zulässige Bereich liegt zwischen 100000 und 2147483647. |
-| **Query Memory Limit (%)** (Arbeitsspeicherlimit für Abfragen (%)) | Der Prozentsatz des maximal verfügbaren Arbeitsspeichers, der für temporäre Ergebnisse in einer Abfrage oder einem DAX-Measure verwendet werden kann. |
+| **Query Memory Limit (%)** (Arbeitsspeicherlimit für Abfragen (%)) | Der Prozentsatz des maximal verfügbaren Arbeitsspeichers in der Workload, der zum Ausführen einer MDX- oder DAX-Abfrage verwendet werden kann. |
 | **Query Timeout (seconds)** (Abfragetimeout (Sekunden)) | Die maximale Zeitspanne bis zum Timeout einer Abfrage. Der Standardwert lautet 3.600 Sekunden (1 Stunde). Bei einem Wert von 0 (null) tritt kein Timeout für Abfragen auf. |
 | **Automatische Seitenaktualisierung (Vorschau)** | Ein-/Ausschalten, um für Premium-Arbeitsbereiche automatische Seitenaktualisierung zu ermöglichen. |
 | **Mindestintervall für Aktualisierung** | Wenn die automatische Seitenaktualisierung aktiviert ist, das minimal zulässige Intervall für die Seitenaktualisierung. Der Standardwert beträgt fünf Minuten, und der zulässige Mindestwert ist eine Sekunde. |
@@ -99,11 +99,17 @@ Beachten Sie, dass sich diese Einstellung nur auf DAX-Abfragen auswirkt, währen
 
 Verwenden Sie diese Einstellung, um die Auswirkungen ressourcenintensiver oder schlecht konzipierter Berichte einzuschränken. Einige Abfragen und Berechnungen können zu Zwischenergebnissen führen, die viel Arbeitsspeicher für die Kapazität verwenden. Dies kann dazu führen, dass andere Abfragen sehr langsam ausgeführt werden, andere Datasets aus der Kapazität entfernt werden und bei anderen Benutzern der Kapazität zum Fehler „Nicht genügend Speicher“ führt.
 
-Diese Einstellung gilt für die Datenaktualisierung und das Rendern von Berichten. Die Datenaktualisierung führt sowohl die Aktualisierung der Daten aus der Datenquelle als auch die Aktualisierung einer Abfrage aus, es sei denn, die Einstellung „Abfrage aktualisieren“ ist deaktiviert. Wenn die Einstellung „Abfrage aktualisieren“ nicht deaktiviert ist, gilt dieses Speicherlimit auch für diese Abfragen. Alle fehlgeschlagenen Abfragen bewirken, dass der Status der geplanten Aktualisierung als Fehler gemeldet wird, obwohl die Datenaktualisierung erfolgreich war.
+Diese Einstellung gilt für alle DAX- und MDX-Abfragen, die durch Power BI-Berichte, „In Excel analysieren“-Berichte und andere Tools, zu denen über den XMLA-Endpunkt eine Verbindung hergestellt werden kann, ausgeführt werden.
+
+Beachten Sie, dass bei Datenaktualisierungsvorgängen beim Aktualisieren der Dashboardkacheln und visuellen Caches nach Aktualisierung der Daten im Dataset möglicherweise ebenfalls DAX-Abfragen ausführt werden. Aufgrund dieser Einstellung kommt es bei solchen Abfragen möglicherweise zu Fehlern, was dazu führen kann, dass der Datenaktualisierungsvorgang als fehlerhaft angezeigt wird, obwohl die Daten im Dataset erfolgreich aktualisiert wurden.
 
 #### <a name="query-timeout"></a>Abfragetimeout
 
-Verwenden Sie diese Einstellung, um eine bessere Kontrolle über Abfragen mit langer Ausführungsdauer zu gewährleisten, die dazu führen können, dass Berichte für Benutzer langsam geladen werden. Diese Einstellung gilt für die Datenaktualisierung und das Rendern von Berichten. Die Datenaktualisierung führt sowohl die Aktualisierung der Daten aus der Datenquelle als auch die Aktualisierung einer Abfrage aus, es sei denn, die Einstellung „Abfrage aktualisieren“ ist deaktiviert. Wenn die Einstellung „Abfrage aktualisieren“ nicht deaktiviert ist, gilt dieses Zeitlimit auch für diese Abfragen.
+Verwenden Sie diese Einstellung, um eine bessere Kontrolle über Abfragen mit langer Ausführungsdauer zu gewährleisten, die dazu führen können, dass Berichte für Benutzer langsam geladen werden.
+
+Diese Einstellung gilt für alle DAX- und MDX-Abfragen, die durch Power BI-Berichte, „In Excel analysieren“-Berichte und andere Tools, zu denen über den XMLA-Endpunkt eine Verbindung hergestellt werden kann, ausgeführt werden.
+
+Beachten Sie, dass bei Datenaktualisierungsvorgängen beim Aktualisieren der Dashboardkacheln und visuellen Caches nach Aktualisierung der Daten im Dataset möglicherweise ebenfalls DAX-Abfragen ausführt werden. Aufgrund dieser Einstellung kommt es bei solchen Abfragen möglicherweise zu Fehlern, was dazu führen kann, dass der Datenaktualisierungsvorgang als fehlerhaft angezeigt wird, obwohl die Daten im Dataset erfolgreich aktualisiert wurden.
 
 Diese Einstellung gilt für eine einzelne Abfrage und nicht für die Dauer, die benötigt wird, um alle Abfragen auszuführen, die mit dem Aktualisieren eines Datasets oder eines Berichts verknüpft sind. Sehen Sie sich das folgende Beispiel an:
 
@@ -176,11 +182,11 @@ Maximieren Sie die Kapazität der verfügbaren Ressourcen, indem Sie Workloads n
 
 1. Wählen Sie unter **Kapazitätseinstellungen** > **PREMIUM-KAPAZITÄTEN** eine Kapazität aus.
 
-1. Erweitern Sie unter **Weitere Optionen** **Workloads**.
+1. Erweitern Sie unter **Weitere Optionen****Workloads**.
 
 1. Aktivieren Sie mindestens eine Workload, und legen Sie einen Wert für **Max. Arbeitsspeicher** und die anderen Einstellungen fest.
 
-1. Klicken Sie auf **Übernehmen**.
+1. Wählen Sie **Übernehmen**.
 
 ### <a name="rest-api"></a>REST-API
 
@@ -197,4 +203,4 @@ Die [Power BI Premium-Kapazitätsmetriken-App](service-admin-premium-monitor-c
 [Was sind paginierte Berichte in Power BI Premium?](paginated-reports-report-builder-power-bi.md)   
 [Automatische Seitenaktualisierung in Power BI Desktop (Vorschau)](desktop-automatic-page-refresh.md)
 
-Weitere Fragen? [Fragen an die Power BI-Community](https://community.powerbi.com/)
+Haben Sie dazu Fragen? [Fragen an die Power BI-Community](https://community.powerbi.com/)

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/14/2020
+ms.date: 01/30/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fa097489fcf81ec1bb1df2162465e6413bd116c0
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: 2e4ab92d5d1adce8659cdb971c5061a0f133b38f
+ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76040414"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "76895476"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Erstellen von Matrixvisualisierungen in Power BI
 
@@ -41,25 +41,24 @@ In diesem Beispiel zeigt jede Zeile im Matrixvisual auf der rechten Seite den *B
 
 Wenn Sie sich die Summen und Teilergebnisse ansehen, denken Sie daran, dass diese Werte auf den zugrunde liegenden Daten basieren. Sie basieren nicht allein auf den sichtbaren Werten.
 
-<!-- use Nov blog post video
 
-## Expanding and collapsing row headers
-There are two ways you can expand row headers. The first is through the right-click menu. You’ll see options to expand the specific row header you clicked on, the entire level or everything down to the very last level of the hierarchy. You have similar options for collapsing row headers as well.
+## <a name="expanding-and-collapsing-row-headers"></a>Erweitern und reduzieren von Zeilenheadern
+Sie haben zwei Möglichkeiten, Zeilenheader zu erweitern. Eine davon ist das Kontextmenü, erreichbar über die rechte Maustaste. Sie können den aktuell ausgewählten Zeilenheader, die gesamte Ebene oder die vollständige Hierarchie erweitern. Beim Reduzieren von Zeilenheadern haben Sie ähnliche Möglichkeiten.
 
 ![](media/desktop-matrix-visual/power-bi-expand1.png)
 
-You can also add +/- buttons to the row headers through the formatting pane under the row headers card. By default, the icons will match the formatting of the row header, but you can customize the icons’ color and size separately if you want. 
-Once the icons are turned on, they work similarly to the icons from PivotTables in Excel.
+Sie können den Zeilenheadern auch +/-Schaltflächen hinzufügen. Diese Option finden Sie im Bereich „Formatierung“ unter der Karte **Zeilenheader**. Standardmäßig wird für die Symbole die Formatierung der Zeilenheader übernommen, Sie können Farbe und Größe jedoch auch separat anpassen.
+
+Sobald die Symbole aktiviert sind, funktionieren sie ähnlich wie PivotTable-Symbole in Excel.
 
 ![](media/desktop-matrix-visual/power-bi-expand2.png)
 
-The expansion state of the matrix will save with your report. It can be pinned to dashboards as well, but consumers will need to open up the report to change the state. Conditional formatting will only apply to the inner most visible level of the hierarchy. Note that this expand/collapse experience is not currently supported when connecting to AS servers older than 2016 or MD servers.
+Der Erweiterungsstatus der Matrix wird zusammen mit dem Bericht gespeichert. Eine Matrix kann erweitert oder reduziert an ein Dashboard angeheftet werden. Auch wenn diese Dashboardkachel ausgewählt wird und der Bericht sich öffnet, kann der Erweiterungsstatus weiterhin im Bericht geändert werden. 
 
 ![](media/desktop-matrix-visual/power-bi-expand3.png)
 
-Watch the following video to learn more about expand/collapse in the matrix:
 
--->
+
 ## <a name="using-drill-down-with-the-matrix-visual"></a>Verwenden von Drilldown mit dem Matrixvisual
 Mit dem Matrixvisual können Sie viele interessante Drilldownaktionen durchführen, die zuvor nicht verfügbar waren. Hierzu zählt die Möglichkeit des Drilldowns auf Zeilen, Spalten und sogar einzelne Abschnitte und Zellen. Im Folgenden befassen Sie sich mit der Funktionsweise.
 
@@ -183,6 +182,16 @@ Vielleicht möchten Sie den Inhalt von Matrix oder Tabelle in anderen Anwendunge
 * Bei der Kopie handelt es sich um eine weitere Matrixvisualisierung, die jedoch nur Ihre kopierten Daten enthält.
 
     ![Screenshot eines Beispiels zum Kopieren des Visuals](media/desktop-matrix-visual/power-bi-copy-visual-example.png)
+
+## <a name="setting-a-matrix-value-as-a-custom-url"></a>Festlegen eines Matrixwerts als benutzerdefinierte URL
+
+Wenn Sie über eine Spalte oder ein Measure verfügen, das Website-URLs enthält, können Sie diese URLs mithilfe der bedingten Formatierung als aktive Links auf Felder anwenden. Sie finden diese Option im Bereich „Formatierung“ unter der Karte **Bedingte Formatierung**.
+
+![Filterkarte, die anzeigt, welche Zeilen ausgewählt werden](media/desktop-matrix-visual/power-bi-web-url.png)
+
+Aktivieren Sie die Option **Web-URL**, und wählen Sie das Feld aus, das als URL für die Spalte verwendet werden soll. Die Werte in dem Feld bzw. der Spalte, für die Sie die bedingte Formatierung konfiguriert haben, werden nun zu aktiven Links. Wenn Sie den Mauszeiger auf einen der Links bewegen, können Sie ihn anklicken und gelangen so zur verlinkten Seite. 
+
+Weitere Informationen finden Sie unter [Verwenden bedingter Formatierungen in Tabellen](../desktop-conditional-table-formatting.md).
 
 ## <a name="shading-and-font-colors-with-matrix-visuals"></a>Schattierung und Schriftfarben für Matrixvisuals
 Mit dem Matrixvisual können Sie bedingte Formatierung (Farben, Schattierung und Datenbalken) auf den Hintergrund von Zellen in der Matrix und bedingte Formatierung auf den Text und die Werte selbst anwenden.

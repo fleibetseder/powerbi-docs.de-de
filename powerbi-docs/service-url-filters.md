@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/23/2019
+ms.date: 01/30/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: 2d564b22ecf02c0d8593ed5676e46f2eb4168964
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.openlocfilehash: e2840d2695b70867b73c873aea7a06acf26bcc3e
+ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75836721"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76913549"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtern eines Berichts mithilfe von Abfragezeichenfolgenparametern in der URL
 
@@ -33,7 +33,7 @@ Auch beim Erstellen einer erweiterten Power BI-Lösung können Abfragezeichenfol
 
 Mit Parametern können Sie den Bericht nach mindestens einem Wert filtern, auch wenn dieser Wert Leerzeichen oder Sonderzeichen enthält. Die grundlegende Syntax ist recht einfach: Beginnen Sie mit der Berichts-URL, und fügen Sie dann ein Fragezeichen und Ihre Filtersyntax hinzu.
 
-URL?filter=***Tabelle***/***Feld*** eq '***Wert***'
+*URL*?filter=*Tabelle*/*Feld* eq '*Wert*'
 
 ![URL mit Filter](media/service-url-filters/power-bi-filter-urls7b.png)
 
@@ -84,6 +84,18 @@ Der Bericht wird nach North Carolina gefiltert, und alle Visualisierungen auf de
 
 ![Bericht gefiltert nach North Carolina](media/service-url-filters/power-bi-report4.png)
 
+## <a name="filter-on-more-than-one-value-in-a-field"></a>In einem Feld nach mehr als einem Wert filtern
+
+Verwenden Sie den Operator **in** anstelle von **and**, um im selben Feld nach mehr als einem Wert zu filtern. Die Syntax ist:
+
+*URL*?filter=*Tabelle*/*Feld* **in** ('*Wert1*', '*Wert2*')
+
+Für das Beispiel oben bedeutet das: Wenn Sie den Bericht filtern möchten, sodass nur Daten für Filialen in „NC“ (North Carolina) oder „TN“ (Tennessee) angezeigt werden, fügen Sie Folgendes an die URL an:
+
+?filter=Store/Territory in ('NC', 'TN')
+
+In der Tabelle [Operatoren](#operators) weiter unten im Artikel finden Sie eine Liste mit weiteren nützlichen Operatoren.
+
 ## <a name="filter-on-multiple-fields"></a>Filtern nach mehreren Feldern
 
 Sie können auch nach mehreren Felder filtern, indem Sie weitere Parameter zu Ihrer URL hinzufügen. Hier nochmals der ursprüngliche Filterparameter.
@@ -92,28 +104,26 @@ Sie können auch nach mehreren Felder filtern, indem Sie weitere Parameter zu Ih
 ?filter=Store/Territory eq 'NC'
 ```
 
-Um nach weiteren Feldern zu filtern, fügen Sie ein **and** und ein weiteres Feld im selben Format wie oben hinzu. Es folgt ein Beispiel.
+Um nach weiteren Feldern zu filtern, fügen Sie ein **and** und ein weiteres Feld im selben Format wie oben hinzu. Beispiel:
 
 ```
 ?filter=Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
 ```
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/0sDGKxOaC8w?showinfo=0" frameborder="0" allowfullscreen></iframe>
-
 ## <a name="operators"></a>Operatoren
 
 Power BI unterstützt außer **and** noch viele weitere Operatoren. In der folgenden Tabelle werden diese Operatoren zusammen mit dem Inhaltstyp, den sie unterstützen, aufgeführt:
 
-|Operator  | Definition | Zeichenfolge  | Zahl | Datum |  Beispiel|
+|Operator  | Definition | Zeichenfolge  | number | Date |  Beispiel|
 |---------|---------|---------|---------|---------|---------|
-|**and**     | und |  Ja      | Ja |  Ja|  product/price le 200 and price gt 3.5 |
-|**eq**     | Ist gleich |  Ja      | Ja   |  Ja       | Address/City eq 'Redmond' |
-|**ne**     | Ungleich |   Ja      | Ja  | Ja        |  Address/City ne 'London' |
-|**ge**     |  Größer als oder gleich       | Nein | Ja |Ja |  product/price ge 10
-|**gt**     | Größer als        |Nein | Ja | Ja  | product/price gt 20
-|**le**     |   Kleiner als oder gleich      | Nein | Ja | Ja  | product/price le 100
-|**lt**     |  Kleiner als       | Nein | Ja | Ja |  product/price lt 20
-|**in\*\***     |  Einschließlich       | Ja | Ja |  Ja | Student/Age in (27, 29)
+|**and**     | and |  ja      | ja |  ja|  product/price le 200 and price gt 3.5 |
+|**eq**     | equals |  ja      | ja   |  ja       | Address/City eq 'Redmond' |
+|**ne**     | Ungleich |   ja      | ja  | ja        |  Address/City ne 'London' |
+|**ge**     |  Größer als oder gleich       | nein | ja |ja |  product/price ge 10
+|**gt**     | Größer als        |nein | ja | ja  | product/price gt 20
+|**le**     |   Kleiner als oder gleich      | nein | ja | ja  | product/price le 100
+|**lt**     |  Kleiner als       | nein | ja | ja |  product/price lt 20
+|**in\*\***     |  Einschließlich       | ja | ja |  ja | Student/Age in (27, 29)
 
 
 \*\* Wenn Sie **in** verwenden, können die Werte auf der rechten Seite von **in** einer durch Kommas getrennten Liste entsprechen, die in Klammern eingeschlossen wird, oder einem einzelnen Ausdruck, der eine Sammlung zurückgibt.
@@ -136,7 +146,7 @@ Power BI unterstützt OData V3 and V4 für **Date**- und **DateTimeOffset**-Date
   
 Datumsangaben werden im EDM-Format (2019-02-12T00:00:00) dargestellt: Wenn Sie also ein Datum im Format YYYY-MM-DD angeben, interpretiert Power BI dieses als YYYY-MM-DDT00:00:00. Stellen Sie sicher, dass Sie Monate und Tage mit zwei Ziffern angeben, also MM und DD.
 
-Warum ist diese Unterscheidung wichtig? Angenommen, Sie erstellen den Abfragezeichenfolgenparameter **Table/Date gt '2018-08-03'** .  Ist der 3. August 2018 in den Ergebnissen enthalten oder wird mit dem 4. August 2018 begonnen? Power BI übersetzt die Abfrage in **Table/Date gt '2018-08-03T00:00:00'** . Daher enthalten die Ergebnisse alle Datumsangaben, die einen Zeitabschnitt ungleich 0 aufweisen, da diese Datumsangaben größer als **'2018-08-03T00:00:00'** sind.
+Warum ist diese Unterscheidung wichtig? Angenommen, Sie erstellen den Abfragezeichenfolgenparameter **Table/Date gt '2018-08-03'**.  Ist der 3. August 2018 in den Ergebnissen enthalten oder wird mit dem 4. August 2018 begonnen? Power BI übersetzt die Abfrage in **Table/Date gt '2018-08-03T00:00:00'**. Daher enthalten die Ergebnisse alle Datumsangaben, die einen Zeitabschnitt ungleich 0 aufweisen, da diese Datumsangaben größer als **'2018-08-03T00:00:00'** sind.
 
 Es gibt weitere Unterschiede zwischen V3 und V4. OData V3 unterstützt keine Datumsangaben, sondern nur DateTime-Werte. Wenn Sie also das V3-Format verwenden, müssen Sie es mit dem vollständigen DateTime-Wert qualifizieren. Datumsliterale wie „datetime'2019-05-20'“ werden in der V3-Notation nicht unterstützt. Sie können sie jedoch in der V4-Notation einfach als „2019-05-20“ schreiben. Nachfolgend sehen Sie zwei äquivalente Filterabfragen in V3 und V4:
 
@@ -146,7 +156,7 @@ Es gibt weitere Unterschiede zwischen V3 und V4. OData V3 unterstützt keine Dat
 
 ## <a name="special-characters-in-url-filters"></a>Sonderzeichen in URL-Filtern
 
-Für Sonderzeichen und Leerzeichen sind zusätzliche Formatierungen erforderlich. Wenn Ihre Abfrage Leerzeichen, Bindestriche oder Nicht-ASCII-Zeichen enthält, stellen Sie diesen Sonderzeichen eine *Escapesequenz* voran, die mit einem Unterstrich und einem X ( **_x**) beginnt, gefolgt vom 4-stelligen **Unicode** und einem weiteren Unterstrich. Wenn der Unicode weniger als vier Zeichen enthält, müssen Sie diesen mit Nullen ergänzen. Hier sehen Sie einige Beispiele:
+Für Sonderzeichen und Leerzeichen sind zusätzliche Formatierungen erforderlich. Wenn Ihre Abfrage Leerzeichen, Bindestriche oder Nicht-ASCII-Zeichen enthält, stellen Sie diesen Sonderzeichen eine *Escapesequenz* voran, die mit einem Unterstrich und einem X (**_x**) beginnt, gefolgt vom 4-stelligen **Unicode** und einem weiteren Unterstrich. Wenn der Unicode weniger als vier Zeichen enthält, müssen Sie diesen mit Nullen ergänzen. Hier einige Beispiele.
 
 |Bezeichner  |Unicode  | Codierung für Power BI  |
 |---------|---------|---------|
@@ -194,4 +204,4 @@ Im Zusammenhang mit Abfragezeichenfolgenparametern müssen ein paar Dinge beacht
 [Anheften einer Visualisierung an ein Dashboard](service-dashboard-pin-tile-from-report.md)  
 [Registrieren Sie sich für eine kostenlose Testversion](https://powerbi.microsoft.com/get-started/)
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
+Haben Sie dazu Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

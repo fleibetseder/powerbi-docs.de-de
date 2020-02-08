@@ -11,10 +11,10 @@ ms.date: 01/29/2019
 ms.author: preetikr
 LocalizationGroup: Connect to data
 ms.openlocfilehash: ef8e874c1f1a47d65845b87dccd441746651a68b
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74999788"
 ---
 # <a name="connect-to-the-microsoft-graph-security-api-in-power-bi-desktop"></a>Herstellen einer Verbindung mit der Microsoft Graph-Sicherheits-API in Power BI Desktop
@@ -74,7 +74,7 @@ Gehen Sie wie folgt vor, um den Connector zu verwenden:
     
 9. Wenn Sie eine erweiterte Abfrage der Microsoft Graph-Sicherheits-API ausführen möchten, wählen Sie die Funktion **Specify custom Microsoft Graph Security URL to filter results** (Angeben einer benutzerdefinierten Microsoft Graph-Sicherheits-URL zum Filtern von Ergebnissen) aus. Verwenden Sie diese Funktion, um eine [OData.Feed](https://docs.microsoft.com/power-bi/desktop-connect-odata)-Abfrage mit den erforderlichen Berechtigungen an die Microsoft Graph-Sicherheits-API zu senden.
 
-   Im folgenden Beispiel wird der *serviceUri* `https://graph.microsoft.com/v1.0/security/alerts?$filter=Severity eq 'High'` verwendet. Unter [OData-Systemabfrageoptionen](https://docs.microsoft.com/graph/query-parameters) finden Sie Informationen dazu, wie Sie Abfragen zum Filtern, Sortieren oder Abrufen der aktuellen Ergebnisse erstellen.
+   Im folgenden Beispiel wird der `https://graph.microsoft.com/v1.0/security/alerts?$filter=Severity eq 'High'` *serviceUri* verwendet. Unter [OData-Systemabfrageoptionen](https://docs.microsoft.com/graph/query-parameters) finden Sie Informationen dazu, wie Sie Abfragen zum Filtern, Sortieren oder Abrufen der aktuellen Ergebnisse erstellen.
 
    ![OData.Feed-Beispiel](media/desktop-connect-graph-security/ODataFeed.PNG)
     

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/18/2019
+ms.date: 01/29/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: dc8dad0417ac2ed6498fb7612900ebdbb0ce2a18
-ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
+ms.openlocfilehash: 512ef5058fdb586a893c5ff9406abf6902ccc4e2
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75303879"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76888498"
 ---
 # <a name="how-visuals-cross-filter-each-other-in-a-power-bi-report"></a>Gegenseitige Kreuzfilterung von Visuals in einem Power BI-Bericht
 Eines der herausragenden Features von Power BI ist die Art, auf die alle visuellen Elemente auf einer Berichtsseite miteinander verbunden sind. Wenn Sie in einem der visuellen Elemente einen Datenpunkt auswählen, ändern sich alle anderen visuellen Elemente auf der Seite, die diese Daten enthalten, auf Grundlage dieser Auswahl. 
@@ -45,7 +45,8 @@ Sehen Sie sich die Berichtsseiten unten an. So können diese Benennungen definie
 
 
 ## <a name="considerations-and-troubleshooting"></a>Zu beachtende Aspekte und Problembehandlung
-- Wenn Ihr Bericht ein Visual enthält, das [Drillvorgänge](end-user-drill.md) standardmäßig unterstützt, haben Drillvorgänge an einem Visual keine Auswirkungen auf die anderen Visuals der Berichtseite.     
+- Wenn Ihr Bericht ein Visual enthält, das [Drillvorgänge](end-user-drill.md) standardmäßig unterstützt, haben Drillvorgänge an einem Visual keine Auswirkungen auf die anderen Visuals der Berichtseite. Allerdings kann der *Designer* des Berichts dieses Verhalten ändern. Überprüfen Sie daher die Visuals, für die ein Drillvorgang ausgeführt werden kann, um zu sehen, ob der *Designer* des Berichts **Drillfilter anderer Visuals** aktiviert hat.
+    
 - Filter auf Visualebene werden beibehalten, wenn andere Visuals auf der Berichtsseite kreuzgefiltert oder übergreifend hervorgehoben werden. Wenn Sie oder der Berichtersteller Filter auf Visualebene für VisualA angewendet haben, und Sie verwenden VisualA zur Interaktion mit VisualB, werden Filter auf Visualebene, die für VisualA gelten, auch auf VisualB angewendet.
 
     ![Berichtsseite, nachdem im Ringdiagramm das Segment „Moderation“ ausgewählt wurde](media/end-user-interactions/power-bi-visual-filters.png)

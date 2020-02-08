@@ -10,10 +10,10 @@ ms.date: 09/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 3ec372a51177e5979cdfbca8408e11801aefb414
-ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74791579"
 ---
 # <a name="use-custom-format-strings-in-power-bi-desktop"></a>Verwenden benutzerdefinierter Formatzeichenfolgen in Power BI Desktop
@@ -134,7 +134,7 @@ In der folgenden Tabelle sind die Zeichen aufgeführt, mit denen Sie **benutzerd
 
 | **Zeichen** | **Beschreibung** |
 | --- | --- |
-| Keine | Zeigt die Zahl ohne Formatierung an. |
+| Ohne | Zeigt die Zahl ohne Formatierung an. |
 | (**0**) | Ziffernplatzhalter. Zeigt eine Ziffer oder eine Null (0) an. Wenn der Ausdruck an der Position, an der die 0 in der Formatzeichenfolge steht, eine Ziffer aufweist, wird sie angezeigt. Andernfalls wird an dieser Position eine Null (0) angezeigt. Wenn die Zahl weniger Ziffern hat, als Nullen (auf beiden Seiten des Dezimaltrennzeichens) im Formatausdruck vorhanden sind, werden führende oder nachfolgende Nullen (0) angezeigt. Wenn die Zahl rechts vom Dezimaltrennzeichen mehr Ziffern aufweist, als Nullen (0) rechts vom Dezimaltrennzeichen im Formatausdruck vorhanden sind, wird die Zahl auf so viele Dezimalstellen gerundet, wie Nullen vorhanden sind. Wenn die Zahl links vom Dezimaltrennzeichen mehr Ziffern aufweist, als Nullen (0) links vom Dezimaltrennzeichen im Formatausdruck vorhanden sind, werden die zusätzlichen Ziffern ohne Änderung angezeigt. |
 | ( **#** ) | Ziffernplatzhalter. Zeigt eine Ziffer oder nichts an. Wenn der Ausdruck an der Position, an der „#“ in der Formatzeichenfolge steht, eine Ziffer aufweist, wird sie angezeigt. Andernfalls wird an dieser Position nichts angezeigt. Dieses Symbol funktioniert wie der 0-Ziffernplatzhalter, mit dem Unterschied, dass führende und nachfolgende Nullen (0) angezeigt werden, wenn die Zahl höchstens so viele Ziffern hat, wie #-Zeichen auf beiden Seiten des Dezimaltrennzeichens im Formatausdruck vorhanden sind. |
 | ( **.** ) | Dezimalplatzhalter. In manchen Gebietsschemata wird ein Komma als Dezimaltrennzeichen verwendet. Der Dezimalplatzhalter bestimmt, wie viele Ziffern links und rechts vom Dezimaltrennzeichen angezeigt werden. Wenn der Formatausdruck links von diesem Symbol nur Zahlenzeichen enthält, beginnen Zahlen, die kleiner als 1 sind, mit einem Dezimaltrennzeichen. Verwenden Sie 0 als ersten Ziffernplatzhalter links vom Dezimaltrennzeichen, um eine führende Null (0) mit Bruchzahlen anzuzeigen. Welches Zeichen tatsächlich in der formatierten Ausgabe als Dezimaltrennzeichen verwendet wird, hängt von dem Zahlenformat ab, das Ihr System erkennt. |
@@ -143,7 +143,7 @@ In der folgenden Tabelle sind die Zeichen aufgeführt, mit denen Sie **benutzerd
 | ( **:** ) | Zeittrennzeichen. In manchen Gebietsschemata können andere Zeichen verwendet werden, um das Zeittrennzeichen darzustellen. Das Zeittrennzeichen trennt Stunden, Minuten und Sekunden, wenn Zeitwerte formatiert werden. Welches Zeichen tatsächlich in der formatierten Ausgabe als Zeittrennzeichen verwendet wird, hängt von den Systemeinstellungen ab. |
 | ( **/** ) | Datumstrennzeichen. In manchen Gebietsschemata können andere Zeichen verwendet werden, um das Datumstrennzeichen darzustellen. Das Datumstrennzeichen trennt Tag, Monat und Jahr, wenn Datumswerte formatiert werden. Welches Zeichen tatsächlich in der formatierten Ausgabe als Datumstrennzeichen verwendet wird, hängt von den Systemeinstellungen ab. |
 | (**E- E+ e- e+** ) | Wissenschaftliches Format. Wenn der Formatausdruck mindestens einen Ziffernplatzhalter (**0** oder **#** ) rechts von E-, E+, e- oder e+ enthält, wird die Zahl im wissenschaftlichen Format angezeigt, und E oder e wird zwischen der Zahl und deren Exponent eingefügt. Die Anzahl der Ziffernplatzhalter auf der rechten Seite bestimmt die Anzahl der Ziffern im Exponenten. Verwenden Sie E- oder e-, um ein Minuszeichen neben negativen Exponenten zu platzieren. Verwenden Sie E+ oder e+, um ein Minuszeichen neben negativen Exponenten und ein Pluszeichen neben positiven Exponenten zu platzieren. |
-| **- + $** ( ) | Zeigt ein literales Zeichen an. Um ein anderes Zeichen als eines der aufgelisteten anzuzeigen, stellen Sie ihm einen umgekehrten Schrägstrich voran (\) oder setzen Sie es in doppelte Anführungszeichen (&quot; &quot;). |
+| **- + $** ( ) | Zeigt ein literales Zeichen an. Damit ein anderes Zeichen als eines der aufgelisteten angezeigt wird, stellen Sie ihm einen umgekehrten Schrägstrich voran (\)), oder setzen Sie es in doppelte Anführungszeichen (&quot; &quot;). |
 | (* *\** ) | Das nächste Zeichen in der Formatzeichenfolge wird angezeigt. Um ein Zeichen anzuzeigen, das eine besondere Bedeutung als literales Zeichen hat, stellen Sie ihm einen umgekehrten Schrägstrich (\) voran. Der umgekehrte Schrägstrich selbst wird nicht angezeigt. Die Verwendung eines umgekehrten Schrägstrichs ist identisch mit dem Einschließen des nächsten Zeichens in doppelte Anführungszeichen. Um einen umgekehrten Schrägstrich anzuzeigen, verwenden Sie zwei umgekehrte Schrägstriche (\\). Beispiele für Zeichen, die nicht als literale Zeichen angezeigt werden können, sind die Datums- und Zeitformatierungszeichen (a, c, d, h, m, n, p, q, s, t, w, / und :), die numerischen Formatierungszeichen (#, 0, %, E, e, Komma und Punkt) und die Zeichenfolgen-Formatierungszeichen (@, &amp;, \&lt;, \&gt; und !). |
 | (&quot;ABC&quot;) | Die Zeichenfolge innerhalb der doppelten Anführungszeichen (&quot; &quot;) wird angezeigt. |
 
