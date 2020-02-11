@@ -1,6 +1,6 @@
 ---
 title: Neuerungen in Power BI-Berichtsserver
-description: Lernen Sie die Neuerungen in Power BI-Berichtsserver kennen. Dieser Artikel behandelt die wesentlichen Features und wird aktualisiert, sobald neue Elemente veröffentlicht wurden.
+description: Lernen Sie die Neuerungen in Power BI-Berichtsserver kennen. Dieser Artikel behandelt die wichtigsten Featurebereiche und wird aktualisiert, sobald neue Elemente veröffentlicht werden.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/23/2020
-ms.openlocfilehash: 9b7ea090d7860de9ec4132b070bd1286085cc5f3
-ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
+ms.openlocfilehash: d4e233e55731d77d4136c1b6ef1e341a2d043234
+ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76819558"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77026713"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Neuerungen in Power BI-Berichtsserver
 
@@ -35,7 +35,7 @@ Weitere Informationen finden Sie im Blogbeitrag zum Power BI-Berichtsserver von 
 
 Dieses Release bietet viele neue Features wie die bedingte Formatierung für Schaltflächen, eine optimierte Datenprofilerstellung sowie weitere Formatierungseinstellungen für KPIs und Tabellenvisuals. Im Folgenden werden die Updates zusammengefasst:
 
-**Reporting**
+**Berichterstellung**
 
 - Festlegen eines Tabellenspalten- oder Matrixwerts als benutzerdefinierte URL
 - Formatierungseinstellungen für KPI-Visuals
@@ -45,18 +45,18 @@ Dieses Release bietet viele neue Features wie die bedingte Formatierung für Sch
 
 - Bedingtes Formatieren von Schaltflächen
 - Laden weiterer Analyseerkenntnisse
-- Neue DAX-Funktion: Quarter
+- Neue DAX-Funktion: Quartal
 
 **Datenaufbereitung**
 
 - Optimierte Datenprofilerstellung
 
-**Andere**
+**Sonstiges**
 
 - Neues Dateiformat: .pbids
 - Leistungsverbesserungen für Modellierungsvorgänge
 
-**Reporting**
+**Berichterstellung**
 
 *Festlegen eines Tabellenspalten- oder Matrixwerts als benutzerdefinierte URL*
 
@@ -120,7 +120,7 @@ Diesen Monat führen wir einige bedeutende Verbesserungen an den Funktionen für
 
 In der Vergangenheit konnten Sie bereits im Verteilungsbereich „Spaltenprofile“ verschiedene typspezifische Gruppierungskriterien verwenden. Jetzt können Sie zudem innerhalb der Popups der einzelnen Werte im Verteilungsdiagramm filtern, wenn Gruppierungskriterien angewendet werden. Beispielsweise können Sie im Bereich „Datenprofile“ für eine Date/Datetime-Spalte alle Werte aus einem bestimmten Monat ausschließen.
 
-**Andere**
+**Sonstiges**
 
 *Neues Dateiformat: .pbids*
 
@@ -136,7 +136,7 @@ Die Leistung der Analysis Services-Engine wurde verbessert, um Modellierungsvorg
 
 Das Release von Januar 2020 für den Power BI-Berichtsserver umfasst keine weiteren Neuerungen. Sie können uns gern weiter Feedback geben und für [Features abstimmen, die Sie sich für Power BI wünschen](https://ideas.powerbi.com/forums/265200-power-bi).
 
-### <a name="power-bi-report-server"></a>Power BI-Berichtsserver
+### <a name="power-bi-report-server"></a>Power BI-Berichtsserver
 
 #### <a name="export-to-excel-from-power-bi-reports"></a>Exportieren in Excel aus Power BI-Berichten
 
@@ -160,7 +160,7 @@ Mit dem Azure Active Directory-Anwendungsproxy müssen Sie Ihren eigenen Webanwe
 
 #### <a name="custom-headers"></a>Benutzerdefinierte Header
 
-Diese legen Headerwerte für alle URLs fest, die mit dem angegebenen RegEx-Muster übereinstimmen. Benutzer können den benutzerdefinierten Headerwert durch gültigen XML-Code ersetzen, um Headerwerte für ausgewählte Anforderungs-URLs festzulegen. Administratoren können beliebig viele Header zum XML-Code hinzufügen. Weitere Informationen finden Sie im Artikel **Servereigenschaften (Seite erweitert)** zu Reporting Services im Abschnitt [Benutzerdefinierte Header](https://docs.microsoft.com/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#custom-headers).
+Diese legen Headerwerte für alle URLs fest, die mit dem angegebenen RegEx-Muster übereinstimmen. Benutzer können den benutzerdefinierten Headerwert durch gültigen XML-Code ersetzen, um Headerwerte für ausgewählte Anforderungs-URLs festzulegen. Administratoren können beliebig viele Header zum XML-Code hinzufügen. Weitere Informationen finden Sie im Artikel **Servereigenschaften (Seite erweitert)** zu Reporting Services im Abschnitt [Benutzerdefinierte Header](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#customheaders).
 
 #### <a name="transparent-database-encryption"></a>Transparente Datenbankverschlüsselung
 
@@ -170,7 +170,7 @@ Der Power BI-Berichtsserver unterstützt jetzt Transparent Data Encryption für
 
 Die kürzlich veröffentlichte Version des Berichts-Generators ist vollständig kompatibel mit den Reporting Services-Versionen von 2016, 2017 und 2019. Außerdem ist sie mit allen veröffentlichten und unterstützten Versionen des Power BI-Berichtsservers kompatibel.
 
-## <a name="september-2019"></a>September 2019
+## <a name="september-2019"></a>September 2019
 
 Ausführliche Informationen zu den neuen Features finden Sie im Blogbeitrag zu [Power BI-Berichtsserver vom September 2019](https://powerbi.microsoft.com/blog/power-bi-report-server-september-2019-feature-summary/).
 
@@ -202,7 +202,7 @@ In der folgenden Liste werden alle Features aufgeführt.
 - Farb- und Textklassen in Designs
 - Neue Standarddesigns
 
-### <a name="analytics"></a>Analytics
+### <a name="analytics"></a>Analyse
 
 - Benutzerdefinierte Zeichenfolgen
 - Updates der Formatierungsoptionen für die bedingte Formatierung
@@ -218,14 +218,14 @@ In der folgenden Liste werden alle Features aufgeführt.
 - Neue DAX-Ausdrücke: REMOVEFILTERS und CONVERT
 - Neuer DAX-Vergleichsoperatoren: „==“
 
-### <a name="data-preparation"></a>Datenaufbereitung
+### <a name="data-preparation"></a>Datenvorbereitung
 
 - Verbesserung von M Intellisense
 - Neue Transformation: Spalte nach Positionen teilen
 - Kopieren in die Zwischenablage aus der Datenprofilerstellung
 
 
-## <a name="may-2019"></a>Mai 2019
+## <a name="may-2019"></a>Mai 2019
 
 ### <a name="power-bi-desktop-for-power-bi-report-server"></a>Power BI Desktop für Power BI-Berichtsserver
 
@@ -278,7 +278,7 @@ Im Folgenden werden alle neuen Features aufgeführt:
 - Positionssteuerelement für Datenbeschriftungen auf Zeilenebene
 - Steuerelement für die Textgröße der Anzeige des KPI-Visuals
 
-#### <a name="analytics"></a>Analytics
+#### <a name="analytics"></a>Analyse
 
 - Das Anzeigen von Datumsangaben als Hierarchie ist jetzt allgemein verfügbar  
 
@@ -289,7 +289,7 @@ Im Folgenden werden alle neuen Features aufgeführt:
 - Update der ALLSELECTED DAX-Funktion
 - Deaktivieren der automatisch generierten Datumstabellen für neue Berichte
 
-### <a name="power-bi-report-server"></a>Power BI-Berichtsserver
+### <a name="power-bi-report-server"></a>Power BI-Berichtsserver
 
 #### <a name="support-for-trusted-visuals"></a>Unterstützung für vertrauenswürdige Visuals
 
@@ -303,13 +303,13 @@ Administratoren können **RestrictedResourceMimeTypeForUpload** verwenden, um ei
 
 Folgende Features werden nun in Power BI-Berichten unterstützt:
 
-[**Sicherheit auf Zeilenebene:**](row-level-security-report-server.md) Wenn Sie die Sicherheit auf Zeilenebene (Row Level Security, RLS) auf dem Power BI-Berichtsserver einrichten, können Sie den Datenzugriff für bestimmte Benutzer einschränken. Filter beschränken den Datenzugriff auf Zeilenebene, und Sie können Filter in Rollen definieren.
+[**Sicherheit auf Zeilenebene:** ](row-level-security-report-server.md) Wenn Sie die Sicherheit auf Zeilenebene (Row Level Security, RLS) auf dem Power BI-Berichtsserver einrichten, können Sie den Datenzugriff für bestimmte Benutzer einschränken. Filter beschränken den Datenzugriff auf Zeilenebene, und Sie können Filter in Rollen definieren.
 
-[**Erweitern und Reduzieren in den Zeilenüberschriften einer Matrix:**](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#expandCollapse) Es ist nun möglich, einzelne Zeilenüberschriften in Visuals zu erweitern oder zu reduzieren. Dieses Feature wurde sehr häufig gefordert.
+[**Erweitern und Reduzieren in den Zeilenüberschriften einer Matrix:** ](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#expandCollapse) Es ist nun möglich, einzelne Zeilenüberschriften in Visuals zu erweitern oder zu reduzieren. Dieses Feature wurde sehr häufig gefordert.
 
-[**Kopieren und Einfügen zwischen PBIX-Dateien:**](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#copyPaste) Sie können Visuals zwischen PBIX-Dateien kopieren, indem Sie entweder das Kontextmenü des Visuals oder die Standardtastenkombination STRG+C verwenden. Fügen Sie die Datei anschließend mit STRG+V in einen anderen Bericht ein.
+[**Kopieren und Einfügen zwischen PBIX-Dateien:** ](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#copyPaste) Sie können Visuals zwischen PBIX-Dateien kopieren, indem Sie entweder das Kontextmenü des Visuals oder die Standardtastenkombination STRG+C verwenden. Fügen Sie die Datei anschließend mit STRG+V in einen anderen Bericht ein.
 
-[**Intelligente Hinweise zur Ausrichtung:**](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) Wenn Sie Objekte auf Ihrer Berichtsseite verschieben, werden Ihnen intelligente Hinweise zur Ausrichtung angezeigt (ähnlich wie in PowerPoint), damit Sie Ihre Seite optimaler gestalten können. Die intelligenten Hinweise werden immer angezeigt, wenn Sie ein Objekt auf der Seite ziehen oder dessen Größe ändern. Wenn Sie ein Objekt in die Nähe eines anderen verschieben, wird es an der Position des anderen Objekts ausgerichtet.
+[**Intelligente Hinweise zur Ausrichtung:** ](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) Wenn Sie Objekte auf Ihrer Berichtsseite verschieben, werden Ihnen intelligente Hinweise zur Ausrichtung angezeigt (ähnlich wie in PowerPoint), damit Sie Ihre Seite optimaler gestalten können. Die intelligenten Hinweise werden immer angezeigt, wenn Sie ein Objekt auf der Seite ziehen oder dessen Größe ändern. Wenn Sie ein Objekt in die Nähe eines anderen verschieben, wird es an der Position des anderen Objekts ausgerichtet.
 
 **Features für die Barrierefreiheit:** Es gibt viele Features für die Barrierefreiheit, z. B. [die Unterstützung für die Barrierefreiheit des Bereichs zum Auflisten von Feldern](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList). Der Bereich zum Auflisten von Feldern ist vollständig barrierefrei. Sie können in diesem Bereich navigieren, indem Sie nur die Tastatur und die Sprachausgabe verwenden. Über das Kontextmenü können Sie Felder zu Ihrer Berichtsseite hinzufügen.
 
@@ -323,13 +323,13 @@ Administratoren können die folgenden Eigenschaften in den erweiterten SSMS-Eige
 
 **AllowedResourceExtensionsForUpload:** Sie können die Erweiterungen der Ressourcen einschränken, die auf den Berichtsserver hochgeladen werden können. Die Erweiterungen für integrierte Dateitypen wie &ast;.rdl und &ast;.pbix müssen nicht aufgeführt werden. Standardmäßig sind die Erweiterungen &ast;, &ast;.xml, &ast;.xsd, &ast;.xsl, &ast;.png, &ast;.gif, &ast;.jpg, &ast;.tif, &ast;.jpeg, &ast;.tiff, &ast;.bmp, &ast;.pdf, &ast;.svg, &ast;.rtf, &ast;.txt, &ast;.doc, &ast;.docx, &ast;.pps, &ast;.ppt und &ast;.pptx” enthalten. 
 
-**SupportedHyperlinkSchemes:** Legt eine durch Trennzeichen getrennte Liste der URI-Schemas fest, die in Hyperlinkaktionen definiert werden dürfen, die gerendert werden können. Alternativ wird „&ast;“ festgelegt, um alle Hyperlinkschemas zuzulassen. Mit der Einstellung „http,https“ sind beispielsweise Links zu „https://www. contoso.com“ zulässig. Links zu „mailto:bill@contoso.com“ oder „javascript:window.open(‘www.contoso.com’, ‘_blank’)“ werden dagegen entfernt. Der Standardwert lautet „&ast;“.
+**SupportedHyperlinkSchemes:** Legt eine durch Trennzeichen getrennte Liste der URI-Schemas fest, die in Hyperlinkaktionen definiert werden dürfen, die gerendert werden können. Alternativ wird „&ast;“ festgelegt, um alle Hyperlinkschemas zuzulassen. Mit der Einstellung „http,https“ sind beispielsweise Links zu „https://www. contoso.com“ zulässig, aber Hyperlinks zu „mailto:bill@contoso.com“ oder „javascript:window.open(‘ www.contoso.com’, ‘_blank’)“ werden entfernt. Der Standardwert lautet „&ast;“.
 
 ## <a name="august-2018"></a>August 2018
 
 Die für Power BI-Berichtsserver optimierte Version von Power BI Desktop von August 2018 enthält viele neue Features. Die nach Bereichen aufgeteilten neuen Features sind die folgenden:
 
-- [Reporting](#reporting)
+- [Berichterstellung](#reporting)
 - [Analyse](#analytics)
 - [Modellierung](#modeling)
 
@@ -411,7 +411,7 @@ Die Unterstützung von direkten SAP HANA SSO-Abfragen mit Kerberos ist nun für 
 - [Slicer restatement (Filterneudarstellung)](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#slicer)
 - [Report page tooltips (QuickInfos zur Berichtsseite)](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#reportPageTooltips)
 
-### <a name="analytics"></a>Analytics
+### <a name="analytics"></a>Analyse
 
 - [Neue DAX-Funktion: COMBINEVALUES()](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#combineValues)
 - [Measure drillthrough (Drillthrough messen)](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#measureDrillthrough)
@@ -425,7 +425,7 @@ Die Unterstützung von direkten SAP HANA SSO-Abfragen mit Kerberos ist nun für 
 - [Data categories for measures (Datenkategorien für Measures)](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#dataCategory)
 - [Statistical DAX functions (Statistische DAX-Funktionen)](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#dax)
 
-## <a name="may-2018"></a>Mai 2018
+## <a name="may-2018"></a>May 2018
 
 ### <a name="configure-power-bi-ios-mobile-apps-for-report-servers-remotely"></a>Remotekonfiguration von mobilen Power BI-Apps für iOS für Berichtsserver
 
@@ -500,7 +500,7 @@ Wenn Sie in einer bestimmten Kategorie eines Visuals einen Drilldown ausführen,
 - [Durchsuchen der Bereiche „Formatierung“ und „Analyse“](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#search)
 - [Bereich „Feldeigenschaften“ und Feldbeschreibungen](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#fieldPropertiesPane)
 
-### <a name="analytics"></a>Analytics
+### <a name="analytics"></a>Analyse
 
 - [UTCNOW() und UTCTODAY()](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#utcDAX)
 - [Markieren einer benutzerdefinierten Datumstabelle](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#customDateTable)
@@ -557,9 +557,9 @@ Diese Version unterstützt das horizontale Hochskalieren. Verwenden Sie einen La
 
 Administratoren können die folgenden Eigenschaften in den erweiterten SSMS-Eigenschaften für die Serverfarm festlegen:
 
-* EnableCustomVisuals: True/False
-* EnablePowerBIReportEmbeddedModels: True/False
-* EnablePowerBIReportExportData: True/False
+* EnableCustomVisuals: TRUE/FALSE
+* EnablePowerBIReportEmbeddedModels: TRUE/FALSE
+* EnablePowerBIReportExportData: TRUE/FALSE
 * MaxFileSizeMb: Der Standardwert lautet jetzt 1000.
 * ModelCleanupCycleMinutes: Häufigkeit der Überprüfungen zum Entfernen von Modellen aus dem Arbeitsspeicher.
 * ModelExpirationMinutes: Zeitraum bis zum Ablauf und Entfernen des Modells, basierend auf dem Zeitpunkt der letzten Verwendung.
@@ -619,6 +619,6 @@ Power BI-Berichtsserver unterstützt nun die neuen Power BI-Tabellen- und Matrix
 Sehen Sie sich folgende Quellen an, um sich über die neuesten Features in Power BI-Berichtsserver zu informieren.
 
 * [Microsoft Power BI-Blog](https://powerbi.microsoft.com/blog/)
-* Der [YouTube-Kanal „Guy in a Cube“](https://aka.ms/guyinacube)
+* [YouTube-Kanal „Guy in a Cube“](https://aka.ms/guyinacube)
 
-Haben Sie dazu Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
