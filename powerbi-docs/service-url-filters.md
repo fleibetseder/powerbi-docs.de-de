@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/30/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: e2840d2695b70867b73c873aea7a06acf26bcc3e
-ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
+ms.openlocfilehash: b20820490ec88d34d4ee75c135cc54277e473545
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76913549"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77076636"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtern eines Berichts mithilfe von Abfragezeichenfolgenparametern in der URL
 
@@ -104,7 +104,7 @@ Sie können auch nach mehreren Felder filtern, indem Sie weitere Parameter zu Ih
 ?filter=Store/Territory eq 'NC'
 ```
 
-Um nach weiteren Feldern zu filtern, fügen Sie ein **and** und ein weiteres Feld im selben Format wie oben hinzu. Beispiel:
+Um nach weiteren Feldern zu filtern, fügen Sie ein **and** und ein weiteres Feld im selben Format wie oben hinzu. Es folgt ein Beispiel.
 
 ```
 ?filter=Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
@@ -114,16 +114,16 @@ Um nach weiteren Feldern zu filtern, fügen Sie ein **and** und ein weiteres Fel
 
 Power BI unterstützt außer **and** noch viele weitere Operatoren. In der folgenden Tabelle werden diese Operatoren zusammen mit dem Inhaltstyp, den sie unterstützen, aufgeführt:
 
-|Operator  | Definition | Zeichenfolge  | number | Date |  Beispiel|
+|Operator  | Definition | Zeichenfolge  | Zahl | Datum |  Beispiel|
 |---------|---------|---------|---------|---------|---------|
-|**and**     | and |  ja      | ja |  ja|  product/price le 200 and price gt 3.5 |
-|**eq**     | equals |  ja      | ja   |  ja       | Address/City eq 'Redmond' |
-|**ne**     | Ungleich |   ja      | ja  | ja        |  Address/City ne 'London' |
-|**ge**     |  Größer als oder gleich       | nein | ja |ja |  product/price ge 10
-|**gt**     | Größer als        |nein | ja | ja  | product/price gt 20
-|**le**     |   Kleiner als oder gleich      | nein | ja | ja  | product/price le 100
-|**lt**     |  Kleiner als       | nein | ja | ja |  product/price lt 20
-|**in\*\***     |  Einschließlich       | ja | ja |  ja | Student/Age in (27, 29)
+|**and**     | und |  Ja      | Ja |  Ja|  product/price le 200 and price gt 3.5 |
+|**eq**     | Ist gleich |  Ja      | Ja   |  Ja       | Address/City eq 'Redmond' |
+|**ne**     | Ungleich |   Ja      | Ja  | Ja        |  Address/City ne 'London' |
+|**ge**     |  Größer als oder gleich       | Nein | Ja |Ja |  product/price ge 10
+|**gt**     | Größer als        |Nein | Ja | Ja  | product/price gt 20
+|**le**     |   Kleiner als oder gleich      | Nein | Ja | Ja  | product/price le 100
+|**lt**     |  Kleiner als       | Nein | Ja | Ja |  product/price lt 20
+|**in\*\***     |  Einschließlich       | Ja | Ja |  Ja | Student/Age in (27, 29)
 
 
 \*\* Wenn Sie **in** verwenden, können die Werte auf der rechten Seite von **in** einer durch Kommas getrennten Liste entsprechen, die in Klammern eingeschlossen wird, oder einem einzelnen Ausdruck, der eine Sammlung zurückgibt.
@@ -146,7 +146,7 @@ Power BI unterstützt OData V3 and V4 für **Date**- und **DateTimeOffset**-Date
   
 Datumsangaben werden im EDM-Format (2019-02-12T00:00:00) dargestellt: Wenn Sie also ein Datum im Format YYYY-MM-DD angeben, interpretiert Power BI dieses als YYYY-MM-DDT00:00:00. Stellen Sie sicher, dass Sie Monate und Tage mit zwei Ziffern angeben, also MM und DD.
 
-Warum ist diese Unterscheidung wichtig? Angenommen, Sie erstellen den Abfragezeichenfolgenparameter **Table/Date gt '2018-08-03'**.  Ist der 3. August 2018 in den Ergebnissen enthalten oder wird mit dem 4. August 2018 begonnen? Power BI übersetzt die Abfrage in **Table/Date gt '2018-08-03T00:00:00'**. Daher enthalten die Ergebnisse alle Datumsangaben, die einen Zeitabschnitt ungleich 0 aufweisen, da diese Datumsangaben größer als **'2018-08-03T00:00:00'** sind.
+Warum ist diese Unterscheidung wichtig? Angenommen, Sie erstellen den Abfragezeichenfolgenparameter **Table/Date gt '2018-08-03'** .  Ist der 3. August 2018 in den Ergebnissen enthalten oder wird mit dem 4. August 2018 begonnen? Power BI übersetzt die Abfrage in **Table/Date gt '2018-08-03T00:00:00'** . Daher enthalten die Ergebnisse alle Datumsangaben, die einen Zeitabschnitt ungleich 0 aufweisen, da diese Datumsangaben größer als **'2018-08-03T00:00:00'** sind.
 
 Es gibt weitere Unterschiede zwischen V3 und V4. OData V3 unterstützt keine Datumsangaben, sondern nur DateTime-Werte. Wenn Sie also das V3-Format verwenden, müssen Sie es mit dem vollständigen DateTime-Wert qualifizieren. Datumsliterale wie „datetime'2019-05-20'“ werden in der V3-Notation nicht unterstützt. Sie können sie jedoch in der V4-Notation einfach als „2019-05-20“ schreiben. Nachfolgend sehen Sie zwei äquivalente Filterabfragen in V3 und V4:
 
@@ -156,7 +156,7 @@ Es gibt weitere Unterschiede zwischen V3 und V4. OData V3 unterstützt keine Dat
 
 ## <a name="special-characters-in-url-filters"></a>Sonderzeichen in URL-Filtern
 
-Für Sonderzeichen und Leerzeichen sind zusätzliche Formatierungen erforderlich. Wenn Ihre Abfrage Leerzeichen, Bindestriche oder Nicht-ASCII-Zeichen enthält, stellen Sie diesen Sonderzeichen eine *Escapesequenz* voran, die mit einem Unterstrich und einem X (**_x**) beginnt, gefolgt vom 4-stelligen **Unicode** und einem weiteren Unterstrich. Wenn der Unicode weniger als vier Zeichen enthält, müssen Sie diesen mit Nullen ergänzen. Hier einige Beispiele.
+Für Sonderzeichen und Leerzeichen sind zusätzliche Formatierungen erforderlich. Wenn Ihre Abfrage Leerzeichen, Bindestriche oder Nicht-ASCII-Zeichen enthält, stellen Sie diesen Sonderzeichen eine *Escapesequenz* voran, die mit einem Unterstrich und einem X ( **_x**) beginnt, gefolgt vom 4-stelligen **Unicode** und einem weiteren Unterstrich. Wenn der Unicode weniger als vier Zeichen enthält, müssen Sie diesen mit Nullen ergänzen. Hier sehen Sie einige Beispiele:
 
 |Bezeichner  |Unicode  | Codierung für Power BI  |
 |---------|---------|---------|
@@ -193,7 +193,7 @@ Diese Abweichung ist nützlich, wenn Sie unterschiedliche Ergebnisse anzeigen m�
 Im Zusammenhang mit Abfragezeichenfolgenparametern müssen ein paar Dinge beachtet werden.
 
 * Wenn Sie den *in*-Operator verwenden, müssen die Werte auf der rechten Seite von *in* einer durch Trennzeichen getrennten Liste entsprechen, die in Klammern eingeschlossen ist.    
-* Sie können in Power BI-Berichtsserver [Berichtsparameter übergeben](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md), indem Sie sie in eine Berichts-URL einschließen. Diese URL-Parameter haben kein Präfix, da sie direkt an die Berichtsverarbeitungs-Engine übergeben werden.
+* Der Power BI-Berichtsserver unterstützt auch die Möglichkeit, mithilfe des URL-Parameters „filter“ zusätzliche Filter anzugeben.  Beispielsweise könnte die URL im Power BI-Berichtsserver wie folgt aussehen: https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
 * Das Filtern mittels Abfragezeichenfolge kann nicht für [Im Web veröffentlichen](service-publish-to-web.md) oder [In PDF exportieren](consumer/end-user-pdf.md) verwendet werden.
 * Das [Einbetten mit dem Berichts-Webpart in SharePoint Online](service-embed-report-spo.md) unterstützt keine URL-Filter.
 * Der Datentyp „long“ ist aufgrund von Beschränkungen bei JavaScript (2^53–1).
@@ -204,4 +204,4 @@ Im Zusammenhang mit Abfragezeichenfolgenparametern müssen ein paar Dinge beacht
 [Anheften einer Visualisierung an ein Dashboard](service-dashboard-pin-tile-from-report.md)  
 [Registrieren Sie sich für eine kostenlose Testversion](https://powerbi.microsoft.com/get-started/)
 
-Haben Sie dazu Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
+Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)

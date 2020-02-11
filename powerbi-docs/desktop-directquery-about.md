@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/10/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 504b389bdbe50d17f969365d7e4f2e51d206918c
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.openlocfilehash: dedbe3800dc4a6b1088ca5a4037bc8451c61d986
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75837322"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77076649"
 ---
 # <a name="about-using-directquery-in-power-bi"></a>Verwenden von DirectQuery in Power BI
 
@@ -312,7 +312,7 @@ Zusätzlich zu den vorherigen Vorschlägen kann jede der folgenden Berichtsfunkt
 
 * **Median:** Im Allgemeinen wird jede Aggregation wie `Sum` oder `Count Distinct` per Push an die zugrunde liegende Quelle gesendet. Dies gilt allerdings nicht für den Median, da dieses Aggregat normalerweise nicht von der zugrunde liegenden Quelle unterstützt wird. In solchen Fällen werden die Detaildaten aus der zugrunde liegenden Quelle abgerufen, und der Median wird aus den zurückgegebenen Ergebnissen berechnet. Dieser Ansatz ist sinnvoll, wenn der Median über eine relativ kleine Anzahl von Ergebnissen berechnet werden soll. Bei großer Kardinalität kommt es zu Leistungsproblemen oder Abfrageausfällen aufgrund des Zeilengrenzwerts von einer Million. Den **Median der Bevölkerungszahl** eines Landes zu ermitteln, kann sinnvoll sein, nicht jedoch die Ermittlung des **Medians von Verkaufspreisen**.
 
-* **Erweiterte Textfilter (* enthält* und ähnlich):* * Wenn auf einer Textspalte gefiltert wird, erlaubt das erweiterte Filtern Filter wie *enthält* und *beginnt mit* usw. Diese Filter können sicherlich zu Leistungseinbußen bei einigen Datenquellen führen. Insbesondere sollte der Standardfilter *enthält* nicht verwendet werden, falls nach einer exakten Übereinstimmung gesucht wird. Obwohl das Ergebnis möglicherweise identisch ist, kann sich abhängig von den tatsächlichen Daten die Leistung aufgrund der Verwendung von Indizes erheblich unterscheiden.
+* **Erweiterte Textfilter (_enthält_ und ähnlich):** Wenn nach einer Textspalte gefiltert wird, erlaubt das erweiterte Filtern Filter wie *enthält* und *beginnt mit* usw. Diese Filter können sicherlich zu Leistungseinbußen bei einigen Datenquellen führen. Insbesondere sollte der Standardfilter *enthält* nicht verwendet werden, falls nach einer exakten Übereinstimmung gesucht wird. Obwohl das Ergebnis möglicherweise identisch ist, kann sich abhängig von den tatsächlichen Daten die Leistung aufgrund der Verwendung von Indizes erheblich unterscheiden.
 
 * **Slicer mit Mehrfachauswahl:** Standardmäßig erlauben Slicer nur eine einzige Auswahl. Das Zulassen der Mehrfachauswahl in Filtern kann zu einigen Leistungsproblemen führen, da der Benutzer eine Reihe von Elementen im Slicer auswählt. Wenn der Benutzer z. B. die für ihn interessanten zehn Produkte auswählt, führt jede neue Auswahl dazu, dass Abfragen an die Quelle gesendet werden. Obwohl der Benutzer das nächste Element auswählen kann, bevor die Abfrage abgeschlossen ist, führt dieser Ansatz zu einer zusätzlichen Last für die zugrunde liegende Quelle.
 

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 02/06/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 53cc311f2fb0bfa4ab876c80b81ee2a092c4fd8c
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: a9417e7de98e0fa1867aa0561743c1ed6c5b63e2
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76913621"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77076697"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Veröffentlichen im Web aus Power BI
 
@@ -40,9 +40,11 @@ In den folgenden Schritten wird die Verwendung von **Im Web veröffentlichen**be
 
    ![PtW1](media/service-publish-to-web/publish_to_web1.png)
    
-2. Sollten Sie nicht berechtigt sein, Einbindungscodes zu erstellen, wenden Sie sich an Ihren Power BI-Administrator.
+2. Sollten Sie nicht berechtigt sein, Einbindungscodes zu erstellen, wenden Sie sich an Ihren [Power BI-Administrator](service-admin-role.md).
 
    ![PtW1](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+   
+   Hilfe bei der Suche nach der Person, die die Veröffentlichung im Web in Ihrer Organisation aktivieren kann, finden Sie in [diesen Tipps](#how-to-find-your-power-bi-administrator).
 
 3. Überprüfen Sie den Inhalt des Dialogfelds, und wählen Sie **Einbindungscode erstellen** aus.
 
@@ -71,9 +73,9 @@ Die folgende Tabelle gibt Hilfestellung zum Ansichtsmodus und wie er sich auf di
 
 | Ansichtsmodus | Darstellung bei der Einbettung |
 | --- | --- |
-| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |**An Seite anpassen** berücksichtigt die Seitenhöhe und -breite des Berichts. Wenn Sie für Ihre Seite ein *dynamisches* Seitenverhältnis – z. B. 16:9 oder 4:3 – festlegen, wird Ihr Inhalt so skaliert, dass er in den iFrame passt. Wenn Inhalt im iFrame eingebettet ist, kann die Verwendung von **An Seite anpassen** zu einem *Letterbox-Effekt* führen, wobei ein grauer Hintergrund in iFrame-Bereichen angezeigt wird, nachdem der Inhalt so skaliert wurde, dass er in den iFrame passt. Legen Sie die Höhe und Breite Ihres iFrames entsprechend fest, um den Letterbox-Effekt zu minimieren. |
+| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |**An Seite anpassen** berücksichtigt die Seitenhöhe und -breite des Berichts. Wenn Sie für Ihre Seite ein *dynamisches* Seitenverhältnis – z. B. 16:9 oder 4:3 – festlegen, wird Ihr Inhalt so skaliert, dass er in den iFrame passt. Wenn Inhalt im iFrame eingebettet ist, kann die Verwendung von **An Seite anpassen** zu einem *Letterbox-Effekt* führen, wobei ein grauer Hintergrund in iFrame-Bereichen angezeigt wird, nachdem der Inhalt so skaliert wurde, dass er in den iFrame passt. Um den Letterbox-Effekt zu minimieren, legen Sie die Höhe und Breite Ihres iFrames entsprechend fest. |
 | ![PtW6d](media/service-publish-to-web/publish_to_web6d.png) |**Originalgröße** stellt sicher, dass die Größe des Berichts so beibehalten wird, wie sie auf der Berichtsseite festgelegt ist. Dies kann zur Folge haben, dass im iFrame Scrollleisten angezeigt werden. Legen Sie die iFrame-Höhe und -Breite so fest, dass Scrollleisten vermieden werden. |
-| ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |**An Breite anpassen** stellt sicher, dass die Inhalte in den horizontalen Bereich Ihres iFrames passen. Es wird trotzdem ein Rahmen angezeigt, die Inhalte werden aber so skaliert, dass der in der Horizontalen verfügbare Platz vollständig ausgenutzt wird. |
+| ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |**An Breite anpassen** stellt sicher, dass die Inhalte den horizontalen Bereich des iFrames ausfüllen. Es wird trotzdem ein Rahmen angezeigt, die Inhalte werden aber so skaliert, dass der in der Horizontalen verfügbare Platz vollständig ausgenutzt wird. |
 
 ## <a name="tips-and-tricks-for-iframe-height-and-width"></a>Tipps und Tricks für die iFrame-Höhe und -Breite
 
@@ -194,6 +196,21 @@ Sie müssen ein Microsoft Power BI-Benutzer sein, um **Im Web veröffentlichen**
 Wenn Sie mithilfe von **Im Web veröffentlichen**einen Einbindungscode erstellen, wird der Bericht für Internetbenutzer sichtbar gemacht. Er ist öffentlich verfügbar, daher können Sie davon ausgehen, dass Leser den Bericht in Zukunft einfach über soziale Medien teilen. Wenn Benutzer den Bericht anzeigen, entweder indem sie die direkte öffentliche URL öffnen oder den Bericht auf einer Webseite oder in einem Blog eingebettet anzeigen, speichert Power BI die Berichtsdefinition und die Ergebnisse der zum Anzeigen des Berichts erforderlichen Abfragen zwischen. Dadurch wird sichergestellt, dass Tausende Benutzer den Bericht gleichzeitig anzeigen können, ohne dass die Leistung beeinträchtigt wird.
 
 Der Cache hat einen langen Lebenszyklus. Wenn Sie die Berichtsdefinition aktualisieren (etwa, indem Sie den Ansichtsmodus ändern) oder die Berichtsdaten, kann es daher ungefähr eine Stunde dauern, ehe die Änderungen in der Ihren Benutzern angezeigten Version des Berichts angezeigt werden. Es wird daher empfohlen, dass Sie Ihre Arbeit rechtzeitig vorab bereitstellen und den Einbindungscode für **Im Web veröffentlichen** erst erstellen, wenn Sie mit den Einstellungen zufrieden sind.
+
+## <a name="how-to-find-your-power-bi-administrator"></a>So finden Sie den Power BI-Administrator
+
+Wenn Sie die [Einstellungen für die Veröffentlichung im Webmandanten](#tenant-setting) ändern möchten, müssen Sie sich an den [Power BI-Administrator](service-admin-role.md) Ihrer Organisation wenden.
+
+Kleinere Organisationen oder Einzelpersonen, die sich für Power BI registriert haben, verfügen möglicherweise noch nicht über einen Power BI-Administrator. Sie müssen unseren [Prozess für die Übernahme des Mandantenadministrators](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover) ausführen. Sobald Sie einen Power BI-Administrator haben, kann er die Erstellung von Einbindungscode für Sie aktivieren.
+
+Etablierte Organisationen verfügen in der Regel bereits über einen Power BI-Administrator. Personen mit einer der folgenden Rollen können als Power BI-Administrator fungieren:
+
+- Office 365-Administratoren
+- Azure Active Directory-Administratoren
+- Benutzer mit der Rolle eines Power BI-Dienstadministrators in Azure Active Directory
+
+Suchen Sie eine [dieser Personen](https://docs.microsoft.com/office365/admin/admin-overview/admin-overview#who-has-admin-permissions-in-my-business) in Ihrer Organisation, damit diese die Einstellung aktualisieren kann.
+
 
 ## <a name="next-steps"></a>Nächste Schritte
 
