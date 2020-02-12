@@ -66,6 +66,8 @@
               href: migrate-ssrs-reports-to-power-bi.md
         - name: Verwaltung und Bereitstellung
           items:
+            - name: Einstellungen für Mandantenadministratoren
+              href: admin-tenant-settings.md
             - name: Festlegen der Größe des lokalen Datengateways
               href: gateway-onprem-sizing.md
     - name: Whitepaper
