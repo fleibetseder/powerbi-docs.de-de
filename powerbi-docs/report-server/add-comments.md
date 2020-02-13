@@ -47,5 +47,5 @@ Abhängig von Ihren Berechtigungen zeigt sich Ihnen dieses Verhalten:
 ## <a name="next-steps"></a>Nächste Schritte
 * [Was ist der Power BI-Berichtsserver?](get-started.md)  
 
-Weitere Fragen? [Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
+Weitere Fragen? ?[Stellen Sie Ihre Frage in der Power BI-Community.](https://community.powerbi.com/)
 
